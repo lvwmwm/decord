@@ -24,7 +24,7 @@ export default async function decompile(progress: Progress, pathToBundle: string
 	progress.start("decompile_decompiling");
 	const decompilerBin = join(pathToDecompiler, "target/release/hermes-decomp");
 	if (!(await Bun.file(decompilerBin).exists())) {
-		await Bun.$`cargo build --release -p hermes-decomp`
+		await Bun.$`cargo build --release -p hbc-decomp-cli`
 			.cwd(pathToDecompiler)
 			.quiet()
 			.nothrow()
