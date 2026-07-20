@@ -1,7 +1,7 @@
 import { exists } from "node:fs/promises";
 import { commit } from "../git";
 import type { Progress } from "../progress";
-import { codePath, commitAnyway, cuteVersion, modulesPath, workFolder } from "../shared";
+import { codePath, commitAnyway, cuteVersion, modulePathsDest, modulesPath, workFolder } from "../shared";
 import { handleShellErr, join } from "../utils";
 
 const gzipWorkerURL = new URL("decompile-gzip.ts", import.meta.url).href;
@@ -47,6 +47,20 @@ export default async function decompile(progress: Progress, pathToBundle: string
 
 	progress.update("decompile_decompiling", true);
 
+	progress.start("decompile_paths");
+	const codeJs = await Bun.file(codePath).text();
+	const modulePaths: { id: number; path: string }[] = [];
+	const moduleSections = codeJs.split(/\/\/ === Module (\d+): .+ ===\n?/);
+	for (let i = 1; i < moduleSections.length; i += 2) {
+		const modId = Number.parseInt(moduleSections[i], 10);
+		const content = moduleSections[i + 1] || "";
+		const m = content.match(/fileFinishedImporting\("([^"]+)"\)/);
+		if (m) modulePaths.push({ id: modId, path: m[1] });
+	}
+	await Bun.write(modulePathsDest, JSON.stringify(modulePaths));
+	console.log(`Extracted ${modulePaths.length} module paths`);
+	progress.update("decompile_paths", true);
+
 	if (process.env.NODE_ENV !== "test" && !commitAnyway) {
 		const gzFile = "code.js.gz";
 
@@ -54,7 +68,7 @@ export default async function decompile(progress: Progress, pathToBundle: string
 		progress.start("decompile_gzip");
 		gzipper.addEventListener("message", async ({ data }) => {
 			if (data === true) {
-				await commit([gzFile], `chore: update decompiled code for ${cuteVersion}`);
+				await commit([gzFile, "module-paths.json"], `chore: update decompiled code for ${cuteVersion}`);
 				progress.update("decompile_gzip", true);
 			}
 			gzipper.terminate();
