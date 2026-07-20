@@ -13,7 +13,7 @@ function parseSource(text: string) {
 
 async function diffCode() {
 	if (!prevFiles.has("source.jsonl")) {
-		throw new Error("Missing prevFile: source.jsonl");
+		return;
 	}
 
 	const oldCode = parseSource(new TextDecoder().decode(prevFiles.get("source.jsonl")));
