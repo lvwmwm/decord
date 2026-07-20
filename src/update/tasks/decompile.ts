@@ -4,6 +4,8 @@ import type { Progress } from "../progress";
 import { codePath, commitAnyway, cuteVersion, modulePathsDest, modulesPath, workFolder } from "../shared";
 import { handleShellErr, join } from "../utils";
 
+const bundleDest = join("..", "data", "index.android.bundle");
+
 const gzipWorkerURL = new URL("decompile-gzip.ts", import.meta.url).href;
 
 export default async function decompile(progress: Progress, pathToBundle: string) {
@@ -64,11 +66,13 @@ export default async function decompile(progress: Progress, pathToBundle: string
 	if (process.env.NODE_ENV !== "test" && !commitAnyway) {
 		const gzFile = "code.js.gz";
 
+		await Bun.write(bundleDest, Bun.file(pathToBundle));
+
 		const gzipper = new Worker(gzipWorkerURL);
 		progress.start("decompile_gzip");
 		gzipper.addEventListener("message", async ({ data }) => {
 			if (data === true) {
-				await commit([gzFile, "module-paths.json"], `chore: update decompiled code for ${cuteVersion}`);
+				await commit([gzFile, "module-paths.json", "index.android.bundle"], `chore: update decompiled code for ${cuteVersion}`);
 				progress.update("decompile_gzip", true);
 			}
 			gzipper.terminate();
