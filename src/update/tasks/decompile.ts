@@ -1,7 +1,7 @@
 import { exists } from "node:fs/promises";
 import { commit } from "../git";
 import type { Progress } from "../progress";
-import { codePath, commitAnyway, cuteVersion, moduleMapPath, modulesPath, workFolder } from "../shared";
+import { codePath, commitAnyway, cuteVersion, modulesPath, workFolder } from "../shared";
 import { handleShellErr, join } from "../utils";
 
 const gzipWorkerURL = new URL("decompile-gzip.ts", import.meta.url).href;
@@ -43,14 +43,6 @@ export default async function decompile(progress: Progress, pathToBundle: string
 			.quiet()
 			.nothrow()
 			.then(handleShellErr);
-	}
-
-	if (!(await Bun.file(moduleMapPath).exists())) {
-		await Bun.$`${decompilerBin} dump ${pathToBundle} --kind cjs-modules --json`
-			.quiet()
-			.nothrow()
-			.then(handleShellErr)
-			.then((out) => Bun.write(moduleMapPath, out.stdout));
 	}
 
 	progress.update("decompile_decompiling", true);
