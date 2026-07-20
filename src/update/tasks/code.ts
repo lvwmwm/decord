@@ -6,10 +6,13 @@ import { commitAnyway, cuteVersion, moduleMapPath, modulesPath } from "../shared
 import { join, sortEntries } from "../utils";
 
 const moduleIdRegex = /^module_(\d+)\.js$/;
+const idPrefixRegex = /^(\d+)_(.+)$/;
 
-interface CjsModule {
-	id: number;
-	name: string;
+function extractModuleId(filename: string): number | undefined {
+	let m = filename.match(moduleIdRegex);
+	if (m) return Number.parseInt(m[1], 10);
+	m = filename.match(idPrefixRegex);
+	if (m) return Number.parseInt(m[1], 10);
 }
 
 function sanitizePath(name: string): string {
@@ -27,7 +30,7 @@ export default async function code(progress: Progress, _code: string[]) {
 	try {
 		const mapRaw = await Bun.file(moduleMapPath).json();
 		if (Array.isArray(mapRaw)) {
-			for (const entry of mapRaw as CjsModule[]) {
+			for (const entry of mapRaw) {
 				if (entry.name?.trim()) moduleMap.set(entry.id, entry.name);
 			}
 		} else if (mapRaw && typeof mapRaw === "object") {
@@ -59,22 +62,19 @@ export default async function code(progress: Progress, _code: string[]) {
 	}
 
 	const rawFiles = await scanDir(modulesPath, modulesPath);
-	const files = new Map<string, number>();
 
-	for (const [relativePath, fileSize] of rawFiles) {
-		const match = relativePath.match(moduleIdRegex);
-		if (match) {
-			const id = Number.parseInt(match[1], 10);
+	function resolveDest(relativePath: string): string {
+		const id = extractModuleId(relativePath);
+		if (id !== undefined) {
 			const mappedName = moduleMap.get(id);
-			if (mappedName) {
-				const newPath = sanitizePath(mappedName) + ".js";
-				files.set(newPath, fileSize);
-			} else {
-				files.set(relativePath, fileSize);
-			}
-		} else {
-			files.set(relativePath, fileSize);
+			if (mappedName) return sanitizePath(mappedName) + ".js";
 		}
+		return relativePath;
+	}
+
+	const files = new Map<string, number>();
+	for (const [relativePath, fileSize] of rawFiles) {
+		files.set(resolveDest(relativePath), fileSize);
 	}
 
 	await Bun.write(
@@ -94,19 +94,7 @@ export default async function code(progress: Progress, _code: string[]) {
 
 		await Promise.all(
 			[...rawFiles.entries()].map(async ([relativePath]) => {
-				const match = relativePath.match(moduleIdRegex);
-				let dest: string;
-				if (match) {
-					const id = Number.parseInt(match[1], 10);
-					const mappedName = moduleMap.get(id);
-					if (mappedName) {
-						dest = join(filePrefix, sanitizePath(mappedName) + ".js");
-					} else {
-						dest = join(filePrefix, relativePath);
-					}
-				} else {
-					dest = join(filePrefix, relativePath);
-				}
+				const dest = join(filePrefix, resolveDest(relativePath));
 				await mkdir(pathJoin(dest, ".."), { recursive: true });
 				await Bun.write(dest, Bun.file(join(modulesPath, relativePath)));
 			}),
