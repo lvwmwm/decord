@@ -1,0 +1,75 @@
+name: update (hourly)
+
+on:
+    workflow_dispatch:
+        inputs:
+            force:
+                description: Force update regardless of "bun run check"
+                default: false
+                required: false
+                type: boolean
+            quiet:
+                description: Disable sending any messages
+                default: false
+                required: false
+                type: boolean
+    schedule:
+        - cron: "30 * * * *"
+
+jobs:
+    check-update:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v4
+              with:
+                  ref: main
+                  path: main
+            - uses: actions/checkout@v4
+              with:
+                  ref: data
+                  path: data
+
+            - uses: actions/setup-python@v6
+              with:
+                  python-version: "3.14.1"
+
+            - uses: oven-sh/setup-bun@v2
+
+            - working-directory: main
+              run: bun install --frozen-lockfile
+
+            - name: Setup Git
+              working-directory: data
+              run: |
+                  git config user.name github-actions
+                  git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+
+            - name: Check for version
+              id: check
+              working-directory: main
+              run: |
+                  version=$(bun run check ${{ github.event.inputs.force == 'true' && '--force' || '' }})
+                  echo "[DEBUG]: Check result: $version"
+                  echo "version=$version" >> $GITHUB_OUTPUT
+
+            - name: Update
+              if: ${{ steps.check.outputs.version != 'false' }}
+              env:
+                  code_webhook: ${{ secrets.CODE_WEBHOOK }}
+                  color_webhook: ${{ secrets.COLOR_WEBHOOK }}
+                  icons_webhook: ${{ secrets.ICONS_WEBHOOK }}
+                  bot_token: ${{ secrets.BOT_TOKEN }}
+              working-directory: main
+              run: bun run update:prod ${{ github.event.inputs.quiet == 'true' && '--quiet' || '' }}
+              
+            - name: Publish changes
+              if: ${{ steps.check.outputs.version != 'false' }}
+              working-directory: data
+              run: git push
+
+            - name: Tag changes
+              if: ${{ steps.check.outputs.version != 'false' }}
+              working-directory: data
+              run: |
+                git tag -f ${{ steps.check.outputs.version }}
+                git push origin -f ${{ steps.check.outputs.version }}
