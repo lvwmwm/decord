@@ -2,8 +2,19 @@ import { mkdir, rm, readdir, stat } from "node:fs/promises";
 import { join as pathJoin } from "node:path";
 import { commit } from "../git";
 import type { Progress } from "../progress";
-import { commitAnyway, cuteVersion, modulesPath } from "../shared";
+import { commitAnyway, cuteVersion, moduleMapPath, modulesPath } from "../shared";
 import { join, sortEntries } from "../utils";
+
+const moduleIdRegex = /^module_(\d+)\.js$/;
+
+interface CjsModule {
+	id: number;
+	name: string;
+}
+
+function sanitizePath(name: string): string {
+	return name.replace(/[<>:"|?*]/g, "_").replace(/\.\./g, "__");
+}
 
 export default async function code(progress: Progress, _code: string[]) {
 	progress.start("code_getting");
@@ -11,6 +22,24 @@ export default async function code(progress: Progress, _code: string[]) {
 	if (!(await stat(modulesPath).catch(() => false))) {
 		throw new Error(`Modules directory not found at ${modulesPath}`);
 	}
+
+	const moduleMap = new Map<number, string>();
+	try {
+		const mapRaw = await Bun.file(moduleMapPath).json();
+		if (Array.isArray(mapRaw)) {
+			for (const entry of mapRaw as CjsModule[]) {
+				if (entry.name?.trim()) moduleMap.set(entry.id, entry.name);
+			}
+		} else if (mapRaw && typeof mapRaw === "object") {
+			for (const [key, value] of Object.entries(mapRaw)) {
+				const id = Number(key);
+				if (!Number.isNaN(id) && typeof value === "string" && value.trim()) {
+					moduleMap.set(id, value);
+				}
+			}
+		}
+	} catch {}
+	console.log(`Loaded ${moduleMap.size} module name mappings`);
 
 	async function scanDir(dir: string, basePath: string): Promise<Map<string, number>> {
 		const files = new Map<string, number>();
@@ -29,7 +58,24 @@ export default async function code(progress: Progress, _code: string[]) {
 		return files;
 	}
 
-	const files = await scanDir(modulesPath, modulesPath);
+	const rawFiles = await scanDir(modulesPath, modulesPath);
+	const files = new Map<string, number>();
+
+	for (const [relativePath, fileSize] of rawFiles) {
+		const match = relativePath.match(moduleIdRegex);
+		if (match) {
+			const id = Number.parseInt(match[1], 10);
+			const mappedName = moduleMap.get(id);
+			if (mappedName) {
+				const newPath = sanitizePath(mappedName) + ".js";
+				files.set(newPath, fileSize);
+			} else {
+				files.set(relativePath, fileSize);
+			}
+		} else {
+			files.set(relativePath, fileSize);
+		}
+	}
 
 	await Bun.write(
 		"../data/source.jsonl",
@@ -47,10 +93,22 @@ export default async function code(progress: Progress, _code: string[]) {
 		await rm(filePrefix, { recursive: true, force: true });
 
 		await Promise.all(
-			[...files.keys()].map(async (file) => {
-				const dest = join(filePrefix, file);
+			[...rawFiles.entries()].map(async ([relativePath]) => {
+				const match = relativePath.match(moduleIdRegex);
+				let dest: string;
+				if (match) {
+					const id = Number.parseInt(match[1], 10);
+					const mappedName = moduleMap.get(id);
+					if (mappedName) {
+						dest = join(filePrefix, sanitizePath(mappedName) + ".js");
+					} else {
+						dest = join(filePrefix, relativePath);
+					}
+				} else {
+					dest = join(filePrefix, relativePath);
+				}
 				await mkdir(pathJoin(dest, ".."), { recursive: true });
-				await Bun.write(dest, Bun.file(join(modulesPath, file)));
+				await Bun.write(dest, Bun.file(join(modulesPath, relativePath)));
 			}),
 		);
 

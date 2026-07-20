@@ -7,6 +7,7 @@ export const workFolder = "tmp";
 export const apksFolder = join(workFolder, "apks");
 export const codePath = join(workFolder, "code.js");
 export const modulesPath = join(workFolder, "modules");
+export const moduleMapPath = join(workFolder, "module-map.json");
 export const apkSplits = ["base", "config.hdpi", "config.xxhdpi"] as const;
 
 export const oprevFiles = ["source.jsonl"] as const;
