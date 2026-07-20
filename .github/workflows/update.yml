@@ -29,9 +29,7 @@ jobs:
                   ref: data
                   path: data
 
-            - uses: actions/setup-python@v6
-              with:
-                  python-version: "3.14.1"
+            - uses: dtolnay/rust-toolchain@stable
 
             - uses: oven-sh/setup-bun@v2
 
@@ -56,8 +54,6 @@ jobs:
               if: ${{ steps.check.outputs.version != 'false' }}
               env:
                   code_webhook: ${{ secrets.CODE_WEBHOOK }}
-                  color_webhook: ${{ secrets.COLOR_WEBHOOK }}
-                  icons_webhook: ${{ secrets.ICONS_WEBHOOK }}
                   bot_token: ${{ secrets.BOT_TOKEN }}
               working-directory: main
               run: bun run update:prod ${{ github.event.inputs.quiet == 'true' && '--quiet' || '' }}

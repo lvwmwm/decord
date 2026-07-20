@@ -1,37 +1,52 @@
 import { exists } from "node:fs/promises";
 import { commit } from "../git";
 import type { Progress } from "../progress";
-import { codePath, commitAnyway, cuteVersion, workFolder } from "../shared";
+import { codePath, commitAnyway, cuteVersion, modulesPath, workFolder } from "../shared";
 import { handleShellErr, join } from "../utils";
 
 const gzipWorkerURL = new URL("decompile-gzip.ts", import.meta.url).href;
-const decompilerPy = "src/hermes_dec/decompilation/hbc_decompiler.py";
 
 export default async function decompile(progress: Progress, pathToBundle: string) {
 	const pathToDecompiler = join(workFolder, "decompiler");
 
 	progress.start("decompile_downloading");
 	if (!(await exists(pathToDecompiler))) {
-		await Bun.$`git clone https://github.com/P1sec/hermes-dec.git --depth=1 ${pathToDecompiler}`
+		await Bun.$`git clone https://github.com/SymbioticSec/hermes-decomp.git --depth=1 ${pathToDecompiler}`
 			.quiet()
 			.nothrow()
 			.then(handleShellErr);
 		progress.update("decompile_downloading", true);
 	} else progress.update("decompile_downloading", null);
 
-	const { exitCode: hasPython } = await Bun.$`python --version`.nothrow().quiet();
-	if (hasPython !== 0) throw new Error("Cannot use Python! Are you sure it's installed?");
+	const { exitCode: hasCargo } = await Bun.$`cargo --version`.nothrow().quiet();
+	if (hasCargo !== 0) throw new Error("Cannot use Cargo! Are you sure Rust is installed?");
 
 	progress.start("decompile_decompiling");
-	if (!(await Bun.file(codePath).exists())) {
-		await Bun.$`python ${join(pathToDecompiler, decompilerPy)} ${pathToBundle} ${codePath}`
+	const decompilerBin = join(pathToDecompiler, "target/release/hermes-decomp");
+	if (!(await Bun.file(decompilerBin).exists())) {
+		await Bun.$`cargo build --release -p hermes-decomp`
+			.cwd(pathToDecompiler)
 			.quiet()
 			.nothrow()
 			.then(handleShellErr);
-		progress.update("decompile_decompiling", true);
-	} else progress.update("decompile_decompiling", null);
+	}
 
-	// background step
+	if (!(await Bun.file(codePath).exists())) {
+		await Bun.$`${decompilerBin} decompile ${pathToBundle} --output ${codePath}`
+			.quiet()
+			.nothrow()
+			.then(handleShellErr);
+	}
+
+	if (!(await exists(modulesPath))) {
+		await Bun.$`${decompilerBin} extract ${pathToBundle} --output ${modulesPath}`
+			.quiet()
+			.nothrow()
+			.then(handleShellErr);
+	}
+
+	progress.update("decompile_decompiling", true);
+
 	if (process.env.NODE_ENV !== "test" && !commitAnyway) {
 		const gzFile = "code.js.gz";
 

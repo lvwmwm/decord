@@ -6,9 +6,10 @@ export const maxDiffChanges = 20;
 export const workFolder = "tmp";
 export const apksFolder = join(workFolder, "apks");
 export const codePath = join(workFolder, "code.js");
+export const modulesPath = join(workFolder, "modules");
 export const apkSplits = ["base", "config.hdpi", "config.xxhdpi"] as const;
 
-export const oprevFiles = ["semantic.json", "raw.json", "icons.json", "source.jsonl"] as const;
+export const oprevFiles = ["source.jsonl"] as const;
 export const prevFiles = new Map<(typeof oprevFiles)[number], ArrayBuffer>();
 
 export const version = await Bun.file("../data/version.txt").text();

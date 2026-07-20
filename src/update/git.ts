@@ -5,7 +5,7 @@ export const gitChanged = new Set<string>();
 
 export async function fetchGitChanged() {
 	for (const changed of (
-		await Bun.$`git status -z -- ':!oldicons' ':!icons' ':!source'`.cwd("../data").quiet().then(handleShellErr)
+		await Bun.$`git status -z -- ':!source'`.cwd("../data").quiet().then(handleShellErr)
 	)
 		.text()
 		.split("\x00")
@@ -27,16 +27,13 @@ export async function commit(files: string[], message: string) {
 	if (process.env.NODE_ENV === "test" && !commitAnyway) {
 		await fetchGitChanged();
 	} else {
-		// unstage all files
 		await Bun.$`git restore --staged .`.cwd("../data").nothrow().quiet().then(handleShellErr);
 		await fetchGitChanged();
-		// stage files
 		await Bun.$`git add ${{ raw: files.map((x) => Bun.$.escape(x)).join(" ") }}`
 			.cwd("../data")
 			.nothrow()
 			.quiet()
 			.then(handleShellErr);
-		// commiiiiiit
 		await Bun.$`git commit -m ${message}`
 			.cwd("../data")
 			.nothrow()

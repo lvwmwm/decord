@@ -5,11 +5,8 @@ import { commit } from "./git";
 import { log, makeProgress, wrapPromise } from "./progress";
 import { apksFolder, codePath, cuteVersion, isMock, isQuiet, oprevFiles, prevFiles, version } from "./shared";
 import codeTask from "./tasks/code";
-import colors from "./tasks/colors";
 import decompile from "./tasks/decompile";
 import diffs from "./tasks/diffs";
-import icons from "./tasks/icons";
-import { webhook } from "./tasks/webhook";
 import { formatError, handleShellErr, join } from "./utils";
 
 export async function runTasks() {
@@ -27,34 +24,21 @@ export async function runTasks() {
 			code_getting: "Finding file imports",
 			code_remaking: "Recreating code",
 			code_pushing: "Committing source",
-			colors: "Parsing colors",
-			icons: "Icon parser",
-			icons_getting: "Writing icons.json",
-			icons_copying: "Copying images",
 			diff: "Diffs",
-			diff_raw: "Diffing raw colors",
-			diff_semantic: "Diffing semantic colors",
-			diff_icons: "Diffing icons",
 			diff_code: "Diffing code",
-			webhook: "Sending webhook messages",
 		},
 		true,
 	);
 	let differs: Differs | undefined;
 
 	if (!isMock) {
-		// discard changes
 		try {
 			progress.start("preinit");
 
-			// reset to remote branch (without pulling latest commit)
 			progress.start("preinit_discard");
 			await Bun.$`git reset --hard`.cwd("../data").nothrow().quiet().then(handleShellErr);
-			if (await exists(join("../data", "oldicons")))
-				await rm(join("../data", "oldicons"), { force: true, recursive: true });
-			await Bun.write("../data/version.txt", version); // lel
+			await Bun.write("../data/version.txt", version);
 
-			// unstage all files
 			await Bun.$`git restore --staged .`.cwd("../data").nothrow().quiet().then(handleShellErr);
 
 			progress.update("preinit_discard", true);
@@ -83,13 +67,9 @@ export async function runTasks() {
 
 		const code = (await Bun.file(codePath).text()).replace(/\r/g, "").split("\n");
 
-		await Promise.allSettled([
-			wrapPromise(codeTask(progress, code), progress, "code"),
-			wrapPromise(colors(code), progress, "colors"),
-			wrapPromise(icons(progress, code), progress, "icons"),
-		]);
-		if (progress.someFailed("code", "colors", "icons"))
-			throw new Error(`Failed at parser tasks!\n${progress.prettyErrors("code", "colors", "icons")}`);
+		await wrapPromise(codeTask(progress, code), progress, "code");
+		if (progress.someFailed("code"))
+			throw new Error(`Failed at parser tasks!\n${progress.prettyErrors("code")}`);
 
 		while (!progress.isFinished("decompile_gzip")) {
 			await Bun.sleep(1000);
@@ -111,6 +91,7 @@ export async function runTasks() {
 
 	if (differs && !isQuiet) {
 		try {
+			const { webhook } = await import("./tasks/webhook");
 			await wrapPromise(webhook(differs), progress, "webhook");
 		} catch (e: any) {
 			throw new Error(`Failed to send webhook messages!\n${formatError(e)}`);
@@ -120,5 +101,4 @@ export async function runTasks() {
 	}
 
 	await commit(["version.txt"], `chore: bump app version to ${cuteVersion}`);
-	await rm("../data/oldicons", { force: true, recursive: true });
 }
