@@ -1,0 +1,83 @@
+// Module ID: 7216
+// Function ID: 58163
+// Name: items2
+// Dependencies: []
+
+// Module 7216 (items2)
+const _module = require(dependencyMap[0]);
+const result = _module.fileFinishedImporting("modules/billing/native/iapProducts.tsx");
+const items = [{ discounts: [] }, , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , ];
+let obj = { 0: 24843586, 9223372036854775807: 17255936, 0: 550719744, 9223372036854775807: 16812867, 9223372036854775807: 18488576, 9223372036854775807: 48405760, 0: 265306368, 0: 2066808834, 9223372036854775807: -515396076, discounts: [] };
+items[1] = obj;
+const items1 = [{ "Bool(false)": "EMBED_MOBILE", "Bool(false)": "$", "Bool(false)": "7lZ31J", "Bool(false)": "YOU_BAR_AVATAR_LARGE_PX", "Bool(false)": "selectedSortMethod", "Bool(false)": "co", "Bool(false)": "MUR" }];
+items[2] = { discounts: items1 };
+obj = { 0: "ReadStateTypes", 9223372036854775807: "ROBLOX", 0: "disableNativeFramesTracking", 9223372036854775807: "CONTEXT_MENU_IMAGE_SAVED", 9223372036854775807: "GREEN_300", 9223372036854775807: "r", 0: "handleTapSpotifyResource", 0: "Array", 9223372036854775807: "responderReject" };
+const items2 = [{ "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, "Bool(false)": false }, { paddingBottom: null, paddingLeft: null, backgroundColor: null, flexDirection: null, gap: null, padding: null, justifyContent: null }, { "Null": "US", "Null": false, "Null": "Chat perks (Monthly Sub)", flexDirection: "Nitro Basic Monthly", justifyContent: "$0.00", alignItems: "FREETRIAL", paddingBottom: "MONTH" }, {}];
+obj.discounts = items2;
+items[3] = obj;
+const obj1 = { 0: 822084322, 9223372036854775807: -1889785610, 0: 1075049922, 9223372036854775807: 1107447633, 9223372036854775807: 154895, 9223372036854775807: 123426, 0: 554103377, 0: 39882306, 9223372036854775807: 24480768, discounts: [] };
+items[4] = obj1;
+const obj2 = { 0: true, 9223372036854775807: true, 0: true, 9223372036854775807: true, 9223372036854775807: true, 9223372036854775807: true, 0: true, 0: true, 9223372036854775807: true, discounts: [] };
+items[5] = obj2;
+const obj3 = { 0: 38752576, 9223372036854775807: 39653186, 0: 38406912, 9223372036854775807: 116543744, 9223372036854775807: 1620001313, 9223372036854775807: -2142240766, 0: -1388249087, 0: 822084322, 9223372036854775807: 1374389535, discounts: [] };
+items[6] = obj3;
+const obj4 = { 0: 38752576, 9223372036854775807: 39653186, 0: 38406912, 9223372036854775807: 116543744, 9223372036854775807: 1620001313, 9223372036854775807: -2142109694, 0: -666828799, 0: 822084111, 9223372036854775807: 1202590843, discounts: [] };
+items[7] = obj4;
+const obj5 = { 0: 38752576, 9223372036854775807: 39653186, 0: 30295040, 9223372036854775807: 116543744, 9223372036854775807: 1619345953, 9223372036854775807: 2068119554, 0: -1522466815, 0: 822084003, 9223372036854775807: -1546188227 };
+const items3 = [{ "Null": 38752576, "Null": 39653186, "Null": 35360768, "Null": 116543744, "Null": 1619542561, "Null": 277348354, "Null": -1757347839 }];
+obj5.discounts = items3;
+items[8] = obj5;
+const obj6 = { 0: true, 9223372036854775807: true, 0: true, 9223372036854775807: true, 9223372036854775807: true, 9223372036854775807: true, 0: true, 0: true, 9223372036854775807: true, discounts: [] };
+items[9] = obj6;
+const obj7 = { 0: true, 9223372036854775807: true, 0: true, 9223372036854775807: true, 9223372036854775807: true, 9223372036854775807: true, 0: true, 0: true, 9223372036854775807: true };
+const items4 = [{ flexShrink: true, borderRadius: true, paddingHorizontal: true, marginLeft: true, textAlign: true, paddingVertical: true, flexDirection: true }];
+obj7.discounts = items4;
+items[10] = obj7;
+const obj8 = { 0: "Chat perks and 5 Boosts (Yearly Sub)", 9223372036854775807: "Nitro + 3 Boosts (Yearly)", 0: "premium_tier_1_monthly", 9223372036854775807: 4.99, 9223372036854775807: "$", 9223372036854775807: "usd", 0: "$4.99", 0: "US", 9223372036854775807: false, discounts: [] };
+items[11] = obj8;
+const obj9 = { 0: "Chat perks like animated emojis (Monthly Sub)", 9223372036854775807: "Nitro Classic Monthly", 0: "premium_tier_2_premium_guild_10_monthly", 9223372036854775807: 44.99, 9223372036854775807: "$", 9223372036854775807: "usd", 0: "$44.99", 0: "US", 9223372036854775807: false, discounts: [] };
+items[12] = obj9;
+const obj10 = { 0: "Chat perks and 12 Boosts (Monthly Sub)", 9223372036854775807: "Nitro + 10 Boosts (Monthly)", 0: "premium_year_tier_2.1", 9223372036854775807: 99.99, 9223372036854775807: "$", 9223372036854775807: "usd", 0: "$99.99", 0: "US", 9223372036854775807: false, discounts: [] };
+items[13] = obj10;
+const obj11 = { 0: "Chat perks and 2 Boosts (Yearly Sub)", 9223372036854775807: "Nitro Yearly", 0: "premium_guild_2_monthly", 9223372036854775807: 9.99, 9223372036854775807: "$", 9223372036854775807: "usd", 0: "$9.99", 0: "US", 9223372036854775807: false, discounts: [] };
+items[14] = obj11;
+const obj12 = { 0: "2 Server Boosts (Monthly)", 9223372036854775807: "2 Server Boosts Monthly", 0: "premium_tier_2_premium_guild_5_monthly", 9223372036854775807: 27.49, 9223372036854775807: "$", 9223372036854775807: "usd", 0: "$27.49", 0: "US", 9223372036854775807: false, discounts: [] };
+items[15] = obj12;
+const obj13 = { 0: "Chat perks and 7 Boosts (Monthly Sub)", 9223372036854775807: "Nitro + 5 Boosts (Monthly)", 0: "api_generic_subscription", 9223372036854775807: 4.99, 9223372036854775807: "$", 9223372036854775807: "usd", 0: "$4.99", 0: "US", 9223372036854775807: false, discounts: [] };
+items[16] = obj13;
+const obj14 = { 0: "Discord Subscription", 9223372036854775807: "Discord Subscription", 0: "premium_tier_2_yearly", 9223372036854775807: 99.99, 9223372036854775807: "$", 9223372036854775807: "usd", 0: "$99.99", 0: "US", 9223372036854775807: false, discounts: [] };
+items[17] = obj14;
+const obj15 = { 0: "Chat perks and 2 Boosts (Yearly Sub)", 9223372036854775807: "Nitro Yearly", 0: "$0.00", 9223372036854775807: "FREETRIAL", 9223372036854775807: "DAY", 9223372036854775807: "0", 0: "SUBSCRIPTION", 0: "14", 9223372036854775807: "premium_tier_2_yearly_q4_drop", discounts: [] };
+items[18] = obj15;
+const obj16 = { 0: "GuildUnreadAction", 9223372036854775807: "BRA", 0: true, 9223372036854775807: true, 9223372036854775807: true, 9223372036854775807: true, 0: true, 0: true, 9223372036854775807: true, discounts: [] };
+items[19] = obj16;
+items[20] = { discounts: [] };
+const obj17 = { 0: null, 9223372036854775807: null, 0: null, 9223372036854775807: null, 9223372036854775807: null, 9223372036854775807: null, 0: null, 0: null, 9223372036854775807: null, discounts: [] };
+items[21] = obj17;
+const obj18 = { 0: false, 9223372036854775807: false, 0: "isArray", 9223372036854775807: "accessibilityRole", 9223372036854775807: "useEffect", 9223372036854775807: "apply", 0: "Reflect", 0: "x", 9223372036854775807: "call", discounts: [] };
+items[22] = obj18;
+const obj19 = { 0: "<string:4065394689>", 9223372036854775807: "<string:239214854>", 0: "<string:3053453574>", 9223372036854775807: "<string:1090519475>", 9223372036854775807: "premium_month_tier_2.2", 9223372036854775807: "<string:2920577841>", 0: "<string:603644231>", 0: "<string:38752576>", 9223372036854775807: "<string:39653186>", discounts: [] };
+items[23] = obj19;
+const obj20 = { 0: true, 9223372036854775807: true, 0: true, 9223372036854775807: true, 9223372036854775807: true, 9223372036854775807: true, 0: true, 0: "<string:4065394690>", 9223372036854775807: "<string:255992070>" };
+const items5 = [{}, {}, {}, { handleResetDismissibilityClick: "na", getNotifyHighlights: "DEFAULT_ENABLE_BLUR_KEYBOARD_ON_GESTURE", vercelWaitUntil: "attachmentFlag", circleIcon: "CHAT_INPUT_TIMING_CONFIG", presenceCount: "onChangeDate", display: 1107447633, CHANNEL_ICON_EDIT_PROGRESSED: 154895 }];
+obj20.discounts = items5;
+items[24] = obj20;
+const obj21 = { 0: "A pack of stickers you can use in chat", 9223372036854775807: "Discord Sticker Pack", 0: "premium_year_tier_0", 9223372036854775807: 29.99, 9223372036854775807: "$", 9223372036854775807: "usd", 0: "$29.99", 0: "US", 9223372036854775807: false, discounts: [] };
+items[25] = obj21;
+const obj22 = { 0: "1 year of sweet chat perks", 9223372036854775807: "Nitro Basic (1 Year)", 0: "sticker_pack_299", 9223372036854775807: 2.99, 9223372036854775807: "$", 9223372036854775807: "usd", 0: "$2.99", 0: "US", 9223372036854775807: false, discounts: [] };
+items[26] = obj22;
+const obj23 = { 0: "A pack of stickers you can use in chat", 9223372036854775807: "Discord Sticker Pack", 0: "premium_year_tier_2.2", 9223372036854775807: 99.99, 9223372036854775807: "$", 9223372036854775807: "usd", 0: "$99.99", 0: "US", 9223372036854775807: false, discounts: [] };
+items[27] = obj23;
+const obj24 = { 0: "1 year of sweet chat perks and 1 Nitro Boost", 9223372036854775807: "Nitro (1 Year)", 0: 2, 9223372036854775807: "unknown_error", 9223372036854775807: "session", 9223372036854775807: "session", 0: "attachment", 0: "transaction", 9223372036854775807: "error", discounts: [] };
+items[28] = obj24;
+items[29] = { discounts: [] };
+items[30] = { discounts: [] };
+const obj25 = { 0: true, 9223372036854775807: true, 0: true, 9223372036854775807: true, 9223372036854775807: true, 9223372036854775807: true, 0: true, 0: true, 9223372036854775807: true, discounts: [] };
+items[31] = obj25;
+items[32] = { discounts: [] };
+const obj26 = { 0: null, 9223372036854775807: null, 0: null, 9223372036854775807: null, 9223372036854775807: null, 9223372036854775807: null, 0: null, 0: null, 9223372036854775807: null, discounts: [] };
+items[33] = obj26;
+const obj27 = { 0: "/assets/images/native/premium/backgrounds", 9223372036854775807: 411, 0: 134, 9223372036854775807: null, 9223372036854775807: "1e7b4b86ff7b632a5724a01e406c1753", 9223372036854775807: "img_subheader_error_mobile", 0: "png", 0: true, 9223372036854775807: "/assets/images/native/premium/backgrounds", discounts: [] };
+items[34] = obj27;
+
+export const copiedIAPProducts = items;

@@ -1,0 +1,61 @@
+// Module ID: 1277
+// Function ID: 14400
+// Name: semanticColor
+// Dependencies: [0, 0, 0, 0, 0, 0]
+// Exports: getThemedRippleConfig
+
+// Module 1277 (semanticColor)
+import closure_2 from "result";
+import result from "result";
+import { internal } from "result";
+import { internal as internal2 } from "result";
+import result from "result";
+import result from "result";
+
+let num = 24;
+if (result.isAndroid()) {
+  num = 32;
+}
+const semanticColor = internal.resolveSemanticColor(require("result").themes.DARK, require("result").colors.MOBILE_ANDROID_BUTTON_BACKGROUND_RIPPLE);
+const semanticColor1 = internal2.resolveSemanticColor(require("result").themes.LIGHT, require("result").colors.MOBILE_ANDROID_BUTTON_BACKGROUND_RIPPLE);
+result = result.getSystemVersionMajor();
+const frozen = Object.freeze({ foreground: true });
+let closure_6 = Object.freeze({});
+const map = new Map();
+result = result.fileFinishedImporting("design/void/Form/native/FormConstants.tsx");
+
+export const FORM_ROW_VERTICAL_PADDING = num;
+export const RIPPLE_DARK_COLOR = semanticColor;
+export const RIPPLE_LIGHT_COLOR = semanticColor1;
+export const ANDROID_FOREGROUND_RIPPLE = frozen;
+export const TitleStyleType = { DEFAULT: "default", ANDROID_NO_BORDER: "no_border", NO_BORDER_OR_MARGIN: "no_border_or_margin" };
+export const getThemedRippleConfig = function getThemedRippleConfig(arg0) {
+  let borderless;
+  let color;
+  let cornerRadius;
+  let foreground;
+  let radius;
+  ({ radius, cornerRadius, color } = arg0);
+  ({ foreground, borderless } = arg0);
+  let obj = arg1(dependencyMap[1]);
+  if (obj.isAndroid()) {
+    if (null != color) {
+      const sum = "" + color.toString() + cornerRadius + radius + tmp3;
+      const value = map.get(sum);
+      if (null != value) {
+        return value;
+      } else {
+        const _Object = Object;
+        obj = { color, radius, borderless, cornerRadius, foreground: tmp3 };
+        const frozen = Object.freeze(obj);
+        const result = map.set(sum, frozen);
+        return frozen;
+      }
+    } else {
+      arg1(dependencyMap[4]).isThemeLight(theme.theme) ? semanticColor1 : semanticColor;
+      const obj2 = arg1(dependencyMap[4]);
+    }
+  } else {
+    return closure_6;
+  }
+};

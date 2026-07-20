@@ -1,0 +1,33 @@
+// Module ID: 13963
+// Function ID: 106144
+// Name: MAX_SUBSCRIPTION_TIERS
+// Dependencies: []
+
+// Module 13963 (MAX_SUBSCRIPTION_TIERS)
+const SubscriptionIntervalTypes = require(dependencyMap[0]).SubscriptionIntervalTypes;
+let obj = { interval: SubscriptionIntervalTypes.DAY, interval_count: 1 };
+const items = [obj, ];
+obj = { interval: SubscriptionIntervalTypes.DAY, interval_count: 7 };
+items[1] = obj;
+const combined = "https://" + require(dependencyMap[1]).PRIMARY_DOMAIN + "/creators";
+const frozen = Object.freeze({ actionGestureType: null, actionTargetElement: "d415e9ae6db962a437b5c21e64fa1fc3", actionIntentType: "ThemeMidnightIcon" });
+const _module = require(dependencyMap[2]);
+const result = _module.fileFinishedImporting("modules/guild_role_subscriptions/GuildRoleSubscriptionsConstants.tsx");
+
+export const MAX_SUBSCRIPTION_TIERS = 3;
+export const MAX_SUBSCRIPTION_TIER_NAME_LENGTH = 100;
+export const MAX_SUBSCRIPTION_TIER_DESCRIPTION_LENGTH = 1500;
+export const MAX_SUBSCRIPTION_BENEFIT_NAME_LENGTH = 80;
+export const MAX_SUBSCRIPTION_BENEFIT_DESCRIPTION_LENGTH = 160;
+export const GUILD_ROLE_SUBSCRIPTION_TIER_CREATION_KEY = "guild-role-subscription-tier-creation-key";
+export const GUILD_ROLE_SUBSCRIPTION_GROUP_SETUP_KEY = "guild-role-subscription-group-setup-key";
+export const RESPONSIVE_MOBILE_WIDTH_SIZE_QUERY = "(max-width: 485px)";
+export const RESPONSIVE_MOBILE_HEIGHT_SMALL_QUERY = "(max-height: 450px)";
+export const GuildRoleSubscriptionsTierScenes = { GATING: "GATING", GROUP: "GROUP", DETAILS: "DETAILS", BENEFITS: "BENEFITS", CHANNEL_BENEFITS: "CHANNEL_BENEFITS", INTANGIBLE_BENEFITS: "INTANGIBLE_BENEFITS ", DESIGN: "DESIGN", CONFIRMATION: "CONFIRMATION", MEMBERS: "MEMBERS" };
+export const GuildRoleSubscriptionBenefitTypes = { CHANNEL: 1, [1]: "CHANNEL", INTANGIBLE: 2, [2]: "INTANGIBLE" };
+export const GuildRoleSubscriptionFormat = { SOME_CHANNELS: 0, [0]: "SOME_CHANNELS", ALL_CHANNELS: 1, [1]: "ALL_CHANNELS" };
+export const TIER_TRIAL_INTERVALS = items;
+export const UserGuildRoleSubscriptionRelationship = { NONE: 0, [0]: "NONE", IN_SUBSCRIPTION_SERVER: 1, [1]: "IN_SUBSCRIPTION_SERVER", SUBSCRIBED: 2, [2]: "SUBSCRIBED" };
+export const CREATOR_REVENUE_PORTAL_URL = combined;
+export const CREATOR_REVENUE_SHARE_PERCENTAGE = 90;
+export const SERVER_SUBSCRIPTIONS_PREMIUM_CHECKLIST_EDUCATIONAL_URLS = frozen;

@@ -1,0 +1,54 @@
+// Module ID: 8892
+// Function ID: 70203
+// Name: useReadableSecureFramesFingerprint
+// Dependencies: []
+// Exports: useReadableSecureFramesFingerprint
+
+// Module 8892 (useReadableSecureFramesFingerprint)
+let closure_3 = importAll(dependencyMap[0]);
+const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/rtc/hooks/useReadableSecureFramesFingerprint.tsx");
+
+export const useReadableSecureFramesFingerprint = function useReadableSecureFramesFingerprint(fingerprintBase64) {
+  fingerprintBase64 = fingerprintBase64.fingerprintBase64;
+  const arg1 = fingerprintBase64;
+  const chunkSize = fingerprintBase64.chunkSize;
+  const importDefault = chunkSize;
+  const desiredLength = fingerprintBase64.desiredLength;
+  const dependencyMap = desiredLength;
+  const items = [chunkSize, fingerprintBase64, desiredLength];
+  const memo = React.useMemo(() => {
+    if (null != fingerprintBase64) {
+      if ("" !== fingerprintBase64) {
+        const obj = chunkSize(desiredLength[1]);
+        const toByteArrayResult = chunkSize(desiredLength[1]).toByteArray(fingerprintBase64);
+        const str5 = fingerprintBase64(desiredLength[2]).generateDisplayableCode(toByteArrayResult, desiredLength, chunkSize);
+        if (null == str5) {
+          return null;
+        } else {
+          const _RegExp = RegExp;
+          const _HermesInternal = HermesInternal;
+          const regExp = new RegExp(".{1," + chunkSize + "}", "g");
+          const match = str5.match(regExp);
+          let arr = null;
+          if (null != match) {
+            const _Array = Array;
+            arr = Array.from(match);
+          }
+          return arr;
+        }
+        const obj2 = fingerprintBase64(desiredLength[2]);
+      }
+    }
+    return null;
+  }, items);
+  if (null != fingerprintBase64) {
+    if ("" !== fingerprintBase64) {
+      if (null == memo) {
+        const _Error = Error;
+        const error = new Error("[useReadableSecureFramesCode] Failed to parse base 64 code.");
+        throw error;
+      }
+    }
+  }
+  return memo;
+};

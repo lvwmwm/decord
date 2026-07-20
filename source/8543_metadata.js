@@ -1,0 +1,11 @@
+// Module ID: 8543
+// Function ID: 67937
+// Name: metadata
+// Dependencies: []
+
+// Module 8543 (metadata)
+const _module = require(dependencyMap[0]);
+const result = _module.fileFinishedImporting("../discord_assets/assets/premium/tiered_tenure_badging/mobile_opal_badge_medium.png.js");
+
+export default "https://cdn.discordapp.com/assets/content/cb89d7118549f269e4e0b3e5367668173a03841a71104d39c1da4bd530df8d68.png";
+export const metadata = { fileBytes: 49039 };

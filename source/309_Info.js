@@ -1,0 +1,290 @@
+// Module ID: 309
+// Function ID: 4744
+// Name: Info
+// Dependencies: []
+
+// Module 309 (Info)
+const importDefaultResult = importDefault(dependencyMap[0]);
+let closure_2 = importDefault(dependencyMap[1]);
+class Info {
+  constructor() {
+    tmp = closure_2(this, Info);
+    this.any_blank_count = 0;
+    this.any_blank_ms = 0;
+    this.any_blank_speed_sum = 0;
+    this.mostly_blank_count = 0;
+    this.mostly_blank_ms = 0;
+    this.pixels_blank = 0;
+    this.pixels_sampled = 0;
+    this.pixels_scrolled = 0;
+    this.total_time_spent = 0;
+    this.sample_count = 0;
+    return;
+  }
+}
+let closure_3 = importDefaultResult(Info);
+let closure_4 = [];
+let closure_5 = 10;
+let closure_6 = null;
+
+export default () => {
+  class FillRateHelper {
+    constructor(arg0) {
+      self = this;
+      tmp = closure_2(this, FillRateHelper);
+      this._anyBlankStartTime = null;
+      this._enabled = false;
+      tmp2 = new closure_3();
+      this._info = tmp2;
+      this._mostlyBlankStartTime = null;
+      this._samplesStartTime = null;
+      this._listMetrics = arg0;
+      num = closure_6;
+      if (!closure_6) {
+        num = 0;
+      }
+      self._enabled = num > Math.random();
+      _resetDataResult = self._resetData();
+      return;
+    }
+  }
+  const global = FillRateHelper;
+  let obj = {
+    key: "activate",
+    value: function activate() {
+      const self = this;
+      let _enabled = this._enabled;
+      if (_enabled) {
+        _enabled = null == self._samplesStartTime;
+      }
+      if (_enabled) {
+        const _performance = FillRateHelper.performance;
+        self._samplesStartTime = _performance.now();
+      }
+    }
+  };
+  const items = [obj, , , , ];
+  obj = {
+    key: "deactivateAndFlush",
+    value: function deactivateAndFlush() {
+      const self = this;
+      if (this._enabled) {
+        const _samplesStartTime = self._samplesStartTime;
+        if (null != _samplesStartTime) {
+          if (self._info.sample_count < closure_5) {
+            self._resetData();
+          } else {
+            let _performance = _performance.performance;
+            const _Object = Object;
+            const obj = { total_time_spent: _performance.now() - _samplesStartTime };
+            _performance = Object.assign({}, self._info, obj);
+            const item = arr.forEach((arg0) => arg0(closure_0));
+            self._resetData();
+          }
+        }
+      }
+    }
+  };
+  items[1] = obj;
+  obj = {
+    key: "computeBlankness",
+    value: function computeBlankness(props, cellsAroundViewport, _scrollMetrics) {
+      let dOffset;
+      let offset;
+      let visibleLength;
+      const self = this;
+      if (this._enabled) {
+        if (0 !== props.getItemCount(props.data)) {
+          if (cellsAroundViewport.last >= cellsAroundViewport.first) {
+            if (null != self._samplesStartTime) {
+              ({ dOffset, offset, visibleLength } = _scrollMetrics);
+              const _info7 = self._info;
+              _info7.sample_count = _info7.sample_count + 1;
+              const _info8 = self._info;
+              const _Math7 = Math;
+              _info8.pixels_sampled = _info8.pixels_sampled + Math.round(visibleLength);
+              const _info9 = self._info;
+              const _Math8 = Math;
+              const _Math9 = Math;
+              _info9.pixels_scrolled = _info9.pixels_scrolled + Math.round(Math.abs(dOffset));
+              const _Math10 = Math;
+              const _Math11 = Math;
+              const rounded = Math.round(1000 * Math.abs(_scrollMetrics.velocity));
+              const _performance = FillRateHelper.performance;
+              const nowResult = _performance.now();
+              if (null != self._anyBlankStartTime) {
+                const _info = self._info;
+                _info.any_blank_ms = _info.any_blank_ms + (nowResult - self._anyBlankStartTime);
+              }
+              self._anyBlankStartTime = null;
+              if (null != self._mostlyBlankStartTime) {
+                const _info2 = self._info;
+                _info2.mostly_blank_ms = _info2.mostly_blank_ms + (nowResult - self._mostlyBlankStartTime);
+              }
+              self._mostlyBlankStartTime = null;
+              const first = cellsAroundViewport.first;
+              const _listMetrics = self._listMetrics;
+              const cellMetrics = _listMetrics.getCellMetrics(first, props);
+              let tmp2 = first;
+              let tmp3 = cellMetrics;
+              if (first <= cellsAroundViewport.last) {
+                let tmp4 = first;
+                if (!cellMetrics) {
+                  const _listMetrics2 = self._listMetrics;
+                  const cellMetrics1 = _listMetrics2.getCellMetrics(tmp4, props);
+                  const sum = tmp4 + 1;
+                  tmp2 = sum;
+                  tmp3 = cellMetrics1;
+                  while (sum <= cellsAroundViewport.last) {
+                    tmp4 = sum;
+                    if (!cellMetrics1) {
+                      continue;
+                    } else {
+                      tmp4 = sum;
+                      tmp2 = sum;
+                      tmp3 = cellMetrics1;
+                      if (cellMetrics1.isMounted) {
+                        break;
+                      }
+                    }
+                    continue;
+                  }
+                } else {
+                  tmp4 = first;
+                  tmp2 = first;
+                  tmp3 = cellMetrics;
+                }
+              }
+              let tmp7 = tmp3;
+              if (tmp3) {
+                tmp7 = tmp2 > 0;
+              }
+              let num2 = 0;
+              if (tmp7) {
+                const _Math = Math;
+                const _Math2 = Math;
+                num2 = Math.min(visibleLength, Math.max(0, tmp3.offset - offset));
+              }
+              const last = cellsAroundViewport.last;
+              const _listMetrics3 = self._listMetrics;
+              const cellMetrics2 = _listMetrics3.getCellMetrics(last, props);
+              let tmp9 = last;
+              let arr = cellMetrics2;
+              if (last >= cellsAroundViewport.first) {
+                let tmp10 = last;
+                if (!cellMetrics2) {
+                  const _listMetrics4 = self._listMetrics;
+                  const cellMetrics3 = _listMetrics4.getCellMetrics(tmp10, props);
+                  const diff = tmp10 - 1;
+                  tmp9 = diff;
+                  arr = cellMetrics3;
+                  while (diff >= cellsAroundViewport.first) {
+                    tmp10 = diff;
+                    if (!cellMetrics3) {
+                      continue;
+                    } else {
+                      tmp10 = diff;
+                      tmp9 = diff;
+                      arr = cellMetrics3;
+                      if (cellMetrics3.isMounted) {
+                        break;
+                      }
+                    }
+                    continue;
+                  }
+                } else {
+                  tmp10 = last;
+                  tmp9 = last;
+                  arr = cellMetrics2;
+                }
+              }
+              let num3 = 0;
+              if (arr) {
+                num3 = 0;
+                if (tmp9 < props.getItemCount(props.data) - 1) {
+                  const _Math3 = Math;
+                  const _Math4 = Math;
+                  num3 = Math.min(visibleLength, Math.max(0, offset + visibleLength - (arr.offset + arr.length)));
+                }
+              }
+              const _Math5 = Math;
+              const rounded1 = Math.round(num2 + num3);
+              const result = rounded1 / visibleLength;
+              if (result > 0) {
+                self._anyBlankStartTime = nowResult;
+                const _info3 = self._info;
+                _info3.any_blank_speed_sum = _info3.any_blank_speed_sum + rounded;
+                const _info4 = self._info;
+                _info4.any_blank_count = _info4.any_blank_count + 1;
+                const _info5 = self._info;
+                _info5.pixels_blank = _info5.pixels_blank + rounded1;
+                if (result > 0.5) {
+                  self._mostlyBlankStartTime = nowResult;
+                  const _info6 = self._info;
+                  _info6.mostly_blank_count = _info6.mostly_blank_count + 1;
+                }
+              } else {
+                let tmp15 = rounded < 0.01;
+                if (!tmp15) {
+                  const _Math6 = Math;
+                  tmp15 = Math.abs(dOffset) < 1;
+                }
+                if (tmp15) {
+                  self.deactivateAndFlush();
+                }
+              }
+              return result;
+            }
+          }
+        }
+      }
+      return 0;
+    }
+  };
+  items[2] = obj;
+  items[3] = {
+    key: "enabled",
+    value: function enabled() {
+      return this._enabled;
+    }
+  };
+  items[4] = {
+    key: "_resetData",
+    value: function _resetData() {
+      this._anyBlankStartTime = null;
+      this._info = new closure_3();
+      this._mostlyBlankStartTime = null;
+      this._samplesStartTime = null;
+    }
+  };
+  const items1 = [
+    {
+      key: "addListener",
+      value: function addListener(arg0) {
+        const FillRateHelper = arg0;
+        if (null === closure_6) {
+          const _console = console;
+          console.warn("Call `FillRateHelper.setSampleRate` before `addListener`.");
+        }
+        return {
+          remove() {
+            closure_4 = closure_4.filter((arg0) => closure_0 !== arg0);
+          }
+        };
+      }
+    },
+    {
+      key: "setSampleRate",
+      value: function setSampleRate(arg0) {
+
+      }
+    },
+    {
+      key: "setMinSampleCount",
+      value: function setMinSampleCount(arg0) {
+
+      }
+    }
+  ];
+  return importDefaultResult(FillRateHelper, items, items1);
+}();

@@ -1,0 +1,11 @@
+// Module ID: 5994
+// Function ID: 49865
+// Name: metadata
+// Dependencies: []
+
+// Module 5994 (metadata)
+const _module = require(dependencyMap[0]);
+const result = _module.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/DiamondIllocon-2x.png.js");
+
+export default "https://cdn.discordapp.com/assets/content/af22957ad03a572aa7e446146b96a5cb103160e545d1545ca434a9262ead9ac5.png";
+export const metadata = { fileBytes: 602 };

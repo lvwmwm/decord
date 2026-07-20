@@ -1,0 +1,79 @@
+// Module ID: 14058
+// Function ID: 106786
+// Name: getHorizontalOrVerticalStartPoint
+// Dependencies: []
+// Exports: default
+
+// Module 14058 (getHorizontalOrVerticalStartPoint)
+let closure_0 = { code: "function getHorizontalOrVerticalStartPoint_getGradientStartPontTsx1(angle,width,height){switch(angle){case 0:return[-width/2,0];case 90:return[0,-height/2];case 180:return[width/2,0];default:return[0,height/2];}}" };
+const tmp2 = () => {
+  function getHorizontalOrVerticalStartPoint(arg0, arg1, arg2) {
+    if (0 === arg0) {
+      const items = [-arg1 / 2, 0];
+      return items;
+    } else if (90 === arg0) {
+      const items1 = [0.229, -arg2 / 2];
+      return items1;
+    } else if (180 === arg0) {
+      const items2 = [arg1 / 2, 0];
+      return items2;
+    } else {
+      const items3 = [0.229, arg2 / 2];
+      return items3;
+    }
+  }
+  getHorizontalOrVerticalStartPoint.__closure = {};
+  getHorizontalOrVerticalStartPoint.__workletHash = 16439230263550;
+  getHorizontalOrVerticalStartPoint.__initData = closure_0;
+  return getHorizontalOrVerticalStartPoint;
+}();
+let closure_2 = { code: "function getStartCornerToIntersect_getGradientStartPontTsx2(angle,width,height){const w=width/2;const h=height/2;if(angle<90){return[-w,-h];}else if(angle<180){return[w,-h];}else if(angle<270){return[w,h];}else{return[-w,h];}}" };
+const tmp3 = () => {
+  function getStartCornerToIntersect(arg0, arg1, arg2) {
+    const result = arg1 / 2;
+    const result1 = arg2 / 2;
+    if (arg0 < 90) {
+      const items = [-result, -result1];
+      let items3 = items;
+    } else if (arg0 < 180) {
+      const items1 = [result, -result1];
+      items3 = items1;
+    } else if (arg0 < 270) {
+      const items2 = [result, result1];
+      items3 = items2;
+    } else {
+      items3 = [-result, result1];
+    }
+    return items3;
+  }
+  getStartCornerToIntersect.__closure = {};
+  getStartCornerToIntersect.__workletHash = 2348332324573;
+  getStartCornerToIntersect.__initData = closure_2;
+  return getStartCornerToIntersect;
+}();
+const fn = function t(arg0, arg1, arg2) {
+  const result = arg0 % 360;
+  let sum = result;
+  if (result < 0) {
+    sum = result + 360;
+  }
+  if (sum % 90 === 0) {
+    return tmp2(sum, arg1, arg2);
+  } else {
+    const _Math = Math;
+    const _Math2 = Math;
+    const tanResult = Math.tan(sum * Math.PI / 180);
+    const result1 = -1 / tanResult;
+    const tmp7 = globalThis(sum, arg1, arg2);
+    const result2 = (tmp7[1] - result1 * tmp7[0]) / (tanResult - result1);
+    const items = [result2, tanResult * result2];
+    return items;
+  }
+};
+fn.__closure = { getHorizontalOrVerticalStartPoint: tmp2, getStartCornerToIntersect: tmp3 };
+fn.__workletHash = 11244204401624;
+fn.__initData = { code: "function getGradientStartPoint_getGradientStartPontTsx3(angle,width,height){const{getHorizontalOrVerticalStartPoint,getStartCornerToIntersect}=this.__closure;angle=angle%360;if(angle<0){angle+=360;}if(angle%90===0){return getHorizontalOrVerticalStartPoint(angle,width,height);}const slope=Math.tan(angle*Math.PI/180);const perpendicularSlope=-1/slope;const startCorner=getStartCornerToIntersect(angle,width,height);const b=startCorner[1]-perpendicularSlope*startCorner[0];const startX=b/(slope-perpendicularSlope);const startY=slope*startX;return[startX,startY];}" };
+const _module = require(dependencyMap[0]);
+const result = _module.fileFinishedImporting("modules/user_settings/appearance/native/hooks/getGradientStartPont.tsx");
+
+export default fn;

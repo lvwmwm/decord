@@ -1,0 +1,16 @@
+// Module ID: 661
+// Function ID: 8024
+// Name: GLOBAL_DISCOVERY_APPS_FEATURED_CATEGORY_ID
+// Dependencies: []
+
+// Module 661 (GLOBAL_DISCOVERY_APPS_FEATURED_CATEGORY_ID)
+const _module = require(dependencyMap[0]);
+const result = _module.fileFinishedImporting("modules/global_discovery_apps/GlobalDiscoveryAppsConstants.tsx");
+
+export const GLOBAL_DISCOVERY_APPS_FEATURED_CATEGORY_ID = 0;
+export const EMPTY_QUERY = "";
+export const MAX_PAGES = 100;
+export const PAGE_SIZE = 48;
+export const GlobalDiscoveryAppsSections = { ABOUT: "about", STORE: "store" };
+export const GlobalDiscoveryAppsTabId = { FEATURED: "Featured", GAMES: "Games", ENTERTAINMENT: "Entertainment", MODERATION_AND_TOOLS: "Moderation & Tools", SOCIAL: "Social", UTILITIES: "Utilities" };
+export const ApplicationDirectoryProfileSections = { GENERAL: "general", IMAGES: "images", PREMIUM_DEPRECATED: "premium", STORE: "store", PRIVACY: "privacy" };

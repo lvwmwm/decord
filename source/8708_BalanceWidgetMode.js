@@ -1,0 +1,11 @@
+// Module ID: 8708
+// Function ID: 68930
+// Name: BalanceWidgetMode
+// Dependencies: []
+
+// Module 8708 (BalanceWidgetMode)
+const _module = require(dependencyMap[0]);
+const result = _module.fileFinishedImporting("modules/virtual_currency/types.tsx");
+
+export const BalanceWidgetMode = { DEFAULT: "DEFAULT", HIGHLIGHTED: "HIGHLIGHTED", SELECTED: "SELECTED" };
+export const OrbBadges = { ORB_PROFILE_BADGE: "orb_profile_badge" };

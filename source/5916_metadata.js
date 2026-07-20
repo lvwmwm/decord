@@ -1,0 +1,11 @@
+// Module ID: 5916
+// Function ID: 49748
+// Name: metadata
+// Dependencies: []
+
+// Module 5916 (metadata)
+const _module = require(dependencyMap[0]);
+const result = _module.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/BumpingFistsSpotIllustration-2x.png.js");
+
+export default "https://cdn.discordapp.com/assets/content/0830976830e01b68a35cf6d066964d973d8102bda6d683d0d2e9c012fe8c5f4e.png";
+export const metadata = { fileBytes: 23409 };

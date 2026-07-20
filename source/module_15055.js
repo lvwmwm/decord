@@ -1,0 +1,9 @@
+// Module ID: 15055
+// Function ID: 113369
+// Dependencies: []
+
+// Module 15055
+const _module = require(dependencyMap[0]);
+const obj = { url: 15177101398982780000000000000000000000000000000000000000000000000000000000000000000, content: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000009775796379356563, messageId: "bottomLoading", channel_id: 0, no: false, "Null": "long_press", "Null": "item_container", "Null": "open", scales: [] };
+
+export default _module.registerAsset(obj);

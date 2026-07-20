@@ -1,0 +1,10 @@
+// Module ID: 12629
+// Function ID: 97224
+// Name: DEFAULT_AUDIO_MIXER_SETTINGS
+// Dependencies: []
+
+// Module 12629 (DEFAULT_AUDIO_MIXER_SETTINGS)
+const _module = require(dependencyMap[0]);
+const result = _module.fileFinishedImporting("modules/spatial_audio/SpatialAudioConstants.tsx");
+
+export const DEFAULT_AUDIO_MIXER_SETTINGS = {};

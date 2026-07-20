@@ -1,0 +1,64 @@
+// Module ID: 4176
+// Function ID: 35923
+// Name: result
+// Dependencies: []
+// Exports: CLIP_NAME_TEMPLATE
+
+// Module 4176 (result)
+const obj = {};
+const result = 30 * importDefault(dependencyMap[0]).Millis.SECOND;
+obj.SECONDS_30 = result;
+obj[result] = "SECONDS_30";
+const MINUTE = importDefault(dependencyMap[0]).Millis.MINUTE;
+obj.MINUTES_1 = MINUTE;
+obj[MINUTE] = "MINUTES_1";
+const result1 = 2 * importDefault(dependencyMap[0]).Millis.MINUTE;
+obj.MINUTES_2 = result1;
+obj[result1] = "MINUTES_2";
+const result2 = 6 * importDefault(dependencyMap[0]).Millis.SECOND;
+let importDefaultResult = importDefault(dependencyMap[1]);
+importDefaultResult = new importDefaultResult("Clips");
+const result3 = 60 * importDefault(dependencyMap[0]).Millis.SECOND;
+const result4 = 14 * importDefault(dependencyMap[0]).Millis.DAY;
+const result5 = arg1(dependencyMap[2]).fileFinishedImporting("modules/clips/ClipsConstants.tsx");
+
+export const ClipsLengthSettings = obj;
+export const ClipsViewerConnectivitySettings = { ALL: 0, [0]: "ALL", FRIENDS: 1, [1]: "FRIENDS" };
+export const ClipSaveTypes = { DECOUPLED: "decoupled", VIEWER: "viewer", STREAMER: "streamer", VOICE: "voice" };
+export const ClipsUserEducationType = { Error: 0, [0]: "Error", Disabled: 1, [1]: "Disabled", Enabled: 2, [2]: "Enabled" };
+export const DEFAULT_SAVE_CLIP_KEYBIND = "alt+c";
+export const DEFAULT_SAVE_SCREENSHOT_KEYBIND = "f12";
+export const CLIPS_TOAST_DURATION = result2;
+export const ClipsLogger = importDefaultResult;
+export const CURRENT_CLIP_METADATA_VERSION = 6;
+export const CLIPS_HARDWARE_CLASSIFICATION_VERSION = 2;
+export const WINDOWS_HARDWARE_MINIMUM_GPU_REGEX = /(NVIDIA GeForce GTX (98|10|16).*|Radeon RX 5(500|600|).*|Radeon RX5.*)/;
+export const WINDOWS_HARDWARE_AUTO_ENABLE_GPU_REGEX = /(NVIDIA GeForce (RTX (20|30|40|50).*))|(.*Radeon RX (57|58|59|6|7|9).*)/;
+export const MIN_CLIP_DURATION_SECONDS = 0.1;
+export const CLIP_NAME_MIN_CHAR_LENGTH = 0;
+export const CLIP_NAME_MAX_CHAR_LENGTH = 200;
+export const CLIPS_EDIT_MODAL_KEY = "clips-edit";
+export const CLIPS_GALLERY_MODAL_KEY = "clips-gallery";
+export const CLIPS_QOE_LOCATION = "clips_player";
+export const CLIPS_THUMBNAIL_MAX_WIDTH = 640;
+export const CLIPS_THUMBNAIL_MAX_HEIGHT = 360;
+export const CLIPS_MAX_PARTICIPANTS = 100;
+export const CLIPS_MAX_TIMELINE_EVENTS = 1000;
+export const CLIPS_TIMELINE_BUFFER_MS = 500;
+export const CLIP_NAME_TEMPLATE = (arg0) => "Clip - " + new Date(arg0).toLocaleString();
+export const MAX_SIMULTANEOUS_SAVE_CLIP_OPERATIONS = 15;
+export const CLIPS_SAVE_TIMEOUT_WARN_MS = result3;
+export const CLIPS_RUNNING_GAME_CHANGE_CLIPS_INIT_DELAY = 30000;
+export const SEEK_DENOMINATOR = 30;
+export const SEEK_SHIFT_MODIFIER = 10;
+export const CLIPS_EDUCATION_COOLDOWN = result4;
+export const CLIPS_EDUCATION_GAME_LAUNCH_THRESHOLD = 5;
+export const CLIPS_EDUCATION_MAX_DISMISSALS_ENABLED = 5;
+export const CLIPS_EDUCATION_MAX_DISMISSALS_DISABLED = 1;
+export const DEFAULT_MAX_AUTO_CLIPS = 20;
+export const MIN_MAX_AUTO_CLIPS = 1;
+export const MAX_MAX_AUTO_CLIPS = 50;
+export const BYTES_PER_GB = 1073741824;
+export const MAX_TRANSIENT_STORAGE_BYTES = 16106127360;
+export const TRANSIENT_AUTOCLIP_DIRNAME = ".autoclip-cache";
+export const ClipsTrackSuffixes = { ALL: ":all", APPLICATION: ":application", VOICE: ":voice", SOUNDBOARD: ":soundboard" };

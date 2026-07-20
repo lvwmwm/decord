@@ -1,0 +1,11 @@
+// Module ID: 6060
+// Function ID: 49964
+// Name: metadata
+// Dependencies: []
+
+// Module 6060 (metadata)
+const _module = require(dependencyMap[0]);
+const result = _module.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/ForceIllocon-2x.png.js");
+
+export default "https://cdn.discordapp.com/assets/content/b68df47a7c7c726bdfde029e563468cbacb975d3ae0e0cebbb9e678935e4320f.png";
+export const metadata = { fileBytes: 704 };

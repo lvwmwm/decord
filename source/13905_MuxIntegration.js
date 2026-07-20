@@ -1,0 +1,86 @@
+// Module ID: 13905
+// Function ID: 105262
+// Name: MuxIntegration
+// Dependencies: []
+
+// Module 13905 (MuxIntegration)
+let closure_0 = importDefault(dependencyMap[0]);
+let closure_1 = importDefault(dependencyMap[1]);
+const tmp2 = () => {
+  class MuxIntegration {
+    constructor() {
+      tmp = MuxIntegration(this, MuxIntegration);
+      return;
+    }
+  }
+  let closure_0 = MuxIntegration;
+  let obj = {
+    key: "mapDiscordToMuxMetadata",
+    value(contentMetadata, session_id) {
+      const self = this;
+      const obj = { "Bool(true)": false, "Bool(true)": false, "Bool(true)": false, "Bool(true)": false, session_id, video_id: contentMetadata.contentMetadata.contentId, video_title: contentMetadata.contentMetadata.title };
+      let durationMs = contentMetadata.contentMetadata.durationMs;
+      if (null == durationMs) {
+        let result;
+        if (null != contentMetadata.contentMetadata.durationSec) {
+          result = 1000 * contentMetadata.contentMetadata.durationSec;
+        }
+        durationMs = result;
+      }
+      obj.video_duration = durationMs;
+      obj.video_content_type = contentMetadata.contentMetadata.contentType;
+      obj.video_series = contentMetadata.contentMetadata.questId;
+      obj.video_producer = contentMetadata.contentMetadata.gameId;
+      const gameName = contentMetadata.contentMetadata.gameName;
+      let str = "Discord";
+      if (null != gameName) {
+        str = gameName;
+      }
+      obj.video_brand = str;
+      obj.video_cdn = "Cloudflare";
+      obj.video_stream_type = contentMetadata.contentMetadata.videoStreamType;
+      obj.view_client_application_name = self.getBuildChannel();
+      obj.view_client_application_version = self.getAppVersion();
+      const userContext = contentMetadata.userContext;
+      let userId;
+      if (null != userContext) {
+        userId = userContext.userId;
+      }
+      obj.viewer_user_id = userId;
+      const userContext2 = contentMetadata.userContext;
+      let userTier;
+      if (null != userContext2) {
+        userTier = userContext2.userTier;
+      }
+      obj.viewer_plan = userTier;
+      return obj;
+    }
+  };
+  const items = [obj, , ];
+  obj = {
+    key: "getAppVersion",
+    value() {
+      return "6028";
+    }
+  };
+  items[1] = obj;
+  obj = {
+    key: "getBuildChannel",
+    value() {
+      let RELEASE_CHANNEL;
+      if (null != GLOBAL_ENV) {
+        RELEASE_CHANNEL = GLOBAL_ENV.RELEASE_CHANNEL;
+      }
+      let str = "stable";
+      if (null != RELEASE_CHANNEL) {
+        str = RELEASE_CHANNEL;
+      }
+      return str;
+    }
+  };
+  items[2] = obj;
+  return callback(MuxIntegration, null, items);
+}();
+const result = arg1(dependencyMap[2]).fileFinishedImporting("modules/video-qoe/integrations/MuxIntegration.tsx");
+
+export const MuxIntegration = tmp2;

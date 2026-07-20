@@ -1,0 +1,11 @@
+// Module ID: 6610
+// Function ID: 50789
+// Name: metadata
+// Dependencies: []
+
+// Module 6610 (metadata)
+const _module = require(dependencyMap[0]);
+const result = _module.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/WiltedFlowerIllocon-2x.png.js");
+
+export default "https://cdn.discordapp.com/assets/content/87f63601a12d3c7969b208b65572e835af01f57f5c364e4eb851fd7a259ac7d9.png";
+export const metadata = { fileBytes: 652 };

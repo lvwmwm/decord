@@ -1,0 +1,59 @@
+// Module ID: 10241
+// Function ID: 79189
+// Name: hairlineWidth
+// Dependencies: []
+// Exports: getScaledCategoryRowHeight, getScaledChannelRowHeight, getScaledChannelSubtitleHeight, getScaledSearchBarHeight
+
+// Module 10241 (hairlineWidth)
+const _module = require(dependencyMap[1]);
+let num = 20;
+if (_module.isIOS()) {
+  num = 22;
+}
+let closure_3 = "text-sm/semibold";
+let closure_4 = "text-sm/semibold";
+const hairlineWidth = require(dependencyMap[0]).StyleSheet.hairlineWidth;
+const frozen = Object.freeze({});
+const _module1 = require(dependencyMap[3]);
+const result = _module1.fileFinishedImporting("modules/channel_list_v2/native/RedesignChannelListConstants.tsx");
+
+export const CHANNEL_SUBTITLE_TEXT_VARIANT = "text-xs/medium";
+export const CHANNEL_PADDING_VERTICAL = 8;
+export const CHANNEL_TITLE_LINE_HEIGHT = num;
+export const SEARCH_BAR_HEIGHT = 40;
+export const SEARCH_BAR_MARGIN_BOTTOM = 8;
+export const SEARCH_BAR_PADDING_VERTICAL = 12;
+export const SEARCH_BAR_TEXT_VARIANT = "text-sm/semibold";
+export const CATEGORY_NAME_TEXT_VARIANT = "text-sm/semibold";
+export const PANEL_MARGIN = 8;
+export const CHANNEL_MARGIN_VERTICAL = hairlineWidth;
+export const CHANNEL_LIST_DESIGN_WIDTH = 375;
+export const BANNER_MAX_HEIGHT_PERCENTAGE = 0.25;
+export const MUTED_OPACITY_CONTENT = 0.24;
+export const SUBTITLE_OPACITY_NORMAL = 0.8;
+export const VOICE_USERS_HEIGHT = 36;
+export const BORDER_BOTTOM_HEIGHT = 1;
+export const STICKY_HEADER_VERTICAL_GAP = 8;
+export const STICKY_HEADER_PADDING_TOP = 12;
+export const STICKY_HEADER_PADDING_BOTTOM = 12;
+export const STICKY_HEADER_PADDING_TOP_TABLET = 8;
+export const STICKY_HEADER_MARGIN_BOTTOM = 8;
+export const STICKY_HEADER_BLUR_AMOUNT = 0.6;
+export const STICKY_BANNER_ASPECT_RATIO = 2.609375;
+export const CATEGORY_MARGIN_TOP = 12;
+export const CATEGORY_MARGIN_BOTTOM = 4;
+export const CATEGORY_VERTICAL_PADDING = 4;
+export const getScaledChannelSubtitleHeight = function getScaledChannelSubtitleHeight(fontScale) {
+  return require(dependencyMap[2]).scaleTextLineHeight("text-xs/medium", fontScale);
+};
+export const getScaledCategoryRowHeight = function getScaledCategoryRowHeight(fontScale) {
+  return require(dependencyMap[2]).scaleTextLineHeight(closure_4, fontScale) + 8 + 4;
+};
+export const getScaledChannelRowHeight = function getScaledChannelRowHeight(arg0) {
+  const sum = 8 + hairlineWidth;
+  return 2 * sum + require(dependencyMap[2]).scaleLineHeight(num, arg0);
+};
+export const getScaledSearchBarHeight = function getScaledSearchBarHeight(fontScale) {
+  return 24 + require(dependencyMap[2]).scaleTextLineHeight(closure_3, fontScale);
+};
+export const VIEWABILITY_CONFIG = frozen;

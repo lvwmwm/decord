@@ -1,0 +1,11 @@
+// Module ID: 6396
+// Function ID: 50468
+// Name: metadata
+// Dependencies: []
+
+// Module 6396 (metadata)
+const _module = require(dependencyMap[0]);
+const result = _module.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/PasskeysSpotIllustration-2x.png.js");
+
+export default "https://cdn.discordapp.com/assets/content/c163416940eb58b28d8ae9f80199b59a5bf2f59a91c79523f7f2979ea6247611.png";
+export const metadata = { fileBytes: 40676 };

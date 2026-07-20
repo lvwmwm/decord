@@ -1,0 +1,24 @@
+// Module ID: 1133
+// Function ID: 12912
+// Name: SEMANTIC_ATTRIBUTE_SENTRY_SOURCE
+// Dependencies: []
+
+// Module 1133 (SEMANTIC_ATTRIBUTE_SENTRY_SOURCE)
+
+export const SEMANTIC_ATTRIBUTE_SENTRY_SOURCE = require(dependencyMap[0]).SEMANTIC_ATTRIBUTE_SENTRY_SOURCE;
+export const SEMANTIC_ATTRIBUTE_SENTRY_ORIGIN = require(dependencyMap[0]).SEMANTIC_ATTRIBUTE_SENTRY_ORIGIN;
+export const SEMANTIC_ATTRIBUTE_SENTRY_OP = require(dependencyMap[0]).SEMANTIC_ATTRIBUTE_SENTRY_OP;
+export const SEMANTIC_ATTRIBUTE_SENTRY_SAMPLE_RATE = require(dependencyMap[0]).SEMANTIC_ATTRIBUTE_SENTRY_SAMPLE_RATE;
+export const SEMANTIC_ATTRIBUTE_SENTRY_IDLE_SPAN_FINISH_REASON = require(dependencyMap[0]).SEMANTIC_ATTRIBUTE_SENTRY_IDLE_SPAN_FINISH_REASON;
+export const SEMANTIC_ATTRIBUTE_ROUTING_INSTRUMENTATION = "routing.instrumentation";
+export const SEMANTIC_ATTRIBUTE_ROUTE_NAME = "route.name";
+export const SEMANTIC_ATTRIBUTE_ROUTE_KEY = "route.key";
+export const SEMANTIC_ATTRIBUTE_ROUTE_COMPONENT_ID = "route.component_id";
+export const SEMANTIC_ATTRIBUTE_ROUTE_COMPONENT_TYPE = "route.component_type";
+export const SEMANTIC_ATTRIBUTE_ROUTE_HAS_BEEN_SEEN = "route.has_been_seen";
+export const SEMANTIC_ATTRIBUTE_PREVIOUS_ROUTE_NAME = "previous_route.name";
+export const SEMANTIC_ATTRIBUTE_PREVIOUS_ROUTE_KEY = "previous_route.key";
+export const SEMANTIC_ATTRIBUTE_PREVIOUS_ROUTE_COMPONENT_ID = "previous_route.component_id";
+export const SEMANTIC_ATTRIBUTE_PREVIOUS_ROUTE_COMPONENT_TYPE = "previous_route.component_type";
+export const SEMANTIC_ATTRIBUTE_TIME_TO_INITIAL_DISPLAY_FALLBACK = "route.initial_display_fallback";
+export const SEMANTIC_ATTRIBUTE_NAVIGATION_ACTION_TYPE = "navigation.action_type";

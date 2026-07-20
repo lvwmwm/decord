@@ -1,0 +1,31 @@
+// Module ID: 12633
+// Function ID: 97230
+// Name: getAGC2ExperimentConfig
+// Dependencies: []
+// Exports: getAGC2ExperimentConfig
+
+// Module 12633 (getAGC2ExperimentConfig)
+let obj = { 0: "<string:2924740609>", 9223372036854775807: "<string:67350019>", 9223372036854775807: "<string:1091058473>", 0: "dnj", -9223372036854775808: "<string:1090765393>", 9223372036854775807: "njz", 9223372036854775807: "<string:3758280274>", 9223372036854775807: true, 0: true };
+const _module = require(dependencyMap[0]);
+obj = { alignSelf: false, padding: false, borderWidth: false };
+obj.noiseCancellationConfig = obj;
+obj = { alignSelf: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000039873323606451113, padding: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000042721418146003455, borderWidth: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004556951274888411 };
+obj.noiseCancellationConfig = obj;
+let closure_0 = _module.createApexExperiment({ defaultConfig: { noiseCancellationDuringProcessing: false, noiseCancellationConfig: { useAGC2: false } }, variations: { [1]: { noiseCancellationDuringProcessing: true, noiseCancellationConfig: { useAGC2: false } }, [2]: obj, [3]: { noiseCancellationConfig: obj }, [4]: { noiseCancellationConfig: obj }, [5]: { noiseCancellationConfig: obj }, [6]: obj } });
+const _module1 = require(dependencyMap[1]);
+const result = _module1.fileFinishedImporting("modules/media_engine/AGC2Experiment.tsx");
+
+export const getAGC2ExperimentConfig = function getAGC2ExperimentConfig(disable) {
+  let flag = disable.disable;
+  if (flag === undefined) {
+    flag = false;
+  }
+  let obj = closure_0;
+  if (flag) {
+    let defaultConfig = obj.definition.defaultConfig;
+  } else {
+    obj = { location: disable.location };
+    defaultConfig = obj.getConfig(obj);
+  }
+  return defaultConfig;
+};

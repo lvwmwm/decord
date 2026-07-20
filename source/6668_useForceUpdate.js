@@ -1,0 +1,11 @@
+// Module ID: 6668
+// Function ID: 51328
+// Name: useForceUpdate
+// Dependencies: []
+
+// Module 6668 (useForceUpdate)
+
+export const useForceUpdate = importDefault(dependencyMap[0]);
+export const useStableMemo = importDefault(dependencyMap[1]);
+export const useLazyValue = importDefault(dependencyMap[2]);
+export const areHookInputsEqual = importDefault(dependencyMap[3]);

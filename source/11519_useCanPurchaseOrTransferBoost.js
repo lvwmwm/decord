@@ -1,0 +1,34 @@
+// Module ID: 11519
+// Function ID: 89766
+// Name: useCanPurchaseOrTransferBoost
+// Dependencies: []
+// Exports: default
+
+// Module 11519 (useCanPurchaseOrTransferBoost)
+let closure_3 = importDefault(dependencyMap[0]);
+let closure_4 = importDefault(dependencyMap[1]);
+const FractionalPremiumStates = arg1(dependencyMap[2]).FractionalPremiumStates;
+const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/premium/powerups/hooks/useCanPurchaseOrTransferBoost.tsx");
+
+export default function useCanPurchaseOrTransferBoost() {
+  const items = [closure_3];
+  const stateFromStores = arg1(dependencyMap[4]).useStateFromStores(items, () => {
+    const currentUser = currentUser.getCurrentUser();
+    let isPremiumGroupMemberResult;
+    if (null != currentUser) {
+      isPremiumGroupMemberResult = currentUser.isPremiumGroupMember();
+    }
+    return true === isPremiumGroupMemberResult;
+  });
+  const obj = arg1(dependencyMap[4]);
+  const items1 = [closure_4];
+  let stateFromStores1 = arg1(dependencyMap[4]).useStateFromStores(items1, () => {
+    const values = Object.values(boostSlots.boostSlots);
+    return values.some((isAvailable) => isAvailable.isAvailable());
+  });
+  if (!stateFromStores1) {
+    stateFromStores1 = importDefault(dependencyMap[3])().fractionalState === FractionalPremiumStates.NONE && !stateFromStores;
+    const tmp4 = importDefault(dependencyMap[3])().fractionalState === FractionalPremiumStates.NONE && !stateFromStores;
+  }
+  return stateFromStores1;
+};

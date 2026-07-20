@@ -1,0 +1,18 @@
+// Module ID: 12750
+// Function ID: 97789
+// Dependencies: []
+
+// Module 12750
+const _module = require(dependencyMap[3]);
+const result = _module.fileFinishedImporting("modules/activate_device/native/ActivateDeviceModalActionCreators.tsx");
+
+export default {
+  showModal(userCode) {
+    let obj = importDefault(dependencyMap[0]);
+    obj = { userCode };
+    obj.pushLazy(require(dependencyMap[2])(dependencyMap[1], dependencyMap.paths), obj, "ACTIVATE_DEVICE_MODAL_KEY");
+  },
+  hideModal() {
+    importDefault(dependencyMap[0]).popWithKey("ACTIVATE_DEVICE_MODAL_KEY");
+  }
+};

@@ -1,0 +1,25 @@
+// Module ID: 4187
+// Function ID: 35983
+// Name: StreamIssueReportReasons
+// Dependencies: []
+
+// Module 4187 (StreamIssueReportReasons)
+const _module = require(dependencyMap[1]);
+const result = _module.fileFinishedImporting("modules/go_live/Constants.tsx");
+
+export const StreamIssueReportReasons = { BLACK_SCREEN: "BLACK_SCREEN", BLURRY: "BLURRY", LAGGING: "LAGGING", OUT_OF_SYNC: "OUT_OF_SYNC", AUDIO_MISSING: "AUDIO_MISSING", AUDIO_POOR: "AUDIO_POOR", GAME_ISSUE: "GAME_ISSUE", STREAM_STOPPED: "STREAM_STOPPED", NO_ISSUE: "NO_ISSUE", OTHER: "OTHER", VIBES_OFF: "VIBES_OFF" };
+export const DARWIN_SOUNDSHARE_VERSION = ">=19.0.0";
+export const DARWIN_SCKIT_VERSION = ">=22.0.0";
+export const DARWIN_SCKIT_AUDIO_VERSION = ">=22.0.0";
+export const DARWIN_SCKIT_SINGLE_TYPE_VERSION = ">=24.0.0";
+export const WINDOWS_SOUNDSHARE_NONHOOK_VERSION = ">=10.0.17763";
+export const WINDOWS_SOUNDSHARE_HOOK_VERSION = "<10.0.22000";
+export const WINDOWS_GRAPHICS_CAPTURE_NEW_APIS_SEMVER = ">=10.0.26100";
+export const WINDOWS_SETTINGS_SOUND_DEVICE_DEEPLINK_SEMVER = ">=10.0.26100";
+export const WINDOWS_GRAPHICS_CAPTURE_NEW_APIS_BUILD = 26100;
+export const WINDOWS_GRAPHICS_CAPTURE_SEMVER = ">=10.0.22000";
+export const WINDOWS_GRAPHICS_CAPTURE_BUILD = 22000;
+export const StreamTypes = { GUILD: "guild", CALL: "call" };
+export const STREAM_NOTIFY_GUILD_MAX_SIZE = require(dependencyMap[0]).Notifications.StreamNotificationsGuildMaxSize;
+export const GO_LIVE_NOTIFY_FRIENDS_MIN_MEMBER_COUNT = 30;
+export const BROWSER_EXECUTABLES = new Set(["active", "activityState", "style", "onComponentRef", 108.7]);

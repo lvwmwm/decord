@@ -1,0 +1,9 @@
+// Module ID: 1115
+// Function ID: 12691
+// Dependencies: []
+
+// Module 1115
+Object.defineProperty(arg5, Symbol.toStringTag, { value: "Module" });
+arg5.REACT_MOUNT_OP = "ui.react.mount";
+arg5.REACT_RENDER_OP = "ui.react.render";
+arg5.REACT_UPDATE_OP = "ui.react.update";

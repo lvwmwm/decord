@@ -1,0 +1,82 @@
+// Module ID: 12567
+// Function ID: 96698
+// Name: _isNativeReflectConstruct
+// Dependencies: []
+
+// Module 12567 (_isNativeReflectConstruct)
+function _isNativeReflectConstruct() {
+  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
+
+  }));
+  function _isNativeReflectConstruct() {
+    return closure_0;
+  }
+  const result = _isNativeReflectConstruct();
+}
+let closure_3 = importDefault(dependencyMap[0]);
+let closure_4 = importDefault(dependencyMap[1]);
+let closure_5 = importDefault(dependencyMap[2]);
+let closure_6 = importDefault(dependencyMap[3]);
+let closure_7 = importDefault(dependencyMap[4]);
+let closure_8 = importDefault(dependencyMap[5]);
+let closure_9 = importDefault(dependencyMap[6]);
+let tmp2 = (arg0) => {
+  class VoiceActionSheetManager {
+    constructor(arg0) {
+      self = this;
+      items = [...arguments];
+      tmp = closure_3(this, VoiceActionSheetManager);
+      items1 = [...items];
+      obj = closure_6(VoiceActionSheetManager);
+      tmp2 = closure_5;
+      if (closure_10()) {
+        tmp4 = globalThis;
+        _Reflect = Reflect;
+        tmp5 = closure_6;
+        constructResult = Reflect.construct(obj, items1, closure_6(self).constructor);
+      } else {
+        constructResult = obj.apply(self, items1);
+      }
+      tmp2Result = tmp2(self, constructResult);
+      VoiceActionSheetManager = tmp2Result;
+      tmp2Result.channel = null;
+      tmp2Result.handleOpenChannelCallModal = () => {
+        const channel = tmp2Result.channel;
+        if (null != channel) {
+          callback(closure_2[7]).wait(() => {
+            const result = channel(closure_2[8]).dismissVoiceChannelScreens(channel);
+            const obj = channel(closure_2[8]);
+            channel(closure_2[8]).openChannelCallModal(channel);
+          });
+          tmp2Result.terminate();
+          const obj = callback(closure_2[7]);
+        }
+      };
+      return tmp2Result;
+    }
+  }
+  const arg1 = VoiceActionSheetManager;
+  callback2(VoiceActionSheetManager, arg0);
+  let obj = {
+    key: "_initialize",
+    value(channel) {
+      this.channel = channel;
+      closure_9.addChangeListener(this.handleOpenChannelCallModal);
+      closure_8.addChangeListener(this.handleOpenChannelCallModal);
+    }
+  };
+  const items = [obj, ];
+  obj = {
+    key: "_terminate",
+    value() {
+      closure_9.removeChangeListener(this.handleOpenChannelCallModal);
+      closure_8.removeChangeListener(this.handleOpenChannelCallModal);
+    }
+  };
+  items[1] = obj;
+  return callback(VoiceActionSheetManager, items);
+}(importDefault(dependencyMap[9]));
+tmp2 = new tmp2();
+const result = arg1(dependencyMap[10]).fileFinishedImporting("modules/voice_calls/native/VoiceActionSheetManager.tsx");
+
+export default tmp2;

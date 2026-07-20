@@ -1,0 +1,192 @@
+// Module ID: 142
+// Function ID: 2311
+// Name: _isNativeReflectConstruct
+// Dependencies: []
+
+// Module 142 (_isNativeReflectConstruct)
+function _isNativeReflectConstruct() {
+  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
+
+  }));
+  function _isNativeReflectConstruct() {
+    return closure_0;
+  }
+  const result = _isNativeReflectConstruct();
+}
+let closure_3 = importDefault(dependencyMap[0]);
+let closure_4 = importDefault(dependencyMap[1]);
+let closure_5 = importDefault(dependencyMap[2]);
+let closure_6 = importDefault(dependencyMap[3]);
+let closure_7 = importDefault(dependencyMap[4]);
+function noop() {
+
+}
+
+export default function replaceConstructorWithoutSuper(arg0) {
+  class ReactNativeElement {
+    constructor(arg0, arg1, arg2, arg3) {
+      obj = closure_0(closure_2[6]);
+      setOwnerDocumentResult = obj.setOwnerDocument(this, arg3);
+      obj2 = closure_0(closure_2[6]);
+      setInstanceHandleResult = obj2.setInstanceHandle(this, arg2);
+      this.__nativeTag = arg0;
+      this.__internalInstanceHandle = arg2;
+      this.__viewConfig = arg1;
+      return;
+    }
+  }
+  ReactNativeElement.prototype = arg0.prototype;
+  return ReactNativeElement;
+}((arg0) => {
+  class ReactNativeElement {
+    constructor(arg0, arg1, arg2, arg3) {
+      self = this;
+      tmp = closure_3(this, ReactNativeElement);
+      items = [, ];
+      items[0] = arg2;
+      items[1] = arg3;
+      obj = closure_6(ReactNativeElement);
+      tmp2 = closure_5;
+      if (closure_9()) {
+        tmp4 = globalThis;
+        _Reflect = Reflect;
+        tmp5 = closure_6;
+        constructResult = Reflect.construct(obj, items, closure_6(self).constructor);
+      } else {
+        constructResult = obj.apply(self, items);
+      }
+      tmp2Result = tmp2(self, constructResult);
+      tmp2Result.__nativeTag = arg0;
+      tmp2Result.__internalInstanceHandle = arg2;
+      tmp2Result.__viewConfig = arg1;
+      return tmp2Result;
+    }
+  }
+  const arg1 = ReactNativeElement;
+  callback2(ReactNativeElement, arg0);
+  let obj = {
+    key: "offsetHeight",
+    get() {
+      return Math.round(ReactNativeElement(closure_2[5]).getBoundingClientRect(this, { includeTransform: false }).height);
+    }
+  };
+  const items = [obj, , , , , , , , , , ];
+  obj = {
+    key: "offsetLeft",
+    get() {
+      const nativeElementReference = ReactNativeElement(closure_2[6]).getNativeElementReference(this);
+      if (null != nativeElementReference) {
+        const _Math = Math;
+        return Math.round(callback(closure_2[7]).getOffset(nativeElementReference)[2]);
+      } else {
+        return 0;
+      }
+      const obj = ReactNativeElement(closure_2[6]);
+    }
+  };
+  items[1] = obj;
+  obj = {
+    key: "offsetParent",
+    get() {
+      const nativeElementReference = ReactNativeElement(closure_2[6]).getNativeElementReference(this);
+      if (null != nativeElementReference) {
+        const offset = callback(closure_2[7]).getOffset(nativeElementReference);
+        if (null != offset[0]) {
+          return ReactNativeElement(closure_2[6]).getPublicInstanceFromInstanceHandle(offset[0]);
+        }
+        const obj2 = callback(closure_2[7]);
+      }
+      return null;
+    }
+  };
+  items[2] = obj;
+  items[3] = {
+    key: "offsetTop",
+    get() {
+      const nativeElementReference = ReactNativeElement(closure_2[6]).getNativeElementReference(this);
+      if (null != nativeElementReference) {
+        const _Math = Math;
+        return Math.round(callback(closure_2[7]).getOffset(nativeElementReference)[1]);
+      } else {
+        return 0;
+      }
+      const obj = ReactNativeElement(closure_2[6]);
+    }
+  };
+  items[4] = {
+    key: "offsetWidth",
+    get() {
+      return Math.round(ReactNativeElement(closure_2[5]).getBoundingClientRect(this, { includeTransform: false }).width);
+    }
+  };
+  items[5] = {
+    key: "blur",
+    value: function blur() {
+      callback(closure_2[8]).blurTextInput(this);
+    }
+  };
+  items[6] = {
+    key: "focus",
+    value: function focus() {
+      callback(closure_2[8]).focusTextInput(this);
+    }
+  };
+  items[7] = {
+    key: "measure",
+    value: function measure(arg0) {
+      const nativeElementReference = ReactNativeElement(closure_2[6]).getNativeElementReference(this);
+      if (null != nativeElementReference) {
+        callback(closure_2[7]).measure(nativeElementReference, arg0);
+        const obj2 = callback(closure_2[7]);
+      }
+    }
+  };
+  items[8] = {
+    key: "measureInWindow",
+    value: function measureInWindow(arg0) {
+      const nativeElementReference = ReactNativeElement(closure_2[6]).getNativeElementReference(this);
+      if (null != nativeElementReference) {
+        callback(closure_2[7]).measureInWindow(nativeElementReference, arg0);
+        const obj2 = callback(closure_2[7]);
+      }
+    }
+  };
+  items[9] = {
+    key: "measureLayout",
+    value: function measureLayout(arg0, arg1, arg2) {
+      let tmp = arg1;
+      let tmp2 = arg2;
+      if (arg0 instanceof ReactNativeElement) {
+        const self = this;
+        const nativeElementReference = ReactNativeElement(closure_2[6]).getNativeElementReference(this);
+        const obj = ReactNativeElement(closure_2[6]);
+        const nativeElementReference1 = ReactNativeElement(closure_2[6]).getNativeElementReference(arg0);
+        if (tmp8) {
+          const obj3 = callback(closure_2[7]);
+          if (null == tmp2) {
+            tmp2 = closure_8;
+          }
+          if (null == tmp) {
+            tmp = closure_8;
+          }
+          obj3.measureLayout(nativeElementReference, nativeElementReference1, tmp2, tmp);
+        }
+        const obj2 = ReactNativeElement(closure_2[6]);
+        const tmp8 = null != nativeElementReference && null != nativeElementReference1;
+      }
+    }
+  };
+  items[10] = {
+    key: "setNativeProps",
+    value: function setNativeProps(arg0) {
+      let obj = ReactNativeElement(closure_2[9]);
+      obj = obj.create(arg0, this.__viewConfig.validAttributes);
+      const nativeElementReference = ReactNativeElement(closure_2[6]).getNativeElementReference(this);
+      if (tmp3) {
+        callback(closure_2[7]).setNativeProps(nativeElementReference, obj);
+        const obj3 = callback(closure_2[7]);
+      }
+    }
+  };
+  return callback(ReactNativeElement, items);
+}(importDefault(dependencyMap[5])));

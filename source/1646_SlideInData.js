@@ -1,0 +1,81 @@
+// Module ID: 1646
+// Function ID: 18337
+// Name: SlideInData
+// Dependencies: []
+
+// Module 1646 (SlideInData)
+let obj = { SlideInRight: { style: { [0]: { transform: items }, [100]: { transform: items1 } } }, SlideInLeft: obj, SlideInUp: { style: { [0]: { transform: items4 }, [100]: { transform: items5 } } }, SlideInDown: obj };
+const items = [{ translateX: "100vw" }];
+const items1 = [{ translateX: "0%" }];
+obj = { -1814393286: null, -1025365931: 0.3, -1981066018: "-40%" };
+const items2 = [{ translateX: "-100vw" }];
+const items3 = [{ translateX: "0%" }];
+obj.style = { [0]: { transform: items2 }, [100]: { transform: items3 } };
+const items4 = [{ translateY: "-100vh" }];
+const items5 = [{ translateY: "0%" }];
+obj = { -1814393286: null, -1025365931: 0.3, -1981066018: "40%" };
+const items6 = [{ translateY: "100vh" }];
+const items7 = [{ translateY: "0%" }];
+obj.style = { [0]: { transform: items6 }, [100]: { transform: items7 } };
+const obj1 = { SlideOutRight: { style: { [0]: { transform: items8 }, [100]: { transform: items9 } } }, SlideOutLeft: obj2, SlideOutUp: obj3, SlideOutDown: obj4 };
+const items8 = [{ translateX: "0%" }];
+const items9 = [{ translateX: "100vw" }];
+const obj2 = { -1814393286: null, -1025365931: 0.3, -1981066018: "RotateOutDownRight" };
+const items10 = [{ translateX: "0%" }];
+const items11 = [{ translateX: "-100vw" }];
+obj2.style = { [0]: { transform: items10 }, [100]: { transform: items11 } };
+const obj3 = { -1814393286: null, -1025365931: 0.3, -1981066018: "RotateOutUpLeft" };
+const items12 = [{ translateY: "0%" }];
+const items13 = [{ translateY: "-100vh" }];
+obj3.style = { [0]: { transform: items12 }, [100]: { transform: items13 } };
+const obj4 = { -1814393286: null, -1025365931: 0.3, -1981066018: "-40%" };
+const items14 = [{ translateY: "0%" }];
+const items15 = [{ translateY: "100vh" }];
+obj4.style = { [0]: { transform: items14 }, [100]: { transform: items15 } };
+const obj5 = {};
+const obj6 = {};
+const _module = require(dependencyMap[0]);
+obj6.style = _module.convertAnimationObjectToKeyframes(obj.SlideInRight);
+obj6.duration = obj.SlideInRight.duration;
+obj5.SlideInRight = obj6;
+const obj7 = {};
+const _module1 = require(dependencyMap[0]);
+obj7.style = _module1.convertAnimationObjectToKeyframes(obj.SlideInLeft);
+obj7.duration = obj.SlideInLeft.duration;
+obj5.SlideInLeft = obj7;
+const obj8 = {};
+const _module2 = require(dependencyMap[0]);
+obj8.style = _module2.convertAnimationObjectToKeyframes(obj.SlideInUp);
+obj8.duration = obj.SlideInUp.duration;
+obj5.SlideInUp = obj8;
+const obj9 = {};
+const _module3 = require(dependencyMap[0]);
+obj9.style = _module3.convertAnimationObjectToKeyframes(obj.SlideInDown);
+obj9.duration = obj.SlideInDown.duration;
+obj5.SlideInDown = obj9;
+const obj10 = {};
+const obj11 = {};
+const _module4 = require(dependencyMap[0]);
+obj11.style = _module4.convertAnimationObjectToKeyframes(obj1.SlideOutRight);
+obj11.duration = obj1.SlideOutRight.duration;
+obj10.SlideOutRight = obj11;
+const obj12 = {};
+const _module5 = require(dependencyMap[0]);
+obj12.style = _module5.convertAnimationObjectToKeyframes(obj1.SlideOutLeft);
+obj12.duration = obj1.SlideOutLeft.duration;
+obj10.SlideOutLeft = obj12;
+const obj13 = {};
+const _module6 = require(dependencyMap[0]);
+obj13.style = _module6.convertAnimationObjectToKeyframes(obj1.SlideOutUp);
+obj13.duration = obj1.SlideOutUp.duration;
+obj10.SlideOutUp = obj13;
+const obj14 = {};
+const _module7 = require(dependencyMap[0]);
+obj14.style = _module7.convertAnimationObjectToKeyframes(obj1.SlideOutDown);
+obj14.duration = obj1.SlideOutDown.duration;
+obj10.SlideOutDown = obj14;
+
+export const SlideInData = obj;
+export const SlideOutData = obj1;
+export const SlideIn = obj5;
+export const SlideOut = obj10;

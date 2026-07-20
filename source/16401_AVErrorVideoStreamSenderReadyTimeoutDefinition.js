@@ -1,0 +1,32 @@
+// Module ID: 16401
+// Function ID: 126694
+// Name: AVErrorVideoStreamSenderReadyTimeoutDefinition
+// Dependencies: []
+
+// Module 16401 (AVErrorVideoStreamSenderReadyTimeoutDefinition)
+let closure_2 = importDefault(dependencyMap[0]);
+let closure_3 = importDefault(dependencyMap[1]);
+const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/errors/av_errors/definitions/AVErrorVideoStreamSenderReadyTimeout.tsx");
+
+export const AVErrorVideoStreamSenderReadyTimeoutDefinition = {
+  getActiveErrors() {
+    const values = Object.values(timedoutVideos.getTimedoutVideos());
+    const found = values.filter((arg0) => {
+      let userId;
+      let videoStreamId;
+      ({ userId, videoStreamId } = arg0);
+      let tmp = id.getId() === userId;
+      if (tmp) {
+        tmp = null != videoStreamId;
+      }
+      return tmp;
+    });
+    return found.map((arg0) => {
+      const merged = Object.assign(arg0);
+      return { type: callback(closure_1[2]).AVError.VIDEO_STREAM_SENDER_READY_TIMEOUT };
+    });
+  },
+  makeErrorContextKey(mediaContext) {
+    return "" + mediaContext.mediaContext + ":" + mediaContext.userId;
+  }
+};
