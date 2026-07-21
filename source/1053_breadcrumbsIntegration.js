@@ -13,7 +13,7 @@ export const breadcrumbsIntegration = _module.defineIntegration(function _breadc
       const first = arguments[0];
     }
     const _Object = Object;
-    let closure_0 = Object.assign({ accessibilityRole: 0.000000000000000000000000000000000010615702489367825, withTiming: -1602914219622361000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, "Null": -120350253250391550000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, "Null": -1561007058987362700000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, height: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010959979032937442, justifyContent: 148455159673736300000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 }, {});
+    let closure_0 = Object.assign({ -589444899: "y", 1682592437: "onPlayerStateChange", -782137302: "r", 1126780754: "inactiveDotElement", 1388208580: "handleActivityJoin", 590868542: "japan" }, {});
     const obj = {
       name: "Breadcrumbs",
       setup(on) {
@@ -143,7 +143,7 @@ export const breadcrumbsIntegration = _module.defineIntegration(function _breadc
                         ({ method: obj2.method, url: obj2.url } = tmp8);
                         obj.status_code = status_code;
                         obj = { xhr: xhr.xhr, input: tmp8.body, startTimestamp, endTimestamp };
-                        const obj1 = { selectable: "image/webp", selectionColor: 0.25, adjustsFontSizeToFit: "image/webp", data: obj, level: xhr(closure_1[0]).getBreadcrumbLogLevelFromHttpStatusCode(status_code) };
+                        const obj1 = { data: obj, level: xhr(closure_1[0]).getBreadcrumbLogLevelFromHttpStatusCode(status_code) };
                         xhr.emit("beforeOutgoingRequestBreadcrumb", obj1, obj);
                         const obj5 = xhr(closure_1[0]);
                         xhr(closure_1[0]).addBreadcrumb(obj1, obj);
@@ -173,7 +173,7 @@ export const breadcrumbsIntegration = _module.defineIntegration(function _breadc
                         ({ error: obj7.data, args: obj7.input } = fetchData);
                         obj.startTimestamp = startTimestamp;
                         obj.endTimestamp = endTimestamp;
-                        obj = { SidebarType: "subscription_type", TEST_4: "label_from", RTC_CONNECTION_PANEL: "DEFAULT_ENABLE_BLUR_KEYBOARD_ON_GESTURE", linear: "_setBusEvents", data: fetchData.fetchData };
+                        obj = { x: true, y: true, accessibilityRole: true, lj: true, data: fetchData.fetchData };
                         fetchData.emit("beforeOutgoingRequestBreadcrumb", obj, obj);
                         fetchData(closure_1[0]).addBreadcrumb(obj, obj);
                         const obj9 = fetchData(closure_1[0]);
@@ -192,7 +192,7 @@ export const breadcrumbsIntegration = _module.defineIntegration(function _breadc
                           status = response.status;
                         }
                         const obj2 = { input: fetchData.args, response, startTimestamp, endTimestamp };
-                        const obj3 = { selectable: true, selectionColor: true, adjustsFontSizeToFit: true, data: merged, level: fetchData(closure_1[0]).getBreadcrumbLogLevelFromHttpStatusCode(merged.status_code) };
+                        const obj3 = { data: merged, level: fetchData(closure_1[0]).getBreadcrumbLogLevelFromHttpStatusCode(merged.status_code) };
                         fetchData.emit("beforeOutgoingRequestBreadcrumb", obj3, obj2);
                         const obj5 = fetchData(closure_1[0]);
                         fetchData(closure_1[0]).addBreadcrumb(obj3, obj2);

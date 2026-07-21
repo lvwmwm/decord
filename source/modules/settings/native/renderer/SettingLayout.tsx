@@ -1,8 +1,8 @@
-// Module ID: 13420
-// Function ID: 101910
+// Module ID: 13427
+// Function ID: 101933
 // Dependencies: []
 
-// Module 13420
+// Module 13427
 const NodeType = arg1(dependencyMap[1]).NodeType;
 const jsx = arg1(dependencyMap[2]).jsx;
 const importAllResult = importAll(dependencyMap[0]);

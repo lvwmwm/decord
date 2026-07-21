@@ -1,10 +1,10 @@
-// Module ID: 7866
-// Function ID: 62647
+// Module ID: 7870
+// Function ID: 62659
 // Name: EditCollectiblesPreviewDescription
 // Dependencies: []
 // Exports: default
 
-// Module 7866 (EditCollectiblesPreviewDescription)
+// Module 7870 (EditCollectiblesPreviewDescription)
 function EditCollectiblesPreviewDescription(arg0) {
   let nitroJoinCTA;
   let nitroUpgradeCTA;
@@ -59,7 +59,7 @@ function EditCollectiblesPreviewDescription(arg0) {
       let toLocaleDateStringResult;
       if (null != purchase) {
         const purchasedAt = purchase.purchasedAt;
-        toLocaleDateStringResult = purchasedAt.toLocaleDateString(stateFromStores, {});
+        toLocaleDateStringResult = purchasedAt.toLocaleDateString(stateFromStores, { "Bool(false)": 1238630404, "Bool(false)": 1238630404 });
       }
       obj3.date = toLocaleDateStringResult;
       obj2.children = intl2.format(arg1(dependencyMap[10]).t.gW9R4B, obj3);
@@ -74,7 +74,7 @@ function EditCollectiblesPreviewDescription(arg0) {
         const intl3 = arg1(dependencyMap[10]).intl;
         obj5 = {};
         expiresAt = purchase.expiresAt;
-        obj5.date = expiresAt.toLocaleDateString(stateFromStores, { "Bool(true)": "-1", "Bool(true)": "shrug", "Bool(true)": "shrug", "Bool(true)": "-2", "Bool(true)": "tableflip" });
+        obj5.date = expiresAt.toLocaleDateString(stateFromStores, {});
         obj4.children = intl3.format(arg1(dependencyMap[10]).t.eZSTa5, obj5);
         tmp29 = callback(arg1(dependencyMap[9]).Text, obj4);
       }
@@ -114,7 +114,7 @@ const View = arg1(dependencyMap[1]).View;
 let closure_4 = importDefault(dependencyMap[2]);
 ({ jsx: closure_5, Fragment: closure_6, jsxs: closure_7 } = arg1(dependencyMap[3]));
 const tmp3 = arg1(dependencyMap[3]);
-let closure_8 = arg1(dependencyMap[4]).createStyles({ productDetailsContainer: { "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true } });
+let closure_8 = arg1(dependencyMap[4]).createStyles({ productDetailsContainer: {} });
 const obj = arg1(dependencyMap[4]);
 const result = arg1(dependencyMap[12]).fileFinishedImporting("modules/user_profile/native/EditCollectiblesPreviewDetails.tsx");
 

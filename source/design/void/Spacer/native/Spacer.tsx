@@ -1,16 +1,17 @@
-// Module ID: 12903
-// Function ID: 98439
+// Module ID: 12910
+// Function ID: 98462
 // Name: Spacer
-// Dependencies: []
+// Dependencies: [2473901162, 2886221776, 996432412, 2381332459, 3848]
 // Exports: default
 
-// Module 12903 (Spacer)
+// Module 12910 (Spacer)
+import LOW_SATURATION_THRESHOLD from "LOW_SATURATION_THRESHOLD";
+
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 const jsx = arg1(dependencyMap[2]).jsx;
 let closure_2 = arg1(dependencyMap[3]).memoize((width) => ({ width, height: width }));
-const obj = arg1(dependencyMap[3]);
-const result = arg1(dependencyMap[4]).fileFinishedImporting("design/void/Spacer/native/Spacer.tsx");
+const result = LOW_SATURATION_THRESHOLD.fileFinishedImporting("design/void/Spacer/native/Spacer.tsx");
 
 export default function Spacer(pointerEvents) {
   return <View style={callback(arg0.size)} pointerEvents={arg0.pointerEvents} />;

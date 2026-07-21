@@ -1,10 +1,10 @@
-// Module ID: 9028
-// Function ID: 70937
+// Module ID: 9032
+// Function ID: 70949
 // Name: logRemoteCommand
 // Dependencies: []
 // Exports: connectToRemote, fetchDevices, persistSelectedDeviceId, remoteAudioSettingsUpdate, remoteDisconnect, remoteVoiceStateUpdate, transferToPlayStation, waitForSession
 
-// Module 9028 (logRemoteCommand)
+// Module 9032 (logRemoteCommand)
 function logRemoteCommand(AUDIO_SETTINGS_UPDATE, sessionId) {
   let obj = importDefault(dependencyMap[5]);
   obj = { command_type: AUDIO_SETTINGS_UPDATE };

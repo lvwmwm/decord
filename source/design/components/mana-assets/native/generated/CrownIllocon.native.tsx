@@ -1,10 +1,10 @@
-// Module ID: 5971
-// Function ID: 49830
+// Module ID: 5973
+// Function ID: 49873
 // Name: CrownIllocon
 // Dependencies: []
 // Exports: CrownIllocon
 
-// Module 5971 (CrownIllocon)
+// Module 5973 (CrownIllocon)
 const jsx = require(dependencyMap[0]).jsx;
 const _module = require(dependencyMap[3]);
 const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/CrownIllocon.native.tsx");

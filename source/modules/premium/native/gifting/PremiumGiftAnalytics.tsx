@@ -1,10 +1,10 @@
-// Module ID: 9797
-// Function ID: 76081
+// Module ID: 9802
+// Function ID: 76097
 // Name: PremiumGiftAnalytics
 // Dependencies: []
 // Exports: default
 
-// Module 9797 (PremiumGiftAnalytics)
+// Module 9802 (PremiumGiftAnalytics)
 let closure_3 = importAll(dependencyMap[0]);
 const AnalyticEvents = arg1(dependencyMap[1]).AnalyticEvents;
 const result = arg1(dependencyMap[8]).fileFinishedImporting("modules/premium/native/gifting/PremiumGiftAnalytics.tsx");

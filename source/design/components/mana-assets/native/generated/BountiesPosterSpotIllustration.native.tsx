@@ -1,13 +1,12 @@
-// Module ID: 5905
-// Function ID: 49731
+// Module ID: 5907
+// Function ID: 49774
 // Name: BountiesPosterSpotIllustration
-// Dependencies: []
+// Dependencies: [4294967295, 0, 4294967295, 0]
 // Exports: BountiesPosterSpotIllustration
 
-// Module 5905 (BountiesPosterSpotIllustration)
+// Module 5907 (BountiesPosterSpotIllustration)
 const jsx = require(dependencyMap[0]).jsx;
-const _module = require(dependencyMap[3]);
-const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/BountiesPosterSpotIllustration.native.tsx");
+const result = require("__exportStarResult1").fileFinishedImporting("design/components/mana-assets/native/generated/BountiesPosterSpotIllustration.native.tsx");
 
 export const BountiesPosterSpotIllustration = function BountiesPosterSpotIllustration(width) {
   let accessibilityLabel;

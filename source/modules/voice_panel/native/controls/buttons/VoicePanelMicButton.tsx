@@ -1,10 +1,10 @@
-// Module ID: 15719
-// Function ID: 120175
+// Module ID: 15726
+// Function ID: 120199
 // Name: useMuteHandlers
 // Dependencies: []
 // Exports: MicButton, PTTButton
 
-// Module 15719 (useMuteHandlers)
+// Module 15726 (useMuteHandlers)
 function useMuteHandlers(channelId) {
   const arg1 = channelId;
   let closure_1 = React.useRef(null);
@@ -17,7 +17,7 @@ function useMuteHandlers(channelId) {
       let muteStates = arg0(closure_2[14]).getMuteStates(obj);
       const obj2 = arg0(closure_2[14]);
     } else {
-      muteStates = { "Bool(false)": true, "Bool(false)": false, sgn-GB: false };
+      muteStates = {};
     }
     const current = ref.current;
     let selfMute;
@@ -95,7 +95,7 @@ export const PTTButton = function PTTButton(arg0) {
         const obj2 = arg0(closure_2[16]);
         let deafStates = obj2.getDeafStates(channel, closure_12, closure_9, closure_7);
       } else {
-        deafStates = {};
+        deafStates = { 9223372036854775807: null, "Bool(false)": null };
       }
       return arg0(closure_2[15]).createDeafHandler(deafStates);
     }, items1);
@@ -114,7 +114,7 @@ export const PTTButton = function PTTButton(arg0) {
   dependencyMap = sharedValue;
   const tmp8 = importDefault(dependencyMap[19])();
   callback2 = tmp8;
-  React = React.useRef({});
+  React = React.useRef({ "Bool(false)": null, "Bool(false)": null });
   const items = [tmp8, sharedValue, onPress2];
   callback = React.useCallback(() => {
     if (!closure_4.current.active) {

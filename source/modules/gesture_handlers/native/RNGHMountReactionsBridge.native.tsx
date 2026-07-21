@@ -1,10 +1,10 @@
-// Module ID: 16475
-// Function ID: 127255
+// Module ID: 16482
+// Function ID: 127289
 // Name: installRNGHMountReactionsBridge
 // Dependencies: []
 // Exports: installRNGHMountReactionsBridge
 
-// Module 16475 (installRNGHMountReactionsBridge)
+// Module 16482 (installRNGHMountReactionsBridge)
 let closure_3 = false;
 const _module = require(dependencyMap[1]);
 const result = _module.fileFinishedImporting("modules/gesture_handlers/native/RNGHMountReactionsBridge.native.tsx");

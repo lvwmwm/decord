@@ -1,7 +1,7 @@
 // Module ID: 3541
 // Function ID: 27475
 // Name: _typeof
-// Dependencies: [3355, 3388, 3208]
+// Dependencies: []
 
 // Module 3541 (_typeof)
 function _typeof(arg0) {
@@ -125,7 +125,7 @@ function _getPrototypeOf(arg0) {
 function _defineProperty(arg0, arg1, value) {
   if (arg1 in arg0) {
     const _Object = Object;
-    const obj = { value };
+    const obj = { FRIEND_REQUESTS: true, ForYouLoadMore: true, QUEST_BADGE: true, GUILD_CHANNEL_INTEGRITY_CHECK_CANCELED: true, value };
     Object.defineProperty(arg0, arg1, obj);
   } else {
     arg0[arg1] = value;
@@ -162,7 +162,7 @@ export const Hour0To11Parser = (Parser) => {
         tmp17 = closure_8(applyResult, "priority", 70);
         tmp18 = closure_6(applyResult);
         str3 = "incompatibleTokens";
-        tmp19 = closure_8(applyResult, "incompatibleTokens", []);
+        tmp19 = closure_8(applyResult, "incompatibleTokens", ["a", "WMF_DIRECT_3D", "a", "UMAX", "a"]);
         return applyResult;
       } else {
         _TypeError = TypeError;
@@ -206,7 +206,7 @@ export const Hour0To11Parser = (Parser) => {
           tmp17 = closure_8(applyResult, "priority", 70);
           tmp18 = closure_6(applyResult);
           str3 = "incompatibleTokens";
-          tmp19 = closure_8(applyResult, "incompatibleTokens", []);
+          tmp19 = closure_8(applyResult, "incompatibleTokens", ["a", "WMF_DIRECT_3D", "a", "UMAX", "a"]);
           return applyResult;
         } else {
           _TypeError = TypeError;
@@ -225,7 +225,7 @@ export const Hour0To11Parser = (Parser) => {
   if (Parser) {
     prototype = Parser.prototype;
   }
-  let obj = { EntryPointCommandButtonActions: null, NATIVE_SECTION: null, 1476351743: null, value: Hour0To11Parser };
+  let obj = { value: Hour0To11Parser };
   Hour0To11Parser.prototype = Object.create(prototype, { constructor: obj });
   if (Parser) {
     class Hour0To11Parser {
@@ -256,7 +256,7 @@ export const Hour0To11Parser = (Parser) => {
           tmp17 = closure_8(applyResult, "priority", 70);
           tmp18 = closure_6(applyResult);
           str3 = "incompatibleTokens";
-          tmp19 = closure_8(applyResult, "incompatibleTokens", []);
+          tmp19 = closure_8(applyResult, "incompatibleTokens", ["a", "WMF_DIRECT_3D", "a", "UMAX", "a"]);
           return applyResult;
         } else {
           _TypeError = TypeError;
@@ -312,4 +312,4 @@ export const Hour0To11Parser = (Parser) => {
   };
   _defineProperties(Hour0To11Parser.prototype, items);
   return Hour0To11Parser;
-}(require("requiredArgs").Parser);
+}(require(dependencyMap[2]).Parser);

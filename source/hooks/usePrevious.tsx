@@ -1,10 +1,10 @@
-// Module ID: 8272
-// Function ID: 65328
+// Module ID: 8276
+// Function ID: 65340
 // Name: usePrevious
 // Dependencies: []
 // Exports: default, usePreviousWhen
 
-// Module 8272 (usePrevious)
+// Module 8276 (usePrevious)
 const _module = require(dependencyMap[0]);
 ({ useRef: closure_0, useEffect: closure_1 } = _module);
 const _module1 = require(dependencyMap[1]);

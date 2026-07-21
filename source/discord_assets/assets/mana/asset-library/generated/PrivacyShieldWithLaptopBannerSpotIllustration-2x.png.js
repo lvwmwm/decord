@@ -1,9 +1,9 @@
-// Module ID: 6416
-// Function ID: 50498
+// Module ID: 6418
+// Function ID: 50541
 // Name: metadata
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 6416 (metadata)
+// Module 6418 (metadata)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/PrivacyShieldWithLaptopBannerSpotIllustration-2x.png.js");
 

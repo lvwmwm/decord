@@ -1,10 +1,10 @@
-// Module ID: 12274
-// Function ID: 94108
+// Module ID: 12281
+// Function ID: 94131
 // Name: PremiumPromotionCard
 // Dependencies: []
 // Exports: default
 
-// Module 12274 (PremiumPromotionCard)
+// Module 12281 (PremiumPromotionCard)
 let closure_3 = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 let closure_5 = importDefault(dependencyMap[2]);
@@ -14,11 +14,11 @@ const tmp2 = arg1(dependencyMap[3]);
 ({ jsx: closure_11, jsxs: closure_12 } = arg1(dependencyMap[5]));
 let obj = arg1(dependencyMap[6]);
 obj = { container: { width: "100%" } };
-obj = { paddingBottom: importDefault(dependencyMap[7]).space.PX_16, paddingHorizontal: importDefault(dependencyMap[7]).space.PX_16, borderRadius: importDefault(dependencyMap[7]).radii.lg, backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_SURFACE_HIGH, marginBottom: importDefault(dependencyMap[7]).space.PX_24, overflow: "hidden" };
+obj = { paddingBottom: importDefault(dependencyMap[7]).space.PX_16, paddingHorizontal: importDefault(dependencyMap[7]).space.PX_16, borderRadius: importDefault(dependencyMap[7]).radii.lg, backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_SECONDARY_ALT, marginBottom: importDefault(dependencyMap[7]).space.PX_24, overflow: "hidden" };
 obj.card = obj;
 const tmp3 = arg1(dependencyMap[5]);
 obj.image = { alignSelf: "center", marginBottom: importDefault(dependencyMap[7]).space.PX_24, borderTopLeftRadius: importDefault(dependencyMap[7]).radii.lg, borderTopRightRadius: importDefault(dependencyMap[7]).radii.lg, borderBottomRightRadius: importDefault(dependencyMap[7]).radii.none, borderBottomLeftRadius: importDefault(dependencyMap[7]).radii.none, width: "110%", height: 95 };
-obj.nitroWheelIcon = {};
+obj.nitroWheelIcon = { "Bool(true)": null, "Bool(true)": null, "Bool(true)": null };
 let closure_13 = obj.createStyles(obj);
 const obj1 = { alignSelf: "center", marginBottom: importDefault(dependencyMap[7]).space.PX_24, borderTopLeftRadius: importDefault(dependencyMap[7]).radii.lg, borderTopRightRadius: importDefault(dependencyMap[7]).radii.lg, borderBottomRightRadius: importDefault(dependencyMap[7]).radii.none, borderBottomLeftRadius: importDefault(dependencyMap[7]).radii.none, width: "110%", height: 95 };
 const result = arg1(dependencyMap[17]).fileFinishedImporting("modules/user_settings/premium/native/PremiumPromotionCard.tsx");
@@ -51,7 +51,7 @@ export default function PremiumPromotionCard(applicationId) {
   const intl = arg1(dependencyMap[13]).intl;
   obj2.children = intl.string(arg1(dependencyMap[13]).t.6Jjfk8);
   items4[1] = callback(arg1(dependencyMap[12]).Text, obj2);
-  const obj3 = { "Bool(false)": true, "Bool(false)": true };
+  const obj3 = {};
   const intl2 = arg1(dependencyMap[13]).intl;
   const obj4 = {};
   let obj7 = importDefault(dependencyMap[14]);

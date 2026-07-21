@@ -1,6 +1,8 @@
 // Module ID: 8089
-// Function ID: 64128
+// Function ID: 64121
 // Dependencies: []
 
 // Module 8089
-arg5.maskType = { "Bool(false)": 131072.00314656927, "Bool(false)": 0.000000000000000000000000000000000000000000000000000000011294471302334573 };
+const obj = {};
+arg5.default = obj;
+arg5.units = obj;

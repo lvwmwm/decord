@@ -4,11 +4,11 @@
 // Dependencies: []
 
 // Module 3919 (CheckpointIntroRive)
-let closure_3 = ["aria-current", "activeClassName", "activeStyle", "className", "exact", "isActive"];
+let closure_3 = [true, true, true, true, true, true];
 let closure_4 = importDefault(dependencyMap[0]);
 const importAllResult = importAll(dependencyMap[1]);
 const jsx = arg1(dependencyMap[2]).jsx;
-let closure_7 = { Checkpoint Intro Desktop: { "Null": true, "Null": true, "Null": true, "Null": true }, Globe: {}, Globe Single Line: {}, Start Button: { "Null": true, "Null": true, "Null": true, "Null": true } };
+let closure_7 = { Checkpoint Intro Desktop: {}, Globe: {}, Globe Single Line: {}, Start Button: {} };
 let closure_8 = { Checkpoint Intro Desktop: [], Globe: [], Globe Single Line: [], Start Button: [] };
 let closure_9 = {
   Checkpoint Intro Desktop: function CheckpointIntroDesktopBindings(reducedMotionEnabled) {

@@ -1,13 +1,12 @@
-// Module ID: 15127
-// Function ID: 114176
+// Module ID: 15134
+// Function ID: 114200
 // Name: serverNameHook
 // Dependencies: []
 // Exports: default
 
-// Module 15127 (serverNameHook)
+// Module 15134 (serverNameHook)
 function serverNameHook(children) {
-  const obj = { INTEGRATION_CREATE: 1, ConstraintReasonCode: null, children };
-  return jsx(arg1(dependencyMap[5]).Text, obj);
+  return jsx(arg1(dependencyMap[5]).Text, { children });
 }
 class RoleSubscriptionsUnavailableNotice {
   constructor(arg0) {

@@ -1,10 +1,10 @@
-// Module ID: 11525
-// Function ID: 89791
+// Module ID: 11532
+// Function ID: 89814
 // Name: useShowGuildPowerupRollbackSheet
 // Dependencies: []
 // Exports: default
 
-// Module 11525 (useShowGuildPowerupRollbackSheet)
+// Module 11532 (useShowGuildPowerupRollbackSheet)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 const ContentDismissActionType = arg1(dependencyMap[2]).ContentDismissActionType;

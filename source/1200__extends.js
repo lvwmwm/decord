@@ -808,7 +808,7 @@ export const createMemoryHistory = function createMemoryHistory(props) {
   }
   ({ getUserConfirmation: closure_0, initialEntries } = obj);
   if (undefined === initialEntries) {
-    initialEntries = [];
+    initialEntries = [true];
   }
   const initialIndex = obj.initialIndex;
   let num = 0;

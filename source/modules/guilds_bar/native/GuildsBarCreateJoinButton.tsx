@@ -1,10 +1,10 @@
-// Module ID: 14747
-// Function ID: 111190
+// Module ID: 14754
+// Function ID: 111214
 // Name: handleCreateJoinGuildPress
 // Dependencies: []
 // Exports: handleCreateJoinGuildPress
 
-// Module 14747 (handleCreateJoinGuildPress)
+// Module 14754 (handleCreateJoinGuildPress)
 function handleCreateJoinGuildPress() {
   return _handleCreateJoinGuildPress(...arguments);
 }
@@ -29,10 +29,7 @@ const memoResult = importAllResult.memo(function GuildsBarCreateJoinButton() {
   let obj = arg1(dependencyMap[14]);
   obj = { style: callback2().stretch };
   const tmp2 = callback2();
-  obj = { "Bool(true)": "CONTENT_INVENTORY_OVERLAY_TEXT_PRIMARY", "Bool(true)": "regulationEnvironment", "Bool(true)": "Array", circle: !tmp };
-  obj.styles = obj.useGuildsBarAnimatedWrapperStyles();
-  obj.overState = undefined;
-  obj.config = closure_11;
+  obj = { circle: !tmp, styles: obj.useGuildsBarAnimatedWrapperStyles(), overState: undefined, config: closure_11 };
   const guildsBarAnimatedWrapperStyles = obj.useGuildsBarAnimatedWrapperStyles();
   const intl = arg1(dependencyMap[15]).intl;
   obj.label = intl.string(arg1(dependencyMap[15]).t.l5WIbf);

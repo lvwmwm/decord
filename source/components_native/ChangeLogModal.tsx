@@ -1,24 +1,10 @@
-// Module ID: 14243
-// Function ID: 107665
+// Module ID: 14250
+// Function ID: 107688
 // Name: _callSuper
-// Dependencies: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+// Dependencies: []
 // Exports: default
 
-// Module 14243 (_callSuper)
-import closure_3 from "result";
-import closure_4 from "result";
-import closure_5 from "result";
-import closure_6 from "result";
-import closure_7 from "result";
-import importAllResult from "result";
-import { View } from "result";
-import { AnalyticEvents } from "result";
-import { CHANGELOG_MODAL_KEY } from "result";
-import result from "result";
-import result from "result";
-import result from "result";
-import result from "result";
-
+// Module 14250 (_callSuper)
 function _callSuper(arg0, arg1, arg2) {
   let items = arg2;
   const obj = callback2(arg1);
@@ -46,15 +32,15 @@ class ChangeLogScreen {
     fn = global.onClose;
     tmp = arg1;
     tmp2 = dependencyMap;
-    obj = require("result");
+    obj = arg1(dependencyMap[10]);
     legacyClassComponentStyles = obj.useLegacyClassComponentStyles(jsx);
-    obj2 = require("result");
+    obj2 = arg1(dependencyMap[25]);
     currentChangelog = obj2.useCurrentChangelog();
     changelog = currentChangelog.changelog;
     arg1 = changelog;
     loaded = currentChangelog.loaded;
     importDefault = loaded;
-    size = require("result")();
+    size = importDefault(dependencyMap[24])();
     diff = size.width - 36;
     result = diff * closure_14;
     result1 = 0.5 * size.height;
@@ -65,7 +51,7 @@ class ChangeLogScreen {
     }
     obj.width = diff;
     ({ width, height } = obj);
-    tmpResult = require("result");
+    tmpResult = tmp(tmp2[26]);
     navigation = tmpResult.useNavigation();
     dependencyMap = navigation;
     if (null == fn) {
@@ -123,9 +109,9 @@ class ChangeLogScreen {
       str2 = "heading-lg/medium";
       obj2.variant = "heading-lg/medium";
       num4 = 18;
-      intl2 = require("result").intl;
-      obj2.children = intl2.string(require("result").t.V9ospk);
-      obj1.children = jsx(require("result").Text, obj2);
+      intl2 = arg1(dependencyMap[18]).intl;
+      obj2.children = intl2.string(arg1(dependencyMap[18]).t.V9ospk);
+      obj1.children = jsx(arg1(dependencyMap[30]).Text, obj2);
       tmp14 = jsx(View, obj1);
     } else if (null == changelog) {
       obj3 = {};
@@ -136,14 +122,14 @@ class ChangeLogScreen {
       num = 30;
       tmp15 = jsx;
       tmp16 = View;
-      Text = require("result").Text;
+      Text = arg1(dependencyMap[30]).Text;
       obj4 = {};
       str = "text-md/semibold";
       obj4.variant = "text-md/semibold";
       num2 = 18;
-      intl = require("result").intl;
+      intl = arg1(dependencyMap[18]).intl;
       string = intl.string;
-      t = require("result").t;
+      t = arg1(dependencyMap[18]).t;
       if (loaded) {
         t = string(t.O1iRT8);
         obj4.children = t;
@@ -158,13 +144,13 @@ class ChangeLogScreen {
       tmp15Result = tmp15(tmp16, tmp20);
     } else {
       tmp12 = jsx;
-      tmp13 = f107680;
+      tmp13 = f107703;
       obj5 = {};
       obj5.onClose = fn;
       obj5.height = height;
       obj5.width = width;
       obj5.changeLog = changelog;
-      tmp14 = jsx(f107680, obj5);
+      tmp14 = jsx(f107703, obj5);
     }
     return tmp14;
   }
@@ -172,22 +158,36 @@ class ChangeLogScreen {
 function hideChangeLog() {
   importDefault(dependencyMap[31]).popWithKey(CHANGELOG_MODAL_KEY);
 }
-({ jsx: closure_12, jsxs: closure_13 } = result);
+let closure_3 = importDefault(dependencyMap[0]);
+let closure_4 = importDefault(dependencyMap[1]);
+let closure_5 = importDefault(dependencyMap[2]);
+let closure_6 = importDefault(dependencyMap[3]);
+let closure_7 = importDefault(dependencyMap[4]);
+const importAllResult = importAll(dependencyMap[5]);
+const View = arg1(dependencyMap[6]).View;
+const AnalyticEvents = arg1(dependencyMap[7]).AnalyticEvents;
+const CHANGELOG_MODAL_KEY = arg1(dependencyMap[8]).CHANGELOG_MODAL_KEY;
+({ jsx: closure_12, jsxs: closure_13 } = arg1(dependencyMap[9]));
 let closure_14 = 0.5625;
-result = { video: { alignSelf: "center" }, videoWrapper: { marginBottom: 8 } };
-result = { borderRadius: require("result").radii.xs, overflow: "hidden" };
-result.videoSpecial = result;
-result.videoOverlay = { "Null": true, "Null": false, "Null": "" };
-const obj1 = { <string:2974200120>: "p", <string:1668606818>: "Array", <string:1635173881>: "isArray", <string:2898154076>: "<string:868417537>", <string:979676309>: "<string:967639041>", <string:1654696534>: "<string:437911554>", <string:2355277539>: "<string:911278081>", <string:2927059630>: "<string:275333378>", <string:4182879841>: "<string:3528523777>", borderRadius: require("result").radii.round, backgroundColor: require("result").colors.BACKGROUND_SURFACE_HIGH };
-result.playButton = obj1;
-result.playIcon = { aze: 24, azj: 24 };
-result.empty = { align: "oneTimeCode", label: "stretch", subLabel: 1, icon: "center" };
-result = result.createLegacyClassComponentStyles(result);
-const obj2 = { bulletPoint: { backgroundColor: require("result").colors.BACKGROUND_MOD_STRONG }, listItem: {} };
-result = { frameCount: 16, startTime: 16, top: null, bottom: 20, color: require("result").colors.TEXT_DEFAULT };
-obj2.listText = result;
-obj2.listItemContent = { clientThemeSettings: true, useItemDragState: true };
-let closure_16 = result.createLegacyClassComponentStyles(obj2);
+let obj = arg1(dependencyMap[10]);
+obj = { video: { alignSelf: "center" }, videoWrapper: { marginBottom: 8 } };
+obj = { borderRadius: importDefault(dependencyMap[11]).radii.xs, overflow: "hidden" };
+obj.videoSpecial = obj;
+obj.videoOverlay = { "Null": null, "Null": null, "Null": null };
+const tmp3 = arg1(dependencyMap[9]);
+obj.playButton = { borderRadius: importDefault(dependencyMap[11]).radii.round, backgroundColor: importDefault(dependencyMap[11]).colors.BACKGROUND_SURFACE_HIGH };
+obj.playIcon = { bhk: 24, bic: 24 };
+obj.empty = {};
+let closure_15 = obj.createLegacyClassComponentStyles(obj);
+let obj4 = arg1(dependencyMap[10]);
+const obj2 = {};
+const obj3 = { "Bool(true)": 0.0000000000000000000000000000000000000000000000000000000000000000026706284291665426, "Bool(true)": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003058794711, "Bool(true)": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000008691694761874, "Bool(true)": 131072.00998116285, "Bool(true)": 31091720928522130000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, backgroundColor: importDefault(dependencyMap[11]).colors.BACKGROUND_MOD_STRONG };
+obj2.bulletPoint = obj3;
+obj2.listItem = {};
+obj4 = { guildId: 20, justifyContent: "owning_team_id", guild_id: "scalar", justifyContent: 9, color: importDefault(dependencyMap[11]).colors.TEXT_DEFAULT };
+obj2.listText = obj4;
+obj2.listItemContent = { padding: true, T: "/assets/.cache/intl/bW9kdWxlcy9nb19saXZlL3dlYi9tb2RhbA==" };
+let closure_16 = obj4.createLegacyClassComponentStyles(obj2);
 const tmp4 = (PureComponent) => {
   class ListItem {
     constructor() {
@@ -221,7 +221,7 @@ const tmp4 = (PureComponent) => {
   ];
   return callback(ListItem, items);
 }(importAllResult.PureComponent);
-tmp4.contextType = require("result").ThemeContext;
+tmp4.contextType = arg1(dependencyMap[12]).ThemeContext;
 const tmp5 = (PureComponent) => {
   class ChangeLog {
     constructor(arg0) {
@@ -384,8 +384,8 @@ const tmp5 = (PureComponent) => {
       const items1 = [callback3(callback(closure_2[17]), obj6), ];
       let tmp20 = null;
       if (null != video) {
-        const obj7 = { style: tmp.videoOverlay, onPress: self.playVideo };
-        const obj8 = { source: callback(closure_2[21]), onPress: self.playVideo, style: tmp.playButton, iconSize: ChangeLog(closure_2[22]).IconSizes.CUSTOM, iconStyle: tmp.playIcon };
+        const obj7 = { -968277389: false, -968228860: false, style: tmp.videoOverlay, onPress: self.playVideo };
+        const obj8 = { -968277389: false, -968228860: false, source: callback(closure_2[21]), onPress: self.playVideo, style: tmp.playButton, iconSize: ChangeLog(closure_2[22]).IconSizes.CUSTOM, iconStyle: tmp.playIcon };
         obj7.children = callback3(callback(closure_2[20]), obj8);
         tmp20 = callback3(ChangeLog(closure_2[19]).PressableOpacity, obj7);
         const tmp26 = callback(closure_2[20]);
@@ -408,8 +408,9 @@ const tmp5 = (PureComponent) => {
   };
   return callback(ChangeLog, items);
 }(importAllResult.PureComponent);
-tmp5.contextType = require("result").ThemeContext;
-result = result.fileFinishedImporting("components_native/ChangeLogModal.tsx");
+tmp5.contextType = arg1(dependencyMap[12]).ThemeContext;
+const obj1 = { borderRadius: importDefault(dependencyMap[11]).radii.round, backgroundColor: importDefault(dependencyMap[11]).colors.BACKGROUND_SURFACE_HIGH };
+const result = arg1(dependencyMap[33]).fileFinishedImporting("components_native/ChangeLogModal.tsx");
 
 export default function ChangelogModal() {
   const screens = importAllResult.useMemo(() => {

@@ -1,13 +1,13 @@
-// Module ID: 7505
-// Function ID: 60136
+// Module ID: 7509
+// Function ID: 60148
 // Name: FormTextColors
-// Dependencies: [4294967295, 0, 0, 0]
+// Dependencies: [4294967295, 0, 0, 0, 0, 0]
 
-// Module 7505 (FormTextColors)
-import { jsx } from "result";
-import result from "result";
+// Module 7509 (FormTextColors)
+import { jsx } from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
 
-let closure_3 = result.createStyles((arg0) => {
+let closure_3 = __exportStarResult1.createStyles((arg0) => {
   let obj = {};
   obj = { color: arg1(dependencyMap[3]).DARK_PRIMARY_100_LIGHT_PRIMARY_500 };
   obj.primary = obj;
@@ -26,19 +26,19 @@ let closure_3 = result.createStyles((arg0) => {
   return obj;
 });
 let obj = {};
-obj = { color: importDefault(dependencyMap[4]).unsafe_rawColors.BRAND_500 };
+obj = { color: require("__exportStarResult1").unsafe_rawColors.BRAND_500 };
 obj.BRAND = obj;
-result = { color: importDefault(dependencyMap[4]).unsafe_rawColors.RED_400 };
-obj.RED = result;
+__exportStarResult1 = { color: require("__exportStarResult1").unsafe_rawColors.RED_400 };
+obj.RED = __exportStarResult1;
 const importAllResult = importAll(dependencyMap[0]);
-obj.GREEN = { color: importDefault(dependencyMap[4]).unsafe_rawColors.GREEN_360 };
-const obj2 = { color: importDefault(dependencyMap[4]).unsafe_rawColors.GREEN_360 };
-obj.YELLOW = { color: importDefault(dependencyMap[4]).unsafe_rawColors.YELLOW_300 };
-const obj3 = { color: importDefault(dependencyMap[4]).unsafe_rawColors.YELLOW_300 };
-obj.LINK = { color: importDefault(dependencyMap[4]).unsafe_rawColors.BLUE_345 };
-const obj4 = { color: importDefault(dependencyMap[4]).unsafe_rawColors.BLUE_345 };
-obj.WHITE = { color: importDefault(dependencyMap[4]).unsafe_rawColors.WHITE };
-const obj5 = { color: importDefault(dependencyMap[4]).unsafe_rawColors.WHITE };
+obj.GREEN = { color: require("__exportStarResult1").unsafe_rawColors.GREEN_360 };
+const obj2 = { color: require("__exportStarResult1").unsafe_rawColors.GREEN_360 };
+obj.YELLOW = { color: require("__exportStarResult1").unsafe_rawColors.YELLOW_300 };
+const obj3 = { color: require("__exportStarResult1").unsafe_rawColors.YELLOW_300 };
+obj.LINK = { color: require("__exportStarResult1").unsafe_rawColors.BLUE_345 };
+const obj4 = { color: require("__exportStarResult1").unsafe_rawColors.BLUE_345 };
+obj.WHITE = { color: require("__exportStarResult1").unsafe_rawColors.WHITE };
+const obj5 = { color: require("__exportStarResult1").unsafe_rawColors.WHITE };
 const forwardRefResult = importAllResult.forwardRef((size, ref) => {
   let str = size.size;
   if (str === undefined) {
@@ -57,7 +57,7 @@ const forwardRefResult = importAllResult.forwardRef((size, ref) => {
   obj.children = size.children;
   return jsx(ref(dependencyMap[5]).LegacyText, obj);
 });
-result = arg1(dependencyMap[6]).fileFinishedImporting("design/void/Form/native/FormText.tsx");
+const result = arg1(dependencyMap[6]).fileFinishedImporting("design/void/Form/native/FormText.tsx");
 
 export default forwardRefResult;
 export const FormTextColors = obj;

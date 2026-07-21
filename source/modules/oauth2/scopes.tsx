@@ -1,10 +1,10 @@
-// Module ID: 8943
-// Function ID: 70509
+// Module ID: 8947
+// Function ID: 70521
 // Name: items
 // Dependencies: []
 // Exports: getScopeNames, getSecurityMessage, isSocialLayerUmbrellaScope
 
-// Module 8943 (items)
+// Module 8947 (items)
 const items = [
   () => {
     const intl = require(dependencyMap[0]).intl;

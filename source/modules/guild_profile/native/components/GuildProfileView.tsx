@@ -1,10 +1,10 @@
-// Module ID: 8569
-// Function ID: 68088
+// Module ID: 8573
+// Function ID: 68100
 // Name: getBackgroundForProfile
 // Dependencies: []
 // Exports: default
 
-// Module 8569 (getBackgroundForProfile)
+// Module 8573 (getBackgroundForProfile)
 function getBackgroundForProfile(theme, token) {
   const items = [token, ];
   const obj = token(dependencyMap[5]);
@@ -80,15 +80,15 @@ obj.container = obj;
 obj.colorBanner = {};
 obj.imageBanner = {};
 obj.body = {};
-obj.error = { sl: 8, so: null, sq: "\u270A\u{1F3FF}", sr: true };
+obj.error = { <string:3798027838>: 8, <string:1627573841>: null, <string:3151386190>: "\u270A\u{1F3FF}", <string:45572556>: true };
 obj.buttonContainer = { marginTop: 160 };
-obj.header = { 0: 759239012, 0: 1912603216, 0: 24, 0: 24, 9223372036854775807: 1081688577 };
+obj.header = { flex: "SERVER_GUIDE_CHANNEL_SELECTED", flexDirection: "_gameProfileResults", gap: "r", overflow: "MERCH_STORE", flexDirection: "isArray" };
 const tmp3 = arg1(dependencyMap[4]);
 obj.avatarBackground = { backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_BASE_LOW };
 obj.restrictedAcronym = { fontSize: 24 };
 obj.joinForFullAccessCard = { gap: 4 };
 const styles = obj.createStyles(obj);
-const frozen = Object.freeze({ START: { "Null": 131072.00314656927, "Null": 0.000000000000000000000000000000000000000000000000000000011294471302334573 }, END: { "Null": null, "Null": null } });
+const frozen = Object.freeze({ START: {}, END: { max: null, guildId: null } });
 const obj1 = { backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_BASE_LOW };
 const result = arg1(dependencyMap[25]).fileFinishedImporting("modules/guild_profile/native/components/GuildProfileView.tsx");
 
@@ -132,7 +132,7 @@ export default function GuildProfileView(guildProfile) {
     tmp11 = guildProfile.description.length > 0;
   }
   if (tmp11) {
-    obj = { INTEGRATION_CREATE: 3, ConstraintReasonCode: null, children: guildProfile.description };
+    obj = { children: guildProfile.description };
     tmp11 = callback(arg1(dependencyMap[19]).Text, obj);
   }
   const items2 = [tmp11, ];

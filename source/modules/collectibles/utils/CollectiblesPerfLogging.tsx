@@ -1,10 +1,10 @@
-// Module ID: 6813
-// Function ID: 53711
+// Module ID: 6819
+// Function ID: 53760
 // Name: CollectiblesShopPerfCheckpoint
 // Dependencies: [670, 2, 6]
 // Exports: trackShopPerf
 
-// Module 6813 (CollectiblesShopPerfCheckpoint)
+// Module 6819 (CollectiblesShopPerfCheckpoint)
 import { AnalyticEvents } from "MessageEmbedTypes";
 import _classCallCheck from "_classCallCheck";
 

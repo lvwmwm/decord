@@ -1,10 +1,10 @@
-// Module ID: 9916
-// Function ID: 76716
+// Module ID: 9921
+// Function ID: 76732
 // Name: ForLaterCardReminderHeader
 // Dependencies: []
 // Exports: ForLaterCardReminderHeader
 
-// Module 9916 (ForLaterCardReminderHeader)
+// Module 9921 (ForLaterCardReminderHeader)
 const View = require(dependencyMap[0]).View;
 const _module = require(dependencyMap[1]);
 ({ jsx: closure_4, jsxs: closure_5 } = _module);
@@ -12,9 +12,9 @@ const _module1 = require(dependencyMap[2]);
 let obj = {};
 obj = { backgroundColor: importDefault(dependencyMap[3]).colors.BACKGROUND_BASE_LOWER, borderTopLeftRadius: importDefault(dependencyMap[3]).radii.lg, borderTopRightRadius: importDefault(dependencyMap[3]).radii.lg };
 obj.container = obj;
-const obj1 = { "Bool(false)": null, "Bool(false)": "494d75fe739ed4a36d195ab8193847fa", "Bool(false)": "alert", "Bool(false)": "png", "Bool(false)": true, "Bool(false)": "/assets/modules/stickers/native/images", borderRadius: importDefault(dependencyMap[3]).radii.sm, backgroundColor: importDefault(dependencyMap[3]).colors.CARD_BACKGROUND_DEFAULT };
+const obj1 = { <string:173102256>: null, <string:1549034243>: "494d75fe739ed4a36d195ab8193847fa", <string:3972818102>: "alert", <string:374453936>: "png", <string:4221592070>: true, <string:1637461585>: "/assets/modules/stickers/native/images", borderRadius: importDefault(dependencyMap[3]).radii.sm, backgroundColor: importDefault(dependencyMap[3]).colors.CARD_BACKGROUND_DEFAULT };
 obj.icon = obj1;
-obj.actionsContainer = { new_moon_with_face: "construct", GuildPowerupCardFooterCost: "isArray" };
+obj.actionsContainer = {};
 let closure_6 = _module1.createStyles(obj);
 const _module2 = require(dependencyMap[7]);
 const result = _module2.fileFinishedImporting("modules/saved_messages/native/ForLaterCardReminderHeader.tsx");

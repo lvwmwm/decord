@@ -1,10 +1,10 @@
-// Module ID: 10290
-// Function ID: 79445
+// Module ID: 10296
+// Function ID: 79464
 // Name: NotificationPressable
 // Dependencies: []
 // Exports: NotificationPressable
 
-// Module 10290 (NotificationPressable)
+// Module 10296 (NotificationPressable)
 let closure_3 = importAll(dependencyMap[0]);
 const tmp2 = arg1(dependencyMap[1]);
 ({ MIN_SWIPE_VELOCITY: closure_4, STARTED_SWIPE_THRESHOLD: closure_5 } = tmp2);
@@ -23,7 +23,7 @@ obj.shadow = obj;
 const tmp3 = arg1(dependencyMap[3]);
 obj.container = { borderRadius: importDefault(dependencyMap[5]).radii.lg, borderWidth: 1, borderColor: importDefault(dependencyMap[5]).colors.BORDER_SUBTLE, overflow: "hidden" };
 let closure_9 = obj.createStyles(obj);
-let closure_10 = { 0: 760348674, 326587: 291798377, 9223372036854775807: 38808897, 0: 1602048 };
+let closure_10 = {};
 let closure_11 = { code: "function NotificationTsx1(){const{withSpring,scale,ON_PRESS_SPRING_CONFIG}=this.__closure;return{transform:[{scale:withSpring(scale.get(),ON_PRESS_SPRING_CONFIG)}]};}" };
 let closure_12 = { code: "function NotificationTsx2(finished){const{runOnJS,handleDismissNotification}=this.__closure;if(finished){runOnJS(handleDismissNotification)('timeout');}}" };
 let closure_13 = { code: "function NotificationTsx3(){const{withTiming,expandedSV,tokens,Easing}=this.__closure;return{borderRadius:withTiming(expandedSV.get()?tokens.radii.xl:tokens.radii.lg,{duration:220,easing:Easing.bezier(0.16,1,0.3,1)})};}" };

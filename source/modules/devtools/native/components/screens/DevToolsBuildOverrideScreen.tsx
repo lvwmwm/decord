@@ -1,9 +1,9 @@
-// Module ID: 13381
-// Function ID: 101767
+// Module ID: 13388
+// Function ID: 101790
 // Name: jsx
 // Dependencies: []
 
-// Module 13381 (jsx)
+// Module 13388 (jsx)
 let closure_3 = importDefault(dependencyMap[0]);
 const importAllResult = importAll(dependencyMap[1]);
 const ScrollView = arg1(dependencyMap[2]).ScrollView;
@@ -18,10 +18,10 @@ obj.content = obj;
 obj1 = { padding: importDefault(dependencyMap[6]).space.PX_16 };
 obj.contentContainer = obj1;
 let closure_9 = obj1.createStyles(obj);
-const items = [{ icon: jsx(arg1(dependencyMap[7]).TagIcon, {}) }, ];
-const obj2 = { icon: jsx(arg1(dependencyMap[7]).TagIcon, {}) };
-items[1] = { icon: jsx(arg1(dependencyMap[8]).HashmarkIcon, {}) };
-const obj3 = { icon: jsx(arg1(dependencyMap[8]).HashmarkIcon, {}) };
+const obj2 = { raw: 24, body: 24, icon: jsx(arg1(dependencyMap[7]).TagIcon, {}) };
+const items = [obj2, ];
+const obj3 = { raw: "true", body: "vkt", icon: jsx(arg1(dependencyMap[8]).HashmarkIcon, {}) };
+items[1] = obj3;
 const memoResult = importAllResult.memo(() => {
   function getLabel(first) {
     const stateFromStores = first;
@@ -44,7 +44,7 @@ const memoResult = importAllResult.memo(() => {
     return tmp;
   });
   const arg1 = stateFromStores;
-  const tmp3 = callback(importAllResult.useState({ marginHorizontal: true, justifyContent: true }), 2);
+  const tmp3 = callback(importAllResult.useState({ type: true, isConnected: true }), 2);
   const first = tmp3[0];
   const importDefault = first;
   closure_2 = tmp3[1];
@@ -56,7 +56,7 @@ const memoResult = importAllResult.memo(() => {
   const obj1 = { spacing: 16 };
   let tmp9 = null;
   if (null != stateFromStores) {
-    const obj2 = { width: null, height: null };
+    const obj2 = { "Bool(false)": null, "Bool(false)": null };
     const obj3 = {
       icon: jsx(arg1(closure_2[15]).CopyIcon, {}),
       label: getLabel(stateFromStores),

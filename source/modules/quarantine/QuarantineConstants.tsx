@@ -1,9 +1,9 @@
-// Module ID: 11467
-// Function ID: 89339
+// Module ID: 11474
+// Function ID: 89363
 // Name: QUARANTINE_APPEAL_LINK
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 11467 (QUARANTINE_APPEAL_LINK)
+// Module 11474 (QUARANTINE_APPEAL_LINK)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("modules/quarantine/QuarantineConstants.tsx");
 

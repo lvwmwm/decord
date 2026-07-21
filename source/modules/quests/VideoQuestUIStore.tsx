@@ -1,9 +1,9 @@
-// Module ID: 6934
-// Function ID: 55435
+// Module ID: 6938
+// Function ID: 55446
 // Name: _toPropertyKey
 // Dependencies: []
 
-// Module 6934 (_toPropertyKey)
+// Module 6938 (_toPropertyKey)
 function _toPropertyKey(arg0) {
   let StringResult = arg0;
   if ("object" === typeof arg0) {
@@ -118,7 +118,7 @@ const obj5 = arg1(dependencyMap[2]);
 const result = arg1(dependencyMap[6]).fileFinishedImporting("modules/quests/VideoQuestUIStore.tsx");
 
 export default withEqualityFnResult;
-export const DEFAULT_VIDEO_PROGRESS = { INDEX_BOUNDS_WIDTH_OFFSET: 1, INDEX_BOUNDS_HEIGHT_OFFSET: null, INDEX_BOUNDS_PAGE_Y_OFFSET: 0 };
+export const DEFAULT_VIDEO_PROGRESS = { "Null": 1, "Null": null, "Null": 0 };
 export const VideoProgressState = obj;
 export const FetchStatus = { NONE: "NONE", FETCHING: "FETCHING", SUCCESS: "SUCCESS", FAILURE: "FAILURE" };
 export const useVideoQuestUIStore = withEqualityFnResult;

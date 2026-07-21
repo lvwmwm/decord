@@ -1,10 +1,10 @@
-// Module ID: 16285
-// Function ID: 125696
+// Module ID: 16292
+// Function ID: 125727
 // Name: pickImage
 // Dependencies: []
 // Exports: default
 
-// Module 16285 (pickImage)
+// Module 16292 (pickImage)
 function pickImage() {
   return _pickImage(...arguments);
 }
@@ -118,7 +118,7 @@ class ImagePickerIcon {
       tmp19 = arg1;
       tmp20 = dependencyMap;
       num3 = 12;
-      obj3.children = jsx(arg1(dependencyMap[12]).PencilIcon, { "Bool(true)": "Array", "Bool(true)": "isArray" });
+      obj3.children = jsx(arg1(dependencyMap[12]).PencilIcon, { sticker: "Array", animated: "isArray" });
       tmp16Result = tmp16(tmp17, obj3);
     }
     items3[1] = tmp16Result;
@@ -131,14 +131,14 @@ let closure_4 = importAll(dependencyMap[1]);
 const View = arg1(dependencyMap[2]).View;
 ({ jsx: closure_6, jsxs: closure_7 } = arg1(dependencyMap[3]));
 let obj = arg1(dependencyMap[4]);
-obj = { imageSelectionRow: {}, buttonColumn: {}, imageDescription: {}, image: { "Bool(true)": null, "Bool(true)": null, "Bool(true)": null }, imageCentered: { "Bool(true)": null, "Bool(true)": null, "Bool(true)": null }, imageCircle: { borderRadius: 42 } };
+obj = { imageSelectionRow: {}, buttonColumn: {}, imageDescription: {}, image: { <string:1641826129>: 184, <string:1053250041>: 184, <string:1399449442>: null }, imageCentered: {}, imageCircle: { borderRadius: 42 } };
 obj = { borderRadius: importDefault(dependencyMap[5]).radii.sm };
 obj.imageSquircle = obj;
 const tmp2 = arg1(dependencyMap[3]);
 obj.imageContainerEmpty = { backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_LOWEST };
 const obj1 = { backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_LOWEST };
 obj.editImageIcon = { backgroundColor: importDefault(dependencyMap[5]).colors.INTERACTIVE_TEXT_DEFAULT, borderRadius: importDefault(dependencyMap[5]).radii.lg };
-obj.standaloneIcon = { "Bool(false)": "bannerOriginalMd5", "Bool(false)": "splashOriginalMd5" };
+obj.standaloneIcon = { 928372124: "bannerOriginalMd5", 91007061: "splashOriginalMd5" };
 obj.disabled = { opacity: 0.3 };
 let closure_8 = obj.createStyles(obj);
 const obj3 = { CIRCLE: 0, [0]: "CIRCLE", SQUIRCLE: 1, [1]: "SQUIRCLE" };
@@ -153,7 +153,7 @@ export default function FormImagePicker(children) {
   ({ image, setImage } = children);
   const importDefault = setImage;
   const disabled = children.disabled;
-  let obj = { "Bool(false)": false, "Bool(false)": null, "Bool(false)": "", "Bool(false)": null, "Bool(false)": null };
+  let obj = {};
   Object.setPrototypeOf(null);
   const merged = Object.assign(children, obj);
   const tmp3 = callback4();

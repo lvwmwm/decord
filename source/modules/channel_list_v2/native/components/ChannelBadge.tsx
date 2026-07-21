@@ -1,15 +1,14 @@
-// Module ID: 11373
-// Function ID: 88462
+// Module ID: 11380
+// Function ID: 88486
 // Name: renderChannelBadge
 // Dependencies: [0, 0, 0, 0, 0, 0, 0, 0]
 // Exports: renderChannelBadge
 
-// Module 11373 (renderChannelBadge)
-import "result";
-import { jsx } from "result";
-import result from "result";
+// Module 11380 (renderChannelBadge)
+import "__exportStarResult1";
+import { jsx } from "__exportStarResult1";
 
-result = result.fileFinishedImporting("modules/channel_list_v2/native/components/ChannelBadge.tsx");
+const result = require("__exportStarResult1").fileFinishedImporting("modules/channel_list_v2/native/components/ChannelBadge.tsx");
 
 export const renderChannelBadge = function renderChannelBadge(newChannel) {
   let eventsMentionCount;
@@ -36,7 +35,7 @@ export const renderChannelBadge = function renderChannelBadge(newChannel) {
   } else {
     if (null != newPostCount) {
       if (newPostCount > 0) {
-        obj = { INTEGRATION_CREATE: null, ConstraintReasonCode: "76e12fa5305b436abd63e2faeb40e327" };
+        obj = {};
         const intl = arg1(dependencyMap[5]).intl;
         const obj1 = { count: arg1(dependencyMap[6]).humanizeValue(newPostCount, newChannel.locale) };
         obj.children = intl.format(arg1(dependencyMap[5]).t.GkAbqY, obj1);

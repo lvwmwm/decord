@@ -1,9 +1,9 @@
-// Module ID: 15412
-// Function ID: 117626
+// Module ID: 15419
+// Function ID: 117650
 // Name: UnmuteOptions
 // Dependencies: []
 
-// Module 15412 (UnmuteOptions)
+// Module 15419 (UnmuteOptions)
 function UnmuteOptions(channel) {
   channel = channel.channel;
   const arg1 = channel;
@@ -20,7 +20,7 @@ function UnmuteOptions(channel) {
   obj = {};
   obj = { disableColor: true, source: importDefault(dependencyMap[16]) };
   obj.icon = callback(arg1(dependencyMap[15]).Icon, obj);
-  const obj1 = { INTEGRATION_CREATE: 131072.00119209292, ConstraintReasonCode: -293983030121430100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 };
+  const obj1 = {};
   const intl = arg1(dependencyMap[18]).intl;
   const obj2 = {};
   const tmp = callback3();
@@ -177,10 +177,10 @@ const ChannelSettingsSections = arg1(dependencyMap[6]).ChannelSettingsSections;
 ({ jsx: closure_10, jsxs: closure_11, Fragment: closure_12 } = arg1(dependencyMap[7]));
 const tmp2 = arg1(dependencyMap[7]);
 let obj = {};
-obj = { rolling_on_the_floor_laughing: "\u{1F469}\u{1F3FD}\u200D\u{1F9BC}\u200D\u27A1\uFE0F", smiling_face_with_tear: true, relaxed: null, backgroundColor: importDefault(dependencyMap[9]).colors.BACKGROUND_BASE_LOWER };
+obj = { "Null": "\u{1F469}\u{1F3FD}\u200D\u{1F9BC}\u200D\u27A1\uFE0F", "Null": true, "Null": null, backgroundColor: importDefault(dependencyMap[9]).colors.BACKGROUND_BASE_LOWER };
 obj.container = obj;
 obj.options = { marginBottom: 16 };
-obj.trailing = { -9223372036854775808: true, filter: true };
+obj.trailing = {};
 obj.hint = {};
 let closure_13 = arg1(dependencyMap[8]).createStyles(obj);
 const obj2 = arg1(dependencyMap[8]);

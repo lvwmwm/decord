@@ -1,21 +1,21 @@
-// Module ID: 13543
-// Function ID: 102760
+// Module ID: 13550
+// Function ID: 102783
 // Name: SettingsAgeGroupHeader
 // Dependencies: []
 // Exports: default
 
-// Module 13543 (SettingsAgeGroupHeader)
+// Module 13550 (SettingsAgeGroupHeader)
 function SettingsAgeGroupHeader() {
   let obj = { style: callback3().headerContainer };
   const callback = React.useCallback(() => {
     const obj = callback(closure_2[7]);
     obj.openUrl(callback(closure_2[8]).getArticleURL(constants.TIGGER_PAWTECT_LEARN_MORE));
   }, []);
-  obj = { INTEGRATION_CREATE: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007863204514436, ConstraintReasonCode: 127277221446373050000000000 };
+  obj = {};
   const intl = arg1(dependencyMap[10]).intl;
   obj.children = intl.string(importDefault(dependencyMap[11]).PY4MA0);
   const items = [callback(arg1(dependencyMap[9]).Text, obj), ];
-  obj = { INTEGRATION_CREATE: "AutomodMentionRaidLimit", ConstraintReasonCode: "%URIError%" };
+  obj = {};
   const intl2 = arg1(dependencyMap[10]).intl;
   obj.children = intl2.format(importDefault(dependencyMap[11]).1DN29p, { handleOnHelpUrlHook: callback });
   items[1] = callback(arg1(dependencyMap[9]).Text, obj);

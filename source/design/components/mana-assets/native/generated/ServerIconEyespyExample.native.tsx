@@ -1,10 +1,10 @@
-// Module ID: 6473
-// Function ID: 50583
+// Module ID: 6475
+// Function ID: 50626
 // Name: ServerIconEyespyExample
 // Dependencies: []
 // Exports: ServerIconEyespyExample
 
-// Module 6473 (ServerIconEyespyExample)
+// Module 6475 (ServerIconEyespyExample)
 const jsx = require(dependencyMap[0]).jsx;
 const _module = require(dependencyMap[3]);
 const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/ServerIconEyespyExample.native.tsx");

@@ -1,18 +1,18 @@
-// Module ID: 14812
-// Function ID: 111664
+// Module ID: 14819
+// Function ID: 111688
 // Name: TypingIndicator
 // Dependencies: []
 // Exports: TypingIndicator
 
-// Module 14812 (TypingIndicator)
+// Module 14819 (TypingIndicator)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 const jsx = arg1(dependencyMap[2]).jsx;
 let closure_5 = arg1(dependencyMap[3]).createStyles((arg0) => {
   let obj = {};
-  obj = { "Null": 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000009520210693815376, "Null": 0.0000000000000000000000000017299759997123383, "Null": 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001752504095698638, borderColor: importDefault(dependencyMap[4]).colors.BACKGROUND_BASE_LOW };
+  obj = { "Null": "flex", "Null": "row", "Null": "center", borderColor: importDefault(dependencyMap[4]).colors.BACKGROUND_BASE_LOW };
   obj.ellipsisWrapper = obj;
-  obj = { style: true, gemWidth: true, gemHeight: true, beforeItem: true, afterItem: true };
+  obj = { constructor: null, paths: 2, construct: 8, paths: null, accessible: 1 };
   const unsafe_rawColors = importDefault(dependencyMap[4]).unsafe_rawColors;
   obj.backgroundColor = arg0 ? unsafe_rawColors.BRAND_200 : unsafe_rawColors.BRAND_500;
   obj.ellipsis = obj;

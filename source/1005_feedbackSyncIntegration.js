@@ -1,7 +1,7 @@
 // Module ID: 1005
 // Function ID: 10976
 // Name: feedbackSyncIntegration
-// Dependencies: [67174400]
+// Dependencies: []
 
 // Module 1005 (feedbackSyncIntegration)
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });

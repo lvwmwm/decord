@@ -1,9 +1,9 @@
-// Module ID: 4942
-// Function ID: 42324
+// Module ID: 4944
+// Function ID: 42365
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
-// Module 4942 (_isNativeReflectConstruct)
+// Module 4944 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -308,7 +308,7 @@ let closure_11 = importDefault(dependencyMap[8]);
 let closure_12 = importDefault(dependencyMap[9]);
 ({ VerificationLevels: closure_13, VerificationCriteria: closure_14, GuildFeatures: closure_15 } = arg1(dependencyMap[10]));
 const GuildMemberFlags = arg1(dependencyMap[11]).GuildMemberFlags;
-let closure_17 = { get: 2073100289, children: -729153535, track: 1091633153, now: 115185, accessibilityRole: -2125119215, accessibilityLabel: 1124139009, Date: 152872 };
+let closure_17 = { type: "RBTree", position: "helpdeskArticleUrl", parentId: "%ReferenceErrorPrototype%", collapsed: "RBTree", <string:2952265732>: "preemptiveExpanded", <string:3376480260>: "%Math.min%", <string:3376545796>: "isArrayBuffer" };
 const set = new Set();
 let closure_19 = {};
 let tmp4 = (Store) => {

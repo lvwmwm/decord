@@ -1,10 +1,10 @@
-// Module ID: 9349
-// Function ID: 72992
+// Module ID: 9353
+// Function ID: 73006
 // Name: PremiumUpsellGradientBackground
 // Dependencies: []
 // Exports: PremiumUpsellGradientBackground
 
-// Module 9349 (PremiumUpsellGradientBackground)
+// Module 9353 (PremiumUpsellGradientBackground)
 importAll(dependencyMap[0]);
 const Gradients = arg1(dependencyMap[2]).Gradients;
 const jsx = arg1(dependencyMap[3]).jsx;

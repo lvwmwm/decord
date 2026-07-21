@@ -1,10 +1,10 @@
-// Module ID: 11937
-// Function ID: 92323
+// Module ID: 11944
+// Function ID: 92346
 // Name: getActivityJoinability
-// Dependencies: [653, 22, 2, 4209, 4142, 6972, 9054, 566, 2, 31, 27, 4573]
+// Dependencies: [653, 22, 2, 4213, 4142, 6976, 9058, 566, 2, 31, 27, 4575]
 // Exports: default
 
-// Module 11937 (getActivityJoinability)
+// Module 11944 (getActivityJoinability)
 import ME from "ME";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 

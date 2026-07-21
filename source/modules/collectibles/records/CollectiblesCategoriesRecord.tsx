@@ -1,9 +1,9 @@
-// Module ID: 6781
-// Function ID: 53550
+// Module ID: 6787
+// Function ID: 53599
 // Name: CollectiblesCategoriesRecord
 // Dependencies: []
 
-// Module 6781 (CollectiblesCategoriesRecord)
+// Module 6787 (CollectiblesCategoriesRecord)
 let closure_0 = importDefault(dependencyMap[0]);
 let closure_1 = importDefault(dependencyMap[1]);
 let closure_2 = importDefault(dependencyMap[2]);

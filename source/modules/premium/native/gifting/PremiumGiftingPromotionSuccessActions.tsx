@@ -1,10 +1,10 @@
-// Module ID: 9758
-// Function ID: 75905
+// Module ID: 9763
+// Function ID: 75921
 // Name: PremiumGiftingPromotionSuccessActions
 // Dependencies: []
 // Exports: default
 
-// Module 9758 (PremiumGiftingPromotionSuccessActions)
+// Module 9763 (PremiumGiftingPromotionSuccessActions)
 let closure_3 = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 const isAvatarDecorationRecord = arg1(dependencyMap[2]).isAvatarDecorationRecord;
@@ -15,9 +15,9 @@ let obj = arg1(dependencyMap[6]);
 obj = {};
 obj = { gap: importDefault(dependencyMap[7]).space.PX_16 };
 obj.container = obj;
-const obj1 = { 0: "/assets/design/components/Icon/native/redesign/generated/images", 9223372036854775807: 24, 0: 24, 0: null, 9223372036854775807: "367021fc812df044b1b4d5405a1e12c2", 9223372036854775807: "CircleQuestionIcon-primary", 9223372036854775807: "png", borderRadius: importDefault(dependencyMap[7]).radii.sm };
-obj.nameplateContainer = obj1;
 const tmp2 = arg1(dependencyMap[5]);
+obj.nameplateContainer = { borderRadius: importDefault(dependencyMap[7]).radii.sm };
+const obj1 = { borderRadius: importDefault(dependencyMap[7]).radii.sm };
 obj.nameplateWrapper = { borderRadius: importDefault(dependencyMap[7]).radii.sm };
 obj.singleAvatarContainer = {};
 let closure_10 = obj.createStyles(obj);
@@ -79,7 +79,7 @@ export default function PremiumGiftingPromotionSuccessActions(purchase) {
   if (isNameplateRecord(first)) {
     obj = { style: tmp.nameplateContainer };
     obj1 = { style: tmp.nameplateWrapper };
-    obj2 = { "Bool(true)": null, "Bool(true)": null, "Bool(true)": null };
+    obj2 = { "Null": null, "Null": null, "Null": null };
     const tmp23 = importDefault(dependencyMap[15]);
     obj2.nameplate = arg1(dependencyMap[16]).getNameplateData(first);
     obj1.children = callback(tmp23, obj2);

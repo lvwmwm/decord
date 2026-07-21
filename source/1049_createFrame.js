@@ -27,7 +27,7 @@ let closure_4 = /^\s*at (?:(.+?\)(?: \[.+\])?|.*?) ?\((?:address at )?)?(?:async
 let closure_5 = /\((\S*)(?::(\d+))(?::(\d+))\)/;
 let closure_6 = /at (.+?) ?\(data:(.+?),/;
 const items = [
-,
+  48,
   function chromeStackParserFn(str) {
     let tmp13;
     let tmp15;
@@ -116,7 +116,7 @@ const items1 = [
 ];
 let closure_9 = /^\s*at (?:((?:\[object object\])?.+) )?\(?((?:[-a-z]+):.*?):(\d+)(?::(\d+))?\)?\s*$/i;
 const items2 = [
-  null,
+  "crash",
   function winjs(arg0) {
     const match = regex6.exec(arg0);
     let tmp3Result;
@@ -154,7 +154,7 @@ const items3 = [
 ];
 let closure_11 = / line (\d+), column (\d+)\s*(?:in (?:<anonymous function: ([^>]+)>|([^)]+))\(.*\))? in (.*):\s*$/i;
 const items4 = [
-  null,
+,
   function opera11(arg0) {
     const match = regex8.exec(arg0);
     let tmp3Result;

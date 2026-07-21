@@ -1,10 +1,10 @@
-// Module ID: 15060
-// Function ID: 113379
+// Module ID: 15067
+// Function ID: 113403
 // Name: ICYMIInfoModal
 // Dependencies: []
 // Exports: default
 
-// Module 15060 (ICYMIInfoModal)
+// Module 15067 (ICYMIInfoModal)
 let closure_3 = importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[15]).fileFinishedImporting("modules/icymi/native/info_modal/ICYMIInfoModal.tsx");

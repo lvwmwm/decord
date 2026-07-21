@@ -1,10 +1,10 @@
-// Module ID: 5310
-// Function ID: 45088
+// Module ID: 5312
+// Function ID: 45129
 // Name: getThreadLastActivityTime
 // Dependencies: []
 // Exports: default
 
-// Module 5310 (getThreadLastActivityTime)
+// Module 5312 (getThreadLastActivityTime)
 function getThreadLastActivityTime(threadMetadata) {
   if (null == threadMetadata.threadMetadata) {
     return 0;
@@ -15,13 +15,19 @@ function getThreadLastActivityTime(threadMetadata) {
     }
     let num2 = 0;
     const obj = importDefault(dependencyMap[2]);
-    if (null != threadMetadata.threadMetadata.archiveTimestamp) {
+    if (null != threadMetadata.lastNonMessageActivityTimestamp) {
       const _Date = Date;
-      const date = new Date(threadMetadata.threadMetadata.archiveTimestamp);
+      const date = new Date(threadMetadata.lastNonMessageActivityTimestamp);
       num2 = date.getTime();
     }
+    let num3 = 0;
+    if (null != threadMetadata.threadMetadata.archiveTimestamp) {
+      const _Date2 = Date;
+      const date1 = new Date(threadMetadata.threadMetadata.archiveTimestamp);
+      num3 = date1.getTime();
+    }
     const _Math = Math;
-    return Math.max(importDefault(dependencyMap[2]).extractTimestamp(id), num2);
+    return Math.max(importDefault(dependencyMap[2]).extractTimestamp(id), num2, num3);
   }
 }
 let closure_2 = importDefault(dependencyMap[0]);

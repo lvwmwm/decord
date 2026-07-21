@@ -1,9 +1,9 @@
-// Module ID: 14021
-// Function ID: 106646
+// Module ID: 14028
+// Function ID: 106669
 // Name: customFontScale
 // Dependencies: []
 
-// Module 14021 (customFontScale)
+// Module 14028 (customFontScale)
 const _module = require(dependencyMap[0]);
 if (_module.isAndroid()) {
   let customFontScale = importDefault(dependencyMap[1]).getCustomFontScale();

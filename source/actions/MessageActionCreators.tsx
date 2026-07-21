@@ -1,9 +1,9 @@
-// Module ID: 6680
-// Function ID: 51497
+// Module ID: 6686
+// Function ID: 51546
 // Name: trackInvite
 // Dependencies: []
 
-// Module 6680 (trackInvite)
+// Module 6686 (trackInvite)
 let Permissions;
 function trackInvite(channelId) {
   let _location;
@@ -381,7 +381,7 @@ const obj14 = {
   },
   sendGiftingPromptSystemMessage(channelId, giftingPrompt) {
     let obj = { channelId, type: constants6.GIFTING_PROMPT, content: "", flags: closure_35.EPHEMERAL, author: obj, giftingPrompt };
-    obj = { id: closure_42, discriminator: closure_43 };
+    obj = { ;: 55141372474191760000000000000000000000000000000, \: 0.00000000000000000000000000000000000000000000000000000000000004667261458395371, ,: 0.000000000000000000000000000000000000000000000000000000000000041334633291766945, /: 147377264888991440000000000000000000000000000000000000000000000000000000000000000000000000000000000, n: 0.00000000000000000000000000000000000000000000000000000000000004667261458271638, id: closure_42, discriminator: closure_43 };
     obj = {};
     const merged = Object.assign(importDefault(dependencyMap[50])(obj));
     obj["state"] = constants9.SENT;
@@ -389,7 +389,7 @@ const obj14 = {
   },
   sendGuildBoostUpsellSystemMessage(channelId, boostingPrompt) {
     let obj = { channelId, type: constants6.GUILD_BOOST_UPSELL, content: "", flags: closure_35.EPHEMERAL, author: obj, boostingPrompt };
-    obj = { id: closure_42, discriminator: closure_43 };
+    obj = { ;: 0, \: null, ,: 2, /: 2, n: "absolute", id: closure_42, discriminator: closure_43 };
     obj = {};
     const merged = Object.assign(importDefault(dependencyMap[50])(obj));
     obj["state"] = constants9.SENT;
@@ -437,7 +437,7 @@ const obj14 = {
         obj.message = intl.string(callback(closure_3[46]).t.mktny/);
         obj.messageName = "BOT_DM_EXPLICIT_CONTENT";
         return obj;
-      }).with({ u: true, [: true }, () => {
+      }).with({ <string:1457041507>: null, <string:2803841106>: null }, () => {
         const obj = {};
         const intl = callback(closure_3[46]).intl;
         obj.message = intl.string(callback(closure_3[46]).t.mktny/);
@@ -450,7 +450,7 @@ const obj14 = {
         obj.message = intl.string(callback(closure_3[46]).t.mktny/);
         obj.messageName = "BOT_DM_EXPLICIT_CONTENT";
         return obj;
-      }).with({ u: true, [: true }, () => {
+      }).with({ <string:1457041507>: null, <string:2803841106>: null }, () => {
         const obj = {};
         const intl = callback(closure_3[46]).intl;
         obj.message = intl.string(callback(closure_3[46]).t.mktny/);
@@ -469,7 +469,7 @@ const obj14 = {
         obj.message = intl.string(callback(closure_3[46]).t.mktny/);
         obj.messageName = "BOT_DM_EXPLICIT_CONTENT";
         return obj;
-      }).with({ u: true, [: true }, () => {
+      }).with({ <string:1457041507>: null, <string:2803841106>: null }, () => {
         const obj = {};
         const intl = callback(closure_3[46]).intl;
         obj.message = intl.string(callback(closure_3[46]).t.mktny/);
@@ -1184,12 +1184,11 @@ const obj14 = {
     if (arg2 === undefined) {
       obj = {};
     }
-    obj = { 0: "/assets/.cache/intl/bW9kdWxlcy9jaGVja291dC9tZXNzYWdlcw==", 0: null, validNonShortcutEmojis: [], invalidEmojis: [] };
     obj = {};
     const merged = Object.assign(obj);
     obj["poll"] = arg1;
     obj["location"] = constants10.POLL_CREATION;
-    return obj14._sendMessage(id, obj, obj);
+    return obj14._sendMessage(id, { validNonShortcutEmojis: [], invalidEmojis: [] }, obj);
   },
   validateMessage(invalidEmojis, currentUser, arg2) {
     if (invalidEmojis.some((animated) => animated.animated)) {
@@ -2121,7 +2120,7 @@ const obj14 = {
     const importDefault = arg1;
     return callback(async () => {
       const HTTP = callback(closure_3[54]).HTTP;
-      const obj = { 0: null, -9223372036854775808: null, 9223372036854775807: null, url: closure_30.MESSAGE_CROSSPOST(callback, closure_1), rejectWithError: callback(closure_3[54]).rejectWithMigratedError() };
+      const obj = { handleRemoveAvatarSelect: null, __index__: null, ALLOW_GAME_FRIEND_DMS: null, url: closure_30.MESSAGE_CROSSPOST(callback, closure_1), rejectWithError: callback(closure_3[54]).rejectWithMigratedError() };
       return yield HTTP.post(obj);
     })();
   },

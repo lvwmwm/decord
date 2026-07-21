@@ -1,10 +1,10 @@
-// Module ID: 13827
-// Function ID: 104538
+// Module ID: 13834
+// Function ID: 104561
 // Name: items
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 13827 (items)
-const obj = {};
+// Module 13834 (items)
+const obj = { "Null": "Opera Mini", "Null": "OPiOS", "Null": "Opera", "Null": "OPR" };
 const items = [, ];
 ({ MIDNIGHT: arr[0], DARK: arr[1] } = obj);
 const items1 = [items, ];

@@ -1,10 +1,10 @@
-// Module ID: 5672
-// Function ID: 48686
+// Module ID: 5674
+// Function ID: 48729
 // Name: resolveGoreSettingWithDefaults
 // Dependencies: []
 // Exports: updateGoreContentSetting, useSensitiveContentFilterHelpArticle
 
-// Module 5672 (resolveGoreSettingWithDefaults)
+// Module 5674 (resolveGoreSettingWithDefaults)
 function resolveGoreSettingWithDefaults(isFriend) {
   let isDm;
   let setting;
@@ -108,7 +108,7 @@ function getGoreContentSettingOrDefault(arg0) {
   obj.setting = prop;
   obj.isDm = true;
   obj.goreContentNonFriendDm = resolveGoreSettingWithDefaults(obj);
-  const obj1 = { 520035839: null, 1157570559: null, 315659: null };
+  const obj1 = { "Bool(true)": null, "Bool(true)": null, "Bool(true)": null };
   let goreContentFriendDm;
   if (null != setting) {
     goreContentFriendDm = setting.goreContentFriendDm;

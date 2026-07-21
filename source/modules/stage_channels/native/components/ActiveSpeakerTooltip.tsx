@@ -1,8 +1,8 @@
-// Module ID: 10784
-// Function ID: 83751
+// Module ID: 10790
+// Function ID: 83774
 // Dependencies: []
 
-// Module 10784
+// Module 10790
 let closure_3 = importDefault(dependencyMap[0]);
 const View = arg1(dependencyMap[2]).View;
 let closure_5 = importDefault(dependencyMap[3]);
@@ -12,12 +12,12 @@ const tmp2 = arg1(dependencyMap[4]);
 ({ jsx: closure_8, jsxs: closure_9 } = arg1(dependencyMap[6]));
 let obj1 = arg1(dependencyMap[7]);
 let obj = { container: {} };
-obj = { "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_BASE_LOWEST, borderRadius: importDefault(dependencyMap[8]).radii.round };
+obj = { 9223372036854775807: false, 9223372036854775807: false, 9223372036854775807: false, 0: false, backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_BASE_LOWEST, borderRadius: importDefault(dependencyMap[8]).radii.round };
 obj.participantItemContainer = obj;
 obj.participantAvatarContainer = {};
 obj1 = { fontSize: 12, fontFamily: arg1(dependencyMap[5]).Fonts.PRIMARY_SEMIBOLD, color: importDefault(dependencyMap[8]).colors.MOBILE_TEXT_HEADING_PRIMARY, lineHeight: 18 };
 obj.participantAvatarText = obj1;
-obj.participantNameplateContainer = { iconColor: "_opacityActive", flexDirection: "<string:2635747584>", justifyContent: "content", flex: "isArray" };
+obj.participantNameplateContainer = { "Bool(false)": "_impressionItemIdMap", "Bool(false)": "<string:373772544>", "Bool(false)": "content", "Bool(false)": "isArray" };
 const tmp3 = arg1(dependencyMap[6]);
 obj.participantNameplateSpeakingText = { lineHeight: 18, color: importDefault(dependencyMap[8]).colors.TEXT_SUBTLE };
 let closure_10 = obj1.createStyles(obj);

@@ -1,11 +1,11 @@
-// Module ID: 11517
-// Function ID: 89749
+// Module ID: 11524
+// Function ID: 89773
 // Name: useGuildPowerupNewPerkMarketingVersion
-// Dependencies: [87425024, 79429632, 146145280, 131072, 779419648, 2885681159, 3791650830, 905969665, 33554434, 1946157056, 4096, 11529]
+// Dependencies: [755040256, 87425024, 79429632, 146145280, 131072, 779419648, 2885681159, 3791650830, 905969665, 33554434, 1946157056, 4096]
 // Exports: default
 
-// Module 11517 (useGuildPowerupNewPerkMarketingVersion)
-import GuildPowerupRollbackSheet from "GuildPowerupRollbackSheet";
+// Module 11524 (useGuildPowerupNewPerkMarketingVersion)
+import showActionSheet from "showActionSheet";
 
 let closure_2 = importAll(dependencyMap[0]);
 let closure_3 = importDefault(dependencyMap[1]);
@@ -13,7 +13,7 @@ let closure_4 = importDefault(dependencyMap[2]);
 ({ GuildPowerupNewPerkMarketingVersion: closure_5, NEW_PERK_MARKETING_VERSION_TO_POWERUP_SKU_ID_SET: closure_6 } = arg1(dependencyMap[3]));
 const tmp2 = arg1(dependencyMap[3]);
 ({ GuildFeatures: closure_7, Permissions: closure_8 } = arg1(dependencyMap[4]));
-const result = GuildPowerupRollbackSheet.fileFinishedImporting("modules/premium/powerups/hooks/useGuildPowerupNewPerkMarketingVersion.tsx");
+const result = showActionSheet.fileFinishedImporting("modules/premium/powerups/hooks/useGuildPowerupNewPerkMarketingVersion.tsx");
 
 export default function useGuildPowerupNewPerkMarketingVersion(guildId) {
   const arg1 = guildId;

@@ -1,10 +1,10 @@
-// Module ID: 14776
-// Function ID: 111384
+// Module ID: 14783
+// Function ID: 111408
 // Name: getMessagesItemSuggestedFriendHeight
 // Dependencies: []
 // Exports: getMessagesItemSuggestedFriendHeight
 
-// Module 14776 (getMessagesItemSuggestedFriendHeight)
+// Module 14783 (getMessagesItemSuggestedFriendHeight)
 let closure_3 = importDefault(dependencyMap[0]);
 const importAllResult = importAll(dependencyMap[1]);
 const View = arg1(dependencyMap[2]).View;
@@ -102,7 +102,7 @@ const memoResult = importAllResult.memo(function MessagesItemSuggestedFriend(hei
   const items5 = [callback2(arg1(dependencyMap[18]).Avatar, obj), , ];
   const obj1 = { style: tmp.textContainer };
   const items6 = [callback2(arg1(dependencyMap[19]).Text, { children: memo1.suggestionName }), ];
-  const obj2 = { 1449288664: null, -1399499862: "CREATE_CHANNEL_MODAL", -1392005954: "init", -714700971: "Array" };
+  const obj2 = { "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true };
   if (first) {
     const intl = arg1(dependencyMap[12]).intl;
     userStatusLabel = intl.string(arg1(dependencyMap[12]).t.Kzyxm9);
@@ -117,7 +117,7 @@ const memoResult = importAllResult.memo(function MessagesItemSuggestedFriend(hei
     obj3.style = obj4;
     let tmp13Result = tmp13(tmp14(tmp15[21]).SendMessageIcon, obj3);
   } else {
-    const obj5 = { <string:1522289750>: false, <string:570601313>: null };
+    const obj5 = {};
     const intl2 = tmp14(tmp15[12]).intl;
     obj5.text = intl2.string(tmp14(tmp15[12]).t.OYkgVk);
     obj5.onPress = callback1;

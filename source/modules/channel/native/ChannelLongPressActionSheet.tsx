@@ -1,10 +1,10 @@
-// Module ID: 9088
-// Function ID: 71198
+// Module ID: 9092
+// Function ID: 71210
 // Name: handleVoiceOrStageChannelConnectPress
 // Dependencies: []
 // Exports: default
 
-// Module 9088 (handleVoiceOrStageChannelConnectPress)
+// Module 9092 (handleVoiceOrStageChannelConnectPress)
 function handleVoiceOrStageChannelConnectPress() {
   return _handleVoiceOrStageChannelConnectPress(...arguments);
 }

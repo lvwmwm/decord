@@ -56,16 +56,16 @@ export const tryTransitionToThreadMessage = function tryTransitionToThreadMessag
     transitionToChannel(parentChannelId, openTextInVoiceIfVoiceChannel);
   }
 };
-export const transitionToMessage = function transitionToMessage(channelId, messageId, arg2) {
+export const transitionToMessage = function transitionToMessage(channelId, id, arg2) {
   const channel = store.getChannel(channelId);
   if (null != channel) {
-    let obj = messageId(dependencyMap[2]);
+    let obj = id(dependencyMap[2]);
     const guildIdForGenericRedirect = obj.getGuildIdForGenericRedirect(channel);
     obj = { openChannel: true };
-    const obj2 = messageId(dependencyMap[4]);
+    const obj2 = id(dependencyMap[4]);
     const merged = Object.assign(arg2);
-    obj2.transitionTo(Routes.CHANNEL(guildIdForGenericRedirect, channel.id, messageId), obj);
-    const CHANNELResult = Routes.CHANNEL(guildIdForGenericRedirect, channel.id, messageId);
+    obj2.transitionTo(Routes.CHANNEL(guildIdForGenericRedirect, channel.id, id), obj);
+    const CHANNELResult = Routes.CHANNEL(guildIdForGenericRedirect, channel.id, id);
   }
 };
 export const transitionToStaticChannelRoute = function transitionToStaticChannelRoute(guildId, GUILD_HOME) {

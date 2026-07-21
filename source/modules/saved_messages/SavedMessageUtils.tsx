@@ -1,10 +1,10 @@
-// Module ID: 9906
-// Function ID: 76653
+// Module ID: 9911
+// Function ID: 76669
 // Name: _savedMessageJumpToMessage
 // Dependencies: []
 // Exports: savedMessageJumpToMessage, useDueInString, useSavedMessageChannel
 
-// Module 9906 (_savedMessageJumpToMessage)
+// Module 9911 (_savedMessageJumpToMessage)
 function _savedMessageJumpToMessage() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
@@ -27,7 +27,7 @@ export const useDueInString = function useDueInString(arg0) {
   let type;
   ({ dueAt, now, type } = arg0);
   if (null == dueAt) {
-    return { color: "/assets/.cache/intl/bW9kdWxlcy9jaGVja291dC9tZXNzYWdlcw==", accessible: null };
+    return {};
   } else {
     if (type === obj.LONG) {
       let H4gnX9 = arg1(dependencyMap[5]).t.TjNWNF;

@@ -1,16 +1,16 @@
-// Module ID: 5440
-// Function ID: 46504
+// Module ID: 5442
+// Function ID: 46546
 // Name: FormArrow
 // Dependencies: []
 // Exports: default
 
-// Module 5440 (FormArrow)
+// Module 5442 (FormArrow)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 ({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[2]));
 let obj = arg1(dependencyMap[3]);
-obj = { wrapper: { -9223372036854775808: true, filter: true } };
-obj = { display: null, justifyContent: null, minWidth: null, tintColor: importDefault(dependencyMap[4]).colors.INTERACTIVE_TEXT_DEFAULT };
+obj = { wrapper: {} };
+obj = { "Bool(false)": "text-sm/medium", "Bool(false)": "text-overlay-light", "Bool(false)": null, tintColor: importDefault(dependencyMap[4]).colors.INTERACTIVE_TEXT_DEFAULT };
 obj.icon = obj;
 let closure_6 = obj.createStyles(obj);
 const tmp3 = arg1(dependencyMap[2]);

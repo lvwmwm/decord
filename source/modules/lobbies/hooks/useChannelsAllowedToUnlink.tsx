@@ -1,13 +1,10 @@
-// Module ID: 16074
-// Function ID: 123612
+// Module ID: 16081
+// Function ID: 123643
 // Name: getChannelsAllowedToUnlink
-// Dependencies: [4294967295, 0, 0, 0, 0]
+// Dependencies: []
 // Exports: useChannelsAllowedToUnlink
 
-// Module 16074 (getChannelsAllowedToUnlink)
-import closure_4 from "result";
-import result from "result";
-
+// Module 16081 (getChannelsAllowedToUnlink)
 function getChannelsAllowedToUnlink(arg0) {
   let obj = arg1;
   let tmp = arg2;
@@ -29,7 +26,8 @@ function getChannelsAllowedToUnlink(arg0) {
 }
 let closure_2 = importDefault(dependencyMap[0]);
 let closure_3 = arg1(dependencyMap[0]).GUILD_SELECTABLE_CHANNELS_KEY;
-result = result.fileFinishedImporting("modules/lobbies/hooks/useChannelsAllowedToUnlink.tsx");
+let closure_4 = importDefault(dependencyMap[1]);
+const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/lobbies/hooks/useChannelsAllowedToUnlink.tsx");
 
 export { getChannelsAllowedToUnlink };
 export const useChannelsAllowedToUnlink = function useChannelsAllowedToUnlink(id) {

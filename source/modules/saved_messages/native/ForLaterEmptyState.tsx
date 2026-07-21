@@ -1,16 +1,16 @@
-// Module ID: 9919
-// Function ID: 76728
+// Module ID: 9924
+// Function ID: 76744
 // Name: ForLaterEmptyState
 // Dependencies: []
 // Exports: ForLaterEmptyState
 
-// Module 9919 (ForLaterEmptyState)
+// Module 9924 (ForLaterEmptyState)
 const _module = require(dependencyMap[0]);
 ({ View: closure_3, Image: closure_4, ScrollView: closure_5 } = _module);
 const _module1 = require(dependencyMap[1]);
 ({ jsx: closure_6, jsxs: closure_7 } = _module1);
 const _module2 = require(dependencyMap[2]);
-let closure_8 = _module2.createStyles({ scrollView: { flex: 1 }, pageContainer: {}, container: {}, image: { aze: "ArrowAngleLeftUpIcon", azj: "png" }, textContainer: { backgroundColor: null, borderRadius: null }, text: { textAlign: "center" } });
+let closure_8 = _module2.createStyles({ scrollView: { flex: 1 }, pageContainer: {}, container: {}, image: { bhk: "SERVER_GUIDE_CHANNEL_SELECTED", bic: "_gameProfileResults" }, textContainer: { "Bool(false)": true, "Bool(false)": true }, text: { textAlign: "center" } });
 const _module3 = require(dependencyMap[6]);
 const result = _module3.fileFinishedImporting("modules/saved_messages/native/ForLaterEmptyState.tsx");
 

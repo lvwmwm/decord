@@ -1,10 +1,10 @@
-// Module ID: 10185
-// Function ID: 78667
+// Module ID: 10191
+// Function ID: 78685
 // Name: BellIcon
 // Dependencies: []
 // Exports: BellIcon
 
-// Module 10185 (BellIcon)
+// Module 10191 (BellIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/BellIcon.tsx");

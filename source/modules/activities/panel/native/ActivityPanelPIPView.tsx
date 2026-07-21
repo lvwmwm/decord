@@ -1,9 +1,9 @@
-// Module ID: 15564
-// Function ID: 118778
+// Module ID: 15571
+// Function ID: 118802
 // Name: useBaseActivityPanelPIPView
 // Dependencies: []
 
-// Module 15564 (useBaseActivityPanelPIPView)
+// Module 15571 (useBaseActivityPanelPIPView)
 function useBaseActivityPanelPIPView() {
   const tmp = importDefault(dependencyMap[15])();
   const arg1 = tmp;

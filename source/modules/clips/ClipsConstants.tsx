@@ -1,10 +1,10 @@
-// Module ID: 4176
-// Function ID: 35923
+// Module ID: 4180
+// Function ID: 35971
 // Name: result
 // Dependencies: []
 // Exports: CLIP_NAME_TEMPLATE
 
-// Module 4176 (result)
+// Module 4180 (result)
 const obj = {};
 const result = 30 * importDefault(dependencyMap[0]).Millis.SECOND;
 obj.SECONDS_30 = result;

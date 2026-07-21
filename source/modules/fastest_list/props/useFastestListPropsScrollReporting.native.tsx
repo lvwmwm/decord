@@ -1,10 +1,10 @@
-// Module ID: 9242
-// Function ID: 72254
+// Module ID: 9246
+// Function ID: 72266
 // Name: useFastestListPropsScrollReporting
 // Dependencies: []
 // Exports: default
 
-// Module 9242 (useFastestListPropsScrollReporting)
+// Module 9246 (useFastestListPropsScrollReporting)
 let closure_2 = { code: "function useFastestListPropsScrollReportingNativeTsx1(event){const{scrollPosition,horizontal}=this.__closure;if(scrollPosition!=null){scrollPosition.set(horizontal?event.contentOffset.x:event.contentOffset.y);}}" };
 const _module = require(dependencyMap[1]);
 const result = _module.fileFinishedImporting("modules/fastest_list/props/useFastestListPropsScrollReporting.native.tsx");

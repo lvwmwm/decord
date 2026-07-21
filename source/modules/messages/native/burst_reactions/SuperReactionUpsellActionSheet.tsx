@@ -1,10 +1,10 @@
-// Module ID: 9304
-// Function ID: 72758
+// Module ID: 9308
+// Function ID: 72772
 // Name: items
 // Dependencies: []
 // Exports: default
 
-// Module 9304 (items)
+// Module 9308 (items)
 let closure_3 = importAll(dependencyMap[0]);
 const tmp2 = arg1(dependencyMap[1]);
 const View = tmp2.View;
@@ -22,10 +22,10 @@ obj["alignItems"] = "center";
 obj["justifyContent"] = "center";
 obj["top"] = -150;
 obj.fill = obj;
-obj.nitroIcon = { tintColor: importDefault(dependencyMap[14]).colors.WHITE };
+const obj1 = { onPress: "user", variant: "2026-06-dont-badge-muted-vcs", disabled: "text-sm/bold", isRoleSubscriptionEmoji: "text-feedback-info", isUnusableRoleSubscriptionEmoji: 750, tintColor: importDefault(dependencyMap[14]).colors.WHITE };
+obj.nitroIcon = obj1;
 obj.description = { paddingHorizontal: 16 };
 let closure_10 = obj.createStyles(obj);
-const obj1 = { tintColor: importDefault(dependencyMap[14]).colors.WHITE };
 const result = arg1(dependencyMap[30]).fileFinishedImporting("modules/messages/native/burst_reactions/SuperReactionUpsellActionSheet.tsx");
 
 export default function SuperReactionCoachmarkActionSheet(onDismiss) {

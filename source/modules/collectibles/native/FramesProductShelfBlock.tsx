@@ -1,10 +1,10 @@
-// Module ID: 14369
-// Function ID: 108464
+// Module ID: 14376
+// Function ID: 108487
 // Name: ListEdgeSpacer
 // Dependencies: []
 // Exports: default
 
-// Module 14369 (ListEdgeSpacer)
+// Module 14376 (ListEdgeSpacer)
 function ListEdgeSpacer() {
   return callback(closure_5, { style: callback3().listEdgeSpacer });
 }
@@ -19,7 +19,7 @@ let obj = arg1(dependencyMap[3]);
 obj = {};
 obj = { width: "100%", marginTop: importDefault(dependencyMap[4]).space.PX_24, paddingTop: importDefault(dependencyMap[4]).space.PX_24, paddingBottom: importDefault(dependencyMap[4]).space.PX_24, overflow: "hidden" };
 obj.container = obj;
-obj.backgroundImage = {};
+obj.backgroundImage = { 944862882: true, -1374592052: true, -1436785218: true, 1492885590: true, 230219098: true, -1955435987: true, -548342068: true };
 const tmp3 = arg1(dependencyMap[2]);
 obj.header = { paddingHorizontal: importDefault(dependencyMap[4]).space.PX_16, marginBottom: importDefault(dependencyMap[4]).space.PX_16, gap: importDefault(dependencyMap[4]).space.PX_8, alignItems: "flex-start", zIndex: 1 };
 const obj1 = { paddingHorizontal: importDefault(dependencyMap[4]).space.PX_16, marginBottom: importDefault(dependencyMap[4]).space.PX_16, gap: importDefault(dependencyMap[4]).space.PX_8, alignItems: "flex-start", zIndex: 1 };
@@ -66,8 +66,8 @@ export default function _default(block) {
     }
     const items2 = [tmp10, , ];
     const obj3 = { style: tmp.header };
-    const items3 = [callback(importDefault(dependencyMap[12]), { id: "isArray", cx: "replace" }), ];
-    const obj4 = { INTEGRATION_CREATE: null, ConstraintReasonCode: "flex-start", children: block.title };
+    const items3 = [callback(importDefault(dependencyMap[12]), { 0: null, 9223372036854775807: null }), ];
+    const obj4 = { children: block.title };
     items3[1] = callback(arg1(dependencyMap[13]).Text, obj4);
     obj3.children = items3;
     items2[1] = callback2(closure_5, obj3);

@@ -1,8 +1,8 @@
-// Module ID: 7578
-// Function ID: 60693
+// Module ID: 7582
+// Function ID: 60705
 // Dependencies: []
 
-// Module 7578
+// Module 7582
 const _module = require(dependencyMap[0]);
 if (_module.isFabric()) {
   let importDefaultResult = importDefault(dependencyMap[1]);

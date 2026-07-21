@@ -1,10 +1,10 @@
-// Module ID: 10537
-// Function ID: 82337
+// Module ID: 10543
+// Function ID: 82360
 // Name: useIsPrivateChannelWithEnabledActivities
 // Dependencies: []
 // Exports: default, isPrivateChannelWithEnabledActivities
 
-// Module 10537 (useIsPrivateChannelWithEnabledActivities)
+// Module 10543 (useIsPrivateChannelWithEnabledActivities)
 let closure_2 = importDefault(dependencyMap[0]);
 const result = arg1(dependencyMap[2]).fileFinishedImporting("modules/activities/utils/useIsPrivateChannelWithEnabledActivities.tsx");
 

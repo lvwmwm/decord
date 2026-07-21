@@ -1,10 +1,10 @@
-// Module ID: 6151
-// Function ID: 50100
+// Module ID: 6153
+// Function ID: 50143
 // Name: GameplayAbstractUI
 // Dependencies: []
 // Exports: GameplayAbstractUI
 
-// Module 6151 (GameplayAbstractUI)
+// Module 6153 (GameplayAbstractUI)
 const jsx = require(dependencyMap[0]).jsx;
 const _module = require(dependencyMap[3]);
 const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/GameplayAbstractUI.native.tsx");

@@ -1,10 +1,10 @@
-// Module ID: 5791
-// Function ID: 49463
+// Module ID: 5793
+// Function ID: 49506
 // Name: GuildBoostingMarketingOverview
 // Dependencies: []
 // Exports: default
 
-// Module 5791 (GuildBoostingMarketingOverview)
+// Module 5793 (GuildBoostingMarketingOverview)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 const ScrollView = arg1(dependencyMap[2]).ScrollView;

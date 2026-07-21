@@ -1,12 +1,11 @@
-// Module ID: 15337
-// Function ID: 116847
+// Module ID: 15344
+// Function ID: 116871
 // Name: setTransitioningModalCount
 // Dependencies: [0, 0, 0]
 // Exports: useIsProfileModalTransitioning, useReportProfileModalTransition
 
-// Module 15337 (setTransitioningModalCount)
-import closure_2 from "result";
-import result from "result";
+// Module 15344 (setTransitioningModalCount)
+import __exportStarResult1 from "__exportStarResult1";
 
 function setTransitioningModalCount(arg0) {
   const bound = Math.max(0, arg0);
@@ -17,7 +16,7 @@ function setTransitioningModalCount(arg0) {
 }
 let closure_3 = 0;
 const set = new Set();
-result = result.fileFinishedImporting("modules/user_profile/native/profileModalTransition.tsx");
+const result = require("__exportStarResult1").fileFinishedImporting("modules/user_profile/native/profileModalTransition.tsx");
 
 export const useReportProfileModalTransition = function useReportProfileModalTransition() {
   const navigation = arg1(dependencyMap[1]).useNavigation();

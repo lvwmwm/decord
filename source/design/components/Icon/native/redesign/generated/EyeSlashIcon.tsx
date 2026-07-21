@@ -1,15 +1,14 @@
-// Module ID: 9206
-// Function ID: 72052
+// Module ID: 9210
+// Function ID: 72064
 // Name: EyeSlashIcon
 // Dependencies: [0, 0, 0, 0, 0, 0]
 // Exports: EyeSlashIcon
 
-// Module 9206 (EyeSlashIcon)
-import "result";
-import { jsx } from "result";
-import result from "result";
+// Module 9210 (EyeSlashIcon)
+import "__exportStarResult1";
+import { jsx } from "__exportStarResult1";
 
-result = result.fileFinishedImporting("design/components/Icon/native/redesign/generated/EyeSlashIcon.tsx");
+const result = require("__exportStarResult1").fileFinishedImporting("design/components/Icon/native/redesign/generated/EyeSlashIcon.tsx");
 
 export const EyeSlashIcon = function EyeSlashIcon(color) {
   let INTERACTIVE_ICON_DEFAULT = color.color;

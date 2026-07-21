@@ -1,10 +1,10 @@
-// Module ID: 9785
-// Function ID: 76038
+// Module ID: 9790
+// Function ID: 76054
 // Name: balance
 // Dependencies: []
 // Exports: default
 
-// Module 9785 (balance)
+// Module 9790 (balance)
 let closure_3 = importAll(dependencyMap[0]);
 ({ View: closure_4, TouchableOpacity: closure_5 } = arg1(dependencyMap[1]));
 const tmp2 = arg1(dependencyMap[1]);
@@ -15,9 +15,9 @@ const tmp3 = arg1(dependencyMap[2]);
 const tmp4 = arg1(dependencyMap[4]);
 let closure_12 = arg1(dependencyMap[26]).createStyles((color) => {
   let obj = {};
-  obj = { 768299768: false, -547287506: false, -1272096430: false, -322148899: false, gap: importDefault(dependencyMap[13]).space.PX_12, paddingTop: importDefault(dependencyMap[13]).space.PX_12, paddingHorizontal: importDefault(dependencyMap[13]).space.PX_16 };
+  obj = { <string:3056472402>: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007291122927982797, <string:1390371299>: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000239793813425, <string:3720490417>: -0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000013449752576433297, <string:2968308837>: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001989371054, gap: importDefault(dependencyMap[13]).space.PX_12, paddingTop: importDefault(dependencyMap[13]).space.PX_12, paddingHorizontal: importDefault(dependencyMap[13]).space.PX_16 };
   obj.actions = obj;
-  obj = { gap: importDefault(dependencyMap[13]).space.PX_8 };
+  obj = { position: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000025755445318370157, top: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000033995391321045464, left: 139264.00004577637, opacity: -1899441423638862700000000000000000000000000000000000000000000000000000000000000000000000000000000000000, borderRadius: 13343562689782770000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, gap: importDefault(dependencyMap[13]).space.PX_8 };
   obj.balanceHeader = obj;
   const obj1 = { color, fontSize: 36 };
   let obj4 = arg1(dependencyMap[27]);
@@ -28,7 +28,7 @@ let closure_12 = arg1(dependencyMap[26]).createStyles((color) => {
   obj1.lineHeight = num;
   obj1.textAlignVertical = "center";
   obj.balanceText = obj1;
-  const obj2 = { ONE_DAY: 135218176, overflow: 132907011, viewConfig: -163577853, getCollectibleGoogleSkuId: 137428994, marginBottom: importDefault(dependencyMap[13]).space.PX_16 };
+  const obj2 = { "Bool(true)": true, "Bool(true)": true, "Bool(true)": true, "Bool(true)": true, marginBottom: importDefault(dependencyMap[13]).space.PX_16 };
   obj.content = obj2;
   obj.header = { paddingTop: importDefault(dependencyMap[13]).space.PX_12, paddingBottom: importDefault(dependencyMap[13]).space.PX_16 };
   obj4 = { backgroundColor: importDefault(dependencyMap[13]).colors.REDESIGN_BUTTON_TERTIARY_BACKGROUND, borderRadius: importDefault(dependencyMap[13]).radii.round };
@@ -37,9 +37,9 @@ let closure_12 = arg1(dependencyMap[26]).createStyles((color) => {
   obj.infoIconContainer = { position: "absolute", left: importDefault(dependencyMap[13]).space.PX_16, top: importDefault(dependencyMap[13]).space.PX_16, zIndex: 10 };
   const obj5 = { position: "absolute", left: importDefault(dependencyMap[13]).space.PX_16, top: importDefault(dependencyMap[13]).space.PX_16, zIndex: 10 };
   obj.promotionalBackground = { borderRadius: importDefault(dependencyMap[13]).radii.xl };
-  obj.promotionalBackgroundContainer = { gestureEnabled: true, gestureVelocityImpact: true };
-  obj.promotionalBannerAsset = { aze: 30271555, azj: 22092032 };
-  const obj7 = { aze: "JPEGInterchangeFormat", azj: "%SetIteratorPrototype%", gap: importDefault(dependencyMap[13]).space.PX_12, marginBottom: importDefault(dependencyMap[13]).space.PX_64 };
+  obj.promotionalBackgroundContainer = {};
+  obj.promotionalBannerAsset = {};
+  const obj7 = { bhk: "_writePromises", bic: "%Reflect.getPrototypeOf%", gap: importDefault(dependencyMap[13]).space.PX_12, marginBottom: importDefault(dependencyMap[13]).space.PX_64 };
   obj.promotionalBannerContainer = obj7;
   obj.promotionalBannerText = { color, fontFamily: constants.PRIMARY_BOLD };
   return obj;
@@ -184,7 +184,7 @@ export default function _default(balance) {
     items2[4] = tmp27Result;
     const obj16 = { style: tmp6.actions };
     ({ buttonText: obj24.text, onButtonPress: obj24.onPress } = primaryButtonConfig);
-    const items5 = [callback(arg1(dependencyMap[25]).Button, { numberOfLines: "r", expandable: "WATCHING", seeMoreLabel: "r" }), ];
+    const items5 = [callback(arg1(dependencyMap[25]).Button, { height: "RBTree", accessibilityRole: "currentEmbeddedApplication", hasDiversityParent: "SyntaxError" }), ];
     ({ buttonText: obj25.text, onButtonPress: obj25.onPress } = secondaryButtonConfig);
     items5[1] = callback(arg1(dependencyMap[25]).Button, {});
     obj16.children = items5;

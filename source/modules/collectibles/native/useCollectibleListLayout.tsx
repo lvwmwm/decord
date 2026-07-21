@@ -1,10 +1,10 @@
-// Module ID: 7854
-// Function ID: 62604
+// Module ID: 7858
+// Function ID: 62616
 // Name: useCollectibleListLayout
 // Dependencies: []
 // Exports: default
 
-// Module 7854 (useCollectibleListLayout)
+// Module 7858 (useCollectibleListLayout)
 let closure_0 = importDefault(dependencyMap[0]);
 ({ useCallback: closure_1, useState: closure_2 } = arg1(dependencyMap[1]));
 const tmp2 = arg1(dependencyMap[1]);

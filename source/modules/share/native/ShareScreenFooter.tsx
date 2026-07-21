@@ -1,10 +1,10 @@
-// Module ID: 12782
-// Function ID: 97972
+// Module ID: 12789
+// Function ID: 97995
 // Name: ShareScreenFooter
 // Dependencies: []
 // Exports: default
 
-// Module 12782 (ShareScreenFooter)
+// Module 12789 (ShareScreenFooter)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[6]).fileFinishedImporting("modules/share/native/ShareScreenFooter.tsx");

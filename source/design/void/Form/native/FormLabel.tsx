@@ -1,10 +1,10 @@
-// Module ID: 5438
-// Function ID: 46500
+// Module ID: 5440
+// Function ID: 46542
 // Name: FormLabel
 // Dependencies: []
 // Exports: default
 
-// Module 5438 (FormLabel)
+// Module 5440 (FormLabel)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[3]).fileFinishedImporting("design/void/Form/native/FormLabel.tsx");

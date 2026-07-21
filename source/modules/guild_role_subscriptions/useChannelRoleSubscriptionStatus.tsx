@@ -1,33 +1,27 @@
-// Module ID: 4569
-// Function ID: 40022
+// Module ID: 4571
+// Function ID: 40063
 // Name: getChannelRoleSubscriptionStatus
-// Dependencies: [3827, 44, 2, 27, 4588, 3769]
+// Dependencies: []
 // Exports: default
 
-// Module 4569 (getChannelRoleSubscriptionStatus)
-import closure_2 from "t";
-import invariant from "invariant";
-import keys from "keys";
-import { Permissions } from "get ActivityIndicator";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-
-function getChannelRoleSubscriptionStatus(id, keys, invariant, closure_6) {
-  let obj = keys;
-  let obj2 = invariant;
+// Module 4571 (getChannelRoleSubscriptionStatus)
+function getChannelRoleSubscriptionStatus(id, closure_4, closure_3, closure_6) {
+  let obj = closure_4;
+  let obj2 = closure_3;
   let tmp = closure_6;
-  if (keys === undefined) {
-    obj = invariant;
+  if (closure_4 === undefined) {
+    obj = closure_3;
   }
   if (obj2 === undefined) {
     obj2 = closure_2;
   }
   if (tmp === undefined) {
-    tmp = keys;
+    tmp = closure_4;
   }
   const channel = obj.getChannel(id);
   if (null != channel) {
     if (channel.isRoleSubscriptionTemplatePreviewChannel()) {
-      obj = { "Bool(true)": null, "Bool(true)": null };
+      obj = { 9223372036854775807: null, 597675913776: null };
     }
     return obj;
   }
@@ -47,13 +41,17 @@ function getChannelRoleSubscriptionStatus(id, keys, invariant, closure_6) {
   }
   obj = closure_6;
 }
+let closure_2 = importDefault(dependencyMap[0]);
+let closure_3 = importDefault(dependencyMap[1]);
+let closure_4 = importDefault(dependencyMap[2]);
+const Permissions = arg1(dependencyMap[3]).Permissions;
 let closure_6 = {};
-const result = _createForOfIteratorHelperLoose.fileFinishedImporting("modules/guild_role_subscriptions/useChannelRoleSubscriptionStatus.tsx");
+const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/guild_role_subscriptions/useChannelRoleSubscriptionStatus.tsx");
 
 export default function useChannelRoleSubscriptionStatus(arg0) {
   const arg1 = arg0;
-  const items = [invariant, closure_2, keys];
+  const items = [closure_3, closure_2, closure_4];
   const items1 = [arg0];
-  return arg1(dependencyMap[4]).useStateFromStoresObject(items, () => callback(arg0, invariant, closure_2, keys), items1);
+  return arg1(dependencyMap[4]).useStateFromStoresObject(items, () => callback(arg0, closure_3, closure_2, closure_4), items1);
 };
 export { getChannelRoleSubscriptionStatus };

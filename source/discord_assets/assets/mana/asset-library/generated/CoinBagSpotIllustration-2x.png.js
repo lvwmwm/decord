@@ -1,9 +1,9 @@
-// Module ID: 5954
-// Function ID: 49805
+// Module ID: 5956
+// Function ID: 49848
 // Name: metadata
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 5954 (metadata)
+// Module 5956 (metadata)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/CoinBagSpotIllustration-2x.png.js");
 

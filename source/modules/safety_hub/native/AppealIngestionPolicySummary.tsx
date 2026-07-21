@@ -1,10 +1,10 @@
-// Module ID: 11029
-// Function ID: 85894
+// Module ID: 11034
+// Function ID: 85915
 // Name: AppealIngestionPolicySummary
 // Dependencies: []
 // Exports: default
 
-// Module 11029 (AppealIngestionPolicySummary)
+// Module 11034 (AppealIngestionPolicySummary)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 ({ jsx: closure_3, jsxs: closure_4 } = arg1(dependencyMap[2]));

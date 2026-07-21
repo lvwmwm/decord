@@ -1,9 +1,9 @@
-// Module ID: 9784
-// Function ID: 76036
+// Module ID: 9789
+// Function ID: 76052
 // Name: BalanceWidgetPillButton
 // Dependencies: []
 
-// Module 9784 (BalanceWidgetPillButton)
+// Module 9789 (BalanceWidgetPillButton)
 class BalanceWidgetPillButton {
   constructor(arg0) {
     ({ balance, variant } = global);

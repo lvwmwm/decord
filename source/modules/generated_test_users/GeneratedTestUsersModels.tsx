@@ -1,9 +1,9 @@
-// Module ID: 13413
-// Function ID: 101872
+// Module ID: 13420
+// Function ID: 101895
 // Name: _isNativeReflectConstruct
 // Dependencies: [5, 6, 7, 1891, 1884, 2, 6]
 
-// Module 13413 (_isNativeReflectConstruct)
+// Module 13420 (_isNativeReflectConstruct)
 import asyncGeneratorStep from "asyncGeneratorStep";
 import closure_1 from "_classCallCheck";
 import _defineProperties from "_defineProperties";
@@ -60,4 +60,4 @@ export const GeneratedTestPoolRecord = (arg0) => {
   };
   const items1 = [obj];
   return callback(GeneratedTestPoolRecord, items, items1);
-}(require("keys"));
+}(require("result2"));

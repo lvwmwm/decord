@@ -1,7 +1,7 @@
 // Module ID: 1854
 // Function ID: 20432
 // Name: GiftIntentType
-// Dependencies: []
+// Dependencies: [284214097]
 
 // Module 1854 (GiftIntentType)
 const _module = require(dependencyMap[0]);

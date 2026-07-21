@@ -1,10 +1,10 @@
-// Module ID: 12215
-// Function ID: 93782
+// Module ID: 12222
+// Function ID: 93805
 // Name: SettingsUpsellsTableRow
 // Dependencies: []
 // Exports: default
 
-// Module 12215 (SettingsUpsellsTableRow)
+// Module 12222 (SettingsUpsellsTableRow)
 function SettingsUpsellsTableRow(arg0) {
   let description;
   let disabledTitle;

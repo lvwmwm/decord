@@ -1,10 +1,10 @@
-// Module ID: 6823
-// Function ID: 53892
+// Module ID: 6829
+// Function ID: 53938
 // Name: timeoutAttachmentsAndEmbedsForMessage
 // Dependencies: []
 // Exports: handleExplicitMediaScanTimeoutForMessage, hasMessageSnapshotsWithAttachmentsOrEmbeds, isObscuredMediaBelowConstraints, isPendingScanVersion, redactionSettingToRenderedString, shouldAgeVerifyForExplicitMedia, trackExplicitMediaRedactableMessagedLoaded, trackExplicitMediaScanComplete, trackMediaRedactionAction, trackRedactableMessageLoaded, trackScanTiming, trackScanningTimedOut, trackToggleMediaObscurityV2, useShouldAgeVerifyForReason
 
-// Module 6823 (timeoutAttachmentsAndEmbedsForMessage)
+// Module 6829 (timeoutAttachmentsAndEmbedsForMessage)
 function timeoutAttachmentsAndEmbedsForMessage(message) {
   let attachments;
   let embeds;
@@ -138,7 +138,7 @@ export const trackScanningTimedOut = function trackScanningTimedOut(arg0) {
         obj.attachment_ids_v2 = attachmentIds;
         obj.track(AnalyticEvents.EXPLICIT_MEDIA_SCAN_CLIENT_TIMED_OUT, obj);
         const obj3 = arg1(dependencyMap[8]);
-        obj = { name: arg1(dependencyMap[10]).MetricEvents.EXPLICIT_MEDIA_SCAN_CLIENT_TIMED_OUT, tags: [null] };
+        obj = { name: arg1(dependencyMap[10]).MetricEvents.EXPLICIT_MEDIA_SCAN_CLIENT_TIMED_OUT, tags: [] };
         importDefault(dependencyMap[9]).increment(obj);
         const obj4 = importDefault(dependencyMap[9]);
         const obj1 = { name: arg1(dependencyMap[10]).MetricEvents.EXPLICIT_MEDIA_SCAN_CLIENT_TIMED_OUT_DISTRIBUTION };

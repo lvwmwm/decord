@@ -1,10 +1,10 @@
-// Module ID: 11386
-// Function ID: 88542
+// Module ID: 11393
+// Function ID: 88566
 // Name: YoutubeNeutralIcon
 // Dependencies: []
 // Exports: YoutubeNeutralIcon
 
-// Module 11386 (YoutubeNeutralIcon)
+// Module 11393 (YoutubeNeutralIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/YoutubeNeutralIcon.tsx");

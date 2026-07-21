@@ -1,10 +1,10 @@
-// Module ID: 9546
-// Function ID: 74415
+// Module ID: 9551
+// Function ID: 74432
 // Name: useBackspaceHandler
 // Dependencies: []
 // Exports: useBackspaceHandler
 
-// Module 9546 (useBackspaceHandler)
+// Module 9551 (useBackspaceHandler)
 let closure_0 = importAll(dependencyMap[0]);
 let closure_1 = /((\ud83c[\udde6-\uddff]){2}|([#*0-9]\u20e3)|(\u00a9|\u00ae|[\u2000-\u3300]|[\ud83c-\ud83e][\ud000-\udfff])((\ud83c[\udffb-\udfff])?(\ud83e[\uddb0-\uddb3])?(\ufe0f?\u200d([\u2000-\u3300]|[\ud83c-\ud83e][\ud000-\udfff])\ufe0f?)?)*)/g;
 const result = arg1(dependencyMap[1]).fileFinishedImporting("modules/forums/native/composer/hooks/useBackspaceHandler.tsx");

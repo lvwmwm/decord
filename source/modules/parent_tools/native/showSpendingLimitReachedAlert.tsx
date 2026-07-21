@@ -1,10 +1,10 @@
-// Module ID: 7112
-// Function ID: 57152
+// Module ID: 7116
+// Function ID: 57163
 // Name: isSpendingLimitError
 // Dependencies: []
 // Exports: isSpendingLimitError, showSpendingLimitReachedAlert
 
-// Module 7112 (isSpendingLimitError)
+// Module 7116 (isSpendingLimitError)
 const _module = require(dependencyMap[7]);
 const result = _module.fileFinishedImporting("modules/parent_tools/native/showSpendingLimitReachedAlert.tsx");
 

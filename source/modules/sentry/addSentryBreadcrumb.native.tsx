@@ -10,7 +10,7 @@ const result = _module.fileFinishedImporting("modules/sentry/addSentryBreadcrumb
 
 export default function addSentryBreadcrumb(arg0) {
   let obj = importAll(dependencyMap[0]);
-  obj = { y: true, isArray: true };
+  obj = { -9223372036854775808: true, 0: true };
   ({ category: obj2.category, message: obj2.message, data: obj2.data } = arg0);
   obj.timestamp = Date.now();
   obj.addBreadcrumb(obj);

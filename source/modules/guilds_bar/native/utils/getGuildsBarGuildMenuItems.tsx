@@ -1,10 +1,10 @@
-// Module ID: 14681
-// Function ID: 110762
+// Module ID: 14688
+// Function ID: 110786
 // Name: getGuildsBarGuildMenuItems
 // Dependencies: []
 // Exports: default
 
-// Module 14681 (getGuildsBarGuildMenuItems)
+// Module 14688 (getGuildsBarGuildMenuItems)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 let closure_5 = importDefault(dependencyMap[2]);

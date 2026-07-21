@@ -29,13 +29,7 @@ function declension(one) {
   }
   return str.replace("{{count}}", String(arg1));
 }
-let obj = { "Null": false, "Null": false, "Null": false, one: {} };
-obj = { "Null": null, "Null": null, "Null": null, one: {} };
-obj = { "Null": "a", "Null": "isArray", "Null": "ct", one: {} };
-const obj1 = { "Null": null, "Null": null, "Null": null, one: {} };
-const obj2 = { "Null": true, "Null": null, "Null": null, one: {} };
-const obj3 = { "Null": "AM", "Null": "PM", "Null": "o p\u00F3\u0142nocy", one: {} };
-let closure_0 = { lessThanXSeconds: { one: {} }, xSeconds: obj, halfAMinute: { "Null": false, "Null": false, "Null": false }, lessThanXMinutes: obj, xMinutes: obj, aboutXHours: obj1, xHours: obj2, xDays: obj3, aboutXWeeks: { "Null": true, "Null": true, "Null": true }, xWeeks: { "Null": -0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000027375746450850166, "Null": 57301460672757380000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, "Null": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000194027354219961 }, aboutXMonths: { "Null": null, "Null": null, "Null": 229016080747272750000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 }, xMonths: { "Null": null, "Null": null, "Null": null }, aboutXYears: { "Null": "cerca de 1 m\u00EAs", "Null": "cerca de {{count}} meses", "Null": "1 m\u00EAs" }, xYears: {}, overXYears: {}, almostXYears: {} };
+let closure_0 = { lessThanXSeconds: { one: { "Null": false, "Null": false, "Null": false } }, xSeconds: { one: { "Null": "SET_VOICE_CHANNEL_STATUS", "Null": "%Uint8ArrayPrototype%", "Null": "tidaWebformEnabled" } }, halfAMinute: {}, lessThanXMinutes: { one: { "Null": "STATUS_POSITIVE_TEXT", "Null": "profileEffectLayer", "Null": "formColor" } }, xMinutes: { one: { "Null": true, "Null": true, "Null": true } }, aboutXHours: { one: { "Null": true, "Null": null, "Null": null } }, xHours: { one: { "Null": "a", "Null": "p", "Null": "o p\u00F3\u0142n." } }, xDays: { one: {} }, aboutXWeeks: {}, xWeeks: {}, aboutXMonths: {}, xMonths: {}, aboutXYears: {}, xYears: {}, overXYears: {}, almostXYears: {} };
 
 export default function formatDistance(arg0, arg1, addSuffix) {
   if (null != addSuffix) {

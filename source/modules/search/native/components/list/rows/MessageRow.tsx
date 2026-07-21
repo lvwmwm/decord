@@ -1,9 +1,9 @@
-// Module ID: 15229
-// Function ID: 115000
+// Module ID: 15236
+// Function ID: 115024
 // Name: GuildChannelMessageRowHeader
 // Dependencies: []
 
-// Module 15229 (GuildChannelMessageRowHeader)
+// Module 15236 (GuildChannelMessageRowHeader)
 let Platform;
 function GuildChannelMessageRowHeader(channel) {
   let isFavorite;
@@ -28,7 +28,7 @@ function GuildChannelMessageRowHeader(channel) {
   obj = { style: tmp.header };
   obj1 = { source: channelIcon, size: arg1(dependencyMap[14]).Icon.Sizes.REFRESH_SMALL_16, style: tmp.channelIcon };
   const items1 = [callback(arg1(dependencyMap[14]).Icon, obj1), , , , ];
-  const obj2 = { CHANNEL_HIGHLIGHT: null, guild_template_description: "aadd4fcf699494399b151b52e5493160", borderWidth: "ic_community_guild_badge_premium_24px", children: importDefault(dependencyMap[13])(channel) };
+  const obj2 = { encodingConfig: "Array", showRemove: "isArray", PREMIUM_CUSTOM_NOTIFICATION_SOUND_SETTINGS_UPSELL: "Text", children: importDefault(dependencyMap[13])(channel) };
   items1[1] = callback(arg1(dependencyMap[15]).Text, obj2);
   if (muted) {
     const obj3 = { source: importDefault(dependencyMap[16]), size: arg1(dependencyMap[14]).Icon.Sizes.EXTRA_SMALL, style: tmp.channelStatus };
@@ -97,7 +97,7 @@ function PrivateChannelMessageRowLabel(message) {
   items2[2] = isSystemDMResult;
   obj.children = items2;
   const items3 = [closure_12(closure_4, obj), , , ];
-  const obj3 = { 9223372036854775807: "r", 9223372036854775807: "iptc", 9223372036854775807: "SETTINGS_APP_ICONS", style: tmp.timestamp, accessibilityLabel: timestampAccessibilityLabel, children: timestamp };
+  const obj3 = { -9223372036854775808: true, 0: "friendRequestsViewAll", 0: "custom", style: tmp.timestamp, accessibilityLabel: timestampAccessibilityLabel, children: timestamp };
   items3[1] = callback(arg1(dependencyMap[15]).Text, obj3);
   let tmp18 = null;
   if (message.hasFlag(MessageFlags.SUPPRESS_NOTIFICATIONS)) {
@@ -149,7 +149,7 @@ function GuildChannelMessageRowLabel(arg0) {
       tmp19 = callback(arg1(dependencyMap[14]).RoleDot, obj2);
     }
     const items1 = [tmp19, ];
-    obj3 = { 9223372036854775807: "r", 9223372036854775807: "timings", 9223372036854775807: "r", style: {} };
+    obj3 = { style: {} };
     let tmp27;
     if (isRoleStyleAndRoleColorsEligibleForERC) {
       tmp27 = processColorStringsArray;
@@ -188,13 +188,13 @@ const MessageFlags = arg1(dependencyMap[7]).MessageFlags;
 const tmp2 = arg1(dependencyMap[1]);
 ({ jsx: closure_11, jsxs: closure_12 } = arg1(dependencyMap[8]));
 const tmp3 = arg1(dependencyMap[8]);
-let obj = { channelIcon: { "Bool(false)": null, "Bool(false)": null } };
-obj = { value: null, borderRadius: null, tintColor: importDefault(dependencyMap[10]).colors.INTERACTIVE_TEXT_DEFAULT };
+let obj = { channelIcon: { marginBottom: null, width: null } };
+obj = { ExistingUserAgeGateScreens: null, POPULARITY: null, tintColor: importDefault(dependencyMap[10]).colors.INTERACTIVE_TEXT_DEFAULT };
 obj.channelStatus = obj;
-obj.labelContainer = { bannerAdjustment: "showContactSyncCTA", replayOnNavigationFocus: "showContactSyncCTA", invalidProcessedColor: "custom", InfoDictionaryManager: "viewAll" };
-obj.authorRow = { bannerTextContainer: true, ignoreNotificationSetting: true, alignContent: true };
+obj.labelContainer = { alignItems: "custom", justifyContent: "showContactSyncCTA", skuId: "showContactSyncCTA", bannerAdjustment: "custom" };
+obj.authorRow = {};
 obj.timestamp = { marginLeft: 8 };
-obj.header = {};
+obj.header = { PREMIUM_TENURE_3_MONTH: null, parserState: null, onFinish: null };
 obj.body = { alignItems: "flex-start" };
 obj.pollBadge = { marginLeft: 8 };
 obj.suppressNotificationsIcon = { marginLeft: 4 };

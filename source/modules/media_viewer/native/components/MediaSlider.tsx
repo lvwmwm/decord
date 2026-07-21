@@ -1,16 +1,16 @@
-// Module ID: 8273
-// Function ID: 65333
+// Module ID: 8277
+// Function ID: 65345
 // Name: num2
 // Dependencies: []
 // Exports: default
 
-// Module 8273 (num2)
+// Module 8277 (num2)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 const View = arg1(dependencyMap[2]).View;
 ({ jsx: closure_6, jsxs: closure_7 } = arg1(dependencyMap[3]));
 let obj = arg1(dependencyMap[4]);
-obj = { container: {}, icon: { marginRight: 16 } };
+obj = { container: { <string:76581376>: false, <string:4018557184>: false, <string:76093250>: false, <string:76092672>: false, <string:1129075712>: false }, icon: { marginRight: 16 } };
 let num = 16;
 obj = {};
 const tmp2 = arg1(dependencyMap[3]);
@@ -27,10 +27,10 @@ if (obj6.isAndroid()) {
 }
 obj1.marginHorizontal = num;
 obj.sliderContainer = obj1;
-obj.progressSliderContainer = { 1453996900: null, 626807139: null, 1375456354: null, -664626659: null };
+obj.progressSliderContainer = { panGestureGenerator: null, ae: null, getCountryCode: null, stageInfoTopic: null };
 obj.timelineBackgroundSlider = {};
 obj.downloadProgressSlider = {};
-obj.playbackSlider = { "Bool(true)": "<string:37036800>", "Bool(true)": "<string:171659520>", "Bool(true)": "<string:36121153>" };
+obj.playbackSlider = {};
 let closure_8 = obj.createStyles(obj);
 const obj6 = arg1(dependencyMap[5]);
 const result = arg1(dependencyMap[18]).fileFinishedImporting("modules/media_viewer/native/components/MediaSlider.tsx");
@@ -114,15 +114,15 @@ export default function MediaSlider(controls) {
     }
     controls.pause(!paused);
   };
-  obj.hitSlop = { position: "parent", right: "Array", top: "isArray", display: "accessibilityRole" };
+  obj.hitSlop = { label: "Array", maxLength: "gradientTop", backgroundColor: "EXPERIMENT_GUILD_EXPOSURE_SUPPRESSED", padding: "showReferralNotificationDot" };
   if (paused) {
     let PauseIcon = tmp20(tmp21[12]).PlayIcon;
   } else {
     PauseIcon = tmp20(tmp21[13]).PauseIcon;
   }
-  obj.children = callback2(PauseIcon, {});
+  obj.children = callback2(PauseIcon, { flex: "null", flexGrow: null });
   const items4 = [callback2(arg1(dependencyMap[10]).PressableOpacity, obj), , , ];
-  const obj1 = { "Bool(true)": "guild_id", "Bool(true)": "guildId", "Bool(true)": "guildId", "Bool(true)": "guildId", "Bool(true)": "guildId" };
+  const obj1 = { "Bool(false)": "guild_id", "Bool(false)": "guildId", "Bool(false)": "guildId", "Bool(false)": "guildId", "Bool(false)": "guildId" };
   const items5 = [tmp.centerText, { width: tmp8[0] }];
   obj1.style = items5;
   obj1.children = timeFormat;

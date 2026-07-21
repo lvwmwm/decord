@@ -1,16 +1,16 @@
-// Module ID: 15721
-// Function ID: 120196
+// Module ID: 15728
+// Function ID: 120220
 // Name: AnimatedButtonWrapper
 // Dependencies: []
 // Exports: default
 
-// Module 15721 (AnimatedButtonWrapper)
+// Module 15728 (AnimatedButtonWrapper)
 let closure_3 = importAll(dependencyMap[0]);
 const MODE_CHANGE_PHYSICS = arg1(dependencyMap[2]).MODE_CHANGE_PHYSICS;
 const jsx = arg1(dependencyMap[3]).jsx;
 let obj = arg1(dependencyMap[4]);
 obj = {};
-obj = { borderRadius: importDefault(dependencyMap[5]).modules.button.BORDER_RADIUS_LG };
+obj = { "Null": null, "Null": null, borderRadius: importDefault(dependencyMap[5]).modules.button.BORDER_RADIUS_LG };
 obj.pressableWrapper = obj;
 let closure_6 = obj.createStyles(obj);
 let closure_7 = importDefault(dependencyMap[6]).createAnimatedComponent(arg1(dependencyMap[1]).Pressable);

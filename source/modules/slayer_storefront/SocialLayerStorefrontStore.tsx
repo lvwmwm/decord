@@ -1,9 +1,9 @@
-// Module ID: 5607
-// Function ID: 47663
+// Module ID: 5609
+// Function ID: 47705
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
-// Module 5607 (_isNativeReflectConstruct)
+// Module 5609 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -367,7 +367,7 @@ tmp5 = new tmp5(importDefault(dependencyMap[8]), {
     } else {
       const obj = {};
       const merged = Object.assign(closure_17);
-      obj[tmp14] = {};
+      obj[tmp14] = { LEGACY_LAUNCH_CLIENT_VALIDATION_FAILED: true, lu: true };
       closure_17 = obj;
       delete r1[r2];
     }
@@ -566,7 +566,7 @@ tmp5 = new tmp5(importDefault(dependencyMap[8]), {
       set.delete(interactionId);
       const obj = {};
       const merged = Object.assign(closure_17);
-      obj[skuId] = {};
+      obj[skuId] = { LEGACY_LAUNCH_CLIENT_VALIDATION_FAILED: true, lu: true };
       closure_17 = obj;
     } else {
       closure_18[interactionId] = skuId;
@@ -666,7 +666,7 @@ tmp5 = new tmp5(importDefault(dependencyMap[8]), {
   SOCIAL_LAYER_STOREFRONT_BY_ID_LOAD_FAILURE: function handleSocialLayerStorefrontByIdLoadFailure(storefrontId) {
     let obj = {};
     const merged = Object.assign(closure_12);
-    obj = { y: -1708064764, isArray: -1717986919, fetchedAt: Date.now() };
+    obj = { "Null": "LongType", "Null": "fr", fetchedAt: Date.now() };
     obj[storefrontId.storefrontId] = obj;
     closure_12 = obj;
   },

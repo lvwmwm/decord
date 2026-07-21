@@ -1,9 +1,9 @@
-// Module ID: 4274
-// Function ID: 37415
+// Module ID: 4278
+// Function ID: 37463
 // Name: BaseConnectionEvent
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 4274 (BaseConnectionEvent)
+// Module 4278 (BaseConnectionEvent)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_common/js/packages/media-engine/BaseConnectionEvent.tsx");
 

@@ -1,11 +1,11 @@
-// Module ID: 15666
-// Function ID: 119709
+// Module ID: 15673
+// Function ID: 119733
 // Name: useConsoleVoiceUpsellStore
 // Dependencies: []
 // Exports: setShowConsoleVoiceSparkles, setVoiceUpsellDismissed
 
-// Module 15666 (useConsoleVoiceUpsellStore)
-let closure_2 = Object.freeze({});
+// Module 15673 (useConsoleVoiceUpsellStore)
+let closure_2 = Object.freeze({ GameServerProviderType: null, UNKNOWN_GIFT_CODE: null });
 const _module = require(dependencyMap[0]);
 const obj = _module.create(() => closure_2);
 const _module1 = require(dependencyMap[2]);

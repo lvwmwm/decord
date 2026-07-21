@@ -1,13 +1,13 @@
-// Module ID: 13642
-// Function ID: 103382
+// Module ID: 13649
+// Function ID: 103405
 // Name: FamilyCenterLoading
 // Dependencies: []
 // Exports: default
 
-// Module 13642 (FamilyCenterLoading)
+// Module 13649 (FamilyCenterLoading)
 let FamilyCenterSubPages;
 function FamilyCenterLoading() {
-  const obj = { style: callback3().loadingContainer, children: callback2(closure_6, {}) };
+  const obj = { hideTitle: null, initialRouteName: null, style: callback3().loadingContainer, children: callback2(closure_6, {}) };
   return callback2(arg1(dependencyMap[10]).Stack, obj);
 }
 function FamilyCenter() {
@@ -132,7 +132,7 @@ const tmp3 = arg1(dependencyMap[8]);
 const items = [, ];
 ({ ACTIVITY: arr[0], REQUESTS: arr[1] } = FamilyCenterSubPages);
 let obj = arg1(dependencyMap[11]);
-obj = { container: {} };
+obj = { container: { marginVertical: 10388343592192675000000000000000000, marginHorizontal: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003000217279425302 } };
 obj = { paddingTop: importDefault(dependencyMap[12]).space.PX_16, paddingHorizontal: importDefault(dependencyMap[12]).space.PX_16 };
 obj.segmentedControlContainer = obj;
 obj.loadingContainer = { minHeight: "100%" };

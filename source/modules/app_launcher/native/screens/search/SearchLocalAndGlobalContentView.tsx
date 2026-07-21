@@ -1,9 +1,9 @@
-// Module ID: 11206
-// Function ID: 87247
+// Module ID: 11212
+// Function ID: 87270
 // Name: getApplicationIdFromApplicationItem
 // Dependencies: []
 
-// Module 11206 (getApplicationIdFromApplicationItem)
+// Module 11212 (getApplicationIdFromApplicationItem)
 function getApplicationIdFromApplicationItem(type) {
   let id;
   if (type.type !== obj.PLACERHOLDER) {
@@ -138,7 +138,7 @@ let obj5 = arg1(dependencyMap[7]);
 const obj1 = { sectionHeader: { marginBottom: 8 } };
 const tmp3 = arg1(dependencyMap[6]);
 obj1.list = { paddingHorizontal: DEFAULT_CONTENT_PADDING, backgroundColor: importDefault(dependencyMap[8]).colors.MOBILE_KEYBOARD_PANEL_BACKGROUND };
-const obj3 = { aze: "boolean", azj: "string", borderRadius: importDefault(dependencyMap[8]).radii.sm, backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_MOD_SUBTLE };
+const obj3 = { bhk: "boolean", bic: "string", borderRadius: importDefault(dependencyMap[8]).radii.sm, backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_MOD_SUBTLE };
 obj1.loadingCommandAppIcon = obj3;
 const obj2 = { paddingHorizontal: DEFAULT_CONTENT_PADDING, backgroundColor: importDefault(dependencyMap[8]).colors.MOBILE_KEYBOARD_PANEL_BACKGROUND };
 obj1.loadingTextPlaceholder = { backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_MOD_SUBTLE, borderRadius: importDefault(dependencyMap[8]).radii.lg };
@@ -378,7 +378,7 @@ const forwardRefResult = importAllResult.forwardRef((context) => {
       }
       obj6.accessibilityLabel = stringResult;
       obj6.onPress = tmp12.toggleCommandsExpanded;
-      let obj7 = { "Bool(false)": "tertiary", "Bool(false)": "sm" };
+      let obj7 = {};
       const intl2 = arg1(dependencyMap[24]).intl;
       const string2 = intl2.string;
       let nPGLFQ = arg1(dependencyMap[24]).t;

@@ -1,10 +1,10 @@
-// Module ID: 10358
-// Function ID: 79939
+// Module ID: 10364
+// Function ID: 79962
 // Name: ChannelPickerActionSheet
 // Dependencies: []
 // Exports: default
 
-// Module 10358 (ChannelPickerActionSheet)
+// Module 10364 (ChannelPickerActionSheet)
 importAll(dependencyMap[0]);
 let closure_3 = importDefault(dependencyMap[1]);
 let closure_4 = importDefault(dependencyMap[2]);

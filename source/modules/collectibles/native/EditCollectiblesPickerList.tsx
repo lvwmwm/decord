@@ -1,16 +1,16 @@
-// Module ID: 7867
-// Function ID: 62651
+// Module ID: 7871
+// Function ID: 62663
 // Name: EditCollectiblesPickerList
 // Dependencies: []
 // Exports: EditCollectiblesPickerList
 
-// Module 7867 (EditCollectiblesPickerList)
+// Module 7871 (EditCollectiblesPickerList)
 let closure_2 = importDefault(dependencyMap[0]);
 const importAllResult = importAll(dependencyMap[1]);
 ({ ActivityIndicator: closure_4, View: closure_5 } = arg1(dependencyMap[2]));
 const jsx = arg1(dependencyMap[3]).jsx;
 const tmp2 = arg1(dependencyMap[2]);
-let obj = { list: { alignItems: null, position: null }, listContent: { paddingBottom: 88 }, loadingContainer: {} };
+let obj = { list: { <string:2823905889>: false, <string:2001293998>: false }, listContent: { paddingBottom: 88 }, loadingContainer: {} };
 obj = { paddingHorizontal: arg1(dependencyMap[5]).GUTTER_SIZE };
 obj.header = obj;
 let closure_7 = arg1(dependencyMap[4]).createStyles(obj);

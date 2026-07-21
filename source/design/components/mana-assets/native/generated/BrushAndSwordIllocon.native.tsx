@@ -1,14 +1,12 @@
-// Module ID: 5907
-// Function ID: 49734
+// Module ID: 5909
+// Function ID: 49777
 // Name: BrushAndSwordIllocon
-// Dependencies: [4294967295, 0, 4294967295, 0]
+// Dependencies: [4294967295, 0, 0, 0]
 // Exports: BrushAndSwordIllocon
 
-// Module 5907 (BrushAndSwordIllocon)
-import result from "result";
-
+// Module 5909 (BrushAndSwordIllocon)
 const jsx = require(dependencyMap[0]).jsx;
-result = result.fileFinishedImporting("design/components/mana-assets/native/generated/BrushAndSwordIllocon.native.tsx");
+const result = require("__exportStarResult1").fileFinishedImporting("design/components/mana-assets/native/generated/BrushAndSwordIllocon.native.tsx");
 
 export const BrushAndSwordIllocon = function BrushAndSwordIllocon(size) {
   let accessibilityLabel;

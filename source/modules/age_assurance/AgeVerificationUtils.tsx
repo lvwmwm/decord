@@ -1,10 +1,10 @@
-// Module ID: 4339
-// Function ID: 38320
+// Module ID: 4343
+// Function ID: 38368
 // Name: isReactiveCheckEnabled
 // Dependencies: []
 // Exports: ageGateSourceHasLightboxBackdrop, getAgeVerificationGetStartedSubtitle, getAgeVerificationGetStartedTitle, isAgeVerificationMessageWithConnectToTeenCta, isAgeVerificationMessageWithRetryCta, isAssignedByDiscord, isFullscreenAgeVerificationEntryPoint, isVerifiedAdult, isVerifiedTeen, maybePerformReactiveCheck, shouldShowTiggerPawtect, useInitiateAgeVerification, useIsExplicitlyVerifiedAdult, useIsVerifiedAdult, useIsVerifiedTeen, useMaybePerformReactiveCheckForSource, useShouldShowTiggerPawtect, useShowAssignedAgeGroupSettings, useWatchAgeVerificationStatusChange
 
-// Module 4339 (isReactiveCheckEnabled)
+// Module 4343 (isReactiveCheckEnabled)
 let AgeGateSource;
 function isReactiveCheckEnabled() {
   return featureAgeGated.isFeatureAgeGated(arg1(dependencyMap[14]).AgeGatedFeature.REACTIVE_CHECK);

@@ -1,10 +1,10 @@
-// Module ID: 12269
-// Function ID: 94096
+// Module ID: 12276
+// Function ID: 94119
 // Name: useScheduledForcedUpdate
 // Dependencies: []
 // Exports: default
 
-// Module 12269 (useScheduledForcedUpdate)
+// Module 12276 (useScheduledForcedUpdate)
 let closure_2 = importAll(dependencyMap[0]);
 const result = arg1(dependencyMap[2]).fileFinishedImporting("modules/premium/hooks/useScheduledForcedUpdate.tsx");
 

@@ -1,10 +1,10 @@
-// Module ID: 5346
-// Function ID: 45704
+// Module ID: 5348
+// Function ID: 45745
 // Name: isFavoritesGuildId
-// Dependencies: [3472883719, 3489660948]
+// Dependencies: [3506438151, 3523215380]
 // Exports: canFavoriteChannelType, getFavoritesAwareGuildName
 
-// Module 5346 (isFavoritesGuildId)
+// Module 5348 (isFavoritesGuildId)
 function isFavoritesGuildId(guildId) {
   let tmp = guildId === FAVORITES_RAW_GUILD_ID;
   if (!tmp) {

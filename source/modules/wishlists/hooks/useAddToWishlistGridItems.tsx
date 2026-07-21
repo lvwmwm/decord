@@ -1,10 +1,10 @@
-// Module ID: 12005
-// Function ID: 92802
+// Module ID: 12012
+// Function ID: 92825
 // Name: useAddToWishlistGridItems
 // Dependencies: []
 // Exports: useAddToWishlistGridItems
 
-// Module 12005 (useAddToWishlistGridItems)
+// Module 12012 (useAddToWishlistGridItems)
 let closure_2 = importAll(dependencyMap[0]);
 const PremiumSubscriptionSKUs = arg1(dependencyMap[1]).PremiumSubscriptionSKUs;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/wishlists/hooks/useAddToWishlistGridItems.tsx");

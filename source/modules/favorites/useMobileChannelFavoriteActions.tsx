@@ -1,10 +1,10 @@
-// Module ID: 10328
-// Function ID: 79744
+// Module ID: 10334
+// Function ID: 79763
 // Name: useMobileChannelFavoriteActions
 // Dependencies: []
 // Exports: default
 
-// Module 10328 (useMobileChannelFavoriteActions)
+// Module 10334 (useMobileChannelFavoriteActions)
 let closure_2 = importDefault(dependencyMap[0]);
 let closure_3 = importDefault(dependencyMap[1]);
 let closure_4 = importDefault(dependencyMap[2]);

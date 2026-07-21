@@ -1,10 +1,10 @@
-// Module ID: 11267
-// Function ID: 87700
+// Module ID: 11273
+// Function ID: 87723
 // Name: LayoutAnimation
 // Dependencies: []
 // Exports: useOptionEnteringAnimation
 
-// Module 11267 (LayoutAnimation)
+// Module 11273 (LayoutAnimation)
 let closure_2 = importDefault(dependencyMap[0]);
 let closure_3 = importAll(dependencyMap[1]);
 let closure_4 = { code: "function LayoutAnimation_useOptionAnimationsTsx1(values){const{withTiming,OPTION_ENTRY_EXIT_LAYOUT_SHIFT_DURATION}=this.__closure;const animations={originY:withTiming(values.targetOriginY,{duration:OPTION_ENTRY_EXIT_LAYOUT_SHIFT_DURATION})};const initialValues={originY:values.currentOriginY};return{initialValues:initialValues,animations:animations};}" };

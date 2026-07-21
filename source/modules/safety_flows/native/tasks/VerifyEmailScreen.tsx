@@ -1,10 +1,10 @@
-// Module ID: 16427
-// Function ID: 126913
+// Module ID: 16434
+// Function ID: 126947
 // Name: onTaskComplete
 // Dependencies: []
 // Exports: default
 
-// Module 16427 (onTaskComplete)
+// Module 16434 (onTaskComplete)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 let closure_5 = importAll(dependencyMap[2]);
@@ -48,12 +48,12 @@ export default function _default() {
   obj.onAction = callback;
   obj.submitting = tmp4[0];
   obj = { spacing: importDefault(dependencyMap[12]).space.PX_16 };
-  obj1 = { INTEGRATION_CREATE: true, ConstraintReasonCode: true };
+  obj1 = {};
   const intl3 = arg1(dependencyMap[8]).intl;
   obj1.children = intl3.string(importDefault(dependencyMap[9]).aveKoG);
   const items3 = [callback(arg1(dependencyMap[13]).Text, obj1), ];
   const obj2 = { spacing: importDefault(dependencyMap[12]).space.PX_8 };
-  const obj3 = { E: 49412096, E: 49412096, E: 49412096 };
+  const obj3 = { "Null": 49419008, "Null": 49421056, "Null": 49421056 };
   const intl4 = arg1(dependencyMap[8]).intl;
   obj3.placeholder = intl4.string(importDefault(dependencyMap[9]).d9Ykjr);
   obj3.value = first;

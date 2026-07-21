@@ -1,7 +1,7 @@
 // Module ID: 1905
 // Function ID: 21368
 // Name: CHANGELOG_MODAL_KEY
-// Dependencies: []
+// Dependencies: [284214097]
 
 // Module 1905 (CHANGELOG_MODAL_KEY)
 const _module = require(dependencyMap[0]);

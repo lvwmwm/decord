@@ -1,10 +1,10 @@
-// Module ID: 10294
-// Function ID: 79483
+// Module ID: 10300
+// Function ID: 79502
 // Name: useProgressAnimation
 // Dependencies: []
 // Exports: default
 
-// Module 10294 (useProgressAnimation)
+// Module 10300 (useProgressAnimation)
 function useProgressAnimation(percent) {
   const arg1 = percent;
   const tmp = callback(React.useState(0), 2);
@@ -88,7 +88,7 @@ obj.progressBarWarning = { backgroundColor: importDefault(dependencyMap[5]).unsa
 const obj3 = { backgroundColor: importDefault(dependencyMap[5]).unsafe_rawColors.YELLOW_300 };
 obj.progressTrack = { borderRadius: importDefault(dependencyMap[5]).radii.xs, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_MOD_SUBTLE };
 obj.progressContainerTop = {};
-obj.progressContainerBottom = { accessibilityRole: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004576711595126797, items: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000045923642193281165, color: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000019469396264672527 };
+obj.progressContainerBottom = { "Null": 124911620, "Null": 218103808, "Null": 16777216 };
 let closure_7 = obj.createStyles(obj);
 let closure_8 = { code: "function NotificationProgressTsx1(){const{percent,width}=this.__closure;const percentRemaining=(typeof percent==='number'?percent:percent.get())/100;return{transform:[{translateX:-width+width*percentRemaining}]};}" };
 const obj4 = { borderRadius: importDefault(dependencyMap[5]).radii.xs, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_MOD_SUBTLE };

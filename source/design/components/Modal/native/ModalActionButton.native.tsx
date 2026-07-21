@@ -1,10 +1,10 @@
-// Module ID: 9892
-// Function ID: 76557
+// Module ID: 9897
+// Function ID: 76573
 // Name: ModalActionButton
 // Dependencies: []
 // Exports: ModalActionButton
 
-// Module 9892 (ModalActionButton)
+// Module 9897 (ModalActionButton)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 ({ jsx: closure_3, Fragment: closure_4, jsxs: closure_5 } = arg1(dependencyMap[2]));

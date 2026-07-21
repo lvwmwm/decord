@@ -1,10 +1,10 @@
-// Module ID: 7634
-// Function ID: 61142
+// Module ID: 7638
+// Function ID: 61154
 // Name: transformReactions
 // Dependencies: []
 // Exports: default
 
-// Module 7634 (transformReactions)
+// Module 7638 (transformReactions)
 const _module = require(dependencyMap[7]);
 const result = _module.fileFinishedImporting("modules/messages/native/renderer/transformReactions.tsx");
 

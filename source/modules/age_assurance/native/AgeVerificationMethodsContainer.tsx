@@ -1,33 +1,32 @@
-// Module ID: 7563
-// Function ID: 60529
+// Module ID: 7567
+// Function ID: 60541
 // Name: AgeVerificationMethodsContainer
-// Dependencies: [0, 0, 0, 0, 0, 0]
+// Dependencies: []
 // Exports: AgeVerificationMethodsContainer
 
-// Module 7563 (AgeVerificationMethodsContainer)
-import closure_3 from "result";
-import { VerificationMethod } from "result";
-import { SafetyHubLinks } from "result";
-import result from "result";
-import result from "result";
-
-({ jsx: closure_6, jsxs: closure_7 } = result);
-result = {};
-result = { marginTop: require("result").space.PX_8 };
-result.content = result;
-result.errorContainer = { marginTop: require("result").space.PX_24, marginBottom: require("result").space.PX_24 };
-const obj1 = { marginTop: require("result").space.PX_24, marginBottom: require("result").space.PX_24 };
-result.noMethodsText = { paddingHorizontal: require("result").space.PX_40, textAlign: "center" };
-result.buttonGroup = { paddingVertical: 0 };
-result = result.createStyles(result);
-const obj2 = { paddingHorizontal: require("result").space.PX_40, textAlign: "center" };
-result = arg1(dependencyMap[20]).fileFinishedImporting("modules/age_assurance/native/AgeVerificationMethodsContainer.tsx");
+// Module 7567 (AgeVerificationMethodsContainer)
+let closure_3 = importAll(dependencyMap[0]);
+const VerificationMethod = arg1(dependencyMap[1]).VerificationMethod;
+const SafetyHubLinks = arg1(dependencyMap[2]).SafetyHubLinks;
+({ jsx: closure_6, jsxs: closure_7 } = arg1(dependencyMap[3]));
+let obj = arg1(dependencyMap[4]);
+obj = {};
+obj = { marginTop: importDefault(dependencyMap[5]).space.PX_8 };
+obj.content = obj;
+const tmp2 = arg1(dependencyMap[3]);
+obj.errorContainer = { marginTop: importDefault(dependencyMap[5]).space.PX_24, marginBottom: importDefault(dependencyMap[5]).space.PX_24 };
+const obj1 = { marginTop: importDefault(dependencyMap[5]).space.PX_24, marginBottom: importDefault(dependencyMap[5]).space.PX_24 };
+obj.noMethodsText = { paddingHorizontal: importDefault(dependencyMap[5]).space.PX_40, textAlign: "center" };
+obj.buttonGroup = { paddingVertical: 0 };
+let closure_8 = obj.createStyles(obj);
+const obj2 = { paddingHorizontal: importDefault(dependencyMap[5]).space.PX_40, textAlign: "center" };
+const result = arg1(dependencyMap[20]).fileFinishedImporting("modules/age_assurance/native/AgeVerificationMethodsContainer.tsx");
 
 export const AgeVerificationMethodsContainer = function AgeVerificationMethodsContainer(ageVerificationMethods) {
   const prop = ageVerificationMethods.ageVerificationMethods;
   const arg1 = prop;
   const importDefault = ageVerificationMethods.modalSessionId;
-  const tmp = result();
+  const tmp = callback3();
   let obj = arg1(dependencyMap[6]);
   let isSuspendedUser = obj.useIsSuspendedUser();
   const items = [prop];
@@ -42,9 +41,9 @@ export const AgeVerificationMethodsContainer = function AgeVerificationMethodsCo
       obj.increment(obj);
     }
   }, items);
-  obj = { position: null, formatToPlainString: null };
+  obj = { <string:2572247649>: null, <string:1364418988>: null };
   obj = { spacing: 16, style: tmp.content };
-  const obj1 = { messageType: arg1(dependencyMap[10]).HelpMessageTypes.INFO };
+  const obj1 = { "Bool(true)": 24, "Bool(true)": 24, "Bool(true)": null, messageType: arg1(dependencyMap[10]).HelpMessageTypes.INFO };
   const intl = arg1(dependencyMap[11]).intl;
   obj1.children = intl.string(arg1(dependencyMap[11]).t.El4aXl);
   const items1 = [callback(arg1(dependencyMap[10]).HelpMessage, obj1), ];
@@ -82,13 +81,13 @@ export const AgeVerificationMethodsContainer = function AgeVerificationMethodsCo
     obj.children = items2;
     return tmp4(arg1(dependencyMap[9]).Stack, obj);
   }
-  const obj5 = { style: tmp.errorContainer };
-  const obj6 = { INTEGRATION_CREATE: true, ConstraintReasonCode: true, style: tmp.noMethodsText };
+  const obj5 = { marginBottom: 0, player_playback_mode: -71.573, player_playback_mode_data: 3, style: tmp.errorContainer };
+  const obj6 = { style: tmp.noMethodsText };
   const intl2 = arg1(dependencyMap[11]).intl;
   obj6.children = intl2.string(importDefault(dependencyMap[14]).cR6336);
   const items3 = [callback(arg1(dependencyMap[13]).Text, obj6), ];
   const obj7 = { style: tmp.buttonGroup };
-  const obj8 = { <string:1522289750>: null, <string:570601313>: null };
+  const obj8 = {};
   const intl3 = arg1(dependencyMap[11]).intl;
   obj8.text = intl3.string(importDefault(dependencyMap[14]).hDvmYP);
   obj8.onPress = arg1(dependencyMap[17]).getAgeVerificationMethods;

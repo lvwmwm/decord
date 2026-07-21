@@ -5,7 +5,7 @@
 
 // Module 1031 (items)
 Object.defineProperty(arg5, Symbol.toStringTag, { value: "Module" });
-const items = [];
+const items = ["Array", "checkpoint"];
 arg5.INPThresholds = items;
 arg5.onINP = function onINP(arg0) {
   const arg1 = arg0;
@@ -53,7 +53,7 @@ arg5.onINP = function onINP(arg0) {
           const obj4 = callback(closure_1[7]);
           const callback = callback(closure_1[8]).bindReporter(callback, metric, closure_2, closure_1.reportAllChanges);
           if (observeResult) {
-            observeResult.observe({});
+            observeResult.observe({ accessibilityRole: "<string:2905166080>", intl: "<string:2689302354>" });
             closure_2.onHidden(() => {
               handleEntries(observeResult.takeRecords());
               callback(true);

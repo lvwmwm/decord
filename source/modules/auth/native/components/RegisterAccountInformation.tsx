@@ -1,10 +1,10 @@
-// Module ID: 14620
-// Function ID: 110278
+// Module ID: 14627
+// Function ID: 110300
 // Name: RegisterAccountInformation
 // Dependencies: []
 // Exports: default
 
-// Module 14620 (RegisterAccountInformation)
+// Module 14627 (RegisterAccountInformation)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 let closure_5 = importAll(dependencyMap[2]);

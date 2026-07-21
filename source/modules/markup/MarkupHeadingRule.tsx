@@ -1,13 +1,13 @@
-// Module ID: 4584
-// Function ID: 40135
+// Module ID: 4586
+// Function ID: 40176
 // Name: match
 // Dependencies: []
 
-// Module 4584 (match)
+// Module 4586 (match)
 let closure_2 = /\n$/;
 const obj = {};
 const merged = Object.assign(importDefault(dependencyMap[0]).defaultRules.heading);
-obj["requiredFirstCharacters"] = ["isArray", "isArray"];
+obj["requiredFirstCharacters"] = [];
 obj["match"] = function match(arg0, allowHeading, str) {
   let tmp = null;
   if (allowHeading.allowHeading) {

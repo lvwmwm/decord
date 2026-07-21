@@ -1,11 +1,11 @@
 // Module ID: 275
 // Function ID: 3429
 // Name: getExtendedError
-// Dependencies: [0, 0]
+// Dependencies: [261, 157]
 // Exports: onCaughtError, onRecoverableError, onUncaughtError
 
 // Module 275 (getExtendedError)
-import "result";
+import "get BatchedBridge";
 
 function getExtendedError(value, componentStack) {
   if (value instanceof Error) {

@@ -1,10 +1,10 @@
-// Module ID: 8217
-// Function ID: 64939
+// Module ID: 8221
+// Function ID: 64951
 // Name: NameplateInner
 // Dependencies: []
 // Exports: default
 
-// Module 8217 (NameplateInner)
+// Module 8221 (NameplateInner)
 function NameplateInner(isFocused) {
   let animatedImageUrl;
   let isPressed;
@@ -101,7 +101,7 @@ function NameplateInner(isFocused) {
     obj1.x = num4;
     obj1.y = 0;
     obj.start = obj1;
-    obj.end = { "Null": null, "Null": null };
+    obj.end = {};
     const items3 = [, ];
     ({ left: arr4[0], right: arr4[1] } = backgroundGradientColors);
     obj.colors = items3;
@@ -130,8 +130,8 @@ let closure_4 = importDefault(dependencyMap[1]);
 ({ jsx: closure_5, jsxs: closure_6 } = arg1(dependencyMap[2]));
 const tmp2 = arg1(dependencyMap[2]);
 let closure_7 = arg1(dependencyMap[3]).createStyles((arg0, arg1, arg2, arg3, arg4) => {
-  let obj = { container: { 0: true, 9223372036854775807: true, 9223372036854775807: true, 0: true, 9223372036854775807: true, 9223372036854775807: true } };
-  obj = { "Null": true, "Null": false, "Null": "" };
+  let obj = { container: {} };
+  obj = { "Null": null, "Null": null, "Null": null };
   let num = 1;
   let num2 = 1;
   if (!arg0) {
@@ -155,7 +155,7 @@ let closure_7 = arg1(dependencyMap[3]).createStyles((arg0, arg1, arg2, arg3, arg
   }
   obj.opacity = num2;
   obj.gradient = obj;
-  obj = { 1630090381: "type", 1441227150: "Array", -1701771575: "LIGHT", -575373350: "limit" };
+  obj = { visible: true, hasSpoiler: true, pointerEvents: true, title: true };
   if (!arg0) {
     if (arg3) {
       if (!arg2) {

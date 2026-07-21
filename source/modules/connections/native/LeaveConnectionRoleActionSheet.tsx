@@ -1,10 +1,10 @@
-// Module ID: 9978
-// Function ID: 77186
+// Module ID: 9984
+// Function ID: 77204
 // Name: LeaveConnectionRoleActionSheet
 // Dependencies: []
 // Exports: default
 
-// Module 9978 (LeaveConnectionRoleActionSheet)
+// Module 9984 (LeaveConnectionRoleActionSheet)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 ({ jsx: closure_3, jsxs: closure_4 } = arg1(dependencyMap[2]));
@@ -17,11 +17,11 @@ export default function LeaveConnectionRoleActionSheet(onLeaveRolePressed) {
   const tmp = callback3();
   let obj = {};
   obj = { style: tmp.container };
-  obj = { INTEGRATION_CREATE: "hidden", ConstraintReasonCode: 60 };
+  obj = {};
   const intl = arg1(dependencyMap[6]).intl;
   obj.children = intl.string(arg1(dependencyMap[6]).t.vytvJF);
   const items = [callback(arg1(dependencyMap[5]).Text, obj), , ];
-  const obj1 = { style: tmp.marginTop };
+  const obj1 = { "Null": "absolute", "Null": 0, "Null": "center", style: tmp.marginTop };
   const intl2 = arg1(dependencyMap[6]).intl;
   obj1.children = intl2.string(arg1(dependencyMap[6]).t.caJwb5);
   items[1] = callback(arg1(dependencyMap[5]).Text, obj1);

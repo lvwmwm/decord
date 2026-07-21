@@ -1,16 +1,16 @@
-// Module ID: 12763
-// Function ID: 97845
+// Module ID: 12770
+// Function ID: 97868
 // Name: ActivateDeviceError
 // Dependencies: []
 // Exports: ActivateDeviceError
 
-// Module 12763 (ActivateDeviceError)
+// Module 12770 (ActivateDeviceError)
 importAll(dependencyMap[0]);
 ({ Image: closure_3, View: closure_4 } = arg1(dependencyMap[1]));
 const tmp3 = arg1(dependencyMap[1]);
 ({ jsx: closure_5, jsxs: closure_6, Fragment: closure_7 } = arg1(dependencyMap[2]));
 const tmp4 = arg1(dependencyMap[2]);
-let closure_8 = arg1(dependencyMap[3]).createStyles({ image: { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null } });
+let closure_8 = arg1(dependencyMap[3]).createStyles({ image: { "Null": false, "Null": false, "Null": false } });
 const obj = arg1(dependencyMap[3]);
 const result = arg1(dependencyMap[9]).fileFinishedImporting("modules/activate_device/native/ActivateDeviceError.tsx");
 
@@ -19,7 +19,7 @@ export const ActivateDeviceError = function ActivateDeviceError(onRetry) {
   obj = { source: importDefault(dependencyMap[4]), style: callback3().image };
   const items = [callback(closure_3, obj), , ];
   obj = { style: importDefault(dependencyMap[5]).innerContent };
-  const obj1 = { INTEGRATION_CREATE: 182714370, ConstraintReasonCode: 1091633154, style: importDefault(dependencyMap[5]).centerText };
+  const obj1 = { style: importDefault(dependencyMap[5]).centerText };
   const intl = arg1(dependencyMap[7]).intl;
   obj1.children = intl.string(arg1(dependencyMap[7]).t.3dgwPD);
   const items1 = [callback(arg1(dependencyMap[6]).Text, obj1), ];

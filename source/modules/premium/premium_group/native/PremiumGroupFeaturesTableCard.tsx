@@ -1,10 +1,10 @@
-// Module ID: 12289
-// Function ID: 94153
+// Module ID: 12296
+// Function ID: 94176
 // Name: BetaPill
 // Dependencies: []
 // Exports: default
 
-// Module 12289 (BetaPill)
+// Module 12296 (BetaPill)
 class BetaPill {
   constructor() {
     tmp = closure_7();
@@ -24,8 +24,8 @@ const _module1 = require(dependencyMap[3]);
 let obj = {};
 obj = { borderRadius: importDefault(dependencyMap[4]).radii.sm - 2, backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_SURFACE_HIGH };
 obj.premiumGroupCard = obj;
-obj.headerContainer = { <string:3579045881>: 8, <string:2224915063>: "8", <string:3889652637>: null, <string:3613746030>: "\u{1F44D}\u{1F3FE}", <string:2401587822>: true };
-const obj1 = { error_hints_v2: false, HUB_PROGRESS_STEP_ORDER: false, isPurchasing: false, purchasingProductId: false, XHR_READYSTATE_DONE: false, MEDIA_KEYBOARD_BAR_BORDER_WIDTH: false, backgroundColor: importDefault(dependencyMap[4]).colors.WHITE, borderRadius: importDefault(dependencyMap[4]).radii.round };
+obj.headerContainer = { Interface: 8, WEEKDAY_ONLY: "8", videoBackgroundFilterDesktop: null, parentFreezeValue: "\u{1F44D}\u{1F3FE}", onFinish: true };
+const obj1 = { currentOriginX: false, paddingTop: false, paddingBottom: false, useIsActivitiesEnabledForCurrentPlatform: false, REMOVE_EMOJI_REACTIONS: false, marginRight: false, backgroundColor: importDefault(dependencyMap[4]).colors.WHITE, borderRadius: importDefault(dependencyMap[4]).radii.round };
 obj.betaPill = obj1;
 obj.betaText = { color: importDefault(dependencyMap[4]).colors.BLACK };
 const obj2 = { color: importDefault(dependencyMap[4]).colors.BLACK };
@@ -49,7 +49,7 @@ export default function PremiumGroupFeaturesTableCard(arg0) {
   } else {
     ({ subheaderString, bodyString } = tmp2);
     let obj = { borderWidth: 2, direction: require(dependencyMap[8]).GradientBorder.Direction.HORIZONTAL, colors: Gradients.PREMIUM_TIER_2, borderRadius: importDefault(dependencyMap[4]).radii.sm, style };
-    obj = { start: { "Null": false, "Null": true }, end: { "Null": null, "Null": null } };
+    obj = { start: { max: -536870861, guildId: -299892737 }, end: {} };
     let obj2 = require(dependencyMap[10]);
     const items = [obj2.hexWithOpacity("#8547C6", 0.15), , ];
     const tmp9 = importDefault(dependencyMap[9]);
@@ -57,10 +57,10 @@ export default function PremiumGroupFeaturesTableCard(arg0) {
     const obj4 = require(dependencyMap[10]);
     items[2] = require(dependencyMap[10]).hexWithOpacity("#AB5D8A", 0.15);
     obj.colors = items;
-    obj.locations = ["originalFile", "gatedChannelId", "isArray"];
+    obj.locations = ["getPremiumSubscription", "RowType", "isArray"];
     obj.style = tmp.premiumGroupCard;
     obj = { style: tmp.headerContainer };
-    const items1 = [callback(importDefault(dependencyMap[11]), { aze: "r", azj: "isArray" }), callback(BetaPill, {})];
+    const items1 = [callback(importDefault(dependencyMap[11]), { bhk: 1091633154, bic: 113580 }), callback(BetaPill, {})];
     obj.children = items1;
     const items2 = [callback2(View, obj), , ];
     const obj1 = { variant: "text-sm/normal", style: tmp.title, children: subheaderString };

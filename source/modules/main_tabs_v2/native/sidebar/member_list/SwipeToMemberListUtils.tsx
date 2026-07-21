@@ -1,10 +1,10 @@
-// Module ID: 10078
-// Function ID: 78092
+// Module ID: 10084
+// Function ID: 78110
 // Name: useIsSwipeToMemberListEnabled
 // Dependencies: []
 // Exports: isSwipeToMemberListEnabled, useIsSwipeToMemberListEnabled
 
-// Module 10078 (useIsSwipeToMemberListEnabled)
+// Module 10084 (useIsSwipeToMemberListEnabled)
 const _module = require(dependencyMap[2]);
 const result = _module.fileFinishedImporting("modules/main_tabs_v2/native/sidebar/member_list/SwipeToMemberListUtils.tsx");
 

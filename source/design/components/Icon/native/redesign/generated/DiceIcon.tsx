@@ -1,10 +1,10 @@
-// Module ID: 8693
-// Function ID: 68854
+// Module ID: 8697
+// Function ID: 68866
 // Name: DiceIcon
 // Dependencies: []
 // Exports: DiceIcon
 
-// Module 8693 (DiceIcon)
+// Module 8697 (DiceIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/DiceIcon.tsx");

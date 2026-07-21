@@ -1,9 +1,9 @@
-// Module ID: 9459
-// Function ID: 73696
+// Module ID: 9463
+// Function ID: 73710
 // Name: metadata
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 9459 (metadata)
+// Module 9463 (metadata)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_assets/assets/orbs/reward_tile_v3.webm.js");
 

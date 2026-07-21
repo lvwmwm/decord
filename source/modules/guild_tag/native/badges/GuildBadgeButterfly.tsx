@@ -1,17 +1,17 @@
-// Module ID: 12831
-// Function ID: 98140
+// Module ID: 12838
+// Function ID: 98163
 // Name: items
 // Dependencies: []
 // Exports: GuildBadgeButterfly
 
-// Module 12831 (items)
+// Module 12838 (items)
 importAll(dependencyMap[0]);
 ({ jsx: closure_2, jsxs: closure_3 } = arg1(dependencyMap[1]));
 let closure_4 = [];
-let closure_5 = ["fi", "titlePillBG"];
+let closure_5 = [821559297, 461570050];
 const items = [{}, {}];
 let closure_7 = [null];
-let closure_8 = ["<string:2233414208>"];
+let closure_8 = ["<string:2886218304>"];
 const items1 = [{}];
 const tmp3 = arg1(dependencyMap[1]);
 const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/guild_tag/native/badges/GuildBadgeButterfly.tsx");
@@ -29,7 +29,7 @@ export const GuildBadgeButterfly = function GuildBadgeButterfly(width) {
   if (num2 === undefined) {
     num2 = 24;
   }
-  let obj = { onValueChange: "r", step: "onRequireModeratorMFAClick", flexDirection: "Array", alignItems: "isSpamMessageRequest" };
+  let obj = { "Bool(true)": null, "Bool(true)": 4, "Bool(true)": 4, "Bool(true)": "rgba(0, 0, 0, 0.75)" };
   ({ primaryTintColor, secondaryTintColor } = width);
   Object.setPrototypeOf(null);
   const merged = Object.assign(width, obj);
@@ -43,7 +43,7 @@ export const GuildBadgeButterfly = function GuildBadgeButterfly(width) {
   obj["height"] = num2;
   obj["viewBox"] = "0 0 16 16";
   obj["fill"] = "none";
-  const items = [callback(arg1(dependencyMap[3]).Path, {}), , , , , , ];
+  const items = [callback(arg1(dependencyMap[3]).Path, { "Bool(false)": "button", "Bool(false)": 0.4 }), , , , , , ];
   obj1 = { d: "M6 10h1v1h-1v1h-1v1H2v-1h1v-1H2v1H1v-2h1v-1h4v1ZM14 10h1v2h-1v-1h-1v1h1v1H11v-1h-1v-1h-1v-1h1v-1h4v1ZM6 8H2V5h1v-1h3v4ZM13 5h1v3H10V4h3v1Z", fill: primaryColorsTransformed[0] };
   items[1] = callback(arg1(dependencyMap[3]).Path, obj1);
   items[2] = callback(arg1(dependencyMap[3]).Path, { d: "M5 14H2v-1h3v1ZM14 13v1H11v-1h3ZM2 13H1v-1h1v1ZM6 13h-1v-1h1v1ZM11 13h-1v-1h1v1ZM15 13h-1v-1h1v1ZM3 12H2v-1h1v1ZM7 12h-1v-1h1v1ZM10 12h-1v-1h1v1ZM14 12h-1v-1h1v1ZM2 6H1v-1h1v1ZM15 6h-1v-1h1v1ZM5 4h-2v1H2v-2h3v1ZM14 5h-1v-1h-2v-1h3v2Z", fill: primaryColorsTransformed[1] });
@@ -57,9 +57,9 @@ export const GuildBadgeButterfly = function GuildBadgeButterfly(width) {
   }
   obj3.fill = first;
   items[3] = callback(arg1(dependencyMap[3]).Path, obj3);
-  items[4] = callback(arg1(dependencyMap[3]).Path, {});
-  items[5] = callback(arg1(dependencyMap[3]).Path, {});
-  items[6] = callback(arg1(dependencyMap[3]).Path, {});
+  items[4] = callback(arg1(dependencyMap[3]).Path, { "Bool(false)": true, "Bool(false)": true });
+  items[5] = callback(arg1(dependencyMap[3]).Path, { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null });
+  items[6] = callback(arg1(dependencyMap[3]).Path, { "Bool(false)": 200671233, "Bool(false)": 1196556289 });
   obj["children"] = items;
   return closure_3(arg1(dependencyMap[3]).Svg, obj);
 };

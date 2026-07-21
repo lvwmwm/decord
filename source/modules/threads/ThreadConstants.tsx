@@ -6,7 +6,7 @@
 
 // Module 1211 (AbortCodes)
 const AbortCodes = require(dependencyMap[0]).AbortCodes;
-const obj = { <string:3594180037>: "<string:1146552322>", borderRadius: "<string:1149435906>", justifyContent: "<string:1912602626>", alignItems: "<string:1076822017>" };
+const obj = {};
 const items = [, , , ];
 ({ TOO_MANY_ATTACHMENTS: arr[0], EXPLICIT_CONTENT: arr[1], ENTITY_TOO_LARGE: arr[2], EXPLICIT_CONTENT: arr[3] } = AbortCodes);
 const items1 = [, ];

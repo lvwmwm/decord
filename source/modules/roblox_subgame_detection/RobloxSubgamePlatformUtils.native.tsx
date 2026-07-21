@@ -1,8 +1,8 @@
-// Module ID: 4295
-// Function ID: 37585
+// Module ID: 4299
+// Function ID: 37633
 // Dependencies: []
 
-// Module 4295
+// Module 4299
 let closure_2 = importDefault(dependencyMap[0]);
 const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/roblox_subgame_detection/RobloxSubgamePlatformUtils.native.tsx");
 

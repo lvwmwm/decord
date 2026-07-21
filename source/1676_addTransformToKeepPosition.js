@@ -54,7 +54,7 @@ export const EntryExitTransition = function EntryExitTransition(name, translateX
   obj.scale = "" + translateX.scaleX + "," + translateX.scaleY;
   obj = { name, style: {}, duration: 300 };
   addTransformToKeepPosition(obj.style, structuredCloneResult.style, obj, true);
-  addTransformToKeepPosition(obj.style, structuredClone(translateX(dependencyMap[1]).AnimationsData[translateX.entering]).style, { "Bool(false)": "construct", "Bool(false)": "isArray", "Bool(false)": "isArray" }, false);
+  addTransformToKeepPosition(obj.style, structuredClone(translateX(dependencyMap[1]).AnimationsData[translateX.entering]).style, { "Null": null, "Null": null, "Null": null }, false);
   const style = obj.style;
   const map = new Map();
   if (undefined === style[0].opacity) {

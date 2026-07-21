@@ -1,18 +1,10 @@
-// Module ID: 8669
-// Function ID: 68656
+// Module ID: 8673
+// Function ID: 68668
 // Name: _isNativeReflectConstruct
-// Dependencies: [0, 0, 0, 4294967295, 0, 0, 4294967295, 0, 0]
+// Dependencies: []
 // Exports: isPremiumWishlistItemRecord
 
-// Module 8669 (_isNativeReflectConstruct)
-import closure_0 from "result";
-import closure_1 from "result";
-import closure_2 from "result";
-import closure_4 from "result";
-import closure_5 from "result";
-import { SKUProductLines } from "result";
-import result from "result";
-
+// Module 8673 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -22,7 +14,13 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
+let closure_0 = importDefault(dependencyMap[0]);
+let closure_1 = importDefault(dependencyMap[1]);
+let closure_2 = importDefault(dependencyMap[2]);
 let closure_3 = importDefault(dependencyMap[3]);
+let closure_4 = importDefault(dependencyMap[4]);
+let closure_5 = importDefault(dependencyMap[5]);
+const SKUProductLines = arg1(dependencyMap[7]).SKUProductLines;
 const tmp3 = (importDefaultResult) => {
   class PremiumWishlistItemRecord {
     constructor(arg0) {
@@ -82,7 +80,8 @@ const tmp3 = (importDefaultResult) => {
   items[1] = obj;
   return callback(PremiumWishlistItemRecord, null, items);
 }(importDefault(dependencyMap[6]));
-result = result.fileFinishedImporting("modules/wishlists/records/PremiumWishlistItemRecord.tsx");
+const importDefaultResult = importDefault(dependencyMap[6]);
+const result = arg1(dependencyMap[8]).fileFinishedImporting("modules/wishlists/records/PremiumWishlistItemRecord.tsx");
 
 export default tmp3;
 export const isPremiumWishlistItemRecord = function isPremiumWishlistItemRecord(arg0) {

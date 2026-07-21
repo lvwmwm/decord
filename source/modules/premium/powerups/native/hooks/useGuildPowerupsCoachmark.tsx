@@ -1,10 +1,10 @@
-// Module ID: 14869
-// Function ID: 112010
+// Module ID: 14876
+// Function ID: 112034
 // Name: useGuildPowerupsCoachmark
 // Dependencies: []
 // Exports: default
 
-// Module 14869 (useGuildPowerupsCoachmark)
+// Module 14876 (useGuildPowerupsCoachmark)
 let closure_3 = importAll(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 let closure_5 = importDefault(dependencyMap[2]);
@@ -81,12 +81,11 @@ export default function useGuildPowerupsCoachmark(targetRef, arg1, type) {
         guildPowerupBannerImage.markAsDismissed(constants2.USER_DISMISS);
       }
     }
-    let obj = {
-      onDismiss() {
-
-      }
-    };
+    let obj = { "Bool(true)": "F8Wf0e", "Bool(true)": "Err", "Bool(true)": "isArrayBuffer", "Bool(true)": "ON" };
     let str = "";
+    obj.onDismiss = function onDismiss() {
+
+    };
     if (null == self) {
       return obj;
     } else {

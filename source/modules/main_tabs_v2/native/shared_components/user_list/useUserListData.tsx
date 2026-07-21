@@ -1,20 +1,10 @@
-// Module ID: 8808
-// Function ID: 69427
+// Module ID: 8812
+// Function ID: 69439
 // Name: _toPropertyKey
-// Dependencies: [2113929251, 268435491, 33554468, 1996488704, 31, 4126, 689, 1273, 5242, 8816, 2, 31, 4126, 3939, 8818, 2, 8819, 2, 1280, 3940, 1322, 1281]
+// Dependencies: []
 // Exports: default
 
-// Module 8808 (_toPropertyKey)
-import module_31 from "module_31";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import closure_9 from "_createForOfIteratorHelperLoose";
-import Button from "Button";
-import result from "result";
-import FastestListPropsPlaceholderType from "FastestListPropsPlaceholderType";
-import keys from "keys";
-import { RelationshipTypes } from "module_31";
-import SystemThemeState from "SystemThemeState";
-
+// Module 8812 (_toPropertyKey)
 function _toPropertyKey(arg0) {
   let StringResult = arg0;
   if ("object" === typeof arg0) {
@@ -335,6 +325,14 @@ let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 let closure_5 = importDefault(dependencyMap[2]);
 let closure_6 = importDefault(dependencyMap[3]);
+let closure_7 = importAll(dependencyMap[4]);
+let closure_8 = importDefault(dependencyMap[5]);
+let closure_9 = importDefault(dependencyMap[6]);
+let closure_10 = importDefault(dependencyMap[7]);
+let closure_11 = importDefault(dependencyMap[8]);
+let closure_12 = importDefault(dependencyMap[9]);
+let closure_13 = importDefault(dependencyMap[10]);
+const RelationshipTypes = arg1(dependencyMap[11]).RelationshipTypes;
 const items = [, , , ];
 ({ FRIEND: arr[0], SUGGESTION: arr[1], PENDING_INCOMING: arr[2], PENDING_OUTGOING: arr[3] } = RelationshipTypes);
 const set = new Set(items);
@@ -610,7 +608,7 @@ const tmp3 = () => {
       const subscription10 = callback(closure_2[15]).subscribe("GUILD_MEMBER_REMOVE", self.handleGuildMember);
       const obj12 = callback(closure_2[15]);
       const subscription11 = callback(closure_2[15]).subscribe("GUILD_MEMBERS_CHUNK_BATCH", self.handleGuildMembersChunkBatch);
-      Button.addChangeListener(self.handleUserAffinitiesUpdate);
+      closure_10.addChangeListener(self.handleUserAffinitiesUpdate);
     }
   };
   const items = [obj, , , , , , , , , ];
@@ -646,7 +644,7 @@ const tmp3 = () => {
       callback(closure_2[15]).unsubscribe("GUILD_MEMBER_REMOVE", self.handleGuildMember);
       const obj11 = callback(closure_2[15]);
       callback(closure_2[15]).unsubscribe("GUILD_MEMBERS_CHUNK_BATCH", self.handleGuildMembersChunkBatch);
-      Button.removeChangeListener(self.handleUserAffinitiesUpdate);
+      closure_10.removeChangeListener(self.handleUserAffinitiesUpdate);
     }
   };
   items[1] = obj;
@@ -895,7 +893,7 @@ const tmp3 = () => {
   };
   return callback2(UserSearch, items);
 }();
-const result = SystemThemeState.fileFinishedImporting("modules/main_tabs_v2/native/shared_components/user_list/useUserListData.tsx");
+const result = arg1(dependencyMap[21]).fileFinishedImporting("modules/main_tabs_v2/native/shared_components/user_list/useUserListData.tsx");
 
 export default function useUserListData(query) {
   query = query.query;
@@ -915,30 +913,30 @@ export default function useUserListData(query) {
   const withFriendRequestsIncoming = query.withFriendRequestsIncoming;
   const React = withFriendRequestsIncoming;
   const withFriendRequestsOutgoing = query.withFriendRequestsOutgoing;
-  let _createForOfIteratorHelperLoose = withFriendRequestsOutgoing;
+  let closure_8 = withFriendRequestsOutgoing;
   const withFriendRequestsSpam = query.withFriendRequestsSpam;
   let closure_9 = withFriendRequestsSpam;
   let flag = query.excludeCurrentUser;
   if (flag === undefined) {
     flag = false;
   }
-  let Button = flag;
+  let closure_10 = flag;
   let num = query.affinitySuggestionsLimit;
   if (num === undefined) {
     num = 5;
   }
-  let result = num;
+  let closure_11 = num;
   let flag2 = query.withAlphabeticalSections;
   if (flag2 === undefined) {
     flag2 = true;
   }
-  let FastestListPropsPlaceholderType = flag2;
-  let keys;
+  let closure_12 = flag2;
+  let closure_13;
   let RelationshipTypes;
   let closure_16;
   const tmp = callback3(React.useState(0), 2);
   const first = tmp[0];
-  keys = first;
+  closure_13 = first;
   RelationshipTypes = tmp3;
   const items = [tmp[1], withGameFriends];
   const memo = React.useMemo(() => new closure_17(() => callback(Date.now()), withGameFriends), items);

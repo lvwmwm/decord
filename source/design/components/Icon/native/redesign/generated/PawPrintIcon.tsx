@@ -1,10 +1,10 @@
-// Module ID: 13408
-// Function ID: 101855
+// Module ID: 13415
+// Function ID: 101878
 // Name: PawPrintIcon
 // Dependencies: []
 // Exports: PawPrintIcon
 
-// Module 13408 (PawPrintIcon)
+// Module 13415 (PawPrintIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/PawPrintIcon.tsx");

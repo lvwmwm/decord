@@ -1,10 +1,10 @@
-// Module ID: 14750
-// Function ID: 111216
+// Module ID: 14757
+// Function ID: 111240
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 // Exports: default
 
-// Module 14750 (_isNativeReflectConstruct)
+// Module 14757 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -30,7 +30,7 @@ obj = {};
 const tmp4 = arg1(dependencyMap[9]);
 const merged = Object.assign(importDefault(dependencyMap[11])(arg1(dependencyMap[8]).Fonts.DISPLAY_SEMIBOLD, importDefault(dependencyMap[12]).unsafe_rawColors.WHITE, 12, { uppercase: true }));
 obj.unreadText = obj;
-const obj2 = { "Bool(false)": 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000015459527405317443, "Bool(false)": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003337610788552319, "Bool(false)": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000256882983287256, "Bool(false)": "SpotifyNeutralIcon", borderRadius: importDefault(dependencyMap[12]).radii.md };
+const obj2 = { borderRadius: importDefault(dependencyMap[12]).radii.md };
 const importDefaultResult = importDefault(dependencyMap[11]);
 const obj1 = { uppercase: true };
 obj2.backgroundColor = arg1(dependencyMap[13]).hexWithOpacity(importDefault(dependencyMap[12]).unsafe_rawColors.PRIMARY_400, 0.9);
@@ -158,7 +158,7 @@ const tmp7 = (PureComponent) => {
         obj["opacity"] = self.animation;
         const obj1 = {};
         const animation = self.animation;
-        const obj2 = { inputRange: [null, null] };
+        const obj2 = { inputRange: ["Text", "lc"] };
         let num5 = -72;
         if (bottom) {
           num5 = 72;
@@ -231,7 +231,7 @@ export default function UnreadBars(contentInset) {
   }
   contentInset = contentInset.contentInset;
   if (contentInset === undefined) {
-    contentInset = { "Bool(false)": "r", "Bool(false)": "onRequireModeratorMFAClick", "Bool(false)": "Array", "Bool(false)": "isSpamMessageRequest" };
+    contentInset = { "Bool(true)": null, "Bool(true)": 4, "Bool(true)": 4, "Bool(true)": "rgba(0, 0, 0, 0.75)" };
   }
   function handlePress(section) {
     callback({ section: section.section, item: section.row, animated: true });

@@ -1,10 +1,10 @@
-// Module ID: 13670
-// Function ID: 103515
+// Module ID: 13677
+// Function ID: 103538
 // Name: UserRow
 // Dependencies: []
 // Exports: default
 
-// Module 13670 (UserRow)
+// Module 13677 (UserRow)
 function UserRow(userActivity) {
   userActivity = userActivity.userActivity;
   const user = user.getUser(userActivity.user_id);

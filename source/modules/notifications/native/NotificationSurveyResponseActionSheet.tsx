@@ -1,10 +1,10 @@
-// Module ID: 9510
-// Function ID: 74037
+// Module ID: 9515
+// Function ID: 74053
 // Name: onClose
 // Dependencies: []
 // Exports: default
 
-// Module 9510 (onClose)
+// Module 9515 (onClose)
 function onClose() {
   importDefault(dependencyMap[7]).hideActionSheet();
 }
@@ -22,7 +22,7 @@ const merged = Object.assign(importDefault(dependencyMap[5])(tmp4.Fonts.DISPLAY_
 obj["marginTop"] = 8;
 obj["marginBottom"] = 8;
 obj.title = obj;
-const obj1 = { -1604016467: "it", 1381382970: "y", -1399804783: "isArray", color: importDefault(dependencyMap[6]).colors.INTERACTIVE_TEXT_ACTIVE };
+const obj1 = { borderBottomWidth: null, borderBottomColor: null, paddingHorizontal: null, color: importDefault(dependencyMap[6]).colors.INTERACTIVE_TEXT_ACTIVE };
 obj.subtitle = obj1;
 obj.view = {};
 obj.rating = {};

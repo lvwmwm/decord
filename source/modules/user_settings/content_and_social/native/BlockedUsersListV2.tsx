@@ -1,10 +1,10 @@
-// Module ID: 13574
-// Function ID: 102934
+// Module ID: 13581
+// Function ID: 102957
 // Name: BlockedUsersList
 // Dependencies: []
 // Exports: default
 
-// Module 13574 (BlockedUsersList)
+// Module 13581 (BlockedUsersList)
 function BlockedUsersList(userIds) {
   userIds = userIds.userIds;
   const tmp = callback3();
@@ -18,7 +18,7 @@ function BlockedUsersList(userIds) {
     obj = { value: tmp3 };
     obj = { bottom: true, style: tmp.list };
     const obj1 = {};
-    const obj2 = { Promise: 10, marginTop: null, flags: "flex-start", style: tmp.sectionLabelStyle };
+    const obj2 = { style: tmp.sectionLabelStyle };
     const intl2 = arg1(dependencyMap[10]).intl;
     const obj3 = { numberOfBlockedUsers: userIds.length };
     obj2.children = intl2.formatToPlainString(arg1(dependencyMap[10]).t.c+JVEB, obj3);

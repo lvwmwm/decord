@@ -1,10 +1,10 @@
-// Module ID: 9001
-// Function ID: 70852
+// Module ID: 9005
+// Function ID: 70864
 // Name: ApplicationEducationEntry
 // Dependencies: []
 // Exports: default
 
-// Module 9001 (ApplicationEducationEntry)
+// Module 9005 (ApplicationEducationEntry)
 function ApplicationEducationEntry(children) {
   const iconComponent = children.iconComponent;
   const tmp = callback2();
@@ -25,8 +25,8 @@ const View = arg1(dependencyMap[1]).View;
 const MAX_FRIENDS = arg1(dependencyMap[2]).MAX_FRIENDS;
 ({ jsx: closure_5, jsxs: closure_6, Fragment: closure_7 } = arg1(dependencyMap[3]));
 let obj = arg1(dependencyMap[4]);
-obj = { applicationEducation: {}, entry: { 9223372036854775807: null, 0: null, 9223372036854775807: null }, entryText: { flex: 1 } };
-obj = { aze: false, azj: false, tintColor: importDefault(dependencyMap[5]).colors.TEXT_MUTED };
+obj = { applicationEducation: {}, entry: { <string:3461472865>: 54801408, <string:1447977218>: -225361408, <string:1640807382>: 854917122 }, entryText: { flex: 1 } };
+obj = { bhk: false, bic: "internal", tintColor: importDefault(dependencyMap[5]).colors.TEXT_MUTED };
 obj.entryIcon = obj;
 let closure_8 = obj.createStyles(obj);
 const tmp3 = arg1(dependencyMap[3]);
@@ -141,7 +141,7 @@ export default function ApplicationEducation(arg0) {
       if (null != arr2) {
         tmp59 = null;
         if (arr2.length > 0) {
-          const obj13 = { INTEGRATION_CREATE: "AutomodMentionRaidLimit", ConstraintReasonCode: "%URIError%", children: arr2 };
+          const obj13 = { children: arr2 };
           tmp59 = callback(arg1(dependencyMap[13]).Text, obj13);
         }
       }

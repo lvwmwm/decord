@@ -1,10 +1,10 @@
-// Module ID: 7181
-// Function ID: 57824
+// Module ID: 7185
+// Function ID: 57835
 // Name: Divider
 // Dependencies: []
 // Exports: default
 
-// Module 7181 (Divider)
+// Module 7185 (Divider)
 let DARK;
 let DARKER;
 let LIGHT;

@@ -1,17 +1,15 @@
-// Module ID: 11954
-// Function ID: 92425
+// Module ID: 11961
+// Function ID: 92448
 // Name: UserProfileNote
-// Dependencies: [0, 4294967295, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+// Dependencies: []
 // Exports: default
 
-// Module 11954 (UserProfileNote)
-import "result";
-import result from "result";
-import result from "result";
-
+// Module 11961 (UserProfileNote)
+importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
-let closure_4 = result.createStyles({ title: { justifyContent: "space-between" } });
-result = result.fileFinishedImporting("modules/user_profile/native/UserProfileNote.tsx");
+let closure_4 = arg1(dependencyMap[2]).createStyles({ title: { justifyContent: "space-between" } });
+const obj = arg1(dependencyMap[2]);
+const result = arg1(dependencyMap[13]).fileFinishedImporting("modules/user_profile/native/UserProfileNote.tsx");
 
 export default function UserProfileNote(style) {
   const userId = style.userId;
@@ -71,7 +69,7 @@ export default function UserProfileNote(style) {
   }
   items[1] = tmp10;
   obj.titleStyle = items;
-  obj.titleIcon = <PaperPlusIcon flexDirection={4} alignItems={1} />;
+  obj.titleIcon = <PaperPlusIcon />;
   if (tmp2) {
     const obj2 = { children: note };
     tmp2 = jsx(arg1(dependencyMap[12]).Text, obj2);

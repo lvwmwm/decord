@@ -1,10 +1,10 @@
-// Module ID: 10628
-// Function ID: 82997
+// Module ID: 10634
+// Function ID: 83020
 // Name: AgeVerificationSpeakerActionSheet
 // Dependencies: []
 // Exports: AnimatedStartStagePrompt, ChatButton, ContinueToStagePrompt, DisconnectStageButton, JoinStagePrompt, MoveToAudienceButton, MusicMuteButton, RequestToSpeakButton, RequestToSpeakListButton
 
-// Module 10628 (AgeVerificationSpeakerActionSheet)
+// Module 10634 (AgeVerificationSpeakerActionSheet)
 class AgeVerificationSpeakerActionSheet {
   constructor(arg0) {
     arg1 = global.onClose;
@@ -19,8 +19,7 @@ class AgeVerificationSpeakerActionSheet {
     obj.header = jsx(View, obj);
     obj1 = { style: tmp.container };
     obj2 = { style: tmp.content };
-    obj3 = { INTEGRATION_CREATE: 182714370, ConstraintReasonCode: 1091633154 };
-    obj3.style = tmp.title;
+    obj3 = { style: tmp.title };
     intl = arg1(dependencyMap[12]).intl;
     obj3.children = intl.string(arg1(dependencyMap[12]).t.zvubnM);
     items = [, ];
@@ -142,7 +141,7 @@ let obj = arg1(dependencyMap[9]);
 obj = { actionBarCTAContainer: { position: "relative" } };
 obj = { tintColor: importDefault(dependencyMap[10]).colors.WHITE };
 obj.imageStyle = obj;
-const obj1 = { isDowngrading: "Golive Simulcast without prober 720p@500k", type: 144.002, pendingDowngrade: null, tintColor: importDefault(dependencyMap[10]).colors.WHITE };
+const obj1 = { 0: "Golive Simulcast without prober 720p@500k", 0: 144.002, 0: null, tintColor: importDefault(dependencyMap[10]).colors.WHITE };
 obj.iconStyle = obj1;
 const tmp2 = arg1(dependencyMap[8]);
 obj.iconContainerStyle = { backgroundColor: importDefault(dependencyMap[10]).unsafe_rawColors.GREEN_360, borderRadius: importDefault(dependencyMap[10]).radii.lg, padding: 4 };

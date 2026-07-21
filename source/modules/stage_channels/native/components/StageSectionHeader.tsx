@@ -1,16 +1,16 @@
-// Module ID: 10764
-// Function ID: 83652
+// Module ID: 10770
+// Function ID: 83675
 // Name: StageSectionHeader
 // Dependencies: []
 // Exports: default
 
-// Module 10764 (StageSectionHeader)
+// Module 10770 (StageSectionHeader)
 importAll(dependencyMap[0]);
 ({ TouchableOpacity: closure_3, View: closure_4 } = arg1(dependencyMap[1]));
 const tmp3 = arg1(dependencyMap[1]);
 ({ jsxs: closure_5, jsx: closure_6 } = arg1(dependencyMap[2]));
 let obj = arg1(dependencyMap[3]);
-obj = { section: { minHeight: "0e02f6accc59d44ac3827104886762f1", maxHeight: "boost" }, children: { marginLeft: 12 }, collapseButton: { marginLeft: "auto" } };
+obj = { section: { onTapChannelPromptButton: "0e02f6accc59d44ac3827104886762f1", <string:3493074896>: "boost" }, children: { marginLeft: 12 }, collapseButton: { marginLeft: "auto" } };
 obj = { tintColor: importDefault(dependencyMap[4]).colors.MOBILE_TEXT_HEADING_PRIMARY };
 obj.collapseIcon = obj;
 const tmp4 = arg1(dependencyMap[2]);
@@ -49,20 +49,22 @@ export default function StageSectionHeader(collapsed) {
   obj = { style: tmp.section };
   const obj1 = { style: tmp.audience, onPress: onToggleCollapse };
   const animatedStyle = obj.useAnimatedStyle(fn);
+  const obj2 = { 1655478700: "SERVER_GUIDE_CHANNEL_SELECTED", 72438626: "PileOverflowProps", 1446732292: "Array" };
   const items = [label, " \u2014 ", count];
-  const items1 = [callback(arg1(dependencyMap[7]).Text, { children: items }), , ];
+  obj2.children = items;
+  const items1 = [callback(arg1(dependencyMap[7]).Text, obj2), , ];
   let tmp7 = null != children;
   if (tmp7) {
-    const obj2 = { style: tmp.children, children };
-    tmp7 = callback2(closure_4, obj2);
+    const obj3 = { style: tmp.children, children };
+    tmp7 = callback2(closure_4, obj3);
   }
   items1[1] = tmp7;
-  const obj3 = { style: tmp.collapseButton };
-  const obj4 = { style: animatedStyle };
-  const obj5 = { source: importDefault(dependencyMap[9]), style: tmp.collapseIcon };
-  obj4.children = callback2(arg1(dependencyMap[8]).Icon, obj5);
-  obj3.children = callback2(importDefault(dependencyMap[5]).View, obj4);
-  items1[2] = callback2(closure_4, obj3);
+  const obj4 = { style: tmp.collapseButton };
+  const obj5 = { style: animatedStyle };
+  const obj6 = { source: importDefault(dependencyMap[9]), style: tmp.collapseIcon };
+  obj5.children = callback2(arg1(dependencyMap[8]).Icon, obj6);
+  obj4.children = callback2(importDefault(dependencyMap[5]).View, obj5);
+  items1[2] = callback2(closure_4, obj4);
   obj1.children = items1;
   obj.children = callback(closure_3, obj1);
   return callback2(closure_4, obj);

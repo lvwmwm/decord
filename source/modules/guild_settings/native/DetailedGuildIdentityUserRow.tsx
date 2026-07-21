@@ -1,15 +1,15 @@
-// Module ID: 10164
-// Function ID: 78562
+// Module ID: 10170
+// Function ID: 78580
 // Name: memoResult1
 // Dependencies: []
 
-// Module 10164 (memoResult1)
+// Module 10170 (memoResult1)
 const importAllResult = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 let closure_4 = importDefault(dependencyMap[2]);
 ({ jsx: closure_5, jsxs: closure_6 } = arg1(dependencyMap[3]));
 let obj1 = arg1(dependencyMap[4]);
-let obj = { mainIdentity: { -9223372036854775808: true, filter: true } };
+let obj = { mainIdentity: {} };
 obj = { marginRight: importDefault(dependencyMap[5]).space.PX_4 };
 obj.primaryAvatar = obj;
 obj1 = { color: importDefault(dependencyMap[5]).colors.INTERACTIVE_TEXT_DEFAULT, fontSize: 12 };

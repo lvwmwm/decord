@@ -1,9 +1,9 @@
-// Module ID: 14552
-// Function ID: 109689
+// Module ID: 14559
+// Function ID: 109711
 // Name: __INTERNAL_VIEW_CONFIG
 // Dependencies: []
 
-// Module 14552 (__INTERNAL_VIEW_CONFIG)
+// Module 14559 (__INTERNAL_VIEW_CONFIG)
 let obj = { uiViewClassName: "SelectActionComponentView", directEventTypes: { topTap: { registrationName: "onTap" } } };
 obj = { model: true };
 const _module = require(dependencyMap[0]);

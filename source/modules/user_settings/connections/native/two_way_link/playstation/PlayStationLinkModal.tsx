@@ -1,10 +1,10 @@
-// Module ID: 8960
-// Function ID: 70683
+// Module ID: 8964
+// Function ID: 70695
 // Name: CloseButton
 // Dependencies: []
 // Exports: default
 
-// Module 8960 (CloseButton)
+// Module 8964 (CloseButton)
 function CloseButton() {
   const obj = {
     source: importDefault(dependencyMap[4]),
@@ -49,7 +49,7 @@ export default function PlayStationLinkModal(platformType) {
       headerRight: closure_6,
       headerStyle: twoWayLinkStyles.navHeader,
       headerTitle() {
-        return callback(arg0(closure_2[8]).TwoWayLinkStepHeader, { "Null": "Lightbox Frame", "Null": "EdgeHTML" });
+        return callback(arg0(closure_2[8]).TwoWayLinkStepHeader, {});
       },
       render() {
         return callback(arg0(closure_2[9]).PlayStationLinkPreConnect, { platformType: arg0 });

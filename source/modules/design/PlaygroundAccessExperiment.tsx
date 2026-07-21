@@ -1,10 +1,10 @@
-// Module ID: 9874
-// Function ID: 76485
+// Module ID: 9879
+// Function ID: 76501
 // Name: usePlaygroundAccessExperiment
 // Dependencies: []
 // Exports: getHasPlaygroundAccess, useHasPlaygroundAccess
 
-// Module 9874 (usePlaygroundAccessExperiment)
+// Module 9879 (usePlaygroundAccessExperiment)
 function usePlaygroundAccessExperiment(design_systems_settings) {
   return apexExperiment.useConfig({ location: design_systems_settings }).enabled;
 }
@@ -12,9 +12,8 @@ function getPlaygroundAccessExperiment(location) {
   return apexExperiment.getConfig({ location }).enabled;
 }
 let closure_2 = importDefault(dependencyMap[0]);
-let obj = arg1(dependencyMap[1]);
-obj = { -1269606814: null, -1845285747: "6deb5144fd1fa39d4c62b384e76c1144", defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } };
-const apexExperiment = obj.createApexExperiment(obj);
+const apexExperiment = arg1(dependencyMap[1]).createApexExperiment({ defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } });
+const obj = arg1(dependencyMap[1]);
 const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/design/PlaygroundAccessExperiment.tsx");
 
 export default apexExperiment;

@@ -19,7 +19,7 @@ const fn = function _(moment) {
       }
       sum = str6;
     } else {
-      const obj = { "Bool(true)": null, "Null": null, "Null": null, "Null": null, "Null": null, "Null": null };
+      const obj = {};
       let str = "\u0441\u0435\u043A\u0443\u043D\u0434\u0443_\u0441\u0435\u043A\u0443\u043D\u0434\u0438_\u0441\u0435\u043A\u0443\u043D\u0434";
       const text = `${arg0} `;
       if (arg1) {
@@ -114,8 +114,7 @@ const fn = function _(moment) {
     sameElse: "L"
   };
   obj.calendar = obj;
-  const obj1 = { "Bool(false)": "isArray", "Bool(false)": "isArray", "Bool(false)": "isArray", ss: relativeTimeWithPlural, m: relativeTimeWithPlural, mm: relativeTimeWithPlural, h: "\u0433\u043E\u0434\u0438\u043D\u0443", hh: relativeTimeWithPlural, d: "\u0434\u0435\u043D\u044C", dd: relativeTimeWithPlural, M: "\u043C\u0456\u0441\u044F\u0446\u044C", MM: relativeTimeWithPlural, y: "\u0440\u0456\u043A", yy: relativeTimeWithPlural };
-  obj.relativeTime = obj1;
+  obj.relativeTime = { ss: relativeTimeWithPlural, m: relativeTimeWithPlural, mm: relativeTimeWithPlural, h: "\u0433\u043E\u0434\u0438\u043D\u0443", hh: relativeTimeWithPlural, d: "\u0434\u0435\u043D\u044C", dd: relativeTimeWithPlural, M: "\u043C\u0456\u0441\u044F\u0446\u044C", MM: relativeTimeWithPlural, y: "\u0440\u0456\u043A", yy: relativeTimeWithPlural };
   obj.meridiemParse = /ночі|ранку|дня|вечора/;
   obj.isPM = function isPM(arg0) {
     return /^(дня|вечора)$/.test(arg0);
@@ -166,7 +165,7 @@ if ("object" === typeof exports) {
 }
 if ("function" === typeof globalThis.define) {
   if (globalThis.define.amd) {
-    globalThis.define([1782644737], fn);
+    globalThis.define(["HH:mm:ss"], fn);
   }
 }
 fn(this.moment);

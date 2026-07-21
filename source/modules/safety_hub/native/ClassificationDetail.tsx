@@ -1,10 +1,10 @@
-// Module ID: 11009
-// Function ID: 85658
+// Module ID: 11014
+// Function ID: 85679
 // Name: ClassificationHeader
 // Dependencies: []
 // Exports: default
 
-// Module 11009 (ClassificationHeader)
+// Module 11014 (ClassificationHeader)
 function ClassificationHeader(classificationTypeText) {
   classificationTypeText = classificationTypeText.classificationTypeText;
   const arg1 = classificationTypeText;
@@ -79,7 +79,7 @@ function ClassificationActionsTaken(arg0) {
     let tmp11 = null;
     if (null != classificationExpiration) {
       const obj2 = { style: tmp2.classificationActionDescription };
-      const obj3 = { variant: "text-xs/normal", children: [null, null] };
+      const obj3 = { variant: "text-xs/normal", children: ["Date", "padding"] };
       const items4 = [callback2(arg1(dependencyMap[9]).Text, obj3), ];
       const obj4 = { variant: "text-xs/normal" };
       const intl2 = arg1(dependencyMap[11]).intl;
@@ -111,7 +111,7 @@ function ClassificationActionsTakenRows(action) {
   return callback(closure_15, {
     children: descriptions.map((children) => {
       let obj = { style: lib.classificationActionDescription };
-      const items = [callback2(lib(closure_2[9]).Text, { variant: "text-xs/normal", children: [null, null] }), ];
+      const items = [callback2(lib(closure_2[9]).Text, { variant: "text-xs/normal", children: ["Date", "padding"] }), ];
       obj = { variant: "text-xs/normal", children };
       items[1] = callback(lib(closure_2[9]).Text, obj);
       obj.children = items;
@@ -156,7 +156,7 @@ function ClassificationPolicyCard(classificationDescription) {
   obj.children = callback(arg1(dependencyMap[16]).ShieldIcon, obj1);
   const items1 = [callback(closure_4, obj), ];
   const obj2 = { style: tmp.classificationPolicyCardContent };
-  const obj3 = { INTEGRATION_CREATE: null, ConstraintReasonCode: null };
+  const obj3 = {};
   const intl = arg1(dependencyMap[11]).intl;
   obj3.children = intl.format(arg1(dependencyMap[11]).t.zxUdpj, { classificationDescription: classificationDescription.classificationTypeText });
   obj2.children = callback(arg1(dependencyMap[9]).Text, obj3);
@@ -177,7 +177,7 @@ function LetUsKnow(arg0) {
   const intl = arg1(dependencyMap[11]).intl;
   obj = {
     letUsKnowHook(children) {
-      const obj = { sendAnalytics: "no-hide-descendants", renderSettingSearchResultItem: "text-xs/semibold", MISSED_MESSAGES_DEFAULT: 1, onPress: children.onPressLetUsKnow, children };
+      const obj = { <string:1641826129>: "no-hide-descendants", <string:1536381433>: "text-xs/semibold", <string:217770353>: 1, onPress: children.onPressLetUsKnow, children };
       return callback(children(closure_2[9]).Text, obj, arg1);
     }
   };
@@ -218,21 +218,21 @@ let obj = arg1(dependencyMap[7]);
 obj = {};
 obj = { backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_BASE_LOWER };
 obj.root = obj;
-const obj1 = { position: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000345170740166158, top: -5125110894363053500000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, height: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007293801377177428, paddingTop: importDefault(dependencyMap[8]).space.PX_16, paddingHorizontal: importDefault(dependencyMap[8]).space.PX_16, gap: importDefault(dependencyMap[8]).space.PX_32 };
-obj.container = obj1;
 const tmp4 = arg1(dependencyMap[6]);
+obj.container = { paddingTop: importDefault(dependencyMap[8]).space.PX_16, paddingHorizontal: importDefault(dependencyMap[8]).space.PX_16, gap: importDefault(dependencyMap[8]).space.PX_32 };
+const obj1 = { paddingTop: importDefault(dependencyMap[8]).space.PX_16, paddingHorizontal: importDefault(dependencyMap[8]).space.PX_16, gap: importDefault(dependencyMap[8]).space.PX_32 };
 obj.header = { gap: importDefault(dependencyMap[8]).space.PX_8, marginBottom: importDefault(dependencyMap[8]).space.PX_8 };
-obj.headerText = { paddingLeft: 40, marginVertical: "center" };
+obj.headerText = { -1638638898: 40, -1162050051: "center" };
 const obj2 = { gap: importDefault(dependencyMap[8]).space.PX_8, marginBottom: importDefault(dependencyMap[8]).space.PX_8 };
 obj.sectionContainer = { display: "flex", gap: importDefault(dependencyMap[8]).space.PX_8 };
-const obj4 = { "Bool(false)": -36023964, "Bool(false)": 17896257, "Bool(false)": 763249152, paddingLeft: importDefault(dependencyMap[8]).space.PX_4, gap: importDefault(dependencyMap[8]).space.PX_8 };
-obj.actionsTaken = obj4;
 const obj3 = { display: "flex", gap: importDefault(dependencyMap[8]).space.PX_8 };
+obj.actionsTaken = { paddingLeft: importDefault(dependencyMap[8]).space.PX_4, gap: importDefault(dependencyMap[8]).space.PX_8 };
+const obj4 = { paddingLeft: importDefault(dependencyMap[8]).space.PX_4, gap: importDefault(dependencyMap[8]).space.PX_8 };
 obj.classificationDetailContainer = { gap: importDefault(dependencyMap[8]).space.PX_32 };
-obj.letUsKnowContainer = { "Bool(true)": true, "Bool(true)": true };
-const obj6 = { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, gap: importDefault(dependencyMap[8]).space.PX_12, padding: importDefault(dependencyMap[8]).space.PX_12, marginTop: importDefault(dependencyMap[8]).space.PX_4, flexShrink: 1, backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_BASE_LOWEST };
+obj.letUsKnowContainer = { -1861163602: true, -738052821: true };
+const obj6 = { -9223372036854775808: 1393, 9223372036854775807: -1535160064, -9223372036854775808: -163464863, 0: "y", gap: importDefault(dependencyMap[8]).space.PX_12, padding: importDefault(dependencyMap[8]).space.PX_12, marginTop: importDefault(dependencyMap[8]).space.PX_4, flexShrink: 1, backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_BASE_LOWEST };
 obj.classificationPolicyCard = obj6;
-const obj7 = { "Null": true, "Null": true, "Null": true, flexDirection: true, marginBottom: true, display: true, backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_MOD_STRONG, borderRadius: importDefault(dependencyMap[8]).radii.xxl };
+const obj7 = { "Bool(true)": null, "Bool(true)": null, "Bool(true)": null, "Bool(true)": null, "Bool(true)": null, "Bool(true)": null, backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_MOD_STRONG, borderRadius: importDefault(dependencyMap[8]).radii.xxl };
 obj.classificationPolicyCardIcon = obj7;
 obj.classificationPolicyCardContent = { flex: 1 };
 const obj5 = { gap: importDefault(dependencyMap[8]).space.PX_32 };

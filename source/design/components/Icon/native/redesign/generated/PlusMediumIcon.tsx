@@ -1,15 +1,14 @@
-// Module ID: 11770
-// Function ID: 91370
+// Module ID: 11777
+// Function ID: 91393
 // Name: PlusMediumIcon
 // Dependencies: [0, 0, 0, 0, 0, 0]
 // Exports: PlusMediumIcon
 
-// Module 11770 (PlusMediumIcon)
-import "result";
-import { jsx } from "result";
-import result from "result";
+// Module 11777 (PlusMediumIcon)
+import "__exportStarResult1";
+import { jsx } from "__exportStarResult1";
 
-result = result.fileFinishedImporting("design/components/Icon/native/redesign/generated/PlusMediumIcon.tsx");
+const result = require("__exportStarResult1").fileFinishedImporting("design/components/Icon/native/redesign/generated/PlusMediumIcon.tsx");
 
 export const PlusMediumIcon = function PlusMediumIcon(color) {
   let INTERACTIVE_ICON_DEFAULT = color.color;

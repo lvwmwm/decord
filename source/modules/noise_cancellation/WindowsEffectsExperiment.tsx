@@ -1,10 +1,10 @@
-// Module ID: 10709
-// Function ID: 83361
+// Module ID: 10715
+// Function ID: 83384
 // Name: getWindowsAudioEffectsExperimentConfig
 // Dependencies: []
 // Exports: useWindowsAudioEffectsExperimentConfig
 
-// Module 10709 (getWindowsAudioEffectsExperimentConfig)
+// Module 10715 (getWindowsAudioEffectsExperimentConfig)
 function getWindowsAudioEffectsExperimentConfig(location) {
   return config.getConfig({ location: location.location });
 }

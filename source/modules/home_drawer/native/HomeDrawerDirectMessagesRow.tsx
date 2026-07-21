@@ -1,10 +1,10 @@
-// Module ID: 14706
-// Function ID: 110954
+// Module ID: 14713
+// Function ID: 110978
 // Name: HomeDrawerDMsRow
 // Dependencies: []
 // Exports: default
 
-// Module 14706 (HomeDrawerDMsRow)
+// Module 14713 (HomeDrawerDMsRow)
 function HomeDrawerDMsRow() {
   const tmp = callback3();
   let obj = arg1(dependencyMap[8]);
@@ -18,7 +18,7 @@ function HomeDrawerDMsRow() {
     obj = { style: tmp.subtitle };
     obj = { style: tmp.onlineDot };
     const items1 = [callback(View, obj), ];
-    const obj1 = { 9223372036854775807: 3309567, 9223372036854775807: 601874432, 9223372036854775807: 4319821 };
+    const obj1 = { -9223372036854775808: "<string:2682257408>", 0: null, 0: null };
     const intl = arg1(dependencyMap[10]).intl;
     const obj2 = { numFriends: stateFromStores };
     obj1.children = intl.format(arg1(dependencyMap[10]).t.N5UIKr, obj2);
@@ -27,7 +27,7 @@ function HomeDrawerDMsRow() {
     tmp3 = callback2(View, obj);
   }
   const obj3 = {};
-  const obj4 = {};
+  const obj4 = { -9223372036854775808: true, 0: true, 0: true };
   const intl2 = arg1(dependencyMap[10]).intl;
   obj4.children = intl2.string(arg1(dependencyMap[10]).t.YUU0RF);
   obj3.title = callback(arg1(dependencyMap[9]).Text, obj4);
@@ -41,8 +41,8 @@ let closure_5 = importDefault(dependencyMap[3]);
 const StatusTypes = arg1(dependencyMap[4]).StatusTypes;
 ({ jsx: closure_7, jsxs: closure_8 } = arg1(dependencyMap[5]));
 let obj = arg1(dependencyMap[6]);
-obj = { subtitle: {} };
-obj = { borderRadius: importDefault(dependencyMap[7]).radii.round, backgroundColor: importDefault(dependencyMap[7]).colors.TEXT_STATUS_ONLINE };
+obj = { subtitle: { <string:3461472865>: "safety_user_sentiment_notice_dismissed_at", <string:1447977218>: "message", <string:1640807382>: null } };
+obj = { bhk: 800, bic: 16, borderRadius: importDefault(dependencyMap[7]).radii.round, backgroundColor: importDefault(dependencyMap[7]).colors.TEXT_STATUS_ONLINE };
 obj.onlineDot = obj;
 let closure_9 = obj.createStyles(obj);
 const tmp3 = arg1(dependencyMap[5]);

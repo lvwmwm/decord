@@ -1,9 +1,9 @@
-// Module ID: 5882
-// Function ID: 49697
+// Module ID: 5884
+// Function ID: 49740
 // Name: metadata
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 5882 (metadata)
+// Module 5884 (metadata)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/AvatarSpellcastExample-2x.png.js");
 

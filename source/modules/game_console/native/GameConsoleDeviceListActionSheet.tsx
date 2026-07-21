@@ -1,10 +1,10 @@
-// Module ID: 9036
-// Function ID: 70990
+// Module ID: 9040
+// Function ID: 71002
 // Name: TransferFooter
 // Dependencies: []
 // Exports: default
 
-// Module 9036 (TransferFooter)
+// Module 9040 (TransferFooter)
 function TransferFooter(arg0) {
   let onPress;
   let transferring;
@@ -37,11 +37,11 @@ function EmptyState() {
   let obj = { style: tmp.emptyContainer };
   obj = { source: importDefault(dependencyMap[14]), style: tmp.emptyArt };
   const items = [callback2(closure_8, obj), , ];
-  obj = { style: tmp.emptyHeader };
+  obj = { "Null": "781324642736144424", "Null": null, "Null": "Cheerful Choco preens against window", style: tmp.emptyHeader };
   const intl = arg1(dependencyMap[11]).intl;
   obj.children = intl.string(arg1(dependencyMap[11]).t.OkJf1e);
   items[1] = callback2(arg1(dependencyMap[13]).Text, obj);
-  const obj1 = { style: tmp.emptyBody };
+  const obj1 = { "Null": "absolute", "Null": 0, "Null": "center", style: tmp.emptyBody };
   const intl2 = arg1(dependencyMap[11]).intl;
   obj1.children = intl2.string(arg1(dependencyMap[11]).t.of/l5Z);
   items[2] = callback2(arg1(dependencyMap[13]).Text, obj1);
@@ -57,22 +57,22 @@ const ComponentActions = arg1(dependencyMap[5]).ComponentActions;
 const tmp2 = arg1(dependencyMap[3]);
 ({ jsx: closure_12, jsxs: closure_13, Fragment: closure_14 } = arg1(dependencyMap[6]));
 let obj = arg1(dependencyMap[7]);
-obj = { container: { "Null": false, "Null": false, "Null": false }, loading: { minHeight: 56 } };
-obj = { borderWidth: "\u{1F469}\u{1F3FD}\u200D\u{1F9B1}", alignSelf: true, paddingVertical: null, backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_SURFACE_HIGH };
+obj = { container: { "Null": "RTC_CONNECTION_LOSS_RATE", "Null": "handleJoinThreadVoice", "Null": "toString" }, loading: { minHeight: 56 } };
+obj = { "Bool(false)": "\u{1F469}\u{1F3FD}\u200D\u{1F9B1}", "Bool(false)": true, "Bool(false)": null, backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_SURFACE_HIGH };
 obj.footerContainer = obj;
 const tmp3 = arg1(dependencyMap[6]);
 obj.radioItem = { backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_SURFACE_HIGH, borderRadius: importDefault(dependencyMap[8]).radii.xs, padding: 16 };
-const obj1 = { backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_SURFACE_HIGH, borderRadius: importDefault(dependencyMap[8]).radii.xs, padding: 16 };
-obj.deviceIcon = { tintColor: importDefault(dependencyMap[8]).colors.MOBILE_TEXT_HEADING_PRIMARY };
-obj.deviceOption = { lineHeight: 815972, paddingTop: 786432, flex: 131072 };
+const obj2 = { fontSize: true, marginBottom: true, fontFamily: true, tintColor: importDefault(dependencyMap[8]).colors.MOBILE_TEXT_HEADING_PRIMARY };
+obj.deviceIcon = obj2;
+obj.deviceOption = { "Bool(true)": "2bprXx", "Bool(true)": "isArray", "Bool(true)": "PurchaseTypeToAnalyticsPaymentType" };
 obj.deviceText = { flexShrink: 1 };
 obj.emptyContainer = {};
 obj.emptyArt = { marginBottom: 16 };
-obj.emptyHeader = { bounces: null, keyboardShouldPersistTaps: null };
+obj.emptyHeader = { "Null": null, "Null": null };
 obj.emptyBody = { textAlign: "center" };
 obj.infoBox = { marginTop: 8 };
 let closure_15 = obj.createStyles(obj);
-const obj2 = { tintColor: importDefault(dependencyMap[8]).colors.MOBILE_TEXT_HEADING_PRIMARY };
+const obj1 = { backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_SURFACE_HIGH, borderRadius: importDefault(dependencyMap[8]).radii.xs, padding: 16 };
 const result = arg1(dependencyMap[26]).fileFinishedImporting("modules/game_console/native/GameConsoleDeviceListActionSheet.tsx");
 
 export default function GameConsoleListActionSheet(arg0) {

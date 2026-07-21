@@ -1,10 +1,10 @@
-// Module ID: 15628
-// Function ID: 119350
+// Module ID: 15635
+// Function ID: 119374
 // Name: isVoicePanelParticipantFocusable
 // Dependencies: []
 // Exports: default
 
-// Module 15628 (isVoicePanelParticipantFocusable)
+// Module 15635 (isVoicePanelParticipantFocusable)
 function isVoicePanelParticipantFocusable(guildId, channelId, embeddedActivityParticipantId, arg3, closure_4) {
   let obj = arg3;
   let tmp = closure_4;

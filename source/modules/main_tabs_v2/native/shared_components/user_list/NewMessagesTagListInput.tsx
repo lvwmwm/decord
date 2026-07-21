@@ -1,8 +1,8 @@
-// Module ID: 11394
-// Function ID: 88679
+// Module ID: 11401
+// Function ID: 88703
 // Dependencies: []
 
-// Module 11394
+// Module 11401
 let num = 0;
 const importAllResult = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
@@ -85,7 +85,7 @@ const memoResult = importAllResult.memo(function NewMessagesTagListInput(forceSe
     }
   }
   obj.footer = tmp6;
-  const obj3 = { 1636914090: null, 1893537216: null, -2103050236: null, "Null": null, style: tmp.header };
+  const obj3 = { style: tmp.header };
   const intl2 = arg1(dependencyMap[12]).intl;
   obj3.children = intl2.string(arg1(dependencyMap[12]).t.kHyiXs);
   obj.icon = jsx(arg1(dependencyMap[15]).Text, obj3);

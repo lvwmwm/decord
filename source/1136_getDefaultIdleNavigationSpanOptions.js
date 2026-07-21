@@ -6,7 +6,7 @@
 
 // Module 1136 (getDefaultIdleNavigationSpanOptions)
 function getDefaultIdleNavigationSpanOptions() {
-  const obj = { -9223372036854775808: "white", 0: 15, 0: "500", name: closure_3, scope: require(dependencyMap[1]).getCurrentScope() };
+  const obj = { "Bool(false)": true, "Bool(false)": 5, "Bool(false)": true, name: closure_3, scope: require(dependencyMap[1]).getCurrentScope() };
   return obj;
 }
 function isSentryInteractionSpan(activeSpan) {
@@ -19,7 +19,7 @@ function clearActiveSpanFromScope(currentScope) {
 }
 const AppState = require(dependencyMap[0]).AppState;
 let closure_3 = "Route Change";
-const obj = { compressionMethod: 20, GemLevel2SpotIllustration: null };
+const obj = {};
 function startIdleSpan(name) {
   let finalTimeout;
   let idleTimeout;

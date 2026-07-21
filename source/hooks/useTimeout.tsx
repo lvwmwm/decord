@@ -1,10 +1,10 @@
-// Module ID: 7187
-// Function ID: 57876
+// Module ID: 7191
+// Function ID: 57887
 // Name: useTimeout
 // Dependencies: []
 // Exports: default
 
-// Module 7187 (useTimeout)
+// Module 7191 (useTimeout)
 const _module = require(dependencyMap[0]);
 ({ useEffect: closure_0, useRef: closure_1 } = _module);
 const _module1 = require(dependencyMap[1]);

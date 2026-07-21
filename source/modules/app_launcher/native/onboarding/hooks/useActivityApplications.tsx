@@ -1,10 +1,10 @@
-// Module ID: 11141
-// Function ID: 86646
+// Module ID: 11147
+// Function ID: 86669
 // Name: useActivityApplications
 // Dependencies: []
 // Exports: useActivityApplications
 
-// Module 11141 (useActivityApplications)
+// Module 11147 (useActivityApplications)
 let closure_3 = importAll(dependencyMap[0]);
 const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/app_launcher/native/onboarding/hooks/useActivityApplications.tsx");
 

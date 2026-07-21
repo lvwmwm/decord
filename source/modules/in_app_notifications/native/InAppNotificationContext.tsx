@@ -1,10 +1,10 @@
-// Module ID: 10258
-// Function ID: 79257
+// Module ID: 10264
+// Function ID: 79276
 // Name: context
 // Dependencies: []
 // Exports: useInAppNotificationContext
 
-// Module 10258 (context)
+// Module 10264 (context)
 const importAllResult = importAll(dependencyMap[0]);
 const context = importAllResult.createContext(undefined);
 const result = arg1(dependencyMap[1]).fileFinishedImporting("modules/in_app_notifications/native/InAppNotificationContext.tsx");

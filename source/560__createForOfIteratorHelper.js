@@ -162,7 +162,7 @@ class Agent {
 let num = 0;
 let closure_0 = require(dependencyMap[0]);
 let closure_1 = 0;
-const items = ["<string:373358592>", "<string:4026532428>", "<string:448568340>", "<string:785150208>", "<string:882432768>", "<string:2606347776>", "<string:3911082752>", "<string:4056157952>", "<string:3867025920>", "<string:3880532992>", "<string:2510661120>", "<string:1618840320>", "<string:293628416>", "<string:529222656>", "<string:543593472>", "<string:1899399680>", "<string:2903791360>", "<string:3262909952>", "<string:2822963200>", "<string:2569871872>", "<string:2543623936>", "<string:1416526336>"];
+const items = [];
 if (0 < items.length) {
   do {
     let tmp = function _loop() {

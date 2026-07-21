@@ -1,10 +1,10 @@
-// Module ID: 11306
-// Function ID: 87998
+// Module ID: 11312
+// Function ID: 88021
 // Name: useRequest
 // Dependencies: []
 // Exports: default
 
-// Module 11306 (useRequest)
+// Module 11312 (useRequest)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 let closure_5 = importAll(dependencyMap[2]);

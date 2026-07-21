@@ -1,10 +1,10 @@
-// Module ID: 11974
-// Function ID: 92585
+// Module ID: 11981
+// Function ID: 92608
 // Name: useIsGameFriends
 // Dependencies: []
 // Exports: useIsGameFriends
 
-// Module 11974 (useIsGameFriends)
+// Module 11981 (useIsGameFriends)
 let closure_2 = importDefault(dependencyMap[0]);
 let closure_3 = importDefault(dependencyMap[1]);
 const RelationshipTypes = arg1(dependencyMap[2]).RelationshipTypes;

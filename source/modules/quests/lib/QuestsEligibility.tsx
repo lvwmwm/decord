@@ -1,10 +1,10 @@
-// Module ID: 10448
-// Function ID: 80892
+// Module ID: 10454
+// Function ID: 80915
 // Name: getIsEligibleForQuests
 // Dependencies: [6, 7]
 // Exports: getIsEligibleForQuests
 
-// Module 10448 (getIsEligibleForQuests)
+// Module 10454 (getIsEligibleForQuests)
 import _defineProperties from "_defineProperties";
 
 const result = _defineProperties.fileFinishedImporting("modules/quests/lib/QuestsEligibility.tsx");

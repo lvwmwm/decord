@@ -1,22 +1,22 @@
-// Module ID: 13527
-// Function ID: 102642
+// Module ID: 13534
+// Function ID: 102665
 // Name: SafetyHubAccountStandingSubwayMarker
 // Dependencies: []
 // Exports: default
 
-// Module 13527 (SafetyHubAccountStandingSubwayMarker)
+// Module 13534 (SafetyHubAccountStandingSubwayMarker)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 ({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[2]));
 let obj = arg1(dependencyMap[3]);
 obj = { container: {} };
-obj = { marginTop: "position", marginRight: "constructor", borderColor: "Array", borderStyle: "isArray", padding: importDefault(dependencyMap[4]).space.PX_4, borderRadius: importDefault(dependencyMap[4]).radii.round, backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_SURFACE_HIGH };
+obj = { -77157802: null, 1448895136: null, 1318212010: null, 760526433: null, padding: importDefault(dependencyMap[4]).space.PX_4, borderRadius: importDefault(dependencyMap[4]).radii.round, backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_SURFACE_HIGH };
 obj.marker = obj;
-const obj1 = { backgroundSize: null, borderRadius: importDefault(dependencyMap[4]).radii.round, marginBottom: "ic_star_filled", 1185043192: "png", -1604149351: true, backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_BASE_LOWEST };
+const obj1 = { backgroundSize: null, borderRadius: importDefault(dependencyMap[4]).radii.round, marginBottom: "ic_star_filled", -1366600968: "png", -1604149424: true, backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_BASE_LOWEST };
 obj.empty = obj1;
 obj.label = { textAlign: "center" };
 obj.firstOption = {};
-obj.lastOption = { -1617344862: null, 1375445090: null };
+obj.lastOption = { -1622102389: null, 1375445090: null };
 let closure_6 = obj.createStyles(obj);
 const tmp3 = arg1(dependencyMap[2]);
 const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/safety_hub/native/SafetyHubAccountStandingSubwayMarker.tsx");
@@ -74,7 +74,7 @@ export default function SafetyHubAccountStandingSubwayMarker(arg0) {
         obj.variant = "text-xxs/bold";
         obj.children = children;
       } else {
-        obj = { "Bool(false)": "sEAnVH", "Bool(false)": "type", style: tmp.label, children };
+        obj = { style: tmp.label, children };
       }
       return closure_4(lib(closure_4[6]).Text, obj, arg1);
     }

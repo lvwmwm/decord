@@ -1,10 +1,10 @@
-// Module ID: 9368
-// Function ID: 73084
+// Module ID: 9372
+// Function ID: 73098
 // Name: getPremiumUpsellType
 // Dependencies: []
 // Exports: default
 
-// Module 9368 (getPremiumUpsellType)
+// Module 9372 (getPremiumUpsellType)
 function getPremiumUpsellType(arg0) {
   if (arg1(dependencyMap[6]).EntitlementFeatureNames.SOUNDBOARD_EVERYWHERE === arg0) {
     return constants.SOUNDBOARD_EVERYWHERE_INLINE_UPSELL;
@@ -144,12 +144,12 @@ let closure_14 = arg1(dependencyMap[9]).createStyles((arg0) => {
   obj["shadowColor"] = arg0 ? unsafe_rawColors.PREMIUM_TIER_0_BLUE_FOR_GRADIENTS_2 : unsafe_rawColors.PREMIUM_TIER_2_PURPLE_FOR_GRADIENTS_2;
   obj["shadowOpacity"] = 0.6;
   obj.containerShadow = obj;
-  const obj1 = { aze: false, azj: false, marginEnd: importDefault(dependencyMap[10]).space.PX_4 };
+  const obj1 = { bhk: false, bic: "internal", marginEnd: importDefault(dependencyMap[10]).space.PX_4 };
   obj.nitroWheel = obj1;
-  const obj2 = { VOICE_WATCHDOG_TIMEOUT: "24c4788690396bae9cc4c1af395a6a87", staticAuthSessionId: "BicycleIcon", NUMERICIDENTIFIER: "png", marginEnd: importDefault(dependencyMap[10]).space.PX_4 };
+  const obj2 = { "Null": "png", "Null": "SERVER_GUIDE_CHANNEL_SELECTED", "Null": "_gameProfileResults", marginEnd: importDefault(dependencyMap[10]).space.PX_4 };
   obj.labelContainer = obj2;
   obj.text = {};
-  obj.nitroWheelButton = { hoverGestureHandlerProps: 24, paddingVertical: 24, display: null };
+  obj.nitroWheelButton = {};
   obj.nitroWheelDisabled = { opacity: 0.6 };
   obj.button = { alignSelf: "center", borderRadius: importDefault(dependencyMap[10]).radii.round };
   const merged1 = Object.assign(absoluteFillObject.absoluteFillObject);

@@ -1,10 +1,10 @@
-// Module ID: 15128
-// Function ID: 114184
+// Module ID: 15135
+// Function ID: 114208
 // Name: UnavailableNotice
 // Dependencies: []
 // Exports: default
 
-// Module 15128 (UnavailableNotice)
+// Module 15135 (UnavailableNotice)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 ({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[2]));

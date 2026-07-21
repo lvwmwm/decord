@@ -1,15 +1,15 @@
-// Module ID: 13738
-// Function ID: 103953
+// Module ID: 13745
+// Function ID: 103976
 // Name: XboxTwoWayLinkUpsell
 // Dependencies: []
 // Exports: XboxTwoWayLinkUpsell
 
-// Module 13738 (XboxTwoWayLinkUpsell)
+// Module 13745 (XboxTwoWayLinkUpsell)
 importAll(dependencyMap[0]);
 ({ HelpdeskArticles: closure_3, AnalyticsLocations: closure_4 } = arg1(dependencyMap[1]));
 const jsx = arg1(dependencyMap[2]).jsx;
 const tmp3 = arg1(dependencyMap[1]);
-let closure_6 = arg1(dependencyMap[3]).createStyles({ upsellImage: { 1364605794: true, 1382121511: true, 1637712977: true } });
+let closure_6 = arg1(dependencyMap[3]).createStyles({ upsellImage: { drawerX: true, "Bool(true)": true, "Bool(true)": true } });
 const obj = arg1(dependencyMap[3]);
 const result = arg1(dependencyMap[11]).fileFinishedImporting("modules/user_settings/connections/native/two_way_link/xbox/XboxTwoWayLinkUpsell.tsx");
 

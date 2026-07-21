@@ -1,10 +1,10 @@
-// Module ID: 12214
-// Function ID: 93776
+// Module ID: 12221
+// Function ID: 93799
 // Name: LeaveGuildElement
 // Dependencies: []
 // Exports: default
 
-// Module 12214 (LeaveGuildElement)
+// Module 12221 (LeaveGuildElement)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 const AnalyticEvents = arg1(dependencyMap[2]).AnalyticEvents;

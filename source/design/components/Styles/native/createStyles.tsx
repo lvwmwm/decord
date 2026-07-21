@@ -214,9 +214,9 @@ let closure_3 = importDefault(dependencyMap[0]);
 const processColor = arg1(dependencyMap[1]).processColor;
 let closure_5 = importDefault(dependencyMap[2]);
 let closure_6 = importDefault(dependencyMap[3]);
-new Set(["isArray", "x", "withSpring", "icon", "Array", "isArray", "push", "intl", "r", "isArray", "x", "context", "formatToPlainString", "Array", "isArray", "Path", "ti"]);
+new Set([]);
 let closure_7 = Symbol.for("dynamicToken");
-let closure_8 = [false, false, false];
+let closure_8 = [];
 let closure_9 = { code: "function createStylesTsx1(){const{resolvedStyles,withTiming,interpolateColor,themeIndex,stops,timingStandard}=this.__closure;const result={};for(const propertyName in resolvedStyles){const value=resolvedStyles[propertyName];if(Array.isArray(value)){result[propertyName]=withTiming(interpolateColor(themeIndex.get(),stops,value),timingStandard);}else{result[propertyName]=value;}}return result;}" };
 const result = arg1(dependencyMap[13]).fileFinishedImporting("design/components/Styles/native/createStyles.tsx");
 
@@ -224,10 +224,10 @@ export const experimental_createToken = function experimental_createToken(arg0) 
   const arg1 = arg0;
   return { [closure_7]: (arg0) => arg0(arg0) };
 };
-export const createStyles = function createStyles(result) {
-  const arg1 = result;
+export const createStyles = function createStyles(__exportStarResult1) {
+  const arg1 = __exportStarResult1;
   const importDefault = new Map();
-  let closure_2 = "function" === typeof result;
+  let closure_2 = "function" === typeof __exportStarResult1;
   return (arg0) => {
     const items = [...arguments];
     arg0 = items;
@@ -278,8 +278,8 @@ export const createStyles = function createStyles(result) {
     }
   };
 };
-export const createLegacyClassComponentStyles = function createLegacyClassComponentStyles(result) {
-  const arg1 = result;
+export const createLegacyClassComponentStyles = function createLegacyClassComponentStyles(__exportStarResult1) {
+  const arg1 = __exportStarResult1;
   const importDefault = new Map();
   return (key) => {
     const FALLBACK_THEME_CONTEXT_VALUE = key(closure_2[4]).FALLBACK_THEME_CONTEXT_VALUE;

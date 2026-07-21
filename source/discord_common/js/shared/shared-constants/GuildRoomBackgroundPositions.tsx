@@ -1,10 +1,10 @@
-// Module ID: 15921
-// Function ID: 122130
+// Module ID: 15928
+// Function ID: 122156
 // Name: GUILD_ROOM_BACKGROUND_POSITIONS
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 15921 (GUILD_ROOM_BACKGROUND_POSITIONS)
-const items = [{ "Null": null, "Null": 200 }, { "Null": "<string:9271104>", "Null": "<string:9371648>" }, {}, {}, { "Null": "showAllButtonUnderline", "Null": "STL" }, {}, { "Null": "%ArrayProto_keys%", "Null": "VIEW_GUILD_ANALYTICS" }, {}, {}, { "Null": 302, "Null": 202 }, { "Null": null, "Null": "21f19c3533062eebc26337b4e7ba590a" }, {}, { "Null": true, "Null": true }, { "Null": 548470788, "Null": 57737217 }, {}, {}, { "Null": "emptyStateBody", "Null": "<string:24183040>" }, { "Null": false, "Null": "NOTIFICATION_SETTINGS_MODAL_OPEN" }, {}, { "Null": null, "Null": false }, {}];
+// Module 15928 (GUILD_ROOM_BACKGROUND_POSITIONS)
+const items = [{}, { max: "<string:9075008>", guildId: "<string:9371648>" }, { max: "isArray", guildId: "isArray" }, { max: null, guildId: 200 }, { max: null, guildId: null }, { max: "<string:675624649>", guildId: "<string:373772547>" }, { max: null, guildId: null }, {}, {}, { max: "<string:1115570689>", guildId: "<string:543817730>" }, {}, { max: false, guildId: false }, {}, { max: "text-sm/medium", guildId: "text-default" }, {}, {}, { max: "GUILD_BOOSTING_BLUE", guildId: "<string:24183040>" }, { max: false, guildId: "NOTIFICATION_SETTINGS_MODAL_OPEN" }, { max: "enable_summary_reminder_notifications", guildId: "message" }, { max: null, guildId: false }, {}];
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_common/js/shared/shared-constants/GuildRoomBackgroundPositions.tsx");
 

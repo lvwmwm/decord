@@ -1,10 +1,10 @@
-// Module ID: 11450
-// Function ID: 89229
+// Module ID: 11457
+// Function ID: 89253
 // Name: useChangelogRenderedAnalytics
 // Dependencies: []
 // Exports: default
 
-// Module 11450 (useChangelogRenderedAnalytics)
+// Module 11457 (useChangelogRenderedAnalytics)
 let closure_3 = importAll(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 let closure_5 = importDefault(dependencyMap[2]);

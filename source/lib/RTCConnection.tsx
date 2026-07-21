@@ -1,9 +1,9 @@
-// Module ID: 4196
-// Function ID: 36171
+// Module ID: 4200
+// Function ID: 36219
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 
-// Module 4196 (_createForOfIteratorHelperLoose)
+// Module 4200 (_createForOfIteratorHelperLoose)
 function _createForOfIteratorHelperLoose(@@iterator) {
   let arg1 = Symbol_iterator;
   @@iterator = "undefined" !== typeof Symbol;
@@ -1613,7 +1613,7 @@ const tmp4 = (arg0) => {
           const logger = self.logger;
           logger.warn(arg0);
         });
-        self._trackMLSFailures({});
+        self._trackMLSFailures({ info: null, newMessages: null });
         let preferredRegion = null;
         if (store3.shouldIncludePreferredRegion()) {
           preferredRegion = store3.getPreferredRegion();
@@ -1907,7 +1907,7 @@ const tmp4 = (arg0) => {
       const config = ProcessBoostExperiment.getConfig({ location: "media_engine_connect" });
       ({ processPriority, threadPriorityConfiguration } = config);
       if (0 === arr.length) {
-        let obj = { type: constants7.VIDEO, ssrc: ssrc + 1, rtxSsrc: ssrc + 2 };
+        let obj = { e: "a", window: "isArray", k: "defineProperty", body: "construct", id: "a", accessibilityRole: "isArray", type: constants7.VIDEO, ssrc: ssrc + 1, rtxSsrc: ssrc + 2 };
         arr.push(obj);
       }
       const mediaEngine = store2.getMediaEngine();
@@ -3071,7 +3071,7 @@ const tmp4 = (arg0) => {
       this._secureFramesTransitionPrepareCount = this._secureFramesTransitionPrepareCount + 1;
       closure_3 = RTCConnection(closure_3[22]).now();
       if (0 === arg1) {
-        self._trackMLSFailures({ AGE_VERIFICATION_MODAL_CLICKED: null, transfer-encoding: null });
+        self._trackMLSFailures({ info: null, newMessages: null });
       }
       const _connection = self._connection;
       if (null != _connection) {
@@ -3220,7 +3220,7 @@ const tmp4 = (arg0) => {
         const result = _connection.prepareMLSCommitTransition(arg0, arg1, (arg0, protocolVersion) => {
           let obj = self;
           if (arg0) {
-            obj._trackMLSFailures({ AGE_VERIFICATION_MODAL_CLICKED: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000021043611947808288, transfer-encoding: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000053357352779429986 });
+            obj._trackMLSFailures({ info: true, newMessages: true });
             obj._mlsSessionResetStartTime = undefined;
             const result = obj._handleSecureFramesRosterChange(arg2, arg0);
             const result1 = obj._maybeSendSecureFramesTransitionReady(arg0);
@@ -3251,7 +3251,7 @@ const tmp4 = (arg0) => {
         _connection.processMLSWelcome(arg0, arg1, (arg0, protocolVersion) => {
           let obj = self;
           if (arg0) {
-            obj._trackMLSFailures({ AGE_VERIFICATION_MODAL_CLICKED: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000021043611947808288, transfer-encoding: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000053357352779429986 });
+            obj._trackMLSFailures({ info: true, newMessages: true });
             obj._mlsSessionResetStartTime = undefined;
             const result = obj._handleSecureFramesRosterChange(arg2, arg0);
             const result1 = obj._maybeSendSecureFramesTransitionReady(arg0);

@@ -1,9 +1,9 @@
-// Module ID: 15830
-// Function ID: 121035
+// Module ID: 15837
+// Function ID: 121059
 // Name: HcaptchaModal
 // Dependencies: []
 
-// Module 15830 (HcaptchaModal)
+// Module 15837 (HcaptchaModal)
 class HcaptchaModal {
   constructor(arg0) {
     onMessage = global.onMessage;
@@ -123,7 +123,7 @@ class HcaptchaModal {
     return tmp13(tmp14, obj);
   }
 }
-let closure_3 = [3262742309352079600000000000000000000000000000000000000000000000000000000000000000000000, 0.000000001212888577822621];
+let closure_3 = [1446102559, 1401497905];
 let closure_4 = importDefault(dependencyMap[0]);
 let closure_5 = importAll(dependencyMap[1]);
 ({ ActivityIndicator: closure_6, View: closure_7, StyleSheet: closure_8 } = arg1(dependencyMap[2]));

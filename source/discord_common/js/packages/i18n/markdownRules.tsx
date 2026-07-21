@@ -1,9 +1,9 @@
-// Module ID: 15814
-// Function ID: 120933
+// Module ID: 15821
+// Function ID: 120957
 // Name: link
 // Dependencies: []
 
-// Module 15814 (link)
+// Module 15821 (link)
 const link = require(dependencyMap[0]).defaultRules.link;
 const text = require(dependencyMap[0]).defaultRules.text;
 let obj = { newline: require(dependencyMap[0]).defaultRules.newline, paragraph: require(dependencyMap[0]).defaultRules.paragraph, url: require(dependencyMap[0]).defaultRules.url };

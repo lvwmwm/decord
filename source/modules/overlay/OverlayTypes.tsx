@@ -1,9 +1,9 @@
-// Module ID: 4168
-// Function ID: 35369
+// Module ID: 4172
+// Function ID: 35417
 // Name: DevToolsFocusedPidsTrackMode
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 4168 (DevToolsFocusedPidsTrackMode)
+// Module 4172 (DevToolsFocusedPidsTrackMode)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("modules/overlay/OverlayTypes.tsx");
 

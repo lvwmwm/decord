@@ -125,7 +125,7 @@ function _getPrototypeOf(arg0) {
 function _defineProperty(arg0, arg1, value) {
   if (arg1 in arg0) {
     const _Object = Object;
-    const obj = { value };
+    const obj = { FRIEND_REQUESTS: true, ForYouLoadMore: true, QUEST_BADGE: true, GUILD_CHANNEL_INTEGRITY_CHECK_CANCELED: true, value };
     Object.defineProperty(arg0, arg1, obj);
   } else {
     arg0[arg1] = value;
@@ -162,7 +162,7 @@ export const QuarterParser = (Parser) => {
         tmp17 = closure_8(applyResult, "priority", 120);
         tmp18 = closure_6(applyResult);
         str3 = "incompatibleTokens";
-        tmp19 = closure_8(applyResult, "incompatibleTokens", []);
+        tmp19 = closure_8(applyResult, "incompatibleTokens", ["<string:120717841>", "<string:190908267>", "<string:251798610>", "<string:255091970>", "<string:1445668655>", "<string:34671051>", "<string:124454706>", "<string:37421430>", "<string:609291105>", "<string:1362518274>", "<string:879034823>", "<string:723988239>", "<string:290915425>", "<string:838992642>"]);
         return applyResult;
       } else {
         _TypeError = TypeError;
@@ -206,7 +206,7 @@ export const QuarterParser = (Parser) => {
           tmp17 = closure_8(applyResult, "priority", 120);
           tmp18 = closure_6(applyResult);
           str3 = "incompatibleTokens";
-          tmp19 = closure_8(applyResult, "incompatibleTokens", []);
+          tmp19 = closure_8(applyResult, "incompatibleTokens", ["<string:120717841>", "<string:190908267>", "<string:251798610>", "<string:255091970>", "<string:1445668655>", "<string:34671051>", "<string:124454706>", "<string:37421430>", "<string:609291105>", "<string:1362518274>", "<string:879034823>", "<string:723988239>", "<string:290915425>", "<string:838992642>"]);
           return applyResult;
         } else {
           _TypeError = TypeError;
@@ -225,7 +225,7 @@ export const QuarterParser = (Parser) => {
   if (Parser) {
     prototype = Parser.prototype;
   }
-  let obj = { EntryPointCommandButtonActions: null, NATIVE_SECTION: null, 1476351743: null, value: QuarterParser };
+  let obj = { value: QuarterParser };
   QuarterParser.prototype = Object.create(prototype, { constructor: obj });
   if (Parser) {
     class QuarterParser {
@@ -256,7 +256,7 @@ export const QuarterParser = (Parser) => {
           tmp17 = closure_8(applyResult, "priority", 120);
           tmp18 = closure_6(applyResult);
           str3 = "incompatibleTokens";
-          tmp19 = closure_8(applyResult, "incompatibleTokens", []);
+          tmp19 = closure_8(applyResult, "incompatibleTokens", ["<string:120717841>", "<string:190908267>", "<string:251798610>", "<string:255091970>", "<string:1445668655>", "<string:34671051>", "<string:124454706>", "<string:37421430>", "<string:609291105>", "<string:1362518274>", "<string:879034823>", "<string:723988239>", "<string:290915425>", "<string:838992642>"]);
           return applyResult;
         } else {
           _TypeError = TypeError;
@@ -282,11 +282,11 @@ export const QuarterParser = (Parser) => {
             const obj = { unit: "quarter" };
             return ordinalNumber.ordinalNumber(arg0, obj);
           } else if ("QQQ" === arg1) {
-            return ordinalNumber.quarter(arg0, {}) || ordinalNumber.quarter(arg0, { y: null, CHAT_INPUT_FLOATING_CONTENT_PADDING_VERTICAL: null });
+            return ordinalNumber.quarter(arg0, {}) || ordinalNumber.quarter(arg0, {});
           } else if ("QQQQQ" === arg1) {
-            return ordinalNumber.quarter(arg0, { y: null, CHAT_INPUT_FLOATING_CONTENT_PADDING_VERTICAL: null });
+            return ordinalNumber.quarter(arg0, {});
           } else {
-            return ordinalNumber.quarter(arg0, { y: 351158784, CHAT_INPUT_FLOATING_CONTENT_PADDING_VERTICAL: 596246531 }) || ordinalNumber.quarter(arg0, {}) || ordinalNumber.quarter(arg0, { y: null, CHAT_INPUT_FLOATING_CONTENT_PADDING_VERTICAL: null });
+            return ordinalNumber.quarter(arg0, {}) || ordinalNumber.quarter(arg0, {}) || ordinalNumber.quarter(arg0, {});
           }
         }
       }

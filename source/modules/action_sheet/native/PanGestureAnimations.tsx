@@ -1,11 +1,11 @@
-// Module ID: 10786
-// Function ID: 83760
+// Module ID: 10792
+// Function ID: 83783
 // Name: getNearestValue
 // Dependencies: []
 // Exports: default
 
-// Module 10786 (getNearestValue)
-let obj = { Runtime: "__closure", "Bool(false)": "Array", "Bool(false)": "isArray", "Bool(false)": "ti", "Bool(false)": "colors", "Bool(false)": "r" };
+// Module 10792 (getNearestValue)
+let obj = {};
 obj = { duration: 500, easing: require(dependencyMap[0]).STANDARD_EASING };
 let closure_4 = { code: "function getNearestValue_PanGestureAnimationsTsx1(array,measure,velocity=0){const unitVector=velocity<0?-1:velocity>0?1:0;function getSortedByMeasure(array,measure){'worklet';const sorted=new Array(...array).sort(function(left,right){const al=Math.abs(left-measure);const ar=Math.abs(right-measure);return al<ar?-1:al>ar?1:0;});return sorted;}if(array.length===0){return measure;}const sorted=getSortedByMeasure(array,measure);if(unitVector!==0){var _sorted$find;return(_sorted$find=sorted.find(function(value){const result=unitVector<0?measure>value:measure<value;return result;}))!==null&&_sorted$find!==void 0?_sorted$find:sorted[0];}return sorted[0];}" };
 let closure_5 = { code: "function getSortedByMeasure_PanGestureAnimationsTsx2(array,measure){const sorted=new Array(...array).sort(function(left,right){const al=Math.abs(left-measure);const ar=Math.abs(right-measure);return al<ar?-1:al>ar?1:0;});return sorted;}" };

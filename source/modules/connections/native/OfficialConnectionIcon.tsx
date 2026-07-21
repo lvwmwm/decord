@@ -1,10 +1,10 @@
-// Module ID: 9972
-// Function ID: 77151
+// Module ID: 9978
+// Function ID: 77169
 // Name: OfficialConnectionIcon
 // Dependencies: []
 // Exports: default
 
-// Module 9972 (OfficialConnectionIcon)
+// Module 9978 (OfficialConnectionIcon)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 ({ DEFAULT_ROLE_COLOR_HEX: closure_4, EMPTY_STRING_SNOWFLAKE_ID: closure_5 } = arg1(dependencyMap[2]));

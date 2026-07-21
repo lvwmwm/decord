@@ -1,10 +1,10 @@
-// Module ID: 14523
-// Function ID: 109390
+// Module ID: 14530
+// Function ID: 109412
 // Name: CaptchaTestScreen
 // Dependencies: []
 // Exports: default
 
-// Module 14523 (CaptchaTestScreen)
+// Module 14530 (CaptchaTestScreen)
 function CaptchaTestScreen(arg0) {
   if (arg0 == null) {
     HermesBuiltin.throwTypeError("Cannot destructure 'undefined' or 'null'.");
@@ -51,7 +51,7 @@ function CaptchaTestScreen(arg0) {
     let tmp8 = first === arg1(dependencyMap[8]).CaptchaDeciderType.HCAPTCHA_RQDATA;
     if (tmp8) {
       obj = {};
-      const items2 = [callback(arg1(dependencyMap[10]).Text, { "Bool(false)": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000019664503549766483, "Bool(false)": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002785973827621067, "Bool(false)": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000195410348461437 }), ];
+      const items2 = [callback(arg1(dependencyMap[10]).Text, { "Bool(false)": false, "Bool(false)": false, "Bool(false)": false }), ];
       const obj3 = {
         withSpacing: true,
         value: first1,
@@ -94,7 +94,7 @@ const View = arg1(dependencyMap[3]).View;
 ({ jsx: closure_7, jsxs: closure_8 } = arg1(dependencyMap[4]));
 let obj = arg1(dependencyMap[5]);
 obj = {};
-obj = { -9223372036854775808: 0.129, 0: 1, backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_BASE_LOW };
+obj = { markAsSpoilerTitle: 0.129, keyboardAppearance: 1, backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_BASE_LOW };
 obj.container = obj;
 const tmp2 = arg1(dependencyMap[4]);
 obj.separator = { height: 1, backgroundColor: importDefault(dependencyMap[6]).colors.BORDER_SUBTLE, marginVertical: importDefault(dependencyMap[6]).space.PX_24 };

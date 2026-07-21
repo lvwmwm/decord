@@ -1,10 +1,10 @@
-// Module ID: 6738
-// Function ID: 52430
+// Module ID: 6744
+// Function ID: 52479
 // Name: AutomodAlertActionType
-// Dependencies: []
+// Dependencies: [284214097]
 // Exports: parseAlertActionsExecution
 
-// Module 6738 (AutomodAlertActionType)
+// Module 6744 (AutomodAlertActionType)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("modules/guild_automod/AutomodAlert.tsx");
 

@@ -1,9 +1,9 @@
-// Module ID: 6801
-// Function ID: 53639
+// Module ID: 6807
+// Function ID: 53688
 // Name: FramesProductShelfBlockRecord
 // Dependencies: []
 
-// Module 6801 (FramesProductShelfBlockRecord)
+// Module 6807 (FramesProductShelfBlockRecord)
 let closure_2 = importDefault(dependencyMap[0]);
 let closure_3 = importDefault(dependencyMap[1]);
 const tmp2 = () => {

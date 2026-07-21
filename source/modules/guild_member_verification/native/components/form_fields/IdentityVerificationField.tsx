@@ -1,10 +1,10 @@
-// Module ID: 9168
-// Function ID: 71824
+// Module ID: 9172
+// Function ID: 71836
 // Name: BaseIdentityVerificationField
 // Dependencies: []
 // Exports: default
 
-// Module 9168 (BaseIdentityVerificationField)
+// Module 9172 (BaseIdentityVerificationField)
 function BaseIdentityVerificationField(icon) {
   let label;
   let onPress;
@@ -19,7 +19,7 @@ function BaseIdentityVerificationField(icon) {
     tmp4 = callback(icon, obj);
   }
   const items = [tmp4, , ];
-  obj = { Promise: -246006407672989600000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, marginTop: 0.0000000000000000000000000000000000000000000000000000000000000000000741841232901058, flags: 0.158 };
+  obj = { "Null": -246006407672989600000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, "Null": 0.0000000000000000000000000000000000000000000000000000000000000000000741841232901058, "Null": 0.158 };
   const items1 = [tmp.label];
   obj.style = items1;
   obj.children = label;
@@ -32,7 +32,7 @@ function BaseIdentityVerificationField(icon) {
     let tmp11 = obj1;
   } else {
     obj1.style = tmp.ctaButton;
-    const obj3 = {};
+    const obj3 = { 9223372036854775807: 32768000, -9223372036854775808: 30653696, 0: -1108983296 };
     const intl = arg1(dependencyMap[8]).intl;
     obj3.text = intl.string(arg1(dependencyMap[8]).t.13ofGu);
     obj3.onPress = onPress;
@@ -50,10 +50,10 @@ let obj = arg1(dependencyMap[3]);
 obj = {};
 obj = { borderRadius: importDefault(dependencyMap[4]).radii.sm, backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_SURFACE_HIGH };
 obj.container = obj;
-obj.icon = {};
+obj.icon = { -412991801: false, 1932219241: false };
 obj.label = {};
 obj.verifiedContainer = {};
-obj.ctaButton = { accessibilityRole: false, "Bool(true)": false, "Bool(true)": false };
+obj.ctaButton = { -9223372036854775808: "parallaxLayout", 0: "headMetaSocial", 0: "enum" };
 let closure_6 = obj.createStyles(obj);
 const tmp3 = arg1(dependencyMap[2]);
 const result = arg1(dependencyMap[17]).fileFinishedImporting("modules/guild_member_verification/native/components/form_fields/IdentityVerificationField.tsx");

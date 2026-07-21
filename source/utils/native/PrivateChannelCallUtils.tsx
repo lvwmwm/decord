@@ -1,10 +1,10 @@
-// Module ID: 4333
-// Function ID: 38215
+// Module ID: 4337
+// Function ID: 38263
 // Name: getVoiceChannelKeyByChannelId
 // Dependencies: []
 // Exports: handleJoinCall, handleRedesignGroupDMCall, handleRedesignJoinCall, handleStartCall, hideVoiceChannelActionSheet, isVoiceChannelModalKey, maybeShowAgeGateModal, navigateToVoiceChannel, openVoiceChannelActionSheet
 
-// Module 4333 (getVoiceChannelKeyByChannelId)
+// Module 4337 (getVoiceChannelKeyByChannelId)
 function getVoiceChannelKeyByChannelId(id) {
   return "" + closure_17 + "-" + id;
 }

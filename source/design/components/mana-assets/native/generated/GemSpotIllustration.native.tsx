@@ -1,10 +1,10 @@
-// Module ID: 6179
-// Function ID: 50142
+// Module ID: 6181
+// Function ID: 50185
 // Name: GemSpotIllustration
 // Dependencies: []
 // Exports: GemSpotIllustration
 
-// Module 6179 (GemSpotIllustration)
+// Module 6181 (GemSpotIllustration)
 const jsx = require(dependencyMap[0]).jsx;
 const _module = require(dependencyMap[3]);
 const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/GemSpotIllustration.native.tsx");

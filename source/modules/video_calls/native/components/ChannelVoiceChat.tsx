@@ -1,8 +1,8 @@
-// Module ID: 10190
-// Function ID: 78680
+// Module ID: 10196
+// Function ID: 78698
 // Dependencies: []
 
-// Module 10190
+// Module 10196
 const importAllResult = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 const useIsVoiceChatFocused = arg1(dependencyMap[2]).useIsVoiceChatFocused;
@@ -13,10 +13,10 @@ obj = { backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_
 obj.chat = obj;
 obj1 = { height: 44, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_LOW };
 obj.chatHeaderSpacer = obj1;
-const obj2 = { title: 48, commandId: "100%", channelId: 0, selectedAnswerIds: -48, submitting: 16, editing: 8, showResults: 8, 286506514: 18, -1574751457: 22, -434780912: 6, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_LOW };
+const obj2 = { "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_LOW };
 obj.chatHeader = obj2;
-obj.chatHeaderBackIconContainer = { 313968: false, 315615: false, 314002: false, 315613: false };
-obj.chatHeaderTitleContainer = { "Bool(false)": 500, "Bool(false)": 16, "Bool(false)": 20, "Bool(false)": "heading-md/semibold" };
+obj.chatHeaderBackIconContainer = {};
+obj.chatHeaderTitleContainer = {};
 const tmp2 = arg1(dependencyMap[3]);
 obj.safeAreaTop = { alignSelf: "stretch", backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_LOW };
 let closure_8 = obj1.createStyles(obj);
@@ -60,7 +60,7 @@ const memoResult = importAllResult.memo((channel) => {
   obj.importantForAccessibility = str;
   obj.accessibilityElementsHidden = !tmp2;
   obj.style = tmp.chat;
-  const items1 = [callback(importDefault(dependencyMap[12]), { <string:1398956458>: null, <string:2898161814>: null }), ];
+  const items1 = [callback(importDefault(dependencyMap[12]), { "Bool(false)": null, "Bool(false)": null }), ];
   obj = { guildId: guild_id, channelId: id };
   let tmp15Result = null;
   if (!flag) {

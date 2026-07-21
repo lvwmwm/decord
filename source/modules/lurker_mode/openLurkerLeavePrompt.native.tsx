@@ -1,10 +1,10 @@
-// Module ID: 5693
-// Function ID: 48988
+// Module ID: 5695
+// Function ID: 49031
 // Name: LurkerLeavePromptModal
 // Dependencies: []
 // Exports: openLurkerLeavePrompt
 
-// Module 5693 (LurkerLeavePromptModal)
+// Module 5695 (LurkerLeavePromptModal)
 function LurkerLeavePromptModal(guild) {
   guild = guild.guild;
   const arg1 = guild;

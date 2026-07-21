@@ -1,10 +1,10 @@
-// Module ID: 6493
-// Function ID: 50613
+// Module ID: 6495
+// Function ID: 50656
 // Name: SeverHubAbstractUI
-// Dependencies: [33554457, 1946157056, 33, 5231]
+// Dependencies: [33554457, 1946157056, 33, 5233]
 // Exports: SeverHubAbstractUI
 
-// Module 6493 (SeverHubAbstractUI)
+// Module 6495 (SeverHubAbstractUI)
 import preload from "preload";
 
 const jsx = require(dependencyMap[0]).jsx;

@@ -1,9 +1,9 @@
-// Module ID: 9431
-// Function ID: 73419
+// Module ID: 9435
+// Function ID: 73433
 // Name: enforcing
 // Dependencies: []
 
-// Module 9431 (enforcing)
+// Module 9435 (enforcing)
 const TurboModuleRegistry = require(dependencyMap[0]).TurboModuleRegistry;
 const enforcing = TurboModuleRegistry.getEnforcing("NativeChatModule");
 const _module = require(dependencyMap[1]);

@@ -1,10 +1,10 @@
-// Module ID: 8949
-// Function ID: 70567
+// Module ID: 8953
+// Function ID: 70579
 // Name: getLocationContextServer
 // Dependencies: []
 // Exports: acceptWhitelist, authorize, fetchAuthorization, fetchChannels, finishUserCode, finishUserCodeTwoWayLinkError, logoutWithRedirect, startSamsungAuthorization, verifyUserCode
 
-// Module 8949 (getLocationContextServer)
+// Module 8953 (getLocationContextServer)
 function getLocationContextServer() {
   const basicChannel = basicChannel.getBasicChannel(channelId.getChannelId());
   const obj = {};

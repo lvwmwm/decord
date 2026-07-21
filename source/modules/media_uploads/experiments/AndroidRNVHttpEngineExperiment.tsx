@@ -1,14 +1,14 @@
-// Module ID: 8286
-// Function ID: 65433
+// Module ID: 8290
+// Function ID: 65445
 // Name: apexExperiment
 // Dependencies: []
 // Exports: getMuxExperimentDimension, useRnvHttpEngine
 
-// Module 8286 (apexExperiment)
+// Module 8290 (apexExperiment)
 let closure_2 = importDefault(dependencyMap[0]);
 let closure_3 = importDefault(dependencyMap[1]);
 let obj = arg1(dependencyMap[2]);
-obj = { -1269606814: true, -1845285747: true, defaultConfig: { httpEngine: "default" }, variations: { [0]: { httpEngine: "default" }, [1]: { httpEngine: "okhttp" }, [2]: { httpEngine: "cronet" } } };
+obj = { 9223372036854775807: 2, 0: null, defaultConfig: { httpEngine: "default" }, variations: { [0]: { httpEngine: "default" }, [1]: { httpEngine: "okhttp" }, [2]: { httpEngine: "cronet" } } };
 const apexExperiment = obj.createApexExperiment(obj);
 const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/media_uploads/experiments/AndroidRNVHttpEngineExperiment.tsx");
 

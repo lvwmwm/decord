@@ -1,5 +1,5 @@
 // Module ID: 5049
-// Function ID: 43063
+// Function ID: 43085
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
@@ -18,15 +18,31 @@ let closure_1 = importDefault(dependencyMap[1]);
 let closure_2 = importDefault(dependencyMap[2]);
 let closure_3 = importDefault(dependencyMap[3]);
 let closure_4 = importDefault(dependencyMap[4]);
+let closure_5 = importDefault(dependencyMap[5]);
+let closure_6 = { code: "function changeEventCalculator_Pnpm_rotationGestureTs1(current,previous){let changePayload;if(previous===undefined){changePayload={rotationChange:current.rotation};}else{changePayload={rotationChange:current.rotation-previous.rotation};}return{...current,...changePayload};}" };
+let closure_7 = () => {
+  function changeEventCalculator(rotation, rotation2) {
+    if (undefined === rotation2) {
+      let obj = { rotationChange: rotation.rotation };
+    } else {
+      obj = { rotationChange: rotation.rotation - rotation2.rotation };
+    }
+    return Object.assign({}, rotation, obj);
+  }
+  changeEventCalculator.__closure = {};
+  changeEventCalculator.__workletHash = 11988645380499;
+  changeEventCalculator.__initData = closure_6;
+  return changeEventCalculator;
+}();
 
-export const LongPressGesture = (BaseGesture) => {
-  class LongPressGesture {
+export const RotationGesture = (ContinousBaseGesture) => {
+  class RotationGesture {
     constructor() {
       self = this;
-      tmp = LongPressGesture(this, LongPressGesture);
-      obj = closure_3(LongPressGesture);
+      tmp = RotationGesture(this, RotationGesture);
+      obj = closure_3(RotationGesture);
       tmp2 = closure_2;
-      if (closure_5()) {
+      if (closure_8()) {
         tmp4 = globalThis;
         _Reflect = Reflect;
         tmp5 = closure_3;
@@ -35,37 +51,35 @@ export const LongPressGesture = (BaseGesture) => {
         constructResult = obj.apply(self, undefined);
       }
       tmp2Result = tmp2(self, constructResult);
-      tmp2Result.config = {};
-      tmp2Result.handlerName = "LongPressGestureHandler";
-      result = tmp2Result.shouldCancelWhenOutside(true);
+      tmp2Result.handlerName = "RotationGestureHandler";
       return tmp2Result;
     }
   }
-  let closure_0 = LongPressGesture;
-  callback2(LongPressGesture, BaseGesture);
-  let obj = {
-    key: "minDuration",
-    value: function minDuration(CONTEXT_MENU_LONG_PRESS_DURATION_MS) {
-      this.config.minDurationMs = CONTEXT_MENU_LONG_PRESS_DURATION_MS;
-      return this;
+  let closure_0 = RotationGesture;
+  callback2(RotationGesture, ContinousBaseGesture);
+  const items = [
+    {
+      key: "onChange",
+      value: function onChange(arg0) {
+        this.handlers.changeEventCalculator = closure_7;
+        const items = [arg0];
+        return function _superPropGet(RotationGesture, onChange, arg2, arg3) {
+          let prototype = RotationGesture;
+          if (1) {
+            prototype = RotationGesture.prototype;
+          }
+          const tmpResult = closure_4(closure_3(prototype), "onChange", arg2);
+          let fn = tmpResult;
+          if (2) {
+            fn = tmpResult;
+            if ("function" === typeof tmpResult) {
+              fn = (arg0) => tmpResult.apply(arg2, arg0);
+            }
+          }
+          return fn;
+        }(RotationGesture, "onChange", this, 3)(items);
+      }
     }
-  };
-  const items = [obj, , ];
-  obj = {
-    key: "maxDistance",
-    value: function maxDistance(maxDist) {
-      this.config.maxDist = maxDist;
-      return this;
-    }
-  };
-  items[1] = obj;
-  obj = {
-    key: "numberOfPointers",
-    value: function numberOfPointers(numberOfPointers) {
-      this.config.numberOfPointers = numberOfPointers;
-      return this;
-    }
-  };
-  items[2] = obj;
-  return callback(LongPressGesture, items);
-}(arg1(dependencyMap[5]).BaseGesture);
+  ];
+  return callback(RotationGesture, items);
+}(arg1(dependencyMap[6]).ContinousBaseGesture);

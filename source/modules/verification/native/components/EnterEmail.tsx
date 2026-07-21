@@ -1,10 +1,10 @@
-// Module ID: 9216
-// Function ID: 72075
+// Module ID: 9220
+// Function ID: 72087
 // Name: EnterEmail
 // Dependencies: []
 // Exports: default
 
-// Module 9216 (EnterEmail)
+// Module 9220 (EnterEmail)
 let closure_4 = importDefault(dependencyMap[0]);
 let closure_5 = importDefault(dependencyMap[1]);
 let closure_6 = importAll(dependencyMap[2]);
@@ -19,9 +19,9 @@ let obj = arg1(dependencyMap[8]);
 obj = {};
 obj = { backgroundColor: importDefault(dependencyMap[9]).colors.BACKGROUND_BASE_LOW };
 obj.background = obj;
-obj.container = {};
+obj.container = { flex: "<string:2236743682>", display: "<string:1941427526>" };
 obj.title = { textAlign: "center" };
-obj.prompt = {};
+obj.prompt = { action: null, messageReference: null, medium: null };
 obj.input = {};
 let closure_16 = obj.createStyles(obj);
 const tmp4 = arg1(dependencyMap[7]);
@@ -78,9 +78,9 @@ export default function EnterEmail(isChangeEmail) {
   }, items2);
   let tmp11Result = null;
   if (null != stateFromStores) {
-    obj = { style: tmp.background };
+    obj = { "Bool(true)": true, "Bool(true)": true, "Bool(true)": true, style: tmp.background };
     obj = { style: tmp.container };
-    obj1 = { 0: 24, 9223372036854775807: 24, 0: null, -9223372036854775808: "aa9c26c29990ba7a6584e51ab5c56efa", style: tmp.title };
+    obj1 = { 1501064855: 24, -1267889981: 24, -1145697943: null, -1266241916: "aa9c26c29990ba7a6584e51ab5c56efa", style: tmp.title };
     if (null != stateFromStores.email) {
       const intl2 = arg1(dependencyMap[16]).intl;
       let stringResult = intl2.string(arg1(dependencyMap[16]).t.Vm8akB);

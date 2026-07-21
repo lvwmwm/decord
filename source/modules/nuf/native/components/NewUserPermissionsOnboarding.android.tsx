@@ -1,26 +1,26 @@
-// Module ID: 11699
-// Function ID: 90909
+// Module ID: 11706
+// Function ID: 90932
 // Name: NewUserPermissionsOnboarding
-// Dependencies: [57, 31, 27, 653, 11710, 33, 4126, 689, 4963, 4541]
+// Dependencies: [57, 31, 27, 653, 11717, 33, 4126, 689, 4965, 4545]
 // Exports: default
 
-// Module 11699 (NewUserPermissionsOnboarding)
+// Module 11706 (NewUserPermissionsOnboarding)
 import "_slicedToArray";
 import module_31 from "module_31";
-import get ActivityIndicator from "get ActivityIndicator";
+import keys from "keys";
 import ME from "ME";
 import getFontScale from "getFontScale";
 
 ({ View: closure_2, ScrollView: closure_3 } = module_31);
-({ jsx: closure_4, jsxs: closure_5 } = get_ActivityIndicator);
+({ jsx: closure_4, jsxs: closure_5 } = keys);
 ME = { scrollContainer: { minHeight: "100%" }, container: {} };
 ME = { paddingTop: 80 + require("SuggestedFriendSource").NAV_BAR_HEIGHT };
 ME.alertContainer = ME;
-const obj1 = { 9223372036854775807: true, 0: true, 0: true, 9223372036854775807: true, 0: true, 0: true, backgroundColor: require("module_33").colors.BACKGROUND_SURFACE_HIGH, borderRadius: require("module_33").radii.xl, borderColor: require("module_33").colors.INTERACTIVE_BACKGROUND_ACTIVE };
+const obj1 = { alignItems: 16, overflow: 32, flex: 32, flexDirection: "center", alignItems: "center", marginTop: -0.000000000000007112651463380534, backgroundColor: require("module_33").colors.BACKGROUND_SURFACE_HIGH, borderRadius: require("module_33").radii.xl, borderColor: require("module_33").colors.INTERACTIVE_BACKGROUND_ACTIVE };
 const merged = Object.assign(require("module_33").shadows.SHADOW_HIGH);
 ME.alert = obj1;
-ME.alertContent = { 1639002193: "center", 187585273: 1, -681463504: 12 };
-ME.alertTitle = { "Bool(false)": null, "Bool(false)": null };
+ME.alertContent = {};
+ME.alertTitle = { <string:1500765900>: null, <string:637716783>: null };
 ME.alertSubtitle = { paddingBottom: require("module_33").space.PX_16, textAlign: "center" };
 ME.buttonWrapper = { flexDirection: "row" };
 const obj2 = { paddingBottom: require("module_33").space.PX_16, textAlign: "center" };

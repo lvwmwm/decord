@@ -1,10 +1,10 @@
-// Module ID: 11255
-// Function ID: 87556
+// Module ID: 11261
+// Function ID: 87579
 // Name: CommandListSortButton
 // Dependencies: []
 // Exports: default
 
-// Module 11255 (CommandListSortButton)
+// Module 11261 (CommandListSortButton)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 const CommandListSortOrder = arg1(dependencyMap[2]).CommandListSortOrder;

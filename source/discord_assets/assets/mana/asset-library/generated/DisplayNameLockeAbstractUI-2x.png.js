@@ -1,9 +1,9 @@
-// Module ID: 6014
-// Function ID: 49895
+// Module ID: 6016
+// Function ID: 49938
 // Name: metadata
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 6014 (metadata)
+// Module 6016 (metadata)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/DisplayNameLockeAbstractUI-2x.png.js");
 

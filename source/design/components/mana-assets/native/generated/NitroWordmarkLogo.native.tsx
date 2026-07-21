@@ -1,10 +1,10 @@
-// Module ID: 6361
-// Function ID: 50415
+// Module ID: 6363
+// Function ID: 50458
 // Name: NitroWordmarkLogo
 // Dependencies: []
 // Exports: NitroWordmarkLogo
 
-// Module 6361 (NitroWordmarkLogo)
+// Module 6363 (NitroWordmarkLogo)
 const Image = require(dependencyMap[0]).Image;
 const jsx = require(dependencyMap[1]).jsx;
 const _module = require(dependencyMap[5]);

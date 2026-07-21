@@ -1,10 +1,10 @@
-// Module ID: 11858
-// Function ID: 91830
+// Module ID: 11865
+// Function ID: 91853
 // Name: FireIcon
 // Dependencies: []
 // Exports: FireIcon
 
-// Module 11858 (FireIcon)
+// Module 11865 (FireIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/FireIcon.tsx");

@@ -1,10 +1,10 @@
-// Module ID: 12298
-// Function ID: 94261
+// Module ID: 12305
+// Function ID: 94284
 // Name: useOpenPremiumMarketingPayment
 // Dependencies: []
 // Exports: default
 
-// Module 12298 (useOpenPremiumMarketingPayment)
+// Module 12305 (useOpenPremiumMarketingPayment)
 let AnalyticsObjectTypes;
 let AnalyticsPages;
 let AnalyticsSections;

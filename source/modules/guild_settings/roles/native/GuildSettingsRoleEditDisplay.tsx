@@ -1,10 +1,10 @@
-// Module ID: 16180
-// Function ID: 125057
+// Module ID: 16187
+// Function ID: 125088
 // Name: GuildSettingsRoleEditDisplay
 // Dependencies: []
 // Exports: default
 
-// Module 16180 (GuildSettingsRoleEditDisplay)
+// Module 16187 (GuildSettingsRoleEditDisplay)
 let closure_3 = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 const isEveryoneRole = arg1(dependencyMap[2]).isEveryoneRole;
@@ -16,7 +16,7 @@ let closure_11 = arg1(dependencyMap[6]).DEFAULT_GRADIENT_ROLE_COLORS;
 const tmp2 = arg1(dependencyMap[5]);
 ({ jsx: closure_12, jsxs: closure_13, Fragment: closure_14 } = arg1(dependencyMap[7]));
 let obj = arg1(dependencyMap[8]);
-obj = { roleIcon: {}, trailingColorContainer: { "Bool(true)": null, "Bool(true)": null, "Bool(true)": null }, colorBlock: {} };
+obj = { roleIcon: {}, trailingColorContainer: { padding: 0, paddingBottom: 6, flexDirection: 0 }, colorBlock: {} };
 obj = { backgroundColor: importDefault(dependencyMap[9]).colors.BACKGROUND_FEEDBACK_INFO, padding: importDefault(dependencyMap[9]).space.PX_8, marginHorizontal: importDefault(dependencyMap[9]).space.PX_12, marginTop: -1 * importDefault(dependencyMap[9]).space.PX_12, marginBottom: importDefault(dependencyMap[9]).space.PX_12, display: "flex", flexDirection: "row", gap: importDefault(dependencyMap[9]).space.PX_8, justifyContent: "center", alignItems: "center", borderRadius: importDefault(dependencyMap[9]).radii.sm, borderWidth: 1, borderColor: importDefault(dependencyMap[9]).colors.ICON_FEEDBACK_INFO };
 obj.holographicInfo = obj;
 let closure_15 = obj.createStyles(obj);
@@ -249,8 +249,8 @@ export default function GuildSettingsRoleEditDisplay(guild) {
         items7[2] = tertiary_color;
         const found1 = items7.filter(arg1(dependencyMap[28]).isNotNullish);
         obj17.colors = found1.map((color) => guild(id[29]).int2hex(color));
-        obj17.start = { "Null": false, "Null": true };
-        obj17.end = { "Null": null, "Null": null };
+        obj17.start = { max: -536870861, guildId: -299892737 };
+        obj17.end = {};
         obj17.style = tmp.colorBlock;
         let tmp48Result = callback(importDefault(dependencyMap[27]), obj17);
         const tmp48 = callback;

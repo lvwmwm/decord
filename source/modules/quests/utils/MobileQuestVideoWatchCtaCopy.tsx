@@ -1,10 +1,10 @@
-// Module ID: 10458
-// Function ID: 80991
+// Module ID: 10464
+// Function ID: 81014
 // Name: formatWatchRemainingDurationShort
 // Dependencies: []
 // Exports: getVideoQuestWatchCtaAccessibilityLabel, getVideoQuestWatchCtaText
 
-// Module 10458 (formatWatchRemainingDurationShort)
+// Module 10464 (formatWatchRemainingDurationShort)
 function formatWatchRemainingDurationShort(closure_7) {
   let obj = require(dependencyMap[0]);
   const remainingTaskTime = obj.getRemainingTaskTime(closure_7);

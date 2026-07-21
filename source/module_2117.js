@@ -4,6 +4,5 @@
 
 // Module 2117
 const _module = require(dependencyMap[0]);
-const obj = { justifyContent: "advanceAnimationByFrame", flexDirection: "Uint8Array", marginRight: "divide", columnGap: "Array", accessibilityRole: "isArray", options: "e", scales: [24573934974154670000000000000000000000000000000000000000000000000000000000000] };
 
-export default _module.registerAsset(obj);
+export default _module.registerAsset({ scales: [15189782894321462000000000000000000000000000000000000000000000000000000000000000000] });

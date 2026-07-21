@@ -13,7 +13,7 @@ if (!differenceInCalendarWeeks) {
 } else {
   tmp3 = differenceInCalendarWeeks;
 }
-let closure_3 = [null, null, null, null, null, null, null];
+let closure_3 = [];
 
 export default function formatDuration(arg0, locale) {
   const require = arg0;

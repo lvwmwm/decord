@@ -1,10 +1,10 @@
-// Module ID: 8736
-// Function ID: 69104
+// Module ID: 8740
+// Function ID: 69116
 // Name: PX_8
 // Dependencies: []
 // Exports: default
 
-// Module 8736 (PX_8)
+// Module 8740 (PX_8)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 const isAvatarDecorationRecord = arg1(dependencyMap[2]).isAvatarDecorationRecord;
@@ -16,11 +16,11 @@ let closure_8 = arg1(dependencyMap[6]).PROFILE_FRAME_ASPECT_RATIO;
 const PX_8 = importDefault(dependencyMap[9]).space.PX_8;
 let obj = arg1(dependencyMap[10]);
 obj = { tile: {}, framePreview: obj };
-obj = { "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, paddingVertical: PX_8 };
-const tmp3 = arg1(dependencyMap[8]);
-obj.profileEffect = { borderRadius: importDefault(dependencyMap[9]).radii.sm };
+obj = { borderWidth: "<string:1107296833>", width: "p\u00E4iv\u00E4", height: "{{count}} p\u00E4iv\u00E4\u00E4", justifyContent: "<string:39208002>", alignItems: "<string:19595008>", borderRadius: "<string:1275085312>", paddingVertical: PX_8 };
+const obj1 = { 0: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000005171136915227254, 0: 8597148608.001488, 9223372036854775807: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000162423923903524, borderRadius: importDefault(dependencyMap[9]).radii.sm };
+obj.profileEffect = obj1;
 obj.sampleProfile = { aspectRatio: arg1(dependencyMap[7]).SAMPLE_PROFILE_ASPECT_RATIO, width: "100%" };
-const obj1 = { borderRadius: importDefault(dependencyMap[9]).radii.sm };
+const tmp3 = arg1(dependencyMap[8]);
 obj.nameplate = { overflow: "hidden", borderTopRightRadius: importDefault(dependencyMap[9]).radii.xs, borderBottomRightRadius: importDefault(dependencyMap[9]).radii.xs };
 obj.nameplateTile = { alignItems: "flex-start" };
 obj.nameplateStrip = {};
@@ -48,14 +48,14 @@ export default function CollectiblesItemMiniPreview(arg0) {
     return callback(View, obj1);
   } else if (isProfileEffectRecord(item)) {
     const obj4 = { style: items };
-    const obj5 = { 0: "<string:1895974234>", 9223372036854775807: "y", 0: "<string:1514494546>", style: tmp.profileEffect };
+    const obj5 = { style: tmp.profileEffect };
     const obj6 = {};
     const obj7 = { uri: importDefault(dependencyMap[14]) };
     obj6.source = obj7;
     obj6.style = tmp.sampleProfile;
     obj6.resizeMode = "cover";
     const items1 = [callback(importDefault(dependencyMap[13]), obj6), ];
-    const obj8 = { skuId: item.skuId };
+    const obj8 = { <string:979172195>: 1000, <string:1377429346>: 600000, <string:3890416569>: "MESSAGE_CREATE", skuId: item.skuId };
     items1[1] = callback(importDefault(dependencyMap[15]), obj8);
     obj5.children = items1;
     obj4.children = callback2(View, obj5);

@@ -62,7 +62,7 @@ if (!fn) {
   };
 }
 let closure_3 = "MobileReplay";
-let closure_4 = { "Null": "%Math%", "Null": "GUILD_EVENT_EMBED", "Null": "handled", "Null": "RowTypes", "Null": "values", "Null": "isArray", "Null": "optionsDescriptionContainer" };
+let closure_4 = {};
 function mobileReplayIntegrationNoop() {
   return {
     name: closure_3,

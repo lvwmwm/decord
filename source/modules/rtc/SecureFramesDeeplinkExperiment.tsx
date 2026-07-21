@@ -1,12 +1,14 @@
-// Module ID: 8894
-// Function ID: 70214
-// Name: useSecureFramesDeeplinkExperiment
+// Module ID: 8898
+// Function ID: 70226
+// Name: items
 // Dependencies: []
 // Exports: getSecureFramesDeeplinkExperiment, useSecureFramesDeeplinkExperiment
 
-// Module 8894 (useSecureFramesDeeplinkExperiment)
+// Module 8898 (items)
+const obj = { y: null, createBackgroundHighlight: null, y: null, defaultConfig: { enabled: false } };
 const items = [{ config: { enabled: true } }];
-let closure_0 = importDefault(dependencyMap[0])({ defaultConfig: { enabled: false }, treatments: items });
+obj.treatments = items;
+let closure_0 = importDefault(dependencyMap[0])(obj);
 const result = arg1(dependencyMap[1]).fileFinishedImporting("modules/rtc/SecureFramesDeeplinkExperiment.tsx");
 
 export const useSecureFramesDeeplinkExperiment = function useSecureFramesDeeplinkExperiment(location) {

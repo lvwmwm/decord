@@ -1,10 +1,10 @@
-// Module ID: 5993
-// Function ID: 49863
+// Module ID: 5995
+// Function ID: 49906
 // Name: DiamondIllocon
 // Dependencies: []
 // Exports: DiamondIllocon
 
-// Module 5993 (DiamondIllocon)
+// Module 5995 (DiamondIllocon)
 const jsx = require(dependencyMap[0]).jsx;
 const _module = require(dependencyMap[3]);
 const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/DiamondIllocon.native.tsx");

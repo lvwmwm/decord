@@ -1,10 +1,10 @@
-// Module ID: 4946
-// Function ID: 42362
+// Module ID: 4948
+// Function ID: 42403
 // Name: useStageHasStream
 // Dependencies: []
 // Exports: getStageHasMedia, isStageVideoEnabled, useIsStageVideoEnabled, useStageHasMedia
 
-// Module 4946 (useStageHasStream)
+// Module 4948 (useStageHasStream)
 function useStageHasStream(id) {
   const arg1 = id;
   const items = [closure_4];

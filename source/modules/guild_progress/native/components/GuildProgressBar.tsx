@@ -1,10 +1,10 @@
-// Module ID: 12853
-// Function ID: 98262
+// Module ID: 12860
+// Function ID: 98285
 // Name: GuildProgressBar
 // Dependencies: []
 // Exports: default
 
-// Module 12853 (GuildProgressBar)
+// Module 12860 (GuildProgressBar)
 let closure_3 = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 const jsx = arg1(dependencyMap[2]).jsx;

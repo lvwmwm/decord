@@ -1,10 +1,10 @@
-// Module ID: 8353
-// Function ID: 66585
+// Module ID: 8357
+// Function ID: 66597
 // Name: SHARE_EVENT_DETAILS_LINK
-// Dependencies: []
+// Dependencies: [284214097]
 // Exports: SHARE_EVENT_DETAILS_LINK, canUseInviteModal
 
-// Module 8353 (SHARE_EVENT_DETAILS_LINK)
+// Module 8357 (SHARE_EVENT_DETAILS_LINK)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("modules/guild_scheduled_events/utils/ShareEventUtils.tsx");
 

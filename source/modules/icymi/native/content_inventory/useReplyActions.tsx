@@ -1,10 +1,10 @@
-// Module ID: 15100
-// Function ID: 113961
+// Module ID: 15107
+// Function ID: 113985
 // Name: useReplyActions
 // Dependencies: []
 // Exports: useReplyActions
 
-// Module 15100 (useReplyActions)
+// Module 15107 (useReplyActions)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 let closure_5 = importDefault(dependencyMap[2]);
@@ -72,7 +72,7 @@ export const useReplyActions = function useReplyActions(content) {
     const callback1 = React.useCallback((id) => {
       let obj = stateFromStores(closure_2[21]);
       obj.itemInteracted(content.id, closure_2, "press_emoji_send");
-      obj = { itemId: content.id, itemType: closure_2, actionParameters: {} };
+      obj = { itemId: content.id, itemType: closure_2, actionParameters: { "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true } };
       stateFromStores(closure_2[21]).feedItemActioned(obj);
       if (null != id.id) {
         const _HermesInternal = HermesInternal;
@@ -88,7 +88,7 @@ export const useReplyActions = function useReplyActions(content) {
     const items6 = [stateFromStores, content, callback1, callback];
     const callback2 = React.useCallback(() => {
       let obj = content(closure_2[22]);
-      obj = { "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, pickerIntention: constants.REACTION, onPressEmoji: callback1 };
+      obj = { "Bool(false)": "postal-address-country", "Bool(false)": "password", "Bool(false)": "email", pickerIntention: constants.REACTION, onPressEmoji: callback1 };
       let tmp;
       if (null != stateFromStores1) {
         tmp = stateFromStores1;
@@ -110,7 +110,7 @@ export const useReplyActions = function useReplyActions(content) {
         }
         let obj = stateFromStores(paths[21]);
         obj.itemInteracted(content.id, str, "press_reply_react");
-        obj = { itemId: content.id, itemType: str, actionParameters: {} };
+        obj = { itemId: content.id, itemType: str, actionParameters: { "Bool(false)": "Array", "Bool(false)": "isArray", "Bool(false)": "WireType", "Bool(false)": "bottom" } };
         stateFromStores(paths[21]).feedItemActioned(obj);
         const obj2 = stateFromStores(paths[21]);
         obj = { content, author: stateFromStores, sendMessage: callback, onPressEmoji: callback1 };

@@ -1,8 +1,8 @@
-// Module ID: 12040
-// Function ID: 93002
+// Module ID: 12047
+// Function ID: 93025
 // Dependencies: []
 
-// Module 12040
+// Module 12047
 let closure_3 = importDefault(dependencyMap[0]);
 const importAllResult = importAll(dependencyMap[1]);
 ({ View: closure_5, ScrollView: closure_6 } = arg1(dependencyMap[2]));
@@ -37,7 +37,7 @@ const memoResult = importAllResult.memo(function InstantInviteShareApps(onItemPr
       callback(items);
     });
   }, []);
-  obj = { scrollEventThrottle: 120, ReverseOrderedTiers: 24, q3O3J8: 8 };
+  obj = { "Bool(false)": 60, "Bool(false)": 0, "Bool(false)": 0 };
   const items = [callback2().contentContainer, onItemPressed.contentContainerStyle];
   obj.contentContainerStyle = items;
   obj.children = first.map((type) => {

@@ -1,10 +1,10 @@
-// Module ID: 11487
-// Function ID: 89483
+// Module ID: 11494
+// Function ID: 89507
 // Name: useGuildChannelCreated
 // Dependencies: []
 // Exports: useCompletedStates, usePermissions
 
-// Module 11487 (useGuildChannelCreated)
+// Module 11494 (useGuildChannelCreated)
 function useGuildChannelCreated(guild) {
   const arg1 = guild;
   const items = [closure_8];

@@ -1,14 +1,12 @@
-// Module ID: 6165
-// Function ID: 50121
+// Module ID: 6167
+// Function ID: 50164
 // Name: GemLevel1SpotIllustration
 // Dependencies: [4294967295, 0, 0, 0]
 // Exports: GemLevel1SpotIllustration
 
-// Module 6165 (GemLevel1SpotIllustration)
-import result from "result";
-
+// Module 6167 (GemLevel1SpotIllustration)
 const jsx = require(dependencyMap[0]).jsx;
-result = result.fileFinishedImporting("design/components/mana-assets/native/generated/GemLevel1SpotIllustration.native.tsx");
+const result = require("__exportStarResult1").fileFinishedImporting("design/components/mana-assets/native/generated/GemLevel1SpotIllustration.native.tsx");
 
 export const GemLevel1SpotIllustration = function GemLevel1SpotIllustration(width) {
   let accessibilityLabel;

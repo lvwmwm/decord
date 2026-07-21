@@ -1,9 +1,9 @@
-// Module ID: 5246
-// Function ID: 44485
+// Module ID: 5248
+// Function ID: 44526
 // Name: QuestVariants
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 5246 (QuestVariants)
+// Module 5248 (QuestVariants)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_common/js/shared/shared-constants/QuestVariants.tsx");
 

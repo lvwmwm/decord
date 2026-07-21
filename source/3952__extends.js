@@ -117,7 +117,7 @@ if (undefined === forwardRef) {
 }
 let closure_8 = forwardRef((innerRef) => {
   ({ navigate: closure_0, onClick: closure_1 } = innerRef);
-  const tmp = _objectWithoutPropertiesLoose(innerRef, [true, true, true]);
+  const tmp = _objectWithoutPropertiesLoose(innerRef, []);
   const tmp2 = _extends({}, tmp, {
     onClick(defaultPrevented) {
       if (callback2) {
@@ -158,7 +158,7 @@ const forwardRefResult = forwardRef((component) => {
   }
   const dependencyMap = component;
   ({ replace: closure_2, to: closure_3, innerRef: closure_4 } = component);
-  let closure_5 = _objectWithoutPropertiesLoose(component, ["string", "Array", "isArray", "PX_8"]);
+  let closure_5 = _objectWithoutPropertiesLoose(component, []);
   return _interopDefaultResult.createElement(require(dependencyMap[5]).__RouterContext.Consumer, null, (history) => {
     const arg1 = history;
     if (!history) {

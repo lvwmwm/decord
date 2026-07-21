@@ -1,10 +1,10 @@
-// Module ID: 9119
-// Function ID: 71403
+// Module ID: 9123
+// Function ID: 71415
 // Name: JoinCallButton
 // Dependencies: []
 // Exports: default
 
-// Module 9119 (JoinCallButton)
+// Module 9123 (JoinCallButton)
 function JoinCallButton() {
   const obj = { size: "sm", color: importDefault(dependencyMap[12]).unsafe_rawColors.GREEN_360 };
   return jsx(arg1(dependencyMap[11]).PhoneCallIcon, obj);
@@ -90,7 +90,7 @@ function ChannelActionButtons(channel) {
                         const rootNavigationRef = tmp12(tmp13[34]).getRootNavigationRef();
                         if (null != rootNavigationRef) {
                           if (rootNavigationRef.isReady()) {
-                            obj1 = { surrogates: "error", style: "interaction_failure", padding: 20, channelId: channel.id };
+                            obj1 = { channelId: channel.id };
                             rootNavigationRef.navigate("sidebar", obj1);
                           }
                         }

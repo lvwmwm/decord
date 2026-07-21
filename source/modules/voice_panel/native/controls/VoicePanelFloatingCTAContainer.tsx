@@ -1,19 +1,10 @@
-// Module ID: 15714
-// Function ID: 120134
+// Module ID: 15721
+// Function ID: 120158
 // Name: FloatingCTA
-// Dependencies: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+// Dependencies: []
 // Exports: getFloatingCTATotalViewHeight, renderVoicePanelFloatingCTA
 
-// Module 15714 (FloatingCTA)
-import closure_3 from "result";
-import closure_4 from "result";
-import closure_5 from "result";
-import result from "result";
-import { CALL_TILE_GUTTER } from "result";
-import { ThemeTypes } from "result";
-import { jsx } from "result";
-import result from "result";
-
+// Module 15721 (FloatingCTA)
 function FloatingCTA(trailing) {
   trailing = trailing.trailing;
   let obj = Object.create(null);
@@ -158,17 +149,25 @@ class VoicePanelFloatingCTAContainer {
     return tmp9(tmp10, obj1);
   }
 }
-const UI_SHOW_HIDE_PHYSICS = result.UI_SHOW_HIDE_PHYSICS;
-result = {};
-result = { borderRadius: require("result").radii.lg };
-result.container = result;
-result = result.createStyles(result);
+let closure_3 = importDefault(dependencyMap[0]);
+let closure_4 = importAll(dependencyMap[1]);
+let closure_5 = importDefault(dependencyMap[2]);
+const tmp2 = arg1(dependencyMap[3]);
+const UI_SHOW_HIDE_PHYSICS = tmp2.UI_SHOW_HIDE_PHYSICS;
+const CALL_TILE_GUTTER = arg1(dependencyMap[4]).CALL_TILE_GUTTER;
+const ThemeTypes = arg1(dependencyMap[5]).ThemeTypes;
+const jsx = arg1(dependencyMap[6]).jsx;
+let obj = arg1(dependencyMap[9]);
+obj = {};
+obj = { "Null": 1, "Null": 1, "Null": null, "Null": 0, "Null": null, "Null": 53, borderRadius: importDefault(dependencyMap[8]).radii.lg };
+obj.container = obj;
+let closure_10 = obj.createStyles(obj);
 const obj1 = {};
-const merged = Object.assign(result.MODE_CHANGE_PHYSICS);
+const merged = Object.assign(tmp2.MODE_CHANGE_PHYSICS);
 obj1["overshootClamping"] = true;
 let closure_12 = { code: "function VoicePanelFloatingCTAContainerTsx1(){const{getControlsDefaultWidth,windowDimensions,safeArea,state,TransitionStates,controlsSpecs,roundToNearestPixel,withSpring,OPACITY_CHANGE_PHYSICS,runOnJS,cleanUp,wrapperSpecs,UI_SHOW_HIDE_PHYSICS,gestureState,CALL_TILE_GUTTER,accessoryHeights}=this.__closure;const width=getControlsDefaultWidth(windowDimensions.get().width,safeArea.get().left,safeArea.get().right);const opacity=state===TransitionStates.YEETED?0:1;return{bottom:controlsSpecs.get().height+16,width:width,marginLeft:roundToNearestPixel(width/2)*-1,opacity:withSpring(opacity,OPACITY_CHANGE_PHYSICS,'respect-motion-settings',function(finished){if(finished&&state===TransitionStates.YEETED){runOnJS(cleanUp)();}}),transform:[{translateX:withSpring(wrapperSpecs.get().x,UI_SHOW_HIDE_PHYSICS)},{translateY:withSpring(wrapperSpecs.get().hidden||gestureState.get().active&&!gestureState.get().requiresPop?wrapperSpecs.get().height+CALL_TILE_GUTTER+accessoryHeights.get():wrapperSpecs.get().y,UI_SHOW_HIDE_PHYSICS)}]};}" };
 let closure_13 = { code: "function VoicePanelFloatingCTAContainerTsx2(finished){const{state,TransitionStates,runOnJS,cleanUp}=this.__closure;if(finished&&state===TransitionStates.YEETED){runOnJS(cleanUp)();}}" };
-result = arg1(dependencyMap[25]).fileFinishedImporting("modules/voice_panel/native/controls/VoicePanelFloatingCTAContainer.tsx");
+const result = arg1(dependencyMap[25]).fileFinishedImporting("modules/voice_panel/native/controls/VoicePanelFloatingCTAContainer.tsx");
 
 export default VoicePanelFloatingCTAContainer;
 export const getFloatingCTATotalViewHeight = function getFloatingCTATotalViewHeight(chatInputFloating) {

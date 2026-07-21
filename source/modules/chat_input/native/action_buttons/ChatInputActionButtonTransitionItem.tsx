@@ -1,10 +1,10 @@
-// Module ID: 11335
-// Function ID: 88145
+// Module ID: 11341
+// Function ID: 88168
 // Name: interactivityProps
 // Dependencies: []
 // Exports: default
 
-// Module 11335 (interactivityProps)
+// Module 11341 (interactivityProps)
 function interactivityProps(isInteractive) {
   const obj = {};
   let str = "none";
@@ -91,7 +91,7 @@ let closure_3 = importAll(dependencyMap[0]);
 const StyleSheet = arg1(dependencyMap[1]).StyleSheet;
 const CHAT_INPUT_TIMING_CONFIG = arg1(dependencyMap[2]).CHAT_INPUT_TIMING_CONFIG;
 const jsx = arg1(dependencyMap[3]).jsx;
-const styles = StyleSheet.create({ transitionItem: { position: "absolute" }, transitionItemCentered: { accessibilityRole: false, set: false, status: false, accessibilityRole: false, ks: false, no: false, borderRadius: false } });
+const styles = StyleSheet.create({ transitionItem: { position: "absolute" }, transitionItemCentered: { children: false, unread: false, activeBackgroundColor: false, pressableStyle: false, style: false, children: false, onPressIn: false } });
 let closure_7 = { code: "function ChatInputActionButtonTransitionItemTsx1(finished){const{runOnJS,cleanup}=this.__closure;if(finished===true){runOnJS(cleanup)();}}" };
 let closure_8 = { code: "function ChatInputActionButtonTransitionItemTsx2(){const{visible}=this.__closure;return{opacity:visible.get()};}" };
 const result = arg1(dependencyMap[8]).fileFinishedImporting("modules/chat_input/native/action_buttons/ChatInputActionButtonTransitionItem.tsx");

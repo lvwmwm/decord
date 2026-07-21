@@ -1,10 +1,10 @@
-// Module ID: 7449
-// Function ID: 59749
+// Module ID: 7453
+// Function ID: 59760
 // Name: _fetchSocialLayerStorefront
 // Dependencies: []
 // Exports: fetchSocialLayerSKUPurchaseEligibility, fetchSocialLayerStorefront, fetchSocialLayerStorefrontAffinity, fetchSocialLayerStorefrontAnnouncement, fetchSocialLayerStorefrontById, fetchSocialLayerStorefrontConfig, fetchSocialLayerStorefrontEntries, fetchSocialLayerStorefrontForApplication, fetchSocialLayerStorefrontSku, fetchSocialLayerStorefrontSkuForApplication, setSocialLayerStorefrontState
 
-// Module 7449 (_fetchSocialLayerStorefront)
+// Module 7453 (_fetchSocialLayerStorefront)
 function _fetchSocialLayerStorefront(arg0, Endpoints, arg2) {
   return _fetchSocialLayerStorefront2(...arguments);
 }
@@ -216,7 +216,7 @@ async function _fetchSocialLayerStorefrontEntries(arg0, arg1) {
         obj = { type: "SOCIAL_LAYER_STOREFRONT_ENTRIES_LOAD", applicationId: tmp };
         obj.dispatch(obj);
         const HTTP = callback(closure_2[8]).HTTP;
-        obj = { putMany: "<string:1895908698>", NO_FILE: "Array", subLabel: "initNativeSdk", url: closure_6.SOCIAL_LAYER_STOREFRONTS_ALL(tmp) };
+        obj = { perkContainer: null, EXTRA_SMALL: null, charactersLength: null, url: closure_6.SOCIAL_LAYER_STOREFRONTS_ALL(tmp) };
         const body = yield HTTP.get(obj).body;
         obj6.succeed();
         const obj1 = { type: "SOCIAL_LAYER_STOREFRONT_ENTRIES_LOAD_SUCCESS", applicationId: tmp, entries: body.map(callback(closure_2[6]).transformSlayerApplicationStorefrontSummaryServer) };
@@ -312,7 +312,7 @@ async function _fetchSocialLayerStorefrontAnnouncement(guildId, arg1) {
   const body = yield HTTP.get(obj).body;
   if ("guild-discord-announcement" === body.type) {
     const obj1 = { type: "guild-discord-announcement" };
-    ({ id: obj5.id, application_id: obj5.applicationId, application_name: obj5.applicationName, asset_fully_qualified_url: obj5.assetFullyQualifiedURL, popover_title: obj5.popoverTitle, popover_body: obj5.popoverBody, popover_cta: obj5.popoverCta } = body);
+    ({ id: obj5.id, application_id: obj5.applicationId, application_name: obj5.applicationName, asset_fully_qualified_url: obj5.assetFullyQualifiedURL, video_asset_fully_qualified_url: obj5.videoAssetFullyQualifiedURL, popover_title: obj5.popoverTitle, popover_body: obj5.popoverBody, popover_cta: obj5.popoverCta } = body);
     let obj2 = obj1;
   } else {
     obj2 = { type: "guild-application-announcement" };
@@ -487,7 +487,7 @@ export const fetchSocialLayerSKUPurchaseEligibility = function fetchSocialLayerS
     const timerId = setTimeout(() => {
       if ("checking" === sKUEligibility.getSKUEligibility(arg1)) {
         let obj = callback(closure_2[5]);
-        obj = { "Bool(false)": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000017383389523691, "Bool(false)": 37524843749096220000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, "Bool(false)": 13343572029731506000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, skuId: arg1 };
+        obj = { skuId: arg1 };
         obj.dispatch(obj);
       }
     }, closure_11);

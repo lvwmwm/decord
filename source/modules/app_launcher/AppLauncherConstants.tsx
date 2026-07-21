@@ -1,9 +1,9 @@
-// Module ID: 11241
-// Function ID: 87502
+// Module ID: 11247
+// Function ID: 87525
 // Name: CommandListSortOrder
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 11241 (CommandListSortOrder)
+// Module 11247 (CommandListSortOrder)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("modules/app_launcher/AppLauncherConstants.tsx");
 

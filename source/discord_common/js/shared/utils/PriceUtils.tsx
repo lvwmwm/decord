@@ -1,11 +1,11 @@
-// Module ID: 5613
-// Function ID: 47802
+// Module ID: 5615
+// Function ID: 47844
 // Name: CurrencyCodes
 // Dependencies: []
 // Exports: convertToMinorCurrencyUnits, currencyCodeFromBCP47Locale, floorToWholeCurrencyUnits, formatPrice
 
-// Module 5613 (CurrencyCodes)
-let closure_2 = [];
+// Module 5615 (CurrencyCodes)
+let closure_2 = [-1610612736];
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 const CurrencyCodes = arg1(dependencyMap[2]).CurrencyCodes;

@@ -1,10 +1,10 @@
-// Module ID: 12076
-// Function ID: 93164
+// Module ID: 12083
+// Function ID: 93187
 // Name: useSelectStage
 // Dependencies: []
 // Exports: default
 
-// Module 12076 (useSelectStage)
+// Module 12083 (useSelectStage)
 let closure_2 = importDefault(dependencyMap[0]);
 let closure_3 = importDefault(dependencyMap[1]);
 let closure_4 = importAll(dependencyMap[2]);

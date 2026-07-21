@@ -1,10 +1,10 @@
-// Module ID: 16193
-// Function ID: 125189
+// Module ID: 16200
+// Function ID: 125220
 // Name: IdentityApplicationRow
 // Dependencies: []
 // Exports: default
 
-// Module 16193 (IdentityApplicationRow)
+// Module 16200 (IdentityApplicationRow)
 function IdentityApplicationRow(arg0) {
   let applicationId;
   let onPress;
@@ -161,8 +161,7 @@ export default function SelectConnectionActionSheet(arg0) {
       tmp17 = mapped2;
     }
   }
-  obj = { -1383050488: 24, -1600148191: 24, -1353556895: null };
-  obj.header = callback2(arg1(dependencyMap[8]).BottomSheetTitleHeader, obj);
+  obj = { header: callback2(arg1(dependencyMap[8]).BottomSheetTitleHeader, obj) };
   if (num > 0) {
     obj1 = {};
     obj2 = { state: segmentedControlState };

@@ -1,8 +1,8 @@
-// Module ID: 14586
-// Function ID: 109970
+// Module ID: 14593
+// Function ID: 109992
 // Dependencies: []
 
-// Module 14586
+// Module 14593
 const DCDScreenRecordingManager = require(dependencyMap[0]).NativeModules.DCDScreenRecordingManager;
 const _module = require(dependencyMap[1]);
 const result = _module.fileFinishedImporting("modules/screen_recording/native/ScreenRecordingManager.ios.tsx");

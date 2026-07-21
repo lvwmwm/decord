@@ -1,9 +1,9 @@
-// Module ID: 6602
-// Function ID: 50777
+// Module ID: 6606
+// Function ID: 50823
 // Name: metadata
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 6602 (metadata)
+// Module 6606 (metadata)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/VoiceFiltersSpotIllustration-2x.png.js");
 

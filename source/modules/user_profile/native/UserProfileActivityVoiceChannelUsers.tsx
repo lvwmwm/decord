@@ -1,10 +1,10 @@
-// Module ID: 11929
-// Function ID: 92272
+// Module ID: 11936
+// Function ID: 92295
 // Name: UserRow
 // Dependencies: []
 // Exports: default
 
-// Module 11929 (UserRow)
+// Module 11936 (UserRow)
 function UserRow(user) {
   let end;
   let isMobileOnline;

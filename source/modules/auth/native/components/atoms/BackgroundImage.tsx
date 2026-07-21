@@ -1,10 +1,10 @@
-// Module ID: 9210
-// Function ID: 72062
+// Module ID: 9214
+// Function ID: 72074
 // Name: BackgroundImage
 // Dependencies: []
 // Exports: default
 
-// Module 9210 (BackgroundImage)
+// Module 9214 (BackgroundImage)
 let closure_3 = importAll(dependencyMap[0]);
 ({ Image: closure_4, View: closure_5, StyleSheet: closure_6 } = arg1(dependencyMap[1]));
 const jsx = arg1(dependencyMap[2]).jsx;
@@ -29,7 +29,7 @@ export default function BackgroundImage(backgroundImageSource) {
     let obj = {};
     const items = [absoluteFill.absoluteFill, ];
     if (flag) {
-      obj = { aze: 30271555, azj: 22092032 };
+      obj = {};
     } else {
       obj = { width: "100%" };
     }

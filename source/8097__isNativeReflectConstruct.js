@@ -1,5 +1,5 @@
 // Module ID: 8097
-// Function ID: 64161
+// Function ID: 64153
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
@@ -21,66 +21,83 @@ let closure_6 = importDefault(dependencyMap[4]);
 importAll(dependencyMap[5]);
 const jsx = arg1(dependencyMap[6]).jsx;
 const tmp3 = (arg0) => {
-  class Polyline {
+  class Pattern {
     constructor() {
       self = this;
-      tmp = closure_2(this, Polyline);
-      length = arguments.length;
-      array = new Array(length);
-      for (let num = 0; num < length; num = num + 1) {
-        array[num] = arguments[num];
-      }
-      items = [];
-      combined = items.concat(array);
-      obj = closure_5(Polyline);
-      tmp3 = closure_4;
+      tmp = closure_2(this, Pattern);
+      obj = closure_5(Pattern);
+      tmp2 = closure_4;
       if (closure_8()) {
-        if (!combined) {
-          combined = [];
-        }
-        tmp5 = closure_5;
-        constructResult = Reflect.construct(obj, combined, closure_5(self).constructor);
+        tmp6 = globalThis;
+        _Reflect = Reflect;
+        tmp7 = closure_5;
+        tmp8 = arguments;
+        constructResult = Reflect.construct(obj, arguments, closure_5(self).constructor);
       } else {
-        constructResult = obj.apply(self, combined);
+        tmp3 = arguments;
+        tmp4 = arguments;
+        constructResult = obj(...arguments);
       }
-      tmp3Result = tmp3(self, constructResult);
-      Polyline = tmp3Result;
-      tmp3Result.setNativeProps = (points) => {
-        points = points.points;
-        if (points) {
-          const _HermesInternal = HermesInternal;
-          points.d = "M" + tmp3Result(closure_1[7])(points);
-        }
-        if (tmp3Result.root) {
-          const root = tmp3Result.root;
-          root.setNativeProps(points);
-        }
-      };
-      return tmp3Result;
+      return tmp2(self, constructResult);
     }
   }
-  const importDefault = Polyline;
-  callback2(Polyline, arg0);
+  const importDefault = Pattern;
+  callback2(Pattern, arg0);
   const items = [
     {
       key: "render",
       value: function render() {
+        let children;
+        let height;
+        let id;
+        let patternContentUnits;
+        let patternTransform;
+        let patternUnits;
+        let preserveAspectRatio;
+        let transform;
+        let viewBox;
+        let width;
+        let x;
+        let y;
+        const Pattern = this;
         const props = this.props;
-        const points = props.points;
-        const obj = { ref: this.refMethod };
-        let combined = points;
-        if (points) {
-          const _HermesInternal = HermesInternal;
-          combined = "M" + Polyline(closure_1[7])(points);
+        ({ patternTransform, patternUnits, patternContentUnits } = props);
+        ({ transform, id, x, y, width, height, children, viewBox, preserveAspectRatio } = props);
+        if (!patternTransform) {
+          patternTransform = transform;
         }
-        obj.d = combined;
-        return closure_7(Polyline(closure_1[8]), Object.assign(obj, props));
+        if (!patternTransform) {
+          patternTransform = props;
+        }
+        const tmpResult = Pattern(closure_1[7])(patternTransform);
+        let obj = { x, y, width, height, name: id, matrix: tmpResult, patternTransform: tmpResult };
+        let num = patternUnits;
+        if (patternUnits) {
+          num = Pattern(closure_1[8])[patternUnits];
+        }
+        if (!num) {
+          num = 0;
+        }
+        obj.patternUnits = num;
+        let num3 = 1;
+        if (patternContentUnits) {
+          num3 = Pattern(closure_1[8])[patternContentUnits];
+        }
+        obj.patternContentUnits = num3;
+        obj = {
+          ref(arg0) {
+            return self.refMethod(arg0);
+          }
+        };
+        const tmp = Pattern(closure_1[7]);
+        obj = { children };
+        return callback3(Pattern(closure_1[9]), Object.assign(obj, obj, Pattern(closure_1[10])({ viewBox, preserveAspectRatio }), obj));
       }
     }
   ];
-  return callback(Polyline, items);
-}(importDefault(dependencyMap[9]));
-tmp3.displayName = "Polyline";
-tmp3.defaultProps = { points: "" };
+  return callback(Pattern, items);
+}(importDefault(dependencyMap[11]));
+tmp3.displayName = "Pattern";
+tmp3.defaultProps = {};
 
 export default tmp3;

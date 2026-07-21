@@ -1,17 +1,17 @@
-// Module ID: 15237
-// Function ID: 115050
+// Module ID: 15244
+// Function ID: 115074
 // Name: getAttachmentIcon
 // Dependencies: []
 
-// Module 15237 (getAttachmentIcon)
+// Module 15244 (getAttachmentIcon)
 function getAttachmentIcon(filename) {
   if (obj.isImageFile(filename)) {
-    let tmp3Result = callback(arg1(dependencyMap[7]).ImageIcon, { flexDirection: null, alignItems: false });
+    let tmp3Result = callback(arg1(dependencyMap[7]).ImageIcon, {});
   } else {
     if (obj2.isVideoFile(filename)) {
-      tmp3Result = tmp3(tmp4(tmp5[8]).VideoIcon, { flexDirection: null, alignItems: false });
+      tmp3Result = tmp3(tmp4(tmp5[8]).VideoIcon, {});
     } else {
-      tmp3Result = tmp3(tmp4(tmp5[9]).FileIcon, { flexDirection: null, alignItems: false });
+      tmp3Result = tmp3(tmp4(tmp5[9]).FileIcon, {});
     }
     const obj2 = arg1(dependencyMap[6]);
   }

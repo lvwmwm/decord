@@ -85,14 +85,20 @@ const fn = function n(moment) {
     weekdays: "niedziela_poniedzia\u0142ek_wtorek_\u015Broda_czwartek_pi\u0105tek_sobota".split("_"),
     weekdaysShort: "ndz_pon_wt_\u015Br_czw_pt_sob".split("_"),
     weekdaysMin: "Nd_Pn_Wt_\u015Ar_Cz_Pt_So".split("_"),
-    longDateFormat: {},
+    longDateFormat: { <string:1122280543>: null, <string:3251850218>: null, <string:306010250>: null, <string:37429971>: null, <string:1812403200>: null, <string:3855182856>: "isArray" },
     calendar: obj,
-    relativeTime: obj,
+    relativeTime: { ss: translate, m: translate, mm: translate, h: translate, hh: translate, d: "1 dzie\u0144", dd: "%d dni", M: "miesi\u0105c", MM: translate, y: "rok", yy: translate },
     dayOfMonthOrdinalParse: /\d{1,2}\./,
     ordinal: "%d.",
-    week: { "Bool(true)": false, "Bool(true)": false }
+    week: { <string:1431496722>: false, <string:1627556098>: false }
   };
   obj = {
+    status: 1962935034,
+    padding: 1929380602,
+    opacity: 1124074234,
+    PX_8: 191998,
+    Symbol: -1278803966,
+    r: 1749549059,
     nextWeek() {
       const dayResult = this.day();
       if (0 === dayResult) {
@@ -120,7 +126,6 @@ const fn = function n(moment) {
       }
     }
   };
-  obj = { "Bool(false)": 0.00000000000000000000000000000000000000000000000000000000002364748088669726, "Bool(false)": 193548527504045510000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, "Bool(false)": 4138479624571146000000000000000000000000000000000000000000000000000000000000000000000000000000000, ss: translate, m: translate, mm: translate, h: translate, hh: translate, d: "1 dzie\u0144", dd: "%d dni", M: "miesi\u0105c", MM: translate, y: "rok", yy: translate };
   return moment.defineLocale("pl", obj);
 };
 if ("object" === typeof exports) {
@@ -132,7 +137,7 @@ if ("object" === typeof exports) {
 }
 if ("function" === typeof globalThis.define) {
   if (globalThis.define.amd) {
-    globalThis.define([1782644737], fn);
+    globalThis.define(["HH:mm:ss"], fn);
   }
 }
 fn(this.moment);

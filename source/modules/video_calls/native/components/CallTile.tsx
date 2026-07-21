@@ -1,9 +1,9 @@
-// Module ID: 10767
-// Function ID: 83661
+// Module ID: 10773
+// Function ID: 83684
 // Name: StreamPreviewTile
 // Dependencies: []
 
-// Module 10767 (StreamPreviewTile)
+// Module 10773 (StreamPreviewTile)
 class StreamPreviewTile {
   constructor(arg0) {
     participant = global.participant;
@@ -139,13 +139,13 @@ const tmp3 = arg1(dependencyMap[4]);
 const tmp4 = arg1(dependencyMap[5]);
 ({ jsx: closure_13, Fragment: closure_14, jsxs: closure_15 } = arg1(dependencyMap[6]));
 let obj1 = arg1(dependencyMap[7]);
-let obj = { liveContainer: { onLongPressAvatar: false, onTapUsername: false, onLongPressUsername: false }, titleIcon: { marginRight: 6 } };
+let obj = { liveContainer: {}, titleIcon: { marginRight: 6 } };
 obj = {};
 let obj4 = arg1(dependencyMap[8]);
 obj.backgroundColor = obj4.hexOpacityToRgba(importDefault(dependencyMap[9]).unsafe_rawColors.PRIMARY_700, 0.5);
 obj.borderRadius = importDefault(dependencyMap[9]).radii.sm;
 obj.usernameContainer = obj;
-obj1 = { "Bool(false)": 0.001, "Bool(false)": 0.001, "Bool(false)": null, "Bool(false)": "/", "Bool(false)": null, borderRadius: importDefault(dependencyMap[9]).radii.sm };
+obj1 = { <string:1373095266>: 0.001, <string:1347517852>: 0.001, <string:1373069732>: null, <string:2715639170>: "/", <string:1644077513>: null, borderRadius: importDefault(dependencyMap[9]).radii.sm };
 obj.usernamePosition = obj1;
 const tmp5 = arg1(dependencyMap[6]);
 obj.streamPreview = { backgroundColor: importDefault(dependencyMap[9]).unsafe_rawColors.PRIMARY_600 };

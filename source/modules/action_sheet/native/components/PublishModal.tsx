@@ -1,17 +1,17 @@
-// Module ID: 9846
-// Function ID: 76236
+// Module ID: 9851
+// Function ID: 76252
 // Name: PublishModal
 // Dependencies: []
 // Exports: default
 
-// Module 9846 (PublishModal)
+// Module 9851 (PublishModal)
 let closure_3 = importDefault(dependencyMap[0]);
 importAll(dependencyMap[1]);
 ({ View: closure_4, ActivityIndicator: closure_5 } = arg1(dependencyMap[2]));
 const jsx = arg1(dependencyMap[3]).jsx;
 let obj = arg1(dependencyMap[4]);
-obj = { alertContainer: { paddingTop: 16 }, alertLoading: { names: 0, ks: 0 } };
-obj = { "Bool(true)": false, "Bool(false)": false, "Bool(false)": false, color: arg1(dependencyMap[5]).DARK_PRIMARY_300_LIGHT_PRIMARY_400 };
+obj = { alertContainer: { paddingTop: 16 }, alertLoading: { bm: -16, cursor: -9 } };
+obj = { "Null": null, "Null": null, "Null": null, color: arg1(dependencyMap[5]).DARK_PRIMARY_300_LIGHT_PRIMARY_400 };
 obj.alertBodyText = obj;
 let closure_7 = obj.createStyles(obj);
 const tmp3 = arg1(dependencyMap[2]);

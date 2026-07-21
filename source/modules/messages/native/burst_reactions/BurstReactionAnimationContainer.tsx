@@ -1,10 +1,10 @@
-// Module ID: 15461
-// Function ID: 117953
+// Module ID: 15468
+// Function ID: 117977
 // Name: BurstReactionAnimationContainerInner
 // Dependencies: []
 // Exports: default
 
-// Module 15461 (BurstReactionAnimationContainerInner)
+// Module 15468 (BurstReactionAnimationContainerInner)
 let StyleSheet;
 function BurstReactionAnimationContainerInner() {
   function handleComponentFinish() {
@@ -153,7 +153,7 @@ obj1["alignItems"] = "center";
 obj1["justifyContent"] = "center";
 obj.fill = obj1;
 obj.dismissTextContainer = {};
-const obj2 = { 743532897: "channelId", 1374118276: "channelId", 1650568382: "channelId", 1655477585: "channelId", 1632720554: "channelId", 1407672654: "resizeMode", backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_SURFACE_HIGHEST, borderRadius: importDefault(dependencyMap[6]).radii.round };
+const obj2 = { "Null": null, "Null": null, "Null": null, "Null": null, "Null": null, "Null": null, backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_SURFACE_HIGHEST, borderRadius: importDefault(dependencyMap[6]).radii.round };
 obj.dismissTextBackground = obj2;
 let closure_11 = obj.createStyles(obj);
 let closure_12 = { code: "function BurstReactionAnimationContainerTsx1(){const{animationData,showAnimation,withTiming,runOnJS,handleComponentFinish}=this.__closure;if(animationData==null){return{opacity:0};}if(!showAnimation){return{opacity:withTiming(0,{duration:300},'respect-motion-settings',function(finished){if(finished)runOnJS(handleComponentFinish)();})};}return{opacity:withTiming(1,{duration:300})};}" };

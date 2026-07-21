@@ -1,10 +1,10 @@
-// Module ID: 11874
-// Function ID: 91935
+// Module ID: 11881
+// Function ID: 91958
 // Name: BotUserProfileOverflowMenu
 // Dependencies: []
 // Exports: default
 
-// Module 11874 (BotUserProfileOverflowMenu)
+// Module 11881 (BotUserProfileOverflowMenu)
 let closure_3 = importAll(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 let closure_5 = importDefault(dependencyMap[2]);

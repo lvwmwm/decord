@@ -1,10 +1,10 @@
-// Module ID: 14885
-// Function ID: 112175
+// Module ID: 14892
+// Function ID: 112199
 // Name: importDefaultResult1
 // Dependencies: []
 // Exports: default
 
-// Module 14885 (importDefaultResult1)
+// Module 14892 (importDefaultResult1)
 importAll(dependencyMap[0]);
 ({ Image: closure_2, View: closure_3 } = arg1(dependencyMap[1]));
 const tmp3 = arg1(dependencyMap[1]);
@@ -25,13 +25,13 @@ const importDefaultResult2Result = importDefault(dependencyMap[4])(importDefault
 const alphaResult2 = importDefault(dependencyMap[4])(importDefault(dependencyMap[3]).unsafe_rawColors.BRAND_500).alpha(0.35);
 const hexResult2 = importDefault(dependencyMap[4])(importDefault(dependencyMap[3]).unsafe_rawColors.BRAND_500).alpha(0.35).hex();
 let obj = {};
-obj = { paddingTop: importDefault(dependencyMap[3]).space.PX_12, paddingBottom: importDefault(dependencyMap[3]).space.PX_16 + 4 };
+obj = { position: true, height: "/assets/modules/guild_role_subscriptions/native/images", width: 375, backgroundColor: 120, paddingTop: importDefault(dependencyMap[3]).space.PX_12, paddingBottom: importDefault(dependencyMap[3]).space.PX_16 + 4 };
 obj.container = obj;
 const obj7 = arg1(dependencyMap[5]);
 const items = [{ rotate: "-6deg" }];
-obj.gameCard = { borderRadius: importDefault(dependencyMap[3]).radii.xs, transform: items, shadowColor: importDefault(dependencyMap[3]).colors.BLACK, shadowOffset: { aze: "0 0 4px 0 hsl(none 0% 0% / 0.08)", azj: "drop-shadow(0 0 4px hsl(none 0% 0% / 0.08))" }, shadowOpacity: 0.25, shadowRadius: 4, elevation: 4 };
-obj.gameImage = { aze: 30271555, azj: 22092032 };
-const obj2 = { "Null": null, "Null": null, "Null": null, backgroundColor: null, alignItems: null, borderBottomWidth: null, kind: null, borderRadius: importDefault(dependencyMap[3]).radii.xs };
+obj.gameCard = { borderRadius: importDefault(dependencyMap[3]).radii.xs, transform: items, shadowColor: importDefault(dependencyMap[3]).colors.BLACK, shadowOffset: { bhk: "0 0 4px 0 hsl(none 0% 0% / 0.08)", bic: "drop-shadow(0 0 4px hsl(none 0% 0% / 0.08))" }, shadowOpacity: 0.25, shadowRadius: 4, elevation: 4 };
+obj.gameImage = {};
+const obj2 = { "Bool(false)": "<string:1623523329>", "Bool(false)": "<string:1967390721>", "Bool(false)": "<string:3238003442>", "Bool(false)": "<string:1761608157>", "Bool(false)": "<string:1744830771>", "Bool(false)": "<string:1358954803>", "Bool(false)": "<string:4201911879>", borderRadius: importDefault(dependencyMap[3]).radii.xs };
 const items1 = [{ rotate: "6deg" }];
 obj2.transform = items1;
 obj2.borderColor = hexResult;
@@ -41,10 +41,10 @@ obj2.justifyContent = "center";
 obj2.marginStart = -importDefault(dependencyMap[3]).space.PX_8;
 obj2.marginTop = importDefault(dependencyMap[3]).space.PX_8;
 obj.addCard = obj2;
-const obj3 = { "Bool(false)": "text-sm/medium", "Bool(false)": "text-default", "Bool(false)": null, "Bool(false)": null, "Bool(false)": 1, "Bool(false)": "tail", borderRadius: importDefault(dependencyMap[3]).radii.xs, backgroundColor: hexResult2 };
+const obj3 = { <string:173102256>: "channelContainer", <string:1549034243>: "handlePressCategory", <string:3972818102>: "colorRoleId", <string:374453936>: "y", <string:4221592070>: "APPLICATION_MANAGED_ACTIVITY_LINK", <string:1637461585>: "Array", borderRadius: importDefault(dependencyMap[3]).radii.xs, backgroundColor: hexResult2 };
 obj.addIconWrapper = obj3;
 let closure_6 = obj7.createStyles(obj);
-const obj1 = { borderRadius: importDefault(dependencyMap[3]).radii.xs, transform: items, shadowColor: importDefault(dependencyMap[3]).colors.BLACK, shadowOffset: { aze: "0 0 4px 0 hsl(none 0% 0% / 0.08)", azj: "drop-shadow(0 0 4px hsl(none 0% 0% / 0.08))" }, shadowOpacity: 0.25, shadowRadius: 4, elevation: 4 };
+const obj1 = { borderRadius: importDefault(dependencyMap[3]).radii.xs, transform: items, shadowColor: importDefault(dependencyMap[3]).colors.BLACK, shadowOffset: { bhk: "0 0 4px 0 hsl(none 0% 0% / 0.08)", bic: "drop-shadow(0 0 4px hsl(none 0% 0% / 0.08))" }, shadowOpacity: 0.25, shadowRadius: 4, elevation: 4 };
 const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/game_claim/native/GameClaimCardStack.tsx");
 
 export default function GameClaimCardStack(uri) {
@@ -53,7 +53,7 @@ export default function GameClaimCardStack(uri) {
   obj = { style: tmp.gameCard, children: callback(closure_2, obj) };
   obj = { style: tmp.gameImage, source: { uri: uri.imageSrc }, resizeMode: "cover" };
   const items = [callback(closure_3, obj), ];
-  const obj1 = { style: tmp.addCard, children: callback(closure_3, { style: tmp.addIconWrapper, children: callback(arg1(dependencyMap[6]).PlusSmallIcon, {}) }) };
+  const obj1 = { style: tmp.addCard, children: callback(closure_3, { style: tmp.addIconWrapper, children: callback(arg1(dependencyMap[6]).PlusSmallIcon, { flex: true, flexGrow: "/assets/modules/guild_role_subscriptions/native/images" }) }) };
   items[1] = callback(closure_3, obj1);
   obj.children = items;
   return callback2(closure_3, obj);

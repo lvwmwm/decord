@@ -1,9 +1,9 @@
-// Module ID: 16489
-// Function ID: 127363
+// Module ID: 16496
+// Function ID: 127397
 // Name: promise
 // Dependencies: []
 
-// Module 16489 (promise)
+// Module 16496 (promise)
 let closure_2 = importDefault(dependencyMap[0]);
 const NativeModules = arg1(dependencyMap[1]).NativeModules;
 const MessageSendLocation = arg1(dependencyMap[2]).MessageSendLocation;

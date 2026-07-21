@@ -1,10 +1,10 @@
-// Module ID: 13783
-// Function ID: 104250
+// Module ID: 13790
+// Function ID: 104273
 // Name: set
 // Dependencies: []
 // Exports: clearDismissedScrollAffordanceBountyIds, useBountiesAutoScroll
 
-// Module 13783 (set)
+// Module 13790 (set)
 let closure_2 = importDefault(dependencyMap[0]);
 let closure_3 = importAll(dependencyMap[1]);
 const AppState = arg1(dependencyMap[2]).AppState;
@@ -151,6 +151,10 @@ export const useBountiesAutoScroll = function useBountiesAutoScroll(listRef) {
   }, items4);
   const items5 = [activeBountyId, callback1, callback2, sharedValue, callback3];
   callback5 = React.useCallback(() => {
+    let num = arg0;
+    if (arg0 === undefined) {
+      num = 0;
+    }
     let current = closure_16.current;
     if (!current) {
       current = closure_15.current;
@@ -186,7 +190,7 @@ export const useBountiesAutoScroll = function useBountiesAutoScroll(listRef) {
           }, 500);
           const obj = callback(closure_1[7]);
         }
-      }, 5000);
+      }, num);
       flag = true;
     }
     return flag;
@@ -248,7 +252,7 @@ export const useBountiesAutoScroll = function useBountiesAutoScroll(listRef) {
       callback3(0);
       callback4(true);
       const _setInterval = setInterval;
-      closure_19.current = setInterval(callback7, 100);
+      closure_19.current = setInterval(callback7, 50);
     }
   }, items8);
   const items9 = [callback];
@@ -283,7 +287,7 @@ export const useBountiesAutoScroll = function useBountiesAutoScroll(listRef) {
       const _Date = Date;
       closure_22.current = Date.now();
       const _setInterval = setInterval;
-      closure_19.current = setInterval(callback7, 100);
+      closure_19.current = setInterval(callback7, 50);
     }
   }, items10);
   const items11 = [callback9];
@@ -397,7 +401,7 @@ export const useBountiesAutoScroll = function useBountiesAutoScroll(listRef) {
         tmp7 = tmp2;
       }
       if (tmp7) {
-        callback5();
+        callback5(5000);
       }
       if (tmp) {
         tmp = !closure_17.current;

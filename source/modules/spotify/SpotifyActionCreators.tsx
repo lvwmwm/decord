@@ -1,10 +1,10 @@
-// Module ID: 10887
-// Function ID: 84640
+// Module ID: 10892
+// Function ID: 84661
 // Name: apiRequest
 // Dependencies: []
 // Exports: fetchIsSpotifyProtocolRegistered, getDevices, getProfile, pause, play, setActiveDevice
 
-// Module 10887 (apiRequest)
+// Module 10892 (apiRequest)
 function apiRequest(arg0, arg1, arg2, arg3) {
   let num = arg4;
   arg1 = arg0;
@@ -50,7 +50,7 @@ function apiRequest(arg0, arg1, arg2, arg3) {
 function getAccessToken(id) {
   const arg1 = id;
   const HTTP = arg1(dependencyMap[4]).HTTP;
-  const obj = { CONVERSATIONS: null, replace: null, push: null, url: closure_7.CONNECTION_ACCESS_TOKEN(constants.SPOTIFY, id) };
+  const obj = { lc: "ERROR", type: "ERROR", end: "NOT_RESPONDER", url: closure_7.CONNECTION_ACCESS_TOKEN(constants.SPOTIFY, id) };
   const value = HTTP.get(obj);
   return value.catch((body) => {
     body = body.body;

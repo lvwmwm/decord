@@ -1,10 +1,10 @@
-// Module ID: 14842
-// Function ID: 111876
+// Module ID: 14849
+// Function ID: 111900
 // Name: getVoiceUserHeight
 // Dependencies: []
 // Exports: getVoiceUserHeight
 
-// Module 14842 (getVoiceUserHeight)
+// Module 14849 (getVoiceUserHeight)
 import merged from "module_14";
 
 const View = arg1(dependencyMap[1]).View;
@@ -13,8 +13,8 @@ const importAllResult = importAll(dependencyMap[0]);
 ({ jsx: closure_5, jsxs: closure_6 } = arg1(dependencyMap[3]));
 const XSMALL_20 = arg1(dependencyMap[4]).AvatarSizes.XSMALL_20;
 let obj1 = arg1(dependencyMap[6]);
-let obj = { voiceState: { marginBottom: 13341468206293807000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, borderRadius: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000254639494985, backgroundColor: 35786643594475160000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, height: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007291122058707738 }, disabled: { opacity: 0.5 } };
-obj = { borderRadius: importDefault(dependencyMap[7]).radii.lg, borderColor: importDefault(dependencyMap[7]).colors.BACKGROUND_BASE_LOW };
+let obj = { voiceState: { accessible: "<string:1010910605>", count: "<string:1912603051>", "Bool(false)": "l", "Bool(false)": "Boolean" }, disabled: { opacity: 0.5 } };
+obj = { scales: 10, then: 17, memo: 2, body: 13, style: 4, add: 4, end: 2, memo: 0, bottom: true, borderRadius: importDefault(dependencyMap[7]).radii.lg, borderColor: importDefault(dependencyMap[7]).colors.BACKGROUND_BASE_LOW };
 obj.voiceStateCollapsed = obj;
 obj1 = { marginLeft: 6 };
 const tmp2 = arg1(dependencyMap[3]);
@@ -104,7 +104,7 @@ const memoResult = importAllResult.memo(function VoiceUserItem(arg0) {
     obj2.style = items1;
     const obj3 = { source: getSource, size: XSMALL_20 };
     const items2 = [callback(arg1(dependencyMap[4]).Avatar, obj3), , , , , , , ];
-    const obj4 = { INTEGRATION_CREATE: null, ConstraintReasonCode: null };
+    const obj4 = {};
     const merged = Object.assign(arg0);
     items2[1] = callback(importDefault(dependencyMap[13]), obj4);
     if (disabled) {
@@ -115,7 +115,7 @@ const memoResult = importAllResult.memo(function VoiceUserItem(arg0) {
         if (video) {
           tmp39 = null;
           if (!disabled) {
-            const obj5 = { flexDirection: "r", alignItems: "isArray", style: tmp.voiceStateIcon };
+            const obj5 = { flex: true, flexGrow: true, style: tmp.voiceStateIcon };
             tmp39 = callback(arg1(dependencyMap[18]).VideoIcon, obj5);
           }
         }

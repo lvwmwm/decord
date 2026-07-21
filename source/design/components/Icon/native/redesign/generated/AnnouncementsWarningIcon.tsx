@@ -1,10 +1,10 @@
-// Module ID: 4643
-// Function ID: 40254
+// Module ID: 4645
+// Function ID: 40295
 // Name: AnnouncementsWarningIcon
 // Dependencies: []
 // Exports: AnnouncementsWarningIcon
 
-// Module 4643 (AnnouncementsWarningIcon)
+// Module 4645 (AnnouncementsWarningIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/AnnouncementsWarningIcon.tsx");

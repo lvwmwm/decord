@@ -1,10 +1,10 @@
-// Module ID: 8634
-// Function ID: 68370
+// Module ID: 8638
+// Function ID: 68382
 // Name: GameProfileSummary
 // Dependencies: []
 // Exports: default
 
-// Module 8634 (GameProfileSummary)
+// Module 8638 (GameProfileSummary)
 let closure_2 = importDefault(dependencyMap[0]);
 let closure_3 = importAll(dependencyMap[1]);
 ({ View: closure_4, Pressable: closure_5 } = arg1(dependencyMap[2]));

@@ -1,10 +1,10 @@
-// Module ID: 4554
-// Function ID: 39882
+// Module ID: 4558
+// Function ID: 39930
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 // Exports: getNotifCenterV2MessagePreviewParser, getParser, getParserWithoutLinks, getWidgetMessageRules
 
-// Module 4554 (_createForOfIteratorHelperLoose)
+// Module 4558 (_createForOfIteratorHelperLoose)
 function _createForOfIteratorHelperLoose(@@iterator) {
   let require = Symbol_iterator;
   @@iterator = "undefined" !== typeof Symbol;

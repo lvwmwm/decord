@@ -1,8 +1,8 @@
-// Module ID: 11476
-// Function ID: 89362
+// Module ID: 11483
+// Function ID: 89386
 // Dependencies: []
 
-// Module 11476
+// Module 11483
 let closure_3 = arg1(dependencyMap[1]).GUILD_COMMUNICATION_DISABLED_RESOURCE_LINK;
 const jsx = arg1(dependencyMap[2]).jsx;
 const importAllResult = importAll(dependencyMap[0]);

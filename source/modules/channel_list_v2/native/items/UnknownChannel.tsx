@@ -1,9 +1,9 @@
-// Module ID: 14928
-// Function ID: 112423
+// Module ID: 14935
+// Function ID: 112447
 // Name: handlePress
 // Dependencies: []
 
-// Module 14928 (handlePress)
+// Module 14935 (handlePress)
 function handlePress() {
   let obj = importDefault(dependencyMap[6]);
   obj = { key: "UNKNOWN_CHANNEL_UPDATE_DISCORD" };

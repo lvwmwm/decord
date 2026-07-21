@@ -1,10 +1,10 @@
-// Module ID: 11588
-// Function ID: 90088
+// Module ID: 11595
+// Function ID: 90111
 // Name: useMultiPerkStatusValues
 // Dependencies: []
 // Exports: default
 
-// Module 11588 (useMultiPerkStatusValues)
+// Module 11595 (useMultiPerkStatusValues)
 const PowerupActiveStatusType = require(dependencyMap[0]).PowerupActiveStatusType;
 const _module = require(dependencyMap[4]);
 const result = _module.fileFinishedImporting("modules/premium/powerups/hooks/useMultiPerkStatusValues.tsx");

@@ -1,17 +1,17 @@
-// Module ID: 10085
-// Function ID: 78124
+// Module ID: 10091
+// Function ID: 78142
 // Name: ButtonBadge
 // Dependencies: []
 // Exports: default
 
-// Module 10085 (ButtonBadge)
+// Module 10091 (ButtonBadge)
 class ButtonBadge {
   constructor(arg0) {
     str = global.badgePosition;
     if (str === undefined) {
       str = "left";
     }
-    tmp = f78126(false);
+    tmp = f78144(false);
     tmp2 = jsx;
     obj = {};
     tmp3 = importDefault(dependencyMap[10]);
@@ -26,7 +26,7 @@ const importAllResult = importAll(dependencyMap[0]);
 ({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[1]));
 const tmp2 = arg1(dependencyMap[1]);
 let closure_6 = arg1(dependencyMap[2]).createStyles((arg0) => {
-  let obj = { actionIconButtonPressable: { onTapThreadEmbed: "2026-03-mobile-accessibility-label-optimization", onTapButtonActionComponent: "1000", onTapSelectActionComponent: "1001", onTapWelcomeReply: "1002", onTapInviteToSpeak: "1003", onTapTimestamp: "1004", onTapInlineCode: "1005", onTapRoleIcon: "2026-05-mobile-lurker-server-preview", onTapVoiceChannelBadge: "user", onTapGameIcon: "2025-08-voice-user-affinity" }, withoutMargin: { marginEnd: 0 } };
+  let obj = { actionIconButtonPressable: { extraChildStyle: "isArray", extraUnderlayStyle: "Icon", 1458330862: "track", -516552717: "Array", -1047346797: "isArray", -1806515818: "hd", 1648162628: "sr", 500206416: "r", -630406073: "isArray", -570041138: "props" }, withoutMargin: { marginEnd: 0 } };
   obj = {};
   let prop;
   if (!arg0) {
@@ -37,7 +37,7 @@ let closure_6 = arg1(dependencyMap[2]).createStyles((arg0) => {
   obj = { backgroundColor: importDefault(dependencyMap[3]).colors.BACKGROUND_BASE_LOW, borderWidth: 1, borderColor: importDefault(dependencyMap[3]).colors.INPUT_BACKGROUND_DEFAULT };
   const merged = Object.assign(importDefault(dependencyMap[3]).shadows.SHADOW_LOW);
   obj.outlined = obj;
-  obj.roundButton = { "Bool(false)": "boolean", "Bool(false)": "string" };
+  obj.roundButton = { withTiming: "boolean", View: "string" };
   const obj1 = {};
   const colors = importDefault(dependencyMap[3]).colors;
   obj1.tintColor = arg0 ? colors.ICON_SUBTLE : colors.INTERACTIVE_TEXT_DEFAULT;

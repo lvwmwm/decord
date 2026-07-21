@@ -1,10 +1,10 @@
-// Module ID: 13998
-// Function ID: 106499
+// Module ID: 14005
+// Function ID: 106522
 // Name: EmojiIcon
 // Dependencies: []
 // Exports: default
 
-// Module 13998 (EmojiIcon)
+// Module 14005 (EmojiIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/guild_role_subscriptions/native/components/EmojiIcon.tsx");

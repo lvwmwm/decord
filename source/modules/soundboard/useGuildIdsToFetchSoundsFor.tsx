@@ -1,10 +1,10 @@
-// Module ID: 5728
-// Function ID: 49206
+// Module ID: 5730
+// Function ID: 49249
 // Name: _getGuildIdsToFetchSoundsFor
 // Dependencies: []
 // Exports: getGuildIdsToFetchSoundsFor, useGuildIdsToFetchSoundsFor
 
-// Module 5728 (_getGuildIdsToFetchSoundsFor)
+// Module 5730 (_getGuildIdsToFetchSoundsFor)
 function _getGuildIdsToFetchSoundsFor(guildIds, sounds) {
   const require = sounds;
   return guildIds.filter((arg0) => null == arg1.get(arg0));

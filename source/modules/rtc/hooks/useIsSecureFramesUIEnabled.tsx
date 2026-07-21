@@ -1,28 +1,27 @@
-// Module ID: 8904
-// Function ID: 70276
+// Module ID: 8908
+// Function ID: 70288
 // Name: useIsSecureFramesUIEnabled
 // Dependencies: [0, 0, 0, 0, 0]
 // Exports: useIsSecureFramesUIEnabled
 
-// Module 8904 (useIsSecureFramesUIEnabled)
-import closure_2 from "result";
-import closure_3 from "result";
-import { END_TO_END_ENCRYPTION_DISABLED as closure_4 } from "result";
-import result from "result";
+// Module 8908 (useIsSecureFramesUIEnabled)
+import __exportStarResult1 from "__exportStarResult1";
+import closure_3 from "__exportStarResult1";
+import { END_TO_END_ENCRYPTION_DISABLED as closure_4 } from "__exportStarResult1";
 
-result = result.fileFinishedImporting("modules/rtc/hooks/useIsSecureFramesUIEnabled.tsx");
+const result = require("__exportStarResult1").fileFinishedImporting("modules/rtc/hooks/useIsSecureFramesUIEnabled.tsx");
 
 export const useIsSecureFramesUIEnabled = function useIsSecureFramesUIEnabled(channelId) {
   channelId = channelId.channelId;
   const arg1 = channelId;
-  const items = [closure_3, closure_2];
+  const items = [closure_3, __exportStarResult1];
   const items1 = [channelId];
   return arg1(dependencyMap[3]).useStateFromStores(items, () => {
     let obj;
     let obj2;
-    let items = [closure_3, closure_2];
+    let items = [closure_3, __exportStarResult1];
     if (items === undefined) {
-      const items1 = [closure_3, closure_2];
+      const items1 = [closure_3, __exportStarResult1];
       items = items1;
     }
     [obj, obj2] = items;

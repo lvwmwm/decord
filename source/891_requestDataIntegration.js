@@ -5,7 +5,7 @@
 
 // Module 891 (requestDataIntegration)
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
-let closure_2 = { 9223372036854775807: null, 9223372036854775807: null, -8915290: null, 0: null, 0: null };
+let closure_2 = { 65588306: "LIGHT", -1437179133: "<string:4227858432>", 1627959138: "<string:2731364671>", -397454708: "M144.616 190.007V96.608l197.822 69.184-197.822 69.185v-44.97Z", -480137012: "<string:24183040>" };
 const _module = require(dependencyMap[0]);
 
 export const requestDataIntegration = _module.defineIntegration(function _requestDataIntegration() {

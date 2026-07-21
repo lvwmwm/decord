@@ -1,10 +1,10 @@
-// Module ID: 10440
-// Function ID: 80594
+// Module ID: 10446
+// Function ID: 80617
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 // Exports: useChatUpdatesQueue, useFetchMessageApplications, useFetchVoiceChannelInviteStartTimes, useMessageAuthorActivities, useMessagesLifecycle, useMessagesState, useScrollState
 
-// Module 10440 (_createForOfIteratorHelperLoose)
+// Module 10446 (_createForOfIteratorHelperLoose)
 function _createForOfIteratorHelperLoose(@@iterator) {
   let arg1 = Symbol_iterator;
   @@iterator = "undefined" !== typeof Symbol;

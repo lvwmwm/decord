@@ -1,12 +1,12 @@
-// Module ID: 12347
-// Function ID: 94506
+// Module ID: 12354
+// Function ID: 94529
 // Name: usePremiumPlanSelectStore
 // Dependencies: []
 // Exports: setIsPurchasing
 
-// Module 12347 (usePremiumPlanSelectStore)
+// Module 12354 (usePremiumPlanSelectStore)
 const _module = require(dependencyMap[0]);
-const obj = _module.create(() => ({ BEG: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000800310628823068, END: 0.0000000000000000000000000000000000000000000000015576649385897736 }));
+const obj = _module.create(() => ({ handleGuildCreateOrUpdate: null, psnrHistogram: null }));
 const _module1 = require(dependencyMap[2]);
 const result = _module1.fileFinishedImporting("modules/premium/native/PremiumPlanSelectStore.tsx");
 

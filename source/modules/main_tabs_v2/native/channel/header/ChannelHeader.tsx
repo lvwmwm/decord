@@ -1,10 +1,10 @@
-// Module ID: 10096
-// Function ID: 78189
+// Module ID: 10102
+// Function ID: 78207
 // Name: ChannelHeader
 // Dependencies: []
 // Exports: default, navigateToChannelDetails
 
-// Module 10096 (ChannelHeader)
+// Module 10102 (ChannelHeader)
 importAll(dependencyMap[0]);
 let closure_3 = importDefault(dependencyMap[1]);
 const ComponentActions = arg1(dependencyMap[2]).ComponentActions;

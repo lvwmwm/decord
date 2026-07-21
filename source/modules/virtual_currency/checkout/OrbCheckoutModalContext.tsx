@@ -1,14 +1,14 @@
-// Module ID: 11814
-// Function ID: 91619
+// Module ID: 11821
+// Function ID: 91642
 // Name: useOrbCheckoutModalContextProvider
 // Dependencies: [0, 4294967295, 0, 0, 0, 0, 0, 4294967295, 0, 0, 4294967295]
 // Exports: OrbCheckoutModalContextProvider, useOrbCheckoutModalContext
 
-// Module 11814 (useOrbCheckoutModalContextProvider)
-import result from "result";
-import closure_7 from "result";
-import { jsx } from "result";
-import result from "result";
+// Module 11821 (useOrbCheckoutModalContextProvider)
+import __exportStarResult1 from "__exportStarResult1";
+import closure_7 from "__exportStarResult1";
+import { jsx } from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
 
 function useOrbCheckoutModalContextProvider(skuId) {
   let error;
@@ -105,10 +105,10 @@ function useOrbCheckoutModalContextProvider(skuId) {
   };
   return obj1;
 }
-({ useContext: closure_3, useCallback: closure_4, useMemo: closure_5 } = result);
+({ useContext: closure_3, useCallback: closure_4, useMemo: closure_5 } = __exportStarResult1);
 let closure_6 = importDefault(dependencyMap[1]);
-const obj = { damping: null, stiffness: null, skuApplicationId: undefined };
-obj.loadId = result.v4();
+const obj = { skuApplicationId: undefined };
+obj.loadId = __exportStarResult1.v4();
 obj.analyticsLocations = [];
 obj.analyticsSourceLocation = undefined;
 obj.isRedeeming = false;
@@ -117,9 +117,9 @@ obj.orbProductContext = null;
 obj.onRedeemVirtualCurrency = function onRedeemVirtualCurrency(arg0) {
 
 };
-const context = result.createContext(obj);
+const context = __exportStarResult1.createContext(obj);
 const _module2 = require(dependencyMap[13]);
-result = _module2.fileFinishedImporting("modules/virtual_currency/checkout/OrbCheckoutModalContext.tsx");
+const result = _module2.fileFinishedImporting("modules/virtual_currency/checkout/OrbCheckoutModalContext.tsx");
 
 export { useOrbCheckoutModalContextProvider };
 export const OrbCheckoutModalContextProvider = function OrbCheckoutModalContextProvider(onCheckoutSuccess) {

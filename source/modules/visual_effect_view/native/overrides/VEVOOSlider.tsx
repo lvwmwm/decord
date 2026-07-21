@@ -1,8 +1,8 @@
-// Module ID: 14580
-// Function ID: 109891
+// Module ID: 14587
+// Function ID: 109913
 // Dependencies: []
 
-// Module 14580
+// Module 14587
 let num = 0;
 const jsx = arg1(dependencyMap[1]).jsx;
 const importAllResult = importAll(dependencyMap[0]);

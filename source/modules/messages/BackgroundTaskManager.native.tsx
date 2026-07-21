@@ -1,10 +1,10 @@
-// Module ID: 6988
-// Function ID: 55879
+// Module ID: 6992
+// Function ID: 55890
 // Name: startBackgroundTask
 // Dependencies: []
 // Exports: backgroundify
 
-// Module 6988 (startBackgroundTask)
+// Module 6992 (startBackgroundTask)
 function startBackgroundTask(arg0) {
   let content;
   let title;

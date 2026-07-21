@@ -1,15 +1,14 @@
-// Module ID: 9764
-// Function ID: 75946
+// Module ID: 9769
+// Function ID: 75962
 // Name: useFetchCollectiblesProductCategory
 // Dependencies: [0, 0, 0, 0, 0]
 // Exports: useFetchCollectiblesProductCategory
 
-// Module 9764 (useFetchCollectiblesProductCategory)
-import closure_3 from "result";
-import closure_4 from "result";
-import result from "result";
+// Module 9769 (useFetchCollectiblesProductCategory)
+import __exportStarResult1 from "__exportStarResult1";
+import closure_4 from "__exportStarResult1";
 
-result = result.fileFinishedImporting("modules/collectibles/hooks/useFetchCollectiblesProductCategory.tsx");
+const result = require("__exportStarResult1").fileFinishedImporting("modules/collectibles/hooks/useFetchCollectiblesProductCategory.tsx");
 
 export const useFetchCollectiblesProductCategory = function useFetchCollectiblesProductCategory(skuId) {
   const arg1 = skuId;

@@ -1,10 +1,10 @@
-// Module ID: 6571
-// Function ID: 50730
+// Module ID: 6573
+// Function ID: 50773
 // Name: StudyGroupsSpotIllustration
 // Dependencies: []
 // Exports: StudyGroupsSpotIllustration
 
-// Module 6571 (StudyGroupsSpotIllustration)
+// Module 6573 (StudyGroupsSpotIllustration)
 const jsx = require(dependencyMap[0]).jsx;
 const _module = require(dependencyMap[3]);
 const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/StudyGroupsSpotIllustration.native.tsx");

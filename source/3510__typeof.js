@@ -41,8 +41,7 @@ function _inherits(value) {
   if (arg1) {
     prototype = arg1.prototype;
   }
-  const obj = { EntryPointCommandButtonActions: null, NATIVE_SECTION: null, 1476351743: null, value };
-  value.prototype = Object.create(prototype, { constructor: obj });
+  value.prototype = Object.create(prototype, { constructor: { value } });
   if (arg1) {
     _setPrototypeOf(value, arg1);
   }
@@ -156,7 +155,7 @@ function _createClass(arg0, arg1, arg2) {
 function _defineProperty(arg0, arg1, value) {
   if (arg1 in arg0) {
     const _Object = Object;
-    const obj = { value };
+    const obj = { FRIEND_REQUESTS: true, ForYouLoadMore: true, QUEST_BADGE: true, GUILD_CHANNEL_INTEGRITY_CHECK_CANCELED: true, value };
     Object.defineProperty(arg0, arg1, obj);
   } else {
     arg0[arg1] = value;

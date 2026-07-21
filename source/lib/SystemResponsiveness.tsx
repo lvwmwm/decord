@@ -1,9 +1,9 @@
-// Module ID: 12620
-// Function ID: 97083
+// Module ID: 12627
+// Function ID: 97106
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 
-// Module 12620 (_createForOfIteratorHelperLoose)
+// Module 12627 (_createForOfIteratorHelperLoose)
 function _createForOfIteratorHelperLoose(@@iterator) {
   let arg1 = Symbol_iterator;
   @@iterator = "undefined" !== typeof Symbol;
@@ -144,7 +144,7 @@ const tmp2 = () => {
     key: "getPttQueueLatencyStats",
     value() {
       const pttQueueLatencyHistogram = this.pttQueueLatencyHistogram;
-      const report = pttQueueLatencyHistogram.getReport([false, false]);
+      const report = pttQueueLatencyHistogram.getReport(["\u21E5", "SPACE"]);
       return { ptt_queue_latency_max: report.max, ptt_queue_latency_mean: report.mean, ptt_queue_latency_p50: report.percentiles[50], ptt_queue_latency_p95: report.percentiles[95], ptt_queue_latency_samples: report.samples };
     }
   };

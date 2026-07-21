@@ -1,10 +1,10 @@
-// Module ID: 8519
-// Function ID: 67903
+// Module ID: 8523
+// Function ID: 67915
 // Name: TieredTenureBadgeItem
 // Dependencies: []
 // Exports: default
 
-// Module 8519 (TieredTenureBadgeItem)
+// Module 8523 (TieredTenureBadgeItem)
 function TieredTenureBadgeItem(arg0) {
   let badge;
   let isUsersBadge;
@@ -34,7 +34,7 @@ function TieredTenureBadgeItem(arg0) {
     obj.style = items;
     obj = { resizeMode: "contain", source: small };
     const items1 = [callback(importDefault(dependencyMap[11]), obj), , , ];
-    obj1 = { Promise: "String", marginTop: "kind", flags: "justifyContent", style: tmp.badgeName };
+    obj1 = { "Null": "String", "Null": "kind", "Null": "justifyContent", style: tmp.badgeName };
     const intl = arg1(dependencyMap[13]).intl;
     obj1.children = intl.string(tieredTenureBadgeData.nameUnformatted);
     items1[1] = callback(arg1(dependencyMap[12]).Text, obj1);
@@ -70,12 +70,12 @@ const tmp2 = arg1(dependencyMap[3]);
 const tmp3 = arg1(dependencyMap[4]);
 ({ jsx: closure_10, jsxs: closure_11 } = arg1(dependencyMap[5]));
 let obj = arg1(dependencyMap[6]);
-obj = { headerContainer: {}, title: {}, subtitle: { accessible: null, id: null }, container: {}, rowContainer: { "Bool(false)": null, "Bool(false)": 15, "Bool(false)": "activity_joining_restricted_guild_ids", "Bool(false)": "scalar", "Bool(false)": 1, "Bool(false)": 6, "Bool(false)": 17 }, rowContainerWithUsersBadge: { height: 186 }, badgeContainer: { "Bool(false)": 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000005141789751308086, "Bool(false)": -6.936629281204671, "Bool(false)": 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004949736822029689, "Bool(false)": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000491314967867082, "Bool(false)": 56650275.46831464 } };
+obj = { headerContainer: { onAppear: null, onDisappear: "absolute" }, title: {}, subtitle: { "Null": null, "Null": null }, container: {}, rowContainer: { <string:2580405758>: null, <string:3972856678>: 15, <string:1725476963>: "activity_joining_restricted_guild_ids", <string:1674338908>: "scalar", <string:1691810720>: 1, <string:1549967611>: 6, <string:1632539217>: 17 }, rowContainerWithUsersBadge: { height: 186 }, badgeContainer: {} };
 obj = { backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_MOD_MUTED, borderWidth: 1.2, borderColor: importDefault(dependencyMap[7]).colors.BACKGROUND_MOD_STRONG, borderRadius: importDefault(dependencyMap[7]).radii.sm };
 obj.usersBadgeContainer = obj;
 obj.badgeName = { marginTop: 8 };
 obj.badgeRequirement = { marginTop: 4 };
-obj.badgePremiumSince = { "Null": 1358955054, "Null": 158435690, "Null": 1895825408 };
+obj.badgePremiumSince = {};
 obj.footer = { marginHorizontal: 24 };
 let closure_12 = obj.createStyles(obj);
 const tmp4 = arg1(dependencyMap[5]);
@@ -203,7 +203,7 @@ export default function TieredTenureBadgeActionSheet(userId) {
     obj6.children = tmp25(Button, obj7);
     let tmp31 = obj6;
   } else {
-    const obj8 = { left: true, right: true };
+    const obj8 = { position: false, bottom: false };
     const intl3 = arg1(dependencyMap[13]).intl;
     const string2 = intl3.string;
     const t2 = arg1(dependencyMap[13]).t;
@@ -221,7 +221,7 @@ export default function TieredTenureBadgeActionSheet(userId) {
   const tmp14Result = callback2(View, obj2);
   const tmp23 = closure_10;
   const tmp24 = View;
-  const obj9 = { 0: null, -9223372036854775808: null };
+  const obj9 = { 1891290120: null, -475247768: null };
   let tmp34;
   if (flag) {
     tmp34 = tmp23Result;

@@ -1,10 +1,10 @@
-// Module ID: 14870
-// Function ID: 112036
+// Module ID: 14877
+// Function ID: 112060
 // Name: useGuildPowerupsBoostAction
 // Dependencies: []
 // Exports: default
 
-// Module 14870 (useGuildPowerupsBoostAction)
+// Module 14877 (useGuildPowerupsBoostAction)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 let closure_5 = importDefault(dependencyMap[2]);

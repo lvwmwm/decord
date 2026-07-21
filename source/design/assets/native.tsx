@@ -1,9 +1,9 @@
-// Module ID: 5800
-// Function ID: 49574
+// Module ID: 5802
+// Function ID: 49617
 // Name: AccountAgeTier10LargeBadge
 // Dependencies: []
 
-// Module 5800 (AccountAgeTier10LargeBadge)
+// Module 5802 (AccountAgeTier10LargeBadge)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("design/assets/native.tsx");
 
@@ -405,17 +405,19 @@ export const TrafficConeSpotIllustration = require(dependencyMap[395]).TrafficCo
 export const TreasureChestBannerSpotIllustration = require(dependencyMap[396]).TreasureChestBannerSpotIllustration;
 export const TreasureChestSpotIllustration = require(dependencyMap[397]).TreasureChestSpotIllustration;
 export const TrophyIllocon = require(dependencyMap[398]).TrophyIllocon;
-export const VibeWithWumpusSpotIllustration = require(dependencyMap[399]).VibeWithWumpusSpotIllustration;
-export const VideoCameraSpotIllustration = require(dependencyMap[400]).VideoCameraSpotIllustration;
-export const VoiceFiltersSpotIllustration = require(dependencyMap[401]).VoiceFiltersSpotIllustration;
-export const WasdSpotIllustration = require(dependencyMap[402]).WasdSpotIllustration;
-export const WaterIllocon = require(dependencyMap[403]).WaterIllocon;
-export const WateringCanSpotIllustration = require(dependencyMap[404]).WateringCanSpotIllustration;
-export const WiltedFlowerIllocon = require(dependencyMap[405]).WiltedFlowerIllocon;
-export const WindIllocon = require(dependencyMap[406]).WindIllocon;
-export const WizardHatAndBookSpotIllustration = require(dependencyMap[407]).WizardHatAndBookSpotIllustration;
-export const WordBalloonIllocon = require(dependencyMap[408]).WordBalloonIllocon;
-export const WorldIllocon = require(dependencyMap[409]).WorldIllocon;
-export const WumpusCouchSpotIllustration = require(dependencyMap[410]).WumpusCouchSpotIllustration;
-export const WumpusGearSpotIllustration = require(dependencyMap[411]).WumpusGearSpotIllustration;
-export const WumpusMahjongSpotIllustration = require(dependencyMap[412]).WumpusMahjongSpotIllustration;
+export const TypingIndicatorAbstractUI = require(dependencyMap[399]).TypingIndicatorAbstractUI;
+export const VibeWithWumpusSpotIllustration = require(dependencyMap[400]).VibeWithWumpusSpotIllustration;
+export const VideoCameraSpotIllustration = require(dependencyMap[401]).VideoCameraSpotIllustration;
+export const VoiceFiltersSpotIllustration = require(dependencyMap[402]).VoiceFiltersSpotIllustration;
+export const WasdSpotIllustration = require(dependencyMap[403]).WasdSpotIllustration;
+export const WaterIllocon = require(dependencyMap[404]).WaterIllocon;
+export const WateringCanSpotIllustration = require(dependencyMap[405]).WateringCanSpotIllustration;
+export const WhiteboardAbstractUI = require(dependencyMap[406]).WhiteboardAbstractUI;
+export const WiltedFlowerIllocon = require(dependencyMap[407]).WiltedFlowerIllocon;
+export const WindIllocon = require(dependencyMap[408]).WindIllocon;
+export const WizardHatAndBookSpotIllustration = require(dependencyMap[409]).WizardHatAndBookSpotIllustration;
+export const WordBalloonIllocon = require(dependencyMap[410]).WordBalloonIllocon;
+export const WorldIllocon = require(dependencyMap[411]).WorldIllocon;
+export const WumpusCouchSpotIllustration = require(dependencyMap[412]).WumpusCouchSpotIllustration;
+export const WumpusGearSpotIllustration = require(dependencyMap[413]).WumpusGearSpotIllustration;
+export const WumpusMahjongSpotIllustration = require(dependencyMap[414]).WumpusMahjongSpotIllustration;

@@ -1,17 +1,17 @@
-// Module ID: 11362
-// Function ID: 88358
+// Module ID: 11369
+// Function ID: 88382
 // Name: StyleSheet
 // Dependencies: []
 
-// Module 11362 (StyleSheet)
+// Module 11369 (StyleSheet)
 const StyleSheet = arg1(dependencyMap[1]).StyleSheet;
 const importAllResult = importAll(dependencyMap[0]);
 ({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[2]));
 let obj1 = arg1(dependencyMap[3]);
-let obj = { 1152175442: true, -1348839186: true, -1348948068: true, bottom: -StyleSheet.hairlineWidth, height: StyleSheet.hairlineWidth };
-obj = { "Bool(true)": 5233, "Bool(true)": -1085079296, "Bool(true)": 1514494465, height: StyleSheet.hairlineWidth };
+let obj = { -783165016: 3375103, 1383489899: -8192, -1287393223: 4320799, bottom: -StyleSheet.hairlineWidth, height: StyleSheet.hairlineWidth };
+obj = { -1351329613: 6, -1426477194: 3, -1350914179: "secondary", height: StyleSheet.hairlineWidth };
 obj1 = { height: StyleSheet.hairlineWidth };
-const obj2 = { "Bool(true)": "absolute", "Bool(true)": 0, "Bool(true)": 0, height: StyleSheet.hairlineWidth };
+const obj2 = { -1351329613: null, -1426477194: null, -1350914179: null, height: StyleSheet.hairlineWidth };
 let closure_6 = obj1.createStyles({ blur: {}, strokeContainer: obj, stroke: obj, strokeAlt: obj1, strokeAltLight: obj2 });
 const tmp2 = arg1(dependencyMap[2]);
 let closure_7 = arg1(dependencyMap[4]).isAndroid();

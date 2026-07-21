@@ -1,10 +1,10 @@
-// Module ID: 10828
-// Function ID: 84042
+// Module ID: 10834
+// Function ID: 84065
 // Name: fetchBountiesAndDispatch
 // Dependencies: []
 // Exports: claimBountyReward, fetchBountyPreview, fetchQuestHomeBounties, setBountyVideoProgress
 
-// Module 10828 (fetchBountiesAndDispatch)
+// Module 10834 (fetchBountiesAndDispatch)
 function fetchBountiesAndDispatch() {
   return _fetchBountiesAndDispatch(...arguments);
 }

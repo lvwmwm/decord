@@ -17,8 +17,7 @@ export default function _inherits(value) {
   if (arg1) {
     prototype = arg1.prototype;
   }
-  const obj = { EntryPointCommandButtonActions: null, NATIVE_SECTION: null, 1476351743: null, value };
-  value.prototype = Object.create(prototype, { constructor: obj });
+  value.prototype = Object.create(prototype, { constructor: { value } });
   Object.defineProperty(value, "prototype", { writable: false });
   if (arg1) {
     require(dependencyMap[0])(value, arg1);

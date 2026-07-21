@@ -1,10 +1,10 @@
-// Module ID: 10911
-// Function ID: 84859
+// Module ID: 10916
+// Function ID: 84880
 // Name: createGameSheetHook
-// Dependencies: []
+// Dependencies: [284214097]
 // Exports: createGameSheetHook
 
-// Module 10911 (createGameSheetHook)
+// Module 10916 (createGameSheetHook)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("modules/quests/SponsoredQuestUtils.native.tsx");
 

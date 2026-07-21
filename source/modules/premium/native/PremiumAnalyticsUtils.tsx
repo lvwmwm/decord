@@ -1,10 +1,10 @@
-// Module ID: 7146
-// Function ID: 57679
+// Module ID: 7150
+// Function ID: 57690
 // Name: getBaseAnalyticsFields
 // Dependencies: []
 // Exports: getBasePurchaseFlowAnalyticsFields, getNewAnalyticsLoadId, getPaymentFlowCompletedAnalyticsFields, getPaymentFlowStepAnalyticsFields, trackPremiumSubscriptionCancellationFlowStep, trackPremiumSubscriptionCancellationStarted
 
-// Module 7146 (getBaseAnalyticsFields)
+// Module 7150 (getBaseAnalyticsFields)
 function getBaseAnalyticsFields(subscription) {
   const obj = {};
   let id;

@@ -1,26 +1,27 @@
 // Module ID: 161
 // Function ID: 2461
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [180, 183, 70]
 
 // Module 161 (_isNativeReflectConstruct)
+import Timing from "Timing";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import module_70 from "module_70";
+
 function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
+  let Timing = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
   }));
   function _isNativeReflectConstruct() {
-    return closure_0;
+    return Timing;
   }
   const result = _isNativeReflectConstruct();
 }
-let closure_0 = importDefault(dependencyMap[0]);
-let closure_1 = importDefault(dependencyMap[1]);
-let closure_2 = importDefault(dependencyMap[2]);
 let closure_3 = importDefault(dependencyMap[3]);
 let closure_4 = importDefault(dependencyMap[4]);
 let closure_5 = importDefault(dependencyMap[6]);
 const importDefaultResult1 = importDefault(dependencyMap[7]);
-let closure_6 = {};
+let closure_6 = { "Null": false, "Null": false, "Null": false, "Null": false, "Null": false, "Null": false, "Null": false, "Null": false, "Null": false, "Null": false, "Null": false, "Null": false, "Null": false, "Bool(true)": false, "Bool(true)": false, "Bool(true)": -1273973744, "Bool(true)": -1406091899, "Bool(true)": -1363101585, "Bool(true)": "COMMANDS_MIGRATION_UPSELL_MODAL", "Bool(true)": "application_user_id", "Bool(true)": "isArray", "Bool(true)": "isArray" };
 let obj = {};
 let closure_7 = importDefaultResult1("name");
 let closure_8 = importDefaultResult1("code");
@@ -32,7 +33,7 @@ const tmp4 = (arg0) => {
       items = [];
       items[0] = arg0;
       obj = closure_3(DOMException);
-      tmp2 = closure_2;
+      tmp2 = module_70;
       if (closure_10()) {
         tmp4 = globalThis;
         _Reflect = Reflect;
@@ -72,7 +73,7 @@ const tmp4 = (arg0) => {
       return tmp2Result;
     }
   }
-  let closure_0 = DOMException;
+  let Timing = DOMException;
   callback2(DOMException, arg0);
   let obj = {
     key: "name",

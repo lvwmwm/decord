@@ -1,10 +1,10 @@
-// Module ID: 15511
-// Function ID: 118385
+// Module ID: 15518
+// Function ID: 118409
 // Name: useLaunchpadAnimatedStyles
 // Dependencies: []
 // Exports: default
 
-// Module 15511 (useLaunchpadAnimatedStyles)
+// Module 15518 (useLaunchpadAnimatedStyles)
 const LAUNCH_PAD_SPRING_CONFIG = require(dependencyMap[0]).LAUNCH_PAD_SPRING_CONFIG;
 const _module = require(dependencyMap[1]);
 let closure_4 = _module.isAndroid();
@@ -56,7 +56,7 @@ export default function useLaunchpadAnimatedStyles(launchPadSharedState) {
     fn.__closure = obj;
     fn.__workletHash = 7028378249389;
     fn.__initData = closure_7;
-    obj.translateX = obj3.withSpring(launchPadSharedState(launchPadShown[6]).interpolate(value, [null, null], items), tmp2, "animate-always", fn);
+    obj.translateX = obj3.withSpring(launchPadSharedState(launchPadShown[6]).interpolate(value, ["Text", "lc"], items), tmp2, "animate-always", fn);
     const items1 = [obj];
     obj.transform = items1;
     if (!tmp3) {
@@ -75,7 +75,7 @@ export default function useLaunchpadAnimatedStyles(launchPadSharedState) {
       obj = {};
       obj2 = launchPadSharedState(launchPadShown[7]);
       obj3 = launchPadSharedState(launchPadShown[6]);
-      obj.opacity = obj2.withSpring(obj3.interpolate(launchPadSharedState.get(), [null, null], [false, false]), closure_3, "animate-always");
+      obj.opacity = obj2.withSpring(obj3.interpolate(launchPadSharedState.get(), ["Text", "lc"], [true, true]), closure_3, "animate-always");
       return obj;
     }
   }

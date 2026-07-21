@@ -1,9 +1,9 @@
-// Module ID: 12775
-// Function ID: 97902
+// Module ID: 12782
+// Function ID: 97925
 // Name: styles
 // Dependencies: []
 
-// Module 12775 (styles)
+// Module 12782 (styles)
 const Fonts = require(dependencyMap[0]).Fonts;
 let obj = {};
 const _module = require(dependencyMap[1]);
@@ -13,10 +13,10 @@ const merged = Object.assign(importDefault(dependencyMap[2])(Fonts.PRIMARY_MEDIU
 const merged1 = Object.assign(obj);
 obj["backgroundColor"] = importDefault(dependencyMap[3]).colors.BACKGROUND_BASE_LOWEST;
 obj.textInput = obj;
-const obj1 = { title: false, hasIcons: false, backgroundColor: importDefault(dependencyMap[3]).colors.BACKGROUND_SURFACE_HIGH };
-obj.disabledTextInput = obj1;
-const obj2 = {};
 const importDefaultResult = importDefault(dependencyMap[2]);
+obj.disabledTextInput = { backgroundColor: importDefault(dependencyMap[3]).colors.BACKGROUND_SURFACE_HIGH };
+const obj2 = {};
+const obj1 = { backgroundColor: importDefault(dependencyMap[3]).colors.BACKGROUND_SURFACE_HIGH };
 const merged2 = Object.assign(importDefault(dependencyMap[2])(Fonts.PRIMARY_MEDIUM, importDefault(dependencyMap[3]).colors.INTERACTIVE_TEXT_ACTIVE, 16));
 const merged3 = Object.assign(obj);
 obj2["backgroundColor"] = importDefault(dependencyMap[3]).colors.BACKGROUND_SURFACE_HIGH;

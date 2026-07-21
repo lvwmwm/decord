@@ -1,10 +1,10 @@
-// Module ID: 12003
-// Function ID: 92791
+// Module ID: 12010
+// Function ID: 92814
 // Name: UserProfileWishlistSuggestionsGridContent
 // Dependencies: []
 // Exports: default
 
-// Module 12003 (UserProfileWishlistSuggestionsGridContent)
+// Module 12010 (UserProfileWishlistSuggestionsGridContent)
 function UserProfileWishlistSuggestionsGridContent(arg0) {
   let containerWidth;
   let maxWidth;
@@ -57,7 +57,7 @@ function WishlistSuggestionsGridContents(arg0) {
   ({ wishlistId, containerWidth, maxWidth, markAsDismissed } = arg0);
   const tmp = importDefault(dependencyMap[10])("UserProfileWishlistSuggestionsGridContent");
   const tmp2 = callback2();
-  let obj = { showUserCount: null, showEndDate: "5e2f785032385a803c0dd3d91ffe95da", containerWidth, maxWidth, sidePadding: closure_5 + PX_16 + 1, gap: closure_6 };
+  let obj = { 1375303266: null, -313275336: "5e2f785032385a803c0dd3d91ffe95da", containerWidth, maxWidth, sidePadding: closure_5 + PX_16 + 1, gap: closure_6 };
   const analyticsLocations = importDefault(dependencyMap[12])().analyticsLocations;
   let obj1 = arg1(dependencyMap[15]);
   obj = { userId, wishlist, numWishlistItemsToRecommend: 15, maxWishlistItemsToShow: 9, source: arg1(dependencyMap[16]).WishlistFetchSource.USER_PROFILE };
@@ -101,7 +101,7 @@ function WishlistSuggestionsGridContents(arg0) {
       str4 = "auto";
     }
     obj5.importantForAccessibility = str4;
-    const obj6 = { st: "done", borderWidth: "construct" };
+    const obj6 = {};
     const obj7 = { size: "sm", color: importDefault(dependencyMap[5]).colors.CONTROL_ICON_ONLY_ICON_DEFAULT };
     obj6.icon = callback(arg1(dependencyMap[21]).XSmallIcon, obj7);
     obj6.onPress = markAsDismissed;

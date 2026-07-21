@@ -1,10 +1,10 @@
-// Module ID: 10570
-// Function ID: 82519
+// Module ID: 10576
+// Function ID: 82542
 // Name: StreamQualityLiveIndicator
 // Dependencies: []
 // Exports: default
 
-// Module 10570 (StreamQualityLiveIndicator)
+// Module 10576 (StreamQualityLiveIndicator)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 const View = arg1(dependencyMap[2]).View;
@@ -17,12 +17,12 @@ let obj = arg1(dependencyMap[7]);
 obj = { liveIndicator: { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null } };
 obj = { borderBottomLeftRadius: importDefault(dependencyMap[8]).radii.none, borderTopLeftRadius: importDefault(dependencyMap[8]).radii.none, height: 18, textAlign: "center" };
 obj.liveTag = obj;
-const obj1 = { GIFT_CODE_REDEEM: true, AQ: true, goldenrod: true, _min: true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, borderBottomLeftRadius: importDefault(dependencyMap[8]).radii.sm, borderTopLeftRadius: importDefault(dependencyMap[8]).radii.sm, backgroundColor: importDefault(dependencyMap[8]).unsafe_rawColors.PRIMARY_800 };
-obj.qualityTag = obj1;
-obj.qualityTagText = {};
 const tmp3 = arg1(dependencyMap[6]);
+obj.qualityTag = { borderBottomLeftRadius: importDefault(dependencyMap[8]).radii.sm, borderTopLeftRadius: importDefault(dependencyMap[8]).radii.sm, backgroundColor: importDefault(dependencyMap[8]).unsafe_rawColors.PRIMARY_800 };
+obj.qualityTagText = {};
+const obj1 = { borderBottomLeftRadius: importDefault(dependencyMap[8]).radii.sm, borderTopLeftRadius: importDefault(dependencyMap[8]).radii.sm, backgroundColor: importDefault(dependencyMap[8]).unsafe_rawColors.PRIMARY_800 };
 obj.reducedQualityTagText = { color: importDefault(dependencyMap[8]).unsafe_rawColors.PRIMARY_300 };
-obj.nitroWheel = { "Bool(false)": -0.00000000000000026723797281407397, "Bool(false)": 494660988042320100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 };
+obj.nitroWheel = {};
 let closure_12 = obj.createStyles(obj);
 let closure_13 = { code: "function StreamQualityLiveIndicatorTsx1(){const{withTiming,reveal,STANDARD_EASING}=this.__closure;return{opacity:withTiming(reveal?1:0,{easing:STANDARD_EASING,duration:250})};}" };
 const obj2 = { color: importDefault(dependencyMap[8]).unsafe_rawColors.PRIMARY_300 };

@@ -1,10 +1,10 @@
-// Module ID: 13281
-// Function ID: 100893
+// Module ID: 13288
+// Function ID: 100916
 // Name: ActivityShareLinkModal
 // Dependencies: []
 // Exports: default
 
-// Module 13281 (ActivityShareLinkModal)
+// Module 13288 (ActivityShareLinkModal)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 let closure_5 = importAll(dependencyMap[2]);
@@ -19,8 +19,8 @@ let obj = arg1(dependencyMap[10]);
 obj = {};
 obj = { paddingHorizontal: importDefault(dependencyMap[11]).space.PX_16, paddingVertical: importDefault(dependencyMap[11]).space.PX_8, backgroundColor: importDefault(dependencyMap[11]).colors.BACKGROUND_BASE_LOWER };
 obj.headerContainer = obj;
-obj.header = {};
-const obj1 = { TN: true, wrapperPageY: true, backgroundColor: importDefault(dependencyMap[11]).colors.BACKGROUND_BASE_LOWER };
+obj.header = { NU: true, SMS_CODE_LENGTH: true, EPOCH_AUTHENTICATOR_LENGTH: true };
+const obj1 = { label: "isArray", accessibilityRole: "accessibilityRole", backgroundColor: importDefault(dependencyMap[11]).colors.BACKGROUND_BASE_LOWER };
 obj.container = obj1;
 let closure_14 = obj.createStyles(obj);
 const tmp2 = arg1(dependencyMap[9]);

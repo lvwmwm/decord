@@ -1,8 +1,8 @@
-// Module ID: 15577
-// Function ID: 118884
+// Module ID: 15584
+// Function ID: 118908
 // Dependencies: []
 
-// Module 15577
+// Module 15584
 const importAllResult = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 const ActivityPanelModes = arg1(dependencyMap[2]).ActivityPanelModes;
@@ -35,7 +35,7 @@ const memoResult = importAllResult.memo(function MinimizeActivityButton(arg0) {
     }
     return tmp3;
   }
-  obj = { "Null": "png", "Null": 16, "Null": 16, "Null": 8, "Null": 4, 9223372036854775807: 10, icon: importDefault(dependencyMap[6]) };
+  obj = { "Bool(true)": "png", "Bool(true)": 16, "Bool(true)": 16, "Bool(true)": 8, "Bool(true)": 4, "Bool(true)": 10, icon: importDefault(dependencyMap[6]) };
   const intl = arg1(dependencyMap[7]).intl;
   obj.accessibilityLabel = intl.string(arg1(dependencyMap[7]).t.brPQ5U);
   obj.onPress = callback;

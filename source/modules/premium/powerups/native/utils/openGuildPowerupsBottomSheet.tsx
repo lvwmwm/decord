@@ -1,10 +1,10 @@
-// Module ID: 11532
-// Function ID: 89833
+// Module ID: 11539
+// Function ID: 89856
 // Name: openGuildPowerupsBottomSheet
-// Dependencies: [45154304, 270270464, 491323392, 79429632]
+// Dependencies: [45154304, 270270464, 491585536, 79429632]
 // Exports: default
 
-// Module 11532 (openGuildPowerupsBottomSheet)
+// Module 11539 (openGuildPowerupsBottomSheet)
 const _module = require(dependencyMap[3]);
 const result = _module.fileFinishedImporting("modules/premium/powerups/native/utils/openGuildPowerupsBottomSheet.tsx");
 

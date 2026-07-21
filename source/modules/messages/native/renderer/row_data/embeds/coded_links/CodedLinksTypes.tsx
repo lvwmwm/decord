@@ -1,9 +1,9 @@
-// Module ID: 11069
-// Function ID: 86111
+// Module ID: 11075
+// Function ID: 86134
 // Name: AppMessageEmbedDisplayType
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 11069 (AppMessageEmbedDisplayType)
+// Module 11075 (AppMessageEmbedDisplayType)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("modules/messages/native/renderer/row_data/embeds/coded_links/CodedLinksTypes.tsx");
 

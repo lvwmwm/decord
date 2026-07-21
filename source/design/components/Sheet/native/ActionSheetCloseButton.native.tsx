@@ -1,14 +1,14 @@
-// Module ID: 5497
-// Function ID: 46831
+// Module ID: 5499
+// Function ID: 46873
 // Name: ActionSheetCloseButton
 // Dependencies: []
 // Exports: ActionSheetCloseButton
 
-// Module 5497 (ActionSheetCloseButton)
+// Module 5499 (ActionSheetCloseButton)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 let closure_4 = Object.freeze({ radius: 12 });
-let closure_5 = Object.freeze({ position: "parent", right: "Array", top: "isArray", display: "accessibilityRole" });
+let closure_5 = Object.freeze({ label: "Array", maxLength: "gradientTop", backgroundColor: "EXPERIMENT_GUILD_EXPOSURE_SUPPRESSED", padding: "showReferralNotificationDot" });
 const result = arg1(dependencyMap[6]).fileFinishedImporting("design/components/Sheet/native/ActionSheetCloseButton.native.tsx");
 
 export const ActionSheetCloseButton = function ActionSheetCloseButton(arg0) {

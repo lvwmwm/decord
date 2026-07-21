@@ -1,9 +1,9 @@
-// Module ID: 5509
-// Function ID: 46874
+// Module ID: 5511
+// Function ID: 46916
 // Name: ICON_SIZE
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 5509 (ICON_SIZE)
+// Module 5511 (ICON_SIZE)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("design/components/Icon/IconSize.tsx");
 

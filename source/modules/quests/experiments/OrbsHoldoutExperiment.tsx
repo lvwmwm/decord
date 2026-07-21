@@ -1,12 +1,11 @@
-// Module ID: 13857
-// Function ID: 104821
+// Module ID: 13864
+// Function ID: 104844
 // Name: apexExperiment
 // Dependencies: []
 
-// Module 13857 (apexExperiment)
+// Module 13864 (apexExperiment)
 const _module = require(dependencyMap[0]);
-const obj = { -1269606814: false, -1845285747: false, defaultConfig: { enabled: false }, variations: { [0]: { enabled: false }, [1]: { enabled: true } } };
-const apexExperiment = _module.createApexExperiment(obj);
+const apexExperiment = _module.createApexExperiment({ defaultConfig: { enabled: false }, variations: { [0]: { enabled: false }, [1]: { enabled: true } } });
 const _module1 = require(dependencyMap[1]);
 const result = _module1.fileFinishedImporting("modules/quests/experiments/OrbsHoldoutExperiment.tsx");
 

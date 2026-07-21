@@ -1,12 +1,13 @@
-// Module ID: 15735
-// Function ID: 120252
+// Module ID: 15742
+// Function ID: 120276
 // Name: useSoundboardConfig
-// Dependencies: []
+// Dependencies: [0, 0, 0]
 // Exports: default
 
-// Module 15735 (useSoundboardConfig)
-let closure_3 = importAll(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
+// Module 15742 (useSoundboardConfig)
+import __exportStarResult1 from "__exportStarResult1";
+import closure_4 from "__exportStarResult1";
+
 const obj = { VOICE_CONTROLS: "call control drawer", VOICE_PANEL_CONTROLS: "voice panel controls" };
 const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/voice_panel/native/hooks/useSoundboardConfig.tsx");
 

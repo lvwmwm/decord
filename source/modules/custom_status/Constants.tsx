@@ -1,11 +1,11 @@
-// Module ID: 11881
-// Function ID: 92005
+// Module ID: 11888
+// Function ID: 92028
 // Name: StatusTypes
 // Dependencies: []
 
-// Module 11881 (StatusTypes)
+// Module 11888 (StatusTypes)
 const StatusTypes = require(dependencyMap[0]).StatusTypes;
-const frozen = Object.freeze({ DISCOVER_POPULAR: "0", ignoreNotificationSetting: "0", alignSelf: "100%", consolePreJoinPadding: "100%", EMPTY_GAME_SERVER_TAB: 35 });
+const frozen = Object.freeze({});
 let obj = {
   value: StatusTypes.ONLINE,
   label() {

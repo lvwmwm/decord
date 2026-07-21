@@ -1,14 +1,14 @@
-// Module ID: 11519
-// Function ID: 89766
+// Module ID: 11526
+// Function ID: 89790
 // Name: useCanPurchaseOrTransferBoost
 // Dependencies: []
 // Exports: default
 
-// Module 11519 (useCanPurchaseOrTransferBoost)
+// Module 11526 (useCanPurchaseOrTransferBoost)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 const FractionalPremiumStates = arg1(dependencyMap[2]).FractionalPremiumStates;
-const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/premium/powerups/hooks/useCanPurchaseOrTransferBoost.tsx");
+const result = arg1(dependencyMap[6]).fileFinishedImporting("modules/premium/powerups/hooks/useCanPurchaseOrTransferBoost.tsx");
 
 export default function useCanPurchaseOrTransferBoost() {
   const items = [closure_3];
@@ -23,8 +23,12 @@ export default function useCanPurchaseOrTransferBoost() {
   const obj = arg1(dependencyMap[4]);
   const items1 = [closure_4];
   let stateFromStores1 = arg1(dependencyMap[4]).useStateFromStores(items1, () => {
-    const values = Object.values(boostSlots.boostSlots);
-    return values.some((isAvailable) => isAvailable.isAvailable());
+    let tmp2 = !tmp;
+    if (!!closure_4.hasFetched) {
+      tmp2 = callback(closure_2[5]).getAvailableGuildBoostSlots(closure_4.boostSlots).length > 0;
+      const obj = callback(closure_2[5]);
+    }
+    return tmp2;
   });
   if (!stateFromStores1) {
     stateFromStores1 = importDefault(dependencyMap[3])().fractionalState === FractionalPremiumStates.NONE && !stateFromStores;

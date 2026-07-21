@@ -1,10 +1,10 @@
-// Module ID: 16315
-// Function ID: 125940
+// Module ID: 16322
+// Function ID: 125971
 // Name: BaseBenefitRow
 // Dependencies: []
 // Exports: GuildRoleSubscriptionBenefitPreview
 
-// Module 16315 (BaseBenefitRow)
+// Module 16322 (BaseBenefitRow)
 function BaseBenefitRow(isInteractive) {
   let children;
   let contentStyle;
@@ -69,7 +69,7 @@ function ChannelBenefitRow(benefit) {
     channelIcon = obj1.getChannelIcon(channelWithTemplateFallback);
   }
   if (null == channelWithTemplateFallback) {
-    obj = { INTEGRATION_CREATE: 131072.00119209292, ConstraintReasonCode: -293983030121430100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 };
+    obj = {};
     const intl = arg1(dependencyMap[13]).intl;
     const _HermesInternal = HermesInternal;
     obj.children = "[" + intl.string(arg1(dependencyMap[13]).t.bz1PZX) + "]";
@@ -79,7 +79,7 @@ function ChannelBenefitRow(benefit) {
     obj1 = { style: tmp.channelRow };
     const obj2 = { style: tmp.channelIcon, size: arg1(dependencyMap[6]).Icon.Sizes.CUSTOM, source: channelIcon };
     const items = [callback(arg1(dependencyMap[6]).Icon, obj2), ];
-    const obj3 = { INTEGRATION_CREATE: 131072.00119209292, ConstraintReasonCode: -293983030121430100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, children: tmp3 };
+    const obj3 = { children: tmp3 };
     items[1] = callback(arg1(dependencyMap[8]).Text, obj3);
     obj1.children = items;
     obj.children = callback2(View, obj1);
@@ -90,7 +90,7 @@ function ChannelBenefitRow(benefit) {
 function IntangibleBenefitRow(benefit) {
   benefit = benefit.benefit;
   let obj = { benefit, guildId: benefit.guildId, isInteractive: benefit.isInteractive, children: callback(arg1(dependencyMap[8]).Text, obj) };
-  obj = { INTEGRATION_CREATE: 131072.00119209292, ConstraintReasonCode: -293983030121430100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, children: benefit.name };
+  obj = { children: benefit.name };
   return callback(DescriptiveBenefitRow, obj);
 }
 function EmojiBenefitRow(benefit) {
@@ -102,7 +102,7 @@ function EmojiBenefitRow(benefit) {
   let obj = { emoji: benefit.id, guildId, contentStyle: tmp.emojiRow, isInteractive };
   obj = { style: tmp.emojiColons };
   const items = [callback(arg1(dependencyMap[8]).Text, obj), , ];
-  obj = { INTEGRATION_CREATE: 131072.00119209292, ConstraintReasonCode: -293983030121430100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, children: benefit.name };
+  obj = { children: benefit.name };
   items[1] = callback(arg1(dependencyMap[8]).Text, obj);
   items[2] = callback(arg1(dependencyMap[8]).Text, { style: tmp.emojiColons });
   obj.children = items;
@@ -113,7 +113,7 @@ const View = arg1(dependencyMap[1]).View;
 let closure_4 = arg1(dependencyMap[2]).GuildRoleSubscriptionBenefitTypes;
 ({ jsx: closure_5, jsxs: closure_6 } = arg1(dependencyMap[3]));
 const tmp3 = arg1(dependencyMap[3]);
-let closure_7 = arg1(dependencyMap[4]).createStyles({ container: {}, emojiContainer: {}, benefitColumn: { 1663111852: "<string:3791651216>", 1403816364: "<string:1107296880>", secondary_color: "#433D84", tertiary_color: "M75.647 61.135c10.446 0 18.915-8.532 18.915-19.057 0-10.526-8.469-19.058-18.915-19.058-10.447 0-18.916 8.532-18.916 19.058 0 10.524 8.47 19.057 18.916 19.057z", addContextToFrame: "<string:2576980529>" }, benefitDescription: { alignItems: "Lightbox Frame", position: "EdgeHTML" }, channelRow: { "Bool(true)": null, "Bool(true)": null, "Bool(true)": null }, channelIcon: { -1044603296: "Text", 1740925547: "round", -1130471302: "window" }, emojiRow: {}, emojiColons: { paddingHorizontal: 2 } });
+let closure_7 = arg1(dependencyMap[4]).createStyles({ container: {}, emojiContainer: { <string:2053620842>: "<string:74532237>", <string:3250364000>: "<string:1090519040>", <string:2053584491>: "rgba(255, 255, 255, 0.08)", <string:3250364000>: "<string:684290>", <string:1969291823>: "<string:1091633152>", <string:3167317588>: "/assets/design/components/Icon/native/redesign/generated/images" }, benefitColumn: { 9223372036854775807: "<string:3003122242>", -9223372036854775808: "<string:822084028>", 0: "<string:2576980378>", 0: "<string:1071225241>", 0: "<string:20794178>" }, benefitDescription: {}, channelRow: { padding: 0, paddingBottom: 6, flexDirection: 0 }, channelIcon: { <string:3164495994>: 24, <string:3295308737>: 24, <string:2657122919>: null }, emojiRow: {}, emojiColons: { paddingHorizontal: 2 } });
 const obj = arg1(dependencyMap[4]);
 const result = arg1(dependencyMap[14]).fileFinishedImporting("modules/guild_role_subscriptions/native/components/GuildRoleSubscriptionBenefitPreview.tsx");
 

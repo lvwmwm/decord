@@ -1,10 +1,10 @@
-// Module ID: 6471
-// Function ID: 50580
+// Module ID: 6473
+// Function ID: 50623
 // Name: ServerIconDefaultExample
 // Dependencies: []
 // Exports: ServerIconDefaultExample
 
-// Module 6471 (ServerIconDefaultExample)
+// Module 6473 (ServerIconDefaultExample)
 const jsx = require(dependencyMap[0]).jsx;
 const _module = require(dependencyMap[3]);
 const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/ServerIconDefaultExample.native.tsx");

@@ -1,10 +1,10 @@
-// Module ID: 8940
-// Function ID: 70446
+// Module ID: 8944
+// Function ID: 70458
 // Name: useOAuth2AuthorizeForm
 // Dependencies: []
 // Exports: default
 
-// Module 8940 (useOAuth2AuthorizeForm)
+// Module 8944 (useOAuth2AuthorizeForm)
 let closure_4 = importDefault(dependencyMap[0]);
 let closure_5 = importDefault(dependencyMap[1]);
 let closure_6 = importAll(dependencyMap[2]);
@@ -690,7 +690,7 @@ export default function useOAuth2AuthorizeForm(clientId) {
       if (null != AUTHORIZE_SCOPES) {
         callback2(AUTHORIZE_SCOPES);
       } else {
-        callback({ guild_template_description: true, presenceCount: true });
+        callback({ paddingBottom: null, type: null });
         if (null != dismissOAuthModal) {
           dismissOAuthModal();
         }

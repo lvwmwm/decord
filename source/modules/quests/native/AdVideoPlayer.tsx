@@ -1,27 +1,27 @@
-// Module ID: 13786
-// Function ID: 104312
+// Module ID: 13793
+// Function ID: 104335
 // Name: getSafeAreaInsetOrPadding
 // Dependencies: [0, 0, 0, 4294967295, 4294967295, 4294967295, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4294967295, 0, 0]
 
-// Module 13786 (getSafeAreaInsetOrPadding)
-import closure_3 from "result";
-import importAllResult from "result";
-import result from "result";
-import closure_14 from "result";
-import result from "result";
-import importDefaultResult from "result";
-import result from "result";
+// Module 13793 (getSafeAreaInsetOrPadding)
+import closure_3 from "__exportStarResult1";
+import importAllResult from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
+import closure_14 from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
+import importDefaultResult from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
 
 let StyleSheet;
 function getSafeAreaInsetOrPadding(arg0, arg1) {
   return Math.max(arg0[arg1], obj[arg1]);
 }
-({ View: closure_5, StyleSheet, Pressable: closure_6, ActivityIndicator: closure_7 } = result);
+({ View: closure_5, StyleSheet, Pressable: closure_6, ActivityIndicator: closure_7 } = __exportStarResult1);
 let closure_8 = importDefault(dependencyMap[3]);
 ({ AppStates: closure_9, ComponentActions: closure_10 } = arg1(dependencyMap[4]));
 const tmp3 = arg1(dependencyMap[4]);
 ({ jsx: closure_11, jsxs: closure_12 } = arg1(dependencyMap[5]));
-let obj = { left: require("result").space.PX_16, right: require("result").space.PX_16, top: require("result").space.PX_16, bottom: require("result").space.PX_16 };
+let obj = { left: require("__exportStarResult1").space.PX_16, right: require("__exportStarResult1").space.PX_16, top: require("__exportStarResult1").space.PX_16, bottom: require("__exportStarResult1").space.PX_16 };
 let closure_15 = { code: "function hasVideoEnded_AdVideoPlayerTsx1(currentTime,videoDuration){return currentTime>=videoDuration-1;}" };
 let closure_16 = () => {
   function hasVideoEnded(arg0, arg1) {
@@ -53,54 +53,54 @@ let closure_18 = () => {
 obj = {};
 const merged = Object.assign(StyleSheet.absoluteFillObject);
 obj.container = {};
-result = {};
+__exportStarResult1 = {};
 const merged1 = Object.assign(StyleSheet.absoluteFillObject);
-result["backgroundColor"] = require("result").colors.BACKGROUND_BASE_LOWEST;
-result["justifyContent"] = "center";
-result["alignItems"] = "center";
-obj.loadingContainer = result;
+__exportStarResult1["backgroundColor"] = require("__exportStarResult1").colors.BACKGROUND_BASE_LOWEST;
+__exportStarResult1["justifyContent"] = "center";
+__exportStarResult1["alignItems"] = "center";
+obj.loadingContainer = __exportStarResult1;
 obj.bufferingSpinner = { position: "absolute" };
 const obj3 = {};
 const merged2 = Object.assign(StyleSheet.absoluteFillObject);
 obj3["justifyContent"] = "center";
 obj3["alignItems"] = "center";
 obj.bufferingSpinnerCentered = obj3;
-obj.video = { <string:1140607356>: 30271555, <string:1751293292>: 22092032 };
-obj.videoContainer = { _secureFramesTransitionPrepareCount: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000006919153853686053, visible: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000033995391320984753, hasSpoiler: 139264.00004577637 };
+obj.video = {};
+obj.videoContainer = { 9223372036854775807: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000025755987663096558, 0: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000033995391321045464, 0: 139264.00004577637 };
 const obj4 = {};
 const merged3 = Object.assign(StyleSheet.absoluteFillObject);
 const obj1 = {};
 const tmp4 = arg1(dependencyMap[5]);
-const importDefaultResultResult = require("result")(require("result").unsafe_rawColors.BLACK);
-obj4["backgroundColor"] = require("result")(require("result").unsafe_rawColors.BLACK).alpha(0.5).hex();
+const importDefaultResultResult = require("__exportStarResult1")(require("__exportStarResult1").unsafe_rawColors.BLACK);
+obj4["backgroundColor"] = require("__exportStarResult1")(require("__exportStarResult1").unsafe_rawColors.BLACK).alpha(0.5).hex();
 obj4["justifyContent"] = "center";
 obj4["alignItems"] = "center";
 obj4["flexDirection"] = "column";
 obj.controls = obj4;
-const obj5 = { 1638710865: "isArray", -1582345780: "NOTIFICATION_SETTINGS_MODAL_OPEN", 1498521697: "isArray", 1446732546: "isArrayBuffer", 103043498: "540091c70b333c8b8937ba1627138192", -28204959: "wumpus-pikachu", padding: require("result").space.PX_8 };
+const obj5 = { "Null": "isArray", "Null": "CONTENT_INVENTORY_TOGGLE_FEED_HIDDEN", flexDirection: "isArray", alignItems: "isArrayBuffer", justifyContent: "540091c70b333c8b8937ba1627138192", marginLeft: "wumpus-pikachu", padding: require("__exportStarResult1").space.PX_8 };
 obj.controlsTopBottom = obj5;
-const alphaResult = require("result")(require("result").unsafe_rawColors.BLACK).alpha(0.5);
-obj.controlsMiddle = { gap: require("result").space.PX_24 };
+const obj6 = { "Bool(true)": "gr", "Bool(true)": null, "Bool(true)": "Group 3", "Bool(true)": 4, "Bool(true)": 2, "Bool(true)": 0, gap: require("__exportStarResult1").space.PX_24 };
+obj.controlsMiddle = obj6;
 obj.controlsTop = { top: 0 };
 obj.controlsBottom = { bottom: 0 };
-const obj6 = { gap: require("result").space.PX_24 };
-obj.progressContainer = { height: require("result").space.PX_16 };
-const obj8 = { presenceCount: 0, marginLeft: 11, responderEnd: 4, visibilityState: "Explosion 3", sendAnalytics: 1, lady_beetle: 1, backgroundColor: require("result").colors.WHITE, shadowOffset: { aze: false, azj: true }, shadowColor: require("result").colors.WHITE };
+const alphaResult = require("__exportStarResult1")(require("__exportStarResult1").unsafe_rawColors.BLACK).alpha(0.5);
+obj.progressContainer = { height: require("__exportStarResult1").space.PX_16 };
+const obj8 = { 3339514993915: 0, 9223372036854775807: 11, 9223372036854775807: 4, 9223372036854775807: "Explosion 3", -9223372036854775808: 1, 9223372036854775807: 1, backgroundColor: require("__exportStarResult1").colors.WHITE, shadowOffset: { bhk: -536870861, bic: -299892737 }, shadowColor: require("__exportStarResult1").colors.WHITE };
 obj.progress = obj8;
-const obj7 = { height: require("result").space.PX_16 };
-obj.icon = { color: require("result").colors.TEXT_DEFAULT };
-const obj9 = { color: require("result").colors.TEXT_DEFAULT };
-obj.iconDisabled = { color: require("result").colors.TEXT_SUBTLE };
-const obj10 = { color: require("result").colors.TEXT_SUBTLE };
-obj.controlButton = { padding: require("result").space.PX_8 };
-let closure_19 = result.createStyles(obj);
+const obj7 = { height: require("__exportStarResult1").space.PX_16 };
+obj.icon = { color: require("__exportStarResult1").colors.TEXT_DEFAULT };
+const obj9 = { color: require("__exportStarResult1").colors.TEXT_DEFAULT };
+obj.iconDisabled = { color: require("__exportStarResult1").colors.TEXT_SUBTLE };
+const obj10 = { color: require("__exportStarResult1").colors.TEXT_SUBTLE };
+obj.controlButton = { padding: require("__exportStarResult1").space.PX_8 };
+let closure_19 = __exportStarResult1.createStyles(obj);
 const obj12 = { PAUSED: "paused", PLAYING: "playing", ENDED: "ended", LOADING: "loading", ERRORED: "errored" };
 const obj13 = { USER_INTERACTION: "USER_INTERACTION", SYSTEM_INITIATED: "SYSTEM_INITIATED", IMPERATIVE_API: "IMPERATIVE_API" };
 let closure_22 = { code: "function shouldShowControls_AdVideoPlayerTsx3(){const{hasLoaded,hideControls,showControls,playerState,PlayerState,isVideoEnded}=this.__closure;return hasLoaded&&!hideControls&&(showControls.get()||playerState===PlayerState.PAUSED||playerState===PlayerState.ENDED||playerState===PlayerState.ERRORED||isVideoEnded);}" };
 let closure_23 = { code: "function AdVideoPlayerTsx4(){const{shouldShowControls,withSpring,SUBTLE_SPRING}=this.__closure;const show=shouldShowControls();return{opacity:withSpring(show?1:0,SUBTLE_SPRING),pointerEvents:show?'auto':'none'};}" };
 let closure_24 = { code: "function AdVideoPlayerTsx5(){const{withTiming,progressSharedValue,timingFast}=this.__closure;return{width:withTiming(progressSharedValue.get()*100+\"%\",timingFast,'animate-always')};}" };
-const obj11 = { padding: require("result").space.PX_8 };
-result = result.fileFinishedImporting("modules/quests/native/AdVideoPlayer.tsx");
+const obj11 = { padding: require("__exportStarResult1").space.PX_8 };
+const result = __exportStarResult1.fileFinishedImporting("modules/quests/native/AdVideoPlayer.tsx");
 
 export const PlayerState = obj12;
 export const PlaybackTriggerSource = obj13;
@@ -608,7 +608,7 @@ export const AdVideoPlayer = importAllResult.memo((initialProgress) => {
           tmp2 = null == current.setNativeProps;
         }
         if (!tmp2) {
-          let obj = { source: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000021043611947808288, style: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000053357352779429986 };
+          let obj = { 9223372036854775807: true, 9223372036854775807: true };
           obj = { uri: null };
           obj.src = obj;
           current.setNativeProps(obj);
@@ -766,7 +766,7 @@ export const AdVideoPlayer = importAllResult.memo((initialProgress) => {
       const intl4 = arg1(dependencyMap[20]).intl;
       obj14.accessibilityLabel = intl4.string(arg1(dependencyMap[20]).t.r9s3Uv);
       obj14.onPress = callback1Result;
-      const obj15 = { GATEWAY_BRIDGE_TIMEOUT: "/assets/.cache/intl/aW50bA==", headerGuildIcon: null, responderRelease: "66d1e4125b6e3fe86e5116b45518629e", color: tmp.icon.color };
+      const obj15 = { color: tmp.icon.color };
       obj14.children = onPausePlayback(arg1(dependencyMap[25]).SkipBackwardIcon, obj15);
       tmp91 = onPausePlayback(arg1(dependencyMap[24]).VideoQuestPlayerControlButton, obj14);
     }
@@ -806,7 +806,7 @@ export const AdVideoPlayer = importAllResult.memo((initialProgress) => {
           const intl5 = arg1(dependencyMap[20]).intl;
           obj18.accessibilityLabel = intl5.string(arg1(dependencyMap[20]).t.zWDcNP);
           obj18.onPress = callback1Result1;
-          const obj19 = { GATEWAY_BRIDGE_TIMEOUT: "/assets/.cache/intl/aW50bA==", headerGuildIcon: null, responderRelease: "66d1e4125b6e3fe86e5116b45518629e", color: tmp.icon.color };
+          const obj19 = { color: tmp.icon.color };
           obj18.children = onPausePlayback(arg1(dependencyMap[29]).SkipForwardIcon, obj19);
           flag7 = onPausePlayback(arg1(dependencyMap[24]).VideoQuestPlayerControlButton, obj18);
         }

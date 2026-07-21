@@ -1,14 +1,16 @@
-// Module ID: 9147
-// Function ID: 71704
+// Module ID: 9151
+// Function ID: 71716
 // Name: MemberVerificationAlertCancelPending
-// Dependencies: []
+// Dependencies: [0, 0, 0, 0, 0, 0, 0]
 // Exports: default
 
-// Module 9147 (MemberVerificationAlertCancelPending)
-let closure_3 = importAll(dependencyMap[0]);
-({ jsx: closure_4, Fragment: closure_5, jsxs: closure_6 } = arg1(dependencyMap[1]));
-const tmp2 = arg1(dependencyMap[1]);
-const result = arg1(dependencyMap[6]).fileFinishedImporting("modules/guild_member_verification/native/components/alerts/MemberVerificationAlertCancelPending.tsx");
+// Module 9151 (MemberVerificationAlertCancelPending)
+import closure_3 from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
+
+({ jsx: closure_4, Fragment: closure_5, jsxs: closure_6 } = __exportStarResult1);
+const result = __exportStarResult1.fileFinishedImporting("modules/guild_member_verification/native/components/alerts/MemberVerificationAlertCancelPending.tsx");
 
 export default function MemberVerificationAlertCancelPending(guildId) {
   let confirmText;
@@ -18,7 +20,7 @@ export default function MemberVerificationAlertCancelPending(guildId) {
   const arg1 = guildId;
   ({ confirmText, subtitleText, onClose } = guildId);
   const importDefault = onClose;
-  let obj = { welcomeReceivedTime: "r", SEARCH_HISTORY: "onRequireModeratorMFAClick", collapsibleStyle: "Array", ignoreNotificationSetting: "isSpamMessageRequest" };
+  let obj = { overflow: null, height: 4, paddingVertical: 4, alignItems: "rgba(0, 0, 0, 0.75)" };
   Object.setPrototypeOf(null);
   const merged = Object.assign(guildId, obj);
   const items = [guildId, onClose];

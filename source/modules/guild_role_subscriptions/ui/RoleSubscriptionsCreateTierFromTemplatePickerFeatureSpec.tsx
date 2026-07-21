@@ -1,8 +1,8 @@
-// Module ID: 12769
-// Function ID: 97872
+// Module ID: 12776
+// Function ID: 97895
 // Dependencies: []
 
-// Module 12769
+// Module 12776
 let closure_2 = importDefault(dependencyMap[0]);
 let closure_3 = importDefault(dependencyMap[1]);
 ({ GuildFeatures: closure_4, Permissions: closure_5 } = arg1(dependencyMap[2]));

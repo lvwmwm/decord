@@ -1,10 +1,10 @@
-// Module ID: 11572
-// Function ID: 89976
+// Module ID: 11579
+// Function ID: 89999
 // Name: useGuildPowerupExpiringNotificationsConfig
 // Dependencies: []
 // Exports: default
 
-// Module 11572 (useGuildPowerupExpiringNotificationsConfig)
+// Module 11579 (useGuildPowerupExpiringNotificationsConfig)
 const _module = require(dependencyMap[6]);
 const result = _module.fileFinishedImporting("modules/premium/powerups/hooks/useGuildPowerupExpiringNotificationsConfig.tsx");
 

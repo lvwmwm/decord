@@ -1,10 +1,10 @@
-// Module ID: 15207
-// Function ID: 114855
+// Module ID: 15214
+// Function ID: 114879
 // Name: MediaGridPlaceholderItem
 // Dependencies: []
 // Exports: RecentsMediaGridPlaceholder, default
 
-// Module 15207 (MediaGridPlaceholderItem)
+// Module 15214 (MediaGridPlaceholderItem)
 let SEARCH_LIST_HORIZONTAL_PADDING;
 let SEARCH_LIST_SECTION_TOP_PADDING;
 let closure_3 = importAll(dependencyMap[0]);
@@ -59,7 +59,7 @@ export const RecentsMediaGridPlaceholder = function RecentsMediaGridPlaceholder(
   obj1.children = callback(arg1(dependencyMap[10]).Text, obj2);
   const items3 = [callback(View, obj1), ];
   const obj3 = { style: tmp.sectionItem };
-  const obj4 = { INTEGRATION_CREATE: "png", ConstraintReasonCode: "absolute", style: tmp.sectionText };
+  const obj4 = { style: tmp.sectionText };
   const intl2 = arg1(dependencyMap[11]).intl;
   obj4.children = intl2.string(arg1(dependencyMap[11]).t.LFTAUp);
   obj3.children = callback(arg1(dependencyMap[10]).Text, obj4);

@@ -1,10 +1,10 @@
-// Module ID: 12321
-// Function ID: 94374
+// Module ID: 12328
+// Function ID: 94397
 // Name: handlePress
 // Dependencies: []
 // Exports: default
 
-// Module 12321 (handlePress)
+// Module 12328 (handlePress)
 function handlePress() {
   let obj = importDefault(dependencyMap[4]);
   obj = {};
@@ -18,12 +18,12 @@ const _module1 = require(dependencyMap[1]);
 ({ jsx: closure_5, jsxs: closure_6 } = _module1);
 const _module2 = require(dependencyMap[2]);
 let obj = {};
-obj = { "Bool(false)": -14, "Bool(false)": -14, "Bool(false)": 0.75, "Bool(false)": -4, "Bool(false)": 16, "Bool(false)": 0.75, "Bool(false)": 14, "Bool(false)": -14, "Bool(false)": 0.875, backgroundColor: importDefault(dependencyMap[3]).colors.BACKGROUND_SURFACE_HIGH, borderColor: importDefault(dependencyMap[3]).colors.STATUS_WARNING, borderRadius: importDefault(dependencyMap[3]).radii.lg };
+obj = { 1834026050: -14, -659493785: -14, -1437152157: 0.75, -319042460: -4, 1649697712: 16, 72458410: 0.75, 1006330628: 14, -680106838: -14, 1196532421: 0.875, backgroundColor: importDefault(dependencyMap[3]).colors.BACKGROUND_SURFACE_HIGH, borderColor: importDefault(dependencyMap[3]).colors.STATUS_WARNING, borderRadius: importDefault(dependencyMap[3]).radii.lg };
 obj.fractionalPremiumBanner = obj;
 const obj1 = { "Bool(false)": "sticker", "Bool(false)": "png", "Bool(false)": true, "Bool(false)": "/assets/images/native/premium/guild_boosting/perks", "Bool(false)": 24, "Bool(false)": 24, backgroundColor: importDefault(dependencyMap[3]).colors.BACKGROUND_MOD_STRONG, borderRadius: importDefault(dependencyMap[3]).radii.xxl };
 obj.fpDurationPill = obj1;
-obj.fpDurationText = { DCDSKAdNetworkManager: true, hasThemeFeature: true };
-obj.fpUnavailable = { -9223372036854775808: 323420161, 0: -2104950783 };
+obj.fpDurationText = { 1377929130: true, -1532433124: true };
+obj.fpUnavailable = { markAsSpoilerTitle: null, keyboardAppearance: null };
 obj.fpUnavailableTextNoCountdown = { textAlign: "center" };
 let closure_7 = _module2.createStyles(obj);
 const _module3 = require(dependencyMap[9]);

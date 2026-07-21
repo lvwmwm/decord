@@ -1,10 +1,10 @@
-// Module ID: 14495
-// Function ID: 109173
+// Module ID: 14502
+// Function ID: 109196
 // Name: OtaVerificationActionSheet
 // Dependencies: []
 // Exports: default
 
-// Module 14495 (OtaVerificationActionSheet)
+// Module 14502 (OtaVerificationActionSheet)
 function OtaVerificationActionSheet(result) {
   result = result.result;
   const tmp = callback4();
@@ -23,7 +23,7 @@ function OtaVerificationActionSheet(result) {
   obj.children = items;
   const items1 = [callback3(closure_7, obj), , , , ];
   const obj1 = { style: tmp.verificationLine };
-  const items2 = [callback2(arg1(dependencyMap[10]).Text, {}), ];
+  const items2 = [callback2(arg1(dependencyMap[10]).Text, { "Null": null, "Null": null }), ];
   const obj2 = { variant: "text-md/normal" };
   let str3 = "--";
   if (null != result.hasLocalCopy) {
@@ -38,7 +38,7 @@ function OtaVerificationActionSheet(result) {
   obj1.children = items2;
   items1[1] = callback3(closure_7, obj1);
   const obj3 = { style: tmp.verificationLine };
-  const items3 = [callback2(arg1(dependencyMap[10]).Text, { position: null, width: null }), ];
+  const items3 = [callback2(arg1(dependencyMap[10]).Text, {}), ];
   const obj4 = { variant: "text-md/normal" };
   if (result.isValid) {
     str = "Yes";
@@ -50,7 +50,7 @@ function OtaVerificationActionSheet(result) {
   let tmp21Result = null;
   if (null !== result.totalFileCount) {
     const obj5 = { style: tmp.verificationLine };
-    const items4 = [callback2(arg1(dependencyMap[10]).Text, { position: null, width: null }), ];
+    const items4 = [callback2(arg1(dependencyMap[10]).Text, {}), ];
     const obj6 = { variant: "text-md/normal" };
     const items5 = [result.totalFileCount, " files. ", , , , ];
     const successes = result.successes;
@@ -79,7 +79,7 @@ function OtaVerificationActionSheet(result) {
   let tmp15 = null;
   if (result.failures.length > 0) {
     const obj7 = { style: tmp.verificationLine };
-    const items6 = [callback2(arg1(dependencyMap[10]).Text, {}), ];
+    const items6 = [callback2(arg1(dependencyMap[10]).Text, { "Null": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000028898214990780396, "Null": -0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010210491792909219 }), ];
     const failures1 = result.failures;
     items6[1] = failures1.map((children) => callback(tmp(closure_2[10]).Text, { variant: "text-md/normal", style: tmp.verificationFailure, children }, children));
     obj7.children = items6;
@@ -145,7 +145,7 @@ export default function DevToolsOTATestScreen() {
   }, []);
   let obj = { style: tmp.wrap, contentContainerStyle: tmp.contentContainer };
   obj = { spacing: 16 };
-  obj = { width: null, height: "Recipient User ID" };
+  obj = { "Bool(false)": null, "Bool(false)": "Recipient User ID" };
   const obj1 = { label: "Status", subLabel: tmp8[0], icon: callback2(arg1(dependencyMap[16]).WrenchIcon, {}) };
   const items = [
     callback2(arg1(dependencyMap[15]).TableRow, obj1),
@@ -185,7 +185,7 @@ export default function DevToolsOTATestScreen() {
   items2[1] = callback2(arg1(dependencyMap[15]).TableRow, obj5);
   obj3.children = items2;
   items1[1] = callback3(arg1(dependencyMap[14]).TableRowGroup, obj3);
-  const obj6 = { width: false, height: false };
+  const obj6 = { "Bool(false)": -923402239, "Bool(false)": -742588415 };
   const obj7 = { icon: callback2(arg1(dependencyMap[16]).WrenchIcon, {}), label: "Is cookie set?" };
   let str3 = "Yes";
   if (null == tmp7) {
@@ -203,7 +203,7 @@ export default function DevToolsOTATestScreen() {
   items3[1] = tmp22;
   obj6.children = items3;
   items1[2] = callback3(arg1(dependencyMap[14]).TableRowGroup, obj6);
-  const obj9 = { width: null, height: null };
+  const obj9 = {};
   const obj10 = { label: "Check for Update & Reload", icon: callback2(arg1(dependencyMap[19]).DownloadIcon, {}), onPress: importDefault(dependencyMap[11]).checkForUpdateAndReload };
   const items4 = [callback2(arg1(dependencyMap[15]).TableRow, obj10), ];
   const obj11 = { label: "Verify OTA Files" };

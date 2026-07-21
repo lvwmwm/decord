@@ -1,9 +1,9 @@
-// Module ID: 13939
-// Function ID: 105942
+// Module ID: 13946
+// Function ID: 105965
 // Name: MobileQuestPreviewControlBar
 // Dependencies: []
 
-// Module 13939 (MobileQuestPreviewControlBar)
+// Module 13946 (MobileQuestPreviewControlBar)
 class MobileQuestPreviewControlBar {
   constructor(arg0) {
     questId = global.questId;
@@ -205,7 +205,7 @@ class MobileQuestPreviewControlBar {
       tmp33 = arg1;
       tmp34 = dependencyMap;
       num2 = 20;
-      obj7 = { INTEGRATION_CREATE: 1, ConstraintReasonCode: "center" };
+      obj7 = {};
       obj7.style = tmp.errorText;
       obj7.children = stateFromStores.message;
       tmp31 = jsx(arg1(dependencyMap[20]).Text, obj7);
@@ -223,10 +223,10 @@ let closure_7 = importDefault(dependencyMap[4]);
 const AppRoutes = arg1(dependencyMap[5]).AppRoutes;
 ({ jsx: closure_9, jsxs: closure_10 } = arg1(dependencyMap[6]));
 let obj = arg1(dependencyMap[7]);
-obj = { container: { <string:1674339465>: null, <string:1498536112>: null } };
-obj = { 0: "isArray", 9223372036854775807: "accessibilityRole", 9223372036854775807: "data", 0: "category", 0: "constructor", -9223372036854775808: "Array", gap: importDefault(dependencyMap[8]).space.PX_8 };
+obj = { container: { <string:1674339712>: null, <string:1424677040>: null } };
+obj = { gap: importDefault(dependencyMap[8]).space.PX_8 };
 obj.questInputContainer = obj;
-obj.searchField = { left: "delayV", right: "OrbNitroCardSpotIllustration", position: "values" };
+obj.searchField = { "Bool(true)": null, "Bool(true)": null, "Bool(true)": null };
 const tmp2 = arg1(dependencyMap[6]);
 obj.iconsColumn = { flexDirection: "row", gap: importDefault(dependencyMap[8]).space.PX_8, paddingTop: importDefault(dependencyMap[8]).space.PX_4 };
 const obj1 = { flexDirection: "row", gap: importDefault(dependencyMap[8]).space.PX_8, paddingTop: importDefault(dependencyMap[8]).space.PX_4 };

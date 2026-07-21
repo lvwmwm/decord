@@ -1,5 +1,5 @@
 // Module ID: 8080
-// Function ID: 64084
+// Function ID: 64076
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
@@ -21,11 +21,11 @@ let closure_7 = importDefault(dependencyMap[4]);
 importAll(dependencyMap[5]);
 const jsx = arg1(dependencyMap[6]).jsx;
 const tmp3 = (arg0) => {
-  class Line {
+  class ForeignObject {
     constructor() {
       self = this;
-      tmp = closure_3(this, Line);
-      obj = closure_6(Line);
+      tmp = closure_3(this, ForeignObject);
+      obj = closure_6(ForeignObject);
       tmp2 = closure_5;
       if (closure_9()) {
         tmp6 = globalThis;
@@ -41,33 +41,29 @@ const tmp3 = (arg0) => {
       return tmp2(self, constructResult);
     }
   }
-  const arg1 = Line;
-  callback2(Line, arg0);
+  const arg1 = ForeignObject;
+  callback2(ForeignObject, arg0);
   const items = [
     {
       key: "render",
       value: function render() {
-        let x1;
-        let x2;
-        let y1;
-        let y2;
-        const Line = this;
+        const ForeignObject = this;
         const props = this.props;
-        ({ x1, y1, x2, y2 } = props);
-        let obj = Line(closure_2[7]);
-        const merged = Object.assign({}, obj.extract(this, props), { x1, y1, x2, y2 });
+        let obj = { x: props.x, y: props.y, width: props.width, height: props.height };
         obj = {
           ref(arg0) {
             return self.refMethod(arg0);
           }
         };
-        return callback4(callback(closure_2[8]), Object.assign(obj, merged));
+        const tmp = callback(closure_2[7]);
+        obj = { children: props.children };
+        return callback4(tmp, Object.assign(obj, ForeignObject(closure_2[8]).withoutXY(this, props), obj, obj));
       }
     }
   ];
-  return callback(Line, items);
+  return callback(ForeignObject, items);
 }(importDefault(dependencyMap[9]));
-tmp3.displayName = "Line";
-tmp3.defaultProps = { "Bool(true)": "r", "Bool(true)": "onRequireModeratorMFAClick", "Bool(true)": "Array", "Bool(true)": "isSpamMessageRequest" };
+tmp3.displayName = "ForeignObject";
+tmp3.defaultProps = {};
 
 export default tmp3;

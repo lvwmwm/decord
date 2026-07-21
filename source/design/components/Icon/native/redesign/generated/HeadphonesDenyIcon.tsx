@@ -1,10 +1,10 @@
-// Module ID: 8856
-// Function ID: 69883
+// Module ID: 8860
+// Function ID: 69895
 // Name: HeadphonesDenyIcon
 // Dependencies: []
 // Exports: HeadphonesDenyIcon
 
-// Module 8856 (HeadphonesDenyIcon)
+// Module 8860 (HeadphonesDenyIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/HeadphonesDenyIcon.tsx");

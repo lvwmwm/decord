@@ -1,10 +1,10 @@
-// Module ID: 13921
-// Function ID: 105828
+// Module ID: 13928
+// Function ID: 105851
 // Name: useVideoQuestClickCtaAndMaybeCloseModal
 // Dependencies: []
 // Exports: useVideoQuestClickCtaAndMaybeCloseModal
 
-// Module 13921 (useVideoQuestClickCtaAndMaybeCloseModal)
+// Module 13928 (useVideoQuestClickCtaAndMaybeCloseModal)
 let closure_3 = importAll(dependencyMap[0]);
 const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/quests/native/VideoQuestModal/useVideoQuestClickCtaAndMaybeCloseModal.tsx");
 

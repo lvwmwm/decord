@@ -1,10 +1,10 @@
-// Module ID: 8209
-// Function ID: 64909
+// Module ID: 8213
+// Function ID: 64921
 // Name: shouldAnimate
 // Dependencies: []
 // Exports: calculateProfileEffectHeight, shouldAnimate
 
-// Module 8209 (shouldAnimate)
+// Module 8213 (shouldAnimate)
 const _module = require(dependencyMap[1]);
 const result = _module.fileFinishedImporting("modules/collectibles/profile_effects/native/ProfileEffectUtils.tsx");
 

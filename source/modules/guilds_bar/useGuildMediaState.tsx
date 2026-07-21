@@ -1,10 +1,10 @@
-// Module ID: 14726
-// Function ID: 111076
+// Module ID: 14733
+// Function ID: 111100
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 // Exports: default
 
-// Module 14726 (_createForOfIteratorHelperLoose)
+// Module 14733 (_createForOfIteratorHelperLoose)
 function _createForOfIteratorHelperLoose(@@iterator) {
   let arg1 = Symbol_iterator;
   @@iterator = "undefined" !== typeof Symbol;
@@ -278,7 +278,7 @@ export default function useGuildMediaState(guild_id) {
     let tmp4 = guild_id === arg0;
     if (!tmp4) {
       if (stateFromStores) {
-        return { borderRadius: null, paddingVertical: null, paddingStart: null, paddingEnd: null, marginRight: null, alignSelf: null, flexShrink: null };
+        return {};
       }
     }
     let obj = stateFromStores(isDontBadgeMutedVcsEnabled[20]);

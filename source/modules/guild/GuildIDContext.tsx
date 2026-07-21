@@ -1,9 +1,9 @@
-// Module ID: 4356
-// Function ID: 38605
+// Module ID: 4360
+// Function ID: 38653
 // Name: context
 // Dependencies: []
 
-// Module 4356 (context)
+// Module 4360 (context)
 const context = importAll(dependencyMap[0]).createContext(undefined);
 const importAllResult = importAll(dependencyMap[0]);
 const result = arg1(dependencyMap[1]).fileFinishedImporting("modules/guild/GuildIDContext.tsx");

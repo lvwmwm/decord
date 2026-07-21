@@ -1,10 +1,10 @@
-// Module ID: 11401
-// Function ID: 88699
+// Module ID: 11408
+// Function ID: 88723
 // Name: useEventsButtonProps
 // Dependencies: []
 // Exports: default
 
-// Module 11401 (useEventsButtonProps)
+// Module 11408 (useEventsButtonProps)
 let closure_3 = importAll(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 let closure_5 = importDefault(dependencyMap[2]);

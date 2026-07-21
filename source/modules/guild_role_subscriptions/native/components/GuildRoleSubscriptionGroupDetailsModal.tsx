@@ -1,10 +1,10 @@
-// Module ID: 16283
-// Function ID: 125659
+// Module ID: 16290
+// Function ID: 125690
 // Name: Content
 // Dependencies: []
 // Exports: default
 
-// Module 16283 (Content)
+// Module 16290 (Content)
 class Content {
   constructor(arg0) {
     ({ cover, setCover, description, setDescription } = global);
@@ -41,7 +41,7 @@ class Content {
     intl3 = arg1(dependencyMap[11]).intl;
     obj6.children = intl3.string(arg1(dependencyMap[11]).t.74JctW);
     items[3] = jsx(tmp5, obj6);
-    obj7 = { "Bool(true)": null, "Bool(true)": "text-sm/medium", "Bool(true)": "text-default", "Bool(true)": true, "Bool(true)": "no-hide-descendants" };
+    obj7 = { "Null": null, "Null": "text-sm/medium", "Null": "text-default", "Null": true, "Null": "no-hide-descendants" };
     obj7.style = tmp2.textInput;
     obj7.maxLength = closure_7;
     obj7.value = description;

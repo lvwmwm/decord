@@ -1,10 +1,10 @@
-// Module ID: 8296
-// Function ID: 65702
+// Module ID: 8300
+// Function ID: 65714
 // Name: isSpotifyEntry
 // Dependencies: []
 // Exports: findMatchingEntry
 
-// Module 8296 (isSpotifyEntry)
+// Module 8300 (isSpotifyEntry)
 function isSpotifyEntry(extra) {
   if (obj.isListenedSessionEntry(extra)) {
     const first = extra.extra.entries[0];

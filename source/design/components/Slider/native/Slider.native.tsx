@@ -1,15 +1,15 @@
-// Module ID: 12960
-// Function ID: 98615
+// Module ID: 12967
+// Function ID: 98638
 // Name: Slider
 // Dependencies: []
 // Exports: Slider
 
-// Module 12960 (Slider)
+// Module 12967 (Slider)
 let closure_3 = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 ({ jsx: closure_5, jsxs: closure_6 } = arg1(dependencyMap[2]));
 let obj = arg1(dependencyMap[3]);
-obj = { container: { marginBottom: null, borderRadius: "\u{1F469}\u{1F3FC}\u200D\u{1F9B1}", backgroundColor: true }, slider: { flex: 1 } };
+obj = { container: { accessible: null, count: "\u{1F469}\u{1F3FC}\u200D\u{1F9B1}", "Bool(false)": true }, slider: { flex: 1 } };
 obj = { backgroundColor: importDefault(dependencyMap[4]).colors.REDESIGN_INPUT_CONTROL_SELECTED };
 obj.minimumTrackTintColor = obj;
 const tmp2 = arg1(dependencyMap[2]);
@@ -30,7 +30,7 @@ export const Slider = function Slider(step) {
   const arg1 = onValueChange;
   step = step.step;
   const importDefault = step;
-  let obj = { "Bool(true)": false, "Bool(true)": null, "Bool(true)": "", "Bool(true)": null, "Bool(true)": null };
+  let obj = {};
   Object.setPrototypeOf(null);
   const merged = Object.assign(step, obj);
   const tmp3 = callback2();

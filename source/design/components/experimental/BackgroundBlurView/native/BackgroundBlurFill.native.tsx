@@ -1,10 +1,10 @@
-// Module ID: 7490
-// Function ID: 60080
+// Module ID: 7494
+// Function ID: 60092
 // Name: useBlurTheme
 // Dependencies: []
 // Exports: BackgroundBlurFill, BackgroundBlurFillAnimated, BackgroundBlurFillWithPress
 
-// Module 7490 (useBlurTheme)
+// Module 7494 (useBlurTheme)
 function useBlurTheme(blurTheme) {
   let theme = arg1(dependencyMap[5]).useThemeContext().theme;
   if (null != blurTheme) {
@@ -115,7 +115,7 @@ export const BackgroundBlurFillWithPress = function BackgroundBlurFillWithPress(
   let style;
   pressed = pressed.pressed;
   const arg1 = pressed;
-  let obj = {};
+  let obj = { muted: "spring", paused: "linear", preventsDisplaySleepDuringVideoPlayback: "easeInEaseOut" };
   ({ style, blurTheme } = pressed);
   Object.setPrototypeOf(null);
   let importDefault;
@@ -147,7 +147,7 @@ export const BackgroundBlurFillWithPress = function BackgroundBlurFillWithPress(
       items = [, ];
       items[0] = closure_3;
       items[1] = closure_4;
-      interpolateColorResult = obj3.interpolateColor(pressed.get(), [null, null], items);
+      interpolateColorResult = obj3.interpolateColor(pressed.get(), ["Text", "lc"], items);
       obj.backgroundColor = obj2.withSpring(interpolateColorResult, pressed(closure_2[11]).ON_PRESS_SPRING, "animate-always");
       return obj;
     }
@@ -165,8 +165,8 @@ export const BackgroundBlurFillWithPress = function BackgroundBlurFillWithPress(
       const obj2 = pressed(tmp7[10]);
       const items = [tmp6, tmp7];
       const obj3 = pressed(tmp7[9]);
-      withSpringResult = obj2.withSpring(pressed(tmp7[9]).interpolateColor(pressed.get(), [null, null], items), pressed(tmp7[11]).ON_PRESS_SPRING, "animate-always");
-      const interpolateColorResult = pressed(tmp7[9]).interpolateColor(pressed.get(), [null, null], items);
+      withSpringResult = obj2.withSpring(pressed(tmp7[9]).interpolateColor(pressed.get(), ["Text", "lc"], items), pressed(tmp7[11]).ON_PRESS_SPRING, "animate-always");
+      const interpolateColorResult = pressed(tmp7[9]).interpolateColor(pressed.get(), ["Text", "lc"], items);
     }
     obj.blurTintRgba = withSpringResult;
     return obj;

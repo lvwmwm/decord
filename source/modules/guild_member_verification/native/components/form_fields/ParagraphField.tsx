@@ -1,16 +1,16 @@
-// Module ID: 9256
-// Function ID: 72321
+// Module ID: 9260
+// Function ID: 72333
 // Name: ParagraphField
 // Dependencies: []
 // Exports: default
 
-// Module 9256 (ParagraphField)
+// Module 9260 (ParagraphField)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 let closure_3 = arg1(dependencyMap[2]).MAX_PARAGRAPH_RESPONSE_LENGTH;
 ({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[4]));
 let obj = arg1(dependencyMap[5]);
-obj = { container: { 0: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011797377198986917, -123835274082: 0.0000000000000000000000000000000000000000000000000000000000000000000000012074054740688076 } };
+obj = { container: { flexDirection: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011797377198986917, alignItems: 0.00000000000000000000000000000000000000000000000000000000000000000000000120740547407299 } };
 obj = {};
 const tmp3 = arg1(dependencyMap[4]);
 const merged = Object.assign(importDefault(dependencyMap[6])(arg1(dependencyMap[3]).Fonts.DISPLAY_SEMIBOLD, importDefault(dependencyMap[7]).colors.MOBILE_TEXT_HEADING_PRIMARY, 16, { uppercase: false }));
@@ -26,7 +26,7 @@ export default function ParagraphField(field) {
   const tmp = callback2();
   const response = field.response;
   let obj = { style: tmp.container };
-  obj = { Promise: "String", marginTop: "kind", flags: "justifyContent", style: tmp.formHeader, children: field.label };
+  obj = { "Null": "String", "Null": "kind", "Null": "justifyContent", style: tmp.formHeader, children: field.label };
   const items = [callback(arg1(dependencyMap[8]).Text, obj), ];
   obj = { maxLength: closure_3 };
   let str = "";

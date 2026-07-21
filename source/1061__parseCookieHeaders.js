@@ -1,9 +1,12 @@
 // Module ID: 1061
 // Function ID: 11327
 // Name: _parseCookieHeaders
-// Dependencies: []
+// Dependencies: [5, 65, 794, 1004]
 
 // Module 1061 (_parseCookieHeaders)
+import asyncGeneratorStep from "asyncGeneratorStep";
+import _toConsumableArray from "_toConsumableArray";
+
 function _parseCookieHeaders(arg0, headers) {
   let tmp;
   const tmp2 = function _extractFetchHeaders(headers) {
@@ -124,11 +127,9 @@ function _shouldSendDefaultPii() {
   }
   return BooleanResult;
 }
-let closure_2 = require(dependencyMap[0]);
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
-const _module = require(dependencyMap[1]);
 
-export const httpClientIntegration = _module.defineIntegration(function _httpClientIntegration() {
+export const httpClientIntegration = _toConsumableArray.defineIntegration(function _httpClientIntegration() {
   if (arguments.length > 0) {
     if (undefined !== arguments[0]) {
       const first = arguments[0];

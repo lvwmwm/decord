@@ -1,10 +1,10 @@
-// Module ID: 8323
-// Function ID: 65985
+// Module ID: 8327
+// Function ID: 65997
 // Name: apexExperiment
 // Dependencies: []
 // Exports: getMobileMediaViewerShareExperimentEnabled
 
-// Module 8323 (apexExperiment)
+// Module 8327 (apexExperiment)
 const _module = require(dependencyMap[0]);
 const apexExperiment = _module.createApexExperiment({ defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } });
 const _module1 = require(dependencyMap[1]);

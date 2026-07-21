@@ -1,10 +1,10 @@
-// Module ID: 6739
-// Function ID: 52433
+// Module ID: 6745
+// Function ID: 52482
 // Name: Feedback
 // Dependencies: []
 // Exports: generateFeedbackOptions, getMostImportantRaidResolutionType
 
-// Module 6739 (Feedback)
+// Module 6745 (Feedback)
 let obj = { BUG: "BUG", ALLOWED: "ALLOWED", MENTION_RAID_REMOVE_RESTRICTION: "MENTION_RAID_REMOVE_RESTRICTION" };
 obj = { LEGITIMATE_ACTIVITY: "LEGITIMATE_ACTIVITY", LEGITIMATE_ACCOUNTS: "LEGITIMATE_ACCOUNTS", LEGITIMATE_DMS: "LEGITIMATE_DMS", DM_SPAM: "DM_SPAM", JOIN_RAID: "JOIN_RAID", OTHER: "OTHER" };
 const _module = require(dependencyMap[1]);

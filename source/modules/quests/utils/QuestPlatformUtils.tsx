@@ -1,10 +1,10 @@
-// Module ID: 10455
-// Function ID: 80949
+// Module ID: 10461
+// Function ID: 80972
 // Name: supportedConsoles
 // Dependencies: []
 // Exports: getExpiredCredentialsHintMessage, isQuestSupportedOnWeb, openAdGameLinkDirectly, openAddConsoleConnectionModal, openAuthorizationConnectionModal, openConsoleConnectionSettings, openGameLinkDirectly, openSingleConsoleConnectionModal, supportedTaskPlatforms
 
-// Module 10455 (supportedConsoles)
+// Module 10461 (supportedConsoles)
 function supportedConsoles(quest) {
   const items = [];
   const keys = Object.keys(quest.config.taskConfigV2.tasks);

@@ -1,9 +1,9 @@
-// Module ID: 12368
-// Function ID: 94597
+// Module ID: 12375
+// Function ID: 94620
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
-// Module 12368 (_isNativeReflectConstruct)
+// Module 12375 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -31,16 +31,16 @@ const tmp4 = arg1(dependencyMap[8]);
 obj.giftCodeShare = { borderRadius: importDefault(dependencyMap[10]).radii.xs, borderWidth: tmp3.StyleSheet.hairlineWidth, backgroundColor: importDefault(dependencyMap[10]).colors.INPUT_BACKGROUND_DEFAULT };
 const obj1 = { borderRadius: importDefault(dependencyMap[10]).radii.xs, borderWidth: tmp3.StyleSheet.hairlineWidth, backgroundColor: importDefault(dependencyMap[10]).colors.INPUT_BACKGROUND_DEFAULT };
 obj.giftCodeInput = { marginTop: importDefault(dependencyMap[10]).space.PX_16, marginBottom: importDefault(dependencyMap[10]).space.PX_4 };
-const obj3 = { "Bool(true)": null, "Bool(true)": null, "Bool(true)": null, padding: importDefault(dependencyMap[10]).space.PX_8 };
+const obj3 = { padding: importDefault(dependencyMap[10]).space.PX_8, paddingBottom: null, flexDirection: null };
 obj.giftCodeInputContent = obj3;
 obj.giftCodeShareButton = { marginLeft: 12 };
 obj.codeText = { flexShrink: 1 };
 obj.subTextRow = {};
-obj.expiryText = {};
+obj.expiryText = { PX_16: "<string:2236743682>", ix: "<string:1941427526>" };
 const obj2 = { marginTop: importDefault(dependencyMap[10]).space.PX_16, marginBottom: importDefault(dependencyMap[10]).space.PX_4 };
 obj.revokeHint = { color: importDefault(dependencyMap[10]).unsafe_rawColors.BLUE_345 };
 obj.firstRow = { borderWidth: 0 };
-obj.buttonContainer = { "Bool(false)": 131072.00314656927, <string:1419386345>: 0.000000000000000000000000000000000000000000000000000000011294471302334573 };
+obj.buttonContainer = {};
 let closure_13 = obj.createLegacyClassComponentStyles(obj);
 const tmp5 = (PureComponent) => {
   class GiftCodeRow {
@@ -113,7 +113,7 @@ const tmp5 = (PureComponent) => {
         obj = { style: tmp.giftCodeInput };
         obj = {};
         const obj1 = { style: tmp.giftCodeInputContent };
-        const obj2 = { 1968435297: "isArray", 915925470: "x", 1375298031: "flex", style: tmp.codeText };
+        const obj2 = { keFvXM: "white", address-line1: "M331.173 7.2326L335.924 5.62087C336.025 5.54029 336.025 5.45972 335.924 5.45972L331.173 3.7674L329.051 0.0604396C329.051 -0.0201465 328.949 -0.0201465 328.848 0.0604396L326.827 3.7674H326.726L322.076 5.45972C321.975 5.45972 321.975 5.54029 322.076 5.62087L326.726 7.2326H326.827L328.848 10.9396C328.949 11.0201 329.051 11.0201 329.051 10.9396L331.173 7.2326Z", guildId: "white", style: tmp.codeText };
         let obj10 = GiftCodeRow(giftCode[11]);
         obj2.children = obj10.getGiftCodeURL(giftCode.code);
         const items1 = [callback4(GiftCodeRow(giftCode[15]).Text, obj2), ];
@@ -133,7 +133,7 @@ const tmp5 = (PureComponent) => {
         let tmp11 = callback4(closure_8, obj);
       } else {
         const obj5 = { style: tmp.giftCodeShare };
-        const obj6 = { 1968435297: "isArray", 915925470: "x", 1375298031: "flex", style: tmp.codeText };
+        const obj6 = { keFvXM: "white", address-line1: "M331.173 7.2326L335.924 5.62087C336.025 5.54029 336.025 5.45972 335.924 5.45972L331.173 3.7674L329.051 0.0604396C329.051 -0.0201465 328.949 -0.0201465 328.848 0.0604396L326.827 3.7674H326.726L322.076 5.45972C321.975 5.45972 321.975 5.54029 322.076 5.62087L326.726 7.2326H326.827L328.848 10.9396C328.949 11.0201 329.051 11.0201 329.051 10.9396L331.173 7.2326Z", guildId: "white", style: tmp.codeText };
         obj3 = GiftCodeRow(giftCode[11]);
         obj6.children = obj3.getGiftCodeURL(giftCode.code);
         const items3 = [callback4(GiftCodeRow(giftCode[15]).Text, obj6), ];
@@ -154,7 +154,7 @@ const tmp5 = (PureComponent) => {
       const obj9 = { style: tmp.subTextRow };
       let tmp19 = null;
       if (null != giftCode.expiresAt) {
-        obj10 = { INTEGRATION_CREATE: false, ConstraintReasonCode: false };
+        obj10 = {};
         const intl3 = GiftCodeRow(giftCode[17]).intl;
         const obj11 = {};
         const expiresAt = giftCode.expiresAt;

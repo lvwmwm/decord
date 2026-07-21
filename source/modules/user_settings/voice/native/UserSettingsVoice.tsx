@@ -1,10 +1,10 @@
-// Module ID: 10692
-// Function ID: 83273
+// Module ID: 10698
+// Function ID: 83296
 // Name: UserSettingsVoice
 // Dependencies: []
 // Exports: UserSettingsTableRowGroup, default
 
-// Module 10692 (UserSettingsVoice)
+// Module 10698 (UserSettingsVoice)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 const isMobileOverlaySupported = arg1(dependencyMap[2]).isMobileOverlaySupported;

@@ -1,10 +1,10 @@
-// Module ID: 16311
-// Function ID: 125917
+// Module ID: 16318
+// Function ID: 125948
 // Name: GuildRoleSubscriptionBenefitModalHeader
 // Dependencies: []
 // Exports: default
 
-// Module 16311 (GuildRoleSubscriptionBenefitModalHeader)
+// Module 16318 (GuildRoleSubscriptionBenefitModalHeader)
 let closure_4 = importDefault(dependencyMap[0]);
 importAll(dependencyMap[1]);
 const View = arg1(dependencyMap[2]).View;
@@ -14,7 +14,7 @@ let obj = arg1(dependencyMap[5]);
 obj = {};
 obj = { backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_BASE_LOWEST };
 obj.headerContainer = obj;
-obj.headerButtonContainer = { "Null": true, "Null": "/assets/modules/guild_role_subscriptions/native/images", "Null": 16 };
+obj.headerButtonContainer = {};
 obj.headerButtonStart = { alignItems: "flex-start" };
 obj.headerButtonEnd = { alignItems: "flex-end" };
 const obj1 = {};

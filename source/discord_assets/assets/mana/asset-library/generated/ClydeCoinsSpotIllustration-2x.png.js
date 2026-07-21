@@ -1,9 +1,9 @@
-// Module ID: 5946
-// Function ID: 49793
+// Module ID: 5948
+// Function ID: 49836
 // Name: metadata
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 5946 (metadata)
+// Module 5948 (metadata)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/ClydeCoinsSpotIllustration-2x.png.js");
 

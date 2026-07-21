@@ -1,24 +1,24 @@
-// Module ID: 16136
-// Function ID: 124396
+// Module ID: 16143
+// Function ID: 124427
 // Name: GuildSettingsServerTagUpsellCard
 // Dependencies: []
 // Exports: default
 
-// Module 16136 (GuildSettingsServerTagUpsellCard)
+// Module 16143 (GuildSettingsServerTagUpsellCard)
 let closure_3 = importAll(dependencyMap[0]);
 const tmp2 = arg1(dependencyMap[1]);
 const View = tmp2.View;
 let closure_5 = importDefault(dependencyMap[2]);
 ({ jsx: closure_6, jsxs: closure_7 } = arg1(dependencyMap[3]));
-let closure_8 = { "Null": false, "Null": false };
-let closure_9 = { "Null": -721485569, "Null": 3375103 };
+let closure_8 = { max: false, guildId: false };
+let closure_9 = { max: 3211264, guildId: 2042617856 };
 let closure_10 = [null, null];
-let closure_11 = [null, null];
+let closure_11 = [0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003835185184122267, 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003834409859030007];
 let obj = arg1(dependencyMap[4]);
 obj = {};
 obj = { borderRadius: importDefault(dependencyMap[5]).radii.xl, borderColor: importDefault(dependencyMap[5]).colors.BORDER_SUBTLE, paddingHorizontal: importDefault(dependencyMap[5]).space.PX_24, paddingTop: importDefault(dependencyMap[5]).space.PX_20, paddingBottom: importDefault(dependencyMap[5]).space.PX_24 };
 obj.card = obj;
-obj.imageContainer = {};
+obj.imageContainer = { items: "<string:17561153>", width: "<string:2673934592>" };
 obj.textBlock = { alignItems: "center" };
 obj.centerText = { textAlign: "center" };
 obj.body = { maxWidth: 320 };
@@ -52,17 +52,17 @@ export default function GuildSettingsServerTagUpsellCard(guildId) {
     }
   }, items2);
   obj = { style: tmp.card };
-  obj = { "Bool(false)": false, "Bool(false)": 2, "Bool(false)": "sh", "Bool(false)": 3, style: tmp.backgroundLayer };
+  obj = { style: tmp.backgroundLayer };
   const obj1 = {};
-  const obj2 = {};
-  const items3 = [callback(arg1(dependencyMap[10]).Stop, {}), callback(arg1(dependencyMap[10]).Stop, { MEETS_AUTO_ENABLE: "Frame Rate", folderColor: "ADBE Posterize Time-0001", summaryContainer: 1 })];
+  const obj2 = { "Bool(true)": "\u{1FAF1}\u{1F3FC}\u200D\u{1FAF2}\u{1F3FB}", "Bool(true)": true, "Bool(true)": null, "Bool(true)": 14, "Bool(true)": "perks", "Bool(true)": "message", "Bool(true)": null };
+  const items3 = [callback(arg1(dependencyMap[10]).Stop, { <string:3813802319>: true, <string:1629385330>: true, <string:2053329160>: true }), callback(arg1(dependencyMap[10]).Stop, { <string:3813802319>: "Frame Rate", <string:1629385330>: "ADBE Posterize Time-0001", <string:2053329160>: 1 })];
   obj2.children = items3;
   obj1.children = callback2(arg1(dependencyMap[10]).RadialGradient, obj2);
-  const items4 = [callback(arg1(dependencyMap[10]).Defs, obj1), callback(arg1(dependencyMap[10]).Rect, { required: "/assets/design/components/Icon/native/redesign/generated/images", id: 24, source: 24, name: null, selfVideo: "ffb75c82f97e39285286ef89f1767a3c" })];
+  const items4 = [callback(arg1(dependencyMap[10]).Defs, obj1), callback(arg1(dependencyMap[10]).Rect, {})];
   obj.children = items4;
   const items5 = [callback2(importDefault(dependencyMap[10]), obj), callback(importDefault(dependencyMap[11]), { style: tmp.backgroundLayer, colors: closure_10, start: closure_8, end: closure_9, pointerEvents: "none" }), callback(importDefault(dependencyMap[11]), { style: tmp.backgroundLayer, colors: closure_11, start: closure_8, end: closure_9, pointerEvents: "none" }), ];
   const obj5 = { spacing: importDefault(dependencyMap[5]).space.PX_16 };
-  const obj6 = { display: true, width: true, justifyContent: true, style: tmp.imageContainer };
+  const obj6 = { Text: 5375, string: 1896939776, y: 8000, style: tmp.imageContainer };
   let tmp9 = null != tmp3;
   if (tmp9) {
     const obj7 = { imageUrl: tmp3, style: tmp.powerupImage };
@@ -71,20 +71,19 @@ export default function GuildSettingsServerTagUpsellCard(guildId) {
   obj6.children = tmp9;
   const items6 = [callback(View, obj6), , ];
   const obj8 = { spacing: importDefault(dependencyMap[5]).space.PX_8, style: tmp.textBlock };
-  const obj9 = { INTEGRATION_CREATE: "9dd37f954b23d7c3c7ed4428be93436f", ConstraintReasonCode: "ClydeIcon", style: tmp.centerText };
+  const obj9 = { style: tmp.centerText };
   const intl = arg1(dependencyMap[15]).intl;
   obj9.children = intl.string(arg1(dependencyMap[15]).t.2QmKZ2);
   const items7 = [callback(arg1(dependencyMap[14]).Text, obj9), ];
-  const obj10 = { INTEGRATION_CREATE: true, ConstraintReasonCode: true };
+  const obj10 = { style: items8 };
   const items8 = [, ];
   ({ centerText: arr9[0], body: arr9[1] } = tmp);
-  obj10.style = items8;
   const intl2 = arg1(dependencyMap[15]).intl;
   obj10.children = intl2.string(arg1(dependencyMap[15]).t.Tg0fDm);
   items7[1] = callback(arg1(dependencyMap[14]).Text, obj10);
   obj8.children = items7;
   items6[1] = callback2(arg1(dependencyMap[12]).Stack, obj8);
-  const obj11 = { 651830619: false, -73347993: false, -321363364: false, 1230191457: false, 95045802: false };
+  const obj11 = {};
   const intl3 = arg1(dependencyMap[15]).intl;
   obj11.text = intl3.string(arg1(dependencyMap[15]).t.kMRDWs);
   obj11.icon = callback(arg1(dependencyMap[17]).BoostTier2Icon, { color: "white" });

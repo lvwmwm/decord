@@ -1,10 +1,10 @@
-// Module ID: 14588
-// Function ID: 109983
+// Module ID: 14595
+// Function ID: 110005
 // Name: ScreenRecordingActionSheet
-// Dependencies: [31, 33, 1457, 3979, 12955, 9101, 2, 57, 31, 27, 653, 33, 14597, 5353]
+// Dependencies: [31, 33, 1457, 3979, 12962, 9105, 2, 57, 31, 27, 653, 33, 14604, 5355]
 // Exports: default
 
-// Module 14588 (ScreenRecordingActionSheet)
+// Module 14595 (ScreenRecordingActionSheet)
 import "module_31";
 import { View } from "module_33";
 import { useScreenRecordingStore } from "Link";
@@ -14,7 +14,7 @@ import HeaderBackImage from "HeaderBackImage";
 
 ({ jsx: closure_5, jsxs: closure_6 } = _createForOfIteratorHelperLoose);
 useAccessibilityPatchedDescriptors = {};
-useAccessibilityPatchedDescriptors = { gap: require("createNativeStackNavigator").space.PX_16, paddingVertical: require("createNativeStackNavigator").space.PX_16, paddingHorizontal: require("createNativeStackNavigator").space.PX_8, borderRadius: require("createNativeStackNavigator").radii.xl };
+useAccessibilityPatchedDescriptors = { "Null": null, "Null": null, gap: require("createNativeStackNavigator").space.PX_16, paddingVertical: require("createNativeStackNavigator").space.PX_16, paddingHorizontal: require("createNativeStackNavigator").space.PX_8, borderRadius: require("createNativeStackNavigator").radii.xl };
 useAccessibilityPatchedDescriptors.container = useAccessibilityPatchedDescriptors;
 useAccessibilityPatchedDescriptors.closeButton = { position: "absolute", top: require("createNativeStackNavigator").space.PX_8, right: require("createNativeStackNavigator").space.PX_8 };
 const obj1 = { position: "absolute", top: require("createNativeStackNavigator").space.PX_8, right: require("createNativeStackNavigator").space.PX_8 };
@@ -88,7 +88,7 @@ export default function ScreenRecordingActionSheet() {
       return callback2(closure_2[8]).hideActionSheet();
     },
     accessibilityLabel: "close",
-    children: callback2(callback(dependencyMap[10]).XSmallIcon, { flexDirection: 9126805520, alignItems: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003822478338750413 })
+    children: callback2(callback(dependencyMap[10]).XSmallIcon, { flex: true, flexGrow: "/assets/design/components/Illustration/native/redesign/generated/images" })
   };
   const items1 = [callback2(callback(dependencyMap[9]).PressableOpacity, obj4), , , ];
   const obj5 = { variant: "heading-xl/bold", children: tmp5.title };

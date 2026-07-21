@@ -1,9 +1,9 @@
-// Module ID: 4953
-// Function ID: 42496
+// Module ID: 4955
+// Function ID: 42537
 // Name: sortKey
 // Dependencies: []
 
-// Module 4953 (sortKey)
+// Module 4955 (sortKey)
 function sortKey(speaker) {
   let connectedOn;
   let role;

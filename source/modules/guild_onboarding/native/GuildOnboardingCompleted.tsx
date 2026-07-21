@@ -1,10 +1,10 @@
-// Module ID: 5481
-// Function ID: 46729
+// Module ID: 5483
+// Function ID: 46771
 // Name: GuildOnboardingCompleted
 // Dependencies: []
 // Exports: default
 
-// Module 5481 (GuildOnboardingCompleted)
+// Module 5483 (GuildOnboardingCompleted)
 let closure_3 = importAll(dependencyMap[0]);
 const tmp2 = arg1(dependencyMap[1]);
 const View = tmp2.View;
@@ -15,17 +15,17 @@ let closure_8 = importDefault(dependencyMap[5]);
 let closure_9 = importDefault(dependencyMap[6]);
 ({ jsx: closure_10, jsxs: closure_11 } = arg1(dependencyMap[7]));
 let obj = arg1(dependencyMap[8]);
-obj = { screen: {}, container: { 9223372036854775807: null, -9223372036854775808: null, 0: null, 9223372036854775807: null, 9223372036854775807: null } };
+obj = { screen: {}, container: { "Null": "relative", "Null": 1, "Null": "center", "Null": "hidden", "Null": 8 } };
 obj = { backgroundColor: importDefault(dependencyMap[9]).colors.BACKGROUND_BASE_LOWEST };
 obj.containerWithoutSplash = obj;
-obj.backgroundImage = { "Null": true, "Null": false, "Null": "" };
+obj.backgroundImage = { "Null": null, "Null": null, "Null": null };
 obj.title = {};
 obj.subtitle = { marginTop: 16 };
-const obj1 = { justifyContent: "<string:1359020032>", paddingVertical: "<string:24351585>", flex: "isArray", borderRadius: importDefault(dependencyMap[9]).radii.sm, backgroundColor: importDefault(dependencyMap[9]).colors.BACKGROUND_SURFACE_HIGH };
+const obj1 = { 0: null, 0: "hidden", 9223372036854775807: 1, borderRadius: importDefault(dependencyMap[9]).radii.sm, backgroundColor: importDefault(dependencyMap[9]).colors.BACKGROUND_SURFACE_HIGH };
 obj.card = obj1;
 obj.username = { marginTop: 16 };
 obj.rolesHeader = { marginTop: 8 };
-obj.roles = { "Bool(true)": "enum", "Bool(true)": null, "Bool(true)": "\u{1F9CF}\u{1F3FC}\u200D\u2642\uFE0F", "Bool(true)": true };
+obj.roles = { preventClipping: "enum", paddingLeft: null, marginRight: "\u{1F9CF}\u{1F3FC}\u200D\u2642\uFE0F", paddingRight: true };
 obj.role = { marginRight: 8 };
 const tmp3 = arg1(dependencyMap[7]);
 obj.roleOverflow = { borderRadius: importDefault(dependencyMap[9]).radii.xs, borderWidth: tmp2.StyleSheet.hairlineWidth, borderColor: importDefault(dependencyMap[9]).colors.BORDER_SUBTLE };
@@ -33,7 +33,7 @@ const obj2 = { borderRadius: importDefault(dependencyMap[9]).radii.xs, borderWid
 obj.animation = { borderColor: importDefault(dependencyMap[9]).colors.BORDER_SUBTLE, borderRadius: importDefault(dependencyMap[9]).radii.sm };
 const items = [{ translateX: 24 }, { rotate: "5deg" }];
 obj.wave = { transform: items };
-obj.animationText = {};
+obj.animationText = { parent: "P", overflow: 40 };
 obj.getStartedButton = { marginTop: 24 };
 let closure_12 = obj.createStyles(obj);
 let closure_13 = { code: "function GuildOnboardingCompletedTsx1(){const{withSequence,withTiming,withDelay,ANIMATION_DURATION,Easing,useReducedMotion}=this.__closure;const opacity=withSequence(withTiming(0,{duration:0}),withDelay(ANIMATION_DURATION,withTiming(0.5,{duration:ANIMATION_DURATION})),withTiming(1,{duration:ANIMATION_DURATION,easing:Easing.out(Easing.ease)}));const scale=withSequence(withTiming(1,{duration:0}),withDelay(ANIMATION_DURATION,withTiming(1.5,{duration:ANIMATION_DURATION,easing:Easing.out(Easing.ease)})),withTiming(1,{duration:useReducedMotion?1:ANIMATION_DURATION,easing:Easing.out(Easing.ease)}));const rawRotation=withSequence(withTiming('0deg',{duration:0}),withDelay(ANIMATION_DURATION,withTiming('-2deg',{duration:ANIMATION_DURATION})),withTiming('-5deg',{duration:ANIMATION_DURATION}));return{opacity:opacity,transform:[{rotate:rawRotation},{scale:scale}]};}" };
@@ -258,7 +258,7 @@ export default function GuildOnboardingCompleted(guildId) {
       items13[1] = isScreenReaderEnabled(arg1(dependencyMap[23]).Text, obj11);
       let tmp40 = null;
       if (numSharedRoleMembers > 0) {
-        obj12 = { style: tmp.rolesHeader };
+        obj12 = { "Null": false, "Null": 400, "Null": 20, style: tmp.rolesHeader };
         const intl3 = arg1(dependencyMap[24]).intl;
         const obj13 = { numSharedRoleMembers };
         obj12.children = intl3.format(arg1(dependencyMap[24]).t.l1Jc1n, obj13);
@@ -280,7 +280,7 @@ export default function GuildOnboardingCompleted(guildId) {
         const obj15 = {};
         const items15 = [tmp.roleOverflow, obj];
         obj15.style = items15;
-        const obj16 = { INTEGRATION_CREATE: null, ConstraintReasonCode: null };
+        const obj16 = {};
         const _HermesInternal = HermesInternal;
         obj16.children = "+" + diff;
         obj15.children = isScreenReaderEnabled(arg1(dependencyMap[23]).Text, obj16);

@@ -1,9 +1,9 @@
-// Module ID: 10214
-// Function ID: 78933
+// Module ID: 10220
+// Function ID: 78951
 // Name: NativeModules
 // Dependencies: []
 
-// Module 10214 (NativeModules)
+// Module 10220 (NativeModules)
 let NativeModules;
 let closure_0 = importDefault(dependencyMap[0]);
 let closure_1 = importDefault(dependencyMap[1]);

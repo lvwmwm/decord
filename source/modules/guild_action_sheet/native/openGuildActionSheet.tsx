@@ -1,10 +1,10 @@
-// Module ID: 12784
-// Function ID: 97981
+// Module ID: 12791
+// Function ID: 98004
 // Name: openGuildActionSheet
 // Dependencies: []
 // Exports: default
 
-// Module 12784 (openGuildActionSheet)
+// Module 12791 (openGuildActionSheet)
 const _module = require(dependencyMap[0]);
 ({ AnalyticEvents: closure_3, GuildFeatures: closure_4 } = _module);
 const _module1 = require(dependencyMap[9]);

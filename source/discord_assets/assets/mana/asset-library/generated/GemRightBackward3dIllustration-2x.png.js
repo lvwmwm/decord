@@ -1,9 +1,9 @@
-// Module ID: 6176
-// Function ID: 50138
+// Module ID: 6178
+// Function ID: 50181
 // Name: metadata
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 6176 (metadata)
+// Module 6178 (metadata)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/GemRightBackward3dIllustration-2x.png.js");
 

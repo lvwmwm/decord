@@ -1,10 +1,10 @@
-// Module ID: 9509
-// Function ID: 74030
+// Module ID: 9514
+// Function ID: 74046
 // Name: FeedbackForm
 // Dependencies: []
 // Exports: default
 
-// Module 9509 (FeedbackForm)
+// Module 9514 (FeedbackForm)
 function FeedbackForm(result) {
   let descriptionLabel;
   let titleLabel;
@@ -44,7 +44,7 @@ function FeedbackForm(result) {
   const obj2 = { style: tmp.bottomContainer };
   let tmp16 = !result.hideHelpdeskLink;
   if (tmp16) {
-    const obj3 = { Promise: "ur", marginTop: "SECTION_INDEX_FIRST_NAMED_CATEGORY", flags: "ur", style: tmp.helpDeskLabel };
+    const obj3 = { style: tmp.helpDeskLabel };
     const intl3 = arg1(dependencyMap[6]).intl;
     const obj4 = { helpdeskURL: importDefault(dependencyMap[8]).getSubmitRequestURL() };
     obj3.children = intl3.format(arg1(dependencyMap[6]).t.ybi2tD, obj4);
@@ -82,7 +82,7 @@ let closure_4 = importAll(dependencyMap[1]);
 const tmp2 = arg1(dependencyMap[2]);
 ({ jsx: closure_7, jsxs: closure_8 } = arg1(dependencyMap[3]));
 const tmp3 = arg1(dependencyMap[3]);
-let closure_9 = arg1(dependencyMap[4]).createStyles({ helpDeskLabel: {}, bottomContainer: { paddingHorizontal: 16 }, submitButton: { visible: false, transparent: false } });
+let closure_9 = arg1(dependencyMap[4]).createStyles({ helpDeskLabel: {}, bottomContainer: { paddingHorizontal: 16 }, submitButton: {} });
 const obj = arg1(dependencyMap[4]);
 const result = arg1(dependencyMap[13]).fileFinishedImporting("modules/feedback/native/FeedbackModal.tsx");
 

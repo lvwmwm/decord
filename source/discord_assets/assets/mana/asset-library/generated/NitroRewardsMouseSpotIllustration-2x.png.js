@@ -1,9 +1,9 @@
-// Module ID: 6340
-// Function ID: 50384
+// Module ID: 6342
+// Function ID: 50427
 // Name: metadata
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 6340 (metadata)
+// Module 6342 (metadata)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/NitroRewardsMouseSpotIllustration-2x.png.js");
 

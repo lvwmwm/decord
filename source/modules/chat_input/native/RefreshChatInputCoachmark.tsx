@@ -1,10 +1,10 @@
-// Module ID: 11095
-// Function ID: 86335
+// Module ID: 11101
+// Function ID: 86358
 // Name: RefreshChatInputCoachmark
 // Dependencies: []
 // Exports: default, useRefreshChatInputCoachmark
 
-// Module 11095 (RefreshChatInputCoachmark)
+// Module 11101 (RefreshChatInputCoachmark)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 const ContentDismissActionType = arg1(dependencyMap[2]).ContentDismissActionType;
@@ -45,7 +45,7 @@ export const useRefreshChatInputCoachmark = function useRefreshChatInputCoachmar
         obj.onDismiss = function onDismiss() {
           callback(constants.USER_DISMISS);
         };
-        obj = { ty: "image/webp", nm: 0.5, sr: "M15 6h-1v2h1V6Z", rive: tmp8(closure_2[7]).OmnibuttonCoachmarkRive };
+        obj = { 1640994965: "<string:2929393666>", "Null": "<string:74645505>", "Null": "<string:67108864>", rive: tmp8(closure_2[7]).OmnibuttonCoachmarkRive };
         obj.graphic = obj;
         return obj;
       }, items1);

@@ -1,14 +1,9 @@
 // Module ID: 1184
 // Function ID: 13479
 // Name: isNonEmptyString
-// Dependencies: [0, 0, 0, 0, 0, 0, 0, 0]
+// Dependencies: []
 
 // Module 1184 (isNonEmptyString)
-import { NativeModules } from "result";
-import importDefaultResult from "result";
-import result from "result";
-import result from "result";
-
 function isNonEmptyString(arg0) {
   let tmp = "string" === typeof arg0;
   if (tmp) {
@@ -25,9 +20,13 @@ function updateNativeReporter(arg0) {
   const CrashReportingManager = NativeModules.CrashReportingManager;
   CrashReportingManager.setUser(tmp);
 }
+const NativeModules = require(dependencyMap[0]).NativeModules;
+let importDefaultResult = importDefault(dependencyMap[1]);
 importDefaultResult = new importDefaultResult("Sentry");
-result = result.initSentry();
-result = result.fileFinishedImporting("utils/SentryUtils.native.tsx");
+const _module = require(dependencyMap[2]);
+const sentry = _module.initSentry();
+const _module1 = require(dependencyMap[7]);
+const result = _module1.fileFinishedImporting("utils/SentryUtils.native.tsx");
 
 export default {
   setUser(id, username, email, staff) {
@@ -157,7 +156,7 @@ export default {
   profiledRootComponent(displayName) {
     let withProfilerResult = displayName;
     if ("canaryRelease" === obj.getConstants().ReleaseChannel) {
-      withProfilerResult = importAll(dependencyMap[3]).withProfiler(displayName, { "Bool(true)": null, "Bool(true)": null });
+      withProfilerResult = importAll(dependencyMap[3]).withProfiler(displayName, {});
       const obj2 = importAll(dependencyMap[3]);
     }
     return withProfilerResult;

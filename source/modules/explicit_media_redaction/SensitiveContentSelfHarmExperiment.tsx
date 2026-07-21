@@ -1,12 +1,12 @@
-// Module ID: 5666
-// Function ID: 48665
+// Module ID: 5668
+// Function ID: 48708
 // Name: apexExperiment
 // Dependencies: []
 // Exports: isSensitiveContentSelfHarmEnabled, useIsSensitiveContentSelfHarmEnabled
 
-// Module 5666 (apexExperiment)
+// Module 5668 (apexExperiment)
 const _module = require(dependencyMap[0]);
-const obj = { -1269606814: "Array", -1845285747: "isArray", defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } };
+const obj = { 9223372036854775807: "Array", 0: "isArray", defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } };
 const apexExperiment = _module.createApexExperiment(obj);
 const _module1 = require(dependencyMap[1]);
 const result = _module1.fileFinishedImporting("modules/explicit_media_redaction/SensitiveContentSelfHarmExperiment.tsx");

@@ -1,7 +1,7 @@
 // Module ID: 1327
 // Function ID: 15555
 // Name: isDiscordFrontendDevelopment
-// Dependencies: []
+// Dependencies: [284214097]
 // Exports: assertNever, isDiscordBackendDevelopment, isDiscordFrontendDevelopment, isIn, isInSet, isNotNullish, isObjectEntryNotNullish
 
 // Module 1327 (isDiscordFrontendDevelopment)

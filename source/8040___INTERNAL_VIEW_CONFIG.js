@@ -1,11 +1,16 @@
 // Module ID: 8040
-// Function ID: 63836
+// Function ID: 63830
 // Name: __INTERNAL_VIEW_CONFIG
 // Dependencies: []
 
 // Module 8040 (__INTERNAL_VIEW_CONFIG)
-const obj = { uiViewClassName: "RNSVGDefs", validAttributes: { display: 553648128, flexDirection: 570565377, justifyContent: 356625, alignItems: 17956864, flexShrink: 369, justifyContent: 1912672512, flexDirection: 16, gap: 5, os-drawn: -1374408415, custom-drawn: -193273529, js-stack: 1895907411, sheet: 1 } };
-const _module = require(dependencyMap[0]);
+let obj = { uiViewClassName: "RNSVGCircle", directEventTypes: { topSvgLayout: { registrationName: "onSvgLayout" } } };
+obj = {};
+obj = { process: require(dependencyMap[0]).default };
+obj.color = obj;
+const _module = require(dependencyMap[1]);
+obj.validAttributes = Object.assign(obj, _module.ConditionallyIgnoredEventHandlers({ onSvgLayout: true }));
+const _module1 = require(dependencyMap[2]);
 
-export default _module.get("RNSVGDefs", () => obj);
+export default _module1.get("RNSVGCircle", () => obj);
 export const __INTERNAL_VIEW_CONFIG = obj;

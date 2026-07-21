@@ -1,10 +1,10 @@
-// Module ID: 7554
-// Function ID: 60452
+// Module ID: 7558
+// Function ID: 60464
 // Name: GetStartedScreen
 // Dependencies: []
 // Exports: default
 
-// Module 7554 (GetStartedScreen)
+// Module 7558 (GetStartedScreen)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 ({ ActivityIndicator: closure_5, ScrollView: closure_6, View: closure_7 } = arg1(dependencyMap[2]));
@@ -13,7 +13,7 @@ const SafetyHubLinks = arg1(dependencyMap[4]).SafetyHubLinks;
 const tmp2 = arg1(dependencyMap[2]);
 ({ jsx: closure_10, jsxs: closure_11, Fragment: closure_12 } = arg1(dependencyMap[5]));
 let obj = arg1(dependencyMap[6]);
-obj = { loadingIndicator: { marginTop: true, lineHeight: "/assets/modules/stage_channels/native/images", textAlign: 25, textAlignVertical: 24, padding: null, paddingTop: "b252f7dc065300671ba9347414eb0bad" } };
+obj = { loadingIndicator: { paddingHorizontal: true, borderTopStartRadius: "/assets/modules/stage_channels/native/images", borderTopEndRadius: 25, marginTop: 24, lineHeight: null, textAlign: "b252f7dc065300671ba9347414eb0bad" } };
 obj = { paddingHorizontal: importDefault(dependencyMap[7]).space.PX_16, flex: 1 };
 obj.container = obj;
 const tmp3 = arg1(dependencyMap[5]);
@@ -105,10 +105,9 @@ export default function GetStartedScreen(modalSessionId) {
     })
   };
   items3[1] = callback(arg1(dependencyMap[16]).TableRowGroup, obj6);
-  const obj7 = { INTEGRATION_CREATE: true, ConstraintReasonCode: true };
+  const obj7 = { style: items4 };
   const items4 = [, ];
   ({ centerText: arr6[0], helpLink: arr6[1] } = tmp);
-  obj7.style = items4;
   const intl4 = arg1(dependencyMap[11]).intl;
   obj7.children = intl4.format(arg1(dependencyMap[11]).t.L+FgkZ, {
     handleOnHelpUrlHook() {

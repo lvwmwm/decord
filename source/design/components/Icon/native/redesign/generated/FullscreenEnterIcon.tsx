@@ -1,10 +1,10 @@
-// Module ID: 13794
-// Function ID: 104370
+// Module ID: 13801
+// Function ID: 104393
 // Name: FullscreenEnterIcon
 // Dependencies: []
 // Exports: FullscreenEnterIcon
 
-// Module 13794 (FullscreenEnterIcon)
+// Module 13801 (FullscreenEnterIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/FullscreenEnterIcon.tsx");

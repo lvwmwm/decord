@@ -1,9 +1,9 @@
-// Module ID: 10052
-// Function ID: 77660
+// Module ID: 10058
+// Function ID: 77678
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
-// Module 10052 (_isNativeReflectConstruct)
+// Module 10058 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -24,19 +24,19 @@ let closure_10 = importDefault(dependencyMap[7]);
 const tmp3 = arg1(dependencyMap[6]);
 ({ jsx: closure_11, jsxs: closure_12 } = arg1(dependencyMap[8]));
 let obj = arg1(dependencyMap[9]);
-obj = { container: { 1315000674: Infinity, 810636129: true, 1365402056: true } };
+obj = { container: {} };
 obj = { backgroundColor: importDefault(dependencyMap[10]).colors.BACKGROUND_SURFACE_HIGH };
 obj.guildPlaceholder = obj;
-obj.guildIcon = { backgroundColor: "Array", accessibilityRole: "isArray", -45001119: "constructor" };
+obj.guildIcon = { "Bool(true)": 24, "Bool(true)": 24, "Bool(true)": null };
 obj.iconWrapperBorder = {};
-const obj1 = { disabled: "boolean", isOwner: "string", onPress: "boolean", onLongPress: "artboard", handleMessage: "artboard", borderRadius: importDefault(dependencyMap[10]).radii.lg, backgroundColor: importDefault(dependencyMap[10]).colors.INTERACTIVE_TEXT_ACTIVE };
+const obj1 = { 9223372036854775807: "boolean", 0: "string", 0: "boolean", 9223372036854775807: "artboard", 0: "artboard", borderRadius: importDefault(dependencyMap[10]).radii.lg, backgroundColor: importDefault(dependencyMap[10]).colors.INTERACTIVE_TEXT_ACTIVE };
 obj.filledIconWrapper = obj1;
 const tmp4 = arg1(dependencyMap[8]);
 obj.emptyIconWrapper = { borderRadius: importDefault(dependencyMap[10]).radii.lg, backgroundColor: importDefault(dependencyMap[10]).colors.BACKGROUND_BRAND };
 const obj2 = { borderRadius: importDefault(dependencyMap[10]).radii.lg, backgroundColor: importDefault(dependencyMap[10]).colors.BACKGROUND_BRAND };
 obj.emptyGuildIcon = { borderColor: importDefault(dependencyMap[10]).colors.INTERACTIVE_TEXT_DEFAULT };
 obj.emptyGuildIconText = {};
-obj.uploadIcon = { <string:1140607356>: "<string:16777479>", <string:1751293292>: "<string:36295491>" };
+obj.uploadIcon = {};
 let closure_13 = obj.createLegacyClassComponentStyles(obj);
 const tmp5 = (PureComponent) => {
   class GuildIconUploader {
@@ -87,7 +87,7 @@ const tmp5 = (PureComponent) => {
         }
         obj2.source = tmp16Result;
         const items2 = [callback4(closure_9, obj2), ];
-        obj = { Promise: "_reject", marginTop: "isAutoFillData", flags: "gg", style: tmp.emptyGuildIconText };
+        obj = { "Null": 160961306817940700000000000000000000, "Null": 0.00000000605360159482843, "Null": 1315312532608515200000000000, style: tmp.emptyGuildIconText };
         const intl = GuildIconUploader(closure_2[15]).intl;
         const obj6 = GuildIconUploader(closure_2[11]);
         const tmp10 = closure_8;

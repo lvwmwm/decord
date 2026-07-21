@@ -22,9 +22,9 @@ arg5.whenIdleOrHidden = function whenIdleOrHidden(closure_6) {
     const runOnceResult = arg1(arg6[1]).runOnce(closure_6);
     arg1 = runOnceResult;
     const obj = arg1(arg6[1]);
-    arg1(arg6[2]).addPageListener("visibilitychange", runOnceResult, {});
+    arg1(arg6[2]).addPageListener("visibilitychange", runOnceResult, { childList: null, subtree: null });
     const obj2 = arg1(arg6[2]);
-    arg1(arg6[2]).addPageListener("pagehide", runOnceResult, {});
+    arg1(arg6[2]).addPageListener("pagehide", runOnceResult, { childList: null, subtree: null });
     _setTimeout(() => {
       runOnceResult();
       runOnceResult(closure_1[2]).removePageListener("visibilitychange", runOnceResult, { capture: true });

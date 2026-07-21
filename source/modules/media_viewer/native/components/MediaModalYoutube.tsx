@@ -1,9 +1,9 @@
-// Module ID: 12121
-// Function ID: 93394
+// Module ID: 12128
+// Function ID: 93417
 // Name: HTML
 // Dependencies: []
 
-// Module 12121 (HTML)
+// Module 12128 (HTML)
 function HTML(start) {
   let str = "";
   let str2 = "";
@@ -31,7 +31,7 @@ const memoResult = importAllResult.memo((visible) => {
   visible = visible.visible;
   const arg1 = visible;
   const source = visible.source;
-  let obj = {};
+  let obj = { max: "spring", isoDate: "linear", timestamp: "easeInEaseOut" };
   Object.setPrototypeOf(null);
   const merged = Object.assign(visible, obj);
   const tmp3 = callback(importAllResult.useState(arg1(closure_2[4]).PlayerState.UNREADY), 2);
@@ -87,7 +87,7 @@ const memoResult = importAllResult.memo((visible) => {
       callback(visible(callback[4]).PlayerState.ERRORED);
       callback2(str7);
       const MediaViewerAnalytics = visible(callback[6]).MediaViewerAnalytics;
-      let obj = { "Bool(false)": null, "Bool(false)": null, error: str7 };
+      let obj = { scaleAmountInPx: null, onLayout: null, error: str7 };
       const result = MediaViewerAnalytics.trackMessageEmbedsActionCompleted(obj);
     } else if ("onStateChange" === type) {
       obj = { -1: visible(callback[4]).PlayerState.UNSTARTED };

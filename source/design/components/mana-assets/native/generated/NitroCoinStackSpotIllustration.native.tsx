@@ -1,10 +1,10 @@
-// Module ID: 6309
-// Function ID: 50337
+// Module ID: 6311
+// Function ID: 50380
 // Name: NitroCoinStackSpotIllustration
 // Dependencies: []
 // Exports: NitroCoinStackSpotIllustration
 
-// Module 6309 (NitroCoinStackSpotIllustration)
+// Module 6311 (NitroCoinStackSpotIllustration)
 const jsx = require(dependencyMap[0]).jsx;
 const _module = require(dependencyMap[3]);
 const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/NitroCoinStackSpotIllustration.native.tsx");

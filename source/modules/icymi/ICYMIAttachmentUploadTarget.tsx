@@ -1,9 +1,9 @@
-// Module ID: 4705
-// Function ID: 40892
+// Module ID: 4707
+// Function ID: 40933
 // Name: ICYMIAttachmentUploadTarget
 // Dependencies: []
 
-// Module 4705 (ICYMIAttachmentUploadTarget)
+// Module 4707 (ICYMIAttachmentUploadTarget)
 let closure_2 = importDefault(dependencyMap[0]);
 let closure_3 = importDefault(dependencyMap[1]);
 ({ Endpoints: closure_4, MAX_ATTACHMENT_SIZE: closure_5, MAX_UPLOAD_COUNT: closure_6 } = arg1(dependencyMap[2]));

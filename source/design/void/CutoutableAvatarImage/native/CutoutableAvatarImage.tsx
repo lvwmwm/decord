@@ -1,9 +1,9 @@
-// Module ID: 11931
-// Function ID: 92281
+// Module ID: 11938
+// Function ID: 92304
 // Name: StaticNativeCutoutAvatarImage
 // Dependencies: []
 
-// Module 11931 (StaticNativeCutoutAvatarImage)
+// Module 11938 (StaticNativeCutoutAvatarImage)
 function StaticNativeCutoutAvatarImage(cutout) {
   let source;
   let style;
@@ -114,7 +114,7 @@ function CutoutAvatarImage(arg0) {
   const tintColor = closure_4.flatten(style).tintColor;
   if (null != source) {
     if (null != tintColor) {
-      obj = { "Null": false, "Null": false, "Null": false, borderRadius: false };
+      obj = { <string:1419836164>: false, <string:2897120370>: false, 1375947274: false, 405260318: false };
       const _HermesInternal = HermesInternal;
       obj.mask = "url(#" + v4Result + ")";
       obj = {};
@@ -128,14 +128,14 @@ function CutoutAvatarImage(arg0) {
     }
     const obj2 = { style };
     let str3 = 13;
-    const obj3 = { <string:1140607356>: 30271555, <string:1751293292>: 22092032 };
+    const obj3 = {};
     const obj4 = {};
     const obj5 = { width: size, height: size, id: v4Result };
     if (CIRCULAR === obj21.CIRCULAR) {
       const obj6 = { cx: color, cy: color, r: color, fill: "white" };
       let tmp28 = callback(arg1(dependencyMap[str3]).Circle, obj6);
     } else {
-      const obj7 = { "Bool(true)": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001019495833863, "Bool(true)": 943412578814246300000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, "Bool(true)": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000050927898995, "Bool(true)": -0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002407807426044999, "Bool(true)": -0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000006221141291532215, height: size, width: size };
+      const obj7 = { width: size, height: size, overflow: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000050927898995, padding: -0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002407807426044999, display: -44066033454197730000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 };
       tmp28 = callback(arg1(dependencyMap[str3]).Rect, obj7);
     }
     const items = [tmp28, ];
@@ -160,7 +160,7 @@ function CutoutAvatarImage(arg0) {
       obj9.strokeWidth = cutout;
       let tmp41 = callback(arg1(dependencyMap[str3]).Circle, obj9);
     } else {
-      const obj10 = { "Bool(true)": true, "Bool(true)": true, "Bool(true)": true, "Bool(true)": true, "Bool(true)": true, height: size, width: size };
+      const obj10 = { width: size, height: size, overflow: true, padding: true, display: true };
       const _HermesInternal3 = HermesInternal;
       obj10.mask = "url(#" + v4Result + ")";
       obj10.stroke = cutout.border.color;
@@ -174,7 +174,7 @@ function CutoutAvatarImage(arg0) {
     const tmp21 = callback;
     const tmp23 = closure_8;
   }
-  const obj11 = { "Null": false, "Null": false, "Null": false, borderRadius: false, href: importDefault(dependencyMap[7])(source), mask: "url(#" + v4Result + ")" };
+  const obj11 = { <string:1419836164>: false, <string:2897120370>: false, 1375947274: false, 405260318: false, href: importDefault(dependencyMap[7])(source), mask: "url(#" + v4Result + ")" };
   tmp7 = callback(arg1(dependencyMap[13]).Image, obj11);
 }
 const importAllResult = importAll(dependencyMap[0]);
@@ -186,7 +186,7 @@ let importDefaultResult = importDefault(dependencyMap[4]);
 importDefaultResult = new importDefaultResult("UIKit - AvatarImage");
 let obj = { XXSMALL: "xxsmall", XSMALL: "xsmall", SMALL: "small", NORMAL: "normal", LARGE: "large", XLARGE: "xlarge", XLARGE_72: "xlarge72", XXLARGE: "xxlarge", PROFILE: "profile", REFRESH_MEDIUM_32: "refreshMedium32", XXSMALL_10: "xsmall10", XSMALL_20: "xsmall20", SIZE_16: "size16", LARGE_48: "large48", EDIT_AVATAR_DECORATION: "editAvatarDecoration", GIFT_START: "giftStart", GIFT_SUCCESS: "giftSuccess", YOUBAR_60: "youBar60", TABS_22: "tabs22" };
 const frozen = Object.freeze({ [obj.XXSMALL_10]: 10, [obj.SIZE_16]: 16, [obj.XXSMALL]: 18, [obj.XSMALL_20]: 20, [obj.XSMALL]: 24, [obj.SMALL]: 30, [obj.NORMAL]: 40, [obj.LARGE_48]: 48, [obj.LARGE]: 50, [obj.XLARGE]: 64, [obj.XLARGE_72]: 72, [obj.XXLARGE]: 80, [obj.PROFILE]: 128, [obj.EDIT_AVATAR_DECORATION]: 144, [obj.GIFT_START]: 184, [obj.GIFT_SUCCESS]: 236, [obj.REFRESH_MEDIUM_32]: 32, [obj.YOUBAR_60]: 60, [obj.TABS_22]: 22 });
-obj = { image: { aze: 30271555, azj: 22092032 }, xxsmall: obj1, xsmall10: obj2, xsmall20: obj3, xsmall: obj4, small: obj5, normal: obj6, large: obj7, xlarge: obj8, xlarge72: obj9, xxlarge: obj10, refreshMedium32: obj11, profile: obj12, size16: obj13, large48: obj14, editAvatarDecoration: obj15, giftStart: obj16, giftSuccess: obj17, youBar60: obj18, tabs22: obj19 };
+obj = { image: {}, xxsmall: obj1, xsmall10: obj2, xsmall20: obj3, xsmall: obj4, small: obj5, normal: obj6, large: obj7, xlarge: obj8, xlarge72: obj9, xxlarge: obj10, refreshMedium32: obj11, profile: obj12, size16: obj13, large48: obj14, editAvatarDecoration: obj15, giftStart: obj16, giftSuccess: obj17, youBar60: obj18, tabs22: obj19 };
 const obj20 = { RIGHT: 0, [0]: "RIGHT", BOTTOM_RIGHT: 1, [1]: "BOTTOM_RIGHT", BOTTOM_LEFT: 2, [2]: "BOTTOM_LEFT" };
 const obj21 = { RECTANGULAR: 0, [0]: "RECTANGULAR", CIRCULAR: 1, [1]: "CIRCULAR" };
 let closure_14 = { code: "function CutoutableAvatarImageTsx1(){const{cutout,CutoutShape,withSpring,CHANNEL_SPRING_CONFIG}=this.__closure;const animatedCutout=cutout.shape===CutoutShape.RoundedRect?{shape:CutoutShape.RoundedRect,x:withSpring(cutout.x,CHANNEL_SPRING_CONFIG),y:withSpring(cutout.y,CHANNEL_SPRING_CONFIG),width:withSpring(cutout.width,CHANNEL_SPRING_CONFIG),height:withSpring(cutout.height,CHANNEL_SPRING_CONFIG),cornerRadius:withSpring(cutout.cornerRadius,CHANNEL_SPRING_CONFIG)}:{shape:CutoutShape.Circle,x:withSpring(cutout.x,CHANNEL_SPRING_CONFIG),y:withSpring(cutout.y,CHANNEL_SPRING_CONFIG),size:withSpring(cutout.size,CHANNEL_SPRING_CONFIG)};return{cutouts:[animatedCutout]};}" };
@@ -305,7 +305,7 @@ const memoResult = importAllResult.memo((arg0) => {
     }
   }
 }, function customShallowEqual(source, source2) {
-  if (importDefault(dependencyMap[14])(source, source2, [25])) {
+  if (importDefault(dependencyMap[14])(source, source2, ["LAUNCH_PAD_PULL_TAB_SCALE_FACTOR"])) {
     source = source.source;
     const source1 = source2.source;
     if (source === source1) {

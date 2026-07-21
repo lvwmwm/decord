@@ -1,18 +1,19 @@
-// Module ID: 12791
-// Function ID: 98053
+// Module ID: 12798
+// Function ID: 98076
 // Name: _adoptGuildIdentity
-// Dependencies: []
+// Dependencies: [0, 0]
 // Exports: adoptGuildIdentity
 
-// Module 12791 (_adoptGuildIdentity)
+// Module 12798 (_adoptGuildIdentity)
+import __exportStarResult1 from "__exportStarResult1";
+import closure_4 from "__exportStarResult1";
+
 function _adoptGuildIdentity() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
   const _adoptGuildIdentity = obj;
   return obj(...arguments);
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
 const Endpoints = arg1(dependencyMap[2]).Endpoints;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/guild_tag/GuildTagActionCreators.tsx");
 

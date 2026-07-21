@@ -1,5 +1,5 @@
 // Module ID: 8086
-// Function ID: 64110
+// Function ID: 64106
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
@@ -21,11 +21,11 @@ let closure_6 = importDefault(dependencyMap[4]);
 importAll(dependencyMap[5]);
 const jsx = arg1(dependencyMap[6]).jsx;
 const tmp3 = (arg0) => {
-  class Marker {
+  class LinearGradient {
     constructor() {
       self = this;
-      tmp = closure_2(this, Marker);
-      obj = closure_5(Marker);
+      tmp = closure_2(this, LinearGradient);
+      obj = closure_5(LinearGradient);
       tmp2 = closure_4;
       if (closure_8()) {
         tmp6 = globalThis;
@@ -41,34 +41,27 @@ const tmp3 = (arg0) => {
       return tmp2(self, constructResult);
     }
   }
-  const importDefault = Marker;
-  callback2(Marker, arg0);
+  const importDefault = LinearGradient;
+  callback2(LinearGradient, arg0);
   const items = [
     {
       key: "render",
       value: function render() {
-        let children;
-        let markerHeight;
-        let markerWidth;
-        let preserveAspectRatio;
-        let viewBox;
-        const Marker = this;
+        const LinearGradient = this;
         const props = this.props;
-        let obj = { name: props.id, refX: props.refX, refY: props.refY, markerUnits: props.markerUnits, orient: String(props.orient), markerWidth, markerHeight };
-        ({ viewBox, preserveAspectRatio, markerWidth, markerHeight, children } = props);
+        let obj = { x1: props.x1, y1: props.y1, x2: props.x2, y2: props.y2 };
         obj = {
           ref(arg0) {
             return self.refMethod(arg0);
           }
         };
-        obj = { children };
-        return callback3(Marker(closure_1[7]), Object.assign(obj, obj, Marker(closure_1[8])({ viewBox, preserveAspectRatio }), obj));
+        return callback3(LinearGradient(closure_1[7]), Object.assign(obj, obj, LinearGradient(closure_1[8])(props, this)));
       }
     }
   ];
-  return callback(Marker, items);
+  return callback(LinearGradient, items);
 }(importDefault(dependencyMap[9]));
-tmp3.displayName = "Marker";
+tmp3.displayName = "LinearGradient";
 tmp3.defaultProps = {};
 
 export default tmp3;

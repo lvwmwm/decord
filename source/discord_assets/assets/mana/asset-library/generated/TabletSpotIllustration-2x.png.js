@@ -1,9 +1,9 @@
-// Module ID: 6582
-// Function ID: 50747
+// Module ID: 6584
+// Function ID: 50790
 // Name: metadata
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 6582 (metadata)
+// Module 6584 (metadata)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/TabletSpotIllustration-2x.png.js");
 

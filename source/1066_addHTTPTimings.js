@@ -1,10 +1,12 @@
 // Module ID: 1066
 // Function ID: 12238
 // Name: addHTTPTimings
-// Dependencies: []
+// Dependencies: [6, 7, 794, 5]
 // Exports: instrumentOutgoingRequests
 
 // Module 1066 (addHTTPTimings)
+import _classCallCheck from "_classCallCheck";
+
 function addHTTPTimings(arg0) {
   const require = arg0;
   const url = require(dependencyMap[1]).spanToJSON(arg0).data.url;
@@ -65,11 +67,10 @@ function shouldAttachHeaders(str) {
   }
   const obj = require(dependencyMap[1]);
 }
-let closure_2 = require(dependencyMap[0]);
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 const weakMap = new WeakMap();
 const map = new Map();
-const obj = { propTypes: "%Math%", display: "GUILD_EVENT_EMBED", flexDirection: "handled", flexWrap: "RowTypes" };
+const obj = { importantForAccessibility: "<string:1375602070>", accessibilityRole: "<string:4150368988>", "Bool(true)": "<string:1339649>", "Bool(true)": "<string:3275816960>" };
 
 export const defaultRequestInstrumentationOptions = obj;
 export const instrumentOutgoingRequests = function instrumentOutgoingRequests(getOptions, arg1) {

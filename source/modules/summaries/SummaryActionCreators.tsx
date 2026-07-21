@@ -1,10 +1,17 @@
-// Module ID: 9514
-// Function ID: 74057
+// Module ID: 9519
+// Function ID: 74073
 // Name: fetchSummary
-// Dependencies: []
+// Dependencies: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 // Exports: deleteSummary, fetchSummaries, setHighlightedSummary, setSelectedSummary, setSummaryFeedback, stopPolling, toggleTopicsBar, updateVisibleMessages, useChannelSummaries
 
-// Module 9514 (fetchSummary)
+// Module 9519 (fetchSummary)
+import __exportStarResult1 from "__exportStarResult1";
+import closure_4 from "__exportStarResult1";
+import closure_5 from "__exportStarResult1";
+import closure_6 from "__exportStarResult1";
+import closure_7 from "__exportStarResult1";
+import { Routes } from "__exportStarResult1";
+
 function fetchSummary(channelId, summaryId) {
   return _fetchSummary(...arguments);
 }
@@ -142,16 +149,10 @@ function _deleteSummary() {
   const _deleteSummary = obj;
   return obj(...arguments);
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importAll(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-const Routes = arg1(dependencyMap[5]).Routes;
-let closure_9 = 30 * importDefault(dependencyMap[6]).Millis.SECOND;
+let closure_9 = 30 * require("__exportStarResult1").Millis.SECOND;
 let closure_10 = {};
 let closure_11 = {};
-const result = arg1(dependencyMap[13]).fileFinishedImporting("modules/summaries/SummaryActionCreators.tsx");
+const result = require("__exportStarResult1").fileFinishedImporting("modules/summaries/SummaryActionCreators.tsx");
 
 export default { setSummaryFeedback, updateVisibleMessages, setSelectedSummary, setHighlightedSummary, fetchSummaries, fetchSummariesBulk, useChannelSummaries, deleteSummary };
 export { fetchSummary };

@@ -1,9 +1,9 @@
-// Module ID: 15174
-// Function ID: 114480
+// Module ID: 15181
+// Function ID: 114504
 // Name: ApplicationStatusIcon
 // Dependencies: []
 
-// Module 15174 (ApplicationStatusIcon)
+// Module 15181 (ApplicationStatusIcon)
 function ApplicationStatusIcon(status) {
   status = status.status;
   if (arg1(dependencyMap[5]).GuildJoinRequestApplicationStatuses.APPROVED === status) {
@@ -24,8 +24,8 @@ let obj1 = arg1(dependencyMap[3]);
 let obj = { label: {} };
 obj = { backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_SURFACE_HIGH, borderRadius: importDefault(dependencyMap[4]).radii.md };
 obj.container = obj;
-obj.row = { <string:4004065027>: "Text", clock10: "WireType", ackUserFeature: "prototype", 2bprXx: "Array" };
-obj1 = { backgroundColor: importDefault(dependencyMap[4]).colors.BORDER_SUBTLE };
+obj.row = { "Bool(false)": "<string:17265217>", "Bool(false)": "<string:1602048>", "Bool(false)": "<string:1572864>", "Bool(false)": "<string:1107361792>" };
+obj1 = { bhk: false, bic: false, backgroundColor: importDefault(dependencyMap[4]).colors.BORDER_SUBTLE };
 obj.divider = obj1;
 let closure_9 = obj1.createStyles(obj);
 const tmp3 = arg1(dependencyMap[2]);
@@ -64,7 +64,7 @@ const memoResult = importAllResult.memo((arg0) => {
               return callback(closure_2[11])(arg0);
             }
           };
-          const obj1 = { INTEGRATION_CREATE: "AutomodMentionRaidLimit", ConstraintReasonCode: "%URIError%" };
+          const obj1 = {};
           const obj5 = tmp(closure_2[12]);
           obj1.children = obj5.dateFormat(new Date(createdAt.createdAt), "LL");
           const items1 = [callback(tmp(closure_2[9]).Text, obj1), callback(closure_10, { status: createdAt.applicationStatus })];

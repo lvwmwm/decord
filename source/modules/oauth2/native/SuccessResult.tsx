@@ -1,10 +1,10 @@
-// Module ID: 10817
-// Function ID: 84005
+// Module ID: 10823
+// Function ID: 84028
 // Name: SuccessResultModal
 // Dependencies: []
 // Exports: default
 
-// Module 10817 (SuccessResultModal)
+// Module 10823 (SuccessResultModal)
 let closure_3 = importAll(dependencyMap[0]);
 ({ Image: closure_4, View: closure_5, ScrollView: closure_6 } = arg1(dependencyMap[1]));
 let closure_7 = importDefault(dependencyMap[2]);
@@ -20,15 +20,15 @@ obj = {};
 obj = { flex: 1, backgroundColor: importDefault(dependencyMap[9]).colors.BACKGROUND_BASE_LOWER };
 obj.container = obj;
 obj.scrollView = { flex: 1 };
-const tmp4 = arg1(dependencyMap[7]);
-obj.scrollViewContentContainer = { backgroundColor: importDefault(dependencyMap[9]).colors.BACKGROUND_BASE_LOW };
+const obj1 = { position: "a", zIndex: "Rpc", bottom: "a", right: "gpu_driver_version", backgroundColor: importDefault(dependencyMap[9]).colors.BACKGROUND_BASE_LOW };
+obj.scrollViewContentContainer = obj1;
 obj.inner = {};
 obj.text = {};
-obj.footer = {};
+obj.footer = { "Bool(false)": "BRAND_230", "Bool(false)": 1, "Bool(false)": "hours", "Bool(false)": "scalar" };
 obj.footerLandscape = {};
 obj.footerPortrait = {};
 let closure_16 = obj.createStyles(obj);
-const obj1 = { backgroundColor: importDefault(dependencyMap[9]).colors.BACKGROUND_BASE_LOW };
+const tmp4 = arg1(dependencyMap[7]);
 const result = arg1(dependencyMap[23]).fileFinishedImporting("modules/oauth2/native/SuccessResult.tsx");
 
 export default function SuccessResultModal(guild) {

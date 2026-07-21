@@ -1,10 +1,10 @@
-// Module ID: 9149
-// Function ID: 71748
+// Module ID: 9153
+// Function ID: 71760
 // Name: MemberVerificationAlertRejected
 // Dependencies: []
 // Exports: default
 
-// Module 9149 (MemberVerificationAlertRejected)
+// Module 9153 (MemberVerificationAlertRejected)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 let closure_5 = importDefault(dependencyMap[2]);
@@ -21,7 +21,7 @@ export default function MemberVerificationAlertRejected(guildId) {
   const arg1 = guildId;
   const onClose = guildId.onClose;
   const importDefault = onClose;
-  let obj = {};
+  let obj = { "Bool(true)": "spring", "Bool(true)": "linear", "Bool(true)": "easeInEaseOut" };
   Object.setPrototypeOf(null);
   const merged = Object.assign(guildId, obj);
   let dependencyMap;

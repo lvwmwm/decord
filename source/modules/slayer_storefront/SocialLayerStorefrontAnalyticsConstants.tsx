@@ -1,9 +1,9 @@
-// Module ID: 9723
-// Function ID: 75673
+// Module ID: 9728
+// Function ID: 75690
 // Name: SlayerShopCardCTAType
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 9723 (SlayerShopCardCTAType)
+// Module 9728 (SlayerShopCardCTAType)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("modules/slayer_storefront/SocialLayerStorefrontAnalyticsConstants.tsx");
 

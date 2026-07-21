@@ -1,10 +1,10 @@
-// Module ID: 8962
-// Function ID: 70699
+// Module ID: 8966
+// Function ID: 70711
 // Name: PlayStationLinkLanding
 // Dependencies: []
 // Exports: PlayStationLinkLanding
 
-// Module 8962 (PlayStationLinkLanding)
+// Module 8966 (PlayStationLinkLanding)
 let closure_3 = importAll(dependencyMap[0]);
 let closure_4 = arg1(dependencyMap[1]).PlayStationLinkModalScenes;
 const HelpdeskArticles = arg1(dependencyMap[2]).HelpdeskArticles;

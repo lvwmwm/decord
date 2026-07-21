@@ -1,10 +1,10 @@
-// Module ID: 10987
-// Function ID: 85505
+// Module ID: 10992
+// Function ID: 85526
 // Name: BanConfirmModal
-// Dependencies: [297205760, 282853376, 720633856, 441581568, 250871808, 361431040, 131072]
+// Dependencies: [297467904, 283115520, 720961536, 441974784, 250871808, 361562112, 131072]
 // Exports: default
 
-// Module 10987 (BanConfirmModal)
+// Module 10992 (BanConfirmModal)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[6]).fileFinishedImporting("modules/guild_moderation/native/BanConfirmModal.tsx");

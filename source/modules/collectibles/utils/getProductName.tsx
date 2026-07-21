@@ -1,10 +1,10 @@
-// Module ID: 8719
-// Function ID: 69012
+// Module ID: 8723
+// Function ID: 69024
 // Name: getProductName
 // Dependencies: []
 // Exports: getProductNameAndTypeLabel, getPurchasedProductName
 
-// Module 8719 (getProductName)
+// Module 8723 (getProductName)
 function getProductName(product) {
   if (null == product) {
     return "";

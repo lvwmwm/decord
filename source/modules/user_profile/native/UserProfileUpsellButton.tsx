@@ -1,10 +1,10 @@
-// Module ID: 13436
-// Function ID: 102070
+// Module ID: 13443
+// Function ID: 102093
 // Name: UserProfileUpsellButton
 // Dependencies: []
 // Exports: default
 
-// Module 13436 (UserProfileUpsellButton)
+// Module 13443 (UserProfileUpsellButton)
 let closure_3 = importAll(dependencyMap[0]);
 ({ AnalyticsPages: closure_4, UpsellTypes: closure_5, AnalyticsSections: closure_6, AnalyticEvents: closure_7 } = arg1(dependencyMap[1]));
 const PremiumUpsellTypes = arg1(dependencyMap[2]).PremiumUpsellTypes;

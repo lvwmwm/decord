@@ -1,12 +1,12 @@
-// Module ID: 10765
-// Function ID: 83655
+// Module ID: 10771
+// Function ID: 83678
 // Dependencies: []
 
-// Module 10765
+// Module 10771
 const View = arg1(dependencyMap[1]).View;
 const jsx = arg1(dependencyMap[2]).jsx;
 const importAllResult = importAll(dependencyMap[0]);
-let closure_5 = arg1(dependencyMap[3]).createStyles({ container: { -9223372036854775808: true, filter: true }, containerLandscape: { justifyContent: "center" } });
+let closure_5 = arg1(dependencyMap[3]).createStyles({ container: {}, containerLandscape: { justifyContent: "center" } });
 const obj2 = arg1(dependencyMap[3]);
 const memoResult = importAllResult.memo((row) => {
   let participants;

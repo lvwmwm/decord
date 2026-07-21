@@ -1,10 +1,10 @@
-// Module ID: 11829
-// Function ID: 91705
+// Module ID: 11836
+// Function ID: 91728
 // Name: useGameProfileShopCollection
 // Dependencies: []
 // Exports: useGameProfileShopCollection
 
-// Module 11829 (useGameProfileShopCollection)
+// Module 11836 (useGameProfileShopCollection)
 const useEffect = require(dependencyMap[0]).useEffect;
 let closure_3 = importDefault(dependencyMap[1]);
 const _module = require(dependencyMap[4]);

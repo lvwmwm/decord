@@ -5,9 +5,9 @@
 // Exports: default
 
 // Module 413 (returnsFalse)
-let closure_3 = ["ellipsizeMode"];
-let closure_4 = [43768320, 574775552, 2097152485, 1157628388, 314195, 209665, 170773, 110784];
-let closure_5 = ["<string:53674240>", "<string:43717888>"];
+let closure_3 = [null];
+let closure_4 = [true, true, true, true, true, true, true, true];
+let closure_5 = [];
 let closure_6 = importDefault(dependencyMap[0]);
 let closure_7 = importDefault(dependencyMap[1]);
 importAll(dependencyMap[2]);

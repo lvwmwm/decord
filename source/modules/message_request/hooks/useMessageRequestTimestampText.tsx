@@ -1,10 +1,10 @@
-// Module ID: 15426
-// Function ID: 117737
+// Module ID: 15433
+// Function ID: 117761
 // Name: getMessageTimestampForChannel
 // Dependencies: []
 // Exports: useMessageRequestRelativeTimestampText, useMessageRequestTimestampText
 
-// Module 15426 (getMessageTimestampForChannel)
+// Module 15433 (getMessageTimestampForChannel)
 function getMessageTimestampForChannel(loaded) {
   let lastMessageId;
   let message;

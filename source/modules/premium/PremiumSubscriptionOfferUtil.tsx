@@ -1,10 +1,10 @@
-// Module ID: 7415
-// Function ID: 59597
+// Module ID: 7419
+// Function ID: 59608
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 // Exports: renewalInvoiceChurnDiscountInfo, useActiveDiscountInfo, useFetchChurnUserDiscountOffer, useIsInPremiumOfferExperience, useIsNUXEligible, useShouldFetchChurnOffer
 
-// Module 7415 (_createForOfIteratorHelperLoose)
+// Module 7419 (_createForOfIteratorHelperLoose)
 function _createForOfIteratorHelperLoose(@@iterator) {
   let arg1 = Symbol_iterator;
   @@iterator = "undefined" !== typeof Symbol;
@@ -152,35 +152,35 @@ export const useActiveDiscountInfo = function useActiveDiscountInfo() {
         if (closure_14 !== active_discount_id) {
           if (closure_15 !== active_discount_id) {
             if (closure_13 === active_discount_id) {
-              obj = { collapsable: false, style: false, discountId: active_discount_id };
+              obj = { "Bool(true)": "absolute", "Bool(true)": -4, discountId: active_discount_id };
               return obj;
             } else if (closure_6 === active_discount_id) {
               obj = { discountId: active_discount_id };
               return obj;
             } else if (closure_7 === active_discount_id) {
-              const obj1 = { collapsable: null, style: null, discountId: active_discount_id };
+              const obj1 = { "Bool(true)": "r", "Bool(true)": 300.5, discountId: active_discount_id };
               return obj1;
             } else if (closure_8 === active_discount_id) {
-              const obj2 = { collapsable: null, style: "\u{1F595}", discountId: active_discount_id };
+              const obj2 = { "Bool(true)": null, "Bool(true)": "\u{1F595}", discountId: active_discount_id };
               return obj2;
             } else if (closure_9 === active_discount_id) {
-              const obj3 = { collapsable: "<string:11497792>", style: "<string:1107361792>", discountId: active_discount_id };
+              const obj3 = { "Bool(true)": "<string:11497792>", "Bool(true)": "<string:1107361792>", discountId: active_discount_id };
               return obj3;
             } else if (closure_16 === active_discount_id) {
-              const obj4 = { collapsable: false, style: false, discountId: active_discount_id };
+              const obj4 = { "Bool(true)": "absolute", "Bool(true)": -4, discountId: active_discount_id };
               return obj4;
             } else if (closure_17 === active_discount_id) {
-              const obj5 = { collapsable: true, style: true, discountId: active_discount_id };
+              const obj5 = { discountId: active_discount_id };
               return obj5;
             }
           }
         }
       }
-      const obj6 = { collapsable: true, style: true, discountId: active_discount_id };
+      const obj6 = { discountId: active_discount_id };
       return obj6;
     }
   }
-  const obj7 = { collapsable: -0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011364680385255393, style: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000015865757, discountId: active_discount_id };
+  const obj7 = { discountId: active_discount_id };
   return obj7;
 };
 export const useFetchChurnUserDiscountOffer = function useFetchChurnUserDiscountOffer(arg0) {

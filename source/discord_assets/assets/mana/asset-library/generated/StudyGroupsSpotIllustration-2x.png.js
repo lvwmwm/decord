@@ -1,9 +1,9 @@
-// Module ID: 6572
-// Function ID: 50732
+// Module ID: 6574
+// Function ID: 50775
 // Name: metadata
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 6572 (metadata)
+// Module 6574 (metadata)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/StudyGroupsSpotIllustration-2x.png.js");
 

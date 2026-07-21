@@ -1,9 +1,9 @@
-// Module ID: 8850
-// Function ID: 69841
+// Module ID: 8854
+// Function ID: 69853
 // Name: VOICE_PANEL_SETTINGS_KEY
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 8850 (VOICE_PANEL_SETTINGS_KEY)
+// Module 8854 (VOICE_PANEL_SETTINGS_KEY)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("modules/voice_panel/native/header/VoicePanelHeaderConstants.tsx");
 

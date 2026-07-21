@@ -1,10 +1,10 @@
-// Module ID: 12010
-// Function ID: 92825
+// Module ID: 12017
+// Function ID: 92848
 // Name: UserProfilePrivateBanner
 // Dependencies: []
 // Exports: default
 
-// Module 12010 (UserProfilePrivateBanner)
+// Module 12017 (UserProfilePrivateBanner)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 ({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[3]));

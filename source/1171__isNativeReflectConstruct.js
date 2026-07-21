@@ -84,8 +84,8 @@ export const FeedbackWidgetProvider = (Component) => {
                 });
                 const timingResult = closure_8.timing(tmp2Result.state.panY, obj);
               } else {
-                closure_8.spring(tmp2Result.state.panY, {}).start();
-                const springResult = closure_8.spring(tmp2Result.state.panY, {});
+                closure_8.spring(tmp2Result.state.panY, { Text: "isArray", h: "isArray" }).start();
+                const springResult = closure_8.spring(tmp2Result.state.panY, { Text: "isArray", h: "isArray" });
               }
             }
       };
@@ -203,7 +203,7 @@ export const FeedbackWidgetProvider = (Component) => {
       let obj = FeedbackWidgetProvider(closure_1[7]);
       if (obj.isModalSupported()) {
         ({ isButtonVisible, isScreenshotButtonVisible, isVisible, backgroundOpacity } = self.state);
-        obj = { inputRange: [null, null], outputRange: [131138.78381538394, 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000008380970149088963] };
+        obj = { inputRange: ["Text", "lc"], outputRange: ["discord_protos.discord_users.v1.VideoFilterBackgroundBlur", "discord_protos.discord_users.v1.VoiceAndVideoSettings"] };
         const theme = tmp(tmp2[11]).getTheme();
         const Fragment = React.Fragment;
         const children = self.props.children;
@@ -226,7 +226,7 @@ export const FeedbackWidgetProvider = (Component) => {
           const obj1 = { backgroundColor: interpolateResult };
           items[1] = obj1;
           obj.style = items;
-          const obj2 = { visible: isVisible, onRequestClose: self._handleClose };
+          const obj2 = { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, visible: isVisible, onRequestClose: self._handleClose };
           obj3 = {};
           ({ createElement, createElement: createElement2 } = React);
           obj3.style = FeedbackWidgetProvider(closure_1[15]).topSpacer;
@@ -240,7 +240,7 @@ export const FeedbackWidgetProvider = (Component) => {
           obj5.transform = items2;
           items1[1] = obj5;
           obj4.style = items1;
-          const obj7 = { accessibilityRole: "uppercase", name: 0.5, "Bool(false)": "M11 4v1h1V4h-1ZM12 9V8h-1V6h-1v1H9v1H6V7H5v2H3v2h1v2h1v1h6v-1h1v-2h1V9h-1Z", onScroll: self._handleScroll };
+          const obj7 = { start: "NOT_RESPONDER", category: "RESPONDER_INACTIVE_PRESS_IN", flexDirection: "NOT_RESPONDER", onScroll: self._handleScroll };
           const merged = Object.assign(obj4, self._panResponder.panHandlers);
           ({ createElement: createElement3, createElement: createElement4 } = React);
           const _Object4 = Object;

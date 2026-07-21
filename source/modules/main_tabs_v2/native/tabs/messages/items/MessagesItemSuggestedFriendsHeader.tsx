@@ -1,9 +1,9 @@
-// Module ID: 14785
-// Function ID: 111433
+// Module ID: 14792
+// Function ID: 111457
 // Name: sum
 // Dependencies: []
 
-// Module 14785 (sum)
+// Module 14792 (sum)
 const importAllResult = importAll(dependencyMap[0]);
 const tmp2 = arg1(dependencyMap[1]);
 const View = tmp2.View;
@@ -46,7 +46,7 @@ const memoResult = importAllResult.memo(function MessagesItemSuggestedFriendsHea
   let tmp7 = null;
   if (tmp3) {
     obj = {};
-    const obj1 = { height: "minResolutionWidth", flexDirection: "minResolutionWidth", paddingRight: "minResolutionWidth", paddingLeft: "animatedValue", alignItems: "onSwipeableLeftOpen", componentStyles: tmp4 };
+    const obj1 = { componentStyles: tmp4 };
     const items1 = [callback(importDefault(dependencyMap[8]), obj1), ];
     const obj2 = { style: tmp.stickyOverlay };
     items1[1] = callback(View, obj2);
@@ -54,7 +54,7 @@ const memoResult = importAllResult.memo(function MessagesItemSuggestedFriendsHea
     tmp7 = callback2(closure_6, obj);
   }
   const items2 = [tmp7, ];
-  const obj3 = { display: "isArray", flexDirection: "NOTIFICATION_SETTINGS_MODAL_OPEN", alignItems: "isArray", padding: "isArrayBuffer", marginTop: "18d0a2a6cf6cc6fa0358c3bbfd2bce6e", marginLeft: "wumpus-mario", style: tmp.headerText };
+  const obj3 = { alignItems: "isArray", justifyContent: "CONTENT_INVENTORY_TOGGLE_FEED_HIDDEN", display: "isArray", flexDirection: "isArrayBuffer", alignItems: "18d0a2a6cf6cc6fa0358c3bbfd2bce6e", padding: "wumpus-mario", style: tmp.headerText };
   const intl = arg1(dependencyMap[9]).intl;
   obj3.children = intl.string(arg1(dependencyMap[9]).t.1uAmCw);
   items2[1] = callback(arg1(dependencyMap[3]).Text, obj3);

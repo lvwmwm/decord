@@ -1,10 +1,10 @@
-// Module ID: 9226
-// Function ID: 72158
+// Module ID: 9230
+// Function ID: 72170
 // Name: AddPhone
 // Dependencies: []
 // Exports: default
 
-// Module 9226 (AddPhone)
+// Module 9230 (AddPhone)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 let closure_5 = importAll(dependencyMap[2]);
@@ -20,7 +20,7 @@ let obj = arg1(dependencyMap[10]);
 obj = {};
 obj = { flex: 1, backgroundColor: importDefault(dependencyMap[11]).colors.BACKGROUND_BASE_LOW };
 obj.background = obj;
-obj.container = { MEMBERS_WITHOUT_ROLES: "Group 11", KvStorage: 2 };
+obj.container = { <string:80552448>: "Group 11", <string:80506624>: 2 };
 obj.title = { textAlign: "center" };
 obj.input = { marginTop: 24 };
 const tmp3 = arg1(dependencyMap[9]);
@@ -123,8 +123,9 @@ export default function AddPhone(reason) {
       const tmp = closure_9;
     }
   }, items3);
-  obj = { style: items4 };
+  obj = { "Bool(true)": true, "Bool(true)": true, "Bool(true)": true };
   const items4 = [tmp.background, reason.style];
+  obj.style = items4;
   obj = { style: tmp.container };
   if (null != header) {
     const items5 = [header, , , ];
@@ -168,7 +169,7 @@ export default function AddPhone(reason) {
       let tmp45 = null;
       if (tmp6) {
         const obj4 = { style: tmp.button };
-        const obj5 = { <string:1522289750>: "r", <string:570601313>: "isArray" };
+        const obj5 = { 9223372036854775807: null, -9223372036854775808: null };
         const intl6 = arg1(dependencyMap[17]).intl;
         obj5.text = intl6.string(arg1(dependencyMap[17]).t.kYvzoQ);
         obj5.onPress = function onPress() {
@@ -206,7 +207,7 @@ export default function AddPhone(reason) {
     stringResult = intl4.string(arg1(dependencyMap[17]).t.64bX0M);
     const tmp30 = _handleSubmit;
   } else {
-    const obj6 = { 0: 24, 9223372036854775807: 24, 0: null, -9223372036854775808: "aa9c26c29990ba7a6584e51ab5c56efa", style: tmp.title };
+    const obj6 = { 1501064855: 24, -1267889981: 24, -1145697943: null, -1266241916: "aa9c26c29990ba7a6584e51ab5c56efa", style: tmp.title };
     if (null != phone) {
       if (!result) {
         const intl = arg1(dependencyMap[17]).intl;

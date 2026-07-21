@@ -1,16 +1,17 @@
 // Module ID: 3583
 // Function ID: 27750
 // Name: lastDayOfQuarter
-// Dependencies: []
+// Dependencies: [3366, 3370]
 // Exports: default
 
 // Module 3583 (lastDayOfQuarter)
-let closure_0 = _interopRequireDefault(require(dependencyMap[0]));
-let closure_1 = _interopRequireDefault(require(dependencyMap[1]));
+import startOfWeek from "startOfWeek";
+import getTimezoneOffsetInMilliseconds from "getTimezoneOffsetInMilliseconds";
+
 
 export default function lastDayOfQuarter(defaultResult1) {
-  closure_1.default(1, arguments);
-  defaultResult1 = closure_0.default(defaultResult1);
+  getTimezoneOffsetInMilliseconds.default(1, arguments);
+  defaultResult1 = startOfWeek.default(defaultResult1);
   const month = defaultResult1.getMonth();
   defaultResult1.setMonth(month - month % 3 + 3, 0);
   defaultResult1.setHours(0, 0, 0, 0);

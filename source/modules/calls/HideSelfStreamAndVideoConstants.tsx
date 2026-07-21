@@ -1,9 +1,9 @@
-// Module ID: 15745
-// Function ID: 120344
+// Module ID: 15752
+// Function ID: 120368
 // Name: SelfStreamAndVideoAlertType
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 15745 (SelfStreamAndVideoAlertType)
+// Module 15752 (SelfStreamAndVideoAlertType)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("modules/calls/HideSelfStreamAndVideoConstants.tsx");
 

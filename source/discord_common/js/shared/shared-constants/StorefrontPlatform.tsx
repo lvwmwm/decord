@@ -1,9 +1,9 @@
-// Module ID: 9732
-// Function ID: 75716
+// Module ID: 9737
+// Function ID: 75733
 // Name: StorefrontPlatform
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 9732 (StorefrontPlatform)
+// Module 9737 (StorefrontPlatform)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_common/js/shared/shared-constants/StorefrontPlatform.tsx");
 

@@ -1,10 +1,10 @@
-// Module ID: 4533
-// Function ID: 39745
+// Module ID: 4537
+// Function ID: 39793
 // Name: Stack
 // Dependencies: []
 // Exports: Stack
 
-// Module 4533 (Stack)
+// Module 4537 (Stack)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 const jsx = arg1(dependencyMap[2]).jsx;

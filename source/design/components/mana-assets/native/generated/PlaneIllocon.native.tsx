@@ -1,10 +1,10 @@
-// Module ID: 6401
-// Function ID: 50475
+// Module ID: 6403
+// Function ID: 50518
 // Name: PlaneIllocon
 // Dependencies: []
 // Exports: PlaneIllocon
 
-// Module 6401 (PlaneIllocon)
+// Module 6403 (PlaneIllocon)
 const jsx = require(dependencyMap[0]).jsx;
 const _module = require(dependencyMap[3]);
 const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/PlaneIllocon.native.tsx");

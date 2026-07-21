@@ -172,7 +172,7 @@ const tmp2 = () => {
       key: "parseHexString",
       value(str) {
         if (null != str.match(closure_3)) {
-          const items = ["JPEGInterchangeFormatLength", "handleResolveRaid"];
+          const items = [];
           if (!items.includes(str.length)) {
             const replaced = str.replace("#", "");
             let str3 = replaced;

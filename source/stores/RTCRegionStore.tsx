@@ -1,9 +1,9 @@
-// Module ID: 4215
-// Function ID: 36768
+// Module ID: 4219
+// Function ID: 36816
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
-// Module 4215 (_isNativeReflectConstruct)
+// Module 4219 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -18,7 +18,7 @@ let closure_3 = importDefault(dependencyMap[1]);
 let closure_4 = importDefault(dependencyMap[2]);
 let closure_5 = importDefault(dependencyMap[3]);
 let closure_6 = importDefault(dependencyMap[4]);
-let obj = { <string:1013988203>: "Normal", <string:2865521520>: true, <string:176948822>: "AbortSignal" };
+let obj = { "Null": null, "Null": "\u{1F9BB}\u{1F3FF}", "Null": true };
 const HOUR = importDefault(dependencyMap[5]).Millis.HOUR;
 let tmp2 = (DeviceSettingsStore) => {
   class RTCRegionStore {

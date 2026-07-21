@@ -1,10 +1,10 @@
-// Module ID: 9535
-// Function ID: 74292
+// Module ID: 9540
+// Function ID: 74309
 // Name: useGetThreadDraftSettings
 // Dependencies: []
 // Exports: default, useHasThreadDraft
 
-// Module 9535 (useGetThreadDraftSettings)
+// Module 9540 (useGetThreadDraftSettings)
 let closure_3 = importDefault(dependencyMap[0]);
 const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/threads/useGetThreadDraftSettings.tsx");
 

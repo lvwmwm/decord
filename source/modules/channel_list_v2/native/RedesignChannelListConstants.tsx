@@ -1,10 +1,10 @@
-// Module ID: 10241
-// Function ID: 79189
+// Module ID: 10247
+// Function ID: 79208
 // Name: hairlineWidth
 // Dependencies: []
 // Exports: getScaledCategoryRowHeight, getScaledChannelRowHeight, getScaledChannelSubtitleHeight, getScaledSearchBarHeight
 
-// Module 10241 (hairlineWidth)
+// Module 10247 (hairlineWidth)
 const _module = require(dependencyMap[1]);
 let num = 20;
 if (_module.isIOS()) {

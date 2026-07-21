@@ -1,10 +1,10 @@
-// Module ID: 4650
-// Function ID: 40268
+// Module ID: 4652
+// Function ID: 40309
 // Name: VoiceLockIcon
 // Dependencies: []
 // Exports: VoiceLockIcon
 
-// Module 4650 (VoiceLockIcon)
+// Module 4652 (VoiceLockIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/VoiceLockIcon.tsx");

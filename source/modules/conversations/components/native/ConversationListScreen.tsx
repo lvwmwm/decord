@@ -1,10 +1,10 @@
-// Module ID: 9277
-// Function ID: 72486
+// Module ID: 9281
+// Function ID: 72498
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 // Exports: default
 
-// Module 9277 (_createForOfIteratorHelperLoose)
+// Module 9281 (_createForOfIteratorHelperLoose)
 function _createForOfIteratorHelperLoose(@@iterator) {
   let arg1 = Symbol_iterator;
   @@iterator = "undefined" !== typeof Symbol;
@@ -99,7 +99,7 @@ let closure_8 = importDefault(dependencyMap[4]);
 const tmp2 = arg1(dependencyMap[3]);
 ({ MAX_CONVERSATIONS_PER_CHANNEL: closure_9, MOBILE_FETCH_LIMIT: closure_10, MOBILE_PREVIEW_MESSAGE_COUNT: closure_11 } = arg1(dependencyMap[5]));
 const jsx = arg1(dependencyMap[6]).jsx;
-let closure_13 = { onPressEmoji: 7, onLongPressEmoji: "days", height: "sekund\u0117_sekund\u017Ei\u0173_sekundes" };
+let closure_13 = { status: 377946113, accessibilityRole: -1824849919, props: -1513816063 };
 let obj1 = arg1(dependencyMap[7]);
 let obj = {};
 obj = { flex: 1, backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_BASE_LOW };

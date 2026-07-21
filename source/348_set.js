@@ -35,7 +35,7 @@ if (!result1) {
   const importAllResult2 = importAll(dependencyMap[2]);
 }
 let closure_18 = function createNativeOperations() {
-  const items = [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false];
+  const items = [1960698098, 1390689936, 1158565112, 198756, "Array", "configureNext", "Array", "REDESIGN_BUTTON_PREMIUM_PRIMARY_PRESSED_BACKGROUND", "r", "MOBILE_FLOATING_ACCESSORY_BORDER", "r", "[object Int8Array]", "committed", "RTCRtpSender", "AnimatedAvatarsAbstractUI", "getDescriptiveInviteError", "serverPricedPreviewRef", "getAppIntentScheme", "supportsText", "accessibilityLiveRegion", "EMBED_MOBILE"];
   const importDefault = items;
   const obj = {};
   const importAll = obj;

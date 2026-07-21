@@ -1,10 +1,10 @@
-// Module ID: 7754
-// Function ID: 61582
+// Module ID: 7758
+// Function ID: 61594
 // Name: importDefaultResult1
 // Dependencies: []
 // Exports: parseEmbedDescriptionMarkup, parseEmbedTitleMarkup, parseEmbedTitleMarkupWithoutLinks, parseMessageMarkup
 
-// Module 7754 (importDefaultResult1)
+// Module 7758 (importDefaultResult1)
 const MessageTypes = require(dependencyMap[0]).MessageTypes;
 let obj = { maxAge: 15 * importDefault(dependencyMap[1]).Millis.MINUTE };
 let importDefaultResult = importDefault(dependencyMap[2]);
@@ -73,7 +73,7 @@ export const parseEmbedDescriptionMarkup = function parseEmbedDescriptionMarkup(
       // continue
     }
   }
-  const obj = { borderRadius: null, accessible: null, getCurrentUser: null, channelId };
+  const obj = { disabled: null, includeRender: null, includeUpdates: null, channelId };
   let tmp7 = !isField;
   if (tmp7) {
     tmp7 = showListsAndHeaders;

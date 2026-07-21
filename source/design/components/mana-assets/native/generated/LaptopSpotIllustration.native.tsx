@@ -1,10 +1,10 @@
-// Module ID: 6269
-// Function ID: 50277
+// Module ID: 6271
+// Function ID: 50320
 // Name: LaptopSpotIllustration
 // Dependencies: []
 // Exports: LaptopSpotIllustration
 
-// Module 6269 (LaptopSpotIllustration)
+// Module 6271 (LaptopSpotIllustration)
 const jsx = require(dependencyMap[0]).jsx;
 const _module = require(dependencyMap[3]);
 const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/LaptopSpotIllustration.native.tsx");

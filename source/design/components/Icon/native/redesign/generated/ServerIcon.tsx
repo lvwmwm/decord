@@ -1,10 +1,10 @@
-// Module ID: 8997
-// Function ID: 70833
+// Module ID: 9001
+// Function ID: 70845
 // Name: ServerIcon
 // Dependencies: []
 // Exports: ServerIcon
 
-// Module 8997 (ServerIcon)
+// Module 9001 (ServerIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/ServerIcon.tsx");

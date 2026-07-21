@@ -1,21 +1,21 @@
-// Module ID: 16249
-// Function ID: 125549
+// Module ID: 16256
+// Function ID: 125580
 // Name: HowItWorksCard
 // Dependencies: []
 // Exports: default
 
-// Module 16249 (HowItWorksCard)
+// Module 16256 (HowItWorksCard)
 function HowItWorksCard(iconSource) {
   let cardNumber;
   let description;
   ({ cardNumber, description } = iconSource);
   const tmp = callback3();
   let obj = { style: tmp.card, accessible: true, accessibilityLabel: "" + cardNumber + " - " + description };
-  obj = { Promise: 369098752, marginTop: 16777216, flags: 882, style: tmp.cardNumber, children: cardNumber };
+  obj = { "Null": "r", "Null": "isArray", "Null": "set", style: tmp.cardNumber, children: cardNumber };
   const items = [callback(arg1(dependencyMap[5]).Text, obj), , ];
   obj = { style: tmp.container, children: callback(importDefault(dependencyMap[6]), obj1) };
   items[1] = callback(View, obj);
-  const obj2 = { Promise: true, marginTop: true, flags: true, style: tmp.howItWorksCardDescription, children: description };
+  const obj2 = { "Null": true, "Null": true, "Null": true, style: tmp.howItWorksCardDescription, children: description };
   items[2] = callback(arg1(dependencyMap[5]).Text, obj2);
   obj.children = items;
   return callback2(View, obj);
@@ -24,12 +24,12 @@ importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 ({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[2]));
 let obj = arg1(dependencyMap[3]);
-obj = { container: { flex: 1 }, horizontalContainer: { "Bool(false)": "<string:1783693314>", "Bool(false)": "<string:618889>" } };
-obj = { webAuthnRegister: null, UNKNOWN_FUNCTION: "key", marginLeft: "language", lady_beetle: "labeled", SECURE_FRAMES_TRANSIENT_KEY_DELETE: "level", EXPERIMENT_CONFIG: "live", backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_SURFACE_HIGH, borderRadius: importDefault(dependencyMap[4]).radii.sm };
+obj = { container: { flex: 1 }, horizontalContainer: {} };
+obj = { "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_SURFACE_HIGH, borderRadius: importDefault(dependencyMap[4]).radii.sm };
 obj.card = obj;
 const tmp3 = arg1(dependencyMap[2]);
 obj.cardNumber = { backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_BRAND };
-const obj2 = { "Null": 1685934336, "Null": true, "Null": "/assets/images/native", "Null": 24, "Null": 24, "Null": null, "Null": "f6824e7bd3f8a83813ab333cc29423f8", "Null": "yellow-alert", backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_MOD_NORMAL };
+const obj2 = { iu: -1210756864, ja: true, ka: "/assets/images/native", kk: 24, kl: 24, km: null, kn: "f6824e7bd3f8a83813ab333cc29423f8", ko: "yellow-alert", backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_MOD_NORMAL };
 obj.howItWorksCardDescription = obj2;
 obj.howItWorksCardIcon = { marginVertical: 24 };
 let closure_6 = obj.createStyles(obj);

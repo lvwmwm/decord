@@ -1,10 +1,10 @@
-// Module ID: 11899
-// Function ID: 92139
+// Module ID: 11906
+// Function ID: 92162
 // Name: getApplicationImage
 // Dependencies: []
 // Exports: useImageForActivity, useImageForContentEntry
 
-// Module 11899 (getApplicationImage)
+// Module 11906 (getApplicationImage)
 function getApplicationImage(getIconURL) {
   let iconURL;
   if (null != getIconURL) {

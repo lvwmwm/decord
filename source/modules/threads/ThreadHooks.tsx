@@ -1,10 +1,10 @@
-// Module ID: 5644
-// Function ID: 48211
+// Module ID: 5646
+// Function ID: 48253
 // Name: useCanStartPublicThread
 // Dependencies: []
 // Exports: computeCanStartPrivateThread, computeCanStartPublicThread, computeIsReadOnlyThread, getIsActiveChannelOrUnarchivableThread, isNonModInLockedThread, useCanJoinThreadVoice, useCanManageThread, useCanRemoveThreadMember, useCanStartThread, useCanViewThreadForMessage, useHasActiveThreads, useIsNonModInLockedThread
 
-// Module 5644 (useCanStartPublicThread)
+// Module 5646 (useCanStartPublicThread)
 function useCanStartPublicThread(parentChannel, hasFlag) {
   hasFlag = parentChannel;
   const items = [closure_8];
@@ -177,10 +177,8 @@ let closure_8 = importDefault(dependencyMap[5]);
 let closure_9 = importDefault(dependencyMap[6]);
 const importDefaultResult = importDefault(dependencyMap[1]);
 ({ Permissions: closure_10, MessageFlags: closure_11, ChannelTypes: closure_12 } = arg1(dependencyMap[7]));
-const obj = { "Null": null, "Null": null, "Null": null, defaultConfig: { enabled: false } };
 const items = [{ config: { enabled: true } }];
-obj.treatments = items;
-const importDefaultResultResult = importDefaultResult(obj);
+const importDefaultResultResult = importDefaultResult({ defaultConfig: { enabled: false }, treatments: items });
 const tmp3 = arg1(dependencyMap[7]);
 const result = arg1(dependencyMap[16]).fileFinishedImporting("modules/threads/ThreadHooks.tsx");
 

@@ -1,15 +1,15 @@
-// Module ID: 13457
-// Function ID: 102191
+// Module ID: 13464
+// Function ID: 102214
 // Name: DisplayNameStylesColorSwatch
 // Dependencies: []
 // Exports: default
 
-// Module 13457 (DisplayNameStylesColorSwatch)
+// Module 13464 (DisplayNameStylesColorSwatch)
 const View = require(dependencyMap[0]).View;
 const jsx = require(dependencyMap[1]).jsx;
 const _module = require(dependencyMap[2]);
 let obj = {};
-obj = { aze: false, azj: false, borderRadius: importDefault(dependencyMap[3]).radii.xs };
+obj = { bhk: "<string:1027735553>", bic: "<string:4143972873>", borderRadius: importDefault(dependencyMap[3]).radii.xs };
 obj.colorSwatch = obj;
 obj.gummySwatch = {};
 let closure_5 = _module.createStyles(obj);
@@ -31,7 +31,7 @@ export default function DisplayNameStylesColorSwatch(colors) {
     }
   }
   if (colors.length >= 2) {
-    const obj1 = { colors: colors.map((color) => callback(closure_2[7]).int2hex(color)), start: { "Null": false, "Null": true }, end: { "Null": null, "Null": null }, style: tmp.colorSwatch };
+    const obj1 = { colors: colors.map((color) => callback(closure_2[7]).int2hex(color)), start: { max: -536870861, guildId: -299892737 }, end: {}, style: tmp.colorSwatch };
     return jsx(importDefault(dependencyMap[6]), obj1);
   } else {
     let str = "#000000";

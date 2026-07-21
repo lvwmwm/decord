@@ -1,10 +1,10 @@
-// Module ID: 10856
-// Function ID: 84489
+// Module ID: 10862
+// Function ID: 84512
 // Name: ChatGDMUpsellActionSheet
 // Dependencies: []
 // Exports: default
 
-// Module 10856 (ChatGDMUpsellActionSheet)
+// Module 10862 (ChatGDMUpsellActionSheet)
 let closure_3 = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 ({ jsx: closure_5, jsxs: closure_6 } = arg1(dependencyMap[2]));
@@ -17,8 +17,8 @@ obj.footer = { backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUN
 obj.body = { textAlign: "center" };
 const obj1 = { backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_BASE_LOW, padding: importDefault(dependencyMap[4]).space.PX_16 };
 obj.noticeContainer = { borderRadius: importDefault(dependencyMap[4]).radii.sm, marginVertical: importDefault(dependencyMap[4]).space.PX_16, padding: importDefault(dependencyMap[4]).space.PX_16 };
-obj.innerContainer = { alignItems: 80, flexDirection: 80, justifyContent: 40 };
-obj.secondInnerContainer = { -9223372036854775808: true, filter: true };
+obj.innerContainer = {};
+obj.secondInnerContainer = {};
 obj.text = { flex: 1 };
 obj.titleImage = {};
 const obj2 = { borderRadius: importDefault(dependencyMap[4]).radii.sm, marginVertical: importDefault(dependencyMap[4]).space.PX_16, padding: importDefault(dependencyMap[4]).space.PX_16 };
@@ -67,7 +67,7 @@ export default function ChatGDMUpsellActionSheet(onClick) {
   obj1.children = items2;
   obj.footer = callback2(View, obj1);
   const obj6 = {};
-  const obj7 = { "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, style: tmp.title };
+  const obj7 = { bottom: false, <string:51007960>: false, <string:1650218083>: false, style: tmp.title };
   const intl3 = arg1(dependencyMap[13]).intl;
   obj7.children = intl3.string(arg1(dependencyMap[13]).t.bkqux/);
   const items3 = [callback(arg1(dependencyMap[15]).Text, obj7), , ];

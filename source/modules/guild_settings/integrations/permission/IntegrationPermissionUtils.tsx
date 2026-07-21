@@ -1,10 +1,10 @@
-// Module ID: 6743
-// Function ID: 52491
+// Module ID: 6749
+// Function ID: 52540
 // Name: toPermissionKey
 // Dependencies: []
 // Exports: commandName, commandPermissionChannels, commandPermissionMembersRoles, keyPermissions
 
-// Module 6743 (toPermissionKey)
+// Module 6749 (toPermissionKey)
 function toPermissionKey(value, ROLE) {
   return "" + value + ":" + ROLE;
 }

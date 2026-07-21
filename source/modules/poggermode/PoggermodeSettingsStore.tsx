@@ -1,9 +1,9 @@
-// Module ID: 6910
-// Function ID: 55064
+// Module ID: 6914
+// Function ID: 55074
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
-// Module 6910 (_isNativeReflectConstruct)
+// Module 6914 (_isNativeReflectConstruct)
 let ConfettiLocation;
 let ShakeLocation;
 function _isNativeReflectConstruct() {

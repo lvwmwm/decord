@@ -1,10 +1,10 @@
-// Module ID: 8901
-// Function ID: 70256
+// Module ID: 8905
+// Function ID: 70268
 // Name: SecureFramesVerificationBottomSheet
 // Dependencies: []
 // Exports: default
 
-// Module 8901 (SecureFramesVerificationBottomSheet)
+// Module 8905 (SecureFramesVerificationBottomSheet)
 let closure_3 = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 ({ EPOCH_AUTHENTICATOR_CHUNK_SIZE: closure_5, EPOCH_AUTHENTICATOR_COLUMNS: closure_6, EPOCH_AUTHENTICATOR_LENGTH: closure_7 } = arg1(dependencyMap[2]));
@@ -12,13 +12,13 @@ const tmp2 = arg1(dependencyMap[2]);
 ({ jsx: closure_8, jsxs: closure_9 } = arg1(dependencyMap[3]));
 let obj = arg1(dependencyMap[4]);
 obj = {};
-obj = { accessibilityRole: "337f717407aa04f32bdedf504de7310b", "Bool(false)": "emoji", "Bool(false)": "png", "Bool(false)": true, "Bool(false)": "/assets/modules/premium/native/images/perks", backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_MOD_STRONG };
+obj = { "Bool(true)": "337f717407aa04f32bdedf504de7310b", "Bool(true)": "emoji", "Bool(true)": "png", "Bool(true)": true, "Bool(true)": "/assets/modules/premium/native/images/perks", backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_MOD_STRONG };
 obj.iconContainer = obj;
-obj.icon = {};
+obj.icon = { <string:1632221346>: null, <string:2722977214>: null };
 obj.share = { height: 24 };
 obj.content = { padding: 16 };
 obj.subtitle = { textAlign: "center" };
-obj.footer = { concat: -0.0014069081515246523, now: -0.0001058445630777106 };
+obj.footer = { "Bool(true)": "absolute", "Bool(true)": 0 };
 let closure_10 = obj.createStyles(obj);
 const tmp3 = arg1(dependencyMap[3]);
 const result = arg1(dependencyMap[18]).fileFinishedImporting("modules/rtc/native/SecureFramesVerificationBottomSheet.tsx");

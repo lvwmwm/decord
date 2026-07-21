@@ -1,10 +1,10 @@
-// Module ID: 10606
-// Function ID: 82770
+// Module ID: 10612
+// Function ID: 82793
 // Name: useModeratorOverlayChannelState
 // Dependencies: []
 // Exports: useModeratorOverlayChannelState
 
-// Module 10606 (useModeratorOverlayChannelState)
+// Module 10612 (useModeratorOverlayChannelState)
 const _module = require(dependencyMap[0]);
 let closure_2 = _module.createWithEqualityFn((arg0, arg1) => {
   const require = arg0;

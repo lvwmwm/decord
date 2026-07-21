@@ -1,10 +1,10 @@
-// Module ID: 11724
-// Function ID: 91084
+// Module ID: 11731
+// Function ID: 91107
 // Name: SeeMoreFooter
 // Dependencies: []
 // Exports: default
 
-// Module 11724 (SeeMoreFooter)
+// Module 11731 (SeeMoreFooter)
 function SeeMoreFooter(openInviteSheet) {
   let obj = {};
   obj = { style: callback5().friendIcon, children: callback3(arg1(dependencyMap[16]).GroupIcon, { size: "sm" }) };
@@ -76,14 +76,14 @@ obj.container = obj;
 obj.header = { marginBottom: 8 };
 obj.description = {};
 obj.headerImage = { marginVertical: 16 };
-obj.linkContainer = { y: false, isArray: false };
-const obj1 = { 9223372036854775807: "bbcef4a2b8c5f48f13fd62c2f6250775", 9223372036854775807: "img_group_dm_illustration", 0: "png", 0: true, 0: "/assets/design/components/Icon/native/redesign/generated/images", 9223372036854775807: 24, 9223372036854775807: 24, backgroundColor: importDefault(dependencyMap[13]).colors.BACKGROUND_BASE_LOWEST, borderRadius: importDefault(dependencyMap[13]).radii.xs };
+obj.linkContainer = {};
+const obj1 = { "Null": "headMetaSocial", "Null": "png", "Null": "SERVER_GUIDE_CHANNEL_SELECTED", "Null": "_gameProfileResults", "Bool(false)": "r", "Bool(false)": "MERCH_STORE", "Bool(false)": "isArray", backgroundColor: importDefault(dependencyMap[13]).colors.BACKGROUND_BASE_LOWEST, borderRadius: importDefault(dependencyMap[13]).radii.xs };
 obj.linkButton = obj1;
 const tmp4 = arg1(dependencyMap[10]);
 obj.linkButtonIcon = { tintColor: importDefault(dependencyMap[13]).colors.INTERACTIVE_TEXT_DEFAULT };
 obj.inviteDetail = { marginTop: 8 };
 obj.shareButton = { marginVertical: 16 };
-obj.suggestionsContainer = {};
+obj.suggestionsContainer = { "Bool(false)": 0.00000000000000008415554799014589, "Bool(false)": null, "Bool(false)": null };
 const obj2 = { tintColor: importDefault(dependencyMap[13]).colors.INTERACTIVE_TEXT_DEFAULT };
 obj.friendIcon = { backgroundColor: importDefault(dependencyMap[13]).colors.BACKGROUND_BASE_LOWEST, borderRadius: importDefault(dependencyMap[13]).radii.xxl };
 obj.suggestionRowsContainer = { marginHorizontal: 12 };

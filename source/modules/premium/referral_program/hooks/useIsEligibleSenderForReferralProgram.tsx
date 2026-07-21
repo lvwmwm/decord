@@ -1,10 +1,10 @@
-// Module ID: 7413
-// Function ID: 59590
+// Module ID: 7417
+// Function ID: 59601
 // Name: useIsEligibleSenderForReferralProgram
 // Dependencies: []
 // Exports: useIsEligibleSenderForReferralProgram
 
-// Module 7413 (useIsEligibleSenderForReferralProgram)
+// Module 7417 (useIsEligibleSenderForReferralProgram)
 let closure_2 = importDefault(dependencyMap[0]);
 const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/premium/referral_program/hooks/useIsEligibleSenderForReferralProgram.tsx");
 

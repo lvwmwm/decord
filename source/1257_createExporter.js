@@ -39,7 +39,7 @@ function(arg0) {
   const arg4 = _self;
   if ("function" === typeof globalThis.define) {
     if (globalThis.define.amd) {
-      globalThis.define("tslib", ["<string:962072674>"], (_self) => {
+      globalThis.define("tslib", [], (_self) => {
         _self(createExporter(_self, createExporter(_self)));
       });
     }
@@ -658,7 +658,7 @@ function(arg0) {
                         lib = 0;
                         closure_2 = 0;
                         while (true) {
-                          let items3 = [null, __exception];
+                          let items3 = [1, __exception];
                           let tmp64 = items3;
                           closure_3 = 0;
                           // continue

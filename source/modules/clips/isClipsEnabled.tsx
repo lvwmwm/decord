@@ -1,10 +1,10 @@
-// Module ID: 4180
-// Function ID: 35949
+// Module ID: 4184
+// Function ID: 35997
 // Name: isClipsEnabled
 // Dependencies: []
 // Exports: isDecoupledClipsEnabled, useIsDecoupledClipsEnabled
 
-// Module 4180 (isClipsEnabled)
+// Module 4184 (isClipsEnabled)
 function isClipsEnabled() {
   let clipsEnabled = arg1(dependencyMap[1]).areClipsAvailable();
   if (clipsEnabled) {

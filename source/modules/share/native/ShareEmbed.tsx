@@ -1,22 +1,22 @@
-// Module ID: 12781
-// Function ID: 97964
+// Module ID: 12788
+// Function ID: 97987
 // Name: ShareEmbed
 // Dependencies: []
 // Exports: default
 
-// Module 12781 (ShareEmbed)
+// Module 12788 (ShareEmbed)
 let closure_2 = importAll(dependencyMap[0]);
 ({ Image: closure_3, View: closure_4 } = arg1(dependencyMap[1]));
 const tmp2 = arg1(dependencyMap[1]);
 ({ jsx: closure_5, jsxs: closure_6, Fragment: closure_7 } = arg1(dependencyMap[2]));
 let obj = arg1(dependencyMap[3]);
 obj = {};
-obj = { initialRouteName: "r", children: "chatInputCreateThread", screenListeners: "r", screenOptions: "MAX_TRAITS", flexDirection: "ma", alignItems: "ACCOUNT_PANEL", justifyContent: "KEYBOARD_PRESS", backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_BASE_LOW, borderColor: importDefault(dependencyMap[4]).colors.BORDER_STRONG, borderRadius: importDefault(dependencyMap[4]).radii.sm };
+obj = { shouldReturnInvoiceCache: "r", genContentSubtitle: "createLogEnvelope", EMBED_TYPES_WITH_PARSEABLE_FIELDS: "r", initialRouteName: "_requiresManualStart", flying_disc: "CacheDirPath", handleConnectionChange: "optimal", useProductPurchaseState: "LI", backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_BASE_LOW, borderColor: importDefault(dependencyMap[4]).colors.BORDER_STRONG, borderRadius: importDefault(dependencyMap[4]).radii.sm };
 obj.container = obj;
 obj.containerRevamp = { borderWidth: 0 };
 obj.thumbnail = { width: 80 };
 obj.contentContainer = {};
-obj.authorView = { "Bool(true)": null, "Bool(true)": null, "Bool(true)": "message" };
+obj.authorView = {};
 const tmp3 = arg1(dependencyMap[2]);
 obj.authorThumbnail = { borderRadius: importDefault(dependencyMap[4]).radii.sm };
 obj.loadingSpinner = { flex: 1 };

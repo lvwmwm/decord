@@ -1,10 +1,10 @@
-// Module ID: 14901
-// Function ID: 112255
+// Module ID: 14908
+// Function ID: 112279
 // Name: ProgressBar
 // Dependencies: []
 // Exports: NewMemberActionsProgress
 
-// Module 14901 (ProgressBar)
+// Module 14908 (ProgressBar)
 function ProgressBar(percent) {
   const tmp = callback3();
   let obj = { style: tmp.progressBackground };
@@ -13,7 +13,7 @@ function ProgressBar(percent) {
   obj = { width: "" + percent.percent + "%" };
   items[1] = obj;
   obj.style = items;
-  obj.colors = [];
+  obj.colors = [null, null];
   obj.useAngle = true;
   obj.angle = -90;
   obj.children = callback(importDefault(dependencyMap[10]), obj);
@@ -28,7 +28,7 @@ const StaticChannelRoute = arg1(dependencyMap[5]).StaticChannelRoute;
 const GuildMemberFlags = arg1(dependencyMap[6]).GuildMemberFlags;
 ({ jsx: closure_10, jsxs: closure_11 } = arg1(dependencyMap[7]));
 let obj = arg1(dependencyMap[8]);
-obj = { container: { padding: 16 }, horizontal: { -9223372036854775808: true, filter: true }, spaceBetween: { justifyContent: "space-between" }, spaceBelow: { marginBottom: 8 } };
+obj = { container: { padding: 16 }, horizontal: {}, spaceBetween: { justifyContent: "space-between" }, spaceBelow: { marginBottom: 8 } };
 obj = { borderRadius: importDefault(dependencyMap[9]).radii.round, height: 8, backgroundColor: importDefault(dependencyMap[9]).colors.BACKGROUND_MOD_NORMAL };
 obj.progressBackground = obj;
 const tmp2 = arg1(dependencyMap[7]);
@@ -101,14 +101,14 @@ export const NewMemberActionsProgress = function NewMemberActionsProgress(guildI
         const items5 = [, , ];
         ({ horizontal: arr7[0], spaceBetween: arr7[1], spaceBelow: arr7[2] } = tmp);
         obj.style = items5;
-        obj1 = { INTEGRATION_CREATE: "2026-02-game-server-tab-always-on", ConstraintReasonCode: "user" };
+        obj1 = {};
         const intl = arg1(dependencyMap[16]).intl;
         obj1.children = intl.string(arg1(dependencyMap[16]).t.LhlgY9);
         const items6 = [callback(arg1(dependencyMap[15]).Text, obj1), ];
         obj2 = { style: tmp.horizontal };
-        obj3 = { INTEGRATION_CREATE: "2026-02-game-server-tab-always-on", ConstraintReasonCode: "user", children: memo };
+        obj3 = { children: memo };
         const items7 = [callback(arg1(dependencyMap[15]).Text, obj3), callback(arg1(dependencyMap[15]).Text, {}), , ];
-        const obj4 = { INTEGRATION_CREATE: "2026-02-game-server-tab-always-on", ConstraintReasonCode: "user", children: num };
+        const obj4 = { children: num };
         items7[2] = callback(arg1(dependencyMap[15]).Text, obj4);
         const obj5 = { size: arg1(dependencyMap[17]).Icon.Sizes.REFRESH_SMALL_16, source: importDefault(dependencyMap[18]) };
         items7[3] = callback(arg1(dependencyMap[17]).Icon, obj5);

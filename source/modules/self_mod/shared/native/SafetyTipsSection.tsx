@@ -1,15 +1,15 @@
-// Module ID: 10139
-// Function ID: 78444
+// Module ID: 10145
+// Function ID: 78462
 // Name: SafetyTipsContainer
 // Dependencies: []
 // Exports: default
 
-// Module 10139 (SafetyTipsContainer)
+// Module 10145 (SafetyTipsContainer)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 ({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[2]));
 let obj = arg1(dependencyMap[3]);
-obj = { image: {} };
+obj = { image: { "Bool(false)": null, "Bool(false)": null } };
 obj = { backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_SURFACE_HIGH, borderRadius: importDefault(dependencyMap[4]).radii.lg, overflow: "hidden" };
 obj.tips = obj;
 obj.text = { textAlign: "center" };
@@ -25,7 +25,7 @@ export default function SafetyTipsContainer(children) {
   let obj = { spacing: 16 };
   obj = { style: tmp.image, children: callback(arg1(dependencyMap[6]).SafetyBookletSpotIllustration, {}) };
   const items = [callback(View, obj), , ];
-  obj = { "Bool(false)": -1304358556, "Bool(false)": 1912602892, "Bool(false)": 32 };
+  obj = { alignSelf: "SERVER_GUIDE_CHANNEL_SELECTED", backgroundColor: "preCompressionSize", marginLeft: "Array" };
   if (showHeader) {
     const obj1 = { style: tmp.text, variant: "heading-xl/semibold" };
     const intl = arg1(dependencyMap[8]).intl;

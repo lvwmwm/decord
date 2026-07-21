@@ -1,10 +1,10 @@
-// Module ID: 12301
-// Function ID: 94274
+// Module ID: 12308
+// Function ID: 94297
 // Name: ManagePlanHeader
 // Dependencies: []
 // Exports: default
 
-// Module 12301 (ManagePlanHeader)
+// Module 12308 (ManagePlanHeader)
 function ManagePlanHeader() {
   const tmp = callback7();
   let obj = callback(dependencyMap[20]);
@@ -18,7 +18,7 @@ function ManagePlanHeader() {
     children: callback4(callback(dependencyMap[22]).ArrowLargeLeftIcon, { size: "md" })
   };
   const items = [callback4(callback(dependencyMap[21]).PressableOpacity, obj), , ];
-  const obj1 = { "Bool(true)": "isArray", "Bool(true)": "accessibilityRole" };
+  const obj1 = { useEffect: "isArray", top: "accessibilityRole" };
   const intl = callback(dependencyMap[24]).intl;
   obj1.children = intl.string(callback(dependencyMap[24]).t.1bX7Tx);
   items[1] = callback4(callback(dependencyMap[23]).Text, obj1);
@@ -44,7 +44,7 @@ function SubscriptionAndBillingInfo(subscription) {
   const analyticsLocations = importDefault(dependencyMap[28])().analyticsLocations;
   const importDefault = analyticsLocations;
   let obj = arg1(dependencyMap[29]);
-  obj = { 1113814765: null, -1001086972: null, 2122158533: null, subscriptionId: subscription.id, analyticsLocations, analyticsLocation: importDefault(dependencyMap[30]).PREMIUM_SUBSCRIPTION_DETAILS };
+  obj = { display: null, width: null, flexDirection: null, subscriptionId: subscription.id, analyticsLocations, analyticsLocation: importDefault(dependencyMap[30]).PREMIUM_SUBSCRIPTION_DETAILS };
   const first = callback3(obj.useFetchSubscriptionInvoicePreview(obj), 1)[0];
   let obj2 = arg1(dependencyMap[29]);
   obj = { subscriptionId: subscription.id, preventFetch: subscription.status !== constants2.PAST_DUE };
@@ -116,9 +116,6 @@ function SubscriptionAndBillingInfo(subscription) {
     if ("start_fetching_update" !== first2) {
       if ("fetching_update" !== first2) {
         let obj = {
-          "Bool(false)": 24,
-          "Bool(false)": 24,
-          "Bool(false)": null,
           loadId: tmp14,
           onSuccessCallback(result_count) {
                 closure_31.log("Successfully opened mobile web Nitro Management page");
@@ -202,7 +199,7 @@ function SubscriptionAndBillingInfo(subscription) {
               obj7 = { premiumType: closure_27.TIER_2, hideButton: true, isPremiumGroup, premiumGroupRole };
               items7[1] = callback4(importDefault(dependencyMap[53]), obj7);
               obj8 = { style: tmp2.extraInfoContainer };
-              obj9 = {};
+              obj9 = { 1655478700: "/assets/images/native/premium/illustrations", 72438626: 51, 1446732292: 36 };
               const intl7 = arg1(dependencyMap[24]).intl;
               obj9.children = intl7.string(arg1(dependencyMap[24]).t.YCrcPL);
               const items8 = [callback4(arg1(dependencyMap[23]).Text, obj9), ];
@@ -247,7 +244,7 @@ function SubscriptionAndBillingInfo(subscription) {
             obj14.children = items10;
             const items11 = [planIdFromInvoice(planIdFromInvoice, obj14), ];
             const obj17 = { style: tmp2.extraInfoContainer };
-            const obj18 = { INTEGRATION_CREATE: "/assets/images/native/premium/illustrations", ConstraintReasonCode: 51 };
+            const obj18 = {};
             const intl = arg1(dependencyMap[24]).intl;
             obj18.children = intl.string(arg1(dependencyMap[24]).t.YCrcPL);
             const items12 = [callback4(arg1(dependencyMap[23]).Text, obj18), , , ];
@@ -275,7 +272,7 @@ function SubscriptionAndBillingInfo(subscription) {
             items13[2] = null != memo && memo;
             obj19.children = items13;
             items12[1] = callback5(closure_8, obj19);
-            const obj23 = { INTEGRATION_CREATE: "/assets/images/native/premium/illustrations", ConstraintReasonCode: 51 };
+            const obj23 = {};
             const intl4 = arg1(dependencyMap[24]).intl;
             obj23.children = intl4.string(arg1(dependencyMap[24]).t.Sb6wI1);
             items12[2] = callback4(arg1(dependencyMap[23]).Text, obj23);
@@ -343,7 +340,7 @@ function SubscriptionAndBillingInfo(subscription) {
     planIdFromInvoice = callback4;
     planIdFromInvoice = arg1;
     planIdFromInvoice = dependencyMap;
-    const obj34 = { INTEGRATION_CREATE: null, ConstraintReasonCode: "153e24032a5a8790888aef41caaf4b2c", children: planDescription };
+    const obj34 = { children: planDescription };
     items17[1] = callback4(arg1(dependencyMap[23]).Text, obj34);
     obj30.children = items17;
     const items18 = [callback5(planIdFromInvoice, obj30), ];
@@ -375,7 +372,7 @@ function SubscriptionAndBillingInfo(subscription) {
     planIdFromInvoice = dependencyMap;
     planIdFromInvoice = callback5;
     planIdFromInvoice = closure_8;
-    const obj38 = {};
+    const obj38 = { 1655478700: "/assets/images/native/premium/illustrations", 72438626: 51, 1446732292: 36 };
     const intl10 = arg1(dependencyMap[24]).intl;
     obj38.children = intl10.string(arg1(dependencyMap[24]).t.YCrcPL);
     const items20 = [callback4(arg1(dependencyMap[23]).Text, obj38), ];
@@ -420,12 +417,12 @@ function FractionalPremiumCredits(durationText) {
   const tmp = callback8(importDefault(dependencyMap[27])("FractionalPremiumCredits"));
   let obj = { style: tmp.container };
   if (showPremiumFeaturesCard) {
-    obj = { premiumType: closure_27.TIER_2 };
+    obj = { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, premiumType: closure_27.TIER_2 };
     showPremiumFeaturesCard = callback4(importDefault(dependencyMap[53]), obj);
   }
   const items = [showPremiumFeaturesCard, ];
   obj = { style: tmp.extraInfoContainer };
-  const obj1 = { INTEGRATION_CREATE: "/assets/images/native/premium/illustrations", ConstraintReasonCode: 51 };
+  const obj1 = {};
   const intl = arg1(dependencyMap[24]).intl;
   obj1.children = intl.string(arg1(dependencyMap[24]).t.Obre8v);
   const items1 = [callback4(arg1(dependencyMap[23]).Text, obj1), , ];
@@ -437,13 +434,13 @@ function FractionalPremiumCredits(durationText) {
   obj2.children = intl2.format(arg1(dependencyMap[24]).t.AYGoBn, obj3);
   items1[1] = callback4(arg1(dependencyMap[55]).TextWithIOSLinkWorkaround, obj2);
   const obj4 = {};
-  const obj5 = { style: tmp.fpRowStart };
+  const obj5 = { flexGrow: null, flexShrink: "2634e77a356f1f01c169d19e1ee5e0b0", marginRight: "load-issue-light", flexGrow: "png", style: tmp.fpRowStart };
   obj6 = { style: tmp.fpRowIcon };
   const obj7 = {};
   const obj8 = { padding: 6, borderRadius: importDefault(dependencyMap[19]).radii.sm };
   obj7.style = obj8;
-  obj7.start = { "Null": false, "Null": true };
-  obj7.end = { "Null": 131072.00314656927, "Null": 0.000000000000000000000000000000000000000000000000000000011294471302334573 };
+  obj7.start = { max: -536870861, guildId: -299892737 };
+  obj7.end = {};
   const items2 = [importDefault(dependencyMap[19]).unsafe_rawColors.GUILD_BOOSTING_BLUE, importDefault(dependencyMap[19]).unsafe_rawColors.GUILD_BOOSTING_PURPLE];
   obj7.colors = items2;
   const obj9 = {};
@@ -471,7 +468,7 @@ function FractionalPremiumCredits(durationText) {
     const obj15 = { style: tmp.divider };
     obj14.children = callback4(closure_8, obj15);
     items5[1] = callback4(closure_8, obj14);
-    const obj16 = { <string:1660677324>: 24, <string:575832555>: 0, <string:2959304110>: 72, <string:1375445196>: 900, style: tmp.fpRowEnd };
+    const obj16 = { "Bool(false)": 24, "Bool(false)": 0, "Bool(false)": 72, "Bool(false)": 900, style: tmp.fpRowEnd };
     const obj17 = { style: tmp.fpRowContent };
     if (hasUnactivatedUnits) {
       if (fractionalPremiumInfo.fractionalState === constants3.NONE) {
@@ -558,7 +555,7 @@ obj.background = obj;
 const tmp5 = arg1(dependencyMap[16]);
 obj.container = { display: "flex", paddingHorizontal: importDefault(dependencyMap[19]).modules.mobile.TABLE_ROW_PADDING };
 obj.contentContainer = {};
-obj.topBlur = { memo: "png", getChannel: true, body: "/assets/design/components/Illustration/native/redesign/generated/images", lc: 420, category: 112 };
+obj.topBlur = { "Null": "png", "Null": true, "Null": "/assets/design/components/Illustration/native/redesign/generated/images", "Null": 420, "Null": 112 };
 obj.accountCredit = { paddingHorizontal: 16 };
 const obj1 = { display: "flex", paddingHorizontal: importDefault(dependencyMap[19]).modules.mobile.TABLE_ROW_PADDING };
 obj.accountCreditList = { borderRadius: importDefault(dependencyMap[19]).radii.sm, backgroundColor: importDefault(dependencyMap[19]).colors.BACKGROUND_SURFACE_HIGH };
@@ -574,16 +571,16 @@ let closure_33 = obj6.createStyles(obj3);
 const obj4 = { borderRadius: importDefault(dependencyMap[19]).radii.lg };
 let closure_34 = arg1(dependencyMap[18]).createStyles((arg0) => {
   const tmp = getTableDividerWidth(arg0);
-  let obj = { container: { st: "SyntaxError", backgroundColor: "lkUb4S", borderWidth: "%Array%" } };
+  let obj = { container: { "Bool(true)": "<string:3388211201>", "Bool(true)": "<string:3578855425>", "Bool(true)": "<string:2889945527>" } };
   obj = { backgroundColor: importDefault(dependencyMap[19]).colors.BACKGROUND_SURFACE_HIGH, borderRadius: importDefault(dependencyMap[19]).radii.lg, overflow: "hidden" };
   obj.errorHeader = obj;
   obj.headerBackground = { padding: 16 };
-  obj.logoContainer = { "Bool(true)": null, "Bool(true)": null, "Bool(true)": null };
-  obj.wumpusImg = { padding: "key", name: "Text", "Bool(false)": "LengthDelimited" };
+  obj.logoContainer = { <string:327418114>: 54801408, <string:1857553135>: -225361408, <string:152437484>: 854917122 };
+  obj.wumpusImg = { padding: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000954043321079291, guildId: 9126805518, "Bool(false)": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002111873871777167 };
   obj.logoStyle = {};
-  obj.errorHeaderPrimaryButton = { "Bool(false)": "<string:16777479>", "Bool(false)": "<string:36295491>" };
-  obj.extraInfoContainer = {};
-  obj = { title: 1, description: "center", buttonLabel: "center", blur: "hidden", 9223372036854775807: "100%", borderRadius: importDefault(dependencyMap[19]).radii.sm, backgroundColor: importDefault(dependencyMap[19]).colors.BACKGROUND_SURFACE_HIGH };
+  obj.errorHeaderPrimaryButton = {};
+  obj.extraInfoContainer = { -1387834616: "L", -1605607908: 1000, 145355861: true, 1143851690: true };
+  obj = { -865876383: 1, 1667628012: "center", -73347920: "center", 1637469521: "hidden", -1073851759: "100%", borderRadius: importDefault(dependencyMap[19]).radii.sm, backgroundColor: importDefault(dependencyMap[19]).colors.BACKGROUND_SURFACE_HIGH };
   obj.extraInfoTextContainer = obj;
   obj.mutationWarningContainer = { borderRadius: importDefault(dependencyMap[19]).radii.lg, backgroundColor: importDefault(dependencyMap[19]).colors.BACKGROUND_SURFACE_HIGH };
   obj.mutationText = { flex: 1 };
@@ -603,7 +600,7 @@ let closure_34 = arg1(dependencyMap[18]).createStyles((arg0) => {
   obj.fpRowStart = { padding: importDefault(dependencyMap[19]).modules.mobile.TABLE_ROW_PADDING, minHeight: importDefault(dependencyMap[19]).modules.mobile.TABLE_ROW_HEIGHT, flexDirection: "row", alignItems: "center", backgroundColor: importDefault(dependencyMap[19]).colors.BACKGROUND_SURFACE_HIGH };
   const obj8 = { padding: importDefault(dependencyMap[19]).modules.mobile.TABLE_ROW_PADDING, minHeight: importDefault(dependencyMap[19]).modules.mobile.TABLE_ROW_HEIGHT, flexDirection: "row", alignItems: "center", backgroundColor: importDefault(dependencyMap[19]).colors.BACKGROUND_SURFACE_HIGH };
   obj.fpRowIcon = { marginEnd: importDefault(dependencyMap[19]).modules.mobile.TABLE_ROW_PADDING };
-  obj.fpRowContent = { 55857910: "Nostril R", -246241938: 2, 1378526653: 2, -1223253071: 0, 964011604: 1, -90030174: "ADBE Vector Group" };
+  obj.fpRowContent = { 9223372036854775807: "Nostril R", 9223372036854775807: 2, 9223372036854775807: 2, 0: 0, 0: 1, 9223372036854775807: "ADBE Vector Group" };
   const obj9 = { marginEnd: importDefault(dependencyMap[19]).modules.mobile.TABLE_ROW_PADDING };
   obj.fpRowEnd = { backgroundColor: importDefault(dependencyMap[19]).colors.BACKGROUND_BASE_LOWEST };
   const obj11 = {};
@@ -771,7 +768,7 @@ export default function PremiumManagePlan() {
   }
   const items9 = [tmp31, , , , , , ];
   if (isInReverseTrial) {
-    obj6 = { premiumType: closure_27.TIER_2 };
+    obj6 = { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, premiumType: closure_27.TIER_2 };
     isInReverseTrial = callback4(importDefault(dependencyMap[53]), obj6);
   }
   items9[1] = isInReverseTrial;
@@ -780,7 +777,7 @@ export default function PremiumManagePlan() {
     tmp38 = !tmp19;
   }
   if (tmp38) {
-    obj7 = { premiumType: closure_27.TIER_2, premiumGroupRole };
+    obj7 = { alignItems: true, width: true, marginTop: true, borderRadius: true, premiumType: closure_27.TIER_2, premiumGroupRole };
     tmp38 = callback4(importDefault(dependencyMap[53]), obj7);
   }
   items9[2] = tmp38;

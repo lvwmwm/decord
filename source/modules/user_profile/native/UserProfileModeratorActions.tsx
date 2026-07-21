@@ -1,10 +1,10 @@
-// Module ID: 11951
-// Function ID: 92393
+// Module ID: 11958
+// Function ID: 92416
 // Name: ModeratorActionRow
 // Dependencies: []
 // Exports: default
 
-// Module 11951 (ModeratorActionRow)
+// Module 11958 (ModeratorActionRow)
 function ModeratorActionRow(arg0) {
   let disabled;
   let hint;
@@ -38,7 +38,7 @@ function ModeratorActionRow(arg0) {
     obj = { label };
     let tmp5;
     if (null != sublabel) {
-      const obj1 = { INTEGRATION_CREATE: false, ConstraintReasonCode: false, children: sublabel };
+      const obj1 = { children: sublabel };
       tmp5 = jsx(arg1(dependencyMap[15]).Text, obj1);
     }
     obj.sublabel = tmp5;

@@ -1,14 +1,13 @@
-// Module ID: 16306
-// Function ID: 125856
+// Module ID: 16313
+// Function ID: 125887
 // Name: showCreateBenefitModal
 // Dependencies: [0, 0, 0, 0, 0, 0]
 // Exports: showCreateBenefitModal, showEditBenefitModal, showEditEmojisModal
 
-// Module 16306 (showCreateBenefitModal)
-import closure_3 from "result";
-import result from "result";
+// Module 16313 (showCreateBenefitModal)
+import __exportStarResult1 from "__exportStarResult1";
 
-result = result.fileFinishedImporting("modules/guild_role_subscriptions/GuildRoleSubscriptionsModalActionCreators.native.tsx");
+const result = require("__exportStarResult1").fileFinishedImporting("modules/guild_role_subscriptions/GuildRoleSubscriptionsModalActionCreators.native.tsx");
 
 export const showCreateBenefitModal = function showCreateBenefitModal(arg0) {
   let guildId;
@@ -16,7 +15,7 @@ export const showCreateBenefitModal = function showCreateBenefitModal(arg0) {
   let onSave;
   let type;
   ({ guildId, listingId, type, onSave } = arg0);
-  closure_3.resetImperatively();
+  __exportStarResult1.resetImperatively();
   importDefault(dependencyMap[1]).pushLazy(arg1(dependencyMap[3])(dependencyMap[2], dependencyMap.paths), { benefitType: type, guildId, onSave, listingId }, "GuildRoleSubscriptionBenefitEditorModal");
 };
 export const showEditBenefitModal = function showEditBenefitModal(benefit) {
@@ -26,7 +25,7 @@ export const showEditBenefitModal = function showEditBenefitModal(benefit) {
   let onSave;
   benefit = benefit.benefit;
   ({ guildId, listingId, onDelete, onSave } = benefit);
-  const result = closure_3.initializeImperatively(benefit);
+  const result = __exportStarResult1.initializeImperatively(benefit);
   let obj = importDefault(dependencyMap[1]);
   obj = { benefitType: benefit.ref_type, guildId, onDelete, onSave, listingId };
   obj.pushLazy(arg1(dependencyMap[3])(dependencyMap[2], dependencyMap.paths), obj, "GuildRoleSubscriptionBenefitEditorModal");

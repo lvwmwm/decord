@@ -77,4 +77,4 @@ export default (arg0) => {
     }
   ];
   return callback(AppliedGuildBoostRecord, null, items);
-}(require("keys"));
+}(require("result2"));

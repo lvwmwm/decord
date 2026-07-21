@@ -1,10 +1,10 @@
-// Module ID: 9587
-// Function ID: 74665
+// Module ID: 9592
+// Function ID: 74682
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 // Exports: useFetchStickerPack, useFilteredStickerPackCategories, useHasSendableSticker, useLatestFrecentStickers, useShouldAnimateSticker, useStickerForRenderableSticker, useStickersGrid
 
-// Module 9587 (_createForOfIteratorHelperLoose)
+// Module 9592 (_createForOfIteratorHelperLoose)
 function _createForOfIteratorHelperLoose(@@iterator) {
   let arg1 = Symbol_iterator;
   @@iterator = "undefined" !== typeof Symbol;

@@ -1,9 +1,9 @@
-// Module ID: 4805
-// Function ID: 41859
+// Module ID: 4807
+// Function ID: 41900
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
-// Module 4805 (_isNativeReflectConstruct)
+// Module 4807 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -225,7 +225,7 @@ tmp2 = new tmp2(importDefault(dependencyMap[9]), {
         delete r0[r1];
       }
     }
-    obj = { "Bool(false)": 1901293907, "Bool(false)": "slight_smile", "Bool(false)": "smiling_imp", "Bool(false)": "smiling_imp", "Bool(false)": -167119364, channelId, ringing: [], unavailable };
+    obj = { <string:2388056240>: null, <string:806923152>: null, <string:1872164757>: "<string:1153327360>", <string:1419276952>: "name-middle", <string:401609997>: "name-family", channelId, ringing: [], unavailable };
   },
   CALL_ENQUEUE_RING: function handleCallEnqueueRing(arg0) {
     let channelId;
@@ -236,7 +236,7 @@ tmp2 = new tmp2(importDefault(dependencyMap[9]), {
       items = [];
     }
     if (null == recipients) {
-      recipients = ["r"];
+      recipients = [false];
     }
     closure_13[channelId] = importDefault(dependencyMap[11]).union(items, recipients);
   },

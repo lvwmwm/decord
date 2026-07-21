@@ -1,10 +1,10 @@
-// Module ID: 16246
-// Function ID: 125543
+// Module ID: 16253
+// Function ID: 125574
 // Name: EligibilityChecklistRow
 // Dependencies: []
 // Exports: default
 
-// Module 16246 (EligibilityChecklistRow)
+// Module 16253 (EligibilityChecklistRow)
 function EligibilityChecklistRow(item) {
   item = item.item;
   const tmp = callback2();
@@ -26,7 +26,8 @@ function EligibilityChecklistRow(item) {
   obj.source = tmp7Result;
   const items1 = [callback(importDefault(dependencyMap[4]), obj), ];
   const obj1 = { style: tmp.rowTextColumn };
-  const items2 = [callback(arg1(dependencyMap[7]).Text, { style: tmp.rowLabel, children: item.checked ? item.checkedLabel : item.uncheckedLabel }), callback(arg1(dependencyMap[7]).Text, { children: item.description }), ];
+  const obj2 = { "Null": null, "Null": null, "Null": null, style: tmp.rowLabel, children: item.checked ? item.checkedLabel : item.uncheckedLabel };
+  const items2 = [callback(arg1(dependencyMap[7]).Text, obj2), callback(arg1(dependencyMap[7]).Text, { children: item.description }), ];
   let tmp13 = null != item.actionHandler && null != item.actionLabel;
   if (tmp13) {
     const obj4 = { style: tmp.actionButtonWrapper };
@@ -56,7 +57,7 @@ importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 ({ jsx: closure_4, jsxs: closure_5, Fragment: closure_6 } = arg1(dependencyMap[2]));
 const tmp3 = arg1(dependencyMap[2]);
-let closure_7 = arg1(dependencyMap[3]).createStyles({ row: { validInviteKey: true, isBypassInvite: true, inviteRoles: true, onChannelClick: true }, eligibleRow: { opacity: 0.8 }, rowStatusIcon: {}, rowTextColumn: {}, rowLabel: { marginBottom: 4 }, actionButtonWrapper: { marginTop: 12 }, divider: { marginHorizontal: 24 } });
+let closure_7 = arg1(dependencyMap[3]).createStyles({ row: { accessible: true, Reflect: true, hash: true, Symbol: true }, eligibleRow: { opacity: 0.8 }, rowStatusIcon: {}, rowTextColumn: {}, rowLabel: { marginBottom: 4 }, actionButtonWrapper: { marginTop: 12 }, divider: { marginHorizontal: 24 } });
 const obj = arg1(dependencyMap[3]);
 const result = arg1(dependencyMap[11]).fileFinishedImporting("modules/guild_role_subscriptions/native/components/EligibilityChecklist.tsx");
 

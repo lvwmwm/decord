@@ -1,10 +1,10 @@
-// Module ID: 8122
-// Function ID: 64322
+// Module ID: 8126
+// Function ID: 64334
 // Name: useIsWindowLarge
 // Dependencies: []
 // Exports: default, getIsWindowLarge
 
-// Module 8122 (useIsWindowLarge)
+// Module 8126 (useIsWindowLarge)
 const _module = require(dependencyMap[1]);
 const result = _module.fileFinishedImporting("modules/screen/native/useIsWindowLarge.tsx");
 

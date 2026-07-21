@@ -1,16 +1,13 @@
-// Module ID: 14075
-// Function ID: 106869
+// Module ID: 14082
+// Function ID: 106892
 // Name: useMessagePreviewSetting
-// Dependencies: [0, 0, 0, 0, 0]
+// Dependencies: []
 // Exports: default
 
-// Module 14075 (useMessagePreviewSetting)
-import result from "result";
-import closure_4 from "result";
-
+// Module 14082 (useMessagePreviewSetting)
 function useMessagePreviewSetting(guild_id) {
   const arg1 = guild_id;
-  const items = [result];
+  const items = [closure_3];
   return arg1(dependencyMap[3]).useStateFromStores(items, () => {
     const guilds = settings.settings.guilds;
     let tmp2 = null;
@@ -37,6 +34,8 @@ function useMessagePreviewSetting(guild_id) {
     setting = MessagePreviewSetting.getSetting();
   });
 }
+let closure_3 = importDefault(dependencyMap[0]);
+let closure_4 = importDefault(dependencyMap[1]);
 const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/main_tabs_v2/useMessagePreviews.tsx");
 
 export default function useMessagePreview(guild_id) {

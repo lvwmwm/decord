@@ -1,10 +1,10 @@
-// Module ID: 8254
-// Function ID: 65103
+// Module ID: 8258
+// Function ID: 65115
 // Name: UserProfileAnalyticsProvider
 // Dependencies: []
 // Exports: UserProfileAnalyticsProvider, useCreateUserProfileAnalyticsContext, useUserProfileAnalyticsContext
 
-// Module 8254 (UserProfileAnalyticsProvider)
+// Module 8258 (UserProfileAnalyticsProvider)
 const importAllResult = importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const context = importAllResult.createContext(null);

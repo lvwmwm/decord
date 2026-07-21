@@ -1,10 +1,10 @@
-// Module ID: 16011
-// Function ID: 122916
+// Module ID: 16018
+// Function ID: 122942
 // Name: ParentalConsentWarningModal
 // Dependencies: []
 // Exports: default
 
-// Module 16011 (ParentalConsentWarningModal)
+// Module 16018 (ParentalConsentWarningModal)
 let closure_3 = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 let closure_5 = importDefault(dependencyMap[2]);
@@ -122,7 +122,7 @@ export default function ParentalConsentWarningModal(daysRemaining) {
   const items3 = [tmp.container, { paddingBottom: importDefault(dependencyMap[14])().bottom }];
   const obj3 = { spacing: importDefault(dependencyMap[13]).space.PX_16 };
   const items4 = [callback(View, { style: tmp.illustration, children: callback(arg1(dependencyMap[26]).FamilyKeysSpotIllustration, { accessible: false }) }), , , ];
-  const obj5 = { Globe: "primary", BUNDLE_PREVIEW_CONFIG: false, getAppIntentScheme: 400, SlideInUp: 20, style: tmp.title, children: stringResult };
+  const obj5 = { y: "primary", isArray: false, split: 400, ix: 20, style: tmp.title, children: stringResult };
   items4[1] = callback(arg1(dependencyMap[27]).Text, obj5);
   const obj6 = { style: tmp.body, children: stringResult1 };
   items4[2] = callback(arg1(dependencyMap[27]).Text, obj6);
@@ -132,7 +132,7 @@ export default function ParentalConsentWarningModal(daysRemaining) {
   obj8.text = intl3.string(importDefault(dependencyMap[16]).Kp7sjX);
   obj8.onPress = callback3;
   const items5 = [callback(arg1(dependencyMap[28]).Button, obj8), ];
-  const obj9 = {};
+  const obj9 = { key: "r", onCloseCallback: "sectionIdsByBotId", dismissable: "Array" };
   const intl4 = arg1(dependencyMap[15]).intl;
   obj9.text = intl4.string(importDefault(dependencyMap[16]).hST5o8);
   const intl5 = arg1(dependencyMap[15]).intl;

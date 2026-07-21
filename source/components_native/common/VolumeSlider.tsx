@@ -1,25 +1,24 @@
-// Module ID: 10699
-// Function ID: 83324
+// Module ID: 10705
+// Function ID: 83347
 // Name: VolumeSlider
-// Dependencies: [3539992610, 905969705, 33554434, 1946157056, 4169, 10708, 566, 2, 122227, 2741504, 512, 77886464, 93585408, 37093376]
+// Dependencies: []
 // Exports: default
 
-// Module 10699 (VolumeSlider)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import set from "set";
-
+// Module 10705 (VolumeSlider)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 let closure_4 = arg1(dependencyMap[2]).MAX_EMBEDDED_VOLUME_PERCEPTUAL;
 ({ jsx: closure_5, jsxs: closure_6 } = arg1(dependencyMap[3]));
+let obj = arg1(dependencyMap[4]);
 let num = 16;
-if (_isNativeReflectConstruct.isAndroid()) {
+if (obj.isAndroid()) {
   num = 0;
 }
 const tmp3 = arg1(dependencyMap[3]);
-_isNativeReflectConstruct = { marginRight: num };
-_isNativeReflectConstruct = { marginLeft: num };
-let closure_7 = require("set").createStyles({ volumerSlider: { -9223372036854775808: true, filter: true }, leftIcon: _isNativeReflectConstruct, rightIcon: _isNativeReflectConstruct, volumerSliderNative: {} });
+obj = { marginRight: num };
+obj = { marginLeft: num };
+let closure_7 = arg1(dependencyMap[5]).createStyles({ volumerSlider: {}, leftIcon: obj, rightIcon: obj, volumerSliderNative: {} });
+const obj2 = arg1(dependencyMap[5]);
 const result = arg1(dependencyMap[13]).fileFinishedImporting("components_native/common/VolumeSlider.tsx");
 
 export default function VolumeSlider(maxTrackTintColor) {
@@ -35,7 +34,7 @@ export default function VolumeSlider(maxTrackTintColor) {
     maxVolume = closure_4;
   }
   ({ onValueChange: closure_0, onResponderGrant } = maxTrackTintColor);
-  let obj = { "Bool(false)": null, "Bool(false)": "LOCAL_PAYMENT_START_PAYMENT_MISSING_REQUIRED_OPTION", "Bool(false)": "Missing required option for startPayment.", "Bool(false)": null, "Bool(false)": "LOCAL_PAYMENT_START_PAYMENT_DEFERRED_PAYMENT_FAILED", "Bool(false)": "LocalPayment startPayment deferred payment failed." };
+  let obj = { -77489715: true, 1638293841: true, -685222964: true, -719459144: true, -459146158: true, 558650775: true };
   Object.setPrototypeOf(null);
   const merged = Object.assign(maxTrackTintColor, obj);
   const tmp5 = callback2();

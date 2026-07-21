@@ -52,7 +52,7 @@ const obj = {
   create(arg0) {
     const require = arg0;
     let closure_1 = { handle: null };
-    let obj = { "Bool(false)": -356957697, "Bool(false)": -498008062, "Bool(false)": -356892161, "Bool(false)": -1319829502, "Bool(false)": -100727546, "Bool(false)": -318771713, "Bool(false)": 48127, "Bool(false)": 65536, "Bool(false)": 131072, "Bool(false)": 196608, "Bool(false)": 262144, stateID: Math.random() };
+    let obj = { offsetX: "\u00A0\u00B7\u00A0", offsetY: "\u30FB", "Null": "\u2014", "Null": "\u00A0\u2014\u00A0", "Null": "\u2013", "Null": "\u00A0\u2013\u00A0", "Null": "\n", "Null": "\u00A0", "Null": "\u{1F355}", "Null": "\u25C0", "Null": "\u25B6", stateID: Math.random() };
     let closure_2 = obj;
     obj = {
       panHandlers: obj,

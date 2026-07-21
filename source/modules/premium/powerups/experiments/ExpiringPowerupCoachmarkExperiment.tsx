@@ -1,11 +1,11 @@
-// Module ID: 11521
-// Function ID: 89778
+// Module ID: 11528
+// Function ID: 89801
 // Name: useExpiringPowerupCoachmarkEnabled
 // Dependencies: []
 // Exports: useExpiringPowerupCoachmarkEnabled
 
-// Module 11521 (useExpiringPowerupCoachmarkEnabled)
-const obj = { -1269606814: 16777216, -1845285747: 113, defaultConfig: { enabled: false }, variations: { [0]: { enabled: false }, [1]: { enabled: true } } };
+// Module 11528 (useExpiringPowerupCoachmarkEnabled)
+const obj = { 9223372036854775807: 16777216, 0: 113, defaultConfig: { enabled: false }, variations: { [0]: { enabled: false }, [1]: { enabled: true } } };
 const tmp2 = importDefault(dependencyMap[0])(obj);
 const result = arg1(dependencyMap[1]).fileFinishedImporting("modules/premium/powerups/experiments/ExpiringPowerupCoachmarkExperiment.tsx");
 

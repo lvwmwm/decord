@@ -1,10 +1,10 @@
-// Module ID: 4550
-// Function ID: 39841
+// Module ID: 4554
+// Function ID: 39889
 // Name: EllipsisCircle
 // Dependencies: []
 // Exports: Ellipsis
 
-// Module 4550 (EllipsisCircle)
+// Module 4554 (EllipsisCircle)
 function EllipsisCircle(offset) {
   let size;
   let variant;

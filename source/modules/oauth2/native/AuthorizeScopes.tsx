@@ -1,10 +1,10 @@
-// Module ID: 9005
-// Function ID: 70861
+// Module ID: 9009
+// Function ID: 70873
 // Name: Scope
 // Dependencies: []
 // Exports: default
 
-// Module 9005 (Scope)
+// Module 9009 (Scope)
 function Scope(arg0) {
   let error;
   let isFake;
@@ -26,7 +26,7 @@ function Scope(arg0) {
     str = ". " + error;
   }
   obj.accessibilityLabel = "" + stringResult + ": " + text + str;
-  obj = { 0: false, 9223372036854775807: false, 0: false, style: tmp.iconWrapper };
+  obj = { <string:2737387298>: 48, <string:1292067942>: 12, <string:1400499127>: 4, style: tmp.iconWrapper };
   if (isFake) {
     obj = { style: tmp.fakeScopeIcon, color: importDefault(tmp10[6]).colors.TEXT_MUTED, size: "refresh_sm" };
     let tmp8Result = tmp8(tmp9(tmp10[5]).CircleXIcon, obj);
@@ -60,7 +60,7 @@ importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 ({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[2]));
 const tmp3 = arg1(dependencyMap[2]);
-let closure_6 = arg1(dependencyMap[3]).createStyles({ scopesContainer: {}, scopes: {}, scopeContainer: { flexDirection: "row" }, scope: {}, iconWrapper: {}, fakeScopeIcon: { opacity: 0.6 } });
+let closure_6 = arg1(dependencyMap[3]).createStyles({ scopesContainer: {}, scopes: {}, scopeContainer: { flexDirection: "row" }, scope: {}, iconWrapper: { fontSize: -59652324, marginBottom: 0.00000000000000000000000000000000657414935698041, fontFamily: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001261344141645 }, fakeScopeIcon: { opacity: 0.6 } });
 const obj = arg1(dependencyMap[3]);
 const result = arg1(dependencyMap[13]).fileFinishedImporting("modules/oauth2/native/AuthorizeScopes.tsx");
 

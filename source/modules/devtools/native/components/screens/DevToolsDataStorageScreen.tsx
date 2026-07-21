@@ -1,10 +1,10 @@
-// Module ID: 13416
-// Function ID: 101883
+// Module ID: 13423
+// Function ID: 101906
 // Name: DevToolsPersistedStoresActionSheet
 // Dependencies: []
 // Exports: default
 
-// Module 13416 (DevToolsPersistedStoresActionSheet)
+// Module 13423 (DevToolsPersistedStoresActionSheet)
 function DevToolsPersistedStoresActionSheet(store) {
   store = store.store;
   const arg1 = store;
@@ -14,9 +14,9 @@ function DevToolsPersistedStoresActionSheet(store) {
   obj.header = jsx(arg1(dependencyMap[23]).BottomSheetTitleHeader, obj);
   obj = { hasIcons: false };
   const obj1 = {
-    borderRadius: "#f0f8ff",
-    guild: "#faebd7",
-    v: "#00ffff",
+    1770455044: "Array",
+    910295044: "sessionStartsWithDND",
+    -855636809: "%Float16Array%",
     onPress() {
       store.clear();
       close(closure_2[10]).open({});
@@ -40,26 +40,21 @@ obj.container = obj;
 obj1 = { backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_BASE_LOW };
 obj.sectionHeader = obj1;
 let closure_9 = obj1.createStyles(obj);
-let closure_10 = importAllResult.memo(() => {
-  const obj = {
-    reason: "OPEN_TO_PLAY",
-    username_error: "gMOwov",
-    onPress() {
-      const databaseResult = callback(closure_2[9]).database();
-      if (null != databaseResult) {
-        databaseResult.disable("via UserSettingsDatabaseControls");
-        callback(closure_2[10]).open({});
-        const obj3 = callback(closure_2[10]);
-      }
+let closure_10 = importAllResult.memo(() => jsx(arg1(dependencyMap[8]).TableRow, {
+  onPress() {
+    const databaseResult = callback(closure_2[9]).database();
+    if (null != databaseResult) {
+      databaseResult.disable("via UserSettingsDatabaseControls");
+      callback(closure_2[10]).open({});
+      const obj3 = callback(closure_2[10]);
     }
-  };
-  return jsx(arg1(dependencyMap[8]).TableRow, obj);
-});
+  }
+}));
 let closure_11 = importAllResult.memo(() => {
   let obj = arg1(dependencyMap[11]);
   const items = [importDefault(dependencyMap[12]), closure_7];
   const stateFromStores = obj.useStateFromStores(items, () => callback(closure_2[12]).database(id.getId()));
-  obj = { -9223372036854775808: null, 0: null, 0: null };
+  obj = { 0: null, 0: null, 0: null };
   let str = "No active database.";
   if (null != stateFromStores) {
     str = stateFromStores.name;
@@ -85,8 +80,8 @@ let closure_13 = importAllResult.memo(() => {
   let obj = callback(dependencyMap[13]);
   const callback = obj.useNavigation();
   obj = {
-    partnerApplicationTimestamp: null,
-    COMPANION_REMOTE_AUTH: null,
+    0: null,
+    9223372036854775807: null,
     onPress() {
       navigation.navigate("cacheStats");
     }
@@ -174,7 +169,7 @@ export default function DevToolsDataStorageScreen() {
       } else {
         if (1 === arg1) {
           if (0 === persistedStores.length) {
-            return callback(tmp(persistedStores[8]).TableRow, { partnerApplicationTimestamp: null, COMPANION_REMOTE_AUTH: null });
+            return callback(tmp(persistedStores[8]).TableRow, {});
           }
         }
         obj = {
@@ -200,7 +195,7 @@ export default function DevToolsDataStorageScreen() {
     }
   }, items);
   callback2 = importAllResult.useCallback((arg0) => {
-    const obj = { Promise: 10, marginTop: null, flags: "flex-start", style: closure_8.sectionHeader };
+    const obj = { style: closure_8.sectionHeader };
     let str = "Database Controls";
     if (constants.DATABASE_CONTROLS !== arg0) {
       str = "Database (Current)";

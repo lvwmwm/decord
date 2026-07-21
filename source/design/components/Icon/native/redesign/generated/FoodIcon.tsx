@@ -1,10 +1,10 @@
-// Module ID: 9399
-// Function ID: 73232
+// Module ID: 9403
+// Function ID: 73246
 // Name: FoodIcon
 // Dependencies: []
 // Exports: FoodIcon
 
-// Module 9399 (FoodIcon)
+// Module 9403 (FoodIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/FoodIcon.tsx");

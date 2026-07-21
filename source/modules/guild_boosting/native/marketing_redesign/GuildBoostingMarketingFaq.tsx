@@ -1,10 +1,10 @@
-// Module ID: 12411
-// Function ID: 94800
+// Module ID: 12418
+// Function ID: 94823
 // Name: items1
 // Dependencies: []
 // Exports: default
 
-// Module 12411 (items1)
+// Module 12418 (items1)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 const View = arg1(dependencyMap[2]).View;
@@ -16,15 +16,15 @@ obj = { marginBottom: arg1(dependencyMap[6]).VISIBILITY_OFFSET };
 obj.wrapper = obj;
 const tmp2 = arg1(dependencyMap[4]);
 obj.content = { backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_MOD_NORMAL, borderRadius: importDefault(dependencyMap[7]).radii.sm, paddingHorizontal: 16, paddingVertical: 28 };
-obj.heading = {};
+obj.heading = { "Null": "<string:1464991746>", "Null": "<string:1639437652>" };
 const obj1 = { backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_MOD_NORMAL, borderRadius: importDefault(dependencyMap[7]).radii.sm, paddingHorizontal: 16, paddingVertical: 28 };
 obj.list = { borderTopColor: importDefault(dependencyMap[7]).colors.BORDER_MUTED, borderTopWidth: 1 };
 const obj2 = { borderTopColor: importDefault(dependencyMap[7]).colors.BORDER_MUTED, borderTopWidth: 1 };
 obj.listItem = { borderBottomColor: importDefault(dependencyMap[7]).colors.BORDER_MUTED, borderBottomWidth: 1 };
 obj.questionWrapper = {};
 obj.questionWrapperExpanded = { paddingBottom: 6 };
-obj.question = { -9223372036854775808: null, 0: "ae39bece93fb2e7db2a552f53a1d8fa1", -9223372036854775808: "TwitterNeutralIcon" };
-const obj4 = { backgroundColor: false, height: true, tintColor: importDefault(dependencyMap[7]).colors.ICON_MUTED };
+obj.question = {};
+const obj4 = { marginRight: -536870861, columnGap: -299892737, tintColor: importDefault(dependencyMap[7]).colors.ICON_MUTED };
 obj.questionIcon = obj4;
 const items = [{ rotate: "45deg" }];
 obj.questionIconExpanded = { transform: items };

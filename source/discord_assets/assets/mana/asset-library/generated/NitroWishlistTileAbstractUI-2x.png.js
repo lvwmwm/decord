@@ -1,9 +1,9 @@
-// Module ID: 6360
-// Function ID: 50414
+// Module ID: 6362
+// Function ID: 50457
 // Name: metadata
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 6360 (metadata)
+// Module 6362 (metadata)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/NitroWishlistTileAbstractUI-2x.png.js");
 

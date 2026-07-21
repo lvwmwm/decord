@@ -1,10 +1,10 @@
-// Module ID: 14396
-// Function ID: 108622
+// Module ID: 14403
+// Function ID: 108645
 // Name: getSocialPermissions
 // Dependencies: []
 // Exports: ConnectedGamesPage, DiscordPermissionsPage, default
 
-// Module 14396 (getSocialPermissions)
+// Module 14403 (getSocialPermissions)
 function getSocialPermissions(allServersSelected) {
   const items = [MobileSetting.SAFETY_GUILD_SETTING_GUILD_SELECT, MobileSetting.SAFETY_GUILD_SETTING_DIRECT_MESSAGES, MobileSetting.SAFETY_GUILD_SETTING_MESSAGE_REQUESTS];
   let obj = {};

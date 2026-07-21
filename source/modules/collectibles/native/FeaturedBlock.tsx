@@ -1,10 +1,10 @@
-// Module ID: 14360
-// Function ID: 108439
+// Module ID: 14367
+// Function ID: 108462
 // Name: Subblocks
 // Dependencies: []
 // Exports: default
 
-// Module 14360 (Subblocks)
+// Module 14367 (Subblocks)
 function Subblocks(style) {
   const arg1 = style.style;
   const subblocks = style.featuredBlock.subblocks;
@@ -19,9 +19,8 @@ function Subblocks(style) {
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 const jsx = arg1(dependencyMap[2]).jsx;
-let obj = arg1(dependencyMap[4]);
-obj = { customId: "/assets/design/components/Illustration/native/redesign/generated/images", onTapLink: 254, onLongPressLink: 154, onTapAttachmentLink: null, gap: importDefault(dependencyMap[3]).space.PX_12, paddingHorizontal: importDefault(dependencyMap[3]).space.PX_16 };
-let closure_5 = obj.createStyles({ container: obj, featuredSubblock: { "Bool(true)": 2, "Bool(true)": 36, "Bool(true)": "2026-02-activity-privacy-matching" } });
+let closure_5 = arg1(dependencyMap[4]).createStyles({ container: { gap: importDefault(dependencyMap[3]).space.PX_12, paddingHorizontal: importDefault(dependencyMap[3]).space.PX_16 }, featuredSubblock: { "Null": 2, "Null": 36, "Null": "2026-02-activity-privacy-matching" } });
+const obj = arg1(dependencyMap[4]);
 const result = arg1(dependencyMap[9]).fileFinishedImporting("modules/collectibles/native/FeaturedBlock.tsx");
 
 export default function FeaturedBlock(featuredBlock) {

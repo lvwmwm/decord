@@ -1,10 +1,10 @@
-// Module ID: 7561
-// Function ID: 60525
+// Module ID: 7565
+// Function ID: 60537
 // Name: ModalScreen
 // Dependencies: []
 // Exports: ModalScreen
 
-// Module 7561 (ModalScreen)
+// Module 7565 (ModalScreen)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 const jsx = arg1(dependencyMap[2]).jsx;

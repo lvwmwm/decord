@@ -1,10 +1,10 @@
-// Module ID: 9293
-// Function ID: 72599
+// Module ID: 9297
+// Function ID: 72611
 // Name: uid
 // Dependencies: []
 // Exports: UID
 
-// Module 9293 (uid)
+// Module 9297 (uid)
 function uid() {
   let str = arg0;
   if (arg0 === undefined) {

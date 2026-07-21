@@ -1,10 +1,10 @@
-// Module ID: 11508
-// Function ID: 89709
+// Module ID: 11515
+// Function ID: 89733
 // Name: isContentDismissed
 // Dependencies: []
 // Exports: markContentAsDismissed, unmarkContentAsDismissed, useIsContentDismissed
 
-// Module 11508 (isContentDismissed)
+// Module 11515 (isContentDismissed)
 function isContentDismissed(GAME_SERVER_HOSTING_GUILD_ELIGIBLE_COACHMARK, closure_0) {
   const dismissedGuildContent = dismissedGuildContent.getDismissedGuildContent(closure_0);
   let hasBitResult = null != dismissedGuildContent;

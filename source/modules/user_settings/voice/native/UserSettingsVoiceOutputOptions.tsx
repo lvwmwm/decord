@@ -1,10 +1,10 @@
-// Module ID: 10698
-// Function ID: 83317
+// Module ID: 10704
+// Function ID: 83340
 // Name: UserSettingsVoiceOutputOptions
 // Dependencies: []
 // Exports: default
 
-// Module 10698 (UserSettingsVoiceOutputOptions)
+// Module 10704 (UserSettingsVoiceOutputOptions)
 let closure_3 = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 let closure_5 = importDefault(dependencyMap[2]);

@@ -1,9 +1,9 @@
-// Module ID: 6398
-// Function ID: 50471
+// Module ID: 6400
+// Function ID: 50514
 // Name: metadata
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 6398 (metadata)
+// Module 6400 (metadata)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/PencilIllocon-2x.png.js");
 

@@ -1,9 +1,9 @@
-// Module ID: 14112
-// Function ID: 107162
+// Module ID: 14119
+// Function ID: 107185
 // Name: slider
 // Dependencies: []
 
-// Module 14112 (slider)
+// Module 14119 (slider)
 let closure_2 = importAll(dependencyMap[0]);
 let closure_3 = importDefault(dependencyMap[1]);
 const jsx = arg1(dependencyMap[3]).jsx;

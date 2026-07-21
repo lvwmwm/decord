@@ -1,14 +1,13 @@
-// Module ID: 6545
-// Function ID: 50691
+// Module ID: 6547
+// Function ID: 50734
 // Name: StreamingTier3SmallBadge
 // Dependencies: [0, 0, 4294967295, 0]
 // Exports: StreamingTier3SmallBadge
 
-// Module 6545 (StreamingTier3SmallBadge)
-import { jsx } from "result";
-import result from "result";
+// Module 6547 (StreamingTier3SmallBadge)
+import { jsx } from "__exportStarResult1";
 
-result = result.fileFinishedImporting("design/components/mana-assets/native/generated/StreamingTier3SmallBadge.native.tsx");
+const result = require("__exportStarResult1").fileFinishedImporting("design/components/mana-assets/native/generated/StreamingTier3SmallBadge.native.tsx");
 
 export const StreamingTier3SmallBadge = function StreamingTier3SmallBadge(width) {
   let accessibilityLabel;

@@ -1,9 +1,9 @@
-// Module ID: 14977
-// Function ID: 112824
+// Module ID: 14984
+// Function ID: 112848
 // Name: YouBarMaskedBackground
 // Dependencies: []
 
-// Module 14977 (YouBarMaskedBackground)
+// Module 14984 (YouBarMaskedBackground)
 function YouBarMaskedBackground(barWidth) {
   let avatarSize;
   let backgroundColor;
@@ -24,9 +24,9 @@ function YouBarMaskedBackground(barWidth) {
   const obj8 = importDefault(dependencyMap[8])("#000000");
   const items1 = [importDefault(dependencyMap[8])("#000000").alpha(0).hex(), "#000000"];
   obj3.colors = items1;
-  obj3.start = { "Null": false, "Null": true };
-  obj3.end = { "Null": null, "Null": null };
-  obj3.locations = [null, null];
+  obj3.start = { max: -536870861, guildId: -299892737 };
+  obj3.end = {};
+  obj3.locations = ["Text", "lc"];
   obj3.pointerEvents = "none";
   items[2] = callback(tmp4, obj3);
   obj.children = items;
@@ -62,7 +62,7 @@ function YouBarAnimatedBackground(arg0) {
   const style = [{ position: "absolute" }, tmp.youRowFloating, , , ];
   obj = { width: barWidth, height: YOU_BAR_HEIGHT, backgroundColor };
   style[2] = obj;
-  style[3] = { <string:2690439344>: false, <string:1545952083>: true };
+  style[3] = { GET_SOUNDBOARD_SOUNDS: -536870861, DISCOVERY_SETUP_SUCCESS_MODAL: -299892737 };
   style[4] = animatedStyle;
   return callback(importDefault(dependencyMap[11]).View, { style });
 }

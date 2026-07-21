@@ -1,9 +1,9 @@
-// Module ID: 9627
-// Function ID: 75009
+// Module ID: 9632
+// Function ID: 75026
 // Name: AutocompleteTypes
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 9627 (AutocompleteTypes)
+// Module 9632 (AutocompleteTypes)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("modules/channel_text_area/native/ChannelAutocompleteConstants.tsx");
 

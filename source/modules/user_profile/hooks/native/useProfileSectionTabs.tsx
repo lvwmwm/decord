@@ -1,10 +1,10 @@
-// Module ID: 11980
-// Function ID: 92610
+// Module ID: 11987
+// Function ID: 92633
 // Name: useProfileTabIndices
-// Dependencies: [31, 33, 4126, 5466]
+// Dependencies: [31, 33, 4126, 5468]
 // Exports: useProfileSectionTabs, useProfileTabIndices
 
-// Module 11980 (useProfileTabIndices)
+// Module 11987 (useProfileTabIndices)
 import module_31 from "module_31";
 import module_33 from "module_33";
 import { UserProfileSections } from "_createForOfIteratorHelperLoose";

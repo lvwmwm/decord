@@ -1,9 +1,9 @@
-// Module ID: 6795
-// Function ID: 53620
+// Module ID: 6801
+// Function ID: 53669
 // Name: ShopBlockType
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 6795 (ShopBlockType)
+// Module 6801 (ShopBlockType)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_common/js/shared/shared-constants/ShopBlockType.tsx");
 

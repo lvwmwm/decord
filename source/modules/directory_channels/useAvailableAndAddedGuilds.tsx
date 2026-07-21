@@ -1,10 +1,10 @@
-// Module ID: 10033
-// Function ID: 77570
+// Module ID: 10039
+// Function ID: 77588
 // Name: useAvailableAndAddedGuilds
 // Dependencies: []
 // Exports: default
 
-// Module 10033 (useAvailableAndAddedGuilds)
+// Module 10039 (useAvailableAndAddedGuilds)
 let closure_4 = importDefault(dependencyMap[0]);
 let closure_5 = importDefault(dependencyMap[1]);
 let closure_6 = importAll(dependencyMap[2]);

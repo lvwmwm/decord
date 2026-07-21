@@ -1,9 +1,9 @@
-// Module ID: 10050
-// Function ID: 77632
+// Module ID: 10056
+// Function ID: 77650
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
-// Module 10050 (_isNativeReflectConstruct)
+// Module 10056 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -166,7 +166,7 @@ const InviteTargetTypes = arg1(dependencyMap[11]).InviteTargetTypes;
 const set = new Set();
 let closure_22 = [];
 const map = new Map();
-let closure_24 = { 0: "r", 0: "onRequireModeratorMFAClick", -9223372036854775808: "Array", 0: "isSpamMessageRequest" };
+let closure_24 = { 0: null, 9223372036854775807: 4, 0: 4, 0: "rgba(0, 0, 0, 0.75)" };
 let tmp5 = (Store) => {
   class InviteSuggestionsStore {
     constructor() {

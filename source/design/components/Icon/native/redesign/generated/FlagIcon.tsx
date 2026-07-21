@@ -1,10 +1,10 @@
-// Module ID: 9405
-// Function ID: 73241
+// Module ID: 9409
+// Function ID: 73255
 // Name: FlagIcon
 // Dependencies: [57, 31, 27, 4120, 1348, 1917]
 // Exports: FlagIcon
 
-// Module 9405 (FlagIcon)
+// Module 9409 (FlagIcon)
 import "_slicedToArray";
 import { jsx } from "module_31";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";

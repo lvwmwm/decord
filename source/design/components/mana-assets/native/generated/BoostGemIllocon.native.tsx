@@ -1,10 +1,10 @@
-// Module ID: 5899
-// Function ID: 49722
+// Module ID: 5901
+// Function ID: 49765
 // Name: BoostGemIllocon
 // Dependencies: []
 // Exports: BoostGemIllocon
 
-// Module 5899 (BoostGemIllocon)
+// Module 5901 (BoostGemIllocon)
 const jsx = require(dependencyMap[0]).jsx;
 const _module = require(dependencyMap[3]);
 const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/BoostGemIllocon.native.tsx");

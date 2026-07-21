@@ -1,9 +1,9 @@
-// Module ID: 7139
-// Function ID: 57574
+// Module ID: 7143
+// Function ID: 57585
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
-// Module 7139 (_isNativeReflectConstruct)
+// Module 7143 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -25,13 +25,13 @@ let tmp2 = (MessageType) => {
       self = this;
       tmp = closure_3(this, GiftReminderNagbar$Type);
       items = [, ];
-      items[0] = { body: "<string:1895826595>", guildId: "Array", ao: "<string:1011989857>", "": "<string:2738635012>" };
-      obj = { emojiId: 411, emojiName: 134, userId: null };
+      items[0] = {};
+      obj = { "Null": 411, "Null": 134, "Null": null };
       obj.T = function T() {
         return callback(closure_1[6]).LocalizedString;
       };
       items[1] = obj;
-      items1 = [true];
+      items1 = ["es-EA"];
       items1[1] = items;
       obj2 = closure_6(GiftReminderNagbar$Type);
       tmp2 = closure_5;

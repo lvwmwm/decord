@@ -1,15 +1,15 @@
-// Module ID: 8553
-// Function ID: 67996
+// Module ID: 8557
+// Function ID: 68008
 // Name: renderTooltipItem
-// Dependencies: [31, 27, 33, 4126, 5231, 3840, 3938, 2, 31, 27]
+// Dependencies: [31, 27, 33, 4126, 5233, 3840, 3938, 2, 31, 27]
 // Exports: AnimatedTooltip
 
-// Module 8553 (renderTooltipItem)
+// Module 8557 (renderTooltipItem)
 import module_31 from "module_31";
-import getActivityIndicator from "get ActivityIndicator";
+import closure_4 from "keys";
 import { StyleSheet } from "module_33";
 import { jsx } from "_createForOfIteratorHelperLoose";
-import get ActivityIndicator from "get ActivityIndicator";
+import keys from "keys";
 
 function renderTooltipItem(arg0, arg1) {
   let obj = { style: items, pointerEvents: "box-none" };
@@ -23,7 +23,7 @@ function renderTooltipItem(arg0, arg1) {
   obj.children = tmp2;
   return jsx(importDefault(dependencyMap[4]).View, obj);
 }
-const result = get_ActivityIndicator.fileFinishedImporting("design/components/Tooltip/native/AnimatedTooltip.native.tsx");
+const result = keys.fileFinishedImporting("design/components/Tooltip/native/AnimatedTooltip.native.tsx");
 
 export const AnimatedTooltip = function AnimatedTooltip(visible) {
   visible = visible.visible;

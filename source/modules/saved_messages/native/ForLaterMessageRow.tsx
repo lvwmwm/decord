@@ -1,10 +1,10 @@
-// Module ID: 9918
-// Function ID: 76724
+// Module ID: 9923
+// Function ID: 76740
 // Name: ForLaterMessageRow
 // Dependencies: []
 // Exports: ForLaterMessageRow
 
-// Module 9918 (ForLaterMessageRow)
+// Module 9923 (ForLaterMessageRow)
 let closure_3 = importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[9]).fileFinishedImporting("modules/saved_messages/native/ForLaterMessageRow.tsx");
@@ -34,8 +34,8 @@ export const ForLaterMessageRow = function ForLaterMessageRow(lineClamp) {
     return tmp;
   }, items);
   obj = {
-    lineHeight: 3,
-    fontSize: null,
+    -1034289856: "<string:553648726>",
+    -1031355792: "<string:68987969>",
     modifyRow(arg0) {
       if (null != lineClamp) {
         const obj = { numberOfLines: lineClamp, expandable: lineClamp(setting[8]).isIOS() };

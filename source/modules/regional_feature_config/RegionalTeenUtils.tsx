@@ -1,10 +1,10 @@
-// Module ID: 11440
-// Function ID: 89106
+// Module ID: 11447
+// Function ID: 89130
 // Name: useUserCountryCode
 // Dependencies: []
 // Exports: useIsTeenInStrictCountry
 
-// Module 11440 (useUserCountryCode)
+// Module 11447 (useUserCountryCode)
 function useUserCountryCode() {
   const items = [closure_3];
   const stateFromStores = arg1(dependencyMap[3]).useStateFromStores(items, () => userCountryCode.getUserCountryCode());

@@ -1,7 +1,7 @@
 // Module ID: 1012
 // Function ID: 11035
 // Name: items
-// Dependencies: [57, 77, 1035, 794, 1015, 1037, 1038, 1010, 1016]
+// Dependencies: []
 
 // Module 1012 (items)
 Object.defineProperty(arg5, Symbol.toStringTag, { value: "Module" });

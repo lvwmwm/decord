@@ -1,13 +1,14 @@
-// Module ID: 6227
-// Function ID: 50214
+// Module ID: 6229
+// Function ID: 50257
 // Name: GiftingTier5SmallBadge
-// Dependencies: []
+// Dependencies: [33554456, 1946157056, 33, 5233]
 // Exports: GiftingTier5SmallBadge
 
-// Module 6227 (GiftingTier5SmallBadge)
+// Module 6229 (GiftingTier5SmallBadge)
+import preload from "preload";
+
 const jsx = require(dependencyMap[0]).jsx;
-const _module = require(dependencyMap[3]);
-const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/GiftingTier5SmallBadge.native.tsx");
+const result = preload.fileFinishedImporting("design/components/mana-assets/native/generated/GiftingTier5SmallBadge.native.tsx");
 
 export const GiftingTier5SmallBadge = function GiftingTier5SmallBadge(width) {
   let accessibilityLabel;

@@ -1,9 +1,9 @@
-// Module ID: 11661
-// Function ID: 90476
+// Module ID: 11668
+// Function ID: 90499
 // Name: WaveformBar
 // Dependencies: []
 
-// Module 11661 (WaveformBar)
+// Module 11668 (WaveformBar)
 function WaveformBar(value) {
   value = value.value;
   const arg1 = value;
@@ -194,7 +194,7 @@ const tmp4 = arg1(dependencyMap[7]);
 let closure_16 = importDefault(dependencyMap[8]).createAnimatedComponent(tmp2.ActivityIndicator);
 let obj2 = arg1(dependencyMap[9]);
 let obj = {};
-obj = { paddingVertical: importDefault(dependencyMap[10]).modules.mobile.VOICE_MESSAGE_RECORDING_CONTAINER_PADDING_VERTICAL, borderRadius: importDefault(dependencyMap[10]).radii.xxl };
+obj = { transformOrigin: "<string:1091680213>", size: "/assets/design/components/Icon/native/redesign/generated/images", color: "MERCH_STORE", accessible: "HEADER", <string:3194070405>: "<string:1195507968>", paddingVertical: importDefault(dependencyMap[10]).modules.mobile.VOICE_MESSAGE_RECORDING_CONTAINER_PADDING_VERTICAL, borderRadius: importDefault(dependencyMap[10]).radii.xxl };
 obj.container = obj;
 obj.loading = {};
 const importDefaultResult = importDefault(dependencyMap[8]);
@@ -203,7 +203,7 @@ obj.dotDismissed = { backgroundColor: "transparent" };
 obj.waveformContainer = {};
 obj2 = { backgroundColor: importDefault(dependencyMap[10]).colors.WHITE, borderRadius: 1 };
 obj.waveformBar = obj2;
-obj.durationContainer = { -9223372036854775808: true, filter: true };
+obj.durationContainer = {};
 const obj3 = {};
 const obj1 = { backgroundColor: importDefault(dependencyMap[10]).unsafe_rawColors.RED_400 };
 const obj9 = arg1(dependencyMap[11]);

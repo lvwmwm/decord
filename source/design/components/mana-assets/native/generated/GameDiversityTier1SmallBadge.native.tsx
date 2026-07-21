@@ -1,10 +1,10 @@
-// Module ID: 6113
-// Function ID: 50043
+// Module ID: 6115
+// Function ID: 50086
 // Name: GameDiversityTier1SmallBadge
 // Dependencies: []
 // Exports: GameDiversityTier1SmallBadge
 
-// Module 6113 (GameDiversityTier1SmallBadge)
+// Module 6115 (GameDiversityTier1SmallBadge)
 const jsx = require(dependencyMap[0]).jsx;
 const _module = require(dependencyMap[3]);
 const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/GameDiversityTier1SmallBadge.native.tsx");

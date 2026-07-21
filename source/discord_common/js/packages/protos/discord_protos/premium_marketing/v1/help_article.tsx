@@ -1,9 +1,9 @@
-// Module ID: 7127
-// Function ID: 57406
+// Module ID: 7131
+// Function ID: 57417
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
-// Module 7127 (_isNativeReflectConstruct)
+// Module 7131 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -25,14 +25,14 @@ let tmp2 = (MessageType) => {
       self = this;
       tmp = closure_3(this, HelpArticle$Type);
       items = [, , ];
-      items[0] = {};
-      items[1] = { body: "body", guildId: "scalar", ao: 9, "": 0 };
-      obj = { emojiId: "y", emojiName: "J61px0", userId: "findKey" };
+      items[0] = { 9223372036854775807: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000006057115113467196, 0: -7047488208045633000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, 9223372036854775807: -250027185058929820000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, no: null };
+      items[1] = { 9223372036854775807: "body", 0: "scalar", 9223372036854775807: 9, no: 0 };
+      obj = { "Null": "y", "Null": "USER_ADD_PHONE", "Null": "entitlementType" };
       obj.T = function T() {
         return callback(closure_1[6]).LocalizedString;
       };
       items[2] = obj;
-      items1 = ["reason:unsupported_issuing_country"];
+      items1 = [0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000015235211824781937];
       items1[1] = items;
       obj2 = closure_6(HelpArticle$Type);
       tmp2 = closure_5;
@@ -52,7 +52,7 @@ let tmp2 = (MessageType) => {
   let obj = {
     key: "create",
     value(arr) {
-      let obj = {};
+      let obj = { 0: "\u{1F9BB}\u{1F3FF}", -9223372036854775808: true };
       const _Object = Object;
       obj = { enumerable: false, value: this };
       _Object.defineProperty(obj, HelpArticle$Type(closure_1[7]).MESSAGE_TYPE, obj);

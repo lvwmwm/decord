@@ -1,9 +1,9 @@
-// Module ID: 5918
-// Function ID: 49751
+// Module ID: 5920
+// Function ID: 49794
 // Name: metadata
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 5918 (metadata)
+// Module 5920 (metadata)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/BunnyIllocon-2x.png.js");
 

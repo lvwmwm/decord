@@ -1,12 +1,12 @@
-// Module ID: 13247
-// Function ID: 100582
+// Module ID: 13254
+// Function ID: 100605
 // Name: items2
 // Dependencies: []
 
-// Module 13247 (items2)
+// Module 13254 (items2)
 let obj = {};
 obj = {};
-obj = {};
+obj = { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null };
 const items = [{ title: importDefault(dependencyMap[0]).S5cB9e, string_id: "111_realtime" }, , , ];
 const obj1 = { title: importDefault(dependencyMap[0]).S5cB9e, string_id: "111_realtime" };
 items[1] = { title: importDefault(dependencyMap[0]).UzRF+8, string_id: "222_social" };
@@ -14,55 +14,55 @@ const obj2 = { title: importDefault(dependencyMap[0]).UzRF+8, string_id: "222_so
 items[2] = { title: importDefault(dependencyMap[0]).zRKbpz, string_id: "333_server" };
 const obj3 = { title: importDefault(dependencyMap[0]).zRKbpz, string_id: "333_server" };
 items[3] = { title: importDefault(dependencyMap[0]).q5M7HV, string_id: "444_other" };
-const obj5 = { alignSelf: -1956494846, overflow: 727515140, left: 285278210, position: "/assets/.cache/intl/bW9kdWxlcy9nb19saXZlL3dlYi9tb2RhbA==", borderColor: null, width: "bf3f75e9e4ca4f1b6c480739b8f86e93", title: importDefault(dependencyMap[0]).IUH/Oe, id: arg1(dependencyMap[1]).NotifSettings.CALLS, behavior: {} };
+const obj5 = { alignSelf: "selectedSubPage", overflow: "isArrayBuffer", left: "SERVER_GUIDE_CHANNEL_SELECTED", position: "ExplicitContentFilterToDmSpamFilterV2", borderColor: "r", width: "INSTANT", title: importDefault(dependencyMap[0]).IUH/Oe, id: arg1(dependencyMap[1]).NotifSettings.CALLS, behavior: { "Bool(false)": 419, "Bool(false)": 0, "Bool(false)": 0, "Bool(false)": 68987969, "Bool(false)": -1556020992 } };
 const items1 = [obj5, , , , , , , , , , , , , , , , , , , , , , , , ];
-const obj6 = { alignSelf: null, overflow: null, left: null, position: null, borderColor: null, width: null, title: importDefault(dependencyMap[0]).VeBD1N, id: arg1(dependencyMap[1]).NotifSettings.VOICE_CONNECTED, behavior: {} };
+const obj6 = { alignSelf: 1593836669, overflow: 16777771, left: 1345667345, position: 1124139010, borderColor: 152916, width: 152915, title: importDefault(dependencyMap[0]).VeBD1N, id: arg1(dependencyMap[1]).NotifSettings.VOICE_CONNECTED, behavior: { "Bool(false)": "de-CH", "Bool(false)": "de", "Bool(false)": "forumThreadCreated", "Bool(false)": "333_server" } };
 items1[1] = obj6;
 const obj4 = { title: importDefault(dependencyMap[0]).q5M7HV, string_id: "444_other" };
 items1[2] = { title: importDefault(dependencyMap[0]).NGdNZb, id: arg1(dependencyMap[1]).NotifSettings.DMS, behavior: obj };
+const obj8 = { alignSelf: -72623678321274280000000000000000000000000000000000000000000000000000000000000000000000000000000000, overflow: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001548939182689507, left: 0.00000000000000000000000000000000000000000000000000000000000000000007422708090843926, position: 131130.46728517392, borderColor: 2461064245594140300000000000000000000000000000000000000000000000000000000000000, width: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000259208707252247, title: importDefault(dependencyMap[0]).NxgGZA, id: arg1(dependencyMap[1]).NotifSettings.FRIEND_REQUESTS, behavior: obj };
+items1[3] = obj8;
 const obj7 = { title: importDefault(dependencyMap[0]).NGdNZb, id: arg1(dependencyMap[1]).NotifSettings.DMS, behavior: obj };
-items1[3] = { title: importDefault(dependencyMap[0]).NxgGZA, id: arg1(dependencyMap[1]).NotifSettings.FRIEND_REQUESTS, behavior: obj };
-const obj8 = { title: importDefault(dependencyMap[0]).NxgGZA, id: arg1(dependencyMap[1]).NotifSettings.FRIEND_REQUESTS, behavior: obj };
 items1[4] = { title: importDefault(dependencyMap[0]).MOjygY, id: arg1(dependencyMap[1]).NotifSettings.POLLS, behavior: obj };
 const obj9 = { title: importDefault(dependencyMap[0]).MOjygY, id: arg1(dependencyMap[1]).NotifSettings.POLLS, behavior: obj };
 items1[5] = { title: importDefault(dependencyMap[0]).wv4QHR, id: arg1(dependencyMap[1]).NotifSettings.REACTIONS, string_id: "reactions", category: "222_social", behavior: obj };
-const obj11 = { "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, title: importDefault(dependencyMap[0]).n0Wp6j, id: arg1(dependencyMap[1]).NotifSettings.MISSED_MESSAGES_LOW, behavior: obj, variations: [] };
-items1[6] = obj11;
-const obj12 = { "Bool(false)": null, "Bool(false)": "\u{1F9B6}\u{1F3FB}", "Bool(false)": true, "Bool(false)": null, "Bool(false)": 11, "Bool(false)": "status", title: importDefault(dependencyMap[0]).n0Wp6j, id: arg1(dependencyMap[1]).NotifSettings.MISSED_MESSAGES_DEFAULT, behavior: obj, variations: [24573934974154670000000000000000000000000000000000000000000000000000000000000] };
+const obj10 = { title: importDefault(dependencyMap[0]).wv4QHR, id: arg1(dependencyMap[1]).NotifSettings.REACTIONS, string_id: "reactions", category: "222_social", behavior: obj };
+items1[6] = { title: importDefault(dependencyMap[0]).n0Wp6j, id: arg1(dependencyMap[1]).NotifSettings.MISSED_MESSAGES_LOW, behavior: obj, variations: [] };
+const obj12 = { "Bool(false)": null, "Bool(false)": "\u{1F9B6}\u{1F3FB}", "Bool(false)": true, "Bool(false)": null, "Bool(false)": 11, "Bool(false)": "status", title: importDefault(dependencyMap[0]).n0Wp6j, id: arg1(dependencyMap[1]).NotifSettings.MISSED_MESSAGES_DEFAULT, behavior: obj, variations: [15189782894321462000000000000000000000000000000000000000000000000000000000000000000] };
 items1[7] = obj12;
 const obj13 = { "Bool(false)": null, "Bool(false)": "\u{1F9B6}\u{1F3FB}", "Bool(false)": true, "Bool(false)": null, "Bool(false)": 11, "Bool(false)": "status", title: importDefault(dependencyMap[0]).n0Wp6j, id: arg1(dependencyMap[1]).NotifSettings.MISSED_MESSAGES_DEFAULT, behavior: obj, variations: [true] };
 items1[8] = obj13;
-const obj14 = { "Bool(false)": "#EB459F", "Bool(false)": "M242.488 14.684c-.059.22 8.288-8.651 1.03-11.14-7.258-2.488.959 4.07-1.03 11.14Z", "Bool(false)": "#EB459F", "Bool(false)": "M242.397 14.509s9.202-11.38 15.838-3.713c6.635 7.665-9.111.687-15.838 3.713Z", "Bool(false)": "url(#e)", "Bool(false)": "M223.016 61.203c11.849 0 21.455-9.605 21.455-21.455 0-11.85-9.606-21.455-21.455-21.455-11.85 0-21.455 9.606-21.455 21.455 0 11.85 9.605 21.456 21.455 21.456Z", title: importDefault(dependencyMap[0]).Iy9grw, id: arg1(dependencyMap[1]).NotifSettings.VOICE_ACTIVITY_LOW, behavior: obj, variations: [179, 180.838, 0, 60] };
+const obj14 = { "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, title: importDefault(dependencyMap[0]).Iy9grw, id: arg1(dependencyMap[1]).NotifSettings.VOICE_ACTIVITY_LOW, behavior: obj, variations: ["<string:1120993282>", "<string:3010527234>", "<string:822083584>", null] };
 items1[9] = obj14;
-const obj15 = { "Bool(false)": "true", "Bool(false)": "ach", "Bool(false)": "30", "Bool(false)": "true", "Bool(false)": "af", "Bool(false)": "20", title: importDefault(dependencyMap[0]).Iy9grw, id: arg1(dependencyMap[1]).NotifSettings.VOICE_ACTIVITY_DEFAULT, behavior: obj, variations: [true] };
-items1[10] = obj15;
-const obj16 = { "Bool(false)": "true", "Bool(false)": "ach", "Bool(false)": "30", "Bool(false)": "true", "Bool(false)": "af", "Bool(false)": "20", title: importDefault(dependencyMap[0]).Iy9grw, id: arg1(dependencyMap[1]).NotifSettings.VOICE_ACTIVITY_DEFAULT, behavior: obj, variations: [true] };
-items1[11] = obj16;
-const obj10 = { title: importDefault(dependencyMap[0]).wv4QHR, id: arg1(dependencyMap[1]).NotifSettings.REACTIONS, string_id: "reactions", category: "222_social", behavior: obj };
-items1[12] = { title: importDefault(dependencyMap[0]).9EDo+/, id: arg1(dependencyMap[1]).NotifSettings.GAMING_LOW, behavior: obj, variations: [] };
-const obj18 = { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, title: importDefault(dependencyMap[0]).9EDo+/, id: arg1(dependencyMap[1]).NotifSettings.GAMING_DEFAULT, behavior: obj, variations: [54166083] };
-items1[13] = obj18;
-const obj19 = { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, title: importDefault(dependencyMap[0]).9EDo+/, id: arg1(dependencyMap[1]).NotifSettings.GAMING_DEFAULT, behavior: obj, variations: [true] };
-items1[14] = obj19;
-const obj20 = { "Null": null, "Null": "sEAnVH", "Null": "Boolean", "Null": "isArray", "Null": "scrollableRef", "Null": "leaderboardsDisabled", "Null": "handshake_token", title: importDefault(dependencyMap[0]).vcrTV5, id: arg1(dependencyMap[1]).NotifSettings.FRIEND_ACTIVITY_LOW, behavior: obj, variations: ["ani muk", "dr\u017Eet jazyk za zuby", "jako ryba", "ml\u010Det"] };
-items1[15] = obj20;
-const obj21 = { "Null": null, "Null": "sEAnVH", "Null": "Boolean", "Null": "isArray", "Null": "scrollableRef", "Null": "leaderboardsDisabled", "Null": "handshake_token", title: importDefault(dependencyMap[0]).vcrTV5, id: arg1(dependencyMap[1]).NotifSettings.FRIEND_ACTIVITY_DEFAULT, behavior: obj, variations: [null] };
-items1[16] = obj21;
-const obj22 = { "Null": null, "Null": "sEAnVH", "Null": "Boolean", "Null": "isArray", "Null": "scrollableRef", "Null": "leaderboardsDisabled", "Null": "handshake_token", title: importDefault(dependencyMap[0]).vcrTV5, id: arg1(dependencyMap[1]).NotifSettings.FRIEND_ACTIVITY_DEFAULT, behavior: obj, variations: [true] };
-items1[17] = obj22;
-const obj23 = { alignSelf: true, overflow: "/assets/.cache/intl/bW9kdWxlcy9nb19saXZlL3dlYi9tb2RhbA==", left: null, position: "17cd48318004f5d5807e97fb34409723", borderColor: "hu.messages.17cd48318004f5d5807e97fb34409723.compiled.messages", width: "jsona", title: importDefault(dependencyMap[0]).4qWUAO, id: arg1(dependencyMap[1]).NotifSettings.GUILD_MESSAGES, behavior: obj };
-items1[18] = obj23;
-const obj17 = { title: importDefault(dependencyMap[0]).9EDo+/, id: arg1(dependencyMap[1]).NotifSettings.GAMING_LOW, behavior: obj, variations: [] };
-items1[19] = { title: importDefault(dependencyMap[0]).HibKoy, id: arg1(dependencyMap[1]).NotifSettings.FORUM_NOTIFICATIONS, behavior: obj };
-const obj25 = { alignSelf: "off", overflow: true, left: "/assets/.cache/intl/bW9kdWxlcy9nb19saXZlL3dlYi9tb2RhbA==", position: null, borderColor: "887e8ac454565dd48d794f382c8d2d9c", width: "ja.messages.887e8ac454565dd48d794f382c8d2d9c.compiled.messages", title: importDefault(dependencyMap[0]).40TIqW, id: arg1(dependencyMap[1]).NotifSettings.GUILD_EVENT_NOTIFICATIONS, behavior: obj };
+const obj11 = { title: importDefault(dependencyMap[0]).n0Wp6j, id: arg1(dependencyMap[1]).NotifSettings.MISSED_MESSAGES_LOW, behavior: obj, variations: [] };
+items1[10] = { title: importDefault(dependencyMap[0]).Iy9grw, id: arg1(dependencyMap[1]).NotifSettings.VOICE_ACTIVITY_DEFAULT, behavior: obj, variations: [284214097] };
+const obj15 = { title: importDefault(dependencyMap[0]).Iy9grw, id: arg1(dependencyMap[1]).NotifSettings.VOICE_ACTIVITY_DEFAULT, behavior: obj, variations: [284214097] };
+items1[11] = { title: importDefault(dependencyMap[0]).Iy9grw, id: arg1(dependencyMap[1]).NotifSettings.VOICE_ACTIVITY_DEFAULT, behavior: obj, variations: [true] };
+const obj16 = { title: importDefault(dependencyMap[0]).Iy9grw, id: arg1(dependencyMap[1]).NotifSettings.VOICE_ACTIVITY_DEFAULT, behavior: obj, variations: [true] };
+items1[12] = { title: importDefault(dependencyMap[0]).9EDo+/, id: arg1(dependencyMap[1]).NotifSettings.GAMING_LOW, behavior: obj, variations: ["SINISTRE", "construct", "isArray", "newtonRaphsonIterate"] };
+const obj17 = { title: importDefault(dependencyMap[0]).9EDo+/, id: arg1(dependencyMap[1]).NotifSettings.GAMING_LOW, behavior: obj, variations: ["SINISTRE", "construct", "isArray", "newtonRaphsonIterate"] };
+items1[13] = { title: importDefault(dependencyMap[0]).9EDo+/, id: arg1(dependencyMap[1]).NotifSettings.GAMING_DEFAULT, behavior: obj, variations: [false] };
+const obj18 = { title: importDefault(dependencyMap[0]).9EDo+/, id: arg1(dependencyMap[1]).NotifSettings.GAMING_DEFAULT, behavior: obj, variations: [false] };
+items1[14] = { title: importDefault(dependencyMap[0]).9EDo+/, id: arg1(dependencyMap[1]).NotifSettings.GAMING_DEFAULT, behavior: obj, variations: [true] };
+const obj19 = { title: importDefault(dependencyMap[0]).9EDo+/, id: arg1(dependencyMap[1]).NotifSettings.GAMING_DEFAULT, behavior: obj, variations: [true] };
+items1[15] = { title: importDefault(dependencyMap[0]).vcrTV5, id: arg1(dependencyMap[1]).NotifSettings.FRIEND_ACTIVITY_LOW, behavior: obj, variations: [] };
+const obj20 = { title: importDefault(dependencyMap[0]).vcrTV5, id: arg1(dependencyMap[1]).NotifSettings.FRIEND_ACTIVITY_LOW, behavior: obj, variations: [] };
+items1[16] = { title: importDefault(dependencyMap[0]).vcrTV5, id: arg1(dependencyMap[1]).NotifSettings.FRIEND_ACTIVITY_DEFAULT, behavior: obj, variations: ["DEFAULT_ENABLE_CONTENT_PANNING_GESTURE"] };
+const obj21 = { title: importDefault(dependencyMap[0]).vcrTV5, id: arg1(dependencyMap[1]).NotifSettings.FRIEND_ACTIVITY_DEFAULT, behavior: obj, variations: ["DEFAULT_ENABLE_CONTENT_PANNING_GESTURE"] };
+items1[17] = { title: importDefault(dependencyMap[0]).vcrTV5, id: arg1(dependencyMap[1]).NotifSettings.FRIEND_ACTIVITY_DEFAULT, behavior: obj, variations: [true] };
+const obj22 = { title: importDefault(dependencyMap[0]).vcrTV5, id: arg1(dependencyMap[1]).NotifSettings.FRIEND_ACTIVITY_DEFAULT, behavior: obj, variations: [true] };
+items1[18] = { title: importDefault(dependencyMap[0]).4qWUAO, id: arg1(dependencyMap[1]).NotifSettings.GUILD_MESSAGES, behavior: obj };
+const obj24 = { alignSelf: false, overflow: "off", left: true, position: "/assets/.cache/intl/bW9kdWxlcy9nb19saXZlL3dlYi9tb2RhbA==", borderColor: null, width: "d005633df420eefb349c299b1f8740a8", title: importDefault(dependencyMap[0]).HibKoy, id: arg1(dependencyMap[1]).NotifSettings.FORUM_NOTIFICATIONS, behavior: obj };
+items1[19] = obj24;
+const obj25 = { alignSelf: null, overflow: null, left: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000015489391843120906, position: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000018836765794125565, borderColor: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000729437437025171, width: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000033152978663945517, title: importDefault(dependencyMap[0]).40TIqW, id: arg1(dependencyMap[1]).NotifSettings.GUILD_EVENT_NOTIFICATIONS, behavior: obj };
 items1[20] = obj25;
-const obj26 = { alignSelf: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001531020522832483, overflow: -0.000000000000000000000000000000000000000000000001369234282108705, left: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007294379938368794, position: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003366791415649393, borderColor: -0.00000000000000000000005668415773728848, width: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007295238548906015, title: importDefault(dependencyMap[0]).4n388K, id: arg1(dependencyMap[1]).NotifSettings.STAGE_NOTIFICATIONS, behavior: obj };
-items1[21] = obj26;
-const obj24 = { title: importDefault(dependencyMap[0]).HibKoy, id: arg1(dependencyMap[1]).NotifSettings.FORUM_NOTIFICATIONS, behavior: obj };
+const obj23 = { title: importDefault(dependencyMap[0]).4qWUAO, id: arg1(dependencyMap[1]).NotifSettings.GUILD_MESSAGES, behavior: obj };
+items1[21] = { title: importDefault(dependencyMap[0]).4n388K, id: arg1(dependencyMap[1]).NotifSettings.STAGE_NOTIFICATIONS, behavior: obj };
+const obj26 = { title: importDefault(dependencyMap[0]).4n388K, id: arg1(dependencyMap[1]).NotifSettings.STAGE_NOTIFICATIONS, behavior: obj };
 items1[22] = { title: importDefault(dependencyMap[0]).kIrLfg, id: arg1(dependencyMap[1]).NotifSettings.OTHER_GUILD, behavior: obj };
-const obj28 = { alignSelf: true, overflow: "/assets/.cache/intl/bW9kdWxlcy9nb19saXZlL3dlYi9tb2RhbA==", left: null, position: "8fb6d10a66921d25bf5e7cd399626d88", borderColor: "nl.messages.8fb6d10a66921d25bf5e7cd399626d88.compiled.messages", width: "jsona", title: importDefault(dependencyMap[0]).T+79Eo, id: arg1(dependencyMap[1]).NotifSettings.OTHER, behavior: obj };
+const obj28 = { alignSelf: false, overflow: false, left: false, position: false, borderColor: false, width: false, title: importDefault(dependencyMap[0]).T+79Eo, id: arg1(dependencyMap[1]).NotifSettings.OTHER, behavior: obj };
 items1[23] = obj28;
-const obj29 = { alignSelf: null, overflow: null, left: null, position: null, borderColor: null, width: "r", title: importDefault(dependencyMap[0]).zJlwvV, id: arg1(dependencyMap[1]).NotifSettings.SYSTEM, behavior: obj };
+const obj29 = { alignSelf: true, overflow: true, left: true, position: true, borderColor: true, width: true, title: importDefault(dependencyMap[0]).zJlwvV, id: arg1(dependencyMap[1]).NotifSettings.SYSTEM, behavior: obj };
 items1[24] = obj29;
 const obj30 = {};
 const items2 = [arg1(dependencyMap[1]).NotifSettings.VOICE_ACTIVITY_LOW, arg1(dependencyMap[1]).NotifSettings.VOICE_ACTIVITY_DEFAULT];

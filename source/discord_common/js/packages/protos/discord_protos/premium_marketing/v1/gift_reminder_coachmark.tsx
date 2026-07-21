@@ -1,9 +1,9 @@
-// Module ID: 7140
-// Function ID: 57584
+// Module ID: 7144
+// Function ID: 57595
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
-// Module 7140 (_isNativeReflectConstruct)
+// Module 7144 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -26,34 +26,34 @@ let tmp2 = (MessageType) => {
       tmp = closure_3(this, GiftReminderCoachmark$Type);
       items = [, , , , , ];
       items[0] = {};
-      items[1] = { body: "target_allocation", guildId: "scalar", ao: 5, "": "background_asset_url" };
+      items[1] = { 9223372036854775807: "background_asset", 0: "message", 9223372036854775807: 0, no: 50.06 };
       items[2] = {};
       items[3] = {
         T() {
               return callback(closure_1[6]).ThemeAwareAsset;
             }
       };
-      items[4] = {
-        T() {
-              return callback(closure_1[7]).LocalizedString;
-            }
+      obj = { "Null": "message", "Null": 0, "Null": 16.95 };
+      obj.T = function T() {
+        return callback(closure_1[7]).LocalizedString;
       };
+      items[4] = obj;
       items[5] = {
         T() {
               return callback(closure_1[7]).LocalizedString;
             }
       };
-      items1 = [1816715670];
+      items1 = [null];
       items1[1] = items;
-      obj = closure_6(GiftReminderCoachmark$Type);
+      obj2 = closure_6(GiftReminderCoachmark$Type);
       tmp2 = closure_5;
       if (closure_8()) {
         tmp4 = globalThis;
         _Reflect = Reflect;
         tmp5 = closure_6;
-        constructResult = Reflect.construct(obj, items1, closure_6(self).constructor);
+        constructResult = Reflect.construct(obj2, items1, closure_6(self).constructor);
       } else {
-        constructResult = obj.apply(self, items1);
+        constructResult = obj2.apply(self, items1);
       }
       return tmp2(self, constructResult);
     }
@@ -63,7 +63,7 @@ let tmp2 = (MessageType) => {
   let obj = {
     key: "create",
     value(arr) {
-      let obj = { rejectWithError: null, retries: null, en-US: null };
+      let obj = { "Bool(true)": false, "Bool(true)": false, "Bool(false)": false };
       const _Object = Object;
       obj = { enumerable: false, value: this };
       _Object.defineProperty(obj, GiftReminderCoachmark$Type(closure_1[8]).MESSAGE_TYPE, obj);

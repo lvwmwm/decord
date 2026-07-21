@@ -1,10 +1,10 @@
-// Module ID: 10007
-// Function ID: 77373
+// Module ID: 10013
+// Function ID: 77391
 // Name: isNewLayoutBetter
-// Dependencies: []
+// Dependencies: [284214097]
 // Exports: default
 
-// Module 10007 (isNewLayoutBetter)
+// Module 10013 (isNewLayoutBetter)
 function isNewLayoutBetter(unusedSpace, unusedSpace2) {
   if (0 !== unusedSpace2.unusedSpace) {
     if (unusedSpace.unusedSpace !== unusedSpace2.unusedSpace) {
@@ -56,7 +56,7 @@ export default function fitCardsInGrid(arg0) {
   let cardCount;
   let gutterSize;
   ({ cardCount, gutterSize, availableWidth, availableHeight } = arg0);
-  let obj = { unitOfTime: "%NumberPrototype%", billingFacetRecord: "isArrayBuffer", noise_canceller_error: "upsellButtonContainer", VOICE_THREAD_PARENT_CHANNEL_TYPES: "species", parseTopic: "man_mage" };
+  let obj = { icon: null, forEach: null, variant: null, application: null, r: null };
   let num = 1;
   let tmp = obj;
   if (1 <= cardCount) {

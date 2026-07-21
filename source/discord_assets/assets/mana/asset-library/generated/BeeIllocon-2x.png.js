@@ -1,9 +1,9 @@
-// Module ID: 5892
-// Function ID: 49712
+// Module ID: 5894
+// Function ID: 49755
 // Name: metadata
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 5892 (metadata)
+// Module 5894 (metadata)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/BeeIllocon-2x.png.js");
 

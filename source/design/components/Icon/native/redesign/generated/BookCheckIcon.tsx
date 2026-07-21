@@ -1,10 +1,10 @@
-// Module ID: 4628
-// Function ID: 40224
+// Module ID: 4630
+// Function ID: 40265
 // Name: BookCheckIcon
 // Dependencies: []
 // Exports: BookCheckIcon
 
-// Module 4628 (BookCheckIcon)
+// Module 4630 (BookCheckIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/BookCheckIcon.tsx");

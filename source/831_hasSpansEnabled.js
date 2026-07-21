@@ -1,7 +1,7 @@
 // Module ID: 831
 // Function ID: 9257
 // Name: hasSpansEnabled
-// Dependencies: []
+// Dependencies: [0]
 
 // Module 831 (hasSpansEnabled)
 Object.defineProperty(arg5, Symbol.toStringTag, { value: "Module" });

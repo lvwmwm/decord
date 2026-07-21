@@ -1,10 +1,10 @@
-// Module ID: 8841
-// Function ID: 69801
+// Module ID: 8845
+// Function ID: 69813
 // Name: getOptionFromSettingsFiltered
 // Dependencies: []
 // Exports: getLastUsedVideoBackgroundOption, useLastUsedVideoBackgroundOption
 
-// Module 8841 (getOptionFromSettingsFiltered)
+// Module 8845 (getOptionFromSettingsFiltered)
 function getOptionFromSettingsFiltered(prop, id) {
   const videoBackgroundOptionFromProto = id(dependencyMap[3]).getVideoBackgroundOptionFromProto(prop, id.id);
   const obj = id(dependencyMap[3]);

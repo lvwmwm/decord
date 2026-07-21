@@ -1,10 +1,10 @@
-// Module ID: 10717
-// Function ID: 83386
+// Module ID: 10723
+// Function ID: 83409
 // Name: VoicePanelRiveMicButton
 // Dependencies: []
 // Exports: VoicePanelRiveMicButton
 
-// Module 10717 (VoicePanelRiveMicButton)
+// Module 10723 (VoicePanelRiveMicButton)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 const jsx = arg1(dependencyMap[2]).jsx;
@@ -14,7 +14,7 @@ export const VoicePanelRiveMicButton = function VoicePanelRiveMicButton(arg0) {
   let color;
   let muted;
   ({ color, muted } = arg0);
-  let obj = { style: { -: 24, 8: 24, 0: null } };
+  let obj = { style: { areRequestOptionsEqual: 24, SMS_CODE_LENGTH: 24, getMaxListeners: null } };
   obj = { dataBinding: obj };
   obj = { fill: color, on: !muted };
   let str = "On";

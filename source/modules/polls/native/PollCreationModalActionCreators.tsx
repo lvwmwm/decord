@@ -1,10 +1,10 @@
-// Module ID: 11300
-// Function ID: 87934
+// Module ID: 11306
+// Function ID: 87957
 // Name: openCreatePollModal
 // Dependencies: []
 // Exports: closeCreatePollModal, openCreatePollModal
 
-// Module 11300 (openCreatePollModal)
+// Module 11306 (openCreatePollModal)
 const _module = require(dependencyMap[3]);
 const result = _module.fileFinishedImporting("modules/polls/native/PollCreationModalActionCreators.tsx");
 

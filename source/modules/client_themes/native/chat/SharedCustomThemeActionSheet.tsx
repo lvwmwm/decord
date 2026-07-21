@@ -1,10 +1,10 @@
-// Module ID: 11074
-// Function ID: 86131
+// Module ID: 11080
+// Function ID: 86154
 // Name: sharedClientThemeToThemeSettings
 // Dependencies: []
 // Exports: default
 
-// Module 11074 (sharedClientThemeToThemeSettings)
+// Module 11080 (sharedClientThemeToThemeSettings)
 function sharedClientThemeToThemeSettings(sharedClientTheme) {
   if (undefined !== sharedClientTheme) {
     const obj = {};
@@ -63,7 +63,7 @@ const PremiumTypes = arg1(dependencyMap[5]).PremiumTypes;
 const tmp2 = arg1(dependencyMap[1]);
 ({ jsx: closure_12, jsxs: closure_13 } = arg1(dependencyMap[6]));
 let obj = arg1(dependencyMap[7]);
-obj = { contentWrapper: { color: null, backgroundColor: null }, centeredText: { textAlign: "center" }, ctaContainer: {}, nitroWheelButton: { hoverGestureHandlerProps: 24, paddingVertical: 24, display: null } };
+obj = { contentWrapper: { width: null, marginHorizontal: null }, centeredText: { textAlign: "center" }, ctaContainer: {}, nitroWheelButton: {} };
 obj = { borderRadius: importDefault(dependencyMap[8]).radii.round };
 obj.getNitroButton = obj;
 let closure_14 = obj.createStyles(obj);

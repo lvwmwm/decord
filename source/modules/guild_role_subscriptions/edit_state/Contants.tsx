@@ -1,11 +1,12 @@
-// Module ID: 13988
-// Function ID: 106418
+// Module ID: 13995
+// Function ID: 106441
 // Name: result
 // Dependencies: []
 
-// Module 13988 (result)
+// Module 13995 (result)
 const _module = require(dependencyMap[1]);
-const result = _module.constructGuildRoleInPlace({ permissions: require(dependencyMap[0]).Permissions.SEND_MESSAGES, colors: { flexGrow: -0.000000000000000000000000000000000000000000000000000000000000000006151499469494149, marginTop: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000601989533400987, marginBottom: 32458000.001047716 }, colorStrings: { "Null": true, "Null": true, "Null": true }, tags: {}, version: 0 });
+const obj = { "Null": "postal-address-region", "Null": "postal-address-locality", "Null": "birthdate-full", "Null": "birthdate-day", "Null": "birthdate-month", "Null": "birthdate-year", "Null": "cc-csc", "Null": "cc-exp", "Null": "cc-exp-month", "Null": "cc-exp-year", "Null": "cc-number", "Null": "postal-address-country", "Null": "password", "Null": "email", "Null": "name-prefix", "Null": "name-suffix", permissions: require(dependencyMap[0]).Permissions.SEND_MESSAGES, colors: {}, colorStrings: { -9223372036854775808: true, 0: true, 0: true }, tags: {}, version: 0 };
+const result = _module.constructGuildRoleInPlace(obj);
 const _module1 = require(dependencyMap[2]);
 const result1 = _module1.fileFinishedImporting("modules/guild_role_subscriptions/edit_state/Contants.tsx");
 

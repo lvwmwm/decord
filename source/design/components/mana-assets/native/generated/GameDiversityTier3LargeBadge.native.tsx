@@ -1,10 +1,10 @@
-// Module ID: 6119
-// Function ID: 50052
+// Module ID: 6121
+// Function ID: 50095
 // Name: GameDiversityTier3LargeBadge
 // Dependencies: []
 // Exports: GameDiversityTier3LargeBadge
 
-// Module 6119 (GameDiversityTier3LargeBadge)
+// Module 6121 (GameDiversityTier3LargeBadge)
 const jsx = require(dependencyMap[0]).jsx;
 const _module = require(dependencyMap[3]);
 const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/GameDiversityTier3LargeBadge.native.tsx");

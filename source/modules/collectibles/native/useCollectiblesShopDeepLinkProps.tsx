@@ -1,24 +1,23 @@
-// Module ID: 14345
-// Function ID: 108353
+// Module ID: 14352
+// Function ID: 108376
 // Name: useCollectiblesShopDeepLinkProps
 // Dependencies: [0, 0, 0, 0, 0, 0]
 // Exports: useCollectiblesShopDeepLinkProps
 
-// Module 14345 (useCollectiblesShopDeepLinkProps)
-import { useMemo } from "result";
-import closure_3 from "result";
-import closure_4 from "result";
-import result from "result";
+// Module 14352 (useCollectiblesShopDeepLinkProps)
+import { useMemo } from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
+import closure_4 from "__exportStarResult1";
 
 let closure_5 = {};
-result = result.fileFinishedImporting("modules/collectibles/native/useCollectiblesShopDeepLinkProps.tsx");
+const result = require("__exportStarResult1").fileFinishedImporting("modules/collectibles/native/useCollectiblesShopDeepLinkProps.tsx");
 
 export const useCollectiblesShopDeepLinkProps = function useCollectiblesShopDeepLinkProps(categories) {
   categories = categories.categories;
   const require = categories;
   const products = categories.products;
   const dependencyMap = products;
-  const items = [closure_3, closure_4];
+  const items = [__exportStarResult1, closure_4];
   const stateFromStoresObject = require(dependencyMap[3]).useStateFromStoresObject(items, () => {
     const initialProductSkuId = initialVariantIndex.initialProductSkuId;
     const categories = initialProductSkuId;
@@ -59,7 +58,7 @@ export const useCollectiblesShopDeepLinkProps = function useCollectiblesShopDeep
   const initialCategorySkuId = stateFromStoresObject.initialCategorySkuId;
   const useMemo = initialCategorySkuId;
   const initialBaseProductSkuId = stateFromStoresObject.initialBaseProductSkuId;
-  closure_3 = initialBaseProductSkuId;
+  __exportStarResult1 = initialBaseProductSkuId;
   const initialVariantIndex = stateFromStoresObject.initialVariantIndex;
   closure_4 = initialVariantIndex;
   const items1 = [initialBaseProductSkuId, initialVariantIndex, initialCategorySkuId, products, categories];
@@ -70,7 +69,7 @@ export const useCollectiblesShopDeepLinkProps = function useCollectiblesShopDeep
         let bound;
         if (null != products) {
           const _Math = Math;
-          bound = Math.max(0, products.findIndex((skuId) => skuId.skuId === closure_3));
+          bound = Math.max(0, products.findIndex((skuId) => skuId.skuId === __exportStarResult1));
         }
         obj.productIndex = bound;
         let bound1;

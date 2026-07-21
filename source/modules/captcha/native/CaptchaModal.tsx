@@ -1,10 +1,10 @@
-// Module ID: 15826
-// Function ID: 120997
+// Module ID: 15833
+// Function ID: 121021
 // Name: CaptchaModal
 // Dependencies: []
 // Exports: default
 
-// Module 15826 (CaptchaModal)
+// Module 15833 (CaptchaModal)
 let closure_3 = importAll(dependencyMap[0]);
 ({ Keyboard: closure_4, View: closure_5 } = arg1(dependencyMap[1]));
 let closure_6 = arg1(dependencyMap[2]).doesRegistrationHaveIdentityType;
@@ -15,7 +15,7 @@ const tmp3 = arg1(dependencyMap[3]);
 const tmp4 = arg1(dependencyMap[4]);
 let closure_11 = arg1(dependencyMap[5]).createStyles((arg0) => {
   let obj = {};
-  obj = { <string:1687568131>: -0.0014069081515246523, <string:2700805186>: -0.0001058445630777106 };
+  obj = { "Null": "absolute", "Null": 0 };
   let num = 8;
   if (arg0) {
     num = 32;
@@ -57,18 +57,18 @@ export default function CaptchaModal(arg0) {
   const effect = React.useEffect(() => {
     closure_4.dismiss();
   }, []);
-  let obj = { ONE_DAY: null, tintColor: null };
+  let obj = { 0: null, 9223372036854775807: null };
   obj = { style: tmp.contentContainer, spacing: 12 };
   const items1 = [callback(arg1(dependencyMap[11]).DisguiseSpotIllustration, { scale: 0.5 }), , ];
   obj = {};
-  const obj1 = { "Bool(true)": 1895826086, "Bool(true)": 16 };
+  const obj1 = { useEffect: true, top: true };
   if (null == headerText) {
     const intl = arg1(dependencyMap[13]).intl;
     headerText = intl.string(arg1(dependencyMap[13]).t.FpoiHe);
   }
   obj1.children = headerText;
   const items2 = [callback(arg1(dependencyMap[12]).Text, obj1), ];
-  const obj2 = { INTEGRATION_CREATE: 3, ConstraintReasonCode: null, style: tmp.description };
+  const obj2 = { style: tmp.description };
   if (null == bodyText) {
     const intl2 = arg1(dependencyMap[13]).intl;
     bodyText = intl2.string(arg1(dependencyMap[13]).t./CidxO);

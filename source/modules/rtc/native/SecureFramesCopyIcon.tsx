@@ -1,10 +1,10 @@
-// Module ID: 8902
-// Function ID: 70260
+// Module ID: 8906
+// Function ID: 70272
 // Name: SecureFramesCopyIcon
 // Dependencies: []
 // Exports: default
 
-// Module 8902 (SecureFramesCopyIcon)
+// Module 8906 (SecureFramesCopyIcon)
 let closure_2 = importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/rtc/native/SecureFramesCopyIcon.tsx");

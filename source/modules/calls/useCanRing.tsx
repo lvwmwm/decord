@@ -1,10 +1,10 @@
-// Module ID: 8908
-// Function ID: 70288
+// Module ID: 8912
+// Function ID: 70300
 // Name: useCanRingToGuildVoiceChannel
 // Dependencies: []
 // Exports: canRingUsersInChannel, useCanRing
 
-// Module 8908 (useCanRingToGuildVoiceChannel)
+// Module 8912 (useCanRingToGuildVoiceChannel)
 function useCanRingToGuildVoiceChannel(user, DisconnectedUserRow, stateFromStores) {
   let str = DisconnectedUserRow;
   DisconnectedUserRow = user;

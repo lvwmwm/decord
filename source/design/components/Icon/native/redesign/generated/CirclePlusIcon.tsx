@@ -1,10 +1,10 @@
-// Module ID: 11237
-// Function ID: 87487
+// Module ID: 11243
+// Function ID: 87510
 // Name: CirclePlusIcon
 // Dependencies: []
 // Exports: CirclePlusIcon
 
-// Module 11237 (CirclePlusIcon)
+// Module 11243 (CirclePlusIcon)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 ({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[2]));
@@ -22,7 +22,7 @@ export const CirclePlusIcon = function CirclePlusIcon(color) {
   if (INTERACTIVE_ICON_DEFAULT === undefined) {
     INTERACTIVE_ICON_DEFAULT = importDefault(dependencyMap[3]).colors.INTERACTIVE_ICON_DEFAULT;
   }
-  let obj = {};
+  let obj = { disableCalls: "spring", _coerce: "linear", HOSTED_FIELDS_FIELD_NOT_PRESENT: "easeInEaseOut" };
   Object.setPrototypeOf(null);
   const merged = Object.assign(color, obj);
   obj = {};
@@ -31,7 +31,7 @@ export const CirclePlusIcon = function CirclePlusIcon(color) {
   const items = [callback(arg1(dependencyMap[4]).BaseIconImage, obj), ];
   const obj1 = { source: arg1(dependencyMap[6]), color: INTERACTIVE_ICON_DEFAULT };
   const items1 = [style];
-  const items2 = [...items1.flat(), { "Null": null, "Null": null }];
+  const items2 = [...items1.flat(), {}];
   obj1.style = items2;
   const merged2 = Object.assign(merged);
   items[1] = callback(arg1(dependencyMap[4]).BaseIconImage, obj1);

@@ -1,10 +1,10 @@
-// Module ID: 14650
-// Function ID: 110506
+// Module ID: 14657
+// Function ID: 110528
 // Name: showPushNotificationPromptModal
 // Dependencies: []
 // Exports: showPushNotificationPromptModal
 
-// Module 14650 (showPushNotificationPromptModal)
+// Module 14657 (showPushNotificationPromptModal)
 const PermissionStateType = require(dependencyMap[0]).PermissionStateType;
 let closure_4 = require(dependencyMap[1]).NUF_NOTIFICATION_MODAL_KEY;
 const _module = require(dependencyMap[6]);

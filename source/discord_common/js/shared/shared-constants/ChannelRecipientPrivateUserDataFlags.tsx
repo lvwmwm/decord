@@ -1,9 +1,9 @@
-// Module ID: 11080
-// Function ID: 86181
+// Module ID: 11086
+// Function ID: 86204
 // Name: ChannelRecipientPrivateUserDataFlags
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 11080 (ChannelRecipientPrivateUserDataFlags)
+// Module 11086 (ChannelRecipientPrivateUserDataFlags)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_common/js/shared/shared-constants/ChannelRecipientPrivateUserDataFlags.tsx");
 

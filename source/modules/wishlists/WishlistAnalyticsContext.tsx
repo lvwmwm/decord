@@ -1,10 +1,10 @@
-// Module ID: 12007
-// Function ID: 92814
+// Module ID: 12014
+// Function ID: 92837
 // Name: useWishlistAnalyticsContext
 // Dependencies: []
 // Exports: WishlistAnalyticsProvider
 
-// Module 12007 (useWishlistAnalyticsContext)
+// Module 12014 (useWishlistAnalyticsContext)
 function useWishlistAnalyticsContext() {
   return importAllResult.useContext(context);
 }

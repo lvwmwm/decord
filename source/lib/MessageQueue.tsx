@@ -1,10 +1,10 @@
-// Module ID: 7066
-// Function ID: 56503
+// Module ID: 7070
+// Function ID: 56514
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 // Exports: getFailedMessageId, isMessageDataCommand
 
-// Module 7066 (_isNativeReflectConstruct)
+// Module 7070 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -24,8 +24,8 @@ function isMessageDataSend(type) {
 function isMessageDataEdit(messageData) {
   return messageData.type === obj.EDIT;
 }
-let closure_3 = [-13457495169401926000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, 2764869907874712700000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000];
-let closure_4 = [-13457495169401926000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, 2764869907874712700000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000];
+let closure_3 = ["isDark", "GUILD_ROLE_CONNECTIONS_ELIGIBILITY"];
+let closure_4 = ["isDark", "GUILD_ROLE_CONNECTIONS_ELIGIBILITY"];
 let closure_5 = importDefault(dependencyMap[0]);
 let closure_6 = importDefault(dependencyMap[1]);
 let closure_7 = importDefault(dependencyMap[2]);
@@ -75,7 +75,7 @@ let tmp3 = (arg0) => {
         let channelId;
         let isCrossposted;
         messageId = messageId.messageId;
-        let obj = {};
+        let obj = { deeplinkSection: "spring", analytics: "linear", Ambient_Lightmode: "easeInEaseOut" };
         ({ channelId, isCrossposted } = messageId);
         Object.setPrototypeOf(null);
         const merged = Object.assign(messageId, obj);
@@ -285,7 +285,7 @@ let tmp3 = (arg0) => {
       if (store.get("send_fail_100")) {
         const logger = self.logger;
         logger.log("Skipping message send because send_fail_100 is enabled");
-        obj1 = { headers: {} };
+        obj1 = { "Bool(false)": "message", "Bool(false)": 2, "Bool(false)": "client_version", "Bool(false)": "message", "Bool(false)": "filter", "Bool(false)": null, headers: {} };
         arg1(null, obj1);
       } else {
         const _AbortController = AbortController;
@@ -334,7 +334,7 @@ let tmp3 = (arg0) => {
       if (store.get("send_fail_100")) {
         const logger = self.logger;
         logger.log("Skipping message send because send_fail_100 is enabled");
-        obj1 = { headers: {} };
+        obj1 = { "Bool(false)": "message", "Bool(false)": 2, "Bool(false)": "client_version", "Bool(false)": "message", "Bool(false)": "filter", "Bool(false)": null, headers: {} };
         arg1(null, obj1);
       } else {
         const _AbortController = AbortController;

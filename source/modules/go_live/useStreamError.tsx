@@ -1,10 +1,10 @@
-// Module ID: 10571
-// Function ID: 82524
+// Module ID: 10577
+// Function ID: 82547
 // Name: useStreamError
 // Dependencies: []
 // Exports: default
 
-// Module 10571 (useStreamError)
+// Module 10577 (useStreamError)
 let closure_2 = importDefault(dependencyMap[0]);
 let closure_3 = { [arg1(dependencyMap[1]).AVError.STREAM_SOUNDSHARE_FAILED]: 0, [arg1(dependencyMap[1]).AVError.STREAM_SEND_HIGH_PACKET_LOSS]: 1, [arg1(dependencyMap[1]).AVError.STREAM_VIEW_HIGH_PACKET_LOSS]: 1, [arg1(dependencyMap[1]).AVError.STREAM_SEND_LOW_FPS]: 2, [arg1(dependencyMap[1]).AVError.STREAM_VIEW_LOW_FPS]: 2, [arg1(dependencyMap[1]).AVError.STREAM_BAD_NETWORK_QUALITY]: 3 };
 const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/go_live/useStreamError.tsx");

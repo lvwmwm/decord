@@ -1,10 +1,10 @@
-// Module ID: 15629
-// Function ID: 119354
+// Module ID: 15636
+// Function ID: 119378
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 // Exports: useSetHasActiveVideoOutputSink
 
-// Module 15629 (_createForOfIteratorHelperLoose)
+// Module 15636 (_createForOfIteratorHelperLoose)
 function _createForOfIteratorHelperLoose(@@iterator) {
   let closure_0 = Symbol_iterator;
   @@iterator = "undefined" !== typeof Symbol;

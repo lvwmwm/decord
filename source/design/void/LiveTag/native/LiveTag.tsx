@@ -1,10 +1,10 @@
-// Module ID: 12904
-// Function ID: 98442
+// Module ID: 12911
+// Function ID: 98465
 // Name: LiveTag
 // Dependencies: []
 // Exports: default
 
-// Module 12904 (LiveTag)
+// Module 12911 (LiveTag)
 let num = 0;
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
@@ -31,7 +31,7 @@ export default function LiveTag(arg0) {
   const tmp = callback();
   let obj = { style: items };
   const items = [tmp.tag, style];
-  obj = { 1968435297: "/assets/design/components/LottieIcon/native/generated/lotties", 915925470: null, 1375298031: "3b38f8bf8ac6605b344df2f05c37673a" };
+  obj = { keFvXM: "/assets/design/components/LottieIcon/native/generated/lotties", address-line1: null, guildId: "3b38f8bf8ac6605b344df2f05c37673a" };
   const items1 = [tmp.tagText, textStyle];
   obj.style = items1;
   obj.allowFontScaling = allowFontScaling;

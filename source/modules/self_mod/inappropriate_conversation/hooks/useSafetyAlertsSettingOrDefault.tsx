@@ -1,10 +1,10 @@
-// Module ID: 10091
-// Function ID: 78167
+// Module ID: 10097
+// Function ID: 78185
 // Name: useSafetyAlertsSettingOrDefault
-// Dependencies: [469762087, 3154116624, 33554436, 4026531840]
+// Dependencies: [469762087, 3154116624, 33554436, 4026531840, 7955, 345088]
 // Exports: useSafetyAlertsSettingOrDefault
 
-// Module 10091 (useSafetyAlertsSettingOrDefault)
+// Module 10097 (useSafetyAlertsSettingOrDefault)
 let closure_2 = importDefault(dependencyMap[0]);
 let closure_3 = importDefault(dependencyMap[1]);
 const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/self_mod/inappropriate_conversation/hooks/useSafetyAlertsSettingOrDefault.tsx");

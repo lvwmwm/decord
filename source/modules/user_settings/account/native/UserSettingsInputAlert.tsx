@@ -1,9 +1,9 @@
-// Module ID: 13570
-// Function ID: 102899
+// Module ID: 13577
+// Function ID: 102922
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
-// Module 13570 (_isNativeReflectConstruct)
+// Module 13577 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -152,7 +152,7 @@ const tmp4 = (PureComponent) => {
   items[1] = obj;
   return callback(UserSettingsInputAlert, items);
 }(importAllResult.PureComponent);
-tmp4.defaultProps = { sendAnalytics: 24199658097191040000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, SEND_AS_GIFT: 0.00000000000000000000000000000000000000000000005825864423171726, GameMentionsExperiment: 0.000000000000000000000000000000000000000000000001557556520258325 };
+tmp4.defaultProps = { aria-level: null, numberOfLines: null, borderless: true };
 const tmp3 = arg1(dependencyMap[6]);
 const result = arg1(dependencyMap[13]).fileFinishedImporting("modules/user_settings/account/native/UserSettingsInputAlert.tsx");
 

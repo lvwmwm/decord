@@ -1,9 +1,20 @@
-// Module ID: 6818
-// Function ID: 53738
+// Module ID: 6824
+// Function ID: 53787
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [0, 0, 4294967295, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 
-// Module 6818 (_isNativeReflectConstruct)
+// Module 6824 (_isNativeReflectConstruct)
+import closure_3 from "__exportStarResult1";
+import closure_4 from "__exportStarResult1";
+import closure_6 from "__exportStarResult1";
+import closure_7 from "__exportStarResult1";
+import closure_8 from "__exportStarResult1";
+import closure_9 from "__exportStarResult1";
+import closure_10 from "__exportStarResult1";
+import closure_11 from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
+
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -195,16 +206,8 @@ function handleLoadThreadsSuccess(firstMessages) {
   }
   return tmp;
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
 let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-let closure_8 = importDefault(dependencyMap[5]);
-let closure_9 = importDefault(dependencyMap[6]);
-let closure_10 = importDefault(dependencyMap[7]);
-let closure_11 = importDefault(dependencyMap[8]);
-({ MessageTypes: closure_12, MessageTypesWithLazyLoadedReferences: closure_13 } = arg1(dependencyMap[9]));
+({ MessageTypes: closure_12, MessageTypesWithLazyLoadedReferences: closure_13 } = __exportStarResult1);
 let obj = { LOADED: 0, [0]: "LOADED", NOT_LOADED: 1, [1]: "NOT_LOADED", DELETED: 2, [2]: "DELETED" };
 obj = { state: obj.NOT_LOADED };
 let closure_15 = Object.freeze(obj);
@@ -485,7 +488,7 @@ let tmp6 = (Store) => {
     }
   };
   return callback2(ReferencedMessageStore, items);
-}(importDefault(dependencyMap[13]).Store);
+}(require("__exportStarResult1").Store);
 tmp6.displayName = "ReferencedMessageStore";
 obj = {
   CACHE_LOADED: function handleCacheLoaded(messages) {
@@ -591,9 +594,8 @@ obj = {
   CONNECTION_OPEN: resetState,
   LOGOUT: resetState
 };
-tmp6 = new tmp6(importDefault(dependencyMap[14]), obj);
-const tmp2 = arg1(dependencyMap[9]);
-const result = arg1(dependencyMap[15]).fileFinishedImporting("modules/replies/ReferencedMessageStore.tsx");
+tmp6 = new tmp6(require("__exportStarResult1"), obj);
+const result = __exportStarResult1.fileFinishedImporting("modules/replies/ReferencedMessageStore.tsx");
 
 export default tmp6;
 export const ReferencedMessageState = obj;

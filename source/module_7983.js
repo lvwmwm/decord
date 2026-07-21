@@ -1,9 +1,9 @@
 // Module ID: 7983
-// Function ID: 63491
+// Function ID: 63499
 // Dependencies: []
 
 // Module 7983
 const _module = require(dependencyMap[0]);
-const obj = { url: true, content: "/assets/design/components/Icon/native/redesign/generated/images", messageId: 24, channel_id: 24, no: null, "Null": "0b7dc87cd2d9da017fd484c168f76354", "Null": "SuperReactionIcon", "Null": "png", scales: [] };
+const obj = { isConnected: null, isInternetReachable: null, details: null, reachabilityUrl: null, reachabilityMethod: null, reachabilityHeaders: null, reachabilityTest: null, reachabilityShortTimeout: null, scales: [] };
 
 export default _module.registerAsset(obj);

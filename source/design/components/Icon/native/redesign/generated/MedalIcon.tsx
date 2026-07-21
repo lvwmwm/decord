@@ -1,10 +1,10 @@
-// Module ID: 15073
-// Function ID: 113624
+// Module ID: 15080
+// Function ID: 113648
 // Name: MedalIcon
 // Dependencies: []
 // Exports: MedalIcon
 
-// Module 15073 (MedalIcon)
+// Module 15080 (MedalIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/MedalIcon.tsx");

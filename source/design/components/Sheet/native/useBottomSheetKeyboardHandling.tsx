@@ -1,10 +1,10 @@
-// Module ID: 5778
-// Function ID: 49402
+// Module ID: 5780
+// Function ID: 49445
 // Name: useBottomSheetKeyboardHandling
 // Dependencies: []
 // Exports: default
 
-// Module 5778 (useBottomSheetKeyboardHandling)
+// Module 5780 (useBottomSheetKeyboardHandling)
 let closure_2 = importAll(dependencyMap[0]);
 const result = arg1(dependencyMap[2]).fileFinishedImporting("design/components/Sheet/native/useBottomSheetKeyboardHandling.tsx");
 

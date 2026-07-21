@@ -3,7 +3,7 @@
 // Dependencies: []
 
 // Module 237
-let closure_3 = { -1715901869: false, 1661011715: false, -1722680978: false, 1676436110: false, 1407738193: false };
+let closure_3 = { "Null": -1286537215, "Bool(true)": 1676436110, "Bool(true)": 21335377, BRAND_COLOR_PRIMARY: 4, animatedStyle: 4 };
 let closure_4 = null;
 const obj = {
   logIfNoNativeHook(arg0) {

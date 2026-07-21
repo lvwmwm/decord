@@ -1,9 +1,9 @@
-// Module ID: 15211
-// Function ID: 114877
+// Module ID: 15218
+// Function ID: 114901
 // Name: FriendPresence
 // Dependencies: []
 
-// Module 15211 (FriendPresence)
+// Module 15218 (FriendPresence)
 function FriendPresence(user) {
   let animate;
   let guildId;
@@ -11,7 +11,7 @@ function FriendPresence(user) {
   user = user.user;
   ({ type, animate, guildId } = user);
   if (type === constants.PENDING_INCOMING) {
-    let obj = { CHANNEL_HIGHLIGHT: true, guild_template_description: 15.1, borderWidth: 242, children: arg1(dependencyMap[12]).getUserTag(user) };
+    let obj = { encodingConfig: true, showRemove: 15.1, PREMIUM_CUSTOM_NOTIFICATION_SOUND_SETTINGS_UPSELL: 242, children: arg1(dependencyMap[12]).getUserTag(user) };
     let tmp5 = callback3(arg1(dependencyMap[11]).Text, obj);
     const obj3 = arg1(dependencyMap[12]);
   } else {
@@ -35,7 +35,7 @@ const tmp2 = arg1(dependencyMap[3]);
 const tmp3 = arg1(dependencyMap[7]);
 ({ jsx: closure_13, jsxs: closure_14 } = arg1(dependencyMap[8]));
 const tmp4 = arg1(dependencyMap[8]);
-let obj = { activityStatusIcon: { aze: null, azj: null } };
+let obj = { activityStatusIcon: { bhk: "Array", bic: "isPrivate" } };
 obj = { color: importDefault(dependencyMap[10]).colors.TEXT_SUBTLE };
 obj.activityStatusText = obj;
 obj.tag = { marginLeft: 4 };
@@ -101,7 +101,7 @@ const memoResult = importAllResult.memo(function DMRow(user) {
   const items5 = [user, status, isMobileOnline, isVROnline, guildId];
   const memo = importAllResult.useMemo(() => {
     let obj = { style: tmp.title };
-    obj = { CHANNEL_HIGHLIGHT: true, guild_template_description: 15.1, borderWidth: 253, children: name };
+    obj = { encodingConfig: true, showRemove: 15.1, PREMIUM_CUSTOM_NOTIFICATION_SOUND_SETTINGS_UPSELL: 253, children: name };
     const items = [name(user(premiumSince[11]).Text, obj), , , ];
     const bot = user.bot;
     if (!bot) {
@@ -154,7 +154,7 @@ const memoResult = importAllResult.memo(function DMRow(user) {
     const userTag = obj.getUserTag(user);
     if (null != userTag) {
       if (!user.isProvisional) {
-        obj = { INTEGRATION_CREATE: "<string:3305963521>", ConstraintReasonCode: "<string:671547393>", children: userTag };
+        obj = { children: userTag };
         let tmp6 = name(user(premiumSince[11]).Text, obj);
       }
       return tmp6;

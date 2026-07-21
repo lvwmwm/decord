@@ -1,8 +1,8 @@
-// Module ID: 10603
-// Function ID: 82742
+// Module ID: 10609
+// Function ID: 82765
 // Dependencies: []
 
-// Module 10603
+// Module 10609
 const _module = require(dependencyMap[0]);
 const _module1 = require(dependencyMap[2]);
 const result = _module1.fileFinishedImporting("modules/panels/morphable/native/SafeAreaDisabledStore.tsx");

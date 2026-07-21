@@ -1,11 +1,11 @@
-// Module ID: 11932
-// Function ID: 92290
+// Module ID: 11939
+// Function ID: 92313
 // Name: n
 // Dependencies: []
 // Exports: TYPING_ENTERING, TYPING_EXITING
 
-// Module 11932 (n)
-let obj = { <string:3172313896>: "flex", <string:3613474445>: "center", <string:1672556625>: "center", <string:1425655158>: 32, <string:1252604152>: "center", <string:1880755393>: 8 };
+// Module 11939 (n)
+let obj = { "Null": "flex", "Null": "center", "Null": "center", "Null": 32, GuildIconSizes: "center", resetPendingPrimaryGuildChanges: 8 };
 const fn = function n() {
   let obj = { initialValues: { transform: items, opacity: 0 } };
   const items = [{ scale: 0 }];

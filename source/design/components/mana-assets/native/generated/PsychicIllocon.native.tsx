@@ -1,14 +1,12 @@
-// Module ID: 6423
-// Function ID: 50508
+// Module ID: 6425
+// Function ID: 50551
 // Name: PsychicIllocon
 // Dependencies: [4294967295, 0, 0, 0]
 // Exports: PsychicIllocon
 
-// Module 6423 (PsychicIllocon)
-import result from "result";
-
+// Module 6425 (PsychicIllocon)
 const jsx = require(dependencyMap[0]).jsx;
-result = result.fileFinishedImporting("design/components/mana-assets/native/generated/PsychicIllocon.native.tsx");
+const result = require("__exportStarResult1").fileFinishedImporting("design/components/mana-assets/native/generated/PsychicIllocon.native.tsx");
 
 export const PsychicIllocon = function PsychicIllocon(size) {
   let accessibilityLabel;

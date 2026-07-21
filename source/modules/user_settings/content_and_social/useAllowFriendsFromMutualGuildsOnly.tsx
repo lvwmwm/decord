@@ -1,10 +1,10 @@
-// Module ID: 14406
-// Function ID: 108690
+// Module ID: 14413
+// Function ID: 108713
 // Name: useAllowFriendsFromMutualGuildsOnly
 // Dependencies: []
 // Exports: useAllowFriendsFromMutualGuildsOnly
 
-// Module 14406 (useAllowFriendsFromMutualGuildsOnly)
+// Module 14413 (useAllowFriendsFromMutualGuildsOnly)
 let closure_2 = importAll(dependencyMap[0]);
 const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/user_settings/content_and_social/useAllowFriendsFromMutualGuildsOnly.tsx");
 

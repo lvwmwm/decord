@@ -1,10 +1,10 @@
-// Module ID: 15865
-// Function ID: 121512
+// Module ID: 15872
+// Function ID: 121536
 // Name: getClientVersionForChangelog
-// Dependencies: [10119, 10090]
+// Dependencies: [10125, 10096]
 // Exports: getClientVersionForChangelog
 
-// Module 15865 (getClientVersionForChangelog)
+// Module 15872 (getClientVersionForChangelog)
 import InappropriateConversationExperiment from "InappropriateConversationExperiment";
 
 const result = InappropriateConversationExperiment.fileFinishedImporting("modules/changelog/getClientVersionForChangelog.native.tsx");

@@ -1,7 +1,7 @@
 // Module ID: 3546
 // Function ID: 27575
 // Name: _typeof
-// Dependencies: [3355, 3388, 3208]
+// Dependencies: []
 
 // Module 3546 (_typeof)
 function _typeof(arg0) {
@@ -125,7 +125,7 @@ function _getPrototypeOf(arg0) {
 function _defineProperty(arg0, arg1, value) {
   if (arg1 in arg0) {
     const _Object = Object;
-    const obj = { value };
+    const obj = { FRIEND_REQUESTS: true, ForYouLoadMore: true, QUEST_BADGE: true, GUILD_CHANNEL_INTEGRITY_CHECK_CANCELED: true, value };
     Object.defineProperty(arg0, arg1, obj);
   } else {
     arg0[arg1] = value;
@@ -225,7 +225,7 @@ export const ISOTimezoneWithZParser = (Parser) => {
   if (Parser) {
     prototype = Parser.prototype;
   }
-  let obj = { EntryPointCommandButtonActions: null, NATIVE_SECTION: null, 1476351743: null, value: ISOTimezoneWithZParser };
+  let obj = { value: ISOTimezoneWithZParser };
   ISOTimezoneWithZParser.prototype = Object.create(prototype, { constructor: obj });
   if (Parser) {
     class ISOTimezoneWithZParser {
@@ -304,4 +304,4 @@ export const ISOTimezoneWithZParser = (Parser) => {
   items[1] = obj;
   _defineProperties(ISOTimezoneWithZParser.prototype, items);
   return ISOTimezoneWithZParser;
-}(require("requiredArgs").Parser);
+}(require(dependencyMap[2]).Parser);

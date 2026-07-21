@@ -1,10 +1,10 @@
-// Module ID: 15263
-// Function ID: 115249
+// Module ID: 15270
+// Function ID: 115273
 // Name: MessageContent
 // Dependencies: []
 // Exports: ThreadSubtext
 
-// Module 15263 (MessageContent)
+// Module 15270 (MessageContent)
 function MessageContent(arg0) {
   let message;
   let thread;
@@ -35,7 +35,7 @@ function MessageContent(arg0) {
   const timestampAccessibilityLabel = arg1(dependencyMap[12]).getTimestampAccessibilityLabel(extractTimestampResult);
   closure_5 = importDefault(dependencyMap[13])(thread.guild_id, stateFromStores.id);
   obj = { user: stateFromStores, timestamp: timestampString, accessibilityLabel: timestampAccessibilityLabel };
-  obj = { ackUserGuildJoinRequest: true, isEmbeddedApp: true, bynweekday: true, WEB_IOS: true, showPrivateThreads: true, showCreateThreads: true, style: tmp.subtextContent };
+  obj = { "Null": true, "Null": true, "Null": true, "Null": true, "Null": true, "Null": true, style: tmp.subtextContent };
   const intl = arg1(dependencyMap[16]).intl;
   obj1 = {
     usernameHook(arg0, arg1) {
@@ -64,7 +64,7 @@ function MessageContent(arg0) {
       return closure_9(closure_17, obj, arg1);
     },
     messageTextHook(arg0, arg1) {
-      const obj = { children: callback(closure_2[22])(message, { name: null, channel: null }).content };
+      const obj = { children: callback(closure_2[22])(message, { alignItems: null, marginTop: null }).content };
       return callback2(message(closure_2[21]).LegacyText, obj, arg1);
     }
   };
@@ -134,7 +134,7 @@ function Username(usernameColor) {
     shouldShowRoleDot = callback(arg1(dependencyMap[21]).RoleDot, obj);
   }
   const items1 = [shouldShowRoleDot, ];
-  const obj1 = { INTEGRATION_CREATE: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007863204514436, ConstraintReasonCode: 127277221446373050000000000, experimental_useNativeText: !arg1(dependencyMap[24]).isFabric() };
+  const obj1 = { experimental_useNativeText: !arg1(dependencyMap[24]).isFabric() };
   let tmp10;
   if (tmp3) {
     tmp10 = processColorStringsArray;

@@ -1,10 +1,10 @@
-// Module ID: 11018
-// Function ID: 85797
+// Module ID: 11023
+// Function ID: 85818
 // Name: ClassificationEvidence
 // Dependencies: []
 // Exports: default
 
-// Module 11018 (ClassificationEvidence)
+// Module 11023 (ClassificationEvidence)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 ({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[2]));
@@ -26,7 +26,7 @@ export default function ClassificationEvidence(flaggedContent) {
   let tmp2 = null;
   if (0 !== flaggedContent.length) {
     let obj = { style: tmp.sectionContainer };
-    obj = { INTEGRATION_CREATE: "/assets/images/native/premium/illustrations", ConstraintReasonCode: 51 };
+    obj = {};
     const intl = arg1(dependencyMap[7]).intl;
     obj.children = intl.string(arg1(dependencyMap[7]).t.s64CMg);
     const items = [callback(arg1(dependencyMap[6]).Text, obj), ];

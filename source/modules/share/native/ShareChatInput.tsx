@@ -1,22 +1,22 @@
-// Module ID: 9890
-// Function ID: 76550
+// Module ID: 9895
+// Function ID: 76566
 // Name: ShareChatInput
 // Dependencies: []
 // Exports: default
 
-// Module 9890 (ShareChatInput)
+// Module 9895 (ShareChatInput)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 let num = 2;
 ({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[3]));
 let obj = arg1(dependencyMap[4]);
 obj = {};
-obj = { backgroundColor: importDefault(dependencyMap[5]).colors.REDESIGN_CHAT_INPUT_BACKGROUND, paddingHorizontal: importDefault(dependencyMap[5]).space.PX_12 };
+obj = { 0: null, 9223372036854775807: null, -9223372036854775808: null, 9223372036854775807: null, backgroundColor: importDefault(dependencyMap[5]).colors.REDESIGN_CHAT_INPUT_BACKGROUND, paddingHorizontal: importDefault(dependencyMap[5]).space.PX_12 };
 obj.container = obj;
-const obj1 = { -77457055: null, -2144906604: null, -1840119020: null, 1710684132: null, paddingHorizontal: importDefault(dependencyMap[5]).space.PX_4 };
-obj.chatInput = obj1;
-const obj2 = { "Null": "flex-end", "Null": "center", fontFamily: arg1(dependencyMap[2]).Fonts.PRIMARY_NORMAL, color: importDefault(dependencyMap[5]).colors.TEXT_STRONG };
 const tmp3 = arg1(dependencyMap[3]);
+obj.chatInput = { paddingHorizontal: importDefault(dependencyMap[5]).space.PX_4 };
+const obj2 = { PX_16: "text", ix: "Array", fontFamily: arg1(dependencyMap[2]).Fonts.PRIMARY_NORMAL, color: importDefault(dependencyMap[5]).colors.TEXT_STRONG };
+const obj1 = { paddingHorizontal: importDefault(dependencyMap[5]).space.PX_4 };
 if (obj6.isAndroid()) {
   num = 0;
 }

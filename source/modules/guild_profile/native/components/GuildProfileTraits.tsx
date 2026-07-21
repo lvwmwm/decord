@@ -1,10 +1,10 @@
-// Module ID: 11863
-// Function ID: 91858
+// Module ID: 11870
+// Function ID: 91881
 // Name: TraitEmoji
 // Dependencies: []
 // Exports: default
 
-// Module 11863 (TraitEmoji)
+// Module 11870 (TraitEmoji)
 function TraitEmoji(emoji) {
   emoji = emoji.emoji;
   if (null == emoji) {
@@ -37,10 +37,10 @@ let closure_3 = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 ({ jsx: closure_5, jsxs: closure_6 } = arg1(dependencyMap[2]));
 let obj = arg1(dependencyMap[3]);
-obj = { container: { useChannelCallStore: null, myr: 1, MEDIA_ENGINE_VOICE_ACTIVITY_DETECTION_ERROR: null, EXPLICIT_MEDIA_ADD_MEDIA_TO_FORUM_POST_BLOCKED: "\u{1F44E}\u{1F3FC}" } };
-obj = { st: 2102460417, height: 1816203620, marginRight: 1912603071, width: 62, marginLeft: 65, marginRight: 1116029441, handled: 98893826, result: 2102460417, <string:1554045104>: 29540, borderRadius: importDefault(dependencyMap[4]).radii.lg, borderColor: importDefault(dependencyMap[4]).colors.BORDER_SUBTLE };
+obj = { container: { "Null": null, "Null": 1, "Null": null, "Null": "\u{1F44E}\u{1F3FC}" } };
+obj = { values: true, x: true, resolve: true, length: true, to: true, ao: true, useState: true, from: true, registerAsset: true, borderRadius: importDefault(dependencyMap[4]).radii.lg, borderColor: importDefault(dependencyMap[4]).colors.BORDER_SUBTLE };
 obj.trait = obj;
-obj.emojiImage = { aze: "<string:16777479>", azj: "<string:36295491>" };
+obj.emojiImage = {};
 let closure_7 = obj.createStyles(obj);
 const tmp2 = arg1(dependencyMap[2]);
 const result = arg1(dependencyMap[9]).fileFinishedImporting("modules/guild_profile/native/components/GuildProfileTraits.tsx");

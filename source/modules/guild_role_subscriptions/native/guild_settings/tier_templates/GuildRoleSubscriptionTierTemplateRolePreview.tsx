@@ -1,10 +1,10 @@
-// Module ID: 16341
-// Function ID: 126102
+// Module ID: 16348
+// Function ID: 126133
 // Name: GuildRoleSubscriptionRolePreview
 // Dependencies: []
 // Exports: GuildRoleSubscriptionRolePreview
 
-// Module 16341 (GuildRoleSubscriptionRolePreview)
+// Module 16348 (GuildRoleSubscriptionRolePreview)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 let closure_5 = importDefault(dependencyMap[2]);
@@ -13,9 +13,9 @@ let obj = arg1(dependencyMap[4]);
 obj = {};
 obj = { borderRadius: importDefault(dependencyMap[5]).radii.xs, borderColor: importDefault(dependencyMap[5]).colors.BORDER_SUBTLE, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_LOW };
 obj.container = obj;
-obj.avatar = { backgroundColor: -235274238, accessibilityRole: -235274238, -45001119: -235274238 };
+obj.avatar = {};
 obj.content = { marginStart: 16 };
-obj.contextRow = { -9223372036854775808: true, filter: true };
+obj.contextRow = {};
 let closure_8 = obj.createStyles(obj);
 const tmp3 = arg1(dependencyMap[3]);
 const result = arg1(dependencyMap[14]).fileFinishedImporting("modules/guild_role_subscriptions/native/guild_settings/tier_templates/GuildRoleSubscriptionTierTemplateRolePreview.tsx");
@@ -49,7 +49,7 @@ export const GuildRoleSubscriptionRolePreview = function GuildRoleSubscriptionRo
   const obj4 = { color: importAll(dependencyMap[11]).int2hex(roleColor) };
   obj3.style = obj4;
   obj3.children = name;
-  const items3 = [callback(arg1(dependencyMap[10]).Text, obj3), callback(arg1(dependencyMap[12]).Spacer, { size: 4 }), callback(importDefault(dependencyMap[13]), { name: roleName, source: { uri: roleImage }, size: 16 }), callback(arg1(dependencyMap[12]).Spacer, { size: 8 }), callback(arg1(dependencyMap[10]).Text, { "Bool(false)": "x", "Bool(false)": "enabled", "Bool(false)": "isArray" })];
+  const items3 = [callback(arg1(dependencyMap[10]).Text, obj3), callback(arg1(dependencyMap[12]).Spacer, { size: 4 }), callback(importDefault(dependencyMap[13]), { name: roleName, source: { uri: roleImage }, size: 16 }), callback(arg1(dependencyMap[12]).Spacer, { size: 8 }), callback(arg1(dependencyMap[10]).Text, { "Bool(false)": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000226520928722202, "Bool(false)": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000015837483642314752, "Bool(false)": -0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000030192904449987895 })];
   obj2.children = items3;
   const items4 = [callback2(View, obj2), ];
   const obj5 = { style: textStyle, children: content };

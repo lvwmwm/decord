@@ -1,10 +1,10 @@
-// Module ID: 10909
-// Function ID: 84801
+// Module ID: 10914
+// Function ID: 84822
 // Name: useTrackQuestEventWithImpression
 // Dependencies: []
 // Exports: useBountyCarouselEmptyStateAnalytics, useQuestHomeEntrypointAnalyticsEvents, useQuestsEmbedFallbackAnalytics, useTrackAdContentClickedWithImpression, useTrackQuestContentClickedWithImpression
 
-// Module 10909 (useTrackQuestEventWithImpression)
+// Module 10914 (useTrackQuestEventWithImpression)
 function useTrackQuestEventWithImpression() {
   const questImpression = arg1(dependencyMap[2]).useQuestImpression();
   const arg1 = questImpression;

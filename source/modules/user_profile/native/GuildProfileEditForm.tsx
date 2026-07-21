@@ -1,10 +1,10 @@
-// Module ID: 13488
-// Function ID: 102385
+// Module ID: 13495
+// Function ID: 102408
 // Name: EditGuildProfileBanner
 // Dependencies: []
 // Exports: default
 
-// Module 13488 (EditGuildProfileBanner)
+// Module 13495 (EditGuildProfileBanner)
 let AnalyticsSections;
 function EditGuildProfileBanner(user) {
   let disabled;
@@ -69,7 +69,7 @@ function EditGuildProfileBanner(user) {
   obj.children = tmp4(importDefault(dependencyMap[12]), obj);
   return tmp3(arg1(dependencyMap[10]).AnalyticsLocationProvider, obj);
 }
-let closure_3 = [0.6583, 1, 97];
+let closure_3 = [null, null, null];
 let closure_4 = importDefault(dependencyMap[0]);
 let closure_5 = importAll(dependencyMap[1]);
 ({ ScrollView: closure_6, View: closure_7 } = arg1(dependencyMap[2]));

@@ -1,10 +1,10 @@
-// Module ID: 8403
-// Function ID: 66931
+// Module ID: 8407
+// Function ID: 66943
 // Name: _updatePermission
 // Dependencies: []
 // Exports: init, savePermissionUpdates, selectPermission, setAdvancedMode, updatePermission
 
-// Module 8403 (_updatePermission)
+// Module 8407 (_updatePermission)
 function _updatePermission() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);

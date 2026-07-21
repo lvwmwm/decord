@@ -1,10 +1,10 @@
-// Module ID: 6658
-// Function ID: 51299
+// Module ID: 6664
+// Function ID: 51348
 // Name: SyncedLoadingAlertModal
 // Dependencies: []
 // Exports: showCheckoutOrderErrorModal
 
-// Module 6658 (SyncedLoadingAlertModal)
+// Module 6664 (SyncedLoadingAlertModal)
 function SyncedLoadingAlertModal(onConfirm) {
   let confirmText;
   let content;

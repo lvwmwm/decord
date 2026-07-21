@@ -1,10 +1,10 @@
-// Module ID: 8360
-// Function ID: 66645
+// Module ID: 8364
+// Function ID: 66657
 // Name: GuildEventTopic
 // Dependencies: []
 // Exports: GuildEventDatetime, GuildEventDescription, GuildEventEntityTypeSelection, GuildEventLocation, GuildEventRecurrence, GuildEventTopic
 
-// Module 8360 (GuildEventTopic)
+// Module 8364 (GuildEventTopic)
 let closure_4 = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 ({ GuildScheduledEventEntityTypes: closure_6, GUILD_EVENT_MAX_DESCRIPTION_LENGTH: closure_7, MAX_EVENT_LOCATION_LENGTH: closure_8, GUILD_EVENT_MAX_NAME_LENGTH: closure_9 } = arg1(dependencyMap[2]));
@@ -12,7 +12,7 @@ const GuildFeatures = arg1(dependencyMap[3]).GuildFeatures;
 const tmp2 = arg1(dependencyMap[2]);
 ({ jsx: closure_11, jsxs: closure_12 } = arg1(dependencyMap[4]));
 const tmp3 = arg1(dependencyMap[4]);
-let closure_13 = arg1(dependencyMap[5]).createStyles({ formGroup: { paddingVertical: 8 }, formGroupSmall: { paddingVertical: 4 }, formGroupLarge: { names: "5f3HIC", ks: "mi" }, dateInput: { "Bool(true)": 225600, 296620934: -1370423296, 116527370: 2130325967 }, timeInput: { "Bool(true)": null, 296620934: "c1eae5d24a46f9d36a9168ec38445f00", 116527370: "DragIcon" }, formHeader: { marginBottom: 8 }, header: { "Null": 8, "Null": null, "Null": "\u270A\u{1F3FF}", "Null": true } });
+let closure_13 = arg1(dependencyMap[5]).createStyles({ formGroup: { paddingVertical: 8 }, formGroupSmall: { paddingVertical: 4 }, formGroupLarge: { bm: "selectedStreamId", cursor: "change" }, dateInput: { username: 225600, discriminator: 894500864, avatar: 2130325855 }, timeInput: { username: "RTC_CONNECTION_LOSS_RATE", discriminator: "handleJoinThreadVoice", avatar: "toString" }, formHeader: { marginBottom: 8 }, header: { "Null": 8, "Bool(true)": null, "Bool(true)": "\u270A\u{1F3FF}", "Bool(true)": true } });
 const obj = arg1(dependencyMap[5]);
 const result = arg1(dependencyMap[29]).fileFinishedImporting("modules/guild_scheduled_events/native/components/GuildEventModalComponents.tsx");
 
@@ -254,17 +254,15 @@ export const GuildEventDatetime = function GuildEventDatetime(dateLabel) {
   }
   const tmp5 = callback3();
   obj = { style: tmp5.formGroup };
-  obj = { 0: "Array", 0: "isArray" };
+  obj = { pink: "Array", plum: "isArray" };
   const obj1 = { style: tmp5.dateInput };
-  const obj2 = { Promise: false, marginTop: false, flags: false, style: tmp5.formHeader, children: dateLabel };
-  const items = [callback(arg1(dependencyMap[9]).Text, obj2), ];
+  const items = [callback(arg1(dependencyMap[9]).Text, { style: tmp5.formHeader, children: dateLabel }), ];
   const obj3 = { text: dateLabel, value: date.format("MMM Do YYYY"), onPress: handleOpenDatePicker("date"), disabled };
   items[1] = callback(arg1(dependencyMap[10]).InputButton, obj3);
   obj1.children = items;
   const items1 = [callback2(View, obj1), ];
   const obj4 = { style: tmp5.timeInput };
-  const obj5 = { Promise: false, marginTop: false, flags: false, style: tmp5.formHeader, children: timeLabel };
-  const items2 = [callback(arg1(dependencyMap[9]).Text, obj5), ];
+  const items2 = [callback(arg1(dependencyMap[9]).Text, { style: tmp5.formHeader, children: timeLabel }), ];
   const obj6 = { text: timeLabel, value: date.format("LT"), onPress: handleOpenDatePicker("time"), disabled };
   items2[1] = callback(arg1(dependencyMap[10]).InputButton, obj6);
   obj4.children = items2;

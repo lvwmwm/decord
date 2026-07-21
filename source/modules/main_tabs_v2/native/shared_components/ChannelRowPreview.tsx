@@ -1,9 +1,9 @@
-// Module ID: 10236
-// Function ID: 79156
+// Module ID: 10242
+// Function ID: 79175
 // Name: PreviewIcon
 // Dependencies: []
 
-// Module 10236 (PreviewIcon)
+// Module 10242 (PreviewIcon)
 function PreviewIcon(icon) {
   icon = icon.icon;
   let obj = Object.create(null);
@@ -74,7 +74,7 @@ class ChannelRowPreview {
         if ("markup" === type) {
           obj = {};
           tmp7 = jsx;
-          tmp8 = f79162;
+          tmp8 = f79181;
           if ("markup" === formattedMessagePreview.type) {
             content = formattedMessagePreview.markup;
           } else {
@@ -92,7 +92,7 @@ class ChannelRowPreview {
         }
       }
       obj1 = {};
-      obj2 = { -9223372036854775808: true, filter: true };
+      obj2 = {};
       obj2.minHeight = tmp6;
       obj1.style = obj2;
       tmp12 = arg1;
@@ -114,7 +114,7 @@ class ChannelRowPreview {
       num2 = 1.75;
       obj3.maxFontSizeMultiplier = 1.75;
       obj3.color = color2;
-      obj3.style = { maxHeight: "\u{1F4A0}", XHR_READYSTATE_DONE: 6 };
+      obj3.style = { "Null": "\u{1F4A0}", "Null": 6 };
       combined = null != authorLabel;
       if (combined) {
         tmp15 = globalThis;
@@ -185,7 +185,7 @@ class NativeChannelRowPreview {
       tmp.setOptions({ renderEmbeds: setting, inlineEmbedMedia: setting1, inlineAttachmentMedia: setting2, renderReactions: false, animateEmoji: false, gifAutoPlay, renderReplies: false, renderCodedLinks: false, renderGiftCode: false, renderActivityInviteEmbed: false, renderThreadEmbeds: false, renderForumPostActions: false, renderComponents: false, ignoreMentioned: true, enableSwipeActions: false, renderExecutedCommands: false, useAlternateEmbedColors: true });
       return tmp;
     }, items);
-    obj1 = { lineHeight: 3, fontSize: null };
+    obj1 = { -1034289856: "<string:553648726>", -1031355792: "<string:68987969>" };
     obj1.modifyRow = function modifyRow(arg0) {
       arg0.contextType = callback(seeMoreLabelColor[25]).MessageContextType.SEARCH;
       if (null != callback) {

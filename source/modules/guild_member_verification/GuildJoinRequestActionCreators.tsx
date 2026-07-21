@@ -1,9 +1,9 @@
-// Module ID: 9148
-// Function ID: 71707
+// Module ID: 9152
+// Function ID: 71719
 // Name: _fetchGuildJoinRequests
 // Dependencies: []
 
-// Module 9148 (_fetchGuildJoinRequests)
+// Module 9152 (_fetchGuildJoinRequests)
 function _fetchGuildJoinRequests() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);

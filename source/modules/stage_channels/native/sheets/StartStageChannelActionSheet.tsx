@@ -1,10 +1,10 @@
-// Module ID: 7471
-// Function ID: 59981
+// Module ID: 7475
+// Function ID: 59993
 // Name: StartStageChannelEventActionSheet
 // Dependencies: []
 // Exports: default
 
-// Module 7471 (StartStageChannelEventActionSheet)
+// Module 7475 (StartStageChannelEventActionSheet)
 let closure_4 = importDefault(dependencyMap[0]);
 let closure_5 = importDefault(dependencyMap[1]);
 let closure_6 = importAll(dependencyMap[2]);
@@ -17,11 +17,11 @@ let closure_12 = arg1(dependencyMap[7]).GuildScheduledEventPrivacyLevel;
 const tmp2 = arg1(dependencyMap[5]);
 ({ jsx: closure_13, jsxs: closure_14 } = arg1(dependencyMap[8]));
 let obj = arg1(dependencyMap[9]);
-obj = { container: { padding: 16 }, header: { Set: 24, _desired: "recent_games_enabled" }, headerTitle: {}, headerSubtitle: { textAlign: "center" } };
+obj = { container: { padding: 16 }, header: { guild: 24, body: "recent_games_enabled" }, headerTitle: {}, headerSubtitle: { textAlign: "center" } };
 obj = { borderRadius: importDefault(dependencyMap[10]).radii.xs, backgroundColor: importDefault(dependencyMap[10]).colors.BACKGROUND_BASE_LOWEST };
 obj.textInput = obj;
 obj.startButton = { marginTop: 16 };
-obj.buttonSubtitle = { restricted: null, isIsoDate: null };
+obj.buttonSubtitle = { "Bool(false)": null, "Bool(false)": null };
 const tmp4 = arg1(dependencyMap[8]);
 obj.ageVerificationNotice = { marginBottom: importDefault(dependencyMap[10]).space.PX_16 };
 const obj1 = { marginBottom: importDefault(dependencyMap[10]).space.PX_16 };
@@ -135,7 +135,7 @@ export default function StartStageChannelEventActionSheet(channel) {
   const intl6 = arg1(closure_3[21]).intl;
   obj4.children = intl6.string(arg1(closure_3[21]).t.5FPBOB);
   items2[1] = callback(importDefault(closure_3[24]), obj4);
-  const obj5 = { style: tmp.textInput, maxLength: closure_9, value: first };
+  const obj5 = { -449510645: 0, -406513309: 0, 1631422033: 0, -1207873045: 0, 426332259: 0, style: tmp.textInput, maxLength: closure_9, value: first };
   const intl7 = arg1(closure_3[21]).intl;
   obj5.placeholder = intl7.string(arg1(closure_3[21]).t.ZwWruY);
   obj5.onChange = tmp5[1];

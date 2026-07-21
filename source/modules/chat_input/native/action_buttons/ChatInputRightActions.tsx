@@ -1,14 +1,14 @@
-// Module ID: 11445
-// Function ID: 89190
+// Module ID: 11452
+// Function ID: 89214
 // Name: LeftSlot
-// Dependencies: [4341, 653, 11354, 566, 2, 31, 6854, 8584, 653, 566, 8582, 8588, 2, 31, 4159, 5335]
+// Dependencies: [4345, 653, 11360, 566, 2, 31, 4147, 8588, 653, 566, 8586, 8592, 2, 31, 4163, 5337]
 
-// Module 11445 (LeftSlot)
+// Module 11452 (LeftSlot)
 import closure_3 from "_isNativeReflectConstruct";
 import importAllResult from "ME";
 import { View } from "MAX_MESSAGES_ALLOWED_FOR_GREETING";
 import { CHAT_INPUT_FLOATING_BOUNCE_ENTER_DELAY_MS as closure_6 } from "initialize";
-import keys from "keys";
+import result2 from "result2";
 import module_31 from "module_31";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 
@@ -31,10 +31,10 @@ function LeftSlot(state) {
   obj["children"] = callback2(importDefault(dependencyMap[14]), { canStartThreads: false, channel, onPress, styleButton: undefined, shouldShowThread: false });
   return callback2(importDefault(dependencyMap[12]).View, obj);
 }
-({ jsx: closure_7, jsxs: closure_8 } = keys);
+({ jsx: closure_7, jsxs: closure_8 } = result2);
 let closure_9 = module_31.createStyles(() => {
   let obj = {};
-  obj = { -9223372036854775808: true, filter: true, gap: importDefault(dependencyMap[6]).modules.mobile.CHAT_INPUT_ACTION_BUTTON_GAP };
+  obj = { gap: importDefault(dependencyMap[6]).modules.mobile.CHAT_INPUT_ACTION_BUTTON_GAP };
   obj.container = obj;
   obj.leftSlot = {};
   return obj;

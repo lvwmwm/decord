@@ -1,5 +1,5 @@
 // Module ID: 8095
-// Function ID: 64151
+// Function ID: 64143
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
@@ -13,74 +13,55 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-let closure_5 = importDefault(dependencyMap[3]);
-let closure_6 = importDefault(dependencyMap[4]);
+let closure_3 = importDefault(dependencyMap[0]);
+let closure_4 = importDefault(dependencyMap[1]);
+let closure_5 = importDefault(dependencyMap[2]);
+let closure_6 = importDefault(dependencyMap[3]);
+let closure_7 = importDefault(dependencyMap[4]);
 importAll(dependencyMap[5]);
 const jsx = arg1(dependencyMap[6]).jsx;
 const tmp3 = (arg0) => {
-  class Polygon {
+  class Path {
     constructor() {
       self = this;
-      tmp = closure_2(this, Polygon);
-      length = arguments.length;
-      array = new Array(length);
-      for (let num = 0; num < length; num = num + 1) {
-        array[num] = arguments[num];
-      }
-      items = [];
-      combined = items.concat(array);
-      obj = closure_5(Polygon);
-      tmp3 = closure_4;
-      if (closure_8()) {
-        if (!combined) {
-          combined = [];
-        }
-        tmp5 = closure_5;
-        constructResult = Reflect.construct(obj, combined, closure_5(self).constructor);
+      tmp = closure_3(this, Path);
+      obj = closure_6(Path);
+      tmp2 = closure_5;
+      if (closure_9()) {
+        tmp6 = globalThis;
+        _Reflect = Reflect;
+        tmp7 = closure_6;
+        tmp8 = arguments;
+        constructResult = Reflect.construct(obj, arguments, closure_6(self).constructor);
       } else {
-        constructResult = obj.apply(self, combined);
+        tmp3 = arguments;
+        tmp4 = arguments;
+        constructResult = obj(...arguments);
       }
-      tmp3Result = tmp3(self, constructResult);
-      Polygon = tmp3Result;
-      tmp3Result.setNativeProps = (points) => {
-        points = points.points;
-        if (points) {
-          const _HermesInternal = HermesInternal;
-          points.d = "M" + tmp3Result(closure_1[7])(points) + "z";
-        }
-        if (tmp3Result.root) {
-          const root = tmp3Result.root;
-          root.setNativeProps(points);
-        }
-      };
-      return tmp3Result;
+      return tmp2(self, constructResult);
     }
   }
-  const importDefault = Polygon;
-  callback2(Polygon, arg0);
+  const arg1 = Path;
+  callback2(Path, arg0);
   const items = [
     {
       key: "render",
       value: function render() {
+        const Path = this;
         const props = this.props;
-        const points = props.points;
-        const obj = { ref: this.refMethod };
-        let combined = points;
-        if (points) {
-          const _HermesInternal = HermesInternal;
-          combined = "M" + Polygon(closure_1[7])(points) + "z";
-        }
-        obj.d = combined;
-        return closure_7(Polygon(closure_1[8]), Object.assign(obj, props));
+        let obj = Path(closure_2[7]);
+        const merged = Object.assign({}, obj.extract(this, props), { d: props.d });
+        obj = {
+          ref(arg0) {
+            return self.refMethod(arg0);
+          }
+        };
+        return callback4(callback(closure_2[8]), Object.assign(obj, merged));
       }
     }
   ];
-  return callback(Polygon, items);
+  return callback(Path, items);
 }(importDefault(dependencyMap[9]));
-tmp3.displayName = "Polygon";
-tmp3.defaultProps = { points: "" };
+tmp3.displayName = "Path";
 
 export default tmp3;

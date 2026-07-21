@@ -1,10 +1,10 @@
-// Module ID: 10212
-// Function ID: 78924
+// Module ID: 10218
+// Function ID: 78942
 // Name: _setUserStatus
 // Dependencies: []
 // Exports: default
 
-// Module 10212 (_setUserStatus)
+// Module 10218 (_setUserStatus)
 function _setUserStatus() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);

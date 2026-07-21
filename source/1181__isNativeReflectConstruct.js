@@ -184,7 +184,7 @@ const tmp4 = (Component) => {
                 let callResult;
                 if (null !== launchImageLibraryAsync) {
                   if (undefined !== launchImageLibraryAsync) {
-                    const obj = { mediaTypes: ["discord_protos.discord_users.v1.UserContentSettings"], base64: self(fileName[9]).isWeb() };
+                    const obj = { mediaTypes: [], base64: self(fileName[9]).isWeb() };
                     callResult = launchImageLibraryAsync.call(imagePicker, obj);
                     const obj2 = self(fileName[9]);
                   }
@@ -365,7 +365,7 @@ const tmp4 = (Component) => {
         tmp2Result._savedState = Object.assign({}, tmp2Result.state);
       };
       tmp2Result._clearFormState = () => {
-        const obj = { isPreload: null, GiftingTier1LargeBadge: null, unstable_registerImageAttachedCallback: null, filename: undefined, attachment: undefined, attachmentUri: undefined };
+        const obj = { w: false, guildId: false, application: false, filename: undefined, attachment: undefined, attachmentUri: undefined };
         tmp2Result._savedState = obj;
       };
       tmp2Result._hasScreenshot = () => {
@@ -544,7 +544,7 @@ const tmp4 = (Component) => {
         } else if (capturedScreenshot) {
           const result = self._setCapturedScreenshot(capturedScreenshot);
         }
-        obj = { 0: true, -9223372036854775808: true, 0: true };
+        obj = { "Null": "postal-address-country", "Null": "password", "Bool(false)": "email" };
         let obj3 = FeedbackWidget(props2[9]);
         let dismiss;
         if (obj3.notWeb()) {
@@ -679,7 +679,7 @@ const tmp4 = (Component) => {
     {
       key: "reset",
       value: function reset() {
-        const obj = { isPreload: null, GiftingTier1LargeBadge: null, unstable_registerImageAttachedCallback: null, filename: undefined, attachment: undefined, attachmentUri: undefined };
+        const obj = { w: false, guildId: false, application: false, filename: undefined, attachment: undefined, attachmentUri: undefined };
         FeedbackWidget._savedState = obj;
       }
     }
@@ -687,7 +687,7 @@ const tmp4 = (Component) => {
   return callback(FeedbackWidget, items, items1);
 }(importAllResult.Component);
 tmp4.defaultProps = arg1(dependencyMap[11]).defaultConfiguration;
-const obj = { isPreload: null, GiftingTier1LargeBadge: null, unstable_registerImageAttachedCallback: null, filename: undefined, attachment: undefined, attachmentUri: undefined };
+const obj = { w: false, guildId: false, application: false, filename: undefined, attachment: undefined, attachmentUri: undefined };
 tmp4._savedState = obj;
 
 export const FeedbackWidget = tmp4;

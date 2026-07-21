@@ -410,7 +410,7 @@
   let closure_3 = /^xn--/;
   let closure_4 = /[^\x20-\x7E]/;
   let closure_5 = /[\x2E\u3002\uFF0E\uFF61]/g;
-  let closure_6 = { "Bool(true)": "TypeMismatchError", "Bool(true)": "DEFAULT_NAVIGATION_SPAN_NAME", "Bool(true)": "nameToEmoji" };
+  let closure_6 = {};
   const obj = {
     version: "1.4.1",
     ucs2: { decode: ucs2decode, encode: ucs2encode },

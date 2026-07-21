@@ -1,10 +1,10 @@
-// Module ID: 9997
-// Function ID: 77288
+// Module ID: 10003
+// Function ID: 77306
 // Name: ChannelSpoiler
 // Dependencies: []
 // Exports: default
 
-// Module 9997 (ChannelSpoiler)
+// Module 10003 (ChannelSpoiler)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 const View = arg1(dependencyMap[2]).View;
@@ -14,8 +14,8 @@ let closure_8 = importDefault(dependencyMap[5]);
 const VoicePanelControlsModes = arg1(dependencyMap[6]).VoicePanelControlsModes;
 ({ jsx: closure_10, jsxs: closure_11 } = arg1(dependencyMap[7]));
 let obj = arg1(dependencyMap[8]);
-obj = { subtitle: {}, subtitleContainer: { alignItems: "center" } };
-obj = { "Null": null, "Null": null, "Null": null, "Null": null, backgroundColor: importDefault(dependencyMap[9]).colors.BORDER_SUBTLE };
+obj = { subtitle: { <string:4142373395>: 2, <string:3898509951>: "text-md/semibold" }, subtitleContainer: { alignItems: "center" } };
+obj = { <string:1358955563>: "<string:17891332>", <string:4217575495>: "OPT_OUT_PRICE_INCREASE", <string:173102172>: "<string:2733129984>", <string:1649698307>: "<string:1090584578>", backgroundColor: importDefault(dependencyMap[9]).colors.BORDER_SUBTLE };
 obj.divider = obj;
 obj.subtitleMeasure = {};
 let closure_12 = obj.createStyles(obj);
@@ -96,7 +96,7 @@ export default function ChannelSpoiler(channelId) {
     if ("" !== str.trim()) {
       const obj2 = { spacing: 4, style: tmp2.subtitleContainer };
       obj3 = { style: tmp2.subtitleMeasure, pointerEvents: "none" };
-      const obj4 = { -1943171307: true, -1723054236: true, onTextLayout: callback1 };
+      const obj4 = { onTextLayout: callback1 };
       const obj5 = { channelId: stateFromStores1.id };
       obj4.children = importDefault(dependencyMap[20]).parseTopic(stateFromStores1.topic, true, obj5);
       obj3.children = callback2(arg1(dependencyMap[17]).Text, obj4);
@@ -110,7 +110,7 @@ export default function ChannelSpoiler(channelId) {
       let tmp25 = null;
       if (tmp3[0]) {
         const obj8 = { onPress: callback2, accessibilityRole: "button" };
-        const obj9 = { INTEGRATION_CREATE: -436207324, ConstraintReasonCode: 301991094 };
+        const obj9 = {};
         const obj10 = { textDecorationLine: "underline" };
         obj9.style = obj10;
         const intl2 = arg1(dependencyMap[18]).intl;

@@ -1,10 +1,10 @@
-// Module ID: 15312
-// Function ID: 116533
+// Module ID: 15319
+// Function ID: 116557
 // Name: AppLauncherActionSheet
 // Dependencies: []
 // Exports: useAppLauncherActionSheet
 
-// Module 15312 (AppLauncherActionSheet)
+// Module 15319 (AppLauncherActionSheet)
 function AppLauncherActionSheet(arg0) {
   let channel;
   ({ chatInputRef: closure_0, channel } = arg0);

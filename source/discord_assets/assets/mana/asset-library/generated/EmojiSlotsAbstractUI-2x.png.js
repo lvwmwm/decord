@@ -1,9 +1,9 @@
-// Module ID: 6028
-// Function ID: 49916
+// Module ID: 6030
+// Function ID: 49959
 // Name: metadata
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 6028 (metadata)
+// Module 6030 (metadata)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/EmojiSlotsAbstractUI-2x.png.js");
 

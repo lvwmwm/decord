@@ -1,9 +1,9 @@
-// Module ID: 9240
-// Function ID: 72251
+// Module ID: 9244
+// Function ID: 72263
 // Name: ITEM
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 9240 (ITEM)
+// Module 9244 (ITEM)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("modules/fastest_list/FastestListItemType.tsx");
 

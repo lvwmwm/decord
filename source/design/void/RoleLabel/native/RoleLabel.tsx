@@ -1,10 +1,10 @@
-// Module ID: 9552
-// Function ID: 74448
+// Module ID: 9557
+// Function ID: 74465
 // Name: RoleLabel
 // Dependencies: []
 // Exports: RoleLabel
 
-// Module 9552 (RoleLabel)
+// Module 9557 (RoleLabel)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 let closure_3 = importDefault(dependencyMap[2]);

@@ -1,10 +1,10 @@
-// Module ID: 12565
-// Function ID: 96684
+// Module ID: 12572
+// Function ID: 96707
 // Name: _resetAgeVerification
 // Dependencies: []
 // Exports: fetchReactiveCheckResult, resetAgeVerification
 
-// Module 12565 (_resetAgeVerification)
+// Module 12572 (_resetAgeVerification)
 function _fetchReactiveCheckResult() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);

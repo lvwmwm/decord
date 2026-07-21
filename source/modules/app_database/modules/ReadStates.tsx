@@ -1,9 +1,9 @@
-// Module ID: 6711
-// Function ID: 52153
+// Module ID: 6717
+// Function ID: 52202
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 
-// Module 6711 (_createForOfIteratorHelperLoose)
+// Module 6717 (_createForOfIteratorHelperLoose)
 function _createForOfIteratorHelperLoose(@@iterator) {
   let importDefault = Symbol_iterator;
   @@iterator = "undefined" !== typeof Symbol;
@@ -93,7 +93,7 @@ importDefaultResult = new importDefaultResult("ReadStates");
 let tmp4 = () => {
   class ReadStates {
     constructor() {
-      f52164 = this;
+      f52213 = this;
       tmp = closure_3(this, ReadStates);
       this.readStateVersion = null;
       this.actions = {

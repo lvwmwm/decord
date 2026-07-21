@@ -1,9 +1,9 @@
-// Module ID: 13903
-// Function ID: 105251
+// Module ID: 13910
+// Function ID: 105274
 // Name: logger
 // Dependencies: []
 
-// Module 13903 (logger)
+// Module 13910 (logger)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 const logger = new arg1(dependencyMap[2]).Logger("SimpleMuxWrapper");
@@ -25,13 +25,14 @@ const tmp3 = () => {
     key: "initialize",
     value() {
       const self = this;
-      const obj = { debug: tmp };
+      const obj = { "Null": null, "Null": null, "Null": null };
       const debug = this.config.debug;
+      obj.debug = null != debug && debug;
       const MuxIntegration = SimpleMuxWrapper(closure_2[4]).MuxIntegration;
       obj.data = MuxIntegration.mapDiscordToMuxMetadata(self.config, self.sessionId);
       if (null != self.hlsInstance) {
-        tmp2.hlsjs = self.hlsInstance;
-        tmp2.Hls = self.hlsInstance.constructor;
+        tmp.hlsjs = self.hlsInstance;
+        tmp.Hls = self.hlsInstance.constructor;
       }
       callback(closure_2[5]).monitor(self.videoElement, obj);
       self.isMonitoring = true;

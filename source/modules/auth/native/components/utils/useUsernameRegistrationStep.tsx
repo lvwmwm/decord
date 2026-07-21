@@ -1,18 +1,18 @@
-// Module ID: 14623
-// Function ID: 110309
+// Module ID: 14630
+// Function ID: 110331
 // Name: useUsernameRegistrationStep
 // Dependencies: [0, 0, 0, 0, 0, 0, 0, 0, 0]
 // Exports: useUsernameRegistrationStep
 
-// Module 14623 (useUsernameRegistrationStep)
-import closure_3 from "result";
-import closure_4 from "result";
-import closure_5 from "result";
-import { useRegistrationUIStore } from "result";
-import result from "result";
+// Module 14630 (useUsernameRegistrationStep)
+import closure_3 from "__exportStarResult1";
+import closure_4 from "__exportStarResult1";
+import closure_5 from "__exportStarResult1";
+import { useRegistrationUIStore } from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
 
-({ authStateToRegisterTransitionStep: closure_7, RegistrationTransitionActionTypes: closure_8 } = result);
-result = arg1(dependencyMap[12]).fileFinishedImporting("modules/auth/native/components/utils/useUsernameRegistrationStep.tsx");
+({ authStateToRegisterTransitionStep: closure_7, RegistrationTransitionActionTypes: closure_8 } = require("__exportStarResult1"));
+const result = arg1(dependencyMap[12]).fileFinishedImporting("modules/auth/native/components/utils/useUsernameRegistrationStep.tsx");
 
 export const useUsernameRegistrationStep = function useUsernameRegistrationStep(REGISTER_ACCOUNT_INFORMATION) {
   const arg1 = REGISTER_ACCOUNT_INFORMATION;

@@ -1,9 +1,9 @@
-// Module ID: 13791
-// Function ID: 104364
+// Module ID: 13798
+// Function ID: 104387
 // Name: VideoQuestPlayerControlButton
-// Dependencies: []
+// Dependencies: [905248768, 905379840, 640876544, 131072, 964296704, 520093696, 452984832, 553648128]
 
-// Module 13791 (VideoQuestPlayerControlButton)
+// Module 13798 (VideoQuestPlayerControlButton)
 const jsx = arg1(dependencyMap[1]).jsx;
 let obj1 = arg1(dependencyMap[2]);
 let obj = { disabled: { opacity: 0.5 } };
@@ -37,7 +37,7 @@ const memoResult = importAllResult.memo((arg0) => {
   items[2] = style;
   obj.style = items;
   const merged1 = Object.assign(merged);
-  obj = { style: tmp3.blur, children };
+  obj = { "Null": "r", "Null": "application_user_id", "Null": "r", "Null": "isArray", style: tmp3.blur, children };
   obj["children"] = jsx(importDefault(dependencyMap[6]), obj);
   return jsx(arg1(dependencyMap[5]).PressableOpacity, obj);
 });

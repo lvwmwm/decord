@@ -1,9 +1,9 @@
-// Module ID: 11442
-// Function ID: 89113
+// Module ID: 11449
+// Function ID: 89137
 // Name: ChatInputAppCommandManager
 // Dependencies: []
 
-// Module 11442 (ChatInputAppCommandManager)
+// Module 11449 (ChatInputAppCommandManager)
 let closure_4 = importDefault(dependencyMap[0]);
 const importAllResult = importAll(dependencyMap[1]);
 let closure_6 = importDefault(dependencyMap[2]);

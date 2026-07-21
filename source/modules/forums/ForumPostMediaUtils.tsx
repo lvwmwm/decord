@@ -1,15 +1,10 @@
-// Module ID: 8316
-// Function ID: 65900
+// Module ID: 8320
+// Function ID: 65912
 // Name: isValidImageAttachment
-// Dependencies: [0, 0, 0, 0]
+// Dependencies: []
 // Exports: getEmbedColor, messageContainsGifOrVideo, shouldShowAddMediaToOriginalPostModal, useFindFirstMediaProperties, useFirstMediaIsEmbed, useForumPostMediaThumbnail
 
-// Module 8316 (isValidImageAttachment)
-import result from "result";
-import closure_4 from "result";
-import closure_5 from "result";
-import closure_6 from "result";
-
+// Module 8320 (isValidImageAttachment)
 function isValidImageAttachment(filename) {
   let height;
   let width;
@@ -332,6 +327,10 @@ function useForumPostMediaProperties(firstResult, flag) {
   const items = [...closure_15(firstResult), ...closure_16(firstResult, flag), ...closure_17(firstResult)];
   return items;
 }
+let closure_3 = importAll(dependencyMap[0]);
+let closure_4 = importDefault(dependencyMap[1]);
+let closure_5 = importDefault(dependencyMap[2]);
+let closure_6 = importDefault(dependencyMap[3]);
 let closure_7 = importDefault(dependencyMap[4]);
 ({ MessageAttachmentFlags: closure_8, MessageEmbedMediaFlags: closure_9 } = arg1(dependencyMap[5]));
 const obj = { EMBED: "embed", ATTACHMENT: "attachment", COMPONENT: "component" };
@@ -453,5 +452,5 @@ export const messageContainsGifOrVideo = function messageContainsGifOrVideo(medi
     }
     obj.containsGif = containsGif;
     return obj;
-  }, {});
+  }, { 9223372036854775807: null, 0: null });
 };

@@ -1,10 +1,10 @@
-// Module ID: 16145
-// Function ID: 124457
+// Module ID: 16152
+// Function ID: 124488
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 // Exports: default
 
-// Module 16145 (_isNativeReflectConstruct)
+// Module 16152 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -28,7 +28,7 @@ function GraceOption(option) {
 }
 function ForceSyncIcon(isSyncing) {
   if (isSyncing.isSyncing) {
-    let tmp2Result = tmp2(closure_9, {});
+    let tmp2Result = tmp2(closure_9, { font: "isArray", dx: "GuildActionSheetSecondaryActions" });
   } else {
     let obj = { accessibilityRole: "button" };
     const intl = arg1(dependencyMap[11]).intl;
@@ -67,7 +67,7 @@ let closure_11 = importDefault(dependencyMap[8]);
 const tmp3 = arg1(dependencyMap[6]);
 ({ jsx: closure_12, jsxs: closure_13, Fragment: closure_14 } = arg1(dependencyMap[9]));
 let obj = arg1(dependencyMap[12]);
-obj = { integrationLabel: { fontSize: 24 }, integrationIcon: { useTrackPdpClick: "center", GameDetectionDebugLevel: 380, presenceCount: "85%" }, forceSyncIcon: { marginLeft: 10 }, value: { textAlign: "right" } };
+obj = { integrationLabel: { fontSize: 24 }, integrationIcon: { 0: "<string:1010893253>", 9223372036854775807: "<string:1895825835>", -9223372036854775808: "values" }, forceSyncIcon: { marginLeft: 10 }, value: { textAlign: "right" } };
 obj = { paddingHorizontal: importDefault(dependencyMap[13]).modules.mobile.TABLE_ROW_PADDING };
 obj.stackPadding = obj;
 let closure_15 = obj.createLegacyClassComponentStyles(obj);

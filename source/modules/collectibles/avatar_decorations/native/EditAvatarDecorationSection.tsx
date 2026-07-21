@@ -1,9 +1,9 @@
-// Module ID: 7853
-// Function ID: 62598
+// Module ID: 7857
+// Function ID: 62610
 // Name: memoResult1
 // Dependencies: []
 
-// Module 7853 (memoResult1)
+// Module 7857 (memoResult1)
 const importAllResult = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 const isAvatarDecorationRecord = arg1(dependencyMap[2]).isAvatarDecorationRecord;
@@ -11,7 +11,7 @@ const AVATAR_DECORATION_SIZE = arg1(dependencyMap[3]).AVATAR_DECORATION_SIZE;
 ({ jsx: closure_7, Fragment: closure_8, jsxs: closure_9 } = arg1(dependencyMap[4]));
 let obj1 = arg1(dependencyMap[5]);
 let obj = {};
-obj = { "Bool(true)": null, "Bool(true)": null, "Bool(true)": null, paddingHorizontal: arg1(dependencyMap[6]).GUTTER_SIZE };
+obj = { padding: "Next", paddingBottom: null, flexDirection: null, paddingHorizontal: arg1(dependencyMap[6]).GUTTER_SIZE };
 obj.row = obj;
 obj1 = { height: arg1(dependencyMap[6]).GUTTER_SIZE };
 obj.rowSpacer = obj1;

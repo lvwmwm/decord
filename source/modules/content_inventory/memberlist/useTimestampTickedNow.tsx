@@ -1,10 +1,10 @@
-// Module ID: 11909
-// Function ID: 92188
+// Module ID: 11916
+// Function ID: 92211
 // Name: dropMilliseconds
 // Dependencies: []
 // Exports: useTimestampTickedNow
 
-// Module 11909 (dropMilliseconds)
+// Module 11916 (dropMilliseconds)
 function dropMilliseconds(arg0) {
   const rounded = Math.floor(arg0 / importDefault(dependencyMap[3]).Millis.SECOND);
   return rounded * importDefault(dependencyMap[3]).Millis.SECOND;

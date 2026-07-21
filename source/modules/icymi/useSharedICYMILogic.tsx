@@ -1,10 +1,10 @@
-// Module ID: 15079
-// Function ID: 113672
+// Module ID: 15086
+// Function ID: 113696
 // Name: useSharedICYMILogic
 // Dependencies: []
 // Exports: useSharedICYMILogic
 
-// Module 15079 (useSharedICYMILogic)
+// Module 15086 (useSharedICYMILogic)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 let closure_5 = importDefault(dependencyMap[2]);
@@ -192,9 +192,9 @@ export const useSharedICYMILogic = function useSharedICYMILogic(notificationItem
   }, []);
   const items9 = [callback, callback1, callback2];
   const memo = React.useMemo(() => {
-    let obj = { viewabilityConfig: { o: null, end: "slide_from_bottom", user: "gr" }, onViewableItemsChanged: callback };
+    let obj = { viewabilityConfig: { trackSelectGIF: null, ENABLE_COMMUNITY_FLOW_MODAL_KEY: "slide_from_bottom", zIndex: "gr" }, onViewableItemsChanged: callback };
     const items = [obj, , ];
-    obj = { viewabilityConfig: { o: 7, end: "days", user: "sekund\u0117_sekund\u017Ei\u0173_sekundes" }, onViewableItemsChanged: callback1 };
+    obj = { viewabilityConfig: { trackSelectGIF: 377946113, ENABLE_COMMUNITY_FLOW_MODAL_KEY: -1824849919, zIndex: -1513816063 }, onViewableItemsChanged: callback1 };
     items[1] = obj;
     obj = { viewabilityConfig: {}, onViewableItemsChanged: callback2 };
     items[2] = obj;
@@ -253,7 +253,7 @@ export const useSharedICYMILogic = function useSharedICYMILogic(notificationItem
         });
       }
       if (stateFromStores3) {
-        const obj4 = { accessibilityRole: null, call: "sEAnVH", "Null": "y" };
+        const obj4 = {};
         const obj5 = { kind: "bottomLoading" };
         obj4.data = obj5;
         data.push(obj4);

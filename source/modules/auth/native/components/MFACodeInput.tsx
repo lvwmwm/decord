@@ -1,8 +1,8 @@
-// Module ID: 13563
-// Function ID: 102852
+// Module ID: 13570
+// Function ID: 102875
 // Dependencies: []
 
-// Module 13563
+// Module 13570
 let closure_3 = importDefault(dependencyMap[0]);
 const importAllResult = importAll(dependencyMap[1]);
 ({ ActivityIndicator: closure_5, View: closure_6 } = arg1(dependencyMap[2]));
@@ -11,7 +11,7 @@ const AppStates = arg1(dependencyMap[4]).AppStates;
 const tmp2 = arg1(dependencyMap[2]);
 ({ jsx: closure_9, Fragment: closure_10, jsxs: closure_11 } = arg1(dependencyMap[5]));
 const tmp3 = arg1(dependencyMap[5]);
-let obj = { inputContainer: { translateY: 243, translateX: 119, scale: "sm", position: "control-secondary-text-default" }, input: {}, status: { 2080340735: "control-secondary-text-default", 2113895679: true, -2130739457: "/assets/modules/parent_tools/images", -2063629569: 185 } };
+let obj = { inputContainer: {}, input: {}, status: {} };
 obj = { color: importDefault(dependencyMap[7]).unsafe_rawColors.RED_400 };
 obj.error = obj;
 obj.minHeightGuard = { minHeight: 20 };

@@ -1,10 +1,10 @@
-// Module ID: 10936
-// Function ID: 85046
+// Module ID: 10941
+// Function ID: 85067
 // Name: ExperimentOverrideActionSheet
 // Dependencies: []
 // Exports: createExperimentEmbed, default
 
-// Module 10936 (ExperimentOverrideActionSheet)
+// Module 10941 (ExperimentOverrideActionSheet)
 function ExperimentOverrideActionSheet(override) {
   const id = override.id;
   const arg1 = id;
@@ -45,8 +45,8 @@ function ExperimentOverrideActionSheet(override) {
         });
       });
       const obj = {
-        "Null": 1091665297,
-        "Null": 149819,
+        0: "Array",
+        0: "isArray",
         onPress() {
             items(closure_2[17]).hideActionSheet("ExperimentOverrideSheet");
             const obj = items(closure_2[17]);

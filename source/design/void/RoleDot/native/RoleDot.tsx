@@ -1,10 +1,10 @@
-// Module ID: 12905
-// Function ID: 98444
+// Module ID: 12912
+// Function ID: 98467
 // Name: RoleDot
-// Dependencies: []
+// Dependencies: [251461632, 251527168, 251658240, 255852544, 297402368, 297664512, 270467072, 270663680, 270598144, 707198976, 270401536]
 // Exports: RoleDot
 
-// Module 12905 (RoleDot)
+// Module 12912 (RoleDot)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 ({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[2]));
@@ -98,8 +98,8 @@ export const RoleDot = function RoleDot(background) {
         const items5 = [, , ];
         ({ primaryColor: arr7[0], secondaryColor: arr7[1], tertiaryColor: arr7[2] } = colors);
         obj6.colors = items5.filter(arg1(dependencyMap[9]).isNotNullish);
-        obj6.start = { "Null": false, "Null": true };
-        obj6.end = { "Null": null, "Null": null };
+        obj6.start = { max: -536870861, guildId: -299892737 };
+        obj6.end = {};
         const items6 = [tmp.dot, obj.dot];
         obj6.style = items6;
         let tmp16Result = callback(importDefault(dependencyMap[8]), obj6);

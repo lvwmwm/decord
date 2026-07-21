@@ -1,10 +1,10 @@
-// Module ID: 10945
-// Function ID: 85121
+// Module ID: 10950
+// Function ID: 85142
 // Name: _sendGiftIntentGif
 // Dependencies: []
 // Exports: default
 
-// Module 10945 (_sendGiftIntentGif)
+// Module 10950 (_sendGiftIntentGif)
 function _sendGiftIntentGif() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback2(tmp);
@@ -112,7 +112,7 @@ function GiftIntentGifModalBody(channelId) {
   obj2.children = tmp13(importDefault(dependencyMap[19]), obj3);
   items3[1] = tmp11(tmp12, obj2);
   obj4 = { style: tmp.footer };
-  const obj5 = { <string:2367986918>: "fa1758b003badba48305d2353659aabf", <string:3096166313>: "ko.messages.fa1758b003badba48305d2353659aabf.compiled.messages" };
+  const obj5 = { renderEmbeds: "e48043bf745ca0395ac959c7415a3757", renderReactions: "sv-SE.messages.e48043bf745ca0395ac959c7415a3757.compiled.messages" };
   const intl3 = arg1(dependencyMap[17]).intl;
   obj5.text = intl3.string(arg1(dependencyMap[17]).t.TXNS7S);
   obj5.onPress = callback1;

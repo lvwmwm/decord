@@ -1,9 +1,9 @@
-// Module ID: 7757
-// Function ID: 61613
+// Module ID: 7761
+// Function ID: 61625
 // Name: cacheBustParam
 // Dependencies: []
 
-// Module 7757 (cacheBustParam)
+// Module 7761 (cacheBustParam)
 function cacheBustParam() {
   return "x=" + Math.floor(new Date().getMinutes() / 5);
 }

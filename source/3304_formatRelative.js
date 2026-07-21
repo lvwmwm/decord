@@ -5,7 +5,7 @@
 // Exports: default
 
 // Module 3304 (formatRelative)
-let closure_0 = {};
+let closure_0 = { "Bool(true)": null, "Bool(true)": null, "Bool(true)": null, "Bool(true)": null, "Bool(true)": null, "Bool(true)": null };
 
 export default function formatRelative(arg0, arg1, arg2, arg3) {
   return closure_0[arg0];

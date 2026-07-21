@@ -34,7 +34,7 @@ const fn = function t(moment) {
     weekdaysShort: "zo._ma._di._wo._do._vr._za.".split("_"),
     weekdaysMin: "zo_ma_di_wo_do_vr_za".split("_"),
     weekdaysParseExact: true,
-    longDateFormat: {},
+    longDateFormat: { <string:1122280543>: 1, <string:3251850218>: "za %s", <string:306010250>: "%s temu", <string:37429971>: "kilka sekund", <string:1812403200>: "HH:mm", <string:3855182856>: "HH:mm:ss" },
     calendar: {},
     relativeTime: {},
     dayOfMonthOrdinalParse: /\d{1,2}(ste|de)/,
@@ -47,7 +47,7 @@ const fn = function t(moment) {
       }
       str = "ste";
     },
-    week: { "Bool(true)": false, "Bool(true)": false }
+    week: { <string:1431496722>: false, <string:1627556098>: false }
   });
 };
 if ("object" === typeof exports) {
@@ -59,7 +59,7 @@ if ("object" === typeof exports) {
 }
 if ("function" === typeof globalThis.define) {
   if (globalThis.define.amd) {
-    globalThis.define([1782644737], fn);
+    globalThis.define(["HH:mm:ss"], fn);
   }
 }
 fn(this.moment);

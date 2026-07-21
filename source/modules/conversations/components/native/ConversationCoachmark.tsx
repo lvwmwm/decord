@@ -1,10 +1,10 @@
-// Module ID: 10084
-// Function ID: 78117
+// Module ID: 10090
+// Function ID: 78135
 // Name: NewBadge
 // Dependencies: []
 // Exports: ConversationCoachmark
 
-// Module 10084 (NewBadge)
+// Module 10090 (NewBadge)
 function NewBadge() {
   let obj = { style: callback2().badge };
   obj = {};

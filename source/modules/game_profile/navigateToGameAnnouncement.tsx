@@ -1,10 +1,10 @@
-// Module ID: 8649
-// Function ID: 68467
+// Module ID: 8653
+// Function ID: 68479
 // Name: _navigateToGameAnnouncement
 // Dependencies: []
 // Exports: default
 
-// Module 8649 (_navigateToGameAnnouncement)
+// Module 8653 (_navigateToGameAnnouncement)
 function _navigateToGameAnnouncement() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);

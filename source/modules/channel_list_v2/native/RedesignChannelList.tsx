@@ -1,9 +1,9 @@
-// Module ID: 14829
-// Function ID: 111757
+// Module ID: 14836
+// Function ID: 111781
 // Name: getInitialPosition
 // Dependencies: []
 
-// Module 14829 (getInitialPosition)
+// Module 14836 (getInitialPosition)
 function getInitialPosition(guildChannels, selectedChannelId, item) {
   const first = callback(guildChannels.getSectionRowsFromChannel(selectedChannelId), 1)[0];
   if (null != first) {
@@ -135,7 +135,7 @@ const tmp2 = arg1(dependencyMap[8]);
 ({ jsx: closure_14, jsxs: closure_15, Fragment: closure_16 } = arg1(dependencyMap[9]));
 const tmp3 = arg1(dependencyMap[9]);
 let obj = { container: {} };
-obj = { left: "isArray", borderColor: "skuId", borderWidth: "T", backgroundColor: importDefault(dependencyMap[14]).colors.PANEL_BG, borderRadius: "isArray" };
+obj = { o: "center", concat: null, o: 4, borderRadius: 4, position: "rgba(0, 0, 0, 0.75)", backgroundColor: importDefault(dependencyMap[14]).colors.PANEL_BG };
 obj.panelTint = obj;
 obj.listWrapper = { flex: 1 };
 let closure_17 = arg1(dependencyMap[13]).createStyles(obj);

@@ -1,13 +1,10 @@
-// Module ID: 9446
-// Function ID: 73610
+// Module ID: 9450
+// Function ID: 73624
 // Name: resolveAsset
-// Dependencies: [0, 0, 0, 0, 0, 0, 0, 0]
+// Dependencies: []
 // Exports: getDevicePixelScaledDimensions, getQuestAsset, getScaledFirstFrameImageUrl, getScaledImageUrl, resolveAdCreativeCdnUrl, resolveOptionalAdCreativeCdnUrl
 
-// Module 9446 (resolveAsset)
-import result from "result";
-import { MEDIA_PROXY_MAX_TARGET_RESOLUTION as closure_5 } from "result";
-
+// Module 9450 (resolveAsset)
 let TIER_1;
 let TIER_2;
 let TIER_3;
@@ -193,18 +190,20 @@ function convertVideoToFirstFrameImageWithMediaProxy(assetUrl, width) {
     return str;
   }
 }
-({ CDN_URL_BASE: closure_3, QUESTS_CDN_URL_BASE: closure_4 } = result);
+const _module = require(dependencyMap[0]);
+({ CDN_URL_BASE: closure_3, QUESTS_CDN_URL_BASE: closure_4 } = _module);
+let closure_5 = require(dependencyMap[1]).MEDIA_PROXY_MAX_TARGET_RESOLUTION;
 const tmp3 = /\.([a-zA-Z0-9]+)$/;
-const items = ["timestampSeparator", "DEFAULT_AUDIO_MIXER_SETTINGS"];
+const items = [true, null];
 let obj = { HERO: "hero", HERO_IMAGE: "hero_image", HERO_VIDEO: "hero_video", QUEST_BAR_HERO: "quest_bar_hero", QUEST_BAR_HERO_VIDEO: "quest_bar_hero_video", QUEST_BAR_HERO_IMAGE: "quest_bar_hero_image", REWARD: "reward", REWARD_IMAGE: "reward_image", GAME_TILE: "game_tile", LOGO_TYPE: "logo_type", COSPONSOR_LOGO_TYPE: "cosponsor_logo_type", VIDEO_PLAYER_VIDEO: "video_player_video", VIDEO_PLAYER_VIDEO_LOW_RES: "video_player_video_low_res", VIDEO_PLAYER_VIDEO_HLS: "video_player_video_hls", VIDEO_PLAYER_THUMBNAIL: "video_player_thumbnail", VIDEO_PLAYER_CAPTION: "video_player_caption", VIDEO_PLAYER_TRANSCRIPT: "video_player_transcript" };
 obj = { VIDEO: "video", VIDEO_LOW_RES: "videoLowRes", VIDEO_HLS: "videoHls" };
 obj = { VIDEO: "url", THUMBNAIL: "thumbnail", CAPTION: "caption", TRANSCRIPT: "transcript" };
 const obj1 = { TIER_1: 1, [1]: "TIER_1", TIER_2: 2, [2]: "TIER_2", TIER_3: 3, [3]: "TIER_3", TIER_4: 4, [4]: "TIER_4" };
 let closure_9 = { [obj.VIDEO_PLAYER_VIDEO]: { variant: obj.VIDEO, property: obj.VIDEO }, [obj.VIDEO_PLAYER_VIDEO_LOW_RES]: { variant: obj.VIDEO_LOW_RES, property: obj.VIDEO }, [obj.VIDEO_PLAYER_VIDEO_HLS]: { variant: obj.VIDEO_HLS, property: obj.VIDEO }, [obj.VIDEO_PLAYER_THUMBNAIL]: { variant: obj.VIDEO, property: obj.THUMBNAIL }, [obj.VIDEO_PLAYER_CAPTION]: { variant: obj.VIDEO, property: obj.CAPTION }, [obj.VIDEO_PLAYER_TRANSCRIPT]: { variant: obj.VIDEO, property: obj.TRANSCRIPT } };
-const obj8 = { [TIER_1]: require("result"), [TIER_2]: require("result"), [TIER_3]: require("result"), [obj1.TIER_4]: require("result") };
+const obj8 = { [TIER_1]: importDefault(dependencyMap[2]), [TIER_2]: importDefault(dependencyMap[3]), [TIER_3]: importDefault(dependencyMap[4]), [obj1.TIER_4]: importDefault(dependencyMap[5]) };
 ({ TIER_1, TIER_2, TIER_3 } = obj1);
 const _module1 = require(dependencyMap[13]);
-result = _module1.fileFinishedImporting("modules/quests/lib/AssetUtils.tsx");
+const result = _module1.fileFinishedImporting("modules/quests/lib/AssetUtils.tsx");
 
 export const EXTENSION_RE = tmp3;
 export const ANIMATED_MIMETYPES = items;
@@ -261,13 +260,13 @@ export const getQuestAsset = function getQuestAsset(quest, VIDEO_PLAYER_TRANSCRI
         tmp30 = obj8[arg4];
       }
       if (null != tmp30) {
-        let obj = { "Null": 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010299985827458772, "Null": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007667343966312126, "Null": 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000009010471220596012, url: tmp30 };
+        let obj = { url: tmp30 };
         obj1 = obj;
       } else if (flag) {
-        obj = { "Null": 1, "Null": 12, "Null": 0, url: importDefault(dependencyMap[8]) };
+        obj = { display: "isArrayBuffer", paddingVertical: "f5cMAg", flexDirection: "__didCreateRequest", url: importDefault(dependencyMap[8]) };
         obj1 = obj;
       } else {
-        obj1 = { "Null": 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010299985827458772, "Null": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007667343966312126, "Null": 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000009010471220596012, url: importDefault(dependencyMap[9]) };
+        obj1 = { url: importDefault(dependencyMap[9]) };
       }
       return obj1;
     } else {

@@ -1,10 +1,10 @@
-// Module ID: 8496
-// Function ID: 67816
+// Module ID: 8500
+// Function ID: 67828
 // Name: useUserProfileGradientColors
 // Dependencies: []
 // Exports: useUserProfileGradientColors
 
-// Module 8496 (useUserProfileGradientColors)
+// Module 8500 (useUserProfileGradientColors)
 let closure_2 = importAll(dependencyMap[0]);
 let closure_3 = importDefault(dependencyMap[1]);
 const result = arg1(dependencyMap[6]).fileFinishedImporting("modules/user_profile/hooks/native/useUserProfileGradientColors.tsx");

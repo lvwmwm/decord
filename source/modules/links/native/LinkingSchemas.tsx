@@ -1,7 +1,7 @@
 // Module ID: 3824
 // Function ID: 31792
 // Name: LINKING_SCHEMAS
-// Dependencies: []
+// Dependencies: [284214097]
 
 // Module 3824 (LINKING_SCHEMAS)
 let obj = { bestbuy: obj };

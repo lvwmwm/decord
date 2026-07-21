@@ -1,10 +1,10 @@
-// Module ID: 15403
-// Function ID: 117574
+// Module ID: 15410
+// Function ID: 117598
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 // Exports: default
 
-// Module 15403 (_isNativeReflectConstruct)
+// Module 15410 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -52,7 +52,7 @@ const tmp3 = (PureComponent) => {
         let str = "AUTOMATIC_RTC_REGION";
         const channel = tmp2Result.props.channel;
         const regions = regions.getRegions(channel.getGuildId());
-        obj = {};
+        obj = { position: "SERVER_GUIDE_CHANNEL_SELECTED", top: "WebUserSettings", left: "Array", width: "BGYkaH", zIndex: "isArray", flex: "SET_VOICE_CHANNEL_STATUS", overflow: "isArray", borderBottomLeftRadius: "isArrayBuffer" };
         const intl = tmp2Result(closure_2[12]).intl;
         obj.name = intl.string(tmp2Result(closure_2[12]).t.JEmsap);
         const items = [obj];

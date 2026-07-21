@@ -1,16 +1,16 @@
-// Module ID: 13678
-// Function ID: 103556
+// Module ID: 13685
+// Function ID: 103579
 // Name: FamilyCenterActivityGiftRow
 // Dependencies: []
 // Exports: default
 
-// Module 13678 (FamilyCenterActivityGiftRow)
+// Module 13685 (FamilyCenterActivityGiftRow)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 ({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[2]));
 let obj = arg1(dependencyMap[3]);
 obj = {};
-obj = { borderBottomColor: importDefault(dependencyMap[4]).colors.BORDER_SUBTLE };
+obj = { pointerEvents: 1019560481, collapsable: 543817730, channels: 1091633153, labels: 151645, distance: 6258, parent: 6144, borderBottomColor: importDefault(dependencyMap[4]).colors.BORDER_SUBTLE };
 obj.container = obj;
 obj.textContainer = {};
 let closure_6 = obj.createStyles(obj);
@@ -75,9 +75,9 @@ export default function FamilyCenterActivityGiftRow(arg0) {
     obj1.subscriptionPlanId = subscriptionPlanId;
     const items = [tmp11(importDefault(dependencyMap[10]), obj1), ];
     obj2 = { style: tmp.textContainer };
-    const obj3 = { 0: 0.706, -9223372036854775808: 0.000000000000000018217984681387264, 0: -0.000030517578125, 0: 78804188533482670000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, children: displayName };
+    const obj3 = { mode: 0.706, edges: 0.000000000000000018217984681393575, "Bool(false)": -0.000030517578125, "Bool(false)": 78804188533482670000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, children: displayName };
     const items1 = [callback(arg1(dependencyMap[11]).Text, obj3), ];
-    const obj4 = { INTEGRATION_CREATE: true, ConstraintReasonCode: true, children: giftSubtext };
+    const obj4 = { children: giftSubtext };
     items1[1] = callback(arg1(dependencyMap[11]).Text, obj4);
     obj2.children = items1;
     items[1] = callback2(View, obj2);

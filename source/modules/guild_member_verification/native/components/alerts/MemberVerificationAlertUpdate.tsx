@@ -1,16 +1,16 @@
-// Module ID: 9152
-// Function ID: 71766
+// Module ID: 9156
+// Function ID: 71778
 // Name: MemberVerificationAlertUpdate
 // Dependencies: []
 // Exports: default
 
-// Module 9152 (MemberVerificationAlertUpdate)
+// Module 9156 (MemberVerificationAlertUpdate)
 importAll(dependencyMap[0]);
 const Image = arg1(dependencyMap[1]).Image;
 const DownloadLinks = arg1(dependencyMap[2]).DownloadLinks;
 ({ jsx: closure_5, jsxs: closure_6 } = arg1(dependencyMap[3]));
 const tmp3 = arg1(dependencyMap[3]);
-let closure_7 = arg1(dependencyMap[4]).createStyles({ headerImage: { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null }, header: {}, text: {} });
+let closure_7 = arg1(dependencyMap[4]).createStyles({ headerImage: { flexDirection: null, alignItems: null, justifyContent: null }, header: { "Null": null, "Null": "absolute" }, text: { -321336219: null, -357106845: null, 595310674: null } });
 const obj = arg1(dependencyMap[4]);
 const result = arg1(dependencyMap[10]).fileFinishedImporting("modules/guild_member_verification/native/components/alerts/MemberVerificationAlertUpdate.tsx");
 
@@ -28,7 +28,7 @@ export default function MemberVerificationAlertUpdate(onClose) {
   obj["onCancel"] = onClose.onClose;
   obj = { source: importDefault(dependencyMap[8]), style: tmp.headerImage };
   const items = [callback(Image, obj), , ];
-  obj = { Promise: false, marginTop: 0, flags: 4, style: tmp.header };
+  obj = { "Null": false, "Null": 0, "Null": 4, style: tmp.header };
   const intl3 = arg1(dependencyMap[6]).intl;
   obj.children = intl3.string(arg1(dependencyMap[6]).t.kkjNHU);
   items[1] = callback(arg1(dependencyMap[9]).Text, obj);

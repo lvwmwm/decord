@@ -1,8 +1,8 @@
-// Module ID: 9652
-// Function ID: 75208
+// Module ID: 9657
+// Function ID: 75225
 // Dependencies: []
 
-// Module 9652
+// Module 9657
 const _module = require(dependencyMap[1]);
 const result = _module.fileFinishedImporting("modules/device/native/DCDPhotos.tsx");
 

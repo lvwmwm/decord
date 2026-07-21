@@ -1,10 +1,10 @@
-// Module ID: 10261
-// Function ID: 79307
+// Module ID: 10267
+// Function ID: 79326
 // Name: MuteSettings
 // Dependencies: []
 // Exports: MuteSettingsHint, default
 
-// Module 10261 (MuteSettings)
+// Module 10267 (MuteSettings)
 let closure_3 = importAll(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 let closure_5 = importDefault(dependencyMap[2]);
@@ -108,8 +108,7 @@ export const MuteSettingsHint = function MuteSettingsHint(guildMessageNotificati
     const intl4 = arg1(dependencyMap[8]).intl;
     const obj1 = {
       mutedHook(children) {
-          const obj = { INTEGRATION_CREATE: 1, ConstraintReasonCode: "center", children };
-          return callback2(callback(closure_2[7]).Text, obj, arg1);
+          return callback2(callback(closure_2[7]).Text, { children }, arg1);
         }
     };
     obj.children = intl4.format(arg1(dependencyMap[8]).t.O34r15, obj1);
@@ -119,8 +118,7 @@ export const MuteSettingsHint = function MuteSettingsHint(guildMessageNotificati
     const intl3 = arg1(dependencyMap[8]).intl;
     const obj3 = {
       notificationHook(children) {
-          const obj = { INTEGRATION_CREATE: -76309222, ConstraintReasonCode: 285212671, children };
-          return callback2(callback(closure_2[7]).Text, obj, arg1);
+          return callback2(callback(closure_2[7]).Text, { children }, arg1);
         }
     };
     obj2.children = intl3.format(arg1(dependencyMap[8]).t.nRwUIL, obj3);

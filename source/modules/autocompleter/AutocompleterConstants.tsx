@@ -1,9 +1,9 @@
-// Module ID: 5312
-// Function ID: 45117
+// Module ID: 5314
+// Function ID: 45158
 // Name: HeaderRecord
 // Dependencies: []
 
-// Module 5312 (HeaderRecord)
+// Module 5314 (HeaderRecord)
 let closure_0 = importDefault(dependencyMap[1]);
 class HeaderRecord {
   constructor(arg0) {

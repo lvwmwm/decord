@@ -1,9 +1,9 @@
-// Module ID: 14545
-// Function ID: 109623
+// Module ID: 14552
+// Function ID: 109645
 // Name: SurveyOverrideInfoActionSheet
 // Dependencies: []
 
-// Module 14545 (SurveyOverrideInfoActionSheet)
+// Module 14552 (SurveyOverrideInfoActionSheet)
 function SurveyOverrideInfoActionSheet(survey) {
   let obj = { header: callback2(arg1(dependencyMap[9]).BottomSheetTitleHeader, { title: "Last Survey Data" }) };
   obj = { hasIcons: true };
@@ -45,7 +45,7 @@ function SurveyOverrideActionSheet() {
   const first = tmp[0];
   const arg1 = first;
   let obj = { header: callback2(arg1(dependencyMap[9]).BottomSheetTitleHeader, { title: "Survey Override" }) };
-  obj = { cloudsBackground: false, rowBody: false, hasDiversity: false, rowTextV2: false, auth_session_id_hash: false, onChange: tmp[1] };
+  obj = { "Bool(false)": "<string:960565506>", "Bool(false)": "<string:16777748>", "Bool(false)": "550a2030cc096bcb50a6945a95ee1b56", "Bool(false)": "zh-CN.messages.550a2030cc096bcb50a6945a95ee1b56.compiled.messages", "Bool(false)": "jsona", onChange: tmp[1] };
   const items = [callback2(arg1(dependencyMap[13]).TextInput, obj), ];
   obj = {};
   let str = "Fetch Survey";
@@ -82,11 +82,11 @@ function SurveyInfo() {
   const stateFromStores = obj.useStateFromStores(items, () => currentSurvey.getCurrentSurvey());
   const tmp2 = importDefault(dependencyMap[18])(stateFromStores);
   const arg1 = tmp2;
-  obj = { width: "Loading products...", height: "text-xs/normal" };
+  obj = { "Bool(false)": "Product not found", "Bool(false)": "heading-md/semibold" };
   obj = {
-    marginBottom: true,
-    marginTop: true,
-    flexDirection: true,
+    "Bool(false)": true,
+    "Bool(false)": true,
+    "Bool(false)": true,
     onPress() {
       let obj = callback(closure_3[16]);
       obj = { default: closure_13 };
@@ -126,7 +126,7 @@ function ChangelogOverrideActionSheet() {
   const first = tmp[0];
   const arg1 = first;
   let obj = { header: callback2(arg1(dependencyMap[9]).BottomSheetTitleHeader, { title: "Changelog Override" }) };
-  obj = { cloudsBackground: false, rowBody: false, hasDiversity: false, rowTextV2: false, auth_session_id_hash: false, onChange: tmp[1] };
+  obj = { "Bool(false)": 16777504, "Bool(false)": 38595139, "Bool(false)": 25918976, "Bool(false)": 30653696, "Bool(false)": 1995264, onChange: tmp[1] };
   const items = [callback2(arg1(dependencyMap[13]).TextInput, obj), ];
   obj = {};
   let str = "Fetch Changelog";
@@ -158,11 +158,8 @@ function ChangelogOverrideActionSheet() {
   return closure_10(arg1(dependencyMap[8]).ActionSheet, obj);
 }
 function ChangelogInfo() {
-  let obj = { width: 1090584578, height: 84183 };
+  let obj = { "Bool(false)": null, "Bool(false)": null };
   obj = {
-    marginBottom: null,
-    marginTop: null,
-    flexDirection: null,
     onPress() {
       let obj = callback(closure_3[16]);
       obj = { default: closure_16 };
@@ -171,6 +168,8 @@ function ChangelogInfo() {
   };
   const items = [callback2(arg1(dependencyMap[20]).TableRow, obj), ];
   obj = {
+    borderTopWidth: false,
+    borderColor: false,
     onPress() {
       let obj = callback(closure_3[16]);
       obj = { default: closure_15 };

@@ -1,25 +1,26 @@
-// Module ID: 14547
-// Function ID: 109659
+// Module ID: 14554
+// Function ID: 109681
 // Name: toggle
-// Dependencies: []
+// Dependencies: [30, 3506438160, 2382364714]
 // Exports: clearAll
 
-// Module 14547 (toggle)
+// Module 14554 (toggle)
+import _objectWithoutPropertiesLoose from "_objectWithoutPropertiesLoose";
+
 function toggle(toggle) {
   let tmp = arg1;
   if ("boolean" !== typeof arg1) {
-    tmp = !closure_2.get(toggle);
+    tmp = !_objectWithoutPropertiesLoose.get(toggle);
   }
   let obj = importDefault(dependencyMap[1]);
   obj = { type: "DEV_TOOLS_DESIGN_TOGGLE_SET", toggle, value: tmp };
   obj.dispatch(obj);
 }
-let closure_2 = importDefault(dependencyMap[0]);
 const result = arg1(dependencyMap[2]).fileFinishedImporting("modules/devtools/design_toggles/DesignTogglesActions.tsx");
 
 export { toggle };
 export const clearAll = function clearAll() {
-  for (const key10006 in closure_2.all()) {
+  for (const key10006 in _objectWithoutPropertiesLoose.all()) {
     let tmp = key10006;
     let tmp2 = closure_3;
     let tmp3 = closure_3(key10006, false);

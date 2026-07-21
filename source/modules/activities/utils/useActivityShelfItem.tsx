@@ -1,10 +1,10 @@
-// Module ID: 11160
-// Function ID: 86798
+// Module ID: 11166
+// Function ID: 86821
 // Name: getStaffReleasePhase
 // Dependencies: []
 // Exports: default
 
-// Module 11160 (getStaffReleasePhase)
+// Module 11166 (getStaffReleasePhase)
 function getStaffReleasePhase(application, activity) {
   if (!obj.hasApplicationFlag(application, ApplicationFlags.EMBEDDED_RELEASED)) {
     const obj2 = activity(dependencyMap[10]);
@@ -143,7 +143,7 @@ export default function useActivityShelfItem(backgroundResolution) {
   ({ activityItem, context, assetNames } = backgroundResolution);
   ({ locationObject, onActivityItemSelected, embeddedActivitiesManager } = backgroundResolution);
   if (assetNames === undefined) {
-    assetNames = ["PREMIUM_STANDARD"];
+    assetNames = ["SENTRY_BAGGAGE_KEY_PREFIX"];
   }
   let num = backgroundResolution.backgroundResolution;
   if (num === undefined) {

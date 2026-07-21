@@ -1,7 +1,7 @@
 // Module ID: 1119
 // Function ID: 12712
 // Name: createReduxEnhancer
-// Dependencies: []
+// Dependencies: [880148480, 889192452]
 // Exports: createReduxEnhancer
 
 // Module 1119 (createReduxEnhancer)
@@ -34,7 +34,7 @@ export const createReduxEnhancer = function createReduxEnhancer(arg0) {
           const currentScope = obj.getCurrentScope();
           const actionTransformerResult = self.actionTransformer(arg1);
           if (null != actionTransformerResult) {
-            obj = { selectable: "mi", selectionColor: "indexSize", adjustsFontSizeToFit: "mi", data: actionTransformerResult };
+            obj = { data: actionTransformerResult };
             self(closure_1[1]).addBreadcrumb(obj);
             const obj3 = self(closure_1[1]);
           }

@@ -1,10 +1,10 @@
-// Module ID: 12136
-// Function ID: 93513
+// Module ID: 12143
+// Function ID: 93536
 // Name: GiftCodeRedeemSuccess
 // Dependencies: []
 // Exports: default
 
-// Module 12136 (GiftCodeRedeemSuccess)
+// Module 12143 (GiftCodeRedeemSuccess)
 importAll(dependencyMap[0]);
 ({ View: closure_3, ScrollView: closure_4 } = arg1(dependencyMap[1]));
 let closure_5 = importDefault(dependencyMap[2]);
@@ -12,19 +12,19 @@ const tmp3 = arg1(dependencyMap[1]);
 ({ jsx: closure_6, jsxs: closure_7 } = arg1(dependencyMap[3]));
 let obj = arg1(dependencyMap[4]);
 obj = {};
-obj = { -9223372036854775808: 0.129, 0: 1, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_LOW };
+obj = { markAsSpoilerTitle: 0.129, keyboardAppearance: 1, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_LOW };
 obj.container = obj;
-obj.body = { 0: true, 9223372036854775807: true, 0: true, 0: true, 0: true, 0: true };
+obj.body = { "Null": true, "Null": true, "Null": true, "Null": true, gap: true, display: true };
 const tmp4 = arg1(dependencyMap[3]);
 obj.nameplateContainer = { width: "100%", paddingTop: importDefault(dependencyMap[5]).space.PX_24 };
-const obj1 = { width: "100%", paddingTop: importDefault(dependencyMap[5]).space.PX_24 };
-obj.bundleContainer = { paddingTop: importDefault(dependencyMap[5]).space.PX_24 };
-obj.header = { accessible: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000029233630968962463, id: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000026408941893 };
-obj.message = { accessible: null, id: null };
+const obj2 = { "Null": null, "Null": null, paddingTop: importDefault(dependencyMap[5]).space.PX_24 };
+obj.bundleContainer = obj2;
+obj.header = { "Null": "Array", "Null": "summaryId" };
+obj.message = { "Null": null, "Null": null };
 obj.footer = { paddingHorizontal: 24 };
 obj.gameItemCard = { marginTop: 20 };
 let closure_8 = obj.createStyles(obj);
-const obj2 = { paddingTop: importDefault(dependencyMap[5]).space.PX_24 };
+const obj1 = { width: "100%", paddingTop: importDefault(dependencyMap[5]).space.PX_24 };
 const result = arg1(dependencyMap[30]).fileFinishedImporting("modules/premium/native/gift_code_modal/GiftCodeRedeemSuccess.tsx");
 
 export default function GiftCodeRedeemSuccess(giftCode) {
@@ -106,20 +106,20 @@ export default function GiftCodeRedeemSuccess(giftCode) {
         }
         const items1 = [otherwiseResult, , ];
         if (null == stateFromStores) {
-          const obj9 = { "Bool(true)": 88, "Bool(true)": 80, "Bool(true)": null, style: tmp.header };
+          const obj9 = { style: tmp.header };
           const intl4 = arg1(dependencyMap[26]).intl;
           obj9.children = intl4.string(arg1(dependencyMap[26]).t.+BNMcF);
           let tmp34 = callback(arg1(dependencyMap[25]).Text, obj9);
         } else {
           if (obj43.isGameItemSKU(stateFromStores)) {
-            const obj10 = { "Bool(true)": 88, "Bool(true)": 80, "Bool(true)": null, style: tmp.header };
+            const obj10 = { style: tmp.header };
             const intl3 = arg1(dependencyMap[26]).intl;
             obj10.children = intl3.string(arg1(dependencyMap[26]).t.5glWta);
             tmp34 = callback(arg1(dependencyMap[25]).Text, obj10);
           } else {
             if (giftCode.isSubscription) {
               if (null != getOrFetchSubscriptionPlan) {
-                const obj11 = { "Bool(true)": 88, "Bool(true)": 80, "Bool(true)": null, style: tmp.header };
+                const obj11 = { style: tmp.header };
                 const intl2 = arg1(dependencyMap[26]).intl;
                 const obj12 = { skuName: stateFromStores.name };
                 obj11.children = intl2.format(arg1(dependencyMap[26]).t.1C2BG/, obj12);
@@ -127,7 +127,7 @@ export default function GiftCodeRedeemSuccess(giftCode) {
               }
             }
             if (null != first) {
-              const obj13 = { style: tmp.header };
+              const obj13 = { y: 1548812289, isArray: 186630151, split: -1224736477, ix: 2013266539, style: tmp.header };
               const intl = arg1(dependencyMap[26]).intl;
               obj13.children = intl.string(arg1(dependencyMap[26]).t.IMffmm);
               tmp34 = callback(arg1(dependencyMap[25]).Text, obj13);

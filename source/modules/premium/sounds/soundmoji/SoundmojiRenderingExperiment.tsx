@@ -1,12 +1,13 @@
-// Module ID: 4577
-// Function ID: 40102
+// Module ID: 4579
+// Function ID: 40143
 // Name: getSoundmojiRenderingExperiment
 // Dependencies: []
 // Exports: getSoundmojiRenderingExperiment, useSoundmojiRenderingExperiment
 
-// Module 4577 (getSoundmojiRenderingExperiment)
+// Module 4579 (getSoundmojiRenderingExperiment)
 const _module = require(dependencyMap[0]);
-let closure_0 = _module.createApexExperiment({ defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } });
+const obj = { 9223372036854775807: 24, 0: 24, defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } };
+let closure_0 = _module.createApexExperiment(obj);
 const _module1 = require(dependencyMap[1]);
 const result = _module1.fileFinishedImporting("modules/premium/sounds/soundmoji/SoundmojiRenderingExperiment.tsx");
 

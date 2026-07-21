@@ -1,9 +1,9 @@
-// Module ID: 7003
-// Function ID: 56200
+// Module ID: 7007
+// Function ID: 56211
 // Name: createSessionData
 // Dependencies: []
 
-// Module 7003 (createSessionData)
+// Module 7007 (createSessionData)
 function createSessionData(channelId) {
   const obj = { channelId, sessionId: arg1(dependencyMap[2]).v4() };
   return obj;

@@ -1,9 +1,9 @@
-// Module ID: 4216
-// Function ID: 36783
+// Module ID: 4220
+// Function ID: 36831
 // Name: SoundshareStatsAggregator
 // Dependencies: []
 
-// Module 4216 (SoundshareStatsAggregator)
+// Module 4220 (SoundshareStatsAggregator)
 let closure_0 = importDefault(dependencyMap[0]);
 let closure_1 = importDefault(dependencyMap[1]);
 const tmp2 = () => {
@@ -23,7 +23,7 @@ const tmp2 = () => {
       const _report = this._report;
       if ("soundshare_state_transition" === type.type) {
         const _HermesInternal2 = HermesInternal;
-        let combined = "soundshare_state_transition_" + ["<string:1079717068>", "collectGuildAnalyticsMetadata", "DEFAULT_ENABLE_BLUR_KEYBOARD_ON_GESTURE", "isArray", "<string:24330208>", "isArray"][type.newState] + "_count";
+        let combined = "soundshare_state_transition_" + ["<string:1529662668>", "<string:6582592>", "<string:3211264>", "isArray", "<string:1933565952>", "Array"][type.newState] + "_count";
       } else {
         const _HermesInternal = HermesInternal;
         combined = "" + type.type + "_count";

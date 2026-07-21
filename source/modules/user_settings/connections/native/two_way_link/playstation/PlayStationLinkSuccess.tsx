@@ -1,16 +1,16 @@
-// Module ID: 8969
-// Function ID: 70717
+// Module ID: 8973
+// Function ID: 70729
 // Name: PlayStationLinkSuccess
 // Dependencies: []
 // Exports: PlayStationLinkSuccess
 
-// Module 8969 (PlayStationLinkSuccess)
+// Module 8973 (PlayStationLinkSuccess)
 let closure_3 = importAll(dependencyMap[0]);
 ({ Image: closure_4, View: closure_5 } = arg1(dependencyMap[1]));
 const tmp2 = arg1(dependencyMap[1]);
 ({ jsx: closure_6, jsxs: closure_7 } = arg1(dependencyMap[2]));
 const tmp3 = arg1(dependencyMap[2]);
-let closure_8 = arg1(dependencyMap[3]).createStyles({ image: { position: true, minWidth: true, height: true } });
+let closure_8 = arg1(dependencyMap[3]).createStyles({ image: { flexDirection: true, alignItems: true, paddingStart: true } });
 const obj = arg1(dependencyMap[3]);
 const result = arg1(dependencyMap[10]).fileFinishedImporting("modules/user_settings/connections/native/two_way_link/playstation/PlayStationLinkSuccess.tsx");
 

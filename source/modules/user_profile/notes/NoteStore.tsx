@@ -1,9 +1,9 @@
-// Module ID: 11956
-// Function ID: 92437
+// Module ID: 11963
+// Function ID: 92460
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [2382364718, 1895825415, 1828716590, 1107296302, 1442840608, 3539992597, 2130706466]
 
-// Module 11956 (_isNativeReflectConstruct)
+// Module 11963 (_isNativeReflectConstruct)
 let TypeTag;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
@@ -80,7 +80,7 @@ tmp3 = new tmp3({
     const result = set.set(note.id, callback3("Note", { loading: false, note: note.note }));
   },
   USER_NOTE_LOAD_START(userId, set) {
-    const result = set.set(userId.userId, callback3("Note", {}));
+    const result = set.set(userId.userId, callback3("Note", { 0: true, 9223372036854775807: true }));
   }
 }, LibdiscoreBatchStoreRefactorExperiment.getCachedBridgedStoreMode());
 const obj = {
@@ -100,7 +100,7 @@ const obj = {
     const result = set.set(note.id, callback3("Note", { loading: false, note: note.note }));
   },
   USER_NOTE_LOAD_START(userId, set) {
-    const result = set.set(userId.userId, callback3("Note", {}));
+    const result = set.set(userId.userId, callback3("Note", { 0: true, 9223372036854775807: true }));
   }
 };
 const tmp2 = arg1(dependencyMap[5]);

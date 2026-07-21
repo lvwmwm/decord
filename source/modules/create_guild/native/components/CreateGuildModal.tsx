@@ -1,10 +1,10 @@
-// Module ID: 11720
-// Function ID: 91038
+// Module ID: 11727
+// Function ID: 91061
 // Name: getScreens
 // Dependencies: []
 // Exports: default
 
-// Module 11720 (getScreens)
+// Module 11727 (getScreens)
 function getScreens(arg0, arg1, arg2) {
   const importDefault = arg2;
   let obj = {};

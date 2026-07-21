@@ -1,10 +1,10 @@
-// Module ID: 14954
-// Function ID: 112531
+// Module ID: 14961
+// Function ID: 112555
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 // Exports: useFavoritesGuildChannelList
 
-// Module 14954 (_createForOfIteratorHelperLoose)
+// Module 14961 (_createForOfIteratorHelperLoose)
 function _createForOfIteratorHelperLoose(@@iterator) {
   let arg1 = Symbol_iterator;
   @@iterator = "undefined" !== typeof Symbol;
@@ -636,7 +636,7 @@ export const useFavoritesGuildChannelList = function useFavoritesGuildChannelLis
     memo = tmp[0];
   }
   if (hasAccess) {
-    hasAccess = getMissingFavoriteThreadIds({ presenceCount: 760348674, marginEnd: 291798377 }).length > 0;
+    hasAccess = getMissingFavoriteThreadIds({}).length > 0;
   }
   obj = {
     guildChannels: memo,

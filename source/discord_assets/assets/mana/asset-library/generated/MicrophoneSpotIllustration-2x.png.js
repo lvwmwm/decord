@@ -1,9 +1,9 @@
-// Module ID: 6290
-// Function ID: 50309
+// Module ID: 6292
+// Function ID: 50352
 // Name: metadata
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 6290 (metadata)
+// Module 6292 (metadata)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/MicrophoneSpotIllustration-2x.png.js");
 

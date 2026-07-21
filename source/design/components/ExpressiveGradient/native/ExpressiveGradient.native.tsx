@@ -1,10 +1,10 @@
-// Module ID: 8562
-// Function ID: 68053
+// Module ID: 8566
+// Function ID: 68065
 // Name: ExpressiveGradient
 // Dependencies: []
 // Exports: ExpressiveGradient
 
-// Module 8562 (ExpressiveGradient)
+// Module 8566 (ExpressiveGradient)
 importAll(dependencyMap[0]);
 ({ View: closure_3, StyleSheet: closure_4 } = arg1(dependencyMap[1]));
 const tmp3 = arg1(dependencyMap[1]);
@@ -22,10 +22,10 @@ const obj2 = { start: importDefault(dependencyMap[3]).colors.EXPRESSIVE_GRADIENT
 obj.nitro-pink = { start: importDefault(dependencyMap[3]).colors.EXPRESSIVE_GRADIENT_NITRO_PINK_START, end: importDefault(dependencyMap[3]).colors.EXPRESSIVE_GRADIENT_NITRO_PINK_END };
 const obj3 = { start: importDefault(dependencyMap[3]).colors.EXPRESSIVE_GRADIENT_NITRO_PINK_START, end: importDefault(dependencyMap[3]).colors.EXPRESSIVE_GRADIENT_NITRO_PINK_END };
 obj.nitro-green = { start: importDefault(dependencyMap[3]).colors.EXPRESSIVE_GRADIENT_NITRO_GREEN_START, end: importDefault(dependencyMap[3]).colors.EXPRESSIVE_GRADIENT_NITRO_GREEN_END };
-let closure_8 = { "Null": false, "Null": false };
-let closure_9 = { "Null": -721485569, "Null": 3375103 };
-let closure_10 = { "Null": "message", "Null": "PRIMARY_530" };
-let closure_11 = {};
+let closure_8 = { max: false, guildId: false };
+let closure_9 = { max: 3211264, guildId: 2042617856 };
+let closure_10 = { max: "message", guildId: "PRIMARY_530" };
+let closure_11 = { max: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011125378664662503, guildId: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002834178582291256 };
 const obj4 = { start: importDefault(dependencyMap[3]).colors.EXPRESSIVE_GRADIENT_NITRO_GREEN_START, end: importDefault(dependencyMap[3]).colors.EXPRESSIVE_GRADIENT_NITRO_GREEN_END };
 const result = arg1(dependencyMap[7]).fileFinishedImporting("design/components/ExpressiveGradient/native/ExpressiveGradient.native.tsx");
 

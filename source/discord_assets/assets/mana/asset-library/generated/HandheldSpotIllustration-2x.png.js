@@ -1,9 +1,9 @@
-// Module ID: 6240
-// Function ID: 50234
+// Module ID: 6242
+// Function ID: 50277
 // Name: metadata
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 6240 (metadata)
+// Module 6242 (metadata)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/HandheldSpotIllustration-2x.png.js");
 

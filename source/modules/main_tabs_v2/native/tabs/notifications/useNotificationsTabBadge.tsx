@@ -1,10 +1,10 @@
-// Module ID: 14987
-// Function ID: 112897
+// Module ID: 14994
+// Function ID: 112921
 // Name: useNotificationsTabBadge
 // Dependencies: []
 // Exports: default
 
-// Module 14987 (useNotificationsTabBadge)
+// Module 14994 (useNotificationsTabBadge)
 let closure_2 = importAll(dependencyMap[0]);
 let closure_3 = importDefault(dependencyMap[1]);
 const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/main_tabs_v2/native/tabs/notifications/useNotificationsTabBadge.tsx");

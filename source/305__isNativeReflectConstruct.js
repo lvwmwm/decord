@@ -18,7 +18,7 @@ function _isNativeReflectConstruct() {
 function getScrollingThreshold(arg0, arg1) {
   return arg0 * arg1 / 2;
 }
-let closure_4 = ["createAnimatedNode"];
+let closure_4 = ["<string:2426404864>"];
 let closure_5 = importDefault(dependencyMap[0]);
 let closure_6 = importDefault(dependencyMap[1]);
 let closure_7 = importDefault(dependencyMap[2]);
@@ -1763,6 +1763,6 @@ const tmp5 = (arg0) => {
 tmp5.contextType = arg1(dependencyMap[21]).VirtualizedListContext;
 const items = [{ scale: -1 }];
 const items1 = [{ scaleX: -1 }];
-const styles = StyleSheet.create({ verticallyInverted: { transform: items }, horizontallyInverted: { transform: items1 }, debug: { flex: 1 }, debugOverlayBase: { onLongPressAvatar: true, onTapUsername: true, onLongPressUsername: true }, debugOverlay: {}, debugOverlayFrame: { includes: "interactionStart", gap: "interactionComplete" }, debugOverlayFrameLast: {}, debugOverlayFrameVis: {} });
+const styles = StyleSheet.create({ verticallyInverted: { transform: items }, horizontallyInverted: { transform: items1 }, debug: { flex: 1 }, debugOverlayBase: { "Null": 3375103, "Null": -8192, "Null": 4320799 }, debugOverlay: { <string:3470421188>: "getMediaKeyboardDraftType", <string:31327708>: "ackedDisclosures", <string:2880984030>: "FadeOutData", <string:1273248702>: "y" }, debugOverlayFrame: { -925468074: "y", -1811620922: "isArray" }, debugOverlayFrameLast: { 675631790: null, 206821628: null, 132697248: null }, debugOverlayFrameVis: {} });
 
 export default tmp5;

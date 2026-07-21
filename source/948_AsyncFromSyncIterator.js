@@ -25,8 +25,8 @@ function AsyncFromSyncIterator(arg0) {
     }
   }
   const obj = {
-    -1470959983: false,
-    1147808644: false,
+    lineClamp: "o",
+    accessibilityRole: "o",
     next() {
       const n = this.n;
       return AsyncFromSyncIteratorContinuation(n(...arguments));
@@ -80,7 +80,7 @@ function processEvent(type, finishReasons, arg2, setStatus) {
         obj.message = str4;
         setStatus.setStatus(obj);
         let obj1 = require(dependencyMap[4]);
-        obj = { mechanism: { alignItems: "Silk", justifyContent: "(?:Cloud9|Silk-Accelerated)" } };
+        obj = { mechanism: { onDrawerSlide: false, onDrawerStateChanged: false } };
         obj1.captureException(type.error, obj);
         flag = true;
       }
@@ -417,7 +417,7 @@ export const instrumentMessageStream = function instrumentMessageStream(applyRes
   });
   applyResult.on("error", (arg0, self) => {
     let obj = self(arg2[4]);
-    obj.captureException(arg0, { mechanism: {} });
+    obj.captureException(arg0, { mechanism: { onDrawerSlide: null, onDrawerStateChanged: null } });
     if (self.isRecording()) {
       obj = { code: self(arg2[3]).SPAN_STATUS_ERROR, message: "stream_error" };
       self.setStatus(obj);

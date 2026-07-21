@@ -1,12 +1,12 @@
-// Module ID: 9110
-// Function ID: 71358
+// Module ID: 9114
+// Function ID: 71370
 // Name: GenericHeaderTitle
-// Dependencies: [31, 27, 5309, 1352, 1348, 4142, 9120, 653, 9121, 33, 4126, 9073, 689, 9122, 9124, 9125, 9131, 566, 5644, 22, 9132, 9258, 4333]
+// Dependencies: [31, 27, 5311, 1352, 1348, 4142, 9124, 653, 9125, 33, 4126, 9077, 689, 9126, 9128, 9129, 9135, 566, 5646, 22, 9136, 9262, 4337]
 // Exports: HeaderIconButton, getDefaultChannelStackHeaderProps, getDefaultStackHeaderProps, getRenderHeaderTextButton, getRenderModalBackImage, getRenderModalCloseImage, renderHeader
 
-// Module 9110 (GenericHeaderTitle)
+// Module 9114 (GenericHeaderTitle)
 import importAllResult from "module_31";
-import get ActivityIndicator from "get ActivityIndicator";
+import keys from "keys";
 import { MIN_HEADER_HEIGHT } from "_isNativeReflectConstruct";
 import _callSuper from "_callSuper";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
@@ -29,7 +29,7 @@ class GenericHeaderTitle {
       maxFontSizeMultiplier = 2;
     }
     closure_3 = maxFontSizeMultiplier;
-    obj = { -1594162110: null, -723889263: "LOCAL_PAYMENT_START_PAYMENT_MISSING_REQUIRED_OPTION", -310843857: "Missing required option for startPayment.", 1968277601: null, 478307844: "LOCAL_PAYMENT_START_PAYMENT_DEFERRED_PAYMENT_FAILED", 2126583307: "LocalPayment startPayment deferred payment failed." };
+    obj = { <string:1371629666>: true, <string:2120549492>: true, <string:3368122975>: true, <string:1764223313>: true, <string:3679956194>: true, <string:944643202>: true };
     setPrototypeOfResult = Object.setPrototypeOf(null);
     View = undefined;
     closure_5 = undefined;
@@ -77,7 +77,7 @@ class GenericHeaderTitle {
       tmp10 = arg1;
       tmp11 = dependencyMap;
       num = 6;
-      obj1 = { <string:713424900>: null, <string:559022084>: null };
+      obj1 = { "Null": null, "Null": null };
       obj1.color = str;
       obj1.style = tmp4.subtitleText;
       obj1.maxFontSizeMultiplier = maxFontSizeMultiplier;
@@ -135,10 +135,10 @@ function HeaderChannelActions(arg0) {
   obj["screenIndex"] = screenIndex;
   return callback(importDefault(dependencyMap[18]), obj);
 }
-({ View: closure_4, Platform } = get_ActivityIndicator);
+({ View: closure_4, Platform } = keys);
 ({ jsx: closure_6, jsxs: closure_7 } = _callSuper);
 let obj = { headerRightContainer: { marginRight: 16 } };
-obj = { "Null": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011797377198986917, "Null": 0.0000000000000000000000000000000000000000000000000000000000000000000000012074054739565909, "Null": 15.1, "Null": null, "Null": "\u{1F469}\u{1F3FC}\u200D\u{1F9BD}\u200D\u27A1\uFE0F", "Null": true, "Null": null, backgroundColor: require("_isNativeReflectConstruct").colors.BACKGROUND_BASE_LOW, borderColor: require("_isNativeReflectConstruct").colors.MOBILE_HEADER_BORDER };
+obj = { backgroundColor: require("_isNativeReflectConstruct").colors.BACKGROUND_BASE_LOW, borderColor: require("_isNativeReflectConstruct").colors.MOBILE_HEADER_BORDER };
 obj.headerWrapper = obj;
 obj.actionButtonPressable = {};
 _isNativeReflectConstruct = { tintColor: require("_isNativeReflectConstruct").colors.MOBILE_HEADER_ICON_DEFAULT };
@@ -149,8 +149,7 @@ const obj2 = {};
 const merged = Object.assign(require("createChannelState").TextStyleSheet.text-md/semibold);
 obj2["color"] = require("_isNativeReflectConstruct").colors.TEXT_BRAND;
 obj.backButtonLabel = obj2;
-const obj3 = { -9223372036854775808: true, filter: true, gap: require("_isNativeReflectConstruct").space.PX_8 };
-obj.titleContainer = obj3;
+obj.titleContainer = { gap: require("_isNativeReflectConstruct").space.PX_8 };
 let closure_8 = _isNativeReflectConstruct.createStyles(obj);
 const memoResult = importAllResult.memo(function HeaderInner(style) {
   let back;
@@ -231,7 +230,7 @@ const memoResult = importAllResult.memo(function HeaderInner(style) {
   obj.children = items1;
   return tmp10(tmp11, obj);
 }, (back, back2) => {
-  const tmp = !importDefault(dependencyMap[17])(back, back2, [340915704]);
+  const tmp = !importDefault(dependencyMap[17])(back, back2, [1072372507]);
   let tmp5Result = !tmp;
   if (!tmp) {
     back = back.back;

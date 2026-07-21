@@ -1,8 +1,7 @@
 // Module ID: 12066
-// Function ID: 93135
+// Function ID: 93148
 // Dependencies: []
 
 // Module 12066
-const _module = require(dependencyMap[0]);
 
-export default _module.registerAsset({ scales: [] });
+export default "SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED";

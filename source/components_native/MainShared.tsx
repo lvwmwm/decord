@@ -1,10 +1,10 @@
-// Module ID: 15457
-// Function ID: 117926
+// Module ID: 15464
+// Function ID: 117950
 // Name: BurstReactionAnimationContainer
 // Dependencies: []
 // Exports: PictureInPictureGlobalContainer, useAppKeyCommands, useScreenReaderEnabled
 
-// Module 15457 (BurstReactionAnimationContainer)
+// Module 15464 (BurstReactionAnimationContainer)
 let closure_3 = importAll(dependencyMap[0]);
 const NativeModules = arg1(dependencyMap[1]).NativeModules;
 let closure_5 = importDefault(dependencyMap[2]);

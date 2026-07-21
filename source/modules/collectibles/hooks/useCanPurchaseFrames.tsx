@@ -1,10 +1,10 @@
-// Module ID: 8691
-// Function ID: 68847
+// Module ID: 8695
+// Function ID: 68859
 // Name: isUserPaidTier2
 // Dependencies: []
 // Exports: default, useCanViewProfileFramesInCollectiblesShop, useIsProfileFramesEarlyAccessPhase
 
-// Module 8691 (isUserPaidTier2)
+// Module 8695 (isUserPaidTier2)
 function isUserPaidTier2(currentUser) {
   let isPremiumExactlyResult = arg1(dependencyMap[4]).isPremiumExactly(currentUser, PremiumTypes.TIER_2);
   if (isPremiumExactlyResult) {

@@ -1,10 +1,10 @@
-// Module ID: 8222
-// Function ID: 64952
+// Module ID: 8226
+// Function ID: 64964
 // Name: ProfileEffectUserPreview
 // Dependencies: []
 // Exports: default
 
-// Module 8222 (ProfileEffectUserPreview)
+// Module 8226 (ProfileEffectUserPreview)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/collectibles/profile_effects/native/previews/ProfileEffectUserPreview.tsx");

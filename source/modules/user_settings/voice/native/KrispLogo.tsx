@@ -1,10 +1,10 @@
-// Module ID: 10710
-// Function ID: 83365
+// Module ID: 10716
+// Function ID: 83388
 // Name: handleKrispLinkPressed
 // Dependencies: []
 // Exports: default
 
-// Module 10710 (handleKrispLinkPressed)
+// Module 10716 (handleKrispLinkPressed)
 function handleKrispLinkPressed() {
   let obj = importDefault(dependencyMap[5]);
   const articleURL = obj.getArticleURL(constants4.NOISE_SUPPRESSION);
@@ -25,7 +25,7 @@ const tmp3 = arg1(dependencyMap[1]);
 ({ AnalyticEvents: closure_7, AnalyticsPages: closure_8, AnalyticsSections: closure_9, HelpdeskArticles: closure_10 } = arg1(dependencyMap[3]));
 const tmp4 = arg1(dependencyMap[3]);
 ({ jsx: closure_11, jsxs: closure_12 } = arg1(dependencyMap[4]));
-let closure_13 = { logo: { flexDirection: "r", alignItems: "BACKGROUND_GRADIENT_PRESETS_MAP", gap: "r" }, detailsView: { "Bool(false)": 850068.9713287358, "Bool(false)": 386018555412219350000000000000000000000000000000000000000000000000000000000, "Bool(false)": 808049743206733700000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, "Bool(false)": 994900208502361600000000000000000000000000000000000000000000000000000000000000000000000, "Bool(false)": "<string:2772671176>" } };
+let closure_13 = { logo: { -599305822: null, 1817372513: null, 1639456730: null }, detailsView: { "Bool(true)": true, "Bool(true)": true, "Bool(true)": true, "Bool(true)": true, "Bool(true)": true } };
 const tmp5 = arg1(dependencyMap[4]);
 const result = arg1(dependencyMap[14]).fileFinishedImporting("modules/user_settings/voice/native/KrispLogo.tsx");
 

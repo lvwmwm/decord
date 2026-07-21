@@ -1,7 +1,7 @@
 // Module ID: 658
 // Function ID: 8021
 // Name: CollectibleSearchSortType
-// Dependencies: []
+// Dependencies: [284214097]
 
 // Module 658 (CollectibleSearchSortType)
 const _module = require(dependencyMap[0]);

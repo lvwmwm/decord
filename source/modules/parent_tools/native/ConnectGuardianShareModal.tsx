@@ -1,10 +1,10 @@
-// Module ID: 16012
-// Function ID: 122927
+// Module ID: 16019
+// Function ID: 122953
 // Name: ConnectGuardianShareScreen
 // Dependencies: []
 // Exports: default
 
-// Module 16012 (ConnectGuardianShareScreen)
+// Module 16019 (ConnectGuardianShareScreen)
 function ConnectGuardianShareScreen() {
   const tmp = callback3();
   let obj = arg1(dependencyMap[6]);
@@ -36,14 +36,14 @@ function ConnectGuardianShareScreen() {
   const intl = arg1(dependencyMap[6]).intl;
   obj3.children = intl.string(importDefault(dependencyMap[7]).ITlV6p);
   const items2 = [callback(arg1(dependencyMap[16]).Text, obj3), ];
-  const obj4 = { Promise: null, marginTop: null, flags: null, style: tmp.body };
+  const obj4 = { "Null": "<string:1178599425>", "Null": "<string:3295084545>", "Null": "<string:1689649153>", style: tmp.body };
   const intl2 = arg1(dependencyMap[6]).intl;
   obj4.children = intl2.format(importDefault(dependencyMap[7]).F4GT2S, { link: "https://support.discord.com/hc/articles/14155060633623" });
   items2[1] = callback(arg1(dependencyMap[17]).TextWithIOSLinkWorkaround, obj4);
   obj2.children = items2;
   const items3 = [callback2(arg1(dependencyMap[15]).Stack, obj2), ];
   const obj5 = { spacing: importDefault(dependencyMap[5]).space.PX_24, style: tmp.cardSection };
-  const obj6 = { style: tmp.qrLabel };
+  const obj6 = { "Null": null, "Null": null, "Null": null, style: tmp.qrLabel };
   const intl3 = arg1(dependencyMap[6]).intl;
   obj6.children = intl3.string(importDefault(dependencyMap[7]).pojgfk);
   const items4 = [callback(arg1(dependencyMap[16]).Text, obj6), ];

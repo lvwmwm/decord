@@ -1,10 +1,10 @@
-// Module ID: 14992
-// Function ID: 112926
+// Module ID: 14999
+// Function ID: 112950
 // Name: ConnectionFineIcon
 // Dependencies: []
 // Exports: ConnectionFineIcon
 
-// Module 14992 (ConnectionFineIcon)
+// Module 14999 (ConnectionFineIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/ConnectionFineIcon.tsx");

@@ -1,15 +1,13 @@
-// Module ID: 10675
-// Function ID: 83234
+// Module ID: 10681
+// Function ID: 83257
 // Dependencies: [0, 0, 0]
 
-// Module 10675
-import { ApplicationStreamResolutions } from "result";
-import importDefaultResult from "result";
-import result from "result";
-import result from "result";
+// Module 10681
+import { ApplicationStreamResolutions } from "__exportStarResult1";
+import importDefaultResult from "__exportStarResult1";
 
 let obj = { videoPresetResolutionMax: ApplicationStreamResolutions.RESOLUTION_1440 };
-obj = { -1269606814: -1093140478, -1845285747: 2102460418 };
+obj = { 9223372036854775807: 15187275950357182000000000000000000000000000000000000000000000000000000000000000000, 0: 1757890543743537800000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 };
 obj.defaultConfig = obj;
 obj = {};
 const obj1 = {};
@@ -17,6 +15,7 @@ const merged = Object.assign(obj);
 obj1["videoPresetResolutionMax"] = ApplicationStreamResolutions.RESOLUTION_1080;
 obj[1] = obj1;
 obj.variations = obj;
-result = result.fileFinishedImporting("modules/go_live/GoLiveVideoPresetResolutionExperiment.tsx");
+const importDefaultResultResult = require("__exportStarResult1")(obj);
+const result = require("__exportStarResult1").fileFinishedImporting("modules/go_live/GoLiveVideoPresetResolutionExperiment.tsx");
 
-export default result(obj);
+export default importDefaultResultResult;

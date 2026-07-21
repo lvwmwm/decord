@@ -1,12 +1,12 @@
-// Module ID: 8641
-// Function ID: 68403
+// Module ID: 8645
+// Function ID: 68415
 // Name: getSharedMarkdownParser
-// Dependencies: [31, 27, 6763, 33, 4126, 689, 8651, 11829, 11830, 624, 8588, 6762, 5480, 4124, 1212, 4535, 5510, 7868, 2, 31]
+// Dependencies: [31, 27, 6769, 33, 4126, 689, 8655, 11836, 11837, 624, 8592, 6768, 5482, 4124, 1212, 4539, 5512, 7872, 2, 31]
 // Exports: default
 
-// Module 8641 (getSharedMarkdownParser)
+// Module 8645 (getSharedMarkdownParser)
 import importAllResult from "module_31";
-import get ActivityIndicator from "get ActivityIndicator";
+import keys from "keys";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import module_31 from "module_31";
@@ -84,7 +84,7 @@ function EmbedAnnouncementCard(message) {
     const obj1 = { style: tmp.cardBody };
     let tmp15 = null != embedSource.url;
     if (tmp15) {
-      const obj2 = { 9223372036854775807: "abf5b4249ea38c96687799aa130b2321", 9223372036854775807: "img_no_results_darker", 9223372036854775807: "png", children: embedSource.url };
+      const obj2 = { -9223372036854775808: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000799079652779839, 0: 9126805522.75, 0: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002677258429957655, children: embedSource.url };
       tmp15 = callback(arg1(dependencyMap[8]).Text, obj2);
     }
     const items = [tmp15, ];
@@ -103,7 +103,7 @@ function EmbedAnnouncementCard(message) {
         tmp24 = callback(closure_5, obj5);
       }
       const items2 = [tmp24, ];
-      const obj7 = { 9223372036854775807: true, 9223372036854775807: true, 9223372036854775807: true, children: embedSource.authorName };
+      const obj7 = { -9223372036854775808: null, 0: "black", 0: "absolute", children: embedSource.authorName };
       items2[1] = callback(arg1(dependencyMap[8]).Text, obj7);
       obj4.children = items2;
       tmp22Result = callback2(closure_7, obj4);
@@ -121,7 +121,7 @@ function EmbedAnnouncementCard(message) {
     items3[1] = tmp30;
     let tmp36 = null != message.title;
     if (tmp36) {
-      const obj10 = { 9223372036854775807: 131072.00119209292, 9223372036854775807: -293983030121430100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, 9223372036854775807: -77146262966237060000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 };
+      const obj10 = {};
       const obj11 = { guildId, channelId };
       obj10.children = tmp2(message.title, true, obj11);
       tmp36 = callback(arg1(dependencyMap[8]).Text, obj10);
@@ -129,7 +129,7 @@ function EmbedAnnouncementCard(message) {
     items3[2] = tmp36;
     let tmp40 = message.body.length > 0;
     if (tmp40) {
-      const obj12 = {};
+      const obj12 = { -9223372036854775808: null, 0: null, 0: null };
       const obj13 = { guildId, channelId };
       obj12.children = tmp2(message.body, true, obj13);
       tmp40 = callback(arg1(dependencyMap[8]).Text, obj12);
@@ -145,7 +145,7 @@ function EmbedAnnouncementCard(message) {
       tmp46 = callback(closure_5, obj15);
     }
     const items4 = [tmp46, , ];
-    const obj17 = { INTEGRATION_CREATE: true, ConstraintReasonCode: true };
+    const obj17 = {};
     let str3 = "";
     if (null != embedSource.providerName) {
       const _HermesInternal = HermesInternal;
@@ -163,7 +163,7 @@ function EmbedAnnouncementCard(message) {
       const obj18 = { style: tmp.reactionInfo };
       const obj19 = { size: "xs", color: importDefault(dependencyMap[6]).colors.TEXT_MUTED };
       const items6 = [callback(arg1(dependencyMap[11]).ReactionIcon, obj19), ];
-      obj20 = { INTEGRATION_CREATE: true, ConstraintReasonCode: true, children: formatReactionCount(message.reactionCount) };
+      obj20 = { children: formatReactionCount(message.reactionCount) };
       items6[1] = callback(arg1(dependencyMap[8]).Text, obj20);
       obj18.children = items6;
       tmp60 = callback2(closure_7, obj18);
@@ -230,7 +230,7 @@ function MessageAnnouncementCard(message) {
   const obj2 = { style: tmp.cardBody };
   let tmp20 = null != message.title;
   if (tmp20) {
-    const obj3 = { 9223372036854775807: 131072.00119209292, 9223372036854775807: -293983030121430100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, 9223372036854775807: -77146262966237060000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 };
+    const obj3 = {};
     const obj4 = { guildId, channelId };
     obj3.children = tmp2(message.title, true, obj4);
     tmp20 = callback(arg1(dependencyMap[8]).Text, obj3);
@@ -238,14 +238,14 @@ function MessageAnnouncementCard(message) {
   const items1 = [tmp20, , ];
   let tmp24 = message.body.length > 0;
   if (tmp24) {
-    const obj5 = {};
+    const obj5 = { -9223372036854775808: null, 0: null, 0: null };
     const obj6 = { guildId, channelId };
     obj5.children = tmp2(message.body, true, obj6);
     tmp24 = callback(arg1(dependencyMap[8]).Text, obj5);
   }
   items1[1] = tmp24;
   const obj7 = { style: tmp.metadataRow };
-  const obj8 = { INTEGRATION_CREATE: true, ConstraintReasonCode: true };
+  const obj8 = {};
   let obj11 = arg1(dependencyMap[10]);
   obj8.children = obj11.dateFormat(new Date(message.timestamp), "LL");
   const items2 = [callback(arg1(dependencyMap[8]).Text, obj8), ];
@@ -254,7 +254,7 @@ function MessageAnnouncementCard(message) {
     const obj9 = { style: tmp.reactionInfo };
     const obj10 = { size: "xs", color: importDefault(dependencyMap[6]).colors.TEXT_MUTED };
     const items3 = [callback(arg1(dependencyMap[11]).ReactionIcon, obj10), ];
-    obj11 = { INTEGRATION_CREATE: true, ConstraintReasonCode: true, children: formatReactionCount(message.reactionCount) };
+    obj11 = { children: formatReactionCount(message.reactionCount) };
     items3[1] = callback(arg1(dependencyMap[8]).Text, obj11);
     obj9.children = items3;
     tmp31 = callback2(closure_7, obj9);
@@ -289,7 +289,7 @@ function PollAnnouncementCard(message) {
       accessibilityLabel: poll.question.text
     };
     obj = { style: tmp.cardBody };
-    const obj1 = { INTEGRATION_CREATE: 131072.00119209292, ConstraintReasonCode: -293983030121430100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, children: poll.question.text };
+    const obj1 = { children: poll.question.text };
     const items = [callback(arg1(dependencyMap[8]).Text, obj1), , ];
     const obj2 = { style: tmp.pollAnswers };
     const items1 = [
@@ -309,7 +309,7 @@ function PollAnnouncementCard(message) {
     ];
     let tmp5 = diff > 0;
     if (tmp5) {
-      obj = { INTEGRATION_CREATE: true, ConstraintReasonCode: true, style: tmp.pollMoreOptions };
+      obj = { style: tmp.pollMoreOptions };
       const intl = arg1(dependencyMap[4]).intl;
       const obj3 = { count: diff };
       obj.children = intl.format(arg1(dependencyMap[4]).t.mv/nIa, obj3);
@@ -319,7 +319,7 @@ function PollAnnouncementCard(message) {
     obj2.children = items1;
     items[1] = closure_11(closure_7, obj2);
     const obj4 = { style: tmp.metadataRow };
-    let obj5 = { INTEGRATION_CREATE: true, ConstraintReasonCode: true };
+    let obj5 = {};
     const intl2 = arg1(dependencyMap[4]).intl;
     const obj6 = {};
     const _Date = Date;
@@ -335,7 +335,7 @@ function PollAnnouncementCard(message) {
     return callback(closure_8, obj);
   }
 }
-({ Image: closure_5, ScrollView: closure_6, View: closure_7, Pressable: closure_8, ActivityIndicator: closure_9 } = get_ActivityIndicator);
+({ Image: closure_5, ScrollView: closure_6, View: closure_7, Pressable: closure_8, ActivityIndicator: closure_9 } = keys);
 ({ jsx: closure_10, jsxs: closure_11 } = _isNativeReflectConstruct);
 let closure_12 = 120;
 let closure_13 = null;
@@ -346,29 +346,29 @@ obj.container = obj;
 _createForOfIteratorHelperLoose = { marginHorizontal: -require("CollectiblesShopCardInternalV2").space.PX_16, overflow: "visible" };
 obj.smallCardsScroller = _createForOfIteratorHelperLoose;
 obj.smallCardsContainer = { flexDirection: "row", gap: require("CollectiblesShopCardInternalV2").space.PX_12, paddingHorizontal: require("CollectiblesShopCardInternalV2").space.PX_16 };
-const obj3 = { "Bool(true)": "<string:3435973836>", "Bool(true)": "<string:1903247380>", "Bool(true)": "r", paddingHorizontal: require("CollectiblesShopCardInternalV2").space.PX_8 };
+const obj3 = { bottom: "<string:3435973836>", left: "<string:1903247380>", padding: "r", paddingHorizontal: require("CollectiblesShopCardInternalV2").space.PX_8 };
 obj.sectionHeader = obj3;
-obj.loadingContainer = { 9223372036854775807: null, -9223372036854775808: null, 9223372036854775807: null };
-const obj4 = { alignItems: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003470185749562207, justifyContent: -867922423761914300000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, isPurchased: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000794556911676, isPartiallyOwnedBundle: 0, isPartiallyOwnedVariantsGroup: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000005432309223606, width: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007087091497902574, height: -0.000001449584960937493, borderRadius: require("CollectiblesShopCardInternalV2").radii.lg, backgroundColor: require("CollectiblesShopCardInternalV2").colors.BACKGROUND_BASE_LOW, borderColor: require("CollectiblesShopCardInternalV2").colors.BORDER_SUBTLE };
-obj.card = obj4;
-const obj5 = { -2074941599: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004955377241004601, 1721598621: -1450182375374335300000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, 1408999628: 2077163.5199999998, 1632920378: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000047359, gap: require("CollectiblesShopCardInternalV2").space.PX_4, padding: require("CollectiblesShopCardInternalV2").space.PX_12 };
-obj.cardBody = obj5;
-obj.smallCardMedia = { 9223372036854775807: true, 0: true, 0: true };
-obj.mediaImage = { "Null": "5489cb913a06f6a88877637630ce77b7", "Null": "pl.messages.5489cb913a06f6a88877637630ce77b7.compiled.messages", "Null": "jsona" };
-const obj6 = { "Bool(true)": "accessibilityRole", "Bool(true)": "valueOf", "Bool(true)": "hash", "Bool(true)": "container", gap: require("CollectiblesShopCardInternalV2").space.PX_8 };
-obj.metadataRow = obj6;
-const obj7 = { -9223372036854775808: true, filter: true, gap: require("CollectiblesShopCardInternalV2").space.PX_4 };
-obj.reactionInfo = obj7;
+obj.loadingContainer = { <string:2700829420>: "replace", <string:1661207633>: "marginBottom", <string:1365420630>: "Array" };
 const obj2 = { flexDirection: "row", gap: require("CollectiblesShopCardInternalV2").space.PX_12, paddingHorizontal: require("CollectiblesShopCardInternalV2").space.PX_16 };
+obj.card = { borderRadius: require("CollectiblesShopCardInternalV2").radii.lg, backgroundColor: require("CollectiblesShopCardInternalV2").colors.BACKGROUND_BASE_LOW, borderColor: require("CollectiblesShopCardInternalV2").colors.BORDER_SUBTLE };
+const obj5 = { width: 0.000000000000000000000107972920238476, height: -0.00000000000000000000000000000000000000000000000000000000000000000003189917289591253, alignItems: -154292728222392250000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, accessibilityRole: -0.00000000000000000000000000000000000021064858766700235, gap: require("CollectiblesShopCardInternalV2").space.PX_4, padding: require("CollectiblesShopCardInternalV2").space.PX_12 };
+obj.cardBody = obj5;
+obj.smallCardMedia = { dark: true, light: true, notation: true };
+obj.mediaImage = {};
+const obj4 = { borderRadius: require("CollectiblesShopCardInternalV2").radii.lg, backgroundColor: require("CollectiblesShopCardInternalV2").colors.BACKGROUND_BASE_LOW, borderColor: require("CollectiblesShopCardInternalV2").colors.BORDER_SUBTLE };
+obj.metadataRow = { gap: require("CollectiblesShopCardInternalV2").space.PX_8 };
+const obj6 = { gap: require("CollectiblesShopCardInternalV2").space.PX_8 };
+obj.reactionInfo = { gap: require("CollectiblesShopCardInternalV2").space.PX_4 };
+const obj7 = { gap: require("CollectiblesShopCardInternalV2").space.PX_4 };
 obj.embedContentArea = { gap: require("CollectiblesShopCardInternalV2").space.PX_4, borderLeftColor: require("CollectiblesShopCardInternalV2").colors.BORDER_SUBTLE, borderTopLeftRadius: require("CollectiblesShopCardInternalV2").radii.xs, borderBottomLeftRadius: require("CollectiblesShopCardInternalV2").radii.xs, paddingLeft: require("CollectiblesShopCardInternalV2").space.PX_8 };
-const obj9 = { -9223372036854775808: true, filter: true, gap: require("CollectiblesShopCardInternalV2").space.PX_4 };
-obj.embedAuthorRow = obj9;
-const obj10 = { aze: false, azj: false, borderRadius: require("CollectiblesShopCardInternalV2").radii.round };
-obj.embedAuthorIcon = obj10;
-obj.embedProviderIcon = { aze: "<string:16777479>", azj: "<string:36295491>" };
 const obj8 = { gap: require("CollectiblesShopCardInternalV2").space.PX_4, borderLeftColor: require("CollectiblesShopCardInternalV2").colors.BORDER_SUBTLE, borderTopLeftRadius: require("CollectiblesShopCardInternalV2").radii.xs, borderBottomLeftRadius: require("CollectiblesShopCardInternalV2").radii.xs, paddingLeft: require("CollectiblesShopCardInternalV2").space.PX_8 };
-obj.embedMedia = { borderRadius: require("CollectiblesShopCardInternalV2").radii.sm };
-const obj11 = { borderRadius: require("CollectiblesShopCardInternalV2").radii.sm };
+obj.embedAuthorRow = { gap: require("CollectiblesShopCardInternalV2").space.PX_4 };
+const obj10 = { bhk: false, bic: "internal", borderRadius: require("CollectiblesShopCardInternalV2").radii.round };
+obj.embedAuthorIcon = obj10;
+obj.embedProviderIcon = {};
+const obj11 = { max: null, done: null, y: null, borderRadius: require("CollectiblesShopCardInternalV2").radii.sm };
+obj.embedMedia = obj11;
+const obj9 = { gap: require("CollectiblesShopCardInternalV2").space.PX_4 };
 obj.pollAnswers = { gap: require("CollectiblesShopCardInternalV2").space.PX_4 };
 const obj12 = { gap: require("CollectiblesShopCardInternalV2").space.PX_4 };
 obj.pollAnswerOption = { paddingVertical: require("CollectiblesShopCardInternalV2").space.PX_8, paddingHorizontal: require("CollectiblesShopCardInternalV2").space.PX_12, borderRadius: require("CollectiblesShopCardInternalV2").radii.sm, backgroundColor: require("CollectiblesShopCardInternalV2").colors.BACKGROUND_BASE_LOWEST };
@@ -465,7 +465,7 @@ export default function GameProfileAnnouncements(gameId) {
   if (tmp2.loading) {
     let obj = { style: tmp.container };
     obj = { style: tmp.sectionHeader };
-    obj = { INTEGRATION_CREATE: "polite", ConstraintReasonCode: "column" };
+    obj = {};
     const intl = arg1(dependencyMap[4]).intl;
     obj.children = intl.string(arg1(dependencyMap[4]).t.B0BV3Y);
     obj.children = callback(arg1(dependencyMap[8]).Text, obj);
@@ -481,11 +481,11 @@ export default function GameProfileAnnouncements(gameId) {
       if (0 !== messages.length) {
         const obj2 = { style: tmp.container };
         const obj3 = { style: tmp.sectionHeader };
-        const obj4 = { INTEGRATION_CREATE: "polite", ConstraintReasonCode: "column" };
+        const obj4 = {};
         const intl2 = arg1(dependencyMap[4]).intl;
         obj4.children = intl2.string(arg1(dependencyMap[4]).t.B0BV3Y);
         const items3 = [callback(arg1(dependencyMap[8]).Text, obj4), ];
-        const obj5 = {};
+        const obj5 = { "Bool(false)": "black", "Bool(true)": 34, "Bool(true)": null, "Bool(true)": true, "Bool(true)": "yes" };
         const intl3 = arg1(dependencyMap[4]).intl;
         obj5.text = intl3.string(arg1(dependencyMap[4]).t.budhsM);
         const obj6 = { size: "sm" };

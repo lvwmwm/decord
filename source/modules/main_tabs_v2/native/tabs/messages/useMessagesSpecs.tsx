@@ -1,10 +1,10 @@
-// Module ID: 14760
-// Function ID: 111301
+// Module ID: 14767
+// Function ID: 111325
 // Name: useMessagesSpecs
 // Dependencies: []
 // Exports: default
 
-// Module 14760 (useMessagesSpecs)
+// Module 14767 (useMessagesSpecs)
 let closure_3 = importAll(dependencyMap[0]);
 const DM_WIDTH = arg1(dependencyMap[1]).DM_WIDTH;
 const result = arg1(dependencyMap[9]).fileFinishedImporting("modules/main_tabs_v2/native/tabs/messages/useMessagesSpecs.tsx");

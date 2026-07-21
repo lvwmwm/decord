@@ -16,15 +16,15 @@ obj = {
 };
 obj.era = obj.default({ values: { narrow: [null, null], abbreviated: [null, null], wide: [null, null] }, defaultWidth: "wide" });
 obj.quarter = obj.default({
-  values: { narrow: [false, false, false, false], abbreviated: [], wide: ["r", "threadEmbed", "Array", "eligiblePromptTypes"] },
+  values: { narrow: [], abbreviated: ["s\u00E1", "dom", "lun", "mar"], wide: [] },
   defaultWidth: "wide",
   argumentCallback(arg0) {
     return Number(arg0) - 1;
   }
 });
-obj.month = obj.default({ values: { narrow: [null, null, null, null, null, null, null, null, null, null, null, null], abbreviated: [637534988, -570425048, 218104118, -1493171850, 855638297, 1275069123, 85762, 108993, 133589, 103622, 85107, 198935], wide: ["r", "isArray", "t", "to", "Array", "isArray", "source", "d", "Array", "isArray", "l", "text"] }, defaultWidth: "wide" });
-obj.day = obj.default({ values: { narrow: ["<string:1378377985>", "<string:67109513>", "<string:1229379153>", "<string:1241514627>", "<string:1258291843>", "<string:1275069059>", "<string:1291846275>"], short: [null, null, null, null, null, null, null], abbreviated: [], wide: [] }, defaultWidth: "wide" });
-obj.dayPeriod = obj.default({ values: { narrow: { <string:13107200>: null, <string:13303808>: 16, <string:13369344>: 5, <string:13631488>: false, <string:13893632>: 79.82, <string:14024704>: null, <string:14286848>: 1, <string:14548992>: "row" }, abbreviated: {}, wide: {} }, defaultWidth: "wide", formattingValues: { narrow: {}, abbreviated: {}, wide: {} }, defaultFormattingWidth: "wide" });
+obj.month = obj.default({ values: { narrow: [], abbreviated: ["<string:211025921>", "<string:211156995>", "<string:668205059>", "<string:913113089>", "<string:2306080769>", "<string:2311913473>", "<string:3276603394>", "<string:3695968258>", "<string:1426063694>", "<string:3271557605>", "<string:1761608168>", "<string:637534578>"], wide: ["<string:154140673>", "<string:4245159939>", "<string:668270594>", "<string:913178625>", "<string:2306146305>", "<string:2311979009>", "<string:2301689858>", "<string:3008495618>", "<string:1627485697>", "<string:34754859>", "<string:508701537>", "<string:1375877890>"] }, defaultWidth: "wide" });
+obj.day = obj.default({ values: { narrow: [false, false, false, false, false, false, false], short: [], abbreviated: [null, null, null, null, null, null, null], wide: [null, null, null, null, null, null, null] }, defaultWidth: "wide" });
+obj.dayPeriod = obj.default({ values: { narrow: { "Bool(false)": "last_dismissed_at_ms", "Bool(false)": "scalar", "Bool(false)": 4, "Bool(false)": "#2196F3", "Bool(false)": 2, "Bool(false)": null, "Null": null, "Null": false }, abbreviated: { "Bool(false)": "_bodyText", "Bool(false)": "er", "Bool(false)": "CONTENT_INVENTORY_TOGGLE_FEED_HIDDEN", "Bool(false)": "NATIVE_SCREENSHARE_PICKER", "Bool(false)": "r", "Bool(false)": "AUTO_MODERATION_RULE_CREATE", "Null": "r", "Null": "%AsyncFunctionPrototype%" }, wide: { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Null": null, "Null": null } }, defaultWidth: "wide", formattingValues: { narrow: {}, abbreviated: {}, wide: {} }, defaultFormattingWidth: "wide" });
 
 export default obj;
 export default exports.default;

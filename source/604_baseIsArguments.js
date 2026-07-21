@@ -1,7 +1,7 @@
 // Module ID: 604
 // Function ID: 7038
 // Name: baseIsArguments
-// Dependencies: [614, 615]
+// Dependencies: []
 
 // Module 604 (baseIsArguments)
 

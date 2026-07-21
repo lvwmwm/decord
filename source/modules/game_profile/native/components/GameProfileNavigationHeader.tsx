@@ -1,10 +1,10 @@
-// Module ID: 11855
-// Function ID: 91820
+// Module ID: 11862
+// Function ID: 91843
 // Name: StyleSheet
 // Dependencies: []
 // Exports: default
 
-// Module 11855 (StyleSheet)
+// Module 11862 (StyleSheet)
 let StyleSheet;
 let closure_3 = importAll(dependencyMap[0]);
 ({ Image: closure_4, View: closure_5, StyleSheet } = arg1(dependencyMap[1]));
@@ -14,14 +14,14 @@ let obj = arg1(dependencyMap[3]);
 obj = {};
 obj = { paddingHorizontal: importDefault(dependencyMap[4]).space.PX_16, borderBottomWidth: StyleSheet.hairlineWidth, borderBottomColor: importDefault(dependencyMap[4]).colors.BORDER_SUBTLE };
 obj.headerContainer = obj;
-const obj1 = { -9223372036854775808: true, filter: true, gap: importDefault(dependencyMap[4]).space.PX_8 };
-obj.headerRow = obj1;
-const obj2 = { aze: "boolean", azj: "string", borderRadius: importDefault(dependencyMap[4]).radii.sm };
-obj.icon = obj2;
 const tmp3 = arg1(dependencyMap[2]);
+obj.headerRow = { gap: importDefault(dependencyMap[4]).space.PX_8 };
+const obj2 = { bhk: "boolean", bic: "string", borderRadius: importDefault(dependencyMap[4]).radii.sm };
+obj.icon = obj2;
+const obj1 = { gap: importDefault(dependencyMap[4]).space.PX_8 };
 obj.titleContainer = { gap: importDefault(dependencyMap[4]).space.PX_8 };
-obj.headerRight = { -9223372036854775808: true, filter: true };
-obj.rankPillContainer = { marginBottom: null, borderRadius: "\u{1F469}\u{1F3FC}\u200D\u{1F9B1}", backgroundColor: true };
+obj.headerRight = {};
+obj.rankPillContainer = { accessible: null, count: "\u{1F469}\u{1F3FC}\u200D\u{1F9B1}", "Bool(false)": true };
 let closure_9 = obj.createStyles(obj);
 let closure_10 = { code: "function GameProfileNavigationHeaderTsx1(){const{headerRightProgress}=this.__closure;return{opacity:headerRightProgress.get()};}" };
 let closure_11 = { code: "function GameProfileNavigationHeaderTsx2(){const{headerRightProgress}=this.__closure;return{opacity:1-headerRightProgress.get()};}" };
@@ -121,7 +121,7 @@ export default function GameProfileNavigationHeader(game) {
     }
     const items3 = [tmp16, , ];
     const obj3 = { style: tmp.titleContainer };
-    const obj4 = { 9223372036854775807: 201326592, 9223372036854775807: 1358954496, 9223372036854775807: -126575334, children: name };
+    const obj4 = { -9223372036854775808: 201326592, 0: 1358954496, 0: -126609849, children: name };
     const items4 = [callback(arg1(dependencyMap[9]).Heading, obj4), ];
     let l30Rank;
     if (null != game) {

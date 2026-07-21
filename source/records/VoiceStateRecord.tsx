@@ -76,4 +76,4 @@ export default (arg0) => {
   };
   items[1] = obj;
   return callback(VoiceStateRecord, items);
-}(require("keys"));
+}(require("result2"));

@@ -1,10 +1,10 @@
-// Module ID: 10051
-// Function ID: 77657
+// Module ID: 10057
+// Function ID: 77675
 // Name: CreateGuild
 // Dependencies: []
 // Exports: default
 
-// Module 10051 (CreateGuild)
+// Module 10057 (CreateGuild)
 let closure_3 = importAll(dependencyMap[0]);
 const ScrollView = arg1(dependencyMap[1]).ScrollView;
 let closure_5 = importDefault(dependencyMap[2]);
@@ -12,11 +12,11 @@ const MarketingURLs = arg1(dependencyMap[3]).MarketingURLs;
 ({ jsx: closure_7, jsxs: closure_8 } = arg1(dependencyMap[4]));
 let obj = arg1(dependencyMap[5]);
 obj = { flex: { flex: 1 } };
-obj = { "Bool(true)": "/assets/.cache/intl/aW50bA==", "Bool(true)": null, "Bool(true)": "66d1e4125b6e3fe86e5116b45518629e", backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_BASE_LOWER };
+obj = { backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_BASE_LOWER };
 obj.contentContainer = obj;
 obj.header = { textAlign: "center" };
-obj.description = { registerAsset: null, ref: null, user: null };
-obj.iconUploader = { "Bool(true)": "/assets/design/components/Illustration/native/redesign/generated/images", "Bool(true)": 160 };
+obj.description = { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null };
+obj.iconUploader = { "Bool(false)": "/assets/design/components/Illustration/native/redesign/generated/images", "Bool(false)": 160 };
 obj.hint = { marginBottom: 8 };
 let closure_9 = obj.createStyles(obj);
 const tmp2 = arg1(dependencyMap[4]);
@@ -62,7 +62,7 @@ export default function CreateGuild(arg0) {
       const result = obj.setAccessibilityFocus(obj);
     }
   }, items);
-  let obj = { "Bool(true)": "\u{1F9A5}", "Bool(true)": "RECAPTCHA_SITE_KEY", "Bool(true)": "\u{1F9A5}", "Bool(true)": "SESSIONS_REPLACE", "Bool(true)": "HermesInternal", style: tmp.flex, contentInset: { top: 0 }, contentContainerStyle: tmp.contentContainer };
+  let obj = { style: tmp.flex, contentInset: { top: 0 }, contentContainerStyle: tmp.contentContainer };
   obj = {};
   obj1 = { ref, style: tmp.header };
   if (null == customTitle) {
@@ -103,11 +103,11 @@ export default function CreateGuild(arg0) {
     tmp3 = callback(arg1(dependencyMap[14]).TableSwitchRow, obj5);
   }
   items1[4] = tmp3;
-  const obj6 = { Promise: "ur", marginTop: "SECTION_INDEX_FIRST_NAMED_CATEGORY", flags: "ur", style: tmp.hint };
+  const obj6 = { style: tmp.hint };
   const intl5 = arg1(dependencyMap[11]).intl;
   obj6.children = intl5.format(arg1(dependencyMap[11]).t.2bprXx, { guidelinesURL: MarketingURLs.GUIDELINES });
   items1[5] = callback(arg1(dependencyMap[15]).TextWithIOSLinkWorkaround, obj6);
-  const obj8 = { poggermode_enabled: 40, poggermode_applause: true, poggermode_achievement_unlock: "/assets/.cache/intl/bW9kdWxlcy9nb19saXZlL3dlYi9tb2RhbA==", disabled: "" === guild.name };
+  const obj8 = { poggermode_enabled: "r", poggermode_applause: "isArray", poggermode_achievement_unlock: "mode", disabled: "" === guild.name };
   if (null == customButtonLabel) {
     const intl6 = arg1(dependencyMap[11]).intl;
     customButtonLabel = intl6.string(arg1(dependencyMap[11]).t.O0p/lS);

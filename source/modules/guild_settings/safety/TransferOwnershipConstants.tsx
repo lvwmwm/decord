@@ -1,9 +1,9 @@
-// Module ID: 10975
-// Function ID: 85455
+// Module ID: 10980
+// Function ID: 85476
 // Name: TransferOwnershipModalScenes
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 10975 (TransferOwnershipModalScenes)
+// Module 10980 (TransferOwnershipModalScenes)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("modules/guild_settings/safety/TransferOwnershipConstants.tsx");
 

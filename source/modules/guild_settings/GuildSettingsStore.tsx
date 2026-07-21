@@ -1,9 +1,9 @@
-// Module ID: 8428
-// Function ID: 67202
+// Module ID: 8432
+// Function ID: 67214
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
-// Module 8428 (_isNativeReflectConstruct)
+// Module 8432 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -174,9 +174,9 @@ const MFALevels = tmp2.MFALevels;
 const DEFAULT_DISCOVERY_CATEGORY_ID = arg1(dependencyMap[14]).DEFAULT_DISCOVERY_CATEGORY_ID;
 ({ PUBLIC_SUCCESS_MODAL_SEEN_KEY: closure_23, CREATE_NEW_CHANNEL_VALUE: closure_24 } = arg1(dependencyMap[15]));
 let closure_35 = [];
-let closure_36 = [0.0000000000000000000000000000000000000000000000000000000000000000000000000000000002637020112755557, 53944000819712560000000000000000000000000000000000000000000000000000, 8593571552.000582, 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001492229287243438, 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000002637000594199947, -563262703796295.9, 723244228261808700000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, "Array", "isArray", "status", "__closure", "r"];
-set = new Set(["<string:2322923522>", "<string:1394606081>", "<string:1096155138>", "<string:1060044802>", null]);
-let closure_38 = {};
+let closure_36 = ["<string:167772618>", "<string:922747465>", "<string:369099090>", "<string:654311892>", "<string:3372220721>", "<string:38039040>", "<string:37943552>", "<string:36841984>", "<string:37846784>", "<string:37712640>", "<string:38185216>", "<string:37876992>"];
+set = new Set(["<string:1123614722>", "<string:841613314>", "<string:1098842114>", "<string:1064501250>", null]);
+let closure_38 = { bannerAnimatedStyle: "08fd133b0b292a14ea2a09a50dd4618e", bannerImageAnimatedStyle: "CalendarIcon", blurAnimatedProps: "png", showBlur: 8 };
 let closure_39 = false;
 const CLOSED = FormStates.CLOSED;
 let closure_41 = {};
@@ -191,7 +191,7 @@ let closure_49 = null;
 let closure_50 = 0;
 const NONE = MFALevels.NONE;
 let closure_52 = null;
-let obj = { 0: true, -9223372036854775808: true, 9223372036854775807: true, 9223372036854775807: true, 0: true, 9223372036854775807: true, 9223372036854775807: true, primaryCategoryId: DEFAULT_DISCOVERY_CATEGORY_ID, secondaryCategoryIds: [], keywords: [], reasonsToJoin: [], socialLinks: [], about: "" };
+let obj = { primaryCategoryId: DEFAULT_DISCOVERY_CATEGORY_ID, secondaryCategoryIds: [], keywords: [], reasonsToJoin: [], socialLinks: [], about: "" };
 let closure_54 = false;
 let closure_57 = null;
 let closure_58 = 0;
@@ -536,7 +536,7 @@ obj = {
         }
       }
       const HTTP = arg1(dependencyMap[18]).HTTP;
-      obj = { CONVERSATIONS: null, replace: null, push: null, url: closure_20.GUILD_INSTANT_INVITES(user.id) };
+      obj = { lc: null, type: null, end: null, url: closure_20.GUILD_INSTANT_INVITES(user.id) };
       const value = HTTP.get(obj);
       value.then((body) => {
         let obj = callback(closure_2[19]);

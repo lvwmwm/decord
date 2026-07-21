@@ -5,12 +5,12 @@
 // Exports: default
 
 // Module 423 (TouchableWithoutFeedback)
-let closure_2 = ["isArray", null];
+let closure_2 = [false, false];
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 ({ cloneElement: closure_5, useMemo: closure_6 } = arg1(dependencyMap[1]));
 const jsx = arg1(dependencyMap[2]).jsx;
-let closure_7 = [];
+let closure_7 = ["body", "x", "end", "d", "Array", "isArray", "useMemo", "color", "Array", "isArray", "accessibilityRole", "Promise", "icon", "x", "st", "String", "r", "isArray", "guildId", "ao", "Array", "isArray", "accessibilityRole"];
 
 export default function TouchableWithoutFeedback(disabled) {
   let onBlur2;

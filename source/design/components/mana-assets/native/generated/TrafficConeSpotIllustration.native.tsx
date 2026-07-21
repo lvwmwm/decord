@@ -1,10 +1,10 @@
-// Module ID: 6589
-// Function ID: 50757
+// Module ID: 6591
+// Function ID: 50800
 // Name: TrafficConeSpotIllustration
 // Dependencies: []
 // Exports: TrafficConeSpotIllustration
 
-// Module 6589 (TrafficConeSpotIllustration)
+// Module 6591 (TrafficConeSpotIllustration)
 const jsx = require(dependencyMap[0]).jsx;
 const _module = require(dependencyMap[3]);
 const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/TrafficConeSpotIllustration.native.tsx");

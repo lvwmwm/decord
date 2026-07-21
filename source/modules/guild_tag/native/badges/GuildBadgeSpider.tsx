@@ -1,16 +1,16 @@
-// Module ID: 12834
-// Function ID: 98146
+// Module ID: 12841
+// Function ID: 98169
 // Name: items
 // Dependencies: []
 // Exports: GuildBadgeSpider
 
-// Module 12834 (items)
+// Module 12841 (items)
 importAll(dependencyMap[0]);
 ({ jsx: closure_2, jsxs: closure_3 } = arg1(dependencyMap[1]));
-let closure_4 = ["<string:29105664>", "<string:35203840>"];
+let closure_4 = [-1730235813, -1041686886];
 let closure_5 = [null, null];
 const items = [{}, {}];
-let closure_7 = [];
+let closure_7 = [null];
 let closure_8 = [0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000013844199082474493];
 const items1 = [{}];
 const tmp3 = arg1(dependencyMap[1]);
@@ -29,7 +29,7 @@ export const GuildBadgeSpider = function GuildBadgeSpider(width) {
   if (num2 === undefined) {
     num2 = 24;
   }
-  let obj = { onValueChange: "r", step: "onRequireModeratorMFAClick", flexDirection: "Array", alignItems: "isSpamMessageRequest" };
+  let obj = { "Bool(true)": null, "Bool(true)": 4, "Bool(true)": 4, "Bool(true)": "rgba(0, 0, 0, 0.75)" };
   ({ primaryTintColor, secondaryTintColor } = width);
   Object.setPrototypeOf(null);
   const merged = Object.assign(width, obj);
@@ -59,7 +59,7 @@ export const GuildBadgeSpider = function GuildBadgeSpider(width) {
   items[2] = callback(arg1(dependencyMap[3]).Path, { d: "M9 13v1h-2v-1h2ZM7 12h-1v-1h1v1ZM10 12h-1v-1h1v1ZM9 7h-2v-1h2v1ZM7 6h-1v-1h1v1ZM10 6h-1v-1h1v1ZM6 5h-1v-1h1v1ZM11 5h-1v-1h1v1Z", fill: primaryColorsTransformed[0] });
   items[3] = callback(arg1(dependencyMap[3]).Path, {});
   items[4] = callback(arg1(dependencyMap[3]).Path, {});
-  items[5] = callback(arg1(dependencyMap[3]).Path, {});
+  items[5] = callback(arg1(dependencyMap[3]).Path, { "Bool(false)": null, "Bool(false)": null });
   obj["children"] = items;
   return closure_3(arg1(dependencyMap[3]).Svg, obj);
 };

@@ -1,9 +1,9 @@
-// Module ID: 5449
-// Function ID: 46530
+// Module ID: 5451
+// Function ID: 46572
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
-// Module 5449 (_isNativeReflectConstruct)
+// Module 5451 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -13,7 +13,7 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-let closure_2 = [false, false, false];
+let closure_2 = ["progress", "layout", "modal"];
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 let closure_5 = importDefault(dependencyMap[2]);
@@ -120,7 +120,7 @@ const tmp3 = (PureComponent) => {
   };
   return callback(LottieAnimationView, items);
 }(importAll(dependencyMap[6]).PureComponent);
-tmp3.defaultProps = {};
+tmp3.defaultProps = { alignItems: true, display: true, flexDirection: true };
 const importAllResult = importAll(dependencyMap[6]);
 const result = arg1(dependencyMap[10]).fileFinishedImporting("components_native/common/LottieAnimationView.tsx");
 

@@ -1,10 +1,10 @@
-// Module ID: 11122
-// Function ID: 86574
+// Module ID: 11128
+// Function ID: 86597
 // Name: ForumPostNewTag
 // Dependencies: []
 // Exports: default
 
-// Module 11122 (ForumPostNewTag)
+// Module 11128 (ForumPostNewTag)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 let obj = arg1(dependencyMap[2]);

@@ -1,15 +1,13 @@
-// Module ID: 9473
-// Function ID: 73859
+// Module ID: 9477
+// Function ID: 73873
 // Name: result
 // Dependencies: [4294967295, 0, 0]
 // Exports: getSummaryFeedbackReasons
 
-// Module 9473 (result)
-import result from "result";
-
+// Module 9477 (result)
 const obj = { DUPLICATED: "DUPLICATED", TOO_GENERIC: "TOO_GENERIC", TOO_MANY: "TOO_MANY", INACCURATE: "INACCURATE", NOT_USEFUL: "NOT_USEFUL", OTHER: "OTHER" };
-let result = 5 * importDefault(dependencyMap[0]).Millis.SECOND;
-const result1 = result.fileFinishedImporting("modules/summaries/SummaryConstants.tsx");
+const result = 5 * importDefault(dependencyMap[0]).Millis.SECOND;
+const result1 = require("__exportStarResult1").fileFinishedImporting("modules/summaries/SummaryConstants.tsx");
 
 export const SUMMARY_POLL_INTERVAL = result;
 export const SummariesSidebarToggledSource = { TOOLBAR_BUTTON: "toolbar button", PILL: "pill" };

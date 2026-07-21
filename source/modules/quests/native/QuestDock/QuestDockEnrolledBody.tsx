@@ -1,9 +1,9 @@
-// Module ID: 13958
-// Function ID: 106108
+// Module ID: 13965
+// Function ID: 106131
 // Name: EnrolledBodyWatchTask
 // Dependencies: []
 
-// Module 13958 (EnrolledBodyWatchTask)
+// Module 13965 (EnrolledBodyWatchTask)
 let QUEST_DOCK_EXPANDED_PADDING_BOTTOM;
 function EnrolledBodyWatchTask(quest) {
   quest = quest.quest;
@@ -93,10 +93,10 @@ const tmp2 = arg1(dependencyMap[4]);
 ({ jsx: closure_11, Fragment: closure_12, jsxs: closure_13 } = arg1(dependencyMap[6]));
 let obj1 = arg1(dependencyMap[7]);
 let obj = { wrapper: obj };
-obj = { backgroundColor: false, height: true, paddingBottom: QUEST_DOCK_EXPANDED_PADDING_BOTTOM, paddingTop: tmp3.QUEST_DOCK_EXPANDED_ENROLLED_PADDING_TOP, paddingHorizontal: QUEST_DOCK_EXPANDED_PADDING_HORIZONTAL };
+obj = { marginRight: -536870861, columnGap: -299892737, paddingBottom: QUEST_DOCK_EXPANDED_PADDING_BOTTOM, paddingTop: tmp3.QUEST_DOCK_EXPANDED_ENROLLED_PADDING_TOP, paddingHorizontal: QUEST_DOCK_EXPANDED_PADDING_HORIZONTAL };
 obj1 = { marginBottom: importDefault(dependencyMap[8]).space.PX_16 };
 obj.headerWrapper = obj1;
-const obj2 = { margin: false, zIndex: "heading-sm/semibold", position: "text-default", bottom: true, gap: importDefault(dependencyMap[8]).space.PX_16 };
+const obj2 = { H265_HARDWARE_ONLY: "white", useKeyboardWillOpenSharedValue: "M5 3H2V4H5V3Z", GiftingTier1LargeBadge: "white", getItemCount: "M7 9H6V10H7V9Z", gap: importDefault(dependencyMap[8]).space.PX_16 };
 obj.contentWrapper = obj2;
 const tmp4 = arg1(dependencyMap[6]);
 obj.footer = { marginTop: importDefault(dependencyMap[8]).space.PX_16 };

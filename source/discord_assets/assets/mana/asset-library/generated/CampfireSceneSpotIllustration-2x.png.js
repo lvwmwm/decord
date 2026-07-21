@@ -1,9 +1,9 @@
-// Module ID: 5922
-// Function ID: 49757
+// Module ID: 5924
+// Function ID: 49800
 // Name: metadata
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 5922 (metadata)
+// Module 5924 (metadata)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/CampfireSceneSpotIllustration-2x.png.js");
 

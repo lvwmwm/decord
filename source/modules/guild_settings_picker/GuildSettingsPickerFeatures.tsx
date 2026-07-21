@@ -1,10 +1,10 @@
-// Module ID: 12767
-// Function ID: 97855
+// Module ID: 12774
+// Function ID: 97878
 // Name: useGuildSettingsPickerFeature
 // Dependencies: []
 // Exports: useGuildSettingsPickerFeature
 
-// Module 12767 (useGuildSettingsPickerFeature)
+// Module 12774 (useGuildSettingsPickerFeature)
 let closure_2 = importDefault(dependencyMap[0]);
 let closure_3 = importAll(dependencyMap[1]);
 let closure_4 = importDefault(dependencyMap[2]);

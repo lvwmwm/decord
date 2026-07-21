@@ -1,10 +1,10 @@
-// Module ID: 16138
-// Function ID: 124412
+// Module ID: 16145
+// Function ID: 124443
 // Name: GuildSettingsServerTagColorPickerActionSheet
 // Dependencies: []
 // Exports: default
 
-// Module 16138 (GuildSettingsServerTagColorPickerActionSheet)
+// Module 16145 (GuildSettingsServerTagColorPickerActionSheet)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 const View = arg1(dependencyMap[2]).View;
@@ -12,7 +12,7 @@ const View = arg1(dependencyMap[2]).View;
 const tmp2 = arg1(dependencyMap[3]);
 ({ jsx: closure_9, jsxs: closure_10 } = arg1(dependencyMap[4]));
 const PX_16 = importDefault(dependencyMap[5]).space.PX_16;
-let closure_12 = { "Bool(false)": null, "Bool(false)": null };
+let closure_12 = { flex: null, marginRight: null };
 const tmp3 = arg1(dependencyMap[4]);
 let closure_13 = arg1(dependencyMap[6]).createStyles((width) => {
   let obj = {};
@@ -26,14 +26,14 @@ let closure_13 = arg1(dependencyMap[6]).createStyles((width) => {
   const obj1 = { columnGap: importDefault(dependencyMap[5]).space.PX_8 };
   obj.saturationValueColorBox = { borderWidth: 1, borderColor: importDefault(dependencyMap[5]).colors.BORDER_SUBTLE };
   obj.saturationValueColorBoxInner = { width, minWidth: width, height: 160, minHeight: 160 };
-  const obj4 = { aze: "<string:16777479>", azj: "<string:36295491>", borderRadius: importDefault(dependencyMap[5]).radii.round, borderColor: importDefault(dependencyMap[5]).unsafe_rawColors.WHITE };
-  obj.selector = obj4;
-  obj.huePicker = { alignSelf: "center" };
-  obj.hueColorBarInner = { width, minWidth: width, height: 24 };
-  const obj6 = { "Bool(false)": "/assets/design/components/Icon/native/redesign/generated/images", "Bool(false)": 24, "Bool(false)": 24, borderRadius: importDefault(dependencyMap[5]).radii.sm, borderColor: importDefault(dependencyMap[5]).colors.INPUT_BORDER_DEFAULT, backgroundColor: importDefault(dependencyMap[5]).colors.INPUT_BACKGROUND_DEFAULT, paddingHorizontal: importDefault(dependencyMap[5]).space.PX_12, textAlign: "center" };
-  obj.hexInput = obj6;
   const obj2 = { borderWidth: 1, borderColor: importDefault(dependencyMap[5]).colors.BORDER_SUBTLE };
   const obj3 = { width, minWidth: width, height: 160, minHeight: 160 };
+  obj.selector = { borderRadius: importDefault(dependencyMap[5]).radii.round, borderColor: importDefault(dependencyMap[5]).unsafe_rawColors.WHITE };
+  obj.huePicker = { alignSelf: "center" };
+  obj.hueColorBarInner = { width, minWidth: width, height: 24 };
+  const obj6 = { 1689281484: "/assets/design/components/Icon/native/redesign/generated/images", -1438909492: 24, 1654238801: 24, borderRadius: importDefault(dependencyMap[5]).radii.sm, borderColor: importDefault(dependencyMap[5]).colors.INPUT_BORDER_DEFAULT, backgroundColor: importDefault(dependencyMap[5]).colors.INPUT_BACKGROUND_DEFAULT, paddingHorizontal: importDefault(dependencyMap[5]).space.PX_12, textAlign: "center" };
+  obj.hexInput = obj6;
+  const obj4 = { borderRadius: importDefault(dependencyMap[5]).radii.round, borderColor: importDefault(dependencyMap[5]).unsafe_rawColors.WHITE };
   const obj5 = { width, minWidth: width, height: 24 };
   obj.buttonGroup = { marginTop: importDefault(dependencyMap[5]).space.PX_24 };
   return obj;
@@ -281,11 +281,11 @@ export default function GuildSettingsServerTagColorPickerActionSheet(secondaryCo
     }
   }, items11);
   const memo = React.useMemo(() => {
-    let obj = {};
+    let obj = { MOBILE_BOTTOM_SHEET: null, overflow: true, addValue: "/assets/.cache/intl/bW9kdWxlcy9nb19saXZl" };
     const intl = primaryColor(onSelectColor[12]).intl;
     obj.label = intl.string(primaryColor(onSelectColor[12]).t.PHT1N2);
     const items = [obj, ];
-    obj = {};
+    obj = { MOBILE_BOTTOM_SHEET: null, overflow: null, addValue: null };
     const intl2 = primaryColor(onSelectColor[12]).intl;
     obj.label = intl2.string(primaryColor(onSelectColor[12]).t.9/wzjF);
     items[1] = obj;
@@ -377,7 +377,7 @@ export default function GuildSettingsServerTagColorPickerActionSheet(secondaryCo
   }
   items13[1] = tmp46;
   items13[2] = first3(importDefault(dependencyMap[22]), { hue: sharedValue, saturation: sharedValue1, value: sharedValue2, saturationValuePickerStyle: tmp2.saturationValuePicker, saturationValueColorBoxStyle: tmp2.saturationValueColorBox, saturationValueColorBoxInnerStyle: tmp2.saturationValueColorBoxInner, saturationValueSelectorStyle: tmp2.selector, huePickerStyle: tmp2.huePicker, hueColorBarInnerStyle: tmp2.hueColorBarInner, hueSliderStyle: tmp2.selector, onPanUpdate: callback6, onPanFinalize: callback7 });
-  const obj9 = { width: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000022864589665961543, marginTop: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000016590198330517403, paddingHorizontal: 203603270663150140000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, justifyContent: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000012562328943715765, backgroundColor: 282966.56772735715, alignItems: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000358774316436651 };
+  const obj9 = {};
   const intl3 = arg1(dependencyMap[12]).intl;
   obj9.accessibilityLabel = intl3.string(arg1(dependencyMap[12]).t.ozfa/h);
   obj9.value = first4;

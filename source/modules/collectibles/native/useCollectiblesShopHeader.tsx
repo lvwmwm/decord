@@ -1,15 +1,15 @@
-// Module ID: 14371
-// Function ID: 108480
+// Module ID: 14378
+// Function ID: 108503
 // Name: CollectiblesShopHeaderTitle
 // Dependencies: []
 // Exports: default
 
-// Module 14371 (CollectiblesShopHeaderTitle)
+// Module 14378 (CollectiblesShopHeaderTitle)
 function CollectiblesShopHeaderTitle(currentScreen) {
   const tmp = callback2();
   let obj = { style: tmp.headerTitleContainer };
-  const items = [callback(arg1(dependencyMap[10]).ShopIcon, { flexDirection: null, alignItems: "f8bf13e5289aa31d46196df3283f80c3" }), ];
-  obj = { style: tmp.headerTitle };
+  const items = [callback(arg1(dependencyMap[10]).ShopIcon, { flex: null, flexGrow: "f8bf13e5289aa31d46196df3283f80c3" }), ];
+  obj = { borderBottomColor: "cry", borderBottomWidth: "cry", paddingVertical: "cry", flexGrow: "cry", style: tmp.headerTitle };
   if (currentScreen.currentScreen === constants.ORBS) {
     const intl2 = arg1(dependencyMap[12]).intl;
     let stringResult = intl2.string(arg1(dependencyMap[12]).t.ElYQFS);
@@ -149,10 +149,10 @@ function CollectiblesShopHeaderRight(currentScreen) {
   const items4 = [callback(arg1(dependencyMap[26]).BalanceWidgetPillButton, { balance, onPress: callback }), , ];
   let tmp10 = null != stateFromStores;
   if (tmp10) {
-    obj = {};
+    obj = { lurkLocation: "black", useIsScreenIndexFrozenSharedValue: 34, isNotSupported: null };
     const intl = arg1(dependencyMap[12]).intl;
     obj.accessibilityLabel = intl.string(arg1(dependencyMap[12]).t.7lZ31J);
-    obj.icon = callback(arg1(dependencyMap[28]).HeartIcon, { flexDirection: -1571794688, alignItems: 27174209 });
+    obj.icon = callback(arg1(dependencyMap[28]).HeartIcon, { flex: -1578282752, flexGrow: 34792514 });
     obj.onPress = callback1;
     tmp10 = callback(arg1(dependencyMap[27]).IconButton, obj);
   }
@@ -171,7 +171,7 @@ function CollectiblesShopHeaderRight(currentScreen) {
     const intl = currentScreen(balance[12]).intl;
     obj["accessibilityLabel"] = intl.string(currentScreen(balance[12]).t.nSFuC0);
     obj["size"] = "sm";
-    obj["icon"] = callback(currentScreen(balance[30]).MenuIcon, { flexDirection: -1571794688, alignItems: 27174209 });
+    obj["icon"] = callback(currentScreen(balance[30]).MenuIcon, { flex: -1578282752, flexGrow: 34792514 });
     return callback(currentScreen(balance[27]).IconButton, obj);
   };
   items4[2] = callback(arg1(dependencyMap[29]).ContextMenu, obj1, currentScreen);
@@ -191,7 +191,7 @@ obj = {};
 obj = { "Bool(true)": true, "Bool(true)": true, "Bool(true)": true, marginTop: importDefault(dependencyMap[9]).space.PX_8, paddingLeft: importDefault(dependencyMap[9]).space.PX_8, gap: importDefault(dependencyMap[9]).space.PX_8 };
 obj.headerTitleContainer = obj;
 obj.headerTitle = { flexShrink: 1 };
-const obj1 = { "Bool(true)": true, "Bool(true)": true, "Bool(true)": true, gap: importDefault(dependencyMap[9]).space.PX_8, marginTop: importDefault(dependencyMap[9]).space.PX_8 };
+const obj1 = { bottom: true, left: true, padding: true, gap: importDefault(dependencyMap[9]).space.PX_8, marginTop: importDefault(dependencyMap[9]).space.PX_8 };
 obj.headerRightContainer = obj1;
 let closure_12 = obj.createStyles(obj);
 const tmp2 = arg1(dependencyMap[7]);

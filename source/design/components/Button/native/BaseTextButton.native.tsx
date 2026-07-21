@@ -1,9 +1,9 @@
-// Module ID: 4536
-// Function ID: 39752
+// Module ID: 4540
+// Function ID: 39800
 // Name: CollapsingText
 // Dependencies: []
 
-// Module 4536 (CollapsingText)
+// Module 4540 (CollapsingText)
 let Platform;
 function CollapsingText(children) {
   const collapseText = children.collapseText;
@@ -105,17 +105,17 @@ const tmp2 = arg1(dependencyMap[2]);
 ({ jsx: closure_7, jsxs: closure_8 } = arg1(dependencyMap[3]));
 let obj1 = arg1(dependencyMap[4]);
 let closure_9 = obj1.createStyles((arg0, sm) => {
-  let obj = { grow: { accessibilityRole: null, "Bool(true)": null }, shrink: { flexShrink: 1 } };
-  obj = { "Bool(false)": null, <string:1419386345>: null, lineHeight: getTextPlatformLineHeight(sm, arg0) };
+  let obj = { grow: { -9223372036854775808: null, 0: null }, shrink: { flexShrink: 1 } };
+  obj = { lineHeight: getTextPlatformLineHeight(sm, arg0) };
   obj.buttonText = obj;
-  obj.icon = { "Bool(false)": false, <string:1419386345>: true };
+  obj.icon = { borderRadius: -536870861, borderWidth: -299892737 };
   obj.iconLeft = { paddingLeft: 4 };
   obj.iconRight = { paddingRight: 4 };
   obj.expressiveButtonContainer = { position: "relative" };
   return obj;
 });
 let obj2 = arg1(dependencyMap[4]);
-let closure_10 = obj2.createStyles({ container: { 1674340718: false, -77439784: false, 1196862112: false }, textCollapsed: { <string:223543300>: null, <string:1762021126>: null } });
+let closure_10 = obj2.createStyles({ container: { y: null, processOptOut: "99274532ad7fe616c031212e677b32e8", setNotificationCenterActive: "ThreadLockIcon" }, textCollapsed: {} });
 const tmp3 = arg1(dependencyMap[3]);
 let obj = {};
 obj = { borderWidth: 1, borderRadius: importDefault(dependencyMap[5]).radii.round, borderColor: importDefault(dependencyMap[5]).colors.BORDER_SUBTLE, overflow: "hidden" };
@@ -252,8 +252,8 @@ const merged = Object.assign({}, importAllResult.forwardRef((iconOpticalOffsetMa
   const sharedValue = obj1.useSharedValue(0);
   const startsWithResult = str3.startsWith("expressive");
   ref = importAllResult.useRef(null);
-  let closure_6 = importAllResult.useRef({ aze: false, azj: true });
-  const tmp14 = callback(startsWithResult.useState({}), 2);
+  let closure_6 = importAllResult.useRef({ bhk: -536870861, bic: -299892737 });
+  const tmp14 = callback(startsWithResult.useState({ includeExtra: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000033995391321045464, style: 139264.00004577637, source: -14480300402108619000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 }), 2);
   let callback2 = tmp14[1];
   const items = [onLayout, startsWithResult];
   const items1 = [startsWithResult, onPressIn, enabled];

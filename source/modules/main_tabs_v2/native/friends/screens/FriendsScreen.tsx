@@ -1,10 +1,10 @@
-// Module ID: 15300
-// Function ID: 116399
+// Module ID: 15307
+// Function ID: 116423
 // Name: FriendsScreen
 // Dependencies: []
 // Exports: default
 
-// Module 15300 (FriendsScreen)
+// Module 15307 (FriendsScreen)
 let closure_3 = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 let closure_5 = importDefault(dependencyMap[2]);
@@ -17,7 +17,7 @@ obj.container = obj;
 const tmp2 = arg1(dependencyMap[4]);
 obj.requestsButtonContainer = { marginHorizontal: importDefault(dependencyMap[6]).space.PX_16, borderRadius: importDefault(dependencyMap[6]).radii.lg, overflow: "hidden" };
 obj.emptyContainer = {};
-const obj2 = { "Bool(true)": 127277221927828310000000000, "Bool(true)": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000948075557971316, "Bool(true)": 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010472572966719652, marginBottom: importDefault(dependencyMap[6]).space.PX_16 };
+const obj2 = { 0: true, 0: true, 0: true, marginBottom: importDefault(dependencyMap[6]).space.PX_16 };
 obj.buttonContainer = obj2;
 let closure_9 = obj.createStyles(obj);
 const obj1 = { marginHorizontal: importDefault(dependencyMap[6]).space.PX_16, borderRadius: importDefault(dependencyMap[6]).radii.lg, overflow: "hidden" };
@@ -120,7 +120,7 @@ export default function FriendsScreen() {
       return tmp(tmp2, obj);
     } else {
       const obj3 = { style: tmp2.requestsButtonContainer };
-      let obj4 = { 1726238916: null, 607091733: null };
+      let obj4 = { 0: null, 0: null };
       const obj5 = { source: tmp2(analyticsLocations[17]) };
       obj4.icon = pendingIgnored(navigation(analyticsLocations[20]).TableRow.Icon, obj5);
       obj4.trailing = pendingIgnored(navigation(analyticsLocations[20]).TableRow.Arrow, {});

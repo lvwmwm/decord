@@ -1,10 +1,10 @@
-// Module ID: 6479
-// Function ID: 50592
+// Module ID: 6481
+// Function ID: 50635
 // Name: ServerIconShieldzordExample
 // Dependencies: []
 // Exports: ServerIconShieldzordExample
 
-// Module 6479 (ServerIconShieldzordExample)
+// Module 6481 (ServerIconShieldzordExample)
 const jsx = require(dependencyMap[0]).jsx;
 const _module = require(dependencyMap[3]);
 const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/ServerIconShieldzordExample.native.tsx");

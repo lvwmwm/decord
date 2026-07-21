@@ -1,10 +1,10 @@
-// Module ID: 5674
-// Function ID: 48696
+// Module ID: 5676
+// Function ID: 48739
 // Name: ReservedTagIds
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 5674 (ReservedTagIds)
+// Module 5676 (ReservedTagIds)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("modules/forums/ForumChannelTypes.tsx");
 
-export const ReservedTagIds = { "Bool(true)": null, "Bool(true)": "4f276c9d37ed9e072482570ea4ab1799", "Bool(true)": "ic_discoverable_guild_badge_premium_24px", "Bool(true)": "png", "Bool(true)": "2026-02-pubsub-bulk-ban-users", "Bool(true)": "user" };
+export const ReservedTagIds = { "Bool(false)": null, "Bool(false)": "4f276c9d37ed9e072482570ea4ab1799", "Bool(false)": "ic_discoverable_guild_badge_premium_24px", "Bool(false)": "png", "Bool(false)": "2026-02-pubsub-bulk-ban-users", "Bool(false)": "user" };

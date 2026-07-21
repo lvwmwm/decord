@@ -1,7 +1,7 @@
 // Module ID: 166
 // Function ID: 2482
 // Name: rawToPerformanceEntryType
-// Dependencies: []
+// Dependencies: [188, 190, 126, 191]
 
 // Module 166 (rawToPerformanceEntryType)
 function rawToPerformanceEntryType(entryType) {
@@ -22,7 +22,7 @@ function rawToPerformanceEntryType(entryType) {
     throw typeError;
   }
 }
-const obj = {};
+const obj = { appSpinnerSources: "all", "Null": true, "Null": false, "Null": true, "Null": 3000 };
 arg5.RawPerformanceEntryTypeValues = obj;
 arg5.rawToPerformanceEntry = function rawToPerformanceEntry(entryType) {
   let fetchStart;

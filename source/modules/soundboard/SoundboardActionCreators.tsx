@@ -1,10 +1,10 @@
-// Module ID: 5726
-// Function ID: 49163
+// Module ID: 5728
+// Function ID: 49206
 // Name: _fetchDefaultSoundsFromApi2
 // Dependencies: []
 // Exports: addFavoriteSound, deleteSound, fetchSoundGuildData, maybeFetchSoundboardSounds, muteCustomJoinSound, playSoundLocally, removeFavoriteSound, reportSoundFinishedPlaying, reportSoundStartedPlaying, updateSound, updateUserSoundboardVolume, uploadSound
 
-// Module 5726 (_fetchDefaultSoundsFromApi2)
+// Module 5728 (_fetchDefaultSoundsFromApi2)
 async function _fetchDefaultSoundsFromApi2() {
   const HTTP = callback(closure_2[5]).HTTP;
   const obj = { url: constants.SOUNDBOARD_DEFAULT_SOUNDS, rejectWithError: callback(closure_2[5]).rejectWithMigratedError() };

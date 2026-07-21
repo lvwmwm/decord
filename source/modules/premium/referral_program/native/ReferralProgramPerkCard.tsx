@@ -1,10 +1,10 @@
-// Module ID: 12241
-// Function ID: 93898
+// Module ID: 12248
+// Function ID: 93921
 // Name: ReferredFriendAvatar
 // Dependencies: []
 // Exports: ReferralProgramPerkCard
 
-// Module 12241 (ReferredFriendAvatar)
+// Module 12248 (ReferredFriendAvatar)
 function ReferredFriendAvatar(user) {
   user = user.user;
   let obj = { style: callback3().referredFriendAvatar };
@@ -77,10 +77,10 @@ obj = {};
 obj = { width: 320, borderRadius: importDefault(dependencyMap[6]).radii.sm, backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_SURFACE_HIGH, alignItems: "center" };
 const merged = Object.assign(importDefault(dependencyMap[6]).shadows.SHADOW_LOW);
 obj.container = obj;
-obj.progressIndicatorContainer = { 9223372036854775807: true, -9223372036854775808: "/assets/images/native/premium/logos", 0: 134, -9223372036854775808: 56, -9223372036854775808: null, -9223372036854775808: "5491d41ca2212b1f11c074c452801d84" };
-const obj1 = { -9223372036854775808: null, -9223372036854775808: "494d75fe739ed4a36d195ab8193847fa", -9223372036854775808: "alert", -9223372036854775808: "png", -9223372036854775808: true, -9223372036854775808: "/assets/modules/stickers/native/images", borderRadius: importDefault(dependencyMap[6]).radii.xxl, backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_MOD_STRONG };
-obj.availableReferralSlot = obj1;
+obj.progressIndicatorContainer = { -9223372036854775808: 25937473, 0: 569860352, 9223372036854775807: 1355038993, -9223372036854775808: -2039349246, -9223372036854775808: 939524096, -9223372036854775808: 16777216 };
 const tmp3 = arg1(dependencyMap[4]);
+obj.availableReferralSlot = { borderRadius: importDefault(dependencyMap[6]).radii.xxl, backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_MOD_STRONG };
+const obj1 = { borderRadius: importDefault(dependencyMap[6]).radii.xxl, backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_MOD_STRONG };
 obj.referredFriendAvatar = { borderWidth: 2, borderColor: importDefault(dependencyMap[6]).colors.BACKGROUND_SURFACE_HIGH, borderRadius: importDefault(dependencyMap[6]).radii.round };
 obj.contentContainer = {};
 obj.heading = { textAlign: "left" };
@@ -121,16 +121,16 @@ export const ReferralProgramPerkCard = function ReferralProgramPerkCard() {
   obj = { nReferralsSent: stateFromStores.size };
   const items4 = [callback(importDefault(dependencyMap[20]), obj), callback(ProgressIndicator, { referralSentUsers }), , ];
   obj1 = { style: tmp.contentContainer };
-  const obj2 = { INTEGRATION_CREATE: false, ConstraintReasonCode: false, style: tmp.heading };
+  const obj2 = { style: tmp.heading };
   const intl = arg1(dependencyMap[10]).intl;
   obj2.children = intl.string(arg1(dependencyMap[10]).t.USo4s7);
   const items5 = [callback(arg1(dependencyMap[8]).Text, obj2), ];
-  obj3 = { INTEGRATION_CREATE: 3, ConstraintReasonCode: null, style: tmp.bodyText, children: getBodyText(false !== stateFromStores1, referralSentUsers.length, everyResult) };
+  obj3 = { style: tmp.bodyText, children: getBodyText(false !== stateFromStores1, referralSentUsers.length, everyResult) };
   items5[1] = callback(arg1(dependencyMap[21]).TextWithIOSLinkWorkaround, obj3);
   obj1.children = items5;
   items4[2] = callback2(View, obj1);
   const obj4 = { style: tmp.buttonContainer };
-  const obj5 = {};
+  const obj5 = { 9223372036854775807: 32768000, -9223372036854775808: 30653696 };
   let tmp14 = false === stateFromStores1;
   if (!tmp14) {
     tmp14 = tmp7;

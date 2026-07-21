@@ -1,10 +1,10 @@
-// Module ID: 9207
-// Function ID: 72054
+// Module ID: 9211
+// Function ID: 72066
 // Name: AuthFormView
 // Dependencies: []
 // Exports: default
 
-// Module 9207 (AuthFormView)
+// Module 9211 (AuthFormView)
 let closure_3 = importAll(dependencyMap[0]);
 ({ View: closure_4, ScrollView: closure_5 } = arg1(dependencyMap[1]));
 const tmp2 = arg1(dependencyMap[1]);
@@ -42,7 +42,7 @@ let closure_8 = arg1(dependencyMap[3]).createStyles((arg0) => {
   }
   obj.flex = num;
   obj.content = obj;
-  obj.subHeader = {};
+  obj.subHeader = { "Null": null, "Null": null };
   return obj;
 });
 const obj = arg1(dependencyMap[3]);
@@ -61,7 +61,7 @@ export default function AuthFormView(arg0) {
   const tmp2 = callback3(tmp);
   const callback = React.useContext(callback(dependencyMap[6]).WideAuthScrollContext);
   if (tmp) {
-    let obj = { -1789772959: null, 1655488172: "uppercase", 89216098: 0.5, -71867389: "M11 4v1h1V4h-1ZM12 9V8h-1V6h-1v1H9v1H6V7H5v2H3v2h1v2h1v1h6v-1h1v-2h1V9h-1Z", -865743786: "#fff" };
+    let obj = {};
     obj = { top: 0 };
     obj.contentInset = obj;
     obj.onScroll = function onScroll(nativeEvent) {
@@ -93,7 +93,7 @@ export default function AuthFormView(arg0) {
     obj.style = items2;
     const obj3 = { backgroundImageSource, backgroundImageCover };
     const items3 = [callback2(importDefault(dependencyMap[8]), obj3), callback2(importDefault(dependencyMap[9]), {}), ];
-    const obj4 = { <string:979495156>: null, <string:4263076178>: "uppercase", <string:1379623170>: 0.5, <string:2898177173>: "M11 4v1h1V4h-1ZM12 9V8h-1V6h-1v1H9v1H6V7H5v2H3v2h1v2h1v1h6v-1h1v-2h1V9h-1Z" };
+    const obj4 = { "Null": null, "Null": null, "Null": null, "Null": null };
     const obj5 = { top: 0 };
     obj4.contentInset = obj5;
     obj4.style = tmp2.flex;

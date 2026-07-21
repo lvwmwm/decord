@@ -1,10 +1,10 @@
-// Module ID: 16416
-// Function ID: 126841
+// Module ID: 16423
+// Function ID: 126875
 // Name: _openSafetyFlow
-// Dependencies: [675807232, 79429632, 161218560, 95420416, 1076232192, 131072, 561446912, 2650800128, 469762098, 3154116624]
+// Dependencies: [676200448, 79429632, 161218560, 95420416, 1076690944, 131072, 561446912, 2768240640, 469762098, 3154116624]
 // Exports: openSafetyFlow
 
-// Module 16416 (_openSafetyFlow)
+// Module 16423 (_openSafetyFlow)
 function _openSafetyFlow() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);

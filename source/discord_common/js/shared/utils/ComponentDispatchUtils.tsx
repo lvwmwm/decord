@@ -18,7 +18,7 @@ const tmp2 = () => {
       eventEmitter = new ComponentDispatcher(closure_1[2]).EventEmitter();
       self.emitter = eventEmitter;
       self._savedDispatches = {};
-      obj = { RowButton: "isArray", iu: "construct" };
+      obj = {};
       num = 100;
       merged = Object.assign(obj);
       self.options = obj;

@@ -1,10 +1,10 @@
-// Module ID: 16231
-// Function ID: 125431
+// Module ID: 16238
+// Function ID: 125462
 // Name: ChannelSetupScreen
 // Dependencies: []
 // Exports: default
 
-// Module 16231 (ChannelSetupScreen)
+// Module 16238 (ChannelSetupScreen)
 let closure_3 = importAll(dependencyMap[0]);
 ({ Image: closure_4, View: closure_5 } = arg1(dependencyMap[1]));
 let closure_6 = importDefault(dependencyMap[2]);
@@ -138,9 +138,9 @@ export default function ChannelSetupScreen() {
   }, items4);
   obj = { headerRef: ref, disableNextStep: false, currentStep: arg1(dependencyMap[21]).EnableCommunityModalSteps.STEP_2 };
   obj = { style: enableCommunitySharedStyles.content };
-  obj1 = { "Null": 1781223681, "Null": 1359050337, "Null": -1690171653, "Null": -469760902, ref };
+  obj1 = { "Bool(false)": -1486728959, "Bool(false)": 1359050337, "Bool(false)": -935196938, "Bool(false)": -167771014, ref };
   const intl3 = arg1(dependencyMap[15]).intl;
-  obj1.children = intl3.formatToPlainString(arg1(dependencyMap[15]).t.tInpJj, { 0: true, 9223372036854775807: true });
+  obj1.children = intl3.formatToPlainString(arg1(dependencyMap[15]).t.tInpJj, { "Null": "<string:2844131330>", "Null": "<string:3578855426>" });
   const items5 = [callback(arg1(dependencyMap[22]).Text, obj1), , , ];
   obj2 = { resizeMode: "contain", source: importDefault(dependencyMap[16])().channelSetup };
   items5[1] = callback(closure_4, obj2);
@@ -148,7 +148,7 @@ export default function ChannelSetupScreen() {
   const intl4 = arg1(dependencyMap[15]).intl;
   obj3.children = intl4.string(arg1(dependencyMap[15]).t.YtXpEh);
   items5[2] = callback(arg1(dependencyMap[22]).Heading, obj3);
-  const obj4 = { Promise: null, marginTop: 3, flags: null, style: enableCommunitySharedStyles.description };
+  const obj4 = { "Null": true, "Null": true, "Null": true, style: enableCommunitySharedStyles.description };
   const intl5 = arg1(dependencyMap[15]).intl;
   obj4.children = intl5.string(arg1(dependencyMap[15]).t.J/fYR8);
   items5[3] = callback(arg1(dependencyMap[22]).Text, obj4);

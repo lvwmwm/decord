@@ -1,10 +1,10 @@
-// Module ID: 12783
-// Function ID: 97974
+// Module ID: 12790
+// Function ID: 97997
 // Name: _checkForNewerBuild
 // Dependencies: []
 // Exports: checkForNewerBuild, openBuildInstaller
 
-// Module 12783 (_checkForNewerBuild)
+// Module 12790 (_checkForNewerBuild)
 function _checkForNewerBuild() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);

@@ -1,10 +1,10 @@
-// Module ID: 12270
-// Function ID: 94101
+// Module ID: 12277
+// Function ID: 94124
 // Name: apexExperiment
 // Dependencies: []
 // Exports: getBogoMarketingMaterialsEnabled, useBogoMarketingMaterialsEnabled
 
-// Module 12270 (apexExperiment)
+// Module 12277 (apexExperiment)
 const _module = require(dependencyMap[0]);
 const apexExperiment = _module.createApexExperiment({ variations: { [1]: true } });
 const _module1 = require(dependencyMap[1]);

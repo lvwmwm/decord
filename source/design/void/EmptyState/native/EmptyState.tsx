@@ -1,10 +1,10 @@
-// Module ID: 12908
-// Function ID: 98450
+// Module ID: 12915
+// Function ID: 98473
 // Name: EmptyState
 // Dependencies: []
 // Exports: default
 
-// Module 12908 (EmptyState)
+// Module 12915 (EmptyState)
 importAll(dependencyMap[0]);
 ({ View: closure_2, Image: closure_3 } = arg1(dependencyMap[1]));
 const tmp3 = arg1(dependencyMap[1]);
@@ -13,9 +13,9 @@ let obj = arg1(dependencyMap[3]);
 obj = {};
 obj = { backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_BASE_LOWER };
 obj.container = obj;
-obj.emptyImage = { "Bool(false)": false, "Bool(false)": false, "Bool(false)": false };
-obj.emptyTitle = { width: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003787820235099634, height: 15192519839369096000000000000000000000000000000000000000000000000000000000000000000 };
-obj.emptyBody = { concat: -0.0014069081515246523, now: -0.0001058445630777106 };
+obj.emptyImage = { <string:4266911585>: "<string:1358954855>", <string:597500170>: "<string:1091667135>", <string:3850199709>: "/assets/design/components/LottieIcon/native/generated/lotties" };
+obj.emptyTitle = { -9223372036854775808: true, 0: true };
+obj.emptyBody = { "Bool(true)": "absolute", "Bool(true)": 0 };
 let closure_6 = obj.createStyles(obj);
 const tmp4 = arg1(dependencyMap[2]);
 const result = arg1(dependencyMap[7]).fileFinishedImporting("design/void/EmptyState/native/EmptyState.tsx");
@@ -53,7 +53,7 @@ export default function EmptyState(Illustration) {
   let tmp14 = null;
   ({ children, bodyStyle } = Illustration);
   if (null != title) {
-    obj1 = { padding: null, name: null, "Bool(false)": null };
+    obj1 = { borderWidth: 1649, borderColor: 1368088832, overflow: 141652761 };
     const items4 = [tmp.emptyTitle, tmp11];
     obj1.style = items4;
     obj1.children = title;

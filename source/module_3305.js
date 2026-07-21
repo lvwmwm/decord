@@ -16,15 +16,15 @@ obj = {
 };
 obj.era = obj.default({ values: { narrow: [null, null], abbreviated: [null, null], wide: [] }, defaultWidth: "wide" });
 obj.quarter = obj.default({
-  values: { narrow: [false, false, false, false], abbreviated: ["r", "IMPLICIT", "r", "pako"], wide: [] },
+  values: { narrow: [], abbreviated: ["d\u1EA5u", "d\u1EA5u g\u1EA1ch ch\u00E9o", "h\u1EE7y", "nh\u00E2n"], wide: ["r", "GIF_PICKER_AVATAR_OR_BANNER_MODAL", "r", "\u0129"] },
   defaultWidth: "wide",
   argumentCallback(arg0) {
     return arg0 - 1;
   }
 });
-obj.month = obj.default({ values: { narrow: [0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004456143132310851, 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004241875101371775, 58840350721.52512, 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001544558296959693, "good", "goodnight", "nap", "night", "sleep", "sleeping", "tired", "whatever"], abbreviated: [1116352408, 1899447441, 3049323471, 3921009573, 961987163, 1508970993, 2453635748, 2870763221, 3624381080, 310598401, 607225278, 1426881987], wide: [null, "sty", "lut", "mar", "kwi", "maj", "cze", "lip", "sie", "wrz", "pa\u017A", "lis"] }, defaultWidth: "wide" });
-obj.day = obj.default({ values: { narrow: [-1546188227, null, null, null, null, null, null], short: [], abbreviated: [], wide: [] }, defaultWidth: "wide" });
-obj.dayPeriod = obj.default({ values: { narrow: { <string:13107200>: "top", <string:13303808>: "r", <string:13369344>: "isArray", <string:13631488>: "WireType", <string:13893632>: "padding", <string:14024704>: "unicodeVersion", <string:14286848>: "a", <string:14548992>: "isArray" }, abbreviated: {}, wide: { <string:13107200>: "a", <string:13303808>: "BOOST_LEVEL_UPSELL_BUTTON", <string:13369344>: "a", <string:13631488>: "consumeLeftInset", <string:13893632>: "at", <string:14024704>: "BbESsg", <string:14286848>: "%Uint8ArrayPrototype%", <string:14548992>: "withLeftMargin" } }, defaultWidth: "wide" });
+obj.month = obj.default({ values: { narrow: [], abbreviated: [], wide: [] }, defaultWidth: "wide" });
+obj.day = obj.default({ values: { narrow: [-5166729548027175000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, true, true, true, true, true, true], short: [1156665600, 149331, 93906, 127852, 136925, 41263169, -1286123264], abbreviated: [], wide: [true, true, true, true, true, true, true] }, defaultWidth: "wide" });
+obj.dayPeriod = obj.default({ values: { narrow: { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Null": null, "Null": null }, abbreviated: {}, wide: { "Bool(false)": 116326403, "Bool(false)": -213712893, "Bool(false)": -1711275744, "Bool(false)": -1728052785, "Bool(false)": 1124073935, "Bool(false)": 87337, "Null": true, "Null": true } }, defaultWidth: "wide" });
 
 export default obj;
 export default exports.default;

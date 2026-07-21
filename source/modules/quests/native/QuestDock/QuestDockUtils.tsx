@@ -1,10 +1,10 @@
-// Module ID: 13862
-// Function ID: 104907
+// Module ID: 13869
+// Function ID: 104930
 // Name: roundToNearestPixel
 // Dependencies: []
 // Exports: isSoftDismissed
 
-// Module 13862 (roundToNearestPixel)
+// Module 13869 (roundToNearestPixel)
 const PixelRatio = require(dependencyMap[0]).PixelRatio;
 const _module = require(dependencyMap[1]);
 ({ QUEST_DOCK_HORIZONTAL_EDGE_GUTTER_COLLAPSED: closure_2, QUEST_DOCK_COLLAPSED_MAX_WIDTH: closure_3, QUEST_DOCK_COLLAPSED_HEIGHT: closure_4, QUEST_DOCK_MODE_CHANGE_PHYSICS: closure_5 } = _module);

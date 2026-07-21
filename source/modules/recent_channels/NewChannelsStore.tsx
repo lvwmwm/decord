@@ -1,9 +1,9 @@
-// Module ID: 6753
-// Function ID: 52876
+// Module ID: 6759
+// Function ID: 52925
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 1318, 1282, 566, 686, 2, 5, 4660, 1921, 6763, 6778, 6779, 6780, 6781, 6786, 6765, 6792]
+// Dependencies: [6, 7, 15, 17, 18, 1318, 1282, 566, 686, 2, 5, 4662, 1921, 6769, 6784, 6785, 6786, 6787, 6792, 6771, 6798]
 
-// Module 6753 (_isNativeReflectConstruct)
+// Module 6759 (_isNativeReflectConstruct)
 import _classCallCheck from "_classCallCheck";
 import _defineProperties from "_defineProperties";
 import _possibleConstructorReturn from "_possibleConstructorReturn";
@@ -14,7 +14,7 @@ import _callSuper from "_callSuper";
 import initialize from "initialize";
 import dispatcher from "dispatcher";
 import { GUILD_SELECTABLE_CHANNELS_KEY as closure_12 } from "dispatcher";
-import keys from "keys";
+import result2 from "result2";
 import asyncGeneratorStep from "asyncGeneratorStep";
 import closure_15 from "_isNativeReflectConstruct";
 import closure_16 from "_isNativeReflectConstruct";
@@ -241,7 +241,7 @@ let tmp5 = (Store) => {
   let obj = {
     key: "initialize",
     value() {
-      this.waitFor(_callSuper, initialize, dispatcher, keys, asyncGeneratorStep, closure_15, closure_16, _createForOfIteratorHelperLoose);
+      this.waitFor(_callSuper, initialize, dispatcher, result2, asyncGeneratorStep, closure_15, closure_16, _createForOfIteratorHelperLoose);
       const items = [closure_16];
       this.syncWith(items, closure_30);
     }

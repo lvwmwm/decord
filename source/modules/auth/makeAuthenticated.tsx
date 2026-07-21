@@ -1,10 +1,10 @@
-// Module ID: 15296
-// Function ID: 116365
+// Module ID: 15303
+// Function ID: 116389
 // Name: makeAuthenticated
 // Dependencies: []
 // Exports: makeAuthenticated
 
-// Module 15296 (makeAuthenticated)
+// Module 15303 (makeAuthenticated)
 importAll(dependencyMap[0]);
 let closure_3 = importDefault(dependencyMap[1]);
 const LoginStates = arg1(dependencyMap[2]).LoginStates;

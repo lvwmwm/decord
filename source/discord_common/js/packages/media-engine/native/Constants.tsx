@@ -1,9 +1,9 @@
-// Module ID: 4221
-// Function ID: 36993
+// Module ID: 4225
+// Function ID: 37041
 // Name: AudioSubsystems
 // Dependencies: []
 
-// Module 4221 (AudioSubsystems)
+// Module 4225 (AudioSubsystems)
 const InputModes = require(dependencyMap[0]).InputModes;
 const _module = require(dependencyMap[1]);
 const result = _module.fileFinishedImporting("../discord_common/js/packages/media-engine/native/Constants.tsx");

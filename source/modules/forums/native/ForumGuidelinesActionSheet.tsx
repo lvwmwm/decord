@@ -1,10 +1,10 @@
-// Module ID: 9549
-// Function ID: 74426
+// Module ID: 9554
+// Function ID: 74443
 // Name: ForumGuidelinesActionSheet
 // Dependencies: []
 // Exports: default, openForumGuidelinesActionSheet
 
-// Module 9549 (ForumGuidelinesActionSheet)
+// Module 9554 (ForumGuidelinesActionSheet)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 const View = arg1(dependencyMap[2]).View;
@@ -18,11 +18,11 @@ obj.footer = { paddingBottom: 16 };
 obj.buttonWrapper = { marginHorizontal: 16 };
 const tmp2 = arg1(dependencyMap[4]);
 obj.buttonPill = { borderRadius: importDefault(dependencyMap[6]).radii.sm };
-const obj1 = { borderRadius: importDefault(dependencyMap[6]).radii.sm };
-obj.floatingButtonContainer = { shadowColor: importDefault(dependencyMap[6]).colors.BLACK, shadowOffset: { aze: 131072.00314656927, azj: 0.000000000000000000000000000000000000000000000000000000011294471302334573 }, borderRadius: importDefault(dependencyMap[6]).radii.sm };
+const obj2 = { "Bool(false)": false, "Bool(false)": 600, "Bool(false)": 16, "Bool(false)": 20, "Bool(false)": "heading-md/bold", "Bool(false)": "display", "Bool(false)": false, "Bool(false)": 700, shadowColor: importDefault(dependencyMap[6]).colors.BLACK, shadowOffset: {}, borderRadius: importDefault(dependencyMap[6]).radii.sm };
+obj.floatingButtonContainer = obj2;
 obj.editButton = {};
 obj.editText = { marginRight: 4 };
-const obj2 = { shadowColor: importDefault(dependencyMap[6]).colors.BLACK, shadowOffset: { aze: 131072.00314656927, azj: 0.000000000000000000000000000000000000000000000000000000011294471302334573 }, borderRadius: importDefault(dependencyMap[6]).radii.sm };
+const obj1 = { borderRadius: importDefault(dependencyMap[6]).radii.sm };
 obj.editIcon = { color: importDefault(dependencyMap[6]).colors.TEXT_BRAND };
 let closure_10 = obj.createStyles(obj);
 const obj3 = { color: importDefault(dependencyMap[6]).colors.TEXT_BRAND };
@@ -136,7 +136,7 @@ export default function ForumGuidelinesActionSheet(channel) {
     obj5.accessibilityRole = "button";
     obj5.style = tmp.editButton;
     obj5.onPress = callback1;
-    const obj6 = { style: tmp.editText };
+    const obj6 = { "Null": -0.0000000000000000000000000000000000000000005605197760997415, "Null": 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010400061133624569, "Null": -0.0000000000000044409002618943934, style: tmp.editText };
     const intl3 = arg1(dependencyMap[15]).intl;
     obj6.children = intl3.string(arg1(dependencyMap[15]).t.bt75uw);
     const items6 = [callback2(arg1(dependencyMap[22]).Text, obj6), ];
@@ -162,7 +162,8 @@ export default function ForumGuidelinesActionSheet(channel) {
   const obj10 = { style: tmp.guidelinesContainer };
   const obj11 = {};
   const tmp26 = importDefault(dependencyMap[24]);
-  obj11.children = importDefault(dependencyMap[26]).parseForumPostGuidelines(channel.topic, true, { channelId: channel.id });
+  const obj12 = { "Bool(true)": true, "Bool(true)": true, "Bool(true)": true, "Bool(true)": true, channelId: channel.id };
+  obj11.children = importDefault(dependencyMap[26]).parseForumPostGuidelines(channel.topic, true, obj12);
   obj10.children = callback2(arg1(dependencyMap[22]).Text, obj11);
   items8[1] = callback2(View, obj10);
   obj3.children = items8;

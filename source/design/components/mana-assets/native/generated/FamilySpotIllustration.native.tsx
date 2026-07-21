@@ -1,14 +1,13 @@
-// Module ID: 6047
-// Function ID: 49944
+// Module ID: 6049
+// Function ID: 49987
 // Name: FamilySpotIllustration
-// Dependencies: [0, 0, 4294967295, 0]
+// Dependencies: []
 // Exports: FamilySpotIllustration
 
-// Module 6047 (FamilySpotIllustration)
-import { jsx } from "result";
-import result from "result";
-
-result = result.fileFinishedImporting("design/components/mana-assets/native/generated/FamilySpotIllustration.native.tsx");
+// Module 6049 (FamilySpotIllustration)
+const jsx = require(dependencyMap[0]).jsx;
+const _module = require(dependencyMap[3]);
+const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/FamilySpotIllustration.native.tsx");
 
 export const FamilySpotIllustration = function FamilySpotIllustration(width) {
   let accessibilityLabel;

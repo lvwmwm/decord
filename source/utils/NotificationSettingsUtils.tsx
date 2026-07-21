@@ -1,10 +1,10 @@
-// Module ID: 5342
-// Function ID: 45614
+// Module ID: 5344
+// Function ID: 45655
 // Name: differ
 // Dependencies: []
 // Exports: getManyCurrentChannelSettings, getManyCurrentGuildSettings, trackAccountNotificationSettingUpdated, trackChannelNotificationSettingsUpdate, trackGuildNotificationSettingsUpdate
 
-// Module 5342 (differ)
+// Module 5344 (differ)
 let UserNotificationSettings;
 function differ(computeResult, computeResult1, RETURN_PREVIOUS_WHEN_CHANGED) {
   computeResult1 = computeResult;

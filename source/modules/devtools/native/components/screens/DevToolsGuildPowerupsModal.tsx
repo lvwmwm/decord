@@ -1,8 +1,8 @@
-// Module ID: 14540
-// Function ID: 109573
+// Module ID: 14547
+// Function ID: 109595
 // Dependencies: []
 
-// Module 14540
+// Module 14547
 const jsx = arg1(dependencyMap[1]).jsx;
 const importAllResult = importAll(dependencyMap[0]);
 let closure_4 = arg1(dependencyMap[2]).createNativeStackNavigator();

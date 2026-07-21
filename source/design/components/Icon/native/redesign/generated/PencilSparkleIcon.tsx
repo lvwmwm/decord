@@ -1,10 +1,10 @@
-// Module ID: 9821
-// Function ID: 76191
+// Module ID: 9826
+// Function ID: 76207
 // Name: PencilSparkleIcon
 // Dependencies: []
 // Exports: PencilSparkleIcon
 
-// Module 9821 (PencilSparkleIcon)
+// Module 9826 (PencilSparkleIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/PencilSparkleIcon.tsx");

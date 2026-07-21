@@ -1,10 +1,10 @@
-// Module ID: 7937
-// Function ID: 63348
+// Module ID: 7941
+// Function ID: 63360
 // Name: _maybeOpenPremiumUpsellActionSheet
 // Dependencies: []
 // Exports: default
 
-// Module 7937 (_maybeOpenPremiumUpsellActionSheet)
+// Module 7941 (_maybeOpenPremiumUpsellActionSheet)
 function _maybeOpenPremiumUpsellActionSheet(ANIMATED_EMOJIS) {
   importDefault(dependencyMap[0])(ANIMATED_EMOJIS);
   return true;

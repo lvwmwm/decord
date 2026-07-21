@@ -1,10 +1,10 @@
-// Module ID: 14557
-// Function ID: 109711
+// Module ID: 14564
+// Function ID: 109733
 // Name: FramePreviewOverrideSection
 // Dependencies: []
 // Exports: default
 
-// Module 14557 (FramePreviewOverrideSection)
+// Module 14564 (FramePreviewOverrideSection)
 function FramePreviewOverrideSection() {
   const tmp = callback6();
   const tmp2 = callback3((override) => override.override);
@@ -19,10 +19,10 @@ function FramePreviewOverrideSection() {
   if ("loading" === tmp3) {
     let obj = { style: tmp.section };
     obj = { style: tmp.sectionHeader };
-    obj = { padding: null, width: null, borderRadius: null, style: tmp.sectionTitle };
+    obj = { -9223372036854775808: 553648449, 9223372036854775807: 20912449, 0: 1091641600, style: tmp.sectionTitle };
     obj.children = callback4(callback(dependencyMap[10]).Text, obj);
     const items = [callback4(closure_6, obj), , , , ];
-    const obj1 = { padding: false, width: false, borderRadius: false, style: tmp.description };
+    const obj1 = { -9223372036854775808: true, 9223372036854775807: "/assets/design/components/Icon/native/redesign/generated/images", 0: 24, style: tmp.description };
     items[1] = callback4(callback(dependencyMap[10]).Text, obj1);
     const obj2 = { variant: "text-xs/normal" };
     const items1 = [tmp.statusText, statusError];
@@ -84,9 +84,9 @@ const tmp3 = arg1(dependencyMap[6]);
 obj.scrollContainer = { padding: importDefault(dependencyMap[8]).space.PX_16, paddingBottom: importDefault(dependencyMap[8]).space.PX_32 };
 const obj1 = { padding: importDefault(dependencyMap[8]).space.PX_16, paddingBottom: importDefault(dependencyMap[8]).space.PX_32 };
 obj.section = { backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_SURFACE_HIGH, borderRadius: importDefault(dependencyMap[8]).radii.lg, padding: importDefault(dependencyMap[8]).space.PX_16, marginBottom: importDefault(dependencyMap[8]).space.PX_16, borderWidth: 1, borderColor: importDefault(dependencyMap[8]).colors.BORDER_MUTED };
-const obj3 = { -9223372036854775808: true, filter: true, marginBottom: importDefault(dependencyMap[8]).space.PX_16 };
-obj.sectionHeader = obj3;
 const obj2 = { backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_SURFACE_HIGH, borderRadius: importDefault(dependencyMap[8]).radii.lg, padding: importDefault(dependencyMap[8]).space.PX_16, marginBottom: importDefault(dependencyMap[8]).space.PX_16, borderWidth: 1, borderColor: importDefault(dependencyMap[8]).colors.BORDER_MUTED };
+obj.sectionHeader = { marginBottom: importDefault(dependencyMap[8]).space.PX_16 };
+const obj3 = { marginBottom: importDefault(dependencyMap[8]).space.PX_16 };
 obj.sectionTitle = { flex: 1, color: importDefault(dependencyMap[8]).colors.TEXT_DEFAULT };
 const obj4 = { flex: 1, color: importDefault(dependencyMap[8]).colors.TEXT_DEFAULT };
 obj.inputContainer = { marginBottom: importDefault(dependencyMap[8]).space.PX_16 };
@@ -94,7 +94,7 @@ const obj5 = { marginBottom: importDefault(dependencyMap[8]).space.PX_16 };
 obj.inputWrapper = { backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_BASE_LOW, borderRadius: importDefault(dependencyMap[8]).radii.md, borderWidth: 1, borderColor: importDefault(dependencyMap[8]).colors.BORDER_MUTED, padding: importDefault(dependencyMap[8]).space.PX_4 };
 const obj6 = { backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_BASE_LOW, borderRadius: importDefault(dependencyMap[8]).radii.md, borderWidth: 1, borderColor: importDefault(dependencyMap[8]).colors.BORDER_MUTED, padding: importDefault(dependencyMap[8]).space.PX_4 };
 obj.inputLabel = { marginBottom: importDefault(dependencyMap[8]).space.PX_8, color: importDefault(dependencyMap[8]).colors.TEXT_DEFAULT, fontWeight: "600" };
-const obj8 = { 0: true, 0: null, 0: 8, marginTop: importDefault(dependencyMap[8]).space.PX_8 };
+const obj8 = { "Bool(true)": true, "Bool(true)": null, "Bool(true)": 8, marginTop: importDefault(dependencyMap[8]).space.PX_8 };
 obj.statusText = obj8;
 const obj7 = { marginBottom: importDefault(dependencyMap[8]).space.PX_8, color: importDefault(dependencyMap[8]).colors.TEXT_DEFAULT, fontWeight: "600" };
 obj.statusSuccess = { color: importDefault(dependencyMap[8]).colors.TEXT_FEEDBACK_POSITIVE };
@@ -156,7 +156,7 @@ export default function _default() {
   if (tmp5) {
     tmp5 = null != stateFromStores2;
   }
-  obj = { borderLeftWidth: true, borderTopWidth: true, noOp: tmp5 };
+  obj = { paddingBottom: null, left: null, noOp: tmp5 };
   const tmp7 = importDefault(dependencyMap[13])(obj);
   let categories = tmp7.categories;
   let tmp8 = tmp5;
@@ -201,7 +201,6 @@ export default function _default() {
   obj = { style: tmp.container };
   obj1 = { contentContainerStyle: tmp.scrollContainer, showsVerticalScrollIndicator: false };
   obj2 = { style: tmp.section };
-  const obj4 = { padding: true, width: "/assets/design/components/Icon/native/redesign/generated/images", borderRadius: 24, style: tmp.sectionTitle };
   const items4 = [callback4(closure_6, { style: tmp.sectionHeader, children: callback4(arg1(dependencyMap[10]).Text, obj4) }), callback4(arg1(dependencyMap[14]).ShopSkipCategoriesFilter, {})];
   obj2.children = items4;
   const items5 = [callback5(closure_6, obj2), , , ];
@@ -211,10 +210,10 @@ export default function _default() {
   const tmp16 = closure_6;
   const tmp17 = callback5;
   const tmp18 = closure_5;
-  const obj7 = { padding: true, width: true, borderRadius: true, style: tmp.sectionTitle };
+  const obj7 = { -9223372036854775808: true, 9223372036854775807: true, 0: true, style: tmp.sectionTitle };
   const items6 = [callback4(closure_6, { style: tmp.sectionHeader, children: callback4(arg1(dependencyMap[10]).Text, obj7) }), ];
   const obj8 = { style: tmp.inputContainer };
-  const obj9 = { padding: "HermesInternal", width: "data", borderRadius: "category", style: tmp.inputLabel };
+  const obj9 = { -9223372036854775808: false, 9223372036854775807: false, 0: false, style: tmp.inputLabel };
   const items7 = [callback4(arg1(dependencyMap[10]).Text, obj9), , , , ];
   const obj10 = { style: tmp.inputWrapper };
   const obj11 = { value: tmp10[0], onChangeText: tmp10[1], placeholder: "Enter product SKU ID (e.g., 1366494385482502184)", returnKeyType: "done" };
@@ -227,7 +226,7 @@ export default function _default() {
     tmp23 = "" !== str.trim();
   }
   if (tmp23) {
-    const obj13 = { padding: null, width: null, borderRadius: null };
+    const obj13 = { -9223372036854775808: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002308523043116392, 9223372036854775807: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000017167212148317, 0: 1758094259919999500000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 };
     const items8 = [, ];
     ({ statusText: arr9[0], statusLoading: arr9[1] } = tmp);
     obj13.style = items8;
@@ -241,7 +240,7 @@ export default function _default() {
     tmp8 = null == first;
   }
   if (tmp8) {
-    const obj14 = { padding: "Error", width: "Photos permission is required to save recordings", borderRadius: "Error" };
+    const obj14 = { -9223372036854775808: "Error", 9223372036854775807: "Photos permission is required to save recordings", 0: "Error" };
     const items9 = [, ];
     ({ statusText: arr10[0], statusError: arr10[1] } = tmp);
     obj14.style = items9;
@@ -254,7 +253,7 @@ export default function _default() {
     const items10 = [, ];
     ({ statusText: arr11[0], statusSuccess: arr11[1] } = tmp);
     obj15.style = items10;
-    const items11 = [true, first.name];
+    const items11 = ["then", first.name];
     obj15.children = items11;
     tmp30 = callback5(arg1(dependencyMap[10]).Text, obj15);
   }
@@ -269,7 +268,7 @@ export default function _default() {
   const tmp20 = closure_6;
   const tmp21 = callback5;
   const tmp22 = closure_6;
-  const obj18 = { padding: "Array", width: "FAMILY_CENTER_LINK_REQUEST_REGEX", borderRadius: "_bodyArrayBuffer", style: tmp.sectionTitle };
+  const obj18 = { -9223372036854775808: false, 9223372036854775807: false, 0: false, style: tmp.sectionTitle };
   const items12 = [callback4(closure_6, { style: tmp.sectionHeader, children: callback4(arg1(dependencyMap[10]).Text, obj18) }), ];
   if (null != first) {
     if (null != tmp13[0]) {

@@ -1,31 +1,31 @@
-// Module ID: 8573
-// Function ID: 68103
+// Module ID: 8577
+// Function ID: 68115
 // Name: styles
-// Dependencies: [31, 5466, 6853, 2, 44, 4096, 8583, 1934, 686, 2, 57, 31, 27, 8584, 33, 4126, 689, 4535, 1212, 7176, 8585, 3825, 8588, 6853]
+// Dependencies: [31, 5468, 6859, 2, 44, 4096, 8587, 1934, 686, 2, 57, 31, 27, 8588, 33, 4126, 689, 4539, 1212, 7180, 8589, 3825, 8592, 6859]
 // Exports: default
 
-// Module 8573 (styles)
+// Module 8577 (styles)
 import module_31 from "module_31";
 import { View } from "useGetOrFetchApplications";
 import importDefaultResult1 from "importDefaultResult1";
-import keys from "keys";
+import result2 from "result2";
 import invariant from "invariant";
 import { getBadgeTooltip } from "showActionSheet";
 import GetButton from "GetButton";
 import maybeLoadBundle from "maybeLoadBundle";
 
 ({ jsx: closure_9, jsxs: closure_10 } = GetButton);
-maybeLoadBundle = { header: { 0: 759239012, 0: 1912603216, 0: 24, 0: 24, 9223372036854775807: 1081688577 } };
+maybeLoadBundle = { header: { flex: "SERVER_GUIDE_CHANNEL_SELECTED", flexDirection: "_gameProfileResults", gap: "r", overflow: "MERCH_STORE", flexDirection: "isArray" } };
 maybeLoadBundle = { backgroundColor: require("dispatcher").colors.BACKGROUND_BASE_LOW };
 maybeLoadBundle.avatarBackground = maybeLoadBundle;
-maybeLoadBundle.members = {};
+maybeLoadBundle.members = { "Bool(true)": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011057372712917999, "Bool(true)": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011179501722384846, "Bool(true)": 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000017725617934124522 };
 maybeLoadBundle.memberCount = {};
-const obj1 = { backgroundColor: require("dispatcher").colors.TEXT_STATUS_OFFLINE, accessibilityRole: 24, -45001119: null };
+const obj1 = { "Bool(true)": 24, "Bool(true)": 24, "Bool(true)": null, backgroundColor: require("dispatcher").colors.TEXT_STATUS_OFFLINE };
 maybeLoadBundle.dot = obj1;
-const obj2 = { backgroundColor: require("dispatcher").colors.TEXT_STATUS_ONLINE, accessibilityRole: 24, -45001119: null };
+const obj2 = { "Bool(true)": 24, "Bool(true)": 24, "Bool(true)": null, backgroundColor: require("dispatcher").colors.TEXT_STATUS_ONLINE };
 maybeLoadBundle.dotOnline = obj2;
 maybeLoadBundle.established = { display: "flex" };
-maybeLoadBundle.nameRow = {};
+maybeLoadBundle.nameRow = { 1661796433: "Array", 1688124609: "ars", 1610747258: "isArray", -1432290456: "tidaWebformEnabled" };
 maybeLoadBundle.guildName = { flexShrink: 1 };
 maybeLoadBundle.guildIcon = {};
 maybeLoadBundle = maybeLoadBundle.createStyles(maybeLoadBundle);
@@ -65,7 +65,7 @@ export default function GuildProfileHeader(icon) {
     }
   }, items1);
   let obj4 = arg1(dependencyMap[9]);
-  const items2 = [invariant, keys];
+  const items2 = [invariant, result2];
   const items3 = [id];
   const stateFromStores1 = obj4.useStateFromStores(items2, () => {
     const member = member.getMember(id, id.getId());

@@ -1,19 +1,19 @@
-// Module ID: 9742
-// Function ID: 75813
+// Module ID: 9747
+// Function ID: 75829
 // Name: SocialLayerStorefrontWishlistItemCard
 // Dependencies: []
 // Exports: default
 
-// Module 9742 (SocialLayerStorefrontWishlistItemCard)
+// Module 9747 (SocialLayerStorefrontWishlistItemCard)
 let closure_3 = importAll(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 let closure_5 = importDefault(dependencyMap[2]);
 ({ jsx: closure_6, Fragment: closure_7, jsxs: closure_8 } = arg1(dependencyMap[3]));
 let obj = arg1(dependencyMap[4]);
 obj = {};
-obj = { value: null, flexDirection: null, alignItems: null, justifyContent: null, gap: null, flexWrap: null, width: null, top: importDefault(dependencyMap[5]).space.PX_8, left: importDefault(dependencyMap[5]).space.PX_8, borderRadius: importDefault(dependencyMap[5]).radii.sm };
+obj = { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, top: importDefault(dependencyMap[5]).space.PX_8, left: importDefault(dependencyMap[5]).space.PX_8, borderRadius: importDefault(dependencyMap[5]).radii.sm };
 obj.applicationIcon = obj;
-const obj1 = { -1322251474: null, -598419615: null, -337354864: null, 1674742851: null, 1694193300: null, 1549967418: null, shadowColor: undefined, shadowOffset: { aze: false, azj: true }, borderRadius: importDefault(dependencyMap[5]).radii.none };
+const obj1 = { 9223372036854775807: "a", 0: "isArray", 0: "x", 9223372036854775807: "position", 0: "k", 9223372036854775807: "a", shadowColor: undefined, shadowOffset: { bhk: -536870861, bic: -299892737 }, borderRadius: importDefault(dependencyMap[5]).radii.none };
 obj.nestedCard = obj1;
 let closure_9 = obj.createStyles(obj);
 const tmp2 = arg1(dependencyMap[3]);

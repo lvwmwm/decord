@@ -1,10 +1,10 @@
-// Module ID: 14569
-// Function ID: 109839
+// Module ID: 14576
+// Function ID: 109861
 // Name: useFrameMonitor
 // Dependencies: []
 // Exports: default
 
-// Module 14569 (useFrameMonitor)
+// Module 14576 (useFrameMonitor)
 let closure_2 = importDefault(dependencyMap[0]);
 let closure_3 = importAll(dependencyMap[1]);
 const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/devtools/native/components/screens/performance/useFrameMonitor.tsx");

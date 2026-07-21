@@ -1,16 +1,16 @@
-// Module ID: 11226
-// Function ID: 87426
+// Module ID: 11232
+// Function ID: 87449
 // Name: set
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 11226 (set)
+// Module 11232 (set)
 const obj = { ALL: new Set([]) };
 const set = new Set([]);
 obj.APPLICATION_DIRECTORY = new Set([]);
 const set1 = new Set([]);
-obj.APP_LAUNCHER_IN_TEXT = new Set([]);
-const set2 = new Set([]);
-obj.APP_LAUNCHER_IN_VOICE_BANNER = new Set([]);
+obj.APP_LAUNCHER_IN_TEXT = new Set(["heart", "ily", "kisses"]);
+const set2 = new Set(["heart", "ily", "kisses"]);
+obj.APP_LAUNCHER_IN_VOICE_BANNER = new Set([null]);
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_common/js/shared/shared-constants/ApplicationDirectoryCollectionType.tsx");
 

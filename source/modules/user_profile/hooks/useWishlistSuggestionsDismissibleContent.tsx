@@ -1,19 +1,18 @@
-// Module ID: 12004
-// Function ID: 92798
+// Module ID: 12011
+// Function ID: 92821
 // Name: useWishlistSuggestionsDismissibleContent
-// Dependencies: []
+// Dependencies: [788070400, 778698752, 541196288, 357957632, 359268352, 516423680, 584056832, 584122368, 359727104, 560463872]
 // Exports: default
 
-// Module 12004 (useWishlistSuggestionsDismissibleContent)
+// Module 12011 (useWishlistSuggestionsDismissibleContent)
 let closure_2 = importDefault(dependencyMap[0]);
 let closure_3 = importAll(dependencyMap[1]);
 let closure_4 = importDefault(dependencyMap[2]);
 const ContentDismissActionType = arg1(dependencyMap[3]).ContentDismissActionType;
 let closure_6 = 90 * importDefault(dependencyMap[4]).Millis.DAY;
 let closure_7 = 90 * importDefault(dependencyMap[4]).Millis.DAY;
-let obj = arg1(dependencyMap[5]);
-obj = { -1269606814: "Array", -1845285747: "useIsCallRTCConnectionEmpty", defaultConfig: { minItemsToDismiss: 1 }, variations: { [0]: { minItemsToDismiss: 1 }, [1]: { minItemsToDismiss: 3 }, [2]: { minItemsToDismiss: 10 } } };
-let closure_8 = obj.createApexExperiment(obj);
+let closure_8 = arg1(dependencyMap[5]).createApexExperiment({ defaultConfig: { minItemsToDismiss: 1 }, variations: { [0]: { minItemsToDismiss: 1 }, [1]: { minItemsToDismiss: 3 }, [2]: { minItemsToDismiss: 10 } } });
+const obj = arg1(dependencyMap[5]);
 const result = arg1(dependencyMap[9]).fileFinishedImporting("modules/user_profile/hooks/useWishlistSuggestionsDismissibleContent.tsx");
 
 export default function useWishlistSuggestionsDismissibleContent(userId) {

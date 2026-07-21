@@ -1,10 +1,10 @@
-// Module ID: 11816
-// Function ID: 91636
+// Module ID: 11823
+// Function ID: 91659
 // Name: useVirtualCurrencyBalance
 // Dependencies: []
 // Exports: getVirtualCurrencyBalance, useHasEnoughVirtualCurrency, useVirtualCurrencyBalance
 
-// Module 11816 (useVirtualCurrencyBalance)
+// Module 11823 (useVirtualCurrencyBalance)
 let closure_2 = importDefault(dependencyMap[0]);
 const result = arg1(dependencyMap[2]).fileFinishedImporting("modules/virtual_currency/hooks/useVirtualCurrencyBalance.tsx");
 

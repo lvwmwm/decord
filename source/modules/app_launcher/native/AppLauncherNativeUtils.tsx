@@ -1,10 +1,10 @@
-// Module ID: 11154
-// Function ID: 86738
+// Module ID: 11160
+// Function ID: 86761
 // Name: handleApplicationSelected
 // Dependencies: []
 // Exports: getAppLauncherIconSource, getInitialOptionValues, handleApplicationCommandSelected, handleApplicationSelected, handleViewAllSelected, useHandleActivityItemSelected, useLogAppLauncherEmptyStateView
 
-// Module 11154 (handleApplicationSelected)
+// Module 11160 (handleApplicationSelected)
 let closure_4 = importAll(dependencyMap[0]);
 let closure_5 = importDefault(dependencyMap[1]);
 let closure_6 = importDefault(dependencyMap[2]);
@@ -160,7 +160,7 @@ export const getInitialOptionValues = function getInitialOptionValues(option) {
               }
               return items3;
             }
-            items3 = [{ "Null": "filter", "Null": "data" }];
+            items3 = [{ fill: "<string:3578920962>", strokeDasharray: "<string:297260419>" }];
           } else if (arg1(dependencyMap[10]).ApplicationCommandOptionType.USER === type) {
             if (null != found) {
               const _String3 = String;
@@ -173,7 +173,7 @@ export const getInitialOptionValues = function getInitialOptionValues(option) {
               }
               return items5;
             }
-            items5 = [{ "Null": "filter", "Null": "data" }];
+            items5 = [{ fill: "<string:3578920962>", strokeDasharray: "<string:297260419>" }];
           } else if (arg1(dependencyMap[10]).ApplicationCommandOptionType.ROLE === type) {
             if (null != found) {
               if ("string" === typeof found.value) {
@@ -185,7 +185,7 @@ export const getInitialOptionValues = function getInitialOptionValues(option) {
                 return items7;
               }
             }
-            items7 = [{ "Null": "filter", "Null": "data" }];
+            items7 = [{ fill: "<string:3578920962>", strokeDasharray: "<string:297260419>" }];
           } else if (arg1(dependencyMap[10]).ApplicationCommandOptionType.MENTIONABLE === type) {
             if (null != found) {
               if (found.value === option.guildId) {
@@ -209,10 +209,10 @@ export const getInitialOptionValues = function getInitialOptionValues(option) {
                 }
               }
             }
-            const items11 = [{ "Null": "filter", "Null": "data" }];
+            const items11 = [{ fill: "<string:3578920962>", strokeDasharray: "<string:297260419>" }];
             return items11;
           } else {
-            const items12 = [{ "Null": "filter", "Null": "data" }];
+            const items12 = [{ fill: "<string:3578920962>", strokeDasharray: "<string:297260419>" }];
             return items12;
           }
         }
@@ -236,7 +236,7 @@ export const getInitialOptionValues = function getInitialOptionValues(option) {
         }
       }
     }
-    const items15 = [{ "Null": "filter", "Null": "data" }];
+    const items15 = [{ fill: "<string:3578920962>", strokeDasharray: "<string:297260419>" }];
     return items15;
   }
 };

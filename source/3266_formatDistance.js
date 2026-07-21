@@ -5,9 +5,9 @@
 // Exports: default
 
 // Module 3266 (formatDistance)
-let closure_0 = { "Null": "r", "Null": "isArray", "Null": "nm", "Null": "padding" };
+let closure_0 = { 1825112068: "r", 828899332: "isArray", 1826357252: "tag", 1827405828: "padding" };
 let closure_1 = {};
-let closure_2 = { xseconds: { "Bool(true)": null, "Bool(true)": null, "Bool(true)": null }, halfaminute: { "Bool(true)": false, "Bool(true)": false, "Bool(true)": false }, xminutes: { "Bool(true)": null, "Bool(true)": null, "Bool(true)": false }, xhours: { "Bool(true)": "circa un anno", "Bool(true)": "circa {{count}} anni", "Bool(true)": "un anno" }, xdays: {}, xweeks: {}, xmonths: {}, xyears: {} };
+let closure_2 = { xseconds: { "Null": null, "Null": null, "Null": null }, halfaminute: { "Null": "Array", "Null": "isArray", "Null": "surrogates" }, xminutes: { "Null": -0.00000000000000000000000000000000000000000000000000002088748164693829, "Null": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002255156497620204, "Null": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000072667494506026425 }, xhours: { "Null": "circa un anno", "Null": "circa {{count}} anni", "Null": "un anno" }, xdays: {}, xweeks: {}, xmonths: { "Null": "Array", "Null": "isIndexing", "Null": "Array" }, xyears: { "Null": true, "Null": true, "Null": true } };
 
 export default function formatDistance(str, arg1, addSuffix) {
   const match = str.match(/about|over|almost|lessthan/i);

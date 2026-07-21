@@ -1,12 +1,10 @@
 // Module ID: 841
 // Function ID: 9345
 // Name: normalize
-// Dependencies: [804, 849, 800, 801]
+// Dependencies: []
 // Exports: normalizeUrlToBase
 
 // Module 841 (normalize)
-import isBuiltin from "isBuiltin";
-
 function normalize(arg0) {
   let num = 100;
   if (arguments.length > 1) {
@@ -43,9 +41,9 @@ function visit(arg0, __sentry_skip_normalization__) {
     if (undefined !== arguments[4]) {
       let tmp2 = arguments[4];
     }
-    isBuiltin(tmp2, 2);
+    callback(tmp2, 2);
     if (null != __sentry_skip_normalization__) {
-      const items = [];
+      const items = ["<string:2622554114>", "<string:20751948>"];
       if (!items.includes(typeof __sentry_skip_normalization__)) {
         if ("number" === tmp34) {
           const _Number = Number;
@@ -219,6 +217,7 @@ function visit(arg0, __sentry_skip_normalization__) {
     return items;
   }();
 }
+let closure_3 = require(dependencyMap[0]);
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 function normalizeToSize(arg0) {
   let num = 3;

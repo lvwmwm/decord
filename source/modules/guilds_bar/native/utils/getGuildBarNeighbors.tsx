@@ -1,10 +1,10 @@
-// Module ID: 14734
-// Function ID: 111125
+// Module ID: 14741
+// Function ID: 111149
 // Name: toNeighbor
 // Dependencies: []
 // Exports: default
 
-// Module 14734 (toNeighbor)
+// Module 14741 (toNeighbor)
 function toNeighbor(node) {
   let tmp = null;
   if (null != node) {

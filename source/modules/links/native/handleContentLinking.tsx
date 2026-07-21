@@ -1,10 +1,10 @@
-// Module ID: 9513
-// Function ID: 74049
+// Module ID: 9518
+// Function ID: 74065
 // Name: _handleContentLinking
 // Dependencies: []
 // Exports: default
 
-// Module 9513 (_handleContentLinking)
+// Module 9518 (_handleContentLinking)
 function _handleContentLinking() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);

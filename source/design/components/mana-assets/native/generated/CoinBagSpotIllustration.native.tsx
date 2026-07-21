@@ -1,10 +1,10 @@
-// Module ID: 5953
-// Function ID: 49803
+// Module ID: 5955
+// Function ID: 49846
 // Name: CoinBagSpotIllustration
 // Dependencies: []
 // Exports: CoinBagSpotIllustration
 
-// Module 5953 (CoinBagSpotIllustration)
+// Module 5955 (CoinBagSpotIllustration)
 const jsx = require(dependencyMap[0]).jsx;
 const _module = require(dependencyMap[3]);
 const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/CoinBagSpotIllustration.native.tsx");

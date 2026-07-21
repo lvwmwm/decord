@@ -1,9 +1,9 @@
-// Module ID: 11689
-// Function ID: 90763
+// Module ID: 11696
+// Function ID: 90786
 // Name: ContactSyncLandingPage
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 11689 (ContactSyncLandingPage)
+// Module 11696 (ContactSyncLandingPage)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("modules/contact_sync/native/ContactSyncConstants.tsx");
 

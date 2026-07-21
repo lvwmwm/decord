@@ -1,10 +1,10 @@
-// Module ID: 11016
-// Function ID: 85758
+// Module ID: 11021
+// Function ID: 85779
 // Name: _getSafetyHubData
 // Dependencies: []
 // Exports: getSafetyHubData, getSafetyHubDataForClassification, requestReview, requestSuspendedUserAgeVerification
 
-// Module 11016 (_getSafetyHubData)
+// Module 11021 (_getSafetyHubData)
 function _getSafetyHubData() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);

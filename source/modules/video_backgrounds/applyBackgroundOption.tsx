@@ -1,10 +1,10 @@
-// Module ID: 8836
-// Function ID: 69718
+// Module ID: 8840
+// Function ID: 69730
 // Name: _getFilterBlob
 // Dependencies: []
 // Exports: applyBackgroundOptionPreview, applyInitialVideoBackgroundOption
 
-// Module 8836 (_getFilterBlob)
+// Module 8840 (_getFilterBlob)
 function _getFilterBlob() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);

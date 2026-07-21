@@ -1,10 +1,10 @@
-// Module ID: 10333
-// Function ID: 79778
+// Module ID: 10339
+// Function ID: 79797
 // Name: useReactionPermissions
 // Dependencies: []
 // Exports: default
 
-// Module 10333 (useReactionPermissions)
+// Module 10339 (useReactionPermissions)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 let closure_5 = importDefault(dependencyMap[2]);
@@ -65,7 +65,7 @@ export default function useReactionPermissions(guild_id) {
   const obj5 = arg1(dependencyMap[7]);
   arg1(dependencyMap[9]);
   if (null == guild_id) {
-    obj = { "Null": false, "Null": false, "Null": false, "Null": false, "Null": false, "Null": false };
+    obj = {};
   } else {
     obj = {};
     obj = { channel: guild_id, canChat: stateFromStores, renderReactions: true, canAddNewReactions: stateFromStores3, isLurking: stateFromStores1, communicationDisabled: callback(obj6.useCurrentUserCommunicationDisabled(guild_id), 2)[1], isActiveChannelOrUnarchivableThread: tmp8, isAutomodQuarantined: currentUserAutomodQuaratinedProfile };

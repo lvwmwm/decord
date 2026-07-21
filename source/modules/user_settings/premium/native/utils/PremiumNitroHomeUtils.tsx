@@ -1,10 +1,10 @@
-// Module ID: 7445
-// Function ID: 59727
+// Module ID: 7449
+// Function ID: 59738
 // Name: trackIfScrolledToBottom
 // Dependencies: [670, 2, 6]
 // Exports: trackIfScrolledToBottom
 
-// Module 7445 (trackIfScrolledToBottom)
+// Module 7449 (trackIfScrolledToBottom)
 import { AnalyticEvents } from "MessageEmbedTypes";
 import _classCallCheck from "_classCallCheck";
 

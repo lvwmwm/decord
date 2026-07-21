@@ -1,10 +1,10 @@
-// Module ID: 9465
-// Function ID: 73752
+// Module ID: 9469
+// Function ID: 73766
 // Name: resolveVoiceChannelListInviteEmbedData
 // Dependencies: []
 // Exports: canShowVoiceChannelListInviteEmbed, createVoiceChannelListInviteEmbed
 
-// Module 9465 (resolveVoiceChannelListInviteEmbedData)
+// Module 9469 (resolveVoiceChannelListInviteEmbedData)
 function resolveVoiceChannelListInviteEmbedData(guild) {
   if (null == guild.guild) {
     return null;

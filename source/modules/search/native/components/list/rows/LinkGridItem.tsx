@@ -1,9 +1,9 @@
-// Module ID: 15234
-// Function ID: 115025
+// Module ID: 15241
+// Function ID: 115049
 // Name: getLinkNodeAtIndex
 // Dependencies: []
 
-// Module 15234 (getLinkNodeAtIndex)
+// Module 15241 (getLinkNodeAtIndex)
 function getLinkNodeAtIndex(content, arg1, arg2) {
   const importDefault = arg2;
   if (Array.isArray(content)) {
@@ -97,7 +97,7 @@ function LinkParsedGridItem(author) {
         return callback(author(channelId[12]).Text, obj);
       }
     }
-    obj = { 9223372036854775807: "<string:1491554816>", 9223372036854775807: "<string:17917053>", 9223372036854775807: "<string:26063953>", style: tmp.tapToSee };
+    obj = { -9223372036854775808: "<string:1499091456>", 0: "<string:17938389>", 0: "<string:26068305>", style: tmp.tapToSee };
     const intl = author(channelId[9]).intl;
     obj.children = intl.string(author(channelId[9]).t.q2IIoP);
     return callback(author(channelId[12]).Text, obj);

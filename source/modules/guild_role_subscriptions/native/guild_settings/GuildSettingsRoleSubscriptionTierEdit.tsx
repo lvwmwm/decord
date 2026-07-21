@@ -1,10 +1,10 @@
-// Module ID: 16329
-// Function ID: 126015
+// Module ID: 16336
+// Function ID: 126046
 // Name: ArchiveOrDeleteTierSection
 // Dependencies: []
 // Exports: default
 
-// Module 16329 (ArchiveOrDeleteTierSection)
+// Module 16336 (ArchiveOrDeleteTierSection)
 function ArchiveOrDeleteTierSection() {
   let archiving;
   let deleting;
@@ -29,7 +29,7 @@ function ArchiveOrDeleteTierSection() {
   obj1 = { style: tmp.actionDescription, children: descriptionText };
   items[1] = callback2(arg1(dependencyMap[16]).Text, obj1);
   obj2 = { style: tmp.actionButton };
-  const obj3 = { 0: null, 0: "cd56776b15e7bd14c7a90ab94f818fde" };
+  const obj3 = {};
   const obj4 = { size: arg1(dependencyMap[18]).Icon.Sizes.SMALL, disableColor: true, source: importDefault(dependencyMap[19]) };
   obj3.icon = callback2(arg1(dependencyMap[18]).Icon, obj4);
   obj3.onPress = handleArchiveOrDelete;
@@ -80,11 +80,11 @@ obj = { container: { flex: 1 } };
 obj = { backgroundColor: importDefault(dependencyMap[10]).colors.BACKGROUND_SURFACE_HIGH, padding: 16 };
 obj.tabsContainer = obj;
 obj.tabsContainerWithDraft = { paddingBottom: 0 };
-obj.actionButton = {};
+obj.actionButton = { 2075677164: true, 72445537: "/assets/design/components/Icon/native/redesign/generated/images", 995517444: 24 };
 const tmp3 = arg1(dependencyMap[8]);
 obj.tabContent = { backgroundColor: importDefault(dependencyMap[10]).colors.BACKGROUND_BASE_LOW };
 obj.actionHeader = {};
-obj.actionDescription = { display: "<string:16777479>", flexDirection: "<string:36295491>" };
+obj.actionDescription = {};
 let closure_17 = obj.createStyles(obj);
 const items = [, , ];
 ({ DETAILS: arr[0], DESIGN: arr[1], BENEFITS: arr[2] } = GuildRoleSubscriptionsTierScenes);

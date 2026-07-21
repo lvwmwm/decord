@@ -1,10 +1,10 @@
-// Module ID: 14705
-// Function ID: 110952
+// Module ID: 14712
+// Function ID: 110976
 // Name: transitionGuildsBarToGuildOrOpenSelectedChannel
 // Dependencies: []
 // Exports: default
 
-// Module 14705 (transitionGuildsBarToGuildOrOpenSelectedChannel)
+// Module 14712 (transitionGuildsBarToGuildOrOpenSelectedChannel)
 const _module = require(dependencyMap[4]);
 const result = _module.fileFinishedImporting("modules/guilds_bar/native/utils/transitionGuildsBarToGuildOrOpenSelectedChannel.tsx");
 

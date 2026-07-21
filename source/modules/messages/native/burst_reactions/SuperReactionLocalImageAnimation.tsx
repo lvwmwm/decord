@@ -1,10 +1,10 @@
-// Module ID: 9312
-// Function ID: 72771
+// Module ID: 9316
+// Function ID: 72785
 // Name: SuperReactionLocalImageAnimation
 // Dependencies: []
 // Exports: default
 
-// Module 9312 (SuperReactionLocalImageAnimation)
+// Module 9316 (SuperReactionLocalImageAnimation)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/messages/native/burst_reactions/SuperReactionLocalImageAnimation.tsx");

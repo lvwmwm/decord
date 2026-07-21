@@ -1,16 +1,16 @@
-// Module ID: 13668
-// Function ID: 103505
+// Module ID: 13675
+// Function ID: 103528
 // Name: FamilyCenterActivityTotal
 // Dependencies: []
 // Exports: default
 
-// Module 13668 (FamilyCenterActivityTotal)
+// Module 13675 (FamilyCenterActivityTotal)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 ({ jsx: closure_3, jsxs: closure_4 } = arg1(dependencyMap[2]));
 let obj = arg1(dependencyMap[3]);
 obj = {};
-obj = { <string:1637490001>: null, <string:2881405539>: "245663cd177e246da48f58dd5c39e32f", <string:1436841553>: "family_center_empty", <string:3199005282>: "png", <string:393388559>: "row", backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_SURFACE_HIGHEST, borderRadius: importDefault(dependencyMap[4]).radii.md };
+obj = { backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_SURFACE_HIGHEST, borderRadius: importDefault(dependencyMap[4]).radii.md };
 const merged = Object.assign(importDefault(dependencyMap[4]).shadows.SHADOW_LEDGE);
 obj.container = obj;
 let closure_5 = obj.createStyles(obj);

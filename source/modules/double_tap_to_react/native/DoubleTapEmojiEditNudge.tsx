@@ -1,10 +1,10 @@
-// Module ID: 9934
-// Function ID: 76860
+// Module ID: 9939
+// Function ID: 76876
 // Name: DoubleTapEmojiEditNudgeInner
 // Dependencies: []
 // Exports: DoubleTapEmojiEditNudge
 
-// Module 9934 (DoubleTapEmojiEditNudgeInner)
+// Module 9939 (DoubleTapEmojiEditNudgeInner)
 function DoubleTapEmojiEditNudgeInner(location) {
   const _location = location.location;
   const arg1 = _location;
@@ -46,7 +46,7 @@ function DoubleTapEmojiEditNudgeInner(location) {
     obj.startExpanded = true;
     const result = obj.openEmojiPickerActionSheet(obj, "stack");
   }, items2);
-  obj = { "Bool(false)": true, "Bool(false)": "/assets/images/native/community" };
+  obj = {};
   const intl = arg1(closure_2[19]).intl;
   obj.children = intl.string(arg1(closure_2[19]).t.1EUr/W);
   const items3 = [callback2(arg1(closure_2[18]).Text, obj), , ];
@@ -79,7 +79,7 @@ const AnalyticEvents = arg1(dependencyMap[5]).AnalyticEvents;
 ({ EMOJI_URL_BASE_SIZE: closure_9, EmojiIntention: closure_10 } = arg1(dependencyMap[6]));
 const tmp2 = arg1(dependencyMap[6]);
 ({ jsx: closure_11, jsxs: closure_12 } = arg1(dependencyMap[7]));
-let closure_13 = {};
+let closure_13 = { <string:24250455>: 800, isArray: 16 };
 const tmp3 = arg1(dependencyMap[7]);
 let closure_14 = arg1(dependencyMap[8]).createStyles((arg0) => {
   let obj = {};
@@ -88,9 +88,8 @@ let closure_14 = arg1(dependencyMap[8]).createStyles((arg0) => {
   obj = { fontSize: 12 * arg0, color: importDefault(dependencyMap[9]).colors.INTERACTIVE_TEXT_DEFAULT };
   obj.doubleTapTextEmoji = obj;
   obj.doubleTapCustomEmoji = { height: 16 * arg0, width: 16 * arg0 };
-  obj.doubleTapEmojiEditNudgeContainer = { marginTop: importDefault(dependencyMap[9]).space.PX_8 };
-  const obj1 = { height: 16 * arg0, width: 16 * arg0 };
-  const obj2 = { marginTop: importDefault(dependencyMap[9]).space.PX_8 };
+  const obj2 = { "Bool(false)": "channelId", "Bool(false)": "channelId", "Bool(false)": "resizeMode", "Bool(false)": "formatToPlainString", "Bool(false)": "construct", marginTop: importDefault(dependencyMap[9]).space.PX_8 };
+  obj.doubleTapEmojiEditNudgeContainer = obj2;
   obj.editButton = { marginHorizontal: importDefault(dependencyMap[9]).space.PX_4 };
   return obj;
 });

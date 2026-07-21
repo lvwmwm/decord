@@ -1,10 +1,10 @@
-// Module ID: 16291
-// Function ID: 125744
+// Module ID: 16298
+// Function ID: 125775
 // Name: GuildRoleSubscriptionTierArchiveOrDeleteActionSheet
 // Dependencies: []
 // Exports: default
 
-// Module 16291 (GuildRoleSubscriptionTierArchiveOrDeleteActionSheet)
+// Module 16298 (GuildRoleSubscriptionTierArchiveOrDeleteActionSheet)
 importAll(dependencyMap[0]);
 ({ TouchableOpacity: closure_3, View: closure_4 } = arg1(dependencyMap[1]));
 const tmp3 = arg1(dependencyMap[1]);
@@ -36,29 +36,26 @@ export default function GuildRoleSubscriptionTierArchiveOrDeleteActionSheet(grou
   let obj = { backdropOpacity: 0.8 };
   obj = { style: tmp.container };
   obj = { contentContainerStyle: { paddingBottom: importDefault(dependencyMap[5])().bottom } };
-  const items = [callback(arg1(dependencyMap[10]).Text, { children: headerText }), callback(arg1(dependencyMap[11]).Spacer, { size: 12 }), , , , , ];
-  const obj1 = { INTEGRATION_CREATE: "AutomodMentionRaidLimit", ConstraintReasonCode: "%URIError%", children: descriptionText };
-  items[2] = callback(arg1(dependencyMap[10]).Text, obj1);
-  items[3] = callback(arg1(dependencyMap[11]).Spacer, { size: 24 });
-  const obj2 = { text: buttonText, onPress: handleArchiveOrDelete };
+  const items = [callback(arg1(dependencyMap[10]).Text, { children: headerText }), callback(arg1(dependencyMap[11]).Spacer, { size: 12 }), callback(arg1(dependencyMap[10]).Text, { children: descriptionText }), callback(arg1(dependencyMap[11]).Spacer, { size: 24 }), , , ];
+  const obj1 = { "Bool(true)": "RBTree", "Bool(true)": "onHide", "Bool(true)": "%ReferenceErrorPrototype%", text: buttonText, onPress: handleArchiveOrDelete };
   if (!deleting) {
     deleting = archiving;
   }
-  obj2.disabled = deleting;
-  items[4] = callback(arg1(dependencyMap[12]).Button, obj2);
+  obj1.disabled = deleting;
+  items[4] = callback(arg1(dependencyMap[12]).Button, obj1);
   items[5] = callback(arg1(dependencyMap[11]).Spacer, { size: 24 });
-  const obj3 = {
+  const obj2 = {
     onPress() {
       return callback(closure_2[13]).hideActionSheet();
     },
     style: tmp.cancel,
     activeOpacity: 0.5
   };
-  const obj4 = { INTEGRATION_CREATE: "r", ConstraintReasonCode: "timings" };
+  const obj3 = {};
   const intl = arg1(dependencyMap[14]).intl;
-  obj4.children = intl.string(arg1(dependencyMap[14]).t.ETE/oC);
-  obj3.children = callback(arg1(dependencyMap[10]).Text, obj4);
-  items[6] = callback(closure_3, obj3);
+  obj3.children = intl.string(arg1(dependencyMap[14]).t.ETE/oC);
+  obj2.children = callback(arg1(dependencyMap[10]).Text, obj3);
+  items[6] = callback(closure_3, obj2);
   obj.children = items;
   obj.children = closure_6(arg1(dependencyMap[9]).BottomSheetScrollView, obj);
   obj.children = callback(closure_4, obj);

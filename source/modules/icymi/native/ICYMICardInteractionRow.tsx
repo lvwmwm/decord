@@ -1,10 +1,10 @@
-// Module ID: 15093
-// Function ID: 113853
+// Module ID: 15100
+// Function ID: 113877
 // Name: onAddReaction
 // Dependencies: []
 // Exports: default
 
-// Module 15093 (onAddReaction)
+// Module 15100 (onAddReaction)
 function onAddReaction(id, id2, byName, burst) {
   if (null != byName) {
     let obj = id2(dependencyMap[10]);
@@ -43,7 +43,7 @@ function useThread(id) {
       }
       return obj;
     }
-    obj = {};
+    obj = { position: "decimal-pad", top: "number-pad", zIndex: "phone-pad" };
   });
   ({ thread, messageCount, mostRecentMessage } = stateFromStoresObject);
   if (null != id) {
@@ -85,9 +85,9 @@ function AddEmojiButton(channel) {
   const tmp = callback4();
   const items = [channel, onPressEmoji, handleItemInteracted];
   const callback = React.useCallback(() => {
-    handleItemInteracted("press_reaction_picker", { "Bool(false)": "secondary", "Bool(false)": "md", "Bool(false)": null, "Bool(false)": null });
+    handleItemInteracted("press_reaction_picker", {});
     let obj = channel(handleItemInteracted[19]);
-    obj = { "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, pickerIntention: constants.REACTION, onPressEmoji, channel };
+    obj = { "Bool(false)": "postal-address-country", "Bool(false)": "password", "Bool(false)": "email", pickerIntention: constants.REACTION, onPressEmoji, channel };
     let guild_id;
     if (null != channel) {
       guild_id = channel.guild_id;
@@ -110,7 +110,7 @@ function AddEmojiButton(channel) {
   obj.disabled = disabled;
   const items2 = [callback2(arg1(dependencyMap[22]).ReactionIcon, { size: "sm" }), ];
   if (showText) {
-    obj = { INTEGRATION_CREATE: null, ConstraintReasonCode: null };
+    obj = {};
     const intl2 = arg1(dependencyMap[21]).intl;
     obj.children = intl2.string(arg1(dependencyMap[21]).t.m9O1gd);
     showText = callback2(arg1(dependencyMap[23]).Text, obj);
@@ -204,7 +204,7 @@ function EmojiReaction(count) {
     return tmp;
   }, items1);
   const callback = React.useCallback(() => {
-    handleItemInteracted("press_reaction", { "Bool(false)": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000169759663292044, "Bool(false)": 0, "Bool(false)": 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000023836675337674025, "Bool(false)": -0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000005118891932088445 });
+    handleItemInteracted("press_reaction", { "Bool(false)": null, "Bool(false)": "<string:29819335>", "Bool(false)": "<string:35914276>", "Bool(false)": "<string:35914276>" });
     const result = messageId(reaction[27]).handleAddOrRemoveReaction(messageId, channel, reaction, isBurstReaction, messageId(reaction[11]).ReactionLocations.MESSAGE);
   }, items2);
   const obj1 = {};
@@ -382,12 +382,12 @@ const tmp3 = arg1(dependencyMap[7]);
 let closure_19 = 20;
 const tmp4 = arg1(dependencyMap[9]);
 let closure_20 = arg1(dependencyMap[12]).createStyles(() => {
-  let obj = { container: {}, replyForwardButtonContainer: {}, emojisRowContainer: { justifyContent: "caught_up", variant: "caught_up", color: "press", style: "back_to_home_button", lineClamp: "navigate" }, emojisContainer: { justifyContent: "caught_up", variant: "caught_up", color: "press", style: "back_to_home_button", lineClamp: "navigate" } };
-  obj = { 9223372036854775807: null, 0: null, 9223372036854775807: null, 9223372036854775807: null, 0: null, 0: null, backgroundColor: importDefault(dependencyMap[13]).colors.REDESIGN_BUTTON_TERTIARY_BACKGROUND, borderRadius: importDefault(dependencyMap[13]).radii.sm };
+  let obj = { container: {}, replyForwardButtonContainer: {}, emojisRowContainer: { 9223372036854775807: "caught_up", 0: "caught_up", 9223372036854775807: "press", 0: "back_to_home_button", 9223372036854775807: "navigate" }, emojisContainer: { 9223372036854775807: "caught_up", 0: "caught_up", 9223372036854775807: "press", 0: "back_to_home_button", 9223372036854775807: "navigate" } };
+  obj = { paddingVertical: true, paddingHorizontal: true, flexGrow: true, display: true, alignContent: true, justifyContent: true, backgroundColor: importDefault(dependencyMap[13]).colors.REDESIGN_BUTTON_TERTIARY_BACKGROUND, borderRadius: importDefault(dependencyMap[13]).radii.sm };
   obj.emojiContainer = obj;
   obj.innerEmojiContainer = { paddingVertical: 5 };
   obj.selectedInnerEmojiContainer = { paddingVertical: 4 };
-  obj.addEmojiContainer = { "Bool(false)": true, "Bool(false)": true };
+  obj.addEmojiContainer = { kkvDatabase: "Array", GuildIncidentAlertTypes: "container" };
   obj.disabled = { opacity: 0.4 };
   obj = { width: closure_19, height: closure_19 };
   obj.defaultEmoji = obj;
@@ -400,16 +400,16 @@ let closure_20 = arg1(dependencyMap[12]).createStyles(() => {
   obj1.lineHeight = num;
   obj.emojiText = obj1;
   obj.selectedInnerTextContainer = { paddingBottom: 3.5 };
-  obj.innerTextContainer = { "Null": false, "Null": false };
+  obj.innerTextContainer = { "Bool(true)": true, "Bool(true)": true };
   obj.emojiImage = { resizeMode: "contain", width: closure_19, height: closure_19 };
-  const obj3 = { 0: 0.000000000000000000000000000000000000000000000000000000000023647480886615764, -9223372036854775808: 2571622052040042200000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, 9223372036854775807: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000666295560653974, borderColor: importDefault(dependencyMap[13]).unsafe_rawColors.BRAND_560, backgroundColor: arg1(dependencyMap[15]).hexWithOpacity(importDefault(dependencyMap[13]).unsafe_rawColors.BRAND_500, 0.3) };
+  const obj3 = { borderColor: importDefault(dependencyMap[13]).unsafe_rawColors.BRAND_560, backgroundColor: arg1(dependencyMap[15]).hexWithOpacity(importDefault(dependencyMap[13]).unsafe_rawColors.BRAND_500, 0.3) };
   obj.selected = obj3;
-  obj.gradient = { month: "text-xs/normal", day: "text-muted", year: "press", hour: "item_body", minute: "navigate" };
-  obj.overflowChevron = { <string:2423925279>: null, <string:2596769915>: null };
-  obj4 = { "Bool(true)": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000013677476443, "Bool(true)": -103843524791655450000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, "Bool(true)": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000013677476443, "Bool(true)": -14212407964057540000000000000000000000000000000000000000000000000000000000000000000000000000000, "Bool(true)": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000013677476443, "Bool(true)": -15178759580223005000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, "Bool(true)": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000020043463816, "Bool(true)": -2626373832237945400000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, backgroundColor: importDefault(dependencyMap[13]).colors.REDESIGN_BUTTON_TERTIARY_BACKGROUND, borderRadius: importDefault(dependencyMap[13]).radii.sm };
+  obj.gradient = { "Bool(false)": "text-xs/normal", "Bool(false)": "text-muted", "Bool(false)": "press", "Bool(false)": "item_body", "Bool(false)": "navigate" };
+  obj.overflowChevron = {};
+  obj4 = { "Null": 1913716740, "Null": 6, "Null": 25, "Null": -520142591, "Null": 1913716740, "Null": 6, "Null": 26, "Null": -742637311, backgroundColor: importDefault(dependencyMap[13]).colors.REDESIGN_BUTTON_TERTIARY_BACKGROUND, borderRadius: importDefault(dependencyMap[13]).radii.sm };
   obj.comments = obj4;
-  obj.commentCount = { sl: false, so: false, sq: false, sr: false, ss: false };
-  const obj5 = { aze: false, azj: false, tintColor: importDefault(dependencyMap[13]).colors.INTERACTIVE_TEXT_DEFAULT };
+  obj.commentCount = { <string:3798027838>: "<string:3310487818>", <string:1627573841>: "<string:21335297>", <string:3151386190>: "<string:27999297>", <string:45572556>: "findCompatibleConfig", <string:1435107624>: "gawron" };
+  const obj5 = { bhk: false, bic: "internal", tintColor: importDefault(dependencyMap[13]).colors.INTERACTIVE_TEXT_DEFAULT };
   obj.commentsIcon = obj5;
   return obj;
 });
@@ -531,7 +531,7 @@ export default function ICYMICardInteractionRow(message) {
   const items5 = [channel.id, message.id, callback];
   const items6 = [message, callback];
   const callback1 = React.useCallback((arg0, arg1) => {
-    callback("press_reaction", {});
+    callback("press_reaction", { "Bool(false)": "FOREST", "Bool(false)": "FOREST", "Bool(false)": "FOREST", "Bool(false)": "FOREST" });
     callback2(channel.id, message.id, arg0, arg1);
   }, items5);
   const items7 = [channel, message, callback];
@@ -543,7 +543,7 @@ export default function ICYMICardInteractionRow(message) {
   }, items6);
   const items8 = [str, flag2];
   const callback3 = React.useCallback(() => {
-    callback("press_reply", {});
+    callback("press_reply", { "Bool(false)": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003066947222, "Bool(false)": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000030094435446650105, "Bool(false)": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000018515802956537097, "Bool(false)": -0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000005576537114386722 });
     let obj = message(flag[32]);
     obj.navigateToPost(channel.id, channel.guild_id, message.id);
     obj = { channel, message, shouldMention: true, showMentionToggle: true };
@@ -644,9 +644,9 @@ export default function ICYMICardInteractionRow(message) {
           const obj17 = importDefault(dependencyMap[42])(token);
           const items14 = [importDefault(dependencyMap[42])(token).alpha(0).hex(), token, token];
           obj11.colors = items14;
-          obj11.locations = ["<string:6582592>", "<string:305266688>", "<string:2714419331>"];
+          obj11.locations = [];
           const items15 = [callback2(tmp47, obj11), ];
-          const obj12 = { "Bool(true)": "png", "Bool(true)": "absolute", "Bool(true)": -3 };
+          const obj12 = { -318614188: "png", 1020595765: "absolute", 1406296506: -3 };
           const items16 = [tmp.overflowChevron];
           obj12.style = items16;
           items15[1] = callback2(arg1(dependencyMap[43]).ChevronSmallRightIcon, obj12);

@@ -1,10 +1,10 @@
-// Module ID: 9397
-// Function ID: 73229
+// Module ID: 9401
+// Function ID: 73243
 // Name: NatureIcon
 // Dependencies: []
 // Exports: NatureIcon
 
-// Module 9397 (NatureIcon)
+// Module 9401 (NatureIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/NatureIcon.tsx");

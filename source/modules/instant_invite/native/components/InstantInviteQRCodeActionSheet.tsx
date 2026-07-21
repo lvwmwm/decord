@@ -1,10 +1,10 @@
-// Module ID: 12045
-// Function ID: 93040
+// Module ID: 12052
+// Function ID: 93063
 // Name: InstantInviteQRCodeActionSheet
 // Dependencies: []
 // Exports: default
 
-// Module 12045 (InstantInviteQRCodeActionSheet)
+// Module 12052 (InstantInviteQRCodeActionSheet)
 let closure_3 = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 let closure_5 = importDefault(dependencyMap[2]);

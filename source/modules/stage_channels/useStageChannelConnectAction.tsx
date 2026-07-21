@@ -1,10 +1,10 @@
-// Module ID: 10609
-// Function ID: 82784
+// Module ID: 10615
+// Function ID: 82807
 // Name: useStageChannelConnectAction
 // Dependencies: []
 // Exports: default, useStageChannelStartEvent
 
-// Module 10609 (useStageChannelConnectAction)
+// Module 10615 (useStageChannelConnectAction)
 const obj = { NORMAL: 0, [0]: "NORMAL", START_EVENT: 1, [1]: "START_EVENT" };
 const _module = require(dependencyMap[2]);
 const result = _module.fileFinishedImporting("modules/stage_channels/useStageChannelConnectAction.tsx");

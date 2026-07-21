@@ -1,10 +1,10 @@
-// Module ID: 15990
-// Function ID: 122701
+// Module ID: 15997
+// Function ID: 122727
 // Name: TouchableUploadAvatar
 // Dependencies: []
 // Exports: default
 
-// Module 15990 (TouchableUploadAvatar)
+// Module 15997 (TouchableUploadAvatar)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 ({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[2]));
@@ -12,8 +12,8 @@ let obj = arg1(dependencyMap[3]);
 obj = { avatarContainer: {} };
 obj = { tintColor: importDefault(dependencyMap[4]).colors.INTERACTIVE_TEXT_DEFAULT, width: 96 };
 obj.defaultLogoStyle = obj;
-obj.uploadedAvatarStyle = {};
-const obj1 = { Ellipse: null, TIKTOK_URL: null, tryItOutChanges: null, getTextChannels: null, VERY_LARGE: null, paddingTop: null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, borderColor: importDefault(dependencyMap[4]).colors.BORDER_MUTED, borderRadius: importDefault(dependencyMap[4]).radii.round };
+obj.uploadedAvatarStyle = { flex: true, backgroundColor: true, marginVertical: true, padding: true };
+const obj1 = { 9223372036854775807: null, 0: null, 9223372036854775807: null, 9223372036854775807: null, -9223372036854775808: null, 0: null, 0: null, 0: null, 9223372036854775807: null, 0: null, borderColor: importDefault(dependencyMap[4]).colors.BORDER_MUTED, borderRadius: importDefault(dependencyMap[4]).radii.round };
 obj.avatarWrapper = obj1;
 const tmp3 = arg1(dependencyMap[2]);
 obj.uploadAvatarWrapper = { backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_BRAND, borderRadius: importDefault(dependencyMap[4]).radii.round, tintColor: importDefault(dependencyMap[4]).colors.BACKGROUND_BASE_LOW };

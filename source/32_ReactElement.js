@@ -84,7 +84,7 @@ function getElementKey(value, arg1) {
     if (null !== value) {
       if (null != value.key) {
         let str = function escape(str) {
-          let closure_0 = { y: "bo", Selection: "bs" };
+          let closure_0 = {};
           return "$" + str.replace(/[=:]/g, (arg0) => closure_0[arg0]);
         }("" + value.key);
       }
@@ -354,7 +354,7 @@ PureComponent.prototype = componentDummy;
 componentDummy.constructor = PureComponent;
 let obj = assign(componentDummy, Component.prototype);
 componentDummy.isPureReactComponent = true;
-obj = { y: null, ApplicationOverlayMethodFlags: null, y: "drl", customEmojiFromJoinedGuild: "bzc", y: "ebk" };
+obj = {};
 let closure_14 = /\/+/g;
 let closure_15 = "function" === typeof reportError ? reportError : (message) => {
   if ("object" === typeof window) {

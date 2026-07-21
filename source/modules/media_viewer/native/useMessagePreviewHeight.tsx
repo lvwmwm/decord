@@ -1,12 +1,12 @@
-// Module ID: 10843
-// Function ID: 84250
+// Module ID: 10849
+// Function ID: 84273
 // Name: useMessagePreviewHeightStore
 // Dependencies: []
 // Exports: setMesssagePreviewCollapsedHeight, setMesssagePreviewExpandedHeight, setMesssagePreviewHeight, useMessagePreviewCollapsedheight, useMessagePreviewExpandedHeight
 
-// Module 10843 (useMessagePreviewHeightStore)
+// Module 10849 (useMessagePreviewHeightStore)
 const _module = require(dependencyMap[0]);
-const obj = _module.create(() => ({ "Bool(false)": false, "Bool(false)": true }));
+const obj = _module.create(() => ({ "Null": -536870861, "Null": -299892737 }));
 const _module1 = require(dependencyMap[2]);
 const result = _module1.fileFinishedImporting("modules/media_viewer/native/useMessagePreviewHeight.tsx");
 

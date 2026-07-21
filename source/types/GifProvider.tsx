@@ -1,10 +1,10 @@
-// Module ID: 9566
-// Function ID: 74556
+// Module ID: 9571
+// Function ID: 74573
 // Name: items
-// Dependencies: []
+// Dependencies: [284214097]
 // Exports: getProviderForRequest, isValidGifProvider
 
-// Module 9566 (items)
+// Module 9571 (items)
 const items = [];
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("types/GifProvider.tsx");

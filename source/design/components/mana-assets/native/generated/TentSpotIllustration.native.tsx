@@ -1,10 +1,10 @@
-// Module ID: 6585
-// Function ID: 50751
+// Module ID: 6587
+// Function ID: 50794
 // Name: TentSpotIllustration
 // Dependencies: []
 // Exports: TentSpotIllustration
 
-// Module 6585 (TentSpotIllustration)
+// Module 6587 (TentSpotIllustration)
 const jsx = require(dependencyMap[0]).jsx;
 const _module = require(dependencyMap[3]);
 const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/TentSpotIllustration.native.tsx");

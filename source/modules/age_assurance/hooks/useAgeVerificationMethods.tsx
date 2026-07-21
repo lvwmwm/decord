@@ -1,10 +1,10 @@
-// Module ID: 7556
-// Function ID: 60465
+// Module ID: 7560
+// Function ID: 60477
 // Name: useAgeVerificationMethods
 // Dependencies: []
 // Exports: default
 
-// Module 7556 (useAgeVerificationMethods)
+// Module 7560 (useAgeVerificationMethods)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 let closure_5 = importAll(dependencyMap[2]);

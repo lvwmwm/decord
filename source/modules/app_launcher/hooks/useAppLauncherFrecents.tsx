@@ -1,10 +1,10 @@
-// Module ID: 11222
-// Function ID: 87364
+// Module ID: 11228
+// Function ID: 87387
 // Name: useFrecentApps
 // Dependencies: []
 // Exports: default, useAppLauncherFrecentApps
 
-// Module 11222 (useFrecentApps)
+// Module 11228 (useFrecentApps)
 function useFrecentApps(onlyActivityApps) {
   let context;
   let sectionDescriptors;

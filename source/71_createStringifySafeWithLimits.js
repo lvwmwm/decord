@@ -111,5 +111,5 @@ function createStringifySafeWithLimits(maxDepth) {
     }
   };
 }
-arg5.default = createStringifySafeWithLimits({ 13107235008: null, 0: 1, 9223372036854775807: "keyword", 9223372036854775807: "to top right" });
+arg5.default = createStringifySafeWithLimits({});
 arg5.createStringifySafeWithLimits = createStringifySafeWithLimits;

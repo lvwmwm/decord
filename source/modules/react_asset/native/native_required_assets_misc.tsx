@@ -1,9 +1,9 @@
-// Module ID: 16464
-// Function ID: 127201
+// Module ID: 16471
+// Function ID: 127235
 // Name: NATIVE_REQUIRED_ASSETS_MISC
 // Dependencies: []
 
-// Module 16464 (NATIVE_REQUIRED_ASSETS_MISC)
+// Module 16471 (NATIVE_REQUIRED_ASSETS_MISC)
 const _module = require(dependencyMap[20]);
 const result = _module.fileFinishedImporting("modules/react_asset/native/native_required_assets_misc.tsx");
 

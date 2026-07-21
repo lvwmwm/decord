@@ -1,10 +1,10 @@
-// Module ID: 6355
-// Function ID: 50406
+// Module ID: 6357
+// Function ID: 50449
 // Name: NitroSupergraphicLogo
 // Dependencies: []
 // Exports: NitroSupergraphicLogo
 
-// Module 6355 (NitroSupergraphicLogo)
+// Module 6357 (NitroSupergraphicLogo)
 const Image = require(dependencyMap[0]).Image;
 const jsx = require(dependencyMap[1]).jsx;
 const _module = require(dependencyMap[5]);

@@ -1,10 +1,10 @@
-// Module ID: 5877
-// Function ID: 49689
+// Module ID: 5879
+// Function ID: 49732
 // Name: AvatarNellyExample
 // Dependencies: []
 // Exports: AvatarNellyExample
 
-// Module 5877 (AvatarNellyExample)
+// Module 5879 (AvatarNellyExample)
 const jsx = require(dependencyMap[0]).jsx;
 const _module = require(dependencyMap[3]);
 const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/AvatarNellyExample.native.tsx");

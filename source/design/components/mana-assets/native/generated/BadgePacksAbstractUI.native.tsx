@@ -1,10 +1,10 @@
-// Module ID: 5885
-// Function ID: 49701
+// Module ID: 5887
+// Function ID: 49744
 // Name: BadgePacksAbstractUI
 // Dependencies: []
 // Exports: BadgePacksAbstractUI
 
-// Module 5885 (BadgePacksAbstractUI)
+// Module 5887 (BadgePacksAbstractUI)
 const jsx = require(dependencyMap[0]).jsx;
 const _module = require(dependencyMap[3]);
 const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/BadgePacksAbstractUI.native.tsx");

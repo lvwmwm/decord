@@ -1,10 +1,10 @@
-// Module ID: 10509
-// Function ID: 82072
+// Module ID: 10515
+// Function ID: 82095
 // Name: _getThermalState
 // Dependencies: []
 // Exports: default, getThermalState
 
-// Module 10509 (_getThermalState)
+// Module 10515 (_getThermalState)
 function _getThermalState(rawThermalState) {
   if (null == rawThermalState) {
     return obj.UNHANDLED;

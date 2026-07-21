@@ -1,10 +1,10 @@
-// Module ID: 10242
-// Function ID: 79194
+// Module ID: 10248
+// Function ID: 79213
 // Name: getLayoutStyles
 // Dependencies: []
 // Exports: getScaledChannelRowHeight, isLayoutCozy, makeSizeStyle, useMessagesTabLayout
 
-// Module 10242 (getLayoutStyles)
+// Module 10248 (getLayoutStyles)
 function getLayoutStyles(layout, launchpad) {
   let flag = launchpad;
   if (launchpad === undefined) {

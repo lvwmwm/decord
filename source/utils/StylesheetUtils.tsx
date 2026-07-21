@@ -1,10 +1,10 @@
-// Module ID: 11674
-// Function ID: 90602
+// Module ID: 11681
+// Function ID: 90625
 // Name: getClass
 // Dependencies: []
 // Exports: getClass
 
-// Module 11674 (getClass)
+// Module 11681 (getClass)
 const _module = require(dependencyMap[1]);
 const result = _module.fileFinishedImporting("utils/StylesheetUtils.tsx");
 

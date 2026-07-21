@@ -1,9 +1,9 @@
-// Module ID: 6802
-// Function ID: 53643
+// Module ID: 6808
+// Function ID: 53692
 // Name: HeroBlockRecord
 // Dependencies: []
 
-// Module 6802 (HeroBlockRecord)
+// Module 6808 (HeroBlockRecord)
 let closure_2 = importDefault(dependencyMap[0]);
 let closure_3 = importDefault(dependencyMap[1]);
 const tmp2 = () => {

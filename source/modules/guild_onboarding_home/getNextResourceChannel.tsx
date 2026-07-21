@@ -1,10 +1,10 @@
-// Module ID: 11364
-// Function ID: 88367
+// Module ID: 11371
+// Function ID: 88391
 // Name: getCurrentAndNextResourceChannel
 // Dependencies: []
 // Exports: default, usePreviousAndNextResourceChannel
 
-// Module 11364 (getCurrentAndNextResourceChannel)
+// Module 11371 (getCurrentAndNextResourceChannel)
 let closure_2 = importDefault(dependencyMap[0]);
 const result = arg1(dependencyMap[2]).fileFinishedImporting("modules/guild_onboarding_home/getNextResourceChannel.tsx");
 
@@ -12,7 +12,7 @@ export default function getCurrentAndNextResourceChannel(arg0, arg1) {
   const resourceChannels = resourceChannels.getResourceChannels(arg0);
   const findIndexResult = resourceChannels.findIndex((channelId) => channelId.channelId === arg1);
   if (findIndexResult < 0) {
-    let items = [];
+    let items = [null, null];
   } else {
     items = [resourceChannels[findIndexResult], resourceChannels[(findIndexResult + 1) % resourceChannels.length]];
   }
@@ -35,5 +35,5 @@ export const usePreviousAndNextResourceChannel = function usePreviousAndNextReso
     }
     return items2;
   }
-  items2 = [];
+  items2 = [null, null];
 };

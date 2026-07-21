@@ -1,9 +1,9 @@
-// Module ID: 14565
-// Function ID: 109828
+// Module ID: 14572
+// Function ID: 109850
 // Name: FRAME_BUDGET_MS
 // Dependencies: []
 
-// Module 14565 (FRAME_BUDGET_MS)
+// Module 14572 (FRAME_BUDGET_MS)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("modules/devtools/native/components/screens/performance/index.tsx");
 for (const key10022 in arg1(arg6[1])) {

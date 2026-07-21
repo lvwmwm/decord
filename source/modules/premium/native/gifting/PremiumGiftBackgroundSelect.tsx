@@ -1,10 +1,10 @@
-// Module ID: 8770
-// Function ID: 69307
+// Module ID: 8774
+// Function ID: 69319
 // Name: GiftBackgroundSelect
 // Dependencies: []
 // Exports: default
 
-// Module 8770 (GiftBackgroundSelect)
+// Module 8774 (GiftBackgroundSelect)
 class GiftBackgroundSelect {
   constructor(arg0) {
     flag = global.withConsistentHeight;

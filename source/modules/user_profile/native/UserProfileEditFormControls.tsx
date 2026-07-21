@@ -1,10 +1,10 @@
-// Module ID: 13459
-// Function ID: 102197
+// Module ID: 13466
+// Function ID: 102220
 // Name: FormControlText
 // Dependencies: []
 // Exports: UserProfileEditFormButton, UserProfileEditFormSwitch
 
-// Module 13459 (FormControlText)
+// Module 13466 (FormControlText)
 function FormControlText(children) {
   const tmp = callback4();
   return callback2(arg1(dependencyMap[6]).Text, { style: callback4().formControlText, children: children.text });
@@ -13,7 +13,7 @@ function FormControlSubtext(text) {
   text = text.text;
   let tmp2 = null;
   if (null != text) {
-    const obj = { INTEGRATION_CREATE: true, ConstraintReasonCode: true, style: tmp.formControlText, children: text };
+    const obj = { style: tmp.formControlText, children: text };
     tmp2 = callback2(arg1(dependencyMap[6]).Text, obj);
   }
   return tmp2;

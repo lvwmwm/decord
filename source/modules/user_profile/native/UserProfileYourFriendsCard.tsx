@@ -1,10 +1,10 @@
-// Module ID: 15358
-// Function ID: 116982
+// Module ID: 15365
+// Function ID: 117006
 // Name: UserProfileYourFriendsCard
 // Dependencies: []
 // Exports: default
 
-// Module 15358 (UserProfileYourFriendsCard)
+// Module 15365 (UserProfileYourFriendsCard)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 const View = arg1(dependencyMap[2]).View;
@@ -17,10 +17,10 @@ let obj = { direction: arg1(dependencyMap[8]).CutoutDirection.RIGHT, inset: -4 }
 let closure_12 = Object.freeze(obj);
 const tmp2 = arg1(dependencyMap[7]);
 obj = {};
-obj = { "Bool(false)": 123.002, "Bool(false)": null, "Bool(false)": 1, "Bool(false)": "Golive Simulcast without prober 720p@500k", borderRadius: importDefault(dependencyMap[10]).radii.lg };
+obj = { zIndex: 123.002, elevation: null, fontSize: 1, lineHeight: "Golive Simulcast without prober 720p@500k", borderRadius: importDefault(dependencyMap[10]).radii.lg };
 obj.pressable = obj;
 obj.label = { flex: 1 };
-obj.facepile = {};
+obj.facepile = { <string:1721328276>: true, <string:1878264662>: true, <string:1501209603>: true, <string:938367726>: true };
 obj.avatars = { flexDirection: "row" };
 let closure_13 = arg1(dependencyMap[9]).createStyles(obj);
 const obj2 = arg1(dependencyMap[9]);

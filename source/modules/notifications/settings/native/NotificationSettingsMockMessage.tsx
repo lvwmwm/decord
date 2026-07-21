@@ -1,10 +1,10 @@
-// Module ID: 10277
-// Function ID: 79394
+// Module ID: 10283
+// Function ID: 79413
 // Name: NotificationSettingsMockMessage
 // Dependencies: []
 // Exports: default
 
-// Module 10277 (NotificationSettingsMockMessage)
+// Module 10283 (NotificationSettingsMockMessage)
 let closure_3 = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 let closure_5 = importDefault(dependencyMap[2]);
@@ -12,11 +12,11 @@ const UserNotificationSettings = arg1(dependencyMap[3]).UserNotificationSettings
 ({ jsx: closure_7, jsxs: closure_8 } = arg1(dependencyMap[4]));
 let obj = arg1(dependencyMap[5]);
 obj = {};
-obj = { "Bool(false)": null, "Bool(false)": null, "Bool(false)": 5, "Bool(false)": 4, backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_SURFACE_HIGH };
+obj = { flex: null, paddingVertical: null, paddingRight: 5, alignItems: 4, backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_SURFACE_HIGH };
 obj.card = obj;
 obj.cardContent = {};
-obj.cardMessage = { marginLeft: false, marginRight: false };
-const obj1 = { left: "isArray", borderColor: "skuId", borderWidth: "T", backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_BASE_LOWEST, borderRadius: "isArray" };
+obj.cardMessage = { 9223372036854775807: true, 0: true };
+const obj1 = { o: "center", concat: null, o: 4, borderRadius: 4, position: "rgba(0, 0, 0, 0.75)", backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_BASE_LOWEST };
 obj.overlay = obj1;
 let closure_9 = obj.createStyles(obj);
 let closure_10 = { code: "function NotificationSettingsMockMessageTsx1(){const{withTiming,opacity,timingStandard}=this.__closure;return{opacity:withTiming(opacity.get(),timingStandard)};}" };
@@ -62,7 +62,7 @@ export default function NotificationSettingsMockMessage(notificationSetting) {
   } else {
     obj1 = {};
     obj2 = {};
-    obj3 = { INTEGRATION_CREATE: "<string:2151743489>", ConstraintReasonCode: "<string:1912603161>" };
+    obj3 = {};
     const items1 = [null, str, " "];
     obj3.children = items1;
     const items2 = [callback2(arg1(dependencyMap[12]).Text, obj3), ];

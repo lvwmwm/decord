@@ -1,10 +1,10 @@
-// Module ID: 6285
-// Function ID: 50301
+// Module ID: 6287
+// Function ID: 50344
 // Name: MapleIllocon
 // Dependencies: []
 // Exports: MapleIllocon
 
-// Module 6285 (MapleIllocon)
+// Module 6287 (MapleIllocon)
 const jsx = require(dependencyMap[0]).jsx;
 const _module = require(dependencyMap[3]);
 const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/MapleIllocon.native.tsx");

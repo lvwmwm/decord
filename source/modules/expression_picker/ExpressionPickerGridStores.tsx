@@ -1,10 +1,10 @@
-// Module ID: 9319
-// Function ID: 72847
+// Module ID: 9323
+// Function ID: 72861
 // Name: createStore
 // Dependencies: []
 // Exports: default
 
-// Module 9319 (createStore)
+// Module 9323 (createStore)
 function createStore() {
   function getState() {
     return withEqualityFnResult.getState();
@@ -48,7 +48,7 @@ function createStore() {
   };
   return obj;
 }
-let closure_2 = Object.freeze({ inspectedExpressionPosition: { -1167695235: false, 188516691: true } });
+let closure_2 = Object.freeze({ inspectedExpressionPosition: { FETCH_CHANNEL_INFO: -536870861, cloneNodeWithNewProps: -299892737 } });
 const store = createStore();
 const store1 = createStore();
 const store2 = createStore();

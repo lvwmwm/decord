@@ -1,10 +1,10 @@
-// Module ID: 6513
-// Function ID: 50643
+// Module ID: 6515
+// Function ID: 50686
 // Name: SnowIllocon
 // Dependencies: []
 // Exports: SnowIllocon
 
-// Module 6513 (SnowIllocon)
+// Module 6515 (SnowIllocon)
 const jsx = require(dependencyMap[0]).jsx;
 const _module = require(dependencyMap[3]);
 const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/SnowIllocon.native.tsx");

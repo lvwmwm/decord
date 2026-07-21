@@ -1,9 +1,9 @@
-// Module ID: 9394
-// Function ID: 73203
+// Module ID: 9398
+// Function ID: 73217
 // Name: EXPRESSION_FOOTER_HEIGHT
 // Dependencies: []
 
-// Module 9394 (EXPRESSION_FOOTER_HEIGHT)
+// Module 9398 (EXPRESSION_FOOTER_HEIGHT)
 let CATEGORY_ICON_SIZE;
 let EXPRESSION_FOOTER_HEIGHT;
 const importAllResult = importAll(dependencyMap[0]);
@@ -93,7 +93,7 @@ const memoResult = importAllResult.memo(function EmojiPickerCategories(bottomShe
     if (null != closure_10.current) {
       const current = ref.current;
       if (null != current) {
-        const obj = { item };
+        const obj = { "Bool(false)": 435355650, "Bool(false)": 1231421441, "Bool(false)": 2137063425, item };
         current.scrollToLocation(obj);
       }
     }
@@ -207,8 +207,8 @@ const memoResult = importAllResult.memo(function EmojiPickerCategories(bottomShe
         tmp2 = categories;
         num = 7;
         obj = bottomSheetRef(categories[7]);
-        tmp3 = f73211;
-        tmp4 = obj.runOnJS(f73211)();
+        tmp3 = f73225;
+        tmp4 = obj.runOnJS(f73225)();
       }
       return;
     }
@@ -295,7 +295,7 @@ const memoResult = importAllResult.memo(function EmojiPickerCategories(bottomShe
   const tmp16 = importDefault(dependencyMap[12])();
   const tmp18 = sharedValue;
   const obj4 = { gesture: memo1 };
-  obj5 = { surrogates: "missed_messages_default", from: "222_social", Map: null, application: "2026-05-noisier-notif-settings-defaults", itemSize: EXPRESSION_FOOTER_HEIGHT, listId: ExpressionPickerViewType.EMOJI, onLayout: callback5, onScroll: callback1, placeholderConfig: tmp16, ref, renderItem: callback6, scrollReporting: "callbacks", sections, showsHorizontalScrollIndicator: false, style: tmp.list };
+  obj5 = { <string:2471231180>: "missed_messages_default", <string:2711707967>: "222_social", <string:374976602>: null, <string:1670994100>: "2026-05-noisier-notif-settings-defaults", itemSize: EXPRESSION_FOOTER_HEIGHT, listId: ExpressionPickerViewType.EMOJI, onLayout: callback5, onScroll: callback1, placeholderConfig: tmp16, ref, renderItem: callback6, scrollReporting: "callbacks", sections, showsHorizontalScrollIndicator: false, style: tmp.list };
   obj4.children = sharedValue(importDefault(dependencyMap[15]), obj5);
   const items8 = [sharedValue(arg1(dependencyMap[13]).GestureDetector, obj4), , ];
   let tmp22 = null;

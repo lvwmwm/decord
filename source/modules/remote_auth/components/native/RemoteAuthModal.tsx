@@ -1,10 +1,10 @@
-// Module ID: 12740
-// Function ID: 97750
+// Module ID: 12747
+// Function ID: 97773
 // Name: RemoteAuthBody
 // Dependencies: []
 // Exports: default
 
-// Module 12740 (RemoteAuthBody)
+// Module 12747 (RemoteAuthBody)
 function RemoteAuthBody(remoteAuthFingerprint) {
   let tmp4;
   function transitionStep(arg0) {
@@ -93,7 +93,7 @@ function RemoteAuthLogin(arg0) {
     }).catch(() => {
       callback(constants.NOT_FOUND);
     });
-  }, 1000, { "Bool(false)": 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000021043611947808288, "Bool(false)": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000053357352779429986 });
+  }, 1000, { flex: true, marginRight: true });
   obj4.disabled = tmp6;
   const items1 = [callback2(arg1(closure_2[18]).Button, obj4, "" + tmp6), ];
   const obj5 = { variant: "secondary" };
@@ -169,17 +169,17 @@ const Endpoints = arg1(dependencyMap[3]).Endpoints;
 const tmp2 = arg1(dependencyMap[2]);
 ({ jsx: closure_9, jsxs: closure_10, Fragment: closure_11 } = arg1(dependencyMap[4]));
 let obj = arg1(dependencyMap[5]);
-obj = { background: { aze: 30271555, azj: 22092032 }, container: { variant: 0, color: "100%", gradient: 106 }, imageStyle: { resizeMode: "cover" }, logo: {}, mainImage: { visible: 826347876, transparent: 1912603216 } };
+obj = { background: {}, container: { "Bool(true)": "center", "Bool(true)": "absolute", "Bool(true)": 0 }, imageStyle: { resizeMode: "cover" }, logo: {}, mainImage: {} };
 obj = { color: importDefault(dependencyMap[6]).unsafe_rawColors.RED_400 };
 obj.warningCaption = obj;
-obj.caption = { "Bool(true)": "center", "Bool(true)": true, "Bool(true)": "/assets/images/native/premium/guild_boosting", "Bool(true)": 24 };
+obj.caption = { isResolvedUpload: "center", getChatLayout: true, outputType: "/assets/images/native/premium/guild_boosting", STREAM_WATCH: 24 };
 const tmp3 = arg1(dependencyMap[4]);
-obj.mainCard = { backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_BASE_LOW, borderRadius: importDefault(dependencyMap[6]).radii.sm, shadowColor: importDefault(dependencyMap[6]).colors.BLACK, shadowOffset: { <string:1140607356>: "y", <string:1751293292>: "isArray" } };
+obj.mainCard = { backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_BASE_LOW, borderRadius: importDefault(dependencyMap[6]).radii.sm, shadowColor: importDefault(dependencyMap[6]).colors.BLACK, shadowOffset: { <string:1632221346>: "y", <string:2722977214>: "isArray" } };
 obj.buttonGroup = { paddingVertical: 0 };
 obj.loadingContainer = {};
 let closure_12 = obj.createStyles(obj);
 let closure_13 = { LOADING: 0, [0]: "LOADING", NOT_FOUND: 1, [1]: "NOT_FOUND", LOADED: 2, [2]: "LOADED", SUCCEEDED: 3, [3]: "SUCCEEDED" };
-const obj1 = { backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_BASE_LOW, borderRadius: importDefault(dependencyMap[6]).radii.sm, shadowColor: importDefault(dependencyMap[6]).colors.BLACK, shadowOffset: { <string:1140607356>: "y", <string:1751293292>: "isArray" } };
+const obj1 = { backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_BASE_LOW, borderRadius: importDefault(dependencyMap[6]).radii.sm, shadowColor: importDefault(dependencyMap[6]).colors.BLACK, shadowOffset: { <string:1632221346>: "y", <string:2722977214>: "isArray" } };
 const result = arg1(dependencyMap[23]).fileFinishedImporting("modules/remote_auth/components/native/RemoteAuthModal.tsx");
 
 export default function RemoteAuth(arg0) {

@@ -1,10 +1,10 @@
-// Module ID: 4223
-// Function ID: 36997
+// Module ID: 4227
+// Function ID: 37045
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 // Exports: default
 
-// Module 4223 (_createForOfIteratorHelperLoose)
+// Module 4227 (_createForOfIteratorHelperLoose)
 function _createForOfIteratorHelperLoose(@@iterator) {
   let arg1 = Symbol_iterator;
   @@iterator = "undefined" !== typeof Symbol;
@@ -146,7 +146,7 @@ export default function DirectVideo(streamId, onContainerResized) {
     flag2 = true;
   }
   let closure_4 = flag2;
-  let obj = { maxMediaWidth: null, maxMediaHeight: "LOCAL_PAYMENT_START_PAYMENT_MISSING_REQUIRED_OPTION", hideActionSheet: "Missing required option for startPayment.", isDismissable: null, confirmText: "LOCAL_PAYMENT_START_PAYMENT_DEFERRED_PAYMENT_FAILED", borderBottomWidth: "LocalPayment startPayment deferred payment failed." };
+  let obj = { rejectWithError: true, retries: true, useAdaptiveCompression: true, veryHighQuality: true, highQuality: true, mediumQuality: true };
   Object.setPrototypeOf(null);
   const merged = Object.assign(streamId, obj);
   let React;
@@ -156,7 +156,7 @@ export default function DirectVideo(streamId, onContainerResized) {
   const ref = React.useRef(null);
   React = ref;
   jsx = React.useRef(null);
-  closure_7 = React.useRef({ aze: false, azj: true });
+  closure_7 = React.useRef({ bhk: -536870861, bic: -299892737 });
   obj = { streamId, paused: flag, onReady, onResize, onContainerResized };
   closure_8 = React.useRef(obj);
   const items = [flag2];

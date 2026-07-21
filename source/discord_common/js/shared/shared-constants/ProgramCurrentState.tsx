@@ -1,9 +1,9 @@
-// Module ID: 12524
-// Function ID: 96253
+// Module ID: 12531
+// Function ID: 96276
 // Name: ProgramCurrentState
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 12524 (ProgramCurrentState)
+// Module 12531 (ProgramCurrentState)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_common/js/shared/shared-constants/ProgramCurrentState.tsx");
 

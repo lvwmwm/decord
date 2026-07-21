@@ -1,10 +1,10 @@
-// Module ID: 7480
-// Function ID: 60043
+// Module ID: 7484
+// Function ID: 60055
 // Name: _startStageInstance
 // Dependencies: []
 // Exports: endStageInstance, startStageInstance, updateStageInstance
 
-// Module 7480 (_startStageInstance)
+// Module 7484 (_startStageInstance)
 async function _startStageInstance(channel_id, topic, privacy_level, send_start_notification, guild_scheduled_event_id, arg5) {
   const HTTP = callback(closure_1[2]).HTTP;
   let obj = { url: constants.STAGE_INSTANCES, body: obj };

@@ -1,10 +1,10 @@
-// Module ID: 15978
-// Function ID: 122656
+// Module ID: 15985
+// Function ID: 122682
 // Name: closeAddAvatarModal
 // Dependencies: []
 // Exports: handlePressNext, openAddAvatarModal, showSkipAvatarModal
 
-// Module 15978 (closeAddAvatarModal)
+// Module 15985 (closeAddAvatarModal)
 function closeAddAvatarModal(skip) {
   let obj = importDefault(dependencyMap[8]);
   obj.popWithKey(ADD_AVATAR_MODAL_KEY);
@@ -37,7 +37,7 @@ export const handlePressNext = function handlePressNext(arg0, first1, arg2) {
 export const showSkipAvatarModal = function showSkipAvatarModal(arg0) {
   const require = arg0;
   let obj = importDefault(dependencyMap[2]);
-  obj.track(AnalyticEvents.NUO_TRANSITION, {});
+  obj.track(AnalyticEvents.NUO_TRANSITION, { accessibilityRole: 720, flexDirection: 30, state: true });
   obj = {};
   const intl = require(dependencyMap[5]).intl;
   obj.title = intl.string(require(dependencyMap[5]).t.DnKHuV);

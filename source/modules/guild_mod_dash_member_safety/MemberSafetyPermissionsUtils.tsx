@@ -1,10 +1,10 @@
-// Module ID: 5640
-// Function ID: 48181
+// Module ID: 5642
+// Function ID: 48223
 // Name: getContextForPermission
 // Dependencies: []
 // Exports: canBulkBanUser, canPruneGuildMembers, useCanAccessBulkBanningFeature, useCanAccessInviteCodeFeature, useCanBulkBanUser
 
-// Module 5640 (getContextForPermission)
+// Module 5642 (getContextForPermission)
 function getContextForPermission(guildId, arg1) {
   let tmp = arg1;
   if (arg1 === undefined) {

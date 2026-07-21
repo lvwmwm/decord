@@ -1,10 +1,10 @@
-// Module ID: 7501
-// Function ID: 60122
+// Module ID: 7505
+// Function ID: 60134
 // Name: useCharacterLimitAnnouncement
 // Dependencies: []
 // Exports: useCharacterLimitAnnouncement
 
-// Module 7501 (useCharacterLimitAnnouncement)
+// Module 7505 (useCharacterLimitAnnouncement)
 let closure_2 = importAll(dependencyMap[0]);
 const result = arg1(dependencyMap[2]).fileFinishedImporting("../discord_common/js/packages/design/components/AccessibilityAnnouncer/useCharacterLimitAnnouncement.tsx");
 

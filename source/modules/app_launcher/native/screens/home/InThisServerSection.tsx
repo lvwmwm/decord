@@ -1,10 +1,10 @@
-// Module ID: 11213
-// Function ID: 87337
+// Module ID: 11219
+// Function ID: 87360
 // Name: AppInThisServer
 // Dependencies: []
 // Exports: default
 
-// Module 11213 (AppInThisServer)
+// Module 11219 (AppInThisServer)
 function AppInThisServer(onAppSelected) {
   const arg1 = onAppSelected.onAppSelected;
   const tmp = callback2();
@@ -40,7 +40,7 @@ importAll(dependencyMap[0]);
 const tmp3 = arg1(dependencyMap[1]);
 ({ jsx: closure_5, jsxs: closure_6 } = arg1(dependencyMap[2]));
 let obj = arg1(dependencyMap[3]);
-obj = { container: { marginBottom: 16 }, headerContainer: { justifyContent: "center" }, viewAll: { <string:2423925279>: null, <string:2596769915>: null }, scrollView: {}, scrollViewContentContainer: { gap: 8 } };
+obj = { container: { marginBottom: 16 }, headerContainer: { justifyContent: "center" }, viewAll: {}, scrollView: {}, scrollViewContentContainer: { gap: 8 } };
 obj = { backgroundColor: importDefault(dependencyMap[4]).colors.CARD_BACKGROUND_DEFAULT, borderRadius: importDefault(dependencyMap[4]).radii.lg };
 const merged = Object.assign(importDefault(dependencyMap[4]).shadows.SHADOW_LOW);
 obj["paddingLeft"] = 12;
@@ -50,7 +50,7 @@ obj["flexDirection"] = "row";
 obj["justifyContent"] = "center";
 obj["alignItems"] = "center";
 obj.appCardContainer = obj;
-obj.iconContainer = { display: null, flexDirection: null };
+obj.iconContainer = { 0: null, 9223372036854775807: null };
 let closure_7 = obj.createStyles(obj);
 const tmp4 = arg1(dependencyMap[2]);
 const result = arg1(dependencyMap[14]).fileFinishedImporting("modules/app_launcher/native/screens/home/InThisServerSection.tsx");
@@ -83,7 +83,7 @@ export default function InThisServerSection(arg0) {
     }
     let obj = { style: tmp.container };
     obj = { style: tmp.headerContainer };
-    obj = { INTEGRATION_CREATE: "partnerActionedTimestamp", ConstraintReasonCode: "cka" };
+    obj = {};
     const intl = arg1(applications[8]).intl;
     obj.children = intl.string(arg1(applications[8]).t.oJyzCu);
     const items1 = [callback(arg1(applications[7]).Text, obj), ];
@@ -100,7 +100,7 @@ export default function InThisServerSection(arg0) {
             },
         accessibilityRole: "button"
       };
-      const obj2 = { INTEGRATION_CREATE: -436207324, ConstraintReasonCode: 301991094 };
+      const obj2 = {};
       const intl2 = arg1(applications[8]).intl;
       obj2.children = intl2.string(arg1(applications[8]).t./qG8v7);
       obj1.children = callback(arg1(applications[7]).Text, obj2);

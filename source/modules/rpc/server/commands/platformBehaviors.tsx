@@ -1,8 +1,8 @@
-// Module ID: 13301
-// Function ID: 101083
+// Module ID: 13308
+// Function ID: 101106
 // Dependencies: []
 
-// Module 13301
+// Module 13308
 const _module = require(dependencyMap[1]);
 const result = _module.fileFinishedImporting("modules/rpc/server/commands/platformBehaviors.tsx");
 

@@ -1,10 +1,10 @@
-// Module ID: 11968
-// Function ID: 92558
+// Module ID: 11975
+// Function ID: 92581
 // Name: widgetGameTagMetadata
 // Dependencies: []
 // Exports: getWidgetGameTagMetadata
 
-// Module 11968 (widgetGameTagMetadata)
+// Module 11975 (widgetGameTagMetadata)
 const _module = require(dependencyMap[0]);
 const obj = {};
 obj[require(dependencyMap[0]).WidgetGameTagIconRole.RIBBON] = require(dependencyMap[1]).RibbonIcon;

@@ -1,9 +1,9 @@
-// Module ID: 6904
-// Function ID: 55005
+// Module ID: 6908
+// Function ID: 55015
 // Name: AppStartInfo
 // Dependencies: []
 
-// Module 6904 (AppStartInfo)
+// Module 6908 (AppStartInfo)
 let closure_2 = importDefault(dependencyMap[0]);
 let closure_3 = importDefault(dependencyMap[1]);
 let closure_4 = {};

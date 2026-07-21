@@ -1,10 +1,10 @@
-// Module ID: 14960
-// Function ID: 112631
+// Module ID: 14967
+// Function ID: 112655
 // Name: getGuildIconSize
 // Dependencies: []
 // Exports: default
 
-// Module 14960 (getGuildIconSize)
+// Module 14967 (getGuildIconSize)
 function getGuildIconSize(variant) {
   let num = 50;
   if ("one-column" === variant) {
@@ -47,7 +47,7 @@ let closure_15 = arg1(dependencyMap[9]).createStyles((variant) => {
   }
   const tmp2 = getGuildIconSize(variant);
   let obj = {};
-  obj = { INITIALIZED: "colors", getTextChannels: "r", STREAM_QUALITY_UPSELL: "isArray", flexGrow: "forEach", value: "PX_8", width: "r", backgroundColor: importDefault(dependencyMap[10]).colors.BG_SURFACE_RAISED, borderColor: importDefault(dependencyMap[10]).colors.BORDER_MUTED, borderRadius: importDefault(dependencyMap[10]).radii.lg, marginBottom: importDefault(dependencyMap[10]).space.PX_16 };
+  obj = { entity_id: true, lurkLocation: true, automaticallyAdjustContentInsets: true, horizontal: true, pagingEnabled: true, scrollEnabled: true, backgroundColor: importDefault(dependencyMap[10]).colors.BG_SURFACE_RAISED, borderColor: importDefault(dependencyMap[10]).colors.BORDER_MUTED, borderRadius: importDefault(dependencyMap[10]).radii.lg, marginBottom: importDefault(dependencyMap[10]).space.PX_16 };
   obj.card = obj;
   obj = {};
   let num2 = 80;
@@ -58,7 +58,7 @@ let closure_15 = arg1(dependencyMap[9]).createStyles((variant) => {
   obj.backgroundColor = importDefault(dependencyMap[10]).colors.CARD_BACKGROUND_DEFAULT;
   obj.bannerContainer = obj;
   obj.banner = { flex: 1 };
-  const obj1 = { -9223372036854775808: 0.129, 0: 1 };
+  const obj1 = { markAsSpoilerTitle: 0.129, keyboardAppearance: 1 };
   let num3 = 28;
   if ("one-column" === variant) {
     num3 = 32;
@@ -70,20 +70,20 @@ let closure_15 = arg1(dependencyMap[9]).createStyles((variant) => {
   obj.guildIconContainer = { top: getGuildIconTop(variant) };
   const obj2 = { top: getGuildIconTop(variant) };
   obj.guildIcon = { width: tmp2, height: tmp2, borderRadius: importDefault(dependencyMap[10]).radii.lg };
-  const obj4 = { -9223372036854775808: true, filter: true, marginBottom: importDefault(dependencyMap[10]).space.PX_4 };
-  obj.guildNameRow = obj4;
+  const obj3 = { width: tmp2, height: tmp2, borderRadius: importDefault(dependencyMap[10]).radii.lg };
+  obj.guildNameRow = { marginBottom: importDefault(dependencyMap[10]).space.PX_4 };
   const obj5 = {};
   const space = importDefault(dependencyMap[10]).space;
   obj5.marginRight = "one-column" === variant ? space.PX_8 : space.PX_4;
   obj.guildBadge = obj5;
-  obj.guildName = { "Null": null, "Null": null };
+  obj.guildName = {};
   const obj6 = {};
   const space2 = importDefault(dependencyMap[10]).space;
   obj6.marginBottom = "one-column" === variant ? space2.PX_8 : space2.PX_4;
   obj.description = obj6;
-  const obj3 = { width: tmp2, height: tmp2, borderRadius: importDefault(dependencyMap[10]).radii.lg };
+  const obj4 = { marginBottom: importDefault(dependencyMap[10]).space.PX_4 };
   obj.memberCounts = { flexDirection: "row", gap: importDefault(dependencyMap[10]).space.PX_16 };
-  const obj8 = { "Bool(false)": 231584265132739040000000000000000000000000000000000000000000000000000000000000, "Bool(false)": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000858413609814, "Bool(false)": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000169759663475, "Bool(false)": 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000042745059493084854, "Bool(false)": -0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001743287518137464 };
+  const obj8 = { <string:3327959291>: 231584265132739040000000000000000000000000000000000000000000000000000000000000, <string:657281378>: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000858413609814, <string:1666624098>: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000169759663475, <string:1392078417>: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004330043792816825, <string:3389288353>: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000023797674773758956 };
   const space3 = importDefault(dependencyMap[10]).space;
   obj8.marginBottom = "one-column" === variant ? space3.PX_12 : space3.PX_8;
   obj.memberCount = obj8;
@@ -94,8 +94,8 @@ let closure_15 = arg1(dependencyMap[9]).createStyles((variant) => {
   obj.dot = obj9;
   const obj10 = { width: num, height: num, borderRadius: result, backgroundColor: importDefault(dependencyMap[10]).colors.TEXT_STATUS_ONLINE };
   obj.dotOnline = obj10;
-  const obj11 = { onLongPressAvatar: false, onTapUsername: false, onLongPressUsername: false, width: 2 * importDefault(dependencyMap[10]).radii.lg, height: 2 * importDefault(dependencyMap[10]).radii.lg, borderRadius: importDefault(dependencyMap[10]).radii.lg, backgroundColor: importDefault(dependencyMap[10]).colors.BACKGROUND_MOD_SUBTLE, alignItems: "center", justifyContent: "center" };
-  obj.dismissButton = obj11;
+  const obj7 = { flexDirection: "row", gap: importDefault(dependencyMap[10]).space.PX_16 };
+  obj.dismissButton = { width: 2 * importDefault(dependencyMap[10]).radii.lg, height: 2 * importDefault(dependencyMap[10]).radii.lg, borderRadius: importDefault(dependencyMap[10]).radii.lg, backgroundColor: importDefault(dependencyMap[10]).colors.BACKGROUND_MOD_SUBTLE, alignItems: "center", justifyContent: "center" };
   return obj;
 });
 const obj = arg1(dependencyMap[9]);
@@ -305,13 +305,13 @@ export default function GameCommunityMultiGuildUpsellCard(guild) {
   obj14.children = items13;
   const items15 = [callback4(stateFromStores1, obj14), ];
   if (stateFromStores1) {
-    const obj23 = { "Bool(true)": 2030043812, "Bool(true)": -1979710812, "Bool(true)": 1375732180, "Bool(true)": 2106664688, "Bool(true)": 1631654145 };
+    const obj23 = { accessibilityRole: "/assets/.cache/intl/bW9kdWxlcy9ndWlsZF9zZXR0aW5ncy9zZXJ2ZXJfbW9uZXRpemF0aW9uL3RhZ3Mvd2Vi", flags: null, <string:2572309345>: "1196cd91cfbb75ac7df7b4b444d58498", <string:1386796460>: "nl.messages.1196cd91cfbb75ac7df7b4b444d58498.compiled.messages", <string:3768829600>: "jsona" };
     const intl4 = arg1(dependencyMap[17]).intl;
     obj23.text = intl4.string(arg1(dependencyMap[17]).t.KLOhbO);
     obj23.onPress = callback1;
     let obj24 = obj23;
   } else {
-    obj24 = { loading: first };
+    obj24 = { 9223372036854775807: 32768000, -9223372036854775808: 30653696, loading: first };
     const intl3 = arg1(dependencyMap[17]).intl;
     obj24.text = intl3.string(arg1(dependencyMap[17]).t.VJlc0S);
     obj24.onPress = callback;

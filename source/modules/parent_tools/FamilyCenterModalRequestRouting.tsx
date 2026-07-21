@@ -1,10 +1,10 @@
-// Module ID: 11044
-// Function ID: 85997
+// Module ID: 11049
+// Function ID: 86018
 // Name: getConnectionPrereqTarget
 // Dependencies: []
 // Exports: resolveConnectionPrereqTarget
 
-// Module 11044 (getConnectionPrereqTarget)
+// Module 11049 (getConnectionPrereqTarget)
 function getConnectionPrereqTarget(teen_identity) {
   if ("ready" in teen_identity) {
     let obj = { section: frozen.REQUEST };
@@ -34,7 +34,7 @@ function _resolveConnectionPrereqTarget() {
   return obj(...arguments);
 }
 let closure_2 = importDefault(dependencyMap[0]);
-const frozen = Object.freeze({ content: true, style: "/assets/design/components/Icon/native/redesign/generated/images", variant: 24, borderWidth: 24, borderBottomWidth: null, borderColor: "88b9e4c8788e9863c575add881967ca5", borderBottomColor: "LinkExternalSmallIcon", canShowOnboarding: "png", canShowBotsBanner: "absolute" });
+const frozen = Object.freeze({});
 let obj = { section: frozen.ERROR, params: obj };
 obj = { failureCode: arg1(dependencyMap[1]).FamilyCenterFailureCode.GENERIC_ERROR };
 const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/parent_tools/FamilyCenterModalRequestRouting.tsx");

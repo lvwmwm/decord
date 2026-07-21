@@ -1,10 +1,10 @@
-// Module ID: 14111
-// Function ID: 107157
+// Module ID: 14118
+// Function ID: 107180
 // Name: useEnableSwitchIconsSettingValue
 // Dependencies: []
 // Exports: useEnableSwitchIconsSettingValue
 
-// Module 14111 (useEnableSwitchIconsSettingValue)
+// Module 14118 (useEnableSwitchIconsSettingValue)
 function useEnableSwitchIconsSettingValue() {
   const items = [closure_3];
   return arg1(dependencyMap[2]).useStateFromStores(items, () => isSwitchIconsEnabled.isSwitchIconsEnabled);

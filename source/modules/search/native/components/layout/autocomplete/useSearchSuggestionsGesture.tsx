@@ -1,10 +1,10 @@
-// Module ID: 15184
-// Function ID: 114585
+// Module ID: 15191
+// Function ID: 114609
 // Name: inBoundingBox
 // Dependencies: []
 // Exports: useSearchSuggestionsGesture
 
-// Module 15184 (inBoundingBox)
+// Module 15191 (inBoundingBox)
 let closure_3 = importAll(dependencyMap[0]);
 let closure_4 = { code: "function inBoundingBox_useSearchSuggestionsGestureTsx1(e,coordinates,safeAreaTop){const touch=e.allTouches[0];if(touch==null)return false;return coordinates.left<touch.absoluteX&&touch.absoluteX<coordinates.right&&coordinates.top<touch.absoluteY+safeAreaTop&&touch.absoluteY+safeAreaTop<coordinates.bottom;}" };
 let closure_5 = () => {

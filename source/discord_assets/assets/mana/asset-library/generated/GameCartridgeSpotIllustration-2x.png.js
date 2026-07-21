@@ -1,9 +1,9 @@
-// Module ID: 6064
-// Function ID: 49970
+// Module ID: 6066
+// Function ID: 50013
 // Name: metadata
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 6064 (metadata)
+// Module 6066 (metadata)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/GameCartridgeSpotIllustration-2x.png.js");
 

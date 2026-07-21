@@ -1,9 +1,9 @@
-// Module ID: 15570
-// Function ID: 118825
+// Module ID: 15577
+// Function ID: 118849
 // Name: useBaseActivityPanelFocusedView
 // Dependencies: []
 
-// Module 15570 (useBaseActivityPanelFocusedView)
+// Module 15577 (useBaseActivityPanelFocusedView)
 function useBaseActivityPanelFocusedView(context) {
   let importDefault;
   const tmp = importDefault(dependencyMap[13])();
@@ -216,7 +216,7 @@ class BaseActivityPanelFocusedView {
     items4 = [, ];
     items4[0] = jsx(importDefault(dependencyMap[18]).View, { style: items3, pointerEvents: "none" });
     tmp14 = jsxs;
-    obj4 = { flexDirection: null, alignItems: true, backgroundColor: "/assets/.cache/intl/bW9kdWxlcy9ndWlsZF9zZXR0aW5ncy9zZXJ2ZXJfbW9uZXRpemF0aW9uL3RhZ3Mvd2Vi" };
+    obj4 = { -9223372036854775808: null, 9223372036854775807: true, 14479685179510: "/assets/.cache/intl/bW9kdWxlcy9ndWlsZF9zZXR0aW5ncy9zZXJ2ZXJfbW9uZXRpemF0aW9uL2d1aWxkX3RoZW1lL3dlYg==" };
     obj4.style = memo;
     obj4.onAccessibilityEscape = callback;
     tmp15 = jsx;

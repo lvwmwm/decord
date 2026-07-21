@@ -1,13 +1,13 @@
-// Module ID: 4571
-// Function ID: 40028
+// Module ID: 4573
+// Function ID: 40069
 // Dependencies: []
 
-// Module 4571
+// Module 4573
 let closure_0 = /^https:\/\/(?:(?:media|images)\.discordapp\.net|(?:cdn\.discordapp\.com))\/(?:attachments|ephemeral-attachments)\/\d+\/\d+\/([A-Za-z0-9._-]*[A-Za-z0-9_-])(?:[?][a-zA-Z0-9?&=_-]*)?/;
 let obj = {};
 obj = {
   order: importDefault(dependencyMap[0]).defaultRules.url.order - 0.5,
-  requiredFirstCharacters: [null],
+  requiredFirstCharacters: [],
   match(arg0) {
     return regex.exec(arg0);
   },

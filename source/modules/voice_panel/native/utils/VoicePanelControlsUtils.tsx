@@ -1,9 +1,9 @@
-// Module ID: 11360
-// Function ID: 88350
+// Module ID: 11367
+// Function ID: 88374
 // Name: getControlsDefaultWidth
 // Dependencies: []
 
-// Module 11360 (getControlsDefaultWidth)
+// Module 11367 (getControlsDefaultWidth)
 let closure_0 = require(dependencyMap[0]).VOICE_PANEL_DRAWER_MAX_WIDTH;
 const EDGE_GUTTER = require(dependencyMap[1]).EDGE_GUTTER;
 const CONTROLS_MAX_WIDTH = require(dependencyMap[2]).CONTROLS_MAX_WIDTH;

@@ -1,10 +1,10 @@
-// Module ID: 11477
-// Function ID: 89364
+// Module ID: 11484
+// Function ID: 89388
 // Name: useCommunicationDisabledCountdownCleanup
 // Dependencies: []
 // Exports: useCommunicationDisabledCountdownCleanup
 
-// Module 11477 (useCommunicationDisabledCountdownCleanup)
+// Module 11484 (useCommunicationDisabledCountdownCleanup)
 const _module = require(dependencyMap[0]);
 ({ useEffect: closure_2, useRef: closure_3 } = _module);
 const _module1 = require(dependencyMap[3]);

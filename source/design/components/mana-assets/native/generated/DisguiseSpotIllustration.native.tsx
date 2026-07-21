@@ -1,10 +1,10 @@
-// Module ID: 6009
-// Function ID: 49887
+// Module ID: 6011
+// Function ID: 49930
 // Name: DisguiseSpotIllustration
 // Dependencies: []
 // Exports: DisguiseSpotIllustration
 
-// Module 6009 (DisguiseSpotIllustration)
+// Module 6011 (DisguiseSpotIllustration)
 const jsx = require(dependencyMap[0]).jsx;
 const _module = require(dependencyMap[3]);
 const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/DisguiseSpotIllustration.native.tsx");

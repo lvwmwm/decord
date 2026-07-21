@@ -1,10 +1,10 @@
-// Module ID: 10125
-// Function ID: 78392
+// Module ID: 10131
+// Function ID: 78410
 // Name: SafetyToolsCrisisTextLineActionSheet
 // Dependencies: []
 // Exports: default
 
-// Module 10125 (SafetyToolsCrisisTextLineActionSheet)
+// Module 10131 (SafetyToolsCrisisTextLineActionSheet)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 ({ CRISIS_TEXT_LINE_SMS_URI: closure_4, CRISIS_TEXT_LINE_URL: closure_5 } = arg1(dependencyMap[2]));
@@ -39,7 +39,7 @@ export default function SafetyToolsCrisisTextLineActionSheet(trackAnalyticsEvent
   const intl2 = arg1(dependencyMap[7]).intl;
   obj.children = intl2.string(arg1(dependencyMap[7]).t.uicS5l);
   const items = [callback(arg1(dependencyMap[8]).Text, obj), , ];
-  const obj1 = { display: "row", flexDirection: 8, alignItems: 16, gap: "center" };
+  const obj1 = { paddingVertical: "row", paddingLeft: 8, paddingRight: 16, left: "center" };
   const intl3 = arg1(dependencyMap[7]).intl;
   obj1.text = intl3.string(arg1(dependencyMap[7]).t.lkUb4S);
   obj1.onPress = function onPress() {
@@ -47,7 +47,7 @@ export default function SafetyToolsCrisisTextLineActionSheet(trackAnalyticsEvent
     trackAnalyticsEvent(trackAnalyticsEvent(closure_2[11]).CtaEventTypes.USER_SAFETY_TOOLS_CTL_SMS);
   };
   items[1] = callback(arg1(dependencyMap[9]).Button, obj1);
-  const obj2 = { display: "row", flexDirection: 8, alignItems: 16, gap: "center" };
+  const obj2 = { paddingVertical: "row", paddingLeft: 8, paddingRight: 16, left: "center" };
   const intl4 = arg1(dependencyMap[7]).intl;
   obj2.text = intl4.string(arg1(dependencyMap[7]).t.ogLlvy);
   obj2.onPress = function onPress() {

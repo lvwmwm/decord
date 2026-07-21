@@ -1,9 +1,9 @@
-// Module ID: 4939
-// Function ID: 42289
+// Module ID: 4941
+// Function ID: 42330
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
-// Module 4939 (_isNativeReflectConstruct)
+// Module 4941 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -30,7 +30,7 @@ function checkIdleAFK() {
     if (!isSystemIdle()) {
       if (closure_14) {
         let obj = importDefault(dependencyMap[11]);
-        obj.dispatch({ <string:2806404382>: -1958608895, <string:2740798146>: 603980072 });
+        obj.dispatch({ "Null": 1644167670, "Null": -196903041 });
       }
     }
     const AfkTimeout = arg1(dependencyMap[9]).AfkTimeout;
@@ -43,7 +43,7 @@ function checkIdleAFK() {
         if (diff <= Math.min(setting * importDefault(dependencyMap[10]).Millis.SECOND, closure_9)) {
           if (!isSystemIdle()) {
             if (closure_15) {
-              importDefault(dependencyMap[11]).dispatch({ <string:1919132509>: 112, <string:2639433050>: "center" });
+              importDefault(dependencyMap[11]).dispatch({});
               const obj4 = importDefault(dependencyMap[11]);
             }
           }
@@ -51,7 +51,7 @@ function checkIdleAFK() {
       }
     }
     if (!closure_15) {
-      importDefault(dependencyMap[11]).dispatch({ <string:1919132509>: 15187278098843240000000000000000000000000000000000000000000000000000000000000000000, <string:2639433050>: -603569820 });
+      importDefault(dependencyMap[11]).dispatch({ _onResolve: 15184509661513493000000000000000000000000000000000000000000000000000000000000000000, VOICE_DISCONNECT: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007295684351431581 });
       const obj5 = importDefault(dependencyMap[11]);
     }
   }

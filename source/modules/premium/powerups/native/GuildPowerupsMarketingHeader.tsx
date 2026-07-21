@@ -1,13 +1,12 @@
-// Module ID: 12381
-// Function ID: 94676
+// Module ID: 12388
+// Function ID: 94699
 // Name: PerkText
 // Dependencies: []
 // Exports: default
 
-// Module 12381 (PerkText)
-function PerkText(powerup) {
-  const obj = { "Bool(false)": null, "Bool(false)": null, children: powerup.powerup.title };
-  return jsx(arg1(dependencyMap[7]).Text, obj);
+// Module 12388 (PerkText)
+function PerkText(children) {
+  return jsx(arg1(dependencyMap[7]).Text, { children: children.powerup.title });
 }
 let closure_3 = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;

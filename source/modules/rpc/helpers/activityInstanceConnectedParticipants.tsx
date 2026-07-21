@@ -1,9 +1,9 @@
-// Module ID: 13261
-// Function ID: 100772
+// Module ID: 13268
+// Function ID: 100795
 // Name: activityInstanceConnectedParticipants
 // Dependencies: []
 
-// Module 13261 (activityInstanceConnectedParticipants)
+// Module 13268 (activityInstanceConnectedParticipants)
 function activityInstanceConnectedParticipants() {
   const currentEmbeddedActivity = currentEmbeddedActivity.getCurrentEmbeddedActivity();
   if (null == currentEmbeddedActivity) {

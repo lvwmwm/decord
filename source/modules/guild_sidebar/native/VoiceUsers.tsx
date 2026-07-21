@@ -1,10 +1,10 @@
-// Module ID: 14840
-// Function ID: 111859
+// Module ID: 14847
+// Function ID: 111883
 // Name: AudienceItem
 // Dependencies: []
 // Exports: default, getAudienceItemHeight
 
-// Module 14840 (AudienceItem)
+// Module 14847 (AudienceItem)
 function AudienceItem(arg0) {
   let audienceCount;
   let collapsed;
@@ -18,7 +18,7 @@ function AudienceItem(arg0) {
   }
   obj = { style: collapsed ? tmp.listenersCollapsed : tmp.listeners };
   obj = { style: tmp.listenersIconWrapper, children: callback(arg1(dependencyMap[12]).HeadphonesIcon, obj1) };
-  const obj1 = { "Bool(true)": 37524843738894570000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, "Bool(true)": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004450147719115647, style: tmp.headphonesIcon };
+  const obj1 = { sticker: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007814793789109754, animated: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004450147719115644, style: tmp.headphonesIcon };
   const items = [callback(View, obj), ];
   const obj2 = { style: tmp.listenersText, variant: closure_7, color: "redesign-channel-name-muted-text", children: formatToPlainStringResult };
   items[1] = callback(arg1(dependencyMap[13]).Text, obj2);
@@ -35,7 +35,7 @@ let closure_8 = arg1(dependencyMap[4]).createStyles((arg0) => {
   const colors = importDefault(dependencyMap[5]).colors;
   const tmp = arg0 ? colors.MOBILE_EXPRESSION_PICKER_BACKGROUND_DEFAULT : colors.BACKGROUND_BASE_LOWEST;
   const round = importDefault(dependencyMap[5]).radii.round;
-  let obj = { listeners: { -1219085468: "cancelAnimation", 1861837972: "form", 1683089233: "MUR", -657694172: "white", 1369054545: "ctaOnHover", 1399122142: "ReferenceError" }, listenersCollapsed: { backgroundColor: tmp, borderRadius: round } };
+  let obj = { listeners: {}, listenersCollapsed: { backgroundColor: tmp, borderRadius: round } };
   obj = { backgroundColor: tmp, borderRadius: round };
   const merged = Object.assign(arg1(dependencyMap[6]).makeSizeStyle(20));
   obj.listenersIconWrapper = obj;

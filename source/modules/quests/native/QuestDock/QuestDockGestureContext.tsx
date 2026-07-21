@@ -1,9 +1,9 @@
-// Module ID: 13864
-// Function ID: 104922
+// Module ID: 13871
+// Function ID: 104945
 // Name: QuestDockMode
 // Dependencies: []
 
-// Module 13864 (QuestDockMode)
+// Module 13871 (QuestDockMode)
 const importAllResult = importAll(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 const QuestDockMode = arg1(dependencyMap[2]).QuestDockMode;
@@ -11,7 +11,7 @@ const QuestDockMode = arg1(dependencyMap[2]).QuestDockMode;
 const jsx = arg1(dependencyMap[4]).jsx;
 const obj = {};
 const tmp2 = arg1(dependencyMap[3]);
-obj.questDockWrapperSpecs = arg1(dependencyMap[5]).createFakeSharedValue({ bind: false, icon: null, toString: "", ty: null, body: null });
+obj.questDockWrapperSpecs = arg1(dependencyMap[5]).createFakeSharedValue({});
 const obj3 = arg1(dependencyMap[5]);
 obj.windowDimensions = arg1(dependencyMap[5]).createFakeSharedValue({});
 const obj4 = arg1(dependencyMap[5]);

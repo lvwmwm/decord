@@ -1,10 +1,10 @@
-// Module ID: 11250
-// Function ID: 87535
+// Module ID: 11256
+// Function ID: 87558
 // Name: useShowTryItOutButtonInAppLauncher
 // Dependencies: []
 // Exports: default
 
-// Module 11250 (useShowTryItOutButtonInAppLauncher)
+// Module 11256 (useShowTryItOutButtonInAppLauncher)
 const _module = require(dependencyMap[3]);
 const result = _module.fileFinishedImporting("modules/app_dms/useShowTryItOutButtonInAppLauncher.tsx");
 

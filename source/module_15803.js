@@ -1,10 +1,10 @@
 // Module ID: 15803
-// Function ID: 120848
+// Function ID: 120857
 // Dependencies: []
 
 // Module 15803
 globalThis.IntlMessageFormat.__addLocaleData({
-  locale: "tr",
+  locale: "no",
   pluralRuleFunction(arg0, arg1) {
     let str = "other";
     let str2 = "other";
@@ -17,4 +17,3 @@ globalThis.IntlMessageFormat.__addLocaleData({
     return str2;
   }
 });
-globalThis.IntlMessageFormat.__addLocaleData({ "Bool(true)": "tail", "Bool(true)": false });

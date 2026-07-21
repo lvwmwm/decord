@@ -1,19 +1,19 @@
-// Module ID: 13929
-// Function ID: 105881
+// Module ID: 13936
+// Function ID: 105904
 // Name: QuestOrbMultiplierPerkPill
 // Dependencies: []
 // Exports: QuestOrbMultiplierPerkPill
 
-// Module 13929 (QuestOrbMultiplierPerkPill)
+// Module 13936 (QuestOrbMultiplierPerkPill)
 let closure_3 = importAll(dependencyMap[0]);
 const tmp2 = arg1(dependencyMap[1]);
 const View = tmp2.View;
 ({ jsx: closure_5, Fragment: closure_6, jsxs: closure_7 } = arg1(dependencyMap[2]));
-let closure_8 = { "Null": false, "Null": true };
-let closure_9 = { "Null": null, "Null": null };
+let closure_8 = { max: -536870861, guildId: -299892737 };
+let closure_9 = {};
 let obj = arg1(dependencyMap[3]);
 obj = {};
-obj = { style: 43429532337555835000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, pointerEvents: -99770425660377450000000000000000000000000000000000, accessibilityElementsHidden: 32259876924204306000000000000000000000000000000000000000000000000000000000000000000, importantForAccessibility: 15180989098874766000000000000000000000000000000000000000000000000000000000000000000, borderRadius: importDefault(dependencyMap[4]).radii.round };
+obj = { borderRadius: importDefault(dependencyMap[4]).radii.round };
 obj.fullGradientContainer = obj;
 const obj1 = {};
 const merged = Object.assign(tmp2.StyleSheet.absoluteFillObject);
@@ -71,7 +71,7 @@ export const QuestOrbMultiplierPerkPill = function QuestOrbMultiplierPerkPill(qu
     let tmp15 = !tmp10;
     let tmp16 = tmp15;
     if (!tmp10) {
-      tmp16 = questOrbRewardMultiplier(arg1(dependencyMap[12]).NitroWheelIcon, {});
+      tmp16 = questOrbRewardMultiplier(arg1(dependencyMap[12]).NitroWheelIcon, { flex: false, flexGrow: null });
     }
     const items2 = [tmp16, ];
     obj2 = { children: formatToPlainStringResult };

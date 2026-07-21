@@ -1,10 +1,10 @@
-// Module ID: 9765
-// Function ID: 75949
+// Module ID: 9770
+// Function ID: 75965
 // Name: useHandleUseNow
 // Dependencies: []
 // Exports: useHandleUseNow
 
-// Module 9765 (useHandleUseNow)
+// Module 9770 (useHandleUseNow)
 let closure_3 = importAll(dependencyMap[0]);
 const RootNavigatorScreen = arg1(dependencyMap[1]).RootNavigatorScreen;
 const result = arg1(dependencyMap[9]).fileFinishedImporting("modules/collectibles/native/useHandleUseNow.tsx");

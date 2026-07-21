@@ -1,10 +1,10 @@
-// Module ID: 10102
-// Function ID: 78208
+// Module ID: 10108
+// Function ID: 78226
 // Name: openLoadingIndicatorDebugBody
 // Dependencies: []
 // Exports: ChannelHeaderLoadingIndicator, useShouldChannelShowLoadingIndicator
 
-// Module 10102 (openLoadingIndicatorDebugBody)
+// Module 10108 (openLoadingIndicatorDebugBody)
 function openLoadingIndicatorDebugBody() {
   const currentUser = currentUser.getCurrentUser();
   let tmp = null != currentUser && currentUser.isStaff();
@@ -44,8 +44,8 @@ let closure_11 = importDefault(dependencyMap[8]);
 const AppStates = arg1(dependencyMap[9]).AppStates;
 ({ jsx: closure_13, jsxs: closure_14, Fragment: closure_15 } = arg1(dependencyMap[10]));
 const tmp2 = arg1(dependencyMap[10]);
-let obj = { container: {} };
-obj = { borderRadius: importDefault(dependencyMap[12]).radii.round, backgroundColor: importDefault(dependencyMap[12]).colors.BACKGROUND_BRAND };
+let obj = { container: { <string:3461472865>: "safety_user_sentiment_notice_dismissed_at", <string:1447977218>: "message", <string:1640807382>: null } };
+obj = { <string:1632221346>: 800, <string:2722977214>: 16, borderRadius: importDefault(dependencyMap[12]).radii.round, backgroundColor: importDefault(dependencyMap[12]).colors.BACKGROUND_BRAND };
 obj.pulse = obj;
 let closure_16 = arg1(dependencyMap[11]).createStyles(obj);
 let closure_17 = importAllResult.memo(() => {
@@ -92,7 +92,7 @@ let closure_17 = importAllResult.memo(() => {
     const channelId = channelId.getChannelId();
     const isConnectedResult = connected.isConnected();
     if (null == channelId) {
-      let obj = { connected: isConnectedResult };
+      let obj = { 9223372036854775807: null, 0: null, connected: isConnectedResult };
       return obj;
     } else {
       const messages = messages.getMessages(channelId);
@@ -224,7 +224,7 @@ export const ChannelHeaderLoadingIndicator = function ChannelHeaderLoadingIndica
   const animatedStyle = obj2.useAnimatedStyle(fn);
   const items2 = [tmp.pulse, animatedStyle];
   const items3 = [callback2(importDefault(dependencyMap[19]).View, { style: items2 }), ];
-  obj1 = { INTEGRATION_CREATE: true, ConstraintReasonCode: true };
+  obj1 = {};
   const intl = arg1(dependencyMap[21]).intl;
   obj1.children = intl.string(arg1(dependencyMap[21]).t.JwIJMV);
   items3[1] = callback2(arg1(dependencyMap[17]).Text, obj1);

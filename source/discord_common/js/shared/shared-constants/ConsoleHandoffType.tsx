@@ -1,10 +1,10 @@
-// Module ID: 9029
-// Function ID: 70970
+// Module ID: 9033
+// Function ID: 70982
 // Name: set
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 9029 (set)
-const obj = { ALL: new Set(["dependencyMap", "onSendMessage"]) };
+// Module 9033 (set)
+const obj = { ALL: new Set(["MobileCustomMuxIntegration", "filterRoleDeletes"]) };
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_common/js/shared/shared-constants/ConsoleHandoffType.tsx");
 

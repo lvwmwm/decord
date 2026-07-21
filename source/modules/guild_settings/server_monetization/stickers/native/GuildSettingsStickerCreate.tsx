@@ -1,8 +1,8 @@
-// Module ID: 16129
-// Function ID: 124340
+// Module ID: 16136
+// Function ID: 124371
 // Dependencies: []
 
-// Module 16129
+// Module 16136
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 const importAllResult = importAll(dependencyMap[2]);
@@ -231,7 +231,7 @@ const forwardRefResult = importAllResult.forwardRef((stickerId) => {
     const intl = arg1(dependencyMap[21]).intl;
     obj1.children = intl.string(arg1(dependencyMap[21]).t.9N2OWD);
     const items2 = [callback2(arg1(dependencyMap[20]).Text, obj1), , , ];
-    const obj2 = { INTEGRATION_CREATE: "<string:3305963521>", ConstraintReasonCode: "<string:671547393>", style: tmp.description };
+    const obj2 = { style: tmp.description };
     const intl2 = arg1(dependencyMap[21]).intl;
     const obj3 = {};
     let obj6 = arg1(dependencyMap[22]);
@@ -239,7 +239,7 @@ const forwardRefResult = importAllResult.forwardRef((stickerId) => {
     obj3.fileSize = obj6.formatKbSize(MAX_STICKER_FILE_SIZE, obj4);
     obj2.children = intl2.format(arg1(dependencyMap[21]).t.hxLviw, obj3);
     items2[1] = callback2(arg1(dependencyMap[20]).Text, obj2);
-    const obj5 = { INTEGRATION_CREATE: "<string:3305963521>", ConstraintReasonCode: "<string:671547393>", style: tmp.help };
+    const obj5 = { style: tmp.help };
     const intl3 = arg1(dependencyMap[21]).intl;
     obj6 = {};
     let obj10 = importDefault(dependencyMap[23]);
@@ -301,7 +301,7 @@ const forwardRefResult = importAllResult.forwardRef((stickerId) => {
     }
   };
   if (null != first1) {
-    const obj17 = { fastImageStyle: { aze: false, azj: false }, name: null == first1.id ? first1.surrogates : first1.name };
+    const obj17 = { fastImageStyle: { bhk: "<string:1027735553>", bic: "<string:4143972873>" }, name: null == first1.id ? first1.surrogates : first1.name };
     let emojiURL;
     if (null != first1.id) {
       let obj22 = importDefault(dependencyMap[31]);
@@ -315,10 +315,10 @@ const forwardRefResult = importAllResult.forwardRef((stickerId) => {
     const tmp49 = callback2;
     const tmp52 = importDefault(dependencyMap[30]);
   } else {
-    tmp49Result = callback2(arg1(dependencyMap[32]).ReactionIcon, {});
+    tmp49Result = callback2(arg1(dependencyMap[32]).ReactionIcon, { flex: "hidden", flexGrow: 2 });
   }
   const items5 = [tmp49Result, ];
-  const obj19 = { INTEGRATION_CREATE: true, ConstraintReasonCode: true };
+  const obj19 = {};
   if (null != first1) {
     const _HermesInternal = HermesInternal;
     let combined = ":" + first1.name + ":";

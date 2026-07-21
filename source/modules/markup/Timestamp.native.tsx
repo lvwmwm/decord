@@ -1,10 +1,10 @@
-// Module ID: 10250
-// Function ID: 79228
+// Module ID: 10256
+// Function ID: 79247
 // Name: Timestamp
 // Dependencies: []
 // Exports: default
 
-// Module 10250 (Timestamp)
+// Module 10256 (Timestamp)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 let obj = arg1(dependencyMap[2]);

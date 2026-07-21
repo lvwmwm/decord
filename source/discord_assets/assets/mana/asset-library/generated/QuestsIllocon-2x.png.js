@@ -1,9 +1,9 @@
-// Module ID: 6432
-// Function ID: 50522
+// Module ID: 6434
+// Function ID: 50565
 // Name: metadata
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 6432 (metadata)
+// Module 6434 (metadata)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/QuestsIllocon-2x.png.js");
 

@@ -1,21 +1,21 @@
-// Module ID: 15734
-// Function ID: 120250
+// Module ID: 15741
+// Function ID: 120274
 // Name: SoundboardButton
 // Dependencies: [0, 4294967295, 0, 0, 4294967295, 0, 0, 0, 0, 0, 0, 0]
 // Exports: default
 
-// Module 15734 (SoundboardButton)
-import closure_3 from "result";
-import result from "result";
-import result from "result";
+// Module 15741 (SoundboardButton)
+import closure_3 from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
 
 ({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[1]));
-result = {};
-result = { aze: 30271555, azj: 22092032, borderRadius: require("result").radii.round };
-result.circle = result;
-result.iconContainer = { st: true, position: "/assets/.cache/intl/ZGVzaWdu", flex: null, justifyContent: "5489cb913a06f6a88877637630ce77b7", overflow: "pl.messages.5489cb913a06f6a88877637630ce77b7.compiled.messages" };
-result = result.createStyles(result);
-result = result.fileFinishedImporting("modules/voice_panel/native/controls/buttons/VoicePanelSoundboardButton.tsx");
+__exportStarResult1 = {};
+__exportStarResult1 = { borderRadius: require("__exportStarResult1").radii.round };
+__exportStarResult1.circle = __exportStarResult1;
+__exportStarResult1.iconContainer = {};
+__exportStarResult1 = __exportStarResult1.createStyles(__exportStarResult1);
+const result = __exportStarResult1.fileFinishedImporting("modules/voice_panel/native/controls/buttons/VoicePanelSoundboardButton.tsx");
 
 export default function SoundboardButton(arg0) {
   let disabled;
@@ -24,7 +24,7 @@ export default function SoundboardButton(arg0) {
   let visible;
   let wrapperSpecs;
   ({ props, wrapperSpecs } = arg0);
-  const tmp = result();
+  const tmp = __exportStarResult1();
   let obj = arg1(dependencyMap[5]);
   const voicePanelButtonStyles = obj.useVoicePanelButtonStyles(wrapperSpecs);
   const tmp3 = importDefault(dependencyMap[6]);

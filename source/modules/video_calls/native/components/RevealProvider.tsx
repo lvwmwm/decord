@@ -1,10 +1,10 @@
-// Module ID: 10513
-// Function ID: 82106
+// Module ID: 10519
+// Function ID: 82129
 // Name: useRevealProviderValue
 // Dependencies: []
 // Exports: default
 
-// Module 10513 (useRevealProviderValue)
+// Module 10519 (useRevealProviderValue)
 function useRevealProviderValue(arg0, channel) {
   let tmp = arg0;
   const items = [closure_4];

@@ -1,10 +1,10 @@
-// Module ID: 11752
-// Function ID: 91259
+// Module ID: 11759
+// Function ID: 91282
 // Name: HubEmailConnectionSubmitSchool
 // Dependencies: []
 // Exports: default
 
-// Module 11752 (HubEmailConnectionSubmitSchool)
+// Module 11759 (HubEmailConnectionSubmitSchool)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 let closure_5 = importAll(dependencyMap[2]);
@@ -16,7 +16,7 @@ let obj = arg1(dependencyMap[7]);
 obj = { container: { paddingHorizontal: 16 } };
 obj = { fontFamily: arg1(dependencyMap[5]).Fonts.PRIMARY_BOLD, color: importDefault(dependencyMap[8]).colors.MOBILE_TEXT_HEADING_PRIMARY };
 obj.title = obj;
-obj.description = { person_pouting: 24, cv: "recent_games_enabled" };
+obj.description = { collapsable: 24, preventClipping: "recent_games_enabled" };
 obj.scrollViewContainer = { flexGrow: 2 };
 obj.input = { marginBottom: 8 };
 const tmp3 = arg1(dependencyMap[6]);

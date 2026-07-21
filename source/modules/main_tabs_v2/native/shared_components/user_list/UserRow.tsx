@@ -1,9 +1,9 @@
-// Module ID: 8822
-// Function ID: 69547
+// Module ID: 8826
+// Function ID: 69559
 // Name: handleCall
 // Dependencies: []
 
-// Module 8822 (handleCall)
+// Module 8826 (handleCall)
 function handleCall(id) {
   const arg1 = id;
   const obj = importDefault(dependencyMap[13]);
@@ -83,7 +83,7 @@ function UserRowSubLabel(arg0) {
     }
   }
   if (!isGameRelationship) {
-    obj = { CHANNEL_HIGHLIGHT: 1604231423, guild_template_description: 2147418367, borderWidth: 3530104575 };
+    obj = { encodingConfig: "defineProperty", showRemove: "", PREMIUM_CUSTOM_NOTIFICATION_SOUND_SETTINGS_UPSELL: "uri" };
     let obj4 = arg1(dependencyMap[24]);
     obj.children = obj4.getUserTag(user);
     callback(arg1(dependencyMap[23]).Text, obj);
@@ -106,7 +106,7 @@ function UserRowSubLabel(arg0) {
     obj3.source = obj4;
     obj3.disableColor = true;
     const items1 = [callback(arg1(dependencyMap[22]).Icon, obj3, stateFromStores.id), ];
-    const obj5 = { CHANNEL_HIGHLIGHT: "PRIMARY_430", guild_template_description: 1, borderWidth: "use_blur", children: stateFromStores.name };
+    const obj5 = { encodingConfig: "PRIMARY_430", showRemove: 1, PREMIUM_CUSTOM_NOTIFICATION_SOUND_SETTINGS_UPSELL: "use_blur", children: stateFromStores.name };
     items1[1] = callback(arg1(dependencyMap[23]).Text, obj5);
     obj2.children = items1;
     closure_15(View, obj2);
@@ -129,14 +129,14 @@ const tmp2 = arg1(dependencyMap[9]);
 ({ jsx: closure_14, jsxs: closure_15, Fragment: closure_16 } = arg1(dependencyMap[10]));
 let closure_17 = { CALL: "call", MESSAGE: "message", ACCEPT: "accept", DECLINE: "decline", CANCEL: "cancel", ACCEPT_SUGGESTION: "accept-suggestion", IGNORE_SUGGESTION: "ignore-suggestion", TOGGLE: "toggle" };
 let obj1 = arg1(dependencyMap[11]);
-let closure_18 = obj1.createStyles({ avatar: { "Bool(false)": false, <string:1419386345>: true }, actions: { flexDirection: "row" }, action: {}, buttonWrapper: { marginLeft: 8 }, labelContainer: { -9223372036854775808: true, filter: true }, roleDot: {}, usernameLabelContainer: {}, usernameLabel: {} });
+let closure_18 = obj1.createStyles({ avatar: { borderRadius: -536870861, borderWidth: -299892737 }, actions: { flexDirection: "row" }, action: {}, buttonWrapper: { marginLeft: 8 }, labelContainer: {}, roleDot: {}, usernameLabelContainer: {}, usernameLabel: { "Null": 10388343592192675000000000000000000, "Null": 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003000217279425302 } });
 const tmp3 = arg1(dependencyMap[10]);
 let obj = {};
 obj = { color: importDefault(dependencyMap[12]).colors.TEXT_SUBTLE };
 obj.activityText = obj;
-obj1 = { 0: null, 9223372036854775807: null, cornerRadius: importDefault(dependencyMap[12]).radii.xs };
+obj1 = { cornerRadius: importDefault(dependencyMap[12]).radii.xs };
 obj.gameContainer = obj1;
-obj.gameIcon = { aze: null, azj: null };
+obj.gameIcon = { bhk: "Array", bic: "isPrivate" };
 let closure_19 = arg1(dependencyMap[11]).createStyles(obj);
 let closure_20 = "Friends_v2";
 const obj3 = arg1(dependencyMap[11]);
@@ -356,7 +356,7 @@ const memoResult = importAllResult.memo(function UserRow(type) {
         items.push(obj, obj14);
         obj15 = { style: tmp4.actions };
         const obj16 = { style: tmp4.buttonWrapper };
-        const obj17 = { <string:1522289750>: false, <string:570601313>: null };
+        const obj17 = {};
         obj5 = type(NONE[33]);
         const intl3 = type(NONE[28]).intl;
         obj17.text = obj5.truncateText(intl3.string(type(NONE[28]).t.OYkgVk), 8);

@@ -1,10 +1,15 @@
-// Module ID: 14311
-// Function ID: 108109
+// Module ID: 14318
+// Function ID: 108132
 // Name: contextMenuItems
-// Dependencies: []
+// Dependencies: [0, 0, 0, 4294967295, 0, 0, 0, 0, 0, 0, 0, 0]
 // Exports: default
 
-// Module 14311 (contextMenuItems)
+// Module 14318 (contextMenuItems)
+import closure_2 from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
+
 function contextMenuItems(length) {
   const arg1 = length;
   let obj = arg1(closure_1[13]);
@@ -78,46 +83,42 @@ function DemoContextMenu(count) {
   obj.children = callback(arg1(dependencyMap[14]).ContextMenu, obj);
   return callback(closure_3, obj);
 }
-let closure_2 = importAll(dependencyMap[0]);
-({ View: closure_3, ScrollView: closure_4 } = arg1(dependencyMap[1]));
-const tmp2 = arg1(dependencyMap[1]);
-({ jsx: closure_5, jsxs: closure_6 } = arg1(dependencyMap[2]));
-const items = [importDefault(dependencyMap[3]), importDefault(dependencyMap[4]), importDefault(dependencyMap[5]), importDefault(dependencyMap[6]), importDefault(dependencyMap[7]), importDefault(dependencyMap[8]), importDefault(dependencyMap[9]), importDefault(dependencyMap[10])];
-let closure_8 = [null, null, null, null, null, null, true, true, true, 1546816291, -1090178548];
-let obj = arg1(dependencyMap[11]);
-obj = { container: { "Null": false, "Null": false, "Null": false }, card: { gap: 12 } };
-obj = { "Bool(false)": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000092349256818313, "Bool(false)": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000061976, "Bool(false)": -13336029583459642000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, backgroundColor: importDefault(dependencyMap[12]).colors.BORDER_SUBTLE };
-obj.divider = obj;
-let closure_9 = obj.createStyles(obj);
-const tmp3 = arg1(dependencyMap[2]);
+({ View: closure_3, ScrollView: closure_4 } = __exportStarResult1);
+({ jsx: closure_5, jsxs: closure_6 } = __exportStarResult1);
+const items = [importDefault(dependencyMap[3]), require("__exportStarResult1"), require("__exportStarResult1"), require("__exportStarResult1"), require("__exportStarResult1"), require("__exportStarResult1"), require("__exportStarResult1"), require("__exportStarResult1")];
+let closure_8 = [];
+__exportStarResult1 = { container: { start: null, length: "166185917b52ede00e3e20d3f1f7faeb", body: "CheckmarkSmallIcon" }, card: { gap: 12 } };
+__exportStarResult1 = { "Null": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000092349256818313, "Null": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000061976, "Null": -13336029583459642000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, backgroundColor: importDefault(dependencyMap[12]).colors.BORDER_SUBTLE };
+__exportStarResult1.divider = __exportStarResult1;
+__exportStarResult1 = __exportStarResult1.createStyles(__exportStarResult1);
 const result = arg1(dependencyMap[18]).fileFinishedImporting("modules/user_settings/design_system/native/UserSettingsDesignSystemContextMenu.tsx");
 
 export default function UserSettingsDesignSystemAlertModal() {
-  const tmp = callback3();
+  const tmp = __exportStarResult1();
   let obj = {};
   obj = { style: tmp.container };
   obj = { style: tmp.card };
-  const items = [callback(arg1(dependencyMap[17]).Text, {}), callback(arg1(dependencyMap[17]).Text, { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null }), callback(DemoContextMenu, { label: "Open Menu" })];
+  const items = [callback(arg1(dependencyMap[17]).Text, { "Null": "r", "Null": "isArray" }), callback(arg1(dependencyMap[17]).Text, { "Bool(false)": true, "Bool(false)": true, "Bool(false)": true }), callback(DemoContextMenu, { label: "Open Menu" })];
   obj.children = items;
   const items1 = [callback2(arg1(dependencyMap[16]).Card, obj), , , , , ];
   const obj1 = { style: tmp.card };
-  const items2 = [callback(arg1(dependencyMap[17]).Text, { position: 201327006, width: 16777649 }), callback(arg1(dependencyMap[17]).Text, { "Bool(false)": -2861517329718658500000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, "Bool(false)": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000213136241524, "Bool(false)": -0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000026389596161605743 }), callback(DemoContextMenu, { -1922743615: 100, "Null": "Multiline inputs use TextArea" })];
+  const items2 = [callback(arg1(dependencyMap[17]).Text, { "Null": "Array", "Null": "approximate_presence_count" }), callback(arg1(dependencyMap[17]).Text, { "Bool(false)": "isArray", "Bool(false)": "isArray", "Bool(false)": "isArray" }), callback(DemoContextMenu, {})];
   obj1.children = items2;
   items1[1] = callback2(arg1(dependencyMap[16]).Card, obj1);
   const obj2 = { style: tmp.card };
-  const items3 = [callback(arg1(dependencyMap[17]).Text, { position: "isArrayBuffer", width: "useMediaPlayerMutedStore" }), callback(arg1(dependencyMap[17]).Text, { "Bool(false)": "<string:457310209>", "Bool(false)": "<string:3640656295>", "Bool(false)": "<string:1107296686>" }), callback(DemoContextMenu, {})];
+  const items3 = [callback(arg1(dependencyMap[17]).Text, { "Null": "text-md/normal", "Null": "All inputs except TextArea accept a size prop, either sm, md, or lg. By default, inputs will use the large variant." }), callback(arg1(dependencyMap[17]).Text, {}), callback(DemoContextMenu, { "Bool(true)": "Array", "Bool(true)": "isArray", "Bool(true)": "names" })];
   obj2.children = items3;
   items1[2] = callback2(arg1(dependencyMap[16]).Card, obj2);
   const obj3 = { style: tmp.card };
-  const items4 = [callback(arg1(dependencyMap[17]).Text, {}), callback(arg1(dependencyMap[17]).Text, {}), callback(DemoContextMenu, {}), callback(closure_3, { style: tmp.divider }), callback(arg1(dependencyMap[17]).Text, {}), callback(DemoContextMenu, { "Bool(false)": "sEAnVH", "Bool(false)": "values" })];
+  const items4 = [callback(arg1(dependencyMap[17]).Text, {}), callback(arg1(dependencyMap[17]).Text, {}), callback(DemoContextMenu, { 1644887556: 147492, 1868337518: 1930839889 }), callback(closure_3, { style: tmp.divider }), callback(arg1(dependencyMap[17]).Text, { "Bool(false)": true, "Bool(false)": true, "Bool(false)": true }), callback(DemoContextMenu, { "Bool(false)": null, "Bool(false)": null })];
   obj3.children = items4;
   items1[3] = callback2(arg1(dependencyMap[16]).Card, obj3);
   const obj5 = { style: tmp.card };
-  const items5 = [callback(arg1(dependencyMap[17]).Text, { position: true, width: true }), callback(arg1(dependencyMap[17]).Text, { "Bool(false)": "Array", "Bool(false)": "isArray", "Bool(false)": "icon" }), callback(arg1(dependencyMap[17]).Text, {}), callback(closure_3, { style: tmp.divider }), callback(DemoContextMenu, {}), callback(closure_3, { style: tmp.divider }), callback(DemoContextMenu, { <string:1367087639>: "Array", <string:512233716>: "isArray", <string:1275333888>: "bottom", <string:544228313>: "names" }), callback(closure_3, { style: tmp.divider }), callback(DemoContextMenu, {}), callback(closure_3, { style: tmp.divider }), callback(DemoContextMenu, {})];
+  const items5 = [callback(arg1(dependencyMap[17]).Text, {}), callback(arg1(dependencyMap[17]).Text, {}), callback(arg1(dependencyMap[17]).Text, {}), callback(closure_3, { style: tmp.divider }), callback(DemoContextMenu, { "Bool(false)": 65467094052469780000000000000000000000000000000000000000000000000000000000000000000, "Bool(false)": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001586576, "Bool(false)": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003722880124027 }), callback(closure_3, { style: tmp.divider }), callback(DemoContextMenu, { "Bool(true)": true, "Bool(true)": true, "Bool(true)": true, "Bool(true)": true }), callback(closure_3, { style: tmp.divider }), callback(DemoContextMenu, { "Bool(false)": "About me", "Bool(false)": 100, "Bool(false)": "Long form text use TextArea" }), callback(closure_3, { style: tmp.divider }), callback(DemoContextMenu, {})];
   obj5.children = items5;
   items1[4] = callback2(arg1(dependencyMap[16]).Card, obj5);
   const obj10 = { style: tmp.card };
-  const items6 = [callback(arg1(dependencyMap[17]).Text, {}), callback(arg1(dependencyMap[17]).Text, {}), callback(DemoContextMenu, { "Bool(false)": "isArrayBufferToString", "Bool(false)": "D" })];
+  const items6 = [callback(arg1(dependencyMap[17]).Text, {}), callback(arg1(dependencyMap[17]).Text, {}), callback(DemoContextMenu, { "Bool(false)": "isArrayBufferToString", "Bool(false)": "FILE_TYPES_REQUIRED_ADDITIONAL_CHECK" })];
   obj10.children = items6;
   items1[5] = callback2(arg1(dependencyMap[16]).Card, obj10);
   obj.children = items1;

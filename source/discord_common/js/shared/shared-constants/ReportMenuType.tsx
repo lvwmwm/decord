@@ -1,16 +1,16 @@
-// Module ID: 7592
-// Function ID: 60819
+// Module ID: 7596
+// Function ID: 60831
 // Name: set
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 7592 (set)
-const obj = { IN_APP: new Set([]) };
-const set = new Set([]);
+// Module 7596 (set)
+const obj = { IN_APP: new Set([341524736, 725680130, 1090519429, 113853, 32699713, -1261747968, 1967194113, 1090519450, 108219, 27704385, -1497546496]) };
+const set = new Set([341524736, 725680130, 1090519429, 113853, 32699713, -1261747968, 1967194113, 1090519450, 108219, 27704385, -1497546496]);
 obj.REPORT_TO_MOD = new Set([]);
 const set1 = new Set([]);
 obj.UNAUTHENTICATED = new Set([]);
 const set2 = new Set([]);
-obj.CONSOLE = new Set([-163512319, 1090519453]);
+obj.CONSOLE = new Set(["<string:1090519454>", "discord_protos.discord_experimentation.v1.PlatformVersionRange"]);
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_common/js/shared/shared-constants/ReportMenuType.tsx");
 

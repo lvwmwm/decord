@@ -1,10 +1,10 @@
-// Module ID: 6635
-// Function ID: 50939
+// Module ID: 6641
+// Function ID: 50988
 // Name: LinkButton
 // Dependencies: []
 // Exports: LinkButton
 
-// Module 6635 (LinkButton)
+// Module 6641 (LinkButton)
 importAll(dependencyMap[0]);
 ({ jsx: closure_2, jsxs: closure_3 } = arg1(dependencyMap[1]));
 const tmp3 = arg1(dependencyMap[1]);

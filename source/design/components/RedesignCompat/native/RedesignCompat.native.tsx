@@ -1,10 +1,10 @@
-// Module ID: 5425
-// Function ID: 46460
+// Module ID: 5427
+// Function ID: 46502
 // Name: context
 // Dependencies: []
 // Exports: RedesignCompat
 
-// Module 5425 (context)
+// Module 5427 (context)
 const jsx = arg1(dependencyMap[1]).jsx;
 const context = importAll(dependencyMap[0]).createContext(false);
 const importAllResult = importAll(dependencyMap[0]);

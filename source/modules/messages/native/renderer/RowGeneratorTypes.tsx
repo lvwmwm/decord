@@ -1,9 +1,9 @@
-// Module ID: 7797
-// Function ID: 62232
+// Module ID: 7801
+// Function ID: 62244
 // Name: MediaGalleryItemType
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 7797 (MediaGalleryItemType)
+// Module 7801 (MediaGalleryItemType)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("modules/messages/native/renderer/RowGeneratorTypes.tsx");
 

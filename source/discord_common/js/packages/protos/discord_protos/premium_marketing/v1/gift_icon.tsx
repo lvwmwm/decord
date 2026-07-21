@@ -1,9 +1,9 @@
-// Module ID: 7132
-// Function ID: 57484
+// Module ID: 7136
+// Function ID: 57495
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
-// Module 7132 (_isNativeReflectConstruct)
+// Module 7136 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -27,13 +27,13 @@ let tmp2 = (MessageType) => {
       items = [, , , ];
       items[0] = {};
       items[1] = {};
-      items[2] = { body: "card_asset_url", guildId: "scalar", ao: 9, "": 3 };
-      obj = { emojiId: 1, emojiName: "center", userId: "flex-start" };
+      items[2] = { 9223372036854775807: "card_asset_url", 0: "scalar", 9223372036854775807: 9, no: 7 };
+      obj = { "Null": 1, "Null": "center", "Null": "flex-start" };
       obj.T = function T() {
         return callback(closure_1[6]).Gradient;
       };
       items[3] = obj;
-      items1 = [false];
+      items1 = [null];
       items1[1] = items;
       obj2 = closure_6(GiftIcon$Type);
       tmp2 = closure_5;
@@ -53,7 +53,7 @@ let tmp2 = (MessageType) => {
   let obj = {
     key: "create",
     value(arr) {
-      let obj = { "Bool(true)": null, "Bool(true)": null, "Bool(true)": null };
+      let obj = { -1760425721: false, -854704367: false, 236014867: false };
       const _Object = Object;
       obj = { enumerable: false, value: this };
       _Object.defineProperty(obj, GiftIcon$Type(closure_1[7]).MESSAGE_TYPE, obj);

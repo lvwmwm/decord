@@ -1,10 +1,10 @@
-// Module ID: 11398
-// Function ID: 88688
+// Module ID: 11405
+// Function ID: 88712
 // Name: useInvitesDisabledPermission
 // Dependencies: []
 // Exports: useShouldShowInvitesDisabledNotif
 
-// Module 11398 (useInvitesDisabledPermission)
+// Module 11405 (useInvitesDisabledPermission)
 function useInvitesDisabledPermission(guild) {
   const arg1 = guild;
   const items = [closure_3];

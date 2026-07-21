@@ -1,10 +1,10 @@
-// Module ID: 11911
-// Function ID: 92198
+// Module ID: 11918
+// Function ID: 92221
 // Name: ActiveTimestamp
 // Dependencies: []
 // Exports: CustomStatusTimestampBadge, GameTimestampBadge, MarathonBadge, NewGameBadge, ResurrectedBadge, StreakBadge, TopGameBadge, TrendingBadge
 
-// Module 11911 (ActiveTimestamp)
+// Module 11918 (ActiveTimestamp)
 class ActiveTimestamp {
   constructor(arg0) {
     entry = global.entry;
@@ -16,10 +16,7 @@ class ActiveTimestamp {
     items[0] = entry;
     items[1] = now;
     memo = importAll.useMemo(() => entry(closure_2[7]).formatActiveTimestamp(entry, now), items);
-    obj = { "Bool(true)": null, "Bool(true)": 8, "Bool(true)": "center", "Bool(true)": "space-between" };
-    obj.style = global.style;
-    obj.children = memo;
-    return jsx(arg1(dependencyMap[8]).Text, obj);
+    return jsx(arg1(dependencyMap[8]).Text, { style: global.style, children: memo });
   }
 }
 function ContentTimestamp(entry) {
@@ -57,8 +54,8 @@ const View = arg1(dependencyMap[1]).View;
 let closure_5 = importDefault(dependencyMap[2]);
 ({ jsx: closure_6, jsxs: closure_7, Fragment: closure_8 } = arg1(dependencyMap[3]));
 let obj = arg1(dependencyMap[4]);
-obj = { icon: { aze: "<string:16777479>", azj: "<string:36295491>" } };
-obj = { split: 18, Text: 49, container: -469762048, messageId: 1208895, y: -1179648, isArray: 3276799, padding: 0, HermesInternal: 1363141632, paddingVertical: importDefault(dependencyMap[5]).space.PX_4, paddingLeft: importDefault(dependencyMap[5]).space.PX_8, borderRadius: importDefault(dependencyMap[5]).radii.sm };
+obj = { icon: {} };
+obj = { "Bool(true)": 18, "Bool(true)": 49, "Bool(true)": -469762048, "Bool(true)": 1208895, "Bool(true)": -1179648, "Bool(true)": 3276799, "Bool(true)": 0, "Bool(true)": 1363141632, paddingVertical: importDefault(dependencyMap[5]).space.PX_4, paddingLeft: importDefault(dependencyMap[5]).space.PX_8, borderRadius: importDefault(dependencyMap[5]).radii.sm };
 obj.badgeContainer = obj;
 const tmp2 = arg1(dependencyMap[3]);
 obj.text = { color: importDefault(dependencyMap[5]).colors.CONTENT_INVENTORY_OVERLAY_TEXT_SECONDARY };

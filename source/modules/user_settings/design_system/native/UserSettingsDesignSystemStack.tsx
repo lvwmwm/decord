@@ -1,10 +1,10 @@
-// Module ID: 14323
-// Function ID: 108175
+// Module ID: 14330
+// Function ID: 108198
 // Name: StackBlock
 // Dependencies: []
 // Exports: default
 
-// Module 14323 (StackBlock)
+// Module 14330 (StackBlock)
 function StackBlock() {
   return callback(closure_2, { style: callback3().block });
 }
@@ -13,7 +13,7 @@ importAll(dependencyMap[0]);
 const tmp3 = arg1(dependencyMap[1]);
 ({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[2]));
 let obj = arg1(dependencyMap[3]);
-obj = { container: { <string:2186471382>: true, <string:1688044701>: true, <string:1672539340>: true } };
+obj = { container: { label: true, placeholder: true, description: true } };
 obj = { borderRadius: importDefault(dependencyMap[4]).radii.lg, backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_MOD_STRONG, height: 80, flex: 1 };
 obj.block = obj;
 let closure_6 = obj.createStyles(obj);
@@ -26,7 +26,7 @@ export default function UserSettingsDesignSystemStack() {
   obj = { spacing: 16 };
   const obj1 = {};
   const obj2 = {};
-  const items = [callback(arg1(dependencyMap[7]).Text, {}), callback(arg1(dependencyMap[7]).Text, { "Bool(false)": true, "Bool(false)": true, "Bool(false)": true }), ];
+  const items = [callback(arg1(dependencyMap[7]).Text, { "Null": "r", "Null": "isArray" }), callback(arg1(dependencyMap[7]).Text, { "Bool(false)": false, "Bool(false)": false, "Bool(false)": false }), ];
   const obj3 = {};
   const items1 = [callback(StackBlock, {}), callback(StackBlock, {})];
   obj3.children = items1;
@@ -36,7 +36,7 @@ export default function UserSettingsDesignSystemStack() {
   const items2 = [callback(arg1(dependencyMap[6]).Card, obj1), , ];
   const obj4 = {};
   const obj5 = {};
-  const items3 = [callback(arg1(dependencyMap[7]).Text, { position: "Show role colors next to names", width: "color-next-to-names" }), callback(arg1(dependencyMap[7]).Text, {}), ];
+  const items3 = [callback(arg1(dependencyMap[7]).Text, { "Null": "text-md/normal", "Null": "Toggle the state of a single setting on or off, immediately" }), callback(arg1(dependencyMap[7]).Text, { "Bool(false)": "Emoji", "Bool(false)": false, "Bool(false)": "Display images, videos, and lolcats" }), ];
   const obj6 = { spacing: 24 };
   const items4 = [callback(StackBlock, {}), callback(StackBlock, {})];
   obj6.children = items4;
@@ -46,7 +46,7 @@ export default function UserSettingsDesignSystemStack() {
   items2[1] = callback(arg1(dependencyMap[6]).Card, obj4);
   const obj7 = {};
   const obj8 = {};
-  const items5 = [callback(arg1(dependencyMap[7]).Text, { position: "Don't show role colors", width: "no-color" }), callback(arg1(dependencyMap[7]).Text, { "Bool(false)": "heading-lg/bold", "Bool(false)": "Switch", "Bool(false)": "text-md/normal" }), ];
+  const items5 = [callback(arg1(dependencyMap[7]).Text, { "Null": "Array", "Null": "questDockWrapperSpecs" }), callback(arg1(dependencyMap[7]).Text, { "Bool(false)": "heading-lg/bold", "Bool(false)": "Inline Checkbox", "Bool(false)": "heading-lg/bold" }), ];
   const obj9 = { direction: "horizontal" };
   const items6 = [callback(StackBlock, {}), callback(StackBlock, {})];
   obj9.children = items6;

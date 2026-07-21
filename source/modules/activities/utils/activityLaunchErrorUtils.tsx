@@ -1,10 +1,10 @@
-// Module ID: 10498
-// Function ID: 82001
+// Module ID: 10504
+// Function ID: 82024
 // Name: _getActivityLaunchErrorInfo
 // Dependencies: []
 // Exports: getActivityLaunchErrorInfo
 
-// Module 10498 (_getActivityLaunchErrorInfo)
+// Module 10504 (_getActivityLaunchErrorInfo)
 function _getActivityLaunchErrorInfo() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);

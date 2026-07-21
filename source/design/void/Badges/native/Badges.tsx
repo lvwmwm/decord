@@ -1,16 +1,16 @@
-// Module ID: 12974
-// Function ID: 98804
+// Module ID: 12981
+// Function ID: 98827
 // Name: BadgeColors
 // Dependencies: []
 // Exports: TextBadge
 
-// Module 12974 (BadgeColors)
+// Module 12981 (BadgeColors)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 const jsx = arg1(dependencyMap[2]).jsx;
 let obj = arg1(dependencyMap[3]);
 obj = {};
-obj = { borderRadius: importDefault(dependencyMap[4]).radii.sm };
+obj = { "Null": null, "Null": null, "Null": null, borderRadius: importDefault(dependencyMap[4]).radii.sm };
 obj.base = obj;
 obj.danger = { backgroundColor: importDefault(dependencyMap[4]).colors.BADGE_NOTIFICATION_BACKGROUND };
 const obj1 = { backgroundColor: importDefault(dependencyMap[4]).colors.BADGE_NOTIFICATION_BACKGROUND };

@@ -1,10 +1,10 @@
-// Module ID: 11191
-// Function ID: 87187
+// Module ID: 11197
+// Function ID: 87210
 // Name: useClickOnHomeActivityOpensAppDetails
 // Dependencies: []
 // Exports: useClickOnHomeActivityOpensAppDetails
 
-// Module 11191 (useClickOnHomeActivityOpensAppDetails)
+// Module 11197 (useClickOnHomeActivityOpensAppDetails)
 const _module = require(dependencyMap[1]);
 const result = _module.fileFinishedImporting("modules/app_launcher/hooks/useClickOnHomeActivityOpensAppDetails.tsx");
 

@@ -1,10 +1,10 @@
-// Module ID: 12354
-// Function ID: 94516
+// Module ID: 12361
+// Function ID: 94539
 // Name: PremiumPlanSelectYearlyUpsellModal
 // Dependencies: []
 // Exports: default
 
-// Module 12354 (PremiumPlanSelectYearlyUpsellModal)
+// Module 12361 (PremiumPlanSelectYearlyUpsellModal)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 ({ Image: closure_5, View: closure_6 } = arg1(dependencyMap[2]));
@@ -27,7 +27,7 @@ const tmp3 = arg1(dependencyMap[8]);
 obj.description = { color: arg1(dependencyMap[11]).DARK_WHITE_500_LIGHT_BLACK_500 };
 obj.upsellButton = { marginBottom: 16 };
 obj.continueButton = { marginBottom: 4 };
-obj.cancelButton = { visible: 1, transparent: "comp_0" };
+obj.cancelButton = {};
 let closure_13 = obj.createStyles(obj);
 const obj1 = { color: arg1(dependencyMap[11]).DARK_WHITE_500_LIGHT_BLACK_500 };
 const result = arg1(dependencyMap[21]).fileFinishedImporting("modules/premium/native/PremiumPlanSelectYearlyUpsellModal.tsx");

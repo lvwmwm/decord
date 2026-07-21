@@ -1,9 +1,9 @@
-// Module ID: 14972
-// Function ID: 112731
+// Module ID: 14979
+// Function ID: 112755
 // Name: RemoveMultiAccountUserButton
 // Dependencies: []
 
-// Module 14972 (RemoveMultiAccountUserButton)
+// Module 14979 (RemoveMultiAccountUserButton)
 function RemoveMultiAccountUserButton(user) {
   user = user.user;
   const arg1 = user;
@@ -123,7 +123,7 @@ function ManageAccounts(isEditing) {
       }
       obj.onPressUser = fn;
       obj.showActiveAccountLabel = true;
-      obj = { flex: null, flexShrink: null, flexGrow: null, component: navigation(multiAccountUsers[23]).View, style: closure_6 };
+      obj = { lineHeight: null, textAlign: null, marginTop: null, component: navigation(multiAccountUsers[23]).View, style: closure_6 };
       let tmp4 = isEditing;
       if (isEditing) {
         obj = { duration: closure_12 };
@@ -134,7 +134,7 @@ function ManageAccounts(isEditing) {
       }
       obj.children = tmp4;
       obj.leading = callback(isEditing(multiAccountUsers[30]).TransitionGroup, obj);
-      const obj2 = { component: closure_7, style: callback.trailingIconContainer };
+      const obj2 = { descriptionEllipsisDots: true, paddingTop: true, paddingBottom: true, display: true, component: closure_7, style: callback.trailingIconContainer };
       const tmp15 = navigation(multiAccountUsers[31]);
       const obj3 = { duration: closure_12, style: callback.trailingIcon };
       if (isEditing) {
@@ -158,7 +158,7 @@ function ManageAccounts(isEditing) {
     scrollEventThrottle: 16,
     scrollEnabled: true
   };
-  obj2 = { component: closure_7 };
+  obj2 = { descriptionEllipsisDots: true, paddingTop: true, paddingBottom: true, display: true, component: closure_7 };
   let tmp8 = !isEditing;
   if (tmp8) {
     obj3 = { duration: closure_12 };
@@ -214,13 +214,13 @@ let obj1 = arg1(dependencyMap[12]);
 let closure_20 = obj1.createNativeStackNavigator();
 let obj2 = arg1(dependencyMap[13]);
 let obj = {};
-obj = { 9223372036854775807: "isArray", 9223372036854775807: "constructor", 9223372036854775807: "warn", backgroundColor: importDefault(dependencyMap[14]).colors.BACKGROUND_BASE_LOW };
+obj = { textViewStyle: true, imageStyle: true, fillOpacity: true, backgroundColor: importDefault(dependencyMap[14]).colors.BACKGROUND_BASE_LOW };
 obj.container = obj;
 obj1 = { flex: 1, backgroundColor: importDefault(dependencyMap[14]).colors.BACKGROUND_BASE_LOW };
 obj.sortableListView = obj1;
 obj2 = { color: importDefault(dependencyMap[14]).colors.TEXT_LINK };
 obj.addAccountLabel = obj2;
-obj.trailingIconContainer = { aze: false, azj: false };
+obj.trailingIconContainer = { bhk: "<string:1027735553>", bic: "<string:4143972873>" };
 obj.trailingIcon = { position: "absolute" };
 let closure_21 = obj2.createStyles(obj);
 let closure_22 = { code: "function ManageAccountsModalTsx1(){const{withTiming,leadingWidth,MANAGE_EDIT_TRANSITION_DURATION}=this.__closure;return{width:withTiming(leadingWidth.get(),{duration:MANAGE_EDIT_TRANSITION_DURATION})};}" };

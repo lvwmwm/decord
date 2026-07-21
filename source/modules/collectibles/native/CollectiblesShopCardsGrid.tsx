@@ -1,10 +1,10 @@
-// Module ID: 14358
-// Function ID: 108420
+// Module ID: 14365
+// Function ID: 108443
 // Name: ShopCardGridItem
 // Dependencies: []
 // Exports: default
 
-// Module 14358 (ShopCardGridItem)
+// Module 14365 (ShopCardGridItem)
 function ShopCardGridItem(index) {
   let cardWidth;
   let disableBundleStaticBackground;

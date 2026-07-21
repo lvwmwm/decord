@@ -1,10 +1,10 @@
-// Module ID: 8650
-// Function ID: 68472
+// Module ID: 8654
+// Function ID: 68484
 // Name: HorizontalSpacing
 // Dependencies: []
 // Exports: default
 
-// Module 8650 (HorizontalSpacing)
+// Module 8654 (HorizontalSpacing)
 function HorizontalSpacing() {
   let obj = {};
   obj = { width: arg1(dependencyMap[6]).COLLECTIBLES_SHOP_CARD_GAP };
@@ -36,11 +36,11 @@ function GameProfileShopCarouselContent(trackAction) {
   if (0 !== stateFromStoresArray.length) {
     obj = { style: tmp.container };
     obj = { style: tmp.header };
-    obj1 = { INTEGRATION_CREATE: "polite", ConstraintReasonCode: "column" };
+    obj1 = {};
     const intl = arg1(dependencyMap[14]).intl;
     obj1.children = intl.string(arg1(dependencyMap[14]).t.5DYPT8);
     const items2 = [callback(arg1(dependencyMap[13]).Text, obj1), ];
-    obj2 = {};
+    obj2 = { "Bool(false)": "black", "Bool(true)": 34, "Bool(true)": null, "Bool(true)": true, "Bool(true)": "yes" };
     const intl2 = arg1(dependencyMap[14]).intl;
     obj2.text = intl2.string(arg1(dependencyMap[14]).t.budhsM);
     const obj3 = { size: "sm" };
@@ -92,7 +92,7 @@ let obj = arg1(dependencyMap[4]);
 obj = {};
 obj = { gap: importDefault(dependencyMap[5]).space.PX_8, marginHorizontal: -1 * importDefault(dependencyMap[5]).space.PX_16 };
 obj.container = obj;
-const obj1 = { "Bool(true)": null, "Bool(true)": null, "Bool(true)": null, paddingHorizontal: importDefault(dependencyMap[5]).space.PX_8, marginHorizontal: importDefault(dependencyMap[5]).space.PX_16 };
+const obj1 = { padding: "Next", paddingBottom: null, flexDirection: null, paddingHorizontal: importDefault(dependencyMap[5]).space.PX_8, marginHorizontal: importDefault(dependencyMap[5]).space.PX_16 };
 obj.header = obj1;
 const tmp2 = arg1(dependencyMap[3]);
 obj.card = { borderRadius: importDefault(dependencyMap[5]).radii.lg };

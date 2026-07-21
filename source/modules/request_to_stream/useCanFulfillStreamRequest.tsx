@@ -1,10 +1,10 @@
-// Module ID: 10902
-// Function ID: 84726
+// Module ID: 10907
+// Function ID: 84747
 // Name: canFulfillStreamRequest
 // Dependencies: []
 // Exports: default
 
-// Module 10902 (canFulfillStreamRequest)
+// Module 10907 (canFulfillStreamRequest)
 function canFulfillStreamRequest(channel_id, arg1) {
   let flag = arg1;
   let obj = arg2;

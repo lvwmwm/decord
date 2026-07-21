@@ -1,10 +1,10 @@
-// Module ID: 5963
-// Function ID: 49818
+// Module ID: 5965
+// Function ID: 49861
 // Name: ControllerIllocon
 // Dependencies: []
 // Exports: ControllerIllocon
 
-// Module 5963 (ControllerIllocon)
+// Module 5965 (ControllerIllocon)
 const jsx = require(dependencyMap[0]).jsx;
 const _module = require(dependencyMap[3]);
 const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/ControllerIllocon.native.tsx");

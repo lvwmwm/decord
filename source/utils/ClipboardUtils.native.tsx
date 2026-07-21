@@ -1,10 +1,10 @@
-// Module ID: 5488
-// Function ID: 46779
+// Module ID: 5490
+// Function ID: 46821
 // Name: _copy
-// Dependencies: []
+// Dependencies: [355729408, 270270464, 360644608]
 // Exports: copy, getString
 
-// Module 5488 (_copy)
+// Module 5490 (_copy)
 async function _copy(arg0, arg1, arg2) {
   callback(closure_1[1]).setString(arg0);
   if (null != arg1) {

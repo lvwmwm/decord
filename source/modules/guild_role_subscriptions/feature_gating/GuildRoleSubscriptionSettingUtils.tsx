@@ -1,10 +1,10 @@
-// Module ID: 5635
-// Function ID: 48148
+// Module ID: 5637
+// Function ID: 48190
 // Name: canSeeGuildRoleSubscriptionSettingsContent
 // Dependencies: []
 // Exports: canSeeGuildRoleSubscriptionSettings, getGuildRoleSubscriptionSettingsVisibility, useCanSeeGuildRoleSubscriptionSettings
 
-// Module 5635 (canSeeGuildRoleSubscriptionSettingsContent)
+// Module 5637 (canSeeGuildRoleSubscriptionSettingsContent)
 function canSeeGuildRoleSubscriptionSettingsContent(canManageGuildRoleSubscriptions) {
   let guild;
   let isOwner;

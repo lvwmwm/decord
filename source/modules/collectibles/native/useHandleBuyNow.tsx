@@ -1,10 +1,10 @@
-// Module ID: 11820
-// Function ID: 91663
+// Module ID: 11827
+// Function ID: 91686
 // Name: useHandleBuyNow
 // Dependencies: []
 // Exports: default, useHandleBuyNow
 
-// Module 11820 (useHandleBuyNow)
+// Module 11827 (useHandleBuyNow)
 function useHandleBuyNow(product) {
   let analyticsLocations;
   let orderId;

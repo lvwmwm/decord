@@ -1,10 +1,10 @@
-// Module ID: 6621
-// Function ID: 50805
+// Module ID: 6627
+// Function ID: 50854
 // Name: WumpusGearSpotIllustration
 // Dependencies: []
 // Exports: WumpusGearSpotIllustration
 
-// Module 6621 (WumpusGearSpotIllustration)
+// Module 6627 (WumpusGearSpotIllustration)
 const jsx = require(dependencyMap[0]).jsx;
 const _module = require(dependencyMap[3]);
 const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/WumpusGearSpotIllustration.native.tsx");

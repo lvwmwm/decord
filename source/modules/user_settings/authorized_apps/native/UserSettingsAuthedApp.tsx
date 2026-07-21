@@ -1,10 +1,10 @@
-// Module ID: 13714
-// Function ID: 103780
+// Module ID: 13721
+// Function ID: 103803
 // Name: WarningLabel
 // Dependencies: []
 // Exports: default
 
-// Module 13714 (WarningLabel)
+// Module 13721 (WarningLabel)
 function WarningLabel(children) {
   const tmp = callback3();
   let obj = { style: tmp.warningContainer };
@@ -65,10 +65,10 @@ let closure_16 = arg1(dependencyMap[10]).BLOCK_CONFIRMATION_ACTION_SHEET_KEY;
 const tmp3 = arg1(dependencyMap[8]);
 ({ jsx: closure_17, jsxs: closure_18 } = arg1(dependencyMap[11]));
 let obj = arg1(dependencyMap[12]);
-obj = { container: {}, section: { marginBottom: 24 }, header: { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null }, appAboutDescription: { width: "100%" } };
+obj = { container: {}, section: { marginBottom: 24 }, header: { position: false, top: false, left: false, opacity: false }, appAboutDescription: { width: "100%" } };
 obj = { marginTop: importDefault(dependencyMap[13]).space.PX_12 };
 obj.warningContainer = obj;
-const obj1 = { useTrackPdpClick: "Text", GameDetectionDebugLevel: "round", presenceCount: "window", color: importDefault(dependencyMap[13]).colors.TEXT_MUTED };
+const obj1 = { 0: 24, 9223372036854775807: 24, -9223372036854775808: null, color: importDefault(dependencyMap[13]).colors.TEXT_MUTED };
 obj.warningIcon = obj1;
 let closure_19 = obj.createStyles(obj);
 const tmp4 = arg1(dependencyMap[11]);
@@ -156,7 +156,7 @@ export default function UserSettingsAuthedApp(oauth2Token) {
   const items7 = [stateFromStores2];
   const stateFromStoresObject = obj8.useStateFromStoresObject(items6, () => {
     if (null == stateFromStores2) {
-      let obj = { <string:2494184035>: "midnight", <string:69340754>: "noon" };
+      let obj = { <string:2494184035>: true, <string:924993106>: true };
     } else {
       obj = { appDMChannelMuteConfig: closure_10.getChannelMuteConfig(null, stateFromStores2), muted: closure_10.isChannelMuted(null, stateFromStores2) };
     }
@@ -187,7 +187,7 @@ export default function UserSettingsAuthedApp(oauth2Token) {
   if (undefined !== description) {
     tmp18 = null;
     if ("" !== description) {
-      obj4 = { Promise: "xs", marginTop: "interactive-text-default", flags: "md", style: tmp.appAboutDescription };
+      obj4 = { "Null": "xs", "Null": "interactive-text-default", "Null": "md", style: tmp.appAboutDescription };
       let obj16 = arg1(dependencyMap[42]);
       obj4.children = obj16.parseBioReactWithCachedAST(description);
       tmp18 = callback(arg1(dependencyMap[41]).Text, obj4);
@@ -199,7 +199,7 @@ export default function UserSettingsAuthedApp(oauth2Token) {
   let tmp23Result = null;
   if (null != stateFromStores2) {
     obj5 = { style: tmp.section };
-    const obj6 = { width: true, height: true };
+    const obj6 = { "Bool(false)": null, "Bool(false)": "1dc3d638940bcdf9b267c8229f603041" };
     obj7 = { label: "Mute DMs" };
     let end_time;
     if (null != appDMChannelMuteConfig) {

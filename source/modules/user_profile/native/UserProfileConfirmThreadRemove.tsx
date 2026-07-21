@@ -1,10 +1,10 @@
-// Module ID: 11641
-// Function ID: 90339
+// Module ID: 11648
+// Function ID: 90362
 // Name: UserProfileConfirmThreadRemove
 // Dependencies: []
 // Exports: default
 
-// Module 11641 (UserProfileConfirmThreadRemove)
+// Module 11648 (UserProfileConfirmThreadRemove)
 importAll(dependencyMap[0]);
 ({ jsx: closure_3, jsxs: closure_4 } = arg1(dependencyMap[1]));
 const tmp3 = arg1(dependencyMap[1]);

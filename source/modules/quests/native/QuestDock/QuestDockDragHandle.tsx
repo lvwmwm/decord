@@ -1,9 +1,9 @@
-// Module ID: 13960
-// Function ID: 106131
+// Module ID: 13967
+// Function ID: 106154
 // Name: getDragHandleOffsetLeft
 // Dependencies: []
 
-// Module 13960 (getDragHandleOffsetLeft)
+// Module 13967 (getDragHandleOffsetLeft)
 const importAllResult = importAll(dependencyMap[0]);
 const StyleSheet = arg1(dependencyMap[1]).StyleSheet;
 const QuestDockMode = arg1(dependencyMap[2]).QuestDockMode;
@@ -168,7 +168,7 @@ const memoResult = importAllResult.memo(function QuestDockDragHandle(isExpanded)
   obj6.accessibilityLabel = stringResult;
   obj5.children = callback(arg1(dependencyMap[14]).ActionSheetHeaderBar, obj6);
   const items2 = [callback(importDefault(dependencyMap[12]), obj5), ];
-  const obj7 = { alignItems: "absolute", justifyContent: "50%", position: "hidden", alignSelf: "50%" };
+  const obj7 = { "Bool(true)": "/assets/design/components/Icon/native/redesign/generated/images", "Bool(true)": 24, "Bool(true)": 24, "Bool(true)": null };
   const items3 = [tmp.dragHandleOverlay, animatedStyle2];
   obj7.style = items3;
   const tmp14 = importDefault(dependencyMap[12]);

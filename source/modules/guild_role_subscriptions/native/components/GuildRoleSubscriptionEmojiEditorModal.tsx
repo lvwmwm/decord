@@ -1,10 +1,10 @@
-// Module ID: 16314
-// Function ID: 125924
+// Module ID: 16321
+// Function ID: 125955
 // Name: GuildRoleSubscriptionEmojiEditorModal
 // Dependencies: []
 // Exports: default
 
-// Module 16314 (GuildRoleSubscriptionEmojiEditorModal)
+// Module 16321 (GuildRoleSubscriptionEmojiEditorModal)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 let closure_5 = importAll(dependencyMap[2]);
@@ -14,12 +14,12 @@ const tmp2 = arg1(dependencyMap[3]);
 ({ jsx: closure_9, Fragment: closure_10, jsxs: closure_11 } = arg1(dependencyMap[5]));
 let obj = arg1(dependencyMap[6]);
 obj = {};
-obj = { backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_BASE_LOW };
+obj = { 9223372036854775807: 8, 0: 4, 0: 16, 0: "text-xs/normal", 0: "text-feedback-critical", backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_BASE_LOW };
 obj.container = obj;
-const obj1 = { "Bool(false)": true, "Bool(false)": true, "Bool(false)": null, borderRadius: importDefault(dependencyMap[7]).radii.sm, backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_SURFACE_HIGH };
+const obj1 = { d: "Array", E: "manual_wheelchair", E: "Array", borderRadius: importDefault(dependencyMap[7]).radii.sm, backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_SURFACE_HIGH };
 obj.emojiList = obj1;
 obj.row = {};
-obj.emojiImage = { position: "flex-start", minWidth: 12, height: 12 };
+obj.emojiImage = { flexDirection: "flex-start", alignItems: 12, paddingStart: 12 };
 obj.emojiAlias = { marginBottom: 2 };
 let closure_12 = obj.createStyles(obj);
 const tmp3 = arg1(dependencyMap[5]);
@@ -135,7 +135,7 @@ export default function GuildRoleSubscriptionEmojiEditorModal(guildId) {
           const intl = item(closure_2[13]).intl;
           obj1.children = intl.string(item(closure_2[13]).t.1GlN06);
           const items1 = [callback3(item(closure_2[18]).Text, obj1), ];
-          const obj2 = { INTEGRATION_CREATE: null, ConstraintReasonCode: null };
+          const obj2 = {};
           const intl2 = item(closure_2[13]).intl;
           obj2.children = intl2.string(item(closure_2[13]).t.J0XdJ4);
           items1[1] = callback3(item(closure_2[18]).Text, obj2);

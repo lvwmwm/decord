@@ -1,9 +1,9 @@
-// Module ID: 14874
-// Function ID: 112044
+// Module ID: 14881
+// Function ID: 112068
 // Name: metadata
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 14874 (metadata)
+// Module 14881 (metadata)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_assets/assets/powerups/file-upload-static-2x.png.js");
 

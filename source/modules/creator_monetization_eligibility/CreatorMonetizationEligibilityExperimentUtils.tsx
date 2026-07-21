@@ -1,10 +1,10 @@
-// Module ID: 5636
-// Function ID: 48159
+// Module ID: 5638
+// Function ID: 48201
 // Name: getCreatorMonetizationEligibleCountry
 // Dependencies: []
 // Exports: isExpeditedMonetizationOnboardingGuild, isUserInCreatorMonetizationEligibleCountry, useIsExpeditedOnboardingGuild, useIsUserInCreatorMonetizationEligibleCountry
 
-// Module 5636 (getCreatorMonetizationEligibleCountry)
+// Module 5638 (getCreatorMonetizationEligibleCountry)
 function getCreatorMonetizationEligibleCountry() {
   const currentUser = currentUser.getCurrentUser();
   let country;

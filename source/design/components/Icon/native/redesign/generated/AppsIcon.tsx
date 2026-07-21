@@ -1,10 +1,10 @@
-// Module ID: 9063
-// Function ID: 71121
+// Module ID: 9067
+// Function ID: 71133
 // Name: AppsIcon
 // Dependencies: []
 // Exports: AppsIcon
 
-// Module 9063 (AppsIcon)
+// Module 9067 (AppsIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/AppsIcon.tsx");

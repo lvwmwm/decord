@@ -1,10 +1,10 @@
-// Module ID: 8448
-// Function ID: 67436
+// Module ID: 8452
+// Function ID: 67448
 // Name: GuildEventsNoContent
 // Dependencies: []
 // Exports: default
 
-// Module 8448 (GuildEventsNoContent)
+// Module 8452 (GuildEventsNoContent)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 let closure_4 = importDefault(dependencyMap[2]);
@@ -19,7 +19,7 @@ const tmp4 = arg1(dependencyMap[5]);
 const merged = Object.assign(importDefault(dependencyMap[7])(tmp3.Fonts.DISPLAY_EXTRABOLD, importDefault(dependencyMap[8]).colors.MOBILE_TEXT_HEADING_PRIMARY, 24, { marginBottom: 8 }));
 obj["textAlign"] = "center";
 obj.title = obj;
-obj.subtitle = { "Bool(false)": false, "Bool(false)": false };
+obj.subtitle = { <string:1500765900>: false, <string:637716783>: false };
 let closure_9 = obj.createStyles(obj);
 const importDefaultResult = importDefault(dependencyMap[7]);
 const obj1 = { marginBottom: 8 };
@@ -37,16 +37,16 @@ export default function GuildEventsNoContent(guild) {
   obj = { style: tmp.container };
   obj = { icon: importDefault(dependencyMap[11]), IconComponent: arg1(dependencyMap[12]).CalendarIcon };
   const items2 = [callback(importDefault(dependencyMap[10]), obj), , , ];
-  const obj1 = { 0: 24, 9223372036854775807: 24, 0: null, -9223372036854775808: "aa9c26c29990ba7a6584e51ab5c56efa", style: tmp.title };
+  const obj1 = { 1501064855: 24, -1267889981: 24, -1145697943: null, -1266241916: "aa9c26c29990ba7a6584e51ab5c56efa", style: tmp.title };
   const intl = arg1(dependencyMap[14]).intl;
   obj1.children = intl.string(arg1(dependencyMap[14]).t.WgZ+3D);
   items2[1] = callback(arg1(dependencyMap[13]).Text, obj1);
-  const obj2 = { Promise: "xs", marginTop: "interactive-text-default", flags: "md", style: tmp.subtitle };
+  const obj2 = { "Null": "xs", "Null": "interactive-text-default", "Null": "md", style: tmp.subtitle };
   const intl2 = arg1(dependencyMap[14]).intl;
   obj2.children = intl2.string(arg1(dependencyMap[14]).t.v/S/PG);
   items2[2] = callback(arg1(dependencyMap[13]).Text, obj2);
   if (stateFromStores) {
-    const obj3 = { Promise: "xs", marginTop: "interactive-text-default", flags: "md", style: tmp.subtitle };
+    const obj3 = { "Null": "xs", "Null": "interactive-text-default", "Null": "md", style: tmp.subtitle };
     const intl3 = arg1(dependencyMap[14]).intl;
     const obj4 = {
       onClick() {

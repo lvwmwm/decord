@@ -1,10 +1,10 @@
-// Module ID: 4316
-// Function ID: 37785
+// Module ID: 4320
+// Function ID: 37833
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 // Exports: collectChannelAnalyticsMetadataFromId, collectVoiceAnalyticsMetadata, getChannelOpenedMetadata, getCustomStatusMetadata, trackWithMetadata
 
-// Module 4316 (_createForOfIteratorHelperLoose)
+// Module 4320 (_createForOfIteratorHelperLoose)
 function _createForOfIteratorHelperLoose(@@iterator) {
   let require = Symbol_iterator;
   @@iterator = "undefined" !== typeof Symbol;
@@ -273,7 +273,7 @@ function getRecipientFriendCounts(recipients) {
 }
 function getVoiceStateMetadata(guildId, channelId, videoEnabled) {
   const require = channelId;
-  const obj = { "Bool(false)": false, "Bool(false)": true, video_enabled: videoEnabled };
+  const obj = { -974286143: -536870861, -2121617209: -299892737, video_enabled: videoEnabled };
   const importDefault = obj;
   const tmp = importDefault(dependencyMap[28]);
   const found = importDefault(dependencyMap[28])(store4.getVoiceStates(guildId)).filter((channelId) => channelId.channelId === arg1);

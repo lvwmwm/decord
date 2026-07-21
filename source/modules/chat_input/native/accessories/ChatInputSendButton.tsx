@@ -1,9 +1,9 @@
-// Module ID: 11343
-// Function ID: 88194
+// Module ID: 11349
+// Function ID: 88217
 // Name: renderChatInputSendButton
 // Dependencies: []
 
-// Module 11343 (renderChatInputSendButton)
+// Module 11349 (renderChatInputSendButton)
 function renderChatInputSendButton(type, arg1, state, cleanup) {
   const merged = Object.assign(arg1);
   return <closure_12 key={arg0} type={arg0} state={arg2} cleanup={arg3} />;

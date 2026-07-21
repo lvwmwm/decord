@@ -1,9 +1,9 @@
-// Module ID: 4677
-// Function ID: 40711
+// Module ID: 4679
+// Function ID: 40752
 // Name: NativePermissionActionCreators
 // Dependencies: []
 
-// Module 4677 (NativePermissionActionCreators)
+// Module 4679 (NativePermissionActionCreators)
 let closure_2 = importDefault(dependencyMap[0]);
 let closure_3 = importDefault(dependencyMap[1]);
 const tmp2 = () => {

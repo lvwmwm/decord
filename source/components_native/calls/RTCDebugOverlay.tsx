@@ -1,10 +1,10 @@
-// Module ID: 10748
-// Function ID: 83498
+// Module ID: 10754
+// Function ID: 83521
 // Name: Text
 // Dependencies: []
 // Exports: default
 
-// Module 10748 (Text)
+// Module 10754 (Text)
 function Text(arg0) {
   const obj = {};
   const merged = Object.assign(arg0);
@@ -152,7 +152,7 @@ const merged = Object.assign(tmp2.StyleSheet.absoluteFillObject);
 const tmp3 = arg1(dependencyMap[9]);
 obj["backgroundColor"] = arg1(dependencyMap[11]).hexWithOpacity(importDefault(dependencyMap[12]).unsafe_rawColors.BLACK, 0.7);
 obj.container = obj;
-obj.scroller = {};
+obj.scroller = { 0: "P", 0: 40 };
 obj.indent = { marginLeft: 16 };
 obj.row = { flexDirection: "row" };
 obj1 = { color: importDefault(dependencyMap[12]).unsafe_rawColors.WHITE, fontSize: 14 };

@@ -1,10 +1,10 @@
-// Module ID: 11706
-// Function ID: 90923
+// Module ID: 11713
+// Function ID: 90946
 // Name: useBackHandlerSkipPhoneScreens
 // Dependencies: []
 // Exports: default, useBackHandlerMinimizeApp
 
-// Module 11706 (useBackHandlerSkipPhoneScreens)
+// Module 11713 (useBackHandlerSkipPhoneScreens)
 const NativeModules = require(dependencyMap[0]).NativeModules;
 const ContactSyncScenes = require(dependencyMap[1]).ContactSyncScenes;
 const _module = require(dependencyMap[3]);

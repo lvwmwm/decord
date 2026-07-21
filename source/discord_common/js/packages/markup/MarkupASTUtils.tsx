@@ -1,10 +1,10 @@
-// Module ID: 7665
-// Function ID: 61257
+// Module ID: 7669
+// Function ID: 61269
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 // Exports: astToString
 
-// Module 7665 (_isNativeReflectConstruct)
+// Module 7669 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -318,7 +318,7 @@ function flattenAst(isSlate, content, content) {
 function constrainAst(content, arg1) {
   let obj = arg1;
   if (arg1 === undefined) {
-    obj = { -1228805774: "key", -531560351: "Text" };
+    obj = { "Bool(false)": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000033995391321045464, "Bool(false)": 9126805507 };
   }
   let closure_0 = obj;
   if (Array.isArray(content)) {

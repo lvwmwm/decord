@@ -1,9 +1,9 @@
-// Module ID: 12477
-// Function ID: 95342
+// Module ID: 12484
+// Function ID: 95365
 // Name: StateManager
 // Dependencies: []
 
-// Module 12477 (StateManager)
+// Module 12484 (StateManager)
 let closure_2 = importDefault(dependencyMap[0]);
 let closure_3 = importDefault(dependencyMap[1]);
 const tmp2 = () => {

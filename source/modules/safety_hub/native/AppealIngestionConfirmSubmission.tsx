@@ -1,17 +1,17 @@
-// Module ID: 11033
-// Function ID: 85911
+// Module ID: 11038
+// Function ID: 85932
 // Name: AppealIngestionConfirmSubmission
 // Dependencies: []
 // Exports: default
 
-// Module 11033 (AppealIngestionConfirmSubmission)
+// Module 11038 (AppealIngestionConfirmSubmission)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 let closure_4 = importDefault(dependencyMap[2]);
 const EMPTY_STRING_SNOWFLAKE_ID = arg1(dependencyMap[3]).EMPTY_STRING_SNOWFLAKE_ID;
 ({ jsx: closure_6, jsxs: closure_7 } = arg1(dependencyMap[4]));
 const tmp3 = arg1(dependencyMap[4]);
-let closure_8 = arg1(dependencyMap[5]).createStyles({ container: { label: null, gap: null }, detailsAction: { marginBottom: 16 } });
+let closure_8 = arg1(dependencyMap[5]).createStyles({ container: { surrogates: true, scales: null }, detailsAction: { marginBottom: 16 } });
 const obj = arg1(dependencyMap[5]);
 const result = arg1(dependencyMap[19]).fileFinishedImporting("modules/safety_hub/native/AppealIngestionConfirmSubmission.tsx");
 
@@ -69,8 +69,6 @@ export default function AppealIngestionConfirmSubmission(isDsaEligible) {
     return tmp7(arg1(dependencyMap[9]).AppealIngestionModalScreen, obj);
   } else {
     const obj4 = {
-      INTEGRATION_CREATE: null,
-      ConstraintReasonCode: "a568e12daf3f479ad26c9db6582fe1a2",
       style: tmp.detailsAction,
       onPress() {
           let obj = callback2(paths[13]);

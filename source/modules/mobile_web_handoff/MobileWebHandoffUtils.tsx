@@ -1,9 +1,9 @@
-// Module ID: 5689
-// Function ID: 48951
+// Module ID: 5691
+// Function ID: 48994
 // Name: _createHandoffToken
 // Dependencies: []
 
-// Module 5689 (_createHandoffToken)
+// Module 5691 (_createHandoffToken)
 async function _createHandoffToken(key, arg1) {
   const HTTP = callback(closure_1[3]).HTTP;
   let obj = { url: constants.HANDOFF, body: obj };

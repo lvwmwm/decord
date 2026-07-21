@@ -1,10 +1,10 @@
-// Module ID: 6846
-// Function ID: 54112
+// Module ID: 6852
+// Function ID: 54158
 // Name: items
 // Dependencies: []
 // Exports: isGameWidget, isGameWidgetType
 
-// Module 6846 (items)
+// Module 6852 (items)
 let closure_2 = importDefault(dependencyMap[0]);
 let closure_3 = importDefault(dependencyMap[1]);
 const items = [arg1(dependencyMap[2]).WidgetType.CURRENT_GAMES, arg1(dependencyMap[2]).WidgetType.FAVORITE_GAMES, arg1(dependencyMap[2]).WidgetType.WANT_TO_PLAY_GAMES, arg1(dependencyMap[2]).WidgetType.PLAYED_GAMES];

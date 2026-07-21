@@ -1,10 +1,10 @@
-// Module ID: 10521
-// Function ID: 82198
+// Module ID: 10527
+// Function ID: 82221
 // Name: CameraPreview
 // Dependencies: []
 // Exports: default
 
-// Module 10521 (CameraPreview)
+// Module 10527 (CameraPreview)
 function CameraPreview(arg0) {
   let channel;
   let left;

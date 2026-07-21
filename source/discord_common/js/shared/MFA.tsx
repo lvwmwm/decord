@@ -1,13 +1,10 @@
-// Module ID: 14515
-// Function ID: 109325
+// Module ID: 14522
+// Function ID: 109347
 // Name: finishMFACheck
-// Dependencies: [0, 0, 0]
+// Dependencies: []
 // Exports: trySubmit
 
-// Module 14515 (finishMFACheck)
-import closure_2 from "result";
-import result from "result";
-
+// Module 14522 (finishMFACheck)
 function finishMFACheck() {
   return _finishMFACheck(...arguments);
 }
@@ -23,7 +20,8 @@ function _trySubmit() {
   const _trySubmit = obj;
   return obj(...arguments);
 }
-result = result.fileFinishedImporting("../discord_common/js/shared/MFA.tsx");
+let closure_2 = importDefault(dependencyMap[0]);
+const result = arg1(dependencyMap[2]).fileFinishedImporting("../discord_common/js/shared/MFA.tsx");
 
 export const BACKUP_CODE_MIN_LENGTH = 8;
 export const BACKUP_CODE_MAX_LENGTH = 11;

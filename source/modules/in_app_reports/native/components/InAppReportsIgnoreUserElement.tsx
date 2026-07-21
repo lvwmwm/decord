@@ -1,10 +1,10 @@
-// Module ID: 12208
-// Function ID: 93746
+// Module ID: 12215
+// Function ID: 93769
 // Name: IgnoreUserElement
 // Dependencies: []
 // Exports: default
 
-// Module 12208 (IgnoreUserElement)
+// Module 12215 (IgnoreUserElement)
 let closure_3 = importAll(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 let closure_5 = importDefault(dependencyMap[2]);

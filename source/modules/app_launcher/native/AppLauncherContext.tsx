@@ -1,10 +1,10 @@
-// Module ID: 10867
-// Function ID: 84529
+// Module ID: 10873
+// Function ID: 84552
 // Name: useAppLauncherChatInputRefDummy
 // Dependencies: []
 // Exports: useAppLauncherContext, useRequiredAppLauncherContext
 
-// Module 10867 (useAppLauncherChatInputRefDummy)
+// Module 10873 (useAppLauncherChatInputRefDummy)
 function useAppLauncherChatInputRefDummy(noop) {
   const arg1 = noop.noop;
   return importAllResult.useRef({

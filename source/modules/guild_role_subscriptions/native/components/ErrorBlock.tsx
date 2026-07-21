@@ -1,10 +1,10 @@
-// Module ID: 11312
-// Function ID: 88043
+// Module ID: 11318
+// Function ID: 88066
 // Name: ErrorBlock
 // Dependencies: []
 // Exports: default
 
-// Module 11312 (ErrorBlock)
+// Module 11318 (ErrorBlock)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/guild_role_subscriptions/native/components/ErrorBlock.tsx");

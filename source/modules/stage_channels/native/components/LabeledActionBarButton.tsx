@@ -1,22 +1,22 @@
-// Module ID: 10723
-// Function ID: 83398
+// Module ID: 10729
+// Function ID: 83421
 // Name: IconPosition
 // Dependencies: []
 // Exports: LabeledActionButton
 
-// Module 10723 (IconPosition)
+// Module 10729 (IconPosition)
 importAll(dependencyMap[0]);
 ({ Image: closure_2, View: closure_3 } = arg1(dependencyMap[1]));
 const tmp3 = arg1(dependencyMap[1]);
 ({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[3]));
 let obj = arg1(dependencyMap[4]);
 obj = {};
-obj = { backgroundColor: arg1(dependencyMap[5]).ACTION_BAR_BUTTON_BACKGROUND };
+obj = { <string:1364362083>: "number_line_settings", <string:1386747137>: "message", <string:2819990313>: 42, <string:1404987490>: "eligibility_persistence", <string:3816549847>: "enum", backgroundColor: arg1(dependencyMap[5]).ACTION_BAR_BUTTON_BACKGROUND };
 obj.buttonContainer = obj;
 obj.container = { marginHorizontal: 12 };
 obj.containerWithLabel = {};
 obj.pressable = {};
-obj.buttonContent = { "Bool(true)": 8, "Bool(true)": null, "Bool(true)": "\u270A\u{1F3FF}" };
+obj.buttonContent = {};
 const tmp4 = arg1(dependencyMap[3]);
 obj.buttonText = { color: importDefault(dependencyMap[6]).colors.WHITE, fontFamily: arg1(dependencyMap[2]).Fonts.PRIMARY_SEMIBOLD };
 obj.rightTextMargin = {};
@@ -37,7 +37,7 @@ export const LabeledActionButton = function LabeledActionButton(children) {
   if (iconPosition === undefined) {
     iconPosition = obj2.LEFT;
   }
-  let obj = { 1382375756: 1091658877, 705812916: 151597, -1436796059: 6258, 1382201186: 6144, 1314980677: -180289280, 1386894946: 1375732285, 2078191487: 1685947892 };
+  let obj = { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null };
   Object.setPrototypeOf(null);
   const merged = Object.assign(children, obj);
   const tmp4 = callback2();

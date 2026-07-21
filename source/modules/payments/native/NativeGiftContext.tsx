@@ -1,10 +1,10 @@
-// Module ID: 8797
-// Function ID: 69349
+// Module ID: 8801
+// Function ID: 69361
 // Name: importDefaultResult1
 // Dependencies: []
 // Exports: NativeGiftContextProvider
 
-// Module 8797 (importDefaultResult1)
+// Module 8801 (importDefaultResult1)
 let closure_3 = importDefault(dependencyMap[0]);
 const importDefaultResult = importDefault(dependencyMap[1]);
 let closure_5 = importAll(dependencyMap[2]);

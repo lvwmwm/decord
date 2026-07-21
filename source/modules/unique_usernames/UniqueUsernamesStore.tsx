@@ -1,11 +1,11 @@
-// Module ID: 13535
-// Function ID: 102702
+// Module ID: 13542
+// Function ID: 102725
 // Name: _isNativeReflectConstruct
-// Dependencies: [31, 27, 7656, 653, 33, 4126, 689, 7525, 1920, 4124]
+// Dependencies: [31, 27, 7655, 653, 33, 4126, 689, 7529, 1920, 4124]
 
-// Module 13535 (_isNativeReflectConstruct)
+// Module 13542 (_isNativeReflectConstruct)
 import module_31 from "module_31";
-import getActivityIndicator from "get ActivityIndicator";
+import keys from "keys";
 import MobileSetting from "MobileSetting";
 import ME from "ME";
 import module_33 from "module_33";
@@ -21,9 +21,9 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-let obj = { spacing: null, justify: null, direction: null, error: undefined };
-obj = {};
-importDefaultResult = new importDefaultResult({ "Null": null, "Null": null });
+let closure_7 = { error: undefined };
+let obj = {};
+importDefaultResult = new importDefaultResult({});
 obj.validations = importDefaultResult;
 obj.suggestions = { migration: { suggestion: { username: undefined } }, registration: { suggestion: { username: undefined }, source: undefined, fetched: false } };
 let tmp4 = (Store) => {
@@ -133,7 +133,7 @@ obj = {
     ({ username, error, retryAfter } = statusCode);
     if (429 === statusCode.statusCode) {
       let validations = obj.validations;
-      let obj = { spacing: null, justify: null, direction: null, error };
+      let obj = { error };
       let num = 7;
       if (null != retryAfter) {
         num = retryAfter;

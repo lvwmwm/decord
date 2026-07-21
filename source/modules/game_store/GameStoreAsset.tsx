@@ -1,10 +1,10 @@
-// Module ID: 13295
-// Function ID: 101063
+// Module ID: 13302
+// Function ID: 101086
 // Name: transformStoreAssetFromServer
-// Dependencies: []
+// Dependencies: [284214097]
 // Exports: transformStoreAssetFromServer
 
-// Module 13295 (transformStoreAssetFromServer)
+// Module 13302 (transformStoreAssetFromServer)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("modules/game_store/GameStoreAsset.tsx");
 

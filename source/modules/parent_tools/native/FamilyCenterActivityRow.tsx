@@ -1,10 +1,10 @@
-// Module ID: 13673
-// Function ID: 103530
+// Module ID: 13680
+// Function ID: 103553
 // Name: memoResult1
 // Dependencies: []
 // Exports: default
 
-// Module 13673 (memoResult1)
+// Module 13680 (memoResult1)
 const importAllResult = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 let closure_4 = importDefault(dependencyMap[2]);
@@ -14,11 +14,11 @@ const GuildFeatures = arg1(dependencyMap[5]).GuildFeatures;
 ({ jsx: closure_8, jsxs: closure_9 } = arg1(dependencyMap[6]));
 let obj1 = arg1(dependencyMap[7]);
 let obj = {};
-obj = { Encoders: true, blurAmount: true, blurStyle: true, blurTheme: true, resetChannelCallStore: true, borderBottomColor: importDefault(dependencyMap[8]).colors.BORDER_SUBTLE };
+obj = { borderBottomColor: importDefault(dependencyMap[8]).colors.BORDER_SUBTLE };
 obj.container = obj;
 obj1 = { borderRadius: arg1(dependencyMap[9]).AVATAR_SIZE_MAP[arg1(undefined, dependencyMap[9]).AvatarSizes.NORMAL] / 2, backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_SURFACE_HIGH };
 obj.avatar = obj1;
-obj.avatarContainer = { "Null": true, "Null": null };
+obj.avatarContainer = { accessibilityRole: true, y: null };
 obj.textContainer = {};
 obj.text = {};
 let closure_10 = obj1.createStyles(obj);
@@ -42,9 +42,9 @@ const memoResult = importAllResult.memo((action) => {
     obj.children = callback(arg1(dependencyMap[9]).Avatar, obj1);
     const items1 = [callback(View, obj), ];
     const obj2 = { style: tmp.textContainer };
-    const obj3 = { noCommandsTextContainer: "<string:1340029796>", beetle: "<string:1072076685>", communication_disabled_until: "<string:16823617>", 5sHHoy: "<string:1014300928>", "Null": "isArray", style: tmp.text, children: importDefault(dependencyMap[14]).getName(stateFromStores) };
+    const obj3 = { "Null": "<string:1340029796>", "Null": "<string:1072076685>", "Null": "<string:16825665>", "Null": "<string:1014300928>", "Null": "isArray", style: tmp.text, children: importDefault(dependencyMap[14]).getName(stateFromStores) };
     const items2 = [callback(arg1(dependencyMap[13]).Text, obj3), ];
-    const obj4 = { INTEGRATION_CREATE: "column", ConstraintReasonCode: "center" };
+    const obj4 = {};
     const obj8 = importDefault(dependencyMap[14]);
     const _Date = Date;
     const date = new Date(extractTimestampResult);
@@ -59,9 +59,9 @@ const memoResult = importAllResult.memo((action) => {
 memoResult.displayName = "FamilyCenterActivityRowUser";
 let obj5 = arg1(dependencyMap[7]);
 const obj2 = {};
+const obj3 = { "Bool(true)": "isArray", "Bool(true)": "constructor", "Bool(true)": "h", "Bool(true)": "isArray", "Bool(true)": "isArray", "Bool(true)": "isArray", borderBottomColor: importDefault(dependencyMap[8]).colors.BORDER_SUBTLE };
+obj2.container = obj3;
 const tmp2 = arg1(dependencyMap[6]);
-obj2.container = { borderBottomColor: importDefault(dependencyMap[8]).colors.BORDER_SUBTLE };
-const obj3 = { borderBottomColor: importDefault(dependencyMap[8]).colors.BORDER_SUBTLE };
 obj2.avatar = { borderRadius: importDefault(dependencyMap[8]).radii.md, borderColor: importDefault(dependencyMap[8]).colors.BACKGROUND_BASE_LOW, backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_SURFACE_HIGHEST };
 obj5 = { color: importDefault(dependencyMap[8]).colors.TEXT_DEFAULT };
 obj2.avatarText = obj5;
@@ -69,7 +69,7 @@ obj2.text = {};
 obj2.headerContainer = {};
 obj2.badge = { marginRight: 4 };
 obj2.header = { paddingRight: 16 };
-obj2.headerAndIconContainer = { "Bool(true)": 8, "Bool(true)": null, "Bool(true)": "\u270A\u{1F3FF}" };
+obj2.headerAndIconContainer = {};
 let closure_12 = obj5.createStyles(obj2);
 const memoResult1 = importAllResult.memo((action) => {
   action = action.action;
@@ -106,14 +106,14 @@ const memoResult1 = importAllResult.memo((action) => {
       const tmp18 = importDefault(dependencyMap[17]);
     }
     const items2 = [tmp14, ];
-    const obj5 = { noCommandsTextContainer: "<string:1340029796>", beetle: "<string:1072076685>", communication_disabled_until: "<string:16823617>", 5sHHoy: "<string:1014300928>", "Null": "isArray", style: tmp.header, children: stateFromStores.name };
+    const obj5 = { "Null": "<string:1340029796>", "Null": "<string:1072076685>", "Null": "<string:16825665>", "Null": "<string:1014300928>", "Null": "isArray", style: tmp.header, children: stateFromStores.name };
     items2[1] = callback(arg1(dependencyMap[13]).Text, obj5);
     obj3.children = items2;
     obj2.children = closure_9(View, obj3);
     const items3 = [callback(View, obj2), ];
     let tmp22 = null;
     if (undefined !== stateFromStores.approximateMemberCount) {
-      const obj6 = { INTEGRATION_CREATE: "column", ConstraintReasonCode: "center" };
+      const obj6 = {};
       const intl = arg1(dependencyMap[18]).intl;
       const obj7 = { members: stateFromStores.approximateMemberCount };
       obj6.children = intl.format(importDefault(dependencyMap[19]).5JmNgg, obj7);

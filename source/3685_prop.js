@@ -10,11 +10,11 @@ if (Intl.ListFormat) {
     const _Intl2 = Intl;
     let obj = {};
     obj = {};
-    obj = { long: { -33553176: "<string:2063598452>", -889191202: "<string:1140851434>", -1023408923: "{0} \uB610\uB294 {1}", -905968411: "{0}, {1}" }, narrow: { -33553176: "<string:2063598452>", -889191202: "<string:1140851434>", -1023408923: "{0} \uB610\uB294 {1}", -905968411: "{0}, {1}" }, short: { -33553176: "<string:2063598452>", -889191202: "<string:1140851434>", -1023408923: "{0} \uB610\uB294 {1}", -905968411: "{0}, {1}" } };
+    obj = { long: { "Bool(false)": "content", "Bool(false)": null, "Bool(false)": null, "Bool(false)": null }, narrow: { "Bool(false)": "content", "Bool(false)": null, "Bool(false)": null, "Bool(false)": null }, short: { "Bool(false)": "content", "Bool(false)": null, "Bool(false)": null, "Bool(false)": null } };
     obj.conjunction = obj;
-    const obj1 = { long: { -33553176: "<string:2063598452>", -889191202: "<string:1140851434>", -1023408923: "{0} ir {1}", -905968411: "{0}, {1}" }, narrow: { -33553176: "<string:2063598452>", -889191202: "<string:1140851434>", -1023408923: "{0} ir {1}", -905968411: "{0}, {1}" }, short: { -33553176: "<string:2063598452>", -889191202: "<string:1140851434>", -1023408923: "{0} ir {1}", -905968411: "{0}, {1}" } };
+    const obj1 = { long: {}, narrow: {}, short: {} };
     obj.disjunction = obj1;
-    const obj2 = { long: { -33553176: "<string:2063598452>", -889191202: "<string:1140851434>", -1023408923: "{0} \uB610\uB294 {1}", -905968411: "{0}, {1}" }, narrow: { -33553176: 2063598314, -889191202: 1140851434, -1023408923: 191081, -905968411: 191099 }, short: { -33553176: "textAlign", -889191202: "r", -1023408923: "isArray", -905968411: "current" } };
+    const obj2 = { long: { "Bool(false)": "content", "Bool(false)": null, "Bool(false)": null, "Bool(false)": null }, narrow: { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null }, short: { "Bool(false)": -1811938582, "Bool(false)": 1140851434, "Bool(false)": 191095, "Bool(false)": 191124 } };
     obj.unit = obj2;
     obj.data = obj;
     obj.locale = "es";
@@ -26,4 +26,4 @@ if (!prop) {
   prop = [];
 }
 globalThis.__FORMATJS_LISTFORMAT_DATA__ = prop;
-prop.push({ data: { conjunction: { long: { -33553176: "<string:2063598452>", -889191202: "<string:1140851434>", -1023408923: "{0} \uB610\uB294 {1}", -905968411: "{0}, {1}" }, narrow: { -33553176: "<string:2063598452>", -889191202: "<string:1140851434>", -1023408923: "{0} \uB610\uB294 {1}", -905968411: "{0}, {1}" }, short: { -33553176: "<string:2063598452>", -889191202: "<string:1140851434>", -1023408923: "{0} \uB610\uB294 {1}", -905968411: "{0}, {1}" } }, disjunction: { long: { -33553176: "<string:2063598452>", -889191202: "<string:1140851434>", -1023408923: "{0} ir {1}", -905968411: "{0}, {1}" }, narrow: { -33553176: "<string:2063598452>", -889191202: "<string:1140851434>", -1023408923: "{0} ir {1}", -905968411: "{0}, {1}" }, short: { -33553176: "<string:2063598452>", -889191202: "<string:1140851434>", -1023408923: "{0} ir {1}", -905968411: "{0}, {1}" } }, unit: { long: { -33553176: "<string:2063598452>", -889191202: "<string:1140851434>", -1023408923: "{0} \uB610\uB294 {1}", -905968411: "{0}, {1}" }, narrow: { -33553176: 2063598314, -889191202: 1140851434, -1023408923: 191081, -905968411: 191099 }, short: { -33553176: "textAlign", -889191202: "r", -1023408923: "isArray", -905968411: "current" } } }, locale: "es" });
+prop.push({ data: { conjunction: { long: { "Bool(false)": "content", "Bool(false)": null, "Bool(false)": null, "Bool(false)": null }, narrow: { "Bool(false)": "content", "Bool(false)": null, "Bool(false)": null, "Bool(false)": null }, short: { "Bool(false)": "content", "Bool(false)": null, "Bool(false)": null, "Bool(false)": null } }, disjunction: { long: {}, narrow: {}, short: {} }, unit: { long: { "Bool(false)": "content", "Bool(false)": null, "Bool(false)": null, "Bool(false)": null }, narrow: { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null }, short: { "Bool(false)": -1811938582, "Bool(false)": 1140851434, "Bool(false)": 191095, "Bool(false)": 191124 } } }, locale: "es" });

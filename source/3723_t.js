@@ -15,7 +15,7 @@ const fn = function t(moment) {
     weekdaysShort: "\uC77C_\uC6D4_\uD654_\uC218_\uBAA9_\uAE08_\uD1A0".split("_"),
     weekdaysMin: "\uC77C_\uC6D4_\uD654_\uC218_\uBAA9_\uAE08_\uD1A0".split("_"),
     longDateFormat: {},
-    calendar: {},
+    calendar: { status: "type", padding: "a", opacity: "isArray", PX_8: "NavigationRoute", Symbol: "headMetaSocial", r: "L" },
     relativeTime: {},
     dayOfMonthOrdinalParse: /\d{1,2}(일|월|주)/,
     ordinal(arg0, arg1) {
@@ -59,7 +59,7 @@ if ("object" === typeof exports) {
 }
 if ("function" === typeof globalThis.define) {
   if (globalThis.define.amd) {
-    globalThis.define([1782644737], fn);
+    globalThis.define(["HH:mm:ss"], fn);
   }
 }
 fn(this.moment);

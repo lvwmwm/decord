@@ -1,10 +1,10 @@
-// Module ID: 13680
-// Function ID: 103576
+// Module ID: 13687
+// Function ID: 103599
 // Name: renderMonthlySpendLine
 // Dependencies: []
 // Exports: default
 
-// Module 13680 (renderMonthlySpendLine)
+// Module 13687 (renderMonthlySpendLine)
 function renderMonthlySpendLine(formatPriceResult, isOverspending, renewalDate, arg3) {
   let tmp = formatPriceResult;
   let formatToPlainStringResult = arg3;

@@ -1,10 +1,10 @@
-// Module ID: 6866
-// Function ID: 54304
+// Module ID: 6870
+// Function ID: 54314
 // Name: ApplicationWidget
 // Dependencies: []
 // Exports: isApplicationWidgetWithId
 
-// Module 6866 (ApplicationWidget)
+// Module 6870 (ApplicationWidget)
 let closure_2 = importDefault(dependencyMap[0]);
 let closure_3 = importDefault(dependencyMap[1]);
 const tmp2 = () => {

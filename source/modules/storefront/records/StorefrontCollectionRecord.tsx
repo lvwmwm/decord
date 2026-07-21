@@ -1,9 +1,9 @@
-// Module ID: 6782
-// Function ID: 53557
+// Module ID: 6788
+// Function ID: 53606
 // Name: StorefrontCollectionRecord
 // Dependencies: []
 
-// Module 6782 (StorefrontCollectionRecord)
+// Module 6788 (StorefrontCollectionRecord)
 let closure_0 = importDefault(dependencyMap[0]);
 let closure_1 = importDefault(dependencyMap[1]);
 let closure_2 = importDefault(dependencyMap[2]);
@@ -28,7 +28,7 @@ const tmp2 = () => {
         let unpublished_at;
         let updated_at;
         ({ created_at, updated_at, unpublished_at, unpublish_settings, tenant_metadata } = application_id);
-        let obj = { enabled: null, names: "LOCAL_PAYMENT_START_PAYMENT_MISSING_REQUIRED_OPTION", userId: "Missing required option for startPayment.", add: null, accessibilityLabel: "LOCAL_PAYMENT_START_PAYMENT_DEFERRED_PAYMENT_FAILED", "Bool(false)": "LocalPayment startPayment deferred payment failed." };
+        let obj = { _desired: true, v: true, mode: true, userId: true, concat: true, left: true };
         Object.setPrototypeOf(null);
         const merged = Object.assign(application_id, obj);
         let tmp3 = StorefrontCollectionRecord;

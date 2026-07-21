@@ -1,9 +1,9 @@
-// Module ID: 16457
-// Function ID: 127194
+// Module ID: 16464
+// Function ID: 127228
 // Name: NATIVE_REQUIRED_ASSETS_ICONS
 // Dependencies: []
 
-// Module 16457 (NATIVE_REQUIRED_ASSETS_ICONS)
+// Module 16464 (NATIVE_REQUIRED_ASSETS_ICONS)
 const _module = require(dependencyMap[71]);
 const result = _module.fileFinishedImporting("modules/react_asset/native/native_required_assets_icons.tsx");
 

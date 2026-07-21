@@ -1,10 +1,10 @@
-// Module ID: 10142
-// Function ID: 78456
+// Module ID: 10148
+// Function ID: 78474
 // Name: WindowLaunchIcon
 // Dependencies: []
 // Exports: WindowLaunchIcon
 
-// Module 10142 (WindowLaunchIcon)
+// Module 10148 (WindowLaunchIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/WindowLaunchIcon.tsx");

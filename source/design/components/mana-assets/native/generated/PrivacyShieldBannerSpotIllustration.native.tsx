@@ -1,10 +1,10 @@
-// Module ID: 6413
-// Function ID: 50493
+// Module ID: 6415
+// Function ID: 50536
 // Name: PrivacyShieldBannerSpotIllustration
 // Dependencies: []
 // Exports: PrivacyShieldBannerSpotIllustration
 
-// Module 6413 (PrivacyShieldBannerSpotIllustration)
+// Module 6415 (PrivacyShieldBannerSpotIllustration)
 const jsx = require(dependencyMap[0]).jsx;
 const _module = require(dependencyMap[3]);
 const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/PrivacyShieldBannerSpotIllustration.native.tsx");

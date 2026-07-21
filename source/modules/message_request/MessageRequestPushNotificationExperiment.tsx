@@ -1,9 +1,9 @@
-// Module ID: 10219
-// Function ID: 78981
+// Module ID: 10225
+// Function ID: 79000
 // Name: apexExperiment
 // Dependencies: []
 
-// Module 10219 (apexExperiment)
+// Module 10225 (apexExperiment)
 const _module = require(dependencyMap[0]);
 const apexExperiment = _module.createApexExperiment({ defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } });
 const _module1 = require(dependencyMap[1]);

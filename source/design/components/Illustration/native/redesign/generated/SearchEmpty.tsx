@@ -1,10 +1,10 @@
-// Module ID: 9359
-// Function ID: 73029
+// Module ID: 9363
+// Function ID: 73043
 // Name: getSearchEmptySource
 // Dependencies: []
 // Exports: SearchEmpty
 
-// Module 9359 (getSearchEmptySource)
+// Module 9363 (getSearchEmptySource)
 function getSearchEmptySource(theme) {
   let obj = arg1(dependencyMap[3]);
   obj = {

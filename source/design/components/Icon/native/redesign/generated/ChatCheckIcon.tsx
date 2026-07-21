@@ -1,10 +1,10 @@
-// Module ID: 13660
-// Function ID: 103456
+// Module ID: 13667
+// Function ID: 103479
 // Name: ChatCheckIcon
 // Dependencies: []
 // Exports: ChatCheckIcon
 
-// Module 13660 (ChatCheckIcon)
+// Module 13667 (ChatCheckIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/ChatCheckIcon.tsx");

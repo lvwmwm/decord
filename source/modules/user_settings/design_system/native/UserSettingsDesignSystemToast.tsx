@@ -1,14 +1,14 @@
-// Module ID: 14315
-// Function ID: 108123
+// Module ID: 14322
+// Function ID: 108146
 // Name: UserSettingsDesignSystemToast
 // Dependencies: []
 // Exports: default
 
-// Module 14315 (UserSettingsDesignSystemToast)
+// Module 14322 (UserSettingsDesignSystemToast)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 const jsx = arg1(dependencyMap[2]).jsx;
-let closure_2 = arg1(dependencyMap[3]).createStyles({ container: { <string:2186471382>: true, <string:1688044701>: true, <string:1672539340>: true } });
+let closure_2 = arg1(dependencyMap[3]).createStyles({ container: { label: true, placeholder: true, description: true } });
 const obj = arg1(dependencyMap[3]);
 const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/user_settings/design_system/native/UserSettingsDesignSystemToast.tsx");
 

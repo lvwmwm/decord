@@ -1,10 +1,10 @@
-// Module ID: 11051
-// Function ID: 86045
+// Module ID: 11056
+// Function ID: 86066
 // Name: CreditCardIcon
 // Dependencies: []
 // Exports: CreditCardIcon
 
-// Module 11051 (CreditCardIcon)
+// Module 11056 (CreditCardIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/CreditCardIcon.tsx");

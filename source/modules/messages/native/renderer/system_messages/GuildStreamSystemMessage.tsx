@@ -1,10 +1,10 @@
-// Module ID: 7683
-// Function ID: 61331
+// Module ID: 7687
+// Function ID: 61343
 // Name: createGuildStreamSystemMessage
 // Dependencies: []
 // Exports: createGuildStreamSystemMessage
 
-// Module 7683 (createGuildStreamSystemMessage)
+// Module 7687 (createGuildStreamSystemMessage)
 const StreamTypes = require(dependencyMap[0]).StreamTypes;
 const _module = require(dependencyMap[6]);
 const result = _module.fileFinishedImporting("modules/messages/native/renderer/system_messages/GuildStreamSystemMessage.tsx");

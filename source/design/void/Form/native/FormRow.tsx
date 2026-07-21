@@ -1,9 +1,9 @@
-// Module ID: 5423
-// Function ID: 46452
+// Module ID: 5425
+// Function ID: 46494
 // Name: renderCustom
 // Dependencies: []
 
-// Module 5423 (renderCustom)
+// Module 5425 (renderCustom)
 let Platform;
 function renderCustom(label) {
   let tmp = null;
@@ -34,9 +34,9 @@ let closure_7 = arg1(dependencyMap[3]).createStyles(() => {
   obj = {};
   const merged = Object.assign(getPadding());
   obj.container = obj;
-  obj.label = { -9223372036854775808: null, 9223372036854775807: "c1eae5d24a46f9d36a9168ec38445f00", 9223372036854775807: "DragIcon" };
-  obj.leading = {};
-  obj.trailing = { height: "soundboard_picker_collapsed_sections", marginTop: "scalar", borderBottomLeftRadius: 2, borderBottomRightRadius: 9 };
+  obj.label = { GUILD_ROOM_BACKGROUND_CONFIG: "RTC_CONNECTION_LOSS_RATE", id_hash: "handleJoinThreadVoice", columnGap: "toString" };
+  obj.leading = { -1604155421: 589823, 930566838: 1091633152 };
+  obj.trailing = { "Bool(false)": "soundboard_picker_collapsed_sections", "Bool(false)": "scalar", "Bool(false)": 2, "Bool(false)": 9 };
   obj.disabled = { opacity: 0.5 };
   obj = { borderColor: importDefault(dependencyMap[4]).colors.BORDER_FEEDBACK_CRITICAL, borderWidth: 2 };
   const merged1 = Object.assign(getPadding(-2));

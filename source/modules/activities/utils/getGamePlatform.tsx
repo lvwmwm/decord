@@ -1,10 +1,10 @@
-// Module ID: 15294
-// Function ID: 116352
+// Module ID: 15301
+// Function ID: 116376
 // Name: getGamePlatform
 // Dependencies: []
 // Exports: default
 
-// Module 15294 (getGamePlatform)
+// Module 15301 (getGamePlatform)
 const _module = require(dependencyMap[0]);
 ({ ActivityTypes: closure_2, ActivityGamePlatforms: closure_3 } = _module);
 const _module1 = require(dependencyMap[2]);

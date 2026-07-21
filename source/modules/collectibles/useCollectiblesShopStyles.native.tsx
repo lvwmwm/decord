@@ -1,9 +1,9 @@
-// Module ID: 9761
-// Function ID: 75934
+// Module ID: 9766
+// Function ID: 75950
 // Name: importDefaultResult1
 // Dependencies: []
 
-// Module 9761 (importDefaultResult1)
+// Module 9766 (importDefaultResult1)
 import saturateResult from "module_1";
 import saturateResult1 from "module_1";
 

@@ -1,9 +1,9 @@
-// Module ID: 14816
-// Function ID: 111691
+// Module ID: 14823
+// Function ID: 111715
 // Name: HAPPENING_NOW_CONTENT_HEIGHT
 // Dependencies: []
 
-// Module 14816 (HAPPENING_NOW_CONTENT_HEIGHT)
+// Module 14823 (HAPPENING_NOW_CONTENT_HEIGHT)
 const importAllResult = importAll(dependencyMap[0]);
 ({ View: closure_4, Image: closure_5 } = arg1(dependencyMap[1]));
 let closure_6 = importDefault(dependencyMap[2]);
@@ -15,18 +15,18 @@ const AnalyticEvents = arg1(dependencyMap[5]).AnalyticEvents;
 const tmp2 = arg1(dependencyMap[1]);
 ({ jsx: closure_12, jsxs: closure_13 } = arg1(dependencyMap[6]));
 let obj1 = arg1(dependencyMap[7]);
-let obj = { info: { "Bool(false)": "Array", "Bool(false)": "content", "Bool(false)": "Map", "Bool(false)": "isArray" } };
+let obj = { info: { position: "png", right: null, zIndex: 20, marginVertical: 4 } };
 obj = { backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_MOD_MUTED, height: HAPPENING_NOW_CONTENT_HEIGHT, borderTopRightRadius: importDefault(dependencyMap[8]).radii.sm, borderBottomRightRadius: importDefault(dependencyMap[8]).radii.sm };
 obj.infoNoImage = obj;
 obj1 = { borderTopRightRadius: importDefault(dependencyMap[8]).radii.sm, borderBottomRightRadius: importDefault(dependencyMap[8]).radii.sm, alignSelf: "center", width: tmp3.HAPPENING_NOW_EVENT_BANNER_WIDTH, height: HAPPENING_NOW_CONTENT_HEIGHT };
 obj.decorationImage = obj1;
-obj.dottedLineContainer = { 9223372036854775807: 5234, 9223372036854775807: 2560, 0: 291840, 9223372036854775807: 524288, 0: 524288, 9223372036854775807: 1572864, 9223372036854775807: 645005312 };
-const obj2 = { <string:3429215422>: 1, <string:2700826282>: "classification_types", <string:1931931730>: "enum", <string:1373462823>: 1, backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_MOD_STRONG };
+obj.dottedLineContainer = { updateApplicationCommandManagerState: 5234, questDockHeaderContentExpanded: 2560, EMOJI_REACTION: -1644019456, iconPosition: 1951465473, GUILD_SETTINGS_LOADED_BANS: 4, resetPendingPrimaryGuildChanges: 8, GuildPowerupsBoostButton: 8 };
+const obj2 = { left: 1, width: "classification_types", backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_MOD_STRONG, position: 1 };
 obj.shortDottedLineSegment = obj2;
+const obj3 = { left: "r", width: "stopAnalyticHeartbeat", backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_MOD_STRONG, position: "isArray" };
+obj.dottedLineSegment = obj3;
+obj.interestedUsersContainer = { "Null": null, "Null": null };
 const tmp4 = arg1(dependencyMap[6]);
-obj.dottedLineSegment = { backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_MOD_STRONG };
-obj.interestedUsersContainer = {};
-const obj3 = { backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_MOD_STRONG };
 obj.interestedUsersIcon = { tintColor: importDefault(dependencyMap[8]).colors.TEXT_SUBTLE };
 const obj4 = { tintColor: importDefault(dependencyMap[8]).colors.TEXT_SUBTLE };
 obj.ticketContainer = { backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_MOD_SUBTLE, height: HAPPENING_NOW_CONTENT_HEIGHT, borderTopLeftRadius: importDefault(dependencyMap[8]).radii.sm, borderBottomLeftRadius: importDefault(dependencyMap[8]).radii.sm };
@@ -145,7 +145,7 @@ const memoResult = importAllResult.memo((event) => {
   const items7 = [callback(arg1(dependencyMap[20]).GroupIcon, { style: tmp.interestedUsersIcon, size: "xxs" }), ];
   let tmp30 = tmp8 > 0;
   if (tmp30) {
-    const obj7 = { "Bool(false)": "424c540aff53032ef3cdcb5f4766723e", "Bool(false)": "ic_rulebook_16px", children: arg1(dependencyMap[22]).humanizeValue(tmp8, stateFromStores) };
+    const obj7 = { children: arg1(dependencyMap[22]).humanizeValue(tmp8, stateFromStores) };
     tmp30 = callback(arg1(dependencyMap[21]).Text, obj7);
     const obj16 = arg1(dependencyMap[22]);
   }
@@ -169,8 +169,7 @@ const memoResult = importAllResult.memo((event) => {
   }
   items9[1] = tmp38;
   const obj10 = { style: null == source ? tmp.infoNoImage : tmp.info };
-  const obj11 = { INTEGRATION_TIMEOUT_MS: "venmo.tokenize.desktop.success", VERSION: "<string:1852899328>", children: event.name };
-  const items10 = [callback(arg1(dependencyMap[19]).HappeningNowCardHeader, obj11), ];
+  const items10 = [callback(arg1(dependencyMap[19]).HappeningNowCardHeader, { children: event.name }), ];
   const obj12 = {};
   let str3;
   if (isLive) {

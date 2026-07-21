@@ -1,10 +1,10 @@
-// Module ID: 7705
-// Function ID: 61384
+// Module ID: 7709
+// Function ID: 61396
 // Name: createRequestToSpeakEphemeralIndication
 // Dependencies: []
 // Exports: createStageRaiseHandSystemMessage
 
-// Module 7705 (createRequestToSpeakEphemeralIndication)
+// Module 7709 (createRequestToSpeakEphemeralIndication)
 function createRequestToSpeakEphemeralIndication(message) {
   if (message.hasFlag(constants2.EPHEMERAL)) {
     if (message.type === constants3.STAGE_RAISE_HAND) {

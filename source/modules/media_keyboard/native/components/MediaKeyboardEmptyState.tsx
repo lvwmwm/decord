@@ -1,10 +1,10 @@
-// Module ID: 9663
-// Function ID: 75248
+// Module ID: 9668
+// Function ID: 75265
 // Name: MediaKeyboardEmptyState
 // Dependencies: []
 // Exports: getMediaEmptyStateComponentOrNull
 
-// Module 9663 (MediaKeyboardEmptyState)
+// Module 9668 (MediaKeyboardEmptyState)
 class MediaKeyboardEmptyState {
   constructor(arg0) {
     ({ actionIcon, actionLabel, actionPress, imageSource, label } = global);

@@ -1,10 +1,10 @@
-// Module ID: 6770
-// Function ID: 53303
+// Module ID: 6776
+// Function ID: 53352
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 // Exports: isProfileFrameRecord
 
-// Module 6770 (_isNativeReflectConstruct)
+// Module 6776 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -53,7 +53,7 @@ const tmp2 = (arg0) => {
         let overflow_bottom;
         let overflow_horizontal;
         let overflow_top;
-        let obj = { -1106203316: "r", -1106006702: "onRequireModeratorMFAClick", -1377116225: "Array", -1407781622: "isSpamMessageRequest" };
+        let obj = { "Bool(false)": null, "Bool(false)": 4, "Bool(false)": 4, "Bool(false)": "rgba(0, 0, 0, 0.75)" };
         ({ inner_width, overflow_top, overflow_bottom, overflow_horizontal } = arg0);
         Object.setPrototypeOf(null);
         const merged = Object.assign(arg0, obj);

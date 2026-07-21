@@ -1,10 +1,10 @@
-// Module ID: 9850
-// Function ID: 76259
+// Module ID: 9855
+// Function ID: 76275
 // Name: LongPressMessageChatItemPreview
 // Dependencies: []
 // Exports: default
 
-// Module 9850 (LongPressMessageChatItemPreview)
+// Module 9855 (LongPressMessageChatItemPreview)
 const jsx = require(dependencyMap[0]).jsx;
 const _module = require(dependencyMap[1]);
 let obj = {};

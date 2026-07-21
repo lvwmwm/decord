@@ -339,7 +339,7 @@ function jsonBytes(arr) {
   return utf8Bytes(JSON.stringify(arr));
 }
 let closure_2 = "[Filtered]";
-let closure_3 = [];
+let closure_3 = [true, true, true, true, true, true];
 arg5.DEFAULT_GEN_AI_MESSAGES_BYTE_LIMIT = 20000;
 arg5.truncateGenAiMessages = function truncateGenAiMessages(arr) {
   let tmp = arr;

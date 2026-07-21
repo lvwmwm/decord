@@ -1,10 +1,10 @@
-// Module ID: 4226
-// Function ID: 37023
+// Module ID: 4230
+// Function ID: 37071
 // Name: sanitizeDevices
 // Dependencies: []
 // Exports: getAudioInputDevices, getAudioOutputDevices, getVideoInputDevices
 
-// Module 4226 (sanitizeDevices)
+// Module 4230 (sanitizeDevices)
 function sanitizeDevices(AUDIO_INPUT, items) {
   const require = AUDIO_INPUT;
   const importDefault = false;

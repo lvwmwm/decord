@@ -5,7 +5,7 @@
 
 // Module 415 (__INTERNAL_VIEW_CONFIG)
 importAll(dependencyMap[0]);
-let obj = { uiViewClassName: "AndroidSwitch", bubblingEventTypes: { topChange: { phasedRegistrationNames: {} } } };
+let obj = { uiViewClassName: "AndroidSwitch", bubblingEventTypes: { topChange: { phasedRegistrationNames: { display: 0, alignItems: "red" } } } };
 obj = {};
 obj = { process: arg1(dependencyMap[1]).default };
 obj.thumbColor = obj;

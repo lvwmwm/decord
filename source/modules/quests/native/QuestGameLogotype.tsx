@@ -1,8 +1,8 @@
-// Module ID: 13916
-// Function ID: 105791
+// Module ID: 13923
+// Function ID: 105814
 // Dependencies: []
 
-// Module 13916
+// Module 13923
 let closure_3 = importDefault(dependencyMap[0]);
 const importAllResult = importAll(dependencyMap[1]);
 ({ View: closure_5, Image: closure_6 } = arg1(dependencyMap[2]));
@@ -97,7 +97,7 @@ const memoResult = importAllResult.memo((assetUrl) => {
     const obj1 = {};
     const items4 = [memo, tmp.logo];
     obj1.style = items4;
-    const obj2 = { <string:1140607356>: 30271555, <string:1751293292>: 22092032, uri: assetUrl, onError };
+    const obj2 = { uri: assetUrl, onError };
     obj1.children = tmp9(arg1(dependencyMap[9]).SvgUri, obj2);
     let tmp9Result = tmp9(first, obj1);
   } else {

@@ -1,10 +1,10 @@
-// Module ID: 11843
-// Function ID: 91768
+// Module ID: 11850
+// Function ID: 91791
 // Name: getGameProfileWebsiteData
 // Dependencies: []
 // Exports: default
 
-// Module 11843 (getGameProfileWebsiteData)
+// Module 11850 (getGameProfileWebsiteData)
 const jsx = require(dependencyMap[0]).jsx;
 const _module = require(dependencyMap[12]);
 const result = _module.fileFinishedImporting("modules/game_profile/native/utils/getGameProfileWebsiteData.tsx");

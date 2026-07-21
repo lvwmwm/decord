@@ -1,10 +1,10 @@
-// Module ID: 8618
-// Function ID: 68294
+// Module ID: 8622
+// Function ID: 68306
 // Name: GameProfileHeader
 // Dependencies: []
 // Exports: default
 
-// Module 8618 (GameProfileHeader)
+// Module 8622 (GameProfileHeader)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 ({ View: closure_5, Image: closure_6 } = arg1(dependencyMap[2]));
@@ -16,24 +16,24 @@ obj = { backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_
 obj.container = obj;
 const tmp3 = arg1(dependencyMap[3]);
 obj.artHero = { bottom: -importDefault(dependencyMap[5]).space.PX_80 };
-obj.artHeroImage = { direction: "5489cb913a06f6a88877637630ce77b7", style: "pl.messages.5489cb913a06f6a88877637630ce77b7.compiled.messages", borderWidth: "jsona" };
-obj.artHeroGradient = { rowCount: "isArray", AnnouncementChannelReturn: "skuId", y: "T", PRUNE_DELETE_DAYS: "r", PREMIUM_UNCANCEL_WINBACK_MODAL_VIEWED: "isArray" };
-const obj2 = { backgroundColor: "png", accessibilityRole: true, name: "/assets/design/components/Icon/native/redesign/generated/images", ks: 24, category: 24, position: null, right: "e8a96141e48bf46350215d4dadeaaebc", bottom: "ExperimentalGameControllerLinkIcon", paddingTop: importDefault(dependencyMap[5]).space.PX_32, paddingHorizontal: importDefault(dependencyMap[5]).space.PX_16, gap: importDefault(dependencyMap[5]).space.PX_12 };
-obj.headerContent = obj2;
+obj.artHeroImage = {};
+obj.artHeroGradient = { marginBottom: "center", justifyContent: null, alignItems: 4, it: 4, now: "rgba(0, 0, 0, 0.75)" };
 const obj1 = { bottom: -importDefault(dependencyMap[5]).space.PX_80 };
+obj.headerContent = { paddingTop: importDefault(dependencyMap[5]).space.PX_32, paddingHorizontal: importDefault(dependencyMap[5]).space.PX_16, gap: importDefault(dependencyMap[5]).space.PX_12 };
+const obj2 = { paddingTop: importDefault(dependencyMap[5]).space.PX_32, paddingHorizontal: importDefault(dependencyMap[5]).space.PX_16, gap: importDefault(dependencyMap[5]).space.PX_12 };
 const merged = Object.assign(importDefault(dependencyMap[5]).shadows.SHADOW_LOW);
 obj.shadowContainer = { borderRadius: importDefault(dependencyMap[5]).radii.sm };
+const obj4 = { borderColor: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000012742114911483329, justifyContent: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000629692303929645, alignItems: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000191959983286994, overflow: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001921276209548964, style: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002395627148555186, borderRadius: importDefault(dependencyMap[5]).radii.sm, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_LOW };
+obj.coverContainer = obj4;
 const obj3 = { borderRadius: importDefault(dependencyMap[5]).radii.sm };
-obj.coverContainer = { borderRadius: importDefault(dependencyMap[5]).radii.sm, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_LOW };
-const obj4 = { borderRadius: importDefault(dependencyMap[5]).radii.sm, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_LOW };
 obj.iconContainer = { borderRadius: importDefault(dependencyMap[5]).radii.sm, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_LOW };
-obj.image = { aze: 30271555, azj: 22092032 };
-obj.titleContainer = { marginBottom: "handleSyncNoMultiAccountOnPostConnectionOpen", borderRadius: "%Math.sign%", backgroundColor: "getAGC2ExperimentConfig" };
+obj.image = {};
+obj.titleContainer = { accessible: "useImageEncodingLadder", count: "floor", "Bool(false)": "UNLOCKED" };
 const obj5 = { borderRadius: importDefault(dependencyMap[5]).radii.sm, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_LOW };
-obj.textShadow = { textShadowColor: importDefault(dependencyMap[5]).colors.BLACK, textShadowOffset: { aze: false, azj: true }, textShadowRadius: 1 };
+obj.textShadow = { textShadowColor: importDefault(dependencyMap[5]).colors.BLACK, textShadowOffset: { bhk: -536870861, bic: -299892737 }, textShadowRadius: 1 };
 let closure_9 = obj.createStyles(obj);
 let closure_10 = { code: "function GameProfileHeaderTsx1(){const{effectiveScrollY}=this.__closure;return{top:-Math.max(0,-effectiveScrollY.get())};}" };
-const obj6 = { textShadowColor: importDefault(dependencyMap[5]).colors.BLACK, textShadowOffset: { aze: false, azj: true }, textShadowRadius: 1 };
+const obj6 = { textShadowColor: importDefault(dependencyMap[5]).colors.BLACK, textShadowOffset: { bhk: -536870861, bic: -299892737 }, textShadowRadius: 1 };
 const result = arg1(dependencyMap[11]).fileFinishedImporting("modules/game_profile/native/components/GameProfileHeader.tsx");
 
 export default function GameProfileHeader(game) {
@@ -170,7 +170,7 @@ export default function GameProfileHeader(game) {
     tmp28 = callback2(importDefault(dependencyMap[9]), obj14);
   }
   const items9 = [tmp28, , ];
-  const obj15 = { 9223372036854775807: true, 9223372036854775807: true, 9223372036854775807: true, style: tmp.textShadow, children: name };
+  const obj15 = { style: tmp.textShadow, children: name };
   items9[1] = callback2(arg1(dependencyMap[10]).Text, obj15);
   let tmp32 = null;
   if (null != joined) {

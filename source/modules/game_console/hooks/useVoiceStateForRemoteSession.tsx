@@ -1,10 +1,10 @@
-// Module ID: 8922
-// Function ID: 70373
+// Module ID: 8926
+// Function ID: 70385
 // Name: useVoiceStateForRemoteSession
 // Dependencies: []
 // Exports: default
 
-// Module 8922 (useVoiceStateForRemoteSession)
+// Module 8926 (useVoiceStateForRemoteSession)
 let closure_2 = importDefault(dependencyMap[0]);
 let closure_3 = importDefault(dependencyMap[1]);
 let closure_4 = importDefault(dependencyMap[2]);

@@ -1,10 +1,10 @@
-// Module ID: 9748
-// Function ID: 75851
+// Module ID: 9753
+// Function ID: 75867
 // Name: GiftingSKUCardsGrid
 // Dependencies: []
 // Exports: default
 
-// Module 9748 (GiftingSKUCardsGrid)
+// Module 9753 (GiftingSKUCardsGrid)
 const importAllResult = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 const isAvatarDecorationRecord = arg1(dependencyMap[2]).isAvatarDecorationRecord;
@@ -19,7 +19,7 @@ obj1 = { borderColor: importDefault(dependencyMap[6]).colors.BACKGROUND_BRAND };
 obj.selected = obj1;
 obj.claimed = { opacity: 0.4 };
 obj.checkmark = {};
-obj.checkmarkContainer = {};
+obj.checkmarkContainer = { -732571807: "Array", 1049874320: "HIDDEN_WINDOW_DISABLE_VIDEO_DURATION_MS", -1984908060: "RNSVGUse", 1452565377: "Array", 1549967418: "PREMIUM_TIER_2_PREMIUM_GUILD_13_MONTHLY", 1380880977: "Array", 500594070: "depthY", 74128705: "%Math.sign%" };
 const tmp2 = arg1(dependencyMap[4]);
 obj.textContainer = { paddingHorizontal: importDefault(dependencyMap[6]).space.PX_16 };
 let closure_9 = obj1.createStyles(obj);
@@ -86,7 +86,7 @@ let closure_10 = importAllResult.memo((rewardSkuId) => {
     }
     items3[1] = tmp16;
     const obj5 = { style: tmp.textContainer };
-    const obj6 = { 9223372036854775807: "disclaimer_text_localized", 9223372036854775807: "message", 9223372036854775807: 2, 9223372036854775807: "subheader", children: product.name };
+    const obj6 = { -9223372036854775808: "disclaimer_text_localized", 0: "message", 0: 2, 9223372036854775807: "subheader", children: product.name };
     const items4 = [callback(arg1(dependencyMap[14]).Text, obj6), ];
     const obj7 = {};
     const intl = arg1(dependencyMap[15]).intl;
@@ -106,7 +106,7 @@ let closure_10 = importAllResult.memo((rewardSkuId) => {
   }
 });
 const obj2 = { paddingHorizontal: importDefault(dependencyMap[6]).space.PX_16 };
-let closure_11 = arg1(dependencyMap[5]).createStyles({ grid: { TypeError: "Portugu\u00EAs", borderRadius: "Portuguese", variant: "pt-PT" } });
+let closure_11 = arg1(dependencyMap[5]).createStyles({ grid: { "Bool(true)": null, "Bool(true)": null, "Bool(true)": null } });
 const obj7 = arg1(dependencyMap[5]);
 const result = arg1(dependencyMap[16]).fileFinishedImporting("modules/premium/gifting/native/views/promotions/GiftingSKUCardsGrid.tsx");
 

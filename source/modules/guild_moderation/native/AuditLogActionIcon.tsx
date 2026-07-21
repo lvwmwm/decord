@@ -1,10 +1,10 @@
-// Module ID: 16097
-// Function ID: 124159
+// Module ID: 16104
+// Function ID: 124190
 // Name: AuditIcons
 // Dependencies: []
 // Exports: default
 
-// Module 16097 (AuditIcons)
+// Module 16104 (AuditIcons)
 let APPLICATION_COMMAND;
 let AUTO_MODERATION_RULE;
 let AuditLogTargetTypes;
@@ -70,8 +70,8 @@ const tmp3 = arg1(dependencyMap[2]);
 const tmp4 = arg1(dependencyMap[3]);
 ({ jsx: closure_8, jsxs: closure_9 } = arg1(dependencyMap[4]));
 let obj = arg1(dependencyMap[5]);
-obj = { actionImageContainer: { <string:1140607356>: false, <string:1751293292>: false } };
-obj = { GlobeEarthIcon: "Array", GameMention: "isArray", IN_APP_MESSAGE_SOUNDS: "key", renderSettingSearchResultItem: "Text", panelHeader: "raw", borderRadius: importDefault(dependencyMap[6]).radii.round, backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_SURFACE_HIGH };
+obj = { actionImageContainer: { <string:1632221346>: "<string:1027735553>", <string:2722977214>: "<string:4143972873>" } };
+obj = { flex: "Array", marginVertical: "isArray", backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_SURFACE_HIGH, alignItems: "Text", borderRadius: importDefault(dependencyMap[6]).radii.round };
 obj.actionImageOverlay = obj;
 obj.iconComponent = {};
 obj.actionImage = { position: "absolute" };

@@ -1,10 +1,10 @@
-// Module ID: 11505
-// Function ID: 89660
+// Module ID: 11512
+// Function ID: 89684
 // Name: maybeGetLevelUnlockedPopoutDCF
 // Dependencies: []
 // Exports: useAutoDismissGuildPowerupsNotifications
 
-// Module 11505 (maybeGetLevelUnlockedPopoutDCF)
+// Module 11512 (maybeGetLevelUnlockedPopoutDCF)
 function maybeGetLevelUnlockedPopoutDCF(closure_0) {
   const arg1 = closure_0;
   const importDefault = arg1;

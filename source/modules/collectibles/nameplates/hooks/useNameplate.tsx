@@ -1,10 +1,10 @@
-// Module ID: 9078
-// Function ID: 71155
+// Module ID: 9082
+// Function ID: 71167
 // Name: useNameplate
 // Dependencies: []
 // Exports: useNameplate
 
-// Module 9078 (useNameplate)
+// Module 9082 (useNameplate)
 let closure_2 = importAll(dependencyMap[0]);
 let closure_3 = importDefault(dependencyMap[1]);
 const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/collectibles/nameplates/hooks/useNameplate.tsx");

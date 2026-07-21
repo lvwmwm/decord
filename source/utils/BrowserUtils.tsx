@@ -1,10 +1,10 @@
-// Module ID: 4441
-// Function ID: 38860
+// Module ID: 4445
+// Function ID: 38908
 // Name: getChromeVersion
 // Dependencies: [5, 664]
 // Exports: canUseWebp, isFirefox, supportsHEVCAlpha
 
-// Module 4441 (getChromeVersion)
+// Module 4445 (getChromeVersion)
 import { name } from "asyncGeneratorStep";
 import module_664 from "module_664";
 

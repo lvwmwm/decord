@@ -1,10 +1,10 @@
-// Module ID: 11286
-// Function ID: 87832
+// Module ID: 11292
+// Function ID: 87855
 // Name: AppLauncherMentionableListActionSheet
 // Dependencies: []
 // Exports: default
 
-// Module 11286 (AppLauncherMentionableListActionSheet)
+// Module 11292 (AppLauncherMentionableListActionSheet)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 const RelationshipTypes = arg1(dependencyMap[2]).RelationshipTypes;
@@ -49,7 +49,7 @@ export default function AppLauncherMentionableListActionSheet(channel) {
       lib(str.toLowerCase());
       const current = ref.current;
       if (null != current) {
-        current.scrollToOffset({ "Bool(true)": 9035158524362260000000000000000000000000000000000000000000000000000000000000000000000000000000, "Bool(true)": -222642488090540470000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 });
+        current.scrollToOffset({ -437125116: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002488040065571517, -435748860: -823154013994709700000000000000000000000000000000000000000000000 });
       }
     }
   };
@@ -77,7 +77,7 @@ export default function AppLauncherMentionableListActionSheet(channel) {
             const result3 = item.result;
             const user = result3.user;
             obj = { type: lib.NONE, user, nickname: result3.nick, guildId: guild_id };
-            obj = { "Bool(false)": null, "Bool(false)": null };
+            obj = {};
             const tmp28 = onActionSheetDismiss(channel[9]);
             obj.children = item(channel[11]).getUserTag(user);
             obj.subLabel = ref(item(channel[10]).Text, obj);
@@ -99,7 +99,7 @@ export default function AppLauncherMentionableListActionSheet(channel) {
               const tmp6 = onActionSheetDismiss(channel[14]);
             }
             const obj3 = {};
-            const obj4 = { CHANNEL_HIGHLIGHT: true, guild_template_description: 15.1, borderWidth: 253, children: result.text };
+            const obj4 = { encodingConfig: true, showRemove: 15.1, PREMIUM_CUSTOM_NOTIFICATION_SOUND_SETTINGS_UPSELL: 253, children: result.text };
             obj3.label = ref(item(channel[10]).Text, obj4);
             obj3.icon = tmp8;
             const merged2 = Object.assign(obj);

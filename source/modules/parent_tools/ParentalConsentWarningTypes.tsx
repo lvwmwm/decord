@@ -1,10 +1,10 @@
-// Module ID: 13641
-// Function ID: 103381
+// Module ID: 13648
+// Function ID: 103404
 // Name: frozen
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 13641 (frozen)
-const frozen = Object.freeze({ paddingHorizontal: "<string:17534017>", justifyContent: "<string:1163547136>" });
+// Module 13648 (frozen)
+const frozen = Object.freeze({ paddingHorizontal: false, justifyContent: false });
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("modules/parent_tools/ParentalConsentWarningTypes.tsx");
 

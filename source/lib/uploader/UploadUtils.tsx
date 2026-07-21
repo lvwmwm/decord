@@ -1,10 +1,10 @@
-// Module ID: 4668
-// Function ID: 40542
+// Module ID: 4670
+// Function ID: 40583
 // Name: DefaultHttpClient
 // Dependencies: []
 // Exports: calculateProgress, canUploadNatively, doesImageMatchUpload
 
-// Module 4668 (DefaultHttpClient)
+// Module 4670 (DefaultHttpClient)
 let closure_2 = importDefault(dependencyMap[0]);
 let closure_3 = importDefault(dependencyMap[1]);
 const tmp2 = () => {

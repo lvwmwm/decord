@@ -1,12 +1,11 @@
 // Module ID: 1729
 // Function ID: 19388
 // Name: useEvent
-// Dependencies: [31, 1586]
+// Dependencies: []
 // Exports: useEvent
 
 // Module 1729 (useEvent)
-import { useRef } from "module_31";
-
+const useRef = require(dependencyMap[0]).useRef;
 
 export const useEvent = function useEvent(pnpm_ReanimatedNativeStackScreenTsx1, closure_4, doDependenciesDiffer) {
   if (arguments.length > 1) {

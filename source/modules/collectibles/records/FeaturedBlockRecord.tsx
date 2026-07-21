@@ -1,9 +1,9 @@
-// Module ID: 6796
-// Function ID: 53621
+// Module ID: 6802
+// Function ID: 53670
 // Name: FeaturedBlockRecord
 // Dependencies: []
 
-// Module 6796 (FeaturedBlockRecord)
+// Module 6802 (FeaturedBlockRecord)
 let closure_2 = importDefault(dependencyMap[0]);
 let closure_3 = importDefault(dependencyMap[1]);
 let closure_4 = arg1(dependencyMap[2]).FeaturedCategorySubblockRecord;

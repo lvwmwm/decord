@@ -1,9 +1,9 @@
-// Module ID: 9418
-// Function ID: 73325
+// Module ID: 9422
+// Function ID: 73339
 // Name: SlideoutButton
 // Dependencies: []
 
-// Module 9418 (SlideoutButton)
+// Module 9422 (SlideoutButton)
 class SlideoutButton {
   constructor(arg0) {
     ({ title, height } = global);
@@ -36,7 +36,7 @@ const View = arg1(dependencyMap[1]).View;
 ({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[3]));
 let obj = arg1(dependencyMap[4]);
 obj = { button: {} };
-obj = { replace: null, ty: null, ct: null, text: null, parent: null, status: null };
+obj = {};
 const tmp3 = arg1(dependencyMap[3]);
 obj.color = arg1(dependencyMap[5]).hexWithOpacity(importDefault(dependencyMap[6]).unsafe_rawColors.WHITE, 0.6);
 obj.fontFamily = arg1(dependencyMap[2]).Fonts.PRIMARY_SEMIBOLD;

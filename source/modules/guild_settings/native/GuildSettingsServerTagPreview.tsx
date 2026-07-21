@@ -1,10 +1,10 @@
-// Module ID: 12790
-// Function ID: 98048
+// Module ID: 12797
+// Function ID: 98071
 // Name: GuildSettingsServerTagPreview
 // Dependencies: []
 // Exports: default
 
-// Module 12790 (GuildSettingsServerTagPreview)
+// Module 12797 (GuildSettingsServerTagPreview)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 let closure_5 = importAll(dependencyMap[2]);
@@ -22,13 +22,13 @@ obj.notice = { marginBottom: importDefault(dependencyMap[8]).space.PX_12 };
 const obj1 = { marginBottom: importDefault(dependencyMap[8]).space.PX_12 };
 obj.message = { columnGap: importDefault(dependencyMap[8]).space.PX_12 };
 obj.unfocused = { opacity: 0.5 };
-const obj3 = { aze: 30706176, azj: 378290688, borderRadius: importDefault(dependencyMap[8]).radii.round };
-obj.avatar = obj3;
-obj.messageBody = { flex: 1 };
-const obj4 = { -9223372036854775808: true, filter: true, columnGap: importDefault(dependencyMap[8]).space.PX_4 };
-obj.usernameRow = obj4;
-let closure_13 = obj.createStyles(obj);
 const obj2 = { columnGap: importDefault(dependencyMap[8]).space.PX_12 };
+obj.avatar = { borderRadius: importDefault(dependencyMap[8]).radii.round };
+obj.messageBody = { flex: 1 };
+const obj3 = { borderRadius: importDefault(dependencyMap[8]).radii.round };
+obj.usernameRow = { columnGap: importDefault(dependencyMap[8]).space.PX_4 };
+let closure_13 = obj.createStyles(obj);
+const obj4 = { columnGap: importDefault(dependencyMap[8]).space.PX_4 };
 const result = arg1(dependencyMap[22]).fileFinishedImporting("modules/guild_settings/native/GuildSettingsServerTagPreview.tsx");
 
 export default function GuildSettingsServerTagPreview(guildId) {
@@ -83,7 +83,7 @@ export default function GuildSettingsServerTagPreview(guildId) {
   const items1 = [guildId, onAdopted];
   obj = {};
   const callback = React.useCallback(callback(tmp), items1);
-  obj = { INTEGRATION_CREATE: "<string:3305963521>", ConstraintReasonCode: "<string:671547393>", style: tmp2.notice };
+  obj = { style: tmp2.notice };
   const intl = arg1(closure_2[14]).intl;
   const string = intl.string;
   const t = arg1(closure_2[14]).t;
@@ -158,7 +158,7 @@ export default function GuildSettingsServerTagPreview(guildId) {
   ({ message: arr11[0], unfocused: arr11[1] } = tmp2);
   const items11 = [callback3(closure_6, { source: importDefault(closure_2[19]), style: tmp2.avatar, importantForAccessibility: "no" }), ];
   const obj15 = { style: tmp2.messageBody };
-  const items12 = [callback3(arg1(closure_2[13]).Text, {}), ];
+  const items12 = [callback3(arg1(closure_2[13]).Text, { "Bool(false)": false, "Bool(false)": false, "Bool(false)": false }), ];
   const obj16 = {};
   const intl4 = arg1(closure_2[14]).intl;
   obj16.children = intl4.string(arg1(closure_2[14]).t.vtCg11);

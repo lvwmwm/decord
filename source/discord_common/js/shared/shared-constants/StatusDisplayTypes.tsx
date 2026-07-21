@@ -1,9 +1,9 @@
-// Module ID: 9067
-// Function ID: 71128
+// Module ID: 9071
+// Function ID: 71140
 // Name: StatusDisplayTypes
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 9067 (StatusDisplayTypes)
+// Module 9071 (StatusDisplayTypes)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_common/js/shared/shared-constants/StatusDisplayTypes.tsx");
 

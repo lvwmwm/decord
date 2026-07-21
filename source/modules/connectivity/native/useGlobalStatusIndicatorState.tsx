@@ -1,10 +1,10 @@
-// Module ID: 10614
-// Function ID: 82806
+// Module ID: 10620
+// Function ID: 82829
 // Name: useGlobalStatusIndicatorState
 // Dependencies: []
 // Exports: useGlobalStatusIndicatorState
 
-// Module 10614 (useGlobalStatusIndicatorState)
+// Module 10620 (useGlobalStatusIndicatorState)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 const RTC_PANEL_HEIGHT = arg1(dependencyMap[2]).RTC_PANEL_HEIGHT;

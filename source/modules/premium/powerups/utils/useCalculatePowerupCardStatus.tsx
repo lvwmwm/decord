@@ -1,10 +1,10 @@
-// Module ID: 11534
-// Function ID: 89844
+// Module ID: 11541
+// Function ID: 89867
 // Name: useCalculatePowerupCardStatus
 // Dependencies: []
 // Exports: useCalculatePowerupCardStatus
 
-// Module 11534 (useCalculatePowerupCardStatus)
+// Module 11541 (useCalculatePowerupCardStatus)
 let closure_3 = importAll(dependencyMap[0]);
 const PowerupActiveStatusType = arg1(dependencyMap[1]).PowerupActiveStatusType;
 const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/premium/powerups/utils/useCalculatePowerupCardStatus.tsx");

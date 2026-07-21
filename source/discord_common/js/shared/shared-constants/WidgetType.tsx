@@ -1,9 +1,9 @@
-// Module ID: 6845
-// Function ID: 54111
+// Module ID: 6851
+// Function ID: 54157
 // Name: WidgetType
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 6845 (WidgetType)
+// Module 6851 (WidgetType)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_common/js/shared/shared-constants/WidgetType.tsx");
 

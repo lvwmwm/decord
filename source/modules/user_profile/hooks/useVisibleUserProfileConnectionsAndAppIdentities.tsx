@@ -1,10 +1,10 @@
-// Module ID: 11991
-// Function ID: 92686
+// Module ID: 11998
+// Function ID: 92709
 // Name: useVisibleUserProfileConnectionsAndAppIdentities
 // Dependencies: []
 // Exports: default
 
-// Module 11991 (useVisibleUserProfileConnectionsAndAppIdentities)
+// Module 11998 (useVisibleUserProfileConnectionsAndAppIdentities)
 let closure_3 = importAll(dependencyMap[0]);
 const result = arg1(dependencyMap[6]).fileFinishedImporting("modules/user_profile/hooks/useVisibleUserProfileConnectionsAndAppIdentities.tsx");
 

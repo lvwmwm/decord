@@ -1,10 +1,10 @@
-// Module ID: 13194
-// Function ID: 100014
+// Module ID: 13201
+// Function ID: 100037
 // Name: resolveName
 // Dependencies: []
 // Exports: installSystrace
 
-// Module 13194 (resolveName)
+// Module 13201 (resolveName)
 function resolveName(arg0) {
   let tmp = arg0;
   if ("string" !== typeof arg0) {

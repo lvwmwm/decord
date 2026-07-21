@@ -1,20 +1,20 @@
-// Module ID: 5261
-// Function ID: 44673
+// Module ID: 5263
+// Function ID: 44714
 // Name: _isNativeReflectConstruct
 // Dependencies: [0, 0, 0, 4294967295, 4294967295, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 
-// Module 5261 (_isNativeReflectConstruct)
-import closure_2 from "result";
-import closure_3 from "result";
-import closure_4 from "result";
-import { isGuildOwner } from "result";
-import { hasPermission } from "result";
-import closure_9 from "result";
-import closure_10 from "result";
-import closure_11 from "result";
-import closure_12 from "result";
-import result from "result";
-import result from "result";
+// Module 5263 (_isNativeReflectConstruct)
+import closure_2 from "__exportStarResult1";
+import closure_3 from "__exportStarResult1";
+import closure_4 from "__exportStarResult1";
+import { isGuildOwner } from "__exportStarResult1";
+import { hasPermission } from "__exportStarResult1";
+import closure_9 from "__exportStarResult1";
+import closure_10 from "__exportStarResult1";
+import closure_11 from "__exportStarResult1";
+import closure_12 from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
 
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
@@ -223,7 +223,7 @@ function handleRoleUpdate(guildId) {
 }
 let closure_5 = importDefault(dependencyMap[3]);
 let closure_6 = importDefault(dependencyMap[4]);
-({ Permissions: closure_13, GuildFeatures: closure_14 } = result);
+({ Permissions: closure_13, GuildFeatures: closure_14 } = __exportStarResult1);
 const set = new Set();
 const map = new Map();
 const map1 = new Map();
@@ -341,9 +341,9 @@ let tmp8 = (Store) => {
     }
   };
   return callback(SubscriptionRoleStore, items);
-}(require("result").Store);
+}(require("__exportStarResult1").Store);
 tmp8.displayName = "SubscriptionRoleStore";
-tmp8 = new tmp8(require("result"), {
+tmp8 = new tmp8(require("__exportStarResult1"), {
   CONNECTION_OPEN: deleteEverything,
   LOGOUT: deleteEverything,
   GUILD_CREATE: handleGuildUpdate,
@@ -385,6 +385,6 @@ tmp8 = new tmp8(require("result"), {
     return tmp5;
   }
 });
-result = result.fileFinishedImporting("modules/guild_role_subscriptions/SubscriptionRoleStore.tsx");
+const result = __exportStarResult1.fileFinishedImporting("modules/guild_role_subscriptions/SubscriptionRoleStore.tsx");
 
 export default tmp8;

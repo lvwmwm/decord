@@ -1,10 +1,10 @@
-// Module ID: 11511
-// Function ID: 89721
+// Module ID: 11518
+// Function ID: 89745
 // Name: useGuildPowerupRollbackNotificationConfig
 // Dependencies: []
 // Exports: default
 
-// Module 11511 (useGuildPowerupRollbackNotificationConfig)
+// Module 11518 (useGuildPowerupRollbackNotificationConfig)
 let closure_3 = importDefault(dependencyMap[0]);
 const result = arg1(dependencyMap[8]).fileFinishedImporting("modules/premium/powerups/hooks/useGuildPowerupRollbackNotificationConfig.tsx");
 

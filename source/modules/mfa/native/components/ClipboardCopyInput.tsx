@@ -1,17 +1,17 @@
-// Module ID: 14516
-// Function ID: 109336
+// Module ID: 14523
+// Function ID: 109358
 // Name: ClipboardCopyInput
 // Dependencies: []
 // Exports: default
 
-// Module 14516 (ClipboardCopyInput)
+// Module 14523 (ClipboardCopyInput)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 const View = arg1(dependencyMap[2]).View;
 let closure_6 = importDefault(dependencyMap[3]);
 const AppStates = arg1(dependencyMap[4]).AppStates;
 const jsx = arg1(dependencyMap[5]).jsx;
-let closure_9 = arg1(dependencyMap[6]).createStyles({ inputContainer: { title: -1705967615, commandId: -184139303 } });
+let closure_9 = arg1(dependencyMap[6]).createStyles({ inputContainer: {} });
 const obj = arg1(dependencyMap[6]);
 const result = arg1(dependencyMap[12]).fileFinishedImporting("modules/mfa/native/components/ClipboardCopyInput.tsx");
 

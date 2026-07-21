@@ -104,7 +104,7 @@ let closure_14 = (arg0) => {
 }(importDefaultResult(Error));
 const tmp3 = arg1(dependencyMap[8]);
 let closure_15 = arg1(dependencyMap[11]).create(() => {
-  const obj = { "Null": true, "Null": true, "Null": true, "Null": true, "Null": true };
+  const obj = {};
   let tmp = importDefault(dependencyMap[10]);
   tmp = new tmp();
   obj.backoff = tmp;
@@ -145,10 +145,7 @@ export const createFetchStore = function createFetchStore(importDefaultResult, a
       let value = map.get(items);
       if (null == value) {
         let obj = items(closure_2[11]);
-        obj = obj.create(() => {
-          const obj = { "Null": true, "Null": true, "Null": true, "Null": true, "Null": true, backoff: callback() };
-          return obj;
-        });
+        obj = obj.create(() => ({ backoff: callback() }));
         const result = map.set(items, obj);
         value = obj;
       }
@@ -215,7 +212,7 @@ export const createFetchStore = function createFetchStore(importDefaultResult, a
           HermesBuiltin.arraySpread(tmp, 0);
           yield HermesBuiltin.apply(items2, undefined);
           backoff.succeed();
-          obj = { 4831993: "midnight", 9223372036854775807: "noon", 0: "morning", 0: "afternoon" };
+          obj = { hash: true, toString: true, url: true, color: true };
           const _Date3 = Date;
           obj.lastSuccessAt = Date.now();
           obj.setState(obj);

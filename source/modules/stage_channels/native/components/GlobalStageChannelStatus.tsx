@@ -1,10 +1,10 @@
-// Module ID: 10620
-// Function ID: 82844
+// Module ID: 10626
+// Function ID: 82867
 // Name: getText
 // Dependencies: []
 // Exports: default
 
-// Module 10620 (getText)
+// Module 10626 (getText)
 function getText(number, number2) {
   if (number > 0) {
     if (number2 > 0) {
@@ -29,7 +29,7 @@ class StageChannelRaiseHandAck {
     channel = global.channel;
     arg1 = channel;
     closure_1 = undefined;
-    f82850 = undefined;
+    f82873 = undefined;
     closure_3 = undefined;
     _handleAcceptInvite = function _handleAcceptInvite(arg0) {
       // CreateGeneratorClosureLongIndex (0x67)
@@ -53,7 +53,7 @@ class StageChannelRaiseHandAck {
     items1 = [];
     items1[0] = channel.id;
     stateFromStores = obj.useStateFromStores(items, () => stageInstanceByChannel.getStageInstanceByChannel(channel.id), items1);
-    f82850 = stateFromStores;
+    f82873 = stateFromStores;
     tmp6 = closure_1(closure_3[13])(() => {
       let obj = stringResult(closure_3[14]);
       obj = {};
@@ -145,7 +145,7 @@ class StageChannelRaiseHandAck {
       tmp35 = arg1;
       tmp36 = closure_3;
       num5 = 24;
-      obj8 = {};
+      obj8 = { "Bool(true)": 1, "Bool(true)": 1, "Bool(true)": null, "Bool(true)": 0, "Bool(true)": null, "Bool(true)": 156 };
       obj8.onPress = function handleDeclineInvite() {
         if (null != channel) {
           const result = channel(closure_3[20]).audienceAckRequestToSpeak(channel, true);
@@ -165,7 +165,7 @@ class StageChannelRaiseHandAck {
       obj9.style = tmp.buttonWrapper;
       tmp39 = jsx;
       num6 = 25;
-      obj10 = { EXPRESSION_PICKER_CATEGORY_SELECTED: true, isImageLoaded: "/assets/design/components/Icon/native/redesign/generated/images", isImageErrored: 24 };
+      obj10 = { registerAsset: true, category: "/assets/design/components/Icon/native/redesign/generated/images", alignItems: 24 };
       obj10.onPress = function handleAcceptInvite() {
         return _handleAcceptInvite(...arguments);
       };
@@ -208,9 +208,9 @@ const obj4 = { color: importDefault(dependencyMap[10]).colors.TEXT_DEFAULT, font
 obj.channel = { color: importDefault(dependencyMap[10]).colors.TEXT_DEFAULT, fontSize: 14, fontFamily: Fonts.PRIMARY_MEDIUM };
 const obj5 = { color: importDefault(dependencyMap[10]).colors.TEXT_DEFAULT, fontSize: 14, fontFamily: Fonts.PRIMARY_MEDIUM };
 obj.invitedHeaderText = { color: importDefault(dependencyMap[10]).colors.WHITE, fontSize: 14, fontFamily: Fonts.PRIMARY_MEDIUM };
-const obj7 = { "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, paddingHorizontal: importDefault(dependencyMap[10]).space.PX_8, paddingBottom: importDefault(dependencyMap[10]).space.PX_4 };
+const obj7 = { hasBottomSafeArea: "OPACITY_64", hasLeftSafeArea: 0.6392156862745098, hasRightSafeArea: "NEUTRAL_34", hasTopSafeArea: 1, isImageLoaded: 0.285, paddingHorizontal: importDefault(dependencyMap[10]).space.PX_8, paddingBottom: importDefault(dependencyMap[10]).space.PX_4 };
 obj.noticeContainer = obj7;
-const obj8 = { "Bool(true)": false, "Bool(true)": false, "Bool(true)": false, "Bool(true)": false, gap: importDefault(dependencyMap[10]).space.PX_4 };
+const obj8 = { TRENDING_GIFS: 843251715, isImageLoaded: 167773045, isImageErrored: 150995855, se-FI: 1140851599, gap: importDefault(dependencyMap[10]).space.PX_4 };
 obj.row = obj8;
 const obj6 = { color: importDefault(dependencyMap[10]).colors.WHITE, fontSize: 14, fontFamily: Fonts.PRIMARY_MEDIUM };
 obj.buttonWrapper = { flexGrow: 1, margin: importDefault(dependencyMap[10]).space.PX_8 };

@@ -1,10 +1,10 @@
-// Module ID: 12844
-// Function ID: 98186
+// Module ID: 12851
+// Function ID: 98209
 // Name: CommunityPill
 // Dependencies: []
 // Exports: default
 
-// Module 12844 (CommunityPill)
+// Module 12851 (CommunityPill)
 function CommunityPill(guildVisibility) {
   let arg1;
   const tmp = callback3();
@@ -44,17 +44,17 @@ const GuildFeatures = arg1(dependencyMap[5]).GuildFeatures;
 const tmp2 = arg1(dependencyMap[1]);
 ({ jsx: closure_10, jsxs: closure_11 } = arg1(dependencyMap[6]));
 let obj = arg1(dependencyMap[7]);
-obj = { content: { padding: 16 }, avatar: {} };
+obj = { content: { padding: 16 }, avatar: { "Bool(false)": false, "Bool(false)": false, "Bool(false)": false } };
 obj = { backgroundColor: importDefault(dependencyMap[8]).colors.MOBILE_ACTIONSHEET_BACKGROUND };
 obj.headerContainer = obj;
-const obj1 = { folderColor: "png", handleAutomaticGainControlChange: true, serverIP: "/assets/images/native/status", gameServerPanelUrl: 36, entitlementId: 24, H265: null, onlyChannels: "48a492306912f6e40271e3f606596ed0", handleResetDismissibilityClick: "StatusVROnline", backgroundColor: importDefault(dependencyMap[8]).colors.MOBILE_ACTIONSHEET_BACKGROUND };
+const obj1 = { cost: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000024387366651719286, position: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000179209178536, top: 443716159789873250000000000000000000000000000000000000000000000, left: -9518926521894197000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, flexDirection: 13343115067766397000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, alignItems: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000339519326633, "Bool(true)": 0.000000000000000000000000000000005392610441878041, "Bool(true)": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000024387366651719286, backgroundColor: importDefault(dependencyMap[8]).colors.MOBILE_ACTIONSHEET_BACKGROUND };
 obj.avatarBackground = obj1;
 obj.description = { marginTop: 8 };
-obj.memberInfo = { width: "%Float64Array%", height: "en-PK", borderRadius: "Float32Array", marginHorizontal: "GameDepthTier9LargeBadge", marginBottom: "read" };
+obj.memberInfo = {};
 obj.nameRow = {};
 const tmp3 = arg1(dependencyMap[6]);
 obj.communityPill = { backgroundColor: importDefault(dependencyMap[8]).colors.INTERACTIVE_BACKGROUND_HOVER, borderRadius: importDefault(dependencyMap[8]).radii.round };
-obj.communityPillIcon = { useTrackPdpClick: "Array", GameDetectionDebugLevel: "onSelectUser", presenceCount: "SU" };
+obj.communityPillIcon = { 0: -9518925608389488000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, 9223372036854775807: 13343115067766397000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, -9223372036854775808: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000339519326633 };
 const obj3 = {};
 const obj2 = { backgroundColor: importDefault(dependencyMap[8]).colors.INTERACTIVE_BACKGROUND_HOVER, borderRadius: importDefault(dependencyMap[8]).radii.round };
 let num;
@@ -133,7 +133,7 @@ export default function GuildActionSheetHeader(guild) {
   let obj4 = arg1(dependencyMap[21]);
   if (obj4.isGuildRecord(guild)) {
     const features = guild.features;
-    obj = { "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, style: tmp.avatarBackground };
+    obj = { style: tmp.avatarBackground };
     const hasItem = features.has(GuildFeatures.ANIMATED_BANNER);
     obj = { style: tmp.avatar, guild, size: arg1(dependencyMap[25]).GuildIconSizes.XLARGE, animate: true };
     obj.children = callback(importDefault(dependencyMap[25]), obj);
@@ -212,7 +212,7 @@ export default function GuildActionSheetHeader(guild) {
   const obj9 = { style: tmp.nameRow };
   obj10 = { guild };
   const items9 = [callback(importDefault(dependencyMap[31]), obj10), ];
-  const obj11 = { "Bool(true)": 2, "Bool(true)": "asset_hash", "Bool(true)": "scalar", "Bool(true)": 9, variant: token, children: guild.name };
+  const obj11 = { -1545101677: 2, -1472458673: "asset_hash", 1525878864: "scalar", -1198933976: 9, variant: token, children: guild.name };
   items9[1] = callback(arg1(dependencyMap[18]).Text, obj11);
   obj9.children = items9;
   items8[1] = callback2(result, obj9);
@@ -229,7 +229,7 @@ export default function GuildActionSheetHeader(guild) {
     tmp53 = callback(CommunityPill, obj14);
   }
   const items10 = [tmp53, ];
-  obj15 = { style: { 0: 282656770, 0: null } };
+  obj15 = { style: {} };
   let tmp58 = null != tmp9;
   if (tmp58) {
     obj16 = { type: "online", count: tmp9 };

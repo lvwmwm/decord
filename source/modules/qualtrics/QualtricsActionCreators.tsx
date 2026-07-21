@@ -1,10 +1,10 @@
-// Module ID: 9264
-// Function ID: 72389
+// Module ID: 9268
+// Function ID: 72401
 // Name: fetchSurveyDetails
 // Dependencies: []
 // Exports: fetchSurveyDetails, fireSurveyAction, submitSurveyResponse
 
-// Module 9264 (fetchSurveyDetails)
+// Module 9268 (fetchSurveyDetails)
 function fetchSurveyDetails() {
   return _fetchSurveyDetails(...arguments);
 }

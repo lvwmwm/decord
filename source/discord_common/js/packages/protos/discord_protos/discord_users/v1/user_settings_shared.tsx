@@ -26,9 +26,9 @@ let tmp2 = (MessageType) => {
       tmp = closure_3(this, Versions$Type);
       items = [, , ];
       items[0] = {};
-      items[1] = { body: 0, guildId: 29315873, ao: -1325382310, "": 625 };
-      items[2] = { body: -42.712, guildId: 3, ao: "favorite_stickers", "": "message" };
-      items1 = [];
+      items[1] = { 9223372036854775807: 0, 0: 29709089, 9223372036854775807: 675628429, no: 625 };
+      items[2] = { 9223372036854775807: -42.712, 0: 3, 9223372036854775807: "favorite_stickers", no: "message" };
+      items1 = [34];
       items1[1] = items;
       obj = closure_6(Versions$Type);
       tmp2 = closure_5;
@@ -48,7 +48,7 @@ let tmp2 = (MessageType) => {
   let obj = {
     key: "create",
     value(arr) {
-      let obj = {};
+      let obj = { 983589860: "spring", -1298214829: "linear", 1441712373: "easeInEaseOut" };
       const _Object = Object;
       obj = { enumerable: false, value: this };
       _Object.defineProperty(obj, Versions$Type(closure_1[6]).MESSAGE_TYPE, obj);

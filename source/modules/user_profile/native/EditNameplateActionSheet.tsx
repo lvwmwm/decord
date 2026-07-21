@@ -1,10 +1,10 @@
-// Module ID: 13473
-// Function ID: 102284
+// Module ID: 13480
+// Function ID: 102307
 // Name: EditNameplateInner
 // Dependencies: []
 // Exports: default
 
-// Module 13473 (EditNameplateInner)
+// Module 13480 (EditNameplateInner)
 function EditNameplateInner(user) {
   let selectedNameplate;
   let setSelectedNameplate;
@@ -139,7 +139,7 @@ function NameplateActionSheetPreview(arg0) {
   obj.accessible = true;
   obj = { style: tmp.nameplateGradientContainer };
   const items1 = [callback2(arg1(dependencyMap[27]).NameplateDummyUserPreview, { width: 100 }), callback2(arg1(dependencyMap[27]).NameplateDummyUserPreview, { width: 140 }), ];
-  const obj1 = { style: tmp.nameplatePreviewGradient, start: { "Null": -9130076776366450000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, "Null": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003241078182019625 }, end: { "Null": "/assets/images/native/icons", "Null": 32 } };
+  const obj1 = { style: tmp.nameplatePreviewGradient, start: { max: null, guildId: null }, end: { max: "/assets/images/native/icons", guildId: 32 } };
   const items2 = [tmp.nameplatePreviewGradient.color, "" + tmp.nameplatePreviewGradient.color + "00"];
   obj1.colors = items2;
   items1[2] = callback2(importDefault(dependencyMap[28]), obj1);
@@ -147,7 +147,7 @@ function NameplateActionSheetPreview(arg0) {
   const items3 = [callback3(View, obj), callback2(arg1(dependencyMap[29]).NameplatePreview, { nameplate: memo, user, guildId, animate: true, aria-hidden: true }), ];
   const obj2 = { style: tmp.nameplateGradientContainer };
   const items4 = [callback2(arg1(dependencyMap[27]).NameplateDummyUserPreview, { width: 140 }), callback2(arg1(dependencyMap[27]).NameplateDummyUserPreview, { width: 100 }), ];
-  const obj3 = { style: tmp.nameplatePreviewGradient, start: { "Null": "r", "Null": "iconContainerSelected" }, end: {} };
+  const obj3 = { style: tmp.nameplatePreviewGradient, start: { max: "r", guildId: "isArray" }, end: { max: null, guildId: null } };
   const tmp11 = importDefault(dependencyMap[28]);
   const tmp4 = callback3;
   const tmp5 = View;
@@ -171,12 +171,12 @@ let obj = arg1(dependencyMap[8]);
 obj = {};
 obj = { flex: 1, backgroundColor: importDefault(dependencyMap[9]).colors.MOBILE_ACTIONSHEET_BACKGROUND };
 obj.container = obj;
-obj.bounceOffset = { 1532122209: "row", 1663392805: "center", 1364614395: "flex-start", 996279293: 40, -936095340: null };
+obj.bounceOffset = { fontSize: "row", alignItems: "center", display: "flex-start", flexDirection: 40, justifyContent: null };
 const tmp2 = arg1(dependencyMap[7]);
 obj.title = { color: importDefault(dependencyMap[9]).colors.MOBILE_TEXT_HEADING_PRIMARY };
 obj.nameplatePreviewContainer = {};
 obj.nameplateGradientContainer = { width: "100%" };
-const obj2 = { "Null": true, "Null": false, "Null": "", color: importDefault(dependencyMap[9]).colors.MOBILE_ACTIONSHEET_BACKGROUND };
+const obj2 = { "Null": null, "Null": null, "Null": null, color: importDefault(dependencyMap[9]).colors.MOBILE_ACTIONSHEET_BACKGROUND };
 obj.nameplatePreviewGradient = obj2;
 let closure_13 = obj.createStyles(obj);
 const obj1 = { color: importDefault(dependencyMap[9]).colors.MOBILE_TEXT_HEADING_PRIMARY };

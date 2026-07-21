@@ -1,9 +1,9 @@
-// Module ID: 8912
-// Function ID: 70346
+// Module ID: 8916
+// Function ID: 70358
 // Name: ClearFriendRequestFilters
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 8912 (ClearFriendRequestFilters)
+// Module 8916 (ClearFriendRequestFilters)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("modules/relationships/RelationshipConstants.tsx");
 

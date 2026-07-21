@@ -1,17 +1,17 @@
-// Module ID: 14380
-// Function ID: 108529
+// Module ID: 14387
+// Function ID: 108552
 // Name: CollectiblesProgressiveImage
-// Dependencies: [7656, 653, 10080, 1212, 14388, 2]
+// Dependencies: [7655, 653, 10086, 1212, 14395, 2]
 // Exports: CollectiblesProgressiveImage
 
-// Module 14380 (CollectiblesProgressiveImage)
+// Module 14387 (CollectiblesProgressiveImage)
 import "MobileSetting";
 import ME from "ME";
 import { jsx } from "createToggle";
-import keys from "keys";
+import result2 from "result2";
 
 ({ View: closure_3, StyleSheet: closure_4 } = ME);
-const result = keys.fileFinishedImporting("modules/collectibles/native/CollectiblesProgressiveImage.tsx");
+const result = result2.fileFinishedImporting("modules/collectibles/native/CollectiblesProgressiveImage.tsx");
 
 export const CollectiblesProgressiveImage = function CollectiblesProgressiveImage(arg0) {
   let source;

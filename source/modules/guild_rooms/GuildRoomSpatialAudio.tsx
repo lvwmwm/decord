@@ -1,10 +1,10 @@
-// Module ID: 15923
-// Function ID: 122152
+// Module ID: 15930
+// Function ID: 122178
 // Name: getSpatialAudioPointFromGuildRoomPosition
 // Dependencies: [42795008, 44236800, 44957696, 131072, 125239296, 100663296, 251658240]
 // Exports: livingRoomWorldPointToMediaEnginePoint, useGuildRoomSpatialAudio
 
-// Module 15923 (getSpatialAudioPointFromGuildRoomPosition)
+// Module 15930 (getSpatialAudioPointFromGuildRoomPosition)
 function getSpatialAudioPointFromGuildRoomPosition(arg0) {
   let aspectRatio;
   let listenerHeight;

@@ -1,11 +1,11 @@
-// Module ID: 11085
-// Function ID: 86252
+// Module ID: 11091
+// Function ID: 86275
 // Name: INITIAL_STATE
 // Dependencies: []
 // Exports: useDiceRollState
 
-// Module 11085 (INITIAL_STATE)
-let obj = { "Bool(false)": "is", "Bool(false)": "key", "Bool(false)": "language", "Bool(false)": "labeled", "Bool(false)": "level", "Bool(false)": "live" };
+// Module 11091 (INITIAL_STATE)
+let obj = {};
 const _module = require(dependencyMap[0]);
 obj = _module.create(() => obj);
 const _module1 = require(dependencyMap[1]);

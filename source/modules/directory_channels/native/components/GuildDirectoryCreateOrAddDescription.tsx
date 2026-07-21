@@ -1,21 +1,19 @@
-// Module ID: 10034
-// Function ID: 77583
+// Module ID: 10040
+// Function ID: 77601
 // Name: GuildDirectoryCreateOrAddDescription
-// Dependencies: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+// Dependencies: []
 // Exports: default
 
-// Module 10034 (GuildDirectoryCreateOrAddDescription)
-import closure_3 from "result";
-import "result";
-import result from "result";
-import result from "result";
-import result from "result";
-import result from "result";
-
-({ View: closure_4, ScrollView: closure_5 } = result);
-({ jsx: closure_6, jsxs: closure_7 } = result);
-let closure_8 = result.createStyles({ container: { flex: 1 }, title: { bounces: null, keyboardShouldPersistTaps: null }, description: { textAlign: "center" }, header: {} });
-result = result.fileFinishedImporting("modules/directory_channels/native/components/GuildDirectoryCreateOrAddDescription.tsx");
+// Module 10040 (GuildDirectoryCreateOrAddDescription)
+let closure_3 = importDefault(dependencyMap[0]);
+importAll(dependencyMap[1]);
+({ View: closure_4, ScrollView: closure_5 } = arg1(dependencyMap[2]));
+const tmp3 = arg1(dependencyMap[2]);
+({ jsx: closure_6, jsxs: closure_7 } = arg1(dependencyMap[3]));
+const tmp4 = arg1(dependencyMap[3]);
+let closure_8 = arg1(dependencyMap[4]).createStyles({ container: { flex: 1 }, title: { "Null": null, "Null": null }, description: { textAlign: "center" }, header: {} });
+const obj = arg1(dependencyMap[4]);
+const result = arg1(dependencyMap[13]).fileFinishedImporting("modules/directory_channels/native/components/GuildDirectoryCreateOrAddDescription.tsx");
 
 export default function GuildDirectoryCreateOrAddDescription(directoryChannelId) {
   directoryChannelId = directoryChannelId.directoryChannelId;
@@ -31,7 +29,7 @@ export default function GuildDirectoryCreateOrAddDescription(directoryChannelId)
   let obj = {};
   obj = { style: tmp.container, keyboardShouldPersistTaps: "handled" };
   obj = { style: tmp.header };
-  const obj1 = { 0: 24, 9223372036854775807: 24, 0: null, -9223372036854775808: "aa9c26c29990ba7a6584e51ab5c56efa", style: tmp.title };
+  const obj1 = { 1501064855: 24, -1267889981: 24, -1145697943: null, -1266241916: "aa9c26c29990ba7a6584e51ab5c56efa", style: tmp.title };
   const intl = arg1(dependencyMap[11]).intl;
   obj1.children = intl.string(arg1(dependencyMap[11]).t.5bQcoa);
   const items = [callback(arg1(dependencyMap[10]).Text, obj1), ];

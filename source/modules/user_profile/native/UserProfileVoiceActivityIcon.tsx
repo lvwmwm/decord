@@ -1,10 +1,10 @@
-// Module ID: 9072
-// Function ID: 71140
+// Module ID: 9076
+// Function ID: 71152
 // Name: UserProfileVoiceActivityIcon
 // Dependencies: []
 // Exports: default
 
-// Module 9072 (UserProfileVoiceActivityIcon)
+// Module 9076 (UserProfileVoiceActivityIcon)
 importAll(dependencyMap[0]);
 let closure_3 = importDefault(dependencyMap[1]);
 const Permissions = arg1(dependencyMap[2]).Permissions;

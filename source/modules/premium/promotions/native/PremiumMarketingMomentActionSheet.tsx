@@ -1,10 +1,10 @@
-// Module ID: 15481
-// Function ID: 118163
+// Module ID: 15488
+// Function ID: 118187
 // Name: PremiumMarketingMomentActionSheet
 // Dependencies: []
 // Exports: default
 
-// Module 15481 (PremiumMarketingMomentActionSheet)
+// Module 15488 (PremiumMarketingMomentActionSheet)
 let closure_3 = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 let closure_5 = importDefault(dependencyMap[2]);
@@ -15,16 +15,16 @@ let obj = arg1(dependencyMap[6]);
 obj = {};
 obj = { borderRadius: importDefault(dependencyMap[7]).radii.lg };
 obj.container = obj;
-const obj1 = { 0: null, 0: null, 0: null, marginTop: importDefault(dependencyMap[7]).space.PX_24 };
+const obj1 = { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, marginTop: importDefault(dependencyMap[7]).space.PX_24 };
 obj.buttonContainer = obj1;
 const tmp2 = arg1(dependencyMap[5]);
 obj.header = { marginBottom: importDefault(dependencyMap[7]).space.PX_8, textAlign: "center" };
 obj.body = { textAlign: "center" };
-const obj3 = { <string:1140607356>: false, <string:1751293292>: false, borderRadius: importDefault(dependencyMap[7]).radii.md, marginBottom: importDefault(dependencyMap[7]).space.PX_24 };
-obj.image = obj3;
 const obj2 = { marginBottom: importDefault(dependencyMap[7]).space.PX_8, textAlign: "center" };
+obj.image = { borderRadius: importDefault(dependencyMap[7]).radii.md, marginBottom: importDefault(dependencyMap[7]).space.PX_24 };
+const obj3 = { borderRadius: importDefault(dependencyMap[7]).radii.md, marginBottom: importDefault(dependencyMap[7]).space.PX_24 };
 obj.video = { borderRadius: importDefault(dependencyMap[7]).radii.md, marginBottom: importDefault(dependencyMap[7]).space.PX_24 };
-obj.nitroWheelIcon = {};
+obj.nitroWheelIcon = { "Bool(true)": null, "Bool(true)": null, "Bool(true)": null };
 let closure_10 = obj.createStyles(obj);
 const obj4 = { borderRadius: importDefault(dependencyMap[7]).radii.md, marginBottom: importDefault(dependencyMap[7]).space.PX_24 };
 const result = arg1(dependencyMap[26]).fileFinishedImporting("modules/premium/promotions/native/PremiumMarketingMomentActionSheet.tsx");
@@ -106,7 +106,7 @@ export default function PremiumMarketingMomentActionSheet(component_id) {
   let obj6 = arg1(dependencyMap[17]);
   obj3 = { uri: bottomSheetData.assetUrl };
   if (obj6.getFile(obj3).isVideo) {
-    const obj4 = {};
+    const obj4 = { "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true };
     ({ assetUrl: obj12.videoURI, assetUrl: obj12.uri } = bottomSheetData);
     obj4.src = {};
     obj4.style = tmp.video;
@@ -122,21 +122,21 @@ export default function PremiumMarketingMomentActionSheet(component_id) {
     tmp15Result = tmp15(tmp16(tmp17[19]), obj6);
   }
   const items5 = [tmp15Result, , , ];
-  const obj8 = { reportedPageIndex: true, pageIndex: true, scrollTargetPageIndex: true };
+  const obj8 = { MAX_DICE_COUNT: true, onIndexChange: true, TEST_PSEUDOMAP: true };
   const items6 = [tmp.header];
   obj8.style = items6;
   obj8.children = bottomSheetData.header;
   items5[1] = callback(arg1(dependencyMap[20]).Text, obj8);
-  const obj9 = { reportedPageIndex: null, pageIndex: null, scrollTargetPageIndex: null };
+  const obj9 = { MAX_DICE_COUNT: "Array", onIndexChange: "SERVER_GUIDE_CHANNEL_SELECTED", TEST_PSEUDOMAP: "pinIcon" };
   const items7 = [tmp.body];
   obj9.style = items7;
   const items8 = [bottomSheetData.body, " ", ];
   let tmp20 = null != helpArticleLinkProps;
   if (tmp20) {
     const obj10 = {
-      "Bool(true)": null,
-      "Bool(true)": 48,
-      "Bool(true)": 48,
+      alignItems: null,
+      justifyContent: 48,
+      minWidth: 48,
       onPress() {
           return bottomSheetData(promotionId[22]).openURL(helpArticleLinkProps.url);
         },
@@ -149,7 +149,7 @@ export default function PremiumMarketingMomentActionSheet(component_id) {
   items5[2] = closure_9(arg1(dependencyMap[21]).TextWithIOSLinkWorkaround, obj9);
   const obj11 = { style: items9 };
   const items9 = [tmp.buttonContainer];
-  const obj12 = {};
+  const obj12 = { "Null": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000232656173919898, "Null": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002540898980601415, "Null": 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000012741663005024175, "Null": -68.05714548874676, "Null": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000014992948780250344, "Null": 0.000000000000000000000000000000000000005881211672176443 };
   const button3 = bottomSheetData.button;
   let copy;
   if (null != button3) {

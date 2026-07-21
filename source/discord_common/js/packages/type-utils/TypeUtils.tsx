@@ -1,7 +1,7 @@
 // Module ID: 1361
 // Function ID: 16287
 // Name: exact
-// Dependencies: []
+// Dependencies: [284214097]
 // Exports: arrayIsNotEmpty, assertUnreachable, dangerouslyCast, exact, hasOwnProperty
 
 // Module 1361 (exact)

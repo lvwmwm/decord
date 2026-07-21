@@ -1,10 +1,10 @@
-// Module ID: 9019
-// Function ID: 70916
+// Module ID: 9023
+// Function ID: 70928
 // Name: Header
 // Dependencies: []
 // Exports: default
 
-// Module 9019 (Header)
+// Module 9023 (Header)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 const UserFlags = arg1(dependencyMap[2]).UserFlags;
@@ -14,11 +14,11 @@ obj = {};
 obj = { borderTopLeftRadius: importDefault(dependencyMap[5]).radii.sm, borderTopRightRadius: importDefault(dependencyMap[5]).radii.sm };
 obj.header = obj;
 obj.applicationNameWrapper = { flexDirection: "row" };
-obj.headerIcons = { -9223372036854775808: 4, -9223372036854775808: "version", 0: "scalar", 0: 6 };
-obj.ellipseGroup = { marginBottom: "<string:544342018>", width: "<string:536870912>", height: "<string:16777216>" };
+obj.headerIcons = { "Bool(false)": "KEYBOARD_PRESS", "Bool(false)": "buffered", "Bool(false)": "y", "Bool(false)": "isArray" };
+obj.ellipseGroup = { "Bool(true)": "<string:1912603177>", "Bool(true)": "resolve", "Bool(true)": "resolve" };
 const tmp3 = arg1(dependencyMap[3]);
 obj.ellipse = { backgroundColor: importDefault(dependencyMap[5]).colors.MOBILE_TEXT_HEADING_PRIMARY };
-obj.botTag = {};
+obj.botTag = { "Null": false, "Null": false };
 let closure_7 = obj.createStyles(obj);
 const obj1 = { backgroundColor: importDefault(dependencyMap[5]).colors.MOBILE_TEXT_HEADING_PRIMARY };
 const result = arg1(dependencyMap[12]).fileFinishedImporting("modules/oauth2/native/Header.tsx");
@@ -50,8 +50,7 @@ export default function Header(accountScopes) {
   obj1.children = items;
   const items2 = [callback2(View, obj1), , ];
   const obj8 = { style: tmp.applicationNameWrapper };
-  const obj9 = { INTEGRATION_CREATE: "partnerActionedTimestamp", ConstraintReasonCode: "cka", children: application.name };
-  const items3 = [callback(arg1(dependencyMap[8]).Text, obj9), ];
+  const items3 = [callback(arg1(dependencyMap[8]).Text, { children: application.name }), ];
   let tmp9Result = null;
   if (null != bot) {
     const obj10 = { style: tmp.botTag };
@@ -68,7 +67,7 @@ export default function Header(accountScopes) {
   items3[1] = tmp9Result;
   obj8.children = items3;
   items2[1] = callback2(View, obj8);
-  const obj11 = { INTEGRATION_CREATE: "key", ConstraintReasonCode: "Text" };
+  const obj11 = {};
   if (accountScopes.accountScopes.length > 0) {
     const intl2 = arg1(dependencyMap[11]).intl;
     let stringResult = intl2.string(arg1(dependencyMap[11]).t.jFbDnJ);

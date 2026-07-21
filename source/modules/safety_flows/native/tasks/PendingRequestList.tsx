@@ -1,10 +1,10 @@
-// Module ID: 16435
-// Function ID: 126982
+// Module ID: 16442
+// Function ID: 127016
 // Name: PendingRequestRow
 // Dependencies: []
 // Exports: default
 
-// Module 16435 (PendingRequestRow)
+// Module 16442 (PendingRequestRow)
 class PendingRequestRow {
   constructor(arg0) {
     request = global.request;
@@ -77,27 +77,25 @@ class PendingRequestRow {
       tmp13 = jsx(arg1(dependencyMap[11]).Text, obj5);
     }
     items2[1] = tmp13;
-    obj6 = { INTEGRATION_CREATE: true, ConstraintReasonCode: true };
-    obj6.children = result;
-    items2[2] = jsx(arg1(dependencyMap[11]).Text, obj6);
+    items2[2] = jsx(arg1(dependencyMap[11]).Text, { children: result });
     obj3.children = items2;
     items1[1] = tmp11(tmp12, obj3);
     if (isResolved) {
       tmp42 = arg1;
       tmp43 = dependencyMap;
       tmp41 = jsx;
-      obj7 = {};
+      obj6 = {};
       num10 = 12;
       intl3 = arg1(dependencyMap[12]).intl;
       tmp44 = importDefault;
       tmp45 = dependencyMap;
       num11 = 13;
       tmp46 = importDefault(dependencyMap[13]);
-      obj7.children = intl3.string(isConnected ? tmp46.YQP5dE : tmp46.2HvOvh);
-      tmp41Result = tmp41(arg1(dependencyMap[11]).Text, obj7);
+      obj6.children = intl3.string(isConnected ? tmp46.YQP5dE : tmp46.2HvOvh);
+      tmp41Result = tmp41(arg1(dependencyMap[11]).Text, obj6);
     } else {
-      obj8 = {};
-      obj8.style = tmp.actions;
+      obj7 = {};
+      obj7.style = tmp.actions;
       tmp19 = !hasMaxConnections;
       if (!tmp19) {
         items3 = [, ];
@@ -106,46 +104,46 @@ class PendingRequestRow {
         tmp33 = dependencyMap;
         num6 = 14;
         tmp31 = jsx;
-        obj9 = {};
+        obj8 = {};
         str4 = "button";
-        obj9.accessibilityRole = "button";
+        obj8.accessibilityRole = "button";
         num7 = 12;
         intl2 = arg1(dependencyMap[12]).intl;
         tmp34 = importDefault;
         num8 = 15;
-        obj10 = {};
-        obj10.name = request.parent_username;
-        obj9.accessibilityLabel = intl2.formatToPlainString(importDefault(dependencyMap[15]).4GtllP, obj10);
-        obj9.disabled = actionsDisabled;
-        obj9.onPress = function onPress() {
+        obj9 = {};
+        obj9.name = request.parent_username;
+        obj8.accessibilityLabel = intl2.formatToPlainString(importDefault(dependencyMap[15]).4GtllP, obj9);
+        obj8.disabled = actionsDisabled;
+        obj8.onPress = function onPress() {
           return callback2(request.parent_id);
         };
         items4 = [, ];
         ({ actionButton: arr6[0], declineButton: arr6[1] } = tmp);
-        obj9.style = items4;
+        obj8.style = items4;
         tmp35 = jsx;
         if (isDeclineLoading) {
           tmp40 = ActivityIndicator;
-          obj11 = {};
+          obj10 = {};
           str5 = "small";
-          obj11.size = "small";
-          obj11.color = tmp.declineIcon.color;
-          tmp35Result = tmp35(ActivityIndicator, obj11);
+          obj10.size = "small";
+          obj10.color = tmp.declineIcon.color;
+          tmp35Result = tmp35(ActivityIndicator, obj10);
         } else {
           tmp36 = arg1;
           tmp37 = dependencyMap;
-          obj12 = {};
-          obj12.size = arg1(dependencyMap[6]).Icon.Sizes.SMALL;
-          obj12.color = tmp.declineIcon.color;
+          obj11 = {};
+          obj11.size = arg1(dependencyMap[6]).Icon.Sizes.SMALL;
+          obj11.color = tmp.declineIcon.color;
           tmp38 = importDefault;
           num9 = 17;
-          obj12.source = importDefault(dependencyMap[17]);
-          tmp35Result = tmp35(arg1(dependencyMap[6]).Icon, obj12);
+          obj11.source = importDefault(dependencyMap[17]);
+          tmp35Result = tmp35(arg1(dependencyMap[6]).Icon, obj11);
         }
-        obj9.children = tmp35Result;
-        items3[1] = tmp31(arg1(dependencyMap[14]).PressableOpacity, obj9);
-        obj8.children = items3;
-        items1[2] = tmp17(tmp18, obj8);
+        obj8.children = tmp35Result;
+        items3[1] = tmp31(arg1(dependencyMap[14]).PressableOpacity, obj8);
+        obj7.children = items3;
+        items1[2] = tmp17(tmp18, obj7);
         obj.children = items1;
         return tmp9(tmp10, obj);
       } else {
@@ -153,45 +151,45 @@ class PendingRequestRow {
         tmp22 = dependencyMap;
         num = 14;
         tmp20 = jsx;
-        obj13 = {};
+        obj12 = {};
         str = "button";
-        obj13.accessibilityRole = "button";
+        obj12.accessibilityRole = "button";
         num2 = 12;
         intl = arg1(dependencyMap[12]).intl;
         tmp23 = importDefault;
         num3 = 15;
-        obj14 = {};
-        obj14.name = request.parent_username;
-        obj13.accessibilityLabel = intl.formatToPlainString(importDefault(dependencyMap[15]).jc1Ip7, obj14);
-        obj13.disabled = actionsDisabled;
-        obj13.onPress = function onPress() {
+        obj13 = {};
+        obj13.name = request.parent_username;
+        obj12.accessibilityLabel = intl.formatToPlainString(importDefault(dependencyMap[15]).jc1Ip7, obj13);
+        obj12.disabled = actionsDisabled;
+        obj12.onPress = function onPress() {
           return callback(request.parent_id);
         };
         items5 = [, ];
         ({ actionButton: arr4[0], acceptButton: arr4[1] } = tmp);
-        obj13.style = items5;
+        obj12.style = items5;
         tmp24 = jsx;
         if (isAcceptLoading) {
           tmp29 = ActivityIndicator;
-          obj15 = {};
+          obj14 = {};
           str3 = "small";
-          obj15.size = "small";
-          obj15.color = tmp.acceptIcon.color;
-          tmp24Result = tmp24(ActivityIndicator, obj15);
+          obj14.size = "small";
+          obj14.color = tmp.acceptIcon.color;
+          tmp24Result = tmp24(ActivityIndicator, obj14);
         } else {
           tmp25 = arg1;
           tmp26 = dependencyMap;
           num4 = 16;
-          obj16 = {};
+          obj15 = {};
           str2 = "sm";
-          obj16.size = "sm";
+          obj15.size = "sm";
           tmp27 = importDefault;
           num5 = 5;
-          obj16.color = importDefault(dependencyMap[5]).colors.WHITE;
-          tmp24Result = tmp24(arg1(dependencyMap[16]).CheckmarkLargeBoldIcon, obj16);
+          obj15.color = importDefault(dependencyMap[5]).colors.WHITE;
+          tmp24Result = tmp24(arg1(dependencyMap[16]).CheckmarkLargeBoldIcon, obj15);
         }
-        obj13.children = tmp24Result;
-        tmp20Result = tmp20(arg1(dependencyMap[14]).PressableOpacity, obj13);
+        obj12.children = tmp24Result;
+        tmp20Result = tmp20(arg1(dependencyMap[14]).PressableOpacity, obj12);
       }
     }
     return;
@@ -206,18 +204,18 @@ let obj = arg1(dependencyMap[4]);
 obj = {};
 obj = { borderRadius: importDefault(dependencyMap[5]).radii.lg, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_SURFACE_HIGH, overflow: "hidden" };
 obj.card = obj;
-const obj1 = { -9223372036854775808: true, filter: true, paddingVertical: importDefault(dependencyMap[5]).space.PX_12, paddingHorizontal: importDefault(dependencyMap[5]).space.PX_16 };
-obj.row = obj1;
+const tmp3 = arg1(dependencyMap[3]);
+obj.row = { paddingVertical: importDefault(dependencyMap[5]).space.PX_12, paddingHorizontal: importDefault(dependencyMap[5]).space.PX_16 };
 const obj2 = { height: 1, backgroundColor: importDefault(dependencyMap[5]).colors.BORDER_SUBTLE };
 const sum = importDefault(dependencyMap[5]).space.PX_16 + arg1(dependencyMap[6]).AVATAR_SIZE_MAP[arg1(undefined, dependencyMap[6]).AvatarSizes.NORMAL];
 obj2.marginLeft = sum + importDefault(dependencyMap[5]).space.PX_12;
 obj.divider = obj2;
 const obj3 = { borderRadius: arg1(dependencyMap[6]).AVATAR_SIZE_MAP[arg1(undefined, dependencyMap[6]).AvatarSizes.NORMAL] / 2, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_SURFACE_HIGHEST };
 obj.avatar = obj3;
-const obj4 = { backgroundColor: "innocent", height: "innocent", paddingLeft: importDefault(dependencyMap[5]).space.PX_12, paddingRight: importDefault(dependencyMap[5]).space.PX_4 };
-obj.details = obj4;
-obj.actions = { -9223372036854775808: true, filter: true };
-const tmp3 = arg1(dependencyMap[3]);
+const obj1 = { paddingVertical: importDefault(dependencyMap[5]).space.PX_12, paddingHorizontal: importDefault(dependencyMap[5]).space.PX_16 };
+obj.details = { paddingLeft: importDefault(dependencyMap[5]).space.PX_12, paddingRight: importDefault(dependencyMap[5]).space.PX_4 };
+obj.actions = {};
+const obj4 = { paddingLeft: importDefault(dependencyMap[5]).space.PX_12, paddingRight: importDefault(dependencyMap[5]).space.PX_4 };
 obj.actionButton = { borderRadius: importDefault(dependencyMap[5]).radii.round };
 const obj5 = { borderRadius: importDefault(dependencyMap[5]).radii.round };
 obj.acceptButton = { backgroundColor: importDefault(dependencyMap[5]).colors.STATUS_POSITIVE, marginRight: importDefault(dependencyMap[5]).space.PX_8 };
@@ -233,10 +231,10 @@ const obj9 = { color: importDefault(dependencyMap[5]).colors.INTERACTIVE_TEXT_DE
 obj.inviteQrButton = { backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_SURFACE_HIGHEST, borderWidth: 1, borderColor: importDefault(dependencyMap[5]).colors.BORDER_STRONG };
 const obj11 = { backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_SURFACE_HIGHEST, borderWidth: 1, borderColor: importDefault(dependencyMap[5]).colors.BORDER_STRONG };
 obj.inviteShareButton = { backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_SURFACE_HIGHEST, borderWidth: 1, borderColor: importDefault(dependencyMap[5]).colors.BORDER_STRONG, marginRight: importDefault(dependencyMap[5]).space.PX_8 };
-obj.dividerRow = { -9223372036854775808: true, filter: true };
+obj.dividerRow = {};
+const obj13 = { -725635501: true, 1424518954: true, -281171472: true, backgroundColor: importDefault(dependencyMap[5]).colors.BORDER_SUBTLE };
+obj.dividerLine = obj13;
 const obj12 = { backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_SURFACE_HIGHEST, borderWidth: 1, borderColor: importDefault(dependencyMap[5]).colors.BORDER_STRONG, marginRight: importDefault(dependencyMap[5]).space.PX_8 };
-obj.dividerLine = { backgroundColor: importDefault(dependencyMap[5]).colors.BORDER_SUBTLE };
-const obj13 = { backgroundColor: importDefault(dependencyMap[5]).colors.BORDER_SUBTLE };
 obj.dividerLabel = { marginHorizontal: importDefault(dependencyMap[5]).space.PX_12 };
 let closure_9 = obj.createStyles(obj);
 const obj14 = { marginHorizontal: importDefault(dependencyMap[5]).space.PX_12 };
@@ -305,7 +303,7 @@ export default function PendingRequestList(arg0) {
   const items = [tmp5, , ];
   const obj2 = { style: tmp.dividerRow };
   const items1 = [callback(closure_5, { style: tmp.dividerLine }), , ];
-  const obj4 = { Promise: null, marginTop: null, flags: null, style: tmp.dividerLabel };
+  const obj4 = { "Null": "<string:1178599425>", "Null": "<string:3295084545>", "Null": "<string:1689649153>", style: tmp.dividerLabel };
   const intl = arg1(dependencyMap[12]).intl;
   obj4.children = intl.string(importDefault(dependencyMap[13])./SbB94);
   items1[1] = callback(arg1(dependencyMap[11]).Text, obj4);
@@ -317,7 +315,7 @@ export default function PendingRequestList(arg0) {
   ({ card: arr3[0], row: arr3[1] } = tmp);
   const items3 = [callback(closure_5, { style: tmp.inviteIconContainer, children: callback(arg1(dependencyMap[21]).PlaneIllocon, { size: 32 }) }), , ];
   const obj8 = { style: tmp.details };
-  const obj9 = { INTEGRATION_CREATE: 131072.00119209292, ConstraintReasonCode: -293983030121430100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 };
+  const obj9 = {};
   const intl2 = arg1(dependencyMap[12]).intl;
   obj9.children = intl2.string(importDefault(dependencyMap[13]).z9gkwZ);
   const items4 = [callback(arg1(dependencyMap[11]).Text, obj9), ];

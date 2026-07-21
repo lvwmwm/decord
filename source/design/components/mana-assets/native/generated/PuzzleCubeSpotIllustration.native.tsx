@@ -1,14 +1,12 @@
-// Module ID: 6425
-// Function ID: 50511
+// Module ID: 6427
+// Function ID: 50554
 // Name: PuzzleCubeSpotIllustration
 // Dependencies: [4294967295, 0, 0, 0]
 // Exports: PuzzleCubeSpotIllustration
 
-// Module 6425 (PuzzleCubeSpotIllustration)
-import result from "result";
-
+// Module 6427 (PuzzleCubeSpotIllustration)
 const jsx = require(dependencyMap[0]).jsx;
-result = result.fileFinishedImporting("design/components/mana-assets/native/generated/PuzzleCubeSpotIllustration.native.tsx");
+const result = require("__exportStarResult1").fileFinishedImporting("design/components/mana-assets/native/generated/PuzzleCubeSpotIllustration.native.tsx");
 
 export const PuzzleCubeSpotIllustration = function PuzzleCubeSpotIllustration(width) {
   let accessibilityLabel;

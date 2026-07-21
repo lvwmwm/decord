@@ -1,9 +1,9 @@
-// Module ID: 6997
-// Function ID: 56006
+// Module ID: 7001
+// Function ID: 56017
 // Name: patchThread
 // Dependencies: []
 
-// Module 6997 (patchThread)
+// Module 7001 (patchThread)
 function patchThread(id, body) {
   body = id;
   const HTTP = body(dependencyMap[10]).HTTP;
@@ -211,7 +211,7 @@ const obj = {
     obj = { parentMessageId: id, isPrivate: false, location: SUMMARY_ACTION_SHEET };
     importDefault(dependencyMap[15]).changeThreadSettings(channel.id, obj);
     if (null == id) {
-      const obj1 = { "Bool(true)": "Normal", "Bool(true)": true, "Bool(true)": "AbortSignal", channelId: channel.id };
+      const obj1 = { accessibilityRole: null, now: "\u{1F9BB}\u{1F3FF}", Set: true, channelId: channel.id };
       id(dependencyMap[16]).setActiveCommand(obj1);
       const obj5 = id(dependencyMap[16]);
     }

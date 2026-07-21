@@ -1,10 +1,10 @@
-// Module ID: 6629
-// Function ID: 50889
+// Module ID: 6635
+// Function ID: 50938
 // Name: _handleBoostPress
 // Dependencies: []
 // Exports: default
 
-// Module 6629 (_handleBoostPress)
+// Module 6635 (_handleBoostPress)
 async function _handleBoostPress(analyticsLocations, guildId, section, arg3) {
   let obj = callback(closure_2[8]);
   obj = {
@@ -130,7 +130,7 @@ export default function GuildBoostingSubscribeButton(guild) {
   obj.text = stringResult;
   let tmp14;
   if (tmp5) {
-    tmp14 = jsx(arg1(dependencyMap[19]).LockIcon, {});
+    tmp14 = jsx(arg1(dependencyMap[19]).LockIcon, { flex: false, flexGrow: null });
   }
   obj.icon = tmp14;
   obj.children = jsx(arg1(dependencyMap[17]).Button, obj);

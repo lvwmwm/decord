@@ -1,10 +1,10 @@
-// Module ID: 8262
-// Function ID: 65190
+// Module ID: 8266
+// Function ID: 65202
 // Name: _openMediaModal
 // Dependencies: []
 // Exports: openMediaModal
 
-// Module 8262 (_openMediaModal)
+// Module 8266 (_openMediaModal)
 async function _openMediaModal(arg0, arg1) {
   const fn = function*(arg0) {
     let initialIndex;
@@ -19,7 +19,7 @@ async function _openMediaModal(arg0, arg1) {
       openAs = "modal";
     }
     Object.setPrototypeOf(null);
-    let closure_6 = Object.assign(arg0, { 0: 1091658877, 0: 151597, 0: 6258, 9223372036854775807: 6144, -9223372036854775808: -180289280, 9223372036854775807: 1375732285, 9223372036854775807: 1685947892 });
+    let closure_6 = Object.assign(arg0, { "Null": null, "Null": null, "Null": null, "Null": null, "Null": null, "Null": null, "Null": null });
     let setMediaViewerSources;
     let MediaViewerAnalytics;
     let initVideoStateStore;
@@ -42,7 +42,7 @@ async function _openMediaModal(arg0, arg1) {
         if (null != arg0) {
           let size = arg0;
         } else {
-          size = { "Null": false, "Null": true, width: arg0(closure_2[4]).getWindowDimensions().width };
+          size = { max: -536870861, guildId: -299892737, width: arg0(closure_2[4]).getWindowDimensions().width };
           const obj = arg0(closure_2[4]);
           size.height = arg0(closure_2[4]).getWindowDimensions().height;
           const obj2 = arg0(closure_2[4]);

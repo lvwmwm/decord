@@ -1,10 +1,10 @@
-// Module ID: 7750
-// Function ID: 61575
+// Module ID: 7754
+// Function ID: 61587
 // Name: createEphemeralIndication
 // Dependencies: []
 // Exports: createEphemeralIndication
 
-// Module 7750 (createEphemeralIndication)
+// Module 7754 (createEphemeralIndication)
 let closure_3 = importDefault(dependencyMap[0]);
 ({ HelpdeskArticles: closure_4, MessageFlags: closure_5 } = arg1(dependencyMap[1]));
 const tmp2 = arg1(dependencyMap[1]);
@@ -39,7 +39,7 @@ export const createEphemeralIndication = function createEphemeralIndication(mess
     } else {
       const obj2 = {};
       const intl4 = arg1(dependencyMap[3]).intl;
-      const obj3 = { city: "innocent", subdivision: "innocent" };
+      const obj3 = {};
       const obj4 = { action: "bindDismissMessage", message };
       obj3.handleDelete = obj4;
       obj2.content = intl4.formatToParts(arg1(dependencyMap[3]).t.uX3ecL, obj3);

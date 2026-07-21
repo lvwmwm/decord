@@ -1,10 +1,10 @@
-// Module ID: 14510
-// Function ID: 109308
+// Module ID: 14517
+// Function ID: 109330
 // Name: MFAOptionScreen
 // Dependencies: []
 // Exports: default
 
-// Module 14510 (MFAOptionScreen)
+// Module 14517 (MFAOptionScreen)
 const ScrollView = require(dependencyMap[0]).ScrollView;
 const _module = require(dependencyMap[1]);
 ({ jsx: closure_4, jsxs: closure_5, Fragment: closure_6 } = _module);
@@ -48,7 +48,7 @@ export default function MFAOptionScreen(arg0) {
   items[2] = tmp8;
   let tmp12 = null != error;
   if (tmp12) {
-    const obj4 = { INTEGRATION_CREATE: null, ConstraintReasonCode: null, children: error };
+    const obj4 = { children: error };
     tmp12 = callback(require(dependencyMap[6]).Text, obj4);
   }
   items[3] = tmp12;

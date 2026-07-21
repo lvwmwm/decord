@@ -1,10 +1,10 @@
-// Module ID: 6389
-// Function ID: 50457
+// Module ID: 6391
+// Function ID: 50500
 // Name: OrbNitroMultiplierSpotIllustration
 // Dependencies: []
 // Exports: OrbNitroMultiplierSpotIllustration
 
-// Module 6389 (OrbNitroMultiplierSpotIllustration)
+// Module 6391 (OrbNitroMultiplierSpotIllustration)
 const jsx = require(dependencyMap[0]).jsx;
 const _module = require(dependencyMap[3]);
 const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/OrbNitroMultiplierSpotIllustration.native.tsx");

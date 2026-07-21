@@ -1,10 +1,10 @@
-// Module ID: 14159
-// Function ID: 107250
+// Module ID: 14166
+// Function ID: 107273
 // Name: VideoUploadQualityNitroUpsell
 // Dependencies: []
 // Exports: default
 
-// Module 14159 (VideoUploadQualityNitroUpsell)
+// Module 14166 (VideoUploadQualityNitroUpsell)
 function VideoUploadQualityNitroUpsell() {
   let obj = callback(dependencyMap[9]);
   const callback = obj.useStackNavigation();
@@ -24,11 +24,11 @@ function VideoUploadQualityNitroUpsell() {
   let tmp5 = !stateFromStores;
   if (tmp5) {
     obj1 = { style: tmp.card };
-    const obj2 = {};
+    const obj2 = { display: "<string:2020689293>", flexDirection: "<string:16777216>" };
     const obj3 = { style: tmp.cardContent };
     const obj4 = { style: tmp.cardIcon, source: importDefault(dependencyMap[16]), size: callback(dependencyMap[15]).Icon.Sizes.SMALL, color: importDefault(dependencyMap[8]).unsafe_rawColors.PRIMARY_400 };
     const items2 = [callback2(callback(dependencyMap[15]).Icon, obj4), ];
-    const obj5 = { INTEGRATION_CREATE: "<string:3305963521>", ConstraintReasonCode: "<string:671547393>" };
+    const obj5 = {};
     const intl2 = callback(dependencyMap[13]).intl;
     const obj6 = {
       onClick() {
@@ -56,9 +56,9 @@ const UserSettingsSections = arg1(dependencyMap[5]).UserSettingsSections;
 ({ jsx: closure_9, jsxs: closure_10 } = arg1(dependencyMap[6]));
 let obj = arg1(dependencyMap[7]);
 obj = {};
-obj = { -9223372036854775808: true, -9223372036854775808: true, 0: true, borderColor: importDefault(dependencyMap[8]).colors.REDESIGN_INPUT_CONTROL_SELECTED, borderRadius: importDefault(dependencyMap[8]).radii.lg };
+obj = { <string:3829275267>: 1, <string:119375843>: 24, <string:3356163666>: 16, borderColor: importDefault(dependencyMap[8]).colors.REDESIGN_INPUT_CONTROL_SELECTED, borderRadius: importDefault(dependencyMap[8]).radii.lg };
 obj.card = obj;
-obj.cardContent = { -9223372036854775808: true, filter: true };
+obj.cardContent = {};
 obj.cardIcon = { marginEnd: 8 };
 let closure_11 = obj.createStyles(obj);
 const tmp2 = arg1(dependencyMap[6]);

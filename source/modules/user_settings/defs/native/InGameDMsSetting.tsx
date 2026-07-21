@@ -1,17 +1,18 @@
-// Module ID: 14416
-// Function ID: 108730
+// Module ID: 14423
+// Function ID: 108753
 // Name: radio
-// Dependencies: []
+// Dependencies: [0, 0]
 
-// Module 14416 (radio)
-let closure_2 = importAll(dependencyMap[0]);
+// Module 14423 (radio)
+import __exportStarResult1 from "__exportStarResult1";
+
 let obj = arg1(dependencyMap[5]);
 obj = {
   useTitle() {
     const intl = arg1(dependencyMap[4]).intl;
     return intl.string(arg1(dependencyMap[4]).t.ms+Tme);
   },
-  parent: arg1(dependencyMap[1]).MobileSetting.CONNECTED_GAMES,
+  parent: require("__exportStarResult1").MobileSetting.CONNECTED_GAMES,
   useOptions: function useInGameDMsSettingOptions() {
     return React.useMemo(() => {
       let obj = { value: callback(closure_1[3]).SlayerSDKReceiveInGameDMs.SLAYER_SDK_RECEIVE_IN_GAME_DMS_ALL };

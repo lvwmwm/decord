@@ -1,10 +1,10 @@
-// Module ID: 9120
-// Function ID: 71422
+// Module ID: 9124
+// Function ID: 71434
 // Name: createChannelState
 // Dependencies: []
 // Exports: deleteChannelDetailsSearchState, deleteChannelStates, getIsChannelDetailsSearchActive, setIsChannelDetailsSearchActive, useChannelDetailsSearchActiveSource, useIsChannelDetailsSearchActive
 
-// Module 9120 (createChannelState)
+// Module 9124 (createChannelState)
 function createChannelState() {
   const merged = Object.assign(closure_2);
   return {};

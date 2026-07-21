@@ -1,14 +1,13 @@
-// Module ID: 6597
-// Function ID: 50769
+// Module ID: 6601
+// Function ID: 50815
 // Name: VibeWithWumpusSpotIllustration
-// Dependencies: [0, 0, 0, 0]
+// Dependencies: []
 // Exports: VibeWithWumpusSpotIllustration
 
-// Module 6597 (VibeWithWumpusSpotIllustration)
-import { jsx } from "result";
-import result from "result";
-
-result = result.fileFinishedImporting("design/components/mana-assets/native/generated/VibeWithWumpusSpotIllustration.native.tsx");
+// Module 6601 (VibeWithWumpusSpotIllustration)
+const jsx = require(dependencyMap[0]).jsx;
+const _module = require(dependencyMap[3]);
+const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/VibeWithWumpusSpotIllustration.native.tsx");
 
 export const VibeWithWumpusSpotIllustration = function VibeWithWumpusSpotIllustration(width) {
   let accessibilityLabel;

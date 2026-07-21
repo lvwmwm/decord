@@ -1,10 +1,10 @@
-// Module ID: 5717
-// Function ID: 49104
+// Module ID: 5719
+// Function ID: 49147
 // Name: getSpoilerGatingChannelId
 // Dependencies: []
 // Exports: shouldShowSpoilerGateForChannelId, useGetSpoilerGatingChannelId, useIsChannelSpoilerGated, useShouldShowSpoilerGateForChannelId
 
-// Module 5717 (getSpoilerGatingChannelId)
+// Module 5719 (getSpoilerGatingChannelId)
 function getSpoilerGatingChannelId(isSpoilerChannel, arg1, arg2) {
   let obj = arg1;
   let obj2 = arg2;

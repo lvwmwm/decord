@@ -1,10 +1,10 @@
-// Module ID: 7177
-// Function ID: 57815
+// Module ID: 7181
+// Function ID: 57826
 // Name: BlockedPaymentsCountryDisplay
 // Dependencies: []
 // Exports: default
 
-// Module 7177 (BlockedPaymentsCountryDisplay)
+// Module 7181 (BlockedPaymentsCountryDisplay)
 importAll(dependencyMap[0]);
 ({ View: closure_3, Image: closure_4 } = arg1(dependencyMap[1]));
 const HelpdeskArticles = arg1(dependencyMap[2]).HelpdeskArticles;
@@ -12,7 +12,7 @@ const tmp3 = arg1(dependencyMap[1]);
 ({ jsx: closure_6, jsxs: closure_7 } = arg1(dependencyMap[3]));
 let obj = arg1(dependencyMap[4]);
 obj = { container: { alignItems: "center" } };
-obj = { <string:332861791>: null, <string:656085766>: null, <string:307628484>: null, <string:363401458>: null, color: importDefault(dependencyMap[5]).colors.TEXT_SUBTLE };
+obj = { "Null": null, "Null": null, "Null": null, "Null": null, color: importDefault(dependencyMap[5]).colors.TEXT_SUBTLE };
 obj.header = obj;
 obj.image = { marginTop: 38 };
 let closure_8 = obj.createStyles(obj);

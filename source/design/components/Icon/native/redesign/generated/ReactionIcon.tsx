@@ -1,10 +1,10 @@
-// Module ID: 7996
-// Function ID: 63557
+// Module ID: 8000
+// Function ID: 63569
 // Name: ReactionIcon
 // Dependencies: []
 // Exports: ReactionIcon
 
-// Module 7996 (ReactionIcon)
+// Module 8000 (ReactionIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/ReactionIcon.tsx");

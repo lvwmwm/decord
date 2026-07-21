@@ -1,10 +1,10 @@
-// Module ID: 15634
-// Function ID: 119416
+// Module ID: 15641
+// Function ID: 119440
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 // Exports: computePIPParticipantToShow, computePIPSize, getPIPMode
 
-// Module 15634 (_createForOfIteratorHelperLoose)
+// Module 15641 (_createForOfIteratorHelperLoose)
 let PIPReferenceDimensions;
 function _createForOfIteratorHelperLoose(@@iterator) {
   let arg1 = Symbol_iterator;
@@ -157,7 +157,7 @@ const tmp8 = () => {
     }
     let point = topAvoidanceRegion.positionOffset;
     if (point === undefined) {
-      point = { "Null": false, "Null": true };
+      point = { max: -536870861, guildId: -299892737 };
     }
     let obj = {};
     let num2 = 1;

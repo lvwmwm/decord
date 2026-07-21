@@ -1,10 +1,10 @@
-// Module ID: 5355
-// Function ID: 45827
+// Module ID: 5357
+// Function ID: 45868
 // Name: useDesignToggle
-// Dependencies: [2650814104, 352350719, 494469120]
+// Dependencies: []
 // Exports: default
 
-// Module 5355 (useDesignToggle)
+// Module 5357 (useDesignToggle)
 let closure_2 = importDefault(dependencyMap[0]);
 const result = arg1(dependencyMap[2]).fileFinishedImporting("modules/devtools/design_toggles/useDesignToggle.tsx");
 

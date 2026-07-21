@@ -1,9 +1,9 @@
-// Module ID: 10385
-// Function ID: 80066
+// Module ID: 10391
+// Function ID: 80089
 // Name: ChatViewStickyHeaderAccountSafetyWarnings
 // Dependencies: []
 
-// Module 10385 (ChatViewStickyHeaderAccountSafetyWarnings)
+// Module 10391 (ChatViewStickyHeaderAccountSafetyWarnings)
 function ChatViewStickyHeaderAccountSafetyWarnings(arg0) {
   let channelId;
   let senderId;

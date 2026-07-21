@@ -1,9 +1,9 @@
-// Module ID: 16237
-// Function ID: 125478
+// Module ID: 16244
+// Function ID: 125509
 // Name: CreatorMonetizationApplicationState
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 16237 (CreatorMonetizationApplicationState)
+// Module 16244 (CreatorMonetizationApplicationState)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("modules/creator_monetization_eligibility/CreatorMonetizationEligibilityConstants.tsx");
 

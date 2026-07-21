@@ -1,9 +1,9 @@
-// Module ID: 15012
-// Function ID: 113108
+// Module ID: 15019
+// Function ID: 113132
 // Name: ForYouFooter
 // Dependencies: []
 
-// Module 15012 (ForYouFooter)
+// Module 15019 (ForYouFooter)
 function ForYouFooter(loading) {
   let tmp = null;
   if (loading.loading) {
@@ -331,17 +331,17 @@ let closure_27 = obj10.createStyles(obj5);
 let closure_28 = { channelMentionText: "redesign/message-preview/medium" };
 let obj13 = arg1(dependencyMap[13]);
 obj7 = { container: { flex: 1 } };
-const obj8 = { GameDiversityTier6SmallBadge: true, fontFeatureSettings: true, alignSelf: true, maxWidth: true, nl-BQ: true, progressToken: true, GetStringOrBooleanOption: true, borderRadius: importDefault(dependencyMap[15]).radii.lg };
+const obj8 = { -77461994: "Promise", 1446667498: "Array", 2007798867: "isArray", 1733202604: "constructor", 1650218555: "toString", -1399565386: "isArray", 2075700371: "isArray", borderRadius: importDefault(dependencyMap[15]).radii.lg };
 obj7.row = obj8;
 obj7.rowCompact = { paddingVertical: 6 };
 const obj6 = { color: importDefault(dependencyMap[15]).colors.MENTION_FOREGROUND, backgroundColor: "transparent" };
 obj7.rowActive = { backgroundColor: importDefault(dependencyMap[15]).colors.BACKGROUND_MOD_MUTED };
-obj7.col = { clientThemeSettings: true, useItemDragState: true };
+obj7.col = { padding: true, T: "/assets/.cache/intl/bW9kdWxlcy9nb19saXZlL3dlYi9tb2RhbA==" };
 obj10 = { backgroundColor: importDefault(dependencyMap[15]).colors.BACKGROUND_BRAND, borderRadius: importDefault(dependencyMap[15]).radii.xs };
 obj7.unreadIndicatorV2 = obj10;
 obj7.unreadIndicatorCompactV2 = { top: 18 };
 obj7.rowText = { flex: 1 };
-obj7.rowTextV2 = { <string:1353458075>: null, <string:1722561866>: null };
+obj7.rowTextV2 = { 1449229240: "row", 371666258: "center" };
 obj7.rowBody = { lineHeight: 20 };
 obj7.rowBodyV2 = { marginRight: 30 };
 const obj9 = { backgroundColor: importDefault(dependencyMap[15]).colors.BACKGROUND_MOD_MUTED };
@@ -364,7 +364,7 @@ const obj15 = { marginLeft: 4, tintColor: importDefault(dependencyMap[15]).color
 obj7.messagePreviewTextV2Acked = { color: importDefault(dependencyMap[15]).colors.TEXT_MUTED };
 const obj16 = { color: importDefault(dependencyMap[15]).colors.TEXT_MUTED };
 obj7.messagePreviewTextV2NotAcked = { color: importDefault(dependencyMap[15]).colors.TEXT_DEFAULT };
-obj7.messagePreviewSystemTextV2 = { paleturquoise: 4, palevioletred: "staff" };
+obj7.messagePreviewSystemTextV2 = { "Bool(false)": "category", "Bool(false)": "Array" };
 const obj17 = { color: importDefault(dependencyMap[15]).colors.TEXT_DEFAULT };
 obj7.refreshSpinner = { color: importDefault(dependencyMap[15]).colors.INTERACTIVE_TEXT_DEFAULT };
 const obj18 = { color: importDefault(dependencyMap[15]).colors.INTERACTIVE_TEXT_DEFAULT };
@@ -409,7 +409,7 @@ let closure_31 = importAllResult.memo((item) => {
   const items = [item];
   callback = importAllResult.useCallback(() => {
     if (null != item.deeplink) {
-      const obj = { 9223372036854775807: null, 0: null, 0: null, payload: rowIndex(notificationCenterItemAcked[31])(item.deeplink).payload };
+      const obj = { <string:3428996705>: "ERROR", <string:1318212076>: "ERROR", <string:1640435025>: "NOT_RESPONDER", payload: rowIndex(notificationCenterItemAcked[31])(item.deeplink).payload };
       rowIndex(notificationCenterItemAcked[32])(obj);
     }
   }, items);
@@ -486,9 +486,7 @@ let closure_31 = importAllResult.memo((item) => {
       };
       items.unshift(obj);
     }
-    let obj1 = item(notificationCenterItemAcked[45]);
-    obj1 = { "Null": null, "Null": null, "Null": null, options: items };
-    const result = obj1.showSimpleActionSheet(obj1);
+    const result = item(notificationCenterItemAcked[45]).showSimpleActionSheet({ options: items });
   }, items2);
   const tmp7 = callback(importAllResult.useState(undefined), 2);
   let first = tmp7[0];
@@ -559,7 +557,7 @@ let closure_31 = importAllResult.memo((item) => {
   const items5 = [tmp25Result, , ];
   obj3 = { style: tmp.itemV2, children: callback2(arg1(dependencyMap[50]).ForYouItemImage, { item, compactMode }) };
   items5[1] = callback2(closure_7, obj3);
-  obj4 = { style: { "Bool(false)": "<string:1783693314>", "Bool(false)": "<string:618889>" } };
+  obj4 = { style: {} };
   const obj5 = { style: tmp.col };
   const obj6 = { style: items6 };
   const items6 = [, ];
@@ -577,7 +575,7 @@ let closure_31 = importAllResult.memo((item) => {
   if ("string" !== typeof first) {
     obj7.children = first;
     const items8 = [callback2(arg1(dependencyMap[14]).Text, obj7), ];
-    const obj8 = { debugLayout: true, EMPTY_SEARCH_QUERY_STRING: true, minWidth: true };
+    const obj8 = { 0: true, 0: true, 0: true };
     const items9 = [, , ];
     ({ rowTime: arr10[0], rowTimeV2: arr10[1] } = tmp);
     let rowBodyAcked2 = !tmp40;
@@ -740,7 +738,7 @@ const memoResult = importAllResult.memo((loadMore) => {
     if (shouldScrollToTop) {
       const current = ref.current;
       if (null != current) {
-        current.scrollToOffset({ accessibilityRole: "<string:441516034>", body: "<string:3209822877>" });
+        current.scrollToOffset({ overflow: "<string:1196490754>", fileName: "<string:3310486038>" });
       }
     }
   }, items4);

@@ -1,10 +1,10 @@
-// Module ID: 14559
-// Function ID: 109734
+// Module ID: 14566
+// Function ID: 109756
 // Name: ActionSheetSelector
 // Dependencies: []
 // Exports: default
 
-// Module 14559 (ActionSheetSelector)
+// Module 14566 (ActionSheetSelector)
 function ActionSheetSelector(arg0) {
   let onSelect;
   ({ selectedType: closure_0, onSelect } = arg0);
@@ -29,7 +29,7 @@ function ActionSheetSelector(arg0) {
       };
       let tmp2;
       if (type === type.type) {
-        tmp2 = callback(type(closure_2[17]).CheckmarkLargeIcon, { flexDirection: "png", alignItems: "platformTypes" });
+        tmp2 = callback(type(closure_2[17]).CheckmarkLargeIcon, { flex: false, flexGrow: false });
       }
       obj.trailing = tmp2;
       obj.start = 0 === arg1;
@@ -53,19 +53,19 @@ obj.wrap = obj;
 const tmp3 = arg1(dependencyMap[3]);
 obj.contentContainer = { paddingVertical: importDefault(dependencyMap[5]).space.PX_16 };
 let closure_9 = obj.createStyles(obj);
-const obj2 = {
-  test: false,
-  code: false,
-  __closure: false,
-  show() {
-    return importDefault(dependencyMap[6]).show("https://example-phishing-site.com/malicious-page");
-  }
-};
-const items = [obj2, , ];
+const items = [
+  {
+    show() {
+      return importDefault(dependencyMap[6]).show("https://example-phishing-site.com/malicious-page");
+    }
+  },
+,
+
+];
 const obj3 = {
-  test: "/assets/design/components/Icon/native/redesign/generated/images",
-  code: 24,
-  __closure: 24,
+  gradientTransform: "/assets/design/components/Icon/native/redesign/generated/images",
+  _lastPlayerHeight: 24,
+  PUBLIC_UPDATES_CHANNEL_ID: 24,
   show() {
     return importDefault(dependencyMap[7]).show("https://suspicious-file.com/dangerous-file.exe");
   }
@@ -73,10 +73,15 @@ const obj3 = {
 items[1] = obj3;
 items[2] = {
   show() {
-    return importDefault(dependencyMap[8]).pushLazy(arg1(dependencyMap[10])(dependencyMap[9], dependencyMap.paths), {}, "INAPPROPRIATE_CONVERSATION_TAKEOVER_MODAL");
+    return importDefault(dependencyMap[8]).pushLazy(arg1(dependencyMap[10])(dependencyMap[9], dependencyMap.paths), { -1138455440: null, -1018075039: null, 1371431202: null, 1835104342: null }, "INAPPROPRIATE_CONVERSATION_TAKEOVER_MODAL");
   }
 };
 const obj1 = { paddingVertical: importDefault(dependencyMap[5]).space.PX_16 };
+const obj2 = {
+  show() {
+    return importDefault(dependencyMap[6]).show("https://example-phishing-site.com/malicious-page");
+  }
+};
 const result = arg1(dependencyMap[21]).fileFinishedImporting("modules/devtools/native/components/screens/DevToolsActionSheetsScreen.tsx");
 
 export default function DevToolsActionSheetsScreen() {
@@ -96,8 +101,8 @@ export default function DevToolsActionSheetsScreen() {
   }, items);
   obj = { spacing: 16 };
   obj = {};
-  const items1 = [callback2(arg1(dependencyMap[20]).Text, { position: null, width: null }), ];
-  const obj1 = { accessibilityRole: true, variant: true, children: callback2(arg1(dependencyMap[15]).TableRow, { label: found.label, subLabel: found.description, arrow: true, onPress: callback }) };
+  const items1 = [callback2(arg1(dependencyMap[20]).Text, { "Null": null, "Null": null }), ];
+  const obj1 = { ty: false, marginTop: false, children: callback2(arg1(dependencyMap[15]).TableRow, { label: found.label, subLabel: found.description, arrow: true, onPress: callback }) };
   items1[1] = callback2(arg1(dependencyMap[14]).TableRowGroup, obj1);
   obj.children = items1;
   obj.children = callback3(arg1(dependencyMap[19]).Card, obj);

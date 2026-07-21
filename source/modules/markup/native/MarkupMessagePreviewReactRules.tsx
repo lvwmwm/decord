@@ -1,10 +1,10 @@
-// Module ID: 10240
-// Function ID: 79174
+// Module ID: 10246
+// Function ID: 79193
 // Name: defaultReactFn
 // Dependencies: []
 // Exports: default
 
-// Module 10240 (defaultReactFn)
+// Module 10246 (defaultReactFn)
 function defaultReactFn(content, output, state) {
   if ("string" === typeof content.content) {
     content = content.content;
@@ -193,7 +193,7 @@ function createMessagePreviewReactRules(iconColor) {
   const merged16 = Object.assign(arg1(dependencyMap[8]).DEFAULT_RULES[closure_0(undefined, closure_2[7]).AST_KEY.COMMAND_MENTION]);
   obj18["react"] = function react(node, output, key) {
     const obj = {};
-    const items = [, iconColor(customEmojiSize[4]).smartOutput(node, output, key)];
+    const items = [true, iconColor(customEmojiSize[4]).smartOutput(node, output, key)];
     obj.children = items;
     return callback3(iconColor(customEmojiSize[14]).LegacyText, obj, key.key);
   };

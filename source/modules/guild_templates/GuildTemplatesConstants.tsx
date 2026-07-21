@@ -1,9 +1,9 @@
-// Module ID: 5714
-// Function ID: 49082
+// Module ID: 5716
+// Function ID: 49125
 // Name: GUILD_TEMPLATES_MEMBER_COUNT_PROMOTION_THRESHOLD
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 5714 (GUILD_TEMPLATES_MEMBER_COUNT_PROMOTION_THRESHOLD)
+// Module 5716 (GUILD_TEMPLATES_MEMBER_COUNT_PROMOTION_THRESHOLD)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("modules/guild_templates/GuildTemplatesConstants.tsx");
 

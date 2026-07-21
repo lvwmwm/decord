@@ -1,9 +1,9 @@
-// Module ID: 6268
-// Function ID: 50276
+// Module ID: 6270
+// Function ID: 50319
 // Name: metadata
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 6268 (metadata)
+// Module 6270 (metadata)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/LanternSpotIllustration-2x.png.js");
 

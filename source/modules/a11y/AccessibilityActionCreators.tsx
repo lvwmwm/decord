@@ -1,10 +1,10 @@
-// Module ID: 13240
-// Function ID: 100490
+// Module ID: 13247
+// Function ID: 100513
 // Name: setFontSize
-// Dependencies: [3254779945, 3271557171, 2684354611, 3154116612, 3707764745, 3288334337, 2734686259, 2852126722]
+// Dependencies: []
 // Exports: disableKeyboardMode, enableKeyboardMode, forcedColorsModalSeen, keyboardNavigationExplainerModalSeen, resetToDefault, setAlwaysShowLinkDecorations, setChatBarSettings, setContrast, setContrastMode, setDisplayNameStylesEnabled, setEnableCustomCursor, setFontSize, setHDRDynamicRange, setLowContrastMode, setMessageGroupSpacing, setOfficialMessageStyle, setPrefersReducedMotion, setRoleStyle, setSaturation, setSwitchIconsEnabled, setSyncForcedColors, setZoom, systemColorPreferencesChanged, systemPrefersContrastChanged, systemPrefersCrossfadesChanged, systemPrefersReducedMotionChanged, toggleColorblindMode, toggleDesaturateUserColors, toggleSubmitButton, toggleSyncProfileThemeWithUserTheme
 
-// Module 13240 (setFontSize)
+// Module 13247 (setFontSize)
 let closure_2 = importDefault(dependencyMap[0]);
 const AnalyticEvents = arg1(dependencyMap[1]).AnalyticEvents;
 const StickerAnimationSettings = arg1(dependencyMap[2]).StickerAnimationSettings;

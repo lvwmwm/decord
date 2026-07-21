@@ -1,15 +1,14 @@
-// Module ID: 10874
-// Function ID: 84548
+// Module ID: 10880
+// Function ID: 84571
 // Name: trackRepliedMessageClicked
-// Dependencies: [6, 7, 15, 17, 18]
+// Dependencies: []
 // Exports: default
 
-// Module 10874 (trackRepliedMessageClicked)
-import { ReferencedMessageState } from "_classCallCheck";
-import { AnalyticEvents } from "_defineProperties";
-import _inherits from "_inherits";
-
-const result = _inherits.fileFinishedImporting("modules/replies/trackRepliedMessageClicked.tsx");
+// Module 10880 (trackRepliedMessageClicked)
+const ReferencedMessageState = require(dependencyMap[0]).ReferencedMessageState;
+const AnalyticEvents = require(dependencyMap[1]).AnalyticEvents;
+const _module = require(dependencyMap[4]);
+const result = _module.fileFinishedImporting("modules/replies/trackRepliedMessageClicked.tsx");
 
 export default function trackRepliedMessageClicked(messageReference, state, guild_id) {
   messageReference = messageReference.messageReference;

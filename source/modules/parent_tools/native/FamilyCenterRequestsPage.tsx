@@ -1,10 +1,10 @@
-// Module ID: 13685
-// Function ID: 103609
+// Module ID: 13692
+// Function ID: 103632
 // Name: FamilyCenterMaxConnectionsBlurb
 // Dependencies: []
 // Exports: default
 
-// Module 13685 (FamilyCenterMaxConnectionsBlurb)
+// Module 13692 (FamilyCenterMaxConnectionsBlurb)
 function FamilyCenterMaxConnectionsBlurb() {
   let obj = arg1(dependencyMap[7]);
   const hasMaxConnections = obj.useHasMaxConnections();
@@ -46,7 +46,7 @@ function FamilyCenterHelpLineInfo() {
     const intl3 = arg1(dependencyMap[10]).intl;
     obj2.children = intl3.string(importDefault(dependencyMap[11]).7/tVhv);
     const items = [callback(arg1(dependencyMap[12]).Text, obj2), ];
-    const obj3 = { INTEGRATION_CREATE: true, ConstraintReasonCode: true, children: formatResult };
+    const obj3 = { children: formatResult };
     items[1] = callback(arg1(dependencyMap[14]).TextWithIOSLinkWorkaround, obj3);
     obj1.children = items;
     tmp13 = callback2(closure_3, obj1);

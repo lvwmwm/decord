@@ -1,10 +1,10 @@
-// Module ID: 4166
-// Function ID: 35322
+// Module ID: 4170
+// Function ID: 35370
 // Name: convertToTransitionState
 // Dependencies: []
 // Exports: calculateProgressPercentage, convertComboId, getCombinedProgress, getComboId, isUserEntitledToLibraryApplication, shouldShareApplicationActivity, shouldShowGameInLibrary
 
-// Module 4166 (convertToTransitionState)
+// Module 4170 (convertToTransitionState)
 function convertToTransitionState(type) {
   let tmp = null;
   if (null != type) {
@@ -85,7 +85,7 @@ export const getCombinedProgress = function getCombinedProgress(arr) {
       }
     }
     return tmp2;
-  }, { -1103655978: false, -1460047553: true });
+  }, { "Null": -536870861, "Null": -299892737 });
 };
 export const isUserEntitledToLibraryApplication = function isUserEntitledToLibraryApplication(libraryApplication) {
   const tmp = !libraryApplication.isDiscordApplication();

@@ -1,17 +1,17 @@
-// Module ID: 12841
-// Function ID: 98168
+// Module ID: 12848
+// Function ID: 98191
 // Name: ReportModal
 // Dependencies: []
 // Exports: default
 
-// Module 12841 (ReportModal)
+// Module 12848 (ReportModal)
 function ReportModal(onSubmit) {
   ({ raidTypes: closure_0, onChange: closure_1 } = onSubmit);
   const tmp = callback4();
   const dependencyMap = tmp;
   const items = [tmp];
   let closure_3 = React.useCallback((arg0) => {
-    const obj = { Promise: "<string:1340029796>", marginTop: "<string:1072076685>", flags: "<string:16823617>", style: tmp.formRow, children: callback4(arg0) };
+    const obj = { "Null": "<string:1340029796>", "Null": "<string:1072076685>", "Null": "<string:16825665>", style: tmp.formRow, children: callback4(arg0) };
     return callback5(callback(tmp[8]).Text, obj);
   }, items);
   let obj = { style: tmp.container };
@@ -61,7 +61,7 @@ let obj = arg1(dependencyMap[5]);
 obj = {};
 obj = { backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_BASE_LOW };
 obj.container = obj;
-obj.headerSubtitle = { concat: -0.0014069081515246523, now: -0.0001058445630777106 };
+obj.headerSubtitle = { "Bool(true)": "absolute", "Bool(true)": 0 };
 obj.formBody = { marginTop: 24 };
 obj.formRow = { paddingVertical: 2 };
 const tmp3 = arg1(dependencyMap[4]);

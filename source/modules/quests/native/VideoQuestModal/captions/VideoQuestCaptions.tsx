@@ -1,16 +1,16 @@
-// Module ID: 13910
-// Function ID: 105762
+// Module ID: 13917
+// Function ID: 105785
 // Name: VideoQuestCaptions
 // Dependencies: []
 // Exports: VideoQuestCaptions
 
-// Module 13910 (VideoQuestCaptions)
+// Module 13917 (VideoQuestCaptions)
 let closure_3 = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 const jsx = arg1(dependencyMap[2]).jsx;
 let obj = arg1(dependencyMap[3]);
 obj = {};
-obj = { body: 2303, flexDirection: -1908338432, padding: 1912602975, p: 24, parent: 24, body: 1066680833, bottom: importDefault(dependencyMap[4]).space.PX_32, left: importDefault(dependencyMap[4]).space.PX_16, right: importDefault(dependencyMap[4]).space.PX_16 };
+obj = { 9223372036854775807: "c1eae5d24a46f9d36a9168ec38445f00", -9223372036854775808: "DragIcon", -9223372036854775808: "png", 9223372036854775807: null, 9223372036854775807: -8, 0: 8, bottom: importDefault(dependencyMap[4]).space.PX_32, left: importDefault(dependencyMap[4]).space.PX_16, right: importDefault(dependencyMap[4]).space.PX_16 };
 obj.container = obj;
 const obj1 = {};
 const importDefaultResult = importDefault(dependencyMap[5]);
@@ -62,7 +62,7 @@ export const VideoQuestCaptions = function VideoQuestCaptions(currentTime) {
       obj = {};
       const items1 = [tmp.container, style];
       obj.style = items1;
-      obj = { accessibilityRole: null, name: false, "Bool(false)": "guilds-bar-view", "Bool(false)": 32, style: tmp.captionBox };
+      obj = { "Bool(false)": false, "Bool(false)": 300, "Bool(false)": 32, "Bool(false)": 32, style: tmp.captionBox };
       const obj1 = { variant: "heading-sm/medium", style: tmp.captionText, children: memo.text };
       obj.children = jsx(arg1(dependencyMap[9]).Text, obj1);
       obj.children = jsx(importDefault(dependencyMap[8]), obj);

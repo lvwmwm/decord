@@ -1,9 +1,9 @@
-// Module ID: 6981
-// Function ID: 55849
+// Module ID: 6985
+// Function ID: 55860
 // Name: SystemResources
 // Dependencies: []
 
-// Module 6981 (SystemResources)
+// Module 6985 (SystemResources)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 let closure_5 = importDefault(dependencyMap[2]);
@@ -11,11 +11,11 @@ const tmp2 = () => {
   class SystemResources {
     constructor() {
       tmp = closure_4(this, SystemResources);
-      histogram = new f55860(f55854[3]).Histogram();
+      histogram = new f55871(f55865[3]).Histogram();
       this.cpuHistogram = histogram;
-      histogram1 = new f55860(f55854[3]).Histogram();
+      histogram1 = new f55871(f55865[3]).Histogram();
       this.memoryHistogram = histogram1;
-      obj = f55857(f55854[4]);
+      obj = f55868(f55865[4]);
       this.startCPU = obj.getCumulativeCPUUsage();
       this.lastCPU = this.startCPU;
       this.lastBattery = null;

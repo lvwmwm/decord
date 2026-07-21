@@ -1,13 +1,13 @@
-// Module ID: 9358
-// Function ID: 73026
+// Module ID: 9362
+// Function ID: 73040
 // Dependencies: []
 
-// Module 9358
+// Module 9362
 const importAllResult = importAll(dependencyMap[0]);
 const ScrollView = arg1(dependencyMap[1]).ScrollView;
 const jsx = arg1(dependencyMap[2]).jsx;
 let obj1 = arg1(dependencyMap[3]);
-let obj = { emptyStateContainer: { MEMBERS_WITHOUT_ROLES: 131072.00314656927, KvStorage: 0.000000000000000000000000000000000000000000000000000000011294471302334573 } };
+let obj = { emptyStateContainer: {} };
 obj = { color: importDefault(dependencyMap[4]).colors.TEXT_SUBTLE };
 obj.emptyStateBody = obj;
 obj1 = { marginBottom: importDefault(dependencyMap[4]).space.PX_8, marginTop: 0 };

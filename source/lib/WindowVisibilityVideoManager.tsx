@@ -1,12 +1,12 @@
-// Module ID: 10562
-// Function ID: 82489
+// Module ID: 10568
+// Function ID: 82512
 // Name: _isNativeReflectConstruct
-// Dependencies: [57, 31, 27, 10574, 1194, 1348, 4169, 653, 4144, 4183, 33, 4126, 689]
+// Dependencies: [57, 31, 27, 10580, 1194, 1348, 4173, 653, 4144, 4187, 33, 4126, 689]
 
-// Module 10562 (_isNativeReflectConstruct)
+// Module 10568 (_isNativeReflectConstruct)
 import _slicedToArray from "_slicedToArray";
 import module_31 from "module_31";
-import getActivityIndicator from "get ActivityIndicator";
+import keys from "keys";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_7 from "_isNativeReflectConstruct";
 import tmp2 from "_createForOfIteratorHelperLoose";

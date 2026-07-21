@@ -1,10 +1,10 @@
-// Module ID: 4626
-// Function ID: 40220
+// Module ID: 4628
+// Function ID: 40261
 // Name: ThreadIcon
 // Dependencies: []
 // Exports: ThreadIcon
 
-// Module 4626 (ThreadIcon)
+// Module 4628 (ThreadIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/ThreadIcon.tsx");

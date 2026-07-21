@@ -1,10 +1,10 @@
-// Module ID: 15569
-// Function ID: 118823
+// Module ID: 15576
+// Function ID: 118847
 // Name: triggerIOSHaptic
 // Dependencies: []
 // Exports: default
 
-// Module 15569 (triggerIOSHaptic)
+// Module 15576 (triggerIOSHaptic)
 const IS_IOS = require(dependencyMap[0]).IS_IOS;
 const _module = require(dependencyMap[2]);
 const result = _module.fileFinishedImporting("modules/panels/morphable/native/triggerIOSHaptic.tsx");

@@ -1,10 +1,10 @@
-// Module ID: 10031
-// Function ID: 77533
+// Module ID: 10037
+// Function ID: 77551
 // Name: _addDirectoryGuildEntry
 // Dependencies: []
 // Exports: addDirectoryGuildEntry, clearDirectorySearch, fetchGuildEntriesForIds, removeDirectoryGuildEntry, selectDirectoryCategory, updateDirectoryEntry
 
-// Module 10031 (_addDirectoryGuildEntry)
+// Module 10037 (_addDirectoryGuildEntry)
 function _addDirectoryGuildEntry() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);

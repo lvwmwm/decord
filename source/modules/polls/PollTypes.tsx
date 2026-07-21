@@ -1,9 +1,9 @@
-// Module ID: 11309
-// Function ID: 88026
+// Module ID: 11315
+// Function ID: 88049
 // Name: PollMediaUploadAttachmentStatus
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 11309 (PollMediaUploadAttachmentStatus)
+// Module 11315 (PollMediaUploadAttachmentStatus)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("modules/polls/PollTypes.tsx");
 

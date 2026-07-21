@@ -1,10 +1,10 @@
-// Module ID: 4539
-// Function ID: 39776
+// Module ID: 4543
+// Function ID: 39824
 // Name: getButtonPadding
 // Dependencies: []
 // Exports: getButtonDefaultTextVariant, getButtonPadding
 
-// Module 4539 (getButtonPadding)
+// Module 4543 (getButtonPadding)
 import buttonPadding from "module_32";
 import buttonPadding1 from "module_40";
 import buttonPadding2 from "module_48";

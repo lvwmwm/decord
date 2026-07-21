@@ -14,7 +14,7 @@ const fn = function n(moment) {
     weekdaysMin: "di_lu_ma_me_je_ve_sa".split("_"),
     weekdaysParseExact: true,
     longDateFormat: {},
-    calendar: {},
+    calendar: { status: null, padding: null, opacity: null, PX_8: null, Symbol: null, r: null },
     relativeTime: {},
     dayOfMonthOrdinalParse: /\d{1,2}(er|)/,
     ordinal(arg0, arg1) {
@@ -45,7 +45,7 @@ const fn = function n(moment) {
         return arg0 + str8;
       }
     },
-    week: { "Bool(true)": false, "Bool(true)": false }
+    week: { <string:1431496722>: false, <string:1627556098>: false }
   });
 };
 if ("object" === typeof exports) {
@@ -57,7 +57,7 @@ if ("object" === typeof exports) {
 }
 if ("function" === typeof globalThis.define) {
   if (globalThis.define.amd) {
-    globalThis.define([1782644737], fn);
+    globalThis.define(["HH:mm:ss"], fn);
   }
 }
 fn(this.moment);

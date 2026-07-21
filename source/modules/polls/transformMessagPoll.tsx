@@ -1,10 +1,10 @@
-// Module ID: 4455
-// Function ID: 39282
+// Module ID: 4459
+// Function ID: 39330
 // Name: transformMessagePoll
 // Dependencies: []
 // Exports: default
 
-// Module 4455 (transformMessagePoll)
+// Module 4459 (transformMessagePoll)
 const _module = require(dependencyMap[1]);
 const result = _module.fileFinishedImporting("modules/polls/transformMessagPoll.tsx");
 

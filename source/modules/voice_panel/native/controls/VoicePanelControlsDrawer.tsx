@@ -1,9 +1,9 @@
-// Module ID: 15742
-// Function ID: 120277
+// Module ID: 15749
+// Function ID: 120301
 // Name: renderChat
 // Dependencies: []
 
-// Module 15742 (renderChat)
+// Module 15749 (renderChat)
 function renderChat(shown) {
   let obj = { collapsable: false, style: absoluteFill.absoluteFill, children: callback2(importDefault(dependencyMap[9]), obj) };
   obj = { shown };
@@ -18,7 +18,7 @@ const tmp3 = arg1(dependencyMap[3]);
 ({ jsx: closure_9, jsxs: closure_10 } = arg1(dependencyMap[4]));
 const tmp4 = arg1(dependencyMap[4]);
 let obj = {};
-obj = { ca: "innocent", hourNo0: "innocent", backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_BASE_LOWER };
+obj = { backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_BASE_LOWER };
 obj.drawer = obj;
 let closure_11 = arg1(dependencyMap[5]).createStyles(obj);
 const memoResult = importAllResult.memo((shown) => {

@@ -1,10 +1,10 @@
-// Module ID: 9172
-// Function ID: 71861
+// Module ID: 9176
+// Function ID: 71873
 // Name: ChangeEmailCollectReasons
 // Dependencies: []
 // Exports: default
 
-// Module 9172 (ChangeEmailCollectReasons)
+// Module 9176 (ChangeEmailCollectReasons)
 let closure_3 = importAll(dependencyMap[0]);
 ({ View: closure_4, ScrollView: closure_5 } = arg1(dependencyMap[1]));
 let closure_6 = importDefault(dependencyMap[2]);
@@ -61,15 +61,15 @@ export default function ChangeEmailCollectReasons(changeEmailReason) {
   const items3 = [changeEmailReason, callback1];
   let tmp7 = null;
   if (null != stateFromStores) {
-    obj = { 9223372036854775807: "LIGHT", -9223372036854775808: "<string:3758096384>", style: tmp.background };
+    obj = { test: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001333156388934068, registerAsset: 56724000.96192874, style: tmp.background };
     obj = { style: tmp.container };
-    obj1 = { 0: 24, 9223372036854775807: 24, 0: null, -9223372036854775808: "aa9c26c29990ba7a6584e51ab5c56efa", style: tmp.title };
+    obj1 = { 1501064855: 24, -1267889981: 24, -1145697943: null, -1266241916: "aa9c26c29990ba7a6584e51ab5c56efa", style: tmp.title };
     const intl = arg1(dependencyMap[16]).intl;
     obj1.children = intl.string(arg1(dependencyMap[16]).t.41NIIh);
     const items4 = [callback(arg1(dependencyMap[15]).Text, obj1), , ];
     const obj2 = { style: tmp.radioGroup, children: tmp6 };
     items4[1] = callback(closure_4, obj2);
-    const obj3 = { st: "Array", borderWidth: "isArray", onPress: callback };
+    const obj3 = { key: true, onCloseCallback: true, onPress: callback };
     const intl2 = arg1(dependencyMap[16]).intl;
     obj3.text = intl2.string(arg1(dependencyMap[16]).t.XiOHRX);
     obj3.disabled = null == changeEmailReason;

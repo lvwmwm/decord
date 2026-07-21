@@ -1,9 +1,9 @@
-// Module ID: 4682
-// Function ID: 40746
+// Module ID: 4684
+// Function ID: 40787
 // Name: launchImageLibrary
 // Dependencies: []
 
-// Module 4682 (launchImageLibrary)
+// Module 4684 (launchImageLibrary)
 function launchImageLibrary(mediaType) {
   if ("any" !== mediaType.mediaType) {
     let str = mediaType.mediaType;

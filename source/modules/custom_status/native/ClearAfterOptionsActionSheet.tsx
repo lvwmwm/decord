@@ -1,10 +1,10 @@
-// Module ID: 11890
-// Function ID: 92066
+// Module ID: 11897
+// Function ID: 92089
 // Name: ClearAfterOptionsActionSheet
 // Dependencies: []
 // Exports: default
 
-// Module 11890 (ClearAfterOptionsActionSheet)
+// Module 11897 (ClearAfterOptionsActionSheet)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 const View = arg1(dependencyMap[2]).View;

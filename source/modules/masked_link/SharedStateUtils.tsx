@@ -1,10 +1,10 @@
-// Module ID: 12097
-// Function ID: 93260
+// Module ID: 12104
+// Function ID: 93283
 // Name: useUrlParts
 // Dependencies: []
 // Exports: useModalState
 
-// Module 12097 (useUrlParts)
+// Module 12104 (useUrlParts)
 function useUrlParts(url) {
   let hostname;
   let protocol;

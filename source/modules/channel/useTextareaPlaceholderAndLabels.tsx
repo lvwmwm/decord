@@ -1,10 +1,10 @@
-// Module ID: 11094
-// Function ID: 86333
+// Module ID: 11100
+// Function ID: 86356
 // Name: useTextareaPlaceholderAndLabels
 // Dependencies: []
 // Exports: default
 
-// Module 11094 (useTextareaPlaceholderAndLabels)
+// Module 11100 (useTextareaPlaceholderAndLabels)
 const _module = require(dependencyMap[0]);
 ({ ChannelTypes: closure_3, ChannelTypesSets: closure_4 } = _module);
 const _module1 = require(dependencyMap[3]);

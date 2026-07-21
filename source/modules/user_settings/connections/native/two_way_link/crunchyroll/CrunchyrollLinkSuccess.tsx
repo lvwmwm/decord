@@ -1,16 +1,16 @@
-// Module ID: 8984
-// Function ID: 70768
+// Module ID: 8988
+// Function ID: 70780
 // Name: CrunchyrollLinkDiscordSuccess
 // Dependencies: []
 // Exports: default
 
-// Module 8984 (CrunchyrollLinkDiscordSuccess)
+// Module 8988 (CrunchyrollLinkDiscordSuccess)
 importAll(dependencyMap[0]);
 ({ Image: closure_3, View: closure_4 } = arg1(dependencyMap[1]));
 const tmp3 = arg1(dependencyMap[1]);
 ({ jsx: closure_5, jsxs: closure_6 } = arg1(dependencyMap[2]));
 const tmp4 = arg1(dependencyMap[2]);
-let closure_7 = arg1(dependencyMap[3]).createStyles({ image: { position: 759239012, minWidth: 1912603216, height: 24 } });
+let closure_7 = arg1(dependencyMap[3]).createStyles({ image: { flexDirection: "RTC_CONNECTION_LOSS_RATE", alignItems: "handleJoinThreadVoice", paddingStart: "toString" } });
 const obj = arg1(dependencyMap[3]);
 const result = arg1(dependencyMap[10]).fileFinishedImporting("modules/user_settings/connections/native/two_way_link/crunchyroll/CrunchyrollLinkSuccess.tsx");
 

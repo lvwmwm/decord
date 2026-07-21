@@ -1,10 +1,10 @@
-// Module ID: 14549
-// Function ID: 109670
+// Module ID: 14556
+// Function ID: 109692
 // Name: Select
 // Dependencies: []
 // Exports: default
 
-// Module 14549 (Select)
+// Module 14556 (Select)
 function Select(children) {
   let type = children.type;
   const tmp = importDefaultResult(React.useState(false), 2);
@@ -48,12 +48,12 @@ function Select(children) {
       const selectedOptions = state.selectedOptions;
       mapped = selectedOptions.map((label) => label.label);
     }
-    state = [1159134988, mapped.join(", ")];
+    state = ["their", mapped.join(", ")];
     obj2.children = state;
     closure_8(callback(dependencyMap[11]).Text, obj2);
     const tmp24 = closure_8;
   } else {
-    items[2] = callback2(callback(dependencyMap[11]).Text, { position: "Array", width: "merchantCheckoutId" });
+    items[2] = callback2(callback(dependencyMap[11]).Text, { "Null": null, "Null": null });
     const obj3 = {};
     let str4 = "off";
     if (first) {
@@ -83,10 +83,11 @@ const tmp3 = arg1(dependencyMap[4]);
 obj.contentContainer = { padding: importDefault(dependencyMap[6]).space.PX_16, paddingBottom: importDefault(dependencyMap[6]).space.PX_32 };
 let closure_9 = obj.createStyles(obj);
 const obj1 = { padding: importDefault(dependencyMap[6]).space.PX_16, paddingBottom: importDefault(dependencyMap[6]).space.PX_32 };
+const obj2 = { -9223372036854775808: "DEFAULT_AUDIO_MIXER_SETTINGS", 0: "toPermissionKey", -9223372036854775808: "ll", 0: "COPY_INSTANT_INVITE", 0: "getCurrentAppState", type: arg1(dependencyMap[8]).ComponentType.STRING_SELECT };
+const items = [{ raw: true, body: true }, {}, { emoji: { name: "\u2B50" } }, { emoji: {} }];
+obj2.options = items;
+const items1 = [obj2, ];
 const obj5 = arg1(dependencyMap[7]);
-const items = [{}, { fromRegister: true, disableSwipe: true, position: true }, { emoji: { name: "\u2B50" } }, { emoji: {} }];
-const items1 = [{ type: arg1(dependencyMap[8]).ComponentType.STRING_SELECT, options: items }, ];
-const obj2 = { type: arg1(dependencyMap[8]).ComponentType.STRING_SELECT, options: items };
 items1[1] = { type: arg1(dependencyMap[8]).ComponentType.TEXT_DISPLAY, content: "hello world! :eyes: **bold** `code` https://cdn.discordapp.com/attachments/1408191424968523819/1408191500277387274/advaith.webp\nhttps://discord.com [google](https://google.com) ||spoiler|| <t:1755730638:t> <a:wumpus_party:393564669765353483>" };
 const transformComponentsResult = obj5.transformComponents(items1);
 const obj3 = { type: arg1(dependencyMap[8]).ComponentType.TEXT_DISPLAY, content: "hello world! :eyes: **bold** `code` https://cdn.discordapp.com/attachments/1408191424968523819/1408191500277387274/advaith.webp\nhttps://discord.com [google](https://google.com) ||spoiler|| <t:1755730638:t> <a:wumpus_party:393564669765353483>" };
@@ -98,7 +99,7 @@ export default function DevToolsComponentsTestingScreen() {
   const tmp = callback4();
   let obj = { style: tmp.wrap, contentContainerStyle: tmp.contentContainer };
   obj = { spacing: 16 };
-  const items = [callback2(arg1(dependencyMap[11]).Text, { position: "r", width: "CLOUD_PLAY_NEW_BADGE" }), , ];
+  const items = [callback2(arg1(dependencyMap[11]).Text, {}), , ];
   obj = {};
   const obj1 = { customId: "modal", channelId: channelId.getChannelId(), components: transformComponentsResult };
   obj.modal = obj1;
@@ -119,7 +120,7 @@ export default function DevToolsComponentsTestingScreen() {
   items[1] = callback3(arg1(dependencyMap[9]).ComponentStateContextProvider, obj);
   items[2] = callback2(arg1(dependencyMap[14]).Button, {
     onPress() {
-      return callback(closure_2[17]).dispatch({ -1353528223: "Array", 1671044513: "CONNECTIONS_AUTHORIZE" });
+      return callback(closure_2[17]).dispatch({ login_method: "Authorization", fromRegister: false });
     },
     text: "Reset Modal State"
   });

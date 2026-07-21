@@ -1,10 +1,10 @@
-// Module ID: 11363
-// Function ID: 88362
+// Module ID: 11370
+// Function ID: 88386
 // Name: ResourceChannelButtons
 // Dependencies: []
 // Exports: default
 
-// Module 11363 (ResourceChannelButtons)
+// Module 11370 (ResourceChannelButtons)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 const View = arg1(dependencyMap[2]).View;

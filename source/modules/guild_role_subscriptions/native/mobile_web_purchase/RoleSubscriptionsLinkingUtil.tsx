@@ -1,9 +1,9 @@
-// Module ID: 5685
-// Function ID: 48904
+// Module ID: 5687
+// Function ID: 48947
 // Name: performRoleSubscriptionUpsellRedirect
 // Dependencies: []
 
-// Module 5685 (performRoleSubscriptionUpsellRedirect)
+// Module 5687 (performRoleSubscriptionUpsellRedirect)
 function performRoleSubscriptionUpsellRedirect(guildId) {
   return _performRoleSubscriptionUpsellRedirect(...arguments);
 }

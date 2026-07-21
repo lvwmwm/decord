@@ -67,7 +67,7 @@ export const formatPercent = function formatPercent(arg0, arg1) {
   if (arg2 === undefined) {
     obj = {};
   }
-  obj = { 0: 49412096, 0: 49412096 };
+  obj = { "Null": 49419008, "Null": 49419008 };
   const merged = Object.assign(obj);
   return Intl.NumberFormat(arg0, obj).format(arg1);
 };

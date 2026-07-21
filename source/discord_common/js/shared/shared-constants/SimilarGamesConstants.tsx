@@ -1,9 +1,9 @@
-// Module ID: 8648
-// Function ID: 68466
+// Module ID: 8652
+// Function ID: 68478
 // Name: set
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 8648 (set)
+// Module 8652 (set)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_common/js/shared/shared-constants/SimilarGamesConstants.tsx");
 

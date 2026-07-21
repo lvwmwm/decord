@@ -1,10 +1,10 @@
-// Module ID: 12108
-// Function ID: 93298
+// Module ID: 12115
+// Function ID: 93321
 // Name: ObscuredView
 // Dependencies: []
 // Exports: default
 
-// Module 12108 (ObscuredView)
+// Module 12115 (ObscuredView)
 let THUMBNAIL_HEIGHT;
 let THUMBNAIL_MARGIN;
 function ObscuredView(source) {
@@ -71,7 +71,7 @@ let closure_11 = importAllResult.memo((onSelect) => {
   const callback = importAllResult.useCallback(() => onSelect(index), items);
   let obj = { style: items1 };
   const items1 = [tmp.thumbnailButtonPortrait, thumbnailStyle];
-  obj = { sr: "<string:1627390542>", ks: "<string:3300479417>", ao: "getIsUserConnected", tm: "rowBody", w: "<string:1632698624>", accessibilityLabel: "Thumbnail preview, " + index + 1 + " of " + numSources, accessibilityState: { selected: selectedIndex === index }, onPress: callback };
+  obj = { ef: "bde7994716d98a3897a327489b8b2f6d", w: "gif", h: "png", ip: 500, op: 1000, accessibilityLabel: "Thumbnail preview, " + index + 1 + " of " + numSources, accessibilityState: { selected: selectedIndex === index }, onPress: callback };
   obj = { style: tmp.thumbnailImagePortrait };
   const thumbnail = first.thumbnail;
   let tmp10 = first;

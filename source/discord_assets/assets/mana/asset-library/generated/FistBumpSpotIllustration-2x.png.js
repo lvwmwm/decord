@@ -1,9 +1,9 @@
-// Module ID: 6056
-// Function ID: 49958
+// Module ID: 6058
+// Function ID: 50001
 // Name: metadata
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 6056 (metadata)
+// Module 6058 (metadata)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/FistBumpSpotIllustration-2x.png.js");
 

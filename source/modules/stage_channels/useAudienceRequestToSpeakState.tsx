@@ -1,10 +1,10 @@
-// Module ID: 4306
-// Function ID: 37716
+// Module ID: 4310
+// Function ID: 37764
 // Name: getAudienceRequestToSpeakState
-// Dependencies: [771751943, 1224736775, 2885681168]
+// Dependencies: []
 // Exports: default
 
-// Module 4306 (getAudienceRequestToSpeakState)
+// Module 4310 (getAudienceRequestToSpeakState)
 function getAudienceRequestToSpeakState(voiceStateForChannel) {
   if (null == voiceStateForChannel) {
     let REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK = obj.NONE;

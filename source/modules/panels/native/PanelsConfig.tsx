@@ -1,13 +1,13 @@
-// Module ID: 14659
-// Function ID: 110578
+// Module ID: 14666
+// Function ID: 110600
 // Name: isTimingConfig
-// Dependencies: [31, 5304]
+// Dependencies: [31, 5306]
 
-// Module 14659 (isTimingConfig)
+// Module 14666 (isTimingConfig)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 
 let closure_0 = { code: "function isTimingConfig_PanelsConfigTsx1(obj){return obj!=null&&obj.duration!=null;}" };
-let obj = { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null };
+let obj = { -5: null, -9223372036854775808: null, 9223372036854775807: null, 0: null, 0: null };
 obj = { damping: 30 };
 const merged = Object.assign(obj);
 obj = { damping: 20 };

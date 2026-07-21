@@ -1,10 +1,10 @@
-// Module ID: 9544
-// Function ID: 74406
+// Module ID: 9549
+// Function ID: 74423
 // Name: getMentionTextWithUser
 // Dependencies: []
 // Exports: getAutocompleteResultText, getItemLayout, getItemSeparator, getPrefix, getQuery
 
-// Module 9544 (getMentionTextWithUser)
+// Module 9549 (getMentionTextWithUser)
 function getMentionTextWithUser(messageChannel, user) {
   if (obj.hasSameRoleAsUsername(messageChannel, user)) {
     const _HermesInternal2 = HermesInternal;

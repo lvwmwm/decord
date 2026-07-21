@@ -1,16 +1,16 @@
-// Module ID: 9680
-// Function ID: 75340
+// Module ID: 9685
+// Function ID: 75357
 // Name: GiftingBadgeProgressBanner
 // Dependencies: []
 // Exports: default
 
-// Module 9680 (GiftingBadgeProgressBanner)
+// Module 9685 (GiftingBadgeProgressBanner)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 ({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[2]));
 let obj = arg1(dependencyMap[3]);
 obj = {};
-obj = { justifyContent: 1, alignItems: 58, width: 58, height: "row", display: 15, flexDirection: "center", flexWrap: "center", padding: importDefault(dependencyMap[4]).space.PX_8, backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_SURFACE_HIGH, borderRadius: importDefault(dependencyMap[4]).radii.sm, borderColor: importDefault(dependencyMap[4]).colors.BORDER_MUTED };
+obj = { flexDirection: 1, alignItems: 58, height: 58, marginHorizontal: "row", position: 15, top: "center", left: "center", padding: importDefault(dependencyMap[4]).space.PX_8, backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_SURFACE_HIGH, borderRadius: importDefault(dependencyMap[4]).radii.sm, borderColor: importDefault(dependencyMap[4]).colors.BORDER_MUTED };
 const merged = Object.assign(importDefault(dependencyMap[4]).shadows.SHADOW_LOW);
 obj.container = obj;
 const tmp3 = arg1(dependencyMap[2]);

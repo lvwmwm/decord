@@ -1,10 +1,10 @@
-// Module ID: 9343
-// Function ID: 72976
+// Module ID: 9347
+// Function ID: 72990
 // Name: ShinyButton
 // Dependencies: []
 // Exports: default
 
-// Module 9343 (ShinyButton)
+// Module 9347 (ShinyButton)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 let obj = arg1(dependencyMap[2]);
@@ -27,7 +27,7 @@ export default function ShinyButton(style) {
 
     };
   }
-  let obj = { padding: "r", marginHorizontal: "onRequireModeratorMFAClick", marginBottom: "Array", backgroundColor: "isSpamMessageRequest" };
+  let obj = { 0: null, 0: 4, 0: 4, 9223372036854775807: "rgba(0, 0, 0, 0.75)" };
   Object.setPrototypeOf(null);
   const merged = Object.assign(style, obj);
   const tmp3 = callback();

@@ -1,10 +1,10 @@
-// Module ID: 10169
-// Function ID: 78585
+// Module ID: 10175
+// Function ID: 78603
 // Name: RolePill
 // Dependencies: []
 // Exports: default
 
-// Module 10169 (RolePill)
+// Module 10175 (RolePill)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 ({ EMPTY_STRING_SNOWFLAKE_ID: closure_4, MAX_VISUAL_ROLE_LENGTH: closure_5 } = arg1(dependencyMap[2]));
@@ -106,7 +106,7 @@ export default function RolePill(role) {
     tmp19 = callback(View, obj6);
   }
   items1[1] = tmp19;
-  const obj7 = { INTEGRATION_CREATE: null, ConstraintReasonCode: null, children: name };
+  const obj7 = { children: name };
   items1[2] = callback(arg1(dependencyMap[12]).Text, obj7);
   obj1.children = items1;
   obj.children = closure_7(View, obj1);

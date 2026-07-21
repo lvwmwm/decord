@@ -1,10 +1,10 @@
-// Module ID: 11107
-// Function ID: 86485
+// Module ID: 11113
+// Function ID: 86508
 // Name: ForumPostGrid
 // Dependencies: []
 // Exports: ForumPostListDisabled
 
-// Module 11107 (ForumPostGrid)
+// Module 11113 (ForumPostGrid)
 function ForumPostGrid(arg0) {
   let firstMessage;
   let hasUnreads;

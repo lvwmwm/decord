@@ -1,10 +1,10 @@
-// Module ID: 12280
-// Function ID: 94131
+// Module ID: 12287
+// Function ID: 94154
 // Name: CheckIcon
 // Dependencies: []
 // Exports: default
 
-// Module 12280 (CheckIcon)
+// Module 12287 (CheckIcon)
 function CheckIcon() {
   let obj = arg1(dependencyMap[10]);
   const tmp = importDefault(dependencyMap[9])();
@@ -167,7 +167,7 @@ function Row(withTopBorderRadius) {
         obj5.style = items5;
         obj5.start = HorizontalGradient.START;
         obj5.end = HorizontalGradient.END;
-        obj5.colors = [0.029, -0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000032674018203153194, -0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000012702101480705767];
+        obj5.colors = [-0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000012528747644163019, -0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000012329364938550453, -0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003900375176262811];
         obj5.children = column2;
         obj1.children = callback3(importDefault(dependencyMap[16]), obj5);
       }
@@ -208,17 +208,17 @@ const tmp2 = arg1(dependencyMap[4]);
 ({ jsx: closure_10, jsxs: closure_11 } = arg1(dependencyMap[5]));
 let closure_12 = "rgba(184, 69, 193, 0.5)";
 let obj = arg1(dependencyMap[6]);
-obj = { container: { "Null": null, "Null": null, "Null": null }, headerText: { textAlign: "center" }, logo: { visible: "absolute", transparent: 5 }, table: { marginTop: 16 }, row: {}, bottomBorder: {} };
+obj = { container: {}, headerText: { textAlign: "center" }, logo: {}, table: { marginTop: 16 }, row: {}, bottomBorder: {} };
 obj = { borderTopLeftRadius: importDefault(dependencyMap[7]).radii.sm, borderTopRightRadius: importDefault(dependencyMap[7]).radii.sm };
 obj.topBorderRadius = obj;
 const tmp3 = arg1(dependencyMap[5]);
 obj.bottomBorderRadius = { borderBottomLeftRadius: importDefault(dependencyMap[7]).radii.sm, borderBottomRightRadius: importDefault(dependencyMap[7]).radii.sm };
 obj.cell = { paddingVertical: 12 };
-obj.labelCell = {};
-obj.dataCell = { overflow: false, alignSelf: false, reportedPageIndex: false, pageIndex: false };
+obj.labelCell = { markAsSpoilerTitle: "guildFallbackImage", keyboardAppearance: "MAX_AGE" };
+obj.dataCell = { "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, "Bool(false)": false };
 const obj1 = { borderBottomLeftRadius: importDefault(dependencyMap[7]).radii.sm, borderBottomRightRadius: importDefault(dependencyMap[7]).radii.sm };
 obj.themedHighlightedCell = { backgroundColor: arg1(dependencyMap[8]).PREMIUM_FEATURES_TABLE_HIGHLIGHTED_CELL_BG };
-obj.nitroHomeHightlightedBorderLeftRight = { "Bool(false)": 24, "Bool(false)": 16, "Bool(false)": "flex", "Bool(false)": "column" };
+obj.nitroHomeHightlightedBorderLeftRight = { "Bool(true)": 24, "Bool(true)": 16, "Bool(true)": "flex", "Bool(true)": "column" };
 obj.premiumGroupCard = { marginTop: 16 };
 obj.priceContainer = { alignItems: "center" };
 let closure_13 = obj.createStyles(obj);
@@ -425,7 +425,7 @@ export default function PremiumFeaturesTable(highlightNitroBasic) {
   const intl30 = arg1(dependencyMap[15]).intl;
   obj23.column2AccessibilityLabel = intl30.string(arg1(dependencyMap[15]).t.tq+6t/);
   items[9] = obj23;
-  items[10] = { hasIcons: true, hasTrailingText: false, importer: true };
+  items[10] = {};
   const found = items.filter((hidden) => null != hidden && !hidden.hidden);
   const obj25 = { style: items1 };
   const items1 = [tmp.container, highlightNitroBasic.style];

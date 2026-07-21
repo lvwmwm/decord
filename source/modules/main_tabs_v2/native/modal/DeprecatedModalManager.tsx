@@ -1,9 +1,9 @@
-// Module ID: 16053
-// Function ID: 123351
+// Module ID: 16060
+// Function ID: 123382
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
-// Module 16053 (_isNativeReflectConstruct)
+// Module 16060 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -186,9 +186,9 @@ let closure_15 = {
   }
 };
 const obj = {
-  ClickLetUsKnow: "/assets/.cache/intl/bW9kdWxlcy9ndWlsZF9zZXR0aW5ncy9zZXJ2ZXJfbW9uZXRpemF0aW9uL2d1aWxkX3RoZW1lL3dlYg==",
-  hasTeenDefaults: null,
-  targetVideoHeight: "9b1203904edeea6da2453f6f718ce984",
+  "Bool(false)": "/assets/.cache/intl/bW9kdWxlcy9ndWlsZF9zZXR0aW5ncy9zZXJ2ZXJfbW9uZXRpemF0aW9uL2d1aWxkX3RoZW1lL3dlYg==",
+  "Bool(false)": null,
+  "Bool(false)": "4c57d1e5843d61cf9d8ac6883994f498",
   store: importDefaultResult,
   isOpen(arg0, arg1) {
     let action = arg1;
@@ -262,7 +262,7 @@ let tmp4 = (arg0) => {
               return callback(closure_2[19]).default;
             }
       };
-      obj3 = { <string:1403314134>: "<string:46068480>", premiumHeaderLabel: "<string:1685934336>", __active: "<string:1356480785>" };
+      obj3 = { paddingVertical: "<string:46078720>", marginRight: "<string:3084210432>", guildVerificationRoleEnabled: "<string:2259239185>" };
       obj3.store = closure_10;
       obj3.getComponent = function getComponent() {
         return callback(closure_2[20]).default;

@@ -1,9 +1,9 @@
-// Module ID: 13320
-// Function ID: 101265
+// Module ID: 13327
+// Function ID: 101288
 // Name: _isNativeReflectConstruct
-// Dependencies: [5, 7, 6, 15, 17, 18, 4169, 1906, 4573, 3, 13331, 13332, 10227, 5726, 13333, 2, 4169, 4575, 3801, 2, 6, 7, 15, 17, 18, 1194, 4169, 686, 4522, 2, 6, 7, 15, 17, 18, 27, 4120, 1906]
+// Dependencies: [5, 7, 6, 15, 17, 18, 4173, 1906, 4575, 3, 13338, 13339, 10233, 5728, 13340, 2, 4173, 4577, 3801, 2, 6, 7, 15, 17, 18, 1194, 4173, 686, 4526, 2, 6, 7, 15, 17, 18, 27, 4120, 1906]
 
-// Module 13320 (_isNativeReflectConstruct)
+// Module 13327 (_isNativeReflectConstruct)
 import asyncGeneratorStep from "asyncGeneratorStep";
 import closure_4 from "_defineProperties";
 import closure_5 from "_classCallCheck";
@@ -19,11 +19,11 @@ import getSoundboardSoundURL from "getSoundboardSoundURL";
 import createSound from "createSound";
 import _fetchDefaultSoundsFromApi2 from "_fetchDefaultSoundsFromApi2";
 import importDefaultResult2 from "_isNativeReflectConstruct";
-import closure_18 from "keys";
+import closure_18 from "result2";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import perceptualToAmplitude from "perceptualToAmplitude";
 import explicitContentFromProto from "explicitContentFromProto";
-import keys from "keys";
+import result2 from "result2";
 import _classCallCheck from "_classCallCheck";
 import _defineProperties from "_defineProperties";
 import "_possibleConstructorReturn";

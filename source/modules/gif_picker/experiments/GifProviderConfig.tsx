@@ -1,10 +1,10 @@
-// Module ID: 9564
-// Function ID: 74551
+// Module ID: 9569
+// Function ID: 74568
 // Name: getGifProviderConfig
 // Dependencies: []
 // Exports: getExperimentContext, getProviderForAPIRequest
 
-// Module 9564 (getGifProviderConfig)
+// Module 9569 (getGifProviderConfig)
 function getGifProviderConfig() {
   const GifProvidersExperiment = arg1(dependencyMap[1]).GifProvidersExperiment;
   const config = GifProvidersExperiment.getConfig({ location: "gif_picker" });

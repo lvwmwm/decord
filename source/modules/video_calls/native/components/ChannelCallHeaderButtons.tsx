@@ -1,10 +1,10 @@
-// Module ID: 10745
-// Function ID: 83489
+// Module ID: 10751
+// Function ID: 83512
 // Name: CameraButton
 // Dependencies: []
 // Exports: CameraButton, GridButton
 
-// Module 10745 (CameraButton)
+// Module 10751 (CameraButton)
 importAll(dependencyMap[0]);
 let closure_3 = importDefault(dependencyMap[1]);
 const jsx = arg1(dependencyMap[2]).jsx;

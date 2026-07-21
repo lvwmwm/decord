@@ -1,10 +1,10 @@
-// Module ID: 15575
-// Function ID: 118872
+// Module ID: 15582
+// Function ID: 118896
 // Name: keyExtractor
 // Dependencies: []
 // Exports: default
 
-// Module 15575 (keyExtractor)
+// Module 15582 (keyExtractor)
 function keyExtractor(item) {
   return item.item.id;
 }
@@ -34,8 +34,8 @@ function FriendsEmptyComponent() {
   };
   const intl3 = arg1(dependencyMap[7]).intl;
   obj.accessibilityLabel = intl3.string(arg1(dependencyMap[7]).t.a7FVbE);
-  obj.hitSlop = { marginTop: "parent", marginVertical: "Array", maxHeight: "isArray", maxWidth: "accessibilityRole" };
-  const obj1 = { Promise: "/assets/design/components/Icon/native/redesign/generated/images", marginTop: 24, flags: 24 };
+  obj.hitSlop = { "Null": "Array", "Null": "gradientTop", "Null": "EXPERIMENT_GUILD_EXPOSURE_SUPPRESSED", "Null": "showReferralNotificationDot" };
+  const obj1 = { "Null": false, "Null": false, "Null": false };
   const items1 = [tmp.goToFriendsLink];
   obj1.style = items1;
   const intl4 = arg1(dependencyMap[7]).intl;

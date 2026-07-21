@@ -1,9 +1,9 @@
-// Module ID: 14341
-// Function ID: 108305
+// Module ID: 14348
+// Function ID: 108328
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 
-// Module 14341 (_createForOfIteratorHelperLoose)
+// Module 14348 (_createForOfIteratorHelperLoose)
 function _createForOfIteratorHelperLoose(@@iterator) {
   let arg1 = Symbol_iterator;
   @@iterator = "undefined" !== typeof Symbol;
@@ -193,7 +193,7 @@ const tmp3 = arg1(dependencyMap[8]);
 const tmp4 = arg1(dependencyMap[9]);
 ({ jsx: closure_17, jsxs: closure_18 } = arg1(dependencyMap[10]));
 const tmp5 = arg1(dependencyMap[10]);
-let closure_19 = arg1(dependencyMap[11]).createStyles({ rootContainer: { <string:1140607356>: 30271555, <string:1751293292>: 22092032 }, spinner: { 0: "100%", 9223372036854775807: "absolute", 0: 0, -9223372036854775808: 0, 9223372036854775807: 0 } });
+let closure_19 = arg1(dependencyMap[11]).createStyles({ rootContainer: {}, spinner: { 9223372036854775807: "100%", 0: "absolute", 9223372036854775807: 0, 0: 0, 9223372036854775807: 0 } });
 function CollectiblesShopInternal(analyticsSource) {
   let screen;
   let storeFront;

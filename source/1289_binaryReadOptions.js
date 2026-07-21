@@ -34,7 +34,7 @@ const tmp2 = () => {
         tmp4 = new.target;
         str = "utf-8";
         tmp5 = new.target;
-        textDecoder = new TextDecoder("utf-8", { "Bool(false)": null, "Bool(false)": null });
+        textDecoder = new TextDecoder("utf-8", { shownFatigableCandidate: null, prevFatigableCandidate: null });
       }
       this.textDecoder = textDecoder;
       return;

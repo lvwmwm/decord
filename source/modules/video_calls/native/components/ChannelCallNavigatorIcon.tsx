@@ -1,10 +1,10 @@
-// Module ID: 10649
-// Function ID: 83114
+// Module ID: 10655
+// Function ID: 83137
 // Name: ChannelCallNavigatorIcon
 // Dependencies: []
 // Exports: default
 
-// Module 10649 (ChannelCallNavigatorIcon)
+// Module 10655 (ChannelCallNavigatorIcon)
 importAll(dependencyMap[0]);
 ({ View: closure_3, StyleSheet: closure_4 } = arg1(dependencyMap[1]));
 const resetFocusTimer = arg1(dependencyMap[2]).resetFocusTimer;
@@ -14,9 +14,9 @@ let obj = arg1(dependencyMap[5]);
 obj = { pressableContainer: { marginHorizontal: 4 } };
 obj = { borderRadius: importDefault(dependencyMap[6]).radii.lg };
 obj.pressable = obj;
+const obj1 = { captureReactException: "r", bubblingEventTypes: "isArray", es-EC: "ip", containerRefreshMedium: "it", ignoreRequireCycleLogs: "Array", HP: "isArray", useIsScreenIndexFrozenSharedValue: "accessibilityRole", borderRadius: importDefault(dependencyMap[6]).radii.lg, backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_BASE_LOW };
+obj.container = obj1;
 const tmp4 = arg1(dependencyMap[4]);
-obj.container = { borderRadius: importDefault(dependencyMap[6]).radii.lg, backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_BASE_LOW };
-const obj1 = { borderRadius: importDefault(dependencyMap[6]).radii.lg, backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_BASE_LOW };
 obj.text = { fontFamily: arg1(dependencyMap[3]).Fonts.PRIMARY_SEMIBOLD, color: importDefault(dependencyMap[6]).colors.WHITE };
 obj.disabled = { opacity: 0.5 };
 const obj2 = { fontFamily: arg1(dependencyMap[3]).Fonts.PRIMARY_SEMIBOLD, color: importDefault(dependencyMap[6]).colors.WHITE };

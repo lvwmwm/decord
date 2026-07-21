@@ -1,9 +1,9 @@
-// Module ID: 6526
-// Function ID: 50663
+// Module ID: 6528
+// Function ID: 50706
 // Name: metadata
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 6526 (metadata)
+// Module 6528 (metadata)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/SpinningGem3dIllustration-2x.png.js");
 

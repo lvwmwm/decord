@@ -1,10 +1,10 @@
-// Module ID: 6713
-// Function ID: 52188
+// Module ID: 6719
+// Function ID: 52237
 // Name: timeRequire
 // Dependencies: []
 // Exports: default
 
-// Module 6713 (timeRequire)
+// Module 6719 (timeRequire)
 const _module = require(dependencyMap[1]);
 const result = _module.fileFinishedImporting("../discord_common/js/shared/timeRequire.native.tsx");
 

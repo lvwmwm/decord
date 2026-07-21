@@ -1,10 +1,10 @@
-// Module ID: 10417
-// Function ID: 80264
+// Module ID: 10423
+// Function ID: 80287
 // Name: OptInChannelBanner
 // Dependencies: []
 // Exports: default
 
-// Module 10417 (OptInChannelBanner)
+// Module 10423 (OptInChannelBanner)
 let StyleSheet;
 class OptInChannelBanner {
   constructor(arg0) {
@@ -108,7 +108,7 @@ function ArchivedLockedThreadChatBanner(channel) {
   const items1 = [callback(arg1(dependencyMap[17]).Text, obj), ];
   if (canUnarchiveThread) {
     const obj1 = { style: tmp.threadBannerButton };
-    const obj2 = { <string:1522289750>: false, <string:570601313>: null };
+    const obj2 = {};
     const intl2 = arg1(dependencyMap[18]).intl;
     obj2.text = intl2.string(arg1(dependencyMap[18]).t.0dvvEi);
     obj2.onPress = function onPress() {
@@ -160,7 +160,7 @@ function LockedThreadChatBanner(channel) {
   const items1 = [callback(arg1(dependencyMap[17]).Text, obj), ];
   if (isThreadModerator) {
     const obj1 = { style: tmp.threadBannerButton };
-    const obj2 = { <string:1522289750>: false, <string:570601313>: null };
+    const obj2 = {};
     const intl2 = arg1(dependencyMap[18]).intl;
     obj2.text = intl2.string(arg1(dependencyMap[18]).t.zA9d1J);
     obj2.onPress = function onPress() {
@@ -201,7 +201,7 @@ function NewMessagesChatBar(channel) {
       const isEstimatedResult = estimated.isEstimated(channel.id);
       t = { style: intl.newMessageBar };
       obj = { accessibilityRole: "button", style: intl.newMessageBarTextContainer, onPress: handleScrollToNewMessages };
-      obj = { INTEGRATION_CREATE: null, ConstraintReasonCode: "flex-start" };
+      obj = {};
       const intl2 = arg1(dependencyMap[num2]).intl;
       const obj1 = { count: unreadCount, timestamp: channel.oldestUnreadTimestamp };
       obj.children = intl2.format(estimated.isEstimated(channel.id) ? t.wvtbbG : t.BctFH/, obj1);
@@ -238,15 +238,15 @@ const tmp3 = arg1(dependencyMap[5]);
 ({ jsx: closure_12, jsxs: closure_13 } = arg1(dependencyMap[6]));
 let obj = arg1(dependencyMap[7]);
 obj = {};
-obj = { 0: null, 9223372036854775807: null, 0: null, 0: null, -9223372036854775808: null, -121871127848: null, 9223372036854775807: null, 9223372036854775807: null, backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_SURFACE_HIGH };
+obj = { backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_SURFACE_HIGH };
 obj.threadBannerContainer = obj;
-obj.threadBannerTitle = { -1593928941: 304752, 1554836306: -1941892863 };
-obj.threadBannerButton = { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null };
+obj.threadBannerTitle = {};
+obj.threadBannerButton = { "Null": null, "Null": null, "Null": null, "Null": null };
 const tmp4 = arg1(dependencyMap[6]);
 obj.newMessageBar = { backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_BRAND };
-obj.newMessageBarTextContainer = { -1035800735: null, "Bool(true)": null, "Bool(true)": null };
+obj.newMessageBarTextContainer = { "Null": 1895890945, "Null": 1, "Null": 302059777 };
 obj.newMessageBarCloseButton = { paddingHorizontal: 12 };
-const obj2 = { 0: true, 9223372036854775807: true, 0: 100, 9223372036854775807: 67, 9223372036854775807: "contain", 9223372036854775807: 0, -9223372036854775808: true, 0: true, backgroundColor: importDefault(dependencyMap[8]).colors.CHAT_BANNER_BG, borderBottomWidth: StyleSheet.hairlineWidth, borderBottomColor: importDefault(dependencyMap[8]).colors.CHAT_BORDER };
+const obj2 = { 0: true, 9223372036854775807: true, 9223372036854775807: "EMBEDDED_ACTIVITY_SET_PROXY_TICKET_REFRESHING", 0: null, 9223372036854775807: true, 0: 6, 9223372036854775807: "&amp;", 9223372036854775807: "&lt;", backgroundColor: importDefault(dependencyMap[8]).colors.CHAT_BANNER_BG, borderBottomWidth: StyleSheet.hairlineWidth, borderBottomColor: importDefault(dependencyMap[8]).colors.CHAT_BORDER };
 obj.optInChannelBannerContainer = obj2;
 const obj1 = { backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_BRAND };
 obj.optInChannelBannerLegacyBorder = { borderBottomWidth: 1, borderBottomColor: importDefault(dependencyMap[8]).colors.BORDER_SUBTLE };

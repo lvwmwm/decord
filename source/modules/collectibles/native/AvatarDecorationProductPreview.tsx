@@ -1,10 +1,10 @@
-// Module ID: 8739
-// Function ID: 69117
+// Module ID: 8743
+// Function ID: 69129
 // Name: AvatarDecorationProductPreview
 // Dependencies: []
 // Exports: default
 
-// Module 8739 (AvatarDecorationProductPreview)
+// Module 8743 (AvatarDecorationProductPreview)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 const jsx = arg1(dependencyMap[2]).jsx;
@@ -19,7 +19,7 @@ export default function AvatarDecorationProductPreview(product) {
   const firstAvatarDecoration = obj1.useShopProductItems(product.product).firstAvatarDecoration;
   let tmp3 = null;
   if (null != firstAvatarDecoration) {
-    obj = { "Bool(false)": "<string:2084372481>", "Bool(false)": "<string:3565813761>", "Bool(false)": "<string:4064411649>", "Null": "<string:4060086859>", "Null": "<string:285213259>", style: tmp.fullSizePreview };
+    obj = { style: tmp.fullSizePreview };
     const intl = arg1(dependencyMap[6]).intl;
     obj = { a11y_text: firstAvatarDecoration.label };
     obj.accessibilityLabel = intl.formatToPlainString(arg1(dependencyMap[6]).t.Do2lxE, obj);

@@ -1,9 +1,9 @@
-// Module ID: 13898
-// Function ID: 105144
+// Module ID: 13905
+// Function ID: 105167
 // Name: PlayerState
 // Dependencies: []
 
-// Module 13898 (PlayerState)
+// Module 13905 (PlayerState)
 let closure_3 = importDefault(dependencyMap[0]);
 const importAllResult = importAll(dependencyMap[1]);
 let closure_5 = importDefault(dependencyMap[2]);

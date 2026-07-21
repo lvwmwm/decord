@@ -1,9 +1,9 @@
-// Module ID: 16148
-// Function ID: 124482
+// Module ID: 16155
+// Function ID: 124513
 // Name: IntegrationExpireBehaviorTypes
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 16148 (IntegrationExpireBehaviorTypes)
+// Module 16155 (IntegrationExpireBehaviorTypes)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_common/js/shared/shared-constants/IntegrationExpireBehaviorTypes.tsx");
 

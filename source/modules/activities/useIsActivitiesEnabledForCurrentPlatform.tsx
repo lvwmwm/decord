@@ -1,10 +1,10 @@
-// Module ID: 10500
-// Function ID: 82008
+// Module ID: 10506
+// Function ID: 82031
 // Name: isActivitiesAllowed
 // Dependencies: []
 // Exports: getIsActivitiesEnabledForCurrentPlatform, useIsActivitiesEnabledForCurrentPlatform
 
-// Module 10500 (isActivitiesAllowed)
+// Module 10506 (isActivitiesAllowed)
 function isActivitiesAllowed() {
   return !require(dependencyMap[0]).isTablet;
 }

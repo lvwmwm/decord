@@ -1,10 +1,10 @@
-// Module ID: 11975
-// Function ID: 92588
+// Module ID: 11982
+// Function ID: 92611
 // Name: useUserProfileGameFriendApplicationIds
 // Dependencies: []
 // Exports: useUserProfileGameFriendApplicationIds
 
-// Module 11975 (useUserProfileGameFriendApplicationIds)
+// Module 11982 (useUserProfileGameFriendApplicationIds)
 let closure_2 = importAll(dependencyMap[0]);
 let closure_3 = importDefault(dependencyMap[1]);
 let closure_4 = importDefault(dependencyMap[2]);

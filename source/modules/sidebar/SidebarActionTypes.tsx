@@ -1,9 +1,9 @@
-// Module ID: 5655
-// Function ID: 48523
+// Module ID: 5657
+// Function ID: 48566
 // Name: SidebarType
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 5655 (SidebarType)
+// Module 5657 (SidebarType)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("modules/sidebar/SidebarActionTypes.tsx");
 

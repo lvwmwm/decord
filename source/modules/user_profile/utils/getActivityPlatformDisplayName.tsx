@@ -1,10 +1,10 @@
-// Module ID: 11922
-// Function ID: 92230
+// Module ID: 11929
+// Function ID: 92253
 // Name: getActivityPlatformDisplayName
 // Dependencies: []
 // Exports: default
 
-// Module 11922 (getActivityPlatformDisplayName)
+// Module 11929 (getActivityPlatformDisplayName)
 const PlatformTypes = require(dependencyMap[0]).PlatformTypes;
 const _module = require(dependencyMap[3]);
 const result = _module.fileFinishedImporting("modules/user_profile/utils/getActivityPlatformDisplayName.tsx");

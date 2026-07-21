@@ -1,9 +1,9 @@
-// Module ID: 8813
-// Function ID: 69504
+// Module ID: 8817
+// Function ID: 69516
 // Name: Placeholder
 // Dependencies: []
 
-// Module 8813 (Placeholder)
+// Module 8817 (Placeholder)
 function Placeholder(arg0) {
   let end;
   let start;
@@ -29,13 +29,13 @@ const USERS_LIST_PADDING_BETWEEN_SECTIONS = tmp2.USERS_LIST_PADDING_BETWEEN_SECT
 ({ jsx: closure_7, jsxs: closure_8, Fragment: closure_9 } = arg1(dependencyMap[4]));
 let obj1 = arg1(dependencyMap[5]);
 let obj = { sectionHeader: obj };
-obj = { "Bool(false)": 10, "Bool(false)": 10, top: -1 * tmp2.USERS_LIST_SECTION_BOTTOM_PADDING };
+obj = { 9223372036854775807: 10, 9223372036854775807: 10, top: -1 * tmp2.USERS_LIST_SECTION_BOTTOM_PADDING };
 obj1 = { backgroundColor: importDefault(dependencyMap[6]).colors.MOBILE_ACTIONSHEET_BACKGROUND };
 obj.stickyHeader = obj1;
-const obj2 = { __constants: "\u{1F469}\u{1F3FD}\u200D\u{1F9BC}\u200D\u27A1\uFE0F", OS: true, effectDuration: null, backgroundColor: importDefault(dependencyMap[6]).colors.MOBILE_ACTIONSHEET_BACKGROUND };
+const obj2 = { "Null": "\u{1F469}\u{1F3FD}\u200D\u{1F9BC}\u200D\u27A1\uFE0F", "Null": true, "Null": null, backgroundColor: importDefault(dependencyMap[6]).colors.MOBILE_ACTIONSHEET_BACKGROUND };
 obj.list = obj2;
 obj.emptySection = { paddingBottom: USERS_LIST_PADDING_BETWEEN_SECTIONS };
-const obj3 = { 9223372036854775807: null, 0: null, 9223372036854775807: null, 9223372036854775807: null, 9223372036854775807: null, 0: null, 0: null, paddingTop: USERS_LIST_PADDING_BETWEEN_SECTIONS };
+const obj3 = { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, paddingTop: USERS_LIST_PADDING_BETWEEN_SECTIONS };
 obj.section = obj3;
 obj.badgeWrapper = { height: "100%" };
 const obj4 = { left: importDefault(dependencyMap[6]).space.PX_4 + importDefault(dependencyMap[6]).space.PX_4 / 2 };
@@ -145,7 +145,7 @@ let closure_14 = importAllResult.memo(function UserSectionInner(stickyAt) {
     }
   }
   obj = { style: memo1 };
-  obj1 = { time: null, url: null };
+  obj1 = { "Null": 2417, "Null": 487680 };
   let str = "text-sm/semibold";
   if (tmp2) {
     str = "text-md/medium";
@@ -171,7 +171,7 @@ let closure_14 = importAllResult.memo(function UserSectionInner(stickyAt) {
   let tmp18 = null;
   if (null != actionTitle) {
     const obj4 = { onPress: action };
-    const obj5 = { INTEGRATION_CREATE: "png", ConstraintReasonCode: "absolute", children: actionTitle };
+    const obj5 = { children: actionTitle };
     obj4.children = callback2(arg1(dependencyMap[12]).Text, obj5);
     tmp18 = callback2(arg1(dependencyMap[14]).PressableOpacity, obj4);
   }

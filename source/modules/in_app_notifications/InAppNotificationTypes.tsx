@@ -1,9 +1,9 @@
-// Module ID: 10296
-// Function ID: 79496
+// Module ID: 10302
+// Function ID: 79515
 // Name: InAppNotificationAccessoryTypes
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 10296 (InAppNotificationAccessoryTypes)
+// Module 10302 (InAppNotificationAccessoryTypes)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("modules/in_app_notifications/InAppNotificationTypes.tsx");
 

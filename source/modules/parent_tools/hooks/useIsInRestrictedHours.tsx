@@ -1,10 +1,10 @@
-// Module ID: 15836
-// Function ID: 121070
+// Module ID: 15843
+// Function ID: 121094
 // Name: useIsInRestrictedHours
 // Dependencies: []
 // Exports: default
 
-// Module 15836 (useIsInRestrictedHours)
+// Module 15843 (useIsInRestrictedHours)
 let closure_2 = importDefault(dependencyMap[0]);
 let closure_3 = importDefault(dependencyMap[1]);
 const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/parent_tools/hooks/useIsInRestrictedHours.tsx");

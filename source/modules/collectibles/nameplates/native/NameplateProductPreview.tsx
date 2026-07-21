@@ -1,10 +1,10 @@
-// Module ID: 8740
-// Function ID: 69119
+// Module ID: 8744
+// Function ID: 69131
 // Name: NameplateUser
 // Dependencies: []
 // Exports: default
 
-// Module 8740 (NameplateUser)
+// Module 8744 (NameplateUser)
 function NameplateUser(arg0) {
   let previewAvatarDecoration;
   let previewNameplate;
@@ -74,10 +74,10 @@ obj = { paddingHorizontal: importDefault(dependencyMap[5]).space.PX_16 };
 obj.memberListContainer = obj;
 const tmp2 = arg1(dependencyMap[3]);
 obj.memberListTitle = { paddingVertical: importDefault(dependencyMap[5]).space.PX_8 };
-const obj1 = { paddingVertical: importDefault(dependencyMap[5]).space.PX_8 };
-obj.memberListGradient = { color: importDefault(dependencyMap[5]).colors.MOBILE_ACTIONSHEET_BACKGROUND };
+const obj2 = { "Bool(true)": "center", "Bool(true)": null, "Bool(true)": 4, "Bool(true)": 4, "Bool(true)": "rgba(0, 0, 0, 0.75)", color: importDefault(dependencyMap[5]).colors.MOBILE_ACTIONSHEET_BACKGROUND };
+obj.memberListGradient = obj2;
 let closure_8 = obj.createStyles(obj);
-const obj2 = { color: importDefault(dependencyMap[5]).colors.MOBILE_ACTIONSHEET_BACKGROUND };
+const obj1 = { paddingVertical: importDefault(dependencyMap[5]).space.PX_8 };
 const result = arg1(dependencyMap[22]).fileFinishedImporting("modules/collectibles/nameplates/native/NameplateProductPreview.tsx");
 
 export default function NameplateProductPreview(product) {
@@ -93,7 +93,7 @@ export default function NameplateProductPreview(product) {
   const nameplateSampleUsers = obj2.getNameplateSampleUsers();
   let tmp5 = null;
   if (null != nameplateData) {
-    obj = { "Bool(false)": "<string:2084372481>", "Bool(false)": "<string:3565813761>", "Bool(false)": "<string:4064411649>", "Null": "<string:4060086859>", "Null": "<string:285213259>", style: tmp.container };
+    obj = { style: tmp.container };
     const intl = arg1(dependencyMap[8]).intl;
     obj = { a11y_text: nameplateData.imgAlt };
     obj.accessibilityLabel = intl.formatToPlainString(arg1(dependencyMap[8]).t.YJig7C, obj);
@@ -120,13 +120,13 @@ export default function NameplateProductPreview(product) {
     items[6] = callback(PlaceholderUser, obj8);
     obj1.children = items;
     const items3 = [callback2(View, obj1), , ];
-    const obj9 = { style: tmp.memberListGradient, start: { "Null": false, "Null": true }, end: { "Null": "75%", "Null": "100%" } };
+    const obj9 = { style: tmp.memberListGradient, start: { max: -536870861, guildId: -299892737 }, end: {} };
     const items4 = [tmp.memberListGradient.color, ];
     const _HermesInternal = HermesInternal;
     items4[1] = "" + tmp.memberListGradient.color + "00";
     obj9.colors = items4;
     items3[1] = callback(importDefault(dependencyMap[10]), obj9);
-    const obj10 = { style: tmp.memberListGradient, start: {}, end: { "Null": 131072.00314656927, "Null": 0.000000000000000000000000000000000000000000000000000000011294471302334573 } };
+    const obj10 = { style: tmp.memberListGradient, start: {}, end: {} };
     const _HermesInternal2 = HermesInternal;
     const tmp19 = importDefault(dependencyMap[10]);
     const items5 = ["" + tmp.memberListGradient.color + "00", tmp.memberListGradient.color];

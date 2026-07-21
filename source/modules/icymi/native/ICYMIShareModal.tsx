@@ -1,10 +1,10 @@
-// Module ID: 15096
-// Function ID: 113902
+// Module ID: 15103
+// Function ID: 113926
 // Name: Screenshot
 // Dependencies: []
 // Exports: GameShareModal, GuildEventShareModal
 
-// Module 15096 (Screenshot)
+// Module 15103 (Screenshot)
 function Screenshot(setUri) {
   setUri = setUri.setUri;
   const arg1 = setUri;

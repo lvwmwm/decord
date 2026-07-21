@@ -1,10 +1,10 @@
-// Module ID: 13526
-// Function ID: 102634
+// Module ID: 13533
+// Function ID: 102657
 // Name: items
 // Dependencies: []
 // Exports: default
 
-// Module 13526 (items)
+// Module 13533 (items)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 const View = arg1(dependencyMap[2]).View;
@@ -37,7 +37,7 @@ let obj9 = arg1(dependencyMap[9]);
 const obj7 = {};
 const tmp2 = arg1(dependencyMap[6]);
 obj7.container = { backgroundColor: importDefault(dependencyMap[10]).colors.CARD_BACKGROUND_DEFAULT, borderRadius: importDefault(dependencyMap[10]).radii.md };
-obj9 = { test: "Enable official messages", useMemo: "NEUTRAL_79", test: 1, padding: importDefault(dependencyMap[10]).space.PX_4, backgroundColor: importDefault(dependencyMap[10]).colors.BACKGROUND_MOD_STRONG, borderRadius: importDefault(dependencyMap[10]).radii.round };
+obj9 = { padding: importDefault(dependencyMap[10]).space.PX_4, backgroundColor: importDefault(dependencyMap[10]).colors.BACKGROUND_MOD_STRONG, borderRadius: importDefault(dependencyMap[10]).radii.round };
 obj7.avatarBackground = obj9;
 const obj8 = { backgroundColor: importDefault(dependencyMap[10]).colors.CARD_BACKGROUND_DEFAULT, borderRadius: importDefault(dependencyMap[10]).radii.md };
 obj7.good = { color: importDefault(dependencyMap[10]).colors.STATUS_POSITIVE };
@@ -51,11 +51,11 @@ obj7.suspended = { color: importDefault(dependencyMap[10]).colors.ICON_FEEDBACK_
 obj7.body = { alignItems: false, justifyContent: false, text: false };
 const obj13 = { color: importDefault(dependencyMap[10]).colors.ICON_FEEDBACK_CRITICAL };
 obj7.bodyText = { rowGap: importDefault(dependencyMap[10]).space.PX_8 };
-obj7.health = { display: "<string:3238003390>", FM: "<string:285213178>", addTag: "<string:19491393>", GRAVITY_CUSTOM_GUILD_SCORES: "<string:6058496>" };
-const obj15 = { addTag: "<string:1895908698>", GRAVITY_CUSTOM_GUILD_SCORES: "Array", APP_LAUNCHER_IN_TEXT: "DEFAULT_ROLE_COLOR", GiftingTier3LargeBadge: "<string:2635747584>", backgroundColor: importDefault(dependencyMap[10]).colors.BACKGROUND_BASE_LOWEST };
-obj7.line = obj15;
-obj7.subwayMarker = { position: "absolute" };
+obj7.health = {};
 const obj14 = { rowGap: importDefault(dependencyMap[10]).space.PX_8 };
+obj7.line = { backgroundColor: importDefault(dependencyMap[10]).colors.BACKGROUND_BASE_LOWEST };
+obj7.subwayMarker = { position: "absolute" };
+const obj15 = { backgroundColor: importDefault(dependencyMap[10]).colors.BACKGROUND_BASE_LOWEST };
 obj7.icon = { borderRadius: importDefault(dependencyMap[10]).radii.round, backgroundColor: importDefault(dependencyMap[10]).colors.BACKGROUND_SURFACE_HIGH };
 let closure_12 = obj9.createStyles(obj7);
 const obj16 = { borderRadius: importDefault(dependencyMap[10]).radii.round, backgroundColor: importDefault(dependencyMap[10]).colors.BACKGROUND_SURFACE_HIGH };
@@ -179,23 +179,21 @@ export default function SafetyHubAccountStanding() {
   const items4 = [callback2(View, obj), ];
   const obj2 = { style: tmp4.body };
   const obj3 = { style: tmp4.bodyText };
-  const obj4 = { INTEGRATION_CREATE: null, ConstraintReasonCode: null, style: { textAlign: "center" } };
+  const obj4 = { style: { textAlign: "center" } };
   const intl = arg1(closure_2[11]).intl;
   obj4.children = intl.format(title, {
     hook(children) {
       return callback(accountStanding(closure_2[21]).Text, { style, variant: "heading-lg/bold", children }, arg1);
     }
   });
-  const items5 = [callback2(arg1(closure_2[21]).Text, obj4), ];
-  const obj6 = { INTEGRATION_CREATE: "<string:3305963521>", ConstraintReasonCode: "<string:671547393>", style: { textAlign: "center" }, children: description };
-  items5[1] = callback2(arg1(closure_2[21]).Text, obj6);
+  const items5 = [callback2(arg1(closure_2[21]).Text, obj4), callback2(arg1(closure_2[21]).Text, { style: { textAlign: "center" }, children: description })];
   obj3.children = items5;
   const items6 = [callback3(View, obj3), ];
-  const obj7 = { style: items7 };
+  const obj6 = { style: items7 };
   const items7 = [tmp4.health, { height: first }];
   const items8 = [callback2(View, { style: tmp4.line }), memo1];
-  obj7.children = items8;
-  items6[1] = callback3(View, obj7);
+  obj6.children = items8;
+  items6[1] = callback3(View, obj6);
   obj2.children = items6;
   items4[1] = callback3(View, obj2);
   obj.children = items4;

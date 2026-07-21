@@ -1,10 +1,10 @@
-// Module ID: 8621
-// Function ID: 68313
+// Module ID: 8625
+// Function ID: 68325
 // Name: TrophyIcon
 // Dependencies: []
 // Exports: TrophyIcon
 
-// Module 8621 (TrophyIcon)
+// Module 8625 (TrophyIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/TrophyIcon.tsx");

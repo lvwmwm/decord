@@ -1,16 +1,16 @@
-// Module ID: 12124
-// Function ID: 93414
+// Module ID: 12131
+// Function ID: 93437
 // Dependencies: []
 
-// Module 12124
+// Module 12131
 let closure_3 = importDefault(dependencyMap[0]);
 const importAllResult = importAll(dependencyMap[1]);
 ({ StyleSheet: closure_4, View: closure_5 } = arg1(dependencyMap[2]));
 const tmp2 = arg1(dependencyMap[2]);
 ({ jsx: closure_6, jsxs: closure_7 } = arg1(dependencyMap[3]));
 let obj1 = arg1(dependencyMap[4]);
-let obj = { spoilerOverlayContainer: {} };
-obj = { <string:4217594861>: null, <string:1550029216>: null, <string:2824754102>: null, <string:3687197928>: null, gap: importDefault(dependencyMap[5]).space.PX_4 };
+let obj = { spoilerOverlayContainer: { "Null": "gr", "Null": null, "Null": "Group 3" } };
+obj = { "Null": "ADBE Vector Group", "Null": false, "Null": "gr", "Null": null, gap: importDefault(dependencyMap[5]).space.PX_4 };
 obj.obscureContentContainer = obj;
 obj1 = { paddingHorizontal: importDefault(dependencyMap[5]).space.PX_16, borderRadius: importDefault(dependencyMap[5]).radii.lg, height: importDefault(dependencyMap[5]).space.PX_32 };
 const tmp3 = arg1(dependencyMap[3]);
@@ -54,7 +54,7 @@ const memoResult = importAllResult.memo(function MediaModalSpoilerOverlay(source
     if (source.obscure) {
       const obj2 = { style: tmp.obscureContentContainer };
       const items2 = [callback2(arg1(dependencyMap[11]).ImageWarningIcon, {}), ];
-      const obj3 = { 9223372036854775807: "isArray", 9223372036854775807: "isArray", 9223372036854775807: "isArray" };
+      const obj3 = { alignItems: "isArray", justifyContent: "isArray", backgroundColor: "isArray" };
       const intl2 = arg1(dependencyMap[13]).intl;
       obj3.children = intl2.string(arg1(dependencyMap[13]).t.SpxcUR);
       tmp = callback2(arg1(dependencyMap[12]).Text, obj3);
@@ -63,7 +63,7 @@ const memoResult = importAllResult.memo(function MediaModalSpoilerOverlay(source
       let tmp20 = callback3(closure_5, obj2);
     } else {
       obj4 = { style: tmp.spoilerOverlayBackground };
-      const obj5 = { 9223372036854775807: "isArray", 9223372036854775807: "isArray", 9223372036854775807: "isArray" };
+      const obj5 = { alignItems: "isArray", justifyContent: "isArray", backgroundColor: "isArray" };
       const intl = arg1(dependencyMap[13]).intl;
       obj5.children = intl.string(arg1(dependencyMap[13]).t.F+x38C).toUpperCase();
       obj4.children = callback2(arg1(dependencyMap[12]).Text, obj5);

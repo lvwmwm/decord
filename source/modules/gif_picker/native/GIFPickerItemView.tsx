@@ -1,10 +1,10 @@
-// Module ID: 9579
-// Function ID: 74627
+// Module ID: 9584
+// Function ID: 74644
 // Name: GIFPickerItemView
 // Dependencies: []
 // Exports: default
 
-// Module 9579 (GIFPickerItemView)
+// Module 9584 (GIFPickerItemView)
 const importAllResult = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 const jsx = arg1(dependencyMap[2]).jsx;

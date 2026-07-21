@@ -1,9 +1,9 @@
-// Module ID: 16410
-// Function ID: 126745
+// Module ID: 16417
+// Function ID: 126776
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 
-// Module 16410 (_createForOfIteratorHelperLoose)
+// Module 16417 (_createForOfIteratorHelperLoose)
 let GO_LIVE_NOTIFY_FRIENDS_MIN_MEMBER_COUNT;
 let STREAM_NOTIFY_GUILD_MAX_SIZE;
 function _createForOfIteratorHelperLoose(@@iterator) {
@@ -94,6 +94,13 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
+function pruneShownFullStreamModals() {
+  const item = set.forEach((arg0) => {
+    if (!streamMarkedFull.isStreamMarkedFull(arg0)) {
+      set.delete(arg0);
+    }
+  });
+}
 function clearSpectatorReconnectionTimer(arg0) {
   if (null != closure_17[arg0]) {
     obj.stop();
@@ -128,15 +135,19 @@ function maybeAutowatchStream(channelId) {
         } else {
           let obj = arg1(dependencyMap[18]);
           const encodeStreamKeyResult = obj.encodeStreamKey(streamForUser);
-          let flag2 = encodeStreamKeyResult !== closure_22;
-          if (flag2) {
-            closure_22 = encodeStreamKeyResult;
-            obj = { noFocus: true };
-            arg1(dependencyMap[16]).watchStream(streamForUser, obj);
-            flag2 = true;
-            const obj2 = arg1(dependencyMap[16]);
+          let tmp6 = encodeStreamKeyResult !== closure_22;
+          if (tmp6) {
+            let flag2 = !authStore.isStreamMarkedFull(encodeStreamKeyResult);
+            if (flag2) {
+              closure_22 = encodeStreamKeyResult;
+              obj = { noFocus: true };
+              arg1(dependencyMap[16]).watchStream(streamForUser, obj);
+              flag2 = true;
+              const obj2 = arg1(dependencyMap[16]);
+            }
+            tmp6 = flag2;
           }
-          return flag2;
+          return tmp6;
         }
       }
     }
@@ -197,8 +208,9 @@ let closure_19 = 3 * importDefault(dependencyMap[17]).Millis.MINUTE;
 let closure_20 = 5 * importDefault(dependencyMap[17]).Millis.SECOND;
 let closure_21 = 12 * importDefault(dependencyMap[17]).Millis.SECOND;
 let closure_22 = null;
+const set = new Set();
 const obj = arg1(dependencyMap[15]);
-const tmp6 = (arg0) => {
+const tmp7 = (arg0) => {
   class BaseApplicationStreamingManager {
     constructor(arg0) {
       self = this;
@@ -207,7 +219,7 @@ const tmp6 = (arg0) => {
       items1 = [...items];
       obj = closure_6(BaseApplicationStreamingManager);
       tmp2 = closure_5;
-      if (closure_25()) {
+      if (closure_26()) {
         tmp4 = globalThis;
         _Reflect = Reflect;
         tmp5 = closure_6;
@@ -224,8 +236,8 @@ const tmp6 = (arg0) => {
         if (null != channel) {
           isGuildStageVoiceResult = channel.isGuildStageVoice();
         }
-        closure_30(streamKey, isGuildStageVoiceResult);
-        callback2(streamKey);
+        closure_32(streamKey, isGuildStageVoiceResult);
+        callback3(streamKey);
         if (!streamKey.allowMultiple) {
           const allActiveStreams = authStore.getAllActiveStreams();
           const item = allActiveStreams.forEach((ownerId) => {
@@ -248,7 +260,7 @@ const tmp6 = (arg0) => {
         ({ streamType, guildId } = channelId);
         const channel = store.getChannel(channelId);
         const obj2 = tmp2Result(closure_2[18]);
-        const tmp = closure_30;
+        const tmp = closure_32;
         let isGuildStageVoiceResult;
         const obj = { streamType, guildId, channelId, ownerId: id.getId() };
         if (null != channel) {
@@ -259,38 +271,51 @@ const tmp6 = (arg0) => {
       };
       tmp2Result.handleStreamCreate = (streamKey) => {
         streamKey = streamKey.streamKey;
-        callback3(streamKey);
+        callback4(streamKey);
+        callback2();
         const obj = tmp2Result(closure_2[18]);
         const memberCount = memberCount.getMemberCount(tmp2Result(closure_2[18]).decodeStreamKey(streamKey).guildId);
       };
       tmp2Result.handleStreamUpdate = (streamKey) => {
-        callback3(streamKey.streamKey);
+        callback4(streamKey.streamKey);
+        callback2();
       };
       tmp2Result.handleStreamDelete = (streamKey) => {
         streamKey = streamKey.streamKey;
-        callback3(streamKey);
+        callback4(streamKey);
         if (streamKey.reason === constants.STREAM_FULL) {
           let obj = tmp2Result(closure_2[21]);
           obj = { type: tmp2Result(closure_2[21]).AVError.STREAM_FULL };
           const merged = Object.assign(tmp2Result(closure_2[22]).getStreamErrorContext(streamKey));
           obj.reportAVError(obj);
-          const result = tmp2Result.platformShowStreamFull();
+          if (!set.has(streamKey)) {
+            set.add(streamKey);
+            const result = tmp2Result.platformShowStreamFull();
+          }
           const obj3 = tmp2Result(closure_2[22]);
         }
       };
       tmp2Result.handleStreamClose = (streamKey) => {
         streamKey = streamKey.streamKey;
-        callback2(streamKey);
         callback3(streamKey);
+        callback4(streamKey);
       };
       tmp2Result.handleVoiceChannelSelect = (channelId) => {
         channelId = channelId.channelId;
         if (null != channelId) {
           let closure_22 = null;
+          callback2();
           const allApplicationStreamsForChannel = authStore.getAllApplicationStreamsForChannel(channelId);
-          const first = allApplicationStreamsForChannel.filter((ownerId) => ownerId.ownerId !== id.getId())[0];
-          if (null != first) {
-            callback4(channelId, first.ownerId);
+          const found = allApplicationStreamsForChannel.find((ownerId) => {
+            let tmp = ownerId.ownerId !== id.getId();
+            if (tmp) {
+              tmp = !streamMarkedFull.isStreamMarkedFull(callback(closure_2[18]).encodeStreamKey(ownerId));
+              const obj = callback(closure_2[18]);
+            }
+            return tmp;
+          });
+          if (null != found) {
+            callback5(channelId, found.ownerId);
           }
         }
       };
@@ -304,6 +329,16 @@ const tmp6 = (arg0) => {
           ({ userId, channelId, guildId, selfStream } = arg0);
           const result = encodeStreamKeyResult.platformHandleVoiceStateUpdate(arg0);
           if (userId !== id.getId()) {
+            let tmp3 = !selfStream;
+            if (!tmp3) {
+              tmp3 = null == channelId;
+            }
+            if (tmp3) {
+              tmp3 = size.size > 0;
+            }
+            if (tmp3) {
+              callback();
+            }
             if (null != channelId) {
               const activeStreamForUser = authStore.getActiveStreamForUser(userId, guildId);
               if (null != activeStreamForUser) {
@@ -324,13 +359,16 @@ const tmp6 = (arg0) => {
                   }
                   if (selfStream) {
                     if (activeStreamForUser.state === constants.ENDED) {
-                      callback(encodeStreamKeyResult(closure_2[18]).encodeStreamKey(activeStreamForUser));
+                      callback2(encodeStreamKeyResult(closure_2[18]).encodeStreamKey(activeStreamForUser));
                       const streamForUser = authStore.getStreamForUser(userId, guildId);
                       if (null != streamForUser) {
-                        encodeStreamKeyResult(closure_2[16]).watchStream(streamForUser);
-                        const obj3 = encodeStreamKeyResult(closure_2[16]);
+                        if (!authStore.isStreamMarkedFull(obj2.encodeStreamKey(streamForUser))) {
+                          encodeStreamKeyResult(closure_2[16]).watchStream(streamForUser);
+                          const obj3 = encodeStreamKeyResult(closure_2[16]);
+                        }
+                        const obj2 = encodeStreamKeyResult(closure_2[18]);
                       }
-                      const obj2 = encodeStreamKeyResult(closure_2[18]);
+                      const obj5 = encodeStreamKeyResult(closure_2[18]);
                     }
                   }
                 }
@@ -349,7 +387,7 @@ const tmp6 = (arg0) => {
           channelId = currentUserActiveStream.channelId;
         }
         if (channelId === channelId) {
-          callback5(tmp2Result(closure_2[18]).encodeStreamKey(currentUserActiveStream), region);
+          callback6(tmp2Result(closure_2[18]).encodeStreamKey(currentUserActiveStream), region);
           const obj = tmp2Result(closure_2[18]);
         }
       };
@@ -363,11 +401,11 @@ const tmp6 = (arg0) => {
             do {
               let value = iter.value;
               if (currentUserActiveStream.channelId === value.id) {
-                let tmp4 = closure_29;
+                let tmp4 = closure_31;
                 let tmp5 = closure_0;
                 let tmp6 = closure_2;
                 let obj = closure_0(closure_2[18]);
-                let tmp7 = closure_29(obj.encodeStreamKey(currentUserActiveStream), value.rtcRegion);
+                let tmp7 = closure_31(obj.encodeStreamKey(currentUserActiveStream), value.rtcRegion);
               }
               iter2 = tmp3();
               iter = iter2;
@@ -375,7 +413,10 @@ const tmp6 = (arg0) => {
           }
         }
       };
-      tmp2Result.actions = { STREAM_WATCH: tmp2Result.handleStreamWatch, STREAM_START: tmp2Result.handleStreamStart, STREAM_CREATE: tmp2Result.handleStreamCreate, STREAM_UPDATE: tmp2Result.handleStreamUpdate, STREAM_DELETE: tmp2Result.handleStreamDelete, STREAM_CLOSE: tmp2Result.handleStreamClose, CALL_UPDATE: tmp2Result.handleCallUpdate, CHANNEL_UPDATES: tmp2Result.handleChannelUpdates, VOICE_CHANNEL_SELECT: tmp2Result.handleVoiceChannelSelect, VOICE_STATE_UPDATES: tmp2Result.handleVoiceStateUpdates };
+      tmp2Result.handleSessionReset = () => {
+        set.clear();
+      };
+      tmp2Result.actions = { STREAM_WATCH: tmp2Result.handleStreamWatch, STREAM_START: tmp2Result.handleStreamStart, STREAM_CREATE: tmp2Result.handleStreamCreate, STREAM_UPDATE: tmp2Result.handleStreamUpdate, STREAM_DELETE: tmp2Result.handleStreamDelete, STREAM_CLOSE: tmp2Result.handleStreamClose, CALL_UPDATE: tmp2Result.handleCallUpdate, CHANNEL_UPDATES: tmp2Result.handleChannelUpdates, VOICE_CHANNEL_SELECT: tmp2Result.handleVoiceChannelSelect, VOICE_STATE_UPDATES: tmp2Result.handleVoiceStateUpdates, CONNECTION_CLOSED: tmp2Result.handleSessionReset, LOGOUT: tmp2Result.handleSessionReset };
       return tmp2Result;
     }
   }
@@ -385,4 +426,4 @@ const tmp6 = (arg0) => {
 }(importDefault(dependencyMap[23]));
 const result = arg1(dependencyMap[24]).fileFinishedImporting("modules/go_live/ApplicationStreamingManager.tsx");
 
-export default tmp6;
+export default tmp7;

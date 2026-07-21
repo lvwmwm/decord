@@ -1,10 +1,10 @@
-// Module ID: 12109
-// Function ID: 93310
+// Module ID: 12116
+// Function ID: 93333
 // Name: useMediaItemSpoilerState
 // Dependencies: []
 // Exports: useMediaItemSpoilerState
 
-// Module 12109 (useMediaItemSpoilerState)
+// Module 12116 (useMediaItemSpoilerState)
 let closure_2 = importDefault(dependencyMap[0]);
 let closure_3 = importAll(dependencyMap[1]);
 let closure_4 = { code: "function useMediaItemSpoilerStateTsx1(){const{runOnJS,setSpoilerActive,hasSpoiler}=this.__closure;runOnJS(setSpoilerActive)(hasSpoiler);}" };

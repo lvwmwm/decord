@@ -1,10 +1,10 @@
-// Module ID: 10268
-// Function ID: 79348
+// Module ID: 10274
+// Function ID: 79367
 // Name: useChannelPresetSettings
 // Dependencies: []
 // Exports: updateChannelNotificationSetting, updateChannelPreset, updateChannelToGuildDefault, updateChannelUnreadSetting, useChannelPresetInheritance, useChannelPresetSettings
 
-// Module 10268 (useChannelPresetSettings)
+// Module 10274 (useChannelPresetSettings)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 let closure_5 = importDefault(dependencyMap[2]);
@@ -31,7 +31,7 @@ export const useChannelPresetInheritance = function useChannelPresetInheritance(
   const arg1 = channel;
   let obj = arg1(dependencyMap[6]);
   const items = [closure_5];
-  const stateFromStoresArray = obj.useStateFromStoresArray(items, () => arg0(closure_2[8]).filterOverrides(store.getChannelOverrides(arg0.guild_id), {}));
+  const stateFromStoresArray = obj.useStateFromStoresArray(items, () => arg0(closure_2[8]).filterOverrides(store.getChannelOverrides(arg0.guild_id), { activeOpacity: true, borderRadius: true, flexGrow: true }));
   const importDefault = stateFromStoresArray;
   const items1 = [closure_5, closure_4];
   const items2 = [, , ];
@@ -45,7 +45,7 @@ export const useChannelPresetInheritance = function useChannelPresetInheritance(
       if (stateFromStoresArray.includes(channel.id)) {
         const obj3 = self(closure_2[7]);
         const unreadSetting = store.resolveUnreadSetting(channel);
-        const items = [null, obj3.presetName(self(closure_2[7]).presetFromSettings(unreadSetting, store.resolvedMessageNotifications(channel)))];
+        const items = [true, obj3.presetName(self(closure_2[7]).presetFromSettings(unreadSetting, store.resolvedMessageNotifications(channel)))];
         let items1 = items;
         const obj4 = self(closure_2[7]);
       }
@@ -53,7 +53,7 @@ export const useChannelPresetInheritance = function useChannelPresetInheritance(
     }
     const obj = self(closure_2[7]);
     const guildUnreadSetting = store.getGuildUnreadSetting(self.guild_id);
-    items1 = [2.662, obj.presetName(self(closure_2[7]).presetFromSettings(guildUnreadSetting, store.getMessageNotifications(self.guild_id)))];
+    items1 = ["transform", obj.presetName(self(closure_2[7]).presetFromSettings(guildUnreadSetting, store.getMessageNotifications(self.guild_id)))];
   }, items2), 2);
   return obj;
 };

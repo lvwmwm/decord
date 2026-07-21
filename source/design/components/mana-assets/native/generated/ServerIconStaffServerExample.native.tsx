@@ -1,13 +1,14 @@
-// Module ID: 6483
-// Function ID: 50598
+// Module ID: 6485
+// Function ID: 50641
 // Name: ServerIconStaffServerExample
-// Dependencies: []
+// Dependencies: [33554457, 1946157056, 33, 5233]
 // Exports: ServerIconStaffServerExample
 
-// Module 6483 (ServerIconStaffServerExample)
+// Module 6485 (ServerIconStaffServerExample)
+import preload from "preload";
+
 const jsx = require(dependencyMap[0]).jsx;
-const _module = require(dependencyMap[3]);
-const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/ServerIconStaffServerExample.native.tsx");
+const result = preload.fileFinishedImporting("design/components/mana-assets/native/generated/ServerIconStaffServerExample.native.tsx");
 
 export const ServerIconStaffServerExample = function ServerIconStaffServerExample(width) {
   let accessibilityLabel;

@@ -1,16 +1,16 @@
-// Module ID: 10520
-// Function ID: 82180
+// Module ID: 10526
+// Function ID: 82203
 // Name: _isNativeReflectConstruct
-// Dependencies: [57, 31, 587, 10524, 2, 57, 31, 27, 10191, 653, 33, 4126]
+// Dependencies: [57, 31, 587, 10530, 2, 57, 31, 27, 10197, 653, 33, 4126]
 
-// Module 10520 (_isNativeReflectConstruct)
+// Module 10526 (_isNativeReflectConstruct)
 import _slicedToArray from "_slicedToArray";
 import module_31 from "module_31";
 import Storage from "Storage";
 import PictureInPicturePositions from "PictureInPicturePositions";
-import keys from "keys";
+import result2 from "result2";
 import { NativeModules } from "module_31";
-import get ActivityIndicator from "get ActivityIndicator";
+import keys from "keys";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 
 function _isNativeReflectConstruct() {
@@ -25,7 +25,7 @@ function _isNativeReflectConstruct() {
 function createStackEntry(prefersHidden) {
   return { prefersHidden: prefersHidden.prefersHidden, prefersDeferringSystemGestures: prefersHidden.prefersDeferringSystemGestures };
 }
-get ActivityIndicator = get_ActivityIndicator.create(() => ({ autoHideHomeIndicator: false }));
+keys = keys.create(() => ({ autoHideHomeIndicator: false }));
 const tmp4 = (Component) => {
   class HomeIndicator {
     constructor(arg0) {
@@ -150,10 +150,10 @@ const tmp4 = (Component) => {
   ];
   return callback(HomeIndicator, items, items1);
 }(require("_slicedToArray").Component);
-tmp4.defaultProps = {};
+tmp4.defaultProps = { 9223372036854775807: null, 0: null };
 tmp4._propsStack = [];
 tmp4._updateImmediate = null;
 const result = _createForOfIteratorHelperLoose.fileFinishedImporting("modules/voice_panel/native/HomeIndicator.tsx");
 
 export default tmp4;
-export const useHomeIndicatorStore = get_ActivityIndicator;
+export const useHomeIndicatorStore = keys;

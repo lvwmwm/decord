@@ -1,13 +1,10 @@
 // Module ID: 842
 // Function ID: 9355
 // Name: withActiveSpan
-// Dependencies: [6, 7, 804, 798, 810, 814, 57, 5, 6, 7, 77, 853, 854, 814, 800, 801, 851, 856, 861, 807, 804, 822, 863, 839]
+// Dependencies: []
 // Exports: continueTrace, startInactiveSpan, startSpan, startSpanManual, suppressTracing
 
 // Module 842 (withActiveSpan)
-import _classCallCheck from "_classCallCheck";
-import _defineProperties from "_defineProperties";
-
 function withActiveSpan(arg0, arg1) {
   const require = arg0;
   const dependencyMap = arg1;
@@ -127,7 +124,7 @@ function createChildOrRootSpan(arg0) {
     const sentryNonRecordingSpan = new SentryNonRecordingSpan();
     if (forceTransaction) {
       const _Object = Object;
-      let obj3 = { "Null": "r", "Null": "isArray", transaction: spanArguments.name };
+      let obj3 = { CHAT: null, RESPONSES: null, transaction: spanArguments.name };
       obj2 = require(dependencyMap[17]);
       const merged1 = Object.assign(obj3, obj2.getDynamicSamplingContextFromSpan(sentryNonRecordingSpan));
       obj3 = require(dependencyMap[17]);
@@ -197,7 +194,7 @@ function _startRootSpan(name, getPropagationContext) {
     sampleSpanResult = obj6.sampleSpan(options, obj1, propagationContext.sampleRand);
     const obj8 = require(dependencyMap[21]);
   }
-  const tmp8 = _classCallCheck(sampleSpanResult, 3);
+  const tmp8 = callback(sampleSpanResult, 3);
   const first = tmp8[0];
   const obj2 = {};
   let tmp13;
@@ -206,7 +203,7 @@ function _startRootSpan(name, getPropagationContext) {
       tmp13 = tmp10;
     }
   }
-  obj2.attributes = Object.assign(_defineProperties(_defineProperties({}, require(dependencyMap[23]).SEMANTIC_ATTRIBUTE_SENTRY_SOURCE, "custom"), require(dependencyMap[23]).SEMANTIC_ATTRIBUTE_SENTRY_SAMPLE_RATE, tmp13), spanAttributes);
+  obj2.attributes = Object.assign(callback2(callback2({}, require(dependencyMap[23]).SEMANTIC_ATTRIBUTE_SENTRY_SOURCE, "custom"), require(dependencyMap[23]).SEMANTIC_ATTRIBUTE_SENTRY_SAMPLE_RATE, tmp13), spanAttributes);
   obj2.sampled = first;
   const sentrySpan = new require(dependencyMap[22]).SentrySpan(Object.assign({}, name, obj2));
   if (tmp15) {
@@ -247,6 +244,8 @@ function getActiveSpanWrapper(arg0) {
   const require = arg0;
   return undefined !== arg0 ? (arg0) => callback(arg0, arg0) : (arg0) => arg0();
 }
+let closure_2 = require(dependencyMap[0]);
+let closure_3 = require(dependencyMap[1]);
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 let closure_4 = "__SENTRY_SUPPRESS_TRACING__";
 
@@ -260,7 +259,7 @@ export const continueTrace = function continueTrace(arg0, arg1) {
     return asyncContextStrategy.continueTrace(arg0, arg1);
   } else {
     ({ sentryTrace: closure_1, baggage } = arg0);
-    const _classCallCheck = baggage;
+    let closure_2 = baggage;
     const client = require(dependencyMap[2]).getClient();
     const obj4 = require(dependencyMap[2]);
     const result = require(dependencyMap[10]).baggageHeaderToDynamicSamplingContext(baggage);
@@ -293,7 +292,7 @@ export const startInactiveSpan = function startInactiveSpan(scope) {
   } else {
     let closure_1 = parseSentrySpanArguments(scope);
     ({ forceTransaction: closure_2, parentSpan } = scope);
-    const _defineProperties = parentSpan;
+    let closure_3 = parentSpan;
     if (scope.scope) {
       let fn = (arg0) => arg0(closure_1[2]).withScope(arg0.scope, arg0);
     } else {

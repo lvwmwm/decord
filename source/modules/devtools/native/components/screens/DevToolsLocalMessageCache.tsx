@@ -1,10 +1,10 @@
-// Module ID: 13387
-// Function ID: 101790
+// Module ID: 13394
+// Function ID: 101813
 // Name: CacheLogEntry
 // Dependencies: []
 // Exports: default
 
-// Module 13387 (CacheLogEntry)
+// Module 13394 (CacheLogEntry)
 function CacheLogEntry(entry) {
   entry = entry.entry;
   const before = entry.before;
@@ -83,7 +83,7 @@ export default function DevToolsLocalMessageCache() {
   items[3] = callback(require(dependencyMap[5]).TableRow, obj4);
   obj.children = items;
   const items1 = [callback2(require(dependencyMap[7]).TableRowGroup, obj), callback(require(dependencyMap[9]).Text, {}), ];
-  const obj5 = { width: "fa8fba4f08666ddc130e1c29719257b7", height: "PawPrintIcon" };
+  const obj5 = { "Bool(false)": "fa8fba4f08666ddc130e1c29719257b7", "Bool(false)": "PawPrintIcon" };
   const fetchLogs = importDefault(dependencyMap[8]).fetchLogs;
   const reversed = Array.from(fetchLogs.values()).reverse();
   obj5.children = reversed.map((entry) => callback(closure_8, { entry }, arg1));

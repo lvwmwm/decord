@@ -1,10 +1,10 @@
-// Module ID: 13797
-// Function ID: 104381
+// Module ID: 13804
+// Function ID: 104404
 // Name: resolveBountyRewardClaimErrorMessage
 // Dependencies: []
 // Exports: openBountyRewardClaimErrorToast
 
-// Module 13797 (resolveBountyRewardClaimErrorMessage)
+// Module 13804 (resolveBountyRewardClaimErrorMessage)
 function resolveBountyRewardClaimErrorMessage(code) {
   code = undefined;
   if (null != code) {

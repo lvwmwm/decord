@@ -1,8 +1,8 @@
-// Module ID: 15427
-// Function ID: 117743
+// Module ID: 15434
+// Function ID: 117767
 // Dependencies: []
 
-// Module 15427
+// Module 15434
 let Fonts;
 const importAllResult = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
@@ -91,7 +91,7 @@ const memoResult = importAllResult.memo(function MessageRequestPreview(channel) 
       }
       if (null != content) {
         if ("" !== message.content) {
-          const content1 = importDefault(dependencyMap[12])(message, { paddingVertical: null, justifyContent: null }).content;
+          const content1 = importDefault(dependencyMap[12])(message, { <string:2737435628>: null, <string:173132897>: null }).content;
           const _Array = Array;
           if (!Array.isArray(content1)) {
             flag = true;

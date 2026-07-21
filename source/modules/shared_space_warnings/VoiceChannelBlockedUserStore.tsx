@@ -1,9 +1,9 @@
-// Module ID: 12529
-// Function ID: 96293
+// Module ID: 12536
+// Function ID: 96316
 // Name: _isNativeReflectConstruct
-// Dependencies: [42795008, 33226752, 131072, 4034461696, 4076863513, 4127195184, 2617245744, 2, 4177526800, 2382364720, 3758096391]
+// Dependencies: [42795008, 33226752, 131072, 4135124992, 4194304025, 4244635696, 2617245744, 2, 16, 2382364721, 3758096391]
 
-// Module 12529 (_isNativeReflectConstruct)
+// Module 12536 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -143,7 +143,7 @@ let tmp3 = (Store) => {
   };
   items[2] = obj;
   return callback(VoiceChannelBlockedUserStore, items);
-}(importDefault(dependencyMap[8]).Store);
+}(require("_assertThisInitialized").Store);
 tmp3 = new tmp3(importDefault(dependencyMap[9]), {
   CONNECTION_OPEN: init,
   LOGOUT: init,

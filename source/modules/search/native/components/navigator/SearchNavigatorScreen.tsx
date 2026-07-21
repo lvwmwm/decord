@@ -1,10 +1,10 @@
-// Module ID: 15414
-// Function ID: 117654
+// Module ID: 15421
+// Function ID: 117678
 // Name: SearchNavigatorScreen
 // Dependencies: []
 // Exports: default
 
-// Module 15414 (SearchNavigatorScreen)
+// Module 15421 (SearchNavigatorScreen)
 let closure_3 = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 ({ jsx: closure_5, jsxs: closure_6, Fragment: closure_7 } = arg1(dependencyMap[2]));

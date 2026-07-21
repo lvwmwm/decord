@@ -59,17 +59,17 @@ obj = {
     }
   }
 };
-obj.era = obj.default({ values: { narrow: [false, null], abbreviated: [], wide: [null, null] }, defaultWidth: "wide" });
+obj.era = obj.default({ values: { narrow: [], abbreviated: [null, null], wide: ["a", "isArray"] }, defaultWidth: "wide" });
 obj.quarter = obj.default({
-  values: { narrow: [false, false, false, false], abbreviated: [null, null, null, null], wide: [] },
+  values: { narrow: [], abbreviated: [], wide: [null, null, null, null] },
   defaultWidth: "wide",
   argumentCallback(arg0) {
     return arg0 - 1;
   }
 });
-obj.month = obj.default({ values: { abbreviated: ["good", "goodnight", "night", "sleep", "sleeping", "sleepy", "tired", "zzz", "<string:4109697026>", "<string:4125687810>", "<string:4134207490>", "<string:2555838466>"], wide: ["onShare", -1660470783, 402798335, -1721548542, -279904254, -690077085, 1210843137, -2075066367, 69005644, 50475264, 52768512, 71813888] }, defaultWidth: "wide" });
-obj.day = obj.default({ values: { narrow: [], short: [], abbreviated: ["MEDIA_ENGINE_PERMISSION", "SESSIONS_REPLACE", "STREAM_CREATE", "STREAM_SERVER_UPDATE", "STREAM_DELETE", "STREAM_UPDATE", 623771649], wide: [] }, defaultWidth: "wide" });
-obj.dayPeriod = obj.default({ values: { wide: { <string:13107200>: null, <string:13303808>: null, <string:13369344>: null, <string:13631488>: null, <string:13893632>: null, <string:14024704>: null, <string:14286848>: null, <string:14548992>: null } }, defaultWidth: "wide" });
+obj.month = obj.default({ values: { abbreviated: ["isArray", "ind", "Object", "r", "isArray", "colors", "flexDirection", "a", "isArray", "accessibilityRole", "useCallback", "__closure"], wide: [null, null, true, true, null, null, "SET_LOCATION_METADATA", -1660469503, 503462911, 487803906, 38404100, 625475587] }, defaultWidth: "wide" });
+obj.day = obj.default({ values: { narrow: [], short: [], abbreviated: [], wide: ["<string:80413184>", "<string:80412160>", "<string:80411392>", "<string:59666432>", "<string:80413184>", "<string:80411392>", "<string:1965115136>"] }, defaultWidth: "wide" });
+obj.dayPeriod = obj.default({ values: { wide: {} }, defaultWidth: "wide" });
 
 export default obj;
 export default exports.default;

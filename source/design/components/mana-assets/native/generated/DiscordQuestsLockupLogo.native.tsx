@@ -1,10 +1,10 @@
-// Module ID: 5999
-// Function ID: 49872
+// Module ID: 6001
+// Function ID: 49915
 // Name: DiscordQuestsLockupLogo
 // Dependencies: []
 // Exports: DiscordQuestsLockupLogo
 
-// Module 5999 (DiscordQuestsLockupLogo)
+// Module 6001 (DiscordQuestsLockupLogo)
 const Image = require(dependencyMap[0]).Image;
 const jsx = require(dependencyMap[1]).jsx;
 const _module = require(dependencyMap[5]);

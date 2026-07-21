@@ -1,9 +1,9 @@
-// Module ID: 15679
-// Function ID: 119790
+// Module ID: 15686
+// Function ID: 119814
 // Name: SelfStreamCard
 // Dependencies: []
 
-// Module 15679 (SelfStreamCard)
+// Module 15686 (SelfStreamCard)
 function SelfStreamCard(sharedCoords) {
   sharedCoords = sharedCoords.sharedCoords;
   const arg1 = sharedCoords;
@@ -22,7 +22,7 @@ function SelfStreamCard(sharedCoords) {
   }, items);
   let obj = arg1(dependencyMap[14]);
   const fn = function l() {
-    const obj = { standardDeviation: 52881784.83212474, color: 0.0000000000000000000000000000000000000000000000000000000000000000000000011319598867188059 };
+    const obj = { "Null": 52881784.83212474, "Null": 0.0000000000000000000000000000000000000000000000000000000000000000000000011319598867188059 };
     let num = 16;
     if (isFocused) {
       num = 0;
@@ -63,7 +63,7 @@ function SelfStreamCard(sharedCoords) {
     const intl2 = arg1(dependencyMap[22]).intl;
     obj3.children = intl2.string(arg1(dependencyMap[22]).t.dKeLGt);
     const items2 = [callback2(arg1(dependencyMap[15]).Text, obj3), ];
-    const obj4 = { st: 40304642, borderWidth: 2102460417, onPress: callback };
+    const obj4 = { key: -2036531198, onCloseCallback: -716111871, onPress: callback };
     const intl3 = arg1(dependencyMap[22]).intl;
     obj4.text = intl3.string(arg1(dependencyMap[22]).t.CpkXwZ);
     items2[1] = callback2(arg1(dependencyMap[23]).Button, obj4);
@@ -304,7 +304,7 @@ function AnimatedWrapper(cleanUp) {
   let obj1 = arg1(dependencyMap[50]);
   let tmp5 = tmp4;
   if (!obj1.isStableParticipantWithUser(tmp4)) {
-    tmp5 = closure_45;
+    tmp5 = obj10;
   }
   const isSelf = tmp5.isSelf;
   obj = isSelf;
@@ -504,7 +504,7 @@ function AnimatedWrapper(cleanUp) {
   const obj7 = arg1(dependencyMap[14]);
   const token = arg1(dependencyMap[43]).useToken(importDefault(dependencyMap[18]).modules.mobile.VOICE_TILE_BORDER_RADIUS);
   closure_32 = token;
-  const obj9 = arg1(dependencyMap[43]);
+  const obj10 = arg1(dependencyMap[14]);
   const fn2 = function b() {
     let height;
     let width;
@@ -680,7 +680,7 @@ function AnimatedWrapper(cleanUp) {
   fn2.__closure = obj2;
   fn2.__workletHash = 9934021851336;
   fn2.__initData = closure_51;
-  const animatedStyle = arg1(dependencyMap[14]).useAnimatedStyle(fn2);
+  const animatedStyle = obj10.useAnimatedStyle(fn2);
   const obj3 = {
     gesturesEnabled: tmp9.cardGestureEnabled,
     onSingleTap() {
@@ -693,7 +693,7 @@ function AnimatedWrapper(cleanUp) {
       }
     }
   };
-  const obj10 = arg1(dependencyMap[14]);
+  const obj9 = arg1(dependencyMap[43]);
   const tmp13 = importDefault(dependencyMap[53]);
   if (obj13.isStableActivityParticipant(tmp4)) {
     const fn3 = () => {
@@ -741,7 +741,7 @@ function AnimatedWrapper(cleanUp) {
         gestureActive = 0 === value.y;
       }
       if (!gestureActive) {
-        const result = store.set({});
+        const result = store.set({ users: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000033995391321045464, max: 139264.00004577637, guildId: -14480300402108619000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 });
       }
     };
     return obj;
@@ -788,13 +788,13 @@ const importDefaultResult = importDefault(dependencyMap[14]);
 obj.positionWrapper = { backgroundColor: importDefault(dependencyMap[18]).colors.BLACK };
 const obj1 = { backgroundColor: importDefault(dependencyMap[18]).colors.BLACK };
 obj.userRoundedCard = { backgroundColor: importDefault(dependencyMap[18]).unsafe_rawColors.PRIMARY_800 };
-obj3 = { text: true, onPress: "/assets/.cache/intl/ZGVzaWdu", variant: null, MODE_NUMBER: "5489cb913a06f6a88877637630ce77b7", MODE_ALPHA_NUM: "pl.messages.5489cb913a06f6a88877637630ce77b7.compiled.messages", backgroundColor: importDefault(dependencyMap[18]).colors.VOICE_VIDEO_VIDEO_TILE_BACKGROUND };
+obj3 = { backgroundColor: importDefault(dependencyMap[18]).colors.VOICE_VIDEO_VIDEO_TILE_BACKGROUND };
 obj.nonUserRoundedCard = obj3;
 const obj4 = {};
 const merged1 = Object.assign(StyleSheet.absoluteFillObject);
 obj4["backgroundColor"] = "black";
 obj.blackBackground = obj4;
-obj.selfStreamFocusedSubtitle = { 9223372036854775807: "Array", -9223372036854775808: "isArray", 0: "construct" };
+obj.selfStreamFocusedSubtitle = { <string:4221627596>: "Array", <string:1359674961>: "isArray", <string:4183987831>: "construct" };
 const obj2 = { backgroundColor: importDefault(dependencyMap[18]).unsafe_rawColors.PRIMARY_800 };
 obj.avatarImageMaskStyles = { borderRadius: importDefault(dependencyMap[18]).radii.round };
 const obj5 = { borderRadius: importDefault(dependencyMap[18]).radii.round };
@@ -1068,7 +1068,7 @@ let closure_36 = importAllResult.memo(function AnimatedUserCardInner(isRinging) 
   const items1 = [tmp.userRoundedCard, animatedStyle];
   let tmp22 = null;
   if (null != videoTileGradientColors) {
-    obj2 = { colors: videoTileGradientColors, start: { "Null": false, "Null": true }, end: { "Null": 131072.00314656927, "Null": 0.000000000000000000000000000000000000000000000000000000011294471302334573 }, style: StyleSheet.absoluteFill, pointerEvents: "none" };
+    obj2 = { colors: videoTileGradientColors, start: { max: -536870861, guildId: -299892737 }, end: {}, style: StyleSheet.absoluteFill, pointerEvents: "none" };
     tmp22 = callback2(importDefault(dependencyMap[41]), obj2);
   }
   const items2 = [tmp22, ];
@@ -1136,7 +1136,7 @@ let closure_41 = { code: "function VoicePanelCardTsx9(){const{focused}=this.__cl
 let closure_42 = { code: "function VoicePanelCardTsx10(focusedId,previous){const{runOnJS,handleFocusedParticipantChange}=this.__closure;if(focusedId===previous)return;runOnJS(handleFocusedParticipantChange)(focusedId);}" };
 let closure_43 = { code: "function VoicePanelCardTsx11(){const{mode,focused,sharedTransitionState}=this.__closure;return{mode:mode.get(),focused:focused.get(),transitionState:sharedTransitionState.get()};}" };
 let closure_44 = { code: "function VoicePanelCardTsx12(props,previous){const{cheapWorkletShallowEqual,VoicePanelModes,TransitionStates,sharedVisible,isScrollVisible,runOnJS,cleanUp,id}=this.__closure;if(cheapWorkletShallowEqual(props,previous!==null&&previous!==void 0?previous:undefined))return;const{mode:mode,focused:focused,transitionState:transitionState}=props;const isPIPMode=mode===VoicePanelModes.PIP;const manuallyFocusedId=focused===null||focused===void 0?void 0:focused.id;if(previous==null&&transitionState!==TransitionStates.YEETED){sharedVisible.set(1);}else if(transitionState===TransitionStates.YEETED){if(sharedVisible.get()===1&&isScrollVisible.get()){sharedVisible.set(0);}else{runOnJS(cleanUp)();}}else if((previous===null||previous===void 0?void 0:previous.transitionState)===TransitionStates.YEETED){sharedVisible.set(1);}else if(!isPIPMode){if(manuallyFocusedId==null){sharedVisible.set(1);}else{if(manuallyFocusedId!==id){sharedVisible.set(0);}else{sharedVisible.set(1);}}}}" };
-let closure_45 = { user: { id: undefined } };
+const obj10 = { <string:1996706820>: null, <string:114259717>: null, user: { id: undefined } };
 let closure_46 = { code: "function layoutTransitionFunction_VoicePanelCardTsx13(values,physics,disableAnimation=false){const{withSpring}=this.__closure;return{animations:{originX:withSpring(values.targetOriginX,physics,!disableAnimation?'animate-always':'animate-never'),originY:withSpring(values.targetOriginY,physics,!disableAnimation?'animate-always':'animate-never'),width:withSpring(values.targetWidth,physics,!disableAnimation?'animate-always':'animate-never'),height:withSpring(values.targetHeight,physics,!disableAnimation?'animate-always':'animate-never')},initialValues:{originX:values.currentOriginX,originY:values.currentOriginY,width:values.currentWidth,height:values.currentHeight}};}" };
 let closure_47 = () => {
   function layoutTransitionFunction(originX, closure_8) {
@@ -1217,7 +1217,7 @@ const memoResult = importAllResult.memo(function VoicePanelCard(cleanUp) {
   let obj = arg1(dependencyMap[50]);
   let tmp3 = tmp2;
   if (!obj.isStableParticipantWithUser(tmp2)) {
-    tmp3 = closure_45;
+    tmp3 = obj10;
   }
   const isSelf = tmp3.isSelf;
   const id2 = tmp3.user.id;

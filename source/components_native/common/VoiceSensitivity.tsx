@@ -1,10 +1,10 @@
-// Module ID: 10697
-// Function ID: 83297
+// Module ID: 10703
+// Function ID: 83320
 // Name: VoiceSensitivity
 // Dependencies: []
 // Exports: default
 
-// Module 10697 (VoiceSensitivity)
+// Module 10703 (VoiceSensitivity)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 let closure_5 = importAll(dependencyMap[2]);
@@ -16,8 +16,8 @@ const AppStates = arg1(dependencyMap[7]).AppStates;
 const NativePermissionTypes = arg1(dependencyMap[8]).NativePermissionTypes;
 ({ jsx: closure_12, jsxs: closure_13 } = arg1(dependencyMap[9]));
 let obj = arg1(dependencyMap[10]);
-obj = { sensitivity: { 1661939810: "help_article", 1370398947: "message" }, sensitivityBar: { "Bool(false)": "ShieldLockIcon", "Bool(false)": "png", "Bool(false)": 230, "Bool(false)": 160, 9223372036854775807: null, 9223372036854775807: "text-sm/normal" } };
-obj = { "Bool(true)": "MicrophoneIcon", "Bool(true)": "png", "Bool(true)": true, "Bool(true)": "/assets/images/native/icons/voice_calls/light_theme", "Bool(true)": 24, "Bool(true)": 24, "Bool(true)": null, backgroundColor: importDefault(dependencyMap[11]).unsafe_rawColors.WHITE };
+obj = { sensitivity: { a: "help_article", k: "message" }, sensitivityBar: {} };
+obj = { "Null": "MicrophoneIcon", "Null": "png", "Null": true, "Null": "/assets/images/native/icons/voice_calls/light_theme", "Null": 24, "Null": 24, "Null": null, backgroundColor: importDefault(dependencyMap[11]).unsafe_rawColors.WHITE };
 obj.sensitivityFill = obj;
 obj.sensitivityCommon = {};
 const tmp2 = arg1(dependencyMap[9]);
@@ -148,7 +148,7 @@ export default function VoiceSensitivity(auto) {
   }, items4);
   if (auto) {
     obj = {};
-    obj = { "Bool(false)": "png", "Bool(false)": true, "Bool(false)": "/assets/images/native/icons/voice_calls/light_theme", "Bool(false)": 24, "Bool(false)": 24, height: null };
+    obj = { 1660657764: "png", -413026633: true, 616083028: "/assets/images/native/icons/voice_calls/light_theme", -1427883096: 24, -1196534473: 24, -465852380: null };
     const intl = arg1(dependencyMap[18]).intl;
     obj.aria-label = intl.string(arg1(dependencyMap[18]).t.yZcOjo);
     let num5 = 0;
@@ -216,12 +216,12 @@ export default function VoiceSensitivity(auto) {
     obj10.style = items11;
     items10[1] = callback(View, obj10);
     const obj12 = {
-      marginEnd: false,
-      marginHorizontal: false,
-      marginLeft: false,
-      marginRight: false,
-      marginStart: false,
-      marginTop: false,
+      "Bool(true)": false,
+      "Bool(true)": false,
+      "Bool(true)": false,
+      "Bool(true)": false,
+      "Bool(true)": false,
+      "Bool(true)": false,
       style: tmp.sensitivitySlider,
       value: sum,
       onValueChange: callback1,

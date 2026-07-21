@@ -1,9 +1,9 @@
-// Module ID: 15618
-// Function ID: 119291
+// Module ID: 15625
+// Function ID: 119315
 // Name: useAnimation
 // Dependencies: []
 
-// Module 15618 (useAnimation)
+// Module 15625 (useAnimation)
 function useAnimation(animationConfig) {
   const arg1 = animationConfig;
   let obj = arg1(dependencyMap[5]);
@@ -20,13 +20,13 @@ function useAnimation(animationConfig) {
     let obj1 = self(closure_2[10]);
     const tmp2 = playing.get() > 0;
     const playing2 = self.sharedValues.playing;
-    const items = [24573934974154670000000000000000000000000000000000000000000000000000000000000, self.scaleFactors.playing];
+    const items = [15189782894321462000000000000000000000000000000000000000000000000000000000000000000, self.scaleFactors.playing];
     const obj3 = self(closure_2[5]);
-    const withDelayResult = obj.withDelay(num, obj1.withSpring(self(closure_2[5]).interpolate(playing2.get(), [null, null], items), closure_9));
+    const withDelayResult = obj.withDelay(num, obj1.withSpring(self(closure_2[5]).interpolate(playing2.get(), ["Text", "lc"], items), closure_9));
     const obj4 = self(closure_2[10]);
     const pressed2 = self.sharedValues.pressed;
-    const items1 = [24573934974154670000000000000000000000000000000000000000000000000000000000000, self.scaleFactors.pressed];
-    const withSpringResult = obj4.withSpring(self(closure_2[5]).interpolate(pressed2.get(), [null, null], items1), closure_9);
+    const items1 = [15189782894321462000000000000000000000000000000000000000000000000000000000000000000, self.scaleFactors.pressed];
+    const withSpringResult = obj4.withSpring(self(closure_2[5]).interpolate(pressed2.get(), ["Text", "lc"], items1), closure_9);
     obj = {};
     obj = {};
     let tmp5 = withSpringResult;
@@ -51,7 +51,7 @@ function useAnimation(animationConfig) {
       num2 = prop;
     }
     const items3 = [0.229, num2];
-    obj1.rotate = "" + self(closure_2[5]).interpolate(value, [null, null], items3) + "deg";
+    obj1.rotate = "" + self(closure_2[5]).interpolate(value, ["Text", "lc"], items3) + "deg";
     items2[1] = obj1;
     obj.transform = items2;
     return obj;
@@ -68,10 +68,10 @@ function SoundButtonEmoji(arg0) {
   ({ sound, sharedValues } = arg0);
   const tmp = callback2();
   let obj = { style: items };
-  const items = [tmp.emojiWrapper, useAnimation({ sharedValues, scaleFactors: { paddingTop: 24, paddingBottom: 24 } })];
-  obj = { style: useAnimation({ sharedValues, scaleFactors: { paddingTop: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000020875555400843686, paddingBottom: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011750126578705576 }, playingAnimationDelay: 100, pressedRotationDegrees: -15 }) };
+  const items = [tmp.emojiWrapper, useAnimation({ sharedValues, scaleFactors: { 542245954: 24, 1687163841: 24 } })];
+  obj = { style: useAnimation({ sharedValues, scaleFactors: { 542245954: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000006350390911266704, 1687163841: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011750126578705576 }, playingAnimationDelay: 100, pressedRotationDegrees: -15 }) };
   obj = { fastImageStyle: tmp.emoji, textEmojiStyle: tmp.emoji };
-  const tmp2 = useAnimation({ sharedValues, scaleFactors: { paddingTop: 24, paddingBottom: 24 } });
+  const tmp2 = useAnimation({ sharedValues, scaleFactors: { 542245954: 24, 1687163841: 24 } });
   const tmp3 = closure_6;
   const tmp4 = closure_8;
   const tmp5 = closure_6;
@@ -97,13 +97,13 @@ let closure_8 = importDefault(dependencyMap[5]).createAnimatedComponent(View);
 let closure_9 = {};
 let obj2 = arg1(dependencyMap[6]);
 let obj = {};
-obj = { 9223372036854775807: true, 0: "/assets/images/native/icons", 9223372036854775807: 24, 9223372036854775807: 24, 0: null, 9223372036854775807: "e3c5c9128e3b6990fd3bdb33f2f889a0", 9223372036854775807: "ic_gear", -9223372036854775808: "png", 9223372036854775807: true, height: arg1(dependencyMap[3]).SOUND_BUTTON_HEIGHT, backgroundColor: importDefault(dependencyMap[7]).colors.CARD_BACKGROUND_DEFAULT, borderRadius: importDefault(dependencyMap[7]).radii.lg, borderColor: importDefault(dependencyMap[7]).colors.BORDER_MUTED };
+obj = { "Null": true, "Null": "/assets/images/native/icons", "Null": 24, "Null": 24, "Null": null, "Null": "e3c5c9128e3b6990fd3bdb33f2f889a0", textAlign: "ic_gear", paddingTop: "png", paddingBottom: true, height: arg1(dependencyMap[3]).SOUND_BUTTON_HEIGHT, backgroundColor: importDefault(dependencyMap[7]).colors.CARD_BACKGROUND_DEFAULT, borderRadius: importDefault(dependencyMap[7]).radii.lg, borderColor: importDefault(dependencyMap[7]).colors.BORDER_MUTED };
 const merged = Object.assign(importDefault(dependencyMap[7]).shadows.SHADOW_LOW);
 obj.button = obj;
 const importDefaultResult = importDefault(dependencyMap[5]);
 obj.buttonPressed = { backgroundColor: importDefault(dependencyMap[7]).colors.CARD_PRIMARY_PRESSED_BG };
 obj.buttonDisabled = { opacity: 0.5 };
-obj2 = { position: false, opacity: false, borderColor: importDefault(dependencyMap[7]).colors.STATUS_SPEAKING, backgroundColor: importDefault(dependencyMap[7]).colors.CARD_SECONDARY_BG };
+obj2 = { 1548853499: false, 1549951490: false, borderColor: importDefault(dependencyMap[7]).colors.STATUS_SPEAKING, backgroundColor: importDefault(dependencyMap[7]).colors.CARD_SECONDARY_BG };
 obj.buttonPlaying = obj2;
 const obj3 = {};
 const obj1 = { backgroundColor: importDefault(dependencyMap[7]).colors.CARD_PRIMARY_PRESSED_BG };
@@ -117,7 +117,7 @@ const obj9 = arg1(dependencyMap[8]);
 obj.emojiWrapper = { backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_MOD_MUTED, borderRadius: importDefault(dependencyMap[7]).radii.round };
 obj.text = { marginHorizontal: 8 };
 obj.textPlaying = { marginHorizontal: 6 };
-const obj5 = { value: "<string:2102460418>", "Bool(false)": "<string:541135204>", "Bool(false)": "<string:1912603217>", "Bool(false)": "toString", "Bool(false)": "toString", top: importDefault(dependencyMap[7]).space.PX_12, end: importDefault(dependencyMap[7]).space.PX_12, tintColor: importDefault(dependencyMap[7]).colors.WHITE };
+const obj5 = { "Null": -716111870, "Null": 1027674551, "Null": 1912603217, "Null": 24, "Null": 24, top: importDefault(dependencyMap[7]).space.PX_12, end: importDefault(dependencyMap[7]).space.PX_12, tintColor: importDefault(dependencyMap[7]).colors.WHITE };
 obj.lock = obj5;
 let closure_10 = obj2.createStyles(obj);
 const obj4 = { backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_MOD_MUTED, borderRadius: importDefault(dependencyMap[7]).radii.round };
@@ -247,7 +247,7 @@ const memoResult = importAllResult.memo(function SoundButtonComponent(sound) {
     tmp = callback(SoundButtonEmoji, obj2);
   }
   const items4 = [tmp, ];
-  const obj3 = { -1746280843: 29503, -111022282: 2424832, 1639192657: 262144 };
+  const obj3 = { "Bool(false)": 29503, "Bool(false)": 2424832, "Bool(false)": 262144 };
   const items5 = [tmp2.text, ];
   let textPlaying = null;
   if (isPlayingSound) {

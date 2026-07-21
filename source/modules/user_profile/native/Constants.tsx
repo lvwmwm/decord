@@ -1,9 +1,9 @@
-// Module ID: 5508
-// Function ID: 46873
+// Module ID: 5510
+// Function ID: 46915
 // Name: ARBITRARY_LARGE_OFFSET
 // Dependencies: []
 
-// Module 5508 (ARBITRARY_LARGE_OFFSET)
+// Module 5510 (ARBITRARY_LARGE_OFFSET)
 const XXLARGE = require(dependencyMap[0]).AvatarSizes.XXLARGE;
 const tmp2 = require(dependencyMap[0]).AVATAR_SIZE_MAP[XXLARGE];
 const sum = tmp2 + 12;

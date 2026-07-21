@@ -1,9 +1,9 @@
-// Module ID: 5886
-// Function ID: 49703
+// Module ID: 5888
+// Function ID: 49746
 // Name: metadata
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 5886 (metadata)
+// Module 5888 (metadata)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/BadgePacksAbstractUI-2x.png.js");
 

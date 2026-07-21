@@ -1,14 +1,11 @@
-// Module ID: 7647
-// Function ID: 61179
+// Module ID: 7661
+// Function ID: 61236
 // Name: checkIsCallActive
-// Dependencies: [0, 0, 0, 0, 0]
+// Dependencies: [4117954560, 4076863517, 33554446, 1996488704, 6]
 // Exports: default, useIsCallActiveNullable
 
-// Module 7647 (checkIsCallActive)
-import closure_2 from "result";
-import closure_3 from "result";
-import { ParticipantTypes } from "result";
-import result from "result";
+// Module 7661 (checkIsCallActive)
+import _classCallCheck from "_classCallCheck";
 
 function checkIsCallActive(channelId, id) {
   let isCallActiveResult = callActive.isCallActive(channelId, id);
@@ -18,7 +15,10 @@ function checkIsCallActive(channelId, id) {
   }
   return isCallActiveResult;
 }
-result = result.fileFinishedImporting("modules/calls/mobile/useIsCallActive.tsx");
+let closure_2 = importDefault(dependencyMap[0]);
+let closure_3 = importDefault(dependencyMap[1]);
+const ParticipantTypes = arg1(dependencyMap[2]).ParticipantTypes;
+const result = _classCallCheck.fileFinishedImporting("modules/calls/mobile/useIsCallActive.tsx");
 
 export default function useIsCallActive(arg0, arg1) {
   arg1 = arg0;

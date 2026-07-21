@@ -1,11 +1,9 @@
-// Module ID: 15244
-// Function ID: 115088
+// Module ID: 15251
+// Function ID: 115112
 // Name: SearchableMembersScreen
-// Dependencies: [1308622892, 2197815335, 2701131811, 553648163, 1325400064, 905969703, 2, 1308622906, 1660944442, 3154116667, 16777220, 1711276047, 1291845691, 2332033063, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+// Dependencies: []
 
-// Module 15244 (SearchableMembersScreen)
-import keys from "keys";
-
+// Module 15251 (SearchableMembersScreen)
 function SearchableMembersScreen(searchContext) {
   searchContext = searchContext.searchContext;
   const arg1 = searchContext;
@@ -35,7 +33,7 @@ function SearchableMembersScreen(searchContext) {
   }(searchContext);
   const View = tmp3;
   let obj2 = arg1(searchContextId[14]);
-  const items1 = [keys];
+  const items1 = [closure_10];
   const stateFromStores1 = obj2.useStateFromStores(items1, () => stateFromStores4.getChannelId());
   const EVERYONE_CHANNEL_ID = stateFromStores1;
   const tmp = callback();
@@ -102,7 +100,7 @@ function SearchableMembersScreen(searchContext) {
   const items7 = [closure_12];
   const items8 = [searchContext];
   const stateFromStores4 = arg1(searchContextId[14]).useStateFromStores(items7, () => initialSearchQuery.isInitialSearchQuery(searchContext), items8);
-  keys = stateFromStores4;
+  closure_10 = stateFromStores4;
   const obj8 = arg1(searchContextId[14]);
   const items9 = [closure_11];
   const stateFromStores5 = arg1(searchContextId[14]).useStateFromStores(items9, () => stateFromStores5.getIsFetching(closure_3));
@@ -248,6 +246,7 @@ const EVERYONE_CHANNEL_ID = arg1(dependencyMap[2]).EVERYONE_CHANNEL_ID;
 let closure_7 = importDefault(dependencyMap[3]);
 let closure_8 = importDefault(dependencyMap[4]);
 let closure_9 = importDefault(dependencyMap[5]);
+let closure_10 = importDefault(dependencyMap[6]);
 let closure_11 = importDefault(dependencyMap[7]);
 let closure_12 = importDefault(dependencyMap[8]);
 ({ MESSAGE_PLACEHOLDER_ITEM_SIZE: closure_13, SearchListItemTypes: closure_14 } = arg1(dependencyMap[9]));
@@ -256,7 +255,7 @@ const tmp2 = arg1(dependencyMap[9]);
 ({ RelationshipTypes: closure_16, SearchTypes: closure_17 } = arg1(dependencyMap[11]));
 const jsx = arg1(dependencyMap[12]).jsx;
 const tmp3 = arg1(dependencyMap[11]);
-let closure_19 = arg1(dependencyMap[13]).createStyles({ container: { padding: "innocent", avatarMarginRight: "innocent" }, userList: { backgroundColor: "transparent" } });
+let closure_19 = arg1(dependencyMap[13]).createStyles({ container: {}, userList: { backgroundColor: "transparent" } });
 const obj2 = arg1(dependencyMap[13]);
 const memoResult = importAllResult.memo(function MembersScreen(searchContext) {
   searchContext = searchContext.searchContext;

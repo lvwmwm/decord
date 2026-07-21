@@ -1,10 +1,10 @@
-// Module ID: 9570
-// Function ID: 74588
+// Module ID: 9575
+// Function ID: 74605
 // Name: useFavoriteGIFs
 // Dependencies: []
 // Exports: useIsFavoriteGIF, useShouldShowTooltipOnFavorite, useSortedFavoriteGIFs
 
-// Module 9570 (useFavoriteGIFs)
+// Module 9575 (useFavoriteGIFs)
 function useFavoriteGIFs() {
   let gifs;
   const favoriteGifs = arg1(dependencyMap[1]).useFrecencySettings().favoriteGifs;

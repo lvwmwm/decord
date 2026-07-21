@@ -1,10 +1,10 @@
-// Module ID: 14896
-// Function ID: 112234
+// Module ID: 14903
+// Function ID: 112258
 // Name: GuildRoleSubscriptionsRow
 // Dependencies: []
 // Exports: default
 
-// Module 14896 (GuildRoleSubscriptionsRow)
+// Module 14903 (GuildRoleSubscriptionsRow)
 let closure_3 = importAll(dependencyMap[0]);
 const Routes = arg1(dependencyMap[1]).Routes;
 const StaticChannelRoute = arg1(dependencyMap[2]).StaticChannelRoute;

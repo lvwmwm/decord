@@ -1,10 +1,10 @@
-// Module ID: 4464
-// Function ID: 39420
+// Module ID: 4468
+// Function ID: 39468
 // Name: useAlertStore
 // Dependencies: []
 // Exports: dismissAlert, dismissAlerts, openAlert
 
-// Module 4464 (useAlertStore)
+// Module 4468 (useAlertStore)
 let closure_3 = importDefault(dependencyMap[0]);
 let obj = arg1(dependencyMap[1]);
 obj = obj.create(() => ({ alerts: [] }));

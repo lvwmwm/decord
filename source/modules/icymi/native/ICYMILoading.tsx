@@ -1,10 +1,10 @@
-// Module ID: 15107
-// Function ID: 114018
+// Module ID: 15114
+// Function ID: 114042
 // Name: placeholderRowWidth
 // Dependencies: []
 // Exports: ICYMILoading
 
-// Module 15107 (placeholderRowWidth)
+// Module 15114 (placeholderRowWidth)
 function placeholderRowWidth(arg0, arg1, arg2) {
   const result = 100 * Math.sin(arg0);
   return (result - Math.floor(result)) * (arg2 - arg1) + arg1;
@@ -14,7 +14,7 @@ function ICYMILoadingItem() {
   let subtitle;
   let title;
   const tmp = callback3();
-  const tmp2 = importDefault(dependencyMap[5])({ "Bool(false)": null, "Bool(false)": null });
+  const tmp2 = importDefault(dependencyMap[5])({ GOOGLE_PLAY_PRICE_CHANGE_ACTION_SHEET: null, getLayoutComponentErrorText: null });
   const memo = React.useMemo(() => ({ avatarTitle: Math.floor(10 * Math.random()), title: Math.floor(10 * Math.random()), subtitle: Math.floor(10 * Math.random()) }), []);
   let obj = {};
   obj = { style: tmp.container };
@@ -63,21 +63,20 @@ let closure_3 = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 ({ jsx: closure_5, jsxs: closure_6, Fragment: closure_7 } = arg1(dependencyMap[2]));
 const tmp2 = arg1(dependencyMap[2]);
-let closure_8 = arg1(dependencyMap[3]).createICYMIStyles((margin) => {
+let closure_8 = arg1(dependencyMap[3]).createICYMIStyles((marginBottom) => {
   let obj = {};
   obj = { backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_MOD_SUBTLE };
   obj.backgroundColor = obj;
-  obj.container = { padding: margin.margin };
-  obj = { -9223372036854775808: true, filter: true, marginBottom: margin.margin };
-  obj.avatarRow = obj;
-  const obj1 = { aze: 30706176, azj: 378290688, borderRadius: importDefault(dependencyMap[4]).radii.md, marginRight: importDefault(dependencyMap[4]).space.PX_12 };
-  obj.avatar = obj1;
+  obj.container = { padding: marginBottom.margin };
+  obj.avatarRow = { marginBottom: marginBottom.margin };
+  obj = { borderRadius: importDefault(dependencyMap[4]).radii.md, marginRight: importDefault(dependencyMap[4]).space.PX_12 };
+  obj.avatar = obj;
   obj.avatarTitle = {};
   obj.title = { height: importDefault(dependencyMap[4]).space.PX_16, marginBottom: importDefault(dependencyMap[4]).space.PX_12, borderRadius: 10, flexShrink: 1 };
-  const obj2 = { height: importDefault(dependencyMap[4]).space.PX_16, marginBottom: importDefault(dependencyMap[4]).space.PX_12, borderRadius: 10, flexShrink: 1 };
-  obj.subtitle = { height: importDefault(dependencyMap[4]).space.PX_16, marginBottom: margin.margin, borderRadius: 10, flexShrink: 1 };
-  const obj4 = { aze: "oneTimeCode", azj: "stretch", borderRadius: importDefault(dependencyMap[4]).radii.lg };
-  obj.image = obj4;
+  const obj1 = { height: importDefault(dependencyMap[4]).space.PX_16, marginBottom: importDefault(dependencyMap[4]).space.PX_12, borderRadius: 10, flexShrink: 1 };
+  obj.subtitle = { height: importDefault(dependencyMap[4]).space.PX_16, marginBottom: marginBottom.margin, borderRadius: 10, flexShrink: 1 };
+  const obj2 = { height: importDefault(dependencyMap[4]).space.PX_16, marginBottom: marginBottom.margin, borderRadius: 10, flexShrink: 1 };
+  obj.image = { borderRadius: importDefault(dependencyMap[4]).radii.lg };
   obj.separator = {};
   return obj;
 });

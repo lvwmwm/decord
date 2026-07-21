@@ -1,10 +1,10 @@
-// Module ID: 9669
-// Function ID: 75297
+// Module ID: 9674
+// Function ID: 75314
 // Name: useSelectPremiumGift
 // Dependencies: []
 // Exports: useSelectPremiumGift
 
-// Module 9669 (useSelectPremiumGift)
+// Module 9674 (useSelectPremiumGift)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 const result = arg1(dependencyMap[10]).fileFinishedImporting("modules/premium/native/hooks/useSelectPremiumGift.tsx");

@@ -1,9 +1,9 @@
-// Module ID: 7799
-// Function ID: 62238
+// Module ID: 7803
+// Function ID: 62250
 // Name: ContentInventoryEntryType
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 7799 (ContentInventoryEntryType)
+// Module 7803 (ContentInventoryEntryType)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_common/js/shared/shared-constants/ContentInventoryEntryType.tsx");
 

@@ -1,10 +1,10 @@
-// Module ID: 6575
-// Function ID: 50736
+// Module ID: 6577
+// Function ID: 50779
 // Name: SwordAndChestSpotIllustration
 // Dependencies: []
 // Exports: SwordAndChestSpotIllustration
 
-// Module 6575 (SwordAndChestSpotIllustration)
+// Module 6577 (SwordAndChestSpotIllustration)
 const jsx = require(dependencyMap[0]).jsx;
 const _module = require(dependencyMap[3]);
 const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/SwordAndChestSpotIllustration.native.tsx");

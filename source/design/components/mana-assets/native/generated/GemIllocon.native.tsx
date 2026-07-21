@@ -1,10 +1,10 @@
-// Module ID: 6155
-// Function ID: 50106
+// Module ID: 6157
+// Function ID: 50149
 // Name: GemIllocon
 // Dependencies: []
 // Exports: GemIllocon
 
-// Module 6155 (GemIllocon)
+// Module 6157 (GemIllocon)
 const jsx = require(dependencyMap[0]).jsx;
 const _module = require(dependencyMap[3]);
 const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/GemIllocon.native.tsx");

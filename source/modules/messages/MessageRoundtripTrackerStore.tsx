@@ -1,9 +1,9 @@
-// Module ID: 6683
-// Function ID: 51695
+// Module ID: 6689
+// Function ID: 51744
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
-// Module 6683 (_isNativeReflectConstruct)
+// Module 6689 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -124,7 +124,7 @@ let tmp4 = (Store) => {
       if (null != length1) {
         num2 = length1;
       }
-      obj = { <string:2596640197>: "Normal", <string:1364518597>: true, <string:2601487672>: "AbortSignal" };
+      obj = { <string:1489327045>: null, <string:3008716485>: "\u{1F9BB}\u{1F3FF}", <string:1494233144>: true };
       const sum = num + num2;
       obj.initialSendTimestamp = Date.now();
       obj.channelId = channelId;

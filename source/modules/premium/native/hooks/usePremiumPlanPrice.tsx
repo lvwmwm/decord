@@ -1,10 +1,10 @@
-// Module ID: 7990
-// Function ID: 63521
+// Module ID: 7994
+// Function ID: 63533
 // Name: usePremiumPlanPrice
 // Dependencies: []
 // Exports: default
 
-// Module 7990 (usePremiumPlanPrice)
+// Module 7994 (usePremiumPlanPrice)
 let closure_3 = importAll(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 let closure_5 = importDefault(dependencyMap[2]);

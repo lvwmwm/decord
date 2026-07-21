@@ -1,10 +1,10 @@
-// Module ID: 7706
-// Function ID: 61387
+// Module ID: 7710
+// Function ID: 61399
 // Name: createApplicationSubscriptionPurchaseSystemMessage
 // Dependencies: []
 // Exports: createApplicationSubscriptionPurchaseSystemMessage
 
-// Module 7706 (createApplicationSubscriptionPurchaseSystemMessage)
+// Module 7710 (createApplicationSubscriptionPurchaseSystemMessage)
 const _module = require(dependencyMap[4]);
 const result = _module.fileFinishedImporting("modules/messages/native/renderer/system_messages/ApplicationSubscriptionPurchaseSystemMessage.tsx");
 

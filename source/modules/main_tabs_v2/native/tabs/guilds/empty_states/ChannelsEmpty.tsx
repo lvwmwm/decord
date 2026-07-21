@@ -1,8 +1,8 @@
-// Module ID: 14944
-// Function ID: 112493
+// Module ID: 14951
+// Function ID: 112517
 // Dependencies: []
 
-// Module 14944
+// Module 14951
 const importAllResult = importAll(dependencyMap[0]);
 ({ View: closure_4, Image: closure_5 } = arg1(dependencyMap[1]));
 let closure_6 = importDefault(dependencyMap[2]);
@@ -10,7 +10,7 @@ const Permissions = arg1(dependencyMap[3]).Permissions;
 const tmp2 = arg1(dependencyMap[1]);
 ({ jsx: closure_8, jsxs: closure_9 } = arg1(dependencyMap[4]));
 let obj1 = arg1(dependencyMap[5]);
-let obj = { wrapper: { end: null, y: null }, content: { easing: null, isInteraction: null, useNativeDriver: null, size: null } };
+let obj = { wrapper: { <string:1191183569>: false, <string:1224738001>: false }, content: { concat: null, colors: null, body: null, duration: null } };
 obj = {};
 const merged = Object.assign(arg1(dependencyMap[6]).TextStyleSheet.heading-md/bold);
 obj["fontSize"] = 18;
@@ -21,7 +21,7 @@ obj.text = { textAlign: "center" };
 obj.buttonWrapper = { marginTop: 24 };
 obj1 = { "Bool(true)": null, "Bool(true)": null, "Bool(true)": null, borderRadius: importDefault(dependencyMap[7]).radii.xl };
 obj.buttonPill = obj1;
-obj.personalizeButtonWrapper = { <string:80596992>: "version=$(node -p \"require('./package.json').version\") && sed -i '' \"s/#define NITRO_VERSION \\\".*\\\"/#define NITRO_VERSION \\\"$version\\\"/\" ./cpp/utils/NitroDefines.hpp", <string:80602112>: "bun run write-native-version" };
+obj.personalizeButtonWrapper = { <string:80589824>: "version=$(node -p \"require('./package.json').version\") && sed -i '' \"s/#define NITRO_VERSION \\\".*\\\"/#define NITRO_VERSION \\\"$version\\\"/\" ./cpp/utils/NitroDefines.hpp", <string:80436992>: "bun run write-native-version" };
 let closure_10 = obj1.createStyles(obj);
 const tmp3 = arg1(dependencyMap[4]);
 const memoResult = importAllResult.memo(function ChannelsEmpty(guild) {
@@ -48,7 +48,7 @@ const memoResult = importAllResult.memo(function ChannelsEmpty(guild) {
   let obj2 = arg1(dependencyMap[12]);
   const isFavoritesGuildIdResult = obj2.isFavoritesGuildId(guild.id);
   if (isFavoritesGuildIdResult) {
-    let tmp7Result = tmp7(arg1(dependencyMap[13]).FavoritesSpotIllustration, { aze: 24, azj: 24 });
+    let tmp7Result = tmp7(arg1(dependencyMap[13]).FavoritesSpotIllustration, { bhk: 24, bic: 24 });
   } else {
     obj = { source: importDefault(dependencyMap[14]) };
     tmp7Result = tmp7(closure_5, obj);
@@ -83,10 +83,9 @@ const memoResult = importAllResult.memo(function ChannelsEmpty(guild) {
   const items5 = [canCustomizeGuild, ];
   const obj4 = { style: tmp.content };
   const items6 = [tmp7Result, , , ];
-  const obj5 = { "Bool(false)": null, "Bool(false)": null };
+  const obj5 = { style: items7 };
   const items7 = [, ];
   ({ text: arr8[0], headerText: arr8[1] } = tmp);
-  obj5.style = items7;
   obj5.children = stringResult;
   items6[1] = callback(arg1(dependencyMap[6]).Text, obj5);
   const obj6 = { style: tmp.text, children: string2Result };

@@ -1,25 +1,25 @@
-// Module ID: 16139
-// Function ID: 124430
+// Module ID: 16146
+// Function ID: 124461
 // Name: GuildSettingsServerTagBadgeGrid
-// Dependencies: []
+// Dependencies: [4294967295, 0, 0, 0]
 // Exports: default
 
-// Module 16139 (GuildSettingsServerTagBadgeGrid)
+// Module 16146 (GuildSettingsServerTagBadgeGrid)
+import __exportStarResult1 from "__exportStarResult1";
+import { GuildTagBadgeSize } from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
+
 let closure_3 = importAll(dependencyMap[0]);
-({ Pressable: closure_4, View: closure_5 } = arg1(dependencyMap[1]));
-const GuildTagBadgeSize = arg1(dependencyMap[2]).GuildTagBadgeSize;
-const tmp2 = arg1(dependencyMap[1]);
-({ jsx: closure_7, jsxs: closure_8 } = arg1(dependencyMap[3]));
+({ Pressable: closure_4, View: closure_5 } = __exportStarResult1);
+({ jsx: closure_7, jsxs: closure_8 } = __exportStarResult1);
 let obj = arg1(dependencyMap[5]);
 obj = { grid: obj };
-obj = { APP_DMS_ENTRY_POINT_COMMAND_BUTTON: null, desert: null, gap: importDefault(dependencyMap[4]).space.PX_8 };
-const obj1 = { -9223372036854775808: true, filter: true, gap: importDefault(dependencyMap[4]).space.PX_16, padding: importDefault(dependencyMap[4]).space.PX_16, borderRadius: importDefault(dependencyMap[4]).radii.md, backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_MOD_SUBTLE };
-obj.upsellCard = obj1;
-const obj2 = { onTapLink: "c013c533d835389917bf422e9978d1be", onLongPressLink: "img_app_crash_light", onTapAttachmentLink: "png", gap: importDefault(dependencyMap[4]).space.PX_4 };
-obj.upsellPreview = obj2;
+obj = { 1925026477: null, -1346530010: null, gap: importDefault(dependencyMap[4]).space.PX_8, upsellCard: { gap: importDefault(dependencyMap[4]).space.PX_16, padding: importDefault(dependencyMap[4]).space.PX_16, borderRadius: importDefault(dependencyMap[4]).radii.md, backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_MOD_SUBTLE } };
+const obj1 = { gap: importDefault(dependencyMap[4]).space.PX_16, padding: importDefault(dependencyMap[4]).space.PX_16, borderRadius: importDefault(dependencyMap[4]).radii.md, backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_MOD_SUBTLE };
+obj.upsellPreview = { gap: importDefault(dependencyMap[4]).space.PX_4 };
 obj.upsellText = { flex: 1 };
 let closure_9 = obj.createStyles(obj);
-const tmp3 = arg1(dependencyMap[3]);
+const obj2 = { gap: importDefault(dependencyMap[4]).space.PX_4 };
 const result = arg1(dependencyMap[15]).fileFinishedImporting("modules/guild_settings/native/GuildSettingsServerTagBadgeGrid.tsx");
 
 export default function GuildSettingsServerTagBadgeGrid(guildId) {
@@ -35,7 +35,7 @@ export default function GuildSettingsServerTagBadgeGrid(guildId) {
     callback(closure_2[7])({ guildId, autoOpenPerkId: "guildTagsBadgePacks" });
   }, items);
   let obj = { spacing: importDefault(dependencyMap[4]).space.PX_8 };
-  obj = {};
+  obj = { 1655478700: true, 72438626: "md", 1446732292: "secondary" };
   const intl = arg1(dependencyMap[10]).intl;
   obj.children = intl.string(arg1(dependencyMap[10]).t.wRnfnY);
   const items1 = [callback(arg1(dependencyMap[9]).Text, obj), , ];
@@ -69,7 +69,7 @@ export default function GuildSettingsServerTagBadgeGrid(guildId) {
     const substr = lockedBadges.slice(0, 10);
     obj2.children = substr.map((badge) => callback2(guildId(closure_2[13]).GuildBadge, { badge: badge.kind }, badge.kind));
     const items2 = [callback(closure_5, obj2), , ];
-    const obj3 = { INTEGRATION_CREATE: 3, ConstraintReasonCode: null, style: tmp.upsellText };
+    const obj3 = { style: tmp.upsellText };
     const intl3 = arg1(dependencyMap[10]).intl;
     obj3.children = intl3.string(arg1(dependencyMap[10]).t.U5p3GZ);
     items2[1] = callback(arg1(dependencyMap[9]).Text, obj3);

@@ -1,10 +1,10 @@
-// Module ID: 14100
-// Function ID: 107085
+// Module ID: 14107
+// Function ID: 107108
 // Name: DisplayNameStylesGummyColorPickerSheet
 // Dependencies: []
 // Exports: default
 
-// Module 14100 (DisplayNameStylesGummyColorPickerSheet)
+// Module 14107 (DisplayNameStylesGummyColorPickerSheet)
 import module_0 from "module_0";
 
 let closure_3 = importDefault(dependencyMap[0]);
@@ -21,20 +21,20 @@ obj = { paddingHorizontal: importDefault(dependencyMap[8]).space.PX_16, paddingT
 obj.body = obj;
 obj1 = { paddingHorizontal: importDefault(dependencyMap[8]).space.PX_4, alignSelf: "stretch" };
 obj.colorRowInset = obj1;
-obj.optionContainer = { APP_DMS_ENTRY_POINT_COMMAND_BUTTON: null, desert: null };
-obj.swatchWrapper = {};
+obj.optionContainer = { 1925026477: null, -1346530010: null };
+obj.swatchWrapper = { "Bool(true)": 20, "Bool(true)": "enable_gdm_all_reaction_notifications" };
+const obj2 = { "Bool(false)": "<string:2731426070>", "Bool(false)": "<string:324075521>", "Bool(false)": "<string:2731426192>", "Bool(false)": "<string:1014104065>", "Bool(false)": "<string:1006632960>", "Bool(false)": "<string:285212672>", borderRadius: importDefault(dependencyMap[8]).radii.sm };
+obj.swatch = obj2;
 const tmp3 = arg1(dependencyMap[5]);
-obj.swatch = { borderRadius: importDefault(dependencyMap[8]).radii.sm };
-const obj2 = { borderRadius: importDefault(dependencyMap[8]).radii.sm };
 obj.swatchSelected = { borderColor: importDefault(dependencyMap[8]).colors.BACKGROUND_BRAND };
-const obj4 = { <string:1236029870>: -0.00000000000000000000000000000000000000000000000000000000000000000000000003800777841190226, <string:2220026721>: -0.0000000000000000000000000000000000000000000000000000000000000000000000000002979395632969957, <string:1636883640>: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000030586585445, backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_MOD_SUBTLE, borderColor: importDefault(dependencyMap[8]).colors.BORDER_NORMAL };
-obj.customSwatchEmpty = obj4;
+const obj3 = { borderColor: importDefault(dependencyMap[8]).colors.BACKGROUND_BRAND };
+obj.customSwatchEmpty = { backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_MOD_SUBTLE, borderColor: importDefault(dependencyMap[8]).colors.BORDER_NORMAL };
 const obj5 = {};
 const merged = Object.assign(tmp2.StyleSheet.absoluteFillObject);
 obj5["alignItems"] = "center";
 obj5["justifyContent"] = "center";
 obj.customIconOverlay = obj5;
-const obj3 = { borderColor: importDefault(dependencyMap[8]).colors.BACKGROUND_BRAND };
+const obj4 = { backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_MOD_SUBTLE, borderColor: importDefault(dependencyMap[8]).colors.BORDER_NORMAL };
 obj.customIconScrim = { borderRadius: importDefault(dependencyMap[8]).radii.round };
 let closure_12 = obj1.createStyles(obj);
 const obj6 = { borderRadius: importDefault(dependencyMap[8]).radii.round };
@@ -121,7 +121,7 @@ export default function DisplayNameStylesGummyColorPickerSheet(selectedColors) {
   }, items1);
   obj = {};
   obj = { title: displayNameStylesEffectConfig.name };
-  const obj1 = {};
+  const obj1 = { 9223372036854775807: 32768000, -9223372036854775808: 30653696 };
   const intl = arg1(dependencyMap[19]).intl;
   obj1.text = intl.string(arg1(dependencyMap[19]).t.XqMe3N);
   obj1.onPress = callback2;

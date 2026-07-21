@@ -1,10 +1,10 @@
-// Module ID: 9320
-// Function ID: 72865
+// Module ID: 9324
+// Function ID: 72879
 // Name: maybeFetchTopEmojisByGuild
 // Dependencies: []
 // Exports: maybeFetchTopEmojisByGuild
 
-// Module 9320 (maybeFetchTopEmojisByGuild)
+// Module 9324 (maybeFetchTopEmojisByGuild)
 let closure_2 = importDefault(dependencyMap[0]);
 let closure_3 = importDefault(dependencyMap[1]);
 let closure_4 = importDefault(dependencyMap[2]);

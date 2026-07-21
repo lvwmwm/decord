@@ -1,9 +1,9 @@
-// Module ID: 5842
-// Function ID: 49637
+// Module ID: 5844
+// Function ID: 49680
 // Name: metadata
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 5842 (metadata)
+// Module 5844 (metadata)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/ActivatedGem3dIllustration-2x.png.js");
 

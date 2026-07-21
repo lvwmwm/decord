@@ -1,9 +1,9 @@
-// Module ID: 7356
-// Function ID: 59278
+// Module ID: 7360
+// Function ID: 59289
 // Name: ACRequestOperations
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 7356 (ACRequestOperations)
+// Module 7360 (ACRequestOperations)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_common/js/shared/shared-constants/ACRequestOperations.tsx");
 

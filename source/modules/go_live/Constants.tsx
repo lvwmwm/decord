@@ -1,9 +1,9 @@
-// Module ID: 4187
-// Function ID: 35983
+// Module ID: 4191
+// Function ID: 36031
 // Name: StreamIssueReportReasons
 // Dependencies: []
 
-// Module 4187 (StreamIssueReportReasons)
+// Module 4191 (StreamIssueReportReasons)
 const _module = require(dependencyMap[1]);
 const result = _module.fileFinishedImporting("modules/go_live/Constants.tsx");
 
@@ -22,4 +22,4 @@ export const WINDOWS_GRAPHICS_CAPTURE_BUILD = 22000;
 export const StreamTypes = { GUILD: "guild", CALL: "call" };
 export const STREAM_NOTIFY_GUILD_MAX_SIZE = require(dependencyMap[0]).Notifications.StreamNotificationsGuildMaxSize;
 export const GO_LIVE_NOTIFY_FRIENDS_MIN_MEMBER_COUNT = 30;
-export const BROWSER_EXECUTABLES = new Set(["active", "activityState", "style", "onComponentRef", 108.7]);
+export const BROWSER_EXECUTABLES = new Set([]);

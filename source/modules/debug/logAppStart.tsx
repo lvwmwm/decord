@@ -1,12 +1,10 @@
 // Module ID: 1
 // Function ID: 102
-// Name: _setPrototypeOf
-// Dependencies: [19]
+// Dependencies: []
 
-// Module 1 (_setPrototypeOf)
-import _setPrototypeOf from "_setPrototypeOf";
-
-_setPrototypeOf = _setPrototypeOf.clear();
+// Module 1
+const _module = require(dependencyMap[0]);
+_module.clear();
 new require(dependencyMap[1]).default("app").log("Initializing app");
 const loadIndex = require(dependencyMap[2]).default.loadIndex;
 loadIndex.recordStart();

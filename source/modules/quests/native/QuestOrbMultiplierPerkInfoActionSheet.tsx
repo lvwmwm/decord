@@ -1,10 +1,10 @@
-// Module ID: 13931
-// Function ID: 105887
+// Module ID: 13938
+// Function ID: 105910
 // Name: Footer
 // Dependencies: []
 // Exports: default
 
-// Module 13931 (Footer)
+// Module 13938 (Footer)
 function Footer(eligibleToReceivePremiumRewards) {
   let loading;
   let onPress;
@@ -28,12 +28,12 @@ function Footer(eligibleToReceivePremiumRewards) {
   }, []);
   const Button = arg1(dependencyMap[11]).Button;
   if (eligibleToReceivePremiumRewards.eligibleToReceivePremiumRewards) {
-    obj = { "Bool(false)": 815716, "Bool(false)": 1048576, "Bool(false)": 1212219392 };
+    obj = { "Null": "<string:3578855425>", "Null": "<string:815799>", "Null": "<string:1048576>" };
     const intl3 = tmp9(tmp10[12]).intl;
     obj.text = intl3.string(tmp9(tmp10[12]).t.hvVgAZ);
     obj.onPress = callback1;
     const items = [tmp8(Button, obj), ];
-    obj = {};
+    obj = { key: "r", onCloseCallback: "sectionIdsByBotId" };
     const intl4 = tmp9(tmp10[12]).intl;
     obj.text = intl4.string(tmp9(tmp10[12]).t.cpT0Cq);
     obj.onPress = callback2;
@@ -47,7 +47,7 @@ function Footer(eligibleToReceivePremiumRewards) {
     obj1.onPress = onPress;
     obj1.loading = loading;
     const items1 = [tmp8(Button, obj1), ];
-    const obj2 = {};
+    const obj2 = { key: "r", onCloseCallback: "sectionIdsByBotId" };
     const intl2 = tmp9(tmp10[12]).intl;
     obj2.text = intl2.string(tmp9(tmp10[12]).t.PcTCB7);
     obj2.onPress = callback;
@@ -90,14 +90,14 @@ let obj = arg1(dependencyMap[4]);
 obj = {};
 obj = { alignItems: "center", paddingHorizontal: importDefault(dependencyMap[5]).space.PX_16 };
 obj.container = obj;
-const obj1 = { 0: false, 0: false, marginTop: importDefault(dependencyMap[5]).space.PX_48 };
+const obj1 = { "Bool(true)": "percent", "Bool(true)": 0, marginTop: importDefault(dependencyMap[5]).space.PX_48 };
 obj.contentContainer = obj1;
 const tmp3 = arg1(dependencyMap[3]);
 obj.text = { textAlign: "center", paddingHorizontal: importDefault(dependencyMap[5]).space.PX_24, paddingBottom: importDefault(dependencyMap[5]).space.PX_16 };
 const obj2 = { textAlign: "center", paddingHorizontal: importDefault(dependencyMap[5]).space.PX_24, paddingBottom: importDefault(dependencyMap[5]).space.PX_16 };
 obj.buttonContainer = { width: "100%", gap: importDefault(dependencyMap[5]).space.PX_12, marginVertical: importDefault(dependencyMap[5]).space.PX_16 };
 obj.title = {};
-obj.riveContainer = { aze: null, azj: "\u{1F44D}\u{1F3FC}" };
+obj.riveContainer = { bhk: null, bic: "\u{1F44D}\u{1F3FC}" };
 let closure_12 = obj.createStyles(obj);
 const obj3 = { width: "100%", gap: importDefault(dependencyMap[5]).space.PX_12, marginVertical: importDefault(dependencyMap[5]).space.PX_16 };
 const result = arg1(dependencyMap[21]).fileFinishedImporting("modules/quests/native/QuestOrbMultiplierPerkInfoActionSheet.tsx");
@@ -145,7 +145,7 @@ export default function QuestOrbMultiplierPerkInfoActionSheet(multiplier) {
     }
     return formatResult;
   }, items1);
-  obj = { <string:2700829656>: true, <string:2895467100>: false, <string:3882200254>: true, contentStyles: closure_11 };
+  obj = { contentStyles: closure_11 };
   obj = { visible: tmp2, children: callback(SheetContent, { title: memo, body: memo1, eligibleToReceivePremiumRewards: result }) };
   obj.children = callback(importDefault(dependencyMap[20]), obj);
   return callback(arg1(dependencyMap[19]).BottomSheet, obj);

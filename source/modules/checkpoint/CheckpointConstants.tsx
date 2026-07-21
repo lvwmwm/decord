@@ -1,9 +1,9 @@
-// Module ID: 4346
-// Function ID: 38561
+// Module ID: 4350
+// Function ID: 38609
 // Name: CheckpointPersonas
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 4346 (CheckpointPersonas)
+// Module 4350 (CheckpointPersonas)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("modules/checkpoint/CheckpointConstants.tsx");
 

@@ -1,9 +1,9 @@
-// Module ID: 6038
-// Function ID: 49931
+// Module ID: 6040
+// Function ID: 49974
 // Name: metadata
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 6038 (metadata)
+// Module 6040 (metadata)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/ExperimentalGameWidgetsAbstractUI-2x.png.js");
 

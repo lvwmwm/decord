@@ -1,9 +1,9 @@
-// Module ID: 11695
-// Function ID: 90837
+// Module ID: 11702
+// Function ID: 90860
 // Name: _updateDiscoverability
 // Dependencies: []
 
-// Module 11695 (_updateDiscoverability)
+// Module 11702 (_updateDiscoverability)
 function _updateDiscoverability() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);

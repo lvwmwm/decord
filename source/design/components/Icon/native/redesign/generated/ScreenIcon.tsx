@@ -1,10 +1,10 @@
-// Module ID: 11835
-// Function ID: 91756
+// Module ID: 11842
+// Function ID: 91779
 // Name: ScreenIcon
 // Dependencies: []
 // Exports: ScreenIcon
 
-// Module 11835 (ScreenIcon)
+// Module 11842 (ScreenIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/ScreenIcon.tsx");

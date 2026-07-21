@@ -1,10 +1,10 @@
-// Module ID: 6515
-// Function ID: 50646
+// Module ID: 6517
+// Function ID: 50689
 // Name: SocialMediaSpotIllustration
 // Dependencies: []
 // Exports: SocialMediaSpotIllustration
 
-// Module 6515 (SocialMediaSpotIllustration)
+// Module 6517 (SocialMediaSpotIllustration)
 const jsx = require(dependencyMap[0]).jsx;
 const _module = require(dependencyMap[3]);
 const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/SocialMediaSpotIllustration.native.tsx");

@@ -1,9 +1,9 @@
-// Module ID: 10001
-// Function ID: 77309
+// Module ID: 10007
+// Function ID: 77327
 // Name: MIN_PAN_GESTURE_MOVE
 // Dependencies: []
 
-// Module 10001 (MIN_PAN_GESTURE_MOVE)
+// Module 10007 (MIN_PAN_GESTURE_MOVE)
 const _module = require(dependencyMap[0]);
 const _module1 = require(dependencyMap[1]);
 const result = _module1.fileFinishedImporting("modules/panels/morphable/native/MorphablePanelConstants.tsx");

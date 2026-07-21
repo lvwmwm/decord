@@ -1,10 +1,10 @@
-// Module ID: 8987
-// Function ID: 70773
+// Module ID: 8991
+// Function ID: 70785
 // Name: DomainScreen
 // Dependencies: []
 // Exports: default
 
-// Module 8987 (DomainScreen)
+// Module 8991 (DomainScreen)
 function DomainScreen(onClose) {
   const arg1 = onClose.onClose;
   let importDefault;
@@ -119,7 +119,7 @@ function DNSProofScreen(proof) {
   const intl2 = arg1(dependencyMap[11]).intl;
   obj2.children = intl2.string(arg1(dependencyMap[11]).t.GL3q7k);
   const items1 = [callback2(arg1(dependencyMap[10]).Text, obj2), , , , , ];
-  const obj3 = { onMount: null, borderWidth: "9efbede8b87c94f401364acf34876922", style: tmp.code };
+  const obj3 = { 665307053: null, -343193694: null, style: tmp.code };
   let obj6 = arg1(dependencyMap[13]);
   obj3.children = obj6.getDnsName(domain);
   items1[1] = callback2(arg1(dependencyMap[10]).Text, obj3);
@@ -127,13 +127,12 @@ function DNSProofScreen(proof) {
   const intl3 = arg1(dependencyMap[11]).intl;
   obj4.children = intl3.string(arg1(dependencyMap[11]).t.Ccmixu);
   items1[2] = callback2(arg1(dependencyMap[10]).Text, obj4);
-  const obj5 = { onMount: null, borderWidth: "9efbede8b87c94f401364acf34876922", shadowColor: "HammerIcon", shadowOffset: "png", style: tmp.code };
-  items1[3] = callback2(arg1(dependencyMap[10]).Text, obj5);
+  items1[3] = callback2(arg1(dependencyMap[10]).Text, { style: tmp.code });
   obj6 = { variant: "text-md/normal" };
   const intl4 = arg1(dependencyMap[11]).intl;
   obj6.children = intl4.string(arg1(dependencyMap[11]).t.PVLriT);
   items1[4] = callback2(arg1(dependencyMap[10]).Text, obj6);
-  const obj7 = { onMount: null, borderWidth: "9efbede8b87c94f401364acf34876922", style: tmp.code, children: proof };
+  const obj7 = { 665307053: null, -343193694: null, style: tmp.code, children: proof };
   items1[5] = callback2(arg1(dependencyMap[10]).Text, obj7);
   obj1.children = items1;
   items[1] = callback3(closure_5, obj1);
@@ -228,7 +227,7 @@ function HTTPProofScreen(proof) {
   const intl2 = arg1(closure_2[11]).intl;
   obj2.children = intl2.string(arg1(closure_2[11]).t.GL3q7k);
   const items1 = [callback2(arg1(closure_2[10]).Text, obj2), , , ];
-  const obj3 = { onMount: null, borderWidth: "9efbede8b87c94f401364acf34876922", style: tmp.code };
+  const obj3 = { 665307053: null, -343193694: null, style: tmp.code };
   let obj6 = arg1(closure_2[13]);
   obj3.children = obj6.getHttpName(domain);
   items1[1] = callback2(arg1(closure_2[10]).Text, obj3);
@@ -236,7 +235,7 @@ function HTTPProofScreen(proof) {
   const intl3 = arg1(closure_2[11]).intl;
   obj4.children = intl3.string(arg1(closure_2[11]).t.PVLriT);
   items1[2] = callback2(arg1(closure_2[10]).Text, obj4);
-  const obj5 = { onMount: null, borderWidth: "9efbede8b87c94f401364acf34876922", style: tmp.code, children: proof.proof };
+  const obj5 = { 665307053: null, -343193694: null, style: tmp.code, children: proof.proof };
   items1[3] = callback2(arg1(closure_2[10]).Text, obj5);
   obj1.children = items1;
   items[1] = callback3(View, obj1);
@@ -316,11 +315,11 @@ const View = arg1(dependencyMap[2]).View;
 const tmp2 = arg1(dependencyMap[3]);
 ({ jsx: closure_8, jsxs: closure_9 } = arg1(dependencyMap[4]));
 let obj = arg1(dependencyMap[5]);
-obj = { container: { padding: 16 }, description: { textAlign: "center" }, input: {} };
+obj = { container: { padding: 16 }, description: { textAlign: "center" }, input: { "Bool(false)": 16, "Bool(false)": 20, "Bool(false)": null } };
 obj = { backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_BASE_LOWEST, borderRadius: importDefault(dependencyMap[6]).radii.xs, padding: 8, marginTop: 16 };
 obj.dns = obj;
 obj.error = { marginTop: 16 };
-obj.code = { additional_emoji_slots: "message", additional_sound_slots: "en-IE" };
+obj.code = { mediaCapturePermissionGrantType: "message", javaScriptEnabled: 0.093 };
 obj.button = { marginTop: 16 };
 let closure_10 = obj.createStyles(obj);
 let closure_11 = { DOMAIN: "DOMAIN", PROOF_DNS: "PROOF_DNS", PROOF_HTTP: "PROOF_HTTP" };

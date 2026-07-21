@@ -1,10 +1,10 @@
-// Module ID: 6207
-// Function ID: 50184
+// Module ID: 6209
+// Function ID: 50227
 // Name: GiftTrollIllocon
 // Dependencies: []
 // Exports: GiftTrollIllocon
 
-// Module 6207 (GiftTrollIllocon)
+// Module 6209 (GiftTrollIllocon)
 const jsx = require(dependencyMap[0]).jsx;
 const _module = require(dependencyMap[3]);
 const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/GiftTrollIllocon.native.tsx");

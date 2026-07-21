@@ -1,10 +1,10 @@
-// Module ID: 10226
-// Function ID: 79021
+// Module ID: 10232
+// Function ID: 79040
 // Name: isInAppMessageSoundsEnabled
 // Dependencies: []
 // Exports: isInAppMessageSoundsEnabled, setInAppMessageSoundsEnabled, useInAppMessageSoundsEnabled
 
-// Module 10226 (isInAppMessageSoundsEnabled)
+// Module 10232 (isInAppMessageSoundsEnabled)
 const _module = require(dependencyMap[1]);
 let closure_2 = _module.createWithEqualityFn(() => {
   const obj = {};

@@ -1,9 +1,9 @@
-// Module ID: 15146
-// Function ID: 114278
+// Module ID: 15153
+// Function ID: 114302
 // Name: GuildFeedBanner
 // Dependencies: []
 
-// Module 15146 (GuildFeedBanner)
+// Module 15153 (GuildFeedBanner)
 function GuildFeedBanner(guild) {
   let hideDescription;
   let hideMemberCount;
@@ -239,7 +239,7 @@ obj.avatar = obj;
 obj1 = { paddingBottom: 24, backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_SURFACE_HIGH };
 obj.container = obj1;
 obj.description = { marginTop: 4 };
-const obj2 = { token: false, query: false, type: false, marginTop: GUILD_FEED_CARD_MARGIN_HORIZONTAL };
+const obj2 = { <string:3810092247>: "spriteIndex", <string:2204282508>: "y", <string:3426243031>: "isArray", marginTop: GUILD_FEED_CARD_MARGIN_HORIZONTAL };
 obj.textContainer = obj2;
 obj.content = { width: "100%" };
 obj.icon = { marginLeft: 8 };
@@ -247,11 +247,11 @@ const tmp4 = arg1(dependencyMap[6]);
 obj.headerContainer = { alignItems: "center", backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_SURFACE_HIGH };
 const obj3 = { alignItems: "center", backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_SURFACE_HIGH };
 obj.headerBorder = { borderTopRightRadius: importDefault(dependencyMap[8]).radii.lg, borderTopLeftRadius: importDefault(dependencyMap[8]).radii.lg, marginTop: -16 };
-const obj5 = { error: null, fetchedAt: null, androidScheme: null, borderRadius: importDefault(dependencyMap[8]).radii.lg, backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_SURFACE_HIGH };
+const obj5 = { androidScheme: null, iosScheme: null, enabled: null, borderRadius: importDefault(dependencyMap[8]).radii.lg, backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_SURFACE_HIGH };
 obj.guildIconContainer = obj5;
 const obj4 = { borderTopRightRadius: importDefault(dependencyMap[8]).radii.lg, borderTopLeftRadius: importDefault(dependencyMap[8]).radii.lg, marginTop: -16 };
 obj.dotOnline = { borderRadius: importDefault(dependencyMap[8]).radii.xs, backgroundColor: importDefault(dependencyMap[8]).unsafe_rawColors.GREEN_360 };
-obj.publicInfo = { lineHeight: null, paddingTop: null, flex: null };
+obj.publicInfo = { "Bool(true)": 54801408, "Bool(true)": -225361408, "Bool(true)": 854917122 };
 obj.publicIcon = {};
 obj.memberInfo = {};
 obj.title = { maxWidth: "90%" };

@@ -1,10 +1,10 @@
-// Module ID: 14761
-// Function ID: 111304
+// Module ID: 14768
+// Function ID: 111328
 // Name: PX_16
 // Dependencies: []
 // Exports: getMessagesHeaderHeight
 
-// Module 14761 (PX_16)
+// Module 14768 (PX_16)
 const importAllResult = importAll(dependencyMap[0]);
 const tmp2 = arg1(dependencyMap[1]);
 const View = tmp2.View;
@@ -68,7 +68,7 @@ const memoResult = importAllResult.memo(function MessagesHeader(height) {
     let obj = height(tmp[12]);
     const rootNavigationRef = obj.getRootNavigationRef();
     if (null != rootNavigationRef) {
-      obj = { screen: "add-friends", params: {} };
+      obj = { screen: "add-friends", params: { GUILD_DISCOVERY_CHECKLIST: -2, borderTopWidth: "center" } };
       rootNavigationRef.navigate("friends", obj);
     }
   }, []);
@@ -125,7 +125,7 @@ const memoResult = importAllResult.memo(function MessagesHeader(height) {
   obj3.children = callback(arg1(dependencyMap[18]).Text, obj4);
   const items1 = [callback(View, obj3), , , ];
   const obj5 = { style: tmp.headerPanelButtons };
-  const obj6 = { <string:1650710704>: 44, <string:1420607057>: null, <string:3096691101>: true, onPress: callback2 };
+  const obj6 = { <string:4217742945>: true, <string:1655330464>: "yes", <string:1722587473>: "2026-04-collectibles-profile-frames-purchase", onPress: callback2 };
   if (tmp2) {
     let tmp21 = importDefault(dependencyMap[19]);
   } else {
@@ -135,21 +135,19 @@ const memoResult = importAllResult.memo(function MessagesHeader(height) {
   obj6.icon = tmp21;
   const intl3 = arg1(dependencyMap[17]).intl;
   obj6.accessibilityLabel = intl3.string(arg1(dependencyMap[17]).t.5h0QOP);
-  const items2 = [callback(arg1(dependencyMap[15]).IconButton, obj6), , , ];
-  const obj8 = { ClickLetUsKnow: 24, defaultPreview: 24, clientThemeSettings: null, onPress: callback };
-  items2[1] = callback(importDefault(dependencyMap[21]), obj8);
-  const obj9 = {};
+  const items2 = [callback(arg1(dependencyMap[15]).IconButton, obj6), callback(importDefault(dependencyMap[21]), { onPress: callback }), , ];
+  const obj8 = {};
   if (tmp2) {
     let tmp28 = importDefault(dependencyMap[23]);
   } else {
-    const obj10 = { size: "sm" };
-    tmp28 = callback(arg1(dependencyMap[24]).UserPlusIcon, obj10);
+    const obj9 = { size: "sm" };
+    tmp28 = callback(arg1(dependencyMap[24]).UserPlusIcon, obj9);
   }
-  obj9.icon = tmp28;
-  obj9.onPress = callback1;
+  obj8.icon = tmp28;
+  obj8.onPress = callback1;
   const intl4 = arg1(dependencyMap[17]).intl;
-  obj9.text = intl4.string(arg1(dependencyMap[17]).t.zIJnA6);
-  items2[2] = callback(arg1(dependencyMap[22]).Button, obj9);
+  obj8.text = intl4.string(arg1(dependencyMap[17]).t.zIJnA6);
+  items2[2] = callback(arg1(dependencyMap[22]).Button, obj8);
   items2[3] = callback(arg1(dependencyMap[15]).IconButton, obj);
   obj5.children = items2;
   items1[1] = closure_7(View, obj5);

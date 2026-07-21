@@ -1,9 +1,9 @@
-// Module ID: 13957
-// Function ID: 106101
+// Module ID: 13964
+// Function ID: 106124
 // Name: QUEST_DOCK_EXPANDED_PADDING_BOTTOM
 // Dependencies: []
 
-// Module 13957 (QUEST_DOCK_EXPANDED_PADDING_BOTTOM)
+// Module 13964 (QUEST_DOCK_EXPANDED_PADDING_BOTTOM)
 let closure_3 = importDefault(dependencyMap[0]);
 const importAllResult = importAll(dependencyMap[1]);
 const View = arg1(dependencyMap[2]).View;
@@ -15,25 +15,24 @@ const QUEST_DOCK_EXPANDED_PADDING_BOTTOM = tmp3.QUEST_DOCK_EXPANDED_PADDING_BOTT
 const tmp2 = arg1(dependencyMap[5]);
 ({ jsx: closure_11, jsxs: closure_12 } = arg1(dependencyMap[7]));
 let obj1 = arg1(dependencyMap[8]);
-let obj = { wrapper: obj };
-obj = { -202119967: 1, -1169061023: true, 1493721778: "/assets/design/components/Icon/native/redesign/generated/images", paddingHorizontal: tmp3.QUEST_DOCK_EXPANDED_PADDING_HORIZONTAL, paddingBottom: QUEST_DOCK_EXPANDED_PADDING_BOTTOM };
-obj1 = { "Bool(false)": "Array", "Bool(false)": "Text", "Bool(false)": "guild", "Bool(false)": "parent", borderRadius: importDefault(dependencyMap[9]).modules.mobile.QUEST_DOCK_BORDER_RADIUS };
-obj.rewardContentWrapper = obj1;
-obj.rewardContent = {};
+let obj = { wrapper: { paddingHorizontal: tmp3.QUEST_DOCK_EXPANDED_PADDING_HORIZONTAL, paddingBottom: QUEST_DOCK_EXPANDED_PADDING_BOTTOM } };
+obj = { flexDirection: "row", justifyContent: null, alignItems: "hidden", backgroundColor: 2, borderRadius: importDefault(dependencyMap[9]).modules.mobile.QUEST_DOCK_BORDER_RADIUS };
+obj.rewardContentWrapper = obj;
+obj.rewardContent = { "Bool(false)": false, "Bool(false)": false, "Bool(false)": false };
 obj.rewardContentCopy = {};
 obj.premiumRewardPerkPill = { alignSelf: "flex-start" };
-const obj2 = { 9223372036854775807: 24, 0: 24, 9223372036854775807: null, 9223372036854775807: "d415e9ae6db962a437b5c21e64fa1fc3", gap: importDefault(dependencyMap[9]).space.PX_8 };
-obj.titleRow = obj2;
+obj1 = { gap: importDefault(dependencyMap[9]).space.PX_8 };
+obj.titleRow = obj1;
 const tmp4 = arg1(dependencyMap[7]);
 obj.questDockRewardTile = { borderRadius: importDefault(dependencyMap[9]).radii.lg };
-obj.questDockCtaWrapper = { "Bool(false)": true, "Bool(false)": "/assets/design/components/Icon/native/redesign/generated/images", "Bool(false)": 24, "Bool(false)": 24 };
-const obj3 = { borderRadius: importDefault(dependencyMap[9]).radii.lg };
+obj.questDockCtaWrapper = { isExpired: "heading-xxl/extrabold", isLeader: null, didSelfVote: "text-md/normal", isExpired: "text-default" };
+const obj2 = { borderRadius: importDefault(dependencyMap[9]).radii.lg };
 obj.questDockCta = { borderRadius: importDefault(dependencyMap[9]).radii.round };
 obj.questDockCtaRow = { alignSelf: "stretch" };
-const obj4 = { borderRadius: importDefault(dependencyMap[9]).radii.round };
+const obj3 = { borderRadius: importDefault(dependencyMap[9]).radii.round };
 obj.questDockCtaSaparator = { backgroundColor: importDefault(dependencyMap[9]).colors.BORDER_SUBTLE };
 let closure_13 = obj1.createStyles(obj);
-const obj5 = { backgroundColor: importDefault(dependencyMap[9]).colors.BORDER_SUBTLE };
+const obj4 = { backgroundColor: importDefault(dependencyMap[9]).colors.BORDER_SUBTLE };
 const memoResult = importAllResult.memo(function QuestDockUnenrolledBody() {
   let isRendered;
   let quest;
@@ -114,24 +113,23 @@ const memoResult = importAllResult.memo(function QuestDockUnenrolledBody() {
   obj9.children = intl.format(arg1(dependencyMap[28]).t.EQa7os, { questName: quest.config.messages.questName });
   obj8.children = callback2(arg1(dependencyMap[27]).Text, obj9);
   items6[1] = callback2(View, obj8);
-  const obj11 = { "Bool(false)": false, "Bool(false)": false, children: questsInstructionsToWinReward };
-  items6[2] = callback2(arg1(dependencyMap[27]).Text, obj11);
+  items6[2] = callback2(arg1(dependencyMap[27]).Text, { children: questsInstructionsToWinReward });
   obj5.children = items6;
   items5[1] = callback3(View, obj5);
   obj3.children = items5;
   items4[1] = callback3(View, obj3);
   obj2.children = items4;
   const items7 = [callback3(View, obj2), ];
-  const obj12 = { style: tmp2.questDockCtaWrapper };
+  const obj11 = { style: tmp2.questDockCtaWrapper };
   const items8 = [callback2(View, { style: tmp2.questDockCtaSaparator }), ];
   const obj10 = { questName: quest.config.messages.questName };
-  const obj13 = { style: tmp2.questDockCtaSaparator };
+  const obj12 = { style: tmp2.questDockCtaSaparator };
   const tmp21 = importDefault(dependencyMap[25]);
   const tmp24 = callback3;
   const tmp25 = View;
-  items8[1] = callback2(View, { style: tmp2.questDockCtaRow, children: callback2(arg1(dependencyMap[29]).ShinyButton, obj15) });
-  obj12.children = items8;
-  items7[1] = callback3(View, obj12);
+  items8[1] = callback2(View, { style: tmp2.questDockCtaRow, children: callback2(arg1(dependencyMap[29]).ShinyButton, obj14) });
+  obj11.children = items8;
+  items7[1] = callback3(View, obj11);
   obj.children = items7;
   return callback3(tmp18, obj);
 });

@@ -1,9 +1,9 @@
-// Module ID: 15813
-// Function ID: 120932
+// Module ID: 15820
+// Function ID: 120956
 // Name: FORMAT_RE
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 15813 (FORMAT_RE)
+// Module 15820 (FORMAT_RE)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_common/js/packages/i18n/Constants.tsx");
 

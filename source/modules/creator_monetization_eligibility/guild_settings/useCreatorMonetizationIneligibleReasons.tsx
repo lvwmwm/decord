@@ -1,10 +1,10 @@
-// Module ID: 16270
-// Function ID: 125616
+// Module ID: 16277
+// Function ID: 125647
 // Name: useCreatorMonetizationIneligibleReasons
 // Dependencies: []
 // Exports: useCreatorMonetizationIneligibleReasons
 
-// Module 16270 (useCreatorMonetizationIneligibleReasons)
+// Module 16277 (useCreatorMonetizationIneligibleReasons)
 const _module = require(dependencyMap[1]);
 const result = _module.fileFinishedImporting("modules/creator_monetization_eligibility/guild_settings/useCreatorMonetizationIneligibleReasons.tsx");
 

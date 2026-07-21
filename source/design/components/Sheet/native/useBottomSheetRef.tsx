@@ -1,10 +1,10 @@
-// Module ID: 7176
-// Function ID: 57812
+// Module ID: 7180
+// Function ID: 57823
 // Name: useBottomSheetRef
 // Dependencies: []
 // Exports: useBottomSheetRef
 
-// Module 7176 (useBottomSheetRef)
+// Module 7180 (useBottomSheetRef)
 let closure_0 = importAll(dependencyMap[0]);
 const result = arg1(dependencyMap[1]).fileFinishedImporting("design/components/Sheet/native/useBottomSheetRef.tsx");
 

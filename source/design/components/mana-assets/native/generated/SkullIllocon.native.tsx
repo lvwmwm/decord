@@ -1,10 +1,10 @@
-// Module ID: 6505
-// Function ID: 50631
+// Module ID: 6507
+// Function ID: 50674
 // Name: SkullIllocon
 // Dependencies: []
 // Exports: SkullIllocon
 
-// Module 6505 (SkullIllocon)
+// Module 6507 (SkullIllocon)
 const jsx = require(dependencyMap[0]).jsx;
 const _module = require(dependencyMap[3]);
 const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/SkullIllocon.native.tsx");

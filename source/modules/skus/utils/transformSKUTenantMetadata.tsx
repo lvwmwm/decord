@@ -1,10 +1,10 @@
-// Module ID: 4164
-// Function ID: 35311
+// Module ID: 4168
+// Function ID: 35359
 // Name: transformCollectiblesItemAssetsFromServer
 // Dependencies: []
 // Exports: default
 
-// Module 4164 (transformCollectiblesItemAssetsFromServer)
+// Module 4168 (transformCollectiblesItemAssetsFromServer)
 function transformCollectiblesItemAssetsFromServer(assets) {
   if (null != assets) {
     const obj = {};

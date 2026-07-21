@@ -1,8 +1,8 @@
-// Module ID: 12229
-// Function ID: 93844
+// Module ID: 12236
+// Function ID: 93867
 // Dependencies: []
 
-// Module 12229
+// Module 12236
 let closure_2 = importDefault(dependencyMap[0]);
 let closure_3 = importDefault(dependencyMap[1]).throttle((code) => {
   const invite = invite.getInvite(code.code);

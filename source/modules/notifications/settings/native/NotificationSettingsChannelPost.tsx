@@ -1,10 +1,10 @@
-// Module ID: 10288
-// Function ID: 79428
+// Module ID: 10294
+// Function ID: 79447
 // Name: NotificationSettingsChannelPost
 // Dependencies: []
 // Exports: NotificationSettingsChannelPost
 
-// Module 10288 (NotificationSettingsChannelPost)
+// Module 10294 (NotificationSettingsChannelPost)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 let closure_4 = importDefault(dependencyMap[2]);

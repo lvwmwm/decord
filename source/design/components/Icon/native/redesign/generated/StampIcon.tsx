@@ -1,13 +1,12 @@
-// Module ID: 9945
-// Function ID: 76889
+// Module ID: 9950
+// Function ID: 76905
 // Name: StampIcon
-// Dependencies: [0, 0, 0, 4294967295, 0]
+// Dependencies: []
 // Exports: StampIcon
 
-// Module 9945 (StampIcon)
-import "result";
-import { jsx } from "result";
-
+// Module 9950 (StampIcon)
+importAll(dependencyMap[0]);
+const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/StampIcon.tsx");
 
 export const StampIcon = function StampIcon(color) {

@@ -1,9 +1,9 @@
-// Module ID: 7124
-// Function ID: 57307
+// Module ID: 7128
+// Function ID: 57318
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
-// Module 7124 (_isNativeReflectConstruct)
+// Module 7128 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -25,13 +25,13 @@ let tmp2 = (MessageType) => {
       self = this;
       tmp = closure_3(this, PremiumMarketingComponentProperties$Type);
       items = [, , , , , , , , , , , , , , , , , , , ];
-      items[0] = { flexDirection: "y", alignItems: "%MapIteratorPrototype%", backgroundColor: "isArray", borderRadius: "DEFAULT_NAVIGATION_SPAN_NAME", paddingHorizontal: "onActionExecuted" };
-      obj = { flexDirection: 1912602466, alignItems: 0, backgroundColor: 962072625, borderRadius: 779536564 };
+      items[0] = { "Null": "<string:24182788>", "Null": "<string:1090519040>", "Null": "box_animation_url", "Null": "<string:1903368529>", "Null": "Date" };
+      obj = { "Null": 1912602466, "Null": 0, "Null": 962072625, "Null": 779536564 };
       obj.T = function T() {
         return callback(closure_1[6]).AnnouncementModalVariant1Properties;
       };
       items[1] = obj;
-      obj = { flexDirection: "message", alignItems: "PLUM_9", backgroundColor: 1, borderRadius: "emoji_id" };
+      obj = { "Null": "message", "Null": "PLUM_9", "Null": 1, "Null": "emoji_id" };
       obj.T = function T() {
         return callback(closure_1[7]).PremiumTab;
       };
@@ -41,12 +41,12 @@ let tmp2 = (MessageType) => {
               return callback(closure_1[8]).MarketingPageBanner;
             }
       };
-      obj1 = { flexDirection: "done", alignItems: "construct", backgroundColor: "o", borderRadius: "isArray" };
+      obj1 = { "Null": true, "Null": true, "Null": true, "Null": true };
       obj1.T = function T() {
         return callback(closure_1[9]).PaymentModalBanner;
       };
       items[4] = obj1;
-      obj2 = { flexDirection: "<string:108118062>", alignItems: "<string:1895825408>", backgroundColor: "r", borderRadius: "<string:1018060626>" };
+      obj2 = { "Null": "<string:108118062>", "Null": "<string:1895825408>", "Null": "r", "Null": "<string:950936914>" };
       obj2.T = function T() {
         return callback(closure_1[10]).MobileBottomSheet;
       };
@@ -81,49 +81,49 @@ let tmp2 = (MessageType) => {
               return callback(closure_1[16]).GiftReminderNagbar;
             }
       };
-      obj3 = { flexDirection: null, alignItems: null, backgroundColor: null, borderRadius: null };
+      obj3 = { "Null": null, "Null": null, "Null": null, "Null": null };
       obj3.T = function T() {
         return callback(closure_1[17]).GiftReminderCoachmark;
       };
       items[12] = obj3;
-      obj4 = { flexDirection: "message", alignItems: "properties", backgroundColor: null, borderRadius: "\u{1F918}\u{1F3FB}" };
+      obj4 = { "Null": "message", "Null": "properties", "Null": null, "Null": "\u{1F918}\u{1F3FB}" };
       obj4.T = function T() {
         return callback(closure_1[18]).PremiumTabTooltip;
       };
       items[13] = obj4;
-      items[14] = {
-        T() {
-              return callback(closure_1[19]).PremiumTabPopover;
-            }
-      };
-      obj5 = { flexDirection: "GIFS_SEARCH", alignItems: "FORCE", backgroundColor: "absolute", borderRadius: "decorationStyle" };
+      obj5 = { "Null": "Array", "Null": "reachabilityUrl", "Null": "$", "Null": "queryKey" };
       obj5.T = function T() {
+        return callback(closure_1[19]).PremiumTabPopover;
+      };
+      items[14] = obj5;
+      obj6 = { "Null": false, "Null": false, "Null": false, "Null": false };
+      obj6.T = function T() {
         return callback(closure_1[20]).Nagbar;
       };
-      items[15] = obj5;
+      items[15] = obj6;
       items[16] = {
         T() {
               return callback(closure_1[21]).PlanSelectCardBanner;
             }
       };
-      obj6 = { flexDirection: "it", alignItems: "Array", backgroundColor: "isArray", borderRadius: "body" };
-      obj6.T = function T() {
+      obj7 = { "Null": -1251934207, "Null": 2417, "Null": 160000, "Null": 559022080 };
+      obj7.T = function T() {
         return callback(closure_1[22]).BillingSettingsBanner;
       };
-      items[17] = obj6;
-      items[18] = { body: false, guildId: false, ao: false, "": false };
+      items[17] = obj7;
+      items[18] = { 9223372036854775807: false, 0: false, 9223372036854775807: false, no: false };
       items[19] = {};
-      items1 = ["THREAD_UPDATE"];
+      items1 = ["loadUrl"];
       items1[1] = items;
-      obj9 = closure_6(PremiumMarketingComponentProperties$Type);
+      obj10 = closure_6(PremiumMarketingComponentProperties$Type);
       tmp2 = closure_5;
       if (closure_8()) {
         tmp4 = globalThis;
         _Reflect = Reflect;
         tmp5 = closure_6;
-        constructResult = Reflect.construct(obj9, items1, closure_6(self).constructor);
+        constructResult = Reflect.construct(obj10, items1, closure_6(self).constructor);
       } else {
-        constructResult = obj9.apply(self, items1);
+        constructResult = obj10.apply(self, items1);
       }
       return tmp2(self, constructResult);
     }
@@ -133,7 +133,7 @@ let tmp2 = (MessageType) => {
   let obj = {
     key: "create",
     value(arr) {
-      let obj = { "Bool(true)": true, "Bool(true)": "/assets/.cache/intl/bW9kdWxlcy9jaGVja291dC9tZXNzYWdlcw==", "Bool(true)": null, properties: { oneofKind: undefined } };
+      let obj = { properties: { oneofKind: undefined } };
       const _Object = Object;
       obj = { enumerable: false, value: this };
       _Object.defineProperty(obj, PremiumMarketingComponentProperties$Type(closure_1[23]).MESSAGE_TYPE, obj);
@@ -153,9 +153,15 @@ let tmp2 = (MessageType) => {
       if (null == arg3) {
         obj = self.create();
       }
-      if (pos.pos < pos.pos + arg1) {
-        [r10060, r10061] = callback(pos.tag(), 2);
-        const tmp3 = callback(pos.tag(), 2);
+      const sum = pos.pos + arg1;
+      if (pos.pos < sum) {
+        obj.isDefaultBase = pos.bool();
+        while (true) {
+          do {
+            let tmp3 = tmp5;
+            let tmp4 = tmp6;
+          } while (pos.pos >= sum);
+        }
       }
       return obj;
     }

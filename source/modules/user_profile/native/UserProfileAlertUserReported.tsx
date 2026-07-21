@@ -1,10 +1,10 @@
-// Module ID: 11640
-// Function ID: 90337
+// Module ID: 11647
+// Function ID: 90360
 // Name: UserProfileAlertUserReported
 // Dependencies: []
 // Exports: default
 
-// Module 11640 (UserProfileAlertUserReported)
+// Module 11647 (UserProfileAlertUserReported)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/user_profile/native/UserProfileAlertUserReported.tsx");

@@ -1,10 +1,12 @@
-// Module ID: 12752
-// Function ID: 97801
+// Module ID: 12759
+// Function ID: 97824
 // Name: ActivateDevice
-// Dependencies: []
+// Dependencies: [342949888, 91226112, 836763648, 270270464, 297467904, 131072, 528089088, 452984832, 553648128, 503316480, 301989904, 3758096419, 469762097, 3154116624, 3137339396, 33554449, 1946157056, 4096, 12773, 1934, 2]
 // Exports: ActivateDevice
 
-// Module 12752 (ActivateDevice)
+// Module 12759 (ActivateDevice)
+import result2 from "result2";
+
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 ({ View: closure_5, ImageBackground: closure_6, ActivityIndicator: closure_7, ScrollView: closure_8 } = arg1(dependencyMap[2]));
@@ -14,18 +16,17 @@ obj = { background: { flex: 1 } };
 obj = { backgroundColor: importDefault(dependencyMap[5]).colors.TEXT_BRAND };
 obj.imageStyle = obj;
 obj.safeArea = {};
-const obj1 = { paddingRight: "%ArrayProto_keys%", flexDirection: "containerLandscape", flexWrap: "isArray", alignItems: "ad", overflow: "isArray", flex: "MUR", flexDirection: "secondary", alignItems: "GET_ENTITLEMENTS", marginTop: "sm", marginTop: "canExpand", backgroundColor: importDefault(dependencyMap[5]).colors.PANEL_BG, borderRadius: importDefault(dependencyMap[5]).radii.lg, shadowColor: importDefault(dependencyMap[5]).colors.BLACK, shadowOffset: { aze: false, azj: false }, shadowRadius: 4 };
+const obj1 = { marginTop: "sm", alignItems: null, flexDirection: null, backgroundColor: importDefault(dependencyMap[5]).colors.PANEL_BG, borderRadius: importDefault(dependencyMap[5]).radii.lg, paddingHorizontal: 0, paddingVertical: 0, marginRight: 8, flexDirection: 8, marginBottom: true, shadowColor: importDefault(dependencyMap[5]).colors.BLACK, shadowOffset: {}, shadowRadius: 4 };
 obj.content = obj1;
 obj.scroller = {};
 obj.scrollerContent = {};
 let closure_10 = obj.createStyles(obj);
-const tmp2 = arg1(dependencyMap[2]);
-const result = arg1(dependencyMap[20]).fileFinishedImporting("modules/activate_device/native/ActivateDevice.tsx");
+const result = result2.fileFinishedImporting("modules/activate_device/native/ActivateDevice.tsx");
 
 export const ActivateDevice = (onClose) => {
   onClose = onClose.onClose;
   const tmp = callback2();
-  const tmp2 = callback(React.useState({ "Bool(true)": null, "Bool(true)": null }), 2);
+  const tmp2 = callback(React.useState({}), 2);
   const first = tmp2[0];
   const arg1 = first;
   const importDefault = tmp4;
@@ -52,14 +53,16 @@ export const ActivateDevice = (onClose) => {
   const React = deviceCodeAuthorizeCallback;
   const items3 = [deviceCodeAuthorizeCallback];
   const items4 = [first];
-  const callback3 = React.useCallback((userCodeData) => {
-    const first = userCodeData;
-    let obj = { type: "authorization", userCodeData };
+  const callback3 = React.useCallback((clientId) => {
+    const first = clientId;
+    let obj = { type: "authorization", userCodeData: clientId };
     tmp4(obj);
-    obj = { <string:1453996644>: 1174405870, <string:626807124>: -117439765, <string:3130342485>: 1207960298, <string:3348140680>: -2063596810, <string:1637401752>: 335545070, <string:2221429479>: "a" };
-    ({ clientId: obj3.clientId, scopes: obj3.scopes } = userCodeData);
-    obj.callbackWithoutPost = function callbackWithoutPost(arg0) {
-      return callback(arg0, arg0);
+    obj = {
+      clientId: clientId.clientId,
+      scopes: clientId.scopes,
+      callbackWithoutPost(arg0) {
+        return callback(arg0, arg0);
+      }
     };
     first(first1[8]).openOAuth2Modal(obj);
   }, items3);

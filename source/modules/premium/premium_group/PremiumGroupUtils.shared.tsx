@@ -1,10 +1,10 @@
-// Module ID: 7726
-// Function ID: 61439
+// Module ID: 7730
+// Function ID: 61451
 // Name: getPriceString
 // Dependencies: []
 // Exports: getPriceString
 
-// Module 7726 (getPriceString)
+// Module 7730 (getPriceString)
 let closure_2 = importDefault(dependencyMap[0]);
 const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/premium/premium_group/PremiumGroupUtils.shared.tsx");
 

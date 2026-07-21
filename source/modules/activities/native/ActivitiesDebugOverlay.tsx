@@ -1,16 +1,16 @@
-// Module ID: 15691
-// Function ID: 119961
+// Module ID: 15698
+// Function ID: 119985
 // Name: ActivitiesDebugOverlay
 // Dependencies: []
 // Exports: default
 
-// Module 15691 (ActivitiesDebugOverlay)
+// Module 15698 (ActivitiesDebugOverlay)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 ({ jsxs: closure_4, jsx: closure_5 } = arg1(dependencyMap[2]));
 let obj = arg1(dependencyMap[3]);
 obj = {};
-obj = { 609333452: false, 1709990150: false, -659493684: false, 1315000931: false, -865751874: false, -1594117908: false };
+obj = {};
 const tmp3 = arg1(dependencyMap[2]);
 obj.backgroundColor = arg1(dependencyMap[4]).hexWithOpacity(importDefault(dependencyMap[5]).unsafe_rawColors.BLACK, 0.7);
 obj.container = obj;
@@ -48,7 +48,7 @@ export default function ActivitiesDebugOverlay() {
   obj = { paddingTop: rect.top + 16, paddingLeft: rect.left + 16 };
   items[1] = obj;
   obj = { style: tmp.row };
-  const items1 = [callback(arg1(dependencyMap[8]).Text, { children: ["<string:4168417284>", "<string:2084700161>"] }), ];
+  const items1 = [callback(arg1(dependencyMap[8]).Text, { children: [] }), ];
   const obj1 = { variant: "text-md/normal", color: str2, children: str };
   items1[1] = callback2(arg1(dependencyMap[8]).Text, obj1);
   obj.children = items1;

@@ -1,10 +1,10 @@
-// Module ID: 15369
-// Function ID: 117166
+// Module ID: 15376
+// Function ID: 117190
 // Name: FolderPlusIcon
 // Dependencies: []
 // Exports: FolderPlusIcon
 
-// Module 15369 (FolderPlusIcon)
+// Module 15376 (FolderPlusIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/FolderPlusIcon.tsx");

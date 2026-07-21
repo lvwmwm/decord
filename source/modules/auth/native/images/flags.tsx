@@ -1,9 +1,9 @@
-// Module ID: 14124
-// Function ID: 107212
+// Module ID: 14131
+// Function ID: 107235
 // Name: flags
 // Dependencies: []
 
-// Module 14124 (flags)
+// Module 14131 (flags)
 const _module = require(dependencyMap[31]);
 const result = _module.fileFinishedImporting("modules/auth/native/images/flags.tsx");
 

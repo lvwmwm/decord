@@ -1,9 +1,9 @@
-// Module ID: 5270
-// Function ID: 44787
+// Module ID: 5272
+// Function ID: 44828
 // Name: emojiTermsImporter
 // Dependencies: []
 
-// Module 5270 (emojiTermsImporter)
+// Module 5272 (emojiTermsImporter)
 const _module = require(dependencyMap[30]);
 const result = _module.fileFinishedImporting("modules/emoji_terms/EmojiTermsImporter.js");
 

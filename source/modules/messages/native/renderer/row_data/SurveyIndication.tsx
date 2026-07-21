@@ -1,10 +1,10 @@
-// Module ID: 7902
-// Function ID: 62898
+// Module ID: 7906
+// Function ID: 62910
 // Name: createSurveyIndication
 // Dependencies: []
 // Exports: createSurveyIndication
 
-// Module 7902 (createSurveyIndication)
+// Module 7906 (createSurveyIndication)
 const NotificationTypes = require(dependencyMap[0]).NotificationTypes;
 const _module = require(dependencyMap[6]);
 const result = _module.fileFinishedImporting("modules/messages/native/renderer/row_data/SurveyIndication.tsx");

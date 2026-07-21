@@ -1,7 +1,7 @@
 // Module ID: 1669
 // Function ID: 18534
 // Name: findDescendantWithExitingAnimation
-// Dependencies: []
+// Dependencies: [4294967295]
 
 // Module 1669 (findDescendantWithExitingAnimation)
 function findDescendantWithExitingAnimation(isDummy, appendChild) {
@@ -198,7 +198,7 @@ arg5.addHTMLMutationObserver = function addHTMLMutationObserver() {
       }
     });
     const _document = document;
-    mutationObserver.observe(document.body, { "Bool(true)": null, "Bool(true)": null });
+    mutationObserver.observe(document.body, { "Null": null, "Null": null });
   }
 };
 arg5.areDOMRectsEqual = function areDOMRectsEqual(size, arg1) {

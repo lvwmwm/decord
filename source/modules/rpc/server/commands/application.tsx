@@ -1,8 +1,8 @@
-// Module ID: 13264
-// Function ID: 100780
-// Dependencies: [5, 1347, 1348, 4031, 653, 482, 13273, 8298, 10480, 10802, 13276, 669, 10469]
+// Module ID: 13271
+// Function ID: 100803
+// Dependencies: [5, 1347, 1348, 4031, 653, 482, 13280, 8302, 10486, 10808, 13283, 669, 10475]
 
-// Module 13264
+// Module 13271
 import asyncGeneratorStep from "asyncGeneratorStep";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import _runPrimaryAppCommandOrJoinEmbeddedActivity from "_runPrimaryAppCommandOrJoinEmbeddedActivity";
@@ -75,7 +75,7 @@ obj = {
       throw tmp3;
     } else {
       const HTTP = arg1(dependencyMap[10]).HTTP;
-      obj = { "Null": "<string:868679681>", "Null": "<string:868614145>", "Null": "<string:2655256577>", "Null": "<string:2650800874>", "Null": "<string:2701132522>", url: closure_5.APPLICATION_TICKET(id) };
+      obj = { url: closure_5.APPLICATION_TICKET(id) };
       obj = { test_mode: arg1(dependencyMap[11]).isTestModeForApplication(id) };
       obj.body = obj;
       const obj4 = arg1(dependencyMap[11]);

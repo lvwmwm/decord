@@ -1,5 +1,5 @@
 // Module ID: 5048
-// Function ID: 43055
+// Function ID: 43074
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
@@ -18,15 +18,31 @@ let closure_1 = importDefault(dependencyMap[1]);
 let closure_2 = importDefault(dependencyMap[2]);
 let closure_3 = importDefault(dependencyMap[3]);
 let closure_4 = importDefault(dependencyMap[4]);
+let closure_5 = importDefault(dependencyMap[5]);
+let closure_6 = { code: "function changeEventCalculator_Pnpm_pinchGestureTs1(current,previous){let changePayload;if(previous===undefined){changePayload={scaleChange:current.scale};}else{changePayload={scaleChange:current.scale/previous.scale};}return{...current,...changePayload};}" };
+let closure_7 = () => {
+  function changeEventCalculator(scale, scale2) {
+    if (undefined === scale2) {
+      let obj = { scaleChange: scale.scale };
+    } else {
+      obj = { scaleChange: scale.scale / scale2.scale };
+    }
+    return Object.assign({}, scale, obj);
+  }
+  changeEventCalculator.__closure = {};
+  changeEventCalculator.__workletHash = 9876979738005;
+  changeEventCalculator.__initData = closure_6;
+  return changeEventCalculator;
+}();
 
-export const FlingGesture = (BaseGesture) => {
-  class FlingGesture {
+export const PinchGesture = (ContinousBaseGesture) => {
+  class PinchGesture {
     constructor() {
       self = this;
-      tmp = FlingGesture(this, FlingGesture);
-      obj = closure_3(FlingGesture);
+      tmp = PinchGesture(this, PinchGesture);
+      obj = closure_3(PinchGesture);
       tmp2 = closure_2;
-      if (closure_5()) {
+      if (closure_8()) {
         tmp4 = globalThis;
         _Reflect = Reflect;
         tmp5 = closure_3;
@@ -35,28 +51,35 @@ export const FlingGesture = (BaseGesture) => {
         constructResult = obj.apply(self, undefined);
       }
       tmp2Result = tmp2(self, constructResult);
-      tmp2Result.config = {};
-      tmp2Result.handlerName = "FlingGestureHandler";
+      tmp2Result.handlerName = "PinchGestureHandler";
       return tmp2Result;
     }
   }
-  let closure_0 = FlingGesture;
-  callback2(FlingGesture, BaseGesture);
-  let obj = {
-    key: "numberOfPointers",
-    value: function numberOfPointers(numberOfPointers) {
-      this.config.numberOfPointers = numberOfPointers;
-      return this;
+  let closure_0 = PinchGesture;
+  callback2(PinchGesture, ContinousBaseGesture);
+  const items = [
+    {
+      key: "onChange",
+      value: function onChange(arg0) {
+        this.handlers.changeEventCalculator = closure_7;
+        const items = [arg0];
+        return function _superPropGet(PinchGesture, onChange, arg2, arg3) {
+          let prototype = PinchGesture;
+          if (1) {
+            prototype = PinchGesture.prototype;
+          }
+          const tmpResult = closure_4(closure_3(prototype), "onChange", arg2);
+          let fn = tmpResult;
+          if (2) {
+            fn = tmpResult;
+            if ("function" === typeof tmpResult) {
+              fn = (arg0) => tmpResult.apply(arg2, arg0);
+            }
+          }
+          return fn;
+        }(PinchGesture, "onChange", this, 3)(items);
+      }
     }
-  };
-  const items = [obj, ];
-  obj = {
-    key: "direction",
-    value: function direction(DOWN) {
-      this.config.direction = DOWN;
-      return this;
-    }
-  };
-  items[1] = obj;
-  return callback(FlingGesture, items);
-}(arg1(dependencyMap[5]).BaseGesture);
+  ];
+  return callback(PinchGesture, items);
+}(arg1(dependencyMap[6]).ContinousBaseGesture);

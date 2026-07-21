@@ -1,9 +1,9 @@
-// Module ID: 5904
-// Function ID: 49730
+// Module ID: 5906
+// Function ID: 49773
 // Name: metadata
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 5904 (metadata)
+// Module 5906 (metadata)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/BountiesPosterIllocon-2x.png.js");
 

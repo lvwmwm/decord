@@ -1,10 +1,10 @@
-// Module ID: 4564
-// Function ID: 39988
+// Module ID: 4568
+// Function ID: 40036
 // Name: useHasEnhancedRoleColors
 // Dependencies: []
 // Exports: default, getHasEnhancedRoleColors, getHasEnhancedRoleColorsForRole, useHasEnhancedRoleColorsForRole
 
-// Module 4564 (useHasEnhancedRoleColors)
+// Module 4568 (useHasEnhancedRoleColors)
 let closure_2 = importDefault(dependencyMap[0]);
 const GuildFeatures = arg1(dependencyMap[1]).GuildFeatures;
 const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/premium/powerups/hooks/useHasEnhancedRoleColors.tsx");

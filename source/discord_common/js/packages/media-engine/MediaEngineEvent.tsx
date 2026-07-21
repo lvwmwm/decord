@@ -1,9 +1,9 @@
-// Module ID: 4291
-// Function ID: 37556
+// Module ID: 4295
+// Function ID: 37604
 // Name: MediaEngineEvent
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 4291 (MediaEngineEvent)
+// Module 4295 (MediaEngineEvent)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_common/js/packages/media-engine/MediaEngineEvent.tsx");
 

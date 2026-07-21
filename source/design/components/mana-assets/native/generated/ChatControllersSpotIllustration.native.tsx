@@ -1,10 +1,10 @@
-// Module ID: 5933
-// Function ID: 49773
+// Module ID: 5935
+// Function ID: 49816
 // Name: ChatControllersSpotIllustration
 // Dependencies: []
 // Exports: ChatControllersSpotIllustration
 
-// Module 5933 (ChatControllersSpotIllustration)
+// Module 5935 (ChatControllersSpotIllustration)
 const jsx = require(dependencyMap[0]).jsx;
 const _module = require(dependencyMap[3]);
 const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/ChatControllersSpotIllustration.native.tsx");

@@ -1,10 +1,10 @@
-// Module ID: 11061
-// Function ID: 86067
+// Module ID: 11067
+// Function ID: 86090
 // Name: SoundmojiActionSheet
 // Dependencies: []
 // Exports: default
 
-// Module 11061 (SoundmojiActionSheet)
+// Module 11067 (SoundmojiActionSheet)
 let closure_3 = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 ({ jsx: closure_5, jsxs: closure_6 } = arg1(dependencyMap[2]));
@@ -12,7 +12,7 @@ let obj = arg1(dependencyMap[3]);
 obj = {};
 obj = { padding: importDefault(dependencyMap[4]).space.PX_24, gap: importDefault(dependencyMap[4]).space.PX_16 };
 obj.container = obj;
-obj.soundmojiContainer = { -9223372036854775808: true, filter: true };
+obj.soundmojiContainer = {};
 const obj1 = {};
 const tmp2 = arg1(dependencyMap[2]);
 let num;

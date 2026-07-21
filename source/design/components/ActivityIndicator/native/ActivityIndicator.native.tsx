@@ -1,10 +1,10 @@
-// Module ID: 5582
-// Function ID: 47335
+// Module ID: 5584
+// Function ID: 47377
 // Name: ActivityIndicator
 // Dependencies: []
 // Exports: ActivityIndicator
 
-// Module 5582 (ActivityIndicator)
+// Module 5584 (ActivityIndicator)
 const ActivityIndicator = require(dependencyMap[0]).ActivityIndicator;
 const jsx = require(dependencyMap[1]).jsx;
 const _module = require(dependencyMap[4]);

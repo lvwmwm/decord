@@ -11,7 +11,7 @@ const fn = function t(moment) {
     weekdays: "\u043D\u0435\u0434\u0435\u043B\u044F_\u043F\u043E\u043D\u0435\u0434\u0435\u043B\u043D\u0438\u043A_\u0432\u0442\u043E\u0440\u043D\u0438\u043A_\u0441\u0440\u044F\u0434\u0430_\u0447\u0435\u0442\u0432\u044A\u0440\u0442\u044A\u043A_\u043F\u0435\u0442\u044A\u043A_\u0441\u044A\u0431\u043E\u0442\u0430".split("_"),
     weekdaysShort: "\u043D\u0435\u0434_\u043F\u043E\u043D_\u0432\u0442\u043E_\u0441\u0440\u044F_\u0447\u0435\u0442_\u043F\u0435\u0442_\u0441\u044A\u0431".split("_"),
     weekdaysMin: "\u043D\u0434_\u043F\u043D_\u0432\u0442_\u0441\u0440_\u0447\u0442_\u043F\u0442_\u0441\u0431".split("_"),
-    longDateFormat: {},
+    longDateFormat: { <string:1122280543>: -2013265571, <string:3251850218>: 1694499265, <string:306010250>: 469762621, <string:37429971>: 1828717015, <string:1812403200>: 1912603118, <string:3855182856>: 0 },
     calendar: obj,
     relativeTime: {},
     dayOfMonthOrdinalParse: /\d{1,2}-(ев|ен|ти|ви|ри|ми)/,
@@ -46,12 +46,12 @@ const fn = function t(moment) {
     week: {}
   };
   obj = {
-    alignItems: "isArrayBufferToString",
-    position: "xFn72s",
-    <string:1373947542>: "isArrayBufferToString",
-    <string:2681378794>: "webkitGetEntriesByType",
-    <string:1413374383>: "isArrayBufferToString",
-    <string:1720105976>: "webkitGetEntriesByType",
+    status: null,
+    padding: null,
+    opacity: null,
+    PX_8: null,
+    Symbol: null,
+    r: null,
     lastWeek() {
       const dayResult = this.day();
       if (0 !== dayResult) {
@@ -75,7 +75,7 @@ if ("object" === typeof exports) {
 }
 if ("function" === typeof globalThis.define) {
   if (globalThis.define.amd) {
-    globalThis.define([1782644737], fn);
+    globalThis.define(["HH:mm:ss"], fn);
   }
 }
 fn(this.moment);

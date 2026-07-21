@@ -1,10 +1,10 @@
-// Module ID: 14220
-// Function ID: 107510
+// Module ID: 14227
+// Function ID: 107533
 // Name: UserSettingsCommunityNotifications
 // Dependencies: []
 // Exports: default
 
-// Module 14220 (UserSettingsCommunityNotifications)
+// Module 14227 (UserSettingsCommunityNotifications)
 importAll(dependencyMap[0]);
 let closure_3 = importDefault(dependencyMap[1]);
 ({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[2]));

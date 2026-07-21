@@ -1,10 +1,10 @@
-// Module ID: 8171
-// Function ID: 64512
+// Module ID: 8175
+// Function ID: 64524
 // Name: getPlatform
 // Dependencies: []
 // Exports: default
 
-// Module 8171 (getPlatform)
+// Module 8175 (getPlatform)
 const _module = require(dependencyMap[1]);
 const result = _module.fileFinishedImporting("modules/activities/utils/getPlatform.tsx");
 

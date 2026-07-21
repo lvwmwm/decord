@@ -1,10 +1,10 @@
-// Module ID: 10344
-// Function ID: 79829
+// Module ID: 10350
+// Function ID: 79852
 // Name: AnimatedChatInputReplyBar
 // Dependencies: []
 // Exports: MessageReplyInput
 
-// Module 10344 (AnimatedChatInputReplyBar)
+// Module 10350 (AnimatedChatInputReplyBar)
 function AnimatedChatInputReplyBar(replying) {
   let onToggleReplyMention;
   let pendingReply;
@@ -28,7 +28,7 @@ function AnimatedChatInputReplyBar(replying) {
   }, items);
   const obj2 = arg1(dependencyMap[10]);
   const fn = function y() {
-    const obj = { height: replying(closure_2[10]).interpolate(sharedValue.get(), [null, null], [true, true]), opacity: sharedValue.get() };
+    const obj = { height: replying(closure_2[10]).interpolate(sharedValue.get(), ["Text", "lc"], ["Set", "shapes"]), opacity: sharedValue.get() };
     return obj;
   };
   obj = { interpolate: arg1(dependencyMap[10]).interpolate, sv: sharedValue, REPLY_BAR_HEIGHT: 40 };
@@ -53,16 +53,16 @@ let obj = arg1(dependencyMap[7]);
 obj = {};
 obj = { backgroundColor: importDefault(dependencyMap[8]).colors.MOBILE_ALERT_BACKGROUND_DEFAULT, marginHorizontal: importDefault(dependencyMap[8]).space.PX_16, marginBottom: importDefault(dependencyMap[8]).space.PX_4, borderRadius: importDefault(dependencyMap[8]).radii.lg, overflow: "hidden" };
 obj.inputContainer = obj;
-obj.iconsContainer = {};
+obj.iconsContainer = { <string:3461472865>: "safety_user_sentiment_notice_dismissed_at", <string:1447977218>: "message", <string:1640807382>: null };
 const tmp3 = arg1(dependencyMap[6]);
 obj.input = { borderRadius: importDefault(dependencyMap[8]).radii.none, color: importDefault(dependencyMap[8]).colors.TEXT_DEFAULT };
 const obj1 = { borderRadius: importDefault(dependencyMap[8]).radii.none, color: importDefault(dependencyMap[8]).colors.TEXT_DEFAULT };
 obj.inputRow = { paddingHorizontal: importDefault(dependencyMap[8]).space.PX_12, paddingVertical: importDefault(dependencyMap[8]).space.PX_12 };
 const obj2 = { paddingHorizontal: importDefault(dependencyMap[8]).space.PX_12, paddingVertical: importDefault(dependencyMap[8]).space.PX_12 };
 obj.placeholderText = { color: importDefault(dependencyMap[8]).colors.INPUT_PLACEHOLDER_TEXT_DEFAULT };
+const obj4 = { "Null": null, "Null": null, backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_MOD_STRONG, borderBottomWidth: tmp2.StyleSheet.hairlineWidth, borderBottomColor: importDefault(dependencyMap[8]).colors.BORDER_MUTED, overflow: "hidden" };
+obj.replyBarContainer = obj4;
 const obj3 = { color: importDefault(dependencyMap[8]).colors.INPUT_PLACEHOLDER_TEXT_DEFAULT };
-obj.replyBarContainer = { backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_MOD_STRONG, borderBottomWidth: tmp2.StyleSheet.hairlineWidth, borderBottomColor: importDefault(dependencyMap[8]).colors.BORDER_MUTED, overflow: "hidden" };
-const obj4 = { backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_MOD_STRONG, borderBottomWidth: tmp2.StyleSheet.hairlineWidth, borderBottomColor: importDefault(dependencyMap[8]).colors.BORDER_MUTED, overflow: "hidden" };
 obj.replyBarNoRedesign = { paddingLeft: importDefault(dependencyMap[8]).space.PX_12, paddingRight: importDefault(dependencyMap[8]).space.PX_8 };
 const obj5 = { paddingLeft: importDefault(dependencyMap[8]).space.PX_12, paddingRight: importDefault(dependencyMap[8]).space.PX_8 };
 obj.replyBarRedesign = { paddingLeft: importDefault(dependencyMap[8]).space.PX_4 };
@@ -199,14 +199,14 @@ export const MessageReplyInput = function MessageReplyInput(notification) {
   obj6.onChangeText = tmp2[1];
   items4[1] = callback2(arg1(dependencyMap[27]).NativeTextInput, obj6);
   const obj7 = { style: tmp11.iconsContainer };
-  const obj8 = { <string:1522289750>: null, <string:570601313>: null };
+  const obj8 = { 9223372036854775807: true, -9223372036854775808: true };
   const obj9 = { size: "sm", color: importDefault(dependencyMap[8]).colors.CHAT_INPUT_ICON_DEFAULT_TINT };
   obj8.icon = callback2(arg1(dependencyMap[28]).ReactionIcon, obj9);
   obj8.onPress = callback;
   const intl3 = arg1(dependencyMap[26]).intl;
   obj8.accessibilityLabel = intl3.string(arg1(dependencyMap[26]).t.sMOuuS);
   const items6 = [callback2(arg1(dependencyMap[24]).IconButton, obj8), ];
-  const obj10 = {};
+  const obj10 = { 9223372036854775807: 32768000, -9223372036854775808: 30653696 };
   const intl4 = arg1(dependencyMap[26]).intl;
   obj10.accessibilityLabel = intl4.string(arg1(dependencyMap[26]).t.TXNS7S);
   const obj11 = { size: "sm", color: importDefault(dependencyMap[8]).colors.WHITE };

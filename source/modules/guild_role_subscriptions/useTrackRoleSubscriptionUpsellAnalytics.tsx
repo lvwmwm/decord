@@ -1,10 +1,10 @@
-// Module ID: 15130
-// Function ID: 114198
+// Module ID: 15137
+// Function ID: 114222
 // Name: useTrackRoleSubscriptionUpsellAnalytics
 // Dependencies: []
 // Exports: default
 
-// Module 15130 (useTrackRoleSubscriptionUpsellAnalytics)
+// Module 15137 (useTrackRoleSubscriptionUpsellAnalytics)
 let closure_3 = importAll(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 const AnalyticEvents = arg1(dependencyMap[2]).AnalyticEvents;

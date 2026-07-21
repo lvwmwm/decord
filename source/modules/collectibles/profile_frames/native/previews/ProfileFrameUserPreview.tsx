@@ -1,10 +1,10 @@
-// Module ID: 8738
-// Function ID: 69115
+// Module ID: 8742
+// Function ID: 69127
 // Name: ProfileFrameUserPreview
 // Dependencies: []
 // Exports: default
 
-// Module 8738 (ProfileFrameUserPreview)
+// Module 8742 (ProfileFrameUserPreview)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/collectibles/profile_frames/native/previews/ProfileFrameUserPreview.tsx");

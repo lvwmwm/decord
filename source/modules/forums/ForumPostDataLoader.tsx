@@ -1,10 +1,10 @@
-// Module ID: 5675
-// Function ID: 48697
+// Module ID: 5677
+// Function ID: 48740
 // Name: _shouldRequestFirstMessage
 // Dependencies: []
 // Exports: preloadForumThreads, useFirstForumPostMessage, useMostRecentForumMessage
 
-// Module 5675 (_shouldRequestFirstMessage)
+// Module 5677 (_shouldRequestFirstMessage)
 function _shouldRequestFirstMessage(loaded, firstMessage) {
   let tmp = !loaded;
   if (tmp) {

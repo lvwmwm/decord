@@ -1,10 +1,10 @@
-// Module ID: 10469
-// Function ID: 81066
+// Module ID: 10475
+// Function ID: 81089
 // Name: _runPrimaryAppCommandOrJoinEmbeddedActivity
 // Dependencies: []
 // Exports: consumeRequestToReactToSeriousThermalState, dismissNewActivityIndicator, disregardSeriousThermalState, fetchDeveloperApplications, fetchShelf, maybeDisconnectFromCurrentActivity, openActivityPopoutWindow, refreshProxyTicket, requestRespondToSeriousThermalState, runPrimaryAppCommandOrJoinEmbeddedActivity, sendEmbeddedActivityInvite, sendEmbeddedActivityInviteUser, updateActivityPopoutWindowLayout, updateFocusedActivityLayout, uploadImageAttachment, validateTestMode
 
-// Module 10469 (_runPrimaryAppCommandOrJoinEmbeddedActivity)
+// Module 10475 (_runPrimaryAppCommandOrJoinEmbeddedActivity)
 function _runPrimaryAppCommandOrJoinEmbeddedActivity() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);

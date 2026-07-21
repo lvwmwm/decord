@@ -1,10 +1,10 @@
-// Module ID: 12738
-// Function ID: 97737
+// Module ID: 12745
+// Function ID: 97760
 // Name: OneTimeLoginModal
 // Dependencies: []
 // Exports: default
 
-// Module 12738 (OneTimeLoginModal)
+// Module 12745 (OneTimeLoginModal)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 ({ View: closure_5, ActivityIndicator: closure_6, Image: closure_7 } = arg1(dependencyMap[2]));
@@ -25,12 +25,12 @@ obj.bottomContent = { alignItems: "center", gap: importDefault(dependencyMap[9])
 obj.logo = {};
 const obj1 = { alignItems: "center", gap: importDefault(dependencyMap[9]).space.PX_8 };
 obj.loadingContainer = { gap: importDefault(dependencyMap[9]).space.PX_8 };
-const obj3 = { 9223372036854775807: "MESSAGE_REQUEST", 0: "green_book", -9223372036854775808: "AsyncIterator", textDecorationColor: importDefault(dependencyMap[9]).colors.TEXT_DEFAULT };
-obj.link = obj3;
-const obj4 = { "Bool(false)": 122, "Bool(false)": null, "Bool(false)": 1, "Bool(false)": 224, "Bool(false)": null, "Bool(false)": 1, -1918788825: 293, borderRadius: importDefault(dependencyMap[9]).radii.round, backgroundColor: importDefault(dependencyMap[9]).colors.BACKGROUND_SURFACE_HIGH };
+const obj2 = { gap: importDefault(dependencyMap[9]).space.PX_8 };
+obj.link = { textDecorationColor: importDefault(dependencyMap[9]).colors.TEXT_DEFAULT };
+const obj4 = { "Bool(false)": 122, "Bool(false)": null, "Bool(false)": 1, "Bool(false)": 224, "Bool(false)": null, "Bool(false)": 1, "Bool(false)": 293, borderRadius: importDefault(dependencyMap[9]).radii.round, backgroundColor: importDefault(dependencyMap[9]).colors.BACKGROUND_SURFACE_HIGH };
 obj.raisedIcon = obj4;
 let closure_15 = obj.createStyles(obj);
-const obj2 = { gap: importDefault(dependencyMap[9]).space.PX_8 };
+const obj3 = { textDecorationColor: importDefault(dependencyMap[9]).colors.TEXT_DEFAULT };
 const result = arg1(dependencyMap[28]).fileFinishedImporting("modules/one_time_login/native/OneTimeLoginModal.tsx");
 
 export default function OneTimeLoginModal(token) {
@@ -57,7 +57,7 @@ export default function OneTimeLoginModal(token) {
     let obj = tmp(tmp2[13]);
     obj = { has_token: null != token };
     obj.track(constants2.ONE_TIME_LOGIN_MODAL_OPENED, obj);
-    tmp(tmp2[13]).track(constants2.DEEP_LINK_CLICKED, { useState: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000729112326898752, borderRadius: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000006790659434620779, backgroundColor: 0.000000000000000000000000000000000000000006907095334311853 });
+    tmp(tmp2[13]).track(constants2.DEEP_LINK_CLICKED, { "Null": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000729112326898752, "Null": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000006795325752693196, "Null": 0.00000000000000000000000000000000000000000004099383275409865 });
   }, items1);
   callback = React.useCallback(() => {
     tmp(tmp2[13]).track(constants2.ONE_TIME_LOGIN_MODAL_CANCEL_CLICKED, { current_state: "loading" });
@@ -78,7 +78,7 @@ export default function OneTimeLoginModal(token) {
   const callback2 = React.useCallback(() => {
     let obj = token(tmp2[17]);
     obj = {};
-    obj = { style: tmp.raisedIcon, children: callback(token(tmp2[19]).CircleErrorIcon, { size: "custom", style: { aze: 30706176, azj: 378290688 } }) };
+    obj = { style: tmp.raisedIcon, children: callback(token(tmp2[19]).CircleErrorIcon, { size: "custom", style: {} }) };
     obj.header = callback(callback1, obj);
     const intl = token(tmp2[20]).intl;
     obj.title = intl.string(token(tmp2[20]).t.L6htwI);
@@ -96,7 +96,7 @@ export default function OneTimeLoginModal(token) {
   const fn = () => {
     let obj = token(tmp2[17]);
     obj = {};
-    obj = { style: tmp.raisedIcon, children: callback(token(tmp2[19]).CircleErrorIcon, { size: "custom", style: { aze: 30706176, azj: 378290688 } }) };
+    obj = { style: tmp.raisedIcon, children: callback(token(tmp2[19]).CircleErrorIcon, { size: "custom", style: {} }) };
     obj.header = callback(callback1, obj);
     const intl = token(tmp2[20]).intl;
     obj.title = intl.string(token(tmp2[20]).t.MKW8z2);
@@ -154,7 +154,7 @@ export default function OneTimeLoginModal(token) {
   const intl2 = arg1(dependencyMap[20]).intl;
   obj7.children = intl2.string(arg1(dependencyMap[20]).t.ZXe5/Y);
   const items10 = [callback2(arg1(dependencyMap[26]).Text, obj7), ];
-  const obj8 = { "Bool(false)": 29312346, "Bool(false)": 2161, "Bool(false)": 1163546880 };
+  const obj8 = { w: 29705613, h: 2161, ip: 1166889216 };
   const intl3 = arg1(dependencyMap[20]).intl;
   obj8.text = intl3.string(arg1(dependencyMap[20]).t.FIEwfG);
   obj8.onPress = callback;

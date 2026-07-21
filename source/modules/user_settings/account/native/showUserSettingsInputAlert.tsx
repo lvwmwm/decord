@@ -1,17 +1,17 @@
-// Module ID: 13569
-// Function ID: 102894
+// Module ID: 13576
+// Function ID: 102917
 // Name: showUserSettingsInputAlert
 // Dependencies: []
 // Exports: default
 
-// Module 13569 (showUserSettingsInputAlert)
+// Module 13576 (showUserSettingsInputAlert)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/user_settings/account/native/showUserSettingsInputAlert.tsx");
 
 export default function showUserSettingsInputAlert(arg0) {
   ({ onSubmit: closure_0, onSuccess: closure_1, onError: closure_2 } = arg0);
-  let obj = {};
+  let obj = { sanitizeWhitespace: "spring", SUBMIT_UNAUTHENTICATED_REPORT_MENU: "linear", responseURL: "easeInEaseOut" };
   Object.setPrototypeOf(null);
   let closure_3 = Object.assign(arg0, obj);
   obj = {

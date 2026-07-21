@@ -1,8 +1,8 @@
-// Module ID: 16414
-// Function ID: 126823
-// Dependencies: []
+// Module ID: 16421
+// Function ID: 126857
+// Dependencies: [284214097]
 
-// Module 16414
+// Module 16421
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("modules/native_intents/IntentsBindings.android.tsx");
 

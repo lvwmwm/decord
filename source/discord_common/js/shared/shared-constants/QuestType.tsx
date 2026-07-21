@@ -1,9 +1,9 @@
-// Module ID: 6958
-// Function ID: 55659
+// Module ID: 6962
+// Function ID: 55670
 // Name: QuestType
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 6958 (QuestType)
+// Module 6962 (QuestType)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_common/js/shared/shared-constants/QuestType.tsx");
 

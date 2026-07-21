@@ -1,7 +1,7 @@
 // Module ID: 3744
 // Function ID: 28579
 // Name: GuildMemberFlags
-// Dependencies: []
+// Dependencies: [284214097]
 
 // Module 3744 (GuildMemberFlags)
 const _module = require(dependencyMap[0]);

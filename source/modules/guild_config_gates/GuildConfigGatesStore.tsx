@@ -1,9 +1,9 @@
-// Module ID: 16195
-// Function ID: 125210
+// Module ID: 16202
+// Function ID: 125241
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
-// Module 16195 (_isNativeReflectConstruct)
+// Module 16202 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -54,7 +54,7 @@ let tmp2 = (Store) => {
     value(arg0) {
       let obj = closure_5[arg0];
       if (null == obj) {
-        obj = {};
+        obj = { IN_APP_NOTIFICATION_ACCESSORY_CLICKED: null, useIsScreenIndexFrozenSharedValue: null };
       }
       return obj;
     }

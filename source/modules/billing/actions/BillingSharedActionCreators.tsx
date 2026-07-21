@@ -1,10 +1,10 @@
-// Module ID: 4444
-// Function ID: 39006
+// Module ID: 4448
+// Function ID: 39054
 // Name: _validatePaymentSourceBillingAddress
 // Dependencies: []
 // Exports: createPaymentSource, dispatchConfirmationError, popupBridgeState, validatePaymentSourceBillingAddress
 
-// Module 4444 (_validatePaymentSourceBillingAddress)
+// Module 4448 (_validatePaymentSourceBillingAddress)
 async function _validatePaymentSourceBillingAddress(name, arg1) {
   const HTTP = callback(closure_2[4]).HTTP;
   let obj = { url: constants.BILLING_PAYMENT_SOURCES_VALIDATE_BILLING_ADDRESS, body: { billing_address: obj }, rejectWithError: false };
@@ -13,7 +13,7 @@ async function _validatePaymentSourceBillingAddress(name, arg1) {
 }
 async function _popupBridgeState(paymentSourceType, arg1) {
   const HTTP = callback(closure_2[4]).HTTP;
-  let obj = { CONVERSATIONS: null, replace: null, push: null, url: closure_7.BILLING_POPUP_BRIDGE(paymentSourceType) };
+  let obj = { lc: null, type: null, end: null, url: closure_7.BILLING_POPUP_BRIDGE(paymentSourceType) };
   const state = yield HTTP.post(obj).body.state;
   obj = { type: "BILLING_POPUP_BRIDGE_STATE_UPDATE", state, paymentSourceType };
   callback2(closure_2[6]).dispatch(obj);

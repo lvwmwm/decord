@@ -1,10 +1,10 @@
-// Module ID: 14607
-// Function ID: 110171
+// Module ID: 14614
+// Function ID: 110193
 // Name: RegisterIdentityBase
 // Dependencies: []
 // Exports: RegisterIdentity
 
-// Module 14607 (RegisterIdentityBase)
+// Module 14614 (RegisterIdentityBase)
 function RegisterIdentityBase(inputMode) {
   let controlComponent;
   let headerText;
@@ -113,7 +113,7 @@ const tmp4 = arg1(dependencyMap[5]);
 const tmp5 = arg1(dependencyMap[6]);
 let closure_16 = arg1(dependencyMap[7]).createStyles((minHeight) => {
   const segmentedControl = { minHeight, marginBottom: 24 };
-  return { container: { pos: null, borderRadius: null }, page: { flex: 1 }, button: {}, errors: { marginTop: 4 }, segmentedControl, scrollContent: { paddingBottom: 128 } };
+  return { container: { onChangeContentSize: null, onEndBlur: null }, page: { flex: 1 }, button: {}, errors: { marginTop: 4 }, segmentedControl, scrollContent: { paddingBottom: 128 } };
 });
 const obj = arg1(dependencyMap[7]);
 const result = arg1(dependencyMap[29]).fileFinishedImporting("modules/auth/native/components/RegisterIdentity.tsx");
@@ -158,8 +158,8 @@ export const RegisterIdentity = function RegisterIdentity() {
   }, items1);
   const tmp = callback4(45 * Math.min(2, obj.useFontScale()));
   obj = {
-    right: false,
-    height: true,
+    <string:4221590626>: -536870861,
+    <string:1179822678>: -299892737,
     onSetActiveIndex: callback,
     items: memo.map((descriptor) => {
       descriptor = descriptor.descriptor;

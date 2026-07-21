@@ -1,10 +1,10 @@
-// Module ID: 9637
-// Function ID: 75063
+// Module ID: 9642
+// Function ID: 75080
 // Name: showUploadPreviewActionSheet
 // Dependencies: []
 // Exports: default
 
-// Module 9637 (showUploadPreviewActionSheet)
+// Module 9642 (showUploadPreviewActionSheet)
 const _module = require(dependencyMap[3]);
 const result = _module.fileFinishedImporting("modules/media_uploads/native/showUploadPreviewActionSheet.tsx");
 

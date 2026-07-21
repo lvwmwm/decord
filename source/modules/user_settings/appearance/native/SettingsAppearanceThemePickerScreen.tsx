@@ -1,10 +1,10 @@
-// Module ID: 14024
-// Function ID: 106657
+// Module ID: 14031
+// Function ID: 106680
 // Name: getThemeOverride
 // Dependencies: []
 // Exports: default
 
-// Module 14024 (getThemeOverride)
+// Module 14031 (getThemeOverride)
 function getThemeOverride(mobileThemes, first1, stateFromStores) {
   let theme = stateFromStores;
   let tmp2;
@@ -31,7 +31,7 @@ const tmp2 = arg1(dependencyMap[8]);
 ({ jsx: closure_14, jsxs: closure_15, Fragment: closure_16 } = arg1(dependencyMap[10]));
 let obj = arg1(dependencyMap[11]);
 obj = {};
-obj = { paddingHorizontal: importDefault(dependencyMap[12]).space.PX_16, gap: importDefault(dependencyMap[12]).space.PX_24 };
+obj = { flex: "isArray", justifyContent: "accessibilityRole", alignItems: "value", paddingHorizontal: importDefault(dependencyMap[12]).space.PX_16, gap: importDefault(dependencyMap[12]).space.PX_24 };
 let obj3 = arg1(dependencyMap[13]);
 if (!obj3.isIOS()) {
   num = importDefault(dependencyMap[12]).space.PX_16;
@@ -41,8 +41,8 @@ obj.container = obj;
 const tmp3 = arg1(dependencyMap[10]);
 obj.landscapeContainer = { flexDirection: "row", gap: importDefault(dependencyMap[12]).space.PX_16 };
 obj.landscapePreview = { flex: 1 };
-obj.landscapeSelector = { cix: true, registerAsset: true, bottom: true };
-const obj2 = { 0: "isArray", 0: "body", 0: "message", gap: importDefault(dependencyMap[12]).space.PX_16, paddingHorizontal: importDefault(dependencyMap[12]).space.PX_16, marginBottom: importDefault(dependencyMap[12]).space.PX_16 };
+obj.landscapeSelector = {};
+const obj2 = { "Null": "isArray", "Null": "body", "Null": "message", gap: importDefault(dependencyMap[12]).space.PX_16, paddingHorizontal: importDefault(dependencyMap[12]).space.PX_16, marginBottom: importDefault(dependencyMap[12]).space.PX_16 };
 obj.segmentedControlContainer = obj2;
 obj.textCentered = { textAlign: "center" };
 let closure_17 = obj.createStyles(obj);
@@ -373,7 +373,7 @@ function ThemePicker(defaultIndex) {
       }
     };
     obj.headerTitle = function headerTitle() {
-      const obj = { td: false, sr: 400, style: closure_22.textNormal };
+      const obj = { 669602241: false, 1470947939: 400, style: closure_22.textNormal };
       if (null != closure_6) {
         let stringResult = closure_6;
       } else {
@@ -474,7 +474,7 @@ function ThemePicker(defaultIndex) {
   obj7.isNitroLocked = tmp46;
   const tmp44Result = tmp44(importDefault(dependencyMap[47]), obj7);
   obj8 = {};
-  const items10 = [{ aze: 30271555, azj: 22092032 }, ];
+  const items10 = [{}, ];
   let bgBasePrimary = !tmp10;
   if (!tmp10) {
     bgBasePrimary = obj1.bgBasePrimary;

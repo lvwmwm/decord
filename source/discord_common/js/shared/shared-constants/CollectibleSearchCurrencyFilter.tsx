@@ -1,9 +1,9 @@
-// Module ID: 13840
-// Function ID: 104703
+// Module ID: 13847
+// Function ID: 104726
 // Name: CollectibleSearchCurrencyFilter
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 13840 (CollectibleSearchCurrencyFilter)
+// Module 13847 (CollectibleSearchCurrencyFilter)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_common/js/shared/shared-constants/CollectibleSearchCurrencyFilter.tsx");
 

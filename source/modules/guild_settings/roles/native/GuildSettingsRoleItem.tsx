@@ -1,8 +1,8 @@
-// Module ID: 16177
-// Function ID: 124968
+// Module ID: 16184
+// Function ID: 124999
 // Dependencies: []
 
-// Module 16177
+// Module 16184
 let closure_3 = importDefault(dependencyMap[0]);
 const importAllResult = importAll(dependencyMap[1]);
 const tmp2 = arg1(dependencyMap[2]);
@@ -156,7 +156,7 @@ const memoResult = importAllResult.memo(function GuildSettingsRoleItem(guildId) 
       }
       obj6.icon = callback(View, obj8);
       const obj9 = { style: tmp2.row };
-      const obj10 = { borderRadius: "<string:962072674>", flex: "<string:996425668>", Promise: "<string:2542620639>", marginTop: "<string:3040952294>", style: tmp2.label, children: role.name };
+      const obj10 = { imageAssetsFolder: "<string:962072674>", progress: "<string:996425668>", speed: "<string:2542620639>", loop: "<string:3175170022>", style: tmp2.label, children: role.name };
       const items2 = [callback(arg1(dependencyMap[7]).Text, obj10), , ];
       const tags2 = role.tags;
       let prop;
@@ -174,7 +174,7 @@ const memoResult = importAllResult.memo(function GuildSettingsRoleItem(guildId) 
       items2[1] = tmp59;
       let tmp64 = null;
       if (locked) {
-        tmp64 = callback(arg1(dependencyMap[26]).LockIcon, { flexDirection: "png", alignItems: true });
+        tmp64 = callback(arg1(dependencyMap[26]).LockIcon, { flex: "png", flexGrow: true });
       }
       items2[2] = tmp64;
       obj9.children = items2;
@@ -210,8 +210,8 @@ const memoResult = importAllResult.memo(function GuildSettingsRoleItem(guildId) 
               const items3 = [role.colors.primary_color, role.colors.secondary_color, role.colors.tertiary_color];
               const found = items3.filter(arg1(dependencyMap[19]).isNotNullish);
               obj15.colors = found.map((color) => role(onMoveUp[20]).int2hex(color));
-              obj15.start = { "Null": false, "Null": true };
-              obj15.end = { "Null": null, "Null": null };
+              obj15.start = { max: -536870861, guildId: -299892737 };
+              obj15.end = {};
               obj15.style = tmp2.gradient;
               const items4 = [callback(importDefault(dependencyMap[18]), obj15), ];
               const obj16 = { size: "md", style: tmp2.image };

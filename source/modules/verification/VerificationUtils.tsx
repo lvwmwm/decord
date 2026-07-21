@@ -1,9 +1,9 @@
-// Module ID: 9177
-// Function ID: 71888
+// Module ID: 9181
+// Function ID: 71900
 // Name: UserRequiredActions
 // Dependencies: []
 
-// Module 9177 (UserRequiredActions)
+// Module 9181 (UserRequiredActions)
 let EMAIL;
 let PHONE;
 let REVERIFY_EMAIL;

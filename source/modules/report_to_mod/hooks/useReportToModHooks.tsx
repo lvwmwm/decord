@@ -1,10 +1,10 @@
-// Module ID: 9528
-// Function ID: 74208
+// Module ID: 9533
+// Function ID: 74224
 // Name: useIsReportToModEnabled
 // Dependencies: []
 // Exports: loadOriginalAuthorFromSnapshot, useIsModeratorReportOrPostChannel, useIsModeratorReportPostChannel, useIsReportToModEnabled, useLoadReportedMessage, useReportToModChannelId
 
-// Module 9528 (useIsReportToModEnabled)
+// Module 9533 (useIsReportToModEnabled)
 const useEffect = require(dependencyMap[0]).useEffect;
 let closure_4 = importDefault(dependencyMap[1]);
 let closure_5 = importDefault(dependencyMap[2]);

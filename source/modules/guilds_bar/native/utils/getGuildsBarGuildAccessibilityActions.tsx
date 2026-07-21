@@ -1,14 +1,10 @@
-// Module ID: 14733
-// Function ID: 111106
+// Module ID: 14740
+// Function ID: 111130
 // Name: folderLabel
-// Dependencies: [0, 0, 0, 0, 0, 0, 0, 0]
+// Dependencies: []
 // Exports: default
 
-// Module 14733 (folderLabel)
-import closure_3 from "result";
-import closure_4 from "result";
-import result from "result";
-
+// Module 14740 (folderLabel)
 function folderLabel(name) {
   if (null != name.name) {
     if ("" !== name.name) {
@@ -37,7 +33,9 @@ function performMove(id, arg1, arg2, arg3, intl) {
     }
   }
 }
-result = result.fileFinishedImporting("modules/guilds_bar/native/utils/getGuildsBarGuildAccessibilityActions.tsx");
+let closure_3 = importDefault(dependencyMap[0]);
+let closure_4 = importDefault(dependencyMap[1]);
+const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/guilds_bar/native/utils/getGuildsBarGuildAccessibilityActions.tsx");
 
 export default function getGuildsBarGuildAccessibilityActions(guildId) {
   let above;

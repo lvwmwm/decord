@@ -40,8 +40,6 @@ function getDisplayName(displayName) {
 }
 function memoizeGetStateFromStores(arg0) {
   const arg1 = arg0;
-  let closure_1 = null;
-  let closure_2 = null;
   function getCachedResult(childProps) {
     if (null != _null) {
       if (null != closure_2) {
@@ -74,6 +72,8 @@ function memoizeGetStateFromStores(arg0) {
     }
     return tmp;
   }
+  let closure_1 = null;
+  let closure_2 = null;
   memoizedFunction.getCachedResult = getCachedResult;
   memoizedFunction.clear = () => {
     let closure_1 = null;

@@ -1,10 +1,10 @@
-// Module ID: 9057
-// Function ID: 71110
+// Module ID: 9061
+// Function ID: 71122
 // Name: ActivityStatusIcon
 // Dependencies: []
 // Exports: default
 
-// Module 9057 (ActivityStatusIcon)
+// Module 9061 (ActivityStatusIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 let closure_1 = arg1(dependencyMap[2]).createStyles({ icon: { flexShrink: 0 } });

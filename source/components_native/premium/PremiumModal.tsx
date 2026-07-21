@@ -1,10 +1,10 @@
-// Module ID: 6638
-// Function ID: 50966
+// Module ID: 6644
+// Function ID: 51015
 // Name: getScreens
 // Dependencies: []
 // Exports: default
 
-// Module 6638 (getScreens)
+// Module 6644 (getScreens)
 function getScreens(arg0) {
   let isBoostPurchaseFlow;
   let onClose;

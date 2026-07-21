@@ -1,10 +1,10 @@
-// Module ID: 11133
-// Function ID: 86607
+// Module ID: 11139
+// Function ID: 86630
 // Name: ForumPostListFooter
 // Dependencies: []
 // Exports: default
 
-// Module 11133 (ForumPostListFooter)
+// Module 11139 (ForumPostListFooter)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 const AnalyticsObjects = arg1(dependencyMap[2]).AnalyticsObjects;

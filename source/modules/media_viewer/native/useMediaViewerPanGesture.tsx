@@ -1,10 +1,10 @@
-// Module ID: 12126
-// Function ID: 93435
+// Module ID: 12133
+// Function ID: 93458
 // Name: useMediaViewerPanGestureConfig
 // Dependencies: []
 // Exports: useMediaViewerPanGesture, useMediaViewerPanGestureConfig
 
-// Module 12126 (useMediaViewerPanGestureConfig)
+// Module 12133 (useMediaViewerPanGestureConfig)
 let closure_3 = importAll(dependencyMap[0]);
 let closure_4 = {};
 let closure_5 = { code: "function useMediaViewerPanGestureTsx1(){const{runOnJS,handleClose}=this.__closure;runOnJS(handleClose)();}" };
@@ -30,7 +30,7 @@ export const useMediaViewerPanGestureConfig = function useMediaViewerPanGestureC
   const sharedValue3 = swipeVelocityThreshold(dependencyMap[1]).useSharedValue(0);
   let closure_6 = sharedValue3;
   const obj4 = swipeVelocityThreshold(dependencyMap[1]);
-  const sharedValue4 = swipeVelocityThreshold(dependencyMap[1]).useSharedValue({ "Bool(false)": false, "Bool(false)": true });
+  const sharedValue4 = swipeVelocityThreshold(dependencyMap[1]).useSharedValue({ "Bool(false)": -536870861, "Bool(false)": -299892737 });
   let closure_7 = sharedValue4;
   const obj5 = swipeVelocityThreshold(dependencyMap[1]);
   const sharedValue5 = swipeVelocityThreshold(dependencyMap[1]).useSharedValue(true);

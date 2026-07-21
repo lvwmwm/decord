@@ -1,7 +1,7 @@
 // Module ID: 1062
 // Function ID: 11351
 // Name: applySourceContextToFrame
-// Dependencies: []
+// Dependencies: [880148480, 889192452]
 
 // Module 1062 (applySourceContextToFrame)
 function applySourceContextToFrame(filename) {
@@ -51,7 +51,7 @@ export const contextLinesIntegration = _module.defineIntegration(function _conte
                   if (values.length) {
                     if (_document.documentElement.innerHTML) {
                       const items = [false, false];
-                      const callback = items.concat(callback(str.split("\n")), [true]);
+                      const callback = items.concat(callback(str.split("\n")), ["<string:1086074147>"]);
                       const item = values.forEach((stacktrace) => {
                         stacktrace = stacktrace.stacktrace;
                         if (tmp) {

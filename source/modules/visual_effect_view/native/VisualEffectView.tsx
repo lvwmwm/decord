@@ -1,9 +1,9 @@
-// Module ID: 4525
-// Function ID: 39715
+// Module ID: 4529
+// Function ID: 39763
 // Name: getIOSBlurEffect
 // Dependencies: []
 
-// Module 4525 (getIOSBlurEffect)
+// Module 4529 (getIOSBlurEffect)
 function getIOSBlurEffect(blurTheme, blurStyle) {
   if (blurStyle(dependencyMap[5]).MODERN_IOS_BLURS_EFFECTS_AVAILABLE) {
     if ("default" !== blurStyle) {
@@ -78,7 +78,7 @@ const forwardRefResult = importAllResult.forwardRef(function VisualEffectView(bl
   if (android_softwareBlurDisabled === undefined) {
     android_softwareBlurDisabled = false;
   }
-  let obj = { left: 1091658877, right: 151597, accessibilityRole: 6258, Promise: 6144, guild_id: -180289280, accessible: 1375732285, push: 1685947892 };
+  let obj = { height: null, paddingHorizontal: null, borderRadius: null, backgroundColor: null, justifyContent: null, alignItems: null, "Bool(false)": null };
   Object.setPrototypeOf(null);
   const merged = Object.assign(blurAmount, obj);
   ({ blurAmountOverride, blurTintRgbaOverride, blurEffectNameOverride } = callback());

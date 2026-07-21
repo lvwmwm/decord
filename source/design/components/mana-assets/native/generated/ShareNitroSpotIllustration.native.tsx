@@ -1,14 +1,13 @@
-// Module ID: 6495
-// Function ID: 50616
+// Module ID: 6497
+// Function ID: 50659
 // Name: ShareNitroSpotIllustration
-// Dependencies: [33554457, 1946157056, 33, 5231]
+// Dependencies: []
 // Exports: ShareNitroSpotIllustration
 
-// Module 6495 (ShareNitroSpotIllustration)
-import preload from "preload";
-
+// Module 6497 (ShareNitroSpotIllustration)
 const jsx = require(dependencyMap[0]).jsx;
-const result = preload.fileFinishedImporting("design/components/mana-assets/native/generated/ShareNitroSpotIllustration.native.tsx");
+const _module = require(dependencyMap[3]);
+const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/ShareNitroSpotIllustration.native.tsx");
 
 export const ShareNitroSpotIllustration = function ShareNitroSpotIllustration(width) {
   let accessibilityLabel;

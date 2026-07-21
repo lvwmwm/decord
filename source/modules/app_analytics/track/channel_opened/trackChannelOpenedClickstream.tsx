@@ -1,10 +1,10 @@
-// Module ID: 7007
-// Function ID: 56230
+// Module ID: 7011
+// Function ID: 56241
 // Name: trackChannelOpenedClickstream
 // Dependencies: []
 // Exports: default
 
-// Module 7007 (trackChannelOpenedClickstream)
+// Module 7011 (trackChannelOpenedClickstream)
 let closure_2 = importDefault(dependencyMap[0]);
 ({ ChannelTypes: closure_3, AnalyticEvents: closure_4 } = arg1(dependencyMap[1]));
 const StaticChannelRoute = arg1(dependencyMap[2]).StaticChannelRoute;

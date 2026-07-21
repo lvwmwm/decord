@@ -1,9 +1,9 @@
-// Module ID: 14280
-// Function ID: 107895
+// Module ID: 14287
+// Function ID: 107918
 // Name: useExperimentOverrideActiveCount
 // Dependencies: []
 
-// Module 14280 (useExperimentOverrideActiveCount)
+// Module 14287 (useExperimentOverrideActiveCount)
 function useExperimentOverrideActiveCount() {
   const items = [closure_2];
   const stateFromStores = arg1(dependencyMap[4]).useStateFromStores(items, () => Object.keys(allExperimentOverrideDescriptors.getAllExperimentOverrideDescriptors()).length);

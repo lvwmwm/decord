@@ -11,7 +11,7 @@ importDefault(dependencyMap[0]);
 const useMemo = arg1(dependencyMap[0]).useMemo;
 ({ Platform, StyleSheet, View: closure_3 } = arg1(dependencyMap[1]));
 const jsx = arg1(dependencyMap[2]).jsx;
-const styles = StyleSheet.create({ absolute: { position: "absolute" }, stretch: { "Bool(true)": "r", "Bool(true)": "onRequireModeratorMFAClick", "Bool(true)": "Array", "Bool(true)": "isSpamMessageRequest" } });
+const styles = StyleSheet.create({ absolute: { position: "absolute" }, stretch: {} });
 
 export default function OverKeyboardView(visible) {
   let children = visible.visible;

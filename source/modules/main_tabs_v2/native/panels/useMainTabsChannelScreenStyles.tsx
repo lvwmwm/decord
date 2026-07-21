@@ -1,10 +1,10 @@
-// Module ID: 15125
-// Function ID: 114161
+// Module ID: 15132
+// Function ID: 114185
 // Name: useMainTabsChannelScreenStyles
 // Dependencies: []
 // Exports: useMainTabsChannelScreenStyles
 
-// Module 15125 (useMainTabsChannelScreenStyles)
+// Module 15132 (useMainTabsChannelScreenStyles)
 let closure_2 = importAll(dependencyMap[0]);
 let obj = arg1(dependencyMap[2]);
 obj = {};

@@ -1,9 +1,9 @@
-// Module ID: 16081
-// Function ID: 123697
+// Module ID: 16088
+// Function ID: 123728
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
-// Module 16081 (_isNativeReflectConstruct)
+// Module 16088 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -26,12 +26,12 @@ const UPLOAD_MEDIUM_SIZE = arg1(dependencyMap[9]).UPLOAD_MEDIUM_SIZE;
 const tmp4 = arg1(dependencyMap[8]);
 ({ jsx: closure_14, Fragment: closure_15, jsxs: closure_16 } = arg1(dependencyMap[10]));
 let obj = arg1(dependencyMap[11]);
-obj = { assetWrapper: {} };
-obj = { "Bool(false)": "Array", "Bool(false)": "NON_USER_BOT_DISCRIMINATOR", "Bool(false)": "newTag", "Bool(false)": "SU", borderRadius: importDefault(dependencyMap[12]).radii.xs, backgroundColor: importDefault(dependencyMap[12]).colors.BACKGROUND_BASE_LOW };
+obj = { assetWrapper: { "Null": null, "Null": null } };
+obj = { borderRadius: importDefault(dependencyMap[12]).radii.xs, backgroundColor: importDefault(dependencyMap[12]).colors.BACKGROUND_BASE_LOW };
 obj.asset = obj;
-const obj1 = { "Bool(false)": "message", "Bool(false)": "Text", "Bool(false)": "content", "Bool(false)": "now", "Bool(false)": "Array", "Bool(false)": "isArray", "Bool(false)": "key", shadowColor: importDefault(dependencyMap[12]).unsafe_rawColors.BLACK, shadowOffset: { <string:1140607356>: null, <string:1751293292>: null } };
+const obj1 = { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": "emailAddress", "Bool(false)": "none", "Bool(false)": "email-address", "Bool(false)": true, shadowColor: importDefault(dependencyMap[12]).unsafe_rawColors.BLACK, shadowOffset: { <string:1632221346>: null, <string:2722977214>: null } };
 obj.uploadIconWrapper = obj1;
-obj.uploadIcon = { aze: "<string:16777479>", azj: "<string:36295491>" };
+obj.uploadIcon = {};
 const tmp5 = arg1(dependencyMap[10]);
 obj.remove = { color: importDefault(dependencyMap[12]).unsafe_rawColors.BLUE_345 };
 let closure_17 = obj.createLegacyClassComponentStyles(obj);

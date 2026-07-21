@@ -1,22 +1,21 @@
-// Module ID: 15517
-// Function ID: 118484
+// Module ID: 15524
+// Function ID: 118508
 // Name: SimpleGuild
-// Dependencies: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 31, 27, 33, 15524, 15527, 2, 15524]
+// Dependencies: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 31, 27, 33, 15531, 15534, 2, 15531]
 // Exports: default
 
-// Module 15517 (SimpleGuild)
-import closure_3 from "result";
-import { View } from "result";
-import { getGuildIconSource } from "result";
-import closure_6 from "result";
-import closure_7 from "result";
-import { ME } from "result";
-import { jsx } from "result";
-import result from "result";
+// Module 15524 (SimpleGuild)
+import __exportStarResult1 from "__exportStarResult1";
+import { View } from "__exportStarResult1";
+import { getGuildIconSource } from "__exportStarResult1";
+import closure_6 from "__exportStarResult1";
+import closure_7 from "__exportStarResult1";
+import { ME } from "__exportStarResult1";
+import { jsx } from "__exportStarResult1";
 import items from "items";
 
-let closure_10 = result.createStyles({ dmsWrapper: {} });
-result = items.fileFinishedImporting("modules/launchpad/native/shared/SimpleGuild.tsx");
+let closure_10 = require("__exportStarResult1").createStyles({ dmsWrapper: {} });
+const result = items.fileFinishedImporting("modules/launchpad/native/shared/SimpleGuild.tsx");
 
 export default function SimpleGuild(guildId) {
   let animated;
@@ -178,7 +177,7 @@ export default function SimpleGuild(guildId) {
         const tmp28 = View;
       } else {
         if (tmp13) {
-          obj2 = { opacity: null, position: null, marginVertical: null, marginHorizontal: null, borderRadius: null, flexGrow: null };
+          obj2 = { flexShrink: "msNow", flexGrow: "%AsyncFromSyncIteratorPrototype%", justifyContent: "loopDelay", textAlign: "isArray", marginBottom: "FOOTER_FADE_START_PROGRESS", textTransform: "isArray" };
           let num7 = 13;
           let tmp35Result = tmp35(tmp36[17]);
           if (badge2 <= 0) {

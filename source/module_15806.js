@@ -1,25 +1,41 @@
 // Module ID: 15806
-// Function ID: 120854
+// Function ID: 120864
 // Dependencies: []
 
 // Module 15806
-let obj = {
-  locale: "zh",
+globalThis.IntlMessageFormat.__addLocaleData({
+  locale: "ro",
   pluralRuleFunction(arg0, arg1) {
-    return "other";
+    const parts = String(arg0).split(".");
+    let substr = Number(parts[0]) == arg0;
+    if (substr) {
+      const first = parts[0];
+      substr = first.slice(-2);
+    }
+    if (arg1) {
+      let str5 = "other";
+      if (1 == arg0) {
+        str5 = "one";
+      }
+      let str2 = str5;
+    } else if (1 != arg0) {
+      if (tmp2) {
+        if (0 != arg0) {
+          let str4 = "other";
+          if (1 != arg0) {
+            str4 = "other";
+            if (substr >= 1) {
+              str4 = "other";
+            }
+          }
+        }
+        str2 = str4;
+      }
+      str4 = "few";
+    } else {
+      str2 = "one";
+    }
+    return str2;
   }
-};
-globalThis.IntlMessageFormat.__addLocaleData(obj);
-globalThis.IntlMessageFormat.__addLocaleData({});
-globalThis.IntlMessageFormat.__addLocaleData({ "Bool(true)": true, "Bool(true)": true });
-globalThis.IntlMessageFormat.__addLocaleData({ "Bool(true)": null, "Bool(true)": null });
-globalThis.IntlMessageFormat.__addLocaleData({ "Bool(true)": null, "Bool(true)": null });
-obj = {
-  locale: "zh-Hant",
-  pluralRuleFunction(arg0, arg1) {
-    return "other";
-  }
-};
-globalThis.IntlMessageFormat.__addLocaleData(obj);
-globalThis.IntlMessageFormat.__addLocaleData({});
+});
 globalThis.IntlMessageFormat.__addLocaleData({});

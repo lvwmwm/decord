@@ -1,8 +1,8 @@
-// Module ID: 10369
-// Function ID: 79979
+// Module ID: 10375
+// Function ID: 80002
 // Dependencies: []
 
-// Module 10369
+// Module 10375
 const importAllResult = importAll(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[2]);
 const createChannelRecord = arg1(dependencyMap[3]).createChannelRecord;
@@ -14,7 +14,7 @@ let obj1 = arg1(dependencyMap[8]);
 let obj = {};
 obj = { flex: 1, borderTopWidth: arg1(dependencyMap[1]).StyleSheet.hairlineWidth, borderTopColor: importDefault(dependencyMap[9]).colors.BORDER_SUBTLE };
 obj.empty = obj;
-obj.messages = { "Bool(false)": 10, "Bool(false)": 10 };
+obj.messages = { 9223372036854775807: 10, 9223372036854775807: 10 };
 obj1 = { backgroundColor: importDefault(dependencyMap[9]).colors.CHANNEL_BACKGROUND_DEFAULT };
 obj.chat = obj1;
 let closure_12 = obj1.createStyles(obj);

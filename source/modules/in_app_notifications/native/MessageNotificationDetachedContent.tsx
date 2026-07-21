@@ -1,10 +1,10 @@
-// Module ID: 10342
-// Function ID: 79821
+// Module ID: 10348
+// Function ID: 79844
 // Name: MessageNotificationDetachedContent
 // Dependencies: []
 // Exports: MessageNotificationDetachedContent
 
-// Module 10342 (MessageNotificationDetachedContent)
+// Module 10348 (MessageNotificationDetachedContent)
 let closure_3 = importAll(dependencyMap[0]);
 const Keyboard = arg1(dependencyMap[1]).Keyboard;
 const DEFAULT_ANIMATION_TIMING = arg1(dependencyMap[2]).DEFAULT_ANIMATION_TIMING;
@@ -39,7 +39,7 @@ export const MessageNotificationDetachedContent = function MessageNotificationDe
     setActionTaken(true);
     setExpanded(false);
     setAutoDismissing(true);
-    const obj = {};
+    const obj = { 0: false, 0: false };
     const intl = expandedSV(setExpanded[6]).intl;
     obj.message = intl.string(expandedSV(setExpanded[6]).t.b/4dOF);
     setConfirmation(obj);

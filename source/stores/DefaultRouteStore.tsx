@@ -19,7 +19,7 @@ let closure_4 = importDefault(dependencyMap[2]);
 let closure_5 = importDefault(dependencyMap[3]);
 let closure_6 = importDefault(dependencyMap[4]);
 const Routes = arg1(dependencyMap[5]).Routes;
-let obj = { <string:2589065220>: false, <string:1394957424>: false };
+let obj = { 0: "o", 0: "o" };
 let tmp2 = (PersistedStore) => {
   class DefaultRouteStore {
     constructor() {
@@ -114,7 +114,7 @@ obj = {
     return true;
   },
   LOGOUT: function handleLogout() {
-    let closure_9 = { <string:2589065220>: false, <string:1394957424>: false };
+    let closure_9 = { 0: "o", 0: "o" };
   }
 };
 tmp2 = new tmp2(importDefault(dependencyMap[8]), obj);

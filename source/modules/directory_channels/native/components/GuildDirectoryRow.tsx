@@ -1,8 +1,8 @@
-// Module ID: 10057
-// Function ID: 77673
+// Module ID: 10063
+// Function ID: 77691
 // Dependencies: []
 
-// Module 10057
+// Module 10063
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 const importAllResult = importAll(dependencyMap[2]);
@@ -12,19 +12,19 @@ let closure_8 = importDefault(dependencyMap[5]);
 const JoinGuildSources = arg1(dependencyMap[6]).JoinGuildSources;
 ({ jsx: closure_10, Fragment: closure_11, jsxs: closure_12 } = arg1(dependencyMap[7]));
 let obj1 = arg1(dependencyMap[8]);
-let obj = { container: {}, guildInfoContainer: { clientThemeSettings: true, useItemDragState: true } };
+let obj = { container: {}, guildInfoContainer: { padding: true, T: "/assets/.cache/intl/bW9kdWxlcy9nb19saXZlL3dlYi9tb2RhbA==" } };
 obj = { borderRadius: importDefault(dependencyMap[9]).radii.sm, marginRight: 16 };
 obj.guildIcon = obj;
 obj.guildWrapper = { flex: 1 };
-obj.guildDescription = {};
+obj.guildDescription = { lineHeight: "P", paddingTop: 40 };
 obj.memberInfo = {};
-obj1 = { backgroundColor: importDefault(dependencyMap[9]).unsafe_rawColors.GREEN_360, accessibilityRole: true, -45001119: true, 1379623171: true, borderRadius: importDefault(dependencyMap[9]).radii.sm };
+obj1 = { borderRadius: importDefault(dependencyMap[9]).radii.sm, backgroundColor: importDefault(dependencyMap[9]).unsafe_rawColors.GREEN_360 };
 obj.dotOnline = obj1;
 const tmp2 = arg1(dependencyMap[7]);
 obj.dotOffline = { borderRadius: importDefault(dependencyMap[9]).radii.sm, backgroundColor: importDefault(dependencyMap[9]).unsafe_rawColors.PRIMARY_400 };
-obj.headerContainer = { "Bool(true)": "center", "Bool(true)": 18, "Bool(true)": 24 };
-obj.titleContainer = {};
-obj.flex = { gestureEnabled: false, gestureVelocityImpact: false };
+obj.headerContainer = { display: "flex", flexDirection: "row", padding: "center" };
+obj.titleContainer = { padding: "LEGACY_LAUNCH_CLIENT_VALIDATION_FAILED", T: "keyboardAppearance" };
+obj.flex = { 1366017591: false, 996410372: false };
 let closure_13 = obj1.createStyles(obj);
 const obj2 = { borderRadius: importDefault(dependencyMap[9]).radii.sm, backgroundColor: importDefault(dependencyMap[9]).unsafe_rawColors.PRIMARY_400 };
 const memoResult = importAllResult.memo(function GuildDirectoryRow(entry) {
@@ -121,7 +121,7 @@ const memoResult = importAllResult.memo(function GuildDirectoryRow(entry) {
     tmp32 = "" !== description;
   }
   if (tmp32) {
-    const obj16 = { borderRadius: 12, flex: 18, Promise: "low", marginTop: true, style: tmp.guildDescription, children: description };
+    const obj16 = { imageAssetsFolder: 44, progress: 17, speed: "left", loop: 13, style: tmp.guildDescription, children: description };
     tmp32 = callback2(arg1(closure_2[20]).Text, obj16);
   }
   items7[1] = tmp32;

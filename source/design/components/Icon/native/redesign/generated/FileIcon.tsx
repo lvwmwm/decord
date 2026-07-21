@@ -1,10 +1,10 @@
-// Module ID: 10255
-// Function ID: 79250
+// Module ID: 10261
+// Function ID: 79269
 // Name: FileIcon
 // Dependencies: []
 // Exports: FileIcon
 
-// Module 10255 (FileIcon)
+// Module 10261 (FileIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/FileIcon.tsx");

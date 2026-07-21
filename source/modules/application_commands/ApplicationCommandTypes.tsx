@@ -1,9 +1,9 @@
-// Module ID: 6744
-// Function ID: 52499
+// Module ID: 6750
+// Function ID: 52548
 // Name: ApplicationCommandSectionType
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 6744 (ApplicationCommandSectionType)
+// Module 6750 (ApplicationCommandSectionType)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("modules/application_commands/ApplicationCommandTypes.tsx");
 

@@ -1,9 +1,9 @@
-// Module ID: 5910
-// Function ID: 49739
+// Module ID: 5912
+// Function ID: 49782
 // Name: metadata
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 5910 (metadata)
+// Module 5912 (metadata)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/BrushIllocon-2x.png.js");
 

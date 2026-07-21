@@ -1,10 +1,10 @@
-// Module ID: 16430
-// Function ID: 126930
+// Module ID: 16437
+// Function ID: 126964
 // Name: AgeVerificationScreen
 // Dependencies: []
 // Exports: default
 
-// Module 16430 (AgeVerificationScreen)
+// Module 16437 (AgeVerificationScreen)
 let closure_3 = importAll(dependencyMap[0]);
 const Pressable = arg1(dependencyMap[1]).Pressable;
 let closure_5 = importDefault(dependencyMap[2]);

@@ -1,11 +1,11 @@
-// Module ID: 9444
-// Function ID: 73597
+// Module ID: 9448
+// Function ID: 73611
 // Name: canUIRequestGatewaySocket
-// Dependencies: [9446, 9461, 2]
+// Dependencies: [9450, 9465, 2]
 
-// Module 9444 (canUIRequestGatewaySocket)
+// Module 9448 (canUIRequestGatewaySocket)
 import resolveAsset from "resolveAsset";
-import keys from "keys";
+import result2 from "result2";
 
 function canUIRequestGatewaySocket() {
   let obj = arg0;
@@ -14,7 +14,7 @@ function canUIRequestGatewaySocket() {
   }
   return "active" === obj.getState();
 }
-const result = keys.fileFinishedImporting("modules/app_state/DiscordAppState.native.tsx");
+const result = result2.fileFinishedImporting("modules/app_state/DiscordAppState.native.tsx");
 
 export default {
   canUIRequestGatewaySocket() {

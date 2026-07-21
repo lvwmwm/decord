@@ -1,9 +1,9 @@
-// Module ID: 6600
-// Function ID: 50774
+// Module ID: 6604
+// Function ID: 50820
 // Name: metadata
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 6600 (metadata)
+// Module 6604 (metadata)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/VideoCameraSpotIllustration-2x.png.js");
 

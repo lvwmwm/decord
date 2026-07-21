@@ -1,12 +1,10 @@
-// Module ID: 7652
-// Function ID: 61201
+// Module ID: 7651
+// Function ID: 61196
 // Name: canReactToMessageInternal
-// Dependencies: [502923264, 503119872, 79429632, 500695040, 500760576, 131072, 384827392, 57, 3766]
+// Dependencies: []
 // Exports: canReactToMessage, useCanReactToMessage
 
-// Module 7652 (canReactToMessageInternal)
-import _callSuper from "_callSuper";
-
+// Module 7651 (canReactToMessageInternal)
 function canReactToMessageInternal(state, getGuildId, items) {
   let obj;
   let obj2;
@@ -57,7 +55,8 @@ let closure_3 = importDefault(dependencyMap[1]);
 let closure_4 = importDefault(dependencyMap[2]);
 let closure_5 = importDefault(dependencyMap[3]);
 ({ Permissions: closure_6, MessageStates: closure_7, MessageTypes: closure_8, MessageFlags: closure_9 } = arg1(dependencyMap[4]));
-const result = _callSuper.fileFinishedImporting("modules/reactions/canReactToMessage.tsx");
+const tmp2 = arg1(dependencyMap[4]);
+const result = arg1(dependencyMap[8]).fileFinishedImporting("modules/reactions/canReactToMessage.tsx");
 
 export const canReactToMessage = function canReactToMessage(message, channel) {
   const items = [closure_5, closure_2, closure_3, closure_4];

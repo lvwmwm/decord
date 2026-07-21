@@ -1,9 +1,9 @@
-// Module ID: 5776
-// Function ID: 49384
+// Module ID: 5778
+// Function ID: 49427
 // Name: useKeyboardBlurring
 // Dependencies: []
 
-// Module 5776 (useKeyboardBlurring)
+// Module 5778 (useKeyboardBlurring)
 function useKeyboardBlurring(ref) {
   const arg1 = ref;
   const items = [ref];
@@ -65,7 +65,7 @@ const forwardRefResult = importAllResult.forwardRef((keyboardAppearance, photosB
         }, items1);
         obj = {
           panGestureWrapper(arg0) {
-            let obj = { style: { "Null": 131072.00314656927, "Null": 0.000000000000000000000000000000000000000000000000000000011294471302334573 } };
+            let obj = { style: {} };
             const items = [arg0, ];
             obj = {};
             const current = arg0.current;

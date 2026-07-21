@@ -1,10 +1,10 @@
-// Module ID: 8329
-// Function ID: 66014
+// Module ID: 8333
+// Function ID: 66026
 // Name: isChangelogChannel
 // Dependencies: []
 // Exports: default
 
-// Module 8329 (isChangelogChannel)
+// Module 8333 (isChangelogChannel)
 let closure_0 = importDefault(dependencyMap[0]);
 const SYSTEM_UPDATES_USER_ID = arg1(dependencyMap[1]).SYSTEM_UPDATES_USER_ID;
 const result = arg1(dependencyMap[2]).fileFinishedImporting("modules/changelog/utils/isChangelogChannel.tsx");

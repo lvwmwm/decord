@@ -1,9 +1,9 @@
-// Module ID: 6386
-// Function ID: 50453
+// Module ID: 6388
+// Function ID: 50496
 // Name: metadata
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 6386 (metadata)
+// Module 6388 (metadata)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/Orb3dIllustration-2x.png.js");
 

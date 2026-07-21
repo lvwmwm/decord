@@ -1,9 +1,9 @@
-// Module ID: 7084
-// Function ID: 56808
+// Module ID: 7088
+// Function ID: 56819
 // Name: sortByMatchScore
 // Dependencies: [3036676103, 956301326, 2365587463, 2130706434, 1342177295, 3942645765]
 
-// Module 7084 (sortByMatchScore)
+// Module 7088 (sortByMatchScore)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("modules/autocompleter/index.tsx");
 const _module1 = require(dependencyMap[2]);

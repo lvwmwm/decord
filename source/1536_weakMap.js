@@ -4,7 +4,7 @@
 // Dependencies: []
 
 // Module 1536 (weakMap)
-let closure_3 = [];
+let closure_3 = ["translationMatrix", "scaleMatrix", "skewMatrix", "x", "y"];
 let closure_4 = importDefault(dependencyMap[0]);
 let closure_5 = importDefault(dependencyMap[1]);
 const importAllResult = importAll(dependencyMap[2]);

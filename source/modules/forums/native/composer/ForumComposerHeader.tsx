@@ -1,10 +1,10 @@
-// Module ID: 9548
-// Function ID: 74422
+// Module ID: 9553
+// Function ID: 74439
 // Name: ForumComposerHeader
 // Dependencies: []
 // Exports: default
 
-// Module 9548 (ForumComposerHeader)
+// Module 9553 (ForumComposerHeader)
 importAll(dependencyMap[0]);
 ({ StyleSheet: closure_3, View: closure_4 } = arg1(dependencyMap[1]));
 const tmp3 = arg1(dependencyMap[1]);

@@ -1,9 +1,9 @@
-// Module ID: 4934
-// Function ID: 42209
+// Module ID: 4936
+// Function ID: 42250
 // Name: callback
 // Dependencies: []
 
-// Module 4934 (callback)
+// Module 4936 (callback)
 function callback(arg0, arg1) {
   let flag = arg2;
   if (arg2 === undefined) {
@@ -28,7 +28,7 @@ importDefaultResult = new importDefaultResult("ConnectedAccounts");
 const obj = {
   fetch() {
     const HTTP = arg1(dependencyMap[4]).HTTP;
-    const obj = { CONVERSATIONS: null, replace: null, push: null, url: closure_6.CONNECTIONS };
+    const obj = { lc: null, type: null, end: null, url: closure_6.CONNECTIONS };
     const value = HTTP.get(obj);
     return value.then((accounts) => {
       let obj = callback(closure_2[5]);
@@ -147,7 +147,7 @@ const obj = {
     obj = { url: closure_6.INTEGRATION_JOIN(id), oldFormErrors: true, rejectWithError: arg1(dependencyMap[4]).rejectWithMigratedError() };
     HTTP.post(obj, (ok) => {
       let obj = arg1(closure_2[5]);
-      obj = { NitroWumpusOfferingRight3dIllustration: "button", processQueue: null, enable: null, integrationId: ok };
+      obj = { integrationId: ok };
       obj.dispatch(obj);
       if (!ok.ok) {
         obj = { type: "USER_CONNECTIONS_INTEGRATION_JOINING_ERROR", integrationId: ok };

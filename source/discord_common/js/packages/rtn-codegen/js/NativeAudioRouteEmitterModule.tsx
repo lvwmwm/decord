@@ -1,9 +1,9 @@
-// Module ID: 8827
-// Function ID: 69631
+// Module ID: 8831
+// Function ID: 69643
 // Name: enforcing
 // Dependencies: []
 
-// Module 8827 (enforcing)
+// Module 8831 (enforcing)
 const TurboModuleRegistry = require(dependencyMap[0]).TurboModuleRegistry;
 const enforcing = TurboModuleRegistry.getEnforcing("NativeAudioRouteEmitterModule");
 const _module = require(dependencyMap[1]);

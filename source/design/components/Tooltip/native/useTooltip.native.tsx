@@ -1,10 +1,10 @@
-// Module ID: 8552
-// Function ID: 67983
+// Module ID: 8556
+// Function ID: 67995
 // Name: useTooltipHelper
 // Dependencies: []
 // Exports: useTooltip
 
-// Module 8552 (useTooltipHelper)
+// Module 8556 (useTooltipHelper)
 function useTooltipHelper(ref, ref, arg2) {
   const importDefault = ref;
   const dependencyMap = arg2;

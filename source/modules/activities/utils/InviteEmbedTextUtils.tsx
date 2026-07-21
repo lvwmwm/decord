@@ -1,10 +1,10 @@
-// Module ID: 12182
-// Function ID: 93668
+// Module ID: 12189
+// Function ID: 93691
 // Name: getRequestToStreamText
 // Dependencies: []
 // Exports: getDeadGameInviteText, getHeaderText, getPartyText
 
-// Module 12182 (getRequestToStreamText)
+// Module 12189 (getRequestToStreamText)
 function getRequestToStreamText(author, guild_id, id) {
   if (author.author.id === id) {
     const intl2 = guild_id(dependencyMap[2]).intl;

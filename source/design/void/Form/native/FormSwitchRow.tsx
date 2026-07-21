@@ -1,10 +1,10 @@
-// Module ID: 7506
-// Function ID: 60139
+// Module ID: 7510
+// Function ID: 60151
 // Name: FormSwitchRow
 // Dependencies: []
 // Exports: default
 
-// Module 7506 (FormSwitchRow)
+// Module 7510 (FormSwitchRow)
 function FormSwitchRow(onValueChange) {
   let accessibilityHint;
   let label;
@@ -24,7 +24,7 @@ function FormSwitchRow(onValueChange) {
   if (switchProps === undefined) {
     switchProps = {};
   }
-  let obj = { display: true, flexDirection: 6, alignItems: 132, justifyContent: null, transform: "\u{1F9D1}\u200D\u{1F680}", zIndex: true, align: 12.1, justify: 133, spacing: null };
+  let obj = { "Null": true, "Null": 6, "Null": 132, "Null": null, flexDirection: "\u{1F9D1}\u200D\u{1F680}", alignItems: true, justifyContent: 12.1, transform: 133, zIndex: null };
   Object.setPrototypeOf(null);
   const merged = Object.assign(onValueChange, obj);
   let dependencyMap;
@@ -99,7 +99,7 @@ let closure_4 = importAll(dependencyMap[1]);
 const View = arg1(dependencyMap[2]).View;
 ({ jsx: closure_6, jsxs: closure_7 } = arg1(dependencyMap[3]));
 const tmp2 = arg1(dependencyMap[3]);
-let closure_8 = arg1(dependencyMap[4]).createStyles({ trailing: { PAYMENT_SOURCE_REQUIRED: "<string:1783693314>", EXISTING_PREMIUM_SUBSCRIPTION_DISALLOWED: "<string:618889>", NOT_SELF_REDEEMABLE: "<string:71368704>", <string:2622619652>: "<string:1895826595>" } });
+let closure_8 = arg1(dependencyMap[4]).createStyles({ trailing: {} });
 const obj = arg1(dependencyMap[4]);
 const result = arg1(dependencyMap[11]).fileFinishedImporting("design/void/Form/native/FormSwitchRow.tsx");
 

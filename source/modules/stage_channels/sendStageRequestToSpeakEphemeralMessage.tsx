@@ -1,10 +1,10 @@
-// Module ID: 16035
-// Function ID: 123156
+// Module ID: 16042
+// Function ID: 123187
 // Name: createRequestToSpeakMessage
 // Dependencies: []
 // Exports: sendStageRequestToSpeakEphemeralMessage
 
-// Module 16035 (createRequestToSpeakMessage)
+// Module 16042 (createRequestToSpeakMessage)
 function createRequestToSpeakMessage(requestToSpeakTimestamp) {
   let channelId;
   let requesterUser;
@@ -36,7 +36,7 @@ const result = _module1.fileFinishedImporting("modules/stage_channels/sendStageR
 
 export const sendStageRequestToSpeakEphemeralMessage = function sendStageRequestToSpeakEphemeralMessage(channelId, user, requestToSpeakTimestamp) {
   let obj = importDefault(dependencyMap[1]);
-  obj = { accessibilityRole: true, withSpring: true, a: true, category: true, flexDirection: true, alignItems: true, channelId };
+  obj = { "Bool(false)": 24, "Bool(false)": 24, "Bool(false)": 2, "Bool(false)": 6, "Bool(false)": 1, "Bool(false)": 20, channelId };
   obj = { channelId, requesterUser: user, requestToSpeakTimestamp };
   obj.message = createRequestToSpeakMessage(obj);
   obj.sendMessageOptions = {};

@@ -1,10 +1,10 @@
-// Module ID: 13460
-// Function ID: 102206
+// Module ID: 13467
+// Function ID: 102229
 // Name: ColorSwatch
 // Dependencies: []
 // Exports: default
 
-// Module 13460 (ColorSwatch)
+// Module 13467 (ColorSwatch)
 function ColorSwatch(color) {
   let accessibilityLabel;
   let label;
@@ -27,9 +27,7 @@ function ColorSwatch(color) {
   obj.onPress = onPress;
   obj1 = { size: "xs", color: higherContrastColor, style: tmp.dropperIcon };
   obj.children = callback(arg1(dependencyMap[9]).PencilIcon, obj1);
-  const items2 = [callback(arg1(dependencyMap[7]).PressableOpacity, obj, color), ];
-  const obj2 = { <string:1024543674>: "r", <string:1437073984>: "isArray", <string:1111778444>: "scales", <string:1360934037>: "x", children: label };
-  items2[1] = callback(arg1(dependencyMap[10]).Text, obj2);
+  const items2 = [callback(arg1(dependencyMap[7]).PressableOpacity, obj, color), callback(arg1(dependencyMap[10]).Text, { children: label })];
   obj.children = items2;
   return callback2(View, obj);
 }
@@ -37,10 +35,10 @@ importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 ({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[2]));
 let obj = arg1(dependencyMap[3]);
-obj = { container: { gap: 6 }, sectionHeader: {}, themeColorContainer: { -78358941: true, 1694760273: true, -1437189573: true }, colorSwatchContainer: { VIDEO_MODAL_ICON_END_CARD: null, display: null, CHANNEL_INTEGRATION: null, VOICE_CHANNEL_EFFECT_SEND: null, "Bool(false)": null } };
-obj = { <string:1140607356>: true, <string:1751293292>: true, borderRadius: importDefault(dependencyMap[4]).radii.sm };
+obj = { container: { gap: 6 }, sectionHeader: {}, themeColorContainer: { "Bool(false)": true, "Bool(false)": true, "Bool(false)": true }, colorSwatchContainer: {} };
+obj = { <string:1632221346>: "<string:1107296676>", <string:2722977214>: "M168.783 62.4673C169.134 62.0216 169.338 61.4772 169.364 60.9102C169.391 60.3433 169.24 59.7821 168.933 59.3052C168.626 58.8282 168.177 58.4593 167.65 58.2501C167.123 58.0408 166.544 58.0016 165.993 58.138C159.553 59.7673 148.486 60.7682 136.884 53.5759C119.052 42.5199 99.1962 56.4156 103.753 73.1277C108.868 91.8415 142.836 99.4992 153.88 79.0863C153.88 79.0863 163.203 76.526 162.366 67.1923C164.881 66.2055 167.093 64.5764 168.783 62.4673Z", borderRadius: importDefault(dependencyMap[4]).radii.sm };
 obj.colorSwatch = obj;
-obj.dropperIcon = { onLongPressAvatar: "message", onTapUsername: "Text", onLongPressUsername: "content" };
+obj.dropperIcon = { "Null": null, "Null": null, "Null": null };
 const tmp3 = arg1(dependencyMap[2]);
 obj.overflowMenu = { tintColor: importDefault(dependencyMap[4]).colors.TEXT_SUBTLE };
 let closure_6 = obj.createStyles(obj);
@@ -115,7 +113,7 @@ export default function UserProfileEditTheme(isTryItOut) {
           let obj = tmp2(primaryColor[18]);
           obj = {
             onResetTheme() {
-              callback([]);
+              callback([null, null]);
             }
           };
           obj.openLazy(callback(primaryColor[20])(primaryColor[19], primaryColor.paths), "Profile Theme", obj);

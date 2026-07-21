@@ -1,16 +1,16 @@
-// Module ID: 9489
-// Function ID: 73949
+// Module ID: 9494
+// Function ID: 73965
 // Name: FeedbackForm
 // Dependencies: []
 // Exports: FeedbackForm
 
-// Module 9489 (FeedbackForm)
+// Module 9494 (FeedbackForm)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 const FeedbackRating = arg1(dependencyMap[2]).FeedbackRating;
 ({ jsx: closure_6, jsxs: closure_7 } = arg1(dependencyMap[3]));
 let obj = arg1(dependencyMap[4]);
-obj = { ratingsLabel: { textAlign: "center" }, reasonsHeader: { marginBottom: 8 }, reasonsList: { "Bool(true)": 318767661, "Bool(true)": 1107296529, "Bool(true)": 141684 } };
+obj = { ratingsLabel: { textAlign: "center" }, reasonsHeader: { marginBottom: 8 }, reasonsList: { "Bool(true)": true, "Bool(true)": true, "Bool(true)": true } };
 obj = { color: importDefault(dependencyMap[5]).colors.INTERACTIVE_TEXT_ACTIVE };
 obj.reason = obj;
 const tmp2 = arg1(dependencyMap[3]);

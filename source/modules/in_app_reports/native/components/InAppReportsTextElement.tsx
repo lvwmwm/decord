@@ -1,15 +1,15 @@
-// Module ID: 7608
-// Function ID: 60989
+// Module ID: 7612
+// Function ID: 61001
 // Name: TextElement
 // Dependencies: []
 // Exports: default
 
-// Module 7608 (TextElement)
+// Module 7612 (TextElement)
 let closure_3 = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 ({ jsx: closure_5, jsxs: closure_6 } = arg1(dependencyMap[2]));
 const tmp2 = arg1(dependencyMap[2]);
-let closure_7 = arg1(dependencyMap[3]).createStyles({ container: { "Bool(false)": "<string:16777479>", "Bool(false)": "<string:36295491>" }, header: { marginBottom: 8 }, body: { marginBottom: 16 } });
+let closure_7 = arg1(dependencyMap[3]).createStyles({ container: {}, header: { marginBottom: 8 }, body: { marginBottom: 16 } });
 const obj = arg1(dependencyMap[3]);
 const result = arg1(dependencyMap[6]).fileFinishedImporting("modules/in_app_reports/native/components/InAppReportsTextElement.tsx");
 
@@ -26,7 +26,7 @@ export default function TextElement(element) {
       obj = { style: tmp.container };
       let tmp6 = null != header;
       if (tmp6) {
-        obj = { style: tmp.header, children: header };
+        obj = { "Null": "781324642736144424", "Null": null, "Null": "Cheerful Choco preens against window", style: tmp.header, children: header };
         tmp6 = callback(arg1(dependencyMap[5]).Text, obj);
       }
       const items = [tmp6, ];

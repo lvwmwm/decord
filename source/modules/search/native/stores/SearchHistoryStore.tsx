@@ -1,9 +1,9 @@
-// Module ID: 15202
-// Function ID: 114780
+// Module ID: 15209
+// Function ID: 114804
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
-// Module 15202 (_isNativeReflectConstruct)
+// Module 15209 (_isNativeReflectConstruct)
 let NATIVE_SEARCH_HISTORY_STORAGE_KEY;
 let NATIVE_SEARCH_HISTORY_STORE_DISPLAY_NAME;
 function _isNativeReflectConstruct() {

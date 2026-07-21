@@ -1,10 +1,10 @@
-// Module ID: 10532
-// Function ID: 82316
+// Module ID: 10538
+// Function ID: 82339
 // Name: ActionButton
 // Dependencies: []
 // Exports: NotifiedActionButton, PrimaryActionButton, ToggledActionButton
 
-// Module 10532 (ActionButton)
+// Module 10538 (ActionButton)
 class ActionButton {
   constructor(arg0) {
     flag = global.appearsDisabled;
@@ -134,11 +134,11 @@ const tmp2 = arg1(dependencyMap[1]);
 ({ jsx: closure_7, jsxs: closure_8 } = arg1(dependencyMap[3]));
 let obj = arg1(dependencyMap[4]);
 let closure_9 = obj.hexWithOpacity(importDefault(dependencyMap[5]).unsafe_rawColors.WHITE, 0.24);
-let closure_10 = Object.freeze({ id: 110, mode: null, width: "1116b1666a9928acf5e5ec15dec8e3d4" });
+let closure_10 = Object.freeze({});
 const frozen = Object.freeze({});
 let closure_12 = 24 + 2 * frozen.buttonRadius * 5 + 96;
 let obj1 = arg1(dependencyMap[6]);
-obj = { buttonContainer: { position: "absolute" }, iconContainer: { test: true, useMemo: "/assets/.cache/intl/ZGVzaWdu", test: null }, badge: {} };
+obj = { buttonContainer: { position: "absolute" }, iconContainer: {}, badge: {} };
 obj = { borderColor: importDefault(dependencyMap[5]).unsafe_rawColors.PRIMARY_760 };
 obj.notificationArea = obj;
 obj.notificationText = { lineHeight: 16 };
@@ -170,7 +170,7 @@ export const ToggledActionButton = function ToggledActionButton(showBadge) {
     flag2 = false;
   }
   ({ backgroundColor, tintColor } = showBadge);
-  let obj = { "Bool(false)": null, "Bool(false)": "LOCAL_PAYMENT_START_PAYMENT_MISSING_REQUIRED_OPTION", "Bool(false)": "Missing required option for startPayment.", "Null": null, "Null": "LOCAL_PAYMENT_START_PAYMENT_DEFERRED_PAYMENT_FAILED", "Null": "LocalPayment startPayment deferred payment failed." };
+  let obj = { "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true };
   Object.setPrototypeOf(null);
   const merged = Object.assign(showBadge, obj);
   let WHITE = null;

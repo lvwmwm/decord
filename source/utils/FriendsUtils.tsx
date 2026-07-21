@@ -1,10 +1,10 @@
-// Module ID: 8915
-// Function ID: 70352
+// Module ID: 8919
+// Function ID: 70364
 // Name: validateDiscordTag
 // Dependencies: []
 // Exports: humanizeAbortCodeForA11y, isValidDiscordTag
 
-// Module 8915 (validateDiscordTag)
+// Module 8919 (validateDiscordTag)
 function validateDiscordTag(arr) {
   let stringResult = null;
   if (!regex3.test(arr)) {

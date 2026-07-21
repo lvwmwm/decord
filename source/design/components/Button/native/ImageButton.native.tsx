@@ -1,9 +1,9 @@
-// Module ID: 12071
-// Function ID: 93140
+// Module ID: 12078
+// Function ID: 93163
 // Name: ImageButton
 // Dependencies: []
 
-// Module 12071 (ImageButton)
+// Module 12078 (ImageButton)
 const importAllResult = importAll(dependencyMap[0]);
 ({ View: closure_4, Image: closure_5 } = arg1(dependencyMap[1]));
 const tmp2 = arg1(dependencyMap[1]);
@@ -25,11 +25,11 @@ let closure_8 = arg1(dependencyMap[3]).createStyles((arg0, arg1, arg2) => {
   }
   obj.flexGrow = num;
   obj.labelPressable = obj;
-  obj = { color: false, backgroundColor: true, minHeight: sum, minWidth: sum, borderRadius: importDefault(dependencyMap[5]).radii.round };
+  obj = { width: -536870861, marginHorizontal: -299892737, minHeight: sum, minWidth: sum, borderRadius: importDefault(dependencyMap[5]).radii.round };
   obj.pill = obj;
   obj.imageWrapper = { width: sum, height: sum, position: "relative" };
   obj.image = { width: sum, height: sum };
-  const obj1 = { left: "isArray", borderColor: "skuId", borderWidth: "T", backgroundColor: importDefault(dependencyMap[5]).colors.REDESIGN_IMAGE_BUTTON_PRESSED_BACKGROUND, borderRadius: importDefault(dependencyMap[5]).radii.round };
+  const obj1 = { o: "center", concat: null, o: 4, borderRadius: importDefault(dependencyMap[5]).radii.round, position: "rgba(0, 0, 0, 0.75)", backgroundColor: importDefault(dependencyMap[5]).colors.REDESIGN_IMAGE_BUTTON_PRESSED_BACKGROUND };
   obj.imageDim = obj1;
   return obj;
 });
@@ -50,7 +50,7 @@ const forwardRefResult = importAllResult.forwardRef((size, ref) => {
   ref = onPressIn;
   const onPressOut = size.onPressOut;
   const importDefault = onPressOut;
-  let obj = { "Null": null, "Null": 0.6, "Null": "BounceOutRight", "Null": null, "Null": 0.6, "Null": "BounceOutLeft", "Null": null, "Null": 0.6 };
+  let obj = { ip: null, op: 0.6, st: "BounceOutRight", bm: null, channel: 0.6, ddd: "BounceOutLeft", ind: null, ty: 0.6 };
   ({ grow, image } = size);
   Object.setPrototypeOf(null);
   const merged = Object.assign(size, obj);
@@ -113,7 +113,7 @@ const forwardRefResult = importAllResult.forwardRef((size, ref) => {
     obj3["onPressOut"] = callback1;
     obj3["maxFontSizeMultiplier"] = maxFontSizeMultiplier;
     const items4 = [callback(ref(dependencyMap[11]).BaseIconButton, obj3), ];
-    const obj4 = { INTEGRATION_CREATE: false, ConstraintReasonCode: false, maxFontSizeMultiplier, children: label };
+    const obj4 = { maxFontSizeMultiplier, children: label };
     items4[1] = callback(ref(dependencyMap[12]).Text, obj4);
     obj2["children"] = items4;
     let tmp19 = callback2(ref(dependencyMap[10]).BaseButton, obj2);

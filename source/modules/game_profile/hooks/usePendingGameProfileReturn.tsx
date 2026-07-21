@@ -1,10 +1,10 @@
-// Module ID: 11448
-// Function ID: 89214
+// Module ID: 11455
+// Function ID: 89238
 // Name: usePendingGameProfileReturn
 // Dependencies: []
 // Exports: default
 
-// Module 11448 (usePendingGameProfileReturn)
+// Module 11455 (usePendingGameProfileReturn)
 let closure_3 = importAll(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 let closure_5 = importDefault(dependencyMap[2]);

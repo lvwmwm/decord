@@ -1,10 +1,10 @@
-// Module ID: 8655
-// Function ID: 68514
+// Module ID: 8659
+// Function ID: 68526
 // Name: useCurrentUser
 // Dependencies: []
 // Exports: useCurrentUser, useCurrentUserIfAvailable
 
-// Module 8655 (useCurrentUser)
+// Module 8659 (useCurrentUser)
 let closure_3 = importDefault(dependencyMap[0]);
 const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/collectibles/hooks/useCurrentUser.tsx");
 

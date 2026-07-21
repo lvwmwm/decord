@@ -1,10 +1,10 @@
-// Module ID: 5789
-// Function ID: 49443
+// Module ID: 5791
+// Function ID: 49486
 // Name: openUserSettings
 // Dependencies: []
 // Exports: openUserSettings
 
-// Module 5789 (openUserSettings)
+// Module 5791 (openUserSettings)
 const _module = require(dependencyMap[0]);
 const UserSettingsSections = require(dependencyMap[1]).UserSettingsSections;
 const _module1 = require(dependencyMap[4]);

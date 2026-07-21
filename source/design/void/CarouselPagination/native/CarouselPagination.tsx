@@ -1,15 +1,15 @@
-// Module ID: 12962
-// Function ID: 98624
+// Module ID: 12969
+// Function ID: 98647
 // Name: CarouselPagination
 // Dependencies: []
 // Exports: default
 
-// Module 12962 (CarouselPagination)
+// Module 12969 (CarouselPagination)
 const View = arg1(dependencyMap[1]).View;
 const jsx = arg1(dependencyMap[2]).jsx;
 const importAllResult = importAll(dependencyMap[0]);
 let obj = { container: {} };
-obj = { "Null": true, "Null": true, "Null": true, "Null": true, borderRadius: importDefault(dependencyMap[4]).radii.xs, backgroundColor: importDefault(dependencyMap[4]).colors.ICON_STRONG };
+obj = { borderRadius: importDefault(dependencyMap[4]).radii.xs, backgroundColor: importDefault(dependencyMap[4]).colors.ICON_STRONG };
 obj.dot = obj;
 let closure_5 = arg1(dependencyMap[3]).createStyles(obj);
 let closure_6 = { code: "function CarouselPaginationTsx1(){const{withTiming,active,STANDARD_EASING}=this.__closure;return withTiming(active?1:0,{duration:250,easing:STANDARD_EASING},'animate-always');}" };
@@ -39,12 +39,12 @@ let closure_8 = importAllResult.memo((active) => {
   const backgroundColor = tmp.dot.backgroundColor;
   const View = backgroundColor;
   const fn2 = function c() {
-    const obj = { width: active(BRAND_500[5]).interpolate(derivedValue.get(), [null, null], ["<string:134218230>", "<string:419430927>"]) };
+    const obj = { width: active(BRAND_500[5]).interpolate(derivedValue.get(), ["Text", "lc"], []) };
     const obj2 = active(BRAND_500[5]);
     const items = [backgroundColor, BRAND_500];
-    obj.backgroundColor = active(BRAND_500[5]).interpolateColor(derivedValue.get(), [null, null], items);
+    obj.backgroundColor = active(BRAND_500[5]).interpolateColor(derivedValue.get(), ["Text", "lc"], items);
     const obj3 = active(BRAND_500[5]);
-    obj.opacity = active(BRAND_500[5]).interpolate(derivedValue.get(), [null, null], []);
+    obj.opacity = active(BRAND_500[5]).interpolate(derivedValue.get(), ["Text", "lc"], []);
     return obj;
   };
   obj = { interpolate: arg1(dependencyMap[5]).interpolate, progress: derivedValue, interpolateColor: arg1(dependencyMap[5]).interpolateColor, backgroundColor, brand500: BRAND_500 };

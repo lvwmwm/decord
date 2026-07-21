@@ -1,10 +1,10 @@
-// Module ID: 14033
-// Function ID: 106721
+// Module ID: 14040
+// Function ID: 106744
 // Name: SynchronizeIcon
 // Dependencies: []
 // Exports: default
 
-// Module 14033 (SynchronizeIcon)
+// Module 14040 (SynchronizeIcon)
 importAll(dependencyMap[0]);
 ({ jsx: closure_3, jsxs: closure_4 } = arg1(dependencyMap[1]));
 const tmp3 = arg1(dependencyMap[1]);
@@ -12,8 +12,8 @@ const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/client_them
 
 export default function SynchronizeIcon(iconStyles) {
   const fill = iconStyles.fill;
-  let obj = { style: iconStyles.iconStyles, fill };
-  obj = { id: "Frame_-_24px", children: callback(arg1(dependencyMap[2]).Rect, { Globe Single Line: 21094465, badgeColorSecondary: 1090588928, NavigationHelpersContext: 69624, getContext: 1688224017 }) };
+  let obj = { "Bool(true)": false, "Bool(true)": false, "Bool(true)": false, "Bool(true)": false, "Bool(true)": false, "Bool(true)": false, style: iconStyles.iconStyles, fill };
+  obj = { id: "Frame_-_24px", children: callback(arg1(dependencyMap[2]).Rect, { <string:3954130140>: 23721025, <string:4182794923>: 1090588928, <string:2929916259>: 69135, <string:1649013585>: 1684816145 }) };
   const items = [callback(arg1(dependencyMap[2]).G, obj), ];
   obj = { id: "Filled_Icons" };
   const obj1 = {};

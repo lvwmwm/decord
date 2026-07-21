@@ -1,10 +1,10 @@
-// Module ID: 10451
-// Function ID: 80903
+// Module ID: 10457
+// Function ID: 80926
 // Name: useQuestImpressionRef
 // Dependencies: []
 // Exports: useAdContentImpressionTrackerProps, useGetQuestImpressionId, useQuestImpressionId, useQuestStatusChanged
 
-// Module 10451 (useQuestImpressionRef)
+// Module 10457 (useQuestImpressionRef)
 function useQuestImpressionRef() {
   return React.useContext(arg1(dependencyMap[6]).QuestImpressionContext);
 }

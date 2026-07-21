@@ -1,10 +1,10 @@
-// Module ID: 11273
-// Function ID: 87758
+// Module ID: 11279
+// Function ID: 87781
 // Name: AppLauncherList
 // Dependencies: []
 // Exports: AppLauncherListEmptyState, AppLauncherListSearchBar
 
-// Module 11273 (AppLauncherList)
+// Module 11279 (AppLauncherList)
 const View = arg1(dependencyMap[1]).View;
 const jsx = arg1(dependencyMap[2]).jsx;
 const importAllResult = importAll(dependencyMap[0]);

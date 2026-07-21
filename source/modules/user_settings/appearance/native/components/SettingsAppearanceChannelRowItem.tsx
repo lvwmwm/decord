@@ -1,10 +1,10 @@
-// Module ID: 14048
-// Function ID: 106741
+// Module ID: 14055
+// Function ID: 106764
 // Name: ChannelRowItem
 // Dependencies: []
 // Exports: default
 
-// Module 14048 (ChannelRowItem)
+// Module 14055 (ChannelRowItem)
 let num = 0;
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
@@ -17,7 +17,7 @@ obj.channelItemContainer = obj;
 obj.channelItemLeft = {};
 const tmp3 = arg1(dependencyMap[3]);
 obj.channelItemUnreadIndicator = { backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BRAND, borderRadius: importDefault(dependencyMap[5]).radii.round, margin: importDefault(dependencyMap[5]).space.PX_8 };
-const obj2 = { "Null": false, "Null": false, "Null": false, marginRight: importDefault(dependencyMap[5]).space.PX_8 };
+const obj2 = { 9223372036854775807: false, 9223372036854775807: false, 9223372036854775807: false, marginRight: importDefault(dependencyMap[5]).space.PX_8 };
 obj.channelItemAvatar = obj2;
 obj.channelItemContent = {};
 const obj1 = { backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BRAND, borderRadius: importDefault(dependencyMap[5]).radii.round, margin: importDefault(dependencyMap[5]).space.PX_8 };
@@ -85,7 +85,7 @@ export default function ChannelRowItem(isUnread) {
   const obj5 = { style: tmp2.channelItemContent };
   const obj6 = { style: tmp2.channelItemTop };
   const items3 = [callback(arg1(dependencyMap[8]).Text, { style: flag ? animatedStyles.textNormal : animatedStyles.textMuted, children: title }), ];
-  const obj8 = { 0: null, 0: null, 9223372036854775807: null, style: animatedStyles.textMuted, children: timestamp };
+  const obj8 = { "Null": null, "Null": null, "Null": null, style: animatedStyles.textMuted, children: timestamp };
   items3[1] = callback(arg1(dependencyMap[8]).Text, obj8);
   obj6.children = items3;
   const items4 = [closure_5(View, obj6), ];

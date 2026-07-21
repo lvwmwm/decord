@@ -1,12 +1,11 @@
-// Module ID: 10825
-// Function ID: 84038
+// Module ID: 10831
+// Function ID: 84061
 // Name: apexExperiment
 // Dependencies: []
 
-// Module 10825 (apexExperiment)
+// Module 10831 (apexExperiment)
 const _module = require(dependencyMap[0]);
-const obj = { -1269606814: "/assets/images/native/icons", -1845285747: 24, defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } };
-const apexExperiment = _module.createApexExperiment(obj);
+const apexExperiment = _module.createApexExperiment({ defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } });
 const _module1 = require(dependencyMap[1]);
 const result = _module1.fileFinishedImporting("modules/quests/experiments/QuestHomeBountiesExperiment.tsx");
 

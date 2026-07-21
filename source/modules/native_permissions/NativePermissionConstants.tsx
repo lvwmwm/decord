@@ -1,9 +1,9 @@
-// Module ID: 4336
-// Function ID: 38283
+// Module ID: 4340
+// Function ID: 38331
 // Name: NativePermissionStatus
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 4336 (NativePermissionStatus)
+// Module 4340 (NativePermissionStatus)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("modules/native_permissions/NativePermissionConstants.tsx");
 

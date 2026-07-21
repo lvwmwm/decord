@@ -1,9 +1,9 @@
-// Module ID: 5860
-// Function ID: 49664
+// Module ID: 5862
+// Function ID: 49707
 // Name: metadata
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 5860 (metadata)
+// Module 5862 (metadata)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/AvatarClydeExample-2x.png.js");
 

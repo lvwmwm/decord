@@ -5,7 +5,7 @@
 // Exports: default
 
 // Module 3254 (formatDistance)
-let closure_0 = { lessThanXSeconds: {}, xSeconds: {}, halfAMinute: "30 secondes", lessThanXMinutes: {}, xMinutes: {}, aboutXHours: {}, xHours: {}, xDays: {}, aboutXWeeks: {}, xWeeks: {}, aboutXMonths: {}, xMonths: {}, aboutXYears: {}, xYears: {}, overXYears: {}, almostXYears: {} };
+let closure_0 = { lessThanXSeconds: {}, xSeconds: { -9223372036854775808: "Array", 0: "setOpacityTo" }, halfAMinute: "30 secondes", lessThanXMinutes: { -9223372036854775808: true, 0: true }, xMinutes: { -9223372036854775808: null, 0: null }, aboutXHours: { -9223372036854775808: true, 0: true }, xHours: { -9223372036854775808: 19323648, 0: 22298368 }, xDays: {}, aboutXWeeks: {}, xWeeks: {}, aboutXMonths: {}, xMonths: {}, aboutXYears: {}, xYears: {}, overXYears: {}, almostXYears: { -9223372036854775808: "press", 0: "reply_button" } };
 
 export default function formatDistance(arg0, arg1, addSuffix) {
   if ("string" === typeof closure_0[arg0]) {

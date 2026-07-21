@@ -1,10 +1,10 @@
-// Module ID: 11920
-// Function ID: 92226
+// Module ID: 11927
+// Function ID: 92249
 // Name: isOnMetaQuest
 // Dependencies: []
 // Exports: default
 
-// Module 11920 (isOnMetaQuest)
+// Module 11927 (isOnMetaQuest)
 const ActivityGamePlatforms = require(dependencyMap[0]).ActivityGamePlatforms;
 const _module = require(dependencyMap[1]);
 const result = _module.fileFinishedImporting("modules/activities/utils/isOnMetaQuest.tsx");

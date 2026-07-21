@@ -1,10 +1,10 @@
-// Module ID: 14533
-// Function ID: 109506
+// Module ID: 14540
+// Function ID: 109528
 // Name: GiftPurchaseSKUView
 // Dependencies: []
 // Exports: default
 
-// Module 14533 (GiftPurchaseSKUView)
+// Module 14540 (GiftPurchaseSKUView)
 function GiftPurchaseSKUView(selectedSkuId) {
   let giftMessage;
   let giftRecipientId;
@@ -111,7 +111,7 @@ function GiftPurchaseSKUView(selectedSkuId) {
   const items5 = [product];
   [tmp12, tmp13] = callback(React.useMemo(() => {
     if (null == product) {
-      let items = ["<string:278020057>", "<string:809107990>"];
+      let items = [];
     } else {
       items = [selectedSkuId(closure_2[20]).getFormattedPriceForCollectiblesProduct(product, true, true), ];
       const obj = selectedSkuId(closure_2[20]);
@@ -128,12 +128,12 @@ function GiftPurchaseSKUView(selectedSkuId) {
   }
   obj1 = { spacing: 24, style: obj2 };
   obj2 = { paddingTop: rect.top, paddingBottom: rect.bottom, paddingHorizontal: 12 };
-  const obj3 = { INTEGRATION_CREATE: "<string:3574726658>", ConstraintReasonCode: "<string:1234436097>" };
+  const obj3 = {};
   let name;
   if (null != stateFromStores) {
     name = stateFromStores.name;
   }
-  const items6 = [false, name, " to ", giftRecipientId, " ", "\n", "Regular price: ", tmp13, " ", "\n", "Premium price: ", tmp12, " ", "\n"];
+  const items6 = [null, name, " to ", giftRecipientId, " ", "\n", "Regular price: ", tmp13, " ", "\n", "Premium price: ", tmp12, " ", "\n"];
   let str = "No message";
   if (null != giftMessage) {
     str = "No message";
@@ -159,10 +159,8 @@ function GiftPurchaseSKUView(selectedSkuId) {
   obj4.children = callback3(arg1(closure_2[24]).Button, obj5);
   items7[1] = callback3(arg1(closure_2[23]).Card, obj4);
   const obj6 = {};
-  const obj7 = { INTEGRATION_CREATE: "<string:3574726658>", ConstraintReasonCode: "<string:1234436097>" };
   const items8 = [null, giftStyle];
-  obj7.children = items8;
-  const items9 = [callback2(arg1(closure_2[22]).Text, obj7), callback3(importDefault(closure_2[25]), {})];
+  const items9 = [callback2(arg1(closure_2[22]).Text, { children: items8 }), callback3(importDefault(closure_2[25]), {})];
   obj6.children = items9;
   items7[2] = callback2(arg1(closure_2[23]).Card, obj6);
   obj1.children = items7;
@@ -204,7 +202,7 @@ function SimpleRequestOTPActionSheet(giftMessage) {
   if (null != requestType) {
     str = requestType;
   }
-  const items1 = [, str];
+  const items1 = [null, str];
   obj3.children = items1;
   items[1] = closure_11(arg1(dependencyMap[22]).Text, obj3);
   obj2.children = items;

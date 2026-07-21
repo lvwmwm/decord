@@ -1,14 +1,14 @@
-// Module ID: 10787
-// Function ID: 83776
+// Module ID: 10793
+// Function ID: 83799
 // Name: matchPathToRoutes
 // Dependencies: []
 // Exports: cleanupRouteManager, initializeRouteManagerIfNeeded, popVoiceRoute, transitionToVoiceRoute
 
-// Module 10787 (matchPathToRoutes)
+// Module 10793 (matchPathToRoutes)
 let Routes;
 function matchPathToRoutes(pathname, items) {
   let obj = items(dependencyMap[11]);
-  obj = { "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, path: items };
+  obj = { -9223372036854775808: "postal-address-country", -9223372036854775808: "password", 0: "email", path: items };
   return obj.matchPath(pathname, obj);
 }
 function extractParamsFromVoiceModalRoute(location) {
@@ -250,7 +250,7 @@ function extractParams(arg0) {
   let match;
   ({ match, location: _location } = arg0);
   if (null == match) {
-    let obj = { easingHeightV: 1901293907, GuildBadgeHeart: "slight_smile", confirmation: "smiling_imp", TERMS_SUMMARY: "smiling_imp", easingHeightV: -167119364, guildId: closure_11, jumpType: arg1(dependencyMap[22]).JumpType.ANIMATED };
+    let obj = { onPress: null, start: null, end: "<string:1153327360>", time: "name-middle", pauseInvites: "name-family", guildId: closure_11, jumpType: arg1(dependencyMap[22]).JumpType.ANIMATED };
     return obj;
   } else {
     const params = match.params;
@@ -280,7 +280,7 @@ function extractParams(arg0) {
 function logRouteChange(pathname) {
   importDefaultResult.log("Navigated to: " + pathname.pathname);
 }
-let closure_3 = [-51565538125756000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, 4013454016352173000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000];
+let closure_3 = [null, null];
 let closure_4 = importDefault(dependencyMap[0]);
 const setVoiceChatDrawerState = arg1(dependencyMap[1]).setVoiceChatDrawerState;
 let closure_6 = arg1(dependencyMap[2]).isGuildSelectableChannelType;

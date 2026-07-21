@@ -1,8 +1,8 @@
-// Module ID: 14914
-// Function ID: 112324
+// Module ID: 14921
+// Function ID: 112348
 // Dependencies: []
 
-// Module 14914
+// Module 14921
 const importAllResult = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 let closure_5 = importDefault(dependencyMap[2]);
@@ -21,11 +21,11 @@ let closure_15 = arg1(dependencyMap[10]).createStyles((arg0, arg1) => {
     flag = false;
   }
   let obj = {};
-  obj = { justifyContent: true, alignItems: true, 9223372036854775807: true, 9223372036854775807: true, 9223372036854775807: true, marginVertical: closure_11, borderRadius: importDefault(dependencyMap[11]).modules.mobile.CHANNEL_ITEM_RADIUS };
+  obj = { marginVertical: closure_11, borderRadius: importDefault(dependencyMap[11]).modules.mobile.CHANNEL_ITEM_RADIUS };
   obj.container = obj;
   obj = { backgroundColor: importDefault(dependencyMap[11]).colors.MOBILE_CHANNEL_ITEM_BACKGROUND_SELECTED };
   obj.selected = obj;
-  const obj1 = { rowCount: "isArray", AnnouncementChannelReturn: "skuId", y: "T", PRUNE_DELETE_DAYS: "r", PREMIUM_UNCANCEL_WINBACK_MODAL_VIEWED: "isArray", borderWidth: 1 };
+  const obj1 = { marginBottom: "center", justifyContent: null, alignItems: 4, it: 4, now: "rgba(0, 0, 0, 0.75)", borderWidth: 1 };
   let BORDER_MUTED;
   if (!flag) {
     BORDER_MUTED = importDefault(dependencyMap[11]).colors.BORDER_MUTED;
@@ -33,10 +33,10 @@ let closure_15 = arg1(dependencyMap[10]).createStyles((arg0, arg1) => {
   obj1.borderColor = BORDER_MUTED;
   obj1.borderRadius = importDefault(dependencyMap[11]).modules.mobile.CHANNEL_ITEM_RADIUS;
   obj.selectedBorder = obj1;
-  obj.row = { label: false, accessibilityRole: false, variant: false };
+  obj.row = {};
   obj.rowWithSubtitle = {};
-  obj.channelLabel = { clientThemeSettings: true, useItemDragState: true };
-  const obj2 = { "Bool(false)": 1, "Bool(false)": null, lineHeight: closure_12 };
+  obj.channelLabel = { padding: true, T: "/assets/.cache/intl/bW9kdWxlcy9nb19saXZlL3dlYi9tb2RhbA==" };
+  const obj2 = { "Null": 1, "Null": null, lineHeight: closure_12 };
   let num2 = 1;
   if (arg0) {
     num2 = 1;
@@ -145,7 +145,7 @@ const memoResult = importAllResult.memo((channel) => {
   let obj9 = arg1(dependencyMap[15]);
   obj3 = { mode: channelMode, source: tmp14, IconComponent: BookCheckIcon };
   const BaseChannelIconResult = obj9.BaseChannelIcon(obj3);
-  const obj4 = { "Bool(false)": "<string:1667301377>", "Bool(false)": "<string:1102852099>", style: tmp.channelLabelText };
+  const obj4 = { height: 10, width: 371, style: tmp.channelLabelText };
   const tmp19 = importDefault(dependencyMap[25])(channel);
   const merged = Object.assign(arg1(dependencyMap[15]).useChannelNameTextProps(channelMode));
   obj4["children"] = tmp19;
@@ -191,7 +191,7 @@ const memoResult = importAllResult.memo((channel) => {
   if (null != subtitle) {
     const obj11 = { style: tmp.channelLabel };
     const items10 = [tmp21, ];
-    const obj12 = { "Bool(false)": "<string:1667301377>", "Bool(false)": "<string:1102852099>" };
+    const obj12 = { height: 10, width: 371 };
     const merged1 = Object.assign(arg1(dependencyMap[15]).getChannelSubtitleTextProps(channelMode));
     const obj22 = arg1(dependencyMap[15]);
     obj12["children"] = arg1(dependencyMap[31]).getChannelSubtitleData(subtitle).subtitle;

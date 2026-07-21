@@ -1,10 +1,10 @@
-// Module ID: 14455
-// Function ID: 108954
+// Module ID: 14462
+// Function ID: 108977
 // Name: DoubleCheckmarkIcon
 // Dependencies: []
 // Exports: DoubleCheckmarkIcon
 
-// Module 14455 (DoubleCheckmarkIcon)
+// Module 14462 (DoubleCheckmarkIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/DoubleCheckmarkIcon.tsx");

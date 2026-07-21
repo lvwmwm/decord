@@ -1,9 +1,9 @@
-// Module ID: 4807
-// Function ID: 41915
+// Module ID: 4809
+// Function ID: 41956
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
-// Module 4807 (_isNativeReflectConstruct)
+// Module 4809 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -134,7 +134,7 @@ function calculateStartTime(startTime, position) {
 }
 function sendStoppedPlayerState(accountId) {
   let obj = importDefault(dependencyMap[18]);
-  obj = { <string:3830749383>: true, <string:3474430228>: "/assets/images/platforms", <string:1143028753>: 255, UP_RIGHT: 255, DOWN_RIGHT: null, UP_LEFT: "2eaff20be2a75be7ccdd4c6f19f0eb36", DOWN_LEFT: "img_account_sync_youtube_white", <string:53015124>: "png", accountId };
+  obj = { "Bool(true)": true, "Bool(true)": "/assets/images/platforms", "Bool(true)": 255, "Bool(true)": 255, "Bool(true)": null, "Bool(true)": "2eaff20be2a75be7ccdd4c6f19f0eb36", "Bool(true)": "img_account_sync_youtube_white", "Bool(true)": "png", accountId };
   obj.dispatch(obj);
 }
 function findSpotifyActivity(arg0) {
@@ -361,7 +361,7 @@ function setSpeaking(id, arg1) {
   if (id === store.getId()) {
     const result = currentClientInVoiceChannel.isCurrentClientInVoiceChannel();
     let obj = arg1(dependencyMap[25]);
-    obj = { userId: id };
+    obj = { 0: "ERROR", 9223372036854775807: "ERROR", 0: "NOT_RESPONDER", userId: id };
     if (result) {
       if (obj.getIsSpeaking(obj)) {
         if (null != closure_23) {

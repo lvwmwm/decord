@@ -1,17 +1,17 @@
-// Module ID: 14811
-// Function ID: 111654
+// Module ID: 14818
+// Function ID: 111678
 // Name: HappeningNowAvatarStack
 // Dependencies: []
 // Exports: HappeningNowAvatarStack
 
-// Module 14811 (HappeningNowAvatarStack)
+// Module 14818 (HappeningNowAvatarStack)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 const View = arg1(dependencyMap[2]).View;
 let closure_6 = importDefault(dependencyMap[3]);
 const CHANNEL_SPRING_CONFIG = arg1(dependencyMap[4]).CHANNEL_SPRING_CONFIG;
 ({ jsx: closure_8, jsxs: closure_9 } = arg1(dependencyMap[5]));
-let closure_10 = { overflow: "<string:738197504>", position: "<string:16777216>", top: "<string:1368613201>" };
+let closure_10 = {};
 const tmp2 = arg1(dependencyMap[5]);
 let closure_11 = arg1(dependencyMap[6]).createStyles((arg0, marginLeft) => {
   let obj = { avatarStack: { flexDirection: "row" } };
@@ -20,7 +20,7 @@ let closure_11 = arg1(dependencyMap[6]).createStyles((arg0, marginLeft) => {
   obj.avatarBubbles = {};
   obj.avatars = {};
   obj.shiftedAvatar = { marginLeft: -marginLeft };
-  obj = { stroke: 671678465, strokeWidth: 812843010, style: 805306368, gemWidth: 33554432, backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_MOD_STRONG, marginLeft: -marginLeft, height: marginLeft(dependencyMap[8]).AVATAR_SIZE_MAP[arg0], minWidth: marginLeft(dependencyMap[8]).AVATAR_SIZE_MAP[arg0], borderRadius: 10, paddingHorizontal: 4, paddingTop: 1 };
+  obj = { backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_MOD_STRONG, marginLeft: -marginLeft, height: marginLeft(dependencyMap[8]).AVATAR_SIZE_MAP[arg0], minWidth: marginLeft(dependencyMap[8]).AVATAR_SIZE_MAP[arg0], borderRadius: 10, paddingHorizontal: 4, paddingTop: 1 };
   obj.userCounter = obj;
   obj.ellipsisWrapper = { marginLeft: -4 - marginLeft };
   obj.ellipsisBorder = { borderColor: importDefault(dependencyMap[7]).colors.CARD_SECONDARY_BG };
@@ -89,9 +89,9 @@ export const HappeningNowAvatarStack = function HappeningNowAvatarStack(userLimi
     constructor() {
       obj = {};
       obj2 = guildId(isStage[9]);
-      obj.opacity = obj2.interpolate(closure_8.get(), [null, null], [null, null]);
+      obj.opacity = obj2.interpolate(closure_8.get(), ["Text", "lc"], ["Text", "lc"]);
       obj3 = guildId(isStage[9]);
-      obj.width = obj3.interpolate(closure_8.get(), [null, null], [null, null]);
+      obj.width = obj3.interpolate(closure_8.get(), ["Text", "lc"], [-1809776636, -1997471740]);
       return obj;
     }
   }
@@ -200,7 +200,7 @@ export const HappeningNowAvatarStack = function HappeningNowAvatarStack(userLimi
     obj2.style = items3;
     obj2.children = mapped;
     const items4 = [sharedValue(importDefault(dependencyMap[9]).View, obj2), ];
-    const obj3 = { "Bool(false)": "Array", "Bool(false)": "isArray", children: arg1(dependencyMap[14]).humanizeValue(userCount, stateFromStores) };
+    const obj3 = { children: arg1(dependencyMap[14]).humanizeValue(userCount, stateFromStores) };
     items4[1] = sharedValue(arg1(dependencyMap[13]).Text, obj3);
     obj1.children = items4;
     let tmp25 = obj1;
@@ -216,8 +216,8 @@ export const HappeningNowAvatarStack = function HappeningNowAvatarStack(userLimi
     let tmp20 = null;
     if (diff > 0) {
       const obj6 = { style: tmp3.userCounter };
-      const obj7 = {};
-      const items8 = [true, arg1(dependencyMap[14]).humanizeValue(diff, stateFromStores)];
+      const obj7 = { "Bool(true)": "channel-list", "Bool(true)": "guilds", "Bool(true)": null };
+      const items8 = ["fill", arg1(dependencyMap[14]).humanizeValue(diff, stateFromStores)];
       obj7.children = items8;
       obj6.children = substr(arg1(dependencyMap[13]).Text, obj7);
       tmp20 = sharedValue(View, obj6);

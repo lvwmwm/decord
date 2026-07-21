@@ -1,10 +1,10 @@
-// Module ID: 5897
-// Function ID: 49719
+// Module ID: 5899
+// Function ID: 49762
 // Name: BookIllocon
 // Dependencies: []
 // Exports: BookIllocon
 
-// Module 5897 (BookIllocon)
+// Module 5899 (BookIllocon)
 const jsx = require(dependencyMap[0]).jsx;
 const _module = require(dependencyMap[3]);
 const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/BookIllocon.native.tsx");

@@ -1,11 +1,11 @@
-// Module ID: 6862
-// Function ID: 54299
+// Module ID: 6866
+// Function ID: 54309
 // Name: set
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 6862 (set)
-const obj = { ALL: new Set([]) };
-const set = new Set([]);
+// Module 6866 (set)
+const obj = { ALL: new Set([null, null, null, null, null]) };
+const set = new Set([null, null, null, null, null]);
 obj.IS_ADULT_ONLY = new Set([]);
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_common/js/shared/shared-constants/ContentRatingPEGIRating.tsx");

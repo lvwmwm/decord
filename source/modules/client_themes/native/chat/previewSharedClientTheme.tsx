@@ -1,10 +1,10 @@
-// Module ID: 11073
-// Function ID: 86129
+// Module ID: 11079
+// Function ID: 86152
 // Name: handleTapPreviewSharedClientTheme
 // Dependencies: []
 // Exports: handleTapPreviewSharedClientTheme
 
-// Module 11073 (handleTapPreviewSharedClientTheme)
+// Module 11079 (handleTapPreviewSharedClientTheme)
 const _module = require(dependencyMap[3]);
 const result = _module.fileFinishedImporting("modules/client_themes/native/chat/previewSharedClientTheme.tsx");
 

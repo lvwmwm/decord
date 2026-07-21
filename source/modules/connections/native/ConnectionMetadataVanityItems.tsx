@@ -1,10 +1,10 @@
-// Module ID: 9986
-// Function ID: 77249
+// Module ID: 9992
+// Function ID: 77267
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 // Exports: generateBlueskyMetadataItems, generateEbayMetadataItems, generatePaypalMetadataItems, generateRedditMetadataItems, generateRoleConnectionMetadataItems, generateSteamMetadataItems, generateTikTokMetadataItems, generateTwitterMetadataItems
 
-// Module 9986 (_createForOfIteratorHelperLoose)
+// Module 9992 (_createForOfIteratorHelperLoose)
 function _createForOfIteratorHelperLoose(@@iterator) {
   let arg1 = Symbol_iterator;
   @@iterator = "undefined" !== typeof Symbol;
@@ -169,8 +169,8 @@ const View = arg1(dependencyMap[1]).View;
 const tmp3 = arg1(dependencyMap[2]);
 ({ jsx: closure_6, jsxs: closure_7 } = arg1(dependencyMap[3]));
 let obj = arg1(dependencyMap[4]);
-obj = { connectedAccountVanityMetadata: {}, connectedAccountVanityMetadataItem: { -9223372036854775808: true, filter: true }, connectedAccountVanityMetadataItemIcon: {} };
-obj = { backgroundColor: importDefault(dependencyMap[5]).colors.BORDER_SUBTLE, borderRadius: importDefault(dependencyMap[5]).radii.md };
+obj = { connectedAccountVanityMetadata: { "Null": false, "Null": false }, connectedAccountVanityMetadataItem: {}, connectedAccountVanityMetadataItemIcon: {} };
+obj = { label: "{{date}} '\u0915\u094B' {{time}}", borderRadius: importDefault(dependencyMap[5]).radii.md, disabled: "{{date}}, {{time}}", size: "{{date}}, {{time}}", accessibilityRole: "row", backgroundColor: importDefault(dependencyMap[5]).colors.BORDER_SUBTLE };
 obj.connectedAccountVanityMetadataTag = obj;
 const tmp4 = arg1(dependencyMap[3]);
 obj.paypalVerifiedTag = { backgroundColor: importDefault(dependencyMap[5]).colors.STATUS_POSITIVE_BACKGROUND };

@@ -1,10 +1,10 @@
-// Module ID: 10237
-// Function ID: 79165
+// Module ID: 10243
+// Function ID: 79184
 // Name: StickerIcon
 // Dependencies: []
 // Exports: StickerIcon
 
-// Module 10237 (StickerIcon)
+// Module 10243 (StickerIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/StickerIcon.tsx");

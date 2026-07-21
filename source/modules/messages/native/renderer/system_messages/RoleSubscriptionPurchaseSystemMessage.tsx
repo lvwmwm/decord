@@ -1,10 +1,10 @@
-// Module ID: 7698
-// Function ID: 61370
+// Module ID: 7702
+// Function ID: 61382
 // Name: createRoleSubscriptionPurchaseSystemMessage
 // Dependencies: []
 // Exports: createRoleSubscriptionPurchaseSystemMessage
 
-// Module 7698 (createRoleSubscriptionPurchaseSystemMessage)
+// Module 7702 (createRoleSubscriptionPurchaseSystemMessage)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 const SystemChannelFlags = arg1(dependencyMap[2]).SystemChannelFlags;

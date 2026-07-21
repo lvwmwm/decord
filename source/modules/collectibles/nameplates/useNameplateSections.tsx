@@ -1,10 +1,10 @@
-// Module ID: 13474
-// Function ID: 102294
+// Module ID: 13481
+// Function ID: 102317
 // Name: useNameplateSections
 // Dependencies: []
 // Exports: default
 
-// Module 13474 (useNameplateSections)
+// Module 13481 (useNameplateSections)
 let closure_2 = importDefault(dependencyMap[0]);
 const useMemo = arg1(dependencyMap[1]).useMemo;
 let closure_4 = importDefault(dependencyMap[2]);

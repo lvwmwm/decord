@@ -1,10 +1,10 @@
-// Module ID: 6443
-// Function ID: 50538
+// Module ID: 6445
+// Function ID: 50581
 // Name: SafetyBookletSpotIllustration
 // Dependencies: []
 // Exports: SafetyBookletSpotIllustration
 
-// Module 6443 (SafetyBookletSpotIllustration)
+// Module 6445 (SafetyBookletSpotIllustration)
 const jsx = require(dependencyMap[0]).jsx;
 const _module = require(dependencyMap[3]);
 const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/SafetyBookletSpotIllustration.native.tsx");

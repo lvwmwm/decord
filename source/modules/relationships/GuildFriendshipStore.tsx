@@ -1,9 +1,9 @@
-// Module ID: 12519
-// Function ID: 96187
+// Module ID: 12526
+// Function ID: 96210
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
-// Module 12519 (_isNativeReflectConstruct)
+// Module 12526 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -68,7 +68,7 @@ let tmp2 = (Store) => {
     key: "fetchFriendMembersIfNotFetched",
     value(id1, items) {
       if (callback4(id1) === constants.NOT_FETCHED) {
-        const obj = { "Bool(true)": null, "Bool(true)": null, "Bool(true)": null, fetchState: constants.FETCHING };
+        const obj = { fetchState: constants.FETCHING };
         closure_8[id1] = obj;
         const membersById = GuildFriendshipStore(closure_1[5]).requestMembersById(id1, items, false);
         const obj2 = GuildFriendshipStore(closure_1[5]);

@@ -13,7 +13,7 @@ function createAsyncHandlerProxy(arg0, handle, nextResult, closure_23) {
       const navigationContext = obj.getNavigationContext();
       if (null != navigationContext) {
         if (navigationContext.targetPath) {
-          obj = { pathname: navigationContext.targetPath };
+          obj = { "Null": "webpBlob", "Null": "tea", "Null": "STARTED_ONBOARDING", -1823311079: "LIGHT", 1643696424: "isArray", pathname: navigationContext.targetPath };
           let tmp2 = obj;
         }
         while (true) {

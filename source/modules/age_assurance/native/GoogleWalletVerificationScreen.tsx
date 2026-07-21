@@ -1,10 +1,10 @@
-// Module ID: 7565
-// Function ID: 60538
+// Module ID: 7569
+// Function ID: 60550
 // Name: GoogleWalletVerificationScreen
-// Dependencies: [496435200, 270270464, 268435456, 496500736, 353042432, 297205760, 325124096, 496566272, 131072, 1400111104, 905969683, 1493172226, 33554451, 4026531840, 7447, 3840, 4352, 4608, 14592, 1536]
+// Dependencies: [496697344, 270270464, 268435456, 496762880, 353173504, 297467904, 325255168, 496828416, 131072, 1433665536, 905969683, 1526726658, 33554451, 4026531840, 7447, 3840, 4352, 4608, 14592, 1536]
 // Exports: default
 
-// Module 7565 (GoogleWalletVerificationScreen)
+// Module 7569 (GoogleWalletVerificationScreen)
 import weakMap from "weakMap";
 
 let closure_3 = importDefault(dependencyMap[0]);
@@ -12,7 +12,7 @@ let closure_4 = importDefault(dependencyMap[1]);
 let closure_5 = importAll(dependencyMap[2]);
 const ActivityIndicator = arg1(dependencyMap[3]).ActivityIndicator;
 ({ jsx: closure_7, jsxs: closure_8 } = arg1(dependencyMap[4]));
-let closure_9 = {};
+let closure_9 = { "Bool(false)": "72af9903f630d67fa106808d11ca96fb", "Bool(false)": "speaker" };
 const result = weakMap.fileFinishedImporting("modules/age_assurance/native/GoogleWalletVerificationScreen.tsx");
 
 export default function GoogleWalletVerificationScreen(modalSessionId) {
@@ -82,7 +82,7 @@ export default function GoogleWalletVerificationScreen(modalSessionId) {
     const obj7 = { children: first.message };
     const items4 = [callback3(arg1(closure_2[15]).Text, obj7), ];
     const obj8 = {};
-    const obj9 = { <string:1522289750>: null, <string:570601313>: null };
+    const obj9 = {};
     const intl2 = arg1(closure_2[10]).intl;
     obj9.text = intl2.string(importDefault(closure_2[11]).fEUKEv);
     obj9.onPress = function onPress() {

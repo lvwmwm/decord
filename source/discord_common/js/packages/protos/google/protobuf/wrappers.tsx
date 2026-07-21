@@ -38,7 +38,7 @@ let tmp2 = (MessageType) => {
       tmp = closure_3(this, DoubleValue$Type);
       items = [];
       items[0] = {};
-      items1 = [];
+      items1 = [false];
       items1[1] = items;
       return closure_8(this, DoubleValue$Type, items1);
     }
@@ -307,8 +307,8 @@ let tmp6 = (MessageType) => {
     constructor() {
       tmp = closure_3(this, Int64Value$Type);
       items = [];
-      items[0] = { body: false, guildId: false, ao: false, "": false };
-      items1 = [34];
+      items[0] = { 9223372036854775807: "y", 0: "isArray", 9223372036854775807: "construct", no: "Array" };
+      items1 = [];
       items1[1] = items;
       return closure_8(this, Int64Value$Type, items1);
     }
@@ -443,8 +443,8 @@ let tmp8 = (MessageType) => {
     constructor() {
       tmp = closure_3(this, UInt64Value$Type);
       items = [];
-      items[0] = { body: null, guildId: null, ao: null, "": null };
-      items1 = [false];
+      items[0] = { 9223372036854775807: 370, 0: 1536, 9223372036854775807: 1829654784, no: 1 };
+      items1 = [];
       items1[1] = items;
       return closure_8(this, UInt64Value$Type, items1);
     }
@@ -580,7 +580,7 @@ let tmp10 = (MessageType) => {
       tmp = closure_3(this, Int32Value$Type);
       items = [];
       items[0] = {};
-      items1 = [false];
+      items1 = [];
       items1[1] = items;
       return closure_8(this, Int32Value$Type, items1);
     }
@@ -849,7 +849,7 @@ let tmp14 = (MessageType) => {
     constructor() {
       tmp = closure_3(this, BoolValue$Type);
       items = [];
-      items[0] = { body: "dataFormatters", guildId: "isArray", ao: "uploaderItemId", "": "isArray" };
+      items[0] = { 9223372036854775807: "routingFailures", 0: "isArray", 9223372036854775807: "upsellCTADismissed", no: "isArray" };
       items1 = [];
       items1[1] = items;
       return closure_8(this, BoolValue$Type, items1);
@@ -983,8 +983,8 @@ let tmp16 = (MessageType) => {
     constructor() {
       tmp = closure_3(this, StringValue$Type);
       items = [];
-      items[0] = { body: -120.702, guildId: 10, ao: "WHITE_500", "": 0.25 };
-      items1 = [];
+      items[0] = { 9223372036854775807: -120.702, 0: 10, 9223372036854775807: "WHITE_500", no: 0.25 };
+      items1 = [33];
       items1[1] = items;
       return closure_8(this, StringValue$Type, items1);
     }
@@ -1118,7 +1118,7 @@ let tmp18 = (MessageType) => {
       tmp = closure_3(this, BytesValue$Type);
       items = [];
       items[0] = {};
-      items1 = [];
+      items1 = [false];
       items1[1] = items;
       return closure_8(this, BytesValue$Type, items1);
     }

@@ -1,10 +1,10 @@
-// Module ID: 4301
-// Function ID: 37625
+// Module ID: 4305
+// Function ID: 37673
 // Name: isVoiceChannelFull
 // Dependencies: []
 // Exports: changeStreamRegion, fetchStreamPreview, joinPrivateChannelAndWatchStream, notifyStreamStart, setLayout, setStreamPaused, startStream, stopOwnStream, toggleSelfStreamHidden, updateStreamSettings
 
-// Module 4301 (isVoiceChannelFull)
+// Module 4305 (isVoiceChannelFull)
 function isVoiceChannelFull(arg0, channelId) {
   const channel = channel.getChannel(channelId);
   importDefault(dependencyMap[14])(null != channel, "Cannot join a null voice channel");

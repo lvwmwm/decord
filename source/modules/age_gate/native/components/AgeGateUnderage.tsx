@@ -1,16 +1,18 @@
-// Module ID: 14638
-// Function ID: 110404
+// Module ID: 14645
+// Function ID: 110426
 // Name: AgeGateUnderage
-// Dependencies: []
+// Dependencies: [0, 0, 0, 0, 0, 0]
 // Exports: default
 
-// Module 14638 (AgeGateUnderage)
-let closure_3 = importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-const HelpdeskArticles = arg1(dependencyMap[2]).HelpdeskArticles;
-({ jsx: closure_6, Fragment: closure_7, jsxs: closure_8 } = arg1(dependencyMap[3]));
-const tmp2 = arg1(dependencyMap[3]);
-let closure_9 = arg1(dependencyMap[4]).createStyles((arg0) => {
+// Module 14645 (AgeGateUnderage)
+import closure_3 from "__exportStarResult1";
+import { View } from "__exportStarResult1";
+import { HelpdeskArticles } from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
+
+({ jsx: closure_6, Fragment: closure_7, jsxs: closure_8 } = __exportStarResult1);
+let closure_9 = __exportStarResult1.createStyles((arg0) => {
   let obj = {};
   obj = {};
   let num = 0;
@@ -25,7 +27,6 @@ let closure_9 = arg1(dependencyMap[4]).createStyles((arg0) => {
   obj.buttonWrapper = {};
   return obj;
 });
-const obj = arg1(dependencyMap[4]);
 const result = arg1(dependencyMap[19]).fileFinishedImporting("modules/age_gate/native/components/AgeGateUnderage.tsx");
 
 export default function AgeGateUnderage(onClose) {
@@ -87,7 +88,7 @@ export default function AgeGateUnderage(onClose) {
   const items1 = [tmp9, callback(importDefault(dependencyMap[12]), {}), callback(arg1(dependencyMap[13]).ShieldSpotIllustration, {}), , , ];
   obj = { style: tmp2.header, children: stringResult };
   items1[3] = callback(importDefault(dependencyMap[14]), obj);
-  obj1 = { Promise: 0, marginTop: 1929379840, flags: 0, style: tmp2.body };
+  obj1 = { "Null": 0, "Null": 1929379840, "Null": 0, style: tmp2.body };
   const intl2 = arg1(dependencyMap[10]).intl;
   if (flag) {
     let stringResult1 = intl2.string(tmp14(tmp15[10]).t.GDQgHL);
@@ -107,7 +108,7 @@ export default function AgeGateUnderage(onClose) {
   let tmp22 = null;
   if (existingUser) {
     const obj3 = {};
-    const obj4 = { Promise: 0, marginTop: 1929379840, flags: 0, style: tmp2.body };
+    const obj4 = { "Null": 0, "Null": 1929379840, "Null": 0, style: tmp2.body };
     const intl4 = arg1(dependencyMap[10]).intl;
     const obj5 = { days: 30 };
     obj4.children = intl4.format(arg1(dependencyMap[10]).t.3axQdB, obj5);

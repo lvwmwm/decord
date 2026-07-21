@@ -1,10 +1,10 @@
-// Module ID: 9583
-// Function ID: 74650
+// Module ID: 9588
+// Function ID: 74667
 // Name: GIFPickerCategoryView
 // Dependencies: []
 // Exports: default
 
-// Module 9583 (GIFPickerCategoryView)
+// Module 9588 (GIFPickerCategoryView)
 let StyleSheet;
 let closure_3 = importAll(dependencyMap[0]);
 ({ StyleSheet, View: closure_4, TouchableOpacity: closure_5 } = arg1(dependencyMap[1]));
@@ -65,7 +65,7 @@ export default function GIFPickerCategoryView(onSelectCategory) {
     }
   }
   const items2 = [tmp9, ];
-  const obj6 = { padding: null, name: "flex-start", "Bool(false)": 8, "Bool(false)": 16, children: item.name };
+  const obj6 = { borderWidth: null, borderColor: "flex-start", overflow: 8, display: 16, children: item.name };
   items2[1] = callback(arg1(dependencyMap[11]).Text, obj6);
   obj3.children = items2;
   items1[2] = closure_8(closure_4, obj3);

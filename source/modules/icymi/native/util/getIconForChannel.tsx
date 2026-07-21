@@ -1,10 +1,10 @@
-// Module ID: 15088
-// Function ID: 113774
+// Module ID: 15095
+// Function ID: 113798
 // Name: getIconForChannel
 // Dependencies: []
 // Exports: getIconForChannel
 
-// Module 15088 (getIconForChannel)
+// Module 15095 (getIconForChannel)
 const ChannelTypes = require(dependencyMap[0]).ChannelTypes;
 const _module = require(dependencyMap[7]);
 const result = _module.fileFinishedImporting("modules/icymi/native/util/getIconForChannel.tsx");

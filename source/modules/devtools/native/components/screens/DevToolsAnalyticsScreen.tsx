@@ -1,17 +1,16 @@
-// Module ID: 13377
-// Function ID: 101748
+// Module ID: 13384
+// Function ID: 101771
 // Name: CommonProperty
 // Dependencies: []
 // Exports: default
 
-// Module 13377 (CommonProperty)
+// Module 13384 (CommonProperty)
 function CommonProperty(arg0) {
   let children;
   let name;
   ({ name, children } = arg0);
-  let obj = { style: callback4().commonProperty };
-  obj = { INTEGRATION_CREATE: null, ConstraintReasonCode: null, children: name };
-  const items = [callback2(arg1(dependencyMap[9]).Text, obj), children];
+  const obj = { style: callback4().commonProperty };
+  const items = [callback2(arg1(dependencyMap[9]).Text, { children: name }), children];
   obj.children = items;
   return callback3(View, obj);
 }
@@ -64,7 +63,7 @@ function LoggedEvent(arg0) {
     let obj1 = { style: map.commonPropertiesContainer };
     const obj2 = { name: "Timestamp (local)" };
     let items3 = 9;
-    const obj3 = { INTEGRATION_CREATE: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007863204514436, ConstraintReasonCode: 127277221446373050000000000 };
+    const obj3 = {};
     let obj5 = importDefault(closure_2[12])(timestamp);
     obj3.children = obj5.calendar();
     obj2.children = callback2(arg1(closure_2[9]).Text, obj3);
@@ -121,12 +120,11 @@ function LoggedEvent(arg0) {
       let tmp2;
       [tmp, tmp2] = arg0;
       let obj = { style: map.customProperty };
-      obj = { INTEGRATION_CREATE: "png", ConstraintReasonCode: "absolute", style: map.customPropertyName };
+      obj = { style: map.customPropertyName, children: items };
       const items = [tmp, ":"];
-      obj.children = items;
       const items1 = [callback2(fingerprint(closure_2[9]).Text, obj), ];
       if (null != tmp2) {
-        obj = { INTEGRATION_CREATE: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007863204514436, ConstraintReasonCode: 127277221446373050000000000, style: map.monospace };
+        obj = { style: map.monospace };
         const _JSON = JSON;
         obj.children = JSON.stringify(tmp2);
         let obj1 = obj;
@@ -169,9 +167,10 @@ obj.commonPropertiesContainer = { backgroundColor: importDefault(dependencyMap[8
 obj.commonProperty = {};
 obj.customPropertiesContainer = {};
 obj.customProperty = {};
-obj.customPropertyName = { fontFamily: Fonts.CODE_BOLD };
+const obj5 = { screenshakeEnabled: 1358955169, CONVERSATIONS_EXTRACTION_PROCESSING: 225538841, screenshakeEnabled: 1895825408, fontFamily: Fonts.CODE_BOLD };
+obj.customPropertyName = obj5;
 obj.monospace = { fontFamily: Fonts.CODE_BOLD };
-obj.copyContainer = { -9223372036854775808: true, filter: true };
+obj.copyContainer = {};
 let closure_10 = obj.createStyles(obj);
 const obj4 = { backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_BASE_LOWEST, paddingHorizontal: 10 };
 const result = arg1(dependencyMap[26]).fileFinishedImporting("modules/devtools/native/components/screens/DevToolsAnalyticsScreen.tsx");
@@ -207,10 +206,10 @@ export default function DevToolsAnalyticsScreen() {
   obj = { style: tmp.analyticsContainer };
   obj = {};
   const obj1 = { spacing: 16 };
-  const obj2 = { width: null, height: null };
+  const obj2 = {};
   const obj3 = { icon: callback2(arg1(dependencyMap[22]).ArrowsUpDownIcon, {}), label: "Reverse Events", value: first, onValueChange: tmp3[1] };
   const items2 = [callback2(arg1(dependencyMap[21]).TableSwitchRow, obj3), ];
-  const obj4 = { "Bool(false)": "30f38e9cc06345b39ea1b73343d04289", "Bool(false)": "CarIcon", "Bool(false)": "png", "Bool(false)": true, icon: callback2(arg1(dependencyMap[23]).TrashIcon, { color: "text-feedback-critical" }), onPress: arg1(dependencyMap[24]).clearAnalyticsLog };
+  const obj4 = { body: "30f38e9cc06345b39ea1b73343d04289", error: "CarIcon", accessibilityRole: "png", marginBottom: true, icon: callback2(arg1(dependencyMap[23]).TrashIcon, { color: "text-feedback-critical" }), onPress: arg1(dependencyMap[24]).clearAnalyticsLog };
   items2[1] = callback2(arg1(dependencyMap[10]).TableRow, obj4);
   obj2.children = items2;
   const items3 = [callback3(arg1(dependencyMap[20]).TableRowGroup, obj2), , ];
@@ -220,7 +219,7 @@ export default function DevToolsAnalyticsScreen() {
   const tmp12 = callback3;
   const tmp9 = callback2;
   items3[1] = callback2(View, { style: tmp.searchFieldContainer, children: callback2(arg1(dependencyMap[25]).SearchField, { placeholder: "Search by event name", onChange: tmp6 }) });
-  const obj6 = { width: true, height: "/assets/design/components/Icon/native/redesign/generated/images" };
+  const obj6 = { "Bool(false)": true, "Bool(false)": "/assets/design/components/Icon/native/redesign/generated/images" };
   if (0 === loggedEvents.length) {
     const obj7 = { label: "No events logged." };
     let tmp14 = callback2(arg1(dependencyMap[10]).TableRow, obj7);

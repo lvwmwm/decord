@@ -1,9 +1,9 @@
-// Module ID: 10409
-// Function ID: 80206
+// Module ID: 10415
+// Function ID: 80229
 // Name: InappropriateConversationWarningBanner
 // Dependencies: []
 
-// Module 10409 (InappropriateConversationWarningBanner)
+// Module 10415 (InappropriateConversationWarningBanner)
 class InappropriateConversationWarningBanner {
   constructor(arg0) {
     channelId = global.channelId;

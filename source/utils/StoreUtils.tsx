@@ -1,10 +1,10 @@
-// Module ID: 4361
-// Function ID: 38673
+// Module ID: 4365
+// Function ID: 38721
 // Name: _httpGetWithCountryCodeQuery
 // Dependencies: []
 // Exports: getAssetURL, getPrimarySKUForApplication, httpGetWithCountryCodeQuery, nativePlatformTypeToSKUOperatingSystem, skuOperatingSystemToText
 
-// Module 4361 (_httpGetWithCountryCodeQuery)
+// Module 4365 (_httpGetWithCountryCodeQuery)
 async function _httpGetWithCountryCodeQuery(arg0, arg1) {
   const fn = function*(url) {
     let flag = arg1;
@@ -31,7 +31,7 @@ async function _httpGetWithCountryCodeQuery(arg0, arg1) {
           return new Promise(() => {
             let closure_0 = callback(async (arg0) => {
               function wait() { ... }
-              return /* F38680 */ function*() { ... };
+              return /* F38728 */ function*() { ... };
             });
             return function() {
               return callback(...arguments);
@@ -76,7 +76,7 @@ async function _httpGetWithCountryCodeQuery(arg0, arg1) {
     if (null != defaultBillingCountryCode) {
       let tmp27 = url;
       if ("string" === typeof url) {
-        obj = { CONVERSATIONS: null, replace: null, push: null, url };
+        obj = { lc: "ERROR", type: "ERROR", end: "NOT_RESPONDER", url };
         tmp27 = obj;
       }
       if ("string" === typeof tmp27.query) {

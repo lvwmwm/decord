@@ -1,10 +1,10 @@
-// Module ID: 9281
-// Function ID: 72527
+// Module ID: 9285
+// Function ID: 72539
 // Name: DCDChatItem
 // Dependencies: []
 // Exports: default
 
-// Module 9281 (DCDChatItem)
+// Module 9285 (DCDChatItem)
 let requireNativeComponent;
 function DCDChatItem(message) {
   message = message.message;

@@ -1,9 +1,9 @@
-// Module ID: 10065
-// Function ID: 77897
+// Module ID: 10071
+// Function ID: 77915
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
-// Module 10065 (_isNativeReflectConstruct)
+// Module 10071 (_isNativeReflectConstruct)
 let SearchTokenTypes;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
@@ -365,7 +365,7 @@ let tmp6 = (Store) => {
       let value = closure_20.get(obj.getSearchContextId(searchContext));
       if (null == value) {
         obj = { searchContext, query: "" };
-        obj = { "Bool(false)": "Normal", "Bool(false)": true, "Bool(false)": "AbortSignal", type: constants.EMPTY };
+        obj = { 1052628925: null, 1988643825: "\u{1F9BB}\u{1F3FF}", -910148119: true, type: constants.EMPTY };
         obj.mode = obj;
         obj.tokens = [];
         obj.cursorScope = null;

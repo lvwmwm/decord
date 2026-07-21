@@ -1,10 +1,10 @@
-// Module ID: 11495
-// Function ID: 89587
+// Module ID: 11502
+// Function ID: 89611
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 // Exports: default
 
-// Module 11495 (_createForOfIteratorHelperLoose)
+// Module 11502 (_createForOfIteratorHelperLoose)
 function _createForOfIteratorHelperLoose(@@iterator) {
   let arg1 = Symbol_iterator;
   @@iterator = "undefined" !== typeof Symbol;
@@ -96,7 +96,7 @@ obj = { flex: 1, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGRO
 obj.container = obj;
 const tmp4 = arg1(dependencyMap[3]);
 obj.headerContainer = { paddingHorizontal: importDefault(dependencyMap[5]).space.PX_16, paddingTop: importDefault(dependencyMap[5]).space.PX_8 };
-const obj2 = { "Bool(true)": null, "Bool(true)": null, "Bool(true)": null, "Bool(true)": null, borderColor: importDefault(dependencyMap[5]).colors.BORDER_SUBTLE, marginBottom: importDefault(dependencyMap[5]).space.PX_16 };
+const obj2 = { item: "5", activePageRangeStart: "5", activePageRangeEnd: "GameServer Test #5", ref: "25565", borderColor: importDefault(dependencyMap[5]).colors.BORDER_SUBTLE, marginBottom: importDefault(dependencyMap[5]).space.PX_16 };
 obj.boostInfoContainer = obj2;
 const obj1 = { paddingHorizontal: importDefault(dependencyMap[5]).space.PX_16, paddingTop: importDefault(dependencyMap[5]).space.PX_8 };
 obj.boostInfoSeparator = { backgroundColor: importDefault(dependencyMap[5]).colors.BORDER_SUBTLE };

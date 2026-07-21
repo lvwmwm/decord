@@ -1,10 +1,10 @@
-// Module ID: 13379
-// Function ID: 101764
+// Module ID: 13386
+// Function ID: 101787
 // Name: RefreshIcon
 // Dependencies: []
 // Exports: RefreshIcon
 
-// Module 13379 (RefreshIcon)
+// Module 13386 (RefreshIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/RefreshIcon.tsx");

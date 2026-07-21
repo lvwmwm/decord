@@ -1,10 +1,10 @@
-// Module ID: 7092
-// Function ID: 57050
+// Module ID: 7096
+// Function ID: 57061
 // Name: _fetchGameAutocomplete
 // Dependencies: []
 // Exports: fetchGameAutocomplete
 
-// Module 7092 (_fetchGameAutocomplete)
+// Module 7096 (_fetchGameAutocomplete)
 async function _fetchGameAutocomplete(toLocaleLowerCase, arg1) {
   let obj = callback(closure_2[3]);
   const result = obj.normalizeGameAutocompleteQuery(toLocaleLowerCase);

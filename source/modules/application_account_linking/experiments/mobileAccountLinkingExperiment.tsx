@@ -1,9 +1,9 @@
-// Module ID: 14889
-// Function ID: 112211
+// Module ID: 14896
+// Function ID: 112235
 // Name: apexExperiment
 // Dependencies: []
 
-// Module 14889 (apexExperiment)
+// Module 14896 (apexExperiment)
 let obj = { MEDIUM: "medium", LARGE: "large" };
 const _module = require(dependencyMap[0]);
 obj = { enabled: true, bannerSize: obj.LARGE };

@@ -1,10 +1,10 @@
-// Module ID: 11747
-// Function ID: 91228
+// Module ID: 11754
+// Function ID: 91251
 // Name: HubEmailConnectionContent
 // Dependencies: []
 // Exports: default
 
-// Module 11747 (HubEmailConnectionContent)
+// Module 11754 (HubEmailConnectionContent)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 let closure_5 = importAll(dependencyMap[2]);
@@ -16,7 +16,7 @@ const MarketingURLs = arg1(dependencyMap[6]).MarketingURLs;
 const tmp3 = arg1(dependencyMap[5]);
 ({ jsx: closure_12, jsxs: closure_13 } = arg1(dependencyMap[7]));
 let obj = arg1(dependencyMap[8]);
-obj = { container: { paddingHorizontal: 16 }, header: { visible: "r", transparent: "getSystemVersionMinor", animationType: "r" }, scrollViewContainer: { flexGrow: 2 }, title: { person_pouting: -0.0014069081515246523, cv: -0.0001058445630777106 }, description: { person_pouting: 24, cv: "recent_games_enabled" }, input: { marginBottom: 32 } };
+obj = { container: { paddingHorizontal: 16 }, header: {}, scrollViewContainer: { flexGrow: 2 }, title: { collapsable: "absolute", preventClipping: 0 }, description: { collapsable: 24, preventClipping: "recent_games_enabled" }, input: { marginBottom: 32 } };
 obj = { borderRadius: importDefault(dependencyMap[9]).radii.lg };
 obj.textInput = obj;
 const tmp4 = arg1(dependencyMap[7]);
@@ -84,7 +84,7 @@ export default function HubEmailConnectionContent(arg0) {
   const tmp15 = _signup;
   const tmp5 = callback(React.useState(null), 2);
   const items1 = [callback2(ref, { style: tmp.header, children: callback2(arg1(closure_2[16]).StudyGroupsSpotIllustration, { scale: 0.75 }) }), , , ];
-  const obj5 = { style: tmp.title, children: formatToPlainStringResult };
+  const obj5 = { y: 1548812289, isArray: 186630151, split: -1224736477, ix: 2013266539, style: tmp.title, children: formatToPlainStringResult };
   items1[1] = callback2(arg1(closure_2[17]).Text, obj5);
   const obj6 = { style: tmp.description };
   const intl3 = arg1(closure_2[14]).intl;
@@ -94,7 +94,7 @@ export default function HubEmailConnectionContent(arg0) {
     }
   });
   items1[2] = callback2(arg1(closure_2[18]).TextWithIOSLinkWorkaround, obj6);
-  const obj8 = { "Bool(false)": -1119809180, "Bool(false)": 1895825852, "Bool(false)": 200, "Bool(false)": 49, "Bool(false)": 1634729984, "Bool(false)": -1522400960 };
+  const obj8 = { 1565656732: "SERVER_GUIDE_CHANNEL_SELECTED", 1627789217: "handleToggleCaptions", -939043845: "Array", 2075722756: "rename", 2144239957: "isArray", -1178910014: "LOGIN_HANDOFF" };
   const obj4 = { style: tmp.header, children: callback2(arg1(closure_2[16]).StudyGroupsSpotIllustration, { scale: 0.75 }) };
   const obj7 = {
     onClick() {

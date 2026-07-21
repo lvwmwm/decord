@@ -1,10 +1,10 @@
-// Module ID: 10371
-// Function ID: 80004
+// Module ID: 10377
+// Function ID: 80027
 // Name: useIsSelectedResourceChannel
 // Dependencies: []
 // Exports: default
 
-// Module 10371 (useIsSelectedResourceChannel)
+// Module 10377 (useIsSelectedResourceChannel)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 let closure_5 = importDefault(dependencyMap[2]);

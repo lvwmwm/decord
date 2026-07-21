@@ -1,10 +1,10 @@
-// Module ID: 15193
-// Function ID: 114685
+// Module ID: 15200
+// Function ID: 114709
 // Name: CalendarPlusIcon
 // Dependencies: []
 // Exports: CalendarPlusIcon
 
-// Module 15193 (CalendarPlusIcon)
+// Module 15200 (CalendarPlusIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/CalendarPlusIcon.tsx");

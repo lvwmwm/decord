@@ -1,9 +1,9 @@
-// Module ID: 14069
-// Function ID: 106846
+// Module ID: 14076
+// Function ID: 106869
 // Name: slider
 // Dependencies: []
 
-// Module 14069 (slider)
+// Module 14076 (slider)
 let closure_2 = importAll(dependencyMap[0]);
 const useFontScaleStore = arg1(dependencyMap[1]).useFontScaleStore;
 const FontScales = arg1(dependencyMap[2]).FontScales;

@@ -6,7 +6,7 @@
 // Module 301 (__INTERNAL_VIEW_CONFIG)
 importAll(dependencyMap[0]);
 let obj = { uiViewClassName: "AndroidDrawerLayout", directEventTypes: { topDrawerSlide: { registrationName: "onDrawerSlide" }, topDrawerStateChanged: { registrationName: "onDrawerStateChanged" }, topDrawerOpen: { registrationName: "onDrawerOpen" }, topDrawerClose: { registrationName: "onDrawerClose" } } };
-obj = {};
+obj = { "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true };
 obj = { process: arg1(dependencyMap[1]).default };
 obj.drawerBackgroundColor = obj;
 obj.statusBarBackgroundColor = { process: arg1(dependencyMap[1]).default };

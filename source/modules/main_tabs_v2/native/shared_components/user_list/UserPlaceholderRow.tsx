@@ -1,9 +1,9 @@
-// Module ID: 8480
-// Function ID: 67725
+// Module ID: 8484
+// Function ID: 67737
 // Name: placeholderRowWidth
 // Dependencies: []
 
-// Module 8480 (placeholderRowWidth)
+// Module 8484 (placeholderRowWidth)
 function placeholderRowWidth(arg0) {
   const result = 10000 * Math.sin(arg0);
   return 40 * (result - Math.floor(result)) + 40;

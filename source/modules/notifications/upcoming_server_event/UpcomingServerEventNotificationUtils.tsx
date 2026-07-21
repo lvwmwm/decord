@@ -1,10 +1,10 @@
-// Module ID: 14213
-// Function ID: 107471
+// Module ID: 14220
+// Function ID: 107494
 // Name: onUpcomingServerEventNotificationSettingsChanged
 // Dependencies: []
 // Exports: onUpcomingServerEventNotificationSettingsChanged
 
-// Module 14213 (onUpcomingServerEventNotificationSettingsChanged)
+// Module 14220 (onUpcomingServerEventNotificationSettingsChanged)
 let closure_3 = require(dependencyMap[0]).NotificationSettingsUpdateType;
 const AnalyticEvents = require(dependencyMap[1]).AnalyticEvents;
 const _module = require(dependencyMap[4]);

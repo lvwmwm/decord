@@ -1,10 +1,10 @@
-// Module ID: 11399
-// Function ID: 88694
+// Module ID: 11406
+// Function ID: 88718
 // Name: useCanSeeEventsInChannelList
 // Dependencies: []
 // Exports: default
 
-// Module 11399 (useCanSeeEventsInChannelList)
+// Module 11406 (useCanSeeEventsInChannelList)
 const _module = require(dependencyMap[3]);
 const result = _module.fileFinishedImporting("modules/guild_scheduled_events/useCanSeeEventsInChannelList.tsx");
 

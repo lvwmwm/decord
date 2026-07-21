@@ -387,11 +387,11 @@ function logErrorsToAnalytics(store_name, items) {
             function appendArrayMismatches(combined, primaryValue, shadowValue) {
               let obj = combined(appendDeepMismatches[4]);
               if (!obj.areArraysShallowEqual(primaryValue, shadowValue)) {
-                obj = { grinning: null, grinning_face: null, smiley: true, fieldName: combined, primaryArrayLength: primaryValue.length, secondaryArrayLength: shadowValue.length };
+                obj = { Icon: null, bottom: null, id: false, fieldName: combined, primaryArrayLength: primaryValue.length, secondaryArrayLength: shadowValue.length };
                 appendMismatch(obj);
               }
             }
-            let obj = { 9223372036854775807: false, -9223372036854775808: true, mismatchedFields: [] };
+            let obj = { type: -536870861, handle: -299892737, mismatchedFields: [] };
             const tmp = callback(items);
             const iter = tmp();
             let iter2 = iter;

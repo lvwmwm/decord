@@ -1,10 +1,10 @@
-// Module ID: 12392
-// Function ID: 94715
+// Module ID: 12399
+// Function ID: 94738
 // Name: TierFeatures
 // Dependencies: []
 // Exports: default
 
-// Module 12392 (TierFeatures)
+// Module 12399 (TierFeatures)
 let BoostedGuildTiers;
 function TierFeatures(features) {
   const tmp = callback4();
@@ -53,9 +53,9 @@ function TierFeatures(features) {
     }
     items[2] = cardFeatureLast;
     obj.style = items;
-    obj = { "Bool(false)": "showAllButtonUnderline", "Bool(false)": "setRecipientUser", "Bool(false)": "type", style: closure_10.cardFeatureIcon };
+    obj = { accessible: null, replace: null, "Bool(false)": null, style: closure_10.cardFeatureIcon };
     const items1 = [callback(isIncluded.IconComponent, obj), ];
-    obj = { reportedPageIndex: "Array", pageIndex: "asyncStorage", scrollTargetPageIndex: "r" };
+    obj = { MAX_DICE_COUNT: "<string:2802384898>", onIndexChange: "<string:3578855426>", TEST_PSEUDOMAP: "<string:3426816439>" };
     let cardFeatureExcludedCopy = !isIncluded.isIncluded;
     if (cardFeatureExcludedCopy) {
       cardFeatureExcludedCopy = tmp.cardFeatureExcludedCopy;
@@ -87,6 +87,8 @@ const tmp2 = arg1(dependencyMap[3]);
 ({ jsx: closure_9, jsxs: closure_10, Fragment: closure_11 } = arg1(dependencyMap[5]));
 let obj = { tier: BoostedGuildTiers.TIER_1 };
 obj = {
+  "Bool(true)": "isArray",
+  "Bool(true)": "isArray",
   IconComponent: arg1(dependencyMap[6]).ReactionIcon,
   getCopy() {
     const intl = arg1(dependencyMap[7]).intl;
@@ -120,8 +122,8 @@ items[2] = {
   }
 };
 const obj3 = {
-  0: "<string:509674434>",
-  9223372036854775807: "<string:1359031121>",
+  "Bool(true)": null,
+  "Bool(true)": null,
   IconComponent: arg1(dependencyMap[10]).VoiceNormalIcon,
   getCopy() {
     const intl = arg1(dependencyMap[7]).intl;
@@ -149,22 +151,26 @@ items[4] = {
     return intl.formatToPlainString(arg1(dependencyMap[7]).t.Mrvzjg, { numStageSeats: BoostedGuildFeatures[closure_7.TIER_1].limits.stageVideoUsers });
   }
 };
-const obj5 = {
-  0: 760348674,
-  9223372036854775807: 291798377,
-  IconComponent: arg1(dependencyMap[12]).GifIcon,
-  getCopy() {
-    const intl = arg1(dependencyMap[7]).intl;
-    return intl.string(arg1(dependencyMap[7]).t.PbAyub);
-  }
-};
-items[5] = obj5;
 const obj4 = {
   isIncluded: true,
   IconComponent: arg1(dependencyMap[11]).StageIcon,
   getCopy() {
     const intl = arg1(dependencyMap[7]).intl;
     return intl.formatToPlainString(arg1(dependencyMap[7]).t.Mrvzjg, { numStageSeats: BoostedGuildFeatures[closure_7.TIER_1].limits.stageVideoUsers });
+  }
+};
+items[5] = {
+  IconComponent: arg1(dependencyMap[12]).GifIcon,
+  getCopy() {
+    const intl = arg1(dependencyMap[7]).intl;
+    return intl.string(arg1(dependencyMap[7]).t.PbAyub);
+  }
+};
+const obj5 = {
+  IconComponent: arg1(dependencyMap[12]).GifIcon,
+  getCopy() {
+    const intl = arg1(dependencyMap[7]).intl;
+    return intl.string(arg1(dependencyMap[7]).t.PbAyub);
   }
 };
 items[6] = {
@@ -294,28 +300,23 @@ items2[1] = {
     return intl.formatToPlainString(arg1(dependencyMap[7]).t.WgHNGI, { numStickerSlots: BoostedGuildFeatures[closure_7.TIER_2].limits.stickers });
   }
 };
+const obj14 = {
+  "Bool(true)": "isArray",
+  "Bool(true)": "isArray",
+  IconComponent: arg1(dependencyMap[9]).ScreenArrowIcon,
+  getCopy() {
+    const intl = arg1(dependencyMap[7]).intl;
+    const obj = { resolution: arg1(dependencyMap[16]).getServerBoostStreamQualityMarketingResolution("GuildBoostingMarketingTierCards") };
+    return intl.formatToPlainString(arg1(dependencyMap[7]).t.Jbg8oY, obj);
+  }
+};
+items2[2] = obj14;
 const obj13 = {
   isIncluded: true,
   IconComponent: arg1(dependencyMap[8]).StickerIcon,
   getCopy() {
     const intl = arg1(dependencyMap[7]).intl;
     return intl.formatToPlainString(arg1(dependencyMap[7]).t.WgHNGI, { numStickerSlots: BoostedGuildFeatures[closure_7.TIER_2].limits.stickers });
-  }
-};
-items2[2] = {
-  IconComponent: arg1(dependencyMap[9]).ScreenArrowIcon,
-  getCopy() {
-    const intl = arg1(dependencyMap[7]).intl;
-    const obj = { resolution: arg1(dependencyMap[16]).getServerBoostStreamQualityMarketingResolution("GuildBoostingMarketingTierCards") };
-    return intl.formatToPlainString(arg1(dependencyMap[7]).t.Jbg8oY, obj);
-  }
-};
-const obj14 = {
-  IconComponent: arg1(dependencyMap[9]).ScreenArrowIcon,
-  getCopy() {
-    const intl = arg1(dependencyMap[7]).intl;
-    const obj = { resolution: arg1(dependencyMap[16]).getServerBoostStreamQualityMarketingResolution("GuildBoostingMarketingTierCards") };
-    return intl.formatToPlainString(arg1(dependencyMap[7]).t.Jbg8oY, obj);
   }
 };
 items2[3] = {
@@ -382,9 +383,15 @@ items2[6] = {
     return intl.string(arg1(dependencyMap[7]).t.tzGY0q);
   }
 };
-const obj19 = {
-  0: 760348674,
-  9223372036854775807: 291798377,
+const obj18 = {
+  isIncluded: true,
+  IconComponent: arg1(dependencyMap[13]).ServerGridIcon,
+  getCopy() {
+    const intl = arg1(dependencyMap[7]).intl;
+    return intl.string(arg1(dependencyMap[7]).t.tzGY0q);
+  }
+};
+items2[7] = {
   IconComponent: arg1(dependencyMap[14]).UploadIcon,
   getCopy() {
     const intl = arg1(dependencyMap[7]).intl;
@@ -395,20 +402,27 @@ const obj19 = {
     return intl.formatToPlainString(arg1(dependencyMap[7]).t.aFRl53, obj);
   }
 };
-items2[7] = obj19;
-const obj20 = {
-  0: "venmo.tokenize.desktop.success",
-  9223372036854775807: "<string:1852899328>",
+const obj19 = {
+  IconComponent: arg1(dependencyMap[14]).UploadIcon,
+  getCopy() {
+    const intl = arg1(dependencyMap[7]).intl;
+    let obj = {};
+    const intl2 = arg1(dependencyMap[7]).intl;
+    obj = { size: BoostedGuildFeatures[closure_7.TIER_2].limits.fileSize / 1024 / 1024 };
+    obj.uploadSizeLimit = intl2.formatToPlainString(arg1(dependencyMap[7]).t.pIn7Af, obj);
+    return intl.formatToPlainString(arg1(dependencyMap[7]).t.aFRl53, obj);
+  }
+};
+items2[8] = {
   IconComponent: arg1(dependencyMap[13]).ServerGridIcon,
   getCopy() {
     const intl = arg1(dependencyMap[7]).intl;
     return intl.string(arg1(dependencyMap[7]).t.1a5rjl);
   }
 };
-items2[8] = obj20;
 const obj21 = {
-  0: "<string:509674434>",
-  9223372036854775807: "<string:1359031121>",
+  "Bool(true)": null,
+  "Bool(true)": null,
   IconComponent: arg1(dependencyMap[6]).ReactionIcon,
   getCopy() {
     const intl = arg1(dependencyMap[7]).intl;
@@ -416,12 +430,11 @@ const obj21 = {
   }
 };
 items2[9] = obj21;
-const obj18 = {
-  isIncluded: true,
+const obj20 = {
   IconComponent: arg1(dependencyMap[13]).ServerGridIcon,
   getCopy() {
     const intl = arg1(dependencyMap[7]).intl;
-    return intl.string(arg1(dependencyMap[7]).t.tzGY0q);
+    return intl.string(arg1(dependencyMap[7]).t.1a5rjl);
   }
 };
 items2[10] = {
@@ -497,8 +510,8 @@ items3[2] = {
   }
 };
 const obj27 = {
-  0: "<string:509674434>",
-  9223372036854775807: "<string:1359031121>",
+  "Bool(true)": null,
+  "Bool(true)": null,
   IconComponent: arg1(dependencyMap[10]).VoiceNormalIcon,
   getCopy() {
     const intl = arg1(dependencyMap[7]).intl;
@@ -511,8 +524,8 @@ const obj27 = {
 };
 items3[3] = obj27;
 const obj28 = {
-  0: true,
-  9223372036854775807: true,
+  "Bool(true)": false,
+  "Bool(true)": false,
   IconComponent: arg1(dependencyMap[11]).StageIcon,
   getCopy() {
     const intl = arg1(dependencyMap[7]).intl;
@@ -520,16 +533,6 @@ const obj28 = {
   }
 };
 items3[4] = obj28;
-const obj29 = {
-  0: "venmo.tokenize.desktop.success",
-  9223372036854775807: "<string:1852899328>",
-  IconComponent: arg1(dependencyMap[12]).GifIcon,
-  getCopy() {
-    const intl = arg1(dependencyMap[7]).intl;
-    return intl.string(arg1(dependencyMap[7]).t.PbAyub);
-  }
-};
-items3[5] = obj29;
 const obj26 = {
   isIncluded: true,
   IconComponent: arg1(dependencyMap[9]).ScreenArrowIcon,
@@ -537,6 +540,20 @@ const obj26 = {
     const intl = arg1(dependencyMap[7]).intl;
     const obj = { resolution: arg1(dependencyMap[16]).getServerBoostStreamQualityMarketingResolution("GuildBoostingMarketingTierCards") };
     return intl.formatToPlainString(arg1(dependencyMap[7]).t.Jbg8oY, obj);
+  }
+};
+items3[5] = {
+  IconComponent: arg1(dependencyMap[12]).GifIcon,
+  getCopy() {
+    const intl = arg1(dependencyMap[7]).intl;
+    return intl.string(arg1(dependencyMap[7]).t.PbAyub);
+  }
+};
+const obj29 = {
+  IconComponent: arg1(dependencyMap[12]).GifIcon,
+  getCopy() {
+    const intl = arg1(dependencyMap[7]).intl;
+    return intl.string(arg1(dependencyMap[7]).t.PbAyub);
   }
 };
 items3[6] = {
@@ -547,9 +564,15 @@ items3[6] = {
     return intl.string(arg1(dependencyMap[7]).t.tzGY0q);
   }
 };
-const obj31 = {
-  0: 760348674,
-  9223372036854775807: 291798377,
+const obj30 = {
+  isIncluded: true,
+  IconComponent: arg1(dependencyMap[13]).ServerGridIcon,
+  getCopy() {
+    const intl = arg1(dependencyMap[7]).intl;
+    return intl.string(arg1(dependencyMap[7]).t.tzGY0q);
+  }
+};
+items3[7] = {
   IconComponent: arg1(dependencyMap[14]).UploadIcon,
   getCopy() {
     const intl = arg1(dependencyMap[7]).intl;
@@ -560,13 +583,15 @@ const obj31 = {
     return intl.formatToPlainString(arg1(dependencyMap[7]).t.aFRl53, obj);
   }
 };
-items3[7] = obj31;
-const obj30 = {
-  isIncluded: true,
-  IconComponent: arg1(dependencyMap[13]).ServerGridIcon,
+const obj31 = {
+  IconComponent: arg1(dependencyMap[14]).UploadIcon,
   getCopy() {
     const intl = arg1(dependencyMap[7]).intl;
-    return intl.string(arg1(dependencyMap[7]).t.tzGY0q);
+    let obj = {};
+    const intl2 = arg1(dependencyMap[7]).intl;
+    obj = { size: BoostedGuildFeatures[closure_7.TIER_3].limits.fileSize / 1024 / 1024 };
+    obj.uploadSizeLimit = intl2.formatToPlainString(arg1(dependencyMap[7]).t.pIn7Af, obj);
+    return intl.formatToPlainString(arg1(dependencyMap[7]).t.aFRl53, obj);
   }
 };
 items3[8] = {
@@ -593,6 +618,20 @@ items3[9] = {
     return intl.string(arg1(dependencyMap[7]).t.6PV6Qc);
   }
 };
+const obj34 = {
+  "Bool(true)": "isArray",
+  "Bool(true)": "isArray",
+  IconComponent: arg1(dependencyMap[15]).LinkIcon,
+  getCopy() {
+    const intl = arg1(dependencyMap[7]).intl;
+    return intl.string(arg1(dependencyMap[7]).t.adNGjW);
+  }
+};
+items3[10] = obj34;
+obj23.features = items3;
+items1[2] = obj23;
+let obj37 = arg1(dependencyMap[17]);
+const obj35 = { cardWrapper: { flex: "/assets/modules/guild_boosting/native/images", alignItems: 23 } };
 const obj33 = {
   isIncluded: true,
   IconComponent: arg1(dependencyMap[6]).ReactionIcon,
@@ -601,34 +640,16 @@ const obj33 = {
     return intl.string(arg1(dependencyMap[7]).t.6PV6Qc);
   }
 };
-items3[10] = {
-  IconComponent: arg1(dependencyMap[15]).LinkIcon,
-  getCopy() {
-    const intl = arg1(dependencyMap[7]).intl;
-    return intl.string(arg1(dependencyMap[7]).t.adNGjW);
-  }
-};
-obj23.features = items3;
-items1[2] = obj23;
-let obj37 = arg1(dependencyMap[17]);
-const obj35 = { cardWrapper: { -1597924014: "/assets/modules/guild_boosting/native/images", 1368088839: 23 } };
-const obj34 = {
-  IconComponent: arg1(dependencyMap[15]).LinkIcon,
-  getCopy() {
-    const intl = arg1(dependencyMap[7]).intl;
-    return intl.string(arg1(dependencyMap[7]).t.adNGjW);
-  }
-};
 obj35.card = { borderRadius: importDefault(dependencyMap[18]).radii.lg, height: "100%" };
 obj35.cardContent = {};
-obj37 = { "Null": "adjustable", "Null": true, "Null": "/assets/design/components/Icon/native/redesign/generated/images", borderRadius: importDefault(dependencyMap[18]).radii.lg };
+obj37 = { -630435074: "<string:1091633474>", 979692825: "adjustable", -1101813162: "<string:1348288785>", borderRadius: importDefault(dependencyMap[18]).radii.lg };
 obj35.pressableWrapper = obj37;
 obj35.cardHeading = {};
 obj35.cardTierName = { marginRight: 10 };
 obj35.cardTierBoostcount = { opacity: 0.7 };
-obj35.cardFeatures = { backgroundColor: null, height: null };
-obj35.cardFeaturesInvisible = { marginRight: false, padding: false, width: false, display: false, alignItems: false };
-obj35.cardFeaturesWrapper = { accessibilityRole: null, HermesInternal: null, ks: null };
+obj35.cardFeatures = {};
+obj35.cardFeaturesInvisible = { 9223372036854775807: false, 0: false, 9223372036854775807: false, 0: false, 0: false };
+obj35.cardFeaturesWrapper = { isArray: null, track: 16, style: "center" };
 obj35.cardFeature = {};
 obj35.cardFeatureExcluded = { opacity: 0.5 };
 obj35.cardFeatureExcludedCopy = { textDecorationLine: "line-through" };
@@ -636,22 +657,22 @@ obj35.cardFeatureLast = { marginBottom: 0 };
 const obj36 = { borderRadius: importDefault(dependencyMap[18]).radii.lg, height: "100%" };
 obj35.cardsScroller = { flex: 1, marginTop: arg1(dependencyMap[19]).PROGRESS_BAR_SPACING };
 obj35.cardsScrollerContent = {};
-obj35.cardFeatureIcon = { zoomScale: false, EXPRESSIVE_GRADIENT_PURPLE_END: false, horizontal: false };
-obj35.cardFooter = { -1727503214: null, -1185760922: null, 1400556371: null };
-obj35.cardFooterIcon = { message: "r", accessible: "%MapPrototype%", message: "isArray", padding: "isArrayBuffer", pos: "isArray" };
+obj35.cardFeatureIcon = { PREMIUM_TENURE_72_MONTH: false, FILES_OR_LINKS_NUM_COLUMNS: false, remoteVideoSsrcs: false };
+obj35.cardFooter = { "Bool(true)": null, "Bool(true)": null, "Bool(true)": null };
+obj35.cardFooterIcon = { -725635501: "r", 1424518954: "%JSONStringify%", -281171472: "isArray", -1079104812: "isArrayBuffer", 335024466: "isArray" };
 const obj38 = { flex: 1, marginTop: arg1(dependencyMap[19]).PROGRESS_BAR_SPACING };
 obj35.cardTierBadge = { borderRadius: importDefault(dependencyMap[18]).radii.sm };
 obj35.cardTierBadgeCopy = { textTransform: "uppercase" };
 const obj39 = { borderRadius: importDefault(dependencyMap[18]).radii.sm };
 obj35.sparkleStar = { position: "absolute", tintColor: arg1(dependencyMap[20]).DARK_WHITE_500_LIGHT_GUILD_BOOSTING_PINK };
 obj35.sparkleStarPointed = {};
-obj35.sparkleStarElongated = { <string:1140607356>: "column", <string:1751293292>: "center" };
+obj35.sparkleStarElongated = { <string:1632221346>: "column", <string:2722977214>: "center" };
 obj35.sparkleStarPointed1 = {};
 obj35.sparkleStarPointed2 = {};
 obj35.sparkleStarPointed3 = {};
-obj35.sparkleStarElongated1 = { 0: 1685934336, 0: -1137491695 };
-obj35.gradientHighlight = { _secureFramesTransitionPrepareCount: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000005006416183871819, visible: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003146543269853315, hasSpoiler: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000006919344807372779 };
-obj35.gradientHighlightTop = { 0: null, 0: "36d299b9a20b89def78675ec02a95049" };
+obj35.sparkleStarElongated1 = { ff: -1210756864, fi: -1146273519 };
+obj35.gradientHighlight = { 9223372036854775807: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000005006416183871819, 0: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003147073768801056, 0: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000025755311580135296 };
+obj35.gradientHighlightTop = { ff: null, fi: "36d299b9a20b89def78675ec02a95049" };
 obj35.gradientHighlightBottom = {};
 let closure_13 = obj37.createStyles(obj35);
 let closure_14 = { code: "function GuildBoostingMarketingTierCardsTsx1(){const{withDelay,isVisible,TIER_FEATURE_ANIMATION_DURATION_MS,withTiming,Easing}=this.__closure;return{opacity:withDelay(isVisible?TIER_FEATURE_ANIMATION_DURATION_MS:0,withTiming(isVisible?1:0,{duration:TIER_FEATURE_ANIMATION_DURATION_MS,easing:Easing.inOut(Easing.quad)}))};}" };
@@ -699,14 +720,14 @@ let closure_15 = importAllResult.forwardRef((onCardPress, ref) => {
     stringResult = string(t.agC5xg);
   }
   obj = { style: tmp.cardWrapper, ref };
-  obj = { angle: 45, angleCenter: {} };
+  obj = { angle: 45, angleCenter: { max: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011125378664662503, guildId: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002834178582291256 } };
   const isThemeDarkResult = obj.isThemeDark(importDefault(dependencyMap[24])());
   const tmp10 = View;
   const tmp11 = callback2;
   const tmp9 = callback3;
   const items1 = [importDefault(dependencyMap[18]).unsafe_rawColors.GUILD_BOOSTING_BLUE, importDefault(dependencyMap[18]).unsafe_rawColors.GUILD_BOOSTING_PURPLE];
   obj.colors = items1;
-  obj.locations = [null, null];
+  obj.locations = ["Text", "lc"];
   obj.style = tmp.card;
   obj.useAngle = true;
   const obj1 = { style: tmp.pressableWrapper };
@@ -770,8 +791,8 @@ let closure_15 = importAllResult.forwardRef((onCardPress, ref) => {
       const tmp40 = importDefault(dependencyMap[26]);
       items7[2] = ref(dependencyMap[31]).hexWithOpacity(tmp7, 0);
       obj13.colors = items7;
-      obj13.start = { "Null": false, "Null": true };
-      obj13.end = { "Null": null, "Null": null };
+      obj13.start = { max: -536870861, guildId: -299892737 };
+      obj13.end = {};
       obj13.locations = [false, false, false];
       const items8 = [, ];
       ({ gradientHighlight: arr10[0], gradientHighlightTop: arr10[1] } = tmp);
@@ -786,8 +807,8 @@ let closure_15 = importAllResult.forwardRef((onCardPress, ref) => {
       const obj25 = ref(dependencyMap[31]);
       items10[2] = ref(dependencyMap[31]).hexWithOpacity(tmp7, 0);
       obj14.colors = items10;
-      obj14.start = { "Null": false, "Null": true };
-      obj14.end = { "Null": null, "Null": null };
+      obj14.start = { max: -536870861, guildId: -299892737 };
+      obj14.end = {};
       obj14.locations = [false, false, false];
       const items11 = [, ];
       ({ gradientHighlight: arr13[0], gradientHighlightBottom: arr13[1] } = tmp);
@@ -824,10 +845,10 @@ let closure_15 = importAllResult.forwardRef((onCardPress, ref) => {
     obj19 = { angle: 3, angleCenter: {} };
     const items16 = [importDefault(dependencyMap[18]).unsafe_rawColors.GUILD_BOOSTING_BLUE, importDefault(dependencyMap[18]).unsafe_rawColors.GUILD_BOOSTING_PURPLE];
     obj19.colors = items16;
-    obj19.locations = [null, null];
+    obj19.locations = ["Text", "lc"];
     obj19.style = tmp.cardTierBadge;
     obj19.useAngle = true;
-    obj20 = { <string:1537349871>: "r", <string:4161884830>: "addContextToFrame", <string:2338427745>: "<string:1912693885>", style: tmp.cardTierBadgeCopy };
+    obj20 = { style: tmp.cardTierBadgeCopy };
     const intl3 = ref(dependencyMap[7]).intl;
     const string2 = intl3.string;
     if (tmp5) {

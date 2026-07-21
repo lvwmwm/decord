@@ -1,10 +1,10 @@
-// Module ID: 13860
-// Function ID: 104880
+// Module ID: 13867
+// Function ID: 104903
 // Name: useQuestDockModeAnimatedReaction
 // Dependencies: []
 // Exports: useActionSheetPressHandler, useQuestDockDismissalReset, useQuestDockExternalOffset, useQuestDockModeAnimatedReaction
 
-// Module 13860 (useQuestDockModeAnimatedReaction)
+// Module 13867 (useQuestDockModeAnimatedReaction)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 let closure_5 = importDefault(dependencyMap[2]);

@@ -1,9 +1,9 @@
-// Module ID: 16484
-// Function ID: 127344
+// Module ID: 16491
+// Function ID: 127378
 // Name: promise
 // Dependencies: []
 
-// Module 16484 (promise)
+// Module 16491 (promise)
 const _module = require(dependencyMap[0]);
 ({ AnalyticsObjectTypes: closure_2, AnalyticsObjects: closure_3 } = _module);
 const _module1 = require(dependencyMap[2]);

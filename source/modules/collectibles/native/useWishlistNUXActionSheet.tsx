@@ -1,10 +1,10 @@
-// Module ID: 8658
-// Function ID: 68525
+// Module ID: 8662
+// Function ID: 68537
 // Name: useHasNeverWishlisted
 // Dependencies: []
 // Exports: default
 
-// Module 8658 (useHasNeverWishlisted)
+// Module 8662 (useHasNeverWishlisted)
 function useHasNeverWishlisted() {
   const items = [closure_5];
   const callback = callback(dependencyMap[4]).useStateFromStores(items, () => id.getId());

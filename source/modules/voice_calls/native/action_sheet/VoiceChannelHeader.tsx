@@ -1,9 +1,9 @@
-// Module ID: 12595
-// Function ID: 96834
+// Module ID: 12602
+// Function ID: 96857
 // Name: PrivateChannelSubtitle
 // Dependencies: []
 
-// Module 12595 (PrivateChannelSubtitle)
+// Module 12602 (PrivateChannelSubtitle)
 function PrivateChannelSubtitle(channel) {
   channel = channel.channel;
   const tmp = callback2();
@@ -35,15 +35,15 @@ class VoiceChannelHeader {
     items = [];
     items[0] = closure_5;
     stateFromStores = obj.useStateFromStores(items, () => guild.getGuild(channel.getGuildId()));
-    tmp3 = f96838(dependencyMap[14])(channel);
+    tmp3 = f96861(dependencyMap[14])(channel);
     obj2 = arg1(dependencyMap[13]);
     items1 = [];
     items1[0] = closure_4;
     items2 = [];
     items2[0] = channel;
-    f96838 = obj2.useStateFromStores(items1, () => selfEmbeddedActivityForChannel.getSelfEmbeddedActivityForChannel(channel.id), items2);
+    f96861 = obj2.useStateFromStores(items1, () => selfEmbeddedActivityForChannel.getSelfEmbeddedActivityForChannel(channel.id), items2);
     name = undefined;
-    tmp4 = f96838(dependencyMap[15])(channel);
+    tmp4 = f96861(dependencyMap[15])(channel);
     if (null != stateFromStores) {
       name = stateFromStores.name;
     }
@@ -91,9 +91,9 @@ class VoiceChannelHeader {
     tmp13 = jsx;
     obj3 = {};
     obj3.size = arg1(dependencyMap[19]).Icon.Sizes.MEDIUM;
-    tmp14 = f96838;
+    tmp14 = f96861;
     tmp15 = dependencyMap;
-    if (f96838(dependencyMap[20])(channel)) {
+    if (f96861(dependencyMap[20])(channel)) {
       num4 = 21;
       tmp14Result = tmp14(tmp15[21]);
     } else {
@@ -114,7 +114,7 @@ class VoiceChannelHeader {
       tmp21 = arg1;
       tmp22 = dependencyMap;
       num5 = 11;
-      obj5 = { end: 0, home: null, left: 117, up: 167 };
+      obj5 = { "Bool(false)": 0, "Bool(false)": null, "Bool(false)": 117, "Bool(false)": 167 };
       obj5.children = formatToPlainStringResult;
       tmp19 = jsx(arg1(dependencyMap[11]).Text, obj5);
     }
@@ -173,14 +173,14 @@ let closure_6 = importDefault(dependencyMap[4]);
 const tmp3 = arg1(dependencyMap[5]);
 ({ jsx: closure_10, jsxs: closure_11 } = arg1(dependencyMap[6]));
 let obj = arg1(dependencyMap[7]);
-obj = { container: { pillStyle: "accessible", size: "url", text: "Button", grow: "raw", variant: 653272272 }, middle: { 0: "@", -9223372036854775808: "SelectedSnowflakeBoundDismissibleContent", 9223372036854775807: "sy" } };
+obj = { container: { 0: 0.000002295276792134519, 0: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001586576, -9223372036854775808: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000170698410605, 0: 0.000000000000000000000000000000000003385429693561303, 0: -9609111719247874 }, middle: { <string:525603545>: "xbMc8r", <string:1645004369>: "STATUS_BAR_HEIGHT", <string:743730449>: "%AsyncGenerator%" } };
 obj = { flexDirection: "row", tintColor: importDefault(dependencyMap[8]).colors.WHITE };
 obj.icons = obj;
-const tmp4 = arg1(dependencyMap[6]);
-obj.subtitle = { color: importDefault(dependencyMap[8]).colors.WHITE };
+const obj1 = { PX_16: "<string:2236743682>", ix: "<string:1941427526>", color: importDefault(dependencyMap[8]).colors.WHITE };
+obj.subtitle = obj1;
 obj.subtitleWrapper = { flexDirection: "row" };
 let closure_12 = obj.createStyles(obj);
-const obj1 = { color: importDefault(dependencyMap[8]).colors.WHITE };
+const tmp4 = arg1(dependencyMap[6]);
 const result = arg1(dependencyMap[25]).fileFinishedImporting("modules/voice_calls/native/action_sheet/VoiceChannelHeader.tsx");
 
 export default VoiceChannelHeader;

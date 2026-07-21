@@ -1,10 +1,10 @@
-// Module ID: 7409
-// Function ID: 59556
+// Module ID: 7413
+// Function ID: 59567
 // Name: NitroHomeHeader
 // Dependencies: []
 // Exports: default
 
-// Module 7409 (NitroHomeHeader)
+// Module 7413 (NitroHomeHeader)
 function NitroHomeHeader(arg0) {
   let onClose;
   let subscription;
@@ -31,9 +31,9 @@ function NitroHomeHeader(arg0) {
   let tmp6 = !tmp5;
   obj = { style: tmp.contentContainer };
   obj = { style: tmp.headerContainer };
-  obj1 = { style: tmp.backButtonWrapper, onPress: callback, children: callback3(arg1(dependencyMap[17]).ArrowLargeLeftIcon, {}) };
+  obj1 = { style: tmp.backButtonWrapper, onPress: callback, children: callback3(arg1(dependencyMap[17]).ArrowLargeLeftIcon, { flex: "null", flexGrow: null }) };
   const items1 = [callback3(arg1(dependencyMap[16]).PressableOpacity, obj1), , ];
-  const obj2 = { Globe: "<string:1375732085>", BUNDLE_PREVIEW_CONFIG: "<string:1685924958>", getAppIntentScheme: "<string:3457827089>", SlideInUp: "<string:410124289>", style: tmp.headerText };
+  const obj2 = { style: tmp.headerText };
   const intl = arg1(dependencyMap[19]).intl;
   obj2.children = intl.string(arg1(dependencyMap[19]).t.BnquQ/);
   items1[1] = callback3(arg1(dependencyMap[18]).Text, obj2);
@@ -49,7 +49,7 @@ function NitroHomeHeader(arg0) {
           obj.track(constants.NITRO_HOME_NAVIGATION, obj);
           navigation.push(constants2.PREMIUM_MANAGE_PLAN);
         },
-      children: callback3(arg1(dependencyMap[21]).SettingsIcon, {})
+      children: callback3(arg1(dependencyMap[21]).SettingsIcon, { flex: "null", flexGrow: null })
     };
     tmp11Result = tmp11(arg1(dependencyMap[16]).PressableOpacity, obj4);
   }
@@ -256,9 +256,9 @@ let closure_22 = { CAROUSEL_SECTION_NAME_1: "NitroFavorites", CAROUSEL_SECTION_N
 let closure_23 = { YOUR_NITRO_HOME: "YourNitroHome", YOUR_NITRO_PLAN: "YourNitroPlan" };
 let obj3 = arg1(dependencyMap[13]);
 obj = {};
-obj = { <string:1641819985>: true, <string:3021492729>: true, <string:1399449442>: true, backgroundColor: importDefault(dependencyMap[12]).colors.BACKGROUND_BASE_LOWER };
+obj = { setEmojiId: null, selectedAvatarDecoration: "space-between", genContentSubtitle: "center", backgroundColor: importDefault(dependencyMap[12]).colors.BACKGROUND_BASE_LOWER };
 obj.container = obj;
-obj.background = { "Bool(true)": "<string:218103808>", "Bool(true)": "<string:218103808>" };
+obj.background = {};
 obj.tabContent = { flex: 1 };
 obj.featureCardsContainer = { "Bool(true)": 1, "Bool(true)": "center", "Bool(true)": "center", "Bool(true)": 24 };
 obj.segmentedControlActual = {};
@@ -266,14 +266,14 @@ const alphaResult = importDefault(dependencyMap[11])(importDefault(dependencyMap
 obj.segmentedControlVirtual = { borderRadius: importDefault(dependencyMap[12]).radii.lg };
 const obj1 = { borderRadius: importDefault(dependencyMap[12]).radii.lg };
 obj.androidSegmentedControlBackground = { backgroundColor: importDefault(dependencyMap[12]).colors.BACKGROUND_SURFACE_HIGH };
-obj.backSwipeSensor = { marginRight: true, padding: true, width: true, display: true, alignItems: true };
+obj.backSwipeSensor = { 9223372036854775807: 3375103, 0: -8192, 9223372036854775807: 4320799, 0: -1147150336, 0: 4320958 };
 let closure_24 = obj3.createStyles(obj);
 const obj2 = { backgroundColor: importDefault(dependencyMap[12]).colors.BACKGROUND_SURFACE_HIGH };
 obj3 = { headerContainer: {}, contentContainer: {} };
 const obj9 = arg1(dependencyMap[13]);
 obj3.backButtonWrapper = { borderRadius: importDefault(dependencyMap[12]).radii.lg };
-obj3.headerText = { accessible: "message", spriteIndex: 2, bottom: null };
-obj3.pillParent = { "Bool(true)": 8, "Bool(true)": 18, "Bool(true)": "center" };
+obj3.headerText = { "Null": "message", "Null": 2, "Null": null };
+obj3.pillParent = {};
 let closure_25 = obj9.createStyles(obj3);
 const obj4 = { borderRadius: importDefault(dependencyMap[12]).radii.lg };
 const obj5 = { featureCardsContainer: { "Bool(true)": 1, "Bool(true)": "center", "Bool(true)": "center", "Bool(true)": 24, "Bool(true)": "recent_games_enabled" } };
@@ -281,7 +281,7 @@ const obj12 = arg1(dependencyMap[13]);
 obj5.marketingBannerCard = { backgroundColor: importDefault(dependencyMap[12]).colors.BACKGROUND_SURFACE_HIGH, borderRadius: importDefault(dependencyMap[12]).radii.sm };
 let closure_26 = obj12.createStyles(obj5);
 const obj6 = { backgroundColor: importDefault(dependencyMap[12]).colors.BACKGROUND_SURFACE_HIGH, borderRadius: importDefault(dependencyMap[12]).radii.sm };
-let closure_27 = arg1(dependencyMap[13]).createStyles({ featureCardsContainer: { showBorder: null, SYSTEM_CHANNEL_FLAG_JOIN_NOTIFICATIONS: null, updater: null, IFD_TYPE_0TH: null } });
+let closure_27 = arg1(dependencyMap[13]).createStyles({ featureCardsContainer: { TransitionStates: 720895, GappedList: 1090584576, EouHwv: 179448, _resetProfilerInfo: -1136484511 } });
 let closure_28 = { code: "function PremiumNitroHomeTsx1(){const{floatTabBottomOffset}=this.__closure;return{bottom:floatTabBottomOffset.get()};}" };
 const obj15 = arg1(dependencyMap[13]);
 const result = arg1(dependencyMap[60]).fileFinishedImporting("modules/user_settings/premium/native/PremiumNitroHome.tsx");
@@ -391,7 +391,7 @@ export default function PremiumNitroHome(onClose) {
   const effect1 = React.useEffect(() => {
     if (!stateFromStores) {
       const obj = bottom(closure_2[44]);
-      const result = sharedValue.set(obj.withDelay(500, bottom(closure_2[45]).withSpring(bottom + 8, { useIsPaymentsBlocked: "isArray", ONE_DAY: "OrbNitroCardSpotIllustration", marginHorizontal: "Array" })));
+      const result = sharedValue.set(obj.withDelay(500, bottom(closure_2[45]).withSpring(bottom + 8, { <string:2210751406>: "isArray", <string:3433102185>: "ranges", <string:3973600938>: "Array" })));
       const obj2 = bottom(closure_2[45]);
     }
   }, items4);
@@ -477,7 +477,7 @@ export default function PremiumNitroHome(onClose) {
   if (tmp46) {
     const obj11 = {};
     ({ START: obj28.start, END: obj28.end } = closure_12);
-    obj11.colors = [null, null];
+    obj11.colors = [-0.00000025418756745504954, 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007282700382719388];
     const items12 = [tmp3.segmentedControlVirtual, ];
     const obj12 = { height: tmp10, zIndex: 2 };
     items12[1] = obj12;
@@ -493,7 +493,7 @@ export default function PremiumNitroHome(onClose) {
     const obj13 = {};
     const items13 = [, , ];
     ({ segmentedControlVirtual: arr15[0], androidSegmentedControlBackground: arr15[1] } = tmp3);
-    obj14 = { gameImage: true, HIGH_STREAMING_QUALITY: 10, clientThemeSettings: 10, height: tmp10 };
+    obj14 = { "Bool(false)": true, "Bool(false)": 10, "Bool(false)": 10, height: tmp10 };
     items13[2] = obj14;
     obj13.style = items13;
     let tmp51Result = tmp51(closure_5, obj13);
@@ -505,7 +505,7 @@ export default function PremiumNitroHome(onClose) {
     }
     obj15.blurAmount = num6;
     const items14 = [tmp3.segmentedControlVirtual, ];
-    obj16 = { gameImage: true, HIGH_STREAMING_QUALITY: 10, clientThemeSettings: 10, height: tmp10 };
+    obj16 = { "Bool(false)": true, "Bool(false)": 10, "Bool(false)": 10, height: tmp10 };
     items14[1] = obj16;
     obj15.style = items14;
     obj15.blurTheme = theme;

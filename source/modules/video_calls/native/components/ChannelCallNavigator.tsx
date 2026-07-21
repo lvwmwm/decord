@@ -1,18 +1,18 @@
-// Module ID: 10602
-// Function ID: 82723
+// Module ID: 10608
+// Function ID: 82746
 // Name: getScreens
 // Dependencies: []
 // Exports: default
 
-// Module 10602 (getScreens)
+// Module 10608 (getScreens)
 let StyleSheet;
 function getScreens(channel) {
   const arg1 = channel.channel;
   const obj = {
-    space: 402653184,
-    Map: 134217728,
-    jsx: 134217728,
-    scales: 1946157056,
+    "Null": 0,
+    "Null": 57277807836949920000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000,
+    "Null": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000494,
+    "Null": 0,
     render() {
       return callback(closure_21, { channel });
     }
@@ -67,7 +67,7 @@ function CallWithVoiceChat(channel) {
       num = value;
     }
     const items = [-result, 0];
-    obj.opacity = result(tmp10[12]).interpolate(num, items, [1.025, 3.786]);
+    obj.opacity = result(tmp10[12]).interpolate(num, items, [true, true]);
     return obj;
   };
   obj = { interpolate: arg1(dependencyMap[12]).interpolate, translateX, width: result };
@@ -233,7 +233,7 @@ let closure_11 = arg1(dependencyMap[7]).OAUTH2_AUTHORIZE_MODAL_KEY;
 const tmp2 = arg1(dependencyMap[3]);
 ({ jsx: closure_12, jsxs: closure_13 } = arg1(dependencyMap[8]));
 let obj = arg1(dependencyMap[9]);
-obj = { flex: { "Null": null, "Null": null } };
+obj = { flex: { default: null, jumbo: null } };
 obj = {};
 const merged = Object.assign(StyleSheet.absoluteFillObject);
 obj["right"] = undefined;

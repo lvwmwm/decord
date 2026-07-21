@@ -1,8 +1,8 @@
-// Module ID: 11782
-// Function ID: 91492
+// Module ID: 11789
+// Function ID: 91515
 // Dependencies: []
 
-// Module 11782
+// Module 11789
 let closure_3 = importAll(dependencyMap[0]);
 const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/forums/ForumPlatformHooks.native.tsx");
 

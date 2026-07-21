@@ -1,10 +1,10 @@
-// Module ID: 7508
-// Function ID: 60148
+// Module ID: 7512
+// Function ID: 60160
 // Name: TableRadioRow
 // Dependencies: []
 // Exports: TableRadioRow
 
-// Module 7508 (TableRadioRow)
+// Module 7512 (TableRadioRow)
 let closure_2 = importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[7]).fileFinishedImporting("design/components/TableRow/native/TableRadioRow.native.tsx");
@@ -23,7 +23,7 @@ export const TableRadioRow = function TableRadioRow(value) {
     disabled = false;
   }
   ({ legacyCompat_selected, legacyCompat_onPress: closure_1 } = value);
-  let obj = { "Bool(false)": 1091658877, "Bool(false)": 151597, "Bool(false)": 6258, "Bool(false)": 6144, "Bool(false)": -180289280, "Bool(false)": 1375732285, "Bool(false)": 1685947892 };
+  let obj = {};
   Object.setPrototypeOf(null);
   const merged = Object.assign(value, obj);
   let React;

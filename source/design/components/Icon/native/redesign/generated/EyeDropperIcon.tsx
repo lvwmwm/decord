@@ -1,15 +1,14 @@
-// Module ID: 14105
-// Function ID: 107125
+// Module ID: 14112
+// Function ID: 107148
 // Name: EyeDropperIcon
 // Dependencies: [4294967295, 0, 4294967295, 0, 0, 0]
 // Exports: EyeDropperIcon
 
-// Module 14105 (EyeDropperIcon)
-import { jsx } from "result";
-import result from "result";
+// Module 14112 (EyeDropperIcon)
+import { jsx } from "__exportStarResult1";
 
 importAll(dependencyMap[0]);
-result = result.fileFinishedImporting("design/components/Icon/native/redesign/generated/EyeDropperIcon.tsx");
+const result = require("__exportStarResult1").fileFinishedImporting("design/components/Icon/native/redesign/generated/EyeDropperIcon.tsx");
 
 export const EyeDropperIcon = function EyeDropperIcon(color) {
   let INTERACTIVE_ICON_DEFAULT = color.color;

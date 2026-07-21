@@ -1,10 +1,10 @@
-// Module ID: 15328
-// Function ID: 116733
+// Module ID: 15335
+// Function ID: 116757
 // Name: FriendRequestsSettingsScreen
 // Dependencies: []
 // Exports: default
 
-// Module 15328 (FriendRequestsSettingsScreen)
+// Module 15335 (FriendRequestsSettingsScreen)
 importAll(dependencyMap[0]);
 const ScrollView = arg1(dependencyMap[1]).ScrollView;
 ({ jsx: closure_3, Fragment: closure_4, jsxs: closure_5 } = arg1(dependencyMap[2]));

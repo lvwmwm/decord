@@ -1,14 +1,13 @@
-// Module ID: 6297
-// Function ID: 50319
+// Module ID: 6299
+// Function ID: 50362
 // Name: MoonIllocon
 // Dependencies: [0, 0, 4294967295, 0]
 // Exports: MoonIllocon
 
-// Module 6297 (MoonIllocon)
-import { jsx } from "result";
-import result from "result";
+// Module 6299 (MoonIllocon)
+import { jsx } from "__exportStarResult1";
 
-result = result.fileFinishedImporting("design/components/mana-assets/native/generated/MoonIllocon.native.tsx");
+const result = require("__exportStarResult1").fileFinishedImporting("design/components/mana-assets/native/generated/MoonIllocon.native.tsx");
 
 export const MoonIllocon = function MoonIllocon(size) {
   let accessibilityLabel;

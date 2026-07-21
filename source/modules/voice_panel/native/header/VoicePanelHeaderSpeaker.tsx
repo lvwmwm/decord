@@ -1,9 +1,9 @@
-// Module ID: 15665
-// Function ID: 119688
+// Module ID: 15672
+// Function ID: 119712
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 
-// Module 15665 (_createForOfIteratorHelperLoose)
+// Module 15672 (_createForOfIteratorHelperLoose)
 function _createForOfIteratorHelperLoose(@@iterator) {
   let arg1 = Symbol_iterator;
   @@iterator = "undefined" !== typeof Symbol;
@@ -83,7 +83,7 @@ function _arrayLikeToArray(arg0, arg1) {
   }
   return ArrayResult;
 }
-let closure_3 = ["ellipsizeMode"];
+let closure_3 = [null];
 let closure_4 = importDefault(dependencyMap[0]);
 const importAllResult = importAll(dependencyMap[1]);
 const NativeModules = arg1(dependencyMap[2]).NativeModules;
@@ -352,7 +352,7 @@ const memoResult = importAllResult.memo(function VoicePanelHeaderSpeaker(isConne
         obj = {};
         obj = { targetRef: ref, canShowTooltip: isConnectedToVoiceChannel };
         const items8 = [tmp8(closure_18, obj), ];
-        obj1 = { circleRadius: "<string:2879735130>", cutoutRadius: "<string:1134369361>", enableCutout: "100%", menuItems: memo, onRequestOpen: callback, onRequestClose: tmp.unlock, children: renderButton };
+        obj1 = { "Null": "<string:83707277>", "Null": "<string:1125533521>", "Null": "100%", menuItems: memo, onRequestOpen: callback, onRequestClose: tmp.unlock, children: renderButton };
         items8[1] = tmp8(arg1(dependencyMap[32]).MenuPopout, obj1);
         obj.children = items8;
         let renderButtonResult = stateFromStores2(closure_15, obj);

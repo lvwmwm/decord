@@ -1,10 +1,10 @@
-// Module ID: 11410
-// Function ID: 88760
+// Module ID: 11417
+// Function ID: 88784
 // Name: DiceRollBar
 // Dependencies: []
 // Exports: default
 
-// Module 11410 (DiceRollBar)
+// Module 11417 (DiceRollBar)
 let closure_3 = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 let closure_5 = importDefault(dependencyMap[2]);
@@ -119,7 +119,7 @@ export default function DiceRollBar(channelId) {
     obj3 = { size: "md" };
     obj2.children = callback(arg1(dependencyMap[12]).DiceIcon, obj3);
     const items4 = [callback(importDefault(dependencyMap[8]).View, obj2), ];
-    obj4 = { INTEGRATION_CREATE: "AutomodMentionRaidLimit", ConstraintReasonCode: "%URIError%", children: barText };
+    obj4 = { children: barText };
     items4[1] = callback(arg1(dependencyMap[13]).Text, obj4);
     obj1.children = items4;
     obj.children = callback2(View, obj1);

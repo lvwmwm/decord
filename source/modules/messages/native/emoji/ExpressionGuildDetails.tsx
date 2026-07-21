@@ -1,25 +1,25 @@
-// Module ID: 9389
-// Function ID: 73186
+// Module ID: 9393
+// Function ID: 73200
 // Name: ExpressionGuildDetails
 // Dependencies: []
 
-// Module 9389 (ExpressionGuildDetails)
+// Module 9393 (ExpressionGuildDetails)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 let closure_4 = arg1(dependencyMap[2]).ExpressionSourceGuildRecord;
 ({ jsx: closure_5, Fragment: closure_6, jsxs: closure_7 } = arg1(dependencyMap[3]));
 let obj = arg1(dependencyMap[4]);
 obj = { guildDetailsContainer: { flexDirection: "column" }, guildDetailsContent: {} };
-obj = { backgroundColor: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000949988315572467, accessibilityRole: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000008442542560619912, -45001119: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010260545709468735, 1379623171: 9126805510.25, borderRadius: importDefault(dependencyMap[5]).radii.sm };
+obj = { borderRadius: importDefault(dependencyMap[5]).radii.sm };
 obj.guildIcon = obj;
 obj.guildNameAndOnlineMembers = { flexDirection: "column" };
-obj.guildNameWrapper = { lineHeight: 1, paddingTop: 71, flex: null };
+obj.guildNameWrapper = { "Bool(true)": 1, "Bool(true)": 71, "Bool(true)": null };
 obj.guildPartnerIcon = { marginRight: 8 };
-obj.guildDescriptionSection = {};
-const obj1 = { <string:335545560>: null, <string:603981006>: "\u{1F6B9}", <string:80489728>: 6, <string:81021952>: 1155, <string:80568576>: null, borderRadius: importDefault(dependencyMap[5]).radii.xs, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_MOD_MUTED };
-obj.dotSeparator = obj1;
-const obj2 = { "Bool(false)": 131129.30725479132, "Bool(false)": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002372587744692494, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, borderRadius: importDefault(dependencyMap[5]).radii.sm, borderColor: importDefault(dependencyMap[5]).colors.BORDER_STRONG };
-obj.joinGuildButton = obj2;
+obj.guildDescriptionSection = { onTapButtonActionComponent: "safety_user_sentiment_notice_dismissed_at", onTapSelectActionComponent: "message", onTapWelcomeReply: null };
+const tmp3 = arg1(dependencyMap[3]);
+obj.dotSeparator = { borderRadius: importDefault(dependencyMap[5]).radii.xs, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_MOD_MUTED };
+const obj1 = { borderRadius: importDefault(dependencyMap[5]).radii.xs, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_MOD_MUTED };
+obj.joinGuildButton = { borderRadius: importDefault(dependencyMap[5]).radii.sm, borderColor: importDefault(dependencyMap[5]).colors.BORDER_STRONG };
 let closure_8 = obj.createStyles(obj);
 class ExpressionGuildDetails {
   constructor(arg0) {
@@ -58,7 +58,7 @@ class ExpressionGuildDetails {
       tmp13 = dependencyMap;
       obj16 = 9;
       tmp11 = jsx;
-      obj3 = { INTEGRATION_CREATE: "/assets/images/native/premium/illustrations", ConstraintReasonCode: 51 };
+      obj3 = {};
       obj3.children = title;
       items = [, ];
       items[0] = jsx(arg1(dependencyMap[9]).Text, obj3);
@@ -82,7 +82,7 @@ class ExpressionGuildDetails {
       obj7.disableColor = true;
       items2 = [, ];
       items2[0] = jsx(tmp15, obj7);
-      obj8 = { INTEGRATION_CREATE: -833552028, ConstraintReasonCode: -314949303 };
+      obj8 = {};
       obj8.children = guild.name;
       items2[1] = jsx(arg1(dependencyMap[9]).Text, obj8);
       obj6.children = items2;
@@ -165,7 +165,7 @@ class ExpressionGuildDetails {
     return;
   }
 }
-const tmp3 = arg1(dependencyMap[3]);
+const obj2 = { borderRadius: importDefault(dependencyMap[5]).radii.sm, borderColor: importDefault(dependencyMap[5]).colors.BORDER_STRONG };
 const result = arg1(dependencyMap[15]).fileFinishedImporting("modules/messages/native/emoji/ExpressionGuildDetails.tsx");
 
 export default ExpressionGuildDetails;

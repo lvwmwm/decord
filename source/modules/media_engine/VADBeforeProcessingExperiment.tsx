@@ -1,12 +1,11 @@
-// Module ID: 12632
-// Function ID: 97228
+// Module ID: 12639
+// Function ID: 97251
 // Name: getVADBeforeProcessingExperimentConfig
 // Dependencies: []
 // Exports: getVADBeforeProcessingExperimentConfig
 
-// Module 12632 (getVADBeforeProcessingExperimentConfig)
-const obj = { "Null": 1917147729, "Null": 16, defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } };
-let closure_0 = importDefault(dependencyMap[0])(obj);
+// Module 12639 (getVADBeforeProcessingExperimentConfig)
+let closure_0 = importDefault(dependencyMap[0])({ defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } });
 const result = arg1(dependencyMap[1]).fileFinishedImporting("modules/media_engine/VADBeforeProcessingExperiment.tsx");
 
 export const getVADBeforeProcessingExperimentConfig = function getVADBeforeProcessingExperimentConfig(disable) {

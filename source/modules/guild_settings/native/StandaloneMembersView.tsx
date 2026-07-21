@@ -1,10 +1,10 @@
-// Module ID: 15161
-// Function ID: 114346
+// Module ID: 15168
+// Function ID: 114370
 // Name: StandaloneMembersView
 // Dependencies: []
 // Exports: default
 
-// Module 15161 (StandaloneMembersView)
+// Module 15168 (StandaloneMembersView)
 let closure_3 = importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 let closure_5 = { MAIN: "MAIN", MEMBER_EDIT: "MEMBER_EDIT", MEMBER_KICK: "MEMBER_KICK", MEMBER_BAN: "MEMBER_BAN" };

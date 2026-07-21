@@ -1,8 +1,8 @@
-// Module ID: 8944
-// Function ID: 70521
+// Module ID: 8948
+// Function ID: 70533
 // Dependencies: []
 
-// Module 8944
+// Module 8948
 const NativeModules = require(dependencyMap[0]).NativeModules;
 const _module = require(dependencyMap[1]);
 const result = _module.fileFinishedImporting("modules/samsung/native/SamsungManager.android.tsx");

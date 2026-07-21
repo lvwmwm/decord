@@ -1,10 +1,10 @@
-// Module ID: 12260
-// Function ID: 94024
+// Module ID: 12267
+// Function ID: 94047
 // Name: roundFPCountdownUnits
 // Dependencies: []
 // Exports: default
 
-// Module 12260 (roundFPCountdownUnits)
+// Module 12267 (roundFPCountdownUnits)
 function roundFPCountdownUnits(arg0) {
   let obj = {};
   const merged = Object.assign(arg0);
@@ -21,7 +21,7 @@ function roundFPCountdownUnits(arg0) {
     obj.hours = 0;
   }
   if (obj.days > 0) {
-    obj = { marginTop: null, borderRadius: null, flexDirection: -4, alignItems: 12 };
+    obj = {};
     if (obj.hours > 0) {
       let days = obj.days + 1;
     } else {
@@ -36,9 +36,9 @@ function roundFPCountdownUnits(arg0) {
       hours = obj.hours;
     }
     if (hours > 11) {
-      obj = { marginTop: "%NumberPrototype%", borderRadius: "isArrayBuffer", flexDirection: "upsellButtonContainer", alignItems: "species" };
+      obj = { 0: null, 0: null, 9223372036854775807: null, 0: null };
     } else {
-      obj = { marginTop: true, borderRadius: true, flexDirection: true, alignItems: true, hours };
+      obj = { hours };
     }
     return obj;
   } else if (obj.minutes > 0) {
@@ -57,7 +57,7 @@ function roundFPCountdownUnits(arg0) {
   } else {
     let obj2 = obj;
     if (obj.seconds > 0) {
-      obj2 = { marginTop: 324, borderRadius: 187, flexDirection: null, alignItems: "c300172c07e69fb8041898afe2aa282d" };
+      obj2 = { 0: 324, 0: 187, 9223372036854775807: null, 0: "c300172c07e69fb8041898afe2aa282d" };
     }
     return obj2;
   }

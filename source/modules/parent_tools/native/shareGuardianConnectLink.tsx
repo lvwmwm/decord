@@ -1,10 +1,10 @@
-// Module ID: 13651
-// Function ID: 103429
+// Module ID: 13658
+// Function ID: 103452
 // Name: shareGuardianConnectLink
 // Dependencies: []
 // Exports: shareGuardianConnectLink
 
-// Module 13651 (shareGuardianConnectLink)
+// Module 13658 (shareGuardianConnectLink)
 let closure_3 = require(dependencyMap[0]).FAMILY_CENTER_REQUEST_QR_CODE_URL;
 const _module = require(dependencyMap[4]);
 const result = _module.fileFinishedImporting("modules/parent_tools/native/shareGuardianConnectLink.tsx");

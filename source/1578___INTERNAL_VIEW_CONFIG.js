@@ -4,7 +4,7 @@
 // Dependencies: [0, 4294967295]
 
 // Module 1578 (__INTERNAL_VIEW_CONFIG)
-import { codegenNativeComponent } from "result";
+import { codegenNativeComponent } from "__exportStarResult1";
 
 const obj = { uiViewClassName: "ClippingScrollViewDecoratorView", validAttributes: {} };
 const _module = require(dependencyMap[1]);

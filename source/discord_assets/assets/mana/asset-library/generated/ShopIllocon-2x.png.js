@@ -1,9 +1,9 @@
-// Module ID: 6504
-// Function ID: 50630
+// Module ID: 6506
+// Function ID: 50673
 // Name: metadata
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 6504 (metadata)
+// Module 6506 (metadata)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/ShopIllocon-2x.png.js");
 

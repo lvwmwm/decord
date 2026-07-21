@@ -1,10 +1,10 @@
-// Module ID: 5463
-// Function ID: 46650
+// Module ID: 5465
+// Function ID: 46692
 // Name: useStartAuthorize
 // Dependencies: []
 // Exports: default
 
-// Module 5463 (useStartAuthorize)
+// Module 5465 (useStartAuthorize)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 const AuthorizeFlow = arg1(dependencyMap[2]).AuthorizeFlow;

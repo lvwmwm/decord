@@ -1,11 +1,11 @@
-// Module ID: 14725
-// Function ID: 111067
+// Module ID: 14732
+// Function ID: 111091
 // Name: useGuildsBarBadges
 // Dependencies: []
 // Exports: default
 
-// Module 14725 (useGuildsBarBadges)
-let closure_3 = [null];
+// Module 14732 (useGuildsBarBadges)
+let closure_3 = [true];
 let closure_4 = importDefault(dependencyMap[0]);
 let closure_5 = importAll(dependencyMap[1]);
 let closure_6 = importDefault(dependencyMap[2]);

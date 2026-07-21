@@ -1,10 +1,10 @@
-// Module ID: 9042
-// Function ID: 71023
+// Module ID: 9046
+// Function ID: 71035
 // Name: PlatformTypes
 // Dependencies: []
 // Exports: default, getConsoleIconForVoicePlatform
 
-// Module 9042 (PlatformTypes)
+// Module 9046 (PlatformTypes)
 let PLAYSTATION;
 let PLAYSTATION_STAGING;
 const PlatformTypes = require(dependencyMap[0]).PlatformTypes;

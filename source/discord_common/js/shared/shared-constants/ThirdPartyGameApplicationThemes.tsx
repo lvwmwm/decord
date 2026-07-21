@@ -1,9 +1,9 @@
-// Module ID: 8579
-// Function ID: 68132
+// Module ID: 8583
+// Function ID: 68144
 // Name: ThirdPartyGameApplicationThemes
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 8579 (ThirdPartyGameApplicationThemes)
+// Module 8583 (ThirdPartyGameApplicationThemes)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_common/js/shared/shared-constants/ThirdPartyGameApplicationThemes.tsx");
 

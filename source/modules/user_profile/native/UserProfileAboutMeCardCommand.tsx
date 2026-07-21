@@ -1,8 +1,8 @@
-// Module ID: 11871
-// Function ID: 91916
+// Module ID: 11878
+// Function ID: 91939
 // Dependencies: []
 
-// Module 11871
+// Module 11878
 const AnalyticEvents = arg1(dependencyMap[1]).AnalyticEvents;
 const jsxs = arg1(dependencyMap[2]).jsxs;
 const importAllResult = importAll(dependencyMap[0]);
@@ -17,7 +17,7 @@ const memoResult = importAllResult.memo(function UserProfileAboutMeCardCommand(c
   const importDefault = command;
   const dependencyMap = channel.channel;
   const tmp = callback();
-  const items = [, command.displayName];
+  const items = [true, command.displayName];
   return jsxs(arg1(dependencyMap[5]).Text, {
     variant: "text-md/bold",
     onPress() {

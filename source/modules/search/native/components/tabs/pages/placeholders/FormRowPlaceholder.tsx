@@ -1,20 +1,20 @@
-// Module ID: 15233
-// Function ID: 115023
+// Module ID: 15240
+// Function ID: 115047
 // Name: FormRowPlaceholderItem
 // Dependencies: []
 // Exports: default
 
-// Module 15233 (FormRowPlaceholderItem)
+// Module 15240 (FormRowPlaceholderItem)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 ({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[3]));
 let obj = arg1(dependencyMap[4]);
 obj = { itemContainer: obj };
-obj = { "Bool(false)": "WaveformIcon", "Bool(false)": "png", "Bool(false)": true, "Bool(false)": "/assets/design/components/Icon/native/redesign/generated/images", "Bool(false)": 24, "Bool(false)": 24, paddingVertical: arg1(dependencyMap[2]).SEARCH_ROW_TAP_STATE_PADDING };
-const obj1 = { right: null, accessible: "b7eca7761481c5ff3cc170b16fbdff57", useEffect: "img_no_results", y: "png", borderRadius: importDefault(dependencyMap[5]).radii.xl, backgroundColor: importDefault(dependencyMap[5]).colors.BORDER_SUBTLE };
+obj = { width: null, accessible: "07392a850e043822a5c8062588fbfbb4", message: "WaveformIcon", current: "png", flags: true, st: "/assets/design/components/Icon/native/redesign/generated/images", paddingVertical: arg1(dependencyMap[2]).SEARCH_ROW_TAP_STATE_PADDING };
+const obj1 = { -1437189274: null, 1389932780: "b7eca7761481c5ff3cc170b16fbdff57", 96994568: "img_no_results", 1385486178: "png", borderRadius: importDefault(dependencyMap[5]).radii.xl, backgroundColor: importDefault(dependencyMap[5]).colors.BORDER_SUBTLE };
 obj.avatar = obj1;
 obj.innerContainer = {};
-const obj2 = { 0: true, 0: true, 0: true, 9223372036854775807: true, borderRadius: importDefault(dependencyMap[5]).radii.md, backgroundColor: importDefault(dependencyMap[5]).colors.BORDER_SUBTLE };
+const obj2 = { onBeforeGoBack: null, hueToGummyColor: null, ar-YE: null, zIndex: null, borderRadius: importDefault(dependencyMap[5]).radii.md, backgroundColor: importDefault(dependencyMap[5]).colors.BORDER_SUBTLE };
 obj.upperText = obj2;
 const tmp3 = arg1(dependencyMap[3]);
 obj.lowerText = { borderRadius: importDefault(dependencyMap[5]).radii.md, backgroundColor: importDefault(dependencyMap[5]).colors.BORDER_SUBTLE };

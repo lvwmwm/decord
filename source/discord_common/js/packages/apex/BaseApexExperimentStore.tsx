@@ -201,7 +201,7 @@ const tmp9 = (PersistedStore) => {
           let tmp5 = key10022;
           let tmp6 = closure_29;
           let tmp7 = closure_17;
-          obj = { -9223372036854775808: true, 0: true, 9223372036854775807: true, 0: true, 9223372036854775807: true, hashedName: closure_29(key10022), variantId: arg1[key10022] };
+          obj = { hashedName: closure_29(key10022), variantId: arg1[key10022] };
           closure_17[key10022] = obj;
         }
         let closure_23 = self.loadTrackedExposures();

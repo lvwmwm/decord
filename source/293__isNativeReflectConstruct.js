@@ -13,7 +13,7 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-let closure_3 = [];
+let closure_3 = ["isArray", "isArray", "split", "to", "useEffect"];
 let closure_4 = importDefault(dependencyMap[0]);
 let closure_5 = importDefault(dependencyMap[1]);
 let closure_6 = importDefault(dependencyMap[2]);
@@ -23,7 +23,7 @@ let closure_9 = importDefault(dependencyMap[5]);
 const createRef = arg1(dependencyMap[6]).createRef;
 const importAllResult = importAll(dependencyMap[6]);
 ({ jsx: closure_11, jsxs: closure_12 } = arg1(dependencyMap[7]));
-let closure_13 = ["imageStyle", "imageRef", "importantForAccessibility"];
+let closure_13 = ["HermesInternal", "_distance", "forEach"];
 const tmp3 = arg1(dependencyMap[7]);
 const tmp4 = (Component) => {
   class DrawerLayoutAndroid {
@@ -212,13 +212,13 @@ const tmp4 = (Component) => {
       key: "positions",
       get() {
         console.warn("Setting DrawerLayoutAndroid drawerPosition using `DrawerLayoutAndroid.positions` is deprecated. Instead pass the string value \"left\" or \"right\"");
-        return {};
+        return { "Bool(true)": null, "Bool(true)": null };
       }
     }
   ];
   return callback(DrawerLayoutAndroid, items, items1);
 }(importAllResult.Component);
-let obj = { base: { position: null, top: null }, mainSubview: { left: "isArray", borderColor: "skuId", borderWidth: "T", backgroundColor: "r", borderRadius: "isArray" }, drawerSubview: { "Bool(false)": true, "Bool(false)": true, "Bool(false)": true } };
+let obj = { base: { "Bool(false)": true, "Bool(false)": null }, mainSubview: { o: "center", concat: null, o: 4, borderRadius: 4, position: "rgba(0, 0, 0, 0.75)" }, drawerSubview: { position: 3375103, top: -8192, 0: 4320799 } };
 obj = { height: importDefault(dependencyMap[10]).currentHeight };
 obj.statusBar = obj;
 const importDefaultResult = importDefault(dependencyMap[13]);

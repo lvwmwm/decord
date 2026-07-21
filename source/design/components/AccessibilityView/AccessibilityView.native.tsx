@@ -1,9 +1,9 @@
-// Module ID: 4517
-// Function ID: 39670
+// Module ID: 4521
+// Function ID: 39718
 // Name: AccessibilityView
 // Dependencies: []
 
-// Module 4517 (AccessibilityView)
+// Module 4521 (AccessibilityView)
 const View = arg1(dependencyMap[1]).View;
 const jsx = arg1(dependencyMap[2]).jsx;
 const forwardRefResult = importAll(dependencyMap[0]).forwardRef((accessibilityViewIsModal, ref) => {
@@ -14,7 +14,7 @@ const forwardRefResult = importAll(dependencyMap[0]).forwardRef((accessibilityVi
     flag = false;
   }
   ({ nativeID, onAccessibilityEscape } = accessibilityViewIsModal);
-  let obj = { activeOpacity: "r", underlayColor: "onRequireModeratorMFAClick", innerRef: "Array", position: "isSpamMessageRequest" };
+  let obj = { -1346350803: null, 1383004514: 4, -1658610399: 4, -1789826719: "rgba(0, 0, 0, 0.75)" };
   Object.setPrototypeOf(null);
   const merged = Object.assign(accessibilityViewIsModal, obj);
   if (flag) {

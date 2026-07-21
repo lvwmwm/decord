@@ -1,15 +1,17 @@
 // Module ID: 1677
 // Function ID: 18574
 // Name: JSPropsUpdaterPaper
-// Dependencies: []
+// Dependencies: [1700, 1701, 1702, 1703, 1704]
 
 // Module 1677 (JSPropsUpdaterPaper)
+import closure_3 from "_callSuper";
+import closure_4 from "_callSuper";
+import _callSuper from "_callSuper";
+import _callSuper from "_callSuper";
+
 let Platform;
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-({ NativeEventEmitter: closure_5, Platform } = arg1(dependencyMap[2]));
-const tmp2 = arg1(dependencyMap[2]);
-const obj = arg1(dependencyMap[3]);
+({ NativeEventEmitter: closure_5, Platform } = _callSuper);
+_callSuper = _callSuper.shouldBeUseWeb();
 let tmp4 = () => {
   class JSPropsUpdaterPaper {
     constructor() {
@@ -54,7 +56,6 @@ let tmp4 = () => {
   items[1] = obj;
   return callback(JSPropsUpdaterPaper, items);
 }();
-const shouldBeUseWebResult = arg1(dependencyMap[3]).shouldBeUseWeb();
 tmp4._tagToComponentMapping = new Map();
 let closure_6 = { code: "function pnpm_JSPropsUpdaterTs1(){const{runOnJS,updater}=this.__closure;global.updateJSProps=function(viewTag,props){runOnJS(updater)(viewTag,props);};}" };
 const tmp6 = () => {
@@ -116,7 +117,7 @@ const tmp6 = () => {
 const map = new Map();
 tmp6._tagToComponentMapping = new Map();
 tmp6.isInitialized = false;
-if (shouldBeUseWebResult) {
+if (_callSuper) {
   tmp4 = () => {
     class JSPropsUpdaterWeb {
       constructor() {

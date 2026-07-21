@@ -1,12 +1,10 @@
 // Module ID: 304
 // Function ID: 4602
 // Name: elementsThatOverlapOffsets
-// Dependencies: [6, 7]
+// Dependencies: []
 // Exports: computeWindowedRenderLimits, keyExtractor
 
 // Module 304 (elementsThatOverlapOffsets)
-import _classCallCheck from "_classCallCheck";
-
 function elementsThatOverlapOffsets(items, getItemCount, getCellMetricsApprox, arg3) {
   let num = 1;
   if (arguments.length > 3) {
@@ -56,6 +54,7 @@ function newRangeCount(last, last2) {
   const sum1 = 1 + Math.min(last2.last, last.last);
   return sum - Math.max(0, sum1 - Math.max(last2.first, last.first));
 }
+let closure_2 = importDefault(dependencyMap[0]);
 
 export { elementsThatOverlapOffsets };
 export { newRangeCount };
@@ -67,7 +66,7 @@ export const computeWindowedRenderLimits = function computeWindowedRenderLimits(
   let zoomScale;
   const itemCount = getItemCount.getItemCount(getItemCount.data);
   if (0 === itemCount) {
-    return {};
+    return { trackSelectGIF: false, isEncryptionAvailable: false };
   } else {
     ({ velocity, visibleLength, zoomScale } = _scrollMetrics);
     let num = 1;

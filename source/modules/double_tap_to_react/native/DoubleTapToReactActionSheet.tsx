@@ -1,10 +1,10 @@
-// Module ID: 11408
-// Function ID: 88727
+// Module ID: 11415
+// Function ID: 88751
 // Name: EmojiConfetti
 // Dependencies: []
 // Exports: default
 
-// Module 11408 (EmojiConfetti)
+// Module 11415 (EmojiConfetti)
 function EmojiConfetti(children) {
   let bottom;
   let left;
@@ -110,13 +110,14 @@ function EmojiConfetti(children) {
 function EmojiBurstAnimation(emojiComponent) {
   emojiComponent = emojiComponent.emojiComponent;
   let obj = { style: callback6().burstContainer };
-  const items = [callback4(EmojiConfetti, { emojiComponent }), , , ];
-  obj = { "Bool(true)": null, "Bool(true)": null, "Bool(true)": null, emojiComponent };
+  obj = { 1286424402: true, -704095584: true, -705178107: true, 928372124: true, emojiComponent };
+  const items = [callback4(EmojiConfetti, obj), , , ];
+  obj = { themeColorContainer: null, abuf: null, ORDER_UPDATE: null, emojiComponent };
   items[1] = callback4(EmojiConfetti, obj);
-  obj = { isLoadedForPremiumSKUs: null, messageCountText: null, $americas: null, emojiComponent };
-  items[2] = callback4(EmojiConfetti, obj);
-  const obj1 = { window: null, Boolean: null, call: null, emojiComponent };
-  items[3] = callback4(EmojiConfetti, obj1);
+  const obj1 = { yqX4Dr: null, _handleContentOnLayout: null, fullScreenSwipeEnabled: null, emojiComponent };
+  items[2] = callback4(EmojiConfetti, obj1);
+  const obj2 = { "Bool(true)": null, "Bool(true)": null, "Bool(true)": null, emojiComponent };
+  items[3] = callback4(EmojiConfetti, obj2);
   obj.children = items;
   return callback5(View, obj);
 }
@@ -130,7 +131,7 @@ const AnalyticEvents = arg1(dependencyMap[6]).AnalyticEvents;
 const EMOJI_URL_BASE_SIZE = arg1(dependencyMap[7]).EMOJI_URL_BASE_SIZE;
 ({ jsx: closure_11, jsxs: closure_12 } = arg1(dependencyMap[8]));
 let obj = arg1(dependencyMap[9]);
-obj = { emoji: {}, selectedCustomEmoji: {} };
+obj = { emoji: {}, selectedCustomEmoji: { bhk: null, bic: null } };
 obj = {};
 let obj3 = arg1(dependencyMap[10]);
 let num = 36;
@@ -204,14 +205,14 @@ export default function DoubleTapToReactActionSheet(emoji) {
       obj = {};
       obj = {};
       obj3 = useState(closure_2[12]);
-      obj.scale = obj3.interpolate(useSharedValue.get(), [null, null], [1077146943, 113]);
+      obj.scale = obj3.interpolate(useSharedValue.get(), ["Text", "lc"], [1077146943, 113]);
       items = [, ];
       items[0] = obj;
       obj1 = {};
       obj5 = useState(closure_2[12]);
       items1 = [0.229];
       items1[1] = -20;
-      obj1.translateY = obj5.interpolate(useSharedValue.get(), [null, null], items1);
+      obj1.translateY = obj5.interpolate(useSharedValue.get(), ["Text", "lc"], items1);
       items[1] = obj1;
       obj.transform = items;
       return obj;
@@ -396,7 +397,7 @@ export default function DoubleTapToReactActionSheet(emoji) {
   items9[1] = memo(callback(dependencyMap[27]).Text, obj6);
   obj3.children = items9;
   const items10 = [callback1(closure_6, obj3), , , , , ];
-  const obj7 = { INTEGRATION_CREATE: "<string:1900005261>", ConstraintReasonCode: "Array", style: tmp.emojiName, children: ":" + first.name + ":" };
+  const obj7 = { style: tmp.emojiName, children: ":" + first.name + ":" };
   items10[1] = memo(callback(dependencyMap[27]).Text, obj7);
   const obj8 = { style: tmp.header };
   const obj9 = { style: tmp.alignCenter };
@@ -410,7 +411,7 @@ export default function DoubleTapToReactActionSheet(emoji) {
   obj10.children = intl2.string(callback(dependencyMap[28]).t.yIax8g);
   items10[3] = memo(callback(dependencyMap[27]).Text, obj10);
   items10[4] = memo(importDefault(dependencyMap[30]), { style: tmp.emojiSelectRow, selectedEmoji: first, onPressEmoji: callback });
-  const obj12 = { 9223372036854775807: "png", -9223372036854775808: 12, -9223372036854775808: 16, 0: "flex-start" };
+  const obj12 = { 9223372036854775807: "WireType", 9223372036854775807: "Array", 0: "isArray", 0: "accessibilityRole" };
   const obj11 = { style: tmp.emojiSelectRow, selectedEmoji: first, onPressEmoji: callback };
   const tmp16 = memo;
   const tmp17 = importDefault(dependencyMap[21]);

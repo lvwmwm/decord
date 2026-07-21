@@ -1,14 +1,13 @@
-// Module ID: 13594
-// Function ID: 103031
+// Module ID: 13601
+// Function ID: 103054
 // Name: handleSensitiveMediaFilterPress
-// Dependencies: [0, 0, 0, 0, 0]
+// Dependencies: []
 // Exports: handleSensitiveMediaFilterPress, shouldAgeVerifyForSearchMedia
 
-// Module 13594 (handleSensitiveMediaFilterPress)
-import result from "result";
-import { EXPLICIT_MEDIA_SETTINGS_ACTION_SHEET_KEY as closure_4 } from "result";
-import { SearchMediaTypes } from "result";
-
+// Module 13601 (handleSensitiveMediaFilterPress)
+let closure_3 = importDefault(dependencyMap[0]);
+let closure_4 = arg1(dependencyMap[1]).EXPLICIT_MEDIA_SETTINGS_ACTION_SHEET_KEY;
+const SearchMediaTypes = arg1(dependencyMap[2]).SearchMediaTypes;
 const result = arg1(dependencyMap[13]).fileFinishedImporting("modules/explicit_media_redaction/native/ExplicitMediaRedactionNativeUtils.tsx");
 
 export const handleSensitiveMediaFilterPress = function handleSensitiveMediaFilterPress(arg0) {

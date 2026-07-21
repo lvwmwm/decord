@@ -1,10 +1,10 @@
-// Module ID: 6611
-// Function ID: 50790
+// Module ID: 6617
+// Function ID: 50839
 // Name: WindIllocon
-// Dependencies: [285802496, 131072, 528416768, 452984832]
+// Dependencies: [286064640, 131072, 528416768, 452984832]
 // Exports: WindIllocon
 
-// Module 6611 (WindIllocon)
+// Module 6617 (WindIllocon)
 const jsx = require(dependencyMap[0]).jsx;
 const _module = require(dependencyMap[3]);
 const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/WindIllocon.native.tsx");

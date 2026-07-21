@@ -1,9 +1,9 @@
-// Module ID: 11878
-// Function ID: 91966
+// Module ID: 11885
+// Function ID: 91989
 // Name: getClampedMaxLines
 // Dependencies: []
 
-// Module 11878 (getClampedMaxLines)
+// Module 11885 (getClampedMaxLines)
 function getClampedMaxLines() {
   return Math.ceil(2 * fontScale.getFontScale());
 }
@@ -155,7 +155,7 @@ let closure_11 = arg1(dependencyMap[6]).createStyles((arg0) => {
   obj.borderColor = arg0 ? colors2.BORDER_MUTED : colors2.BORDER_SUBTLE;
   obj.borderWidth = 1;
   obj.bubble = obj;
-  obj = { -1044603296: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000617800722648143, 2053584491: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004780547835147185, -1044603296: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010472572924754737, borderRadius: importDefault(dependencyMap[7]).radii.lg };
+  obj = { <string:3164495994>: "rgba(255, 255, 255, 0.08)", <string:1731619777>: null, <string:3164495994>: null, borderRadius: importDefault(dependencyMap[7]).radii.lg };
   const merged = Object.assign(importDefault(dependencyMap[7]).shadows.SHADOW_LOW);
   obj["top"] = -14;
   obj.statusBubble = obj;
@@ -171,7 +171,7 @@ let closure_11 = arg1(dependencyMap[6]).createStyles((arg0) => {
   obj.statusBubbleLeftAligned = { alignItems: "flex-start" };
   return obj;
 });
-let closure_12 = { position: "<string:24182785>", top: "<string:1090519040>", right: "voice-channel-user-limit-text", accessibilityRole: "<string:1345143057>", Promise: "<string:410124290>" };
+let closure_12 = {};
 let closure_13 = { [arg1(dependencyMap[3]).UserProfileThemeTypes.PREVIEW]: {} };
 const obj2 = arg1(dependencyMap[6]);
 let closure_14 = arg1(dependencyMap[6]).createStyles(() => ({ container: { alignItems: "center" } }));

@@ -1,19 +1,19 @@
-// Module ID: 9144
-// Function ID: 71699
+// Module ID: 9148
+// Function ID: 71711
 // Name: MemberVerificationAlert
 // Dependencies: []
 // Exports: default
 
-// Module 9144 (MemberVerificationAlert)
+// Module 9148 (MemberVerificationAlert)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 ({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[2]));
 let obj = arg1(dependencyMap[3]);
 obj = {};
-obj = { <string:1114605104>: "%decodeURIComponent%", STEP_INTENT_LANDING: "MUR", STEP_FRIEND_ADD: 1783697764, <string:240248673>: 285282745, <string:1403937067>: 25752641, <string:3831494469>: 494289152, <string:1550038461>: -144637951, backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_MOD_MUTED, borderRadius: importDefault(dependencyMap[4]).radii.round };
+obj = { p: "Array", guild: "isArray", colors: "accessibilityRole", x: "replace", ti: "marginBottom", jsxs: "key", y: "accessibilityRole", backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_MOD_MUTED, borderRadius: importDefault(dependencyMap[4]).radii.round };
 obj.headerImage = obj;
-obj.header = {};
-obj.subtitle = { "Bool(true)": "key", "Bool(true)": "Text", "Bool(true)": "error" };
+obj.header = { "Null": 800, "Null": 16, "Null": 20 };
+obj.subtitle = {};
 obj.buttons = {};
 let closure_6 = obj.createStyles(obj);
 const tmp3 = arg1(dependencyMap[2]);
@@ -25,7 +25,7 @@ export default function MemberVerificationAlert(arg0) {
   let icon;
   let subtitle;
   ({ icon, subtitle } = arg0);
-  let obj = { textStyle: "r", label: "onRequireModeratorMFAClick", textContentType: "Array", keyboardType: "isSpamMessageRequest" };
+  let obj = { "Bool(false)": null, "Bool(false)": 4, "Bool(false)": 4, "Bool(false)": "rgba(0, 0, 0, 0.75)" };
   ({ header, buttons } = arg0);
   Object.setPrototypeOf(null);
   const merged = Object.assign(arg0, obj);
@@ -41,7 +41,7 @@ export default function MemberVerificationAlert(arg0) {
     tmp7 = callback(View, obj);
   }
   const items = [tmp7, , , ];
-  const obj2 = { Promise: "text-sm/normal", marginTop: "text-link", flags: true, style: tmp3.header, children: header };
+  const obj2 = { "Null": "RTC_CONNECTION_LOSS_RATE", "Null": "handleJoinThreadVoice", "Null": "toString", style: tmp3.header, children: header };
   items[1] = callback(arg1(dependencyMap[6]).Heading, obj2);
   let tmp10 = null;
   if (null != subtitle) {

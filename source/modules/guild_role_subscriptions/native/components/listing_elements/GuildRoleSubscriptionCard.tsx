@@ -1,23 +1,21 @@
-// Module ID: 13995
-// Function ID: 106485
+// Module ID: 14002
+// Function ID: 106508
 // Name: SectionTitle
-// Dependencies: [0, 0, 0, 0, 0, 4294967295, 0, 0, 0]
+// Dependencies: [0, 0, 0, 0, 0, 4294967295, 0, 0, 0, 2162688, 918159360, 37093376, 131072, 108789760, 117440512]
 // Exports: Content
 
-// Module 13995 (SectionTitle)
-import closure_4 from "result";
-import "result";
-import { View } from "result";
-import result from "result";
-import result from "result";
+// Module 14002 (SectionTitle)
+import closure_4 from "__exportStarResult1";
+import "__exportStarResult1";
+import { View } from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
 
 class SectionTitle {
   constructor(arg0) {
     tmp = closure_9();
-    obj = { INTEGRATION_CREATE: true, ConstraintReasonCode: true };
-    obj.style = tmp.sectionTitle;
-    obj.children = global.children;
-    return jsx(require("result").Text, obj);
+    obj = { style: tmp.sectionTitle, children: global.children };
+    return jsx(require("__exportStarResult1").Text, obj);
   }
 }
 class Separator {
@@ -26,12 +24,12 @@ class Separator {
     return jsx(View, obj);
   }
 }
-({ jsx: closure_6, Fragment: closure_7, jsxs: closure_8 } = result);
-result = { sectionTitle: { textTransform: "uppercase" } };
-result = { label: "Array", defineProperty: "isArray", padding: "constructor", Path: "Boolean", backgroundColor: importDefault(dependencyMap[5]).colors.BORDER_SUBTLE };
-result.separator = result;
-result = result.createStyles(result);
-result = arg1(dependencyMap[14]).fileFinishedImporting("modules/guild_role_subscriptions/native/components/listing_elements/GuildRoleSubscriptionCard.tsx");
+({ jsx: closure_6, Fragment: closure_7, jsxs: closure_8 } = __exportStarResult1);
+__exportStarResult1 = { sectionTitle: { textTransform: "uppercase" } };
+__exportStarResult1 = { 0: "Array", 9223372036854775807: "isArray", 9223372036854775807: "constructor", -9223372036854775808: "Boolean", backgroundColor: importDefault(dependencyMap[5]).colors.BORDER_SUBTLE };
+__exportStarResult1.separator = __exportStarResult1;
+__exportStarResult1 = __exportStarResult1.createStyles(__exportStarResult1);
+const result = arg1(dependencyMap[14]).fileFinishedImporting("modules/guild_role_subscriptions/native/components/listing_elements/GuildRoleSubscriptionCard.tsx");
 
 export { SectionTitle };
 export { Separator };

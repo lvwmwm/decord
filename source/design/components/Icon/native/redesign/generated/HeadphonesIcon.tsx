@@ -1,10 +1,10 @@
-// Module ID: 11545
-// Function ID: 89876
+// Module ID: 11552
+// Function ID: 89899
 // Name: HeadphonesIcon
 // Dependencies: []
 // Exports: HeadphonesIcon
 
-// Module 11545 (HeadphonesIcon)
+// Module 11552 (HeadphonesIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/HeadphonesIcon.tsx");

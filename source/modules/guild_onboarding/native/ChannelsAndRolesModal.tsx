@@ -1,10 +1,10 @@
-// Module ID: 9955
-// Function ID: 76918
+// Module ID: 9961
+// Function ID: 76936
 // Name: ChannelsAndRolesScreen
 // Dependencies: []
 // Exports: default
 
-// Module 9955 (ChannelsAndRolesScreen)
+// Module 9961 (ChannelsAndRolesScreen)
 function ChannelsAndRolesScreen(guildId) {
   guildId = guildId.guildId;
   const arg1 = guildId;

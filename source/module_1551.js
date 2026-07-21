@@ -4,6 +4,6 @@
 
 // Module 1551
 const _module = require(dependencyMap[0]);
-const obj = { url: "KEYBOARD", content: "HEADER_HANDLE_HEIGHT", messageId: "HEADER_HANDLE_HEIGHT", channel_id: "HEADER_HANDLE_HEIGHT", no: "LYD", "Null": "getUserVoiceChannelId", "Null": "%", "Null": "getAGC2ExperimentConfig", scales: [] };
+const obj = { isConnected: 0.3, isInternetReachable: "FadeOutRight", details: null, reachabilityUrl: 0.3, reachabilityMethod: "FadeOutLeft", reachabilityHeaders: null, reachabilityTest: 0.3, reachabilityShortTimeout: "FadeOutUp", scales: [] };
 
 export default _module.registerAsset(obj);

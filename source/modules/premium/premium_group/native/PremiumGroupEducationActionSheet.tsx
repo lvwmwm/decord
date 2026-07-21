@@ -1,10 +1,10 @@
-// Module ID: 12320
-// Function ID: 94372
+// Module ID: 12327
+// Function ID: 94395
 // Name: PremiumGroupEducationActionSheet
 // Dependencies: []
 // Exports: default
 
-// Module 12320 (PremiumGroupEducationActionSheet)
+// Module 12327 (PremiumGroupEducationActionSheet)
 const View = require(dependencyMap[0]).View;
 const HELP_CENTER_LINK = require(dependencyMap[1]).HELP_CENTER_LINK;
 const _module = require(dependencyMap[2]);
@@ -14,8 +14,8 @@ let obj = { container: {} };
 obj = { backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_MOD_SUBTLE, borderRadius: importDefault(dependencyMap[4]).radii.lg };
 obj.aboutContainer = obj;
 obj.warningIcon = { margin: 16 };
-obj.aboutTextContainer = {};
-obj.helpdeskText = { person_pouting: 24, cv: "recent_games_enabled" };
+obj.aboutTextContainer = { 0: 300.5, 9223372036854775807: 175, 0: null };
+obj.helpdeskText = { collapsable: 24, preventClipping: "recent_games_enabled" };
 let closure_7 = _module1.createStyles(obj);
 const _module2 = require(dependencyMap[11]);
 const result = _module2.fileFinishedImporting("modules/premium/premium_group/native/PremiumGroupEducationActionSheet.tsx");

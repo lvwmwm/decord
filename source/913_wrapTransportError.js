@@ -1,13 +1,12 @@
 // Module ID: 913
 // Function ID: 10000
 // Name: wrapTransportError
-// Dependencies: [65, 798, 804, 841, 861, 29, 825, 928, 856, 816, 796, 932]
+// Dependencies: []
 // Exports: wrapTransportError, wrapTransportOnClose, wrapTransportOnMessage, wrapTransportSend
 
 // Module 913 (wrapTransportError)
-import _toConsumableArray from "_toConsumableArray";
-import module_798 from "module_798";
-
+let closure_2 = require(dependencyMap[0]);
+let closure_3 = require(dependencyMap[1]);
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 
 export const wrapTransportError = function wrapTransportError(onerror) {

@@ -1,10 +1,10 @@
-// Module ID: 11569
-// Function ID: 89968
+// Module ID: 11576
+// Function ID: 89991
 // Name: getGuildPowerupsBoostInfoText
 // Dependencies: []
 // Exports: getGuildPowerupsBoostInfoText
 
-// Module 11569 (getGuildPowerupsBoostInfoText)
+// Module 11576 (getGuildPowerupsBoostInfoText)
 const BoostInfoType = require(dependencyMap[0]).BoostInfoType;
 const _module = require(dependencyMap[3]);
 const result = _module.fileFinishedImporting("modules/premium/powerups/utils/getGuildPowerupsBoostInfoText.tsx");

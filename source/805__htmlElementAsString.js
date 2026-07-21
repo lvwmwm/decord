@@ -41,7 +41,7 @@ function _htmlElementAsString(dataset, arr) {
             items.push("[" + arg0[0] + "=\"" + arg0[1] + "\"]");
           });
         }
-        const iter = [][Symbol.iterator]();
+        const iter = ["a", "isArray", "ks", "Icon", "r"][Symbol.iterator]();
         const nextResult = iter.next();
         while (iter !== undefined) {
           let tmp33 = dataset;

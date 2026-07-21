@@ -4,7 +4,7 @@
 // Dependencies: []
 
 // Module 323 (convertObjectFitToResizeMode)
-let closure_0 = { "Bool(false)": "progressbar", "Bool(false)": "angry", "Bool(false)": "angry", "Bool(false)": "angry", "Bool(false)": "angry" };
+let closure_0 = { "Null": "status", "Null": "values", "Null": "context", "Null": "disabled", "Null": "Text" };
 arg5.convertObjectFitToResizeMode = function convertObjectFitToResizeMode(objectFit) {
   let tmp;
   if (null != objectFit) {

@@ -109,8 +109,8 @@ function debugLogEvent(StringResult, result, logEventProperties) {
     report("Analytics", StringResult);
   }
 }
-let closure_4 = ["useAreUsersInSocialLayerStorefrontMutualGuildsApplicationIds"];
-let closure_5 = [25];
+let closure_4 = [];
+let closure_5 = ["LAUNCH_PAD_PULL_TAB_SCALE_FACTOR"];
 let closure_6 = importDefault(dependencyMap[0]);
 const importAllResult = importAll(dependencyMap[1]);
 ({ setDebugTrackedData: closure_7, getLocation: closure_8 } = arg1(dependencyMap[2]));
@@ -242,35 +242,6 @@ obj3 = {
     return items;
   }
 };
-const obj8 = {
-  -9223372036854775808: "done",
-  0: "construct",
-  0: "type",
-  throttleKeys(application_id) {
-    const items = [application_id.application_id];
-    return items;
-  }
-};
-const obj24 = {
-  "Null": "created_at",
-  "Null": "message",
-  "Null": "PRIMARY_100",
-  throttleKeys(arg0) {
-    const items = [, ];
-    ({ application_id: arr[0], command: arr[1] } = arg0);
-    return items;
-  }
-};
-const obj25 = {
-  "Null": "created_at",
-  "Null": "message",
-  "Null": "PRIMARY_100",
-  throttleKeys(arg0) {
-    const items = [, ];
-    ({ application_id: arr[0], event: arr[1] } = arg0);
-    return items;
-  }
-};
 function getAccessibilityFeatures() {
   return AccessibilityFeatureFlags.NONE;
 }
@@ -371,6 +342,20 @@ const obj23 = {
   throttlePeriod: 86400000,
   throttleKeys() {
     return [];
+  }
+};
+const obj24 = {
+  throttleKeys(arg0) {
+    const items = [, ];
+    ({ application_id: arr[0], command: arr[1] } = arg0);
+    return items;
+  }
+};
+const obj25 = {
+  throttleKeys(arg0) {
+    const items = [, ];
+    ({ application_id: arr[0], event: arr[1] } = arg0);
+    return items;
   }
 };
 const obj26 = {
@@ -624,6 +609,12 @@ const obj7 = {
   throttlePeriod: 900000,
   throttleKeys(server) {
     const items = [server.server];
+    return items;
+  }
+};
+const obj8 = {
+  throttleKeys(application_id) {
+    const items = [application_id.application_id];
     return items;
   }
 };

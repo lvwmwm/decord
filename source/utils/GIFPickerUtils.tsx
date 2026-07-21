@@ -1,10 +1,10 @@
-// Module ID: 9567
-// Function ID: 74559
+// Module ID: 9572
+// Function ID: 74576
 // Name: isKlipyProvider
 // Dependencies: []
 // Exports: calculateAnalyticsMetadata, getGIFThumbnailForFavorite
 
-// Module 9567 (isKlipyProvider)
+// Module 9572 (isKlipyProvider)
 function isKlipyProvider(providerName) {
   return "Klipy" === providerName;
 }

@@ -1,10 +1,10 @@
-// Module ID: 11504
-// Function ID: 89657
+// Module ID: 11511
+// Function ID: 89681
 // Name: storeListingToGuildPowerup
 // Dependencies: []
 // Exports: default
 
-// Module 11504 (storeListingToGuildPowerup)
+// Module 11511 (storeListingToGuildPowerup)
 const _module = require(dependencyMap[0]);
 ({ DEFAULT_SOUND_SLOTS: closure_0, DEFAULT_STICKER_SLOTS: closure_1 } = _module);
 const GuildPowerupType = require(dependencyMap[1]).GuildPowerupType;

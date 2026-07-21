@@ -1,10 +1,10 @@
-// Module ID: 8635
-// Function ID: 68374
+// Module ID: 8639
+// Function ID: 68386
 // Name: GameProfileLinkAccount
 // Dependencies: []
 // Exports: default
 
-// Module 8635 (GameProfileLinkAccount)
+// Module 8639 (GameProfileLinkAccount)
 let closure_3 = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 let closure_5 = importDefault(dependencyMap[2]);
@@ -19,13 +19,13 @@ const obj1 = { paddingHorizontal: importDefault(dependencyMap[5]).space.PX_8 };
 obj.card = { borderRadius: importDefault(dependencyMap[5]).radii.lg, borderWidth: 1, borderColor: importDefault(dependencyMap[5]).colors.BORDER_SUBTLE, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_LOW, padding: importDefault(dependencyMap[5]).space.PX_16, gap: importDefault(dependencyMap[5]).space.PX_16 };
 const obj2 = { borderRadius: importDefault(dependencyMap[5]).radii.lg, borderWidth: 1, borderColor: importDefault(dependencyMap[5]).colors.BORDER_SUBTLE, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_LOW, padding: importDefault(dependencyMap[5]).space.PX_16, gap: importDefault(dependencyMap[5]).space.PX_16 };
 obj.cardImagesContainer = { gap: importDefault(dependencyMap[5]).space.PX_8 };
-const obj4 = { <string:1353458075>: null, <string:1722561866>: null, gap: importDefault(dependencyMap[5]).space.PX_4 };
+const obj4 = { 1449229240: "row", 371666258: "center", gap: importDefault(dependencyMap[5]).space.PX_4 };
 obj.ellipseGroup = obj4;
 const obj3 = { gap: importDefault(dependencyMap[5]).space.PX_8 };
 obj.ellipse = { backgroundColor: importDefault(dependencyMap[5]).colors.MOBILE_TEXT_HEADING_PRIMARY, borderRadius: importDefault(dependencyMap[5]).radii.round };
+const obj6 = { bhk: null, bic: null, borderRadius: importDefault(dependencyMap[5]).radii.sm };
+obj.cardImageApplication = obj6;
 const obj5 = { backgroundColor: importDefault(dependencyMap[5]).colors.MOBILE_TEXT_HEADING_PRIMARY, borderRadius: importDefault(dependencyMap[5]).radii.round };
-obj.cardImageApplication = { borderRadius: importDefault(dependencyMap[5]).radii.sm };
-const obj6 = { borderRadius: importDefault(dependencyMap[5]).radii.sm };
 obj.cardContent = { gap: importDefault(dependencyMap[5]).space.PX_4, paddingHorizontal: importDefault(dependencyMap[5]).space.PX_24 };
 obj.cardText = { textAlign: "center" };
 let closure_8 = obj.createStyles(obj);
@@ -57,7 +57,7 @@ export default function GameProfileLinkAccount(trackAction) {
           if (null != stateFromStores) {
             const iconSource = connectionApp.getIconSource(48);
             obj = { style: tmp.container };
-            obj = { INTEGRATION_CREATE: "polite", ConstraintReasonCode: "column", style: tmp.headerText };
+            obj = { style: tmp.headerText };
             const intl4 = arg1(dependencyMap[10]).intl;
             obj.children = intl4.string(arg1(dependencyMap[10]).t.VDAhr+);
             const items2 = [callback(arg1(dependencyMap[9]).Text, obj), ];
@@ -83,7 +83,7 @@ export default function GameProfileLinkAccount(trackAction) {
             }
             const items5 = [tmp12, , ];
             const obj9 = { style: tmp.cardContent };
-            const obj10 = { INTEGRATION_CREATE: null, ConstraintReasonCode: null, style: tmp.cardText };
+            const obj10 = { style: tmp.cardText };
             const intl = arg1(dependencyMap[10]).intl;
             const obj11 = { gameName: connectionApp.name };
             obj10.children = intl.formatToPlainString(arg1(dependencyMap[10]).t.hUbQT2, obj11);
@@ -94,7 +94,7 @@ export default function GameProfileLinkAccount(trackAction) {
             items6[1] = callback(arg1(dependencyMap[9]).Text, obj12);
             obj9.children = items6;
             items5[1] = callback2(View, obj9);
-            const obj13 = { <string:1522289750>: "r", <string:570601313>: "isArray" };
+            const obj13 = { 9223372036854775807: null, -9223372036854775808: null };
             const intl3 = arg1(dependencyMap[10]).intl;
             obj13.text = intl3.string(arg1(dependencyMap[10]).t.jynBQ5);
             obj13.onPress = tmp4;

@@ -1,10 +1,10 @@
-// Module ID: 9175
-// Function ID: 71875
+// Module ID: 9179
+// Function ID: 71887
 // Name: ChangeEmailWarning
 // Dependencies: []
 // Exports: default
 
-// Module 9175 (ChangeEmailWarning)
+// Module 9179 (ChangeEmailWarning)
 let closure_3 = importAll(dependencyMap[0]);
 ({ View: closure_4, ScrollView: closure_5 } = arg1(dependencyMap[1]));
 let closure_6 = importDefault(dependencyMap[2]);
@@ -14,7 +14,7 @@ const tmp2 = arg1(dependencyMap[1]);
 ({ jsx: closure_9, jsxs: closure_10 } = arg1(dependencyMap[5]));
 let obj = arg1(dependencyMap[6]);
 obj = {};
-obj = { padding: importDefault(dependencyMap[7]).space.PX_16 };
+obj = { <string:1683772908>: true, <string:4089483545>: true, <string:3817842359>: true, <string:2697383014>: true, padding: importDefault(dependencyMap[7]).space.PX_16 };
 obj.container = obj;
 const tmp3 = arg1(dependencyMap[5]);
 obj.title = { marginTop: importDefault(dependencyMap[7]).space.PX_16 };
@@ -39,14 +39,14 @@ export default function ChangeEmailWarning(changeEmailReason) {
   const stateFromStores = obj1.useStateFromStores(items, () => currentUser.getCurrentUser());
   let tmp5 = null;
   if (null != stateFromStores) {
-    obj = { 9223372036854775807: "LIGHT", -9223372036854775808: "<string:3758096384>" };
+    obj = { test: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001333156388934068, registerAsset: 56724000.96192874 };
     obj = { style: tmp.container };
     const items2 = [callback(arg1(dependencyMap[12]).TrafficConeSpotIllustration, {}), , , ];
-    obj1 = { 0: 24, 9223372036854775807: 24, 0: null, -9223372036854775808: "aa9c26c29990ba7a6584e51ab5c56efa", style: tmp.title };
+    obj1 = { 1501064855: 24, -1267889981: 24, -1145697943: null, -1266241916: "aa9c26c29990ba7a6584e51ab5c56efa", style: tmp.title };
     const intl = arg1(dependencyMap[14]).intl;
     obj1.children = intl.string(arg1(dependencyMap[14]).t.hhR7gX);
     items2[1] = callback(arg1(dependencyMap[13]).Text, obj1);
-    const obj2 = { 0: null, 9223372036854775807: null, 0: null, -9223372036854775808: null, style: tmp.body };
+    const obj2 = { style: tmp.body };
     const intl2 = arg1(dependencyMap[14]).intl;
     const obj3 = { hcArticle: closure_7 };
     const items3 = [intl2.format(arg1(dependencyMap[14]).t.rqWXUf, obj3), "\n\n", ];
@@ -55,12 +55,12 @@ export default function ChangeEmailWarning(changeEmailReason) {
     obj2.children = items3;
     items2[2] = callback2(arg1(dependencyMap[15]).TextWithIOSLinkWorkaround, obj2);
     const obj4 = { style: tmp.buttonContainer };
-    const obj5 = { margin: 0.6, height: "400", justifyContent: null, alignItems: 0, overflow: 0 };
+    const obj5 = {};
     const intl4 = arg1(dependencyMap[14]).intl;
     obj5.text = intl4.string(arg1(dependencyMap[14]).t.rwTBFs);
     obj5.onPress = tmp4;
     const items4 = [callback(arg1(dependencyMap[16]).Button, obj5), ];
-    const obj6 = { margin: "Array", height: "isArray", justifyContent: "backgroundColor", alignItems: "formatToPlainString", overflow: "Array" };
+    const obj6 = { size: true, variant: true, type: true, itemType: true, key: true };
     const intl5 = arg1(dependencyMap[14]).intl;
     obj6.text = intl5.string(arg1(dependencyMap[14]).t.ETE/oC);
     obj6.onPress = function onPress() {

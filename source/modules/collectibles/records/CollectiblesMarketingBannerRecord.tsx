@@ -1,9 +1,9 @@
-// Module ID: 6789
-// Function ID: 53591
+// Module ID: 6795
+// Function ID: 53640
 // Name: CollectiblesMarketingBannerRecord
 // Dependencies: []
 
-// Module 6789 (CollectiblesMarketingBannerRecord)
+// Module 6795 (CollectiblesMarketingBannerRecord)
 let closure_2 = importDefault(dependencyMap[0]);
 let closure_3 = importDefault(dependencyMap[1]);
 const tmp2 = () => {

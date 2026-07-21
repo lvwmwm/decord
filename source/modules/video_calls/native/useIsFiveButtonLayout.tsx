@@ -1,10 +1,10 @@
-// Module ID: 10535
-// Function ID: 82330
+// Module ID: 10541
+// Function ID: 82353
 // Name: useIsFiveButtonLayout
 // Dependencies: []
 // Exports: useIsFiveButtonLayout
 
-// Module 10535 (useIsFiveButtonLayout)
+// Module 10541 (useIsFiveButtonLayout)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/video_calls/native/useIsFiveButtonLayout.tsx");

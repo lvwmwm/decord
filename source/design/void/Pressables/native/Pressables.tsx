@@ -1,9 +1,9 @@
-// Module ID: 4655
-// Function ID: 40278
+// Module ID: 4657
+// Function ID: 40319
 // Name: PressableBase
 // Dependencies: []
 
-// Module 4655 (PressableBase)
+// Module 4657 (PressableBase)
 function PressableBase(androidRippleConfig) {
   let children;
   let innerRef;
@@ -16,7 +16,7 @@ function PressableBase(androidRippleConfig) {
   const activeOpacity = androidRippleConfig.activeOpacity;
   const underlayColor = androidRippleConfig.underlayColor;
   const Pressable = underlayColor;
-  let obj = { "Bool(false)": 1091658877, "Bool(false)": 151597, "Bool(false)": 6258, "Bool(false)": 6144, "Bool(false)": -180289280, "Bool(false)": 1375732285, "Bool(false)": 1685947892 };
+  let obj = { <string:1446732548>: null, <string:2930266538>: null, <string:877744993>: null, <string:2864145157>: null, <string:3275058774>: null, <string:475119907>: null, <string:2283065660>: null };
   ({ children, innerRef } = androidRippleConfig);
   Object.setPrototypeOf(null);
   const merged = Object.assign(androidRippleConfig, obj);

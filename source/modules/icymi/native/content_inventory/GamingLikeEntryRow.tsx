@@ -1,10 +1,10 @@
-// Module ID: 15095
-// Function ID: 113887
+// Module ID: 15102
+// Function ID: 113911
 // Name: items
-// Dependencies: [32178176, 305463296, 437780480, 519569408, 102039552, 31260672, 351272960, 597032960, 350814208, 646840320, 131072, 41091072, 402653211, 33554458, 2030043136, 6, 7, 15, 17, 18, 31, 27, 33, 15099, 334832, 2031616, 88342528, 292290560, 121176064, 121372672, 270073856, 2162688, 37093376]
+// Dependencies: [32178176, 305594368, 438173696, 519831552, 102039552, 31260672, 351404032, 597295104, 350945280, 647168000, 131072, 108199936, 503316507, 33554458, 2030043136, 6, 7, 15, 17, 18, 31, 27, 33, 15106, 334832, 2031616, 88342528, 292552704, 121176064, 121372672, 270073856, 2162688, 37093376]
 // Exports: default
 
-// Module 15095 (items)
+// Module 15102 (items)
 let closure_4 = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 let closure_6 = importDefault(dependencyMap[2]);
@@ -60,16 +60,19 @@ const obj2 = {
     return true === arg1(dependencyMap[5]).isEntryMarathon(entry);
   }
 };
-let closure_11 = arg1(dependencyMap[7]).createICYMIStyles((gap) => {
+let closure_11 = arg1(dependencyMap[7]).createICYMIStyles((arg0) => {
   let obj = {};
-  obj = { gap: gap.margin, padding: gap.margin, marginLeft: gap.inset, borderRadius: importDefault(dependencyMap[8]).radii.lg, backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_SURFACE_HIGH };
+  obj = { x: null, "Null": null, "Null": null };
+  ({ margin: obj2.gap, margin: obj2.padding, inset: obj2.marginLeft } = arg0);
+  obj.borderRadius = importDefault(dependencyMap[8]).radii.lg;
+  obj.backgroundColor = importDefault(dependencyMap[8]).colors.BACKGROUND_SURFACE_HIGH;
   const merged = Object.assign(importDefault(dependencyMap[8]).shadows.SHADOW_HIGH);
   obj.card = obj;
-  obj.cardInnerContainer = { "Bool(false)": null, "Bool(false)": null };
-  obj = { aze: false, azj: false, borderRadius: importDefault(dependencyMap[8]).radii.sm };
+  obj.cardInnerContainer = {};
+  obj = { bhk: false, bic: false, borderRadius: importDefault(dependencyMap[8]).radii.sm };
   obj.image = obj;
   obj.gameName = { maxWidth: 275, color: importDefault(dependencyMap[8]).colors.CONTENT_INVENTORY_OVERLAY_TEXT_PRIMARY };
-  const obj2 = { "Bool(true)": 548470786, "Bool(true)": 1396834305, "Bool(true)": 1895825670, "Bool(true)": 1644167425, "Bool(true)": 1215469735, "Bool(true)": -939524096, gap: importDefault(dependencyMap[8]).space.PX_8 };
+  const obj2 = { 0: false, 9223372036854775807: false, 0: false, 0: false, -9223372036854775808: false, 9223372036854775807: false, gap: importDefault(dependencyMap[8]).space.PX_8 };
   obj.badges = obj2;
   return obj;
 });
@@ -143,7 +146,7 @@ export default function GamingLikeEntryRow(content) {
         let obj = callback(closure_3[19]);
         obj.itemInteracted(GameShareModal.id, "hotwheels_gaming_activity", "press_forward");
         let obj1 = callback(closure_3[19]);
-        obj = { itemId: GameShareModal.id, itemType: "hotwheels_gaming_activity", actionParameters: { "Bool(false)": "getIconSource", "Bool(false)": "getIconSource", "Bool(false)": "getIconSource", "Bool(false)": "getIconSource" } };
+        obj = { itemId: GameShareModal.id, itemType: "hotwheels_gaming_activity", actionParameters: {} };
         obj1.feedItemActioned(obj);
         const obj4 = callback(closure_3[20]);
         obj = { content: GameShareModal };
@@ -175,7 +178,7 @@ export default function GamingLikeEntryRow(content) {
         obj.onPress = tmp11;
         obj1 = {};
         const isEntryActiveResult = arg1(dependencyMap[5]).isEntryActive(content);
-        obj2 = { INTEGRATION_CREATE: 131072.00119209292, ConstraintReasonCode: -293983030121430100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 };
+        obj2 = {};
         let tmp20;
         if (null != displayNameStylesFont) {
           const obj3 = { fontFamily: displayNameStylesFont };
@@ -185,14 +188,14 @@ export default function GamingLikeEntryRow(content) {
         let obj10 = importDefault(dependencyMap[25]);
         obj2.children = obj10.getName(stateFromStores);
         const items5 = [callback(arg1(dependencyMap[24]).Text, obj2), ];
-        const obj4 = { CHANNEL_HIGHLIGHT: 0, guild_template_description: 5.566, borderWidth: 10 };
+        const obj4 = { encodingConfig: 0, showRemove: 5.566, PREMIUM_CUSTOM_NOTIFICATION_SOUND_SETTINGS_UPSELL: 10 };
         let obj12 = arg1(dependencyMap[26]);
         let obj13 = importDefault(dependencyMap[27]);
         obj4.children = obj12.getRelativeTimestamp(obj13.extractTimestamp(content.id));
         items5[1] = callback(arg1(dependencyMap[24]).Text, obj4);
         obj1.children = items5;
         obj.title = closure_9(closure_8, obj1);
-        obj5 = { "Bool(false)": "base", "Bool(false)": "NOTIFICATION_SETTINGS_MODAL_OPEN" };
+        obj5 = { "Null": 1107296850, "Null": 107218 };
         let obj15 = arg1(dependencyMap[5]);
         let str3 = "text-default";
         if (obj15.isEntryActive(content)) {

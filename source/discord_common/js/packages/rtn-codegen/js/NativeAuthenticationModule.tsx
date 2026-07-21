@@ -1,9 +1,9 @@
-// Module ID: 14645
-// Function ID: 110474
+// Module ID: 14652
+// Function ID: 110496
 // Name: enforcing
 // Dependencies: []
 
-// Module 14645 (enforcing)
+// Module 14652 (enforcing)
 const TurboModuleRegistry = require(dependencyMap[0]).TurboModuleRegistry;
 const enforcing = TurboModuleRegistry.getEnforcing("NativeAuthenticationModule");
 const _module = require(dependencyMap[1]);

@@ -1,10 +1,10 @@
-// Module ID: 13804
-// Function ID: 104430
+// Module ID: 13811
+// Function ID: 104453
 // Name: BountiesScrollIndicatorOverlay
 // Dependencies: []
 // Exports: default
 
-// Module 13804 (BountiesScrollIndicatorOverlay)
+// Module 13811 (BountiesScrollIndicatorOverlay)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 const StyleSheet = arg1(dependencyMap[2]).StyleSheet;
@@ -14,9 +14,9 @@ let closure_9 = 5000 + arg1(dependencyMap[4]).timingSlowDuration;
 const tmp2 = arg1(dependencyMap[3]);
 let closure_10 = arg1(dependencyMap[5]).createStyles(() => {
   let obj = {};
-  obj = { GuildBadgeGem: "png", trackOptionClicked: 273, UNDER_MINIMUM_AGE: 205, flexGrow: true, flexShrink: "lg", getCategories: "primary", inset: 0, paddingHorizontal: importDefault(dependencyMap[6]).space.PX_16 };
+  obj = { onTrackPress: "png", position: 273, left: 205, top: true, borderRadius: "lg", width: "primary", height: 0, paddingHorizontal: importDefault(dependencyMap[6]).space.PX_16 };
   obj.scrollIndicator = obj;
-  obj = { body: "channelId", flexDirection: "channelId", padding: "channelId", p: "string", parent: "formatToPlainString", body: "Text", gap: importDefault(dependencyMap[6]).space.PX_8 };
+  obj = { 9223372036854775807: "channelId", -9223372036854775808: "channelId", -9223372036854775808: "channelId", 9223372036854775807: "string", 9223372036854775807: "formatToPlainString", 0: "Text", gap: importDefault(dependencyMap[6]).space.PX_8 };
   obj.scrollIndicatorContent = obj;
   obj.scrollIndicatorText = { textAlign: "center" };
   return obj;
@@ -175,7 +175,7 @@ export default function BountiesScrollIndicatorOverlay(isActive) {
   const items4 = [animatedStyle, animatedStyle2];
   items3[1] = items4;
   const items5 = [callback2(importDefault(dependencyMap[10]), { visible, isFadingInContent: tmp2[0] }), ];
-  const obj6 = { INTEGRATION_CREATE: null, ConstraintReasonCode: null, style: tmp.scrollIndicatorText };
+  const obj6 = { style: tmp.scrollIndicatorText };
   const intl = arg1(dependencyMap[12]).intl;
   obj6.children = intl.string(arg1(dependencyMap[12]).t.eafsh4);
   items5[1] = callback2(arg1(dependencyMap[11]).Text, obj6);

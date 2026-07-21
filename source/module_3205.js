@@ -10,8 +10,8 @@ if (!_module) {
   obj = _module;
 }
 obj = {};
-obj.date = obj.default({ formats: { "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, "Bool(false)": false }, defaultWidth: "full" });
-obj.time = obj.default({ formats: { "Bool(false)": "{{count}} minut", "Bool(false)": "p\u0159ed {{count}} minutami", "Bool(false)": "za {{count}} minut", "Bool(false)": "p\u0159ibli\u017En\u011B hodina" }, defaultWidth: "full" });
+obj.date = obj.default({ formats: { "Null": false, "Null": false, "Null": false, "Null": false }, defaultWidth: "full" });
+obj.time = obj.default({ formats: { "Null": "{{count}} minut", "Null": "p\u0159ed {{count}} minutami", "Null": "za {{count}} minut", "Null": "p\u0159ibli\u017En\u011B hodina" }, defaultWidth: "full" });
 obj.dateTime = obj.default({ formats: { any: "{{date}} {{time}}" }, defaultWidth: "any" });
 
 export default obj;

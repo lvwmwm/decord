@@ -1,10 +1,10 @@
-// Module ID: 12948
-// Function ID: 98551
+// Module ID: 12955
+// Function ID: 98574
 // Name: ContextMenuItem
 // Dependencies: []
 // Exports: ContextMenuItem
 
-// Module 12948 (ContextMenuItem)
+// Module 12955 (ContextMenuItem)
 let closure_3 = importAll(dependencyMap[0]);
 ({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[2]));
 const tmp2 = arg1(dependencyMap[2]);
@@ -22,7 +22,7 @@ let closure_7 = arg1(dependencyMap[4]).createStyles((arg0) => {
   obj.border = { borderBottomWidth: 1, borderBottomColor: importDefault(dependencyMap[6]).colors.BORDER_SUBTLE };
   const obj2 = { borderBottomWidth: 1, borderBottomColor: importDefault(dependencyMap[6]).colors.BORDER_SUBTLE };
   obj.pressed = { backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_MOD_SUBTLE };
-  const obj4 = { aze: false, azj: false };
+  const obj4 = { bhk: false, bic: "internal" };
   if ("destructive" === arg0) {
     let TEXT_STRONG = importDefault(dependencyMap[6]).colors.TEXT_FEEDBACK_CRITICAL;
   } else {
@@ -212,7 +212,7 @@ export const ContextMenuItem = function ContextMenuItem(accessibilityRole) {
     tmp19 = activeIndex(importDefault(dependencyMap[3]).View, obj5);
   }
   const items4 = [tmp19, , , ];
-  const obj6 = { td: true, sr: "/assets/images/native/icons", style: tmp2.label };
+  const obj6 = { style: tmp2.label };
   let str4 = "text-strong";
   if ("destructive" === variant) {
     str4 = "text-feedback-critical";

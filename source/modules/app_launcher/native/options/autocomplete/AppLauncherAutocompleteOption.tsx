@@ -1,19 +1,19 @@
-// Module ID: 11276
-// Function ID: 87767
+// Module ID: 11282
+// Function ID: 87790
 // Name: AppLauncherAutocompleteOption
 // Dependencies: []
 // Exports: default
 
-// Module 11276 (AppLauncherAutocompleteOption)
+// Module 11282 (AppLauncherAutocompleteOption)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 const jsx = arg1(dependencyMap[3]).jsx;
 let obj = arg1(dependencyMap[4]);
 obj = {};
-obj = { _callListeners: "current", HUB_EMAIL_SIGNUP: "r", logContextOnFailure: "isArray", paddingBlockStart: "Array", SECURE_FRAMES_TRANSIENT_KEY_DELETE: "accessibilityRole", cwd: "d", lineClamp: "r", maxFontSizeMultiplier: "secondary", backgroundColor: importDefault(dependencyMap[5]).colors.INPUT_BACKGROUND_DEFAULT, borderRadius: importDefault(dependencyMap[5]).radii.lg };
+obj = { backgroundColor: importDefault(dependencyMap[5]).colors.INPUT_BACKGROUND_DEFAULT, borderRadius: importDefault(dependencyMap[5]).radii.lg };
 obj.container = obj;
 obj.hasError = { borderColor: importDefault(dependencyMap[5]).colors.BORDER_FEEDBACK_CRITICAL, padding: 12 };
-const obj2 = { alignSelf: "center", marginStart: "center", fontFamily: arg1(dependencyMap[2]).Fonts.PRIMARY_MEDIUM, color: importDefault(dependencyMap[5]).colors.TEXT_DEFAULT };
+const obj2 = { "Null": "center", "Null": "center", fontFamily: arg1(dependencyMap[2]).Fonts.PRIMARY_MEDIUM, color: importDefault(dependencyMap[5]).colors.TEXT_DEFAULT };
 obj.inputText = obj2;
 let closure_6 = obj.createStyles(obj);
 const obj1 = { borderColor: importDefault(dependencyMap[5]).colors.BORDER_FEEDBACK_CRITICAL, padding: 12 };

@@ -1,10 +1,10 @@
-// Module ID: 8507
-// Function ID: 67873
+// Module ID: 8511
+// Function ID: 67885
 // Name: DISPLAY_NAME_STYLES_EFFECT_NAMES
 // Dependencies: []
 // Exports: useDisplayNameStylesEffectConfig
 
-// Module 8507 (DISPLAY_NAME_STYLES_EFFECT_NAMES)
+// Module 8511 (DISPLAY_NAME_STYLES_EFFECT_NAMES)
 let closure_3 = importAll(dependencyMap[0]);
 const obj = {};
 obj[arg1(dependencyMap[1]).DisplayNameEffect.SOLID] = importDefault(dependencyMap[2]).OpWJ3f;

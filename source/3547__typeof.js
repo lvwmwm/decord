@@ -1,7 +1,7 @@
 // Module ID: 3547
 // Function ID: 27594
 // Name: _typeof
-// Dependencies: [3355, 3388, 3208]
+// Dependencies: []
 
 // Module 3547 (_typeof)
 function _typeof(arg0) {
@@ -125,7 +125,7 @@ function _getPrototypeOf(arg0) {
 function _defineProperty(arg0, arg1, value) {
   if (arg1 in arg0) {
     const _Object = Object;
-    const obj = { value };
+    const obj = { FRIEND_REQUESTS: true, ForYouLoadMore: true, QUEST_BADGE: true, GUILD_CHANNEL_INTEGRITY_CHECK_CANCELED: true, value };
     Object.defineProperty(arg0, arg1, obj);
   } else {
     arg0[arg1] = value;
@@ -162,7 +162,7 @@ export const ISOTimezoneParser = (Parser) => {
         tmp17 = closure_8(applyResult, "priority", 10);
         tmp18 = closure_6(applyResult);
         str3 = "incompatibleTokens";
-        tmp19 = closure_8(applyResult, "incompatibleTokens", ["BACKGROUND_SYNC", "CHANNEL_CREATE", "CHANNEL_DELETE"]);
+        tmp19 = closure_8(applyResult, "incompatibleTokens", ["prototype", "flexDirection", "r"]);
         return applyResult;
       } else {
         _TypeError = TypeError;
@@ -206,7 +206,7 @@ export const ISOTimezoneParser = (Parser) => {
           tmp17 = closure_8(applyResult, "priority", 10);
           tmp18 = closure_6(applyResult);
           str3 = "incompatibleTokens";
-          tmp19 = closure_8(applyResult, "incompatibleTokens", ["BACKGROUND_SYNC", "CHANNEL_CREATE", "CHANNEL_DELETE"]);
+          tmp19 = closure_8(applyResult, "incompatibleTokens", ["prototype", "flexDirection", "r"]);
           return applyResult;
         } else {
           _TypeError = TypeError;
@@ -225,7 +225,7 @@ export const ISOTimezoneParser = (Parser) => {
   if (Parser) {
     prototype = Parser.prototype;
   }
-  let obj = { EntryPointCommandButtonActions: null, NATIVE_SECTION: null, 1476351743: null, value: ISOTimezoneParser };
+  let obj = { value: ISOTimezoneParser };
   ISOTimezoneParser.prototype = Object.create(prototype, { constructor: obj });
   if (Parser) {
     class ISOTimezoneParser {
@@ -256,7 +256,7 @@ export const ISOTimezoneParser = (Parser) => {
           tmp17 = closure_8(applyResult, "priority", 10);
           tmp18 = closure_6(applyResult);
           str3 = "incompatibleTokens";
-          tmp19 = closure_8(applyResult, "incompatibleTokens", ["BACKGROUND_SYNC", "CHANNEL_CREATE", "CHANNEL_DELETE"]);
+          tmp19 = closure_8(applyResult, "incompatibleTokens", ["prototype", "flexDirection", "r"]);
           return applyResult;
         } else {
           _TypeError = TypeError;
@@ -304,4 +304,4 @@ export const ISOTimezoneParser = (Parser) => {
   items[1] = obj;
   _defineProperties(ISOTimezoneParser.prototype, items);
   return ISOTimezoneParser;
-}(require("requiredArgs").Parser);
+}(require(dependencyMap[2]).Parser);

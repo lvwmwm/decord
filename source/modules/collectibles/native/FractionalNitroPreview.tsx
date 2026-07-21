@@ -1,20 +1,20 @@
-// Module ID: 8742
-// Function ID: 69129
+// Module ID: 8746
+// Function ID: 69141
 // Name: FractionalNitroPreview
 // Dependencies: []
 // Exports: FractionalNitroPreview
 
-// Module 8742 (FractionalNitroPreview)
+// Module 8746 (FractionalNitroPreview)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 const VerticalGradient = arg1(dependencyMap[2]).VerticalGradient;
 ({ jsx: closure_5, jsxs: closure_6 } = arg1(dependencyMap[3]));
 let obj = arg1(dependencyMap[4]);
 obj = {};
-obj = { ao: false, accessibilityRole: false, String: false, Array: false, channelId: false, shapes: false, ip: false, padding: importDefault(dependencyMap[5]).space.PX_24, borderRadius: importDefault(dependencyMap[5]).radii.lg, gap: importDefault(dependencyMap[5]).space.PX_16 };
+obj = { eachRight: 0.0000000000000000000000000017165658239579442, boxedNitroProxy: -0.0000000000000000000000000000000000001266642667965841, RESPONSE_EVENT_TYPES: -0.00000000000000000000000000000000000000000008974740175381657, sy: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000023780677603566327, hideModal: 0.00000000000012085106314181957, MOBILE_FLOATING_ACCESSORY_BACKGROUND: -0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000023534381978645607, Bounty Scroll Gradient: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000008932009021698, padding: importDefault(dependencyMap[5]).space.PX_24, borderRadius: importDefault(dependencyMap[5]).radii.lg, gap: importDefault(dependencyMap[5]).space.PX_16 };
 obj.container = obj;
-obj.gradient = { left: "isArray", borderColor: "skuId", borderWidth: "T", backgroundColor: "r", borderRadius: "isArray" };
-obj.headerImage = { "Null": null, "Null": null, "Null": null };
+obj.gradient = { o: "center", concat: null, o: 4, borderRadius: 4, position: "rgba(0, 0, 0, 0.75)" };
+obj.headerImage = { "Null": null, "Null": 1, "Null": null };
 obj.nitroIconContainer = { alignSelf: "flex-start" };
 const tmp3 = arg1(dependencyMap[3]);
 obj.benefits = { gap: importDefault(dependencyMap[5]).space.PX_8 };
@@ -29,7 +29,7 @@ export const FractionalNitroPreview = function FractionalNitroPreview() {
   const arg1 = tmp;
   const items = [arg1(dependencyMap[6]).t.E1NP2x, arg1(dependencyMap[6]).t.kpMomJ, arg1(dependencyMap[6]).t.xT1Vfn, arg1(dependencyMap[6]).t.myyAEr, arg1(dependencyMap[6]).t.zTk8Ul];
   let obj = { style: tmp.container };
-  obj = { colors: ["DEFAULT_ENABLE_DISMISS_ON_CLOSE", "QUEST_DOCK_GESTURE_MODE_CLOSED_TRANSITION_HEIGHT"], start: VerticalGradient.START, end: VerticalGradient.END, style: tmp.gradient };
+  obj = { colors: ["accent_color", "QUEST_APP_UPSELL"], start: VerticalGradient.START, end: VerticalGradient.END, style: tmp.gradient };
   const items1 = [callback(importDefault(dependencyMap[7]), obj), , , ];
   obj = {};
   const obj1 = { uri: importDefault(dependencyMap[9]) };

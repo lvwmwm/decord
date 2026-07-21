@@ -1,10 +1,10 @@
-// Module ID: 11765
-// Function ID: 91356
+// Module ID: 11772
+// Function ID: 91379
 // Name: DiscoverabilityLanding
 // Dependencies: []
 // Exports: default
 
-// Module 11765 (DiscoverabilityLanding)
+// Module 11772 (DiscoverabilityLanding)
 let closure_3 = importAll(dependencyMap[0]);
 ({ View: closure_4, ScrollView: closure_5 } = arg1(dependencyMap[1]));
 const useContactSyncModalStore = arg1(dependencyMap[2]).useContactSyncModalStore;
@@ -14,12 +14,12 @@ let obj = arg1(dependencyMap[5]);
 obj = {};
 obj = { flex: 1, backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_BASE_LOW };
 obj.container = obj;
-obj.headerContainer = { <string:2771800403>: null, <string:2857660001>: null, <string:2949132294>: null };
-obj.header = { "Null": "center", "Null": "center" };
-obj.image = { aa: 0.3, af: "SlideOutLeft" };
+obj.headerContainer = { <string:2764919123>: null, <string:2622778977>: null, <string:1573390086>: null };
+obj.header = { onAppear: "center", onDisappear: "center" };
+obj.image = { color: 0.3, children: "SlideOutLeft" };
 obj.button = { color: true, lineHeight: true, flexGrow: true };
-obj.title = { concat: 52881784.83212474, now: 0.0000000000000000000000000000000000000000000000000000000000000000000000011319598867188059 };
-obj.subtitle = { concat: -0.0014069081515246523, now: -0.0001058445630777106 };
+obj.title = { "Bool(true)": 52881784.83212474, "Bool(true)": 0.0000000000000000000000000000000000000000000000000000000000000000000000011319598867188059 };
+obj.subtitle = { "Bool(true)": "absolute", "Bool(true)": 0 };
 const tmp3 = arg1(dependencyMap[4]);
 obj.formRow = { paddingVertical: 16, backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_SURFACE_HIGH };
 const obj1 = { paddingVertical: 16, backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_SURFACE_HIGH };
@@ -27,7 +27,7 @@ const obj2 = {};
 const merged = Object.assign(importDefault(dependencyMap[7])(arg1(dependencyMap[3]).Fonts.PRIMARY_SEMIBOLD, importDefault(dependencyMap[6]).colors.INTERACTIVE_TEXT_ACTIVE, 16));
 obj.formText = obj2;
 obj.footerContainer = {};
-obj.info = { 1693456300: "Array", 995048930: "isArray", -1991099551: "body" };
+obj.info = { <string:1779958564>: "%", <string:2520660581>: "NO_VOICE_STATES", <string:3171308347>: "currentOriginX" };
 let closure_9 = obj.createStyles(obj);
 const importDefaultResult = importDefault(dependencyMap[7]);
 const result = arg1(dependencyMap[20]).fileFinishedImporting("modules/nuf/native/components/DiscoverabilityLanding.tsx");
@@ -53,11 +53,11 @@ export default function DiscoverabilityLanding(onNext) {
   const obj1 = { style: tmp.header };
   const obj2 = { resizeMode: "contain", style: tmp.image, source: importDefault(dependencyMap[14]) };
   const items1 = [callback(importDefault(dependencyMap[13]), obj2), , ];
-  const obj3 = { 0: 24, 9223372036854775807: 24, 0: null, -9223372036854775808: "aa9c26c29990ba7a6584e51ab5c56efa", style: tmp.title };
+  const obj3 = { 1501064855: 24, -1267889981: 24, -1145697943: null, -1266241916: "aa9c26c29990ba7a6584e51ab5c56efa", style: tmp.title };
   const intl = arg1(dependencyMap[16]).intl;
   obj3.children = intl.string(arg1(dependencyMap[16]).t.n8nw6j);
   items1[1] = callback(arg1(dependencyMap[15]).Text, obj3);
-  const obj4 = { Promise: true, marginTop: true, flags: true, style: tmp.subtitle };
+  const obj4 = { "Null": "<string:4294734870>", "Null": "<string:327679>", "Null": "<string:1048576>", style: tmp.subtitle };
   const intl2 = arg1(dependencyMap[16]).intl;
   obj4.children = intl2.string(arg1(dependencyMap[16]).t.KMW0kP);
   items1[2] = callback(arg1(dependencyMap[15]).Text, obj4);
@@ -76,7 +76,7 @@ export default function DiscoverabilityLanding(onNext) {
   }
   obj6.selected = allowEmail;
   const items3 = [callback(arg1(dependencyMap[17]).FormCheckboxRow, obj6), , ];
-  const obj8 = { Promise: 1203128676, marginTop: 1919418369, flags: 994836481, style: tmp.info };
+  const obj8 = { "Null": true, "Null": true, "Null": true, style: tmp.info };
   const intl4 = arg1(dependencyMap[16]).intl;
   const items4 = [intl4.string(arg1(dependencyMap[16]).t.DGZg+k), " ", ];
   const intl5 = arg1(dependencyMap[16]).intl;

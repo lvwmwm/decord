@@ -1,13 +1,13 @@
-// Module ID: 8907
-// Function ID: 70282
+// Module ID: 8911
+// Function ID: 70294
 // Name: isEmpty
 // Dependencies: [57, 31, 27, 33, 4126]
 // Exports: useIsCallRTCConnectionEmpty, useIsStreamRTCConnectionEmpty
 
-// Module 8907 (isEmpty)
+// Module 8911 (isEmpty)
 import _slicedToArray from "_slicedToArray";
 import module_31 from "module_31";
-import getActivityIndicator from "get ActivityIndicator";
+import keys from "keys";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 
 function isEmpty(size) {
@@ -25,7 +25,7 @@ const result = _createForOfIteratorHelperLoose.fileFinishedImporting("modules/rt
 
 export const useIsStreamRTCConnectionEmpty = function useIsStreamRTCConnectionEmpty(stateFromStores4) {
   const arg1 = stateFromStores4;
-  const items = [getActivityIndicator, _slicedToArray];
+  const items = [keys, _slicedToArray];
   return arg1(dependencyMap[3]).useStateFromStores(items, () => {
     if (null == arg0) {
       return true;

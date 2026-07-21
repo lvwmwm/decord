@@ -1,10 +1,10 @@
-// Module ID: 6333
-// Function ID: 50373
+// Module ID: 6335
+// Function ID: 50416
 // Name: NitroPlatinumBadgeLargeBadge
 // Dependencies: []
 // Exports: NitroPlatinumBadgeLargeBadge
 
-// Module 6333 (NitroPlatinumBadgeLargeBadge)
+// Module 6335 (NitroPlatinumBadgeLargeBadge)
 const jsx = require(dependencyMap[0]).jsx;
 const _module = require(dependencyMap[3]);
 const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/NitroPlatinumBadgeLargeBadge.native.tsx");

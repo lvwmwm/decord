@@ -1,10 +1,10 @@
-// Module ID: 11259
-// Function ID: 87567
+// Module ID: 11265
+// Function ID: 87590
 // Name: AppLauncherCommandViewFooter
 // Dependencies: []
 // Exports: default
 
-// Module 11259 (AppLauncherCommandViewFooter)
+// Module 11265 (AppLauncherCommandViewFooter)
 let DEFAULT_CONTENT_PADDING;
 function AppLauncherCommandViewFooter(arg0) {
   let animatedStyle;
@@ -295,9 +295,9 @@ function AppLauncherCommandViewInner(command) {
   first6 = tmp26[0];
   closure_40 = tmp26[1];
   const tmp28 = callback2(React.useState(0), 2);
-  const sum = importDefault(dependencyMap[26])({ renderHeader: true, renderSettingSearchResultItem: true }).insets.bottom + tmp28[0];
+  const sum = importDefault(dependencyMap[26])({ <string:2893524121>: null, <string:2857788003>: null }).insets.bottom + tmp28[0];
   sum1 = sum + importDefault(dependencyMap[12]).space.PX_16;
-  sum2 = importDefault(dependencyMap[26])({ renderHeader: true, renderSettingSearchResultItem: true }).insets.bottom + importDefault(dependencyMap[12]).space.PX_16;
+  sum2 = importDefault(dependencyMap[26])({ <string:2893524121>: null, <string:2857788003>: null }).insets.bottom + importDefault(dependencyMap[12]).space.PX_16;
   let obj2 = arg1(dependencyMap[15]);
   sharedValue = obj2.useSharedValue(false);
   let obj3 = arg1(dependencyMap[15]);
@@ -330,7 +330,7 @@ function AppLauncherCommandViewInner(command) {
       if (sharedValue1.get() < 0) {
         const current = ref.current;
         if (null != current) {
-          current.scrollTo({});
+          current.scrollTo({ -437190652: "isArray", -434503676: "isArray" });
         }
       } else if (diff3 > 0) {
         if (sharedValue1.get() > diff3) {
@@ -835,9 +835,9 @@ function AppLauncherCommandViewInner(command) {
     obj1.onLayout = callback10;
     obj1.automaticallyAdjustsScrollIndicatorInsets = false;
     obj3 = { style: tmp.commandNameContainer };
-    obj4 = { INTEGRATION_CREATE: 58, ConstraintReasonCode: 85, children: command.displayName };
+    obj4 = { children: command.displayName };
     const items17 = [callback5(arg1(dependencyMap[49]).Text, obj4), ];
-    obj5 = { INTEGRATION_CREATE: null, ConstraintReasonCode: "153e24032a5a8790888aef41caaf4b2c", children: command.displayDescription };
+    obj5 = { children: command.displayDescription };
     items17[1] = callback5(arg1(dependencyMap[49]).Text, obj5);
     obj3.children = items17;
     const items18 = [callback6(tmp2, obj3), , , , , ];
@@ -891,7 +891,7 @@ function AppLauncherCommandViewInner(command) {
     let tmp88 = !tmp64;
     if (!tmp64) {
       const obj10 = { style: tmp.noOptionCalloutContainer };
-      const obj11 = { INTEGRATION_CREATE: "<string:3305963521>", ConstraintReasonCode: "<string:671547393>" };
+      const obj11 = {};
       const obj12 = { textAlign: "center" };
       obj11.style = obj12;
       const intl2 = arg1(dependencyMap[22]).intl;
@@ -902,7 +902,7 @@ function AppLauncherCommandViewInner(command) {
     items18[3] = tmp88;
     if (tmp63) {
       const obj13 = {};
-      const obj14 = { style: tmp.optionalOptionsSectionTitle };
+      const obj14 = { "Null": "absolute", "Null": 0, "Null": "center", style: tmp.optionalOptionsSectionTitle };
       const intl3 = arg1(dependencyMap[22]).intl;
       obj14.children = intl3.string(arg1(dependencyMap[22]).t.5C107K);
       const items19 = [callback5(arg1(dependencyMap[49]).Text, obj14), , ];
@@ -1101,7 +1101,7 @@ function AppLauncherCommandView(command) {
         return obj2;
       }
     }
-    obj3 = { <string:2585612720>: false, <string:2120533601>: false, <string:1371634271>: false, loading: tmp4.fetchState.fetching || tmp3.fetchState.fetching };
+    obj3 = { "Bool(false)": "handled", "Bool(false)": false, "Bool(false)": 16, loading: tmp4.fetchState.fetching || tmp3.fetchState.fetching };
     return obj3;
   }(context.channel, preSelectedCommand, analyticsLocation, sectionName);
   ({ command: command2, sectionDescriptor, loading } = tmp3);
@@ -1197,10 +1197,7 @@ function NoPermsState(command) {
   const logAppLauncherEmptyStateView = obj.useLogAppLauncherEmptyStateView(arg1(dependencyMap[47]).AppLauncherEmptyStateType.COMMAND_NO_PERMISSIONS);
   obj = { style: tmp.emptyStateContainer };
   obj = { style: tmp.commandNameContainer };
-  const obj1 = { INTEGRATION_CREATE: 58, ConstraintReasonCode: 85, children: command.displayName };
-  const items = [callback5(arg1(dependencyMap[49]).Text, obj1), ];
-  const obj2 = { INTEGRATION_CREATE: null, ConstraintReasonCode: "153e24032a5a8790888aef41caaf4b2c", children: command.displayDescription };
-  items[1] = callback5(arg1(dependencyMap[49]).Text, obj2);
+  const items = [callback5(arg1(dependencyMap[49]).Text, { children: command.displayName }), callback5(arg1(dependencyMap[49]).Text, { children: command.displayDescription })];
   obj.children = items;
   const items1 = [callback6(closure_7, obj), ];
   const obj3 = { style: tmp.emptyState, lightSource: importDefault(dependencyMap[62]), darkSource: importDefault(dependencyMap[63]) };
@@ -1237,27 +1234,27 @@ obj = { height: "100%", backgroundColor: importDefault(dependencyMap[12]).colors
 obj.container = obj;
 const obj1 = { paddingTop: arg1(dependencyMap[13]).EXPANDED_HEADER_TOTAL_CONSUMED_SPACE_IN_PARENT + importDefault(dependencyMap[12]).space.PX_4, paddingHorizontal: DEFAULT_CONTENT_PADDING, paddingBottom: DEFAULT_CONTENT_PADDING, backgroundColor: importDefault(dependencyMap[12]).colors.MOBILE_KEYBOARD_PANEL_BACKGROUND };
 obj.optionsContainer = obj1;
-obj.requiredOptionsContainer = { backgroundColor: false, borderRadius: false };
+obj.requiredOptionsContainer = { "Bool(false)": "<string:1027735553>", "Bool(false)": "<string:4143972873>" };
 obj.optionalOptionsContainer = {};
 obj.optionalOptionsChild = { marginBottom: 24 };
 obj.optionalOptionsFirstChild = { marginTop: 12 };
 obj.optionalOptionsLastChild = { marginBottom: 12 };
 obj.footerContainer = { paddingHorizontal: DEFAULT_CONTENT_PADDING };
-obj.submitButton = { "Bool(false)": 10, "Bool(false)": 10 };
+obj.submitButton = { 9223372036854775807: 10, 9223372036854775807: 10 };
 obj.optionalOptionsSectionTitle = { marginTop: 36 };
 obj.optionalOptionList = { marginTop: 12 };
-const obj2 = { borderRadius: importDefault(dependencyMap[12]).radii.lg, overflow: 1912603027, flex: 128, flexDirection: 128, backgroundColor: importDefault(dependencyMap[12]).colors.BACKGROUND_SURFACE_HIGH };
+const obj2 = { "Bool(true)": "SERVER_GUIDE_CHANNEL_SELECTED", "Bool(true)": "showSkipAvatarModal", "Bool(true)": "Array", "Bool(true)": "UI_ACTION_TOUCH", backgroundColor: importDefault(dependencyMap[12]).colors.BACKGROUND_SURFACE_HIGH, borderRadius: importDefault(dependencyMap[12]).radii.lg };
 obj.noRequiredOptionsCalloutContainer = obj2;
-const tmp6 = arg1(dependencyMap[10]);
-obj.noOptionCalloutContainer = { backgroundColor: importDefault(dependencyMap[12]).colors.BACKGROUND_BASE_LOWEST, borderRadius: importDefault(dependencyMap[12]).radii.lg };
+const obj3 = { showTopContainer: "isArray", showBorder: "runOnJS", multiline: "e", backgroundColor: importDefault(dependencyMap[12]).colors.BACKGROUND_BASE_LOWEST, borderRadius: importDefault(dependencyMap[12]).radii.lg };
+obj.noOptionCalloutContainer = obj3;
 obj.emptyState = {};
 const obj4 = { paddingTop: arg1(dependencyMap[13]).EXPANDED_HEADER_TOTAL_CONSUMED_SPACE_IN_PARENT + importDefault(dependencyMap[12]).space.PX_4, flex: 1 };
 obj.emptyStateContainer = obj4;
-obj.failureStateButtonWrapper = {};
-const obj3 = { backgroundColor: importDefault(dependencyMap[12]).colors.BACKGROUND_BASE_LOWEST, borderRadius: importDefault(dependencyMap[12]).radii.lg };
-obj.failureStateButtonPill = { borderRadius: importDefault(dependencyMap[12]).radii.xxl };
-obj.commandNameContainer = { "Null": "4.8.0", "Null": null, "Null": 60 };
-const obj5 = { borderRadius: importDefault(dependencyMap[12]).radii.xxl };
+obj.failureStateButtonWrapper = { "Bool(true)": null, "Bool(true)": "absolute" };
+const obj5 = { "Null": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000030586985114, "Null": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004574299544775668, "Null": -0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000015560818995246907, borderRadius: importDefault(dependencyMap[12]).radii.xxl };
+obj.failureStateButtonPill = obj5;
+obj.commandNameContainer = { "Bool(false)": "4.8.0", "Bool(false)": null, "Bool(false)": 60 };
+const tmp6 = arg1(dependencyMap[10]);
 obj.linearGradient = { backgroundColor: importDefault(dependencyMap[12]).colors.MOBILE_KEYBOARD_PANEL_BACKGROUND };
 let closure_23 = obj.createStyles(obj);
 let closure_24 = { code: "function AppLauncherCommandViewScreenTsx1(){const{shouldReduceMotion,isPressedDown,withDelay,withTiming,timingStandard,runOnJS,triggerHapticFeedback,HapticFeedbackTypes,isSending}=this.__closure;if(shouldReduceMotion)return{};if(isPressedDown){return{opacity:1,transform:[{translateX:withDelay(100,withTiming(-4,timingStandard,'respect-motion-settings',function(){return runOnJS(triggerHapticFeedback)(HapticFeedbackTypes.IMPACT_LIGHT);}))}]};}return{opacity:withTiming(isSending.get()?0:1,timingStandard),transform:[{translateX:withTiming(isSending.get()?100:0,timingStandard)}]};}" };

@@ -1,7 +1,7 @@
 // Module ID: 3529
 // Function ID: 27269
 // Name: _typeof
-// Dependencies: [3355, 3388, 3208]
+// Dependencies: []
 
 // Module 3529 (_typeof)
 function _typeof(arg0) {
@@ -125,7 +125,7 @@ function _getPrototypeOf(arg0) {
 function _defineProperty(arg0, arg1, value) {
   if (arg1 in arg0) {
     const _Object = Object;
-    const obj = { value };
+    const obj = { FRIEND_REQUESTS: true, ForYouLoadMore: true, QUEST_BADGE: true, GUILD_CHANNEL_INTEGRITY_CHECK_CANCELED: true, value };
     Object.defineProperty(arg0, arg1, obj);
   } else {
     arg0[arg1] = value;
@@ -233,7 +233,7 @@ export const DayOfYearParser = (Parser) => {
   if (Parser) {
     prototype = Parser.prototype;
   }
-  let obj = { EntryPointCommandButtonActions: null, NATIVE_SECTION: null, 1476351743: null, value: DayOfYearParser };
+  let obj = { value: DayOfYearParser };
   DayOfYearParser.prototype = Object.create(prototype, { constructor: obj });
   if (Parser) {
     class DayOfYearParser {
@@ -332,4 +332,4 @@ export const DayOfYearParser = (Parser) => {
   };
   _defineProperties(DayOfYearParser.prototype, items);
   return DayOfYearParser;
-}(require("requiredArgs").Parser);
+}(require(dependencyMap[2]).Parser);

@@ -1,11 +1,10 @@
-// Module ID: 16487
-// Function ID: 127355
+// Module ID: 16494
+// Function ID: 127389
 // Name: promise
-// Dependencies: [16, 4294967295, 0]
+// Dependencies: []
 
-// Module 16487 (promise)
-import _assertThisInitialized from "_assertThisInitialized";
-
+// Module 16494 (promise)
+let closure_3 = importDefault(dependencyMap[0]);
 const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/headless_tasks/android/ToggleSelfMute.tsx");
 
 export default (channelId) => {

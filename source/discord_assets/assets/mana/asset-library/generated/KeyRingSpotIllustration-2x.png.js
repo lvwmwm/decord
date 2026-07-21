@@ -1,9 +1,9 @@
-// Module ID: 6266
-// Function ID: 50273
+// Module ID: 6268
+// Function ID: 50316
 // Name: metadata
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 6266 (metadata)
+// Module 6268 (metadata)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/KeyRingSpotIllustration-2x.png.js");
 

@@ -1,7 +1,7 @@
 // Module ID: 1091
 // Function ID: 12503
 // Name: createProcessEvent
-// Dependencies: [31, 794]
+// Dependencies: []
 
 // Module 1091 (createProcessEvent)
 function createProcessEvent() {

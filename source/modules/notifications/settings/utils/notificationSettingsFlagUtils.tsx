@@ -1,10 +1,10 @@
-// Module ID: 10269
-// Function ID: 79359
+// Module ID: 10275
+// Function ID: 79378
 // Name: resetGuildUnreadFlags
 // Dependencies: []
 // Exports: withChannelUnreadFlags, withGuildUnreadFlags
 
-// Module 10269 (resetGuildUnreadFlags)
+// Module 10275 (resetGuildUnreadFlags)
 function resetGuildUnreadFlags(guildFlags) {
   return importAll(dependencyMap[1]).removeFlags(guildFlags, constants.UNREADS_ALL_MESSAGES, constants.UNREADS_ONLY_MENTIONS);
 }

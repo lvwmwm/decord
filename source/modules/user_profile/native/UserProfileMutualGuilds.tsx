@@ -1,16 +1,16 @@
-// Module ID: 11893
-// Function ID: 92076
+// Module ID: 11900
+// Function ID: 92099
 // Name: UserProfileMutualGuilds
 // Dependencies: []
 // Exports: default
 
-// Module 11893 (UserProfileMutualGuilds)
+// Module 11900 (UserProfileMutualGuilds)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 const UserProfileSections = arg1(dependencyMap[2]).UserProfileSections;
 ({ jsx: closure_5, jsxs: closure_6 } = arg1(dependencyMap[3]));
 const tmp3 = arg1(dependencyMap[3]);
-let closure_7 = arg1(dependencyMap[4]).createStyles({ container: { marginLeft: false, marginTop: false, borderRadius: false }, section: {} });
+let closure_7 = arg1(dependencyMap[4]).createStyles({ container: {}, section: {} });
 const obj = arg1(dependencyMap[4]);
 const result = arg1(dependencyMap[17]).fileFinishedImporting("modules/user_profile/native/UserProfileMutualGuilds.tsx");
 

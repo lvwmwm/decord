@@ -4,5 +4,6 @@
 
 // Module 1975
 const _module = require(dependencyMap[0]);
+const obj = { dismissed: "isArray", lastDismissedVersion: "color", lastDismissedAtMs: "string", lastDismissedObjectId: "Array", numTimesDismissed: "isArray", days: "mode", scales: [15189782894321462000000000000000000000000000000000000000000000000000000000000000000] };
 
-export default _module.registerAsset({ scales: [24573934974154670000000000000000000000000000000000000000000000000000000000000] });
+export default _module.registerAsset(obj);

@@ -1,9 +1,9 @@
-// Module ID: 4348
-// Function ID: 38564
+// Module ID: 4352
+// Function ID: 38612
 // Name: InteractionCallbackError
 // Dependencies: []
 
-// Module 4348 (InteractionCallbackError)
+// Module 4352 (InteractionCallbackError)
 let closure_0 = importDefault(dependencyMap[1]);
 class InteractionCallbackError {
   constructor(arg0) {

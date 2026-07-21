@@ -1,10 +1,10 @@
-// Module ID: 13974
-// Function ID: 106263
+// Module ID: 13981
+// Function ID: 106286
 // Name: HeaderStatus
 // Dependencies: []
 // Exports: default
 
-// Module 13974 (HeaderStatus)
+// Module 13981 (HeaderStatus)
 function HeaderStatus(arg0) {
   let isCancelled;
   let isPastDue;
@@ -68,7 +68,7 @@ function Header(arg0) {
   const items1 = [callback2(importDefault(dependencyMap[12]), { guild }), , ];
   obj = { style: tmp.headerTitlesContainer };
   const items2 = [callback2(arg1(dependencyMap[10]).Text, { children: listing.name }), callback2(arg1(dependencyMap[13]).Spacer, { size: 2 }), ];
-  const obj2 = { INTEGRATION_CREATE: true, ConstraintReasonCode: true };
+  const obj2 = {};
   let name;
   if (null != guild) {
     name = guild.name;
@@ -137,11 +137,11 @@ function CardBody(isTrial) {
   if (isPastDue) {
     obj = {};
     const obj1 = { style: tmp.paymentOverDueWarning };
-    const obj2 = { GATEWAY_BRIDGE_TIMEOUT: "/assets/.cache/intl/aW50bA==", headerGuildIcon: null, responderRelease: "66d1e4125b6e3fe86e5116b45518629e", color: importDefault(dependencyMap[8]).unsafe_rawColors.YELLOW_300 };
+    const obj2 = { color: importDefault(dependencyMap[8]).unsafe_rawColors.YELLOW_300 };
     const items = [callback2(arg1(dependencyMap[13]).WarningCircle, obj2), , ];
     const obj3 = { size: 8 };
     items[1] = callback2(arg1(dependencyMap[13]).Spacer, obj3);
-    const obj4 = { INTEGRATION_CREATE: null, ConstraintReasonCode: "43b86c9ce273868bacca6aeb06ae392b" };
+    const obj4 = {};
     const intl = arg1(dependencyMap[9]).intl;
     obj4.children = intl.string(arg1(dependencyMap[9]).t.eaqlau);
     items[2] = callback2(arg1(dependencyMap[10]).Text, obj4);
@@ -275,14 +275,14 @@ obj.container = obj;
 obj.cardContent = { padding: 16 };
 const tmp3 = arg1(dependencyMap[6]);
 obj.buttonsContainer = { backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_MOD_NORMAL, borderRadius: importDefault(dependencyMap[8]).radii.sm, overflow: "hidden" };
-const obj2 = { paddingHorizontal: "r", width: "isArray", alignSelf: "constructor", marginBottom: "toString", flexGrow: "isArray", borderColor: importDefault(dependencyMap[8]).colors.BORDER_SUBTLE };
+const obj2 = { "Bool(false)": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000051872850527, "Bool(false)": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000014409039259357446, "Bool(false)": 40686818788678815000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, "Bool(false)": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000050927898995, "Bool(false)": 16125669519176787000000000000000000000000000000000000000000000000000000000000000000, borderColor: importDefault(dependencyMap[8]).colors.BORDER_SUBTLE };
 obj.buttonDivider = obj2;
 obj.resubscribeButtonContainer = { padding: 16 };
 obj.separator = { paddingHorizontal: 16 };
 const obj1 = { backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_MOD_NORMAL, borderRadius: importDefault(dependencyMap[8]).radii.sm, overflow: "hidden" };
 obj.header = { borderRadius: importDefault(dependencyMap[8]).radii.sm, overflow: "hidden" };
-obj.headerContent = { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null };
-obj.headerTitlesContainer = { sectionIndex: 33906521616440370000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, itemIndex: 137009456742.4, animated: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000145339735748633, viewOffset: null };
+obj.headerContent = { "Bool(true)": 30653696, "Bool(true)": -96403200, "Bool(true)": 1895825994 };
+obj.headerTitlesContainer = { <string:1375941577>: 33906521616440370000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, <string:2692717715>: 137009456742.4, <string:2303835489>: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001455646673025277, <string:1385062893>: null };
 const obj3 = { borderRadius: importDefault(dependencyMap[8]).radii.sm, overflow: "hidden" };
 obj.expandIcon = { tintColor: importDefault(dependencyMap[8]).colors.INTERACTIVE_TEXT_DEFAULT };
 const items = [{ rotate: "180deg" }];
@@ -290,7 +290,7 @@ obj.expandIconExpanded = { transform: items };
 obj.cardRow = { flexDirection: "row" };
 obj.manageSection = { paddingTop: 16 };
 obj.paymentOverDueWarning = {};
-obj.headerStatusContainer = { rejectWithError: null, accessibilityRole: "f55d97ba12842f12a33d545b3d0fbaea", colors: "CrownIcon", channel: "png" };
+obj.headerStatusContainer = { <string:2959338596>: null, <string:3909641176>: "f55d97ba12842f12a33d545b3d0fbaea", <string:1385718134>: "CrownIcon", <string:1681056149>: "png" };
 const obj4 = { tintColor: importDefault(dependencyMap[8]).colors.INTERACTIVE_TEXT_DEFAULT };
 obj.headerStatusCancel = { backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_FEEDBACK_CRITICAL };
 const obj5 = { backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_FEEDBACK_CRITICAL };

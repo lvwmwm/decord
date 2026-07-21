@@ -1,9 +1,9 @@
-// Module ID: 6302
-// Function ID: 50327
+// Module ID: 6304
+// Function ID: 50370
 // Name: metadata
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 6302 (metadata)
+// Module 6304 (metadata)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/MushroomSpotIllustration-2x.png.js");
 

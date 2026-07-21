@@ -1,6 +1,14 @@
 // Module ID: 5217
-// Function ID: 44126
+// Function ID: 44165
 // Dependencies: []
 
 // Module 5217
-arg5.default = { TouchableOpacity: arg1(arg6[0]).TouchableOpacity, TouchableHighlight: arg1(arg6[0]).TouchableHighlight, TouchableWithoutFeedback: arg1(arg6[0]).TouchableWithoutFeedback };
+arg5.DEFAULT_OPACITY = 0.5;
+arg5.DEFAULT_APPEARS_ON_INDEX = 1;
+arg5.DEFAULT_DISAPPEARS_ON_INDEX = 0;
+arg5.DEFAULT_ENABLE_TOUCH_THROUGH = false;
+arg5.DEFAULT_PRESS_BEHAVIOR = "close";
+arg5.DEFAULT_ACCESSIBLE = true;
+arg5.DEFAULT_ACCESSIBILITY_ROLE = "button";
+arg5.DEFAULT_ACCESSIBILITY_LABEL = "Bottom sheet backdrop";
+arg5.DEFAULT_ACCESSIBILITY_HINT = "Tap to close the bottom sheet";

@@ -1,10 +1,10 @@
-// Module ID: 14535
-// Function ID: 109545
+// Module ID: 14542
+// Function ID: 109567
 // Name: BalanceWidget
 // Dependencies: []
 // Exports: default
 
-// Module 14535 (BalanceWidget)
+// Module 14542 (BalanceWidget)
 function BalanceWidget(arg0) {
   let accessibilityLabel;
   let accessibilityState;
@@ -15,7 +15,7 @@ function BalanceWidget(arg0) {
   const tmp = callback3(importDefault(dependencyMap[7])("BalanceWidgetMenu"));
   let obj = { onPress, style: items, accessible: true, accessibilityRole: "button", accessibilityLabel, accessibilityState, activeOpacity: 0.8 };
   const items = [tmp.pressable, style];
-  obj = { INTEGRATION_CREATE: null, ConstraintReasonCode: null, style: tmp.label };
+  obj = { style: tmp.label };
   const intl = arg1(dependencyMap[10]).intl;
   obj.children = intl.string(arg1(dependencyMap[10]).t.gGtZpz);
   const items1 = [callback(arg1(dependencyMap[9]).Text, obj), ];
@@ -126,7 +126,7 @@ const tmp2 = arg1(dependencyMap[4]);
 const tmp3 = arg1(dependencyMap[6]);
 let closure_12 = arg1(dependencyMap[26]).createStyles((arg0) => {
   let obj = {};
-  obj = { name: "<string:1639977058>", body: "<string:24183104>", ref: "<string:1090519040>", accessible: "30%", gap: importDefault(dependencyMap[27]).space.PX_8 };
+  obj = { pageWidth: "<string:1639977058>", defaultIndex: "<string:24183104>", ref: "<string:1090519040>", textContentType: "30%", gap: importDefault(dependencyMap[27]).space.PX_8 };
   if (arg0) {
     obj = { paddingHorizontal: importDefault(dependencyMap[27]).space.PX_8, paddingVertical: importDefault(dependencyMap[27]).space.PX_8 };
     let obj1 = obj;
@@ -139,7 +139,7 @@ let closure_12 = arg1(dependencyMap[26]).createStyles((arg0) => {
   obj.pressable = obj;
   obj.label = { flex: 1 };
   obj.pill = { alignItems: "center" };
-  obj.loadingContainer = { "Bool(false)": 1, "Bool(false)": "Collectibles Marketing" };
+  obj.loadingContainer = { items: 1, width: "Collectibles Marketing" };
   return obj;
 });
 const obj = arg1(dependencyMap[26]);
@@ -160,7 +160,7 @@ export default function BalanceWidgetMenuWrapper(style) {
     obj.accessibilityLabel = intl.string(arg1(dependencyMap[10]).t.cKwv4k);
     obj = { busy: true };
     obj.accessibilityState = obj;
-    const obj1 = { style: tmp.loadingContainer, children: callback(arg1(dependencyMap[25]).Ellipsis, {}) };
+    const obj1 = { style: tmp.loadingContainer, children: callback(arg1(dependencyMap[25]).Ellipsis, { 9223372036854775807: 32768000, -9223372036854775808: 30653696 }) };
     obj.children = callback(View, obj1);
     let tmp4Result = callback(BalanceWidget, obj);
   } else {

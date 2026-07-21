@@ -1,10 +1,10 @@
-// Module ID: 10760
-// Function ID: 83637
+// Module ID: 10766
+// Function ID: 83660
 // Name: _isGuestOrLurkerInGuild
 // Dependencies: []
 // Exports: default, isGuestOrLurkerInGuild
 
-// Module 10760 (_isGuestOrLurkerInGuild)
+// Module 10766 (_isGuestOrLurkerInGuild)
 function _isGuestOrLurkerInGuild(guild_id, id, closure_3, closure_2) {
   const guild = closure_3.getGuild(guild_id);
   let hasItem;

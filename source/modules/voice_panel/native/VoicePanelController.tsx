@@ -1,10 +1,10 @@
-// Module ID: 15599
-// Function ID: 119017
+// Module ID: 15606
+// Function ID: 119041
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 // Exports: default
 
-// Module 15599 (_createForOfIteratorHelperLoose)
+// Module 15606 (_createForOfIteratorHelperLoose)
 function _createForOfIteratorHelperLoose(@@iterator) {
   let arg1 = Symbol_iterator;
   @@iterator = "undefined" !== typeof Symbol;
@@ -91,7 +91,7 @@ function useLayoutManagerState(windowDimensions) {
   const arg1 = windowDimensions;
   const safeArea = windowDimensions.safeArea;
   const importDefault = safeArea;
-  let contentDimensions = windowDimensions.contentDimensions;
+  const contentDimensions = windowDimensions.contentDimensions;
   const dependencyMap = contentDimensions;
   const isConnected = windowDimensions.isConnected;
   let callback = isConnected;
@@ -118,7 +118,7 @@ function useLayoutManagerState(windowDimensions) {
   let closure_8 = tmp4;
   const managerSubscription = arg1(dependencyMap[38]).useManagerSubscription(layoutManager);
   let closure_9 = managerSubscription;
-  const ref = React.useRef({ timeout: -1, layoutKey: managerSubscription, connected: isConnected, windowState: size, safeAreaState: rect, contentDimensions: { aze: false, azj: true } });
+  const ref = React.useRef({ timeout: -1, layoutKey: managerSubscription, connected: isConnected, windowState: size, safeAreaState: rect, contentDimensions: { bhk: -536870861, bic: -299892737 } });
   let closure_10 = ref;
   function useUpdateLayoutManagerState(isConnected) {
     isConnected = isConnected.isConnected;
@@ -230,10 +230,9 @@ function useLayoutManagerState(windowDimensions) {
     }
   }, items1);
   obj = { windowWidth: size.width, windowHeight: size.height, safeAreaLeft: rect.left, safeAreaRight: rect.right, safeAreaTop: rect.top, safeAreaBottom: rect.bottom, controlBarSize: pushToTalk ? closure_19 : closure_18 };
-  layoutManager.updateState(items, obj);
-  contentDimensions = layoutManager.getContentDimensions();
-  closure_13 = contentDimensions;
-  const items2 = [contentDimensions, contentDimensions, managerSubscription, layoutManager, safeArea, rect, windowDimensions, size, isConnected];
+  const updateStateResult = layoutManager.updateState(items, obj);
+  closure_13 = updateStateResult;
+  const items2 = [contentDimensions, updateStateResult, managerSubscription, layoutManager, safeArea, rect, windowDimensions, size, isConnected];
   const layoutEffect2 = React.useLayoutEffect(() => {
     function executeLayoutManagerEffect(arg0) {
       return closure_4.handleLayoutEffect();
@@ -268,7 +267,7 @@ function useLayoutManagerState(windowDimensions) {
     fn.__closure = obj;
     fn.__workletHash = 13791383688018;
     fn.__initData = closure_41;
-    obj = { windowState: size, safeAreaState: rect, contentState: contentDimensions };
+    obj = { windowState: size, safeAreaState: rect, contentState: updateStateResult };
     obj.runOnUI(fn)(obj);
   }, items2);
   const items3 = [layoutManager];
@@ -526,7 +525,7 @@ export default function VoicePanelController(channelId) {
       };
     }, items1);
     const obj21 = channelId(first[22]);
-    const sharedValue12 = channelId(first[22]).useSharedValue({});
+    const sharedValue12 = channelId(first[22]).useSharedValue({ users: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000033995391321045464, max: 139264.00004577637, guildId: -14480300402108619000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 });
     const obj22 = channelId(first[22]);
     class W {
       constructor() {
@@ -1206,7 +1205,7 @@ export default function VoicePanelController(channelId) {
             }
             if (tmp15) {
               let obj = focused(pipState[27]);
-              obj = { "Null": "<string:1091650906>", "Null": "/assets/modules/voice_panel/native/images", "Null": "IS_QUEST_RELEASE", "Null": "ParentalControlledDefaultGuildsRestricted", "Null": "<string:641794304>", icon: focused(pipState[30]) };
+              obj = { "Bool(false)": "<string:1091650957>", "Bool(false)": "/assets/modules/voice_panel/native/images", "Bool(false)": "MERCH_STORE", "Bool(false)": "HEADER", "Bool(false)": "<string:1312882944>", icon: focused(pipState[30]) };
               const intl = channelId(pipState[29]).intl;
               obj.content = intl.string(channelId(pipState[29]).t.O2IlPT);
               obj.open(obj);

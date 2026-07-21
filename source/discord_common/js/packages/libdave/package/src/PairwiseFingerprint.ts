@@ -1,10 +1,10 @@
-// Module ID: 8874
-// Function ID: 69961
+// Module ID: 8878
+// Function ID: 69973
 // Name: compareArrays
 // Dependencies: []
 // Exports: generatePairwiseFingerprint
 
-// Module 8874 (compareArrays)
+// Module 8878 (compareArrays)
 import module_36 from "module_36";
 
 function compareArrays(arg0, arg1) {
@@ -26,7 +26,7 @@ function _generatePairwiseFingerprint() {
   return obj(...arguments);
 }
 let closure_2 = importDefault(dependencyMap[0]);
-let closure_4 = {};
+let closure_4 = { accessibilityRole: true, withTiming: "/assets/design/components/Icon/native/redesign/generated/images", "Null": 24, "Null": 24 };
 const result = arg1(dependencyMap[3]).fileFinishedImporting("../discord_common/js/packages/libdave/package/src/PairwiseFingerprint.ts");
 
 export const generatePairwiseFingerprint = function generatePairwiseFingerprint(arg0, uint8Array, arg2, uint8Array1, arg4) {

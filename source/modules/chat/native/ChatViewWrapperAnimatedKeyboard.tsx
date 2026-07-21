@@ -1,18 +1,18 @@
-// Module ID: 10375
-// Function ID: 80012
+// Module ID: 10381
+// Function ID: 80035
 // Name: ChatViewWrapperAnimatedKeyboard
-// Dependencies: []
+// Dependencies: [31, 27, 33, 478, 2, 31, 33, 10388, 5230, 10389, 2, 57, 31]
 // Exports: default
 
-// Module 10375 (ChatViewWrapperAnimatedKeyboard)
-const importAllResult = importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-({ jsx: closure_5, jsxs: closure_6 } = arg1(dependencyMap[2]));
-const Easing = arg1(dependencyMap[3]).Easing;
-const obj = {};
-const tmp2 = arg1(dependencyMap[2]);
-obj.duration = arg1(dependencyMap[4]).timingStandardDuration;
-obj.easing = Easing.bezier(0.2, 0, 0, 1);
+// Module 10381 (ChatViewWrapperAnimatedKeyboard)
+import importAllResult from "module_31";
+import { View } from "keys";
+import module_33 from "module_33";
+import { Easing } from "isWindows";
+import module_31 from "module_31";
+
+({ jsx: closure_5, jsxs: closure_6 } = module_33);
+const obj = { duration: require("result2").timingStandardDuration, easing: Easing.bezier(0.2, 0, 0, 1) };
 let closure_8 = { code: "function ChatViewWrapperAnimatedKeyboardTsx1(){const{animatedHeight}=this.__closure;return animatedHeight.get();}" };
 let closure_9 = { code: "function ChatViewWrapperAnimatedKeyboardTsx2(height,heightPrev){const{animatedAdjustedMargin,animatedAdjustedMarginPending}=this.__closure;if(heightPrev==null){return;}if(height<heightPrev){animatedAdjustedMargin.set(height);animatedAdjustedMarginPending.set(-1);}else{animatedAdjustedMarginPending.set(height);}}" };
 let closure_10 = { code: "function ChatViewWrapperAnimatedKeyboardTsx3(){const{animatedAdjustedMargin,withTiming,animatedHeight,INSET_ANIMATION_CONFIG2,animatedAdjustedMarginPending}=this.__closure;return{flex:1,marginTop:animatedAdjustedMargin.get(),transform:[{translateY:withTiming(-animatedHeight.get(),INSET_ANIMATION_CONFIG2,'respect-motion-settings',function(finished){if(!finished){return;}if(animatedAdjustedMarginPending.get()!==-1){animatedAdjustedMargin.set(animatedAdjustedMarginPending.get());animatedAdjustedMarginPending.set(-1);}})}]};}" };
@@ -26,8 +26,7 @@ let closure_12 = importAllResult.memo((channelId) => {
   obj.style = items1;
   return callback(View, obj);
 });
-const bezierResult = Easing.bezier(0.2, 0, 0, 1);
-const result = arg1(dependencyMap[12]).fileFinishedImporting("modules/chat/native/ChatViewWrapperAnimatedKeyboard.tsx");
+const result = module_31.fileFinishedImporting("modules/chat/native/ChatViewWrapperAnimatedKeyboard.tsx");
 
 export default function ChatViewWrapperAnimatedKeyboard(arg0) {
   let channelId;

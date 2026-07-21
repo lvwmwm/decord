@@ -1,10 +1,10 @@
-// Module ID: 14904
-// Function ID: 112277
+// Module ID: 14911
+// Function ID: 112301
 // Name: HubSidebarProgressOverview
 // Dependencies: []
 // Exports: default
 
-// Module 14904 (HubSidebarProgressOverview)
+// Module 14911 (HubSidebarProgressOverview)
 importAll(dependencyMap[0]);
 ({ HUB_PROGRESS_ACTION_SHEET_ID: closure_3, HUB_PROGRESS_NUM_TOTAL_STEPS: closure_4 } = arg1(dependencyMap[1]));
 const jsx = arg1(dependencyMap[2]).jsx;

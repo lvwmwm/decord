@@ -1,10 +1,10 @@
-// Module ID: 5245
-// Function ID: 44482
+// Module ID: 5247
+// Function ID: 44523
 // Name: QuestsExperimentLocations
 // Dependencies: []
 // Exports: getQuestHomeFilterOptionItem
 
-// Module 5245 (QuestsExperimentLocations)
+// Module 5247 (QuestsExperimentLocations)
 const items = [require(dependencyMap[0]).QuestVariants.NITRO_2_POINT_0_CTA, require(dependencyMap[0]).QuestVariants.ORBS_MULTIPLIER_QUEST, require(dependencyMap[0]).QuestVariants.XBOX_GAME_PASS_QUEST];
 const result = importDefault(dependencyMap[1]).Millis.MINUTE * require(dependencyMap[2]).Quests.ConsecutiveHeartbeatPeriodMinutes;
 const _module = require(dependencyMap[3]);

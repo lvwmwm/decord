@@ -1,9 +1,9 @@
-// Module ID: 5914
-// Function ID: 49745
+// Module ID: 5916
+// Function ID: 49788
 // Name: metadata
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 5914 (metadata)
+// Module 5916 (metadata)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/BuildingBlocksSpotIllustration-2x.png.js");
 

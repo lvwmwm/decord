@@ -11,7 +11,7 @@ const fn = function t(moment) {
     weekdays: "\u661F\u671F\u65E5_\u661F\u671F\u4E00_\u661F\u671F\u4E8C_\u661F\u671F\u4E09_\u661F\u671F\u56DB_\u661F\u671F\u4E94_\u661F\u671F\u516D".split("_"),
     weekdaysShort: "\u9031\u65E5_\u9031\u4E00_\u9031\u4E8C_\u9031\u4E09_\u9031\u56DB_\u9031\u4E94_\u9031\u516D".split("_"),
     weekdaysMin: "\u65E5_\u4E00_\u4E8C_\u4E09_\u56DB_\u4E94_\u516D".split("_"),
-    longDateFormat: { "Bool(false)": null, "Bool(false)": null, "Bool(false)": false, "Bool(false)": 1, "Bool(false)": null, "Bool(false)": 0, "Bool(false)": "transparent", "Bool(false)": "100%", "Bool(false)": "column", "Bool(false)": "center" },
+    longDateFormat: { <string:1122280543>: "emoji", <string:3251850218>: "&amp;", <string:306010250>: "&lt;", <string:37429971>: "&gt;", <string:1812403200>: "&#39;", <string:3855182856>: "&quot;", <string:3327387082>: null, <string:3355583292>: "\u{1F603}", <string:1383555360>: 6, <string:2914423152>: 1 },
     meridiemParse: /凌晨|早上|上午|中午|下午|晚上/,
     meridiemHour(arg0, arg1) {
       let num = arg0;
@@ -83,7 +83,7 @@ const fn = function t(moment) {
       }
       return arg0 + "\u65E5";
     },
-    relativeTime: { "Bool(false)": "\u{1F604}", "Bool(false)": 6, "Bool(false)": 2, "Bool(false)": null, "Bool(false)": "hidden", "Bool(false)": "center", "Bool(false)": "center", "Bool(false)": null, "Bool(false)": "\u{1F601}", "Bool(false)": 6, "Bool(false)": 3, "Bool(false)": null, "Bool(false)": "\u{1F606}", "Bool(false)": 6 }
+    relativeTime: {}
   });
 };
 if ("object" === typeof exports) {
@@ -95,7 +95,7 @@ if ("object" === typeof exports) {
 }
 if ("function" === typeof globalThis.define) {
   if (globalThis.define.amd) {
-    globalThis.define([1782644737], fn);
+    globalThis.define(["HH:mm:ss"], fn);
   }
 }
 fn(this.moment);

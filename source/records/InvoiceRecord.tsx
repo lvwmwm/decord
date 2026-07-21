@@ -1,7 +1,7 @@
 // Module ID: 3783
 // Function ID: 29488
 // Name: _callSuper
-// Dependencies: [79429632, 248840192, 131072, 125370368, 100663296, 251658240, 285212672, 301989888]
+// Dependencies: []
 
 // Module 3783 (_callSuper)
 function _callSuper(arg0, arg1, arg2) {

@@ -1,10 +1,10 @@
-// Module ID: 9182
-// Function ID: 71917
+// Module ID: 9186
+// Function ID: 71929
 // Name: ConfirmEmailCode
 // Dependencies: []
 // Exports: default
 
-// Module 9182 (ConfirmEmailCode)
+// Module 9186 (ConfirmEmailCode)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 let closure_5 = importAll(dependencyMap[2]);
@@ -19,7 +19,7 @@ obj = {};
 obj = { backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_BASE_LOW, paddingVertical: importDefault(dependencyMap[8]).space.PX_12, paddingHorizontal: importDefault(dependencyMap[8]).space.PX_16 };
 obj.background = obj;
 obj.title = { textAlign: "center" };
-obj.prompt = {};
+obj.prompt = { action: null, messageReference: null, medium: null };
 const tmp4 = arg1(dependencyMap[6]);
 obj.input = { marginTop: importDefault(dependencyMap[8]).space.PX_24 };
 const obj1 = { marginTop: importDefault(dependencyMap[8]).space.PX_24 };
@@ -53,10 +53,10 @@ export default function ConfirmEmailCode(onFormSubmit) {
   callback = React.useCallback(callback(tmp9), items1);
   let tmp11 = null;
   if (null != stateFromStores) {
-    obj = {};
+    obj = { "Bool(true)": true, "Bool(true)": true, "Bool(true)": true };
     ({ background: obj2.style, contentContainer: obj2.contentContainerStyle } = tmp2);
     obj = {};
-    const obj1 = { 0: 24, 9223372036854775807: 24, 0: null, -9223372036854775808: "aa9c26c29990ba7a6584e51ab5c56efa", style: tmp2.title, children: headerText };
+    const obj1 = { 1501064855: 24, -1267889981: 24, -1145697943: null, -1266241916: "aa9c26c29990ba7a6584e51ab5c56efa", style: tmp2.title, children: headerText };
     const items2 = [callback4(arg1(dependencyMap[11]).Text, obj1), , , ];
     const obj2 = { style: tmp2.prompt };
     const intl = arg1(dependencyMap[12]).intl;

@@ -1,16 +1,16 @@
-// Module ID: 15850
-// Function ID: 121322
+// Module ID: 15857
+// Function ID: 121346
 // Name: AgeGateVerify
 // Dependencies: []
 // Exports: default
 
-// Module 15850 (AgeGateVerify)
+// Module 15857 (AgeGateVerify)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 ({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[2]));
 let obj = arg1(dependencyMap[3]);
 obj = {};
-obj = { defaultValue: "<string:979436081>", placeholder: "<string:1090633553>", decelerating: "space-between", COLLAPSED: "<string:1900370513>", padding: importDefault(dependencyMap[4]).space.PX_16, gap: importDefault(dependencyMap[4]).space.PX_16 };
+obj = { padding: importDefault(dependencyMap[4]).space.PX_16, gap: importDefault(dependencyMap[4]).space.PX_16 };
 obj.container = obj;
 obj.header = { textAlign: "center" };
 obj.body = { textAlign: "center" };
@@ -34,7 +34,7 @@ export default function AgeGateVerify(source) {
   const items = [callback(arg1(dependencyMap[8]).ShieldSpotIllustration, {}), , , ];
   obj = { style: tmp.header, children: verifyTitle };
   items[1] = callback(arg1(dependencyMap[9]).Text, obj);
-  obj1 = { Promise: 0, marginTop: 1929379840, flags: 0, style: tmp.body, children: verifyGateDescription };
+  obj1 = { "Null": 0, "Null": 1929379840, "Null": 0, style: tmp.body, children: verifyGateDescription };
   items[2] = callback(arg1(dependencyMap[9]).Text, obj1);
   let tmp5 = null != verifyAgreementButtonText;
   if (tmp5) {

@@ -1,10 +1,10 @@
-// Module ID: 14801
-// Function ID: 111603
+// Module ID: 14808
+// Function ID: 111627
 // Name: useCallActivityData
 // Dependencies: []
 // Exports: default
 
-// Module 14801 (useCallActivityData)
+// Module 14808 (useCallActivityData)
 function useCallActivityData(channelId) {
   const arg1 = channelId;
   const items = [closure_3, closure_4, closure_5];

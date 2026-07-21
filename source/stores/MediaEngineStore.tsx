@@ -1,9 +1,9 @@
-// Module ID: 4169
-// Function ID: 35370
+// Module ID: 4173
+// Function ID: 35418
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
-// Module 4169 (_isNativeReflectConstruct)
+// Module 4173 (_isNativeReflectConstruct)
 let DEFAULT_DEVICE_ID;
 let DISABLED_DEVICE_ID;
 let Features;
@@ -99,7 +99,7 @@ function _arrayLikeToArray(arg0, arg1) {
 }
 function getDefaultSettings() {
   let obj = { mode: InputModes.VOICE_ACTIVITY };
-  obj = { assetUrl: false, header: false, body: false, helpArticleId: false, buttonVariant: false, <string:2660589424>: false, <string:153980867>: false, autoThreshold: arg1(dependencyMap[29]).isPlatformEmbedded || false, shortcut: [], updatedAt: undefined };
+  obj = { position: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001465328505083617, backgroundColor: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000217534276588052, opacity: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003836952962855214, top: -91878362797366780000000000, left: 175902004323928600000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, right: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000021219957915, bottom: -4182107295528360000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, autoThreshold: arg1(dependencyMap[29]).isPlatformEmbedded || false, shortcut: [], updatedAt: undefined };
   obj.modeOptions = obj;
   obj.localMutes = {};
   obj.disabledLocalVideos = {};
@@ -1273,7 +1273,7 @@ function applySettings() {
 }
 function tryEnable() {
   if (!closure_84) {
-    result.enable().then(() => callback(closure_3[49]).dispatch({ -1907218322: false, 1408017726: false, -324714866: false }));
+    result.enable().then(() => callback(closure_3[49]).dispatch({ pacsize: true, channels: "/assets/images/native", rate: 36 }));
     const enableResult = result.enable();
   }
 }
@@ -1325,7 +1325,7 @@ function isDeviceSystemEchoIncompatible(windowsDeviceService) {
 function inferDeviceFormFactor(type) {
   if ("videoinput" === type.type !== true) {
     if (hasHardwareMatch(type, tmp3) !== true) {
-      const items = [];
+      const items = [-642821350, -1028080039, -1353420191];
       const macosTransportType = type.macosTransportType;
       let str2 = "";
       let str = "";
@@ -1340,14 +1340,14 @@ function inferDeviceFormFactor(type) {
         if (isMatch !== true) {
           const obj = importDefault(dependencyMap[38])(type.hardwareId);
           if (obj.startsWith("BTHENUM") !== true) {
-            const items1 = ["toString", "toLocaleString"];
+            const items1 = [false, false];
             const macosTransportType2 = type.macosTransportType;
             let tmp6 = str2;
             if (null != macosTransportType2) {
               tmp6 = macosTransportType2;
             }
             if (items1.includes(tmp6) !== true) {
-              const items2 = ["isInteractive", "animatedDuration"];
+              const items2 = [true, true];
               const macosTransportType3 = type.macosTransportType;
               if (null != macosTransportType3) {
                 str2 = macosTransportType3;
@@ -1379,7 +1379,7 @@ function inferDeviceFormFactor(type) {
 }
 function convertDevices(videoDevices, arg1) {
   arg1 = videoDevices;
-  if (0 === videoDevices[{ 9223372036854775807: null, 75994223: null, 9223372036854775807: null }[arg1.deviceType]].length) {
+  if (0 === videoDevices[{ "Null": "setMediaViewerSources", "Null": "Boolean", "Null": "isArray" }[arg1.deviceType]].length) {
     const tmp5 = makeDisabledDevice(tmp);
     const obj = {};
     obj[tmp5.id] = tmp5;
@@ -1581,7 +1581,7 @@ function maybeTryHookProcess(pidFromDesktopSource, sound) {
       let obj = { soundshareId: audioPid, soundshareSession: str2 };
     } else {
       importDefaultResult.info("Error: trying to get soundshare id before MediaEngineStore is instantiated.");
-      obj = {};
+      obj = { 0: "form__label", 9223372036854775807: "English, US" };
     }
     ({ soundshareId, soundshareSession } = obj);
     if (null != soundshareId) {
@@ -1623,7 +1623,7 @@ function maybeTryHookProcess(pidFromDesktopSource, sound) {
     importAll(dependencyMap[40]).attachToProcess(pidFromDesktopSource);
     const obj5 = importAll(dependencyMap[40]);
   }
-  return { "Bool(true)": false, "Bool(true)": false };
+  return { 0: "o", 9223372036854775807: "o" };
 }
 function resetProbingState() {
   const DEFAULT = MediaEngineContextTypes.DEFAULT;
@@ -1921,7 +1921,7 @@ const NoiseCancellerError = tmp7.NoiseCancellerError;
 let importDefaultResult = importDefault(dependencyMap[27]);
 importDefaultResult = new importDefaultResult("MediaEngineStore");
 let closure_63 = "MediaEngineStore";
-let closure_64 = { "Null": "innocent", "Null": "innocent" };
+let closure_64 = {};
 let closure_65 = 5 * importDefault(dependencyMap[28]).Millis.SECOND;
 let closure_66 = 2 * importDefault(dependencyMap[28]).Millis.SECOND;
 let closure_67 = 30 * importDefault(dependencyMap[28]).Millis.SECOND;
@@ -1931,9 +1931,9 @@ let closure_70 = "https://ciscobinary.openh264.org/libopenh264-2.5.1-linux64.7.s
 let closure_71 = "d828a944d4d2bb64195ada89cf2cde9bc41733b1547d0788ef49fb8cb231b76f";
 let closure_72 = 0;
 let obj = { WEBCAM: "WEBCAM", INTEGRATED: "INTEGRATED", BLUETOOTH: "BLUETOOTH", AIRPLAY: "AIRPLAY", HEADSET: "HEADSET" };
-obj = { mode: InputModes.VOICE_ACTIVITY, modeOptions: { 1110868551: "react-stripe-js", 287100: "3.7.0", 296608: "https://stripe.com/docs/stripe-js/react" } };
-let closure_75 = { [InputProfile.CUSTOM]: {}, [InputProfile.VOICE_ISOLATION]: { modeOptions: { "Null": null, "Null": null } }, [InputProfile.STUDIO]: obj };
-const obj1 = { "Null": 120, "Null": 24, "Null": 8, modeOptions: { vadUseKrisp: false } };
+obj = { mode: InputModes.VOICE_ACTIVITY, modeOptions: {} };
+let closure_75 = { [InputProfile.CUSTOM]: {}, [InputProfile.VOICE_ISOLATION]: { modeOptions: { 0: null, 0: null } }, [InputProfile.STUDIO]: obj };
+const obj1 = { preferredRegions: 60, lastTestTimestamp: 0, lastGeoRankedOrder: 0, modeOptions: { vadUseKrisp: false } };
 let obj4 = arg1(dependencyMap[30]);
 let obj5 = arg1(dependencyMap[30]);
 const result = obj4.initializeMediaEngine(obj5.determineMediaEngine());
@@ -3353,7 +3353,7 @@ obj5 = {
           closure_112 = true;
           const tmp7 = _getSettings0();
           if (tmp8) {
-            mergeSettings({});
+            mergeSettings({ "Bool(true)": null, "Bool(true)": null });
             result.eachConnection(updateConnectionMuteDeaf);
           }
           const tmp8 = tmp7.mute || tmp7.deaf;
@@ -3971,7 +3971,7 @@ obj5 = {
   MEDIA_ENGINE_SET_AUDIO_ENABLED: function handleSetAudioEnabled(enabled) {
     enabled = enabled.enabled;
     if (enabled.unmute) {
-      mergeSettings({});
+      mergeSettings({ "Null": null, "Null": null });
     }
     result.eachConnection(updateConnectionMuteDeaf);
   },

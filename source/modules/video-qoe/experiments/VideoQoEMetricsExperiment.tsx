@@ -1,13 +1,12 @@
-// Module ID: 13909
-// Function ID: 105760
+// Module ID: 13916
+// Function ID: 105783
 // Name: getVideoQoEMetricsConfig
 // Dependencies: []
 // Exports: getVideoQoEMetricsConfig
 
-// Module 13909 (getVideoQoEMetricsConfig)
+// Module 13916 (getVideoQoEMetricsConfig)
 const _module = require(dependencyMap[0]);
-const obj = { -1269606814: 1, -1845285747: 3, defaultConfig: { externalAnalyticsEnabled: false }, variations: { [0]: { externalAnalyticsEnabled: false }, [1]: { externalAnalyticsEnabled: true } } };
-let closure_0 = _module.createApexExperiment(obj);
+let closure_0 = _module.createApexExperiment({ defaultConfig: { externalAnalyticsEnabled: false }, variations: { [0]: { externalAnalyticsEnabled: false }, [1]: { externalAnalyticsEnabled: true } } });
 const _module1 = require(dependencyMap[1]);
 const result = _module1.fileFinishedImporting("modules/video-qoe/experiments/VideoQoEMetricsExperiment.tsx");
 

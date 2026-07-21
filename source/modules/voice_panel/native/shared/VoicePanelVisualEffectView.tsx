@@ -1,9 +1,9 @@
-// Module ID: 15717
-// Function ID: 120154
+// Module ID: 15724
+// Function ID: 120178
 // Name: VoicePanelVisualEffectView
 // Dependencies: []
 
-// Module 15717 (VoicePanelVisualEffectView)
+// Module 15724 (VoicePanelVisualEffectView)
 const tmp2 = arg1(dependencyMap[1]);
 const View = tmp2.View;
 const importAllResult = importAll(dependencyMap[0]);
@@ -13,7 +13,7 @@ let obj = {};
 obj = {};
 const merged = Object.assign(tmp2.StyleSheet.absoluteFillObject);
 obj.wrapper = obj;
-obj1 = { <string:1677919658>: "keepIframeSrcFn", <string:2857778012>: "absolute", <string:89416289>: "[object Function]", <string:2591070467>: "%Float64ArrayPrototype%", <string:1395055216>: "setUploadedFilename", <string:425828783>: "%Float64ArrayPrototype%", borderColor: importDefault(dependencyMap[4]).colors.BORDER_SUBTLE, borderRadius: importDefault(dependencyMap[4]).modules.mobile.VOICE_PANEL_CONTROLS_BORDER_RADIUS };
+obj1 = { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, borderColor: importDefault(dependencyMap[4]).colors.BORDER_SUBTLE, borderRadius: importDefault(dependencyMap[4]).modules.mobile.VOICE_PANEL_CONTROLS_BORDER_RADIUS };
 obj.border = obj1;
 let closure_6 = obj1.createStyles(obj);
 const tmp3 = arg1(dependencyMap[2]);

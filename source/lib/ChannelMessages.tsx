@@ -1,10 +1,10 @@
-// Module ID: 4799
-// Function ID: 41673
+// Module ID: 4801
+// Function ID: 41714
 // Name: mergeMessage
 // Dependencies: []
 // Exports: flatMapChannelMessages
 
-// Module 4799 (mergeMessage)
+// Module 4801 (mergeMessage)
 function mergeMessage(get, id) {
   let messageRecord = get.get(id.id);
   if (null != messageRecord) {
@@ -1290,7 +1290,7 @@ const tmp6 = () => {
       }
       let mergeResult = self;
       if (null == value) {
-        const mutation = self.mutate({ children: null, ao: null });
+        const mutation = self.mutate({ 0: null, 0: null });
         const items = [callback3(self, nonce)];
         mergeResult = mutation.merge(items);
       }
@@ -1371,7 +1371,7 @@ const tmp6 = () => {
           if (self.ready) {
             let mergeResult = self.merge(valueResult, tmp, true);
           }
-          obj = { <string:3297713634>: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000021043611947808288, <string:4084768405>: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000053357352779429986 };
+          obj = { shapes: true, "Bool(true)": true };
           let jumpType;
           if (null != tmp3) {
             jumpType = tmp3.jumpType;
@@ -1526,7 +1526,7 @@ const tmp6 = () => {
         return !reversed.some((id) => id.id === id.id);
       });
       const item = found.forEach((arg0) => callback(closure_3[10]).insert(reversed, arg0, (id, id2) => callback(closure_3[8]).compare(id.id, id2.id)));
-      obj = { children: null, ao: null, lj: null, cached };
+      obj = { cached };
       const initialScrollSequenceId = self.initialScrollSequenceId;
       if (tmp4) {
         let sum = initialScrollSequenceId + 1;

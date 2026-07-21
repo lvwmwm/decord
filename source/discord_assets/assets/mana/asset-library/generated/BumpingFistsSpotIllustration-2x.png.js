@@ -1,9 +1,9 @@
-// Module ID: 5916
-// Function ID: 49748
+// Module ID: 5918
+// Function ID: 49791
 // Name: metadata
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 5916 (metadata)
+// Module 5918 (metadata)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/BumpingFistsSpotIllustration-2x.png.js");
 

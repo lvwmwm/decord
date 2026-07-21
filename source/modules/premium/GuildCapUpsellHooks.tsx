@@ -1,10 +1,10 @@
-// Module ID: 5593
-// Function ID: 47482
+// Module ID: 5595
+// Function ID: 47524
 // Name: hasIncreasedGuildCap
 // Dependencies: []
 // Exports: hideInlineGuildCapUpsell, isAtGuildCapAndNonPremium, useShouldShowInlineGuildCapUpsell
 
-// Module 5593 (hasIncreasedGuildCap)
+// Module 5595 (hasIncreasedGuildCap)
 function hasIncreasedGuildCap(currentUser) {
   let result = importDefault(dependencyMap[5]).canUseIncreasedGuildCap(currentUser);
   if (!result) {

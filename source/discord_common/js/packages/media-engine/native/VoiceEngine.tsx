@@ -1,9 +1,9 @@
-// Module ID: 4271
-// Function ID: 37359
+// Module ID: 4275
+// Function ID: 37407
 // Name: VADAggressiveness
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 4271 (VADAggressiveness)
+// Module 4275 (VADAggressiveness)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_common/js/packages/media-engine/native/VoiceEngine.tsx");
 

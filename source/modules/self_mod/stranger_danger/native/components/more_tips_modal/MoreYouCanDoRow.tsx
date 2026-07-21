@@ -1,13 +1,14 @@
-// Module ID: 10408
-// Function ID: 80204
+// Module ID: 10414
+// Function ID: 80227
 // Name: MoreYouCanDoRow
-// Dependencies: []
+// Dependencies: [0, 0, 0, 0]
 // Exports: default
 
-// Module 10408 (MoreYouCanDoRow)
-importAll(dependencyMap[0]);
-const jsx = arg1(dependencyMap[1]).jsx;
-const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/self_mod/stranger_danger/native/components/more_tips_modal/MoreYouCanDoRow.tsx");
+// Module 10414 (MoreYouCanDoRow)
+import "__exportStarResult1";
+import { jsx } from "__exportStarResult1";
+
+const result = require("__exportStarResult1").fileFinishedImporting("modules/self_mod/stranger_danger/native/components/more_tips_modal/MoreYouCanDoRow.tsx");
 
 export default function MoreYouCanDoRow(arg0) {
   let description;

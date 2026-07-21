@@ -1,5 +1,5 @@
 // Module ID: 8047
-// Function ID: 63879
+// Function ID: 63860
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
@@ -21,11 +21,11 @@ let closure_7 = importDefault(dependencyMap[4]);
 importDefault(dependencyMap[5]);
 const jsx = arg1(dependencyMap[6]).jsx;
 const tmp3 = (arg0) => {
-  class FeColorMatrix {
+  class FeBlend {
     constructor() {
       self = this;
-      tmp = closure_3(this, FeColorMatrix);
-      obj = closure_6(FeColorMatrix);
+      tmp = closure_3(this, FeBlend);
+      obj = closure_6(FeBlend);
       tmp2 = closure_5;
       if (closure_9()) {
         tmp6 = globalThis;
@@ -41,30 +41,30 @@ const tmp3 = (arg0) => {
       return tmp2(self, constructResult);
     }
   }
-  const arg1 = FeColorMatrix;
-  callback2(FeColorMatrix, arg0);
+  const arg1 = FeBlend;
+  callback2(FeBlend, arg0);
   const items = [
     {
       key: "render",
       value: function render() {
-        const FeColorMatrix = this;
+        const FeBlend = this;
         const obj = {
           ref(arg0) {
             return self.refMethod(arg0);
           }
         };
         const tmp = callback(closure_2[7]);
-        const obj2 = FeColorMatrix(closure_2[8]);
-        const extractFilterResult = FeColorMatrix(closure_2[8]).extractFilter(this.props);
-        const obj3 = FeColorMatrix(closure_2[8]);
-        const extractInResult = FeColorMatrix(closure_2[8]).extractIn(this.props);
-        return callback4(tmp, Object.assign(obj, extractFilterResult, extractInResult, FeColorMatrix(closure_2[8]).extractFeColorMatrix(this.props)));
+        const obj2 = FeBlend(closure_2[8]);
+        const extractFilterResult = FeBlend(closure_2[8]).extractFilter(this.props);
+        const obj3 = FeBlend(closure_2[8]);
+        const extractInResult = FeBlend(closure_2[8]).extractIn(this.props);
+        return callback4(tmp, Object.assign(obj, extractFilterResult, extractInResult, FeBlend(closure_2[8]).extractFeBlend(this.props)));
       }
     }
   ];
-  return callback(FeColorMatrix, items);
+  return callback(FeBlend, items);
 }(importDefault(dependencyMap[9]));
-tmp3.displayName = "FeColorMatrix";
-tmp3.defaultProps = Object.assign({}, tmp3.defaultPrimitiveProps, { httpServerLocation: "DownloadLinks", createStyles: "frameRateAggregated" });
+tmp3.displayName = "FeBlend";
+tmp3.defaultProps = Object.assign({}, tmp3.defaultPrimitiveProps, { mode: "normal" });
 
 export default tmp3;

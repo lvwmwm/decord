@@ -1,10 +1,10 @@
-// Module ID: 9381
-// Function ID: 73155
+// Module ID: 9385
+// Function ID: 73169
 // Name: CustomEmojiContent
 // Dependencies: []
 // Exports: default
 
-// Module 9381 (CustomEmojiContent)
+// Module 9385 (CustomEmojiContent)
 let closure_4 = importAll(dependencyMap[0]);
 ({ Pressable: closure_5, View: closure_6 } = arg1(dependencyMap[1]));
 let closure_7 = importDefault(dependencyMap[2]);
@@ -15,20 +15,20 @@ const tmp2 = arg1(dependencyMap[1]);
 const tmp3 = arg1(dependencyMap[5]);
 ({ jsx: closure_14, jsxs: closure_15, Fragment: closure_16 } = arg1(dependencyMap[6]));
 let obj = arg1(dependencyMap[7]);
-obj = { nitroWheel: { <string:1140607356>: "boolean", <string:1751293292>: "string" } };
+obj = { nitroWheel: { <string:1632221346>: "boolean", <string:2722977214>: "string" } };
 obj = { tintColor: importDefault(dependencyMap[8]).colors.CONTROL_BRAND_FOREGROUND_NEW };
 obj.nitroWheelPurple = obj;
-obj.emojiDescriptionWrapperOuter = { colors: "24c4788690396bae9cc4c1af395a6a87", concat: "BicycleIcon", y: "png", isArray: true };
+obj.emojiDescriptionWrapperOuter = { onTapReferralRedeem: "png", onGiftIntentCardViewed: "SERVER_GUIDE_CHANNEL_SELECTED", onTapGiftIntentPrimaryCta: "_gameProfileResults", onTapGiftIntentSecondaryCta: "r" };
 obj.starIcon = {};
 const tmp4 = arg1(dependencyMap[6]);
 obj.starIconSelected = { tintColor: importDefault(dependencyMap[8]).colors.ICON_FEEDBACK_WARNING };
 const obj1 = { tintColor: importDefault(dependencyMap[8]).colors.ICON_FEEDBACK_WARNING };
 obj.starIconUnselected = { tintColor: importDefault(dependencyMap[8]).colors.INTERACTIVE_TEXT_DEFAULT };
-const obj2 = { tintColor: importDefault(dependencyMap[8]).colors.INTERACTIVE_TEXT_DEFAULT };
-obj.moreMenuIcon = { color: importDefault(dependencyMap[8]).colors.INTERACTIVE_ICON_DEFAULT };
+const obj3 = { "Null": "isArray", "Null": "handleJoinThreadVoice", "Null": "isArray", "Null": "useActionBarPrimaryButton", color: importDefault(dependencyMap[8]).colors.INTERACTIVE_ICON_DEFAULT };
+obj.moreMenuIcon = obj3;
 obj.bottomCtaButton = { marginTop: 24 };
-obj.ctaDescriptionWrapper = {};
-const obj3 = { color: importDefault(dependencyMap[8]).colors.INTERACTIVE_ICON_DEFAULT };
+obj.ctaDescriptionWrapper = { "Bool(true)": true, "Bool(true)": true, "Bool(true)": true, "Bool(true)": true, "Bool(true)": true };
+const obj2 = { tintColor: importDefault(dependencyMap[8]).colors.INTERACTIVE_TEXT_DEFAULT };
 obj.betaTag = { backgroundColor: importDefault(dependencyMap[8]).colors.WHITE };
 const obj4 = { backgroundColor: importDefault(dependencyMap[8]).colors.WHITE };
 obj.betaTagTextAddPack = { color: importDefault(dependencyMap[8]).unsafe_rawColors.BRAND_530 };
@@ -173,7 +173,7 @@ export default function CustomEmojiContent(emojiNode) {
   const items2 = [customEmojiFromJoinedGuild, stateFromStores1];
   const memo = React.useMemo(() => {
     if (null == customEmojiFromJoinedGuild) {
-      let obj = { 0: true, 9223372036854775807: false, 0: false };
+      let obj = { ddd: true, nm: false, channelId: false };
     } else {
       obj = {};
       let tmp;
@@ -285,7 +285,7 @@ export default function CustomEmojiContent(emojiNode) {
   const items4 = [renderStarIcon(importDefault(dependencyMap[37]), obj6), ];
   const obj8 = { style: obj.emojiDescriptionWrapperOuter };
   obj9 = { style: obj.emojiDescriptionWrapper };
-  const obj10 = { INTEGRATION_CREATE: -833552028, ConstraintReasonCode: -314949303, children: ":" + emojiNode.alt + ":" };
+  const obj10 = { children: ":" + emojiNode.alt + ":" };
   const items5 = [renderStarIcon(arg1(dependencyMap[29]).Text, obj10), ];
   let tmp35 = null != emojiDescription;
   if (tmp35) {
@@ -365,11 +365,11 @@ export default function CustomEmojiContent(emojiNode) {
       if (type === emojiNode(nonce[24]).EmojiPopoutType.GET_PREMIUM) {
         let obj = { style: obj2 };
         obj = {
-          borderWidth: true,
-          height: "/assets/.cache/intl/bW9kdWxlcy9jaGVja291dC9tZXNzYWdlcw==",
-          textAlign: null,
-          textAlignVertical: "f97d64312921f5ef7b3340956e698c3b",
-          flexDirection: "el.messages.f97d64312921f5ef7b3340956e698c3b.compiled.messages",
+          "Null": false,
+          "Null": true,
+          "Null": false,
+          "Null": null,
+          "Null": "start",
           icon: renderNitroWheel(),
           text: emojiPopoutData.text,
           onPress() {
@@ -399,7 +399,7 @@ export default function CustomEmojiContent(emojiNode) {
     tmp66 = null;
     if (tmp28) {
       const obj19 = { style: obj2 };
-      const obj20 = { h: 40, g: true, z: "/assets/.cache/intl/bW9kdWxlcy9nb19saXZlL3dlYi9tb2RhbA==" };
+      const obj20 = {};
       const intl4 = arg1(dependencyMap[30]).intl;
       obj20.text = intl4.string(arg1(dependencyMap[30]).t.riu2R5);
       obj20.onPress = function onPress() {

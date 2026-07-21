@@ -1,9 +1,9 @@
-// Module ID: 6881
-// Function ID: 54644
+// Module ID: 6885
+// Function ID: 54654
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 
-// Module 6881 (_createForOfIteratorHelperLoose)
+// Module 6885 (_createForOfIteratorHelperLoose)
 function _createForOfIteratorHelperLoose(@@iterator) {
   let arg1 = Symbol_iterator;
   @@iterator = "undefined" !== typeof Symbol;
@@ -109,7 +109,7 @@ importDefaultResult = new importDefaultResult("GuildBasicChannels");
 let tmp4 = () => {
   class GuildBasicChannels {
     constructor() {
-      f54675 = this;
+      f54685 = this;
       tmp = closure_6(this, GuildBasicChannels);
       this.synced = null;
       this.actions = {
@@ -512,7 +512,7 @@ let tmp4 = () => {
       let iter2;
       const self = this;
       closure_17.verbose("Starting to write all basic channels");
-      const obj = { variant: false, allowFontScaling: true };
+      const obj = { -9223372036854775808: -536870861, -9223372036854775808: -299892737 };
       const tmp3 = callback4(store.getGuildIds());
       let iter = tmp3();
       if (!iter.done) {

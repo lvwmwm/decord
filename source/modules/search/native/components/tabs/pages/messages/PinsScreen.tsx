@@ -1,19 +1,19 @@
-// Module ID: 15273
-// Function ID: 116152
+// Module ID: 15280
+// Function ID: 116176
 // Name: InitialPinsScreen
-// Dependencies: [31, 9091, 10061, 2, 57, 31, 1348, 3765, 1849, 10065, 10062, 9091, 653, 33, 566, 15206, 11380, 11388]
+// Dependencies: [31, 9095, 10067, 2, 57, 31, 1348, 3765, 1849, 10071, 10068, 9095, 653, 33, 566, 15213, 11387, 11395]
 
-// Module 15273 (InitialPinsScreen)
+// Module 15280 (InitialPinsScreen)
 import importAllResult from "module_31";
 import SearchAutocompleteSelectAnalyticsActions from "SearchAutocompleteSelectAnalyticsActions";
 import { FetchState } from "SearchAutocompleteSelectAnalyticsActions";
 import toAnalyticsSearchFilterType from "toAnalyticsSearchFilterType";
-import keys from "keys";
+import result2 from "result2";
 import _slicedToArray from "_slicedToArray";
 import { SearchResultContentEntityTypes as closure_11 } from "module_31";
 import { SearchTypes } from "_isNativeReflectConstruct";
 import { jsx } from "_isNativeReflectConstruct";
-import module_11388 from "module_11388";
+import module_11395 from "module_11395";
 
 function InitialPinsScreen(searchContext) {
   searchContext = searchContext.searchContext;
@@ -21,7 +21,7 @@ function InitialPinsScreen(searchContext) {
   const isFocused = searchContext.isFocused;
   const importDefault = isFocused;
   let obj = arg1(dependencyMap[8]);
-  let items = [keys];
+  let items = [result2];
   const items1 = [searchContext];
   const stateFromStores = obj.useStateFromStores(items, () => callback.isInitialSearchQuery(searchContext), items1);
   const dependencyMap = stateFromStores;
@@ -83,7 +83,7 @@ function InitialPinsScreen(searchContext) {
     const result = obj.trackSearchResultClicked(obj);
     onPressMessageItem(channelId, messageId);
   }, items4);
-  keys = callback;
+  result2 = callback;
   closure_8 = importAllResult.useRef({});
   const items5 = [fullscreenPlaceholderCount, callback, showLoading, items];
   const memo = importAllResult.useMemo(() => {
@@ -145,7 +145,7 @@ function InitialPinsScreen(searchContext) {
   return jsx(importDefault(dependencyMap[14]), obj);
 }
 ({ MESSAGE_PLACEHOLDER_ITEM_SIZE: closure_8, SearchListItemTypes: closure_9, SEARCH_PINNED_MESSAGES_LINE_CLAMP: closure_10 } = _slicedToArray);
-const result = module_11388.fileFinishedImporting("modules/search/native/components/tabs/pages/messages/PinsScreen.tsx");
+const result = module_11395.fileFinishedImporting("modules/search/native/components/tabs/pages/messages/PinsScreen.tsx");
 
 export default importAllResult.memo(function PinsScreen(searchContext) {
   let isFocused;
@@ -154,7 +154,7 @@ export default importAllResult.memo(function PinsScreen(searchContext) {
   const arg1 = searchContext;
   ({ tab, isFocused } = searchContext);
   let obj = arg1(dependencyMap[8]);
-  const items = [keys];
+  const items = [result2];
   const items1 = [searchContext];
   if (!obj.useStateFromStores(items, () => initialSearchQuery.isInitialSearchQuery(searchContext), items1)) {
     obj = { searchContext, tab, isFocused };

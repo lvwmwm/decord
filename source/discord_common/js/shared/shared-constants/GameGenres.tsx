@@ -1,7 +1,7 @@
 // Module ID: 486
 // Function ID: 6305
 // Name: set
-// Dependencies: []
+// Dependencies: [284214097]
 
 // Module 486 (set)
 const obj = { ACTION_GENRES: new Set([]) };
@@ -10,8 +10,8 @@ obj.ADVENTURE_GENRES = new Set([]);
 const set1 = new Set([]);
 obj.DRIVING_RACING_GENRES = new Set([]);
 const set2 = new Set([]);
-obj.MASSIVELY_MULTIPLAYER_GENRES = new Set([null, null, null]);
-const set3 = new Set([null, null, null]);
+obj.MASSIVELY_MULTIPLAYER_GENRES = new Set([]);
+const set3 = new Set([]);
 obj.ROLE_PLAYING_GENRES = new Set([]);
 const set4 = new Set([]);
 obj.SHOOTER_GENRES = new Set([]);

@@ -1,9 +1,9 @@
-// Module ID: 12450
-// Function ID: 95142
+// Module ID: 12457
+// Function ID: 95165
 // Name: CLOSED
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 12450 (CLOSED)
+// Module 12457 (CLOSED)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("modules/gateway/ConnectionState.tsx");
 

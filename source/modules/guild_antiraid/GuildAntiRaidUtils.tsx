@@ -1,10 +1,10 @@
-// Module ID: 7691
-// Function ID: 61350
+// Module ID: 7695
+// Function ID: 61362
 // Name: hasDetectedRaid
 // Dependencies: []
 // Exports: getDisabledInterventions, getEnabledInterventions, getIncidentAlertType, getSecurityActionDetailsString, hasDMsDisabled, hasDetectedActivity, hasDetectedDMRaid, hasInvitesDisabled, initialLockdownDurationHours, isUnderLockdown
 
-// Module 7691 (hasDetectedRaid)
+// Module 7695 (hasDetectedRaid)
 function hasDetectedRaid(raidDetectedAt) {
   let tmp = null != raidDetectedAt.raidDetectedAt;
   if (tmp) {

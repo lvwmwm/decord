@@ -1,10 +1,10 @@
-// Module ID: 7016
-// Function ID: 56333
+// Module ID: 7020
+// Function ID: 56344
 // Name: _generateAnimationSource
 // Dependencies: []
 // Exports: useBurstReactionAnimationSource, useSuperReactionAnimationSourceFromLocalImage
 
-// Module 7016 (_generateAnimationSource)
+// Module 7020 (_generateAnimationSource)
 async function _generateAnimationSource(arg0, arg1, name, arg3, arg4) {
   let tmp23;
   let tmp24;

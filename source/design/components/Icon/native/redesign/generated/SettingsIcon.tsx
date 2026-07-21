@@ -1,10 +1,10 @@
-// Module ID: 5784
-// Function ID: 49414
+// Module ID: 5786
+// Function ID: 49457
 // Name: SettingsIcon
-// Dependencies: [33554480, 4026531840, 14608, 7936, 1483008, 966912]
+// Dependencies: []
 // Exports: SettingsIcon
 
-// Module 5784 (SettingsIcon)
+// Module 5786 (SettingsIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/SettingsIcon.tsx");

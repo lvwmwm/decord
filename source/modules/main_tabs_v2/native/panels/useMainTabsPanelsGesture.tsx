@@ -1,10 +1,10 @@
-// Module ID: 14658
-// Function ID: 110561
+// Module ID: 14665
+// Function ID: 110583
 // Name: useMainTabsPanelsGesture
 // Dependencies: []
 // Exports: default
 
-// Module 14658 (useMainTabsPanelsGesture)
+// Module 14665 (useMainTabsPanelsGesture)
 let closure_3 = importAll(dependencyMap[0]);
 const LaunchPadTypes = arg1(dependencyMap[1]).LaunchPadTypes;
 const isAndroidResult = arg1(dependencyMap[2]).isAndroid();
@@ -237,7 +237,7 @@ export default function useMainTabsPanelsGesture(canDrag) {
   N.__initData = closure_11;
   const animatedReaction = arg1(dependencyMap[7]).useAnimatedReaction(U, N);
   const obj6 = arg1(dependencyMap[7]);
-  const sharedValue4 = arg1(dependencyMap[7]).useSharedValue({ "Null": false, "Null": true });
+  const sharedValue4 = arg1(dependencyMap[7]).useSharedValue({ max: -536870861, guildId: -299892737 });
   closure_16 = sharedValue4;
   context = React.useContext(importDefault(dependencyMap[11]));
   const items3 = [tmp2, sharedValue, tmp3, width, sharedValue1, callback1, onDragStart, canDrag, sharedValue4, tmp, cancelOnSwipeRightFromStart, sharedValue2, callback, context, sharedValue3];

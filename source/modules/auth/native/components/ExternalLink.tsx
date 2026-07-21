@@ -1,10 +1,10 @@
-// Module ID: 14633
-// Function ID: 110371
+// Module ID: 14640
+// Function ID: 110393
 // Name: ExternalLink
 // Dependencies: []
 // Exports: default
 
-// Module 14633 (ExternalLink)
+// Module 14640 (ExternalLink)
 let closure_3 = importAll(dependencyMap[0]);
 ({ Linking: closure_4, ScrollView: closure_5, View: closure_6 } = arg1(dependencyMap[1]));
 const tmp2 = arg1(dependencyMap[1]);
@@ -23,7 +23,7 @@ let closure_9 = arg1(dependencyMap[3]).createStyles((arg0) => {
   const space2 = importDefault(dependencyMap[4]).space;
   obj.paddingRight = arg0 ? space2.PX_24 : space2.PX_16;
   obj.container = obj;
-  obj.description = { concat: -0.0014069081515246523, now: -0.0001058445630777106 };
+  obj.description = { "Bool(true)": "absolute", "Bool(true)": 0 };
   return obj;
 });
 const obj = arg1(dependencyMap[3]);
@@ -44,7 +44,7 @@ export default function ExternalLink(externalURL) {
   const effect = React.useEffect(() => {
     callback();
   }, items1);
-  obj = { "Bool(true)": "uppercase", "Bool(true)": 0.5, contentContainerStyle: tmp.container };
+  obj = { "Bool(false)": "NOT_RESPONDER", "Bool(false)": "RESPONDER_INACTIVE_PRESS_IN", contentContainerStyle: tmp.container };
   obj = {};
   const obj1 = {};
   const intl = arg1(dependencyMap[8]).intl;
@@ -57,7 +57,7 @@ export default function ExternalLink(externalURL) {
   obj.children = items2;
   const items3 = [callback2(closure_6, obj), ];
   const obj3 = {};
-  const obj4 = { 312886: "fa1758b003badba48305d2353659aabf", 1673594449: "ko.messages.fa1758b003badba48305d2353659aabf.compiled.messages" };
+  const obj4 = { "Bool(false)": "e48043bf745ca0395ac959c7415a3757", "Bool(false)": "sv-SE.messages.e48043bf745ca0395ac959c7415a3757.compiled.messages" };
   const intl3 = arg1(dependencyMap[8]).intl;
   obj4.text = intl3.string(arg1(dependencyMap[8]).t.2ixEBi);
   obj4.onPress = callback;

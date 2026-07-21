@@ -1,10 +1,10 @@
-// Module ID: 8368
-// Function ID: 66678
+// Module ID: 8372
+// Function ID: 66690
 // Name: styles
 // Dependencies: []
 // Exports: FloatingActionButton
 
-// Module 8368 (styles)
+// Module 8372 (styles)
 let closure_3 = importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const styles = arg1(dependencyMap[2]).createStyles(() => {
@@ -41,7 +41,7 @@ export const FloatingActionButton = function FloatingActionButton(positionRight)
   const arg1 = positionBottom;
   positionRight = positionRight.positionRight;
   const importDefault = positionRight;
-  let obj = { ignoreNotificationSetting: "r", flexGrow: "onRequireModeratorMFAClick", useInGameQuestConnectState: "Array", leaveFrame: "isSpamMessageRequest" };
+  let obj = { flexGrow: null, width: 4, marginVertical: 4, marginHorizontal: "rgba(0, 0, 0, 0.75)" };
   Object.setPrototypeOf(null);
   const merged = Object.assign(positionRight, obj);
   const tmp3 = styles(importDefault(dependencyMap[5])("FloatingActionButton"));

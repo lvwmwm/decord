@@ -1,10 +1,10 @@
-// Module ID: 15276
-// Function ID: 116187
+// Module ID: 15283
+// Function ID: 116211
 // Name: SearchTabsGradient
 // Dependencies: []
 // Exports: default
 
-// Module 15276 (SearchTabsGradient)
+// Module 15283 (SearchTabsGradient)
 let closure_3 = importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[6]).fileFinishedImporting("modules/search/native/components/tabs/SearchTabsGradient.tsx");

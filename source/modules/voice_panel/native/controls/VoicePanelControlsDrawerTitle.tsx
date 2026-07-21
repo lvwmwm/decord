@@ -1,33 +1,33 @@
-// Module ID: 11361
-// Function ID: 88355
+// Module ID: 11368
+// Function ID: 88379
 // Dependencies: []
 
-// Module 11361
+// Module 11368
 const StyleSheet = arg1(dependencyMap[1]).StyleSheet;
 const importAllResult = importAll(dependencyMap[0]);
 ({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[3]));
 let obj1 = arg1(dependencyMap[4]);
 let obj = { titleWrapper: { height: arg1(dependencyMap[2]).CONTROLS_DRAWER_HEADER_SIZE } };
-obj = { borderRadius: importDefault(dependencyMap[5]).radii.round };
+obj = { "Bool(false)": 20, "Bool(false)": null, "Bool(false)": "row", "Bool(false)": "center", borderRadius: importDefault(dependencyMap[5]).radii.round };
 obj.titlePill = obj;
 obj1 = { backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_SURFACE_HIGH };
 obj.titlePillBG = obj1;
 let closure_6 = obj1.createStyles(obj);
 let closure_7 = { code: "function VoicePanelControlsDrawerTitleTsx1(){const{shown,_shown,disablePill,backgroundColor}=this.__closure;const showBGColor=shown!=null?shown.get():_shown.get();return{backgroundColor:showBGColor&&!disablePill?backgroundColor:'transparent'};}" };
 const tmp2 = arg1(dependencyMap[3]);
-const memoResult = importAllResult.memo(function VoicePanelControlsDrawerTitle(children) {
+const memoResult = importAllResult.memo(function VoicePanelControlsDrawerTitle(shown) {
   let blurStyle;
   let style;
-  const shown = children.shown;
+  shown = shown.shown;
   const arg1 = shown;
-  let flag = children.disablePill;
+  let flag = shown.disablePill;
   if (flag === undefined) {
     flag = false;
   }
   const importDefault = flag;
   let dependencyMap;
   let StyleSheet;
-  ({ style, blurStyle } = children);
+  ({ style, blurStyle } = shown);
   const tmp = callback2();
   let obj = arg1(dependencyMap[6]);
   let sharedValue = obj.useSharedValue(true);
@@ -73,7 +73,8 @@ const memoResult = importAllResult.memo(function VoicePanelControlsDrawerTitle(c
   const obj2 = { style: items2 };
   const items2 = [tmp.titlePill, animatedStyle];
   const tmp7 = importDefault(dependencyMap[8]);
-  obj2.children = callback(arg1(dependencyMap[10]).Text, { children: children.title });
+  const obj3 = { 1655478700: 17, 72438626: "message_display_compact", 1446732292: "message", children: shown.title };
+  obj2.children = callback(arg1(dependencyMap[10]).Text, obj3);
   items1[1] = callback(importDefault(dependencyMap[9]), obj2);
   obj.children = items1;
   return tmp4(tmp5, obj);

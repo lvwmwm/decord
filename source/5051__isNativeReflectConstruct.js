@@ -1,5 +1,5 @@
 // Module ID: 5051
-// Function ID: 43086
+// Function ID: 43104
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
@@ -19,12 +19,12 @@ let closure_2 = importDefault(dependencyMap[2]);
 let closure_3 = importDefault(dependencyMap[3]);
 let closure_4 = importDefault(dependencyMap[4]);
 
-export const NativeGesture = (BaseGesture) => {
-  class NativeGesture {
+export const LongPressGesture = (BaseGesture) => {
+  class LongPressGesture {
     constructor() {
       self = this;
-      tmp = NativeGesture(this, NativeGesture);
-      obj = closure_3(NativeGesture);
+      tmp = LongPressGesture(this, LongPressGesture);
+      obj = closure_3(LongPressGesture);
       tmp2 = closure_2;
       if (closure_5()) {
         tmp4 = globalThis;
@@ -36,27 +36,36 @@ export const NativeGesture = (BaseGesture) => {
       }
       tmp2Result = tmp2(self, constructResult);
       tmp2Result.config = {};
-      tmp2Result.handlerName = "NativeViewGestureHandler";
+      tmp2Result.handlerName = "LongPressGestureHandler";
+      result = tmp2Result.shouldCancelWhenOutside(true);
       return tmp2Result;
     }
   }
-  let closure_0 = NativeGesture;
-  callback2(NativeGesture, BaseGesture);
+  let closure_0 = LongPressGesture;
+  callback2(LongPressGesture, BaseGesture);
   let obj = {
-    key: "shouldActivateOnStart",
-    value: function shouldActivateOnStart(shouldActivateOnStart) {
-      this.config.shouldActivateOnStart = shouldActivateOnStart;
+    key: "minDuration",
+    value: function minDuration(CONTEXT_MENU_LONG_PRESS_DURATION_MS) {
+      this.config.minDurationMs = CONTEXT_MENU_LONG_PRESS_DURATION_MS;
       return this;
     }
   };
-  const items = [obj, ];
+  const items = [obj, , ];
   obj = {
-    key: "disallowInterruption",
-    value: function disallowInterruption(disallowInterruption) {
-      this.config.disallowInterruption = disallowInterruption;
+    key: "maxDistance",
+    value: function maxDistance(maxDist) {
+      this.config.maxDist = maxDist;
       return this;
     }
   };
   items[1] = obj;
-  return callback(NativeGesture, items);
+  obj = {
+    key: "numberOfPointers",
+    value: function numberOfPointers(numberOfPointers) {
+      this.config.numberOfPointers = numberOfPointers;
+      return this;
+    }
+  };
+  items[2] = obj;
+  return callback(LongPressGesture, items);
 }(arg1(dependencyMap[5]).BaseGesture);

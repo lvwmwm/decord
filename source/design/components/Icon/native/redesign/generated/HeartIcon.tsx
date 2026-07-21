@@ -1,10 +1,10 @@
-// Module ID: 8662
-// Function ID: 68552
+// Module ID: 8666
+// Function ID: 68564
 // Name: HeartIcon
 // Dependencies: []
 // Exports: HeartIcon
 
-// Module 8662 (HeartIcon)
+// Module 8666 (HeartIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/HeartIcon.tsx");

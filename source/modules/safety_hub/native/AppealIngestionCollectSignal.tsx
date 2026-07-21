@@ -1,10 +1,10 @@
-// Module ID: 11031
-// Function ID: 85899
+// Module ID: 11036
+// Function ID: 85920
 // Name: AppealSignalRadioRow
 // Dependencies: []
 // Exports: default
 
-// Module 11031 (AppealSignalRadioRow)
+// Module 11036 (AppealSignalRadioRow)
 function AppealSignalRadioRow(signal) {
   let accessibilityRole;
   let accessibilityState;
@@ -32,7 +32,7 @@ const View = arg1(dependencyMap[1]).View;
 const tmp3 = arg1(dependencyMap[2]);
 ({ jsx: closure_6, jsxs: closure_7 } = arg1(dependencyMap[3]));
 let obj = arg1(dependencyMap[4]);
-obj = { container: { label: null, gap: null } };
+obj = { container: { surrogates: true, scales: null } };
 obj = { marginBottom: 16, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_LOW };
 obj.form = obj;
 const tmp4 = arg1(dependencyMap[3]);

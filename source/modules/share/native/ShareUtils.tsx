@@ -1,10 +1,10 @@
-// Module ID: 12779
-// Function ID: 97947
+// Module ID: 12786
+// Function ID: 97970
 // Name: _sendShareMessage
 // Dependencies: []
 // Exports: sendShareMessage, showInformationToast
 
-// Module 12779 (_sendShareMessage)
+// Module 12786 (_sendShareMessage)
 function _sendShareMessage() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);

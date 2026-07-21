@@ -1,10 +1,10 @@
-// Module ID: 6581
-// Function ID: 50745
+// Module ID: 6583
+// Function ID: 50788
 // Name: TabletSpotIllustration
 // Dependencies: []
 // Exports: TabletSpotIllustration
 
-// Module 6581 (TabletSpotIllustration)
+// Module 6583 (TabletSpotIllustration)
 const jsx = require(dependencyMap[0]).jsx;
 const _module = require(dependencyMap[3]);
 const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/TabletSpotIllustration.native.tsx");

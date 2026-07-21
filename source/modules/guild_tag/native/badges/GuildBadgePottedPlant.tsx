@@ -1,16 +1,16 @@
-// Module ID: 12828
-// Function ID: 98134
+// Module ID: 12835
+// Function ID: 98157
 // Name: items
 // Dependencies: []
 // Exports: GuildBadgePottedPlant
 
-// Module 12828 (items)
+// Module 12835 (items)
 importAll(dependencyMap[0]);
 ({ jsx: closure_2, jsxs: closure_3 } = arg1(dependencyMap[1]));
-let closure_4 = [-0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000023534373682772776, -92559631349653940000000000000000000000000000000000000000000000, 8592593576.156181];
-let closure_5 = ["<string:3704409292>", "<string:1150632255>", "<string:1027735553>"];
+let closure_4 = ["<string:3704409292>", "<string:1146569023>", "<string:1665269761>"];
+let closure_5 = ["__d", "r", "isArray"];
 const items = [{}, {}, {}];
-let closure_7 = [null, null, "IconAnimation_Notifications_3D_LottieFix02"];
+let closure_7 = [-957777708, 1060257900, 1236950581];
 let closure_8 = [];
 const items1 = [{}, {}, {}];
 const tmp3 = arg1(dependencyMap[1]);
@@ -29,7 +29,7 @@ export const GuildBadgePottedPlant = function GuildBadgePottedPlant(width) {
   if (num2 === undefined) {
     num2 = 24;
   }
-  let obj = { onValueChange: "r", step: "onRequireModeratorMFAClick", flexDirection: "Array", alignItems: "isSpamMessageRequest" };
+  let obj = { "Bool(true)": null, "Bool(true)": 4, "Bool(true)": 4, "Bool(true)": "rgba(0, 0, 0, 0.75)" };
   ({ primaryTintColor, secondaryTintColor } = width);
   Object.setPrototypeOf(null);
   const merged = Object.assign(width, obj);
@@ -56,7 +56,7 @@ export const GuildBadgePottedPlant = function GuildBadgePottedPlant(width) {
   }
   obj6.fill = str;
   items[5] = callback(arg1(dependencyMap[3]).Path, obj6);
-  items[6] = callback(arg1(dependencyMap[3]).Path, {});
+  items[6] = callback(arg1(dependencyMap[3]).Path, { "Bool(false)": 4, "Bool(false)": 16 });
   const obj7 = { d: "M12 14H4v-2h8v2ZM13 11H5v-1h8v1Z" };
   let tmp9;
   if (null != secondaryColorsTransformed) {

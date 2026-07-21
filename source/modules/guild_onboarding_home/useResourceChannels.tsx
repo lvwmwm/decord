@@ -1,10 +1,10 @@
-// Module ID: 15153
-// Function ID: 114299
+// Module ID: 15160
+// Function ID: 114323
 // Name: useResourceChannels
 // Dependencies: []
 // Exports: default
 
-// Module 15153 (useResourceChannels)
+// Module 15160 (useResourceChannels)
 let closure_2 = importDefault(dependencyMap[0]);
 let closure_3 = importDefault(dependencyMap[1]);
 const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/guild_onboarding_home/useResourceChannels.tsx");

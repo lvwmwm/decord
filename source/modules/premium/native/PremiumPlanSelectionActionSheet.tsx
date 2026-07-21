@@ -1,10 +1,10 @@
-// Module ID: 6651
-// Function ID: 51141
+// Module ID: 6657
+// Function ID: 51190
 // Name: hasRelevantTrialOfferForOrder
 // Dependencies: []
 // Exports: default
 
-// Module 6651 (hasRelevantTrialOfferForOrder)
+// Module 6657 (hasRelevantTrialOfferForOrder)
 function hasRelevantTrialOfferForOrder(orderRequired) {
   let order;
   let premiumType;
@@ -198,7 +198,7 @@ function PlanOption(premiumItem) {
     const intl = arg1(closure_2[19]).intl;
     obj = {};
     let obj7 = arg1(closure_2[25]);
-    obj.price = obj7.formatPrice(0, USD, { "Bool(true)": false, "Bool(true)": true });
+    obj.price = obj7.formatPrice(0, USD, { 1: -536870861, 2: -299892737 });
     let formatToPlainStringResult = intl.formatToPlainString(arg1(closure_2[19]).t.hXcaLT, obj);
   } else {
     formatToPlainStringResult = discountedPriceString;
@@ -391,13 +391,13 @@ function PremiumPlanSelectionActionSheetCTA(isPaymentSuccess) {
   ({ onStartPayment: closure_0, shouldUseMobileWebRedirectCheckout } = isPaymentSuccess);
   const importDefault = shouldUseMobileWebRedirectCheckout;
   if (isPaymentSuccess.isPaymentSuccess) {
-    let obj = { h: 40, g: true, z: "/assets/.cache/intl/bW9kdWxlcy9nb19saXZlL3dlYi9tb2RhbA==" };
+    let obj = {};
     const intl = arg1(dependencyMap[19]).intl;
     obj.text = intl.string(arg1(dependencyMap[19]).t.WAI6xu);
     obj.onPress = tmp;
     return callback4(arg1(dependencyMap[26]).Button, obj);
   } else {
-    const tmp5 = shouldUseMobileWebRedirectCheckout ? {} : { st: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000006675221587890415, borderWidth: -0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000019656836438479222 };
+    const tmp5 = shouldUseMobileWebRedirectCheckout ? {} : { key: "application/x-www-form-urlencoded", onCloseCallback: "application/x-www-form-urlencoded" };
     obj = { text: tmp2 };
     const merged = Object.assign(tmp5);
     obj["grow"] = true;
@@ -773,7 +773,7 @@ function PremiumPlanSelectionActionSheet(premiumItems) {
                 }
                 const obj2 = { style: callback.contentSelectPlan };
                 if (tmp11) {
-                  const obj3 = { INTEGRATION_CREATE: 8, ConstraintReasonCode: 32, style: tmp.trialDisclaimer };
+                  const obj3 = { style: tmp.trialDisclaimer };
                   const intl2 = callback(premiumItems[19]).intl;
                   obj3.children = intl2.string(callback(premiumItems[19]).t.u95Dt4);
                   let tmp11 = getActivatedText(callback(premiumItems[18]).Text, obj3);
@@ -785,7 +785,7 @@ function PremiumPlanSelectionActionSheet(premiumItems) {
                       tmp11 = null;
                       if (null != premiumType) {
                         const obj4 = {};
-                        const obj5 = { INTEGRATION_CREATE: 8, ConstraintReasonCode: 32, style: tmp.discountDisclaimer };
+                        const obj5 = { style: tmp.discountDisclaimer };
                         const intl = callback(premiumItems[19]).intl;
                         const obj6 = { regularPrice: _undefined.priceString, discountedPrice: discountedPriceString };
                         obj5.children = intl.format(callback(premiumItems[19]).t.yBn7uz, obj6);
@@ -927,7 +927,7 @@ function getItemsByPremiumTypePredicate(arg0) {
     return tmp;
   };
 }
-let closure_3 = [];
+let closure_3 = [18353809722909772000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, -0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000018607811561138023, -0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000009214152251920819];
 let closure_4 = importDefault(dependencyMap[0]);
 let closure_5 = importDefault(dependencyMap[1]);
 let closure_6 = importDefault(dependencyMap[2]);
@@ -950,7 +950,7 @@ const tmp6 = arg1(dependencyMap[12]);
 const tmp7 = arg1(dependencyMap[13]);
 ({ jsx: closure_34, jsxs: closure_35, Fragment: closure_36 } = arg1(dependencyMap[14]));
 let obj = arg1(dependencyMap[15]);
-obj = { body: { padding: 16 }, headerText: { flexDirection: "ignoreLogs", alignItems: "isArrayBuffer" }, contentSelectPlan: { marginBottom: 16 }, contentActivated: { ownedByVerticalScrollExperiment: "mn", desktopBitrate: "content", HeaderTitle: "from" }, contentActivatedText: {}, formTitle: { "Bool(false)": false, "Bool(false)": true }, formSectionBody: { backgroundColor: "none" }, formSectionBodyWithNoTitle: { marginTop: -24 }, planOptionRowContainer: { paddingHorizontal: 10 }, planOptionContainer: { "Bool(true)": 8, "Bool(true)": null, "Bool(true)": "\u270A\u{1F3FF}" }, planOptionPriceContainer: {}, planOptionDiscountContainer: {} };
+obj = { body: { padding: 16 }, headerText: { isArray: "trackAverageRenderTimeForOffsetProjection", no: "isArrayBuffer" }, contentSelectPlan: { marginBottom: 16 }, contentActivated: { gestureId: "mn", handlerTag: "content", shouldCancelWhenOutside: "from" }, contentActivatedText: {}, formTitle: { "Null": -536870861, "Null": -299892737 }, formSectionBody: { backgroundColor: "none" }, formSectionBodyWithNoTitle: { marginTop: -24 }, planOptionRowContainer: { paddingHorizontal: 10 }, planOptionContainer: {}, planOptionPriceContainer: {}, planOptionDiscountContainer: {} };
 obj = { borderRadius: importDefault(dependencyMap[16]).radii.lg, backgroundColor: importDefault(dependencyMap[16]).unsafe_rawColors.GREEN_360 };
 obj.planOptionDiscount = obj;
 const tmp8 = arg1(dependencyMap[14]);

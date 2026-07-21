@@ -1,10 +1,10 @@
-// Module ID: 9532
-// Function ID: 74266
+// Module ID: 9537
+// Function ID: 74283
 // Name: openCreateForumPostModal
 // Dependencies: []
 // Exports: closeCreateForumPostModal, openCreateForumPostModal
 
-// Module 9532 (openCreateForumPostModal)
+// Module 9537 (openCreateForumPostModal)
 const _module = require(dependencyMap[4]);
 const result = _module.fileFinishedImporting("modules/forums/native/composer/ForumComposerModalActionCreators.tsx");
 

@@ -1,10 +1,10 @@
-// Module ID: 9380
-// Function ID: 73146
+// Module ID: 9384
+// Function ID: 73160
 // Name: useEmojiAndSource
 // Dependencies: []
 // Exports: useEmojiAndSource
 
-// Module 9380 (useEmojiAndSource)
+// Module 9384 (useEmojiAndSource)
 let closure_2 = importDefault(dependencyMap[0]);
 let closure_3 = importDefault(dependencyMap[1]);
 let closure_4 = importAll(dependencyMap[2]);
@@ -48,7 +48,7 @@ export const useEmojiAndSource = function useEmojiAndSource(emojiId) {
       }
       obj.joinedEmojiSourceGuildRecord = closure_5.getGuild(guildId);
     } else {
-      obj = { "Bool(true)": false, "Bool(true)": false };
+      obj = { <string:3738052496>: "o", <string:3259460727>: "o" };
     }
     return obj;
   });

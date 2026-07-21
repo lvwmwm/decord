@@ -1,10 +1,10 @@
-// Module ID: 5505
-// Function ID: 46863
+// Module ID: 5507
+// Function ID: 46905
 // Name: getHigherContrastColor
 // Dependencies: []
 // Exports: getHigherContrastColor
 
-// Module 5505 (getHigherContrastColor)
+// Module 5507 (getHigherContrastColor)
 let closure_2 = importDefault(dependencyMap[0]);
 const result = arg1(dependencyMap[2]).fileFinishedImporting("modules/user_profile/utils/getHigherContrastColor.tsx");
 

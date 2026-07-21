@@ -1,10 +1,10 @@
-// Module ID: 8622
-// Function ID: 68315
+// Module ID: 8626
+// Function ID: 68327
 // Name: ImageItem
 // Dependencies: []
 // Exports: default
 
-// Module 8622 (ImageItem)
+// Module 8626 (ImageItem)
 function ImageItem(index) {
   let height;
   let url;
@@ -135,17 +135,17 @@ let obj = arg1(dependencyMap[5]);
 obj = {};
 obj = { gap: importDefault(dependencyMap[6]).space.PX_12, marginHorizontal: -importDefault(dependencyMap[6]).space.PX_16 };
 obj.container = obj;
-obj.scrollView = {};
+obj.scrollView = { "Null": 0.0000000000000000000000000000033526624607783214, "Null": 0.00000000000000000000005624835738502318 };
 const tmp2 = arg1(dependencyMap[2]);
 obj.scrollViewContent = { gap: importDefault(dependencyMap[6]).space.PX_12, paddingHorizontal: importDefault(dependencyMap[6]).space.PX_16 };
 const obj1 = { gap: importDefault(dependencyMap[6]).space.PX_12, paddingHorizontal: importDefault(dependencyMap[6]).space.PX_16 };
 const merged = Object.assign(importDefault(dependencyMap[6]).shadows.SHADOW_HIGH);
 obj.mediaItem = { borderRadius: importDefault(dependencyMap[6]).radii.lg };
-obj.mediaImage = { "Null": "5489cb913a06f6a88877637630ce77b7", "Null": "pl.messages.5489cb913a06f6a88877637630ce77b7.compiled.messages", "Null": "jsona" };
-const obj3 = { aze: 30271555, azj: 22092032, backgroundColor: importDefault(dependencyMap[6]).colors.BLACK };
-obj.mediaVideo = obj3;
-let closure_11 = obj.createStyles(obj);
+obj.mediaImage = {};
 const obj2 = { borderRadius: importDefault(dependencyMap[6]).radii.lg };
+obj.mediaVideo = { backgroundColor: importDefault(dependencyMap[6]).colors.BLACK };
+let closure_11 = obj.createStyles(obj);
+const obj3 = { backgroundColor: importDefault(dependencyMap[6]).colors.BLACK };
 const result = arg1(dependencyMap[15]).fileFinishedImporting("modules/game_profile/native/components/GameProfileMedia.tsx");
 
 export default function GameProfileMedia(game) {
@@ -269,7 +269,7 @@ export default function GameProfileMedia(game) {
   let closure_18 = React.useCallback((arg0) => {
     const current = ref.current;
     if (null != current) {
-      const obj = { "Null": true, "Null": true, "Null": true, x: memo2[arg0] };
+      const obj = { max: "x", guildId: "fileFinishedImporting", renderIcon: "o", x: memo2[arg0] };
       current.scrollTo(obj);
     }
     callback2(arg0);

@@ -1,10 +1,10 @@
-// Module ID: 8923
-// Function ID: 70376
+// Module ID: 8927
+// Function ID: 70388
 // Name: onConnectToConsole
 // Dependencies: []
 // Exports: useOnConnectToConsole
 
-// Module 8923 (onConnectToConsole)
+// Module 8927 (onConnectToConsole)
 function onConnectToConsole(channel, found) {
   const result = found(dependencyMap[2]).UNSAFE_markDismissibleContentAsDismissed(found(dependencyMap[3]).DismissibleContent.DONUT_MOBILE_NUX);
   if (found.twoWayLink) {

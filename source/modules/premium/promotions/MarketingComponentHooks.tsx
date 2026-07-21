@@ -1,10 +1,10 @@
-// Module ID: 9675
-// Function ID: 75324
+// Module ID: 9680
+// Function ID: 75341
 // Name: useThemeAndReducedMotionAwareAssetUrl
 // Dependencies: []
 // Exports: useThemeAndReducedMotionAwareAssetUrl
 
-// Module 9675 (useThemeAndReducedMotionAwareAssetUrl)
+// Module 9680 (useThemeAndReducedMotionAwareAssetUrl)
 let closure_3 = importDefault(dependencyMap[0]);
 const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/premium/promotions/MarketingComponentHooks.tsx");
 

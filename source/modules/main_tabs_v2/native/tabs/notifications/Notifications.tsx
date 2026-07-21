@@ -1,10 +1,10 @@
-// Module ID: 14994
-// Function ID: 112929
+// Module ID: 15001
+// Function ID: 112953
 // Name: goBack
 // Dependencies: []
 // Exports: ThemedNotificationsModal
 
-// Module 14994 (goBack)
+// Module 15001 (goBack)
 function goBack() {
   const navigation = arg1(dependencyMap[7]).getRootNavigationRef();
   if (null != navigation) {
@@ -120,11 +120,11 @@ obj = { backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_BASE_
 obj.containerOuterTablet = obj;
 obj1 = { backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_BASE_LOW, borderTopLeftRadius: importDefault(dependencyMap[6]).radii.sm, borderTopRightRadius: importDefault(dependencyMap[6]).radii.sm, flexGrow: 1 };
 obj.container = obj1;
-obj.headerTitle = { "Bool(true)": null, "Bool(true)": "flex-start", "Bool(true)": "hidden", "Bool(true)": 1 };
+obj.headerTitle = { zIndex: null, borderTopWidth: "flex-start", borderTopColor: "hidden", display: 1 };
 obj.actionButtons = {};
 const tmp2 = arg1(dependencyMap[4]);
 obj.headerClose = { marginRight: importDefault(dependencyMap[6]).space.PX_16, height: importDefault(dependencyMap[6]).space.PX_32, width: importDefault(dependencyMap[6]).space.PX_32, alignItems: "center", justifyContent: "center", borderRadius: importDefault(dependencyMap[6]).radii.lg };
-obj.headerText = { alignItems: "Lightbox Frame", position: "EdgeHTML" };
+obj.headerText = {};
 const obj2 = { marginRight: importDefault(dependencyMap[6]).space.PX_16, height: importDefault(dependencyMap[6]).space.PX_32, width: importDefault(dependencyMap[6]).space.PX_32, alignItems: "center", justifyContent: "center", borderRadius: importDefault(dependencyMap[6]).radii.lg };
 obj.headerBorder = { backgroundColor: importDefault(dependencyMap[6]).colors.BORDER_SUBTLE };
 let closure_9 = obj1.createStyles(obj);
@@ -153,7 +153,7 @@ let closure_10 = importAllResult.memo(function HeaderInner(nestedInLaunchPad) {
     obj2.onPress = goBack;
     obj2.children = callback(arg1(dependencyMap[14]).LeftBackIconWithBadge, {});
     const items1 = [callback(arg1(dependencyMap[12]).PressableOpacity, obj2), , ];
-    const obj3 = { type: "CREATE_CHANNEL_MODAL", isConnected: "allNodes", isInternetReachable: "Array", details: "MEDIA_POST_PREVIEW_EMBED_CLICKED", profile: "Y78KGC", style: tmp.headerText };
+    const obj3 = { style: tmp.headerText };
     const intl2 = arg1(dependencyMap[13]).intl;
     obj3.children = intl2.string(arg1(dependencyMap[13]).t.HcoRu0);
     items1[1] = callback(arg1(dependencyMap[15]).Text, obj3);

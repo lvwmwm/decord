@@ -1,19 +1,19 @@
-// Module ID: 9491
-// Function ID: 73972
+// Module ID: 9496
+// Function ID: 73988
 // Name: RatingSelector
 // Dependencies: []
 // Exports: default
 
-// Module 9491 (RatingSelector)
+// Module 9496 (RatingSelector)
 importAll(dependencyMap[0]);
 ({ View: closure_3, Image: closure_4 } = arg1(dependencyMap[1]));
 const tmp3 = arg1(dependencyMap[1]);
 ({ DEFAULT_RATINGS: closure_5, FeedbackRating: closure_6 } = arg1(dependencyMap[2]));
 const jsx = arg1(dependencyMap[3]).jsx;
 const tmp4 = arg1(dependencyMap[2]);
-let closure_8 = arg1(dependencyMap[4]).createStyles({ ratings: { "Bool(true)": null, "Bool(true)": null, "Bool(true)": null }, rating: {}, emoji: {} });
+let closure_8 = arg1(dependencyMap[4]).createStyles({ ratings: { padding: 0, paddingBottom: 6, flexDirection: 0 }, rating: {}, emoji: {} });
 const obj = arg1(dependencyMap[4]);
-let closure_9 = arg1(dependencyMap[4]).createStyles({ ratings: { -1109106918: null, 1392972412: "center", -159064748: null, -1387079916: "hidden", 1638852006: true }, rating: { width: "100%" }, emoji: { aze: "boolean", azj: "string" } });
+let closure_9 = arg1(dependencyMap[4]).createStyles({ ratings: { INVALID_PROVIDER: null, heart_decoration: "center", allowEmptyQueries: null, MESSAGE_SENT_WITH_GIF: "hidden", aspectRatio: true }, rating: { width: "100%" }, emoji: { bhk: "boolean", bic: "string" } });
 const obj2 = arg1(dependencyMap[4]);
 const result = arg1(dependencyMap[14]).fileFinishedImporting("modules/feedback/native/RatingSelector.tsx");
 

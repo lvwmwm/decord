@@ -1,10 +1,10 @@
-// Module ID: 9847
-// Function ID: 76238
+// Module ID: 9852
+// Function ID: 76254
 // Name: useChannelFollowerStats
 // Dependencies: []
 // Exports: default
 
-// Module 9847 (useChannelFollowerStats)
+// Module 9852 (useChannelFollowerStats)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 let closure_5 = importDefault(dependencyMap[2]);

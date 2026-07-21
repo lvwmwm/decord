@@ -1,16 +1,17 @@
 // Module ID: 3551
 // Function ID: 27654
 // Name: isPast
-// Dependencies: []
+// Dependencies: [3366, 3370]
 // Exports: default
 
 // Module 3551 (isPast)
-let closure_0 = _interopRequireDefault(require(dependencyMap[0]));
-let closure_1 = _interopRequireDefault(require(dependencyMap[1]));
+import startOfWeek from "startOfWeek";
+import getTimezoneOffsetInMilliseconds from "getTimezoneOffsetInMilliseconds";
+
 
 export default function isPast(defaultResult1) {
-  closure_1.default(1, arguments);
-  const time = closure_0.default(defaultResult1).getTime();
+  getTimezoneOffsetInMilliseconds.default(1, arguments);
+  const time = startOfWeek.default(defaultResult1).getTime();
   return time < Date.now();
 };
 export default exports.default;

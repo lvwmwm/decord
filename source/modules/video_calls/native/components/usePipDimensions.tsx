@@ -1,10 +1,10 @@
-// Module ID: 10528
-// Function ID: 82287
+// Module ID: 10534
+// Function ID: 82310
 // Name: usePipDimensions
 // Dependencies: []
 // Exports: default
 
-// Module 10528 (usePipDimensions)
+// Module 10534 (usePipDimensions)
 let closure_3 = importAll(dependencyMap[0]);
 const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/video_calls/native/components/usePipDimensions.tsx");
 

@@ -1,12 +1,12 @@
-// Module ID: 15508
-// Function ID: 118353
+// Module ID: 15515
+// Function ID: 118377
 // Name: getLaunchPadPullTabPositionCached
 // Dependencies: [0, 0, 0, 4294967295, 0, 0]
 // Exports: clearLaunchPadPullTabExclusionRect, persistLaunchPadPullTabPosition
 
-// Module 15508 (getLaunchPadPullTabPositionCached)
-import result from "result";
-import result from "result";
+// Module 15515 (getLaunchPadPullTabPositionCached)
+import __exportStarResult1 from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
 
 function getLaunchPadPullTabPositionCached() {
   const Storage = require(dependencyMap[1]).Storage;
@@ -67,11 +67,11 @@ function setLaunchPadPullTabExclusionRect() {
     const obj3 = require(dependencyMap[4]);
   }
 }
-({ LAUNCH_PAD_PULL_TAB_HEIGHT: closure_3, LAUNCH_PAD_PULL_TAB_INITIAL_POSITION: closure_4, LAUNCH_PAD_PULL_TAB_WIDTH: closure_5 } = result);
+({ LAUNCH_PAD_PULL_TAB_HEIGHT: closure_3, LAUNCH_PAD_PULL_TAB_INITIAL_POSITION: closure_4, LAUNCH_PAD_PULL_TAB_WIDTH: closure_5 } = __exportStarResult1);
 let closure_6 = "LAUNCH_PAD_PULL_TAB_POSITION_CACHE_KEY";
 let closure_7 = 0;
 let closure_8;
-result = result.fileFinishedImporting("modules/launchpad/native/LaunchPadPullTabCache.tsx");
+const result = __exportStarResult1.fileFinishedImporting("modules/launchpad/native/LaunchPadPullTabCache.tsx");
 
 export { getLaunchPadPullTabPositionCached };
 export { setLaunchPadPullTabPositionCached };

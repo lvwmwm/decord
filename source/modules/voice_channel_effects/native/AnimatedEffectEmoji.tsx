@@ -1,10 +1,13 @@
-// Module ID: 10579
-// Function ID: 82567
+// Module ID: 10585
+// Function ID: 82590
 // Name: Emoji
-// Dependencies: []
+// Dependencies: [0, 0, 4294967295, 4294967295, 4294967295, 4294967295, 0, 0]
 // Exports: default
 
-// Module 10579 (Emoji)
+// Module 10585 (Emoji)
+import __exportStarResult1 from "__exportStarResult1";
+import { View } from "__exportStarResult1";
+
 function Emoji(url) {
   url = url.url;
   const tmp = callback();
@@ -25,20 +28,18 @@ function Emoji(url) {
   }
   return tmp5;
 }
-let closure_3 = importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
 let closure_5 = importDefault(dependencyMap[2]);
 const jsx = arg1(dependencyMap[3]).jsx;
 let closure_7 = 6 * importDefault(dependencyMap[4]).Millis.SECOND;
 let closure_8 = 2 * importDefault(dependencyMap[4]).Millis.SECOND;
 let obj = arg1(dependencyMap[5]);
 obj = {};
-obj = { backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_SURFACE_HIGH, imageStyle: true, children: true, source: true, disabled: true, borderRadius: importDefault(dependencyMap[6]).radii.round };
+obj = { source: true, disabled: true, label: true, accessibilityRole: true, filter: true, backgroundColor: require("__exportStarResult1").colors.BACKGROUND_SURFACE_HIGH, borderRadius: require("__exportStarResult1").radii.round };
 obj.voiceChannelEffectEmojiContainer = obj;
-obj.voiceChannelEffectEmojiContainerTileNotch = { source: "soundboard_picker_collapsed_sections", disabled: "scalar" };
+obj.voiceChannelEffectEmojiContainerTileNotch = { handleVideoLoopedAnalytics: "soundboard_picker_collapsed_sections", useIsScreenIndexFrozenSharedValue: "scalar" };
 obj.voiceChannelEffectEmoji = { padding: 12 };
 obj.textEmoji = {};
-obj.imageEmoji = { aze: "boolean", azj: "string" };
+obj.imageEmoji = { bhk: "boolean", bic: "string" };
 let closure_9 = obj.createStyles(obj);
 let closure_10 = { code: "function AnimatedEffectEmojiTsx1(){const{withSequence,withTiming,ANIMATION_ROTATION_DEG,withDelay,useReducedMotion,STANDARD_EASING}=this.__closure;const rotate=withSequence(withTiming(ANIMATION_ROTATION_DEG+\"deg\",{duration:0}),withDelay(100,withTiming('0deg',{duration:useReducedMotion?0:300,easing:STANDARD_EASING})));const scale=withSequence(withTiming(0,{duration:0}),withDelay(100,withTiming(1,{duration:useReducedMotion?0:300,easing:STANDARD_EASING})));return{transform:[{scale:scale},{rotate:rotate}]};}" };
 const result = arg1(dependencyMap[13]).fileFinishedImporting("modules/voice_channel_effects/native/AnimatedEffectEmoji.tsx");

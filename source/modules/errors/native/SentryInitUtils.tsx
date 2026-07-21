@@ -386,7 +386,7 @@ let closure_12 = 0.05;
 let closure_13 = 0.005;
 let closure_14 = false;
 const obj = arg1(dependencyMap[4]);
-let closure_15 = arg1(dependencyMap[12]).filterThrottle({ currentTab: "doNotTrack", viewedTutorial: "all" });
+let closure_15 = arg1(dependencyMap[12]).filterThrottle({ "Bool(true)": true, "Bool(true)": true });
 const obj2 = arg1(dependencyMap[12]);
 const result1 = arg1(dependencyMap[22]).fileFinishedImporting("modules/errors/native/SentryInitUtils.tsx");
 
@@ -449,13 +449,13 @@ export const initSentry = function initSentry() {
           obj.tunnel = `/error-reporting-proxy/${str2}`;
           obj.autoInitializeNativeSdk = false;
           obj.beforeSend = closure_17;
-          obj.dist = "6028";
+          obj.dist = "6039";
           obj.dsn = SentryStaffDsn;
           obj.environment = ReleaseChannel;
           obj.tracesSampleRate = 0;
           obj.sampleRate = 1;
           obj.ignoreErrors = closure_11;
-          obj.release = "discord_android@340.0.0-2+340200";
+          obj.release = "discord_android@340.1.0-2+340201";
           const items = [closure_7];
           obj.tracePropagationTargets = items;
           const items1 = [closure_8, , ];
@@ -486,7 +486,7 @@ export const initSentry = function initSentry() {
           };
           obj4.init(obj);
           const obj8 = callback(closure_3[4]);
-          callback(closure_3[4]).setTag("buildNumber", "6028");
+          callback(closure_3[4]).setTag("buildNumber", "6039");
           const obj10 = callback(closure_3[4]);
           callback(closure_3[4]).setTag("appVersion", constants.Version);
           const obj11 = callback(closure_3[4]);

@@ -1,10 +1,10 @@
-// Module ID: 12526
-// Function ID: 96262
+// Module ID: 12533
+// Function ID: 96285
 // Name: PremiumRewardsOrbsTreatment
 // Dependencies: []
 // Exports: getPremiumRewardsOrbsExperiment, usePremiumRewardsOrbsExperiment
 
-// Module 12526 (PremiumRewardsOrbsTreatment)
+// Module 12533 (PremiumRewardsOrbsTreatment)
 let obj = { CONTROL: "control", TREATMENT_A: "treatment_a", TREATMENT_B: "treatment_b", TREATMENT_C: "treatment_c", TREATMENT_D: "treatment_d" };
 let closure_1 = { [obj.CONTROL]: 0, [obj.TREATMENT_A]: 250, [obj.TREATMENT_B]: 500, [obj.TREATMENT_C]: 250, [obj.TREATMENT_D]: 500 };
 obj = { treatment: obj.CONTROL };

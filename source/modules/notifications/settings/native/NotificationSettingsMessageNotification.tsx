@@ -1,10 +1,10 @@
-// Module ID: 10275
-// Function ID: 79384
+// Module ID: 10281
+// Function ID: 79403
 // Name: NotificationSettingsMessageNotification
 // Dependencies: []
 // Exports: NotificationSettingsChannelMessageNotification, NotificationSettingsGuildMessageNotification
 
-// Module 10275 (NotificationSettingsMessageNotification)
+// Module 10281 (NotificationSettingsMessageNotification)
 class NotificationSettingsMessageNotification {
   constructor(arg0) {
     arg1 = global;
@@ -18,14 +18,13 @@ class NotificationSettingsMessageNotification {
     tmp4 = View;
     tmp5 = jsxs;
     tmp6 = View;
-    obj2 = { INTEGRATION_CREATE: null, ConstraintReasonCode: null };
-    obj2.style = tmp.headerTitle;
+    obj2 = { style: tmp.headerTitle };
     intl = arg1(dependencyMap[7]).intl;
     obj2.children = intl.string(arg1(dependencyMap[7]).t.1m22ZB);
     items = [, ];
     items[0] = jsx(arg1(dependencyMap[6]).Text, obj2);
     tmp7 = jsx;
-    obj3 = { INTEGRATION_CREATE: 16, ConstraintReasonCode: true };
+    obj3 = {};
     if ("guild" === global.context) {
       tmp11 = arg1;
       tmp12 = dependencyMap;
@@ -80,10 +79,10 @@ const View = arg1(dependencyMap[1]).View;
 ({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[2]));
 let obj = arg1(dependencyMap[3]);
 obj = {};
-obj = { ip: "Float16Array", op: "applicationCommandItem", w: true, h: true, nm: null, backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_BASE_LOWEST, borderColor: importDefault(dependencyMap[4]).colors.BACKGROUND_MOD_SUBTLE };
+obj = { 1: true, 2: true, flex: true, paddingHorizontal: true, justifyContent: true, backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_BASE_LOWEST, borderColor: importDefault(dependencyMap[4]).colors.BACKGROUND_MOD_SUBTLE };
 obj.card = obj;
-obj.cta = { concat: "/assets/design/components/Illustration/native/redesign/generated/images", now: 160 };
-obj.label = { concat: -0.0014069081515246523, now: -0.0001058445630777106 };
+obj.cta = { "Bool(true)": "/assets/design/components/Illustration/native/redesign/generated/images", "Bool(true)": 160 };
+obj.label = { "Bool(true)": "absolute", "Bool(true)": 0 };
 obj.header = { marginBottom: 8 };
 obj.headerTitle = { marginBottom: 4 };
 let closure_6 = obj.createStyles(obj);

@@ -1,9 +1,9 @@
-// Module ID: 6284
-// Function ID: 50300
+// Module ID: 6286
+// Function ID: 50343
 // Name: metadata
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 6284 (metadata)
+// Module 6286 (metadata)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/MailboxSpotIllustration-2x.png.js");
 

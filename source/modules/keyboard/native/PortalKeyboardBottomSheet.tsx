@@ -1,9 +1,9 @@
-// Module ID: 11182
-// Function ID: 87050
+// Module ID: 11188
+// Function ID: 87073
 // Name: PortalKeyboardBottomSheetHeader
 // Dependencies: []
 
-// Module 11182 (PortalKeyboardBottomSheetHeader)
+// Module 11188 (PortalKeyboardBottomSheetHeader)
 let Platform;
 function PortalKeyboardBottomSheetHeader(arg0) {
   let handleCollapse;

@@ -1,10 +1,10 @@
-// Module ID: 10761
-// Function ID: 83642
+// Module ID: 10767
+// Function ID: 83665
 // Name: VoiceStatus
 // Dependencies: []
 // Exports: BlockedStatus, IgnoredStatus
 
-// Module 10761 (VoiceStatus)
+// Module 10767 (VoiceStatus)
 const importAllResult = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 let closure_4 = importDefault(dependencyMap[2]);

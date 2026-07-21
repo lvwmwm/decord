@@ -1,10 +1,10 @@
-// Module ID: 16080
-// Function ID: 123630
+// Module ID: 16087
+// Function ID: 123661
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 // Exports: default
 
-// Module 16080 (_isNativeReflectConstruct)
+// Module 16087 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -632,7 +632,7 @@ const tmp6 = (PureComponent) => {
               return obj.getGuildSplashSource(obj);
             },
           onChooseAsset: this.handleSplashChange,
-          size: {}
+          size: { bhk: null, bic: null }
         };
         obj.children = callback5(callback(closure_2[39]), obj);
         tmp = callback5(GuildSettingsModalOverview(closure_2[30]).TableRowGroup, obj);

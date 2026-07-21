@@ -1,9 +1,9 @@
-// Module ID: 5854
-// Function ID: 49655
+// Module ID: 5856
+// Function ID: 49698
 // Name: metadata
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 5854 (metadata)
+// Module 5856 (metadata)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/AppleIllocon-2x.png.js");
 

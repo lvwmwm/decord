@@ -22,7 +22,7 @@ let closure_13 = { code: "function pnpm_indexTsx2(){const{blankSpace,padding,ext
 let closure_14 = { code: "function pnpm_indexTsx3(){const{padding,extraContentPadding}=this.__closure;return padding.value+extraContentPadding.value;}" };
 let closure_15 = { code: "function pnpm_indexTsx4(){const{currentHeight}=this.__closure;return{transform:[{translateY:-currentHeight.value}]};}" };
 const obj2 = arg1(dependencyMap[4]);
-const styles = StyleSheet.create({ commitView: { "Null": 1633444945, "Null": -1363717178 } });
+const styles = StyleSheet.create({ commitView: { "Bool(false)": true, "Bool(false)": true } });
 
 export default forwardRef((onEndVisible) => {
   let contentOffsetY;

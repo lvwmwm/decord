@@ -1,10 +1,10 @@
-// Module ID: 10272
-// Function ID: 79376
+// Module ID: 10278
+// Function ID: 79395
 // Name: MagicWandIcon
 // Dependencies: []
 // Exports: MagicWandIcon
 
-// Module 10272 (MagicWandIcon)
+// Module 10278 (MagicWandIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/MagicWandIcon.tsx");

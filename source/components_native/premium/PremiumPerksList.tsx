@@ -1,15 +1,15 @@
-// Module ID: 14529
-// Function ID: 109489
+// Module ID: 14536
+// Function ID: 109511
 // Name: PremiumPerksList
 // Dependencies: []
 // Exports: default
 
-// Module 14529 (PremiumPerksList)
+// Module 14536 (PremiumPerksList)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 ({ jsx: closure_3, jsxs: closure_4 } = arg1(dependencyMap[2]));
 let obj = arg1(dependencyMap[3]);
-obj = { perkInfoContainer: { 9223372036854775807: 80, 0: 80, 9223372036854775807: 40 }, perkInfoTextContainer: { flex: "Actions", display: false, flexDirection: "md" }, perkListContainer: {} };
+obj = { perkInfoContainer: {}, perkInfoTextContainer: { textAlignVertical: "Actions", height: false, backgroundColor: "md" }, perkListContainer: {} };
 obj = { backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_BASE_LOWEST, borderRadius: importDefault(dependencyMap[4]).radii.round };
 obj.perkIconContainer = obj;
 let closure_5 = obj.createStyles(obj);

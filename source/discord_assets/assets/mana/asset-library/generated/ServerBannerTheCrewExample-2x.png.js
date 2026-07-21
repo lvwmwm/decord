@@ -1,9 +1,9 @@
-// Module ID: 6462
-// Function ID: 50567
+// Module ID: 6464
+// Function ID: 50610
 // Name: metadata
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 6462 (metadata)
+// Module 6464 (metadata)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/ServerBannerTheCrewExample-2x.png.js");
 

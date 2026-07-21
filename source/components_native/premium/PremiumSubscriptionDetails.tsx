@@ -1,10 +1,10 @@
-// Module ID: 7366
-// Function ID: 59414
+// Module ID: 7370
+// Function ID: 59425
 // Name: getHeaderBackground
 // Dependencies: []
 // Exports: default
 
-// Module 7366 (getHeaderBackground)
+// Module 7370 (getHeaderBackground)
 let USER_SETTINGS_CONTAINER_HORIZONTAL_PADDING;
 function getHeaderBackground(arg0, arg1) {
   return obj5[arg0][arg1];
@@ -388,19 +388,19 @@ const tmp2 = arg1(dependencyMap[3]);
 const SubscriptionPlanInfo = arg1(dependencyMap[7]).SubscriptionPlanInfo;
 const tmp3 = arg1(dependencyMap[6]);
 ({ jsx: closure_16, jsxs: closure_17 } = arg1(dependencyMap[8]));
-let obj = { imageTier2: { <string:1140607356>: 411, <string:1751293292>: 134 }, imageTier1: { <string:1140607356>: "png", <string:1751293292>: true }, imageTier0: { <string:1140607356>: "5dd914546a21d2f37ba762b2209e8ec8", <string:1751293292>: "img_bundle_mobile" }, imageBundle: { <string:1140607356>: "png", <string:1751293292>: true }, imagePremiumNonActive: { <string:1140607356>: "png", <string:1751293292>: true }, imagePremiumGuild: {}, imagePremiumGuildNonActive: {}, logoPremiumBundle: { <string:1140607356>: 51, <string:1751293292>: 33 }, logoPremiumTier0: { <string:1140607356>: null, <string:1751293292>: "fffb876f7b3f447f47b0591850317fff" }, logoPremiumTier1: {}, logoPremiumTier2: {}, logoPremiumGuild: {} };
+let obj = { imageTier2: { <string:1632221346>: 411, <string:2722977214>: 134 }, imageTier1: { <string:1632221346>: "png", <string:2722977214>: true }, imageTier0: { <string:1632221346>: "5dd914546a21d2f37ba762b2209e8ec8", <string:2722977214>: "img_bundle_mobile" }, imageBundle: { <string:1632221346>: "png", <string:2722977214>: true }, imagePremiumNonActive: { <string:1632221346>: "png", <string:2722977214>: true }, imagePremiumGuild: {}, imagePremiumGuildNonActive: {}, logoPremiumBundle: { <string:1632221346>: 51, <string:2722977214>: 33 }, logoPremiumTier0: { <string:1632221346>: null, <string:2722977214>: "fffb876f7b3f447f47b0591850317fff" }, logoPremiumTier1: {}, logoPremiumTier2: {}, logoPremiumGuild: {} };
 obj = {};
 obj = { color: importDefault(dependencyMap[9]).unsafe_rawColors.WHITE };
 obj.price = obj;
 const tmp4 = arg1(dependencyMap[8]);
 obj.priceDark = { color: importDefault(dependencyMap[9]).unsafe_rawColors.BLACK };
 let obj4 = arg1(dependencyMap[10]);
-const obj2 = { title: { paddingHorizontal: USER_SETTINGS_CONTAINER_HORIZONTAL_PADDING }, header: { padding: 16 }, wumpusImg: { marginRight: 10 }, logoContainer: { -9223372036854775808: true, filter: true } };
-const obj3 = { 9223372036854775807: null, 9223372036854775807: "24a795d24a7018dbf13e204b38f24588", backgroundColor: importDefault(dependencyMap[9]).colors.BACKGROUND_BASE_LOWEST };
+const obj2 = { title: { paddingHorizontal: USER_SETTINGS_CONTAINER_HORIZONTAL_PADDING }, header: { padding: 16 }, wumpusImg: { marginRight: 10 }, logoContainer: {} };
+const obj3 = { <string:2321632914>: null, <string:2878377810>: "24a795d24a7018dbf13e204b38f24588", backgroundColor: importDefault(dependencyMap[9]).colors.BACKGROUND_BASE_LOWEST };
 obj2.container = obj3;
-obj2.buttonContainer = {};
+obj2.buttonContainer = { display: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004172013485186689, alignItems: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000254470373541481 };
 obj2.buttonWrapper = {};
-obj2.cancelLink = { height: "center", alignSelf: 16, flexDirection: 20, justifyContent: null };
+obj2.cancelLink = { ENABLE_COMMUNITY_FLOW_MODAL_KEY: "center", margin: 16, T+79Eo: 20, getItemCount: null };
 obj2.desktopSubtext = { marginTop: 8, paddingHorizontal: USER_SETTINGS_CONTAINER_HORIZONTAL_PADDING };
 let closure_18 = obj4.createStyles(obj2);
 obj4 = { ACTIVE: "active", RESUB: "resub", ERROR: "error" };
@@ -505,7 +505,7 @@ export default function PremiumSubscriptionDetails(subscription) {
   let tmp4Result = null;
   if (null != first) {
     obj = { style };
-    const obj1 = { 0: -1841229468, 9223372036854775807: 1912603216, 0: 51, -9223372036854775808: 36, style: tmp.title };
+    const obj1 = { 1501064855: "SERVER_GUIDE_CHANNEL_SELECTED", -1267889981: "EAPLAY", -1145697943: "r", -1266241916: "FULL", style: tmp.title };
     const intl = arg1(dependencyMap[60]).intl;
     obj1.children = intl.string(arg1(dependencyMap[60]).t.ITurwY);
     const items = [callback3(arg1(dependencyMap[61]).Text, obj1), , , , ];

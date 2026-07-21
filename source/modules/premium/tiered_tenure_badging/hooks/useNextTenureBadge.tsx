@@ -1,10 +1,10 @@
-// Module ID: 12239
-// Function ID: 93895
+// Module ID: 12246
+// Function ID: 93918
 // Name: useNextTenureBadge
 // Dependencies: []
 // Exports: useNextTenureBadge
 
-// Module 12239 (useNextTenureBadge)
+// Module 12246 (useNextTenureBadge)
 const _module = require(dependencyMap[0]);
 ({ TIERED_TENURE_BADGE_ORDER: closure_2, TENURE_BADGES: closure_3 } = _module);
 const _module1 = require(dependencyMap[2]);

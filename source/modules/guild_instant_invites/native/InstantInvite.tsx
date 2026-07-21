@@ -1,17 +1,17 @@
-// Module ID: 10153
-// Function ID: 78526
+// Module ID: 10159
+// Function ID: 78544
 // Name: LinkedChannelInvite
 // Dependencies: []
 // Exports: LinkedChannelInvite
 
-// Module 10153 (LinkedChannelInvite)
+// Module 10159 (LinkedChannelInvite)
 const importAllResult = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 let closure_5 = arg1(dependencyMap[2]).createChannelRecordFromInvite;
 const Routes = arg1(dependencyMap[3]).Routes;
 ({ jsx: closure_7, jsxs: closure_8 } = arg1(dependencyMap[4]));
 const tmp2 = arg1(dependencyMap[4]);
-let closure_9 = arg1(dependencyMap[5]).createStyles({ creatorWrapper: {}, gameWrapper: { -632184581: null, 1365401894: "\u{1F469}\u{1F3FC}\u200D\u{1F9B1}", -866038175: true, 501082962: null }, gameText: { flex: 1 } });
+let closure_9 = arg1(dependencyMap[5]).createStyles({ creatorWrapper: {}, gameWrapper: { cardGraphic: null, REMOVE_REACTIONS: "\u{1F469}\u{1F3FC}\u200D\u{1F9B1}", JOIN_SERVER: true, getKestrelVariantName: null }, gameText: { flex: 1 } });
 const obj2 = arg1(dependencyMap[5]);
 const memoResult = importAllResult.memo((onInviteRevoked) => {
   let maxUses;
@@ -35,8 +35,8 @@ const memoResult = importAllResult.memo((onInviteRevoked) => {
   }, items1);
   let tmp5 = memo1.length > 0 && null != id;
   obj = {};
-  obj = { "Bool(false)": true, "Bool(false)": "/assets/design/components/Icon/native/redesign/generated/images" };
-  const obj1 = { addTag: "/assets/.cache/intl/bW9kdWxlcy9jaGVja291dC9tZXNzYWdlcw==", LinkIcon: null, children: invite.code };
+  obj = { "Null": true, "Null": "/assets/design/components/Icon/native/redesign/generated/images" };
+  const obj1 = { "Null": "885f3f72eb87e337d8c3a92d124fe2c5", "Null": "no.messages.885f3f72eb87e337d8c3a92d124fe2c5.compiled.messages", children: invite.code };
   const items2 = [
     callback(arg1(dependencyMap[17]).Text, obj1),
     callback(arg1(dependencyMap[18]).ContextMenu, {
@@ -72,7 +72,7 @@ const memoResult = importAllResult.memo((onInviteRevoked) => {
   }
   let tmp15Result = null;
   if (null != id1) {
-    const obj7 = { 1726238916: null, 607091733: null };
+    const obj7 = { 0: null, 0: null };
     const inviter2 = invite.inviter;
     let id2;
     if (null != inviter2) {
@@ -163,7 +163,7 @@ export const LinkedChannelInvite = function LinkedChannelInvite(channel) {
     return items;
   }, items1);
   obj = {};
-  obj = { "Bool(false)": true, "Bool(false)": "/assets/design/components/Icon/native/redesign/generated/images" };
+  obj = { "Null": true, "Null": "/assets/design/components/Icon/native/redesign/generated/images" };
   obj1 = { style: tmp.gameWrapper };
   const obj2 = { game: getOrFetchApplication };
   const tmp12 = View;
@@ -202,7 +202,7 @@ export const LinkedChannelInvite = function LinkedChannelInvite(channel) {
   const obj6 = { style: tmp.creatorWrapper };
   let tmp18 = null;
   if (null != linked_by) {
-    const obj7 = { 1726238916: null, 607091733: null, userId: linked_by, guildId: channel.guild_id };
+    const obj7 = { 0: null, 0: null, userId: linked_by, guildId: channel.guild_id };
     tmp18 = callback(importDefault(dependencyMap[21]), obj7);
   }
   obj6.children = tmp18;

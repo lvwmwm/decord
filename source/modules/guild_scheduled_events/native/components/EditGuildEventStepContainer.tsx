@@ -1,8 +1,8 @@
-// Module ID: 8358
-// Function ID: 66637
+// Module ID: 8362
+// Function ID: 66649
 // Dependencies: []
 
-// Module 8358
+// Module 8362
 let closure_2 = importDefault(dependencyMap[0]);
 const importAllResult = importAll(dependencyMap[1]);
 ({ View: closure_4, ScrollView: closure_5 } = arg1(dependencyMap[2]));
@@ -27,7 +27,7 @@ const forwardRefResult = importAllResult.forwardRef((arg0, ref) => {
   const importDefault = tmp2[1];
   const insets = importDefault(dependencyMap[6])().insets;
   let obj = { style: tmp.container };
-  obj = { -9223372036854775808: null, 0: "uppercase", 9223372036854775807: 0.5, ref };
+  obj = { add: null, np: null, cursor: null, ref };
   const items = [tmp.flex, { marginBottom: tmp2[0] + insets.bottom }];
   obj.style = items;
   obj.contentContainerStyle = tmp.scroller;

@@ -1,10 +1,10 @@
-// Module ID: 10547
-// Function ID: 82405
+// Module ID: 10553
+// Function ID: 82428
 // Name: StreamTextOverlay
 // Dependencies: []
 // Exports: default
 
-// Module 10547 (StreamTextOverlay)
+// Module 10553 (StreamTextOverlay)
 let StyleSheet;
 class StreamTextOverlay {
   constructor(arg0) {
@@ -13,7 +13,7 @@ class StreamTextOverlay {
     obj = { style: tmp.screenMessageContainer };
     tmp2 = jsxs;
     tmp3 = View;
-    obj = { Promise: 24, marginTop: 24, flags: null };
+    obj = { "Null": false, "Null": false, "Null": false };
     obj.style = tmp.screenMessageText;
     obj.children = global.title;
     items = [, ];
@@ -58,12 +58,12 @@ obj.screenMessageContainer = obj1;
 obj.screenMessageText = { lineHeight: 18 };
 const obj6 = arg1(dependencyMap[9]);
 obj.screenMessageSubtext = { color: importDefault(dependencyMap[8]).unsafe_rawColors.PRIMARY_300 };
-const obj3 = { 0: false, 0: false, 9223372036854775807: false, 0: false, 0: false, 0: false, 0: false, 0: false, 0: false };
+const obj3 = {};
 const obj2 = { color: importDefault(dependencyMap[8]).unsafe_rawColors.PRIMARY_300 };
 obj3.backgroundColor = arg1(dependencyMap[9]).hexWithOpacity(importDefault(dependencyMap[8]).unsafe_rawColors.PRIMARY_700, 0.5);
 obj3.borderRadius = importDefault(dependencyMap[8]).radii.md;
 obj.statusWrapper = obj3;
-obj.liveTag = { ignoreDuration: false, limits: false, initialScrollStart: false };
+obj.liveTag = {};
 let closure_13 = obj1.createStyles(obj);
 let closure_14 = importAllResult.memo((participant) => {
   let gestureEnabled;
@@ -143,7 +143,7 @@ let closure_15 = importAllResult.memo((arg0) => {
   let onFullScreen;
   let style;
   ({ onFullScreen, style } = arg0);
-  let obj = { accessibilityRole: "button", onPress: onFullScreen, style: items, hitSlop: { "Bool(false)": "GUILD_ROLE_CREATE", "Bool(false)": "StreamingTier2LargeBadge", "Bool(false)": "SubscriptionTrials", "Bool(false)": "SHAKE_SETTINGS_MODAL" } };
+  let obj = { accessibilityRole: "button", onPress: onFullScreen, style: items, hitSlop: { "Bool(true)": 793802832, "Bool(true)": 580399000, "Bool(true)": -259028247, "Bool(true)": 1783710348 } };
   const items = [callback2().statusWrapper, style];
   obj = { source: importDefault(dependencyMap[23]), size: arg1(dependencyMap[11]).Icon.Sizes.SMALL, color: importDefault(dependencyMap[8]).unsafe_rawColors.WHITE };
   obj.children = callback(arg1(dependencyMap[11]).Icon, obj);

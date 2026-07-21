@@ -1,10 +1,10 @@
-// Module ID: 12247
-// Function ID: 93971
+// Module ID: 12254
+// Function ID: 93994
 // Name: SharedUser
 // Dependencies: []
 // Exports: default
 
-// Module 12247 (SharedUser)
+// Module 12254 (SharedUser)
 function SharedUser(user) {
   user = user.user;
   const require = user;
@@ -41,7 +41,7 @@ function SharedUser(user) {
     tmp10 = callback(require(dependencyMap[8]).Text, obj5);
   }
   items1[1] = tmp10;
-  const obj6 = { <string:1522289750>: false, <string:570601313>: null };
+  const obj6 = {};
   const intl2 = require(dependencyMap[9]).intl;
   obj6.text = intl2.string(require(dependencyMap[9]).t.g33r/P);
   const obj7 = { size: "xs", color: importDefault(dependencyMap[4]).colors.CONTROL_SECONDARY_TEXT_DEFAULT };
@@ -70,11 +70,11 @@ const obj1 = { marginTop: importDefault(dependencyMap[4]).space.PX_16, alignSelf
 obj.subheader = { textAlign: "center", paddingHorizontal: importDefault(dependencyMap[4]).space.PX_8, marginTop: importDefault(dependencyMap[4]).space.PX_8 };
 const obj2 = { textAlign: "center", paddingHorizontal: importDefault(dependencyMap[4]).space.PX_8, marginTop: importDefault(dependencyMap[4]).space.PX_8 };
 obj.recipientContainer = { gap: importDefault(dependencyMap[4]).space.PX_16, marginTop: importDefault(dependencyMap[4]).space.PX_16, paddingBottom: 21 };
-const obj4 = { -9223372036854775808: true, filter: true, padding: importDefault(dependencyMap[4]).space.PX_12, gap: importDefault(dependencyMap[4]).space.PX_12, borderRadius: importDefault(dependencyMap[4]).radii.md, borderWidth: 1, borderColor: importDefault(dependencyMap[4]).colors.BORDER_MUTED };
-obj.recipientRow = obj4;
+const obj3 = { gap: importDefault(dependencyMap[4]).space.PX_16, marginTop: importDefault(dependencyMap[4]).space.PX_16, paddingBottom: 21 };
+obj.recipientRow = { padding: importDefault(dependencyMap[4]).space.PX_12, gap: importDefault(dependencyMap[4]).space.PX_12, borderRadius: importDefault(dependencyMap[4]).radii.md, borderWidth: 1, borderColor: importDefault(dependencyMap[4]).colors.BORDER_MUTED };
 obj.recipientDisplayName = { flex: 1 };
 obj.erroredAvatar = { opacity: 0.5 };
-obj.avatarContainer = {};
+obj.avatarContainer = { accessibilityRole: null, jsxs: null };
 let closure_8 = _module1.createStyles(obj);
 const _module2 = require(dependencyMap[20]);
 const result = _module2.fileFinishedImporting("modules/premium/referral_program/native/ReferralProgramShareConfirmationActionSheet.tsx");
@@ -98,7 +98,7 @@ export default function ReferralProgramShareConfirmationActionSheet(trialCreatio
   obj = {};
   obj1 = { style: tmp.headerAsset, children: callback(require(dependencyMap[18]).FistBumpSpotIllustration, {}) };
   const items = [callback(View, obj1), , , ];
-  const obj2 = { INTEGRATION_CREATE: 182714370, ConstraintReasonCode: 1091633154, style: tmp.header, children: stringResult };
+  const obj2 = { style: tmp.header, children: stringResult };
   items[1] = callback(require(dependencyMap[8]).Text, obj2);
   const formatResult = intl3.format(require(dependencyMap[9]).t.AwGSWl, obj);
   items[2] = callback(require(dependencyMap[19]).TextWithIOSLinkWorkaround, { style: tmp.subheader, children: intl3.format(require(dependencyMap[9]).t.AwGSWl, obj) });

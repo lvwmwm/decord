@@ -1,19 +1,19 @@
-// Module ID: 8999
-// Function ID: 70836
+// Module ID: 9003
+// Function ID: 70848
 // Dependencies: []
 
-// Module 8999
+// Module 9003
 let closure_3 = importDefault(dependencyMap[0]);
 const importAllResult = importAll(dependencyMap[1]);
 ({ View: closure_5, Pressable: closure_6 } = arg1(dependencyMap[2]));
 const tmp2 = arg1(dependencyMap[2]);
 ({ jsx: closure_7, jsxs: closure_8, Fragment: closure_9 } = arg1(dependencyMap[3]));
 let obj1 = arg1(dependencyMap[4]);
-let obj = { animatedViewContainer: { overflow: "hidden" }, container: { "Bool(true)": "Array", "Bool(true)": "DragIcon" }, measuringContainer: {}, descriptionContainer: { marginTop: 8 }, expandDescriptionCTAGradient: { onStartReachedThreshold: "png", HighContrastText: 18, createStageEndSystemMessage: 18, base64GIFRegex: 4, hoverGestureHandlerProps: "flex" } };
-obj = { 73352003: 284172545, 73255168: 0, 73498112: 0, 1408196864: 0, -525931015: 0, backgroundColor: importDefault(dependencyMap[5]).colors.CARD_BACKGROUND_DEFAULT };
+let obj = { animatedViewContainer: { overflow: "hidden" }, container: { et: null, eu: "900d6a1aeefc6f4c571ad9d81203dc5c" }, measuringContainer: {}, descriptionContainer: { marginTop: 8 }, expandDescriptionCTAGradient: { "Bool(false)": "png", "Bool(false)": 18, "Bool(false)": 18, "Bool(false)": 4, "Bool(false)": "flex" } };
+obj = { marginRight: null, marginLeft: false, checked: 0, label: 0, subLabel: 0, backgroundColor: importDefault(dependencyMap[5]).colors.CARD_BACKGROUND_DEFAULT };
 obj.expandDescriptionCTA = obj;
 obj.collapseDescriptionCTA = { marginTop: 4 };
-obj1 = { st: true, backgroundColor: "/assets/design/components/Icon/native/redesign/generated/images", borderWidth: 24, borderColor: 24, gap: importDefault(dependencyMap[5]).space.PX_4 };
+obj1 = { gap: importDefault(dependencyMap[5]).space.PX_4 };
 obj.nameContainer = obj1;
 obj.nameText = { flexShrink: 1 };
 const tmp3 = arg1(dependencyMap[3]);
@@ -216,7 +216,7 @@ const memoResult = importAllResult.memo(function DetailsHeader(viewContainerStyl
     if (first) {
       let tmp42 = null;
       if (first1) {
-        const obj8 = { INTEGRATION_CREATE: -436207324, ConstraintReasonCode: 301991094, style: tmp.collapseDescriptionCTA };
+        const obj8 = { style: tmp.collapseDescriptionCTA };
         const intl2 = arg1(closure_2[16]).intl;
         obj8.children = intl2.string(arg1(closure_2[16]).t.D5xGUK);
         tmp42 = str(arg1(closure_2[15]).Text, obj8);
@@ -253,6 +253,9 @@ const memoResult = importAllResult.memo(function DetailsHeader(viewContainerStyl
       obj10.style = items10;
       const items11 = [str(importDefault(closure_2[17]), obj10), ];
       const obj12 = {
+        marginTop: -0.0000000000000000000000000000000000000000005605197760997415,
+        marginBottom: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010400061133624569,
+        gap: -0.0000000000000044409002618943934,
         onLayout(nativeEvent) {
               if (null == first2) {
                 callback3(nativeEvent.nativeEvent.layout.width);
@@ -278,7 +281,7 @@ const memoResult = importAllResult.memo(function DetailsHeader(viewContainerStyl
   let tmp58Result = !first3;
   if (tmp58Result) {
     const obj13 = {};
-    const items14 = [mainContainerStyle, tmp.measuringContainer, {}];
+    const items14 = [mainContainerStyle, tmp.measuringContainer, { "Bool(false)": 1, "Bool(false)": null }];
     obj13.style = items14;
     obj13.onLayout = function onLayout(nativeEvent) {
       ref.current = nativeEvent.nativeEvent.layout.height;
@@ -292,7 +295,7 @@ const memoResult = importAllResult.memo(function DetailsHeader(viewContainerStyl
     };
     let tmp60 = !hideName;
     if (tmp60) {
-      const obj14 = { INTEGRATION_CREATE: 58, ConstraintReasonCode: 85, children: sectionName };
+      const obj14 = { children: sectionName };
       tmp60 = str(arg1(closure_2[15]).Heading, obj14);
     }
     const items15 = [tmp60, ];
@@ -316,7 +319,7 @@ const memoResult = importAllResult.memo(function DetailsHeader(viewContainerStyl
         children: memo
       };
       const items16 = [str(arg1(closure_2[15]).Text, obj16), ];
-      const obj17 = { INTEGRATION_CREATE: -436207324, ConstraintReasonCode: 301991094, style: tmp.collapseDescriptionCTA };
+      const obj17 = { style: tmp.collapseDescriptionCTA };
       const intl4 = arg1(closure_2[16]).intl;
       obj17.children = intl4.string(arg1(closure_2[16]).t.D5xGUK);
       items16[1] = str(arg1(closure_2[15]).Text, obj17);

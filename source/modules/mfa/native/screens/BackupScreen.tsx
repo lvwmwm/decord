@@ -1,15 +1,15 @@
-// Module ID: 14517
-// Function ID: 109346
+// Module ID: 14524
+// Function ID: 109368
 // Name: isValidClipboardCode
 // Dependencies: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 // Exports: default
 
-// Module 14517 (isValidClipboardCode)
-import closure_3 from "result";
-import closure_4 from "result";
-import closure_5 from "result";
-import result from "result";
-import result from "result";
+// Module 14524 (isValidClipboardCode)
+import closure_3 from "__exportStarResult1";
+import closure_4 from "__exportStarResult1";
+import closure_5 from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
 
 function isValidClipboardCode(arg0) {
   let tmp = arg0.length >= arg1(dependencyMap[4]).BACKUP_CODE_MIN_LENGTH;
@@ -37,8 +37,8 @@ function getFormattedExplainer(first2) {
   }
   return closure_6(arg1(dependencyMap[5]).Text, obj);
 }
-({ jsxs: closure_6, jsx: closure_7, Fragment: closure_8 } = result);
-result = result.fileFinishedImporting("modules/mfa/native/screens/BackupScreen.tsx");
+({ jsxs: closure_6, jsx: closure_7, Fragment: closure_8 } = __exportStarResult1);
+const result = __exportStarResult1.fileFinishedImporting("modules/mfa/native/screens/BackupScreen.tsx");
 
 export default function BackupScreen(finish) {
   let tmp6;

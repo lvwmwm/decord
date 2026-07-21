@@ -1,9 +1,9 @@
-// Module ID: 11673
-// Function ID: 90595
+// Module ID: 11680
+// Function ID: 90618
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
-// Module 11673 (_isNativeReflectConstruct)
+// Module 11680 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -23,7 +23,7 @@ const jsx = arg1(dependencyMap[7]).jsx;
 let obj = { SMALL: "small", MEDIUM: "medium", LARGE: "large" };
 let closure_10 = [];
 let obj1 = arg1(dependencyMap[8]);
-obj = { icon: {}, iconSmall: { backgroundColor: -235274238, accessibilityRole: -235274238, -45001119: -235274238 }, iconMedium: { backgroundColor: "337f717407aa04f32bdedf504de7310b", accessibilityRole: "emoji", -45001119: "png" } };
+obj = { icon: {}, iconSmall: {}, iconMedium: { "Bool(true)": "337f717407aa04f32bdedf504de7310b", "Bool(true)": "emoji", "Bool(true)": "png" } };
 obj = { borderRadius: importDefault(dependencyMap[9]).radii.round };
 obj.iconLarge = obj;
 obj1 = { backgroundColor: importDefault(dependencyMap[9]).colors.BACKGROUND_BRAND };
@@ -88,7 +88,7 @@ const tmp3 = (PureComponent) => {
           if (null != closure_10[acronym.length - 1]) {
             num = tmp16;
           }
-          const obj2 = { "Null": null, "Null": "Placeholder Channel", accessibilityLabel: formatToPlainStringResult };
+          const obj2 = { accessibilityLabel: formatToPlainStringResult };
           const items1 = [, , , ];
           ({ textContainer: arr[0], icon: arr[1] } = tmp);
           items1[2] = getClassResult;

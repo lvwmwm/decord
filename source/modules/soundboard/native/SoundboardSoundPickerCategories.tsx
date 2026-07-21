@@ -1,9 +1,9 @@
-// Module ID: 15626
-// Function ID: 119331
+// Module ID: 15633
+// Function ID: 119355
 // Name: SoundCategoryItem
 // Dependencies: []
 
-// Module 15626 (SoundCategoryItem)
+// Module 15633 (SoundCategoryItem)
 let CATEGORY_ICON_SIZE;
 let NODE_SIZE;
 function SoundCategoryItem(style) {
@@ -104,9 +104,9 @@ obj1 = { opacity: 1, backgroundColor: importDefault(dependencyMap[7]).colors.INT
 obj.activeItem = obj1;
 obj.guildItem = { height: CATEGORY_ICON_SIZE, width: CATEGORY_ICON_SIZE, borderRadius: CATEGORY_ICON_SIZE / 2 };
 obj.keyboardItem = { height: CATEGORY_ICON_SIZE, width: CATEGORY_ICON_SIZE };
-const tmp4 = arg1(dependencyMap[5]);
-obj.lockContainer = { backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_BASE_LOW, borderRadius: importDefault(dependencyMap[7]).radii.round };
-const obj3 = { aze: null, azj: 1, tintColor: importDefault(dependencyMap[7]).colors.TEXT_DEFAULT };
+const obj2 = { "Bool(true)": -0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000745429332806459, "Bool(true)": 0.00000000000000000000000000000000000000000000000000000000000004665176389013497, "Bool(true)": 141317.275, isLowQuality: null, APP_MESSAGE_EMBED: null, nameUnformatted: null, pK/WG0: null, display: null, alsoPublishToEventListener: null, backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_BASE_LOW, borderRadius: importDefault(dependencyMap[7]).radii.round };
+obj.lockContainer = obj2;
+const obj3 = { bhk: null, bic: 1, tintColor: importDefault(dependencyMap[7]).colors.TEXT_DEFAULT };
 obj.lock = obj3;
 let closure_12 = obj1.createStyles(obj);
 let closure_13 = importAllResult.memo(importAllResult.forwardRef((arg0, arg1) => {
@@ -115,7 +115,7 @@ let closure_13 = importAllResult.memo(importAllResult.forwardRef((arg0, arg1) =>
   obj["ref"] = arg1;
   return callback(closure_6, obj);
 }));
-const obj2 = { backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_BASE_LOW, borderRadius: importDefault(dependencyMap[7]).radii.round };
+const tmp4 = arg1(dependencyMap[5]);
 const memoResult = importAllResult.memo(function SoundboardSoundPickerCategories(guildId) {
   let categories;
   let style;

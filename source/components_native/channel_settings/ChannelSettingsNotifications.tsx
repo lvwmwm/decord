@@ -1,10 +1,10 @@
-// Module ID: 10260
-// Function ID: 79278
+// Module ID: 10266
+// Function ID: 79297
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 // Exports: default
 
-// Module 10260 (_isNativeReflectConstruct)
+// Module 10266 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -412,23 +412,21 @@ const tmp6 = (PureComponent) => {
       let tmp9Result = null;
       if (null != channel) {
         if (guildMuted) {
-          let obj = { INTEGRATION_CREATE: "<string:3305963521>", ConstraintReasonCode: "<string:671547393>" };
+          let obj = {};
           const intl = ChannelSettingsNotifications(closure_2[14]).intl;
           obj = {
             mutedHook(children) {
-                  const obj = { INTEGRATION_CREATE: 1, ConstraintReasonCode: "center", children };
-                  return callback2(callback(closure_2[30]).Text, obj, arg1);
+                  return callback2(callback(closure_2[30]).Text, { children }, arg1);
                 }
           };
           obj.children = intl.format(ChannelSettingsNotifications(closure_2[14]).t.O34r15, obj);
           let tmp5 = callback5(ChannelSettingsNotifications(closure_2[30]).Text, obj);
         } else if (guildMessageNotifications === constants2.NO_MESSAGES) {
-          obj = { INTEGRATION_CREATE: "<string:3305963521>", ConstraintReasonCode: "<string:671547393>" };
+          obj = {};
           const intl3 = ChannelSettingsNotifications(closure_2[14]).intl;
           const obj1 = {
             notificationHook(children) {
-                  const obj = { INTEGRATION_CREATE: -76309222, ConstraintReasonCode: 285212671, children };
-                  return callback2(callback(closure_2[30]).Text, obj, arg1);
+                  return callback2(callback(closure_2[30]).Text, { children }, arg1);
                 }
           };
           obj.children = intl3.format(ChannelSettingsNotifications(closure_2[14]).t.nRwUIL, obj1);

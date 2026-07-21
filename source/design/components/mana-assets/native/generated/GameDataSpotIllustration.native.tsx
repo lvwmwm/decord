@@ -1,10 +1,10 @@
-// Module ID: 6065
-// Function ID: 49971
+// Module ID: 6067
+// Function ID: 50014
 // Name: GameDataSpotIllustration
 // Dependencies: []
 // Exports: GameDataSpotIllustration
 
-// Module 6065 (GameDataSpotIllustration)
+// Module 6067 (GameDataSpotIllustration)
 const jsx = require(dependencyMap[0]).jsx;
 const _module = require(dependencyMap[3]);
 const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/GameDataSpotIllustration.native.tsx");

@@ -1,9 +1,9 @@
-// Module ID: 6054
-// Function ID: 49955
+// Module ID: 6056
+// Function ID: 49998
 // Name: metadata
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 6054 (metadata)
+// Module 6056 (metadata)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/FireIllocon-2x.png.js");
 

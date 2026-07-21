@@ -1,10 +1,10 @@
-// Module ID: 7793
-// Function ID: 62220
+// Module ID: 7797
+// Function ID: 62232
 // Name: getChannelIconData
 // Dependencies: []
 // Exports: transformSearchableSelectOptions
 
-// Module 7793 (getChannelIconData)
+// Module 7797 (getChannelIconData)
 function getChannelIconData(channel, guild) {
   if (channel.type === constants.GUILD_CATEGORY) {
     let channelIconWithGuild = importDefault(dependencyMap[12]);

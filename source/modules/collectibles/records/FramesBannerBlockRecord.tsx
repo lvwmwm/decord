@@ -1,9 +1,9 @@
-// Module ID: 6800
-// Function ID: 53635
+// Module ID: 6806
+// Function ID: 53684
 // Name: FramesBannerBlockRecord
 // Dependencies: []
 
-// Module 6800 (FramesBannerBlockRecord)
+// Module 6806 (FramesBannerBlockRecord)
 let closure_2 = importDefault(dependencyMap[0]);
 let closure_3 = importDefault(dependencyMap[1]);
 const tmp2 = () => {

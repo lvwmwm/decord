@@ -1,10 +1,10 @@
-// Module ID: 16197
-// Function ID: 125222
+// Module ID: 16204
+// Function ID: 125253
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 // Exports: default
 
-// Module 16197 (_isNativeReflectConstruct)
+// Module 16204 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -29,7 +29,7 @@ const tmp3 = arg1(dependencyMap[6]);
 ({ jsx: closure_14, jsxs: closure_15, Fragment: closure_16 } = arg1(dependencyMap[11]));
 let obj = arg1(dependencyMap[12]);
 obj = {};
-obj = { -9223372036854775808: 0.129, 0: 1, paddingTop: importDefault(dependencyMap[13]).space.PX_32 };
+obj = { markAsSpoilerTitle: 0.129, keyboardAppearance: 1, paddingTop: importDefault(dependencyMap[13]).space.PX_32 };
 obj.wrapper = obj;
 const tmp4 = arg1(dependencyMap[11]);
 obj.section = { paddingHorizontal: importDefault(dependencyMap[13]).space.PX_12 };
@@ -174,7 +174,7 @@ let closure_18 = (PureComponent) => {
       ({ isEditing, vanityURLCode } = this.state);
       if (null != vanityURLCode) {
         if ("" !== vanityURLCode) {
-          let obj = { INTEGRATION_CREATE: "<string:3305963521>", ConstraintReasonCode: "<string:671547393>" };
+          let obj = {};
           const intl6 = GuildSettingsModalVanityURL(closure_2[17]).intl;
           obj = { url: callback(closure_2[18])(vanityURLCode) };
           obj.children = intl6.format(GuildSettingsModalVanityURL(closure_2[17]).t.FcGpNU, obj);
@@ -209,20 +209,20 @@ let closure_18 = (PureComponent) => {
         const obj3 = { isDisabled: !isEditing, value: vanityURLCode, onChange: self.handleChange, autoFocus: isEditing, errorMessage: errorMessageFromErrorCode };
         const items1 = [callback4(GuildSettingsModalVanityURL(closure_2[21]).TextInput, obj3), ];
         const obj4 = { style: styles.hints };
-        const obj5 = { INTEGRATION_CREATE: "<string:3305963521>", ConstraintReasonCode: "<string:671547393>" };
+        const obj5 = {};
         const intl2 = GuildSettingsModalVanityURL(closure_2[17]).intl;
         obj5.children = intl2.string(GuildSettingsModalVanityURL(closure_2[17]).t.IhWDcu);
         const items2 = [callback4(GuildSettingsModalVanityURL(closure_2[19]).Text, obj5), , , , ];
-        const obj6 = { INTEGRATION_CREATE: "<string:3305963521>", ConstraintReasonCode: "<string:671547393>" };
+        const obj6 = {};
         const intl3 = GuildSettingsModalVanityURL(closure_2[17]).intl;
         obj6.children = intl3.string(GuildSettingsModalVanityURL(closure_2[17]).t.1mRkFr);
         items2[1] = callback4(GuildSettingsModalVanityURL(closure_2[19]).Text, obj6);
-        const obj7 = { INTEGRATION_CREATE: "<string:3305963521>", ConstraintReasonCode: "<string:671547393>" };
+        const obj7 = {};
         const intl4 = GuildSettingsModalVanityURL(closure_2[17]).intl;
         obj7.children = intl4.string(GuildSettingsModalVanityURL(closure_2[17]).t.eH/HMz);
         items2[2] = callback4(GuildSettingsModalVanityURL(closure_2[19]).Text, obj7);
         if (tmp12) {
-          const obj8 = { INTEGRATION_CREATE: "<string:3305963521>", ConstraintReasonCode: "<string:671547393>" };
+          const obj8 = {};
           const intl5 = GuildSettingsModalVanityURL(closure_2[17]).intl;
           obj8.children = intl5.string(GuildSettingsModalVanityURL(closure_2[17]).t.o3kmm3);
           tmp12 = callback4(GuildSettingsModalVanityURL(closure_2[19]).Text, obj8);

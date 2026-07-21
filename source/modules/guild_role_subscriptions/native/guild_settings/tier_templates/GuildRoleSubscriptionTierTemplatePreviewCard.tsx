@@ -1,17 +1,17 @@
-// Module ID: 16338
-// Function ID: 126081
+// Module ID: 16345
+// Function ID: 126112
 // Name: ContentHeader
 // Dependencies: []
 // Exports: default
 
-// Module 16338 (ContentHeader)
+// Module 16345 (ContentHeader)
 function ContentHeader(arg0) {
   let count;
   let title;
   ({ count, title } = arg0);
   const tmp = callback3();
   let obj = { style: tmp.contentHeader };
-  obj = { INTEGRATION_CREATE: true, ConstraintReasonCode: true, style: tmp.contentHeader, children: count };
+  obj = { style: tmp.contentHeader, children: count };
   const items = [callback(arg1(dependencyMap[6]).Text, obj), " ", title];
   obj.children = items;
   return callback2(arg1(dependencyMap[6]).Text, obj);
@@ -19,17 +19,15 @@ function ContentHeader(arg0) {
 function Separator() {
   return callback(closure_6, { style: callback3().separator });
 }
-function BenefitShowCase(title) {
-  title = title.title;
+function BenefitShowCase(children) {
+  const title = children.title;
   let obj = {};
   let tmp3 = title;
   if ("string" === typeof title) {
     obj = { children: title };
     tmp3 = callback(arg1(dependencyMap[6]).Text, obj);
   }
-  const items = [tmp3, callback(arg1(dependencyMap[11]).Spacer, { size: 2 }), ];
-  obj = { INTEGRATION_CREATE: true, ConstraintReasonCode: true, children: title.description };
-  items[2] = callback(arg1(dependencyMap[6]).Text, obj);
+  const items = [tmp3, callback(arg1(dependencyMap[11]).Spacer, { size: 2 }), callback(arg1(dependencyMap[6]).Text, { children: children.description })];
   obj.children = items;
   return closure_10(closure_6, obj);
 }
@@ -39,7 +37,7 @@ function ChannelBenefitShowCase(channel) {
   let type;
   ({ description, type, name } = channel.channel);
   let obj = arg1(dependencyMap[12]);
-  obj = { style: { -9223372036854775808: true, filter: true } };
+  obj = { style: {} };
   const items = [callback(obj.getPrivateChannelIconComponent(type), { size: "xs" }), callback(arg1(dependencyMap[11]).Spacer, { size: 4 }), callback(arg1(dependencyMap[6]).Text, { children: name })];
   obj.children = items;
   obj = { title: callback2(closure_6, obj), description };
@@ -78,7 +76,7 @@ const tmp4 = arg1(dependencyMap[3]);
 obj.subscriptionPlanTextStyle = { color: importDefault(dependencyMap[5]).colors.TEXT_SUBTLE };
 const obj2 = { "Null": null, "Null": null, "Null": null, color: importDefault(dependencyMap[5]).colors.TEXT_MUTED };
 obj.descriptionPlanTextStyle = obj2;
-const obj3 = { label: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004021012699727726, defineProperty: 0.00000000000000000000000000000000000000000000000000000000000004667261426580222, padding: -99081327715503800000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, Path: null, backgroundColor: importDefault(dependencyMap[5]).colors.INTERACTIVE_BACKGROUND_HOVER };
+const obj3 = { 0: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004074371678144605, 9223372036854775807: 0.00000000000000000000000000000000000000000000000000000000000004667261426580222, 9223372036854775807: -1645684642245205400000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, -9223372036854775808: null, backgroundColor: importDefault(dependencyMap[5]).colors.INTERACTIVE_BACKGROUND_HOVER };
 obj.separator = obj3;
 const obj1 = { color: importDefault(dependencyMap[5]).colors.TEXT_SUBTLE };
 obj.contentContainer = { backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_SURFACE_HIGH, borderTopRightRadius: importDefault(dependencyMap[5]).radii.sm, borderTopLeftRadius: importDefault(dependencyMap[5]).radii.sm, padding: 16, paddingBottom: 0 };
@@ -150,7 +148,7 @@ export default function GuildRoleSubscriptionTierTemplatePreviewCard(template) {
     }
   }, items1);
   obj = { style: tmp.container };
-  obj = { template, handleSelectTemplateInPreview: callback1, subscriptionPlanTextStyle: tmp.subscriptionPlanTextStyle, descriptionTextStyle: tmp.descriptionPlanTextStyle, closeActionSheet: false, descriptionTextProps: { 0: null, 9223372036854775807: null } };
+  obj = { template, handleSelectTemplateInPreview: callback1, subscriptionPlanTextStyle: tmp.subscriptionPlanTextStyle, descriptionTextStyle: tmp.descriptionPlanTextStyle, closeActionSheet: false, descriptionTextProps: { arrow: null, icon: null } };
   const items2 = [callback(arg1(dependencyMap[21]).GuildRoleSubscriptionTierTemplateBasicInfo, obj), ];
   obj1 = {
     style: tmp.contentContainer,

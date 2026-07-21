@@ -1,9 +1,9 @@
-// Module ID: 14689
-// Function ID: 110841
+// Module ID: 14696
+// Function ID: 110865
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 
-// Module 14689 (_createForOfIteratorHelperLoose)
+// Module 14696 (_createForOfIteratorHelperLoose)
 function _createForOfIteratorHelperLoose(@@iterator) {
   let arg1 = Symbol_iterator;
   @@iterator = "undefined" !== typeof Symbol;
@@ -267,15 +267,15 @@ let closure_16 = arg1(dependencyMap[9]).createStyles(() => {
   let obj = {};
   obj = { position: "absolute", top: importDefault(dependencyMap[10]).modules.mobile.GUILD_BAR_ITEM_MARGIN, left: importDefault(dependencyMap[10]).modules.mobile.GUILD_FOLDER_BACKGROUND_LEFT, backgroundColor: importDefault(dependencyMap[10]).colors.GUILD_FOLDER_BACKGROUND, borderTopLeftRadius: importDefault(dependencyMap[10]).modules.mobile.GUILD_FOLDER_BACKGROUND_RADIUS, borderTopRightRadius: importDefault(dependencyMap[10]).modules.mobile.GUILD_FOLDER_BACKGROUND_RADIUS, borderBottomLeftRadius: importDefault(dependencyMap[10]).modules.mobile.GUILD_FOLDER_BACKGROUND_RADIUS, borderBottomRightRadius: importDefault(dependencyMap[10]).modules.mobile.GUILD_FOLDER_BACKGROUND_RADIUS, width: num + num2 };
   obj.folderBackground = obj;
-  obj = { sourcePage: "isArray", presentation: "key", position: "Array", top: "LIGHT", bottom: "limit", left: "limit", right: "limit", width: num, height: num };
+  obj = { grow: "isArray", shrink: "key", size: "Array", icon: "LIGHT", onPress: "limit", maxFontSizeMultiplier: "limit", sourcePage: "limit", width: num, height: num };
   obj.folderScaleContainer = obj;
   obj.guildPreviewIcon = { position: "absolute", margin: importDefault(dependencyMap[10]).modules.mobile.GUILD_FOLDER_PREVIEW_ICON_MARGIN };
   const obj1 = { position: "absolute", margin: importDefault(dependencyMap[10]).modules.mobile.GUILD_FOLDER_PREVIEW_ICON_MARGIN };
   obj.guildPreviewIconUnselected = { borderRadius: importDefault(dependencyMap[10]).radii.sm };
-  obj.guildPreview0 = { "Null": false, "Null": true };
-  obj.guildPreview1 = { "Bool(false)": false, "Bool(false)": true };
-  obj.guildPreview2 = { "Null": false, "Null": true };
-  obj.guildPreview3 = { "Null": false, "Null": true };
+  obj.guildPreview0 = { -1506583910: -536870861, -1753944310: -299892737 };
+  obj.guildPreview1 = { 928372124: -536870861, 91007061: -299892737 };
+  obj.guildPreview2 = { _handleContentOnLayout: -536870861, fullScreenSwipeEnabled: -299892737 };
+  obj.guildPreview3 = { rejectWithError: -536870861, url: -299892737 };
   const obj3 = { position: "absolute", width: num, height: num, opacity: importDefault(dependencyMap[10]).modules.mobile.GUILD_FOLDER_PREVIEW_OPACITY };
   obj.guildPreviewWrapper = obj3;
   return obj;
@@ -416,7 +416,7 @@ const memoResult1 = importAllResult.memo(function GuildsBarGuildFolder(id) {
           mentionCount.isMentionLowImportance = mentionCount.isMentionLowImportance && 0 === num2;
         }
         return mentionCount;
-      }, { left: "/assets/.cache/intl/bW9kdWxlcy9ndWlsZF9zZXR0aW5ncy9zZXJ2ZXJfbW9uZXRpemF0aW9uL3RhZ3Mvd2Vi", right: null, accessibilityRole: "735e504b30b312a196b78e469f2da20a" });
+      }, { <string:1683145568>: "/assets/.cache/intl/bW9kdWxlcy9ndWlsZF9zZXR0aW5ncy9zZXJ2ZXJfbW9uZXRpemF0aW9uL3RhZ3Mvd2Vi", <string:1702596354>: null, <string:2959338700>: "ed0fba3b876dff85ad10eaf7b9a3e3a1" });
     }
   });
   ({ unread, mentionCount, isMentionLowImportance } = stateFromStoresObject);

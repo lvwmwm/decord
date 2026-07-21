@@ -1,10 +1,10 @@
-// Module ID: 8617
-// Function ID: 68289
+// Module ID: 8621
+// Function ID: 68301
 // Name: GameProfileView
 // Dependencies: []
 // Exports: default
 
-// Module 8617 (GameProfileView)
+// Module 8621 (GameProfileView)
 let closure_3 = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 ({ jsx: closure_5, jsxs: closure_6 } = arg1(dependencyMap[2]));

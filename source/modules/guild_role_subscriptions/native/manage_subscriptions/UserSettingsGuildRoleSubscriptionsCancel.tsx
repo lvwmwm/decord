@@ -1,10 +1,10 @@
-// Module ID: 13984
-// Function ID: 106305
+// Module ID: 13991
+// Function ID: 106328
 // Name: WhatYouLose
 // Dependencies: []
 // Exports: default
 
-// Module 13984 (WhatYouLose)
+// Module 13991 (WhatYouLose)
 function WhatYouLose(subscription) {
   let guild;
   let listingId;
@@ -25,7 +25,7 @@ function WhatYouLose(subscription) {
   const items = [callback3(importDefault(dependencyMap[11]), { guild }), callback3(arg1(dependencyMap[12]).Spacer, { size: 16 }), ];
   obj2 = {};
   const items1 = [callback3(arg1(dependencyMap[13]).Text, { children: callback2(obj3.useName(listingId), 1)[0] }), callback3(arg1(dependencyMap[12]).Spacer, { size: 2 }), ];
-  obj3 = { INTEGRATION_CREATE: true, ConstraintReasonCode: true, children: guild.name };
+  obj3 = { children: guild.name };
   items1[2] = callback3(arg1(dependencyMap[13]).Text, obj3);
   obj2.children = items1;
   items[2] = callback4(closure_7, obj2);
@@ -36,16 +36,14 @@ function WhatYouLose(subscription) {
   obj4.children = intl3.string(arg1(dependencyMap[10]).t.9SgXmT);
   items2[2] = callback3(arg1(dependencyMap[13]).Text, obj4);
   items2[3] = callback3(arg1(dependencyMap[12]).Spacer, { size: 12 });
-  const obj5 = { INTEGRATION_CREATE: "AutomodMentionRaidLimit", ConstraintReasonCode: "%URIError%" };
   const items3 = [formatResult1, "\n"];
-  obj5.children = items3;
-  items2[4] = callback4(arg1(dependencyMap[13]).Text, obj5);
+  items2[4] = callback4(arg1(dependencyMap[13]).Text, { children: items3 });
   items2[5] = callback3(arg1(dependencyMap[13]).Text, { children: intl2.formatToPlainString(arg1(dependencyMap[10]).t.OVlNGT, obj) });
-  const obj6 = {};
+  const obj5 = {};
   const formatToPlainStringResult = intl2.formatToPlainString(arg1(dependencyMap[10]).t.OVlNGT, obj);
-  obj6.source = importDefault(dependencyMap[16]);
-  obj6.style = tmp.cactus;
-  items2[6] = callback3(importDefault(dependencyMap[15]), obj6);
+  obj5.source = importDefault(dependencyMap[16]);
+  obj5.style = tmp.cactus;
+  items2[6] = callback3(importDefault(dependencyMap[15]), obj5);
   obj.children = items2;
   return callback4(closure_7, obj);
 }
@@ -155,16 +153,16 @@ const tmp2 = arg1(dependencyMap[3]);
 let closure_12 = "M/DD/YY";
 let obj = arg1(dependencyMap[6]);
 obj = { container: { flex: 1 }, body: {}, heroImage: obj };
-obj = { backgroundColor: "hidden", width: 8, "Bool(false)": 100, height: undefined };
-const obj1 = { -1438951836: "isArray", -1464970518: "constructor", -45007765: "warn", borderTopColor: importDefault(dependencyMap[7]).colors.INTERACTIVE_BACKGROUND_HOVER };
+obj = { fileName: 106, lineNumber: "hidden", columnNumber: 8, height: undefined };
+const obj1 = { 1365451934: true, -1805488391: true, 1406296379: true, borderTopColor: importDefault(dependencyMap[7]).colors.INTERACTIVE_BACKGROUND_HOVER };
 obj.footer = obj1;
 let closure_13 = obj.createStyles(obj);
 const tmp3 = arg1(dependencyMap[5]);
 const obj2 = {};
 const obj5 = arg1(dependencyMap[6]);
 obj2.container = { backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_SURFACE_HIGH, borderRadius: importDefault(dependencyMap[7]).radii.md, paddingVertical: 12, paddingHorizontal: 16 };
-obj2.header = { "Bool(false)": "<string:1783693314>", "Bool(false)": "<string:618889>" };
-obj2.cactus = { "Null": "ReferenceError", "Null": "FAMILY_CENTER_LINK_CODE", "Null": "_key", 1368053539: "FAMILY_CENTER_LINK_CODE" };
+obj2.header = {};
+obj2.cactus = { -9223372036854775808: "Array", 0: "canUnlinkLobbyChannel", 0: "Array", 9223372036854775807: "canUnlinkLobbyChannel" };
 let closure_14 = obj5.createStyles(obj2);
 const obj3 = { backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_SURFACE_HIGH, borderRadius: importDefault(dependencyMap[7]).radii.md, paddingVertical: 12, paddingHorizontal: 16 };
 const result = arg1(dependencyMap[30]).fileFinishedImporting("modules/guild_role_subscriptions/native/manage_subscriptions/UserSettingsGuildRoleSubscriptionsCancel.tsx");

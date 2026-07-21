@@ -1,10 +1,10 @@
-// Module ID: 7440
-// Function ID: 59678
+// Module ID: 7444
+// Function ID: 59689
 // Name: fetchActivePromotions
 // Dependencies: []
 // Exports: addClaimedOutboundPromotionCode, clearActivePromotions, dismissOutboundPromotionNotice, fetchActiveBogoPromotion, fetchClaimedOutboundPromotionCodes, maybeFetchActivePromotions
 
-// Module 7440 (fetchActivePromotions)
+// Module 7444 (fetchActivePromotions)
 function fetchActivePromotions() {
   return _fetchActivePromotions(...arguments);
 }

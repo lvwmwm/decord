@@ -1,10 +1,10 @@
-// Module ID: 13772
-// Function ID: 104103
+// Module ID: 13779
+// Function ID: 104126
 // Name: FiltersHorizontalIcon
 // Dependencies: []
 // Exports: FiltersHorizontalIcon
 
-// Module 13772 (FiltersHorizontalIcon)
+// Module 13779 (FiltersHorizontalIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/FiltersHorizontalIcon.tsx");

@@ -1,9 +1,9 @@
-// Module ID: 7586
-// Function ID: 60739
+// Module ID: 7590
+// Function ID: 60751
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
-// Module 7586 (_isNativeReflectConstruct)
+// Module 7590 (_isNativeReflectConstruct)
 let FormStates;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
@@ -169,7 +169,7 @@ function handleSetSection(arg0) {
   if (tmp) {
     let closure_26 = true;
     const HTTP = arg1(dependencyMap[15]).HTTP;
-    const obj = { CONVERSATIONS: null, replace: null, push: null, url: closure_14.INSTANT_INVITES(store2.id) };
+    const obj = { lc: null, type: null, end: null, url: closure_14.INSTANT_INVITES(store2.id) };
     const value = HTTP.get(obj);
     value.then((body) => {
       let closure_26 = false;
@@ -280,7 +280,7 @@ let closure_25 = {};
 let closure_26 = false;
 let closure_27 = false;
 let closure_28 = null;
-let closure_29 = [];
+let closure_29 = [true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true];
 const tmp2 = arg1(dependencyMap[9]);
 let closure_30 = importDefault(dependencyMap[17]).debounce(() => {
   if (null != store2) {

@@ -37,8 +37,8 @@ export default function Prev(icon) {
   }
   const items = [onPress];
   obj = {
-    props: null,
-    "Null": null,
+    "Null": true,
+    "Null": true,
     disabled: isPrevDisabled,
     rippleRadius,
     style,

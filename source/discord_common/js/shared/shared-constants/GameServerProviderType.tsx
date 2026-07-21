@@ -1,7 +1,7 @@
 // Module ID: 4018
 // Function ID: 33428
 // Name: GameServerProviderType
-// Dependencies: []
+// Dependencies: [284214097]
 
 // Module 4018 (GameServerProviderType)
 const _module = require(dependencyMap[0]);

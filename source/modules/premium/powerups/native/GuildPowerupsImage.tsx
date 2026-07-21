@@ -1,17 +1,17 @@
-// Module ID: 11538
-// Function ID: 89855
+// Module ID: 11545
+// Function ID: 89878
 // Name: GuildPowerupsImage
 // Dependencies: [0, 0, 0, 0, 0, 0, 0, 0]
 // Exports: default
 
-// Module 11538 (GuildPowerupsImage)
-import closure_3 from "result";
-import { jsx } from "result";
-import result from "result";
-import result from "result";
+// Module 11545 (GuildPowerupsImage)
+import closure_3 from "__exportStarResult1";
+import { jsx } from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
 
-let closure_5 = result.createStyles({ image: {} });
-result = result.fileFinishedImporting("modules/premium/powerups/native/GuildPowerupsImage.tsx");
+let closure_5 = __exportStarResult1.createStyles({ image: {} });
+const result = __exportStarResult1.fileFinishedImporting("modules/premium/powerups/native/GuildPowerupsImage.tsx");
 
 export default function GuildPowerupsImage(style) {
   let imageUrl;

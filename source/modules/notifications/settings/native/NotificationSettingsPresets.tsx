@@ -1,10 +1,10 @@
-// Module ID: 10271
-// Function ID: 79367
+// Module ID: 10277
+// Function ID: 79386
 // Name: NotificationSettingsPresets
 // Dependencies: []
 // Exports: NotificationSettingsChannelPresets, NotificationSettingsGuildPresets
 
-// Module 10271 (NotificationSettingsPresets)
+// Module 10277 (NotificationSettingsPresets)
 function NotificationSettingsPresets(preset) {
   const arg1 = preset;
   let num = 0;
@@ -84,7 +84,7 @@ function NotificationSettingsPresets(preset) {
   }, items1);
   if (preset.preset === arg1(dependencyMap[4]).Presets.CUSTOM) {
     const obj3 = { style: tmp.customContainer };
-    const obj4 = { style: {} };
+    const obj4 = { style: { "Null": "P", "Null": 40 } };
     const obj5 = { variant: "text-sm/semibold" };
     const intl4 = arg1(dependencyMap[3]).intl;
     obj5.children = intl4.string(arg1(dependencyMap[3]).t.32yow9);
@@ -115,7 +115,7 @@ const View = arg1(dependencyMap[1]).View;
 ({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[2]));
 let obj = arg1(dependencyMap[8]);
 obj = {};
-obj = { assign: 1145176065, ddd: -218102673, bm: 1358954976, defineProperty: -2008945072, Error: 1392509362, apply: -1402885023, borderRadius: importDefault(dependencyMap[9]).radii.lg + 8, backgroundColor: importDefault(dependencyMap[9]).colors.REDESIGN_INPUT_CONTROL_ACTIVE_BG };
+obj = { flexBasis: 1107296687, gap: 290968, rowGap: 122955, display: 1106132049, backfaceVisibility: 111103, overflow: 934033235, borderRadius: importDefault(dependencyMap[9]).radii.lg + 8, backgroundColor: importDefault(dependencyMap[9]).colors.REDESIGN_INPUT_CONTROL_ACTIVE_BG };
 obj.customContainer = obj;
 let closure_6 = obj.createStyles(obj);
 const tmp2 = arg1(dependencyMap[2]);

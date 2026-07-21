@@ -1,15 +1,15 @@
-// Module ID: 11736
-// Function ID: 91185
+// Module ID: 11743
+// Function ID: 91208
 // Name: InviteRolesList
 // Dependencies: []
 // Exports: default
 
-// Module 11736 (InviteRolesList)
+// Module 11743 (InviteRolesList)
 let closure_3 = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 ({ jsx: closure_5, jsxs: closure_6 } = arg1(dependencyMap[2]));
 const tmp2 = arg1(dependencyMap[2]);
-let closure_7 = arg1(dependencyMap[3]).createStyles({ rolesRow: { 0: true, -9223372036854775808: true, 0: true, 0: true } });
+let closure_7 = arg1(dependencyMap[3]).createStyles({ rolesRow: {} });
 const obj = arg1(dependencyMap[3]);
 const result = arg1(dependencyMap[9]).fileFinishedImporting("modules/accept_invite/native/InviteRolesList.tsx");
 
@@ -38,7 +38,7 @@ export default function InviteRolesList(invite) {
     tmp2 = null;
     if (0 !== memo.length) {
       let obj = { spacing: 4, style: invite.style };
-      obj = { INTEGRATION_CREATE: null, ConstraintReasonCode: null };
+      obj = {};
       const intl = arg1(dependencyMap[7]).intl;
       obj.children = intl.string(arg1(dependencyMap[7]).t.stcSfI);
       const items1 = [callback(arg1(dependencyMap[6]).Text, obj), ];

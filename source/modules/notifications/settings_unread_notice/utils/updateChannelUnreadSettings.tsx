@@ -1,10 +1,10 @@
-// Module ID: 10416
-// Function ID: 80262
+// Module ID: 10422
+// Function ID: 80285
 // Name: updateChannelUnreadSettings
-// Dependencies: [344719360, 264896512, 371261440, 357957632, 500236288, 499122176, 442171392, 437911552]
+// Dependencies: []
 // Exports: default
 
-// Module 10416 (updateChannelUnreadSettings)
+// Module 10422 (updateChannelUnreadSettings)
 let closure_3 = importDefault(dependencyMap[0]);
 const AnalyticsObjects = arg1(dependencyMap[1]).AnalyticsObjects;
 const UnreadSetting = arg1(dependencyMap[2]).UnreadSetting;

@@ -72,7 +72,7 @@ let closure_3 = {
       const obj5 = originalException(arg6[3]);
     }
     obj.syntheticException = syntheticError;
-    obj.mechanism = {};
+    obj.mechanism = { onDrawerSlide: "<string:1102995917>", onDrawerStateChanged: "form__label" };
     obj.captureException(originalException, obj);
   },
   onHandled(displayId, error) {
@@ -142,7 +142,7 @@ arg5.reactNativeErrorHandlersIntegration = function reactNativeErrorHandlersInte
                       const obj4 = callback(closure_1[3]);
                     }
                     obj.syntheticException = syntheticError;
-                    obj.mechanism = { alignItems: false, justifyContent: false };
+                    obj.mechanism = {};
                     obj.captureException(originalException, obj);
                   });
                   const obj9 = callback(closure_1[2]);

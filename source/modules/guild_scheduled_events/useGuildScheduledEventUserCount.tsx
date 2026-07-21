@@ -1,10 +1,10 @@
-// Module ID: 8345
-// Function ID: 66463
+// Module ID: 8349
+// Function ID: 66475
 // Name: useGuildScheduledEventUserCount
 // Dependencies: []
 // Exports: default
 
-// Module 8345 (useGuildScheduledEventUserCount)
+// Module 8349 (useGuildScheduledEventUserCount)
 const useEffect = require(dependencyMap[0]).useEffect;
 let closure_4 = importDefault(dependencyMap[1]);
 const _module = require(dependencyMap[4]);

@@ -1,7 +1,7 @@
 // Module ID: 1058
 // Function ID: 11312
 // Name: checkAndWarnIfIsEmbeddedBrowserExtension
-// Dependencies: []
+// Dependencies: [1048, 794, 1009]
 
 // Module 1058 (checkAndWarnIfIsEmbeddedBrowserExtension)
 Object.defineProperty(arg5, Symbol.toStringTag, { value: "Module" });
@@ -19,7 +19,7 @@ arg5.checkAndWarnIfIsEmbeddedBrowserExtension = function checkAndWarnIfIsEmbedde
           if (null != runtime) {
             if (runtime.id) {
               const callback = callback(closure_1[1]).getLocationHref();
-              const items = [];
+              const items = [null, null, null, null];
               const obj = callback(closure_1[1]);
               return !(callback(closure_1[2]).WINDOW === callback(closure_1[2]).WINDOW.top && items.some((arg0) => closure_0.startsWith("" + arg0 + "://")));
             }

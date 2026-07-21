@@ -1,10 +1,10 @@
-// Module ID: 15510
-// Function ID: 118369
+// Module ID: 15517
+// Function ID: 118393
 // Name: LaunchPadWrapper
 // Dependencies: []
 // Exports: default
 
-// Module 15510 (LaunchPadWrapper)
+// Module 15517 (LaunchPadWrapper)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 ({ View: closure_5, Pressable: closure_6, TouchableOpacity: closure_7, StyleSheet: closure_8 } = arg1(dependencyMap[2]));
@@ -15,12 +15,12 @@ const tmp3 = arg1(dependencyMap[4]);
 ({ jsx: closure_12, jsxs: closure_13 } = arg1(dependencyMap[5]));
 let obj = arg1(dependencyMap[6]);
 obj = {};
-obj = { <string:1140607356>: 30271555, <string:1751293292>: 22092032, paddingTop: importDefault(dependencyMap[7]).space.PX_8 };
+obj = { paddingTop: importDefault(dependencyMap[7]).space.PX_8 };
 obj.modalWrapper = obj;
-const tmp4 = arg1(dependencyMap[5]);
-obj.a11yDismiss = { height: importDefault(dependencyMap[7]).space.PX_8 };
+const obj1 = { "Null": "png", "Null": 18, "Null": 18, height: importDefault(dependencyMap[7]).space.PX_8 };
+obj.a11yDismiss = obj1;
 let closure_14 = obj.createStyles(obj);
-const obj1 = { height: importDefault(dependencyMap[7]).space.PX_8 };
+const tmp4 = arg1(dependencyMap[5]);
 const result = arg1(dependencyMap[24]).fileFinishedImporting("modules/launchpad/native/LaunchPadWrapper.tsx");
 
 export default function LaunchPadWrapper(launchPadType) {
@@ -140,7 +140,7 @@ export default function LaunchPadWrapper(launchPadType) {
   obj3.onPress = callback;
   obj3.style = tmp.a11yDismiss;
   const items6 = [callback2(callback, obj3), , ];
-  const obj4 = { overflow: true, borderRadius: true, onPress: callback, style: closure_8.absoluteFillObject };
+  const obj4 = { "Bool(false)": null, "Bool(false)": null, onPress: callback, style: closure_8.absoluteFillObject };
   items6[1] = callback2(closure_7, obj4);
   const obj5 = {};
   let tmp25 = !tmp4;

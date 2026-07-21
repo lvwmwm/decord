@@ -1,10 +1,10 @@
-// Module ID: 14717
-// Function ID: 111043
+// Module ID: 14724
+// Function ID: 111067
 // Name: areHomeDrawerGuildTypingStatesEqual
 // Dependencies: []
 // Exports: useHomeDrawerGuildTyping
 
-// Module 14717 (areHomeDrawerGuildTypingStatesEqual)
+// Module 14724 (areHomeDrawerGuildTypingStatesEqual)
 function areHomeDrawerGuildTypingStatesEqual(typingChannelId, typingChannelId2) {
   let result = typingChannelId.typingChannelId === typingChannelId2.typingChannelId && typingChannelId.typingChannelName === typingChannelId2.typingChannelName;
   if (result) {

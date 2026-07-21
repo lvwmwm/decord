@@ -1,10 +1,10 @@
-// Module ID: 4811
-// Function ID: 42073
+// Module ID: 4813
+// Function ID: 42114
 // Name: items1
 // Dependencies: []
 // Exports: getMigratedApplicationIdentityConnectionsScreenApplications
 
-// Module 4811 (items1)
+// Module 4813 (items1)
 let obj = { RIOT_GAMES: "1443033465766281327", BATTLENET: "1356665549089800303" };
 obj = {
   applicationId: obj.RIOT_GAMES,

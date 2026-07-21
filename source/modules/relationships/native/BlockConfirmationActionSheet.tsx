@@ -1,9 +1,9 @@
-// Module ID: 10404
-// Function ID: 80150
+// Module ID: 10410
+// Function ID: 80173
 // Name: BlockedInformationTable
 // Dependencies: []
 
-// Module 10404 (BlockedInformationTable)
+// Module 10410 (BlockedInformationTable)
 function BlockedInformationTable() {
   const obj = {
     hasIcons: true,
@@ -33,7 +33,7 @@ const tmp2 = arg1(dependencyMap[7]);
 const tmp3 = arg1(dependencyMap[8]);
 ({ jsx: closure_14, jsxs: closure_15 } = arg1(dependencyMap[9]));
 let obj1 = arg1(dependencyMap[10]);
-let obj = { button: {} };
+let obj = { button: { accessibilityRole: null, bm: null } };
 obj = { marginBottom: importDefault(dependencyMap[11]).space.PX_16 };
 obj.tableContainer = obj;
 obj1 = { marginBottom: importDefault(dependencyMap[11]).space.PX_24 };
@@ -43,9 +43,9 @@ const tmp4 = arg1(dependencyMap[9]);
 obj.container = { flex: 1, paddingHorizontal: importDefault(dependencyMap[11]).space.PX_16, paddingTop: importDefault(dependencyMap[11]).space.PX_16 };
 const obj2 = { flex: 1, paddingHorizontal: importDefault(dependencyMap[11]).space.PX_16, paddingTop: importDefault(dependencyMap[11]).space.PX_16 };
 obj.header = { marginBottom: importDefault(dependencyMap[11]).space.PX_16 };
-const obj4 = { rowGap: "withFriendRequestsIncoming", padding: "NOTIFICATION_SETTINGS_MODAL_OPEN", marginBottom: importDefault(dependencyMap[11]).space.PX_16 };
+const obj4 = { 0: "content", 9223372036854775807: "a", marginBottom: importDefault(dependencyMap[11]).space.PX_16 };
 obj.avatarContainer = obj4;
-const obj5 = { justifyContent: "text-lg/normal", paddingRight: null, height: "mobile-text-heading-primary", padding: importDefault(dependencyMap[11]).space.PX_4, backgroundColor: importDefault(dependencyMap[11]).colors.BACKGROUND_SURFACE_HIGH, borderRadius: importDefault(dependencyMap[11]).radii.round };
+const obj5 = { "Null": "text-lg/normal", "Null": null, "Null": "mobile-text-heading-primary", padding: importDefault(dependencyMap[11]).space.PX_4, backgroundColor: importDefault(dependencyMap[11]).colors.BACKGROUND_SURFACE_HIGH, borderRadius: importDefault(dependencyMap[11]).radii.round };
 obj.avatarIconContainer = obj5;
 obj.avatar = { alignSelf: "center" };
 const obj3 = { marginBottom: importDefault(dependencyMap[11]).space.PX_16 };
@@ -287,7 +287,7 @@ const memoResult = importAllResult.memo(function BlockConfirmationActionSheet(us
     obj17.disabled = first;
     obj17.loading = first;
     const items11 = [callback2(arg1(dependencyMap[34]).Button, obj17), ];
-    const obj18 = { Promise: "xs", marginTop: "interactive-text-default", flags: "md", style: tmp.footerText };
+    const obj18 = { "Null": "xs", "Null": "interactive-text-default", "Null": "md", style: tmp.footerText };
     const intl8 = arg1(dependencyMap[13]).intl;
     const obj19 = {
       articleLink() {

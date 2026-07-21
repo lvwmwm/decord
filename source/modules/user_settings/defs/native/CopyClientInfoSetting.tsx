@@ -1,9 +1,9 @@
-// Module ID: 14255
-// Function ID: 107757
+// Module ID: 14262
+// Function ID: 107780
 // Name: getClientInfoString
 // Dependencies: []
 
-// Module 14255 (getClientInfoString)
+// Module 14262 (getClientInfoString)
 function getClientInfoString(ReleaseChannel) {
   let str = "N/A";
   if (null != ReleaseChannel) {
@@ -96,8 +96,6 @@ function ClientClientInfoActionSheet() {
   let tmp3 = null;
   if (obj8.isFabric()) {
     const obj6 = {
-      "Bool(false)": 6,
-      "Bool(false)": 8,
       onPress() {
           callback3("React Native New Architecture is enabled.");
         }

@@ -1,10 +1,10 @@
-// Module ID: 4452
-// Function ID: 39231
+// Module ID: 4456
+// Function ID: 39279
 // Name: getPurchaseToken
 // Dependencies: []
 // Exports: getPurchaseTokenHash
 
-// Module 4452 (getPurchaseToken)
+// Module 4456 (getPurchaseToken)
 function getPurchaseToken() {
   const Storage = arg1(dependencyMap[2]).Storage;
   const value = Storage.get(closure_3);

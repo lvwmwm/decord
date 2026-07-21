@@ -4,9 +4,8 @@
 // Dependencies: [0, 0, 0, 0, 0]
 
 // Module 1893 (EntityDao)
-import closure_2 from "result";
-import closure_3 from "result";
-import result from "result";
+import __exportStarResult1 from "__exportStarResult1";
+import closure_3 from "__exportStarResult1";
 
 const tmp2 = () => {
   class EntityDao {
@@ -16,7 +15,7 @@ const tmp2 = () => {
       if (arg3 === undefined) {
         flag = true;
       }
-      tmp = closure_2(self, EntityDao);
+      tmp = __exportStarResult1(self, EntityDao);
       self.originalPrefix = arg0;
       items = [];
       items[0] = arg0;
@@ -175,7 +174,7 @@ const tmp2 = () => {
 const tmp3 = () => {
   class EntityDaoTransaction {
     constructor(arg0) {
-      tmp = closure_2(this, EntityDaoTransaction);
+      tmp = __exportStarResult1(this, EntityDaoTransaction);
       this.transaction = arg0;
       return;
     }
@@ -246,7 +245,7 @@ const tmp3 = () => {
   ];
   return callback(EntityDaoTransaction, items, items1);
 }();
-result = result.fileFinishedImporting("../discord_common/js/packages/kv-storage/js/api/EntityDao.tsx");
+const result = require("__exportStarResult1").fileFinishedImporting("../discord_common/js/packages/kv-storage/js/api/EntityDao.tsx");
 
 export const EntityDao = tmp2;
 export const EntityDaoTransaction = tmp3;

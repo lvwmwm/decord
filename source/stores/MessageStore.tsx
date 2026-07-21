@@ -1,9 +1,9 @@
-// Module ID: 4341
-// Function ID: 38382
+// Module ID: 4345
+// Function ID: 38430
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
-// Module 4341 (_isNativeReflectConstruct)
+// Module 4345 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -116,7 +116,7 @@ function reinjectEphemerals(channelId, truncateResult) {
 }
 function handleConnectionOpen() {
   const item = importDefault(dependencyMap[24]).forEach((mutate) => {
-    callback(closure_2[24]).commit(mutate.mutate({}));
+    callback(closure_2[24]).commit(mutate.mutate({ shapes: null, "Bool(true)": null }));
   });
   set.clear();
 }
@@ -685,7 +685,7 @@ tmp6 = new tmp6(importDefault(dependencyMap[39]), {
   LOAD_MESSAGES_FAILURE: function handleLoadMessagesFailure(channelId) {
     const orCreate = importDefault(dependencyMap[24]).getOrCreate(channelId.channelId);
     const obj = importDefault(dependencyMap[24]);
-    importDefault(dependencyMap[24]).commit(orCreate.mutate({ "Bool(true)": true, "Bool(true)": true }));
+    importDefault(dependencyMap[24]).commit(orCreate.mutate({ test: null, track: null }));
   },
   LOAD_MESSAGES_SUCCESS_CACHED: function handleLoadMessagesSuccessCached(truncate) {
     let after;
@@ -1001,7 +1001,7 @@ tmp6 = new tmp6(importDefault(dependencyMap[39]), {
   THREAD_CREATE_LOCAL: function handleThreadCreateLocal(channelId) {
     let obj = importDefault(dependencyMap[24]);
     const orCreate = obj.getOrCreate(channelId.channelId);
-    obj = { gestureResponseDistance: true, stackPresentation: true, stackAnimation: true, newMessages: [] };
+    obj = { "Bool(false)": "postal-address-country", "Bool(false)": "password", "Bool(false)": "email", newMessages: [] };
     const complete = orCreate.loadComplete(obj);
     importDefault(dependencyMap[24]).commit(complete);
   },
@@ -1239,7 +1239,7 @@ const obj = {
   LOAD_MESSAGES_FAILURE: function handleLoadMessagesFailure(channelId) {
     const orCreate = importDefault(dependencyMap[24]).getOrCreate(channelId.channelId);
     const obj = importDefault(dependencyMap[24]);
-    importDefault(dependencyMap[24]).commit(orCreate.mutate({ "Bool(true)": true, "Bool(true)": true }));
+    importDefault(dependencyMap[24]).commit(orCreate.mutate({ test: null, track: null }));
   },
   LOAD_MESSAGES_SUCCESS_CACHED: function handleLoadMessagesSuccessCached(truncate) {
     let after;
@@ -1555,7 +1555,7 @@ const obj = {
   THREAD_CREATE_LOCAL: function handleThreadCreateLocal(channelId) {
     let obj = importDefault(dependencyMap[24]);
     const orCreate = obj.getOrCreate(channelId.channelId);
-    obj = { gestureResponseDistance: true, stackPresentation: true, stackAnimation: true, newMessages: [] };
+    obj = { "Bool(false)": "postal-address-country", "Bool(false)": "password", "Bool(false)": "email", newMessages: [] };
     const complete = orCreate.loadComplete(obj);
     importDefault(dependencyMap[24]).commit(complete);
   },

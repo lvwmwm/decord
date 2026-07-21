@@ -1,15 +1,15 @@
-// Module ID: 7522
-// Function ID: 60204
+// Module ID: 7526
+// Function ID: 60216
 // Name: CardSection
 // Dependencies: []
 // Exports: default
 
-// Module 7522 (CardSection)
+// Module 7526 (CardSection)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 ({ jsx: closure_3, jsxs: closure_4 } = arg1(dependencyMap[3]));
 let obj = arg1(dependencyMap[4]);
-obj = { container: { flexDirection: "<string:16777479>", alignItems: "<string:36295491>" } };
+obj = { container: {} };
 const tmp3 = arg1(dependencyMap[3]);
 obj.title = importDefault(dependencyMap[5])(arg1(dependencyMap[2]).Fonts.DISPLAY_EXTRABOLD, importDefault(dependencyMap[6]).colors.TEXT_SUBTLE, 12, {});
 obj = { borderRadius: importDefault(dependencyMap[6]).radii.xs, overflow: "hidden", backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_BASE_LOWEST };

@@ -1,9 +1,9 @@
-// Module ID: 9778
-// Function ID: 76012
+// Module ID: 9783
+// Function ID: 76028
 // Name: LottieIcon
 // Dependencies: []
 
-// Module 9778 (LottieIcon)
+// Module 9783 (LottieIcon)
 const importAllResult = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 const jsx = arg1(dependencyMap[2]).jsx;

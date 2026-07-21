@@ -1,10 +1,10 @@
-// Module ID: 10279
-// Function ID: 79400
+// Module ID: 10285
+// Function ID: 79419
 // Name: NotificationSettingsMessageNotificationGuildActionSheet
 // Dependencies: []
 // Exports: default
 
-// Module 10279 (NotificationSettingsMessageNotificationGuildActionSheet)
+// Module 10285 (NotificationSettingsMessageNotificationGuildActionSheet)
 importAll(dependencyMap[0]);
 let closure_3 = importDefault(dependencyMap[1]);
 const UserNotificationSettings = arg1(dependencyMap[2]).UserNotificationSettings;

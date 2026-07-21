@@ -1,9 +1,9 @@
-// Module ID: 10231
-// Function ID: 79046
+// Module ID: 10237
+// Function ID: 79065
 // Name: RNSound
 // Dependencies: []
 
-// Module 10231 (RNSound)
+// Module 10237 (RNSound)
 let closure_2 = importDefault(dependencyMap[0]);
 let closure_3 = importDefault(dependencyMap[1]);
 const NativeModules = arg1(dependencyMap[2]).NativeModules;

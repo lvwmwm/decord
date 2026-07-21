@@ -1,10 +1,10 @@
-// Module ID: 4296
-// Function ID: 37589
+// Module ID: 4300
+// Function ID: 37637
 // Name: sendSMS
 // Dependencies: []
 // Exports: canOpenUrlScheme, canSendMail, canSendSMS, sendMail, sendSMS
 
-// Module 4296 (sendSMS)
+// Module 4300 (sendSMS)
 const _module = require(dependencyMap[0]);
 ({ Linking: closure_3, NativeModules: closure_4 } = _module);
 const _module1 = require(dependencyMap[3]);

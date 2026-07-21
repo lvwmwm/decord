@@ -1,15 +1,15 @@
-// Module ID: 8249
-// Function ID: 65091
+// Module ID: 8253
+// Function ID: 65103
 // Name: ProfileBanner
 // Dependencies: []
 // Exports: default
 
-// Module 8249 (ProfileBanner)
+// Module 8253 (ProfileBanner)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 const BANNER_HEIGHT = arg1(dependencyMap[2]).BANNER_HEIGHT;
 const jsx = arg1(dependencyMap[3]).jsx;
-let closure_6 = arg1(dependencyMap[4]).createStyles({ root: { width: "100%" }, image: { aze: 30271555, azj: 22092032 } });
+let closure_6 = arg1(dependencyMap[4]).createStyles({ root: { width: "100%" }, image: {} });
 const obj = arg1(dependencyMap[4]);
 const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/profile_customization/native/Banner.tsx");
 

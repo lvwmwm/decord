@@ -1,17 +1,17 @@
-// Module ID: 7948
-// Function ID: 63416
+// Module ID: 7952
+// Function ID: 63428
 // Name: BetaTag
 // Dependencies: []
 // Exports: default
 
-// Module 7948 (BetaTag)
+// Module 7952 (BetaTag)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 const Gradients = arg1(dependencyMap[2]).Gradients;
 const jsx = arg1(dependencyMap[3]).jsx;
 let obj = arg1(dependencyMap[4]);
 obj = {};
-obj = { backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BRAND, borderRadius: importDefault(dependencyMap[5]).radii.lg };
+obj = { "Bool(true)": false, "Bool(true)": 800, "Bool(true)": 16, "Bool(true)": 20, "Bool(true)": "heading-lg/normal", backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BRAND, borderRadius: importDefault(dependencyMap[5]).radii.lg };
 obj.container = obj;
 obj.text = { textTransform: "uppercase" };
 let closure_6 = obj.createStyles(obj);

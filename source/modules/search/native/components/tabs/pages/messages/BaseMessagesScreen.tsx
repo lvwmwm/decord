@@ -1,10 +1,10 @@
-// Module ID: 15252
-// Function ID: 115167
+// Module ID: 15259
+// Function ID: 115191
 // Name: BaseMessagesScreen
 // Dependencies: []
 // Exports: default, trackMessageItemPress
 
-// Module 15252 (BaseMessagesScreen)
+// Module 15259 (BaseMessagesScreen)
 let closure_3 = importAll(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 let closure_5 = importDefault(dependencyMap[2]);

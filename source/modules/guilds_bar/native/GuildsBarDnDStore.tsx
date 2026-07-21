@@ -1,24 +1,24 @@
-// Module ID: 14679
-// Function ID: 110747
+// Module ID: 14686
+// Function ID: 110771
 // Name: withEqualityFn
 // Dependencies: []
 // Exports: useFolderBGHeightOffset, useItemDragState
 
-// Module 14679 (withEqualityFn)
+// Module 14686 (withEqualityFn)
 const GuildsNodeType = require(dependencyMap[0]).GuildsNodeType;
-const obj = {};
+const obj = { "Bool(false)": "5.9.4", "Bool(false)": 24, "Bool(false)": 0, "Bool(false)": 73, "Bool(false)": 900 };
 let closure_5 = -1;
 const _module = require(dependencyMap[1]);
 const withEqualityFn = _module.createWithEqualityFn((arg0, arg1) => {
   const require = arg0;
   const importDefault = arg1;
-  const obj = { dragSpecs: undefined, overSpecs: undefined, dropSpecs: undefined, dragRegion: require(dependencyMap[2]).makeMutable({ position: false, top: true }) };
+  const obj = { dragSpecs: undefined, overSpecs: undefined, dropSpecs: undefined, dragRegion: require(dependencyMap[2]).makeMutable({ "Bool(false)": -536870861, "Bool(false)": -299892737 }) };
   const obj2 = require(dependencyMap[2]);
   obj.gestureState = require(dependencyMap[2]).makeMutable(obj);
   const obj3 = require(dependencyMap[2]);
   obj.dragDropInProgress = require(dependencyMap[2]).makeMutable(false);
   const obj4 = require(dependencyMap[2]);
-  obj.listInsets = require(dependencyMap[2]).makeMutable({ 1726238916: false, 607091733: true });
+  obj.listInsets = require(dependencyMap[2]).makeMutable({ 0: -536870861, 0: -299892737 });
   const obj5 = require(dependencyMap[2]);
   obj.scrollPosition = require(dependencyMap[2]).makeMutable(0);
   obj.windowSize = 0;
@@ -48,7 +48,7 @@ const withEqualityFn = _module.createWithEqualityFn((arg0, arg1) => {
     ({ dropSpecs, gestureState } = arg1());
     const arg1 = gestureState;
     let obj = arg1(closure_2[4]);
-    obj = {};
+    obj = { panelHeader: true, discount: "/assets/design/components/Icon/native/redesign/generated/images" };
     obj = { newDropSpec, dropSpecs, gestureState: gestureState.get() };
     obj.data = obj;
     obj.addBreadcrumb(obj);
@@ -80,7 +80,7 @@ const withEqualityFn = _module.createWithEqualityFn((arg0, arg1) => {
     let gestureState;
     ({ gestureState, dragDropInProgress, dropSpecs, dragSpecs } = arg1());
     let obj = arg1(closure_2[4]);
-    obj = { <string:944832516>: false, backShouldLeaveGuild: false };
+    obj = {};
     obj = { gestureState: gestureState.get(), dropSpecs, dragSpecs };
     obj.data = obj;
     obj.addBreadcrumb(obj);

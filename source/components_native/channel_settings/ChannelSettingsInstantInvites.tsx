@@ -1,10 +1,10 @@
-// Module ID: 15370
-// Function ID: 117168
+// Module ID: 15377
+// Function ID: 117192
 // Name: ConnectedChannelSettingsInstantInvites
 // Dependencies: []
 // Exports: default
 
-// Module 15370 (ConnectedChannelSettingsInstantInvites)
+// Module 15377 (ConnectedChannelSettingsInstantInvites)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 const View = arg1(dependencyMap[2]).View;

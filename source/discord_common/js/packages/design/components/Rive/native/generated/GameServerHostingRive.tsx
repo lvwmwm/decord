@@ -4,12 +4,12 @@
 // Dependencies: []
 
 // Module 3925 (GameServerHostingRive)
-let closure_3 = ["aria-current", "activeClassName", "activeStyle", "className", "exact", "isActive"];
+let closure_3 = [true, true, true, true, true, true];
 let closure_4 = importDefault(dependencyMap[0]);
 const importAllResult = importAll(dependencyMap[1]);
 const jsx = arg1(dependencyMap[2]).jsx;
 let closure_7 = { Game_Server_Hosting_Main: { reducedMotion: "boolean" }, c_chara_5: {}, hytale_gameplay: { reducedMotion: "boolean" }, c_chara_1: {}, c_chara_4: {}, c_chara_2: {}, c_chara_3: {} };
-let closure_8 = { Game_Server_Hosting_Main: ["isActive"], c_chara_5: [], hytale_gameplay: ["isActive"], c_chara_1: [], c_chara_4: [], c_chara_2: [], c_chara_3: [] };
+let closure_8 = { Game_Server_Hosting_Main: [1358955054], c_chara_5: [], hytale_gameplay: [1358955054], c_chara_1: [], c_chara_4: [], c_chara_2: [], c_chara_3: [] };
 let closure_9 = {
   Game_Server_Hosting_Main: function GameServerHostingMainBindings(arg0) {
     let instance;

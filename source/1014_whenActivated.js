@@ -1,7 +1,7 @@
 // Module ID: 1014
 // Function ID: 11044
 // Name: whenActivated
-// Dependencies: [67895296]
+// Dependencies: []
 
 // Module 1014 (whenActivated)
 Object.defineProperty(arg5, Symbol.toStringTag, { value: "Module" });

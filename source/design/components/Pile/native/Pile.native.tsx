@@ -1,18 +1,18 @@
-// Module ID: 9896
-// Function ID: 76578
+// Module ID: 9901
+// Function ID: 76594
 // Name: Pile
 // Dependencies: [0, 0, 0, 0, 0, 0, 0, 0, 0]
 // Exports: Pile
 
-// Module 9896 (Pile)
-import closure_3 from "result";
-import { View } from "result";
-import { jsx } from "result";
-import result from "result";
-import result from "result";
+// Module 9901 (Pile)
+import closure_3 from "__exportStarResult1";
+import { View } from "__exportStarResult1";
+import { jsx } from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
 
-let closure_6 = result.createStyles({ pile: { flexDirection: "row" } });
-result = result.fileFinishedImporting("design/components/Pile/native/Pile.native.tsx");
+let closure_6 = __exportStarResult1.createStyles({ pile: { flexDirection: "row" } });
+const result = __exportStarResult1.fileFinishedImporting("design/components/Pile/native/Pile.native.tsx");
 
 export const Pile = function Pile(aria-label) {
   let children;

@@ -1,12 +1,12 @@
-// Module ID: 11793
-// Function ID: 91538
+// Module ID: 11800
+// Function ID: 91561
 // Name: useCanPinChannelsInGuild
 // Dependencies: []
 // Exports: useCanPinChannelsInGuild
 
-// Module 11793 (useCanPinChannelsInGuild)
+// Module 11800 (useCanPinChannelsInGuild)
 const _module = require(dependencyMap[0]);
-const obj = { -1269606814: false, -1845285747: false, defaultConfig: { canPinEverywhere: false }, variations: { [1]: { canPinEverywhere: true } } };
+const obj = { 9223372036854775807: "RTC_CONNECTION_LOSS_RATE", 0: "handleJoinThreadVoice", defaultConfig: { canPinEverywhere: false }, variations: { [1]: { canPinEverywhere: true } } };
 let closure_2 = _module.createApexExperiment(obj);
 const _module1 = require(dependencyMap[2]);
 const result = _module1.fileFinishedImporting("modules/channel/ChannelPinningExperiment.tsx");

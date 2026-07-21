@@ -1,12 +1,11 @@
 // Module ID: 431
 // Function ID: 5984
 // Name: showActionSheetWithOptions
-// Dependencies: [469, 31, 390, 31]
+// Dependencies: []
 
 // Module 431 (showActionSheetWithOptions)
-import ToastAndroid from "ToastAndroid";
-
 let closure_3 = [];
+let closure_4 = importDefault(dependencyMap[0]);
 
 export default {
   showActionSheetWithOptions(destructiveButtonIndex, arg1) {

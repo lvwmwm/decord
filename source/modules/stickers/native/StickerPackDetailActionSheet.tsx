@@ -1,8 +1,8 @@
-// Module ID: 9595
-// Function ID: 74783
+// Module ID: 9600
+// Function ID: 74800
 // Dependencies: []
 
-// Module 9595
+// Module 9600
 let closure_3 = importDefault(dependencyMap[0]);
 const importAllResult = importAll(dependencyMap[1]);
 ({ MIN_MARGIN: closure_5, STICKER_SIZE: closure_6 } = arg1(dependencyMap[2]));
@@ -11,8 +11,8 @@ const ACTION_SHEET_MAX_WIDTH = arg1(dependencyMap[4]).ACTION_SHEET_MAX_WIDTH;
 const tmp2 = arg1(dependencyMap[2]);
 ({ jsx: closure_9, Fragment: closure_10, jsxs: closure_11 } = arg1(dependencyMap[5]));
 const tmp3 = arg1(dependencyMap[5]);
-const obj = { "Null": "r", "Null": "GUILD_DISCOVERY_REQUIREMENTS", "Null": "isArray", height: undefined };
-let closure_12 = arg1(dependencyMap[6]).createStyles({ focusedStickerPreviewContainer: { fontSize: false, marginRight: false, itemCount: false, cardWidth: false, cardMarginRight: false, <string:4175227624>: false, <string:4003203003>: false, <string:1377491219>: false }, header: obj, stickers: { "Null": "<string:16777479>", "Null": "<string:36295491>" }, popoutContainer: {} });
+const obj = { "Bool(false)": "r", "Bool(false)": "lG6a5x", "Bool(false)": "isArray", height: undefined };
+let closure_12 = arg1(dependencyMap[6]).createStyles({ focusedStickerPreviewContainer: { assets: false, page: false, hasReachedEnd: false, lastAssetIndex: false, first: false, groupTypes: false, assetType: false, display: false }, header: obj, stickers: {}, popoutContainer: {} });
 const obj2 = arg1(dependencyMap[6]);
 const memoResult = importAllResult.memo(function StickerPackDetailActionSheet(stickerPack) {
   stickerPack = stickerPack.stickerPack;

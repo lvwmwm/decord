@@ -1,10 +1,10 @@
-// Module ID: 7607
-// Function ID: 60981
+// Module ID: 7611
+// Function ID: 60993
 // Name: TextLineElement
 // Dependencies: []
 // Exports: default
 
-// Module 7607 (TextLineElement)
+// Module 7611 (TextLineElement)
 let closure_4 = importDefault(dependencyMap[0]);
 let closure_5 = importDefault(dependencyMap[1]);
 let closure_6 = importAll(dependencyMap[2]);
@@ -12,12 +12,12 @@ let closure_6 = importAll(dependencyMap[2]);
 const tmp2 = arg1(dependencyMap[3]);
 ({ jsx: closure_9, jsxs: closure_10 } = arg1(dependencyMap[4]));
 let obj = arg1(dependencyMap[5]);
-obj = { container: { "Bool(false)": "<string:16777479>", "Bool(false)": "<string:36295491>" }, header: { marginBottom: 8 }, description: { marginBottom: 16 }, trailingButtonContainer: { paddingHorizontal: 8 }, smsInfoContainer: { "Bool(true)": 8, "Bool(true)": null, "Bool(true)": "\u270A\u{1F3FF}" } };
-obj = { TN: true, wrapperPageY: true, hasMembers: true, text_color: true, month: true, day: true, hour: true, minute: true, IN_PANEL: true, isCurrentGuildMemberByTimestamp: true, totalTokens: true, borderRadius: importDefault(dependencyMap[6]).radii.xs, borderColor: importDefault(dependencyMap[6]).colors.BACKGROUND_BASE_LOWEST, backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_BASE_LOW };
+obj = { container: {}, header: { marginBottom: 8 }, description: { marginBottom: 16 }, trailingButtonContainer: { paddingHorizontal: 8 }, smsInfoContainer: {} };
+obj = { label: "isArray", accessibilityRole: "accessibilityRole", assign: "value", category: "container", body: "construct", count: "call", Text: "isArray", then: "isArray", channel: "isArray", y: "accessibilityRole", isArray: "default", borderRadius: importDefault(dependencyMap[6]).radii.xs, borderColor: importDefault(dependencyMap[6]).colors.BACKGROUND_BASE_LOWEST, backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_BASE_LOW };
 obj.smsNumberContainer = obj;
 const tmp3 = arg1(dependencyMap[4]);
 obj.smsNumberContainerSuccess = { borderColor: importDefault(dependencyMap[6]).colors.STATUS_POSITIVE_BACKGROUND };
-obj.startButtonContainer = { MN: "Cheerful Choco preens against window", MZ: "Affection", MR: "781323769960202280" };
+obj.startButtonContainer = {};
 let closure_11 = obj.createStyles(obj);
 const obj1 = { borderColor: importDefault(dependencyMap[6]).colors.STATUS_POSITIVE_BACKGROUND };
 const result = arg1(dependencyMap[17]).fileFinishedImporting("modules/in_app_reports/native/components/InAppReportsTextLineElement.tsx");
@@ -60,7 +60,7 @@ export default function TextLineElement(element) {
   let closure_2 = tmp2[1];
   if (is_localized) {
     let obj = { style: tmp.container };
-    obj = { style: tmp.header, children: title };
+    obj = { 9223372036854775807: "781324642736144424", 9223372036854775807: null, -9223372036854775808: "Cheerful Choco preens against window", 1602121198: "Affection", style: tmp.header, children: title };
     const items = [callback2(arg1(_handleOpenSms[12]).Text, obj), , ];
     obj = { style: tmp.description, variant: "text-md/medium", children: tmp4(body) };
     items[1] = callback2(arg1(_handleOpenSms[12]).Text, obj);
@@ -68,7 +68,7 @@ export default function TextLineElement(element) {
     const obj2 = {};
     const items1 = [tmp.smsNumberContainer, first ? tmp.smsNumberContainerSuccess : {}];
     obj2.style = items1;
-    const obj3 = { INTEGRATION_CREATE: "r", ConstraintReasonCode: "timings", children: sms };
+    const obj3 = { children: sms };
     const items2 = [callback2(arg1(_handleOpenSms[12]).Text, obj3), ];
     const obj4 = { style: tmp.trailingButtonContainer };
     const obj5 = {};

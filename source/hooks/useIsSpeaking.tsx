@@ -1,10 +1,10 @@
-// Module ID: 10517
-// Function ID: 82169
+// Module ID: 10523
+// Function ID: 82192
 // Name: _checkIsSpeaking
 // Dependencies: []
 // Exports: default, getIsSpeaking
 
-// Module 10517 (_checkIsSpeaking)
+// Module 10523 (_checkIsSpeaking)
 function _checkIsSpeaking(stateFromStores1, arg1, stateFromStores2) {
   let tmp = stateFromStores1;
   if (!stateFromStores1) {

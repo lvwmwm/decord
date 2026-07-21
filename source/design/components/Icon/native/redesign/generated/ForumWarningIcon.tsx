@@ -1,10 +1,10 @@
-// Module ID: 4635
-// Function ID: 40238
+// Module ID: 4637
+// Function ID: 40279
 // Name: ForumWarningIcon
 // Dependencies: []
 // Exports: ForumWarningIcon
 
-// Module 4635 (ForumWarningIcon)
+// Module 4637 (ForumWarningIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/ForumWarningIcon.tsx");

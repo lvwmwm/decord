@@ -1,10 +1,10 @@
-// Module ID: 8472
-// Function ID: 67614
+// Module ID: 8476
+// Function ID: 67626
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 // Exports: generateRowsForQuery, getMostRecentDMedUser, getUsersAlreadyJoined, groupInviteSuggestions, maxAgeString, urgentShareMessageString
 
-// Module 8472 (_createForOfIteratorHelperLoose)
+// Module 8476 (_createForOfIteratorHelperLoose)
 function _createForOfIteratorHelperLoose(@@iterator) {
   let arg1 = Symbol_iterator;
   @@iterator = "undefined" !== typeof Symbol;
@@ -220,7 +220,7 @@ let closure_9 = importDefault(dependencyMap[6]);
 const ChannelTypes = arg1(dependencyMap[7]).ChannelTypes;
 const InviteTargetTypes = arg1(dependencyMap[8]).InviteTargetTypes;
 let obj = { GROUP_DM: "GROUP_DM", DM: "DM", FRIEND: "FRIEND", CHANNEL: "CHANNEL" };
-let closure_13 = { [arg1(dependencyMap[10]).INVITE_OPTIONS_30_MINUTES.value]: {}, [arg1(dependencyMap[10]).INVITE_OPTIONS_1_HOUR.value]: {}, [arg1(dependencyMap[10]).INVITE_OPTIONS_6_HOURS.value]: { borderLeftWidth: "Array", borderRightWidth: "isArray" }, [arg1(dependencyMap[10]).INVITE_OPTIONS_12_HOURS.value]: {}, [arg1(dependencyMap[10]).INVITE_OPTIONS_1_DAY.value]: {}, [arg1(dependencyMap[10]).INVITE_OPTIONS_7_DAYS.value]: { borderLeftWidth: "<string:858992897>", borderRightWidth: "<string:858993459>" }, [arg1(dependencyMap[10]).INVITE_OPTIONS_14_DAYS.value]: {}, [arg1(dependencyMap[10]).INVITE_OPTIONS_30_DAYS.value]: { borderLeftWidth: true, borderRightWidth: true }, [arg1(dependencyMap[10]).INVITE_OPTIONS_60_DAYS.value]: {}, [arg1(dependencyMap[10]).INVITE_OPTIONS_FOREVER.value]: { borderLeftWidth: "<string:1124139010>", borderRightWidth: "d7a7fd447bd8f0f0e6d6696aff4daaa0" } };
+let closure_13 = { [arg1(dependencyMap[10]).INVITE_OPTIONS_30_MINUTES.value]: { -314654980: 115172193759228650000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, 478205037: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000200705219596742 }, [arg1(dependencyMap[10]).INVITE_OPTIONS_1_HOUR.value]: {}, [arg1(dependencyMap[10]).INVITE_OPTIONS_6_HOURS.value]: { -314654980: true, 478205037: true }, [arg1(dependencyMap[10]).INVITE_OPTIONS_12_HOURS.value]: {}, [arg1(dependencyMap[10]).INVITE_OPTIONS_1_DAY.value]: { -314654980: null, 478205037: null }, [arg1(dependencyMap[10]).INVITE_OPTIONS_7_DAYS.value]: { -314654980: true, 478205037: true }, [arg1(dependencyMap[10]).INVITE_OPTIONS_14_DAYS.value]: { -314654980: "channelId", 478205037: "channelId" }, [arg1(dependencyMap[10]).INVITE_OPTIONS_30_DAYS.value]: { -314654980: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000018419178505942198, 478205037: 1039752086360127000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 }, [arg1(dependencyMap[10]).INVITE_OPTIONS_60_DAYS.value]: {}, [arg1(dependencyMap[10]).INVITE_OPTIONS_FOREVER.value]: { -314654980: false, 478205037: false } };
 const items = [arg1(dependencyMap[10]).INVITE_OPTIONS_14_DAYS, arg1(dependencyMap[10]).INVITE_OPTIONS_30_DAYS, arg1(dependencyMap[10]).INVITE_OPTIONS_60_DAYS];
 obj = {
   getMaxAgeOptionByValue(maxAge) {
@@ -299,7 +299,7 @@ export const generateRowsForQuery = function generateRowsForQuery(arg0) {
   ({ suggestedChannelIds, maxRowsWithoutQuery, omitGuildId } = arg0);
   const set = new Set();
   rows = [];
-  counts = { "Bool(false)": false, "Bool(false)": null, "Bool(false)": "", "Bool(false)": null, "Bool(false)": null };
+  counts = {};
   if ("" === query) {
     let obj = { omitUserIds, maxRowsWithoutQuery, omitGuildId, shownUserIds: set, rows, counts };
     if (inviteTargetType === InviteTargetTypes.EMBEDDED_APPLICATION) {
@@ -542,9 +542,8 @@ export const generateRowsForQuery = function generateRowsForQuery(arg0) {
     }(obj10);
     function addQueriedGroupDms(query) {
       ({ rows: closure_0, counts: closure_1 } = query);
-      let obj = callback(closure_2[9]);
-      obj = { 9223372036854775807: true, -9223372036854775808: true, 9223372036854775807: true, query: query.query };
-      const item = obj.queryGroupDMs(obj).forEach((item) => {
+      const obj = callback(closure_2[9]);
+      const item = callback(closure_2[9]).queryGroupDMs({ query: query.query }).forEach((item) => {
         numGroupDms.numGroupDms = numGroupDms.numGroupDms + 1;
       });
     }(obj7);
@@ -554,8 +553,9 @@ export const generateRowsForQuery = function generateRowsForQuery(arg0) {
     obj11["shownUserIds"] = set;
     function addQueriedFriends(query) {
       ({ rows: closure_0, counts: closure_1, omitUserIds: closure_2, shownUserIds: closure_3 } = query);
-      const obj = callback(closure_2[9]);
-      const item = callback(closure_2[9]).queryFriends({ query: query.query }).forEach((record) => {
+      let obj = callback(closure_2[9]);
+      obj = { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, query: query.query };
+      const item = obj.queryFriends(obj).forEach((record) => {
         record = record.record;
         let hasItem = set.has(record.id);
         if (!hasItem) {

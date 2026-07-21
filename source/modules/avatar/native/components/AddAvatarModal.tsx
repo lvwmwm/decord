@@ -1,9 +1,9 @@
-// Module ID: 15980
-// Function ID: 122663
+// Module ID: 15987
+// Function ID: 122689
 // Name: AddAvatarScreen
 // Dependencies: []
 
-// Module 15980 (AddAvatarScreen)
+// Module 15987 (AddAvatarScreen)
 let Fonts;
 let ModalAnimation;
 function AddAvatarScreen() {
@@ -55,11 +55,11 @@ function AddAvatarScreen() {
   obj.style = items1;
   const obj2 = { style: tmp.headerContainer };
   obj3 = {};
-  obj4 = { 0: 24, 9223372036854775807: 24, 0: null, -9223372036854775808: "aa9c26c29990ba7a6584e51ab5c56efa", style: tmp.title };
+  obj4 = { 1501064855: 24, -1267889981: 24, -1145697943: null, -1266241916: "aa9c26c29990ba7a6584e51ab5c56efa", style: tmp.title };
   const intl = callback(dependencyMap[20]).intl;
   obj4.children = intl.string(callback(dependencyMap[20]).t.XQRWvR);
   const items2 = [callback2(callback(dependencyMap[19]).Text, obj4), ];
-  const obj5 = { Promise: 1203128676, marginTop: 1919418369, flags: 994836481, style: tmp.subtitle };
+  const obj5 = { "Null": true, "Null": true, "Null": true, style: tmp.subtitle };
   const intl2 = callback(dependencyMap[20]).intl;
   obj5.children = intl2.string(callback(dependencyMap[20]).t.fH9TLT);
   items2[1] = callback2(callback(dependencyMap[19]).Text, obj5);
@@ -142,11 +142,11 @@ let obj = arg1(dependencyMap[7]);
 obj = {};
 obj = { backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_BASE_LOW, paddingTop: arg1(dependencyMap[9]).NAV_BAR_HEIGHT + 32 };
 obj.container = obj;
-obj.headerContainer = { "Bool(true)": true, "Bool(true)": true };
-obj.buttonContainer = { <string:80596992>: "<string:16777479>", <string:80602112>: "<string:36295491>" };
-obj.title = { bounces: null, keyboardShouldPersistTaps: null };
+obj.headerContainer = { -1861163602: true, -738052821: true };
+obj.buttonContainer = {};
+obj.title = { "Null": null, "Null": null };
 obj.subtitle = { textAlign: "center" };
-obj.errorContainer = { 9223372036854775807: 24, 9223372036854775807: "recent_games_enabled" };
+obj.errorContainer = { "Bool(false)": 24, "Bool(false)": "recent_games_enabled" };
 const obj1 = {};
 const tmp3 = arg1(dependencyMap[6]);
 const merged = Object.assign(importDefault(dependencyMap[10])(Fonts.DISPLAY_MEDIUM, importDefault(dependencyMap[8]).unsafe_rawColors.RED_400, 12));

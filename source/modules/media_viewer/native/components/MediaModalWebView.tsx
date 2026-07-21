@@ -1,9 +1,9 @@
-// Module ID: 8288
-// Function ID: 65454
+// Module ID: 8292
+// Function ID: 65466
 // Name: PlayerState
 // Dependencies: []
 
-// Module 8288 (PlayerState)
+// Module 8292 (PlayerState)
 const importAllResult = importAll(dependencyMap[0]);
 ({ ActivityIndicator: closure_4, View: closure_5 } = arg1(dependencyMap[1]));
 const tmp2 = arg1(dependencyMap[1]);
@@ -15,7 +15,7 @@ if (obj2.isIOS()) {
 }
 const obj = { UNREADY: 0, [0]: "UNREADY", READY: 1, [1]: "READY", ERRORED: 2, [2]: "ERRORED", UNSTARTED: 3, [3]: "UNSTARTED", ENDED: 4, [4]: "ENDED", PLAYING: 5, [5]: "PLAYING", PAUSED: 6, [6]: "PAUSED", BUFFERING: 7, [7]: "BUFFERING", VIDEO_CUED: 8, [8]: "VIDEO_CUED" };
 const obj2 = arg1(dependencyMap[3]);
-let closure_10 = arg1(dependencyMap[4]).createStyles({ loading: {} });
+let closure_10 = arg1(dependencyMap[4]).createStyles({ loading: { <string:3829314386>: "/assets/.cache/intl/ZGVzaWdu", <string:3897681761>: null, <string:3944309469>: "89c1f821400ffcc75deeeab8c6315a88", <string:1640812881>: "pt-BR.messages.89c1f821400ffcc75deeeab8c6315a88.compiled.messages", <string:3990311566>: "jsona", <string:2204197756>: true, <string:703161178>: true } });
 let closure_11 = { code: "function MediaModalWebViewTsx1(){const{withTiming,webviewOpacity}=this.__closure;return{opacity:withTiming(webviewOpacity.get())};}" };
 let closure_12 = { code: "function MediaModalWebViewTsx2(){const{withTiming,loaderOpacity}=this.__closure;return{opacity:withTiming(loaderOpacity.get())};}" };
 const obj4 = arg1(dependencyMap[4]);
@@ -29,7 +29,7 @@ const memoResult = importAllResult.memo(importAllResult.forwardRef((playerState)
   const baseURL = playerState.baseURL;
   const dependencyMap = baseURL;
   const panGestureConfig = playerState.panGestureConfig;
-  let obj = { "Null": null, "Null": "LOCAL_PAYMENT_START_PAYMENT_MISSING_REQUIRED_OPTION", "Null": "Missing required option for startPayment.", "Null": null, "Null": "LOCAL_PAYMENT_START_PAYMENT_DEFERRED_PAYMENT_FAILED", "Null": "LocalPayment startPayment deferred payment failed." };
+  let obj = { "Bool(true)": true, "Bool(true)": true, "Bool(true)": true, "Bool(true)": true, "Bool(true)": true, "Bool(true)": true };
   ({ style, injectedJavaScript } = playerState);
   Object.setPrototypeOf(null);
   const merged = Object.assign(playerState, obj);
@@ -134,7 +134,7 @@ const memoResult = importAllResult.memo(importAllResult.forwardRef((playerState)
     const obj4 = {};
     const items5 = [animatedStyle1, tmp3.loading];
     obj4.style = items5;
-    obj4.children = callback(sharedValue, { "Bool(true)": 16, "Bool(true)": 8 });
+    obj4.children = callback(sharedValue, {});
     tmp15 = callback(importDefault(dependencyMap[5]).View, obj4);
   }
   items4[1] = tmp15;

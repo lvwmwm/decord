@@ -1,25 +1,25 @@
-// Module ID: 15456
-// Function ID: 117922
+// Module ID: 15463
+// Function ID: 117946
 // Name: SuspendedUserSafetyHubPage
 // Dependencies: []
 // Exports: default
 
-// Module 15456 (SuspendedUserSafetyHubPage)
+// Module 15463 (SuspendedUserSafetyHubPage)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 const SafetyHubLinks = arg1(dependencyMap[2]).SafetyHubLinks;
 ({ jsx: closure_5, jsxs: closure_6 } = arg1(dependencyMap[3]));
 let obj = arg1(dependencyMap[4]);
 obj = {};
-obj = { -1595093916: "text-link", 179458555: "text-sm/normal", 1654041169: "link", 407990009: 188, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_LOW };
+obj = { accessibilityRole: "Array", options: "isArray", format: "userId", accessibilityRole: "mn", backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_LOW };
 obj.container = obj;
 const tmp3 = arg1(dependencyMap[3]);
 obj.header = { backgroundColor: importDefault(dependencyMap[5]).colors.CONTROL_CRITICAL_PRIMARY_BACKGROUND_DEFAULT, flexDirection: "row", paddingVertical: importDefault(dependencyMap[5]).space.PX_8, alignItems: "center" };
-const obj2 = { <string:3046030793>: "center", <string:3183507128>: "center", <string:3193031777>: null, marginRight: importDefault(dependencyMap[5]).space.PX_8 };
-obj.text = obj2;
+const obj1 = { backgroundColor: importDefault(dependencyMap[5]).colors.CONTROL_CRITICAL_PRIMARY_BACKGROUND_DEFAULT, flexDirection: "row", paddingVertical: importDefault(dependencyMap[5]).space.PX_8, alignItems: "center" };
+obj.text = { marginRight: importDefault(dependencyMap[5]).space.PX_8 };
 obj.link = { textDecorationLine: "underline" };
 let closure_7 = obj.createStyles(obj);
-const obj1 = { backgroundColor: importDefault(dependencyMap[5]).colors.CONTROL_CRITICAL_PRIMARY_BACKGROUND_DEFAULT, flexDirection: "row", paddingVertical: importDefault(dependencyMap[5]).space.PX_8, alignItems: "center" };
+const obj2 = { marginRight: importDefault(dependencyMap[5]).space.PX_8 };
 const result = arg1(dependencyMap[14]).fileFinishedImporting("modules/safety_hub/native/SuspendedUserPage.tsx");
 
 export default function SuspendedUserSafetyHubPage() {
@@ -45,7 +45,7 @@ export default function SuspendedUserSafetyHubPage() {
   };
   const intl2 = arg1(dependencyMap[8]).intl;
   const items1 = [intl2.string(arg1(dependencyMap[8]).t.MG+Bzb), " ", ];
-  const obj3 = { Promise: "<string:2326528002>", marginTop: "<string:2252406785>", flags: null, style: tmp.link };
+  const obj3 = { "Null": null, "Null": null, "Null": null, style: tmp.link };
   const intl3 = arg1(dependencyMap[8]).intl;
   obj3.children = intl3.string(arg1(dependencyMap[8]).t.9JceHN);
   items1[2] = callback(arg1(dependencyMap[11]).Text, obj3);

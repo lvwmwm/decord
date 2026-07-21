@@ -1,10 +1,10 @@
-// Module ID: 14388
-// Function ID: 108572
+// Module ID: 14395
+// Function ID: 108595
 // Name: VerificationListItem
 // Dependencies: []
 // Exports: default
 
-// Module 14388 (VerificationListItem)
+// Module 14395 (VerificationListItem)
 function VerificationListItem(userId) {
   let end;
   let index;
@@ -30,9 +30,9 @@ function VerificationListItem(userId) {
   obj.trailing = jsx(arg1(dependencyMap[8]).PressableHighlight, obj);
   return jsx(arg1(dependencyMap[6]).TableRow, obj);
 }
-function SectionListItem(title) {
-  const obj = { Promise: 10, marginTop: null, flags: "flex-start", style: callback().section, children: title.title };
-  return jsx(arg1(dependencyMap[10]).Text, obj);
+function SectionListItem(children) {
+  const tmp = callback();
+  return jsx(arg1(dependencyMap[10]).Text, { style: callback().section, children: children.title });
 }
 function renderItem(item) {
   item = item.item;

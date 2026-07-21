@@ -1,10 +1,10 @@
-// Module ID: 6403
-// Function ID: 50478
+// Module ID: 6405
+// Function ID: 50521
 // Name: PortalSpotIllustration
 // Dependencies: []
 // Exports: PortalSpotIllustration
 
-// Module 6403 (PortalSpotIllustration)
+// Module 6405 (PortalSpotIllustration)
 const jsx = require(dependencyMap[0]).jsx;
 const _module = require(dependencyMap[3]);
 const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/PortalSpotIllustration.native.tsx");

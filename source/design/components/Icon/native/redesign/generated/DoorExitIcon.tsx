@@ -1,10 +1,10 @@
-// Module ID: 10637
-// Function ID: 83077
+// Module ID: 10643
+// Function ID: 83100
 // Name: DoorExitIcon
 // Dependencies: []
 // Exports: DoorExitIcon
 
-// Module 10637 (DoorExitIcon)
+// Module 10643 (DoorExitIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/DoorExitIcon.tsx");

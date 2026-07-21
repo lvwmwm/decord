@@ -1,10 +1,10 @@
-// Module ID: 9568
-// Function ID: 74564
+// Module ID: 9573
+// Function ID: 74581
 // Name: isAttachmentUrl
 // Dependencies: []
 // Exports: isExternalProxiedAttachmentUrl, maybeRefreshAttachmentUrl, messageHasExpiredAttachmentUrl, removeSignedUrlParameters
 
-// Module 9568 (isAttachmentUrl)
+// Module 9573 (isAttachmentUrl)
 function isAttachmentUrl(toURLSafeResult) {
   const arg1 = toURLSafeResult;
   const hasItem = set1.has(toURLSafeResult.hostname);

@@ -1,10 +1,10 @@
-// Module ID: 8423
-// Function ID: 67109
+// Module ID: 8427
+// Function ID: 67121
 // Name: AddModerators
 // Dependencies: []
 // Exports: default
 
-// Module 8423 (AddModerators)
+// Module 8427 (AddModerators)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 const View = arg1(dependencyMap[2]).View;
@@ -16,7 +16,7 @@ obj = {};
 obj = { backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_BASE_LOW, flex: 1 };
 obj.addMembersContainer = obj;
 obj.moderatorDescriptionContainer = { margin: 16 };
-obj.errorMessage = { 0: null, 9223372036854775807: null };
+obj.errorMessage = {};
 let closure_10 = obj.createStyles(obj);
 const tmp2 = arg1(dependencyMap[5]);
 const result = arg1(dependencyMap[20]).fileFinishedImporting("modules/stage_channels/native/create_channel/AddModerators.tsx");

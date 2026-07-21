@@ -1,15 +1,13 @@
-// Module ID: 14269
-// Function ID: 107860
+// Module ID: 14276
+// Function ID: 107883
 // Name: FileWarningIcon
-// Dependencies: [4294967295, 0, 0, 0, 0, 0]
+// Dependencies: []
 // Exports: FileWarningIcon
 
-// Module 14269 (FileWarningIcon)
-import { jsx } from "result";
-import result from "result";
-
+// Module 14276 (FileWarningIcon)
 importAll(dependencyMap[0]);
-result = result.fileFinishedImporting("design/components/Icon/native/redesign/generated/FileWarningIcon.tsx");
+const jsx = arg1(dependencyMap[1]).jsx;
+const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/FileWarningIcon.tsx");
 
 export const FileWarningIcon = function FileWarningIcon(color) {
   let INTERACTIVE_ICON_DEFAULT = color.color;

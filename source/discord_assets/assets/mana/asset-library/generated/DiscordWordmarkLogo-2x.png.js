@@ -1,9 +1,9 @@
-// Module ID: 6006
-// Function ID: 49883
+// Module ID: 6008
+// Function ID: 49926
 // Name: metadata
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 6006 (metadata)
+// Module 6008 (metadata)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/DiscordWordmarkLogo-2x.png.js");
 

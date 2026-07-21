@@ -1,10 +1,10 @@
-// Module ID: 10947
-// Function ID: 85137
+// Module ID: 10952
+// Function ID: 85158
 // Name: MessageGameIconActionSheet
 // Dependencies: []
 // Exports: default
 
-// Module 10947 (MessageGameIconActionSheet)
+// Module 10952 (MessageGameIconActionSheet)
 let num = 0;
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
@@ -13,7 +13,7 @@ const HelpdeskArticles = arg1(dependencyMap[3]).HelpdeskArticles;
 ({ jsx: closure_6, jsxs: closure_7 } = arg1(dependencyMap[4]));
 let obj = arg1(dependencyMap[5]);
 obj = {};
-obj = {};
+obj = { 1371898722: true, 1348574506: true };
 const tmp3 = arg1(dependencyMap[4]);
 if (obj4.isAndroid()) {
   num = 16;
@@ -55,7 +55,7 @@ export default function MessageGameIconActionSheet(applicationId) {
     obj2.disableColor = true;
     const items1 = [callback(arg1(dependencyMap[10]).Icon, obj2), ];
     const obj4 = { style: tmp.gameDescriptionWrapper };
-    const obj5 = { Promise: "ur", marginTop: "SECTION_INDEX_FIRST_NAMED_CATEGORY", flags: "ur", style: tmp.timestamp, children: applicationId.messageTimestamp };
+    const obj5 = { style: tmp.timestamp, children: applicationId.messageTimestamp };
     const items2 = [callback(arg1(dependencyMap[11]).Text, obj5), ];
     const obj6 = { variant: "text-sm/medium" };
     const intl = arg1(dependencyMap[13]).intl;

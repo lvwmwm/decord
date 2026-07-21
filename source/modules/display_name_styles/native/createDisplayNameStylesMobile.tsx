@@ -1,10 +1,10 @@
-// Module ID: 12198
-// Function ID: 93720
+// Module ID: 12205
+// Function ID: 93743
 // Name: createDisplayNameStylesMobile
 // Dependencies: []
 // Exports: createDisplayNameStylesMobile
 
-// Module 12198 (createDisplayNameStylesMobile)
+// Module 12205 (createDisplayNameStylesMobile)
 let closure_0 = importDefault(dependencyMap[0]);
 let closure_1 = importDefault(dependencyMap[1]);
 const result = arg1(dependencyMap[2]).fileFinishedImporting("modules/display_name_styles/native/createDisplayNameStylesMobile.tsx");

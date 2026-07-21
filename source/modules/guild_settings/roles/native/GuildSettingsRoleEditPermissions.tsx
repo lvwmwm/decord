@@ -1,10 +1,10 @@
-// Module ID: 16188
-// Function ID: 125098
+// Module ID: 16195
+// Function ID: 125129
 // Name: GuildSettingsRoleEditPermission
 // Dependencies: []
 // Exports: default
 
-// Module 16188 (GuildSettingsRoleEditPermission)
+// Module 16195 (GuildSettingsRoleEditPermission)
 let closure_4 = importDefault(dependencyMap[0]);
 let closure_5 = importAll(dependencyMap[1]);
 ({ View: closure_6, Keyboard: closure_7, SectionList: closure_8 } = arg1(dependencyMap[2]));
@@ -73,7 +73,7 @@ export default function GuildSettingsRoleEditPermission(guild) {
     tmp12 = tmp16;
   }
   if (tmp12) {
-    obj1 = { INTEGRATION_CREATE: "<string:3305963521>", ConstraintReasonCode: "<string:671547393>" };
+    obj1 = {};
     const intl = arg1(dependencyMap[13]).intl;
     obj2 = {
       onTemplateOpen() {

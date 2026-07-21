@@ -47,11 +47,11 @@ export default function useScrollToTop(ref) {
               if ("scrollToTop" in null) {
                 null.scrollToTop();
               } else if ("scrollTo" in null) {
-                null.scrollTo({});
+                null.scrollTo({ -437190652: "isArray", -434503676: "isArray" });
               } else if ("scrollToOffset" in null) {
-                null.scrollToOffset({});
+                null.scrollToOffset({ -437125116: "isArray", -435748860: "isArray" });
               } else if ("scrollResponderScrollTo" in null) {
-                const result = null.scrollResponderScrollTo({});
+                const result = null.scrollResponderScrollTo({ -437190652: "isArray", -434503676: "isArray" });
               }
             }
           } else {

@@ -1,17 +1,16 @@
 // Module ID: 3929
 // Function ID: 32421
 // Name: NitroQuestOrbsMultiplierRive
-// Dependencies: [0, 0, 0, 0, 4294967295, 0, 0]
+// Dependencies: [0, 0, 0, 0, 0, 0, 4294967295]
 
 // Module 3929 (NitroQuestOrbsMultiplierRive)
-import closure_4 from "result";
-import importAllResult from "result";
-import { jsx } from "result";
-import result from "result";
+import __exportStarResult1 from "__exportStarResult1";
+import importAllResult from "__exportStarResult1";
+import { jsx } from "__exportStarResult1";
 
-let closure_3 = ["aria-current", "activeClassName", "activeStyle", "className", "exact", "isActive"];
+let closure_3 = [true, true, true, true, true, true];
 let closure_7 = { Torbs_Multiply: { reducedMotion: "boolean" }, Shards_All_Nitro: { reducedMotion: "boolean" }, Orb Mid Shine: { reducedMotion: "boolean" }, Torbs_Shine: { reducedMotion: "boolean" } };
-let closure_8 = { Torbs_Multiply: ["isActive"], Shards_All_Nitro: ["isActive"], Orb Mid Shine: ["isActive"], Torbs_Shine: ["isActive"] };
+let closure_8 = { Torbs_Multiply: [1358955054], Shards_All_Nitro: [1358955054], Orb Mid Shine: [1358955054], Torbs_Shine: [1358955054] };
 let closure_9 = {
   Torbs_Multiply: function TorbsMultiplyBindings(arg0) {
     let instance;
@@ -80,12 +79,13 @@ let closure_10 = importAllResult.forwardRef(function NitroQuestOrbsMultiplierRiv
   const merged = Object.assign(callback(defaultViewModelInstance, closure_3));
   return jsx(ref(dependencyMap[3]).BaseRive, obj);
 });
-result = result.fileFinishedImporting("../discord_common/js/packages/design/components/Rive/native/generated/NitroQuestOrbsMultiplierRive.tsx");
-
-export const NitroQuestOrbsMultiplierRive = importAllResult.forwardRef(function NitroQuestOrbsMultiplierRiveWithBoundary(fallback, ref) {
+const forwardRefResult = importAllResult.forwardRef(function NitroQuestOrbsMultiplierRiveWithBoundary(fallback, ref) {
   let obj = { fallback: fallback.fallback };
   obj = { ref };
   const merged = Object.assign(fallback);
   obj.children = <closure_10 {...obj} />;
   return jsx(ref(dependencyMap[5]).RiveErrorBoundary, obj);
 });
+const result = arg1(dependencyMap[6]).fileFinishedImporting("../discord_common/js/packages/design/components/Rive/native/generated/NitroQuestOrbsMultiplierRive.tsx");
+
+export const NitroQuestOrbsMultiplierRive = forwardRefResult;

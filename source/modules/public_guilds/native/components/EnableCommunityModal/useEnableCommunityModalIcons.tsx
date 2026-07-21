@@ -1,10 +1,10 @@
-// Module ID: 16221
-// Function ID: 125405
+// Module ID: 16228
+// Function ID: 125436
 // Name: EnableCommunityModalIcons
 // Dependencies: []
 // Exports: default
 
-// Module 16221 (EnableCommunityModalIcons)
+// Module 16228 (EnableCommunityModalIcons)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 let closure_5 = importDefault(dependencyMap[2]);

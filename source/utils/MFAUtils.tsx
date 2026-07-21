@@ -1,10 +1,10 @@
-// Module ID: 9191
-// Function ID: 71996
+// Module ID: 9195
+// Function ID: 72008
 // Name: encodeTotpSecret
 // Dependencies: []
 // Exports: captureWebAuthnException, encodeTotpSecretAsUrl, generateTotpSecret
 
-// Module 9191 (encodeTotpSecret)
+// Module 9195 (encodeTotpSecret)
 function encodeTotpSecret(totpSecret) {
   return totpSecret.replace(/[\s._-]+/g, "").toUpperCase();
 }

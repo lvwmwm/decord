@@ -1,10 +1,10 @@
-// Module ID: 8772
-// Function ID: 69322
+// Module ID: 8776
+// Function ID: 69334
 // Name: LottieType
 // Dependencies: []
 // Exports: getGiftAnimationData, getLottieType
 
-// Module 8772 (LottieType)
+// Module 8776 (LottieType)
 const PremiumGiftStyles = require(dependencyMap[0]).PremiumGiftStyles;
 const obj = { JSON: 0, [0]: "JSON", LOTTIE: 1, [1]: "LOTTIE" };
 const _module = require(dependencyMap[26]);

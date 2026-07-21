@@ -1,10 +1,10 @@
-// Module ID: 10573
-// Function ID: 82530
+// Module ID: 10579
+// Function ID: 82553
 // Name: UserTile
 // Dependencies: []
 // Exports: default
 
-// Module 10573 (UserTile)
+// Module 10579 (UserTile)
 let closure_3 = importDefault(dependencyMap[0]);
 const importAllResult = importAll(dependencyMap[1]);
 const View = arg1(dependencyMap[2]).View;
@@ -19,18 +19,18 @@ const MediaEngineContextTypes = arg1(dependencyMap[9]).MediaEngineContextTypes;
 ({ jsx: closure_14, jsxs: closure_15, Fragment: closure_16 } = arg1(dependencyMap[10]));
 let obj1 = arg1(dependencyMap[11]);
 let obj = {};
-obj = { "Null": 3, "Null": "rgb", "Null": 32, "Bool(false)": 32, "Bool(false)": 20, backgroundColor: importDefault(dependencyMap[12]).colors.BLACK };
+obj = { "Bool(false)": 3, "Bool(false)": "rgb", "Bool(false)": 32, "Bool(false)": 32, "Bool(false)": 20, backgroundColor: importDefault(dependencyMap[12]).colors.BLACK };
 obj.container = obj;
-obj.imageBackground = {};
-obj.autoDisabledVideoWrapper = { "Bool(true)": true, "Bool(true)": true, "Bool(true)": true };
-obj1 = { "Bool(true)": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000016259745739813683, "Bool(true)": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001425031744193127, "Bool(true)": null };
+obj.imageBackground = { "Bool(true)": false, "Bool(true)": "auto", 0: "none", 0: true };
+obj.autoDisabledVideoWrapper = { bottom: true, body: true, disabled: true };
+obj1 = { imageStyle: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000016259745739813683, children: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000382693999994463, source: false };
 const tmp2 = arg1(dependencyMap[10]);
 obj1.backgroundColor = arg1(dependencyMap[13]).hexWithOpacity(importDefault(dependencyMap[12]).unsafe_rawColors.PRIMARY_700, 0.5);
 obj.autoDisabledVideo = obj1;
-const obj2 = { "Null": 0, "Null": 0, "Null": -32, "Null": 4, "Null": 8, "Null": "absolute", borderRadius: importDefault(dependencyMap[12]).radii.sm };
-obj.autoDisabledVideoTextWrapper = obj2;
-const obj3 = { 0: false, 0: false, 9223372036854775807: false, 0: false, 0: false, 0: false, 0: false, 0: false, 0: false };
 const obj6 = arg1(dependencyMap[13]);
+obj.autoDisabledVideoTextWrapper = { borderRadius: importDefault(dependencyMap[12]).radii.sm };
+const obj3 = {};
+const obj2 = { borderRadius: importDefault(dependencyMap[12]).radii.sm };
 obj3.backgroundColor = arg1(dependencyMap[13]).hexWithOpacity(importDefault(dependencyMap[12]).unsafe_rawColors.PRIMARY_700, 0.5);
 obj3.borderRadius = importDefault(dependencyMap[12]).radii.md;
 obj.statusWrapper = obj3;
@@ -110,7 +110,7 @@ let closure_18 = importAllResult.memo((guildId) => {
       obj.style = items;
       obj = { source: tmp(id[17]), size: hasVideo(id[16]).Icon.Sizes.SMALL, disableColor: true };
       const items1 = [callback(hasVideo(id[16]).Icon, obj), ];
-      const obj1 = { INTEGRATION_CREATE: "AutomodMentionRaidLimit", ConstraintReasonCode: "%URIError%", style: tmp.labelText };
+      const obj1 = { style: tmp.labelText };
       const intl = hasVideo(id[19]).intl;
       obj1.children = intl.string(hasVideo(id[19]).t.m2Hyj0);
       items1[1] = callback(hasVideo(id[18]).Text, obj1);

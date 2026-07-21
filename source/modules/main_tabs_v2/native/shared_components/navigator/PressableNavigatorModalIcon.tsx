@@ -1,10 +1,10 @@
-// Module ID: 9117
-// Function ID: 71400
+// Module ID: 9121
+// Function ID: 71412
 // Name: PressableNavigatorModalIcon
 // Dependencies: []
 // Exports: default
 
-// Module 9117 (PressableNavigatorModalIcon)
+// Module 9121 (PressableNavigatorModalIcon)
 const jsx = require(dependencyMap[0]).jsx;
 const _module = require(dependencyMap[6]);
 const result = _module.fileFinishedImporting("modules/main_tabs_v2/native/shared_components/navigator/PressableNavigatorModalIcon.tsx");

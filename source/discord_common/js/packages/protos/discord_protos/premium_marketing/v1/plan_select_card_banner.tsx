@@ -1,9 +1,9 @@
-// Module ID: 7144
-// Function ID: 57645
+// Module ID: 7148
+// Function ID: 57656
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
-// Module 7144 (_isNativeReflectConstruct)
+// Module 7148 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -24,30 +24,29 @@ let tmp2 = (MessageType) => {
     constructor() {
       self = this;
       tmp = closure_3(this, PlanSelectCardBanner$Type);
-      obj = {
-        T() {
-              return callback(closure_1[6]).ThemeAwareAsset;
-            }
+      obj = { "Null": true, "Null": true, "Null": true };
+      obj.T = function T() {
+        return callback(closure_1[6]).ThemeAwareAsset;
       };
       items = [, , ];
       items[0] = obj;
-      items[1] = { body: "target_allocation", guildId: "scalar", ao: 5, "": "background_asset_url" };
-      obj = { emojiId: false, emojiName: false, userId: false };
-      obj.T = function T() {
-        return callback(closure_1[7]).LocalizedString;
+      items[1] = { 9223372036854775807: "background_asset", 0: "message", 9223372036854775807: 0, no: 50.06 };
+      items[2] = {
+        T() {
+              return callback(closure_1[7]).LocalizedString;
+            }
       };
-      items[2] = obj;
       items1 = [true];
       items1[1] = items;
-      obj3 = closure_6(PlanSelectCardBanner$Type);
+      obj2 = closure_6(PlanSelectCardBanner$Type);
       tmp2 = closure_5;
       if (closure_8()) {
         tmp4 = globalThis;
         _Reflect = Reflect;
         tmp5 = closure_6;
-        constructResult = Reflect.construct(obj3, items1, closure_6(self).constructor);
+        constructResult = Reflect.construct(obj2, items1, closure_6(self).constructor);
       } else {
-        constructResult = obj3.apply(self, items1);
+        constructResult = obj2.apply(self, items1);
       }
       return tmp2(self, constructResult);
     }

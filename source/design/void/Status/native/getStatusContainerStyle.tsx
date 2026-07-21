@@ -1,12 +1,12 @@
-// Module ID: 12886
-// Function ID: 98394
+// Module ID: 12893
+// Function ID: 98417
 // Name: createContainerStyle
 // Dependencies: [31, 27]
 // Exports: default
 
-// Module 12886 (createContainerStyle)
+// Module 12893 (createContainerStyle)
 import module_31 from "module_31";
-import get ActivityIndicator from "get ActivityIndicator";
+import keys from "keys";
 
 let StatusSizes;
 function createContainerStyle(LARGE, arg1) {
@@ -45,7 +45,7 @@ function createVRContainerStyle(LARGE) {
 ({ STATUS_PADDING: closure_0, StatusSizes } = module_31);
 ({ VR_STATUS_SCALE: closure_2, VR_STATUS_WIDTH_RATIO: closure_3 } = module_31);
 const obj = { containerSmall: createContainerStyle(StatusSizes.SMALL, false), containerRefreshMedium: createContainerStyle(StatusSizes.REFRESH_MEDIUM_10, false), containerMedium: createContainerStyle(StatusSizes.MEDIUM, false), containerLarge: createContainerStyle(StatusSizes.LARGE, false), containerXLarge: createContainerStyle(StatusSizes.LARGE, false), containerMobileOnlineSmall: createContainerStyle(StatusSizes.SMALL, true), containerMobileOnlineRefreshMedium: createContainerStyle(StatusSizes.REFRESH_MEDIUM_10, true), containerMobileOnlineMedium: createContainerStyle(StatusSizes.MEDIUM, true), containerMobileOnlineLarge: createContainerStyle(StatusSizes.LARGE, true), containerMobileOnlineXLarge: createContainerStyle(StatusSizes.LARGE, true), containerVRSmall: createVRContainerStyle(StatusSizes.SMALL), containerVRRefreshMedium: createVRContainerStyle(StatusSizes.REFRESH_MEDIUM_10), containerVRMedium: createVRContainerStyle(StatusSizes.MEDIUM), containerVRLarge: createVRContainerStyle(StatusSizes.LARGE), containerVRXLarge: createVRContainerStyle(StatusSizes.LARGE) };
-const result = get_ActivityIndicator.fileFinishedImporting("design/void/Status/native/getStatusContainerStyle.tsx");
+const result = keys.fileFinishedImporting("design/void/Status/native/getStatusContainerStyle.tsx");
 
 export default function getStatusContainerStyle(LARGE) {
   let flag = arg2;

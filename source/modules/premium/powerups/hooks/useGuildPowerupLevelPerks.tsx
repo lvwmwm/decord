@@ -1,10 +1,10 @@
-// Module ID: 11541
-// Function ID: 89867
+// Module ID: 11548
+// Function ID: 89890
 // Name: useGuildPowerupLevelPerks
 // Dependencies: []
 // Exports: default
 
-// Module 11541 (useGuildPowerupLevelPerks)
+// Module 11548 (useGuildPowerupLevelPerks)
 let closure_3 = importAll(dependencyMap[0]);
 const GUILD_FEATURE_TO_PERK = arg1(dependencyMap[1]).GUILD_FEATURE_TO_PERK;
 const result = arg1(dependencyMap[6]).fileFinishedImporting("modules/premium/powerups/hooks/useGuildPowerupLevelPerks.tsx");

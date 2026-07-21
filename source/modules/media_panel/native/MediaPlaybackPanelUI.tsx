@@ -1,10 +1,10 @@
-// Module ID: 15763
-// Function ID: 120533
+// Module ID: 15770
+// Function ID: 120557
 // Name: MediaPlaybackPanelUI
 // Dependencies: []
 // Exports: default
 
-// Module 15763 (MediaPlaybackPanelUI)
+// Module 15770 (MediaPlaybackPanelUI)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 const useContext = arg1(dependencyMap[1]).useContext;
@@ -15,7 +15,7 @@ const BORDER_RADIUS_PHYSICS = arg1(dependencyMap[5]).BORDER_RADIUS_PHYSICS;
 const jsx = arg1(dependencyMap[6]).jsx;
 let obj = arg1(dependencyMap[7]);
 obj = { wrapperAnimationPresets: { opacity: 0 }, wrapper: {} };
-obj = { hm: "whitespace", hms: "class", hmsv: "[ \\t\\n\\r]", hmv: "[ \\t\\n\\r]", ms: "other", y: "optionalWhitespace", yM: "class", borderRadius: importDefault(dependencyMap[8]).radii.xl, borderColor: importDefault(dependencyMap[8]).colors.CHAT_BORDER };
+obj = { getDismissedRecurringDismissibleContentState: "whitespace", STUDENT_PROMPT: "class", 0: "[ \\t\\n\\r]", 0: "[ \\t\\n\\r]", 0: "other", 755916560016: "optionalWhitespace", 0: "class", borderRadius: importDefault(dependencyMap[8]).radii.xl, borderColor: importDefault(dependencyMap[8]).colors.CHAT_BORDER };
 obj.mask = obj;
 const merged = Object.assign(importDefault(dependencyMap[8]).shadows.SHADOW_LOW_HOVER);
 obj.maskElevation = {};
@@ -85,10 +85,10 @@ export default function MediaPlaybackPanelUI() {
       if (!obj.cheapWorkletShallowEqual(mode, tmp)) {
         mode = mode.mode;
         if (canShowPIP.PIP === mode) {
-          ({ width, height } = mode.canShowPIP ? {} : { aze: false, azj: true });
+          ({ width, height } = mode.canShowPIP ? {} : { bhk: -536870861, bic: -299892737 });
           obj = { width, height };
           safeAreaState2(tmp[14])(mode, obj);
-          const tmp5 = mode.canShowPIP ? {} : { aze: false, azj: true };
+          const tmp5 = mode.canShowPIP ? {} : { bhk: -536870861, bic: -299892737 };
         } else if (canShowPIP.DISMISSED === mode) {
           obj = { y: tmp2.height };
           safeAreaState2(tmp[14])(safeAreaState2, obj);
@@ -347,10 +347,10 @@ export default function MediaPlaybackPanelUI() {
       if (!obj.cheapWorkletShallowEqual(mode, tmp)) {
         mode = mode.mode;
         if (canShowPIP.PIP === mode) {
-          ({ width, height } = mode.canShowPIP ? {} : { aze: false, azj: true });
+          ({ width, height } = mode.canShowPIP ? {} : { bhk: -536870861, bic: -299892737 });
           obj = { width, height };
           safeAreaState2(tmp[14])(mode, obj);
-          const tmp5 = mode.canShowPIP ? {} : { aze: false, azj: true };
+          const tmp5 = mode.canShowPIP ? {} : { bhk: -536870861, bic: -299892737 };
         } else if (canShowPIP.DISMISSED === mode) {
           obj = { y: tmp2.height };
           safeAreaState2(tmp[14])(safeAreaState2, obj);

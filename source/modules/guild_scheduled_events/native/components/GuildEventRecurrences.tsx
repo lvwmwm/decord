@@ -1,17 +1,17 @@
-// Module ID: 8453
-// Function ID: 67450
+// Module ID: 8457
+// Function ID: 67462
 // Name: GuildEventRecurrences
 // Dependencies: []
 // Exports: default
 
-// Module 8453 (GuildEventRecurrences)
+// Module 8457 (GuildEventRecurrences)
 let closure_3 = importAll(dependencyMap[0]);
 ({ View: closure_4, ScrollView: closure_5 } = arg1(dependencyMap[1]));
 const tmp2 = arg1(dependencyMap[1]);
 ({ jsx: closure_6, jsxs: closure_7 } = arg1(dependencyMap[2]));
 let obj = arg1(dependencyMap[3]);
 obj = { container: { marginTop: 16 } };
-obj = { 1362843234: null, -1235089750: "Group 3", 111825386: 1, 1371007586: 2, borderRadius: importDefault(dependencyMap[4]).radii.sm };
+obj = { borderRadius: importDefault(dependencyMap[4]).radii.sm };
 obj.scrollView = obj;
 let closure_8 = obj.createStyles(obj);
 const tmp3 = arg1(dependencyMap[2]);

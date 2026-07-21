@@ -1,10 +1,10 @@
-// Module ID: 12002
-// Function ID: 92776
+// Module ID: 12009
+// Function ID: 92799
 // Name: exitingAnimation
 // Dependencies: []
 // Exports: default
 
-// Module 12002 (exitingAnimation)
+// Module 12009 (exitingAnimation)
 import module_300 from "module_300";
 import dampingResult from "module_100";
 
@@ -168,7 +168,7 @@ export default function EditWishlistActionSheet(wishlistId) {
   closure_11 = React.useCallback((arg0) => {
     const result = analyticsContext(tmp[23]).removeSkuFromWishlist(wishlistId, arg0, analyticsLocations);
   }, items7);
-  const obj1 = { 0: null, -9223372036854775808: null };
+  const obj1 = { 1891290120: null, -475247768: null };
   const tmp3 = importDefault(dependencyMap[19])(obj);
   const intl = arg1(dependencyMap[26]).intl;
   obj1.title = intl.string(arg1(dependencyMap[26]).t.OEgx/4);

@@ -1,10 +1,10 @@
-// Module ID: 11585
-// Function ID: 90080
+// Module ID: 11592
+// Function ID: 90103
 // Name: GuildPowerupsSinglePerkCard
 // Dependencies: []
 // Exports: default
 
-// Module 11585 (GuildPowerupsSinglePerkCard)
+// Module 11592 (GuildPowerupsSinglePerkCard)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[8]).fileFinishedImporting("modules/premium/powerups/native/GuildPowerupsSinglePerkCard.tsx");

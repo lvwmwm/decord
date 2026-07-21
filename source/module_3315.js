@@ -10,9 +10,9 @@ if (!_module) {
   obj = _module;
 }
 obj = {};
-obj.date = obj.default({ formats: { "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true }, defaultWidth: "full" });
+obj.date = obj.default({ formats: { "Null": "mai pu\u021Bin de o secund\u0103", "Null": "mai pu\u021Bin de {{count}} secunde", "Null": "1 secund\u0103", "Null": "{{count}} secunde" }, defaultWidth: "full" });
 obj.time = obj.default({ formats: {}, defaultWidth: "full" });
-obj.dateTime = obj.default({ formats: { "Bool(false)": "r", "Bool(false)": "isArray", "Bool(false)": "x", "Bool(false)": "has" }, defaultWidth: "full" });
+obj.dateTime = obj.default({ formats: {}, defaultWidth: "full" });
 
 export default obj;
 export default exports.default;

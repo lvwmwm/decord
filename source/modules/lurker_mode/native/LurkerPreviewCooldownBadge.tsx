@@ -1,20 +1,21 @@
-// Module ID: 14693
-// Function ID: 110898
+// Module ID: 14700
+// Function ID: 110922
 // Name: useHasExpired
-// Dependencies: []
+// Dependencies: [0, 0, 0, 0, 0, 4294967295, 4294967295, 4294967295, 0]
 // Exports: useHasExpired
 
-// Module 14693 (useHasExpired)
-let closure_3 = importDefault(dependencyMap[0]);
-const importAllResult = importAll(dependencyMap[1]);
-const View = arg1(dependencyMap[2]).View;
-const jsx = arg1(dependencyMap[3]).jsx;
+// Module 14700 (useHasExpired)
+import __exportStarResult1 from "__exportStarResult1";
+import importAllResult from "__exportStarResult1";
+import { View } from "__exportStarResult1";
+import { jsx } from "__exportStarResult1";
+import importDefaultResult from "__exportStarResult1";
+
 let closure_7 = 2 * Math.PI * 6;
-let obj = { duration: 1000, easing: arg1(dependencyMap[4]).Easing.linear };
-let closure_9 = importDefault(dependencyMap[4]).createAnimatedComponent(arg1(dependencyMap[5]).Circle);
-const importDefaultResult = importDefault(dependencyMap[4]);
+let obj = { duration: 1000, easing: require("__exportStarResult1").Easing.linear };
+let closure_9 = require("__exportStarResult1").createAnimatedComponent(arg1(dependencyMap[5]).Circle);
 obj = {};
-const obj1 = { <string:1106039242>: true, Stage: null, <string:2334770770>: -1, backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_BASE_LOWEST, bottom: -arg1(dependencyMap[8]).BADGE_PADDING, right: -arg1(dependencyMap[8]).BADGE_PADDING, padding: arg1(dependencyMap[8]).BADGE_PADDING, height: 22, width: 22, alignItems: "center", justifyContent: "center" };
+const obj1 = { accessibilityRole: "FRAME_SET_PROXY_TICKET_REFRESHING", variant: null, color: false, backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_BASE_LOWEST, bottom: -require("__exportStarResult1").BADGE_PADDING, right: -require("__exportStarResult1").BADGE_PADDING, padding: require("__exportStarResult1").BADGE_PADDING, height: 22, width: 22, alignItems: "center", justifyContent: "center" };
 obj.outerRing = obj1;
 const obj4 = arg1(dependencyMap[6]);
 obj.innerFill = { backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_MOD_STRONG };
@@ -32,7 +33,7 @@ const memoResult = importAllResult.memo(function LurkerPreviewCooldownBadge(expi
   }
   const importDefault = LURKER_PREVIEW_PERSIST_MS;
   let dependencyMap;
-  let closure_3;
+  let __exportStarResult1;
   const tmp3 = callback2();
   let obj = arg1(dependencyMap[10]);
   const items = [expiresAt, LURKER_PREVIEW_PERSIST_MS];
@@ -52,12 +53,12 @@ const memoResult = importAllResult.memo(function LurkerPreviewCooldownBadge(expi
   dependencyMap = callback;
   let obj1 = arg1(dependencyMap[4]);
   const sharedValue = obj1.useSharedValue(callback());
-  closure_3 = sharedValue;
+  __exportStarResult1 = sharedValue;
   const items1 = [sharedValue, callback];
   const effect = importAllResult.useEffect(() => {
     const result = sharedValue.set(expiresAt(callback[11]).withTiming(callback(), closure_8, "animate-always"));
     const expiresAt = setInterval(() => {
-      const result = closure_3.set(callback(callback2[11]).withTiming(callback2(), closure_8, "animate-always"));
+      const result = __exportStarResult1.set(callback(callback2[11]).withTiming(callback2(), closure_8, "animate-always"));
     }, 1000);
     return () => {
       clearInterval(closure_0);
@@ -71,13 +72,13 @@ const memoResult = importAllResult.memo(function LurkerPreviewCooldownBadge(expi
   fn.__closure = obj;
   fn.__workletHash = 7162520447613;
   fn.__initData = closure_11;
-  obj = { alignItems: "absolute", justifyContent: "50%", position: "hidden", alignSelf: "50%" };
+  obj = { "Bool(true)": "/assets/design/components/Icon/native/redesign/generated/images", "Bool(true)": 24, "Bool(true)": 24, "Bool(true)": null };
   const items2 = [tmp3.outerRing, expiresAt.style];
   obj.style = items2;
   obj1 = { style: tmp3.innerFill };
   const animatedProps = obj2.useAnimatedProps(fn);
-  obj2 = { aze: "<string:16777479>", azj: "<string:36295491>", style: tmp3.progressRing };
-  const obj3 = { "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, stroke: token, strokeDasharray: closure_7, animatedProps };
+  obj2 = { style: tmp3.progressRing };
+  const obj3 = { "Bool(true)": true, "Bool(true)": true, "Bool(true)": true, "Bool(true)": true, "Bool(true)": true, "Bool(true)": true, "Bool(true)": true, "Bool(true)": true, stroke: token, strokeDasharray: closure_7, animatedProps };
   obj2.children = <closure_9 {...obj3} />;
   obj1.children = jsx(importDefault(dependencyMap[5]), obj2);
   obj.children = <View {...obj1} />;

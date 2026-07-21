@@ -1,16 +1,16 @@
-// Module ID: 10406
-// Function ID: 80193
+// Module ID: 10412
+// Function ID: 80216
 // Name: StrangerDangerMoreTipsModalActionItems
 // Dependencies: [0, 0, 0, 0, 0, 0, 4294967295, 0, 0]
 // Exports: default
 
-// Module 10406 (StrangerDangerMoreTipsModalActionItems)
-import result from "result";
-import closure_4 from "result";
-import closure_5 from "result";
-import closure_6 from "result";
-import { SafetyWarningTypes } from "result";
-import { jsx } from "result";
+// Module 10412 (StrangerDangerMoreTipsModalActionItems)
+import __exportStarResult1 from "__exportStarResult1";
+import closure_4 from "__exportStarResult1";
+import closure_5 from "__exportStarResult1";
+import closure_6 from "__exportStarResult1";
+import { SafetyWarningTypes } from "__exportStarResult1";
+import { jsx } from "__exportStarResult1";
 
 const result = arg1(dependencyMap[16]).fileFinishedImporting("modules/self_mod/stranger_danger/native/components/StrangerDangerMoreTipsModalActionItems.tsx");
 

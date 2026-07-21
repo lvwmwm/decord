@@ -1,10 +1,10 @@
-// Module ID: 12906
-// Function ID: 98446
+// Module ID: 12913
+// Function ID: 98469
 // Name: generateBoxShadowStyle
 // Dependencies: []
 // Exports: generateBoxShadowStyle
 
-// Module 12906 (generateBoxShadowStyle)
+// Module 12913 (generateBoxShadowStyle)
 const _module = require(dependencyMap[1]);
 const result = _module.fileFinishedImporting("design/void/Shadows/native/Shadows.tsx");
 
@@ -30,7 +30,7 @@ export const generateBoxShadowStyle = (arg0) => {
   }
   return obj;
 };
-export const EIGHT_DP_ELEVATION_SHADOW_PARAMS = { <string:89242260>: false, <string:2700829578>: false, <string:1868517861>: false, <string:592677473>: false, <string:3314374545>: false, "Bool(true)": false, "Bool(true)": false };
-export const FOUR_DP_ELEVATION_SHADOW_PARAMS = { <string:89242260>: "0 0 4px 0 hsl(none 0% 0% / 0.08)", <string:2700829578>: "drop-shadow(0 0 4px hsl(none 0% 0% / 0.08))", <string:1868517861>: "cs", <string:592677473>: "20", <string:3314374545>: null, "Bool(true)": "#000000", "Bool(true)": 0.08 };
-export const EXPERIMENTAL_HIGH_ELEVATION_SHADOW_PARAMS = { <string:89242260>: null, <string:2700829578>: null, <string:1868517861>: null, <string:592677473>: null, <string:3314374545>: null, "Bool(true)": null, "Bool(true)": null };
+export const EIGHT_DP_ELEVATION_SHADOW_PARAMS = {};
+export const FOUR_DP_ELEVATION_SHADOW_PARAMS = { "Bool(false)": "0 0 4px 0 hsl(none 0% 0% / 0.08)", "Bool(false)": "drop-shadow(0 0 4px hsl(none 0% 0% / 0.08))", "Bool(false)": "cs", "Bool(false)": "20", "Bool(false)": null, "Bool(false)": "#000000", "Bool(false)": 0.08 };
+export const EXPERIMENTAL_HIGH_ELEVATION_SHADOW_PARAMS = { "Bool(false)": "isArray", "Bool(false)": "construct", "Bool(false)": "isArray", "Bool(false)": "context", "Bool(false)": "keys", "Bool(false)": "isArray", "Bool(false)": "Text" };
 export const NO_ELEVATION_SHADOW_PARAMS = {};

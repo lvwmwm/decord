@@ -1,9 +1,9 @@
-// Module ID: 6793
-// Function ID: 53608
+// Module ID: 6799
+// Function ID: 53657
 // Name: CollectiblesShopHomeRecord
 // Dependencies: []
 
-// Module 6793 (CollectiblesShopHomeRecord)
+// Module 6799 (CollectiblesShopHomeRecord)
 let closure_2 = importDefault(dependencyMap[0]);
 let closure_3 = importDefault(dependencyMap[1]);
 let closure_4 = importDefault(dependencyMap[2]);

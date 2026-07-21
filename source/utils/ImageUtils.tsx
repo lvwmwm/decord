@@ -148,7 +148,7 @@ async function _isPNGAnimated(type, arg1) {
   }
 }
 let closure_3 = importDefault(dependencyMap[0]);
-const items = [[true, true, true]];
+const items = [["TRACEPARENT_REGEXP", "spinnerVisibleStart", "namespaceURI"]];
 importDefault(dependencyMap[3]).memoize((arg0) => {
   const arg1 = arg0;
   return new Promise((arg0, arg1) => {

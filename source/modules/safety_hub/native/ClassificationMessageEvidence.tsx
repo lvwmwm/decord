@@ -1,10 +1,10 @@
-// Module ID: 11019
-// Function ID: 85799
+// Module ID: 11024
+// Function ID: 85820
 // Name: ClassificationEvidence
 // Dependencies: []
 // Exports: default
 
-// Module 11019 (ClassificationEvidence)
+// Module 11024 (ClassificationEvidence)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 ({ View: closure_5, findNodeHandle: closure_6, Image: closure_7, ActivityIndicator: closure_8 } = arg1(dependencyMap[2]));
@@ -19,7 +19,7 @@ const tmp3 = arg1(dependencyMap[6]);
 let importDefaultResult = importDefault(dependencyMap[9]);
 importDefaultResult = new importDefaultResult();
 const tmp4 = arg1(dependencyMap[8]);
-let closure_21 = arg1(dependencyMap[10]).createStyles({ dummyVideoAttachments: { aze: false, azj: true } });
+let closure_21 = arg1(dependencyMap[10]).createStyles({ dummyVideoAttachments: { bhk: -536870861, bic: -299892737 } });
 const obj = arg1(dependencyMap[10]);
 const result = arg1(dependencyMap[23]).fileFinishedImporting("modules/safety_hub/native/ClassificationMessageEvidence.tsx");
 
@@ -151,7 +151,9 @@ export default function ClassificationEvidence(arg0) {
       obj.attachmentId = uri.id;
       return obj;
     });
-    ref(closure_2[17]).openMediaModal({ initialIndex: index, initialSources: mapped, originViewOrOriginLayout: layout });
+    let obj = ref(closure_2[17]);
+    obj = { "Null": "Placeholder", "Null": "Click", "Null": "%Uint8ClampedArrayPrototype%", "Null": "_cachedAllEvents", flexDirection: "EvalError", initialIndex: index, initialSources: mapped, originViewOrOriginLayout: layout };
+    obj.openMediaModal(obj);
   }, items4);
   const items6 = [map.attachments];
   const callback1 = React.useCallback((arg0) => {
@@ -230,7 +232,7 @@ export default function ClassificationEvidence(arg0) {
     obj4.channel_id = "1";
     obj4.type = MessageTypes.DEFAULT;
     if (null == stateFromStores) {
-      const obj5 = { GuildBadgeGem: -1740570623, renderSettingSearchResultItem: 822084322, new_moon_with_face: -1546188227, username: stateFromStores1 };
+      const obj5 = { "Bool(false)": -1186922495, "Bool(false)": 822084322, "Bool(false)": -1546188227, username: stateFromStores1 };
       stateFromStores = obj5;
     }
     obj4.author = stateFromStores;

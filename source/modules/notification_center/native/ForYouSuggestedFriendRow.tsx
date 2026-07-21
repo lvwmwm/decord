@@ -1,10 +1,10 @@
-// Module ID: 15033
-// Function ID: 113207
+// Module ID: 15040
+// Function ID: 113231
 // Name: ForYouSuggestedFriendRow
 // Dependencies: []
 // Exports: default
 
-// Module 15033 (ForYouSuggestedFriendRow)
+// Module 15040 (ForYouSuggestedFriendRow)
 let closure_3 = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 let closure_5 = importDefault(dependencyMap[2]);
@@ -31,7 +31,7 @@ let closure_12 = arg1(dependencyMap[6]).createStyles((layout) => {
   }
   obj2.marginBottom = num;
   obj.nameText = obj2;
-  const obj3 = { "Null": null, "Null": null, "Null": null, "Null": null, "Null": null, "Null": null, borderRadius: importDefault(dependencyMap[8]).radii.round };
+  const obj3 = { flexWrap: -716111870, gap: 373772727, position: 114, width: 0, height: 200687872, overflow: -1825505279, borderRadius: importDefault(dependencyMap[8]).radii.round };
   const merged = Object.assign(sizeStyle);
   obj3["marginRight"] = layoutStyles.icon.margin.marginRight + 4;
   obj.avatar = obj3;

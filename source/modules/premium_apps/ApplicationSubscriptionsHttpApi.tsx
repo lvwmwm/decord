@@ -1,10 +1,10 @@
-// Module ID: 10800
-// Function ID: 83879
+// Module ID: 10806
+// Function ID: 83902
 // Name: _getApplicationSubscriptionGroupListingsForApplication
 // Dependencies: []
 // Exports: fetchApplication, fetchEligibleApplicationSubscriptionGuilds, getApplicationSubscriptionGroupListingsForApplication, getEntitlementsForGuild, getSubscriptionGroupForSubscriptionPlan
 
-// Module 10800 (_getApplicationSubscriptionGroupListingsForApplication)
+// Module 10806 (_getApplicationSubscriptionGroupListingsForApplication)
 function _getApplicationSubscriptionGroupListingsForApplication() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
@@ -53,7 +53,7 @@ export const fetchApplication = function fetchApplication(applicationId, signal)
   const obj4 = signal(dependencyMap[2]);
   return value.then((body) => {
     let obj = callback(closure_2[3]);
-    obj = { backgroundColor: "rgba(0, 0, 0, 0.5)", height: 24, overflow: "flex", application: body.body };
+    obj = { marginBottom: "rgba(0, 0, 0, 0.5)", flexDirection: 24, alignItems: "flex", application: body.body };
     obj.dispatch(obj);
     return body.body;
   }).catch((arg0) => {

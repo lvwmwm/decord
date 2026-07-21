@@ -1,9 +1,9 @@
-// Module ID: 6002
-// Function ID: 49877
+// Module ID: 6004
+// Function ID: 49920
 // Name: metadata
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 6002 (metadata)
+// Module 6004 (metadata)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/DiscordShopLockupLogo-2x.png.js");
 

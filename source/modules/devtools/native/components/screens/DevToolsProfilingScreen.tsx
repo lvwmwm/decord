@@ -1,10 +1,10 @@
-// Module ID: 14498
-// Function ID: 109186
+// Module ID: 14505
+// Function ID: 109209
 // Name: TableRowGroupReactProfiling
 // Dependencies: []
 // Exports: default
 
-// Module 14498 (TableRowGroupReactProfiling)
+// Module 14505 (TableRowGroupReactProfiling)
 function TableRowGroupReactProfiling() {
   let result;
   if (null != importDefault(dependencyMap[7])) {
@@ -21,7 +21,7 @@ function TableRowGroupReactProfiling() {
       const obj = callback(closure_2[7]);
     }
   }, items);
-  obj = { width: true, height: true, children: callback3(arg1(dependencyMap[9]).TableSwitchRow, { onValueChange: tmp6[1], value: first }) };
+  obj = { "Bool(false)": 0.000000000000000000000000000000000000005879840348361748, "Bool(false)": 8592733888.000696, children: callback3(arg1(dependencyMap[9]).TableSwitchRow, { onValueChange: tmp6[1], value: first }) };
   return callback3(arg1(dependencyMap[8]).TableRowGroup, obj);
 }
 let closure_3 = importDefault(dependencyMap[0]);
@@ -58,7 +58,7 @@ export default function DevToolsProfilingScreen() {
   if (tmp5) {
     const obj1 = {};
     const obj2 = {};
-    const obj3 = { onPress: callback };
+    const obj3 = { <string:1688231116>: "r", <string:2968308795>: "isArray", <string:1674328934>: "Reflect", onPress: callback };
     obj2.children = callback3(callback(dependencyMap[12]).TableRow, obj3);
     const items = [callback3(callback(dependencyMap[8]).TableRowGroup, obj2), ];
     const _Object = Object;
@@ -74,9 +74,9 @@ export default function DevToolsProfilingScreen() {
         stat = stat.stat;
         let obj = {};
         obj = {};
-        obj = { INTEGRATION_CREATE: true, ConstraintReasonCode: true, style: closure_1.monospace, children: "Count - " + stat.count };
+        obj = { style: closure_1.monospace, children: "Count - " + stat.count };
         const items = [callback2(callback(closure_2[13]).Text, obj), ];
-        const obj1 = { INTEGRATION_CREATE: true, ConstraintReasonCode: true, style: closure_1.monospace, children: "Mean - " + stat.mean };
+        const obj1 = { style: closure_1.monospace, children: "Mean - " + stat.mean };
         items[1] = callback2(callback(closure_2[13]).Text, obj1);
         obj.children = items;
         obj.subLabel = callback3(closure_7, obj);
@@ -91,8 +91,8 @@ export default function DevToolsProfilingScreen() {
     const obj4 = {};
     const obj5 = { label: "No components rendered yet." };
     const obj6 = {};
-    const obj7 = { padding: "Array", width: "getIsInPrivateProfilesExperiment", borderRadius: "%WeakSetPrototype%", style: tmp3.monospace };
-    const items1 = [null, callback3(callback(dependencyMap[13]).Text, obj7), " to enable measurements."];
+    const obj7 = { -9223372036854775808: "r", 9223372036854775807: "isArray", 0: "Text", style: tmp3.monospace };
+    const items1 = [false, callback3(callback(dependencyMap[13]).Text, obj7), " to enable measurements."];
     obj6.children = items1;
     obj5.subLabel = callback4(callback(dependencyMap[13]).Text, obj6);
     obj4.children = callback3(callback(dependencyMap[12]).TableRow, obj5);

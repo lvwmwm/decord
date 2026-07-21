@@ -1,10 +1,10 @@
-// Module ID: 9194
-// Function ID: 72005
+// Module ID: 9198
+// Function ID: 72017
 // Name: useLoginReset
 // Dependencies: []
 // Exports: default
 
-// Module 9194 (useLoginReset)
+// Module 9198 (useLoginReset)
 let closure_2 = importAll(dependencyMap[0]);
 let closure_3 = importDefault(dependencyMap[1]);
 const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/auth/native/useLoginReset.tsx");

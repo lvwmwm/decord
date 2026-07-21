@@ -1,10 +1,10 @@
-// Module ID: 8409
-// Function ID: 67009
+// Module ID: 8413
+// Function ID: 67021
 // Name: _toPropertyKey
 // Dependencies: []
 // Exports: default
 
-// Module 8409 (_toPropertyKey)
+// Module 8413 (_toPropertyKey)
 function _toPropertyKey(arg0) {
   let StringResult = arg0;
   if ("object" === typeof arg0) {
@@ -48,7 +48,7 @@ class AddMembersBody {
       permission = importAll(closure_3[14]).NONE;
     }
     inActionSheet = global.inActionSheet;
-    obj = { "Bool(true)": null, "Bool(true)": "LOCAL_PAYMENT_START_PAYMENT_MISSING_REQUIRED_OPTION", "Bool(true)": "Missing required option for startPayment.", "Bool(true)": null, "Bool(true)": "LOCAL_PAYMENT_START_PAYMENT_DEFERRED_PAYMENT_FAILED", "Bool(true)": "LocalPayment startPayment deferred payment failed." };
+    obj = { position: true, alignSelf: true, opacity: true, position: true, top: true, left: true };
     setPrototypeOfResult = Object.setPrototypeOf(null);
     merged = Object.assign(global, obj);
     closure_3 = undefined;
@@ -370,9 +370,9 @@ obj = { container: { flex: 1 } };
 obj = { alignItems: "stretch", paddingHorizontal: importDefault(dependencyMap[13]).space.PX_16, paddingTop: importDefault(dependencyMap[13]).space.PX_12 };
 obj.inputContainer = obj;
 obj.tagRoleColor = {};
-const obj1 = { aze: "<string:16777479>", azj: "<string:36295491>", borderRadius: importDefault(dependencyMap[13]).radii.sm };
-obj.tagAvatar = obj1;
 const tmp4 = arg1(dependencyMap[11]);
+obj.tagAvatar = { borderRadius: importDefault(dependencyMap[13]).radii.sm };
+const obj1 = { borderRadius: importDefault(dependencyMap[13]).radii.sm };
 obj.emptyState = { paddingTop: importDefault(dependencyMap[13]).space.PX_16 };
 const obj2 = { paddingTop: importDefault(dependencyMap[13]).space.PX_16 };
 obj.emptyStateText = { color: importDefault(dependencyMap[13]).colors.TEXT_DEFAULT };
@@ -415,7 +415,7 @@ export default function AddMembersActionSheet(channel) {
   } else {
     const _Object = Object;
     const tmp15 = 0 === Object.keys(first).length;
-    obj = { -1383050488: 24, -1600148191: 24, -1353556895: null };
+    obj = {};
     obj = {};
     const intl3 = arg1(dependencyMap[20]).intl;
     obj.title = intl3.string(arg1(dependencyMap[20]).t.dMJ3Y6);

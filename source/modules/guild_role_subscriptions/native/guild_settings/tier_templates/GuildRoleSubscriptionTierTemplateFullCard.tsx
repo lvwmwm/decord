@@ -1,10 +1,10 @@
-// Module ID: 16339
-// Function ID: 126092
+// Module ID: 16346
+// Function ID: 126123
 // Name: SectionSeparator
 // Dependencies: []
 // Exports: default
 
-// Module 16339 (SectionSeparator)
+// Module 16346 (SectionSeparator)
 function SectionSeparator() {
   let obj = {};
   const items = [callback(arg1(dependencyMap[5]).Spacer, { size: 24 }), , ];
@@ -47,19 +47,19 @@ const View = arg1(dependencyMap[1]).View;
 ({ jsx: closure_4, Fragment: closure_5, jsxs: closure_6 } = arg1(dependencyMap[2]));
 let obj = arg1(dependencyMap[3]);
 obj = {};
-obj = { 0: "isArray", 9223372036854775807: "constructor", 0: "warn", backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_SURFACE_HIGH };
+obj = { backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_SURFACE_HIGH };
 obj.container = obj;
 const tmp3 = arg1(dependencyMap[2]);
 obj.subscriptionPlanTextStyle = { color: importDefault(dependencyMap[4]).colors.MOBILE_TEXT_HEADING_PRIMARY };
 const obj2 = { "Null": false, "Null": false, "Null": false, color: importDefault(dependencyMap[4]).colors.TEXT_DEFAULT };
 obj.descriptionPlanTextStyle = obj2;
 obj.content = { paddingTop: 24 };
-const obj3 = { 0: "REMOTE_LOCUS_NETWORK_CONTROL", 9223372036854775807: "BotTagTypes", 9223372036854775807: "r", borderColor: importDefault(dependencyMap[4]).colors.INTERACTIVE_BACKGROUND_HOVER };
+const obj3 = { flexDirection: null, paddingRight: null, alignItems: null, borderColor: importDefault(dependencyMap[4]).colors.INTERACTIVE_BACKGROUND_HOVER };
 obj.separator = obj3;
 obj.benefitRowContainer = {};
-obj.benefitTextContainer = {};
+obj.benefitTextContainer = { "Null": "heading-md/semibold", "Null": "display", "Null": false };
 obj.benefitDescription = { marginTop: 2 };
-obj.channelTitle = { -9223372036854775808: true, filter: true };
+obj.channelTitle = {};
 obj.channelIcon = { marginEnd: 8 };
 let closure_7 = obj.createStyles(obj);
 const obj1 = { color: importDefault(dependencyMap[4]).colors.MOBILE_TEXT_HEADING_PRIMARY };
@@ -80,7 +80,7 @@ export default function GuildRoleSubscriptionTierTemplateFullCard(template) {
   const first = template.listings[0];
   ({ channels, additional_perks } = first);
   ({ image, name, role_color } = first);
-  let obj = { 0: null, -9223372036854775808: null };
+  let obj = { 1891290120: null, -475247768: null };
   obj = { style: tmp.container };
   obj = { template, handleSelectTemplateInPreview, subscriptionPlanTextStyle: tmp.subscriptionPlanTextStyle, descriptionTextStyle: tmp.descriptionPlanTextStyle, closeActionSheet: true };
   const items = [callback(arg1(dependencyMap[11]).GuildRoleSubscriptionTierTemplateBasicInfo, obj), callback(View, { style: tmp.separator }), ];
@@ -94,7 +94,7 @@ export default function GuildRoleSubscriptionTierTemplateFullCard(template) {
   obj5.children = intl2.string(arg1(dependencyMap[13]).t.bCb3c8);
   items1[2] = callback(arg1(dependencyMap[7]).Text, obj5);
   items1[3] = callback(arg1(dependencyMap[5]).Spacer, { size: 24 });
-  const obj6 = { INTEGRATION_CREATE: true, ConstraintReasonCode: true, style: { textTransform: "uppercase" } };
+  const obj6 = { style: { textTransform: "uppercase" } };
   const intl3 = arg1(dependencyMap[13]).intl;
   obj6.children = intl3.string(arg1(dependencyMap[13]).t.ZKyfEo);
   items1[4] = callback(arg1(dependencyMap[7]).Text, obj6);

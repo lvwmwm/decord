@@ -1,10 +1,10 @@
-// Module ID: 11162
-// Function ID: 86816
+// Module ID: 11168
+// Function ID: 86839
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 // Exports: default, useEmbeddedAppsByChannel, useEmbeddedAppsWithPresence
 
-// Module 11162 (_createForOfIteratorHelperLoose)
+// Module 11168 (_createForOfIteratorHelperLoose)
 function _createForOfIteratorHelperLoose(@@iterator) {
   let arg1 = Symbol_iterator;
   @@iterator = "undefined" !== typeof Symbol;

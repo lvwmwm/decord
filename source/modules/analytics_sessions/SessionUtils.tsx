@@ -1,10 +1,10 @@
-// Module ID: 6694
-// Function ID: 51820
+// Module ID: 6700
+// Function ID: 51869
 // Name: result
 // Dependencies: []
 // Exports: isSessionExpired, timestampOrZero
 
-// Module 6694 (result)
+// Module 6700 (result)
 const result = 30 * importDefault(dependencyMap[0]).Millis.MINUTE;
 const result1 = arg1(dependencyMap[1]).fileFinishedImporting("modules/analytics_sessions/SessionUtils.tsx");
 

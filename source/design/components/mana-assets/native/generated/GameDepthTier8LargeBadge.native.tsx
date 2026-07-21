@@ -1,10 +1,10 @@
-// Module ID: 6099
-// Function ID: 50022
+// Module ID: 6101
+// Function ID: 50065
 // Name: GameDepthTier8LargeBadge
-// Dependencies: [131072, 561250304, 1862270976, 4093640724]
+// Dependencies: [131072, 561250304, 1895825408, 4127195156]
 // Exports: GameDepthTier8LargeBadge
 
-// Module 6099 (GameDepthTier8LargeBadge)
+// Module 6101 (GameDepthTier8LargeBadge)
 const jsx = require(dependencyMap[0]).jsx;
 const _module = require(dependencyMap[3]);
 const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/GameDepthTier8LargeBadge.native.tsx");

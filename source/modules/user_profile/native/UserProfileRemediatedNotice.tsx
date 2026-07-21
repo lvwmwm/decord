@@ -1,10 +1,10 @@
-// Module ID: 12025
-// Function ID: 92941
+// Module ID: 12032
+// Function ID: 92964
 // Name: RemediatedUserNotice
 // Dependencies: []
 // Exports: default
 
-// Module 12025 (RemediatedUserNotice)
+// Module 12032 (RemediatedUserNotice)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 let closure_4 = importDefault(dependencyMap[2]);
@@ -32,7 +32,7 @@ export default function RemediatedUserNotice(user) {
     const items1 = [tmp.container, tmp2.card, user.style];
     obj.style = items1;
     if (isBlocked) {
-      obj = { 9223372036854775807: 2034307428, 9223372036854775807: 1912603216, 9223372036854775807: 60 };
+      obj = { -9223372036854775808: "SERVER_GUIDE_CHANNEL_SELECTED", 0: "VOLCANO", 0: "r" };
       const intl = arg1(dependencyMap[10]).intl;
       obj.children = intl.string(arg1(dependencyMap[10]).t.oC/fU6);
       isBlocked = callback(arg1(dependencyMap[9]).Text, obj);
@@ -40,17 +40,17 @@ export default function RemediatedUserNotice(user) {
     const items2 = [isBlocked, ];
     if (isIgnored) {
       const obj1 = {};
-      const obj2 = { 9223372036854775807: 2034307428, 9223372036854775807: 1912603216, 9223372036854775807: 60 };
+      const obj2 = { -9223372036854775808: "SERVER_GUIDE_CHANNEL_SELECTED", 0: "VOLCANO", 0: "r" };
       const intl2 = arg1(dependencyMap[10]).intl;
       obj2.children = intl2.string(arg1(dependencyMap[10]).t.HXz5An);
-      const items3 = [callback(arg1(dependencyMap[9]).Text, obj2), callback(arg1(dependencyMap[9]).Text, {}), ];
+      const items3 = [callback(arg1(dependencyMap[9]).Text, obj2), callback(arg1(dependencyMap[9]).Text, { "Bool(false)": "r", "Bool(true)": "handlePlayerStateChange", "Bool(true)": "groupHeader", "Bool(true)": "scheduledMessageSend", "Bool(true)": "delete" }), ];
       const intl3 = arg1(dependencyMap[10]).intl;
       const obj3 = {
         unignoreHook(children) {
               const obj = {
-                9223372036854775807: false,
-                9223372036854775807: false,
-                0: false,
+                "Null": false,
+                "Null": false,
+                "Null": false,
                 onPress() {
                   return callback(closure_2[11]).unignoreUser(id.id, "UserProfileRemediatedNotice");
                 },

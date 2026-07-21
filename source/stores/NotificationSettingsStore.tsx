@@ -1,9 +1,9 @@
-// Module ID: 10201
-// Function ID: 78809
+// Module ID: 10207
+// Function ID: 78827
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
-// Module 10201 (_isNativeReflectConstruct)
+// Module 10207 (_isNativeReflectConstruct)
 let TTSNotificationTypes;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
@@ -25,7 +25,7 @@ let closure_6 = importDefault(dependencyMap[4]);
 const tmp2 = arg1(dependencyMap[5]);
 const DesktopNotificationTypes = tmp2.DesktopNotificationTypes;
 ({ NotificationPermissionTypes: closure_8, TTSNotificationTypes } = tmp2);
-let obj = { <string:1382654562>: "midnight", <string:3589761522>: "noon", <string:2169806689>: "morning", <string:4230415276>: "afternoon", <string:1640299177>: "evening", <string:2213302725>: "night", <string:3635465316>: null, <string:1660642538>: true, desktopType: arg1(dependencyMap[6]).isPlatformEmbedded ? DesktopNotificationTypes.ALL : DesktopNotificationTypes.NEVER, disabledSounds: [], ttsType: TTSNotificationTypes.NEVER };
+let obj = { padding: true, display: true, flexDirection: true, alignItems: true, justifyContent: true, marginEnd: true, marginLeft: true, maxWidth: true, desktopType: arg1(dependencyMap[6]).isPlatformEmbedded ? DesktopNotificationTypes.ALL : DesktopNotificationTypes.NEVER, disabledSounds: [], ttsType: TTSNotificationTypes.NEVER };
 let tmp3 = (DeviceSettingsStore) => {
   class NotificationSettingsStore {
     constructor() {

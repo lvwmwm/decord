@@ -58,7 +58,7 @@ arg5.addExceptionMechanism = function addExceptionMechanism(arg0, data) {
     const mechanism = tmp.mechanism;
     const _Object = Object;
     const _Object2 = Object;
-    tmp.mechanism = Object.assign({}, { "Bool(true)": true, "Bool(true)": true }, mechanism, data);
+    tmp.mechanism = Object.assign({}, { "Null": "Array", "Null": "CREATE_GUILD" }, mechanism, data);
     if (data) {
       if ("data" in data) {
         data = undefined;

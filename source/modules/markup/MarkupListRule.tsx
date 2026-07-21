@@ -1,9 +1,9 @@
-// Module ID: 4585
-// Function ID: 40137
+// Module ID: 4587
+// Function ID: 40178
 // Name: regExp
 // Dependencies: []
 
-// Module 4585 (regExp)
+// Module 4587 (regExp)
 let closure_2 = /\n{2,}$/;
 let closure_3 = /(?:^|\n)( *)$/;
 const regExp = new RegExp("^" + "(%INDENT_CAPTURE_PATTERN%)((?:[*-]|\\d+\\.)) +".replace("%INDENT_CAPTURE_PATTERN%", " *"));

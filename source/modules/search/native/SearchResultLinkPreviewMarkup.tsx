@@ -1,9 +1,9 @@
-// Module ID: 15235
-// Function ID: 115047
+// Module ID: 15242
+// Function ID: 115071
 // Name: NativeSearchResultLinkPreviewParser
 // Dependencies: []
 
-// Module 15235 (NativeSearchResultLinkPreviewParser)
+// Module 15242 (NativeSearchResultLinkPreviewParser)
 const items = [importDefault(dependencyMap[1]).NATIVE_SEARCH_RESULT_LINK_RULES, ];
 const importDefaultResult = importDefault(dependencyMap[0]);
 items[1] = arg1(dependencyMap[2]).createSearchResultLinkPreviewReactRules();

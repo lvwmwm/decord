@@ -1,10 +1,10 @@
-// Module ID: 5389
-// Function ID: 45917
+// Module ID: 5391
+// Function ID: 45958
 // Name: PromptHeader
 // Dependencies: []
 // Exports: DropdownPrompt, MultipleChoicePrompt, RulesPrompt
 
-// Module 5389 (PromptHeader)
+// Module 5391 (PromptHeader)
 function PromptHeader(currentPrompt) {
   let currentPromptIndex;
   let numberOfPrompts;
@@ -13,7 +13,7 @@ function PromptHeader(currentPrompt) {
   const tmp = callback4();
   let obj = {};
   obj = { style: tmp.promptHeader };
-  obj = { Promise: null, marginTop: null, flags: null, style: tmp.countText };
+  obj = { "Null": "<string:1178599425>", "Null": "<string:3295084545>", "Null": "<string:1689649153>", style: tmp.countText };
   const intl = arg1(dependencyMap[21]).intl;
   obj.children = intl.format(arg1(dependencyMap[21]).t.isV0NW, { currentQuestion: currentPromptIndex + 1, questionCount: numberOfPrompts });
   const items = [callback2(arg1(dependencyMap[20]).Text, obj), ];
@@ -24,7 +24,7 @@ function PromptHeader(currentPrompt) {
       const obj2 = {};
       const obj3 = { style: tmp.requiredSeparator };
       const items1 = [callback2(closure_6, obj3), ];
-      const obj4 = { INTEGRATION_CREATE: -436207324, ConstraintReasonCode: 301991094 };
+      const obj4 = {};
       const intl2 = arg1(dependencyMap[21]).intl;
       obj4.children = intl2.string(arg1(dependencyMap[21]).t.Ur8Vrt);
       items1[1] = callback2(arg1(dependencyMap[20]).Text, obj4);
@@ -34,7 +34,9 @@ function PromptHeader(currentPrompt) {
   }
   items[1] = tmp5;
   obj.children = items;
-  const items2 = [callback3(closure_6, obj), callback2(arg1(dependencyMap[20]).Text, { style: tmp.title, children: currentPrompt.title })];
+  const items2 = [callback3(closure_6, obj), ];
+  const obj5 = { 1501064855: "<string:3170107394>", -1267889981: "<string:973406210>", -1145697943: "<string:821166084>", -1266241916: "<string:343539713>", style: tmp.title, children: currentPrompt.title };
+  items2[1] = callback2(arg1(dependencyMap[20]).Text, obj5);
   obj.children = items2;
   return callback3(closure_17, obj);
 }
@@ -144,7 +146,7 @@ function PromptFooter(lastPrompt) {
     tmp25 = null;
   }
   items6[1] = tmp25;
-  obj5 = { <string:1522289750>: 40, <string:570601313>: true, <string:1952092929>: "/assets/.cache/intl/bW9kdWxlcy9nb19saXZlL3dlYi9tb2RhbA==" };
+  obj5 = { 9223372036854775807: "r", -9223372036854775808: "isArray", 0: "mode" };
   let str4 = "primary";
   if (tmp3) {
     str4 = "primary";
@@ -163,8 +165,7 @@ function PromptFooter(lastPrompt) {
   return tmp16(tmp17, obj);
 }
 function formattedNameHighlight(children) {
-  const obj = { INTEGRATION_CREATE: "<string:1153630209>", ConstraintReasonCode: "<string:2388000769>", children };
-  return callback2(arg1(dependencyMap[20]).Text, obj, arg1);
+  return callback2(arg1(dependencyMap[20]).Text, { children }, arg1);
 }
 function DropdownOption(option) {
   option = option.option;
@@ -231,29 +232,29 @@ let obj = arg1(dependencyMap[10]);
 obj = { flex: { flex: 1 } };
 obj = { marginTop: arg1(dependencyMap[11]).NAV_BAR_HEIGHT, backgroundColor: importDefault(dependencyMap[12]).colors.BACKGROUND_BASE_LOWER };
 obj.container = obj;
-const tmp3 = arg1(dependencyMap[9]);
-obj.scrollContainer = { backgroundColor: importDefault(dependencyMap[12]).colors.BACKGROUND_BASE_LOWER };
+const obj1 = { flexDirection: 10388343592192675000000000000000000, alignItems: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003000217279425302, gap: -0.000000000000000000000000000000000000005879010292244467, justifySelf: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000936655599015111, loading: -3105808327311535600000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, backgroundColor: importDefault(dependencyMap[12]).colors.BACKGROUND_BASE_LOWER };
+obj.scrollContainer = obj1;
 obj.scrollContainerGradient = {};
-obj.promptHeader = { "Null": 8, "Null": null, "Null": "\u270A\u{1F3FF}", "Null": true };
-const obj1 = { backgroundColor: importDefault(dependencyMap[12]).colors.BACKGROUND_BASE_LOWER };
+obj.promptHeader = { "Null": 8, "Bool(true)": null, "Bool(true)": "\u270A\u{1F3FF}", "Bool(true)": true };
+const tmp3 = arg1(dependencyMap[9]);
 obj.requiredSeparator = { color: importDefault(dependencyMap[12]).colors.BORDER_SUBTLE, backgroundColor: importDefault(dependencyMap[12]).colors.BORDER_SUBTLE, borderRadius: importDefault(dependencyMap[12]).radii.xs };
 obj.countText = {};
 obj.title = { marginBottom: 32 };
-obj.helpText = {};
+obj.helpText = { "Null": 800, "Null": 16, "Null": 20 };
 const obj2 = { color: importDefault(dependencyMap[12]).colors.BORDER_SUBTLE, backgroundColor: importDefault(dependencyMap[12]).colors.BORDER_SUBTLE, borderRadius: importDefault(dependencyMap[12]).radii.xs };
 obj.footer = { backgroundColor: importDefault(dependencyMap[12]).colors.BACKGROUND_BASE_LOWER };
-obj.footerText = { <string:1751189110>: "<string:1291846036>", <string:3473082195>: "<string:637534498>", <string:1627492630>: "<string:1140851364>" };
-obj.footerContent = { "Null": true, "Null": true };
-obj.optionTextEmoji = { "Null": 1282146306, "Null": 1347551233, <string:3502029666>: -1066072926 };
-obj.optionImageEmoji = { "Null": true, "Null": true, "Null": true };
-obj.emojiContainer = { "Bool(true)": true, "Bool(true)": true };
-const obj4 = { "Null": "localItemAcks", "Null": "Uint32Array", "Null": "getTryItOutChanges", "Null": "unique", "Null": "stripSentryFramesAndReverse", "Null": "P", "Null": "collectiblesItem", "Null": "P", "Null": "withLeftMargin", "Null": "__SENTRY_EXCLUDE_REPLAY_WORKER__", borderRadius: importDefault(dependencyMap[12]).radii.sm, backgroundColor: importDefault(dependencyMap[12]).colors.BACKGROUND_BASE_LOWEST };
-obj.dropdownContainer = obj4;
-obj.emptyDropdownText = { marginTop: 16 };
+obj.footerText = { "Bool(true)": false, "Bool(true)": false, "Bool(true)": false };
+obj.footerContent = {};
+obj.optionTextEmoji = {};
+obj.optionImageEmoji = { "Null": true, "Null": true, lv: true };
+obj.emojiContainer = { -1861163602: true, -738052821: true };
 const obj3 = { backgroundColor: importDefault(dependencyMap[12]).colors.BACKGROUND_BASE_LOWER };
+obj.dropdownContainer = { borderRadius: importDefault(dependencyMap[12]).radii.sm, backgroundColor: importDefault(dependencyMap[12]).colors.BACKGROUND_BASE_LOWEST };
+obj.emptyDropdownText = { marginTop: 16 };
+const obj4 = { borderRadius: importDefault(dependencyMap[12]).radii.sm, backgroundColor: importDefault(dependencyMap[12]).colors.BACKGROUND_BASE_LOWEST };
 obj.dropdownPill = { borderRadius: importDefault(dependencyMap[12]).radii.sm, backgroundColor: importDefault(dependencyMap[12]).colors.BACKGROUND_BASE_LOW };
-obj.dropdownIconContainer = { ignoreDuration: "r", limits: "isArray", initialScrollStart: "ct" };
-obj.dropdownIcon = { <string:1140607356>: "boolean", <string:1751293292>: "string" };
+obj.dropdownIconContainer = { sl: "Array", so: "isArray", sq: "label" };
+obj.dropdownIcon = { <string:1632221346>: "boolean", <string:2722977214>: "string" };
 let closure_18 = obj.createStyles(obj);
 const obj5 = { borderRadius: importDefault(dependencyMap[12]).radii.sm, backgroundColor: importDefault(dependencyMap[12]).colors.BACKGROUND_BASE_LOW };
 const result = arg1(dependencyMap[36]).fileFinishedImporting("modules/guild_onboarding/native/GuildOnboardingPrompt.tsx");
@@ -505,7 +506,7 @@ export const DropdownPrompt = function DropdownPrompt(guildId) {
   const obj3 = { style: tmp.dropdownContainer, onPress: callback };
   let tmp11 = 0 === found.length;
   if (tmp11) {
-    const obj4 = { "Bool(true)": null, "Bool(true)": null, "Bool(true)": null, "Bool(true)": null, style: tmp.emptyDropdownText };
+    const obj4 = { style: tmp.emptyDropdownText };
     tmp11 = callback2(arg1(dependencyMap[20]).Text, obj4);
   }
   const items5 = [tmp11, found.map((id) => callback(closure_22, { option: id }, id.id)), ];

@@ -1,10 +1,10 @@
-// Module ID: 4652
-// Function ID: 40272
+// Module ID: 4654
+// Function ID: 40313
 // Name: VoiceNormalSpoilerIcon
-// Dependencies: [305463296, 305922048, 43515904, 36765696, 1441792, 93716480]
+// Dependencies: [305594368, 306053120, 43515904, 36765696, 1441792, 93716480]
 // Exports: VoiceNormalSpoilerIcon
 
-// Module 4652 (VoiceNormalSpoilerIcon)
+// Module 4654 (VoiceNormalSpoilerIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/VoiceNormalSpoilerIcon.tsx");

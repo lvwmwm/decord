@@ -1,10 +1,10 @@
-// Module ID: 9163
-// Function ID: 71792
+// Module ID: 9167
+// Function ID: 71804
 // Name: useVerificationForm
 // Dependencies: []
 // Exports: default
 
-// Module 9163 (useVerificationForm)
+// Module 9167 (useVerificationForm)
 function useVerificationForm(guild) {
   function getFormFields() {
     if (!memo) {
@@ -93,7 +93,7 @@ let closure_8 = arg1(dependencyMap[4]).NO_MEMBER_VERIFICATION_FORM;
 const VerificationLevels = arg1(dependencyMap[5]).VerificationLevels;
 ({ jsx: closure_10, jsxs: closure_11 } = arg1(dependencyMap[6]));
 const tmp2 = arg1(dependencyMap[6]);
-let closure_12 = arg1(dependencyMap[7]).createStyles({ container: {}, submitButton: { visible: "version=$(node -p \"require('./package.json').version\") && sed -i '' \"s/#define NITRO_VERSION \\\".*\\\"/#define NITRO_VERSION \\\"$version\\\"/\" ./cpp/utils/NitroDefines.hpp", transparent: "bun run write-native-version" }, error: { -9223372036854775808: null, 0: null, 0: null } });
+let closure_12 = arg1(dependencyMap[7]).createStyles({ container: {}, submitButton: {}, error: { <string:3724892767>: null, <string:3664567809>: null, <string:3495945267>: null } });
 const obj = arg1(dependencyMap[7]);
 const result = arg1(dependencyMap[20]).fileFinishedImporting("modules/guild_member_verification/native/components/MemberVerificationForm.tsx");
 

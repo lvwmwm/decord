@@ -1,9 +1,9 @@
-// Module ID: 8452
-// Function ID: 67444
+// Module ID: 8456
+// Function ID: 67456
 // Name: GuildEventCardControls
 // Dependencies: []
 
-// Module 8452 (GuildEventCardControls)
+// Module 8456 (GuildEventCardControls)
 function GuildEventCardControls(onCloseAction) {
   let event;
   let isConnected;

@@ -1,9 +1,9 @@
-// Module ID: 11391
-// Function ID: 88603
+// Module ID: 11398
+// Function ID: 88627
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
-// Module 11391 (_isNativeReflectConstruct)
+// Module 11398 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -208,7 +208,7 @@ tmp3 = new tmp3(importDefault(dependencyMap[11]), {
       value = new ctor();
     }
     const result = map.set(id, value);
-    let obj = { GiftingTier4LargeBadge: null, addTtfbInstrumentationHandler: null };
+    let obj = { 9223372036854775807: null, 0: null };
     obj = { guild: guildId, strict: true };
     let tmp5;
     if (null != threadId) {

@@ -1,10 +1,10 @@
-// Module ID: 4658
-// Function ID: 40313
+// Module ID: 4660
+// Function ID: 40354
 // Name: getIsScreenLandscape
 // Dependencies: []
 // Exports: getIsScreenLandscape, useIsScreenLandscape
 
-// Module 4658 (getIsScreenLandscape)
+// Module 4660 (getIsScreenLandscape)
 let closure_2 = importAll(dependencyMap[0]);
 let closure_3 = importDefault(dependencyMap[1]);
 const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/screen/useIsScreenLandscape.native.tsx");

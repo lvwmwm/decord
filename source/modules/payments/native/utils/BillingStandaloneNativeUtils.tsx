@@ -1,10 +1,10 @@
-// Module ID: 6632
-// Function ID: 50914
+// Module ID: 6638
+// Function ID: 50963
 // Name: emitMWRCSentryErrorOnFailure
 // Dependencies: []
 // Exports: goToStandaloneGuildBoostCheckoutFromMobileApp, goToStandaloneNitroManagementFromMobileApp, goToStandalonePremiumCheckoutFromMobileApp
 
-// Module 6632 (emitMWRCSentryErrorOnFailure)
+// Module 6638 (emitMWRCSentryErrorOnFailure)
 function emitMWRCSentryErrorOnFailure(arg0, source, load_id) {
   let tmp;
   let tmp2;

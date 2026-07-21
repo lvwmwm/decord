@@ -1,10 +1,10 @@
-// Module ID: 6263
-// Function ID: 50268
+// Module ID: 6265
+// Function ID: 50311
 // Name: InkQuill3dIllustration
 // Dependencies: []
 // Exports: InkQuill3dIllustration
 
-// Module 6263 (InkQuill3dIllustration)
+// Module 6265 (InkQuill3dIllustration)
 const jsx = require(dependencyMap[0]).jsx;
 const _module = require(dependencyMap[3]);
 const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/InkQuill3dIllustration.native.tsx");

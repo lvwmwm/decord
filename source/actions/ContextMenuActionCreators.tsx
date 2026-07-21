@@ -1,10 +1,10 @@
-// Module ID: 5399
-// Function ID: 46002
+// Module ID: 5401
+// Function ID: 46043
 // Name: open
 // Dependencies: []
 // Exports: closeContextMenu, openContextMenuLazy
 
-// Module 5399 (open)
+// Module 5401 (open)
 function open(contextMenu) {
   let obj = importDefault(dependencyMap[1]);
   obj = { type: "CONTEXT_MENU_OPEN", contextMenu };

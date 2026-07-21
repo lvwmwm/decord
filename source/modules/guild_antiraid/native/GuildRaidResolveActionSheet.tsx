@@ -1,10 +1,10 @@
-// Module ID: 10989
-// Function ID: 85514
+// Module ID: 10994
+// Function ID: 85535
 // Name: GuildRaidResolveActionSheet
 // Dependencies: []
 // Exports: default
 
-// Module 10989 (GuildRaidResolveActionSheet)
+// Module 10994 (GuildRaidResolveActionSheet)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 const View = arg1(dependencyMap[2]).View;
@@ -12,8 +12,8 @@ const AnalyticEvents = arg1(dependencyMap[3]).AnalyticEvents;
 const SafetyToastType = arg1(dependencyMap[4]).SafetyToastType;
 ({ jsx: closure_8, jsxs: closure_9 } = arg1(dependencyMap[5]));
 let obj = arg1(dependencyMap[6]);
-obj = { container: { value: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001435232227666385, alignItems: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001855744934315794, alignSelf: 131072.00048828125, textAlign: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002419076062126, paddingBottom: -0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001743287511086204 }, title: { bounces: null, keyboardShouldPersistTaps: null }, subtitle: { bounces: "center", keyboardShouldPersistTaps: "center" } };
-obj = { borderColor: importDefault(dependencyMap[7]).colors.BORDER_SUBTLE, borderRadius: importDefault(dependencyMap[7]).radii.xs };
+obj = { container: { flex: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000013166812511108805, display: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001855744934315794, flexDirection: 131072.00048828125, flexShrink: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000241907606205, alignItems: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000023797674665240552 }, title: { "Null": null, "Null": null }, subtitle: { "Null": "center", "Null": "center" } };
+obj = { handledHereMention: null, sending: null, editId: null, focused: null, selectionStart: null, selectionEnd: null, text: null, borderColor: importDefault(dependencyMap[7]).colors.BORDER_SUBTLE, borderRadius: importDefault(dependencyMap[7]).radii.xs };
 obj.optionContainer = obj;
 obj.option = { width: "100%" };
 obj.textInputContainer = {};
@@ -65,7 +65,7 @@ export default function GuildRaidResolveActionSheet(arg0) {
   const intl5 = arg1(dependencyMap[8]).intl;
   obj4.children = intl5.string(arg1(dependencyMap[8]).t.1zmw/H);
   const items1 = [handleClose(arg1(dependencyMap[13]).Text, obj4), , , , ];
-  const obj5 = { Promise: "xs", marginTop: "interactive-text-default", flags: "md", style: tmp.subtitle };
+  const obj5 = { "Null": "xs", "Null": "interactive-text-default", "Null": "md", style: tmp.subtitle };
   const intl6 = arg1(dependencyMap[8]).intl;
   obj5.children = intl6.string(arg1(dependencyMap[8]).t.nF79oO);
   items1[1] = handleClose(arg1(dependencyMap[13]).Text, obj5);
@@ -76,7 +76,7 @@ export default function GuildRaidResolveActionSheet(arg0) {
       style: tmp.option,
       onPress() {
         function onCheckboxChange(value) {
-          callback(closure_3.includes(value) ? (arr) => arr.filter(/* F85522 */ function() { ... }) : (arg0) => {
+          callback(closure_3.includes(value) ? (arr) => arr.filter(/* F85543 */ function() { ... }) : (arg0) => {
             const items = [...arg0, arg0];
             return items;
           });

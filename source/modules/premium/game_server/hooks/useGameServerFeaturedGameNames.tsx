@@ -1,10 +1,10 @@
-// Module ID: 11592
-// Function ID: 90107
+// Module ID: 11599
+// Function ID: 90130
 // Name: useGameServerFeaturedGameNames
 // Dependencies: []
 // Exports: default
 
-// Module 11592 (useGameServerFeaturedGameNames)
+// Module 11599 (useGameServerFeaturedGameNames)
 const _module = require(dependencyMap[0]);
 ({ MINECRAFT_GAME_ID: closure_2, HYTALE_GAME_ID: closure_3 } = _module);
 const _module1 = require(dependencyMap[2]);

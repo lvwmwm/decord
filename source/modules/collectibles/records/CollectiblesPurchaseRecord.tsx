@@ -1,9 +1,9 @@
-// Module ID: 6792
-// Function ID: 53603
+// Module ID: 6798
+// Function ID: 53652
 // Name: CollectiblesPurchaseRecord
 // Dependencies: []
 
-// Module 6792 (CollectiblesPurchaseRecord)
+// Module 6798 (CollectiblesPurchaseRecord)
 let closure_2 = importDefault(dependencyMap[0]);
 let closure_3 = importDefault(dependencyMap[1]);
 let closure_4 = importDefault(dependencyMap[2]);
@@ -41,7 +41,7 @@ const tmp2 = () => {
         sku_id = sku_id.sku_id;
         const CollectiblesPurchaseRecord = sku_id;
         ({ premium_type, bundled_products, variants, purchased_at, expires_at } = sku_id);
-        let obj = { createViewConfig: "JPEGInterchangeFormatLength", _mergeFormats: "isArrayBuffer", has_advertising_id: "MOBILE_BOTTOM_SHEET", clearAllTrackedExposures: "ON", bogoRewardEnabled: "GameDepthTier9LargeBadge", extractExceptionKeysForMessage: "RangeError", data: "%MapIteratorPrototype%", mfa_enabled: "isArray", gradientWrapper: "MUR", getVisibleGuildIds: "absolute", channelTypes: "[object Function]", pt-CV: "%Float64ArrayPrototype%", tig: "setUploadedFilename", messageUnreadCount: null, minus: null };
+        let obj = {};
         ({ type, name, category_sku_id, prices, base_variant_name, base_variant_sku_id, variant_label, variant_value, purchase_type } = sku_id);
         Object.setPrototypeOf(null);
         const merged = Object.assign(sku_id, obj);

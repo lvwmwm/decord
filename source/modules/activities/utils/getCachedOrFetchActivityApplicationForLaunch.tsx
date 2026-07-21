@@ -1,10 +1,10 @@
-// Module ID: 10799
-// Function ID: 83873
+// Module ID: 10805
+// Function ID: 83896
 // Name: _getCachedOrFetchActivityApplicationForLaunch
 // Dependencies: []
 // Exports: default
 
-// Module 10799 (_getCachedOrFetchActivityApplicationForLaunch)
+// Module 10805 (_getCachedOrFetchActivityApplicationForLaunch)
 function _getCachedOrFetchActivityApplicationForLaunch() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);

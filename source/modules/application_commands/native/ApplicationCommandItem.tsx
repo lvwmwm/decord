@@ -1,10 +1,10 @@
-// Module ID: 11425
-// Function ID: 88936
+// Module ID: 11432
+// Function ID: 88960
 // Name: ApplicationCommandItem
 // Dependencies: []
 // Exports: default
 
-// Module 11425 (ApplicationCommandItem)
+// Module 11432 (ApplicationCommandItem)
 let closure_3 = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 let closure_5 = importDefault(dependencyMap[2]);
@@ -13,13 +13,13 @@ const AUTOCOMPLETE_ROW_HEIGHT = arg1(dependencyMap[3]).AUTOCOMPLETE_ROW_HEIGHT;
 const tmp2 = arg1(dependencyMap[4]);
 let closure_9 = arg1(dependencyMap[5]).createStyles((arg0) => {
   let obj = {};
-  obj = { size: null, text: null, grow: null, variant: null, height: Math.max(arg0 * AUTOCOMPLETE_ROW_HEIGHT, AUTOCOMPLETE_ROW_HEIGHT) };
+  obj = { userId: null, bottom: null, marginTop: null, flex: null, height: Math.max(arg0 * AUTOCOMPLETE_ROW_HEIGHT, AUTOCOMPLETE_ROW_HEIGHT) };
   obj.applicationCommandItem = obj;
   obj = { backgroundColor: importDefault(dependencyMap[6]).colors.INTERACTIVE_BACKGROUND_HOVER };
   obj.highlightedApplicationCommandItem = obj;
   obj.applicationCommandIcon = { borderRadius: importDefault(dependencyMap[6]).radii.lg };
-  obj.applicationCommandDescriptionWrapper = {};
-  obj.applicationCommandSectionName = { "Bool(true)": 1140851434, "Bool(true)": 191090 };
+  obj.applicationCommandDescriptionWrapper = { 996395015: true, 2001900630: "/assets/.cache/intl/bW9kdWxlcy9nb19saXZlL3dlYi9tb2RhbA==", 1370266028: null };
+  obj.applicationCommandSectionName = { "Bool(true)": "\u092A\u0942\u0930\u094D\u0935\u093E\u0939\u094D\u0928", "Bool(true)": "\u0905\u092A\u0930\u093E\u0939\u094D\u0928" };
   return obj;
 });
 const obj = arg1(dependencyMap[5]);
@@ -87,13 +87,11 @@ export default function ApplicationCommandItem(highlighted) {
   }
   const items2 = [showIcon, , ];
   const obj3 = { style: tmp.applicationCommandDescriptionWrapper };
-  const obj4 = { CHANNEL_HIGHLIGHT: true, guild_template_description: 15.1, borderWidth: 253, children: `/ ${command.displayName}` };
-  const items3 = [callback(arg1(dependencyMap[13]).Text, obj4), ];
-  const obj5 = { CHANNEL_HIGHLIGHT: false, guild_template_description: false, borderWidth: false, children: command.displayDescription };
-  items3[1] = callback(arg1(dependencyMap[13]).Text, obj5);
+  const obj4 = { encodingConfig: true, showRemove: 15.1, PREMIUM_CUSTOM_NOTIFICATION_SOUND_SETTINGS_UPSELL: 253, children: `/ ${command.displayName}` };
+  const items3 = [callback(arg1(dependencyMap[13]).Text, obj4), callback(arg1(dependencyMap[13]).Text, { children: command.displayDescription })];
   obj3.children = items3;
   items2[1] = callback2(View, obj3);
-  const obj6 = { Promise: false, marginTop: false, flags: false, style: tmp.applicationCommandSectionName, children: name };
+  const obj6 = { "Null": true, "Null": true, "Null": true, style: tmp.applicationCommandSectionName, children: name };
   items2[2] = callback(arg1(dependencyMap[13]).Text, obj6);
   obj.children = items2;
   return callback2(arg1(dependencyMap[10]).PressableOpacity, obj);

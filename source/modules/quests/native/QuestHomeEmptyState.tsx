@@ -1,24 +1,24 @@
-// Module ID: 13830
-// Function ID: 104562
+// Module ID: 13837
+// Function ID: 104585
 // Name: QuestHomeEmptyState
 // Dependencies: []
 // Exports: default
 
-// Module 13830 (QuestHomeEmptyState)
+// Module 13837 (QuestHomeEmptyState)
 importAll(dependencyMap[0]);
 ({ View: closure_3, ImageBackground: closure_4 } = arg1(dependencyMap[1]));
 const VerticalGradient = arg1(dependencyMap[2]).VerticalGradient;
 const tmp3 = arg1(dependencyMap[1]);
 ({ jsx: closure_6, jsxs: closure_7, Fragment: closure_8 } = arg1(dependencyMap[3]));
 let obj = arg1(dependencyMap[4]);
-obj = { container: { flex: 1 }, emptyStateContainer: {} };
+obj = { container: { flex: 1 }, emptyStateContainer: { marginTop: "gr", justifyContent: null, minHeight: "Group 3" } };
 obj = { top: -55, paddingHorizontal: importDefault(dependencyMap[5]).space.PX_32 };
 obj.emptyStateContentContainer = obj;
 obj.emptyStateContentTitle = { textAlign: "center" };
-obj.emptyStateContentDescription = { concat: "/assets/design/components/Illustration/native/redesign/generated/images", now: 160 };
-obj.emptyImage = {};
-obj.gradient = { "Bool(false)": false, "Bool(false)": false, "Bool(false)": "never", "Bool(false)": false };
-obj.actionWrapper = { "Null": "center", "Null": "center" };
+obj.emptyStateContentDescription = { "Bool(true)": "/assets/design/components/Illustration/native/redesign/generated/images", "Bool(true)": 160 };
+obj.emptyImage = { <string:2148698746>: "aas", "Bool(true)": "aa", "Bool(true)": "ab", "Bool(true)": "dz", "Bool(true)": "af", "Bool(true)": "apf", "Bool(true)": "ami" };
+obj.gradient = { "Bool(true)": "isArray", "Bool(true)": "FRIEND_REQUESTS_GROUPED", "Bool(true)": "isArray", "Bool(true)": "EMTLOT" };
+obj.actionWrapper = { "Bool(true)": "center", "Bool(true)": "center" };
 let closure_9 = obj.createStyles(obj);
 const tmp4 = arg1(dependencyMap[3]);
 const result = arg1(dependencyMap[14]).fileFinishedImporting("modules/quests/native/QuestHomeEmptyState.tsx");

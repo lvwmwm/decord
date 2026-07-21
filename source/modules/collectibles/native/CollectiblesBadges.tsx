@@ -1,10 +1,10 @@
-// Module ID: 7858
-// Function ID: 62617
+// Module ID: 7862
+// Function ID: 62629
 // Name: NewBadge
 // Dependencies: []
 // Exports: IconBadgePill, IconTextBadge, LimitedTimeBadge, LockBadge, NewBadge, PremiumBadge
 
-// Module 7858 (NewBadge)
+// Module 7862 (NewBadge)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 const PremiumTypes = arg1(dependencyMap[2]).PremiumTypes;
@@ -21,14 +21,14 @@ const obj2 = { backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUN
 obj.limitedTimeBadge = { backgroundColor: importDefault(dependencyMap[5]).colors.WHITE, borderRadius: importDefault(dependencyMap[5]).radii.md, paddingHorizontal: importDefault(dependencyMap[5]).space.PX_8, paddingVertical: importDefault(dependencyMap[5]).space.PX_4 };
 const obj3 = { backgroundColor: importDefault(dependencyMap[5]).colors.WHITE, borderRadius: importDefault(dependencyMap[5]).radii.md, paddingHorizontal: importDefault(dependencyMap[5]).space.PX_8, paddingVertical: importDefault(dependencyMap[5]).space.PX_4 };
 obj.lockIconBadge = { backgroundColor: importDefault(dependencyMap[5]).colors.ICON_OVERLAY_DARK, padding: 5, borderRadius: importDefault(dependencyMap[5]).radii.round };
+const obj5 = { experimental_withBlurBackground: true, label: true, presentation: true, enabled: true, type: true, isExpired: true, isLeader: true, backgroundColor: importDefault(dependencyMap[5]).unsafe_rawColors.PREMIUM_TIER_2_PINK_FOR_GRADIENTS_2, borderRadius: importDefault(dependencyMap[5]).radii.round };
+obj.newLockIconBadge = obj5;
 const obj4 = { backgroundColor: importDefault(dependencyMap[5]).colors.ICON_OVERLAY_DARK, padding: 5, borderRadius: importDefault(dependencyMap[5]).radii.round };
-obj.newLockIconBadge = { backgroundColor: importDefault(dependencyMap[5]).unsafe_rawColors.PREMIUM_TIER_2_PINK_FOR_GRADIENTS_2, borderRadius: importDefault(dependencyMap[5]).radii.round };
-const obj5 = { backgroundColor: importDefault(dependencyMap[5]).unsafe_rawColors.PREMIUM_TIER_2_PINK_FOR_GRADIENTS_2, borderRadius: importDefault(dependencyMap[5]).radii.round };
 obj.badgePill = { paddingHorizontal: importDefault(dependencyMap[5]).space.PX_4, paddingVertical: 1.5, borderRadius: importDefault(dependencyMap[5]).radii.round, flexShrink: 1 };
-const obj6 = { paddingHorizontal: importDefault(dependencyMap[5]).space.PX_4, paddingVertical: 1.5, borderRadius: importDefault(dependencyMap[5]).radii.round, flexShrink: 1 };
-obj.iconTextBadge = { paddingHorizontal: importDefault(dependencyMap[5]).space.PX_8, borderRadius: importDefault(dependencyMap[5]).radii.round };
+const obj7 = { hasVoted: "safety_user_sentiment_notice_dismissed_at", isExpired: "message", alignButton: null, label: "text-sm/semibold", secondaryLabel: "text-default", paddingHorizontal: importDefault(dependencyMap[5]).space.PX_8, borderRadius: importDefault(dependencyMap[5]).radii.round };
+obj.iconTextBadge = obj7;
 let closure_7 = obj.createStyles(obj);
-const obj7 = { paddingHorizontal: importDefault(dependencyMap[5]).space.PX_8, borderRadius: importDefault(dependencyMap[5]).radii.round };
+const obj6 = { paddingHorizontal: importDefault(dependencyMap[5]).space.PX_4, paddingVertical: 1.5, borderRadius: importDefault(dependencyMap[5]).radii.round, flexShrink: 1 };
 const result = arg1(dependencyMap[11]).fileFinishedImporting("modules/collectibles/native/CollectiblesBadges.tsx");
 
 export const NewBadge = function NewBadge(style) {
@@ -54,7 +54,7 @@ export const LockBadge = function LockBadge(isNew) {
     obj.style = items;
     obj = { size: "xxs", color: importDefault(dependencyMap[5]).colors.WHITE };
     const items1 = [callback(arg1(dependencyMap[9]).LockIcon, obj), ];
-    const obj1 = { INTEGRATION_CREATE: true, ConstraintReasonCode: true, style: tmp.badgeTextUppercase };
+    const obj1 = { style: tmp.badgeTextUppercase };
     const intl = arg1(dependencyMap[7]).intl;
     obj1.children = intl.string(arg1(dependencyMap[7]).t.y2b7CA);
     items1[1] = callback(arg1(dependencyMap[6]).Text, obj1);
@@ -84,7 +84,7 @@ export const PremiumBadge = function PremiumBadge(isNew) {
     obj.style = items;
     obj = { size: "xxs", color: importDefault(dependencyMap[5]).colors.WHITE };
     const items1 = [callback(arg1(dependencyMap[10]).NitroWheelIcon, obj), ];
-    const obj1 = { INTEGRATION_CREATE: true, ConstraintReasonCode: true, style: tmp.badgeTextUppercase };
+    const obj1 = { style: tmp.badgeTextUppercase };
     const intl = arg1(dependencyMap[7]).intl;
     obj1.children = intl.string(arg1(dependencyMap[7]).t.y2b7CA);
     items1[1] = callback(arg1(dependencyMap[6]).Text, obj1);
@@ -105,7 +105,7 @@ export const LimitedTimeBadge = function LimitedTimeBadge(style) {
   const tmp = callback3();
   let obj = { style: items };
   const items = [tmp.limitedTimeBadge, style.style];
-  obj = { INTEGRATION_CREATE: "limitedTimeAppIcons", ConstraintReasonCode: "canLaunchInChannel", style: tmp.badgeTextUppercase };
+  obj = { style: tmp.badgeTextUppercase };
   const intl = arg1(dependencyMap[7]).intl;
   obj.children = intl.string(arg1(dependencyMap[7]).t.h/uBCR);
   obj.children = callback(arg1(dependencyMap[6]).Text, obj);

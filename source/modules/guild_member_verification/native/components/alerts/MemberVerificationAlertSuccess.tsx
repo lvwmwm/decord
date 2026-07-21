@@ -1,21 +1,19 @@
-// Module ID: 9141
-// Function ID: 71690
+// Module ID: 9145
+// Function ID: 71702
 // Name: MemberVerificationAlertSuccess
-// Dependencies: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+// Dependencies: []
 // Exports: default
 
-// Module 9141 (MemberVerificationAlertSuccess)
-import "result";
-import { View } from "result";
-import closure_4 from "result";
-import closure_5 from "result";
-import result from "result";
-import result from "result";
-import result from "result";
-
-({ jsx: closure_6, jsxs: closure_7 } = result);
-let closure_8 = result.createStyles({ alert: { marginTop: 120 }, header: {}, text: {}, illustrationContainer: { applicationId: null, r: null, apply: null, tag: null, ao: null, split: null, p: null }, illustration: {} });
-result = result.fileFinishedImporting("modules/guild_member_verification/native/components/alerts/MemberVerificationAlertSuccess.tsx");
+// Module 9145 (MemberVerificationAlertSuccess)
+importAll(dependencyMap[0]);
+const View = arg1(dependencyMap[1]).View;
+let closure_4 = importDefault(dependencyMap[2]);
+let closure_5 = importDefault(dependencyMap[3]);
+({ jsx: closure_6, jsxs: closure_7 } = arg1(dependencyMap[4]));
+const tmp3 = arg1(dependencyMap[4]);
+let closure_8 = arg1(dependencyMap[5]).createStyles({ alert: { marginTop: 120 }, header: {}, text: { -321336219: null, -357106845: null, 595310674: null }, illustrationContainer: { backgroundColor: false, r: false, title: false, error: false, ao: false, apply: false, LIGHT: false }, illustration: {} });
+const obj = arg1(dependencyMap[5]);
+const result = arg1(dependencyMap[12]).fileFinishedImporting("modules/guild_member_verification/native/components/alerts/MemberVerificationAlertSuccess.tsx");
 
 export default function MemberVerificationAlertSuccess(guildId) {
   guildId = guildId.guildId;
@@ -57,7 +55,7 @@ export default function MemberVerificationAlertSuccess(guildId) {
     obj2.style = tmp3.illustration;
     obj1.children = callback(importDefault(dependencyMap[9]), obj2);
     const items2 = [callback(View, obj1), , ];
-    const obj3 = { Promise: false, marginTop: 0, flags: 4, style: tmp3.header };
+    const obj3 = { "Null": false, "Null": 0, "Null": 4, style: tmp3.header };
     const intl2 = arg1(dependencyMap[8]).intl;
     const obj4 = { guildName: stateFromStores.name };
     obj3.children = intl2.format(arg1(dependencyMap[8]).t.7hhNEn, obj4);

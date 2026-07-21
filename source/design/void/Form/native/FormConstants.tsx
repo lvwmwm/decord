@@ -1,28 +1,26 @@
 // Module ID: 1277
 // Function ID: 14400
 // Name: semanticColor
-// Dependencies: [0, 0, 0, 0, 0, 0]
+// Dependencies: []
 // Exports: getThemedRippleConfig
 
 // Module 1277 (semanticColor)
-import closure_2 from "result";
-import result from "result";
-import { internal } from "result";
-import { internal as internal2 } from "result";
-import result from "result";
-import result from "result";
-
+let closure_2 = importDefault(dependencyMap[0]);
 let num = 24;
-if (result.isAndroid()) {
+if (obj.isAndroid()) {
   num = 32;
 }
-const semanticColor = internal.resolveSemanticColor(require("result").themes.DARK, require("result").colors.MOBILE_ANDROID_BUTTON_BACKGROUND_RIPPLE);
-const semanticColor1 = internal2.resolveSemanticColor(require("result").themes.LIGHT, require("result").colors.MOBILE_ANDROID_BUTTON_BACKGROUND_RIPPLE);
-result = result.getSystemVersionMajor();
+const internal = importDefault(dependencyMap[2]).internal;
+const semanticColor = internal.resolveSemanticColor(importDefault(dependencyMap[2]).themes.DARK, importDefault(dependencyMap[2]).colors.MOBILE_ANDROID_BUTTON_BACKGROUND_RIPPLE);
+const internal2 = importDefault(dependencyMap[2]).internal;
+const semanticColor1 = internal2.resolveSemanticColor(importDefault(dependencyMap[2]).themes.LIGHT, importDefault(dependencyMap[2]).colors.MOBILE_ANDROID_BUTTON_BACKGROUND_RIPPLE);
+const obj = arg1(dependencyMap[1]);
+const systemVersionMajor = arg1(dependencyMap[3]).getSystemVersionMajor();
 const frozen = Object.freeze({ foreground: true });
 let closure_6 = Object.freeze({});
 const map = new Map();
-result = result.fileFinishedImporting("design/void/Form/native/FormConstants.tsx");
+const obj2 = arg1(dependencyMap[3]);
+const result = arg1(dependencyMap[5]).fileFinishedImporting("design/void/Form/native/FormConstants.tsx");
 
 export const FORM_ROW_VERTICAL_PADDING = num;
 export const RIPPLE_DARK_COLOR = semanticColor;

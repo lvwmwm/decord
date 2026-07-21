@@ -1,9 +1,9 @@
-// Module ID: 4798
-// Function ID: 41656
+// Module ID: 4800
+// Function ID: 41697
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
-// Module 4798 (_isNativeReflectConstruct)
+// Module 4800 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -14,7 +14,7 @@ function _isNativeReflectConstruct() {
   const result = _isNativeReflectConstruct();
 }
 function guildDimensionFactory(guildId) {
-  const obj = { -373397885: "Normal", 1768023132: true, 1162130007: "AbortSignal", guildId };
+  const obj = { 9223372036854775807: null, 0: "\u{1F9BB}\u{1F3FF}", 0: true, guildId };
   return obj;
 }
 function _isAtBottom(channelId) {

@@ -1,10 +1,10 @@
-// Module ID: 11102
-// Function ID: 86422
+// Module ID: 11108
+// Function ID: 86445
 // Name: areMemberGroupsHydrated
 // Dependencies: []
 // Exports: useHereMentionCallback
 
-// Module 11102 (areMemberGroupsHydrated)
+// Module 11108 (areMemberGroupsHydrated)
 function areMemberGroupsHydrated(groups) {
   let tmp = groups.length > 1;
   if (!tmp) {

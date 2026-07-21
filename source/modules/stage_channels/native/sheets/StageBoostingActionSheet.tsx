@@ -1,10 +1,10 @@
-// Module ID: 4958
-// Function ID: 42578
+// Module ID: 4960
+// Function ID: 42619
 // Name: StageBoostingActionSheet
-// Dependencies: [325713920, 325976064, 335151104, 335216640, 325844992, 326303744, 327090176, 332529664, 332726272, 327024640, 326959104, 335282176, 334430208, 334036992, 341311488, 341508096, 341639168, 334168064, 341901312, 326434816, 326696960, 1299382272, 452984832, 771751936, 1895825414]
+// Dependencies: [325844992, 326107136, 335282176, 335347712, 325976064, 326434816, 327221248, 332660736, 332857344, 327155712, 327090176, 335413248, 334561280, 334168064, 341442560, 341639168, 341770240, 334299136, 342032384, 326565888, 326828032, 1299382272, 452984832, 771751936, 1895825414]
 // Exports: default
 
-// Module 4958 (StageBoostingActionSheet)
+// Module 4960 (StageBoostingActionSheet)
 importAll(dependencyMap[0]);
 let closure_3 = importDefault(dependencyMap[1]);
 let closure_4 = importDefault(dependencyMap[2]);
@@ -15,7 +15,7 @@ const tmp3 = arg1(dependencyMap[4]);
 const tmp4 = arg1(dependencyMap[5]);
 ({ jsx: closure_13, Fragment: closure_14, jsxs: closure_15 } = arg1(dependencyMap[6]));
 const tmp5 = arg1(dependencyMap[6]);
-let closure_16 = arg1(dependencyMap[7]).createStyles({ title: { names: "none", ks: "restore" }, body: { paddingBottom: 16 } });
+let closure_16 = arg1(dependencyMap[7]).createStyles({ title: { bm: "none", cursor: "restore" }, body: { paddingBottom: 16 } });
 const obj = arg1(dependencyMap[7]);
 const result = arg1(dependencyMap[24]).fileFinishedImporting("modules/stage_channels/native/sheets/StageBoostingActionSheet.tsx");
 

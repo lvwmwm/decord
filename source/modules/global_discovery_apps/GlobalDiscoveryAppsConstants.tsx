@@ -1,7 +1,7 @@
 // Module ID: 661
 // Function ID: 8024
 // Name: GLOBAL_DISCOVERY_APPS_FEATURED_CATEGORY_ID
-// Dependencies: []
+// Dependencies: [284214097]
 
 // Module 661 (GLOBAL_DISCOVERY_APPS_FEATURED_CATEGORY_ID)
 const _module = require(dependencyMap[0]);

@@ -1,10 +1,10 @@
-// Module ID: 6273
-// Function ID: 50283
+// Module ID: 6275
+// Function ID: 50326
 // Name: LeafIllocon
 // Dependencies: []
 // Exports: LeafIllocon
 
-// Module 6273 (LeafIllocon)
+// Module 6275 (LeafIllocon)
 const jsx = require(dependencyMap[0]).jsx;
 const _module = require(dependencyMap[3]);
 const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/LeafIllocon.native.tsx");

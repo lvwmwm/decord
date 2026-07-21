@@ -1,10 +1,10 @@
-// Module ID: 14808
-// Function ID: 111647
+// Module ID: 14815
+// Function ID: 111671
 // Name: HappeningNowVoiceCardSubtitle
 // Dependencies: []
 // Exports: HappeningNowActivityCardSubtitle, HappeningNowVoiceCardSubtitle
 
-// Module 14808 (HappeningNowVoiceCardSubtitle)
+// Module 14815 (HappeningNowVoiceCardSubtitle)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 let closure_4 = importDefault(dependencyMap[2]);

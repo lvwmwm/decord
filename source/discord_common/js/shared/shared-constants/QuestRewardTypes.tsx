@@ -1,9 +1,9 @@
-// Module ID: 6937
-// Function ID: 55463
+// Module ID: 6941
+// Function ID: 55474
 // Name: QuestRewardTypes
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 6937 (QuestRewardTypes)
+// Module 6941 (QuestRewardTypes)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_common/js/shared/shared-constants/QuestRewardTypes.tsx");
 

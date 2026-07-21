@@ -1,10 +1,10 @@
-// Module ID: 9145
-// Function ID: 71701
+// Module ID: 9149
+// Function ID: 71713
 // Name: ClipboardListIcon
 // Dependencies: []
 // Exports: ClipboardListIcon
 
-// Module 9145 (ClipboardListIcon)
+// Module 9149 (ClipboardListIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/ClipboardListIcon.tsx");

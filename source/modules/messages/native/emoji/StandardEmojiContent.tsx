@@ -1,10 +1,10 @@
-// Module ID: 9374
-// Function ID: 73109
+// Module ID: 9378
+// Function ID: 73123
 // Name: Emoji
 // Dependencies: []
 // Exports: default
 
-// Module 9374 (Emoji)
+// Module 9378 (Emoji)
 function Emoji(surrogate) {
   surrogate = surrogate.surrogate;
   let obj = {};
@@ -33,7 +33,7 @@ const View = arg1(dependencyMap[1]).View;
 let closure_5 = importDefault(dependencyMap[2]);
 ({ jsx: closure_6, jsxs: closure_7, Fragment: closure_8 } = arg1(dependencyMap[3]));
 let obj = arg1(dependencyMap[4]);
-obj = { emojiSurrogate: { 1799333758: null, 475076449: null, 1105551782: null } };
+obj = { emojiSurrogate: {} };
 obj = { paddingTop: importDefault(dependencyMap[5]).space.PX_4 };
 obj.ctaContainer = obj;
 let closure_9 = obj.createStyles(obj);
@@ -61,18 +61,17 @@ export default function StandardEmojiContent(nonce) {
   obj1 = { surrogate: emojiNode.surrogate };
   const items1 = [callback(Emoji, obj1), ];
   obj2 = { style: obj.emojiDescriptionWrapper };
-  obj3 = { INTEGRATION_CREATE: -833552028, ConstraintReasonCode: -314949303, children: importDefault(dependencyMap[13])(emojiNode.content) };
-  const items2 = [callback(arg1(dependencyMap[9]).Text, obj3), ];
-  const obj4 = { variant: "text-sm/medium" };
+  const items2 = [callback(arg1(dependencyMap[9]).Text, { children: importDefault(dependencyMap[13])(emojiNode.content) }), ];
+  obj3 = { variant: "text-sm/medium" };
   const intl = arg1(dependencyMap[14]).intl;
-  obj4.children = intl.string(arg1(dependencyMap[14]).t.sXdH8c);
-  items2[1] = callback(arg1(dependencyMap[9]).Text, obj4);
+  obj3.children = intl.string(arg1(dependencyMap[14]).t.sXdH8c);
+  items2[1] = callback(arg1(dependencyMap[9]).Text, obj3);
   obj2.children = items2;
   items1[1] = callback2(View, obj2);
   obj.children = items1;
   const items3 = [callback2(View, obj), callback(arg1(dependencyMap[15]).FormDivider, { style: obj.divider }), ];
-  const obj6 = { style: obj.ctaContainer };
-  const obj7 = {};
+  const obj5 = { style: obj.ctaContainer };
+  const obj6 = {};
   const intl2 = arg1(dependencyMap[14]).intl;
   const string = intl2.string;
   const t = arg1(dependencyMap[14]).t;
@@ -81,13 +80,13 @@ export default function StandardEmojiContent(nonce) {
   } else {
     stringResult = string(t.nNsr67);
   }
-  obj7.text = stringResult;
+  obj6.text = stringResult;
   let str = "primary";
   if (isFavoriteEmoji) {
     str = "tertiary";
   }
-  obj7.variant = str;
-  obj7.onPress = function onPress() {
+  obj6.variant = str;
+  obj6.onPress = function onPress() {
     const obj = emojiNode(isFavoriteEmoji[17]);
     if (isFavoriteEmoji) {
       obj.unfavoriteEmoji(memo);
@@ -95,8 +94,8 @@ export default function StandardEmojiContent(nonce) {
       obj.favoriteEmoji(memo);
     }
   };
-  obj6.children = callback(arg1(dependencyMap[16]).Button, obj7);
-  items3[2] = callback(View, obj6);
+  obj5.children = callback(arg1(dependencyMap[16]).Button, obj6);
+  items3[2] = callback(View, obj5);
   obj.children = items3;
   return callback2(closure_8, obj);
 };

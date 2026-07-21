@@ -1,10 +1,10 @@
-// Module ID: 12196
-// Function ID: 93716
+// Module ID: 12203
+// Function ID: 93739
 // Name: createSafetySystemNotificationEmbed
 // Dependencies: []
 // Exports: createSafetySystemNotificationEmbed
 
-// Module 12196 (createSafetySystemNotificationEmbed)
+// Module 12203 (createSafetySystemNotificationEmbed)
 const Image = require(dependencyMap[0]).Image;
 const MessageEmbedTypes = require(dependencyMap[1]).MessageEmbedTypes;
 const _module = require(dependencyMap[8]);

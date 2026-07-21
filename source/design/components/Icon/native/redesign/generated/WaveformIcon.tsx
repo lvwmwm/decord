@@ -1,10 +1,10 @@
-// Module ID: 10253
-// Function ID: 79247
+// Module ID: 10259
+// Function ID: 79266
 // Name: WaveformIcon
 // Dependencies: []
 // Exports: WaveformIcon
 
-// Module 10253 (WaveformIcon)
+// Module 10259 (WaveformIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/WaveformIcon.tsx");

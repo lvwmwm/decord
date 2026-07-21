@@ -1,10 +1,10 @@
-// Module ID: 8233
-// Function ID: 65021
+// Module ID: 8237
+// Function ID: 65033
 // Name: _readFile
 // Dependencies: []
 // Exports: clearFolder, moveFile, readFile, removeFile, writeFile
 
-// Module 8233 (_readFile)
+// Module 8237 (_readFile)
 async function _readFile(arg0, arg1, filePathForGif, arg3) {
   if (null == callback(closure_1[2])) {
     if (null == null) {

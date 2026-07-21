@@ -1,10 +1,10 @@
-// Module ID: 12021
-// Function ID: 92919
+// Module ID: 12028
+// Function ID: 92942
 // Name: UserProfileIncomingFriendRequest
 // Dependencies: []
 // Exports: default
 
-// Module 12021 (UserProfileIncomingFriendRequest)
+// Module 12028 (UserProfileIncomingFriendRequest)
 let closure_3 = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 ({ jsx: closure_5, jsxs: closure_6 } = arg1(dependencyMap[2]));
@@ -83,7 +83,7 @@ export default function UserProfileIncomingFriendRequest(style) {
   const items2 = [tmp.container, importDefault(dependencyMap[5])().card, style.style];
   let tmp12 = getOrFetchApplication;
   let Text = arg1(dependencyMap[11]).Text;
-  obj1 = { INTEGRATION_CREATE: null, ConstraintReasonCode: null };
+  obj1 = {};
   intl = arg1(dependencyMap[12]).intl;
   let intl2 = intl.format;
   if (null != applicationId) {
@@ -123,7 +123,7 @@ export default function UserProfileIncomingFriendRequest(style) {
   tmp12 = View;
   const obj5 = { style: tmp.buttons };
   intl = arg1;
-  const obj6 = { st: true, borderWidth: "/assets/design/components/Icon/native/redesign/generated/images" };
+  const obj6 = { key: true, onCloseCallback: true };
   intl = arg1(dependencyMap[12]).intl;
   obj6.text = intl.string(arg1(dependencyMap[12]).t.Zcibdf);
   obj6.onPress = string;

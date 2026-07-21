@@ -1,10 +1,10 @@
-// Module ID: 11633
-// Function ID: 90317
+// Module ID: 11640
+// Function ID: 90340
 // Name: GuildIconPile
 // Dependencies: []
 // Exports: GuildIconPile
 
-// Module 11633 (GuildIconPile)
+// Module 11640 (GuildIconPile)
 let closure_2 = importAll(dependencyMap[0]);
 ({ jsx: closure_3, jsxs: closure_4 } = arg1(dependencyMap[1]));
 const tmp2 = arg1(dependencyMap[1]);

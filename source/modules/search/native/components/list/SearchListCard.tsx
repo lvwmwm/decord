@@ -1,10 +1,10 @@
-// Module ID: 15227
-// Function ID: 114988
+// Module ID: 15234
+// Function ID: 115012
 // Name: SearchListContentAuthor
 // Dependencies: []
 // Exports: SearchListCardContainer, SearchListCardContent, SearchListCardFooter, SearchListCardThumbnail
 
-// Module 15227 (SearchListContentAuthor)
+// Module 15234 (SearchListContentAuthor)
 class SearchListContentAuthor {
   constructor(arg0) {
     author = global.author;
@@ -16,7 +16,7 @@ class SearchListContentAuthor {
     obj.avatarDecoration = author.avatarDecoration;
     items = [, ];
     items[0] = jsx(arg1(dependencyMap[5]).Avatar, obj);
-    obj1 = { 0: "<string:1895826088>", 0: "y", 0: "venmo.tokenize.desktop.success", 9223372036854775807: "<string:376504320>" };
+    obj1 = { <string:2195412908>: 1, <string:1614302748>: 22, <string:4055242192>: "exposure_tracking", <string:3322189872>: "enum" };
     obj1.style = tmp.authorName;
     obj4 = importDefault(dependencyMap[7]);
     obj1.children = obj4.getName(author);
@@ -35,16 +35,16 @@ function SearchListPrivateChannel(channel) {
     obj = { channel, size: arg1(dependencyMap[5]).AvatarSizes.SIZE_16 };
     obj.children = callback(importDefault(dependencyMap[9]), obj);
     const items = [callback(View, obj), ];
-    const obj1 = { 0: "<string:1895826088>", 0: "y", 0: "venmo.tokenize.desktop.success", 9223372036854775807: "<string:376504320>", style: tmp.channelName, children: tmp2 };
+    const obj1 = { <string:2195412908>: 1, <string:1614302748>: 22, <string:4055242192>: "exposure_tracking", <string:3322189872>: "enum", style: tmp.channelName, children: tmp2 };
     items[1] = callback(arg1(dependencyMap[6]).Text, obj1);
     obj.children = items;
     let tmp3Result = tmp3(tmp4, obj);
     const tmp15 = importDefault(dependencyMap[9]);
   } else {
     obj.style = tmp.privateChannelIcon;
-    const obj2 = { "Bool(true)": "decorationStyle", "Bool(true)": "isArrayBuffer", "Bool(true)": "<string:2635747584>", style: tmp.icon };
+    const obj2 = { style: tmp.icon };
     const items1 = [callback(arg1(dependencyMap[10]).ForumIcon, obj2), ];
-    const obj3 = { 9223372036854775807: false, 9223372036854775807: false, 9223372036854775807: false };
+    const obj3 = {};
     const intl = arg1(dependencyMap[11]).intl;
     obj3.children = intl.string(arg1(dependencyMap[11]).t.ACgJhM);
     items1[1] = callback(arg1(dependencyMap[6]).Text, obj3);
@@ -67,7 +67,7 @@ class SearchListGuildChannel {
     obj1.color = tmp.channelIcon.color;
     items = [, ];
     items[0] = jsx(arg1(dependencyMap[5]).Icon, obj1);
-    obj2 = { 0: "<string:1895826088>", 0: "y", 0: "venmo.tokenize.desktop.success", 9223372036854775807: "<string:376504320>" };
+    obj2 = { <string:2195412908>: 1, <string:1614302748>: 22, <string:4055242192>: "exposure_tracking", <string:3322189872>: "enum" };
     obj2.style = tmp.channelName;
     obj2.children = tmp2;
     items[1] = jsx(arg1(dependencyMap[6]).Text, obj2);
@@ -79,24 +79,24 @@ let closure_3 = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 ({ jsx: closure_5, jsxs: closure_6 } = arg1(dependencyMap[2]));
 let obj = arg1(dependencyMap[3]);
-obj = { channelName: { "Bool(false)": false, "Bool(false)": false } };
+obj = { channelName: { 112697466: false, -352602269: false } };
 obj = { color: importDefault(dependencyMap[4]).colors.INTERACTIVE_TEXT_DEFAULT };
 obj.channelIcon = obj;
 obj.avatar = { marginRight: 2 };
-obj.channel = { -9223372036854775808: true, filter: true };
-obj.author = { -9223372036854775808: true, filter: true };
-obj.authorName = { "Bool(false)": "Lightbox Frame", "Bool(false)": "EdgeHTML" };
-const obj1 = { type: false, component: false, key: false, itemType: false, backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_BASE_LOW };
-obj.container = obj1;
-obj.content = { GifAutoPlay: "@braintree/browser-detection/is-ios-webview", summaryContainer: "<string:3248312576>", consentRequired: "<string:44582978>" };
+obj.channel = {};
+obj.author = {};
+obj.authorName = {};
+const tmp2 = arg1(dependencyMap[2]);
+obj.container = { backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_BASE_LOW };
+obj.content = { "Bool(false)": "_handleGuildMembersChunkBatch", "Bool(false)": "<string:3664531712>", "Bool(false)": "<string:44579138>" };
 obj.footer = {};
-const obj2 = { "Bool(false)": 10, "Bool(false)": 10, borderTopRightRadius: importDefault(dependencyMap[4]).radii.lg, borderTopLeftRadius: importDefault(dependencyMap[4]).radii.lg, backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_MOD_SUBTLE, borderBottomWidth: 1, borderBottomColor: importDefault(dependencyMap[4]).colors.BORDER_SUBTLE };
+const obj2 = { 9223372036854775807: 10, 9223372036854775807: 10, borderTopRightRadius: importDefault(dependencyMap[4]).radii.lg, borderTopLeftRadius: importDefault(dependencyMap[4]).radii.lg, backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_MOD_SUBTLE, borderBottomWidth: 1, borderBottomColor: importDefault(dependencyMap[4]).colors.BORDER_SUBTLE };
 obj.thumbnail = obj2;
-obj.privateChannelIcon = { -9223372036854775808: true, filter: true };
+obj.privateChannelIcon = {};
 obj.icon = { marginRight: 4 };
 obj.gdmIcon = { width: 18 };
 let closure_7 = obj.createStyles(obj);
-const tmp2 = arg1(dependencyMap[2]);
+const obj1 = { backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_BASE_LOW };
 const result = arg1(dependencyMap[14]).fileFinishedImporting("modules/search/native/components/list/SearchListCard.tsx");
 
 export { SearchListContentAuthor };
@@ -125,7 +125,7 @@ export const SearchListCardContent = function SearchListCardContent(arg0) {
   const items = [tmp3, ];
   let tmp7 = subLabel;
   if ("string" === typeof subLabel) {
-    obj = { 9223372036854775807: "AutomodMentionRaidLimit", 9223372036854775807: "%URIError%", 9223372036854775807: "MUR", children: subLabel };
+    obj = { -9223372036854775808: "Text", 0: "jsx", 0: "parent", children: subLabel };
     tmp7 = callback(arg1(dependencyMap[6]).Text, obj);
   }
   items[1] = tmp7;

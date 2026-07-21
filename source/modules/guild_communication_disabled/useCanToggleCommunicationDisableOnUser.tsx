@@ -1,10 +1,10 @@
-// Module ID: 8162
-// Function ID: 64472
+// Module ID: 8166
+// Function ID: 64484
 // Name: canToggleCommunicationDisableOnUser
 // Dependencies: []
 // Exports: default
 
-// Module 8162 (canToggleCommunicationDisableOnUser)
+// Module 8166 (canToggleCommunicationDisableOnUser)
 function canToggleCommunicationDisableOnUser(id, id2, items) {
   let obj;
   let obj2;

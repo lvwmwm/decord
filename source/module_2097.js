@@ -4,6 +4,5 @@
 
 // Module 2097
 const _module = require(dependencyMap[0]);
-const obj = { justifyContent: "Array", flexDirection: "isArray", marginRight: "duration", columnGap: "rejectWithError", accessibilityRole: "Array", options: "isArray", scales: [24573934974154670000000000000000000000000000000000000000000000000000000000000] };
 
-export default _module.registerAsset(obj);
+export default _module.registerAsset({ scales: [15189782894321462000000000000000000000000000000000000000000000000000000000000000000] });

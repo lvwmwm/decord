@@ -1,5 +1,5 @@
 // Module ID: 8078
-// Function ID: 64074
+// Function ID: 64066
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
@@ -13,28 +13,26 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-importAll(dependencyMap[5]);
-const Image = arg1(dependencyMap[6]).Image;
-const jsx = arg1(dependencyMap[7]).jsx;
-let closure_10 = /\s+/;
+let closure_2 = importDefault(dependencyMap[0]);
+let closure_3 = importDefault(dependencyMap[1]);
+let closure_4 = importDefault(dependencyMap[2]);
+let closure_5 = importDefault(dependencyMap[3]);
+let closure_6 = importDefault(dependencyMap[4]);
+importDefault(dependencyMap[5]);
+const jsx = arg1(dependencyMap[6]).jsx;
 const tmp3 = (arg0) => {
-  class SvgImage {
+  class Filter {
     constructor() {
       self = this;
-      tmp = closure_3(this, SvgImage);
-      obj = closure_6(SvgImage);
-      tmp2 = closure_5;
-      if (closure_11()) {
+      tmp = closure_2(this, Filter);
+      obj = closure_5(Filter);
+      tmp2 = closure_4;
+      if (closure_8()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_6;
+        tmp7 = closure_5;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_6(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, closure_5(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -43,62 +41,28 @@ const tmp3 = (arg0) => {
       return tmp2(self, constructResult);
     }
   }
-  const arg1 = SvgImage;
-  callback2(SvgImage, arg0);
+  const importDefault = Filter;
+  callback2(Filter, arg0);
   const items = [
     {
       key: "render",
       value: function render() {
-        let height;
-        let href;
-        let preserveAspectRatio;
-        let tmp2;
-        let tmp3;
-        let width;
-        let x;
-        let y;
-        const SvgImage = this;
+        const Filter = this;
         const props = this.props;
-        ({ preserveAspectRatio, href } = props);
-        ({ x, y, width, height } = props);
-        if (undefined === href) {
-          href = props.xlinkHref;
-        }
-        if (preserveAspectRatio) {
-          let parts = preserveAspectRatio.trim().split(closure_10);
-          const str = preserveAspectRatio.trim();
-        } else {
-          parts = [];
-        }
-        let obj = { x, y, width, height, onLoad: props.onLoad };
-        [tmp2, tmp3] = parts;
-        obj.meetOrSlice = SvgImage(closure_2[8]).meetOrSliceTypes[tmp3] || 0;
-        const tmp4 = SvgImage(closure_2[8]).meetOrSliceTypes[tmp3] || 0;
-        obj.align = SvgImage(closure_2[8]).alignEnum[tmp2] || "xMidYMid";
-        let assetSource = null;
-        if (href) {
-          let tmp8 = href;
-          if ("string" === typeof href) {
-            obj = { uri: href };
-            tmp8 = obj;
-          }
-          assetSource = closure_8.resolveAssetSource(tmp8);
-        }
-        obj.src = assetSource;
+        let obj = { name: props.id, x: props.x, y: props.y, width: props.width, height: props.height, filterUnits: props.filterUnits, primitiveUnits: props.primitiveUnits };
         obj = {
           ref(arg0) {
             return self.refMethod(arg0);
           }
         };
-        const tmp5 = SvgImage(closure_2[8]).alignEnum[tmp2] || "xMidYMid";
-        const tmp9 = callback(closure_2[9]);
-        return callback4(tmp9, Object.assign(obj, SvgImage(closure_2[10]).withoutXY(this, props), obj));
+        obj = { children: this.props.children };
+        return callback3(Filter(closure_1[7]), Object.assign(obj, obj, obj));
       }
     }
   ];
-  return callback(SvgImage, items);
-}(importDefault(dependencyMap[11]));
-tmp3.displayName = "Image";
-tmp3.defaultProps = { -9223372036854775808: 24, 9223372036854775807: 0, -9223372036854775808: 73, -9223372036854775808: 900, -9223372036854775808: 600 };
+  return callback(Filter, items);
+}(importDefault(dependencyMap[8]));
+tmp3.displayName = "Filter";
+tmp3.defaultProps = { <string:2026807516>: false, <string:3088971555>: false, <string:1197600698>: false, <string:1225135455>: false, <string:3988534623>: false, <string:2509217581>: false };
 
 export default tmp3;

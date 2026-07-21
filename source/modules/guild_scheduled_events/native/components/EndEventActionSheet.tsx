@@ -1,21 +1,21 @@
-// Module ID: 12083
-// Function ID: 93205
+// Module ID: 12090
+// Function ID: 93228
 // Name: EndEventActionSheet
 // Dependencies: []
 // Exports: default
 
-// Module 12083 (EndEventActionSheet)
+// Module 12090 (EndEventActionSheet)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 let closure_4 = arg1(dependencyMap[2]).EXPLICIT_END_EVENT_SHEET_KEY;
 ({ jsx: closure_5, jsxs: closure_6 } = arg1(dependencyMap[4]));
 let obj = arg1(dependencyMap[5]);
 obj = { container: {} };
-obj = { ddd: 0, ind: 137439025, ty: 1452940460, fontFamily: arg1(dependencyMap[3]).Fonts.PRIMARY_BOLD, color: importDefault(dependencyMap[6]).colors.MOBILE_TEXT_HEADING_PRIMARY };
+obj = { <string:1470947939>: 0, <string:2311853906>: 137439025, <string:369845991>: 1452940460, fontFamily: arg1(dependencyMap[3]).Fonts.PRIMARY_BOLD, color: importDefault(dependencyMap[6]).colors.MOBILE_TEXT_HEADING_PRIMARY };
 obj.title = obj;
-obj.subtitle = { accessible: null, id: null };
+obj.subtitle = { "Null": null, "Null": null };
 obj.cancelButtonContainer = {};
-obj.confirmButtonContainer = { "Null": "_mixedIntoPredicates", "Null": "chart" };
+obj.confirmButtonContainer = {};
 let closure_7 = obj.createStyles(obj);
 const tmp3 = arg1(dependencyMap[4]);
 const result = arg1(dependencyMap[16]).fileFinishedImporting("modules/guild_scheduled_events/native/components/EndEventActionSheet.tsx");
@@ -55,7 +55,7 @@ export default function EndEventActionSheet(channel) {
     obj3.children = callback(arg1(dependencyMap[14]).Button, obj4);
     items[2] = callback(View, obj3);
     const obj5 = { style: tmp.confirmButtonContainer };
-    const obj6 = {};
+    const obj6 = { "Bool(true)": "RBTree", "Bool(true)": "onHide", "Bool(true)": "%ReferenceErrorPrototype%" };
     const intl4 = arg1(dependencyMap[12]).intl;
     obj6.text = intl4.string(arg1(dependencyMap[12]).t.mjB9pd);
     obj6.onPress = function onPress() {

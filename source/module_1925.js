@@ -10,9 +10,9 @@ if (!_module) {
   obj = _module;
 }
 obj = {};
-obj.date = obj.default({ formats: {}, defaultWidth: "full" });
-obj.time = obj.default({ formats: { "Bool(false)": "<string:1833107712>", "Bool(false)": "<string:1811939676>", "Bool(false)": "<string:2315256156>", "Bool(false)": "<string:1090519508>" }, defaultWidth: "full" });
-obj.dateTime = obj.default({ formats: { "Bool(false)": "accent", "Bool(false)": true, "Bool(false)": "/assets/.cache/intl/ZGVzaWdu", "Bool(false)": null }, defaultWidth: "full" });
+obj.date = obj.default({ formats: { "Null": 1124139009, "Null": 111746, "Null": 111745, "Null": 119741 }, defaultWidth: "full" });
+obj.time = obj.default({ formats: { "Null": "short", "Null": "UTC", "Null": null, "Null": null }, defaultWidth: "full" });
+obj.dateTime = obj.default({ formats: {}, defaultWidth: "full" });
 
 export default obj;
 export default exports.default;

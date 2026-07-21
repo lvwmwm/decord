@@ -1,10 +1,10 @@
-// Module ID: 13812
-// Function ID: 104473
+// Module ID: 13819
+// Function ID: 104496
 // Name: BountiesModalEndedCtaButtons
 // Dependencies: []
 // Exports: default
 
-// Module 13812 (BountiesModalEndedCtaButtons)
+// Module 13819 (BountiesModalEndedCtaButtons)
 const _module = require(dependencyMap[0]);
 ({ jsx: closure_3, jsxs: closure_4 } = _module);
 const _module1 = require(dependencyMap[1]);
@@ -67,7 +67,7 @@ export default function BountiesModalEndedCtaButtons(bounty) {
     const items1 = [callback(require(dependencyMap[8]).Button, obj1), ];
     let tmp10 = null;
     if (showCloseButton) {
-      const obj2 = { alignSelf: null, overflow: 0, aspectRatio: 491 };
+      const obj2 = {};
       const intl = require(dependencyMap[13]).intl;
       obj2.text = intl.string(require(dependencyMap[13]).t.cpT0Cq);
       obj2.disabled = flag;

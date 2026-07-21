@@ -1,9 +1,9 @@
-// Module ID: 6000
-// Function ID: 49874
+// Module ID: 6002
+// Function ID: 49917
 // Name: metadata
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 6000 (metadata)
+// Module 6002 (metadata)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/DiscordQuestsLockupLogo-2x.png.js");
 

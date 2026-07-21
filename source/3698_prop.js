@@ -10,11 +10,11 @@ if (Intl.ListFormat) {
     const _Intl2 = Intl;
     let obj = {};
     obj = {};
-    obj = { long: { -33553176: "<string:1275069300>", -889191202: "<string:1140851572>", -1023408923: "{0}\u6216{1}", -905968411: "{0}\u3001{1}" }, narrow: { -33553176: "ToString", -889191202: "sdh-IQ", -1023408923: "ToString", -905968411: "CUP" }, short: { -33553176: "<string:1275069300>", -889191202: "<string:1140851572>", -1023408923: "{0}\u6216{1}", -905968411: "{0}\u3001{1}" } };
+    obj = { long: { "Bool(false)": "content", "Bool(false)": "a", "Bool(false)": "isArray", "Bool(false)": "channel" }, narrow: { "Bool(false)": -1811938582, "Bool(false)": 1140851434, "Bool(false)": 191123, "Bool(false)": 191124 }, short: { "Bool(false)": "content", "Bool(false)": "a", "Bool(false)": "isArray", "Bool(false)": "channel" } };
     obj.conjunction = obj;
-    const obj1 = { long: {}, narrow: {}, short: {} };
+    const obj1 = { long: { "Bool(false)": "content", "Bool(false)": "a", "Bool(false)": "isArray", "Bool(false)": "channel" }, narrow: { "Bool(false)": "content", "Bool(false)": "a", "Bool(false)": "isArray", "Bool(false)": "channel" }, short: { "Bool(false)": "content", "Bool(false)": "a", "Bool(false)": "isArray", "Bool(false)": "channel" } };
     obj.disjunction = obj1;
-    const obj2 = { long: { -33553176: "<string:1275069300>", -889191202: "<string:1140851572>", -1023408923: "{0}, \u0914\u0930 {1}", -905968411: "{0}, {1}" }, narrow: { -33553176: "ToString", -889191202: "sdh-IQ", -1023408923: "ToString", -905968411: "CUP" }, short: { -33553176: "ToString", -889191202: "sdh-IQ", -1023408923: "ToString", -905968411: "CUP" } };
+    const obj2 = { long: { "Bool(false)": "content", "Bool(false)": "a", "Bool(false)": "isArray", "Bool(false)": "channel" }, narrow: { "Bool(false)": -1811938582, "Bool(false)": 1140851434, "Bool(false)": 191123, "Bool(false)": 191124 }, short: { "Bool(false)": -1811938582, "Bool(false)": 1140851434, "Bool(false)": 191123, "Bool(false)": 191124 } };
     obj.unit = obj2;
     obj.data = obj;
     obj.locale = "ro";
@@ -26,4 +26,4 @@ if (!prop) {
   prop = [];
 }
 globalThis.__FORMATJS_LISTFORMAT_DATA__ = prop;
-prop.push({ data: { conjunction: { long: { -33553176: "<string:1275069300>", -889191202: "<string:1140851572>", -1023408923: "{0}\u6216{1}", -905968411: "{0}\u3001{1}" }, narrow: { -33553176: "ToString", -889191202: "sdh-IQ", -1023408923: "ToString", -905968411: "CUP" }, short: { -33553176: "<string:1275069300>", -889191202: "<string:1140851572>", -1023408923: "{0}\u6216{1}", -905968411: "{0}\u3001{1}" } }, disjunction: { long: {}, narrow: {}, short: {} }, unit: { long: { -33553176: "<string:1275069300>", -889191202: "<string:1140851572>", -1023408923: "{0}, \u0914\u0930 {1}", -905968411: "{0}, {1}" }, narrow: { -33553176: "ToString", -889191202: "sdh-IQ", -1023408923: "ToString", -905968411: "CUP" }, short: { -33553176: "ToString", -889191202: "sdh-IQ", -1023408923: "ToString", -905968411: "CUP" } } }, locale: "ro" });
+prop.push({ data: { conjunction: { long: { "Bool(false)": "content", "Bool(false)": "a", "Bool(false)": "isArray", "Bool(false)": "channel" }, narrow: { "Bool(false)": -1811938582, "Bool(false)": 1140851434, "Bool(false)": 191123, "Bool(false)": 191124 }, short: { "Bool(false)": "content", "Bool(false)": "a", "Bool(false)": "isArray", "Bool(false)": "channel" } }, disjunction: { long: { "Bool(false)": "content", "Bool(false)": "a", "Bool(false)": "isArray", "Bool(false)": "channel" }, narrow: { "Bool(false)": "content", "Bool(false)": "a", "Bool(false)": "isArray", "Bool(false)": "channel" }, short: { "Bool(false)": "content", "Bool(false)": "a", "Bool(false)": "isArray", "Bool(false)": "channel" } }, unit: { long: { "Bool(false)": "content", "Bool(false)": "a", "Bool(false)": "isArray", "Bool(false)": "channel" }, narrow: { "Bool(false)": -1811938582, "Bool(false)": 1140851434, "Bool(false)": 191123, "Bool(false)": 191124 }, short: { "Bool(false)": -1811938582, "Bool(false)": 1140851434, "Bool(false)": 191123, "Bool(false)": 191124 } } }, locale: "ro" });

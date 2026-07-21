@@ -1,10 +1,10 @@
-// Module ID: 8921
-// Function ID: 70370
+// Module ID: 8925
+// Function ID: 70382
 // Name: useGameConsoleAccounts
 // Dependencies: []
 // Exports: default
 
-// Module 8921 (useGameConsoleAccounts)
+// Module 8925 (useGameConsoleAccounts)
 let closure_2 = importDefault(dependencyMap[0]);
 const PlatformTypes = arg1(dependencyMap[1]).PlatformTypes;
 const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/game_console/useGameConsoleAccounts.tsx");

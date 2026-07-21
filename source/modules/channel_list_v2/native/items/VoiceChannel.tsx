@@ -1,9 +1,9 @@
-// Module ID: 14923
-// Function ID: 112355
+// Module ID: 14930
+// Function ID: 112379
 // Name: _handleVoiceChannelPress
 // Dependencies: []
 
-// Module 14923 (_handleVoiceChannelPress)
+// Module 14930 (_handleVoiceChannelPress)
 function _handleVoiceChannelPress() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
@@ -23,7 +23,7 @@ const jsx = arg1(dependencyMap[10]).jsx;
 let obj = {};
 obj = { gap: importDefault(dependencyMap[11]).space.PX_8 };
 obj.channelInfo = obj;
-obj.voiceStates = { accessibilityLabel: false, maxFontSizeMultiplier: false, onPressIn: false };
+obj.voiceStates = { left: false, body: false, duration: false };
 obj.voiceStatesCollapsed = { marginLeft: 16 };
 const tmp2 = arg1(dependencyMap[9]);
 obj.container = { marginVertical: arg1(dependencyMap[8]).CHANNEL_MARGIN_VERTICAL, marginHorizontal: 8, borderRadius: importDefault(dependencyMap[11]).radii.md };
@@ -133,7 +133,7 @@ let closure_15 = importAllResult.memo((channel) => {
   let tmp20 = null;
   if (0 !== ensureSyncedChannelVoiceStates.length) {
     if (collapsed) {
-      obj2 = { GuildRoleSubscriptionTierDesignTab: "Normal", SEND_AS_GIFT: true, ENABLE_COMMUNITY_FLOW_MODAL_KEY: "AbortSignal" };
+      obj2 = { paddingVertical: null, position: "\u{1F9BB}\u{1F3FF}", flex: true };
       const items3 = [channel];
       obj2.channels = items3;
       obj3 = {};

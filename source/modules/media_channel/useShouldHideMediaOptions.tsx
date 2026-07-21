@@ -1,10 +1,10 @@
-// Module ID: 9524
-// Function ID: 74198
+// Module ID: 9529
+// Function ID: 74214
 // Name: useShouldHideMediaOptions
 // Dependencies: []
 // Exports: default
 
-// Module 9524 (useShouldHideMediaOptions)
+// Module 9529 (useShouldHideMediaOptions)
 let closure_2 = importDefault(dependencyMap[0]);
 const ChannelFlags = arg1(dependencyMap[1]).ChannelFlags;
 const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/media_channel/useShouldHideMediaOptions.tsx");

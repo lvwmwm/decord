@@ -1,10 +1,10 @@
-// Module ID: 6271
-// Function ID: 50280
+// Module ID: 6273
+// Function ID: 50323
 // Name: LavaIllocon
 // Dependencies: []
 // Exports: LavaIllocon
 
-// Module 6271 (LavaIllocon)
+// Module 6273 (LavaIllocon)
 const jsx = require(dependencyMap[0]).jsx;
 const _module = require(dependencyMap[3]);
 const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/LavaIllocon.native.tsx");

@@ -1,10 +1,10 @@
-// Module ID: 11502
-// Function ID: 89641
+// Module ID: 11509
+// Function ID: 89665
 // Name: guildPowerupsAckNotification
 // Dependencies: []
 // Exports: disablePowerupForGuild, enablePowerupForGuild, fetchGuildBoostEntitlements, fetchPowerupCatalogForGuild, guildPowerupsAckNotification, guildPowerupsResetNotifications
 
-// Module 11502 (guildPowerupsAckNotification)
+// Module 11509 (guildPowerupsAckNotification)
 const _module = require(dependencyMap[0]);
 ({ GUILD_POWERUP_APPLICATION_ID: closure_3, GuildPowerupType: closure_4 } = _module);
 const Endpoints = require(dependencyMap[1]).Endpoints;

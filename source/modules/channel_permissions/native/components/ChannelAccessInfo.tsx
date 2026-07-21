@@ -1,10 +1,10 @@
-// Module ID: 11486
-// Function ID: 89478
+// Module ID: 11493
+// Function ID: 89502
 // Name: ChannelAccessInfo
 // Dependencies: []
 // Exports: default
 
-// Module 11486 (ChannelAccessInfo)
+// Module 11493 (ChannelAccessInfo)
 let closure_3 = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 const isGuildOwner = arg1(dependencyMap[2]).isGuildOwner;
@@ -15,7 +15,7 @@ let obj = arg1(dependencyMap[6]);
 obj = {};
 obj = { backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_SURFACE_HIGH, borderRadius: importDefault(dependencyMap[7]).radii.sm, color: importDefault(dependencyMap[7]).colors.TEXT_DEFAULT };
 obj.section = obj;
-obj.sectionContent = { 1652020561: "isArray", -1973327367: "constructor", -1164930477: "apply" };
+obj.sectionContent = { YOUTUBE_EMBED_PAGE_TYPE: "isArray", EgvHH/: "constructor", damping: "apply" };
 obj.avatar = { marginRight: 8 };
 obj.labelDetail = { marginRight: 12 };
 obj.sectionIcon = { marginRight: 6 };

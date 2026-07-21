@@ -1,10 +1,10 @@
-// Module ID: 7576
-// Function ID: 60574
+// Module ID: 7580
+// Function ID: 60586
 // Name: useStageBlockedUsersCount
 // Dependencies: []
 // Exports: getStageBlockedUsersCount, getStageIgnoredUsersCount, useStageBlockedUsers, useStageBlockedUsersCount, useStageIgnoredUsers, useStageIgnoredUsersCount
 
-// Module 7576 (useStageBlockedUsersCount)
+// Module 7580 (useStageBlockedUsersCount)
 let closure_2 = importDefault(dependencyMap[0]);
 const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/stage_channels/useStageBlockedUsersCount.tsx");
 

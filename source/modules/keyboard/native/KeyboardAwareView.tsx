@@ -1,9 +1,9 @@
-// Module ID: 5583
-// Function ID: 47337
+// Module ID: 5585
+// Function ID: 47379
 // Name: getKeyboardHeightWithOffset
 // Dependencies: []
 
-// Module 5583 (getKeyboardHeightWithOffset)
+// Module 5585 (getKeyboardHeightWithOffset)
 function getKeyboardHeightWithOffset(style) {
   let systemKeyboardHeight = arg1(dependencyMap[5]).getSystemKeyboardHeight();
   if (0 === systemKeyboardHeight) {

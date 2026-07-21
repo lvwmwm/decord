@@ -1,9 +1,9 @@
-// Module ID: 5397
-// Function ID: 46000
+// Module ID: 5399
+// Function ID: 46041
 // Name: GuildProfileVisibility
 // Dependencies: []
 
-// Module 5397 (GuildProfileVisibility)
+// Module 5399 (GuildProfileVisibility)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("modules/guild_profile/GuildProfileTypes.tsx");
 

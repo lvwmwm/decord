@@ -1,17 +1,17 @@
-// Module ID: 16431
-// Function ID: 126939
+// Module ID: 16438
+// Function ID: 126973
 // Name: ParentalConsentConnectionNavbar
 // Dependencies: []
 // Exports: ParentalConsentConnectionNavbar
 
-// Module 16431 (ParentalConsentConnectionNavbar)
+// Module 16438 (ParentalConsentConnectionNavbar)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 let closure_4 = importDefault(dependencyMap[2]);
 ({ jsx: closure_5, jsxs: closure_6 } = arg1(dependencyMap[3]));
 let obj = arg1(dependencyMap[4]);
 obj = {};
-obj = { "Null": 671678465, "Null": 812843010, "Null": 805306368, "Null": 33554432, height: arg1(dependencyMap[5]).NAV_BAR_HEIGHT, paddingHorizontal: importDefault(dependencyMap[6]).space.PX_16 };
+obj = { height: arg1(dependencyMap[5]).NAV_BAR_HEIGHT, paddingHorizontal: importDefault(dependencyMap[6]).space.PX_16 };
 obj.row = obj;
 const tmp3 = arg1(dependencyMap[3]);
 obj.logOut = { position: "absolute", left: importDefault(dependencyMap[6]).space.PX_16 };
@@ -44,7 +44,7 @@ export const ParentalConsentConnectionNavbar = function ParentalConsentConnectio
   const items1 = [callback(arg1(dependencyMap[9]).Text, obj1), ];
   let tmp6 = null != stateFromStores;
   if (tmp6) {
-    const obj2 = { children: stateFromStores };
+    const obj2 = { alignItems: true, justifyContent: true, backgroundColor: true, children: stateFromStores };
     tmp6 = callback(arg1(dependencyMap[9]).Text, obj2);
   }
   items1[1] = tmp6;

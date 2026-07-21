@@ -1,9 +1,9 @@
-// Module ID: 5223
-// Function ID: 44145
+// Module ID: 5225
+// Function ID: 44186
 // Name: NavScrim
 // Dependencies: []
 
-// Module 5223 (NavScrim)
+// Module 5225 (NavScrim)
 const tmp2 = arg1(dependencyMap[1]);
 const View = tmp2.View;
 const jsx = arg1(dependencyMap[2]).jsx;

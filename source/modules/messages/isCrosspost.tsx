@@ -1,10 +1,10 @@
-// Module ID: 7712
-// Function ID: 61401
+// Module ID: 7716
+// Function ID: 61413
 // Name: isCrosspost
 // Dependencies: []
 // Exports: default
 
-// Module 7712 (isCrosspost)
+// Module 7716 (isCrosspost)
 const _module = require(dependencyMap[0]);
 ({ MessageFlags: closure_2, MessageReferenceTypes: closure_3, MessageTypes: closure_4 } = _module);
 const _module1 = require(dependencyMap[2]);

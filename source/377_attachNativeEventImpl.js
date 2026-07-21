@@ -1,12 +1,9 @@
 // Module ID: 377
 // Function ID: 5620
 // Name: attachNativeEventImpl
-// Dependencies: [57, 31, 79, 147, 358, 377, 375]
+// Dependencies: []
 
 // Module 377 (attachNativeEventImpl)
-import _slicedToArray from "_slicedToArray";
-import module_31 from "module_31";
-
 function attachNativeEventImpl(arg0, arg1, arg2, arg3) {
   const importDefault = arg3;
   const items = [];
@@ -22,12 +19,12 @@ function attachNativeEventImpl(arg0, arg1, arg2, arg3) {
     } else if ("object" === typeof nativeEvent) {
       for (const key10017 in arg0) {
         let tmp11 = key10017;
-        let tmp12 = _slicedToArray;
-        let tmp13 = _slicedToArray(arg0[key10017], arg1.concat(key10017));
+        let tmp12 = closure_3;
+        let tmp13 = closure_3(arg0[key10017], arg1.concat(key10017));
       }
     }
   }
-  let _slicedToArray = traverse;
+  let closure_3 = traverse;
   let nativeEvent = arg2[0];
   if (nativeEvent) {
     nativeEvent = arg2[0].nativeEvent;
@@ -36,7 +33,7 @@ function attachNativeEventImpl(arg0, arg1, arg2, arg3) {
   traverse(arg2[0].nativeEvent, []);
   let obj = arg1(dependencyMap[5]);
   const findNodeHandleResult = obj.findNodeHandle(arg0);
-  let module_31 = findNodeHandleResult;
+  let closure_4 = findNodeHandleResult;
   if (null != findNodeHandleResult) {
     const item = items.forEach((arg0) => {
       const API = arg3(items[6]).API;
@@ -48,13 +45,15 @@ function attachNativeEventImpl(arg0, arg1, arg2, arg3) {
       if (null != findNodeHandleResult) {
         const item = items.forEach((animatedValueTag) => {
           const API = callback(closure_2[6]).API;
-          const result = API.removeAnimatedEventFromView(module_31, closure_0, animatedValueTag.animatedValueTag);
+          const result = API.removeAnimatedEventFromView(closure_4, closure_0, animatedValueTag.animatedValueTag);
         });
       }
     }
   };
   return obj;
 }
+let closure_3 = importDefault(dependencyMap[0]);
+let closure_4 = importDefault(dependencyMap[1]);
 
 export { attachNativeEventImpl };
 export const AnimatedEvent = () => {
@@ -63,7 +62,7 @@ export const AnimatedEvent = () => {
       tmp = arg1;
       self = this;
       AnimatedEvent = this;
-      tmp2 = _slicedToArray(this, AnimatedEvent);
+      tmp2 = closure_3(this, AnimatedEvent);
       this._listeners = [];
       this._callListeners = () => {
         const length = arguments.length;

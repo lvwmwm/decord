@@ -12,12 +12,12 @@ function getOverlayStreamerModeConfig(OVERLAY_INITIALIZED) {
   return apexExperiment2.getConfig({ location: OVERLAY_INITIALIZED });
 }
 const _module = require(dependencyMap[0]);
-let obj = { -1269606814: false, -1845285747: false, defaultConfig: { keybindOverride: undefined }, variations: { [1]: { keybindOverride: "ctrl+tab" }, [2]: { keybindOverride: "alt+x" }, [3]: { keybindOverride: "ctrl+l" } } };
+let obj = { 9223372036854775807: 49419008, 0: 49419008, defaultConfig: { keybindOverride: undefined }, variations: { [1]: { keybindOverride: "ctrl+tab" }, [2]: { keybindOverride: "alt+x" }, [3]: { keybindOverride: "ctrl+l" } } };
 const apexExperiment = _module.createApexExperiment(obj);
 const _module1 = require(dependencyMap[0]);
-const apexExperiment1 = _module1.createApexExperiment({ defaultConfig: { "Bool(true)": true, "Bool(true)": false, "Bool(true)": false }, variations: { [1]: {}, [2]: {}, [3]: {} } });
+const apexExperiment1 = _module1.createApexExperiment({ defaultConfig: { <string:1368088983>: true, <string:2940311336>: false, <string:1644168321>: false }, variations: { [1]: { <string:1368088983>: true, <string:2940311336>: true, <string:1644168321>: true }, [2]: { <string:1368088983>: true, <string:2940311336>: true, <string:1644168321>: true }, [3]: {} } });
 const _module2 = require(dependencyMap[0]);
-obj = { -1269606814: "1 Month", -1845285747: "all", defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } };
+obj = { 9223372036854775807: "canary", 0: "canary", defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } };
 const apexExperiment2 = _module2.createApexExperiment(obj);
 const _module3 = require(dependencyMap[1]);
 const result = _module3.fileFinishedImporting("modules/overlay/OverlayV3Experiment.tsx");

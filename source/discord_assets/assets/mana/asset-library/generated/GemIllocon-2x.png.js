@@ -1,9 +1,9 @@
-// Module ID: 6156
-// Function ID: 50108
+// Module ID: 6158
+// Function ID: 50151
 // Name: metadata
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 6156 (metadata)
+// Module 6158 (metadata)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/GemIllocon-2x.png.js");
 

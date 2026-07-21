@@ -1,22 +1,22 @@
-// Module ID: 16253
-// Function ID: 125555
+// Module ID: 16260
+// Function ID: 125586
 // Name: getGreenTextStyle
 // Dependencies: [0, 0, 4294967295, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 // Exports: default
 
-// Module 16253 (getGreenTextStyle)
-import "result";
-import { View } from "result";
-import result from "result";
-import result from "result";
-import result from "result";
+// Module 16260 (getGreenTextStyle)
+import "__exportStarResult1";
+import { View } from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
 
 function getGreenTextStyle(greenTextDarkMode, arg1) {
   return arg1(dependencyMap[6]).isThemeDark(arg1) ? greenTextDarkMode.greenTextDarkMode : greenTextDarkMode.greenTextLightMode;
 }
 function EarningPreview() {
   const tmp = importDefault(dependencyMap[7])();
-  const tmp2 = result();
+  const tmp2 = __exportStarResult1();
   let obj = {};
   const items = [tmp2.earningMetricsShadowContainer, ];
   let obj1 = arg1(dependencyMap[6]);
@@ -29,7 +29,7 @@ function EarningPreview() {
   items1[2] = obj3.isThemeDark(tmp) ? tmp2.earningMetricsDarkMode : tmp2.earningMetricsLightMode;
   obj.style = items1;
   obj = {};
-  obj1 = { INTEGRATION_CREATE: false, ConstraintReasonCode: false };
+  obj1 = {};
   const intl = arg1(dependencyMap[9]).intl;
   obj1.children = intl.string(arg1(dependencyMap[9]).t.TXPK7B);
   const items2 = [callback(arg1(dependencyMap[8]).Text, obj1), ];
@@ -52,7 +52,7 @@ function EarningPreview() {
   return tmp3(tmp4, obj);
 }
 function ConsistentEarningBenefit() {
-  const tmp2 = result();
+  const tmp2 = __exportStarResult1();
   let obj = { style: tmp2.benefitCard };
   obj = { style: tmp2.benefitCardTitle };
   const intl = arg1(dependencyMap[9]).intl;
@@ -86,7 +86,7 @@ function ConsistentEarningBenefit() {
   return tmp3(tmp4, obj);
 }
 function FollowerAwardBenefit() {
-  const tmp = result();
+  const tmp = __exportStarResult1();
   let obj = { style: tmp.benefitCard };
   obj = { style: tmp.benefitCardTitle };
   const intl = arg1(dependencyMap[9]).intl;
@@ -102,11 +102,11 @@ function FollowerAwardBenefit() {
   return callback2(View, obj);
 }
 function RevenueShareBenefit() {
-  const tmp2 = result();
+  const tmp2 = __exportStarResult1();
   let obj = { style: items };
   const items = [, ];
   ({ benefitCard: arr[0], revenueShareContainer: arr[1] } = tmp2);
-  obj = { Promise: null, marginTop: "676cd159b1913e0ab2a481c3bd4a0b5c", flags: "role_subscription_earning_illo" };
+  obj = { "Null": null, "Null": "676cd159b1913e0ab2a481c3bd4a0b5c", "Null": "role_subscription_earning_illo" };
   const items1 = [tmp2.revenueShare, getGreenTextStyle(tmp2, importDefault(dependencyMap[7])())];
   obj.style = items1;
   obj.children = `${closure_4}%`;
@@ -123,41 +123,41 @@ function RevenueShareBenefit() {
   return callback2(View, obj);
 }
 function BenefitAvatar(avatarSource) {
-  const tmp = result();
+  const tmp = __exportStarResult1();
   let obj = { style: tmp.benefitAvatarContainer, children: callback(importDefault(dependencyMap[10]), obj) };
   obj = { source: avatarSource.avatarSource, style: tmp.benefitAvatar };
   return callback(View, obj);
 }
 let closure_4 = arg1(dependencyMap[2]).CREATOR_REVENUE_SHARE_PERCENTAGE;
-({ jsx: closure_5, jsxs: closure_6 } = result);
-result = { horizontalContainer: { "Bool(false)": "<string:1783693314>", "Bool(false)": "<string:618889>" } };
-result = { padding: 20, backgroundColor: require("result").colors.BACKGROUND_BASE_LOW, borderRadius: require("result").radii.sm, overflow: "hidden" };
-result.benefitAvatarContainer = result;
-result.benefitCard = { marginVertical: 6, backgroundColor: require("result").colors.BACKGROUND_SURFACE_HIGH, borderRadius: require("result").radii.sm };
-result.benefitAvatar = { DISCOVER_POPULAR: true, canConnect: "/assets/modules/guild_role_subscriptions/native/guild_settings/welcome/images", GuildRoleSubscriptionMemberPreview: 40, RowButtonIconProps: 40.5, TABLE_ROW_LABEL_COLOR: null };
-result.benefitAvatars = { onPress: null, onTrackPress: "e3602af71cc76e8c04bf027b54c9843f", position: "role_subscription_benefit_nelly_avatar" };
-result.benefitCardTitle = { 0: "/assets/modules/guild_role_subscriptions/native/guild_settings/welcome/images", 0: 138, 0: 92.5 };
-const obj1 = { marginVertical: 6, backgroundColor: require("result").colors.BACKGROUND_SURFACE_HIGH, borderRadius: require("result").radii.sm };
-result.earningMetricsShadowContainer = { shadowColor: require("result").colors.BLACK, shadowOffset: {} };
-result.earningMetricsShadowContainerDarkMode = { shadowOpacity: 0.24 };
-const obj2 = { shadowColor: require("result").colors.BLACK, shadowOffset: {} };
-result.earningMetrics = { borderRadius: require("result").radii.sm };
-result.earningMetricsDarkMode = { backgroundColor: "#2E3638" };
-const obj3 = { borderRadius: require("result").radii.sm };
-result.earningMetricsLightMode = { backgroundColor: require("result").colors.BACKGROUND_BASE_LOW };
-const obj4 = { backgroundColor: require("result").colors.BACKGROUND_BASE_LOW };
-result.greenTextDarkMode = { color: require("result").unsafe_rawColors.GREEN_230 };
-const obj5 = { color: require("result").unsafe_rawColors.GREEN_230 };
-result.greenTextLightMode = { color: require("result").unsafe_rawColors.GREEN_400 };
-result.earningMetricsAvatar = { "Bool(false)": true, "Bool(false)": "/assets/modules/guild_role_subscriptions/native/guild_settings/welcome/images", "Bool(false)": 159, "Bool(false)": 105.5 };
-result.socialIllo = {};
-result.lanyardIllo = {};
-result.revenueShare = {};
-result.revenueShareContainer = { padding: 24 };
-result.revenueShareIllo = { "Null": "String", "Null": "isArray" };
-result.revenueShareDescription = { marginEnd: 120 };
-result = result.createStyles(result);
-result = result.fileFinishedImporting("modules/guild_role_subscriptions/native/guild_settings/welcome/CreatorBenefitsSection.tsx");
+({ jsx: closure_5, jsxs: closure_6 } = __exportStarResult1);
+__exportStarResult1 = { horizontalContainer: {} };
+__exportStarResult1 = { padding: 20, backgroundColor: require("__exportStarResult1").colors.BACKGROUND_BASE_LOW, borderRadius: require("__exportStarResult1").radii.sm, overflow: "hidden" };
+__exportStarResult1.benefitAvatarContainer = __exportStarResult1;
+__exportStarResult1.benefitCard = { marginVertical: 6, backgroundColor: require("__exportStarResult1").colors.BACKGROUND_SURFACE_HIGH, borderRadius: require("__exportStarResult1").radii.sm };
+__exportStarResult1.benefitAvatar = { 9223372036854775807: true, 9223372036854775807: "/assets/modules/guild_role_subscriptions/native/guild_settings/welcome/images", 0: 40, 9223372036854775807: 40.5, 0: null };
+__exportStarResult1.benefitAvatars = { "Null": null, "Null": "e3602af71cc76e8c04bf027b54c9843f", "Null": "role_subscription_benefit_nelly_avatar" };
+__exportStarResult1.benefitCardTitle = { backdropOpacity: "/assets/modules/guild_role_subscriptions/native/guild_settings/welcome/images", startExpanded: 138, fontSize: 92.5 };
+const obj1 = { marginVertical: 6, backgroundColor: require("__exportStarResult1").colors.BACKGROUND_SURFACE_HIGH, borderRadius: require("__exportStarResult1").radii.sm };
+__exportStarResult1.earningMetricsShadowContainer = { shadowColor: require("__exportStarResult1").colors.BLACK, shadowOffset: {} };
+__exportStarResult1.earningMetricsShadowContainerDarkMode = { shadowOpacity: 0.24 };
+const obj3 = { y: 1, extractMessage: 8, DEPRECATED_SIZE_60: 16, getChannelUnreadSetting: "flex", y: "row", 0: null, -9223372036854775808: null, borderRadius: require("__exportStarResult1").radii.sm };
+__exportStarResult1.earningMetrics = obj3;
+__exportStarResult1.earningMetricsDarkMode = { backgroundColor: "#2E3638" };
+const obj2 = { shadowColor: require("__exportStarResult1").colors.BLACK, shadowOffset: {} };
+__exportStarResult1.earningMetricsLightMode = { backgroundColor: require("__exportStarResult1").colors.BACKGROUND_BASE_LOW };
+const obj4 = { backgroundColor: require("__exportStarResult1").colors.BACKGROUND_BASE_LOW };
+__exportStarResult1.greenTextDarkMode = { color: require("__exportStarResult1").unsafe_rawColors.GREEN_230 };
+const obj5 = { color: require("__exportStarResult1").unsafe_rawColors.GREEN_230 };
+__exportStarResult1.greenTextLightMode = { color: require("__exportStarResult1").unsafe_rawColors.GREEN_400 };
+__exportStarResult1.earningMetricsAvatar = { <string:1560008803>: true, <string:1454034021>: "/assets/modules/guild_role_subscriptions/native/guild_settings/welcome/images", <string:1095934203>: 159, <string:1629995303>: 105.5 };
+__exportStarResult1.socialIllo = {};
+__exportStarResult1.lanyardIllo = {};
+__exportStarResult1.revenueShare = {};
+__exportStarResult1.revenueShareContainer = { padding: 24 };
+__exportStarResult1.revenueShareIllo = { "Bool(true)": "String", "Bool(true)": "isArray" };
+__exportStarResult1.revenueShareDescription = { marginEnd: 120 };
+__exportStarResult1 = __exportStarResult1.createStyles(__exportStarResult1);
+const result = __exportStarResult1.fileFinishedImporting("modules/guild_role_subscriptions/native/guild_settings/welcome/CreatorBenefitsSection.tsx");
 
 export default function CreatorBenefitsSection() {
   const obj = {};

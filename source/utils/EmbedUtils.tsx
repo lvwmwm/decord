@@ -1,10 +1,10 @@
-// Module ID: 4456
-// Function ID: 39284
+// Module ID: 4460
+// Function ID: 39332
 // Name: validateSize
 // Dependencies: []
 // Exports: canEmbedLinks, getEffectiveVideoProvider, getMaxEmbedMediaSize, isCollectiblesShopArticleEmbed, isEmbedInline, isGameProfileArticleEmbed, isServerShopArticleEmbed, isSocialLayerStorefrontArticleEmbed, mergeEmbedsOnURL, sanitizeEmbed, shouldStripEmbeds
 
-// Module 4456 (validateSize)
+// Module 4460 (validateSize)
 function validateSize(video) {
   return video.width > 0 && video.height > 0;
 }
@@ -303,7 +303,7 @@ export const getMaxEmbedMediaSize = function getMaxEmbedMediaSize(provider, maxM
   if (null != provider) {
     name = provider.name;
   }
-  tmp2 = "TikTok" === name ? { "Bool(true)": "100%", "Bool(true)": 40 } : { "Bool(true)": "showAllButtonUnderline", "Bool(true)": "sEAnVH" };
+  tmp2 = "TikTok" === name ? {} : {};
 };
 export const canEmbedLinks = function canEmbedLinks(closure_1, closure_9) {
   if (closure_1.isPrivate()) {

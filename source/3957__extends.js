@@ -417,7 +417,7 @@ const tmp7 = (Component) => {
   const dependencyMap = fn;
   _inheritsLoose(fn, Component);
   fn.computeRootMatch = (arg0) => {
-    const obj = { isButtonVisible: "<string:3661692930>", isScreenshotButtonVisible: "<string:1627390431>", params: {}, isExact: "/" === arg0 };
+    const obj = { "Null": "Array", "Null": "isArray", params: {}, isExact: "/" === arg0 };
     return obj;
   };
   const prototype = fn.prototype;
@@ -738,7 +738,7 @@ export const StaticRouter = (Component) => {
       },
       action: "POP"
     };
-    const tmp = callback2(props, [-167101144792825770000000000000000000000000000000000000000000000000000000000000000000000000, -4272005948271988000000000000000000000000000000000000000000000000000000000000000000000000000000000, -18348125972848825000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000]);
+    const tmp = callback2(props, []);
     obj.location = callback4(str, arg0(closure_1[7]).createLocation(str2));
     ({ handlePush: obj2.push, handleReplace: obj2.replace } = self);
     obj.go = callback6();
@@ -816,7 +816,7 @@ export const withRouter = function withRouter(displayName) {
   const require = displayName;
   const fn = function t(wrappedComponentRef) {
     wrappedComponentRef = wrappedComponentRef.wrappedComponentRef;
-    let closure_1 = callback(wrappedComponentRef, [null]);
+    let closure_1 = callback(wrappedComponentRef, ["<string:1115553793>"]);
     return <Consumer.Consumer>{(arg0) => {
       if (!arg0) {
         callback(false);

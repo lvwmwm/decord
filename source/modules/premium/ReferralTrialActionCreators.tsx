@@ -1,10 +1,10 @@
-// Module ID: 6679
-// Function ID: 51467
+// Module ID: 6685
+// Function ID: 51516
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 // Exports: createReferralTrial, createReferralTrials, fetchReferralEligibleUsers, fetchReferralsRemaining, resolveReferralTrialOffer
 
-// Module 6679 (_createForOfIteratorHelperLoose)
+// Module 6685 (_createForOfIteratorHelperLoose)
 function _createForOfIteratorHelperLoose(@@iterator) {
   let arg1 = Symbol_iterator;
   @@iterator = "undefined" !== typeof Symbol;
@@ -119,7 +119,7 @@ async function _createReferralTrials(arg0, arg1) {
   if (!iter.done) {
     const value = iter2.value;
     const HTTP = callback(closure_2[6]).HTTP;
-    obj = { CONVERSATIONS: null, replace: null, push: null, url: closure_9.CREATE_REFERRAL(value) };
+    obj = { lc: null, type: null, end: null, url: closure_9.CREATE_REFERRAL(value) };
     while (true) {
       let body = yield tmp6(obj).body;
       let tmp9 = body;
@@ -153,7 +153,7 @@ async function _createReferralTrials(arg0, arg1) {
 }
 async function _createReferralTrial(value, arg1) {
   const HTTP = callback(closure_2[6]).HTTP;
-  let obj = { CONVERSATIONS: null, replace: null, push: null, url: closure_9.CREATE_REFERRAL(value) };
+  let obj = { lc: "ERROR", type: "ERROR", end: "NOT_RESPONDER", url: closure_9.CREATE_REFERRAL(value) };
   const body = yield HTTP.post(obj).body;
   let tmp = null;
   if (null != body) {
@@ -166,7 +166,7 @@ async function _createReferralTrial(value, arg1) {
 }
 async function _resolveReferralTrialOffer(arg0, arg1) {
   const HTTP = callback(closure_2[6]).HTTP;
-  let obj = { CONVERSATIONS: null, replace: null, push: null, url: closure_9.REFERRAL_OFFER_ID_RESOLVE(arg0) };
+  let obj = { lc: "ERROR", type: "ERROR", end: "NOT_RESPONDER", url: closure_9.REFERRAL_OFFER_ID_RESOLVE(arg0) };
   const body = yield HTTP.get(obj).body;
   let tmp = null;
   if (null != body) {
@@ -245,7 +245,7 @@ export const fetchReferralsRemaining = function fetchReferralsRemaining() {
   let obj = importDefault(dependencyMap[7]);
   obj.dispatch({ type: "BILLING_REFERRALS_REMAINING_FETCH_START" });
   const HTTP = arg1(dependencyMap[6]).HTTP;
-  obj = { CONVERSATIONS: null, replace: null, push: null, url: constants.GET_REFERRALS_REMAINING };
+  obj = { lc: "ERROR", type: "ERROR", end: "NOT_RESPONDER", url: constants.GET_REFERRALS_REMAINING };
   const value = HTTP.get(obj);
   return value.then((body) => {
     const map = new Map();

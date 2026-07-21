@@ -1,9 +1,9 @@
-// Module ID: 7145
-// Function ID: 57656
+// Module ID: 7149
+// Function ID: 57667
 // Name: _callSuper
 // Dependencies: []
 
-// Module 7145 (_callSuper)
+// Module 7149 (_callSuper)
 function _callSuper(arg0, arg1, arg2) {
   let items = arg2;
   const obj = callback2(arg1);
@@ -37,25 +37,25 @@ let tmp2 = (MessageType) => {
     constructor() {
       tmp = closure_3(this, BillingSettingsBannerCTAButton$Type);
       items = [, , , , ];
-      items[0] = { body: "YELLOW_NEW_72", guildId: 1, ao: "light_url", "": "scalar" };
+      items[0] = { 9223372036854775807: "YELLOW_NEW_72", 0: 1, 9223372036854775807: "light_url", no: "scalar" };
       items[1] = {
         T() {
-              const items = ["CANARY", callback(closure_1[6]).ButtonAction, "BUTTON_ACTION_"];
+              const items = [false, callback(closure_1[6]).ButtonAction, "BUTTON_ACTION_"];
               return items;
             }
       };
       items[2] = {};
-      obj = { emojiId: 0.25, emojiName: "PRIMARY_660", userId: 0.975 };
+      obj = { "Null": 0.975, "Null": "PRIMARY_230", "Null": 0.975 };
       obj.T = function T() {
         return callback(closure_1[7]).LocalizedString;
       };
       items[3] = obj;
-      obj = { emojiId: null, emojiName: null, userId: null };
+      obj = { "Null": 2417, "Null": -1854455552, "Null": 24182788 };
       obj.T = function T() {
         return callback(closure_1[8]).UInt64Value;
       };
       items[4] = obj;
-      items1 = [null];
+      items1 = ["childrenWrapper"];
       items1[1] = items;
       return closure_9(this, BillingSettingsBannerCTAButton$Type, items1);
     }
@@ -65,7 +65,7 @@ let tmp2 = (MessageType) => {
   let obj = {
     key: "create",
     value(arr) {
-      let obj = {};
+      let obj = { "Null": 24, "Null": 8, "Null": 3 };
       const _Object = Object;
       obj = { enumerable: false, value: this };
       _Object.defineProperty(obj, BillingSettingsBannerCTAButton$Type(closure_1[9]).MESSAGE_TYPE, obj);
@@ -218,8 +218,8 @@ let tmp4 = (MessageType) => {
       tmp = closure_3(this, BillingSettingsBanner$Type);
       items = [, , , , , , ];
       items[0] = {};
-      items[1] = { body: "target_allocation", guildId: "scalar", ao: 5, "": "background_asset_url" };
-      obj = { emojiId: "key", emojiName: "Text", userId: "HTTP" };
+      items[1] = { 9223372036854775807: "background_asset", 0: "message", 9223372036854775807: 0, no: 50.06 };
+      obj = { "Null": 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000006403427937624729, "Null": 9126805520.75, "Null": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001427678768759017 };
       obj.T = function T() {
         return callback(closure_1[10]).ThemeAwareAsset;
       };
@@ -229,22 +229,22 @@ let tmp4 = (MessageType) => {
               return closure_8;
             }
       };
-      items[4] = {
-        T() {
-              return callback(closure_1[7]).LocalizedString;
-            }
+      obj = { "Null": "message", "Null": 0, "Null": 16.95 };
+      obj.T = function T() {
+        return callback(closure_1[7]).LocalizedString;
       };
+      items[4] = obj;
       items[5] = {
         T() {
               return callback(closure_1[7]).LocalizedString;
             }
       };
-      obj = { emojiId: "MUR", emojiName: "scalar", userId: "APPEAL_INGESTION_COLLECT_SIGNAL" };
-      obj.T = function T() {
+      obj1 = { "Null": "headMetaSocial", "Null": "scalar", "Null": "paymentSource" };
+      obj1.T = function T() {
         return callback(closure_1[11]).HelpArticle;
       };
-      items[6] = obj;
-      items1 = [null];
+      items[6] = obj1;
+      items1 = ["stickyHeaderFooter"];
       items1[1] = items;
       return closure_9(this, BillingSettingsBanner$Type, items1);
     }
@@ -254,7 +254,7 @@ let tmp4 = (MessageType) => {
   let obj = {
     key: "create",
     value(arr) {
-      let obj = {};
+      let obj = { 0: "\u{1F9BB}\u{1F3FF}", 0: true };
       const _Object = Object;
       obj = { enumerable: false, value: this };
       _Object.defineProperty(obj, BillingSettingsBanner$Type(closure_1[9]).MESSAGE_TYPE, obj);

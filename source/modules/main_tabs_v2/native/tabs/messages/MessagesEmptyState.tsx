@@ -1,17 +1,17 @@
-// Module ID: 14828
-// Function ID: 111753
+// Module ID: 14835
+// Function ID: 111777
 // Name: MessagesEmptyState
 // Dependencies: []
 // Exports: default
 
-// Module 14828 (MessagesEmptyState)
+// Module 14835 (MessagesEmptyState)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 ({ View: closure_5, Image: closure_6, ScrollView: closure_7 } = arg1(dependencyMap[2]));
 const tmp2 = arg1(dependencyMap[2]);
 ({ jsx: closure_8, jsxs: closure_9 } = arg1(dependencyMap[3]));
 const tmp3 = arg1(dependencyMap[3]);
-let closure_10 = arg1(dependencyMap[4]).createStyles({ container: { -9223372036854775808: 323420161, 0: -2104950783 }, scrollViewContentContainer: { flexGrow: 2 }, innerContainer: {}, imageContainer: { <string:3800259117>: 24, <string:1391987057>: "recent_games_enabled" }, textWrapper: { paddingHorizontal: 48 }, body: {}, title: { flexDirection: true, alignSelf: true, padding: true }, buttonWrapper: { edges: "<string:16777479>", onKeyboardMoveStart: "<string:36295491>" } });
+let closure_10 = arg1(dependencyMap[4]).createStyles({ container: { markAsSpoilerTitle: null, keyboardAppearance: null }, scrollViewContentContainer: { flexGrow: 2 }, innerContainer: {}, imageContainer: { 304631162: 24, -309048237: "recent_games_enabled" }, textWrapper: { paddingHorizontal: 48 }, body: { "Null": null, "Null": "absolute" }, title: { alignSelf: null, padding: "text-sm/normal", backgroundColor: "text-link" }, buttonWrapper: {} });
 const obj = arg1(dependencyMap[4]);
 const result = arg1(dependencyMap[15]).fileFinishedImporting("modules/main_tabs_v2/native/tabs/messages/MessagesEmptyState.tsx");
 
@@ -29,7 +29,7 @@ export default function MessagesEmptyState() {
   const importDefault = navigation;
   const items = [navigation];
   const callback1 = React.useCallback(() => {
-    navigation.navigate("friends", { screen: "add-friends", params: {} });
+    navigation.navigate("friends", { screen: "add-friends", params: { GUILD_DISCOVERY_CHECKLIST: "<string:1010910605>", borderTopWidth: "<string:1912603051>" } });
   }, items);
   obj = { type: callback(dependencyMap[8]).ImpressionTypes.VIEW, name: callback(dependencyMap[8]).ImpressionNames.MESSAGES_EMPTY_NUX };
   importDefault(dependencyMap[7])(obj);
@@ -40,7 +40,7 @@ export default function MessagesEmptyState() {
   let obj2 = callback(dependencyMap[9]);
   const isScreenLandscape = obj2.useIsScreenLandscape();
   callback(dependencyMap[10]);
-  obj = {};
+  obj = { 0: null, 9223372036854775807: null };
   const items1 = [tmp.scrollViewContentContainer, ];
   let tmp15;
   if (isScreenLandscape) {
@@ -64,7 +64,7 @@ export default function MessagesEmptyState() {
   obj4.children = callback3(closure_6, obj5);
   const items2 = [callback3(closure_5, obj4), ];
   const obj7 = { style: tmp.textWrapper };
-  const obj8 = { "Bool(false)": null, "Bool(false)": null, style: tmp.title };
+  const obj8 = { style: tmp.title };
   const intl = callback(dependencyMap[13]).intl;
   obj8.children = intl.string(callback(dependencyMap[13]).t.8JZof8);
   const items3 = [callback3(callback(dependencyMap[12]).Heading, obj8), ];

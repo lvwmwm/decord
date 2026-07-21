@@ -1,9 +1,9 @@
-// Module ID: 6888
-// Function ID: 54856
+// Module ID: 6892
+// Function ID: 54866
 // Name: LowDiskTrim
 // Dependencies: []
 
-// Module 6888 (LowDiskTrim)
+// Module 6892 (LowDiskTrim)
 let closure_2 = importDefault(dependencyMap[0]);
 let closure_3 = importDefault(dependencyMap[1]);
 let closure_4 = importDefault(dependencyMap[2]);

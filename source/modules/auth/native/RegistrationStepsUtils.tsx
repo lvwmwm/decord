@@ -1,10 +1,10 @@
-// Module ID: 14597
-// Function ID: 110056
+// Module ID: 14604
+// Function ID: 110078
 // Name: getRegistrationSteps
 // Dependencies: []
 // Exports: getAllAuthScreens, getNextRegistrationTransitionStep, handleNextOrSubmitRegistration
 
-// Module 14597 (getRegistrationSteps)
+// Module 14604 (getRegistrationSteps)
 function getRegistrationSteps() {
   return items;
 }
@@ -68,11 +68,11 @@ export { getRegistrationSteps };
 export const getAllAuthScreens = function getAllAuthScreens() {
   let obj = {};
   obj = {
-    <string:1386273004>: "<string:4200829856>",
-    <string:66972225>: "<string:441552526>",
-    <string:1364605794>: "NitroWumpusFlightUpwards3dIllustration",
-    <string:2489436212>: "isArray",
-    <string:2700856419>: "isArray",
+    <string:3356315963>: false,
+    <string:1548855905>: "handled",
+    <string:3972818816>: false,
+    <string:2862676912>: 16,
+    <string:2602521430>: "rules",
     impressionName: arg1(dependencyMap[8]).ImpressionNames.USER_WELCOME,
     headerTitle,
     render() {
@@ -81,8 +81,8 @@ export const getAllAuthScreens = function getAllAuthScreens() {
   };
   obj[AuthStates.WELCOME] = obj;
   obj = {
-    -9223372036854775808: null,
-    9223372036854775807: null,
+    position: null,
+    top: null,
     impressionName: arg1(dependencyMap[8]).ImpressionNames.USER_REGISTRATION,
     impressionProperties: { impression_group: arg1(dependencyMap[8]).ImpressionGroups.USER_REGISTRATION_FLOW, step: constants.IDENTITY },
     headerTitle,
@@ -97,7 +97,7 @@ export const getAllAuthScreens = function getAllAuthScreens() {
     }
   };
   obj[AuthStates.REGISTER_IDENTITY] = obj;
-  const obj2 = { -9223372036854775808: null, 9223372036854775807: null, impressionName: arg1(dependencyMap[8]).ImpressionNames.USER_REGISTRATION };
+  const obj2 = { position: null, top: null, impressionName: arg1(dependencyMap[8]).ImpressionNames.USER_REGISTRATION };
   const obj1 = { impression_group: arg1(dependencyMap[8]).ImpressionGroups.USER_REGISTRATION_FLOW, step: constants.IDENTITY };
   obj2.impressionProperties = { impression_group: arg1(dependencyMap[8]).ImpressionGroups.USER_REGISTRATION_FLOW, step: constants.DISPLAY_NAME };
   obj2.headerTitle = headerTitle;
@@ -111,7 +111,7 @@ export const getAllAuthScreens = function getAllAuthScreens() {
     return callback3(callback2(closure_2[12]), {});
   };
   obj[AuthStates.REGISTER_DISPLAY_NAME] = obj2;
-  const obj4 = { -9223372036854775808: null, 9223372036854775807: null, impressionName: arg1(dependencyMap[8]).ImpressionNames.USER_REGISTRATION };
+  const obj4 = { position: null, top: null, impressionName: arg1(dependencyMap[8]).ImpressionNames.USER_REGISTRATION };
   const obj3 = { impression_group: arg1(dependencyMap[8]).ImpressionGroups.USER_REGISTRATION_FLOW, step: constants.DISPLAY_NAME };
   obj4.impressionProperties = { impression_group: arg1(dependencyMap[8]).ImpressionGroups.USER_REGISTRATION_FLOW, step: constants.ACCOUNT_INFORMATION };
   obj4.headerTitle = headerTitle;
@@ -140,7 +140,7 @@ export const getAllAuthScreens = function getAllAuthScreens() {
     return callback3(callback2(closure_2[14]), {});
   };
   obj[AuthStates.VERIFY_PHONE] = obj6;
-  const obj8 = { -9223372036854775808: null, 9223372036854775807: null, impressionName: arg1(dependencyMap[8]).ImpressionNames.USER_LOGIN };
+  const obj8 = { position: null, top: null, impressionName: arg1(dependencyMap[8]).ImpressionNames.USER_LOGIN };
   const obj7 = { impression_group: arg1(dependencyMap[8]).ImpressionGroups.USER_REGISTRATION_FLOW };
   obj8.impressionProperties = { impression_group: arg1(dependencyMap[8]).ImpressionGroups.USER_LOGIN_FLOW };
   obj8.headerTitle = headerTitle;
@@ -149,10 +149,10 @@ export const getAllAuthScreens = function getAllAuthScreens() {
   };
   obj[AuthStates.LOGIN] = obj8;
   const obj10 = {
-    gap: 7475750,
-    position: 0,
-    width: 1090519040,
-    height: 146451,
+    "Bool(false)": null,
+    "Bool(false)": null,
+    "Bool(false)": null,
+    "Bool(false)": null,
     headerTitle,
     render() {
       return callback3(callback2(closure_2[16]), { inContainer: true });
@@ -160,8 +160,8 @@ export const getAllAuthScreens = function getAllAuthScreens() {
   };
   obj[AuthStates.MFA] = obj10;
   const obj11 = {
-    -9223372036854775808: null,
-    9223372036854775807: null,
+    position: null,
+    top: null,
     headerTitle,
     render(arg0) {
       const merged = Object.assign(arg0);
@@ -192,8 +192,8 @@ export const getAllAuthScreens = function getAllAuthScreens() {
     }
   };
   const obj12 = {
-    -9223372036854775808: null,
-    9223372036854775807: null,
+    position: null,
+    top: null,
     impressionName: arg1(dependencyMap[8]).ImpressionNames.USER_AGE_GATE,
     headerTitle,
     headerLeft(arg0) {
@@ -208,8 +208,8 @@ export const getAllAuthScreens = function getAllAuthScreens() {
   };
   obj[AuthStates.AGE_GATE] = obj12;
   const obj13 = {
-    -9223372036854775808: null,
-    9223372036854775807: null,
+    position: null,
+    top: null,
     impressionName: arg1(dependencyMap[8]).ImpressionNames.USER_AGE_GATE_UNDERAGE,
     impressionProperties(existingUser) {
       return { impression_group: callback(closure_2[8]).ImpressionGroups.USER_REGISTRATION_FLOW, existing_user: existingUser.existingUser };
@@ -226,8 +226,8 @@ export const getAllAuthScreens = function getAllAuthScreens() {
   };
   obj[AuthStates.AGE_GATE_UNDERAGE] = obj13;
   const obj14 = {
-    -9223372036854775808: null,
-    9223372036854775807: null,
+    position: null,
+    top: null,
     headerTitle,
     render() {
       return callback3(callback(closure_2[23]).CompanionRemoteAuth, {});

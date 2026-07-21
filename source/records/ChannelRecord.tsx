@@ -826,7 +826,7 @@ const tmp34 = (arg0) => {
       items = [];
       items[0] = arg0;
       tmp2 = closure_36(this, UnknownChannelRecord, items);
-      ({ application_id: tmp2.application_id, appliedTags: tmp2.appliedTags, availableTags: tmp2.availableTags, bitrate_: tmp2.bitrate_, defaultAutoArchiveDuration: tmp2.defaultAutoArchiveDuration, defaultForumLayout: tmp2.defaultForumLayout, defaultReactionEmoji: tmp2.defaultReactionEmoji, defaultSortOrder: tmp2.defaultSortOrder, defaultTagSetting: tmp2.defaultTagSetting, defaultThreadRateLimitPerUser: tmp2.defaultThreadRateLimitPerUser, flags_: tmp2.flags_, icon: tmp2.icon, iconEmoji: tmp2.iconEmoji, isMessageRequest: tmp2.isMessageRequest, isMessageRequestTimestamp: tmp2.isMessageRequestTimestamp, isSpam: tmp2.isSpam, lastMessageId: tmp2.lastMessageId, lastPinTimestamp: tmp2.lastPinTimestamp, member: tmp2.member, memberCount: tmp2.memberCount, memberIdsPreview: tmp2.memberIdsPreview, memberListId: tmp2.memberListId, messageCount: tmp2.messageCount, nicks: tmp2.nicks, nsfw_: tmp2.nsfw_, originChannelId: tmp2.originChannelId, ownerId: tmp2.ownerId, parent_id: tmp2.parent_id, parentChannelThreadType: tmp2.parentChannelThreadType, permissionOverwrites_: tmp2.permissionOverwrites_, position_: tmp2.position_, rateLimitPerUser_: tmp2.rateLimitPerUser_, rawRecipients: tmp2.rawRecipients, recipients: tmp2.recipients, recipientFlags: tmp2.recipientFlags, rtcRegion: tmp2.rtcRegion, safetyWarnings: tmp2.safetyWarnings, blockedUserWarningDismissed: tmp2.blockedUserWarningDismissed, template: tmp2.template, themeColor: tmp2.themeColor, threadMetadata: tmp2.threadMetadata, topic_: tmp2.topic_, userLimit_: tmp2.userLimit_, version: tmp2.version, videoQualityMode: tmp2.videoQualityMode, linkedLobby: tmp2.linkedLobby, hdStreamingUntil: tmp2.hdStreamingUntil, hdStreamingBuyerId: tmp2.hdStreamingBuyerId, voiceHangout: tmp2.voiceHangout } = arg0);
+      ({ application_id: tmp2.application_id, appliedTags: tmp2.appliedTags, availableTags: tmp2.availableTags, bitrate_: tmp2.bitrate_, defaultAutoArchiveDuration: tmp2.defaultAutoArchiveDuration, defaultForumLayout: tmp2.defaultForumLayout, defaultReactionEmoji: tmp2.defaultReactionEmoji, defaultSortOrder: tmp2.defaultSortOrder, defaultTagSetting: tmp2.defaultTagSetting, defaultThreadRateLimitPerUser: tmp2.defaultThreadRateLimitPerUser, flags_: tmp2.flags_, icon: tmp2.icon, iconEmoji: tmp2.iconEmoji, isMessageRequest: tmp2.isMessageRequest, isMessageRequestTimestamp: tmp2.isMessageRequestTimestamp, isSpam: tmp2.isSpam, lastMessageId: tmp2.lastMessageId, lastPinTimestamp: tmp2.lastPinTimestamp, member: tmp2.member, memberCount: tmp2.memberCount, memberIdsPreview: tmp2.memberIdsPreview, memberListId: tmp2.memberListId, messageCount: tmp2.messageCount, nicks: tmp2.nicks, nsfw_: tmp2.nsfw_, originChannelId: tmp2.originChannelId, ownerId: tmp2.ownerId, parent_id: tmp2.parent_id, parentChannelThreadType: tmp2.parentChannelThreadType, permissionOverwrites_: tmp2.permissionOverwrites_, position_: tmp2.position_, rateLimitPerUser_: tmp2.rateLimitPerUser_, rawRecipients: tmp2.rawRecipients, recipients: tmp2.recipients, recipientFlags: tmp2.recipientFlags, rtcRegion: tmp2.rtcRegion, safetyWarnings: tmp2.safetyWarnings, blockedUserWarningDismissed: tmp2.blockedUserWarningDismissed, template: tmp2.template, themeColor: tmp2.themeColor, threadMetadata: tmp2.threadMetadata, topic_: tmp2.topic_, userLimit_: tmp2.userLimit_, version: tmp2.version, videoQualityMode: tmp2.videoQualityMode, linkedLobby: tmp2.linkedLobby, hdStreamingUntil: tmp2.hdStreamingUntil, hdStreamingBuyerId: tmp2.hdStreamingBuyerId, voiceHangout: tmp2.voiceHangout, lastNonMessageActivityTimestamp: tmp2.lastNonMessageActivityTimestamp } = arg0);
       return tmp2;
     }
   }
@@ -910,7 +910,7 @@ const tmp34 = (arg0) => {
           UNKNOWN = constants.UNKNOWN;
         }
         obj.type = UNKNOWN;
-        ({ user_limit: obj.userLimit_, version: obj.version, video_quality_mode: obj.videoQualityMode, linked_lobby: obj.linkedLobby, hd_streaming_until: obj.hdStreamingUntil, hd_streaming_buyer_id: obj.hdStreamingBuyerId, voice_hangout: obj.voiceHangout } = application_id);
+        ({ user_limit: obj.userLimit_, version: obj.version, video_quality_mode: obj.videoQualityMode, linked_lobby: obj.linkedLobby, hd_streaming_until: obj.hdStreamingUntil, hd_streaming_buyer_id: obj.hdStreamingBuyerId, voice_hangout: obj.voiceHangout, last_non_message_activity_timestamp: obj.lastNonMessageActivityTimestamp } = application_id);
         return UnknownChannelRecord(closure_3[15]).dangerouslyCast(obj, UnknownChannelRecord);
       }
     }
@@ -1414,7 +1414,7 @@ const tmp51 = (arg0) => {
         appliedTags = [];
       }
       tmp2.appliedTags = appliedTags;
-      ({ bitrate_: tmp2.bitrate_, flags_: tmp2.flags_, lastMessageId: tmp2.lastMessageId, lastPinTimestamp: tmp2.lastPinTimestamp, member: tmp2.member, memberCount: tmp2.memberCount, memberIdsPreview: tmp2.memberIdsPreview, messageCount: tmp2.messageCount, nsfw_: tmp2.nsfw_, ownerId: tmp2.ownerId, parent_id: tmp2.parent_id, parentChannelThreadType: tmp2.parentChannelThreadType, rateLimitPerUser_: tmp2.rateLimitPerUser_, rtcRegion: tmp2.rtcRegion, threadMetadata: tmp2.threadMetadata, userLimit_: tmp2.userLimit_, videoQualityMode: tmp2.videoQualityMode } = arg0);
+      ({ bitrate_: tmp2.bitrate_, flags_: tmp2.flags_, lastMessageId: tmp2.lastMessageId, lastPinTimestamp: tmp2.lastPinTimestamp, member: tmp2.member, memberCount: tmp2.memberCount, memberIdsPreview: tmp2.memberIdsPreview, messageCount: tmp2.messageCount, nsfw_: tmp2.nsfw_, ownerId: tmp2.ownerId, parent_id: tmp2.parent_id, parentChannelThreadType: tmp2.parentChannelThreadType, rateLimitPerUser_: tmp2.rateLimitPerUser_, rtcRegion: tmp2.rtcRegion, threadMetadata: tmp2.threadMetadata, userLimit_: tmp2.userLimit_, videoQualityMode: tmp2.videoQualityMode, lastNonMessageActivityTimestamp: tmp2.lastNonMessageActivityTimestamp } = arg0);
       return tmp2;
     }
   }
@@ -1472,7 +1472,7 @@ const tmp51 = (arg0) => {
           PUBLIC_THREAD = constants.PUBLIC_THREAD;
         }
         obj.type = PUBLIC_THREAD;
-        ({ user_limit: obj.userLimit_, video_quality_mode: obj.videoQualityMode } = applied_tags);
+        ({ user_limit: obj.userLimit_, video_quality_mode: obj.videoQualityMode, last_non_message_activity_timestamp: obj.lastNonMessageActivityTimestamp } = applied_tags);
         return ThreadChannelRecord(closure_3[15]).dangerouslyCast(obj, ThreadChannelRecord);
       }
     }

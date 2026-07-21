@@ -1,10 +1,10 @@
-// Module ID: 5653
-// Function ID: 48426
+// Module ID: 5655
+// Function ID: 48469
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 // Exports: isViewChannelSidebar
 
-// Module 5653 (_isNativeReflectConstruct)
+// Module 5655 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 

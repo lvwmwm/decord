@@ -1,10 +1,10 @@
-// Module ID: 8366
-// Function ID: 66672
+// Module ID: 8370
+// Function ID: 66684
 // Name: PressableScale
 // Dependencies: []
 
-// Module 8366 (PressableScale)
-let closure_2 = [null];
+// Module 8370 (PressableScale)
+let closure_2 = ["GUILD_DELETE"];
 let closure_3 = importDefault(dependencyMap[0]);
 const jsx = arg1(dependencyMap[3]).jsx;
 const importAllResult = importAll(dependencyMap[1]);
@@ -17,7 +17,7 @@ const forwardRefResult = importAllResult.forwardRef((scaleAmountInPx) => {
   if (num === undefined) {
     num = 8;
   }
-  let obj = { <string:2527145905>: false, <string:1606074514>: null, <string:1517393526>: "", <string:3534071445>: null, <string:4289545986>: null };
+  let obj = {};
   ({ onPressIn, onPressOut } = scaleAmountInPx);
   Object.setPrototypeOf(null);
   const merged = Object.assign(scaleAmountInPx, obj);

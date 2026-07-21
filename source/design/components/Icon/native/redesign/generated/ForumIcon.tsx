@@ -1,10 +1,10 @@
-// Module ID: 4640
-// Function ID: 40248
+// Module ID: 4642
+// Function ID: 40289
 // Name: ForumIcon
 // Dependencies: []
 // Exports: ForumIcon
 
-// Module 4640 (ForumIcon)
+// Module 4642 (ForumIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/ForumIcon.tsx");

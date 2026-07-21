@@ -1,10 +1,10 @@
-// Module ID: 14429
-// Function ID: 108799
+// Module ID: 14436
+// Function ID: 108822
 // Name: useGoreContentNonFriendsDmSettingValue
 // Dependencies: []
 // Exports: onGoreContentNonFriendsDmOnPress, useGoreContentNonFriendsDmSettingValue
 
-// Module 14429 (useGoreContentNonFriendsDmSettingValue)
+// Module 14436 (useGoreContentNonFriendsDmSettingValue)
 function useGoreContentNonFriendsDmSettingValue() {
   const parentalControlledGoreContentSettings = arg1(dependencyMap[2]).useParentalControlledGoreContentSettings();
   let prop;

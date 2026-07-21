@@ -1,10 +1,10 @@
-// Module ID: 4945
-// Function ID: 42360
+// Module ID: 4947
+// Function ID: 42401
 // Name: canJoinVoiceChannel
 // Dependencies: []
 // Exports: default
 
-// Module 4945 (canJoinVoiceChannel)
+// Module 4947 (canJoinVoiceChannel)
 const isPrivate = require(dependencyMap[0]).isPrivate;
 const BasicPermissions = require(dependencyMap[1]).BasicPermissions;
 const _module = require(dependencyMap[2]);

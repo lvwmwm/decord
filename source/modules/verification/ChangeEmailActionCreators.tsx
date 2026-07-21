@@ -1,10 +1,10 @@
-// Module ID: 9179
-// Function ID: 71901
+// Module ID: 9183
+// Function ID: 71913
 // Name: _confirmEmailChange
 // Dependencies: []
 // Exports: confirmEmailChange, sendConfirmationCode
 
-// Module 9179 (_confirmEmailChange)
+// Module 9183 (_confirmEmailChange)
 function _confirmEmailChange() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);

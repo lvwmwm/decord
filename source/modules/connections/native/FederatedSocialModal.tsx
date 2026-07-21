@@ -1,17 +1,17 @@
-// Module ID: 8994
-// Function ID: 70815
+// Module ID: 8998
+// Function ID: 70827
 // Name: FederatedSocialModal
 // Dependencies: []
 // Exports: default
 
-// Module 8994 (FederatedSocialModal)
+// Module 8998 (FederatedSocialModal)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 let closure_5 = importAll(dependencyMap[2]);
 const WebBrowserType = arg1(dependencyMap[3]).WebBrowserType;
 ({ jsx: closure_7, jsxs: closure_8 } = arg1(dependencyMap[4]));
 const tmp2 = arg1(dependencyMap[4]);
-let closure_9 = arg1(dependencyMap[5]).createStyles({ container: { padding: 16 }, description: { textAlign: "center" }, input: {} });
+let closure_9 = arg1(dependencyMap[5]).createStyles({ container: { padding: 16 }, description: { textAlign: "center" }, input: { "Bool(false)": 16, "Bool(false)": 20, "Bool(false)": null } });
 const obj = arg1(dependencyMap[5]);
 const result = arg1(dependencyMap[18]).fileFinishedImporting("modules/connections/native/FederatedSocialModal.tsx");
 

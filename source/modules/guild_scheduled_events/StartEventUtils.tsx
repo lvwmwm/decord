@@ -1,10 +1,10 @@
-// Module ID: 8460
-// Function ID: 67496
+// Module ID: 8464
+// Function ID: 67508
 // Name: createStageChannelForEvent
 // Dependencies: []
 // Exports: preStartEventActions, setEventAsActive
 
-// Module 8460 (createStageChannelForEvent)
+// Module 8464 (createStageChannelForEvent)
 function createStageChannelForEvent(guild, name, arg2) {
   return _createStageChannelForEvent(...arguments);
 }

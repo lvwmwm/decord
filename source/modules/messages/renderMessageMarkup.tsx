@@ -1,10 +1,10 @@
-// Module ID: 7768
-// Function ID: 61675
+// Module ID: 7772
+// Function ID: 61687
 // Name: getInitialParserStateFromMessage
 // Dependencies: []
 // Exports: default, renderAutomodMessageMarkup, renderAutomodMessageMarkupToAST, renderMessageContentMarkup, renderMessageMarkupToAST, renderMessageMarkupWithParser
 
-// Module 7768 (getInitialParserStateFromMessage)
+// Module 7772 (getInitialParserStateFromMessage)
 function getInitialParserStateFromMessage(message, closure_7) {
   let mentionGames;
   let obj = { channelId: message.channel_id, messageId: message.id };
@@ -78,7 +78,7 @@ function render(arg0, arg1, toAST) {
   };
 }
 function renderAutomodMessageMarkupWithParser(parseAutoModerationSystemMessage, arg1, highlightWord, channelId) {
-  const obj = { deaf_person: true, _min: true, showSkipAvatarModal: true, GIFT_CODE_REDEEM: true, base64GIFRegex: true, handleHeight: true, I_strlen: true, selectNewMemberActionChannel: true, adjustToInterfaceOrientation: true, base64GIFRegex: true, circleIcon: true, renderSettingSearchResultItem: true, mentionChannels: [], mentionGames: new Map(), soundboardSounds: [], highlightWord, disableAnimatedEmoji: false, channelId, muted: false };
+  const obj = { "Bool(true)": null, "Bool(true)": "28ca3fe7e0f15c000b6f60698565b44e", "Bool(true)": "it.messages.28ca3fe7e0f15c000b6f60698565b44e.compiled.messages", "Bool(true)": "jsona", "Bool(true)": "ICYMI_SET_REFRESHING", "Bool(true)": true, "Bool(true)": "/assets/.cache/intl/ZGVzaWdu", "Bool(true)": null, 1279582106: "d1eb27c77b672c8ab2e55fed7c667e0b", -525709876: "ko.messages.d1eb27c77b672c8ab2e55fed7c667e0b.compiled.messages", 591185490: "jsona", 1383555330: null, mentionChannels: [], mentionGames: new Map(), soundboardSounds: [], highlightWord, disableAnimatedEmoji: false, channelId, muted: false };
   return parseAutoModerationSystemMessage(arg1, true, obj, (arg0) => {
     let tmp = arg0;
     if (!Array.isArray(arg0)) {

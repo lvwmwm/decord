@@ -1,10 +1,10 @@
-// Module ID: 15478
-// Function ID: 118143
+// Module ID: 15485
+// Function ID: 118167
 // Name: BogoPromotionActionSheet
 // Dependencies: []
 // Exports: default
 
-// Module 15478 (BogoPromotionActionSheet)
+// Module 15485 (BogoPromotionActionSheet)
 let closure_3 = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 let closure_5 = importDefault(dependencyMap[2]);
@@ -15,15 +15,15 @@ const tmp2 = arg1(dependencyMap[4]);
 ({ jsx: closure_13, jsxs: closure_14 } = arg1(dependencyMap[6]));
 let obj = arg1(dependencyMap[7]);
 obj = {};
-obj = { 9223372036854775807: 1, 9223372036854775807: "row", 9223372036854775807: "stretch", 0: "100%", padding: importDefault(dependencyMap[8]).space.PX_16, borderRadius: importDefault(dependencyMap[8]).radii.lg, marginBottom: importDefault(dependencyMap[8]).space.PX_24 };
+obj = { padding: importDefault(dependencyMap[8]).space.PX_16, borderRadius: importDefault(dependencyMap[8]).radii.lg, marginBottom: importDefault(dependencyMap[8]).space.PX_24 };
 obj.container = obj;
-const obj1 = { 0: null, 0: null, 0: null, marginTop: importDefault(dependencyMap[8]).space.PX_24 };
+const obj1 = { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, marginTop: importDefault(dependencyMap[8]).space.PX_24 };
 obj.buttonContainer = obj1;
 obj.header = {};
 obj.subheader = { textAlign: "center" };
 const tmp3 = arg1(dependencyMap[6]);
 obj.image = { paddingBottom: importDefault(dependencyMap[8]).space.PX_16, borderRadius: importDefault(dependencyMap[8]).radii.lg };
-obj.nitroWheelIcon = {};
+obj.nitroWheelIcon = { "Bool(true)": null, "Bool(true)": null, "Bool(true)": null };
 let closure_15 = obj.createStyles(obj);
 const obj2 = { paddingBottom: importDefault(dependencyMap[8]).space.PX_16, borderRadius: importDefault(dependencyMap[8]).radii.lg };
 const result = arg1(dependencyMap[20]).fileFinishedImporting("modules/premium/promotions/native/BogoPromotionActionSheet.tsx");
@@ -52,13 +52,13 @@ export default function BogoPromotionActionSheet(markAsDismissed) {
   obj = { style: items3 };
   const items3 = [tmp.container];
   const items4 = [callback(importDefault(dependencyMap[13]), { source: { uri: "https://cdn.discordapp.com/assets/content/a59aed2e0e61a955dc3e0f4f6f7ab295e39f89a93c4f01e4bd84ed7fb418ec63.png" }, style: tmp.image }), , , ];
-  const obj2 = { reportedPageIndex: null, pageIndex: null, scrollTargetPageIndex: null };
+  const obj2 = { MAX_DICE_COUNT: null, onIndexChange: null, TEST_PSEUDOMAP: null };
   const items5 = [tmp.header];
   obj2.style = items5;
   const intl = arg1(dependencyMap[15]).intl;
   obj2.children = intl.string(arg1(dependencyMap[15]).t.6Jjfk8);
   items4[1] = callback(arg1(dependencyMap[14]).Text, obj2);
-  const obj3 = { reportedPageIndex: null, pageIndex: null, scrollTargetPageIndex: null };
+  const obj3 = { MAX_DICE_COUNT: 12, onIndexChange: 4, TEST_PSEUDOMAP: 16 };
   const items6 = [tmp.subheader];
   obj3.style = items6;
   const intl2 = arg1(dependencyMap[15]).intl;
@@ -69,7 +69,7 @@ export default function BogoPromotionActionSheet(markAsDismissed) {
   items4[2] = callback(arg1(dependencyMap[16]).TextWithIOSLinkWorkaround, obj3);
   const obj5 = { style: items7 };
   const items7 = [tmp.buttonContainer];
-  const obj6 = {};
+  const obj6 = { "Null": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000232656173919898, "Null": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002540898980601415, "Null": 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000012741663005024175, "Null": -68.05714548874676, "Null": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000014992948780250344, "Null": 0.000000000000000000000000000000000000005881211672176443 };
   const intl3 = arg1(dependencyMap[15]).intl;
   obj6.text = intl3.string(arg1(dependencyMap[15]).t.J61px0);
   obj6.onPress = callback;

@@ -1,10 +1,10 @@
-// Module ID: 8673
-// Function ID: 68706
+// Module ID: 8677
+// Function ID: 68718
 // Name: shouldFetchStorefrontPromotions
 // Dependencies: []
 // Exports: fetchStorefrontPricesForApplicationId, fetchStorefrontPricesForSkuIds, maybeFetchStorefrontPromotions, setStorefrontPromotionIdOverride
 
-// Module 8673 (shouldFetchStorefrontPromotions)
+// Module 8677 (shouldFetchStorefrontPromotions)
 function shouldFetchStorefrontPromotions(guildId) {
   const fetchState = store.getFetchState(guildId);
   if (undefined === fetchState) {

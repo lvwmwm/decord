@@ -1,14 +1,14 @@
-// Module ID: 13557
-// Function ID: 102835
+// Module ID: 13564
+// Function ID: 102858
 // Name: PageMarker
 // Dependencies: []
 
-// Module 13557 (PageMarker)
+// Module 13564 (PageMarker)
 const View = arg1(dependencyMap[1]).View;
 const importAllResult = importAll(dependencyMap[0]);
 ({ jsx: closure_1, jsxs: closure_2 } = arg1(dependencyMap[2]));
 let obj1 = arg1(dependencyMap[3]);
-let obj = { pageMarkerContainer: { 1888122886: 1908422878, 1626306569: 3, 789915519: 33767745, 1626679168: 834232576 } };
+let obj = { pageMarkerContainer: { 2019522654: 1908422878, 2018474062: 3, 2018605136: 33780289, 2018801746: 834232576 } };
 obj = { backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_MOD_STRONG, borderColor: importDefault(dependencyMap[4]).colors.BORDER_SUBTLE };
 obj.circleIcon = obj;
 obj1 = { backgroundColor: importDefault(dependencyMap[4]).colors.BORDER_STRONG };

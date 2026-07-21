@@ -1,10 +1,10 @@
-// Module ID: 6760
-// Function ID: 53047
+// Module ID: 6766
+// Function ID: 53096
 // Name: maybeFetchCollectiblesForInvoices
 // Dependencies: []
 // Exports: getLinkCodeForCurrentUser, removeLinkForUserId, shareIarWithParents, updateLinkForUserId
 
-// Module 6760 (maybeFetchCollectiblesForInvoices)
+// Module 6766 (maybeFetchCollectiblesForInvoices)
 function maybeFetchCollectiblesForInvoices() {
   return _maybeFetchCollectiblesForInvoices(...arguments);
 }

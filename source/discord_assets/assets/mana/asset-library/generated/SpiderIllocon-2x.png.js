@@ -1,9 +1,9 @@
-// Module ID: 6524
-// Function ID: 50660
+// Module ID: 6526
+// Function ID: 50703
 // Name: metadata
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 6524 (metadata)
+// Module 6526 (metadata)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/SpiderIllocon-2x.png.js");
 

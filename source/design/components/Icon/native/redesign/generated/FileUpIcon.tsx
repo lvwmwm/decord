@@ -1,15 +1,13 @@
-// Module ID: 13414
-// Function ID: 101880
+// Module ID: 13421
+// Function ID: 101903
 // Name: FileUpIcon
-// Dependencies: [0, 0, 0, 0, 0, 0]
+// Dependencies: []
 // Exports: FileUpIcon
 
-// Module 13414 (FileUpIcon)
-import "result";
-import { jsx } from "result";
-import result from "result";
-
-result = result.fileFinishedImporting("design/components/Icon/native/redesign/generated/FileUpIcon.tsx");
+// Module 13421 (FileUpIcon)
+importAll(dependencyMap[0]);
+const jsx = arg1(dependencyMap[1]).jsx;
+const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/FileUpIcon.tsx");
 
 export const FileUpIcon = function FileUpIcon(color) {
   let INTERACTIVE_ICON_DEFAULT = color.color;

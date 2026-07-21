@@ -1,10 +1,10 @@
-// Module ID: 9124
-// Function ID: 71443
+// Module ID: 9128
+// Function ID: 71455
 // Name: useIsNsfwGated
 // Dependencies: []
 // Exports: default
 
-// Module 9124 (useIsNsfwGated)
+// Module 9128 (useIsNsfwGated)
 let closure_2 = importDefault(dependencyMap[0]);
 let closure_3 = importDefault(dependencyMap[1]);
 const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/age_gate/useIsNsfwGated.tsx");

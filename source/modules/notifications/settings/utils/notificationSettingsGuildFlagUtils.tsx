@@ -1,10 +1,10 @@
-// Module ID: 10274
-// Function ID: 79379
+// Module ID: 10280
+// Function ID: 79398
 // Name: updateGuildPreset
 // Dependencies: []
 // Exports: updateGuildPreset, useGuildPresetSettings
 
-// Module 10274 (updateGuildPreset)
+// Module 10280 (updateGuildPreset)
 let closure_3 = importDefault(dependencyMap[0]);
 const UserNotificationSettings = arg1(dependencyMap[1]).UserNotificationSettings;
 let closure_5 = arg1(dependencyMap[2]).GuildNotificationSettingsFlags;

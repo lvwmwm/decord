@@ -1,10 +1,10 @@
-// Module ID: 9327
-// Function ID: 72898
+// Module ID: 9331
+// Function ID: 72912
 // Name: ToastEmoji
 // Dependencies: []
 // Exports: showDoubleTapEmojiUpdatedToast
 
-// Module 9327 (ToastEmoji)
+// Module 9331 (ToastEmoji)
 class ToastEmoji {
   constructor(arg0) {
     emoji = global.emoji;
@@ -61,7 +61,7 @@ let obj = arg1(dependencyMap[4]);
 obj = {};
 obj = { marginLeft: importDefault(dependencyMap[5]).space.PX_8, marginVertical: importDefault(dependencyMap[5]).space.PX_8 };
 obj.toastEmoji = obj;
-obj.toastEmojiCustom = { aze: false, azj: false };
+obj.toastEmojiCustom = { bhk: "<string:1027735553>", bic: "<string:4143972873>" };
 const obj1 = {};
 let num = 16;
 if (obj5.isIOS()) {

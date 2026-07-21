@@ -1,10 +1,10 @@
-// Module ID: 12235
-// Function ID: 93877
+// Module ID: 12242
+// Function ID: 93900
 // Name: _showMarketingMomentRewardScreen
 // Dependencies: []
 // Exports: showMarketingMomentRewardScreen
 
-// Module 12235 (_showMarketingMomentRewardScreen)
+// Module 12242 (_showMarketingMomentRewardScreen)
 function _showMarketingMomentRewardScreen() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);

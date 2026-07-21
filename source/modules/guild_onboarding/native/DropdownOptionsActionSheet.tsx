@@ -1,10 +1,10 @@
-// Module ID: 5421
-// Function ID: 46441
+// Module ID: 5423
+// Function ID: 46483
 // Name: DropdownOptionRow
 // Dependencies: []
 // Exports: default
 
-// Module 5421 (DropdownOptionRow)
+// Module 5423 (DropdownOptionRow)
 function DropdownOptionRow(option) {
   let onSelect;
   let responses;
@@ -44,7 +44,7 @@ function DropdownOptionRow(option) {
     id = emoji.id;
   }
   if (null != id) {
-    obj = { style: { "Bool(true)": true, "Bool(true)": true } };
+    obj = { style: { -1861163602: true, -738052821: true } };
     obj = {};
     ({ optionTextEmoji: obj3.textEmojiStyle, optionImageEmoji: obj3.fastImageStyle } = tmp);
     let emojiURL;
@@ -104,7 +104,7 @@ let closure_6 = importDefault(dependencyMap[3]);
 const EMOJI_URL_BASE_SIZE = arg1(dependencyMap[4]).EMOJI_URL_BASE_SIZE;
 ({ jsx: closure_8, jsxs: closure_9 } = arg1(dependencyMap[5]));
 const tmp2 = arg1(dependencyMap[5]);
-let closure_10 = arg1(dependencyMap[6]).createStyles({ optionTextEmoji: {}, optionImageEmoji: { <string:1140607356>: false, <string:1751293292>: false }, newBadge: { fontWeight: "bold" }, labelRow: {}, closeButtonWrapper: {} });
+let closure_10 = arg1(dependencyMap[6]).createStyles({ optionTextEmoji: {}, optionImageEmoji: { <string:1632221346>: "<string:1027735553>", <string:2722977214>: "<string:4143972873>" }, newBadge: { fontWeight: "bold" }, labelRow: {}, closeButtonWrapper: {} });
 const obj = arg1(dependencyMap[6]);
 const result = arg1(dependencyMap[20]).fileFinishedImporting("modules/guild_onboarding/native/DropdownOptionsActionSheet.tsx");
 

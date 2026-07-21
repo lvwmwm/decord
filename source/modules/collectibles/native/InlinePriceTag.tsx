@@ -1,10 +1,10 @@
-// Module ID: 8752
-// Function ID: 69215
+// Module ID: 8756
+// Function ID: 69227
 // Name: PriceTag
 // Dependencies: []
 // Exports: default
 
-// Module 8752 (PriceTag)
+// Module 8756 (PriceTag)
 function PriceTag(color) {
   let icon;
   let priceFormatted;
@@ -69,7 +69,7 @@ function OrbsPriceTag(arg0) {
     let tmp13 = result;
     if (result) {
       obj = { priceFormatted: original.toString(), variant: "text-md/medium", style: tmp.strikedOrbPrice };
-      obj1 = { "Bool(true)": "shapes", "Bool(true)": "constructor", style: tmp.orbsIcon };
+      obj1 = { style: tmp.orbsIcon };
       obj.icon = callback(arg1(dependencyMap[12]).OrbsIcon, obj1);
       const intl = arg1(dependencyMap[13]).intl;
       const obj2 = { orbAmount: original.toString() };
@@ -80,7 +80,7 @@ function OrbsPriceTag(arg0) {
     const obj3 = { priceFormatted: vcData.price.amount.toString(), variant: "text-md/semibold" };
     let tmp21;
     if (!result) {
-      const obj4 = { "Bool(true)": "shapes", "Bool(true)": "constructor", style: tmp.orbsIcon };
+      const obj4 = { style: tmp.orbsIcon };
       tmp21 = callback(arg1(dependencyMap[12]).OrbsIcon, obj4);
     }
     obj3.icon = tmp21;
@@ -114,7 +114,7 @@ function BundleDiscountV2(discountPercentage) {
   if (discountPercentage >= arg1(dependencyMap[11]).DISCOUNT_DISPLAY_MINIMUM_THRESHOLD) {
     let obj = { style: tmp.discount };
     obj = {};
-    const items = [, discountPercentage, "%"];
+    const items = ["accessibilityRole", discountPercentage, "%"];
     obj.children = items;
     obj.children = callback2(arg1(dependencyMap[8]).Text, obj);
     tmp2 = callback(closure_4, obj);
@@ -130,8 +130,8 @@ const tmp3 = arg1(dependencyMap[1]);
 const tmp4 = arg1(dependencyMap[4]);
 ({ jsx: closure_9, Fragment: closure_10, jsxs: closure_11 } = arg1(dependencyMap[5]));
 let obj = arg1(dependencyMap[6]);
-obj = { priceTag: { -9223372036854775808: true, filter: true }, strikedPrice: { CHANNEL_FOLLOWER_STATS: null, AwaitAnimationContext: null, forExperimentId: null }, strikedOrbPrice: { CHANNEL_FOLLOWER_STATS: null, AwaitAnimationContext: null, forExperimentId: null, getProductsFromCategories: null }, regularPrice: {}, nitroIcon: {}, nitroIconSubscribeNow: { marginLeft: 0 }, container: {}, priceTagRow: { -9223372036854775808: true, filter: true }, priceTagColumn: {}, underline: { textDecorationLine: "underline" } };
-obj = { padding: "center", position: 40, 2131256266: 56, -745938350: true, marginTop: importDefault(dependencyMap[7]).space.PX_8 };
+obj = { priceTag: {}, strikedPrice: { notClaimed: null, notEmailVerified: "9ba137dcd88d29dfd923fc4a2e32469d", notPhoneVerified: "es-ES.messages.9ba137dcd88d29dfd923fc4a2e32469d.compiled.messages" }, strikedOrbPrice: { notClaimed: null, notEmailVerified: "9ba137dcd88d29dfd923fc4a2e32469d", notPhoneVerified: "es-ES.messages.9ba137dcd88d29dfd923fc4a2e32469d.compiled.messages", newAccount: "jsona" }, regularPrice: {}, nitroIcon: {}, nitroIconSubscribeNow: { marginLeft: 0 }, container: {}, priceTagRow: {}, priceTagColumn: {}, underline: { textDecorationLine: "underline" } };
+obj = { "Bool(true)": "center", "Bool(true)": 40, "Bool(true)": 56, "Bool(true)": true, marginTop: importDefault(dependencyMap[7]).space.PX_8 };
 obj.subscribeNowPressable = obj;
 obj.androidTextPadding = { paddingBottom: 2 };
 obj.orbsIcon = { marginRight: 4 };
@@ -140,7 +140,7 @@ let closure_12 = obj.createStyles(obj);
 const tmp5 = arg1(dependencyMap[5]);
 let closure_13 = arg1(dependencyMap[6]).createStyles(() => {
   let obj = {};
-  obj = { "Bool(false)": "construct", "Bool(false)": "isArray", "Bool(false)": "isArray", "Bool(false)": "isArray", "Bool(false)": "isArray", "Bool(false)": "Array", borderRadius: importDefault(dependencyMap[7]).radii.xs - 1 };
+  obj = { borderRadius: importDefault(dependencyMap[7]).radii.xs - 1 };
   let num;
   if (obj3.isAndroid()) {
     num = 0;
@@ -242,7 +242,7 @@ export default function InlinePriceTag(arg0) {
         ({ nitroIcon: arr4[0], nitroIconSubscribeNow: arr4[1] } = tmp);
         obj8.style = items3;
         const items4 = [callback(arg1(closure_2[25]).NitroWheelIcon, obj8), ];
-        obj9 = { INTEGRATION_CREATE: "<string:1167610112>", ConstraintReasonCode: "tr" };
+        obj9 = {};
         let androidTextPadding;
         if (obj26.isAndroid()) {
           androidTextPadding = tmp.androidTextPadding;

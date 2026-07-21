@@ -1,10 +1,10 @@
-// Module ID: 5731
-// Function ID: 49239
+// Module ID: 5733
+// Function ID: 49282
 // Name: trackSearchStart
 // Dependencies: [4294967295, 4294967295, 4294967295, 4294967295, 4294967295, 4294967295, 4294967295, 4294967295]
 // Exports: searchSounds, trackSearchResultViewed, trackSearchStart
 
-// Module 5731 (trackSearchStart)
+// Module 5733 (trackSearchStart)
 function trackSearchStart(location_stack, channel_id) {
   let obj = importDefault(dependencyMap[3]);
   obj = { channel_id, search_type: constants2.SOUNDBOARD, location_stack };

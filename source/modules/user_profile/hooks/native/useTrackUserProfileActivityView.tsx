@@ -1,10 +1,10 @@
-// Module ID: 11924
-// Function ID: 92236
+// Module ID: 11931
+// Function ID: 92259
 // Name: useTrackUserProfileActivityView
 // Dependencies: []
 // Exports: default
 
-// Module 11924 (useTrackUserProfileActivityView)
+// Module 11931 (useTrackUserProfileActivityView)
 let closure_2 = importDefault(dependencyMap[0]);
 ({ useEffect: closure_3, useState: closure_4 } = arg1(dependencyMap[1]));
 let closure_5 = importDefault(dependencyMap[2]);

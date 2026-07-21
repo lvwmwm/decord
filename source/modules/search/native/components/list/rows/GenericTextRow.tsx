@@ -1,8 +1,8 @@
-// Module ID: 15240
-// Function ID: 115062
+// Module ID: 15247
+// Function ID: 115086
 // Dependencies: []
 
-// Module 15240
+// Module 15247
 let closure_2 = importDefault(dependencyMap[0]);
 const importAllResult = importAll(dependencyMap[1]);
 const View = arg1(dependencyMap[2]).View;
@@ -25,12 +25,12 @@ const memoResult = importAllResult.memo(function GenericTextRow(text) {
   const items = [onPress, text];
   let obj = { style: tmp2.title };
   const callback = importAllResult.useCallback(callback(tmp), items);
-  obj = { CHANNEL_HIGHLIGHT: 0, guild_template_description: null, borderWidth: 103, style: tmp2.container, children: text };
+  obj = { encodingConfig: 0, showRemove: null, PREMIUM_CUSTOM_NOTIFICATION_SOUND_SETTINGS_UPSELL: 103, style: tmp2.container, children: text };
   obj.children = jsx(arg1(dependencyMap[5]).Text, obj);
   obj = {};
   let tmp6 = null != icon;
   if (tmp6) {
-    tmp6 = <icon flexDirection="%MapPrototype%" alignItems="isArrayBuffer" />;
+    tmp6 = <icon flex="%JSONStringify%" flexGrow="isArrayBuffer" />;
   }
   obj.icon = tmp6;
   obj.label = <View {...obj} />;

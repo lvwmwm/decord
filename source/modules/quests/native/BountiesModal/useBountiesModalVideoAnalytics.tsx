@@ -1,10 +1,10 @@
-// Module ID: 13800
-// Function ID: 104390
+// Module ID: 13807
+// Function ID: 104413
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 // Exports: useBountiesModalVideoAnalytics
 
-// Module 13800 (_createForOfIteratorHelperLoose)
+// Module 13807 (_createForOfIteratorHelperLoose)
 function _createForOfIteratorHelperLoose(@@iterator) {
   let arg1 = Symbol_iterator;
   @@iterator = "undefined" !== typeof Symbol;
@@ -210,7 +210,7 @@ export const useBountiesModalVideoAnalytics = function useBountiesModalVideoAnal
       const current2 = closure_7.current;
       current2.add("end");
       const _Math = Math;
-      const obj = { videoTimestampSeconds: Math.max(arg0, arg1) };
+      const obj = { 1386281826: null, 265212817: null, 173161057: null, videoTimestampSeconds: Math.max(arg0, arg1) };
       callback1(obj);
     }
   }, items4);
@@ -301,7 +301,7 @@ export const useBountiesModalVideoAnalytics = function useBountiesModalVideoAnal
     handleVideoErrorAnalytics: React.useCallback((error) => {
       let obj = bountyId(rewardDurationMs[5]);
       obj = { adContentId: bountyId, adCreativeType: bountyId(rewardDurationMs[6]).AdCreativeType.BOUNTY, event: num3.AD_VIDEO_ERROR };
-      obj = { "Bool(false)": "Normal", "Bool(false)": true, "Bool(false)": "AbortSignal", video_progress: bountyId(rewardDurationMs[4]).formatVideoProgressRatio(ref2.current, ref3.current), video_session_id: memo };
+      obj = { GUILD_VANITY_URL: null, currentOriginX: "\u{1F9BB}\u{1F3FF}", paddingVertical: true, video_progress: bountyId(rewardDurationMs[4]).formatVideoProgressRatio(ref2.current, ref3.current), video_session_id: memo };
       let code;
       if (null != error) {
         code = error.error.code;

@@ -1,7 +1,7 @@
 // Module ID: 659
 // Function ID: 8022
 // Name: CollectibleSearchSortDirection
-// Dependencies: []
+// Dependencies: [284214097]
 
 // Module 659 (CollectibleSearchSortDirection)
 const _module = require(dependencyMap[0]);

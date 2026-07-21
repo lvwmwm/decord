@@ -124,7 +124,7 @@ function createFastConnectSocket() {
           const DCDCompressionManager = closure_4.DCDCompressionManager;
           const result3 = DCDCompressionManager.enableZlibStreamSupport(parsed);
         }
-        obj = { __closure: "CONTENT_INVENTORY_OVERLAY_TEXT_PRIMARY", variant: "regulationEnvironment", Object: "Array", y: "lastModalShownDayStart", isArray: "AbortSignal", guildId: "MEDIA_POST_PREVIEW_EMBED_CLICKED", gateway: combined, messages: [] };
+        obj = { "Null": "AbortSignal", "Null": null, "Null": "\u{1F9BB}\u{1F3FF}", "Null": true, "Null": null, "Null": 12, gateway: combined, messages: [] };
         tmp7.onopen = () => {
           const obj = obj(closure_3[13]);
           obj.mark("\u{1F310}", "Fastconnect socket opened");

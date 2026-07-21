@@ -1,10 +1,10 @@
-// Module ID: 15048
-// Function ID: 113305
+// Module ID: 15055
+// Function ID: 113329
 // Name: ICYMISettingsActionSheet
 // Dependencies: []
 // Exports: default
 
-// Module 15048 (ICYMISettingsActionSheet)
+// Module 15055 (ICYMISettingsActionSheet)
 let closure_3 = importDefault(dependencyMap[0]);
 importAll(dependencyMap[1]);
 const View = arg1(dependencyMap[2]).View;
@@ -28,7 +28,7 @@ export default function ICYMISettingsActionSheet() {
   const stateFromStoresObject = obj.useStateFromStoresObject(items, () => state.getState());
   const arg1 = stateFromStoresObject;
   const ICYMIStaffDebuggingUtilityExperiment = arg1(dependencyMap[11]).ICYMIStaffDebuggingUtilityExperiment;
-  obj = { Kn: null, ContentInventoryFeedKey: null };
+  obj = { left: null, startAndEndHeight: null };
   obj = {};
   const intl = arg1(dependencyMap[14]).intl;
   obj.title = intl.string(arg1(dependencyMap[14]).t.7Si8Ul);
@@ -94,7 +94,7 @@ export default function ICYMISettingsActionSheet() {
   obj5.onPress = function onPress() {
     let obj = callback(paths[16]);
     obj.itemInteracted("icymi_settings_action_sheet", "icymi_settings_action_sheet", "custom_scoring_button");
-    callback(paths[16]).feedPageActioned({ actionParameters: {} });
+    callback(paths[16]).feedPageActioned({ actionParameters: { "Bool(false)": "<string:3858760335>", "Bool(false)": "gif", "Bool(false)": "BA", "Bool(false)": "WebsiteLink" } });
     const obj2 = callback(paths[16]);
     const obj3 = callback(paths[24]);
     obj = { presentation: "modal" };

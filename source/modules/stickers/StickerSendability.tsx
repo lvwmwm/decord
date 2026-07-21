@@ -1,10 +1,10 @@
-// Module ID: 5725
-// Function ID: 49160
+// Module ID: 5727
+// Function ID: 49203
 // Name: getStickerSendability
 // Dependencies: []
 // Exports: isSendableSticker
 
-// Module 5725 (getStickerSendability)
+// Module 5727 (getStickerSendability)
 function getStickerSendability(stickerById, closure_3, channel) {
   if (null == closure_3) {
     return obj.NONSENDABLE;

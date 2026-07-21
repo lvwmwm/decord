@@ -1,9 +1,9 @@
-// Module ID: 4574
-// Function ID: 40097
+// Module ID: 4576
+// Function ID: 40138
 // Name: MAX_LENGTH_SOUND_NAME
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 4574 (MAX_LENGTH_SOUND_NAME)
+// Module 4576 (MAX_LENGTH_SOUND_NAME)
 const obj = { SUCCESS: 0, [0]: "SUCCESS", INTERRUPTED: 1, [1]: "INTERRUPTED" };
 const items = [, ];
 ({ SUCCESS: arr[0], INTERRUPTED: arr[1] } = obj);
@@ -17,7 +17,7 @@ export const MAX_SOUND_LENGTH_SECONDS = 5;
 export const DEFAULT_SOUND_GUILD_ID = "0";
 export const SoundboardPlaybackStatus = obj;
 export const SUCCESSFUL_SOUNDBOARD_PLAYBACKS = new Set(items);
-export const SoundboardWheelSize = { "Bool(false)": false, "Bool(false)": false, "Bool(false)": false };
+export const SoundboardWheelSize = {};
 export const DEFAULT_KEYBIND = "ctrl+`";
 export const EMPTY_SOUND_LIST = [];
 export const CUSTOM_CALL_SOUND_GLOBAL_GUILD_ID = "0";

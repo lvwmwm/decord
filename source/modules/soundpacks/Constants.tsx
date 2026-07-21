@@ -1,9 +1,9 @@
-// Module ID: 10229
-// Function ID: 79043
+// Module ID: 10235
+// Function ID: 79062
 // Name: Soundpacks
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 10229 (Soundpacks)
+// Module 10235 (Soundpacks)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("modules/soundpacks/Constants.tsx");
 

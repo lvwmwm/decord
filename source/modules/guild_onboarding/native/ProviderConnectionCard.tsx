@@ -1,10 +1,10 @@
-// Module ID: 5476
-// Function ID: 46707
+// Module ID: 5478
+// Function ID: 46749
 // Name: ProviderConnectionCard
 // Dependencies: []
 // Exports: default
 
-// Module 5476 (ProviderConnectionCard)
+// Module 5478 (ProviderConnectionCard)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 const AnalyticEvents = arg1(dependencyMap[2]).AnalyticEvents;
@@ -73,7 +73,7 @@ export default function ProviderConnectionCard(connection) {
         }
         if (null == icon) {
           const source = obj2.makeSource(null);
-          obj = { source, style: { aze: "boolean", azj: "string" }, disableColor: true };
+          obj = { source, style: { bhk: "boolean", bic: "string" }, disableColor: true };
           return callback(connection(_location[13]).Icon, obj);
         } else {
           icon = value.icon;
@@ -82,7 +82,7 @@ export default function ProviderConnectionCard(connection) {
         }
         const obj2 = connection(_location[11]);
       } else {
-        return callback(connection(_location[14]).LinkIcon, { flexDirection: null, alignItems: "setRecipientUser" });
+        return callback(connection(_location[14]).LinkIcon, { flex: null, flexGrow: null });
       }
     }, items1);
     obj = { displayName: stringResult, description, icon: memo, isLoading: loading, isConnected: hasConnection, canConnect, onConnect: callback };

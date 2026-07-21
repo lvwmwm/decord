@@ -1,10 +1,10 @@
-// Module ID: 9857
-// Function ID: 76332
+// Module ID: 9862
+// Function ID: 76348
 // Name: useEnabledHarmTypesBitmaskForChannelAndAuthorId
 // Dependencies: []
 // Exports: useEnabledHarmTypesBitmaskForMessage
 
-// Module 9857 (useEnabledHarmTypesBitmaskForChannelAndAuthorId)
+// Module 9862 (useEnabledHarmTypesBitmaskForChannelAndAuthorId)
 function useEnabledHarmTypesBitmaskForChannelAndAuthorId(channelId, authorId) {
   authorId = channelId;
   const dependencyMap = authorId;

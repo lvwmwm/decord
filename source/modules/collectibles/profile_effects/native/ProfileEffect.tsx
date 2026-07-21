@@ -1,10 +1,10 @@
-// Module ID: 8206
-// Function ID: 64876
+// Module ID: 8210
+// Function ID: 64888
 // Name: usePreloadProfileEffect
 // Dependencies: []
 // Exports: default
 
-// Module 8206 (usePreloadProfileEffect)
+// Module 8210 (usePreloadProfileEffect)
 function usePreloadProfileEffect(arg0) {
   const arg1 = arg0;
   const items = [arg0];
@@ -85,7 +85,7 @@ function StaticEffect(useThumbnail) {
     let obj = { style: tmp.profileEffects, pointerEvents: "none", onLayout };
   } else {
     obj = { style: tmp.profileEffects, pointerEvents: "none", onLayout };
-    const obj1 = { flex: null, height: null, marginRight: null };
+    const obj1 = { marginVertical: 1124139009, borderRadius: 152976, display: 152975 };
     const obj2 = {};
     if (useThumbnail) {
       reducedMotionSrc = thumbnailPreviewSrc;
@@ -112,7 +112,7 @@ let closure_7 = importDefault(dependencyMap[3]);
 let closure_8 = importDefault(dependencyMap[4]);
 const jsx = arg1(dependencyMap[5]).jsx;
 const tmp2 = arg1(dependencyMap[2]);
-let closure_10 = arg1(dependencyMap[6]).createStyles({ profileEffects: { visible: "showAllButtonUnderline", style: "domInteractive", source: "testId", controls: "category", enable_music_info: "isArray", enable_timestamp: "Icon", utm_source: "isArray", platform: "OPEN_CONTEXT_MENU" }, effect: { position: "absolute" } });
+let closure_10 = arg1(dependencyMap[6]).createStyles({ profileEffects: {}, effect: { position: "absolute" } });
 function ProfileEffect(profileEffect) {
   let replayOnNavigationFocus;
   let style;

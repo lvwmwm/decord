@@ -1,21 +1,21 @@
-// Module ID: 11126
-// Function ID: 86582
+// Module ID: 11132
+// Function ID: 86605
 // Name: ForumPostTypingUsers
 // Dependencies: []
 // Exports: default
 
-// Module 11126 (ForumPostTypingUsers)
+// Module 11132 (ForumPostTypingUsers)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 ({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[2]));
 let obj = arg1(dependencyMap[3]);
-obj = { container: { <string:1373927010>: null, <string:1650543116>: 0, <string:810443091>: 360, <string:1629053384>: 0 }, lastTypingUser: { marginEnd: 0 } };
+obj = { container: { paddingVertical: null, paddingHorizontal: 0, gap: 360, maxWidth: 0 }, lastTypingUser: { marginEnd: 0 } };
 obj = { borderRadius: importDefault(dependencyMap[4]).radii.round };
 obj.typingUser = obj;
-const tmp3 = arg1(dependencyMap[2]);
-obj.dots = { backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_BASE_LOWEST, paddingVertical: importDefault(dependencyMap[4]).space.PX_4, borderRadius: importDefault(dependencyMap[4]).radii.lg };
+const obj1 = { "Null": "e341a934511095337dabafab8c60034b", "Null": "empty_photos", "Null": "png", "Null": 54, "Null": 660, "Null": "100%", "Null": 275, "Null": "relative", "Null": "flex", backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_BASE_LOWEST, paddingVertical: importDefault(dependencyMap[4]).space.PX_4, borderRadius: importDefault(dependencyMap[4]).radii.lg };
+obj.dots = obj1;
 obj.typingText = { flexShrink: 1 };
-const obj1 = { backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_BASE_LOWEST, paddingVertical: importDefault(dependencyMap[4]).space.PX_4, borderRadius: importDefault(dependencyMap[4]).radii.lg };
+const tmp3 = arg1(dependencyMap[2]);
 obj.borderColor = { color: importDefault(dependencyMap[4]).colors.CARD_BACKGROUND_DEFAULT };
 const obj2 = { color: importDefault(dependencyMap[4]).colors.CARD_BACKGROUND_DEFAULT };
 obj.borderColorPressed = { color: importDefault(dependencyMap[4]).colors.CARD_PRIMARY_PRESSED_BG };

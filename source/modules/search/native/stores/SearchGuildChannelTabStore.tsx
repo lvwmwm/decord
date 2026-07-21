@@ -1,9 +1,9 @@
-// Module ID: 11390
-// Function ID: 88581
+// Module ID: 11397
+// Function ID: 88605
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
-// Module 11390 (_isNativeReflectConstruct)
+// Module 11397 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -42,6 +42,12 @@ let closure_14 = () => {
       const boosterMap = obj.getBoosterMap(constants.TEXT_CHANNEL);
       let obj1 = GuildChannelSearchManager(closure_2[8]);
       obj = {
+        contentContainerStyle: "isArray",
+        keyboardShouldPersistTaps: "_oneway",
+        showsHorizontalScrollIndicator: "uri",
+        horizontal: "r",
+        backgroundColor: "isArray",
+        justifyContent: "set",
         query,
         guildId,
         filter() {

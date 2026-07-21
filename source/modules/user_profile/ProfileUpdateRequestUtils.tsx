@@ -1,12 +1,11 @@
-// Module ID: 9767
-// Function ID: 75962
+// Module ID: 9772
+// Function ID: 75978
 // Name: getProfileChangesForUpdateRequest
-// Dependencies: [4294967295, 0, 0]
+// Dependencies: [4294967295, 0, 0, 0]
 // Exports: getAccountUpdateForUpdateRequest, getGuildMemberChangesForUpdateRequest, getPrimaryGuildChangesForUpdateRequest, getProfileChangesForUpdateRequest
 
-// Module 9767 (getProfileChangesForUpdateRequest)
-const _module = require(dependencyMap[3]);
-const result = _module.fileFinishedImporting("modules/user_profile/ProfileUpdateRequestUtils.tsx");
+// Module 9772 (getProfileChangesForUpdateRequest)
+const result = require("__exportStarResult1").fileFinishedImporting("modules/user_profile/ProfileUpdateRequestUtils.tsx");
 
 export const getProfileChangesForUpdateRequest = function getProfileChangesForUpdateRequest(pendingBanner, id) {
   const obj = {};

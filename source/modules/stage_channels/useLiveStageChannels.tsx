@@ -1,10 +1,10 @@
-// Module ID: 14880
-// Function ID: 112113
+// Module ID: 14887
+// Function ID: 112137
 // Name: useAllVisibleChannels
 // Dependencies: []
 // Exports: default, getAllLiveStageChannels, useAllLiveStageChannels
 
-// Module 14880 (useAllVisibleChannels)
+// Module 14887 (useAllVisibleChannels)
 function useAllVisibleChannels(arg0) {
   const arg1 = arg0;
   const items = [closure_3];

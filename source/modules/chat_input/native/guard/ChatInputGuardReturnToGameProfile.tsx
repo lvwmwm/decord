@@ -1,13 +1,13 @@
-// Module ID: 11469
-// Function ID: 89342
+// Module ID: 11476
+// Function ID: 89366
 // Dependencies: []
 
-// Module 11469
+// Module 11476
 const Image = arg1(dependencyMap[1]).Image;
 const jsx = arg1(dependencyMap[2]).jsx;
 const importAllResult = importAll(dependencyMap[0]);
 let obj = {};
-obj = { borderRadius: importDefault(dependencyMap[4]).radii.md };
+obj = { "Bool(true)": "<string:1090519372>", "Bool(true)": "2026-04-gifting-badge", "Bool(true)": "<string:557971297>", borderRadius: importDefault(dependencyMap[4]).radii.md };
 obj.icon = obj;
 let closure_5 = arg1(dependencyMap[3]).createStyles(obj);
 const obj2 = arg1(dependencyMap[3]);

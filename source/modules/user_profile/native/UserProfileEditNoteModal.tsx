@@ -1,10 +1,10 @@
-// Module ID: 11960
-// Function ID: 92456
+// Module ID: 11967
+// Function ID: 92479
 // Name: UserProfileEditNoteModal
 // Dependencies: []
 // Exports: default
 
-// Module 11960 (UserProfileEditNoteModal)
+// Module 11967 (UserProfileEditNoteModal)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[9]).fileFinishedImporting("modules/user_profile/native/UserProfileEditNoteModal.tsx");
@@ -33,7 +33,7 @@ export default function UserProfileEditNoteModal(arg0) {
   const intl = arg1(dependencyMap[5]).intl;
   obj1.title = intl.string(arg1(dependencyMap[5]).t.sHHsOM);
   obj1.headerTitle = function headerTitle() {
-    const obj = { "Bool(true)": "isArray", "Bool(true)": "accessibilityRole" };
+    const obj = { useEffect: "isArray", top: "accessibilityRole" };
     const intl = callback(closure_2[5]).intl;
     obj.children = intl.string(callback(closure_2[5]).t.sHHsOM);
     return handleClose(callback(closure_2[6]).Text, obj);

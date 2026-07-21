@@ -1,29 +1,29 @@
-// Module ID: 13976
-// Function ID: 106284
+// Module ID: 13983
+// Function ID: 106307
 // Name: ResubscribedAlert
 // Dependencies: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 // Exports: default
 
-// Module 13976 (ResubscribedAlert)
-import "result";
-import result from "result";
-import result from "result";
-import result from "result";
-import result from "result";
+// Module 13983 (ResubscribedAlert)
+import "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
 
-({ View: closure_3, Image: closure_4 } = result);
-({ jsx: closure_5, jsxs: closure_6 } = result);
-result = {};
-result = { backgroundColor: require("result").colors.BACKGROUND_MOD_NORMAL };
-result.container = result;
-result.body = {};
-result.centerText = { textAlign: "center" };
-result.headerImage = { aze: null, azj: null };
-result = result.createStyles(result);
-result = result.fileFinishedImporting("modules/guild_role_subscriptions/native/manage_subscriptions/ResubscribedAlert.tsx");
+({ View: closure_3, Image: closure_4 } = __exportStarResult1);
+({ jsx: closure_5, jsxs: closure_6 } = __exportStarResult1);
+__exportStarResult1 = {};
+__exportStarResult1 = { backgroundColor: require("__exportStarResult1").colors.BACKGROUND_MOD_NORMAL };
+__exportStarResult1.container = __exportStarResult1;
+__exportStarResult1.body = { -1622102389: null, 1375445090: null };
+__exportStarResult1.centerText = { textAlign: "center" };
+__exportStarResult1.headerImage = { bhk: null, bic: null };
+__exportStarResult1 = __exportStarResult1.createStyles(__exportStarResult1);
+const result = __exportStarResult1.fileFinishedImporting("modules/guild_role_subscriptions/native/manage_subscriptions/ResubscribedAlert.tsx");
 
 export default function ResubscribedAlert(onClose) {
-  const tmp = result();
+  const tmp = __exportStarResult1();
   let obj = {};
   const intl = arg1(dependencyMap[6]).intl;
   obj.confirmText = intl.string(arg1(dependencyMap[6]).t.NX+WJN);

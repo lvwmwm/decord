@@ -1,9 +1,9 @@
-// Module ID: 6725
-// Function ID: 52390
+// Module ID: 6731
+// Function ID: 52439
 // Name: items
 // Dependencies: []
 
-// Module 6725 (items)
+// Module 6731 (items)
 const items = [require(dependencyMap[0]).Key.F6, "f6"];
 const items1 = [items, , , , , , , ];
 const items2 = [require(dependencyMap[0]).Key.Tab, "tab"];
@@ -31,7 +31,7 @@ const result = _module.fileFinishedImporting("../discord_common/js/shared/consta
 export const KeyboardEventKey = require(dependencyMap[0]).Key;
 export const FOCUS_SECTION_JUMP_KEY = require(dependencyMap[0]).Key.F6;
 export const NavigationKeyShortcutMap = map;
-export const NavigationShortcuts = new Set(["orange_circle", "explicitContentFriendDm", 1, 1, 1.066, "small_red_triangle", "small_red_triangle_down", "small_orange_diamond"]);
+export const NavigationShortcuts = new Set(["white_square_button", "black_square_button", "black_small_square", "white_small_square", "black_medium_small_square", "white_medium_small_square", "black_medium_square", "white_medium_square"]);
 export const KeyboardDeviceTypes = { KEYBOARD_KEY: 0, [0]: "KEYBOARD_KEY", MOUSE_BUTTON: 1, [1]: "MOUSE_BUTTON", KEYBOARD_MODIFIER_KEY: 2, [2]: "KEYBOARD_MODIFIER_KEY", GAMEPAD_BUTTON: 3, [3]: "GAMEPAD_BUTTON" };
 export const LinuxKeyToCode = frozen;
 export const MacosKeyToCode = frozen1;

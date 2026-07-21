@@ -1,10 +1,10 @@
-// Module ID: 5847
-// Function ID: 49644
+// Module ID: 5849
+// Function ID: 49687
 // Name: AnimatedAvatarsAbstractUI
-// Dependencies: [131072, 561250304, 1862270976, 4160749588]
+// Dependencies: [131072, 561250304, 1895825408, 4194304020]
 // Exports: AnimatedAvatarsAbstractUI
 
-// Module 5847 (AnimatedAvatarsAbstractUI)
+// Module 5849 (AnimatedAvatarsAbstractUI)
 const jsx = require(dependencyMap[0]).jsx;
 const _module = require(dependencyMap[3]);
 const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/AnimatedAvatarsAbstractUI.native.tsx");

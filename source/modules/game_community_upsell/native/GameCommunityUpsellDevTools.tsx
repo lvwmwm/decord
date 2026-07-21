@@ -1,10 +1,10 @@
-// Module ID: 14457
-// Function ID: 108957
+// Module ID: 14464
+// Function ID: 108980
 // Name: MultiGuildDevTools
 // Dependencies: []
 // Exports: default
 
-// Module 14457 (MultiGuildDevTools)
+// Module 14464 (MultiGuildDevTools)
 function MultiGuildDevTools() {
   let dismissedCount;
   let guildsCount;
@@ -51,9 +51,9 @@ function MultiGuildDevTools() {
   obj = { style: tmp.container };
   obj = { style: tmp.scrollView };
   obj1 = { style: tmp.section };
-  const obj2 = { width: "8808a38e6856d204cf276ed0f683633e", height: "fr.messages.8808a38e6856d204cf276ed0f683633e.compiled.messages" };
+  const obj2 = {};
   if (0 === mapped.length) {
-    let mapped1 = callback2(callback(dependencyMap[12]).TableRow, { cwd: true, nativeID: true, collapsableChildren: true });
+    let mapped1 = callback2(callback(dependencyMap[12]).TableRow, { style: true, nativeID: true, collapsableChildren: true });
   } else {
     mapped1 = mapped.map((detectableAppName) => {
       const obj = { label: detectableAppName.detectableAppName };
@@ -77,23 +77,21 @@ function MultiGuildDevTools() {
   obj1.children = callback2(callback(dependencyMap[11]).TableRowGroup, obj2);
   const items2 = [callback2(closure_3, obj1), , ];
   const obj3 = { style: tmp.section };
-  const obj4 = { width: "r", height: "getVisibleLayouts" };
-  const obj5 = { cwd: "6e52e8cced22a71740601e6ca82fc624", nativeID: "es-419.messages.6e52e8cced22a71740601e6ca82fc624.compiled.messages", collapsableChildren: "jsona", subLabel: String(guildsCount) };
+  const obj4 = { "Bool(false)": "/assets/.cache/intl/bW9kdWxlcy9pbnRs", "Bool(false)": null };
+  const obj5 = { style: "837672453878b871665e1e66114aefea", nativeID: "ja.messages.837672453878b871665e1e66114aefea.compiled.messages", collapsableChildren: "jsona", subLabel: String(guildsCount) };
   const items3 = [callback2(callback(dependencyMap[12]).TableRow, obj5), , ];
-  const obj6 = { cwd: "5f7c1f2fd36ae64fe020491f66a557d1", nativeID: "es-ES.messages.5f7c1f2fd36ae64fe020491f66a557d1.compiled.messages", collapsableChildren: "jsona", subLabel: String(dismissedCount) };
+  const obj6 = { style: "90d00b19b83abb5315af7cd0e82a3fdd", nativeID: "ko.messages.90d00b19b83abb5315af7cd0e82a3fdd.compiled.messages", collapsableChildren: "jsona", subLabel: String(dismissedCount) };
   items3[1] = callback2(callback(dependencyMap[12]).TableRow, obj6);
-  const obj7 = { cwd: true, nativeID: "/assets/.cache/intl/bW9kdWxlcy9jbGlwcw==", collapsableChildren: null, subLabel: str };
+  const obj7 = { style: true, nativeID: "/assets/.cache/intl/bW9kdWxlcy9jbGlwcw==", collapsableChildren: null, subLabel: str };
   items3[2] = callback2(callback(dependencyMap[12]).TableRow, obj7);
   obj4.children = items3;
   obj3.children = callback3(callback(dependencyMap[11]).TableRowGroup, obj4);
   items2[1] = callback2(closure_3, obj3);
   const obj8 = { style: tmp.section };
-  const obj9 = { width: null, height: null };
+  const obj9 = {};
   const obj10 = { onPress: callback, icon: callback2(callback(dependencyMap[13]).RefreshIcon, {}), trailing: callback2(callback(dependencyMap[14]).TableRowArrow, {}) };
   const items4 = [callback2(callback(dependencyMap[12]).TableRow, obj10), , , ];
   const obj11 = {
-    "Bool(false)": "<string:1455357954>",
-    "Bool(false)": "<string:3565813762>",
     onPress() {
       const result = store.DEV_clearDismissedGuilds();
       callback();
@@ -103,8 +101,6 @@ function MultiGuildDevTools() {
   };
   items4[1] = callback2(callback(dependencyMap[12]).TableRow, obj11);
   const obj12 = {
-    "Bool(false)": "DISMISSIBLE_CONTENT_SHOWN_BEFORE_CONNECTION_OPEN",
-    "Bool(false)": "9qLtWs",
     onPress() {
       store.DEV_clearState();
     },
@@ -113,8 +109,6 @@ function MultiGuildDevTools() {
   };
   items4[2] = callback2(callback(dependencyMap[12]).TableRow, obj12);
   const obj13 = {
-    "Bool(false)": null,
-    "Bool(false)": "d280460baa66780ad374e84d31fc04a4",
     onPress() {
       const result = lib(callback[15]).removeDismissedContent(lib(callback[16]).DismissibleContent.MOBILE_MULTI_GUILD_CREATE_UPSELL_ANIMATION);
       const obj = lib(callback[15]);

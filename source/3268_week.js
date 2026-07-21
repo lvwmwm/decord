@@ -16,7 +16,7 @@ function week(arg0) {
     return combined.concat(arg0[arg0.getUTCDay(arg0)], "' p'-kor'");
   };
 }
-let closure_0 = [-13565950, 2001403906, -1996488144, -1459617232, 2113929586, -1275067921, 520094054];
+let closure_0 = [];
 const obj = { lastWeek: week(false), nextWeek: week(true) };
 
 export default function formatRelative(arg0, arg1) {

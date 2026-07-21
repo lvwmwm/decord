@@ -1,10 +1,10 @@
-// Module ID: 13645
-// Function ID: 103399
+// Module ID: 13652
+// Function ID: 103422
 // Name: FamilyCenterActivityPage
 // Dependencies: []
 // Exports: default
 
-// Module 13645 (FamilyCenterActivityPage)
+// Module 13652 (FamilyCenterActivityPage)
 importAll(dependencyMap[0]);
 ({ View: closure_3, ScrollView: closure_4 } = arg1(dependencyMap[1]));
 const tmp3 = arg1(dependencyMap[1]);

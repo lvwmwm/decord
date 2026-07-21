@@ -1,18 +1,18 @@
-// Module ID: 13525
-// Function ID: 102631
+// Module ID: 13532
+// Function ID: 102654
 // Name: SafetyHubErrorActionSheet
 // Dependencies: []
 // Exports: default
 
-// Module 13525 (SafetyHubErrorActionSheet)
+// Module 13532 (SafetyHubErrorActionSheet)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 ({ jsx: closure_5, jsxs: closure_6 } = arg1(dependencyMap[2]));
 let obj = arg1(dependencyMap[3]);
 obj = {};
-obj = { y: 0, gatedChannel: 0, y: 0, paddingTop: importDefault(dependencyMap[4]).space.PX_8, paddingBottom: importDefault(dependencyMap[4]).space.PX_24, gap: importDefault(dependencyMap[4]).space.PX_16, minHeight: 120 };
+obj = { cix: 0, y: 0, isArray: 0, paddingTop: importDefault(dependencyMap[4]).space.PX_8, paddingBottom: importDefault(dependencyMap[4]).space.PX_24, gap: importDefault(dependencyMap[4]).space.PX_16, minHeight: 120 };
 obj.errorContainer = obj;
-const obj1 = { "Bool(false)": "banned_at", "Bool(false)": "message", "Bool(false)": 101, "Bool(false)": "normal", "Bool(false)": "message", borderRadius: importDefault(dependencyMap[4]).radii.round, backgroundColor: importDefault(dependencyMap[4]).colors.WHITE };
+const obj1 = { height: 41861036943961820000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, width: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011323354719505784, borderRadius: importDefault(dependencyMap[4]).radii.round, backgroundColor: importDefault(dependencyMap[4]).colors.WHITE, marginHorizontal: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000252816181077777 };
 obj.redesignErrorIconContainer = obj1;
 obj.redesignErrorIcon = {};
 let closure_7 = obj.createStyles(obj);

@@ -1,12 +1,12 @@
-// Module ID: 15115
-// Function ID: 114081
+// Module ID: 15122
+// Function ID: 114105
 // Name: CutoutGuildIcon
 // Dependencies: []
 // Exports: default
 
-// Module 15115 (CutoutGuildIcon)
+// Module 15122 (CutoutGuildIcon)
 function CutoutGuildIcon(guild) {
-  let obj = { style: { aze: false, azj: false } };
+  let obj = { style: { bhk: "<string:1027735553>", bic: "<string:4143972873>" } };
   obj = {};
   obj = {};
   const tmp = callback3();
@@ -31,7 +31,7 @@ const tmp2 = arg1(dependencyMap[2]);
 ({ jsx: closure_9, jsxs: closure_10 } = arg1(dependencyMap[5]));
 let obj = arg1(dependencyMap[6]);
 obj = {};
-obj = { 9223372036854775807: true, 9223372036854775807: "/assets/modules/guild_role_subscriptions/native/images", -9223372036854775808: 24, 9223372036854775807: 24, -9223372036854775808: null, 0: "7b2c77b138d492ded1f4019723f50b05", borderRadius: importDefault(dependencyMap[7]).radii.round, backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_BRAND };
+obj = { "Null": true, "Null": "/assets/modules/guild_role_subscriptions/native/images", "Null": 24, "Null": 24, "Null": null, "Null": "7b2c77b138d492ded1f4019723f50b05", borderRadius: importDefault(dependencyMap[7]).radii.round, backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_BRAND };
 obj.container = obj;
 const tmp3 = arg1(dependencyMap[5]);
 obj.guildIconBG = { backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_BASE_LOWER };
@@ -180,7 +180,7 @@ export default function NewContentPill(onPress) {
     obj1.animatedProps = animatedProps;
     obj2 = { onPress: callback, style: tmp.container };
     const items8 = [isFocused(arg1(dependencyMap[18]).ArrowSmallUpIcon, {}), ];
-    obj3 = { Promise: "text-sm/semibold", marginTop: "interactive-text-hover", flags: 3 };
+    obj3 = { "Null": "text-sm/semibold", "Null": "interactive-text-hover", "Null": 3 };
     const obj4 = { marginLeft: 4 };
     obj3.style = obj4;
     const intl = arg1(dependencyMap[20]).intl;

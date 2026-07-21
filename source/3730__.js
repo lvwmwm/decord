@@ -13,7 +13,7 @@ const fn = function _(moment) {
       }
       let sum = str5;
     } else {
-      const obj = { "Bool(true)": "<string:384852224>", "Null": "Array", "Null": "a", "Null": "y", "Null": "call", "Null": "prototype" };
+      const obj = {};
       let str = "\u0441\u0435\u043A\u0443\u043D\u0434\u0443_\u0441\u0435\u043A\u0443\u043D\u0434\u044B_\u0441\u0435\u043A\u0443\u043D\u0434";
       const text = `${arg0} `;
       if (arg1) {
@@ -60,7 +60,7 @@ const fn = function _(moment) {
   obj.monthsShortRegex = /^(январ[ья]|янв\.?|феврал[ья]|февр?\.?|марта?|мар\.?|апрел[ья]|апр\.?|ма[йя]|июн[ья]|июн\.?|июл[ья]|июл\.?|августа?|авг\.?|сентябр[ья]|сент?\.?|октябр[ья]|окт\.?|ноябр[ья]|нояб?\.?|декабр[ья]|дек\.?)/i;
   obj.monthsStrictRegex = /^(январ[яь]|феврал[яь]|марта?|апрел[яь]|ма[яй]|июн[яь]|июл[яь]|августа?|сентябр[яь]|октябр[яь]|ноябр[яь]|декабр[яь])/i;
   obj.monthsShortStrictRegex = /^(янв\.|февр?\.|мар[т.]|апр\.|ма[яй]|июн[ья.]|июл[ья.]|авг\.|сент?\.|окт\.|нояб?\.|дек\.)/i;
-  obj.longDateFormat = { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null };
+  obj.longDateFormat = { <string:1122280543>: 1895826198, <string:3251850218>: 1728054025, <string:306010250>: 1358955273, <string:37429971>: 1835074107, <string:1812403200>: -1200414446, <string:3855182856>: 419430411 };
   obj.calendar = {
     nextWeek(week) {
       const self = this;
@@ -153,7 +153,7 @@ const fn = function _(moment) {
     }
     return arg0 + "-\u0439";
   };
-  obj.week = { "Bool(true)": false, "Bool(true)": false };
+  obj.week = { <string:1431496722>: false, <string:1627556098>: false };
   return moment.defineLocale("ru", obj);
 };
 if ("object" === typeof exports) {
@@ -165,7 +165,7 @@ if ("object" === typeof exports) {
 }
 if ("function" === typeof globalThis.define) {
   if (globalThis.define.amd) {
-    globalThis.define([1782644737], fn);
+    globalThis.define(["HH:mm:ss"], fn);
   }
 }
 fn(this.moment);

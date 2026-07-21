@@ -1,11 +1,9 @@
-// Module ID: 5495
-// Function ID: 46825
+// Module ID: 5497
+// Function ID: 46867
 // Name: SimpleActionSheet
-// Dependencies: [16777237, 33554448, 33554448, 2046820352, 31, 27, 653]
+// Dependencies: []
 
-// Module 5495 (SimpleActionSheet)
-import ME from "ME";
-
+// Module 5497 (SimpleActionSheet)
 class SimpleActionSheet {
   constructor(arg0) {
     ({ hideActionSheet: closure_0, header, options } = global);
@@ -27,7 +25,7 @@ class SimpleActionSheet {
         num2 = 4;
         obj1 = {};
         obj1.onPress = header.onClose;
-        tmp6 = jsx(require("module_31").ActionSheetCloseButton, obj1);
+        tmp6 = jsx(arg1(dependencyMap[4]).ActionSheetCloseButton, obj1);
       }
       obj.trailing = tmp6;
       tmp3Result = tmp3(arg1(dependencyMap[3]).BottomSheetTitleHeader, obj);
@@ -59,14 +57,15 @@ class SimpleActionSheet {
       };
       return callback2(callback(closure_1[5]).ActionSheetRow, obj, arg1);
     });
-    items[1] = jsx(require("get ActivityIndicator").ActionSheetRow.Group, obj2);
+    items[1] = jsx(arg1(dependencyMap[5]).ActionSheetRow.Group, obj2);
     obj.children = items;
     return tmp(arg1(dependencyMap[2]).ActionSheet, obj);
   }
 }
 importAll(dependencyMap[0]);
 ({ jsx: closure_2, jsxs: closure_3 } = arg1(dependencyMap[1]));
-const result = ME.fileFinishedImporting("design/components/Sheet/native/SimpleActionSheet.native.tsx");
+const tmp3 = arg1(dependencyMap[1]);
+const result = arg1(dependencyMap[6]).fileFinishedImporting("design/components/Sheet/native/SimpleActionSheet.native.tsx");
 
 export default SimpleActionSheet;
 export { SimpleActionSheet };

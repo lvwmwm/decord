@@ -1,7 +1,7 @@
 // Module ID: 1003
 // Function ID: 10958
 // Name: _lazyLoadIntegration
-// Dependencies: [1946158075, 1019, 1015]
+// Dependencies: []
 // Exports: lazyLoadIntegration
 
 // Module 1003 (_lazyLoadIntegration)
@@ -85,7 +85,7 @@ async function _lazyLoadIntegration(arg0, arg1, arg2) {
 }
 let closure_2 = require(dependencyMap[0]);
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
-let closure_3 = { <string:1761607814>: true, <string:1929379975>: false, <string:2936012935>: false, <string:2952790151>: false, <string:2969567367>: null, <string:620757127>: null, <string:2147483784>: null, <string:2164261028>: true, <string:2768240804>: true, <string:12980992>: true, <string:12981248>: true, <string:12981504>: true, <string:12984576>: false, <string:12984832>: 0, <string:12985088>: true, <string:12985344>: true, <string:12985600>: true, <string:12985856>: true, <string:12986112>: true, <string:12986368>: true, <string:12986624>: true };
+let closure_3 = {};
 
 export const lazyLoadIntegration = function lazyLoadIntegration(arg0, arg1) {
   return _lazyLoadIntegration(...arguments);

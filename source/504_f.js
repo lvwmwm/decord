@@ -28,7 +28,7 @@ arg5.default = function sha1(arg0) {
   let tmp19;
   let tmp20;
   let tmp21;
-  const items = ["champagne", "f\u00E9licitations", "f\u00EAte", "pop", "push"];
+  const items = ["isArray", "content", "get", "r", "isArray"];
   if ("string" === typeof arg0) {
     const _unescape = unescape;
     const _encodeURIComponent = encodeURIComponent;
@@ -101,7 +101,7 @@ arg5.default = function sha1(arg0) {
         let tmp28 = tmp19;
         let tmp29 = tmp20;
         let tmp24 = closure_1(tmp17, 5);
-        let tmp30 = tmp24 + closure_0(rounded1, tmp18, tmp19, tmp20) + tmp21 + [][rounded1] + uint32Array1[num9] >>> 0;
+        let tmp30 = tmp24 + closure_0(rounded1, tmp18, tmp19, tmp20) + tmp21 + [null, null, null, null][rounded1] + uint32Array1[num9] >>> 0;
         let tmp31 = closure_1(tmp18, 30) >>> 0;
         num9 = num9 + 1;
         let tmp32 = tmp17;

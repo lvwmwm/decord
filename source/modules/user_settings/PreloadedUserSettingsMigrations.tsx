@@ -1,9 +1,9 @@
-// Module ID: 13257
-// Function ID: 100634
+// Module ID: 13264
+// Function ID: 100657
 // Name: migrateDismissibleContent
 // Dependencies: []
 
-// Module 13257 (migrateDismissibleContent)
+// Module 13264 (migrateDismissibleContent)
 function migrateDismissibleContent(userContent, CHANNEL_NOTICE_INVITE) {
   if (null == userContent.userContent) {
     const UserContentSettings = CHANNEL_NOTICE_INVITE(dependencyMap[3]).UserContentSettings;

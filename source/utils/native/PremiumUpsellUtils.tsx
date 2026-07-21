@@ -1,10 +1,10 @@
-// Module ID: 7930
-// Function ID: 63332
+// Module ID: 7934
+// Function ID: 63344
 // Name: usePremiumUpsellConfig
 // Dependencies: []
 // Exports: getUpsellItems, usePremiumUpsellConfig
 
-// Module 7930 (usePremiumUpsellConfig)
+// Module 7934 (usePremiumUpsellConfig)
 function usePremiumUpsellConfig(initialUpsellKey, analyticsLocations2, analyticsLocation) {
   analyticsLocations2 = initialUpsellKey;
   const importDefault = analyticsLocations2;

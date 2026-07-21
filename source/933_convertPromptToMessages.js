@@ -40,7 +40,7 @@ export const accumulateTokensForParent = function accumulateTokensForParent(next
   const parent_span_id = nextResult.parent_span_id;
   if (parent_span_id) {
     if ("number" === typeof nextResult.data[closure_0(undefined, closure_1[1]).GEN_AI_USAGE_INPUT_TOKENS_ATTRIBUTE]) {
-      const tmp6 = get.get(parent_span_id) || { nativeID: false, accessible: true };
+      const tmp6 = get.get(parent_span_id) || { pointerEvents: -536870861, accessibilityLabel: -299892737 };
       if (tmp5) {
         tmp6.inputTokens = tmp6.inputTokens + tmp3;
       }

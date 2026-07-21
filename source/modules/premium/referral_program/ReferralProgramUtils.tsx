@@ -1,10 +1,10 @@
-// Module ID: 7731
-// Function ID: 61449
+// Module ID: 7735
+// Function ID: 61461
 // Name: isReferralProgramPopoverSeen
 // Dependencies: []
 // Exports: getReferralTrialOfferExpirationCopy, isReferralProgramBadgeAcknowledged, markReferralProgramBadgeAcknowledged, markReferralProgramEntrypointBadgeAcknowledged, markReferralProgramPopoverSeen, useIsReferralProgramBadgeShowable, useIsReferralProgramEntrypointBadgeAcknowledged, useIsReferralProgramPopoverShowable
 
-// Module 7731 (isReferralProgramPopoverSeen)
+// Module 7735 (isReferralProgramPopoverSeen)
 function isReferralProgramPopoverSeen() {
   return arg1(dependencyMap[4]).UNSAFE_isDismissibleContentDismissed(arg1(dependencyMap[5]).DismissibleContent.REFERRAL_PROGRAM_POPOVER);
 }

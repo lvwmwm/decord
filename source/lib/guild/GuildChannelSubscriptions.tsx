@@ -1,9 +1,9 @@
-// Module ID: 5658
-// Function ID: 48567
+// Module ID: 5660
+// Function ID: 48610
 // Name: serializeChannelRanges
 // Dependencies: []
 
-// Module 5658 (serializeChannelRanges)
+// Module 5660 (serializeChannelRanges)
 function serializeChannelRanges(arr) {
   const obj = {};
   const importDefault = obj;

@@ -1,10 +1,10 @@
-// Module ID: 11868
-// Function ID: 91901
+// Module ID: 11875
+// Function ID: 91924
 // Name: LinkButton
 // Dependencies: []
 // Exports: default
 
-// Module 11868 (LinkButton)
+// Module 11875 (LinkButton)
 function LinkButton(arg0) {
   let lineClamp;
   let text;
@@ -21,7 +21,7 @@ function LinkButton(arg0) {
     children: callback(arg1(dependencyMap[8]).Text, obj)
   };
   obj = { lineClamp, style: tmp.link, children: items };
-  const items = [, text];
+  const items = [1958871041, text];
   return callback2(Pressable, obj);
 }
 let closure_3 = importAll(dependencyMap[0]);
@@ -30,7 +30,7 @@ const AnalyticEvents = arg1(dependencyMap[2]).AnalyticEvents;
 const CHANGELOG_URL = arg1(dependencyMap[3]).CHANGELOG_URL;
 ({ jsxs: closure_7, jsx: closure_8, Fragment: closure_9 } = arg1(dependencyMap[4]));
 const tmp2 = arg1(dependencyMap[4]);
-let closure_10 = arg1(dependencyMap[5]).createStyles({ text: {}, span: { alignSelf: "fi", flexDirection: "GameDepthTier9LargeBadge", flexWrap: "sdk", gap: "forEach", isEnabled: "isArray", isRoadblocksEnabled: "LoOB1F" }, link: {} });
+let closure_10 = arg1(dependencyMap[5]).createStyles({ text: {}, span: { RECONNECT: "<string:1627390345>", resetPendingPrimaryGuildChanges: "<string:1274297>", MOBILE_BOTTOM_SHEET: "<string:3175153664>", "Bool(true)": "<string:1627391032>", "Bool(true)": "<string:1895895481>", "Bool(true)": "Map" }, link: {} });
 const obj = arg1(dependencyMap[5]);
 const result = arg1(dependencyMap[13]).fileFinishedImporting("modules/profile_customization/native/BioText.tsx");
 

@@ -1,10 +1,10 @@
-// Module ID: 12342
-// Function ID: 94425
+// Module ID: 12349
+// Function ID: 94448
 // Name: GuildBoostingGuildListItem
 // Dependencies: []
 // Exports: default
 
-// Module 12342 (GuildBoostingGuildListItem)
+// Module 12349 (GuildBoostingGuildListItem)
 function GuildBoostingGuildListItem(guildId) {
   const arg1 = guildId.guildId;
   const tmp = callback3();
@@ -64,11 +64,11 @@ const tmp3 = arg1(dependencyMap[1]);
 ({ jsx: closure_8, jsxs: closure_9 } = arg1(dependencyMap[5]));
 let obj = arg1(dependencyMap[6]);
 obj = {};
-obj = { "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, borderRadius: importDefault(dependencyMap[7]).radii.xs, backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_BASE_LOWEST };
+obj = { 2020177986: false, 794191851: false, 2016636988: true, 217331042: "/assets/design/components/Icon/native/redesign/generated/images", 1634492774: 24, 2019063893: 24, 2019522654: null, <string:1350061944>: "07355a598097545c3503439dcc045f96", borderRadius: importDefault(dependencyMap[7]).radii.xs, backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_BASE_LOWEST };
 obj.guildCard = obj;
 obj.guildIcon = { marginRight: 16 };
 obj.guildCardDescription = { flex: 1 };
-obj.subscriptionInfo = { -9223372036854775808: true, filter: true };
+obj.subscriptionInfo = {};
 obj.premiumGuildImage = {};
 let closure_10 = obj.createStyles(obj);
 const tmp4 = arg1(dependencyMap[5]);

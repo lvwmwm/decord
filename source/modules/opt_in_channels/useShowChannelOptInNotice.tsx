@@ -1,10 +1,10 @@
-// Module ID: 10419
-// Function ID: 80280
+// Module ID: 10425
+// Function ID: 80303
 // Name: useShowChannelOptInNotice
 // Dependencies: []
 // Exports: default
 
-// Module 10419 (useShowChannelOptInNotice)
+// Module 10425 (useShowChannelOptInNotice)
 let closure_2 = importDefault(dependencyMap[0]);
 const NULL_STRING_GUILD_ID = arg1(dependencyMap[1]).NULL_STRING_GUILD_ID;
 const ChannelFlags = arg1(dependencyMap[2]).ChannelFlags;

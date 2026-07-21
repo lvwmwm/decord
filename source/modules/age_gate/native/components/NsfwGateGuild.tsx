@@ -1,10 +1,10 @@
-// Module ID: 9337
-// Function ID: 72958
+// Module ID: 9341
+// Function ID: 72972
 // Name: NsfwGateGuild
 // Dependencies: []
 // Exports: default
 
-// Module 9337 (NsfwGateGuild)
+// Module 9341 (NsfwGateGuild)
 let closure_3 = importAll(dependencyMap[0]);
 ({ View: closure_4, Image: closure_5 } = arg1(dependencyMap[1]));
 let closure_6 = importDefault(dependencyMap[2]);
@@ -16,10 +16,10 @@ const tmp3 = arg1(dependencyMap[5]);
 ({ jsx: closure_11, jsxs: closure_12 } = arg1(dependencyMap[6]));
 let obj = arg1(dependencyMap[7]);
 obj = {};
-obj = { -9223372036854775808: "r", 9223372036854775807: "overlayButton", 0: "r", -9223372036854775808: "LinkingTypes", backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_BASE_LOW };
+obj = { backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_BASE_LOW };
 obj.container = obj;
-obj.header = { person_pouting: -0.0014069081515246523, cv: -0.0001058445630777106 };
-obj.description = { person_pouting: 52881784.83212474, cv: 0.0000000000000000000000000000000000000000000000000000000000000000000000011319598867188059 };
+obj.header = { collapsable: "absolute", preventClipping: 0 };
+obj.description = { collapsable: 52881784.83212474, preventClipping: 0.0000000000000000000000000000000000000000000000000000000000000000000000011319598867188059 };
 obj.image = { marginBottom: 16 };
 let closure_13 = obj.createStyles(obj);
 const tmp4 = arg1(dependencyMap[6]);
@@ -71,10 +71,10 @@ export default function NsfwGateGuild(guildId) {
   items1[1] = callback(closure_5, obj);
   obj1 = { style: tmp.header, children: stringResult };
   items1[2] = callback(arg1(dependencyMap[15]).Text, obj1);
-  items1[3] = callback(arg1(dependencyMap[15]).Text, { style: tmp.description, children: stringResult1 });
-  const formatResult = intl3.format(arg1(dependencyMap[9]).t.Z12LNW, obj);
-  const obj2 = { style: tmp.description, children: stringResult1 };
-  items1[4] = callback(arg1(dependencyMap[15]).Text, { style: tmp.description, children: intl3.format(arg1(dependencyMap[9]).t.Z12LNW, obj) });
+  const obj2 = { "Null": "absolute", "Null": 0, "Null": "center", style: tmp.description, children: stringResult1 };
+  items1[3] = callback(arg1(dependencyMap[15]).Text, obj2);
+  const obj3 = { "Null": "absolute", "Null": 0, "Null": "center", style: tmp.description, children: intl3.format(arg1(dependencyMap[9]).t.Z12LNW, obj) };
+  items1[4] = callback(arg1(dependencyMap[15]).Text, obj3);
   const obj4 = { onPress: guildId.onClose, size: "md" };
   const intl4 = arg1(dependencyMap[9]).intl;
   obj4.text = intl4.string(arg1(dependencyMap[9]).t.gRqiWV);

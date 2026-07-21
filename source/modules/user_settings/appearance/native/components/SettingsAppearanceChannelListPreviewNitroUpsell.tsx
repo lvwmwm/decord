@@ -1,17 +1,17 @@
-// Module ID: 14059
-// Function ID: 106792
+// Module ID: 14066
+// Function ID: 106815
 // Name: SettingsAppearanceChannelListPreviewNitroUpsellComponent
 // Dependencies: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4294967295]
 
-// Module 14059 (SettingsAppearanceChannelListPreviewNitroUpsellComponent)
-import importAllResult from "result";
-import result from "result";
-import closure_6 from "result";
-import result from "result";
-import result from "result";
-import closure_12 from "result";
-import result from "result";
-import importDefaultResult from "result";
+// Module 14066 (SettingsAppearanceChannelListPreviewNitroUpsellComponent)
+import importAllResult from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
+import closure_6 from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
+import closure_12 from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
+import importDefaultResult from "__exportStarResult1";
 
 function SettingsAppearanceChannelListPreviewNitroUpsellComponent(theme) {
   theme = theme.theme;
@@ -57,10 +57,10 @@ function SettingsAppearanceChannelListPreviewNitroUpsellComponent(theme) {
   obj.children = items1;
   return callback2(View, obj);
 }
-const StyleSheet = result.StyleSheet;
-const View = result.View;
-({ AnalyticsPages: closure_7, AnalyticsSections: closure_8, ThemeTypes: closure_9 } = result);
-({ jsx: closure_10, jsxs: closure_11 } = result);
+const StyleSheet = __exportStarResult1.StyleSheet;
+const View = __exportStarResult1.View;
+({ AnalyticsPages: closure_7, AnalyticsSections: closure_8, ThemeTypes: closure_9 } = __exportStarResult1);
+({ jsx: closure_10, jsxs: closure_11 } = __exportStarResult1);
 let closure_13 = [null, null];
 let closure_14 = { code: "function animationEntering_SettingsAppearanceChannelListPreviewNitroUpsellTsx1(visible){const{withSpring,springStandard}=this.__closure;return{opacity:withSpring(visible,springStandard)};}" };
 let closure_15 = () => {
@@ -97,18 +97,18 @@ let closure_18 = () => {
 let obj = {};
 obj = {};
 const merged = Object.assign(StyleSheet.absoluteFillObject);
-obj["borderBottomStartRadius"] = require("result").radii.xl;
-obj["borderBottomEndRadius"] = require("result").radii.xl;
-obj["height"] = 2 * require("result").space.PX_96;
-obj["padding"] = require("result").space.PX_24;
+obj["borderBottomStartRadius"] = require("__exportStarResult1").radii.xl;
+obj["borderBottomEndRadius"] = require("__exportStarResult1").radii.xl;
+obj["height"] = 2 * require("__exportStarResult1").space.PX_96;
+obj["padding"] = require("__exportStarResult1").space.PX_24;
 obj["justifyContent"] = "flex-end";
 obj["top"] = undefined;
 obj["overflow"] = "hidden";
 obj.nitroUpsell = obj;
-obj.nitroWheelIcon = { height: require("result").space.PX_16, width: require("result").space.PX_16 };
-let closure_19 = result.createStyles(obj);
+obj.nitroWheelIcon = { height: require("__exportStarResult1").space.PX_16, width: require("__exportStarResult1").space.PX_16 };
+let closure_19 = __exportStarResult1.createStyles(obj);
 let closure_20 = { code: "function SettingsAppearanceChannelListPreviewNitroUpsellTsx4(){const{theme,ThemeTypes,StyleSheet,withSpring,springStandard}=this.__closure;const opacity=theme.theme===ThemeTypes.LIGHT?0.5:1;return{...StyleSheet.absoluteFillObject,opacity:withSpring(opacity,springStandard)};}" };
-const obj1 = { height: require("result").space.PX_16, width: require("result").space.PX_16 };
+const obj1 = { height: require("__exportStarResult1").space.PX_16, width: require("__exportStarResult1").space.PX_16 };
 const memoResult = importAllResult.memo(function SettingsAppearanceChannelListPreviewNitroUpsell(visible) {
   let obj = arg1(dependencyMap[20]);
   const items = [closure_6];
@@ -135,6 +135,6 @@ const memoResult = importAllResult.memo(function SettingsAppearanceChannelListPr
   obj.renderItem = callback;
   return closure_10(importDefault(dependencyMap[21]), obj);
 });
-result = arg1(dependencyMap[22]).fileFinishedImporting("modules/user_settings/appearance/native/components/SettingsAppearanceChannelListPreviewNitroUpsell.tsx");
+const result = arg1(dependencyMap[22]).fileFinishedImporting("modules/user_settings/appearance/native/components/SettingsAppearanceChannelListPreviewNitroUpsell.tsx");
 
 export default memoResult;

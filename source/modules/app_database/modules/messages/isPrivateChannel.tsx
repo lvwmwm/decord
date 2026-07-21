@@ -1,10 +1,10 @@
-// Module ID: 6704
-// Function ID: 52105
+// Module ID: 6710
+// Function ID: 52154
 // Name: isPrivateChannel
-// Dependencies: []
+// Dependencies: [284214097]
 // Exports: isPrivateChannel
 
-// Module 6704 (isPrivateChannel)
+// Module 6710 (isPrivateChannel)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("modules/app_database/modules/messages/isPrivateChannel.tsx");
 

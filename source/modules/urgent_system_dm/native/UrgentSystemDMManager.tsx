@@ -1,8 +1,8 @@
-// Module ID: 16043
-// Function ID: 123268
+// Module ID: 16050
+// Function ID: 123299
 // Dependencies: []
 
-// Module 16043
+// Module 16050
 let importDefaultResult = importDefault(dependencyMap[0]);
 importDefaultResult = new importDefaultResult(() => {
   let obj = importDefault(dependencyMap[1]);

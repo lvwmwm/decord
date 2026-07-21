@@ -1,7 +1,7 @@
 // Module ID: 1264
 // Function ID: 14268
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [1929379890, 1728053298]
 // Exports: formatToPlainString
 
 // Module 1264 (_isNativeReflectConstruct)

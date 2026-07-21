@@ -1,9 +1,9 @@
 // Module ID: 11630
-// Function ID: 90286
+// Function ID: 90284
 // Dependencies: []
 
 // Module 11630
 const _module = require(dependencyMap[0]);
-const obj = { url: 25865281, content: -968814336, messageId: 1912603216, channel_id: 375, no: 300, "Null": 1093222913, "Null": -167051262, "Null": 2102460417, scales: [] };
+const obj = { isConnected: true, isInternetReachable: true, details: true, reachabilityUrl: true, reachabilityMethod: true, reachabilityHeaders: true, reachabilityTest: true, reachabilityShortTimeout: true, scales: [] };
 
 export default _module.registerAsset(obj);

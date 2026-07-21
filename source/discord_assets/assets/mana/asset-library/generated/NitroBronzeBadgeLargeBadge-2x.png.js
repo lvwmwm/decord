@@ -1,9 +1,9 @@
-// Module ID: 6304
-// Function ID: 50330
+// Module ID: 6306
+// Function ID: 50373
 // Name: vanityUrl
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 6304 (vanityUrl)
+// Module 6306 (vanityUrl)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/NitroBronzeBadgeLargeBadge-2x.png.js");
 

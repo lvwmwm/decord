@@ -1,10 +1,10 @@
-// Module ID: 11119
-// Function ID: 86559
+// Module ID: 11125
+// Function ID: 86582
 // Name: getForumPostShouldObscure
 // Dependencies: []
 // Exports: getObscureReasonForAttachment, getObscureReasonForEmbed, getObscureReasonForUnfurledMediaItem, getObscuredAlt, useShouldObscure
 
-// Module 11119 (getForumPostShouldObscure)
+// Module 11125 (getForumPostShouldObscure)
 function getForumPostShouldObscure(media, arg1, enabledHarmTypesBitmaskForChannelType) {
   if (null == media) {
     const items = [false, undefined];

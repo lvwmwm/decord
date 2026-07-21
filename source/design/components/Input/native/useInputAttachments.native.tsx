@@ -1,10 +1,10 @@
-// Module ID: 5772
-// Function ID: 49366
+// Module ID: 5774
+// Function ID: 49409
 // Name: estimateAttachmentWidth
 // Dependencies: []
 // Exports: useInputAttachments
 
-// Module 5772 (estimateAttachmentWidth)
+// Module 5774 (estimateAttachmentWidth)
 let Platform;
 function estimateAttachmentWidth(arg0, arg1) {
   let num = 0;

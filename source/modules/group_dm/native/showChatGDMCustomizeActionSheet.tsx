@@ -1,10 +1,10 @@
-// Module ID: 9095
-// Function ID: 71291
+// Module ID: 9099
+// Function ID: 71303
 // Name: showChatGDMCustomizeActionSheet
 // Dependencies: []
 // Exports: default
 
-// Module 9095 (showChatGDMCustomizeActionSheet)
+// Module 9099 (showChatGDMCustomizeActionSheet)
 const _module = require(dependencyMap[4]);
 const result = _module.fileFinishedImporting("modules/group_dm/native/showChatGDMCustomizeActionSheet.tsx");
 

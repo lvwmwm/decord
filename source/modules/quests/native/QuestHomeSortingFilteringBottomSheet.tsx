@@ -1,10 +1,10 @@
-// Module ID: 13771
-// Function ID: 104088
+// Module ID: 13778
+// Function ID: 104111
 // Name: isFilterOptionEqual
 // Dependencies: []
 // Exports: default
 
-// Module 13771 (isFilterOptionEqual)
+// Module 13778 (isFilterOptionEqual)
 function isFilterOptionEqual(group, group2) {
   return group.group === group2.group && group.filter === group2.filter;
 }
@@ -29,12 +29,12 @@ function FilterFooter(inline) {
   obj.onLayout = onLayout;
   obj = { bottom: true };
   obj = { direction: "vertical", style: tmp.footerButtonGroup };
-  const obj1 = { <string:827419580>: false, <string:3246023682>: false };
+  const obj1 = { 1644382730: false, -665385918: false };
   const intl = arg1(dependencyMap[10]).intl;
   obj1.text = intl.string(arg1(dependencyMap[10]).t.i4jeWR);
   obj1.onPress = onConfirm;
   const items = [callback2(arg1(dependencyMap[9]).Button, obj1), ];
-  const obj2 = { <string:827419580>: false, <string:3246023682>: false, <string:2120772540>: false, <string:3368122975>: false, <string:1381477602>: false };
+  const obj2 = { 1644382730: false, -665385918: false, -1355657998: false, -2105708375: false, -241082440: false };
   const intl2 = arg1(dependencyMap[10]).intl;
   obj2.text = intl2.string(arg1(dependencyMap[10]).t.yBZMsQ);
   obj2.onPress = onReset;
@@ -53,7 +53,7 @@ let obj = arg1(dependencyMap[5]);
 obj = {};
 obj = { paddingHorizontal: importDefault(dependencyMap[6]).space.PX_16 };
 obj.content = obj;
-obj.bodyContainer = { "Null": null, "Null": null };
+obj.bodyContainer = {};
 const tmp2 = arg1(dependencyMap[4]);
 obj.footerInline = { paddingTop: importDefault(dependencyMap[6]).space.PX_16 };
 const obj1 = { paddingTop: importDefault(dependencyMap[6]).space.PX_16 };

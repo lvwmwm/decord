@@ -4,6 +4,6 @@
 
 // Module 4093
 const _module = require(dependencyMap[0]);
-const obj = { url: null, content: null, messageId: null, channel_id: null, no: null, "Null": null, "Null": null, "Null": null, scales: [] };
+const obj = { isConnected: "heading-sm/semibold", isInternetReachable: "display", details: false, reachabilityUrl: 600, reachabilityMethod: 14, reachabilityHeaders: 18, reachabilityTest: "heading-sm/bold", reachabilityShortTimeout: "display", scales: [] };
 
 export default _module.registerAsset(obj);

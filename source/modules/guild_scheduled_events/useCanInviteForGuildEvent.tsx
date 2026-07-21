@@ -1,10 +1,10 @@
-// Module ID: 8351
-// Function ID: 66578
+// Module ID: 8355
+// Function ID: 66590
 // Name: canEveryoneRoleViewEvent
 // Dependencies: []
 // Exports: default
 
-// Module 8351 (canEveryoneRoleViewEvent)
+// Module 8355 (canEveryoneRoleViewEvent)
 function canEveryoneRoleViewEvent(guildEvent, items1) {
   let obj;
   let tmp = items1;

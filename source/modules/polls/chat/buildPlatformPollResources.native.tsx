@@ -1,10 +1,10 @@
-// Module ID: 7893
-// Function ID: 62864
+// Module ID: 7897
+// Function ID: 62876
 // Name: buildPlatformPollResources
 // Dependencies: []
 // Exports: buildPlatformPollResources, getAvatarUrl
 
-// Module 7893 (buildPlatformPollResources)
+// Module 7897 (buildPlatformPollResources)
 let closure_3 = importDefault(dependencyMap[0]).mapValues(arg1(dependencyMap[1]).pollStyleSets, (arg0) => {
   const arg1 = arg0;
   let closure_1 = arg1(dependencyMap[2]).createNativeStyleProperties((arg0) => {

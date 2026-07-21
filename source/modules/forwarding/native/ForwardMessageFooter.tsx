@@ -1,10 +1,10 @@
-// Module ID: 9880
-// Function ID: 76510
+// Module ID: 9885
+// Function ID: 76526
 // Name: ForwardMessageFooter
 // Dependencies: []
 // Exports: ForwardMessageFooter
 
-// Module 9880 (ForwardMessageFooter)
+// Module 9885 (ForwardMessageFooter)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 let closure_5 = importDefault(dependencyMap[2]);

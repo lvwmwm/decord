@@ -1,10 +1,10 @@
-// Module ID: 6475
-// Function ID: 50586
+// Module ID: 6477
+// Function ID: 50629
 // Name: ServerIconGeargrindExample
 // Dependencies: []
 // Exports: ServerIconGeargrindExample
 
-// Module 6475 (ServerIconGeargrindExample)
+// Module 6477 (ServerIconGeargrindExample)
 const jsx = require(dependencyMap[0]).jsx;
 const _module = require(dependencyMap[3]);
 const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/ServerIconGeargrindExample.native.tsx");

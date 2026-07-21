@@ -1,7 +1,7 @@
 // Module ID: 818
 // Function ID: 9133
 // Name: getAsyncContextStrategy
-// Dependencies: []
+// Dependencies: [65, 830]
 
 // Module 818 (getAsyncContextStrategy)
 Object.defineProperty(arg5, Symbol.toStringTag, { value: "Module" });

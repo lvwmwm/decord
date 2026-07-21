@@ -659,7 +659,7 @@ function handleMessageAck(messageId) {
   } else {
     flag = messageId !== value._ackMessageId;
     if (flag) {
-      const obj = { "Null": null, "Null": null, "Null": null, messageId };
+      const obj = { metrics_period_ms: "ERROR", total_tasks: "ERROR", total_exec_time_ns: "NOT_RESPONDER", messageId };
       flag = value.ack(obj);
     }
   }
@@ -1465,11 +1465,11 @@ const tmp10 = () => {
       const self = this;
       if (arg1) {
         if (self._lastMessageTimestamp < closure_75) {
-          return { "Bool(false)": "FRAME_SET_PROXY_TICKET_REFRESHING", "Bool(false)": null, "Bool(false)": false };
+          return { deaf: true, mute: true, mute: true };
         } else if (!closure_38.isChannelRecordOrParentOptedIn(basicPermissions)) {
           if (!self.hasRecentlyVisitedAndRead()) {
             if (self.mentionCount <= 0) {
-              return { "Bool(false)": "FRAME_SET_PROXY_TICKET_REFRESHING", "Bool(false)": null, "Bool(false)": false };
+              return { deaf: true, mute: true, mute: true };
             }
           }
         }
@@ -1477,11 +1477,11 @@ const tmp10 = () => {
       if ("basicPermissions" in basicPermissions) {
         let obj = callback(closure_2[51]);
         if (!obj.has(basicPermissions.basicPermissions, constants.VIEW_CHANNEL)) {
-          return { "Bool(false)": "FRAME_SET_PROXY_TICKET_REFRESHING", "Bool(false)": null, "Bool(false)": false };
+          return { deaf: true, mute: true, mute: true };
         }
       } else if (closure_12.isChannelGated(self.guildId, self.channelId)) {
         if (!closure_35.can(constants2.VIEW_CHANNEL, basicPermissions)) {
-          return { "Bool(false)": "FRAME_SET_PROXY_TICKET_REFRESHING", "Bool(false)": null, "Bool(false)": false };
+          return { deaf: true, mute: true, mute: true };
         }
       }
       if (!arg3) {
@@ -1567,7 +1567,7 @@ const tmp10 = () => {
             self._persisted = true;
             callback(closure_2[46])(() => {
               const HTTP = self(closure_2[47]).HTTP;
-              const obj = { CONVERSATIONS: null, replace: null, push: null, url: closure_44.PINS_ACK(self.channelId) };
+              const obj = { lc: null, type: null, end: null, url: closure_44.PINS_ACK(self.channelId) };
               return HTTP.post(obj);
             });
           }
@@ -2028,7 +2028,7 @@ const tmp10 = () => {
       if (rounded !== this.lastViewed) {
         self.lastViewed = rounded;
         if (tmp4) {
-          self.ack({ 0: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000021043611947808288, 0: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000053357352779429986 });
+          self.ack({ "Null": true, "Null": true });
         }
         const tmp4 = self.canTrackUnreads() && !self.hasUnread();
       }
@@ -2376,7 +2376,7 @@ let tmp13 = (Store) => {
     key: "getGuildChannelUnreadState",
     value(id) {
       const ReadStateStoreClass = id;
-      return store.getValue(id.id, constants.CHANNEL, (getGuildChannelUnreadState) => getGuildChannelUnreadState.getGuildChannelUnreadState(getGuildChannelUnreadState, arg1, arg2, arg3, arg4), { "Bool(false)": "FRAME_SET_PROXY_TICKET_REFRESHING", "Bool(false)": null, "Bool(false)": false });
+      return store.getValue(id.id, constants.CHANNEL, (getGuildChannelUnreadState) => getGuildChannelUnreadState.getGuildChannelUnreadState(getGuildChannelUnreadState, arg1, arg2, arg3, arg4), { deaf: true, mute: true, mute: true });
     }
   };
   items[12] = {
@@ -3016,7 +3016,7 @@ tmp13 = new tmp13(importDefault(dependencyMap[44]), {
             if (null != currentUser) {
               const obj4 = { rawMessage: message, userId: currentUser.id, suppressEveryone: closure_38.isSuppressEveryoneEnabled(value.guildId), suppressRoles: closure_38.isSuppressRolesEnabled(value.guildId) };
               if (obj8.isRawMessageMentioned(obj4)) {
-                let obj5 = { <string:77106753>: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000021043611947808288, <string:2565423616>: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000053357352779429986 };
+                let obj5 = { "Bool(false)": true, "Bool(false)": true };
               }
               if (obj5.shouldMention) {
                 value.isMentionLowImportance = obj5.isMentionLowImportance;
@@ -3032,25 +3032,25 @@ tmp13 = new tmp13(importDefault(dependencyMap[44]), {
             }
             const channel = store3.getChannel(message.channel_id);
             if (isNonMutedPrivateMessage(channel)) {
-              obj5 = { <string:77106753>: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000021043611947808288, <string:2565423616>: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000053357352779429986 };
+              obj5 = { "Bool(false)": true, "Bool(false)": true };
             } else {
               if (closure_38.mentionOnAllMessages) {
                 if (null != channel) {
                   if (channel.isThread()) {
                     if (obj12.computeThreadNotificationSetting(channel) === ThreadMemberFlags.ALL_MESSAGES) {
-                      obj5 = { <string:77106753>: null, <string:2565423616>: null };
+                      obj5 = { "Bool(false)": null, "Bool(false)": null };
                     }
                     const obj12 = arg1(dependencyMap[63]);
                   } else if (!channel.isVocal()) {
                     if (!closure_38.isChannelMuted(channel.guild_id, channel.id)) {
                       if (closure_38.resolvedMessageNotifications(channel) === constants9.ALL_MESSAGES) {
-                        obj5 = { <string:77106753>: null, <string:2565423616>: null };
+                        obj5 = { "Bool(false)": null, "Bool(false)": null };
                       }
                     }
                   }
                 }
               }
-              obj5 = {};
+              obj5 = { "Bool(false)": null, "Bool(false)": null };
             }
           } else {
             let type;
@@ -3091,7 +3091,8 @@ tmp13 = new tmp13(importDefault(dependencyMap[44]), {
   },
   CHANNEL_LOCAL_ACK: function handleChannelLocalAck(channelId) {
     const value = tmp10.get(channelId.channelId);
-    return value.ack({ messageId: undefined, immediate: undefined, force: undefined });
+    const obj = { marginHorizontal: 0.00000000000012079226508160464, flexWrap: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000005284811110255134, flexDirection: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000373522725896865, paddingRight: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000589836854968713, justifyContent: -26815615859885486000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, alignItems: 216209879607475860000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, messageId: undefined, immediate: undefined, force: undefined };
+    return value.ack(obj);
   },
   CHANNEL_PINS_ACK: function handleChannelPinsAck(channelId) {
     const value = tmp10.get(channelId.channelId);
@@ -3178,7 +3179,7 @@ tmp13 = new tmp13(importDefault(dependencyMap[44]), {
       const value = tmp10.get(channelId);
       if (!value.hasMentions()) {
         value.oldestUnreadMessageId = null;
-        let obj = { <string:416872388>: null, <string:4107876586>: null };
+        let obj = { "Null": null, "Null": null };
         obj = { section: constants3.CHANNEL, object: constants2.ACK_VOICE_CHANNEL_SELECT, objectType: constants.ACK_SEMI_AUTOMATIC };
         obj.location = obj;
         return value.ack(obj);
@@ -3305,9 +3306,10 @@ tmp13 = new tmp13(importDefault(dependencyMap[44]), {
     let onFinished;
     ({ channels, context, onFinished } = arg0);
     function _handleBulkAck(channels, context, onFinished) {
-      const item = channels.forEach((messageId) => {
-        const value = closure_79.get(messageId.channelId, messageId.readStateType);
-        value.ack({ messageId: messageId.messageId, immediate: undefined, force: undefined });
+      const item = channels.forEach((channelId) => {
+        const value = closure_79.get(channelId.channelId, channelId.readStateType);
+        const obj = { marginHorizontal: 0.00000000000012079226508160464, flexWrap: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000005284811110255134, flexDirection: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000373522725896865, paddingRight: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000589836854968713, justifyContent: -26815615859885486000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, alignItems: 216209879607475860000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, messageId: channelId.messageId, immediate: undefined, force: undefined };
+        value.ack(obj);
       });
       if (context === closure_46) {
         const push = navigation.push;
@@ -3577,7 +3579,7 @@ tmp13 = new tmp13(importDefault(dependencyMap[44]), {
         return false;
       } else {
         value.ackMessageId = ackedId;
-        const obj = { "Null": null, "Null": null, "Null": null, messageId: ackedId };
+        const obj = { marginLeft: "ERROR", height: "ERROR", alignItems: "NOT_RESPONDER", messageId: ackedId };
         value.ack(obj);
       }
     }
@@ -4019,7 +4021,7 @@ const obj = {
             if (null != currentUser) {
               const obj4 = { rawMessage: message, userId: currentUser.id, suppressEveryone: closure_38.isSuppressEveryoneEnabled(value.guildId), suppressRoles: closure_38.isSuppressRolesEnabled(value.guildId) };
               if (obj8.isRawMessageMentioned(obj4)) {
-                let obj5 = { <string:77106753>: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000021043611947808288, <string:2565423616>: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000053357352779429986 };
+                let obj5 = { "Bool(false)": true, "Bool(false)": true };
               }
               if (obj5.shouldMention) {
                 value.isMentionLowImportance = obj5.isMentionLowImportance;
@@ -4035,25 +4037,25 @@ const obj = {
             }
             const channel = store3.getChannel(message.channel_id);
             if (isNonMutedPrivateMessage(channel)) {
-              obj5 = { <string:77106753>: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000021043611947808288, <string:2565423616>: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000053357352779429986 };
+              obj5 = { "Bool(false)": true, "Bool(false)": true };
             } else {
               if (closure_38.mentionOnAllMessages) {
                 if (null != channel) {
                   if (channel.isThread()) {
                     if (obj12.computeThreadNotificationSetting(channel) === ThreadMemberFlags.ALL_MESSAGES) {
-                      obj5 = { <string:77106753>: null, <string:2565423616>: null };
+                      obj5 = { "Bool(false)": null, "Bool(false)": null };
                     }
                     const obj12 = arg1(dependencyMap[63]);
                   } else if (!channel.isVocal()) {
                     if (!closure_38.isChannelMuted(channel.guild_id, channel.id)) {
                       if (closure_38.resolvedMessageNotifications(channel) === constants9.ALL_MESSAGES) {
-                        obj5 = { <string:77106753>: null, <string:2565423616>: null };
+                        obj5 = { "Bool(false)": null, "Bool(false)": null };
                       }
                     }
                   }
                 }
               }
-              obj5 = {};
+              obj5 = { "Bool(false)": null, "Bool(false)": null };
             }
           } else {
             let type;
@@ -4094,7 +4096,8 @@ const obj = {
   },
   CHANNEL_LOCAL_ACK: function handleChannelLocalAck(channelId) {
     const value = tmp10.get(channelId.channelId);
-    return value.ack({ messageId: undefined, immediate: undefined, force: undefined });
+    const obj = { marginHorizontal: 0.00000000000012079226508160464, flexWrap: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000005284811110255134, flexDirection: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000373522725896865, paddingRight: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000589836854968713, justifyContent: -26815615859885486000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, alignItems: 216209879607475860000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, messageId: undefined, immediate: undefined, force: undefined };
+    return value.ack(obj);
   },
   CHANNEL_PINS_ACK: function handleChannelPinsAck(channelId) {
     const value = tmp10.get(channelId.channelId);
@@ -4181,7 +4184,7 @@ const obj = {
       const value = tmp10.get(channelId);
       if (!value.hasMentions()) {
         value.oldestUnreadMessageId = null;
-        let obj = { <string:416872388>: null, <string:4107876586>: null };
+        let obj = { "Null": null, "Null": null };
         obj = { section: constants3.CHANNEL, object: constants2.ACK_VOICE_CHANNEL_SELECT, objectType: constants.ACK_SEMI_AUTOMATIC };
         obj.location = obj;
         return value.ack(obj);
@@ -4308,9 +4311,10 @@ const obj = {
     let onFinished;
     ({ channels, context, onFinished } = arg0);
     function _handleBulkAck(channels, context, onFinished) {
-      const item = channels.forEach((messageId) => {
-        const value = closure_79.get(messageId.channelId, messageId.readStateType);
-        value.ack({ messageId: messageId.messageId, immediate: undefined, force: undefined });
+      const item = channels.forEach((channelId) => {
+        const value = closure_79.get(channelId.channelId, channelId.readStateType);
+        const obj = { marginHorizontal: 0.00000000000012079226508160464, flexWrap: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000005284811110255134, flexDirection: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000373522725896865, paddingRight: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000589836854968713, justifyContent: -26815615859885486000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, alignItems: 216209879607475860000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, messageId: channelId.messageId, immediate: undefined, force: undefined };
+        value.ack(obj);
       });
       if (context === closure_46) {
         const push = navigation.push;
@@ -4580,7 +4584,7 @@ const obj = {
         return false;
       } else {
         value.ackMessageId = ackedId;
-        const obj = { "Null": null, "Null": null, "Null": null, messageId: ackedId };
+        const obj = { marginLeft: "ERROR", height: "ERROR", alignItems: "NOT_RESPONDER", messageId: ackedId };
         value.ack(obj);
       }
     }

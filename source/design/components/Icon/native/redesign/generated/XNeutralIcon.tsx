@@ -1,10 +1,10 @@
-// Module ID: 7762
-// Function ID: 61666
+// Module ID: 7766
+// Function ID: 61678
 // Name: XNeutralIcon
 // Dependencies: []
 // Exports: XNeutralIcon
 
-// Module 7762 (XNeutralIcon)
+// Module 7766 (XNeutralIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[4]).fileFinishedImporting("design/components/Icon/native/redesign/generated/XNeutralIcon.tsx");

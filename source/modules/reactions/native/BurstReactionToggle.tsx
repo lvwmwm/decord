@@ -1,10 +1,10 @@
-// Module ID: 9328
-// Function ID: 72906
+// Module ID: 9332
+// Function ID: 72920
 // Name: BurstReactionToggle
 // Dependencies: []
 // Exports: default
 
-// Module 9328 (BurstReactionToggle)
+// Module 9332 (BurstReactionToggle)
 let closure_3 = importAll(dependencyMap[0]);
 const Pressable = arg1(dependencyMap[1]).Pressable;
 let closure_5 = importDefault(dependencyMap[2]);
@@ -16,7 +16,7 @@ obj.easing = Easing.out(arg1(dependencyMap[5]).Easing.quad);
 let closure_9 = {};
 let closure_10 = { code: "function BurstReactionToggleTsx1(){const{reducedMotion,targetBackgroundColor,backgroundColor,rotation}=this.__closure;const _backgroundColor=reducedMotion?targetBackgroundColor:backgroundColor.get();const _rotation=reducedMotion?0:rotation.get();return{backgroundColor:_backgroundColor,transform:[{rotate:_rotation+\"deg\"}]};}" };
 obj = {};
-obj = { CHANNEL_FOLLOWER_STATS: "/assets/design/components/Illustration/native/redesign/generated/images", useApplicationIdentityLinkedRolesEnabled: 120, paddingTop: 96, REVIEW_REQUEST_DEFERRED: null, base64GIFRegex: "f9c127df442a3e2592e404fc380b1a52", borderRadius: importDefault(dependencyMap[8]).modules.button.BORDER_RADIUS };
+obj = { "Bool(true)": "/assets/design/components/Illustration/native/redesign/generated/images", "Bool(true)": 120, "Bool(true)": 96, "Bool(true)": null, "Bool(true)": "f9c127df442a3e2592e404fc380b1a52", borderRadius: importDefault(dependencyMap[8]).modules.button.BORDER_RADIUS };
 obj.container = obj;
 let closure_11 = arg1(dependencyMap[11]).createStyles(obj);
 const obj2 = arg1(dependencyMap[11]);

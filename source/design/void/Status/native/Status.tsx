@@ -1,10 +1,10 @@
-// Module ID: 12887
-// Function ID: 98398
+// Module ID: 12894
+// Function ID: 98421
 // Name: getStatusSource
 // Dependencies: []
 // Exports: StatusWithTyping, default
 
-// Module 12887 (getStatusSource)
+// Module 12894 (getStatusSource)
 function getStatusSource(status, streaming, flag, flag2) {
   if (streaming) {
     return importDefault(dependencyMap[10]);
@@ -36,7 +36,7 @@ const tmp3 = arg1(dependencyMap[2]);
 const tmp4 = arg1(dependencyMap[5]);
 ({ jsx: closure_11, jsxs: closure_12 } = arg1(dependencyMap[6]));
 const tmp5 = arg1(dependencyMap[6]);
-let closure_13 = arg1(dependencyMap[7]).createStyles({ statusIcon: { aze: 30271555, azj: 22092032 } });
+let closure_13 = arg1(dependencyMap[7]).createStyles({ statusIcon: {} });
 const obj = arg1(dependencyMap[7]);
 let closure_14 = arg1(dependencyMap[7]).createStyles((arg0, arg1) => {
   let dotSize;

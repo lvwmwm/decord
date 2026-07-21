@@ -1,10 +1,10 @@
-// Module ID: 8479
-// Function ID: 67714
+// Module ID: 8483
+// Function ID: 67726
 // Name: Loading
 // Dependencies: []
 // Exports: default
 
-// Module 8479 (Loading)
+// Module 8483 (Loading)
 function Loading() {
   const tmp = callback4();
   const items = [];
@@ -36,12 +36,12 @@ const tmp2 = arg1(dependencyMap[2]);
 ({ jsx: closure_13, Fragment: closure_14, jsxs: closure_15 } = arg1(dependencyMap[9]));
 let obj = arg1(dependencyMap[10]);
 obj = {};
-obj = { 396577459: "redesign/message-preview/semibold", -380404912: "primary", 791211009: false, 1359503782: 600, borderRadius: importDefault(dependencyMap[11]).radii.sm, backgroundColor: importDefault(dependencyMap[11]).colors.BACKGROUND_MOD_MUTED };
+obj = { <string:2072385530>: "redesign/message-preview/semibold", <string:503443283>: "primary", <string:1638258217>: false, <string:1019498760>: 600, borderRadius: importDefault(dependencyMap[11]).radii.sm, backgroundColor: importDefault(dependencyMap[11]).colors.BACKGROUND_MOD_MUTED };
 obj.placeholderHeader = obj;
-const obj1 = { paddingVertical: 43429554630913340000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, flexDirection: 216209880155298300000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, alignItems: 12236022931463798000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, borderRadius: importDefault(dependencyMap[11]).radii.sm, backgroundColor: importDefault(dependencyMap[11]).colors.BACKGROUND_MOD_MUTED };
-obj.placeholderLabel = obj1;
-obj.errorEmptyState = { backgroundColor: "transparent" };
 const tmp3 = arg1(dependencyMap[9]);
+obj.placeholderLabel = { borderRadius: importDefault(dependencyMap[11]).radii.sm, backgroundColor: importDefault(dependencyMap[11]).colors.BACKGROUND_MOD_MUTED };
+obj.errorEmptyState = { backgroundColor: "transparent" };
+const obj1 = { borderRadius: importDefault(dependencyMap[11]).radii.sm, backgroundColor: importDefault(dependencyMap[11]).colors.BACKGROUND_MOD_MUTED };
 obj.searchAndShareContainer = { borderTopWidth: 1, borderColor: importDefault(dependencyMap[11]).colors.BORDER_SUBTLE, marginTop: importDefault(dependencyMap[11]).space.PX_8, paddingVertical: importDefault(dependencyMap[11]).space.PX_8, paddingHorizontal: importDefault(dependencyMap[11]).space.PX_12, flexDirection: "column", gap: importDefault(dependencyMap[11]).space.PX_12 };
 const obj2 = { borderTopWidth: 1, borderColor: importDefault(dependencyMap[11]).colors.BORDER_SUBTLE, marginTop: importDefault(dependencyMap[11]).space.PX_8, paddingVertical: importDefault(dependencyMap[11]).space.PX_8, paddingHorizontal: importDefault(dependencyMap[11]).space.PX_12, flexDirection: "column", gap: importDefault(dependencyMap[11]).space.PX_12 };
 obj.inviteAgeText = { paddingBottom: importDefault(dependencyMap[11]).space.PX_8, paddingHorizontal: importDefault(dependencyMap[11]).space.PX_4 };
@@ -179,7 +179,7 @@ export default function InstantInviteActionSheet(channel) {
   }
   const first = callback(React.useState(tmp23), 1)[0];
   obj = { value: analyticsLocations };
-  obj = { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null };
+  obj = { <string:466257670>: null, <string:1723177918>: null, <string:1549967611>: null };
   let tmp27 = null != stateFromStores1;
   if (!tmp27) {
     tmp27 = !tmp20;
@@ -222,7 +222,7 @@ export default function InstantInviteActionSheet(channel) {
       const obj9 = { contentContainerStyle: tmp.shareApps, onItemPressed: callback1 };
       const items10 = [callback2(importDefault(dependencyMap[32]), obj9), ];
       const obj10 = { style: tmp.searchAndShareContainer };
-      const obj11 = { "Null": false, "Null": false, onChange: arg1(dependencyMap[34]).searchInviteSuggestions };
+      const obj11 = { "Null": null, "Null": null, onChange: arg1(dependencyMap[34]).searchInviteSuggestions };
       if (null != targetApplicationId) {
         const intl5 = arg1(dependencyMap[28]).intl;
         let stringResult = intl5.string(arg1(dependencyMap[28]).t.iI1gMg);

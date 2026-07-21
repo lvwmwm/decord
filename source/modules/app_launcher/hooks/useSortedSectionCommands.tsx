@@ -1,10 +1,10 @@
-// Module ID: 11240
-// Function ID: 87491
+// Module ID: 11246
+// Function ID: 87514
 // Name: useSortedSectionCommands
 // Dependencies: []
 // Exports: default
 
-// Module 11240 (useSortedSectionCommands)
+// Module 11246 (useSortedSectionCommands)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 const CommandListSortOrder = arg1(dependencyMap[2]).CommandListSortOrder;

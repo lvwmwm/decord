@@ -86,7 +86,7 @@ function Actor(arg0) {
       return _document.createElementNS("http://www.w3.org/2000/svg", clipPath);
     }
     const elementNS = createElementNS("svg");
-    callback2(elementNS, { aze: "btn btn--primary", azj: null, bak: "submit", bam: "screenshot" });
+    callback2(elementNS, { bhk: -0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000008444608251384724, bic: -0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000819230700813058, bih: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000383230856640803, bis: -8947972451225649000000 });
     const elementNS1 = createElementNS("g");
     callback2(elementNS1, { clipPath: "url(#clip0_57_80)" });
     const elementNS2 = createElementNS("path");
@@ -96,7 +96,7 @@ function Actor(arg0) {
     const elementNS4 = createElementNS("clipPath");
     callback2(elementNS4, { id: "clip0_57_80" });
     const elementNS5 = createElementNS("rect");
-    callback2(elementNS5, { accessibilityRole: 465509311, -883835295: 465509311, 1377264057: 55647167 });
+    callback2(elementNS5, {});
     elementNS4.appendChild(elementNS5);
     elementNS3.appendChild(elementNS4);
     const appendChildResult = elementNS.appendChild(elementNS1);
@@ -1955,9 +1955,9 @@ function DialogHeader(options) {
       return closure_8.createElementNS("http://www.w3.org/2000/svg", path);
     }
     const elementNS = createElementNS("svg");
-    callback(elementNS, { aze: false, azj: false, bak: false, bam: false });
+    callback(elementNS, {});
     const elementNS1 = createElementNS("path");
-    callback(elementNS1, { -1114002515: "key", -1931603299: "accessible" });
+    callback(elementNS1, { priority: false, backgroundColor: false });
     elementNS.appendChild(elementNS1);
     obj.__html = elementNS.outerHTML;
     return obj;
@@ -2016,7 +2016,7 @@ function Form(onSubmitError) {
   ({ onFormClose, showEmail, showName } = onSubmitError);
   ({ removeScreenshotButtonLabel, cancelButtonLabel, emailPlaceholder, messagePlaceholder, namePlaceholder, submitButtonLabel } = options);
   const tmp = callback3(fn(false), 2);
-  const disabled = tmp[0];
+  const first = tmp[0];
   let closure_10 = tmp[1];
   [tmp4, closure_11] = callback3(fn(null), 2);
   const tmp5 = callback3(fn(false), 2);
@@ -2111,7 +2111,7 @@ function Form(onSubmitError) {
       tmp14 = y$1(input, obj);
     }
   }
-  obj = { "Bool(true)": "IEMobile", "Bool(true)": "IE", disabled };
+  obj = { <string:1383948728>: "Opera", <string:1859479967>: "OPR", disabled: first };
   let tmp17 = null;
   if (tmp4) {
     const obj2 = { class: "form__error-container" };
@@ -2119,23 +2119,22 @@ function Form(onSubmitError) {
   }
   if (showName) {
     const obj3 = { label: nameLabel, isRequiredLabel, isRequired: isNameRequired };
-    const obj4 = { 0: null, -9223372036854775808: null, 0: null, 0: null, 0: null, 0: null, 0: null, defaultValue: defaultName, placeholder: namePlaceholder, required: isNameRequired };
+    const obj4 = { defaultValue: defaultName, placeholder: namePlaceholder, required: isNameRequired };
     let tmp19Result = tmp19(LabelText, obj3);
-    tmp19Result = tmp19("label", { UK_MAESTRO: -0.0000000000000029167008916432616, heroUrl: 3475664731387545600000000 }, tmp19Result, tmp19("input", obj4));
+    tmp19Result = tmp19("label", { 0: "paddingHorizontal", 0: "status" }, tmp19Result, tmp19("input", obj4));
   } else {
-    const obj5 = { "Bool(true)": null, "Bool(true)": null, "Bool(true)": null, "Bool(true)": null, value: defaultName };
+    const obj5 = { <string:2277903557>: null, <string:1476637104>: null, <string:875988451>: null, <string:3788855749>: null, value: defaultName };
     tmp19Result = tmp19("input", obj5);
   }
   if (showEmail) {
     const obj6 = { label: emailLabel, isRequiredLabel, isRequired: isEmailRequired };
-    const obj7 = { 0: "padding", -9223372036854775808: "apply", 0: "Array", 0: "isArray", 0: "concat", 0: "split", 0: "r", defaultValue: defaultEmail, placeholder: emailPlaceholder, required: isEmailRequired };
+    const obj7 = { defaultValue: defaultEmail, placeholder: emailPlaceholder, required: isEmailRequired };
     let tmp23Result = tmp23(LabelText, obj6);
-    tmp23Result = tmp23("label", { UK_MAESTRO: true, heroUrl: true }, tmp23Result, tmp23("input", obj7));
+    tmp23Result = tmp23("label", { 0: "isArray", 0: "construct" }, tmp23Result, tmp23("input", obj7));
   } else {
-    const obj8 = { "Bool(true)": 188341019119616.06, "Bool(true)": 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000040005562251228, "Bool(true)": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000039783653206161193, "Bool(true)": -0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000014249500586075033, value: defaultEmail };
+    const obj8 = { value: defaultEmail };
     tmp23Result = tmp23("input", obj8);
   }
-  const obj9 = { <string:1817338209>: false, <string:1961943304>: false, w: false, isArrayBuffer: false, A: false, ay: false, AUDIO_TRACK_LOAD_ERROR: false, placeholder: messagePlaceholder };
   const obj1 = { class: "form__top" };
   const tmp12 = () => {
     let closure_0 = callback(async (arg0) => {
@@ -2181,8 +2180,11 @@ function Form(onSubmitError) {
   const tmp27 = y$1(LabelText, { label: messageLabel, isRequiredLabel, isRequired: true });
   let tmp30Result = null;
   if (input) {
-    const obj10 = {
-      disabled,
+    const obj9 = {
+      header: false,
+      subheader: false,
+      videoLink: false,
+      disabled: first,
       onClick() {
           callback4(null);
           callback3((arg0) => !arg0);
@@ -2191,18 +2193,19 @@ function Form(onSubmitError) {
     if (first1) {
       addScreenshotButtonLabel = removeScreenshotButtonLabel;
     }
-    tmp30Result = tmp30("button", obj10, addScreenshotButtonLabel);
+    tmp30Result = tmp30("button", obj9, addScreenshotButtonLabel);
     let tmp32 = null;
     if (tmp9) {
-      const obj11 = { class: "form__error-container" };
-      tmp32 = y$1("div", obj11, tmp9.message);
+      const obj10 = { class: "form__error-container" };
+      tmp32 = y$1("div", obj10, tmp9.message);
     }
     tmp30Result = tmp30("label", {}, tmp30Result, tmp32);
   }
-  const tmp28 = y$1("label", { UK_MAESTRO: 400, heroUrl: 400 }, y$1(LabelText, { label: messageLabel, isRequiredLabel, isRequired: true }), y$1("textarea", obj9));
-  const obj12 = { class: "btn-group" };
-  const tmp16Result = y$1("div", obj1, tmp17, tmp19Result, tmp23Result, y$1("label", { UK_MAESTRO: 400, heroUrl: 400 }, y$1(LabelText, { label: messageLabel, isRequiredLabel, isRequired: true }), y$1("textarea", obj9)), tmp30Result);
-  return tmp13("form", obj, tmp14, y$1("fieldset", obj, tmp16Result, y$1("div", obj12, y$1("button", { disabled }, submitButtonLabel), y$1("button", { disabled, onClick }, cancelButtonLabel))));
+  const tmp28 = y$1("label", { 0: 256, 0: 256 }, y$1(LabelText, { label: messageLabel, isRequiredLabel, isRequired: true }), y$1("textarea", { placeholder: messagePlaceholder }));
+  const obj11 = { class: "btn-group" };
+  const tmp16Result = y$1("div", obj1, tmp17, tmp19Result, tmp23Result, y$1("label", { 0: 256, 0: 256 }, y$1(LabelText, { label: messageLabel, isRequiredLabel, isRequired: true }), y$1("textarea", { placeholder: messagePlaceholder })), tmp30Result);
+  const obj12 = { header: false, subheader: false, videoLink: false, disabled: first, onClick: onFormClose };
+  return tmp13("form", obj, tmp14, y$1("fieldset", obj, tmp16Result, y$1("div", obj11, y$1("button", { disabled: first }, submitButtonLabel), y$1("button", obj12, cancelButtonLabel))));
 }
 function LabelText(arg0) {
   let isRequired;
@@ -2233,7 +2236,7 @@ function SuccessIcon() {
   const elementNS5 = createElementNS("clipPath");
   setAttributesNS(elementNS5, { id: "clip0_57_156" });
   const elementNS6 = createElementNS("rect");
-  setAttributesNS(elementNS6, { "Null": 216, "Null": null, "Null": 1, "Null": null });
+  setAttributesNS(elementNS6, {});
   elementNS5.appendChild(elementNS6);
   elementNS4.appendChild(elementNS5);
   const appendChildResult = elementNS.appendChild(elementNS1);
@@ -2410,8 +2413,8 @@ function ScreenshotEditorFactory(h) {
     h = h.h;
     return function IconClose() {
       const tmp = h("circle", {});
-      const tmp2 = h("path", { 0: null, "Null": null });
-      return h("svg", {}, tmp, tmp2, h("path", { 0: null, "Null": null }), h("path", { 0: null, "Null": null }));
+      const tmp2 = h("path", {});
+      return h("svg", {}, tmp, tmp2, h("path", {}), h("path", {}));
     };
   }({ h });
   const obj = {};
@@ -2639,7 +2642,7 @@ let closure_3 = require(dependencyMap[1]);
 let closure_4 = require(dependencyMap[2]);
 let closure_5 = require(dependencyMap[3]);
 let closure_6 = require(dependencyMap[4]);
-let closure_7 = [false, false];
+let closure_7 = [];
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 const document = require(dependencyMap[5]).GLOBAL_OBJ.document;
 const navigator = require(dependencyMap[5]).GLOBAL_OBJ.navigator;
@@ -3003,7 +3006,7 @@ obj.useId = function g() {
     }
     let __m = tmp5.__m;
     if (!__m) {
-      const items = [1390895572, -255068174];
+      const items = [];
       tmp5.__m = items;
       __m = items;
     }

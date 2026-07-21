@@ -1,9 +1,9 @@
-// Module ID: 10918
-// Function ID: 84915
+// Module ID: 10923
+// Function ID: 84936
 // Name: metadata
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 10918 (metadata)
+// Module 10923 (metadata)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_assets/assets/orbs/quest_reward_mobile_idle_dark.png.js");
 

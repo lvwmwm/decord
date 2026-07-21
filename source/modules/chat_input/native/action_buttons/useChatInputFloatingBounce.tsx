@@ -1,10 +1,10 @@
-// Module ID: 11336
-// Function ID: 88153
+// Module ID: 11342
+// Function ID: 88176
 // Name: useChatInputFloatingBounce
 // Dependencies: []
 // Exports: default
 
-// Module 11336 (useChatInputFloatingBounce)
+// Module 11342 (useChatInputFloatingBounce)
 let closure_2 = importDefault(dependencyMap[0]);
 let closure_3 = importAll(dependencyMap[1]);
 ({ CHAT_INPUT_FLOATING_BOUNCE_SPRING_CONFIG: closure_4, CHAT_INPUT_FLOATING_COLLAPSED_SCALE: closure_5, CHAT_INPUT_FLOATING_ENTER_OPACITY_TIMING_CONFIG: closure_6, CHAT_INPUT_FLOATING_EXIT_TIMING_CONFIG: closure_7 } = arg1(dependencyMap[2]));

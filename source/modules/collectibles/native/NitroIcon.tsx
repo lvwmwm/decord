@@ -1,10 +1,10 @@
-// Module ID: 8744
-// Function ID: 69133
+// Module ID: 8748
+// Function ID: 69145
 // Name: NitroIcon
 // Dependencies: []
 // Exports: default
 
-// Module 8744 (NitroIcon)
+// Module 8748 (NitroIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/collectibles/native/NitroIcon.tsx");

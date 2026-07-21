@@ -1,10 +1,10 @@
-// Module ID: 5927
-// Function ID: 49764
+// Module ID: 5929
+// Function ID: 49807
 // Name: CatIllocon
 // Dependencies: []
 // Exports: CatIllocon
 
-// Module 5927 (CatIllocon)
+// Module 5929 (CatIllocon)
 const jsx = require(dependencyMap[0]).jsx;
 const _module = require(dependencyMap[3]);
 const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/CatIllocon.native.tsx");

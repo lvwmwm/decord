@@ -1,15 +1,15 @@
-// Module ID: 8466
-// Function ID: 67551
+// Module ID: 8470
+// Function ID: 67563
 // Name: GuildStageChannelSelection
 // Dependencies: []
 // Exports: default
 
-// Module 8466 (GuildStageChannelSelection)
+// Module 8470 (GuildStageChannelSelection)
 importAll(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 let closure_5 = importDefault(dependencyMap[2]);
 const jsx = arg1(dependencyMap[3]).jsx;
-let closure_7 = arg1(dependencyMap[4]).createStyles({ channelText: {} });
+let closure_7 = arg1(dependencyMap[4]).createStyles({ channelText: { display: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004172013485186689, alignItems: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000254470373541481 } });
 const obj = arg1(dependencyMap[4]);
 const result = arg1(dependencyMap[13]).fileFinishedImporting("modules/stage_channels/native/modals/GuildStageChannelSelection.tsx");
 
@@ -50,8 +50,7 @@ export default function GuildStageChannelSelection(channel) {
     obj2.openLazy(channel(handleSelectChannel[10])(handleSelectChannel[9], handleSelectChannel.paths), "SelectUpdatesChannel", obj);
   }
   function renderChannelHook(children) {
-    const obj = { INTEGRATION_CREATE: 160, ConstraintReasonCode: 160, children };
-    return callback(channel(handleSelectChannel[12]).Text, obj, arg1);
+    return callback(channel(handleSelectChannel[12]).Text, { children }, arg1);
   }
   let obj = arg1(handleSelectChannel[5]);
   const channelsUserCanStartStageIn = obj.useChannelsUserCanStartStageIn(channel.guild);
@@ -66,7 +65,7 @@ export default function GuildStageChannelSelection(channel) {
       stageName: tmp3,
       stageHook: renderChannelHook,
       changeHook(children) {
-          const obj = { sendAnalytics: null, renderSettingSearchResultItem: "abf5b4249ea38c96687799aa130b2321", MISSED_MESSAGES_DEFAULT: "img_no_results_darker", onPress: handleSelectChannel, children };
+          const obj = { <string:1641826129>: "SERVER_GUIDE_CHANNEL_SELECTED", <string:1536381433>: "showSkipAvatarModal", <string:217770353>: "Array", onPress: handleSelectChannel, children };
           return callback(channel(handleSelectChannel[12]).Text, obj, arg1);
         }
     };

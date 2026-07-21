@@ -9,7 +9,7 @@ if (0 === roundToNearestPixelResult) {
   roundToNearestPixelResult = 1 / require(dependencyMap[0]).default.get();
   const _default2 = require(dependencyMap[0]).default;
 }
-let obj = { maxFontSizeMultiplier: "isArray", handleSpeakingWhileMuted: "skuId", WIDEVINE: "T", selectable: "r", selectionColor: "isArray" };
+let obj = { "Bool(true)": "center", "Bool(true)": null, "Bool(true)": 4, "Bool(true)": 4, "Bool(true)": "rgba(0, 0, 0, 0.75)" };
 obj = { hairlineWidth: roundToNearestPixelResult };
 obj.absoluteFill = obj;
 obj.absoluteFillObject = obj;

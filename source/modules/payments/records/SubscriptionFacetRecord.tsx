@@ -1,9 +1,9 @@
-// Module ID: 6655
-// Function ID: 51251
+// Module ID: 6661
+// Function ID: 51300
 // Name: _isNativeReflectConstruct
 // Dependencies: [5, 6, 7, 1891, 1884, 2, 6]
 
-// Module 6655 (_isNativeReflectConstruct)
+// Module 6661 (_isNativeReflectConstruct)
 import asyncGeneratorStep from "asyncGeneratorStep";
 import closure_1 from "_classCallCheck";
 import _defineProperties from "_defineProperties";
@@ -125,4 +125,4 @@ export default (arg0) => {
     }
   ];
   return callback(SubscriptionFacetRecord, null, items);
-}(require("keys"));
+}(require("result2"));

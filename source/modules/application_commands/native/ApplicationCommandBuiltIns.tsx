@@ -1,9 +1,9 @@
-// Module ID: 7921
-// Function ID: 63262
+// Module ID: 7925
+// Function ID: 63274
 // Name: get untranslatedDescription
 // Dependencies: []
 
-// Module 7921 (get untranslatedDescription)
+// Module 7925 (get untranslatedDescription)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 const obj = { type: arg1(dependencyMap[3]).ApplicationCommandType.CHAT, inputType: arg1(dependencyMap[4]).ApplicationCommandInputType.BUILT_IN, applicationId: arg1(dependencyMap[2]).BuiltInSectionId.BUILT_IN };

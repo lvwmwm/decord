@@ -1,10 +1,10 @@
-// Module ID: 9871
-// Function ID: 76451
+// Module ID: 9876
+// Function ID: 76467
 // Name: makeAutocompleterSearchParams
 // Dependencies: []
 // Exports: useShareSearchResults
 
-// Module 9871 (makeAutocompleterSearchParams)
+// Module 9876 (makeAutocompleterSearchParams)
 function makeAutocompleterSearchParams(arg0) {
   let obj = arg1(dependencyMap[6]);
   const quickSwitcherOptions = obj.getQuickSwitcherOptions(arg0);
@@ -66,7 +66,7 @@ export const useShareSearchResults = function useShareSearchResults(targetDestin
   const items1 = [stateFromStores];
   const memo = React.useMemo(() => {
     let obj = {};
-    obj = { items: "BG_GRADIENT_RETRO_RAINCLOUD_1", keyboardShouldPersistTaps: 73.12, triggerOnTap: "BG_GRADIENT_HANAMI_1" };
+    obj = { position: "BG_GRADIENT_RETRO_RAINCLOUD_1", left: 73.12, right: null };
     const items = ["user:" + stateFromStores];
     obj.blacklist = new Set(items);
     obj.searchOptions = obj;

@@ -1,10 +1,10 @@
-// Module ID: 8467
-// Function ID: 67559
+// Module ID: 8471
+// Function ID: 67571
 // Name: DeleteEventAlert
 // Dependencies: []
 // Exports: default
 
-// Module 8467 (DeleteEventAlert)
+// Module 8471 (DeleteEventAlert)
 let closure_3 = importDefault(dependencyMap[0]);
 importAll(dependencyMap[1]);
 let closure_4 = importDefault(dependencyMap[2]);

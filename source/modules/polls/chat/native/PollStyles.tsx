@@ -1,9 +1,9 @@
-// Module ID: 7894
-// Function ID: 62873
+// Module ID: 7898
+// Function ID: 62885
 // Name: normal
 // Dependencies: []
 
-// Module 7894 (normal)
+// Module 7898 (normal)
 function normal(border) {
   const require = border;
   const obj = { border: border.colors.BORDER_SUBTLE, borderWidth: 1, fill: border.colors.CARD_SECONDARY_BG };

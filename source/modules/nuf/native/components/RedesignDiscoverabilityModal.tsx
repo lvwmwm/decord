@@ -1,9 +1,9 @@
-// Module ID: 15997
-// Function ID: 122769
+// Module ID: 16004
+// Function ID: 122795
 // Name: DiscoverabilityLandingScene
 // Dependencies: []
 
-// Module 15997 (DiscoverabilityLandingScene)
+// Module 16004 (DiscoverabilityLandingScene)
 function DiscoverabilityLandingScene(onComplete) {
   onComplete = onComplete.onComplete;
   const arg1 = onComplete;
@@ -96,9 +96,6 @@ class RedesignDiscoverabilityModal {
     obj.screens = importAll.useMemo(() => function getScreens(arg0) {
       let obj = {};
       obj = {
-        1370275409: 24,
-        1398917168: 24,
-        1638217297: null,
         impressionName: arg0(closure_2[16]).ImpressionNames.DISCOVERABILITY,
         headerLeft() {
           return null;
@@ -120,9 +117,6 @@ class RedesignDiscoverabilityModal {
       };
       obj[arg0(closure_2[12]).DiscoverabilityScenes.LANDING] = obj;
       obj = {
-        1370275409: 24,
-        1398917168: 24,
-        1638217297: null,
         impressionName: arg0(closure_2[16]).ImpressionNames.DISCOVERABILITY,
         headerTitle() {
           return null;
@@ -151,10 +145,10 @@ let obj = arg1(dependencyMap[6]);
 obj = {};
 obj = { backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_BASE_LOW };
 obj.header = obj;
-obj.container = { backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_BASE_LOW, paddingTop: arg1(dependencyMap[8]).NAV_BAR_HEIGHT + 32 };
+const obj1 = { "Bool(false)": "isArray", "Bool(false)": "accessibilityRole", "Bool(false)": "value", "Bool(false)": "container", backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_BASE_LOW, paddingTop: arg1(dependencyMap[8]).NAV_BAR_HEIGHT + 32 };
+obj.container = obj1;
 let closure_8 = obj.createStyles(obj);
 RedesignDiscoverabilityModal.modalConfig = { animation: arg1(dependencyMap[4]).ModalAnimation.SLIDE_IN_OUT };
-const obj1 = { backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_BASE_LOW, paddingTop: arg1(dependencyMap[8]).NAV_BAR_HEIGHT + 32 };
 const result = arg1(dependencyMap[20]).fileFinishedImporting("modules/nuf/native/components/RedesignDiscoverabilityModal.tsx");
 
 export default RedesignDiscoverabilityModal;

@@ -1,7 +1,7 @@
 // Module ID: 3745
 // Function ID: 28580
 // Name: isCommunicationDisabled
-// Dependencies: []
+// Dependencies: [284214097]
 // Exports: isMemberCommunicationDisabled
 
 // Module 3745 (isCommunicationDisabled)

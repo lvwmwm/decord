@@ -1,9 +1,9 @@
-// Module ID: 12551
-// Function ID: 96542
+// Module ID: 12558
+// Function ID: 96565
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
-// Module 12551 (_isNativeReflectConstruct)
+// Module 12558 (_isNativeReflectConstruct)
 let Consents;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
@@ -219,7 +219,7 @@ function performQuery() {
         obj = { query: _var };
         let tmp18;
         if (!frictionlessGDMsEnabled) {
-          obj = { MAX_LENGTH: null, MAX_SAFE_COMPONENT_LENGTH: null, MAX_SAFE_BUILD_LENGTH: null, staff: tmp6 };
+          obj = { staff: tmp6 };
           tmp18 = obj;
         }
         obj.filters = tmp18;

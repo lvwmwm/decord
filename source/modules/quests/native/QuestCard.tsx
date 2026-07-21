@@ -1,9 +1,9 @@
-// Module ID: 13858
-// Function ID: 104822
+// Module ID: 13865
+// Function ID: 104845
 // Name: ESTIMATED_CARD_HEIGHT
 // Dependencies: []
 
-// Module 13858 (ESTIMATED_CARD_HEIGHT)
+// Module 13865 (ESTIMATED_CARD_HEIGHT)
 let StyleSheet;
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
@@ -48,7 +48,7 @@ const result2 = obj3.experimental_createToken((theme) => {
 const PX_16 = importDefault(dependencyMap[9]).space.PX_16;
 let obj4 = arg1(dependencyMap[10]);
 let obj = {};
-obj = { borderRadius: importDefault(dependencyMap[9]).radii.sm, backgroundColor: importDefault(dependencyMap[9]).colors.BACKGROUND_SURFACE_HIGH, marginBottom: importDefault(dependencyMap[9]).space.PX_16, overflow: "hidden" };
+obj = { "Null": 290293.32910158683, "Null": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000013279449704941, borderRadius: importDefault(dependencyMap[9]).radii.sm, backgroundColor: importDefault(dependencyMap[9]).colors.BACKGROUND_SURFACE_HIGH, marginBottom: importDefault(dependencyMap[9]).space.PX_16, overflow: "hidden" };
 obj.container = obj;
 obj1 = { padding: importDefault(dependencyMap[9]).space.PX_12 };
 obj.heroContainer = obj1;
@@ -59,7 +59,7 @@ obj.heroLinearGradientOverlay = StyleSheet.absoluteFillObject;
 obj3 = { position: "absolute", top: importDefault(dependencyMap[9]).space.PX_8, right: importDefault(dependencyMap[9]).space.PX_8, backgroundColor: importDefault(dependencyMap[9]).colors.BACKGROUND_BRAND, padding: importDefault(dependencyMap[9]).space.PX_4, borderRadius: importDefault(dependencyMap[9]).radii.sm };
 const merged1 = Object.assign(importDefault(dependencyMap[9]).shadows.SHADOW_LOW);
 obj.previewBadge = obj3;
-obj4 = { <string:1140607356>: 12508524035280250000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, <string:1751293292>: 0.00000000000000000000000000000000000000000000000000000000000004667261458395371, marginRight: importDefault(dependencyMap[9]).space.PX_12 };
+obj4 = { <string:1632221346>: 0.000000000000000000000000000000000000000000000000000000000000041334633291766945, <string:2722977214>: 241505615215171200000000000000000000000000000000000000000000000000000000000000000000, marginRight: importDefault(dependencyMap[9]).space.PX_12 };
 obj.rewardImgContainer = obj4;
 obj.heroFooterContainer = {};
 obj.heroFooterLeftContainer = {};
@@ -72,7 +72,7 @@ const obj6 = { marginBottom: importDefault(dependencyMap[9]).space.PX_4 };
 obj.bodyContainer = { gap: importDefault(dependencyMap[9]).space.PX_4 };
 const obj7 = { gap: importDefault(dependencyMap[9]).space.PX_4 };
 obj.subtitleRow = { rowGap: importDefault(dependencyMap[9]).space.PX_4, columnGap: importDefault(dependencyMap[9]).space.PX_8 };
-obj.detailsTextContainer = { -9223372036854775808: 323420161, 0: -2104950783 };
+obj.detailsTextContainer = { markAsSpoilerTitle: null, keyboardAppearance: null };
 const obj8 = { rowGap: importDefault(dependencyMap[9]).space.PX_4, columnGap: importDefault(dependencyMap[9]).space.PX_8 };
 obj.buttonContainers = { borderTopColor: importDefault(dependencyMap[9]).colors.BORDER_SUBTLE, padding: importDefault(dependencyMap[9]).space.PX_12 };
 obj.equalWidthContainer = {};
@@ -197,7 +197,7 @@ const memoResult = importAllResult.memo((questContent) => {
   if (null != userStatus2) {
     completedAt = userStatus2.completedAt;
   }
-  const questFormattedDate = obj10.useQuestFormattedDate(completedAt, { width: 973078529, height: 16777216, backgroundColor: 27700546 });
+  const questFormattedDate = obj10.useQuestFormattedDate(completedAt, { width: 973078529, height: 16777216, backgroundColor: 27666754 });
   let obj11 = arg1(dependencyMap[26]);
   const hasWatchVideoTasksResult = obj11.hasWatchVideoTasks(quest);
   const callback4 = hasWatchVideoTasksResult;
@@ -273,7 +273,7 @@ const memoResult = importAllResult.memo((questContent) => {
   let obj24 = arg1(dependencyMap[31]);
   let closure_32 = obj24.useToken(importDefault(dependencyMap[9]).colors.BACKGROUND_BASE_LOWEST);
   let obj25 = arg1(dependencyMap[16]);
-  const questFormattedDate1 = obj25.useQuestFormattedDate(quest.config.expiresAt, {});
+  const questFormattedDate1 = obj25.useQuestFormattedDate(quest.config.expiresAt, { 1618834222: false, -1200702078: false });
   let obj26 = arg1(dependencyMap[32]);
   const getQuestImpressionId = obj26.useGetQuestImpressionId();
   const items8 = [quest, QUEST_HOME_MOBILE, getQuestImpressionId, sourceQuestContent];
@@ -470,7 +470,7 @@ const memoResult = importAllResult.memo((questContent) => {
       obj.transform = items;
       let obj1 = obj;
     } else {
-      obj1 = { "Bool(true)": 2, "Bool(true)": "text-sm/semibold" };
+      obj1 = { scales: 2, then: "text-sm/semibold" };
     }
     const quest = obj1;
     if (tmp28) {
@@ -591,7 +591,7 @@ const memoResult = importAllResult.memo((questContent) => {
   let preview = quest.preview;
   if (preview) {
     obj9 = { style: tmp5.previewBadge };
-    obj10 = { INTEGRATION_CREATE: 1393574244, ConstraintReasonCode: 1359020034 };
+    obj10 = {};
     const intl3 = arg1(dependencyMap[43]).intl;
     obj10.children = intl3.string(arg1(dependencyMap[43]).t.SKNnqq);
     obj9.children = defaultRewardNameWithArticle(arg1(dependencyMap[59]).Text, obj10);
@@ -601,7 +601,7 @@ const memoResult = importAllResult.memo((questContent) => {
   obj11 = { style: tmp5.heroFooterContainer };
   obj12 = { style: tmp5.heroFooterLeftContainer };
   const items16 = [defaultRewardNameWithArticle(importDefault(dependencyMap[60]), { assetUrl: questGameLogotypeAssetUrl, onError: callback }), ];
-  obj13 = {};
+  obj13 = { marginBottom: null, player_playback_mode: 8, player_playback_mode_data: "absolute" };
   obj14 = { variant: "text-xs/medium" };
   let str = "text-overlay-light";
   let str2 = "text-overlay-light";
@@ -612,7 +612,7 @@ const memoResult = importAllResult.memo((questContent) => {
   const intl4 = arg1(dependencyMap[43]).intl;
   obj14.children = intl4.string(arg1(dependencyMap[43]).t.VAbKhK);
   const items17 = [defaultRewardNameWithArticle(arg1(dependencyMap[59]).Text, obj14), , ];
-  obj15 = { source: importDefault(dependencyMap[62]), style: { <string:1140607356>: "<string:16777479>", <string:1751293292>: "<string:36295491>" }, accessible: true, accessibilityRole: "image" };
+  obj15 = { source: importDefault(dependencyMap[62]), style: {}, accessible: true, accessibilityRole: "image" };
   const intl5 = arg1(dependencyMap[43]).intl;
   obj15.accessibilityLabel = intl5.string(arg1(dependencyMap[43]).t.OfMjx9);
   items17[1] = defaultRewardNameWithArticle(closure_6, obj15);
@@ -653,23 +653,22 @@ const memoResult = importAllResult.memo((questContent) => {
   obj21.children = tmp83Result;
   const items20 = [defaultRewardNameWithArticle(closure_7, obj21), ];
   obj24 = { style: tmp5.detailsTextContainer };
-  obj25 = { Globe: "png", BUNDLE_PREVIEW_CONFIG: true, getAppIntentScheme: "/assets/modules/video_calls/native/images", SlideInUp: 24, style: tmp5.questName, children: formatToPlainStringResult };
+  obj25 = { y: "png", isArray: true, split: "/assets/modules/video_calls/native/images", ix: 24, style: tmp5.questName, children: formatToPlainStringResult };
   const items21 = [defaultRewardNameWithArticle(arg1(dependencyMap[59]).Text, obj25), ];
   obj26 = { style: tmp5.bodyContainer };
   obj27 = { style: tmp5.subtitleRow };
-  const obj28 = { INTEGRATION_CREATE: 131072.00119209292, ConstraintReasonCode: -293983030121430100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, children: memo1 };
-  const items22 = [defaultRewardNameWithArticle(arg1(dependencyMap[59]).Text, obj28), ];
+  const items22 = [defaultRewardNameWithArticle(arg1(dependencyMap[59]).Text, { children: memo1 }), ];
   if (shouldShowBonusOrbsUX) {
-    obj29 = { questId: quest.config.id, orbMultiplierEligibility: questOrbMultiplierEligibility };
-    shouldShowBonusOrbsUX = defaultRewardNameWithArticle(arg1(dependencyMap[65]).QuestOrbMultiplierPerkPill, obj29);
+    const obj28 = { questId: quest.config.id, orbMultiplierEligibility: questOrbMultiplierEligibility };
+    shouldShowBonusOrbsUX = defaultRewardNameWithArticle(arg1(dependencyMap[65]).QuestOrbMultiplierPerkPill, obj28);
   }
   items22[1] = shouldShowBonusOrbsUX;
   obj27.children = items22;
   const items23 = [closure_13(closure_7, obj27), ];
   let tmp92 = null != formatToPlainStringResult1;
   if (tmp92) {
-    obj30 = { INTEGRATION_CREATE: "<string:3305963521>", ConstraintReasonCode: "<string:671547393>", children: formatToPlainStringResult1 };
-    tmp92 = defaultRewardNameWithArticle(arg1(dependencyMap[59]).Text, obj30);
+    obj29 = { children: formatToPlainStringResult1 };
+    tmp92 = defaultRewardNameWithArticle(arg1(dependencyMap[59]).Text, obj29);
   }
   items23[1] = tmp92;
   obj26.children = items23;
@@ -679,19 +678,19 @@ const memoResult = importAllResult.memo((questContent) => {
   obj20.children = items20;
   obj19.children = closure_13(closure_7, obj20);
   items19[1] = defaultRewardNameWithArticle(closure_7, obj19);
-  obj31 = { header: null, icon: 8, spacing: importDefault(dependencyMap[9]).space.PX_8, style: tmp5.buttonContainers };
-  obj32 = {};
+  obj30 = { messageId: null, options: 8, spacing: importDefault(dependencyMap[9]).space.PX_8, style: tmp5.buttonContainers };
+  obj31 = {};
   if (null != questEnrollmentBlockedUntil && !tmp24 && !tmp26 && !tmp28) {
     merged = defaultRewardNameWithArticle;
     merged = arg1;
     merged = dependencyMap;
-    obj33 = { Error: true, apply: true, channelId: true, flexDirection: true };
+    obj32 = { 634388484: true, onLongPressUsername: true, onTapMessageReply: true, onTapSummary: true };
     merged = NOOP;
-    obj33.onPress = NOOP;
+    obj32.onPress = NOOP;
     const intl7 = arg1(dependencyMap[43]).intl;
-    obj33.text = intl7.string(arg1(dependencyMap[43]).t.V293qn);
-    const items24 = [defaultRewardNameWithArticle(arg1(dependencyMap[66]).Button, obj33), ];
-    obj34 = {
+    obj32.text = intl7.string(arg1(dependencyMap[43]).t.V293qn);
+    const items24 = [defaultRewardNameWithArticle(arg1(dependencyMap[66]).Button, obj32), ];
+    obj33 = {
       onPress() {
           let obj = quest(QUEST_HOME_MOBILE[38]);
           obj = { questId: quest.id, questEnrollmentBlockedUntil, sourceQuestContent };
@@ -700,10 +699,10 @@ const memoResult = importAllResult.memo((questContent) => {
       variant: "tertiary"
     };
     const intl8 = arg1(dependencyMap[43]).intl;
-    obj34.text = intl8.string(arg1(dependencyMap[43]).t.vY9GgG);
-    items24[1] = defaultRewardNameWithArticle(arg1(dependencyMap[66]).Button, obj34);
-    obj32.children = items24;
-    merged = obj32;
+    obj33.text = intl8.string(arg1(dependencyMap[43]).t.vY9GgG);
+    items24[1] = defaultRewardNameWithArticle(arg1(dependencyMap[66]).Button, obj33);
+    obj31.children = items24;
+    merged = obj31;
   } else {
     if (tmp59) {
       tmp59 = !tmp36;
@@ -718,28 +717,28 @@ const memoResult = importAllResult.memo((questContent) => {
       tmp59 = !tmp26;
     }
     if (tmp59) {
-      obj35 = { style: tmp5.equalWidthContainer };
+      obj34 = { style: tmp5.equalWidthContainer };
       merged = arg1;
       merged = dependencyMap;
-      const obj36 = { text: arg1(dependencyMap[28]).getExternalCtaLabel(quest), onPress: callback1 };
-      obj35.children = defaultRewardNameWithArticle(arg1(dependencyMap[66]).Button, obj36);
-      tmp59 = defaultRewardNameWithArticle(closure_7, obj35);
-      const obj72 = arg1(dependencyMap[28]);
+      obj35 = { text: arg1(dependencyMap[28]).getExternalCtaLabel(quest), onPress: callback1 };
+      obj34.children = defaultRewardNameWithArticle(arg1(dependencyMap[66]).Button, obj35);
+      tmp59 = defaultRewardNameWithArticle(closure_7, obj34);
+      const obj71 = arg1(dependencyMap[28]);
     }
     const items25 = [tmp59, ];
     merged = defaultRewardNameWithArticle;
     merged = closure_7;
-    obj37 = { style: tmp5.equalWidthContainer };
+    const obj36 = { style: tmp5.equalWidthContainer };
     merged = arg1;
     merged = dependencyMap;
-    const obj38 = { grow: true };
-    merged = obj38;
+    obj37 = { grow: true };
+    merged = obj37;
     merged = tmp40;
     merged = Object.assign(tmp40);
-    obj37.children = defaultRewardNameWithArticle(arg1(dependencyMap[66]).Button, obj38);
-    items25[1] = defaultRewardNameWithArticle(closure_7, obj37);
-    obj32.children = items25;
-    merged = obj32;
+    obj36.children = defaultRewardNameWithArticle(arg1(dependencyMap[66]).Button, obj37);
+    items25[1] = defaultRewardNameWithArticle(closure_7, obj36);
+    obj31.children = items25;
+    merged = obj31;
   }
   const items26 = [closure_13(closure_14, merged), , , ];
   merged = tmp26;
@@ -753,14 +752,14 @@ const memoResult = importAllResult.memo((questContent) => {
     merged = defaultRewardNameWithArticle;
     merged = arg1;
     merged = dependencyMap;
-    const obj39 = {};
+    const obj38 = {};
     const intl9 = arg1(dependencyMap[43]).intl;
-    obj39.accessibilityLabel = intl9.string(arg1(dependencyMap[43]).t.YsCuyF);
+    obj38.accessibilityLabel = intl9.string(arg1(dependencyMap[43]).t.YsCuyF);
     merged = importDefault;
-    obj39.icon = importDefault(dependencyMap[69]);
-    obj39.onPress = callback2;
-    obj39.variant = "secondary";
-    merged = defaultRewardNameWithArticle(arg1(dependencyMap[68]).IconButton, obj39);
+    obj38.icon = importDefault(dependencyMap[69]);
+    obj38.onPress = callback2;
+    obj38.variant = "secondary";
+    merged = defaultRewardNameWithArticle(arg1(dependencyMap[68]).IconButton, obj38);
   }
   items26[1] = merged;
   if (tmp26) {
@@ -770,19 +769,19 @@ const memoResult = importAllResult.memo((questContent) => {
     merged = defaultRewardNameWithArticle;
     merged = arg1;
     merged = dependencyMap;
-    const obj40 = {};
+    const obj39 = {};
     const intl10 = arg1(dependencyMap[43]).intl;
-    obj40.accessibilityLabel = intl10.string(arg1(dependencyMap[43]).t.CkUzLd);
+    obj39.accessibilityLabel = intl10.string(arg1(dependencyMap[43]).t.CkUzLd);
     merged = importDefault;
-    obj40.icon = importDefault(dependencyMap[69]);
-    obj40.onPress = callback3;
-    obj40.variant = "secondary";
-    tmp26 = defaultRewardNameWithArticle(arg1(dependencyMap[68]).IconButton, obj40);
+    obj39.icon = importDefault(dependencyMap[69]);
+    obj39.onPress = callback3;
+    obj39.variant = "secondary";
+    tmp26 = defaultRewardNameWithArticle(arg1(dependencyMap[68]).IconButton, obj39);
   }
   items26[2] = tmp26;
   items26[3] = defaultRewardNameWithArticle(importDefault(dependencyMap[70]), { quest, showShareLink: !isQuestExpiredResult, location: QuestsExperimentLocations.QUESTS_CARD, sourceQuestContent });
-  obj31.children = items26;
-  items19[2] = closure_13(arg1(dependencyMap[61]).Stack, obj31);
+  obj30.children = items26;
+  items19[2] = closure_13(arg1(dependencyMap[61]).Stack, obj30);
   obj4.children = items19;
   obj2.children = closure_13(tmp64, obj4);
   return tmp62(arg1(dependencyMap[54]).Card, obj2);

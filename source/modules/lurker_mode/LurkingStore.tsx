@@ -1,30 +1,32 @@
 // Module ID: 3757
 // Function ID: 28730
 // Name: _isNativeReflectConstruct
-// Dependencies: [0, 0, 0, 0, 0, 0, 0, 0, 0]
+// Dependencies: [0, 0, 0, 0, 0, 0, 0, 0, 0, 1194, 653, 3768, 3769]
 
 // Module 3757 (_isNativeReflectConstruct)
-import result from "result";
-import closure_1 from "result";
-import closure_2 from "result";
-import closure_3 from "result";
-import closure_4 from "result";
-import { isGuildLurker } from "result";
-import closure_6 from "result";
-import closure_7 from "result";
-import closure_8 from "result";
+import __exportStarResult1 from "__exportStarResult1";
+import closure_1 from "__exportStarResult1";
+import closure_2 from "__exportStarResult1";
+import closure_3 from "__exportStarResult1";
+import closure_4 from "__exportStarResult1";
+import { isGuildLurker } from "__exportStarResult1";
+import closure_6 from "__exportStarResult1";
+import closure_7 from "__exportStarResult1";
+import closure_8 from "__exportStarResult1";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 
 function _isNativeReflectConstruct() {
-  let result = !valueOf.call(Reflect.construct(Boolean, [], () => {
+  let __exportStarResult1 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
   }));
   function _isNativeReflectConstruct() {
-    return result;
+    return __exportStarResult1;
   }
   const result = _isNativeReflectConstruct();
 }
 function _createForOfIteratorHelperLoose(@@iterator) {
-  let result = Symbol_iterator;
+  let __exportStarResult1 = Symbol_iterator;
   @@iterator = "undefined" !== typeof Symbol;
   if (Symbol_iterator) {
     const _Symbol = Symbol;
@@ -76,7 +78,7 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      result = tmp;
+      __exportStarResult1 = tmp;
     }
     let closure_1 = 0;
     return () => {
@@ -140,7 +142,7 @@ function setLurkingSource(guildId, lurkingSource) {
     closure_13[guildId] = lurkingSource;
   }
 }
-({ JoinGuildSources: closure_9, ME: closure_10 } = arg1(dependencyMap[9]));
+({ JoinGuildSources: closure_9, ME: closure_10 } = _isNativeReflectConstruct);
 let closure_11 = [];
 let closure_12 = {};
 let closure_13 = {};
@@ -166,7 +168,7 @@ let tmp3 = (Store) => {
       return tmp2(self, constructResult);
     }
   }
-  let result = LurkingStore;
+  let __exportStarResult1 = LurkingStore;
   callback2(LurkingStore, Store);
   let obj = {
     key: "initialize",
@@ -253,9 +255,9 @@ let tmp3 = (Store) => {
     }
   };
   return callback(LurkingStore, items);
-}(importDefault(dependencyMap[10]).Store);
+}(require("ME").Store);
 tmp3.displayName = "LurkingStore";
-tmp3 = new tmp3(importDefault(dependencyMap[11]), {
+tmp3 = new tmp3(require("AccountNotificationFlags"), {
   CONNECTION_OPEN: function handleConnectionOpen() {
     const guildsArray = guildsArray.getGuildsArray();
     const found = guildsArray.filter((arg0) => callback(arg0));
@@ -388,140 +390,6 @@ tmp3 = new tmp3(importDefault(dependencyMap[11]), {
     return flag2;
   }
 });
-const obj = {
-  CONNECTION_OPEN: function handleConnectionOpen() {
-    const guildsArray = guildsArray.getGuildsArray();
-    const found = guildsArray.filter((arg0) => callback(arg0));
-    let closure_11 = found.map((id) => id.id);
-    let closure_13 = {};
-    let closure_14 = {};
-  },
-  GUILD_JOIN: function handleGuildJoin(lurker) {
-    let guildId;
-    let loadId;
-    let source;
-    ({ guildId, source, loadId } = lurker);
-    if (lurker.lurker) {
-      addLurkingGuild(guildId);
-      if (null != loadId) {
-        closure_12[guildId] = loadId;
-      }
-      delete r0[r3];
-      if (constants.MOBILE_GUILD_DISCOVERY === source) {
-        let obj = { type: constants.MOBILE_GUILD_DISCOVERY };
-        setLurkingSource(guildId, obj);
-      } else if (constants.DIRECTORY_ENTRY === source) {
-        obj = { type: constants.DIRECTORY_ENTRY, directoryChannelId: tmp };
-        setLurkingSource(guildId, obj);
-      } else {
-        setLurkingSource(guildId, null);
-      }
-      return true;
-    } else {
-      return false;
-    }
-  },
-  GUILD_STOP_LURKING: function handleGuildStopLurking(ignoredGuildIds) {
-    return function clearLurkingGuilds(ignoredGuildIds) {
-      let items = ignoredGuildIds;
-      if (null == ignoredGuildIds) {
-        items = [];
-      }
-      const items1 = [...items];
-      const set = new Set(items1);
-      const items2 = [...closure_11];
-      return items2.reduce((arg0, arg1) => {
-        let tmp = arg0;
-        if (!set.has(arg1)) {
-          tmp = callback(arg1) || arg0;
-          const tmp3 = callback(arg1) || arg0;
-        }
-        return tmp;
-      }, false);
-    }(ignoredGuildIds.ignoredGuildIds);
-  },
-  GUILD_STOP_LURKING_FOR_GUILD: function handleGuildStopLurkingForGuild(lurkingGuildId) {
-    return removeLurkedGuild(lurkingGuildId.lurkingGuildId);
-  },
-  GUILD_STOP_LURKING_FAILURE: function handleGuildStopLurkingFailure(lurkingGuildId) {
-    lurkingGuildId = lurkingGuildId.lurkingGuildId;
-    addLurkingGuild(lurkingGuildId);
-    setLurkingSource(lurkingGuildId, lurkingGuildId.lurkingSource);
-    return true;
-  },
-  GUILD_CREATE: function handleGuildCreate(guild) {
-    guild = guild.guild;
-    let tmp = null == guild.joined_at;
-    if (!tmp) {
-      tmp = !closure_11.includes(guild.id);
-    }
-    let flag = !tmp;
-    if (!tmp) {
-      removeLurkedGuild(guild.id);
-      flag = true;
-    }
-    return flag;
-  },
-  GUILD_DELETE: function handleGuildDelete(guild) {
-    guild = guild.guild;
-    const tmp = !closure_11.includes(guild.id);
-    let flag = !tmp;
-    if (!tmp) {
-      removeLurkedGuild(guild.id);
-      flag = true;
-    }
-    return flag;
-  },
-  GUILD_MEMBER_ADD: function handleGuildMemberAdd(guildId, arg1) {
-    guildId = guildId.guildId;
-    const currentUser = currentUser.getCurrentUser();
-    let id;
-    if (null != currentUser) {
-      id = currentUser.id;
-    }
-    let tmp3 = guildId.user.id !== id || null == guildId.joinedAt;
-    if (!tmp3) {
-      tmp3 = !closure_11.includes(guildId);
-    }
-    let flag = !tmp3;
-    if (!tmp3) {
-      removeLurkedGuild(guildId);
-      flag = true;
-    }
-    return flag;
-  },
-  LURKER_PREVIEW_SET_EXPIRY: function handleLurkerPreviewSetExpiry(expiresAt) {
-    let iter3;
-    expiresAt = expiresAt.expiresAt;
-    const tmp = _createForOfIteratorHelperLoose(expiresAt.guildIds);
-    const iter = tmp();
-    let iter2 = iter;
-    let flag = false;
-    let flag2 = false;
-    if (!iter.done) {
-      do {
-        let value = iter2.value;
-        let tmp2 = closure_11;
-        let tmp3 = flag;
-        if (closure_11.includes(value)) {
-          let tmp4 = closure_14;
-          if (closure_14[value] !== expiresAt) {
-            let tmp5 = closure_14;
-            closure_14[value] = expiresAt;
-            flag = true;
-          }
-          tmp3 = flag;
-        }
-        iter3 = tmp();
-        flag = tmp3;
-        iter2 = iter3;
-        flag2 = tmp3;
-      } while (!iter3.done);
-    }
-    return flag2;
-  }
-};
-const tmp2 = arg1(dependencyMap[9]);
-const result = arg1(dependencyMap[12]).fileFinishedImporting("modules/lurker_mode/LurkingStore.tsx");
+const result = _createForOfIteratorHelperLoose.fileFinishedImporting("modules/lurker_mode/LurkingStore.tsx");
 
 export default tmp3;

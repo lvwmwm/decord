@@ -1,9 +1,9 @@
-// Module ID: 8887
-// Function ID: 70150
+// Module ID: 8891
+// Function ID: 70162
 // Name: SECURE_FRAMES_LINKING_BOTTOM_SHEET_KEY
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 8887 (SECURE_FRAMES_LINKING_BOTTOM_SHEET_KEY)
+// Module 8891 (SECURE_FRAMES_LINKING_BOTTOM_SHEET_KEY)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("modules/rtc/SecureFramesConstants.tsx");
 

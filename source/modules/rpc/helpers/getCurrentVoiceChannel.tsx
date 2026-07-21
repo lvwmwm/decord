@@ -1,10 +1,10 @@
-// Module ID: 5761
-// Function ID: 49326
+// Module ID: 5763
+// Function ID: 49369
 // Name: getCurrentVoiceChannel
 // Dependencies: []
 // Exports: default
 
-// Module 5761 (getCurrentVoiceChannel)
+// Module 5763 (getCurrentVoiceChannel)
 let closure_0 = importDefault(dependencyMap[0]);
 let closure_1 = importDefault(dependencyMap[1]);
 let closure_2 = importDefault(dependencyMap[2]);

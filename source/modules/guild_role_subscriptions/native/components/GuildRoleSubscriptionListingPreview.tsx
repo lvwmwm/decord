@@ -1,10 +1,10 @@
-// Module ID: 16320
-// Function ID: 125958
+// Module ID: 16327
+// Function ID: 125989
 // Name: PriceTier
 // Dependencies: []
 // Exports: GuildRoleSubscriptionListingPreview
 
-// Module 16320 (PriceTier)
+// Module 16327 (PriceTier)
 function PriceTier(arg0) {
   let currency;
   let price;
@@ -34,26 +34,28 @@ function Header(onPress) {
   let obj1 = importAll(dependencyMap[10]);
   let obj2 = importAll(dependencyMap[10]);
   const first = callback(obj2.useImage(listingId), 1)[0];
-  let obj3 = importAll(dependencyMap[10]);
   obj = { style: tmp.header };
-  obj = { INTEGRATION_CREATE: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000540036855153, ConstraintReasonCode: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000006365987372896, children: callback(obj1.useName(listingId), 1)[0] };
-  const items = [callback2(arg1(dependencyMap[6]).Text, obj), , , , ];
-  obj1 = { style: tmp.image };
-  obj2 = {};
+  const items = [callback2(arg1(dependencyMap[6]).Text, { children: callback(obj1.useName(listingId), 1)[0] }), , , , ];
+  obj = { style: tmp.image };
+  obj1 = {};
   let str = "";
+  const obj4 = importAll(dependencyMap[10]);
+  const tmp3 = closure_7;
+  const tmp4 = View;
+  const tmp5 = callback2;
   if (null != first) {
     str = first;
   }
-  obj2.uri = str;
-  obj1.source = obj2;
-  items[1] = callback2(importDefault(dependencyMap[11]), obj1);
-  obj3 = {};
+  obj1.uri = str;
+  obj.source = obj1;
+  items[1] = tmp5(importDefault(dependencyMap[11]), obj);
+  obj2 = {};
   const merged = Object.assign(callback(obj.useSubscriptionPlan(listingId), 1)[0]);
-  items[2] = callback2(PriceTier, obj3);
+  items[2] = callback2(PriceTier, obj2);
   items[3] = callback2(arg1(dependencyMap[12]).GuildPremiumRoleSubscribeButton, { onPress: onPress.onSubscribePress });
-  items[4] = callback2(arg1(dependencyMap[6]).Text, { variant: "text-sm/medium", children: callback(obj3.useDescription(listingId), 1)[0] });
+  items[4] = callback2(arg1(dependencyMap[6]).Text, { variant: "text-sm/medium", children: callback(obj4.useDescription(listingId), 1)[0] });
   obj.children = items;
-  return closure_7(View, obj);
+  return tmp3(tmp4, obj);
 }
 function Content(arg0) {
   let children;
@@ -175,19 +177,19 @@ let obj = arg1(dependencyMap[4]);
 obj = { container: { padding: 16 } };
 obj = { backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_LOWEST };
 obj.header = obj;
-obj.image = { 9223372036854775807: "isArray", 9223372036854775807: "memo", -9223372036854775808: "w", 0: "isArray" };
-obj.priceGroup = {};
+obj.image = { "Null": "isArray", "Null": "memo", "Null": "w", "Null": "isArray" };
+obj.priceGroup = { "Null": "center", "Null": "center" };
 obj.priceInterval = { marginTop: 4 };
 obj.content = { paddingHorizontal: 16 };
 const tmp3 = arg1(dependencyMap[3]);
 obj.contentWithBackground = { backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_SURFACE_HIGH };
-const obj2 = { 1315000674: 131551662, 810636129: -1717986767, 1365402056: -644245095, backgroundColor: importDefault(dependencyMap[5]).colors.BORDER_SUBTLE };
+const obj2 = { "Bool(false)": null, "Bool(false)": true, "Bool(false)": true, backgroundColor: importDefault(dependencyMap[5]).colors.BORDER_SUBTLE };
 obj.separator = obj2;
 obj.sectionLabel = { paddingVertical: 16 };
 obj.benefitSpacing = { marginTop: 16 };
 const obj1 = { backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_SURFACE_HIGH };
 obj.roundedBenefitsContainer = { backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_SURFACE_HIGH, borderRadius: importDefault(dependencyMap[5]).radii.lg, padding: 16 };
-obj.footer = { "Null": true, e: null, e: 8 };
+obj.footer = { "Null": true, "Null": null, "Null": 8 };
 let closure_9 = obj.createStyles(obj);
 const obj4 = { FLAT: 0, [0]: "FLAT", ROUNDED: 1, [1]: "ROUNDED" };
 BenefitsSection.Looks = obj4;

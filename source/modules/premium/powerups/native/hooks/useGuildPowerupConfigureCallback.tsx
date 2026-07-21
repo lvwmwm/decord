@@ -1,10 +1,10 @@
-// Module ID: 11559
-// Function ID: 89943
+// Module ID: 11566
+// Function ID: 89966
 // Name: useGuildPowerupConfigureCallback
 // Dependencies: []
 // Exports: default
 
-// Module 11559 (useGuildPowerupConfigureCallback)
+// Module 11566 (useGuildPowerupConfigureCallback)
 let closure_3 = importAll(dependencyMap[0]);
 ({ GuildSettingsSections: closure_4, AnalyticsSections: closure_5 } = arg1(dependencyMap[1]));
 const tmp2 = arg1(dependencyMap[1]);

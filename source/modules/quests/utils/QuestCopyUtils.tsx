@@ -1,10 +1,10 @@
-// Module ID: 9456
-// Function ID: 73683
+// Module ID: 9460
+// Function ID: 73697
 // Name: getQuestUrl
 // Dependencies: []
 // Exports: copyShareLink, getContextualEntrypointHeading, getCtaLink, getDefaultReward, getDisclosureText, getExternalCtaLabel, getFilterGroupHeadingText, getFilterTypeText, getSortMethodText
 
-// Module 9456 (getQuestUrl)
+// Module 9460 (getQuestUrl)
 function getQuestUrl(id) {
   return "" + location.protocol + "//" + location.host + "/quests/" + id;
 }

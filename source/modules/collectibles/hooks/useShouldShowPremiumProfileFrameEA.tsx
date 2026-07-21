@@ -1,10 +1,10 @@
-// Module ID: 11823
-// Function ID: 91679
+// Module ID: 11830
+// Function ID: 91702
 // Name: useShouldShowPremiumProfileFrameEA
 // Dependencies: []
 // Exports: default
 
-// Module 11823 (useShouldShowPremiumProfileFrameEA)
+// Module 11830 (useShouldShowPremiumProfileFrameEA)
 const _module = require(dependencyMap[2]);
 const result = _module.fileFinishedImporting("modules/collectibles/hooks/useShouldShowPremiumProfileFrameEA.tsx");
 

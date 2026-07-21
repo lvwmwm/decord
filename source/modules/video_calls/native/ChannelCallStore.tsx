@@ -1,10 +1,10 @@
-// Module ID: 10191
-// Function ID: 78683
+// Module ID: 10197
+// Function ID: 78701
 // Name: resetFocusTimer
 // Dependencies: []
 // Exports: clearFocusTimer, resetChannelCallStore, resetFocus, setFocus, setVoiceChatDrawerState, toggleFocus, useChannelCallOrientationHandlers
 
-// Module 10191 (resetFocusTimer)
+// Module 10197 (resetFocusTimer)
 let VoiceCallOverlayType;
 let VoiceChatDrawerState;
 function resetFocusTimer() {
@@ -27,7 +27,7 @@ let closure_4 = importDefault(dependencyMap[1]);
 const OrientationLockState = arg1(dependencyMap[3]).OrientationLockState;
 const ParticipantTypes = arg1(dependencyMap[4]).ParticipantTypes;
 const timeout = new arg1(dependencyMap[5]).Timeout();
-let obj = { muted: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004617474913948805, mute_config: -0.00010584370472026379, marginLeft: 2179489352393596700000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, voiceChatDrawerState: VoiceChatDrawerState.CLOSED };
+let obj = { 0: "o", -9223372036854775808: "code", 9223372036854775807: "o", voiceChatDrawerState: VoiceChatDrawerState.CLOSED };
 obj = {};
 obj = { x: undefined, y: undefined, width: undefined, height: undefined, screenOrientation: arg1(dependencyMap[6]).OrientationType.PORTRAIT, hasUserInteractedSinceOrientationChange: false, isInitialized: false, isVisible: false };
 obj[VoiceCallOverlayType.VOICE_CONTROLS_TOGGLE_BUTTON] = obj;

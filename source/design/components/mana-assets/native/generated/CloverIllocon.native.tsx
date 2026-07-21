@@ -1,10 +1,10 @@
-// Module ID: 5939
-// Function ID: 49782
+// Module ID: 5941
+// Function ID: 49825
 // Name: CloverIllocon
 // Dependencies: []
 // Exports: CloverIllocon
 
-// Module 5939 (CloverIllocon)
+// Module 5941 (CloverIllocon)
 const jsx = require(dependencyMap[0]).jsx;
 const _module = require(dependencyMap[3]);
 const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/CloverIllocon.native.tsx");

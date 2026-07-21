@@ -1,9 +1,9 @@
-// Module ID: 12233
-// Function ID: 93862
-// Dependencies: []
+// Module ID: 12240
+// Function ID: 93885
+// Dependencies: [284214097]
 // Exports: default
 
-// Module 12233
+// Module 12240
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_common/js/packages/dynamic-links/getDescription.tsx");
 

@@ -1,7 +1,7 @@
 // Module ID: 1330
 // Function ID: 15568
 // Name: updateBackgroundColor
-// Dependencies: []
+// Dependencies: [284214097]
 // Exports: default
 
 // Module 1330 (updateBackgroundColor)

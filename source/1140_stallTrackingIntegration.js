@@ -23,12 +23,6 @@ export const stallTrackingIntegration = function stallTrackingIntegration() {
     const map = new Map();
     const dependencyMap = map;
     let obj = {
-      automaticallyAdjustKeyboardInsets: true,
-      flex: true,
-      flexGrow: true,
-      position: true,
-      opacity: true,
-      fontWeight: true,
       backgroundEventListener(arg0) {
           if ("active" === arg0) {
             obj.isBackground = false;
@@ -105,7 +99,7 @@ export const stallTrackingIntegration = function stallTrackingIntegration() {
           debug.error("[StallTracking] Tried to start stall tracking on a transaction already being tracked. Measurements might be lost.");
         } else {
           _startTracking();
-          obj = { fontWeight: true, -480667083: true, atStart: _getCurrentStats(activeSpan) };
+          obj = { atStart: _getCurrentStats(activeSpan) };
           const result = map.set(activeSpan, obj);
           _flushLeakedTransactions();
         }

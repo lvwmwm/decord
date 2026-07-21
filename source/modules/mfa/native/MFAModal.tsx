@@ -1,15 +1,14 @@
-// Module ID: 14506
-// Function ID: 109271
+// Module ID: 14513
+// Function ID: 109293
 // Name: MFAModal
-// Dependencies: [0, 0, 0, 0, 0, 0, 0, 0, 4294967295, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+// Dependencies: [0, 0, 0, 0, 0, 0, 0, 0, 4294967295, 0, 0, 0, 0]
 // Exports: openMFAModal
 
-// Module 14506 (MFAModal)
-import closure_3 from "result";
-import closure_4 from "result";
-import result from "result";
-import { jsx } from "result";
-import result from "result";
+// Module 14513 (MFAModal)
+import closure_3 from "__exportStarResult1";
+import closure_4 from "__exportStarResult1";
+import { jsx } from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
 
 let LogBox;
 class MFAModal {
@@ -26,11 +25,11 @@ class MFAModal {
       flag = false;
     }
     closure_4 = flag;
-    obj = { "Bool(false)": false, "Bool(false)": null, "Bool(false)": "", "Bool(false)": null, "Bool(false)": null };
+    obj = {};
     setPrototypeOfResult = Object.setPrototypeOf(null);
     merged = Object.assign(global, obj);
     closure_5 = undefined;
-    f109275 = undefined;
+    f109297 = undefined;
     closure_7 = undefined;
     items = [];
     items[0] = mfaChallenge;
@@ -56,7 +55,7 @@ class MFAModal {
         return callback(...arguments);
       };
     }(), items1);
-    f109275 = callback;
+    f109297 = callback;
     items2 = [, ];
     items2[0] = cancel;
     items2[1] = handleOnClose;
@@ -110,7 +109,7 @@ class MFAModal {
         obj.source = callback2(closure_2[9]);
         return callback3(callback(closure_2[8]).HeaderActionButton, obj);
       }
-      let obj = { 9223372036854775807: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002982449215892392, 9223372036854775807: -3922524730112120000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, 0: -1561007058987390500000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, ignoreKeyboard: flag };
+      let obj = { ignoreKeyboard: flag };
       obj = {};
       obj = {};
       const merged = Object.assign(obj);
@@ -276,13 +275,13 @@ class MFAModal {
     }, items4);
     obj = { screens: memo2, initialRouteStack: memo1, onWillFocus: closure_5.dismiss };
     merged1 = Object.assign(merged);
-    return f109275(require("result").Navigator, obj);
+    return f109297(arg1(dependencyMap[17]).Navigator, obj);
   }
 }
-({ Keyboard: closure_5, LogBox } = result);
-LogBox.ignoreLogs(["ZW"]);
+({ Keyboard: closure_5, LogBox } = require("__exportStarResult1"));
+LogBox.ignoreLogs(["accessibilityRole"]);
 let closure_7 = "MFA_MODAL_KEY";
-result = result.fileFinishedImporting("modules/mfa/native/MFAModal.tsx");
+const result = arg1(dependencyMap[19]).fileFinishedImporting("modules/mfa/native/MFAModal.tsx");
 
 export { MFAModal };
 export const openMFAModal = function openMFAModal(mfaChallenge, finish, cancel) {

@@ -1,10 +1,10 @@
-// Module ID: 9993
-// Function ID: 77273
+// Module ID: 9999
+// Function ID: 77291
 // Name: UserProfileSection
 // Dependencies: []
 // Exports: default
 
-// Module 9993 (UserProfileSection)
+// Module 9999 (UserProfileSection)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 ({ jsx: closure_3, jsxs: closure_4 } = arg1(dependencyMap[2]));
@@ -23,7 +23,7 @@ export default function UserProfileSection(title) {
   let style;
   let trailingIcon;
   title = title.title;
-  let obj = { query: null, type: "LOCAL_PAYMENT_START_PAYMENT_MISSING_REQUIRED_OPTION", guildId: "Missing required option for startPayment.", limit: null, allowEmptyQueries: "LOCAL_PAYMENT_START_PAYMENT_DEFERRED_PAYMENT_FAILED", allowSnowflake: "LocalPayment startPayment deferred payment failed." };
+  let obj = { -9223372036854775808: true, 9223372036854775807: true, 0: true, 0: true, 0: true, 9223372036854775807: true };
   ({ headerIcon, trailingIcon, showContainer, children, style } = title);
   Object.setPrototypeOf(null);
   const merged = Object.assign(title, obj);
@@ -49,7 +49,7 @@ export default function UserProfileSection(title) {
     if (null != title) {
       obj1 = { style: tmp3.titleContainer };
       obj2 = { style: tmp3.title };
-      const obj3 = { "Bool(true)": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000319664301361861, "Bool(true)": 0.000000000000000000000000000000000000000000000000000000000000000000000000000017272340227376844, children: title };
+      const obj3 = { useEffect: -4793965641866621000000000000000, top: 0.000000000000000000000000000000000000000000000000000000000000000000000000000017272340227376844, children: title };
       const items1 = [callback(arg1(dependencyMap[9]).Text, obj3), headerIcon];
       obj2.children = items1;
       const items2 = [callback2(View, obj2), trailingIcon];

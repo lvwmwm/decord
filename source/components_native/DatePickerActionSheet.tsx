@@ -1,10 +1,10 @@
-// Module ID: 8378
-// Function ID: 66703
+// Module ID: 8382
+// Function ID: 66715
 // Name: closeActionSheet
 // Dependencies: []
 // Exports: default
 
-// Module 8378 (closeActionSheet)
+// Module 8382 (closeActionSheet)
 function closeActionSheet() {
   importDefault(dependencyMap[6]).hideActionSheet();
 }
@@ -33,8 +33,8 @@ function ActionSheetHeader(handleSubmit) {
   }
   return tmp2Result;
 }
-function DateRangeError(show) {
-  show = show.show;
+function DateRangeError(children) {
+  const show = children.show;
   const arg1 = show;
   const tmp = callback4();
   const ref = React.useRef(null);
@@ -88,8 +88,7 @@ function DateRangeError(show) {
     str = "auto";
   }
   obj.importantForAccessibility = str;
-  const obj2 = { INTEGRATION_CREATE: "<string:3574726658>", ConstraintReasonCode: "<string:1234436097>", children: show.errorText };
-  obj.children = callback2(View, { ref, style: tmp.rangeError, children: callback2(arg1(dependencyMap[16]).Text, obj2) });
+  obj.children = callback2(View, { ref, style: tmp.rangeError, children: callback2(arg1(dependencyMap[16]).Text, { children: children.errorText }) });
   return callback2(importDefault(dependencyMap[13]).View, obj);
 }
 function ActionSheetFooter(arg0) {
@@ -102,7 +101,7 @@ function ActionSheetFooter(arg0) {
   let tmp2 = null;
   if (obj.isAndroid()) {
     obj = { style: tmp.footer };
-    obj = { "Bool(false)": "Array", "Bool(false)": "isArray", "Bool(false)": "x" };
+    obj = { itemType: "Array", key: "isArray", onCloseCallback: "sk" };
     const obj1 = { variant: "text-md/semibold" };
     const intl = arg1(dependencyMap[11]).intl;
     obj1.children = intl.string(arg1(dependencyMap[11]).t.ETE/oC);
@@ -135,10 +134,10 @@ let obj = arg1(dependencyMap[4]);
 obj = { rangeErrorContainer: { justifyContent: "flex-start" } };
 obj = { backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_FEEDBACK_CRITICAL, borderRadius: importDefault(dependencyMap[5]).radii.sm };
 obj.rangeError = obj;
-obj.datetimePickerContainer = { "Bool(true)": true, "Bool(true)": true };
+obj.datetimePickerContainer = { -1861163602: true, -738052821: true };
 let closure_8 = obj.createStyles(obj);
 const tmp2 = arg1(dependencyMap[3]);
-let closure_9 = arg1(dependencyMap[4]).createStyles({ footer: {}, actionButton: { marginLeft: 24 } });
+let closure_9 = arg1(dependencyMap[4]).createStyles({ footer: { "Bool(false)": null, "Bool(false)": "\u{1F9D0}", "Bool(false)": 10, "Bool(false)": 29, "Bool(false)": null }, actionButton: { marginLeft: 24 } });
 let closure_10 = { code: "function DatePickerActionSheetTsx1(){const{STANDARD_EASING,show,withTiming}=this.__closure;const animationSettings={easing:STANDARD_EASING,duration:show?200:150};return{opacity:withTiming(show?1:0,animationSettings),maxHeight:withTiming(show?500:0,animationSettings),paddingVertical:withTiming(show?12:0,animationSettings)};}" };
 const obj4 = arg1(dependencyMap[4]);
 const result = arg1(dependencyMap[24]).fileFinishedImporting("components_native/DatePickerActionSheet.tsx");

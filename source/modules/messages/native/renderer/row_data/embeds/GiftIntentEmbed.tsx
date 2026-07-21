@@ -1,10 +1,10 @@
-// Module ID: 7742
-// Function ID: 61498
+// Module ID: 7746
+// Function ID: 61510
 // Name: createGiftIntentEmbed
 // Dependencies: []
 // Exports: createGiftIntentEmbed
 
-// Module 7742 (createGiftIntentEmbed)
+// Module 7746 (createGiftIntentEmbed)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 const GiftIntentType = arg1(dependencyMap[2]).GiftIntentType;

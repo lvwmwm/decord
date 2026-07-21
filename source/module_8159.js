@@ -1,6 +1,8 @@
 // Module ID: 8159
-// Function ID: 64468
+// Function ID: 64476
 // Dependencies: []
 
 // Module 8159
-arg5.default = { theme: false, primaryColor: false, secondaryColor: false };
+const _module = require(dependencyMap[0]);
+
+export default _module.shape({ x: require(dependencyMap[0]).number, y: require(dependencyMap[0]).number });

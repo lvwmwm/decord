@@ -1,9 +1,9 @@
-// Module ID: 6799
-// Function ID: 53631
+// Module ID: 6805
+// Function ID: 53680
 // Name: FeedBlockRecord
 // Dependencies: []
 
-// Module 6799 (FeedBlockRecord)
+// Module 6805 (FeedBlockRecord)
 let closure_2 = importDefault(dependencyMap[0]);
 let closure_3 = importDefault(dependencyMap[1]);
 const tmp2 = () => {

@@ -1,10 +1,10 @@
-// Module ID: 15340
-// Function ID: 116865
+// Module ID: 15347
+// Function ID: 116889
 // Name: ReferralProgramCoachmarkImg
 // Dependencies: []
 // Exports: useReferralProgramCoachmark
 
-// Module 15340 (ReferralProgramCoachmarkImg)
+// Module 15347 (ReferralProgramCoachmarkImg)
 function ReferralProgramCoachmarkImg() {
   const tmp = callback2();
   let obj = { style: tmp.coachmarkImageContainer };
@@ -18,7 +18,7 @@ const View = arg1(dependencyMap[2]).View;
 const UserSettingsSections = arg1(dependencyMap[3]).UserSettingsSections;
 const ContentDismissActionType = arg1(dependencyMap[4]).ContentDismissActionType;
 const jsx = arg1(dependencyMap[5]).jsx;
-let closure_9 = arg1(dependencyMap[6]).createStyles({ coachmarkImageContainer: {}, coachmarkImage: { aze: "Array", azj: "onSelectUser" } });
+let closure_9 = arg1(dependencyMap[6]).createStyles({ coachmarkImageContainer: {}, coachmarkImage: { bhk: false, bic: false } });
 const obj = arg1(dependencyMap[6]);
 const result = arg1(dependencyMap[17]).fileFinishedImporting("modules/premium/referral_program/hooks/native/useReferralProgramCoachmark.tsx");
 

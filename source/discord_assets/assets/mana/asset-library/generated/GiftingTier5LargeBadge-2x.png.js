@@ -1,9 +1,9 @@
-// Module ID: 6226
-// Function ID: 50213
+// Module ID: 6228
+// Function ID: 50256
 // Name: vanityUrl
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 6226 (vanityUrl)
+// Module 6228 (vanityUrl)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/GiftingTier5LargeBadge-2x.png.js");
 

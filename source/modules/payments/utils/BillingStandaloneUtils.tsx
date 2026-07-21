@@ -1,10 +1,10 @@
-// Module ID: 6634
-// Function ID: 50932
+// Module ID: 6640
+// Function ID: 50981
 // Name: goToBillingStandalonePageWithHandoff
 // Dependencies: []
 // Exports: goToStandalonePremiumCheckoutWeb
 
-// Module 6634 (goToBillingStandalonePageWithHandoff)
+// Module 6640 (goToBillingStandalonePageWithHandoff)
 function goToBillingStandalonePageWithHandoff(Routes, arg1, arg2) {
   const require = Routes;
   const importDefault = arg1;

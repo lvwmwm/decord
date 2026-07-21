@@ -1,9 +1,9 @@
-// Module ID: 6803
-// Function ID: 53647
+// Module ID: 6809
+// Function ID: 53696
 // Name: ImmersiveBannerBlockRecord
 // Dependencies: []
 
-// Module 6803 (ImmersiveBannerBlockRecord)
+// Module 6809 (ImmersiveBannerBlockRecord)
 let closure_2 = importDefault(dependencyMap[0]);
 let closure_3 = importDefault(dependencyMap[1]);
 const tmp2 = () => {

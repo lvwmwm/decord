@@ -1,10 +1,10 @@
-// Module ID: 11407
-// Function ID: 88723
+// Module ID: 11414
+// Function ID: 88747
 // Name: TouchableBackground
 // Dependencies: []
 // Exports: default
 
-// Module 11407 (TouchableBackground)
+// Module 11414 (TouchableBackground)
 let closure_0 = importDefault(dependencyMap[0]);
 let closure_1 = importAll(dependencyMap[1]);
 ({ View: closure_2, Pressable: closure_3 } = arg1(dependencyMap[2]));
@@ -27,7 +27,7 @@ export default function TouchableBackground(onPressOut) {
   let callback = onPressIn;
   onPressOut = onPressOut.onPressOut;
   const React = onPressOut;
-  let obj = { "Null": null, "Null": "LOCAL_PAYMENT_START_PAYMENT_MISSING_REQUIRED_OPTION", "Null": "Missing required option for startPayment.", "Null": null, "Null": "LOCAL_PAYMENT_START_PAYMENT_DEFERRED_PAYMENT_FAILED", "Null": "LocalPayment startPayment deferred payment failed." };
+  let obj = { "Bool(true)": true, "Bool(true)": true, "Bool(true)": true, "Bool(true)": true, "Bool(true)": true, "Bool(true)": true };
   ({ pressableStyle, style, children } = onPressOut);
   Object.setPrototypeOf(null);
   const merged = Object.assign(onPressOut, obj);

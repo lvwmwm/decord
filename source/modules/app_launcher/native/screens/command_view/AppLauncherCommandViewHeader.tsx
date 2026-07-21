@@ -1,10 +1,10 @@
-// Module ID: 11260
-// Function ID: 87630
+// Module ID: 11266
+// Function ID: 87653
 // Name: DEFAULT_CONTENT_PADDING
 // Dependencies: []
 // Exports: AppLauncherCommandViewHeader
 
-// Module 11260 (DEFAULT_CONTENT_PADDING)
+// Module 11266 (DEFAULT_CONTENT_PADDING)
 let closure_3 = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 const tmp2 = arg1(dependencyMap[2]);
@@ -14,19 +14,19 @@ const sum = arg1(dependencyMap[4]).BACK_BUTTON_SIZE + 2 * DEFAULT_CONTENT_PADDIN
 let closure_8 = sum - 56;
 let obj = arg1(dependencyMap[5]);
 obj = { headerContainer: obj };
-obj = { <string:3246022526>: false, <string:1764201297>: false, <string:3679956194>: false, <string:944643202>: false, <string:1602118752>: false, <string:4266770810>: false, <string:1352483073>: false, padding: DEFAULT_CONTENT_PADDING };
+obj = { "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, padding: DEFAULT_CONTENT_PADDING };
 const tmp3 = arg1(dependencyMap[3]);
 obj.loadingHeaderContainer = { backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_BASE_LOWEST };
-const obj2 = { 9223372036854775807: 7471103, 9223372036854775807: 822083584, 0: 1958505087, 0: 1069815955, backgroundColor: tmp2.SCREEN_BACKGROUND_COLOR, borderRadius: importDefault(dependencyMap[6]).radii.xl + 4 };
+const obj2 = { ZcgDJX: 7471103, calculateJaroWinklerSimilarity: 822083584, GIFTING_BADGE_INFO_ACTION_SHEET_OPENED: 1958505087, CONVERSATIONS_EXTRACTION_PROCESSING: 1069815955, backgroundColor: tmp2.SCREEN_BACKGROUND_COLOR, borderRadius: importDefault(dependencyMap[6]).radii.xl + 4 };
 obj.appIconMask = obj2;
-const obj3 = { aze: false, azj: false, borderRadius: importDefault(dependencyMap[6]).radii.xl };
+const obj3 = { bhk: false, bic: false, borderRadius: importDefault(dependencyMap[6]).radii.xl };
 obj.appIcon = obj3;
 const obj1 = { backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_BASE_LOWEST };
 obj.loadingIcon = { backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_MOD_MUTED };
-obj.appSmallName = { "Null": "flex", "Null": "row", "Null": 16, "Null": "center" };
+obj.appSmallName = { td: "flex", sr: "row", ks: 16, ao: "center" };
 const items = [{ rotate: "180deg" }];
 obj.icon = { transform: items };
-obj.headerBannerOverlay = { 9223372036854775807: "r", 0: "isFLV", 9223372036854775807: "r", 0: "getVisibleLayouts", 0: "Array", -9223372036854775808: "num_chars" };
+obj.headerBannerOverlay = { GUILD_TOP_READ_CHANNELS: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002051805563584534, PARTY: 0.000000000000000000000000000000000000011020271976788129, paddingVertical: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000182278304578808, identityErrorMessage: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000009769928884340897, CHANNEL_DETAILS_TOP_MARGIN: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000729374833067805, OPTION_7: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000020602727775039357 };
 const styles = obj.createStyles(obj);
 let closure_10 = { code: "function AppLauncherCommandViewHeaderTsx1(){const{interpolate,scrollOffsetY,TOTAL_SCROLL_RANGE}=this.__closure;return{opacity:interpolate(scrollOffsetY.get(),[0,TOTAL_SCROLL_RANGE],[0,1],'clamp'),transform:[{translateY:interpolate(scrollOffsetY.get(),[0,TOTAL_SCROLL_RANGE],[12,0],'clamp')}]};}" };
 let closure_11 = { code: "function AppLauncherCommandViewHeaderTsx2(){const{APP_ICON_SIZE,APP_ICON_BORDER_WIDTH,DEFAULT_CONTENT_PADDING,interpolate,scrollOffsetY,TOTAL_SCROLL_RANGE}=this.__closure;return{transform:[{translateX:-APP_ICON_SIZE/2-APP_ICON_BORDER_WIDTH+DEFAULT_CONTENT_PADDING},{translateY:interpolate(scrollOffsetY.get(),[0,TOTAL_SCROLL_RANGE],[0,-APP_ICON_SIZE/2],'clamp')},{scale:interpolate(scrollOffsetY.get(),[0,TOTAL_SCROLL_RANGE],[1,0],'clamp')}],opacity:interpolate(scrollOffsetY.get(),[0,TOTAL_SCROLL_RANGE],[1,0],'clamp')};}" };
@@ -60,7 +60,7 @@ export const AppLauncherCommandViewHeader = function AppLauncherCommandViewHeade
       obj2 = scrollOffsetY(closure_2[8]);
       items = [0.229];
       items[1] = closure_8;
-      obj.opacity = obj2.interpolate(scrollOffsetY.get(), items, [null, null], "clamp");
+      obj.opacity = obj2.interpolate(scrollOffsetY.get(), items, ["Text", "lc"], "clamp");
       obj = {};
       obj4 = scrollOffsetY(closure_2[8]);
       items1 = [0.229];
@@ -96,17 +96,17 @@ export const AppLauncherCommandViewHeader = function AppLauncherCommandViewHeade
       obj6 = scrollOffsetY(closure_2[8]);
       items3 = [0.229];
       items3[1] = closure_8;
-      obj2.scale = obj6.interpolate(scrollOffsetY.get(), items3, ["getViewManagerConfig", "hasViewManagerConfig"], "clamp");
+      obj2.scale = obj6.interpolate(scrollOffsetY.get(), items3, ["<string:3813229678>", "<string:153900714>"], "clamp");
       items[2] = obj2;
       obj.transform = items;
       obj7 = scrollOffsetY(closure_2[8]);
       items4 = [0.229];
       items4[1] = closure_8;
-      obj.opacity = obj7.interpolate(scrollOffsetY.get(), items4, ["getViewManagerConfig", "hasViewManagerConfig"], "clamp");
+      obj.opacity = obj7.interpolate(scrollOffsetY.get(), items4, ["<string:3813229678>", "<string:153900714>"], "clamp");
       return obj;
     }
   }
-  obj = { <string:2638283262>: "<string:1912603304>", <string:1761608784>: "values", DEFAULT_CONTENT_PADDING, interpolate: arg1(dependencyMap[8]).interpolate, scrollOffsetY, TOTAL_SCROLL_RANGE: closure_8 };
+  obj = { "Bool(true)": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000034896884242, "Bool(true)": 13549603837760756000000000000000000000000000000000000000000000000000000000000000, DEFAULT_CONTENT_PADDING, interpolate: arg1(dependencyMap[8]).interpolate, scrollOffsetY, TOTAL_SCROLL_RANGE: closure_8 };
   E.__closure = obj;
   E.__workletHash = 13563524587234;
   E.__initData = closure_11;
@@ -118,7 +118,7 @@ export const AppLauncherCommandViewHeader = function AppLauncherCommandViewHeade
       obj2 = scrollOffsetY(closure_2[8]);
       items = [0.229];
       items[1] = closure_8;
-      obj.opacity = obj2.interpolate(scrollOffsetY.get(), items, [false, false], "clamp");
+      obj.opacity = obj2.interpolate(scrollOffsetY.get(), items, ["width", "height"], "clamp");
       return obj;
     }
   }
@@ -163,7 +163,7 @@ export const AppLauncherCommandViewHeader = function AppLauncherCommandViewHeade
   obj4.style = items2;
   const items3 = [tmp.headerBannerOverlay, animatedStyle2];
   const items4 = [callback(importDefault(dependencyMap[8]).View, { style: items3 }), callback(importDefault(dependencyMap[4]), { onPress: onPress.onPressBack }), , , ];
-  const obj5 = { type: 0, ids: 29.317, optimistic: 10, sendClientReports: 199, parentSpanIsAlwaysRootSpan: "END" };
+  const obj5 = { ddd: 0, ind: 29.317, ty: 10, nm: 199, parent: "END" };
   const items5 = [tmp.appSmallName, animatedStyle];
   obj5.style = items5;
   let displayName;

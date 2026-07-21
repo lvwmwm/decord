@@ -1,10 +1,10 @@
-// Module ID: 11778
-// Function ID: 91434
+// Module ID: 11785
+// Function ID: 91457
 // Name: useActiveThreadIds
 // Dependencies: []
 // Exports: useActiveGuildThreads, useActiveThreads, useArchivedThreads, useTrackThreadBrowserTab
 
-// Module 11778 (useActiveThreadIds)
+// Module 11785 (useActiveThreadIds)
 function useActiveThreadIds(channel) {
   const arg1 = channel;
   const items = [closure_7, closure_9, closure_6];

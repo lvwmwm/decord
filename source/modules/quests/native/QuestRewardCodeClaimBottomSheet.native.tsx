@@ -1,10 +1,10 @@
-// Module ID: 10907
-// Function ID: 84776
+// Module ID: 10912
+// Function ID: 84797
 // Name: QuestRewardCodeClaimBottomSheet
 // Dependencies: []
 // Exports: default
 
-// Module 10907 (QuestRewardCodeClaimBottomSheet)
+// Module 10912 (QuestRewardCodeClaimBottomSheet)
 function QuestRewardCodeClaimBottomSheet(quest) {
   let claimCode;
   let fetchCode;
@@ -135,7 +135,7 @@ function QuestRewardCodeClaimBottomSheet(quest) {
     tmp19 = null != rewardCodeRedemptionInstructions;
   }
   if (tmp19) {
-    const obj5 = { style: tmp.redemptionInstructions };
+    const obj5 = { "Null": "absolute", "Null": 0, "Null": "center", style: tmp.redemptionInstructions };
     let obj12 = importDefault(dependencyMap[21]);
     obj6 = { allowLinks: true };
     obj5.children = obj12.parse(rewardCodeRedemptionInstructions, true, obj6);

@@ -1,10 +1,10 @@
-// Module ID: 11928
-// Function ID: 92262
+// Module ID: 11935
+// Function ID: 92285
 // Name: usePersonalizedVoiceChannelUsers
 // Dependencies: []
 // Exports: default
 
-// Module 11928 (usePersonalizedVoiceChannelUsers)
+// Module 11935 (usePersonalizedVoiceChannelUsers)
 let closure_2 = importDefault(dependencyMap[0]);
 let closure_3 = importDefault(dependencyMap[1]);
 let closure_4 = importDefault(dependencyMap[2]);

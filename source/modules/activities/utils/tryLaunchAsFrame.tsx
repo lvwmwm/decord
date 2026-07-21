@@ -1,10 +1,10 @@
-// Module ID: 10496
-// Function ID: 81995
+// Module ID: 10502
+// Function ID: 82018
 // Name: tryLaunchAsFrame
 // Dependencies: []
 // Exports: tryLaunchAsFrame
 
-// Module 10496 (tryLaunchAsFrame)
+// Module 10502 (tryLaunchAsFrame)
 let closure_3 = importDefault(dependencyMap[0]);
 const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/activities/utils/tryLaunchAsFrame.tsx");
 

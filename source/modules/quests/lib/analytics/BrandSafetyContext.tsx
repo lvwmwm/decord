@@ -1,10 +1,10 @@
-// Module ID: 10454
-// Function ID: 80942
+// Module ID: 10460
+// Function ID: 80965
 // Name: getBrandSafetyContext
 // Dependencies: []
 // Exports: getBrandSafetyContext
 
-// Module 10454 (getBrandSafetyContext)
+// Module 10460 (getBrandSafetyContext)
 const _module = require(dependencyMap[0]);
 ({ getVisibleChannelIdsMethod: closure_3, getVisibleGuildIdsMethod: closure_4 } = _module);
 let closure_5 = importDefault(dependencyMap[1]);

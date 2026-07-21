@@ -1,9 +1,9 @@
-// Module ID: 11372
-// Function ID: 88461
+// Module ID: 11379
+// Function ID: 88485
 // Name: renderChannelBadge
 // Dependencies: []
 
-// Module 11372 (renderChannelBadge)
+// Module 11379 (renderChannelBadge)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("modules/channel_list_v2/native/components/index.tsx");
 

@@ -1,10 +1,10 @@
-// Module ID: 9250
-// Function ID: 72285
+// Module ID: 9254
+// Function ID: 72297
 // Name: VerifyPhone
 // Dependencies: []
 // Exports: default
 
-// Module 9250 (VerifyPhone)
+// Module 9254 (VerifyPhone)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 let closure_5 = importAll(dependencyMap[2]);

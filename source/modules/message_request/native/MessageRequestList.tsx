@@ -1,10 +1,10 @@
-// Module ID: 15424
-// Function ID: 117723
+// Module ID: 15431
+// Function ID: 117747
 // Name: PendingMessageRequestRow
 // Dependencies: []
 // Exports: default
 
-// Module 15424 (PendingMessageRequestRow)
+// Module 15431 (PendingMessageRequestRow)
 function PendingMessageRequestRow(isRestricted) {
   let hasSingleMessageRequest;
   let isAcceptLoading;
@@ -151,7 +151,7 @@ function PendingMessageRequestRow(isRestricted) {
         const items5 = [handleSelectRow(closure_5, obj3), ];
         let tmp29 = null;
         if (!isRestricted.isLastRow) {
-          tmp29 = handleAcceptMessageRequest(arg1(dependencyMap[18]).FormDivider, { 1372348835: null, -1436417275: null });
+          tmp29 = handleAcceptMessageRequest(arg1(dependencyMap[18]).FormDivider, { ref: null, onChange: null });
         }
         items5[1] = tmp29;
         obj.children = items5;
@@ -181,7 +181,7 @@ obj.acceptButton = { marginRight: 16 };
 obj.acceptButtonRestricted = { marginRight: 12 };
 const obj1 = { backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_SURFACE_HIGH, tintColor: importDefault(dependencyMap[5]).colors.INTERACTIVE_TEXT_DEFAULT, borderRadius: importDefault(dependencyMap[5]).radii.lg };
 obj.pressableRow = { borderRadius: importDefault(dependencyMap[5]).radii.md };
-obj.activityIndicator = { <string:1140607356>: "<string:16777479>", <string:1751293292>: "<string:36295491>" };
+obj.activityIndicator = {};
 const obj2 = { borderRadius: importDefault(dependencyMap[5]).radii.md };
 obj.list = { backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_LOW };
 let closure_10 = obj.createStyles(obj);
@@ -206,7 +206,7 @@ export default function MessageRequestList(goToMessageRequestPreview) {
     obj.bodyText = intl.string(arg1(dependencyMap[6]).t.SXrqTf);
     return callback(importDefault(dependencyMap[23]), obj);
   } else {
-    const items = [];
+    const items = ["y"];
     HermesBuiltin.arraySpread(arr, 1);
     obj = {};
     const items1 = [tmp.list, ];
@@ -227,7 +227,7 @@ export default function MessageRequestList(goToMessageRequestPreview) {
       const goToMessageRequestPreview = item;
       if ("string" === typeof item) {
         let obj = { style: tmp.sectionContainer };
-        obj = { INTEGRATION_CREATE: "/assets/images/native/premium/illustrations", ConstraintReasonCode: 51 };
+        obj = {};
         const intl = goToMessageRequestPreview(arr[6]).intl;
         const obj1 = { pendingRequestNumber: arr.length };
         obj.children = intl.format(goToMessageRequestPreview(arr[6]).t.evH4Yb, obj1);

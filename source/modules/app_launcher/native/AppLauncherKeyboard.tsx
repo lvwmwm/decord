@@ -1,10 +1,10 @@
-// Module ID: 11137
-// Function ID: 86621
+// Module ID: 11143
+// Function ID: 86644
 // Name: setAppLauncherA11yFocusReturnRef
 // Dependencies: []
 // Exports: setAppLauncherA11yFocusReturnRef
 
-// Module 11137 (setAppLauncherA11yFocusReturnRef)
+// Module 11143 (setAppLauncherA11yFocusReturnRef)
 const importAllResult = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 const AnalyticEvents = arg1(dependencyMap[2]).AnalyticEvents;
@@ -15,7 +15,7 @@ let obj1 = arg1(dependencyMap[6]);
 let obj = {};
 obj = { borderTopLeftRadius: importDefault(dependencyMap[7]).radii.sm, borderTopRightRadius: importDefault(dependencyMap[7]).radii.sm };
 obj.onboardingRoundingView = obj;
-obj1 = { limit: "y", includeFrecency: "isArray", lastUsedCommandId: "_desired", lastUsedTimeMs: "DARK", borderColor: importDefault(dependencyMap[7]).colors.BACKGROUND_BRAND, borderTopLeftRadius: importDefault(dependencyMap[7]).radii.sm, borderTopRightRadius: importDefault(dependencyMap[7]).radii.sm };
+obj1 = { <string:4142921446>: "y", <string:1559994470>: "isArray", <string:1370117730>: "warn", <string:862052567>: "it", borderColor: importDefault(dependencyMap[7]).colors.BACKGROUND_BRAND, borderTopLeftRadius: importDefault(dependencyMap[7]).radii.sm, borderTopRightRadius: importDefault(dependencyMap[7]).radii.sm };
 obj.onboardingHeader = obj1;
 const tmp2 = arg1(dependencyMap[5]);
 obj.onboardingNavigatorContent = { borderWidth: 2, borderColor: importDefault(dependencyMap[7]).colors.BACKGROUND_BRAND, borderTopLeftRadius: importDefault(dependencyMap[7]).radii.sm, borderTopRightRadius: importDefault(dependencyMap[7]).radii.sm };

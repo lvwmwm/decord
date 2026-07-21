@@ -1,10 +1,10 @@
-// Module ID: 6919
-// Function ID: 55225
+// Module ID: 6923
+// Function ID: 55235
 // Name: canBypassSlowmodeHelper
 // Dependencies: []
 // Exports: canBypassSlowmode, getSlowmodeDescription, getSlowmodeIndicatorText, useCanBypassSlowmode
 
-// Module 6919 (canBypassSlowmodeHelper)
+// Module 6923 (canBypassSlowmodeHelper)
 function canBypassSlowmodeHelper(channel, arg1, closure_3) {
   return closure_3.can(Permissions.BYPASS_SLOWMODE, channel);
 }

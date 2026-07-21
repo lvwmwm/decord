@@ -1,10 +1,10 @@
-// Module ID: 10197
-// Function ID: 78722
+// Module ID: 10203
+// Function ID: 78740
 // Name: NotificationsContainer
 // Dependencies: []
 // Exports: ChannelContainer
 
-// Module 10197 (NotificationsContainer)
+// Module 10203 (NotificationsContainer)
 function NotificationsContainer() {
   let tmp2 = null;
   if (importDefault(dependencyMap[9])().isChatBesideChannelList) {
@@ -22,7 +22,7 @@ const ChannelTypes = arg1(dependencyMap[5]).ChannelTypes;
 const ContentDismissActionType = arg1(dependencyMap[6]).ContentDismissActionType;
 ({ jsx: closure_10, jsxs: closure_11 } = arg1(dependencyMap[7]));
 const tmp2 = arg1(dependencyMap[7]);
-let closure_12 = arg1(dependencyMap[8]).createStyles({ container: { "Null": 4, "Null": "absolute", "Null": 0, "Null": 0, "Null": 0 } });
+let closure_12 = arg1(dependencyMap[8]).createStyles({ container: { "Null": 4, "Null": "absolute", "Bool(true)": 0, "Bool(true)": 0, "Bool(true)": 0 } });
 const obj = arg1(dependencyMap[8]);
 const result = arg1(dependencyMap[19]).fileFinishedImporting("components_native/ChannelContainer.tsx");
 

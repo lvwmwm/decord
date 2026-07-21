@@ -1,10 +1,10 @@
-// Module ID: 12720
-// Function ID: 97625
+// Module ID: 12727
+// Function ID: 97648
 // Name: SignPostIcon
 // Dependencies: []
 // Exports: SignPostIcon
 
-// Module 12720 (SignPostIcon)
+// Module 12727 (SignPostIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/SignPostIcon.tsx");

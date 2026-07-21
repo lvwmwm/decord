@@ -1,15 +1,14 @@
-// Module ID: 10276
-// Function ID: 79391
+// Module ID: 10282
+// Function ID: 79410
 // Name: getPushNotificationSelectOptions
 // Dependencies: [0, 0, 0, 0]
 // Exports: getPushNotificationSelectOptions, getUnreadSelectOptions
 
-// Module 10276 (getPushNotificationSelectOptions)
-import { UserNotificationSettings } from "result";
-import { UnreadSetting } from "result";
-import result from "result";
+// Module 10282 (getPushNotificationSelectOptions)
+import { UserNotificationSettings } from "__exportStarResult1";
+import { UnreadSetting } from "__exportStarResult1";
 
-result = result.fileFinishedImporting("modules/notifications/settings/utils/notificationSettingsPresetOptionUtils.tsx");
+const result = require("__exportStarResult1").fileFinishedImporting("modules/notifications/settings/utils/notificationSettingsPresetOptionUtils.tsx");
 
 export const getPushNotificationSelectOptions = function getPushNotificationSelectOptions() {
   let obj = {};

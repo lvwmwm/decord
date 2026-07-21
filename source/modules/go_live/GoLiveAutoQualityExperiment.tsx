@@ -1,17 +1,17 @@
-// Module ID: 10677
-// Function ID: 83240
+// Module ID: 10683
+// Function ID: 83263
 // Name: getGoLiveAutoQualityExperimentConfig
 // Dependencies: []
 // Exports: maybeMigrateToAutoQuality, useGoLiveAutoQualityExperimentConfig
 
-// Module 10677 (getGoLiveAutoQualityExperimentConfig)
+// Module 10683 (getGoLiveAutoQualityExperimentConfig)
 function getGoLiveAutoQualityExperimentConfig(location) {
   return store.getConfig({ location: location.location });
 }
 let closure_2 = importDefault(dependencyMap[0]);
 let closure_3 = importDefault(dependencyMap[1]);
 const ApplicationStreamPresets = arg1(dependencyMap[2]).ApplicationStreamPresets;
-let obj = { with_sku: true, with_application: false, type: false };
+let obj = { <string:1446771556>: true, <string:995386538>: false, <string:3428952662>: false };
 obj = { defaultConfig: obj };
 obj = {};
 const obj1 = {};

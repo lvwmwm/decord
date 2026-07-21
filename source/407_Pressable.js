@@ -5,8 +5,8 @@
 
 // Module 407 (Pressable)
 let jsx;
-let closure_2 = ["ellipsizeMode"];
-let closure_3 = [];
+let closure_2 = [null];
+let closure_3 = ["<string:1666252802>", "<string:1497508647>", "<string:2013266566>", "<string:1090519499>", "\u00D7", "<string:2138428755>", "<string:1093315090>", "multiplication", "<string:2476069714>", "<string:1715626411>", "<string:2919236285>", "<string:1174405602>", "\u00D7", "cancelar", "marca", "multiplicaci\u00F3n", "prohibido", "signo de multiplicaci\u00F3n", "<string:3838132833>", "<string:3824812033>", "<string:2487615489>", "<string:536872139>", "<string:1308623296>", "<string:117440944>", "<string:1862271649>", "<string:3154117105>", "<string:1627390619>", "<string:42523714>", "<string:31544320>", "<string:121262336>", "<string:80450628>", "<string:30387456>"];
 let closure_4 = importDefault(dependencyMap[0]);
 let closure_5 = importDefault(dependencyMap[1]);
 importAll(dependencyMap[2]);

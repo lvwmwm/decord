@@ -1,10 +1,10 @@
-// Module ID: 16056
-// Function ID: 123389
+// Module ID: 16063
+// Function ID: 123420
 // Name: PhoneThenEmailInterstitial
 // Dependencies: []
 // Exports: default
 
-// Module 16056 (PhoneThenEmailInterstitial)
+// Module 16063 (PhoneThenEmailInterstitial)
 function PhoneThenEmailInterstitial(navigation) {
   const arg1 = navigation.navigation;
   let obj = { Illustration: arg1(dependencyMap[10]).VerifyPhone };
@@ -42,7 +42,7 @@ let closure_8 = importDefault(dependencyMap[5]);
 ({ UserRequiredActions: closure_9, VerificationModalScenes: closure_10 } = arg1(dependencyMap[6]));
 const jsx = arg1(dependencyMap[7]).jsx;
 const tmp2 = arg1(dependencyMap[6]);
-let closure_12 = arg1(dependencyMap[8]).createStyles({ button: { __initData: "r", track: "IS_QUEST_RELEASE", paddingHorizontal: "isArray", p: "ParentalControlledDefaultGuildsRestricted" } });
+let closure_12 = arg1(dependencyMap[8]).createStyles({ button: { with_bundled_skus: false, features: false, rulesChannelId: false, publicUpdatesChannelId: false } });
 const obj = arg1(dependencyMap[8]);
 const result = arg1(dependencyMap[34]).fileFinishedImporting("modules/verification/native/components/VerificationModal.tsx");
 
@@ -102,7 +102,7 @@ export default function VerificationModal() {
         obj.accessibilityLabel = intl.string(callback(closure_2[11]).t.PdRCRg);
         obj.onPress = function onPress() {
           let obj = callback(closure_2[17]);
-          obj = { "Null": null, "Null": null, "Null": null };
+          obj = { url: null, body: null, retries: null };
           obj = {};
           const intl = callback(closure_2[11]).intl;
           obj.label = intl.string(callback(closure_2[11]).t.2jxGer);

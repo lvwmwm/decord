@@ -1,9 +1,9 @@
-// Module ID: 8321
-// Function ID: 65980
+// Module ID: 8325
+// Function ID: 65992
 // Name: enforcing
 // Dependencies: []
 
-// Module 8321 (enforcing)
+// Module 8325 (enforcing)
 const TurboModuleRegistry = require(dependencyMap[0]).TurboModuleRegistry;
 const enforcing = TurboModuleRegistry.getEnforcing("NativeShareManagerModule");
 const _module = require(dependencyMap[1]);

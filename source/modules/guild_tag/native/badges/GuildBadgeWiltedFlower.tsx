@@ -1,14 +1,14 @@
-// Module ID: 12830
-// Function ID: 98138
+// Module ID: 12837
+// Function ID: 98161
 // Name: items
 // Dependencies: []
 // Exports: GuildBadgeWiltedFlower
 
-// Module 12830 (items)
+// Module 12837 (items)
 importAll(dependencyMap[0]);
 ({ jsx: closure_2, jsxs: closure_3 } = arg1(dependencyMap[1]));
-let closure_4 = [true, true, true];
-let closure_5 = [-1039760982, -1651790921, -591735470];
+let closure_4 = ["<string:1105917265>", "disableConstantNumberOfLines", "<string:3620815962>"];
+let closure_5 = ["placeholderTextColor", "editable", "large"];
 const items = [{}, {}, {}];
 let closure_7 = ["bottom", "body"];
 let closure_8 = [];
@@ -29,7 +29,7 @@ export const GuildBadgeWiltedFlower = function GuildBadgeWiltedFlower(width) {
   if (num2 === undefined) {
     num2 = 24;
   }
-  let obj = { onValueChange: "r", step: "onRequireModeratorMFAClick", flexDirection: "Array", alignItems: "isSpamMessageRequest" };
+  let obj = { "Bool(true)": null, "Bool(true)": 4, "Bool(true)": 4, "Bool(true)": "rgba(0, 0, 0, 0.75)" };
   ({ primaryTintColor, secondaryTintColor } = width);
   Object.setPrototypeOf(null);
   const merged = Object.assign(width, obj);

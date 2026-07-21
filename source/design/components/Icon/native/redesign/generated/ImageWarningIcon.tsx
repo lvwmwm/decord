@@ -1,10 +1,10 @@
-// Module ID: 4634
-// Function ID: 40236
+// Module ID: 4636
+// Function ID: 40277
 // Name: ImageWarningIcon
 // Dependencies: []
 // Exports: ImageWarningIcon
 
-// Module 4634 (ImageWarningIcon)
+// Module 4636 (ImageWarningIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/ImageWarningIcon.tsx");

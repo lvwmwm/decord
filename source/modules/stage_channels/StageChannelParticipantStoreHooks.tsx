@@ -1,10 +1,10 @@
-// Module ID: 4959
-// Function ID: 42585
+// Module ID: 4961
+// Function ID: 42626
 // Name: useStageParticipants
 // Dependencies: []
 // Exports: useActualStageSpeakerCount, useSortedRequestToSpeakParticipants, useStageParticipants, useStageParticipantsCount
 
-// Module 4959 (useStageParticipants)
+// Module 4961 (useStageParticipants)
 let closure_2 = importDefault(dependencyMap[0]);
 let closure_3 = importDefault(dependencyMap[1]);
 const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/stage_channels/StageChannelParticipantStoreHooks.tsx");

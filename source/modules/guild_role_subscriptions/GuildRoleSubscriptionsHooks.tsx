@@ -1,10 +1,10 @@
-// Module ID: 13970
-// Function ID: 106171
+// Module ID: 13977
+// Function ID: 106194
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 // Exports: useArchiveSubscriptionListing, useCreateSubscriptionGroupListing, useDeleteSubscriptionGroupListing, useDeleteSubscriptionListing, useFetchListingsForSubscriptions, useFetchSubscriptionsSettings, useGroupListingsForGuild, usePublishSubscriptionListing, useSubscriptionGroupListing, useSubscriptionListing, useSubscriptionTrial, useSubscriptionTrialsForGroup, useSubscriptionTrialsForGuild, useSubscriptionsSettings, useUpdateSubscriptionGroupListing, useUpdateSubscriptionsSettings, useUpdateSubscriptionsTrial
 
-// Module 13970 (_createForOfIteratorHelperLoose)
+// Module 13977 (_createForOfIteratorHelperLoose)
 function _createForOfIteratorHelperLoose(@@iterator) {
   let arg1 = Symbol_iterator;
   @@iterator = "undefined" !== typeof Symbol;
@@ -208,7 +208,7 @@ function useSubscriptionListingsForGuild(guildId, arg1) {
   let obj = arg1;
   arg1 = guildId;
   if (arg1 === undefined) {
-    obj = {};
+    obj = { INVALID_PARAMETER: null, HTML5_ERROR: null };
   }
   const importDefault = obj;
   useFetchListingsForGuild(guildId);

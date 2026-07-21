@@ -1,9 +1,9 @@
-// Module ID: 7617
-// Function ID: 61031
+// Module ID: 7621
+// Function ID: 61043
 // Name: createThreadEmbed
 // Dependencies: []
 
-// Module 7617 (createThreadEmbed)
+// Module 7621 (createThreadEmbed)
 function createThreadEmbed(message, roleStyle, isInlineReplyPreview, channel1, options, forcedTheme) {
   if (!isInlineReplyPreview) {
     if (message.hasFlag(closure_30.HAS_THREAD)) {
@@ -51,7 +51,7 @@ function createThreadEmbed(message, roleStyle, isInlineReplyPreview, channel1, o
                       if (!mostRecentMessage.ignored) {
                         obj1 = { title: channelName, messageCountLabel: intl5, messageCountAccessibilityLabel: string2 };
                         const obj2 = { state: ReferencedMessageRowState.LOADED };
-                        const obj3 = { 654255103: "scalar", 687810559: 9, 721365503: "sh", 1174350847: 10, 313996: null, 313994: "Path 10", 315653: "ADBE Vector Shape - Group", 315655: false, message: mostRecentMessage, roleStyle, options };
+                        const obj3 = { "Bool(false)": "<string:2370145558>", "Bool(false)": "<string:200688197>", "Bool(false)": "<string:200671233>", "Bool(false)": "<string:4199612417>", "Bool(false)": "<string:57885007>", "Bool(false)": "<string:1091633153>", "Bool(false)": "/assets/.cache/intl/ZGVzaWdu", 721365503: null, message: mostRecentMessage, roleStyle, options };
                         obj2.message = createMessageContent(obj3);
                         obj1.referencedMessage = obj2;
                         obj1.backgroundColor = backgroundColor;
@@ -485,7 +485,7 @@ function createMessageContent(message) {
                         tmp96 = obj15;
                       } else {
                         merged = createMessageContent;
-                        obj16 = { 0: "scalar", -889536408: 9, 1751302243: "sh", -1140632642: 10, 458705243: null, 1585572706: "Path 10", 0: "ADBE Vector Shape - Group", 0: false, message: message3, messageForward: merged, roleStyle };
+                        obj16 = { "Bool(false)": "<string:2370145558>", "Bool(false)": "<string:200688197>", "Bool(false)": "<string:200671233>", "Bool(false)": "<string:4199612417>", "Bool(false)": "<string:57885007>", "Bool(false)": "<string:1091633153>", "Bool(false)": "/assets/.cache/intl/ZGVzaWdu", "Bool(false)": null, message: message3, messageForward: merged, roleStyle };
                         let obj17 = {};
                         merged = obj17;
                         merged = options;
@@ -1328,7 +1328,7 @@ function createMessageContent(message) {
         applicationIconSource = author.getAvatarSource(undefined);
         const tmp57 = message.state !== constants2.SEND_FAILED || message.isCommandType();
       }
-      parseMessageMarkupResult = { dispatch: true, <string:3899561356>: true, <string:3031889457>: true, content: undefined };
+      parseMessageMarkupResult = { allowDevLinks: "postal-address-country", allowEmojiLinks: "password", allowGameMentions: "email", content: undefined };
     }
   }
 }

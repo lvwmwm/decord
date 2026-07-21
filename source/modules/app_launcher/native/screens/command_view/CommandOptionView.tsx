@@ -1,10 +1,10 @@
-// Module ID: 11266
-// Function ID: 87692
+// Module ID: 11272
+// Function ID: 87715
 // Name: set
 // Dependencies: []
 // Exports: default
 
-// Module 11266 (set)
+// Module 11272 (set)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 let closure_4 = importDefault(dependencyMap[2]);
@@ -12,8 +12,8 @@ let closure_4 = importDefault(dependencyMap[2]);
 const items = [arg1(dependencyMap[4]).ApplicationCommandOptionType.STRING, arg1(dependencyMap[4]).ApplicationCommandOptionType.INTEGER, arg1(dependencyMap[4]).ApplicationCommandOptionType.ATTACHMENT, arg1(dependencyMap[4]).ApplicationCommandOptionType.BOOLEAN, arg1(dependencyMap[4]).ApplicationCommandOptionType.MENTIONABLE, arg1(dependencyMap[4]).ApplicationCommandOptionType.USER, arg1(dependencyMap[4]).ApplicationCommandOptionType.ROLE, arg1(dependencyMap[4]).ApplicationCommandOptionType.CHANNEL, arg1(dependencyMap[4]).ApplicationCommandOptionType.NUMBER];
 const set = new Set(items);
 let obj = arg1(dependencyMap[5]);
-obj = { optionDescription: { marginTop: 4 }, optionErrorContainer: {} };
-obj = { tintColor: importDefault(dependencyMap[6]).colors.ICON_FEEDBACK_CRITICAL };
+obj = { optionDescription: { marginTop: 4 }, optionErrorContainer: { onTapButtonActionComponent: "safety_user_sentiment_notice_dismissed_at", onTapSelectActionComponent: "message", onTapWelcomeReply: null } };
+obj = { <string:3225485828>: null, <string:1761608784>: 15.1, <string:3679956194>: null, tintColor: importDefault(dependencyMap[6]).colors.ICON_FEEDBACK_CRITICAL };
 obj.optionErrorIcon = obj;
 obj.labelText = { marginBottom: 8 };
 let closure_8 = obj.createStyles(obj);
@@ -82,7 +82,7 @@ export default function CommandOptionView(option) {
     const obj4 = { collapsable: false, style };
     let tmp23 = hasItem1;
     if (hasItem1) {
-      const obj5 = { Promise: false, marginTop: false, flags: false, style: tmp.labelText, children: option.displayName };
+      const obj5 = { style: tmp.labelText, children: option.displayName };
       tmp23 = callback(arg1(dependencyMap[11]).Text, obj5);
     }
     const items2 = [tmp23, , , ];
@@ -108,7 +108,7 @@ export default function CommandOptionView(option) {
       hasError: hasItem
     };
     items2[1] = callback(importDefault(dependencyMap[12]), obj6);
-    const obj7 = { Promise: "ur", marginTop: "SECTION_INDEX_FIRST_NAMED_CATEGORY", flags: "ur", style: tmp.optionDescription, children: option.displayDescription };
+    const obj7 = { style: tmp.optionDescription, children: option.displayDescription };
     items2[2] = callback(arg1(dependencyMap[11]).Text, obj7);
     if (hasItem) {
       const obj8 = { collapsable: false, entering: reduceMotionResult1, exiting: reduceMotionResult, style: tmp.optionErrorContainer };

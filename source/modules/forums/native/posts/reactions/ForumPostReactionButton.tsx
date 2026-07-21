@@ -1,10 +1,10 @@
-// Module ID: 10318
-// Function ID: 79679
+// Module ID: 10324
+// Function ID: 79698
 // Name: BurstReactionButton
 // Dependencies: []
 // Exports: AddReactionButton, AdditionalReactionCount, ForumPostReactionButton
 
-// Module 10318 (BurstReactionButton)
+// Module 10324 (BurstReactionButton)
 class BurstReactionButton {
   constructor(arg0) {
     ({ colors, emoji, onPress, onLongPress, containerStyle, count, emojiSize, selected, animate, animateCount, accessible } = global);
@@ -132,12 +132,12 @@ const View = arg1(dependencyMap[1]).View;
 ({ jsxs: closure_5, jsx: closure_6 } = arg1(dependencyMap[2]));
 let obj = arg1(dependencyMap[3]);
 obj = {};
-obj = { borderRadius: importDefault(dependencyMap[4]).radii.sm, borderColor: importDefault(dependencyMap[4]).colors.REACTION_BORDER_DEFAULT, backgroundColor: importDefault(dependencyMap[4]).colors.REACTION_BACKGROUND_DEFAULT };
+obj = { flex: null, accessible: "space-around", Symbol: "center", justifyContent: 1, View: 24, a: 16, accessible: 480, useEffect: "center", sa: 311, h: null, apply: 1, body: 345, borderRadius: importDefault(dependencyMap[4]).radii.sm, borderColor: importDefault(dependencyMap[4]).colors.REACTION_BORDER_DEFAULT, backgroundColor: importDefault(dependencyMap[4]).colors.REACTION_BACKGROUND_DEFAULT };
 obj.container = obj;
 const tmp2 = arg1(dependencyMap[2]);
 obj.selected = { borderColor: importDefault(dependencyMap[4]).colors.REACTION_BORDER_REACTED_DEFAULT, backgroundColor: importDefault(dependencyMap[4]).colors.REACTION_BACKGROUND_REACTED_DEFAULT };
 obj.textEmoji = { fontSize: 12 };
-obj.imageEmoji = { <string:1140607356>: "<string:16777479>", <string:1751293292>: "<string:36295491>" };
+obj.imageEmoji = {};
 obj.countContainer = { paddingStart: 4 };
 let closure_7 = obj.createStyles(obj);
 const obj1 = { borderColor: importDefault(dependencyMap[4]).colors.REACTION_BORDER_REACTED_DEFAULT, backgroundColor: importDefault(dependencyMap[4]).colors.REACTION_BACKGROUND_REACTED_DEFAULT };
@@ -155,7 +155,7 @@ export const AdditionalReactionCount = function AdditionalReactionCount(arg0) {
   const items = [callback3().container, containerStyle];
   obj.style = items;
   obj.onPress = importDefault(dependencyMap[5])({ threadId }).onTapReactionCount;
-  const items1 = [true, count];
+  const items1 = ["fill", count];
   obj.children = callback(arg1(dependencyMap[8]).Text, { children: items1 });
   return callback2(arg1(dependencyMap[6]).PressableOpacity, obj);
 };

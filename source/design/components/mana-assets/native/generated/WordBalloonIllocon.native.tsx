@@ -1,10 +1,10 @@
-// Module ID: 6615
-// Function ID: 50796
+// Module ID: 6621
+// Function ID: 50845
 // Name: WordBalloonIllocon
 // Dependencies: []
 // Exports: WordBalloonIllocon
 
-// Module 6615 (WordBalloonIllocon)
+// Module 6621 (WordBalloonIllocon)
 const jsx = require(dependencyMap[0]).jsx;
 const _module = require(dependencyMap[3]);
 const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/WordBalloonIllocon.native.tsx");

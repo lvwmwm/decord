@@ -1,10 +1,10 @@
-// Module ID: 16211
-// Function ID: 125348
+// Module ID: 16218
+// Function ID: 125379
 // Name: FeatureCard
 // Dependencies: []
 // Exports: default
 
-// Module 16211 (FeatureCard)
+// Module 16218 (FeatureCard)
 function FeatureCard(arg0) {
   let body;
   let header;
@@ -15,8 +15,7 @@ function FeatureCard(arg0) {
   obj = { style: tmp.featureIcon, children: icon() };
   const items = [callback(closure_4, obj), ];
   obj = { style: tmp.featureDescription };
-  const obj1 = { INTEGRATION_CREATE: 131072.00119209292, ConstraintReasonCode: -293983030121430100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, children: header };
-  const items1 = [callback(arg1(dependencyMap[10]).Heading, obj1), callback(arg1(dependencyMap[10]).Text, { children: body })];
+  const items1 = [callback(arg1(dependencyMap[10]).Heading, { children: header }), callback(arg1(dependencyMap[10]).Text, { children: body })];
   obj.children = items1;
   items[1] = callback2(closure_4, obj);
   obj.children = items;
@@ -31,12 +30,12 @@ const tmp2 = arg1(dependencyMap[1]);
 const tmp3 = arg1(dependencyMap[4]);
 ({ jsx: closure_13, jsxs: closure_14, Fragment: closure_15 } = arg1(dependencyMap[5]));
 let obj = arg1(dependencyMap[6]);
-obj = { container: { height: "100%" }, contentPadding: { padding: 16 }, header: { person_pouting: -0.0014069081515246523, cv: -0.0001058445630777106 }, body: { person_pouting: 24, cv: "recent_games_enabled" }, details: { concat: 24, now: "recent_games_enabled" }, headerImage: { width: "100%" }, features: { visible: "boolean", transparent: "string" } };
+obj = { container: { height: "100%" }, contentPadding: { padding: 16 }, header: { collapsable: "absolute", preventClipping: 0 }, body: { collapsable: 24, preventClipping: "recent_games_enabled" }, details: { "Bool(true)": 24, "Bool(true)": "recent_games_enabled" }, headerImage: { width: "100%" }, features: {} };
 obj = { backgroundColor: importDefault(dependencyMap[7]).colors.CARD_BACKGROUND_DEFAULT, borderRadius: importDefault(dependencyMap[7]).radii.sm };
 obj.featureCard = obj;
-const obj1 = { "Null": "0b8a6fa235bbde823695fe5cdeccf7e4", lockScrollWhileSnapping: "channel_setup_light", loop: "png", loopClonesPerSide: true, backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_MOD_STRONG };
+const obj1 = { "Null": "0b8a6fa235bbde823695fe5cdeccf7e4", "Null": "channel_setup_light", "Null": "png", "Null": true, backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_MOD_STRONG };
 obj.featureIcon = obj1;
-obj.featureDescription = { "Bool(false)": null, "Bool(false)": null };
+obj.featureDescription = {};
 let closure_16 = obj.createStyles(obj);
 const tmp4 = arg1(dependencyMap[5]);
 const result = arg1(dependencyMap[24]).fileFinishedImporting("modules/guild_settings/community/native/GuildSettingsModalCommunityIntro.tsx");
@@ -123,8 +122,7 @@ export default function GuildSettingsModalCommunityIntro(contentContainerStyle) 
   const intl6 = arg1(dependencyMap[9]).intl;
   obj8.body = intl6.format(arg1(dependencyMap[9]).t.A6G7ak, {
     featureHook(children) {
-      const obj = { INTEGRATION_CREATE: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007863204514436, ConstraintReasonCode: 127277221446373050000000000, children };
-      return callback2(callback(navigation[10]).Text, obj, arg1);
+      return callback2(callback(navigation[10]).Text, { children }, arg1);
     }
   });
   const items5 = [obj8, , ];
@@ -142,8 +140,7 @@ export default function GuildSettingsModalCommunityIntro(contentContainerStyle) 
       return null;
     },
     featureHook(children) {
-      const obj = { INTEGRATION_CREATE: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007863204514436, ConstraintReasonCode: 127277221446373050000000000, children };
-      return callback2(callback(navigation[10]).Text, obj, arg1);
+      return callback2(callback(navigation[10]).Text, { children }, arg1);
     }
   });
   items5[1] = obj10;

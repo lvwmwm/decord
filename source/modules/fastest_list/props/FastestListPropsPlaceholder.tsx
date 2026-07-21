@@ -1,9 +1,9 @@
-// Module ID: 8816
-// Function ID: 69524
+// Module ID: 8820
+// Function ID: 69536
 // Name: FastestListPropsPlaceholderType
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 8816 (FastestListPropsPlaceholderType)
+// Module 8820 (FastestListPropsPlaceholderType)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("modules/fastest_list/props/FastestListPropsPlaceholder.tsx");
 

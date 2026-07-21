@@ -1,10 +1,10 @@
-// Module ID: 9943
-// Function ID: 76886
+// Module ID: 9948
+// Function ID: 76902
 // Name: PinIcon
-// Dependencies: [86966272, 282656768, 283967488, 323747840, 131072, 300941312]
+// Dependencies: []
 // Exports: PinIcon
 
-// Module 9943 (PinIcon)
+// Module 9948 (PinIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/PinIcon.tsx");

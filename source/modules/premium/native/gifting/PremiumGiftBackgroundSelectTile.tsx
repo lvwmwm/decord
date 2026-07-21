@@ -1,10 +1,10 @@
-// Module ID: 11801
-// Function ID: 91586
+// Module ID: 11808
+// Function ID: 91609
 // Name: GiftBackgroundSelectTile
 // Dependencies: []
 // Exports: default
 
-// Module 11801 (GiftBackgroundSelectTile)
+// Module 11808 (GiftBackgroundSelectTile)
 importAll(dependencyMap[0]);
 ({ View: closure_3, Pressable: closure_4 } = arg1(dependencyMap[1]));
 const PremiumGiftStyles = arg1(dependencyMap[2]).PremiumGiftStyles;

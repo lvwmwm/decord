@@ -1,16 +1,16 @@
-// Module ID: 13558
-// Function ID: 102838
+// Module ID: 13565
+// Function ID: 102861
 // Name: TwoFASetupLanding
 // Dependencies: []
 // Exports: default
 
-// Module 13558 (TwoFASetupLanding)
+// Module 13565 (TwoFASetupLanding)
 importAll(dependencyMap[0]);
 ({ Image: closure_3, View: closure_4 } = arg1(dependencyMap[1]));
 const tmp3 = arg1(dependencyMap[1]);
 ({ jsx: closure_5, jsxs: closure_6 } = arg1(dependencyMap[2]));
 const tmp4 = arg1(dependencyMap[2]);
-let closure_7 = arg1(dependencyMap[3]).createStyles({ container: {}, authIcon: { position: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001586575, minWidth: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000753914413511991, height: 116013416897110370000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 } });
+let closure_7 = arg1(dependencyMap[3]).createStyles({ container: {}, authIcon: { flexDirection: "<string:2319122434>", alignItems: "<string:2673934337>", paddingStart: "banner" } });
 const obj = arg1(dependencyMap[3]);
 const result = arg1(dependencyMap[10]).fileFinishedImporting("modules/user_settings/account/native/mfa_modal_flow/TwoFASetupLanding.tsx");
 
@@ -31,7 +31,7 @@ export default function TwoFASetupLanding() {
   const items1 = [, ];
   ({ modalBody: arr2[0], text: arr2[1] } = twoFASetupStyles);
   const intl2 = arg1(dependencyMap[9]).intl;
-  obj4.children = intl2.format(arg1(dependencyMap[9]).t.A7Aehw, { "Null": null, "Null": "91d00dd928cdd63a1c9619eb92ec080e" });
+  obj4.children = intl2.format(arg1(dependencyMap[9]).t.A7Aehw, { "Null": null, "Null": null });
   items[2] = callback(arg1(dependencyMap[8]).Text, obj4);
   obj1.children = items;
   obj.children = callback2(arg1(dependencyMap[6]).SafeAreaPaddingView, obj1);

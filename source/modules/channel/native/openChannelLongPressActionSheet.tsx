@@ -1,10 +1,10 @@
-// Module ID: 9087
-// Function ID: 71195
+// Module ID: 9091
+// Function ID: 71207
 // Name: openChannelLongPressActionSheet
 // Dependencies: []
 // Exports: openChannelLongPressActionSheet
 
-// Module 9087 (openChannelLongPressActionSheet)
+// Module 9091 (openChannelLongPressActionSheet)
 const _module = require(dependencyMap[3]);
 const result = _module.fileFinishedImporting("modules/channel/native/openChannelLongPressActionSheet.tsx");
 

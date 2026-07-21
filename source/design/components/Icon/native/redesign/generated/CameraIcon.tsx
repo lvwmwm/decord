@@ -1,10 +1,10 @@
-// Module ID: 9658
-// Function ID: 75239
+// Module ID: 9663
+// Function ID: 75256
 // Name: CameraIcon
 // Dependencies: []
 // Exports: CameraIcon
 
-// Module 9658 (CameraIcon)
+// Module 9663 (CameraIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/CameraIcon.tsx");

@@ -1,10 +1,10 @@
-// Module ID: 12480
-// Function ID: 95640
+// Module ID: 12487
+// Function ID: 95663
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 // Exports: hydrateInitialGuild, hydrateReadyPayloadPrioritized, hydrateReadySupplementalPayload, preloadReadyPayloadData
 
-// Module 12480 (_createForOfIteratorHelperLoose)
+// Module 12487 (_createForOfIteratorHelperLoose)
 function _createForOfIteratorHelperLoose(@@iterator) {
   let require = Symbol_iterator;
   @@iterator = "undefined" !== typeof Symbol;
@@ -370,7 +370,7 @@ export const hydrateReadySupplementalPayload = function hydrateReadySupplemental
   let merged_presences;
   ({ guilds, merged_members: closure_0, merged_presences } = found);
   const importDefault = merged_presences;
-  let obj = {};
+  let obj = { "Bool(false)": "spring", "Bool(false)": "linear", "Bool(false)": "easeInEaseOut" };
   Object.setPrototypeOf(null);
   const merged = Object.assign(found, obj);
   let friends;
@@ -454,7 +454,7 @@ export const hydrateReadyPayloadPrioritized = function hydrateReadyPayloadPriori
   let private_channels;
   let users;
   ({ users, private_channels, merged_members: closure_0, guilds } = closure_0);
-  let obj = {};
+  let obj = { fullname: null, simulcastEnabled: 4, enabled: 4, mode: "rgba(0, 0, 0, 0.75)" };
   Object.setPrototypeOf(null);
   const merged = Object.assign(closure_0, obj);
   let tmp3 = null != importDefault(dependencyMap[1]).database();

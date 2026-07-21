@@ -1,10 +1,10 @@
-// Module ID: 10905
-// Function ID: 84759
+// Module ID: 10910
+// Function ID: 84780
 // Name: QuestRewardDetailsBottomSheet
 // Dependencies: []
 // Exports: default
 
-// Module 10905 (QuestRewardDetailsBottomSheet)
+// Module 10910 (QuestRewardDetailsBottomSheet)
 function QuestRewardDetailsBottomSheet(quest) {
   quest = quest.quest;
   const arg1 = quest;
@@ -34,28 +34,26 @@ function QuestRewardDetailsBottomSheet(quest) {
   const defaultRewardName = obj1.getDefaultRewardName(quest.config, stateFromStores);
   obj = { startExpanded: true };
   obj = { direction: "vertical", spacing: importDefault(dependencyMap[5]).space.PX_16, style: tmp.wrapper };
-  obj1 = { user: "gr", name: null, spacing: importDefault(dependencyMap[5]).space.PX_16 };
+  obj1 = { <string:1707013987>: "gr", <string:3868977236>: null, spacing: importDefault(dependencyMap[5]).space.PX_16 };
   const items3 = [callback(importDefault(dependencyMap[15]), { quest }), ];
   const obj2 = { direction: "vertical", spacing: importDefault(dependencyMap[5]).space.PX_4, style: tmp.rewardDetailsCopy };
   const obj3 = {};
   const intl = arg1(dependencyMap[11]).intl;
   obj3.children = intl.string(arg1(dependencyMap[11]).t.jyYgZ+);
-  const items4 = [callback(arg1(dependencyMap[16]).Text, obj3), ];
-  const obj4 = { INTEGRATION_CREATE: false, ConstraintReasonCode: false, children: defaultRewardName };
-  items4[1] = callback(arg1(dependencyMap[16]).Text, obj4);
+  const items4 = [callback(arg1(dependencyMap[16]).Text, obj3), callback(arg1(dependencyMap[16]).Text, { children: defaultRewardName })];
   obj2.children = items4;
   items3[1] = callback2(arg1(dependencyMap[14]).Stack, obj2);
   obj1.children = items3;
   const items5 = [callback2(arg1(dependencyMap[14]).Stack, obj1), ];
   let tmp8 = null != memo1;
   if (tmp8) {
-    const obj5 = {};
-    const obj6 = { style: tmp.separator };
-    const items6 = [callback(View, obj6), ];
-    const obj7 = { children: memo1 };
-    items6[1] = callback(arg1(dependencyMap[16]).Text, obj7);
-    obj5.children = items6;
-    tmp8 = callback2(closure_8, obj5);
+    const obj4 = {};
+    const obj5 = { style: tmp.separator };
+    const items6 = [callback(View, obj5), ];
+    const obj6 = { children: memo1 };
+    items6[1] = callback(arg1(dependencyMap[16]).Text, obj6);
+    obj4.children = items6;
+    tmp8 = callback2(closure_8, obj4);
   }
   items5[1] = tmp8;
   obj.children = items5;

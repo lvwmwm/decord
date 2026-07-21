@@ -1,7 +1,7 @@
 // Module ID: 1856
 // Function ID: 20439
 // Name: Environments
-// Dependencies: []
+// Dependencies: [284214097]
 
 // Module 1856 (Environments)
 const _module = require(dependencyMap[0]);

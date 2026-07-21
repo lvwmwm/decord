@@ -1,9 +1,9 @@
-// Module ID: 8911
-// Function ID: 70307
+// Module ID: 8915
+// Function ID: 70319
 // Name: showAlert
 // Dependencies: []
 
-// Module 8911 (showAlert)
+// Module 8915 (showAlert)
 function showAlert(merged, arg1, arg2) {
   arg1(dependencyMap[4]).closeContextMenu();
   const obj = arg1(dependencyMap[4]);
@@ -207,7 +207,7 @@ obj = {
   },
   fetchRelationships() {
     const HTTP = arg1(dependencyMap[11]).HTTP;
-    const obj = { CONVERSATIONS: null, replace: null, push: null, url: closure_6.USER_RELATIONSHIPS() };
+    const obj = { lc: null, type: null, end: null, url: closure_6.USER_RELATIONSHIPS() };
     const value = HTTP.get(obj);
     value.then((body) => {
       let obj = callback(closure_3[14]);

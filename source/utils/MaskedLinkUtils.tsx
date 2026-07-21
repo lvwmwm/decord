@@ -1,10 +1,10 @@
-// Module ID: 8325
-// Function ID: 65989
+// Module ID: 8329
+// Function ID: 66001
 // Name: isLinkTrusted
 // Dependencies: []
 // Exports: handleClick, isLinkTrusted
 
-// Module 8325 (isLinkTrusted)
+// Module 8329 (isLinkTrusted)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 let closure_5 = importDefault(dependencyMap[2]);

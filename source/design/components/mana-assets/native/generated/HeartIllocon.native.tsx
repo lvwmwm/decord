@@ -1,10 +1,10 @@
-// Module ID: 6251
-// Function ID: 50250
+// Module ID: 6253
+// Function ID: 50293
 // Name: HeartIllocon
 // Dependencies: []
 // Exports: HeartIllocon
 
-// Module 6251 (HeartIllocon)
+// Module 6253 (HeartIllocon)
 const jsx = require(dependencyMap[0]).jsx;
 const _module = require(dependencyMap[3]);
 const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/HeartIllocon.native.tsx");

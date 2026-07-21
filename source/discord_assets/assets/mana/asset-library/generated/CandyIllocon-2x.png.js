@@ -1,9 +1,9 @@
-// Module ID: 5926
-// Function ID: 49763
+// Module ID: 5928
+// Function ID: 49806
 // Name: metadata
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 5926 (metadata)
+// Module 5928 (metadata)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/CandyIllocon-2x.png.js");
 

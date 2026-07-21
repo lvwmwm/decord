@@ -1,10 +1,10 @@
-// Module ID: 13785
-// Function ID: 104290
+// Module ID: 13792
+// Function ID: 104313
 // Name: BountiesScrollVideoItemInner
 // Dependencies: []
 // Exports: BountiesScrollVideoItem
 
-// Module 13785 (BountiesScrollVideoItemInner)
+// Module 13792 (BountiesScrollVideoItemInner)
 function BountiesScrollVideoItemInner(bounty) {
   let handleProgress;
   let handleVideoEnd;

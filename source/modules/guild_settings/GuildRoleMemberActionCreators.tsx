@@ -1,10 +1,10 @@
-// Module ID: 5415
-// Function ID: 46422
+// Module ID: 5417
+// Function ID: 46464
 // Name: _fetchMemberCountsFromBackend
 // Dependencies: []
 // Exports: fetchMemberCounts, requestMembersForRole
 
-// Module 5415 (_fetchMemberCountsFromBackend)
+// Module 5417 (_fetchMemberCountsFromBackend)
 async function _fetchMemberCountsFromBackend(guildId, arg1) {
   let obj = callback2(closure_2[3]);
   obj = { type: "GUILD_ROLE_MEMBER_COUNT_FETCH_START", guildId };

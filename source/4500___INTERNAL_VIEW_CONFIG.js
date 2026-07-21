@@ -1,13 +1,14 @@
 // Module ID: 4500
-// Function ID: 39624
+// Function ID: 39660
 // Name: __INTERNAL_VIEW_CONFIG
-// Dependencies: [0, 4294967295]
+// Dependencies: []
 
 // Module 4500 (__INTERNAL_VIEW_CONFIG)
-import { codegenNativeComponent } from "result";
-
-const obj = { uiViewClassName: "RNSScreenContentWrapper", validAttributes: {} };
+const codegenNativeComponent = require(dependencyMap[0]).codegenNativeComponent;
+const obj = { uiViewClassName: "RNSScreenStack", directEventTypes: { topFinishTransitioning: { registrationName: "onFinishTransitioning" } } };
 const _module = require(dependencyMap[1]);
+obj.validAttributes = Object.assign({ iosPreventReattachmentOfDismissedScreens: true }, _module.ConditionallyIgnoredEventHandlers({ onFinishTransitioning: true }));
+const _module1 = require(dependencyMap[2]);
 
-export default _module.get("RNSScreenContentWrapper", () => obj);
+export default _module1.get("RNSScreenStack", () => obj);
 export const __INTERNAL_VIEW_CONFIG = obj;

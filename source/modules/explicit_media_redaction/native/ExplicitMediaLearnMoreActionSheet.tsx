@@ -1,10 +1,10 @@
-// Module ID: 11005
-// Function ID: 85632
+// Module ID: 11010
+// Function ID: 85653
 // Name: ExplicitMediaLearnMoreActionSheet
 // Dependencies: []
 // Exports: default
 
-// Module 11005 (ExplicitMediaLearnMoreActionSheet)
+// Module 11010 (ExplicitMediaLearnMoreActionSheet)
 let closure_3 = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 let closure_5 = arg1(dependencyMap[2]).EXPLICIT_MEDIA_FALSE_POSITIVE_ACTION_SHEET_KEY;
@@ -108,7 +108,7 @@ export default function ExplicitMediaLearnMoreActionSheet(channelId) {
   obj1 = { style: tmp.art, children: callback(arg1(dependencyMap[20]).ShieldSpotIllustration, {}) };
   const items4 = [callback(View, obj1), , ];
   const obj2 = { style: tmp.info };
-  const obj3 = { 0: "for", 9223372036854775807: "MUR", 0: "kk-KZ", -9223372036854775808: "MEETS_AUTO_ENABLE", style: tmp.infoHeader };
+  const obj3 = { 1501064855: null, -1267889981: null, -1145697943: null, -1266241916: null, style: tmp.infoHeader };
   const intl3 = arg1(dependencyMap[10]).intl;
   obj3.children = intl3.string(arg1(dependencyMap[10]).t.sGW77l);
   const items5 = [callback(arg1(dependencyMap[21]).Text, obj3), ];
@@ -164,7 +164,7 @@ export default function ExplicitMediaLearnMoreActionSheet(channelId) {
     }
   }
   const items6 = [callback(tmp4(tmp2[22]).Button, tmp22), , ];
-  const obj7 = { <string:1522289750>: "r", <string:570601313>: "isArray" };
+  const obj7 = { 9223372036854775807: null, -9223372036854775808: null };
   const intl7 = arg1(dependencyMap[10]).intl;
   obj7.text = intl7.string(arg1(dependencyMap[10]).t.bmbHPA);
   obj7.onPress = function onPress() {
@@ -172,7 +172,7 @@ export default function ExplicitMediaLearnMoreActionSheet(channelId) {
     messageId(attachmentId[12]).hideActionSheet();
   };
   items6[1] = callback(arg1(dependencyMap[22]).Button, obj7);
-  const obj8 = { Promise: null, marginTop: null, flags: null, style: tmp.linkSubtext, children: callback1() };
+  const obj8 = { "Null": "<string:1178599425>", "Null": "<string:3295084545>", "Null": "<string:1689649153>", style: tmp.linkSubtext, children: callback1() };
   items6[2] = callback(arg1(dependencyMap[23]).TextWithIOSLinkWorkaround, obj8);
   obj5.children = items6;
   items4[2] = closure_9(View, obj5);

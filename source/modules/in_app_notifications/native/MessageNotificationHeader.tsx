@@ -1,22 +1,25 @@
-// Module ID: 10293
-// Function ID: 79476
+// Module ID: 10299
+// Function ID: 79495
 // Name: LocationText
 // Dependencies: []
 // Exports: SimpleNotificationHeader, default
 
-// Module 10293 (LocationText)
+// Module 10299 (LocationText)
 function LocationText(channel) {
+  let _location;
+  let author;
   channel = channel.channel;
   const arg1 = channel;
   const parentChannel = channel.parentChannel;
   const dependencyMap = parentChannel;
-  const author = channel.author;
+  const color = channel.color;
   let View;
+  ({ author, location: _location } = channel);
   const tmp = callback3();
   const React = tmp;
-  let str = "mobile-text-heading-primary";
-  if (null != author) {
-    str = "text-muted";
+  let str = "text-muted";
+  if (null != color) {
+    str = color;
   }
   View = str;
   const items = [channel, parentChannel, tmp.icon, str];
@@ -47,7 +50,7 @@ function LocationText(channel) {
     tmp5 = callback(arg1(dependencyMap[8]).Text, obj);
   }
   const items1 = [tmp5, memo, ];
-  obj = { 9223372036854775807: 1776828772, 9223372036854775807: -144637951, 9223372036854775807: 815617, color: str, style: tmp.secondaryText, children: channel.location };
+  obj = { -9223372036854775808: "SHARE_SCREEN_MODAL_KEY", 0: "proto", 0: "NO_VOICE_STATES", color: str, style: tmp.secondaryText, children: _location };
   items1[2] = callback(arg1(dependencyMap[8]).Text, obj);
   obj.children = items1;
   return closure_8(View, obj);
@@ -59,31 +62,35 @@ let closure_5 = importDefault(dependencyMap[3]);
 let closure_6 = importDefault(dependencyMap[4]);
 ({ jsx: closure_7, jsxs: closure_8 } = arg1(dependencyMap[5]));
 let closure_9 = Object.freeze({ radius: 12 });
-let closure_10 = Object.freeze({ position: "parent", right: "Array", top: "isArray", display: "accessibilityRole" });
+let closure_10 = Object.freeze({ label: "Array", maxLength: "gradientTop", backgroundColor: "EXPERIMENT_GUILD_EXPOSURE_SUPPRESSED", padding: "showReferralNotificationDot" });
 let obj = arg1(dependencyMap[6]);
 obj = {};
-obj = { -9223372036854775808: true, filter: true, gap: importDefault(dependencyMap[7]).space.PX_8 };
+obj = { gap: importDefault(dependencyMap[7]).space.PX_8 };
 obj.container = obj;
-obj.headerContent = { marginBottom: null, borderRadius: "\u{1F469}\u{1F3FC}\u200D\u{1F9B1}", backgroundColor: true };
-obj.primaryText = { flexShrink: 1 };
+obj.headerContent = { accessible: null, count: "\u{1F469}\u{1F3FC}\u200D\u{1F9B1}", "Bool(false)": true };
+obj.primaryText = {};
 obj.secondaryTextContainer = {};
 obj.separator = { marginHorizontal: 2 };
-obj.icon = { aze: "<string:16777479>", azj: "<string:36295491>" };
+obj.icon = {};
 obj.secondaryText = { flex: 1 };
 let closure_11 = obj.createStyles(obj);
 const tmp2 = arg1(dependencyMap[5]);
 const result = arg1(dependencyMap[18]).fileFinishedImporting("modules/in_app_notifications/native/MessageNotificationHeader.tsx");
 
-export default function MessageNotificationHeader(guild) {
+export default function MessageNotificationHeader(arg0) {
   let author;
   let channel;
   let channel2;
   let expanded;
+  let guild;
+  let guild2;
+  let locationTextColor;
   let onDismiss;
   let parentChannel;
   let parentChannel2;
-  ({ channel, parentChannel, author, expanded, onDismiss } = guild);
+  ({ channel, parentChannel, author, expanded, onDismiss } = arg0);
   const arg1 = onDismiss;
+  ({ guild, locationTextColor } = arg0);
   const tmp = callback3();
   let obj = arg1(dependencyMap[14]);
   const items = [closure_4];
@@ -99,7 +106,7 @@ export default function MessageNotificationHeader(guild) {
     obj = { color: tmp3 };
     const tmp4 = obj;
   }
-  ({ channel: channel2, parentChannel: parentChannel2, guild } = { channel, parentChannel, guild: guild.guild });
+  ({ channel: channel2, parentChannel: parentChannel2, guild: guild2 } = { channel, parentChannel, guild });
   let obj2 = arg1(dependencyMap[9]);
   const channelName = obj2.computeChannelName(channel2, closure_6, closure_5);
   const type = channel2.type;
@@ -123,9 +130,9 @@ export default function MessageNotificationHeader(guild) {
             let combined = "" + channelName + ", " + channelName1;
           } else {
             combined = channelName;
-            if (null != guild) {
+            if (null != guild2) {
               const _HermesInternal = HermesInternal;
-              combined = "" + channelName + ", " + guild.name;
+              combined = "" + channelName + ", " + guild2.name;
             }
           }
           tmp6 = combined;
@@ -133,9 +140,9 @@ export default function MessageNotificationHeader(guild) {
       }
     }
     let combined1 = null;
-    if (null != guild) {
+    if (null != guild2) {
       const _HermesInternal3 = HermesInternal;
-      combined1 = "" + channelName + ", " + guild.name;
+      combined1 = "" + channelName + ", " + guild2.name;
     }
     tmp6 = combined1;
   }
@@ -152,7 +159,7 @@ export default function MessageNotificationHeader(guild) {
   const items2 = [tmp25, ];
   let tmp29 = null != tmp6;
   if (tmp29) {
-    obj3 = { location: tmp6, channel, parentChannel, author };
+    obj3 = { location: tmp6, channel, parentChannel, author, color: locationTextColor };
     tmp29 = callback(LocationText, obj3);
   }
   items2[1] = tmp29;
@@ -170,7 +177,7 @@ export default function MessageNotificationHeader(guild) {
     obj4.onPress = function onPress() {
       return onDismiss("close_from_expanded");
     };
-    const obj5 = { color: "icon-subtle", style: { <string:1140607356>: false, <string:1751293292>: false } };
+    const obj5 = { color: "icon-subtle", style: { <string:1632221346>: false, <string:2722977214>: "internal" } };
     obj4.children = callback(arg1(dependencyMap[17]).XSmallIcon, obj5);
     expanded = callback(arg1(dependencyMap[15]).PressableOpacity, obj4);
   }
@@ -190,7 +197,7 @@ export const SimpleNotificationHeader = function SimpleNotificationHeader(second
   let tmp4 = null != secondaryText;
   if (tmp4) {
     obj = { style: tmp.secondaryTextContainer };
-    obj = { paddingTop: null, textTransform: 12, absolute: -2, tall: true, wide: "/assets/design/components/Icon/native/redesign/generated/images", style: tmp.separator };
+    obj = { flex: null, display: 10, flexDirection: -2, alignItems: true, justifyContent: "/assets/design/components/Icon/native/redesign/generated/images", style: tmp.separator };
     const items2 = [callback(arg1(dependencyMap[8]).Text, obj), ];
     const obj1 = { style: tmp.secondaryText, children: secondaryText };
     items2[1] = callback(arg1(dependencyMap[8]).Text, obj1);

@@ -1,9 +1,9 @@
-// Module ID: 6436
-// Function ID: 50528
+// Module ID: 6438
+// Function ID: 50571
 // Name: metadata
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 6436 (metadata)
+// Module 6438 (metadata)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/RocketshipSpotIllustration-2x.png.js");
 

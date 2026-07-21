@@ -1,10 +1,10 @@
-// Module ID: 10304
-// Function ID: 79576
+// Module ID: 10310
+// Function ID: 79595
 // Name: _uploadDebugLogFiles
 // Dependencies: []
 // Exports: uploadDebugLogFiles
 
-// Module 10304 (_uploadDebugLogFiles)
+// Module 10310 (_uploadDebugLogFiles)
 function _uploadDebugLogFiles() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);

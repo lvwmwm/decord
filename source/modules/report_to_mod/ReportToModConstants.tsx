@@ -1,9 +1,9 @@
-// Module ID: 5660
-// Function ID: 48590
+// Module ID: 5662
+// Function ID: 48633
 // Name: ReportToModPermissions
 // Dependencies: []
 
-// Module 5660 (ReportToModPermissions)
+// Module 5662 (ReportToModPermissions)
 const Permissions = require(dependencyMap[0]).Permissions;
 const importAllResult = importAll(dependencyMap[1]);
 const _module = require(dependencyMap[2]);

@@ -1,10 +1,10 @@
-// Module ID: 11762
-// Function ID: 91328
+// Module ID: 11769
+// Function ID: 91351
 // Name: ChannelPrompt
 // Dependencies: []
 // Exports: default
 
-// Module 11762 (ChannelPrompt)
+// Module 11769 (ChannelPrompt)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 let closure_5 = importAll(dependencyMap[2]);
@@ -19,9 +19,9 @@ obj = { marginTop: arg1(dependencyMap[8]).NAV_BAR_HEIGHT, flex: 1 };
 obj.safePadding = obj;
 obj.contentContainer = { paddingHorizontal: 16 };
 obj.guildIcon = { alignSelf: "center" };
-obj.guildName = { accessible: null, id: null };
-obj.title = { accessible: "center", id: "center" };
-obj.subTitle = { accessible: null, id: null };
+obj.guildName = { "Null": null, "Null": null };
+obj.title = { "Null": "center", "Null": "center" };
+obj.subTitle = { "Null": null, "Null": null };
 obj.topicInput = { marginTop: 24 };
 obj.buttonWrapper = { marginTop: 8 };
 obj.error = { marginTop: 4 };
@@ -81,7 +81,7 @@ export default function ChannelPrompt(guildId) {
   let tmp13Result = null;
   if (null != stateFromStores) {
     obj = { top: true, style: tmp2.safePadding };
-    obj = { "Bool(true)": "\u{1F9A5}", "Bool(true)": "RECAPTCHA_SITE_KEY", "Bool(true)": "\u{1F9A5}", "Bool(true)": "SESSIONS_REPLACE", "Bool(true)": "HermesInternal", style: tmp2.flex };
+    obj = { style: tmp2.flex };
     const obj1 = { top: 0 };
     obj.contentInset = obj1;
     obj.contentContainerStyle = tmp2.contentContainer;
@@ -98,9 +98,9 @@ export default function ChannelPrompt(guildId) {
     obj2.icon = guildIconURL;
     obj2.selected = true;
     const items3 = [callback3(importDefault(dependencyMap[16]), obj2), , , , , , ];
-    const obj4 = { backgroundColor: 1358955199, alignItems: 1091658877, flexDirection: 89998, borderRadius: 9842, style: tmp2.guildName, children: stateFromStores.name };
+    const obj4 = { style: tmp2.guildName, children: stateFromStores.name };
     items3[1] = callback3(arg1(dependencyMap[18]).Text, obj4);
-    const obj5 = { 0: 24, 9223372036854775807: 24, 0: null, -9223372036854775808: "aa9c26c29990ba7a6584e51ab5c56efa", style: tmp2.title };
+    const obj5 = { 1501064855: 24, -1267889981: 24, -1145697943: null, -1266241916: "aa9c26c29990ba7a6584e51ab5c56efa", style: tmp2.title };
     const intl = arg1(dependencyMap[12]).intl;
     obj5.children = intl.string(arg1(dependencyMap[12]).t.8VRa7d);
     items3[2] = callback3(arg1(dependencyMap[18]).Text, obj5);

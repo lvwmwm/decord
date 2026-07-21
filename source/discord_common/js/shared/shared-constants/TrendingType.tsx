@@ -1,9 +1,9 @@
-// Module ID: 11916
-// Function ID: 92218
+// Module ID: 11923
+// Function ID: 92241
 // Name: TrendingType
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 11916 (TrendingType)
+// Module 11923 (TrendingType)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_common/js/shared/shared-constants/TrendingType.tsx");
 

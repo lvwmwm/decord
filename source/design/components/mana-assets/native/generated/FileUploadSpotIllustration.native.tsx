@@ -1,10 +1,10 @@
-// Module ID: 6051
-// Function ID: 49950
+// Module ID: 6053
+// Function ID: 49993
 // Name: FileUploadSpotIllustration
 // Dependencies: []
 // Exports: FileUploadSpotIllustration
 
-// Module 6051 (FileUploadSpotIllustration)
+// Module 6053 (FileUploadSpotIllustration)
 const jsx = require(dependencyMap[0]).jsx;
 const _module = require(dependencyMap[3]);
 const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/FileUploadSpotIllustration.native.tsx");

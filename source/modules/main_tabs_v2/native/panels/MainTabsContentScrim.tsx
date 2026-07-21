@@ -1,10 +1,10 @@
-// Module ID: 15121
-// Function ID: 114130
+// Module ID: 15128
+// Function ID: 114154
 // Name: MainTabsContentScrim
 // Dependencies: []
 // Exports: MainTabsContentScrim
 
-// Module 15121 (MainTabsContentScrim)
+// Module 15128 (MainTabsContentScrim)
 const jsx = require(dependencyMap[1]).jsx;
 const _module = require(dependencyMap[2]);
 let obj = {};
@@ -28,7 +28,7 @@ export const MainTabsContentScrim = function MainTabsContentScrim(translateX) {
     const obj = {};
     const value = translateX.get();
     const items = [maxWidth, 0];
-    obj.opacity = translateX(closure_2[4]).interpolate(value, items, [false, false], translateX(closure_2[4]).Extrapolation.CLAMP);
+    obj.opacity = translateX(closure_2[4]).interpolate(value, items, ["width", "height"], translateX(closure_2[4]).Extrapolation.CLAMP);
     return obj;
   };
   obj = { interpolate: require(dependencyMap[4]).interpolate, translateX, maxWidth, Extrapolation: require(dependencyMap[4]).Extrapolation };

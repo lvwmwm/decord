@@ -1,10 +1,10 @@
-// Module ID: 11744
-// Function ID: 91223
+// Module ID: 11751
+// Function ID: 91246
 // Name: HubEmailConnectionStudentPrompt
 // Dependencies: []
 // Exports: default
 
-// Module 11744 (HubEmailConnectionStudentPrompt)
+// Module 11751 (HubEmailConnectionStudentPrompt)
 importAll(dependencyMap[0]);
 ({ View: closure_3, Image: closure_4 } = arg1(dependencyMap[1]));
 const HubEmailConnectionSteps = arg1(dependencyMap[2]).HubEmailConnectionSteps;
@@ -13,7 +13,7 @@ const AnalyticEvents = tmp4.AnalyticEvents;
 const tmp3 = arg1(dependencyMap[1]);
 ({ jsx: closure_7, jsxs: closure_8 } = arg1(dependencyMap[4]));
 let obj = arg1(dependencyMap[5]);
-obj = { container: { test: 14512640, createStyles: 12779520, Array: 1107361792, isArray: 147182 } };
+obj = { container: {} };
 obj = {};
 const tmp5 = arg1(dependencyMap[4]);
 const merged = Object.assign(importDefault(dependencyMap[6])(tmp4.Fonts.PRIMARY_BOLD, importDefault(dependencyMap[7]).colors.MOBILE_TEXT_HEADING_PRIMARY, 24));

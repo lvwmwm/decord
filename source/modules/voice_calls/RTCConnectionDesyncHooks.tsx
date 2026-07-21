@@ -1,10 +1,10 @@
-// Module ID: 14924
-// Function ID: 112367
+// Module ID: 14931
+// Function ID: 112391
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 // Exports: useEnsureSyncedChannelParticipants, useEnsureSyncedChannelVoiceStates, useIsRTCDisconnectedUIVisible
 
-// Module 14924 (_createForOfIteratorHelperLoose)
+// Module 14931 (_createForOfIteratorHelperLoose)
 function _createForOfIteratorHelperLoose(@@iterator) {
   let arg1 = Symbol_iterator;
   @@iterator = "undefined" !== typeof Symbol;

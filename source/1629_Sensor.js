@@ -20,13 +20,13 @@ export default () => {
         tmp6 = closure_1;
         num2 = 3;
         obj2 = Sensor(closure_1[3]);
-        mutable = obj2.makeMutable({});
+        mutable = obj2.makeMutable({ "Null": null, "Null": 0.6, "Null": "BounceOutRight", "Null": null, "Null": 0.6, "Null": "BounceOutLeft", "Null": null, "Null": 0.6 });
       } else {
         tmp2 = Sensor;
         tmp3 = closure_1;
         num = 3;
         obj = Sensor(closure_1[3]);
-        mutable = obj.makeMutable({ 0: "r", 0: "onRequireModeratorMFAClick", 9223372036854775807: "Array", -9223372036854775808: "isSpamMessageRequest" });
+        mutable = obj.makeMutable({ String: null, borderRadius: 4, y: 4, isArray: "rgba(0, 0, 0, 0.75)" });
       }
       this.data = mutable;
       return;

@@ -1,10 +1,10 @@
-// Module ID: 8558
-// Function ID: 68023
+// Module ID: 8562
+// Function ID: 68035
 // Name: retryMeasurements
 // Dependencies: []
 // Exports: getMeasurements
 
-// Module 8558 (retryMeasurements)
+// Module 8562 (retryMeasurements)
 function retryMeasurements() {
   return _retryMeasurements(...arguments);
 }
@@ -27,7 +27,7 @@ export const getMeasurements = function getMeasurements(surfaceRef, arg1) {
   return new Promise((arg0, arg1) => {
     let obj = null;
     if (flag) {
-      obj = { <string:80573440>: "r", <string:80533760>: "onRequireModeratorMFAClick", <string:80487680>: "Array", <string:80573184>: "isSpamMessageRequest" };
+      obj = { <string:80505088>: null, <string:80502272>: 4, <string:80550656>: 4, <string:80553216>: "rgba(0, 0, 0, 0.75)" };
     }
     closure_3(arg0, arg0, arg1, obj);
   });

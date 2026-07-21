@@ -1,15 +1,15 @@
-// Module ID: 14265
-// Function ID: 107812
+// Module ID: 14272
+// Function ID: 107835
 // Name: Code
 // Dependencies: []
 // Exports: default
 
-// Module 14265 (Code)
+// Module 14272 (Code)
 function Code(arg0) {
   let children;
   let color;
   ({ children, color } = arg0);
-  const obj = { 9223372036854775807: "isArray", 9223372036854775807: "x", 9223372036854775807: "flex", color, style: callback4().code, children };
+  const obj = { -9223372036854775808: "white", 0: "M331.173 7.2326L335.924 5.62087C336.025 5.54029 336.025 5.45972 335.924 5.45972L331.173 3.7674L329.051 0.0604396C329.051 -0.0201465 328.949 -0.0201465 328.848 0.0604396L326.827 3.7674H326.726L322.076 5.45972C321.975 5.45972 321.975 5.54029 322.076 5.62087L326.726 7.2326H326.827L328.848 10.9396C328.949 11.0201 329.051 11.0201 329.051 10.9396L331.173 7.2326Z", 0: "white", color, style: callback4().code, children };
   return callback3(arg1(dependencyMap[9]).Text, obj);
 }
 let closure_3 = importDefault(dependencyMap[0]);
@@ -93,8 +93,8 @@ export default function UserSettingsStartupTimings() {
     let obj = {};
     obj = { spacing: 16, style: { padding: 16 } };
     obj = {
-      width: false,
-      height: false,
+      "Bool(false)": false,
+      "Bool(false)": false,
       children: callback(callback2(closure_2[20]).TableCheckboxRow, {
         label: "Show start times at launch",
         onPress() {
@@ -106,15 +106,15 @@ export default function UserSettingsStartupTimings() {
       })
     };
     const items = [callback(callback2(closure_2[19]).TableRowGroup, obj), , , , ];
-    const obj2 = { width: true, height: true };
+    const obj2 = { "Bool(false)": true, "Bool(false)": true };
     const obj3 = {};
     const obj4 = {};
     const obj5 = {};
-    const items1 = ["rgba(39, 30, 173, 0.3)", renderTime(closure_7)];
+    const items1 = [null, renderTime(closure_7)];
     obj5.children = items1;
     const items2 = [callback2(num, obj5), , , , , , , ];
     const obj6 = {};
-    const items3 = ["transparent", renderTime(closure_11)];
+    const items3 = [null, renderTime(closure_11)];
     obj6.children = items3;
     items2[1] = callback2(num, obj6);
     const obj7 = {};
@@ -122,7 +122,7 @@ export default function UserSettingsStartupTimings() {
     obj7.children = items4;
     items2[2] = callback2(num, obj7);
     const obj8 = {};
-    const items5 = [131120.77502632147, renderTime(callback2)];
+    const items5 = [null, renderTime(callback2)];
     obj8.children = items5;
     items2[3] = callback2(num, obj8);
     const obj9 = {};
@@ -138,7 +138,7 @@ export default function UserSettingsStartupTimings() {
     if (null != lastTrackedAppUiViewed2Properties) {
       prop = lastTrackedAppUiViewed2Properties.time_display_messages_with_cache_end;
     }
-    const items8 = [-598157585899199700000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, renderTTi(prop)];
+    const items8 = [, renderTTi(prop)];
     obj11.children = items8;
     items2[6] = callback2(num, obj11);
     const obj12 = {};
@@ -146,7 +146,7 @@ export default function UserSettingsStartupTimings() {
     if (null != lastTrackedAppUiViewed2Properties) {
       prop1 = lastTrackedAppUiViewed2Properties.time_display_latest_messages_end;
     }
-    const items9 = [null, renderTTi(prop1)];
+    const items9 = [, renderTTi(prop1)];
     obj12.children = items9;
     items2[7] = callback2(num, obj12);
     obj4.children = items2;
@@ -156,12 +156,12 @@ export default function UserSettingsStartupTimings() {
     const obj13 = {};
     const obj14 = {};
     const obj15 = {};
-    const items10 = [callback2(num, { children: [] }), callback2(num, { children: [] }), callback2(num, { children: [] }), callback2(num, { children: ["Selected values: ", "Found: "] }), callback2(num, { children: [] }), callback2(num, { children: [0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001453685965478812, 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000890029543920946] })];
+    const items10 = [callback2(num, { children: [] }), callback2(num, { children: ["All ", "Selected values: "] }), callback2(num, { children: [] }), callback2(num, { children: [null, null] }), callback2(num, { children: [true, true] }), callback2(num, { children: [] })];
     obj15.children = items10;
     obj14.label = callback2(closure_10, obj15);
     obj13.children = callback(callback2(closure_2[22]).TableRow, obj14);
     items[2] = callback(callback2(closure_2[19]).TableRowGroup, obj13);
-    const obj16 = { width: "Atomics", height: "NOTIFICATION_SETTINGS_MODAL_OPEN" };
+    const obj16 = { "Bool(false)": null, "Bool(false)": null };
     const items11 = [
       callback(callback2(closure_2[20]).TableCheckboxRow, {
         label: "Hide the Noise",
@@ -181,7 +181,7 @@ export default function UserSettingsStartupTimings() {
     obj16.children = items11;
     items[3] = callback2(callback2(closure_2[19]).TableRowGroup, obj16);
     const obj19 = {};
-    const obj20 = { contentContainerStyle: "Table Row Section", decelerationRate: true, horizontal: "/assets/.cache/intl/bW9kdWxlcy9nb19saXZl", icon: callback(callback2(closure_2[23]).ShareIcon, {}), onPress: closure_14 };
+    const obj20 = { "Null": "Table Row Section", "Null": true, "Null": "/assets/.cache/intl/bW9kdWxlcy9nb19saXZl", icon: callback(callback2(closure_2[23]).ShareIcon, {}), onPress: closure_14 };
     obj19.children = callback(callback2(closure_2[22]).TableRow, obj20);
     items[4] = callback(callback2(closure_2[19]).TableRowGroup, obj19);
     obj.children = items;

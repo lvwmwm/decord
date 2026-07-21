@@ -1,10 +1,10 @@
-// Module ID: 15563
-// Function ID: 118769
+// Module ID: 15570
+// Function ID: 118793
 // Name: renderActivityOrPIP
 // Dependencies: []
 // Exports: default
 
-// Module 15563 (renderActivityOrPIP)
+// Module 15570 (renderActivityOrPIP)
 function renderActivityOrPIP(arg0, arg1, transitionState, transitionCleanUp) {
   if ("pip" === arg1) {
     let tmp4 = dependencyMap[4];
@@ -53,8 +53,8 @@ const ActivityPanelModes = arg1(dependencyMap[2]).ActivityPanelModes;
 const tmp2 = arg1(dependencyMap[1]);
 ({ jsx: closure_7, jsxs: closure_8 } = arg1(dependencyMap[3]));
 let closure_9 = [];
-let closure_10 = [null];
-let closure_11 = [];
+let closure_10 = [-0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000026248083149880816];
+let closure_11 = [null];
 const tmp3 = arg1(dependencyMap[3]);
 const result = arg1(dependencyMap[11]).fileFinishedImporting("modules/activities/panel/native/ActivityPanelUI.tsx");
 

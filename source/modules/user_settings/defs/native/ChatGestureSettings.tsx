@@ -1,10 +1,10 @@
-// Module ID: 10079
-// Function ID: 78095
+// Module ID: 10085
+// Function ID: 78113
 // Name: useSwipeToReplySettingValue
 // Dependencies: []
 // Exports: getSwipeToReplySettingValue, useSwipeToReplySettingValue
 
-// Module 10079 (useSwipeToReplySettingValue)
+// Module 10085 (useSwipeToReplySettingValue)
 function useSwipeToReplySettingValue() {
   const SwipeRightToLeftModeSetting = require(dependencyMap[5]).SwipeRightToLeftModeSetting;
   let SWIPE_RIGHT_TO_LEFT_REPLY = SwipeRightToLeftModeSetting.useSetting();

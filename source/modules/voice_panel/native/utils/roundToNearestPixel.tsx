@@ -1,10 +1,10 @@
-// Module ID: 9878
-// Function ID: 76506
+// Module ID: 9883
+// Function ID: 76522
 // Name: t
 // Dependencies: []
 // Exports: default
 
-// Module 9878 (t)
+// Module 9883 (t)
 const PixelRatio = require(dependencyMap[0]).PixelRatio;
 const value = PixelRatio.get();
 const fn = function t(arg0) {

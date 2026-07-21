@@ -1,7 +1,7 @@
 // Module ID: 3528
 // Function ID: 27249
 // Name: _typeof
-// Dependencies: [3355, 3388, 3208]
+// Dependencies: []
 
 // Module 3528 (_typeof)
 function _typeof(arg0) {
@@ -125,15 +125,15 @@ function _getPrototypeOf(arg0) {
 function _defineProperty(arg0, arg1, value) {
   if (arg1 in arg0) {
     const _Object = Object;
-    const obj = { value };
+    const obj = { FRIEND_REQUESTS: true, ForYouLoadMore: true, QUEST_BADGE: true, GUILD_CHANNEL_INTEGRITY_CHECK_CANCELED: true, value };
     Object.defineProperty(arg0, arg1, obj);
   } else {
     arg0[arg1] = value;
   }
   return arg0;
 }
-let closure_2 = [null, null, "k", "t", "T", "a", "B", "H", "k", "t", "T", "a"];
-let closure_3 = ["H", "k", "t", "T", "a", "b", "h", "H", "K", "t", "T", "\u0434\u043E \u043D.\u0435."];
+let closure_2 = [];
+let closure_3 = ["h", "K", "k", "t", "T", "h", "H", "k", "t", "T", "a", "b"];
 
 export const DateParser = (Parser) => {
   class DateParser {
@@ -235,7 +235,7 @@ export const DateParser = (Parser) => {
   if (Parser) {
     prototype = Parser.prototype;
   }
-  let obj = { EntryPointCommandButtonActions: null, NATIVE_SECTION: null, 1476351743: null, value: DateParser };
+  let obj = { value: DateParser };
   DateParser.prototype = Object.create(prototype, { constructor: obj });
   if (Parser) {
     class DateParser {
@@ -332,4 +332,4 @@ export const DateParser = (Parser) => {
   };
   _defineProperties(DateParser.prototype, items);
   return DateParser;
-}(require("requiredArgs").Parser);
+}(require(dependencyMap[2]).Parser);

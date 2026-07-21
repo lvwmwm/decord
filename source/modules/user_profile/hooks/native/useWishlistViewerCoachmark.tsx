@@ -1,10 +1,10 @@
-// Module ID: 11982
-// Function ID: 92624
+// Module ID: 11989
+// Function ID: 92647
 // Name: useWishlistViewerCoachmark
 // Dependencies: []
 // Exports: useWishlistViewerCoachmark
 
-// Module 11982 (useWishlistViewerCoachmark)
+// Module 11989 (useWishlistViewerCoachmark)
 let closure_2 = importDefault(dependencyMap[0]);
 let closure_3 = importAll(dependencyMap[1]);
 const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/user_profile/hooks/native/useWishlistViewerCoachmark.tsx");

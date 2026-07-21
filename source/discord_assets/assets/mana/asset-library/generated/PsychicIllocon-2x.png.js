@@ -1,9 +1,9 @@
-// Module ID: 6424
-// Function ID: 50510
+// Module ID: 6426
+// Function ID: 50553
 // Name: metadata
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 6424 (metadata)
+// Module 6426 (metadata)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/PsychicIllocon-2x.png.js");
 

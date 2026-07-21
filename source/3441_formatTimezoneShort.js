@@ -126,9 +126,9 @@ export default {
     } else if ("QQQ" === arg1) {
       return ordinalNumber.quarter(rounded, {});
     } else if ("QQQQQ" === arg1) {
-      return ordinalNumber.quarter(rounded, { y: null, CHAT_INPUT_FLOATING_CONTENT_PADDING_VERTICAL: null });
+      return ordinalNumber.quarter(rounded, {});
     } else {
-      return ordinalNumber.quarter(rounded, { y: 351158784, CHAT_INPUT_FLOATING_CONTENT_PADDING_VERTICAL: 596246531 });
+      return ordinalNumber.quarter(rounded, {});
     }
   },
   q(getUTCMonth, arg1, ordinalNumber) {
@@ -142,11 +142,11 @@ export default {
       const obj = { unit: "quarter" };
       return ordinalNumber.ordinalNumber(rounded, obj);
     } else if ("qqq" === arg1) {
-      return ordinalNumber.quarter(rounded, { y: null, CHAT_INPUT_FLOATING_CONTENT_PADDING_VERTICAL: null });
+      return ordinalNumber.quarter(rounded, {});
     } else if ("qqqqq" === arg1) {
-      return ordinalNumber.quarter(rounded, { y: null, CHAT_INPUT_FLOATING_CONTENT_PADDING_VERTICAL: null });
+      return ordinalNumber.quarter(rounded, {});
     } else {
-      return ordinalNumber.quarter(rounded, { y: "a", CHAT_INPUT_FLOATING_CONTENT_PADDING_VERTICAL: "7lZ31J" });
+      return ordinalNumber.quarter(rounded, {});
     }
   },
   M(getUTCMonth, arg1, ordinalNumber) {
@@ -159,9 +159,9 @@ export default {
         } else if ("MMM" === arg1) {
           return ordinalNumber.month(uTCMonth, {});
         } else if ("MMMMM" === arg1) {
-          return ordinalNumber.month(uTCMonth, { y: null, CHAT_INPUT_FLOATING_CONTENT_PADDING_VERTICAL: null });
+          return ordinalNumber.month(uTCMonth, {});
         } else {
-          return ordinalNumber.month(uTCMonth, { y: 351158784, CHAT_INPUT_FLOATING_CONTENT_PADDING_VERTICAL: 596246531 });
+          return ordinalNumber.month(uTCMonth, {});
         }
       }
     }
@@ -178,11 +178,11 @@ export default {
       const obj = { unit: "month" };
       return ordinalNumber.ordinalNumber(uTCMonth + 1, obj);
     } else if ("LLL" === arg1) {
-      return ordinalNumber.month(uTCMonth, { y: null, CHAT_INPUT_FLOATING_CONTENT_PADDING_VERTICAL: null });
+      return ordinalNumber.month(uTCMonth, {});
     } else if ("LLLLL" === arg1) {
-      return ordinalNumber.month(uTCMonth, { y: null, CHAT_INPUT_FLOATING_CONTENT_PADDING_VERTICAL: null });
+      return ordinalNumber.month(uTCMonth, {});
     } else {
-      return ordinalNumber.month(uTCMonth, { y: "a", CHAT_INPUT_FLOATING_CONTENT_PADDING_VERTICAL: "7lZ31J" });
+      return ordinalNumber.month(uTCMonth, {});
     }
   },
   w(defaultResult1, arg1, ordinalNumber, defaultResult2) {
@@ -231,11 +231,11 @@ export default {
       if ("EE" !== arg1) {
         if ("EEE" !== arg1) {
           if ("EEEEE" === arg1) {
-            return day.day(uTCDay, { y: null, CHAT_INPUT_FLOATING_CONTENT_PADDING_VERTICAL: null });
+            return day.day(uTCDay, {});
           } else if ("EEEEEE" === arg1) {
-            return day.day(uTCDay, { y: -0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010397949414864384, CHAT_INPUT_FLOATING_CONTENT_PADDING_VERTICAL: 36923798521907134000 });
+            return day.day(uTCDay, {});
           } else {
-            return day.day(uTCDay, { y: 351158784, CHAT_INPUT_FLOATING_CONTENT_PADDING_VERTICAL: 596246531 });
+            return day.day(uTCDay, {});
           }
         }
       }
@@ -255,11 +255,11 @@ export default {
     } else if ("eee" === arg1) {
       return ordinalNumber.day(uTCDay, {});
     } else if ("eeeee" === arg1) {
-      return ordinalNumber.day(uTCDay, { y: null, CHAT_INPUT_FLOATING_CONTENT_PADDING_VERTICAL: null });
+      return ordinalNumber.day(uTCDay, {});
     } else if ("eeeeee" === arg1) {
-      return ordinalNumber.day(uTCDay, { y: -0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010397949414864384, CHAT_INPUT_FLOATING_CONTENT_PADDING_VERTICAL: 36923798521907134000 });
+      return ordinalNumber.day(uTCDay, {});
     } else {
-      return ordinalNumber.day(uTCDay, { y: 351158784, CHAT_INPUT_FLOATING_CONTENT_PADDING_VERTICAL: 596246531 });
+      return ordinalNumber.day(uTCDay, {});
     }
   },
   c(getUTCDay, arg1, ordinalNumber, weekStartsOn) {
@@ -273,13 +273,13 @@ export default {
       const obj = { unit: "day" };
       return ordinalNumber.ordinalNumber(tmp2, obj);
     } else if ("ccc" === arg1) {
-      return ordinalNumber.day(uTCDay, { y: null, CHAT_INPUT_FLOATING_CONTENT_PADDING_VERTICAL: null });
+      return ordinalNumber.day(uTCDay, {});
     } else if ("ccccc" === arg1) {
-      return ordinalNumber.day(uTCDay, { y: null, CHAT_INPUT_FLOATING_CONTENT_PADDING_VERTICAL: null });
+      return ordinalNumber.day(uTCDay, {});
     } else if ("cccccc" === arg1) {
-      return ordinalNumber.day(uTCDay, { y: null, CHAT_INPUT_FLOATING_CONTENT_PADDING_VERTICAL: null });
+      return ordinalNumber.day(uTCDay, {});
     } else {
-      return ordinalNumber.day(uTCDay, { y: "a", CHAT_INPUT_FLOATING_CONTENT_PADDING_VERTICAL: "7lZ31J" });
+      return ordinalNumber.day(uTCDay, {});
     }
   },
   i(getUTCDay, arg1, ordinalNumber) {
@@ -299,11 +299,11 @@ export default {
     } else if ("iii" === arg1) {
       return ordinalNumber.day(uTCDay, {});
     } else if ("iiiii" === arg1) {
-      return ordinalNumber.day(uTCDay, { y: null, CHAT_INPUT_FLOATING_CONTENT_PADDING_VERTICAL: null });
+      return ordinalNumber.day(uTCDay, {});
     } else if ("iiiiii" === arg1) {
-      return ordinalNumber.day(uTCDay, { y: -0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010397949414864384, CHAT_INPUT_FLOATING_CONTENT_PADDING_VERTICAL: 36923798521907134000 });
+      return ordinalNumber.day(uTCDay, {});
     } else {
-      return ordinalNumber.day(uTCDay, { y: 351158784, CHAT_INPUT_FLOATING_CONTENT_PADDING_VERTICAL: 596246531 });
+      return ordinalNumber.day(uTCDay, {});
     }
   },
   a(getUTCHours, arg1, dayPeriod) {
@@ -316,9 +316,9 @@ export default {
         if ("aaa" === arg1) {
           return dayPeriod.dayPeriod(str, {}).toLowerCase();
         } else if ("aaaaa" === arg1) {
-          return dayPeriod.dayPeriod(str, { y: null, CHAT_INPUT_FLOATING_CONTENT_PADDING_VERTICAL: null });
+          return dayPeriod.dayPeriod(str, {});
         } else {
-          return dayPeriod.dayPeriod(str, { y: 351158784, CHAT_INPUT_FLOATING_CONTENT_PADDING_VERTICAL: 596246531 });
+          return dayPeriod.dayPeriod(str, {});
         }
       }
     }
@@ -343,9 +343,9 @@ export default {
         if ("bbb" === arg1) {
           return dayPeriod.dayPeriod(str, {}).toLowerCase();
         } else if ("bbbbb" === arg1) {
-          return dayPeriod.dayPeriod(str, { y: null, CHAT_INPUT_FLOATING_CONTENT_PADDING_VERTICAL: null });
+          return dayPeriod.dayPeriod(str, {});
         } else {
-          return dayPeriod.dayPeriod(str, { y: 351158784, CHAT_INPUT_FLOATING_CONTENT_PADDING_VERTICAL: 596246531 });
+          return dayPeriod.dayPeriod(str, {});
         }
       }
     }
@@ -369,9 +369,9 @@ export default {
       if ("BB" !== arg1) {
         if ("BBB" !== arg1) {
           if ("BBBBB" === arg1) {
-            return dayPeriod.dayPeriod(str, { y: null, CHAT_INPUT_FLOATING_CONTENT_PADDING_VERTICAL: null });
+            return dayPeriod.dayPeriod(str, {});
           } else {
-            return dayPeriod.dayPeriod(str, { y: 351158784, CHAT_INPUT_FLOATING_CONTENT_PADDING_VERTICAL: 596246531 });
+            return dayPeriod.dayPeriod(str, {});
           }
         }
       }

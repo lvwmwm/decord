@@ -1,9 +1,9 @@
-// Module ID: 6444
-// Function ID: 50540
+// Module ID: 6446
+// Function ID: 50583
 // Name: metadata
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 6444 (metadata)
+// Module 6446 (metadata)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/SafetyBookletSpotIllustration-2x.png.js");
 

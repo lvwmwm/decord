@@ -1,10 +1,10 @@
-// Module ID: 7186
-// Function ID: 57852
+// Module ID: 7190
+// Function ID: 57863
 // Name: useNativeIAPPayments
 // Dependencies: []
 // Exports: useCancelSubscription, useCreateSubscription, useGoogleSkuIds, useResubscribeSubscription
 
-// Module 7186 (useNativeIAPPayments)
+// Module 7190 (useNativeIAPPayments)
 function useNativeIAPPayments() {
   let obj = arg1(dependencyMap[9]);
   const items = [closure_6, closure_9];
@@ -186,7 +186,7 @@ let closure_9 = importDefault(dependencyMap[6]);
 ({ PurchaseTypeToAnalyticsPaymentType: closure_10, PurchaseTypes: closure_11, SubscriptionTypes: closure_12 } = arg1(dependencyMap[7]));
 let importDefaultResult = importDefault(dependencyMap[8]);
 importDefaultResult = new importDefaultResult("NativePaymentHooks.ios.tsx");
-let closure_14 = { "Bool(true)": 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000800310628823068, "Bool(true)": 0.0000000000000000000000000000000000000000000000015576649385897736 };
+let closure_14 = { "Bool(true)": null, "Bool(true)": null };
 let closure_15 = false;
 const tmp2 = arg1(dependencyMap[7]);
 const result = arg1(dependencyMap[22]).fileFinishedImporting("modules/payments/native/hooks/NativePaymentHooks.ios.tsx");

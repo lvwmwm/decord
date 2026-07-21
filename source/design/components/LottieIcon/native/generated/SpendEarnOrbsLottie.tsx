@@ -1,12 +1,12 @@
-// Module ID: 9780
-// Function ID: 76023
+// Module ID: 9785
+// Function ID: 76039
 // Name: items
 // Dependencies: []
 
-// Module 9780 (items)
+// Module 9785 (items)
 const jsx = arg1(dependencyMap[1]).jsx;
-let closure_3 = ["<string:1548877828>", "<string:1253854013>"];
-const items = [{ -44998052: null, -1437179389: "center", -1594110876: "100%" }, {}];
+let closure_3 = [10413550989682148000000000000000000000000000000000000, 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003251194631926515];
+const items = [{ "Null": "<string:1107296256>", "Null": "*/*", "Null": "audio/*" }, { "Null": "application/msword", "Null": "application/vnd.openxmlformats-officedocument.wordprocessingml.document", "Null": "image/*" }];
 const importAllResult = importAll(dependencyMap[0]);
 const forwardRefResult = importAll(dependencyMap[0]).forwardRef((arg0, ref) => {
   const obj = { dotLottie: ref(dependencyMap[3]), ref, layers: closure_3, markers: items };

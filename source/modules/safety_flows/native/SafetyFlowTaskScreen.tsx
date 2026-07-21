@@ -1,10 +1,10 @@
-// Module ID: 16426
-// Function ID: 126911
+// Module ID: 16433
+// Function ID: 126945
 // Name: SafetyFlowTaskScreen
 // Dependencies: []
 // Exports: default
 
-// Module 16426 (SafetyFlowTaskScreen)
+// Module 16433 (SafetyFlowTaskScreen)
 importAll(dependencyMap[0]);
 ({ jsx: closure_3, jsxs: closure_4 } = arg1(dependencyMap[1]));
 const tmp3 = arg1(dependencyMap[1]);
@@ -36,14 +36,12 @@ export default function SafetyFlowTaskScreen(action) {
   const tmp2 = callback2();
   let obj = {};
   obj = {};
-  obj = { top: "Array", bottom: "participantsLength", right: "Array" };
+  obj = { marginHorizontal: 1867227482199438700000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, marginBottom: 132375884764212380000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, justifyContent: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000193619923289274 };
   let tmp4 = null != ImageComponent;
   if (tmp4) {
     tmp4 = ImageComponent;
   }
-  const items = [tmp4, , ];
-  const obj1 = { 9223372036854775807: "<string:1515257857>", 9223372036854775807: "<string:2080775>", 9223372036854775807: "<string:2264924464>", style: tmp2.header, children: action.title };
-  items[1] = callback(arg1(dependencyMap[6]).Text, obj1);
+  const items = [tmp4, callback(arg1(dependencyMap[6]).Text, { style: tmp2.header, children: action.title }), ];
   let tmp5 = null != subtitle;
   if (tmp5) {
     const obj2 = { variant: "text-md/medium", color: subtitleColor, style: tmp2.header, children: subtitle };

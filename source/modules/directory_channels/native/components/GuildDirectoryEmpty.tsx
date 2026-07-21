@@ -1,10 +1,10 @@
-// Module ID: 11771
-// Function ID: 91372
+// Module ID: 11778
+// Function ID: 91395
 // Name: GuildDirectoryEmpty
 // Dependencies: []
 // Exports: default
 
-// Module 11771 (GuildDirectoryEmpty)
+// Module 11778 (GuildDirectoryEmpty)
 importAll(dependencyMap[0]);
 ({ Image: closure_3, ScrollView: closure_4 } = arg1(dependencyMap[1]));
 let closure_5 = importDefault(dependencyMap[2]);
@@ -16,7 +16,7 @@ let obj = arg1(dependencyMap[5]);
 obj = {};
 obj = { backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_BASE_LOW };
 obj.container = obj;
-obj.header = { Promise: "center", marginTop: "center" };
+obj.header = { -1788894762: "center", -164173734: "center" };
 const tmp5 = arg1(dependencyMap[4]);
 obj.title = { fontFamily: tmp4.Fonts.PRIMARY_BOLD, color: importDefault(dependencyMap[6]).colors.MOBILE_TEXT_HEADING_PRIMARY };
 obj.description = {};

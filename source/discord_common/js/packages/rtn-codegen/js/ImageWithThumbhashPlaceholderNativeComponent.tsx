@@ -1,9 +1,9 @@
-// Module ID: 8645
-// Function ID: 68441
+// Module ID: 8649
+// Function ID: 68453
 // Name: __INTERNAL_VIEW_CONFIG
 // Dependencies: []
 
-// Module 8645 (__INTERNAL_VIEW_CONFIG)
+// Module 8649 (__INTERNAL_VIEW_CONFIG)
 const obj = { uiViewClassName: "DCDImageWithThumbhashPlaceholderView", validAttributes: {} };
 const _module = require(dependencyMap[0]);
 const value = _module.get("DCDImageWithThumbhashPlaceholderView", () => obj);

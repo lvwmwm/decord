@@ -1,10 +1,10 @@
-// Module ID: 9571
-// Function ID: 74595
+// Module ID: 9576
+// Function ID: 74612
 // Name: useFrecencySettings
 // Dependencies: []
 // Exports: useFrecencySettings
 
-// Module 9571 (useFrecencySettings)
+// Module 9576 (useFrecencySettings)
 let closure_2 = importAll(dependencyMap[0]);
 let closure_3 = importDefault(dependencyMap[1]);
 const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/user_settings/FrecencyUserSettingsHooks.tsx");

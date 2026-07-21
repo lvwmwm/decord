@@ -1,10 +1,10 @@
-// Module ID: 14786
-// Function ID: 111437
+// Module ID: 14793
+// Function ID: 111461
 // Name: HappeningNowItem
 // Dependencies: []
 // Exports: getMessagesItemHappeningNowHeight
 
-// Module 14786 (HappeningNowItem)
+// Module 14793 (HappeningNowItem)
 let HappeningNowItem;
 const View = arg1(dependencyMap[1]).View;
 const importAllResult = importAll(dependencyMap[0]);

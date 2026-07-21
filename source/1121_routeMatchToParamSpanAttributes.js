@@ -34,7 +34,7 @@ export const tanstackRouterBrowserTracingIntegration = function tanstackRouterBr
     }
     const require = arg0;
     const _Object = Object;
-    const result = require(dependencyMap[2]).browserTracingIntegration(Object.assign({}, obj, {}));
+    const result = require(dependencyMap[2]).browserTracingIntegration(Object.assign({}, obj, { toValue: null, useNativeDriver: null }));
     const dependencyMap = result;
     const instrumentPageLoad = obj.instrumentPageLoad;
     let closure_2 = undefined === instrumentPageLoad || instrumentPageLoad;
@@ -50,7 +50,7 @@ export const tanstackRouterBrowserTracingIntegration = function tanstackRouterBr
           if (closure_2) {
             if (_location) {
               ({ options, matchRoutes } = emit);
-              const matchRoutesResult = matchRoutes(_location.pathname, options.parseSearch(_location.search), {});
+              const matchRoutesResult = matchRoutes(_location.pathname, options.parseSearch(_location.search), { <string:626065412>: null, <string:819217569>: null });
               let routeId;
               if (null != matchRoutesResult[matchRoutesResult.length - 1]) {
                 routeId = tmp4.routeId;
@@ -77,7 +77,7 @@ export const tanstackRouterBrowserTracingIntegration = function tanstackRouterBr
             const subscription = emit.subscribe("onBeforeNavigate", (fromLocation) => {
               if (fromLocation.fromLocation) {
                 if (fromLocation.toLocation.state !== fromLocation.fromLocation.state) {
-                  const matchRoutesResult = emit.matchRoutes(fromLocation.toLocation.pathname, fromLocation.toLocation.search, {});
+                  const matchRoutesResult = emit.matchRoutes(fromLocation.toLocation.pathname, fromLocation.toLocation.search, { <string:626065412>: null, <string:819217569>: null });
                   let routeId;
                   if (null != matchRoutesResult[matchRoutesResult.length - 1]) {
                     routeId = tmp13.routeId;
@@ -100,7 +100,7 @@ export const tanstackRouterBrowserTracingIntegration = function tanstackRouterBr
                   closure_1 = emit.subscribe("onResolved", (toLocation) => {
                     callback();
                     if (store) {
-                      const matchRoutesResult = store.matchRoutes(toLocation.toLocation.pathname, toLocation.toLocation.search, {});
+                      const matchRoutesResult = store.matchRoutes(toLocation.toLocation.pathname, toLocation.toLocation.search, { <string:626065412>: null, <string:819217569>: null });
                       let routeId;
                       if (null != matchRoutesResult[matchRoutesResult.length - 1]) {
                         routeId = tmp3.routeId;

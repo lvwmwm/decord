@@ -5,7 +5,7 @@
 // Exports: callback, getHostComponent
 
 // Module 3875 (getHostComponent)
-import { Platform } from "result";
+import { Platform } from "__exportStarResult1";
 
 
 export const getHostComponent = function getHostComponent(RiveView, arg1) {

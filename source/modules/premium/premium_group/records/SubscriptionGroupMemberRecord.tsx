@@ -1,18 +1,9 @@
-// Module ID: 12295
-// Function ID: 94245
+// Module ID: 12302
+// Function ID: 94268
 // Name: _isNativeReflectConstruct
-// Dependencies: [1348, 1917, 1838, 2, 5, 57, 4359, 1849]
+// Dependencies: []
 
-// Module 12295 (_isNativeReflectConstruct)
-import closure_0 from "_isNativeReflectConstruct";
-import closure_1 from "_isNativeReflectConstruct";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import keys from "keys";
-import asyncGeneratorStep from "asyncGeneratorStep";
-import closure_5 from "_isNativeReflectConstruct";
-import importDefaultResult from "_slicedToArray";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-
+// Module 12302 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -22,21 +13,26 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
+let closure_0 = importDefault(dependencyMap[0]);
+let closure_1 = importDefault(dependencyMap[1]);
+let closure_2 = importDefault(dependencyMap[2]);
+let closure_3 = importDefault(dependencyMap[3]);
+let closure_4 = importDefault(dependencyMap[4]);
+let closure_5 = importDefault(dependencyMap[6]);
 const obj = { PRIMARY: 1, [1]: "PRIMARY", MEMBER: 2, [2]: "MEMBER" };
-const result = _isNativeReflectConstruct.fileFinishedImporting("modules/premium/premium_group/records/SubscriptionGroupMemberRecord.tsx");
-
-export default (importDefaultResult) => {
+const importDefaultResult = importDefault(dependencyMap[5]);
+const tmp3 = (importDefaultResult) => {
   class SubscriptionGroupMemberRecord {
     constructor(arg0) {
       self = this;
       tmp = SubscriptionGroupMemberRecord(this, SubscriptionGroupMemberRecord);
-      obj = keys(SubscriptionGroupMemberRecord);
-      tmp2 = _createForOfIteratorHelperLoose;
+      obj = closure_3(SubscriptionGroupMemberRecord);
+      tmp2 = closure_2;
       if (closure_7()) {
         tmp4 = globalThis;
         _Reflect = Reflect;
-        tmp5 = keys;
-        constructResult = Reflect.construct(obj, [], keys(self).constructor);
+        tmp5 = closure_3;
+        constructResult = Reflect.construct(obj, [], closure_3(self).constructor);
       } else {
         constructResult = obj.apply(self, undefined);
       }
@@ -87,5 +83,8 @@ export default (importDefaultResult) => {
     }
   ];
   return callback(SubscriptionGroupMemberRecord, items, items1);
-}(require("_slicedToArray"));
+}(importDefault(dependencyMap[5]));
+const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/premium/premium_group/records/SubscriptionGroupMemberRecord.tsx");
+
+export default tmp3;
 export const SubscriptionMemberTypes = obj;

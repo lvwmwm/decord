@@ -1,14 +1,14 @@
-// Module ID: 10265
-// Function ID: 79330
+// Module ID: 10271
+// Function ID: 79349
 // Name: MutedUntilText
 // Dependencies: []
 // Exports: default
 
-// Module 10265 (MutedUntilText)
+// Module 10271 (MutedUntilText)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const obj = { SERVER: 0, [0]: "SERVER", CHANNEL: 1, [1]: "CHANNEL", DM: 2, [2]: "DM", CATEGORY: 3, [3]: "CATEGORY" };
-let closure_4 = arg1(dependencyMap[2]).createStyles({ formHintText: { "Bool(true)": false, "Bool(true)": false, "Bool(true)": false, "Bool(true)": false } });
+let closure_4 = arg1(dependencyMap[2]).createStyles({ formHintText: {} });
 const obj2 = arg1(dependencyMap[2]);
 const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/main_tabs_v2/native/sidebar/details/screens/MutedUntilText.tsx");
 
@@ -30,15 +30,14 @@ export default function MutedUntilText(arg0) {
       } else {
         return null;
       }
-      let obj = { Promise: null, marginTop: null, flags: null, style: tmp.formHintText };
+      let obj = { "Null": "<string:1178599425>", "Null": "<string:3295084545>", "Null": "<string:1689649153>", style: tmp.formHintText };
       const intl5 = arg1(dependencyMap[3]).intl;
       obj = {};
       const _Date = Date;
       const date = new Date(muteConfig.end_time);
       obj.endTime = date.toLocaleString(arg1(dependencyMap[3]).intl.currentLocale, {});
       obj.endTimeHook = function endTimeHook(children) {
-        const obj = { INTEGRATION_CREATE: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002844504276111809, ConstraintReasonCode: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002086006742998083, children };
-        return callback2(callback(closure_1[4]).Text, obj, "muted");
+        return callback2(callback(closure_1[4]).Text, { children }, "muted");
       };
       obj.children = intl5.format(N2NXMd, obj);
       return jsx(arg1(dependencyMap[4]).Text, obj);
@@ -59,7 +58,7 @@ export default function MutedUntilText(arg0) {
   } else {
     return null;
   }
-  obj = { Promise: null, marginTop: null, flags: null, style: tmp.formHintText, children: stringResult };
+  obj = { "Null": "<string:1178599425>", "Null": "<string:3295084545>", "Null": "<string:1689649153>", style: tmp.formHintText, children: stringResult };
   return jsx(arg1(dependencyMap[4]).Text, obj);
 };
 export const MuteSettingType = obj;

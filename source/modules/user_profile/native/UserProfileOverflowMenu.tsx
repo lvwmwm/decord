@@ -1,10 +1,10 @@
-// Module ID: 12011
-// Function ID: 92827
+// Module ID: 12018
+// Function ID: 92850
 // Name: UserProfileOverflowMenu
-// Dependencies: []
+// Dependencies: [126746624, 348389376, 37093376, 251723776, 79429632, 488505344, 555483136, 768999424, 131072, 351272960, 57, 31, 27, 33, 4126, 689, 1273, 1212, 12022, 12023, 12019, 4124, 5226, 11626, 12024, 5449, 4963, 5767, 8476, 2, 8060, 6912, 3077120, 1785088, 8448, 3076864, 3004160, 1411328, 1055744, 310272, 1389568, 512, 451901440, 246218752, 78249984, 125632512, 246743040, 249102336, 37093376, 131072, 334495744]
 // Exports: default
 
-// Module 12011 (UserProfileOverflowMenu)
+// Module 12018 (UserProfileOverflowMenu)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 let closure_5 = importDefault(dependencyMap[2]);
@@ -487,7 +487,7 @@ export default function UserProfileOverflowMenu(user) {
             }
           }
           let obj4 = user(channel[44]);
-          const obj3 = { VOICE_CONNECTION_SUCCESS: null, getFileInfo: "ad61eda1bea496e5c4dfb770ef28c56b", SearchableSettingsList: "server-invite-envelope", onGiftIntentCardViewed: "png", PERSONALIZE_SERVER: true, options: items };
+          const obj3 = { "Null": true, "Null": true, "Null": true, "Null": true, "Null": true, options: items };
           obj4 = {};
           const intl5 = user(channel[24]).intl;
           obj4.title = intl5.string(user(channel[24]).t.QvQeLv);

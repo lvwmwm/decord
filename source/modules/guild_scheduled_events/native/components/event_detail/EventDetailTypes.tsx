@@ -1,10 +1,10 @@
-// Module ID: 12082
-// Function ID: 93203
+// Module ID: 12089
+// Function ID: 93226
 // Name: isRemainingUsersGroup
-// Dependencies: []
+// Dependencies: [284214097]
 // Exports: isRemainingUsersGroup
 
-// Module 12082 (isRemainingUsersGroup)
+// Module 12089 (isRemainingUsersGroup)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("modules/guild_scheduled_events/native/components/event_detail/EventDetailTypes.tsx");
 

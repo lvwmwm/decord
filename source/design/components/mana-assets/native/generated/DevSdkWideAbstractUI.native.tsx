@@ -1,10 +1,10 @@
-// Module ID: 5991
-// Function ID: 49860
+// Module ID: 5993
+// Function ID: 49903
 // Name: DevSdkWideAbstractUI
 // Dependencies: []
 // Exports: DevSdkWideAbstractUI
 
-// Module 5991 (DevSdkWideAbstractUI)
+// Module 5993 (DevSdkWideAbstractUI)
 const jsx = require(dependencyMap[0]).jsx;
 const _module = require(dependencyMap[3]);
 const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/DevSdkWideAbstractUI.native.tsx");

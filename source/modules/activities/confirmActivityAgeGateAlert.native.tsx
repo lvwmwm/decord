@@ -1,10 +1,10 @@
-// Module ID: 10804
-// Function ID: 83932
+// Module ID: 10810
+// Function ID: 83955
 // Name: ConfirmActivityGateContent
 // Dependencies: []
 // Exports: confirmActivityAgeGateAlert
 
-// Module 10804 (ConfirmActivityGateContent)
+// Module 10810 (ConfirmActivityGateContent)
 function ConfirmActivityGateContent(children) {
   const tmp = callback3();
   let obj = { style: tmp.alertContainer };
@@ -18,8 +18,8 @@ importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 ({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[2]));
 let obj = arg1(dependencyMap[3]);
-obj = { alertContainer: { -9223372036854775808: "#8CD9FF", 9223372036854775807: "M179.982 28.862c-1.944-.26-3.356 1.983-2.903 3.888.571 2.398 1.944 5.249 5.139 6.013 1.569.37 3.171.574 4.782.61a6.96 6.96 0 0 0 7.083-6.001c.253-1.866.123-4.432-2.262-4.121-6.292.823-6.123.362-11.839-.39Z", 0: "#57F287" } };
-obj = { color: importDefault(dependencyMap[4]).colors.INTERACTIVE_TEXT_DEFAULT };
+obj = { alertContainer: { isArray: 2063597892, context: 1107296879, paths: 148200 } };
+obj = { "Null": "<string:289538050>", "Null": "<string:2046820676>", borderRadius: "<string:1107296879>", border: "#29CC7A", color: importDefault(dependencyMap[4]).colors.INTERACTIVE_TEXT_DEFAULT };
 obj.alertBodyText = obj;
 let closure_6 = obj.createStyles(obj);
 const tmp3 = arg1(dependencyMap[2]);

@@ -1,10 +1,10 @@
-// Module ID: 12118
-// Function ID: 93364
+// Module ID: 12125
+// Function ID: 93387
 // Name: rowModifierShared
 // Dependencies: []
 // Exports: default
 
-// Module 12118 (rowModifierShared)
+// Module 12125 (rowModifierShared)
 function rowModifierShared(arg0, arg1) {
   arg0.canAddNewReactions = !arg1;
   arg0.contextType = arg1(dependencyMap[11]).MessageContextType.MEDIA_VIEWER;
@@ -39,7 +39,7 @@ function MeasureMessage(message) {
         modifyRow(arg0) {
           callback3(arg0, closure_3);
           if (arg0) {
-            arg0.truncation = { "Bool(false)": "channelId", "Bool(false)": "channelId", "Bool(false)": "channelId" };
+            arg0.truncation = { marginRight: "channelId", marginBottom: "channelId", ref: "channelId" };
           }
         },
         rowGenerator: closure_16,
@@ -73,10 +73,10 @@ const tmp2 = arg1(dependencyMap[2]);
 ({ jsx: closure_13, Fragment: closure_14, jsxs: closure_15 } = arg1(dependencyMap[9]));
 let importDefaultResult = importDefault(dependencyMap[10]);
 importDefaultResult = new importDefaultResult();
-let obj = { <string:4040697747>: 2073100289, <string:1470947945>: -729153535, <string:478287371>: 1091633153, <string:979591246>: 115185, <string:1532144214>: -2125119215, <string:1629838373>: 1124139009, <string:50680660>: 152872, <string:1315007370>: 152871, <string:1549183590>: 119946, <string:1638984908>: -1851178735, <string:2722059366>: 1091633154, <string:2721669509>: "%NumberPrototype%", <string:2790421926>: "isArrayBuffer", <string:1641848906>: "_recordMessageEvent", <string:3372634858>: "pendingBio", <string:3076589226>: "orbProductContext", <string:2941401697>: "r", forcedTheme: ThemeTypes.DARK };
+let obj = { <string:4039649257>: "RBTree", <string:1470947945>: "helpdeskArticleUrl", <string:478287371>: "%ReferenceErrorPrototype%", <string:979591246>: "RBTree", <string:3092425302>: "preemptiveExpanded", <string:1635498363>: "%Math.min%", <string:51008340>: "isArrayBuffer", <string:1318218694>: "MID_STREAMING_QUALITY", <string:1549183590>: "INTERACTIONS", <string:1638984908>: "STUDENT_PROMPT", <string:2715636838>: "INTERACTIONS", <string:2715443710>: "customSendHandler", <string:1750245854>: "Uint16Array", <string:1641854320>: "RBTree", <string:2397786858>: "currentEmbeddedApplication", <string:3076589212>: "SyntaxError", <string:1565669985>: "RBTree", forcedTheme: ThemeTypes.DARK };
 importDefaultResult.setOptions(obj);
 const tmp3 = arg1(dependencyMap[9]);
-let closure_17 = arg1(dependencyMap[12]).createStyles({ dummyLayout: { getCardAssetUrl: false, ticketContainer: false, getNextHubProgressStep: false, viewCount: false, checkPermission: false, raw_thermal_state: false } });
+let closure_17 = arg1(dependencyMap[12]).createStyles({ dummyLayout: {} });
 const obj3 = arg1(dependencyMap[12]);
 obj = { reactionBackgroundColor: importDefault(dependencyMap[15]).colors.REACTION_BACKGROUND_DEFAULT, reactionBorderColor: importDefault(dependencyMap[15]).colors.REACTION_BORDER_DEFAULT, reactionTextColor: importDefault(dependencyMap[15]).colors.REACTION_TEXT_DEFAULT, activeReactionBackgroundColor: importDefault(dependencyMap[15]).colors.REACTION_BACKGROUND_REACTED_DEFAULT, activeReactionBorderColor: importDefault(dependencyMap[15]).colors.REACTION_BORDER_REACTED_DEFAULT, activeReactionTextColor: importDefault(dependencyMap[15]).colors.REACTION_TEXT_REACTED_DEFAULT };
 let closure_18 = arg1(dependencyMap[12]).createNativeStyleProperties(obj);
@@ -146,7 +146,7 @@ export default function MediaMessagePreview(channelId) {
     message.message.editedColor = editedColor;
     message.reactionsTheme = tmp8;
     if (!full) {
-      const obj = { allowLinks: "venmo.tokenize.desktop.success", allowEmojiLinks: "<string:1852899328>" };
+      const obj = {};
       const intl = channelId(onClose[18]).intl;
       const _HermesInternal = HermesInternal;
       obj.seeMoreLabel = " " + intl.string(channelId(onClose[18]).t.7qbp3B);

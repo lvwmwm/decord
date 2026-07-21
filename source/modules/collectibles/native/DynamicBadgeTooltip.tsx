@@ -1,10 +1,10 @@
-// Module ID: 8732
-// Function ID: 69072
+// Module ID: 8736
+// Function ID: 69084
 // Name: DynamicBadgeTooltip
 // Dependencies: []
 // Exports: DynamicBadgeTooltip
 
-// Module 8732 (DynamicBadgeTooltip)
+// Module 8736 (DynamicBadgeTooltip)
 let closure_2 = importDefault(dependencyMap[0]);
 let closure_3 = importAll(dependencyMap[1]);
 const jsx = arg1(dependencyMap[2]).jsx;

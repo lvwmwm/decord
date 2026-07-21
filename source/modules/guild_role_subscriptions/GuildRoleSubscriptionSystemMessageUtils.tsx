@@ -1,10 +1,10 @@
-// Module ID: 7668
-// Function ID: 61280
+// Module ID: 7672
+// Function ID: 61292
 // Name: identityHook
 // Dependencies: []
 // Exports: getRoleSubscriptionPurchaseStickerCTA, getRoleSubscriptionPurchaseSystemMessageAstFormattedContent, getRoleSubscriptionPurchaseSystemMessageContentMobile, getRoleSubscriptionPurchaseSystemMessageEventProperties, getRoleSubscriptionPurchaseSystemMessageFormattedContent, isEligibleForRoleSubscriptionPurchaseSystemMessageSettings, pickRoleSubscriptionPurchaseSticker, trackRoleSubscriptionPurchaseMessageTierClick
 
-// Module 7668 (identityHook)
+// Module 7672 (identityHook)
 function identityHook(arg0) {
   return arg0;
 }

@@ -1,10 +1,10 @@
-// Module ID: 7495
-// Function ID: 60110
+// Module ID: 7499
+// Function ID: 60122
 // Name: Input
 // Dependencies: []
 // Exports: Input
 
-// Module 7495 (Input)
+// Module 7499 (Input)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 ({ jsx: closure_3, jsxs: closure_4 } = arg1(dependencyMap[2]));
@@ -50,7 +50,7 @@ export const Input = function Input(arg0) {
     items[1] = callback(View, obj);
     let tmp22 = null;
     if (null != description) {
-      obj = { INTEGRATION_CREATE: true, ConstraintReasonCode: true, style: tmp.description, children: description };
+      obj = { style: tmp.description, children: description };
       tmp22 = callback(arg1(dependencyMap[6]).Text, obj);
     }
     items[2] = tmp22;
@@ -73,7 +73,7 @@ export const Input = function Input(arg0) {
     const items2 = [label, ];
     let tmp12 = null;
     if (required) {
-      const obj5 = { children: ["<string:2865627137>", "<string:1771503617>"] };
+      const obj5 = { children: [] };
       tmp12 = callback2(arg1(dependencyMap[6]).Text, obj5);
     }
     items2[1] = tmp12;

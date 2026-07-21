@@ -1,18 +1,18 @@
-// Module ID: 6827
-// Function ID: 53930
+// Module ID: 6833
+// Function ID: 53976
 // Name: set
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 6827 (set)
-const obj = { WEB_AND_IOS: new Set([]) };
-const set = new Set([]);
+// Module 6833 (set)
+const obj = { WEB_AND_IOS: new Set(["<string:1463156739>", null, null]) };
+const set = new Set(["<string:1463156739>", null, null]);
 obj.ANDROID = new Set([]);
 const set1 = new Set([]);
 obj.QUEST_VR = new Set([]);
 const set2 = new Set([]);
-obj.OTHER = new Set([true, true, true, true]);
-const set3 = new Set([true, true, true, true]);
-obj.ALL = new Set(["484425151631589378", "1124351896166076496", "1124351975702679583", "1124353289857810612", "1124353460880556183", "1124353599590379552", "1124354036020297778", "1124354174310699169", "1124354219374297238", "1124354724301393940", "1124355292591829002", "1124355334593593364", "1124355447323906128"]);
+obj.OTHER = new Set([false, false, false, false]);
+const set3 = new Set([false, false, false, false]);
+obj.ALL = new Set([true, true, true, true, true, true, true, true, true, true, true, true, true]);
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_common/js/shared/shared-constants/ReleaseChannels.tsx");
 

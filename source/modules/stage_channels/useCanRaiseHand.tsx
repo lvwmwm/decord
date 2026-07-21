@@ -1,16 +1,17 @@
-// Module ID: 10657
-// Function ID: 83133
+// Module ID: 10663
+// Function ID: 83156
 // Name: useCanRaiseHand
-// Dependencies: []
+// Dependencies: [0]
 // Exports: useCanRaiseHand
 
-// Module 10657 (useCanRaiseHand)
-let closure_2 = importDefault(dependencyMap[0]);
+// Module 10663 (useCanRaiseHand)
+import __exportStarResult1 from "__exportStarResult1";
+
 const Permissions = arg1(dependencyMap[1]).Permissions;
 const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/stage_channels/useCanRaiseHand.tsx");
 
 export const useCanRaiseHand = function useCanRaiseHand(channel) {
   const arg1 = channel;
-  const items = [closure_2];
-  return arg1(dependencyMap[2]).useStateFromStores(items, () => closure_2.can(constants.REQUEST_TO_SPEAK, arg0));
+  const items = [__exportStarResult1];
+  return arg1(dependencyMap[2]).useStateFromStores(items, () => __exportStarResult1.can(constants.REQUEST_TO_SPEAK, arg0));
 };

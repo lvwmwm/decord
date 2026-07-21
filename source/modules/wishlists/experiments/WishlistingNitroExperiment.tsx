@@ -1,12 +1,13 @@
-// Module ID: 12006
-// Function ID: 92809
+// Module ID: 12013
+// Function ID: 92832
 // Name: useIsNitroWishlistingEnabled
 // Dependencies: []
 // Exports: getAreNitroWishlistRoadblocksEnabled, getIsNitroWishlistingEnabled, useAreNitroWishlistRoadblocksEnabled, useIsNitroWishlistingEnabled
 
-// Module 12006 (useIsNitroWishlistingEnabled)
+// Module 12013 (useIsNitroWishlistingEnabled)
 const _module = require(dependencyMap[0]);
-let closure_0 = _module.createApexExperiment({ defaultConfig: {}, variations: { [0]: {}, [1]: { createStageEndSystemMessage: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000021043611947808288, request_data: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000053357352779429986 }, [2]: { createStageEndSystemMessage: null, request_data: null } } });
+const obj = { 9223372036854775807: "c013c533d835389917bf422e9978d1be", 0: "img_app_crash_light", defaultConfig: { "Null": null, "Null": null }, variations: { [0]: { "Null": null, "Null": null }, [1]: { "Null": true, "Null": true }, [2]: { "Null": null, "Null": null } } };
+let closure_0 = _module.createApexExperiment(obj);
 const _module1 = require(dependencyMap[1]);
 const result = _module1.fileFinishedImporting("modules/wishlists/experiments/WishlistingNitroExperiment.tsx");
 

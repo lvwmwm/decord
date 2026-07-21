@@ -1,10 +1,10 @@
-// Module ID: 10619
-// Function ID: 82841
+// Module ID: 10625
+// Function ID: 82864
 // Name: ConnectivityGlobalStatusContent
 // Dependencies: []
 // Exports: default
 
-// Module 10619 (ConnectivityGlobalStatusContent)
+// Module 10625 (ConnectivityGlobalStatusContent)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 let closure_4 = importDefault(dependencyMap[2]);

@@ -1,5 +1,5 @@
 // Module ID: 8069
-// Function ID: 64019
+// Function ID: 63993
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
@@ -13,46 +13,57 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-let closure_5 = importDefault(dependencyMap[3]);
-let closure_6 = importDefault(dependencyMap[4]);
-const tmp2 = (Component) => {
-  class FePointLight {
+let closure_0 = importDefault(dependencyMap[0]);
+let closure_1 = importDefault(dependencyMap[1]);
+let closure_2 = importDefault(dependencyMap[2]);
+let closure_3 = importDefault(dependencyMap[3]);
+let closure_4 = importDefault(dependencyMap[4]);
+const tmp2 = (arg0) => {
+  class FeMergeNode {
     constructor() {
       self = this;
-      tmp = closure_2(this, FePointLight);
-      obj = closure_5(FePointLight);
-      tmp2 = closure_4;
-      if (closure_7()) {
-        tmp6 = globalThis;
-        _Reflect = Reflect;
-        tmp7 = closure_5;
-        tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_5(self).constructor);
-      } else {
-        tmp3 = arguments;
-        tmp4 = arguments;
-        constructResult = obj(...arguments);
+      tmp = FeMergeNode(this, FeMergeNode);
+      length = arguments.length;
+      array = new Array(length);
+      for (let num = 0; num < length; num = num + 1) {
+        array[num] = arguments[num];
       }
-      return tmp2(self, constructResult);
+      items = [];
+      combined = items.concat(array);
+      obj = closure_3(FeMergeNode);
+      tmp3 = closure_2;
+      if (closure_5()) {
+        if (!combined) {
+          combined = [];
+        }
+        tmp5 = closure_3;
+        constructResult = Reflect.construct(obj, combined, closure_3(self).constructor);
+      } else {
+        constructResult = obj.apply(self, combined);
+      }
+      tmp3Result = tmp3(self, constructResult);
+      FeMergeNode = tmp3Result;
+      tmp3Result.setNativeProps = () => {
+        const parent = tmp3Result.props.parent;
+        if (parent) {
+          parent.forceUpdate();
+        }
+      };
+      return tmp3Result;
     }
   }
-  const arg1 = FePointLight;
-  callback2(FePointLight, Component);
+  let closure_0 = FeMergeNode;
+  callback2(FeMergeNode, arg0);
   const items = [
     {
       key: "render",
       value: function render() {
-        const result = FePointLight(closure_1[6]).warnUnimplementedFilter();
         return null;
       }
     }
   ];
-  return callback(FePointLight, items);
-}(arg1(dependencyMap[5]).Component);
-tmp2.displayName = "FePointLight";
-tmp2.defaultProps = {};
+  return callback(FeMergeNode, items);
+}(importDefault(dependencyMap[5]));
+tmp2.displayName = "FeMergeNode";
 
 export default tmp2;

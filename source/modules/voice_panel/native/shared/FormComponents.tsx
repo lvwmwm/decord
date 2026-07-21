@@ -1,10 +1,10 @@
-// Module ID: 8853
-// Function ID: 69863
+// Module ID: 8857
+// Function ID: 69875
 // Name: VoiceBadges
 // Dependencies: []
 // Exports: MemberRowItem, VoicePanelFormSection
 
-// Module 8853 (VoiceBadges)
+// Module 8857 (VoiceBadges)
 function VoiceBadges(arg0) {
   let muteDeafenIconState;
   let videoIconState;
@@ -39,12 +39,12 @@ let obj = arg1(dependencyMap[3]);
 obj = { container: { marginHorizontal: 16 }, voiceBadgesContainer: { flexDirection: "row" } };
 obj = { backgroundColor: importDefault(dependencyMap[4]).colors.MOBILE_VOICE_PANEL_BADGE_BACKGROUND, borderRadius: importDefault(dependencyMap[4]).radii.round };
 obj.iconWrapper = obj;
-const obj1 = { aze: "<string:16777479>", azj: "<string:36295491>", tintColor: importDefault(dependencyMap[4]).colors.INTERACTIVE_TEXT_DEFAULT };
-obj.icon = obj1;
-obj.notConnectedAvatar = { opacity: 0.5 };
-obj.memberRow = {};
-let closure_7 = obj.createStyles(obj);
 const tmp2 = arg1(dependencyMap[2]);
+obj.icon = { tintColor: importDefault(dependencyMap[4]).colors.INTERACTIVE_TEXT_DEFAULT };
+obj.notConnectedAvatar = { opacity: 0.5 };
+obj.memberRow = { <string:3461472865>: "safety_user_sentiment_notice_dismissed_at", <string:1447977218>: "message", <string:1640807382>: null };
+let closure_7 = obj.createStyles(obj);
+const obj1 = { tintColor: importDefault(dependencyMap[4]).colors.INTERACTIVE_TEXT_DEFAULT };
 const result = arg1(dependencyMap[26]).fileFinishedImporting("modules/voice_panel/native/shared/FormComponents.tsx");
 
 export const VoicePanelFormSection = function VoicePanelFormSection(style) {
@@ -117,7 +117,7 @@ export const MemberRowItem = function MemberRowItem(user) {
         const intl = user(flag[19]).intl;
         intl.string(user(flag[19]).t.eXan7B);
       }
-      let formatResult = { 9223372036854775807: 3309567, 9223372036854775807: 601874432, 9223372036854775807: 4319821 };
+      let formatResult = { -9223372036854775808: "<string:2682257408>", 0: null, 0: null };
       const intl2 = user(flag[19]).intl;
       formatResult = {};
       if (null == stateFromStores.details) {

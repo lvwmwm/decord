@@ -1,10 +1,10 @@
-// Module ID: 15746
-// Function ID: 120345
+// Module ID: 15753
+// Function ID: 120369
 // Name: HideSelfStreamAndVideoConfirmDialog
 // Dependencies: []
 // Exports: default
 
-// Module 15746 (HideSelfStreamAndVideoConfirmDialog)
+// Module 15753 (HideSelfStreamAndVideoConfirmDialog)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 let closure_4 = arg1(dependencyMap[2]).SelfStreamAndVideoAlertType;

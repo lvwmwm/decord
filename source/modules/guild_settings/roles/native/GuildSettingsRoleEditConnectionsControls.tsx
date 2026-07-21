@@ -1,10 +1,10 @@
-// Module ID: 16191
-// Function ID: 125133
+// Module ID: 16198
+// Function ID: 125164
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 // Exports: default
 
-// Module 16191 (_createForOfIteratorHelperLoose)
+// Module 16198 (_createForOfIteratorHelperLoose)
 function _createForOfIteratorHelperLoose(@@iterator) {
   let arg1 = Symbol_iterator;
   @@iterator = "undefined" !== typeof Symbol;
@@ -128,7 +128,7 @@ function HeaderSection(arg0) {
   let tmp15;
   if (hasConnections) {
     const obj5 = { hitSlop: 8, onPress: clearConnections, disabled: locked };
-    const obj6 = { INTEGRATION_CREATE: 1, ConstraintReasonCode: "center" };
+    const obj6 = {};
     const intl3 = arg1(dependencyMap[13]).intl;
     obj6.children = intl3.string(arg1(dependencyMap[13]).t.ntW1cc);
     obj5.children = callback(arg1(dependencyMap[12]).Text, obj6);
@@ -321,8 +321,8 @@ const HelpdeskArticles = arg1(dependencyMap[4]).HelpdeskArticles;
 const tmp2 = arg1(dependencyMap[5]);
 ({ jsx: closure_10, jsxs: closure_11, Fragment: closure_12 } = arg1(dependencyMap[6]));
 let obj = arg1(dependencyMap[7]);
-obj = { formContent: { names: null, ks: null } };
-obj = { 1640819852: 8, -1582345669: null, 810746622: "\u270A\u{1F3FF}", 1504634312: true, -73374974: null, 1315000674: 8, -1826260398: null, backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_FEEDBACK_WARNING, borderColor: importDefault(dependencyMap[8]).colors.STATUS_WARNING, borderRadius: importDefault(dependencyMap[8]).radii.xs };
+obj = { formContent: {} };
+obj = { multiline: 8, GET_SOUNDBOARD_SOUNDS: null, useImminentUpcomingGuildEvents: "\u270A\u{1F3FF}", es6bridge: true, passthroughCount: null, FORUM_CHANNEL_SEEN_BATCH: 8, GUILD_ROOM_BACKGROUND_CONFIG: null, backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_FEEDBACK_WARNING, borderColor: importDefault(dependencyMap[8]).colors.STATUS_WARNING, borderRadius: importDefault(dependencyMap[8]).radii.xs };
 obj.warningContainer = obj;
 obj.warningText = {};
 obj.headerTitleContainer = {};

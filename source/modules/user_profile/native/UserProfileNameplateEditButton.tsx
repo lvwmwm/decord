@@ -1,10 +1,10 @@
-// Module ID: 13471
-// Function ID: 102278
+// Module ID: 13478
+// Function ID: 102301
 // Name: UserProfileNameplateEditButton
 // Dependencies: []
 // Exports: default
 
-// Module 13471 (UserProfileNameplateEditButton)
+// Module 13478 (UserProfileNameplateEditButton)
 let closure_3 = importAll(dependencyMap[0]);
 ({ ActivityIndicator: closure_4, View: closure_5 } = arg1(dependencyMap[1]));
 let closure_6 = importDefault(dependencyMap[2]);
@@ -131,7 +131,7 @@ export default function UserProfileNameplateEditButton(user) {
       if (null != nameplateRecord) {
         if (null != nameplateProduct) {
           const obj4 = { style: tmp.previewContainer };
-          const obj5 = { "Bool(true)": null, "Bool(true)": null, "Bool(true)": null, nameplate: nameplateData };
+          const obj5 = { alignItems: null, "Null": null, "Null": null, nameplate: nameplateData };
           obj4.children = jsx(importDefault(dependencyMap[16]), obj5);
           let tmp24 = <closure_5 {...obj4} />;
         }

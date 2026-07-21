@@ -1,18 +1,18 @@
-// Module ID: 14943
-// Function ID: 112490
+// Module ID: 14950
+// Function ID: 112514
 // Name: useIsEligibleForTierTemplateUpsell
 // Dependencies: [0, 0, 0, 0, 0, 4294967295]
 // Exports: default
 
-// Module 14943 (useIsEligibleForTierTemplateUpsell)
-import result from "result";
-import { GuildFeatures } from "result";
+// Module 14950 (useIsEligibleForTierTemplateUpsell)
+import __exportStarResult1 from "__exportStarResult1";
+import { GuildFeatures } from "__exportStarResult1";
 
 const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/guild_role_subscriptions/tier_templates/useIsEligibleForTierTemplateUpsell.tsx");
 
 export default function useIsEligibleForTierTemplateUpsell(guildId) {
   const arg1 = guildId;
-  const items = [result];
+  const items = [__exportStarResult1];
   const stateFromStores = arg1(dependencyMap[2]).useStateFromStores(items, () => guild.getGuild(arg0));
   const obj = arg1(dependencyMap[2]);
   let hasItem;

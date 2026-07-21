@@ -1,10 +1,10 @@
-// Module ID: 15509
-// Function ID: 118360
+// Module ID: 15516
+// Function ID: 118384
 // Name: useLaunchPadGesture
 // Dependencies: []
 // Exports: default
 
-// Module 15509 (useLaunchPadGesture)
+// Module 15516 (useLaunchPadGesture)
 let closure_3 = importAll(dependencyMap[0]);
 ({ LAUNCH_PAD_EDGE_GESTURE_AFFORDANCE: closure_4, LAUNCH_PAD_END_TRANSLATION_THRESHOLD: closure_5, LAUNCH_PAD_END_VELOCITY_THRESHOLD: closure_6, LAUNCH_PAD_PULL_TAB_HEIGHT: closure_7, LAUNCH_PAD_PULL_TAB_HIT_SLOP: closure_8, LAUNCH_PAD_PULL_TAB_SCALE_FACTOR: closure_9, LAUNCH_PAD_PULL_TAB_WIDTH: closure_10, LaunchPadTypes: closure_11 } = arg1(dependencyMap[1]));
 let closure_12 = { code: "function useLaunchPadGestureTsx1(){const{updateSharedValueIfChanged,gestureState,updaters}=this.__closure;updateSharedValueIfChanged(gestureState,{active:false,initialLaunchPadPosition:0,initialPullTabPosition:0,initialTouchX:0,initialTouchY:0,positionOffsetX:0,positionOffsetY:0,startTime:-1});updaters.setLaunchPadPullTabScale(1.0);}" };

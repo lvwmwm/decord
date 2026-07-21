@@ -1,9 +1,9 @@
-// Module ID: 10307
-// Function ID: 79595
+// Module ID: 10313
+// Function ID: 79614
 // Name: enforcing
 // Dependencies: []
 
-// Module 10307 (enforcing)
+// Module 10313 (enforcing)
 const TurboModuleRegistry = require(dependencyMap[0]).TurboModuleRegistry;
 const enforcing = TurboModuleRegistry.getEnforcing("NativePushNotificationMonitorModule");
 const _module = require(dependencyMap[1]);

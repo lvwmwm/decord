@@ -1,8 +1,8 @@
-// Module ID: 15122
-// Function ID: 114133
+// Module ID: 15129
+// Function ID: 114157
 // Dependencies: []
 
-// Module 15122
+// Module 15129
 const importAllResult = importAll(dependencyMap[0]);
 ({ StyleSheet: closure_3, View: closure_4 } = arg1(dependencyMap[1]));
 const jsx = arg1(dependencyMap[2]).jsx;
@@ -33,7 +33,7 @@ const memoResult = importAllResult.memo(function ThemedHeaderBackgroundGradient(
   items[1] = obj;
   obj.style = items;
   obj.pointerEvents = "none";
-  obj1 = { style: absoluteFill.absoluteFill, colors: items1, start: { "Null": false, "Null": true }, end: { "Null": 131072.00314656927, "Null": 0.000000000000000000000000000000000000000000000000000000011294471302334573 } };
+  obj1 = { style: absoluteFill.absoluteFill, colors: items1, start: { max: -536870861, guildId: -299892737 }, end: {} };
   const items1 = [token, str];
   obj.children = jsx(importDefault(dependencyMap[8]), obj1);
   return <closure_4 {...obj} />;

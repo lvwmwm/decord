@@ -1,10 +1,10 @@
-// Module ID: 11272
-// Function ID: 87755
+// Module ID: 11278
+// Function ID: 87778
 // Name: AppLauncherCommandOptionActionSheet
 // Dependencies: []
 // Exports: AppLauncherCommandOptionActionSheet
 
-// Module 11272 (AppLauncherCommandOptionActionSheet)
+// Module 11278 (AppLauncherCommandOptionActionSheet)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 const DEFAULT_CONTENT_PADDING = arg1(dependencyMap[2]).DEFAULT_CONTENT_PADDING;
@@ -34,7 +34,7 @@ export const AppLauncherCommandOptionActionSheet = function AppLauncherCommandOp
   if (flag === undefined) {
     flag = true;
   }
-  let obj = { filename: false, durationSecs: null, waveform: "", backgroundColor: null, alignItems: null };
+  let obj = {};
   Object.setPrototypeOf(null);
   const merged = Object.assign(startExpanded, obj);
   const arg1 = merged;

@@ -1,10 +1,10 @@
-// Module ID: 10510
-// Function ID: 82076
+// Module ID: 10516
+// Function ID: 82099
 // Name: transitionToActivity
 // Dependencies: []
 // Exports: default
 
-// Module 10510 (transitionToActivity)
+// Module 10516 (transitionToActivity)
 const setVoiceChatDrawerState = require(dependencyMap[0]).setVoiceChatDrawerState;
 let closure_4 = importDefault(dependencyMap[1]);
 const ActivityPanelModes = require(dependencyMap[2]).ActivityPanelModes;

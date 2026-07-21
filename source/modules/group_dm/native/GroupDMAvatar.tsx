@@ -1,10 +1,10 @@
-// Module ID: 9084
-// Function ID: 71171
+// Module ID: 9088
+// Function ID: 71183
 // Name: FacepileGroupDMAvatar
 // Dependencies: []
 // Exports: default
 
-// Module 9084 (FacepileGroupDMAvatar)
+// Module 9088 (FacepileGroupDMAvatar)
 class FacepileGroupDMAvatar {
   constructor(arg0) {
     ({ size, animate, users, sources, pileSizeOverride } = global);
@@ -102,7 +102,7 @@ obj[arg1(dependencyMap[4]).AvatarSizes.XSMALL] = arg1(dependencyMap[4]).AvatarSi
 obj[arg1(dependencyMap[4]).AvatarSizes.SIZE_16] = arg1(dependencyMap[4]).AvatarSizes.XXSMALL_10;
 obj[arg1(dependencyMap[4]).AvatarSizes.NORMAL] = arg1(dependencyMap[4]).AvatarSizes.XSMALL;
 const tmp2 = arg1(dependencyMap[3]);
-let closure_8 = arg1(dependencyMap[5]).createStyles({ firstFace: {}, secondFace: { justifyContent: true, paddingRight: true, height: true } });
+let closure_8 = arg1(dependencyMap[5]).createStyles({ firstFace: {}, secondFace: { "Null": 3375103, "Null": -8192, "Null": 4320799 } });
 const obj2 = arg1(dependencyMap[5]);
 const result = arg1(dependencyMap[9]).fileFinishedImporting("modules/group_dm/native/GroupDMAvatar.tsx");
 

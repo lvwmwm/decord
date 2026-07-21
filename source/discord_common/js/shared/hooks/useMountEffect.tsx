@@ -1,10 +1,10 @@
-// Module ID: 4552
-// Function ID: 39851
+// Module ID: 4556
+// Function ID: 39899
 // Name: useMountEffect
 // Dependencies: []
 // Exports: default, useMountLayoutEffect, useUnmountEffect
 
-// Module 4552 (useMountEffect)
+// Module 4556 (useMountEffect)
 let closure_0 = importAll(dependencyMap[0]);
 const result = arg1(dependencyMap[1]).fileFinishedImporting("../discord_common/js/shared/hooks/useMountEffect.tsx");
 

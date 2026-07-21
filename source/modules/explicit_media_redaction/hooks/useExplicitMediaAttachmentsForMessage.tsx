@@ -1,10 +1,10 @@
-// Module ID: 9856
-// Function ID: 76323
+// Module ID: 9861
+// Function ID: 76339
 // Name: useRedactableMediaAttachmentsForMessage
 // Dependencies: []
 // Exports: useRedactableMediaAttachmentsForMessage, useRedactableMediaEmbedsForMessage
 
-// Module 9856 (useRedactableMediaAttachmentsForMessage)
+// Module 9861 (useRedactableMediaAttachmentsForMessage)
 let closure_2 = importDefault(dependencyMap[0]);
 const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/explicit_media_redaction/hooks/useExplicitMediaAttachmentsForMessage.tsx");
 

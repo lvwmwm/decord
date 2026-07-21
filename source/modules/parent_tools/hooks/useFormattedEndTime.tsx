@@ -1,10 +1,10 @@
-// Module ID: 15834
-// Function ID: 121066
+// Module ID: 15841
+// Function ID: 121090
 // Name: useFormattedEndTime
 // Dependencies: []
 // Exports: default
 
-// Module 15834 (useFormattedEndTime)
+// Module 15841 (useFormattedEndTime)
 let closure_2 = importDefault(dependencyMap[0]);
 const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/parent_tools/hooks/useFormattedEndTime.tsx");
 
@@ -23,7 +23,7 @@ export default function useFormattedEndTime() {
     if (null != nextEndTime) {
       const _Intl = Intl;
       const prototype = DateTimeFormat.prototype;
-      const dateTimeFormat = new DateTimeFormat(callback(closure_1[1]).intl.currentLocale, { "Bool(false)": false, "Bool(false)": false, "Bool(false)": false });
+      const dateTimeFormat = new DateTimeFormat(callback(closure_1[1]).intl.currentLocale, { "Null": false, "Null": false, "Null": false });
       formatResult = dateTimeFormat.format(nextEndTime);
     }
     return formatResult;

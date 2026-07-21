@@ -1,10 +1,10 @@
-// Module ID: 6591
-// Function ID: 50760
+// Module ID: 6593
+// Function ID: 50803
 // Name: TreasureChestBannerSpotIllustration
 // Dependencies: []
 // Exports: TreasureChestBannerSpotIllustration
 
-// Module 6591 (TreasureChestBannerSpotIllustration)
+// Module 6593 (TreasureChestBannerSpotIllustration)
 const jsx = require(dependencyMap[0]).jsx;
 const _module = require(dependencyMap[3]);
 const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/TreasureChestBannerSpotIllustration.native.tsx");

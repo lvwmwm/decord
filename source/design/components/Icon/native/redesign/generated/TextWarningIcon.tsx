@@ -1,10 +1,10 @@
-// Module ID: 4629
-// Function ID: 40226
+// Module ID: 4631
+// Function ID: 40267
 // Name: TextWarningIcon
 // Dependencies: []
 // Exports: TextWarningIcon
 
-// Module 4629 (TextWarningIcon)
+// Module 4631 (TextWarningIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/TextWarningIcon.tsx");

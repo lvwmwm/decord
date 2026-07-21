@@ -1,10 +1,10 @@
-// Module ID: 6955
-// Function ID: 55599
+// Module ID: 6959
+// Function ID: 55610
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 // Exports: formatWatchTaskRemainingTime, getActivityApplicationId, getAllApplicationIds, getConsoleApplicationId, getDesktopApplicationIds, getInGameApplicationId, getPlayActivityApplicationId, getQuestTaskDetails, getQuestTaskTypes, getStreamingApplicationId, getThirdPartyTaskDetails, hasAchievementActivityTask, hasAchievementInGameTask, hasSomeFirstPartyTasks, hasStreamOnDesktopTask, isDesktopOnlyPlayQuest, isVideoQuestForMobilePlatformOnly
 
-// Module 6955 (_createForOfIteratorHelperLoose)
+// Module 6959 (_createForOfIteratorHelperLoose)
 function _createForOfIteratorHelperLoose(@@iterator) {
   let arg1 = Symbol_iterator;
   @@iterator = "undefined" !== typeof Symbol;
@@ -383,7 +383,7 @@ function getDefaultWatchVideoTask(config) {
 }
 function _getQuestTaskDetails(quest, includeTaskTypes) {
   if (isInGameQuest(quest)) {
-    let obj = { SidebarType: "isArray", TEST_4: "key", VOICE_RECORDING_MAX_DURATION_MILLIS: "constructor", invalidFieldKeys: "apply", taskType: includeTaskTypes(dependencyMap[1]).FirstPartyQuestTaskTypes.STREAM_ON_DESKTOP };
+    let obj = { 669602241: "isArray", 1470947944: "key", 1310491355: "constructor", 1602118752: "apply", taskType: includeTaskTypes(dependencyMap[1]).FirstPartyQuestTaskTypes.STREAM_ON_DESKTOP };
     let tmp6Result = obj;
   } else if (result(quest)) {
     obj = { quest };
@@ -674,7 +674,7 @@ export const getQuestTaskDetails = function getQuestTaskDetails(quest, DESKTOP) 
     let obj = { quest };
     let tmp3 = _getTaskDetailsForType(obj);
     if (null == tmp3) {
-      obj = { SidebarType: "isArray", TEST_4: "key", VOICE_RECORDING_MAX_DURATION_MILLIS: "constructor", invalidFieldKeys: "apply", taskType: DESKTOP(dependencyMap[1]).FirstPartyQuestTaskTypes.STREAM_ON_DESKTOP };
+      obj = { 669602241: "isArray", 1470947944: "key", 1310491355: "constructor", 1602118752: "apply", taskType: DESKTOP(dependencyMap[1]).FirstPartyQuestTaskTypes.STREAM_ON_DESKTOP };
       tmp3 = obj;
     }
     return tmp3;

@@ -5,7 +5,7 @@
 
 // Module 892 (items)
 Object.defineProperty(arg5, Symbol.toStringTag, { value: "Module" });
-const items = ["<string:1976717568>", "<string:2370898017>", "<string:1371103550>", "<string:3378613870>", "<string:2989306449>", "<string:3332894621>", "<string:2439528468>", "<string:893353197>", "<string:2354135032>", "<string:1954374307>", "<string:25979457>", "<string:1720078592>"];
+const items = [];
 arg5.getClientIPAddress = function getClientIPAddress(arg0) {
   const obj = {};
   const items = obj;

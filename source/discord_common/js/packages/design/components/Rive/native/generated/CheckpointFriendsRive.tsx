@@ -4,12 +4,12 @@
 // Dependencies: []
 
 // Module 3917 (CheckpointFriendsRive)
-let closure_3 = ["aria-current", "activeClassName", "activeStyle", "className", "exact", "isActive"];
+let closure_3 = [true, true, true, true, true, true];
 let closure_4 = importDefault(dependencyMap[0]);
 const importAllResult = importAll(dependencyMap[1]);
 const jsx = arg1(dependencyMap[2]).jsx;
-let closure_7 = { MAIN: {}, Sidekick: {}, Avatar: { "Bool(true)": false, "Bool(true)": false, "Bool(true)": false, "Bool(true)": false, "Bool(true)": false, "Bool(true)": false, "Bool(true)": false }, Username: { "Bool(true)": false, "Bool(true)": false, "Bool(true)": false, "Bool(true)": false, "Bool(true)": false, "Bool(true)": false, "Bool(true)": false }, Friends 01 Rotation: {} };
-let closure_8 = { MAIN: [], Sidekick: [], Avatar: ["a", "isArray", "s", "fill", "r"], Username: ["a", "isArray", "s", "fill", "r"], Friends 01 Rotation: [] };
+let closure_7 = { MAIN: {}, Sidekick: {}, Avatar: { <string:1627389952>: true, <string:726421991>: true, label: true, textContentType: true, keyboardType: true, secureTextEntry: true, "Bool(false)": true }, Username: { <string:1627389952>: true, <string:726421991>: true, label: true, textContentType: true, keyboardType: true, secureTextEntry: true, "Bool(false)": true }, Friends 01 Rotation: {} };
+let closure_8 = { MAIN: [true, true, true, true], Sidekick: [true, true, true, true], Avatar: [], Username: [], Friends 01 Rotation: [true, true, true, true] };
 let closure_9 = {
   MAIN: function MAINBindings(reducedMotionEnabled) {
     let dataBinding;

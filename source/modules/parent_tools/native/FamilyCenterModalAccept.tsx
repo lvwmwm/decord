@@ -1,10 +1,10 @@
-// Module ID: 13698
-// Function ID: 103657
+// Module ID: 13705
+// Function ID: 103680
 // Name: FamilyCenterModalAcceptScreen
 // Dependencies: []
 // Exports: default
 
-// Module 13698 (FamilyCenterModalAcceptScreen)
+// Module 13705 (FamilyCenterModalAcceptScreen)
 function FamilyCenterModalAcceptScreen(otherUser) {
   otherUser = otherUser.otherUser;
   const arg1 = otherUser;
@@ -38,7 +38,7 @@ function FamilyCenterModalAcceptScreen(otherUser) {
   items1[2] = callback(importDefault(dependencyMap[15]), { user: otherUser });
   obj1.children = items1;
   const items2 = [callback2(View, obj1), callback(importDefault(dependencyMap[16]), {}), ];
-  const obj4 = { Promise: 24, marginTop: 24, flags: null, style: tmp.disclaimer };
+  const obj4 = { "Null": "shapes", "Null": "construct", "Null": "Array", style: tmp.disclaimer };
   const intl2 = arg1(dependencyMap[7]).intl;
   obj4.children = intl2.format(importDefault(dependencyMap[14]).snlFqR, { username: otherUser.username });
   items2[2] = callback(arg1(dependencyMap[13]).Text, obj4);
@@ -67,7 +67,7 @@ const View = arg1(dependencyMap[1]).View;
 ({ jsx: closure_5, jsxs: closure_6 } = arg1(dependencyMap[2]));
 let obj = arg1(dependencyMap[3]);
 obj = {};
-obj = { y: 0, gatedChannel: 0, y: 0, marginBottom: importDefault(dependencyMap[4]).space.PX_16 };
+obj = { cix: 0, y: 0, isArray: 0, marginBottom: importDefault(dependencyMap[4]).space.PX_16 };
 obj.header = obj;
 const tmp2 = arg1(dependencyMap[2]);
 obj.headerText = { marginTop: importDefault(dependencyMap[4]).space.PX_16, marginBottom: importDefault(dependencyMap[4]).space.PX_4 };

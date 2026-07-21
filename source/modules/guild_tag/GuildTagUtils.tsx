@@ -1,10 +1,10 @@
-// Module ID: 7834
-// Function ID: 62468
+// Module ID: 7838
+// Function ID: 62480
 // Name: getUserPrimaryGuild
 // Dependencies: []
 // Exports: getGuildTagBadgeUrl, guildHasTag, guildSupportsTags, shouldDisplayGuildTag, useShouldDisplayGuildTag, useUserPrimaryGuild
 
-// Module 7834 (getUserPrimaryGuild)
+// Module 7838 (getUserPrimaryGuild)
 let GuildTagBadgeMediaProxySizes;
 function getUserPrimaryGuild(primaryGuild) {
   if (null != primaryGuild) {

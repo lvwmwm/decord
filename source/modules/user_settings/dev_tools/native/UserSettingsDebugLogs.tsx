@@ -1,10 +1,10 @@
-// Module ID: 14262
-// Function ID: 107791
+// Module ID: 14269
+// Function ID: 107814
 // Name: UserSettingsDebugLogs
 // Dependencies: []
 // Exports: default
 
-// Module 14262 (UserSettingsDebugLogs)
+// Module 14269 (UserSettingsDebugLogs)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 ({ RefreshControl: closure_5, View: closure_6 } = arg1(dependencyMap[2]));
@@ -115,7 +115,7 @@ export default function UserSettingsDebugLogs() {
     obj.children = items1;
     return first1(memo, obj, item.index);
   }, items2);
-  obj = { "Null": false, "Null": false, onChange: tmp10[1], defaultValue: first1, trailingIcon: arg1(dependencyMap[14]).FiltersHorizontalIcon };
+  obj = { h: -465436671, current: -469761518, onChange: tmp10[1], defaultValue: first1, trailingIcon: arg1(dependencyMap[14]).FiltersHorizontalIcon };
   const obj1 = {};
   const intl = arg1(dependencyMap[15]).intl;
   obj1.accessibilityLabel = intl.string(arg1(dependencyMap[15]).t.+1H47t);

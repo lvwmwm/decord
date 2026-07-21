@@ -1,10 +1,10 @@
-// Module ID: 12413
-// Function ID: 94824
+// Module ID: 12420
+// Function ID: 94847
 // Name: PendingCancellationWarning
 // Dependencies: []
 // Exports: default
 
-// Module 12413 (PendingCancellationWarning)
+// Module 12420 (PendingCancellationWarning)
 function PendingCancellationWarning(slots) {
   slots = slots.slots;
   const tmp = callback3();
@@ -40,7 +40,7 @@ function SubscribeConfirmation(arg0) {
   let obj = {};
   obj = { style: tmp.subscribeImage, source: importDefault(dependencyMap[19]) };
   const items = [callback(closure_6, obj), , , , , ];
-  obj = { Promise: false, marginTop: 0, flags: 4, style: tmp.header };
+  obj = { "Null": false, "Null": 0, "Null": 4, style: tmp.header };
   const intl = arg1(dependencyMap[18]).intl;
   obj.children = intl.string(arg1(dependencyMap[18]).t.yTlZV0);
   items[1] = callback(arg1(dependencyMap[17]).Text, obj);
@@ -95,7 +95,7 @@ function TransferConfirmation(previousGuildSubscriptionSlots) {
     obj = {};
     obj1 = { style: tmp.transferImage, source: guildSubscriptionRemovalSource };
     const items1 = [callback(closure_6, obj1), , , , , ];
-    const obj2 = { Promise: false, marginTop: 0, flags: 4, style: tmp.header };
+    const obj2 = { "Null": false, "Null": 0, "Null": 4, style: tmp.header };
     const intl = arg1(dependencyMap[18]).intl;
     obj2.children = intl.string(arg1(dependencyMap[18]).t.h92jfS);
     items1[1] = callback(arg1(dependencyMap[17]).Text, obj2);
@@ -162,7 +162,7 @@ const BoostPurchaseIntent = arg1(dependencyMap[9]).BoostPurchaseIntent;
 const tmp3 = arg1(dependencyMap[7]);
 ({ jsx: closure_19, jsxs: closure_20, Fragment: closure_21 } = arg1(dependencyMap[10]));
 let obj = arg1(dependencyMap[11]);
-obj = { content: { "Null": false, "Null": false }, scrollableContent: { 0: false, 0: false }, subscribeImage: {}, transferImage: { "Null": 1711276616, "Null": 1358955199 }, header: { visible: true, transparent: true }, transferPreviews: { "Null": false, "Null": false }, previewHeader: { 1977447900: 0, 8: null, 9: 101 }, guildPreview: { "Null": null, "Null": null }, blurb: { 9223372036854775807: false, 9223372036854775807: false }, warning: { marginTop: 16 } };
+obj = { content: { "Null": "<string:1027735553>", "Null": "<string:4143972873>" }, scrollableContent: { "Bool(true)": "percent", "Bool(true)": 0 }, subscribeImage: {}, transferImage: { "Bool(true)": -1929379256, "Bool(true)": 1358955199 }, header: {}, transferPreviews: {}, previewHeader: { label: 0, DARK: null, url: 101 }, guildPreview: { default: "sh", valueOf: 0 }, blurb: { "Bool(false)": null, "Bool(false)": null }, warning: { marginTop: 16 } };
 obj = {};
 const tmp4 = arg1(dependencyMap[10]);
 obj.backgroundColor = arg1(dependencyMap[12]).hexWithOpacity(importDefault(dependencyMap[13]).unsafe_rawColors.YELLOW_300, 0.1);
@@ -171,10 +171,10 @@ obj.borderColor = importDefault(dependencyMap[13]).unsafe_rawColors.YELLOW_300;
 obj.borderWidth = tmp2.StyleSheet.hairlineWidth;
 obj.width = "100%";
 obj.pendingCancellation = obj;
-obj.pendingCancellationMessage = { -1122219564: "y", 1675711085: "getTimestampAccessibilityLabel" };
-obj.pendingCancellationIcon = { borderRadius: "d360e66ed8ba0a3060c68a8e44e7aa91", backgroundColor: "tier_3_24px", paddingHorizontal: "png" };
+obj.pendingCancellationMessage = { borderRadius: true, padding: true };
+obj.pendingCancellationIcon = { padding: "d360e66ed8ba0a3060c68a8e44e7aa91", borderRadius: "tier_3_24px", marginTop: "png" };
 obj.loading = { marginTop: 32 };
-obj.confirmButton = { "Null": 106, "Null": "hidden" };
+obj.confirmButton = { default: "100%", valueOf: 106 };
 const obj4 = arg1(dependencyMap[12]);
 obj.activeTransferGuildCardBorder = { padding: 2, borderRadius: importDefault(dependencyMap[13]).radii.xs };
 let closure_22 = obj.createStyles(obj);

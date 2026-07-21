@@ -1,10 +1,10 @@
-// Module ID: 9731
-// Function ID: 75708
+// Module ID: 9736
+// Function ID: 75725
 // Name: getNotSupportedSentence
 // Dependencies: []
 // Exports: getFinePrintMessageForApplication, getGiftLinkAccountDescriptionForApplication, getMobileFinePrintMessageForApplication, getRedeemPurchaseDescriptionForApplication
 
-// Module 9731 (getNotSupportedSentence)
+// Module 9736 (getNotSupportedSentence)
 function getNotSupportedSentence(id) {
   if (null == id) {
     let arr = items;

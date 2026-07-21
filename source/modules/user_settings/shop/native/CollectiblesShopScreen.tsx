@@ -1,10 +1,10 @@
-// Module ID: 14339
-// Function ID: 108299
+// Module ID: 14346
+// Function ID: 108322
 // Name: CollectiblesShopScreen
 // Dependencies: []
 // Exports: default
 
-// Module 14339 (CollectiblesShopScreen)
+// Module 14346 (CollectiblesShopScreen)
 importAll(dependencyMap[0]);
 let closure_3 = arg1(dependencyMap[1]).CollectiblesMobileShopScreen;
 const jsx = arg1(dependencyMap[2]).jsx;

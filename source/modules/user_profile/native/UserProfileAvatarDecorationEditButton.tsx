@@ -1,10 +1,10 @@
-// Module ID: 13462
-// Function ID: 102219
+// Module ID: 13469
+// Function ID: 102242
 // Name: COLLECTIBLES_PREVIEW_SIZE
 // Dependencies: []
 // Exports: default
 
-// Module 13462 (COLLECTIBLES_PREVIEW_SIZE)
+// Module 13469 (COLLECTIBLES_PREVIEW_SIZE)
 let closure_3 = importAll(dependencyMap[0]);
 ({ ActivityIndicator: closure_4, View: closure_5 } = arg1(dependencyMap[1]));
 let closure_6 = importDefault(dependencyMap[2]);
@@ -13,7 +13,7 @@ const NOOP = arg1(dependencyMap[4]).NOOP;
 const jsx = arg1(dependencyMap[5]).jsx;
 let obj = arg1(dependencyMap[6]);
 obj = {};
-obj = { 758274158: true, 1911668291: true, -1943171307: true, -1723054236: true, 1986079004: true, height: COLLECTIBLES_PREVIEW_SIZE, width: COLLECTIBLES_PREVIEW_SIZE, backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_MOD_MUTED, borderRadius: importDefault(dependencyMap[7]).radii.xs, overflow: "hidden" };
+obj = { height: COLLECTIBLES_PREVIEW_SIZE, width: COLLECTIBLES_PREVIEW_SIZE, backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_MOD_MUTED, borderRadius: importDefault(dependencyMap[7]).radii.xs, overflow: "hidden" };
 obj.previewContainer = obj;
 const tmp2 = arg1(dependencyMap[1]);
 obj.noneIcon = { tintColor: importDefault(dependencyMap[7]).colors.TEXT_SUBTLE };

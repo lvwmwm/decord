@@ -1,10 +1,10 @@
-// Module ID: 9754
-// Function ID: 75888
+// Module ID: 9759
+// Function ID: 75904
 // Name: PremiumGiftSuccess
 // Dependencies: []
 // Exports: default
 
-// Module 9754 (PremiumGiftSuccess)
+// Module 9759 (PremiumGiftSuccess)
 let closure_3 = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 let closure_5 = importDefault(dependencyMap[2]);

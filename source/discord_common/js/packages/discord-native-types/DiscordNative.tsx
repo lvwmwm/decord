@@ -1,9 +1,9 @@
-// Module ID: 4184
-// Function ID: 35967
+// Module ID: 4188
+// Function ID: 36015
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
-// Module 4184 (_isNativeReflectConstruct)
+// Module 4188 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -23,7 +23,7 @@ const tmp2 = (arg0) => {
     constructor() {
       self = this;
       tmp = closure_1(this, SystemServiceNotAvailableError);
-      items = ["children"];
+      items = ["<string:3436003419>"];
       obj = closure_3(SystemServiceNotAvailableError);
       tmp2 = closure_2;
       if (closure_5()) {

@@ -1,10 +1,10 @@
-// Module ID: 8688
-// Function ID: 68832
+// Module ID: 8692
+// Function ID: 68844
 // Name: useTrackShopCardClick
 // Dependencies: []
 // Exports: useTrackShopCardClick
 
-// Module 8688 (useTrackShopCardClick)
+// Module 8692 (useTrackShopCardClick)
 let closure_3 = importAll(dependencyMap[0]);
 const useSelectedVariantIndex = arg1(dependencyMap[1]).useSelectedVariantIndex;
 const AnalyticEvents = arg1(dependencyMap[2]).AnalyticEvents;

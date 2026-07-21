@@ -1,10 +1,10 @@
-// Module ID: 6477
-// Function ID: 50589
+// Module ID: 6479
+// Function ID: 50632
 // Name: ServerIconLilQuackSPondverseExample
 // Dependencies: []
 // Exports: ServerIconLilQuackSPondverseExample
 
-// Module 6477 (ServerIconLilQuackSPondverseExample)
+// Module 6479 (ServerIconLilQuackSPondverseExample)
 const jsx = require(dependencyMap[0]).jsx;
 const _module = require(dependencyMap[3]);
 const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/ServerIconLilQuackSPondverseExample.native.tsx");

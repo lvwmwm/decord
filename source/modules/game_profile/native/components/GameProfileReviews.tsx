@@ -1,10 +1,10 @@
-// Module ID: 8624
-// Function ID: 68347
+// Module ID: 8628
+// Function ID: 68359
 // Name: SteamReviewRow
 // Dependencies: []
 // Exports: default
 
-// Module 8624 (SteamReviewRow)
+// Module 8628 (SteamReviewRow)
 function SteamReviewRow(url) {
   let isRecentRating;
   let rating;
@@ -59,7 +59,7 @@ function SteamReviewRow(url) {
     tmp10 = result !== arg1(dependencyMap[13]).SteamReviewScoreDescription.NO_USER_REVIEWS;
   }
   if (tmp10) {
-    const obj4 = { INTEGRATION_CREATE: true, ConstraintReasonCode: true };
+    const obj4 = {};
     const intl2 = arg1(dependencyMap[10]).intl;
     const obj5 = { rating_count: ratingCount.toLocaleString() };
     obj4.children = intl2.format(arg1(dependencyMap[10]).t.sgIoin, obj5).toString();
@@ -118,7 +118,7 @@ function OpenCriticReview(url) {
     let obj3 = arg1(dependencyMap[14]);
     let openCriticCircleRatingColor = obj3.getOpenCriticCircleRatingColor(tier);
   } else {
-    openCriticCircleRatingColor = { RadialGradient: 140529.4145832062, Q75ddl: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000009499897453596522 };
+    openCriticCircleRatingColor = { 2107703300: "\u{1F9BB}\u{1F3FF}", 1604780036: true };
   }
   obj = { onPress: callback, accessibilityRole: "link" };
   ({ foregroundColor, backgroundColor } = openCriticCircleRatingColor);
@@ -162,7 +162,7 @@ function OpenCriticReview(url) {
         const obj7 = { rating: num2, strokeColor: foregroundColor, size: 32 };
         const items4 = [callback(importDefault(dependencyMap[15]), obj7), ];
         const obj8 = { style: tmp.opencriticTopCriticRatingContainer };
-        const obj9 = { INTEGRATION_CREATE: true, ConstraintReasonCode: true };
+        const obj9 = {};
         const _Math = Math;
         obj9.children = Math.floor(num2);
         obj8.children = callback(arg1(dependencyMap[12]).Text, obj9);
@@ -203,20 +203,20 @@ const tmp3 = arg1(dependencyMap[2]);
 obj.headerText = { paddingHorizontal: importDefault(dependencyMap[4]).space.PX_8 };
 const obj1 = { paddingHorizontal: importDefault(dependencyMap[4]).space.PX_8 };
 obj.reviewContainer = { borderRadius: importDefault(dependencyMap[4]).radii.lg, borderWidth: 1, borderColor: importDefault(dependencyMap[4]).colors.BORDER_SUBTLE, overflow: "hidden" };
-const obj3 = { "Null": 0.0000000000000000000000000000000000000000000000000000000000000413382396252622, "Null": 136687334195.2, "Null": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000320132773045397, "Null": 0.00000000000000000000000000000000000000000000000000000000000004667253318785187, padding: importDefault(dependencyMap[4]).space.PX_12 };
+const obj3 = { "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, padding: importDefault(dependencyMap[4]).space.PX_12 };
 obj.reviewRow = obj3;
 const obj2 = { borderRadius: importDefault(dependencyMap[4]).radii.lg, borderWidth: 1, borderColor: importDefault(dependencyMap[4]).colors.BORDER_SUBTLE, overflow: "hidden" };
 obj.reviewRowNotLast = { borderBottomWidth: 1, borderBottomColor: importDefault(dependencyMap[4]).colors.BACKGROUND_MOD_SUBTLE };
-const obj5 = { -9223372036854775808: true, filter: true, gap: importDefault(dependencyMap[4]).space.PX_8 };
-obj.steamNameContainer = obj5;
 const obj4 = { borderBottomWidth: 1, borderBottomColor: importDefault(dependencyMap[4]).colors.BACKGROUND_MOD_SUBTLE };
-obj.steamRatingContainer = { paddingLeft: importDefault(dependencyMap[4]).space.PX_32, gap: importDefault(dependencyMap[4]).space.PX_4 };
-const obj7 = { -9223372036854775808: true, filter: true, gap: importDefault(dependencyMap[4]).space.PX_12 };
-obj.opencriticRightContainer = obj7;
-const obj6 = { paddingLeft: importDefault(dependencyMap[4]).space.PX_32, gap: importDefault(dependencyMap[4]).space.PX_4 };
+obj.steamNameContainer = { gap: importDefault(dependencyMap[4]).space.PX_8 };
+const obj6 = { fontSize: null, flex: null, overflow: "E, M/d", paddingLeft: importDefault(dependencyMap[4]).space.PX_32, gap: importDefault(dependencyMap[4]).space.PX_4 };
+obj.steamRatingContainer = obj6;
+const obj5 = { gap: importDefault(dependencyMap[4]).space.PX_8 };
+obj.opencriticRightContainer = { gap: importDefault(dependencyMap[4]).space.PX_12 };
+const obj7 = { gap: importDefault(dependencyMap[4]).space.PX_12 };
 obj.opencriticTopCriticContainer = { borderRadius: importDefault(dependencyMap[4]).radii.round, backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_SURFACE_HIGH };
-obj.opencriticTopCriticImage = { aze: "boolean", azj: "string" };
-obj.opencriticTopCriticRatingContainer = { "Bool(false)": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000304209316664174, "Bool(false)": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001174777994458703, "Bool(false)": 9126805506, "Bool(false)": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000156826098998444, "Bool(false)": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000543230925073, "Bool(true)": 16382641208378840000000000000000000000000000000000000000000000000000000000000000000, "Bool(true)": true };
+obj.opencriticTopCriticImage = { bhk: "boolean", bic: "string" };
+obj.opencriticTopCriticRatingContainer = {};
 let closure_9 = obj.createStyles(obj);
 const obj8 = { borderRadius: importDefault(dependencyMap[4]).radii.round, backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_SURFACE_HIGH };
 const result = arg1(dependencyMap[18]).fileFinishedImporting("modules/game_profile/native/components/GameProfileReviews.tsx");
@@ -288,7 +288,7 @@ export default function GameProfileReviews(arg0) {
       return tmp26Result;
     }
     obj = { style: tmp.container };
-    obj = { INTEGRATION_CREATE: "polite", ConstraintReasonCode: "column", style: tmp.headerText };
+    obj = { style: tmp.headerText };
     const intl = arg1(dependencyMap[10]).intl;
     obj.children = intl.string(arg1(dependencyMap[10]).t.GaAQXP);
     const items = [callback(arg1(dependencyMap[12]).Text, obj), ];

@@ -1,10 +1,10 @@
-// Module ID: 11130
-// Function ID: 86601
+// Module ID: 11136
+// Function ID: 86624
 // Name: ForumPostListBody
 // Dependencies: []
 // Exports: default
 
-// Module 11130 (ForumPostListBody)
+// Module 11136 (ForumPostListBody)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 const ForumTimestampFormats = arg1(dependencyMap[2]).ForumTimestampFormats;

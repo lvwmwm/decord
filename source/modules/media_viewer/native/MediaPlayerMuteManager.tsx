@@ -1,9 +1,9 @@
-// Module ID: 8271
-// Function ID: 65320
+// Module ID: 8275
+// Function ID: 65332
 // Name: nativeEventEmitter
 // Dependencies: []
 
-// Module 8271 (nativeEventEmitter)
+// Module 8275 (nativeEventEmitter)
 let closure_2 = importDefault(dependencyMap[0]);
 let closure_3 = importDefault(dependencyMap[1]);
 const tmp2 = arg1(dependencyMap[2]);

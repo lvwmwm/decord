@@ -1,10 +1,10 @@
-// Module ID: 14883
-// Function ID: 112154
+// Module ID: 14890
+// Function ID: 112178
 // Name: hasGuildActions
 // Dependencies: []
 // Exports: calculateVoiceSummary, getChannelListItemSize, getChannelListSectionFooterSize, getChannelListSectionHasFooterDivider, getChannelListSectionHeaderSize, getFastListRecyclerKey, renderChannelListItem, renderChannelListSectionFooter, renderChannelListSectionHeader
 
-// Module 14883 (hasGuildActions)
+// Module 14890 (hasGuildActions)
 function hasGuildActions(getGuildActionSection) {
   const guildActionSection = getGuildActionSection.getGuildActionSection();
   if (guildActionSection.isEmpty()) {
@@ -54,7 +54,7 @@ function calculateVoiceChannelButtonInfo(getCategoryFromSection, section) {
     const obj = { render: true, lastShownChannelActive: closure_9.countVoiceStatesForChannel(categoryFromSection.getShownChannelIds()[categoryFromSection.getShownChannelIds(categoryFromSection).length - 1]) > 0 };
     return obj;
   }
-  return {};
+  return { 0: null, 9223372036854775807: null };
 }
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;

@@ -1,10 +1,10 @@
-// Module ID: 6193
-// Function ID: 50163
+// Module ID: 6195
+// Function ID: 50206
 // Name: GiftCardRedeem3dIllustration
 // Dependencies: []
 // Exports: GiftCardRedeem3dIllustration
 
-// Module 6193 (GiftCardRedeem3dIllustration)
+// Module 6195 (GiftCardRedeem3dIllustration)
 const jsx = require(dependencyMap[0]).jsx;
 const _module = require(dependencyMap[3]);
 const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/GiftCardRedeem3dIllustration.native.tsx");

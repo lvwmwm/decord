@@ -1,10 +1,10 @@
-// Module ID: 7407
-// Function ID: 59544
+// Module ID: 7411
+// Function ID: 59555
 // Name: getBillingInformationStringNative
 // Dependencies: []
 // Exports: getBillingInformationStringNative
 
-// Module 7407 (getBillingInformationStringNative)
+// Module 7411 (getBillingInformationStringNative)
 let closure_2 = importDefault(dependencyMap[0]);
 const SubscriptionStatusTypes = arg1(dependencyMap[1]).SubscriptionStatusTypes;
 const result = arg1(dependencyMap[6]).fileFinishedImporting("modules/billing/native/subscription/BillingInformation.tsx");

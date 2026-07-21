@@ -1,10 +1,10 @@
-// Module ID: 9985
-// Function ID: 77229
+// Module ID: 9991
+// Function ID: 77247
 // Name: useAppplicationRoleConnectionItems
 // Dependencies: []
 // Exports: default
 
-// Module 9985 (useAppplicationRoleConnectionItems)
+// Module 9991 (useAppplicationRoleConnectionItems)
 class ConnectedUserAccount {
   constructor(arg0) {
     account = global.account;
@@ -387,7 +387,7 @@ class ConnectedApplicationUserRoleAccount {
       tmp6 = arg1;
       tmp7 = dependencyMap;
       num = 31;
-      obj1 = { INTEGRATION_CREATE: "MediaModalYoutubeEmbedError", ConstraintReasonCode: "d\u0131" };
+      obj1 = {};
       obj1.children = applicationRoleConnection.platform_name;
       tmp4 = jsx(arg1(dependencyMap[31]).Text, obj1);
     }
@@ -440,7 +440,7 @@ class ConnectedApplicationUserRoleAccount {
               tmp3 = callback(applicationRoleConnection(closure_2[17]).Avatar, obj);
             }
             const items = [tmp3, ];
-            obj = { INTEGRATION_CREATE: true, ConstraintReasonCode: true, children: applicationRoleConnection.application.name };
+            obj = { children: applicationRoleConnection.application.name };
             items[1] = callback(applicationRoleConnection(closure_2[31]).Text, obj);
             obj.children = items;
             return closure_15(closure_5, obj);
@@ -502,29 +502,29 @@ const MetadataFields = arg1(dependencyMap[8]).MetadataFields;
 const tmp3 = arg1(dependencyMap[6]);
 ({ jsx: closure_14, jsxs: closure_15, Fragment: closure_16 } = arg1(dependencyMap[9]));
 let obj1 = arg1(dependencyMap[10]);
-let obj = { connectedAccountContainer: obj, connectedAccount: { -9223372036854775808: true, filter: true }, connectedAccountNameContainer: {}, connectedAccountName: { -9223372036854775808: true, filter: true } };
+let obj = { connectedAccountContainer: obj, connectedAccount: {}, connectedAccountNameContainer: { flexDirection: "P", paddingHorizontal: 40 }, connectedAccountName: {} };
 obj = { paddingHorizontal: 10, paddingVertical: arg1(dependencyMap[7]).FORM_ROW_VERTICAL_PADDING / 2 };
 obj1 = { color: importDefault(dependencyMap[11]).colors.INTERACTIVE_TEXT_ACTIVE };
 obj.connectedAccountNameText = obj1;
 const tmp4 = arg1(dependencyMap[9]);
 obj.connectedAccountNameCreatedAtText = { color: importDefault(dependencyMap[11]).colors.TEXT_SUBTLE };
-const obj3 = { <string:1140607356>: false, <string:1751293292>: false };
+const obj3 = { <string:1632221346>: "<string:1027735553>", <string:2722977214>: "<string:4143972873>" };
 const items = [{ rotate: "135deg" }];
 obj3.transform = items;
 obj3.tintColor = importDefault(dependencyMap[11]).colors.INTERACTIVE_TEXT_ACTIVE;
 obj.connectedAccountOpenLink = obj3;
-const obj4 = { GuildBadgeGem: 8, addInsets: "center", asComponentId: "underline", qualityTag: null, tintColor: importDefault(dependencyMap[11]).colors.INTERACTIVE_TEXT_DEFAULT };
+const obj4 = { "Bool(false)": 8, "Bool(false)": "center", "Bool(false)": "underline", "Bool(false)": null, tintColor: importDefault(dependencyMap[11]).colors.INTERACTIVE_TEXT_DEFAULT };
 obj.connectedAccountOpenHide = obj4;
-obj.verifiedCheckContainer = { flexDirection: "center", alignItems: "underline", gap: null };
+obj.verifiedCheckContainer = { -599305822: "center", 1817372513: "underline", 1639456730: null };
 obj.verifiedCheck = {};
-obj.connectedAccountChildren = { "Bool(false)": -1606348444, "Bool(false)": 1912602980, "Bool(false)": 24, "Bool(false)": 24 };
+obj.connectedAccountChildren = { "Null": "SERVER_GUIDE_CHANNEL_SELECTED", "Null": "staticUrl", "Null": "Array", "Null": "MERCH_STORE" };
 const obj2 = { color: importDefault(dependencyMap[11]).colors.TEXT_SUBTLE };
 obj.metadataItem = { color: importDefault(dependencyMap[11]).colors.INTERACTIVE_TEXT_ACTIVE };
 obj.appConnectionNameContainer = {};
 const obj5 = { color: importDefault(dependencyMap[11]).colors.INTERACTIVE_TEXT_ACTIVE };
 obj.connectedAccountPoweredByContainer = { backgroundColor: importDefault(dependencyMap[11]).colors.BACKGROUND_BASE_LOWEST, borderRadius: importDefault(dependencyMap[11]).radii.sm, borderColor: importDefault(dependencyMap[11]).colors.BORDER_SUBTLE };
 obj.connectedAccountPoweredByAvatar = { marginRight: 4 };
-obj.connectedAccountPoweredByText = { token: "row", query: 12, type: "space-between" };
+obj.connectedAccountPoweredByText = { <string:3810092247>: "row", <string:2204282508>: 12, <string:3426243031>: "space-between" };
 let closure_17 = obj1.createStyles(obj);
 let closure_18 = importAllResult.memo(ConnectedUserAccount);
 let closure_19 = importAllResult.memo(ConnectedApplicationUserRoleAccount);

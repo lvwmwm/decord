@@ -232,7 +232,7 @@ function getHasSelectedParticipant(channelId) {
 }
 function updateElapsedSelectedParticipantStats(currentVoiceChannelId) {
   if (null == closure_33[currentVoiceChannelId]) {
-    closure_33[currentVoiceChannelId] = { "Bool(true)": "r", "Bool(true)": "onRequireModeratorMFAClick", "Bool(true)": "Array", "Bool(true)": "isSpamMessageRequest" };
+    closure_33[currentVoiceChannelId] = { 0: null, 9223372036854775807: 4, 9223372036854775807: 4, -9223372036854775808: "rgba(0, 0, 0, 0.75)" };
   }
   const nowResult = performance.now();
   if (closure_33[currentVoiceChannelId].lastUpdate > 0) {

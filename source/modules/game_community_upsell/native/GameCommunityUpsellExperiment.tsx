@@ -1,11 +1,11 @@
-// Module ID: 12509
-// Function ID: 95998
+// Module ID: 12516
+// Function ID: 96021
 // Name: GAME_COMMUNITY_UPSELL_MULTI_EXPERIMENT
 // Dependencies: []
 
-// Module 12509 (GAME_COMMUNITY_UPSELL_MULTI_EXPERIMENT)
+// Module 12516 (GAME_COMMUNITY_UPSELL_MULTI_EXPERIMENT)
 const _module = require(dependencyMap[0]);
-const obj = { -1269606814: null, -1845285747: null, defaultConfig: { y: "r", createResolvingGuildInvite: "isArray" }, variations: { [1]: { y: true, createResolvingGuildInvite: true }, [2]: {} } };
+const obj = { 9223372036854775807: "<string:2054291457>", 0: "<string:973078528>", defaultConfig: {}, variations: { [1]: {}, [2]: {} } };
 const apexExperiment = _module.createApexExperiment(obj);
 const _module1 = require(dependencyMap[1]);
 const result = _module1.fileFinishedImporting("modules/game_community_upsell/native/GameCommunityUpsellExperiment.tsx");

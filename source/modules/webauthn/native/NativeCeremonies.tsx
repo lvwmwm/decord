@@ -1,9 +1,9 @@
-// Module ID: 9189
-// Function ID: 71972
+// Module ID: 9193
+// Function ID: 71984
 // Name: _promptForRegisterCredential
 // Dependencies: []
 
-// Module 9189 (_promptForRegisterCredential)
+// Module 9193 (_promptForRegisterCredential)
 function _promptForRegisterCredential() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);

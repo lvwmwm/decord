@@ -5,4 +5,4 @@
 // Module 1797
 const StyleSheet = require(dependencyMap[0]).StyleSheet;
 
-export default StyleSheet.create({ container: { backgroundColor: "innocent", height: "innocent" } });
+export default StyleSheet.create({ container: {} });

@@ -1,9 +1,9 @@
-// Module ID: 8946
-// Function ID: 70536
+// Module ID: 8950
+// Function ID: 70548
 // Name: _callSuper
 // Dependencies: []
 
-// Module 8946 (_callSuper)
+// Module 8950 (_callSuper)
 function _callSuper(arg0, arg1, arg2) {
   let items = arg2;
   const obj = callback2(arg1);
@@ -37,14 +37,14 @@ let tmp2 = (MessageType) => {
   class ApplicationUserRoleConnection$Type {
     constructor() {
       tmp = closure_3(this, ApplicationUserRoleConnection$Type);
-      obj = { emojiId: "r", emojiName: "CONNECTIONS_AUTHORIZE", userId: "CHAT_INPUT_CONTAINER_HORIZONTAL_PADDING", nick: "y" };
-      obj.V = {};
+      obj = { "Null": "r", "Null": "REACTION_BACKGROUND_DEFAULT", "Null": "AMEX_NETWORK_ERROR", "Null": "y" };
+      obj.V = { xseconds: 16, halfaminute: 8 };
       items = [, , , ];
       items[0] = obj;
       items[1] = {};
-      items[2] = { body: "container", guildId: "surrogates", ao: "isArray", "": "isArray" };
+      items[2] = {};
       items[3] = {};
-      items1 = ["PREMIUM_UPSELL_APP_ICONS"];
+      items1 = ["LIVE_GUILD_STAGE"];
       items1[1] = items;
       return closure_10(this, ApplicationUserRoleConnection$Type, items1);
     }
@@ -54,7 +54,7 @@ let tmp2 = (MessageType) => {
   let obj = {
     key: "create",
     value(arr) {
-      let obj = { USER_FRIEND_REQUEST_LIMITED_ACCESS: "png", display: "text", CHANNEL_INTEGRATION: "text-md/normal", isValid: true, metadata: {} };
+      let obj = { -110966814: "png", -1017097241: "text", -1658610399: "text-md/normal", 1860687715: true, metadata: {} };
       const _Object = Object;
       obj = { enumerable: false, value: this };
       _Object.defineProperty(obj, ApplicationUserRoleConnection$Type(closure_1[6]).MESSAGE_TYPE, obj);
@@ -387,7 +387,7 @@ let tmp6 = (MessageType) => {
       };
       items = [];
       items[0] = obj;
-      items1 = ["E2EE_USER_VERIFY_MODAL"];
+      items1 = ["isoSubdivision"];
       items1[1] = items;
       return closure_10(this, AcknowledgedApplicationDisclosures$Type, items1);
     }

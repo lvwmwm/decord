@@ -1,9 +1,9 @@
-// Module ID: 9298
-// Function ID: 72651
+// Module ID: 9302
+// Function ID: 72665
 // Name: ChatManager
 // Dependencies: []
 
-// Module 9298 (ChatManager)
+// Module 9302 (ChatManager)
 let closure_2 = importDefault(dependencyMap[0]);
 let closure_3 = importDefault(dependencyMap[1]);
 ({ Changeset: closure_4, RowType: closure_5 } = arg1(dependencyMap[2]));

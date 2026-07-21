@@ -1,9 +1,9 @@
-// Module ID: 7015
-// Function ID: 56322
+// Module ID: 7019
+// Function ID: 56333
 // Name: getURL
 // Dependencies: []
 
-// Module 7015 (getURL)
+// Module 7019 (getURL)
 function getURL(closure_6) {
   if (null == closure_6) {
     const convert = convert.convert;
@@ -19,7 +19,7 @@ async function _getEmojiColors(id, arg1) {
   id = id.id;
   if (null != id) {
     let obj = callback2(closure_2[7]);
-    obj = { setOnDesktopSourceEnded: null, _hasScreenshot: null, GuildIconWithChannelTypeSizes: null, id };
+    obj = { ddd: null, ind: null, ty: null, id };
     let emojiURL = obj.getEmojiURL(obj);
   } else {
     emojiURL = callback3(tmp);

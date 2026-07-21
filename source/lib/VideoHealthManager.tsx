@@ -1,9 +1,9 @@
-// Module ID: 12623
-// Function ID: 97173
+// Module ID: 12630
+// Function ID: 97196
 // Name: VideoHealthManager
 // Dependencies: []
 
-// Module 12623 (VideoHealthManager)
+// Module 12630 (VideoHealthManager)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 const VideoToggleState = arg1(dependencyMap[2]).VideoToggleState;
@@ -268,8 +268,8 @@ const tmp2 = () => {
   };
   return callback(VideoHealthManager, items);
 }();
-const obj = { "Bool(true)": null, "Bool(true)": null, "Bool(true)": null, "Bool(true)": null, "Bool(true)": null, featureEnabled: arg1(dependencyMap[7]).isMobile };
-tmp2.defaultConfig = obj;
+tmp2.defaultConfig = { featureEnabled: arg1(dependencyMap[7]).isMobile };
+const obj = { featureEnabled: arg1(dependencyMap[7]).isMobile };
 const result = arg1(dependencyMap[8]).fileFinishedImporting("lib/VideoHealthManager.tsx");
 
 export const VideoHealthManager = tmp2;

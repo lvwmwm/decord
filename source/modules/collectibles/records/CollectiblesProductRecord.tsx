@@ -1,9 +1,9 @@
-// Module ID: 6765
-// Function ID: 53251
+// Module ID: 6771
+// Function ID: 53300
 // Name: _callSuper
 // Dependencies: []
 
-// Module 6765 (_callSuper)
+// Module 6771 (_callSuper)
 function _callSuper(arg0, arg1, arg2) {
   let items = arg2;
   const obj = callback2(arg1);
@@ -82,7 +82,7 @@ const tmp5 = (importDefaultResult) => {
       let type;
       let variants;
       ({ premium_type, bundled_products, preview_assets, variants } = arg0);
-      let obj = { CACHE_STORE_LAZY_KEY: true, invalid_push_sync_tokens: 6, brandBackground: 132, inputText: null, BASE_VOICE_PANEL_HEADER_HEIGHT: "\u{1F9D1}\u200D\u{1F680}", _onGetLicense: true, discardDraftOrder: 12.1, GUILD_RULES_CREATE_MODAL: 133, ferris_wheel: null };
+      let obj = { <string:3735083697>: true, <string:1891261412>: 6, <string:458817142>: 132, <string:3668263302>: null, <string:4255978754>: "\u{1F9D1}\u200D\u{1F680}", <string:2460818162>: true, <string:2502324925>: 12.1, <string:2984226749>: 133, <string:4075993261>: null };
       ({ type, category_sku_id, prices, badge_override, hide_badge } = arg0);
       Object.setPrototypeOf(null);
       const merged = Object.assign(arg0, obj);
@@ -332,7 +332,7 @@ const tmp6 = (arg0) => {
         let base_variant_sku_id;
         let variant_label;
         let variant_value;
-        let obj = { -1515809446: "r", rosybrown: "onRequireModeratorMFAClick", royalblue: "Array", saddlebrown: "isSpamMessageRequest" };
+        let obj = { "Bool(true)": null, "Bool(true)": 4, "Bool(true)": 4, "Bool(true)": "rgba(0, 0, 0, 0.75)" };
         ({ base_variant_name, base_variant_sku_id, variant_label, variant_value } = arg0);
         Object.setPrototypeOf(null);
         obj = {};

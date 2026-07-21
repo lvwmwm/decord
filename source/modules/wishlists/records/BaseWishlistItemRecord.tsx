@@ -1,9 +1,9 @@
-// Module ID: 8667
-// Function ID: 68636
+// Module ID: 8671
+// Function ID: 68648
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
-// Module 8667 (_isNativeReflectConstruct)
+// Module 8671 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -52,7 +52,7 @@ const tmp3 = (importDefaultResult) => {
         let sku_name;
         let sku_product_line;
         sku = sku.sku;
-        let obj = { st: null, alignItems: "LOCAL_PAYMENT_START_PAYMENT_MISSING_REQUIRED_OPTION", justifyContent: "Missing required option for startPayment.", display: null, flexDirection: "LOCAL_PAYMENT_START_PAYMENT_DEFERRED_PAYMENT_FAILED", justifyContent: "LocalPayment startPayment deferred payment failed." };
+        let obj = { position: true, alignSelf: true, tintColor: true, width: true, height: true, paddingVertical: true };
         ({ sku_id, sku_product_line, sku_name, is_owned, gifter_user_id } = sku);
         Object.setPrototypeOf(null);
         let tmp2 = BaseWishlistItemRecord;

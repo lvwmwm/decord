@@ -1,12 +1,12 @@
-// Module ID: 8583
-// Function ID: 68143
+// Module ID: 8587
+// Function ID: 68155
 // Name: GetButton
 // Dependencies: []
 // Exports: default
 
-// Module 8583 (GetButton)
+// Module 8587 (GetButton)
 function GetButton(onPress) {
-  const obj = {};
+  const obj = { 9223372036854775807: 32768000, -9223372036854775808: 30653696 };
   const intl = arg1(dependencyMap[8]).intl;
   obj.text = intl.string(arg1(dependencyMap[8]).t.l8JeHg);
   obj.onPress = onPress.onPress;
@@ -22,7 +22,7 @@ const tmp2 = arg1(dependencyMap[2]);
 ({ jsx: closure_8, jsxs: closure_9 } = arg1(dependencyMap[4]));
 let obj = arg1(dependencyMap[5]);
 obj = {};
-obj = { messageForward: null, roleStyle: null, isFirst: null, isEditing: null, backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_BASE_LOWEST };
+obj = { 0: null, 1879049317: null, 1358955618: null, 862056517: null, backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_BASE_LOWEST };
 obj.loadingContainer = obj;
 const tmp3 = arg1(dependencyMap[4]);
 obj.scrollView = { flex: 1, backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_BASE_LOWEST };
@@ -167,7 +167,7 @@ export default function GameProfileScreen(gameId) {
     let obj = {};
     obj = {};
     const items = [-56, 0];
-    obj.translateY = gameId(sourceUserId[15]).interpolate(sharedValue2.get(), [null, null], items);
+    obj.translateY = gameId(sourceUserId[15]).interpolate(sharedValue2.get(), ["Text", "lc"], items);
     const items1 = [obj];
     obj.transform = items1;
     return obj;
@@ -336,7 +336,7 @@ export default function GameProfileScreen(gameId) {
     }
     return fn;
   }, items11);
-  const obj3 = { ref: bottomSheetRef, onExpand: callback1 };
+  const obj3 = { "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, ref: bottomSheetRef, onExpand: callback1 };
   if (!game.isLoading) {
     if (null != data) {
       obj4 = { ref, style: tmp.scrollView, onScroll: callback };

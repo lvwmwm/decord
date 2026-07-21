@@ -1,10 +1,10 @@
-// Module ID: 15476
-// Function ID: 118123
+// Module ID: 15483
+// Function ID: 118147
 // Name: GiftingPromotionCoachmarkActionSheet
 // Dependencies: []
 // Exports: default
 
-// Module 15476 (GiftingPromotionCoachmarkActionSheet)
+// Module 15483 (GiftingPromotionCoachmarkActionSheet)
 let closure_3 = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 let closure_5 = importDefault(dependencyMap[2]);
@@ -19,11 +19,11 @@ obj.container = obj;
 const tmp3 = arg1(dependencyMap[5]);
 obj.textContainer = { gap: importDefault(dependencyMap[7]).space.PX_8, paddingHorizontal: importDefault(dependencyMap[7]).space.PX_16, paddingVertical: importDefault(dependencyMap[7]).space.PX_24 };
 obj.text = { textAlign: "center" };
-const obj2 = { <string:1140607356>: false, <string:1751293292>: false, borderRadius: importDefault(dependencyMap[7]).radii.sm };
-obj.imageShared = obj2;
+const obj1 = { gap: importDefault(dependencyMap[7]).space.PX_8, paddingHorizontal: importDefault(dependencyMap[7]).space.PX_16, paddingVertical: importDefault(dependencyMap[7]).space.PX_24 };
+obj.imageShared = { borderRadius: importDefault(dependencyMap[7]).radii.sm };
 obj.imageWrapperAndroid = { overflow: "hidden" };
 let closure_12 = obj.createStyles(obj);
-const obj1 = { gap: importDefault(dependencyMap[7]).space.PX_8, paddingHorizontal: importDefault(dependencyMap[7]).space.PX_16, paddingVertical: importDefault(dependencyMap[7]).space.PX_24 };
+const obj2 = { borderRadius: importDefault(dependencyMap[7]).radii.sm };
 const result = arg1(dependencyMap[21]).fileFinishedImporting("modules/premium/gifting/native/views/promotions/GiftingPromotionCoachmark.tsx");
 
 export default function GiftingPromotionCoachmarkActionSheet(arg0) {
@@ -59,7 +59,7 @@ export default function GiftingPromotionCoachmarkActionSheet(arg0) {
       obj1 = { style: tmp.textContainer };
       const obj2 = { style: tmp.text, children: coachmarkComponent.header };
       const items3 = [callback(arg1(dependencyMap[18]).Text, obj2), ];
-      const obj3 = { style: tmp.text, children: coachmarkComponent.body };
+      const obj3 = { "Null": "absolute", "Null": 0, "Null": "center", style: tmp.text, children: coachmarkComponent.body };
       items3[1] = callback(arg1(dependencyMap[18]).Text, obj3);
       obj1.children = items3;
       items2[1] = callback2(View, obj1);

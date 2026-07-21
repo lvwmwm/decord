@@ -1,9 +1,9 @@
-// Module ID: 6586
-// Function ID: 50753
+// Module ID: 6588
+// Function ID: 50796
 // Name: metadata
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 6586 (metadata)
+// Module 6588 (metadata)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/TentSpotIllustration-2x.png.js");
 

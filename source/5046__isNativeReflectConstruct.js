@@ -1,49 +1,32 @@
 // Module ID: 5046
-// Function ID: 43033
+// Function ID: 43037
 // Name: _isNativeReflectConstruct
-// Dependencies: [0, 0, 0, 0, 0, 0, 0]
+// Dependencies: []
 
 // Module 5046 (_isNativeReflectConstruct)
-import result from "result";
-import closure_1 from "result";
-import closure_2 from "result";
-import closure_3 from "result";
-import closure_4 from "result";
-import closure_5 from "result";
-
 function _isNativeReflectConstruct() {
-  let result = !valueOf.call(Reflect.construct(Boolean, [], () => {
+  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
   }));
   function _isNativeReflectConstruct() {
-    return result;
+    return closure_0;
   }
   const result = _isNativeReflectConstruct();
 }
-let closure_6 = { code: "function changeEventCalculator_Pnpm_pinchGestureTs1(current,previous){let changePayload;if(previous===undefined){changePayload={scaleChange:current.scale};}else{changePayload={scaleChange:current.scale/previous.scale};}return{...current,...changePayload};}" };
-let closure_7 = () => {
-  function changeEventCalculator(scale, scale2) {
-    if (undefined === scale2) {
-      let obj = { scaleChange: scale.scale };
-    } else {
-      obj = { scaleChange: scale.scale / scale2.scale };
-    }
-    return Object.assign({}, scale, obj);
-  }
-  changeEventCalculator.__closure = {};
-  changeEventCalculator.__workletHash = 9876979738005;
-  changeEventCalculator.__initData = closure_6;
-  return changeEventCalculator;
-}();
+let closure_0 = importDefault(dependencyMap[0]);
+let closure_1 = importDefault(dependencyMap[1]);
+let closure_2 = importDefault(dependencyMap[2]);
+let closure_3 = importDefault(dependencyMap[3]);
+let closure_4 = importDefault(dependencyMap[4]);
 
-export const PinchGesture = (ContinousBaseGesture) => {
-  class PinchGesture {
+export const TapGesture = (BaseGesture) => {
+  class TapGesture {
     constructor() {
       self = this;
-      tmp = PinchGesture(this, PinchGesture);
-      obj = closure_3(PinchGesture);
+      tmp = TapGesture(this, TapGesture);
+      obj = closure_3(TapGesture);
       tmp2 = closure_2;
-      if (closure_8()) {
+      if (closure_5()) {
         tmp4 = globalThis;
         _Reflect = Reflect;
         tmp5 = closure_3;
@@ -52,35 +35,65 @@ export const PinchGesture = (ContinousBaseGesture) => {
         constructResult = obj.apply(self, undefined);
       }
       tmp2Result = tmp2(self, constructResult);
-      tmp2Result.handlerName = "PinchGestureHandler";
+      tmp2Result.config = {};
+      tmp2Result.handlerName = "TapGestureHandler";
+      result = tmp2Result.shouldCancelWhenOutside(true);
       return tmp2Result;
     }
   }
-  let result = PinchGesture;
-  callback2(PinchGesture, ContinousBaseGesture);
-  const items = [
-    {
-      key: "onChange",
-      value: function onChange(arg0) {
-        this.handlers.changeEventCalculator = closure_7;
-        const items = [arg0];
-        return function _superPropGet(PinchGesture, onChange, arg2, arg3) {
-          let prototype = PinchGesture;
-          if (1) {
-            prototype = PinchGesture.prototype;
-          }
-          const tmpResult = closure_4(closure_3(prototype), "onChange", arg2);
-          let fn = tmpResult;
-          if (2) {
-            fn = tmpResult;
-            if ("function" === typeof tmpResult) {
-              fn = (arg0) => tmpResult.apply(arg2, arg0);
-            }
-          }
-          return fn;
-        }(PinchGesture, "onChange", this, 3)(items);
-      }
+  let closure_0 = TapGesture;
+  callback2(TapGesture, BaseGesture);
+  let obj = {
+    key: "minPointers",
+    value: function minPointers(minPointers) {
+      this.config.minPointers = minPointers;
+      return this;
     }
-  ];
-  return callback(PinchGesture, items);
-}(require("result").ContinousBaseGesture);
+  };
+  const items = [obj, , , , , , ];
+  obj = {
+    key: "numberOfTaps",
+    value: function numberOfTaps(numberOfTaps) {
+      this.config.numberOfTaps = numberOfTaps;
+      return this;
+    }
+  };
+  items[1] = obj;
+  obj = {
+    key: "maxDistance",
+    value: function maxDistance(maxDist) {
+      this.config.maxDist = maxDist;
+      return this;
+    }
+  };
+  items[2] = obj;
+  items[3] = {
+    key: "maxDuration",
+    value: function maxDuration(maxDurationMs) {
+      this.config.maxDurationMs = maxDurationMs;
+      return this;
+    }
+  };
+  items[4] = {
+    key: "maxDelay",
+    value: function maxDelay(maxDelayMs) {
+      this.config.maxDelayMs = maxDelayMs;
+      return this;
+    }
+  };
+  items[5] = {
+    key: "maxDeltaX",
+    value: function maxDeltaX(maxDeltaX) {
+      this.config.maxDeltaX = maxDeltaX;
+      return this;
+    }
+  };
+  items[6] = {
+    key: "maxDeltaY",
+    value: function maxDeltaY(maxDeltaY) {
+      this.config.maxDeltaY = maxDeltaY;
+      return this;
+    }
+  };
+  return callback(TapGesture, items);
+}(arg1(dependencyMap[5]).BaseGesture);

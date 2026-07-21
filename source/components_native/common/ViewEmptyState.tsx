@@ -1,17 +1,17 @@
-// Module ID: 9231
-// Function ID: 72215
+// Module ID: 9235
+// Function ID: 72227
 // Name: ViewEmptyState
 // Dependencies: []
 // Exports: default
 
-// Module 9231 (ViewEmptyState)
+// Module 9235 (ViewEmptyState)
 importAll(dependencyMap[0]);
 ({ View: closure_2, Image: closure_3 } = arg1(dependencyMap[1]));
 const Fonts = arg1(dependencyMap[2]).Fonts;
 const tmp3 = arg1(dependencyMap[1]);
 ({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[3]));
 let obj = arg1(dependencyMap[4]);
-obj = { emptyContainer: { renderSettingSearchResultItem: "done", GIFT_CODE_REDEEM: "construct", GameMention: "apply", GameLinkTypes: "isArray" }, emptyImage: { aze: null, azj: null }, fixOpticalIllusion: {} };
+obj = { emptyContainer: { ref: true, horizontal: true, showsHorizontalScrollIndicator: true, style: true }, emptyImage: { bhk: true, bic: false }, fixOpticalIllusion: { "Null": "<string:1149894658>", "Null": "<string:3617390594>" } };
 obj = {};
 const tmp4 = arg1(dependencyMap[3]);
 const merged = Object.assign(importDefault(dependencyMap[5])(Fonts.DISPLAY_SEMIBOLD, importDefault(dependencyMap[6]).colors.MOBILE_TEXT_HEADING_PRIMARY, 18));
@@ -19,10 +19,10 @@ obj["textAlign"] = "center";
 obj["marginTop"] = 32;
 obj["opacity"] = 0.8;
 obj.emptyLabel = obj;
-const obj1 = { 9223372036854775807: null, 9223372036854775807: null, 0: null, 9223372036854775807: null, 0: null, 0: null, fontFamily: Fonts.PRIMARY_MEDIUM };
-obj.emptyText = obj1;
+obj.emptyText = { fontFamily: Fonts.PRIMARY_MEDIUM };
 let closure_6 = obj.createStyles(obj);
 const importDefaultResult = importDefault(dependencyMap[5]);
+const obj1 = { fontFamily: Fonts.PRIMARY_MEDIUM };
 const result = arg1(dependencyMap[8]).fileFinishedImporting("components_native/common/ViewEmptyState.tsx");
 
 export default function ViewEmptyState(arg0) {

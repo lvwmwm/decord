@@ -1,9 +1,9 @@
-// Module ID: 15090
-// Function ID: 113795
+// Module ID: 15097
+// Function ID: 113819
 // Name: isMediaEmbed
 // Dependencies: []
 
-// Module 15090 (isMediaEmbed)
+// Module 15097 (isMediaEmbed)
 function isMediaEmbed(arg0) {
   let tmp = arg0 === MessageEmbedTypes.IMAGE;
   if (!tmp) {
@@ -43,8 +43,9 @@ function ICYMIMessageRowPreview(pointerEvents) {
   const memo = importAllResult.useMemo(() => {
     let tmp = messageOptions(closure_2[11]);
     tmp = new tmp();
+    const obj = { "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, renderEmbeds: setting, inlineEmbedMedia: setting1, inlineAttachmentMedia: setting2 };
     const merged = Object.assign(messageOptions);
-    tmp.setOptions({ renderEmbeds: setting, inlineEmbedMedia: setting1, inlineAttachmentMedia: setting2 });
+    tmp.setOptions(obj);
     return tmp;
   }, items);
   obj = {

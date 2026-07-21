@@ -1,10 +1,10 @@
-// Module ID: 14722
-// Function ID: 111057
+// Module ID: 14729
+// Function ID: 111081
 // Name: TypingSubtitle
 // Dependencies: []
 // Exports: default
 
-// Module 14722 (TypingSubtitle)
+// Module 14729 (TypingSubtitle)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 ({ jsx: closure_3, jsxs: closure_4 } = arg1(dependencyMap[2]));
@@ -31,11 +31,11 @@ export default function TypingSubtitle(arg0) {
   obj = { style: subtitleStyles.subtitleRow };
   let tmp9 = null;
   if (null != channelName) {
-    obj = { flexDirection: "from", alignItems: null, style: subtitleStyles.channelIcon };
+    obj = { flex: "text-xs/medium", flexGrow: "text-default", style: subtitleStyles.channelIcon };
     tmp9 = callback(channelIconComponentWithGuild, obj);
   }
   const items = [tmp9, ];
-  obj1 = { 9223372036854775807: 3309567, 9223372036854775807: 601874432, 9223372036854775807: 4319821, style: subtitleStyles.subtitleText };
+  obj1 = { -9223372036854775808: "<string:2682257408>", 0: null, 0: null, style: subtitleStyles.subtitleText };
   let tmp12 = null;
   if (null != channelName) {
     const obj2 = { variant: "text-xs/medium" };

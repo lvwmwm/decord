@@ -1,10 +1,10 @@
-// Module ID: 14207
-// Function ID: 107453
+// Module ID: 14214
+// Function ID: 107476
 // Name: apexExperiment
 // Dependencies: []
 // Exports: isEligibleForProfileUpdatesNotificationsToggle, useProfileUpdatesNotificationExperiment
 
-// Module 14207 (apexExperiment)
+// Module 14214 (apexExperiment)
 const _module = require(dependencyMap[0]);
 const apexExperiment = _module.createApexExperiment({ defaultConfig: { showSettingsToggle: false }, variations: { [0]: { showSettingsToggle: false }, [1]: { showSettingsToggle: true }, [2]: { showSettingsToggle: true } } });
 const _module1 = require(dependencyMap[1]);

@@ -1,10 +1,10 @@
-// Module ID: 11905
-// Function ID: 92178
+// Module ID: 11912
+// Function ID: 92201
 // Name: UserProfileActivityCardBadges
 // Dependencies: []
 // Exports: default
 
-// Module 11905 (UserProfileActivityCardBadges)
+// Module 11912 (UserProfileActivityCardBadges)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 const ActivityTypes = arg1(dependencyMap[2]).ActivityTypes;

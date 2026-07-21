@@ -1,10 +1,10 @@
-// Module ID: 11366
-// Function ID: 88390
+// Module ID: 11373
+// Function ID: 88414
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 // Exports: actionsFromServer, isChannelValidForNewMemberAction, isChannelValidForResourceChannel, isSettingsValid, settingsFromServer, settingsToServer
 
-// Module 11366 (_createForOfIteratorHelperLoose)
+// Module 11373 (_createForOfIteratorHelperLoose)
 function _createForOfIteratorHelperLoose(@@iterator) {
   let arg1 = Symbol_iterator;
   @@iterator = "undefined" !== typeof Symbol;

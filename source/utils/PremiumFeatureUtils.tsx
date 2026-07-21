@@ -1,10 +1,10 @@
-// Module ID: 7985
-// Function ID: 63493
+// Module ID: 7989
+// Function ID: 63505
 // Name: getUserMaxFileSize
 // Dependencies: []
 // Exports: getUserMaxFileSize
 
-// Module 7985 (getUserMaxFileSize)
+// Module 7989 (getUserMaxFileSize)
 function getUserMaxFileSize(closure_5) {
   if (null == closure_5) {
     return closure_3;

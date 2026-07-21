@@ -1,10 +1,10 @@
-// Module ID: 8741
-// Function ID: 69125
+// Module ID: 8745
+// Function ID: 69137
 // Name: UserNameplateRow
 // Dependencies: []
 // Exports: UserNameplateRow
 
-// Module 8741 (UserNameplateRow)
+// Module 8745 (UserNameplateRow)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 ({ jsx: closure_5, jsxs: closure_6, Fragment: closure_7 } = arg1(dependencyMap[2]));
@@ -50,7 +50,7 @@ export const UserNameplateRow = function UserNameplateRow(onPressOut) {
   if (isPreviewRow === undefined) {
     isPreviewRow = false;
   }
-  let obj = { <string:1764201297>: "flex", <string:3679956194>: "row", <string:944643202>: "center", <string:1602119008>: 8, <string:1372111226>: 28, <string:3798532606>: 4, <string:2195412908>: null, <string:1614302748>: 1, <string:2053078631>: 2, <string:1470948033>: "column", <string:1711358033>: "center", <string:1310491355>: 8, <string:2120704056>: true, <string:3804330591>: "text-sm/semibold", <string:1079072684>: null, <string:478307585>: 1, <string:1398814798>: "column", <string:4053970536>: 6 };
+  let obj = {};
   Object.setPrototypeOf(null);
   const merged = Object.assign(onPressOut, obj);
   let closure_2;
@@ -77,7 +77,7 @@ export const UserNameplateRow = function UserNameplateRow(onPressOut) {
   }, items1);
   let obj1 = arg1(closure_2[6]);
   const token = obj1.useToken(importDefault(closure_2[4]).modules.mobile.TABLE_ROW_BORDER_RADIUS);
-  obj = { radius: token };
+  obj = { "Bool(false)": "<string:2020689293>", "Bool(false)": "<string:16777216>", radius: token };
   let tmp11 = !context;
   if (tmp11) {
     tmp11 = true === start;

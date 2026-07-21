@@ -4,6 +4,6 @@
 
 // Module 3196
 const _module = require(dependencyMap[0]);
-const obj = { justifyContent: "r", flexDirection: "getApexExperimentOverridesInfo", marginRight: "r", columnGap: "publicKey", accessibilityRole: "%Atomics%", options: "endPoint", scales: [24573934974154670000000000000000000000000000000000000000000000000000000000000] };
+const obj = { dismissed: true, lastDismissedVersion: true, lastDismissedAtMs: true, lastDismissedObjectId: true, numTimesDismissed: true, days: true, scales: [15189782894321462000000000000000000000000000000000000000000000000000000000000000000] };
 
 export default _module.registerAsset(obj);

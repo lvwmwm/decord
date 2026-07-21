@@ -1,9 +1,9 @@
-// Module ID: 15210
-// Function ID: 114868
+// Module ID: 15217
+// Function ID: 114892
 // Name: getItemKey
 // Dependencies: []
 
-// Module 15210 (getItemKey)
+// Module 15217 (getItemKey)
 function getItemKey(type) {
   type = type.type;
   if (constants.DM === type) {
@@ -209,7 +209,7 @@ const memoResult = importAllResult.memo(function SearchList(arg0) {
   const obj1 = { ref };
   let obj2;
   if (0 === data.length && null == ListFooterComponent && null == ListHeaderComponent) {
-    obj2 = { "Bool(false)": "r", "Bool(false)": "isArray" };
+    obj2 = {};
   }
   obj1.overrideProps = obj2;
   obj1.keyboardDismissMode = "on-drag";

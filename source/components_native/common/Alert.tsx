@@ -1,9 +1,9 @@
-// Module ID: 4553
-// Function ID: 39860
+// Module ID: 4557
+// Function ID: 39908
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
-// Module 4553 (_isNativeReflectConstruct)
+// Module 4557 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -54,7 +54,7 @@ const obj2 = { height: tmp2.StyleSheet.hairlineWidth, backgroundColor: importDef
 obj.body = { marginTop: 16, color: importDefault(dependencyMap[9]).colors.TEXT_STRONG };
 obj.buttons = { marginTop: 24 };
 obj.cancelButton = { marginTop: 8 };
-obj.secondaryConfirm = { "Null": "center", "Null": "center" };
+obj.secondaryConfirm = { "Bool(true)": "center", "Bool(true)": "center" };
 const obj3 = { marginTop: 16, color: importDefault(dependencyMap[9]).colors.TEXT_STRONG };
 obj.gradient = { borderRadius: importDefault(dependencyMap[9]).radii.sm };
 let closure_15 = obj1.createLegacyClassComponentStyles(obj);
@@ -187,7 +187,7 @@ const tmp4 = (PureComponent) => {
         tmp6Result = null;
         if ("" !== title) {
           let obj = {};
-          obj = { "Null": 0.5, "Null": 15, "Null": 200, "Null": true, "Null": "/assets/images", ref: self.titleRef, style: tmp.titleText };
+          obj = { USE_JFIF: 0.5, USE_PNG_FILE: 15, USE_EXIF: 200, USE_IPTC: true, USE_XMP: "/assets/images/native/auto_moderation", ref: self.titleRef, style: tmp.titleText };
           let renderContentResult = title;
           if ("string" === typeof title) {
             renderContentResult = self.renderContent(title);
@@ -264,7 +264,7 @@ const tmp4 = (PureComponent) => {
         let tmp12;
         if (null != secondaryConfirmText) {
           obj = { accessibilityRole: "button", style: tmp.secondaryConfirm, onPress: self.handleSecondaryConfirm };
-          const obj1 = { INTEGRATION_CREATE: false, ConstraintReasonCode: false, children: secondaryConfirmText };
+          const obj1 = { children: secondaryConfirmText };
           obj.children = callback5(Alert(closure_3[14]).Text, obj1);
           tmp12 = callback5(Alert(closure_3[17]).PressableOpacity, obj);
         }

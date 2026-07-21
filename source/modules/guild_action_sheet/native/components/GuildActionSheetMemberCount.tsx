@@ -1,17 +1,17 @@
-// Module ID: 10106
-// Function ID: 78248
+// Module ID: 10112
+// Function ID: 78266
 // Name: num2
 // Dependencies: []
 
-// Module 10106 (num2)
+// Module 10112 (num2)
 const View = arg1(dependencyMap[1]).View;
 const importAllResult = importAll(dependencyMap[0]);
 ({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[2]));
 let obj1 = arg1(dependencyMap[3]);
-let obj = { wrapper: { -9223372036854775808: true, filter: true } };
-obj = { backgroundColor: importDefault(dependencyMap[4]).colors.TEXT_STATUS_ONLINE, accessibilityRole: true, -45001119: true, 1379623171: true, borderRadius: importDefault(dependencyMap[4]).radii.sm };
+let obj = { wrapper: {} };
+obj = { borderRadius: importDefault(dependencyMap[4]).radii.sm, backgroundColor: importDefault(dependencyMap[4]).colors.TEXT_STATUS_ONLINE };
 obj.online = obj;
-obj1 = { backgroundColor: importDefault(dependencyMap[4]).colors.TEXT_STATUS_OFFLINE, accessibilityRole: true, -45001119: true, 1379623171: true, borderRadius: importDefault(dependencyMap[4]).radii.sm };
+obj1 = { borderRadius: importDefault(dependencyMap[4]).radii.sm, backgroundColor: importDefault(dependencyMap[4]).colors.TEXT_STATUS_OFFLINE };
 obj.total = obj1;
 const obj2 = { textAlignVertical: "center" };
 const tmp2 = arg1(dependencyMap[2]);

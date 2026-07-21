@@ -1,13 +1,13 @@
-// Module ID: 5466
-// Function ID: 46662
+// Module ID: 5468
+// Function ID: 46704
 // Name: useGetOrFetchApplications
-// Dependencies: [5, 31, 4808, 566, 4934, 2, 31, 27]
+// Dependencies: [5, 31, 4810, 566, 4936, 2, 31, 27]
 // Exports: useGetOrFetchApplication
 
-// Module 5466 (useGetOrFetchApplications)
+// Module 5468 (useGetOrFetchApplications)
 import asyncGeneratorStep from "asyncGeneratorStep";
 import module_31 from "module_31";
-import get ActivityIndicator from "get ActivityIndicator";
+import keys from "keys";
 
 function useGetOrFetchApplications(arg0) {
   let flag = arg1;
@@ -43,7 +43,7 @@ function useGetOrFetchApplications(arg0) {
     return application;
   }));
 }
-const result = get_ActivityIndicator.fileFinishedImporting("modules/applications/useGetOrFetchApplications.tsx");
+const result = keys.fileFinishedImporting("modules/applications/useGetOrFetchApplications.tsx");
 
 export default useGetOrFetchApplications;
 export const useGetOrFetchApplication = function useGetOrFetchApplication(applicationId, fetchesApplication) {

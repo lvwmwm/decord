@@ -1,10 +1,10 @@
-// Module ID: 8244
-// Function ID: 65062
+// Module ID: 8248
+// Function ID: 65074
 // Name: ProfileFrameLayer
 // Dependencies: []
 // Exports: default
 
-// Module 8244 (ProfileFrameLayer)
+// Module 8248 (ProfileFrameLayer)
 let StyleSheet;
 function ProfileFrameLayer(skuId) {
   let containerHeight;

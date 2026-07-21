@@ -1,10 +1,10 @@
-// Module ID: 8903
-// Function ID: 70264
+// Module ID: 8907
+// Function ID: 70276
 // Name: SecureFramesUserVerificationBottomSheet
 // Dependencies: []
 // Exports: default
 
-// Module 8903 (SecureFramesUserVerificationBottomSheet)
+// Module 8907 (SecureFramesUserVerificationBottomSheet)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 ({ ActivityIndicator: closure_5, View: closure_6 } = arg1(dependencyMap[2]));
@@ -17,11 +17,11 @@ const tmp3 = arg1(dependencyMap[5]);
 ({ jsx: closure_13, jsxs: closure_14 } = arg1(dependencyMap[7]));
 let obj = arg1(dependencyMap[8]);
 obj = {};
-obj = { <string:1348583942>: "337f717407aa04f32bdedf504de7310b", <string:3080555347>: "emoji", <string:1722659784>: "png", <string:3063174826>: true, <string:1550056375>: "/assets/modules/premium/native/images/perks", <string:4217559139>: 300, <string:3972818124>: 175, backgroundColor: importDefault(dependencyMap[9]).colors.BACKGROUND_MOD_STRONG };
+obj = { integrationType: "337f717407aa04f32bdedf504de7310b", useIsUserSecureFramesVerified: "emoji", GET_SOUNDBOARD_SOUNDS: "png", handleSystemJoinMessageReplies: true, useIsActivitiesEnabledForCurrentPlatform: "/assets/modules/premium/native/images/perks", HAPPENING_NOW_CARD_WIDTH_NORMAL_WITH_MARGIN: 300, <string:4266785696>: 175, backgroundColor: importDefault(dependencyMap[9]).colors.BACKGROUND_MOD_STRONG };
 obj.iconContainer = obj;
-obj.icon = {};
+obj.icon = { <string:1632221346>: null, <string:2722977214>: null };
 obj.content = {};
-obj.subtitle = { 9223372036854775807: false, -9223372036854775808: 800, 0: 16 };
+obj.subtitle = { <string:4221627596>: true, <string:1359674961>: true, <string:4183987831>: true };
 obj.buttons = { marginTop: 40 };
 obj.helpMessage = { marginTop: 16 };
 let closure_15 = obj.createStyles(obj);

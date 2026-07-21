@@ -1,10 +1,10 @@
-// Module ID: 12217
-// Function ID: 93794
+// Module ID: 12224
+// Function ID: 93817
 // Name: ExternalLinkItem
 // Dependencies: []
 // Exports: default
 
-// Module 12217 (ExternalLinkItem)
+// Module 12224 (ExternalLinkItem)
 function ExternalLinkItem(data) {
   data = data.data;
   const require = data.url;
@@ -26,7 +26,7 @@ const View = require(dependencyMap[0]).View;
 const _module = require(dependencyMap[1]);
 ({ jsx: closure_4, jsxs: closure_5 } = _module);
 const _module1 = require(dependencyMap[2]);
-let closure_6 = _module1.createStyles({ linksContainer: { 1532152822: false, 1359356709: false, -413016902: false }, headerText: { marginBottom: 8 } });
+let closure_6 = _module1.createStyles({ linksContainer: { <string:2857788036>: false, <string:1659423825>: false, <string:72441083>: false }, headerText: { marginBottom: 8 } });
 const _module2 = require(dependencyMap[9]);
 const result = _module2.fileFinishedImporting("modules/in_app_reports/native/components/InAppReportsExternalLinkElement.tsx");
 
@@ -39,7 +39,7 @@ export default function ExternalLinksElement(elements) {
         let obj = { style: tmp.linksContainer };
         let tmp5 = !elements.some((data) => data.data.is_header_hidden);
         if (tmp5) {
-          obj = { style: tmp.headerText };
+          obj = { 9223372036854775807: 180, 9223372036854775807: 180, -9223372036854775808: null, 1602121198: "7d7d766e7ebb30cec66584e69b89634d", style: tmp.headerText };
           const intl = require(dependencyMap[4]).intl;
           obj.children = intl.string(require(dependencyMap[4]).t.hvVgAZ).toUpperCase();
           tmp5 = callback(require(dependencyMap[3]).Text, obj);

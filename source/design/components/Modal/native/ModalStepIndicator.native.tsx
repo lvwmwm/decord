@@ -1,10 +1,10 @@
-// Module ID: 12957
-// Function ID: 98605
+// Module ID: 12964
+// Function ID: 98628
 // Name: StepPill
 // Dependencies: []
 // Exports: ModalStepIndicator
 
-// Module 12957 (StepPill)
+// Module 12964 (StepPill)
 function StepPill(isActive) {
   isActive = isActive.isActive;
   const arg1 = isActive;
@@ -46,29 +46,29 @@ function StepPill(isActive) {
     const result = sharedValue.set(isActive(sharedValue[7]).withSpring(num, closure_6));
   }, items);
   const obj3 = arg1(dependencyMap[6]);
-  class T {
+  class I {
     constructor() {
       obj = {};
       obj2 = isActive(closure_2[5]);
-      obj.width = obj2.interpolate(closure_2.get(), [null, null], []);
+      obj.width = obj2.interpolate(closure_2.get(), ["Text", "lc"], []);
       obj3 = isActive(closure_2[5]);
       items = [, ];
       items[0] = BACKGROUND_MOD_STRONG;
       items[1] = closure_3;
-      obj.backgroundColor = obj3.interpolateColor(closure_2.get(), [null, null], items);
+      obj.backgroundColor = obj3.interpolateColor(closure_2.get(), ["Text", "lc"], items);
       obj4 = isActive(closure_2[5]);
       items1 = [, ];
       items1[0] = closure_1;
       items1[1] = 1;
-      obj.opacity = obj4.interpolate(closure_2.get(), [null, null], items1);
+      obj.opacity = obj4.interpolate(closure_2.get(), ["Text", "lc"], items1);
       return obj;
     }
   }
   obj = { interpolate: arg1(dependencyMap[5]).interpolate, sharedValue, WIDTH_INACTIVE: 12, WIDTH_ACTIVE: 36, interpolateColor: arg1(dependencyMap[5]).interpolateColor, inactiveColor: token1, activeColor: token, inactiveOpacity: num3 };
-  T.__closure = obj;
-  T.__workletHash = 12485955218699;
-  T.__initData = closure_8;
-  const animatedStyle = arg1(dependencyMap[5]).useAnimatedStyle(T);
+  I.__closure = obj;
+  I.__workletHash = 12485955218699;
+  I.__initData = closure_8;
+  const animatedStyle = arg1(dependencyMap[5]).useAnimatedStyle(I);
   const style = [animatedStyle, tmp5.stepPill];
   return jsx(importDefault(dependencyMap[5]).View, { style });
 }
@@ -76,29 +76,42 @@ let closure_3 = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 const jsx = arg1(dependencyMap[2]).jsx;
 let closure_6 = { overshootClamping: true };
-let closure_7 = arg1(dependencyMap[3]).createStyles({ container: { 0: null, 9223372036854775807: null }, stepPill: { "Bool(false)": "isArray", "Bool(false)": "current" } });
+let closure_7 = arg1(dependencyMap[3]).createStyles({ container: {}, stepPill: { 1689281484: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000012371042442948493, -1438909492: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001895504874615526 } });
 let closure_8 = { code: "function ModalStepIndicatorNativeTsx1(){const{interpolate,sharedValue,WIDTH_INACTIVE,WIDTH_ACTIVE,interpolateColor,inactiveColor,activeColor,inactiveOpacity}=this.__closure;return{width:interpolate(sharedValue.get(),[0,1],[WIDTH_INACTIVE,WIDTH_ACTIVE]),backgroundColor:interpolateColor(sharedValue.get(),[0,1],[inactiveColor,activeColor]),opacity:interpolate(sharedValue.get(),[0,1],[inactiveOpacity,1])};}" };
 const obj = arg1(dependencyMap[3]);
-const result = arg1(dependencyMap[8]).fileFinishedImporting("design/components/Modal/native/ModalStepIndicator.native.tsx");
+const result = arg1(dependencyMap[10]).fileFinishedImporting("design/components/Modal/native/ModalStepIndicator.native.tsx");
 
-export const ModalStepIndicator = function ModalStepIndicator(totalSteps) {
+export const ModalStepIndicator = function ModalStepIndicator(arg0) {
   let activeColor;
   let currentStep;
   let inactiveColor;
   let inactiveOpacity;
-  totalSteps = totalSteps.totalSteps;
-  ({ currentStep, activeColor, inactiveColor, inactiveOpacity } = totalSteps);
-  const items = [];
-  let num = 0;
-  if (0 < totalSteps) {
-    do {
-      let tmp2 = closure_5;
-      let tmp3 = closure_9;
-      let obj = { isActive: num === currentStep, activeColor, inactiveColor, inactiveOpacity };
-      let arr = items.push(closure_5(closure_9, obj, num));
-      num = num + 1;
-    } while (num < totalSteps);
+  let totalSteps;
+  ({ currentStep, totalSteps } = arg0);
+  ({ activeColor, inactiveColor, inactiveOpacity } = arg0);
+  const tmp = callback();
+  if (totalSteps <= 0) {
+    let obj = { style: tmp.container };
+    return <View {...obj} />;
+  } else {
+    const items = [];
+    for (let num = 0; num < totalSteps; num = num + 1) {
+      let tmp2 = jsx;
+      let tmp3 = StepPill;
+      obj = { isActive: num === currentStep, activeColor, inactiveColor, inactiveOpacity };
+      let arr = items.push(<StepPill key={num} {...obj} />);
+    }
+    if (currentStep < 0) {
+      obj = { style: tmp.container, children: items };
+      return <View {...obj} />;
+    } else {
+      const intl = arg1(dependencyMap[8]).intl;
+      const obj1 = { accessibilityLabel: intl.string(importDefault(dependencyMap[9]).KUwsC0) };
+      const obj2 = { min: 1, max: totalSteps, now: currentStep + 1 };
+      obj1.accessibilityValue = obj2;
+      obj1.style = tmp.container;
+      obj1.children = items;
+      return <View {...obj1} />;
+    }
   }
-  obj = { style: callback().container, children: items };
-  return <View {...obj} />;
 };

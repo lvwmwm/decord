@@ -1,10 +1,10 @@
-// Module ID: 5483
-// Function ID: 46752
+// Module ID: 5485
+// Function ID: 46794
 // Name: RoleDot
 // Dependencies: []
 // Exports: default
 
-// Module 5483 (RoleDot)
+// Module 5485 (RoleDot)
 function RoleDot(color) {
   color = color.color;
   let obj = {};
@@ -165,8 +165,8 @@ let closure_6 = importDefault(dependencyMap[3]);
 const tmp2 = arg1(dependencyMap[4]);
 ({ jsx: closure_9, Fragment: closure_10, jsxs: closure_11 } = arg1(dependencyMap[5]));
 let obj = arg1(dependencyMap[6]);
-obj = { roleContainer: { 0: null, 9223372036854775807: null, 9223372036854775807: null } };
-obj = { compressionMethod: -193749734, GuildBadgeCat: -184549377, distance: 16777215, parent: 16777216, backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_MOD_MUTED, borderRadius: importDefault(dependencyMap[7]).radii.sm };
+obj = { roleContainer: {} };
+obj = { 9223372036854775807: -193784249, 9223372036854775807: -184549377, 0: 16777215, 0: 16777216, backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_MOD_MUTED, borderRadius: importDefault(dependencyMap[7]).radii.sm };
 obj.role = obj;
 const tmp3 = arg1(dependencyMap[5]);
 obj.roleDot = { borderRadius: importDefault(dependencyMap[7]).radii.round };

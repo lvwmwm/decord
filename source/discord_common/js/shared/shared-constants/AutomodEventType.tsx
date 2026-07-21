@@ -1,9 +1,9 @@
-// Module ID: 10993
-// Function ID: 85538
+// Module ID: 10998
+// Function ID: 85559
 // Name: AutomodEventType
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 10993 (AutomodEventType)
+// Module 10998 (AutomodEventType)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_common/js/shared/shared-constants/AutomodEventType.tsx");
 

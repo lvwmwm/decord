@@ -1,9 +1,9 @@
-// Module ID: 12872
-// Function ID: 98326
+// Module ID: 12879
+// Function ID: 98349
 // Name: AnimatedEllipsisDot
 // Dependencies: []
 
-// Module 12872 (AnimatedEllipsisDot)
+// Module 12879 (AnimatedEllipsisDot)
 function AnimatedEllipsisDot(disableScale) {
   disableScale = disableScale.disableScale;
   const arg1 = disableScale;
@@ -87,7 +87,7 @@ const View = arg1(dependencyMap[1]).View;
 let closure_5 = importDefault(dependencyMap[2]);
 const jsx = arg1(dependencyMap[3]).jsx;
 let obj = { typingIndicator: {} };
-obj = { -1101831583: "<string:1241514750>", 1638700460: "<string:4160750334>", 1381785934: "<string:67109642>", -321999727: "<string:1224737063>", -1353605023: "<string:1241514750>", backgroundColor: importDefault(dependencyMap[5]).colors.TEXT_DEFAULT, borderRadius: importDefault(dependencyMap[5]).radii.round };
+obj = { "Null": "isArray", "Null": "names", "Null": "track", "Null": "r", "Null": "isArray", backgroundColor: importDefault(dependencyMap[5]).colors.TEXT_DEFAULT, borderRadius: importDefault(dependencyMap[5]).radii.round };
 obj.typingIndicatorDot = obj;
 let closure_7 = arg1(dependencyMap[4]).createStyles(obj);
 let closure_8 = { code: "function animateValue_EllipsisTsx1(value,fromValue,toValue){const{withRepeat,withSequence,withDelay,sequenceStartDelay,withTiming,delay,animationTimeMs,sequenceEndDelay}=this.__closure;value.set(withRepeat(withSequence(withDelay(sequenceStartDelay,withTiming(fromValue,{duration:0})),withDelay(delay,withSequence(withTiming(toValue,{duration:animationTimeMs}),withTiming(fromValue,{duration:animationTimeMs}))),withDelay(sequenceEndDelay,withTiming(fromValue,{duration:0}))),-1));}" };
@@ -101,7 +101,7 @@ const memoResult = importAllResult.memo(function Ellipsis(style) {
   closure_2 = obj.useStateFromStores(items, () => useReducedMotion.useReducedMotion) ? EllipsisDot : AnimatedEllipsisDot;
   obj = { style: items1, collapsable: false, children: items2.map((arg0, arg1, arg2) => callback(closure_2, { delay: arg0 * 233.33333333333334, sequenceStartDelay: 116.66666666666667, sequenceEndDelay: 116.66666666666667 + 233.33333333333334 * (arg2.length - 1 - arg0), dotStyle: closure_0, disableScale: closure_1 }, arg0)) };
   const items1 = [callback().typingIndicator, style.style];
-  const items2 = [];
+  const items2 = [true, true, true];
   return <View {...obj} />;
 });
 const result = arg1(dependencyMap[9]).fileFinishedImporting("design/void/Ellipsis/native/Ellipsis.tsx");

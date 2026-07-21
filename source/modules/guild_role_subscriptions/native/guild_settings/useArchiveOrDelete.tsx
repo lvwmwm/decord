@@ -1,17 +1,15 @@
-// Module ID: 16292
-// Function ID: 125747
+// Module ID: 16299
+// Function ID: 125778
 // Name: useArchiveOrDelete
-// Dependencies: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+// Dependencies: []
 // Exports: default
 
-// Module 16292 (useArchiveOrDelete)
-import closure_4 from "result";
-import closure_5 from "result";
-import result from "result";
-import result from "result";
-
-({ useEffect: closure_6, useRef: closure_7 } = result);
-result = result.fileFinishedImporting("modules/guild_role_subscriptions/native/guild_settings/useArchiveOrDelete.tsx");
+// Module 16299 (useArchiveOrDelete)
+let closure_4 = importDefault(dependencyMap[0]);
+let closure_5 = importDefault(dependencyMap[1]);
+({ useEffect: closure_6, useRef: closure_7 } = arg1(dependencyMap[2]));
+const tmp2 = arg1(dependencyMap[2]);
+const result = arg1(dependencyMap[10]).fileFinishedImporting("modules/guild_role_subscriptions/native/guild_settings/useArchiveOrDelete.tsx");
 
 export default function useArchiveOrDelete(guildId, groupListingId, editStateId) {
   let error;

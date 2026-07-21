@@ -1,10 +1,10 @@
-// Module ID: 9876
-// Function ID: 76501
+// Module ID: 9881
+// Function ID: 76517
 // Name: scaleLineHeight
 // Dependencies: []
 // Exports: useScaledTextLineHeight
 
-// Module 9876 (scaleLineHeight)
+// Module 9881 (scaleLineHeight)
 function scaleLineHeight(lineHeight, arg1) {
   let value = map.get(lineHeight);
   if (null == value) {

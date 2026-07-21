@@ -1,9 +1,9 @@
-// Module ID: 10008
-// Function ID: 77376
+// Module ID: 10014
+// Function ID: 77394
 // Name: DCDChatList
 // Dependencies: []
 
-// Module 10008 (DCDChatList)
+// Module 10014 (DCDChatList)
 function DCDChatList() {
   let obj = arg1(dependencyMap[4]);
   const memo = importAllResult.useMemo(() => {

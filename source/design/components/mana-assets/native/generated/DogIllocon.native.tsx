@@ -1,10 +1,10 @@
-// Module ID: 6019
-// Function ID: 49902
+// Module ID: 6021
+// Function ID: 49945
 // Name: DogIllocon
 // Dependencies: []
 // Exports: DogIllocon
 
-// Module 6019 (DogIllocon)
+// Module 6021 (DogIllocon)
 const jsx = require(dependencyMap[0]).jsx;
 const _module = require(dependencyMap[3]);
 const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/DogIllocon.native.tsx");

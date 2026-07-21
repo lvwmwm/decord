@@ -1,9 +1,9 @@
-// Module ID: 10795
-// Function ID: 83856
+// Module ID: 10801
+// Function ID: 83879
 // Name: getMatchData
 // Dependencies: []
 
-// Module 10795 (getMatchData)
+// Module 10801 (getMatchData)
 function getMatchData(pathname) {
   let channelId;
   let guildId;
@@ -44,7 +44,7 @@ function getMatchData(pathname) {
       const obj2 = { guildId: matchPathResult1.params.guildId, channelId: null };
       let obj3 = obj2;
     } else {
-      obj3 = { <string:3104355260>: false, <string:3130036820>: false };
+      obj3 = { "Bool(false)": "o", "Bool(false)": "o" };
     }
     return obj3;
   }
@@ -56,10 +56,10 @@ const _module1 = require(dependencyMap[3]);
 const withEqualityFn = _module1.createWithEqualityFn((arg0) => {
   const require = arg0;
   const obj = {
-    0: false,
-    0: false,
-    0: false,
-    0: false,
+    bodyStyles: "r",
+    borderGradient: "isArray",
+    showGradient: "x",
+    extraContent: "HTTP",
     updatePath(arg0) {
       ({ guildId: closure_1, channelId: closure_2 } = callback(arg0));
       const tmp = callback(arg0);

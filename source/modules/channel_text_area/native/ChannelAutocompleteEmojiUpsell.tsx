@@ -1,19 +1,19 @@
-// Module ID: 11414
-// Function ID: 88839
+// Module ID: 11421
+// Function ID: 88863
 // Name: ChannelAutocompleteEmojiUpsell
 // Dependencies: []
 // Exports: default
 
-// Module 11414 (ChannelAutocompleteEmojiUpsell)
+// Module 11421 (ChannelAutocompleteEmojiUpsell)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 const EMOJI_URL_BASE_SIZE = arg1(dependencyMap[2]).EMOJI_URL_BASE_SIZE;
 ({ jsx: closure_5, jsxs: closure_6 } = arg1(dependencyMap[3]));
 let obj = arg1(dependencyMap[4]);
-obj = { upsell: { "Bool(true)": null, "Bool(true)": null, "Bool(true)": null }, title: { v: "Group 11", p: 2 }, emojis: { height: 28 } };
-obj = { backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_LOWEST, borderColor: importDefault(dependencyMap[5]).colors.BACKGROUND_SURFACE_HIGH };
+obj = { upsell: { padding: "Next", paddingBottom: null, flexDirection: null }, title: { "Bool(false)": "Group 11", "Bool(false)": 2 }, emojis: { height: 28 } };
+obj = { "Null": false, "Null": false, nm: false, body: false, status: false, padding: false, enabled: false, text: false, formatToPlainString: false, HTTP: false, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_LOWEST, borderColor: importDefault(dependencyMap[5]).colors.BACKGROUND_SURFACE_HIGH };
 obj.emojiWrapper = obj;
-obj.emoji = { aze: "<string:16777479>", azj: "<string:36295491>" };
+obj.emoji = {};
 let closure_7 = obj.createStyles(obj);
 const tmp3 = arg1(dependencyMap[3]);
 const result = arg1(dependencyMap[10]).fileFinishedImporting("modules/channel_text_area/native/ChannelAutocompleteEmojiUpsell.tsx");
@@ -46,7 +46,7 @@ export default function ChannelAutocompleteEmojiUpsell(results) {
     return closure_5(closure_3, obj, id.id);
   });
   const result = 24 * substr.length;
-  obj = { paddingBottom: 29540, initialRouteName: 65536, initialRouteStack: 196608, style: tmp.title };
+  obj = { 2003551622: "container", 1366017591: "isArray", 996410372: "isArrayBuffer", style: tmp.title };
   const intl = arg1(dependencyMap[9]).intl;
   obj = { count: results.length };
   obj.children = intl.format(arg1(dependencyMap[9]).t.uEky42, obj);

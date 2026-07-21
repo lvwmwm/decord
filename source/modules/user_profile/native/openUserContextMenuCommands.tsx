@@ -1,10 +1,10 @@
-// Module ID: 11877
-// Function ID: 91963
+// Module ID: 11884
+// Function ID: 91986
 // Name: openUserContextMenuCommands
 // Dependencies: []
 // Exports: default
 
-// Module 11877 (openUserContextMenuCommands)
+// Module 11884 (openUserContextMenuCommands)
 const _module = require(dependencyMap[4]);
 const result = _module.fileFinishedImporting("modules/user_profile/native/openUserContextMenuCommands.tsx");
 

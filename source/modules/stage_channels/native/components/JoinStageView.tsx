@@ -1,10 +1,10 @@
-// Module ID: 10665
-// Function ID: 83149
+// Module ID: 10671
+// Function ID: 83172
 // Name: JoinStageView
 // Dependencies: []
 // Exports: default
 
-// Module 10665 (JoinStageView)
+// Module 10671 (JoinStageView)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[8]).fileFinishedImporting("modules/stage_channels/native/components/JoinStageView.tsx");

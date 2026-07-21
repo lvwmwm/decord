@@ -1,10 +1,10 @@
-// Module ID: 6405
-// Function ID: 50481
+// Module ID: 6407
+// Function ID: 50524
 // Name: PotionBookGemSpotIllustration
 // Dependencies: []
 // Exports: PotionBookGemSpotIllustration
 
-// Module 6405 (PotionBookGemSpotIllustration)
+// Module 6407 (PotionBookGemSpotIllustration)
 const jsx = require(dependencyMap[0]).jsx;
 const _module = require(dependencyMap[3]);
 const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/PotionBookGemSpotIllustration.native.tsx");

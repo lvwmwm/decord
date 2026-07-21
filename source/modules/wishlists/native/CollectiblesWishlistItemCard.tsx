@@ -1,15 +1,16 @@
-// Module ID: 9739
-// Function ID: 75791
+// Module ID: 9744
+// Function ID: 75808
 // Name: CollectiblesWishlistItemCard
-// Dependencies: []
+// Dependencies: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 // Exports: default
 
-// Module 9739 (CollectiblesWishlistItemCard)
-let closure_3 = importAll(dependencyMap[0]);
-let closure_4 = arg1(dependencyMap[1]).transformSKUToCollectiblesItem;
-let closure_5 = importDefault(dependencyMap[2]);
-const jsx = arg1(dependencyMap[3]).jsx;
-const result = arg1(dependencyMap[10]).fileFinishedImporting("modules/wishlists/native/CollectiblesWishlistItemCard.tsx");
+// Module 9744 (CollectiblesWishlistItemCard)
+import __exportStarResult1 from "__exportStarResult1";
+import { transformSKUToCollectiblesItem as closure_4 } from "__exportStarResult1";
+import closure_5 from "__exportStarResult1";
+import { jsx } from "__exportStarResult1";
+
+const result = require("__exportStarResult1").fileFinishedImporting("modules/wishlists/native/CollectiblesWishlistItemCard.tsx");
 
 export default function CollectiblesWishlistItemCard(sku) {
   sku = sku.sku;

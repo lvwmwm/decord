@@ -1,10 +1,10 @@
-// Module ID: 6705
-// Function ID: 52107
+// Module ID: 6711
+// Function ID: 52156
 // Name: isReadableChannel
 // Dependencies: []
 // Exports: isReadableChannelId
 
-// Module 6705 (isReadableChannel)
+// Module 6711 (isReadableChannel)
 let BasicPermissions;
 function isReadableChannel(basicChannel) {
   let tmp = null != basicChannel;

@@ -1,10 +1,10 @@
-// Module ID: 8754
-// Function ID: 69227
+// Module ID: 8758
+// Function ID: 69239
 // Name: useProductDisableState
 // Dependencies: []
 // Exports: useProductDisableState
 
-// Module 8754 (useProductDisableState)
+// Module 8758 (useProductDisableState)
 let closure_2 = importDefault(dependencyMap[0]);
 const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/collectibles/hooks/useProductDisableState.tsx");
 
@@ -29,7 +29,7 @@ export const useProductDisableState = function useProductDisableState(skuId) {
     }
     obj.disabledReason = stringResult;
   } else {
-    obj = { handleResetDismissibilityClick: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000800310628823068, GameDetectionDebugLevel: 0.0000000000000000000000000000000000000000000000015576649385897736 };
+    obj = { keys: null, paths: null };
   }
   return obj;
 };

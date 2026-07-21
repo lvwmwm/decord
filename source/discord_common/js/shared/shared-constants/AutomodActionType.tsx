@@ -1,9 +1,9 @@
-// Module ID: 10994
-// Function ID: 85539
+// Module ID: 10999
+// Function ID: 85560
 // Name: AutomodActionType
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 10994 (AutomodActionType)
+// Module 10999 (AutomodActionType)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_common/js/shared/shared-constants/AutomodActionType.tsx");
 

@@ -1,44 +1,50 @@
 // Module ID: 15786
-// Function ID: 120813
+// Function ID: 120821
 // Dependencies: []
 
 // Module 15786
-globalThis.IntlMessageFormat.__addLocaleData({
-  locale: "es",
+arg5.default = {
+  locale: "en",
   pluralRuleFunction(arg0, arg1) {
-    let str = "other";
-    let str2 = "other";
-    if (!arg1) {
-      if (1 == arg0) {
-        str = "one";
-      }
-      str2 = str;
+    const parts = String(arg0).split(".");
+    let substr1 = Number(parts[0]) == arg0;
+    let substr = substr1;
+    if (substr1) {
+      const first = parts[0];
+      substr = first.slice(-1);
     }
-    return str2;
+    if (substr1) {
+      const first1 = parts[0];
+      substr1 = first1.slice(-2);
+    }
+    if (arg1) {
+      if (1 != substr) {
+        if (2 != substr) {
+          let str7 = "other";
+          if (3 == substr) {
+            str7 = "other";
+            if (13 != substr1) {
+              str7 = "few";
+            }
+          }
+          let str5 = str7;
+        } else {
+          str5 = "two";
+        }
+        let str4 = str5;
+      } else {
+        str4 = "one";
+      }
+      let str3 = str4;
+    } else {
+      str3 = "other";
+      if (1 == arg0) {
+        str3 = "other";
+        if (tmp2) {
+          str3 = "one";
+        }
+      }
+    }
+    return str3;
   }
-});
-globalThis.IntlMessageFormat.__addLocaleData({ "Bool(true)": "75%", "Bool(true)": "5%" });
-globalThis.IntlMessageFormat.__addLocaleData({ "Bool(true)": null, "Bool(true)": null });
-globalThis.IntlMessageFormat.__addLocaleData({ "Bool(true)": null, "Bool(true)": null });
-globalThis.IntlMessageFormat.__addLocaleData({ "Bool(true)": null, "Bool(true)": null });
-globalThis.IntlMessageFormat.__addLocaleData({ "Bool(true)": null, "Bool(true)": null });
-globalThis.IntlMessageFormat.__addLocaleData({ "Bool(true)": null, "Bool(true)": null });
-globalThis.IntlMessageFormat.__addLocaleData({ "Bool(true)": null, "Bool(true)": null });
-globalThis.IntlMessageFormat.__addLocaleData({ "Bool(true)": null, "Bool(true)": null });
-globalThis.IntlMessageFormat.__addLocaleData({ "Bool(true)": "accessibilityLabel", "Bool(true)": "formatToPlainString" });
-globalThis.IntlMessageFormat.__addLocaleData({ "Bool(true)": null, "Bool(true)": null });
-globalThis.IntlMessageFormat.__addLocaleData({ "Bool(true)": null, "Bool(true)": null });
-globalThis.IntlMessageFormat.__addLocaleData({ "Bool(true)": null, "Bool(true)": null });
-globalThis.IntlMessageFormat.__addLocaleData({ "Bool(true)": null, "Bool(true)": null });
-globalThis.IntlMessageFormat.__addLocaleData({});
-globalThis.IntlMessageFormat.__addLocaleData({ "Bool(true)": null, "Bool(true)": null });
-globalThis.IntlMessageFormat.__addLocaleData({ "Bool(true)": null, "Bool(true)": null });
-globalThis.IntlMessageFormat.__addLocaleData({ "Bool(true)": null, "Bool(true)": null });
-globalThis.IntlMessageFormat.__addLocaleData({ "Bool(true)": null, "Bool(true)": null });
-globalThis.IntlMessageFormat.__addLocaleData({ "Bool(true)": null, "Bool(true)": null });
-globalThis.IntlMessageFormat.__addLocaleData({ "Bool(true)": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000006605441934488949, "Bool(true)": 6373107519840365000000000000000000000000000000000000000000000000000000000000000000000000 });
-globalThis.IntlMessageFormat.__addLocaleData({ "Bool(true)": 0.000000000000000000000000000000000000000000000000000000000000000000000000000024095933347965027, "Bool(true)": 6373814603770124500000000000000000000000000000000000000000000000000000000000000000000000 });
-globalThis.IntlMessageFormat.__addLocaleData({ "Bool(true)": false, "Bool(true)": false });
-globalThis.IntlMessageFormat.__addLocaleData({ "Bool(true)": false, "Bool(true)": false });
-globalThis.IntlMessageFormat.__addLocaleData({ "Bool(true)": false, "Bool(true)": false });
-globalThis.IntlMessageFormat.__addLocaleData({ "Bool(true)": false, "Bool(true)": false });
+};

@@ -1,18 +1,18 @@
-// Module ID: 13531
-// Function ID: 102674
+// Module ID: 13538
+// Function ID: 102697
 // Name: UsernameStatusMessage
-// Dependencies: [0, 0, 0, 0, 0, 0, 1849, 7656, 9225, 566, 4329, 9224, 1934, 9227, 10080, 1212, 2, 7656, 4339, 3807, 10080, 1212, 2, 7656, 653, 10080]
+// Dependencies: [0, 0, 0, 0, 0, 0, 1849, 7655, 9229, 566, 4333, 9228, 1934, 9231, 10086, 1212, 2, 7655, 4343, 3807, 10086, 1212, 2, 7655, 653, 10086]
 // Exports: default
 
-// Module 13531 (UsernameStatusMessage)
-import closure_4 from "result";
-import closure_5 from "result";
-import closure_6 from "result";
-import result from "result";
-import closure_9 from "result";
-import { UserSettingsSections } from "result";
+// Module 13538 (UsernameStatusMessage)
+import closure_4 from "__exportStarResult1";
+import closure_5 from "__exportStarResult1";
+import closure_6 from "__exportStarResult1";
+import closure_9 from "__exportStarResult1";
+import { UserSettingsSections } from "__exportStarResult1";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import MobileSetting from "MobileSetting";
+import __exportStarResult1 from "__exportStarResult1";
 import createToggle from "createToggle";
 
 function UsernameStatusMessage(showHint) {
@@ -37,7 +37,7 @@ function UsernameStatusMessage(showHint) {
     return tmp;
   });
 }
-({ View: closure_7, ScrollView: closure_8 } = result);
+({ View: closure_7, ScrollView: closure_8 } = require("__exportStarResult1"));
 ({ jsx: closure_11, jsxs: closure_12 } = _isNativeReflectConstruct);
 MobileSetting = {};
 MobileSetting = { backgroundColor: require("PHONE_VERIFICATION_MODAL_KEY").colors.BACKGROUND_BASE_LOW };
@@ -47,10 +47,10 @@ MobileSetting.inputs = {};
 MobileSetting.username = { flex: 2 };
 MobileSetting.discriminator = { flex: 1 };
 MobileSetting.divider = { backgroundColor: require("PHONE_VERIFICATION_MODAL_KEY").colors.BACKGROUND_BASE_LOWEST };
-const obj2 = { "Bool(false)": null, "Bool(false)": null, backgroundColor: require("PHONE_VERIFICATION_MODAL_KEY").colors.INTERACTIVE_BACKGROUND_SELECTED };
+const obj2 = { y: false, isArray: false, backgroundColor: require("PHONE_VERIFICATION_MODAL_KEY").colors.INTERACTIVE_BACKGROUND_SELECTED };
 MobileSetting.dividerInner = obj2;
 MobileSetting = MobileSetting.createStyles(MobileSetting);
-result = createToggle.fileFinishedImporting("modules/user_settings/account/native/UserSettingsChangeUsername.tsx");
+const result = createToggle.fileFinishedImporting("modules/user_settings/account/native/UserSettingsChangeUsername.tsx");
 
 export default function UserSettingsChangeUsername() {
   let obj5;
@@ -201,7 +201,7 @@ export default function UserSettingsChangeUsername() {
     } else {
       obj1 = { ref, containerStyle: tmp.discriminator, value: `#${tmp13}`, isClearable: false, isDisabled: true };
     }
-    const obj2 = { style: tmp.background };
+    const obj2 = { "Bool(true)": true, "Bool(true)": true, "Bool(true)": true, style: tmp.background };
     const items4 = [callback2(importDefault(dependencyMap[23]), {}), ];
     obj3 = { style: tmp.container };
     const obj4 = {};

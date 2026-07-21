@@ -1,14 +1,14 @@
-// Module ID: 10530
-// Function ID: 82293
+// Module ID: 10536
+// Function ID: 82316
 // Name: clamp
 // Dependencies: []
 // Exports: useDraggablePip
 
-// Module 10530 (clamp)
+// Module 10536 (clamp)
 let closure_2 = importDefault(dependencyMap[0]);
 const useChannelCallStore = arg1(dependencyMap[1]).useChannelCallStore;
 ({ PIP_FOCUS_SCALE: closure_4, PIP_GESTURE_ACTIVE_OFFSET: closure_5 } = arg1(dependencyMap[2]));
-let closure_6 = { "Bool(true)": null, "Bool(true)": null, "Bool(true)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null };
+let closure_6 = { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null };
 let closure_7 = { code: "function useDraggablePipTsx1(){const{withTiming,pipFocus,PIP_FOCUS_SCALE,STANDARD_EASING}=this.__closure;return withTiming(pipFocus?PIP_FOCUS_SCALE:1,{easing:STANDARD_EASING,duration:250});}" };
 let closure_8 = { code: "function useDraggablePipTsx2(){const{width}=this.__closure;return width;}" };
 let closure_9 = { code: "function useDraggablePipTsx3(){const{height}=this.__closure;return height;}" };
@@ -172,7 +172,7 @@ export const useDraggablePip = function useDraggablePip(width) {
       const first = tmp3[0];
       let items = arg1;
       if (null == arg1) {
-        items = [1390895572, -255068174];
+        items = [];
       }
       const first1 = containerWidth(items, 1)[0];
       if (null != arg1) {
@@ -218,7 +218,7 @@ export const useDraggablePip = function useDraggablePip(width) {
         num3 = 1;
         items = arg1;
         if (null == arg1) {
-          items = [1390895572, -255068174];
+          items = [];
         }
         first1 = tmp2(items, 1)[0];
         if (null != arg1) {

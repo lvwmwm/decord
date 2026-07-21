@@ -1,10 +1,10 @@
-// Module ID: 13813
-// Function ID: 104478
+// Module ID: 13820
+// Function ID: 104501
 // Name: BountiesScrollPromptFooter
 // Dependencies: []
 // Exports: default
 
-// Module 13813 (BountiesScrollPromptFooter)
+// Module 13820 (BountiesScrollPromptFooter)
 const View = require(dependencyMap[0]).View;
 const _module = require(dependencyMap[1]);
 ({ jsx: closure_3, jsxs: closure_4 } = _module);

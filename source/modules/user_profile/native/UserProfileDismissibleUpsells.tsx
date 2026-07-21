@@ -1,10 +1,10 @@
-// Module ID: 11984
-// Function ID: 92629
+// Module ID: 11991
+// Function ID: 92652
 // Name: UserProfileDismissibleUpsells
 // Dependencies: []
 // Exports: default
 
-// Module 11984 (UserProfileDismissibleUpsells)
+// Module 11991 (UserProfileDismissibleUpsells)
 let closure_3 = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 let closure_5 = importDefault(dependencyMap[2]);
@@ -15,12 +15,12 @@ const items = [...arg1(dependencyMap[4]).Gradients.PREMIUM_GUILD];
 let closure_10 = items.reverse();
 let obj = arg1(dependencyMap[7]);
 obj = {};
-obj = { value: true, alignItems: null, borderRadius: importDefault(dependencyMap[8]).radii.lg, backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_SURFACE_HIGH };
+obj = { flex: true, display: null, borderRadius: importDefault(dependencyMap[8]).radii.lg, backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_SURFACE_HIGH };
 obj.upsellContainer = obj;
 const tmp2 = arg1(dependencyMap[6]);
 obj.customProfileThemeUpsellContainer = { backgroundColor: importDefault(dependencyMap[8]).colors.PROFILE_GRADIENT_OVERLAY_SYNCED_WITH_USER_THEME };
 obj.header = {};
-obj.upsellButtonsContainer = { "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Null": true, "Null": true, "Null": true };
+obj.upsellButtonsContainer = { left: 1, right: 1, accessible: "button", 1365411346: "heading-sm/medium", -1658171056: "text-link", 1474810466: true };
 obj.upsellButton = { flex: 1 };
 let closure_11 = obj.createStyles(obj);
 const obj1 = { backgroundColor: importDefault(dependencyMap[8]).colors.PROFILE_GRADIENT_OVERLAY_SYNCED_WITH_USER_THEME };

@@ -1,9 +1,9 @@
-// Module ID: 5896
-// Function ID: 49718
+// Module ID: 5898
+// Function ID: 49761
 // Name: metadata
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 5896 (metadata)
+// Module 5898 (metadata)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/BlossomIllocon-2x.png.js");
 

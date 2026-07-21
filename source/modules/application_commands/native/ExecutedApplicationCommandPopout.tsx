@@ -1,10 +1,10 @@
-// Module ID: 9482
-// Function ID: 73892
+// Module ID: 9487
+// Function ID: 73908
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 // Exports: default
 
-// Module 9482 (_createForOfIteratorHelperLoose)
+// Module 9487 (_createForOfIteratorHelperLoose)
 function _createForOfIteratorHelperLoose(@@iterator) {
   let arg1 = Symbol_iterator;
   @@iterator = "undefined" !== typeof Symbol;
@@ -537,7 +537,7 @@ function CommandContentContainer(channelId) {
     return tmp;
   }, items2);
   obj = {};
-  const obj1 = { Promise: -246006407672989600000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, marginTop: 0.0000000000000000000000000000000000000000000000000000000000000000000741841232901058, flags: 0.158, style: tmp.commandText, children: intl.format(arg1(dependencyMap[23]).t.sj/RT9, obj) };
+  const obj1 = { "Null": -246006407672989600000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, "Null": 0.0000000000000000000000000000000000000000000000000000000000000000000741841232901058, "Null": 0.158, style: tmp.commandText, children: intl.format(arg1(dependencyMap[23]).t.sj/RT9, obj) };
   const items3 = [callback(arg1(dependencyMap[21]).Text, obj1, "commandName-" + data.name), callback(arg1(dependencyMap[21]).Text, { style: tmp.commandOptionText, children: memo }, "commandOption-" + data.name)];
   obj.children = items3;
   return callback2(arg1(dependencyMap[28]).Card, obj);

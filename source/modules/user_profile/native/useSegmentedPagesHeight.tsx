@@ -1,16 +1,15 @@
-// Module ID: 11981
-// Function ID: 92616
+// Module ID: 11988
+// Function ID: 92639
 // Name: usePageHeights
 // Dependencies: [0, 0, 0, 0, 0, 0]
 // Exports: usePageHeights, usePagerFillHeight, usePagesHeightStyle
 
-// Module 11981 (usePageHeights)
-import closure_3 from "result";
-import closure_4 from "result";
-import result from "result";
+// Module 11988 (usePageHeights)
+import __exportStarResult1 from "__exportStarResult1";
+import closure_4 from "__exportStarResult1";
 
 let closure_5 = { code: "function useSegmentedPagesHeightTsx1(){const{pageHeights,visiblePageRange,fillHeight}=this.__closure;var _heights$lo,_heights$hi;const heights=pageHeights.get();const[lo,hi]=visiblePageRange.get();const contentHeight=Math.max((_heights$lo=heights[lo])!==null&&_heights$lo!==void 0?_heights$lo:0,(_heights$hi=heights[hi])!==null&&_heights$hi!==void 0?_heights$hi:0);const height=Math.max(contentHeight,fillHeight);return height>0?{height:height}:{};}" };
-result = result.fileFinishedImporting("modules/user_profile/native/useSegmentedPagesHeight.tsx");
+const result = require("__exportStarResult1").fileFinishedImporting("modules/user_profile/native/useSegmentedPagesHeight.tsx");
 
 export const usePageHeights = function usePageHeights() {
   let obj = arg1(dependencyMap[2]);

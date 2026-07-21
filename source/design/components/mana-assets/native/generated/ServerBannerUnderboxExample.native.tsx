@@ -1,10 +1,10 @@
-// Module ID: 6463
-// Function ID: 50568
+// Module ID: 6465
+// Function ID: 50611
 // Name: ServerBannerUnderboxExample
 // Dependencies: []
 // Exports: ServerBannerUnderboxExample
 
-// Module 6463 (ServerBannerUnderboxExample)
+// Module 6465 (ServerBannerUnderboxExample)
 const jsx = require(dependencyMap[0]).jsx;
 const _module = require(dependencyMap[3]);
 const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/ServerBannerUnderboxExample.native.tsx");

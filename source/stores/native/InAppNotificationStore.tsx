@@ -1,9 +1,9 @@
-// Module ID: 10199
-// Function ID: 78731
+// Module ID: 10205
+// Function ID: 78749
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
-// Module 10199 (_isNativeReflectConstruct)
+// Module 10205 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -241,7 +241,7 @@ let tmp3 = () => {
       map1 = new Map();
       obj[AlertDismissalHandler(closure_2[19]).GuildIncidentAlertTypes.DM_RAID] = map1;
       this.dissmissedAlertsMap = obj;
-      this.threshold = { -1774234981: "\u{1FAF1}\u{1F3FF}\u200D\u{1FAF2}\u{1F3FE}", -1570587699: true };
+      this.threshold = { position: "\u{1FAF1}\u{1F3FF}\u200D\u{1FAF2}\u{1F3FE}", minHeight: true };
       return;
     }
   }
@@ -430,7 +430,7 @@ tmp7 = new tmp7(importDefault(dependencyMap[47]), {
         if (!message.optimistic) {
           if (obj3.allowInAppNotifications()) {
             if (!obj4.isEnabled()) {
-              if (!chatOpen.getChatOpen(channel_id)) {
+              if (!uiStore.getChatOpen(channel_id)) {
                 const result = arg1(dependencyMap[27]).shouldIncludeSelectedChannel();
                 const obj5 = arg1(dependencyMap[27]);
                 if (obj6.shouldNotify(message, channel_id, result)) {
@@ -537,11 +537,11 @@ tmp7 = new tmp7(importDefault(dependencyMap[47]), {
     if (null != message) {
       if (null != message.reactions) {
         if (null != emoji) {
-          if (obj12.allowInAppNotifications()) {
+          if (obj13.allowInAppNotifications()) {
             let obj = arg1(dependencyMap[38]);
             let tryParseChannelPathResult = obj.tryParseChannelPath(tmp);
             if (null == tryParseChannelPathResult) {
-              tryParseChannelPathResult = { 0: false, 9223372036854775807: false };
+              tryParseChannelPathResult = { y: "o", isArray: "o" };
             }
             ({ channelId, guildId } = tryParseChannelPathResult);
             if (null != channelId) {
@@ -569,59 +569,64 @@ tmp7 = new tmp7(importDefault(dependencyMap[47]), {
                   const guild = store2.getGuild(guildId);
                   const user = authStore.getUser(tmp2);
                   if (null != channel) {
-                    const result1 = arg1(dependencyMap[27]).shouldIncludeSelectedChannel();
-                    const obj4 = arg1(dependencyMap[27]);
-                    obj = { message, channel, reactor: user, includeSelectedChannel: result1 };
-                    if (obj5.shouldNotifyForReaction(obj)) {
-                      const messageRecord = arg1(dependencyMap[29]).createMessageRecord(message);
-                      const obj7 = arg1(dependencyMap[29]);
-                      if (obj8.isMessageContentPreviewable(messageRecord)) {
-                        const reactions = message.reactions;
-                        const found = reactions.find((emoji) => {
-                          let tmp = emoji.emoji.id === emoji.id;
-                          if (tmp) {
-                            tmp = null != emoji.id;
-                          }
-                          if (!tmp) {
-                            tmp = emoji.emoji.name === emoji.name;
-                          }
-                          return tmp;
-                        });
-                        let tmp22;
-                        if (null != found) {
-                          tmp22 = found;
-                        }
-                        if (null == tmp22) {
-                          if (tmp10) {
+                    if (!obj4.isEnabled()) {
+                      if (!uiStore.getChatOpen(channelId)) {
+                        const result1 = arg1(dependencyMap[27]).shouldIncludeSelectedChannel();
+                        const obj5 = arg1(dependencyMap[27]);
+                        obj = { message, channel, reactor: user, includeSelectedChannel: result1 };
+                        if (obj6.shouldNotifyForReaction(obj)) {
+                          const messageRecord = arg1(dependencyMap[29]).createMessageRecord(message);
+                          const obj8 = arg1(dependencyMap[29]);
+                          if (obj9.isMessageContentPreviewable(messageRecord)) {
+                            const reactions = message.reactions;
+                            const found = reactions.find((emoji) => {
+                              let tmp = emoji.emoji.id === emoji.id;
+                              if (tmp) {
+                                tmp = null != emoji.id;
+                              }
+                              if (!tmp) {
+                                tmp = emoji.emoji.name === emoji.name;
+                              }
+                              return tmp;
+                            });
+                            let tmp25;
+                            if (null != found) {
+                              tmp25 = found;
+                            }
+                            if (null == tmp25) {
+                              if (tmp10) {
+                                return false;
+                              }
+                            }
+                            obj = {};
+                            const obj1 = {
+                              type: constants3.REACTION,
+                              key: channelId,
+                              duration: 5 * importDefault(dependencyMap[31]).Millis.SECOND,
+                              onDismiss() {
+                                                        callback(closure_2[32]).clearNotification();
+                                                      },
+                              channel,
+                              guild,
+                              user,
+                              message: messageRecord,
+                              parentChannel: store.getChannel(channel.parent_id),
+                              reaction: tmp25,
+                              inAppNotificationId: arg1(dependencyMap[33]).generateInAppNotificationId()
+                            };
+                            obj.notification = obj1;
+                            handleEnqueueNotification(obj);
+                          } else {
                             return false;
                           }
+                          const obj9 = arg1(dependencyMap[30]);
+                        } else {
+                          return false;
                         }
-                        obj = {};
-                        const obj1 = {
-                          type: constants3.REACTION,
-                          key: channelId,
-                          duration: 5 * importDefault(dependencyMap[31]).Millis.SECOND,
-                          onDismiss() {
-                                                callback(closure_2[32]).clearNotification();
-                                              },
-                          channel,
-                          guild,
-                          user,
-                          message: messageRecord,
-                          parentChannel: store.getChannel(channel.parent_id),
-                          reaction: tmp22,
-                          inAppNotificationId: arg1(dependencyMap[33]).generateInAppNotificationId()
-                        };
-                        obj.notification = obj1;
-                        handleEnqueueNotification(obj);
-                      } else {
-                        return false;
+                        const obj6 = arg1(dependencyMap[27]);
                       }
-                      const obj8 = arg1(dependencyMap[30]);
-                    } else {
-                      return false;
                     }
-                    const obj5 = arg1(dependencyMap[27]);
+                    return false;
                   }
                   return false;
                 }
@@ -629,7 +634,7 @@ tmp7 = new tmp7(importDefault(dependencyMap[47]), {
             }
             return false;
           }
-          const obj12 = arg1(dependencyMap[27]);
+          const obj13 = arg1(dependencyMap[27]);
         }
       }
     }
@@ -897,7 +902,7 @@ const obj = {
         if (!message.optimistic) {
           if (obj3.allowInAppNotifications()) {
             if (!obj4.isEnabled()) {
-              if (!chatOpen.getChatOpen(channel_id)) {
+              if (!uiStore.getChatOpen(channel_id)) {
                 const result = arg1(dependencyMap[27]).shouldIncludeSelectedChannel();
                 const obj5 = arg1(dependencyMap[27]);
                 if (obj6.shouldNotify(message, channel_id, result)) {
@@ -1004,11 +1009,11 @@ const obj = {
     if (null != message) {
       if (null != message.reactions) {
         if (null != emoji) {
-          if (obj12.allowInAppNotifications()) {
+          if (obj13.allowInAppNotifications()) {
             let obj = arg1(dependencyMap[38]);
             let tryParseChannelPathResult = obj.tryParseChannelPath(tmp);
             if (null == tryParseChannelPathResult) {
-              tryParseChannelPathResult = { 0: false, 9223372036854775807: false };
+              tryParseChannelPathResult = { y: "o", isArray: "o" };
             }
             ({ channelId, guildId } = tryParseChannelPathResult);
             if (null != channelId) {
@@ -1036,59 +1041,64 @@ const obj = {
                   const guild = store2.getGuild(guildId);
                   const user = authStore.getUser(tmp2);
                   if (null != channel) {
-                    const result1 = arg1(dependencyMap[27]).shouldIncludeSelectedChannel();
-                    const obj4 = arg1(dependencyMap[27]);
-                    obj = { message, channel, reactor: user, includeSelectedChannel: result1 };
-                    if (obj5.shouldNotifyForReaction(obj)) {
-                      const messageRecord = arg1(dependencyMap[29]).createMessageRecord(message);
-                      const obj7 = arg1(dependencyMap[29]);
-                      if (obj8.isMessageContentPreviewable(messageRecord)) {
-                        const reactions = message.reactions;
-                        const found = reactions.find((emoji) => {
-                          let tmp = emoji.emoji.id === emoji.id;
-                          if (tmp) {
-                            tmp = null != emoji.id;
-                          }
-                          if (!tmp) {
-                            tmp = emoji.emoji.name === emoji.name;
-                          }
-                          return tmp;
-                        });
-                        let tmp22;
-                        if (null != found) {
-                          tmp22 = found;
-                        }
-                        if (null == tmp22) {
-                          if (tmp10) {
+                    if (!obj4.isEnabled()) {
+                      if (!uiStore.getChatOpen(channelId)) {
+                        const result1 = arg1(dependencyMap[27]).shouldIncludeSelectedChannel();
+                        const obj5 = arg1(dependencyMap[27]);
+                        obj = { message, channel, reactor: user, includeSelectedChannel: result1 };
+                        if (obj6.shouldNotifyForReaction(obj)) {
+                          const messageRecord = arg1(dependencyMap[29]).createMessageRecord(message);
+                          const obj8 = arg1(dependencyMap[29]);
+                          if (obj9.isMessageContentPreviewable(messageRecord)) {
+                            const reactions = message.reactions;
+                            const found = reactions.find((emoji) => {
+                              let tmp = emoji.emoji.id === emoji.id;
+                              if (tmp) {
+                                tmp = null != emoji.id;
+                              }
+                              if (!tmp) {
+                                tmp = emoji.emoji.name === emoji.name;
+                              }
+                              return tmp;
+                            });
+                            let tmp25;
+                            if (null != found) {
+                              tmp25 = found;
+                            }
+                            if (null == tmp25) {
+                              if (tmp10) {
+                                return false;
+                              }
+                            }
+                            obj = {};
+                            const obj1 = {
+                              type: constants3.REACTION,
+                              key: channelId,
+                              duration: 5 * importDefault(dependencyMap[31]).Millis.SECOND,
+                              onDismiss() {
+                                                        callback(closure_2[32]).clearNotification();
+                                                      },
+                              channel,
+                              guild,
+                              user,
+                              message: messageRecord,
+                              parentChannel: store.getChannel(channel.parent_id),
+                              reaction: tmp25,
+                              inAppNotificationId: arg1(dependencyMap[33]).generateInAppNotificationId()
+                            };
+                            obj.notification = obj1;
+                            handleEnqueueNotification(obj);
+                          } else {
                             return false;
                           }
+                          const obj9 = arg1(dependencyMap[30]);
+                        } else {
+                          return false;
                         }
-                        obj = {};
-                        const obj1 = {
-                          type: constants3.REACTION,
-                          key: channelId,
-                          duration: 5 * importDefault(dependencyMap[31]).Millis.SECOND,
-                          onDismiss() {
-                                                callback(closure_2[32]).clearNotification();
-                                              },
-                          channel,
-                          guild,
-                          user,
-                          message: messageRecord,
-                          parentChannel: store.getChannel(channel.parent_id),
-                          reaction: tmp22,
-                          inAppNotificationId: arg1(dependencyMap[33]).generateInAppNotificationId()
-                        };
-                        obj.notification = obj1;
-                        handleEnqueueNotification(obj);
-                      } else {
-                        return false;
+                        const obj6 = arg1(dependencyMap[27]);
                       }
-                      const obj8 = arg1(dependencyMap[30]);
-                    } else {
-                      return false;
                     }
-                    const obj5 = arg1(dependencyMap[27]);
+                    return false;
                   }
                   return false;
                 }
@@ -1096,7 +1106,7 @@ const obj = {
             }
             return false;
           }
-          const obj12 = arg1(dependencyMap[27]);
+          const obj13 = arg1(dependencyMap[27]);
         }
       }
     }

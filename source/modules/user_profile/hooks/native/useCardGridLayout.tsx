@@ -1,10 +1,10 @@
-// Module ID: 11973
-// Function ID: 92581
+// Module ID: 11980
+// Function ID: 92604
 // Name: calculateTotalGaps
 // Dependencies: []
 // Exports: default
 
-// Module 11973 (calculateTotalGaps)
+// Module 11980 (calculateTotalGaps)
 function calculateTotalGaps(arg0, arg1) {
   return arg1 * (arg0 - 1);
 }

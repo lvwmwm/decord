@@ -1,9 +1,9 @@
-// Module ID: 10035
-// Function ID: 77589
+// Module ID: 10041
+// Function ID: 77607
 // Name: _createGuildFromTemplate
 // Dependencies: []
 
-// Module 10035 (_createGuildFromTemplate)
+// Module 10041 (_createGuildFromTemplate)
 function _createGuildFromTemplate() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);

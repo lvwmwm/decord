@@ -1,9 +1,9 @@
-// Module ID: 12587
-// Function ID: 96806
+// Module ID: 12594
+// Function ID: 96829
 // Name: StreamingUserRow
 // Dependencies: []
 
-// Module 12587 (StreamingUserRow)
+// Module 12594 (StreamingUserRow)
 let Platform;
 function StreamingUserRow(user) {
   user = user.user;
@@ -152,12 +152,12 @@ let obj = { row: { flexDirection: "row" } };
 obj = { tintColor: importDefault(dependencyMap[12]).colors.INTERACTIVE_TEXT_DEFAULT, marginLeft: 8 };
 obj.voiceStatusIcon = obj;
 obj.voiceStatusIconMargin = { marginLeft: 8 };
-obj.streamPreview = { soundsharing: "r", GuildRoleSubscriptionTierDesignTab: "getSystemVersionMinor", BetaTag: "r", EXPLICIT_MEDIA_SCAN_MESSAGES: "IPv4address" };
-obj1 = { <string:1683372976>: false, <string:1865094543>: false, <string:4168941352>: false, <string:1095185546>: false, pause/break: false, backgroundColor: importDefault(dependencyMap[12]).colors.BACKGROUND_MOD_MUTED, borderRadius: importDefault(dependencyMap[12]).radii.xs };
+obj.streamPreview = {};
+obj1 = { registerAsset: "Array", application: "isArray", next: "spriteIndex", forEach: "bottom", loadJsonAsset: "Array", backgroundColor: importDefault(dependencyMap[12]).colors.BACKGROUND_MOD_MUTED, borderRadius: importDefault(dependencyMap[12]).radii.xs };
 obj.ringingButton = obj1;
 const tmp3 = arg1(dependencyMap[10]);
 obj.ringingButtonLabel = { fontFamily: Fonts.PRIMARY_SEMIBOLD, color: importDefault(dependencyMap[12]).colors.INTERACTIVE_TEXT_ACTIVE };
-obj.autoDisabledVideo = { -9223372036854775808: true, filter: true };
+obj.autoDisabledVideo = {};
 obj.autoDisabledVideoLabel = { marginLeft: 4 };
 let closure_14 = obj1.createStyles(obj);
 let obj6 = arg1(dependencyMap[11]);
@@ -166,7 +166,7 @@ const obj2 = { fontFamily: Fonts.PRIMARY_SEMIBOLD, color: importDefault(dependen
 obj3.labelCallScreen = { fontFamily: Fonts.PRIMARY_MEDIUM, color: importDefault(dependencyMap[12]).colors.MOBILE_TEXT_HEADING_PRIMARY };
 const obj4 = { fontFamily: Fonts.PRIMARY_MEDIUM, color: importDefault(dependencyMap[12]).colors.MOBILE_TEXT_HEADING_PRIMARY };
 obj3.voiceStatusIcon = { tintColor: importDefault(dependencyMap[12]).colors.INTERACTIVE_TEXT_DEFAULT, marginLeft: 8 };
-obj6 = { <string:1683372976>: false, <string:1865094543>: false, <string:4168941352>: false, <string:1095185546>: false, pause/break: false, backgroundColor: importDefault(dependencyMap[12]).colors.BACKGROUND_MOD_MUTED, borderRadius: importDefault(dependencyMap[12]).radii.xs };
+obj6 = { registerAsset: "Array", application: "isArray", next: "spriteIndex", forEach: "bottom", loadJsonAsset: "Array", backgroundColor: importDefault(dependencyMap[12]).colors.BACKGROUND_MOD_MUTED, borderRadius: importDefault(dependencyMap[12]).radii.xs };
 obj3.ringingButton = obj6;
 const obj5 = { tintColor: importDefault(dependencyMap[12]).colors.INTERACTIVE_TEXT_DEFAULT, marginLeft: 8 };
 obj3.ringingButtonLabel = { fontFamily: Fonts.PRIMARY_SEMIBOLD, color: importDefault(dependencyMap[12]).colors.INTERACTIVE_TEXT_ACTIVE };
@@ -191,7 +191,7 @@ let closure_16 = importAllResult.memo((user) => {
     withStream = true;
   }
   ({ isActionSheet, onPress: closure_2 } = user);
-  let obj = { 1373623906: null, -865877897: 0.6, 996450396: "BounceOutRight", 1722870988: null, -1335636933: 0.6, -1604081066: "BounceOutLeft", 1632723515: null, -1606786226: 0.6 };
+  let obj = { "Bool(false)": null, "Bool(false)": 0.6, "Bool(false)": "BounceOutRight", "Bool(false)": null, "Bool(false)": 0.6, "Bool(false)": "BounceOutLeft", "Bool(false)": null, "Bool(false)": 0.6 };
   Object.setPrototypeOf(null);
   const merged = Object.assign(user, obj);
   let tmp3;
@@ -373,7 +373,7 @@ let closure_16 = importAllResult.memo((user) => {
     const items4 = [name, ];
     const obj11 = {};
     const intl = arg1(dependencyMap[25]).intl;
-    const items5 = [-16134899100522266000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, intl.string(arg1(dependencyMap[25]).t.pFO/Ph)];
+    const items5 = ["\u2196", intl.string(arg1(dependencyMap[25]).t.pFO/Ph)];
     obj11.children = items5;
     items4[1] = callback2(arg1(dependencyMap[24]).Text, obj11);
     obj10.children = items4;

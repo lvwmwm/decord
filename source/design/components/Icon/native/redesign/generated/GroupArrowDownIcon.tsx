@@ -1,10 +1,10 @@
-// Module ID: 10642
-// Function ID: 83098
+// Module ID: 10648
+// Function ID: 83121
 // Name: GroupArrowDownIcon
 // Dependencies: []
 // Exports: GroupArrowDownIcon
 
-// Module 10642 (GroupArrowDownIcon)
+// Module 10648 (GroupArrowDownIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/GroupArrowDownIcon.tsx");

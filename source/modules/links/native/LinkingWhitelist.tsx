@@ -1,7 +1,7 @@
 // Module ID: 3826
 // Function ID: 31798
 // Name: LINKING_WHITELIST
-// Dependencies: []
+// Dependencies: [284214097]
 
 // Module 3826 (LINKING_WHITELIST)
 let obj = { discordConnect: obj, facebook: obj, instagram: obj1, snapchat: obj2, spotify: obj3, tiktok: obj4, twitch: obj5, telegram: obj6, twitter: obj7, whatsapp: obj8, youtube: obj9, zoom: obj10 };

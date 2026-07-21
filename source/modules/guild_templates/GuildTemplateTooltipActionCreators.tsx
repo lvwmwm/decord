@@ -1,8 +1,8 @@
-// Module ID: 5711
-// Function ID: 49058
+// Module ID: 5713
+// Function ID: 49101
 // Dependencies: []
 
-// Module 5711
+// Module 5713
 let closure_2 = importDefault(dependencyMap[0]);
 let closure_3 = importDefault(dependencyMap[1]);
 const Permissions = arg1(dependencyMap[2]).Permissions;

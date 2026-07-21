@@ -1,10 +1,10 @@
-// Module ID: 7874
-// Function ID: 62696
+// Module ID: 7878
+// Function ID: 62708
 // Name: useGetIsMounted
 // Dependencies: []
 // Exports: default
 
-// Module 7874 (useGetIsMounted)
+// Module 7878 (useGetIsMounted)
 let closure_0 = importAll(dependencyMap[0]);
 const result = arg1(dependencyMap[1]).fileFinishedImporting("hooks/useGetIsMounted.tsx");
 

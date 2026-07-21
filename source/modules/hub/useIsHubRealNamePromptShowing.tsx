@@ -1,10 +1,10 @@
-// Module ID: 11663
-// Function ID: 90512
+// Module ID: 11670
+// Function ID: 90535
 // Name: useIsHubRealNamePromptShowing
 // Dependencies: []
 // Exports: default
 
-// Module 11663 (useIsHubRealNamePromptShowing)
+// Module 11670 (useIsHubRealNamePromptShowing)
 let closure_3 = importAll(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 let closure_5 = importDefault(dependencyMap[2]);

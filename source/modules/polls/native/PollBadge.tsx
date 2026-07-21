@@ -1,26 +1,26 @@
-// Module ID: 15231
-// Function ID: 115020
+// Module ID: 15238
+// Function ID: 115044
 // Name: PollBadge
 // Dependencies: [4294967295, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 // Exports: default
 
-// Module 15231 (PollBadge)
-import { View } from "result";
-import result from "result";
-import result from "result";
-import result from "result";
+// Module 15238 (PollBadge)
+import { View } from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
 
 importAll(dependencyMap[0]);
-({ jsx: closure_4, jsxs: closure_5 } = result);
-result = {};
-result = { 1659428433: "horizontal", 659680460: 4, -1228119168: "flex-start", -1709354576: 4, 1386894946: 16, 705758733: 16, borderRadius: require("result").radii.round, backgroundColor: require("result").colors.BACKGROUND_SURFACE_HIGH, color: require("result").colors.TEXT_MUTED };
-result.container = result;
-result.text = { maxWidth: -832290544, position: 1090584577 };
-result = result.createStyles(result);
-result = result.fileFinishedImporting("modules/polls/native/PollBadge.tsx");
+({ jsx: closure_4, jsxs: closure_5 } = __exportStarResult1);
+__exportStarResult1 = {};
+__exportStarResult1 = { bannerAdjustment: "horizontal", replayOnNavigationFocus: 4, minHeight: "flex-start", position: 4, top: 16, maxWidth: 16, borderRadius: require("__exportStarResult1").radii.round, backgroundColor: require("__exportStarResult1").colors.BACKGROUND_SURFACE_HIGH, color: require("__exportStarResult1").colors.TEXT_MUTED };
+__exportStarResult1.container = __exportStarResult1;
+__exportStarResult1.text = { position: "custom", top: "viewAll" };
+__exportStarResult1 = __exportStarResult1.createStyles(__exportStarResult1);
+const result = __exportStarResult1.fileFinishedImporting("modules/polls/native/PollBadge.tsx");
 
 export default function PollBadge(style) {
-  const tmp = result();
+  const tmp = __exportStarResult1();
   let obj = { style: items };
   const items = [tmp.container, style.style];
   obj = { size: arg1(dependencyMap[5]).IconSizes.EXTRA_SMALL_10, source: importDefault(dependencyMap[6]) };

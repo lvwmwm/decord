@@ -1,10 +1,10 @@
-// Module ID: 7532
-// Function ID: 60305
+// Module ID: 7536
+// Function ID: 60317
 // Name: parseMessageEmbedForProps
 // Dependencies: []
 // Exports: capitalizeText, getAppealSignalDisplayText, getClassificationExpiration, getClassificationRelativeIncidentTime, getRequestReviewErrorFromCode, getSpoilerFlagsForAttachment, isCurrentUserSuspended, isFlaggedContentEmpty, isGuildClassification, mapCtaToNativeData, parseMessageForProps, useIsSuspendedUser
 
-// Module 7532 (parseMessageEmbedForProps)
+// Module 7536 (parseMessageEmbedForProps)
 function parseMessageEmbedForProps(fields) {
   if (null != fields.fields) {
     fields = fields.fields;

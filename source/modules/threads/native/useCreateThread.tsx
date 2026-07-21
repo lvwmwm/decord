@@ -1,12 +1,12 @@
-// Module ID: 9537
-// Function ID: 74362
+// Module ID: 9542
+// Function ID: 74379
 // Name: useCreateThread
-// Dependencies: [31, 27, 33, 4126, 689, 4312, 4655, 1212, 5385, 4640, 4124, 4628, 2, 57, 31]
+// Dependencies: [31, 27, 33, 4126, 689, 4316, 4657, 1212, 5387, 4642, 4124, 4630, 2, 57, 31]
 // Exports: default, useCreateForumPost
 
-// Module 9537 (useCreateThread)
+// Module 9542 (useCreateThread)
 import closure_3 from "module_31";
-import getActivityIndicator from "get ActivityIndicator";
+import keys from "keys";
 import { DraftType } from "module_33";
 import { MessageSendLocation } from "_createForOfIteratorHelperLoose";
 import module_31 from "module_31";

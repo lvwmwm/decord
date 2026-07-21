@@ -1,9 +1,9 @@
-// Module ID: 14417
-// Function ID: 108737
+// Module ID: 14424
+// Function ID: 108760
 // Name: SettingsEmoji
 // Dependencies: []
 
-// Module 14417 (SettingsEmoji)
+// Module 14424 (SettingsEmoji)
 function SettingsEmoji(emoji) {
   emoji = emoji.emoji;
   if (null != emoji.id) {
@@ -13,7 +13,7 @@ function SettingsEmoji(emoji) {
   } else {
     url = emoji.url;
   }
-  obj = { fastImageStyle: { <string:1140607356>: false, <string:1751293292>: false }, src: url };
+  obj = { fastImageStyle: { <string:1632221346>: "<string:1027735553>", <string:2722977214>: "<string:4143972873>" }, src: url };
   let str = "";
   const tmp = callback3();
   const tmp4 = jsx;

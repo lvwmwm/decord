@@ -1,8 +1,8 @@
-// Module ID: 10850
-// Function ID: 84436
+// Module ID: 10856
+// Function ID: 84459
 // Dependencies: []
 
-// Module 10850
+// Module 10856
 let closure_4 = importDefault(dependencyMap[0]);
 const importAllResult = importAll(dependencyMap[1]);
 const View = arg1(dependencyMap[2]).View;

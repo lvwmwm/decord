@@ -92,14 +92,14 @@ const fn = function t(moment) {
   obj.weekdaysShort = "ned._pon._uto._sri._\u010Det._pet._sub.".split("_");
   obj.weekdaysMin = "ne_po_ut_sr_\u010De_pe_su".split("_");
   obj.weekdaysParseExact = true;
-  obj.longDateFormat = { "Bool(false)": null, "Bool(false)": "L", "Bool(false)": 1000, "Bool(false)": true, "Bool(false)": true, "Bool(false)": false };
+  obj.longDateFormat = {};
   obj = {
-    alignItems: "uri",
-    position: "r",
-    <string:1373947542>: "isArray",
-    <string:2681378794>: "children",
-    <string:1413374383>: "uri",
-    <string:1720105976>: "r",
+    status: "<string:2399142639>",
+    padding: "<string:1056965364>",
+    opacity: "<string:2684355311>",
+    PX_8: "<string:1140851444>",
+    Symbol: "<string:1241514735>",
+    r: "A h:mm",
     nextWeek() {
       const dayResult = this.day();
       if (0 === dayResult) {
@@ -142,7 +142,7 @@ if ("object" === typeof exports) {
 }
 if ("function" === typeof globalThis.define) {
   if (globalThis.define.amd) {
-    globalThis.define([1782644737], fn);
+    globalThis.define(["HH:mm:ss"], fn);
   }
 }
 fn(this.moment);

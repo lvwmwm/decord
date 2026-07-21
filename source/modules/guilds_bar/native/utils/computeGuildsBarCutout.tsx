@@ -1,15 +1,14 @@
-// Module ID: 14694
-// Function ID: 110909
+// Module ID: 14701
+// Function ID: 110933
 // Name: computeGuildsBarCutout
-// Dependencies: [0, 0, 0, 0, 0]
+// Dependencies: []
 // Exports: default
 
-// Module 14694 (computeGuildsBarCutout)
-import { PixelRatio } from "result";
-import { GUILD_ITEM_SIZE } from "result";
-import result from "result";
-
-result = result.fileFinishedImporting("modules/guilds_bar/native/utils/computeGuildsBarCutout.tsx");
+// Module 14701 (computeGuildsBarCutout)
+const PixelRatio = require(dependencyMap[0]).PixelRatio;
+const GUILD_ITEM_SIZE = require(dependencyMap[1]).GUILD_ITEM_SIZE;
+const _module = require(dependencyMap[4]);
+const result = _module.fileFinishedImporting("modules/guilds_bar/native/utils/computeGuildsBarCutout.tsx");
 
 export default function computeGuildsBarCutout(containerSize) {
   containerSize = containerSize.containerSize;
@@ -30,7 +29,7 @@ export default function computeGuildsBarCutout(containerSize) {
   }
   const roundToNearestPixelResult = PixelRatio.roundToNearestPixel(BADGE_SIZE + 2 * BADGE_PADDING);
   const roundToNearestPixelResult1 = PixelRatio.roundToNearestPixel(BADGE_SIZE2 + 2 * BADGE_PADDING);
-  const obj = { "Null": null, "Null": null, "Null": null, shape: require(dependencyMap[3]).CutoutShape.RoundedRect, width: roundToNearestPixelResult, height: roundToNearestPixelResult1, cornerRadius: PixelRatio.roundToNearestPixel(Math.min(roundToNearestPixelResult, roundToNearestPixelResult1) / 2) };
+  const obj = { shape: require(dependencyMap[3]).CutoutShape.RoundedRect, width: roundToNearestPixelResult, height: roundToNearestPixelResult1, cornerRadius: PixelRatio.roundToNearestPixel(Math.min(roundToNearestPixelResult, roundToNearestPixelResult1) / 2) };
   if ("top-right" === containerSize.position) {
     obj.x = containerSize - roundToNearestPixelResult + BADGE_PADDING;
     obj.y = -BADGE_PADDING;

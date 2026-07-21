@@ -1,8 +1,8 @@
-// Module ID: 9849
-// Function ID: 76252
+// Module ID: 9854
+// Function ID: 76268
 // Dependencies: []
 
-// Module 9849
+// Module 9854
 let closure_3 = importDefault(dependencyMap[0]);
 const Endpoints = arg1(dependencyMap[1]).Endpoints;
 const result = arg1(dependencyMap[4]).fileFinishedImporting("actions/ChannelFollowerActionCreators.tsx");

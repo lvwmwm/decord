@@ -1,9 +1,9 @@
-// Module ID: 6984
-// Function ID: 55870
+// Module ID: 6988
+// Function ID: 55881
 // Name: ThermalState
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 6984 (ThermalState)
+// Module 6988 (ThermalState)
 let obj = { NOMINAL: "NOMINAL", FAIR: "FAIR", SERIOUS: "SERIOUS", CRITICAL: "CRITICAL", UNKNOWN: "UNKNOWN" };
 obj = { thermalState: obj.UNKNOWN };
 const _module = require(dependencyMap[0]);

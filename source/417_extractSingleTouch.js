@@ -32,11 +32,11 @@ function extractSingleTouch(nativeEvent) {
   }
   first = first1;
 }
-let obj = { int2hsl: null, Globe Single Line: null, AMPMMidnightParser: null, defaultBorderRadius: null, _cleanupSocket: null, y: null, animatedClosedPosition: null, memberListGradient: null };
-let closure_3 = Object.assign({}, obj, { 0: null, 9223372036854775807: null });
+let obj = {};
+let closure_3 = Object.assign({}, obj, { 9223372036854775807: null, 9223372036854775807: null });
 let closure_4 = Object.assign({}, obj, {});
 let closure_5 = Object.assign({}, obj, { RESPONDER_ACTIVE_LONG_PRESS_IN: true });
-let closure_6 = { NOT_RESPONDER: { "Bool(true)": true, "Bool(true)": true, "Bool(true)": true, "Bool(true)": true, "Bool(true)": true, "Bool(true)": true, "Bool(true)": true }, RESPONDER_INACTIVE_PRESS_IN: {}, RESPONDER_INACTIVE_PRESS_OUT: { "Bool(true)": "RED_NEW_46", "Bool(true)": 1, "Bool(true)": "column-reverse", "Bool(true)": "absolute", "Bool(true)": 0, "Bool(true)": 0, "Bool(true)": 0 }, RESPONDER_ACTIVE_PRESS_IN: { "Bool(true)": true, "Bool(true)": true, "Bool(true)": true, "Bool(true)": true, "Bool(true)": true, "Bool(true)": true, "Bool(true)": true }, RESPONDER_ACTIVE_PRESS_OUT: {}, RESPONDER_ACTIVE_LONG_PRESS_IN: {}, RESPONDER_ACTIVE_LONG_PRESS_OUT: {}, error: { "Bool(true)": "start", "Bool(true)": "Array", "Bool(true)": "isArray", "Bool(true)": "accessibilityRole", "Bool(true)": "gap", "Bool(true)": "enumerable", "Bool(true)": "Array" } };
+let closure_6 = { NOT_RESPONDER: {}, RESPONDER_INACTIVE_PRESS_IN: { -9223372036854775808: "absolute", 0: 0, 9223372036854775807: -1, 0: null, 0: "\u{1F468}\u200D\u{1F4BB}", -9223372036854775808: true, 9223372036854775807: 6 }, RESPONDER_INACTIVE_PRESS_OUT: { -9223372036854775808: "isArray", 0: "key", 9223372036854775807: "constructor", 0: "apply", 0: "isArray", -9223372036854775808: "isArray", 9223372036854775807: "isArray" }, RESPONDER_ACTIVE_PRESS_IN: {}, RESPONDER_ACTIVE_PRESS_OUT: {}, RESPONDER_ACTIVE_LONG_PRESS_IN: {}, RESPONDER_ACTIVE_LONG_PRESS_OUT: { -9223372036854775808: null, 0: null, 9223372036854775807: null, 0: null, 0: null, -9223372036854775808: null, 9223372036854775807: null }, error: {} };
 obj = {
   componentDidMount() {
     const isTV = importDefault(dependencyMap[3]).isTV;
@@ -127,7 +127,7 @@ obj = {
       if (self.touchableGetPressRectOffset) {
         let result = self.touchableGetPressRectOffset();
       } else {
-        result = { upside_down: "%BooleanPrototype%", upside_down_face: "navigatorHeaderTitleContainer", wink: "_reject", winking_face: "FAMILY_CENTER_LINK_CODE" };
+        result = { scales: false, useMemo: false, space: false, Text: false };
       }
       ({ left, top, right, bottom } = result);
       let touchableGetHitSlopResult = null;
@@ -441,7 +441,7 @@ obj = {
   withoutDefaultFocusAndBlur: {}
 };
 ({ touchableHandleFocus, touchableHandleBlur } = obj);
-obj.withoutDefaultFocusAndBlur = importDefault(dependencyMap[0])(obj, []);
+obj.withoutDefaultFocusAndBlur = importDefault(dependencyMap[0])(obj, [false, false]);
 
 export default {
   Mixin: obj,

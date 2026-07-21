@@ -1,10 +1,10 @@
-// Module ID: 11812
-// Function ID: 91599
+// Module ID: 11819
+// Function ID: 91622
 // Name: CollectiblesShopGiftBadgePostPurchaseModal
 // Dependencies: []
 // Exports: default
 
-// Module 11812 (CollectiblesShopGiftBadgePostPurchaseModal)
+// Module 11819 (CollectiblesShopGiftBadgePostPurchaseModal)
 let closure_3 = importAll(dependencyMap[0]);
 ({ Pressable: closure_4, View: closure_5 } = arg1(dependencyMap[1]));
 const tmp2 = arg1(dependencyMap[1]);
@@ -12,7 +12,7 @@ const tmp2 = arg1(dependencyMap[1]);
 const tmp3 = arg1(dependencyMap[2]);
 let closure_8 = arg1(dependencyMap[3]).createStyles((paddingTop) => {
   let obj = { header: obj };
-  obj = { height: paddingTop + 56, paddingTop };
+  obj = { "Bool(false)": "png", "Bool(true)": true, "Bool(true)": "/assets/images/channel_following/dark", "Bool(true)": 280, "Bool(true)": 120, "Bool(true)": null, "Bool(true)": "902d26debf9cf5ba93edffb3d1cb9422", "Bool(true)": "channel_following_success_3", "Bool(true)": "png", "Bool(true)": "2025-08-animated-keyboard-android", height: paddingTop + 56, paddingTop };
   obj = { top: paddingTop, paddingHorizontal: importDefault(dependencyMap[4]).space.PX_16 };
   obj.closeButton = obj;
   obj.closeIcon = { tintColor: importDefault(dependencyMap[4]).colors.MOBILE_TEXT_HEADING_PRIMARY };

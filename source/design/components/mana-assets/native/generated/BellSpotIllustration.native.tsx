@@ -1,10 +1,10 @@
-// Module ID: 5893
-// Function ID: 49713
+// Module ID: 5895
+// Function ID: 49756
 // Name: BellSpotIllustration
 // Dependencies: []
 // Exports: BellSpotIllustration
 
-// Module 5893 (BellSpotIllustration)
+// Module 5895 (BellSpotIllustration)
 const jsx = require(dependencyMap[0]).jsx;
 const _module = require(dependencyMap[3]);
 const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/BellSpotIllustration.native.tsx");

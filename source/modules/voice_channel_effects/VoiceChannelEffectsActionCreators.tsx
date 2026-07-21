@@ -1,10 +1,10 @@
-// Module ID: 5734
-// Function ID: 49275
+// Module ID: 5736
+// Function ID: 49318
 // Name: _getCancellationSlowConnection
 // Dependencies: []
 // Exports: sendVoiceChannelCustomCallSoundEffect, sendVoiceChannelSoundboardEffect
 
-// Module 5734 (_getCancellationSlowConnection)
+// Module 5736 (_getCancellationSlowConnection)
 function _getCancellationSlowConnection(id) {
   const arg1 = id;
   const abortController = new AbortController();

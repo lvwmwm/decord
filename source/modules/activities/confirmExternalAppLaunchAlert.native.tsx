@@ -1,10 +1,10 @@
-// Module ID: 10806
-// Function ID: 83937
+// Module ID: 10812
+// Function ID: 83960
 // Name: ConfirmActivityGateContent
 // Dependencies: []
 // Exports: confirmExternalAppLaunchAlert
 
-// Module 10806 (ConfirmActivityGateContent)
+// Module 10812 (ConfirmActivityGateContent)
 function ConfirmActivityGateContent(activityName) {
   const tmp = callback3();
   let obj = { style: tmp.alertContainer };
@@ -28,8 +28,6 @@ function ConfirmActivityGateContent(activityName) {
 function LinkButton() {
   let obj = { style: callback3().linkWrapper };
   obj = {
-    <string:1522289750>: false,
-    <string:570601313>: null,
     onPress() {
       callback(closure_2[9]).openURL(closure_5);
     }
@@ -45,7 +43,7 @@ const PRIVATE_APPS_HELP_ARTICLE = arg1(dependencyMap[2]).PRIVATE_APPS_HELP_ARTIC
 const tmp3 = arg1(dependencyMap[1]);
 ({ jsx: closure_6, jsxs: closure_7 } = arg1(dependencyMap[3]));
 const tmp4 = arg1(dependencyMap[3]);
-let closure_8 = arg1(dependencyMap[4]).createStyles({ alertContainer: { -9223372036854775808: "#8CD9FF", 9223372036854775807: "M179.982 28.862c-1.944-.26-3.356 1.983-2.903 3.888.571 2.398 1.944 5.249 5.139 6.013 1.569.37 3.171.574 4.782.61a6.96 6.96 0 0 0 7.083-6.001c.253-1.866.123-4.432-2.262-4.121-6.292.823-6.123.362-11.839-.39Z", 0: "#57F287" }, alertEyebrowText: {}, alertTitleText: { accessible: "center", id: "center" }, alertSubtitleText: { accessible: "center", id: "center" }, announcementBirb: { "Bool(false)": "2026-06-bounty-use-video-modal-mobile-placement-experiment", "Bool(false)": "user", "Bool(false)": true, "Bool(false)": "/assets/modules/main_tabs_v2/native/shared_components/user_list/images" }, linkWrapper: { marginTop: 8 } });
+let closure_8 = arg1(dependencyMap[4]).createStyles({ alertContainer: { isArray: 2063597892, context: 1107296879, paths: 148200 }, alertEyebrowText: {}, alertTitleText: { "Null": "center", "Null": "center" }, alertSubtitleText: { "Null": "center", "Null": "center" }, announcementBirb: { 9223372036854775807: true, 9223372036854775807: true, 9223372036854775807: true, 0: true }, linkWrapper: { marginTop: 8 } });
 const obj = arg1(dependencyMap[4]);
 const result = arg1(dependencyMap[11]).fileFinishedImporting("modules/activities/confirmExternalAppLaunchAlert.native.tsx");
 

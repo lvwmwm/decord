@@ -1,28 +1,28 @@
-// Module ID: 10080
-// Function ID: 78102
+// Module ID: 10086
+// Function ID: 78120
 // Name: createToggle
 // Dependencies: [270401536, 45154304]
 // Exports: createGuildSelector, createList, createPressable, createRadio, createRoute, createSegmentedControl, createSlider, createStatic, createToggle, createVolumeSlider
 
-// Module 10080 (createToggle)
+// Module 10086 (createToggle)
 const NodeType = require(dependencyMap[0]).NodeType;
 const _module = require(dependencyMap[1]);
 const result = _module.fileFinishedImporting("modules/settings/native/renderer/SettingBuilders.tsx");
 
-export const createToggle = function createToggle(result) {
-  const merged = Object.assign(result);
+export const createToggle = function createToggle(__exportStarResult1) {
+  const merged = Object.assign(__exportStarResult1);
   return { type: NodeType.TOGGLE };
 };
 export const createStatic = function createStatic(arg0) {
   const merged = Object.assign(arg0);
   return { type: NodeType.STATIC };
 };
-export const createRoute = function createRoute(result) {
-  const merged = Object.assign(result);
+export const createRoute = function createRoute(__exportStarResult1) {
+  const merged = Object.assign(__exportStarResult1);
   return { type: NodeType.ROUTE };
 };
-export const createPressable = function createPressable(result) {
-  const merged = Object.assign(result);
+export const createPressable = function createPressable(__exportStarResult1) {
+  const merged = Object.assign(__exportStarResult1);
   return { type: NodeType.PRESSABLE };
 };
 export const createVolumeSlider = function createVolumeSlider(getSystemLocale) {
@@ -37,8 +37,8 @@ export const createGuildSelector = function createGuildSelector(arg0) {
   const merged = Object.assign(arg0);
   return { type: NodeType.GUILD_SELECTOR };
 };
-export const createRadio = function createRadio(result) {
-  const merged = Object.assign(result);
+export const createRadio = function createRadio(__exportStarResult1) {
+  const merged = Object.assign(__exportStarResult1);
   return { type: NodeType.RADIO };
 };
 export const createList = function createList(arg0) {

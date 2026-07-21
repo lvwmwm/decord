@@ -1,5 +1,5 @@
 // Module ID: 8073
-// Function ID: 64047
+// Function ID: 64031
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
@@ -18,12 +18,12 @@ let closure_3 = importDefault(dependencyMap[1]);
 let closure_4 = importDefault(dependencyMap[2]);
 let closure_5 = importDefault(dependencyMap[3]);
 let closure_6 = importDefault(dependencyMap[4]);
-const tmp2 = (arg0) => {
-  class FeTurbulence {
+const tmp2 = (Component) => {
+  class FePointLight {
     constructor() {
       self = this;
-      tmp = closure_2(this, FeTurbulence);
-      obj = closure_5(FeTurbulence);
+      tmp = closure_2(this, FePointLight);
+      obj = closure_5(FePointLight);
       tmp2 = closure_4;
       if (closure_7()) {
         tmp6 = globalThis;
@@ -39,20 +39,20 @@ const tmp2 = (arg0) => {
       return tmp2(self, constructResult);
     }
   }
-  const arg1 = FeTurbulence;
-  callback2(FeTurbulence, arg0);
+  const arg1 = FePointLight;
+  callback2(FePointLight, Component);
   const items = [
     {
       key: "render",
       value: function render() {
-        const result = FeTurbulence(closure_1[5]).warnUnimplementedFilter();
+        const result = FePointLight(closure_1[6]).warnUnimplementedFilter();
         return null;
       }
     }
   ];
-  return callback(FeTurbulence, items);
-}(importDefault(dependencyMap[6]));
-tmp2.displayName = "FeTurbulence";
-tmp2.defaultProps = Object.assign({}, tmp2.defaultPrimitiveProps);
+  return callback(FePointLight, items);
+}(arg1(dependencyMap[5]).Component);
+tmp2.displayName = "FePointLight";
+tmp2.defaultProps = {};
 
 export default tmp2;

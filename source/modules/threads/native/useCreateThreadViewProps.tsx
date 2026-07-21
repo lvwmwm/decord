@@ -1,10 +1,10 @@
-// Module ID: 10381
-// Function ID: 80057
+// Module ID: 10387
+// Function ID: 80080
 // Name: useCreateThreadViewProps
 // Dependencies: []
 // Exports: default
 
-// Module 10381 (useCreateThreadViewProps)
+// Module 10387 (useCreateThreadViewProps)
 let closure_3 = importDefault(dependencyMap[0]);
 const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/threads/native/useCreateThreadViewProps.tsx");
 

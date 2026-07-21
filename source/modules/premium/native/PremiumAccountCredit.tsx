@@ -1,10 +1,10 @@
-// Module ID: 7408
-// Function ID: 59549
+// Module ID: 7412
+// Function ID: 59560
 // Name: AccountCreditTier
 // Dependencies: []
 // Exports: default
 
-// Module 7408 (AccountCreditTier)
+// Module 7412 (AccountCreditTier)
 function AccountCreditTier(arg0) {
   let currentSubscription;
   let hasPremiumGroup;
@@ -61,7 +61,7 @@ function AccountCreditTier(arg0) {
   obj2 = { size: arg1(dependencyMap[10]).GameIconSizes.SMALL, skuId: result };
   const items1 = [callback(importDefault(dependencyMap[10]), obj2), , ];
   const obj3 = { style: tmp.textContainer };
-  obj4 = { style: tmp.headerText };
+  obj4 = { "Null": null, "Null": null, "Null": null, style: tmp.headerText };
   const intl4 = arg1(dependencyMap[8]).intl;
   obj4.children = intl4.format(arg1(dependencyMap[8]).t.LzobT9, { planName: tierDisplayNameByPlanId });
   const items2 = [callback(arg1(dependencyMap[11]).Text, obj4), ];
@@ -89,11 +89,11 @@ let obj = arg1(dependencyMap[5]);
 obj = { title: { marginBottom: 12 } };
 obj = { borderRadius: importDefault(dependencyMap[6]).radii.xs, backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_SURFACE_HIGH };
 obj.creditList = obj;
-obj.creditItem = { WEBHOOK_DELETE: 80, EMOJI_CREATE: 80, EMOJI_UPDATE: 40 };
-obj.textContainer = { right: null, bottom: null, position: null, alignItems: null };
+obj.creditItem = {};
+obj.textContainer = { -412991801: "buffered", 1932219241: "isArray", -1769568180: "isArray", 1372909666: "CONSOLES_DEVICES_COMMAND" };
 obj.headerText = { lineHeight: 20 };
 obj.subText = { lineHeight: 16 };
-obj.timeText = { baseColor: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011797377198986917, IOS_AGE_GATE_MODAL: 0.0000000000000000000000000000000000000000000000000000000000000000000000012074054739409552 };
+obj.timeText = { "Bool(true)": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011797377198986917, "Bool(true)": 0.0000000000000000000000000000000000000000000000000000000000000000000000012074054739451375 };
 const tmp3 = arg1(dependencyMap[4]);
 obj.divider = { borderBottomWidth: 1, borderBottomColor: importDefault(dependencyMap[6]).colors.BORDER_SUBTLE };
 obj.creditDescription = { marginTop: 8 };
@@ -132,7 +132,7 @@ export default function PremiumAccountCredit(currentSubscription) {
       const valueResult = found.groupBy((subscriptionPlanId) => subscriptionPlanId.subscriptionPlanId).value();
       View = valueResult;
       obj = { style };
-      obj = { 0: -1841229468, 9223372036854775807: 1912603216, 0: 51, -9223372036854775808: 36, style: tmp.title };
+      obj = { 1501064855: "SERVER_GUIDE_CHANNEL_SELECTED", -1267889981: "EAPLAY", -1145697943: "r", -1266241916: "FULL", style: tmp.title };
       const intl = arg1(closure_2[8]).intl;
       obj.children = intl.string(arg1(closure_2[8]).t.YugZY0);
       const items1 = [callback(arg1(closure_2[11]).Text, obj), , , ];

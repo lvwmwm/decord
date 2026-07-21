@@ -1,10 +1,10 @@
-// Module ID: 14053
-// Function ID: 106754
+// Module ID: 14060
+// Function ID: 106777
 // Name: HAPPENING_NOW_CARD_MARGIN_RIGHT
 // Dependencies: []
 // Exports: HappeningNowCardHeader, HappeningNowCardSubtitle, default
 
-// Module 14053 (HAPPENING_NOW_CARD_MARGIN_RIGHT)
+// Module 14060 (HAPPENING_NOW_CARD_MARGIN_RIGHT)
 let HAPPENING_NOW_BADGE_SIZE;
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
@@ -50,8 +50,8 @@ let closure_21 = obj.createStyles((arg0, arg1, arg2, arg3) => {
   const obj3 = {};
   const merged = Object.assign(obj);
   obj3.card = { padding: closure_5, paddingRight: closure_14, marginRight: HAPPENING_NOW_CARD_MARGIN_RIGHT, height: closure_6, flexDirection: "row", alignItems: "center" };
-  obj3.cardBadgeWrapper = { onLongPressAvatar: true, onTapUsername: true, onLongPressUsername: true };
-  const obj5 = { y: 0, gatedChannel: 0, y: 0, width: HAPPENING_NOW_BADGE_SIZE, height: HAPPENING_NOW_BADGE_SIZE };
+  obj3.cardBadgeWrapper = { "Null": 3375103, "Null": -8192, "Null": 4320799 };
+  const obj5 = { cix: 0, y: 0, isArray: 0, width: HAPPENING_NOW_BADGE_SIZE, height: HAPPENING_NOW_BADGE_SIZE };
   let prop;
   if (!arg3) {
     prop = importDefault(dependencyMap[5]).colors.BACKGROUND_MOD_SUBTLE;
@@ -131,12 +131,12 @@ export const HappeningNowCardHeader = function HappeningNowCardHeader(displayNam
   let children;
   let noMargin;
   displayNameFont = displayNameFont.displayNameFont;
-  let obj = {};
+  let obj = { icon: "spring", label: "linear", subLabel: "easeInEaseOut" };
   ({ children, noMargin } = displayNameFont);
   Object.setPrototypeOf(null);
   const merged = Object.assign(displayNameFont, obj);
   const tmp3 = callback();
-  obj = { 1449288664: true, -1399499862: true, -1392005954: true, -714700971: true };
+  obj = { "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true };
   let str = "text-sm/semibold";
   if (tmp4) {
     str = "text-md/medium";

@@ -1,9 +1,9 @@
-// Module ID: 5998
-// Function ID: 49871
+// Module ID: 6000
+// Function ID: 49914
 // Name: metadata
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 5998 (metadata)
+// Module 6000 (metadata)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/DiscordNitroLockupLogo-2x.png.js");
 

@@ -1,10 +1,10 @@
-// Module ID: 15330
-// Function ID: 116741
+// Module ID: 15337
+// Function ID: 116765
 // Name: compareUserItems
 // Dependencies: []
 // Exports: default
 
-// Module 15330 (compareUserItems)
+// Module 15337 (compareUserItems)
 function compareUserItems(user, user2) {
   if (user.user.id === user2.user.id) {
     let compareResult = importDefault(dependencyMap[20]).compare(user.applicationId, user2.applicationId);
@@ -202,6 +202,10 @@ export default function FriendRequestsScreen() {
   callback2 = React.useCallback((arg0, arg1) => {
     if (1 === arg0) {
       let obj = {
+        UPLOAD_INTL_DATA: "/assets/design/components/Illustration/native/redesign/generated/images",
+        src: 292,
+        markExplicitSearchSubmitted: 182,
+        SPACE_XXL: null,
         component() {
             let obj = { hasIcons: false };
             let tmp2 = null;
@@ -213,7 +217,7 @@ export default function FriendRequestsScreen() {
               };
               const intl = callback(closure_2[29]).intl;
               obj.label = intl.string(callback(closure_2[29]).t.fUQoqD);
-              obj = { INTEGRATION_CREATE: "<string:3305963521>", ConstraintReasonCode: "<string:671547393>", children: closure_11.length };
+              obj = { children: closure_11.length };
               obj.trailing = callback2(callback(closure_2[33]).Text, obj);
               obj.arrow = true;
               tmp2 = callback2(callback(closure_2[32]).TableRow, obj);
@@ -228,7 +232,7 @@ export default function FriendRequestsScreen() {
               };
               const intl2 = callback(closure_2[29]).intl;
               obj1.label = intl2.string(callback(closure_2[29]).t.en1Gkz);
-              const obj2 = { INTEGRATION_CREATE: "<string:3305963521>", ConstraintReasonCode: "<string:671547393>", children: closure_12.length };
+              const obj2 = { children: closure_12.length };
               obj1.trailing = callback2(callback(closure_2[33]).Text, obj2);
               obj1.arrow = true;
               tmp7 = callback2(callback(closure_2[32]).TableRow, obj1);
@@ -302,7 +306,7 @@ export default function FriendRequestsScreen() {
           }(incoming.length);
         }
     };
-    const obj7 = { INTEGRATION_CREATE: "png", ConstraintReasonCode: "absolute" };
+    const obj7 = {};
     const intl3 = arg1(dependencyMap[29]).intl;
     obj7.children = intl3.string(arg1(dependencyMap[29]).t.O8k7O4);
     obj6.children = outgoingData(arg1(dependencyMap[33]).Text, obj7);

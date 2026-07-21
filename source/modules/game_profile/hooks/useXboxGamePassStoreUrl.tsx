@@ -1,10 +1,10 @@
-// Module ID: 8595
-// Function ID: 68252
+// Module ID: 8599
+// Function ID: 68264
 // Name: useXboxGamePassStoreUrl
 // Dependencies: []
 // Exports: default
 
-// Module 8595 (useXboxGamePassStoreUrl)
+// Module 8599 (useXboxGamePassStoreUrl)
 const Distributors = require(dependencyMap[0]).Distributors;
 const _module = require(dependencyMap[3]);
 const result = _module.fileFinishedImporting("modules/game_profile/hooks/useXboxGamePassStoreUrl.tsx");

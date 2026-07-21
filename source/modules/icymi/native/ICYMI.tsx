@@ -1,10 +1,10 @@
-// Module ID: 15044
-// Function ID: 113261
+// Module ID: 15051
+// Function ID: 113285
 // Name: SettingsButton
 // Dependencies: []
 // Exports: ICYMITab
 
-// Module 15044 (SettingsButton)
+// Module 15051 (SettingsButton)
 function SettingsButton() {
   const obj = {
     icon: callback2(arg1(dependencyMap[15]).FiltersHorizontalIcon, { size: "sm" }),
@@ -37,7 +37,7 @@ function ICYMIHeaderTextWrapper() {
     style: callback5().headerText,
     children: importAllResult.useMemo(() => {
       let obj = {};
-      obj = { "Bool(false)": null, "Bool(false)": "hidden", "Bool(false)": true, "Bool(false)": "/assets/design/components/Icon/native/redesign/generated/images" };
+      obj = {};
       const intl = callback(closure_2[23]).intl;
       obj.children = intl.string(callback(closure_2[23]).t.SY4sdZ);
       const items = [callback2(callback(closure_2[22]).Text, obj), ];
@@ -240,7 +240,7 @@ function ICYMI(inNestedNavigator) {
     onPress() {
       stateFromStores(visibleItemIds[16]).itemInteracted("refresh_button", "refresh_button", "press_refresh_button");
       const obj = stateFromStores(visibleItemIds[16]);
-      stateFromStores(visibleItemIds[16]).feedPageActioned({ actionParameters: { "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true } });
+      stateFromStores(visibleItemIds[16]).feedPageActioned({ actionParameters: { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null } });
       handleOnRefresh();
       lib();
     },
@@ -312,28 +312,29 @@ let closure_17 = arg1(dependencyMap[11]).createStyles((paddingTop) => {
 });
 const obj2 = arg1(dependencyMap[11]);
 let closure_18 = arg1(dependencyMap[13]).createICYMIStyles((margin) => {
-  let obj = { container: {} };
-  obj = { 0: 1899393361, 9223372036854775807: -1, 9223372036854775807: 1922261329, 0: 24, borderTopLeftRadius: importDefault(dependencyMap[12]).radii.sm, borderTopRightRadius: importDefault(dependencyMap[12]).radii.sm };
+  let obj = { container: { "Null": true, d: true, kind: true } };
+  obj = { "Bool(false)": 1899415889, "Bool(false)": -1, "Bool(false)": 1922044753, "Bool(false)": 24, borderTopLeftRadius: importDefault(dependencyMap[12]).radii.sm, borderTopRightRadius: importDefault(dependencyMap[12]).radii.sm };
   obj.containerInPanels = obj;
   obj = { backgroundColor: importDefault(dependencyMap[12]).colors.BACKGROUND_BASE_LOW };
   obj.containerBackground = obj;
-  const obj1 = { <string:2071771907>: "isArray", <string:1985397584>: "NOTIFICATION_SETTINGS_MODAL_OPEN", <string:1415599467>: "isArray", backgroundColor: importDefault(dependencyMap[12]).colors.BACKGROUND_BASE_LOW };
+  const obj1 = { "Bool(true)": "isArray", "Bool(true)": "CONTENT_INVENTORY_TOGGLE_FEED_HIDDEN", "Bool(true)": "isArray", backgroundColor: importDefault(dependencyMap[12]).colors.BACKGROUND_BASE_LOW };
   obj.flashListWrapper = obj1;
   obj.refreshing = { color: importDefault(dependencyMap[12]).colors.INTERACTIVE_TEXT_DEFAULT };
-  const obj3 = { "Null": null, "Null": null, "Null": null, "Null": null, backgroundColor: importDefault(dependencyMap[12]).colors.BACKGROUND_BASE_LOW };
+  const obj3 = { jsx: null, label: null, body: null, paddingHorizontal: null, backgroundColor: importDefault(dependencyMap[12]).colors.BACKGROUND_BASE_LOW };
   obj.header = obj3;
-  obj.headerLeft = { -9223372036854775808: true, filter: true };
+  obj.headerLeft = {};
   const obj2 = { color: importDefault(dependencyMap[12]).colors.INTERACTIVE_TEXT_DEFAULT };
   obj.headerClose = { marginRight: importDefault(dependencyMap[12]).space.PX_16, height: importDefault(dependencyMap[12]).space.PX_32, width: importDefault(dependencyMap[12]).space.PX_32, alignItems: "center", justifyContent: "center", borderRadius: importDefault(dependencyMap[12]).radii.lg };
   obj.headerTitle = { marginHorizontal: margin.margin };
-  obj.headerText = {};
-  const obj6 = { -9223372036854775808: true, filter: true, gap: importDefault(dependencyMap[12]).space.PX_12 };
-  obj.headerActions = obj6;
-  const obj7 = { <string:1140607356>: null, <string:1751293292>: null, borderRadius: importDefault(dependencyMap[12]).radii.round };
+  obj.headerText = { <string:3461472865>: "safety_user_sentiment_notice_dismissed_at", <string:1447977218>: "message", <string:1640807382>: null };
+  const obj4 = { marginRight: importDefault(dependencyMap[12]).space.PX_16, height: importDefault(dependencyMap[12]).space.PX_32, width: importDefault(dependencyMap[12]).space.PX_32, alignItems: "center", justifyContent: "center", borderRadius: importDefault(dependencyMap[12]).radii.lg };
+  const obj5 = { marginHorizontal: margin.margin };
+  obj.headerActions = { gap: importDefault(dependencyMap[12]).space.PX_12 };
+  const obj7 = { <string:1632221346>: null, <string:2722977214>: null, borderRadius: importDefault(dependencyMap[12]).radii.round };
   obj.notificationBadge = obj7;
-  const obj8 = { -9223372036854775808: 323420161, 0: -2104950783, paddingTop: importDefault(dependencyMap[12]).space.PX_96 };
+  const obj8 = { markAsSpoilerTitle: null, keyboardAppearance: null, paddingTop: importDefault(dependencyMap[12]).space.PX_96 };
   obj.loading = obj8;
-  const obj9 = { "Bool(false)": 1375732026, "Bool(false)": 1685942490, "Bool(false)": 1345143057, "Bool(false)": 410124290, "Bool(false)": 402653184, "Bool(false)": 16777216, backgroundColor: importDefault(dependencyMap[12]).colors.BORDER_SUBTLE };
+  const obj9 = { "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, backgroundColor: importDefault(dependencyMap[12]).colors.BORDER_SUBTLE };
   obj.headerBorder = obj9;
   return obj;
 });

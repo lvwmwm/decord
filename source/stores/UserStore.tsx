@@ -456,7 +456,7 @@ function handleConnectionOpen(arg0) {
     });
   });
   if (null != obj[closure_11.getId(closure_11)]) {
-    const obj = { "Null": "getIconSource", "Null": "changeThreadSettings", "Bool(true)": "showOptionValuesPicker", "Bool(true)": "showOptionValuesPicker", "Bool(true)": null, id: closure_18 };
+    const obj = { "Null": "FOREST", "Null": "UNACCEPTED", "Null": "UNDETERMINED", "Null": "UNDETERMINED", "Null": "UNDETERMINED", id: closure_18 };
     const prototype = ctor.prototype;
     const tmp10 = new ctor(obj);
     obj[closure_18] = tmp10;

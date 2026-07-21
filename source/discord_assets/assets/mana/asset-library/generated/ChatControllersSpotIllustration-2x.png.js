@@ -1,9 +1,9 @@
-// Module ID: 5934
-// Function ID: 49775
+// Module ID: 5936
+// Function ID: 49818
 // Name: metadata
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 5934 (metadata)
+// Module 5936 (metadata)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/ChatControllersSpotIllustration-2x.png.js");
 

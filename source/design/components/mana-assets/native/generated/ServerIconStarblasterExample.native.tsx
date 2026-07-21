@@ -1,10 +1,10 @@
-// Module ID: 6485
-// Function ID: 50601
+// Module ID: 6487
+// Function ID: 50644
 // Name: ServerIconStarblasterExample
-// Dependencies: [33554457, 1946157056, 33, 5231]
+// Dependencies: [33554457, 1946157056, 33, 5233]
 // Exports: ServerIconStarblasterExample
 
-// Module 6485 (ServerIconStarblasterExample)
+// Module 6487 (ServerIconStarblasterExample)
 import preload from "preload";
 
 const jsx = require(dependencyMap[0]).jsx;

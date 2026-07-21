@@ -1,10 +1,10 @@
-// Module ID: 7446
-// Function ID: 59729
+// Module ID: 7450
+// Function ID: 59740
 // Name: MarketingPageBannerTile
 // Dependencies: []
 // Exports: default
 
-// Module 7446 (MarketingPageBannerTile)
+// Module 7450 (MarketingPageBannerTile)
 importAll(dependencyMap[0]);
 ({ Image: closure_3, View: closure_4 } = arg1(dependencyMap[1]));
 let closure_5 = importDefault(dependencyMap[2]);
@@ -20,7 +20,7 @@ const obj1 = { borderRadius: importDefault(dependencyMap[5]).radii.md, marginBot
 obj.bodyText = { marginTop: importDefault(dependencyMap[5]).space.PX_4 };
 const obj2 = { marginTop: importDefault(dependencyMap[5]).space.PX_4 };
 obj.ctaButton = { marginTop: importDefault(dependencyMap[5]).space.PX_16 };
-obj.nitroWheelIcon = {};
+obj.nitroWheelIcon = { "Bool(true)": null, "Bool(true)": null, "Bool(true)": null };
 let closure_8 = obj.createStyles(obj);
 const obj3 = { marginTop: importDefault(dependencyMap[5]).space.PX_16 };
 const result = arg1(dependencyMap[18]).fileFinishedImporting("modules/premium/promotions/native/MarketingPageBannerTile.tsx");
@@ -87,11 +87,14 @@ export default function MarketingPageBannerTile(bannerFields) {
   const items3 = [tmp13, , , ];
   obj6 = { children: bannerFields.header };
   items3[1] = callback(arg1(dependencyMap[13]).Text, obj6);
-  const obj7 = { "Bool(false)": "<string:275989850>", "Bool(false)": "<string:402653184>", style: tmp.bodyText };
+  const obj7 = { style: tmp.bodyText };
   const items4 = [formatStringWithCommonPremiumParams, " ", ];
   let tmp17 = null != helpArticleLinkProps;
   if (tmp17) {
     const obj8 = {
+      alignItems: 32,
+      justifyContent: 32,
+      minWidth: null,
       onPress() {
           return callback(closure_2[15]).openURL(helpArticleLinkProps.url);
         },
@@ -105,7 +108,7 @@ export default function MarketingPageBannerTile(bannerFields) {
   let tmp21 = null != bannerFields.button;
   if (tmp21) {
     const obj9 = { style: tmp.ctaButton };
-    const obj10 = { text: bannerFields.button.copy, onPress: buttonActionHandler };
+    const obj10 = { "Null": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000232656173919898, "Null": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002540898980601415, "Null": 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000012741663005024175, "Null": -68.05714548874676, "Null": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000014992948780250344, "Null": 0.000000000000000000000000000000000000005881211672176443, text: bannerFields.button.copy, onPress: buttonActionHandler };
     const obj11 = {};
     const items5 = [tmp.nitroWheelIcon];
     obj11.style = items5;

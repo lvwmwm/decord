@@ -1,10 +1,10 @@
-// Module ID: 8127
-// Function ID: 64329
+// Module ID: 8131
+// Function ID: 64341
 // Name: PremiumFeatureList
 // Dependencies: []
 // Exports: default
 
-// Module 8127 (PremiumFeatureList)
+// Module 8131 (PremiumFeatureList)
 let closure_2 = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 ({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[3]));

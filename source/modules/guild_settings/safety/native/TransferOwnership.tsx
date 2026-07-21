@@ -1,10 +1,10 @@
-// Module ID: 10976
-// Function ID: 85456
+// Module ID: 10981
+// Function ID: 85477
 // Name: TransferOwnership
 // Dependencies: []
 // Exports: default
 
-// Module 10976 (TransferOwnership)
+// Module 10981 (TransferOwnership)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 let closure_5 = importAll(dependencyMap[2]);
@@ -19,16 +19,16 @@ let obj = arg1(dependencyMap[8]);
 obj = {};
 obj = { backgroundColor: importDefault(dependencyMap[9]).colors.BACKGROUND_BASE_LOW };
 obj.background = obj;
-const obj1 = { <string:1687568131>: 52881784.83212474, <string:2700805186>: 0.0000000000000000000000000000000000000000000000000000000000000000000000011319598867188059, backgroundColor: importDefault(dependencyMap[9]).colors.BACKGROUND_BASE_LOW };
+const obj1 = { "Null": 52881784.83212474, "Null": 0.0000000000000000000000000000000000000000000000000000000000000000000000011319598867188059, backgroundColor: importDefault(dependencyMap[9]).colors.BACKGROUND_BASE_LOW };
 obj.header = obj1;
 obj.arrow = {};
 obj.avatarsWrapper = {};
-const obj2 = { icon: "png", construct: "text-xs/semibold", body: "text-brand", color: "flex", accessibilityRole: "center", includes: "center", backgroundColor: importDefault(dependencyMap[9]).colors.BACKGROUND_BASE_LOW };
+const obj2 = { subtitle: "png", color: "text-xs/semibold", subtitleColor: "text-brand", icon: "flex", maxFontSizeMultiplier: "center", variant: "center", backgroundColor: importDefault(dependencyMap[9]).colors.BACKGROUND_BASE_LOW };
 obj.avatarFauxBorder = obj2;
 obj.otherUserAvatar = {};
 obj.aka = { flex: 1 };
-obj.miniAvatar = { to: "<string:1124139010>", code: "f14c54685496e4b330372e883666fa1c", marginBottom: "ko.messages.f14c54685496e4b330372e883666fa1c.compiled.messages" };
-obj.miniGuildIcon = { "Bool(false)": "isArray", "Bool(false)": "current", "Bool(false)": "textAlign", "Bool(false)": "r" };
+obj.miniAvatar = { "Null": -0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000023534373715265644, "Null": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000020653807, "Null": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000213138317357 };
+obj.miniGuildIcon = { <string:1388418753>: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000012371042442948493, <string:1022837908>: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001895504874615526, <string:3498791010>: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000016102884977966082, <string:1824802589>: 228669927225587730000000000000000000000000 };
 let closure_16 = obj.createStyles(obj);
 const tmp4 = arg1(dependencyMap[7]);
 const result = arg1(dependencyMap[27]).fileFinishedImporting("modules/guild_settings/safety/native/TransferOwnership.tsx");
@@ -97,7 +97,7 @@ export default function TransferOwnership(guild) {
   const nickname = obj3.getNickname(guild.id, undefined, toUser);
   const React = nickname;
   const hasAvatarForGuildResult = toUser.hasAvatarForGuild(guild.id);
-  obj = { style: tmp2.background };
+  obj = { "Bool(true)": true, "Bool(true)": true, "Bool(true)": true, style: tmp2.background };
   obj = {};
   obj1 = { paddingTop: importDefault(closure_2[9]).space.PX_16, paddingHorizontal: token };
   obj.style = obj1;
@@ -222,7 +222,7 @@ export default function TransferOwnership(guild) {
     AKAHook: function NicknameAKA() {
       const tmp = callback4();
       let obj = {};
-      obj = { style: tmp.aka, children: ["gridSectionIndex", "recipientUser"] };
+      obj = { style: tmp.aka, children: ["options", "formatToPlainString"] };
       const items = [callback3(guild(closure_2[19]).Text, obj), , ];
       let tmp4 = null;
       if (hasAvatarForGuildResult) {

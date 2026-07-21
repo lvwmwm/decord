@@ -1,10 +1,12 @@
-// Module ID: 7789
-// Function ID: 62203
+// Module ID: 7793
+// Function ID: 62215
 // Name: getFirstSkemaFieldError
-// Dependencies: []
+// Dependencies: [1953825491, 683]
 // Exports: getFirstSkemaError
 
-// Module 7789 (getFirstSkemaFieldError)
+// Module 7793 (getFirstSkemaFieldError)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+
 function getFirstSkemaFieldError(errors, arg1) {
   let tmp5;
   let tmp6;
@@ -37,7 +39,7 @@ function getFirstSkemaFieldError(errors, arg1) {
 }
 let closure_0 = importDefault(dependencyMap[0]);
 let closure_1 = "_errors";
-const result = arg1(dependencyMap[1]).fileFinishedImporting("modules/interactions/SkemaUtils.tsx");
+const result = _isNativeReflectConstruct.fileFinishedImporting("modules/interactions/SkemaUtils.tsx");
 
 export const getFirstSkemaError = function getFirstSkemaError(errors) {
   return getFirstSkemaFieldError(errors, undefined);

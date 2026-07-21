@@ -5,28 +5,25 @@
 
 // Module 1178 (defaultButtonStyles)
 function defaultButtonStyles(theme) {
-  const triggerButton = { 0: -649003007, 1749046: 7406221, -9223372036854775808: 16777216, 0: 114, 9223372036854775807: 0, 9223372036854775807: 19071232, -9223372036854775808: 113, 0: 7406336, 0: 33554432, 9223372036854775807: 18940450, -9223372036854775808: 94754, 9223372036854775807: 65536, 9223372036854775807: 19070976, 0: 48121153, 9223372036854775807: -1722670848 };
-  ({ background: obj.backgroundColor, border: obj.shadowColor } = theme);
-  triggerButton.shadowOffset = { aze: "Lightbox Frame", azj: "EdgeHTML" };
-  triggerButton.borderColor = theme.border;
+  const triggerButton = { backgroundColor: theme.background, shadowColor: theme.border, shadowOffset: {}, borderColor: theme.border };
   const triggerText = { color: theme.foreground, fontSize: 18 };
-  const obj = { "Bool(false)": "transparent", "Bool(false)": null, "Bool(false)": null, "Bool(false)": "row", tintColor: theme.sentryLogo };
+  const obj = { height: "transparent", width: null, margin: null, backgroundColor: "row", tintColor: theme.sentryLogo };
   return { triggerButton, triggerText, triggerIcon: obj };
 }
 arg5.default = function defaultStyles(color) {
   const container = { backgroundColor: color.background };
-  const title = { <string:2504020676>: null, <string:3932406619>: 15, <string:1683641527>: 5, <string:1971198978>: "center", <string:1532105835>: 1, color: color.foreground };
-  const obj = { position: "space-between", top: null, color: color.foreground };
-  ({ background: obj6.backgroundColor, border: obj6.borderColor } = color);
-  const obj6 = { color: color.foreground, fontSize: 16 };
-  const obj11 = { aze: 30706176, azj: 378290688, tintColor: color.sentryLogo };
-  return { container, title, label: obj, input: { borderColor: color.border, color: color.foreground }, textArea: { color: color.foreground }, screenshotButton: { 0: -14281046873471127000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, -9223372036854775808: -14281046873471127000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, 9223372036854775807: -378056810537006760000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, 0: -378056810537005800000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, 9223372036854775807: -0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010283169444330091, 0: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000006345951735074115 }, screenshotContainer: { "Bool(true)": true, "Bool(true)": true, "Bool(true)": true, "Bool(true)": -0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002353438197885779 }, screenshotThumbnail: {}, screenshotText: { color: color.foreground, fontSize: 16 }, takeScreenshotButton: { backgroundColor: color.background, borderColor: color.border }, takeScreenshotText: obj6, submitButton: { backgroundColor: color.accentBackground }, submitText: { color: color.accentForeground, fontSize: 18 }, cancelButton: { backgroundColor: color.background, borderColor: color.border }, cancelText: { color: color.foreground, fontSize: 16 }, titleContainer: { no: "done", name: "construct" }, sentryLogo: obj11 };
+  const title = { "Null": null, "Null": 15, "Null": 5, "Null": "center", "Null": 1, color: color.foreground };
+  ({ border: obj4.borderColor, foreground: obj4.color } = color);
+  const obj2 = { "Bool(true)": true, "Bool(true)": true, color: color.foreground };
+  const obj4 = { color: color.foreground, fontSize: 16 };
+  const obj7 = { XSMALL: "<string:3787522049>", SMALL: "<string:1714487297>", REFRESH_MEDIUM_10: "<string:1717986918>", MEDIUM: "<string:1900013158>", LARGE: "y", backgroundColor: color.accentBackground };
+  ({ background: obj12.backgroundColor, border: obj12.borderColor } = color);
+  return { container, title, label: { color: color.foreground }, input: { "Null": "center", "Null": "flex", "Null": "row", "Null": 10, "Null": 8, "Null": 56, "Null": 1 }, textArea: obj2, screenshotButton: { backgroundColor: color.background, borderColor: color.border }, screenshotContainer: {}, screenshotThumbnail: {}, screenshotText: obj4, takeScreenshotButton: { backgroundColor: color.background, borderColor: color.border }, takeScreenshotText: { color: color.foreground, fontSize: 16 }, submitButton: obj7, submitText: { color: color.accentForeground, fontSize: 18 }, cancelButton: { 9223372036854775807: "secondary", 0: "md", 0: null, 0: null, 0: true }, cancelText: { color: color.foreground, fontSize: 16 }, titleContainer: { "Bool(false)": true, "Bool(false)": true }, sentryLogo: { tintColor: color.sentryLogo } };
 };
 arg5.defaultButtonStyles = defaultButtonStyles;
 arg5.defaultScreenshotButtonStyles = defaultButtonStyles;
-arg5.modalWrapper = { left: "isArray", borderColor: "skuId", borderWidth: "T", backgroundColor: "r", borderRadius: "isArray" };
+arg5.modalWrapper = { o: "center", concat: null, o: 4, borderRadius: 4, position: "rgba(0, 0, 0, 0.75)" };
 arg5.modalSheetContainer = function modalSheetContainer(theme) {
-  const obj = { two_way_link_code: "/assets/.cache/intl/aW50bA==", listenersIconWrapper: null, pillContainer: "66d1e4125b6e3fe86e5116b45518629e", panelHeader: "de.messages.66d1e4125b6e3fe86e5116b45518629e.compiled.messages", onStartReachedThreshold: "jsona", ONE_DAY_MS: "Deutsch", pointerEvents: "German", fetchChannel: "de", PREMIUM_TIER_2_PLANS: "german", ViewViolationDetail: true, panelHeader: "/assets/.cache/intl/aW50bA==", backgroundColor: theme.background, shadowOffset: { aze: "859b8a75ee740764629b8ea0f491c8f0", azj: "el.messages.859b8a75ee740764629b8ea0f491c8f0.compiled.messages" } };
-  return obj;
+  return { backgroundColor: theme.background, shadowOffset: {} };
 };
 arg5.topSpacer = { height: 64 };

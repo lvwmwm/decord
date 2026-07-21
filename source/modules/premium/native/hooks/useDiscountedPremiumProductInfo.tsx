@@ -1,10 +1,10 @@
-// Module ID: 7175
-// Function ID: 57805
+// Module ID: 7179
+// Function ID: 57816
 // Name: useDiscountedPremiumProductInfo
 // Dependencies: []
 // Exports: useDiscountedPremiumProductInfo
 
-// Module 7175 (useDiscountedPremiumProductInfo)
+// Module 7179 (useDiscountedPremiumProductInfo)
 let closure_2 = importAll(dependencyMap[0]);
 let closure_3 = importDefault(dependencyMap[1]);
 const CurrencyCodes = arg1(dependencyMap[2]).CurrencyCodes;

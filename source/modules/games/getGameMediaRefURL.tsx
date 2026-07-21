@@ -1,10 +1,10 @@
-// Module ID: 4565
-// Function ID: 39995
+// Module ID: 4156
+// Function ID: 35103
 // Name: getGameMediaRefURL
 // Dependencies: []
 // Exports: default
 
-// Module 4565 (getGameMediaRefURL)
+// Module 4156 (getGameMediaRefURL)
 const _module = require(dependencyMap[3]);
 const result = _module.fileFinishedImporting("modules/games/getGameMediaRefURL.tsx");
 

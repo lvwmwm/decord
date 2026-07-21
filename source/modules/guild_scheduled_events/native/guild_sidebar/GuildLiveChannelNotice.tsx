@@ -1,10 +1,10 @@
-// Module ID: 14882
-// Function ID: 112128
+// Module ID: 14889
+// Function ID: 112152
 // Name: UserSummaryRow
 // Dependencies: []
 // Exports: getScaledLiveChannelNoticeHeight
 
-// Module 14882 (UserSummaryRow)
+// Module 14889 (UserSummaryRow)
 function UserSummaryRow(arg0) {
   let audienceCount;
   let isLiveStreaming;
@@ -229,7 +229,7 @@ function SeeDetailButton(guildEvent) {
     obj = { eventId: guildEvent.id, event: guildEvent };
     const result = obj.openGuildEventDetails(obj);
   }, items);
-  obj = { <string:1650710704>: 36, <string:1420607057>: 8, <string:3096691101>: 8, onPress: callback };
+  obj = { <string:4217742945>: 1912602624, <string:1655330464>: 36, <string:1722587473>: 8, onPress: callback };
   const intl = arg1(dependencyMap[31]).intl;
   obj.text = intl.string(arg1(dependencyMap[31]).t.z4FcDs);
   obj.children = callback(arg1(dependencyMap[27]).Button, obj);
@@ -336,18 +336,18 @@ let closure_23 = importDefaultResult.reactParserFor(obj);
 const obj2 = { react: arg1(dependencyMap[13]).inlineChannelReact };
 let closure_24 = arg1(dependencyMap[18]).createStyles((height) => {
   let obj = { container: obj };
-  obj = { -9223372036854775808: true, filter: true, marginTop: PX_82 };
+  obj = { marginTop: PX_82 };
   obj = { backgroundColor: importDefault(dependencyMap[10]).colors.BACKGROUND_MOD_STRONG, borderRadius: importDefault(dependencyMap[10]).radii.round, height };
   obj.overflowCircle = obj;
   obj.wrapper = { borderRadius: importDefault(dependencyMap[10]).radii.round, backgroundColor: importDefault(dependencyMap[10]).colors.BACKGROUND_BASE_LOW, height: closure_19 };
-  const obj2 = { expand: "y", backgroundColor: "isArray", padding: "key", alignItems: "Array", experimental_useNativeText: "construct", borderRadius: importDefault(dependencyMap[10]).radii.round, height };
+  const obj2 = { "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, backgroundColor: false, borderRadius: importDefault(dependencyMap[10]).radii.round, height };
   obj.badge = obj2;
   const obj1 = { borderRadius: importDefault(dependencyMap[10]).radii.round, backgroundColor: importDefault(dependencyMap[10]).colors.BACKGROUND_BASE_LOW, height: closure_19 };
   obj.audienceBadge = { backgroundColor: importDefault(dependencyMap[10]).colors.BACKGROUND_BASE_LOWER };
   return obj;
 });
 const obj7 = arg1(dependencyMap[18]);
-const obj3 = { card: { padding: PX_122 }, row: { -9223372036854775808: true, filter: true }, infoRow: { marginTop: PX_4 }, liveNowIcon: { marginEnd: 4 }, uppercase: { textTransform: "uppercase" } };
+const obj3 = { card: { padding: PX_122 }, row: {}, infoRow: { marginTop: PX_4 }, liveNowIcon: { marginEnd: 4 }, uppercase: { textTransform: "uppercase" } };
 const obj4 = {};
 const obj8 = arg1(dependencyMap[18]);
 if (obj11.isAndroid()) {
@@ -376,7 +376,7 @@ let closure_26 = importAllResult.memo((arg0) => {
   let obj = {};
   obj = { style: tmp.row };
   if (null != LiveIcon) {
-    obj = { flexDirection: true, alignItems: true, style: tmp.calendarIcon };
+    obj = { flex: "<string:591855618>", flexGrow: "<string:3578855426>", style: tmp.calendarIcon };
     let tmp6 = callback(LiveIcon, obj);
   } else {
     const obj1 = { style: tmp.liveDot };
@@ -408,7 +408,7 @@ let closure_26 = importAllResult.memo((arg0) => {
     const obj5 = {};
     let tmp14 = null != LocationIcon;
     if (tmp14) {
-      const obj6 = { style: tmp.liveNowIcon };
+      const obj6 = { -318614188: false, 1020595765: false, 1406296506: false, style: tmp.liveNowIcon };
       tmp14 = callback(LocationIcon, obj6);
     }
     const items4 = [tmp14, ];

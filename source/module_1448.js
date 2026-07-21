@@ -555,7 +555,7 @@ export default () => {
         tmp2 = color[2] < 5;
       }
       if (tmp2) {
-        vboxes[0].color = [true, true, true];
+        vboxes[0].color = ["TRACEPARENT_REGEXP", "spinnerVisibleStart", "namespaceURI"];
       }
       const diff = vboxes.length - 1;
       const color2 = vboxes[diff].color;

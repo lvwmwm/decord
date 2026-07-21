@@ -1,10 +1,10 @@
-// Module ID: 12262
-// Function ID: 94028
+// Module ID: 12269
+// Function ID: 94051
 // Name: LargeCountDownPill
 // Dependencies: []
 // Exports: default
 
-// Module 12262 (LargeCountDownPill)
+// Module 12269 (LargeCountDownPill)
 const _module = require(dependencyMap[0]);
 ({ TouchableOpacity: closure_3, View: closure_4 } = _module);
 const _module1 = require(dependencyMap[1]);
@@ -13,9 +13,9 @@ const _module2 = require(dependencyMap[2]);
 let obj = {};
 obj = { borderRadius: importDefault(dependencyMap[3]).radii.round };
 obj.largeCountdownPill = obj;
-const obj1 = { "Bool(true)": 3, "Bool(true)": 2, "Bool(true)": "auto", "Bool(true)": 1, "Bool(true)": null, color: importDefault(dependencyMap[3]).colors.TEXT_STATUS_IDLE };
+const obj1 = { w: 3, __closure: 2, <string:1890922434>: "auto", <string:38486597>: 1, <string:44074451>: null, color: importDefault(dependencyMap[3]).colors.TEXT_STATUS_IDLE };
 obj.largeCountdownPillText = obj1;
-obj.iconStyle = { aze: "<string:16777479>", azj: "<string:36295491>" };
+obj.iconStyle = {};
 let closure_7 = _module2.createStyles(obj);
 const _module3 = require(dependencyMap[8]);
 const result = _module3.fileFinishedImporting("modules/premium/fractional/native/LargeCountDownPill.tsx");

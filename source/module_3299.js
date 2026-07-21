@@ -14,16 +14,16 @@ obj = {
     return Number(arg0) + "e";
   }
 };
-obj.era = obj.default({ values: { narrow: [1867579393, 13320450], abbreviated: [-894500861, -899547132], wide: [] }, defaultWidth: "wide" });
+obj.era = obj.default({ values: { narrow: [null, null], abbreviated: [], wide: [] }, defaultWidth: "wide" });
 obj.quarter = obj.default({
-  values: { narrow: [false, false, false, false], abbreviated: [null, null, null, null], wide: [] },
+  values: { narrow: [], abbreviated: ["Array", "isArray", "x", "flexDirection"], wide: ["r", "isArray", "accessibilityRole", "lc"] },
   defaultWidth: "wide",
   argumentCallback(arg0) {
     return arg0 - 1;
   }
 });
-obj.month = obj.default({ values: { narrow: [0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004456143132310851, 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004241875101371775, 58840350721.52512, 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001544558296959693, "good", "goodnight", "nap", "night", "sleep", "sleeping", "tired", "whatever"], abbreviated: [false, false, false, false, false, false, false, false, false, false, false, false], wide: [] }, defaultWidth: "wide" });
-obj.day = obj.default({ values: { narrow: [false, false, false, false, false, false, true], short: [], abbreviated: [-1929379438, -704642189, -1543503124, 234881907, -1040186646, 1358955379, "I kw."], wide: [] }, defaultWidth: "wide" });
+obj.month = obj.default({ values: { narrow: [], abbreviated: [null, null, null, null, null, null, null, null, null, null, null, null], wide: [null, null, null, null, null, null, null, null, null, null, null, null] }, defaultWidth: "wide" });
+obj.day = obj.default({ values: { narrow: [], short: [], abbreviated: [], wide: [true, true, true, true, true, true, true] }, defaultWidth: "wide" });
 obj.dayPeriod = obj.default({ values: { narrow: {}, abbreviated: {}, wide: {} }, defaultWidth: "wide" });
 
 export default obj;

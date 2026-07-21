@@ -1,10 +1,10 @@
-// Module ID: 12032
-// Function ID: 92975
+// Module ID: 12039
+// Function ID: 92998
 // Name: ActionSheetBackdropToast
 // Dependencies: []
 // Exports: ActionSheetBackdropToast
 
-// Module 12032 (ActionSheetBackdropToast)
+// Module 12039 (ActionSheetBackdropToast)
 let closure_3 = importAll(dependencyMap[0]);
 const tmp2 = arg1(dependencyMap[1]);
 const View = tmp2.View;
@@ -20,7 +20,7 @@ obj["flex"] = 1;
 obj["alignItems"] = "center";
 obj["justifyContent"] = "center";
 obj.container = obj;
-obj1 = { size: "user", color: "flex", secondaryColor: "row", flex: "space-between", position: "wrap", overflow: 10, width: 12, backgroundColor: importDefault(dependencyMap[6]).colors.MOBILE_TOAST_BACKGROUND_DEFAULT, borderRadius: importDefault(dependencyMap[6]).radii.round };
+obj1 = { DID_REJOIN: "user", GiftingTier3SmallBadge: "flex", rowContainer: "row", getItemCount: "space-between", getFilenameToDebugIdMap: "wrap", STREAM_WATCH: 10, maxHeight: 12, backgroundColor: importDefault(dependencyMap[6]).colors.MOBILE_TOAST_BACKGROUND_DEFAULT, borderRadius: importDefault(dependencyMap[6]).radii.round };
 obj.toast = obj1;
 let closure_8 = obj1.createStyles(obj);
 let closure_9 = { code: "function ActionSheetBackdropToastTsx1(){const{isInIOS,isExpanded,maxDynamicContentSize,TOAST_BOTTOM_MARGIN,nonExpandedHeight,ACTION_SHEET_START_HEIGHT_RATIO,TOAST_BOTTOM_GAP,positionDelta,TOAST_ANIMATION_Y_DELTA,opacity}=this.__closure;return{bottom:(isInIOS?isExpanded?maxDynamicContentSize+TOAST_BOTTOM_MARGIN:nonExpandedHeight+TOAST_BOTTOM_MARGIN:isExpanded?maxDynamicContentSize+TOAST_BOTTOM_MARGIN:ACTION_SHEET_START_HEIGHT_RATIO*maxDynamicContentSize+TOAST_BOTTOM_GAP)+ +(1-positionDelta.get())*TOAST_ANIMATION_Y_DELTA,opacity:opacity.get()};}" };

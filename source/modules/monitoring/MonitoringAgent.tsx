@@ -1,13 +1,13 @@
-// Module ID: 6825
-// Function ID: 53918
+// Module ID: 6831
+// Function ID: 53964
 // Name: set
 // Dependencies: []
 
-// Module 6825 (set)
+// Module 6831 (set)
 let closure_2 = importDefault(dependencyMap[0]);
 let closure_3 = importDefault(dependencyMap[1]);
 const Endpoints = arg1(dependencyMap[2]).Endpoints;
-const set = new Set(["Array", "subscriptionBody", "Array", "formatRate", "Array"]);
+const set = new Set([]);
 const obj = { COUNT: "count", DISTRIBUTION: "distribution" };
 let tmp3 = () => {
   class MonitoringAgent {

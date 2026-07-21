@@ -1,10 +1,10 @@
-// Module ID: 11277
-// Function ID: 87772
+// Module ID: 11283
+// Function ID: 87795
 // Name: Item
 // Dependencies: []
 // Exports: default
 
-// Module 11277 (Item)
+// Module 11283 (Item)
 function Item(arg0) {
   let item;
   ({ item, index: closure_0, choices: closure_1, onChoiceSelect: closure_2 } = arg0);
@@ -58,7 +58,7 @@ function Item(arg0) {
     obj = { children: children.choice.displayName };
     return callback2(ListItem, obj);
   }).with(obj, (label) => {
-    const items = ["SHUTDOWN", label.label, "\""];
+    const items = ["GUILD_CREATION_INTENT_SELECTED", label.label, "\""];
     return callback2(ListItem, {
       label: callback3(label(closure_2[20]).Text, { children: items }),
       onPress() {
@@ -84,7 +84,7 @@ function Item(arg0) {
     obj = { children: children.choice.displayName };
     return callback2(ListItem, obj);
   }).with(obj, (label) => {
-    const items = ["SHUTDOWN", label.label, "\""];
+    const items = ["GUILD_CREATION_INTENT_SELECTED", label.label, "\""];
     return callback2(ListItem, {
       label: callback3(label(closure_2[20]).Text, { children: items }),
       onPress() {
@@ -120,9 +120,9 @@ let closure_7 = importDefault(dependencyMap[4]);
 arg1(dependencyMap[5]).AutoCompleteResultTypes;
 ({ jsx: closure_9, jsxs: closure_10 } = arg1(dependencyMap[7]));
 const tmp2 = arg1(dependencyMap[7]);
-let closure_11 = importDefault(dependencyMap[8]).debounce(importDefault(dependencyMap[9]), arg1(dependencyMap[6]).AUTOCOMPLETE_OPTION_DEBOUNCE_TIME, { "Bool(false)": null, "Bool(false)": null });
+let closure_11 = importDefault(dependencyMap[8]).debounce(importDefault(dependencyMap[9]), arg1(dependencyMap[6]).AUTOCOMPLETE_OPTION_DEBOUNCE_TIME, { flex: null, marginRight: null });
 const importDefaultResult = importDefault(dependencyMap[8]);
-let obj = { commandChoiceLoadingContainer: { -9223372036854775808: 323420161, 0: -2104950783 } };
+let obj = { commandChoiceLoadingContainer: { markAsSpoilerTitle: null, keyboardAppearance: null } };
 obj = { backgroundColor: importDefault(dependencyMap[11]).colors.BACKGROUND_MOD_MUTED, height: 16, borderRadius: importDefault(dependencyMap[11]).radii.lg, alignSelf: "flex-start" };
 obj.commandChoiceLoadingItem = obj;
 obj.emptyState = { backgroundColor: "transparent" };
@@ -202,7 +202,7 @@ export default function AppLauncherAutocompleteActionSheet(onDismiss) {
     callback(obj);
     const current = ref.current;
     if (null != current) {
-      current.scrollToOffset({ "Bool(true)": 9035158524362260000000000000000000000000000000000000000000000000000000000000000000000000000000, "Bool(true)": -222642488090540470000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 });
+      current.scrollToOffset({ -437125116: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002488040065571517, -435748860: -823154013994709700000000000000000000000000000000000000000000000 });
     }
   }, items3);
   const items4 = [onChoiceSelect, memo];

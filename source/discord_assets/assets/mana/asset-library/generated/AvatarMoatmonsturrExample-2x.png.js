@@ -1,9 +1,9 @@
-// Module ID: 5876
-// Function ID: 49688
+// Module ID: 5878
+// Function ID: 49731
 // Name: metadata
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 5876 (metadata)
+// Module 5878 (metadata)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/AvatarMoatmonsturrExample-2x.png.js");
 

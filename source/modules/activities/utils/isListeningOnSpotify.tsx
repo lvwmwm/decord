@@ -1,10 +1,10 @@
-// Module ID: 9069
-// Function ID: 71131
+// Module ID: 9073
+// Function ID: 71143
 // Name: isListeningOnSpotify
 // Dependencies: []
 // Exports: default
 
-// Module 9069 (isListeningOnSpotify)
+// Module 9073 (isListeningOnSpotify)
 const _module = require(dependencyMap[0]);
 ({ ActivityTypes: closure_2, PlatformTypes: closure_3 } = _module);
 const isSpotifyParty = require(dependencyMap[1]).isSpotifyParty;

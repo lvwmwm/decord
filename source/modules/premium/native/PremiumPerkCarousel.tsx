@@ -1,19 +1,18 @@
-// Module ID: 12253
-// Function ID: 93983
+// Module ID: 12260
+// Function ID: 94006
 // Name: PremiumPerkCarousel
-// Dependencies: [0, 131072, 0, 0, 0, 0, 4294967295, 0, 0]
+// Dependencies: []
 // Exports: default
 
-// Module 12253 (PremiumPerkCarousel)
-import closure_3 from "result";
-import { View } from "result";
-import result from "result";
-import result from "result";
-
+// Module 12260 (PremiumPerkCarousel)
+let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
-({ jsx: closure_6, jsxs: closure_7 } = result);
-let closure_8 = result.createStyles({ title: { marginLeft: 24 }, indicators: { marginBottom: -36 }, carousel: { marginTop: 16 }, carouselCard: { marginLeft: 8 }, lastCarouselCard: { marginRight: 8 } });
-result = arg1(dependencyMap[9]).fileFinishedImporting("modules/premium/native/PremiumPerkCarousel.tsx");
+const View = arg1(dependencyMap[2]).View;
+({ jsx: closure_6, jsxs: closure_7 } = arg1(dependencyMap[3]));
+const tmp2 = arg1(dependencyMap[3]);
+let closure_8 = arg1(dependencyMap[4]).createStyles({ title: { marginLeft: 24 }, indicators: { marginBottom: -36 }, carousel: { marginTop: 16 }, carouselCard: { marginLeft: 8 }, lastCarouselCard: { marginRight: 8 } });
+const obj = arg1(dependencyMap[4]);
+const result = arg1(dependencyMap[9]).fileFinishedImporting("modules/premium/native/PremiumPerkCarousel.tsx");
 
 export default function PremiumPerkCarousel(arg0) {
   let onItemChange;
@@ -47,7 +46,7 @@ export default function PremiumPerkCarousel(arg0) {
   const items1 = [callback2(arg1(dependencyMap[6]).Text, obj), , ];
   const obj1 = { style: items2, width, onPageChange: callback, pageIndictor: false, scrollViewProps: obj3 };
   const items2 = [tmp.carousel, { height: perkCardHeight + 8 }];
-  const obj3 = { <string:2941336378>: 11382, <string:3063964577>: 11520, <string:1656120571>: 11520, <string:89216571>: 5632, <string:1364484355>: 6656, snapToInterval: width + 8 + 0.2 };
+  const obj3 = { marginTop: true, paddingTop: true, flex: true, flexDirection: true, alignSelf: true, snapToInterval: width + 8 + 0.2 };
   obj1.children = perks.map((arg0, arg1) => {
     const items = [tmp.carouselCard, ];
     let lastCarouselCard = null;

@@ -1,9 +1,9 @@
-// Module ID: 11088
-// Function ID: 86283
+// Module ID: 11094
+// Function ID: 86306
 // Name: TextAreaCta
-// Dependencies: [31, 5304]
+// Dependencies: [31, 5306]
 
-// Module 11088 (TextAreaCta)
+// Module 11094 (TextAreaCta)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 
 let obj = { easing: require("module_31").STANDARD_EASING, duration: 250 };
@@ -28,5 +28,5 @@ export const CHAT_INPUT_FLOATING_COLLAPSED_SCALE = 0.5;
 export const CHAT_INPUT_FLOATING_EXIT_TIMING_CONFIG = obj;
 export const CHAT_INPUT_FLOATING_SLIDE_TIMING_CONFIG = obj;
 export const CHAT_INPUT_FLOATING_ENTER_OPACITY_TIMING_CONFIG = { easing: require("module_31").STANDARD_EASING, duration: 200 };
-export const CHAT_INPUT_FLOATING_BOUNCE_SPRING_CONFIG = { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null };
+export const CHAT_INPUT_FLOATING_BOUNCE_SPRING_CONFIG = { <string:1634937736>: null, <string:1733120470>: null, <string:1453996748>: null };
 export const CHAT_INPUT_FLOATING_BOUNCE_ENTER_DELAY_MS = 50;

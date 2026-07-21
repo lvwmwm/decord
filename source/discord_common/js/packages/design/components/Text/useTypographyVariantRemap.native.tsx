@@ -1,7 +1,7 @@
 // Module ID: 4131
 // Function ID: 34347
 // Name: useTypographyVariantRemap
-// Dependencies: []
+// Dependencies: [3388997639, 1627389967, 3791650842]
 // Exports: useTypographyVariantRemap
 
 // Module 4131 (useTypographyVariantRemap)

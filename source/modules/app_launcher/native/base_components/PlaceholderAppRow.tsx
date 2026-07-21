@@ -1,16 +1,16 @@
-// Module ID: 11192
-// Function ID: 87189
+// Module ID: 11198
+// Function ID: 87212
 // Name: PlaceholderAppRow
 // Dependencies: []
 // Exports: default
 
-// Module 11192 (PlaceholderAppRow)
+// Module 11198 (PlaceholderAppRow)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 const jsx = arg1(dependencyMap[2]).jsx;
 let obj = arg1(dependencyMap[3]);
 obj = {};
-obj = { aze: "boolean", azj: "string", borderRadius: importDefault(dependencyMap[4]).radii.sm, backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_MOD_SUBTLE };
+obj = { bhk: "boolean", bic: "string", borderRadius: importDefault(dependencyMap[4]).radii.sm, backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_MOD_SUBTLE };
 obj.loadingAppIcon = obj;
 obj.loadingTextPlaceholder = { backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_MOD_SUBTLE, borderRadius: importDefault(dependencyMap[4]).radii.lg };
 const obj1 = { backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_MOD_SUBTLE, borderRadius: importDefault(dependencyMap[4]).radii.lg };

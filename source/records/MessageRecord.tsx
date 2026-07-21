@@ -410,13 +410,13 @@ const tmp8 = (arg0) => {
       });
       if (-1 === closure_4) {
         if (NORMAL === MessageRecord(items[10]).ReactionTypes.BURST) {
-          let obj = { emoji, me_burst: flag, count_details: { channel: null, content: null }, burst_colors: items };
+          let obj = { emoji, me_burst: flag, count_details: {}, burst_colors: items };
           mapped.push(obj);
         } else if (NORMAL === MessageRecord(items[10]).ReactionTypes.VOTE) {
-          obj = { "Bool(true)": true, "Bool(true)": true, "Bool(true)": true, "Bool(true)": true, "Bool(true)": true, "Bool(true)": true, "Bool(true)": true, emoji, me_vote: flag, count_details: {}, burst_colors: [] };
+          obj = { "Bool(false)": "postal-address-country", "Bool(false)": "password", "Bool(false)": "email", "Bool(false)": "name-prefix", "Bool(false)": "name-suffix", "Bool(false)": "name", "Bool(false)": "name-middle", emoji, me_vote: flag, count_details: {}, burst_colors: [] };
           mapped.push(obj);
         } else {
-          obj = { WireType: null, duration: null, op: null, "Null": null, "Null": null, "Null": null, emoji, me: flag, count_details: { channel: 131072.00314656927, content: 0.000000000000000000000000000000000000000000000000000000011294471302334573 }, burst_colors: [] };
+          obj = { 0: null, -9223372036854775808: null, 9223372036854775807: null, 0: null, 0: null, 0: null, emoji, me: flag, count_details: {}, burst_colors: [] };
           mapped.push(obj);
         }
       }

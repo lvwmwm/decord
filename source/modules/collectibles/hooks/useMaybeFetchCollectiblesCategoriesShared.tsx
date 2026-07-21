@@ -1,10 +1,10 @@
-// Module ID: 7851
-// Function ID: 62585
+// Module ID: 7855
+// Function ID: 62597
 // Name: useMaybeFetchCollectiblesCategoriesShared
 // Dependencies: []
 // Exports: useMaybeFetchCollectiblesCategoriesShared
 
-// Module 7851 (useMaybeFetchCollectiblesCategoriesShared)
+// Module 7855 (useMaybeFetchCollectiblesCategoriesShared)
 let closure_2 = importDefault(dependencyMap[0]);
 ({ useEffect: closure_3, useCallback: closure_4 } = arg1(dependencyMap[1]));
 let closure_5 = importDefault(dependencyMap[2]);

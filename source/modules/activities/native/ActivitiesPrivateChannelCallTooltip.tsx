@@ -1,10 +1,10 @@
-// Module ID: 11791
-// Function ID: 91532
+// Module ID: 11798
+// Function ID: 91555
 // Name: items
 // Dependencies: []
 // Exports: default
 
-// Module 11791 (items)
+// Module 11798 (items)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 let closure_4 = importDefault(dependencyMap[2]);
@@ -12,10 +12,10 @@ let closure_5 = arg1(dependencyMap[3]).EMBEDDED_ACTIVITIES_BLOG_POST_URL;
 const jsx = arg1(dependencyMap[4]).jsx;
 let closure_7 = { duration: 500 };
 let obj = arg1(dependencyMap[5]);
-obj = { body: true, padding: "/assets/modules/quests/images", cursor: 435, type: 218, applicationId: null, TypeError: "92f827adadc1f86811fd4e36c86fdf27", enumerable: "nitro_modal_header_background" };
+obj = { sparse: true, unique: "/assets/modules/quests/images", base: 435, min: 218, max: null, length: "92f827adadc1f86811fd4e36c86fdf27", alphanum: "nitro_modal_header_background" };
 const items = [{ rotateZ: "225deg" }];
 obj.transform = items;
-let closure_8 = obj.createStyles({ arrow: obj, tooltip: { padding: 16 }, tooltipContainer: { "Bool(true)": 1627390479, "Bool(true)": 759239159, "Bool(true)": 1912603216, "Bool(true)": 24, "Bool(true)": 24 }, tooltipText: {}, closeButtonWrapper: { marginTop: 14 } });
+let closure_8 = obj.createStyles({ arrow: obj, tooltip: { padding: 16 }, tooltipContainer: { et: null, eu: null, fa: null, ff: null, fi: null }, tooltipText: {}, closeButtonWrapper: { marginTop: 14 } });
 let closure_9 = { code: "function ActivitiesPrivateChannelCallTooltipTsx1(){const{withRepeat,withSequence,withTiming,OFFSET,translateBounceOffset,TIMING_CONFIG}=this.__closure;return{transform:[{translateY:withRepeat(withSequence(withTiming(OFFSET,{duration:0}),withTiming(OFFSET+translateBounceOffset,TIMING_CONFIG),withTiming(OFFSET,TIMING_CONFIG)),10)}]};}" };
 const result = arg1(dependencyMap[12]).fileFinishedImporting("modules/activities/native/ActivitiesPrivateChannelCallTooltip.tsx");
 
@@ -62,7 +62,7 @@ export default function ActivitiesPrivateChannelCallTooltip(onClosePress) {
   const intl2 = arg1(dependencyMap[10]).intl;
   obj1.title = intl2.string(arg1(dependencyMap[10]).t.HOPqzR);
   const obj3 = { style: tmp.closeButtonWrapper };
-  const obj4 = { <string:4217743021>: false, <string:1655330464>: false, <string:1722596945>: false, <string:3635473612>: false, <string:3193004643>: false };
+  const obj4 = { borderWidth: "headMetaSocial", borderColor: "VOICE_STATE_UPDATES", borderRadius: "workletEventHandler", justifyContent: "preemptiveExpanded", alignItems: "%Math.min%" };
   const intl3 = arg1(dependencyMap[10]).intl;
   obj4.text = intl3.string(arg1(dependencyMap[10]).t.NX+WJN);
   obj4.onPress = onClosePress.onClosePress;

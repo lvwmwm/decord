@@ -57,7 +57,7 @@ const fn = function n(moment) {
     }
     return text1;
   }
-  let closure_0 = { left: 0.000000000000000000000000000000000000000000000000000000000000000000000001215228005639001, sa: 0.6, fileFinishedImporting: 0.000000000000000000000000000000000000000000000000000000000000046672533157896935, application: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000008658659363906192, ref: -72460078556573560000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, key: 0.00000000000000000000000000000000000000000000000000000000000004665176951331446, "Null": 0.0000000000000000000000000000000000000010706816310228384, "Null": 0.00000000000000000000000000000000000000000000000000000000000004667261458395371, "Null": 0.00000000000000000000000000000000000000000000000000000000000004133627722352434, "Null": -11676595157524995000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, "Null": 0.00000000000000000000000000000000000000000000000000000000000004667261458271609 };
+  let closure_0 = {};
   let obj = {};
   obj = { format: "sausio_vasario_kovo_baland\u017Eio_gegu\u017E\u0117s_bir\u017Eelio_liepos_rugpj\u016B\u010Dio_rugs\u0117jo_spalio_lapkri\u010Dio_gruod\u017Eio".split("_"), standalone: "sausis_vasaris_kovas_balandis_gegu\u017E\u0117_bir\u017Eelis_liepa_rugpj\u016Btis_rugs\u0117jis_spalis_lapkritis_gruodis".split("_"), isFormat: /D[oD]?(\[[^\[\]]*\]|\s)+MMMM?|MMMM?(\[[^\[\]]*\]|\s)+D[oD]?/ };
   obj.months = obj;
@@ -68,7 +68,7 @@ const fn = function n(moment) {
   obj.weekdaysMin = "S_P_A_T_K_Pn_\u0160".split("_");
   obj.weekdaysParseExact = true;
   obj.longDateFormat = {};
-  obj.calendar = { alignItems: "is", position: "SECTION_INDEX_FIRST_NAMED_CATEGORY", <string:1373947542>: "is", <string:2681378794>: "advanceAnimationByFrame", <string:1413374383>: "Uint8Array", <string:1720105976>: "setAnimatedNodeValue" };
+  obj.calendar = {};
   obj.relativeTime = {
     s: function translateSeconds(arg0, arg1, arg2, arg3) {
       let str = "kelios sekund\u0117s";
@@ -97,7 +97,7 @@ const fn = function n(moment) {
   obj.ordinal = function ordinal(arg0) {
     return arg0 + "-oji";
   };
-  obj.week = { "Bool(true)": false, "Bool(true)": false };
+  obj.week = { <string:1431496722>: false, <string:1627556098>: false };
   return moment.defineLocale("lt", obj);
 };
 if ("object" === typeof exports) {
@@ -109,7 +109,7 @@ if ("object" === typeof exports) {
 }
 if ("function" === typeof globalThis.define) {
   if (globalThis.define.amd) {
-    globalThis.define([1782644737], fn);
+    globalThis.define(["HH:mm:ss"], fn);
   }
 }
 fn(this.moment);

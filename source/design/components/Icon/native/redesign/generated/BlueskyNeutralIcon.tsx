@@ -1,10 +1,10 @@
-// Module ID: 11844
-// Function ID: 91770
+// Module ID: 11851
+// Function ID: 91793
 // Name: BlueskyNeutralIcon
 // Dependencies: [131072, 528220160, 452984832, 553648128, 503316480, 2969567248]
 // Exports: BlueskyNeutralIcon
 
-// Module 11844 (BlueskyNeutralIcon)
+// Module 11851 (BlueskyNeutralIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/BlueskyNeutralIcon.tsx");

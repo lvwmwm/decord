@@ -1,8 +1,8 @@
-// Module ID: 15662
-// Function ID: 119683
+// Module ID: 15669
+// Function ID: 119707
 // Dependencies: []
 
-// Module 15662
+// Module 15669
 const importAllResult = importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const memoResult = importAllResult.memo(function VoicePanelChannelOptInNotice(channel) {

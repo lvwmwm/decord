@@ -1,10 +1,10 @@
-// Module ID: 11007
-// Function ID: 85647
+// Module ID: 11012
+// Function ID: 85668
 // Name: ClassificationDetailModal
 // Dependencies: []
 // Exports: default
 
-// Module 11007 (ClassificationDetailModal)
+// Module 11012 (ClassificationDetailModal)
 let closure_4 = importAll(dependencyMap[0]);
 const UserSettingsSections = arg1(dependencyMap[1]).UserSettingsSections;
 const AccountSettingsTabs = arg1(dependencyMap[2]).AccountSettingsTabs;

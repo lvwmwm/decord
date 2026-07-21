@@ -1,12 +1,12 @@
-// Module ID: 14636
-// Function ID: 110393
+// Module ID: 14643
+// Function ID: 110415
 // Name: PrivacyPolicyDescription
 // Dependencies: []
 // Exports: default
 
-// Module 14636 (PrivacyPolicyDescription)
+// Module 14643 (PrivacyPolicyDescription)
 function PrivacyPolicyDescription(style) {
-  let obj = { Promise: "ur", marginTop: "SECTION_INDEX_FIRST_NAMED_CATEGORY", flags: "ur", style: style.style };
+  let obj = { style: style.style };
   const intl = arg1(dependencyMap[8]).intl;
   obj = { termsURL: MarketingURLs.TERMS, privacyURL: MarketingURLs.PRIVACY };
   obj.children = intl.format(arg1(dependencyMap[8]).t.KI+BSb, obj);
@@ -26,7 +26,7 @@ function PrivacyPolicyCheckbox(onToggleConsent) {
   const intl = arg1(dependencyMap[8]).intl;
   obj.accessibilityLabel = intl.string(arg1(dependencyMap[8]).t.Y7Kgvf);
   obj.onPress = onToggleConsent.onToggleConsent;
-  obj.hitSlop = { "Null": "absolute", "Null": null, "Null": -4 };
+  obj.hitSlop = {};
   if (asCheckbox) {
     obj = { checked: consent };
     let tmp5Result = tmp5(tmp6(tmp7[10]).FormCheckbox, obj);
@@ -35,7 +35,7 @@ function PrivacyPolicyCheckbox(onToggleConsent) {
     tmp5Result = tmp5(tmp6(tmp7[11]).FormRow.Radio, obj1);
   }
   const items = [tmp5Result, ];
-  const obj2 = { INTEGRATION_CREATE: true, ConstraintReasonCode: true, style: tmp.checkboxLabel };
+  const obj2 = { style: tmp.checkboxLabel };
   const intl2 = arg1(dependencyMap[8]).intl;
   obj2.children = intl2.format(arg1(dependencyMap[8]).t.qMDAP0, { termsURL: MarketingURLs.TERMS, privacyURL: MarketingURLs.PRIVACY });
   items[1] = callback(arg1(dependencyMap[7]).TextWithIOSLinkWorkaround, obj2);

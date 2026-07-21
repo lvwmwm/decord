@@ -1,10 +1,10 @@
-// Module ID: 13805
-// Function ID: 104443
+// Module ID: 13812
+// Function ID: 104466
 // Name: BountiesScrollIndicatorAnimation
 // Dependencies: []
 // Exports: default
 
-// Module 13805 (BountiesScrollIndicatorAnimation)
+// Module 13812 (BountiesScrollIndicatorAnimation)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 const View = arg1(dependencyMap[2]).View;
@@ -28,7 +28,7 @@ export default function BountiesScrollIndicatorAnimation(startAnimation) {
       tmp5((arg0) => arg0 + 1);
     }
   }
-  obj = { style: tmp.container, children: jsx(arg1(dependencyMap[7]).BountiesScrollIndicatorRive, { dataBinding: obj }, tmp4) };
-  obj = { color: token, startAnimation: !startAnimation.isFadingInContent };
+  obj = { style: tmp.container, children: jsx(arg1(dependencyMap[7]).BountiesScrollIndicatorRive, obj, tmp4) };
+  obj = { aspectRatio: "center", flexShrink: 18, dataBinding: { color: token, startAnimation: !startAnimation.isFadingInContent } };
   return <View {...obj} />;
 };

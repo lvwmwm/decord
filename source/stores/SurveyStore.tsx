@@ -1,9 +1,9 @@
-// Module ID: 9265
-// Function ID: 72404
+// Module ID: 9269
+// Function ID: 72416
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
-// Module 9265 (_isNativeReflectConstruct)
+// Module 9269 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -124,7 +124,7 @@ function meetsSurveyRequirements(closure_22) {
   }
   let guild_size = closure_22.guild_size;
   if (undefined === guild_size) {
-    guild_size = [];
+    guild_size = [null, null];
   }
   let guild_permissions = closure_22.guild_permissions;
   if (undefined === guild_permissions) {
@@ -433,7 +433,7 @@ let closure_11 = importDefault(dependencyMap[7]);
 let closure_12 = importDefault(dependencyMap[8]);
 let closure_13 = importDefault(dependencyMap[9]);
 ({ GuildFeatures: closure_14, Permissions: closure_15, FIRST_RUN_DATE_KEY: closure_16 } = arg1(dependencyMap[10]));
-let obj = { flex: null, height: null, left: "drl", right: "bzc", position: "ebk", hiddenSurveys: {} };
+let obj = { height: null, flex: null, justifyContent: null, width: null, height: null, hiddenSurveys: {} };
 let closure_19 = false;
 let closure_20 = false;
 let closure_21 = {};

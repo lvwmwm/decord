@@ -1,14 +1,13 @@
-// Module ID: 14966
-// Function ID: 112695
+// Module ID: 14973
+// Function ID: 112719
 // Name: showYouAccountActionSheet
-// Dependencies: [0, 4294967295, 0, 0, 0]
+// Dependencies: []
 // Exports: showYouAccountActionSheet
 
-// Module 14966 (showYouAccountActionSheet)
-import { YOU_ACCOUNT_ACTION_SHEET_KEY as closure_3 } from "result";
-import result from "result";
-
-result = result.fileFinishedImporting("modules/main_tabs_v2/native/tabs/you/utils/showYouAccountActionSheet.tsx");
+// Module 14973 (showYouAccountActionSheet)
+let closure_3 = require(dependencyMap[0]).YOU_ACCOUNT_ACTION_SHEET_KEY;
+const _module = require(dependencyMap[4]);
+const result = _module.fileFinishedImporting("modules/main_tabs_v2/native/tabs/you/utils/showYouAccountActionSheet.tsx");
 
 export const showYouAccountActionSheet = function showYouAccountActionSheet() {
   let flag = arg0;

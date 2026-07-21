@@ -1,9 +1,9 @@
-// Module ID: 7088
-// Function ID: 56916
+// Module ID: 7092
+// Function ID: 56927
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 
-// Module 7088 (_createForOfIteratorHelperLoose)
+// Module 7092 (_createForOfIteratorHelperLoose)
 function _createForOfIteratorHelperLoose(@@iterator) {
   let arg1 = Symbol_iterator;
   @@iterator = "undefined" !== typeof Symbol;
@@ -937,7 +937,7 @@ let tmp3 = (arg0) => {
               let tmp14 = closure_1;
               let tmp15 = closure_3;
               let obj1 = closure_1(closure_3[19]);
-              let obj = { <string:944832516>: null, backShouldLeaveGuild: null };
+              let obj = {};
               obj = { action };
               obj1 = { userIsNull: null == value, idIsNull: true };
               let username;

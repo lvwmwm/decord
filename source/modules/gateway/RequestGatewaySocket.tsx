@@ -58,7 +58,7 @@ function withStateTransitions(arg0) {
 }
 let closure_3 = importDefault(dependencyMap[0]);
 const AnalyticEvents = arg1(dependencyMap[1]).AnalyticEvents;
-let closure_5 = ["diamond_shape_with_a_dot_inside"];
+let closure_5 = [-0.00000000000000000000000000000000000000000008407800478114136];
 let closure_6 = true;
 const map = new Map();
 const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/gateway/RequestGatewaySocket.tsx");

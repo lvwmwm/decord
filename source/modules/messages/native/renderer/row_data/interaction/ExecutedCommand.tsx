@@ -1,10 +1,10 @@
-// Module ID: 7905
-// Function ID: 62902
+// Module ID: 7909
+// Function ID: 62914
 // Name: getCommandUserAvatar
 // Dependencies: []
 // Exports: createExecutedCommand
 
-// Module 7905 (getCommandUserAvatar)
+// Module 7909 (getCommandUserAvatar)
 function getCommandUserAvatar(interaction, getGuildId) {
   let guildId;
   let guildMemberAvatar;
@@ -139,7 +139,7 @@ export const createExecutedCommand = function createExecutedCommand(message, cha
     obj = {};
     let obj9 = require(dependencyMap[7]);
     obj.username = obj9.getUserAuthor(message.interaction.user, channel).nick;
-    obj = { "Null": null, "Null": "0e96bcd2b2f1118c31b249938bd6d191", userId: id, messageChannelId: message.channel_id, linkColor: tmp31 };
+    obj = { "Bool(false)": null, "Bool(false)": "0e96bcd2b2f1118c31b249938bd6d191", userId: id, messageChannelId: message.channel_id, linkColor: tmp31 };
     let tmp51;
     if (null != colorString) {
       tmp51 = colorString;
@@ -178,7 +178,7 @@ export const createExecutedCommand = function createExecutedCommand(message, cha
         const obj12 = require(dependencyMap[13]);
       }
       obj4 = { userId: message.interaction.user.id, username: obj.username, usernameColor: tmp31, avatarURL: tmp3, targetUsernameColor: tmp27, content: formatToPartsResult };
-      obj5 = { color: processColor(semanticColor) };
+      obj5 = { "Bool(true)": null, "Bool(true)": null, "Bool(true)": null, color: processColor(semanticColor) };
       obj4.commandNameBackgroundStyles = obj5;
       obj4.showAppsIcon = true;
       return obj4;
@@ -195,7 +195,7 @@ export const createExecutedCommand = function createExecutedCommand(message, cha
     if (null == channel) {
       obj7 = {};
     } else {
-      const obj8 = { "Null": null, "Null": null, userId: message.interaction.user.id, messageId: message.id, applicationUserId: message.author.id };
+      const obj8 = { "Bool(false)": null, "Bool(false)": null, userId: message.interaction.user.id, messageId: message.id, applicationUserId: message.author.id };
       ({ type: obj19.messageType, channel_id: obj19.messageChannelId } = message);
       obj7 = obj8;
     }
@@ -208,7 +208,7 @@ export const createExecutedCommand = function createExecutedCommand(message, cha
       obj9["commandName"] = result4;
       obj9["commandNameOnClick"] = {};
       obj9["targetUsername"] = require(dependencyMap[7]).getUserAuthor(tmp18, channel).nick;
-      const obj10 = { "Null": null, "Null": null };
+      const obj10 = { "Bool(false)": null, "Bool(false)": null };
       let id1;
       if (null != tmp18) {
         id1 = tmp18.id;

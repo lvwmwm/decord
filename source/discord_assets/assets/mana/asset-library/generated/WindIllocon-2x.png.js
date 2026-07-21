@@ -1,9 +1,9 @@
-// Module ID: 6612
-// Function ID: 50792
+// Module ID: 6618
+// Function ID: 50841
 // Name: metadata
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 6612 (metadata)
+// Module 6618 (metadata)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/WindIllocon-2x.png.js");
 

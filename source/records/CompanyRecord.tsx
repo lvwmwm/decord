@@ -1,9 +1,9 @@
-// Module ID: 4149
-// Function ID: 35111
+// Module ID: 4150
+// Function ID: 35087
 // Name: _isNativeReflectConstruct
 // Dependencies: [5, 6, 7, 1891, 1884, 2, 6]
 
-// Module 4149 (_isNativeReflectConstruct)
+// Module 4150 (_isNativeReflectConstruct)
 import asyncGeneratorStep from "asyncGeneratorStep";
 import closure_1 from "_classCallCheck";
 import _defineProperties from "_defineProperties";
@@ -53,4 +53,4 @@ export default (arg0) => {
     }
   ];
   return callback(CompanyRecord, null, items);
-}(require("keys"));
+}(require("result2"));

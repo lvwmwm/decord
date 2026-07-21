@@ -1,9 +1,9 @@
-// Module ID: 7500
-// Function ID: 60119
+// Module ID: 7504
+// Function ID: 60131
 // Name: getLengthRemainingTextColor
 // Dependencies: []
 
-// Module 7500 (getLengthRemainingTextColor)
+// Module 7504 (getLengthRemainingTextColor)
 function getLengthRemainingTextColor(maxLength, diff) {
   let str = "text-muted";
   let str2 = "text-muted";
@@ -26,7 +26,7 @@ const View = arg1(dependencyMap[1]).View;
 const importAllResult = importAll(dependencyMap[0]);
 ({ jsx: closure_3, jsxs: closure_4 } = arg1(dependencyMap[2]));
 const tmp2 = arg1(dependencyMap[2]);
-let obj = { area: { INVALID_BILLING_ADDRESS: "<string:1163543898>", MainTabsChannelScreenStackContext: "start_date" } };
+let obj = { area: { "Bool(true)": "Array", "Bool(true)": "x" } };
 obj = { position: "absolute", bottom: importDefault(dependencyMap[4]).space.PX_4, right: importDefault(dependencyMap[4]).space.PX_16 };
 obj.maxLengthIndicator = obj;
 let closure_5 = arg1(dependencyMap[3]).createStyles(obj);

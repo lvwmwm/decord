@@ -1,10 +1,10 @@
-// Module ID: 10536
-// Function ID: 82334
+// Module ID: 10542
+// Function ID: 82357
 // Name: useIsActivitiesAvailableInShelf
 // Dependencies: []
 // Exports: default
 
-// Module 10536 (useIsActivitiesAvailableInShelf)
+// Module 10542 (useIsActivitiesAvailableInShelf)
 let closure_3 = importAll(dependencyMap[0]);
 const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/activities/useIsActivitiesAvailableInShelf.tsx");
 

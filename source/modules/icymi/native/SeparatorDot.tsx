@@ -1,10 +1,10 @@
-// Module ID: 15106
-// Function ID: 114016
+// Module ID: 15113
+// Function ID: 114040
 // Name: SeparatorDot
 // Dependencies: []
 // Exports: default
 
-// Module 15106 (SeparatorDot)
+// Module 15113 (SeparatorDot)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 const jsx = arg1(dependencyMap[2]).jsx;

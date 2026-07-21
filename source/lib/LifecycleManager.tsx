@@ -1,9 +1,9 @@
-// Module ID: 4522
-// Function ID: 39705
+// Module ID: 4526
+// Function ID: 39753
 // Name: LifecycleManager
 // Dependencies: []
 
-// Module 4522 (LifecycleManager)
+// Module 4526 (LifecycleManager)
 let closure_0 = importDefault(dependencyMap[0]);
 let closure_1 = importDefault(dependencyMap[1]);
 const tmp2 = () => {

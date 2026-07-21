@@ -1,14 +1,13 @@
-// Module ID: 5919
-// Function ID: 49752
+// Module ID: 5921
+// Function ID: 49795
 // Name: ButterflyIllocon
-// Dependencies: [4294967295, 0, 0, 0]
+// Dependencies: []
 // Exports: ButterflyIllocon
 
-// Module 5919 (ButterflyIllocon)
-import result from "result";
-
+// Module 5921 (ButterflyIllocon)
 const jsx = require(dependencyMap[0]).jsx;
-result = result.fileFinishedImporting("design/components/mana-assets/native/generated/ButterflyIllocon.native.tsx");
+const _module = require(dependencyMap[3]);
+const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/ButterflyIllocon.native.tsx");
 
 export const ButterflyIllocon = function ButterflyIllocon(size) {
   let accessibilityLabel;

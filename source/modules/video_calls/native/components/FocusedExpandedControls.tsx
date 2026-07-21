@@ -1,10 +1,10 @@
-// Module ID: 10727
-// Function ID: 83412
+// Module ID: 10733
+// Function ID: 83435
 // Name: ExpandedControlItemIcon
 // Dependencies: []
 // Exports: AudioRouteButton, DeafenButton, ScreenshareButton, StreamVolumeItem
 
-// Module 10727 (ExpandedControlItemIcon)
+// Module 10733 (ExpandedControlItemIcon)
 function ExpandedControlItemIcon(iconSource) {
   iconSource = iconSource.iconSource;
   const tmp = callback3();

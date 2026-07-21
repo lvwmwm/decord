@@ -1,9 +1,9 @@
-// Module ID: 7656
-// Function ID: 61218
+// Module ID: 7655
+// Function ID: 61213
 // Name: MobileSetting
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 7656 (MobileSetting)
+// Module 7655 (MobileSetting)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("modules/user_settings/core/native/SettingsConstants.tsx");
 

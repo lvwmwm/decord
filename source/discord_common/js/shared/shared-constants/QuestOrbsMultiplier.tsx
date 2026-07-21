@@ -1,9 +1,9 @@
-// Module ID: 10450
-// Function ID: 80902
+// Module ID: 10456
+// Function ID: 80925
 // Name: QuestOrbsMultiplier
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 10450 (QuestOrbsMultiplier)
+// Module 10456 (QuestOrbsMultiplier)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_common/js/shared/shared-constants/QuestOrbsMultiplier.tsx");
 

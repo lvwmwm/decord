@@ -1,10 +1,10 @@
-// Module ID: 6003
-// Function ID: 49878
+// Module ID: 6005
+// Function ID: 49921
 // Name: DiscordSupergraphicLogo
 // Dependencies: []
 // Exports: DiscordSupergraphicLogo
 
-// Module 6003 (DiscordSupergraphicLogo)
+// Module 6005 (DiscordSupergraphicLogo)
 const Image = require(dependencyMap[0]).Image;
 const jsx = require(dependencyMap[1]).jsx;
 const _module = require(dependencyMap[5]);

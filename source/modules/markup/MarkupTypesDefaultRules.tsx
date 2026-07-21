@@ -1,9 +1,9 @@
-// Module ID: 4557
-// Function ID: 39900
+// Module ID: 4561
+// Function ID: 39948
 // Name: DEFAULT_RULES
 // Dependencies: []
 
-// Module 4557 (DEFAULT_RULES)
+// Module 4561 (DEFAULT_RULES)
 const obj = {};
 obj[arg1(dependencyMap[0]).AST_KEY.PARAGRAPH] = importDefault(dependencyMap[1]).RULES.paragraph;
 obj[arg1(dependencyMap[0]).AST_KEY.STRIKETHROUGH] = importDefault(dependencyMap[1]).RULES.s;

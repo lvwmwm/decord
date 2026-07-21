@@ -1,10 +1,10 @@
-// Module ID: 11164
-// Function ID: 86839
+// Module ID: 11170
+// Function ID: 86862
 // Name: BannerBase
 // Dependencies: []
 // Exports: default
 
-// Module 11164 (BannerBase)
+// Module 11170 (BannerBase)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 const View = arg1(dependencyMap[2]).View;
@@ -20,8 +20,8 @@ obj.bannerGradientColor = { backgroundColor: "#7eaaff" };
 const tmp2 = arg1(dependencyMap[4]);
 obj.bannerBackgroundGradient = { borderRadius: importDefault(dependencyMap[5]).radii.lg };
 obj.imageContainer = { width: 72 };
-obj.trinketsLottie = { --custom-app-launcher-width: 4, --custom-app-launcher-height: 1, marginTop: "row", paddingHorizontal: "wrap", rowGap: "hidden", gap: 4, flexDirection: "L1" };
-const obj2 = { 9223372036854775807: true, 9223372036854775807: true, 9223372036854775807: true, 0: true, marginLeft: importDefault(dependencyMap[5]).space.PX_12 };
+obj.trinketsLottie = { right: 4, bottom: 1, accessibilityRole: "row", props: "wrap", guildId: "hidden", body: 4, flexDirection: "L1" };
+const obj2 = { marginHorizontal: true, borderRadius: true, padding: true, marginLeft: importDefault(dependencyMap[5]).space.PX_12 };
 obj.bannerTextContainer = obj2;
 obj.bannerText = { width: "100%" };
 let closure_10 = obj.createStyles(obj);
@@ -100,14 +100,13 @@ export default function BannerBase(arg0) {
     }
   };
   const items3 = [tmp.bannerBackgroundGradient, { height: first, width: diff }];
-  const items4 = [callback3(importDefault(dependencyMap[13]), { start: { "Null": false, "Null": true }, end: { "Null": 131072.00314656927, "Null": 0.000000000000000000000000000000000000000000000000000000011294471302334573 }, colors: items, style: items3 }), , ];
+  const items4 = [callback3(importDefault(dependencyMap[13]), { start: { max: -536870861, guildId: -299892737 }, end: {}, colors: items, style: items3 }), , ];
   obj2 = { style: tmp.imageContainer };
   obj3 = { style: tmp.trinketsLottie, source: callback(dependencyMap[15]), autoPlay: !stateFromStores };
   const items5 = [callback3(importDefault(dependencyMap[14]), obj3), image];
   obj2.children = items5;
   items4[1] = callback4(View, obj2);
   obj4 = { style: tmp.bannerTextContainer, children: callback3(callback(dependencyMap[16]).Text, obj5) };
-  const obj5 = { INTEGRATION_CREATE: true, ConstraintReasonCode: true, style: tmp.bannerText, children: text };
   items4[2] = callback3(View, obj4);
   obj.children = items4;
   return callback4(importDefault(dependencyMap[8]).View, obj);

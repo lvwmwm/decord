@@ -1,10 +1,10 @@
-// Module ID: 15706
-// Function ID: 120068
-// Dependencies: [9878, 2, 4140, 4141, 8922, 624, 15711, 9042, 15712, 15713, 2, 57, 31, 1348, 10000, 10003, 482, 33, 1324, 689, 4126, 4533, 7488, 3840, 9999, 15608, 5796, 624, 15604, 3989, 11360, 4468, 9878, 4534, 7578, 9629, 2, 31, 10000, 10003, 9998, 33, 4126, 689, 9999, 15710, 3989, 4468, 15716, 4534, 5513, 1273, 4124]
+// Module ID: 15713
+// Function ID: 120092
+// Dependencies: [9883, 2, 4140, 4141, 8926, 624, 15718, 9046, 15719, 15720, 2, 57, 31, 1348, 10006, 10009, 482, 33, 1324, 689, 4126, 4537, 7492, 3840, 10005, 15615, 5798, 624, 15611, 3989, 11367, 4472, 9883, 4538, 7582, 9634, 2, 31, 10006, 10009, 10004, 33, 4126, 689, 10005, 15717, 3989, 4472, 15723, 4538, 5515, 1273, 4124]
 
-// Module 15706
+// Module 15713
 import closure_3 from "t";
-import importAllResult from "keys";
+import importAllResult from "result2";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_6 from "_isNativeReflectConstruct";
 import useVoiceStateForRemoteSession from "useVoiceStateForRemoteSession";
@@ -28,10 +28,11 @@ obj = {};
 const merged = Object.assign(_isNativeReflectConstruct.StyleSheet.absoluteFillObject);
 obj["zIndex"] = 1;
 obj.accessibilityWrapper = obj;
-getConsoleColor = { borderRadius: require("keys").modules.mobile.VOICE_PANEL_CONTROLS_BORDER_RADIUS };
+getConsoleColor = { borderRadius: require("result2").modules.mobile.VOICE_PANEL_CONTROLS_BORDER_RADIUS };
 obj.wrapper = getConsoleColor;
-obj.buttonsWrapper = { marginHorizontal: require("keys").space.PX_16 };
-obj.actionSheetDragHandleWrapper = { 21/9: true, 16/9: true, 6/4: true, 2/1: true, 1/1: true };
+const obj2 = { -783165016: "5de2b08de99a642bedb9972f5a6793f2", 1383489899: "el.messages.5de2b08de99a642bedb9972f5a6793f2.compiled.messages", -1287393223: "jsona", 1991210072: true, 2108357039: "/assets/.cache/intl/bW9kdWxlcy9pbnRs", 581925551: null, -1062242264: "72ad0b4b960146a110960dea1a6ad5e5", marginHorizontal: require("result2").space.PX_16 };
+obj.buttonsWrapper = obj2;
+obj.actionSheetDragHandleWrapper = { -324479661: true, 1392981258: true, -1400267819: true, -715936620: true, 1806469531: true };
 let closure_21 = getConsoleColor.createStyles(obj);
 if (_slicedToArray.isMetaQuest()) {
   num = 15;
@@ -193,7 +194,6 @@ let closure_40 = { code: "function VoicePanelControlsTsx15(){const{controlsSpecs
 let closure_41 = { code: "function VoicePanelControlsTsx16(mode,previousMode){const{isScreenReaderEnabled,VoicePanelControlsModes,runOnJS,setIsDrawer}=this.__closure;if(mode===previousMode||!isScreenReaderEnabled)return;if(mode===VoicePanelControlsModes.DRAWER&&previousMode!==VoicePanelControlsModes.DRAWER){runOnJS(setIsDrawer)(true);}else if(mode!==VoicePanelControlsModes.DRAWER&&previousMode===VoicePanelControlsModes.DRAWER){runOnJS(setIsDrawer)(false);}}" };
 let closure_42 = { code: "function VoicePanelControlsTsx17(){const{wrapperSpecs}=this.__closure;return wrapperSpecs.get().drawerMode;}" };
 let closure_43 = { code: "function VoicePanelControlsTsx18(drawerMode,previousDrawerMode){const{isRefreshEnabled,runOnJS,setIsDrawerActive}=this.__closure;if(drawerMode===previousDrawerMode)return;if(!isRefreshEnabled)return;if(drawerMode){runOnJS(setIsDrawerActive)(true);}else{runOnJS(setIsDrawerActive)(false);}}" };
-const obj2 = { marginHorizontal: require("keys").space.PX_16 };
 const result = Text.fileFinishedImporting("modules/voice_panel/native/controls/VoicePanelControls.tsx");
 
 export default importAllResult.memo(function VoicePanelControls(gestureState) {
@@ -293,7 +293,7 @@ export default importAllResult.memo(function VoicePanelControls(gestureState) {
   let obj3 = arg1(dependencyMap[43]);
   const rect = obj3.getSafeAreaInsets();
   let obj4 = arg1(dependencyMap[15]);
-  obj = { "Bool(false)": null, "Bool(false)": null, "Bool(false)": -4, "Bool(false)": 12, "Bool(false)": 2, "Bool(false)": "hidden" };
+  obj = {};
   let obj6 = arg1(dependencyMap[22]);
   let obj7 = arg1(dependencyMap[44]);
   obj.width = obj6.getControlsDefaultWidth(obj7.getWindowDimensions().width, rect.left, rect.right);
@@ -378,7 +378,7 @@ export default importAllResult.memo(function VoicePanelControls(gestureState) {
     const safeArea = context.safeArea;
     const useReducedMotion = safeArea;
     let obj = gestureState(tmp2[15]);
-    const gestureSpecs = obj.useSharedValue({ i: 0.124, ks: 1, registerAsset: "Enable Application Identity Linked Roles", apply: 0, channel: 40, position: 4, top: "Star", left: 1, borderRadius: 1 });
+    const gestureSpecs = obj.useSharedValue({ "Bool(true)": 0.124, "Bool(true)": 1, "Bool(true)": "Enable Application Identity Linked Roles", "Bool(true)": 0, "Bool(true)": 40, "Bool(true)": 4, "Bool(true)": "Star", "Bool(true)": 1, "Bool(true)": 1 });
     first = gestureSpecs;
     sharedValue1 = gestureState(sharedValue1[15]).useSharedValue(0);
     let closure_9 = sharedValue1;
@@ -463,7 +463,7 @@ export default importAllResult.memo(function VoicePanelControls(gestureState) {
                   tmp30 = "settings" !== callback;
                 }
                 if (tmp30) {
-                  obj = { "Bool(true)": true, "Bool(true)": "/assets/.cache/intl/bW9kdWxlcy9ndWlsZF9zZXR0aW5ncy9zZXJ2ZXJfbW9uZXRpemF0aW9uL3RhZ3Mvd2Vi", "Bool(true)": null };
+                  obj = { 0: true, 0: "/assets/.cache/intl/bW9kdWxlcy9ndWlsZF9zZXR0aW5ncy9zZXJ2ZXJfbW9uZXRpemF0aW9uL2d1aWxkX3RoZW1lL3dlYg==", 9223372036854775807: null };
                   const obj2 = callback(store[15]);
                   obj.source = callback(store[20]).VoicePanelTabAnalyticsSources.GESTURE;
                   callback(store[15]).runOnJS(closure_3)(obj);
@@ -690,7 +690,7 @@ export default importAllResult.memo(function VoicePanelControls(gestureState) {
                 const result1 = self.set(obj1);
               }
             } else if (constants2.FLOATING_DEFAULT === currentControlsMode) {
-              const obj2 = { usernameOnClickHandler: "isArray", xor: "data", oneway: "sr", GUILD_MEMBER_REQUEST_TO_JOIN: "r", getVoiceDurationString: "isArray", GUILD_STICKER_RELATED_EMOJI: "ks" };
+              const obj2 = {};
               const _Math = Math;
               obj2.y = -1 * Math.max(safeArea.bottom, closure_13);
               obj2.width = self(tmp2[22]).getControlsDefaultWidth(windowWidth, safeArea.left, safeArea.right);
@@ -705,7 +705,7 @@ export default importAllResult.memo(function VoicePanelControls(gestureState) {
               } else if (null != currentControlsMode) {
                 obj1 = self(tmp2[27]);
               }
-              let obj3 = { usernameOnClickHandler: 278528.28192520153, xor: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000132794497347595, oneway: -106163839371429360000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, GUILD_MEMBER_REQUEST_TO_JOIN: 116435455356735420000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, getVoiceDurationString: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000027161546131253, GUILD_STICKER_RELATED_EMOJI: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002716154613068 };
+              let obj3 = { "Null": "M5 3H2V4H5V3Z", "Null": "white", "Null": "M7 9H6V10H7V9Z", "Null": "black", "Null": "M8 6H7V7H8V6Z", "Null": "black" };
               obj3 = self(tmp2[22]);
               obj3.width = obj3.getControlsDrawerOpenWidth(windowWidth, safeArea.left, safeArea.right);
               obj3.height = minHeight;
@@ -743,7 +743,7 @@ export default importAllResult.memo(function VoicePanelControls(gestureState) {
     const safeArea = context.safeArea;
     const useReducedMotion = safeArea;
     let obj = gestureState(tmp2[15]);
-    const gestureSpecs = obj.useSharedValue({ i: 0.124, ks: 1, registerAsset: "Enable Application Identity Linked Roles", apply: 0, channel: 40, position: 4, top: "Star", left: 1, borderRadius: 1 });
+    const gestureSpecs = obj.useSharedValue({ "Bool(true)": 0.124, "Bool(true)": 1, "Bool(true)": "Enable Application Identity Linked Roles", "Bool(true)": 0, "Bool(true)": 40, "Bool(true)": 4, "Bool(true)": "Star", "Bool(true)": 1, "Bool(true)": 1 });
     first = gestureSpecs;
     sharedValue1 = gestureState(sharedValue1[15]).useSharedValue(0);
     let closure_9 = sharedValue1;
@@ -828,7 +828,7 @@ export default importAllResult.memo(function VoicePanelControls(gestureState) {
                   tmp30 = "settings" !== callback;
                 }
                 if (tmp30) {
-                  obj = { "Bool(true)": true, "Bool(true)": "/assets/.cache/intl/bW9kdWxlcy9ndWlsZF9zZXR0aW5ncy9zZXJ2ZXJfbW9uZXRpemF0aW9uL3RhZ3Mvd2Vi", "Bool(true)": null };
+                  obj = { 0: true, 0: "/assets/.cache/intl/bW9kdWxlcy9ndWlsZF9zZXR0aW5ncy9zZXJ2ZXJfbW9uZXRpemF0aW9uL2d1aWxkX3RoZW1lL3dlYg==", 9223372036854775807: null };
                   const obj2 = callback(store[15]);
                   obj.source = callback(store[20]).VoicePanelTabAnalyticsSources.GESTURE;
                   callback(store[15]).runOnJS(closure_3)(obj);

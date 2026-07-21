@@ -1,14 +1,14 @@
-// Module ID: 10266
-// Function ID: 79333
+// Module ID: 10272
+// Function ID: 79352
 // Name: getMuteTimeOptions
 // Dependencies: []
 // Exports: filterOverrides, getMuteTimeOptions, shouldShowUseNewNotificationSystem, useShouldUseNewNotificationSystem
 
-// Module 10266 (getMuteTimeOptions)
+// Module 10272 (getMuteTimeOptions)
 let closure_4 = importDefault(dependencyMap[0]);
 const UserNotificationSettings = arg1(dependencyMap[1]).UserNotificationSettings;
 ({ MuteUntilSeconds: closure_6, ChannelNotificationSettingsFlags: closure_7 } = arg1(dependencyMap[2]));
-let closure_8 = { cloudsBackground: -1924062975, onShareClick: 275849618, channel_flags: 1358954496 };
+let closure_8 = { activeOpacity: true, borderRadius: true, flexGrow: true };
 const tmp2 = arg1(dependencyMap[2]);
 const result = arg1(dependencyMap[8]).fileFinishedImporting("modules/notifications/NotificationUtils.tsx");
 

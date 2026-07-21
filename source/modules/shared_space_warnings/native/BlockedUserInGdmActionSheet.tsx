@@ -1,10 +1,10 @@
-// Module ID: 12533
-// Function ID: 96341
+// Module ID: 12540
+// Function ID: 96364
 // Name: getUserCalloutRowText
 // Dependencies: []
 // Exports: default
 
-// Module 12533 (getUserCalloutRowText)
+// Module 12540 (getUserCalloutRowText)
 function getUserCalloutRowText(arg0) {
   let calledOutUserIds;
   let totalUsers;
@@ -139,12 +139,12 @@ obj = {};
 obj = { paddingTop: importDefault(dependencyMap[8]).space.PX_12, gap: importDefault(dependencyMap[8]).space.PX_8, textAlign: "center" };
 obj.container = obj;
 obj.headerImage = {};
-obj.title = {};
-obj.description = {};
+obj.title = { customStatusActivity: null, hasCustomProfileTheme: null };
+obj.description = { customStatusActivity: null, hasCustomProfileTheme: null };
 const tmp4 = arg1(dependencyMap[6]);
 obj.tableGroup = { paddingVertical: importDefault(dependencyMap[8]).space.PX_24 };
 obj.buttons = { gap: 8 };
-obj.icon = { "Bool(true)": 9726495151491673000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, "Bool(true)": 375423938249219200000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, "Bool(true)": 0.00000000000000000010842022227517996, "Bool(true)": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000027298014900400896 };
+obj.icon = { 0: "Array", 0: "summaryId", 0: "onUpload", -9223372036854775808: "%JSONStringify%" };
 let closure_14 = obj.createStyles(obj);
 const obj1 = { paddingVertical: importDefault(dependencyMap[8]).space.PX_24 };
 const result = arg1(dependencyMap[28]).fileFinishedImporting("modules/shared_space_warnings/native/BlockedUserInGdmActionSheet.tsx");
@@ -251,6 +251,8 @@ export default function BlockedUserInGdmActionSheet(channelId) {
     obj13.text = intl4.string(arg1(dependencyMap[11]).t.I4q1kA);
     const items5 = [callback(arg1(dependencyMap[24]).Button, obj13), ];
     const obj14 = {
+      key: "r",
+      onCloseCallback: "sectionIdsByBotId",
       onPress() {
           let obj = blockedUserIds(ignoredUserIds[25]);
           obj.hideActionSheet();

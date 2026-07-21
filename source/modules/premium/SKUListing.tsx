@@ -1,9 +1,9 @@
-// Module ID: 12859
-// Function ID: 98292
+// Module ID: 12866
+// Function ID: 98315
 // Name: SKUListing
 // Dependencies: []
 
-// Module 12859 (SKUListing)
+// Module 12866 (SKUListing)
 let closure_0 = importDefault(dependencyMap[1]);
 class SKUListing {
   constructor(arg0, arg1) {

@@ -1,10 +1,10 @@
-// Module ID: 12895
-// Function ID: 98412
+// Module ID: 12902
+// Function ID: 98435
 // Name: useFlashListAnimationDisabler
 // Dependencies: []
 // Exports: useFlashListAnimationDisabler
 
-// Module 12895 (useFlashListAnimationDisabler)
+// Module 12902 (useFlashListAnimationDisabler)
 let closure_2 = importAll(dependencyMap[0]);
 let closure_3 = { code: "function useFlashListAnimationDisablerTsx1(){const{lastId}=this.__closure;return lastId.get();}" };
 let closure_4 = { code: "function useFlashListAnimationDisablerTsx2(current,prev){const{enableAnimation}=this.__closure;if(current!==prev){enableAnimation.set(false);}}" };

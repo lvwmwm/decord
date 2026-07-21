@@ -1,9 +1,9 @@
-// Module ID: 5846
-// Function ID: 49643
+// Module ID: 5848
+// Function ID: 49686
 // Name: metadata
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 5846 (metadata)
+// Module 5848 (metadata)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/AgeVerificationSpotIllustration-2x.png.js");
 

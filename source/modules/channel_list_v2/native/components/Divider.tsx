@@ -1,10 +1,10 @@
-// Module ID: 11376
-// Function ID: 88476
+// Module ID: 11383
+// Function ID: 88500
 // Name: Divider
 // Dependencies: []
 // Exports: default
 
-// Module 11376 (Divider)
+// Module 11383 (Divider)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 const jsx = arg1(dependencyMap[2]).jsx;

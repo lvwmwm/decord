@@ -1,10 +1,10 @@
-// Module ID: 11089
-// Function ID: 86284
+// Module ID: 11095
+// Function ID: 86307
 // Name: FloatingChatInputContainer
 // Dependencies: []
 // Exports: default
 
-// Module 11089 (FloatingChatInputContainer)
+// Module 11095 (FloatingChatInputContainer)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 const jsx = arg1(dependencyMap[2]).jsx;

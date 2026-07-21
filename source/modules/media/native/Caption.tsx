@@ -1,10 +1,10 @@
-// Module ID: 8250
-// Function ID: 65093
+// Module ID: 8254
+// Function ID: 65105
 // Name: Caption
 // Dependencies: []
 // Exports: Caption
 
-// Module 8250 (Caption)
+// Module 8254 (Caption)
 const View = require(dependencyMap[0]).View;
 const jsx = require(dependencyMap[2]).jsx;
 const _module = require(dependencyMap[3]);

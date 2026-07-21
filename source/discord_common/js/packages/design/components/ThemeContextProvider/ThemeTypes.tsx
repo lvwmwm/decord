@@ -1,7 +1,7 @@
 // Module ID: 3853
 // Function ID: 32054
 // Name: ClientThemeType
-// Dependencies: []
+// Dependencies: [284214097]
 
 // Module 3853 (ClientThemeType)
 const _module = require(dependencyMap[0]);

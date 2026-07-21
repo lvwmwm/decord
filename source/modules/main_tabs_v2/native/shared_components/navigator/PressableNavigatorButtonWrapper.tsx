@@ -1,10 +1,10 @@
-// Module ID: 9113
-// Function ID: 71392
+// Module ID: 9117
+// Function ID: 71404
 // Name: PressableNavigatorButtonWrapper
 // Dependencies: []
 // Exports: default
 
-// Module 9113 (PressableNavigatorButtonWrapper)
+// Module 9117 (PressableNavigatorButtonWrapper)
 const View = require(dependencyMap[0]).View;
 const MIN_HEADER_HEIGHT = require(dependencyMap[1]).MIN_HEADER_HEIGHT;
 const jsx = require(dependencyMap[2]).jsx;
@@ -23,6 +23,6 @@ export default function PressableNavigatorButtonWrapper(isModal) {
     flag = false;
   }
   const tmp = callback();
-  const obj = { logMessageGiftIntentShown: 0, EXAMPLE_DOMAIN: 7, alignSelf: 4, style: flag ? tmp.buttonWrapperModal : tmp.buttonWrapper, children: isModal.children };
+  const obj = { commandOptionText: 0, osRequirement: 7, alignSelf: 4, style: flag ? tmp.buttonWrapperModal : tmp.buttonWrapper, children: isModal.children };
   return <View {...obj} />;
 };

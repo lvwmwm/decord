@@ -1,10 +1,10 @@
-// Module ID: 11491
-// Function ID: 89560
+// Module ID: 11498
+// Function ID: 89584
 // Name: GuildProgressHeader
 // Dependencies: []
 // Exports: default
 
-// Module 11491 (GuildProgressHeader)
+// Module 11498 (GuildProgressHeader)
 class GuildProgressHeader {
   constructor(arg0) {
     ({ title, subtitle } = global);
@@ -30,7 +30,7 @@ const tmp2 = arg1(dependencyMap[5]);
 const tmp3 = arg1(dependencyMap[6]);
 ({ jsx: closure_14, jsxs: closure_15 } = arg1(dependencyMap[7]));
 let obj = arg1(dependencyMap[8]);
-obj = { container: { padding: 16 }, header: {}, headerTitle: { bounces: null, keyboardShouldPersistTaps: null } };
+obj = { container: { padding: 16 }, header: { gestureId: 2137063425, handlerTag: 95420418, shouldCancelWhenOutside: -2075787263 }, headerTitle: { "Null": null, "Null": null } };
 obj = { color: importDefault(dependencyMap[9]).colors.TEXT_SUBTLE };
 obj.headerSubtitle = obj;
 obj.footer = { marginTop: 4 };
@@ -201,7 +201,7 @@ export default function GuildProgressActionSheet(guild) {
   items6[1] = center;
   obj10.style = items6;
   if (numFinished === totalSteps) {
-    const obj11 = { 0: null, 0: null, onPress: handleDismissGuildProgress };
+    const obj11 = { "Null": null, "Null": null, onPress: handleDismissGuildProgress };
     const intl8 = tmp28(tmp29[18]).intl;
     obj11.text = intl8.string(tmp28(tmp29[18]).t.0/5zhg);
     let tmp27Result = tmp27(tmp28(tmp29[30]).Button, obj11);
@@ -228,7 +228,7 @@ export default function GuildProgressActionSheet(guild) {
   const tmp23 = View;
   const tmp24 = callback;
   const tmp25 = View;
-  const obj14 = { Kn: null, ContentInventoryFeedKey: null, children: closure_15(View, obj7) };
+  const obj14 = { left: null, startAndEndHeight: null, children: closure_15(View, obj7) };
   return callback(arg1(dependencyMap[32]).ActionSheet, obj14);
 };
 export { GuildProgressHeader };

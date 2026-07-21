@@ -1,9 +1,9 @@
-// Module ID: 12435
-// Function ID: 94904
+// Module ID: 12442
+// Function ID: 94927
 // Name: importDefaultResult1
 // Dependencies: []
 
-// Module 12435 (importDefaultResult1)
+// Module 12442 (importDefaultResult1)
 let closure_3 = importDefault(dependencyMap[0]);
 let importDefaultResult = importDefault(dependencyMap[1]);
 importDefaultResult = new importDefaultResult("ConnectionStore");

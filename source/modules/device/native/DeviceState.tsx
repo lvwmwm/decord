@@ -1,10 +1,10 @@
-// Module ID: 6983
-// Function ID: 55865
+// Module ID: 6987
+// Function ID: 55876
 // Name: _getDeviceState
 // Dependencies: []
 // Exports: getDeviceState
 
-// Module 6983 (_getDeviceState)
+// Module 6987 (_getDeviceState)
 async function _getDeviceState() {
   const fn = function*() {
     let tmp = arg0;

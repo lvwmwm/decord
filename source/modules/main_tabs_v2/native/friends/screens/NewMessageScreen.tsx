@@ -1,10 +1,10 @@
-// Module ID: 15306
-// Function ID: 116426
+// Module ID: 15313
+// Function ID: 116450
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 // Exports: default
 
-// Module 15306 (_createForOfIteratorHelperLoose)
+// Module 15313 (_createForOfIteratorHelperLoose)
 function _createForOfIteratorHelperLoose(@@iterator) {
   let arg1 = Symbol_iterator;
   @@iterator = "undefined" !== typeof Symbol;
@@ -364,9 +364,9 @@ if (obj6.isAndroid()) {
 }
 obj1.alignItems = str;
 obj.header = obj1;
-obj.emptyContainer = { "Null": 323420161, "Null": -2104950783 };
+obj.emptyContainer = { "Null": null, "Null": null };
 obj.emptyKeyboardView = { flexGrow: 1 };
-const obj2 = { <string:3781419121>: "opacity", <string:1184701011>: "scaleX", <string:1701426122>: "scaleY", <string:3064609628>: "scaleXY", marginBottom: importDefault(dependencyMap[14]).space.PX_16 };
+const obj2 = { "Null": 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001153953053535477, "Null": 0.00000000000000000000000000000000000000000000004689095813645179, "Null": -44890842246276977000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, "Null": -0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002407817175865411, marginBottom: importDefault(dependencyMap[14]).space.PX_16 };
 obj.addFriendsButtonContainer = obj2;
 let closure_20 = obj1.createStyles(obj);
 let closure_21 = { code: "function NewMessageScreenTsx1(){const{numInGroup,NUM_IN_GROUP_THRESHOLD,withTiming}=this.__closure;const show=numInGroup>=NUM_IN_GROUP_THRESHOLD;return{opacity:withTiming(show?1:0),maxHeight:withTiming(show?20:0)};}" };

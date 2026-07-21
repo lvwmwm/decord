@@ -1,9 +1,9 @@
-// Module ID: 6618
-// Function ID: 50801
+// Module ID: 6624
+// Function ID: 50850
 // Name: metadata
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 6618 (metadata)
+// Module 6624 (metadata)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/WorldIllocon-2x.png.js");
 

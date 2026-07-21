@@ -1,9 +1,9 @@
-// Module ID: 13908
-// Function ID: 105726
+// Module ID: 13915
+// Function ID: 105749
 // Name: logger
 // Dependencies: []
 
-// Module 13908 (logger)
+// Module 13915 (logger)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 const logger = new arg1(dependencyMap[2]).Logger("MobileCustomMuxIntegration");
@@ -25,7 +25,7 @@ const tmp3 = () => {
       SessionManager = MobileCustomMuxIntegration(closure_2[3]).SessionManager;
       this.sessionId = SessionManager.generateSessionId();
       this.playerId = "discord-mobile-" + this.sessionId;
-      obj = { -1594137639: "uppercase", -1360703140: "center", 1649621859: 34, 1387052625: 0, -549140336: null, 1370110562: "display-md" };
+      obj = { flexDirection: true, alignItems: true, backgroundColor: true, borderRadius: true, accessible: "<string:2257477>", guildId: "isArray" };
       obj.video_series = arg0.contentMetadata.questId;
       obj.video_producer = arg0.contentMetadata.gameId;
       obj.video_brand = arg0.contentMetadata.gameName;
@@ -330,7 +330,7 @@ const tmp3 = () => {
     key: "mapConfigToMuxData",
     value(env_key) {
       const self = this;
-      const obj = { "Bool(true)": "Array", "Bool(true)": "isArray", "Bool(true)": "body", "Bool(true)": "header", "Bool(true)": "accessibilityRole", "Bool(true)": "names", "Bool(true)": "Array", "Bool(true)": "x", env_key, session_id: this.sessionId, video_id: this.config.contentMetadata.contentId, video_title: this.config.contentMetadata.title, video_duration: this.config.contentMetadata.durationMs, video_content_type: this.config.contentMetadata.contentType, video_series: this.config.contentMetadata.questId, video_producer: this.config.contentMetadata.gameId };
+      const obj = { env_key, session_id: this.sessionId, video_id: this.config.contentMetadata.contentId, video_title: this.config.contentMetadata.title, video_duration: this.config.contentMetadata.durationMs, video_content_type: this.config.contentMetadata.contentType, video_series: this.config.contentMetadata.questId, video_producer: this.config.contentMetadata.gameId };
       const gameName = this.config.contentMetadata.gameName;
       let str = "Discord";
       if (null != gameName) {

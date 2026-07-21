@@ -1,11 +1,11 @@
-// Module ID: 7746
-// Function ID: 61565
+// Module ID: 7750
+// Function ID: 61577
 // Name: apexExperiment
 // Dependencies: []
 
-// Module 7746 (apexExperiment)
+// Module 7750 (apexExperiment)
 const _module = require(dependencyMap[0]);
-const obj = { -1269606814: 61.05, -1845285747: 4, defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } };
+const obj = { 9223372036854775807: null, 0: null, defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } };
 const apexExperiment = _module.createApexExperiment(obj);
 const _module1 = require(dependencyMap[1]);
 const result = _module1.fileFinishedImporting("modules/premium/gifting/native/MobileFriendAnniversaryExperiment.tsx");

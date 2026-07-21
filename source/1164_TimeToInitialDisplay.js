@@ -61,7 +61,7 @@ function startTimeToInitialDisplaySpan(isAutoInstrumented) {
       return found;
     } else {
       const _Object = Object;
-      obj = { <string:3177735406>: 1, <string:2589106427>: 20, startTime: tmp4(tmp5[2]).spanToJSON(activeSpan).start_timestamp };
+      obj = { startTime: tmp4(tmp5[2]).spanToJSON(activeSpan).start_timestamp };
       const startInactiveSpanResult = obj3.startInactiveSpan(Object.assign(obj, isAutoInstrumented));
       const arg1 = startInactiveSpanResult;
       if (startInactiveSpanResult) {
@@ -110,7 +110,7 @@ function startTimeToFullDisplaySpan(arg0) {
           return found1;
         } else {
           const _Object = Object;
-          const obj = { <string:3177735406>: "center", <string:2589106427>: "center", startTime: tmp12(tmp13[2]).spanToJSON(found).start_timestamp };
+          const obj = { startTime: tmp12(tmp13[2]).spanToJSON(found).start_timestamp };
           const startInactiveSpanResult = obj4.startInactiveSpan(Object.assign(obj, first));
           const dependencyMap = startInactiveSpanResult;
           if (startInactiveSpanResult) {
@@ -307,7 +307,7 @@ function captureStartFramesForSpan(spanId) {
         }
       }, 60000);
       if (!store.has(callback)) {
-        const obj = { <string:1392706986>: false, <string:2888256863>: false, cleanupTimeout: timerId };
+        const obj = { "Null": "o", "Null": "o", cleanupTimeout: timerId };
         const result = store.set(callback, obj);
       }
       const value = store.get(callback);

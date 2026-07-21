@@ -1,9 +1,9 @@
-// Module ID: 16482
-// Function ID: 127337
+// Module ID: 16489
+// Function ID: 127371
 // Name: promise
 // Dependencies: []
 
-// Module 16482 (promise)
+// Module 16489 (promise)
 let closure_3 = importDefault(dependencyMap[0]);
 const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/headless_tasks/android/Disconnect.tsx");
 

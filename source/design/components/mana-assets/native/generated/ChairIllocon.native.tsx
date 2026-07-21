@@ -1,10 +1,10 @@
-// Module ID: 5931
-// Function ID: 49770
+// Module ID: 5933
+// Function ID: 49813
 // Name: ChairIllocon
 // Dependencies: []
 // Exports: ChairIllocon
 
-// Module 5931 (ChairIllocon)
+// Module 5933 (ChairIllocon)
 const jsx = require(dependencyMap[0]).jsx;
 const _module = require(dependencyMap[3]);
 const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/ChairIllocon.native.tsx");

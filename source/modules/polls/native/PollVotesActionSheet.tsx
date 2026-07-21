@@ -1,10 +1,10 @@
-// Module ID: 9923
-// Function ID: 76786
+// Module ID: 9928
+// Function ID: 76802
 // Name: PollEmoji
 // Dependencies: []
 // Exports: default
 
-// Module 9923 (PollEmoji)
+// Module 9928 (PollEmoji)
 function PollEmoji(emoji) {
   emoji = emoji.emoji;
   const arg1 = emoji;
@@ -52,7 +52,7 @@ function PollVotesHeader(message) {
   }, items1);
   if (null != message.poll) {
     let obj = {};
-    obj = { style: tmp.headerText, children: message.poll.question.text };
+    obj = { 9223372036854775807: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000028706073021718732, 9223372036854775807: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000017100505289156275, -9223372036854775808: 994646613622753800000000000000000000000000000000000000000000000000000000000000000000000, 1602121198: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001056174957006, style: tmp.headerText, children: message.poll.question.text };
     const items2 = [callback2(arg1(dependencyMap[17]).Text, obj), , ];
     obj = { style: tmp.subheaderText };
     const intl = arg1(dependencyMap[15]).intl;
@@ -60,7 +60,7 @@ function PollVotesHeader(message) {
     obj.children = intl.format(arg1(dependencyMap[15]).t.XRkuof, obj1);
     items2[1] = callback2(arg1(dependencyMap[17]).Text, obj);
     const obj2 = { gesture: tmp6 };
-    const obj3 = { GuildBadgeGem: "fullGradientContent", markComponentPassiveEffectMountStopped: "SU", strRepeat: "AutomodMentionRaidLimit", FLOATING_DEFAULT: "$$baseObject", PROFILE_PREMIUM_FEATURES: "chart", ITEM_WIDTH: "toString", ref };
+    const obj3 = { ref };
     ({ answerScroll: obj6.style, answerScrollContainer: obj6.contentContainerStyle } = tmp);
     const intl2 = arg1(dependencyMap[15]).intl;
     obj3.accessibilityLabel = intl2.string(arg1(dependencyMap[15]).t.qbir+4);
@@ -176,7 +176,7 @@ function VotersList(channelId) {
   const obj4 = arg1(dependencyMap[31]);
   class I {
     constructor() {
-      obj = { lineClamp: "PREMIUM_STANDARD", zoom: "apply", REVERSE_TRIAL_EMOJI_PICKER: "description" };
+      obj = { "Bool(false)": "SENTRY_BAGGAGE_KEY_PREFIX", "Bool(false)": "apply", "Bool(false)": "description" };
       obj.opacity = channelId.get();
       return obj;
     }
@@ -208,7 +208,7 @@ function NoResults() {
   const intl = arg1(dependencyMap[15]).intl;
   obj.children = intl.string(arg1(dependencyMap[15]).t.vhQK3o);
   items[1] = callback2(arg1(dependencyMap[17]).Text, obj);
-  const obj1 = { Promise: 10, marginTop: null, flags: "flex-start", style: tmp.noResultsSubtitle };
+  const obj1 = { style: tmp.noResultsSubtitle };
   const intl2 = arg1(dependencyMap[15]).intl;
   obj1.children = intl2.string(arg1(dependencyMap[15]).t.bwytdh);
   items[2] = callback2(arg1(dependencyMap[17]).Text, obj1);
@@ -227,19 +227,19 @@ let closure_13 = importDefault(dependencyMap[8]);
 const tmp2 = arg1(dependencyMap[3]);
 ({ jsx: closure_14, jsxs: closure_15 } = arg1(dependencyMap[9]));
 let obj1 = arg1(dependencyMap[10]);
-let obj = { headerText: { standardDeviation: 52881784.83212474, color: 0.0000000000000000000000000000000000000000000000000000000000000000000000011319598867188059 }, subheaderText: {}, answerScroll: { marginTop: 24 }, answerScrollContainer: { skuId: "space-between", c: null }, answerName: {}, list: { paddingHorizontal: 16 } };
-obj = { Icon: false, opacity: false, flex: false, assign: false, __workletHash: false, borderRadius: importDefault(dependencyMap[11]).radii.xs };
+let obj = { headerText: { "Null": 52881784.83212474, "Null": 0.0000000000000000000000000000000000000000000000000000000000000000000000011319598867188059 }, subheaderText: {}, answerScroll: { marginTop: 24 }, answerScrollContainer: {}, answerName: {}, list: { paddingHorizontal: 16 } };
+obj = { borderRadius: importDefault(dependencyMap[11]).radii.xs };
 obj.answerButton = obj;
 obj1 = { backgroundColor: importDefault(dependencyMap[11]).colors.BORDER_SUBTLE };
 obj.answerSelected = obj1;
 obj.answerEmoji = { marginRight: 8 };
 obj.answerText = { flexShrink: 1 };
 obj.emojiText = { fontSize: 16 };
-obj.emojiImage = { "Null": null, "Null": "6adfcc7a553215ee3085ec15a5a3e3a4", "Null": "ClockXIcon" };
+obj.emojiImage = { flex: true, padding: true, alignItems: true };
 obj.noResultsContainer = {};
-obj.noResultsImage = { "Null": false, "Null": false };
-obj.noResultsTitle = { accessible: "center", id: "center" };
-obj.noResultsSubtitle = { accessible: "audio", id: "architecture" };
+obj.noResultsImage = {};
+obj.noResultsTitle = { "Null": "center", "Null": "center" };
+obj.noResultsSubtitle = {};
 let closure_16 = obj1.createStyles(obj);
 let closure_17 = importAllResult.forwardRef((answer, ref) => {
   let reaction;
@@ -294,7 +294,7 @@ let closure_17 = importAllResult.forwardRef((answer, ref) => {
     tmp10 = callback2(ref(dependencyMap[17]).Text, obj1);
   }
   items2[1] = tmp10;
-  const obj2 = { 9223372036854775807: "Layer 1", 9223372036854775807: 1, 9223372036854775807: null, color: str };
+  const obj2 = { -9223372036854775808: 0, 0: null, 0: 0, color: str };
   const items3 = [true, true, num.toLocaleString(), ")"];
   obj2.children = items3;
   items2[2] = callback3(ref(dependencyMap[17]).Text, obj2);
@@ -365,7 +365,7 @@ export default function PollVotesActionSheet(channelId) {
     obj = { scrollable: true };
     const obj1 = { message: stateFromStores, selectedAnswerId: first, setSelectedAnswerId: tmp3[1] };
     obj.header = callback2(PollVotesHeader, obj1);
-    const obj2 = { Promise: 10, marginTop: null, flags: "flex-start", style: tmp.answerName };
+    const obj2 = { style: tmp.answerName };
     let text;
     if (null != found) {
       text = found.poll_media.text;

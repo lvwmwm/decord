@@ -1,8 +1,8 @@
-// Module ID: 8400
-// Function ID: 66873
+// Module ID: 8404
+// Function ID: 66885
 // Dependencies: []
 
-// Module 8400
+// Module 8404
 let closure_3 = importDefault(dependencyMap[0]);
 ({ BITRATE_DEFAULT: closure_4, ChannelTypes: closure_5, Endpoints: closure_6 } = arg1(dependencyMap[1]));
 let closure_7 = arg1(dependencyMap[2]).ChannelNotificationSettingsFlags;

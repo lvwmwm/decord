@@ -1,10 +1,10 @@
-// Module ID: 13844
-// Function ID: 104723
+// Module ID: 13851
+// Function ID: 104746
 // Name: useFilteredAndSortedProducts
 // Dependencies: []
 // Exports: useFilteredAndSortedProducts
 
-// Module 13844 (useFilteredAndSortedProducts)
+// Module 13851 (useFilteredAndSortedProducts)
 let closure_3 = importAll(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 let closure_5 = arg1(dependencyMap[2]).CollectiblesMobileShopScreen;

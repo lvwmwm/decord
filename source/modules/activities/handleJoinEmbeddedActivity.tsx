@@ -1,10 +1,10 @@
-// Module ID: 10505
-// Function ID: 82032
+// Module ID: 10511
+// Function ID: 82055
 // Name: _handleJoinEmbeddedActivityInternal
 // Dependencies: []
 // Exports: default
 
-// Module 10505 (_handleJoinEmbeddedActivityInternal)
+// Module 10511 (_handleJoinEmbeddedActivityInternal)
 function _handleJoinEmbeddedActivityInternal() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);

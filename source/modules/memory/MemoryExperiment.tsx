@@ -1,10 +1,11 @@
-// Module ID: 13203
-// Function ID: 100182
+// Module ID: 13210
+// Function ID: 100205
 // Dependencies: []
 
-// Module 13203
+// Module 13210
 const _module = require(dependencyMap[0]);
-let closure_2 = _module.createApexExperiment({ defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } });
+const obj = { 9223372036854775807: null, 0: null, defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } };
+let closure_2 = _module.createApexExperiment(obj);
 const interval = setInterval(() => {
   if (undefined === enabled) {
     const obj = { location: "startMemoryExperiment" };

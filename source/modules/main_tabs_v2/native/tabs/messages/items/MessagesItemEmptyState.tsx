@@ -1,20 +1,20 @@
-// Module ID: 14824
-// Function ID: 111733
+// Module ID: 14831
+// Function ID: 111757
 // Name: MESSAGES_ITEM_EMPTY_STATE_HEIGHT
 // Dependencies: []
 
-// Module 14824 (MESSAGES_ITEM_EMPTY_STATE_HEIGHT)
+// Module 14831 (MESSAGES_ITEM_EMPTY_STATE_HEIGHT)
 const importAllResult = importAll(dependencyMap[0]);
 ({ Image: closure_4, View: closure_5 } = arg1(dependencyMap[1]));
 const tmp2 = arg1(dependencyMap[1]);
 ({ jsx: closure_6, jsxs: closure_7 } = arg1(dependencyMap[2]));
 let obj1 = arg1(dependencyMap[3]);
 let obj = {};
-obj = { "Bool(true)": 1279, "Bool(true)": 512, "Bool(true)": 1536, padding: importDefault(dependencyMap[4]).space.PX_16 };
+obj = { "Null": "<string:592510980>", "Null": "<string:1359020034>", "Null": "<string:1363251339>", padding: importDefault(dependencyMap[4]).space.PX_16 };
 obj.container = obj;
-obj1 = { <string:2959330404>: null, <string:103043800>: null, <string:996288218>: null, marginBottom: importDefault(dependencyMap[4]).space.PX_16 };
+obj1 = { position: "default", bottom: "done", left: "go", marginBottom: importDefault(dependencyMap[4]).space.PX_16 };
 obj.containerImage = obj1;
-obj.image = { <string:1140607356>: 30271555, <string:1751293292>: 22092032 };
+obj.image = {};
 const tmp3 = arg1(dependencyMap[2]);
 obj.body = { marginBottom: importDefault(dependencyMap[4]).space.PX_16, marginTop: importDefault(dependencyMap[4]).space.PX_8, textAlign: "center" };
 obj.title = { textAlign: "center" };
@@ -36,7 +36,7 @@ const memoResult = importAllResult.memo(function MessagesItemEmptyState() {
       obj2 = current;
     }
     if (!tmp2) {
-      obj = { screen: "add-friends", params: {} };
+      obj = { screen: "add-friends", params: { GUILD_DISCOVERY_CHECKLIST: "<string:1010910605>", borderTopWidth: "<string:1912603051>" } };
       obj2.navigate("friends", obj);
     }
   }, []);
@@ -44,7 +44,7 @@ const memoResult = importAllResult.memo(function MessagesItemEmptyState() {
   obj.style = tmp.image;
   obj.children = callback(closure_4, obj);
   const items = [callback(closure_5, obj), , , ];
-  const obj1 = { type: "photo", isConnected: "high", isInternetReachable: 1, details: 0, style: tmp.title };
+  const obj1 = { <string:3422816600>: "photo", <string:99133337>: "high", <string:77661089>: 1, <string:3265332897>: 0, style: tmp.title };
   const intl = arg1(dependencyMap[8]).intl;
   obj1.children = intl.string(arg1(dependencyMap[8]).t.8JZof8);
   items[1] = callback(arg1(dependencyMap[7]).Heading, obj1);

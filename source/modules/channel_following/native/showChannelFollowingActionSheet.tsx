@@ -1,9 +1,9 @@
-// Module ID: 10353
-// Function ID: 79910
+// Module ID: 10359
+// Function ID: 79933
 // Name: showChannelFollowingActionSheet
 // Dependencies: []
 
-// Module 10353 (showChannelFollowingActionSheet)
+// Module 10359 (showChannelFollowingActionSheet)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/channel_following/native/showChannelFollowingActionSheet.tsx");

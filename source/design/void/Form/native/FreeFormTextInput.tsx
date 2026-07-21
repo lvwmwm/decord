@@ -1,9 +1,9 @@
-// Module ID: 8990
-// Function ID: 70800
+// Module ID: 8994
+// Function ID: 70812
 // Name: ClearButton
 // Dependencies: []
 
-// Module 8990 (ClearButton)
+// Module 8994 (ClearButton)
 function ClearButton(onPress) {
   let obj = { style: {}, accessibilityRole: "button" };
   const intl = arg1(dependencyMap[6]).intl;
@@ -20,7 +20,7 @@ const tmp2 = arg1(dependencyMap[1]);
 ({ jsx: closure_7, jsxs: closure_8 } = arg1(dependencyMap[2]));
 let obj1 = arg1(dependencyMap[3]);
 let obj = {};
-obj = { "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_BASE_LOWEST, borderColor: importDefault(dependencyMap[4]).colors.BACKGROUND_BASE_LOWEST, borderRadius: importDefault(dependencyMap[4]).radii.xs };
+obj = { backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_BASE_LOWEST, borderColor: importDefault(dependencyMap[4]).colors.BACKGROUND_BASE_LOWEST, borderRadius: importDefault(dependencyMap[4]).radii.xs };
 obj.container = obj;
 obj.onPress = { flexDirection: "row" };
 obj1 = { flex: 1, color: importDefault(dependencyMap[4]).colors.MOBILE_TEXT_HEADING_PRIMARY };
@@ -61,7 +61,7 @@ const forwardRefResult = importAllResult.forwardRef((editable) => {
   if (WITH_CONTENT === undefined) {
     WITH_CONTENT = arg1(dependencyMap[7]).ClearButtonVisibility.WITH_CONTENT;
   }
-  let obj = { role: "JPEGInterchangeFormatLength", aria-label: "isArrayBuffer", aria-valuenow: "MOBILE_BOTTOM_SHEET", aria-valuemin: "ON", aria-valuemax: "GameDepthTier9LargeBadge", isSearchActive: "RangeError", searchActiveSource: "%MapIteratorPrototype%", isNew: "isArray", hasUnreads: "MUR", formatInline: "absolute", noStyleAndInteraction: "[object Function]", allowHeading: "%Float64ArrayPrototype%", allowList: "setUploadedFilename", allowGameMentions: null, textColor: null };
+  let obj = { "Null": "6b87bd10c997f01ea0ccd2cea57f04c5", "Null": "ic_selection_none_24px", "Null": "png", "Null": "heading-xl/bold", "Null": null, "Null": "mobile-text-heading-primary", "Null": "header", "Null": null, "Null": 1, "Null": "absolute", "Null": "100%", "Null": "100%", "Null": null, "Null": "row", "Null": 4 };
   Object.setPrototypeOf(null);
   const merged = Object.assign(editable, obj);
   let ref;

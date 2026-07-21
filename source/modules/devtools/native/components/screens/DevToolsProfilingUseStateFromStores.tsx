@@ -1,10 +1,10 @@
-// Module ID: 14499
-// Function ID: 109193
+// Module ID: 14506
+// Function ID: 109216
 // Name: DevToolsProfilingUseStateFromStores
 // Dependencies: []
 // Exports: DevToolsProfilingUseStateFromStores
 
-// Module 14499 (DevToolsProfilingUseStateFromStores)
+// Module 14506 (DevToolsProfilingUseStateFromStores)
 let closure_2 = importDefault(dependencyMap[0]);
 let closure_3 = importAll(dependencyMap[1]);
 ({ jsx: closure_4, Fragment: closure_5, jsxs: closure_6 } = arg1(dependencyMap[2]));
@@ -58,16 +58,20 @@ export const DevToolsProfilingUseStateFromStores = function DevToolsProfilingUse
   let tmp13 = null;
   const ref = React.useRef(null);
   obj = {};
-  obj = { width: "r", height: "isArray" };
-  obj1 = { "Bool(false)": "interactionLifecycleOptions", "Bool(false)": "for", onValueChange: tmp[1], value: first };
-  obj.children = callback2(arg1(dependencyMap[6]).TableSwitchRow, obj1);
+  obj = { "Bool(false)": null, "Bool(false)": null, children: callback2(arg1(dependencyMap[6]).TableSwitchRow, { onValueChange: tmp[1], value: first }) };
   const items5 = [callback2(arg1(dependencyMap[5]).TableRowGroup, obj), ];
   if (first) {
-    obj2 = { width: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002557498385710117, height: -0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002150243147676575 };
-    obj3 = { label: "Execution time window threshold" };
-    obj4 = {};
+    obj1 = { "Bool(false)": false, "Bool(false)": "Reconcile now" };
+    obj2 = { label: "Execution time window threshold" };
+    obj3 = {};
     const items6 = [renderLabel("Time window to wait for before reporting violations."), ];
-    const obj5 = {
+    obj4 = {
+      "Bool(true)": "true",
+      "Bool(true)": "sq",
+      "Bool(true)": "30",
+      0: "true",
+      0: "st",
+      9223372036854775807: "30",
       defaultValue: str.toString(),
       onChange(arg0) {
           const NumberResult = Number(arg0);
@@ -84,58 +88,63 @@ export const DevToolsProfilingUseStateFromStores = function DevToolsProfilingUse
       leadingIcon: arg1(dependencyMap[9]).TimerIcon,
       ref
     };
-    items6[1] = callback2(arg1(dependencyMap[8]).TextField, obj5);
-    obj4.children = items6;
-    obj3.subLabel = callback3(str3, obj4);
-    const items7 = [callback2(arg1(dependencyMap[7]).TableRow, obj3), , , ];
-    const obj6 = { label: "Cumulative execution time warning threshold" };
-    const obj7 = {};
+    items6[1] = callback2(arg1(dependencyMap[8]).TextField, obj4);
+    obj3.children = items6;
+    obj2.subLabel = callback3(str3, obj3);
+    const items7 = [callback2(arg1(dependencyMap[7]).TableRow, obj2), , , ];
+    const obj5 = { label: "Cumulative execution time warning threshold" };
+    const obj6 = {};
     const items8 = [renderLabel("Total execution time limit for hooks before reporting violations."), ];
-    const obj8 = {
+    const obj7 = {
       defaultValue: str2.toString(),
       leadingIcon: arg1(dependencyMap[9]).TimerIcon,
       onChange(arg0) {
           callback2(Number(arg0));
         }
     };
-    items8[1] = callback2(arg1(dependencyMap[8]).TextField, obj8);
-    obj7.children = items8;
-    obj6.subLabel = callback3(str3, obj7);
-    items7[1] = callback2(arg1(dependencyMap[7]).TableRow, obj6);
-    const obj9 = { label: "Cumulative execution count warning threshold" };
-    const obj10 = {};
+    items8[1] = callback2(arg1(dependencyMap[8]).TextField, obj7);
+    obj6.children = items8;
+    obj5.subLabel = callback3(str3, obj6);
+    items7[1] = callback2(arg1(dependencyMap[7]).TableRow, obj5);
+    const obj8 = { label: "Cumulative execution count warning threshold" };
+    const obj9 = {};
     const items9 = [renderLabel("Execution counts limit for hooks before reporting violations."), ];
-    const obj11 = {
+    const obj10 = {
+      <string:2072990387>: -0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000015580784020305266,
+      <string:1615957600>: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000216359237924059,
+      <string:1368023438>: 12492591857896.666,
+      <string:979618308>: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001593406640206244,
+      <string:1549950156>: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002153788812668003,
       defaultValue: str3.toString(),
       leadingIcon: arg1(dependencyMap[10]).AnalyticsIcon,
       onChange(arg0) {
           callback3(Number(arg0));
         }
     };
-    items9[1] = callback2(arg1(dependencyMap[8]).TextField, obj11);
-    obj10.children = items9;
-    obj9.subLabel = callback3(str3, obj10);
-    items7[2] = callback2(arg1(dependencyMap[7]).TableRow, obj9);
-    const obj12 = { label: "Track specific hook" };
-    const obj13 = {};
+    items9[1] = callback2(arg1(dependencyMap[8]).TextField, obj10);
+    obj9.children = items9;
+    obj8.subLabel = callback3(str3, obj9);
+    items7[2] = callback2(arg1(dependencyMap[7]).TableRow, obj8);
+    const obj11 = { label: "Track specific hook" };
+    const obj12 = {};
     const items10 = [renderLabel("Include a specific hook in the profiling regardless of limits."), ];
-    const obj14 = { defaultValue: first1, leadingIcon: arg1(dependencyMap[11]).LettersIcon, trailingIcon: arg1(dependencyMap[12]).TrashIcon };
-    const obj15 = {};
+    const obj13 = { defaultValue: first1, leadingIcon: arg1(dependencyMap[11]).LettersIcon, trailingIcon: arg1(dependencyMap[12]).TrashIcon };
+    const obj14 = {};
     const intl = arg1(dependencyMap[13]).intl;
-    obj15.accessibilityLabel = intl.string(arg1(dependencyMap[13]).t.VkKicb);
-    obj15.onPress = function onPress() {
+    obj14.accessibilityLabel = intl.string(arg1(dependencyMap[13]).t.VkKicb);
+    obj14.onPress = function onPress() {
       callback4("");
     };
-    obj14.trailingPressableProps = obj15;
-    obj14.onChange = function onChange(arg0) {
+    obj13.trailingPressableProps = obj14;
+    obj13.onChange = function onChange(arg0) {
       callback4(arg0);
     };
-    items10[1] = callback2(arg1(dependencyMap[8]).TextField, obj14);
-    obj13.children = items10;
-    obj12.subLabel = callback3(str3, obj13);
-    items7[3] = callback2(arg1(dependencyMap[7]).TableRow, obj12);
-    obj2.children = items7;
-    tmp13 = callback3(arg1(dependencyMap[5]).TableRowGroup, obj2);
+    items10[1] = callback2(arg1(dependencyMap[8]).TextField, obj13);
+    obj12.children = items10;
+    obj11.subLabel = callback3(str3, obj12);
+    items7[3] = callback2(arg1(dependencyMap[7]).TableRow, obj11);
+    obj1.children = items7;
+    tmp13 = callback3(arg1(dependencyMap[5]).TableRowGroup, obj1);
   }
   items5[1] = tmp13;
   obj.children = items5;

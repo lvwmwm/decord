@@ -1,10 +1,10 @@
-// Module ID: 11254
-// Function ID: 87548
+// Module ID: 11260
+// Function ID: 87571
 // Name: useFilterAndSortToOnlyFrecentCommands
 // Dependencies: []
 // Exports: default
 
-// Module 11254 (useFilterAndSortToOnlyFrecentCommands)
+// Module 11260 (useFilterAndSortToOnlyFrecentCommands)
 let closure_2 = importAll(dependencyMap[0]);
 let closure_3 = importDefault(dependencyMap[1]);
 const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/app_launcher/hooks/useFilterAndSortToOnlyFrecentCommands.tsx");

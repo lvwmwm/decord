@@ -1,12 +1,10 @@
 // Module ID: 819
 // Function ID: 9136
 // Name: getAsyncContextStack
-// Dependencies: [0, 4294967295, 0, 0, 0, 0]
+// Dependencies: []
 // Exports: getStackAsyncContextStrategy
 
 // Module 819 (getAsyncContextStack)
-import result from "result";
-
 function getAsyncContextStack() {
   const mainCarrier = require(dependencyMap[4]).getMainCarrier();
   const obj = require(dependencyMap[4]);
@@ -29,7 +27,7 @@ function withSetScope(arg0, arg1) {
   const require = arg0;
   const dependencyMap = arg1;
   const obj = getAsyncContextStack();
-  const result = obj;
+  let closure_2 = obj;
   return obj.withScope(() => {
     obj.getStackTop().scope = arg0;
     return arg1(arg0);
@@ -39,6 +37,7 @@ function withIsolationScope(arg0) {
   const require = arg0;
   return getAsyncContextStack().withScope(() => arg0(callback().getIsolationScope()));
 }
+let closure_2 = require(dependencyMap[0]);
 let closure_3 = require(dependencyMap[1]);
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 const tmp2 = () => {

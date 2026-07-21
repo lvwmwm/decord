@@ -1,10 +1,10 @@
-// Module ID: 10744
-// Function ID: 83486
+// Module ID: 10750
+// Function ID: 83509
 // Name: useMyCurrentStageChannelRole
 // Dependencies: []
 // Exports: default
 
-// Module 10744 (useMyCurrentStageChannelRole)
+// Module 10750 (useMyCurrentStageChannelRole)
 let closure_2 = importDefault(dependencyMap[0]);
 let closure_3 = importDefault(dependencyMap[1]);
 let closure_4 = importDefault(dependencyMap[2]);

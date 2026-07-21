@@ -21,7 +21,7 @@ export function makeOfflineTransport(arg0) {
     if (arg0(log[1]).DEBUG_BUILD) {
       const debug = arg0(log[2]).debug;
       const log = debug.log;
-      const items = [null];
+      const items = ["<string:3343974402>"];
       log.apply(debug, items.concat(array));
     }
   }

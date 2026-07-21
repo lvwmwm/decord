@@ -1,10 +1,10 @@
-// Module ID: 12267
-// Function ID: 94058
+// Module ID: 12274
+// Function ID: 94081
 // Name: useEligibleActiveOutboundPromotions
 // Dependencies: []
 // Exports: useBogoPromotion, useHasActiveBogoPromotion, useIsInPromotion, useOutboundPromotions, useUnseenOutboundPromotions
 
-// Module 12267 (useEligibleActiveOutboundPromotions)
+// Module 12274 (useEligibleActiveOutboundPromotions)
 function useEligibleActiveOutboundPromotions(arg0) {
   let obj = arg0;
   if (arg0 === undefined) {

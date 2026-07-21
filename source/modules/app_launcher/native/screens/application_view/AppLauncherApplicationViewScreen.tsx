@@ -1,10 +1,10 @@
-// Module ID: 11230
-// Function ID: 87431
+// Module ID: 11236
+// Function ID: 87454
 // Name: AppLauncherApplicationViewScreenInner
 // Dependencies: []
 // Exports: default
 
-// Module 11230 (AppLauncherApplicationViewScreenInner)
+// Module 11236 (AppLauncherApplicationViewScreenInner)
 function AppLauncherApplicationViewScreenInner(application) {
   let context;
   let entrypoint;

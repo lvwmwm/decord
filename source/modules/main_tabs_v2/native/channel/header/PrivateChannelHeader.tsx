@@ -1,9 +1,9 @@
-// Module ID: 10101
-// Function ID: 78199
+// Module ID: 10107
+// Function ID: 78217
 // Name: GroupDmMemberCount
 // Dependencies: []
 
-// Module 10101 (GroupDmMemberCount)
+// Module 10107 (GroupDmMemberCount)
 function GroupDmMemberCount(channel) {
   channel = channel.channel;
   const arg1 = channel;

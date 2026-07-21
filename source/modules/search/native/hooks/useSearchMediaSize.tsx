@@ -1,10 +1,10 @@
-// Module ID: 15205
-// Function ID: 114848
+// Module ID: 15212
+// Function ID: 114872
 // Name: useSearchMediaSize
 // Dependencies: []
 // Exports: default
 
-// Module 15205 (useSearchMediaSize)
+// Module 15212 (useSearchMediaSize)
 const _module = require(dependencyMap[0]);
 ({ SEARCH_LIST_HORIZONTAL_PADDING: closure_0, MEDIA_NUM_COLUMNS: closure_1, MEDIA_ITEM_GAP_WIDTH: closure_2 } = _module);
 const _module1 = require(dependencyMap[1]);

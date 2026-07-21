@@ -1,10 +1,10 @@
-// Module ID: 7658
-// Function ID: 61225
+// Module ID: 7657
+// Function ID: 61220
 // Name: getUserGuildMember
 // Dependencies: []
 // Exports: useCurrentUserCommunicationDisabled, userCommunicationDisabled
 
-// Module 7658 (getUserGuildMember)
+// Module 7657 (getUserGuildMember)
 function getUserGuildMember(id, guildId, closure_2) {
   let member = null;
   if (null != guildId) {

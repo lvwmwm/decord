@@ -1,10 +1,10 @@
-// Module ID: 8439
-// Function ID: 67349
+// Module ID: 8443
+// Function ID: 67361
 // Name: getStatusLabel
 // Dependencies: []
 // Exports: default, getChannelA11yHint
 
-// Module 8439 (getStatusLabel)
+// Module 8443 (getStatusLabel)
 function getStatusLabel(status) {
   if (constants2.ONLINE === status) {
     return require(dependencyMap[7]).humanizeStatus(constants2.ONLINE);

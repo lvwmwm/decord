@@ -1,10 +1,10 @@
-// Module ID: 7719
-// Function ID: 61418
+// Module ID: 7723
+// Function ID: 61430
 // Name: createChannelLinkedToLobbySystemMessage
 // Dependencies: []
 // Exports: createChannelLinkedToLobbySystemMessage
 
-// Module 7719 (createChannelLinkedToLobbySystemMessage)
+// Module 7723 (createChannelLinkedToLobbySystemMessage)
 let closure_3 = importDefault(dependencyMap[0]);
 const HelpdeskArticles = arg1(dependencyMap[1]).HelpdeskArticles;
 const result = arg1(dependencyMap[8]).fileFinishedImporting("modules/messages/native/renderer/system_messages/ChannelLinkedToLobbySystemMessage.tsx");

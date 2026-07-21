@@ -1,10 +1,10 @@
-// Module ID: 9435
-// Function ID: 73549
+// Module ID: 9439
+// Function ID: 73563
 // Name: useCaptchaStore
-// Dependencies: [619905024, 344195072, 94568448, 119603200, 131072, 1803354112]
+// Dependencies: [620167168, 344326144, 94568448, 119603200, 131072, 1904017408]
 // Exports: flushCaptchaServeVolume, incrementCaptchaServeVolume, isCaptchaStoreVolumeEmpty
 
-// Module 9435 (useCaptchaStore)
+// Module 9439 (useCaptchaStore)
 let closure_3 = importDefault(dependencyMap[0]);
 let obj = arg1(dependencyMap[1]);
 obj = obj.create(() => ({ captchaServeVolume: {} }));

@@ -1,23 +1,22 @@
-// Module ID: 15162
-// Function ID: 114357
-// Dependencies: [1849, 1212, 4096, 15166, 1934, 5640, 15167, 5493, 2, 31, 27, 4120, 1910, 8428, 33, 4126, 689, 566, 8427, 4096]
+// Module ID: 15169
+// Function ID: 114381
+// Dependencies: []
 
-// Module 15162
-import importAllResult from "_isNativeReflectConstruct";
-import { View } from "getSystemLocale";
-import showActionSheet from "showActionSheet";
-import MembersFilterActionSheet from "MembersFilterActionSheet";
-import maybeLoadBundle from "maybeLoadBundle";
-import getContextForPermission from "getContextForPermission";
-import MembersPruneActionSheetContent from "MembersPruneActionSheetContent";
-
-({ jsx: closure_8, jsxs: closure_9 } = getContextForPermission);
+// Module 15169
+const importAllResult = importAll(dependencyMap[0]);
+const View = arg1(dependencyMap[1]).View;
+let closure_5 = importDefault(dependencyMap[2]);
+let closure_6 = importDefault(dependencyMap[3]);
+let closure_7 = importDefault(dependencyMap[4]);
+({ jsx: closure_8, jsxs: closure_9 } = arg1(dependencyMap[5]));
+const tmp2 = arg1(dependencyMap[5]);
 let obj = {};
-obj = { flex: 1, backgroundColor: require("showSimpleActionSheet").colors.BACKGROUND_BASE_LOWER };
+obj = { flex: 1, backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_BASE_LOWER };
 obj.container = obj;
 obj.content = { flex: 1 };
-obj.tabContainer = {};
-let closure_10 = MembersPruneActionSheetContent.createStyles(obj);
+obj.tabContainer = { y: true, YWMtRe: true };
+let closure_10 = arg1(dependencyMap[6]).createStyles(obj);
+const obj2 = arg1(dependencyMap[6]);
 const memoResult = importAllResult.memo((guildId) => {
   guildId = guildId.guildId;
   const arg1 = guildId;
@@ -25,9 +24,9 @@ const memoResult = importAllResult.memo((guildId) => {
   let dependencyMap;
   let importAllResult;
   let View;
-  let showActionSheet;
-  let MembersFilterActionSheet;
-  let maybeLoadBundle;
+  let closure_5;
+  let closure_6;
+  let closure_7;
   let obj = arg1(dependencyMap[9]);
   const submittedGuildJoinRequestTotal = obj.useSubmittedGuildJoinRequestTotal({ guildId });
   let num = 0;
@@ -37,12 +36,12 @@ const memoResult = importAllResult.memo((guildId) => {
   importDefault = num;
   const tmp2 = callback3();
   let obj1 = arg1(dependencyMap[10]);
-  const items = [showActionSheet];
+  const items = [closure_5];
   const items1 = [guildId];
   const stateFromStores = obj1.useStateFromStores(items, () => callback.getGuild(guildId), items1);
   dependencyMap = stateFromStores;
   let obj2 = arg1(dependencyMap[10]);
-  const items2 = [MembersFilterActionSheet, maybeLoadBundle];
+  const items2 = [closure_6, closure_7];
   const items3 = [stateFromStores];
   const stateFromStores1 = obj2.useStateFromStores(items2, () => {
     let canPruneGuildMembersResult = null != stateFromStores;
@@ -120,7 +119,7 @@ const memoResult = importAllResult.memo((guildId) => {
     };
     return closure_8(guildId(stateFromStores[18]).ContextMenu, obj);
   }, items5);
-  showActionSheet = callback;
+  closure_5 = callback;
   const items6 = [navigation, callback];
   const callback1 = importAllResult.useCallback((arg0) => {
     const guildId = arg0;
@@ -134,7 +133,7 @@ const memoResult = importAllResult.memo((guildId) => {
       }
     });
   }, items6);
-  MembersFilterActionSheet = callback1;
+  closure_6 = callback1;
   const obj4 = arg1(dependencyMap[17]);
   obj = { pageWidth: importDefault(dependencyMap[8])().width, items: memo };
   let num2 = 0;
@@ -144,7 +143,7 @@ const memoResult = importAllResult.memo((guildId) => {
   obj.defaultIndex = num2;
   obj.onSetActiveIndex = callback1;
   const segmentedControlState = arg1(dependencyMap[22]).useSegmentedControlState(obj);
-  maybeLoadBundle = segmentedControlState;
+  closure_7 = segmentedControlState;
   const items7 = [segmentedControlState.activeIndex, callback1];
   const effect = importAllResult.useEffect(() => {
     const activeIndex = segmentedControlState.activeIndex;

@@ -1,9 +1,9 @@
-// Module ID: 11716
-// Function ID: 90998
+// Module ID: 11723
+// Function ID: 91021
 // Name: NewUserTypes
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 11716 (NewUserTypes)
+// Module 11723 (NewUserTypes)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("modules/nuf/NUFConstants.tsx");
 

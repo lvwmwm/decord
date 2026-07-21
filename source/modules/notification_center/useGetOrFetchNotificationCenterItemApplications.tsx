@@ -1,16 +1,15 @@
-// Module ID: 15009
-// Function ID: 113095
+// Module ID: 15016
+// Function ID: 113119
 // Name: set
 // Dependencies: [0, 0, 0, 0]
 // Exports: useGetOrFetchNotificationCenterItemsApplications
 
-// Module 15009 (set)
-import closure_2 from "result";
-import result from "result";
+// Module 15016 (set)
+import __exportStarResult1 from "__exportStarResult1";
 
-const items = [require("result").NotificationCenterLocalItems.INCOMING_GAME_FRIEND_REQUESTS, require("result").NotificationCenterLocalItems.INCOMING_GAME_FRIEND_REQUESTS_ACCEPTED, require("result").NotificationCenterLocalItems.INCOMING_FRIEND_REQUESTS, require("result").NotificationCenterLocalItems.INCOMING_FRIEND_REQUESTS_ACCEPTED];
+const items = [require("__exportStarResult1").NotificationCenterLocalItems.INCOMING_GAME_FRIEND_REQUESTS, require("__exportStarResult1").NotificationCenterLocalItems.INCOMING_GAME_FRIEND_REQUESTS_ACCEPTED, require("__exportStarResult1").NotificationCenterLocalItems.INCOMING_FRIEND_REQUESTS, require("__exportStarResult1").NotificationCenterLocalItems.INCOMING_FRIEND_REQUESTS_ACCEPTED];
 const set = new Set(items);
-result = result.fileFinishedImporting("modules/notification_center/useGetOrFetchNotificationCenterItemApplications.tsx");
+const result = require("__exportStarResult1").fileFinishedImporting("modules/notification_center/useGetOrFetchNotificationCenterItemApplications.tsx");
 
 export const useGetOrFetchNotificationCenterItemsApplications = function useGetOrFetchNotificationCenterItemsApplications(stateFromStores1) {
   const importDefault = stateFromStores1;

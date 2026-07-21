@@ -1,14 +1,12 @@
-// Module ID: 6421
-// Function ID: 50505
+// Module ID: 6423
+// Function ID: 50548
 // Name: ProfileEffectsAbstractUI
 // Dependencies: [4294967295, 0, 0, 0]
 // Exports: ProfileEffectsAbstractUI
 
-// Module 6421 (ProfileEffectsAbstractUI)
-import result from "result";
-
+// Module 6423 (ProfileEffectsAbstractUI)
 const jsx = require(dependencyMap[0]).jsx;
-result = result.fileFinishedImporting("design/components/mana-assets/native/generated/ProfileEffectsAbstractUI.native.tsx");
+const result = require("__exportStarResult1").fileFinishedImporting("design/components/mana-assets/native/generated/ProfileEffectsAbstractUI.native.tsx");
 
 export const ProfileEffectsAbstractUI = function ProfileEffectsAbstractUI(width) {
   let accessibilityLabel;

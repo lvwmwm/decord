@@ -1,10 +1,10 @@
-// Module ID: 5973
-// Function ID: 49833
+// Module ID: 5975
+// Function ID: 49876
 // Name: D20SpotIllustration
 // Dependencies: []
 // Exports: D20SpotIllustration
 
-// Module 5973 (D20SpotIllustration)
+// Module 5975 (D20SpotIllustration)
 const jsx = require(dependencyMap[0]).jsx;
 const _module = require(dependencyMap[3]);
 const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/D20SpotIllustration.native.tsx");

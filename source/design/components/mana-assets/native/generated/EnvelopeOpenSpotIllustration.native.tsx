@@ -1,10 +1,10 @@
-// Module ID: 6029
-// Function ID: 49917
+// Module ID: 6031
+// Function ID: 49960
 // Name: EnvelopeOpenSpotIllustration
 // Dependencies: []
 // Exports: EnvelopeOpenSpotIllustration
 
-// Module 6029 (EnvelopeOpenSpotIllustration)
+// Module 6031 (EnvelopeOpenSpotIllustration)
 const jsx = require(dependencyMap[0]).jsx;
 const _module = require(dependencyMap[3]);
 const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/EnvelopeOpenSpotIllustration.native.tsx");

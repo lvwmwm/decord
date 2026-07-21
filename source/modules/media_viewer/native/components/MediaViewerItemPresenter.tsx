@@ -1,14 +1,14 @@
-// Module ID: 12130
-// Function ID: 93481
+// Module ID: 12137
+// Function ID: 93504
 // Name: MediaViewerItemPresenter
 // Dependencies: []
 // Exports: default
 
-// Module 12130 (MediaViewerItemPresenter)
+// Module 12137 (MediaViewerItemPresenter)
 let closure_3 = importAll(dependencyMap[0]);
 ({ View: closure_4, StyleSheet: closure_5 } = arg1(dependencyMap[1]));
 const jsx = arg1(dependencyMap[2]).jsx;
-let closure_7 = { platformStyles: { "Null": true, "Null": false, "Null": "" } };
+let closure_7 = { platformStyles: { "Null": null, "Null": null, "Null": null } };
 let closure_8 = { code: "function MediaViewerItemPresenterTsx1(){const{entranceAnimationDriver,interpolate,Extrapolation,startHeight,sourceHeight,startWidth,sourceWidth,startTranslateY,startTranslateX,startScale}=this.__closure;const entranceValue=entranceAnimationDriver.get();function interpolateProxy(from,to){return interpolate(entranceValue,from,to,Extrapolation.CLAMP);}return{height:interpolateProxy([0,1],[startHeight,sourceHeight]),width:interpolateProxy([0,1],[startWidth,sourceWidth]),top:interpolateProxy([0,1],[startTranslateY,0]),left:interpolateProxy([0,1],[startTranslateX,0]),borderRadius:interpolateProxy([0,0.25],[16,0]),transform:[{scale:interpolateProxy([0,1],[startScale,1])}]};}" };
 const tmp2 = arg1(dependencyMap[1]);
 const result = arg1(dependencyMap[8]).fileFinishedImporting("modules/media_viewer/native/components/MediaViewerItemPresenter.tsx");
@@ -138,7 +138,7 @@ export default function MediaViewerItemPresenter(windowHeight) {
         return callback(closure_2[6]).interpolate(callback, arg0, items, callback(closure_2[6]).Extrapolation.CLAMP);
       };
       windowWidth = entranceAnimationDriver.get();
-      obj = { height: interpolateProxy([null, null], items), width: interpolateProxy([null, null], items1), top: interpolateProxy([null, null], items2), left: interpolateProxy([null, null], items3), borderRadius: interpolateProxy([null, null], [0.532, 0.22]) };
+      obj = { height: interpolateProxy(["Text", "lc"], items), width: interpolateProxy(["Text", "lc"], items1), top: interpolateProxy(["Text", "lc"], items2), left: interpolateProxy(["Text", "lc"], items3), borderRadius: interpolateProxy([null, null], [0.532, 0.22]) };
       items = [, ];
       items[0] = height;
       items[1] = height;
@@ -151,7 +151,7 @@ export default function MediaViewerItemPresenter(windowHeight) {
       items3 = [, ];
       items3[0] = width;
       items3[1] = 0;
-      obj = { scale: interpolateProxy([null, null], items4) };
+      obj = { scale: interpolateProxy(["Text", "lc"], items4) };
       items4 = [, ];
       items4[0] = closure_7;
       items4[1] = 1;

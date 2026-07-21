@@ -1,10 +1,10 @@
-// Module ID: 10017
-// Function ID: 77402
+// Module ID: 10023
+// Function ID: 77420
 // Name: DefaultState
 // Dependencies: []
 // Exports: default
 
-// Module 10017 (DefaultState)
+// Module 10023 (DefaultState)
 import ArrayResult from "module_20";
 
 function DefaultState() {
@@ -49,7 +49,7 @@ function EmptyState(channel) {
   obj = { style: tmp.emptyWrapper };
   obj1 = { style: tmp.emptyStateImage, source: importDefault(dependencyMap[9]) };
   const items1 = [callback2(closure_7, obj1), , ];
-  const obj2 = { Promise: "primary", marginTop: null, flags: null, style: tmp.emptyStateTitle };
+  const obj2 = { "Null": "auto", "Null": 1, "Null": 16, style: tmp.emptyStateTitle };
   const intl2 = arg1(dependencyMap[11]).intl;
   obj2.children = intl2.string(arg1(dependencyMap[11]).t.6HXiuE);
   items1[1] = callback2(arg1(dependencyMap[10]).Text, obj2);
@@ -71,10 +71,10 @@ let obj = arg1(dependencyMap[7]);
 obj = { flex: {}, fauxHeader: { paddingHorizontal: 0 } };
 obj = { backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_BASE_LOW };
 obj.scrollContainer = obj;
-obj.emptyWrapper = { ModalFloatingActionProps: "r", borderTopLeftRadius: "overlayButton", borderTopRightRadius: "r", overflow: "LinkingTypes" };
+obj.emptyWrapper = {};
 obj.emptyStateImage = { marginBottom: 24 };
 obj.emptyStateText = { textAlign: "center" };
-obj.emptyStateTitle = { bounces: "audio", keyboardShouldPersistTaps: "architecture" };
+obj.emptyStateTitle = {};
 const tmp4 = arg1(dependencyMap[6]);
 obj.proTip = { fontFamily: tmp3.Fonts.PRIMARY_BOLD, color: importDefault(dependencyMap[8]).unsafe_rawColors.GREEN_360, textTransform: "uppercase" };
 let closure_14 = obj.createStyles(obj);

@@ -1,10 +1,10 @@
-// Module ID: 11631
-// Function ID: 90287
+// Module ID: 11638
+// Function ID: 90310
 // Name: defaultCountFormatter
 // Dependencies: []
 // Exports: Tabs
 
-// Module 11631 (defaultCountFormatter)
+// Module 11638 (defaultCountFormatter)
 function defaultCountFormatter(toLocaleString) {
   return toLocaleString.toLocaleString(locale.locale);
 }
@@ -19,7 +19,7 @@ let closure_9 = {};
 const importDefaultResult = importDefault(dependencyMap[4]);
 let closure_10 = arg1(dependencyMap[5]).createStyles((gap) => {
   let obj = {};
-  obj = { 0: null, 0: null, 0: null, 9223372036854775807: null, 9223372036854775807: null, 9223372036854775807: null, 0: null, borderBottomColor: importDefault(dependencyMap[6]).colors.BORDER_SUBTLE };
+  obj = { borderBottomColor: importDefault(dependencyMap[6]).colors.BORDER_SUBTLE };
   obj.container = obj;
   obj = { marginHorizontal: importDefault(dependencyMap[6]).space.PX_16, flexDirection: "row", gap };
   obj.controlsContainer = obj;
@@ -371,7 +371,7 @@ export const Tabs = function Tabs(state) {
     }
     return result;
   }, items4);
-  obj2 = { "Bool(true)": "<string:1090584577>", "Bool(true)": "o or\u0103", "Bool(true)": "<string:170017025>", "Bool(true)": "<string:1732313090>", "Bool(true)": "<string:1358955016>", "Bool(true)": "<string:289702746>", "Bool(true)": "<string:3959424030>", ref };
+  obj2 = { ref };
   const obj9 = arg1(dependencyMap[4]);
   const tmp14 = activeIndex;
   const tmp15 = closure_8;

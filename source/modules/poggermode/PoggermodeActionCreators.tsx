@@ -1,10 +1,10 @@
-// Module ID: 7062
-// Function ID: 56456
+// Module ID: 7066
+// Function ID: 56467
 // Name: updatePoggermodeSettings
 // Dependencies: []
 // Exports: clearMessageCombo, updateCombo, updateComboOnMessageSend, updatePoggermodeSettings
 
-// Module 7062 (updatePoggermodeSettings)
+// Module 7066 (updatePoggermodeSettings)
 let closure_2 = importDefault(dependencyMap[0]);
 let closure_3 = importDefault(dependencyMap[1]);
 let closure_4 = importDefault(dependencyMap[2]);

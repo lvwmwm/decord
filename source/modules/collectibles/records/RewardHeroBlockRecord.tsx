@@ -1,9 +1,9 @@
-// Module ID: 6804
-// Function ID: 53651
+// Module ID: 6810
+// Function ID: 53700
 // Name: RewardHeroBlockRecord
 // Dependencies: []
 
-// Module 6804 (RewardHeroBlockRecord)
+// Module 6810 (RewardHeroBlockRecord)
 let closure_2 = importDefault(dependencyMap[0]);
 let closure_3 = importDefault(dependencyMap[1]);
 const tmp2 = () => {

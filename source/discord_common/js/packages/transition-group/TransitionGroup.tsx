@@ -1,9 +1,9 @@
-// Module ID: 10347
-// Function ID: 79871
+// Module ID: 10353
+// Function ID: 79894
 // Name: _toPropertyKey
 // Dependencies: []
 
-// Module 10347 (_toPropertyKey)
+// Module 10353 (_toPropertyKey)
 function _toPropertyKey(arg0) {
   let StringResult = arg0;
   if ("object" === typeof arg0) {
@@ -309,7 +309,7 @@ const tmp3 = (Component) => {
   ];
   return callback(TransitionGroup, items, items1);
 }(importAllResult.Component);
-tmp3.defaultProps = {};
+tmp3.defaultProps = { 1378607046: true, -504327702: true, -1027837358: true, -1133358108: true, -202054462: true };
 const result = arg1(dependencyMap[8]).fileFinishedImporting("../discord_common/js/packages/transition-group/TransitionGroup.tsx");
 
 export const TransitionGroup = tmp3;

@@ -1,10 +1,10 @@
-// Module ID: 8322
-// Function ID: 65981
+// Module ID: 8326
+// Function ID: 65993
 // Name: resolveShareFileExtension
 // Dependencies: []
 // Exports: getMediaShareParams, trackAppClickInNativeShareSheet
 
-// Module 8322 (resolveShareFileExtension)
+// Module 8326 (resolveShareFileExtension)
 function resolveShareFileExtension(uri, contentType) {
   return require(dependencyMap[3]).decideFileExtension(uri, contentType, true);
 }

@@ -1,10 +1,10 @@
-// Module ID: 11155
-// Function ID: 86753
+// Module ID: 11161
+// Function ID: 86776
 // Name: Placeholder
 // Dependencies: []
 // Exports: default
 
-// Module 11155 (Placeholder)
+// Module 11161 (Placeholder)
 function Placeholder() {
   const tmp = callback4();
   let obj = arg1(dependencyMap[12]);
@@ -132,13 +132,13 @@ let obj = arg1(dependencyMap[7]);
 obj = {};
 obj = { marginBottom: importDefault(dependencyMap[8]).space.PX_16 };
 obj.container = obj;
-obj.headerContainer = { "Bool(true)": "<string:3435973836>", "Bool(true)": "<string:1903247380>", "Bool(true)": "r" };
-const obj1 = { -9223372036854775808: true, filter: true, gap: importDefault(dependencyMap[8]).space.PX_4 };
-obj.header = obj1;
-obj.scrollView = {};
+obj.headerContainer = { bottom: "<string:3435973836>", left: "<string:1903247380>", padding: "r" };
 const tmp3 = arg1(dependencyMap[6]);
+obj.header = { gap: importDefault(dependencyMap[8]).space.PX_4 };
+obj.scrollView = {};
+const obj1 = { gap: importDefault(dependencyMap[8]).space.PX_4 };
 obj.scrollViewContentContainer = { gap: importDefault(dependencyMap[8]).space.PX_8 };
-obj.contextMenuIcon = { <string:1140607356>: "<string:16777479>", <string:1751293292>: "<string:36295491>" };
+obj.contextMenuIcon = {};
 const obj2 = { gap: importDefault(dependencyMap[8]).space.PX_8 };
 const merged = Object.assign(importDefault(dependencyMap[8]).shadows.SHADOW_LOW);
 obj.appContainer = { backgroundColor: importDefault(dependencyMap[8]).colors.CARD_BACKGROUND_DEFAULT, borderRadius: importDefault(dependencyMap[8]).radii.lg };
@@ -148,11 +148,11 @@ obj.appContainerDisabled = { backgroundColor: importDefault(dependencyMap[8]).co
 const obj4 = { backgroundColor: importDefault(dependencyMap[8]).colors.CARD_BACKGROUND_DEFAULT, borderRadius: importDefault(dependencyMap[8]).radii.lg, opacity: 0.4 };
 const merged2 = Object.assign(importDefault(dependencyMap[8]).shadows.SHADOW_LOW);
 obj.commandContainer = { backgroundColor: importDefault(dependencyMap[8]).colors.CARD_BACKGROUND_DEFAULT, borderRadius: importDefault(dependencyMap[8]).radii.md, paddingLeft: importDefault(dependencyMap[8]).space.PX_12, paddingRight: importDefault(dependencyMap[8]).space.PX_16, paddingVertical: importDefault(dependencyMap[8]).space.PX_12, flexDirection: "row", justifyContent: "center", alignItems: "center", gap: importDefault(dependencyMap[8]).space.PX_8 };
-const obj6 = { aze: 43429575352196550000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, azj: 13343160674537630000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, borderRadius: importDefault(dependencyMap[8]).radii.lg };
+const obj6 = { bhk: -9518934934037965000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, bic: 13343162661761035000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, borderRadius: importDefault(dependencyMap[8]).radii.lg };
 obj.appIcon = obj6;
-const obj7 = { aze: false, azj: false, borderRadius: importDefault(dependencyMap[8]).radii.sm, backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_MOD_SUBTLE };
-obj.loadingCommandIcon = obj7;
 const obj5 = { backgroundColor: importDefault(dependencyMap[8]).colors.CARD_BACKGROUND_DEFAULT, borderRadius: importDefault(dependencyMap[8]).radii.md, paddingLeft: importDefault(dependencyMap[8]).space.PX_12, paddingRight: importDefault(dependencyMap[8]).space.PX_16, paddingVertical: importDefault(dependencyMap[8]).space.PX_12, flexDirection: "row", justifyContent: "center", alignItems: "center", gap: importDefault(dependencyMap[8]).space.PX_8 };
+obj.loadingCommandIcon = { borderRadius: importDefault(dependencyMap[8]).radii.sm, backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_MOD_SUBTLE };
+const obj7 = { borderRadius: importDefault(dependencyMap[8]).radii.sm, backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_MOD_SUBTLE };
 obj.loadingTextPlaceholder = { backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_MOD_SUBTLE, height: 16, borderRadius: importDefault(dependencyMap[8]).radii.lg, alignSelf: "flex-start", marginBottom: importDefault(dependencyMap[8]).space.PX_4 };
 const obj8 = { backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_MOD_SUBTLE, height: 16, borderRadius: importDefault(dependencyMap[8]).radii.lg, alignSelf: "flex-start", marginBottom: importDefault(dependencyMap[8]).space.PX_4 };
 obj.loadingTextPlaceholderSmall = { backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_MOD_SUBTLE, height: 16, borderRadius: importDefault(dependencyMap[8]).radii.lg, alignSelf: "flex-start" };
@@ -354,9 +354,9 @@ export default function FrecencySection(loading) {
         }
         const items = [tmp16, ];
         obj1 = {};
-        const obj2 = { INTEGRATION_CREATE: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007863204514436, ConstraintReasonCode: 127277221446373050000000000, children: displayName };
+        const obj2 = { children: displayName };
         const items1 = [first1(type(commands[26]).Text, obj2), ];
-        const obj3 = { INTEGRATION_CREATE: false, ConstraintReasonCode: false, children: sectionName };
+        const obj3 = { children: sectionName };
         items1[1] = first1(type(commands[26]).Text, obj3);
         obj1.children = items1;
         items[1] = callback3(closure_5, obj1);
@@ -413,7 +413,7 @@ export default function FrecencySection(loading) {
         obj = { style: tmp.header };
         const merged = Object.assign(Object.assign(ref, obj));
         obj["ref"] = ref.ref;
-        obj = { 9223372036854775807: "238a115f1ad03e07bad0181bb5c110d4", 9223372036854775807: "ic_playstation_device_ps5_32px", 9223372036854775807: "png" };
+        obj = { alignItems: "238a115f1ad03e07bad0181bb5c110d4", justifyContent: "ic_playstation_device_ps5_32px", backgroundColor: "png" };
         const intl = callback(commands[19]).intl;
         obj.children = intl.string(callback(commands[19]).t.acSE0h);
         const items = [first1(callback(commands[26]).Text, obj), ];
@@ -458,7 +458,7 @@ export default function FrecencySection(loading) {
         return launchingActivity(COMMANDS);
       };
       obj6.accessibilityRole = "button";
-      const obj7 = { INTEGRATION_CREATE: -436207324, ConstraintReasonCode: 301991094 };
+      const obj7 = {};
       const intl3 = arg1(dependencyMap[19]).intl;
       obj7.children = intl3.string(arg1(dependencyMap[19]).t./qG8v7);
       obj6.children = first1(arg1(dependencyMap[26]).Text, obj7);
@@ -470,7 +470,7 @@ export default function FrecencySection(loading) {
       obj8.horizontal = true;
       obj8.showsHorizontalScrollIndicator = false;
       if (loading) {
-        const items6 = [];
+        const items6 = [null, null, null, null, null];
         mapped2 = items6.map((arg0, arg1) => first1(closure_16, {}, arg1));
       }
       obj8.children = mapped2;

@@ -1,10 +1,10 @@
-// Module ID: 14641
-// Function ID: 110418
+// Module ID: 14648
+// Function ID: 110440
 // Name: useAuthWebsocket
 // Dependencies: []
 // Exports: useAuthWebsocket
 
-// Module 14641 (useAuthWebsocket)
+// Module 14648 (useAuthWebsocket)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 let closure_5 = importAll(dependencyMap[2]);

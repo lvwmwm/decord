@@ -1,10 +1,10 @@
-// Module ID: 12243
-// Function ID: 93917
+// Module ID: 12250
+// Function ID: 93940
 // Name: mapToUser
 // Dependencies: []
 // Exports: default
 
-// Module 12243 (mapToUser)
+// Module 12250 (mapToUser)
 function mapToUser(arg0) {
   const items = [arg0, user.getUser(arg0)];
   return items;
@@ -28,7 +28,7 @@ obj.header = { height: importDefault(dependencyMap[9]).space.PX_64 };
 const obj2 = { height: importDefault(dependencyMap[9]).space.PX_64 };
 obj.subtitle = { textAlign: "center", paddingHorizontal: importDefault(dependencyMap[9]).space.PX_16, paddingBottom: importDefault(dependencyMap[9]).space.PX_8 };
 obj.centeredContainer = { alignItems: "center" };
-const obj4 = { <string:1140607356>: null, <string:1751293292>: null, marginVertical: importDefault(dependencyMap[9]).space.PX_16 };
+const obj4 = { <string:1632221346>: "<string:3084210432>", <string:2722977214>: "<string:1355038993>", marginVertical: importDefault(dependencyMap[9]).space.PX_16 };
 obj.errorImage = obj4;
 const obj3 = { textAlign: "center", paddingHorizontal: importDefault(dependencyMap[9]).space.PX_16, paddingBottom: importDefault(dependencyMap[9]).space.PX_8 };
 obj.emptyImage = { marginTop: importDefault(dependencyMap[9]).space.PX_16 };
@@ -240,7 +240,7 @@ export default function ReferralProgramShareActionSheet() {
   obj12.children = hasError(arg1(dependencyMap[34]).Button, obj13);
   const tmp45 = hasError(arg1(dependencyMap[33]).ActivityIndicator, {});
   const tmp46 = View;
-  obj14 = { 0: null, -9223372036854775808: null, header: tmp25, footer: hasError(View, obj12) };
+  obj14 = { 1891290120: null, -475247768: null, header: tmp25, footer: hasError(View, obj12) };
   const obj15 = { style: tmp.searchBarContainer };
   const obj16 = { onChangeText: tmp4[1], onRemove: callback1, tags: memo1 };
   const tmp44Result = hasError(View, obj12);

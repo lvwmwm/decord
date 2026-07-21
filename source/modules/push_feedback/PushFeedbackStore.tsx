@@ -1,9 +1,9 @@
-// Module ID: 10425
-// Function ID: 80406
+// Module ID: 10431
+// Function ID: 80429
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
-// Module 10425 (_isNativeReflectConstruct)
+// Module 10431 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -122,7 +122,7 @@ tmp2 = new tmp2(importDefault(dependencyMap[7]), {
       }
       let userViewInfo = tmp3.userViewInfo;
       if (null == userViewInfo) {
-        userViewInfo = { isOverdue: false, _beaconUrl: true };
+        userViewInfo = { "Bool(true)": -536870861, "Bool(true)": -299892737 };
       }
       ({ eligibleAt, viewCount } = userViewInfo);
       const _Date = Date;

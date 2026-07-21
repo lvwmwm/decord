@@ -1,9 +1,9 @@
-// Module ID: 14802
-// Function ID: 111608
+// Module ID: 14809
+// Function ID: 111632
 // Name: IconOrPreview
 // Dependencies: []
 
-// Module 14802 (IconOrPreview)
+// Module 14809 (IconOrPreview)
 let HAPPENING_NOW_CONTENT_HEIGHT;
 let PixelRatio;
 function IconOrPreview(arg0) {
@@ -207,22 +207,22 @@ const tmp4 = arg1(dependencyMap[5]);
 const pixelSizeForLayoutSize = PixelRatio.getPixelSizeForLayoutSize(HAPPENING_NOW_CONTENT_HEIGHT);
 const items = [importDefault(dependencyMap[8]), importDefault(dependencyMap[9])];
 let obj1 = arg1(dependencyMap[10]);
-let obj = { content: { "Bool(false)": "Lightbox Frame", "Bool(false)": "EdgeHTML" } };
-obj = { "Null": true, "Null": true, "Null": true, -9223372036854775808: true, 0: true, -9223372036854775808: true, backgroundColor: importDefault(dependencyMap[11]).colors.STAGE_CARD_PILL_BG, borderRadius: importDefault(dependencyMap[11]).radii.xl };
+let obj = { content: {} };
+obj = { backgroundColor: importDefault(dependencyMap[11]).colors.STAGE_CARD_PILL_BG, borderRadius: importDefault(dependencyMap[11]).radii.xl };
 obj.avatarStackContainer = obj;
 obj.cardAvatar = { marginBottom: 2 };
 obj.cardImage = { height: HAPPENING_NOW_CONTENT_HEIGHT, minWidth: HAPPENING_NOW_CONTENT_HEIGHT, marginRight: 12, position: "relative" };
 obj.cardImageStream = { height: tmp3.HAPPENING_NOW_STAGE_PREVIEW_HEIGHT, minWidth: HAPPENING_NOW_CONTENT_HEIGHT, position: "relative" };
 obj1 = { width: HAPPENING_NOW_CONTENT_HEIGHT, height: HAPPENING_NOW_CONTENT_HEIGHT, borderRadius: importDefault(dependencyMap[11]).radii.sm, borderWidth: 1, borderColor: importDefault(dependencyMap[11]).colors.BORDER_SUBTLE };
 obj.cardImageAsset = obj1;
-const obj2 = { "Bool(false)": "2026-02-activity-privacy-matching", "Bool(false)": "user", "Bool(false)": "Global Overrides", "Bool(false)": false, "Bool(false)": null, "Bool(false)": "heading-lg/semibold", "Bool(false)": "No results found", backgroundColor: importDefault(dependencyMap[11]).colors.CARD_SECONDARY_BG, borderRadius: importDefault(dependencyMap[11]).radii.sm, shadowOffset: { aze: false, azj: true } };
+const obj2 = { X-Discord-Locale: "2026-02-activity-privacy-matching", handleGrayscaleChanged: "user", ORDER_PATCH_LINE_ITEM: "Global Overrides", users: false, CHAT_INPUT_FLOATING_BOUNCE_SPRING_CONFIG: null, isComponentMounted: "heading-lg/semibold", <string:3511851105>: "No results found", backgroundColor: importDefault(dependencyMap[11]).colors.CARD_SECONDARY_BG, borderRadius: importDefault(dependencyMap[11]).radii.sm, shadowOffset: { bhk: -536870861, bic: -299892737 } };
 obj.cardImageAssetContainer = obj2;
 const tmp5 = arg1(dependencyMap[7]);
 obj.cardImageAssetBackground = { width: HAPPENING_NOW_CONTENT_HEIGHT, height: HAPPENING_NOW_CONTENT_HEIGHT, borderRadius: importDefault(dependencyMap[11]).radii.sm };
 const obj3 = { width: HAPPENING_NOW_CONTENT_HEIGHT, height: HAPPENING_NOW_CONTENT_HEIGHT, borderRadius: importDefault(dependencyMap[11]).radii.sm };
 obj.cardImageStreamPreview = { borderRadius: importDefault(dependencyMap[11]).radii.sm, overflow: "hidden" };
-obj.cardImageStreamLive = { TypeError: "isArray", body: "k", guild: "useCallback" };
-const obj5 = { "Null": "center", "Null": null, fontFamily: arg1(dependencyMap[6]).Fonts.PRIMARY_BOLD };
+obj.cardImageStreamLive = { <string:3511851105>: null, <string:1660601912>: null, <string:1632828364>: null };
+const obj5 = { PX_16: "center", ix: null, fontFamily: arg1(dependencyMap[6]).Fonts.PRIMARY_BOLD };
 obj.stageStreamLiveText = obj5;
 obj.stagePreviewWrapper = {};
 let closure_16 = obj1.createStyles(obj);

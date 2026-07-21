@@ -1,10 +1,10 @@
-// Module ID: 9348
-// Function ID: 72989
+// Module ID: 9352
+// Function ID: 73003
 // Name: PremiumUpsellSectionDivider
 // Dependencies: []
 // Exports: default
 
-// Module 9348 (PremiumUpsellSectionDivider)
+// Module 9352 (PremiumUpsellSectionDivider)
 importAll(dependencyMap[0]);
 ({ StyleSheet: closure_3, View: closure_4 } = arg1(dependencyMap[1]));
 const Gradients = arg1(dependencyMap[2]).Gradients;
@@ -25,14 +25,14 @@ let closure_8 = obj.createStyles((arg0) => {
   }
   obj.marginBottom = num2;
   obj.container = obj;
-  obj = {};
+  obj = { "Null": null, "Null": null };
   const merged = Object.assign(absoluteFillObject.absoluteFillObject);
   obj.lockContainer = obj;
-  const obj1 = { "Null": null, "Null": "15492a52206e63f9d08f70b19c6b74cb", "Null": "ic_nitro_basic_wheel_gradient", borderRadius: importDefault(dependencyMap[5]).radii.round };
+  const obj1 = { "Bool(true)": null, "Bool(true)": "15492a52206e63f9d08f70b19c6b74cb", "Bool(true)": "ic_nitro_basic_wheel_gradient", borderRadius: importDefault(dependencyMap[5]).radii.round };
   obj.lockGradient = obj1;
-  obj.lock = { "Bool(false)": "r", "Bool(false)": "getSystemVersionMinor", "Bool(false)": "r" };
+  obj.lock = { "Null": "flex", "Null": "center", "Null": "center" };
   obj.divider = { height: 1 };
-  const obj2 = { marginTop: null, textTransform: null, lineHeight: null, fontSize: null, textAlign: 0 };
+  const obj2 = { textTransform: 1485193761, lineHeight: -1039007742, fontSize: -430899199, textAlign: 7406221, paddingTop: 16777216 };
   let num3;
   if (arg0 === obj.START) {
     num3 = 0;

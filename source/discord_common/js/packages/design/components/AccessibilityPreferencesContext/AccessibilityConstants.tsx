@@ -1,7 +1,7 @@
 // Module ID: 3848
 // Function ID: 32042
 // Name: LOW_SATURATION_THRESHOLD
-// Dependencies: []
+// Dependencies: [284214097]
 
 // Module 3848 (LOW_SATURATION_THRESHOLD)
 const _module = require(dependencyMap[0]);

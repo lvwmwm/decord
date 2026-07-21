@@ -1,10 +1,10 @@
-// Module ID: 6027
-// Function ID: 49914
+// Module ID: 6029
+// Function ID: 49957
 // Name: EmojiSlotsAbstractUI
 // Dependencies: []
 // Exports: EmojiSlotsAbstractUI
 
-// Module 6027 (EmojiSlotsAbstractUI)
+// Module 6029 (EmojiSlotsAbstractUI)
 const jsx = require(dependencyMap[0]).jsx;
 const _module = require(dependencyMap[3]);
 const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/EmojiSlotsAbstractUI.native.tsx");

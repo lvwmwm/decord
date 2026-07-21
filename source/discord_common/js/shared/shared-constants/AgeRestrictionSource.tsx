@@ -1,9 +1,9 @@
-// Module ID: 6858
-// Function ID: 54295
+// Module ID: 6862
+// Function ID: 54305
 // Name: AgeRestrictionSource
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 6858 (AgeRestrictionSource)
+// Module 6862 (AgeRestrictionSource)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_common/js/shared/shared-constants/AgeRestrictionSource.tsx");
 

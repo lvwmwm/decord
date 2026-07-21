@@ -1,10 +1,10 @@
-// Module ID: 15458
-// Function ID: 117934
+// Module ID: 15465
+// Function ID: 117958
 // Name: PictureInPictureGlobal
 // Dependencies: []
 // Exports: default
 
-// Module 15458 (PictureInPictureGlobal)
+// Module 15465 (PictureInPictureGlobal)
 let closure_3 = importDefault(dependencyMap[0]);
 const importAllResult = importAll(dependencyMap[1]);
 ({ View: closure_5, StyleSheet: closure_6, TouchableOpacity: closure_7 } = arg1(dependencyMap[2]));
@@ -248,12 +248,12 @@ export default function PictureInPictureGlobal(channel) {
     const obj = {};
     let value = derivedValue.get();
     const items = [num(derivedValue[34]).NAV_BAR_HEIGHT + 12, 12];
-    obj.marginTop = num(derivedValue[32]).interpolate(value, [null, null], items);
+    obj.marginTop = num(derivedValue[32]).interpolate(value, ["Text", "lc"], items);
     const obj2 = num(derivedValue[32]);
     const items1 = [tmp2 + 12, ];
     value = derivedValue.get();
     items1[1] = num(derivedValue[35]).PIP_AVOIDANCE_TAB_BAR_HEIGHT + 12;
-    obj.marginBottom = num(derivedValue[32]).interpolate(value, [null, null], items1);
+    obj.marginBottom = num(derivedValue[32]).interpolate(value, ["Text", "lc"], items1);
     return obj;
   };
   obj = { interpolate: arg1(dependencyMap[32]).interpolate, animatedDrawerState: derivedValue, NAV_BAR_HEIGHT: arg1(dependencyMap[34]).NAV_BAR_HEIGHT, PADDING: 12, chatInputContainerHeight: tmp2, PIP_AVOIDANCE_TAB_BAR_HEIGHT: arg1(dependencyMap[35]).PIP_AVOIDANCE_TAB_BAR_HEIGHT };

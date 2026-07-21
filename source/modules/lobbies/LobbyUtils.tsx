@@ -1,10 +1,10 @@
-// Module ID: 10154
-// Function ID: 78537
+// Module ID: 10160
+// Function ID: 78555
 // Name: canUnlinkLobbyChannel
-// Dependencies: [555089920, 488243200, 250937344, 131072]
+// Dependencies: [555352064, 488505344, 250937344, 131072]
 // Exports: useCanUnlinkLobbyChannel
 
-// Module 10154 (canUnlinkLobbyChannel)
+// Module 10160 (canUnlinkLobbyChannel)
 function canUnlinkLobbyChannel(channel, arg1) {
   let obj = arg1;
   if (arg1 === undefined) {

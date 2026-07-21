@@ -1,10 +1,10 @@
-// Module ID: 15440
-// Function ID: 117796
+// Module ID: 15447
+// Function ID: 117820
 // Name: PendingSpamMessageRequestRow
 // Dependencies: []
 // Exports: default
 
-// Module 15440 (PendingSpamMessageRequestRow)
+// Module 15447 (PendingSpamMessageRequestRow)
 function PendingSpamMessageRequestRow(isLastRow) {
   let hasSingleMessageRequest;
   let isAcceptLoading;
@@ -149,7 +149,7 @@ function PendingSpamMessageRequestRow(isLastRow) {
         const items5 = [handleAcceptMessageRequest(closure_5, obj3), ];
         let tmp29 = null;
         if (!isLastRow.isLastRow) {
-          tmp29 = handleRejectMessageRequest(arg1(dependencyMap[19]).FormDivider, { 1372348835: null, -1436417275: null });
+          tmp29 = handleRejectMessageRequest(arg1(dependencyMap[19]).FormDivider, { ref: null, onChange: null });
         }
         items5[1] = tmp29;
         obj.children = items5;
@@ -178,7 +178,7 @@ obj.actionButton = { backgroundColor: importDefault(dependencyMap[5]).colors.BAC
 obj.acceptButton = { marginRight: 16 };
 const obj1 = { backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_SURFACE_HIGH, tintColor: importDefault(dependencyMap[5]).colors.INTERACTIVE_TEXT_DEFAULT, borderRadius: importDefault(dependencyMap[5]).radii.lg };
 obj.pressableRow = { borderRadius: importDefault(dependencyMap[5]).radii.md };
-obj.activityIndicator = { <string:1140607356>: "<string:16777479>", <string:1751293292>: "<string:36295491>" };
+obj.activityIndicator = {};
 const obj2 = { borderRadius: importDefault(dependencyMap[5]).radii.md };
 obj.list = { backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_LOW };
 let closure_10 = obj.createStyles(obj);
@@ -210,7 +210,7 @@ export default function SpamMessageList(goToMessageRequestPreview) {
     obj.bodyText = intl.string(arg1(closure_2[6]).t.hasFPQ);
     return callback(importDefault(closure_2[27]), obj);
   } else {
-    const items = [];
+    const items = ["y"];
     HermesBuiltin.arraySpread(arr, 1);
     obj = {};
     const items1 = [tmp.list, ];
@@ -231,7 +231,7 @@ export default function SpamMessageList(goToMessageRequestPreview) {
       const goToMessageRequestPreview = item;
       if ("string" === typeof item) {
         let obj = { style: tmp.sectionContainer };
-        obj = { INTEGRATION_CREATE: "/assets/images/native/premium/illustrations", ConstraintReasonCode: 51 };
+        obj = {};
         const intl = goToMessageRequestPreview(closure_2[6]).intl;
         obj = { count: arr.length };
         obj.children = intl.format(goToMessageRequestPreview(closure_2[6]).t.aNh5Kf, obj);

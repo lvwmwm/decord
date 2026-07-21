@@ -1,16 +1,16 @@
-// Module ID: 13480
-// Function ID: 102329
+// Module ID: 13487
+// Function ID: 102352
 // Name: UserProfilePremiumUpsellCard
 // Dependencies: []
 // Exports: UserProfilePremiumUpsellCard
 
-// Module 13480 (UserProfilePremiumUpsellCard)
+// Module 13487 (UserProfilePremiumUpsellCard)
 let closure_3 = importAll(dependencyMap[0]);
 ({ AnalyticsObjects: closure_4, AnalyticsPages: closure_5, AnalyticsSections: closure_6, UserSettingsSections: closure_7 } = arg1(dependencyMap[1]));
 const jsx = arg1(dependencyMap[2]).jsx;
 const tmp2 = arg1(dependencyMap[1]);
 let closure_9 = arg1(dependencyMap[3]).createStyles((bottom) => {
-  const container = { bottom };
+  const container = { ks: null, View: null, a: null, accessibilityRole: null, bottom };
   return { container };
 });
 const obj = arg1(dependencyMap[3]);
@@ -60,7 +60,7 @@ export const UserProfilePremiumUpsellCard = function UserProfilePremiumUpsellCar
     callback = callback1;
   }
   obj.onPress = callback;
-  obj = { -1943171307: true, -1723054236: true };
+  obj = {};
   const intl3 = arg1(dependencyMap[15]).intl;
   const string = intl3.string;
   const t = arg1(dependencyMap[15]).t;

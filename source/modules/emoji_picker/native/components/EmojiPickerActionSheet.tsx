@@ -1,15 +1,15 @@
-// Module ID: 9316
-// Function ID: 72783
+// Module ID: 9320
+// Function ID: 72797
 // Name: EmojiPickerActionSheet
-// Dependencies: [1849, 5260, 5263, 9321, 2, 653, 3963, 686, 507, 2, 5260, 1852, 624, 2, 31, 5264, 2, 57, 31, 5260, 682, 1331, 2, 31, 1345, 33, 4126, 689, 4124, 1212, 3944, 1334, 3801, 7650, 3829, 9327, 2, 31]
+// Dependencies: [1849, 5262, 5265, 9325, 2, 653, 3963, 686, 507, 2, 5262, 1852, 624, 2, 31, 5266, 2, 57, 31, 5262, 682, 1331, 2, 31, 1345, 33, 4126, 689, 4124, 1212, 3944, 1334, 3801, 7649, 3829, 9331, 2, 31]
 // Exports: default
 
-// Module 9316 (EmojiPickerActionSheet)
+// Module 9320 (EmojiPickerActionSheet)
 import closure_3 from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";
 import { View } from "_isNativeReflectConstruct";
 import fetchTopEmojis from "fetchTopEmojis";
-import { EmojiPickerSource } from "keys";
+import { EmojiPickerSource } from "result2";
 import { EXPRESSION_FOOTER_HEIGHT } from "ME";
 import { EmojiIntention } from "isPseudoGuildId";
 import dispatcher from "dispatcher";
@@ -18,17 +18,17 @@ import module_31 from "module_31";
 
 ({ jsx: closure_10, jsxs: closure_11 } = dispatcher);
 _isNativeReflectConstruct = { header: { flexDirection: "column" } };
-_isNativeReflectConstruct = { marginBottom: -require("keys").space.PX_16 };
+_isNativeReflectConstruct = { marginBottom: -require("result2").space.PX_16 };
 _isNativeReflectConstruct.searchContainer = _isNativeReflectConstruct;
-_isNativeReflectConstruct.content = { paddingHorizontal: require("keys").space.PX_8, backgroundColor: require("keys").colors.MOBILE_EXPRESSION_PICKER_BACKGROUND_DEFAULT };
-const obj1 = { paddingHorizontal: require("keys").space.PX_8, backgroundColor: require("keys").colors.MOBILE_EXPRESSION_PICKER_BACKGROUND_DEFAULT };
-_isNativeReflectConstruct.background = { backgroundColor: require("keys").colors.MOBILE_EXPRESSION_PICKER_BACKGROUND_DEFAULT };
-const obj2 = { backgroundColor: require("keys").colors.MOBILE_EXPRESSION_PICKER_BACKGROUND_DEFAULT };
-_isNativeReflectConstruct.headerText = { marginBottom: require("keys").space.PX_16 };
-const obj3 = { marginBottom: require("keys").space.PX_16 };
-_isNativeReflectConstruct.headerSpacer = { marginTop: require("keys").space.PX_8 };
-const obj4 = { marginTop: require("keys").space.PX_8 };
-_isNativeReflectConstruct.burstReaction = { borderColor: require("keys").colors.BACKGROUND_BRAND };
+_isNativeReflectConstruct.content = { paddingHorizontal: require("result2").space.PX_8, backgroundColor: require("result2").colors.MOBILE_EXPRESSION_PICKER_BACKGROUND_DEFAULT };
+const obj1 = { paddingHorizontal: require("result2").space.PX_8, backgroundColor: require("result2").colors.MOBILE_EXPRESSION_PICKER_BACKGROUND_DEFAULT };
+_isNativeReflectConstruct.background = { backgroundColor: require("result2").colors.MOBILE_EXPRESSION_PICKER_BACKGROUND_DEFAULT };
+const obj2 = { backgroundColor: require("result2").colors.MOBILE_EXPRESSION_PICKER_BACKGROUND_DEFAULT };
+_isNativeReflectConstruct.headerText = { marginBottom: require("result2").space.PX_16 };
+const obj3 = { marginBottom: require("result2").space.PX_16 };
+_isNativeReflectConstruct.headerSpacer = { marginTop: require("result2").space.PX_8 };
+const obj4 = { marginTop: require("result2").space.PX_8 };
+_isNativeReflectConstruct.burstReaction = { borderColor: require("result2").colors.BACKGROUND_BRAND };
 _isNativeReflectConstruct = _isNativeReflectConstruct.createStyles(_isNativeReflectConstruct);
 const result = module_31.fileFinishedImporting("modules/emoji_picker/native/components/EmojiPickerActionSheet.tsx");
 
@@ -159,11 +159,11 @@ export default function EmojiPickerActionSheet(onClose) {
     let tmp = null;
     if (pickerIntention === closure_9.DEFAULT_REACT_EMOJI) {
       let obj = { style: tmp.headerText };
-      obj = { INTEGRATION_CREATE: 182714370, ConstraintReasonCode: 1091633154 };
+      obj = {};
       const intl = onClose(pickerIntention[23]).intl;
       obj.children = intl.string(onClose(pickerIntention[23]).t.wHTk2C);
       const items = [ref(onClose(pickerIntention[22]).Text, obj), ];
-      obj = { INTEGRATION_CREATE: "<string:3305963521>", ConstraintReasonCode: "<string:671547393>" };
+      obj = {};
       const intl2 = onClose(pickerIntention[23]).intl;
       obj.children = intl2.string(onClose(pickerIntention[23]).t.VrWSNn);
       items[1] = ref(onClose(pickerIntention[22]).Text, obj);
@@ -184,7 +184,7 @@ export default function EmojiPickerActionSheet(onClose) {
     }
     items1[1] = headerSpacer;
     obj.style = items1;
-    obj = { TV: 40, unamused: true, defaultGuildsRestricted: "/assets/.cache/intl/bW9kdWxlcy9nb19saXZlL3dlYi9tb2RhbA==", ref: closure_9, onChange: handleTextChange, placeholder: onClose(pickerIntention[12]).getSearchPlaceholder(pickerIntention, tmp4) };
+    obj = { 0: "r", 0: "isArray", -9223372036854775808: "mode", ref: closure_9, onChange: handleTextChange, placeholder: onClose(pickerIntention[12]).getSearchPlaceholder(pickerIntention, tmp4) };
     const items2 = [ref(onClose(pickerIntention[24]).SearchField, obj), ];
     let tmp5 = pickerIntention === closure_9.REACTION;
     if (tmp5) {

@@ -1,10 +1,10 @@
-// Module ID: 8338
-// Function ID: 66422
+// Module ID: 8342
+// Function ID: 66434
 // Name: _getLocationFromEvent
 // Dependencies: []
 // Exports: getChannelFromEvent, getChannelTypeFromEntity, getLocationFromEvent, getLocationFromEventData
 
-// Module 8338 (_getLocationFromEvent)
+// Module 8342 (_getLocationFromEvent)
 function _getLocationFromEvent(entityType, entityMetadata) {
   let tmp = entityType === constants.EXTERNAL;
   if (tmp) {

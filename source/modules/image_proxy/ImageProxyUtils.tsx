@@ -1,10 +1,10 @@
-// Module ID: 4566
-// Function ID: 39997
+// Module ID: 4157
+// Function ID: 35105
 // Name: isImageProxyURL
 // Dependencies: []
 // Exports: getSizedImageProxyURL
 
-// Module 4566 (isImageProxyURL)
+// Module 4157 (isImageProxyURL)
 function isImageProxyURL(hostname) {
   const tmp = !set.has(hostname.hostname);
   let startsWithResult = !tmp;

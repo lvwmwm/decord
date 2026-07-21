@@ -1,10 +1,10 @@
-// Module ID: 12850
-// Function ID: 98245
+// Module ID: 12857
+// Function ID: 98268
 // Name: GuildActionSheetTabItems
 // Dependencies: []
 // Exports: default
 
-// Module 12850 (GuildActionSheetTabItems)
+// Module 12857 (GuildActionSheetTabItems)
 let closure_4 = importAll(dependencyMap[0]);
 let closure_5 = importDefault(dependencyMap[1]);
 let closure_6 = importDefault(dependencyMap[2]);

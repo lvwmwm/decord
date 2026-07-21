@@ -1,10 +1,10 @@
-// Module ID: 8340
-// Function ID: 66432
+// Module ID: 8344
+// Function ID: 66444
 // Name: _getEventException
 // Dependencies: [31, 689, 3847]
 // Exports: default, getEventException
 
-// Module 8340 (_getEventException)
+// Module 8344 (_getEventException)
 import module_31 from "module_31";
 import context from "context";
 

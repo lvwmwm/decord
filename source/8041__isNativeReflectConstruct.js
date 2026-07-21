@@ -1,7 +1,7 @@
 // Module ID: 8041
-// Function ID: 63838
+// Function ID: 63832
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 31, 33, 8057, 8059, 8061]
+// Dependencies: [6, 7, 15, 17, 18, 31, 27, 33, 8024, 8083]
 
 // Module 8041 (_isNativeReflectConstruct)
 import _classCallCheck from "_classCallCheck";
@@ -10,8 +10,8 @@ import _possibleConstructorReturn from "_possibleConstructorReturn";
 import _getPrototypeOf from "_getPrototypeOf";
 import _inherits from "_inherits";
 import "module_31";
-import { jsx } from "module_33";
-import tmp3 from "_isNativeReflectConstruct";
+import { jsx } from "keys";
+import tmp3 from "__INTERNAL_VIEW_CONFIG";
 
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
@@ -22,7 +22,6 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-tmp3.displayName = "Ellipse";
-tmp3.defaultProps = { -9223372036854775808: "r", 0: "onRequireModeratorMFAClick", -9223372036854775808: "Array", 9223372036854775807: "isSpamMessageRequest" };
+tmp3.displayName = "ClipPath";
 
 export default tmp3;

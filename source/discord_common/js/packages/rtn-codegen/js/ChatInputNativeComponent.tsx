@@ -1,13 +1,13 @@
-// Module ID: 11100
-// Function ID: 86406
+// Module ID: 11106
+// Function ID: 86429
 // Name: __INTERNAL_VIEW_CONFIG
 // Dependencies: []
 
-// Module 11100 (__INTERNAL_VIEW_CONFIG)
+// Module 11106 (__INTERNAL_VIEW_CONFIG)
 let obj = { uiViewClassName: "DCDChatInput", directEventTypes: { topChangeContentSize: { registrationName: "onChangeContentSize" }, topEndBlur: { registrationName: "onEndBlur" }, topBeginFocus: { registrationName: "onBeginFocus" }, topSelectionOrTextChange: { registrationName: "onSelectionOrTextChange" }, topTextFlushed: { registrationName: "onTextFlushed" }, topPasteImage: { registrationName: "onPasteImage" }, topPasteCommand: { registrationName: "onPasteCommand" }, topRequestSend: { registrationName: "onRequestSend" }, topTapAction: { registrationName: "onTapAction" } } };
-obj = { cardMarginRight: 553648128, mediaType: 570565377, includeBase64: 356625, quality: 17956864, videoQuality: 369, saveToPhotos: 1912672512, skipProcessing: 16, floatingCloseIcon: 5, userAgeRange: -1374408415, linked_user_ids: -193273529, canPostPolls: 1895907411, onHeightChange: 1 };
+obj = {};
 const _module = require(dependencyMap[0]);
-const merged = Object.assign(_module.ConditionallyIgnoredEventHandlers({ reminder_ribbon: -19421278612802764, onNavigationStateChange: 0.00000000000000000000000000000000000000000000000000000000000004667261458271609, GameDepthTier9SmallBadge: 0.000000000000000000000000000000000000000000000000000000000000000000000001215228005639001, Google: 241979899612687240000000000000000000000000000000000000000000000000000000000000000000, ContentInventoryFeedKey: 0.00000000000000000000000000000000000000000000000000000000000004667261426588801, updateNativeMute: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000008658659363906192, secondsInMonth: 0.6, pending_buf_size: "BounceOut", PrivacyShieldBannerSpotIllustration: null }));
+const merged = Object.assign(_module.ConditionallyIgnoredEventHandlers({}));
 obj.validAttributes = obj;
 const _module1 = require(dependencyMap[1]);
 obj = {

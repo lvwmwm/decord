@@ -1,9 +1,9 @@
-// Module ID: 5407
-// Function ID: 46097
+// Module ID: 5409
+// Function ID: 46139
 // Name: LanguageDetector
 // Dependencies: []
 
-// Module 5407 (LanguageDetector)
+// Module 5409 (LanguageDetector)
 let closure_2 = importDefault(dependencyMap[0]);
 let closure_3 = importDefault(dependencyMap[1]);
 const tmp2 = () => {

@@ -1,9 +1,9 @@
-// Module ID: 13774
-// Function ID: 104106
+// Module ID: 13781
+// Function ID: 104129
 // Name: EmptyStateNoQuestsAvailable
 // Dependencies: []
 
-// Module 13774 (EmptyStateNoQuestsAvailable)
+// Module 13781 (EmptyStateNoQuestsAvailable)
 function EmptyStateNoQuestsAvailable() {
   let obj = arg1(dependencyMap[13]);
   const navigation = obj.useNavigation();
@@ -66,7 +66,7 @@ function HeaderWithBounties(arg0) {
     const items1 = [, ];
     ({ sectionHeader: arr2[0], sectionHeaderRow: arr2[1] } = tmp);
     obj.style = items1;
-    const obj1 = { INTEGRATION_CREATE: "<string:3704409292>", ConstraintReasonCode: "<string:32796991>" };
+    const obj1 = {};
     const intl = arg1(dependencyMap[20]).intl;
     obj1.children = intl.string(arg1(dependencyMap[20]).t.qetVDw);
     const items2 = [callback2(arg1(dependencyMap[25]).Text, obj1), ];
@@ -85,7 +85,7 @@ function HeaderWithBounties(arg0) {
   const obj4 = { style: items3 };
   const items3 = [, ];
   ({ sectionHeader: arr4[0], sectionHeaderWithTag: arr4[1] } = tmp);
-  const obj5 = { INTEGRATION_CREATE: "<string:3704409292>", ConstraintReasonCode: "<string:32796991>" };
+  const obj5 = {};
   const intl3 = arg1(dependencyMap[20]).intl;
   obj5.children = intl3.string(arg1(dependencyMap[20]).t.JALI2K);
   obj4.children = callback2(arg1(dependencyMap[25]).Text, obj5);
@@ -114,9 +114,9 @@ obj["alignItems"] = "center";
 obj.loadingContainer = obj;
 obj1 = { marginBottom: importDefault(dependencyMap[11]).space.PX_16, paddingHorizontal: importDefault(dependencyMap[11]).space.PX_16 };
 obj.sectionHeader = obj1;
-const obj2 = { -9223372036854775808: true, filter: true, gap: importDefault(dependencyMap[11]).space.PX_4 };
-obj.sectionHeaderRow = obj2;
 const tmp4 = arg1(dependencyMap[9]);
+obj.sectionHeaderRow = { gap: importDefault(dependencyMap[11]).space.PX_4 };
+const obj2 = { gap: importDefault(dependencyMap[11]).space.PX_4 };
 obj.previewButton = { marginBottom: importDefault(dependencyMap[11]).space.PX_16, paddingHorizontal: importDefault(dependencyMap[11]).space.PX_16, backgroundColor: "transparent" };
 const obj3 = { marginBottom: importDefault(dependencyMap[11]).space.PX_16, paddingHorizontal: importDefault(dependencyMap[11]).space.PX_16, backgroundColor: "transparent" };
 obj.sectionHeaderWithTag = { gap: importDefault(dependencyMap[11]).space.PX_4 };
@@ -343,7 +343,7 @@ const memoResult = importAllResult.memo(function QuestHome(filters) {
   const effect3 = importAllResult.useEffect(() => {
     if (tmp) {
       const current = scrollViewRef.current;
-      current.scrollToOffset({ "Bool(true)": 9035158524362260000000000000000000000000000000000000000000000000000000000000000000000000000000, "Bool(true)": -222642488090540470000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 });
+      current.scrollToOffset({ -437125116: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002488040065571517, -435748860: -823154013994709700000000000000000000000000000000000000000000000 });
     }
   }, items6);
   let obj5 = arg1(dependencyMap[23]);

@@ -1,9 +1,9 @@
-// Module ID: 7662
-// Function ID: 61239
+// Module ID: 7666
+// Function ID: 61251
 // Name: getSystemMessageUserJoinMobile
 // Dependencies: []
 
-// Module 7662 (getSystemMessageUserJoinMobile)
+// Module 7666 (getSystemMessageUserJoinMobile)
 function getSystemMessageUserJoinMobile(id) {
   const items = [arg1(dependencyMap[8]).t.Jm6e0x, arg1(dependencyMap[8]).t.MGRnRT, arg1(dependencyMap[8]).t.EXOEGh, arg1(dependencyMap[8]).t.5uCTFN, arg1(dependencyMap[8]).t.rl45Qo, arg1(dependencyMap[8]).t.Bh9zpQ, arg1(dependencyMap[8]).t.RdEy1J, arg1(dependencyMap[8]).t.qcdp00, arg1(dependencyMap[8]).t.F7w2Ru, arg1(dependencyMap[8]).t.gSyOgK, arg1(dependencyMap[8]).t.uYgqv7, arg1(dependencyMap[8]).t.b/1SBX, arg1(dependencyMap[8]).t.LhebZF];
   const obj = importDefault(dependencyMap[9]);
@@ -305,7 +305,7 @@ const obj = {
                                                   if ("" !== content) {
                                                     const _Date = Date;
                                                     const date = new Date(content);
-                                                    str3 = date.toLocaleString(isForumPost(dependencyMap[8]).intl.currentLocale, {});
+                                                    str3 = date.toLocaleString(isForumPost(dependencyMap[8]).intl.currentLocale, { CONVERSATIONS_EXTRACTION_PROCESSING: false, CREATOR_STORE_PAGE_VIEWED: false });
                                                   }
                                                   obj16.time = str3;
                                                   astToStringResult6 = obj5.astToString(intl2.formatToParts(isForumPost(dependencyMap[8]).t.iOuWPk, obj16));

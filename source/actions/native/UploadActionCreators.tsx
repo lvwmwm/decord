@@ -1,8 +1,8 @@
-// Module ID: 10883
-// Function ID: 84567
-// Dependencies: [5336, 4141, 653, 478]
+// Module ID: 10888
+// Function ID: 84588
+// Dependencies: [5338, 4141, 653, 478]
 
-// Module 10883
+// Module 10888
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { DraftType } from "_isNativeReflectConstruct";
 import closure_4 from "_isNativeReflectConstruct";

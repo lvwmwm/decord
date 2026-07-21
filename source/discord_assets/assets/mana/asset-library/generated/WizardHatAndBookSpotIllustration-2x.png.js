@@ -1,9 +1,9 @@
-// Module ID: 6614
-// Function ID: 50795
+// Module ID: 6620
+// Function ID: 50844
 // Name: metadata
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 6614 (metadata)
+// Module 6620 (metadata)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/WizardHatAndBookSpotIllustration-2x.png.js");
 

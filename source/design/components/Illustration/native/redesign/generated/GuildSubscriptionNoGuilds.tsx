@@ -1,10 +1,10 @@
-// Module ID: 12337
-// Function ID: 94404
+// Module ID: 12344
+// Function ID: 94427
 // Name: getGuildSubscriptionNoGuildsSource
 // Dependencies: []
 // Exports: GuildSubscriptionNoGuilds
 
-// Module 12337 (getGuildSubscriptionNoGuildsSource)
+// Module 12344 (getGuildSubscriptionNoGuildsSource)
 function getGuildSubscriptionNoGuildsSource(theme) {
   let obj = arg1(dependencyMap[3]);
   obj = {

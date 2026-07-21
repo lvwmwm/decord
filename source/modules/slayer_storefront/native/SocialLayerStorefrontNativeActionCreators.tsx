@@ -1,10 +1,10 @@
-// Module ID: 9721
-// Function ID: 75624
+// Module ID: 9726
+// Function ID: 75641
 // Name: openSocialLayerStorefrontUnsupportedOnMobileAlert
 // Dependencies: []
 // Exports: closeSocialLayerStorefrontGiftModal, closeSocialLayerStorefrontProductDetailsModal, openSocialLayerStorefrontGiftModal, openSocialLayerStorefrontProductDetailsModal, openSocialLayerStorefrontProductGiftPurchaseSuccessModal, openSocialLayerStorefrontProductSelfPurchaseSuccessModal
 
-// Module 9721 (openSocialLayerStorefrontUnsupportedOnMobileAlert)
+// Module 9726 (openSocialLayerStorefrontUnsupportedOnMobileAlert)
 function openSocialLayerStorefrontUnsupportedOnMobileAlert() {
   let obj = importDefault(dependencyMap[1]);
   obj = {};

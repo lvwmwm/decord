@@ -1,10 +1,10 @@
-// Module ID: 8438
-// Function ID: 67346
+// Module ID: 8442
+// Function ID: 67358
 // Name: getEventLocationIconSource
 // Dependencies: []
 // Exports: getEventLocationIconComponent, getEventLocationIconSource
 
-// Module 8438 (getEventLocationIconSource)
+// Module 8442 (getEventLocationIconSource)
 const _module = require(dependencyMap[4]);
 const result = _module.fileFinishedImporting("modules/guild_scheduled_events/native/components/GuildEventUtils.tsx");
 

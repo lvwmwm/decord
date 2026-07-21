@@ -1,9 +1,9 @@
-// Module ID: 5616
-// Function ID: 47900
+// Module ID: 5618
+// Function ID: 47942
 // Name: GPlayConnectionState
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 5616 (GPlayConnectionState)
+// Module 5618 (GPlayConnectionState)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("modules/gplay/native/Constants.tsx");
 

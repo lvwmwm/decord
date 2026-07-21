@@ -1,9 +1,9 @@
-// Module ID: 6791
-// Function ID: 53599
+// Module ID: 6797
+// Function ID: 53648
 // Name: CollectiblesMarketingTabTooltipRecord
 // Dependencies: []
 
-// Module 6791 (CollectiblesMarketingTabTooltipRecord)
+// Module 6797 (CollectiblesMarketingTabTooltipRecord)
 let closure_2 = importDefault(dependencyMap[0]);
 let closure_3 = importDefault(dependencyMap[1]);
 const tmp2 = () => {

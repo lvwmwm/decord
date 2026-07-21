@@ -1,10 +1,10 @@
-// Module ID: 5413
-// Function ID: 46403
+// Module ID: 5415
+// Function ID: 46445
 // Name: useGuildRoleMemberCounts
 // Dependencies: []
 // Exports: default
 
-// Module 5413 (useGuildRoleMemberCounts)
+// Module 5415 (useGuildRoleMemberCounts)
 let closure_3 = importAll(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 let closure_5 = {};

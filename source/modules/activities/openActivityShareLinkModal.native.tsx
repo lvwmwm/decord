@@ -1,10 +1,10 @@
-// Module ID: 13280
-// Function ID: 100890
+// Module ID: 13287
+// Function ID: 100913
 // Name: ACTIVITY_SHARE_LINK_MODAL
 // Dependencies: []
 // Exports: closeActivityShareLinkModal, openActivityShareLinkModal
 
-// Module 13280 (ACTIVITY_SHARE_LINK_MODAL)
+// Module 13287 (ACTIVITY_SHARE_LINK_MODAL)
 const _module = require(dependencyMap[4]);
 const result = _module.fileFinishedImporting("modules/activities/openActivityShareLinkModal.native.tsx");
 

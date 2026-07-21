@@ -1,10 +1,10 @@
-// Module ID: 9961
-// Function ID: 76991
+// Module ID: 9967
+// Function ID: 77009
 // Name: hasNotSetUpChannelOptIn
 // Dependencies: []
 // Exports: hasClearedGuildOnboardingNotice, toggleShowAllChannels
 
-// Module 9961 (hasNotSetUpChannelOptIn)
+// Module 9967 (hasNotSetUpChannelOptIn)
 function hasNotSetUpChannelOptIn(guildId) {
   const result = arg1(dependencyMap[5]).isOptInEnabledForGuild(guildId);
   const selfMember = selfMember.getSelfMember(guildId);

@@ -1,12 +1,12 @@
-// Module ID: 15495
-// Function ID: 118273
+// Module ID: 15502
+// Function ID: 118297
 // Name: apexExperiment
 // Dependencies: []
 // Exports: getIsProfileFramesEAMarketingEnabled, useIsProfileFramesEAMarketingEnabled
 
-// Module 15495 (apexExperiment)
+// Module 15502 (apexExperiment)
 const _module = require(dependencyMap[0]);
-const obj = { -1269606814: true, -1845285747: true, defaultConfig: { enabled: false }, variations: { [0]: { enabled: false }, [1]: { enabled: true } } };
+const obj = { 9223372036854775807: "NavigatorHeader", 0: "isArray", defaultConfig: { enabled: false }, variations: { [0]: { enabled: false }, [1]: { enabled: true } } };
 const apexExperiment = _module.createApexExperiment(obj);
 const _module1 = require(dependencyMap[1]);
 const result = _module1.fileFinishedImporting("modules/collectibles/experiments/CollectiblesProfileFramesEAMarketingExperiment.tsx");

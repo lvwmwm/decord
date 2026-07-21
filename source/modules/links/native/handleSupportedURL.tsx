@@ -1,10 +1,10 @@
-// Module ID: 12727
-// Function ID: 97638
+// Module ID: 12734
+// Function ID: 97661
 // Name: handleSupportedURL
 // Dependencies: []
 // Exports: default
 
-// Module 12727 (handleSupportedURL)
+// Module 12734 (handleSupportedURL)
 let closure_4 = [];
 let closure_5 = importDefault(dependencyMap[0]);
 let closure_6 = importDefault(dependencyMap[1]);
@@ -151,7 +151,7 @@ export default function handleSupportedURL(payload) {
                   if (null != inviteCode) {
                     result = payload;
                     result = inviteCode;
-                    let obj4 = { deeplinkAttemptId };
+                    let obj4 = { "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, deeplinkAttemptId };
                     result = payload(inviteCode[23]).showInvite(inviteCode, username, obj4);
                     const obj34 = payload(inviteCode[23]);
                   }
@@ -163,7 +163,7 @@ export default function handleSupportedURL(payload) {
                   if (null != inviteCode) {
                     const result = payload(inviteCode[25]).dismissGlobalKeyboard();
                     const obj2 = payload(inviteCode[25]);
-                    obj = { deeplinkAttemptId };
+                    obj = { "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, deeplinkAttemptId };
                     payload(inviteCode[23]).showInvite(inviteCode, username, obj);
                     const obj3 = payload(inviteCode[23]);
                   }

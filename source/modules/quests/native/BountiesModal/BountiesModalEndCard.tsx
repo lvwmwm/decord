@@ -1,10 +1,10 @@
-// Module ID: 13829
-// Function ID: 104558
+// Module ID: 13836
+// Function ID: 104581
 // Name: BountiesModalEndCard
 // Dependencies: []
 // Exports: default
 
-// Module 13829 (BountiesModalEndCard)
+// Module 13836 (BountiesModalEndCard)
 const _module = require(dependencyMap[0]);
 ({ StyleSheet: closure_3, View: closure_4 } = _module);
 const _module1 = require(dependencyMap[1]);

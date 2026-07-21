@@ -1,10 +1,10 @@
-// Module ID: 15472
-// Function ID: 118041
+// Module ID: 15479
+// Function ID: 118065
 // Name: useSound
 // Dependencies: []
 // Exports: default
 
-// Module 15472 (useSound)
+// Module 15479 (useSound)
 function useSound(items, arg1, arg2) {
   arg1 = items;
   const dependencyMap = arg1;

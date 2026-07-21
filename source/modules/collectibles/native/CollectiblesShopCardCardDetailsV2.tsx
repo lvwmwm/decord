@@ -1,9 +1,9 @@
-// Module ID: 8706
-// Function ID: 68907
+// Module ID: 8710
+// Function ID: 68919
 // Name: memoResult1
 // Dependencies: []
 
-// Module 8706 (memoResult1)
+// Module 8710 (memoResult1)
 const importAllResult = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 let closure_5 = importDefault(dependencyMap[2]);
@@ -12,15 +12,15 @@ const tmp2 = arg1(dependencyMap[3]);
 ({ jsx: closure_8, jsxs: closure_9 } = arg1(dependencyMap[4]));
 let obj1 = arg1(dependencyMap[5]);
 let obj = {};
-obj = { borderBottomLeftRadius: importDefault(dependencyMap[6]).radii.sm, borderBottomRightRadius: importDefault(dependencyMap[6]).radii.sm };
+obj = { EU_COUNTRIES: "<string:218103808>", overflow: "<string:218103808>", alignSelf: "<string:452984832>", reportedPageIndex: "<string:1358954496>", pageIndex: "<string:553743210>", scrollTargetPageIndex: "constructor", index: "isArray", item: "<string:1107370240>", activePageRangeStart: "A really long label that has a switch next to it", activePageRangeEnd: "Show more information in less space", ref: "<string:1769472>", style: "<string:19660800>", borderBottomLeftRadius: importDefault(dependencyMap[6]).radii.sm, borderBottomRightRadius: importDefault(dependencyMap[6]).radii.sm };
 obj.regularMetadataContainer = obj;
 obj.assetName = { marginBottom: 4 };
 obj1 = { gap: importDefault(dependencyMap[6]).space.PX_4 };
 obj.priceVariantsContainer = obj1;
-obj.priceDescription = { <string:1373927010>: null, <string:1650543116>: 0, <string:810443091>: 360, <string:1629053384>: 0 };
+obj.priceDescription = { paddingVertical: null, paddingHorizontal: 0, gap: 360, maxWidth: 0 };
 obj.text = { flexShrink: 1 };
 obj.discountPercentage = { paddingLeft: 3 };
-obj.wheelIcon = { "Bool(true)": 2, "Bool(true)": "text-sm/semibold" };
+obj.wheelIcon = { scales: 2, then: "text-sm/semibold" };
 obj.androidTextPadding = { paddingBottom: 2 };
 let closure_10 = obj1.createStyles(obj);
 const memoResult = importAllResult.memo((arg0) => {

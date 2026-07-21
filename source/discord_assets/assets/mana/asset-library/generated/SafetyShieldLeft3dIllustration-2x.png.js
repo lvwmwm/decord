@@ -1,9 +1,9 @@
-// Module ID: 6452
-// Function ID: 50552
+// Module ID: 6454
+// Function ID: 50595
 // Name: metadata
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 6452 (metadata)
+// Module 6454 (metadata)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/SafetyShieldLeft3dIllustration-2x.png.js");
 

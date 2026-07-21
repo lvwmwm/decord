@@ -1,10 +1,10 @@
-// Module ID: 9342
-// Function ID: 72974
+// Module ID: 9346
+// Function ID: 72988
 // Name: CreatorRevenueButton
 // Dependencies: []
 // Exports: CreatorRevenueButton
 
-// Module 9342 (CreatorRevenueButton)
+// Module 9346 (CreatorRevenueButton)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 let closure_3 = arg1(dependencyMap[2]).createStyles({ container: { borderRadius: 3 } });

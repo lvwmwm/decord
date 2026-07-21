@@ -1,10 +1,10 @@
-// Module ID: 6049
-// Function ID: 49947
+// Module ID: 6051
+// Function ID: 49990
 // Name: FavoritesSpotIllustration
 // Dependencies: []
 // Exports: FavoritesSpotIllustration
 
-// Module 6049 (FavoritesSpotIllustration)
+// Module 6051 (FavoritesSpotIllustration)
 const jsx = require(dependencyMap[0]).jsx;
 const _module = require(dependencyMap[3]);
 const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/FavoritesSpotIllustration.native.tsx");

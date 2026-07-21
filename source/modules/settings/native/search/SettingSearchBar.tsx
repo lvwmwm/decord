@@ -1,10 +1,10 @@
-// Module ID: 14451
-// Function ID: 108923
+// Module ID: 14458
+// Function ID: 108946
 // Name: SettingSearchBar
 // Dependencies: []
 // Exports: default
 
-// Module 14451 (SettingSearchBar)
+// Module 14458 (SettingSearchBar)
 let closure_2 = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 let closure_4 = importDefault(dependencyMap[2]);
@@ -19,12 +19,12 @@ const result = arg1(dependencyMap[9]).fileFinishedImporting("modules/settings/na
 export default function SettingSearchBar() {
   const tmp = callback();
   const callback = React.useCallback(() => {
-    store.setState({ NO: "resizeMode", MT: "formatToPlainString", EmojiSourceDataTypes: "construct" });
+    store.setState({ "Null": "resizeMode", "Null": "formatToPlainString", "Null": "construct" });
     const result = callback(closure_1[6]).dismissGlobalKeyboard();
   }, []);
   const callback1 = React.useCallback(() => {
     const result = callback(closure_1[7]).trackSettingSearchInputFocused();
-    store.setState({ enabled: null, onPress: null });
+    store.setState({ "Null": null, "Null": null });
   }, []);
   const callback2 = React.useCallback(() => {
     store.setState({ isFocused: false });

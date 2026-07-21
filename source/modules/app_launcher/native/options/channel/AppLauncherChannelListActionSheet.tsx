@@ -1,10 +1,10 @@
-// Module ID: 11294
-// Function ID: 87894
+// Module ID: 11300
+// Function ID: 87917
 // Name: ChannelIcon
 // Dependencies: []
 // Exports: default
 
-// Module 11294 (ChannelIcon)
+// Module 11300 (ChannelIcon)
 class ChannelIcon {
   constructor(arg0) {
     ({ channel, size } = global);
@@ -51,7 +51,7 @@ function ChannelListItem(arg0) {
   ({ channel, index } = arg0);
   ({ totalCount, onPress } = arg0);
   let obj = { onPress };
-  obj = { CHANNEL_HIGHLIGHT: true, guild_template_description: 15.1, borderWidth: 253, children: importDefault(dependencyMap[13])(channel) };
+  obj = { encodingConfig: true, showRemove: 15.1, PREMIUM_CUSTOM_NOTIFICATION_SOUND_SETTINGS_UPSELL: 253, children: importDefault(dependencyMap[13])(channel) };
   obj.label = callback2(arg1(dependencyMap[15]).Text, obj);
   obj.icon = callback2(ChannelIcon, { channel });
   obj.start = 0 === index;
@@ -103,7 +103,7 @@ export default function AppLauncherChannelListActionSheet(channel) {
       callback2(str.toLowerCase());
       const current = ref.current;
       if (null != current) {
-        current.scrollToOffset({ "Bool(true)": 9035158524362260000000000000000000000000000000000000000000000000000000000000000000000000000000, "Bool(true)": -222642488090540470000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 });
+        current.scrollToOffset({ -437125116: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002488040065571517, -435748860: -823154013994709700000000000000000000000000000000000000000000000 });
       }
     }
   };

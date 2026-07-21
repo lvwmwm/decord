@@ -1,9 +1,9 @@
-// Module ID: 4273
-// Function ID: 37404
+// Module ID: 4277
+// Function ID: 37452
 // Name: logger
 // Dependencies: []
 
-// Module 4273 (logger)
+// Module 4277 (logger)
 let closure_2 = importDefault(dependencyMap[0]);
 let closure_3 = importDefault(dependencyMap[1]);
 ({ SpeakingFlags: closure_4, VIDEO_QUALITY_FRAMRATE_NOT_SPEAKING_TIMEOUT: closure_5 } = arg1(dependencyMap[2]));
@@ -87,7 +87,7 @@ const tmp4 = () => {
     key: "updateRemoteWantsFramerate",
     value() {
       const connection = this.connection;
-      connection.updateVideoQuality([false]);
+      connection.updateVideoQuality([]);
     }
   };
   items[4] = {

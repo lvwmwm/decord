@@ -1,10 +1,10 @@
-// Module ID: 16111
-// Function ID: 124225
+// Module ID: 16118
+// Function ID: 124256
 // Name: computeSectionItem
 // Dependencies: []
 // Exports: default
 
-// Module 16111 (computeSectionItem)
+// Module 16118 (computeSectionItem)
 function computeSectionItem(intl, length, maxEmojiSlots) {
   const bound = Math.max(maxEmojiSlots - length, 0);
   intl = length(dependencyMap[10]).intl;
@@ -83,7 +83,7 @@ class ManageEmojisModal {
       ({ item, index } = arg0);
       let type = item.type;
       if ("SECTION" === type) {
-        let obj = { Promise: "_reject", marginTop: "isAutoFillData", flags: "gg", style: tmp3.section, children: item.section };
+        let obj = { "Null": 160961306817940700000000000000000000, "Null": 0.00000000605360159482843, "Null": 1315312532608515200000000000, style: tmp3.section, children: item.section };
         return ref(flag(headerDescription[15]).Text, obj);
       } else if ("EMOJI" === type) {
         type = undefined;
@@ -197,12 +197,12 @@ const tmp2 = arg1(dependencyMap[2]);
 const tmp3 = arg1(dependencyMap[5]);
 let closure_12 = importDefault(dependencyMap[6]).throttle(arg1(dependencyMap[7]).fetchEmoji, 1000);
 let obj1 = arg1(dependencyMap[8]);
-let obj = { loadingContainer: { end: false, y: false }, emptyState: { paddingTop: 30 } };
+let obj = { loadingContainer: { <string:1191183569>: "absolute", <string:1224738001>: -4 }, emptyState: { paddingTop: 30 } };
 obj = { paddingHorizontal: importDefault(dependencyMap[9]).space.PX_12 };
 obj.list = obj;
 obj1 = { paddingVertical: importDefault(dependencyMap[9]).space.PX_16 };
 obj.section = obj1;
-obj.titleContainer = { accessible: "<string:16777479>", name: "<string:36295491>" };
+obj.titleContainer = {};
 let closure_13 = obj1.createStyles(obj);
 const importDefaultResult = importDefault(dependencyMap[6]);
 let closure_14 = importDefault(dependencyMap[6]).memoize((arr, stateFromStores) => {

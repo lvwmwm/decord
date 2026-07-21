@@ -1,9 +1,9 @@
-// Module ID: 15219
-// Function ID: 114942
+// Module ID: 15226
+// Function ID: 114966
 // Name: GuildChannelLabel
 // Dependencies: []
 
-// Module 15219 (GuildChannelLabel)
+// Module 15226 (GuildChannelLabel)
 function GuildChannelLabel(channel) {
   channel = channel.channel;
   let obj = { style: callback().content };
@@ -18,8 +18,8 @@ const importAllResult = importAll(dependencyMap[0]);
 let closure_5 = arg1(dependencyMap[2]).CHANNEL_LIST_SEARCH_LAYOUT;
 const jsx = arg1(dependencyMap[3]).jsx;
 const tmp2 = arg1(dependencyMap[1]);
-let obj = { container: { paddingVertical: 10 }, content: { -9223372036854775808: true, filter: true }, iconContainer: { marginRight: 0 } };
-obj = { useTrackPdpClick: null, GameDetectionDebugLevel: null, presenceCount: null, tintColor: importDefault(dependencyMap[5]).colors.TEXT_MUTED };
+let obj = { container: { paddingVertical: 10 }, content: {}, iconContainer: { marginRight: 0 } };
+obj = { 0: null, 9223372036854775807: null, -9223372036854775808: null, tintColor: importDefault(dependencyMap[5]).colors.TEXT_MUTED };
 obj.simpleIcon = obj;
 let closure_7 = arg1(dependencyMap[4]).createStyles(obj);
 const obj2 = arg1(dependencyMap[4]);
@@ -32,13 +32,13 @@ const memoResult = importAllResult.memo(function GuildChannelRow(channel) {
   let trailing;
   let voiceStates;
   channel = channel.channel;
-  let obj = { <string:2363712652>: null, <string:2907811488>: "LOCAL_PAYMENT_START_PAYMENT_MISSING_REQUIRED_OPTION", <string:1369596261>: "Missing required option for startPayment.", <string:3311642165>: null, <string:4150435980>: "LOCAL_PAYMENT_START_PAYMENT_DEFERRED_PAYMENT_FAILED", <string:2639942489>: "LocalPayment startPayment deferred payment failed." };
+  let obj = { arrow: true, onPress: true, start: true, end: true, start: true, end: true };
   ({ subtitle, trailing, extras, onPress, voiceStates } = channel);
   Object.setPrototypeOf(null);
   const merged = Object.assign(channel, obj);
   const tmp3 = callback();
   let obj1 = arg1(dependencyMap[9]);
-  obj = { 9223372036854775807: null, 9223372036854775807: "2eaff20be2a75be7ccdd4c6f19f0eb36", 0: "img_account_sync_youtube_white", channel, voiceStates };
+  obj = { body: null, icon: "2eaff20be2a75be7ccdd4c6f19f0eb36", accessibilityRole: "img_account_sync_youtube_white", channel, voiceStates };
   const channelAccessibilityProps = obj1.getChannelAccessibilityProps(obj);
   obj = {};
   obj1 = { style: tmp3.simpleIcon, source: arg1(dependencyMap[8]).getSimpleChannelIcon(channel) };

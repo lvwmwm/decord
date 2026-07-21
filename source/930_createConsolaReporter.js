@@ -6,7 +6,7 @@
 
 // Module 930 (createConsolaReporter)
 let closure_2 = require(dependencyMap[0]);
-let closure_3 = ["disablePressable", "Array", "templateSource", "MAX_TEEN_TO_PARENT_ACTIVE_CONNECTIONS", "_pendingViewabilityUpdate", "Array"];
+let closure_3 = ["gradientTransform", "ImpressionGroups", "stageInfo", "browser", "getApplicationCodedLinkData", "_shortMonthsParse"];
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 let closure_4 = [];
 let closure_5 = {};

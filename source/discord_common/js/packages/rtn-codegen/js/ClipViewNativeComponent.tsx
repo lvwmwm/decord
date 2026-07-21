@@ -1,10 +1,10 @@
-// Module ID: 7863
-// Function ID: 62639
+// Module ID: 7867
+// Function ID: 62651
 // Name: __INTERNAL_VIEW_CONFIG
 // Dependencies: []
 
-// Module 7863 (__INTERNAL_VIEW_CONFIG)
-const obj = { uiViewClassName: "ClipView", validAttributes: { zIndex: null, position: null } };
+// Module 7867 (__INTERNAL_VIEW_CONFIG)
+const obj = { uiViewClassName: "ClipView", validAttributes: { <string:1654246737>: null, <string:1851911384>: null } };
 const _module = require(dependencyMap[0]);
 const value = _module.get("ClipView", () => obj);
 const _module1 = require(dependencyMap[1]);

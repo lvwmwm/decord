@@ -1,10 +1,10 @@
-// Module ID: 5867
-// Function ID: 49674
+// Module ID: 5869
+// Function ID: 49717
 // Name: AvatarGraggleExample
 // Dependencies: []
 // Exports: AvatarGraggleExample
 
-// Module 5867 (AvatarGraggleExample)
+// Module 5869 (AvatarGraggleExample)
 const jsx = require(dependencyMap[0]).jsx;
 const _module = require(dependencyMap[3]);
 const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/AvatarGraggleExample.native.tsx");

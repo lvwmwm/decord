@@ -1,10 +1,10 @@
-// Module ID: 13597
-// Function ID: 103044
+// Module ID: 13604
+// Function ID: 103067
 // Name: useParentalControlledExplicitContentSettings
 // Dependencies: []
 // Exports: useAllowFriendsFromMutualGuildsOnlyForTeen, useDefaultGuildsRestricted, useIsParentallyControlled, useParentalControlledConsent, useParentalControlledExplicitContentSettings, useParentalControlledGoreContentSettings
 
-// Module 13597 (useParentalControlledExplicitContentSettings)
+// Module 13604 (useParentalControlledExplicitContentSettings)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 let closure_5 = importDefault(dependencyMap[2]);
@@ -82,7 +82,7 @@ export const useParentalControlledGoreContentSettings = function useParentalCont
     obj.goreContentNonFriendDm = goreContentNonFriendDm;
     const obj4 = arg1(dependencyMap[6]);
     if (!obj7.isSetAndNotDefault(goreContentFriendDm)) {
-      goreContentFriendDm = arg1(dependencyMap[8]).resolveGoreSettingWithDefaultsForTeen({ "Bool(true)": null, "Bool(true)": null });
+      goreContentFriendDm = arg1(dependencyMap[8]).resolveGoreSettingWithDefaultsForTeen({ "Null": null, "Null": null });
       const obj8 = arg1(dependencyMap[8]);
     }
     obj.goreContentFriendDm = goreContentFriendDm;

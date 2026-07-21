@@ -1,10 +1,10 @@
-// Module ID: 8589
-// Function ID: 68229
+// Module ID: 8593
+// Function ID: 68241
 // Name: isGameProfileObscured
 // Dependencies: []
 // Exports: default
 
-// Module 8589 (isGameProfileObscured)
+// Module 8593 (isGameProfileObscured)
 function isGameProfileObscured(game, nsfwAllowed) {
   let result = null != game;
   if (result) {

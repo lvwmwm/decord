@@ -1,10 +1,10 @@
-// Module ID: 6233
-// Function ID: 50223
+// Module ID: 6235
+// Function ID: 50266
 // Name: GoatIllocon
-// Dependencies: [33554456, 1946157056, 33, 5231]
+// Dependencies: [33554456, 1946157056, 33, 5233]
 // Exports: GoatIllocon
 
-// Module 6233 (GoatIllocon)
+// Module 6235 (GoatIllocon)
 import preload from "preload";
 
 const jsx = require(dependencyMap[0]).jsx;

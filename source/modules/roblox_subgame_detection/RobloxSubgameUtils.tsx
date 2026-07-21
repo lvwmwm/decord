@@ -1,10 +1,10 @@
-// Module ID: 4293
-// Function ID: 37563
+// Module ID: 4297
+// Function ID: 37611
 // Name: hasSubgameInfoChanged
 // Dependencies: []
 // Exports: convertMapToRobloxSubgameInfo, getSubgameMetadata, hasRunningGameChanged, isRobloxSubgameApplication, isRobloxSubgameGame, keyForRobloxGame, maybeAddAdditionalGameMetadata, maybeTransformRobloxSubgameToRoblox, openRobloxURLWithRootPlaceId, updateRunningGameWithRobloxSubgameInfo
 
-// Module 4293 (hasSubgameInfoChanged)
+// Module 4297 (hasSubgameInfoChanged)
 function hasSubgameInfoChanged(arg0, arg1) {
   let tmp = null == arg0 && null != arg1;
   if (!tmp) {

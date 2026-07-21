@@ -1,10 +1,10 @@
-// Module ID: 9737
-// Function ID: 75760
+// Module ID: 9742
+// Function ID: 75777
 // Name: PurchaseSuccessModalBase
 // Dependencies: []
 // Exports: SocialLayerStorefrontProductGiftPurchaseSuccessModal, SocialLayerStorefrontProductSelfPurchaseSuccessModal
 
-// Module 9737 (PurchaseSuccessModalBase)
+// Module 9742 (PurchaseSuccessModalBase)
 function PurchaseSuccessModalBase(sku) {
   let body;
   let ctaIcon;
@@ -42,7 +42,7 @@ function PurchaseSuccessModalBase(sku) {
       let num = 1;
       if (!arg0) {
         let obj = arg0(sharedValue1[10]);
-        num = obj.withDelay(200, arg0(sharedValue1[11]).withSpring(1, { position: "transparent", left: null }));
+        num = obj.withDelay(200, arg0(sharedValue1[11]).withSpring(1, { marginHorizontal: "transparent", marginBottom: null }));
         const obj2 = arg0(sharedValue1[11]);
       }
       const result = sharedValue.set(num);
@@ -57,10 +57,10 @@ function PurchaseSuccessModalBase(sku) {
     }, items);
     obj = {};
     const fn = function o() {
-      let obj = { opacity: arg0(sharedValue1[10]).interpolate(sharedValue.get(), [null, null], ["<string:3813801988>", "<string:1147353132>"]) };
+      let obj = { opacity: arg0(sharedValue1[10]).interpolate(sharedValue.get(), ["Text", "lc"], ["y", "isArray"]) };
       obj = {};
       const obj2 = arg0(sharedValue1[10]);
-      obj.scale = arg0(sharedValue1[10]).interpolate(sharedValue.get(), [null, null], [null, null]);
+      obj.scale = arg0(sharedValue1[10]).interpolate(sharedValue.get(), ["Text", "lc"], ["Text", "lc"]);
       const items = [obj];
       obj.transform = items;
       return obj;
@@ -72,10 +72,10 @@ function PurchaseSuccessModalBase(sku) {
     obj.previewViewStyle = sku(callback[10]).useAnimatedStyle(fn);
     const obj4 = sku(callback[10]);
     const fn2 = function l() {
-      let obj = { opacity: arg0(sharedValue1[10]).interpolate(sharedValue.get(), [null, null], [null, null]) };
+      let obj = { opacity: arg0(sharedValue1[10]).interpolate(sharedValue.get(), ["Text", "lc"], ["Text", "lc"]) };
       obj = {};
       const obj2 = arg0(sharedValue1[10]);
-      obj.scale = arg0(sharedValue1[10]).interpolate(sharedValue.get(), [null, null], ["<string:1075222413>", "construct"]);
+      obj.scale = arg0(sharedValue1[10]).interpolate(sharedValue.get(), ["Text", "lc"], ["<string:1075222413>", "construct"]);
       const items = [obj];
       obj.transform = items;
       return obj;
@@ -87,7 +87,7 @@ function PurchaseSuccessModalBase(sku) {
     obj.textViewStyle = sku(callback[10]).useAnimatedStyle(fn2);
     const obj6 = sku(callback[10]);
     const fn3 = function c() {
-      const obj = { opacity: arg0(sharedValue1[10]).interpolate(sharedValue1.get(), [null, null], ["<string:2558152960>", "<string:30754627>"]) };
+      const obj = { opacity: arg0(sharedValue1[10]).interpolate(sharedValue1.get(), ["Text", "lc"], ["originY", "preloadAllIntlMessageFiles"]) };
       return obj;
     };
     const obj8 = sku(callback[10]);
@@ -161,7 +161,7 @@ function PurchaseSuccessModalBase(sku) {
     obj.resizeMode = "cover";
     tmp10 = callback(closure_5, obj);
   }
-  const items5 = [tmp10, callback(importDefault(dependencyMap[18]), { style: tmp.backdropGradient, start: constants.START, end: constants.END, locations: [0.167, 0.167, 16.667], colors: [] }), , ];
+  const items5 = [tmp10, callback(importDefault(dependencyMap[18]), { style: tmp.backdropGradient, start: constants.START, end: constants.END, locations: ["<string:3342845280>", "<string:1614907703>", "<string:1855471557>"], colors: [] }), , ];
   const obj3 = { style: tmp.main };
   const obj4 = { style: tmp.header };
   const obj5 = {
@@ -182,10 +182,7 @@ function PurchaseSuccessModalBase(sku) {
   const items8 = [callback(importDefault(dependencyMap[10]).View, obj7), ];
   const obj8 = { style: items9 };
   const items9 = [tmp.messages, textViewStyle];
-  const obj9 = { INTEGRATION_CREATE: "<string:1602048>", ConstraintReasonCode: "<string:1572864>", style: tmp.title, children: title };
-  const items10 = [callback(arg1(dependencyMap[24]).Text, obj9), ];
-  const obj10 = { INTEGRATION_CREATE: "<string:3574726658>", ConstraintReasonCode: "<string:1234436097>", style: tmp.description, children: body };
-  items10[1] = callback(arg1(dependencyMap[24]).Text, obj10);
+  const items10 = [callback(arg1(dependencyMap[24]).Text, { style: tmp.title, children: title }), callback(arg1(dependencyMap[24]).Text, { style: tmp.description, children: body })];
   obj8.children = items10;
   items8[1] = callback2(importDefault(dependencyMap[10]).View, obj8);
   obj6.children = items8;
@@ -238,16 +235,16 @@ obj = {};
 obj = { flex: 1, backgroundColor: importDefault(dependencyMap[9]).colors.BLACK };
 obj.root = obj;
 obj.backdropImage = {};
-obj.backdropGradient = { "Bool(false)": null, "Bool(false)": null };
-const obj1 = { "Bool(false)": null, "Bool(false)": null, backgroundColor: importDefault(dependencyMap[9]).colors.BLACK };
-obj.curtain = obj1;
-obj.main = { flex: 1 };
+obj.backdropGradient = {};
 const tmp4 = arg1(dependencyMap[7]);
+obj.curtain = { backgroundColor: importDefault(dependencyMap[9]).colors.BLACK };
+obj.main = { flex: 1 };
+const obj1 = { backgroundColor: importDefault(dependencyMap[9]).colors.BLACK };
 obj.header = { paddingHorizontal: importDefault(dependencyMap[9]).space.PX_16 };
 const obj2 = { paddingHorizontal: importDefault(dependencyMap[9]).space.PX_16 };
 obj.closeButtonIcon = { tintColor: importDefault(dependencyMap[9]).colors.WHITE };
 obj.body = {};
-obj.preview = { "Bool(true)": null, "Bool(true)": null, "Bool(true)": null };
+obj.preview = { bottom: 0, left: 6, padding: 0 };
 const obj3 = { tintColor: importDefault(dependencyMap[9]).colors.WHITE };
 obj.messages = { paddingTop: importDefault(dependencyMap[9]).space.PX_24, gap: importDefault(dependencyMap[9]).space.PX_8 };
 const obj4 = { paddingTop: importDefault(dependencyMap[9]).space.PX_24, gap: importDefault(dependencyMap[9]).space.PX_8 };

@@ -1,8 +1,8 @@
-// Module ID: 9574
-// Function ID: 74607
+// Module ID: 9579
+// Function ID: 74624
 // Dependencies: []
 
-// Module 9574
+// Module 9579
 const View = arg1(dependencyMap[1]).View;
 arg1(dependencyMap[2]).GIFPickerResultTypes;
 const importAllResult = importAll(dependencyMap[0]);
@@ -39,7 +39,7 @@ const memoResult = importAllResult.memo(function GIFPickerHeader(arg0) {
     obj1.accessibilityLabel = intl4.formatToPlainString(arg1(dependencyMap[11]).t.UTypEu, obj2);
     const obj3 = { color: importDefault(dependencyMap[5]).colors.INTERACTIVE_TEXT_ACTIVE, size: "sm" };
     const items = [callback(arg1(dependencyMap[12]).ChevronLargeLeftIcon, obj3), ];
-    const obj4 = { padding: null, name: null, "Bool(false)": null };
+    const obj4 = { borderWidth: "explicit_content_friend_dm", borderColor: "enum", overflow: "CVE" };
     if (categoryType === GIFPickerResultTypes.TRENDING_GIFS) {
       const intl3 = arg1(dependencyMap[11]).intl;
       let stringResult = intl3.string(arg1(dependencyMap[11]).t.TsWCdW);

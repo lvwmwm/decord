@@ -1,10 +1,10 @@
-// Module ID: 11402
-// Function ID: 88705
+// Module ID: 11409
+// Function ID: 88729
 // Name: UpcomingEventsLongPressActionSheet
 // Dependencies: []
 // Exports: default
 
-// Module 11402 (UpcomingEventsLongPressActionSheet)
+// Module 11409 (UpcomingEventsLongPressActionSheet)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 let closure_4 = importDefault(dependencyMap[2]);

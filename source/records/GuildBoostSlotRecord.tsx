@@ -86,4 +86,4 @@ export default (arg0) => {
   };
   const items1 = [obj];
   return callback(GuildBoostSlotRecord, items, items1);
-}(require("keys"));
+}(require("result2"));

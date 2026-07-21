@@ -1,10 +1,10 @@
-// Module ID: 5412
-// Function ID: 46386
+// Module ID: 5414
+// Function ID: 46428
 // Name: PromptOptionButton
 // Dependencies: []
 // Exports: default
 
-// Module 5412 (PromptOptionButton)
+// Module 5414 (PromptOptionButton)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 const View = arg1(dependencyMap[2]).View;
@@ -14,10 +14,10 @@ const EMOJI_URL_BASE_SIZE = arg1(dependencyMap[5]).EMOJI_URL_BASE_SIZE;
 ({ jsx: closure_9, jsxs: closure_10 } = arg1(dependencyMap[6]));
 let obj = arg1(dependencyMap[7]);
 obj = {};
-obj = { borderRadius: importDefault(dependencyMap[8]).radii.md };
+obj = { textAlign: true, flex: true, name: true, raw: true, borderRadius: importDefault(dependencyMap[8]).radii.md };
 obj.container = obj;
-obj.optionButton = {};
-obj.optionTextEmoji = { FONT_SIZE_MAX: false, accessibilityElementsHidden: false, 9223372036854775807: false, 0: false };
+obj.optionButton = { flex: "<string:2236743682>", display: "<string:1941427526>", flexDirection: "toString", flexShrink: "toString", alignItems: "call" };
+obj.optionTextEmoji = { CUSTOM_THEME_SHARE: "<string:7471105>", "Bool(true)": "<string:268435456>", "Bool(true)": "<string:1929379840>", "Bool(true)": "isArray" };
 obj.optionImageEmoji = {};
 obj.optionText = { flexShrink: 1 };
 const tmp2 = arg1(dependencyMap[6]);
@@ -432,7 +432,7 @@ export default function PromptOptionButton(option) {
     tmp34Result = null != name2;
   }
   if (tmp34Result) {
-    obj4 = { style: { "Bool(true)": true, "Bool(true)": true } };
+    obj4 = { style: { -1861163602: true, -738052821: true } };
     const obj5 = {};
     ({ optionTextEmoji: obj19.textEmojiStyle, optionImageEmoji: obj19.fastImageStyle } = tmp);
     let emojiURL;
@@ -463,7 +463,7 @@ export default function PromptOptionButton(option) {
   }
   const items8 = [tmp34Result, ];
   obj7 = { style: tmp.optionText };
-  obj8 = { INTEGRATION_CREATE: 131072.00119209292, ConstraintReasonCode: -293983030121430100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, children: option.title };
+  obj8 = { children: option.title };
   const items9 = [callback2(arg1(dependencyMap[21]).Text, obj8), ];
   let tmp46 = null != option.description && option.description.length > 0;
   if (tmp46) {
@@ -477,7 +477,7 @@ export default function PromptOptionButton(option) {
   const items10 = [closure_10(arg1(dependencyMap[18]).PressableOpacity, obj3), , , ];
   let tmp50 = null;
   if (num > 0) {
-    obj10 = { st: true, display: true, flexDirection: 0 };
+    obj10 = {};
     const items11 = [tmp.roleCount, animatedStyle1];
     obj10.style = items11;
     obj11 = {};

@@ -1,10 +1,10 @@
-// Module ID: 9738
-// Function ID: 75789
+// Module ID: 9743
+// Function ID: 75806
 // Name: WishlistItemCard
 // Dependencies: []
 // Exports: default
 
-// Module 9738 (WishlistItemCard)
+// Module 9743 (WishlistItemCard)
 importAll(dependencyMap[0]);
 const SKUProductLines = arg1(dependencyMap[1]).SKUProductLines;
 const jsx = arg1(dependencyMap[2]).jsx;
@@ -16,7 +16,7 @@ export default function WishlistItemCard(arg0) {
   let source;
   let wishlistOwnerId;
   ({ sku, isOwned, source, wishlistOwnerId } = arg0);
-  let obj = { "Null": "r", "Null": "onRequireModeratorMFAClick", "Null": "Array", "Null": "isSpamMessageRequest" };
+  let obj = { paddingHorizontal: null, flexDirection: 4, display: 4, gap: "rgba(0, 0, 0, 0.75)" };
   Object.setPrototypeOf(null);
   const merged = Object.assign(arg0, obj);
   arg1(dependencyMap[3]);
@@ -26,7 +26,7 @@ export default function WishlistItemCard(arg0) {
     const merged1 = Object.assign(merged);
     return jsx(importDefault(dependencyMap[4]), obj);
   } else if (SKUProductLines.PREMIUM === productLine) {
-    obj = { sku, source, wishlistOwnerId };
+    obj = { sku, source };
     const merged2 = Object.assign(merged);
     return jsx(importDefault(dependencyMap[5]), obj);
   } else if (SKUProductLines.SOCIAL_LAYER_GAME_ITEM === productLine) {

@@ -1,10 +1,10 @@
-// Module ID: 9125
-// Function ID: 71447
+// Module ID: 9129
+// Function ID: 71459
 // Name: sortForumPostReactionsByPopularityDesc
 // Dependencies: []
 // Exports: getForumPostAuthor, useAutomaticForumSearch, useCanManageChannel, useCanViewArchivedPosts, useChannelTemplate, useExistingPin, useFacepileUsers, useForumActiveThreadIds, useForumPostAuthor, useForumPostFirstMessageMarkup, useForumPostMessageAuthor, useForumPostReadStates, useForumSearchQuery, useForumThreadsForChannelList, useHasForumSearchQuery, useLastActiveTimestamp, useLoadForumUnreadCounts, useMaxPossibleForumPostReactions, useMessageCount, useMostUsedReaction, useSomeForumPostReactions
 
-// Module 9125 (sortForumPostReactionsByPopularityDesc)
+// Module 9129 (sortForumPostReactionsByPopularityDesc)
 function sortForumPostReactionsByPopularityDesc(items) {
   items = [(count) => count.count + count.burst_count, (burst_count) => burst_count.burst_count];
   return importDefault(dependencyMap[23]).orderBy(items, items, [-2108316476151903000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000061521795476951]);
@@ -137,7 +137,7 @@ const ForumTimestampFormats = arg1(dependencyMap[16]).ForumTimestampFormats;
 ({ AnalyticsObjectTypes: closure_20, AnalyticsObjects: closure_21, EMPTY_STRING_SNOWFLAKE_ID: closure_22, Permissions: closure_23 } = arg1(dependencyMap[17]));
 const ChannelFlags = arg1(dependencyMap[18]).ChannelFlags;
 let closure_25 = arg1(dependencyMap[19]).MAX_THREAD_UNREAD_MESSAGE_COUNT;
-let closure_26 = {};
+let closure_26 = { contentInset: null, automaticallyAdjustContentInsets: null };
 const tmp2 = arg1(dependencyMap[17]);
 const result = arg1(dependencyMap[35]).fileFinishedImporting("modules/forums/ForumHooks.tsx");
 
@@ -293,7 +293,7 @@ export const useSomeForumPostReactions = function useSomeForumPostReactions(mess
   }, items);
   let items1 = [];
   if (null != tmp) {
-    let obj = { emoji: tmp };
+    let obj = { <string:1751302160>: "SERVER_GUIDE_CHANNEL_SELECTED", <string:3146273726>: "_gameProfileResults", <string:463358356>: "r", <string:1585572706>: "MERCH_STORE", <string:3117334080>: "isArray", emoji: tmp };
     const items2 = [obj];
     items1 = items2;
   }
@@ -330,7 +330,7 @@ export const useMaxPossibleForumPostReactions = function useMaxPossibleForumPost
   }, items);
   let items1 = [];
   if (null != tmp2) {
-    let obj = { emoji: tmp2 };
+    let obj = { <string:1751302160>: "SERVER_GUIDE_CHANNEL_SELECTED", <string:3146273726>: "_gameProfileResults", <string:463358356>: "r", <string:1585572706>: "MERCH_STORE", <string:3117334080>: "isArray", emoji: tmp2 };
     const items2 = [obj];
     items1 = items2;
   }
@@ -564,10 +564,10 @@ export const useForumPostFirstMessageMarkup = function useForumPostFirstMessageM
     }
     if (null != content) {
       if ("" !== firstMessage.content) {
-        const obj = { MULTI_ACCOUNT_SWITCH_ATTEMPT: "LengthDelimited", headerIconColor: "borderRadius", activeCommandOptionText: 56119689, ExplicitContentRedaction: -430718879, fontFamily: 1016679575, fontWeight: -508213624, fontSize: 170590210, formatInline: flag, noStyleAndInteraction: flag2, textColor: str };
+        const obj = { formatInline: flag, noStyleAndInteraction: flag2, textColor: str };
         flag(flag2[31])(firstMessage, obj);
       }
-      return { "Bool(false)": 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000800310628823068, "Bool(false)": 0.0000000000000000000000000000000000000000000000015576649385897736 };
+      return { prepareSecureFramesTransition: null, allowLinks: null };
     }
   }, items);
   const hasSpoilerEmbeds = memo.hasSpoilerEmbeds;

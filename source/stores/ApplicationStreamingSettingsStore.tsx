@@ -1,9 +1,9 @@
-// Module ID: 4212
-// Function ID: 36737
+// Module ID: 4216
+// Function ID: 36785
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
-// Module 4212 (_isNativeReflectConstruct)
+// Module 4216 (_isNativeReflectConstruct)
 let ApplicationStreamFPS;
 let ApplicationStreamResolutions;
 function _isNativeReflectConstruct() {

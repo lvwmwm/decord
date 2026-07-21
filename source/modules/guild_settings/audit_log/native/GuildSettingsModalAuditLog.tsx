@@ -1,10 +1,10 @@
-// Module ID: 16085
-// Function ID: 123738
+// Module ID: 16092
+// Function ID: 123769
 // Name: ConnectedGuildSettingsModalAuditLog
 // Dependencies: []
 // Exports: default
 
-// Module 16085 (ConnectedGuildSettingsModalAuditLog)
+// Module 16092 (ConnectedGuildSettingsModalAuditLog)
 let closure_4 = importDefault(dependencyMap[0]);
 let closure_5 = importAll(dependencyMap[1]);
 ({ View: closure_6, FlatList: closure_7 } = arg1(dependencyMap[2]));
@@ -25,7 +25,7 @@ const tmp4 = arg1(dependencyMap[9]);
 obj.filtersWrapper = { paddingTop: importDefault(dependencyMap[11]).space.PX_12, paddingHorizontal: importDefault(dependencyMap[11]).space.PX_8 };
 obj.firstAuditRow = { marginTop: 0 };
 obj.lastAuditRow = { marginBottom: 0 };
-obj.filterTrailing = { replace: 29312346, count: 6257, category: -1621032704, TypeError: 1095355985 };
+obj.filterTrailing = { absolute: 29705613, wide: 6257, componentStyles: -1621032704, tall: 1095374929 };
 let closure_18 = obj.createStyles(obj);
 const obj1 = { paddingTop: importDefault(dependencyMap[11]).space.PX_12, paddingHorizontal: importDefault(dependencyMap[11]).space.PX_8 };
 const result = arg1(dependencyMap[28]).fileFinishedImporting("modules/guild_settings/audit_log/native/GuildSettingsModalAuditLog.tsx");
@@ -95,14 +95,14 @@ export default function ConnectedGuildSettingsModalAuditLog(guildId) {
     }
   }, items3);
   closure_8 = memo;
-  const tmp6 = callback(React.useState({ height: false, body: false }), 2);
+  const tmp6 = callback(React.useState({ USER_ACCOUNT_EMAIL_CHANGE_WARNING_CONTINUE: "o", position: "o" }), 2);
   const first = tmp6[0];
   closure_9 = first;
   closure_10 = tmp6[1];
   const items4 = [actionFilter, userIdFilter, navigation];
   callback = React.useCallback(() => {
     let obj = guildId(stateFromStores[16]);
-    obj = { "Null": "header", "Null": "text-md/medium", "Null": "mobile-text-heading-primary" };
+    obj = { url: "header", body: "text-md/medium", retries: "mobile-text-heading-primary" };
     obj = {};
     const intl = guildId(stateFromStores[15]).intl;
     obj.label = intl.string(guildId(stateFromStores[15]).t.hxnY/q);
@@ -151,7 +151,7 @@ export default function ConnectedGuildSettingsModalAuditLog(guildId) {
         const obj = { current: log.id, prev: ref.current };
         callback(obj);
       } else {
-        callback({ height: false, body: false });
+        callback({ USER_ACCOUNT_EMAIL_CHANGE_WARNING_CONTINUE: "o", position: "o" });
       }
     };
     obj.log = item;
@@ -184,7 +184,7 @@ export default function ConnectedGuildSettingsModalAuditLog(guildId) {
     if (!isInitialLoading) {
       obj1 = {};
       obj2 = { style: tmp.filtersWrapper };
-      obj3 = { 1726238916: null, 607091733: null };
+      obj3 = { 0: null, 0: null };
       const obj4 = { variant: "text-md/semibold" };
       const intl = arg1(dependencyMap[15]).intl;
       obj4.children = intl.string(arg1(dependencyMap[15]).t.kP6oFy);

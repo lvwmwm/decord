@@ -1,7 +1,7 @@
 // Module ID: 795
 // Function ID: 8954
 // Name: registerSpanErrorInstrumentation
-// Dependencies: [808, 798, 802, 819, 6, 7]
+// Dependencies: [0, 0, 0, 0, 0, 0]
 
 // Module 795 (registerSpanErrorInstrumentation)
 Object.defineProperty(arg5, Symbol.toStringTag, { value: "Module" });

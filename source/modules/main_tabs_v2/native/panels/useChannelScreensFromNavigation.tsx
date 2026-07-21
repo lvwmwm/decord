@@ -1,10 +1,10 @@
-// Module ID: 14657
-// Function ID: 110547
+// Module ID: 14664
+// Function ID: 110569
 // Name: getActiveTabsRoute
 // Dependencies: []
 // Exports: default, isActiveTabsGuilds
 
-// Module 14657 (getActiveTabsRoute)
+// Module 14664 (getActiveTabsRoute)
 function getActiveTabsRoute(coerceTabsRouteResult) {
   if (null != coerceTabsRouteResult) {
     const state3 = coerceTabsRouteResult.state;

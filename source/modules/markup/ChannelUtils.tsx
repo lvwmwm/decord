@@ -1,10 +1,10 @@
-// Module ID: 4570
-// Function ID: 40026
+// Module ID: 4572
+// Function ID: 40067
 // Name: isChannelTypeMentionable
 // Dependencies: []
 // Exports: isChannelTypeMentionable
 
-// Module 4570 (isChannelTypeMentionable)
+// Module 4572 (isChannelTypeMentionable)
 const _module = require(dependencyMap[0]);
 ({ isGuildSelectableChannelType: closure_0, isGuildVocalChannelType: closure_1 } = _module);
 const _module1 = require(dependencyMap[1]);

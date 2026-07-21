@@ -1,10 +1,10 @@
-// Module ID: 13392
-// Function ID: 101831
+// Module ID: 13399
+// Function ID: 101854
 // Name: TreehouseIcon
 // Dependencies: []
 // Exports: TreehouseIcon
 
-// Module 13392 (TreehouseIcon)
+// Module 13399 (TreehouseIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/TreehouseIcon.tsx");

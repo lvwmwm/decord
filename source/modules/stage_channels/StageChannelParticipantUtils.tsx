@@ -1,10 +1,10 @@
-// Module ID: 10648
-// Function ID: 83112
+// Module ID: 10654
+// Function ID: 83135
 // Name: participantMemberInfo
 // Dependencies: []
 // Exports: participantMemberInfo
 
-// Module 10648 (participantMemberInfo)
+// Module 10654 (participantMemberInfo)
 const DAY = importDefault(dependencyMap[0]).Millis.DAY;
 const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/stage_channels/StageChannelParticipantUtils.tsx");
 

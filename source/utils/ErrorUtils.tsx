@@ -1,10 +1,10 @@
-// Module ID: 7219
-// Function ID: 58168
+// Module ID: 7223
+// Function ID: 58179
 // Name: getUnderlyingIOSExceptionRecursively
 // Dependencies: []
 // Exports: getUnderlyingIOSError, serializeError
 
-// Module 7219 (getUnderlyingIOSExceptionRecursively)
+// Module 7223 (getUnderlyingIOSExceptionRecursively)
 function getUnderlyingIOSExceptionRecursively(NSUnderlyingError) {
   if (null != NSUnderlyingError.userInfo.NSUnderlyingError) {
     const tmp2 = getUnderlyingIOSExceptionRecursively(NSUnderlyingError.userInfo.NSUnderlyingError);

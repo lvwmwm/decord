@@ -1,10 +1,10 @@
-// Module ID: 9070
-// Function ID: 71133
+// Module ID: 9074
+// Function ID: 71145
 // Name: unpackStageChannelParty
 // Dependencies: []
 // Exports: isStageActivity, packStageChannelPartyId, shouldShowActivity
 
-// Module 9070 (unpackStageChannelParty)
+// Module 9074 (unpackStageChannelParty)
 function unpackStageChannelParty(activity) {
   if (null != activity) {
     if (null != tmp.party) {

@@ -35,14 +35,14 @@ const fn = function n(moment) {
       }
       return str;
     },
-    longDateFormat: { "Bool(false)": "center", "Bool(false)": 8, "Bool(false)": "%s\u5185", "Bool(false)": "%s\u524D", "Bool(false)": "\u51E0\u79D2", "Bool(false)": "%d \u79D2", "Bool(false)": "1 \u5206\u949F", "Bool(false)": "%d \u5206\u949F", "Bool(false)": "1 \u5C0F\u65F6", "Bool(false)": "%d \u5C0F\u65F6" },
-    calendar: {},
+    longDateFormat: {},
+    calendar: { status: "limit", padding: "Array", opacity: "isArray", PX_8: "Array", Symbol: "toString", r: "Array" },
     relativeTime: {},
     dayOfMonthOrdinalParse: /\d{1,2}/,
     ordinal(arg0) {
       return arg0;
     },
-    week: { "Bool(true)": false, "Bool(true)": false }
+    week: { <string:1431496722>: false, <string:1627556098>: false }
   });
 };
 if ("object" === typeof exports) {
@@ -54,7 +54,7 @@ if ("object" === typeof exports) {
 }
 if ("function" === typeof globalThis.define) {
   if (globalThis.define.amd) {
-    globalThis.define([1782644737], fn);
+    globalThis.define(["HH:mm:ss"], fn);
   }
 }
 fn(this.moment);

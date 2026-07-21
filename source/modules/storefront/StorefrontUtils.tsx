@@ -1,10 +1,10 @@
-// Module ID: 5609
-// Function ID: 47740
+// Module ID: 5611
+// Function ID: 47782
 // Name: transformStorefrontSKUPricesServer
 // Dependencies: []
 // Exports: isSlayerSkuAvailableOnThisPlatform, transformStorefrontPricesServer, useFormattedSKUPrice, useSKUOrbPrice
 
-// Module 5609 (transformStorefrontSKUPricesServer)
+// Module 5611 (transformStorefrontSKUPricesServer)
 function transformStorefrontSKUPricesServer(arr) {
   return arr.map((currency) => ({ currency: currency.currency, amount: currency.amount }));
 }
@@ -133,7 +133,7 @@ function useSKUPrice(sku) {
   items2[7] = stateFromStoresArray;
   return React.useMemo(() => {
     if (null == sku) {
-      return { <string:3752558061>: 11913815630712838000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, <string:1304387174>: 61141391887080580000000000000000000, <string:979689656>: -0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000009030216653543717, <string:1386888022>: 2123526618575307800000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 };
+      return { "Null": 0, "Null": 0, "Null": "100%", "Null": "10%" };
     } else if (storeHasPrice) {
       const found = stateFromStoresArray.find((arg0) => {
         if (null == arg0[closure_4]) {
@@ -213,7 +213,7 @@ function useSKUPrice(sku) {
       if (null != price) {
         tmp12 = price;
       }
-      obj = { <string:979689656>: "Normal", <string:1386888022>: true, <string:2114771812>: "AbortSignal", normalPrice: tmp12, userPrice: tmp12 };
+      obj = { "Bool(true)": null, "Bool(true)": "\u{1F9BB}\u{1F3FF}", "Bool(true)": true, normalPrice: tmp12, userPrice: tmp12 };
       return obj;
     }
   }, items2);

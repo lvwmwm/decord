@@ -419,7 +419,7 @@ function NativePressableText(ref) {
   [tmp2, tmp3] = callback(useTextPressability(ref.textPressabilityProps), 2);
   return jsx(arg1(dependencyMap[7]).NativeText, Object.assign({}, ref.textProps, tmp3, { isHighlighted: tmp2, isPressable: true, ref: ref.ref }));
 }
-let closure_12 = {};
-let closure_13 = { "Bool(false)": "<string:2572484610>", "Bool(false)": "<string:1833947651>", "Bool(false)": "<string:1778620876>", "Bool(false)": "<string:385947321>" };
+let closure_12 = { accessibilityRole: true, View: true, a: true, bottom: true, paddingHorizontal: true };
+let closure_13 = { minWidth: "construct", minHeight: "isArray", borderRadius: "isArray", marginEnd: "isArray" };
 
 export default TextImpl;

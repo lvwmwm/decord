@@ -1,10 +1,10 @@
-// Module ID: 15916
-// Function ID: 122058
+// Module ID: 15923
+// Function ID: 122083
 // Name: _guildRoomConnect
 // Dependencies: []
-// Exports: createGuildRoomNote, createPendingGuildRoomNote, deleteGuildRoomNote, deletePendingGuildRoomNote, fetchGuildRoom, guildRoomConnect, guildRoomDisconnect, guildRoomObjectUpdate, guildRoomToggleLayout, guildRoomUpdate, selectGuildRoomLocalPosition
+// Exports: createGuildRoomNote, deleteGuildRoomNote, fetchGuildRoom, guildRoomConnect, guildRoomDisconnect, guildRoomObjectUpdate, guildRoomToggleLayout, guildRoomUpdate, placePendingGuildRoomNote, selectGuildRoomLocalPosition, startPendingGuildRoomNote
 
-// Module 15916 (_guildRoomConnect)
+// Module 15923 (_guildRoomConnect)
 function _guildRoomConnect() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
@@ -47,6 +47,11 @@ function _guildRoomObjectDelete() {
   const _guildRoomObjectDelete = obj;
   return obj(...arguments);
 }
+function deletePendingGuildRoomNote(roomId) {
+  let obj = importDefault(dependencyMap[6]);
+  obj = { type: "GUILD_ROOM_PENDING_NOTE_DELETE", roomId };
+  obj.dispatch(obj);
+}
 function _createGuildRoomNote() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
@@ -69,7 +74,7 @@ let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 let closure_5 = importDefault(dependencyMap[2]);
 const Endpoints = arg1(dependencyMap[3]).Endpoints;
-let closure_7 = { "Null": false, "Null": true };
+let closure_7 = { max: -536870861, guildId: -299892737 };
 const result = arg1(dependencyMap[11]).fileFinishedImporting("modules/guild_rooms/GuildRoomActionCreators.shared.tsx");
 
 export const guildRoomConnect = function guildRoomConnect() {
@@ -96,16 +101,17 @@ export const guildRoomObjectUpdate = function guildRoomObjectUpdate() {
   return _guildRoomObjectUpdate(...arguments);
 };
 export { guildRoomObjectDelete };
-export const createPendingGuildRoomNote = function createPendingGuildRoomNote(roomId, note) {
+export const startPendingGuildRoomNote = function startPendingGuildRoomNote(roomId) {
   let obj = importDefault(dependencyMap[6]);
-  obj = { type: "GUILD_ROOM_PENDING_NOTE_CREATE", roomId, note };
+  obj = { type: "GUILD_ROOM_PENDING_NOTE_START", roomId };
   obj.dispatch(obj);
 };
-export const deletePendingGuildRoomNote = function deletePendingGuildRoomNote(roomId) {
+export const placePendingGuildRoomNote = function placePendingGuildRoomNote(roomId, position) {
   let obj = importDefault(dependencyMap[6]);
-  obj = { type: "GUILD_ROOM_PENDING_NOTE_DELETE", roomId };
+  obj = { type: "GUILD_ROOM_PENDING_NOTE_PLACE", roomId, position };
   obj.dispatch(obj);
 };
+export { deletePendingGuildRoomNote };
 export const createGuildRoomNote = function createGuildRoomNote() {
   return _createGuildRoomNote(...arguments);
 };

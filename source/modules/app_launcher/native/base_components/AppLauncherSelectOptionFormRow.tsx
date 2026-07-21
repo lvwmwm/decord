@@ -1,15 +1,15 @@
-// Module ID: 11282
-// Function ID: 87813
+// Module ID: 11288
+// Function ID: 87836
 // Name: AppLauncherSelectOptionFormRow
 // Dependencies: []
 // Exports: default
 
-// Module 11282 (AppLauncherSelectOptionFormRow)
+// Module 11288 (AppLauncherSelectOptionFormRow)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 let obj = arg1(dependencyMap[2]);
 obj = {};
-obj = { flex: 43429591634436890000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, valueOf: 13341927254803950000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, borderRadius: importDefault(dependencyMap[3]).radii.lg, borderRadius: -0.0000025033991957262255, paddingHorizontal: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010473513843542165, backgroundColor: importDefault(dependencyMap[3]).colors.BACKGROUND_SURFACE_HIGH };
+obj = { backgroundColor: importDefault(dependencyMap[3]).colors.BACKGROUND_SURFACE_HIGH, borderRadius: importDefault(dependencyMap[3]).radii.lg };
 obj.formRow = obj;
 let closure_4 = obj.createStyles(obj);
 const result = arg1(dependencyMap[9]).fileFinishedImporting("modules/app_launcher/native/base_components/AppLauncherSelectOptionFormRow.tsx");
@@ -22,13 +22,13 @@ export default function AppLauncherSelectOptionFormRow(arg0) {
   let unselectedSubLabel;
   ({ selected, selectedItemName: closure_0, unselectedSubLabel } = arg0);
   const importDefault = unselectedSubLabel;
-  let obj = { paddingTop: null, paddingBottom: "LOCAL_PAYMENT_START_PAYMENT_MISSING_REQUIRED_OPTION", position: "Missing required option for startPayment.", left: null, right: "LOCAL_PAYMENT_START_PAYMENT_DEFERRED_PAYMENT_FAILED", zIndex: "LocalPayment startPayment deferred payment failed." };
+  let obj = { ellipsizeMode: true, variant: true, color: true, lineClamp: true, maxFontSizeMultiplier: true, bottom: true };
   ({ style, option, autoFocus } = arg0);
   Object.setPrototypeOf(null);
   const merged = Object.assign(arg0, obj);
   let obj1 = arg1(dependencyMap[4]);
   const animationDelayedAutoFocus = obj1.useAnimationDelayedAutoFocus(autoFocus, merged.onPress);
-  obj = { 1726238916: null, 607091733: null };
+  obj = { 0: null, 0: null };
   const items = [callback().formRow, style];
   obj.style = items;
   obj = {};
@@ -47,13 +47,16 @@ export default function AppLauncherSelectOptionFormRow(arg0) {
   obj.label = jsx(arg1(dependencyMap[6]).Text, obj);
   if (selected) {
     let fn = () => {
-      const obj = { 9223372036854775807: true, 9223372036854775807: true, 9223372036854775807: true, children: callback };
+      const obj = { -9223372036854775808: true, 0: true, 0: true, children: callback };
       return callback2(callback(closure_2[6]).Text, obj);
     };
   } else {
     fn = null;
     if (null != unselectedSubLabel) {
-      fn = () => callback2(callback(closure_2[6]).Text, { children: unselectedSubLabel });
+      fn = () => {
+        const obj = { -9223372036854775808: 400, 0: 20, 0: 24, children: unselectedSubLabel };
+        return callback2(callback(closure_2[6]).Text, obj);
+      };
     }
   }
   obj.subLabel = fn;

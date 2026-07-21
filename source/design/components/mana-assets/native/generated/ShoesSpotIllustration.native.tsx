@@ -1,10 +1,10 @@
-// Module ID: 6501
-// Function ID: 50625
+// Module ID: 6503
+// Function ID: 50668
 // Name: ShoesSpotIllustration
 // Dependencies: []
 // Exports: ShoesSpotIllustration
 
-// Module 6501 (ShoesSpotIllustration)
+// Module 6503 (ShoesSpotIllustration)
 const jsx = require(dependencyMap[0]).jsx;
 const _module = require(dependencyMap[3]);
 const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/ShoesSpotIllustration.native.tsx");

@@ -1,10 +1,10 @@
-// Module ID: 8397
-// Function ID: 66838
+// Module ID: 8401
+// Function ID: 66850
 // Name: ChannelTypeRow
 // Dependencies: []
 // Exports: default
 
-// Module 8397 (ChannelTypeRow)
+// Module 8401 (ChannelTypeRow)
 function ChannelTypeRow(selected) {
   let accessibilityRole;
   let accessibilityState;
@@ -119,7 +119,7 @@ class CreateChannel {
     closure_11 = undefined;
     closure_12 = undefined;
     closure_13 = undefined;
-    f66844 = undefined;
+    f66856 = undefined;
     closure_15 = undefined;
     closure_16 = undefined;
     updateName = function updateName(arg0, arg1) {
@@ -160,7 +160,7 @@ class CreateChannel {
     closure_6 = canResult;
     canResult1 = closure_12.can(updateName.CONNECT, stateFromStores);
     closure_7 = canResult1;
-    currentUser = f66844.getCurrentUser();
+    currentUser = f66856.getCurrentUser();
     tmp9 = importDefault(dependencyMap[37])(null != currentUser, "CreateChannel: user cannot be undefined");
     tmp10 = importDefault(dependencyMap[38])(stateFromStores1);
     str = "";
@@ -193,7 +193,7 @@ class CreateChannel {
     closure_13 = first2;
     tmp23 = tmp21[1];
     tmp24 = tmp21[2];
-    f66844 = tmp24;
+    f66856 = tmp24;
     tmp25 = guildId(importAll.useState(false), 2);
     first3 = tmp25[0];
     closure_15 = first3;
@@ -327,17 +327,17 @@ class CreateChannel {
       intl3 = arg1(dependencyMap[26]).intl;
       obj4 = {};
       obj11 = arg1(dependencyMap[38]);
-      tmp42 = f66844;
+      tmp42 = f66856;
       tmp43 = closure_13;
       flag = true;
       tmp44 = obj11;
       tmp45 = stateFromStores1;
-      obj4.name = obj11.computeChannelName(stateFromStores1, f66844, closure_13, true);
+      obj4.name = obj11.computeChannelName(stateFromStores1, f66856, closure_13, true);
       stringResult1 = intl3.format(arg1(dependencyMap[26]).t.s2ZzZZ, obj4);
     }
     obj3.description = stringResult1;
     tmp48 = jsx;
-    obj5 = { 0: null, 9223372036854775807: null };
+    obj5 = { "Null": null, "Null": null };
     obj5.value = first;
     obj5.onChange = function onChange(arg0) {
       if (first !== arg0) {
@@ -768,8 +768,8 @@ obj = {};
 obj = { backgroundColor: importDefault(dependencyMap[14]).colors.BACKGROUND_BASE_LOW, flex: 1 };
 obj.addMembersContainer = obj;
 obj.errorMessage = { marginBottom: 0 };
-obj.flexRow = { -9223372036854775808: true, filter: true };
-obj.horizontalContainer = { "Bool(false)": "<string:1783693314>", "Bool(false)": "<string:618889>" };
+obj.flexRow = {};
+obj.horizontalContainer = {};
 let closure_24 = obj.createStyles(obj);
 const obj1 = {};
 const tmp5 = arg1(dependencyMap[12]);

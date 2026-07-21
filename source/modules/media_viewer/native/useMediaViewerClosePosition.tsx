@@ -1,10 +1,10 @@
-// Module ID: 12131
-// Function ID: 93487
+// Module ID: 12138
+// Function ID: 93510
 // Name: computeClosePosition
 // Dependencies: []
 // Exports: default
 
-// Module 12131 (computeClosePosition)
+// Module 12138 (computeClosePosition)
 function computeClosePosition(arg0, height) {
   if (null != arg2) {
     let obj = importDefault(dependencyMap[3])(arg0, height, arg2);

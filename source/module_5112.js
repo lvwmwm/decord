@@ -1,7 +1,7 @@
 // Module ID: 5112
-// Function ID: 43470
+// Function ID: 43508
 // Dependencies: []
 
 // Module 5112
-
-export default importDefault(dependencyMap[0]);
+arg5.DEFAULT_STACK_BEHAVIOR = "switch";
+arg5.DEFAULT_ENABLE_DISMISS_ON_CLOSE = true;

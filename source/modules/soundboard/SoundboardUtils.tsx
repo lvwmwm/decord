@@ -1,10 +1,10 @@
-// Module ID: 5732
-// Function ID: 49250
+// Module ID: 5734
+// Function ID: 49293
 // Name: hasPermissionToPlaySound
 // Dependencies: []
 // Exports: getAmplitudinalSoundboardVolume, maybePlayCustomJoinSound, playSound, removeCustomJoinSound, trackCustomCallSoundExternallyDeleted, trackSoundFavorited, updateCustomJoinSound, useSoundBoardDismissContentTypes
 
-// Module 5732 (hasPermissionToPlaySound)
+// Module 5734 (hasPermissionToPlaySound)
 function hasPermissionToPlaySound(guildId, guild_id) {
   guild_id = undefined;
   if (null != guild_id) {

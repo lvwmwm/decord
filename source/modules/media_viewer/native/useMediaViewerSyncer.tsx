@@ -1,10 +1,10 @@
-// Module ID: 8282
-// Function ID: 65383
+// Module ID: 8286
+// Function ID: 65395
 // Name: useMediaViewerSyncer
 // Dependencies: []
 // Exports: useMediaViewerSyncer
 
-// Module 8282 (useMediaViewerSyncer)
+// Module 8286 (useMediaViewerSyncer)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 ({ THUMBNAIL_MARGIN: closure_5, THUMBNAIL_HEIGHT: closure_6, THUMBNAIL_MAX_WIDTH: closure_7, THUMBNAIL_MIN_WIDTH: closure_8, THUMBNAIL_WIDTH_MARGIN: closure_9 } = arg1(dependencyMap[2]));

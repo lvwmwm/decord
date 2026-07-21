@@ -1,15 +1,13 @@
-// Module ID: 14550
-// Function ID: 109677
+// Module ID: 14557
+// Function ID: 109699
 // Name: StringSelectActionComponent
-// Dependencies: [0, 0, 0, 0, 0, 0, 0, 4294967295, 0, 0, 0]
+// Dependencies: []
 // Exports: default
 
-// Module 14550 (StringSelectActionComponent)
-import closure_3 from "result";
-import { jsx } from "result";
-import result from "result";
-
-result = result.fileFinishedImporting("modules/interaction_components/native/actions/StringSelectActionComponent.tsx");
+// Module 14557 (StringSelectActionComponent)
+let closure_3 = importAll(dependencyMap[0]);
+const jsx = arg1(dependencyMap[1]).jsx;
+const result = arg1(dependencyMap[10]).fileFinishedImporting("modules/interaction_components/native/actions/StringSelectActionComponent.tsx");
 
 export default function StringSelectActionComponent(type) {
   const arg1 = type;

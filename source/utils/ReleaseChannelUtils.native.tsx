@@ -1,9 +1,9 @@
-// Module ID: 6826
-// Function ID: 53929
+// Module ID: 6832
+// Function ID: 53975
 // Name: isStable
 // Dependencies: []
 
-// Module 6826 (isStable)
+// Module 6832 (isStable)
 const ReleaseChannel = importAll(dependencyMap[0]).getConstants().ReleaseChannel;
 const importAllResult = importAll(dependencyMap[0]);
 let isAndroidResult = arg1(dependencyMap[1]).isAndroid();

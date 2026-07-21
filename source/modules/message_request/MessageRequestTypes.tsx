@@ -1,9 +1,9 @@
-// Module ID: 10124
-// Function ID: 78391
+// Module ID: 10130
+// Function ID: 78409
 // Name: MessageRequestConsentStatusTypes
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 10124 (MessageRequestConsentStatusTypes)
+// Module 10130 (MessageRequestConsentStatusTypes)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("modules/message_request/MessageRequestTypes.tsx");
 

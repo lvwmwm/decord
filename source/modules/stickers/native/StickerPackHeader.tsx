@@ -1,8 +1,8 @@
-// Module ID: 9596
-// Function ID: 74794
+// Module ID: 9601
+// Function ID: 74811
 // Dependencies: []
 
-// Module 9596
+// Module 9601
 const View = arg1(dependencyMap[1]).View;
 const tmp2 = arg1(dependencyMap[2]);
 const PADDING_VERTICAL = tmp2.PADDING_VERTICAL;
@@ -14,16 +14,16 @@ let obj = {};
 obj = { paddingTop: PADDING_VERTICAL, paddingHorizontal: tmp2.PADDING_HORIZONTAL, height: 36 + result, justifyContent: "center", overflow: "hidden", backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_SURFACE_HIGH };
 obj.section = obj;
 obj.label = { flex: -1 };
-obj.header = { "Bool(true)": null, "Bool(true)": null, "Bool(true)": null };
+obj.header = { padding: "Next", paddingBottom: null, flexDirection: null };
 obj.bannerContainer = {};
 obj.banner = { height: "100%" };
-obj.headline = { "Bool(false)": "6d493c91631ba30b8d8c55fe48d43780", "Bool(false)": "CheckmarkLargeBoldIcon", "Bool(false)": "png", "Bool(false)": "absolute" };
+obj.headline = {};
 obj1 = { borderRadius: importDefault(dependencyMap[5]).radii.sm, backgroundColor: importDefault(dependencyMap[5]).colors.BORDER_SUBTLE };
 obj.iconContainer = obj1;
 const tmp3 = arg1(dependencyMap[3]);
 obj.icon = { color: importDefault(dependencyMap[5]).colors.INTERACTIVE_TEXT_DEFAULT };
-obj.animatedIcon = { <string:223543300>: null, <string:1762021126>: null };
-obj.premiumIcon = {};
+obj.animatedIcon = {};
+obj.premiumIcon = { display: null, position: null };
 let closure_7 = obj1.createStyles(obj);
 const obj2 = { color: importDefault(dependencyMap[5]).colors.INTERACTIVE_TEXT_DEFAULT };
 const memoResult = importAllResult.memo((withDescription) => {
@@ -43,7 +43,8 @@ const memoResult = importAllResult.memo((withDescription) => {
   let obj = {};
   obj = { style: tmp.header };
   obj = { style: tmp.headline };
-  const items = [callback(arg1(dependencyMap[6]).Text, { style: tmp.label, children: stickerPack.name }), , ];
+  const obj1 = { backgroundColor: 46416383, alignItems: 74514433, flexDirection: 16777217, borderRadius: 369, style: tmp.label, children: stickerPack.name };
+  const items = [callback(arg1(dependencyMap[6]).Text, obj1), , ];
   let obj4 = arg1(dependencyMap[7]);
   let result = obj4.isStickerPackAnimated(stickerPack);
   if (result) {
@@ -68,7 +69,7 @@ const memoResult = importAllResult.memo((withDescription) => {
     flag = callback(arg1(dependencyMap[6]).Text, obj6);
   }
   items1[1] = flag;
-  const obj7 = { CHANNEL_HIGHLIGHT: false, guild_template_description: false, borderWidth: false };
+  const obj7 = {};
   const intl = arg1(dependencyMap[11]).intl;
   obj7.children = intl.format(arg1(dependencyMap[11]).t.0S3JpO, { numStickers: stickerPack.stickers.length });
   items1[2] = callback(arg1(dependencyMap[6]).Text, obj7);

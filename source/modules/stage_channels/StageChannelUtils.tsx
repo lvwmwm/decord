@@ -1,10 +1,10 @@
-// Module ID: 7474
-// Function ID: 60014
+// Module ID: 7478
+// Function ID: 60026
 // Name: fillChunk
 // Dependencies: []
 // Exports: fillChunk, getParticipantNamesText, getRemoveModeratorTooltipHint, getStageChannelMetadata, summarizeUsernamesParticipating, summarizeUsernamesParticipatingWithSpeakerNickname
 
-// Module 7474 (fillChunk)
+// Module 7478 (fillChunk)
 let closure_4 = importDefault(dependencyMap[0]);
 let closure_5 = importDefault(dependencyMap[1]);
 let closure_6 = arg1(dependencyMap[2]).RequestToSpeakPermissionStates;

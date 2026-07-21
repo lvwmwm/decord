@@ -1,9 +1,9 @@
-// Module ID: 8502
-// Function ID: 67856
+// Module ID: 8506
+// Function ID: 67868
 // Name: calculateStrokeWidth
 // Dependencies: []
 
-// Module 8502 (calculateStrokeWidth)
+// Module 8506 (calculateStrokeWidth)
 function calculateStrokeWidth(arg0, arg1) {
   return arg0 + 0.04 * arg1;
 }
@@ -23,7 +23,7 @@ let closure_12 = arg1(dependencyMap[5]).createStyles((color) => {
   const tmp6 = calculateStrokeWidth(closure_11[closure_0(undefined, closure_2[4]).DisplayNameEffect.POP], arg1);
   const result1 = Math.floor(tmp5 / 2) / value;
   let obj = {};
-  obj = { color: importDefault(dependencyMap[6]).colors.WHITE, textShadowColor: color, textShadowRadius: sum, textShadowOffset: { aze: false, azj: true } };
+  obj = { color: importDefault(dependencyMap[6]).colors.WHITE, textShadowColor: color, textShadowRadius: sum, textShadowOffset: { bhk: -536870861, bic: -299892737 } };
   let obj2 = arg1(dependencyMap[7]);
   if (obj2.isIOS()) {
     obj = {};
@@ -114,7 +114,7 @@ const memoResult = importAllResult.memo((userName) => {
   if (ignoreDisabledStylesSetting === undefined) {
     ignoreDisabledStylesSetting = false;
   }
-  let obj = { "Null": 1091658877, "Null": 151597, "Null": 6258, paddingHorizontal: 6144, backgroundColor: -180289280, marginTop: 1375732285, position: 1685947892 };
+  let obj = { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, paddingHorizontal: null };
   Object.setPrototypeOf(null);
   const merged = Object.assign(userName, obj);
   let importDefault;

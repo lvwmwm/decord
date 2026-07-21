@@ -1,10 +1,10 @@
-// Module ID: 12452
-// Function ID: 95153
+// Module ID: 12459
+// Function ID: 95176
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 // Exports: getCompressionHandler
 
-// Module 12452 (_createForOfIteratorHelperLoose)
+// Module 12459 (_createForOfIteratorHelperLoose)
 function _createForOfIteratorHelperLoose(@@iterator) {
   let arg1 = Symbol_iterator;
   @@iterator = "undefined" !== typeof Symbol;

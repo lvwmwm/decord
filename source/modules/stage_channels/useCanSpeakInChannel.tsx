@@ -1,10 +1,10 @@
-// Module ID: 10350
-// Function ID: 79903
+// Module ID: 10356
+// Function ID: 79926
 // Name: useCanCurrentUserSpeakInChannel
 // Dependencies: []
 // Exports: default
 
-// Module 10350 (useCanCurrentUserSpeakInChannel)
+// Module 10356 (useCanCurrentUserSpeakInChannel)
 let closure_3 = importDefault(dependencyMap[0]);
 const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/stage_channels/useCanSpeakInChannel.tsx");
 

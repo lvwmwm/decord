@@ -1,10 +1,20 @@
-// Module ID: 4343
-// Function ID: 38498
+// Module ID: 4347
+// Function ID: 38546
 // Name: createMinimalMessageRecord
-// Dependencies: []
+// Dependencies: [31, 1917, 1849, 4358, 566, 4360, 2, 31, 4120, 566, 4359, 2, 1348, 1917, 1838, 2, 5, 57]
 // Exports: canEditMessageWithStickers, hasEphemeralAppearance, updateMessageRecord, updateServerMessage
 
-// Module 4343 (createMinimalMessageRecord)
+// Module 4347 (createMinimalMessageRecord)
+import module_31 from "module_31";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_6 from "_isNativeReflectConstruct";
+import importDefaultResult from "_isNativeReflectConstruct";
+import useDisplayNameStylesEnabled from "useDisplayNameStylesEnabled";
+import initialize from "initialize";
+import context from "context";
+import result2 from "result2";
+import _slicedToArray from "_slicedToArray";
+
 function createMinimalMessageRecord(timestamp) {
   let tmp = closure_5;
   const obj = {};
@@ -87,7 +97,7 @@ function createMessageRecord(message, message) {
   }
   let fromServer = null;
   if (null != message.interaction) {
-    fromServer = closure_3.createFromServer(message.interaction);
+    fromServer = module_31.createFromServer(message.interaction);
   }
   if (message.type === constants2.THREAD_STARTER_MESSAGE) {
     const referenced_message = message.referenced_message;
@@ -127,20 +137,20 @@ function createMessageRecord(message, message) {
   const merged2 = Object.assign(obj1.toJS());
   obj["author"] = user;
   obj["webhookId"] = message.webhook_id;
-  let isBlockedForMessageResult = closure_9.isBlockedForMessage(message);
+  let isBlockedForMessageResult = initialize.isBlockedForMessage(message);
   if (!isBlockedForMessageResult) {
     let isBlockedResult = null != tmp13;
     if (isBlockedResult) {
-      isBlockedResult = closure_9.isBlocked(tmp13);
+      isBlockedResult = initialize.isBlocked(tmp13);
     }
     isBlockedForMessageResult = isBlockedResult;
   }
   obj["blocked"] = isBlockedForMessageResult;
-  let isIgnoredForMessageResult = closure_9.isIgnoredForMessage(message);
+  let isIgnoredForMessageResult = initialize.isIgnoredForMessage(message);
   if (!isIgnoredForMessageResult) {
     let isIgnoredResult = null != tmp13;
     if (isIgnoredResult) {
-      isIgnoredResult = closure_9.isIgnored(tmp13);
+      isIgnoredResult = initialize.isIgnored(tmp13);
     }
     isIgnoredForMessageResult = isIgnoredResult;
   }
@@ -314,18 +324,10 @@ function transformMessageSnapshots(message_snapshots) {
   }
   return items;
 }
-let closure_3 = importDefault(dependencyMap[0]);
-({ MessageSnapshotRecord: closure_4, MinimalMessageRecord: closure_5 } = arg1(dependencyMap[1]));
-let closure_6 = importDefault(dependencyMap[1]);
-let importDefaultResult = importDefault(dependencyMap[2]);
-let closure_8 = importDefault(dependencyMap[3]);
-let closure_9 = importDefault(dependencyMap[4]);
-let closure_10 = importDefault(dependencyMap[5]);
-const tmp2 = arg1(dependencyMap[1]);
-({ MessageFlags: closure_11, MessageTypes: closure_12, MessageTypesSets: closure_13 } = arg1(dependencyMap[6]));
-importDefaultResult = new importDefaultResult({ -780562643: false, 1490766780: false });
-const tmp4 = arg1(dependencyMap[6]);
-const result = arg1(dependencyMap[17]).fileFinishedImporting("modules/messages/MessageRecordUtils.tsx");
+({ MessageSnapshotRecord: closure_4, MinimalMessageRecord: closure_5 } = _isNativeReflectConstruct);
+({ MessageFlags: closure_11, MessageTypes: closure_12, MessageTypesSets: closure_13 } = result2);
+importDefaultResult = new importDefaultResult({});
+const result = _slicedToArray.fileFinishedImporting("modules/messages/MessageRecordUtils.tsx");
 
 export { createMessageRecord };
 export const updateServerMessage = function updateServerMessage(message, message2) {

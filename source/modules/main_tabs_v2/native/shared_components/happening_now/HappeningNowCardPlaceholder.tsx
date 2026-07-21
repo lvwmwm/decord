@@ -1,23 +1,23 @@
-// Module ID: 14798
-// Function ID: 111574
+// Module ID: 14805
+// Function ID: 111598
 // Name: HappeningNowCardPlaceholder
 // Dependencies: []
 // Exports: HappeningNowCardPlaceholder
 
-// Module 14798 (HappeningNowCardPlaceholder)
+// Module 14805 (HappeningNowCardPlaceholder)
 let closure_3 = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 const HAPPENING_NOW_CONTENT_HEIGHT = arg1(dependencyMap[2]).HAPPENING_NOW_CONTENT_HEIGHT;
 ({ jsx: closure_5, jsxs: closure_6 } = arg1(dependencyMap[3]));
 let obj = arg1(dependencyMap[4]);
-obj = { placeholderContainer: { -9223372036854775808: true, filter: true } };
+obj = { placeholderContainer: {} };
 obj = { height: HAPPENING_NOW_CONTENT_HEIGHT, width: HAPPENING_NOW_CONTENT_HEIGHT, borderRadius: importDefault(dependencyMap[5]).radii.sm, marginRight: 12, backgroundColor: importDefault(dependencyMap[5]).colors.BORDER_SUBTLE };
 obj.placeholderIcon = obj;
 obj.placeholderContent = { flex: 1 };
 const tmp2 = arg1(dependencyMap[3]);
 obj.placeholderText = { backgroundColor: importDefault(dependencyMap[5]).colors.BORDER_SUBTLE };
 obj.placeholderTextTop = { width: "75%" };
-obj.placeholderTextBottom = { 0: 1091633156, 1777606122355621: 99963 };
+obj.placeholderTextBottom = { value: 1091633156, fill: 112740 };
 let closure_7 = obj.createStyles(obj);
 let closure_8 = { code: "function HappeningNowCardPlaceholderTsx1(){const{opacity,withRepeat,withTiming,endOpacity,duration,Easing}=this.__closure;opacity.set(withRepeat(withTiming(endOpacity,{duration:duration,easing:Easing.ease}),-1,true));}" };
 let closure_9 = { code: "function HappeningNowCardPlaceholderTsx2(){const{opacity}=this.__closure;return{opacity:opacity.get()};}" };
@@ -58,7 +58,7 @@ export const HappeningNowCardPlaceholder = function HappeningNowCardPlaceholder(
     fn.__workletHash = 17547739379389;
     fn.__initData = closure_9;
     return duration(sharedValue[6]).useAnimatedStyle(fn);
-  }({ "Bool(false)": "el", "Bool(false)": "in", "Bool(false)": "isArray" });
+  }({});
   const tmp3 = callback;
   if (panelVariant.fullWidth) {
     str = "full";

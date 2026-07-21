@@ -1,23 +1,19 @@
 // Module ID: 15787
-// Function ID: 120815
+// Function ID: 120823
 // Dependencies: []
 
 // Module 15787
 globalThis.IntlMessageFormat.__addLocaleData({
-  locale: "fi",
+  locale: "bg",
   pluralRuleFunction(arg0, arg1) {
-    String(arg0);
     let str = "other";
+    let str2 = "other";
     if (!arg1) {
-      let str2 = "other";
       if (1 == arg0) {
-        str2 = "other";
-        if (tmp2) {
-          str2 = "one";
-        }
+        str = "one";
       }
-      str = str2;
+      str2 = str;
     }
-    return str;
+    return str2;
   }
 });

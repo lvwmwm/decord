@@ -1,10 +1,10 @@
-// Module ID: 14604
-// Function ID: 110156
+// Module ID: 14611
+// Function ID: 110178
 // Name: AccountStatusIcon
 // Dependencies: []
 // Exports: default
 
-// Module 14604 (AccountStatusIcon)
+// Module 14611 (AccountStatusIcon)
 class AccountStatusIcon {
   constructor(arg0) {
     user = global.user;
@@ -53,7 +53,7 @@ const MultiAccountTokenStatus = arg1(dependencyMap[5]).MultiAccountTokenStatus;
 const tmp3 = arg1(dependencyMap[1]);
 ({ jsx: closure_9, jsxs: closure_10 } = arg1(dependencyMap[6]));
 const tmp4 = arg1(dependencyMap[6]);
-let closure_11 = arg1(dependencyMap[7]).createStyles({ accountListTag: { guild: null, exports: 0 }, tagContainer: {}, accountSwitcherListItem: {}, username: { flexShrink: 1 }, accountInfo: {} });
+let closure_11 = arg1(dependencyMap[7]).createStyles({ accountListTag: { shrink: null, disabled: 0 }, tagContainer: {}, accountSwitcherListItem: {}, username: { flexShrink: 1 }, accountInfo: {} });
 const obj = arg1(dependencyMap[7]);
 const result = arg1(dependencyMap[18]).fileFinishedImporting("modules/multi_account/native/AccountSwitcherListItem.tsx");
 
@@ -85,7 +85,7 @@ export default function AccountSwitcherListItem(arg0) {
   let obj2 = new closure_5(user);
   if (user.id === id) {
     if (showActiveAccountLabel) {
-      obj = { INTEGRATION_CREATE: "png", ConstraintReasonCode: "absolute" };
+      obj = {};
       const intl = arg1(dependencyMap[13]).intl;
       obj.children = intl.string(arg1(dependencyMap[13]).t.seV8yt);
       let tmp6 = callback(arg1(dependencyMap[12]).Text, obj);
@@ -116,7 +116,7 @@ export default function AccountSwitcherListItem(arg0) {
     const items3 = [callback(arg1(dependencyMap[16]).Avatar, obj3), ];
     obj4 = { style: tmp.accountListTag };
     const obj5 = { style: tmp.tagContainer };
-    const obj6 = { fullscreen: "HHZmDn", headerShown: "OPTION_1", mostRecentQuery: "isArray", fetching: "isArrayBuffer", style: tmp.username };
+    const obj6 = { style: tmp.username };
     const obj7 = { mode: "username" };
     let str2 = "always";
     if (stateFromStores) {
@@ -149,7 +149,7 @@ export default function AccountSwitcherListItem(arg0) {
   }
   tmp6 = null;
   if (user.tokenStatus === MultiAccountTokenStatus.INVALID) {
-    const obj10 = { INTEGRATION_CREATE: "FOCUS_CHANNEL_TEXT_AREA", ConstraintReasonCode: "ka" };
+    const obj10 = {};
     const intl3 = arg1(dependencyMap[13]).intl;
     obj10.children = intl3.string(arg1(dependencyMap[13]).t.tYX2ps);
     tmp6 = callback(arg1(dependencyMap[12]).Text, obj10);

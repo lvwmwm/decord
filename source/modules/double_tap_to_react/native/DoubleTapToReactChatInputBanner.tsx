@@ -1,10 +1,10 @@
-// Module ID: 11371
-// Function ID: 88442
+// Module ID: 11378
+// Function ID: 88466
 // Name: DoubleTapToReactChatInputBannerInner
 // Dependencies: []
 // Exports: DoubleTapToReactChatInputBanner
 
-// Module 11371 (DoubleTapToReactChatInputBannerInner)
+// Module 11378 (DoubleTapToReactChatInputBannerInner)
 function DoubleTapToReactChatInputBannerInner(emoji) {
   emoji = emoji.emoji;
   const tmp = callback4();
@@ -38,7 +38,7 @@ function DoubleTapToReactChatInputBannerInner(emoji) {
   const items2 = [callback3(View, obj), , ];
   const obj3 = { style: tmp.text };
   obj4 = { style: tmp.header };
-  const obj5 = { INTEGRATION_CREATE: 131072.00119209292, ConstraintReasonCode: -293983030121430100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 };
+  const obj5 = {};
   const intl = arg1(dependencyMap[14]).intl;
   obj5.children = intl.string(arg1(dependencyMap[14]).t.6RUX7d);
   const items3 = [callback2(arg1(dependencyMap[13]).Text, obj5), callback2(arg1(dependencyMap[15]).NewBadge, {})];
@@ -49,23 +49,21 @@ function DoubleTapToReactChatInputBannerInner(emoji) {
   obj6.children = intl2.format(arg1(dependencyMap[14]).t.5/l2rR, {
     emojiName: emoji.name,
     emojiNameHook(children) {
-      const obj = { INTEGRATION_CREATE: "png", ConstraintReasonCode: true, children };
-      return callback2(callback(closure_2[13]).Text, obj, arg1);
+      return callback2(callback(closure_2[13]).Text, { children }, arg1);
     },
     tapHereHook(children) {
-      const obj = { INTEGRATION_CREATE: 24, ConstraintReasonCode: 24, children };
-      return callback2(callback(closure_2[13]).Text, obj, arg1);
+      return callback2(callback(closure_2[13]).Text, { children }, arg1);
     }
   });
   items4[1] = callback2(arg1(dependencyMap[13]).Text, obj6);
   obj3.children = items4;
   items2[1] = callback3(View, obj3);
-  const obj8 = { "Null": 8, "Null": "absolute" };
+  const obj8 = { "Bool(true)": 8, "Bool(true)": "absolute" };
   const intl3 = arg1(dependencyMap[14]).intl;
   obj8.accessibilityLabel = intl3.string(arg1(dependencyMap[14]).t.cpT0Cq);
   obj8.onPress = emoji.handleDismissBanner;
   obj8.style = tmp.closeButton;
-  obj8.children = callback2(arg1(dependencyMap[17]).XSmallIcon, { flexDirection: 43429566791737600000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, alignItems: 13340564516523250000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 });
+  obj8.children = callback2(arg1(dependencyMap[17]).XSmallIcon, {});
   items2[2] = callback2(arg1(dependencyMap[16]).PressableOpacity, obj8);
   obj.children = items2;
   return callback3(View, obj);
@@ -180,16 +178,16 @@ let obj = arg1(dependencyMap[7]);
 obj = {};
 obj = { borderColor: importDefault(dependencyMap[8]).colors.BORDER_SUBTLE, backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_SURFACE_HIGH };
 obj.animatedContainer = obj;
-obj.measurement = { 9223372036854775807: "<string:1137377281>", 0: "<string:1498480641>" };
-obj.container = { 0: false, 0: false, 9223372036854775807: false, 35395124084360812: false };
+obj.measurement = { -1350914179: 1996489027, -1351079902: 1358954819 };
+obj.container = { "Null": "1 s\u0103pt\u0103m\u00E2n\u0103", "Null": "{{count}} s\u0103pt\u0103m\u00E2ni", "Null": "circa 1 lun\u0103", "Null": "circa {{count}} luni" };
 const tmp2 = arg1(dependencyMap[6]);
 obj.highlight = { backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_SURFACE_HIGH };
-obj.text = { textAlign: null, marginTop: 0 };
-const obj2 = { <string:287701542>: "<string:3202613249>", <string:673606438>: "<string:2102460418>", <string:3728969510>: "<string:2990608740>", <string:3678617129>: "<string:1912602892>", <string:1181248291>: "resolve", <string:1947966756>: "resolve", <string:3478224221>: "<string:1287340289>", <string:3826784095>: "<string:2287075330>", <string:945890148>: "<string:23362956>", borderColor: importDefault(dependencyMap[8]).colors.BORDER_STRONG, backgroundColor: importDefault(dependencyMap[8]).colors.CARD_BACKGROUND_DEFAULT, borderRadius: importDefault(dependencyMap[8]).radii.md };
-obj.emojiContainer = obj2;
-obj.emoji = { aze: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000240315037966, azj: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004778309841467123 };
-const obj3 = {};
+obj.text = { "Bool(false)": null, "Bool(false)": 0 };
 const obj1 = { backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_SURFACE_HIGH };
+obj.emojiContainer = { borderColor: importDefault(dependencyMap[8]).colors.BORDER_STRONG, backgroundColor: importDefault(dependencyMap[8]).colors.CARD_BACKGROUND_DEFAULT, borderRadius: importDefault(dependencyMap[8]).radii.md };
+obj.emoji = { bhk: null, bic: 6 };
+const obj3 = {};
+const obj2 = { borderColor: importDefault(dependencyMap[8]).colors.BORDER_STRONG, backgroundColor: importDefault(dependencyMap[8]).colors.CARD_BACKGROUND_DEFAULT, borderRadius: importDefault(dependencyMap[8]).radii.md };
 let num = 22;
 if (obj7.isIOS()) {
   num = 28;

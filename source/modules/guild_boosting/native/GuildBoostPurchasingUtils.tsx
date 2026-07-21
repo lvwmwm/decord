@@ -1,10 +1,10 @@
-// Module ID: 6630
-// Function ID: 50901
+// Module ID: 6636
+// Function ID: 50950
 // Name: _launchGuildBoostFlowOrAlert
 // Dependencies: []
 // Exports: launchGuildBoostFlowOrAlert
 
-// Module 6630 (_launchGuildBoostFlowOrAlert)
+// Module 6636 (_launchGuildBoostFlowOrAlert)
 async function _launchGuildBoostFlowOrAlert(arg0, arg1) {
   const fn = function*(source) {
     let analyticsLocations;
@@ -32,8 +32,8 @@ async function _launchGuildBoostFlowOrAlert(arg0, arg1) {
         const obj7 = callback(closure_2[6]);
       } else {
         obj1 = {
-          default: true,
-          flexDirection: true,
+          1553034850: null,
+          -954564753: null,
           predicate(premiumTier) {
                 let num = 0;
                 if (premiumTier.premiumTier === TIER_2.TIER_2) {

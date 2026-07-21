@@ -1,10 +1,10 @@
-// Module ID: 10146
-// Function ID: 78462
+// Module ID: 10152
+// Function ID: 78480
 // Name: getNavigationModalPresentation
 // Dependencies: []
 // Exports: default
 
-// Module 10146 (getNavigationModalPresentation)
+// Module 10152 (getNavigationModalPresentation)
 const obj = {};
 const _module = require(dependencyMap[0]);
 if (_module.isAndroid()) {

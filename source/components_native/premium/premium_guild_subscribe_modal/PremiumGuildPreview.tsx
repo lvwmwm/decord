@@ -1,10 +1,10 @@
-// Module ID: 12415
-// Function ID: 94854
+// Module ID: 12422
+// Function ID: 94877
 // Name: getThemedImageSource
 // Dependencies: []
 // Exports: default
 
-// Module 12415 (getThemedImageSource)
+// Module 12422 (getThemedImageSource)
 function getThemedImageSource(arg0, arg1, arg2) {
   let tmp = arg2;
   if (obj.isThemeDark(arg0)) {
@@ -42,15 +42,15 @@ const tmp3 = arg1(dependencyMap[1]);
 ({ jsx: closure_7, jsxs: closure_8 } = arg1(dependencyMap[4]));
 let obj = arg1(dependencyMap[5]);
 obj = {};
-obj = { friends: true, staff: false, provisional: "absolute", borderRadius: importDefault(dependencyMap[6]).radii.xs, backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_SURFACE_HIGH };
+obj = { borderRadius: importDefault(dependencyMap[6]).radii.xs, backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_SURFACE_HIGH };
 obj.guild = obj;
 obj.guildInfo = { marginLeft: 16 };
-const obj1 = { "Null": "flex-end", "Null": "center", color: arg1(dependencyMap[7]).DARK_WHITE_500_LIGHT_BLACK_500 };
+const obj1 = { PX_16: "text", ix: "Array", color: arg1(dependencyMap[7]).DARK_WHITE_500_LIGHT_BLACK_500 };
 obj.guildName = obj1;
-const obj2 = { <string:1372348697>: "/assets/images/native/premium/guild_boosting", <string:1449319915>: 203, <string:3791147946>: 120, <string:3786531248>: null, <string:1453390691>: "4cb64ea1ce49f760ec2c14cca07c9930", <string:1629838161>: "guild_subscription_removal_dark", backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_BASE_LOW };
+const obj2 = { 1661207633: "/assets/images/native/premium/guild_boosting", 1365420630: 203, 122858649: 120, 1636102856: null, -570535476: "4cb64ea1ce49f760ec2c14cca07c9930", 1403672162: "guild_subscription_removal_dark", backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_BASE_LOW };
 obj.tierPill = obj2;
-obj.tierPillImage = { aze: "<string:16777479>", azj: "<string:36295491>" };
-const obj3 = { "Bool(true)": "key", "Bool(true)": "Text", "Bool(true)": "LIGHT", color: arg1(dependencyMap[7]).DARK_WHITE_500_LIGHT_PRIMARY_660 };
+obj.tierPillImage = {};
+const obj3 = { <string:1744257435>: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000013354893372138098, <string:3194159108>: 9126805520, <string:1751359739>: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000377473343344568, color: arg1(dependencyMap[7]).DARK_WHITE_500_LIGHT_PRIMARY_660 };
 obj.tierPillText = obj3;
 let closure_9 = obj.createStyles(obj);
 const tmp4 = arg1(dependencyMap[4]);

@@ -1,10 +1,10 @@
-// Module ID: 8508
-// Function ID: 67876
+// Module ID: 8512
+// Function ID: 67888
 // Name: useDisplayNameStylesEffectDefaultColors
 // Dependencies: []
 // Exports: default
 
-// Module 8508 (useDisplayNameStylesEffectDefaultColors)
+// Module 8512 (useDisplayNameStylesEffectDefaultColors)
 let closure_3 = importAll(dependencyMap[0]);
 ({ DISPLAY_NAME_STYLES_GRADIENT_PRESETS: closure_4, DISPLAY_NAME_STYLES_GUMMY_PRESETS: closure_5, DISPLAY_NAME_STYLES_PRISM_PRESETS: closure_6 } = arg1(dependencyMap[1]));
 const tmp2 = arg1(dependencyMap[1]);
@@ -31,8 +31,8 @@ export default function useDisplayNameStylesEffectDefaultColors() {
     HermesBuiltin.arraySpread(closure_6[0], 0);
     obj[hex2intResult(closure_2[5]).DisplayNameEffect.PRISM] = items4;
     obj[hex2intResult(closure_2[5]).DisplayNameEffect.TOON] = [];
-    obj[hex2intResult(closure_2[5]).DisplayNameEffect.NEON] = [null];
-    obj[hex2intResult(closure_2[5]).DisplayNameEffect.POP] = ["<string:2923823106>"];
+    obj[hex2intResult(closure_2[5]).DisplayNameEffect.NEON] = [false];
+    obj[hex2intResult(closure_2[5]).DisplayNameEffect.POP] = ["<string:1400569858>"];
     const items5 = [hex2intResult];
     obj[hex2intResult(closure_2[5]).DisplayNameEffect.TEST_1] = items5;
     const items6 = [hex2intResult];

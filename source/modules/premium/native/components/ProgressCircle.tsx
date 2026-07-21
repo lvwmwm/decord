@@ -1,9 +1,9 @@
-// Module ID: 11607
-// Function ID: 90161
+// Module ID: 11614
+// Function ID: 90184
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
-// Module 11607 (_isNativeReflectConstruct)
+// Module 11614 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -22,7 +22,7 @@ const View = arg1(dependencyMap[6]).View;
 const importAllResult = importAll(dependencyMap[5]);
 ({ jsx: closure_9, jsxs: closure_10 } = arg1(dependencyMap[7]));
 let obj = arg1(dependencyMap[8]);
-let closure_11 = obj.createLegacyClassComponentStyles({ progressCircle: {}, circle: { "Null": true, "Null": false, "Null": "" }, circleOverlay: { st: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007425797890170555, marginTop: 125761291718944880000000000, marginRight: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011750084940025737, borderColor: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002781342323652067 } });
+let closure_11 = obj.createLegacyClassComponentStyles({ progressCircle: {}, circle: { "Null": null, "Null": null, "Null": null }, circleOverlay: { useIsScreenIndexFrozenSharedValue: "<string:1166886285>", UNSAFE_isSingleUseGuildDismissibleContentDismissed: "<string:44579137>", onScreenshot: "<string:1379557632>", uniform: "<string:1166868933>" } });
 const tmp4 = (Component) => {
   class ProgressCircle {
     constructor() {
@@ -91,7 +91,7 @@ const tmp4 = (Component) => {
   return callback(ProgressCircle, items);
 }(importAllResult.Component);
 tmp4.contextType = arg1(dependencyMap[10]).ThemeContext;
-obj = { color: importDefault(dependencyMap[11]).unsafe_rawColors.GUILD_BOOSTING_PINK };
+obj = { "Bool(true)": true, "Bool(true)": "destructive", color: importDefault(dependencyMap[11]).unsafe_rawColors.GUILD_BOOSTING_PINK };
 tmp4.defaultProps = obj;
 const tmp3 = arg1(dependencyMap[7]);
 const result = arg1(dependencyMap[12]).fileFinishedImporting("modules/premium/native/components/ProgressCircle.tsx");

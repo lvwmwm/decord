@@ -1,10 +1,10 @@
-// Module ID: 9221
-// Function ID: 72122
+// Module ID: 9225
+// Function ID: 72134
 // Name: UserSettingsConfirmPasswordWrapped
 // Dependencies: []
 // Exports: UserSettingsConfirmPasswordWrapped
 
-// Module 9221 (UserSettingsConfirmPasswordWrapped)
+// Module 9225 (UserSettingsConfirmPasswordWrapped)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 const importAllResult = importAll(dependencyMap[2]);
@@ -17,9 +17,9 @@ let obj1 = arg1(dependencyMap[7]);
 let obj = {};
 obj = { backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_BASE_LOW };
 obj.background = obj;
-obj.container = {};
+obj.container = { flex: "<string:2236743682>", display: "<string:1941427526>" };
 obj.title = { textAlign: "center" };
-obj.prompt = {};
+obj.prompt = { action: null, messageReference: null, medium: null };
 obj.input = { marginTop: 24 };
 obj1 = { borderRadius: importDefault(dependencyMap[8]).radii.lg };
 obj.redesignInput = obj1;
@@ -71,7 +71,7 @@ const forwardRefResult = importAllResult.forwardRef((arg0, arg1) => {
   }, []);
   let tmp11Result = null;
   if (null != stateFromStores) {
-    obj = {};
+    obj = { "Bool(true)": true, "Bool(true)": true, "Bool(true)": true };
     const items1 = [tmp.background, style];
     obj.style = items1;
     let tmp13 = null;
@@ -80,7 +80,7 @@ const forwardRefResult = importAllResult.forwardRef((arg0, arg1) => {
     }
     const items2 = [tmp13, ];
     obj = { style: tmp.container };
-    const obj1 = { 0: 24, 9223372036854775807: 24, 0: null, -9223372036854775808: "aa9c26c29990ba7a6584e51ab5c56efa", style: tmp.title };
+    const obj1 = { 1501064855: 24, -1267889981: 24, -1145697943: null, -1266241916: "aa9c26c29990ba7a6584e51ab5c56efa", style: tmp.title };
     const intl = arg1(dependencyMap[14]).intl;
     obj1.children = intl.string(arg1(dependencyMap[14]).t.x+d9t3);
     const items3 = [callback2(arg1(dependencyMap[16]).Text, obj1), , , , ];
@@ -88,7 +88,7 @@ const forwardRefResult = importAllResult.forwardRef((arg0, arg1) => {
     const intl2 = arg1(dependencyMap[14]).intl;
     obj2.children = intl2.string(arg1(dependencyMap[14]).t.vaZmAx);
     items3[1] = callback2(arg1(dependencyMap[16]).Text, obj2);
-    const obj3 = { 1012242973: true, -1164930411: "/assets/.cache/intl/bW9kdWxlcy9jaGVja291dC9tZXNzYWdlcw==", -996722296: null, -1046654056: "050b067757351137956c6a52fd597e47", -1393845981: "da.messages.050b067757351137956c6a52fd597e47.compiled.messages", 379483475: "jsona" };
+    const obj3 = {};
     ({ input: obj7.style, redesignInput: obj7.textStyle } = tmp);
     const intl3 = arg1(dependencyMap[14]).intl;
     obj3.label = intl3.string(arg1(dependencyMap[14]).t.CIGa+7);
@@ -114,7 +114,7 @@ const forwardRefResult = importAllResult.forwardRef((arg0, arg1) => {
     }
     items3[3] = tmp25;
     const obj5 = { style: tmp.button };
-    const obj6 = { <string:1522289750>: null, <string:570601313>: null };
+    const obj6 = {};
     const intl4 = arg1(dependencyMap[14]).intl;
     obj6.text = intl4.string(arg1(dependencyMap[14]).t.i4jeWR);
     obj6.onPress = handleSubmit;

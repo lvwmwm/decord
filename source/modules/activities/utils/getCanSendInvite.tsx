@@ -1,10 +1,10 @@
-// Module ID: 12183
-// Function ID: 93674
+// Module ID: 12190
+// Function ID: 93697
 // Name: getCanSendInvite
 // Dependencies: []
 // Exports: getCanSendInvite
 
-// Module 12183 (getCanSendInvite)
+// Module 12190 (getCanSendInvite)
 const _module = require(dependencyMap[0]);
 ({ ActivityFlags: closure_3, ActivityActionTypes: closure_4 } = _module);
 const _module1 = require(dependencyMap[6]);

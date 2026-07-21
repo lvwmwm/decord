@@ -1,7 +1,7 @@
 // Module ID: 1017
 // Function ID: 11054
 // Name: addPageListener
-// Dependencies: [67895296]
+// Dependencies: []
 
 // Module 1017 (addPageListener)
 Object.defineProperty(arg5, Symbol.toStringTag, { value: "Module" });

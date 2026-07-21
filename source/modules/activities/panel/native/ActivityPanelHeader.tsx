@@ -1,9 +1,9 @@
-// Module ID: 15571
-// Function ID: 118842
+// Module ID: 15578
+// Function ID: 118866
 // Name: useBaseActivityPanelHeaderContent
 // Dependencies: []
 
-// Module 15571 (useBaseActivityPanelHeaderContent)
+// Module 15578 (useBaseActivityPanelHeaderContent)
 let StyleSheet;
 function useBaseActivityPanelHeaderContent(landscape) {
   let pipState;
@@ -182,8 +182,8 @@ obj["flexDirection"] = "row";
 obj["gap"] = 8;
 obj.panelHeader = obj;
 obj.panelLandscape = { flexDirection: "column-reverse" };
-obj.headerContainer = { "Null": null, "Null": null };
-obj1 = { "Bool(true)": null, "Bool(true)": null, "Bool(true)": null, "Bool(true)": null, "Bool(true)": null, "Bool(true)": null, "Bool(true)": null, backgroundColor: importDefault(dependencyMap[8]).colors.WHITE, borderRadius: importDefault(dependencyMap[8]).radii.sm };
+obj.headerContainer = {};
+obj1 = { 0: NaN, 0: -690217.4831619264, 0: -1045348327919778100000000000000000000000000, 9223372036854775807: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003217905910593675, -9223372036854775808: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000130375421427825, 9223372036854775807: 995289666394368900000000000000000000000000000000000000000000000000000000000000000000000, 0: 13549608912855019000000000000000000000000000000000000000000000000000000000000000, backgroundColor: importDefault(dependencyMap[8]).colors.WHITE, borderRadius: importDefault(dependencyMap[8]).radii.sm };
 obj.pullIndicator = obj1;
 let closure_14 = obj1.createStyles(obj);
 let closure_15 = { code: "function ActivityPanelHeaderTsx1(){const{runOnJS,setMode,ActivityPanelModes}=this.__closure;runOnJS(setMode)(ActivityPanelModes.PIP);}" };

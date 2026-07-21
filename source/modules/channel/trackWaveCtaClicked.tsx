@@ -1,10 +1,10 @@
-// Module ID: 11353
-// Function ID: 88305
+// Module ID: 11359
+// Function ID: 88328
 // Name: getDmHasMessageHistory
 // Dependencies: []
 // Exports: trackWaveCtaClicked
 
-// Module 11353 (getDmHasMessageHistory)
+// Module 11359 (getDmHasMessageHistory)
 function getDmHasMessageHistory(channelId) {
   const channel = channel.getChannel(channelId);
   let lastMessageId;

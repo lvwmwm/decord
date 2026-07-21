@@ -1,10 +1,10 @@
-// Module ID: 15581
-// Function ID: 118934
+// Module ID: 15588
+// Function ID: 118958
 // Name: contextMenuButton
 // Dependencies: []
 // Exports: default
 
-// Module 15581 (contextMenuButton)
+// Module 15588 (contextMenuButton)
 function contextMenuButton(arg0) {
   const obj = {};
   const merged = Object.assign(arg0);
@@ -34,7 +34,7 @@ function QuestProgressBottomSheet(quest) {
   }
   obj.applicationId = id;
   obj.size = 600;
-  obj.names = ["PREMIUM_STANDARD"];
+  obj.names = ["SENTRY_BAGGAGE_KEY_PREFIX"];
   const url = importDefault(dependencyMap[18])(obj).url;
   let obj4 = arg1(dependencyMap[19]);
   const questTaskDetails = obj4.useQuestTaskDetails(quest);
@@ -87,7 +87,7 @@ function QuestProgressBottomSheet(quest) {
   const callback3 = React.useCallback(() => {
     claim(closure_2[23]).hideActionSheet();
   }, []);
-  const obj3 = { -9223372036854775808: null, -9223372036854775808: null };
+  const obj3 = { position: null, width: null };
   obj4 = { style: tmp2.heroContainer };
   let tmp20 = null != url;
   if (tmp20) {
@@ -177,7 +177,7 @@ function QuestProgressBottomSheet(quest) {
   obj18.loading = isClaiming;
   obj18.grow = true;
   const items9 = [callback2(arg1(dependencyMap[36]).Button, obj18), ];
-  const obj19 = { "Bool(false)": null, "Bool(false)": true, "Bool(false)": "/assets/.cache/intl/bW9kdWxlcy9ndWlsZF9zZXR0aW5ncy9zZXJ2ZXJfbW9uZXRpemF0aW9uL3RhZ3Mvd2Vi", "Bool(false)": null, "Bool(false)": "8915080f4bfd7f0d822009e14ea151a4" };
+  const obj19 = { zIndex: null, mass: true, stiffness: "/assets/.cache/intl/bW9kdWxlcy9ndWlsZF9zZXR0aW5ncy9zZXJ2ZXJfbW9uZXRpemF0aW9uL2d1aWxkX3RoZW1lL3dlYg==", overshootClamping: null, position: "a5467c3fd60ffc822c73021559814d8b" };
   const intl4 = arg1(dependencyMap[14]).intl;
   obj19.text = intl4.string(arg1(dependencyMap[14]).t.cpT0Cq);
   obj19.onPress = callback3;
@@ -225,14 +225,15 @@ let closure_12 = arg1(dependencyMap[7]).createStyles((arg0) => {
   obj2["borderTopLeftRadius"] = importDefault(dependencyMap[8]).radii.lg;
   obj2["borderTopRightRadius"] = importDefault(dependencyMap[8]).radii.lg;
   obj.heroGradient = obj2;
-  const obj3 = {};
+  const obj3 = { justifyContent: null, alignItems: null, backgroundColor: null, alignSelf: null, width: null };
   let num4 = -52;
   if (arg0) {
     num4 = importDefault(dependencyMap[8]).space.PX_12;
   }
   obj3.bottom = num4;
   obj.gameTileContainer = obj3;
-  obj.contextMenuContainer = { top: importDefault(dependencyMap[8]).space.PX_16, right: importDefault(dependencyMap[8]).space.PX_16, gap: importDefault(dependencyMap[8]).space.PX_16 };
+  const obj4 = { PREMIUM_TIER_1_PREMIUM_GUILD_1_YEARLY: null, PREMIUM_GUILD_1_MONTHLY: null, PREMIUM_GUILD_2_MONTHLY: null, nextTierIcon: null, previewProfileButtonDark: null, addDetail: null, filesize: null, top: importDefault(dependencyMap[8]).space.PX_16, right: importDefault(dependencyMap[8]).space.PX_16, gap: importDefault(dependencyMap[8]).space.PX_16 };
+  obj.contextMenuContainer = obj4;
   const obj5 = { alignItems: "center" };
   let PX_16;
   if (!arg0) {

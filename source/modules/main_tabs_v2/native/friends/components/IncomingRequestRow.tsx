@@ -1,10 +1,10 @@
-// Module ID: 15322
-// Function ID: 116683
+// Module ID: 15329
+// Function ID: 116707
 // Name: IncomingRequestRow
 // Dependencies: []
 // Exports: ConnectedIncomingGameFriendRequestRow, IncomingFriendRequestRow
 
-// Module 15322 (IncomingRequestRow)
+// Module 15329 (IncomingRequestRow)
 function IncomingRequestRow(user) {
   let acceptedRequestAccessibilityLabel;
   let acceptedRequestLabel;
@@ -23,7 +23,7 @@ function IncomingRequestRow(user) {
   let closure_5 = acceptRequestAccessibilityLabel;
   const ignoreRequestAccessibilityLabel = user.ignoreRequestAccessibilityLabel;
   const UserRowModes = ignoreRequestAccessibilityLabel;
-  let obj = { toValue: "Text", easing: "message", duration: "textAlign", useNativeDriver: "r", justify: "isArray", align: "accessibilityRole", direction: "sr", dipslay: "", flexDirection: "Text", justifyContent: "messageId" };
+  let obj = { 1658860369: "r", -967591322: "setAlert", -1564731844: "jsVersion", 1869632073: "SELF_HARM_CONTENT", -1973317371: "numMediaItems", 1402699857: "r", 51053818: "isSearching", -1186888613: "SELF_HARM_CONTENT", 1660945537: "numMemberTabReturnedResults", 1666624059: "r" };
   ({ accessibilityLabel, acceptedRequestLabel, acceptedRequestAccessibilityLabel } = user);
   Object.setPrototypeOf(null);
   const merged = Object.assign(user, obj);
@@ -83,7 +83,7 @@ function IncomingRequestRow(user) {
   const items5 = [stateFromStores1, applicationId, userTag];
   const memo1 = React.useMemo(() => {
     if (null != stateFromStores1) {
-      const obj = { application: stateFromStores1 };
+      const obj = { "Null": false, "Null": false, "Null": false, application: stateFromStores1 };
       let str = userTag(applicationId(accepted[11]), obj, stateFromStores1.id);
     } else {
       str = "";
@@ -125,7 +125,8 @@ function IncomingGameFriendRequestRow(arg0) {
   const intl2 = arg1(dependencyMap[8]).intl;
   obj.acceptedRequestLabel = intl2.format(arg1(dependencyMap[8]).t.gRgJGR, {
     applicationNameHook() {
-      return callback2(callback(closure_2[11]), { application }, application.id);
+      const obj = { "Null": false, "Null": false, "Null": false, application };
+      return callback2(callback(closure_2[11]), obj, application.id);
     }
   });
   const intl3 = arg1(dependencyMap[8]).intl;

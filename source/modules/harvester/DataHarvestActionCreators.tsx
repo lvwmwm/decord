@@ -1,10 +1,10 @@
-// Module ID: 13636
-// Function ID: 103349
+// Module ID: 13643
+// Function ID: 103372
 // Name: getDataHarvestStatus
 // Dependencies: []
 // Exports: getDataHarvestStatus, requestDataHarvest
 
-// Module 13636 (getDataHarvestStatus)
+// Module 13643 (getDataHarvestStatus)
 const Endpoints = require(dependencyMap[0]).Endpoints;
 const _module = require(dependencyMap[4]);
 const result = _module.fileFinishedImporting("modules/harvester/DataHarvestActionCreators.tsx");
@@ -13,7 +13,7 @@ export const getDataHarvestStatus = function getDataHarvestStatus() {
   let obj = importDefault(dependencyMap[1]);
   obj.dispatch({ type: "LOAD_DATA_HARVEST_TYPE_START" });
   const HTTP = require(dependencyMap[2]).HTTP;
-  obj = { CONVERSATIONS: null, replace: null, push: null, url: Endpoints.USER_HARVEST };
+  obj = { lc: "ERROR", type: "ERROR", end: "NOT_RESPONDER", url: Endpoints.USER_HARVEST };
   const value = HTTP.get(obj);
   return value.then((body) => {
     let obj = callback(closure_2[1]);

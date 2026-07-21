@@ -1,10 +1,10 @@
-// Module ID: 11867
-// Function ID: 91882
+// Module ID: 11874
+// Function ID: 91905
 // Name: getStyleConfig
 // Dependencies: []
 // Exports: default
 
-// Module 11867 (getStyleConfig)
+// Module 11874 (getStyleConfig)
 function getStyleConfig(arg0) {
   let tmp;
   if (null != arg0) {
@@ -253,7 +253,7 @@ function BotSlashCommands(channel) {
       items1[1] = callback(View, obj1);
       let tmp5 = null != application && null != application.bot;
       if (tmp5) {
-        const obj2 = { st: "<string:141706586>", borderWidth: "<string:570425344>" };
+        const obj2 = {};
         const intl = arg1(dependencyMap[13]).intl;
         obj2.text = intl.string(arg1(dependencyMap[13]).t.VEfKyb);
         obj2.onPress = tmp3;
@@ -278,10 +278,10 @@ const DIVIDER_DOT = tmp2.DIVIDER_DOT;
 const Routes = arg1(dependencyMap[6]).Routes;
 const AppLauncherRouteName = arg1(dependencyMap[7]).AppLauncherRouteName;
 ({ jsx: closure_11, jsxs: closure_12, Fragment: closure_13 } = arg1(dependencyMap[8]));
-let closure_14 = { -9223372036854775808: 4, 0: "wrap", 0: null, 9223372036854775807: 60, 9223372036854775807: 60 };
-let closure_15 = { [tmp2.UserProfileThemeTypes.PREVIEW]: {} };
+let closure_14 = {};
+let closure_15 = { [tmp2.UserProfileThemeTypes.PREVIEW]: { borderRadius: true, alignItems: true, 9223372036854775807: true, 9223372036854775807: true, 9223372036854775807: true } };
 const tmp3 = arg1(dependencyMap[8]);
-let closure_16 = arg1(dependencyMap[9]).createStyles({ card: { flexDirection: "column" }, textWithIcon: { -9223372036854775808: true, filter: true }, memberJoinDates: { APP_DMS_ENTRY_POINT_COMMAND_BUTTON: null, desert: null }, slashCommands: {}, policyLinks: { rowGap: 8 } });
+let closure_16 = arg1(dependencyMap[9]).createStyles({ card: { flexDirection: "column" }, textWithIcon: {}, memberJoinDates: { 1925026477: null, -1346530010: null }, slashCommands: {}, policyLinks: { rowGap: 8 } });
 const obj = arg1(dependencyMap[9]);
 const result = arg1(dependencyMap[36]).fileFinishedImporting("modules/user_profile/native/UserProfileAboutMeCard.tsx");
 

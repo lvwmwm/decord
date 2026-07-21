@@ -1,10 +1,10 @@
-// Module ID: 15004
-// Function ID: 112984
+// Module ID: 15011
+// Function ID: 113008
 // Name: NotificationCenterBannerImpl
 // Dependencies: []
 // Exports: default
 
-// Module 15004 (NotificationCenterBannerImpl)
+// Module 15011 (NotificationCenterBannerImpl)
 function NotificationCenterBannerImpl(onDismiss) {
   const arg1 = onDismiss.onDismiss;
   const tmp = callback6();
@@ -44,6 +44,9 @@ function NotificationCenterBannerImpl(onDismiss) {
   obj1.children = items1;
   items[1] = callback5(View, obj1);
   const obj7 = {
+    "Bool(true)": null,
+    "Bool(true)": 8,
+    "Bool(true)": "absolute",
     onPress() {
       let obj = callback(closure_2[9]);
       obj = { action: constants4.DISMISS, prompt_type: constants5.NOTIFICATION_CENTER_BANNER };
@@ -73,7 +76,7 @@ obj = {};
 obj = { paddingRight: importDefault(dependencyMap[8]).space.PX_12, paddingVertical: importDefault(dependencyMap[8]).space.PX_16, backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_BASE_LOW, borderColor: importDefault(dependencyMap[8]).colors.BORDER_SUBTLE, gap: 16 };
 obj.container = obj;
 obj.contentContainer = { flex: 1 };
-const obj1 = { "Bool(false)": "<string:1090519624>", "Bool(false)": "2026-04-social-layer-storefront-mobile-purchasing", "Bool(false)": "<string:3628267361>", "Bool(false)": "<string:2197815725>", "Bool(false)": "<string:1375731975>", "Bool(false)": "<string:2583738129>", borderRadius: importDefault(dependencyMap[8]).radii.round, backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_MOD_STRONG };
+const obj1 = { <string:173102256>: 109907, <string:1549034243>: 67503, <string:3972818102>: -1699303086, <string:374453936>: 1564545433, <string:4221592070>: 1912603216, <string:1637461585>: 24, borderRadius: importDefault(dependencyMap[8]).radii.round, backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_MOD_STRONG };
 obj.iconContainer = obj1;
 const tmp5 = arg1(dependencyMap[6]);
 obj.ctaButton = { alignSelf: "flex-start", marginTop: importDefault(dependencyMap[8]).space.PX_12 };

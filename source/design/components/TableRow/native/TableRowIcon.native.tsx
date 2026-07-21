@@ -1,11 +1,11 @@
-// Module ID: 5431
-// Function ID: 46489
+// Module ID: 5433
+// Function ID: 46531
 // Name: TableRowIcon
 // Dependencies: []
 // Exports: TableRowIcon
 
-// Module 5431 (TableRowIcon)
-let closure_3 = ["fgD"];
+// Module 5433 (TableRowIcon)
+let closure_3 = [null];
 let closure_4 = importDefault(dependencyMap[0]);
 importAll(dependencyMap[1]);
 const View = arg1(dependencyMap[2]).View;

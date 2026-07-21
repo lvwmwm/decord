@@ -1,10 +1,10 @@
-// Module ID: 15637
-// Function ID: 119443
+// Module ID: 15644
+// Function ID: 119467
 // Name: usePIPAvoidanceSpecs
 // Dependencies: []
 // Exports: default
 
-// Module 15637 (usePIPAvoidanceSpecs)
+// Module 15644 (usePIPAvoidanceSpecs)
 const VoicePanelModes = require(dependencyMap[0]).VoicePanelModes;
 const VoicePanelControlsModes = require(dependencyMap[1]).VoicePanelControlsModes;
 const PIP_WINDOW_OFFSET = require(dependencyMap[2]).PIP_WINDOW_OFFSET;
@@ -21,7 +21,7 @@ export default function usePIPAvoidanceSpecs(mode) {
   const safeArea = mode.safeArea;
   const dependencyMap = safeArea;
   let obj = require(dependencyMap[3]);
-  const sharedValue = obj.useSharedValue({ "Bool(false)": false, "Bool(false)": true });
+  const sharedValue = obj.useSharedValue({ <string:2958189153>: -536870861, <string:1661207664>: -299892737 });
   const VoicePanelModes = sharedValue;
   const tmp2 = importDefault(dependencyMap[4])();
   const VoicePanelControlsModes = tmp2;

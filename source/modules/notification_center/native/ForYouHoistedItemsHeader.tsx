@@ -1,10 +1,10 @@
-// Module ID: 15031
-// Function ID: 113203
+// Module ID: 15038
+// Function ID: 113227
 // Name: ForYouHoistedItemsHeader
 // Dependencies: []
 // Exports: ForYouHoistedItemsHeader
 
-// Module 15031 (ForYouHoistedItemsHeader)
+// Module 15038 (ForYouHoistedItemsHeader)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 const jsx = arg1(dependencyMap[2]).jsx;

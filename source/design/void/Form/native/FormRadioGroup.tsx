@@ -1,10 +1,10 @@
-// Module ID: 7511
-// Function ID: 60169
+// Module ID: 7515
+// Function ID: 60181
 // Name: FormRadioGroup
 // Dependencies: []
 // Exports: default
 
-// Module 7511 (FormRadioGroup)
+// Module 7515 (FormRadioGroup)
 let closure_3 = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 ({ jsx: closure_5, jsxs: closure_6 } = arg1(dependencyMap[2]));
@@ -20,7 +20,7 @@ export default function FormRadioGroup(arg0) {
   let title;
   let value;
   ({ title, children, hint } = arg0);
-  let obj = { width: 1091658877, height: 151597, marginVertical: 6258, flexDirection: 6144, paddingTop: -180289280, paddingHorizontal: 1375732285, alignItems: 1685947892 };
+  let obj = { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null };
   ({ hasIcons, accessibilityLabel, value, icon } = arg0);
   Object.setPrototypeOf(null);
   const merged = Object.assign(arg0, obj);

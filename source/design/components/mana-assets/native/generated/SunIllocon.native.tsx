@@ -1,10 +1,10 @@
-// Module ID: 6573
-// Function ID: 50733
+// Module ID: 6575
+// Function ID: 50776
 // Name: SunIllocon
 // Dependencies: []
 // Exports: SunIllocon
 
-// Module 6573 (SunIllocon)
+// Module 6575 (SunIllocon)
 const jsx = require(dependencyMap[0]).jsx;
 const _module = require(dependencyMap[3]);
 const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/SunIllocon.native.tsx");

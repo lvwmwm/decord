@@ -1,10 +1,10 @@
-// Module ID: 15309
-// Function ID: 116489
+// Module ID: 15316
+// Function ID: 116513
 // Name: transitionGroupGetItemKey
-// Dependencies: [57, 31, 1455, 33, 3989, 10867, 8170, 10868, 4961, 11184, 11299, 5219, 2, 31, 1552]
+// Dependencies: [57, 31, 1455, 33, 3989, 10873, 8174, 10874, 4963, 11190, 11305, 5221, 2, 31, 1552]
 // Exports: PortalKeyboardRenderer
 
-// Module 15309 (transitionGroupGetItemKey)
+// Module 15316 (transitionGroupGetItemKey)
 import _slicedToArray from "_slicedToArray";
 import module_31 from "module_31";
 import { jsx } from "APP_LAUNCHER_BUILT_IN_SECTION_ICON";

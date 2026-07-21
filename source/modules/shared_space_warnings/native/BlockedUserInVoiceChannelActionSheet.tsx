@@ -1,10 +1,10 @@
-// Module ID: 12537
-// Function ID: 96366
+// Module ID: 12544
+// Function ID: 96389
 // Name: BlockedUserInVoiceChannelActionSheet
 // Dependencies: []
 // Exports: default
 
-// Module 12537 (BlockedUserInVoiceChannelActionSheet)
+// Module 12544 (BlockedUserInVoiceChannelActionSheet)
 importAll(dependencyMap[0]);
 ({ Image: closure_3, View: closure_4 } = arg1(dependencyMap[1]));
 let closure_5 = importDefault(dependencyMap[2]);
@@ -23,7 +23,7 @@ obj.container = obj;
 obj.headerImage = {};
 const tmp5 = arg1(dependencyMap[8]);
 obj.headerText = { gap: importDefault(dependencyMap[10]).space.PX_4, marginBottom: importDefault(dependencyMap[10]).space.PX_16 };
-obj.centerText = {};
+obj.centerText = { customStatusActivity: null, hasCustomProfileTheme: null };
 const obj1 = { gap: importDefault(dependencyMap[10]).space.PX_4, marginBottom: importDefault(dependencyMap[10]).space.PX_16 };
 obj.buttonGroup = { paddingVertical: importDefault(dependencyMap[10]).space.PX_16, gap: 8 };
 let closure_15 = obj.createStyles(obj);
@@ -136,6 +136,8 @@ export default function BlockedUserInVoiceChannelActionSheet(arg0) {
   obj12.text = intl7.string(arg1(dependencyMap[12]).t.Y56/oK);
   const items7 = [callback2(arg1(dependencyMap[21]).Button, obj12), ];
   const obj13 = {
+    key: "r",
+    onCloseCallback: "sectionIdsByBotId",
     onPress() {
       let obj = blockedUserId(stateFromStores[22]);
       obj.hideActionSheet();

@@ -1,10 +1,10 @@
-// Module ID: 10372
-// Function ID: 80007
+// Module ID: 10378
+// Function ID: 80030
 // Name: isSelectedFromHomeChannel
 // Dependencies: []
 // Exports: default
 
-// Module 10372 (isSelectedFromHomeChannel)
+// Module 10378 (isSelectedFromHomeChannel)
 importDefault(dependencyMap[0]);
 importDefault(dependencyMap[1]);
 const isGuildHomeChannel = arg1(dependencyMap[2]).isGuildHomeChannel;

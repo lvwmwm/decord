@@ -1,10 +1,10 @@
-// Module ID: 14297
-// Function ID: 108039
+// Module ID: 14304
+// Function ID: 108062
 // Name: UserSettingsDesignSystemRowButton
 // Dependencies: []
 // Exports: default
 
-// Module 14297 (UserSettingsDesignSystemRowButton)
+// Module 14304 (UserSettingsDesignSystemRowButton)
 importAll(dependencyMap[0]);
 ({ View: closure_3, ScrollView: closure_4 } = arg1(dependencyMap[1]));
 const tmp3 = arg1(dependencyMap[1]);
@@ -18,7 +18,7 @@ export default function UserSettingsDesignSystemRowButton() {
   obj = {};
   const obj1 = { padding: importDefault(dependencyMap[5]).space.PX_16 };
   obj.style = obj1;
-  const items = [callback(arg1(dependencyMap[6]).Text, {}), callback(arg1(dependencyMap[6]).Text, { position: null, width: null })];
+  const items = [callback(arg1(dependencyMap[6]).Text, {}), callback(arg1(dependencyMap[6]).Text, { "Null": true, "Null": true })];
   obj.children = items;
   obj.description = callback2(arg1(dependencyMap[4]).Stack, obj);
   obj.children = callback(closure_3, {});
@@ -26,9 +26,9 @@ export default function UserSettingsDesignSystemRowButton() {
   const obj2 = { style: { padding: 16 } };
   const obj3 = {};
   const obj4 = {
-    9223372036854775807: 0,
-    9223372036854775807: 0,
-    -9223372036854775808: null,
+    "Null": 0,
+    "Null": 0,
+    "Null": null,
     icon: importDefault(dependencyMap[8]),
     onPress() {
 
@@ -36,10 +36,10 @@ export default function UserSettingsDesignSystemRowButton() {
   };
   const items2 = [callback(arg1(dependencyMap[7]).RowButton, obj4), , , , , , ];
   const obj5 = {
-    "Bool(false)": null,
-    "Bool(false)": null,
-    "Bool(false)": null,
-    "Bool(false)": null,
+    subLabel: true,
+    checked: true,
+    start: true,
+    end: true,
     icon: importDefault(dependencyMap[8]),
     onPress() {
 
@@ -47,9 +47,9 @@ export default function UserSettingsDesignSystemRowButton() {
   };
   items2[1] = callback(arg1(dependencyMap[7]).RowButton, obj5);
   const obj6 = {
-    9223372036854775807: "Boost your Server",
-    9223372036854775807: "Unlock perks for the entire community",
-    -9223372036854775808: "No Icons",
+    "Null": null,
+    "Null": null,
+    "Null": null,
     icon: importDefault(dependencyMap[8]),
     onPress() {
 
@@ -57,9 +57,6 @@ export default function UserSettingsDesignSystemRowButton() {
   };
   items2[2] = callback(arg1(dependencyMap[7]).RowButton, obj6);
   const obj7 = {
-    disabled: "No Icons",
-    value: false,
-    label: "First Item",
     icon: importDefault(dependencyMap[8]),
     onPress() {
 
@@ -67,13 +64,16 @@ export default function UserSettingsDesignSystemRowButton() {
   };
   items2[3] = callback(arg1(dependencyMap[7]).RowButton, obj7);
   const obj8 = {
+    "Null": true,
+    "Null": true,
+    "Null": true,
     icon: importDefault(dependencyMap[8]),
     onPress() {
 
     }
   };
   items2[4] = callback(arg1(dependencyMap[7]).RowButton, obj8);
-  const obj9 = { disabled: "Array", value: "isArray", label: "x" };
+  const obj9 = { "Null": null, "Null": null, "Null": null };
   const obj10 = { source: importDefault(dependencyMap[8]) };
   obj9.icon = callback(arg1(dependencyMap[7]).RowButton.Icon, obj10);
   obj9.onPress = function onPress() {

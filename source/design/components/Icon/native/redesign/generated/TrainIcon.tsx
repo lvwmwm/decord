@@ -1,10 +1,10 @@
-// Module ID: 13398
-// Function ID: 101840
+// Module ID: 13405
+// Function ID: 101863
 // Name: TrainIcon
 // Dependencies: []
 // Exports: TrainIcon
 
-// Module 13398 (TrainIcon)
+// Module 13405 (TrainIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/TrainIcon.tsx");

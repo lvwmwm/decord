@@ -1,13 +1,12 @@
-// Module ID: 6417
-// Function ID: 50499
+// Module ID: 6419
+// Function ID: 50542
 // Name: PrivacyShieldWithLaptopSpotIllustration
-// Dependencies: []
+// Dependencies: [4294967295, 0, 4294967295, 0]
 // Exports: PrivacyShieldWithLaptopSpotIllustration
 
-// Module 6417 (PrivacyShieldWithLaptopSpotIllustration)
+// Module 6419 (PrivacyShieldWithLaptopSpotIllustration)
 const jsx = require(dependencyMap[0]).jsx;
-const _module = require(dependencyMap[3]);
-const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/PrivacyShieldWithLaptopSpotIllustration.native.tsx");
+const result = require("__exportStarResult1").fileFinishedImporting("design/components/mana-assets/native/generated/PrivacyShieldWithLaptopSpotIllustration.native.tsx");
 
 export const PrivacyShieldWithLaptopSpotIllustration = function PrivacyShieldWithLaptopSpotIllustration(width) {
   let accessibilityLabel;

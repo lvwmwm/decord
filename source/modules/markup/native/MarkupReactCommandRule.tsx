@@ -1,10 +1,10 @@
-// Module ID: 10864
-// Function ID: 84514
+// Module ID: 10870
+// Function ID: 84537
 // Name: handleTapCommandMention
 // Dependencies: []
 // Exports: default
 
-// Module 10864 (handleTapCommandMention)
+// Module 10870 (handleTapCommandMention)
 function handleTapCommandMention(channelId) {
   let appLauncherNavigator;
   let commandId;
@@ -127,7 +127,7 @@ function handleLongPressCommandMention(commandName, commandId) {
     };
     items.push(obj);
   }
-  obj = { "Null": 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000017561265313071064, "Null": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007667343967426429, "Null": 65820313824839320000000000000000000000000000000000000000000000000, options: items };
+  obj = { url: 12, body: 2, retries: "transparent", options: items };
   const result = commandId(dependencyMap[18]).showSimpleActionSheet(obj);
 }
 let closure_3 = importAll(dependencyMap[0]);
@@ -203,7 +203,7 @@ export default function MarkupReactCommandRule(node) {
       callback(node.commandName, node.commandId);
     }
   };
-  const items = [, arg1(closure_2[23]).smartOutput(node, output, state)];
+  const items = [true, arg1(closure_2[23]).smartOutput(node, output, state)];
   obj.children = items;
   return jsxs(arg1(closure_2[20]).Text, obj);
 };

@@ -1,9 +1,9 @@
-// Module ID: 6084
-// Function ID: 50000
+// Module ID: 6086
+// Function ID: 50043
 // Name: vanityUrl
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 6084 (vanityUrl)
+// Module 6086 (vanityUrl)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/GameDepthTier4LargeBadge-2x.png.js");
 

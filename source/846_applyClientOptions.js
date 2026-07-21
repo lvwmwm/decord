@@ -1,13 +1,10 @@
 // Module ID: 846
 // Function ID: 9432
 // Name: applyClientOptions
-// Dependencies: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+// Dependencies: []
 // Exports: parseEventHintOrCaptureContext, prepareEvent
 
 // Module 846 (applyClientOptions)
-import result from "result";
-import result from "result";
-
 function applyClientOptions(environment, environment2) {
   let dist;
   let maxValueLength;
@@ -130,8 +127,10 @@ function applyDebugMeta(exception) {
     });
   }
 }
+let closure_2 = require(dependencyMap[0]);
+let closure_3 = require(dependencyMap[1]);
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
-let closure_4 = ["<string:217055233>", "<string:2336423938>", "<string:721420544>", "<string:335544583>", "<string:1375731976>", "<string:36637304>", "<string:28983106>"];
+let closure_4 = [true, true, true, true, true, true, true];
 
 export { applyClientOptions };
 export { applyDebugIds };
@@ -194,9 +193,9 @@ export const prepareEvent = function prepareEvent(normalizeDepth, event_id, even
     if (!integrations2) {
       integrations2 = [];
     }
-    merged.sdk.integrations = items.concat(result(integrations2), result(integrations));
-    const tmp7 = result;
-    const tmp7Result = result(integrations2);
+    merged.sdk.integrations = items.concat(callback2(integrations2), callback2(integrations));
+    const tmp7 = callback2;
+    const tmp7Result = callback2(integrations2);
   }
   if (emit) {
     emit.emit("applyFrameMetadata", event_id);
@@ -222,17 +221,17 @@ export const prepareEvent = function prepareEvent(normalizeDepth, event_id, even
       attachments = [];
     }
     const obj6 = require(dependencyMap[4]);
-    const tmp26 = result;
-    const combined = items1.concat(result(attachments), result(combinedScopeData.attachments));
+    const tmp26 = callback2;
+    const combined = items1.concat(callback2(attachments), callback2(combinedScopeData.attachments));
     if (combined.length) {
       event_id2.attachments = combined;
     }
-    const tmp26Result = result(attachments);
+    const tmp26Result = callback2(attachments);
     const result1 = require(dependencyMap[4]).applyScopeDataToEvent(merged, combinedScopeData);
     const items2 = [];
     const obj7 = require(dependencyMap[4]);
-    const combined1 = items2.concat(result(eventProcessors), result(combinedScopeData.eventProcessors));
-    const tmp33 = result(eventProcessors);
+    const combined1 = items2.concat(callback2(eventProcessors), callback2(combinedScopeData.eventProcessors));
+    const tmp33 = callback2(eventProcessors);
     const result2 = require(dependencyMap[5]).notifyEventProcessors(combined1, merged, event_id2);
     return result2.then((breadcrumbs) => {
       if (breadcrumbs) {

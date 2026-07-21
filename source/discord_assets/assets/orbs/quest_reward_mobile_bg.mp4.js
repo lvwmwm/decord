@@ -1,9 +1,9 @@
-// Module ID: 10916
-// Function ID: 84913
+// Module ID: 10921
+// Function ID: 84934
 // Name: metadata
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 10916 (metadata)
+// Module 10921 (metadata)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_assets/assets/orbs/quest_reward_mobile_bg.mp4.js");
 

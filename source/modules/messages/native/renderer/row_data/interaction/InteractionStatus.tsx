@@ -1,10 +1,10 @@
-// Module ID: 7885
-// Function ID: 62790
+// Module ID: 7889
+// Function ID: 62802
 // Name: createInteractionStatus
 // Dependencies: []
 // Exports: createInteractionStatus
 
-// Module 7885 (createInteractionStatus)
+// Module 7889 (createInteractionStatus)
 let closure_2 = { LOADING: 0, [0]: "LOADING", FAILED: 1, [1]: "FAILED", EPHEMERAL_SUCCESS: 999, [999]: "EPHEMERAL_SUCCESS" };
 const _module = require(dependencyMap[2]);
 const result = _module.fileFinishedImporting("modules/messages/native/renderer/row_data/interaction/InteractionStatus.tsx");

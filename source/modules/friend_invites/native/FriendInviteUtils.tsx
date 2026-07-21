@@ -1,10 +1,10 @@
-// Module ID: 15842
-// Function ID: 121248
+// Module ID: 15849
+// Function ID: 121272
 // Name: handleInviteAccepted
 // Dependencies: []
 // Exports: acceptFriendInvite, revokeAllFriendInvites
 
-// Module 15842 (handleInviteAccepted)
+// Module 15849 (handleInviteAccepted)
 function handleInviteAccepted() {
   importDefault(dependencyMap[6]).wait(() => callback(closure_2[7])());
 }

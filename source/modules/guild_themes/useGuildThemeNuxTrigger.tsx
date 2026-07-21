@@ -1,12 +1,11 @@
-// Module ID: 14863
-// Function ID: 111975
+// Module ID: 14870
+// Function ID: 111999
 // Name: useGuildThemeNuxTrigger
-// Dependencies: [0]
+// Dependencies: []
 // Exports: default
 
-// Module 14863 (useGuildThemeNuxTrigger)
-import result from "result";
-
+// Module 14870 (useGuildThemeNuxTrigger)
+let closure_2 = importDefault(dependencyMap[0]);
 let closure_3 = importAll(dependencyMap[1]);
 let closure_4 = arg1(dependencyMap[2]).DismissibleContentGroupName;
 const result = arg1(dependencyMap[6]).fileFinishedImporting("modules/guild_themes/useGuildThemeNuxTrigger.tsx");

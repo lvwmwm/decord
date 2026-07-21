@@ -1,14 +1,13 @@
-// Module ID: 5855
-// Function ID: 49656
+// Module ID: 5857
+// Function ID: 49699
 // Name: AppsButtonSpotIllustration
-// Dependencies: [131072, 561250304, 1862270976, 20]
+// Dependencies: []
 // Exports: AppsButtonSpotIllustration
 
-// Module 5855 (AppsButtonSpotIllustration)
-import AppStartPerformance from "AppStartPerformance";
-
+// Module 5857 (AppsButtonSpotIllustration)
 const jsx = require(dependencyMap[0]).jsx;
-const result = AppStartPerformance.fileFinishedImporting("design/components/mana-assets/native/generated/AppsButtonSpotIllustration.native.tsx");
+const _module = require(dependencyMap[3]);
+const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/AppsButtonSpotIllustration.native.tsx");
 
 export const AppsButtonSpotIllustration = function AppsButtonSpotIllustration(width) {
   let accessibilityLabel;

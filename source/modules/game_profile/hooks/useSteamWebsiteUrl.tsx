@@ -1,10 +1,10 @@
-// Module ID: 8593
-// Function ID: 68245
+// Module ID: 8597
+// Function ID: 68257
 // Name: buildSteamStoreUrl
 // Dependencies: []
 // Exports: useSteamWebsiteUrl
 
-// Module 8593 (buildSteamStoreUrl)
+// Module 8597 (buildSteamStoreUrl)
 function buildSteamStoreUrl(arg0) {
   return "https://store.steampowered.com/app/" + encodeURIComponent(arg0);
 }

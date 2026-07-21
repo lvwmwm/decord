@@ -1,10 +1,10 @@
-// Module ID: 8731
-// Function ID: 69061
+// Module ID: 8735
+// Function ID: 69073
 // Name: BadgeWithTooltip
 // Dependencies: []
 // Exports: default
 
-// Module 8731 (BadgeWithTooltip)
+// Module 8735 (BadgeWithTooltip)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 ({ Pressable: closure_5, View: closure_6 } = arg1(dependencyMap[2]));

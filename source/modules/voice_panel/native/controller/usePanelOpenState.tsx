@@ -1,13 +1,13 @@
-// Module ID: 15638
-// Function ID: 119447
+// Module ID: 15645
+// Function ID: 119471
 // Name: usePanelOpenState
-// Dependencies: [31, 9999, 2, 57, 31, 4139, 10000, 9998, 4144, 33, 9999, 682, 477]
+// Dependencies: [31, 10005, 2, 57, 31, 4139, 10006, 10004, 4144, 33, 10005, 682, 477]
 // Exports: default
 
-// Module 15638 (usePanelOpenState)
+// Module 15645 (usePanelOpenState)
 import closure_3 from "module_31";
 import dismissPanel from "dismissPanel";
-import keys from "keys";
+import result2 from "result2";
 import { VoicePanelModes } from "_slicedToArray";
 import module_31 from "module_31";
 import module_477 from "module_477";
@@ -94,7 +94,7 @@ export default function usePanelOpenState(arg0, arg1, arg2, connected) {
   const tmp3 = callback(React.useState(() => arg1(arg2[7]).getHistory().location.pathname), 2);
   const first = tmp3[0];
   const React = first;
-  let keys = tmp3[1];
+  let result2 = tmp3[1];
   const items1 = [arg0, first];
   const effect1 = React.useEffect(() => {
     let closure_0 = arg1(arg2[7]).addRouteChangeListener((pathname) => {

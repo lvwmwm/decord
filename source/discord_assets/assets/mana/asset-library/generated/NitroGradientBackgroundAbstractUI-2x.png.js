@@ -1,9 +1,9 @@
-// Module ID: 6326
-// Function ID: 50363
+// Module ID: 6328
+// Function ID: 50406
 // Name: metadata
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 6326 (metadata)
+// Module 6328 (metadata)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/NitroGradientBackgroundAbstractUI-2x.png.js");
 

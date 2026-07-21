@@ -1,18 +1,18 @@
-// Module ID: 15040
-// Function ID: 113249
+// Module ID: 15047
+// Function ID: 113273
 // Name: ForYouUnreadClearedState
 // Dependencies: []
 // Exports: ForYouUnreadClearedState
 
-// Module 15040 (ForYouUnreadClearedState)
+// Module 15047 (ForYouUnreadClearedState)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 ({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[2]));
 let obj = arg1(dependencyMap[3]);
-obj = { container: { -335419053: true, 1638281000: true, 1015501064: true, 490831713: true } };
-obj = { 66933048: "Array", flexDirection: "isArray", alignItems: "body", gap: "message", marginBottom: "key", marginTop: "Text", marginLeft: "kind", marginRight: "cursor", backgroundColor: importDefault(dependencyMap[4]).unsafe_rawColors.GREEN_400, borderRadius: importDefault(dependencyMap[4]).radii.xl };
+obj = { container: { s: "_tr_stored_block", DARK: "<string:960561152>", resizeMode: "<string:1929380520>", intl: "p" } };
+obj = { backgroundColor: importDefault(dependencyMap[4]).unsafe_rawColors.GREEN_400, borderRadius: importDefault(dependencyMap[4]).radii.xl };
 obj.imageContainer = obj;
-const obj1 = { "Bool(false)": null, "Bool(false)": null, color: importDefault(dependencyMap[4]).unsafe_rawColors.GREEN_400 };
+const obj1 = { "Bool(true)": null, "Bool(true)": null, color: importDefault(dependencyMap[4]).unsafe_rawColors.GREEN_400 };
 obj.icon = obj1;
 obj.headerText = { marginBottom: 2 };
 let closure_6 = obj.createStyles(obj);

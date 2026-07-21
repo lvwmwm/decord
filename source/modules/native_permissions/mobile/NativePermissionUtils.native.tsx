@@ -1,9 +1,9 @@
-// Module ID: 4678
-// Function ID: 40715
+// Module ID: 4680
+// Function ID: 40756
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 
-// Module 4678 (_createForOfIteratorHelperLoose)
+// Module 4680 (_createForOfIteratorHelperLoose)
 let NativePermissionTypes;
 function _createForOfIteratorHelperLoose(@@iterator) {
   let arg1 = Symbol_iterator;

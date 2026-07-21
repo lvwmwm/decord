@@ -1,10 +1,10 @@
-// Module ID: 9453
-// Function ID: 73669
+// Module ID: 9457
+// Function ID: 73683
 // Name: getQuestOrbMultiplierEligibilityForUser
 // Dependencies: []
 // Exports: useQuestOrbMultiplierEligibility
 
-// Module 9453 (getQuestOrbMultiplierEligibilityForUser)
+// Module 9457 (getQuestOrbMultiplierEligibilityForUser)
 function getQuestOrbMultiplierEligibilityForUser(isFractionalPremiumWithNoStandardSub) {
   if (null == isFractionalPremiumWithNoStandardSub) {
     let UPSELL = arg1(dependencyMap[2]).QuestOrbMultiplierEligibilityType.INELIGIBLE;

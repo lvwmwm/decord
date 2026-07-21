@@ -1,16 +1,18 @@
-// Module ID: 14701
-// Function ID: 110920
+// Module ID: 14708
+// Function ID: 110944
 // Name: Wrapper
 // Dependencies: []
 // Exports: default
 
-// Module 14701 (Wrapper)
+// Module 14708 (Wrapper)
 function Wrapper(folder) {
   folder = folder.folder;
   const arg1 = folder;
+  const tmp = callback2();
+  const importDefault = tmp;
   const memo = React.useMemo(() => ({ isMuted: false }), []);
-  const importDefault = memo;
-  let obj = arg1(dependencyMap[9]);
+  const dependencyMap = memo;
+  let obj = arg1(dependencyMap[10]);
   const items = [closure_5, closure_8];
   const stateFromStoresArray = obj.useStateFromStoresArray(items, () => {
     const guildIds = folder.guildIds;
@@ -22,14 +24,14 @@ function Wrapper(folder) {
       return tmp;
     });
   });
-  const dependencyMap = stateFromStoresArray;
-  let obj1 = arg1(dependencyMap[9]);
+  const React = stateFromStoresArray;
+  let obj1 = arg1(dependencyMap[10]);
   const items1 = [closure_6];
   const stateFromStores = obj1.useStateFromStores(items1, () => {
     const first = stateFromStoresArray[0];
     let tmp2;
     if (null != first) {
-      const guild = store.getGuild(first);
+      const guild = formatResult3.getGuild(first);
       let name;
       if (null != guild) {
         name = guild.name;
@@ -38,7 +40,7 @@ function Wrapper(folder) {
     }
     return tmp2;
   });
-  let obj2 = arg1(dependencyMap[9]);
+  let obj2 = arg1(dependencyMap[10]);
   const items2 = [closure_5, closure_8];
   const stateFromStoresArray1 = obj2.useStateFromStoresArray(items2, () => {
     const guildIds = folder.guildIds;
@@ -50,14 +52,14 @@ function Wrapper(folder) {
       return hasUnreadResult;
     });
   });
-  const React = stateFromStoresArray1;
-  let obj3 = arg1(dependencyMap[9]);
+  const View = stateFromStoresArray1;
+  let obj3 = arg1(dependencyMap[10]);
   const items3 = [closure_6];
   const stateFromStores1 = obj3.useStateFromStores(items3, () => {
     const first = stateFromStoresArray1[0];
     let tmp2;
     if (null != first) {
-      const guild = store.getGuild(first);
+      const guild = formatResult3.getGuild(first);
       let name;
       if (null != guild) {
         name = guild.name;
@@ -67,7 +69,7 @@ function Wrapper(folder) {
     return tmp2;
   });
   const items4 = [closure_9, closure_6, closure_8];
-  const stateFromStoresArray2 = arg1(dependencyMap[9]).useStateFromStoresArray(items4, () => {
+  const stateFromStoresArray2 = arg1(dependencyMap[10]).useStateFromStoresArray(items4, () => {
     const guildIds = folder.guildIds;
     return guildIds.filter((guildId) => {
       if (muted.isMuted(guildId)) {
@@ -100,14 +102,14 @@ function Wrapper(folder) {
       }
     });
   });
-  const View = stateFromStoresArray2;
-  const obj5 = arg1(dependencyMap[9]);
+  closure_5 = stateFromStoresArray2;
+  const obj5 = arg1(dependencyMap[10]);
   const items5 = [closure_6];
-  const stateFromStores2 = arg1(dependencyMap[9]).useStateFromStores(items5, () => {
+  const stateFromStores2 = arg1(dependencyMap[10]).useStateFromStores(items5, () => {
     const first = stateFromStoresArray2[0];
     let tmp2;
     if (null != first) {
-      const guild = store.getGuild(first);
+      const guild = formatResult3.getGuild(first);
       let name;
       if (null != guild) {
         name = guild.name;
@@ -116,76 +118,77 @@ function Wrapper(folder) {
     }
     return tmp2;
   });
-  const items6 = [folder.folderName, memo];
+  const items6 = [folder.folderName, memo, , ];
+  ({ title: arr10[2], titleText: arr10[3] } = tmp);
   const memo1 = React.useMemo(() => {
     if (memo.isMuted) {
-      let BellSlashIcon = folder(stateFromStoresArray[10]).BellSlashIcon;
+      let BellSlashIcon = folder(memo[11]).BellSlashIcon;
     } else {
       BellSlashIcon = closure_10;
     }
-    let obj = { style: {} };
+    let obj = { style: tmp.title };
     const items = [callback(BellSlashIcon, { size: "xs" }), ];
-    obj = {};
+    obj = { keFvXM: false, address-line1: false, guildId: false, justifyContent: false, style: tmp.titleText };
     let folderName = folder.folderName;
     if (null == folderName) {
-      const intl = folder(stateFromStoresArray[12]).intl;
-      folderName = intl.string(folder(stateFromStoresArray[12]).t.JQ/1n3);
+      const intl = folder(memo[13]).intl;
+      folderName = intl.string(folder(memo[13]).t.JQ/1n3);
     }
     obj.children = folderName;
-    items[1] = callback(folder(stateFromStoresArray[11]).Text, obj);
+    items[1] = callback(folder(memo[12]).Text, obj);
     obj.children = items;
-    return closure_12(stateFromStoresArray2, obj);
+    return closure_12(stateFromStoresArray1, obj);
   }, items6);
-  const intl = arg1(dependencyMap[12]).intl;
+  const intl = arg1(dependencyMap[13]).intl;
   obj = { num: folder.guildIds.length };
-  const formatResult = intl.format(arg1(dependencyMap[12]).t.knOfkb, obj);
-  closure_5 = formatResult;
-  closure_6 = "text-muted";
+  const formatResult = intl.format(arg1(dependencyMap[13]).t.knOfkb, obj);
+  closure_6 = formatResult;
+  let closure_7 = "text-muted";
   if (stateFromStoresArray.length > 0) {
     if (null != stateFromStores) {
-      const intl4 = arg1(dependencyMap[12]).intl;
+      const intl4 = arg1(dependencyMap[13]).intl;
       obj = { guildName: stateFromStores, count: stateFromStoresArray.length - 1 };
-      const formatResult1 = intl4.format(arg1(dependencyMap[12]).t.UoFb3H, obj);
-      closure_5 = formatResult1;
-      let tmp11 = formatResult1;
+      const formatResult1 = intl4.format(arg1(dependencyMap[13]).t.UoFb3H, obj);
+      closure_6 = formatResult1;
+      let tmp12 = formatResult1;
       let str = "text-muted";
     }
-    const items7 = [tmp11, str];
+    const items7 = [tmp12, str];
     const memo2 = React.useMemo(() => {
-      const obj = { 9223372036854775807: "10", 9223372036854775807: "channel-row", 9223372036854775807: "11", color: closure_6, children: formatResult3 };
-      return callback(folder(stateFromStoresArray[11]).Text, obj);
+      const obj = { -9223372036854775808: "7", 0: "channel-row", 0: "10", color: closure_7, children: formatResult3 };
+      return callback(folder(memo[12]).Text, obj);
     }, items7);
     obj1 = { title: memo1 };
-    let tmp26;
+    let tmp27;
     if (!folder.expanded) {
-      tmp26 = memo2;
+      tmp27 = memo2;
     }
-    obj1.subtitle = tmp26;
-    return closure_11(arg1(dependencyMap[13]).HomeDrawerSharedItem, obj1);
+    obj1.subtitle = tmp27;
+    return closure_11(arg1(dependencyMap[14]).HomeDrawerSharedItem, obj1);
   }
   if (stateFromStoresArray2.length > 0) {
     if (null != stateFromStores2) {
-      const intl3 = arg1(dependencyMap[12]).intl;
+      const intl3 = arg1(dependencyMap[13]).intl;
       obj2 = { guildName: stateFromStores2, count: stateFromStoresArray2.length - 1 };
-      const formatResult2 = intl3.format(arg1(dependencyMap[12]).t.0CRdJQ, obj2);
-      closure_5 = formatResult2;
-      closure_6 = "text-voice-connected";
-      tmp11 = formatResult2;
+      const formatResult2 = intl3.format(arg1(dependencyMap[13]).t.0CRdJQ, obj2);
+      closure_6 = formatResult2;
+      closure_7 = "text-voice-connected";
+      tmp12 = formatResult2;
       str = "text-voice-connected";
     }
   }
-  let tmp9 = stateFromStoresArray1.length > 0;
-  if (tmp9) {
-    tmp9 = null != stateFromStores1;
+  let tmp10 = stateFromStoresArray1.length > 0;
+  if (tmp10) {
+    tmp10 = null != stateFromStores1;
   }
-  tmp11 = formatResult;
+  tmp12 = formatResult;
   str = "text-muted";
-  if (tmp9) {
-    const intl2 = arg1(dependencyMap[12]).intl;
+  if (tmp10) {
+    const intl2 = arg1(dependencyMap[13]).intl;
     obj3 = { guildName: stateFromStores1, count: stateFromStoresArray1.length - 1 };
-    const formatResult3 = intl2.format(arg1(dependencyMap[12]).t.3Pm7uY, obj3);
-    closure_5 = formatResult3;
-    tmp11 = formatResult3;
+    const formatResult3 = intl2.format(arg1(dependencyMap[13]).t.3Pm7uY, obj3);
+    closure_6 = formatResult3;
+    tmp12 = formatResult3;
     str = "text-muted";
   }
 }
@@ -199,11 +202,13 @@ let closure_9 = importDefault(dependencyMap[6]);
 const NOOP = arg1(dependencyMap[7]).NOOP;
 ({ jsx: closure_11, jsxs: closure_12 } = arg1(dependencyMap[8]));
 const tmp2 = arg1(dependencyMap[8]);
-const result = arg1(dependencyMap[16]).fileFinishedImporting("modules/home_drawer/native/HomeDrawerFolderRow.tsx");
+let closure_13 = arg1(dependencyMap[9]).createStyles({ title: { <string:3461472865>: "safety_user_sentiment_notice_dismissed_at", <string:1447977218>: "message", <string:1640807382>: null }, titleText: { flexShrink: 1 } });
+const obj = arg1(dependencyMap[9]);
+const result = arg1(dependencyMap[17]).fileFinishedImporting("modules/home_drawer/native/HomeDrawerFolderRow.tsx");
 
 export default function HomeDrawerFolderExpandedChildren(folderId) {
   const arg1 = folderId.folderId;
-  let obj = arg1(dependencyMap[9]);
+  let obj = arg1(dependencyMap[10]);
   const items = [closure_7];
   const stateFromStores = obj.useStateFromStores(items, () => {
     let guildFolderById = null;
@@ -212,7 +217,7 @@ export default function HomeDrawerFolderExpandedChildren(folderId) {
     }
     return guildFolderById;
   });
-  const MobileHomeDrawerExperiment = arg1(dependencyMap[14]).MobileHomeDrawerExperiment;
+  const MobileHomeDrawerExperiment = arg1(dependencyMap[15]).MobileHomeDrawerExperiment;
   let tmp3 = null;
   if (null != stateFromStores) {
     tmp3 = null;

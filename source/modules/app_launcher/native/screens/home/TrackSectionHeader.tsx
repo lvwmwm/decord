@@ -1,10 +1,10 @@
-// Module ID: 11198
-// Function ID: 87207
+// Module ID: 11204
+// Function ID: 87230
 // Name: TrackSectionHeader
 // Dependencies: []
 // Exports: default
 
-// Module 11198 (TrackSectionHeader)
+// Module 11204 (TrackSectionHeader)
 let closure_3 = importDefault(dependencyMap[0]);
 const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/app_launcher/native/screens/home/TrackSectionHeader.tsx");
 

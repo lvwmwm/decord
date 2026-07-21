@@ -1,10 +1,10 @@
-// Module ID: 11066
-// Function ID: 86100
+// Module ID: 11072
+// Function ID: 86123
 // Name: onTapCheckpointCard
 // Dependencies: []
 // Exports: onTapCheckpointCard
 
-// Module 11066 (onTapCheckpointCard)
+// Module 11072 (onTapCheckpointCard)
 let closure_3 = importDefault(dependencyMap[0]);
 const AnalyticEvents = arg1(dependencyMap[1]).AnalyticEvents;
 const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/checkpoint/native/onTapCheckpointCard.tsx");

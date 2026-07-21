@@ -1,8 +1,8 @@
-// Module ID: 13923
-// Function ID: 105835
+// Module ID: 13930
+// Function ID: 105858
 // Dependencies: []
 
-// Module 13923
+// Module 13930
 let closure_3 = importDefault(dependencyMap[0]);
 const importAllResult = importAll(dependencyMap[1]);
 ({ ActivityIndicator: closure_5, ScrollView: closure_6, View: closure_7 } = arg1(dependencyMap[2]));
@@ -10,16 +10,16 @@ const tmp2 = arg1(dependencyMap[2]);
 ({ jsx: closure_8, jsxs: closure_9 } = arg1(dependencyMap[3]));
 let closure_10 = {};
 let obj1 = arg1(dependencyMap[4]);
-let obj = { wrapper: { backgroundColor: "innocent", height: "innocent" }, headerContentCopy: { backgroundColor: "innocent", height: "innocent" }, closeButton: { opacity: 0.5 }, scroll: { backgroundColor: "innocent", height: "innocent" }, scrollContent: { flexGrow: 1 } };
+let obj = { wrapper: {}, headerContentCopy: {}, closeButton: { opacity: 0.5 }, scroll: {}, scrollContent: { flexGrow: 1 } };
 obj = { padding: importDefault(dependencyMap[5]).space.PX_16 };
 obj.content = obj;
-obj.contentRewardsAnimatedWrapper = { backgroundColor: null, height: null };
-obj.contentRewardsWrapper = { backgroundColor: null, height: null };
+obj.contentRewardsAnimatedWrapper = {};
+obj.contentRewardsWrapper = {};
 obj.contentRewards = { alignItems: "center" };
 obj.contentRewardsCopy = { textAlign: "center" };
 obj1 = { marginBottom: importDefault(dependencyMap[5]).space.PX_16 };
 obj.contentEndCardHeader = obj1;
-obj.contentEndCardHeaderCopy = { backgroundColor: "innocent", height: "innocent" };
+obj.contentEndCardHeaderCopy = {};
 const tmp3 = arg1(dependencyMap[3]);
 obj.contentEndCard = { borderTopWidth: 1, borderTopColor: importDefault(dependencyMap[5]).colors.BORDER_STRONG, paddingTop: importDefault(dependencyMap[5]).space.PX_24, flexShrink: 0 };
 const obj2 = { borderTopWidth: 1, borderTopColor: importDefault(dependencyMap[5]).colors.BORDER_STRONG, paddingTop: importDefault(dependencyMap[5]).space.PX_24, flexShrink: 0 };
@@ -65,7 +65,7 @@ const memoResult = importAllResult.memo(function VideoQuestModalContentCompleted
     const obj3 = quest(isShareableQuestResult[12]);
     const obj5 = quest(isShareableQuestResult[11]);
     const obj6 = quest(isShareableQuestResult[12]);
-    obj.translateY = obj5.withDelay(125, obj6.withSpring(quest(isShareableQuestResult[11]).interpolate(sharedValue.get(), [null, null], ["<string:1183973378>", "<string:3528916994>"]), closure_10));
+    obj.translateY = obj5.withDelay(125, obj6.withSpring(quest(isShareableQuestResult[11]).interpolate(sharedValue.get(), ["Text", "lc"], ["<string:1186004994>", "<string:3663134722>"]), closure_10));
     const items = [obj];
     obj.transform = items;
     return obj;
@@ -114,12 +114,12 @@ const memoResult = importAllResult.memo(function VideoQuestModalContentCompleted
   }
   const sum = first + 2 * importDefault(dependencyMap[5]).space.PX_16;
   obj1 = { bottom: true, style: tmp.wrapper };
-  obj2 = { -757438122: "gr", -2463526: null, -1844932143: "Outside", style: tmp.content };
-  const obj3 = { INTEGRATION_CREATE: false, ConstraintReasonCode: false, style: tmp.headerContentCopy };
+  obj2 = { "Bool(false)": "gr", "Bool(false)": null, "Bool(false)": "Outside", style: tmp.content };
+  const obj3 = { style: tmp.headerContentCopy };
   const intl = arg1(dependencyMap[22]).intl;
   obj4 = { questName: quest.config.messages.questName };
   obj3.children = intl.formatToPlainString(arg1(dependencyMap[22]).t.EAYZAr, obj4);
-  const items3 = [callback2(arg1(dependencyMap[21]).Text, obj3), ];
+  const items3 = [callback2(arg1(dependencyMap[21]).Heading, obj3), ];
   obj5 = { onClose, style: tmp.closeButton };
   items3[1] = callback2(importDefault(dependencyMap[23]), obj5);
   obj2.children = items3;
@@ -130,7 +130,7 @@ const memoResult = importAllResult.memo(function VideoQuestModalContentCompleted
   const tmp13 = windowDimensions.get().height < 800;
   const tmp21 = callback2;
   const tmp22 = closure_6;
-  const obj8 = { spacing: importDefault(dependencyMap[5]).space.PX_24 };
+  const obj8 = { addProgressAnimation: null, preventedRoutes: null, spacing: importDefault(dependencyMap[5]).space.PX_24 };
   const items6 = [, ];
   ({ content: arr7[0], contentRewardsWrapper: arr7[1] } = tmp);
   obj8.style = items6;
@@ -153,11 +153,11 @@ const memoResult = importAllResult.memo(function VideoQuestModalContentCompleted
       const items9 = [, ];
       ({ content: arr11[0], contentEndCard: arr11[1] } = tmp);
       obj10.style = items9;
-      const obj11 = { "Bool(false)": true, "Bool(false)": "/assets/design/components/Icon/native/redesign/generated/images", style: tmp.contentEndCardHeader };
+      const obj11 = { "Null": true, "Null": "/assets/design/components/Icon/native/redesign/generated/images", style: tmp.contentEndCardHeader };
       const obj12 = { spacing: importDefault(dependencyMap[5]).space.PX_4, style: tmp.contentEndCardHeaderCopy };
       const obj13 = { children: quest.config.messages.gameTitle };
-      const items10 = [callback2(arg1(dependencyMap[21]).Text, obj13), ];
-      const obj14 = { INTEGRATION_CREATE: true, ConstraintReasonCode: true, children: quest.config.messages.gamePublisher };
+      const items10 = [callback2(arg1(dependencyMap[21]).Heading, obj13), ];
+      const obj14 = { children: quest.config.messages.gamePublisher };
       items10[1] = callback2(arg1(dependencyMap[21]).Text, obj14);
       obj12.children = items10;
       const items11 = [callback3(arg1(dependencyMap[20]).Stack, obj12), ];
@@ -185,7 +185,7 @@ const memoResult = importAllResult.memo(function VideoQuestModalContentCompleted
         tmp41 = callback2(arg1(dependencyMap[27]).PressableOpacity, obj17);
       }
       items12[1] = tmp41;
-      const obj21 = { spacing: importDefault(dependencyMap[5]).space.PX_16 };
+      const obj21 = { "Bool(true)": 0, "Bool(true)": 1, "Bool(true)": "center", spacing: importDefault(dependencyMap[5]).space.PX_16 };
       const obj22 = { grow: true, onPress: videoQuestClickCtaAndMaybeCloseModal, text: arg1(dependencyMap[15]).getExternalCtaLabel(quest) };
       const items13 = [callback2(arg1(dependencyMap[30]).Button, obj22), ];
       if (isShareableQuestResult) {
@@ -209,9 +209,9 @@ const memoResult = importAllResult.memo(function VideoQuestModalContentCompleted
     }
   }
   const obj25 = { style: tmp.contentRewards, onLayout: callback1 };
-  const obj26 = { size: str };
+  const obj26 = { ip: "isArray", type: "mode", disabled: "registerAsset", type: "Array", size: str };
   const items14 = [callback2(importDefault(dependencyMap[25]), obj26), ];
-  let obj27 = { <string:1537349871>: "category", <string:4161884830>: "y", <string:2338427745>: "isArray", style: tmp.contentRewardsCopy };
+  let obj27 = { -9223372036854775808: false, -9223372036854775808: false, 0: false, style: tmp.contentRewardsCopy };
   const intl2 = arg1(dependencyMap[22]).intl;
   const string = intl2.string;
   EMp8/M = arg1(dependencyMap[22]).t;
@@ -222,7 +222,7 @@ const memoResult = importAllResult.memo(function VideoQuestModalContentCompleted
     stringResult = string(EMp8_M.qyKLdg);
   }
   obj27.children = stringResult;
-  obj27 = callback2(arg1(dependencyMap[21]).Text, obj27);
+  obj27 = callback2(arg1(dependencyMap[21]).Heading, obj27);
   items14[1] = obj27;
   obj25.children = items14;
   callback3(closure_7, obj25);

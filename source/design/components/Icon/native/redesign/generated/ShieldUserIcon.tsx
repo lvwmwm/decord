@@ -1,10 +1,10 @@
-// Module ID: 8411
-// Function ID: 67045
+// Module ID: 8415
+// Function ID: 67057
 // Name: ShieldUserIcon
 // Dependencies: []
 // Exports: ShieldUserIcon
 
-// Module 8411 (ShieldUserIcon)
+// Module 8415 (ShieldUserIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/ShieldUserIcon.tsx");

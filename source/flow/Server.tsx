@@ -1,7 +1,7 @@
 // Module ID: 1881
 // Function ID: 20958
 // Name: PermissionOverwriteType
-// Dependencies: []
+// Dependencies: [284214097]
 
 // Module 1881 (PermissionOverwriteType)
 const _module = require(dependencyMap[0]);

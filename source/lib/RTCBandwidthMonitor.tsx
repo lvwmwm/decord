@@ -1,10 +1,10 @@
-// Module ID: 6695
-// Function ID: 51823
+// Module ID: 6701
+// Function ID: 51872
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 // Exports: getRTCTotalBytes
 
-// Module 6695 (_createForOfIteratorHelperLoose)
+// Module 6701 (_createForOfIteratorHelperLoose)
 function _createForOfIteratorHelperLoose(@@iterator) {
   let importDefault = Symbol_iterator;
   @@iterator = "undefined" !== typeof Symbol;

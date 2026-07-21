@@ -5,7 +5,7 @@
 
 // Module 943 (_OverloadYield)
 
-export default function _OverloadYield(v, arg1) {
+export default function _OverloadYield(v, SEMANTIC_ATTRIBUTE_SENTRY_ORIGIN, arg2) {
   this.v = v;
-  this.k = arg1;
+  this.k = SEMANTIC_ATTRIBUTE_SENTRY_ORIGIN;
 };

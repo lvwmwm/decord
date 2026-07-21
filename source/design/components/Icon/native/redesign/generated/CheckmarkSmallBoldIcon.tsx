@@ -1,10 +1,10 @@
-// Module ID: 8513
-// Function ID: 67890
+// Module ID: 8517
+// Function ID: 67902
 // Name: CheckmarkSmallBoldIcon
 // Dependencies: []
 // Exports: CheckmarkSmallBoldIcon
 
-// Module 8513 (CheckmarkSmallBoldIcon)
+// Module 8517 (CheckmarkSmallBoldIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/CheckmarkSmallBoldIcon.tsx");

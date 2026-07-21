@@ -1,10 +1,10 @@
-// Module ID: 9413
-// Function ID: 73268
+// Module ID: 9417
+// Function ID: 73282
 // Name: BackspaceIcon
 // Dependencies: []
 // Exports: BackspaceIcon
 
-// Module 9413 (BackspaceIcon)
+// Module 9417 (BackspaceIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/BackspaceIcon.tsx");

@@ -1,9 +1,9 @@
-// Module ID: 16368
-// Function ID: 126453
+// Module ID: 16375
+// Function ID: 126484
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
-// Module 16368 (_isNativeReflectConstruct)
+// Module 16375 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -143,7 +143,7 @@ let tmp2 = (arg0) => {
         }
         if (isEligibleForQuests) {
           let obj1 = callback(closure_2[10]);
-          obj = { <string:944832516>: "ACCOUNT_BLOCKED_USERS_V2", backShouldLeaveGuild: "platformTypes" };
+          obj = { panelHeader: null, discount: null };
           obj = { callerSource, storeSize: closure_8.quests.size, lastFetchedCurrentQuests: closure_8.lastFetchedCurrentQuests };
           const _Date = Date;
           obj.msSinceLastFetch = Date.now() - closure_8.lastFetchedCurrentQuests;

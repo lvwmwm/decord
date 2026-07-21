@@ -33,7 +33,7 @@ arg5.getInteractionCount = function getInteractionCount() {
 };
 arg5.initInteractionCountPolyfill = function initInteractionCountPolyfill() {
   if (!tmp) {
-    let closure_2 = arg1(arg6[0]).observe("event", updateEstimate, { <string:3855220740>: "absolute", <string:3854565380>: 0, <string:3853385732>: 0 });
+    let closure_2 = arg1(arg6[0]).observe("event", updateEstimate, {});
     const obj = arg1(arg6[0]);
   }
 };

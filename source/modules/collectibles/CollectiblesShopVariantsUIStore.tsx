@@ -1,10 +1,10 @@
-// Module ID: 8689
-// Function ID: 68835
+// Module ID: 8693
+// Function ID: 68847
 // Name: useSelectedVariantIndex
 // Dependencies: []
 // Exports: setSelectedVariantIndex, useSelectedVariantIndex
 
-// Module 8689 (useSelectedVariantIndex)
+// Module 8693 (useSelectedVariantIndex)
 const _module = require(dependencyMap[0]);
 let closure_2 = _module.createWithEqualityFn(() => {
   const obj = { selectionStates: new Map() };

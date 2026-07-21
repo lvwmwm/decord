@@ -1,10 +1,10 @@
-// Module ID: 4647
-// Function ID: 40262
+// Module ID: 4649
+// Function ID: 40303
 // Name: LockIcon
 // Dependencies: []
 // Exports: LockIcon
 
-// Module 4647 (LockIcon)
+// Module 4649 (LockIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/LockIcon.tsx");

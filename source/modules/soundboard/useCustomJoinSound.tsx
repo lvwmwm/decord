@@ -1,10 +1,10 @@
-// Module ID: 5762
-// Function ID: 49328
+// Module ID: 5764
+// Function ID: 49371
 // Name: _getCustomJoinSound
 // Dependencies: []
 // Exports: getCustomJoinSound, useCustomJoinSound
 
-// Module 5762 (_getCustomJoinSound)
+// Module 5764 (_getCustomJoinSound)
 function _getCustomJoinSound(arg0, arg1) {
   let joinSound;
   if (null != arg1[arg0]) {

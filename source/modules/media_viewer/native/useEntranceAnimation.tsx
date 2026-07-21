@@ -1,10 +1,10 @@
-// Module ID: 12129
-// Function ID: 93468
+// Module ID: 12136
+// Function ID: 93491
 // Name: setUseEntranceAnimationState
 // Dependencies: []
 // Exports: useEntranceAnimation
 
-// Module 12129 (setUseEntranceAnimationState)
+// Module 12136 (setUseEntranceAnimationState)
 function setUseEntranceAnimationState(arg0) {
   const arg1 = arg0;
   arg1(dependencyMap[4]).batchUpdates(() => state.setState(arg0));

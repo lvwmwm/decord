@@ -1,7 +1,7 @@
 // Module ID: 89
 // Function ID: 1517
 // Name: processColorElement
-// Dependencies: [17]
+// Dependencies: []
 
 // Module 89 (processColorElement)
 function processColorElement(arg0) {

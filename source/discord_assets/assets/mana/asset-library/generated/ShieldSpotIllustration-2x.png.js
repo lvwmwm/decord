@@ -1,9 +1,9 @@
-// Module ID: 6500
-// Function ID: 50624
+// Module ID: 6502
+// Function ID: 50667
 // Name: metadata
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 6500 (metadata)
+// Module 6502 (metadata)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/ShieldSpotIllustration-2x.png.js");
 

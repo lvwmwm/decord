@@ -1,10 +1,10 @@
-// Module ID: 11225
-// Function ID: 87414
+// Module ID: 11231
+// Function ID: 87437
 // Name: useAppsInThisServer
 // Dependencies: []
 // Exports: default
 
-// Module 11225 (useAppsInThisServer)
+// Module 11231 (useAppsInThisServer)
 let closure_4 = importAll(dependencyMap[0]);
 const useGuildIndexState = arg1(dependencyMap[1]).useGuildIndexState;
 let closure_6 = importDefault(dependencyMap[2]);

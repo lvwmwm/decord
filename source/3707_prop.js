@@ -10,11 +10,11 @@ if (Intl.ListFormat) {
     const _Intl2 = Intl;
     let obj = {};
     obj = {};
-    obj = { long: { -33553176: true, -889191202: true, -1023408923: true, -905968411: true }, narrow: { -33553176: "isArray", -889191202: "has", -1023408923: "h", -905968411: "r" }, short: { -33553176: "isArray", -889191202: "has", -1023408923: "h", -905968411: "r" } };
+    obj = { long: {}, narrow: {}, short: {} };
     obj.conjunction = obj;
     const obj1 = { long: {}, narrow: {}, short: {} };
     obj.disjunction = obj1;
-    const obj2 = { long: { -33553176: true, -889191202: true, -1023408923: true, -905968411: true }, narrow: {}, short: { -33553176: "ToString", -889191202: "sdh-IQ", -1023408923: "ToString", -905968411: "CUP" } };
+    const obj2 = { long: {}, narrow: {}, short: { "Bool(false)": -1811938582, "Bool(false)": 1140851434, "Bool(false)": 191123, "Bool(false)": 191124 } };
     obj.unit = obj2;
     obj.data = obj;
     obj.locale = "hi";
@@ -26,4 +26,4 @@ if (!prop) {
   prop = [];
 }
 globalThis.__FORMATJS_LISTFORMAT_DATA__ = prop;
-prop.push({ data: { conjunction: { long: { -33553176: true, -889191202: true, -1023408923: true, -905968411: true }, narrow: { -33553176: "isArray", -889191202: "has", -1023408923: "h", -905968411: "r" }, short: { -33553176: "isArray", -889191202: "has", -1023408923: "h", -905968411: "r" } }, disjunction: { long: {}, narrow: {}, short: {} }, unit: { long: { -33553176: true, -889191202: true, -1023408923: true, -905968411: true }, narrow: {}, short: { -33553176: "ToString", -889191202: "sdh-IQ", -1023408923: "ToString", -905968411: "CUP" } } }, locale: "hi" });
+prop.push({ data: { conjunction: { long: {}, narrow: {}, short: {} }, disjunction: { long: {}, narrow: {}, short: {} }, unit: { long: {}, narrow: {}, short: { "Bool(false)": -1811938582, "Bool(false)": 1140851434, "Bool(false)": 191123, "Bool(false)": 191124 } } }, locale: "hi" });

@@ -1,9 +1,9 @@
-// Module ID: 13238
-// Function ID: 100475
+// Module ID: 13245
+// Function ID: 100498
 // Name: toggleFeature
 // Dependencies: []
 
-// Module 13238 (toggleFeature)
+// Module 13245 (toggleFeature)
 function toggleFeature(PREFERS_COLOR_SCHEME_DARK, useReducedMotion) {
   if (useReducedMotion) {
     let closure_8 = tmp | PREFERS_COLOR_SCHEME_DARK;

@@ -1,10 +1,10 @@
-// Module ID: 8335
-// Function ID: 66116
+// Module ID: 8339
+// Function ID: 66128
 // Name: getNextBucketedTime
 // Dependencies: []
 // Exports: areSchedulesIdentical, generateNextRecurrences, getBaseScheduleForRecurrence, getEventTimeData, getInitialEventEndDate, getInitialEventStartDate, getNextRecurrenceIdInEvent, getRecurrenceOptions, getRecurrenceStatus, getScheduleForRecurrenceWithException, getScheduleFromEventData, hasScheduleChanges, hasValidSchedule, isValidRecurrence, recurrenceOptionToRecurrenceRule, recurrenceRuleToOption
 
-// Module 8335 (getNextBucketedTime)
+// Module 8339 (getNextBucketedTime)
 function getNextBucketedTime(minutes) {
   const diff = arg1 - minutes.minutes() % arg1;
   const obj = importDefault(dependencyMap[5])(minutes);
@@ -157,7 +157,7 @@ const items3 = [arg1(dependencyMap[3]).RRule.SA.weekday, arg1(dependencyMap[3]).
 const items4 = [arg1(dependencyMap[3]).RRule.FR.weekday, arg1(dependencyMap[3]).RRule.SA.weekday];
 const items5 = [arg1(dependencyMap[3]).RRule.SU.weekday, arg1(dependencyMap[3]).RRule.MO.weekday];
 const items6 = [arg1(dependencyMap[3]).RRule.SU.weekday, arg1(dependencyMap[3]).RRule.MO.weekday, arg1(dependencyMap[3]).RRule.TU.weekday, arg1(dependencyMap[3]).RRule.WE.weekday, arg1(dependencyMap[3]).RRule.TH.weekday, arg1(dependencyMap[3]).RRule.FR.weekday, arg1(dependencyMap[3]).RRule.SA.weekday];
-const set = new Set([63.60064013665511, -5428364170551526000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000]);
+const set = new Set(["STRATEGY_GENRES", "brandColorPrimary"]);
 const tmp2 = arg1(dependencyMap[2]);
 const result = arg1(dependencyMap[10]).fileFinishedImporting("modules/guild_scheduled_events/utils/ScheduleUtils.tsx");
 
@@ -186,7 +186,7 @@ export const getRecurrenceOptions = function getRecurrenceOptions(startDate) {
   items[3] = obj2;
   const obj3 = { id: "yearly", value: RecurrenceOptions.YEARLY };
   const intl5 = arg1(dependencyMap[4]).intl;
-  const obj4 = { date: toDateResult.toLocaleString(arg1(dependencyMap[4]).intl.currentLocale, {}) };
+  const obj4 = { date: toDateResult.toLocaleString(arg1(dependencyMap[4]).intl.currentLocale, { 1618834222: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003337610788552319, -1200702078: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000171145873638141 }) };
   obj3.label = intl5.formatToPlainString(arg1(dependencyMap[4]).t.5DFcVl, obj4);
   items[4] = obj3;
   const obj5 = { id: "daily", value: RecurrenceOptions.DAILY };

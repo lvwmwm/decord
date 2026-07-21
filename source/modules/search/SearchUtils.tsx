@@ -1,10 +1,10 @@
-// Module ID: 10063
-// Function ID: 77762
+// Module ID: 10069
+// Function ID: 77780
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 // Exports: clearTokenCache, filterHasAnswer, getAutocompleteMode, getChannelActiveAgoTimestamp, getChannelDisplayName, getChannelIdFromSearchContext, getChannelPlaceholderName, getFlattenedAutocompleteResults, getGuildIdFromSearchContext, getIndexingErrorText, getNonTokenQuery, getQueryContentString, getQueryFromTokens, getSearchHistoryStateId, getSearchOptionAnswer, getSearchQueryFromTokens, getSearchTabFetchId, getSelectionScope, getTabTitle, isGuildLikeSearchContext, queryHasFilter, refreshSearchTokens, removeInvalidPrivateChannelSearchTokens, searchModeToSearchQueryParams, searchQueryParamsToSearchMode, setIncludeNSFW, showDatePicker
 
-// Module 10063 (_createForOfIteratorHelperLoose)
+// Module 10069 (_createForOfIteratorHelperLoose)
 let ME;
 let SearchTokenTypes;
 function _createForOfIteratorHelperLoose(@@iterator) {
@@ -271,12 +271,12 @@ export const getTabTitle = function getTabTitle(id) {
 };
 export const searchModeToSearchQueryParams = function searchModeToSearchQueryParams(searchMode) {
   if (constants3.MOST_RELEVANT === searchMode) {
-    return { flex: "alignItems", flexDirection: "body" };
+    return { 9223372036854775807: "alignItems", 9223372036854775807: "Object" };
   } else if (constants3.OLDEST === searchMode) {
-    return { flex: "%ArrayProto_keys%", flexDirection: "content" };
+    return { 9223372036854775807: null, 9223372036854775807: null };
   } else {
     const NEWEST = constants3.NEWEST;
-    return { flex: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003680440121464, flexDirection: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000937216104 };
+    return { 9223372036854775807: 9, 9223372036854775807: "hero_art_image_link_dark_theme" };
   }
 };
 export const searchQueryParamsToSearchMode = function searchQueryParamsToSearchMode(sort_by) {
@@ -514,10 +514,10 @@ export const getAutocompleteMode = function getAutocompleteMode(cursorScope, tok
   }
   ({ currentToken, nextToken, previousToken } = obj);
   if (0 === tokens.length) {
-    obj = { "Bool(false)": "Normal", "Bool(false)": true, "Bool(false)": "AbortSignal", type: constants2.EMPTY };
+    obj = { 1052628925: null, 1988643825: "\u{1F9BB}\u{1F3FF}", -910148119: true, type: constants2.EMPTY };
     return obj;
   } else if (null == currentToken) {
-    obj = { "Bool(false)": "Normal", "Bool(false)": true, "Bool(false)": "AbortSignal", type: constants2.FILTER_ALL };
+    obj = { 1052628925: null, 1988643825: "\u{1F9BB}\u{1F3FF}", -910148119: true, type: constants2.FILTER_ALL };
     return obj;
   } else {
     if (obj9.isSearchFilterTokenType(currentToken.type)) {

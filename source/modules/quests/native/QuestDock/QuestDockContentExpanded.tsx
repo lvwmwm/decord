@@ -1,8 +1,8 @@
-// Module ID: 13956
-// Function ID: 106098
+// Module ID: 13963
+// Function ID: 106121
 // Dependencies: []
 
-// Module 13956
+// Module 13963
 const importAllResult = importAll(dependencyMap[0]);
 const QuestDockMode = arg1(dependencyMap[2]).QuestDockMode;
 ({ QUEST_DOCK_MODE_CHANGE_PHYSICS: closure_5, QUEST_DOCK_EXPANDED_HEIGHT: closure_6 } = arg1(dependencyMap[3]));

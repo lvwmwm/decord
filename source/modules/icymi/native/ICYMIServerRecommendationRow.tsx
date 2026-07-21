@@ -1,10 +1,10 @@
-// Module ID: 15111
-// Function ID: 114050
+// Module ID: 15118
+// Function ID: 114074
 // Name: CutoutGuildBanner
 // Dependencies: []
 // Exports: ICYMIServerRecommendationRow
 
-// Module 15111 (CutoutGuildBanner)
+// Module 15118 (CutoutGuildBanner)
 function CutoutGuildBanner(guild) {
   guild = guild.guild;
   const arg1 = guild;
@@ -73,7 +73,7 @@ function FeaturedServer(guild) {
   const items2 = [callback3(CutoutGuildBanner, { guild }), , ];
   obj = { style: tmp.featuredServerInnerContainer };
   const items3 = [callback3(arg1(dependencyMap[21]).Text, { style: tmp.featuredServerTitle, children: guild.name }), ];
-  const obj2 = { "Bool(false)": null, "Bool(false)": "e0ca5aec7f428c808429bc2700a4d1c2", "Bool(false)": "money_birb_placeholder_dark", "Bool(false)": "png", children: guild.description };
+  const obj2 = { 9223372036854775807: null, -9223372036854775808: "e0ca5aec7f428c808429bc2700a4d1c2", 0: "money_birb_placeholder_dark", "Bool(true)": "png", children: guild.description };
   items3[1] = callback3(arg1(dependencyMap[21]).Text, obj2);
   obj.children = items3;
   items2[1] = callback4(View, obj);
@@ -142,10 +142,10 @@ let closure_17 = arg1(dependencyMap[9]).createICYMIStyles((marginHorizontal) => 
   const obj3 = { position: "absolute", bottom: importDefault(dependencyMap[10]).space.PX_12, left: importDefault(dependencyMap[10]).space.PX_12, right: importDefault(dependencyMap[10]).space.PX_12 };
   obj.featuredServerTitle = { marginBottom: importDefault(dependencyMap[10]).space.PX_8 };
   obj.guildIcon = {};
-  obj.bannerImage = { <string:1140607356>: null, <string:1751293292>: "<string:894566402>" };
+  obj.bannerImage = { <string:1632221346>: "SOURCE_MESSAGE_DELETED", <string:2722977214>: "EMTLOT" };
   const obj4 = { marginBottom: importDefault(dependencyMap[10]).space.PX_8 };
   obj.emptyBanner = { backgroundColor: importDefault(dependencyMap[10]).colors.BACKGROUND_MOD_SUBTLE };
-  const obj6 = { <string:1362780554>: true, <string:996344829>: "/assets/modules/guild_role_subscriptions/native/images", <string:106146390>: 24, <string:1545952201>: 24, <string:2642694693>: null, borderRadius: importDefault(dependencyMap[10]).radii.lg, backgroundColor: importDefault(dependencyMap[10]).colors.CARD_BACKGROUND_DEFAULT };
+  const obj6 = { "Bool(false)": true, "Bool(false)": "/assets/modules/guild_role_subscriptions/native/images", "Bool(false)": 24, "Bool(false)": 24, "Bool(false)": null, borderRadius: importDefault(dependencyMap[10]).radii.lg, backgroundColor: importDefault(dependencyMap[10]).colors.CARD_BACKGROUND_DEFAULT };
   obj.featuredServerContainer = obj6;
   return obj;
 });
@@ -161,11 +161,11 @@ export const ICYMIServerRecommendationRow = function ICYMIServerRecommendationRo
   if (0 !== stateFromStoresArray.length) {
     obj = {};
     obj = { style: tmp.container };
-    const obj1 = { Promise: "done", marginTop: "construct", flags: "apply", style: tmp.title };
+    const obj1 = { "Null": true, "Null": true, "Null": true, style: tmp.title };
     const intl = arg1(dependencyMap[19]).intl;
     obj1.children = intl.string(arg1(dependencyMap[19]).t.lv1tce);
     const items1 = [callback3(arg1(dependencyMap[21]).Text, obj1), , ];
-    const obj2 = { Promise: 25966145, marginTop: 569860352, flags: 1352089873, style: tmp.subtitle };
+    const obj2 = { style: tmp.subtitle };
     const intl2 = arg1(dependencyMap[19]).intl;
     obj2.children = intl2.string(arg1(dependencyMap[19]).t.x4OezN);
     items1[1] = callback3(arg1(dependencyMap[21]).Text, obj2);

@@ -1,9 +1,9 @@
-// Module ID: 5591
-// Function ID: 47466
+// Module ID: 5593
+// Function ID: 47508
 // Name: SignalHelpers
 // Dependencies: []
 
-// Module 5591 (SignalHelpers)
+// Module 5593 (SignalHelpers)
 let closure_2 = importDefault(dependencyMap[0]);
 let closure_3 = importDefault(dependencyMap[1]);
 let closure_4 = importDefault(dependencyMap[2]);

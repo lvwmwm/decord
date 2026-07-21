@@ -1,9 +1,9 @@
-// Module ID: 15931
-// Function ID: 122206
+// Module ID: 15938
+// Function ID: 122232
 // Name: isEligible
 // Dependencies: []
 
-// Module 15931 (isEligible)
+// Module 15938 (isEligible)
 function isEligible() {
   const isExperimentEligible = importDefault(dependencyMap[0]).getIsExperimentEligible();
   const obj = importDefault(dependencyMap[0]);

@@ -1,9 +1,9 @@
-// Module ID: 6590
-// Function ID: 50759
+// Module ID: 6592
+// Function ID: 50802
 // Name: metadata
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 6590 (metadata)
+// Module 6592 (metadata)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/TrafficConeSpotIllustration-2x.png.js");
 

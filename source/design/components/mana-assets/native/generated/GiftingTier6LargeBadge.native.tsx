@@ -1,10 +1,10 @@
-// Module ID: 6229
-// Function ID: 50217
+// Module ID: 6231
+// Function ID: 50260
 // Name: GiftingTier6LargeBadge
-// Dependencies: [33554456, 1946157056, 33, 5231]
+// Dependencies: [33554456, 1946157056, 33, 5233]
 // Exports: GiftingTier6LargeBadge
 
-// Module 6229 (GiftingTier6LargeBadge)
+// Module 6231 (GiftingTier6LargeBadge)
 import preload from "preload";
 
 const jsx = require(dependencyMap[0]).jsx;

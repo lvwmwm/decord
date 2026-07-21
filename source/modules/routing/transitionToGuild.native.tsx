@@ -1,10 +1,10 @@
-// Module ID: 5730
-// Function ID: 49237
+// Module ID: 5732
+// Function ID: 49280
 // Name: transitionToGuild
 // Dependencies: []
 // Exports: transitionToGuild
 
-// Module 5730 (transitionToGuild)
+// Module 5732 (transitionToGuild)
 const Routes = require(dependencyMap[0]).Routes;
 const _module = require(dependencyMap[4]);
 const result = _module.fileFinishedImporting("modules/routing/transitionToGuild.native.tsx");

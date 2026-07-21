@@ -1,10 +1,10 @@
-// Module ID: 5499
-// Function ID: 46838
+// Module ID: 5501
+// Function ID: 46880
 // Name: TableRowGroupTitle
 // Dependencies: []
 // Exports: TableRowGroup
 
-// Module 5499 (TableRowGroupTitle)
+// Module 5501 (TableRowGroupTitle)
 class TableRowGroupTitle {
   constructor(arg0) {
     ({ title, style, lineClamp } = global);
@@ -90,7 +90,7 @@ export const TableRowGroup = function TableRowGroup(accessibilityRole) {
   const items = [tmp7, , , ];
   let tmp10 = null != description;
   if (tmp10) {
-    const obj2 = { INTEGRATION_CREATE: "<string:1900005261>", ConstraintReasonCode: "Array", style: tmp.description, children: description };
+    const obj2 = { style: tmp.description, children: description };
     tmp10 = callback(arg1(dependencyMap[6]).Text, obj2);
   }
   items[1] = tmp10;

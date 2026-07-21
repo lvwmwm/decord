@@ -1,15 +1,15 @@
-// Module ID: 9908
-// Function ID: 76665
+// Module ID: 9913
+// Function ID: 76681
 // Name: ForLaterCardActionButtons
 // Dependencies: []
 // Exports: default
 
-// Module 9908 (ForLaterCardActionButtons)
+// Module 9913 (ForLaterCardActionButtons)
 let closure_3 = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 ({ jsx: closure_5, jsxs: closure_6 } = arg1(dependencyMap[2]));
 const tmp2 = arg1(dependencyMap[2]);
-let closure_7 = arg1(dependencyMap[3]).createStyles({ actionGroup: { 0: null, 9223372036854775807: null } });
+let closure_7 = arg1(dependencyMap[3]).createStyles({ actionGroup: {} });
 const obj = arg1(dependencyMap[3]);
 const result = arg1(dependencyMap[17]).fileFinishedImporting("modules/saved_messages/native/ForLaterCardActionButtons.tsx");
 
@@ -101,9 +101,6 @@ export default function ForLaterCardActionButtons(savedMessage) {
   }
   const obj4 = { style: callback2().actionGroup };
   const obj5 = {
-    0: 40,
-    9223372036854775807: true,
-    0: "/assets/.cache/intl/bW9kdWxlcy9jaGVja291dC9tZXNzYWdlcw==",
     items: items2,
     children(ref) {
       let obj = Object.create(null);

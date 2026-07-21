@@ -83,7 +83,7 @@ function _addTracingHeadersToFetchRequest(headers, headers2, span, propagateTrac
         if (Array.isArray(headers)) {
           const arr4 = callback2(headers);
           if (!headers.find((arg0) => "sentry-trace" === arg0[0])) {
-            const items = [, tmp3];
+            const items = [null, tmp3];
             arr4.push(items);
           }
           let tmp28 = tmp;
@@ -94,7 +94,7 @@ function _addTracingHeadersToFetchRequest(headers, headers2, span, propagateTrac
             tmp28 = !headers.find((arg0) => "traceparent" === arg0[0]);
           }
           if (tmp28) {
-            const items1 = ["<string:1358955615>", traceparent];
+            const items1 = [, traceparent];
             arr4.push(items1);
           }
           let tmp30 = baggage;
@@ -108,7 +108,7 @@ function _addTracingHeadersToFetchRequest(headers, headers2, span, propagateTrac
             });
           }
           if (tmp30) {
-            const items2 = [544342017, baggage];
+            const items2 = [90, baggage];
             arr4.push(items2);
           }
           return arr4;

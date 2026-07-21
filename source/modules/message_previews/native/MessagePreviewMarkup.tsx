@@ -1,10 +1,10 @@
-// Module ID: 10239
-// Function ID: 79168
+// Module ID: 10245
+// Function ID: 79187
 // Name: getRules
 // Dependencies: []
 // Exports: renderMessagePreviewMarkup
 
-// Module 10239 (getRules)
+// Module 10245 (getRules)
 function getRules(layout) {
   let color;
   let fontScale;

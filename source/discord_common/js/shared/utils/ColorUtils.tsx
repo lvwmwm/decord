@@ -185,7 +185,7 @@ export const rgb2int = function rgb2int(str) {
     const _parseInt3 = parseInt;
     obj.blue = parseInt(match[3]);
   } else {
-    obj = {};
+    obj = { "Bool(true)": "spring", "Bool(true)": "linear", "Bool(true)": "easeInEaseOut" };
   }
   return (obj.red << 16) + (obj.green << 8) + obj.blue;
 };

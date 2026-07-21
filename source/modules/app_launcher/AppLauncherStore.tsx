@@ -1,9 +1,9 @@
-// Module ID: 8169
-// Function ID: 64492
+// Module ID: 8173
+// Function ID: 64504
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
-// Module 8169 (_isNativeReflectConstruct)
+// Module 8173 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -36,7 +36,7 @@ let closure_3 = importDefault(dependencyMap[1]);
 let closure_4 = importDefault(dependencyMap[2]);
 let closure_5 = importDefault(dependencyMap[3]);
 let closure_6 = importDefault(dependencyMap[4]);
-let obj = { themeOverride: true, savedClientTheme: true, flexGrow: true, paddingBottom: true, overflow: true, entrypoint: arg1(dependencyMap[5]).AppLauncherEntrypoint.NONE, lastShownEntrypoint: arg1(dependencyMap[5]).AppLauncherEntrypoint.NONE, closeReason: arg1(dependencyMap[5]).AppLauncherCloseReason.DISMISSED, initialState: undefined };
+let obj = { entrypoint: arg1(dependencyMap[5]).AppLauncherEntrypoint.NONE, lastShownEntrypoint: arg1(dependencyMap[5]).AppLauncherEntrypoint.NONE, closeReason: arg1(dependencyMap[5]).AppLauncherCloseReason.DISMISSED, initialState: undefined };
 let tmp2 = (Store) => {
   class AppLauncherStore {
     constructor() {

@@ -1,10 +1,10 @@
-// Module ID: 14989
-// Function ID: 112907
+// Module ID: 14996
+// Function ID: 112931
 // Name: getBannerLabel
 // Dependencies: []
 // Exports: default
 
-// Module 14989 (getBannerLabel)
+// Module 14996 (getBannerLabel)
 function getBannerLabel(state) {
   if (constants.WAITING_FOR_NETWORK === state) {
     const intl3 = arg1(dependencyMap[9]).intl;
@@ -177,14 +177,14 @@ const AnalyticEvents = arg1(dependencyMap[5]).AnalyticEvents;
 const tmp2 = arg1(dependencyMap[2]);
 ({ jsx: closure_12, jsxs: closure_13 } = arg1(dependencyMap[6]));
 let closure_14 = [];
-let closure_15 = [36, 97.646, 171.162, 0];
-let closure_16 = { "Null": false, "Null": false };
-let closure_17 = { "Null": -721485569, "Null": 3375103 };
-let closure_18 = [0, 0.167, 0.167, 16.667];
-let closure_19 = { "Null": false, "Null": true };
-let closure_20 = { "Null": 131072.00314656927, "Null": 0.000000000000000000000000000000000000000000000000000000011294471302334573 };
+let closure_15 = [97.646, 171.162, 0, 95.94];
+let closure_16 = { max: false, guildId: false };
+let closure_17 = { max: 3211264, guildId: 2042617856 };
+let closure_18 = [0.167, 0.167, 16.667, 59.6];
+let closure_19 = { max: -536870861, guildId: -299892737 };
+let closure_20 = {};
 let obj = arg1(dependencyMap[7]);
-obj = { container: {}, glow: { rowCount: "isArray", AnnouncementChannelReturn: "skuId", y: "T", PRUNE_DELETE_DAYS: "r", PREMIUM_UNCANCEL_WINBACK_MODAL_VIEWED: "isArray" }, glowMaskGradient: { flex: 1 } };
+obj = { container: {}, glow: { marginBottom: "center", justifyContent: null, alignItems: 4, it: 4, now: "rgba(0, 0, 0, 0.75)" }, glowMaskGradient: { flex: 1 } };
 obj = { height: CONNECTION_BANNER_HEIGHT, gap: importDefault(dependencyMap[8]).space.PX_8, paddingHorizontal: importDefault(dependencyMap[8]).space.PX_12 };
 obj.content = obj;
 obj.leadingSlot = {};

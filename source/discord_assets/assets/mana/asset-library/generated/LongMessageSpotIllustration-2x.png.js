@@ -1,9 +1,9 @@
-// Module ID: 6278
-// Function ID: 50291
+// Module ID: 6280
+// Function ID: 50334
 // Name: metadata
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 6278 (metadata)
+// Module 6280 (metadata)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/LongMessageSpotIllustration-2x.png.js");
 

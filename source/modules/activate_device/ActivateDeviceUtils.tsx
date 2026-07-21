@@ -1,10 +1,10 @@
-// Module ID: 12754
-// Function ID: 97814
+// Module ID: 12761
+// Function ID: 97837
 // Name: clientIdToActivateDevicePlatform
 // Dependencies: []
 // Exports: clientIdToActivateDevicePlatform
 
-// Module 12754 (clientIdToActivateDevicePlatform)
+// Module 12761 (clientIdToActivateDevicePlatform)
 const PlatformTypes = require(dependencyMap[0]).PlatformTypes;
 const _module = require(dependencyMap[2]);
 const result = _module.fileFinishedImporting("modules/activate_device/ActivateDeviceUtils.tsx");

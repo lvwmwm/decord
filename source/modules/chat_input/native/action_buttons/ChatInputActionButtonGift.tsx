@@ -1,8 +1,8 @@
-// Module ID: 11337
-// Function ID: 88161
+// Module ID: 11343
+// Function ID: 88184
 // Dependencies: []
 
-// Module 11337
+// Module 11343
 let closure_3 = importDefault(dependencyMap[0]);
 const importAllResult = importAll(dependencyMap[1]);
 const View = arg1(dependencyMap[2]).View;
@@ -14,9 +14,9 @@ const ContentDismissActionType = arg1(dependencyMap[6]).ContentDismissActionType
 const tmp2 = arg1(dependencyMap[7]);
 let closure_12 = arg1(dependencyMap[8]).createStyles(() => {
   let obj = {};
-  obj = { left: importDefault(dependencyMap[9]).space.PX_4, borderColor: 16777216, borderWidth: 113, backgroundColor: 7668224, borderRadius: importDefault(dependencyMap[9]).radii.round, right: importDefault(dependencyMap[9]).space.PX_4 };
+  obj = { o: 24182785, concat: 16777216, o: 113, borderRadius: importDefault(dependencyMap[9]).radii.round, position: 2013265920, left: importDefault(dependencyMap[9]).space.PX_4, right: importDefault(dependencyMap[9]).space.PX_4 };
   obj.gradientContainer = obj;
-  obj = { left: "isArray", borderColor: "skuId", borderWidth: "T", backgroundColor: "r", borderRadius: importDefault(dependencyMap[9]).radii.sm };
+  obj = { o: "center", concat: null, o: 4, borderRadius: importDefault(dependencyMap[9]).radii.sm, position: "rgba(0, 0, 0, 0.75)" };
   obj.gradientContainerRefresh = obj;
   obj.transparentBackground = { backgroundColor: "transparent" };
   return obj;
@@ -160,7 +160,7 @@ const memoResult = importAllResult.memo(function ChatInputActionButtonGift(arg0)
         num3 = angle;
       }
       obj2.angle = num3;
-      obj2.angleCenter = {};
+      obj2.angleCenter = { max: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011125378664662503, guildId: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002834178582291256 };
       obj2.colors = gradient.colors;
       tmp25Result = callback2(importDefault(dependencyMap[19]), obj2);
       const tmp25 = callback2;

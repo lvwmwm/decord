@@ -1,10 +1,10 @@
-// Module ID: 15897
-// Function ID: 121815
+// Module ID: 15904
+// Function ID: 121839
 // Name: InAppReportsFeedbackActionSheet
 // Dependencies: []
 // Exports: default
 
-// Module 15897 (InAppReportsFeedbackActionSheet)
+// Module 15904 (InAppReportsFeedbackActionSheet)
 importAll(dependencyMap[0]);
 const AnalyticEvents = arg1(dependencyMap[1]).AnalyticEvents;
 const FeedbackType = arg1(dependencyMap[2]).FeedbackType;
@@ -15,7 +15,7 @@ export default function InAppReportsFeedbackActionSheet(arg0) {
   ({ reportId: closure_0, reportType: closure_1 } = arg0);
   let obj = arg1(dependencyMap[5]);
   const result = obj.improperGetEnglishIntlMessageText("CALL_FEEDBACK_OPTION_OTHER");
-  obj = { 1414727442: null, 351700189: null, -1498590505: null };
+  obj = { "Null": null, "Null": null, "Null": null };
   const tmp = importDefault(dependencyMap[4])();
   const intl = arg1(dependencyMap[7]).intl;
   obj.headerLabel = intl.string(arg1(dependencyMap[7]).t.MP5lDj);

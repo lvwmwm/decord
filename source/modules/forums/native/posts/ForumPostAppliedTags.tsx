@@ -1,18 +1,18 @@
-// Module ID: 11120
-// Function ID: 86567
+// Module ID: 11126
+// Function ID: 86590
 // Name: ForumPostAppliedTagPills
 // Dependencies: []
 // Exports: ForumPostAppliedTagPills, ForumPostAppliedTags
 
-// Module 11120 (ForumPostAppliedTagPills)
+// Module 11126 (ForumPostAppliedTagPills)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 ({ jsx: closure_3, jsxs: closure_4, Fragment: closure_5 } = arg1(dependencyMap[2]));
 let obj = arg1(dependencyMap[3]);
-obj = { pillTagsContainer: { "Bool(true)": 8, "Bool(true)": null, "Bool(true)": "\u270A\u{1F3FF}" } };
+obj = { pillTagsContainer: {} };
 obj = { backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_SURFACE_HIGH };
 obj.tag = obj;
-obj.tagsContainer = { "Bool(true)": 8, "Bool(true)": null, "Bool(true)": "\u270A\u{1F3FF}" };
+obj.tagsContainer = {};
 const tmp3 = arg1(dependencyMap[2]);
 obj.dot = { backgroundColor: importDefault(dependencyMap[4]).colors.BORDER_SUBTLE };
 let closure_6 = obj.createStyles(obj);

@@ -1,10 +1,10 @@
-// Module ID: 11996
-// Function ID: 92732
+// Module ID: 12003
+// Function ID: 92755
 // Name: useUserProfileApplicationRoleConnections
 // Dependencies: []
 // Exports: default
 
-// Module 11996 (useUserProfileApplicationRoleConnections)
+// Module 12003 (useUserProfileApplicationRoleConnections)
 const useMemo = require(dependencyMap[0]).useMemo;
 let closure_3 = importDefault(dependencyMap[1]);
 let closure_4 = [];

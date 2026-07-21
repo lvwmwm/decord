@@ -1,10 +1,10 @@
-// Module ID: 8930
-// Function ID: 70408
+// Module ID: 8934
+// Function ID: 70420
 // Name: TwoWayLinkLanding
 // Dependencies: []
 // Exports: TwoWayLinkLanding
 
-// Module 8930 (TwoWayLinkLanding)
+// Module 8934 (TwoWayLinkLanding)
 importAll(dependencyMap[0]);
 ({ Image: closure_2, View: closure_3, ScrollView: closure_4 } = arg1(dependencyMap[1]));
 let closure_5 = importDefault(dependencyMap[2]);
@@ -52,7 +52,7 @@ export const TwoWayLinkLanding = function TwoWayLinkLanding(learnMoreLink) {
   items1[1] = tmp9;
   obj2.style = items1;
   const items2 = [callback(closure_2, obj2), , , ];
-  const obj3 = { style: twoWayLinkStyles.title };
+  const obj3 = { y: 1548812289, isArray: 186630151, split: -1224736477, ix: 2013266539, style: twoWayLinkStyles.title };
   let tmp11 = headerConnect;
   if (stateFromStores) {
     tmp11 = headerConnect;
@@ -70,10 +70,7 @@ export const TwoWayLinkLanding = function TwoWayLinkLanding(learnMoreLink) {
       let subLabel;
       label = label.label;
       ({ subLabel, icon } = label);
-      let obj = { start: 0 === arg1, end: arg1 === valueProps.length - 1, subLabel };
-      obj = { INTEGRATION_CREATE: false, ConstraintReasonCode: false, children: label };
-      obj.label = callback2(callback(valueProps[7]).Text, obj);
-      obj.icon = callback2(callback(valueProps[8]).TableRow.Icon, { IconComponent: icon });
+      const obj = { start: 0 === arg1, end: arg1 === valueProps.length - 1, subLabel, label: callback2(callback(valueProps[7]).Text, { children: label }), icon: callback2(callback(valueProps[8]).TableRow.Icon, { IconComponent: icon }) };
       return callback2(callback(valueProps[8]).TableRow, obj, label);
     })
   });
@@ -91,8 +88,8 @@ export const TwoWayLinkLanding = function TwoWayLinkLanding(learnMoreLink) {
   obj.children = items3;
   const items4 = [closure_7(closure_4, obj), ];
   const obj8 = { bottom: true, style: twoWayLinkStyles.footerContainer };
-  const obj9 = { 0: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000009252006906561652, 0: -0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001187686903601299, style: twoWayLinkStyles.footerButton };
-  const obj10 = { <string:1522289750>: null, <string:570601313>: null };
+  const obj9 = { y: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000024775554727510072, isArray: -4183974104870716000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, style: twoWayLinkStyles.footerButton };
+  const obj10 = {};
   const intl2 = arg1(dependencyMap[10]).intl;
   obj10.text = intl2.string(arg1(dependencyMap[10]).t.LhlgY9);
   obj10.onPress = onNext;

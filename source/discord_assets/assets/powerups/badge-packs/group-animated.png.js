@@ -1,9 +1,9 @@
-// Module ID: 11566
-// Function ID: 89963
+// Module ID: 11573
+// Function ID: 89986
 // Name: metadata
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 11566 (metadata)
+// Module 11573 (metadata)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_assets/assets/powerups/badge-packs/group-animated.png.js");
 

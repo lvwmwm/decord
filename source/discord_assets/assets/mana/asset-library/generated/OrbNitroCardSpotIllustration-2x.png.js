@@ -1,9 +1,9 @@
-// Module ID: 6388
-// Function ID: 50456
+// Module ID: 6390
+// Function ID: 50499
 // Name: metadata
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 6388 (metadata)
+// Module 6390 (metadata)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/OrbNitroCardSpotIllustration-2x.png.js");
 

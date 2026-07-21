@@ -1,9 +1,9 @@
-// Module ID: 15845
-// Function ID: 121290
+// Module ID: 15852
+// Function ID: 121314
 // Name: ExistingUserAgeGateScreens
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 15845 (ExistingUserAgeGateScreens)
+// Module 15852 (ExistingUserAgeGateScreens)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("modules/age_gate/native/ExistingUserAgeGateConstants.tsx");
 

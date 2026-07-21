@@ -4,7 +4,7 @@
 // Dependencies: []
 
 // Module 28 (ActivityIndicator)
-let closure_2 = ["ellipsizeMode", "disabled", "id", "nativeID", "numberOfLines", "onLongPress", "onPress"];
+let closure_2 = [null, null, null, null, null, null, null];
 let closure_3 = importDefault(dependencyMap[0]);
 importAll(dependencyMap[1]);
 const jsx = arg1(dependencyMap[2]).jsx;
@@ -57,11 +57,11 @@ class ActivityIndicator {
     tmp8 = importDefault(dependencyMap[4]);
     obj5 = importDefault(dependencyMap[5]);
     obj2.style = obj5.compose(closure_6.container, global.style);
-    obj2.children = jsx(closure_5, Object.assign({}, merged, { "Null": "SentryTelemetry", "Null": "User" }));
+    obj2.children = jsx(closure_5, Object.assign({}, merged, {}));
     return jsx(tmp8, obj2);
   }
 }
 ActivityIndicator.displayName = "ActivityIndicator";
-let closure_6 = importDefault(dependencyMap[5]).create({ container: {}, sizeSmall: { aze: false, azj: false }, sizeLarge: { aze: false, azj: false } });
+let closure_6 = importDefault(dependencyMap[5]).create({ container: {}, sizeSmall: { bhk: false, bic: "internal" }, sizeLarge: {} });
 
 export default ActivityIndicator;

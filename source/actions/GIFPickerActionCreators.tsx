@@ -1,10 +1,10 @@
-// Module ID: 9563
-// Function ID: 74523
+// Module ID: 9568
+// Function ID: 74540
 // Name: trackSearchStart
 // Dependencies: []
 // Exports: addFavoriteGIF, fetchSuggestions, fetchTrending, fetchTrendingGIFs, fetchTrendingSearchTerms, initializeSearch, removeFavoriteGIF, search, trackSelectGIF
 
-// Module 9563 (trackSearchStart)
+// Module 9568 (trackSearchStart)
 function trackSearchStart(arg0) {
   if (null != arg0) {
     let obj = {};
@@ -19,7 +19,7 @@ function trackSearchStart(arg0) {
   obj.gif_provider = arg1(dependencyMap[5]).getProviderForAPIRequest();
   obj3.trackWithMetadata(constants.SEARCH_STARTED, obj);
 }
-function trackSearchResultViewed(arg0, type) {
+function trackSearchResultViewed(totalResults, type) {
   let obj = arg2;
   if (arg2 === undefined) {
     obj = {};
@@ -28,13 +28,13 @@ function trackSearchResultViewed(arg0, type) {
   obj = Object.create(null);
   obj.startTime = 0;
   const merged = Object.assign(obj, obj);
-  obj = { "Null": true, "Null": true, totalResults: arg0.length };
+  obj = { totalResults: totalResults.length };
   let obj2 = type(dependencyMap[6]);
   const obj1 = {};
   const analyticsID = store.getAnalyticsID();
   const merged1 = Object.assign(obj);
   const merged2 = Object.assign(merged);
-  obj1["results"] = arg0.length;
+  obj1["results"] = totalResults.length;
   const result = obj2.calculateAnalyticsMetadata(analyticsID, type, obj1);
   if (null == startTime) {
     obj2 = {};
@@ -76,7 +76,7 @@ function doSearchRequest(q, arg1, limit) {
   });
 }
 function resetSearch() {
-  importDefault(dependencyMap[8]).dispatch({});
+  importDefault(dependencyMap[8]).dispatch({ 1654742353: "np", 760298154: 72 });
 }
 function gifUrlKey(uri) {
   let str = uri;

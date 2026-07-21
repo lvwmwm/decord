@@ -1,10 +1,10 @@
-// Module ID: 8518
-// Function ID: 67900
+// Module ID: 8522
+// Function ID: 67912
 // Name: useIsPremiumSubscriber
 // Dependencies: []
 // Exports: useIsPremiumSubscriber
 
-// Module 8518 (useIsPremiumSubscriber)
+// Module 8522 (useIsPremiumSubscriber)
 let closure_2 = importDefault(dependencyMap[0]);
 const PremiumTypes = arg1(dependencyMap[1]).PremiumTypes;
 const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/premium/useIsPremiumSubscriber.tsx");

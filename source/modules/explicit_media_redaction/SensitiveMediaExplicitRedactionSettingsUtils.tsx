@@ -1,10 +1,10 @@
-// Module ID: 5670
-// Function ID: 48677
+// Module ID: 5672
+// Function ID: 48720
 // Name: resolveExplicitContentSettingWithDefaults
 // Dependencies: []
 // Exports: shouldRedactMessageMediaForForum, updateExplicitContentSetting
 
-// Module 5670 (resolveExplicitContentSettingWithDefaults)
+// Module 5672 (resolveExplicitContentSettingWithDefaults)
 function resolveExplicitContentSettingWithDefaults(isFriend) {
   let isDm;
   let setting;
@@ -116,7 +116,7 @@ function getExplicitContentSettingOrDefault(arg0) {
   obj.setting = prop1;
   obj.isDm = true;
   obj.explicitContentNonFriendDm = resolveExplicitContentSettingWithDefaults(obj);
-  const obj1 = { 520035839: null, 1157570559: null, 315659: null };
+  const obj1 = { "Bool(true)": null, "Bool(true)": null, "Bool(true)": null };
   let prop2;
   if (null != setting) {
     prop2 = setting.explicitContentFriendDm;

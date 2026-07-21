@@ -1,10 +1,10 @@
-// Module ID: 8761
-// Function ID: 69268
+// Module ID: 8765
+// Function ID: 69280
 // Name: GiftIcon
 // Dependencies: []
 // Exports: GiftIcon
 
-// Module 8761 (GiftIcon)
+// Module 8765 (GiftIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/GiftIcon.tsx");

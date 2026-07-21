@@ -1,10 +1,10 @@
-// Module ID: 10360
-// Function ID: 79946
+// Module ID: 10366
+// Function ID: 79969
 // Name: items
 // Dependencies: []
 // Exports: default
 
-// Module 10360 (items)
+// Module 10366 (items)
 importAll(dependencyMap[0]);
 const Image = arg1(dependencyMap[1]).Image;
 ({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[2]));
@@ -53,7 +53,7 @@ const items2 = [
   }
 ];
 const tmp3 = arg1(dependencyMap[2]);
-let closure_9 = arg1(dependencyMap[10]).createStyles({ text: { "Bool(false)": 2013266936, "Bool(false)": 1140851704, "Bool(false)": 192532 }, header: { textAlign: "center" }, image: {} });
+let closure_9 = arg1(dependencyMap[10]).createStyles({ text: { action: null, messageReference: null, medium: null }, header: { textAlign: "center" }, image: { <string:2695743315>: "<string:1931038976>", <string:3713832927>: "paymentSource", <string:4272015777>: "<string:47534336>", <string:1604441697>: "OPT_OUT_PRICE_INCREASE", <string:921197205>: "<string:826409216>" } });
 const obj = arg1(dependencyMap[10]);
 const result = arg1(dependencyMap[17]).fileFinishedImporting("modules/channel_following/native/components/ChannelFollowSuccessAlert.tsx");
 

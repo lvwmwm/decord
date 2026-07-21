@@ -1,10 +1,10 @@
-// Module ID: 7649
-// Function ID: 61188
+// Module ID: 7648
+// Function ID: 61183
 // Name: getQuickReactionLabel
 // Dependencies: []
 // Exports: createMessageAccessibilityActions, getMessageAccessibilityActionFromLabel
 
-// Module 7649 (getQuickReactionLabel)
+// Module 7648 (getQuickReactionLabel)
 function getQuickReactionLabel() {
   const DoubleTapReactionEmoji = arg1(dependencyMap[3]).DoubleTapReactionEmoji;
   const setting = DoubleTapReactionEmoji.getSetting();
@@ -32,7 +32,7 @@ function getQuickReactionLabel() {
 let closure_2 = importDefault(dependencyMap[0]);
 let closure_3 = importDefault(dependencyMap[1]);
 const Permissions = arg1(dependencyMap[2]).Permissions;
-const obj = { VIEW_PROFILE: "view_profile", ADD_REACTION: "add_reaction", ADD_QUICK_REACTION: "add_quick_reaction", REPLY: "reply", MESSAGE_ACTIONS_MENU: "message_actions_menu", EDIT_GDM: "edit_gdm" };
+const obj = { VIEW_PROFILE: "view_profile", ADD_REACTION: "add_reaction", ADD_QUICK_REACTION: "add_quick_reaction", REPLY: "reply", MESSAGE_ACTIONS_MENU: "message_actions_menu", EDIT_GDM: "edit_gdm", OPEN_PINS: "open_pins", JUMP_TO_MESSAGE: "jump_to_message" };
 const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/messages/native/MessageAccessibilityActions.tsx");
 
 export const MessageAccessibilityAction = obj;
@@ -48,6 +48,10 @@ export const getMessageAccessibilityActionFromLabel = function getMessageAccessi
   obj[intl4.string(arg1(dependencyMap[5]).t.ChPNkN)] = obj.MESSAGE_ACTIONS_MENU;
   const intl5 = arg1(dependencyMap[5]).intl;
   obj[intl5.string(arg1(dependencyMap[5]).t.5Q9+/L)] = obj.EDIT_GDM;
+  const intl6 = arg1(dependencyMap[5]).intl;
+  obj[intl6.string(arg1(dependencyMap[5]).t.mp1N/2)] = obj.OPEN_PINS;
+  const intl7 = arg1(dependencyMap[5]).intl;
+  obj[intl7.string(arg1(dependencyMap[5]).t.+TSRGD)] = obj.JUMP_TO_MESSAGE;
   const tmp = getQuickReactionLabel();
   if (null != tmp) {
     obj[tmp] = obj.ADD_QUICK_REACTION;

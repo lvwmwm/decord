@@ -1,10 +1,10 @@
-// Module ID: 7416
-// Function ID: 59615
+// Module ID: 7420
+// Function ID: 59626
 // Name: useHasActiveTrial
 // Dependencies: []
 // Exports: getPremiumTrialOffer, hasActiveTrial, isEligibleTrialSub, useCurrentPremiumTrialTier, useHasActiveTrial
 
-// Module 7416 (useHasActiveTrial)
+// Module 7420 (useHasActiveTrial)
 let closure_2 = importDefault(dependencyMap[0]);
 let closure_3 = importDefault(dependencyMap[1]);
 let closure_4 = importDefault(dependencyMap[2]);

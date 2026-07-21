@@ -700,12 +700,12 @@ const fn = function t() {
       return htmlTag(`h${content.level}`, arg1(content.content, arg2));
     };
     obj.heading = obj1;
-    let obj2 = { ./errors: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000005997767603075845, @braintree/extended-promise: 89081637869763350000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, @braintree/wrap-promise: -0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000015650091073991962, ../../lib/analytics: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000031785814556737986, ../../lib/braintree-error: -0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002353437368277194 };
+    let obj2 = { withTiming: "OPACITY_YELLOW_8", FEATURE_PROMO_URL: 0.0784313725490196, withTiming: "OPACITY_8", FOOTER_FADE_START_PROGRESS: 0.0784313725490196, withTiming: "OPACITY_16" };
     let num5 = 2;
     obj2.match = blockRegex(obj.NPTABLE_REGEX);
     obj2.parse = obj.parseNpTable;
     obj.nptable = obj2;
-    let obj3 = { ./errors: false, @braintree/extended-promise: "none", @braintree/wrap-promise: true, ../../lib/analytics: true, ../../lib/braintree-error: "auto" };
+    let obj3 = { withTiming: false, FEATURE_PROMO_URL: "none", withTiming: true, FOOTER_FADE_START_PROGRESS: true, withTiming: "indicator" };
     let num6 = 3;
     let num7 = 3;
     obj3.match = blockRegex(/^([^\n]+)\n *(=|-){3,} *(?:\n *)+\n/);
@@ -965,7 +965,7 @@ const fn = function t() {
     let num21 = 11;
     let num22 = 11;
     obj11.order = 10;
-    obj11.requiredFirstCharacters = [];
+    obj11.requiredFirstCharacters = [1958871041];
     obj11.match = blockRegex(/^(?:\n *)*\n/);
     obj11.parse = ignoreCapture;
     obj11.react = function react(arg0, arg1, arg2) {
@@ -991,7 +991,7 @@ const fn = function t() {
     let obj13 = {};
     let num24 = 13;
     let num25 = 13;
-    obj13.requiredFirstCharacters = ["Pink"];
+    obj13.requiredFirstCharacters = ["Array"];
     let tmp10 = inlineRegex;
     obj13.match = inlineRegex(/^\\([^0-9A-Za-z\s])/);
     obj13.parse = function parse(content) {
@@ -1019,9 +1019,9 @@ const fn = function t() {
       return " &vert; ";
     };
     obj.tableSeparator = obj14;
-    let obj15 = {};
+    let obj15 = { "Bool(true)": null, "Bool(true)": 14, "Bool(true)": null, "Bool(true)": "\u{1FAF1}\u{1F3FF}\u200D\u{1FAF2}\u{1F3FD}", "Bool(true)": true, "Bool(true)": null };
     let num27 = 15;
-    obj15.requiredFirstCharacters = [];
+    obj15.requiredFirstCharacters = [false];
     obj15.match = inlineRegex(/^<([^: >]+:\/[^ >]+)>/);
     obj15.parse = function parse(content) {
       let obj = { type: "link", content: items, target: content[1] };
@@ -1030,7 +1030,7 @@ const fn = function t() {
       return obj;
     };
     obj.autolink = obj15;
-    let obj16 = { ./errors: 14, @braintree/extended-promise: null, @braintree/wrap-promise: "\u{1FAF0}\u{1F3FF}", ../../lib/analytics: true, ../../lib/braintree-error: null };
+    let obj16 = { withTiming: 14, FEATURE_PROMO_URL: null, withTiming: "\u{1FAF0}\u{1F3FF}", FOOTER_FADE_START_PROGRESS: true, withTiming: null };
     let num28 = 16;
     obj16.match = inlineRegex(/^<([^ >]+@[^ >]+)>/);
     obj16.parse = function parse(content) {
@@ -1044,10 +1044,10 @@ const fn = function t() {
       return obj;
     };
     obj.mailto = obj16;
-    let obj17 = {};
+    let obj17 = { "Bool(true)": true, "Bool(true)": true, "Bool(true)": true, "Bool(true)": true, "Bool(true)": true, "Bool(true)": true };
     let num29 = 17;
     let num30 = 17;
-    obj17.requiredFirstCharacters = [null];
+    obj17.requiredFirstCharacters = [];
     obj17.match = inlineRegex(/^(https?:\/\/[^\s<]+[^<.,:;"')\]\s])/);
     obj17.parse = function parse(content) {
       let obj = { type: "link", content: items, target: content[1], title: undefined };
@@ -1060,7 +1060,7 @@ const fn = function t() {
     let num31 = 18;
     let num32 = 18;
     obj18.order = 17;
-    obj18.requiredFirstCharacters = [null];
+    obj18.requiredFirstCharacters = ["rect"];
     let _RegExp = RegExp;
     let tmp11 = new.target;
     let str2 = "^\\[((?:\\[[^\\]]*\\]|[^\\[\\]]|\\](?=[^\\[]*\\]))*)\\]\\(\\s*<?((?:\\([^)]*\\)|[^\\s\\\\]|\\\\.)*?)>?(?:\\s+['\"]([\\s\\S]*?)['\"])?\\s*\\)";
@@ -1111,7 +1111,7 @@ const fn = function t() {
       return parseRef(alt, _defs, { type: "link", content: arg1(alt[1], _defs) });
     };
     obj.reflink = obj20;
-    let obj21 = {};
+    let obj21 = { withTiming: false, FEATURE_PROMO_URL: false, withTiming: false, FOOTER_FADE_START_PROGRESS: false, withTiming: false };
     let num35 = 21;
     let num36 = 21;
     let _RegExp4 = RegExp;
@@ -1158,7 +1158,7 @@ const fn = function t() {
     let obj23 = {};
     let num37 = 21;
     obj23.order = num36;
-    obj23.requiredFirstCharacters = [null];
+    obj23.requiredFirstCharacters = ["<string:1982989120>"];
     obj23.match = inlineRegex(/^\*\*((?:\\[\s\S]|[^\\])+?)\*\*(?!\*)/);
     obj23.quality = function quality(arg0) {
       return arg0[0].length + 0.1;
@@ -1176,7 +1176,7 @@ const fn = function t() {
     let sum = tmp31 + 1;
     let tmp33 = sum;
     obj24.order = tmp31;
-    obj24.requiredFirstCharacters = [null];
+    obj24.requiredFirstCharacters = ["LoadMore"];
     obj24.match = inlineRegex(/^__((?:\\[\s\S]|[^\\])+?)__(?!_)/);
     obj24.quality = function quality(arg0) {
       return arg0[0].length;
@@ -1194,7 +1194,7 @@ const fn = function t() {
     let sum1 = tmp34 + 1;
     let tmp36 = sum1;
     obj25.order = tmp34;
-    obj25.requiredFirstCharacters = [true];
+    obj25.requiredFirstCharacters = ["MANUAL_BUILD_OVERRIDE"];
     obj25.match = inlineRegex(/^~~(?=\S)((?:\\[\s\S]|~(?!~)|[^\s~]|\s(?!~~))+?)~~/);
     obj25.parse = parseCaptureInline;
     obj25.react = function react(content, arg1, key) {
@@ -1209,7 +1209,7 @@ const fn = function t() {
     let sum2 = tmp37 + 1;
     let tmp39 = sum2;
     obj26.order = tmp37;
-    obj26.requiredFirstCharacters = ["innerRef"];
+    obj26.requiredFirstCharacters = [true];
     obj26.match = inlineRegex(/^(`+)([\s\S]*?[^`])\1(?!`)/);
     obj26.parse = function parse(arg0, arg1, arg2) {
       return { content: str.replace(closure_26, "$1") };
@@ -1226,7 +1226,7 @@ const fn = function t() {
     let sum3 = tmp40 + 1;
     let tmp42 = sum3;
     obj27.order = tmp40;
-    obj27.requiredFirstCharacters = [null];
+    obj27.requiredFirstCharacters = [33210851629578355000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000];
     let tmp43 = anyScopeRegex;
     obj27.match = anyScopeRegex(/^ {2,}\n/);
     obj27.parse = ignoreCapture;

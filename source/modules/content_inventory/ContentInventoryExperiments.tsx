@@ -1,23 +1,23 @@
-// Module ID: 12490
-// Function ID: 95748
+// Module ID: 12497
+// Function ID: 95771
 // Name: apexExperiment
 // Dependencies: []
 // Exports: isEligibleForContentInventoryV1, isEligibleForImpressionCapping, useIsHotwheelsClickableGameIconEnabled
 
-// Module 12490 (apexExperiment)
+// Module 12497 (apexExperiment)
 const _module = require(dependencyMap[1]);
-let obj = { "Null": "displayName", "Null": "st", defaultConfig: {}, variations: { [0]: {} } };
+let obj = { margin: "displayName", paddingHorizontal: "value", defaultConfig: { getUserVerificationFooterText: null, face_with_hand_over_mouth: null }, variations: { [0]: { getUserVerificationFooterText: null, face_with_hand_over_mouth: null } } };
 const apexExperiment = _module.createApexExperiment(obj);
 const _module1 = require(dependencyMap[2]);
-obj = { commonTriggerPoint: require(dependencyMap[0]).CommonTriggerPoints.CONNECTION_OPEN, defaultConfig: {}, treatments: items };
-const obj1 = { "Bool(false)": "r", "Bool(false)": "CONNECTIONS_AUTHORIZE", config: {} };
+obj = { y: 16, createBackgroundHighlight: 16, y: null, commonTriggerPoint: require(dependencyMap[0]).CommonTriggerPoints.CONNECTION_OPEN, defaultConfig: {} };
+const obj1 = { -1174339580: null, -1169096700: "Group 4", config: {} };
 const items = [obj1, ];
-const obj2 = { "Bool(false)": 24, "Bool(false)": -60, config: {} };
+const obj2 = { -1174339580: -1952366081, -1169096700: -2140012542, config: {} };
 items[1] = obj2;
+obj.treatments = items;
 const experiment = _module1.createExperiment(obj);
 const _module2 = require(dependencyMap[1]);
-const obj3 = { -1269606814: -2140012542, -1845285747: 2080374784, defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } };
-const apexExperiment1 = _module2.createApexExperiment(obj3);
+const apexExperiment1 = _module2.createApexExperiment({ defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } });
 const _module3 = require(dependencyMap[4]);
 const result = _module3.fileFinishedImporting("modules/content_inventory/ContentInventoryExperiments.tsx");
 

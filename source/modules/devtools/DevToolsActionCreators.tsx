@@ -1,10 +1,10 @@
-// Module ID: 13378
-// Function ID: 101759
+// Module ID: 13385
+// Function ID: 101782
 // Name: updateDevToolsSettings
-// Dependencies: [889192469, 469762074, 33554448]
+// Dependencies: [989855765, 469762074, 33554448]
 // Exports: clearAnalyticsLog, openDevTools, toggleDisplayDevTools
 
-// Module 13378 (updateDevToolsSettings)
+// Module 13385 (updateDevToolsSettings)
 function updateDevToolsSettings(settings) {
   let obj = importDefault(dependencyMap[1]);
   obj = { type: "DEV_TOOLS_SETTINGS_UPDATE", settings };

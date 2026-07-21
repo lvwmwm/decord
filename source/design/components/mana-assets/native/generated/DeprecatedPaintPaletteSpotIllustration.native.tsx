@@ -1,10 +1,10 @@
-// Module ID: 5975
-// Function ID: 49836
+// Module ID: 5977
+// Function ID: 49879
 // Name: DeprecatedPaintPaletteSpotIllustration
 // Dependencies: []
 // Exports: DeprecatedPaintPaletteSpotIllustration
 
-// Module 5975 (DeprecatedPaintPaletteSpotIllustration)
+// Module 5977 (DeprecatedPaintPaletteSpotIllustration)
 const jsx = require(dependencyMap[0]).jsx;
 const _module = require(dependencyMap[3]);
 const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/DeprecatedPaintPaletteSpotIllustration.native.tsx");

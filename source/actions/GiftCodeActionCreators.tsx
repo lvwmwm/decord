@@ -1,10 +1,10 @@
-// Module ID: 8183
-// Function ID: 64715
+// Module ID: 8187
+// Function ID: 64727
 // Name: resolveGiftCode
 // Dependencies: []
 // Exports: resolveGiftCode
 
-// Module 8183 (resolveGiftCode)
+// Module 8187 (resolveGiftCode)
 function resolveGiftCode() {
   return _resolveGiftCode(...arguments);
 }
@@ -142,7 +142,7 @@ const obj = {
       obj = { type: "GIFT_CODE_REVOKE", code: callback };
       obj.dispatch(obj);
       const HTTP = callback(closure_2[11]).HTTP;
-      obj = { CONVERSATIONS: null, replace: null, push: null, url: closure_8.USER_GIFT_CODE_REVOKE(callback) };
+      obj = { lc: null, type: null, end: null, url: closure_8.USER_GIFT_CODE_REVOKE(callback) };
       yield HTTP.del(obj);
       callback2(closure_2[6]).dispatch({ type: "GIFT_CODE_REVOKE_SUCCESS", code: callback });
     })();

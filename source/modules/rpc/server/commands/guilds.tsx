@@ -1,8 +1,8 @@
-// Module ID: 13270
-// Function ID: 100820
+// Module ID: 13277
+// Function ID: 100843
 // Dependencies: []
 
-// Module 13270
+// Module 13277
 let RPCCommands;
 const getGuildIconURL = require(dependencyMap[0]).getGuildIconURL;
 let closure_3 = importDefault(dependencyMap[1]);

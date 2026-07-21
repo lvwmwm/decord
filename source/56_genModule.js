@@ -1,7 +1,7 @@
 // Module ID: 56
 // Function ID: 1388
 // Name: genModule
-// Dependencies: [4294967295, 4294967295]
+// Dependencies: []
 
 // Module 56 (genModule)
 function genModule(arg0, arg1) {

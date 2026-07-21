@@ -1,10 +1,10 @@
-// Module ID: 10921
-// Function ID: 84922
+// Module ID: 10926
+// Function ID: 84943
 // Name: CloudIcon
 // Dependencies: []
 // Exports: CloudIcon
 
-// Module 10921 (CloudIcon)
+// Module 10926 (CloudIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/CloudIcon.tsx");

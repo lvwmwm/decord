@@ -200,7 +200,7 @@ function sendRequest(arg0, url) {
       if (!closure_0) {
         callback(err);
         if (null != callback2) {
-          const obj = { "Null": true, "Null": true, err };
+          const obj = { "Null": null, "Null": null, err };
           callback2(obj);
         }
       }
@@ -267,7 +267,7 @@ function sendRequest(arg0, url) {
     callback3(arg1);
     arg3(code);
     if (null != arg4) {
-      const obj = { "Null": true, "Null": true, err: code };
+      const obj = { "Null": null, "Null": null, err: code };
       arg4(obj);
     }
   });
@@ -386,7 +386,7 @@ function makeRequest(arg0, arg1, arg2) {
         const tmp26 = callback2(value.status, value.latestErrorMessage, Math.round((value.retryAfterTimestamp - Date.now()) / 1000));
         self(tmp26);
         if (null != arg2) {
-          obj = { "Null": 4, "Null": 8, "Null": true, "Null": "/assets/images/native", "Null": 36 };
+          obj = {};
           ({ status: obj2.status, body: obj2.body } = tmp26);
           obj.headers = {};
           arg2(obj);
@@ -411,8 +411,8 @@ let closure_5 = importDefault(dependencyMap[2]);
 let closure_6 = importDefault(dependencyMap[3]);
 let closure_7 = importDefault(dependencyMap[4]);
 const logger = new arg1(dependencyMap[6]).Logger("HTTPUtils");
-const set = new Set([true, true, true, true, true, true, true, true]);
-const set1 = new Set([10706562482359084000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, 115200320042580850000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000]);
+const set = new Set([null, 604120065, -1291779838, 134371073, 1375866628, 1535377774, 1551437219, null]);
+const set1 = new Set(["filter", "View"]);
 const tmp6 = (arg0) => {
   class HTTPResponseError {
     constructor(arg0, arg1) {
@@ -458,7 +458,8 @@ let bindResult3 = makeRequest.bind(null, "del");
 const obj = { get: noop, post: bindResult, put: bindResult1, patch: bindResult2, del: bindResult3 };
 if (global.isServerRendering) {
   noop = function noop() {
-    return Promise.resolve({ headers: {} });
+    const obj = { 1795124223: "Chrome", 1845456127: "(?:HeadlessChrome)", 1912565759: "Chrome Mobile", 1979675647: "(?:CriOS|CrMo)", 1895788287: "Firefox", headers: {} };
+    return Promise.resolve(obj);
   };
   bindResult = noop;
   bindResult1 = noop;

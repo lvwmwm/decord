@@ -1,9 +1,9 @@
-// Module ID: 8318
-// Function ID: 65926
+// Module ID: 8322
+// Function ID: 65938
 // Name: listItemToType
 // Dependencies: []
 
-// Module 8318 (listItemToType)
+// Module 8322 (listItemToType)
 function listItemToType(data) {
   const kind = data.data.kind;
   if ("end" === kind) {

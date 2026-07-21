@@ -1,10 +1,10 @@
-// Module ID: 11242
-// Function ID: 87503
+// Module ID: 11248
+// Function ID: 87526
 // Name: BillIcon
 // Dependencies: []
 // Exports: BillIcon
 
-// Module 11242 (BillIcon)
+// Module 11248 (BillIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/BillIcon.tsx");

@@ -8,8 +8,8 @@
 let closure_2 = importDefault(dependencyMap[0]);
 const Platform = arg1(dependencyMap[1]).Platform;
 
-export const isHermesEnabled = function isHermesEnabled() {
-  return arg1(dependencyMap[2]).RN_GLOBAL_OBJ.HermesInternal;
+export const isHermesEnabled = function isHermesEnabled(LRUMap, items) {
+  return items(dependencyMap[2]).RN_GLOBAL_OBJ.HermesInternal;
 };
 export const isTurboModuleEnabled = function isTurboModuleEnabled() {
   let tmp = true === arg1(dependencyMap[2]).RN_GLOBAL_OBJ.RN$Bridgeless;

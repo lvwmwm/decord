@@ -1,10 +1,10 @@
-// Module ID: 7075
-// Function ID: 56682
+// Module ID: 7079
+// Function ID: 56693
 // Name: getAttachmentMimeTypes
 // Dependencies: []
 // Exports: logMessageSendFailure
 
-// Module 7075 (getAttachmentMimeTypes)
+// Module 7079 (getAttachmentMimeTypes)
 function getAttachmentMimeTypes(fileItems) {
   return fileItems.map((mimeType) => {
     mimeType = mimeType.mimeType;

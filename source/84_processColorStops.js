@@ -1,10 +1,13 @@
 // Module ID: 84
 // Function ID: 1499
 // Name: processColorStops
-// Dependencies: []
+// Dependencies: [225, 108, 109]
 // Exports: default
 
 // Module 84 (processColorStops)
+import FileReaderModule from "FileReaderModule";
+import module_108 from "module_108";
+
 function processColorStops(nextResult) {
   const items = [];
   let num = 0;
@@ -312,8 +315,8 @@ function parseRadialGradientCSSString(str) {
             const trimmed3 = str50.toLowerCase().trim();
             const str52 = str50.toLowerCase();
             const trimmed4 = str51.toLowerCase().trim();
-            const items = ["<string:1096357698>", 440276217, 621618548];
-            const items1 = ["id", "importantForAccessibility", "nativeID"];
+            const items = ["accessibilityLabelledBy", "accessibilityLiveRegion", "accessibilityState"];
+            const items1 = ["ResponderEventPlugin", "ReactNativeBridgeEventPlugin", "<string:1644167512>"];
             if (items.includes(trimmed3)) {
               if (items1.includes(trimmed4)) {
                 let str26 = "0%";
@@ -711,13 +714,13 @@ function getDirectionForKeyword(formatted) {
   } else {
     formatted = formatted.replace(/\s+/g, " ").toLowerCase();
     if ("to top" === formatted) {
-      return {};
+      return { paddingHorizontal: false, alignItems: false };
     } else if ("to right" === formatted) {
-      return {};
+      return { paddingHorizontal: "<string:2515402609>", alignItems: "LengthDelimited" };
     } else if ("to bottom" === formatted) {
       return {};
     } else if ("to left" === formatted) {
-      return {};
+      return { paddingHorizontal: 1105662145, alignItems: 1071644672 };
     } else {
       if ("to top right" !== formatted) {
         if ("to right top" !== formatted) {
@@ -730,16 +733,16 @@ function getDirectionForKeyword(formatted) {
                       return null;
                     }
                   }
-                  return {};
+                  return { paddingHorizontal: 1105289233, alignItems: 1798307697 };
                 }
               }
-              return {};
+              return { paddingHorizontal: 1105704685, alignItems: 2145386496 };
             }
           }
-          return {};
+          return { paddingHorizontal: 89884678807936840000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, alignItems: 89884678811215600000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 };
         }
       }
-      return {};
+      return { paddingHorizontal: 3342436, alignItems: 893378560 };
     }
     const str9 = formatted.replace(/\s+/g, " ");
   }
@@ -779,8 +782,6 @@ function getPositionFromCSSValue(trimmed) {
   }
   return parsed;
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
 let closure_4 = /^to\s+(?:top|bottom|left|right)(?:\s+(?:top|bottom|left|right))?/i;
 let closure_5 = /^([+-]?\d*\.?\d+)(deg|grad|rad|turn)$/i;
 let closure_6 = {};

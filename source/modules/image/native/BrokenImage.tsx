@@ -1,10 +1,10 @@
-// Module ID: 11187
-// Function ID: 87178
+// Module ID: 11193
+// Function ID: 87201
 // Name: BrokenImage
 // Dependencies: []
 // Exports: default
 
-// Module 11187 (BrokenImage)
+// Module 11193 (BrokenImage)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/image/native/BrokenImage.tsx");

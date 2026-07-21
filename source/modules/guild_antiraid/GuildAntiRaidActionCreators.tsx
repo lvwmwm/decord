@@ -1,10 +1,10 @@
-// Module ID: 10960
-// Function ID: 85255
+// Module ID: 10965
+// Function ID: 85276
 // Name: _setGuildRaidAlerts
 // Dependencies: []
 // Exports: handleReportRaid, handleResolveRaid, setGuildIncidentActions, setGuildRaidAlerts, trackReportRaidViewed
 
-// Module 10960 (_setGuildRaidAlerts)
+// Module 10965 (_setGuildRaidAlerts)
 function _setGuildRaidAlerts() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);

@@ -1,10 +1,10 @@
-// Module ID: 10735
-// Function ID: 83440
+// Module ID: 10741
+// Function ID: 83463
 // Name: ChannelCallSingleController
 // Dependencies: []
 // Exports: ChannelCallSingleController
 
-// Module 10735 (ChannelCallSingleController)
+// Module 10741 (ChannelCallSingleController)
 let closure_3 = importAll(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 let closure_5 = importDefault(dependencyMap[2]);

@@ -1,10 +1,10 @@
-// Module ID: 10309
-// Function ID: 79599
+// Module ID: 10315
+// Function ID: 79618
 // Name: getDisplayName
 // Dependencies: []
 // Exports: default
 
-// Module 10309 (getDisplayName)
+// Module 10315 (getDisplayName)
 function getDisplayName(tag) {
   if (null == tag.tag) {
     let str3 = tag.label;
@@ -166,11 +166,11 @@ export default function serializeAppStartLogs(arg0) {
                 let tmp11 = tmp;
                 if (!tmp) {
                   tmp11 = diff > 5 && !function isSuperNoisyLog(arg0) {
-                    const items = [null, null];
+                    const items = [false, false];
                     return items.some(() => { ... });
                   }(str);
                   const tmp12 = diff > 5 && !function isSuperNoisyLog(arg0) {
-                    const items = [null, null];
+                    const items = [false, false];
                     return items.some(() => { ... });
                   }(str);
                 }

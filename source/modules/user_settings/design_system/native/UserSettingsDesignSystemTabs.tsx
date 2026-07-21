@@ -1,17 +1,17 @@
-// Module ID: 14309
-// Function ID: 108099
+// Module ID: 14316
+// Function ID: 108122
 // Name: UserSettingsDesignSystemTabs
 // Dependencies: []
 // Exports: default
 
-// Module 14309 (UserSettingsDesignSystemTabs)
+// Module 14316 (UserSettingsDesignSystemTabs)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 ({ View: closure_5, ScrollView: closure_6 } = arg1(dependencyMap[2]));
 const tmp2 = arg1(dependencyMap[2]);
 ({ jsxs: closure_7, jsx: closure_8 } = arg1(dependencyMap[3]));
 let obj = arg1(dependencyMap[4]);
-obj = { container: { overflow: true, GIFT_CARD_TERMS: true, GameDiversityTier6SmallBadge: true } };
+obj = { container: { <string:4068194642>: true, <string:2260882308>: true, <string:3907445669>: true } };
 obj = { backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_LOWEST, borderColor: importDefault(dependencyMap[5]).colors.BORDER_STRONG };
 obj.item = obj;
 let closure_9 = obj.createStyles(obj);
@@ -105,11 +105,11 @@ export default function UserSettingsDesignSystemTabs() {
   items1[1] = tmp20;
   obj2.children = items1;
   const items2 = [callback3(closure_5, obj2), callback4(callback(closure_2[13]).SegmentedControlPages, { state: segmentedControlState }), , ];
-  const obj4 = { 0: 1, 0: null };
+  const obj4 = { y: 1, isArray: null };
   const obj5 = {
-    numberOfLines: null,
-    expandable: null,
-    seeMoreLabel: null,
+    height: "center",
+    accessibilityRole: "wrap",
+    hasDiversityParent: "/assets/.cache/intl/bW9kdWxlcy9ndWlsZF9zZXR0aW5ncy9zZXJ2ZXJfbW9uZXRpemF0aW9uL3RhZ3Mvd2Vi",
     disabled: first >= 10,
     onPress() {
       return callback2(first + 1);
@@ -127,10 +127,9 @@ export default function UserSettingsDesignSystemTabs() {
   obj4.children = items3;
   items2[2] = callback3(callback(closure_2[10]).Stack, obj4);
   const obj7 = {};
-  const obj8 = { 9223372036854775807: false, 9223372036854775807: false, value: first1, onValueChange: tmp4[1] };
-  const items4 = [callback4(callback(closure_2[15]).TableSwitchRow, obj8), callback4(callback(closure_2[15]).TableSwitchRow, { label: "Enable Counts", value: tmp7, onValueChange: tmp8 }), ];
-  const obj9 = { "Bool(true)": "<string:1908422910>", "Bool(true)": "a", value: first2, onValueChange: tmp9[1] };
-  items4[2] = callback4(callback(closure_2[15]).TableSwitchRow, obj9);
+  const items4 = [callback4(callback(closure_2[15]).TableSwitchRow, { value: first1, onValueChange: tmp4[1] }), callback4(callback(closure_2[15]).TableSwitchRow, { label: "Enable Counts", value: tmp7, onValueChange: tmp8 }), ];
+  const obj8 = { <string:2895359124>: null, <string:4234941778>: "a252d183eacce43fd0ee5d8aedb6e162", value: first2, onValueChange: tmp9[1] };
+  items4[2] = callback4(callback(closure_2[15]).TableSwitchRow, obj8);
   obj7.children = items4;
   items2[3] = callback3(closure_5, obj7);
   obj1.children = items2;

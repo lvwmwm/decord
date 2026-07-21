@@ -1,10 +1,10 @@
-// Module ID: 5716
-// Function ID: 49085
+// Module ID: 5718
+// Function ID: 49128
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 // Exports: getIdFromHistoryItem, getNavigationHistory, handleHistoryStoreNavigationChange
 
-// Module 5716 (_createForOfIteratorHelperLoose)
+// Module 5718 (_createForOfIteratorHelperLoose)
 function _createForOfIteratorHelperLoose(@@iterator) {
   let arg1 = Symbol_iterator;
   @@iterator = "undefined" !== typeof Symbol;

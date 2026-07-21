@@ -1,10 +1,10 @@
-// Module ID: 11644
-// Function ID: 90350
+// Module ID: 11651
+// Function ID: 90373
 // Name: useProvisionalAccountExplanationText
 // Dependencies: []
 // Exports: useProvisionalAccountExplanationText
 
-// Module 11644 (useProvisionalAccountExplanationText)
+// Module 11651 (useProvisionalAccountExplanationText)
 let closure_3 = importAll(dependencyMap[0]);
 const HelpdeskArticles = arg1(dependencyMap[1]).HelpdeskArticles;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/provisional_accounts/hooks/useProvisionalAccountExplanationText.tsx");

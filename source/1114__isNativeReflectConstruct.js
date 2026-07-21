@@ -142,14 +142,14 @@ const tmp3 = (Component) => {
   };
   return callback2(Profiler, items);
 }(_module.Component);
-const merged = Object.assign(tmp3, { defaultProps: { Math: true, v: false, __closure: true } });
+const merged = Object.assign(tmp3, { defaultProps: {} });
 
 export const Profiler = tmp3;
 export const UNKNOWN_COMPONENT = "unknown";
 export const useProfiler = function useProfiler(arg0) {
   const require = arg0;
   if (arguments.length > 1) {
-    let closure_1 = { <string:415471555>: true, <string:3737368842>: true };
+    let closure_1 = {};
     const callback = callback(_module.useState(() => {
       let obj = arg0(disabled[8]);
       obj = { name: "<" + arg0 + ">", onlyIfParent: true, op: arg0(disabled[9]).REACT_MOUNT_OP, attributes: callback(callback({}, arg0(disabled[10]).SEMANTIC_ATTRIBUTE_SENTRY_ORIGIN, "auto.ui.react.profiler"), "ui.component_name", arg0) };

@@ -1,9 +1,9 @@
-// Module ID: 5317
-// Function ID: 45136
+// Module ID: 5319
+// Function ID: 45177
 // Name: showTooManyUserGuildsAlert
 // Dependencies: []
 
-// Module 5317 (showTooManyUserGuildsAlert)
+// Module 5319 (showTooManyUserGuildsAlert)
 function showTooManyUserGuildsAlert(quantity) {
   let obj = importDefault(dependencyMap[12]);
   obj = {};
@@ -145,7 +145,7 @@ function waitForGuild(id) {
     return flag;
   }));
 }
-let closure_4 = [];
+let closure_4 = [2.857, 0];
 let closure_5 = importDefault(dependencyMap[0]);
 let closure_6 = importDefault(dependencyMap[1]);
 let closure_7 = importDefault(dependencyMap[2]);
@@ -366,7 +366,7 @@ const obj = {
         if (null != closure_3) {
           obj = closure_3;
         } else {
-          obj = { flexGrow: "Normal", marginTop: true, marginBottom: "AbortSignal" };
+          obj = { "Null": null, "Null": "\u{1F9BB}\u{1F3FF}", textAlign: true };
           let num2 = 0;
           if (null != callback3) {
             num2 = callback3;
@@ -431,7 +431,7 @@ const obj = {
   deleteRole(id, id2) {
     id2 = id;
     const HTTP = id2(dependencyMap[16]).HTTP;
-    const obj = { CONVERSATIONS: null, replace: null, push: null, url: closure_16.GUILD_ROLE(id, id2) };
+    const obj = { lc: null, type: null, end: null, url: closure_16.GUILD_ROLE(id, id2) };
     HTTP.del(obj).then(() => {
       const result = callback(closure_3[30]).checkGuildTemplateDirty(arg0);
     });
@@ -601,10 +601,10 @@ const obj = {
           }
           const obj6 = arg1(dependencyMap[34]);
         }
-        arg1(dependencyMap[17]).transitionTo(closure_21.FRIENDS, { "Bool(false)": true, "Bool(false)": true });
+        arg1(dependencyMap[17]).transitionTo(closure_21.FRIENDS, { GIFT_CODE_EMBED: null, flexShrink: null });
         const obj5 = arg1(dependencyMap[17]);
       } else {
-        arg1(dependencyMap[17]).transitionTo(closure_21.FRIENDS, { "Bool(false)": true, "Bool(false)": true });
+        arg1(dependencyMap[17]).transitionTo(closure_21.FRIENDS, { GIFT_CODE_EMBED: null, flexShrink: null });
         const obj2 = arg1(dependencyMap[17]);
       }
     } else {

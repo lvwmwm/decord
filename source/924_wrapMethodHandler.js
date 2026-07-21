@@ -1,12 +1,10 @@
 // Module ID: 924
 // Function ID: 10067
 // Name: wrapMethodHandler
-// Dependencies: [943, 5, 77, 934, 936]
+// Dependencies: []
 // Exports: wrapAllMCPHandlers
 
 // Module 924 (wrapMethodHandler)
-import _OverloadYield from "_OverloadYield";
-
 function wrapMethodHandler(arg0, prompt) {
   const require = prompt;
   require(dependencyMap[1]).fill(arg0, prompt, (arg0) => {
@@ -111,6 +109,7 @@ function wrapResourceHandlers(arg0) {
 function wrapPromptHandlers(arg0) {
   wrapMethodHandler(arg0, "prompt");
 }
+let closure_2 = require(dependencyMap[0]);
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 
 export const wrapAllMCPHandlers = function wrapAllMCPHandlers(arg0) {

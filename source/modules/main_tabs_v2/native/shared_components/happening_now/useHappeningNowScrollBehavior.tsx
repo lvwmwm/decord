@@ -1,10 +1,10 @@
-// Module ID: 14797
-// Function ID: 111570
+// Module ID: 14804
+// Function ID: 111594
 // Name: useHappeningNowScrollBehavior
 // Dependencies: []
 // Exports: default, useHappeningNowScrollSnapping
 
-// Module 14797 (useHappeningNowScrollBehavior)
+// Module 14804 (useHappeningNowScrollBehavior)
 let closure_0 = importDefault(dependencyMap[0]);
 let closure_1 = importAll(dependencyMap[1]);
 const result = arg1(dependencyMap[2]).fileFinishedImporting("modules/main_tabs_v2/native/shared_components/happening_now/useHappeningNowScrollBehavior.tsx");

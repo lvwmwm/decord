@@ -1,10 +1,10 @@
-// Module ID: 14583
-// Function ID: 109910
+// Module ID: 14590
+// Function ID: 109932
 // Name: DraggableContainer
 // Dependencies: []
 // Exports: default
 
-// Module 14583 (DraggableContainer)
+// Module 14590 (DraggableContainer)
 function DraggableContainer(children) {
   const x = children.x;
   const arg1 = x;
@@ -173,11 +173,11 @@ function ScreenRecordingPip(surveyConfig) {
       const obj5 = {};
       if (isStepCompleted) {
         obj5.style = tmp.doneButton;
-        obj5.children = callback2(arg1(dependencyMap[20]).CheckmarkLargeIcon, { flexDirection: "", alignItems: 0 });
+        obj5.children = callback2(arg1(dependencyMap[20]).CheckmarkLargeIcon, {});
         let tmp31 = obj5;
       } else {
         obj5.style = tmp.stopButton;
-        obj5.children = callback2(arg1(dependencyMap[21]).StopIcon, { flexDirection: null, alignItems: false });
+        obj5.children = callback2(arg1(dependencyMap[21]).StopIcon, {});
         tmp31 = obj5;
       }
       tmp26Result = tmp26(View, tmp31);

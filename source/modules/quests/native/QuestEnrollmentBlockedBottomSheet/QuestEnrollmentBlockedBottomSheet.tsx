@@ -1,10 +1,10 @@
-// Module ID: 13932
-// Function ID: 105896
+// Module ID: 13939
+// Function ID: 105919
 // Name: QuestEnrollmentBlockedBottomSheet
 // Dependencies: []
 // Exports: default
 
-// Module 13932 (QuestEnrollmentBlockedBottomSheet)
+// Module 13939 (QuestEnrollmentBlockedBottomSheet)
 function QuestEnrollmentBlockedBottomSheet(questEnrollmentBlockedUntil) {
   let minutes;
   let seconds;
@@ -25,7 +25,7 @@ function QuestEnrollmentBlockedBottomSheet(questEnrollmentBlockedUntil) {
   const padStartResult2 = String(seconds).padStart(2, "0");
   let tmp11 = null;
   if (null != questEnrollmentBlockedUntil) {
-    let obj = { borderColor: null, borderWidth: null, style: null };
+    let obj = {};
     obj = { style: tmp.heading };
     const obj1 = { variant: "heading-xl/bold" };
     const intl = arg1(dependencyMap[12]).intl;
@@ -51,9 +51,9 @@ let closure_4 = importDefault(dependencyMap[2]);
 const jsx = arg1(dependencyMap[3]).jsx;
 let obj = arg1(dependencyMap[4]);
 obj = {};
-obj = { 873027242: 0, 2064390188: 0, 396577459: 0, paddingHorizontal: importDefault(dependencyMap[5]).space.PX_16, paddingTop: importDefault(dependencyMap[5]).space.PX_16, gap: importDefault(dependencyMap[5]).space.PX_24 };
+obj = { "Bool(false)": 0, "Bool(false)": 0, "Bool(false)": 0, paddingHorizontal: importDefault(dependencyMap[5]).space.PX_16, paddingTop: importDefault(dependencyMap[5]).space.PX_16, gap: importDefault(dependencyMap[5]).space.PX_24 };
 obj.heading = obj;
-const obj1 = { 873027242: 0, 2064390188: 0, 396577459: 0, paddingHorizontal: importDefault(dependencyMap[5]).space.PX_16, paddingBottom: importDefault(dependencyMap[5]).space.PX_32 };
+const obj1 = { "Bool(false)": 0, "Bool(false)": 0, "Bool(false)": 0, paddingHorizontal: importDefault(dependencyMap[5]).space.PX_16, paddingBottom: importDefault(dependencyMap[5]).space.PX_32 };
 obj.container = obj1;
 let closure_6 = obj.createStyles(obj);
 const result = arg1(dependencyMap[13]).fileFinishedImporting("modules/quests/native/QuestEnrollmentBlockedBottomSheet/QuestEnrollmentBlockedBottomSheet.tsx");

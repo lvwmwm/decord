@@ -1,10 +1,10 @@
-// Module ID: 11945
-// Function ID: 92365
+// Module ID: 11952
+// Function ID: 92388
 // Name: isUserProfileVoiceActivityForChannel
 // Dependencies: []
 // Exports: default
 
-// Module 11945 (isUserProfileVoiceActivityForChannel)
+// Module 11952 (isUserProfileVoiceActivityForChannel)
 function isUserProfileVoiceActivityForChannel(voiceStateForSession) {
   let activity;
   let voiceChannelId;

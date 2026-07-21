@@ -1,8 +1,8 @@
-// Module ID: 14819
-// Function ID: 111712
+// Module ID: 14826
+// Function ID: 111736
 // Dependencies: []
 
-// Module 14819
+// Module 14826
 const importAllResult = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 let closure_5 = importDefault(dependencyMap[2]);
@@ -11,7 +11,7 @@ let closure_7 = arg1(dependencyMap[4]).HappeningNowCardTrackingType;
 const AnalyticEvents = arg1(dependencyMap[5]).AnalyticEvents;
 const jsx = arg1(dependencyMap[6]).jsx;
 const LARGE = arg1(dependencyMap[7]).AvatarSizes.LARGE;
-let closure_11 = arg1(dependencyMap[8]).createStyles({ content: { SEND_AS_GIFT: "Enable Game Claim Coachmark", useIsScreenIndexFrozenSharedValue: 174, useInappropriateConversationSafetyToolsWarningForChannel: null } });
+let closure_11 = arg1(dependencyMap[8]).createStyles({ content: { width: "Enable Game Claim Coachmark", height: 174, borderRadius: null } });
 const obj2 = arg1(dependencyMap[8]);
 const memoResult = importAllResult.memo((index) => {
   let activities;

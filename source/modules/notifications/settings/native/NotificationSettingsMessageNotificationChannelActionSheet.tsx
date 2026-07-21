@@ -1,10 +1,10 @@
-// Module ID: 10281
-// Function ID: 79405
+// Module ID: 10287
+// Function ID: 79424
 // Name: NotificationSettingsMessageNotificationChannelActionSheet
 // Dependencies: []
 // Exports: default
 
-// Module 10281 (NotificationSettingsMessageNotificationChannelActionSheet)
+// Module 10287 (NotificationSettingsMessageNotificationChannelActionSheet)
 importAll(dependencyMap[0]);
 let closure_3 = importDefault(dependencyMap[1]);
 const UserNotificationSettings = arg1(dependencyMap[2]).UserNotificationSettings;

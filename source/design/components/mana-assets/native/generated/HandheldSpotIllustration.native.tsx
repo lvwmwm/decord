@@ -1,14 +1,13 @@
-// Module ID: 6239
-// Function ID: 50232
+// Module ID: 6241
+// Function ID: 50275
 // Name: HandheldSpotIllustration
-// Dependencies: [33554456, 1946157056, 33, 5231]
+// Dependencies: []
 // Exports: HandheldSpotIllustration
 
-// Module 6239 (HandheldSpotIllustration)
-import preload from "preload";
-
+// Module 6241 (HandheldSpotIllustration)
 const jsx = require(dependencyMap[0]).jsx;
-const result = preload.fileFinishedImporting("design/components/mana-assets/native/generated/HandheldSpotIllustration.native.tsx");
+const _module = require(dependencyMap[3]);
+const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/HandheldSpotIllustration.native.tsx");
 
 export const HandheldSpotIllustration = function HandheldSpotIllustration(width) {
   let accessibilityLabel;

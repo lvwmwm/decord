@@ -1,9 +1,9 @@
-// Module ID: 12293
-// Function ID: 94166
+// Module ID: 12300
+// Function ID: 94189
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
-// Module 12293 (_isNativeReflectConstruct)
+// Module 12300 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -35,7 +35,7 @@ let closure_7 = importDefault(dependencyMap[4]);
 let closure_8 = importDefault(dependencyMap[5]);
 ({ PremiumGroupAPIErrorCodes: closure_9, TOTAL_PREMIUM_GROUP_MEMBER_SEATS: closure_10 } = arg1(dependencyMap[6]));
 const NOOP_NULL = arg1(dependencyMap[7]).NOOP_NULL;
-let closure_12 = { membersData: { width: true, height: true, marginRight: true }, membershipData: { alignItems: true, justifyContent: true, flexGrow: true } };
+let closure_12 = { membersData: { 9223372036854775807: "postal-address-country", 0: "password", -9223372036854775808: "email" }, membershipData: { count: "postal-address-country", getChannel: "password", withTiming: "email" } };
 let tmp3 = (Store) => {
   class PremiumGroupStore {
     constructor() {
@@ -214,7 +214,7 @@ tmp3 = new tmp3(importDefault(dependencyMap[8]), {
     }
   },
   LOGOUT: function reset() {
-    let closure_12 = { membersData: { width: true, height: true, marginRight: true }, membershipData: { alignItems: true, justifyContent: true, flexGrow: true } };
+    let closure_12 = { membersData: { 9223372036854775807: "postal-address-country", 0: "password", -9223372036854775808: "email" }, membershipData: { count: "postal-address-country", getChannel: "password", withTiming: "email" } };
   }
 });
 const obj = {
@@ -291,7 +291,7 @@ const obj = {
     }
   },
   LOGOUT: function reset() {
-    let closure_12 = { membersData: { width: true, height: true, marginRight: true }, membershipData: { alignItems: true, justifyContent: true, flexGrow: true } };
+    let closure_12 = { membersData: { 9223372036854775807: "postal-address-country", 0: "password", -9223372036854775808: "email" }, membershipData: { count: "postal-address-country", getChannel: "password", withTiming: "email" } };
   }
 };
 const tmp2 = arg1(dependencyMap[6]);

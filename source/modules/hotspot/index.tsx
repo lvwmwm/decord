@@ -1,9 +1,9 @@
-// Module ID: 5594
-// Function ID: 47490
+// Module ID: 5596
+// Function ID: 47532
 // Name: HotspotStore
 // Dependencies: []
 
-// Module 5594 (HotspotStore)
+// Module 5596 (HotspotStore)
 const importDefaultResult = importDefault(dependencyMap[0]);
 const result = arg1(dependencyMap[1]).fileFinishedImporting("modules/hotspot/index.tsx");
 const tmp4 = arg1(dependencyMap[2]);

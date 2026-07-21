@@ -1,10 +1,14 @@
-// Module ID: 15008
-// Function ID: 113067
+// Module ID: 15015
+// Function ID: 113091
 // Name: _fetchNotificationCenterItems
-// Dependencies: []
+// Dependencies: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 // Exports: bulkMarkNotificationCenterItemsAcked, deleteNotificationCenterItem, fetchNotificationCenterItems, markNotificationCenterItemAcked, resetNotificationCenter, setNotificationCenterActive, setNotificationCenterTabFocused
 
-// Module 15008 (_fetchNotificationCenterItems)
+// Module 15015 (_fetchNotificationCenterItems)
+import __exportStarResult1 from "__exportStarResult1";
+import closure_4 from "__exportStarResult1";
+import { Endpoints } from "__exportStarResult1";
+
 function _fetchNotificationCenterItems() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
@@ -26,8 +30,11 @@ function _markNotificationCenterRemoteItemAcked() {
   return obj(...arguments);
 }
 function markNotificationCenterMentionAcked(id) {
+  let obj = importDefault(dependencyMap[3]);
+  obj = { "Bool(false)": "/assets/.cache/intl/bW9kdWxlcy9ndWlsZF9zZXR0aW5ncy9zZXJ2ZXJfbW9uZXRpemF0aW9uL3RhZ3Mvd2Vi", "Bool(false)": null };
   const items = [id];
-  importDefault(dependencyMap[3]).dispatch({ ids: items });
+  obj.ids = items;
+  obj.dispatch(obj);
 }
 function _bulkMarkNotificationCenterItemsAcked() {
   // CreateGeneratorClosureLongIndex (0x67)
@@ -41,10 +48,7 @@ function _deleteNotificationCenterItem() {
   const _deleteNotificationCenterItem = obj;
   return obj(...arguments);
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-const Endpoints = arg1(dependencyMap[2]).Endpoints;
-const result = arg1(dependencyMap[10]).fileFinishedImporting("modules/notification_center/NotificationCenterItemsActions.tsx");
+const result = require("__exportStarResult1").fileFinishedImporting("modules/notification_center/NotificationCenterItemsActions.tsx");
 
 export const setNotificationCenterActive = function setNotificationCenterActive(active) {
   let obj = importDefault(dependencyMap[3]);

@@ -1,10 +1,10 @@
-// Module ID: 5326
-// Function ID: 45284
+// Module ID: 5328
+// Function ID: 45325
 // Name: fetchOnboardingPrompts
 // Dependencies: []
 // Exports: loadOnboardingPrompts, maybeFetchOnboardingPrompts
 
-// Module 5326 (fetchOnboardingPrompts)
+// Module 5328 (fetchOnboardingPrompts)
 function fetchOnboardingPrompts(guildId) {
   const arg1 = guildId;
   let obj = importDefault(dependencyMap[10]);

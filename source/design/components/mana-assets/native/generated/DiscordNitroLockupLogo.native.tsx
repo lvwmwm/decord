@@ -1,10 +1,10 @@
-// Module ID: 5997
-// Function ID: 49869
+// Module ID: 5999
+// Function ID: 49912
 // Name: DiscordNitroLockupLogo
 // Dependencies: []
 // Exports: DiscordNitroLockupLogo
 
-// Module 5997 (DiscordNitroLockupLogo)
+// Module 5999 (DiscordNitroLockupLogo)
 const Image = require(dependencyMap[0]).Image;
 const jsx = require(dependencyMap[1]).jsx;
 const _module = require(dependencyMap[5]);

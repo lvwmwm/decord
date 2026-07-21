@@ -1,9 +1,9 @@
-// Module ID: 6246
-// Function ID: 50243
+// Module ID: 6248
+// Function ID: 50286
 // Name: metadata
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 6246 (metadata)
+// Module 6248 (metadata)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/HeadphonesAndControllerSpotIllustration-2x.png.js");
 

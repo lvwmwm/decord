@@ -1,10 +1,10 @@
-// Module ID: 11113
-// Function ID: 86520
+// Module ID: 11119
+// Function ID: 86543
 // Name: GIFIcon
 // Dependencies: []
 // Exports: default
 
-// Module 11113 (GIFIcon)
+// Module 11119 (GIFIcon)
 function GIFIcon() {
   const obj = { size: arg1(dependencyMap[6]).Icon.Sizes.CUSTOM, source: importDefault(dependencyMap[7]), disableColor: true, style: callback4().gifIcon };
   return callback2(arg1(dependencyMap[6]).Icon, obj);
@@ -18,7 +18,7 @@ function ExtraMediaIcon(extraMediaCount) {
   let obj = { style: tmp.extraMediaCountContainer };
   obj = { source: importDefault(dependencyMap[9]), color: tmp.icon.color, size: arg1(dependencyMap[6]).Icon.Sizes.REFRESH_SMALL_16 };
   const items = [callback2(arg1(dependencyMap[6]).Icon, obj), ];
-  obj = { style: tmp.extraMediaCount, children: "+" + extraMediaCount.extraMediaCount };
+  obj = { backgroundColor: false, alignItems: false, flexDirection: false, borderRadius: false, style: tmp.extraMediaCount, children: "+" + extraMediaCount.extraMediaCount };
   items[1] = callback2(arg1(dependencyMap[10]).Text, obj);
   obj.children = items;
   return callback3(View, obj);
@@ -52,19 +52,19 @@ const View = arg1(dependencyMap[2]).View;
 ({ jsx: closure_6, jsxs: closure_7 } = arg1(dependencyMap[3]));
 let obj = arg1(dependencyMap[4]);
 obj = {};
-obj = { 1525407828: null, -1976334792: "flex-start", 1493721650: 8, 1663813201: 16, 1387291596: "text", borderRadius: importDefault(dependencyMap[5]).radii.xs };
+obj = { "Null": null, "Null": "flex-start", context: 8, onlyWithCommands: 16, includeBuiltIn: "text", borderRadius: importDefault(dependencyMap[5]).radii.xs };
 obj.gifIcon = obj;
-const obj1 = { type: 1119443281, applicationId: 98202, isInvalidApplication: 146538, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_LOW };
+const obj1 = { <string:1850897761>: 1119416657, <string:1647885513>: 98087, <string:4249966856>: 146584, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_LOW };
 obj.container = obj1;
 obj.wideAspectRatioContainer = { height: 192 };
 obj.mediaIconContainer = { paddingLeft: 6 };
-obj.headerLeftContainer = { <string:2959330403>: true, <string:4249772370>: true, <string:2857788163>: true, <string:2585612642>: true };
-obj.footerLeftContainer = { 9223372036854775807: true, 9223372036854775807: true, -9223372036854775808: true, 0: true, 0: true, 9223372036854775807: true };
+obj.headerLeftContainer = { onlyWithCommands: true, includeBuiltIn: true, type: true, applicationId: true };
+obj.footerLeftContainer = { type: true, applicationId: true, isInvalidApplication: true, applicationIdToGuildIds: true, lastFetchTimeMs: true, nextFetchRetryTimeMs: true };
 obj.footerRightContainer = {};
 const tmp2 = arg1(dependencyMap[3]);
 obj.extraMediaCountContainer = { backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_SURFACE_HIGH };
 obj.extraMediaCount = { marginLeft: 2 };
-const obj3 = { GuildBadgeGem: false, PREMIUM_TIER_2_PLANS: false, onPointerEnter: false, contentStyle: false, borderRadius: importDefault(dependencyMap[5]).radii.xs };
+const obj3 = { "Bool(true)": "y", "Bool(true)": "isArray", "Bool(true)": "key", "Bool(true)": "LIGHT", borderRadius: importDefault(dependencyMap[5]).radii.xs };
 obj.grid = obj3;
 obj.wideAspectRatioGrid = { height: 192 };
 obj.column = {};
@@ -73,7 +73,7 @@ obj.rowSpacer = {};
 const obj2 = { backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_SURFACE_HIGH };
 obj.icon = { color: importDefault(dependencyMap[5]).colors.TEXT_SUBTLE };
 let closure_8 = obj.createStyles(obj);
-const items = [["partySizeText", -0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001717915509062969], []];
+const items = [["START_THREAD", -0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001717915509062969], []];
 const obj4 = { color: importDefault(dependencyMap[5]).colors.TEXT_SUBTLE };
 const result = arg1(dependencyMap[17]).fileFinishedImporting("modules/forums/native/posts/grid/ForumPostGridBody.tsx");
 

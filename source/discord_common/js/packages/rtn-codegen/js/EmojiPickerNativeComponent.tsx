@@ -1,9 +1,9 @@
-// Module ID: 9364
-// Function ID: 73056
+// Module ID: 9368
+// Function ID: 73070
 // Name: __INTERNAL_VIEW_CONFIG
 // Dependencies: []
 
-// Module 9364 (__INTERNAL_VIEW_CONFIG)
+// Module 9368 (__INTERNAL_VIEW_CONFIG)
 let obj = { uiViewClassName: "EmojiPickerView", directEventTypes: { topStickyHeaderRender: { registrationName: "onStickyHeaderRender" }, topPressEmoji: { registrationName: "onPressEmoji" }, topLongPressEmoji: { registrationName: "onLongPressEmoji" }, topScroll: { registrationName: "onScroll" }, topScrollBeginDrag: { registrationName: "onScrollBeginDrag" }, topScrollEndDrag: { registrationName: "onScrollEndDrag" }, topShowNitroUpsell: { registrationName: "onShowNitroUpsell" } } };
 obj = {};
 const _module = require(dependencyMap[0]);

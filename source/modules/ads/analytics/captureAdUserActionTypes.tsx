@@ -1,9 +1,9 @@
-// Module ID: 9439
-// Function ID: 73574
+// Module ID: 9443
+// Function ID: 73588
 // Name: AdUserActionType
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 9439 (AdUserActionType)
+// Module 9443 (AdUserActionType)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("modules/ads/analytics/captureAdUserActionTypes.tsx");
 

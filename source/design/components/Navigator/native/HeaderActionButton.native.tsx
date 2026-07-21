@@ -1,14 +1,14 @@
-// Module ID: 5781
-// Function ID: 49410
+// Module ID: 5783
+// Function ID: 49453
 // Name: HeaderActionButton
 // Dependencies: []
 
-// Module 5781 (HeaderActionButton)
+// Module 5783 (HeaderActionButton)
 const ANDROID_FOREGROUND_RIPPLE = arg1(dependencyMap[1]).ANDROID_FOREGROUND_RIPPLE;
 const importAllResult = importAll(dependencyMap[0]);
 ({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[2]));
 const tmp2 = arg1(dependencyMap[2]);
-let obj = { button: {} };
+let obj = { button: { 2019522654: true, 2018474062: true, 2018605136: true, 2018801746: true } };
 obj = { color: importDefault(dependencyMap[4]).colors.TEXT_BRAND, textTransform: "capitalize" };
 obj.text = obj;
 obj.buttonFont = {};
@@ -36,7 +36,7 @@ const forwardRefResult = importAllResult.forwardRef((arg0, ref) => {
   ({ style, textStyle, imageStyle, accessibilityHint, accessibilityActions, onAccessibilityAction, icon, IconComponentSize, onPress, foregroundRipple, iconSize } = arg0);
   const tmp = callback2();
   if (null != text) {
-    let obj = { "Bool(true)": 2, "Bool(true)": 80, "Bool(true)": null };
+    let obj = { @braintree/event-emitter: 2, @braintree/iframer: 80, @braintree/uuid: null };
     const items = [, , ];
     ({ text: arr[0], buttonFont: arr[1] } = tmp);
     items[2] = textStyle;

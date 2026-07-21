@@ -1,10 +1,10 @@
-// Module ID: 9258
-// Function ID: 72329
+// Module ID: 9262
+// Function ID: 72341
 // Name: useConversationsHeaderButton
 // Dependencies: []
 // Exports: useConversationsHeaderButton
 
-// Module 9258 (useConversationsHeaderButton)
+// Module 9262 (useConversationsHeaderButton)
 let closure_2 = importDefault(dependencyMap[0]);
 let closure_3 = importAll(dependencyMap[1]);
 let closure_4 = importDefault(dependencyMap[2]);

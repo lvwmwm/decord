@@ -1,10 +1,10 @@
-// Module ID: 14546
-// Function ID: 109642
+// Module ID: 14553
+// Function ID: 109664
 // Name: fuzzySearchToggle
 // Dependencies: []
 // Exports: default
 
-// Module 14546 (fuzzySearchToggle)
+// Module 14553 (fuzzySearchToggle)
 function fuzzySearchToggle(str, str2, str3) {
   let tmp = 0 === str.length;
   if (!tmp) {
@@ -112,7 +112,7 @@ export default function DevToolsTogglesScreen() {
   items2[1] = obj;
   obj.contentContainerStyle = items2;
   const obj1 = { spacing: 16 };
-  const obj2 = { width: "Array", height: "37MFFq" };
+  const obj2 = { "Bool(false)": "%AsyncFromSyncIteratorPrototype%", "Bool(false)": "tidaWebformEnabled" };
   const items3 = [
     callback2(arg1(dependencyMap[9]).TableRow, {
       onPress() {
@@ -124,7 +124,7 @@ export default function DevToolsTogglesScreen() {
 
   ];
   const obj4 = {};
-  const obj5 = { "Null": "Array", "Null": "isArray", onChange: tmp2[1] };
+  const obj5 = { h: "Array", current: "isArray", onChange: tmp2[1] };
   obj4.label = callback2(arg1(dependencyMap[18]).SearchField, obj5);
   items3[1] = callback2(arg1(dependencyMap[9]).TableRow, obj4);
   obj2.children = items3;

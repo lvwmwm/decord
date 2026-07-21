@@ -1,10 +1,10 @@
-// Module ID: 9301
-// Function ID: 72730
+// Module ID: 9305
+// Function ID: 72744
 // Name: getChatInputContainerHeight
 // Dependencies: []
 // Exports: updateChatInputContainerHeight, updateIsAtBottom, updateShouldShowJumpToPresentButton, updateShowingAutoComplete, useBestActiveChatInputContainerHeight, useChatInputContainerHeight, useChatIsAtBottom, useChatShowingAutoComplete
 
-// Module 9301 (getChatInputContainerHeight)
+// Module 9305 (getChatInputContainerHeight)
 function getChatInputContainerHeight() {
   let num = 0;
   const Storage = require(dependencyMap[0]).Storage;

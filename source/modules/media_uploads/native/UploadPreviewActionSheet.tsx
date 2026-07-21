@@ -1,10 +1,10 @@
-// Module ID: 9638
-// Function ID: 75065
+// Module ID: 9643
+// Function ID: 75082
 // Name: UploadPreviewActionSheet
 // Dependencies: []
 // Exports: default
 
-// Module 9638 (UploadPreviewActionSheet)
+// Module 9643 (UploadPreviewActionSheet)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 ({ Image: closure_5, View: closure_6 } = arg1(dependencyMap[2]));
@@ -16,7 +16,7 @@ let obj = arg1(dependencyMap[6]);
 obj = { contentContainer: { padding: 16 } };
 obj = { backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_SURFACE_HIGH, padding: importDefault(dependencyMap[7]).space.PX_8, borderRadius: importDefault(dependencyMap[7]).radii.md, width: "100%" };
 obj.imageWrap = obj;
-const obj1 = { shapes: "flex", ip: "wrap", borderRadius: importDefault(dependencyMap[7]).radii.md - importDefault(dependencyMap[7]).space.PX_4 };
+const obj1 = { sy: "flex", shapes: "wrap", borderRadius: importDefault(dependencyMap[7]).radii.md - importDefault(dependencyMap[7]).space.PX_4 };
 obj.imageContainer = obj1;
 let closure_11 = obj.createStyles(obj);
 const tmp3 = arg1(dependencyMap[5]);
@@ -170,7 +170,7 @@ export default function UploadPreviewActionSheet(onAdd) {
     if (isVideo) {
       const uri = item.uri;
       if (uri.startsWith("file://")) {
-        const obj5 = {};
+        const obj5 = { -1722719574: "Placeholder", -1433578068: "Click", -1631209298: "%Uint8ClampedArrayPrototype%", -152852658: "_cachedAllEvents", -1314225837: "EvalError" };
         ({ width: obj11.width, height: obj11.height } = size);
         obj5.style = {};
         obj7 = { uri: item.uri };

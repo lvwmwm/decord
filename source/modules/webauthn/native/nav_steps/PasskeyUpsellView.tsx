@@ -1,10 +1,10 @@
-// Module ID: 13498
-// Function ID: 102456
+// Module ID: 13505
+// Function ID: 102479
 // Name: PasskeyUpsellView
 // Dependencies: []
 // Exports: default
 
-// Module 13498 (PasskeyUpsellView)
+// Module 13505 (PasskeyUpsellView)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 ({ View: closure_5, Image: closure_6, ScrollView: closure_7 } = arg1(dependencyMap[2]));
@@ -27,10 +27,10 @@ const obj2 = { gap: importDefault(dependencyMap[8]).space.PX_16 };
 obj.circleIcon = { backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_BASE_LOWEST, width: importDefault(dependencyMap[8]).space.PX_32, height: importDefault(dependencyMap[8]).space.PX_32, borderRadius: importDefault(dependencyMap[8]).radii.round };
 const obj3 = { backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_BASE_LOWEST, width: importDefault(dependencyMap[8]).space.PX_32, height: importDefault(dependencyMap[8]).space.PX_32, borderRadius: importDefault(dependencyMap[8]).radii.round };
 obj.listContainer = { gap: importDefault(dependencyMap[8]).space.PX_24, marginLeft: importDefault(dependencyMap[8]).space.PX_8, marginRight: importDefault(dependencyMap[8]).space.PX_8 };
-const obj4 = { gap: importDefault(dependencyMap[8]).space.PX_24, marginLeft: importDefault(dependencyMap[8]).space.PX_8, marginRight: importDefault(dependencyMap[8]).space.PX_8 };
-obj.row = { gap: importDefault(dependencyMap[8]).space.PX_8 };
+const obj5 = { x: null, "Null": null, "Null": null, gap: importDefault(dependencyMap[8]).space.PX_8 };
+obj.row = obj5;
 obj.text = { flex: 1 };
-const obj5 = { gap: importDefault(dependencyMap[8]).space.PX_8 };
+const obj4 = { gap: importDefault(dependencyMap[8]).space.PX_24, marginLeft: importDefault(dependencyMap[8]).space.PX_8, marginRight: importDefault(dependencyMap[8]).space.PX_8 };
 obj.buttonContainer = { gap: importDefault(dependencyMap[8]).space.PX_16, alignItems: "center" };
 let closure_13 = obj.createStyles(obj);
 const obj6 = { gap: importDefault(dependencyMap[8]).space.PX_16, alignItems: "center" };
@@ -70,11 +70,11 @@ export default function PasskeyUpsellView() {
   obj1 = { style: tmp2.headerContainer };
   const obj2 = { source: importDefault(dependencyMap[16]), style: tmp2.headerImage };
   const items1 = [callback(closure_6, obj2), , ];
-  const obj3 = { 9223372036854775807: "<string:1515257857>", 9223372036854775807: "<string:2080775>", 9223372036854775807: "<string:2264924464>", style: tmp2.headerText };
+  const obj3 = { style: tmp2.headerText };
   const intl = arg1(dependencyMap[10]).intl;
   obj3.children = intl.string(arg1(dependencyMap[10]).t.CjleBl);
   items1[1] = callback(arg1(dependencyMap[17]).Text, obj3);
-  const obj4 = { INTEGRATION_CREATE: "key", ConstraintReasonCode: "Text", style: tmp2.headerText };
+  const obj4 = { style: tmp2.headerText };
   let obj8 = arg1(dependencyMap[18]);
   const tmp10 = closure_7;
   const tmp11 = closure_5;
@@ -94,7 +94,7 @@ export default function PasskeyUpsellView() {
   const obj5 = { style: tmp2.listContainer };
   const obj6 = { style: tmp2.row };
   const items3 = [callback(closure_5, { style: tmp2.circleIcon }), ];
-  obj8 = { INTEGRATION_CREATE: "key", ConstraintReasonCode: "Text", style: tmp2.text };
+  obj8 = { style: tmp2.text };
   const intl3 = arg1(dependencyMap[10]).intl;
   obj8.children = intl3.string(arg1(dependencyMap[10]).t.HtqVkj);
   items3[1] = callback(arg1(dependencyMap[17]).Text, obj8);
@@ -102,7 +102,7 @@ export default function PasskeyUpsellView() {
   const items4 = [callback2(closure_5, obj6), ];
   const obj9 = { style: tmp2.row };
   const items5 = [callback(closure_5, { style: tmp2.circleIcon }), ];
-  const obj11 = { INTEGRATION_CREATE: "key", ConstraintReasonCode: "Text", style: tmp2.text };
+  const obj11 = { style: tmp2.text };
   const isIOSResult = obj8.isIOS();
   const obj10 = { style: tmp2.circleIcon };
   const obj7 = { style: tmp2.circleIcon };
@@ -123,7 +123,7 @@ export default function PasskeyUpsellView() {
   obj5.children = items4;
   items2[1] = callback2(closure_5, obj5);
   const obj12 = { style: tmp2.buttonContainer };
-  const obj13 = { INTEGRATION_CREATE: "png", ConstraintReasonCode: "absolute" };
+  const obj13 = {};
   const intl5 = arg1(dependencyMap[10]).intl;
   obj13.children = intl5.format(arg1(dependencyMap[10]).t.OeGXVv, { learnMoreLink: articleURL });
   const items6 = [callback(arg1(dependencyMap[19]).TextWithIOSLinkWorkaround, obj13), , ];
@@ -148,7 +148,7 @@ export default function PasskeyUpsellView() {
   obj14.loading = tmp5;
   obj14.grow = true;
   items6[1] = callback(arg1(dependencyMap[20]).Button, obj14);
-  const obj15 = {};
+  const obj15 = { "Bool(true)": "r", "Bool(true)": "sectionIdsByBotId", "Bool(true)": "Array", "Bool(true)": "IQD", "Bool(true)": "WeakMap" };
   const intl7 = arg1(dependencyMap[10]).intl;
   const string4 = intl7.string;
   const t4 = arg1(dependencyMap[10]).t;

@@ -1,11 +1,11 @@
-// Module ID: 9762
-// Function ID: 75935
+// Module ID: 9767
+// Function ID: 75951
 // Name: getMidpointColor
-// Dependencies: [2, 9774, 9784, 9782, 9785, 31]
+// Dependencies: [2, 9779, 9789, 9787, 9790, 31]
 // Exports: default
 
-// Module 9762 (getMidpointColor)
-import keys from "keys";
+// Module 9767 (getMidpointColor)
+import result2 from "result2";
 import BalanceWidgetPill from "BalanceWidgetPill";
 import module_31 from "module_31";
 

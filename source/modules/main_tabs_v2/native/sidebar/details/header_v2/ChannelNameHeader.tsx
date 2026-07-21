@@ -1,9 +1,9 @@
-// Module ID: 15287
-// Function ID: 116276
+// Module ID: 15294
+// Function ID: 116300
 // Name: DirectMessageIcon
 // Dependencies: []
 
-// Module 15287 (DirectMessageIcon)
+// Module 15294 (DirectMessageIcon)
 function DirectMessageIcon(channel) {
   const arg1 = channel.channel;
   let obj = arg1(dependencyMap[11]);
@@ -69,7 +69,7 @@ function ThreadParentChannelLink(channel) {
   obj.children = intl.format(arg1(dependencyMap[18]).t.YbkB3U, {
     channelName: tmp,
     channelNameHook() {
-      const obj = { 9223372036854775807: -436207324, 9223372036854775807: 301991094, 9223372036854775807: -889191241, children: tmp };
+      const obj = { -9223372036854775808: "r", 0: "isArray", 0: "op", children: tmp };
       return callback(channel(navigation[17]).Text, obj);
     }
   });
@@ -98,7 +98,7 @@ function ChannelSubtitle(channel) {
   if (null != stateFromStores) {
     tmp4 = null;
     if ("" !== stateFromStores) {
-      obj = { children: stateFromStores };
+      obj = { -9223372036854775808: "contain", 0: "100%", 0: 34, children: stateFromStores };
       tmp4 = callback(arg1(dependencyMap[17]).Text, obj);
     }
   }
@@ -180,7 +180,7 @@ function ChannelNameHeaderContent(channel) {
           const items = [, ];
           ({ channelIcon: arr[0], channelTypeBox: arr[1] } = tmp);
           obj4.style = items;
-          obj4.children = callback(channelIconComponent, { flexDirection: "row", alignItems: "center" });
+          obj4.children = callback(channelIconComponent, { flex: "row", flexGrow: "center" });
           tmp7 = callback(stateFromStores2, obj4);
         }
         return tmp7;
@@ -194,7 +194,7 @@ function ChannelNameHeaderContent(channel) {
     let tmp11Result = tmp11(importDefault(dependencyMap[22]), obj1);
     const tmp17 = importDefault(dependencyMap[22]);
   } else {
-    obj2 = { left: 201326592, up: 1358954496, right: -126575334, down: 218103807, children: tmp2 };
+    obj2 = { "Null": 201326592, "Null": 1358954496, "Null": -126609849, "Null": 218103807, children: tmp2 };
     tmp11Result = tmp11(arg1(dependencyMap[17]).Text, obj2);
   }
   const items9 = [tmp11Result, memo];
@@ -243,7 +243,7 @@ const tmp2 = arg1(dependencyMap[7]);
 ({ jsx: closure_12, jsxs: closure_13, Fragment: closure_14 } = arg1(dependencyMap[8]));
 let obj1 = arg1(dependencyMap[9]);
 let obj = {};
-obj = { gap: importDefault(dependencyMap[10]).space.PX_12 };
+obj = { x: null, "Null": null, "Null": null, gap: importDefault(dependencyMap[10]).space.PX_12 };
 obj.container = obj;
 obj.channelIcon = {};
 obj1 = { borderRadius: importDefault(dependencyMap[10]).modules.mobile.CHANNEL_NAME_CHANNEL_ICON_RADIUS, borderWidth: importDefault(dependencyMap[10]).modules.mobile.CHANNEL_NAME_CHANNEL_BORDER_WIDTH, borderColor: importDefault(dependencyMap[10]).colors.BORDER_SUBTLE, backgroundColor: importDefault(dependencyMap[10]).colors.BACKGROUND_MOD_MUTED };

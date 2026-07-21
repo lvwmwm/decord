@@ -1,10 +1,10 @@
-// Module ID: 10461
-// Function ID: 81010
+// Module ID: 10467
+// Function ID: 81033
 // Name: useRefocusOrLaunchActivity
 // Dependencies: []
 // Exports: default
 
-// Module 10461 (useRefocusOrLaunchActivity)
+// Module 10467 (useRefocusOrLaunchActivity)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 let closure_5 = importDefault(dependencyMap[2]);

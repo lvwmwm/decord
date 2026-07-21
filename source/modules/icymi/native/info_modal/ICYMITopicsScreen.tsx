@@ -1,43 +1,43 @@
-// Module ID: 15070
-// Function ID: 113463
+// Module ID: 15077
+// Function ID: 113487
 // Name: WordTopic
 // Dependencies: []
 // Exports: default
 
-// Module 15070 (WordTopic)
+// Module 15077 (WordTopic)
 function WordTopic(categoryid) {
   let selected;
   categoryid = categoryid.categoryid;
   const arg1 = categoryid;
   ({ selected, handlePress: closure_1 } = categoryid);
   if (GuildPrimaryCategory.GAMING === categoryid) {
-    let tmp = callback3(arg1(dependencyMap[7]).GameControllerIcon, { flexDirection: true, alignItems: true });
+    let tmp = callback3(arg1(dependencyMap[7]).GameControllerIcon, { flex: true, flexGrow: true });
   } else if (GuildPrimaryCategory.ENTERTAINMENT === categoryid) {
-    tmp = callback3(arg1(dependencyMap[8]).TvIcon, { flexDirection: true, alignItems: true });
+    tmp = callback3(arg1(dependencyMap[8]).TvIcon, { flex: true, flexGrow: true });
   } else if (GuildPrimaryCategory.GENERAL_CHATTING === categoryid) {
-    tmp = callback3(arg1(dependencyMap[9]).ForumIcon, { flexDirection: true, alignItems: true });
+    tmp = callback3(arg1(dependencyMap[9]).ForumIcon, { flex: true, flexGrow: true });
   } else if (GuildPrimaryCategory.SCIENCE_AND_TECH === categoryid) {
-    tmp = callback3(arg1(dependencyMap[10]).ScienceIcon, { flexDirection: true, alignItems: true });
+    tmp = callback3(arg1(dependencyMap[10]).ScienceIcon, { flex: true, flexGrow: true });
   } else if (GuildPrimaryCategory.MUSIC === categoryid) {
-    tmp = callback3(arg1(dependencyMap[11]).MusicIcon, { flexDirection: true, alignItems: true });
+    tmp = callback3(arg1(dependencyMap[11]).MusicIcon, { flex: true, flexGrow: true });
   } else if (GuildPrimaryCategory.EDUCATION === categoryid) {
-    tmp = callback3(arg1(dependencyMap[12]).BookCheckIcon, { flexDirection: true, alignItems: true });
+    tmp = callback3(arg1(dependencyMap[12]).BookCheckIcon, { flex: true, flexGrow: true });
   } else if (GuildPrimaryCategory.CREATIVE_ARTS === categoryid) {
-    tmp = callback3(arg1(dependencyMap[13]).PaintPaletteIcon, { flexDirection: true, alignItems: true });
+    tmp = callback3(arg1(dependencyMap[13]).PaintPaletteIcon, { flex: true, flexGrow: true });
   } else if (GuildPrimaryCategory.FINANCE === categoryid) {
-    tmp = callback3(arg1(dependencyMap[14]).PiggyBankIcon, { flexDirection: true, alignItems: true });
+    tmp = callback3(arg1(dependencyMap[14]).PiggyBankIcon, { flex: true, flexGrow: true });
   } else if (GuildPrimaryCategory.BOTS === categoryid) {
-    tmp = callback3(arg1(dependencyMap[15]).RobotIcon, { flexDirection: true, alignItems: true });
+    tmp = callback3(arg1(dependencyMap[15]).RobotIcon, { flex: true, flexGrow: true });
   } else if (GuildPrimaryCategory.SPORTS === categoryid) {
-    tmp = callback3(arg1(dependencyMap[16]).MedalIcon, { flexDirection: true, alignItems: true });
+    tmp = callback3(arg1(dependencyMap[16]).MedalIcon, { flex: true, flexGrow: true });
   } else if (GuildPrimaryCategory.TRAVEL_AND_FOOD === categoryid) {
-    tmp = callback3(arg1(dependencyMap[17]).FoodIcon, { flexDirection: true, alignItems: true });
+    tmp = callback3(arg1(dependencyMap[17]).FoodIcon, { flex: true, flexGrow: true });
   } else if (GuildPrimaryCategory.FASHION_AND_BEAUTY === categoryid) {
-    tmp = callback3(arg1(dependencyMap[18]).PaintbrushThinIcon, { flexDirection: true, alignItems: true });
+    tmp = callback3(arg1(dependencyMap[18]).PaintbrushThinIcon, { flex: true, flexGrow: true });
   } else if (GuildPrimaryCategory.FITNESS_AND_HEALTH === categoryid) {
-    tmp = callback3(arg1(dependencyMap[19]).BicycleIcon, { flexDirection: true, alignItems: true });
+    tmp = callback3(arg1(dependencyMap[19]).BicycleIcon, { flex: true, flexGrow: true });
   } else if (16 === categoryid) {
-    tmp = callback3(arg1(dependencyMap[20]).PencilSparkleIcon, { flexDirection: true, alignItems: true });
+    tmp = callback3(arg1(dependencyMap[20]).PencilSparkleIcon, { flex: true, flexGrow: true });
   }
   let obj = arg1(dependencyMap[23]);
   const checkboxA11yNative = obj.useCheckboxA11yNative({ checked: selected });
@@ -124,7 +124,7 @@ export default function ICYMITopicsScreen() {
     }
   }, items2);
   obj = {};
-  obj = { INTEGRATION_CREATE: null, ConstraintReasonCode: null, style: tmp.title };
+  obj = { style: tmp.title };
   const intl = arg1(closure_2[31]).intl;
   obj.children = intl.string(arg1(closure_2[31]).t.Y5d99L);
   const items3 = [callback3(arg1(closure_2[34]).Text, obj), , , , ];

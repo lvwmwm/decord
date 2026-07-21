@@ -1,10 +1,10 @@
-// Module ID: 4327
-// Function ID: 38190
+// Module ID: 4331
+// Function ID: 38238
 // Name: guildHasOnboardingHome
 // Dependencies: []
 // Exports: default
 
-// Module 4327 (guildHasOnboardingHome)
+// Module 4331 (guildHasOnboardingHome)
 const _module = require(dependencyMap[0]);
 ({ GuildFeatures: closure_0, FAVORITES: closure_1, ME: closure_2 } = _module);
 const _module1 = require(dependencyMap[1]);

@@ -11,8 +11,8 @@ if (!_module) {
 }
 obj = {};
 obj.date = obj.default({ formats: {}, defaultWidth: "full" });
-obj.time = obj.default({ formats: { "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, "Bool(false)": false }, defaultWidth: "full" });
-obj.dateTime = obj.default({ formats: { "Bool(false)": "<string:1799618562>", "Bool(false)": "<string:1811939866>", "Bool(false)": "<string:3623879194>", "Bool(false)": "<string:2466251265>" }, defaultWidth: "full" });
+obj.time = obj.default({ formats: { "Null": false, "Null": false, "Null": false, "Null": false }, defaultWidth: "full" });
+obj.dateTime = obj.default({ formats: { "Null": "r", "Null": "isArray", "Null": "__closure", "Null": "formatToPlainString" }, defaultWidth: "full" });
 
 export default obj;
 export default exports.default;

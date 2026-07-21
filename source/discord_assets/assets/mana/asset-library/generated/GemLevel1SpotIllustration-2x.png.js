@@ -1,9 +1,9 @@
-// Module ID: 6166
-// Function ID: 50123
+// Module ID: 6168
+// Function ID: 50166
 // Name: metadata
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 6166 (metadata)
+// Module 6168 (metadata)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/GemLevel1SpotIllustration-2x.png.js");
 

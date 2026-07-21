@@ -1,15 +1,15 @@
-// Module ID: 11902
-// Function ID: 92172
+// Module ID: 11909
+// Function ID: 92195
 // Name: isOnXbox
 // Dependencies: [1392, 3801, 2]
 // Exports: default
 
-// Module 11902 (isOnXbox)
+// Module 11909 (isOnXbox)
 import { XBOX_ACTIVITY_APPLICATION_ID as closure_0 } from "getAvatarURL";
 import { ActivityGamePlatforms } from "explicitContentFromProto";
-import keys from "keys";
+import result2 from "result2";
 
-const result = keys.fileFinishedImporting("modules/activities/utils/isOnXbox.tsx");
+const result = result2.fileFinishedImporting("modules/activities/utils/isOnXbox.tsx");
 
 export default function isOnXbox(application_id) {
   application_id = undefined;

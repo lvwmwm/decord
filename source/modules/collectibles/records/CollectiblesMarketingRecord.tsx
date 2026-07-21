@@ -1,9 +1,9 @@
-// Module ID: 6786
-// Function ID: 53581
+// Module ID: 6792
+// Function ID: 53630
 // Name: CollectiblesMarketingsRecord
 // Dependencies: []
 
-// Module 6786 (CollectiblesMarketingsRecord)
+// Module 6792 (CollectiblesMarketingsRecord)
 let closure_2 = importDefault(dependencyMap[0]);
 let closure_3 = importDefault(dependencyMap[1]);
 let closure_4 = arg1(dependencyMap[2]).CollectiblesMarketingBadgeRecord;

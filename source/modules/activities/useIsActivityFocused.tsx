@@ -1,10 +1,10 @@
-// Module ID: 10514
-// Function ID: 82114
+// Module ID: 10520
+// Function ID: 82137
 // Name: isActivityFocused
 // Dependencies: []
 // Exports: default
 
-// Module 10514 (isActivityFocused)
+// Module 10520 (isActivityFocused)
 function isActivityFocused(channelId) {
   let ChannelRTCStore;
   let EmbeddedActivitiesStore;

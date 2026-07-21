@@ -1,9 +1,9 @@
-// Module ID: 12046
-// Function ID: 93048
+// Module ID: 12053
+// Function ID: 93071
 // Name: _callSuper
 // Dependencies: []
 
-// Module 12046 (_callSuper)
+// Module 12053 (_callSuper)
 function _callSuper(arg0, arg1, arg2) {
   let items = arg2;
   const obj = callback2(arg1);
@@ -26,7 +26,7 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-let closure_3 = ["isArray", "OPEN_TO_PLAY", "isArray", "destroyed"];
+let closure_3 = [];
 let closure_4 = importDefault(dependencyMap[0]);
 let closure_5 = importDefault(dependencyMap[1]);
 let closure_6 = importDefault(dependencyMap[2]);
@@ -39,12 +39,12 @@ const tmp3 = arg1(dependencyMap[7]);
 ({ jsx: closure_13, jsxs: closure_14 } = arg1(dependencyMap[8]));
 let obj = arg1(dependencyMap[9]);
 obj = {};
-obj = { 1470948033: null, 1694606929: false, padding: importDefault(dependencyMap[10]).space.PX_8, borderRadius: importDefault(dependencyMap[10]).radii.xs };
+obj = { ty: 1, nm: 3, padding: importDefault(dependencyMap[10]).space.PX_8, borderRadius: importDefault(dependencyMap[10]).radii.xs };
 obj.qrCode = obj;
-obj.qrCodeContainer = { 1470948033: null, 1694606929: false, 1310491355: true, -1048943264: "no", 1366015172: false };
-obj.qrCodeOverlay = { y: 0, gatedChannel: 0, y: 0 };
-obj.size-40 = { aze: 30706176, azj: 378290688 };
-obj.size-60 = { aze: 43429575352196550000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, azj: 13343160674537630000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 };
+obj.qrCodeContainer = { ty: 1, nm: 3, np: -1, mn: 20, ix: null };
+obj.qrCodeOverlay = { cix: 0, y: 0, isArray: 0 };
+obj.size-40 = {};
+obj.size-60 = { bhk: -9518934934037965000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, bic: 13343162661761035000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 };
 let closure_15 = obj.createLegacyClassComponentStyles(obj);
 const obj1 = { SIZE_40: "SIZE_40", SIZE_60: "SIZE_60" };
 const frozen = Object.freeze({ [obj1.SIZE_40]: "size-40", [obj1.SIZE_60]: "size-60" });

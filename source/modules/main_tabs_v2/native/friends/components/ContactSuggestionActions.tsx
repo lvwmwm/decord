@@ -1,10 +1,10 @@
-// Module ID: 15037
-// Function ID: 113230
+// Module ID: 15044
+// Function ID: 113254
 // Name: ContactSuggestionActions
 // Dependencies: []
 // Exports: ContactSuggestionActions
 
-// Module 15037 (ContactSuggestionActions)
+// Module 15044 (ContactSuggestionActions)
 let closure_3 = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 ({ jsx: closure_5, jsxs: closure_6 } = arg1(dependencyMap[2]));
@@ -20,19 +20,19 @@ obj.easing = Easing3.in(arg1(dependencyMap[3]).Easing.quad);
 const obj1 = { duration: 250 };
 const Easing4 = arg1(dependencyMap[3]).Easing;
 obj1.easing = Easing4.out(arg1(dependencyMap[3]).Easing.quad);
-let closure_11 = { justifyContent: null, bottom: null, ref: null };
+let closure_11 = { containerRefresh: -1825505279, HomeDrawerStateContext: -2051735970, tierPill: 1363145734 };
 const tmp2 = arg1(dependencyMap[2]);
 const obj2 = {};
-const obj3 = { "Bool(false)": "map", "Bool(false)": 9, "Bool(false)": 2, "Bool(false)": "link_text", "Bool(false)": "scalar", color: importDefault(dependencyMap[5]).colors.INTERACTIVE_TEXT_DEFAULT };
-obj2.icon = obj3;
-let closure_12 = arg1(dependencyMap[4]).createStyles(obj2);
+const obj5 = arg1(dependencyMap[4]);
+obj2.icon = { color: importDefault(dependencyMap[5]).colors.INTERACTIVE_TEXT_DEFAULT };
+let closure_12 = obj5.createStyles(obj2);
 let closure_13 = { code: "function ContactSuggestionActionsTsx1(){const{right,opacity,scale}=this.__closure;return{right:right.get(),opacity:opacity.get(),transform:[{scale:scale.get()}]};}" };
 let closure_14 = { code: "function ContactSuggestionActionsTsx2(){const{buttonOpacity}=this.__closure;return{opacity:buttonOpacity.get()};}" };
 let closure_15 = { code: "function ContactSuggestionActionsTsx3(){const{added}=this.__closure;return added.get();}" };
 let closure_16 = { code: "function ContactSuggestionActionsTsx4(added){const{animate,runOnJS,finishAnimationCallback,scale,withTiming,SCALE_CONFIG,opacity,OPACITY_CONFIG,buttonOpacity,right,withSpring,SPRING_CONFIG,withDelay,OPACITY_OUT_CONFIG,TRANSLATE_OUT_CONFIG}=this.__closure;if(!animate){runOnJS(finishAnimationCallback)();return;}if(added){scale.set(withTiming(1,SCALE_CONFIG));opacity.set(withTiming(1,OPACITY_CONFIG));buttonOpacity.set(withTiming(0,OPACITY_CONFIG));right.set(withSpring(12,SPRING_CONFIG,'respect-motion-settings',function(finished){if(!finished)return;opacity.set(withDelay(1000,withTiming(0,OPACITY_OUT_CONFIG)));scale.set(withDelay(1000,withTiming(0.5,SCALE_CONFIG)));right.set(withDelay(1000,withTiming(-8,TRANSLATE_OUT_CONFIG,'respect-motion-settings',function(finished){if(finished)runOnJS(finishAnimationCallback)();})));}));}else{buttonOpacity.set(1);scale.set(0.5);opacity.set(0);right.set(30);}}" };
 let closure_17 = { code: "function ContactSuggestionActionsTsx5(finished){const{opacity,withDelay,withTiming,OPACITY_OUT_CONFIG,scale,SCALE_CONFIG,right,TRANSLATE_OUT_CONFIG,runOnJS,finishAnimationCallback}=this.__closure;if(!finished)return;opacity.set(withDelay(1000,withTiming(0,OPACITY_OUT_CONFIG)));scale.set(withDelay(1000,withTiming(0.5,SCALE_CONFIG)));right.set(withDelay(1000,withTiming(-8,TRANSLATE_OUT_CONFIG,'respect-motion-settings',function(finished){if(finished)runOnJS(finishAnimationCallback)();})));}" };
 let closure_18 = { code: "function ContactSuggestionActionsTsx6(finished){const{runOnJS,finishAnimationCallback}=this.__closure;if(finished)runOnJS(finishAnimationCallback)();}" };
-const obj5 = arg1(dependencyMap[4]);
+const obj3 = { color: importDefault(dependencyMap[5]).colors.INTERACTIVE_TEXT_DEFAULT };
 const result = arg1(dependencyMap[13]).fileFinishedImporting("modules/main_tabs_v2/native/friends/components/ContactSuggestionActions.tsx");
 
 export const ContactSuggestionActions = function ContactSuggestionActions(user) {
@@ -230,7 +230,7 @@ export const ContactSuggestionActions = function ContactSuggestionActions(user) 
   obj1.children = sharedValue(arg1(dependencyMap[9]).Icon, obj2);
   const items3 = [sharedValue(importDefault(dependencyMap[3]).View, obj1), ];
   obj3 = { style: animatedStyle1 };
-  obj4 = { <string:1522289750>: true, <string:570601313>: true, <string:1952092929>: true, size: str };
+  obj4 = { 9223372036854775807: true, -9223372036854775808: true, 0: true, size: str };
   const intl = arg1(dependencyMap[12]).intl;
   obj4.text = intl.string(arg1(dependencyMap[12]).t.OYkgVk);
   obj4.onPress = callback1;

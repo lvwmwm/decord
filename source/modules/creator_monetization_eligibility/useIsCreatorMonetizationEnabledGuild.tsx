@@ -1,10 +1,10 @@
-// Module ID: 5626
-// Function ID: 47965
+// Module ID: 5628
+// Function ID: 48007
 // Name: isCreatorMonetizationEnabledGuild
 // Dependencies: []
 // Exports: default
 
-// Module 5626 (isCreatorMonetizationEnabledGuild)
+// Module 5628 (isCreatorMonetizationEnabledGuild)
 function isCreatorMonetizationEnabledGuild(guild) {
   const features = guild.features;
   let tmp = !features.has(GuildFeatures.CREATOR_MONETIZABLE_DISABLED);

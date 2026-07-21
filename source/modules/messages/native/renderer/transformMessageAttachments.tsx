@@ -1,10 +1,10 @@
-// Module ID: 7887
-// Function ID: 62795
+// Module ID: 7891
+// Function ID: 62807
 // Name: transformMessageAttachments
 // Dependencies: []
 // Exports: default
 
-// Module 7887 (transformMessageAttachments)
+// Module 7891 (transformMessageAttachments)
 const AttachmentType = require(dependencyMap[0]).AttachmentType;
 const MessageAttachmentFlags = require(dependencyMap[1]).MessageAttachmentFlags;
 const _module = require(dependencyMap[12]);

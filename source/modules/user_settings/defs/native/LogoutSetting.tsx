@@ -1,13 +1,9 @@
-// Module ID: 14253
-// Function ID: 107750
+// Module ID: 14260
+// Function ID: 107773
 // Name: handleLogout
-// Dependencies: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+// Dependencies: []
 
-// Module 14253 (handleLogout)
-import result from "result";
-import result from "result";
-import result from "result";
-
+// Module 14260 (handleLogout)
 function handleLogout() {
   const Storage = require(dependencyMap[1]).Storage;
   const result = Storage.set(require(dependencyMap[2]).StorageKeys.LOGOUT_TIMESTAMP_KEY, new Date().getTime());
@@ -20,13 +16,15 @@ function handleLogout() {
   const obj4 = importDefault(dependencyMap[5]);
   importDefault(dependencyMap[6]).logout("confirm_logout_alert");
 }
-({ jsx: closure_3, Fragment: closure_4, jsxs: closure_5 } = result);
-const pressable = result.createPressable({
+const _module = require(dependencyMap[0]);
+({ jsx: closure_3, Fragment: closure_4, jsxs: closure_5 } = _module);
+const _module1 = require(dependencyMap[10]);
+const pressable = _module1.createPressable({
   useTitle() {
     const intl = require(dependencyMap[9]).intl;
     return intl.string(require(dependencyMap[9]).t.2jxGer);
   },
-  IconComponent: require("result").DoorExitIcon,
+  IconComponent: require(dependencyMap[11]).DoorExitIcon,
   parent: null,
   variant: "danger",
   onPress: function showConfirmLogoutAlert() {
@@ -52,6 +50,7 @@ const pressable = result.createPressable({
     obj.openAlert("logout", callback(require(dependencyMap[8]).AlertModal, obj));
   }
 });
-result = result.fileFinishedImporting("modules/user_settings/defs/native/LogoutSetting.tsx");
+const _module2 = require(dependencyMap[12]);
+const result = _module2.fileFinishedImporting("modules/user_settings/defs/native/LogoutSetting.tsx");
 
 export default pressable;

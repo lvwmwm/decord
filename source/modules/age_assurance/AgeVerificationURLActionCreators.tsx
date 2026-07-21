@@ -1,10 +1,10 @@
-// Module ID: 7531
-// Function ID: 60272
+// Module ID: 7535
+// Function ID: 60284
 // Name: requestAgeVerification
 // Dependencies: []
 // Exports: getAgeVerificationMethods, registerIncodeInterview, requestIncodeMethodSession, requestIncodeSessionBootstrap
 
-// Module 7531 (requestAgeVerification)
+// Module 7535 (requestAgeVerification)
 function requestAgeVerification(arg0) {
   return _requestAgeVerification(...arguments);
 }

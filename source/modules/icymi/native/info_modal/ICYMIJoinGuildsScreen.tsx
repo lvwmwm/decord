@@ -1,10 +1,10 @@
-// Module ID: 15078
-// Function ID: 113645
+// Module ID: 15085
+// Function ID: 113669
 // Name: SelectedServerIcon
 // Dependencies: []
 // Exports: default
 
-// Module 15078 (SelectedServerIcon)
+// Module 15085 (SelectedServerIcon)
 function SelectedServerIcon(guild) {
   guild = guild.guild;
   const tmp = callback4();
@@ -56,7 +56,7 @@ function SelectedServersRow(selectedGuilds) {
     if (first < selectedGuilds.length) {
       const current = ref.current;
       if (null != current) {
-        const obj = { item: selectedGuilds.length };
+        const obj = { -599610200: "rules", 1660945464: "message", item: selectedGuilds.length };
         current.scrollToLocation(obj);
       }
       callback(selectedGuilds.length);
@@ -182,9 +182,7 @@ function FeaturedServer(guild) {
   obj = { underlayColor: tmp.pressableUnderlayColor.backgroundColor, unstable_pressDelay: 50, style: tmp.featuredServerContainer, onPress: callback };
   const items2 = [callback3(CutoutGuildBanner, { guild }), ];
   obj = { style: tmp.featuredServerInnerContainer };
-  const items3 = [callback3(arg1(dependencyMap[21]).Text, { style: tmp.featuredServerTitle, children: guild.name }), , ];
-  const obj2 = { "Bool(false)": "Lightbox Frame", "Bool(false)": "EdgeHTML", "Bool(false)": "Edge", "Bool(false)": "WebKit", children: guild.description };
-  items3[1] = callback3(arg1(dependencyMap[21]).Text, obj2);
+  const items3 = [callback3(arg1(dependencyMap[21]).Text, { style: tmp.featuredServerTitle, children: guild.name }), callback3(arg1(dependencyMap[21]).Text, { children: guild.description }), ];
   const obj3 = { style: tmp.buttonContainer };
   const obj4 = { accessibilityHint: "checkbox", accessibilityState: { checked: selected }, disabled: stateFromStores };
   let tmp10;
@@ -238,7 +236,7 @@ let closure_15 = 50;
 const tmp3 = arg1(dependencyMap[8]);
 let closure_16 = arg1(dependencyMap[9]).createICYMIStyles((margin) => {
   let obj = {};
-  obj = { "Bool(false)": 2, "Bool(false)": "metrics_sample_rate", "Bool(false)": "scalar", backgroundColor: importDefault(dependencyMap[10]).colors.BACKGROUND_BASE_LOWER, marginHorizontal: margin.margin };
+  obj = { backgroundColor: importDefault(dependencyMap[10]).colors.BACKGROUND_BASE_LOWER, marginHorizontal: margin.margin };
   obj.container = obj;
   obj = { paddingTop: importDefault(dependencyMap[10]).space.PX_8 };
   obj.scrollContentContainer = obj;
@@ -258,7 +256,7 @@ let closure_16 = arg1(dependencyMap[9]).createICYMIStyles((margin) => {
   const obj7 = { marginBottom: importDefault(dependencyMap[10]).space.PX_12, marginTop: margin.margin };
   obj.featuredServerTitle = { marginBottom: importDefault(dependencyMap[10]).space.PX_8 };
   obj.guildIcon = {};
-  obj.bannerImage = { <string:1140607356>: 1349714276, <string:1751293292>: 1342177280 };
+  obj.bannerImage = {};
   const obj8 = { marginBottom: importDefault(dependencyMap[10]).space.PX_8 };
   obj.emptyBanner = { backgroundColor: importDefault(dependencyMap[10]).colors.BACKGROUND_MOD_SUBTLE };
   const obj9 = { backgroundColor: importDefault(dependencyMap[10]).colors.BACKGROUND_MOD_SUBTLE };
@@ -353,7 +351,7 @@ export default function ICYMIJoinGuildsScreen() {
     item = item.item;
     return callback3(closure_21, { guild: item, loading: first2, selected: first.has(item.id), handlePress: callback }, item.id);
   }, items6);
-  obj = { INTEGRATION_CREATE: null, ConstraintReasonCode: null, style: tmp.title };
+  obj = { style: tmp.title };
   const intl = arg1(dependencyMap[24]).intl;
   obj.children = intl.string(arg1(dependencyMap[24]).t.19ldCF);
   const items7 = [callback3(arg1(dependencyMap[21]).Text, obj), , , , , ];

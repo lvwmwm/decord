@@ -1,10 +1,10 @@
-// Module ID: 4177
-// Function ID: 35925
+// Module ID: 4181
+// Function ID: 35973
 // Name: makeButton
 // Dependencies: []
 // Exports: getApplicationFramerate, getApplicationResolution
 
-// Module 4177 (makeButton)
+// Module 4181 (makeButton)
 function makeButton(RESOLUTION_1080, arg1) {
   const require = RESOLUTION_1080;
   const dependencyMap = arg1;

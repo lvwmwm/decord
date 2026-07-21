@@ -1,7 +1,7 @@
 // Module ID: 3814
 // Function ID: 31705
 // Name: SettingsDefaultFeature
-// Dependencies: []
+// Dependencies: [284214097]
 
 // Module 3814 (SettingsDefaultFeature)
 const _module = require(dependencyMap[0]);

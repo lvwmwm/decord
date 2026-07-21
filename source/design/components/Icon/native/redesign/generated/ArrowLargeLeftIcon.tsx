@@ -1,10 +1,10 @@
-// Module ID: 5357
-// Function ID: 45844
+// Module ID: 5359
+// Function ID: 45885
 // Name: ArrowLargeLeftIcon
 // Dependencies: []
 // Exports: ArrowLargeLeftIcon
 
-// Module 5357 (ArrowLargeLeftIcon)
+// Module 5359 (ArrowLargeLeftIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/ArrowLargeLeftIcon.tsx");

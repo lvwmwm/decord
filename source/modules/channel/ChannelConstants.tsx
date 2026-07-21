@@ -1,14 +1,14 @@
 // Module ID: 1355
 // Function ID: 16270
 // Name: set
-// Dependencies: []
+// Dependencies: [284214097]
 // Exports: buildGuildStaticChannelId, isGuildHomeChannel, isStaticChannelRoute
 
 // Module 1355 (set)
 let obj = { ROLE_SUBSCRIPTIONS: "role-subscriptions", SERVER_MONETIZATION_ONBOARDING: "server-monetization-onboarding", GAME_SHOP: "game-shop", GUILD_SHOP: "shop", MEMBER_APPLICATIONS: "member-applications", GUILD_HOME: "@home", CHANNEL_BROWSER: "channel-browser", GUILD_ONBOARDING: "onboarding", CUSTOMIZE_COMMUNITY: "customize-community", MEMBER_SAFETY: "member-safety", GUILD_BOOSTS: "boosts", GAME_SERVERS: "game-servers", REPORT_TO_MOD: "report-to-mod", GUILD_OFFICIAL_MESSAGES: "official-messages" };
 const set = new Set(Object.values(obj));
 obj = { GUILD_HOME: "home", SERVER_GUIDE: "guide", CHANNEL_BROWSER: "browse", CUSTOMIZE_COMMUNITY: "customize", LINKED_ROLES: "linked-roles" };
-const frozen = Object.freeze({});
+const frozen = Object.freeze({ 9223372036854775807: "<string:268435456>", 0: "<string:100663296>", 0: "<string:67108864>", 0: "<string:1946157056>", 0: "accessibilityLabel", 9223372036854775807: "values", 0: "apply", 0: "y", -9223372036854775808: 96, 9223372036854775807: 20, 0: 8, 0: 6, 9223372036854775807: 120, 9223372036854775807: 24, 0: 8, 0: 8, 0: 152, 0: 30, -9223372036854775808: 10 });
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("modules/channel/ChannelConstants.tsx");
 

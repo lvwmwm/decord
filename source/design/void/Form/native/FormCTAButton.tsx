@@ -1,9 +1,9 @@
-// Module ID: 7491
-// Function ID: 60092
+// Module ID: 7495
+// Function ID: 60104
 // Name: getCTAButtonColor
 // Dependencies: []
 
-// Module 7491 (getCTAButtonColor)
+// Module 7495 (getCTAButtonColor)
 let Platform;
 let StyleSheet;
 function getCTAButtonColor(BRAND, textBrand) {

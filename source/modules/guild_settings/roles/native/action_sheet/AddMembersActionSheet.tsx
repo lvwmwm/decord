@@ -1,10 +1,10 @@
-// Module ID: 16170
-// Function ID: 124922
+// Module ID: 16177
+// Function ID: 124953
 // Name: _toPropertyKey
 // Dependencies: []
 // Exports: default
 
-// Module 16170 (_toPropertyKey)
+// Module 16177 (_toPropertyKey)
 function _toPropertyKey(arg0) {
   let StringResult = arg0;
   if ("object" === typeof arg0) {
@@ -244,9 +244,9 @@ obj = { backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_BASE_
 obj.container = obj;
 const tmp2 = arg1(dependencyMap[5]);
 obj.inputContainer = { paddingHorizontal: importDefault(dependencyMap[7]).space.PX_16, paddingTop: importDefault(dependencyMap[7]).space.PX_12 };
-const obj2 = { aze: "<string:16777479>", azj: "<string:36295491>", borderRadius: importDefault(dependencyMap[7]).radii.sm };
-obj.tagAvatar = obj2;
 const obj1 = { paddingHorizontal: importDefault(dependencyMap[7]).space.PX_16, paddingTop: importDefault(dependencyMap[7]).space.PX_12 };
+obj.tagAvatar = { borderRadius: importDefault(dependencyMap[7]).radii.sm };
+const obj2 = { borderRadius: importDefault(dependencyMap[7]).radii.sm };
 obj.emptyStateText = { color: importDefault(dependencyMap[7]).colors.TEXT_DEFAULT };
 const obj3 = { color: importDefault(dependencyMap[7]).colors.TEXT_DEFAULT };
 obj.addMembersDescription = { marginHorizontal: importDefault(dependencyMap[7]).space.PX_16 };
@@ -278,7 +278,7 @@ export default function AddMembersActionSheet(guild) {
     const _Object = Object;
     tmp7 = Object.keys(first).length > MAX_BULK_ROLE_MEMBERS_ADD;
   }
-  obj = { -1383050488: 24, -1600148191: 24, -1353556895: null };
+  obj = {};
   obj1 = {};
   const intl = arg1(dependencyMap[15]).intl;
   obj1.title = intl.string(arg1(dependencyMap[15]).t.ZYOK46);

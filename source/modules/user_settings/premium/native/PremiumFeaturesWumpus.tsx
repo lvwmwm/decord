@@ -1,16 +1,16 @@
-// Module ID: 8121
-// Function ID: 64319
+// Module ID: 8125
+// Function ID: 64331
 // Name: PremiumFeaturesWumpus
 // Dependencies: []
 // Exports: default
 
-// Module 8121 (PremiumFeaturesWumpus)
+// Module 8125 (PremiumFeaturesWumpus)
 let closure_2 = importAll(dependencyMap[0]);
 const PremiumTypes = arg1(dependencyMap[1]).PremiumTypes;
 ({ jsx: closure_4, Fragment: closure_5, jsxs: closure_6 } = arg1(dependencyMap[2]));
 const tmp2 = arg1(dependencyMap[2]);
 const items = [{ scaleX: -1 }];
-let closure_7 = arg1(dependencyMap[3]).createStyles({ clouds: { onLongPressAvatar: true, onTapUsername: true, onLongPressUsername: true }, wumpus: {}, wumpusLeft: { transform: items } });
+let closure_7 = arg1(dependencyMap[3]).createStyles({ clouds: { "Null": 3375103, "Null": -8192, "Null": 4320799 }, wumpus: {}, wumpusLeft: { transform: items } });
 const obj = arg1(dependencyMap[3]);
 const result = arg1(dependencyMap[12]).fileFinishedImporting("modules/user_settings/premium/native/PremiumFeaturesWumpus.tsx");
 

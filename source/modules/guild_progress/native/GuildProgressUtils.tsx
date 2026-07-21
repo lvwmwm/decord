@@ -1,10 +1,10 @@
-// Module ID: 11489
-// Function ID: 89517
+// Module ID: 11496
+// Function ID: 89541
 // Name: useIOSCompletionStates
 // Dependencies: []
 // Exports: createGuildProgress, hideActionSheet, openActionSheet, useGuildProgressStep, useIsEligibleForGuildProgress
 
-// Module 11489 (useIOSCompletionStates)
+// Module 11496 (useIOSCompletionStates)
 function useIOSCompletionStates(guild) {
   const arg1 = guild;
   let obj = arg1(dependencyMap[10]);
@@ -83,7 +83,7 @@ function useIOSCompletionStates(guild) {
     obj.totalSteps = items7.length;
     return obj;
   } else {
-    return { "Null": "a", "Null": "XpBObB", "Null": "a", "Null": "NP1yHG", "Null": "a", "Null": "numericalInputDisabled", "Null": "r", "Null": "FALSE", "Null": "a", "Null": "Alternatives" };
+    return {};
   }
   const obj8 = arg1(dependencyMap[10]);
 }

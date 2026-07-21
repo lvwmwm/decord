@@ -1,10 +1,10 @@
-// Module ID: 11616
-// Function ID: 90225
+// Module ID: 11623
+// Function ID: 90248
 // Name: useGetApplicationFromBotUserId
 // Dependencies: []
 // Exports: default
 
-// Module 11616 (useGetApplicationFromBotUserId)
+// Module 11623 (useGetApplicationFromBotUserId)
 let closure_2 = importDefault(dependencyMap[0]);
 const EMPTY_STRING_SNOWFLAKE_ID = arg1(dependencyMap[1]).EMPTY_STRING_SNOWFLAKE_ID;
 const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/applications/getApplicationFromBotUserId.tsx");

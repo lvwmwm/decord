@@ -1,10 +1,10 @@
-// Module ID: 4266
-// Function ID: 37310
+// Module ID: 4270
+// Function ID: 37358
 // Name: convertAudioLevel
 // Dependencies: []
 // Exports: default
 
-// Module 4266 (convertAudioLevel)
+// Module 4270 (convertAudioLevel)
 function convertAudioLevel(arg0) {
   return arg0 / 32768;
 }

@@ -1,9 +1,9 @@
-// Module ID: 15840
-// Function ID: 121220
+// Module ID: 15847
+// Function ID: 121244
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
-// Module 15840 (_isNativeReflectConstruct)
+// Module 15847 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -154,7 +154,7 @@ let tmp3 = (arg0) => {
                             tmp18 = target_message_id;
                           }
                           flag = true;
-                          _Set(closure_2[15]).transitionTo(closure_19.CHANNEL(id, target_channel_id, tmp18), { "Bool(false)": null, "Bool(false)": null });
+                          _Set(closure_2[15]).transitionTo(closure_19.CHANNEL(id, target_channel_id, tmp18), { GIFT_CODE_EMBED: null, flexShrink: null });
                           const obj = _Set(closure_2[15]);
                         }
                         return flag;

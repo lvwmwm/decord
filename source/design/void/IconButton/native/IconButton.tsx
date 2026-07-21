@@ -1,9 +1,9 @@
-// Module ID: 12265
-// Function ID: 94042
+// Module ID: 12272
+// Function ID: 94065
 // Name: SquareIconButton
 // Dependencies: []
 
-// Module 12265 (SquareIconButton)
+// Module 12272 (SquareIconButton)
 class SquareIconButton {
   constructor(arg0) {
     size = global.size;
@@ -105,7 +105,7 @@ const jsx = arg1(dependencyMap[1]).jsx;
 let obj = { SMALL_24: 24, [24]: "SMALL_24", MEDIUM_32: 32, [32]: "MEDIUM_32", LARGE_40: 40, [40]: "LARGE_40" };
 let obj1 = arg1(dependencyMap[2]);
 obj = {};
-obj = { 1946383260: false, 1331335171: false, 1861837706: false, borderRadius: importDefault(dependencyMap[3]).radii.xs, backgroundColor: arg1(dependencyMap[4]).DARK_PRIMARY_700_LIGHT_PRIMARY_230 };
+obj = { "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, borderRadius: importDefault(dependencyMap[3]).radii.xs, backgroundColor: arg1(dependencyMap[4]).DARK_PRIMARY_700_LIGHT_PRIMARY_230 };
 obj.container = obj;
 obj.small = { height: obj.SMALL_24, width: obj.SMALL_24 };
 obj.medium = { height: obj.MEDIUM_32, width: obj.MEDIUM_32 };

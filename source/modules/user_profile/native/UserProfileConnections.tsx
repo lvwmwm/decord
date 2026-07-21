@@ -1,10 +1,10 @@
-// Module ID: 11990
-// Function ID: 92663
+// Module ID: 11997
+// Function ID: 92686
 // Name: VerifiedIcon
 // Dependencies: []
 // Exports: UserProfileAccountConnectionsCard, UserProfileApplicationRoleConnectionsCard
 
-// Module 11990 (VerifiedIcon)
+// Module 11997 (VerifiedIcon)
 let CARD_PADDING;
 let CARD_ROWS_COLUMN_GAP;
 function VerifiedIcon(arg0) {
@@ -53,16 +53,15 @@ const REFRESH_SMALL_16 = arg1(dependencyMap[8]).Icon.Sizes.REFRESH_SMALL_16;
 let obj1 = arg1(dependencyMap[8]);
 const iconSize = obj1.getIconSize(REFRESH_SMALL_16);
 let obj2 = arg1(dependencyMap[9]);
-let obj = { cardContainer: obj, cardTitle: { marginBottom: 0 }, connectionRow: obj1, connectionInfoContainer: { flexGrow: 1 }, connectedAccountName: {}, connectedAccountNameText: { "Null": false, "Null": false }, verifiedIconContainer: { height: iconSize, width: iconSize }, verifiedIcon: {}, connectionMetadata: { "Bool(false)": -1606348444, "Bool(false)": 1912602980, "Bool(false)": 24, "Bool(false)": 24 } };
+let obj = { cardContainer: obj, cardTitle: { marginBottom: 0 }, connectionRow: { columnGap: CARD_ROWS_COLUMN_GAP }, connectionInfoContainer: { flexGrow: 1 }, connectedAccountName: { 9223372036854775807: "safety_user_sentiment_notice_dismissed_at", 9223372036854775807: "message", 0: null }, connectedAccountNameText: { "Null": false, "Null": false }, verifiedIconContainer: { height: iconSize, width: iconSize }, verifiedIcon: {}, connectionMetadata: { "Null": "SERVER_GUIDE_CHANNEL_SELECTED", "Null": "staticUrl", "Null": "Array", "Null": "MERCH_STORE" } };
 obj = { paddingBottom: CARD_PADDING - 12 };
-obj1 = { alignSelf: "<string:2691851389>", flexGrow: "<string:1778384896>", flexShrink: "<string:285212672>", paddingHorizontal: "<string:26464577>", paddingTop: "<string:16478720>", columnGap: CARD_ROWS_COLUMN_GAP };
-obj2 = { color: importDefault(dependencyMap[10]).colors.INTERACTIVE_TEXT_ACTIVE };
-obj.metadataItem = obj2;
+obj1 = { color: importDefault(dependencyMap[10]).colors.INTERACTIVE_TEXT_ACTIVE };
+obj.metadataItem = obj1;
 obj.poweredByContainer = {};
-const obj3 = {};
+obj2 = {};
 const tmp5 = arg1(dependencyMap[7]);
-obj3.borderRadius = arg1(dependencyMap[8]).getIconSize(arg1(dependencyMap[8]).Icon.Sizes.MEDIUM);
-obj.applicationIcon = obj3;
+obj2.borderRadius = arg1(dependencyMap[8]).getIconSize(arg1(dependencyMap[8]).Icon.Sizes.MEDIUM);
+obj.applicationIcon = obj2;
 let closure_17 = obj2.createStyles(obj);
 let closure_18 = importAllResult.memo((userId) => {
   let accountType;
@@ -277,7 +276,7 @@ let closure_18 = importAllResult.memo((userId) => {
       const items6 = [callback(arg1(dependencyMap[30]).BaseIconImage, obj10), , ];
       obj11 = { style: tmp.connectionInfoContainer };
       const obj12 = { style: tmp.connectedAccountName };
-      obj13 = { fullscreen: 251, headerShown: 147, mostRecentQuery: null, fetching: "7e87039ca280115f9b6a52cb6bc7dc5e", style: tmp.connectedAccountNameText, children: account.name };
+      obj13 = { style: tmp.connectedAccountNameText, children: account.name };
       const items7 = [callback(arg1(dependencyMap[28]).Text, obj13), ];
       let tmp56 = null;
       if (account.verified) {
@@ -289,7 +288,7 @@ let closure_18 = importAllResult.memo((userId) => {
       const items8 = [closure_14(platformUserUrl, obj12), , ];
       let tmp59 = null;
       if (null != createdAtDate) {
-        const obj15 = { INTEGRATION_CREATE: true, ConstraintReasonCode: true };
+        const obj15 = {};
         const intl = arg1(dependencyMap[27]).intl;
         const obj16 = { date: createdAtDate };
         obj15.children = intl.format(arg1(dependencyMap[27]).t.9rfonh, obj16);
@@ -417,7 +416,7 @@ let closure_19 = importAllResult.memo((application) => {
     const items3 = [tmp10, ];
     const obj3 = { style: tmp.connectionInfoContainer };
     const obj4 = { style: tmp.connectedAccountName };
-    const obj5 = { fullscreen: 251, headerShown: 147, mostRecentQuery: null, fetching: "7e87039ca280115f9b6a52cb6bc7dc5e", style: tmp.connectedAccountNameText, children: str };
+    const obj5 = { style: tmp.connectedAccountNameText, children: str };
     obj4.children = callback(arg1(dependencyMap[28]).Text, obj5);
     obj3.children = callback(closure_5, obj4);
     items3[1] = callback(closure_5, obj3);
@@ -458,7 +457,7 @@ const memoResult = importAllResult.memo((applicationRoleConnection) => {
     }
     items[1] = tmp34;
     const obj3 = { style: tmp.poweredByContainer };
-    const obj4 = { INTEGRATION_CREATE: true, ConstraintReasonCode: true };
+    const obj4 = {};
     const intl2 = arg1(dependencyMap[27]).intl;
     const obj5 = {
       applicationHook() {
@@ -489,7 +488,7 @@ const memoResult = importAllResult.memo((applicationRoleConnection) => {
     const obj10 = { style: tmp.connectionInfoContainer };
     let tmp12 = null;
     if (null != applicationRoleConnection.platform_name) {
-      const obj11 = { INTEGRATION_CREATE: 131072.00119209292, ConstraintReasonCode: -293983030121430100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, children: applicationRoleConnection.platform_name };
+      const obj11 = { children: applicationRoleConnection.platform_name };
       tmp12 = callback(arg1(dependencyMap[28]).Text, obj11);
     }
     const items2 = [tmp12, , , ];
@@ -509,7 +508,7 @@ const memoResult = importAllResult.memo((applicationRoleConnection) => {
     }
     items2[2] = tmp20;
     const obj14 = { style: tmp.poweredByContainer };
-    const obj15 = { INTEGRATION_CREATE: true, ConstraintReasonCode: true };
+    const obj15 = {};
     const intl = arg1(dependencyMap[27]).intl;
     const obj16 = {
       applicationHook() {
@@ -526,7 +525,7 @@ const memoResult = importAllResult.memo((applicationRoleConnection) => {
   }
   const tmp2 = importDefault(dependencyMap[17])("UserProfileConnections");
 });
-const obj9 = arg1(dependencyMap[8]);
+const obj8 = arg1(dependencyMap[8]);
 const result = arg1(dependencyMap[39]).fileFinishedImporting("modules/user_profile/native/UserProfileConnections.tsx");
 
 export const ApplicationRoleConnection = memoResult;

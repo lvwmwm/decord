@@ -1,9 +1,9 @@
-// Module ID: 14957
-// Function ID: 112600
+// Module ID: 14964
+// Function ID: 112624
 // Name: handleJoinGuild
 // Dependencies: []
 
-// Module 14957 (handleJoinGuild)
+// Module 14964 (handleJoinGuild)
 function handleJoinGuild() {
   const result = importDefault(dependencyMap[11]).openGuildJoinServerScreen();
 }
@@ -13,10 +13,12 @@ function handleCreateGuild() {
 class GuildsEmptyContent {
   constructor(arg0) {
     tmp = jsxs();
-    obj = { style: tmp.scrollView, contentContainerStyle: items };
+    obj = { 0: null, 9223372036854775807: null };
+    obj.style = tmp.scrollView;
     items = [, ];
     items[0] = tmp.scrollViewContentContainer;
     items[1] = global.contentContainerStyle;
+    obj.contentContainerStyle = items;
     obj = {};
     obj1 = { style: tmp.content };
     obj2 = { style: tmp.illustrationWrapper };
@@ -25,10 +27,9 @@ class GuildsEmptyContent {
     items1 = [, ];
     items1[0] = jsx(View, obj2);
     obj4 = { style: tmp.textWrapper };
-    obj5 = { "Bool(false)": null, "Bool(false)": null };
+    obj5 = { style: items2 };
     items2 = [, ];
     ({ text: arr3[0], headerText: arr3[1] } = tmp);
-    obj5.style = items2;
     intl = arg1(dependencyMap[13]).intl;
     obj5.children = intl.string(arg1(dependencyMap[13]).t.Y7Ml/I);
     items3 = [, ];
@@ -49,7 +50,7 @@ class GuildsEmptyContent {
     obj8.onPress = handleJoinGuild;
     items5 = [, ];
     items5[0] = jsx(arg1(dependencyMap[15]).Button, obj8);
-    obj9 = {};
+    obj9 = { key: "r", onCloseCallback: "sectionIdsByBotId" };
     intl4 = arg1(dependencyMap[13]).intl;
     obj9.text = intl4.string(arg1(dependencyMap[13]).t.BetvT+);
     obj9.onPress = handleCreateGuild;
@@ -80,10 +81,10 @@ obj.header = obj1;
 obj.headerTitle = {};
 const obj2 = { "Null": false, "Null": false, backgroundColor: importDefault(dependencyMap[9]).colors.BACKGROUND_BASE_LOW };
 obj.scrollViewContentContainer = obj2;
-obj.headerInner = { marginBottom: null, borderRadius: "\u{1F469}\u{1F3FC}\u200D\u{1F9B1}", backgroundColor: true };
-const obj3 = { 1365427804: null, -1436408102: null, 1850827606: null, 1872450297: null, paddingHorizontal: importDefault(dependencyMap[9]).space.PX_16 };
+obj.headerInner = { accessible: null, count: "\u{1F469}\u{1F3FC}\u200D\u{1F9B1}", "Bool(false)": true };
+const obj3 = { 9223372036854775807: null, 0: null, 9223372036854775807: null, -9223372036854775808: null, paddingHorizontal: importDefault(dependencyMap[9]).space.PX_16 };
 obj.content = obj3;
-obj.illustrationWrapper = { "Null": null, "Null": null };
+obj.illustrationWrapper = { iu: null, ja: null };
 const tmp4 = arg1(dependencyMap[7]);
 obj.illustration = { marginBottom: importDefault(dependencyMap[9]).space.PX_24 };
 const obj4 = { marginBottom: importDefault(dependencyMap[9]).space.PX_24 };
@@ -159,7 +160,7 @@ const memoResult = importAllResult.memo(function GuildsEmpty(arg0) {
     obj.style = items2;
     obj1 = { style: tmp.headerTitle };
     const obj2 = { style: tmp.headerInner };
-    obj3 = { "Bool(false)": null, "Bool(false)": "hidden", "Bool(false)": true, "Bool(false)": "/assets/design/components/Icon/native/redesign/generated/images" };
+    obj3 = {};
     const intl = arg1(dependencyMap[13]).intl;
     obj3.children = intl.string(arg1(dependencyMap[13]).t.7hB4kg);
     obj2.children = callback(arg1(dependencyMap[10]).Text, obj3);

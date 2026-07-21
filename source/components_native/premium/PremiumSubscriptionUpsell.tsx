@@ -1,10 +1,10 @@
-// Module ID: 12343
-// Function ID: 94432
+// Module ID: 12350
+// Function ID: 94455
 // Name: PremiumSubscriptionUpsell
 // Dependencies: []
 // Exports: default
 
-// Module 12343 (PremiumSubscriptionUpsell)
+// Module 12350 (PremiumSubscriptionUpsell)
 importAll(dependencyMap[0]);
 const tmp3 = arg1(dependencyMap[1]);
 ({ View: closure_3, Image: closure_4 } = tmp3);
@@ -22,7 +22,7 @@ const tmp5 = arg1(dependencyMap[7]);
 obj.upsellCard = { borderRadius: importDefault(dependencyMap[9]).radii.xs };
 const obj1 = { borderRadius: importDefault(dependencyMap[9]).radii.xs };
 obj.upsellFeatures = { borderRadius: importDefault(dependencyMap[9]).radii.sm, backgroundColor: importDefault(dependencyMap[9]).colors.BORDER_SUBTLE };
-obj.upsellFeatureSubLogo = { "Bool(false)": true, "Bool(false)": true, "Bool(false)": true };
+obj.upsellFeatureSubLogo = { <string:3613584830>: null, <string:3426242934>: null, <string:2404579681>: null };
 obj.upsellFeatureList = { marginTop: 8 };
 obj.upsellButton = { marginTop: 16 };
 obj.upsellFeatureLogoTier2 = {};
@@ -53,11 +53,11 @@ export default function PremiumSubscriptionUpsell(arg0) {
     let obj4 = importDefault(dependencyMap[14]);
     if (obj4.isPremium(stateFromStores)) {
       obj1 = {};
-      const obj2 = { 0: -40, 9223372036854775807: 8, 0: "flex", -9223372036854775808: "row", style: tmp.title };
+      const obj2 = { 1501064855: true, -1267889981: true, -1145697943: true, -1266241916: true, style: tmp.title };
       const intl2 = arg1(dependencyMap[11]).intl;
       obj2.children = intl2.string(arg1(dependencyMap[11]).t.YYfHlx);
       const items2 = [callback(arg1(dependencyMap[17]).Text, obj2), ];
-      const obj3 = { Promise: 24, marginTop: 24, flags: null, style: tmp.subtitle };
+      const obj3 = { "Null": false, "Null": false, "Null": false, style: tmp.subtitle };
       const intl3 = arg1(dependencyMap[11]).intl;
       obj4 = { numFreeGuildSubscriptions: closure_8 };
       obj3.children = intl3.format(arg1(dependencyMap[11]).t.Af0zEZ, obj4);
@@ -65,7 +65,7 @@ export default function PremiumSubscriptionUpsell(arg0) {
       obj1.children = items2;
       let tmp14 = callback2(closure_11, obj1);
     } else {
-      const obj5 = { 0: -40, 9223372036854775807: 8, 0: "flex", -9223372036854775808: "row", style: tmp.title };
+      const obj5 = { 1501064855: true, -1267889981: true, -1145697943: true, -1266241916: true, style: tmp.title };
       const intl = arg1(dependencyMap[11]).intl;
       obj5.children = intl.string(arg1(dependencyMap[11]).t.qUl+K4);
       tmp14 = callback(arg1(dependencyMap[17]).Text, obj5);

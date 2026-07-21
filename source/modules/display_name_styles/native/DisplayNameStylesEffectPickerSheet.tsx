@@ -1,10 +1,10 @@
-// Module ID: 14099
-// Function ID: 107078
+// Module ID: 14106
+// Function ID: 107101
 // Name: EffectTile
 // Dependencies: []
 // Exports: default
 
-// Module 14099 (EffectTile)
+// Module 14106 (EffectTile)
 function EffectTile(arg0) {
   let effectId;
   let onClick;
@@ -43,12 +43,12 @@ function EffectTile(arg0) {
   const obj2 = { userId, userName: stringResult, effectDisplayType: arg1(dependencyMap[20]).EffectDisplayType.STATIC, pendingDisplayNameStyles: displayNameStylesEffectConfig.previewStyles, style: tmp.effectName, variant: "text-md/semibold" };
   const items1 = [callback2(importDefault(dependencyMap[19]), obj2), , ];
   if (showNewDot) {
-    const obj3 = { display: true, width: true, justifyContent: true, style: tmp.tileNewDot };
+    const obj3 = { Text: 5375, string: 1896939776, y: 8000, style: tmp.tileNewDot };
     showNewDot = callback2(closure_5, obj3);
   }
   items1[1] = showNewDot;
   if (hasItem) {
-    const obj4 = { INTEGRATION_CREATE: false, ConstraintReasonCode: false, style: tmp.betaCaption };
+    const obj4 = { style: tmp.betaCaption };
     const intl3 = arg1(dependencyMap[14]).intl;
     obj4.children = intl3.string(arg1(dependencyMap[14]).t.oW0eUd);
     hasItem = callback2(arg1(dependencyMap[21]).Text, obj4);
@@ -65,7 +65,7 @@ const FLYWHEEL_EFFECTS = arg1(dependencyMap[3]).FLYWHEEL_EFFECTS;
 const tmp2 = arg1(dependencyMap[2]);
 ({ jsx: closure_8, jsxs: closure_9 } = arg1(dependencyMap[4]));
 let obj = arg1(dependencyMap[5]);
-obj = { header: { paddingTop: 4 }, headerTrailing: {}, container: { flex: 1 } };
+obj = { header: { paddingTop: 4 }, headerTrailing: { "Null": null, "Null": null }, container: { flex: 1 } };
 obj = { padding: importDefault(dependencyMap[6]).space.PX_8, paddingLeft: importDefault(dependencyMap[6]).space.PX_16, alignItems: "center" };
 obj.contentContainer = obj;
 obj.gridContainer = {};
@@ -76,10 +76,10 @@ obj.effectCardSelected = { borderColor: importDefault(dependencyMap[6]).colors.C
 obj.effectName = { textAlign: "center" };
 const obj2 = { borderColor: importDefault(dependencyMap[6]).colors.CONTROL_BRAND_FOREGROUND };
 obj.tileNewDot = { position: "absolute", top: importDefault(dependencyMap[6]).space.PX_8, right: importDefault(dependencyMap[6]).space.PX_8, width: importDefault(dependencyMap[6]).space.PX_8, height: importDefault(dependencyMap[6]).space.PX_8, borderRadius: importDefault(dependencyMap[6]).space.PX_8 / 2, backgroundColor: importDefault(dependencyMap[6]).colors.BADGE_BACKGROUND_BRAND, shadowColor: importDefault(dependencyMap[6]).colors.BADGE_BACKGROUND_BRAND, shadowRadius: importDefault(dependencyMap[6]).space.PX_4, shadowOpacity: 1, elevation: 4 };
-const obj3 = { position: "absolute", top: importDefault(dependencyMap[6]).space.PX_8, right: importDefault(dependencyMap[6]).space.PX_8, width: importDefault(dependencyMap[6]).space.PX_8, height: importDefault(dependencyMap[6]).space.PX_8, borderRadius: importDefault(dependencyMap[6]).space.PX_8 / 2, backgroundColor: importDefault(dependencyMap[6]).colors.BADGE_BACKGROUND_BRAND, shadowColor: importDefault(dependencyMap[6]).colors.BADGE_BACKGROUND_BRAND, shadowRadius: importDefault(dependencyMap[6]).space.PX_4, shadowOpacity: 1, elevation: 4 };
-obj.betaCaption = { bottom: importDefault(dependencyMap[6]).space.PX_4 };
+const obj4 = { <string:1196532342>: null, <string:1649435100>: null, <string:4082282146>: null, <string:1657055817>: null, <string:4082216610>: null, bottom: importDefault(dependencyMap[6]).space.PX_4 };
+obj.betaCaption = obj4;
 let closure_10 = obj.createStyles(obj);
-const obj4 = { bottom: importDefault(dependencyMap[6]).space.PX_4 };
+const obj3 = { position: "absolute", top: importDefault(dependencyMap[6]).space.PX_8, right: importDefault(dependencyMap[6]).space.PX_8, width: importDefault(dependencyMap[6]).space.PX_8, height: importDefault(dependencyMap[6]).space.PX_8, borderRadius: importDefault(dependencyMap[6]).space.PX_8 / 2, backgroundColor: importDefault(dependencyMap[6]).colors.BADGE_BACKGROUND_BRAND, shadowColor: importDefault(dependencyMap[6]).colors.BADGE_BACKGROUND_BRAND, shadowRadius: importDefault(dependencyMap[6]).space.PX_4, shadowOpacity: 1, elevation: 4 };
 const result = arg1(dependencyMap[22]).fileFinishedImporting("modules/display_name_styles/native/DisplayNameStylesEffectPickerSheet.tsx");
 
 export default function DisplayNameStylesEffectPickerSheet(userId) {
@@ -127,8 +127,8 @@ export default function DisplayNameStylesEffectPickerSheet(userId) {
     const obj4 = { style: tmp.container };
     const obj5 = { style: tmp.contentContainer };
     const obj6 = {
-      0: "Array",
-      0: "isArray",
+      pink: -144637951,
+      plum: 17545793,
       style: tmp.gridContainer,
       children: visibleEffectOrder.map((effectId) => {
           const userId = effectId;

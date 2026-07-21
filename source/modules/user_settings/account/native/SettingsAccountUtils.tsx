@@ -1,10 +1,10 @@
-// Module ID: 13518
-// Function ID: 102594
+// Module ID: 13525
+// Function ID: 102617
 // Name: useIs2FAEnabled
 // Dependencies: []
 // Exports: useIs2FAEnabled, useIsTOTPEnabled, useIsUserVerified
 
-// Module 13518 (useIs2FAEnabled)
+// Module 13525 (useIs2FAEnabled)
 let closure_2 = importDefault(dependencyMap[0]);
 let closure_3 = importDefault(dependencyMap[1]);
 const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/user_settings/account/native/SettingsAccountUtils.tsx");

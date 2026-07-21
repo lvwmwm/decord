@@ -1,10 +1,10 @@
-// Module ID: 6257
-// Function ID: 50259
+// Module ID: 6259
+// Function ID: 50302
 // Name: HeroIllocon
 // Dependencies: []
 // Exports: HeroIllocon
 
-// Module 6257 (HeroIllocon)
+// Module 6259 (HeroIllocon)
 const jsx = require(dependencyMap[0]).jsx;
 const _module = require(dependencyMap[3]);
 const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/HeroIllocon.native.tsx");

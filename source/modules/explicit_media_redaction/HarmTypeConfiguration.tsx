@@ -1,9 +1,9 @@
-// Module ID: 5667
-// Function ID: 48668
+// Module ID: 5669
+// Function ID: 48711
 // Name: ContentHarmType
 // Dependencies: []
 
-// Module 5667 (ContentHarmType)
+// Module 5669 (ContentHarmType)
 let MessageAttachmentFlags;
 let MessageEmbedFlags;
 const _module = require(dependencyMap[0]);
@@ -81,7 +81,7 @@ obj[obj.EXPLICIT] = {
     }
     obj.setting = tmp11;
     obj[require(dependencyMap[3]).ContentHarmTypeChannel.GUILD] = obj1.resolveExplicitContentSettingWithDefaults(obj);
-    obj1 = { 520035839: null, 1157570559: null, 315659: null };
+    obj1 = { "Bool(true)": null, "Bool(true)": null, "Bool(true)": null };
     let tmp14;
     if (null != tmp) {
       tmp14 = tmp[closure_0(undefined, closure_1[3]).ContentHarmTypeChannel.FRIEND_DM];
@@ -170,7 +170,7 @@ const obj1 = {
     }
     obj.setting = tmp11;
     obj[require(dependencyMap[3]).ContentHarmTypeChannel.GUILD] = obj1.resolveExplicitContentSettingWithDefaults(obj);
-    obj1 = { 520035839: null, 1157570559: null, 315659: null };
+    obj1 = { "Bool(true)": null, "Bool(true)": null, "Bool(true)": null };
     let tmp14;
     if (null != tmp) {
       tmp14 = tmp[closure_0(undefined, closure_1[3]).ContentHarmTypeChannel.FRIEND_DM];
@@ -259,7 +259,7 @@ obj[obj.GORE] = {
     }
     obj.setting = tmp11;
     obj[require(dependencyMap[3]).ContentHarmTypeChannel.GUILD] = obj1.resolveGoreSettingWithDefaults(obj);
-    obj1 = { 520035839: null, 1157570559: null, 315659: null };
+    obj1 = { "Bool(true)": null, "Bool(true)": null, "Bool(true)": null };
     let tmp14;
     if (null != tmp) {
       tmp14 = tmp[closure_0(undefined, closure_1[3]).ContentHarmTypeChannel.FRIEND_DM];
@@ -348,7 +348,7 @@ const obj2 = {
     }
     obj.setting = tmp11;
     obj[require(dependencyMap[3]).ContentHarmTypeChannel.GUILD] = obj1.resolveGoreSettingWithDefaults(obj);
-    obj1 = { 520035839: null, 1157570559: null, 315659: null };
+    obj1 = { "Bool(true)": null, "Bool(true)": null, "Bool(true)": null };
     let tmp14;
     if (null != tmp) {
       tmp14 = tmp[closure_0(undefined, closure_1[3]).ContentHarmTypeChannel.FRIEND_DM];

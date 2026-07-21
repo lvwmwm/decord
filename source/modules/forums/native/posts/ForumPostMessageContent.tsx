@@ -1,10 +1,10 @@
-// Module ID: 11131
-// Function ID: 86603
+// Module ID: 11137
+// Function ID: 86626
 // Name: ForumPostMessageContent
 // Dependencies: []
 // Exports: default
 
-// Module 11131 (ForumPostMessageContent)
+// Module 11137 (ForumPostMessageContent)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 let closure_4 = arg1(dependencyMap[2]).createStyles({ text: { alignSelf: "flex-start" } });

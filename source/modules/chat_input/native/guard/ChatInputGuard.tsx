@@ -1,10 +1,10 @@
-// Module ID: 11463
-// Function ID: 89317
+// Module ID: 11470
+// Function ID: 89341
 // Name: ChatInputGuard
 // Dependencies: []
 // Exports: ChatInputGuardContainer, default
 
-// Module 11463 (ChatInputGuard)
+// Module 11470 (ChatInputGuard)
 let closure_3 = importAll(dependencyMap[0]);
 ({ StyleSheet: closure_4, View: closure_5 } = arg1(dependencyMap[1]));
 let closure_6 = arg1(dependencyMap[2]).updateChatInputContainerHeight;
@@ -114,7 +114,7 @@ export default function ChatInputGuard(type) {
       if ("string" === typeof subtext2) {
         tmp2 = null;
         if (subtext2.length > 0) {
-          obj = { Promise: "ur", marginTop: "SECTION_INDEX_FIRST_NAMED_CATEGORY", flags: "ur", style: tmp.subtext, children: subtext2 };
+          obj = { style: tmp.subtext, children: subtext2 };
           tmp2 = callback(arg1(dependencyMap[16]).Text, obj);
         }
       }

@@ -1,9 +1,9 @@
-// Module ID: 6933
-// Function ID: 55424
+// Module ID: 6937
+// Function ID: 55435
 // Name: useConsoleQuestUIStore
 // Dependencies: []
 
-// Module 6933 (useConsoleQuestUIStore)
+// Module 6937 (useConsoleQuestUIStore)
 let closure_0 = [];
 const _module = require(dependencyMap[0]);
 const obj = _module.create((arg0, arg1) => {

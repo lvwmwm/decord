@@ -1,15 +1,9 @@
 // Module ID: 1716
 // Function ID: 19285
 // Name: _isNativeReflectConstruct
-// Dependencies: [0, 0, 0, 0, 0, 0, 0]
+// Dependencies: []
 
 // Module 1716 (_isNativeReflectConstruct)
-import result from "result";
-import closure_3 from "result";
-import closure_4 from "result";
-import closure_5 from "result";
-import closure_6 from "result";
-
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -19,12 +13,17 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
+let closure_2 = importDefault(dependencyMap[0]);
+let closure_3 = importDefault(dependencyMap[1]);
+let closure_4 = importDefault(dependencyMap[2]);
+let closure_5 = importDefault(dependencyMap[3]);
+let closure_6 = importDefault(dependencyMap[4]);
 let closure_7 = { code: "function pnpm_SequencedTransitionTs1(values){const{delayFunction,delay,withSequence,withTiming,reverse,config,callback}=this.__closure;return{initialValues:{originX:values.currentOriginX,originY:values.currentOriginY,width:values.currentWidth,height:values.currentHeight},animations:{originX:delayFunction(delay,withSequence(withTiming(reverse?values.currentOriginX:values.targetOriginX,config),withTiming(values.targetOriginX,config))),originY:delayFunction(delay,withSequence(withTiming(reverse?values.targetOriginY:values.currentOriginY,config),withTiming(values.targetOriginY,config))),width:delayFunction(delay,withSequence(withTiming(reverse?values.currentWidth:values.targetWidth,config),withTiming(values.targetWidth,config))),height:delayFunction(delay,withSequence(withTiming(reverse?values.targetHeight:values.currentHeight,config),withTiming(values.targetHeight,config)))},callback:callback};}" };
 const tmp2 = (BaseAnimationBuilder) => {
   class SequencedTransition {
     constructor() {
       self = this;
-      tmp = result(this, SequencedTransition);
+      tmp = closure_2(this, SequencedTransition);
       length = arguments.length;
       array = new Array(length);
       for (let num = 0; num < length; num = num + 1) {
@@ -95,7 +94,7 @@ const tmp2 = (BaseAnimationBuilder) => {
     }
   ];
   return callback(SequencedTransition, items, items1);
-}(require("result").BaseAnimationBuilder);
+}(arg1(dependencyMap[6]).BaseAnimationBuilder);
 tmp2.presetName = "SequencedTransition";
 
 export const SequencedTransition = tmp2;

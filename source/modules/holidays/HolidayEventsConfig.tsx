@@ -1,16 +1,10 @@
-// Module ID: 15928
-// Function ID: 122201
-// Name: useIsExperimentEligible
+// Module ID: 15935
+// Function ID: 122227
+// Name: HolidayEmojiAnimationType
 // Dependencies: []
 
-// Module 15928 (useIsExperimentEligible)
+// Module 15935 (HolidayEmojiAnimationType)
 let obj = {
-  "Bool(true)": "<string:189857795>",
-  "Bool(true)": "Glass_01",
-  "Bool(true)": "<string:3813801984>",
-  "Bool(true)": "<string:1904831089>",
-  "Bool(true)": "a",
-  "Bool(true)": "<string:30166593>",
   useIsExperimentEligible() {
     return false;
   },

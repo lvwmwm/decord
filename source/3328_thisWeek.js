@@ -20,7 +20,7 @@ if (!_module) {
 } else {
   tmp3 = _module;
 }
-let closure_1 = [true, true, true, true, true, true, true];
+let closure_1 = [];
 let closure_2 = {
   lastWeek(getUTCDay, defaultResult2, date) {
     const uTCDay = getUTCDay.getUTCDay();

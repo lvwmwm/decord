@@ -1,14 +1,14 @@
-// Module ID: 6890
-// Function ID: 54877
+// Module ID: 6894
+// Function ID: 54887
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [57, 5, 6905, 3986, 2, 6, 7, 15, 17, 18, 27, 6908]
+// Dependencies: [57, 5, 6909, 3986, 2, 6, 7, 15, 17, 18, 27, 6912]
 
-// Module 6890 (_createForOfIteratorHelperLoose)
+// Module 6894 (_createForOfIteratorHelperLoose)
 import _slicedToArray from "_slicedToArray";
 import asyncGeneratorStep from "asyncGeneratorStep";
 import enforcing from "enforcing";
 import closure_6 from "enforcing";
-import keys from "keys";
+import result2 from "result2";
 import _classCallCheck from "_classCallCheck";
 import _defineProperties from "_defineProperties";
 import { RelationshipTypes } from "_possibleConstructorReturn";
@@ -99,7 +99,7 @@ let closure_12 = false;
 let tmp4 = () => {
   class UserSearchItems {
     constructor() {
-      f54884 = this;
+      f54894 = this;
       tmp = asyncGeneratorStep(this, UserSearchItems);
       this.actions = {
         POST_CONNECTION_OPEN: this.handlePostConnectionOpen,
@@ -174,8 +174,8 @@ let tmp4 = () => {
             obj.type = closure_10.FRIEND;
             obj.user = user;
             ({ names: obj6.names, nick: obj6.nick } = names);
-            let tmp19 = keys;
-            let userAffinity = keys.getUserAffinity(value);
+            let tmp19 = result2;
+            let userAffinity = result2.getUserAffinity(value);
             let prop;
             if (null != userAffinity) {
               prop = userAffinity.communicationProbability;
@@ -213,8 +213,8 @@ let tmp4 = () => {
             obj.type = closure_10.FRIEND;
             obj.user = user1;
             ({ names: obj8.names, nick: obj8.nick } = names1);
-            let tmp25 = keys;
-            let userAffinity1 = keys.getUserAffinity(value.id);
+            let tmp25 = result2;
+            let userAffinity1 = result2.getUserAffinity(value.id);
             let prop1;
             if (null != userAffinity1) {
               prop1 = userAffinity1.communicationProbability;

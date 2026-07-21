@@ -1,10 +1,10 @@
-// Module ID: 11952
-// Function ID: 92422
+// Module ID: 11959
+// Function ID: 92445
 // Name: ThreadMinusIcon
 // Dependencies: []
 // Exports: ThreadMinusIcon
 
-// Module 11952 (ThreadMinusIcon)
+// Module 11959 (ThreadMinusIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/ThreadMinusIcon.tsx");

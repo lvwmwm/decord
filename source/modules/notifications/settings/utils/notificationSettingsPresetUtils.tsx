@@ -1,10 +1,10 @@
-// Module ID: 4320
-// Function ID: 37906
+// Module ID: 4324
+// Function ID: 37954
 // Name: Presets
 // Dependencies: []
 // Exports: arePresetSettingsUnset, presetFromSettings, presetName
 
-// Module 4320 (Presets)
+// Module 4324 (Presets)
 const UserNotificationSettings = require(dependencyMap[0]).UserNotificationSettings;
 const UnreadSetting = require(dependencyMap[1]).UnreadSetting;
 const obj = { ALL_MESSAGES: "all_messages", MENTIONS: "mentions", NOTHING: "nothing", CUSTOM: "custom" };

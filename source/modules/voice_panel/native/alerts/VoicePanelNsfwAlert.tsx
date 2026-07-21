@@ -1,10 +1,10 @@
-// Module ID: 15727
-// Function ID: 120219
+// Module ID: 15734
+// Function ID: 120243
 // Name: VoicePanelNsfwAlert
 // Dependencies: []
 // Exports: default
 
-// Module 15727 (VoicePanelNsfwAlert)
+// Module 15734 (VoicePanelNsfwAlert)
 importAll(dependencyMap[0]);
 const isGuildNSFW = arg1(dependencyMap[1]).isGuildNSFW;
 let closure_4 = importDefault(dependencyMap[2]);

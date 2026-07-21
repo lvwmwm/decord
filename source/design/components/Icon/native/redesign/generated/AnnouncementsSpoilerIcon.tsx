@@ -1,10 +1,10 @@
-// Module ID: 4644
-// Function ID: 40256
+// Module ID: 4646
+// Function ID: 40297
 // Name: AnnouncementsSpoilerIcon
 // Dependencies: []
 // Exports: AnnouncementsSpoilerIcon
 
-// Module 4644 (AnnouncementsSpoilerIcon)
+// Module 4646 (AnnouncementsSpoilerIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/AnnouncementsSpoilerIcon.tsx");

@@ -1,10 +1,10 @@
-// Module ID: 4305
-// Function ID: 37714
+// Module ID: 4309
+// Function ID: 37762
 // Name: hasStream
-// Dependencies: []
+// Dependencies: [284214097]
 // Exports: hasStream
 
-// Module 4305 (hasStream)
+// Module 4309 (hasStream)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("modules/guild_sidebar/ChannelListUtils.tsx");
 

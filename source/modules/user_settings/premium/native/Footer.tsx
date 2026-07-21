@@ -1,10 +1,10 @@
-// Module ID: 12297
-// Function ID: 94259
+// Module ID: 12304
+// Function ID: 94282
 // Name: Footer
 // Dependencies: []
 // Exports: default
 
-// Module 12297 (Footer)
+// Module 12304 (Footer)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 ({ jsx: closure_4, Fragment: closure_5, jsxs: closure_6 } = arg1(dependencyMap[2]));
@@ -27,7 +27,7 @@ export default function Footer(showSubscribeButton) {
     obj.children = intl.string(arg1(dependencyMap[7]).t.2bSPbq);
     const items1 = [callback(arg1(dependencyMap[6]).Text, obj), ];
     const obj1 = { style: tmp.button };
-    const obj2 = { 0: "r", 9223372036854775807: "WATCHING", 0: "r", 9223372036854775807: "getVisibleLayouts", 0: "Array", text: tmp5, onPress: tmp4 };
+    const obj2 = { "Bool(true)": "RBTree", "Bool(true)": "currentEmbeddedApplication", "Bool(true)": "SyntaxError", "Bool(true)": "RBTree", "Bool(true)": "preemptiveExpanded", text: tmp5, onPress: tmp4 };
     obj1.children = callback(arg1(dependencyMap[8]).Button, obj2);
     items1[1] = callback(View, obj1);
     obj.children = items1;

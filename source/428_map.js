@@ -4,7 +4,7 @@
 // Dependencies: []
 
 // Module 428 (map)
-const items = [["LOAD_THREADS_SUCCESS", "LOAD_ARCHIVED_THREADS_SUCCESS"], ["vert", "x"], ["shit", "rape"], [], [null, null], [], ["GUILD_MEMBER_LIST_UPDATE", false]];
+const items = [["isArray", "p"], [], [], [], [], [], []];
 const map = new Map(items);
 arg5.default = {
   isBoldTextEnabled() {

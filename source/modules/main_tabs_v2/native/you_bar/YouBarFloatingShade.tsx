@@ -1,8 +1,8 @@
-// Module ID: 14988
-// Function ID: 112902
+// Module ID: 14995
+// Function ID: 112926
 // Dependencies: []
 
-// Module 14988
+// Module 14995
 const View = arg1(dependencyMap[1]).View;
 let closure_4 = importDefault(dependencyMap[2]);
 let closure_5 = arg1(dependencyMap[3]).YOU_BAR_GRADIENT_EXTRA_HEIGHT;
@@ -71,7 +71,7 @@ const memoResult = importAllResult.memo(function YouBarFloatingShade() {
   obj1 = { bottom: sum / 2, height: sum / 2, width };
   items2[1] = obj1;
   const items3 = [str, str2];
-  items1[1] = callback(importDefault(dependencyMap[17]), { style: items2, colors: items3, start: { "Null": false, "Null": true }, end: { "Null": 131072.00314656927, "Null": 0.000000000000000000000000000000000000000000000000000000011294471302334573 }, locations: [null, null], pointerEvents: "none" });
+  items1[1] = callback(importDefault(dependencyMap[17]), { style: items2, colors: items3, start: { max: -536870861, guildId: -299892737 }, end: {}, locations: ["Text", "lc"], pointerEvents: "none" });
   const items4 = [tmp.container, ];
   const obj2 = { width, height: sum / 2, backgroundColor: str2 };
   items4[1] = obj2;

@@ -1,10 +1,10 @@
-// Module ID: 15387
-// Function ID: 117414
+// Module ID: 15394
+// Function ID: 117438
 // Name: LinkedLobbyFormSection
 // Dependencies: []
 // Exports: default
 
-// Module 15387 (LinkedLobbyFormSection)
+// Module 15394 (LinkedLobbyFormSection)
 function LinkedLobbyFormSection(channel) {
   channel = channel.channel;
   const arg1 = channel;

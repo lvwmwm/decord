@@ -1,11 +1,13 @@
-// Module ID: 12768
-// Function ID: 97866
-// Dependencies: []
+// Module ID: 12775
+// Function ID: 97889
+// Dependencies: [131072, 619708416, 5, 57, 31, 27, 1352, 1348]
 
-// Module 12768
+// Module 12775
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+
 let closure_2 = importDefault(dependencyMap[0]);
 const isGuildOwner = arg1(dependencyMap[1]).isGuildOwner;
-const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/guild_role_subscriptions/ui/RoleSubscriptionsOnboardingGuildPickerFeatureSpec.tsx");
+const result = _isNativeReflectConstruct.fileFinishedImporting("modules/guild_role_subscriptions/ui/RoleSubscriptionsOnboardingGuildPickerFeatureSpec.tsx");
 
 export default {
   title() {
@@ -23,7 +25,7 @@ export default {
       let result = callback2(guild, arg1);
       if (result) {
         let obj = callback(closure_1[4]);
-        obj = { "Null": null, "Null": null, "Null": null, guild, isUserInCreatorMonetizationEligibleCountry: callback(closure_1[5]).isUserInCreatorMonetizationEligibleCountry() };
+        obj = { -9223372036854775808: null, -9223372036854775808: null, -9223372036854775808: null, guild, isUserInCreatorMonetizationEligibleCountry: callback(closure_1[5]).isUserInCreatorMonetizationEligibleCountry() };
         const obj3 = callback(closure_1[5]);
         obj.shouldRestrictUpdatingRoleSubscriptionSettings = callback(closure_1[6]).shouldRestrictUpdatingCreatorMonetizationSettings(guild.id);
         result = obj.canSeeGuildRoleSubscriptionSettings(obj);

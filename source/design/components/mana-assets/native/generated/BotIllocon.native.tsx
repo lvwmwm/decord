@@ -1,10 +1,10 @@
-// Module ID: 5901
-// Function ID: 49725
+// Module ID: 5903
+// Function ID: 49768
 // Name: BotIllocon
 // Dependencies: []
 // Exports: BotIllocon
 
-// Module 5901 (BotIllocon)
+// Module 5903 (BotIllocon)
 const jsx = require(dependencyMap[0]).jsx;
 const _module = require(dependencyMap[3]);
 const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/BotIllocon.native.tsx");

@@ -35,8 +35,8 @@ function clearTimeout(arg0) {
 const LIBDISCORE_JSI = require(dependencyMap[0]).typedGlobal.LIBDISCORE_JSI;
 let closure_1 = null;
 const obj = {
-  "Bool(true)": null,
-  "Bool(true)": null,
+  GameDepthTier6SmallBadge: null,
+  EMOJI_REACTION: null,
   onSlowTimer(arg0, arg1, arg2, arg3) {
     if (null != _null) {
       _null(arg0, arg1, arg2, arg3);

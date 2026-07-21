@@ -1,10 +1,10 @@
-// Module ID: 10123
-// Function ID: 78381
+// Module ID: 10129
+// Function ID: 78399
 // Name: _acceptMessageRequest
 // Dependencies: []
 // Exports: acceptMessageRequest, clearMessageRequestState, fetchUserCountryCode, markAsMessageRequest, rejectMessageRequest, rejectMessageRequestBatch
 
-// Module 10123 (_acceptMessageRequest)
+// Module 10129 (_acceptMessageRequest)
 function _acceptMessageRequest() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);

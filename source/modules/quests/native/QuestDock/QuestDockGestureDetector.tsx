@@ -1,11 +1,11 @@
-// Module ID: 13948
-// Function ID: 106051
+// Module ID: 13955
+// Function ID: 106074
 // Name: useQuestDockSwipeGesture
-// Dependencies: [31, 27, 5245, 13863, 33, 4126, 13864, 13952, 3989, 2, 57, 31, 27, 33, 4126]
+// Dependencies: [31, 27, 5247, 13870, 33, 4126, 13871, 13959, 3989, 2, 57, 31, 27, 33, 4126]
 
-// Module 13948 (useQuestDockSwipeGesture)
+// Module 13955 (useQuestDockSwipeGesture)
 import importAllResult from "module_31";
-import { QuestDockMode } from "get ActivityIndicator";
+import { QuestDockMode } from "keys";
 import QuestsExperimentLocations from "QuestsExperimentLocations";
 import { jsx } from "QUEST_DOCK_COLLAPSED_HEIGHT";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";

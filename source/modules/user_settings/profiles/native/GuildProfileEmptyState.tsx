@@ -1,17 +1,17 @@
-// Module ID: 13485
-// Function ID: 102361
+// Module ID: 13492
+// Function ID: 102384
 // Name: GuildProfileEmptyState
 // Dependencies: []
 // Exports: default
 
-// Module 13485 (GuildProfileEmptyState)
+// Module 13492 (GuildProfileEmptyState)
 let closure_3 = importDefault(dependencyMap[0]);
 importAll(dependencyMap[1]);
 ({ ScrollView: closure_4, View: closure_5 } = arg1(dependencyMap[2]));
 const tmp3 = arg1(dependencyMap[2]);
 ({ jsx: closure_6, jsxs: closure_7 } = arg1(dependencyMap[3]));
 const tmp4 = arg1(dependencyMap[3]);
-let closure_8 = arg1(dependencyMap[4]).createStyles({ container: { "Null": "center", "Null": "center" }, image: {}, header: { "Null": "2026-06-gummy-bears", "Null": "US", "Null": "usd", "Null": 30 }, createButton: { visible: true, transparent: null } });
+let closure_8 = arg1(dependencyMap[4]).createStyles({ container: { onAppear: "center", onDisappear: "center" }, image: {}, header: { allowFetch: "2026-06-gummy-bears", allowApplicationState: "US", height: "usd", backgroundColor: 30 }, createButton: {} });
 const obj = arg1(dependencyMap[4]);
 const result = arg1(dependencyMap[11]).fileFinishedImporting("modules/user_settings/profiles/native/GuildProfileEmptyState.tsx");
 
@@ -25,7 +25,7 @@ export default function GuildProfileEmptyState() {
   const intl = arg1(dependencyMap[7]).intl;
   obj1.children = intl.string(arg1(dependencyMap[7]).t.Z1OZCV);
   items[1] = callback2(arg1(dependencyMap[6]).Text, obj1);
-  const obj2 = { Promise: "xs", marginTop: "interactive-text-default", flags: "md", style: tmp2.header };
+  const obj2 = { "Null": "xs", "Null": "interactive-text-default", "Null": "md", style: tmp2.header };
   const intl2 = arg1(dependencyMap[7]).intl;
   obj2.children = intl2.string(arg1(dependencyMap[7]).t.UEmBq7);
   items[2] = callback2(arg1(dependencyMap[6]).Text, obj2);

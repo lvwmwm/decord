@@ -1,10 +1,10 @@
-// Module ID: 4351
-// Function ID: 38577
+// Module ID: 4355
+// Function ID: 38625
 // Name: ActionComponentState
-// Dependencies: []
+// Dependencies: [284214097]
 // Exports: asComponentId
 
-// Module 4351 (ActionComponentState)
+// Module 4355 (ActionComponentState)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("modules/interaction_components/InteractionComponentTypes.tsx");
 

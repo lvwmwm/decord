@@ -1,8 +1,8 @@
-// Module ID: 8870
-// Function ID: 69952
+// Module ID: 8874
+// Function ID: 69964
 // Dependencies: []
 
-// Module 8870
+// Module 8874
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_common/js/packages/libdave/index.tsx");
 for (const key10021 in arg1(arg6[1])) {

@@ -1,10 +1,10 @@
-// Module ID: 14935
-// Function ID: 112458
+// Module ID: 14942
+// Function ID: 112482
 // Name: GenericUpsellActionSheet
 // Dependencies: []
 // Exports: default
 
-// Module 14935 (GenericUpsellActionSheet)
+// Module 14942 (GenericUpsellActionSheet)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 const ContentDismissActionType = arg1(dependencyMap[2]).ContentDismissActionType;
@@ -46,9 +46,9 @@ export default function GenericUpsellActionSheet(markAsDismissed) {
   obj.children = items;
   obj.header = callback2(View, obj);
   const obj2 = { style: tmp.content };
-  const obj3 = { 9223372036854775807: "accessibilityRole", 9223372036854775807: "valueOf", 9223372036854775807: "hash", children: header };
+  const obj3 = { alignItems: 0.0000000000000000000000000000000000000000000000000000000000000000000000011319598867161293, justifyContent: 0.45, backgroundColor: 188587183578371320000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, children: header };
   const items1 = [callback(arg1(dependencyMap[10]).Text, obj3), callback(arg1(dependencyMap[11]).Spacer, { size: 12 }), callback(arg1(dependencyMap[10]).Text, { style: tmp.description, children: body }), ];
-  const obj5 = { 0: null, 0: null, onPress: onCTAPress, text: cta };
+  const obj5 = { "Null": null, "Null": null, onPress: onCTAPress, text: cta };
   items1[3] = callback(arg1(dependencyMap[12]).Button, obj5);
   obj2.children = items1;
   obj.children = callback2(View, obj2);

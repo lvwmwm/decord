@@ -9,23 +9,23 @@ if (!_module) {
 } else {
   obj = _module;
 }
-obj = { narrow: [false, false, false, false, false, false, false, false, false, false, false, false], abbreviated: [], wide: [] };
-const obj2 = { narrow: [452985589, 2097152758, 1090519798, 197920, 1159459665, 169467, "th"], short: ["BD", "bonne nuit", "dormir", "endormi", "fatigu\u00E9", "ronfler", "zzz"], abbreviated: [], wide: [false, false, 2020868097, -336855039, 35717122, 1858994178, -2095382527] };
+obj = { narrow: [], abbreviated: [], wide: ["r", "isArray", "props", "done", "Array", "isArray", "accessibilityRole", "useCallback", "__closure", "DARK", "hasDiversityParent", "Array"] };
+const obj2 = { narrow: [true, true, true, true, true, true, true], short: [null, null, null, null, null, null, null], abbreviated: [], wide: [] };
 const obj4 = {
   ordinalNumber(arg0, arg1) {
     return Number(arg0) + ".";
   },
-  era: obj.default({ values: { narrow: ["isArray", "__packager_asset"], abbreviated: ["isArray", "__packager_asset"], wide: ["janvier", "f\u00E9vrier"] }, defaultWidth: "wide" }),
+  era: obj.default({ values: { narrow: [-335216639, 1921122306], abbreviated: [-335216639, 1921122306], wide: [] }, defaultWidth: "wide" }),
   quarter: obj.default({
-    values: { narrow: [false, false, false, false], abbreviated: ["r", "IMPLICIT", "r", "pako"], wide: [null, null, null, null] },
+    values: { narrow: [], abbreviated: ["d\u1EA5u", "d\u1EA5u g\u1EA1ch ch\u00E9o", "h\u1EE7y", "nh\u00E2n"], wide: ["zzz", "<string:3959685122>", "<string:2197553154>", "<string:1595998210>"] },
     defaultWidth: "wide",
     argumentCallback(arg0) {
       return arg0 - 1;
     }
   }),
   month: obj.default({ values: obj, defaultWidth: "wide", formattingValues: { narrow: obj.narrow, abbreviated: obj.abbreviated, wide: [] }, defaultFormattingWidth: "wide" }),
-  day: obj.default({ values: obj2, defaultWidth: "wide", formattingValues: { narrow: obj2.narrow, short: obj2.short, abbreviated: obj2.abbreviated, wide: [0.00000041723309049390705, -0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002491804333167019, 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004379563676998164, -0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002836376249597769, 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000054607762395732045, 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001464850588916034, 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000063118621678784984] }, defaultFormattingWidth: "wide" }),
-  dayPeriod: obj.default({ values: { narrow: { <string:13107200>: true, <string:13303808>: true, <string:13369344>: true, <string:13631488>: true, <string:13893632>: true, <string:14024704>: true, <string:14286848>: true, <string:14548992>: true }, abbreviated: { <string:13107200>: true, <string:13303808>: true, <string:13369344>: true, <string:13631488>: true, <string:13893632>: true, <string:14024704>: true, <string:14286848>: true, <string:14548992>: true }, wide: { <string:13107200>: "r", <string:13303808>: "isArray", <string:13369344>: "count", <string:13631488>: "y", <string:13893632>: "Array", <string:14024704>: "isArray", <string:14286848>: "Symbol", <string:14548992>: "__packager_asset" } }, defaultWidth: "wide" })
+  day: obj.default({ values: obj2, defaultWidth: "wide", formattingValues: { narrow: obj2.narrow, short: obj2.short, abbreviated: obj2.abbreviated, wide: [] }, defaultFormattingWidth: "wide" }),
+  dayPeriod: obj.default({ values: { narrow: { "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Null": true, "Null": true }, abbreviated: { "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Null": true, "Null": true }, wide: { "Bool(false)": "r", "Bool(false)": "isArray", "Bool(false)": "backgroundColor", "Bool(false)": "y", "Bool(false)": "Array", "Bool(false)": "isArray", "Null": "now", "Null": "x" } }, defaultWidth: "wide" })
 };
 
 export default obj4;

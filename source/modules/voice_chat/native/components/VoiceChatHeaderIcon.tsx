@@ -1,10 +1,10 @@
-// Module ID: 10713
-// Function ID: 83371
+// Module ID: 10719
+// Function ID: 83394
 // Name: VoiceChatCallScreenHeaderIconInner
 // Dependencies: []
 // Exports: VoiceChatCallScreenHeaderIcon, default, useVoiceChatMentions
 
-// Module 10713 (VoiceChatCallScreenHeaderIconInner)
+// Module 10719 (VoiceChatCallScreenHeaderIconInner)
 function VoiceChatCallScreenHeaderIconInner(onPress) {
   let accessibilityLabel;
   let children;
@@ -32,10 +32,10 @@ obj = {};
 obj = { borderRadius: importDefault(dependencyMap[6]).radii.lg, backgroundColor: importDefault(dependencyMap[6]).colors.REDESIGN_BUTTON_TERTIARY_BACKGROUND };
 obj.headerButton = obj;
 obj.disabledOpacity = { opacity: 0.6 };
-const tmp3 = arg1(dependencyMap[4]);
-obj.chatIconContainer = { height: arg1(dependencyMap[7]).NAV_BAR_HEIGHT };
+const obj1 = { backgroundColor: null, transform: null, transformOrigin: null, size: null, height: arg1(dependencyMap[7]).NAV_BAR_HEIGHT };
+obj.chatIconContainer = obj1;
 obj.chatIcon = {};
-const obj1 = { height: arg1(dependencyMap[7]).NAV_BAR_HEIGHT };
+const tmp3 = arg1(dependencyMap[4]);
 obj.badge = { backgroundColor: importDefault(dependencyMap[6]).colors.ICON_STRONG };
 let closure_8 = obj.createStyles(obj);
 const obj2 = { backgroundColor: importDefault(dependencyMap[6]).colors.ICON_STRONG };
@@ -49,7 +49,7 @@ export default function VoiceChatHeaderIcon(disabled) {
   let disabledOpacity = disabled.disabled;
   ({ accessibilityLabel, onPress, source, children } = disabled);
   const tmp = callback2();
-  let obj = { "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, disabled: disabledOpacity, accessibilityLabel, onPress };
+  let obj = { "Bool(true)": false, "Bool(true)": false, "Bool(true)": false, disabled: disabledOpacity, accessibilityLabel, onPress };
   const items = [tmp.headerButton, ];
   if (disabledOpacity) {
     disabledOpacity = tmp.disabledOpacity;

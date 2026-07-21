@@ -1,10 +1,10 @@
-// Module ID: 11124
-// Function ID: 86578
+// Module ID: 11130
+// Function ID: 86601
 // Name: ForumPostGridFooter
 // Dependencies: []
 // Exports: default
 
-// Module 11124 (ForumPostGridFooter)
+// Module 11130 (ForumPostGridFooter)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 const AnalyticsObjects = arg1(dependencyMap[2]).AnalyticsObjects;

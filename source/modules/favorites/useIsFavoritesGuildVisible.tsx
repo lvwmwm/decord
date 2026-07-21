@@ -1,10 +1,10 @@
-// Module ID: 14751
-// Function ID: 111234
+// Module ID: 14758
+// Function ID: 111258
 // Name: isFavoritesGuildVisible
 // Dependencies: []
 // Exports: default
 
-// Module 14751 (isFavoritesGuildVisible)
+// Module 14758 (isFavoritesGuildVisible)
 function isFavoritesGuildVisible(favoriteGuildEnabled, getCurrentUser, getGuildId, favoritesGuildXPEnabled) {
   if (favoritesGuildXPEnabled.favoritesGuildXPEnabled) {
     if (favoritesGuildXPEnabled.isMenuItemDCSelected) {

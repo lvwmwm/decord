@@ -1,10 +1,10 @@
-// Module ID: 10291
-// Function ID: 79461
+// Module ID: 10297
+// Function ID: 79480
 // Name: DragHandle
 // Dependencies: []
 // Exports: default
 
-// Module 10291 (DragHandle)
+// Module 10297 (DragHandle)
 function DragHandle(onAccessibilityExpand) {
   onAccessibilityExpand = onAccessibilityExpand.onAccessibilityExpand;
   let tmp11;
@@ -56,7 +56,7 @@ function DragHandle(onAccessibilityExpand) {
   const fn = function c() {
     const obj = { opacity: sharedValue1.get() };
     const items = [0.229, first];
-    obj.height = sharedValue(first[7]).interpolate(sharedValue1.get(), [null, null], items);
+    obj.height = sharedValue(first[7]).interpolate(sharedValue1.get(), ["Text", "lc"], items);
     return obj;
   };
   obj = { textRevealProgress: sharedValue1, interpolate: arg1(dependencyMap[7]).interpolate, textHeight: first };
@@ -141,19 +141,19 @@ let obj = arg1(dependencyMap[4]);
 obj = { dragHandleTextContainer: { overflow: "hidden" } };
 obj = { paddingBottom: importDefault(dependencyMap[5]).space.PX_4 };
 obj.dragHandleText = obj;
-const tmp3 = arg1(dependencyMap[3]);
-obj.dragHandle = { backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_ACCENT, borderRadius: importDefault(dependencyMap[5]).radii.xs, marginBottom: importDefault(dependencyMap[5]).space.PX_8 };
+const obj1 = { "Null": NaN, "Null": -690217.4831619264, "Null": -1045348327919778100000000000000000000000000, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_ACCENT, borderRadius: importDefault(dependencyMap[5]).radii.xs, marginBottom: importDefault(dependencyMap[5]).space.PX_8 };
+obj.dragHandle = obj1;
 let closure_10 = obj.createStyles(obj);
 let obj4 = arg1(dependencyMap[4]);
 const obj2 = { body: { flex: 1 } };
-const obj1 = { backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_ACCENT, borderRadius: importDefault(dependencyMap[5]).radii.xs, marginBottom: importDefault(dependencyMap[5]).space.PX_8 };
+const tmp3 = arg1(dependencyMap[3]);
 obj2.iconContainer = { marginRight: importDefault(dependencyMap[5]).space.PX_12 };
 obj4 = { padding: importDefault(dependencyMap[5]).space.PX_12, flexDirection: "row" };
 obj2.contentContainer = obj4;
 const obj3 = { marginRight: importDefault(dependencyMap[5]).space.PX_12 };
 obj2.contentContainerExpanded = { padding: importDefault(dependencyMap[5]).space.PX_12 };
 obj2.headerContainer = { flex: 1 };
-obj2.labelContainer = { -9223372036854775808: true, filter: true };
+obj2.labelContainer = {};
 let closure_11 = obj4.createStyles(obj2);
 let closure_12 = { code: "function NotificationContentTsx1(){const{textRevealProgress,interpolate,textHeight}=this.__closure;return{opacity:textRevealProgress.get(),height:interpolate(textRevealProgress.get(),[0,1],[0,textHeight])};}" };
 let closure_13 = { code: "function NotificationContentTsx2(){const{dragHandleBounceProgress}=this.__closure;return{transform:[{translateY:dragHandleBounceProgress.get()}]};}" };

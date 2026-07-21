@@ -1,10 +1,10 @@
-// Module ID: 15422
-// Function ID: 117711
+// Module ID: 15429
+// Function ID: 117735
 // Name: MessageRequestsNavigator
 // Dependencies: []
 // Exports: default
 
-// Module 15422 (MessageRequestsNavigator)
+// Module 15429 (MessageRequestsNavigator)
 let closure_3 = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 ({ jsx: closure_5, jsxs: closure_6 } = arg1(dependencyMap[2]));

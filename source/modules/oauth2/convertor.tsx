@@ -1,10 +1,10 @@
-// Module ID: 8950
-// Function ID: 70599
+// Module ID: 8954
+// Function ID: 70611
 // Name: convertOAuth2Authorization
 // Dependencies: [6, 7]
 // Exports: convertOAuth2Authorization
 
-// Module 8950 (convertOAuth2Authorization)
+// Module 8954 (convertOAuth2Authorization)
 import _defineProperties from "_defineProperties";
 
 const result = _defineProperties.fileFinishedImporting("modules/oauth2/convertor.tsx");

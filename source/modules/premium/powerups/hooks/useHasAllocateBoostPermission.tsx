@@ -1,10 +1,10 @@
-// Module ID: 11527
-// Function ID: 89801
+// Module ID: 11534
+// Function ID: 89824
 // Name: getHasAllocateBoostPermission
 // Dependencies: []
 // Exports: default
 
-// Module 11527 (getHasAllocateBoostPermission)
+// Module 11534 (getHasAllocateBoostPermission)
 function getHasAllocateBoostPermission(closure_9, guild) {
   let canResult = null;
   if (null != guild) {

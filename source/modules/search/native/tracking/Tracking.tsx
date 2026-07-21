@@ -1,9 +1,9 @@
-// Module ID: 10061
-// Function ID: 77694
+// Module ID: 10067
+// Function ID: 77712
 // Name: toAnalyticsSearchFilterType
 // Dependencies: []
 
-// Module 10061 (toAnalyticsSearchFilterType)
+// Module 10067 (toAnalyticsSearchFilterType)
 function toAnalyticsSearchFilterType(searchTokenType) {
   if (constants.FILTER_FROM === searchTokenType) {
     return "filter_from";

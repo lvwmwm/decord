@@ -1,9 +1,9 @@
-// Module ID: 8831
-// Function ID: 69655
+// Module ID: 8835
+// Function ID: 69667
 // Name: getInputDeviceName
 // Dependencies: []
 
-// Module 8831 (getInputDeviceName)
+// Module 8835 (getInputDeviceName)
 function getInputDeviceName() {
   const inputDevices = store3.getInputDevices();
   let str = "";
@@ -649,7 +649,7 @@ obj = {
   },
   interact() {
     if (!callback3()) {
-      importDefault(dependencyMap[13]).dispatch({ DISK_PERMISSION_DENIED: "png", POPULARITY: true });
+      importDefault(dependencyMap[13]).dispatch({ "Bool(true)": "png", "Bool(true)": true });
       const obj = importDefault(dependencyMap[13]);
     }
   },

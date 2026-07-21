@@ -1,10 +1,10 @@
-// Module ID: 8566
-// Function ID: 68070
+// Module ID: 8570
+// Function ID: 68082
 // Name: GuildProfileActionSheet
 // Dependencies: []
 // Exports: default
 
-// Module 8566 (GuildProfileActionSheet)
+// Module 8570 (GuildProfileActionSheet)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 ({ View: closure_5, ActivityIndicator: closure_6 } = arg1(dependencyMap[2]));
@@ -192,8 +192,8 @@ export default function GuildProfileActionSheet(guildId) {
       const items = [fetchGuildProfile(analyticsLocations[26])(token1).alpha(0).hex(), token1];
       return items;
     }, items6);
-    obj5 = { 1626227134: null, -865665020: null, -1604069200: null, ref: bottomSheetRef, startHeight };
-    obj6 = { start: VerticalGradient.START, end: { "Null": false, "Null": false }, style: tmp.footerContainer, colors: memo };
+    obj5 = { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, ref: bottomSheetRef, startHeight };
+    obj6 = { start: VerticalGradient.START, end: { max: false, guildId: false }, style: tmp.footerContainer, colors: memo };
     let tmp38;
     if (enabled) {
       tmp38 = handleFooterLayout;

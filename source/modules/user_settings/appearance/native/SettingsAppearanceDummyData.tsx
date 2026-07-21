@@ -1,17 +1,17 @@
-// Module ID: 14035
-// Function ID: 106724
+// Module ID: 14042
+// Function ID: 106747
 // Name: items1
 // Dependencies: []
 // Exports: default
 
-// Module 14035 (items1)
+// Module 14042 (items1)
 const StatusTypes = require(dependencyMap[0]).StatusTypes;
 const _module = require(dependencyMap[15]);
 const result = _module.fileFinishedImporting("modules/user_settings/appearance/native/SettingsAppearanceDummyData.tsx");
 
 export default function _default() {
-  const items = [{}, , , , , , , , , , ];
-  let obj = {};
+  const items = [{ "Bool(false)": "png", "Bool(false)": true }, , , , , , , , , , ];
+  let obj = { "Bool(false)": 216, "Bool(false)": 216 };
   obj = {};
   const intl = require(dependencyMap[1]).intl;
   obj.title = intl.string(require(dependencyMap[1]).t.B6GPzA);
@@ -32,7 +32,7 @@ export default function _default() {
   items2[1] = obj;
   obj.cards = items2;
   items[1] = obj;
-  const obj1 = {};
+  const obj1 = { "Bool(false)": null, "Bool(false)": "e8cc96dfc04f2226c8870fdf46cc16af" };
   const intl5 = require(dependencyMap[1]).intl;
   obj1.timestamp = intl5.formatToPlainString(require(dependencyMap[1]).t.XIGt+W, { minutes: 24 });
   const intl6 = require(dependencyMap[1]).intl;
@@ -102,7 +102,7 @@ export default function _default() {
   obj7.avatar1 = importDefault(dependencyMap[14]);
   obj7.status = StatusTypes.DND;
   items[8] = obj7;
-  const obj8 = {};
+  const obj8 = { "Bool(false)": -0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007204314905096262, "Bool(false)": -0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000977580224266236 };
   const intl26 = require(dependencyMap[1]).intl;
   obj8.timestamp = intl26.formatToPlainString(require(dependencyMap[1]).t.rhY1Rs, { hours: 18 });
   const intl27 = require(dependencyMap[1]).intl;
@@ -111,7 +111,7 @@ export default function _default() {
   obj8.preview = intl28.string(require(dependencyMap[1]).t.Zj8Sl1);
   obj8.avatar1 = importDefault(dependencyMap[6]);
   items[9] = obj8;
-  const obj9 = {};
+  const obj9 = { "Bool(false)": false, "Bool(false)": false };
   const intl29 = require(dependencyMap[1]).intl;
   obj9.timestamp = intl29.formatToPlainString(require(dependencyMap[1]).t.rhY1Rs, { hours: 21 });
   const intl30 = require(dependencyMap[1]).intl;

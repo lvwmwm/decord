@@ -1,9 +1,9 @@
-// Module ID: 11378
-// Function ID: 88482
+// Module ID: 11385
+// Function ID: 88506
 // Name: handleInviteDisabledPress
 // Dependencies: []
 
-// Module 11378 (handleInviteDisabledPress)
+// Module 11385 (handleInviteDisabledPress)
 function handleInviteDisabledPress() {
   const lazyResult = importAllResult.lazy(() => callback(paths[12])(paths[11], paths.paths));
   arg1(dependencyMap[13]).openAlert("invites-disabled", callback(lazyResult, {}));
@@ -65,7 +65,7 @@ function GuildSearchAndInvite(guildId) {
   const memo = onInvitePress.useMemo(() => {
     let tmp = null;
     if (canInvite) {
-      const obj = { <string:1522289750>: false, <string:570601313>: null, icon: canInvite(invitesDisabled[21]), onPress: onInvitePress, onPressDisabled: closure_15 };
+      const obj = { icon: canInvite(invitesDisabled[21]), onPress: onInvitePress, onPressDisabled: closure_15 };
       const intl = guildId(invitesDisabled[22]).intl;
       obj.accessibilityLabel = intl.string(guildId(invitesDisabled[22]).t.VINpSK);
       obj.disabled = invitesDisabled;

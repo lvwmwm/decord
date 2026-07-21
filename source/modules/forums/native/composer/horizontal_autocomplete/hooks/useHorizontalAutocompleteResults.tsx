@@ -1,10 +1,10 @@
-// Module ID: 9625
-// Function ID: 74971
+// Module ID: 9630
+// Function ID: 74988
 // Name: useHorizontalAutocompleteResults
 // Dependencies: []
 // Exports: useHorizontalAutocompleteResults
 
-// Module 9625 (useHorizontalAutocompleteResults)
+// Module 9630 (useHorizontalAutocompleteResults)
 let closure_2 = importDefault(dependencyMap[0]);
 let closure_3 = importAll(dependencyMap[1]);
 ({ AutoCompleteResultTypes: closure_4, ChannelTypes: closure_5 } = arg1(dependencyMap[2]));
@@ -106,7 +106,7 @@ export const useHorizontalAutocompleteResults = function useHorizontalAutocomple
         return obj;
       }
     }
-    return { "Bool(true)": "Normal", "Bool(true)": true, "Bool(true)": "AbortSignal" };
+    return { "Bool(true)": null, "Bool(true)": "\u{1F9BB}\u{1F3FF}", "Bool(true)": true };
   }, items2);
   const autocompleteType = memo1.autocompleteType;
   const query = memo1.query;

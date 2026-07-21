@@ -1,27 +1,28 @@
-// Module ID: 13491
-// Function ID: 102407
+// Module ID: 13498
+// Function ID: 102430
 // Name: route
-// Dependencies: []
+// Dependencies: [0, 0, 0, 0, 0, 0]
 
-// Module 13491 (route)
-const _module = require(dependencyMap[1]);
+// Module 13498 (route)
+import __exportStarResult1 from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
+
 let obj = {
   useTitle() {
     const intl = require(dependencyMap[2]).intl;
     return intl.string(require(dependencyMap[2]).t.ldCE/p);
   },
   parent: null,
-  IconComponent: require(dependencyMap[3]).UserCircleIcon,
+  IconComponent: require("__exportStarResult1").UserCircleIcon,
   screen: obj
 };
 obj = {
-  route: require(dependencyMap[0]).UserSettingsSections.ACCOUNT,
+  route: require("__exportStarResult1").UserSettingsSections.ACCOUNT,
   getComponent() {
     return require(dependencyMap[4]).default;
   }
 };
-const route = _module.createRoute(obj);
-const _module1 = require(dependencyMap[5]);
-const result = _module1.fileFinishedImporting("modules/user_settings/defs/native/AccountSetting.tsx");
+const route = __exportStarResult1.createRoute(obj);
+const result = __exportStarResult1.fileFinishedImporting("modules/user_settings/defs/native/AccountSetting.tsx");
 
 export default route;

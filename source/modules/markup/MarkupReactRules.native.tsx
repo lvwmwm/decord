@@ -16,7 +16,7 @@ class MarkupText {
     if (str2 === undefined) {
       str2 = "text-sm/medium";
     }
-    obj = {};
+    obj = { <string:1393698883>: "spring", <string:3214000018>: "linear", <string:3577824886>: "easeInEaseOut" };
     setPrototypeOfResult = Object.setPrototypeOf(null);
     merged = Object.assign(global, obj);
     obj = {};
@@ -498,9 +498,9 @@ function MarkupChannelMention(state) {
     const obj2 = { themedColor: importDefault(dependencyMap[14]).colors.MENTION_FOREGROUND };
     const fontScale = store.getFontScale();
     if (fontScale < 1.25) {
-      obj3 = {};
+      obj3 = { bhk: 800, bic: 16 };
     } else {
-      obj3 = fontScale < 2 ? { aze: "version=$(node -p \"require('./package.json').version\") && sed -i '' \"s/#define NITRO_VERSION \\\".*\\\"/#define NITRO_VERSION \\\"$version\\\"/\" ./cpp/utils/NitroDefines.hpp", azj: "bun run write-native-version" } : { aze: "<string:16777479>", azj: "<string:36295491>" };
+      obj3 = fontScale < 2 ? { bhk: "version=$(node -p \"require('./package.json').version\") && sed -i '' \"s/#define NITRO_VERSION \\\".*\\\"/#define NITRO_VERSION \\\"$version\\\"/\" ./cpp/utils/NitroDefines.hpp", bic: "bun run write-native-version" } : {};
     }
     obj2.style = obj3;
     obj2.source = importDefault(dependencyMap[41]);
@@ -607,7 +607,7 @@ const tmp4 = arg1(dependencyMap[8]);
 const regExp = new RegExp(arg1(dependencyMap[11]).ANSI_CONTROL_SEQUENCE_RE, "g");
 let obj = { fontFamily: Fonts.CODE_BOLD };
 obj = { fontFamily: Fonts.PRIMARY_BOLD };
-let closure_19 = { emoji: { width: EMOJI_CHAT_SIZE, height: EMOJI_CHAT_SIZE, resizeMode: "contain" }, guildIcon: {}, list: { paddingTop: 16 }, listItem: { paddingTop: 4 }, bullet: obj, strong: obj };
+let closure_19 = { emoji: { width: EMOJI_CHAT_SIZE, height: EMOJI_CHAT_SIZE, resizeMode: "contain" }, guildIcon: { enabledLegacy: "\u{1F4A0}", overlayMethod: 6 }, list: { paddingTop: 16 }, listItem: { paddingTop: 4 }, bullet: obj, strong: obj };
 let obj2 = arg1(dependencyMap[13]);
 obj = {};
 const tmp5 = arg1(dependencyMap[10]);

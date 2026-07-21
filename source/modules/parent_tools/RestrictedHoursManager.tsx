@@ -1,9 +1,18 @@
-// Module ID: 15837
-// Function ID: 121072
+// Module ID: 15844
+// Function ID: 121096
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [0, 0, 0, 0, 0, 0, 0, 0, 0]
 
-// Module 15837 (_isNativeReflectConstruct)
+// Module 15844 (_isNativeReflectConstruct)
+import __exportStarResult1 from "__exportStarResult1";
+import closure_4 from "__exportStarResult1";
+import closure_5 from "__exportStarResult1";
+import closure_6 from "__exportStarResult1";
+import closure_7 from "__exportStarResult1";
+import closure_8 from "__exportStarResult1";
+import closure_9 from "__exportStarResult1";
+import closure_10 from "__exportStarResult1";
+
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -121,14 +130,6 @@ function handleScheduleUpdate() {
 function handleScreenDowntimeReminderChanged() {
   scheduleUpcomingWarning();
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-let closure_8 = importDefault(dependencyMap[5]);
-let closure_9 = importDefault(dependencyMap[6]);
-let closure_10 = importDefault(dependencyMap[7]);
 let closure_11 = false;
 let closure_12 = null;
 let closure_13 = null;
@@ -138,7 +139,7 @@ let tmp2 = (arg0) => {
     constructor(arg0) {
       self = this;
       items = [...arguments];
-      tmp = closure_3(this, RestrictedHoursManager);
+      tmp = __exportStarResult1(this, RestrictedHoursManager);
       items1 = [...items];
       obj = closure_6(RestrictedHoursManager);
       tmp2 = closure_5;

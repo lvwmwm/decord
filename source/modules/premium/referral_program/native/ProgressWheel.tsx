@@ -1,10 +1,10 @@
-// Module ID: 12250
-// Function ID: 93979
+// Module ID: 12257
+// Function ID: 94002
 // Name: ProgressWheel
 // Dependencies: []
 // Exports: default
 
-// Module 12250 (ProgressWheel)
+// Module 12257 (ProgressWheel)
 const View = require(dependencyMap[0]).View;
 const _module = require(dependencyMap[1]);
 ({ jsx: closure_4, jsxs: closure_5 } = _module);
@@ -29,21 +29,20 @@ export default function ProgressWheel(nReferralsSent) {
     const tmp10 = importDefault(dependencyMap[6]);
   }
   const items = [tmp6, , ];
-  obj1 = { aze: 1895956479, azj: 2 };
-  const obj2 = { "Bool(false)": "/assets/images/native/premium/illustrations", "Bool(false)": 314, "Bool(false)": 195, "Bool(false)": null, "Bool(false)": "f774e43fd38da2d8b6e5bdabed98e8b8", stroke: token, fill: token1 };
-  const items1 = [callback(require(dependencyMap[8]).Circle, obj2), callback(require(dependencyMap[8]).Circle, { strokeDasharray: closure_6, strokeDashoffset: closure_6 * (1 - 33.3 * nReferralsSent / 100) })];
+  obj1 = { bhk: null, bic: 2 };
+  const items1 = [callback(require(dependencyMap[8]).Circle, { stroke: token, fill: token1 }), callback(require(dependencyMap[8]).Circle, { strokeDasharray: closure_6, strokeDashoffset: closure_6 * (1 - 33.3 * nReferralsSent / 100) })];
   obj1.children = items1;
   items[1] = callback2(importDefault(dependencyMap[8]), obj1);
+  const obj3 = {};
   const obj4 = {};
-  const obj5 = {};
-  const obj3 = { strokeDasharray: closure_6, strokeDashoffset: closure_6 * (1 - 33.3 * nReferralsSent / 100) };
+  const obj2 = { strokeDasharray: closure_6, strokeDashoffset: closure_6 * (1 - 33.3 * nReferralsSent / 100) };
   const tmp11 = importDefault(dependencyMap[8]);
   const tmp4 = callback2;
   const tmp5 = View;
-  obj5.uri = importDefault(dependencyMap[9]);
-  obj4.source = obj5;
-  obj4.style = tmp.progressCircleImage;
-  items[2] = callback(importDefault(dependencyMap[6]), obj4);
+  obj4.uri = importDefault(dependencyMap[9]);
+  obj3.source = obj4;
+  obj3.style = tmp.progressCircleImage;
+  items[2] = callback(importDefault(dependencyMap[6]), obj3);
   obj.children = items;
   return tmp4(tmp5, obj);
 };

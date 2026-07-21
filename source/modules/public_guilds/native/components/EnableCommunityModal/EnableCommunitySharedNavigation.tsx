@@ -1,10 +1,10 @@
-// Module ID: 16218
-// Function ID: 125390
+// Module ID: 16225
+// Function ID: 125421
 // Name: EnableCommunityModalSteps
 // Dependencies: []
 // Exports: EnableCommunityModalScreen
 
-// Module 16218 (EnableCommunityModalSteps)
+// Module 16225 (EnableCommunityModalSteps)
 let closure_3 = importAll(dependencyMap[0]);
 ({ View: closure_4, ScrollView: closure_5 } = arg1(dependencyMap[1]));
 let closure_6 = importDefault(dependencyMap[2]);
@@ -12,7 +12,7 @@ const GuildFeatures = arg1(dependencyMap[3]).GuildFeatures;
 const tmp2 = arg1(dependencyMap[1]);
 ({ jsx: closure_8, jsxs: closure_9 } = arg1(dependencyMap[4]));
 let obj = arg1(dependencyMap[5]);
-let closure_10 = obj.createStyles({ container: {}, modal: { <string:651821822>: true, <string:996344829>: true, <string:89216086>: null }, button: { borderWidth: "Array", borderLeftWidth: "isArray", borderRightWidth: "constructor", borderTopLeftRadius: "toString" } });
+let closure_10 = obj.createStyles({ container: {}, modal: {}, button: { ks: "Array", body: "isArray", height: "constructor", borderRadius: "toString" } });
 obj = { STEP_1: "STEP_1", STEP_2: "STEP_2", STEP_3: "STEP_3" };
 const tmp3 = arg1(dependencyMap[4]);
 const result = arg1(dependencyMap[16]).fileFinishedImporting("modules/public_guilds/native/components/EnableCommunityModal/EnableCommunitySharedNavigation.tsx");
@@ -80,7 +80,7 @@ export const EnableCommunityModalScreen = function EnableCommunityModalScreen(ar
     obj1.children = children;
     const items3 = [callback(hasItem, obj1), ];
     const obj3 = { style: tmp.button };
-    const obj4 = { 0: null, 0: null };
+    const obj4 = { "Null": null, "Null": null };
     if (null == buttonText) {
       const intl = arg1(dependencyMap[15]).intl;
       buttonText = intl.string(arg1(dependencyMap[15]).t.PDTjLN);

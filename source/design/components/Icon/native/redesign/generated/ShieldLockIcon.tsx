@@ -1,10 +1,10 @@
-// Module ID: 8919
-// Function ID: 70367
+// Module ID: 8923
+// Function ID: 70379
 // Name: ShieldLockIcon
 // Dependencies: []
 // Exports: ShieldLockIcon
 
-// Module 8919 (ShieldLockIcon)
+// Module 8923 (ShieldLockIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/ShieldLockIcon.tsx");

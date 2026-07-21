@@ -1,9 +1,9 @@
-// Module ID: 6717
-// Function ID: 52309
+// Module ID: 6723
+// Function ID: 52358
 // Name: getGuildMemberSecondaryIndexes
 // Dependencies: []
 
-// Module 6717 (getGuildMemberSecondaryIndexes)
+// Module 6723 (getGuildMemberSecondaryIndexes)
 function getGuildMemberSecondaryIndexes(isCurrentGuildMemberByTimestamp) {
   const items = [isCurrentGuildMemberByTimestamp.isCurrentGuildMemberByTimestamp ? obj.CURRENT_GUILD_MEMBER : obj.NEW_GUILD_MEMBER];
   if (isCurrentGuildMemberByTimestamp.isIncludedInSearchResults) {

@@ -1,10 +1,10 @@
-// Module ID: 9341
-// Function ID: 72968
+// Module ID: 9345
+// Function ID: 72982
 // Name: RoleSubscriptionEmojiUpsellAlert
 // Dependencies: []
 // Exports: default
 
-// Module 9341 (RoleSubscriptionEmojiUpsellAlert)
+// Module 9345 (RoleSubscriptionEmojiUpsellAlert)
 let closure_3 = importAll(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 const StaticChannelRoute = arg1(dependencyMap[2]).StaticChannelRoute;

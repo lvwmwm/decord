@@ -1,10 +1,10 @@
-// Module ID: 9056
-// Function ID: 71108
+// Module ID: 9060
+// Function ID: 71120
 // Name: ApplicationStreamActivityStatus
 // Dependencies: []
 // Exports: default
 
-// Module 9056 (ApplicationStreamActivityStatus)
+// Module 9060 (ApplicationStreamActivityStatus)
 importAll(dependencyMap[0]);
 ({ jsx: closure_3, Fragment: closure_4, jsxs: closure_5 } = arg1(dependencyMap[1]));
 const tmp3 = arg1(dependencyMap[1]);

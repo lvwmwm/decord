@@ -1,9 +1,9 @@
-// Module ID: 11649
-// Function ID: 90378
+// Module ID: 11656
+// Function ID: 90401
 // Name: JoinRequestRejectionReasonActionSheet
-// Dependencies: [270401536, 45154304, 763756544, 659226624, 131072, 2255749120, 2298478632, 2315255853, 33554477, 1996488704, 31, 27, 33, 10376, 10380, 3989, 2, 3747312, 2031616]
+// Dependencies: [270401536, 45154304, 764215296, 659619840, 131072, 2356412416, 2415919144, 2432696365, 33554477, 1996488704, 31, 27, 33, 10382, 10386, 3989, 2, 3747312, 2031616]
 
-// Module 11649 (JoinRequestRejectionReasonActionSheet)
+// Module 11656 (JoinRequestRejectionReasonActionSheet)
 class JoinRequestRejectionReasonActionSheet {
   constructor(arg0) {
     ({ joinRequest, onError } = global);
@@ -55,7 +55,7 @@ class JoinRequestRejectionReasonActionSheet {
     obj5.disabled = tmp7;
     items2[1] = jsx(arg1(dependencyMap[17]).Button, obj5);
     obj3.children = items2;
-    items1[1] = jsxs(require("keys").ButtonGroup, obj3);
+    items1[1] = jsxs(require("result2").ButtonGroup, obj3);
     obj1.children = items1;
     obj.children = jsxs(require("useChannelSafeAreaBottomStyles").SafeAreaPaddingView, obj1);
     return jsx(require("useChannelSafeAreaHeightSharedValue").BottomSheet, obj);

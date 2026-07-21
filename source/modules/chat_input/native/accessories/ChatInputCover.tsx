@@ -1,9 +1,9 @@
-// Module ID: 11342
-// Function ID: 88188
+// Module ID: 11348
+// Function ID: 88211
 // Name: ChatInputCover
 // Dependencies: []
 
-// Module 11342 (ChatInputCover)
+// Module 11348 (ChatInputCover)
 const importAllResult = importAll(dependencyMap[0]);
 ({ StyleSheet: closure_3, TouchableWithoutFeedback: closure_4, View: closure_5 } = arg1(dependencyMap[1]));
 const jsx = arg1(dependencyMap[2]).jsx;
@@ -52,7 +52,7 @@ const forwardRefResult = importAllResult.forwardRef((enabled) => {
     if (keyboardType !== arg1(dependencyMap[4]).KeyboardTypes.SYSTEM) {
       tmp4 = null;
       if (!isScreenReaderEnabled) {
-        obj = { "Null": null, "Null": null, onPress: memo.openSystemKeyboard };
+        obj = { positionBottom: null, positionRight: null, onPress: memo.openSystemKeyboard };
         obj = { style: isScreenReaderEnabled.absoluteFill };
         obj.children = <closure_5 {...obj} />;
         tmp4 = <closure_4 {...obj} />;

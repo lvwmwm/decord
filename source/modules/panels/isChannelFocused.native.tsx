@@ -1,10 +1,10 @@
-// Module ID: 10210
-// Function ID: 78908
+// Module ID: 10216
+// Function ID: 78926
 // Name: getFocusedChannelId
 // Dependencies: []
 // Exports: isChannelFocusedForReadStateAck, useIsChannelFocused
 
-// Module 10210 (getFocusedChannelId)
+// Module 10216 (getFocusedChannelId)
 function getFocusedChannelId() {
   const rootNavigationRef = arg1(dependencyMap[7]).getRootNavigationRef();
   const obj = arg1(dependencyMap[7]);

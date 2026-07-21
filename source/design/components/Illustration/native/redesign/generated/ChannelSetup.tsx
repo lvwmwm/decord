@@ -1,10 +1,10 @@
-// Module ID: 16224
-// Function ID: 125416
+// Module ID: 16231
+// Function ID: 125447
 // Name: getChannelSetupSource
 // Dependencies: []
 // Exports: ChannelSetup
 
-// Module 16224 (getChannelSetupSource)
+// Module 16231 (getChannelSetupSource)
 function getChannelSetupSource(theme) {
   let obj = arg1(dependencyMap[3]);
   obj = {

@@ -1,14 +1,14 @@
-// Module ID: 10138
-// Function ID: 78441
+// Module ID: 10144
+// Function ID: 78459
 // Name: SafetyToolsSafetyTipsActionSheet
-// Dependencies: [5, 57, 31, 27, 1348, 33, 4126, 689, 5224, 566, 4312]
+// Dependencies: [5, 57, 31, 27, 1348, 33, 4126, 689, 5226, 566, 4316]
 // Exports: default
 
-// Module 10138 (SafetyToolsSafetyTipsActionSheet)
+// Module 10144 (SafetyToolsSafetyTipsActionSheet)
 import "asyncGeneratorStep";
 import { View } from "_slicedToArray";
 import { getInappropriateConversationsSafetyTips as closure_4 } from "module_31";
-import { jsx } from "get ActivityIndicator";
+import { jsx } from "keys";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import computeDefaultGroupDmNameFromUserIds from "computeDefaultGroupDmNameFromUserIds";
 

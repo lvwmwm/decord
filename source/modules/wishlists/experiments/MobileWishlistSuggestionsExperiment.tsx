@@ -1,12 +1,12 @@
-// Module ID: 11998
-// Function ID: 92765
+// Module ID: 12005
+// Function ID: 92788
 // Name: useIsMobileWishlistSuggestionsEnabled
 // Dependencies: []
 // Exports: getIsMobileWishlistSuggestionsEnabled, useIsMobileWishlistSuggestionsEnabled
 
-// Module 11998 (useIsMobileWishlistSuggestionsEnabled)
+// Module 12005 (useIsMobileWishlistSuggestionsEnabled)
 const _module = require(dependencyMap[0]);
-const obj = { -1269606814: null, -1845285747: null, defaultConfig: { isEnabled: false }, variations: { [0]: { isEnabled: false }, [1]: { isEnabled: true } } };
+const obj = { 9223372036854775807: "%Object.getPrototypeOf%", 0: "handleJoinThreadVoice", defaultConfig: { isEnabled: false }, variations: { [0]: { isEnabled: false }, [1]: { isEnabled: true } } };
 let closure_0 = _module.createApexExperiment(obj);
 const _module1 = require(dependencyMap[1]);
 const result = _module1.fileFinishedImporting("modules/wishlists/experiments/MobileWishlistSuggestionsExperiment.tsx");

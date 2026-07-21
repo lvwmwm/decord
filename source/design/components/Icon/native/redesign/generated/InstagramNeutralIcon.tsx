@@ -1,10 +1,10 @@
-// Module ID: 7766
-// Function ID: 61672
+// Module ID: 7770
+// Function ID: 61684
 // Name: InstagramNeutralIcon
 // Dependencies: []
 // Exports: InstagramNeutralIcon
 
-// Module 7766 (InstagramNeutralIcon)
+// Module 7770 (InstagramNeutralIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/InstagramNeutralIcon.tsx");

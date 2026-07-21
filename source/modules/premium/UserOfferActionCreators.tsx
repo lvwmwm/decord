@@ -1,10 +1,10 @@
-// Module ID: 7364
-// Function ID: 59395
+// Module ID: 7368
+// Function ID: 59406
 // Name: _fetchUserOffer
 // Dependencies: []
 // Exports: acknowledgeUserOffer, fetchChurnDiscountOffer, fetchExistingChurnDiscountOffer, fetchUserOffer
 
-// Module 7364 (_fetchUserOffer)
+// Module 7368 (_fetchUserOffer)
 async function _fetchUserOffer(arg0, arg1) {
   const fn = function*(call_location, arg1, arg2, retries) {
     let offerId;
@@ -220,7 +220,7 @@ export const acknowledgeUserOffer = function acknowledgeUserOffer(expires_at, pr
     obj.dispatch(obj);
   }).catch((status) => {
     if (404 === status.status) {
-      callback(closure_2[5]).dispatch({ 0: null, 9223372036854775807: null, -9223372036854775808: null, 0: null });
+      callback(closure_2[5]).dispatch({});
       const obj = callback(closure_2[5]);
     }
   });

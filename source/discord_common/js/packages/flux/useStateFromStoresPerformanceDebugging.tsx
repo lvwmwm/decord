@@ -1,10 +1,10 @@
-// Module ID: 14500
-// Function ID: 109206
+// Module ID: 14507
+// Function ID: 109229
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 // Exports: getUseStateFromStoresDebuggingEnabled, getUseStateFromStoresExecutionCountWarningThreshold, getUseStateFromStoresExecutionTimeWarningThresholdMs, getUseStateFromStoresExecutionWindowThresholdMs, getUseStateFromStoresHookInfo, getUseStateFromStoresSpecificHookFilter, setUseStateFromStoresDebuggingEnabled, setUseStateFromStoresExecutionCountWarningThreshold, setUseStateFromStoresExecutionTimeWarningThresholdMs, setUseStateFromStoresExecutionWindowThresholdMs, setUseStateFromStoresSpecificHookFilter, trackGetStateFromStoresPerformance
 
-// Module 14500 (_createForOfIteratorHelperLoose)
+// Module 14507 (_createForOfIteratorHelperLoose)
 function _createForOfIteratorHelperLoose(@@iterator) {
   let arg1 = Symbol_iterator;
   @@iterator = "undefined" !== typeof Symbol;
@@ -139,6 +139,9 @@ function hasExceededThreshold(name) {
 }
 function flushViolators() {
   let done;
+  let iter5;
+  let obj;
+  let tmp19;
   const tmp = _createForOfIteratorHelperLoose(map);
   const iter = tmp();
   let iter2 = iter;
@@ -157,27 +160,71 @@ function flushViolators() {
     }
   }
   if (!flag) {
+    let str = "";
     if ("" === closure_7) {
       logger.log("No violators found");
     }
-    const tmp12 = _createForOfIteratorHelperLoose(map);
-    let iter4 = tmp12();
-    if (!iter4.done) {
+    const tmp33 = _createForOfIteratorHelperLoose(map);
+    let iter6 = tmp33();
+    if (!iter6.done) {
       do {
-        let tmp13 = closure_2;
-        let tmp14 = closure_2(iter4.value, 2);
-        let first1 = tmp14[0];
-        let tmp16 = tmp14[1];
-        tmp16.warned = false;
-        tmp16.execTime = 0;
-        tmp16.execCount = 0;
-        let iter5 = tmp12();
-        iter4 = iter5;
-        done = iter5.done;
+        let tmp34 = closure_2;
+        let tmp35 = closure_2(iter6.value, 2);
+        let first1 = tmp35[0];
+        let tmp37 = tmp35[1];
+        tmp37.warned = false;
+        tmp37.execTime = 0;
+        tmp37.execCount = 0;
+        let iter7 = tmp33();
+        iter6 = iter7;
+        done = iter7.done;
       } while (!done);
     }
   }
-  printViolators();
+  logger.log(`${"|".padEnd(80, "-")}|`);
+  logger.log(`${"| Consumers of `useStateFromStores` exceeding warning thresholds:".padEnd(80, " ")}|`);
+  logger.log(`${"|".padEnd(80, "-")}|`);
+  const padEndResult = "Function/Component Name".padEnd(34, " ");
+  logger.log("| " + padEndResult + "| " + "Total Exec Time".padEnd(20, " ") + "| " + "Total Exec Count".padEnd(20, " ") + "|");
+  logger.log(`${"|".padEnd(80, "-")}|`);
+  const tmp16 = _createForOfIteratorHelperLoose(map);
+  let iter4 = tmp16();
+  if (!iter4.done) {
+    do {
+      let tmp17 = closure_2;
+      let tmp18 = closure_2(iter4.value, 2);
+      [obj, tmp19] = tmp18;
+      let tmp20 = closure_7;
+      let tmp21 = "" !== closure_7;
+      if (tmp21) {
+        let tmp22 = closure_7;
+        tmp21 = obj === closure_7;
+      }
+      if (!tmp21) {
+        let tmp23 = closure_13;
+        tmp21 = closure_13(tmp19);
+      }
+      if (tmp21) {
+        let tmp24 = closure_3;
+        let padEndResult2 = obj.padEnd(34, " ");
+        let execTime = tmp19.execTime;
+        let text = `${execTime.toFixed(2)}ms`;
+        let str3 = tmp19.execCount;
+        let padEndResult3 = `${execTime.toFixed(2)}ms`.padEnd(20, " ");
+        str = str3.toString();
+        let _HermesInternal = HermesInternal;
+        let str4 = "| ";
+        let tmp28 = padEndResult2;
+        let str5 = "| ";
+        let str6 = "| ";
+        let str7 = "|";
+        let logResult6 = closure_3.log("| " + padEndResult2 + "| " + padEndResult3 + "| " + str.padEnd(20, " ") + "|");
+      }
+      iter5 = tmp16();
+      iter4 = iter5;
+    } while (!iter5.done);
+  }
+  logger.log(`${"|".padEnd(80, "-")}|`);
 }
 let closure_2 = importDefault(dependencyMap[0]);
 const logger = new arg1(dependencyMap[1]).Logger("useStateFromStores");
@@ -192,71 +239,6 @@ if (useStateFromStoresDebuggingEnabled) {
   interval = setInterval(flushViolators, closure_4);
 }
 const map = new Map();
-function printViolators() {
-  let iter2;
-  let obj;
-  let tmp12;
-  let num = arg0;
-  let num2 = arg1;
-  let num3 = arg2;
-  let sum = arg3;
-  if (arg0 === undefined) {
-    num = 34;
-  }
-  if (num2 === undefined) {
-    num2 = 20;
-  }
-  if (num3 === undefined) {
-    num3 = 20;
-  }
-  if (sum === undefined) {
-    sum = num + num2 + num3 + 6;
-  }
-  logger.log(`${"|".padEnd(tmp, "-")}|`);
-  logger.log(`${"| Consumers of `useStateFromStores` exceeding warning thresholds:".padEnd(tmp, " ")}|`);
-  logger.log(`${"|".padEnd(tmp, "-")}|`);
-  const padEndResult = "Function/Component Name".padEnd(num, " ");
-  logger.log("| " + padEndResult + "| " + "Total Exec Time".padEnd(num2, " ") + "| " + "Total Exec Count".padEnd(num3, " ") + "|");
-  logger.log(`${"|".padEnd(tmp, "-")}|`);
-  const tmp9 = _createForOfIteratorHelperLoose(map);
-  let iter = tmp9();
-  if (!iter.done) {
-    do {
-      let tmp10 = closure_2;
-      let tmp11 = closure_2(iter.value, 2);
-      [obj, tmp12] = tmp11;
-      let tmp13 = closure_7;
-      let tmp14 = "" !== closure_7;
-      if (tmp14) {
-        let tmp15 = closure_7;
-        tmp14 = obj === closure_7;
-      }
-      if (!tmp14) {
-        let tmp16 = closure_14;
-        tmp14 = closure_14(tmp12);
-      }
-      if (tmp14) {
-        let tmp17 = closure_3;
-        let padEndResult2 = obj.padEnd(num, " ");
-        let execTime = tmp12.execTime;
-        let text = `${execTime.toFixed(2)}ms`;
-        let str = tmp12.execCount;
-        let padEndResult3 = `${execTime.toFixed(2)}ms`.padEnd(num2, " ");
-        str = str.toString();
-        let _HermesInternal = HermesInternal;
-        let str2 = "| ";
-        let tmp21 = padEndResult2;
-        let str3 = "| ";
-        let str4 = "| ";
-        let str5 = "|";
-        let logResult5 = closure_3.log("| " + padEndResult2 + "| " + padEndResult3 + "| " + str.padEnd(num3, " ") + "|");
-      }
-      iter2 = tmp9();
-      iter = iter2;
-    } while (!iter2.done);
-  }
-  logger.log(`${"|".padEnd(tmp, "-")}|`);
-}
 const result = arg1(dependencyMap[3]).fileFinishedImporting("../discord_common/js/packages/flux/useStateFromStoresPerformanceDebugging.tsx");
 
 export { getUseStateFromStoresExecutionWindowThresholdMs };

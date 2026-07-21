@@ -1,10 +1,10 @@
-// Module ID: 11967
-// Function ID: 92535
+// Module ID: 11974
+// Function ID: 92558
 // Name: useGamePress
 // Dependencies: []
 // Exports: default
 
-// Module 11967 (useGamePress)
+// Module 11974 (useGamePress)
 function useGamePress(userId, applicationId) {
   const obj = { location: "UserProfileWidgetsBoard", applicationId, source: applicationId(dependencyMap[8]).GameProfileSources.UserProfile, sourceUserId: userId, trackEntryPointImpression: true };
   return importDefault(dependencyMap[7])(obj);
@@ -28,19 +28,19 @@ obj.favoriteDetails = { flex: 1, gap: importDefault(dependencyMap[6]).space.PX_8
 obj.favoriteCover = {};
 const obj3 = { flex: 1, gap: importDefault(dependencyMap[6]).space.PX_8 };
 obj.list = { gap: importDefault(dependencyMap[6]).space.PX_12 };
-const obj5 = { -9223372036854775808: true, filter: true, gap: importDefault(dependencyMap[6]).space.PX_12 };
-obj.listRow = obj5;
-obj.listCover = {};
 const obj4 = { gap: importDefault(dependencyMap[6]).space.PX_12 };
+obj.listRow = { gap: importDefault(dependencyMap[6]).space.PX_12 };
+obj.listCover = {};
+const obj5 = { gap: importDefault(dependencyMap[6]).space.PX_12 };
 obj.listDetails = { flex: 1, gap: importDefault(dependencyMap[6]).space.PX_8 };
-const obj7 = { APP_DMS_ENTRY_POINT_COMMAND_BUTTON: null, desert: null, gap: importDefault(dependencyMap[6]).space.PX_8 };
+const obj7 = { 1925026477: null, -1346530010: null, gap: importDefault(dependencyMap[6]).space.PX_8 };
 obj.grid = obj7;
 obj.gridCover = { aspectRatio: 0.75 };
-const obj8 = { APP_DMS_ENTRY_POINT_COMMAND_BUTTON: null, desert: null, gap: importDefault(dependencyMap[6]).space.PX_4 };
+const obj8 = { 1925026477: null, -1346530010: null, gap: importDefault(dependencyMap[6]).space.PX_4 };
 obj.tags = obj8;
-const obj9 = { -9223372036854775808: true, filter: true, gap: importDefault(dependencyMap[6]).space.PX_4, paddingHorizontal: importDefault(dependencyMap[6]).space.PX_8, paddingVertical: importDefault(dependencyMap[6]).space.PX_4, borderRadius: importDefault(dependencyMap[6]).radii.sm, borderWidth: 1, borderColor: importDefault(dependencyMap[6]).colors.BORDER_SUBTLE };
-obj.tag = obj9;
 const obj6 = { flex: 1, gap: importDefault(dependencyMap[6]).space.PX_8 };
+obj.tag = { gap: importDefault(dependencyMap[6]).space.PX_4, paddingHorizontal: importDefault(dependencyMap[6]).space.PX_8, paddingVertical: importDefault(dependencyMap[6]).space.PX_4, borderRadius: importDefault(dependencyMap[6]).radii.sm, borderWidth: 1, borderColor: importDefault(dependencyMap[6]).colors.BORDER_SUBTLE };
+const obj9 = { gap: importDefault(dependencyMap[6]).space.PX_4, paddingHorizontal: importDefault(dependencyMap[6]).space.PX_8, paddingVertical: importDefault(dependencyMap[6]).space.PX_4, borderRadius: importDefault(dependencyMap[6]).radii.sm, borderWidth: 1, borderColor: importDefault(dependencyMap[6]).colors.BORDER_SUBTLE };
 obj.viewMore = { marginTop: importDefault(dependencyMap[6]).space.PX_8 };
 let closure_12 = obj1.createStyles(obj);
 let closure_13 = importAllResult.memo((arg0) => {
@@ -91,7 +91,7 @@ let closure_14 = importAllResult.memo((tags) => {
           let obj = { style: tmp.tag };
           obj = { size: "xs", color: callback(closure_2[6]).colors.TEXT_MUTED };
           const items = [callback2(meta.icon, obj), ];
-          obj = { INTEGRATION_CREATE: true, ConstraintReasonCode: true, children: meta.getText() };
+          obj = { children: meta.getText() };
           items[1] = callback2(tmp(closure_2[11]).Text, obj);
           obj.children = items;
           return callback3(closure_7, obj, meta.tag);
@@ -124,7 +124,7 @@ let closure_15 = importAllResult.memo((game) => {
   obj = { uri: tmp2.coverImageUrl, style: tmp.favoriteCover };
   const items = [callback2(closure_13, obj), ];
   obj = { style: tmp.favoriteDetails };
-  const obj1 = { 9223372036854775807: false, 9223372036854775807: false, 9223372036854775807: false, children: gameName };
+  const obj1 = { -9223372036854775808: false, 0: false, 0: "Array", children: gameName };
   const items1 = [callback2(arg1(dependencyMap[11]).Text, obj1), , ];
   let trimmed;
   if (null != game.comment) {
@@ -165,7 +165,7 @@ let closure_16 = importAllResult.memo((game) => {
   obj = { uri: tmp2.coverImageUrl, style: tmp.listCover };
   const items = [callback2(closure_13, obj), ];
   obj = { style: tmp.listDetails };
-  const obj1 = { 9223372036854775807: "client_theme_settings", 9223372036854775807: "message", 9223372036854775807: "BG_GRADIENT_EASTER_EGG_1", children: gameName };
+  const obj1 = { -9223372036854775808: "client_theme_settings", 0: "message", 0: "BG_GRADIENT_EASTER_EGG_1", children: gameName };
   const items1 = [callback2(arg1(dependencyMap[11]).Text, obj1), callback2(closure_14, { tags: game.tags })];
   obj.children = items1;
   items[1] = callback3(closure_7, obj);
@@ -211,7 +211,7 @@ let closure_18 = importAllResult.memo((style) => {
   const first = tmp2[0];
   let closure_2 = tmp2[1];
   [tmp5, closure_3] = callback(importAllResult.useState(0), 2);
-  let obj = { accessibilityRole: false, onPress: false, type: false, body: false, style: false };
+  let obj = { textAlign: -43429485136332860000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, textAlignVertical: 16125696670274230000000000000000000000000000000000000000000000000000000000000000000, textColor: 12618625066.322031, text: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003307597280564003, variant: -0.0000000000000000018506916710523647 };
   let tmp7;
   const tmp4 = callback(importAllResult.useState(0), 2);
   if (tmp5 > 0) {

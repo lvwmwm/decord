@@ -1,12 +1,12 @@
-// Module ID: 7732
-// Function ID: 61461
+// Module ID: 7736
+// Function ID: 61473
 // Name: apexExperiment
 // Dependencies: []
 // Exports: useIsReferralReminderDCExperimentEnabled
 
-// Module 7732 (apexExperiment)
+// Module 7736 (apexExperiment)
 const _module = require(dependencyMap[0]);
-const obj = { -1269606814: false, -1845285747: false, defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } };
+const obj = { 9223372036854775807: "RTC_CONNECTION_LOSS_RATE", 0: "handleJoinThreadVoice", defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } };
 const apexExperiment = _module.createApexExperiment(obj);
 const _module1 = require(dependencyMap[1]);
 const result = _module1.fileFinishedImporting("modules/premium/experiments/ReferralReminderDCExperiment.tsx");

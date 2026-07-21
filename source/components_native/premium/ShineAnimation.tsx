@@ -1,29 +1,26 @@
-// Module ID: 7174
-// Function ID: 57800
-// Name: items
+// Module ID: 7178
+// Function ID: 57811
 // Dependencies: []
 
-// Module 7174 (items)
+// Module 7178
 const importAllResult = importAll(dependencyMap[0]);
 const tmp2 = arg1(dependencyMap[1]);
 ({ Image: closure_4, View: closure_5 } = tmp2);
 ({ jsx: closure_6, jsxs: closure_7 } = arg1(dependencyMap[2]));
-let closure_8 = Object.freeze({ 0: "<string:251658707>", 0: "<string:251658845>" });
+let closure_8 = Object.freeze({});
 let obj1 = arg1(dependencyMap[3]);
 let obj = { container: { overflow: "hidden" } };
 obj = {};
 const merged = Object.assign(tmp2.StyleSheet.absoluteFillObject);
 obj.shineContainer = obj;
-obj1 = { "Null": "r", "Null": "VERY_HIGH", "Null": "gettimeset", "Null": "GREEN_300", "Null": "r" };
 const items = [{ rotate: "30deg" }];
-obj1.transform = items;
-obj.shine = obj1;
-const tmp3 = arg1(dependencyMap[2]);
-obj.shineInner = { backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_MOD_NORMAL, flex: 1 };
+obj.shine = { transform: items };
+obj1 = { backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_MOD_NORMAL, flex: 1 };
+obj.shineInner = obj1;
 let closure_9 = obj1.createStyles(obj);
 let closure_10 = { code: "function ShineAnimationTsx1(){const{interpolate,progress}=this.__closure;const widthPercent=interpolate(progress.get(),[0,1],[20,160]);return{width:widthPercent+\"%\"};}" };
 let closure_11 = { code: "function ShineAnimationTsx2(){const{ShineAnimationConfig,interpolateColor,progress,flashStartColor,flashEndColor}=this.__closure;const startTime=ShineAnimationConfig.FLASH_TIME_PERCENT;const duration=ShineAnimationConfig.FLASH_DURATION_PERCENT;return{backgroundColor:interpolateColor(progress.get(),[0,startTime,startTime,startTime+duration,1],[flashStartColor,flashStartColor,flashEndColor,flashEndColor,flashStartColor])};}" };
-const obj2 = { backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_MOD_NORMAL, flex: 1 };
+const tmp3 = arg1(dependencyMap[2]);
 const memoResult = importAllResult.memo(function ShineAnimation(arg0) {
   let source;
   let style;
@@ -43,7 +40,7 @@ const memoResult = importAllResult.memo(function ShineAnimation(arg0) {
     constructor() {
       obj = {};
       obj2 = closure_0(alpha[5]);
-      obj.width = "" + obj2.interpolate(closure_0.get(), [null, null], ["x", "backgroundColor"]) + "%";
+      obj.width = "" + obj2.interpolate(closure_0.get(), ["Text", "lc"], [-1631213746, -1765345429]) + "%";
       return obj;
     }
   }

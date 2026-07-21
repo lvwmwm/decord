@@ -1,10 +1,10 @@
-// Module ID: 10036
-// Function ID: 77594
+// Module ID: 10042
+// Function ID: 77612
 // Name: _onAddDirectoryGuildEntry
 // Dependencies: []
 // Exports: onAddDirectoryGuildEntry
 
-// Module 10036 (_onAddDirectoryGuildEntry)
+// Module 10042 (_onAddDirectoryGuildEntry)
 function _onAddDirectoryGuildEntry() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);

@@ -1,10 +1,10 @@
-// Module ID: 9735
-// Function ID: 75727
+// Module ID: 9740
+// Function ID: 75744
 // Name: SocialLayerStorefrontGiftPurchaseSection
 // Dependencies: []
 // Exports: default
 
-// Module 9735 (SocialLayerStorefrontGiftPurchaseSection)
+// Module 9740 (SocialLayerStorefrontGiftPurchaseSection)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 const View = arg1(dependencyMap[2]).View;

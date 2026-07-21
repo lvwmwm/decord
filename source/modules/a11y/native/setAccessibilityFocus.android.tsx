@@ -1,10 +1,10 @@
-// Module ID: 4531
-// Function ID: 39734
+// Module ID: 4535
+// Function ID: 39782
 // Name: setAccessibilityFocus
 // Dependencies: []
 // Exports: setAccessibilityFocus
 
-// Module 4531 (setAccessibilityFocus)
+// Module 4535 (setAccessibilityFocus)
 const _module = require(dependencyMap[0]);
 ({ AccessibilityInfo: closure_3, findNodeHandle: closure_4 } = _module);
 let importDefaultResult = importDefault(dependencyMap[1]);

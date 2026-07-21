@@ -1,12 +1,12 @@
-// Module ID: 6877
-// Function ID: 54566
+// Module ID: 6881
+// Function ID: 54576
 // Name: appDatabaseManager
 // Dependencies: []
 
-// Module 6877 (appDatabaseManager)
+// Module 6881 (appDatabaseManager)
 let obj = {
   name: "Channels",
-  actions: [null, "i", "e", "c", "t", "T", "y", "R", "u", "q"],
+  actions: [],
   require() {
     return require(dependencyMap[1]).default;
   }
@@ -22,7 +22,7 @@ obj = {
 items[1] = obj;
 obj = {
   name: "GuildEmojis",
-  actions: [50, 1, 100, 2, 250, 4],
+  actions: [],
   require() {
     return require(dependencyMap[3]).default;
   }
@@ -30,21 +30,21 @@ obj = {
 items[2] = obj;
 items[3] = {
   name: "Guilds",
-  actions: [],
+  actions: ["<string:2781455813>", "<string:2287011273>", "<string:4199639137>", "<string:2636206568>", "<string:315641953>", "<string:299519802>", "<string:2637733175>", "<string:2779096483>", "<string:2779882924>", "<string:84452793>"],
   require() {
     return require(dependencyMap[4]).default;
   }
 };
 items[4] = {
   name: "GuildsRequiringDeletedIdsSync",
-  actions: [9001, 16, 25, 0.75],
+  actions: [],
   require() {
     return require(dependencyMap[5]).default;
   }
 };
 items[5] = {
   name: "GuildsRequiringChannelSync",
-  actions: [25, 0.75, 1000, 20, 9001],
+  actions: [],
   require() {
     return require(dependencyMap[6]).default;
   }
@@ -58,7 +58,7 @@ items[6] = {
 };
 items[7] = {
   name: "GuildVersions",
-  actions: [],
+  actions: ["count", "getChannel", "window", true, true, true, true, true, true, true, true, true, true],
   require() {
     return require(dependencyMap[8]).default;
   }
@@ -72,42 +72,42 @@ items[8] = {
 };
 items[9] = {
   name: "Messages",
-  actions: [null, null, null, null, null, null, null, null],
+  actions: [-620745012, true, true, true, true, true, true, true],
   require() {
     return require(dependencyMap[10]).default;
   }
 };
 items[10] = {
   name: "LowDiskTrim",
-  actions: [327680],
+  actions: [],
   require() {
     return require(dependencyMap[11]).default;
   }
 };
 items[11] = {
   name: "NonGuildVersions",
-  actions: [500, 10],
+  actions: [null, null],
   require() {
     return require(dependencyMap[12]).default;
   }
 };
 items[12] = {
   name: "ReadStates",
-  actions: [null, null, null, null, null],
+  actions: [true, true, true, true, true],
   require() {
     return require(dependencyMap[13]).default;
   }
 };
 items[13] = {
   name: "UserSettingsProto",
-  actions: ["<string:189857793>", "<string:1421624284>", "<string:1489960962>", "<string:262340609>"],
+  actions: [],
   require() {
     return require(dependencyMap[14]).default;
   }
 };
 items[14] = {
   name: "UserGuildSettings",
-  actions: [false, false],
+  actions: ["<string:2178437821>", "<string:1768086906>"],
   require() {
     return require(dependencyMap[15]).default;
   }

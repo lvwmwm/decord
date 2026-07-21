@@ -1,10 +1,10 @@
-// Module ID: 4709
-// Function ID: 40916
+// Module ID: 4711
+// Function ID: 40957
 // Name: _shouldConvertToWebP
 // Dependencies: []
 // Exports: maybeConvertToWebP
 
-// Module 4709 (_shouldConvertToWebP)
+// Module 4711 (_shouldConvertToWebP)
 function _shouldConvertToWebP() {
   return _shouldConvertToWebP2(...arguments);
 }
@@ -14,7 +14,7 @@ async function _shouldConvertToWebP2(type, arg1) {
     closure_4.verbose("[WebP] File already WebP format");
     return closure_5.ALREADY_WEBP;
   } else {
-    const items = ["isArray"];
+    const items = [];
     if (items.includes(obj.type)) {
       if ("function" === typeof obj.arrayBuffer) {
         const tmp15 = yield obj.arrayBuffer();

@@ -1,10 +1,10 @@
-// Module ID: 8759
-// Function ID: 69246
+// Module ID: 8763
+// Function ID: 69258
 // Name: GiftButton
 // Dependencies: []
 // Exports: default
 
-// Module 8759 (GiftButton)
+// Module 8763 (GiftButton)
 function GiftButton(onTrackPress) {
   let variant;
   ({ product: closure_0, analyticsLocations: closure_1, variant } = onTrackPress);
@@ -111,7 +111,7 @@ function VCButton(balance) {
           obj5.openLazy(callback(closure_2[25])(closure_2[28], closure_2.paths), "FractionalNitroCollectedActionSheet", obj);
           const tmp11 = callback(closure_2[25])(closure_2[28], closure_2.paths);
         } else {
-          obj1 = { "Null": null, "Null": null, "Null": null, product: lib, orbBalancePriorToPurchase: callback };
+          obj1 = { 139585039: null, 805462532: null, 1400038225: null, product: lib, orbBalancePriorToPurchase: callback };
           lib(closure_2[29]).open(obj1);
           const obj3 = lib(closure_2[29]);
         }
@@ -182,7 +182,7 @@ function PurchaseDisclaimer(arg0) {
   let buyButtonLabel;
   let product;
   ({ product, buyButtonLabel } = arg0);
-  let obj = { Promise: 291840, marginTop: 131072, flags: 0, style: callback4().disclaimer };
+  let obj = { style: callback4().disclaimer };
   let formatResult = product.type !== arg1(dependencyMap[34]).CollectiblesItemType.EXTERNAL_SKU;
   if (formatResult) {
     const intl = arg1(dependencyMap[17]).intl;
@@ -211,9 +211,9 @@ let obj = arg1(dependencyMap[10]);
 obj = {};
 obj = { backgroundColor: importDefault(dependencyMap[11]).colors.MOBILE_ACTIONSHEET_BACKGROUND, paddingHorizontal: importDefault(dependencyMap[11]).space.PX_16, paddingTop: importDefault(dependencyMap[11]).space.PX_8 };
 obj.container = obj;
-const obj1 = { <string:80282112>: "Iyka0U", <string:72444672>: "sdk", borderColor: importDefault(dependencyMap[11]).colors.BORDER_MUTED };
+const obj1 = { -1680055435: null, 1935228496: null, borderColor: importDefault(dependencyMap[11]).colors.BORDER_MUTED };
 obj.containerFramesEA = obj1;
-obj.gradientOverlay = { left: "isArray", borderColor: "skuId", borderWidth: "T", backgroundColor: "r", borderRadius: "isArray" };
+obj.gradientOverlay = { o: "center", concat: null, o: 4, borderRadius: 4, position: "rgba(0, 0, 0, 0.75)" };
 const tmp5 = arg1(dependencyMap[9]);
 obj.purchaseSection = { gap: importDefault(dependencyMap[11]).space.PX_12 };
 obj.disclaimer = { opacity: 0.75 };
@@ -221,7 +221,7 @@ const obj2 = { gap: importDefault(dependencyMap[11]).space.PX_12 };
 obj.buttonContainer = { flexDirection: "row", gap: importDefault(dependencyMap[11]).space.PX_12 };
 const obj3 = { flexDirection: "row", gap: importDefault(dependencyMap[11]).space.PX_12 };
 obj.framesEAContainer = { flexDirection: "column", gap: importDefault(dependencyMap[11]).space.PX_8 };
-obj.orbsButtonLabel = { -9223372036854775808: true, filter: true };
+obj.orbsButtonLabel = {};
 obj.orbsButtonText = { flexShrink: 1 };
 let closure_21 = obj.createStyles(obj);
 const obj4 = { flexDirection: "column", gap: importDefault(dependencyMap[11]).space.PX_8 };
@@ -319,7 +319,7 @@ export default function ProductDetailsActionSheetPurchaseSection(onBuy) {
   }
   if (tmp22Result) {
     obj2 = {};
-    obj3 = { colors: ["index", "formatToPlainString"], locations: ["TooltipNames", "accountId"], start: { "Null": false, "Null": true }, end: { "Null": "innocent", "Null": "innocent" } };
+    obj3 = { colors: ["index", "formatToPlainString"], locations: ["CLIENT_SCRIPT_FAILED_TO_LOAD", "consumedRequestToRespondToSeriousThermalState"], start: { max: -536870861, guildId: -299892737 }, end: {} };
     const items3 = [tmp.gradientOverlay, ];
     let tmp28 = !isThemeDarkResult;
     if (tmp28) {
@@ -330,20 +330,20 @@ export default function ProductDetailsActionSheetPurchaseSection(onBuy) {
     obj3.style = items3;
     obj3.pointerEvents = "none";
     const items4 = [callback2(importDefault(dependencyMap[53]), obj3), ];
-    obj5 = { "Bool(false)": false, "Bool(false)": 2, "Bool(false)": "sh", "Bool(false)": 3, style: tmp.gradientOverlay };
+    obj5 = { style: tmp.gradientOverlay };
     const tmp22 = callback3;
     const tmp23 = closure_18;
     const tmp24 = callback2;
     const tmp27 = importDefault(dependencyMap[53]);
     obj6 = {};
-    obj7 = { applicationId: "\u{1FAF1}\u{1F3FC}\u200D\u{1FAF2}\u{1F3FB}", isGameRelationship: true, isNameplatedRow: null, canShowDisplayNameStyles: 14, canShowDisplayNameStylesFont: "perks", deviceType: "message", simpleDeviceType: null };
-    obj8 = { MEETS_AUTO_ENABLE: "Group 4", folderColor: 3, summaryContainer: 2, stopColor: token };
+    obj7 = {};
+    obj8 = { stopColor: token };
     const items5 = [callback2(arg1(dependencyMap[54]).Stop, obj8), ];
-    obj9 = { MEETS_AUTO_ENABLE: "start_ring_position", folderColor: "scalar", summaryContainer: 13, stopColor: token };
+    obj9 = { stopColor: token };
     items5[1] = callback2(arg1(dependencyMap[54]).Stop, obj9);
     obj7.children = items5;
     obj6.children = callback3(arg1(dependencyMap[54]).RadialGradient, obj7);
-    const items6 = [callback2(arg1(dependencyMap[54]).Defs, obj6), callback2(arg1(dependencyMap[54]).Rect, { required: null, id: null, source: null, name: null, selfVideo: null })];
+    const items6 = [callback2(arg1(dependencyMap[54]).Defs, obj6), callback2(arg1(dependencyMap[54]).Rect, { 1359503646: false, 979597923: false, "Bool(true)": false, "Bool(true)": false, "Bool(true)": false })];
     obj5.children = items6;
     items4[1] = callback3(importDefault(dependencyMap[54]), obj5);
     obj2.children = items4;
@@ -427,7 +427,7 @@ export default function ProductDetailsActionSheetPurchaseSection(onBuy) {
           const sum = arraySpreadResult + 1;
           obj3.value = items1;
           const obj4 = { style: tmp.framesEAContainer };
-          const obj5 = { INTEGRATION_CREATE: true, ConstraintReasonCode: true };
+          const obj5 = {};
           const intl8 = product(onTrackPress[17]).intl;
           const obj6 = {};
           let obj14 = analyticsLocations(onTrackPress[57]);

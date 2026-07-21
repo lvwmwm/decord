@@ -1,10 +1,10 @@
-// Module ID: 4179
-// Function ID: 35946
+// Module ID: 4183
+// Function ID: 35994
 // Name: getClipCropAspectRatio
-// Dependencies: []
+// Dependencies: [284214097]
 // Exports: getClipCropBounds
 
-// Module 4179 (getClipCropAspectRatio)
+// Module 4183 (getClipCropAspectRatio)
 function getClipCropAspectRatio(arg0) {
   if (obj.PORTRAIT_9_16 === arg0) {
     return 0.5625;

@@ -1,10 +1,10 @@
-// Module ID: 11291
-// Function ID: 87870
+// Module ID: 11297
+// Function ID: 87893
 // Name: EmptyStateWithSnowflakeQuery
 // Dependencies: []
 // Exports: default
 
-// Module 11291 (EmptyStateWithSnowflakeQuery)
+// Module 11297 (EmptyStateWithSnowflakeQuery)
 function EmptyStateWithSnowflakeQuery(onPressRow) {
   const arg1 = onPressRow.onPressRow;
   const tmp = callback();
@@ -13,7 +13,7 @@ function EmptyStateWithSnowflakeQuery(onPressRow) {
     contentContainerStyle: callback().emptyState,
     data: items,
     renderItem(item) {
-      const obj = { -9223372036854775808: null, 0: null, 0: null, label: item.item, onPress: onPressRow };
+      const obj = { 0: null, 0: null, 0: null, label: item.item, onPress: onPressRow };
       return callback(onPressRow(closure_2[13]).TableRow, obj);
     },
     keyboardShouldPersistTaps: "always",

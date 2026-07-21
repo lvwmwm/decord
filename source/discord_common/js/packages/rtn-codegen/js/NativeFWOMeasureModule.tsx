@@ -1,9 +1,9 @@
-// Module ID: 9295
-// Function ID: 72607
+// Module ID: 9299
+// Function ID: 72619
 // Name: NativeFWOMeasureModule
 // Dependencies: []
 
-// Module 9295 (NativeFWOMeasureModule)
+// Module 9299 (NativeFWOMeasureModule)
 const TurboModuleRegistry = require(dependencyMap[0]).TurboModuleRegistry;
 const value = TurboModuleRegistry.get("NativeFWOMeasureModule");
 const _module = require(dependencyMap[1]);

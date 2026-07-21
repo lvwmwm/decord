@@ -1,15 +1,15 @@
-// Module ID: 15046
-// Function ID: 113299
+// Module ID: 15053
+// Function ID: 113323
 // Name: createICYMIStyles
 // Dependencies: []
 // Exports: createICYMIStyles
 
-// Module 15046 (createICYMIStyles)
+// Module 15053 (createICYMIStyles)
 let closure_2 = importAll(dependencyMap[0]);
 const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/icymi/native/createICYMIStyles.tsx");
 
-export const createICYMIStyles = function createICYMIStyles(result) {
-  const callback = callback(dependencyMap[1]).createStyles(result);
+export const createICYMIStyles = function createICYMIStyles(__exportStarResult1) {
+  const callback = callback(dependencyMap[1]).createStyles(__exportStarResult1);
   return (arg0) => {
     const items = [...arguments];
     const useContext = React.useContext;

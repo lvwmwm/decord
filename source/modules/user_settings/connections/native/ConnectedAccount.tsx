@@ -1,9 +1,9 @@
-// Module ID: 13736
-// Function ID: 103907
+// Module ID: 13743
+// Function ID: 103930
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
-// Module 13736 (_isNativeReflectConstruct)
+// Module 13743 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -30,7 +30,7 @@ function Integration(integration) {
   if (tmp4) {
     let tmp15 = tmp2[0] === integration.id;
     if (tmp15) {
-      obj = { Promise: "%MapIteratorPrototype%", marginTop: "<string:1163546880>", flags: "SimpleActionSheet", style: legacyClassComponentStyles.integrationErrorText };
+      obj = { "Null": "ars", "Null": "<string:1166889216>", "Null": "Status", style: legacyClassComponentStyles.integrationErrorText };
       const intl2 = arg1(dependencyMap[21]).intl;
       obj.children = intl2.string(arg1(dependencyMap[21]).t.fEptJP);
       tmp15 = callback4(arg1(dependencyMap[22]).Text, obj);
@@ -42,7 +42,7 @@ function Integration(integration) {
     const obj3 = { style: legacyClassComponentStyles.integrationTextRowContainer };
     const obj4 = { children: integration.guild.name };
     const items5 = [callback4(arg1(dependencyMap[22]).Text, obj4), ];
-    const obj5 = { CHANNEL_HIGHLIGHT: 1604231423, guild_template_description: 2147418367, borderWidth: 3530104575 };
+    const obj5 = { encodingConfig: "defineProperty", showRemove: "", PREMIUM_CUSTOM_NOTIFICATION_SOUND_SETTINGS_UPSELL: "uri" };
     const tmp19 = closure_20;
     const tmp20 = View;
     const tmp21 = closure_20;
@@ -127,38 +127,38 @@ obj.marginRight = 4;
 obj.connectedApplicationIdentityIcon = obj;
 const tmp4 = arg1(dependencyMap[13]);
 obj.deleteConnectionIcon = { marginRight: 10, tintColor: importDefault(dependencyMap[16]).colors.INTERACTIVE_TEXT_DEFAULT };
-obj.container = { "Null": 1, "Null": "comp_0" };
+obj.container = { "Bool(false)": 1, "Bool(false)": "comp_0" };
 const obj1 = { marginRight: 10, tintColor: importDefault(dependencyMap[16]).colors.INTERACTIVE_TEXT_DEFAULT };
 obj.connectedAccountItem = { borderRadius: importDefault(dependencyMap[16]).modules.mobile.TABLE_ROW_BORDER_RADIUS, backgroundColor: importDefault(dependencyMap[16]).colors.BACKGROUND_SURFACE_HIGH, overflow: "hidden" };
 obj3 = { backgroundColor: importDefault(dependencyMap[16]).colors.BACKGROUND_SURFACE_HIGHEST, borderTopLeftRadius: importDefault(dependencyMap[16]).modules.mobile.TABLE_ROW_BORDER_RADIUS, borderTopRightRadius: importDefault(dependencyMap[16]).modules.mobile.TABLE_ROW_BORDER_RADIUS };
 obj.connectedAccountTopContainer = obj3;
-obj.connectedAccountContentContainer = {};
-const obj4 = { NewGuild: null, GameMention: "\u{1FAF0}\u{1F3FC}", Hu4jfi: true, getClipParticipantIds: null, GuildTemplateStates: 14, onStartReachedThreshold: null, backgroundColor: importDefault(dependencyMap[16]).colors.BACKGROUND_MOD_NORMAL, borderRadius: importDefault(dependencyMap[16]).modules.mobile.TABLE_ROW_BORDER_RADIUS };
+obj.connectedAccountContentContainer = { "Bool(false)": 800, "Bool(false)": 16 };
+const obj4 = { expressionSourceGuild: null, onFinish: "\u{1FAF0}\u{1F3FC}", formCtaIcon: true, getNavigationEntry: null, ANDROID_PANELS_ANIMATION_CONFIG: 14, ActiveThemeType: null, backgroundColor: importDefault(dependencyMap[16]).colors.BACKGROUND_MOD_NORMAL, borderRadius: importDefault(dependencyMap[16]).modules.mobile.TABLE_ROW_BORDER_RADIUS };
 obj.integrationContainer = obj4;
 obj.integrationContainerInternal = {};
-obj.integrationTextRowContainer = {};
-obj.integrationErrorText = { offsetX: "png", "Bool(false)": 20, "Bool(false)": 33 };
+obj.integrationTextRowContainer = { kkvDatabase: 76, HUB_SCHOOL_CLUB: 76, renderMode: null };
+obj.integrationErrorText = { Symbol: 4, hash: null, body: null };
 obj.integrationCategoryLabel = { marginVertical: 0 };
 obj.integrationGuildIcon = { margin: 8 };
 obj.integrationJoinButton = {};
-const obj5 = { "Bool(true)": "50a11b05117d31e1ad224516819cbd87", "Bool(true)": "ic_clock", "Bool(true)": "png", "Bool(true)": true, backgroundColor: importDefault(dependencyMap[16]).colors.BORDER_SUBTLE };
+const obj5 = { "Null": "50a11b05117d31e1ad224516819cbd87", "Null": "ic_clock", "Null": "png", "Null": true, backgroundColor: importDefault(dependencyMap[16]).colors.BORDER_SUBTLE };
 obj.divider = obj5;
 obj.alertInfoBox = { marginTop: 8 };
 const obj2 = { borderRadius: importDefault(dependencyMap[16]).modules.mobile.TABLE_ROW_BORDER_RADIUS, backgroundColor: importDefault(dependencyMap[16]).colors.BACKGROUND_SURFACE_HIGH, overflow: "hidden" };
 const obj6 = { marginTop: 16 };
 const merged = Object.assign(importDefault(dependencyMap[17])(tmp3.Fonts.PRIMARY_MEDIUM, importDefault(dependencyMap[16]).colors.TEXT_DEFAULT, 16));
 obj.alertBodyText = obj6;
-const obj7 = { needsOffscreenAlphaCompositing: false, renderToHardwareTextureAndroid: false, pointerEvents: false, position: false, top: false, left: false, right: false, backgroundColor: importDefault(dependencyMap[16]).colors.BACKGROUND_BASE_LOWEST, borderRadius: importDefault(dependencyMap[16]).radii.xs };
+const obj7 = { <string:1658481745>: "RTC_CONNECTION_LOSS_RATE", <string:2790347088>: "handleJoinThreadVoice", <string:1418355163>: "toString", <string:2792263941>: "isArray", <string:853318528>: "toString", <string:1392196194>: "isArray", <string:50570849>: "setDescription", backgroundColor: importDefault(dependencyMap[16]).colors.BACKGROUND_BASE_LOWEST, borderRadius: importDefault(dependencyMap[16]).radii.xs };
 obj.metadataContainer = obj7;
-obj.metadataItemsContainer = { zIndex: "SubscriptionIcon", horizontal: "png", accessibilityLabel: true, accessibilityRole: "/assets/design/components/Icon/native/redesign/generated/images", hitSlop: 24, duration: 24, easing: null };
-obj.metadataRefreshButton = { maxLength: "<string:4048683010>", -328930550: "<string:1365540219>" };
+obj.metadataItemsContainer = { easing: "SubscriptionIcon", prefill: "png", useNativeDriver: true, delay: "/assets/design/components/Icon/native/redesign/generated/images", flex: 24, width: 24, aspectRatio: null };
+obj.metadataRefreshButton = { <string:252898708>: "<string:978452482>", <string:3355923052>: "<string:1371002236>" };
 obj.metadataRefreshButtonDisabled = { opacity: 0.5 };
-obj.metadataRefreshIcon = { <string:1140607356>: "<string:16777479>", <string:1751293292>: "<string:36295491>" };
-obj.metadataBannerContainer = { accessibilityRole: 1934713981, backgroundColor: 507330855, Error: 1091633154, position: 151597, width: 6258 };
+obj.metadataRefreshIcon = {};
+obj.metadataBannerContainer = { 0: -1051609131, 0: 181879079, 9223372036854775807: 1091633153, -9223372036854775808: 151645, 0: 6258 };
 obj.newBadge = { marginRight: 4 };
-obj.rowDivider = { useNativeDriver: 12, delay: 4 };
+obj.rowDivider = { position: 12, bottom: 4 };
 obj.addDetailsButton = {};
-obj.learnMoreButton = { -1235834268: null, 111825591: null };
+obj.learnMoreButton = {};
 const importDefaultResult = importDefault(dependencyMap[17]);
 obj.relinkButton = { borderRadius: importDefault(dependencyMap[16]).radii.round };
 obj.relinkText = { marginTop: 8 };
@@ -388,7 +388,7 @@ const tmp8 = (PureComponent) => {
         items = obj4.generateTwitterMetadataItems(metadata);
       }
       if (null !== createdAtDate) {
-        let obj = { INTEGRATION_CREATE: "<string:1491554816>", ConstraintReasonCode: "<string:17917053>" };
+        let obj = {};
         const intl2 = ConnectedAccount(closure_2[21]).intl;
         obj = { date: createdAtDate };
         obj.children = intl2.format(ConnectedAccount(closure_2[21]).t.9rfonh, obj);
@@ -399,7 +399,7 @@ const tmp8 = (PureComponent) => {
         const obj = account(closure_2[18]);
         account(closure_2[18]).refresh(account.type, account.id).finally(() => {
           const timerId = setTimeout(() => {
-            state.setState({ "Bool(true)": true, "Bool(true)": true });
+            state.setState({ "Null": null, "Null": null });
           }, 2000);
         });
       }
@@ -456,7 +456,7 @@ const tmp8 = (PureComponent) => {
           const obj7 = { style: tmp.learnMoreButton };
           tmp = callback4;
           tmp15 = ConnectedAccount;
-          const obj8 = { numberOfLines: 44, expandable: null, seeMoreLabel: true };
+          const obj8 = { height: true, accessibilityRole: "yes", hasDiversityParent: "2026-04-collectibles-profile-frames-purchase" };
           intl = ConnectedAccount(closure_2[21]).intl;
           string = intl.string;
           obj6 = string(ConnectedAccount(closure_2[21]).t.8O0mlf);
@@ -478,7 +478,7 @@ const tmp8 = (PureComponent) => {
         const obj9 = { accessibilityRole: "button" };
         const intl3 = ConnectedAccount(closure_2[21]).intl;
         obj9.accessibilityLabel = intl3.string(ConnectedAccount(closure_2[21]).t.wzzjk9);
-        obj9.hitSlop = { position: "parent", right: "Array", top: "isArray", display: "accessibilityRole" };
+        obj9.hitSlop = { label: "Array", maxLength: "gradientTop", backgroundColor: "EXPERIMENT_GUILD_EXPOSURE_SUPPRESSED", padding: "showReferralNotificationDot" };
         obj9.onPress = handleRefresh;
         obj9.disabled = tmp15;
         const items3 = [tmp.metadataRefreshButton, ];
@@ -588,12 +588,12 @@ const tmp8 = (PureComponent) => {
         const icon = value.icon;
         obj.source = obj3.makeSource(obj4.isThemeDark(props.theme) ? icon.darkPNG : icon.lightPNG);
         obj.disableColor = true;
-        const obj1 = { Reflect: "y", op: "%Float16Array%", user: "getUpsellType" };
+        const obj1 = { <string:3747870501>: true, <string:726980327>: true, <string:1299923571>: "isArray" };
         const obj2 = { accessibilityRole: "button" };
         const intl2 = ConnectedAccount(closure_2[21]).intl;
         obj2.accessibilityLabel = intl2.string(ConnectedAccount(closure_2[21]).t.DT39A+);
         obj2.onPress = self.handleDisconnect;
-        obj2.hitSlop = { marginTop: "key", marginVertical: "Text", maxHeight: "ix", maxWidth: "DARK" };
+        obj2.hitSlop = { "Null": "SERVER_GUIDE_CHANNEL_SELECTED", "Null": "WebUserSettings", "Null": "Array", "Null": "MERCH_STORE" };
         obj3 = { style: tmp.deleteConnectionIcon, source: callback(closure_2[44]) };
         obj2.children = callback4(ConnectedAccount(closure_2[15]).Icon, obj3);
         obj1.children = callback4(ConnectedAccount(closure_2[37]).PressableOpacity, obj2);

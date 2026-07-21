@@ -1,10 +1,10 @@
-// Module ID: 12578
-// Function ID: 96746
+// Module ID: 12585
+// Function ID: 96769
 // Name: NUFVoiceChannelsTemplate
 // Dependencies: []
 // Exports: default
 
-// Module 12578 (NUFVoiceChannelsTemplate)
+// Module 12585 (NUFVoiceChannelsTemplate)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[8]).fileFinishedImporting("modules/nuf_channels/native/components/NUFVoiceChannelsTemplate.tsx");

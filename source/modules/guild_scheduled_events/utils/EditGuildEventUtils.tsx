@@ -1,10 +1,10 @@
-// Module ID: 8334
-// Function ID: 66106
+// Module ID: 8338
+// Function ID: 66118
 // Name: recurrenceRuleToServer
 // Dependencies: []
 // Exports: convertToFakeGuildEvent, getInitialGuildEventData, isEditingEvent
 
-// Module 8334 (recurrenceRuleToServer)
+// Module 8338 (recurrenceRuleToServer)
 function recurrenceRuleToServer(recurrenceRule) {
   let byMonthDay;
   let tmp = null;

@@ -1,9 +1,9 @@
-// Module ID: 6821
-// Function ID: 53882
+// Module ID: 6827
+// Function ID: 53928
 // Name: CONVERSATION_COLORS
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 6821 (CONVERSATION_COLORS)
+// Module 6827 (CONVERSATION_COLORS)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("modules/conversations/ConversationConstants.tsx");
 

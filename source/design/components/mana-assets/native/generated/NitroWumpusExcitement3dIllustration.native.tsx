@@ -1,10 +1,10 @@
-// Module ID: 6363
-// Function ID: 50418
+// Module ID: 6365
+// Function ID: 50461
 // Name: NitroWumpusExcitement3dIllustration
-// Dependencies: [131072, 561250304, 1862270976, 4227858452]
+// Dependencies: [131072, 561250304, 1895825408, 4261412884]
 // Exports: NitroWumpusExcitement3dIllustration
 
-// Module 6363 (NitroWumpusExcitement3dIllustration)
+// Module 6365 (NitroWumpusExcitement3dIllustration)
 const jsx = require(dependencyMap[0]).jsx;
 const _module = require(dependencyMap[3]);
 const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/NitroWumpusExcitement3dIllustration.native.tsx");

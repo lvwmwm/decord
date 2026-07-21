@@ -25,8 +25,8 @@ function AsyncFromSyncIterator(arg0) {
     }
   }
   const obj = {
-    -1470959983: false,
-    1147808644: false,
+    lineClamp: "o",
+    accessibilityRole: "o",
     next() {
       const n = this.n;
       return AsyncFromSyncIteratorContinuation(n(...arguments));
@@ -74,7 +74,7 @@ function processChunk(promptFeedback, arg1, arg2, setStatus) {
         obj.message = "Content blocked: " + blockReason;
         setStatus.setStatus(obj);
         const _HermesInternal2 = HermesInternal;
-        obj = { mechanism: { alignItems: false, justifyContent: false } };
+        obj = { mechanism: { onDrawerSlide: false, onDrawerStateChanged: false } };
         require(dependencyMap[5]).captureException("Content blocked: " + blockReason, obj);
         flag = true;
         const obj2 = require(dependencyMap[5]);

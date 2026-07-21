@@ -1,18 +1,18 @@
-// Module ID: 12805
-// Function ID: 98086
+// Module ID: 12812
+// Function ID: 98109
 // Name: items
 // Dependencies: []
 // Exports: GuildBadgeCrosshairs
 
-// Module 12805 (items)
+// Module 12812 (items)
 importAll(dependencyMap[0]);
 ({ jsx: closure_2, jsxs: closure_3 } = arg1(dependencyMap[1]));
 let closure_4 = ["channelId", "channelId", "channelId", "channelId"];
-let closure_5 = ["r", "recreateOrder", "ng"];
+let closure_5 = ["r", "giftCardAsset", "WISHLIST_ITEM_CLICKED"];
 let closure_6 = [0.1, 0.6, 0.95, 0.05];
-const items = [{}, { GameplayAbstractUI: "<string:16777735>", cwd: "<string:37775937>" }, { GameplayAbstractUI: "\u{1F4A0}", cwd: 6 }, { GameplayAbstractUI: "<string:16777735>", cwd: "<string:37775937>" }];
+const items = [{}, {}, {}, {}];
 let closure_8 = [true, true, true];
-const items1 = [{}, { GameplayAbstractUI: "\u{1F4A0}", cwd: 6 }, { GameplayAbstractUI: "<string:16777735>", cwd: "<string:37775937>" }];
+const items1 = [{}, {}, {}];
 const tmp3 = arg1(dependencyMap[1]);
 const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/guild_tag/native/badges/GuildBadgeCrosshairs.tsx");
 
@@ -29,7 +29,7 @@ export const GuildBadgeCrosshairs = function GuildBadgeCrosshairs(width) {
   if (num2 === undefined) {
     num2 = 24;
   }
-  let obj = { onValueChange: "r", step: "onRequireModeratorMFAClick", flexDirection: "Array", alignItems: "isSpamMessageRequest" };
+  let obj = { "Bool(true)": null, "Bool(true)": 4, "Bool(true)": 4, "Bool(true)": "rgba(0, 0, 0, 0.75)" };
   ({ primaryTintColor, secondaryTintColor } = width);
   Object.setPrototypeOf(null);
   const merged = Object.assign(width, obj);

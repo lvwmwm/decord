@@ -1,17 +1,17 @@
-// Module ID: 12832
-// Function ID: 98142
+// Module ID: 12839
+// Function ID: 98165
 // Name: items
 // Dependencies: []
 // Exports: GuildBadgeSnail
 
-// Module 12832 (items)
+// Module 12839 (items)
 importAll(dependencyMap[0]);
 ({ jsx: closure_2, jsxs: closure_3 } = arg1(dependencyMap[1]));
 let closure_4 = [null, null];
 let closure_5 = [];
 const items = [{}, {}];
 let closure_7 = [false, false];
-let closure_8 = ["TypeError", "r"];
+let closure_8 = ["%StringIteratorPrototype%", "flattenSource"];
 const items1 = [{}, {}];
 const tmp3 = arg1(dependencyMap[1]);
 const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/guild_tag/native/badges/GuildBadgeSnail.tsx");
@@ -29,7 +29,7 @@ export const GuildBadgeSnail = function GuildBadgeSnail(width) {
   if (num2 === undefined) {
     num2 = 24;
   }
-  let obj = { onValueChange: "r", step: "onRequireModeratorMFAClick", flexDirection: "Array", alignItems: "isSpamMessageRequest" };
+  let obj = { "Bool(true)": null, "Bool(true)": 4, "Bool(true)": 4, "Bool(true)": "rgba(0, 0, 0, 0.75)" };
   ({ primaryTintColor, secondaryTintColor } = width);
   Object.setPrototypeOf(null);
   const merged = Object.assign(width, obj);
@@ -43,7 +43,7 @@ export const GuildBadgeSnail = function GuildBadgeSnail(width) {
   obj["height"] = num2;
   obj["viewBox"] = "0 0 16 16";
   obj["fill"] = "none";
-  const items = [callback(arg1(dependencyMap[3]).Path, {}), , , , , , , ];
+  const items = [callback(arg1(dependencyMap[3]).Path, { "Bool(false)": "absolute", "Bool(false)": "hidden" }), , , , , , , ];
   obj1 = { d: "M8 13h-1v-1h1v1ZM12 12v-1h1v-1h1V7h-1v-1h-1v-1H8v-1h5v1h1v1h1v6h-2v1H9v-1h3ZM7 12h-1v-1h1v1Z", fill: primaryColorsTransformed[1] };
   items[1] = callback(arg1(dependencyMap[3]).Path, obj1);
   items[2] = callback(arg1(dependencyMap[3]).Path, { d: "M10 10h2v1H8v-2h1v-1h1v2ZM13 10h-1v-1h1v1Z", fill: primaryColorsTransformed[1] });

@@ -1,10 +1,10 @@
-// Module ID: 10126
-// Function ID: 78396
+// Module ID: 10132
+// Function ID: 78414
 // Name: SafetyToolsActionSheetWrapper
 // Dependencies: []
 // Exports: default
 
-// Module 10126 (SafetyToolsActionSheetWrapper)
+// Module 10132 (SafetyToolsActionSheetWrapper)
 let closure_3 = importAll(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 const jsx = arg1(dependencyMap[2]).jsx;
@@ -34,7 +34,7 @@ export default function SafetyToolsActionSheetWrapper(channelId) {
   }, items1);
   let tmp3 = null;
   if (null != stateFromStores) {
-    obj = { Kn: null, ContentInventoryFeedKey: null };
+    obj = { left: null, startAndEndHeight: null };
     obj = { recipientId, warningId, warningType, hasBackButton: hasHeaderBack, title: headerTitle, channelId };
     obj.header = jsx(importDefault(dependencyMap[5]), obj);
     obj.children = children;

@@ -1,10 +1,10 @@
-// Module ID: 12388
-// Function ID: 94705
+// Module ID: 12395
+// Function ID: 94728
 // Name: ProgressBarMarkerInnerContent
 // Dependencies: []
 // Exports: default
 
-// Module 12388 (ProgressBarMarkerInnerContent)
+// Module 12395 (ProgressBarMarkerInnerContent)
 function ProgressBarMarkerInnerContent(arg0) {
   let isCurrentTier;
   let isDisabled;
@@ -77,7 +77,7 @@ function ProgressBarMarkerInnerContent(arg0) {
     const tmp17 = closure_4;
     const tmp18 = closure_7;
   } else if (isDisabled) {
-    let tmp27Result = tmp27(arg1(dependencyMap[12]).BoostGemSlashIcon, { flexDirection: "<string:1097104770>", alignItems: "2026-04-server-boost-copy-1440p" });
+    let tmp27Result = tmp27(arg1(dependencyMap[12]).BoostGemSlashIcon, { flex: true, flexGrow: true });
   } else {
     const obj2 = { source: obj[tier] };
     const items3 = [isTierUnlocked ? tmp.progressBarMarkerInnerCircleIconUnlocked : tmp.progressBarMarkerInnerCircleIcon, ];
@@ -98,25 +98,25 @@ const tmp2 = arg1(dependencyMap[1]);
 let obj = { [BoostedGuildTiers.NONE]: 0, [BoostedGuildTiers.TIER_1]: 0.3333333333333333, [BoostedGuildTiers.TIER_2]: 0.6666666666666666, [BoostedGuildTiers.TIER_3]: 1 };
 obj = { [BoostedGuildTiers.TIER_1]: importDefault(dependencyMap[4]), [BoostedGuildTiers.TIER_2]: importDefault(dependencyMap[5]), [BoostedGuildTiers.TIER_3]: importDefault(dependencyMap[6]) };
 let obj2 = arg1(dependencyMap[7]);
-obj = { progressBarMarkerInnerCircle: {}, progressBarMarkerInnerCircleBackground: { renderMode: true, sourceName: true, sourceJson: true, sourceURL: true }, progressBarMarkerInnerCircleIcon: { aze: "<string:16777479>", azj: "<string:36295491>" } };
+obj = { progressBarMarkerInnerCircle: {}, progressBarMarkerInnerCircleBackground: { flex: "Masterpass is not enabled for this merchant.", backgroundColor: null, marginVertical: "MASTERPASS_TOKENIZE_MISSING_REQUIRED_OPTION", padding: "Missing required option for tokenize." }, progressBarMarkerInnerCircleIcon: {} };
 const tmp3 = arg1(dependencyMap[3]);
 obj.progressBarMarkerInnerCircleIconUnlocked = { tintColor: importDefault(dependencyMap[8]).colors.WHITE };
 let closure_11 = obj2.createStyles(obj);
-let closure_12 = { <string:1650568341>: 9215, <string:1655488081>: 1339904 };
+let closure_12 = { "Bool(false)": 9215, "Bool(false)": 1339904 };
 let closure_13 = { code: "function GuildBoostingMarketingProgressBarMarkerTsx1(){const{scale}=this.__closure;return{transform:[{scale:scale.get()}]};}" };
 const obj1 = { tintColor: importDefault(dependencyMap[8]).colors.WHITE };
-obj2 = { progressBarMarker: { transform: items }, progressBarMarkerBackground: { "Bool(false)": "message", "Bool(false)": 2, "Null": "work_around_pyoto_bug", "Null": "scalar" } };
+obj2 = { progressBarMarker: { transform: items }, progressBarMarkerBackground: { flex: "value", marginHorizontal: "container", marginVertical: "construct", backgroundColor: "type" } };
 const items = [{ translateX: -14 }];
-const obj6 = arg1(dependencyMap[7]);
-obj2.progressBarMarkerLabel = { color: importDefault(dependencyMap[8]).colors.MOBILE_TEXT_HEADING_PRIMARY };
+const obj3 = { 1501209603: true, 938367726: true, 1636983294: true, -1679207928: true, 140783016: true, 1387882137: true, 2063225859: 1, -725635501: 60, 1424518954: 15, -281171472: 0, color: importDefault(dependencyMap[8]).colors.MOBILE_TEXT_HEADING_PRIMARY };
+obj2.progressBarMarkerLabel = obj3;
 const items1 = [{ translateX: -7 }];
 obj2.progressBarMarkerLabelWithIcon = { transform: items1 };
 obj2.progressBarMarkerLabelLocked = { opacity: 0.4 };
-const obj4 = { "Null": 20, "Null": "relative", "Null": 10, tintColor: importDefault(dependencyMap[8]).colors.MOBILE_TEXT_HEADING_PRIMARY };
+const obj4 = { "Null": 20, "Null": "relative", lv: 10, tintColor: importDefault(dependencyMap[8]).colors.MOBILE_TEXT_HEADING_PRIMARY };
 obj2.progressBarMarkerUnlockedIcon = obj4;
-let closure_14 = obj6.createStyles(obj2);
+let closure_14 = arg1(dependencyMap[7]).createStyles(obj2);
 let closure_15 = { code: "function GuildBoostingMarketingProgressBarMarkerTsx2(){const{scale}=this.__closure;return{transform:[{scale:scale.get()}]};}" };
-const obj3 = { color: importDefault(dependencyMap[8]).colors.MOBILE_TEXT_HEADING_PRIMARY };
+const obj6 = arg1(dependencyMap[7]);
 const result = arg1(dependencyMap[18]).fileFinishedImporting("modules/guild_boosting/native/marketing_redesign/GuildBoostingMarketingProgressBarMarker.tsx");
 
 export default function ProgressBarMarker(arg0) {

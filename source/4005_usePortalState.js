@@ -1,11 +1,12 @@
 // Module ID: 4005
 // Function ID: 33258
 // Name: usePortalState
-// Dependencies: []
+// Dependencies: [0, 0]
 // Exports: usePortalState
 
 // Module 4005 (usePortalState)
-const useContext = require(dependencyMap[0]).useContext;
+import { useContext } from "__exportStarResult1";
+
 
 export const usePortalState = function usePortalState(name) {
   const tmp = useContext(require(dependencyMap[1]).PortalStateContext);

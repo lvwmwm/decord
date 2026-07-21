@@ -1,16 +1,15 @@
 // Module ID: 464
 // Function ID: 6141
 // Name: Share
-// Dependencies: [206, 489, 492, 497]
+// Dependencies: []
 
 // Module 464 (Share)
-import getLens from "getLens";
-import read from "read";
-
+let closure_3 = importDefault(dependencyMap[0]);
+let closure_4 = importDefault(dependencyMap[1]);
 const tmp2 = () => {
   class Share {
     constructor() {
-      tmp = getLens(this, Share);
+      tmp = closure_3(this, Share);
       return;
     }
   }

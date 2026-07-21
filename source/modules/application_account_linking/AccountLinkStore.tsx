@@ -1,11 +1,9 @@
-// Module ID: 15490
-// Function ID: 118239
+// Module ID: 15497
+// Function ID: 118263
 // Name: _isNativeReflectConstruct
-// Dependencies: [3489660988, 603979803, 1040187397, 2365587461, 989855746, 2516582407, 905969666, 2315255810, 0]
+// Dependencies: [3556769852, 603979803, 1040187397, 2365587461, 989855746, 2516582407, 905969666, 2432696322, 285212732]
 
-// Module 15490 (_isNativeReflectConstruct)
-import result from "result";
-
+// Module 15497 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -90,6 +88,6 @@ tmp4 = new tmp4(importDefault(dependencyMap[7]), {
     const set = new Set(flows.flows);
   }
 });
-result = result.fileFinishedImporting("modules/application_account_linking/AccountLinkStore.tsx");
+const result = arg1(dependencyMap[8]).fileFinishedImporting("modules/application_account_linking/AccountLinkStore.tsx");
 
 export default tmp4;

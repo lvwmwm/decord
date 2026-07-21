@@ -1,10 +1,10 @@
-// Module ID: 5779
-// Function ID: 49407
+// Module ID: 5781
+// Function ID: 49450
 // Name: MagnifyingGlassIcon
 // Dependencies: []
 // Exports: MagnifyingGlassIcon
 
-// Module 5779 (MagnifyingGlassIcon)
+// Module 5781 (MagnifyingGlassIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/MagnifyingGlassIcon.tsx");

@@ -1,7 +1,7 @@
 // Module ID: 576
 // Function ID: 6960
 // Name: isSymbol
-// Dependencies: [614, 615]
+// Dependencies: []
 
 // Module 576 (isSymbol)
 

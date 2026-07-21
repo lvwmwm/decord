@@ -63,7 +63,7 @@ arg5.parseDateTimeSkeleton = function parseDateTimeSkeleton(pushLiteralTextResul
                                       const rangeError = new RangeError("`e..eee` (weekday) patterns are not supported");
                                       throw rangeError;
                                     } else {
-                                      obj.weekday = [][length - 4];
+                                      obj.weekday = ["discord_protos.discord_users.v1.ChannelListSettings", "discord_protos.discord_users.v1.AppearanceSettings", "discord_protos.discord_users.v1.Theme", "discord_protos.discord_users.v1.LaunchPadMode"][length - 4];
                                     }
                                   } else if ("c" === first) {
                                     if (length < 4) {
@@ -71,7 +71,7 @@ arg5.parseDateTimeSkeleton = function parseDateTimeSkeleton(pushLiteralTextResul
                                       const rangeError1 = new RangeError("`c..ccc` (weekday) patterns are not supported");
                                       throw rangeError1;
                                     } else {
-                                      obj.weekday = [][length - 4];
+                                      obj.weekday = ["discord_protos.discord_users.v1.ChannelListSettings", "discord_protos.discord_users.v1.AppearanceSettings", "discord_protos.discord_users.v1.Theme", "discord_protos.discord_users.v1.LaunchPadMode"][length - 4];
                                     }
                                   } else if ("a" === first) {
                                     obj.hour12 = true;

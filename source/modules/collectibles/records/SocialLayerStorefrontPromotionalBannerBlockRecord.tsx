@@ -1,9 +1,9 @@
-// Module ID: 6806
-// Function ID: 53659
+// Module ID: 6812
+// Function ID: 53708
 // Name: SocialLayerStorefrontPromotionalBannerBlockRecord
 // Dependencies: []
 
-// Module 6806 (SocialLayerStorefrontPromotionalBannerBlockRecord)
+// Module 6812 (SocialLayerStorefrontPromotionalBannerBlockRecord)
 let closure_2 = importDefault(dependencyMap[0]);
 let closure_3 = importDefault(dependencyMap[1]);
 const tmp2 = () => {

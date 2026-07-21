@@ -1,9 +1,9 @@
-// Module ID: 12973
-// Function ID: 98775
+// Module ID: 12980
+// Function ID: 98798
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
-// Module 12973 (_isNativeReflectConstruct)
+// Module 12980 (_isNativeReflectConstruct)
 let Platform;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
@@ -32,18 +32,18 @@ obj = { fontSize: 10, color: importDefault(dependencyMap[11]).unsafe_rawColors.R
 obj.inputViewError = obj;
 const tmp4 = arg1(dependencyMap[9]);
 obj.inputBorder = { backgroundColor: importDefault(dependencyMap[11]).colors.TEXT_MUTED };
-const obj2 = { -1469360581: false, -322977379: false, 664181027: false, 810727571: false, 1627588040: false, color: arg1(dependencyMap[12]).DARK_PRIMARY_100_LIGHT_PRIMARY_500 };
+const obj2 = { indicatorSpace: false, indicatorSize: false, pageIndictor: false, width: false, paddingTop: false, color: arg1(dependencyMap[12]).DARK_PRIMARY_100_LIGHT_PRIMARY_500 };
 obj.inputView = obj2;
-obj.inputViewBorder = { 1367468898: "minuutti", 777097067: "{{count}} minuuttia" };
+obj.inputViewBorder = {};
 const obj1 = { backgroundColor: importDefault(dependencyMap[11]).colors.TEXT_MUTED };
 obj.inputViewBorderActive = { backgroundColor: importDefault(dependencyMap[11]).unsafe_rawColors.TRANSPARENT };
-obj.inputContainer = { 1674340718: false, -77439784: false, 1196862112: false };
+obj.inputContainer = { y: null, processOptOut: "99274532ad7fe616c031212e677b32e8", setNotificationCenterActive: "ThreadLockIcon" };
 obj.bottomContainer = { marginTop: 5 };
 const obj3 = { backgroundColor: importDefault(dependencyMap[11]).unsafe_rawColors.TRANSPARENT };
 obj.charactersLength = { alignSelf: "flex-end", fontFamily: Fonts.CODE_BOLD, color: arg1(dependencyMap[12]).DARK_PRIMARY_400_LIGHT_PRIMARY_300 };
 const obj4 = { alignSelf: "flex-end", fontFamily: Fonts.CODE_BOLD, color: arg1(dependencyMap[12]).DARK_PRIMARY_400_LIGHT_PRIMARY_300 };
 obj.closeIcon = { tintColor: importDefault(dependencyMap[11]).colors.INTERACTIVE_TEXT_DEFAULT };
-obj.clearButton = { <string:2423925279>: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001434559423702194, <string:2596769915>: 0.0005189191165251382 };
+obj.clearButton = {};
 const obj5 = { tintColor: importDefault(dependencyMap[11]).colors.INTERACTIVE_TEXT_DEFAULT };
 obj.required = { color: importDefault(dependencyMap[11]).unsafe_rawColors.RED_400 };
 let closure_16 = obj.createLegacyClassComponentStyles(obj);
@@ -294,7 +294,7 @@ const tmp5 = (PureComponent) => {
       ({ trailingButton, clearButtonVisibility, clearButtonAccessibilityLabel } = this.props);
       if (null == trailingButton) {
         if (clearButtonVisibility === constants2.ALWAYS) {
-          let obj = { text: "to", data: "r", _oneway: "isArray", justifyContent: "useRef", accessible: "keys", style: tmp.clearButton, onPress: self.handleClear };
+          let obj = { premiumType: "al", onPress: self.handleClear, style: tmp.clearButton, claimableRewards: "isArrayBuffer", isSelected: "BGYkaH" };
           if (null == clearButtonAccessibilityLabel) {
             const intl = InputView(closure_2[15]).intl;
             clearButtonAccessibilityLabel = intl.string(InputView(closure_2[15]).t.VkKicb);
@@ -474,7 +474,7 @@ const tmp5 = (PureComponent) => {
   return callback(InputView, items, items1);
 }(importAllResult.PureComponent);
 tmp5.contextType = arg1(dependencyMap[20]).ThemeContext;
-tmp5.defaultProps = { <string:876412932>: null, <string:1650720772>: null, <string:2458910724>: null, <string:1810038788>: "20", <string:2272985092>: "true", <string:1156055044>: "az", <string:499449860>: "30", <string:2253324292>: "true", <string:467009540>: "bal", <string:2991652868>: "20", <string:1697006154>: "true" };
+tmp5.defaultProps = {};
 const obj6 = { color: importDefault(dependencyMap[11]).unsafe_rawColors.RED_400 };
 const result = arg1(dependencyMap[21]).fileFinishedImporting("design/void/InputView/native/InputView.tsx");
 

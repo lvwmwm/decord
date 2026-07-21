@@ -1,10 +1,10 @@
-// Module ID: 13314
-// Function ID: 101199
+// Module ID: 13321
+// Function ID: 101222
 // Name: transformGuildMember
 // Dependencies: []
 // Exports: default
 
-// Module 13314 (transformGuildMember)
+// Module 13321 (transformGuildMember)
 const _module = require(dependencyMap[1]);
 const result = _module.fileFinishedImporting("modules/rpc/helpers/transformGuildMember.tsx");
 

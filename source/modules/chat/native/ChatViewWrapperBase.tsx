@@ -1,10 +1,10 @@
-// Module ID: 10384
-// Function ID: 80064
+// Module ID: 10390
+// Function ID: 80087
 // Name: ChatViewWrapperBase
 // Dependencies: []
 // Exports: default
 
-// Module 10384 (ChatViewWrapperBase)
+// Module 10390 (ChatViewWrapperBase)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/chat/native/ChatViewWrapperBase.tsx");

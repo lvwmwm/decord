@@ -1,9 +1,9 @@
-// Module ID: 11178
-// Function ID: 87025
+// Module ID: 11184
+// Function ID: 87048
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
-// Module 11178 (_isNativeReflectConstruct)
+// Module 11184 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -108,7 +108,7 @@ let closure_4 = importDefault(dependencyMap[2]);
 let closure_5 = importDefault(dependencyMap[3]);
 let closure_6 = importDefault(dependencyMap[4]);
 let obj = { NOT_FETCHED: 0, [0]: "NOT_FETCHED", FETCHING: 1, [1]: "FETCHING", FETCHED: 2, [2]: "FETCHED", ERROR: 3, [3]: "ERROR" };
-obj = { "Bool(false)": "Normal", "Bool(false)": true, "Bool(false)": "AbortSignal", applicationIdToGuildIds: {} };
+obj = { padding: null, enumerable: "\u{1F9BB}\u{1F3FF}", memo: true, applicationIdToGuildIds: {} };
 obj.fetchState = obj.NOT_FETCHED;
 let tmp2 = (PersistedStore) => {
   class MyGuildApplicationsStore {

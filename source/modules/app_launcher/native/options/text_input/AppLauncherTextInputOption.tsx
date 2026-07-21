@@ -1,10 +1,10 @@
-// Module ID: 11278
-// Function ID: 87790
+// Module ID: 11284
+// Function ID: 87813
 // Name: AppLauncherTextInputOption
 // Dependencies: []
 // Exports: default
 
-// Module 11278 (AppLauncherTextInputOption)
+// Module 11284 (AppLauncherTextInputOption)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 const View = arg1(dependencyMap[2]).View;
@@ -12,7 +12,7 @@ const EmojiIntention = arg1(dependencyMap[3]).EmojiIntention;
 ({ jsx: closure_7, jsxs: closure_8 } = arg1(dependencyMap[4]));
 let obj = arg1(dependencyMap[5]);
 obj = {};
-obj = { backgroundColor: importDefault(dependencyMap[6]).colors.INPUT_BACKGROUND_DEFAULT, borderRadius: importDefault(dependencyMap[6]).radii.lg };
+obj = { <string:1448895397>: "<string:1690763266>", <string:2075742804>: "<string:1244528641>", <string:3429202872>: "<string:392626178>", <string:2699866328>: "<string:1049690113>", <string:1650707557>: "<string:1410334722>", <string:2454822970>: "<string:4002742275>", <string:1001022286>: "<string:444989442>", <string:102125910>: "<string:3945988099>", backgroundColor: importDefault(dependencyMap[6]).colors.INPUT_BACKGROUND_DEFAULT, borderRadius: importDefault(dependencyMap[6]).radii.lg };
 obj.container = obj;
 const tmp2 = arg1(dependencyMap[4]);
 obj.hasError = { borderColor: importDefault(dependencyMap[6]).colors.BORDER_FEEDBACK_CRITICAL };
@@ -52,7 +52,7 @@ export default function AppLauncherTextInputOption(guildId) {
   let callback = first;
   const React = tmp2[1];
   let obj = arg1(dependencyMap[7]);
-  let closure_5 = React.useRef({ 1726238916: false, 607091733: true });
+  let closure_5 = React.useRef({ 0: -536870861, 0: -299892737 });
   const ref = React.useRef(null);
   const EmojiIntention = ref;
   let tmp5 = option.type === arg1(dependencyMap[8]).ApplicationCommandOptionType.STRING;
@@ -160,7 +160,7 @@ export default function AppLauncherTextInputOption(guildId) {
       onPress() {
           let obj = onChangeText(closure_2[16]);
           const result = obj.dismissGlobalKeyboard();
-          obj = { "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, pickerIntention: ref.CHAT, onPressEmoji: closure_9, guildId, onClose: closure_10 };
+          obj = { "Bool(false)": "postal-address-country", "Bool(false)": "password", "Bool(false)": "email", pickerIntention: ref.CHAT, onPressEmoji: closure_9, guildId, onClose: closure_10 };
           const result1 = onChangeText(closure_2[17]).openEmojiPickerActionSheet(obj);
         }
     };

@@ -1,14 +1,13 @@
 // Module ID: 427
 // Function ID: 5953
 // Name: __INTERNAL_VIEW_CONFIG
-// Dependencies: [6, 7]
+// Dependencies: []
 
 // Module 427 (__INTERNAL_VIEW_CONFIG)
-import _classCallCheck from "_classCallCheck";
-import _defineProperties from "_defineProperties";
-
 const obj = { uiViewClassName: "VirtualView", directEventTypes: { topModeChange: { registrationName: "onModeChange" } } };
-obj.validAttributes = Object.assign({ wink: null, winking_face: null }, _classCallCheck.ConditionallyIgnoredEventHandlers({ onModeChange: true }));
+const _module = require(dependencyMap[0]);
+obj.validAttributes = Object.assign({}, _module.ConditionallyIgnoredEventHandlers({ onModeChange: true }));
+const _module1 = require(dependencyMap[1]);
 
-export default _defineProperties.get("VirtualView", () => obj);
+export default _module1.get("VirtualView", () => obj);
 export const __INTERNAL_VIEW_CONFIG = obj;

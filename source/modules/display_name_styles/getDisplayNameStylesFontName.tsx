@@ -1,10 +1,10 @@
-// Module ID: 13456
-// Function ID: 102189
+// Module ID: 13463
+// Function ID: 102212
 // Name: getDisplayNameStylesFontName
 // Dependencies: []
 // Exports: default
 
-// Module 13456 (getDisplayNameStylesFontName)
+// Module 13463 (getDisplayNameStylesFontName)
 const obj = {};
 obj[arg1(dependencyMap[0]).DisplayNameFont.DEFAULT] = importDefault(dependencyMap[1]).ZEL6mz;
 obj[arg1(dependencyMap[0]).DisplayNameFont.CHERRY_BOMB] = importDefault(dependencyMap[1]).rN7cuX;

@@ -1,10 +1,10 @@
-// Module ID: 15544
-// Function ID: 118625
+// Module ID: 15551
+// Function ID: 118649
 // Name: StyleSheet
-// Dependencies: [270270464, 79429632, 37093376, 83427328, 691929088, 251133952, 1019150336, 692584448, 1019215872, 669384704, 131072, 964231168, 520093696, 721420288, 2852126736, 1224736772, 1644167184, 805306384, 905969680, 33554434, 2063597568, 31]
+// Dependencies: [270270464, 79429632, 37093376, 83427328, 692322304, 251133952, 1019609088, 692977664, 1019674624, 669777920, 131072, 964231168, 520093696, 721420288, 2852126736, 1291845636, 1711276048, 805306384, 905969680, 33554434, 2063597568, 31]
 // Exports: default
 
-// Module 15544 (StyleSheet)
+// Module 15551 (StyleSheet)
 import module_31 from "module_31";
 
 let StyleSheet;
@@ -17,7 +17,7 @@ const FamilyCenterSubPages = arg1(dependencyMap[2]).FamilyCenterSubPages;
 const tmp3 = arg1(dependencyMap[3]);
 ({ jsx: closure_11, jsxs: closure_12, Fragment: closure_13 } = arg1(dependencyMap[4]));
 let closure_14 = 28 + importDefault(dependencyMap[5]).space.PX_16;
-let closure_15 = [-0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000022209858577039073, 995124985018104000000000000000000000000000000000000000000000000000000000000000000000000];
+let closure_15 = [null, null];
 let obj = arg1(dependencyMap[6]);
 obj = {};
 obj = { backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_LOWEST };
@@ -128,7 +128,7 @@ export default function ParentalConsentWarningBanner(children) {
       const obj6 = { paddingTop: tmp2.top + 8 };
       items7[1] = obj6;
       obj5.style = items7;
-      let obj7 = { 9223372036854775807: 0.4, 9223372036854775807: 85, 9223372036854775807: "EMBEDDED_ACTIVITIES_VIDEO_DISABLED_FOR_THERMAL_STATE", style: tmp.label };
+      let obj7 = { -9223372036854775808: 0.4, 0: 85, 0: "EMBEDDED_ACTIVITIES_VIDEO_DISABLED_FOR_THERMAL_STATE", style: tmp.label };
       if (0 === tmp9) {
         const intl3 = arg1(dependencyMap[num4]).intl;
         num4 = intl3.format;

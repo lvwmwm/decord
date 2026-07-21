@@ -1,10 +1,10 @@
-// Module ID: 13502
-// Function ID: 102481
+// Module ID: 13509
+// Function ID: 102504
 // Name: PasswordlessUpsellPromoSheet
 // Dependencies: []
 // Exports: default
 
-// Module 13502 (PasswordlessUpsellPromoSheet)
+// Module 13509 (PasswordlessUpsellPromoSheet)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 const Image = arg1(dependencyMap[2]).Image;
@@ -66,6 +66,8 @@ export default function PasswordlessUpsellPromoSheet() {
   obj1.disabled = tmp5;
   const items = [callback3(callback(onRegisterSuccess[12]).Button, obj1), ];
   obj2 = {
+    key: "r",
+    onCloseCallback: "sectionIdsByBotId",
     onPress() {
       callback(onRegisterSuccess[10]).markDismissed(constants.USER_DISMISS);
       const obj = callback(onRegisterSuccess[10]);

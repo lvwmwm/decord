@@ -1,10 +1,10 @@
-// Module ID: 12084
-// Function ID: 93209
+// Module ID: 12091
+// Function ID: 93232
 // Name: fetchCustomActivityLink
 // Dependencies: []
 // Exports: getCustomActivityLinkParams, getOrFetchCustomActivityLink, getQuickLinkImage
 
-// Module 12084 (fetchCustomActivityLink)
+// Module 12091 (fetchCustomActivityLink)
 function fetchCustomActivityLink() {
   return _fetchCustomActivityLink(...arguments);
 }

@@ -1,10 +1,10 @@
-// Module ID: 5400
-// Function ID: 46008
+// Module ID: 5402
+// Function ID: 46049
 // Name: getWindowDispatchForElement
 // Dependencies: []
-// Exports: AppWindowContextProvider, getAppWindowContextValue, getCurrentlyInteractingAppContext, getWindowDispatchForEvent, useAppContext, useWindowDispatch
+// Exports: AppWindowContextProvider, getAppWindowContextValue, getCurrentlyInteractingAppContext, getWindowDispatchForEvent, useAppContext, useRenderWindow, useWindowDispatch
 
-// Module 5400 (getWindowDispatchForElement)
+// Module 5402 (getWindowDispatchForElement)
 function getWindowDispatchForElement(target) {
   const defaultView = target.ownerDocument.defaultView;
   if (null != defaultView) {
@@ -113,4 +113,7 @@ export const useAppContext = function useAppContext() {
 };
 export const useWindowDispatch = function useWindowDispatch() {
   return importAllResult.useContext(context).windowDispatch;
+};
+export const useRenderWindow = function useRenderWindow() {
+  return importAllResult.useContext(context).renderWindow;
 };

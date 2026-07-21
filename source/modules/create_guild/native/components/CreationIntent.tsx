@@ -1,10 +1,10 @@
-// Module ID: 11723
-// Function ID: 91074
+// Module ID: 11730
+// Function ID: 91097
 // Name: CreationIntent
 // Dependencies: []
 // Exports: default
 
-// Module 11723 (CreationIntent)
+// Module 11730 (CreationIntent)
 let closure_3 = importAll(dependencyMap[0]);
 ({ View: closure_4, ScrollView: closure_5 } = arg1(dependencyMap[1]));
 const tmp2 = arg1(dependencyMap[1]);
@@ -20,11 +20,11 @@ obj.contentContainer = obj;
 const tmp5 = arg1(dependencyMap[4]);
 obj.scrollContainer = { flex: 1, backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_BASE_LOWER };
 obj.headerContainer = {};
-obj.headerTitle = { person_pouting: -0.0014069081515246523, cv: -0.0001058445630777106 };
-obj.headerDescription = { 9223372036854775807: false, 9223372036854775807: false };
+obj.headerTitle = { collapsable: "absolute", preventClipping: 0 };
+obj.headerDescription = { "Bool(false)": null, "Bool(false)": null };
 const obj1 = { flex: 1, backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_BASE_LOWER };
 obj.sections = { paddingHorizontal: importDefault(dependencyMap[7]).modules.mobile.TABLE_ROW_PADDING };
-obj.skipDescription = { "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, "Bool(false)": false };
+obj.skipDescription = { <string:3246022526>: "079f1f5099b5396d01af5ed23e7bac76", <string:1764223313>: "ic_invites_disabled", <string:3679956194>: "png", <string:944643202>: true };
 let closure_13 = obj.createStyles(obj);
 let closure_14 = Math.random() < 0.5;
 const obj2 = { paddingHorizontal: importDefault(dependencyMap[7]).modules.mobile.TABLE_ROW_PADDING };

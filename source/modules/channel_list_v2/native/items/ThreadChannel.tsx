@@ -1,10 +1,10 @@
-// Module ID: 14832
-// Function ID: 111805
+// Module ID: 14839
+// Function ID: 111829
 // Name: ThreadChannel
 // Dependencies: []
 // Exports: default
 
-// Module 14832 (ThreadChannel)
+// Module 14839 (ThreadChannel)
 function ThreadChannel(channel) {
   let hasVideo;
   let isLocked;
@@ -182,9 +182,9 @@ function ThreadChannel(channel) {
   } else {
     if (selectedVoiceChannelId !== channel.threadId) {
       if (1 !== voiceStates.length) {
-        const obj10 = { "Bool(false)": "badgeSurfaceDarkMode", "Bool(false)": "<string:2604794112>", "Bool(false)": "<string:2969568378>", "Bool(false)": "<string:285212960>", "Bool(false)": "<string:26657857>" };
+        const obj10 = { "Bool(false)": "decorationStyle", "Bool(false)": "<string:3359768832>", "Bool(false)": "<string:1778386042>", "Bool(false)": "<string:285212960>", "Bool(false)": "<string:26616129>" };
         const tmp37 = importDefault(dependencyMap[29]);
-        const obj11 = { GuildRoleSubscriptionTierDesignTab: "Normal", SEND_AS_GIFT: true, ENABLE_COMMUNITY_FLOW_MODAL_KEY: "AbortSignal" };
+        const obj11 = { paddingVertical: null, position: "\u{1F9BB}\u{1F3FF}", flex: true };
         const items6 = [flag];
         obj11.channels = items6;
         const obj12 = {};
@@ -221,27 +221,27 @@ let closure_16 = arg1(dependencyMap[13]).OpenThreadAnalyticsLocations;
 ({ jsx: closure_17, jsxs: closure_18, Fragment: closure_19 } = arg1(dependencyMap[14]));
 let obj1 = arg1(dependencyMap[15]);
 let obj = {};
-obj = { -1806288029: true, 1373542737: true, -110979822: true, -1322233385: true, -109652125: true, marginVertical: tmp2.CHANNEL_MARGIN_VERTICAL, borderRadius: importDefault(dependencyMap[16]).radii.md };
+obj = { backgroundColor: true, padding: true, paddingRight: true, minHeight: true, display: true, marginVertical: tmp2.CHANNEL_MARGIN_VERTICAL, borderRadius: importDefault(dependencyMap[16]).radii.md };
 obj.container = obj;
-obj.threadRow = { height: "hidden", marginLeft: null, width: 30 };
-obj.unreadContainer = { "Null": 9, "Null": null, "Null": "\u{1F91B}\u{1F3FC}" };
+obj.threadRow = {};
+obj.unreadContainer = { -2080373617: 9, 1392510095: null, -1949266993: "\u{1F91B}\u{1F3FC}" };
 obj.spineSpacer = { width: 28 };
-obj1 = { <string:766857899>: "gr", <string:1851859053>: 0, <string:1611014994>: false, <string:1374314779>: "ADBE Vector Group", <string:4249945637>: "Group 1", <string:4185285235>: 1, borderRadius: importDefault(dependencyMap[16]).radii.xs, backgroundColor: importDefault(dependencyMap[16]).colors.INTERACTIVE_TEXT_ACTIVE };
+obj1 = { 0: "gr", 0: 0, 9223372036854775807: false, 0: "ADBE Vector Group", 0: "Group 1", 0: 1, borderRadius: importDefault(dependencyMap[16]).radii.xs, backgroundColor: importDefault(dependencyMap[16]).colors.INTERACTIVE_TEXT_ACTIVE };
 obj.unreadIcon = obj1;
-const obj2 = { accessibilityRole: "4.8.0", withSpring: null, "Null": 60, "Null": 3, backgroundColor: importDefault(dependencyMap[16]).colors.SPINE_DEFAULT };
-obj.threadLineSegment = obj2;
+const tmp3 = arg1(dependencyMap[14]);
+obj.threadLineSegment = { backgroundColor: importDefault(dependencyMap[16]).colors.SPINE_DEFAULT };
 let closure_20 = obj1.createStyles(obj);
 let closure_21 = importAllResult.memo((arg0) => {
   let color;
   let fontScale;
   ({ color, fontScale } = arg0);
-  let obj = {};
-  obj = { <string:223543300>: 60, <string:1762021126>: 3, top: getScaledChannelRowHeight(fontScale) / 2 - 16 + 2 };
+  let obj = { bhk: "<string:2236743682>", bic: "<string:1941427526>" };
+  obj = { top: getScaledChannelRowHeight(fontScale) / 2 - 16 + 2 };
   obj.style = obj;
   obj.children = callback(arg1(dependencyMap[17]).Path, { fill: color, d: "M11 16C11.5523 16 12 15.5523 12 15C12 14.4477 11.5523 14 11 14H8C2.47715 14 2 8.52285 2 3V0H0V3H0.00542736C0 9.5 1.49449 16 8 16H11Z" });
   return callback(importDefault(dependencyMap[17]), obj);
 });
-const tmp3 = arg1(dependencyMap[14]);
+const obj2 = { backgroundColor: importDefault(dependencyMap[16]).colors.SPINE_DEFAULT };
 const result = arg1(dependencyMap[31]).fileFinishedImporting("modules/channel_list_v2/native/items/ThreadChannel.tsx");
 
 export default function ConnectedThreadChannel(threadId) {

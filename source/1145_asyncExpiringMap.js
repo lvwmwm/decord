@@ -1,7 +1,7 @@
 // Module ID: 1145
 // Function ID: 13056
 // Name: asyncExpiringMap
-// Dependencies: [22]
+// Dependencies: []
 // Exports: addTimeToInitialDisplayFallback, getTimeToInitialDisplayFallback
 
 // Module 1145 (asyncExpiringMap)
@@ -60,7 +60,7 @@ if (!fn) {
     return _Promise;
   };
 }
-const asyncExpiringMap = new require("apply").AsyncExpiringMap({ ttl: 60000 });
+const asyncExpiringMap = new require(dependencyMap[0]).AsyncExpiringMap({ ttl: 60000 });
 
 export const addTimeToInitialDisplayFallback = function addTimeToInitialDisplayFallback(spanId, newScreenTimeToDisplay) {
   const result = asyncExpiringMap.set(spanId, newScreenTimeToDisplay);

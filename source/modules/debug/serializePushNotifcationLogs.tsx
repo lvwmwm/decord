@@ -1,15 +1,14 @@
-// Module ID: 10308
-// Function ID: 79596
+// Module ID: 10314
+// Function ID: 79615
 // Name: serializePushNotificationLogs
-// Dependencies: [131072, 519045120, 31]
+// Dependencies: []
 // Exports: default
 
-// Module 10308 (serializePushNotificationLogs)
-import module_31 from "module_31";
-
+// Module 10314 (serializePushNotificationLogs)
 const _module = require(dependencyMap[0]);
 ({ DEVICE_TOKEN: closure_2, DEVICE_VOIP_TOKEN: closure_3 } = _module);
-const result = module_31.fileFinishedImporting("modules/debug/serializePushNotifcationLogs.tsx");
+const _module1 = require(dependencyMap[2]);
+const result = _module1.fileFinishedImporting("modules/debug/serializePushNotifcationLogs.tsx");
 
 export default function serializePushNotificationLogs(arr) {
   const require = arg1;

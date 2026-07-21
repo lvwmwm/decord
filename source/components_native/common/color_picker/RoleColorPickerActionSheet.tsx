@@ -1,10 +1,10 @@
-// Module ID: 14687
-// Function ID: 110801
+// Module ID: 14694
+// Function ID: 110825
 // Name: items
 // Dependencies: []
 // Exports: default
 
-// Module 14687 (items)
+// Module 14694 (items)
 let ROLE_COLORS;
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
@@ -16,7 +16,7 @@ const tmp3 = arg1(dependencyMap[3]);
 const items = [...require("module_0"), ...require("module_10"), ...require("module_5"), ...require("module_15")];
 let obj = arg1(dependencyMap[5]);
 obj = {};
-obj = { "Bool(false)": "<string:979436081>", "Bool(false)": "<string:1090633553>", "Bool(false)": "space-between", "Bool(false)": "<string:1900370513>", paddingVertical: importDefault(dependencyMap[6]).space.PX_16 };
+obj = { paddingVertical: importDefault(dependencyMap[6]).space.PX_16 };
 obj.body = obj;
 const tmp4 = arg1(dependencyMap[4]);
 obj.colorWrap = { marginBottom: importDefault(dependencyMap[6]).space.PX_16 };

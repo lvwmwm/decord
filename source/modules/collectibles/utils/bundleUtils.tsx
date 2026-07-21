@@ -1,12 +1,10 @@
-// Module ID: 8684
-// Function ID: 68819
+// Module ID: 8688
+// Function ID: 68831
 // Name: extractBundleItemsFromArray
 // Dependencies: [0, 0, 0]
 // Exports: bundleContainsNameplates, isValidCollectiblesBundle, isValidCollectiblesBundleItems
 
-// Module 8684 (extractBundleItemsFromArray)
-import result from "result";
-
+// Module 8688 (extractBundleItemsFromArray)
 function extractBundleItemsFromArray(items) {
   const itemsSortingHat = new require(dependencyMap[0]).ItemsSortingHat(items);
   return { firstProfileEffect: itemsSortingHat.firstProfileEffect, firstAvatarDecoration: itemsSortingHat.firstAvatarDecoration, firstNameplate: itemsSortingHat.firstNameplate };
@@ -26,7 +24,7 @@ function isValidBundleItems(arg0) {
   }
   return tmp;
 }
-result = result.fileFinishedImporting("modules/collectibles/utils/bundleUtils.tsx");
+const result = require("__exportStarResult1").fileFinishedImporting("modules/collectibles/utils/bundleUtils.tsx");
 
 export const isValidCollectiblesBundle = function isValidCollectiblesBundle(items) {
   return isValidBundleItems(extractBundleItems(items));

@@ -1,9 +1,9 @@
-// Module ID: 5686
-// Function ID: 48922
+// Module ID: 5688
+// Function ID: 48965
 // Name: createHandoffTokenWithLoadingModal
 // Dependencies: []
 
-// Module 5686 (createHandoffTokenWithLoadingModal)
+// Module 5688 (createHandoffTokenWithLoadingModal)
 function createHandoffTokenWithLoadingModal(arg0) {
   ({ nonce: closure_0, fingerprint: closure_1, handoffSource: closure_2 } = arg0);
   return new Promise((onResolved) => {

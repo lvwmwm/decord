@@ -1,10 +1,10 @@
-// Module ID: 6627
-// Function ID: 50872
+// Module ID: 6633
+// Function ID: 50921
 // Name: _fetchUserEntitlements
 // Dependencies: []
 // Exports: fetchGiftableEntitlements, fetchUserEntitlements, fetchUserEntitlementsForApplication
 
-// Module 6627 (_fetchUserEntitlements)
+// Module 6633 (_fetchUserEntitlements)
 async function _fetchUserEntitlements(arg0, arg1) {
   const fn = function*(withSku) {
     let flag = withSku.withSku;

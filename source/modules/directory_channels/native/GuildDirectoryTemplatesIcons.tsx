@@ -1,9 +1,9 @@
-// Module ID: 10040
-// Function ID: 77613
+// Module ID: 10046
+// Function ID: 77631
 // Name: GUILD_TEMPLATE_ICONS
 // Dependencies: []
 
-// Module 10040 (GUILD_TEMPLATE_ICONS)
+// Module 10046 (GUILD_TEMPLATE_ICONS)
 const _module = require(dependencyMap[7]);
 const result = _module.fileFinishedImporting("modules/directory_channels/native/GuildDirectoryTemplatesIcons.tsx");
 

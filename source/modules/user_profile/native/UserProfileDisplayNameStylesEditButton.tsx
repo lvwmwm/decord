@@ -1,10 +1,10 @@
-// Module ID: 13455
-// Function ID: 102183
+// Module ID: 13462
+// Function ID: 102206
 // Name: UserProfileDisplayNameStylesEditButton
 // Dependencies: []
 // Exports: default
 
-// Module 13455 (UserProfileDisplayNameStylesEditButton)
+// Module 13462 (UserProfileDisplayNameStylesEditButton)
 let closure_3 = importDefault(dependencyMap[0]);
 ({ useCallback: closure_4, useMemo: closure_5 } = arg1(dependencyMap[1]));
 const View = arg1(dependencyMap[2]).View;
@@ -14,7 +14,7 @@ const ContentDismissActionType = arg1(dependencyMap[4]).ContentDismissActionType
 const jsx = arg1(dependencyMap[5]).jsx;
 let obj = arg1(dependencyMap[6]);
 obj = {};
-obj = { st: "<string:1090519624>", stickyHeadersNotSupportedForHorizontal: "2026-04-social-layer-storefront-mobile-purchasing", alignSelf: "<string:3628267361>", margin: "<string:2197815725>", descriptionEllipsis: "<string:1375731975>", getChatInputMinHeight: "<string:2583738129>", REVIEW_REQUEST_DEFERRED: "<string:1345143057>", borderRadius: importDefault(dependencyMap[7]).radii.xs, backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_MOD_MUTED };
+obj = { "Bool(false)": 109907, "Bool(false)": 67503, "Bool(false)": -1699303086, "Bool(false)": 1564545433, "Bool(false)": 1912603216, "Bool(false)": 24, "Bool(false)": 24, borderRadius: importDefault(dependencyMap[7]).radii.xs, backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_MOD_MUTED };
 obj.ggContainer = obj;
 const tmp3 = arg1(dependencyMap[3]);
 obj.noneIcon = { tintColor: importDefault(dependencyMap[7]).colors.TEXT_SUBTLE };
@@ -98,7 +98,7 @@ export default function UserProfileDisplayNameStylesEditButton(user) {
       let tmp9 = callback(user(isTryItOut[19]).Icon, obj);
     } else {
       obj = { style: callback.ggContainer };
-      obj = { "Null": "display", "Null": false, height: 600, paddingTop: 16, alignItems: 20, paddingHorizontal: "experimental/heading-sm/bold", userId: user.id, guildId, pendingDisplayNameStyles: tmp9Result };
+      obj = { userId: user.id, guildId, pendingDisplayNameStyles: tmp9Result };
       obj.children = callback(guildId(isTryItOut[21]), obj);
       tmp9 = callback(tmp9Result, obj);
     }

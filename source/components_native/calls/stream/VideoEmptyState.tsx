@@ -1,10 +1,10 @@
-// Module ID: 10550
-// Function ID: 82432
+// Module ID: 10556
+// Function ID: 82455
 // Name: VideoEmptyState
 // Dependencies: []
 // Exports: default
 
-// Module 10550 (VideoEmptyState)
+// Module 10556 (VideoEmptyState)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 let closure_4 = importDefault(dependencyMap[2]);
@@ -14,10 +14,10 @@ let obj1 = arg1(dependencyMap[5]);
 obj = {};
 obj = { backgroundColor: importDefault(dependencyMap[6]).unsafe_rawColors.PRIMARY_700 };
 obj.container = obj;
-obj.placeholderImage = { 2018633569: null, 1394172320: null, -730470413: 0 };
-obj1 = { zIndex: true, position: true, bottom: true, overflow: true, left: true, color: importDefault(dependencyMap[6]).unsafe_rawColors.WHITE, fontFamily: arg1(dependencyMap[3]).Fonts.PRIMARY_SEMIBOLD };
+obj.placeholderImage = { <string:1869882451>: "sh", <string:1652330907>: 0, <string:3109296615>: false };
+obj1 = { "Null": -150994342, "Null": 218104546, "Null": 11034538699124057000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, "Null": -0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003327628450259292, "Null": 16126800203139674000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, color: importDefault(dependencyMap[6]).unsafe_rawColors.WHITE, fontFamily: arg1(dependencyMap[3]).Fonts.PRIMARY_SEMIBOLD };
 obj.placeholderText = obj1;
-obj.buttonWrapper = { "Null": "center", "Null": "center" };
+obj.buttonWrapper = { "Bool(true)": "center", "Bool(true)": "center" };
 const tmp3 = arg1(dependencyMap[4]);
 obj.buttonPill = { borderRadius: importDefault(dependencyMap[6]).radii.round };
 let closure_9 = obj1.createStyles(obj);
@@ -33,7 +33,7 @@ export default function VideoEmptyState(arg0) {
   let type;
   ({ type, avError, removeSplashImage, stream } = arg0);
   const arg1 = stream;
-  let obj = { 1394172320: null, -730470413: "LOCAL_PAYMENT_START_PAYMENT_MISSING_REQUIRED_OPTION", -28064864: "Missing required option for startPayment.", 1635788546: null, -73374951: "LOCAL_PAYMENT_START_PAYMENT_DEFERRED_PAYMENT_FAILED", 39407964: "LocalPayment startPayment deferred payment failed." };
+  let obj = { has: true, fill: true, cursor: true, borderRadius: true, style: true, value: true };
   ({ style, removeCloseButton } = arg0);
   Object.setPrototypeOf(null);
   const merged = Object.assign(arg0, obj);
@@ -106,7 +106,7 @@ export default function VideoEmptyState(arg0) {
   const items5 = [tmp6Result, , ];
   let tmp34 = null != errorCode;
   if (tmp34) {
-    const obj6 = {};
+    const obj6 = { "Bool(true)": true, "Bool(true)": true, "Bool(true)": true };
     const intl3 = arg1(dependencyMap[9]).intl;
     obj7 = { errorCode };
     obj6.children = intl3.formatToPlainString(arg1(dependencyMap[9]).t.ejOT95, obj7);

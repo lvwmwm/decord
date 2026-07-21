@@ -1,10 +1,10 @@
-// Module ID: 10759
-// Function ID: 83635
+// Module ID: 10765
+// Function ID: 83658
 // Name: getParticipantTitle
 // Dependencies: []
 // Exports: default
 
-// Module 10759 (getParticipantTitle)
+// Module 10765 (getParticipantTitle)
 const ParticipantTypes = require(dependencyMap[0]).ParticipantTypes;
 const _module = require(dependencyMap[4]);
 const result = _module.fileFinishedImporting("modules/video_calls/getParticipantTitle.tsx");

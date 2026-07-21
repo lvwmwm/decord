@@ -1,10 +1,10 @@
-// Module ID: 4304
-// Function ID: 37684
+// Module ID: 4308
+// Function ID: 37732
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 // Exports: channelTypeString, computeSummarizedVoiceUsers, denyChannelAccessForNonPaidUsers, getBitrateLimit, getChannelAnalyticsPage, getChannelLinkToCopy, getMentionIconType, getPrivateChannelUserTagsString, isAnyVoiceStateStage, isChannelFull, permissionOverwriteForRole, permissionOverwriteForUser, permissionOverwritesForAnnouncement, permissionOverwritesForRoles, previousTextChannelRouteForGuild
 
-// Module 4304 (_createForOfIteratorHelperLoose)
+// Module 4308 (_createForOfIteratorHelperLoose)
 function _createForOfIteratorHelperLoose(@@iterator) {
   let require = Symbol_iterator;
   @@iterator = "undefined" !== typeof Symbol;

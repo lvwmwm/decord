@@ -244,7 +244,7 @@ export const enrichCombinedProfileWithEventContext = function enrichCombinedProf
           str = "";
         }
         const _Object = Object;
-        let obj = { event_id: profile_id, runtime: { soundsharing: null, deaf_person: null } };
+        let obj = { event_id: profile_id, runtime: { "Bool(false)": 0.00000000000000000000000000000021085317840568576, "Bool(false)": -0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003180443702627252 } };
         let _Date = Date;
         const merged = Object.assign({}, value);
         if (contexts.start_timestamp) {
@@ -438,7 +438,7 @@ export const enrichCombinedProfileWithEventContext = function enrichCombinedProf
 };
 export { enrichAndroidProfileWithEventContext };
 export const createHermesProfilingEvent = function createHermesProfilingEvent(result1) {
-  const obj = { -125290615: null, 1465054835: null, profile: result1, transaction: { active_thread_id: result1.active_thread_id } };
+  const obj = { "Null": null, "Null": null, profile: result1, transaction: { active_thread_id: result1.active_thread_id } };
   return obj;
 };
 export const addProfilesToEnvelope = function addProfilesToEnvelope(arg0, arg1) {

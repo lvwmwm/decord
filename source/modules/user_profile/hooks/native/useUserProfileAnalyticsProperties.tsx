@@ -1,10 +1,10 @@
-// Module ID: 8484
-// Function ID: 67754
+// Module ID: 8488
+// Function ID: 67766
 // Name: useUserProfileAnalyticsProperties
 // Dependencies: []
 // Exports: default
 
-// Module 8484 (useUserProfileAnalyticsProperties)
+// Module 8488 (useUserProfileAnalyticsProperties)
 let closure_0 = importAll(dependencyMap[0]);
 const UserProfileAnalyticsTypes = arg1(dependencyMap[1]).UserProfileAnalyticsTypes;
 const result = arg1(dependencyMap[2]).fileFinishedImporting("modules/user_profile/hooks/native/useUserProfileAnalyticsProperties.tsx");

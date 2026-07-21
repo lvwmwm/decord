@@ -1,10 +1,10 @@
-// Module ID: 5873
-// Function ID: 49683
+// Module ID: 5875
+// Function ID: 49726
 // Name: AvatarMallowExample
 // Dependencies: []
 // Exports: AvatarMallowExample
 
-// Module 5873 (AvatarMallowExample)
+// Module 5875 (AvatarMallowExample)
 const jsx = require(dependencyMap[0]).jsx;
 const _module = require(dependencyMap[3]);
 const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/AvatarMallowExample.native.tsx");

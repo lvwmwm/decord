@@ -1,9 +1,9 @@
-// Module ID: 14728
-// Function ID: 111091
+// Module ID: 14735
+// Function ID: 111115
 // Name: getMediaIcon
 // Dependencies: []
 
-// Module 14728 (getMediaIcon)
+// Module 14735 (getMediaIcon)
 function getMediaIcon(activeEvent) {
   if (activeEvent.activeEvent) {
     let obj = { icon: arg1(dependencyMap[7]).CalendarIcon, source: importDefault(dependencyMap[8]) };
@@ -71,10 +71,10 @@ let obj1 = arg1(dependencyMap[2]);
 let obj = {};
 obj = { borderRadius: importDefault(dependencyMap[3]).radii.md, backgroundColor: importDefault(dependencyMap[3]).colors.BACKGROUND_BASE_LOWEST };
 obj.activityWrapper = obj;
-obj1 = { "Null": "Array", "Null": "mousemoveCb", borderRadius: importDefault(dependencyMap[3]).radii.sm, alignItems: "batchUpdates", backgroundColor: importDefault(dependencyMap[3]).colors.BACKGROUND_MOD_STRONG };
+obj1 = { "Null": "/assets/images/native", "Null": 192.33333333333334, "Null": 416, "Null": null, borderRadius: importDefault(dependencyMap[3]).radii.sm, backgroundColor: importDefault(dependencyMap[3]).colors.BACKGROUND_MOD_STRONG };
 obj.activityIconWrapper = obj1;
 obj.activityIconWrapperActive = { backgroundColor: importDefault(dependencyMap[3]).colors.CONTROL_CONNECTED_BACKGROUND_DEFAULT };
-const obj3 = { aze: "version=$(node -p \"require('./package.json').version\") && sed -i '' \"s/#define NITRO_VERSION \\\".*\\\"/#define NITRO_VERSION \\\"$version\\\"/\" ./cpp/utils/NitroDefines.hpp", azj: "bun run write-native-version", borderRadius: importDefault(dependencyMap[3]).radii.none };
+const obj3 = { bhk: "version=$(node -p \"require('./package.json').version\") && sed -i '' \"s/#define NITRO_VERSION \\\".*\\\"/#define NITRO_VERSION \\\"$version\\\"/\" ./cpp/utils/NitroDefines.hpp", bic: "bun run write-native-version", borderRadius: importDefault(dependencyMap[3]).radii.none };
 obj.activityIcon = obj3;
 let closure_5 = obj1.createStyles(obj);
 const memoResult = importAllResult.memo((arg0) => {

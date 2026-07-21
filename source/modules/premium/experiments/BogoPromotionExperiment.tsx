@@ -1,12 +1,12 @@
-// Module ID: 12268
-// Function ID: 94093
+// Module ID: 12275
+// Function ID: 94116
 // Name: apexExperiment
 // Dependencies: []
 // Exports: getBogoPromotionGateEnabled, useBogoPromotionGateEnabled
 
-// Module 12268 (apexExperiment)
+// Module 12275 (apexExperiment)
 const _module = require(dependencyMap[0]);
-const obj = { -1269606814: null, -1845285747: null, 1383489935: null, variations: { [1]: true } };
+const obj = { 9223372036854775807: null, 0: null, 9223372036854775807: null, variations: { [1]: true } };
 const apexExperiment = _module.createApexExperiment(obj);
 const _module1 = require(dependencyMap[1]);
 const result = _module1.fileFinishedImporting("modules/premium/experiments/BogoPromotionExperiment.tsx");

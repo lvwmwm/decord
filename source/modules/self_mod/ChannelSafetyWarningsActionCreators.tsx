@@ -1,10 +1,10 @@
-// Module ID: 10117
-// Function ID: 78334
+// Module ID: 10123
+// Function ID: 78352
 // Name: dismissChannelSafetyWarnings
 // Dependencies: []
 // Exports: acknowledgeChannelSafetyWarningTooltip, clearChannelSafetyWarnings, dismissChannelSafetyWarnings, markAsStrangerDanger, reportFalsePositive, setChannelSafetyWarningFeedback
 
-// Module 10117 (dismissChannelSafetyWarnings)
+// Module 10123 (dismissChannelSafetyWarnings)
 const SafetyWarningTypes = require(dependencyMap[0]).SafetyWarningTypes;
 const Endpoints = require(dependencyMap[1]).Endpoints;
 const _module = require(dependencyMap[4]);

@@ -1,10 +1,10 @@
-// Module ID: 7809
-// Function ID: 62320
+// Module ID: 7813
+// Function ID: 62332
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 // Exports: getAssetIds, getAssetImage
 
-// Module 7809 (_createForOfIteratorHelperLoose)
+// Module 7813 (_createForOfIteratorHelperLoose)
 let PlatformTypes;
 function _createForOfIteratorHelperLoose(@@iterator) {
   let arg1 = Symbol_iterator;
@@ -90,7 +90,7 @@ function updateAssets(arg0) {
 }
 async function _updateAssets(applicationId, arg1) {
   const HTTP = callback(closure_2[6]).HTTP;
-  let obj = { CONVERSATIONS: null, replace: null, push: null, url: closure_6.APPLICATION_ASSETS(applicationId) };
+  let obj = { lc: "ERROR", type: "ERROR", end: "NOT_RESPONDER", url: closure_6.APPLICATION_ASSETS(applicationId) };
   obj = { type: "APPLICATION_ASSETS_UPDATE", applicationId, assets: yield HTTP.get(obj).body };
   callback2(closure_2[7]).dispatch(obj);
   return applicationAssets.getApplicationAssets(applicationId);

@@ -1,10 +1,10 @@
-// Module ID: 6721
-// Function ID: 52339
+// Module ID: 6727
+// Function ID: 52388
 // Name: getSortValueForMember
 // Dependencies: []
 // Exports: getSortValueForMember
 
-// Module 6721 (getSortValueForMember)
+// Module 6727 (getSortValueForMember)
 const _module = require(dependencyMap[2]);
 const result = _module.fileFinishedImporting("modules/guild_mod_dash_member_safety/SortUtils.tsx");
 

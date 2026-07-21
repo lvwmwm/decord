@@ -1,10 +1,10 @@
-// Module ID: 9654
-// Function ID: 75212
+// Module ID: 9659
+// Function ID: 75229
 // Name: isSpecialMediaGridNode
 // Dependencies: []
 // Exports: isAttachFilesNode, isMediaCameraNode, isViewAllPhotosNode
 
-// Module 9654 (isSpecialMediaGridNode)
+// Module 9659 (isSpecialMediaGridNode)
 let Pressable;
 function isSpecialMediaGridNode(type) {
   let hasItem = "type" in type;
@@ -76,7 +76,9 @@ function NewCaption(arg0) {
   let obj = { style: items };
   const items = [tmp.labelContainer, style];
   obj = { source: importDefault(dependencyMap[10]), style: tmp.icon };
-  const items1 = [callback(arg1(dependencyMap[9]).Icon, obj), callback(arg1(dependencyMap[11]).Text, { style: textStyle, children: label })];
+  const items1 = [callback(arg1(dependencyMap[9]).Icon, obj), ];
+  obj = { MAX_DICE_COUNT: false, onIndexChange: false, TEST_PSEUDOMAP: false, style: textStyle, children: label };
+  items1[1] = callback(arg1(dependencyMap[11]).Text, obj);
   obj.children = items1;
   return callback2(closure_4, obj);
 }
@@ -193,7 +195,7 @@ function MediaKeyboardImage(draftType) {
       items3[1] = imageDisabled;
       items3[2] = useLayoutStyle(index, numItemsPerRow, totalNumItems);
       obj2.style = items3;
-      let obj4 = {};
+      let obj4 = { 9223372036854775807: 1124139009, -9223372036854775808: 152976 };
       const items4 = [tmp.image, ];
       const obj5 = { height: size, width: size };
       items4[1] = obj5;
@@ -273,7 +275,7 @@ function MediaKeyboardSpecialButton(arg0) {
     const obj3 = sharedValue(pressedBackgroundColor[5]);
     const Easing = sharedValue(pressedBackgroundColor[5]).Easing;
     obj.easing = Easing.out(sharedValue(pressedBackgroundColor[5]).Easing.quad);
-    obj.backgroundColor = obj2.withTiming(sharedValue(pressedBackgroundColor[5]).interpolateColor(sharedValue.get(), [null, null], items), obj);
+    obj.backgroundColor = obj2.withTiming(sharedValue(pressedBackgroundColor[5]).interpolateColor(sharedValue.get(), ["Text", "lc"], items), obj);
     return obj;
   };
   obj = { withTiming: arg1(dependencyMap[20]).withTiming, interpolateColor: arg1(dependencyMap[5]).interpolateColor, pressed: sharedValue, backgroundColor, pressedBackgroundColor, Easing: arg1(dependencyMap[5]).Easing };
@@ -316,10 +318,10 @@ const tmp3 = arg1(dependencyMap[3]);
 const tmp4 = arg1(dependencyMap[4]);
 let closure_11 = importDefault(dependencyMap[5]).createAnimatedComponent(Pressable);
 let obj2 = arg1(dependencyMap[6]);
-let obj = { container: { "Null": true, "Null": true, "Null": true } };
+let obj = { container: { ./lib/deferred: true, ./lib/once: true, ./lib/promise-or-callback: true } };
 obj = { backgroundColor: importDefault(dependencyMap[7]).colors.MOBILE_KEYBOARD_PANEL_BACKGROUND };
 obj.image = obj;
-const obj1 = { overflow: "LightSpeedOutLeft", padding: null, paddingRight: 0.3, borderRadius: importDefault(dependencyMap[7]).radii.xs };
+const obj1 = { <string:3426243031>: "LightSpeedOutLeft", <string:1196532321>: null, <string:4190462940>: 0.3, borderRadius: importDefault(dependencyMap[7]).radii.xs };
 obj.imageContainer = obj1;
 obj2 = {};
 let obj7 = arg1(dependencyMap[8]);
@@ -327,12 +329,12 @@ obj2.backgroundColor = obj7.hexWithOpacity(importDefault(dependencyMap[7]).unsaf
 obj2.borderRadius = importDefault(dependencyMap[7]).radii.xs;
 obj.labelContainer = obj2;
 obj.mediaKeyboardItemLabelContainer = { right: 10 };
-const obj3 = { "Bool(false)": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002932157951879324, "Bool(false)": 15185436917421055000000000000000000000000000000000000000000000000000000000000000000, "Bool(false)": -1277337789659809300000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, "Bool(false)": 255, tintColor: importDefault(dependencyMap[7]).colors.WHITE };
-obj.icon = obj3;
-const obj4 = { aze: null, azj: null, color: importDefault(dependencyMap[7]).colors.BACKGROUND_BRAND };
-obj.checkIcon = obj4;
-const obj5 = { ti: null, tk: "header", tl: "heading-xl/bold", tn: "mobile-text-heading-primary", tr: null, ts: "header", tt: "heading-md/semibold", ug: "mobile-text-heading-primary", uk: "header", ur: 48, borderRadius: importDefault(dependencyMap[7]).radii.round, backgroundColor: importDefault(dependencyMap[7]).colors.WHITE };
 const importDefaultResult = importDefault(dependencyMap[5]);
+obj.icon = { tintColor: importDefault(dependencyMap[7]).colors.WHITE };
+const obj4 = { bhk: "Array", bic: "isPrivate", color: importDefault(dependencyMap[7]).colors.BACKGROUND_BRAND };
+obj.checkIcon = obj4;
+const obj5 = { "Bool(false)": null, "Bool(false)": "header", "Bool(false)": "heading-xl/bold", "Bool(false)": "mobile-text-heading-primary", "Bool(false)": null, "Bool(false)": "header", "Bool(false)": "heading-md/semibold", "Bool(false)": "mobile-text-heading-primary", "Bool(false)": null, "Bool(false)": 16, borderRadius: importDefault(dependencyMap[7]).radii.round, backgroundColor: importDefault(dependencyMap[7]).colors.WHITE };
+const obj3 = { tintColor: importDefault(dependencyMap[7]).colors.WHITE };
 obj5.borderColor = arg1(dependencyMap[8]).hexWithOpacity(importDefault(dependencyMap[7]).unsafe_rawColors.BLACK, 0.1);
 obj.checkIconContainer = obj5;
 const obj6 = {};
@@ -341,7 +343,7 @@ obj6["borderRadius"] = importDefault(dependencyMap[7]).radii.xs;
 const obj12 = arg1(dependencyMap[8]);
 obj6["backgroundColor"] = arg1(dependencyMap[8]).hexWithOpacity(importDefault(dependencyMap[7]).unsafe_rawColors.BLACK, 0.3);
 obj.selectedOverlay = obj6;
-obj.specialButton = { <string:1677983057>: 16, <string:2700826282>: 16, <string:1637490001>: null, <string:4135867346>: "hidden" };
+obj.specialButton = { "Bool(false)": 16, "Bool(false)": 16, "Bool(false)": null, "Bool(false)": "hidden" };
 obj.disabled = { opacity: 0.4 };
 obj.imageDisabled = { opacity: 0.2 };
 let closure_12 = obj2.createStyles(obj);

@@ -1,10 +1,10 @@
-// Module ID: 9677
-// Function ID: 75330
+// Module ID: 9682
+// Function ID: 75347
 // Name: useShouldShowGiftingPromotionDeco
 // Dependencies: []
 // Exports: default
 
-// Module 9677 (useShouldShowGiftingPromotionDeco)
+// Module 9682 (useShouldShowGiftingPromotionDeco)
 const PremiumTypes = require(dependencyMap[0]).PremiumTypes;
 const _module = require(dependencyMap[2]);
 const result = _module.fileFinishedImporting("modules/premium/gifting/native/hooks/useShouldShowGiftingPromotionDeco.tsx");

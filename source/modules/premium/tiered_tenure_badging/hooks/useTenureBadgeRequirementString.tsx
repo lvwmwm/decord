@@ -1,10 +1,10 @@
-// Module ID: 8545
-// Function ID: 67939
+// Module ID: 8549
+// Function ID: 67951
 // Name: getTenureBadgeRequirementString
 // Dependencies: []
 // Exports: useTenureBadgeRequirementString
 
-// Module 8545 (getTenureBadgeRequirementString)
+// Module 8549 (getTenureBadgeRequirementString)
 function getTenureBadgeRequirementString(id, tenureReqNumMonths) {
   if (TieredTenureBadge.PREMIUM_TENURE_1_MONTH !== id) {
     if (TieredTenureBadge.PREMIUM_TENURE_3_MONTH !== id) {

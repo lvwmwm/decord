@@ -1,10 +1,10 @@
-// Module ID: 12758
-// Function ID: 97832
+// Module ID: 12765
+// Function ID: 97855
 // Name: UserCodeInput
 // Dependencies: []
 // Exports: UserCodeInput
 
-// Module 12758 (UserCodeInput)
+// Module 12765 (UserCodeInput)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 const View = arg1(dependencyMap[2]).View;
@@ -37,7 +37,7 @@ export const UserCodeInput = function UserCodeInput(prefilledUserCode) {
   obj = {};
   obj = { style: importDefault(dependencyMap[7]).innerContent };
   ({ manualSubmit, error, submitting } = userCodeSubmit);
-  const obj1 = { INTEGRATION_CREATE: 182714370, ConstraintReasonCode: 1091633154, style: tmp.text };
+  const obj1 = { style: tmp.text };
   const intl = callback(dependencyMap[9]).intl;
   obj1.children = intl.string(callback(dependencyMap[9]).t.KYPNUv);
   const items = [callback3(callback(dependencyMap[8]).Text, obj1), ];

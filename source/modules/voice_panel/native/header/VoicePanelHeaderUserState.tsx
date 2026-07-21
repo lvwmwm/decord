@@ -1,9 +1,9 @@
-// Module ID: 15652
-// Function ID: 119602
+// Module ID: 15659
+// Function ID: 119626
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 
-// Module 15652 (_createForOfIteratorHelperLoose)
+// Module 15659 (_createForOfIteratorHelperLoose)
 function _createForOfIteratorHelperLoose(@@iterator) {
   let arg1 = Symbol_iterator;
   @@iterator = "undefined" !== typeof Symbol;
@@ -155,12 +155,12 @@ let closure_6 = importDefault(dependencyMap[3]).createAnimatedComponent(arg1(dep
 let closure_7 = { duration: 100 };
 let obj2 = arg1(dependencyMap[5]);
 let obj = {};
-obj = { alignSelf: -4, flexDirection: 1514494546, gap: -1659219643, alignItems: 27479874, justifyContent: 27479808, borderRadius: importDefault(dependencyMap[6]).radii.round };
+obj = { position: -4, top: -1924821678, left: 373772613, right: 27446850, bottom: 27446784, borderRadius: importDefault(dependencyMap[6]).radii.round };
 obj.container = obj;
 obj.iconContainer = { flexDirection: "row" };
 const importDefaultResult = importDefault(dependencyMap[3]);
 obj.floatingIconWrapper = { borderRadius: importDefault(dependencyMap[6]).radii.round };
-obj2 = { aze: "version=$(node -p \"require('./package.json').version\") && sed -i '' \"s/#define NITRO_VERSION \\\".*\\\"/#define NITRO_VERSION \\\"$version\\\"/\" ./cpp/utils/NitroDefines.hpp", azj: "bun run write-native-version", tintColor: importDefault(dependencyMap[6]).colors.WHITE };
+obj2 = { bhk: "version=$(node -p \"require('./package.json').version\") && sed -i '' \"s/#define NITRO_VERSION \\\".*\\\"/#define NITRO_VERSION \\\"$version\\\"/\" ./cpp/utils/NitroDefines.hpp", bic: "bun run write-native-version", tintColor: importDefault(dependencyMap[6]).colors.WHITE };
 obj.floatingIcon = obj2;
 obj.leftMargin = { marginLeft: 4 };
 let closure_8 = obj2.createStyles(obj);
@@ -200,7 +200,7 @@ const memoResult = importAllResult.memo(function VoicePanelHeaderUserState(isHea
   fn.__initData = closure_9;
   let tmp7 = null;
   if (null != tmp4) {
-    obj = { value: "r", justifyContent: "RowTypes", direction: "r" };
+    obj = {};
     const items1 = [tmp2.container, tmp6];
     obj.style = items1;
     obj.children = tmp4;

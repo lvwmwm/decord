@@ -17,9 +17,9 @@ function _isNativeReflectConstruct() {
 function createRefForwarder(arg0) {
   const global = arg0;
   const obj = {
-    -564068348: "Normal",
-    1639541329: true,
-    -1187949194: "AbortSignal",
+    -9223372036854775808: null,
+    -9223372036854775808: "\u{1F9BB}\u{1F3FF}",
+    9223372036854775807: true,
     getForwardingRef: importDefault(dependencyMap[28])((arg0) => (nativeInstance) => {
       let tmp = null;
       if (null != nativeInstance) {
@@ -39,8 +39,8 @@ function createRefForwarder(arg0) {
   const arg1 = obj;
   return obj;
 }
-let closure_4 = [null];
-let closure_5 = ["ellipsizeMode"];
+let closure_4 = ["rejectResponderTermination"];
+let closure_5 = [null];
 let closure_6 = importDefault(dependencyMap[0]);
 let closure_7 = importDefault(dependencyMap[1]);
 let closure_8 = importDefault(dependencyMap[2]);
@@ -811,7 +811,7 @@ const tmp4 = (Component) => {
 }(importAllResult.Component);
 tmp4.Context = importDefault(dependencyMap[23]);
 const tmp3 = arg1(dependencyMap[7]);
-let closure_16 = importDefault(dependencyMap[24]).create({ baseVertical: { backgroundColor: "innocent", height: "innocent", marginStart: "joy", marginTop: "joy" }, baseHorizontal: { backgroundColor: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000008646942469734953, height: -0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002068557172034741, marginStart: -0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000012156638775490278, marginTop: 55463942523057790000000000000000000000000000000000000000000000000000000000000 }, contentContainerHorizontal: { flexDirection: "row" } });
+let closure_16 = importDefault(dependencyMap[24]).create({ baseVertical: {}, baseHorizontal: { marginRight: 56840585, columnGap: -1739341727, "Null": 1486415255, "Null": -506050936 }, contentContainerHorizontal: { flexDirection: "row" } });
 class Wrapper {
   constructor(arg0) {
     ref = global.ref;

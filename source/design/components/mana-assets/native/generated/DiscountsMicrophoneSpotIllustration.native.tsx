@@ -1,10 +1,10 @@
-// Module ID: 6007
-// Function ID: 49884
+// Module ID: 6009
+// Function ID: 49927
 // Name: DiscountsMicrophoneSpotIllustration
 // Dependencies: []
 // Exports: DiscountsMicrophoneSpotIllustration
 
-// Module 6007 (DiscountsMicrophoneSpotIllustration)
+// Module 6009 (DiscountsMicrophoneSpotIllustration)
 const jsx = require(dependencyMap[0]).jsx;
 const _module = require(dependencyMap[3]);
 const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/DiscountsMicrophoneSpotIllustration.native.tsx");

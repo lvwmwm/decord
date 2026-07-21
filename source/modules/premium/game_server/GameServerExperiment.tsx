@@ -6,7 +6,7 @@
 
 // Module 4039 (experiment)
 const _module = require(dependencyMap[0]);
-const obj = { "Bool(false)": true, "Bool(false)": true, config: { enabled: true } };
+const obj = { -1174339580: true, -1169096700: true, config: { enabled: true } };
 const items = [obj];
 const experiment = _module.createExperiment({ defaultConfig: { enabled: false }, treatments: items });
 const _module1 = require(dependencyMap[1]);

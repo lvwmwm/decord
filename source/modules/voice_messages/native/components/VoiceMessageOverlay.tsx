@@ -1,9 +1,9 @@
-// Module ID: 11659
-// Function ID: 90416
+// Module ID: 11666
+// Function ID: 90439
 // Name: useDerivedColors
 // Dependencies: []
 
-// Module 11659 (useDerivedColors)
+// Module 11666 (useDerivedColors)
 function useDerivedColors(voiceMessageAnimationState, BRAND_600, RED_500, BRAND_6002, BRAND_6003) {
   BRAND_600 = voiceMessageAnimationState;
   const importDefault = BRAND_600;
@@ -115,7 +115,7 @@ function LockPill(safeAreaBottom) {
     const obj7 = safeAreaBottom(voiceMessageAnimationState[11]);
     const fn2 = function s() {
       const tmp = derivedValue(arg0.get(), 2);
-      return arg0(tmp9[11]).interpolate(derivedValue.get(), closure_25, tmp[0] + tmp[1] === 2 ? [] : ["nedadvendt pil mod h\u00F8jre", "pil", "retning", "syd\u00F8st"]);
+      return arg0(tmp9[11]).interpolate(derivedValue.get(), closure_25, tmp[0] + tmp[1] === 2 ? [73333494645339100000000000000000000000000000000000000000000000000000000000000000000000000000, 1537887429904.0002, 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004521675952103735, 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004866120817357706] : ["<string:1207960381>", "l\u00E1ska", "l\u00EDb\u00ED", "<string:1769668611>"]);
     };
     obj = { voiceMessageAnimationState, interpolate: safeAreaBottom(voiceMessageAnimationState[11]).interpolate, timing: derivedValue, VOICE_MESSAGE_ANIMATION_STATES: closure_25 };
     fn2.__closure = obj;
@@ -141,10 +141,10 @@ function LockPill(safeAreaBottom) {
       obj.opacity = derivedValue1.get();
       obj.backgroundColor = tmp3Result.get();
       const obj3 = arg0(tmp9[11]);
-      const items = [1390895572, -255068174, -8, -8];
+      const items = [, , -8, -8];
       obj.marginHorizontal = arg0(tmp9[11]).interpolate(derivedValue.get(), closure_25, items);
       const obj4 = arg0(tmp9[11]);
-      obj.marginBottom = arg0(tmp9[11]).interpolate(derivedValue.get(), closure_25, []);
+      obj.marginBottom = arg0(tmp9[11]).interpolate(derivedValue.get(), closure_25, [false, false, false, false]);
       return obj;
     };
     obj3 = { interpolate: safeAreaBottom(voiceMessageAnimationState[11]).interpolate, timing: derivedValue, VOICE_MESSAGE_ANIMATION_STATES: closure_25, lockContainerOpacity: derivedValue1, lockedBackgroundColor: tmp3Result };
@@ -226,7 +226,7 @@ function LockPill(safeAreaBottom) {
     const obj7 = safeAreaBottom(voiceMessageAnimationState[11]);
     const fn2 = function s() {
       const tmp = derivedValue(arg0.get(), 2);
-      return arg0(tmp9[11]).interpolate(derivedValue.get(), closure_25, tmp[0] + tmp[1] === 2 ? [] : ["nedadvendt pil mod h\u00F8jre", "pil", "retning", "syd\u00F8st"]);
+      return arg0(tmp9[11]).interpolate(derivedValue.get(), closure_25, tmp[0] + tmp[1] === 2 ? [73333494645339100000000000000000000000000000000000000000000000000000000000000000000000000000, 1537887429904.0002, 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004521675952103735, 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004866120817357706] : ["<string:1207960381>", "l\u00E1ska", "l\u00EDb\u00ED", "<string:1769668611>"]);
     };
     obj = { voiceMessageAnimationState, interpolate: safeAreaBottom(voiceMessageAnimationState[11]).interpolate, timing: derivedValue, VOICE_MESSAGE_ANIMATION_STATES: closure_25 };
     fn2.__closure = obj;
@@ -252,10 +252,10 @@ function LockPill(safeAreaBottom) {
       obj.opacity = derivedValue1.get();
       obj.backgroundColor = tmp3Result.get();
       const obj3 = arg0(tmp9[11]);
-      const items = [1390895572, -255068174, -8, -8];
+      const items = [, , -8, -8];
       obj.marginHorizontal = arg0(tmp9[11]).interpolate(derivedValue.get(), closure_25, items);
       const obj4 = arg0(tmp9[11]);
-      obj.marginBottom = arg0(tmp9[11]).interpolate(derivedValue.get(), closure_25, []);
+      obj.marginBottom = arg0(tmp9[11]).interpolate(derivedValue.get(), closure_25, [false, false, false, false]);
       return obj;
     };
     obj3 = { interpolate: safeAreaBottom(voiceMessageAnimationState[11]).interpolate, timing: derivedValue, VOICE_MESSAGE_ANIMATION_STATES: closure_25, lockContainerOpacity: derivedValue1, lockedBackgroundColor: tmp3Result };
@@ -350,7 +350,7 @@ let closure_23 = arg1(dependencyMap[17]).createStyles((width) => {
   const obj2 = { width, height: width, borderRadius: importDefault(dependencyMap[18]).modules.button.BORDER_RADIUS, alignItems: "center", justifyContent: "center" };
   obj.lockContainer = { width, borderRadius: importDefault(dependencyMap[18]).modules.button.BORDER_RADIUS, shadowColor: importDefault(dependencyMap[18]).colors.BLACK, shadowOffset: {}, shadowOpacity: 0.12, shadowRadius: 36, borderWidth: arg1(dependencyMap[19]).DARK_0_LIGHT_1, borderStyle: "solid", borderColor: "rgba(0, 0, 0, 0.08)" };
   obj.lockParentContainer = { position: "absolute", right: closure_15, width };
-  const obj4 = { flexGrow: "Text", justifyContent: "round", marginBottom: "window", tintColor: importDefault(dependencyMap[18]).colors.ICON_SUBTLE };
+  const obj4 = { alignSelf: 24, fontSize: 24, marginBottom: null, tintColor: importDefault(dependencyMap[18]).colors.ICON_SUBTLE };
   obj.chevon = obj4;
   return obj;
 });
@@ -575,7 +575,7 @@ let closure_53 = importAllResult.memo((channelId) => {
   const importDefault = exiting;
   let obj = arg1(dependencyMap[21]);
   const tmp2 = callback5(obj.useToken(importDefault(dependencyMap[18]).modules.mobile.CHAT_INPUT_ACTION_BUTTON_SIZE));
-  const insets = importDefault(dependencyMap[31])({ renderHeader: null, renderSettingSearchResultItem: null }).insets;
+  const insets = importDefault(dependencyMap[31])({ <string:2893524121>: null, <string:2857788003>: null }).insets;
   const tmp3 = importDefault(dependencyMap[32])();
   const dependencyMap = tmp3;
   const diff = insets.bottom - tmp3.bottom;

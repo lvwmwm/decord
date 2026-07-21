@@ -1,10 +1,10 @@
-// Module ID: 9390
-// Function ID: 73189
+// Module ID: 9394
+// Function ID: 73203
 // Name: Emoji
 // Dependencies: []
 // Exports: EmojiGrid
 
-// Module 9390 (Emoji)
+// Module 9394 (Emoji)
 function Emoji(guildEmoji) {
   guildEmoji = guildEmoji.guildEmoji;
   let obj = {};
@@ -30,11 +30,11 @@ const View = arg1(dependencyMap[1]).View;
 const jsx = arg1(dependencyMap[2]).jsx;
 let obj = arg1(dependencyMap[3]);
 obj = {};
-obj = { <string:1140607356>: 30706176, <string:1751293292>: 378290688, borderRadius: importDefault(dependencyMap[4]).radii.sm };
+obj = { borderRadius: importDefault(dependencyMap[4]).radii.sm };
 obj.gridEmojiFastImage = obj;
 obj.gridEmojiText = {};
-obj.emojiGridRowContainer = { "Null": null, "Null": 11 };
-obj.emojiGridContainer = {};
+obj.emojiGridRowContainer = { display: null, alignItems: 11 };
+obj.emojiGridContainer = { "Null": null, "Null": null };
 let closure_5 = obj.createStyles(obj);
 const result = arg1(dependencyMap[11]).fileFinishedImporting("modules/messages/native/emoji/EmojiGrid.tsx");
 

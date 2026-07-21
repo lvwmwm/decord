@@ -1,26 +1,26 @@
-// Module ID: 11708
-// Function ID: 90930
+// Module ID: 11715
+// Function ID: 90953
 // Name: ContactSyncNameInput
 // Dependencies: [0, 4294967295, 0, 0, 0, 4294967295, 0, 0, 0]
 // Exports: default
 
-// Module 11708 (ContactSyncNameInput)
-import closure_3 from "result";
-import { View } from "result";
-import result from "result";
-import result from "result";
+// Module 11715 (ContactSyncNameInput)
+import closure_3 from "__exportStarResult1";
+import { View } from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
 
 let closure_4 = importAll(dependencyMap[1]);
-({ jsx: closure_6, jsxs: closure_7 } = result);
-result = { flex: { flex: 1 }, content: { "Bool(true)": "flex", "Bool(true)": "column", "Bool(true)": "center" }, title: { bounces: null, keyboardShouldPersistTaps: null }, subtitle: { registerAsset: 1610613482, ref: 2063598314, user: 1140851434 } };
-result = { backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_LOWEST, borderRadius: importDefault(dependencyMap[5]).radii.lg };
-result.input = result;
-result.formSubtitle = { lineHeight: 16 };
-result.button = { flexGrow: 0, paddingTop: importDefault(dependencyMap[5]).space.PX_16, paddingBottom: importDefault(dependencyMap[5]).space.PX_12 };
-result.error = { marginTop: 8 };
-result = result.createStyles(result);
+({ jsx: closure_6, jsxs: closure_7 } = __exportStarResult1);
+__exportStarResult1 = { flex: { flex: 1 }, content: { accessibilityRole: "flex", guildId: "column", "Bool(false)": "center" }, title: { "Null": null, "Null": null }, subtitle: { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null } };
+__exportStarResult1 = { NATIVE_SEARCH_HISTORY_STORE_DISPLAY_NAME: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003058658176, encodingConfig: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000146246367976575, panda_face: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000013283800533183, getDeviceAudioEffects: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007810801720513176, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_LOWEST, borderRadius: importDefault(dependencyMap[5]).radii.lg };
+__exportStarResult1.input = __exportStarResult1;
+__exportStarResult1.formSubtitle = { lineHeight: 16 };
+__exportStarResult1.button = { flexGrow: 0, paddingTop: importDefault(dependencyMap[5]).space.PX_16, paddingBottom: importDefault(dependencyMap[5]).space.PX_12 };
+__exportStarResult1.error = { marginTop: 8 };
+__exportStarResult1 = __exportStarResult1.createStyles(__exportStarResult1);
 const obj1 = { flexGrow: 0, paddingTop: importDefault(dependencyMap[5]).space.PX_16, paddingBottom: importDefault(dependencyMap[5]).space.PX_12 };
-result = arg1(dependencyMap[12]).fileFinishedImporting("modules/contact_sync/native/components/ContactSyncNameInput.tsx");
+const result = arg1(dependencyMap[12]).fileFinishedImporting("modules/contact_sync/native/components/ContactSyncNameInput.tsx");
 
 export default function ContactSyncNameInput(prefilledFromContactBook) {
   let error;
@@ -35,7 +35,7 @@ export default function ContactSyncNameInput(prefilledFromContactBook) {
   ({ onNext: closure_0, onRemoveName } = prefilledFromContactBook);
   const importDefault = onRemoveName;
   let dependencyMap;
-  const tmp = result();
+  const tmp = __exportStarResult1();
   const tmp2 = callback(React.useState(initialName), 2);
   const first = tmp2[0];
   dependencyMap = first;
@@ -50,7 +50,7 @@ export default function ContactSyncNameInput(prefilledFromContactBook) {
   let obj = { style: items };
   const items = [tmp.content, { paddingBottom: importDefault(dependencyMap[6])({ includeKeyboardHeight: true }).insets.bottom }];
   obj = { style: tmp.flex };
-  obj = { 0: 24, 9223372036854775807: 24, 0: null, -9223372036854775808: "aa9c26c29990ba7a6584e51ab5c56efa", style: tmp.title };
+  obj = { 1501064855: 24, -1267889981: 24, -1145697943: null, -1266241916: "aa9c26c29990ba7a6584e51ab5c56efa", style: tmp.title };
   const intl2 = arg1(dependencyMap[7]).intl;
   const string2 = intl2.string;
   const t2 = arg1(dependencyMap[7]).t;
@@ -72,7 +72,7 @@ export default function ContactSyncNameInput(prefilledFromContactBook) {
   }
   obj1.children = string3Result;
   items1[1] = callback2(arg1(dependencyMap[8]).Text, obj1);
-  const obj2 = { INTEGRATION_CREATE: "MediaModalYoutubeEmbedError", ConstraintReasonCode: "d\u0131" };
+  const obj2 = {};
   const intl4 = arg1(dependencyMap[7]).intl;
   obj2.children = intl4.string(arg1(dependencyMap[7]).t.42/D2U);
   items1[2] = callback2(arg1(dependencyMap[8]).Text, obj2);
@@ -104,7 +104,7 @@ export default function ContactSyncNameInput(prefilledFromContactBook) {
   let tmp17 = null;
   if (null != onRemoveName) {
     const obj6 = { style: tmp.button };
-    const obj7 = { <string:1522289750>: "r", <string:570601313>: "isArray" };
+    const obj7 = { 9223372036854775807: null, -9223372036854775808: null };
     const intl6 = arg1(dependencyMap[7]).intl;
     obj7.text = intl6.string(arg1(dependencyMap[7]).t.91RssO);
     obj7.onPress = function onPress() {

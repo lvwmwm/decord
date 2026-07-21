@@ -1,16 +1,16 @@
-// Module ID: 13975
-// Function ID: 106282
+// Module ID: 13982
+// Function ID: 106305
 // Name: FormSeparator
 // Dependencies: []
 // Exports: default
 
-// Module 13975 (FormSeparator)
+// Module 13982 (FormSeparator)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 const jsx = arg1(dependencyMap[2]).jsx;
 let obj = arg1(dependencyMap[3]);
 obj = { container: { alignSelf: "stretch" }, margins: { marginTop: 16 } };
-obj = { backgroundColor: importDefault(dependencyMap[4]).colors.BORDER_SUBTLE };
+obj = { bhk: false, bic: false, backgroundColor: importDefault(dependencyMap[4]).colors.BORDER_SUBTLE };
 obj.separator = obj;
 let closure_2 = obj.createStyles(obj);
 const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/guild_role_subscriptions/native/components/FormSeparator.tsx");

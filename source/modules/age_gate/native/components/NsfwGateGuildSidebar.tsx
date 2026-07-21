@@ -1,10 +1,10 @@
-// Module ID: 14961
-// Function ID: 112648
+// Module ID: 14968
+// Function ID: 112672
 // Name: NsfwGateGuildSidebar
 // Dependencies: []
 // Exports: default
 
-// Module 14961 (NsfwGateGuildSidebar)
+// Module 14968 (NsfwGateGuildSidebar)
 let closure_3 = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 let closure_5 = importDefault(dependencyMap[2]);

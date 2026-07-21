@@ -1,10 +1,10 @@
-// Module ID: 9722
-// Function ID: 75638
+// Module ID: 9727
+// Function ID: 75655
 // Name: HeroMedia
 // Dependencies: []
 // Exports: default
 
-// Module 9722 (HeroMedia)
+// Module 9727 (HeroMedia)
 import alphaResult1 from "module_0";
 
 function HeroMedia(mediaItem) {
@@ -50,7 +50,7 @@ function HeroMedia(mediaItem) {
   return tmp7;
 }
 function InGameItemTag() {
-  const obj = { INTEGRATION_CREATE: "<string:3305963521>", ConstraintReasonCode: "<string:671547393>" };
+  const obj = {};
   const intl = arg1(dependencyMap[17]).intl;
   obj.children = intl.string(arg1(dependencyMap[17]).t.V91tvy);
   return callback2(arg1(dependencyMap[16]).Text, obj);
@@ -65,7 +65,7 @@ function ProductPriceSection(sku) {
     obj = { style: tmp.priceSection };
     const items = [callback2(InGameItemTag, {}), ];
     const obj1 = { style: tmp.priceRow };
-    const obj2 = { INTEGRATION_CREATE: -833552028, ConstraintReasonCode: -314949303, children: userPrice };
+    const obj2 = { children: userPrice };
     obj1.children = callback2(arg1(dependencyMap[16]).Text, obj2);
     items[1] = callback2(closure_7, obj1);
     obj.children = items;
@@ -88,13 +88,13 @@ function BundleThumbnailRow(trackPDPClick) {
     onSelectIndex(arg0);
   }, items);
   let obj = { style: tmp.section };
-  obj = { INTEGRATION_CREATE: 15, ConstraintReasonCode: "center" };
+  obj = {};
   const intl = arg1(dependencyMap[17]).intl;
   obj.children = intl.string(arg1(dependencyMap[17]).t.U7DAV9);
   const items1 = [callback2(arg1(dependencyMap[16]).Text, obj), ];
   obj = {
-    noCommandsTextContainer: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000021043611947808288,
-    processAndReturnTallestItemInRow: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000053357352779429986,
+    <string:3603769293>: true,
+    <string:3453288331>: true,
     contentContainerStyle: tmp.bundleThumbnailRow,
     children: mediaItems.map((thumbnailSrc) => {
       let thumbnailInnerSelected = arg1 === callback;
@@ -204,7 +204,7 @@ function ItemDetailsSection(selectedItem) {
   let obj5 = arg1(dependencyMap[20]);
   let tmp15 = !obj5.isNullOrEmpty(trimmed);
   if (tmp15) {
-    obj = { INTEGRATION_CREATE: 182714370, ConstraintReasonCode: 1091633154, children: trimmed };
+    obj = { children: trimmed };
     tmp15 = callback2(arg1(dependencyMap[16]).Heading, obj);
   }
   const items = [tmp15, , ];
@@ -220,7 +220,7 @@ function ItemDetailsSection(selectedItem) {
       tmp22 = callback2(importDefault(dependencyMap[15]), obj2);
     }
     const items1 = [tmp22, ];
-    const obj4 = { INTEGRATION_CREATE: "<string:3305963521>", ConstraintReasonCode: "<string:671547393>", children: trimmed1 };
+    const obj4 = { children: trimmed1 };
     items1[1] = callback2(arg1(dependencyMap[16]).Text, obj4);
     obj1.children = items1;
     tmp20Result = closure_16(closure_7, obj1);
@@ -599,7 +599,7 @@ function SocialLayerStorefrontProductDetailsModal(skuId) {
     obj3.accessibilityLabel = intl.string(arg1(dependencyMap[17]).t.cpT0Cq);
     obj3.labelVisible = false;
     const items13 = [callback1(arg1(dependencyMap[38]).HeaderBackButton, obj3), ];
-    obj4 = { INTEGRATION_CREATE: 182714370, ConstraintReasonCode: 1091633154, style: result.headerTitle };
+    obj4 = { style: result.headerTitle };
     let name;
     if (null != getOrFetchApplication) {
       name = getOrFetchApplication.name;
@@ -680,7 +680,7 @@ function SocialLayerStorefrontProductDetailsModal(skuId) {
     const obj21 = { style: result.buyButton };
     result = arg1;
     result = dependencyMap;
-    const obj22 = { <string:1522289750>: null, <string:570601313>: null, text: result, loading: tmp33 };
+    const obj22 = { text: result, loading: tmp33 };
     result = tmp33;
     if (!tmp33) {
       result = !result;
@@ -692,7 +692,7 @@ function SocialLayerStorefrontProductDetailsModal(skuId) {
     result = arg1;
     result = dependencyMap;
     result = callback1;
-    const obj23 = { <string:3576188030>: "r", <string:3258736661>: "WATCHING", <string:1677446243>: "r" };
+    const obj23 = { <string:1454006884>: "RBTree", <string:3620889915>: "currentEmbeddedApplication", <string:1388749051>: "SyntaxError" };
     result = importDefault;
     obj23.icon = importDefault(dependencyMap[46]);
     obj23.disabled = tmp33;
@@ -780,7 +780,7 @@ const obj2 = { alignItems: "stretch", gap: importDefault(dependencyMap[10]).spac
 obj.section = { width: "100%", paddingHorizontal: importDefault(dependencyMap[10]).space.PX_16, gap: importDefault(dependencyMap[10]).space.PX_8 };
 obj4 = { flexDirection: "row", gap: importDefault(dependencyMap[10]).space.PX_8, paddingVertical: importDefault(dependencyMap[10]).space.PX_4 };
 obj.bundleThumbnailRow = obj4;
-const obj5 = { <string:3328432304>: 15177100833591720000000000000000000000000000000000000000000000000000000000000000000, <string:3612447030>: -231585282754047900000000000000000000000000000000000000000000000000000000000000, <string:993682542>: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000269262706699369, <string:3429277782>: 8084363890119254000000000000000000000000000000000000000000000000000, <string:1676466352>: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004447009584007632, borderRadius: importDefault(dependencyMap[10]).radii.md };
+const obj5 = { "Bool(false)": 15177100833591720000000000000000000000000000000000000000000000000000000000000000000, "Bool(false)": -231585282754047900000000000000000000000000000000000000000000000000000000000000, "Bool(false)": 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000026919904682564, "Bool(false)": 8084363890119254000000000000000000000000000000000000000000000000000, "Bool(false)": 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004447009584007632, borderRadius: importDefault(dependencyMap[10]).radii.md };
 obj.thumbnail = obj5;
 const obj3 = { width: "100%", paddingHorizontal: importDefault(dependencyMap[10]).space.PX_16, gap: importDefault(dependencyMap[10]).space.PX_8 };
 obj.thumbnailSelected = { borderColor: importDefault(dependencyMap[10]).colors.BORDER_STRONG };
@@ -788,26 +788,26 @@ const obj6 = { borderColor: importDefault(dependencyMap[10]).colors.BORDER_STRON
 obj.thumbnailInner = { borderRadius: importDefault(dependencyMap[10]).radii.sm };
 const obj7 = { borderRadius: importDefault(dependencyMap[10]).radii.sm };
 obj.thumbnailInnerSelected = { margin: 2, borderRadius: importDefault(dependencyMap[10]).radii.sm };
-obj.thumbnailImage = { aze: 30271555, azj: 22092032 };
-const obj9 = { -9223372036854775808: true, filter: true, gap: importDefault(dependencyMap[10]).space.PX_4 };
-obj.labelRow = obj9;
+obj.thumbnailImage = {};
 const obj8 = { margin: 2, borderRadius: importDefault(dependencyMap[10]).radii.sm };
+obj.labelRow = { gap: importDefault(dependencyMap[10]).space.PX_4 };
+const obj9 = { gap: importDefault(dependencyMap[10]).space.PX_4 };
 obj.labelIcon = { width: importDefault(dependencyMap[10]).space.PX_16, height: importDefault(dependencyMap[10]).space.PX_16 };
 const obj10 = { width: importDefault(dependencyMap[10]).space.PX_16, height: importDefault(dependencyMap[10]).space.PX_16 };
 obj.priceRow = { gap: importDefault(dependencyMap[10]).space.PX_8 };
 const obj11 = { gap: importDefault(dependencyMap[10]).space.PX_8 };
 obj.footer = { paddingHorizontal: importDefault(dependencyMap[10]).space.PX_16, paddingTop: importDefault(dependencyMap[10]).space.PX_12, gap: importDefault(dependencyMap[10]).space.PX_8, borderTopWidth: 1, borderTopColor: importDefault(dependencyMap[10]).colors.BORDER_SUBTLE };
-const obj13 = { -9223372036854775808: true, filter: true, gap: importDefault(dependencyMap[10]).space.PX_8 };
-obj.footerButtonRow = obj13;
+const obj12 = { paddingHorizontal: importDefault(dependencyMap[10]).space.PX_16, paddingTop: importDefault(dependencyMap[10]).space.PX_12, gap: importDefault(dependencyMap[10]).space.PX_8, borderTopWidth: 1, borderTopColor: importDefault(dependencyMap[10]).colors.BORDER_SUBTLE };
+obj.footerButtonRow = { gap: importDefault(dependencyMap[10]).space.PX_8 };
 obj.buyButton = { flex: 1 };
 obj.availabilityCopy = { textAlign: "center" };
-const obj12 = { paddingHorizontal: importDefault(dependencyMap[10]).space.PX_16, paddingTop: importDefault(dependencyMap[10]).space.PX_12, gap: importDefault(dependencyMap[10]).space.PX_8, borderTopWidth: 1, borderTopColor: importDefault(dependencyMap[10]).colors.BORDER_SUBTLE };
+const obj13 = { gap: importDefault(dependencyMap[10]).space.PX_8 };
 obj.legalCopy = { gap: importDefault(dependencyMap[10]).space.PX_4 };
 const obj14 = { gap: importDefault(dependencyMap[10]).space.PX_4 };
 obj.hero = { marginHorizontal: importDefault(dependencyMap[10]).space.PX_16, height: arg1(dependencyMap[13]).MOBILE_HERO_HEIGHT_PX, borderRadius: importDefault(dependencyMap[10]).radii.md, overflow: "hidden", backgroundColor: importDefault(dependencyMap[10]).colors.BACKGROUND_SURFACE_HIGH };
 const obj15 = { marginHorizontal: importDefault(dependencyMap[10]).space.PX_16, height: arg1(dependencyMap[13]).MOBILE_HERO_HEIGHT_PX, borderRadius: importDefault(dependencyMap[10]).radii.md, overflow: "hidden", backgroundColor: importDefault(dependencyMap[10]).colors.BACKGROUND_SURFACE_HIGH };
 obj.priceSection = { width: "100%", gap: importDefault(dependencyMap[10]).space.PX_8 };
-obj.heroImage = { aze: 30271555, azj: 22092032 };
+obj.heroImage = {};
 const obj16 = { width: "100%", gap: importDefault(dependencyMap[10]).space.PX_8 };
 obj.exclusiveBadgeContainer = { paddingHorizontal: importDefault(dependencyMap[10]).space.PX_16 };
 let closure_20 = obj4.createStyles(obj);

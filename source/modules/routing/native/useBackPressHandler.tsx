@@ -1,10 +1,10 @@
-// Module ID: 4532
-// Function ID: 39738
+// Module ID: 4536
+// Function ID: 39786
 // Name: useBackPressHandler
 // Dependencies: []
 // Exports: default
 
-// Module 4532 (useBackPressHandler)
+// Module 4536 (useBackPressHandler)
 let closure_2 = importAll(dependencyMap[0]);
 ({ BackHandler: closure_3, NativeModules: closure_4 } = arg1(dependencyMap[1]));
 const obj = {

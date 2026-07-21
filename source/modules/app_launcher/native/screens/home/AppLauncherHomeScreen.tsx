@@ -1,16 +1,16 @@
-// Module ID: 11185
-// Function ID: 87078
+// Module ID: 11191
+// Function ID: 87101
 // Name: AppRowLabel
 // Dependencies: []
 // Exports: default
 
-// Module 11185 (AppRowLabel)
+// Module 11191 (AppRowLabel)
 function AppRowLabel(renderedName) {
   renderedName = renderedName.renderedName;
   const tmp = callback4();
   if (renderedName.showsPromoted) {
     let obj = { style: tmp.appRowLabelWithPromotedContainer };
-    obj = { style: tmp.appRowLabelWithPromotedTextContainer, children: renderedName };
+    obj = { <string:2195412908>: null, <string:1614302748>: null, <string:4055242192>: null, <string:3322189872>: null, style: tmp.appRowLabelWithPromotedTextContainer, children: renderedName };
     const items = [callback2(arg1(dependencyMap[16]).Text, obj), ];
     const obj1 = { style: tmp.promotedLabel };
     const obj2 = {};
@@ -248,7 +248,7 @@ function ActivityItem(context) {
     width = heroMediaDimensions.width;
   }
   obj.size = width;
-  obj.names = ["PREMIUM_STANDARD"];
+  obj.names = ["SENTRY_BAGGAGE_KEY_PREFIX"];
   const tmp4Result = importDefault(dependencyMap[27])(obj);
   const id = React.useId();
   let obj2 = arg1(dependencyMap[28]);
@@ -326,7 +326,6 @@ function ActivityItem(context) {
   const tmp21 = closure_20;
   const tmp22 = View;
   const tmp4 = importDefault(dependencyMap[27]);
-  const obj8 = { INTEGRATION_CREATE: "disclaimer_text_localized", ConstraintReasonCode: "message", children: shelfItem.application.name };
   items4[1] = callback2(View, { style: tmp.activityDetailsContainer, children: callback2(arg1(dependencyMap[16]).Text, obj8) });
   obj3.children = items4;
   return tmp20(arg1(dependencyMap[32]).PressableScale, obj3);
@@ -401,7 +400,7 @@ function RecommendationItem(onPress) {
     width = heroMediaDimensions.width;
   }
   obj.size = width;
-  obj.names = ["PREMIUM_STANDARD"];
+  obj.names = ["SENTRY_BAGGAGE_KEY_PREFIX"];
   let tmp5Result = importDefault(dependencyMap[27])(obj);
   if (null != item.overrideImageUrl) {
     obj = { state: "loaded", url: item.overrideImageUrl };
@@ -461,7 +460,6 @@ function RecommendationItem(onPress) {
   const tmp19 = View;
   const tmp5 = importDefault(dependencyMap[27]);
   const tmp9 = "loading" === tmp5Result.state || null == tmp5Result.url;
-  const obj8 = { INTEGRATION_CREATE: "disclaimer_text_localized", ConstraintReasonCode: "message", children: application.name };
   items3[1] = callback2(View, { style: tmp.activityDetailsContainer, children: callback2(arg1(dependencyMap[16]).Text, obj8) });
   obj3.children = items3;
   return tmp17(arg1(dependencyMap[32]).PressableScale, obj3);
@@ -563,29 +561,29 @@ let obj = arg1(dependencyMap[15]);
 obj = {};
 obj = { backgroundColor: importDefault(dependencyMap[13]).colors.MOBILE_KEYBOARD_PANEL_BACKGROUND, flex: 1 };
 obj.container = obj;
-const obj1 = { autoFocus: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000006526886468733086, startExpanded: 8594617760.001091, disconnectAnimatedNodes: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001883504684687393, SECONDLY: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002156349352822252, renderSettingSearchResultItem: 12032021538162901000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, CHANNEL_INTEGRATION: -115216157560385040000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, backgroundColor: importDefault(dependencyMap[13]).colors.MOBILE_KEYBOARD_PANEL_BACKGROUND };
+const obj1 = { width: 787152897, accessibilityRole: 1027735553, replace: -570424772, jsx: 1107296827, padding: 135388, start: 88713, backgroundColor: importDefault(dependencyMap[13]).colors.MOBILE_KEYBOARD_PANEL_BACKGROUND };
 obj.topBackgroundFill = obj1;
-obj.sectionHeader = {};
+obj.sectionHeader = { "Null": 800, "Null": 16 };
 const tmp6 = arg1(dependencyMap[12]);
 obj.list = { paddingHorizontal: DEFAULT_CONTENT_PADDING, backgroundColor: importDefault(dependencyMap[13]).colors.MOBILE_KEYBOARD_PANEL_BACKGROUND };
 obj.searchBarContainer = { paddingHorizontal: DEFAULT_CONTENT_PADDING, paddingBottom: DEFAULT_CONTENT_PADDING };
 const obj2 = { paddingHorizontal: DEFAULT_CONTENT_PADDING, backgroundColor: importDefault(dependencyMap[13]).colors.MOBILE_KEYBOARD_PANEL_BACKGROUND };
 obj.divider = { borderColor: importDefault(dependencyMap[13]).colors.BORDER_STRONG, borderTopWidth: 1, marginTop: importDefault(dependencyMap[13]).space.PX_24 };
-const obj4 = { display: -0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000006693633811139321, alignItems: -0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000014927302692811424, flexDirection: 869553810591452500000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, gap: importDefault(dependencyMap[13]).space.PX_4 };
+const obj4 = { "Bool(true)": 16777923, "Bool(true)": 50, "Bool(true)": 1119879168, gap: importDefault(dependencyMap[13]).space.PX_4 };
 obj.appRowLabelWithPromotedContainer = obj4;
 obj.appRowLabelWithPromotedTextContainer = { flexShrink: 1 };
-const obj3 = { borderColor: importDefault(dependencyMap[13]).colors.BORDER_STRONG, borderTopWidth: 1, marginTop: importDefault(dependencyMap[13]).space.PX_24 };
-obj.promotedLabel = { paddingHorizontal: importDefault(dependencyMap[13]).space.PX_4, backgroundColor: importDefault(dependencyMap[13]).colors.INTERACTIVE_BACKGROUND_ACTIVE, borderRadius: importDefault(dependencyMap[13]).radii.lg };
-const obj6 = { style: "adjustable", pointerEvents: true, accessibilityElementsHidden: "/assets/design/components/Icon/native/redesign/generated/images", importantForAccessibility: 24, data: 24, borderRadius: importDefault(dependencyMap[13]).radii.md, backgroundColor: importDefault(dependencyMap[13]).colors.BACKGROUND_SURFACE_HIGH, borderColor: importDefault(dependencyMap[13]).colors.BORDER_SUBTLE };
+const obj5 = { accessibilityRole: 40, jsxs: 12, join: 4, paddingHorizontal: importDefault(dependencyMap[13]).space.PX_4, backgroundColor: importDefault(dependencyMap[13]).colors.INTERACTIVE_BACKGROUND_ACTIVE, borderRadius: importDefault(dependencyMap[13]).radii.lg };
+obj.promotedLabel = obj5;
+const obj6 = { "Bool(true)": "<string:1091633474>", "Bool(true)": "adjustable", "Bool(true)": "<string:1348288785>", "Bool(true)": "<string:410124290>", "Bool(true)": "<string:402653184>", borderRadius: importDefault(dependencyMap[13]).radii.md, backgroundColor: importDefault(dependencyMap[13]).colors.BACKGROUND_SURFACE_HIGH, borderColor: importDefault(dependencyMap[13]).colors.BORDER_SUBTLE };
 obj.activityItemContainer = obj6;
-const obj5 = { paddingHorizontal: importDefault(dependencyMap[13]).space.PX_4, backgroundColor: importDefault(dependencyMap[13]).colors.INTERACTIVE_BACKGROUND_ACTIVE, borderRadius: importDefault(dependencyMap[13]).radii.lg };
+const obj3 = { borderColor: importDefault(dependencyMap[13]).colors.BORDER_STRONG, borderTopWidth: 1, marginTop: importDefault(dependencyMap[13]).space.PX_24 };
 obj.activityImageContainer = { backgroundColor: importDefault(dependencyMap[13]).colors.BACKGROUND_BASE_LOWEST, borderBottomWidth: tmp2.StyleSheet.hairlineWidth, borderBottomColor: importDefault(dependencyMap[13]).colors.BORDER_SUBTLE };
-const obj8 = { "Null": null, "Null": null, "Null": null, padding: importDefault(dependencyMap[13]).space.PX_12 };
+const obj8 = { "Bool(true)": "default", "Bool(true)": "done", enableQualityMetrics: "go", padding: importDefault(dependencyMap[13]).space.PX_12 };
 obj.activityDetailsContainer = obj8;
 obj.activityItemTupleContainer = {};
-obj.activityItemTupleShelfItemContainer = { 9223372036854775807: false, 9223372036854775807: false };
-obj.activityItemImage = { <string:1140607356>: 30271555, <string:1751293292>: 22092032 };
-obj.submittingOverlay = { marginRight: false, padding: false, width: false, display: false, alignItems: false };
+obj.activityItemTupleShelfItemContainer = { useState: false, textAlign: false };
+obj.activityItemImage = {};
+obj.submittingOverlay = { 9223372036854775807: false, 0: false, 9223372036854775807: false, 0: false, 0: false };
 let closure_25 = obj.createStyles(obj);
 const obj7 = { backgroundColor: importDefault(dependencyMap[13]).colors.BACKGROUND_BASE_LOWEST, borderBottomWidth: tmp2.StyleSheet.hairlineWidth, borderBottomColor: importDefault(dependencyMap[13]).colors.BORDER_SUBTLE };
 const result = arg1(dependencyMap[86]).fileFinishedImporting("modules/app_launcher/native/screens/home/AppLauncherHomeScreen.tsx");
@@ -1158,7 +1156,7 @@ export default function AppLauncherHomeScreen(route) {
       obj.style = obj;
       return inThisServerItems(initialSearchQuery(handleViewableItemsChanged[45]), obj);
     } else if (context(handleViewableItemsChanged[44]).AppLauncherHomeListItemType.SECTION_HEADER === type) {
-      const obj1 = { 9223372036854775807: "238a115f1ad03e07bad0181bb5c110d4", 9223372036854775807: "ic_playstation_device_ps5_32px", 9223372036854775807: "png" };
+      const obj1 = { alignItems: "238a115f1ad03e07bad0181bb5c110d4", justifyContent: "ic_playstation_device_ps5_32px", backgroundColor: "png" };
       const items = [tmp4.sectionHeader, ];
       let tmp50 = null;
       if (0 !== index) {
@@ -1278,7 +1276,7 @@ export default function AppLauncherHomeScreen(route) {
     let obj = callback(closure_3[53]);
     obj = { query, source: closure_10 };
     obj.trackWithMetadata(constants.APP_LAUNCHER_SEARCH_QUERY_TYPED, obj);
-  }, 400, { "Bool(false)": true, "Bool(false)": true }), items6);
+  }, 400, { flex: null, marginRight: null }), items6);
   const APP_LAUNCHER_IN_TEXT = memo;
   callback4 = React.useRef(null);
   const effect1 = React.useEffect(() => () => {

@@ -1,9 +1,9 @@
-// Module ID: 9865
-// Function ID: 76396
+// Module ID: 9870
+// Function ID: 76412
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
-// Module 9865 (_isNativeReflectConstruct)
+// Module 9870 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -48,7 +48,7 @@ function fetchMessages(arg0) {
           }
           let obj7 = orCreate1;
           if (tmp15) {
-            let obj = { message: "midnight", lineClamp: "noon", jumpType: arg1(dependencyMap[19]).JumpType.ANIMATED };
+            let obj = { message: true, lineClamp: true, jumpType: arg1(dependencyMap[19]).JumpType.ANIMATED };
             const mutation = orCreate1.mutate(obj);
             let obj9 = importDefault(dependencyMap[17]);
             obj9.commit(mutation);

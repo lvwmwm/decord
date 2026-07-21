@@ -1,10 +1,10 @@
-// Module ID: 12275
-// Function ID: 94112
+// Module ID: 12282
+// Function ID: 94135
 // Name: PremiumFeaturesCardBackground
 // Dependencies: []
 // Exports: default
 
-// Module 12275 (PremiumFeaturesCardBackground)
+// Module 12282 (PremiumFeaturesCardBackground)
 class PremiumFeaturesCardBackground {
   constructor(arg0) {
     ({ style, children } = global);
@@ -31,7 +31,7 @@ function CarouselCard(arg0) {
   ({ style, title, imageSrc, imageStyle } = arg0);
   const tmp = callback5();
   let obj = { style };
-  obj = { INTEGRATION_CREATE: null, ConstraintReasonCode: null, style: tmp.cardTitle, children: title };
+  obj = { style: tmp.cardTitle, children: title };
   const items = [callback2(arg1(dependencyMap[11]).Text, obj), ];
   const items1 = [tmp.image, imageStyle];
   items[1] = callback2(importDefault(dependencyMap[12]), { source: imageSrc, style: items1, resizeMode: "contain" });
@@ -142,8 +142,7 @@ function PremiumFeaturesCarousel(arg0) {
     obj.children = items2;
     return closure_11(closure_6, obj);
   }
-  const obj2 = { "Bool(true)": 1627390538, "Bool(true)": 127025433, "Bool(true)": 1346764801, "Bool(true)": true, "Bool(true)": true, "Bool(true)": true, "Bool(true)": true, style: tmp.carousel, contentContainerStyle: { paddingHorizontal: bound, gap: PX_12 }, snapToOffsets: arr.map((arg0, arg1) => arg1 * sum), onScroll: callback, children: arr };
-  tmp16 = callback2(closure_5, obj2);
+  tmp16 = callback2(closure_5, { style: tmp.carousel, contentContainerStyle: obj3, snapToOffsets: arr.map((arg0, arg1) => arg1 * sum), onScroll: callback, children: arr });
 }
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
@@ -159,7 +158,7 @@ let obj = arg1(dependencyMap[8]);
 obj = { container: { flex: 1 }, headerText: { textAlign: "center" } };
 obj = { flex: 1, marginTop: importDefault(dependencyMap[7]).space.PX_16 };
 obj.carouselContainer = obj;
-obj.carousel = { "Null": true, "Null": true };
+obj.carousel = { "Null": "<string:863109122>", "Null": "<string:218103808>" };
 const tmp3 = arg1(dependencyMap[6]);
 obj.indicators = { marginBottom: -importDefault(dependencyMap[7]).space.PX_48 };
 let closure_14 = obj.createStyles(obj);

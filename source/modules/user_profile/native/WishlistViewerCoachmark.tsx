@@ -1,10 +1,10 @@
-// Module ID: 12030
-// Function ID: 92967
+// Module ID: 12037
+// Function ID: 92990
 // Name: CoachmarkImage
 // Dependencies: []
 // Exports: default
 
-// Module 12030 (CoachmarkImage)
+// Module 12037 (CoachmarkImage)
 function CoachmarkImage() {
   const tmp = callback();
   let obj = { style: tmp.imageContainer };
@@ -20,7 +20,7 @@ let closure_3 = importAll(dependencyMap[0]);
 const ContentDismissActionType = arg1(dependencyMap[2]).ContentDismissActionType;
 const jsx = arg1(dependencyMap[3]).jsx;
 const tmp2 = arg1(dependencyMap[1]);
-let closure_8 = arg1(dependencyMap[4]).createStyles({ imageContainer: {}, image: { aze: true, azj: true } });
+let closure_8 = arg1(dependencyMap[4]).createStyles({ imageContainer: {}, image: {} });
 const obj = arg1(dependencyMap[4]);
 const result = arg1(dependencyMap[8]).fileFinishedImporting("modules/user_profile/native/WishlistViewerCoachmark.tsx");
 

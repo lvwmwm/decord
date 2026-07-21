@@ -1,15 +1,15 @@
-// Module ID: 15833
-// Function ID: 121047
+// Module ID: 15840
+// Function ID: 121071
 // Name: RestrictedHoursLogoutBlockingLayer
-// Dependencies: [1039597568, 1039663104, 1039925248, 1039990784, 1040056320, 1040187392, 752222208, 766246912, 1040515072, 1040580608, 1040646144, 1040973824, 1041039360, 447676416, 1041104896, 1041170432, 1042284544, 625934336, 459079680, 686292992, 1042350080, 1042415616, 1042546688, 1042677760, 1042743296, 1042808832]
+// Dependencies: [1040056320, 1040121856, 1040384000, 1040449536, 1040515072, 1040646144, 752680960, 766705664, 1040973824, 1041039360, 1041104896, 1041432576, 1041498112, 448069632, 1041563648, 1041629184, 1042743296, 626262016, 459341824, 686686208, 1042808832, 1042874368, 1043005440, 1043136512, 1043202048, 1043267584]
 // Exports: default
 
-// Module 15833 (RestrictedHoursLogoutBlockingLayer)
+// Module 15840 (RestrictedHoursLogoutBlockingLayer)
 let StyleSheet;
 function RestrictedHoursLogoutBlockingLayer(visible) {
   let tmp2 = null;
   if (visible.visible) {
-    let obj = { style: tmp.logoutBlockingLayer };
+    let obj = { isUserAvatar: "onFriendOnlineNotificationSettingsChanged", type: "NEW_ROCKER", channelId: "isArray", style: tmp.logoutBlockingLayer };
     obj = { size: "large" };
     obj.children = callback2(arg1(dependencyMap[7]).ActivityIndicator, obj);
     tmp2 = callback2(closure_5, obj);
@@ -128,20 +128,19 @@ function RestrictedHoursScreen(visible) {
   items3[1] = callback2(importDefault(dependencyMap[11]).View, obj3);
   obj5 = { style: items5 };
   const items5 = [tmp.content, animatedStyle2];
-  obj6 = { style: tmp.riveContainer, children: callback2(arg1(dependencyMap[17]).TeenScreenTimeRive, { "Null": true, "Null": true }) };
+  obj6 = { style: tmp.riveContainer, children: callback2(arg1(dependencyMap[17]).TeenScreenTimeRive, { guildId: "<string:200687894>", padding: "<string:7471105>" }) };
   const items6 = [callback2(closure_5, obj6), ];
   obj7 = { style: tmp.description, children: formatResult };
   items6[1] = callback2(arg1(dependencyMap[18]).Text, obj7);
   obj5.children = items6;
   items3[2] = callback3(importDefault(dependencyMap[11]).View, obj5);
   const obj8 = { style: tmp.footer };
-  const obj9 = { INTEGRATION_CREATE: true, ConstraintReasonCode: true, style: tmp.description };
+  const obj9 = { style: tmp.description };
   const intl3 = arg1(dependencyMap[13]).intl;
   obj9.children = intl3.format(importDefault(dependencyMap[14]).iqeKDz, {
     username: stateFromStores,
     loginHook(children) {
-      const obj = { INTEGRATION_CREATE: "<string:2151743489>", ConstraintReasonCode: "<string:1912603161>", onPress: onLogin, children };
-      return callback(onLogin(sharedValue1[18]).Text, obj, arg1);
+      return callback(onLogin(sharedValue1[18]).Text, { onPress: onLogin, children }, arg1);
     }
   });
   obj8.children = callback2(arg1(dependencyMap[18]).Text, obj9);
@@ -173,13 +172,13 @@ obj2["zIndex"] = 1;
 obj.assetLayers = obj2;
 const merged2 = Object.assign(StyleSheet.absoluteFillObject);
 obj.sunbeamGradient = {};
-obj.riveContainer = { resizeMode: false, preventsDisplaySleepDuringVideoPlayback: false, gameImage: false };
+obj.riveContainer = {};
 const obj3 = {};
 const tmp3 = arg1(dependencyMap[4]);
 obj.content = { gap: importDefault(dependencyMap[6]).space.PX_16 };
 obj.description = { textAlign: "center" };
-const obj4 = { gap: importDefault(dependencyMap[6]).space.PX_16 };
-obj.footer = { bottom: importDefault(dependencyMap[6]).space.PX_32 };
+const obj5 = { y: "<string:1627390512>", frame_id: "<string:1166889530>", f23: "<string:678577549>", shouldClear: "<string:671088640>", bottom: importDefault(dependencyMap[6]).space.PX_32 };
+obj.footer = obj5;
 const obj6 = {};
 const merged3 = Object.assign(StyleSheet.absoluteFillObject);
 obj6["zIndex"] = 10;
@@ -192,7 +191,7 @@ let closure_11 = { MAIN: "main" };
 let closure_12 = { code: "function RestrictedHoursModalTsx1(){const{backgroundOpacity}=this.__closure;return{opacity:backgroundOpacity.get()};}" };
 let closure_13 = { code: "function RestrictedHoursModalTsx2(){const{gradientOpacity}=this.__closure;return{opacity:gradientOpacity.get()};}" };
 let closure_14 = { code: "function RestrictedHoursModalTsx3(){const{contentOpacity,contentScale}=this.__closure;return{opacity:contentOpacity.get(),transform:[{scale:contentScale.get()}]};}" };
-const obj5 = { bottom: importDefault(dependencyMap[6]).space.PX_32 };
+const obj4 = { gap: importDefault(dependencyMap[6]).space.PX_16 };
 const result = arg1(dependencyMap[25]).fileFinishedImporting("modules/parent_tools/native/RestrictedHoursModal.tsx");
 
 export default function RestrictedHoursModal() {
@@ -223,13 +222,16 @@ export default function RestrictedHoursModal() {
   const tmp4 = function useScreens(closure_4, arg1) {
     let closure_1 = arg1;
     const items = [closure_4, arg1];
-    return closure_4(closure_2[19]).useNavigatorScreens(() => ({
-      [closure_11.MAIN]: {
+    return closure_4(closure_2[19]).useNavigatorScreens(() => {
+      const obj = {
+        1675881098: null,
+        1404659208: null,
         render() {
           return callback(closure_16, { onLogin: closure_0, logoutRequestInFlight: closure_1 });
         }
-      }
-    }), items);
+      };
+      return { [closure_11.MAIN]: obj };
+    }, items);
   }(React.useCallback(() => {
     if (!ref.current) {
       ref.current = true;
@@ -248,13 +250,16 @@ export default function RestrictedHoursModal() {
     screens: function useScreens(closure_4, arg1) {
       let closure_1 = arg1;
       const items = [closure_4, arg1];
-      return closure_4(closure_2[19]).useNavigatorScreens(() => ({
-        [closure_11.MAIN]: {
+      return closure_4(closure_2[19]).useNavigatorScreens(() => {
+        const obj = {
+          1675881098: null,
+          1404659208: null,
           render() {
             return callback(closure_16, { onLogin: closure_0, logoutRequestInFlight: closure_1 });
           }
-        }
-      }), items);
+        };
+        return { [closure_11.MAIN]: obj };
+      }, items);
     }(React.useCallback(() => {
       if (!ref.current) {
         ref.current = true;

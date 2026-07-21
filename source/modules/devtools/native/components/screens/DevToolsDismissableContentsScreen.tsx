@@ -1,10 +1,10 @@
-// Module ID: 14453
-// Function ID: 108938
+// Module ID: 14460
+// Function ID: 108961
 // Name: DevToolsDismissableContentsScreen
 // Dependencies: []
 // Exports: default
 
-// Module 14453 (DevToolsDismissableContentsScreen)
+// Module 14460 (DevToolsDismissableContentsScreen)
 let closure_3 = importDefault(dependencyMap[0]);
 const importAllResult = importAll(dependencyMap[1]);
 const View = arg1(dependencyMap[2]).View;
@@ -110,10 +110,7 @@ export default function DevToolsDismissableContentsScreen() {
   const callback1 = importAllResult.useCallback((arg0, arg1) => callback4(closure_10, { content: dismissableContent[arg1], start: 0 === arg1, end: arg1 === dismissableContent.length - 1 }), items2);
   obj = { style: tmp.container };
   obj = { style: tmp.section };
-  const callback2 = importAllResult.useCallback(() => {
-    const obj = { "Bool(true)": "1146ad1374798af61befeddbf75c5f47", "Bool(true)": "es-ES.messages.1146ad1374798af61befeddbf75c5f47.compiled.messages", "Bool(true)": "jsona", "Bool(true)": true, style: tmp.sectionHeader };
-    return callback4(tmp(closure_2[19]).Text, obj);
-  }, items3);
+  const callback2 = importAllResult.useCallback(() => callback4(tmp(closure_2[19]).Text, { style: tmp.sectionHeader }), items3);
   obj1 = {};
   obj2 = { onValueChange: arg1(closure_2[21]).overrideDismissibleContentFramework, value: dailyCapOverridden, label: "Daily limit", subLabel: "When enabled, bypass the daily limit of dismissible content shown" };
   const items4 = [callback2(arg1(closure_2[9]).TableSwitchRow, obj2), , ];
@@ -124,7 +121,7 @@ export default function DevToolsDismissableContentsScreen() {
   obj.children = callback3(arg1(closure_2[20]).TableRowGroup, obj1);
   const items5 = [callback2(closure_5, obj), , , ];
   const obj5 = { style: tmp.section };
-  const obj6 = { width: null, height: "02378056fc9012d1e43edae8cf439ac3" };
+  const obj6 = { "Bool(false)": null, "Bool(false)": "1d74a82e87825a8e88397d4d91dbcec8" };
   const obj7 = { label: "Clear all dismissed dismissible contents", onPress: arg1(closure_2[23]).clearDismissedContents, icon: callback2(arg1(closure_2[24]).TrashIcon, {}), trailing: callback2(arg1(closure_2[25]).TableRowArrow, {}) };
   const items6 = [callback2(arg1(closure_2[22]).TableRow, obj7), , ];
   const obj8 = { label: "Clear all guild dismissed dismissible contents", onPress: arg1(closure_2[23]).clearGuildDismissedContents, icon: callback2(arg1(closure_2[24]).TrashIcon, {}), trailing: callback2(arg1(closure_2[25]).TableRowArrow, {}) };
@@ -152,7 +149,7 @@ export default function DevToolsDismissableContentsScreen() {
     const tmp21 = importDefault(closure_2[28]);
   } else {
     const obj13 = { style: tmp.emptyState };
-    const obj14 = { flexDirection: "DISMISSIBLE_CONTENT_SHOWN_BEFORE_CONNECTION_OPEN", justifyContent: "9qLtWs", source: "$$baseObject" };
+    const obj14 = {};
     const obj15 = { marginBottom: importDefault(closure_2[6]).space.PX_16 };
     obj14.style = obj15;
     const items7 = [callback2(arg1(closure_2[19]).Text, obj14), callback2(arg1(closure_2[29]).SearchEmpty, {})];

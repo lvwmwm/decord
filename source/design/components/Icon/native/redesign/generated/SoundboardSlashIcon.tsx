@@ -1,10 +1,10 @@
-// Module ID: 11947
-// Function ID: 92387
+// Module ID: 11954
+// Function ID: 92410
 // Name: SoundboardSlashIcon
 // Dependencies: []
 // Exports: SoundboardSlashIcon
 
-// Module 11947 (SoundboardSlashIcon)
+// Module 11954 (SoundboardSlashIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/SoundboardSlashIcon.tsx");

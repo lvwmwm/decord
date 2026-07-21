@@ -1,10 +1,10 @@
-// Module ID: 6601
-// Function ID: 50775
+// Module ID: 6605
+// Function ID: 50821
 // Name: VoiceFiltersSpotIllustration
 // Dependencies: []
 // Exports: VoiceFiltersSpotIllustration
 
-// Module 6601 (VoiceFiltersSpotIllustration)
+// Module 6605 (VoiceFiltersSpotIllustration)
 const jsx = require(dependencyMap[0]).jsx;
 const _module = require(dependencyMap[3]);
 const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/VoiceFiltersSpotIllustration.native.tsx");

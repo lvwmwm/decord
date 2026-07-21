@@ -1,10 +1,10 @@
-// Module ID: 9517
-// Function ID: 74102
+// Module ID: 9522
+// Function ID: 74118
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 // Exports: default
 
-// Module 9517 (_createForOfIteratorHelperLoose)
+// Module 9522 (_createForOfIteratorHelperLoose)
 function _createForOfIteratorHelperLoose(@@iterator) {
   let arg1 = Symbol_iterator;
   @@iterator = "undefined" !== typeof Symbol;
@@ -96,11 +96,11 @@ let closure_11 = importDefault(dependencyMap[8]);
 const FileUploadErrorTypes = arg1(dependencyMap[9]).FileUploadErrorTypes;
 ({ AnalyticEvents: closure_13, AnalyticsPages: closure_14, ChannelTypes: closure_15, GuildFeatures: closure_16, LOCAL_BOT_ID: closure_17, MessageAttachmentFlags: closure_18, MessageFlags: closure_19, MessageStates: closure_20, MessageTypes: closure_21, MessageTypesSets: closure_22, Permissions: closure_23 } = arg1(dependencyMap[10]));
 const jsx = arg1(dependencyMap[11]).jsx;
-let closure_25 = { PRIMARY: 0, [0]: "PRIMARY", GENERAL: 1, [1]: "GENERAL", DESTRUCTIVE: 2, [2]: "DESTRUCTIVE" };
 const tmp2 = arg1(dependencyMap[10]);
 const result = arg1(dependencyMap[76]).fileFinishedImporting("modules/messages/native/long_press/LongPressMessageActionSheet.tsx");
 
 export default function LongPressMessageActionSheet(analyticsLocation) {
+  let FileUploadErrorTypes;
   let closure_11;
   let message;
   let selectedMedia;
@@ -109,14 +109,12 @@ export default function LongPressMessageActionSheet(analyticsLocation) {
   function getProps(guildId, id) {
     let IconComponent;
     let disabled;
-    let section;
-    let sortKey;
     let variant;
     const label = guildId.label;
     guildId = label;
     ({ onActionExecuted: closure_1, disabled } = guildId);
     const analyticsLocation = disabled;
-    ({ IconComponent, section, sortKey, variant } = guildId);
+    ({ IconComponent, variant } = guildId);
     return {
       arrow: guildId.arrow,
       icon: callback(guildId(analyticsLocation[32]).ActionSheetRow.Icon, { IconComponent }),
@@ -124,8 +122,6 @@ export default function LongPressMessageActionSheet(analyticsLocation) {
       onPress() {
         const result = label(disabled[33]).longPressMessageOptionHandler({ actionSheetSource: closure_7, analyticsLocations: closure_1, channel: closure_4, chatInputRef: closure_5, label, message: closure_3, onBack: closure_9, onActionExecuted: closure_1, selectedMedia: closure_6, disabled });
       },
-      section,
-      sortKey,
       variant,
       disabled
     };
@@ -341,9 +337,6 @@ export default function LongPressMessageActionSheet(analyticsLocation) {
     if (tmp61) {
       props = getProps;
       let obj = {};
-      props = constants8;
-      obj.section = constants8.PRIMARY;
-      obj.sortKey = 1;
       props = arg1;
       props = dependencyMap;
       const intl17 = arg1(dependencyMap[38]).intl;
@@ -356,9 +349,6 @@ export default function LongPressMessageActionSheet(analyticsLocation) {
     if (props) {
       props = getProps;
       obj = {};
-      props = constants8;
-      obj.section = constants8.PRIMARY;
-      obj.sortKey = 2;
       props = arg1;
       props = dependencyMap;
       const intl18 = arg1(dependencyMap[38]).intl;
@@ -368,9 +358,6 @@ export default function LongPressMessageActionSheet(analyticsLocation) {
     }
     props = getProps;
     obj1 = {};
-    props = constants8;
-    obj1.section = constants8.PRIMARY;
-    obj1.sortKey = 3;
     props = arg1;
     props = dependencyMap;
     const intl19 = arg1(dependencyMap[38]).intl;
@@ -395,9 +382,6 @@ export default function LongPressMessageActionSheet(analyticsLocation) {
       if (props) {
         props = getProps;
         obj2 = {};
-        props = constants8;
-        obj2.section = constants8.PRIMARY;
-        obj2.sortKey = 1;
         props = arg1;
         props = dependencyMap;
         const intl15 = arg1(dependencyMap[38]).intl;
@@ -407,9 +391,6 @@ export default function LongPressMessageActionSheet(analyticsLocation) {
       }
       props = getProps;
       obj3 = {};
-      props = constants8;
-      obj3.section = constants8.PRIMARY;
-      obj3.sortKey = 2;
       props = arg1;
       props = dependencyMap;
       const intl16 = arg1(dependencyMap[38]).intl;
@@ -427,9 +408,6 @@ export default function LongPressMessageActionSheet(analyticsLocation) {
         props = render;
         props = getProps;
         obj4 = {};
-        props = constants8;
-        obj4.section = constants8.PRIMARY;
-        obj4.sortKey = 1;
         props = arg1;
         props = dependencyMap;
         const intl14 = arg1(dependencyMap[38]).intl;
@@ -446,184 +424,138 @@ export default function LongPressMessageActionSheet(analyticsLocation) {
         const intl20 = arg1(dependencyMap[38]).intl;
         obj5.label = intl20.string(arg1(dependencyMap[38]).t.fsBWmS);
         obj5.IconComponent = arg1(dependencyMap[43]).PencilIcon;
-        props = constants8;
-        obj5.section = constants8.PRIMARY;
-        obj5.sortKey = 1;
         props = getProps(obj5);
         obj6 = {};
         const intl21 = arg1(dependencyMap[38]).intl;
         obj6.label = intl21.string(arg1(dependencyMap[38]).t.5IEsGx);
         obj6.IconComponent = arg1(dependencyMap[44]).ArrowAngleLeftUpIcon;
-        obj6.section = constants8.PRIMARY;
-        obj6.sortKey = 2;
         props = getProps(obj6);
         obj7 = {};
         const intl22 = arg1(dependencyMap[38]).intl;
         obj7.label = intl22.string(arg1(dependencyMap[38]).t.I3ltXO);
         props = importDefault;
         obj7.IconComponent = importDefault(dependencyMap[45]);
-        obj7.section = constants8.PRIMARY;
-        obj7.sortKey = 3;
         props = getProps(obj7);
         obj8 = {};
         const intl23 = arg1(dependencyMap[38]).intl;
         obj8.label = intl23.string(arg1(dependencyMap[38]).t.rBIGBL);
         obj8.IconComponent = arg1(dependencyMap[46]).ThreadIcon;
-        obj8.section = constants8.PRIMARY;
-        obj8.sortKey = 4;
         props = getProps(obj8);
         obj9 = {};
         const intl24 = arg1(dependencyMap[38]).intl;
         obj9.label = intl24.string(arg1(dependencyMap[38]).t.39d0Wj);
         obj9.IconComponent = arg1(dependencyMap[46]).ThreadIcon;
-        obj9.section = constants8.GENERAL;
-        obj9.sortKey = 4;
-        obj10 = {};
         props = getProps(obj9);
+        obj10 = {};
         const intl25 = arg1(dependencyMap[38]).intl;
-        obj10.label = intl25.string(arg1(dependencyMap[38]).t.JrGD7E);
-        obj10.IconComponent = arg1(dependencyMap[40]).CopyIcon;
-        obj10.section = constants8.GENERAL;
-        obj10.sortKey = 5;
-        obj11 = {};
+        obj10.label = intl25.string(arg1(dependencyMap[38]).t.+TSRGD);
+        obj10.IconComponent = arg1(dependencyMap[47]).ChatArrowRightIcon;
         props = getProps(obj10);
+        obj11 = {};
         const intl26 = arg1(dependencyMap[38]).intl;
-        obj11.label = intl26.string(arg1(dependencyMap[38]).t.RpE9k7);
-        obj11.IconComponent = arg1(dependencyMap[47]).ChatMarkUnreadIcon;
-        obj11.section = constants8.GENERAL;
-        obj11.sortKey = 6;
+        obj11.label = intl26.string(arg1(dependencyMap[38]).t.JrGD7E);
+        obj11.IconComponent = arg1(dependencyMap[40]).CopyIcon;
         props = getProps(obj11);
         obj12 = {};
         const intl27 = arg1(dependencyMap[38]).intl;
-        obj12.label = intl27.string(arg1(dependencyMap[38]).t.grdwwt);
-        obj12.IconComponent = arg1(dependencyMap[48]).ClockXIcon;
-        obj12.section = constants8.GENERAL;
-        obj12.sortKey = 7;
+        obj12.label = intl27.string(arg1(dependencyMap[38]).t.RpE9k7);
+        obj12.IconComponent = arg1(dependencyMap[48]).ChatMarkUnreadIcon;
         props = getProps(obj12);
         obj13 = {};
         const intl28 = arg1(dependencyMap[38]).intl;
-        obj13.label = intl28.string(arg1(dependencyMap[38]).t.gHp0C4);
-        obj13.IconComponent = arg1(dependencyMap[49]).ReactionIcon;
-        obj13.section = constants8.GENERAL;
-        obj13.sortKey = 8;
-        obj14 = {};
+        obj13.label = intl28.string(arg1(dependencyMap[38]).t.grdwwt);
+        obj13.IconComponent = arg1(dependencyMap[49]).ClockXIcon;
         props = getProps(obj13);
+        obj14 = {};
         const intl29 = arg1(dependencyMap[38]).intl;
-        obj14.label = intl29.string(arg1(dependencyMap[38]).t.MFGE51);
-        obj14.IconComponent = arg1(dependencyMap[50]).AnnouncementsIcon;
-        obj14.section = constants8.GENERAL;
-        obj14.sortKey = 9;
+        obj14.label = intl29.string(arg1(dependencyMap[38]).t.gHp0C4);
+        obj14.IconComponent = arg1(dependencyMap[50]).ReactionIcon;
         props = getProps(obj14);
         let obj15 = {};
         const intl30 = arg1(dependencyMap[38]).intl;
-        obj15.label = intl30.string(arg1(dependencyMap[38]).t.CvQ18w);
-        obj15.IconComponent = arg1(dependencyMap[51]).PinIcon;
-        obj15.section = constants8.GENERAL;
-        obj15.sortKey = 10;
+        obj15.label = intl30.string(arg1(dependencyMap[38]).t.MFGE51);
+        obj15.IconComponent = arg1(dependencyMap[51]).AnnouncementsIcon;
         props = getProps(obj15);
         const obj16 = {};
         const intl31 = arg1(dependencyMap[38]).intl;
-        obj16.label = intl31.string(arg1(dependencyMap[38]).t.Bse+F/);
-        obj16.IconComponent = arg1(dependencyMap[51]).PinIcon;
-        obj16.section = constants8.GENERAL;
-        obj16.sortKey = 10;
+        obj16.label = intl31.string(arg1(dependencyMap[38]).t.CvQ18w);
+        obj16.IconComponent = arg1(dependencyMap[52]).PinIcon;
         props = getProps(obj16);
         const obj17 = {};
         const intl32 = arg1(dependencyMap[38]).intl;
-        obj17.label = intl32.string(arg1(dependencyMap[38]).t.lE/PG3);
-        obj17.IconComponent = arg1(dependencyMap[52]).StampIcon;
-        obj17.section = constants8.GENERAL;
-        obj17.sortKey = 10.5;
+        obj17.label = intl32.string(arg1(dependencyMap[38]).t.Bse+F/);
+        obj17.IconComponent = arg1(dependencyMap[52]).PinIcon;
         props = getProps(obj17);
         const obj18 = {};
         const intl33 = arg1(dependencyMap[38]).intl;
-        obj18.label = intl33.string(arg1(dependencyMap[38]).t.2km5Gf);
-        obj18.IconComponent = arg1(dependencyMap[53]).StampXIcon;
-        obj18.section = constants8.GENERAL;
-        obj18.sortKey = 10.5;
+        obj18.label = intl33.string(arg1(dependencyMap[38]).t.lE/PG3);
+        obj18.IconComponent = arg1(dependencyMap[53]).StampIcon;
         props = getProps(obj18);
         const obj19 = {};
         const intl34 = arg1(dependencyMap[38]).intl;
-        obj19.label = intl34.string(arg1(dependencyMap[38]).t.tpxJto);
-        obj19.IconComponent = arg1(dependencyMap[54]).NitroWheelIcon;
-        obj19.section = constants8.GENERAL;
-        obj19.sortKey = 11;
+        obj19.label = intl34.string(arg1(dependencyMap[38]).t.2km5Gf);
+        obj19.IconComponent = arg1(dependencyMap[54]).StampXIcon;
         props = getProps(obj19);
         const obj20 = {};
         const intl35 = arg1(dependencyMap[38]).intl;
         obj20.label = intl35.string(arg1(dependencyMap[38]).t.tpxJto);
-        obj20.IconComponent = arg1(dependencyMap[55]).BookmarkOutlineIcon;
-        obj20.section = constants8.GENERAL;
-        obj20.sortKey = 11;
+        obj20.IconComponent = arg1(dependencyMap[55]).NitroWheelIcon;
         props = getProps(obj20);
         const obj21 = {};
         const intl36 = arg1(dependencyMap[38]).intl;
-        obj21.label = intl36.string(arg1(dependencyMap[38]).t.SvXS1Z);
-        obj21.IconComponent = arg1(dependencyMap[56]).BookmarkIcon;
-        obj21.section = constants8.GENERAL;
-        obj21.sortKey = 11;
+        obj21.label = intl36.string(arg1(dependencyMap[38]).t.tpxJto);
+        obj21.IconComponent = arg1(dependencyMap[56]).BookmarkOutlineIcon;
         props = getProps(obj21);
         const obj22 = {};
         const intl37 = arg1(dependencyMap[38]).intl;
-        obj22.label = intl37.string(arg1(dependencyMap[38]).t.mJ3P0N);
-        obj22.IconComponent = arg1(dependencyMap[57]).ClockIcon;
-        obj22.arrow = true;
-        obj22.section = constants8.GENERAL;
-        obj22.sortKey = 12;
+        obj22.label = intl37.string(arg1(dependencyMap[38]).t.SvXS1Z);
+        obj22.IconComponent = arg1(dependencyMap[57]).BookmarkIcon;
         props = getProps(obj22);
         const obj23 = {};
         const intl38 = arg1(dependencyMap[38]).intl;
-        obj23.label = intl38.string(arg1(dependencyMap[38]).t.vrbqs1);
-        obj23.IconComponent = arg1(dependencyMap[57]).ClockIcon;
+        obj23.label = intl38.string(arg1(dependencyMap[38]).t.mJ3P0N);
+        obj23.IconComponent = arg1(dependencyMap[58]).ClockIcon;
         obj23.arrow = true;
-        obj23.section = constants8.GENERAL;
-        obj23.sortKey = 12;
         props = getProps(obj23);
         const obj24 = {};
         const intl39 = arg1(dependencyMap[38]).intl;
-        obj24.label = intl39.string(arg1(dependencyMap[38]).t.PHjkRE);
-        obj24.IconComponent = arg1(dependencyMap[58]).RobotIcon;
+        obj24.label = intl39.string(arg1(dependencyMap[38]).t.vrbqs1);
+        obj24.IconComponent = arg1(dependencyMap[58]).ClockIcon;
         obj24.arrow = true;
-        obj24.section = constants8.GENERAL;
-        obj24.sortKey = 13;
         props = getProps(obj24);
         const obj25 = {};
         const intl40 = arg1(dependencyMap[38]).intl;
-        obj25.label = intl40.string(arg1(dependencyMap[38]).t.g33r/P);
-        obj25.IconComponent = arg1(dependencyMap[59]).ChatIcon;
-        obj25.section = constants8.GENERAL;
-        obj25.sortKey = 14;
+        obj25.label = intl40.string(arg1(dependencyMap[38]).t.PHjkRE);
+        obj25.IconComponent = arg1(dependencyMap[59]).RobotIcon;
+        obj25.arrow = true;
         props = getProps(obj25);
         const obj26 = {};
         const intl41 = arg1(dependencyMap[38]).intl;
-        obj26.label = intl41.string(arg1(dependencyMap[38]).t.P8tvKG);
-        obj26.IconComponent = arg1(dependencyMap[60]).AtIcon;
-        obj26.section = constants8.GENERAL;
-        obj26.sortKey = 15;
+        obj26.label = intl41.string(arg1(dependencyMap[38]).t.g33r/P);
+        obj26.IconComponent = arg1(dependencyMap[60]).ChatIcon;
         props = getProps(obj26);
         const obj27 = {};
         const intl42 = arg1(dependencyMap[38]).intl;
-        obj27.label = intl42.string(arg1(dependencyMap[38]).t.S/xNKV);
-        obj27.IconComponent = arg1(dependencyMap[61]).DownloadIcon;
-        obj27.section = constants8.GENERAL;
-        obj27.sortKey = 16;
-        let obj28 = {};
+        obj27.label = intl42.string(arg1(dependencyMap[38]).t.P8tvKG);
+        obj27.IconComponent = arg1(dependencyMap[61]).AtIcon;
         props = getProps(obj27);
+        let obj28 = {};
         const intl43 = arg1(dependencyMap[38]).intl;
-        obj28.label = intl43.string(arg1(dependencyMap[38]).t.JVuuz3);
-        obj28.IconComponent = arg1(dependencyMap[61]).DownloadIcon;
-        obj28.section = constants8.GENERAL;
-        obj28.sortKey = 16;
-        let obj29 = {};
+        obj28.label = intl43.string(arg1(dependencyMap[38]).t.S/xNKV);
+        obj28.IconComponent = arg1(dependencyMap[62]).DownloadIcon;
         props = getProps(obj28);
+        let obj29 = {};
         const intl44 = arg1(dependencyMap[38]).intl;
-        obj29.label = intl44.string(arg1(dependencyMap[38]).t.vbAEaA);
-        obj29.IconComponent = arg1(dependencyMap[61]).DownloadIcon;
-        obj29.section = constants8.GENERAL;
-        obj29.sortKey = 16;
+        obj29.label = intl44.string(arg1(dependencyMap[38]).t.JVuuz3);
+        obj29.IconComponent = arg1(dependencyMap[62]).DownloadIcon;
+        props = getProps(obj29);
+        let obj30 = {};
+        const intl45 = arg1(dependencyMap[38]).intl;
+        obj30.label = intl45.string(arg1(dependencyMap[38]).t.vbAEaA);
+        obj30.IconComponent = arg1(dependencyMap[62]).DownloadIcon;
+        props = getProps(obj30);
         props = selectedMedia;
         let mediaUrl;
-        props = getProps(obj29);
         if (null != tmp3) {
           mediaUrl = tmp3.mediaUrl;
         }
@@ -651,47 +583,38 @@ export default function LongPressMessageActionSheet(analyticsLocation) {
         }
         while (true) {
           let tmp91 = getProps;
-          let obj30 = {};
+          let obj31 = {};
           let tmp92 = arg1;
           let tmp93 = dependencyMap;
           let intl = arg1(dependencyMap[38]).intl;
           let tmp94 = arg1;
           let tmp95 = dependencyMap;
           let t = arg1(dependencyMap[38]).t;
-          obj30.label = intl.string(isMatch ? t.8xHmxo : t.92CPQ+);
+          obj31.label = intl.string(isMatch ? t.8xHmxo : t.92CPQ+);
           let tmp96 = arg1;
           let tmp97 = dependencyMap;
           let num5 = 42;
-          obj30.IconComponent = arg1(dependencyMap[42]).LinkIcon;
-          let tmp98 = constants8;
-          obj30.section = constants8.GENERAL;
-          obj30.sortKey = 17;
-          props = getProps;
-          let obj31 = {};
-          props = getProps(obj30);
-          let intl2 = arg1(dependencyMap[38]).intl;
-          obj31.label = intl2.string(arg1(dependencyMap[38]).t.Xrt5Po);
           obj31.IconComponent = arg1(dependencyMap[42]).LinkIcon;
-          obj31.section = constants8.GENERAL;
-          obj31.sortKey = 50;
           props = getProps(obj31);
+          let tmp99 = getProps;
           let obj32 = {};
-          let intl3 = arg1(dependencyMap[38]).intl;
-          obj32.label = intl3.string(arg1(dependencyMap[38]).t.Rjezbz);
-          obj32.IconComponent = arg1(dependencyMap[57]).ClockIcon;
-          obj32.arrow = true;
-          obj32.section = constants8.GENERAL;
-          obj32.sortKey = 51;
-          let obj33 = {};
+          let intl2 = arg1(dependencyMap[38]).intl;
+          obj32.label = intl2.string(arg1(dependencyMap[38]).t.Xrt5Po);
+          obj32.IconComponent = arg1(dependencyMap[42]).LinkIcon;
           props = getProps(obj32);
-          let intl4 = arg1(dependencyMap[38]).intl;
-          obj33.label = intl4.string(arg1(dependencyMap[38]).t.zBoHlf);
-          let num6 = 62;
-          obj33.IconComponent = arg1(dependencyMap[62]).IdIcon;
-          obj33.section = constants8.GENERAL;
-          obj33.sortKey = 52;
-          let obj34 = {};
+          let obj33 = {};
+          let intl3 = arg1(dependencyMap[38]).intl;
+          obj33.label = intl3.string(arg1(dependencyMap[38]).t.Rjezbz);
+          obj33.IconComponent = arg1(dependencyMap[58]).ClockIcon;
+          obj33.arrow = true;
           props = getProps(obj33);
+          let obj34 = {};
+          let intl4 = arg1(dependencyMap[38]).intl;
+          obj34.label = intl4.string(arg1(dependencyMap[38]).t.zBoHlf);
+          let num6 = 63;
+          obj34.IconComponent = arg1(dependencyMap[63]).IdIcon;
+          props = getProps(obj34);
+          let obj35 = {};
           if (length > 1) {
             props = arg1;
             props = dependencyMap;
@@ -703,86 +626,62 @@ export default function LongPressMessageActionSheet(analyticsLocation) {
             let intl5 = arg1(dependencyMap[38]).intl;
             props = intl5.string(arg1(dependencyMap[38]).t.4sxKOb);
           }
-          obj34.label = props;
+          obj35.label = props;
           props = arg1;
           props = dependencyMap;
-          let num7 = 63;
-          obj34.IconComponent = arg1(dependencyMap[63]).XSmallBoldIcon;
+          let num7 = 64;
+          obj35.IconComponent = arg1(dependencyMap[64]).XSmallBoldIcon;
           let str4 = "danger";
-          obj34.variant = "danger";
-          props = constants8;
-          obj34.section = constants8.DESTRUCTIVE;
-          let num8 = 98;
-          obj34.sortKey = 98;
-          props = getProps(obj34);
-          props = getProps;
-          let obj35 = {};
-          let intl7 = arg1(dependencyMap[38]).intl;
-          obj35.label = intl7.string(arg1(dependencyMap[38]).t.ZbtGBm);
-          let num9 = 41;
-          obj35.IconComponent = arg1(dependencyMap[41]).TrashIcon;
           obj35.variant = "danger";
-          obj35.section = constants8.DESTRUCTIVE;
-          let num10 = 99;
-          obj35.sortKey = 99;
           props = getProps(obj35);
+          props = getProps;
           let obj36 = {};
-          let intl8 = arg1(dependencyMap[38]).intl;
-          obj36.label = intl8.string(arg1(dependencyMap[38]).t.kFwAsa);
+          let intl7 = arg1(dependencyMap[38]).intl;
+          obj36.label = intl7.string(arg1(dependencyMap[38]).t.ZbtGBm);
+          let num8 = 41;
           obj36.IconComponent = arg1(dependencyMap[41]).TrashIcon;
           obj36.variant = "danger";
-          obj36.section = constants8.DESTRUCTIVE;
-          let num11 = 100;
-          obj36.sortKey = 100;
           props = getProps(obj36);
           let obj37 = {};
-          let intl9 = arg1(dependencyMap[38]).intl;
-          obj37.label = intl9.string(arg1(dependencyMap[38]).t.+78Pfm);
-          let num12 = 64;
-          obj37.IconComponent = arg1(dependencyMap[64]).FlagIcon;
+          let intl8 = arg1(dependencyMap[38]).intl;
+          obj37.label = intl8.string(arg1(dependencyMap[38]).t.kFwAsa);
+          obj37.IconComponent = arg1(dependencyMap[41]).TrashIcon;
           obj37.variant = "danger";
-          obj37.section = constants8.DESTRUCTIVE;
-          let num13 = 101;
-          obj37.sortKey = 101;
           props = getProps(obj37);
           let obj38 = {};
-          let intl10 = arg1(dependencyMap[38]).intl;
-          obj38.label = intl10.string(arg1(dependencyMap[38]).t.n5EBAJ);
+          let intl9 = arg1(dependencyMap[38]).intl;
+          obj38.label = intl9.string(arg1(dependencyMap[38]).t.+78Pfm);
+          let num9 = 65;
+          obj38.IconComponent = arg1(dependencyMap[65]).FlagIcon;
           obj38.variant = "danger";
-          let num14 = 65;
-          obj38.IconComponent = arg1(dependencyMap[65]).ClydeIcon;
-          obj38.section = constants8.DESTRUCTIVE;
-          obj38.sortKey = 101;
           props = getProps(obj38);
           let obj39 = {};
-          let intl11 = arg1(dependencyMap[38]).intl;
-          props = importDefault;
-          let num15 = 66;
-          obj39.label = intl11.string(importDefault(dependencyMap[66]).1D+vqy);
-          obj39.IconComponent = arg1(dependencyMap[64]).FlagIcon;
-          obj39.section = constants8.DESTRUCTIVE;
-          let num16 = 102;
-          obj39.sortKey = 102;
-          obj39.disabled = stateFromStores;
+          let intl10 = arg1(dependencyMap[38]).intl;
+          obj39.label = intl10.string(arg1(dependencyMap[38]).t.n5EBAJ);
+          obj39.variant = "danger";
+          let num10 = 66;
+          obj39.IconComponent = arg1(dependencyMap[66]).ClydeIcon;
           props = getProps(obj39);
           let obj40 = {};
-          let intl12 = arg1(dependencyMap[38]).intl;
-          obj40.label = intl12.string(arg1(dependencyMap[38]).t.ZH7P2h);
-          let num17 = 67;
-          obj40.IconComponent = arg1(dependencyMap[67]).ImageWarningIcon;
-          obj40.section = constants8.DESTRUCTIVE;
-          let num18 = 103;
-          obj40.sortKey = 103;
-          let obj41 = {};
+          let intl11 = arg1(dependencyMap[38]).intl;
+          props = importDefault;
+          let num11 = 67;
+          obj40.label = intl11.string(importDefault(dependencyMap[67]).1D+vqy);
+          obj40.IconComponent = arg1(dependencyMap[65]).FlagIcon;
+          obj40.disabled = stateFromStores;
           props = getProps(obj40);
-          let intl13 = arg1(dependencyMap[38]).intl;
-          obj41.label = intl13.string(arg1(dependencyMap[38]).t.xwMqD7);
-          obj41.IconComponent = arg1(dependencyMap[41]).TrashIcon;
-          obj41.variant = "danger";
-          obj41.section = constants8.DESTRUCTIVE;
-          let num19 = 110;
-          obj41.sortKey = 110;
+          let obj41 = {};
+          let intl12 = arg1(dependencyMap[38]).intl;
+          obj41.label = intl12.string(arg1(dependencyMap[38]).t.ZH7P2h);
+          let num12 = 68;
+          obj41.IconComponent = arg1(dependencyMap[68]).ImageWarningIcon;
           props = getProps(obj41);
+          let obj42 = {};
+          let intl13 = arg1(dependencyMap[38]).intl;
+          obj42.label = intl13.string(arg1(dependencyMap[38]).t.xwMqD7);
+          obj42.IconComponent = arg1(dependencyMap[41]).TrashIcon;
+          obj42.variant = "danger";
+          props = getProps(obj42);
           let items10 = [];
           props = tmp4;
           let str5 = "Preview";
@@ -790,7 +689,7 @@ export default function LongPressMessageActionSheet(analyticsLocation) {
           if (!props) {
             props = arg1;
             props = dependencyMap;
-            let num20 = 28;
+            let num13 = 28;
             obj28 = arg1(dependencyMap[28]);
             props = message;
             props = constants3;
@@ -798,12 +697,12 @@ export default function LongPressMessageActionSheet(analyticsLocation) {
           }
           if (props) {
             props = items10;
-            props = items10.push(props, props, props, props, props, props, props, props, props, props, props, props, props, props, props);
+            props = items10.push(props, props, props, props, props, props, props, props, props, props, props, props, props, props);
           }
           if (tmp23) {
             props = arg1;
             props = dependencyMap;
-            let num21 = 28;
+            let num14 = 28;
             obj29 = arg1(dependencyMap[28]);
             props = message;
             props = constants3;
@@ -815,12 +714,12 @@ export default function LongPressMessageActionSheet(analyticsLocation) {
           }
           props = arg1;
           props = dependencyMap;
-          let num22 = 28;
+          let num15 = 28;
           obj30 = arg1(dependencyMap[28]);
           props = constants3;
           if (obj30.hasFlag(message.flags, constants3.EPHEMERAL)) {
             props = items10;
-            props = items10.push(props, props, props, props, props);
+            props = items10.push(props, props, props, props, props, props);
           }
           props = globalThis;
           let _Set = Set;
@@ -830,6 +729,10 @@ export default function LongPressMessageActionSheet(analyticsLocation) {
           props = new Set(items10);
           closure_11 = props;
           let items11 = [];
+          if ("Preview" === tmp4) {
+            props = items11;
+            props = items11.unshift(props);
+          }
           if (canStartPublicThread) {
             props = items11;
             props = items11.unshift(props);
@@ -850,8 +753,8 @@ export default function LongPressMessageActionSheet(analyticsLocation) {
           if (tmp72) {
             props = arg1;
             props = dependencyMap;
-            let num23 = 68;
-            obj31 = arg1(dependencyMap[68]);
+            let num16 = 69;
+            obj31 = arg1(dependencyMap[69]);
             props = message;
             if (obj31.canReportMessageToMods(obj1)) {
               props = items11;
@@ -895,7 +798,6 @@ export default function LongPressMessageActionSheet(analyticsLocation) {
                   props = items11;
                   props = items11.unshift(props);
                 }
-                props = first;
                 props = items11;
                 let unshift = items11.unshift;
                 if (first) {
@@ -930,10 +832,10 @@ export default function LongPressMessageActionSheet(analyticsLocation) {
             }
             props = importDefault;
             props = dependencyMap;
-            let num26 = 70;
+            let num19 = 71;
             props = message;
             props = id1;
-            props = importDefault(dependencyMap[70])(obj1, tmp28);
+            props = importDefault(dependencyMap[71])(obj1, tmp28);
             if (props) {
               props = !isNonModInLockedThread;
             }
@@ -1009,12 +911,12 @@ export default function LongPressMessageActionSheet(analyticsLocation) {
                     props = items11.unshift(props);
                   } else {
                     props = selectedMedia;
-                    let str13 = "video";
+                    let str12 = "video";
                     if ("video" === tmp3.mediaType) {
                       props = arg1;
                       props = dependencyMap;
-                      let num27 = 71;
-                      obj35 = arg1(dependencyMap[71]);
+                      let num20 = 72;
+                      obj35 = arg1(dependencyMap[72]);
                       props = selectedMedia;
                       if (!obj35.isWebPlayerVideoUrl(tmp3.mediaUrl)) {
                         props = items11;
@@ -1036,8 +938,8 @@ export default function LongPressMessageActionSheet(analyticsLocation) {
                   }
                   props = arg1;
                   props = dependencyMap;
-                  let num28 = 72;
-                  obj36 = arg1(dependencyMap[72]);
+                  let num21 = 73;
+                  obj36 = arg1(dependencyMap[73]);
                   props = message;
                   if (obj36.messageHasObscurableMedia(obj1)) {
                     props = items11;
@@ -1061,8 +963,8 @@ export default function LongPressMessageActionSheet(analyticsLocation) {
                   if (!props) {
                     props = arg1;
                     props = dependencyMap;
-                    let num29 = 73;
-                    obj37 = arg1(dependencyMap[73]);
+                    let num22 = 74;
+                    obj37 = arg1(dependencyMap[74]);
                     props = message;
                     props = obj37.hasNonVoteReactions(obj1);
                   }
@@ -1096,24 +998,27 @@ export default function LongPressMessageActionSheet(analyticsLocation) {
                 props = items11.unshift(props);
                 props = arg1;
                 props = dependencyMap;
-                let num30 = 74;
-                obj38 = arg1(dependencyMap[74]);
+                let num23 = 75;
+                obj38 = arg1(dependencyMap[75]);
                 if (obj38.canViewInteractionInfo(message)) {
                   props = items11;
                   props = items11.unshift(props);
                 }
+                let _Set2 = Set;
                 props = items11;
-                let found = items11.filter((arg0) => !props.has(arg0));
-                props = arg1;
-                props = dependencyMap;
-                let num31 = 75;
-                props = found.sort((sortKey, sortKey2) => sortKey.sortKey - sortKey2.sortKey);
-                obj40 = arg1(dependencyMap[75]);
-                let str10 = "section";
+                props = new.target;
+                props = new.target;
+                props = new Set(items11.filter((arg0) => !props.has(arg0)));
+                FileUploadErrorTypes = props;
                 props = render;
-                let _Object = Object;
-                let values = Object.values(obj40.groupBy(props, "section"));
-                return render(values.map((arr) => arr.map((arg0) => arg0)));
+                let items12 = [props, props, props, props];
+                let items13 = [items12, , ];
+                let items14 = [props, props, props, props, props, props, props, props, props, props, props, props, props, props, props, props, props, props, props, props, props, props, props, props, props, props];
+                items13[1] = items14;
+                let items15 = [props, props, props, props, props, props, props, props];
+                items13[2] = items15;
+                let mapped = items13.map((arr) => arr.filter((arg0) => set.has(arg0)));
+                return render(mapped.filter((arg0) => arg0.length > 0));
               } else {
                 props = items11;
                 props = arg1;
@@ -1121,12 +1026,12 @@ export default function LongPressMessageActionSheet(analyticsLocation) {
                 obj34 = arg1(dependencyMap[28]);
                 props = message;
                 props = constants3;
-                props = items11.unshift(props);
+                props = items11.unshift(obj34.hasFlag(obj1.flags, constants3.IS_GUILD_OFFICIAL) ? props : props);
               }
             } else {
               props = items11;
               props = message;
-              props = items11.unshift(props);
+              props = items11.unshift(obj1.pinned ? props : props);
             }
           }
           props = user;
@@ -1134,16 +1039,16 @@ export default function LongPressMessageActionSheet(analyticsLocation) {
           if (props) {
             props = arg1;
             props = dependencyMap;
-            let num24 = 69;
-            obj32 = arg1(dependencyMap[69]);
+            let num17 = 70;
+            obj32 = arg1(dependencyMap[70]);
             props = user;
             props = obj32.canReportUser(user);
           }
           if (props) {
             props = arg1;
             props = dependencyMap;
-            let num25 = 69;
-            obj33 = arg1(dependencyMap[69]);
+            let num18 = 70;
+            obj33 = arg1(dependencyMap[70]);
             props = message;
             props = obj33.canReportMessage(obj1);
           }

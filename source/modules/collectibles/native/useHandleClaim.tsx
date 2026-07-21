@@ -1,15 +1,13 @@
-// Module ID: 11821
-// Function ID: 91673
+// Module ID: 11828
+// Function ID: 91696
 // Name: useHandleClaim
-// Dependencies: [0, 0, 0, 0, 0, 0, 0, 0]
+// Dependencies: []
 // Exports: useHandleClaim
 
-// Module 11821 (useHandleClaim)
-import closure_3 from "result";
-import closure_4 from "result";
-import result from "result";
-
-result = result.fileFinishedImporting("modules/collectibles/native/useHandleClaim.tsx");
+// Module 11828 (useHandleClaim)
+let closure_3 = importDefault(dependencyMap[0]);
+let closure_4 = importAll(dependencyMap[1]);
+const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/collectibles/native/useHandleClaim.tsx");
 
 export const useHandleClaim = function useHandleClaim(product) {
   product = product.product;

@@ -1,8 +1,8 @@
-// Module ID: 13271
-// Function ID: 100828
-// Dependencies: [5, 57, 31, 27, 1348, 1849, 1347, 8806]
+// Module ID: 13278
+// Function ID: 100851
+// Dependencies: [5, 57, 31, 27, 1348, 1849, 1347, 8810]
 
-// Module 13271
+// Module 13278
 import asyncGeneratorStep from "asyncGeneratorStep";
 import module_31 from "module_31";
 import UserRowModes from "UserRowModes";
@@ -18,7 +18,7 @@ export default {
       obj = {};
       const requiredResult = obj.required();
       const stringResult = string.string();
-      obj.type = string.string().required().valid(["<string:217055233>"]);
+      obj.type = string.string().required().valid([true]);
       const requiredResult1 = string.string().required();
       obj.id = string.string().required();
       const stringResult1 = string.string();
@@ -26,7 +26,7 @@ export default {
       obj.format = string.string().required().valid([]);
       const requiredResult2 = string.string().required();
       const numberResult = string.number();
-      obj.size = string.number().required().valid(["ru-UA", "ro-MD", "boL/YX", "onFinished", "plum", "postableChannelCount", "notification"]);
+      obj.size = string.number().required().valid(["getAudioDeviceStates", "setScene", "SOUL", "errExpectingQPair", "useMaxQuality", "_velocity", "ars"]);
       return requiredResult.keys(obj);
     },
     handler(args) {

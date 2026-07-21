@@ -1,17 +1,17 @@
-// Module ID: 11683
-// Function ID: 90672
+// Module ID: 11690
+// Function ID: 90695
 // Name: HubProgressHeader
 // Dependencies: []
 // Exports: default
 
-// Module 11683 (HubProgressHeader)
+// Module 11690 (HubProgressHeader)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 ({ HUB_PROGRESS_ACTION_SHEET_ID: closure_4, HUB_PROGRESS_NUM_TOTAL_STEPS: closure_5 } = arg1(dependencyMap[2]));
 const jsx = arg1(dependencyMap[4]).jsx;
 let obj = arg1(dependencyMap[5]);
-obj = { container: obj, icon: {} };
-obj = { "Bool(true)": "%Float64Array%", "Bool(true)": "communicationRank", "Bool(true)": "%Float64Array%", height: arg1(dependencyMap[3]).GUILD_DIRECTORY_PROGRESS_BAR_HEIGHT };
+obj = { container: obj, icon: { bhk: null, bic: null } };
+obj = { "Null": "text-sm/semibold", "Null": null, "Null": 1, height: arg1(dependencyMap[3]).GUILD_DIRECTORY_PROGRESS_BAR_HEIGHT };
 const tmp3 = arg1(dependencyMap[2]);
 obj.innerContainer = { backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_SURFACE_HIGH };
 let closure_7 = obj.createStyles(obj);

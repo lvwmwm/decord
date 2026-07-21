@@ -1,10 +1,10 @@
-// Module ID: 8977
-// Function ID: 70738
+// Module ID: 8981
+// Function ID: 70750
 // Name: CloseButton
 // Dependencies: []
 // Exports: default
 
-// Module 8977 (CloseButton)
+// Module 8981 (CloseButton)
 function CloseButton() {
   const obj = {
     source: importDefault(dependencyMap[5]),
@@ -48,7 +48,7 @@ export default function CrunchyrollLinkModal(locationStack) {
       headerRight: closure_7,
       headerStyle: twoWayLinkStyles.navHeader,
       headerTitle() {
-        return callback2(onClose(closure_2[9]).TwoWayLinkStepHeader, { "Null": "Lightbox Frame", "Null": "EdgeHTML" });
+        return callback2(onClose(closure_2[9]).TwoWayLinkStepHeader, {});
       },
       render() {
         return callback2(callback(closure_2[10]), {});

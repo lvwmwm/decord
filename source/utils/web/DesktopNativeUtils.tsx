@@ -1,9 +1,9 @@
-// Module ID: 5408
-// Function ID: 46112
+// Module ID: 5410
+// Function ID: 46154
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 
-// Module 5408 (_createForOfIteratorHelperLoose)
+// Module 5410 (_createForOfIteratorHelperLoose)
 function _createForOfIteratorHelperLoose(@@iterator) {
   let arg1 = Symbol_iterator;
   @@iterator = "undefined" !== typeof Symbol;
@@ -92,7 +92,7 @@ function getFileData() {
   return _getFileData(...arguments);
 }
 async function _getFileData(arg0, arg1) {
-  const request = new Request(arg0, {});
+  const request = new Request(arg0, { decorationStyle: true, VideoToggleState: true });
   const obj = yield fetch(request);
   callback(closure_2[3])(200 === obj.status, "Data fetch unsuccessful");
   const tmp3 = yield obj.arrayBuffer();
@@ -204,7 +204,7 @@ function backwardCompatSend(APP_ASYNC_INDEX_TSX_LOADED) {
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 const NativeFeatures = arg1(dependencyMap[2]).NativeFeatures;
-const set = new Set([]);
+const set = new Set([1.9, 2, 13, 145]);
 const set1 = new Set([]);
 let closure_9 = null;
 let buildNumber = null;
@@ -1356,7 +1356,7 @@ obj.getDesktopSourceFromPid = function getDesktopSourceFromPid(arg0) {
         if (null != windowHandleFromPid) {
           joined = null;
           if (0 !== windowHandleFromPid.length) {
-            const items = ["<string:2433569280>", windowHandleFromPid, "0"];
+            const items = [0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000009506925078568072, windowHandleFromPid, "0"];
             joined = items.join(":");
           }
         }
@@ -1926,7 +1926,7 @@ obj.isModuleVersionAtLeast = function isModuleVersionAtLeast(arg0, stable) {
   let tmp8;
   let tmp9;
   const self = this;
-  const items = [...null != closure_9 ? closure_9 : [true, true, true]];
+  const items = [...null != closure_9 ? closure_9 : ["TRACEPARENT_REGEXP", "spinnerVisibleStart", "namespaceURI"]];
   const moduleVersions = self.moduleVersions;
   let tmp2;
   if (null != moduleVersions) {

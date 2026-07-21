@@ -1,10 +1,10 @@
-// Module ID: 9861
-// Function ID: 76363
+// Module ID: 9866
+// Function ID: 76379
 // Name: ForwardModal
 // Dependencies: []
 // Exports: default
 
-// Module 9861 (ForwardModal)
+// Module 9866 (ForwardModal)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 let closure_5 = importAll(dependencyMap[2]);
@@ -21,8 +21,8 @@ let obj = arg1(dependencyMap[12]);
 obj = {};
 obj = { paddingHorizontal: importDefault(dependencyMap[13]).space.PX_16, paddingVertical: importDefault(dependencyMap[13]).space.PX_8, backgroundColor: importDefault(dependencyMap[13]).colors.MOBILE_ACTIONSHEET_BACKGROUND };
 obj.headerContainer = obj;
-obj.header = {};
-const obj1 = { TN: true, wrapperPageY: true, backgroundColor: importDefault(dependencyMap[13]).colors.MOBILE_ACTIONSHEET_BACKGROUND };
+obj.header = { NU: true, SMS_CODE_LENGTH: true, EPOCH_AUTHENTICATOR_LENGTH: true };
+const obj1 = { label: "isArray", accessibilityRole: "accessibilityRole", backgroundColor: importDefault(dependencyMap[13]).colors.MOBILE_ACTIONSHEET_BACKGROUND };
 obj.container = obj1;
 let closure_16 = obj.createStyles(obj);
 const tmp2 = arg1(dependencyMap[11]);

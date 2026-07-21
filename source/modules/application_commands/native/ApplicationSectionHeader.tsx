@@ -1,22 +1,22 @@
-// Module ID: 11421
-// Function ID: 88912
+// Module ID: 11428
+// Function ID: 88936
 // Name: ApplicationSectionHeader
 // Dependencies: []
 // Exports: default
 
-// Module 11421 (ApplicationSectionHeader)
+// Module 11428 (ApplicationSectionHeader)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 let closure_4 = importDefault(dependencyMap[2]);
 ({ jsx: closure_5, jsxs: closure_6 } = arg1(dependencyMap[3]));
 let obj = arg1(dependencyMap[4]);
 obj = {};
-obj = { "Null": 1, "Null": 71, "Null": null, "Null": 1, "Null": "center", backgroundColor: importDefault(dependencyMap[5]).colors.MOBILE_FLOATING_ACCESSORY_BACKGROUND };
+obj = { flex: 1, height: 71, alignItems: null, backgroundColor: importDefault(dependencyMap[5]).colors.MOBILE_FLOATING_ACCESSORY_BACKGROUND, paddingHorizontal: "center" };
 obj.applicationHeaderWrapper = obj;
-const tmp3 = arg1(dependencyMap[3]);
-obj.applicationIcon = { borderRadius: importDefault(dependencyMap[5]).radii.sm };
+const obj1 = { "Bool(true)": false, "Bool(true)": false, "Bool(true)": false, "Bool(true)": false, borderRadius: importDefault(dependencyMap[5]).radii.sm };
+obj.applicationIcon = obj1;
 let closure_7 = obj.createStyles(obj);
-const obj1 = { borderRadius: importDefault(dependencyMap[5]).radii.sm };
+const tmp3 = arg1(dependencyMap[3]);
 const result = arg1(dependencyMap[11]).fileFinishedImporting("modules/application_commands/native/ApplicationSectionHeader.tsx");
 
 export default function ApplicationSectionHeader(section) {
@@ -58,7 +58,7 @@ export default function ApplicationSectionHeader(section) {
     tmp7 = callback(importDefault(dependencyMap[9]), obj1);
   }
   const items1 = [tmp7, ];
-  const obj2 = { INTEGRATION_CREATE: "MediaModalYoutubeEmbedError", ConstraintReasonCode: "d\u0131", children: name };
+  const obj2 = { children: name };
   items1[1] = callback(arg1(dependencyMap[10]).Text, obj2);
   obj.children = items1;
   return closure_6(View, obj);

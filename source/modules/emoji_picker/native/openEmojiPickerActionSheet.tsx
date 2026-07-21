@@ -1,10 +1,10 @@
-// Module ID: 9314
-// Function ID: 72778
+// Module ID: 9318
+// Function ID: 72792
 // Name: EMOJI_PICKER_ACTION_SHEET_KEY
 // Dependencies: []
 // Exports: openEmojiPickerActionSheet
 
-// Module 9314 (EMOJI_PICKER_ACTION_SHEET_KEY)
+// Module 9318 (EMOJI_PICKER_ACTION_SHEET_KEY)
 const EmojiInteractionPoint = require(dependencyMap[0]).EmojiInteractionPoint;
 const _module = require(dependencyMap[5]);
 const result = _module.fileFinishedImporting("modules/emoji_picker/native/openEmojiPickerActionSheet.tsx");

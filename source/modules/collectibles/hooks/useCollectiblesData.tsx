@@ -1,10 +1,10 @@
-// Module ID: 7846
-// Function ID: 62563
+// Module ID: 7850
+// Function ID: 62575
 // Name: useCollectiblesData
 // Dependencies: []
 // Exports: default
 
-// Module 7846 (useCollectiblesData)
+// Module 7850 (useCollectiblesData)
 let closure_2 = importDefault(dependencyMap[0]);
 let closure_3 = importDefault(dependencyMap[1]);
 let closure_4 = importDefault(dependencyMap[2]);

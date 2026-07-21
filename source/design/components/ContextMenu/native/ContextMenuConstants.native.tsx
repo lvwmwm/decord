@@ -1,9 +1,9 @@
-// Module ID: 9292
-// Function ID: 72598
+// Module ID: 9296
+// Function ID: 72610
 // Name: CONTEXT_MENU_LONG_PRESS_DURATION_MS
 // Dependencies: []
 
-// Module 9292 (CONTEXT_MENU_LONG_PRESS_DURATION_MS)
+// Module 9296 (CONTEXT_MENU_LONG_PRESS_DURATION_MS)
 const _module = require(dependencyMap[0]);
 const HapticFeedbackTypes = require(dependencyMap[1]).HapticFeedbackTypes;
 const isIOSResult = _module.isIOS();

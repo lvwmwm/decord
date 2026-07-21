@@ -1,21 +1,21 @@
-// Module ID: 10232
-// Function ID: 79082
+// Module ID: 10238
+// Function ID: 79101
 // Name: NotificationWrapper
-// Dependencies: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4294967295, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+// Dependencies: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4294967295, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 // Exports: default
 
-// Module 10232 (NotificationWrapper)
-import closure_3 from "result";
-import closure_4 from "result";
-import result from "result";
-import closure_8 from "result";
-import closure_9 from "result";
-import result from "result";
-import result from "result";
-import result from "result";
-import { Easing } from "result";
-import result from "result";
-import result from "result";
+// Module 10238 (NotificationWrapper)
+import closure_3 from "__exportStarResult1";
+import closure_4 from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
+import closure_8 from "__exportStarResult1";
+import closure_9 from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
+import { Easing } from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
 
 function NotificationWrapper(notification) {
   notification = notification.notification;
@@ -65,13 +65,13 @@ function DetachedNotificationContent(notification) {
   }
   return tmp;
 }
-({ View: closure_5, StyleSheet: closure_6, Keyboard: closure_7 } = result);
-({ DEFAULT_ANIMATION_TIMING: closure_10, extrapolateConfig: closure_11, MIN_SWIPE_DISTANCE: closure_12, MIN_SWIPE_VELOCITY: closure_13, NOTIFICATION_BOB_RANGE: closure_14, EXPANDABLE_MIN_WINDOW_HEIGHT: closure_15, PAN_INPUT_RANGE: closure_16 } = result);
-({ InAppNotificationTypes: closure_17, AnalyticEvents: closure_18, AnalyticsSections: closure_19, AnalyticsObjects: closure_20, AnalyticsObjectTypes: closure_21 } = result);
-({ jsx: closure_22, jsxs: closure_23 } = result);
+({ View: closure_5, StyleSheet: closure_6, Keyboard: closure_7 } = __exportStarResult1);
+({ DEFAULT_ANIMATION_TIMING: closure_10, extrapolateConfig: closure_11, MIN_SWIPE_DISTANCE: closure_12, MIN_SWIPE_VELOCITY: closure_13, NOTIFICATION_BOB_RANGE: closure_14, EXPANDABLE_MIN_WINDOW_HEIGHT: closure_15, PAN_INPUT_RANGE: closure_16 } = __exportStarResult1);
+({ InAppNotificationTypes: closure_17, AnalyticEvents: closure_18, AnalyticsSections: closure_19, AnalyticsObjects: closure_20, AnalyticsObjectTypes: closure_21 } = __exportStarResult1);
+({ jsx: closure_22, jsxs: closure_23 } = __exportStarResult1);
 const obj = { duration: 200 };
-obj.easing = Easing.in(require("result").Easing.ease);
-let closure_25 = result.createStyles({ safeAreaContainer: {}, backdrop: {}, animatedContainer: { right: "<string:16777479>", bottom: "<string:36295491>" } });
+obj.easing = Easing.in(require("__exportStarResult1").Easing.ease);
+let closure_25 = __exportStarResult1.createStyles({ safeAreaContainer: {}, backdrop: {}, animatedContainer: {} });
 let closure_26 = { code: "function InAppNotificationContainerTsx1(finished){const{runOnJS,handleDismissNotification}=this.__closure;if(finished){runOnJS(handleDismissNotification)('autodismissed');}}" };
 let closure_27 = { code: "function InAppNotificationContainerTsx2(){const{runOnJS,setInitialized}=this.__closure;return runOnJS(setInitialized)(true);}" };
 let closure_28 = { code: "function InAppNotificationContainerTsx3(){const{withTiming,expandedSV,DEFAULT_ANIMATION_TIMING}=this.__closure;return{opacity:withTiming(expandedSV.get()?1:0,DEFAULT_ANIMATION_TIMING)};}" };
@@ -81,7 +81,7 @@ let closure_31 = { code: "function InAppNotificationContainerTsx6(event){const{s
 let closure_32 = { code: "function InAppNotificationContainerTsx7(){const{startY,notificationGestureY,velocityY,runOnJS,setPanning}=this.__closure;startY.set(notificationGestureY.get());velocityY.set(0);runOnJS(setPanning)(true);}" };
 let closure_33 = { code: "function InAppNotificationContainerTsx8(finished){const{runOnJS,handleDismissNotification}=this.__closure;if(finished){runOnJS(handleDismissNotification)('swipe');}}" };
 let closure_34 = { code: "function InAppNotificationContainerTsx9(){const{notificationGestureY,scale,isExpandableNotification,interpolate,MIN_SWIPE_DISTANCE,PAN_INPUT_RANGE,NOTIFICATION_BOB_RANGE,extrapolateConfig,initialized}=this.__closure;const gestureY=notificationGestureY.get();const scaleValue=scale.get();if(isExpandableNotification&&gestureY>0){return{transform:[{translateY:interpolate(gestureY,[0,MIN_SWIPE_DISTANCE,PAN_INPUT_RANGE[2]],[0,0,NOTIFICATION_BOB_RANGE],extrapolateConfig)},{scale:initialized?1:scaleValue}],opacity:initialized?1:scaleValue};}const scaleTransform=initialized?interpolate(gestureY,PAN_INPUT_RANGE,[0.3,1,0.3],extrapolateConfig):scaleValue;const opacityTransform=initialized?interpolate(gestureY,PAN_INPUT_RANGE,[0,1,0],extrapolateConfig):scaleValue;return{transform:[{translateY:gestureY},{scale:scaleTransform}],opacity:opacityTransform};}" };
-result = result.fileFinishedImporting("modules/in_app_notifications/native/InAppNotificationContainer.tsx");
+const result = __exportStarResult1.fileFinishedImporting("modules/in_app_notifications/native/InAppNotificationContainer.tsx");
 
 export default function InAppNotificationContainer(notification) {
   let channel;
@@ -174,7 +174,7 @@ export default function InAppNotificationContainer(notification) {
   const canExpandInAppNotification = obj8.useCanExpandInAppNotification("InAppNotificationContainer");
   let canExpand = canExpandInAppNotification.canExpand;
   if (notification2.type !== first3.MESSAGE) {
-    obj = { "Bool(false)": true, "Bool(false)": false, "Bool(false)": false };
+    obj = { mediaType: true, includeBase64: false, selectionLimit: false };
   } else {
     ({ message, channel } = notification2);
     if (canExpand) {
@@ -383,7 +383,7 @@ export default function InAppNotificationContainer(notification) {
     }
     obj = notification(channelId[8]);
     obj.runOnJS(tmp23)(false);
-    obj = { "Bool(true)": 52, "Bool(true)": "stretch", "Bool(true)": "row", velocity: sharedValue1.get() };
+    obj = { velocity: sharedValue1.get() };
     const result3 = sharedValue.set(notification(channelId[38]).withSpring(0, obj, "animate-always"));
   }
   obj3 = { velocityY: sharedValue1, MIN_SWIPE_VELOCITY: first2, MIN_SWIPE_DISTANCE: closure_12, isExpandableNotification, notificationGestureY: sharedValue, expandedSV: sharedValue4, runOnJS: arg1(dependencyMap[8]).runOnJS, setExpanded: callback1, withTiming: arg1(dependencyMap[34]).withTiming, PAN_INPUT_RANGE: tmp18, DEFAULT_ANIMATION_TIMING: tmp11, handleDismissNotification: callback3, setPanning: tmp23, withSpring: arg1(dependencyMap[38]).withSpring };
@@ -424,7 +424,7 @@ export default function InAppNotificationContainer(notification) {
           num5 = 2;
           items[2] = closure_16[2];
           tmp21 = useState;
-          items1 = [1390895572, -255068174];
+          items1 = [];
           items1[2] = useState;
           tmp22 = closure_11;
           tmp23 = obj7;
@@ -466,7 +466,7 @@ export default function InAppNotificationContainer(notification) {
         tmp7 = closure_11;
         tmp8 = obj3;
         tmp9 = value;
-        interpolateResult = obj3.interpolate(value, closure_16, ["\r", "\\r", "\t"], closure_11);
+        interpolateResult = obj3.interpolate(value, closure_16, [], closure_11);
       }
       obj3.scale = interpolateResult;
       items3[1] = obj3;
@@ -481,7 +481,7 @@ export default function InAppNotificationContainer(notification) {
         tmp14 = closure_11;
         tmp15 = obj4;
         tmp16 = value;
-        interpolateResult1 = obj4.interpolate(value, closure_16, ["isArray", "\u012E", "isArray"], closure_11);
+        interpolateResult1 = obj4.interpolate(value, closure_16, [15400960, 14090240, 292749312], closure_11);
       }
       obj.opacity = interpolateResult1;
       return;

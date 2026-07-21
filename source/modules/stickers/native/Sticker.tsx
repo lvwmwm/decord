@@ -1,10 +1,10 @@
-// Module ID: 9602
-// Function ID: 74819
+// Module ID: 9607
+// Function ID: 74836
 // Name: getStickerAssetUrl
 // Dependencies: []
 // Exports: default
 
-// Module 9602 (getStickerAssetUrl)
+// Module 9607 (getStickerAssetUrl)
 function getStickerAssetUrl(sticker, closure_7, animated) {
   if (sticker.format_type === closure_7(dependencyMap[4]).StickerFormat.LOTTIE) {
     let stickerAssetUrl = closure_7(dependencyMap[5]).getStickerAssetUrl(sticker);

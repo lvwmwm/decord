@@ -1,7 +1,7 @@
 // Module ID: 1019
 // Function ID: 11059
 // Name: getNavigationEntry
-// Dependencies: [67895296]
+// Dependencies: []
 
 // Module 1019 (getNavigationEntry)
 Object.defineProperty(arg5, Symbol.toStringTag, { value: "Module" });

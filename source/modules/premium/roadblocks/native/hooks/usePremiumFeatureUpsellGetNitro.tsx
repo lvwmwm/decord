@@ -1,10 +1,10 @@
-// Module ID: 7947
-// Function ID: 63410
+// Module ID: 7951
+// Function ID: 63422
 // Name: usePremiumFeatureUpsellGetNitro
 // Dependencies: []
 // Exports: default
 
-// Module 7947 (usePremiumFeatureUpsellGetNitro)
+// Module 7951 (usePremiumFeatureUpsellGetNitro)
 let closure_4 = importDefault(dependencyMap[0]);
 let closure_5 = importAll(dependencyMap[1]);
 let closure_6 = importDefault(dependencyMap[2]);

@@ -1,9 +1,9 @@
-// Module ID: 8934
-// Function ID: 70420
+// Module ID: 8938
+// Function ID: 70432
 // Name: metadata
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 8934 (metadata)
+// Module 8938 (metadata)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_assets/assets/connections/xbox_discord_link.png.js");
 

@@ -1,10 +1,10 @@
-// Module ID: 10534
-// Function ID: 82324
+// Module ID: 10540
+// Function ID: 82347
 // Name: getCutoutCenterX
 // Dependencies: []
 // Exports: default, getBadgeLeft, getBadgeTop
 
-// Module 10534 (getCutoutCenterX)
+// Module 10540 (getCutoutCenterX)
 function getCutoutCenterX(circleRadius, cutoutPositionInDegrees) {
   return circleRadius + circleRadius * Math.sin(cutoutPositionInDegrees * closure_5);
 }

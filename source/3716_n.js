@@ -34,12 +34,12 @@ const fn = function n(moment) {
     weekdaysShort: "dom._lun._mar._mi\u00E9._jue._vie._s\u00E1b.".split("_"),
     weekdaysMin: "do_lu_ma_mi_ju_vi_s\u00E1".split("_"),
     weekdaysParseExact: true,
-    longDateFormat: {},
+    longDateFormat: { <string:1122280543>: 50865408, <string:3251850218>: 51086848, <string:306010250>: 37441792, <string:37429971>: 22018641, <string:1812403200>: -1200414446, <string:3855182856>: 251658251 },
     calendar: obj,
     relativeTime: {},
     dayOfMonthOrdinalParse: /\d{1,2}º/,
     ordinal: "%d\u00BA",
-    week: { "Bool(true)": false, "Bool(true)": false }
+    week: { <string:1431496722>: false, <string:1627556098>: false }
   };
   obj = {
     sameDay() {
@@ -90,7 +90,7 @@ if ("object" === typeof exports) {
 }
 if ("function" === typeof globalThis.define) {
   if (globalThis.define.amd) {
-    globalThis.define([1782644737], fn);
+    globalThis.define(["HH:mm:ss"], fn);
   }
 }
 fn(this.moment);

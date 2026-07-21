@@ -1,10 +1,10 @@
-// Module ID: 12322
-// Function ID: 94377
+// Module ID: 12329
+// Function ID: 94400
 // Name: NitroCreditEducationActionSheet
 // Dependencies: []
 // Exports: default
 
-// Module 12322 (NitroCreditEducationActionSheet)
+// Module 12329 (NitroCreditEducationActionSheet)
 const View = require(dependencyMap[0]).View;
 const HelpdeskArticles = require(dependencyMap[1]).HelpdeskArticles;
 const _module = require(dependencyMap[2]);
@@ -14,8 +14,8 @@ let obj = { container: {} };
 obj = { backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_MOD_SUBTLE, borderRadius: importDefault(dependencyMap[4]).radii.lg };
 obj.aboutContainer = obj;
 obj.warningIcon = { margin: 16 };
-obj.aboutTextContainer = {};
-obj.helpdeskText = { person_pouting: 24, cv: "recent_games_enabled" };
+obj.aboutTextContainer = { 0: 300.5, 9223372036854775807: 175, 0: null };
+obj.helpdeskText = { collapsable: 24, preventClipping: "recent_games_enabled" };
 let closure_7 = _module1.createStyles(obj);
 const _module2 = require(dependencyMap[11]);
 const result = _module2.fileFinishedImporting("modules/premium/fractional/native/NitroCreditEducationActionSheet.tsx");

@@ -1,12 +1,12 @@
-// Module ID: 10000
-// Function ID: 77307
+// Module ID: 10006
+// Function ID: 77325
 // Name: VoicePanelModes
 // Dependencies: []
 // Exports: getAnalyticsNameForVoicePanelMode
 
-// Module 10000 (VoicePanelModes)
+// Module 10006 (VoicePanelModes)
 let obj = { DISMISSED: "dismissed", PIP: "pip", PANEL: "panel" };
-obj = { "Bool(false)": "%MapIteratorPrototype%", "Bool(false)": "isArray", "Bool(false)": "DEFAULT_NAVIGATION_SPAN_NAME" };
+obj = { <string:1634937736>: "ars", <string:1733120470>: "<string:2741846272>", <string:1453996748>: "<string:3043033090>" };
 obj = {};
 const merged = Object.assign(obj);
 obj["overshootClamping"] = true;
@@ -17,7 +17,7 @@ const obj2 = {};
 const merged2 = Object.assign(obj);
 obj2["mass"] = 0.3;
 const obj3 = { NO_VIDEO_PARTICIPANTS: "no_video_participants", CALLER_DISCONNECTED: "caller_disconnected" };
-const obj4 = { [obj3.NO_VIDEO_PARTICIPANTS]: { aze: "\u{1F4A0}", azj: 6 } };
+const obj4 = { [obj3.NO_VIDEO_PARTICIPANTS]: { bhk: "\u{1F4A0}", bic: 6 } };
 const _module = require(dependencyMap[0]);
 const set = new Set(Object.keys(obj4));
 const _module1 = require(dependencyMap[0]);
@@ -38,16 +38,16 @@ export const getAnalyticsNameForVoicePanelMode = function getAnalyticsNameForVoi
 export const VOICE_PANEL_CHUNK_DIVISOR = 3;
 export const DEFAULT_BORDER_RADIUS = 24;
 export const DEFAULT_BORDER_RADIUS_PIP = 24;
-export const DRAWER_SPRING_PHYSICS = { "Bool(false)": true, "Bool(false)": true, "Bool(false)": true };
-export const LAYOUT_PHYSICS = { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null };
+export const DRAWER_SPRING_PHYSICS = { <string:1634937736>: true, <string:1733120470>: true, <string:1453996748>: true };
+export const LAYOUT_PHYSICS = { <string:1634937736>: 1137, <string:1733120470>: -2057748224, <string:1453996748>: 424738818 };
 export const UI_SHOW_HIDE_PHYSICS = {};
 export const MODE_CHANGE_PHYSICS = obj;
 export const MODE_CHANGE_PHYSICS_CLAMPED = obj;
 export const BORDER_RADIUS_PHYSICS = obj1;
 export const PANEL_CONTROLS_HEIGHT_PHYSICS = obj2;
-export const SPEAKING_PHYSICS = { RowButtonIconProps: 0.0000000000000000000000000000000000000000000000000000000000000000000000019204952398717302, receiving_user_id: 0.6, onTapAutoModerationFeedback: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003061062562, renderSettingSearchResultItem: "0deg", EXPRESSIVE_GRADIENT_NITRO_GREEN_START: 1, alignSelf: "row" };
+export const SPEAKING_PHYSICS = { _forceFlush: 0.0000000000000000000000000000000000000000000000000000000000000000000000019467491922792173, uniform: 0.6, TransitionStates: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000030610715423, GappedList: "0deg", FILES_OR_LINKS_NUM_COLUMNS: 1, responseTtlSeconds: "row" };
 export const PUSH_TO_TALK_PIP_PHYSICS = {};
-export const DRAWER_SPRING_PHYSICS_GESTURE_ACTIVE = { "Bool(false)": "construct", "Bool(false)": "Array", "Bool(false)": "isArray" };
+export const DRAWER_SPRING_PHYSICS_GESTURE_ACTIVE = { <string:1634937736>: "construct", <string:1733120470>: "Array", <string:1453996748>: "isArray" };
 export const GridItemTypes = { USER: "USER", STREAM: "STREAM", ACTIVITY: "ACTIVIY" };
 export const BASE_TARGET_CARD_SIZE = 165;
 export const VoicePanelCTACard = obj3;

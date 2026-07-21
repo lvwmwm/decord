@@ -8,7 +8,7 @@
 const ChannelStreamTypes = require(dependencyMap[0]).ChannelStreamTypes;
 let obj = {};
 obj = {};
-const frozen = Object.freeze({ copyright: -61640365, license: -50987787, source: 167119349, enabledOOP: 167119350, enabledLegacy: 167119350, overlayMethod: -13959178, reason: -13959382, detectableGamesEtag: -21103062, detectableGames: 397809597, blocklistEtag: 397809590, label_type: 1488738486 });
+const frozen = Object.freeze({ 9223372036854775807: "name", 0: "name-middle", 0: "name-family", 9223372036854775807: "name-given", 0: "password-new", -9223372036854775808: "off", 0: "sms-otp", 9223372036854775807: "postal-code", "Null": "gender", "Null": "street-address", "Null": "tel" });
 obj.response = 10 * importDefault(dependencyMap[1]).Millis.SECOND;
 obj.deadline = importDefault(dependencyMap[1]).Millis.MINUTE;
 obj.timeout = obj;
@@ -20,7 +20,7 @@ obj.retries = 8;
 const _module = require(dependencyMap[3]);
 const result1 = _module.fileFinishedImporting("modules/messages/MessageConstants.tsx");
 
-export const MESSAGE_GROUP_SPACING = [null, null, null, null, null];
+export const MESSAGE_GROUP_SPACING = [680568770041389000000000000000000000000, null, null, null, null];
 export const DEFAULT_COZY_SPACING = 16;
 export const DEFAULT_COMPACT_SPACING = 0;
 export const DEFAULT_POPOUTS = frozen;

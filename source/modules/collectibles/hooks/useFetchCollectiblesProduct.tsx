@@ -1,12 +1,12 @@
-// Module ID: 8193
-// Function ID: 64819
+// Module ID: 8197
+// Function ID: 64831
 // Name: useFetchCollectiblesProduct
-// Dependencies: [31, 27, 8203, 33, 5231, 4126, 689, 44, 1876]
+// Dependencies: [31, 27, 8207, 33, 5233, 4126, 689, 44, 1876]
 // Exports: useFetchCollectiblesProduct
 
-// Module 8193 (useFetchCollectiblesProduct)
+// Module 8197 (useFetchCollectiblesProduct)
 import module_31 from "module_31";
-import { useEffect } from "get ActivityIndicator";
+import { useEffect } from "keys";
 import SAMPLE_PROFILE_ASPECT_RATIO from "SAMPLE_PROFILE_ASPECT_RATIO";
 import module_33 from "module_33";
 import { SKUProductLines } from "preload";

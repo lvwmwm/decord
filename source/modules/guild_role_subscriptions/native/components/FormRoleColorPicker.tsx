@@ -1,10 +1,10 @@
-// Module ID: 16323
-// Function ID: 125977
+// Module ID: 16330
+// Function ID: 126008
 // Name: FormRoleColorPicker
 // Dependencies: []
 // Exports: default
 
-// Module 16323 (FormRoleColorPicker)
+// Module 16330 (FormRoleColorPicker)
 let closure_3 = importAll(dependencyMap[0]);
 const DEFAULT_ROLE_COLOR = arg1(dependencyMap[1]).DEFAULT_ROLE_COLOR;
 const jsx = arg1(dependencyMap[2]).jsx;

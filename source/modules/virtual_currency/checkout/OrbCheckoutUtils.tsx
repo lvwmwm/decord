@@ -1,10 +1,10 @@
-// Module ID: 5619
-// Function ID: 47920
+// Module ID: 5621
+// Function ID: 47962
 // Name: getOrbPriceFromPrices
 // Dependencies: []
 // Exports: getOrbCheckoutDisclaimerMessage, getOrbPriceFromPrices, resolveOrbCheckoutErrorMessage
 
-// Module 5619 (getOrbPriceFromPrices)
+// Module 5621 (getOrbPriceFromPrices)
 const _module = require(dependencyMap[0]);
 ({ CurrencyCodes: closure_2, MarketingURLs: closure_3, PriceSetAssignmentPurchaseTypes: closure_4 } = _module);
 const EXTERNAL_PRODUCT_SKU_IDS = require(dependencyMap[1]).EXTERNAL_PRODUCT_SKU_IDS;

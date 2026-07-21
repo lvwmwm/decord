@@ -1,17 +1,17 @@
-// Module ID: 13816
-// Function ID: 104490
+// Module ID: 13823
+// Function ID: 104513
 // Name: BountiesRecapOrbsBackground
 // Dependencies: []
 // Exports: BountiesScrollRecapPage
 
-// Module 13816 (BountiesRecapOrbsBackground)
+// Module 13823 (BountiesRecapOrbsBackground)
 function BountiesRecapOrbsBackground(arg0) {
   let reducedMotion;
   let style;
   ({ style, reducedMotion } = arg0);
   let obj = arg1(dependencyMap[6]);
   if (obj.isAndroid()) {
-    obj = { x2: 678689029862975500000000000000000000000000000000000000000000000000000000000000000000000000, y2: 678670077169255600000000000000000000000000000000000000000000000000000000000000000000000000, gameImage: 678670077169255600000000000000000000000000000000000000000000000000000000000000000000000000, FAVORITE_ANIME: 0.000000000000000000000000000000000000000000000000000000000000000005399889311825953, style };
+    obj = { height: true, backgroundColor: "always", shadowOffset: false, shadowRadius: "list", style };
     obj = { url: importDefault(dependencyMap[8]), style: closure_3.absoluteFillObject, autoplay: !reducedMotion };
     obj.children = callback(arg1(dependencyMap[7]).APNGPlayer, obj);
     let tmpResult = tmp(closure_4, obj);
@@ -36,12 +36,12 @@ let closure_9 = arg1(dependencyMap[5]).createStyles(() => {
   let obj = {};
   obj = { overflow: "hidden", borderRadius: lg, backgroundColor: importDefault(dependencyMap[4]).colors.MOBILE_ACTIONSHEET_BACKGROUND };
   obj.root = obj;
-  obj = { paddingHorizontal: importDefault(dependencyMap[4]).space.PX_24 };
+  obj = { "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, paddingHorizontal: importDefault(dependencyMap[4]).space.PX_24 };
   obj.content = obj;
-  obj.centeredCopy = { 0: false, 0: false };
-  obj.orbsBackground = {};
+  obj.centeredCopy = { "Bool(true)": "percent", "Bool(true)": 0 };
+  obj.orbsBackground = { homeIcon: -1443089903, dataView: 1649267441, env_key: -1443086512, session_id: 1649267441, player_name: 1091649360, player_version: 112740 };
   obj.headerLabel = { paddingBottom: importDefault(dependencyMap[4]).space.PX_4, textTransform: "uppercase" };
-  const obj2 = { "Bool(true)": null, "Bool(true)": null, "Bool(true)": null, paddingBottom: importDefault(dependencyMap[4]).space.PX_24, gap: importDefault(dependencyMap[4]).space.PX_8 };
+  const obj2 = { padding: 0, paddingBottom: importDefault(dependencyMap[4]).space.PX_24, flexDirection: 0, gap: importDefault(dependencyMap[4]).space.PX_8 };
   obj.titleRow = obj2;
   const obj1 = { paddingBottom: importDefault(dependencyMap[4]).space.PX_4, textTransform: "uppercase" };
   obj.actions = { position: "absolute", left: importDefault(dependencyMap[4]).space.PX_24, right: importDefault(dependencyMap[4]).space.PX_24, gap: importDefault(dependencyMap[4]).space.PX_12 };
@@ -71,7 +71,7 @@ export const BountiesScrollRecapPage = function BountiesScrollRecapPage(orbAmoun
   obj = { style: items1, pointerEvents: "box-none" };
   const items1 = [tmp.root, style];
   obj = { style: closure_3.absoluteFillObject, pointerEvents: "none" };
-  const obj1 = { -1470355597: "/assets/modules/quests/native/images", 1751228827: 24, -613525164: 24, -210506482: null, 1554014883: "d34103fd5e89ba1cd4ca70f2429c1570", 357334613: "ic_wreath", 1020602464: "png" };
+  const obj1 = {};
   const obj2 = { uri: importDefault(dependencyMap[13]) };
   obj1.source = obj2;
   obj1.style = closure_3.absoluteFillObject;
@@ -81,14 +81,14 @@ export const BountiesScrollRecapPage = function BountiesScrollRecapPage(orbAmoun
   const items3 = [callback2(closure_4, obj), ];
   const obj4 = { style: tmp.content, pointerEvents: "box-none" };
   const obj5 = { style: tmp.centeredCopy, pointerEvents: "none" };
-  const obj6 = { INTEGRATION_CREATE: null, ConstraintReasonCode: "76e12fa5305b436abd63e2faeb40e327", style: tmp.headerLabel };
+  const obj6 = { style: tmp.headerLabel };
   const intl = arg1(dependencyMap[15]).intl;
   obj6.children = intl.string(arg1(dependencyMap[15]).t.d6Rrn6);
   const items4 = [callback(arg1(dependencyMap[14]).Text, obj6), , ];
-  const obj7 = { "Null": 759239012, "Null": 1912603216, accessibilityLabel: "+" + orbAmount };
+  const obj7 = { positionBottom: null, positionRight: null, accessibilityLabel: "+" + orbAmount };
   const obj8 = { style: tmp.titleRow };
   const items5 = [callback(arg1(dependencyMap[16]).OrbsIcon, {}), ];
-  const obj9 = { style: tmp.orbAmount, children: "+" + orbAmount };
+  const obj9 = { audioCaptureSampleRateMismatchPercent: "isArray", paddingHorizontal: "png", ddd: "row", style: tmp.orbAmount, children: "+" + orbAmount };
   items5[1] = callback(arg1(dependencyMap[14]).Text, obj9);
   obj8.children = items5;
   obj7.children = callback2(closure_4, obj8);
@@ -105,7 +105,7 @@ export const BountiesScrollRecapPage = function BountiesScrollRecapPage(orbAmoun
   const tmp2 = importDefault(dependencyMap[11])();
   items7[1] = { bottom: importDefault(dependencyMap[11])().bottom + importDefault(dependencyMap[4]).space.PX_8 };
   obj11.style = items7;
-  const obj13 = { justifyContent: "fa1758b003badba48305d2353659aabf", alignItems: "ko.messages.fa1758b003badba48305d2353659aabf.compiled.messages", alignSelf: "jsona", overflow: "Clear this text" };
+  const obj13 = { 0: "e48043bf745ca0395ac959c7415a3757", 9223372036854775807: "sv-SE.messages.e48043bf745ca0395ac959c7415a3757.compiled.messages", 0: "jsona", -9223372036854775808: "Clear this text" };
   const intl3 = arg1(dependencyMap[15]).intl;
   obj13.text = intl3.string(arg1(dependencyMap[15]).t.i4jeWR);
   obj13.onPress = onClose;

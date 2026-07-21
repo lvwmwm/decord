@@ -1,7 +1,7 @@
 // Module ID: 4123
 // Function ID: 34297
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: []
+// Dependencies: [284214097]
 // Exports: default
 
 // Module 4123 (_createForOfIteratorHelperLoose)
@@ -138,9 +138,9 @@ function makeAnsiRuleCategory(arg0, arg1, arg2, arg3) {
     }(arg0, tmp2, tmp, items);
   });
 }
-let closure_0 = {};
-let closure_1 = { 0: true, 9223372036854775807: true, 0: true, 0: true, 0: true, 9223372036854775807: true, 0: true, 9223372036854775807: true };
-let closure_2 = { jsx: true, IconComponent: true, getChannel: true, height: true, colors: true, Text: true, Path: true, memo: true };
+let closure_0 = { baseColor: 72417282, candle: -193781500 };
+let closure_1 = { "Null": null, "Null": null, "Null": null, "Null": null, "Null": null, "Null": null, "Null": null, "Null": null };
+let closure_2 = { 0: null, 9223372036854775807: null, 0: null, 9223372036854775807: null, -9223372036854775808: null, 0: null, 9223372036854775807: null, 9223372036854775807: null };
 const tmp2 = /\x1B\[(\d+(?:[:;]\d+)*)m/;
 const regExp = new RegExp("(?=" + tmp2.source + ")");
 const _module = require(dependencyMap[0]);
@@ -148,7 +148,7 @@ const result = _module.fileFinishedImporting("utils/HighlightJsAnsiLanguage.tsx"
 
 export default function highlightJsAnsiLanguage() {
   let length;
-  const items = [...closure_7("foreground", closure_1, [], true), ...closure_7("background", closure_2, [null, null], true), ...closure_7("style", closure_0, [], false), obj];
+  const items = [...closure_7("foreground", closure_1, [], true), ...closure_7("background", closure_2, ["text-md/medium", "text-md/semibold"], true), ...closure_7("style", closure_0, [], false), obj];
   let num = 0;
   let obj = { className: "ansi-control-sequence", begin: tmp2, starts: obj };
   obj = { end: regExp, endsParent: true };

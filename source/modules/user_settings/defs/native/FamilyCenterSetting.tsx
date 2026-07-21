@@ -1,9 +1,9 @@
-// Module ID: 13637
-// Function ID: 103355
+// Module ID: 13644
+// Function ID: 103378
 // Name: route
 // Dependencies: []
 
-// Module 13637 (route)
+// Module 13644 (route)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[2]).jsx;
 let obj = arg1(dependencyMap[9]);
@@ -32,7 +32,7 @@ obj = {
       if (null != tmp4) {
         tmp5 = null;
         if (tmp4 >= 0) {
-          obj = { 0: "black", 0: "platformTypes", 0: "HIDE_MEDIA_DOWNLOAD_OPTIONS", color: importDefault(dependencyMap[6]).colors.ICON_FEEDBACK_WARNING };
+          obj = { color: importDefault(dependencyMap[6]).colors.ICON_FEEDBACK_WARNING };
           const intl = arg1(dependencyMap[7]).intl;
           obj.accessibilityLabel = intl.string(importDefault(dependencyMap[8]).wucWfE);
           tmp5 = jsx(arg1(dependencyMap[5]).WarningIcon, obj);

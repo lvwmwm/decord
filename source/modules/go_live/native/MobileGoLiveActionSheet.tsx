@@ -1,10 +1,10 @@
-// Module ID: 10673
-// Function ID: 83208
+// Module ID: 10679
+// Function ID: 83231
 // Name: ApplicationStreamPresets
 // Dependencies: []
 // Exports: showMobileGoLiveActionSheet
 
-// Module 10673 (ApplicationStreamPresets)
+// Module 10679 (ApplicationStreamPresets)
 let closure_3 = importDefault(dependencyMap[0]);
 const importAllResult = importAll(dependencyMap[1]);
 let closure_5 = importDefault(dependencyMap[2]);
@@ -25,14 +25,14 @@ obj.wrapper = obj;
 obj.header = { textAlign: "center" };
 obj1 = { marginHorizontal: importDefault(dependencyMap[14]).space.PX_16 };
 obj.section = obj1;
-const obj2 = { -9223372036854775808: true, filter: true, gap: importDefault(dependencyMap[14]).space.PX_4 };
-obj.highQualityLabel = obj2;
-obj.nitroWheelIcon = {};
+const tmp2 = arg1(dependencyMap[12]);
+obj.highQualityLabel = { gap: importDefault(dependencyMap[14]).space.PX_4 };
+obj.nitroWheelIcon = { "Bool(true)": null, "Bool(true)": null, "Bool(true)": null };
 let closure_17 = obj1.createStyles(obj);
 const items = [{ preset: ApplicationStreamPresets.PRESET_MOBILE_DEFAULT, enabled: true }, , ];
 const obj4 = { preset: ApplicationStreamPresets.PRESET_MOBILE_PERFORMANCE };
+const obj2 = { gap: importDefault(dependencyMap[14]).space.PX_4 };
 const obj3 = { preset: ApplicationStreamPresets.PRESET_MOBILE_DEFAULT, enabled: true };
-const tmp2 = arg1(dependencyMap[12]);
 obj4.enabled = !arg1(dependencyMap[15]).isIOS();
 items[1] = obj4;
 items[2] = { preset: ApplicationStreamPresets.PRESET_MOBILE_HIGH_QUALITY, enabled: true };
@@ -254,7 +254,7 @@ const memoResult = importAllResult.memo(function MobileGoLiveActionSheet() {
     let tmp34 = "two-step" === goLiveUpsellVariant && sharedValue.get();
     if (tmp34) {
       const obj9 = { style: tmp8.section };
-      const obj10 = {};
+      const obj10 = { "Null": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000232656173919898, "Null": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002540898980601415, "Null": 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000012741663005024175, "Null": -68.05714548874676, "Null": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000014992948780250344, "Null": 0.000000000000000000000000000000000000005881211672176443 };
       const intl3 = arg1(dependencyMap[29]).intl;
       obj10.text = intl3.string(importDefault(dependencyMap[30]).u72Prd);
       obj10.onPress = function onPress() {

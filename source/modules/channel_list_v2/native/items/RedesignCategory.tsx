@@ -1,10 +1,10 @@
-// Module ID: 14831
-// Function ID: 111790
+// Module ID: 14838
+// Function ID: 111814
 // Name: renderCategoryItem
 // Dependencies: []
 // Exports: CategoryChannel, RecentlyActiveCategory, SuggestedCategory
 
-// Module 14831 (renderCategoryItem)
+// Module 14838 (renderCategoryItem)
 function renderCategoryItem(arg0) {
   let accessibilityState;
   let icon;
@@ -42,7 +42,7 @@ function renderCategoryItem(arg0) {
   items[1] = obj;
   let tmp3Result = name;
   if ("string" === typeof name) {
-    obj = {};
+    obj = { height: null, paddingTop: 0, alignItems: null, paddingHorizontal: 0 };
     let str = "text-subtle";
     if (muted) {
       str = "text-muted";
@@ -135,7 +135,7 @@ const styles = obj.createStyles(() => {
     flag = false;
   }
   let obj = { categoryWrapper: obj };
-  obj = { backgroundColor: "hidden", padding: "absolute", alignItems: 7.314, experimental_useNativeText: 7.461, lineClamp: 259.862, paddingVertical: closure_10 };
+  obj = { accessibilityRole: "hidden", y: "absolute", "Null": 7.314, "Null": 7.461, "Null": 259.862, paddingVertical: closure_10 };
   obj = {};
   const obj1 = {};
   if (flag) {
@@ -165,7 +165,7 @@ const styles = obj.createStyles(() => {
   obj.iconWrapperStyles = {};
   return obj;
 });
-obj = { "Bool(false)": false, <string:1419386345>: true };
+obj = { borderRadius: -536870861, borderWidth: -299892737 };
 obj = {};
 const merged = Object.assign(obj);
 const items = [{ rotate: "-90deg" }];
@@ -223,7 +223,7 @@ export const SuggestedCategory = function SuggestedCategory(guildId) {
   const obj = {};
   const callback = React.useCallback(() => {
     let obj = guildId(closure_2[20]);
-    obj = { "Null": "ag", "Null": "createdBy", "Null": "proto" };
+    obj = { url: 654312128, body: 1358954904, retries: 1700894421 };
     obj = {};
     const intl = guildId(closure_2[19]).intl;
     obj.label = intl.string(guildId(closure_2[19]).t.VkKicb);

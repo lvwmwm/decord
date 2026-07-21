@@ -1,17 +1,17 @@
-// Module ID: 7717
-// Function ID: 61409
+// Module ID: 7721
+// Function ID: 61421
 // Name: castHook
-// Dependencies: []
+// Dependencies: [0, 0, 0, 0, 0, 0, 0, 0, 0]
 // Exports: createPollResultSystemMessage
 
-// Module 7717 (castHook)
+// Module 7721 (castHook)
+import { EMOJI_URL_BASE_SIZE } from "__exportStarResult1";
+
 function castHook(arg0) {
   const require = arg0;
   return () => arg0;
 }
-const EMOJI_URL_BASE_SIZE = require(dependencyMap[0]).EMOJI_URL_BASE_SIZE;
-const _module = require(dependencyMap[8]);
-const result = _module.fileFinishedImporting("modules/messages/native/renderer/system_messages/PollResultSystemMessage.tsx");
+const result = require("__exportStarResult1").fileFinishedImporting("modules/messages/native/renderer/system_messages/PollResultSystemMessage.tsx");
 
 export const createPollResultSystemMessage = function createPollResultSystemMessage(message) {
   const tmp = importDefault(dependencyMap[6])(message.message.embeds[0]);
@@ -32,7 +32,7 @@ export const createPollResultSystemMessage = function createPollResultSystemMess
       const intl3 = require(dependencyMap[3]).intl;
       const obj2 = {};
       const merged = Object.assign(obj);
-      obj2["sadEmojiHook"] = castHook({ <string:2640441806>: "icon-only", <string:3214023762>: "sm", <string:91378669>: "interactive-icon-default" });
+      obj2["sadEmojiHook"] = castHook({ -9223372036854775808: "icon-only", 9223372036854775807: "sm", 0: "interactive-icon-default" });
       let formatToPartsResult = intl3.formatToParts(require(dependencyMap[3]).t.9dPxsm, obj2);
     } else {
       const _Math = Math;
@@ -79,7 +79,7 @@ export const createPollResultSystemMessage = function createPollResultSystemMess
             obj.surrogate = flag2.name;
             items.push(obj);
           }
-          items.push({ "Bool(false)": true, "Bool(false)": true });
+          items.push({});
         }
       }
     }

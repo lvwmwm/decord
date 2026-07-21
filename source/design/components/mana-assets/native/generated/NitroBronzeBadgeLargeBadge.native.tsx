@@ -1,14 +1,13 @@
-// Module ID: 6303
-// Function ID: 50328
+// Module ID: 6305
+// Function ID: 50371
 // Name: NitroBronzeBadgeLargeBadge
-// Dependencies: [0, 0, 4294967295, 0]
+// Dependencies: []
 // Exports: NitroBronzeBadgeLargeBadge
 
-// Module 6303 (NitroBronzeBadgeLargeBadge)
-import { jsx } from "result";
-import result from "result";
-
-result = result.fileFinishedImporting("design/components/mana-assets/native/generated/NitroBronzeBadgeLargeBadge.native.tsx");
+// Module 6305 (NitroBronzeBadgeLargeBadge)
+const jsx = require(dependencyMap[0]).jsx;
+const _module = require(dependencyMap[3]);
+const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/NitroBronzeBadgeLargeBadge.native.tsx");
 
 export const NitroBronzeBadgeLargeBadge = function NitroBronzeBadgeLargeBadge(width) {
   let accessibilityLabel;

@@ -1,10 +1,10 @@
-// Module ID: 7466
-// Function ID: 59943
+// Module ID: 7470
+// Function ID: 59954
 // Name: set
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 7466 (set)
-const obj = { ALL: new Set([]) };
+// Module 7470 (set)
+const obj = { ALL: new Set([false, false, false, false]) };
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_common/js/shared/shared-constants/GuildInviteFlags.tsx");
 

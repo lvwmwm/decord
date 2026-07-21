@@ -1,10 +1,10 @@
-// Module ID: 9357
-// Function ID: 73023
+// Module ID: 9361
+// Function ID: 73037
 // Name: useShowNitroUpsellCallback
 // Dependencies: []
 // Exports: default
 
-// Module 9357 (useShowNitroUpsellCallback)
+// Module 9361 (useShowNitroUpsellCallback)
 let closure_2 = importAll(dependencyMap[0]);
 const result = arg1(dependencyMap[2]).fileFinishedImporting("modules/premium/roadblocks/native/hooks/useShowNitroUpsellCallback.tsx");
 

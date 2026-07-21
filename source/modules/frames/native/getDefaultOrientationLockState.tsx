@@ -1,10 +1,10 @@
-// Module ID: 15592
-// Function ID: 118985
+// Module ID: 15599
+// Function ID: 119009
 // Name: setOrientationLockState
 // Dependencies: []
 // Exports: setOrientationLockState
 
-// Module 15592 (setOrientationLockState)
+// Module 15599 (setOrientationLockState)
 const _module = require(dependencyMap[2]);
 const result = _module.fileFinishedImporting("modules/frames/native/getDefaultOrientationLockState.tsx");
 

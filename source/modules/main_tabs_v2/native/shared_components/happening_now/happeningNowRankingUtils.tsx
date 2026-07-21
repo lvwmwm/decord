@@ -1,10 +1,10 @@
-// Module ID: 14796
-// Function ID: 111554
+// Module ID: 14803
+// Function ID: 111578
 // Name: cardSize
 // Dependencies: []
 // Exports: filterHappeningNowCards, sortHappeningNowCards
 
-// Module 14796 (cardSize)
+// Module 14803 (cardSize)
 function cardSize(kind) {
   kind = kind.kind;
   if ("placeholder" !== kind) {
@@ -46,7 +46,7 @@ const tmp2 = arg1(dependencyMap[2]);
 const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/main_tabs_v2/native/shared_components/happening_now/happeningNowRankingUtils.tsx");
 
 export { cardSize };
-export const HappeningNowWeights = {};
+export const HappeningNowWeights = { localMute: "Int32Array", localDeaf: "handleJoinThreadVoice", localVideo: "String", localMute: "isArray", localDeaf: "String", style: "isArray", color: "setDescription", size: "FAKE_EVENT_ID" };
 export const HAPPENING_NOW_OFFLINE_PENALTY = -1000;
 export const filterHappeningNowCards = function filterHappeningNowCards(first) {
   function hasNoDiscoverableVoiceStates(voiceState) {
@@ -127,5 +127,5 @@ export const sortHappeningNowCards = function sortHappeningNowCards(result) {
       return false;
     }(voiceState)
   ];
-  return arg1(dependencyMap[4]).orderBy(result, items, []);
+  return arg1(dependencyMap[4]).orderBy(result, items, [0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003485612038873263, 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000008287089313773143]);
 };

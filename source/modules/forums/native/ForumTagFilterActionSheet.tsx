@@ -1,10 +1,10 @@
-// Module ID: 11781
-// Function ID: 91484
+// Module ID: 11788
+// Function ID: 91507
 // Name: EmojiIcon
 // Dependencies: []
 // Exports: default
 
-// Module 11781 (EmojiIcon)
+// Module 11788 (EmojiIcon)
 function EmojiIcon(arg0) {
   let emojiName;
   ({ emojiId: closure_0, emojiName } = arg0);
@@ -43,7 +43,7 @@ const tmp2 = arg1(dependencyMap[3]);
 ({ AnalyticsObjects: closure_8, AnalyticsPages: closure_9, AnalyticsSections: closure_10 } = arg1(dependencyMap[4]));
 const jsx = arg1(dependencyMap[5]).jsx;
 const tmp3 = arg1(dependencyMap[4]);
-let closure_12 = arg1(dependencyMap[6]).createStyles({ emoji: {}, imageEmoji: { <string:1140607356>: null, <string:1751293292>: null }, textEmoji: { "Null": null, "Null": null } });
+let closure_12 = arg1(dependencyMap[6]).createStyles({ emoji: {}, imageEmoji: { <string:1632221346>: null, <string:2722977214>: null }, textEmoji: { PX_16: "LengthDelimited", ix: "Array" } });
 const obj = arg1(dependencyMap[6]);
 const result = arg1(dependencyMap[19]).fileFinishedImporting("modules/forums/native/ForumTagFilterActionSheet.tsx");
 

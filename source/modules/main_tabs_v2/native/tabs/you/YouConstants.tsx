@@ -1,9 +1,9 @@
-// Module ID: 14967
-// Function ID: 112697
+// Module ID: 14974
+// Function ID: 112721
 // Name: YOU_SCREEN_ID
 // Dependencies: []
 
-// Module 14967 (YOU_SCREEN_ID)
+// Module 14974 (YOU_SCREEN_ID)
 const _module = require(dependencyMap[2]);
 const result = _module.fileFinishedImporting("modules/main_tabs_v2/native/tabs/you/YouConstants.tsx");
 
@@ -17,4 +17,4 @@ export const YOU_CARD_BORDER_RADIUS = importDefault(dependencyMap[1]).radii.lg;
 export const YOU_CARD_BORDER_WIDTH = 1;
 export const YOU_SCROLL_EVENT_THROTTLE = 16;
 export const YOU_ACTION_SHEET_TOP_INSET = 12;
-export const YOU_SCREEN_DROP_SHADOW = { <string:89242260>: 0.7, <string:2700829578>: true, <string:1868517861>: "/assets/modules/notifications/images", <string:592677473>: 24, <string:3314374545>: 24, "Bool(true)": null, "Bool(true)": "0ca8431ba26e114a3e93aa8dc5cdf521" };
+export const YOU_SCREEN_DROP_SHADOW = { "Bool(false)": 0.7, "Bool(false)": true, "Bool(false)": "/assets/modules/notifications/images", "Bool(false)": 24, "Bool(false)": 24, "Bool(false)": null, "Bool(false)": "0ca8431ba26e114a3e93aa8dc5cdf521" };

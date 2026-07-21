@@ -1,10 +1,10 @@
-// Module ID: 10722
-// Function ID: 83393
+// Module ID: 10728
+// Function ID: 83416
 // Name: coercePlatformTypeToConsoleType
 // Dependencies: []
 // Exports: coerceConsoleTypeToPlatformType, coercePlatformTypeToConsoleType
 
-// Module 10722 (coercePlatformTypeToConsoleType)
+// Module 10728 (coercePlatformTypeToConsoleType)
 const GameConsoleTypes = require(dependencyMap[0]).GameConsoleTypes;
 const PlatformTypes = require(dependencyMap[1]).PlatformTypes;
 const _module = require(dependencyMap[2]);

@@ -1,10 +1,10 @@
-// Module ID: 8677
-// Function ID: 68760
+// Module ID: 8681
+// Function ID: 68772
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 // Exports: useAreUsersInSocialLayerStorefrontMutualGuildsApplicationIds, useAreUsersPlayingStorefrontEnabledGames, useCurrentUserPlayedSocialLayerStorefrontGamesApplicationIds, useIsCurrentUserInSocialLayerStorefrontGuildsApplicationIds, useIsCurrentUserPlayingSocialLayerStorefrontGames, useUsersPlayedSocialLayerStorefrontGamesInOutboxApplicationIds
 
-// Module 8677 (_createForOfIteratorHelperLoose)
+// Module 8681 (_createForOfIteratorHelperLoose)
 function _createForOfIteratorHelperLoose(@@iterator) {
   let arg1 = Symbol_iterator;
   @@iterator = "undefined" !== typeof Symbol;

@@ -1,10 +1,10 @@
-// Module ID: 4308
-// Function ID: 37725
+// Module ID: 4312
+// Function ID: 37773
 // Name: MAX_THUMBNAIL_COUNT
 // Dependencies: []
 // Exports: getBackgroundImageUrl, getEmbedPreviewImageUrl, getThumbnailImage
 
-// Module 4308 (MAX_THUMBNAIL_COUNT)
+// Module 4312 (MAX_THUMBNAIL_COUNT)
 const _module = require(dependencyMap[1]);
 const result = _module.fileFinishedImporting("modules/media_channel/MediaPostThumbnailUtils.tsx");
 

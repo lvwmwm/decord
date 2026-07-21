@@ -1,10 +1,10 @@
-// Module ID: 11227
-// Function ID: 87427
+// Module ID: 11233
+// Function ID: 87450
 // Name: getCollectionItemAssetUrl
 // Dependencies: []
 // Exports: getCollectionItemAssetUrl
 
-// Module 11227 (getCollectionItemAssetUrl)
+// Module 11233 (getCollectionItemAssetUrl)
 const Endpoints = require(dependencyMap[0]).Endpoints;
 ({ API_ENDPOINT: closure_3, CDN_HOST: closure_4 } = window.GLOBAL_ENV);
 const _module = require(dependencyMap[3]);

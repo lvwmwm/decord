@@ -1,10 +1,10 @@
-// Module ID: 10563
-// Function ID: 82500
+// Module ID: 10569
+// Function ID: 82523
 // Name: isDiscordVisible
 // Dependencies: []
 // Exports: default
 
-// Module 10563 (isDiscordVisible)
+// Module 10569 (isDiscordVisible)
 let closure_2 = importDefault(dependencyMap[0]);
 const AppStates = arg1(dependencyMap[1]).AppStates;
 const result = arg1(dependencyMap[3]).fileFinishedImporting("lib/WindowVisibilityUtils.native.tsx");

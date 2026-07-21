@@ -1,9 +1,9 @@
-// Module ID: 4218
-// Function ID: 36800
+// Module ID: 4222
+// Function ID: 36848
 // Name: RTCConnectionEvent
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 4218 (RTCConnectionEvent)
+// Module 4222 (RTCConnectionEvent)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("lib/RTCConnectionEvent.tsx");
 

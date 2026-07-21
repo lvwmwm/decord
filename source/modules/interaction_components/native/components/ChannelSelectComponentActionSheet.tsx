@@ -1,10 +1,10 @@
-// Module ID: 10956
-// Function ID: 85219
+// Module ID: 10961
+// Function ID: 85240
 // Name: ChannelSelectComponentActionSheet
 // Dependencies: []
 // Exports: default
 
-// Module 10956 (ChannelSelectComponentActionSheet)
+// Module 10961 (ChannelSelectComponentActionSheet)
 let closure_3 = importAll(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 let closure_5 = importDefault(dependencyMap[2]);

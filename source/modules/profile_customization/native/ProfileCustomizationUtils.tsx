@@ -1,10 +1,10 @@
-// Module ID: 7872
-// Function ID: 62684
+// Module ID: 7876
+// Function ID: 62696
 // Name: useEditBannerSource
-// Dependencies: [6, 7, 1851, 6846]
+// Dependencies: [6, 7, 1851, 6852]
 // Exports: getAvatarSource, useEditBannerSource, useUserProfileBannerBackgroundColor
 
-// Module 7872 (useEditBannerSource)
+// Module 7876 (useEditBannerSource)
 import items from "items";
 
 const result = items.fileFinishedImporting("modules/profile_customization/native/ProfileCustomizationUtils.tsx");
@@ -25,7 +25,7 @@ export const useEditBannerSource = function useEditBannerSource(arg0) {
       if (null != guildId) {
         let bannerURL;
         if (null != displayProfile) {
-          bannerURL = displayProfile.getBannerURL({ "Null": null, "Null": null });
+          bannerURL = displayProfile.getBannerURL({ <string:2648636927>: "contain", <string:3896378123>: null });
         }
         source = require(dependencyMap[1]).makeSource(bannerURL);
         const obj2 = require(dependencyMap[1]);

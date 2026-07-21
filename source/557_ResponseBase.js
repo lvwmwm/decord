@@ -1,7 +1,7 @@
 // Module ID: 557
 // Function ID: 6720
 // Name: ResponseBase
-// Dependencies: []
+// Dependencies: [0]
 
 // Module 557 (ResponseBase)
 class ResponseBase {
@@ -18,9 +18,9 @@ class ResponseBase {
     if (!str) {
       str = "";
     }
-    obj = require(dependencyMap[0]);
+    obj = require("__exportStarResult1");
     self.type = obj.type(str);
-    obj2 = require(dependencyMap[0]);
+    obj2 = require("__exportStarResult1");
     paramsResult = obj2.params(str);
     for (const key10019 in paramsResult) {
       tmp5 = key10019;
@@ -38,7 +38,7 @@ class ResponseBase {
     if (tmp.link) {
       tmp3 = require;
       tmp4 = dependencyMap;
-      obj3 = require(dependencyMap[0]);
+      obj3 = require("__exportStarResult1");
       self.links = obj3.parseLinks(global.link);
     }
     return;

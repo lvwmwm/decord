@@ -1,9 +1,9 @@
-// Module ID: 13519
-// Function ID: 102601
+// Module ID: 13526
+// Function ID: 102624
 // Name: RestrictedAccountRedirect
 // Dependencies: []
 
-// Module 13519 (RestrictedAccountRedirect)
+// Module 13526 (RestrictedAccountRedirect)
 function RestrictedAccountRedirect() {
   const obj = {
     label: arg1(dependencyMap[10]).t.zqv4nV,

@@ -1,10 +1,10 @@
-// Module ID: 11377
-// Function ID: 88479
+// Module ID: 11384
+// Function ID: 88503
 // Name: NewBadge
 // Dependencies: []
 // Exports: default
 
-// Module 11377 (NewBadge)
+// Module 11384 (NewBadge)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 const jsx = arg1(dependencyMap[2]).jsx;
@@ -17,7 +17,7 @@ let closure_5 = arg1(dependencyMap[3]).createStyles((arg0, arg1) => {
   }
   obj.marginTop = num;
   obj.text = obj;
-  obj = { value: "<string:671678465>", "Bool(false)": "<string:812843010>", "Bool(false)": "<string:805306368>", "Bool(false)": "<string:33554432>", "Bool(false)": "<string:1090519040>", "Bool(false)": "text-lg/semibold", borderRadius: importDefault(dependencyMap[5]).radii.round };
+  obj = { "Null": null, "Null": null, "Null": null, "Null": null, "Null": null, "Null": null, borderRadius: importDefault(dependencyMap[5]).radii.round };
   const obj3 = arg1(dependencyMap[4]);
   if (obj5.isThemeLight(arg1)) {
     if (!arg0) {

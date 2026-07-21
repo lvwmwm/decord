@@ -1,10 +1,10 @@
-// Module ID: 11520
-// Function ID: 89771
+// Module ID: 11527
+// Function ID: 89794
 // Name: useFeaturedExpiringPowerup
 // Dependencies: []
 // Exports: default
 
-// Module 11520 (useFeaturedExpiringPowerup)
+// Module 11527 (useFeaturedExpiringPowerup)
 let closure_2 = importAll(dependencyMap[0]);
 let closure_3 = importDefault(dependencyMap[1]);
 let closure_4 = importDefault(dependencyMap[2]);

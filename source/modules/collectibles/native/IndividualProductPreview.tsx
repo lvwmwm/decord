@@ -1,10 +1,10 @@
-// Module ID: 8737
-// Function ID: 69106
+// Module ID: 8741
+// Function ID: 69118
 // Name: ProfilePreviewWrapper
 // Dependencies: []
 // Exports: IndividualProductPreview
 
-// Module 8737 (ProfilePreviewWrapper)
+// Module 8741 (ProfilePreviewWrapper)
 function ProfilePreviewWrapper(children) {
   ({ handlePreviewPress: closure_0, onTrackPress: closure_1 } = children);
   const tmp = callback3();
@@ -21,7 +21,7 @@ function ProfilePreviewWrapper(children) {
   };
   obj = { style: tmp.profilePreviewContainer };
   const items = [children.children, ];
-  obj = { style: tmp.profilePreviewGradient, start: {}, end: { "Null": 131072.00314656927, "Null": 0.000000000000000000000000000000000000000000000000000000011294471302334573 } };
+  obj = { style: tmp.profilePreviewGradient, start: {}, end: {} };
   const items1 = ["" + tmp.profilePreviewGradient.color + "00", tmp.profilePreviewGradient.color];
   obj.colors = items1;
   items[1] = callback(importDefault(dependencyMap[6]), obj);

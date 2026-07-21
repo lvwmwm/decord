@@ -4,6 +4,6 @@
 
 // Module 2069
 const _module = require(dependencyMap[0]);
-const obj = { justifyContent: true, flexDirection: "/assets/.cache/intl/bW9kdWxlcy9nb19saXZl", marginRight: null, columnGap: "cb4609d5ba6367279d9765904c5586d2", accessibilityRole: "fr.messages.cb4609d5ba6367279d9765904c5586d2.compiled.messages", options: "jsona", scales: [24573934974154670000000000000000000000000000000000000000000000000000000000000] };
+const obj = { dismissed: "/assets/.cache/intl/bW9kdWxlcy9nb19saXZl", lastDismissedVersion: null, lastDismissedAtMs: "9943a3ef64250b611d4dd57c2c1e14c7", lastDismissedObjectId: "hi.messages.9943a3ef64250b611d4dd57c2c1e14c7.compiled.messages", numTimesDismissed: "jsona", days: null, scales: [15189782894321462000000000000000000000000000000000000000000000000000000000000000000] };
 
 export default _module.registerAsset(obj);

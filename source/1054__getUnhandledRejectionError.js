@@ -60,7 +60,7 @@ export const globalHandlersIntegration = _module.defineIntegration(function _glo
       const first = arguments[0];
     }
     const _Object = Object;
-    let closure_0 = Object.assign({ 1387671956: null, <string:3512829971>: null }, {});
+    let closure_0 = Object.assign({ scope: null, escapedName: null }, {});
     const obj = {
       name: "GlobalHandlers",
       setupOnce() {
@@ -121,7 +121,7 @@ export const globalHandlersIntegration = _module.defineIntegration(function _glo
                       return result;
                     }(result, url, line, column);
                     result.level = "error";
-                    obj = { originalException: error, mechanism: { alignItems: "<string:1358954790>", justifyContent: 554770707 } };
+                    obj = { originalException: error, mechanism: {} };
                     msg(closure_1[0]).captureEvent(result, obj);
                     const obj3 = msg(closure_1[0]);
                   }
@@ -152,7 +152,7 @@ export const globalHandlersIntegration = _module.defineIntegration(function _glo
                     num = arg0(closure_1[num]);
                     obj = {};
                     obj.originalException = obj;
-                    obj = { alignItems: false, justifyContent: "pixelCopy" };
+                    obj = { onDrawerSlide: "M15 6h-1v2h1V6Z", onDrawerStateChanged: "ptb" };
                     obj.mechanism = obj;
                     num.captureEvent(result, obj);
                     const obj3 = arg0(closure_1[num]);

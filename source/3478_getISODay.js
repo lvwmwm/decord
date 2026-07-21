@@ -1,16 +1,17 @@
 // Module ID: 3478
 // Function ID: 26860
 // Name: getISODay
-// Dependencies: []
+// Dependencies: [3366, 3370]
 // Exports: default
 
 // Module 3478 (getISODay)
-let closure_0 = _interopRequireDefault(require(dependencyMap[0]));
-let closure_1 = _interopRequireDefault(require(dependencyMap[1]));
+import startOfWeek from "startOfWeek";
+import getTimezoneOffsetInMilliseconds from "getTimezoneOffsetInMilliseconds";
+
 
 export default function getISODay(defaultResult1) {
-  closure_1.default(1, arguments);
-  let num = closure_0.default(defaultResult1).getDay();
+  getTimezoneOffsetInMilliseconds.default(1, arguments);
+  let num = startOfWeek.default(defaultResult1).getDay();
   if (0 === num) {
     num = 7;
   }

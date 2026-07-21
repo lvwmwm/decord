@@ -1,10 +1,10 @@
-// Module ID: 7467
-// Function ID: 59944
+// Module ID: 7471
+// Function ID: 59955
 // Name: connectToStage
 // Dependencies: []
 // Exports: connectOrLurkStage, showUserProfile
 
-// Module 7467 (connectToStage)
+// Module 7471 (connectToStage)
 function connectToStage(channel, flag) {
   if (flag === undefined) {
     flag = false;
@@ -13,19 +13,19 @@ function connectToStage(channel, flag) {
     if (!function canJoinImmediately(id, arg1) {
       let tmp = !closure_8.can(id(closure_3[6]).JOIN_VOCAL_CHANNEL_PERMISSIONS, id);
       if (!tmp) {
-        let num2 = callback(closure_3[7]).shouldShowBlockedUsers(id.id);
+        let num2 = callback2(closure_3[7]).shouldShowBlockedUsers(id.id);
         if (num2) {
           num2 = arg1 !== id.id;
         }
         if (num2) {
-          const result = callback(closure_3[7]).openStageBlockedUsersSheet(id, () => {
+          const result = callback2(closure_3[7]).openStageBlockedUsersSheet(id, () => {
             callback(arg0, true);
           });
           num2 = 1;
-          const obj2 = callback(closure_3[7]);
+          const obj2 = callback2(closure_3[7]);
         }
         tmp = num2;
-        const obj = callback(closure_3[7]);
+        const obj = callback2(closure_3[7]);
       }
       return !tmp;
     }(channel, tmp)) {
@@ -39,10 +39,11 @@ function connectToStage(channel, flag) {
     return false;
   } else {
     const allApplicationStreamsForChannel = allApplicationStreamsForChannel.getAllApplicationStreamsForChannel(channel.id);
-    if (allApplicationStreamsForChannel.length > 0) {
+    const found = allApplicationStreamsForChannel.find((currentUserActiveStream) => !streamMarkedFull.isStreamMarkedFull(callback(closure_3[13]).encodeStreamKey(currentUserActiveStream)));
+    if (null != found) {
       obj = { noFocus: true };
-      flag(dependencyMap[13]).watchStream(allApplicationStreamsForChannel[0], obj);
-      const obj3 = flag(dependencyMap[13]);
+      flag(dependencyMap[14]).watchStream(found, obj);
+      const obj3 = flag(dependencyMap[14]);
     }
     return true;
   }
@@ -66,8 +67,8 @@ function connectAndOpen(channel, flag) {
   const voiceChannelId = store.getVoiceChannelId();
   let result = !flag3 && voiceChannelId !== channel.id;
   if (result) {
-    result = flag(dependencyMap[14]).shouldShowVoiceChannelChangeConfirmation(channel);
-    const obj = flag(dependencyMap[14]);
+    result = flag(dependencyMap[15]).shouldShowVoiceChannelChangeConfirmation(channel);
+    const obj = flag(dependencyMap[15]);
   }
   if (result) {
     result = importAll(dependencyMap[7]).showChannelChangeConfirmationAlert(channel, () => {
@@ -90,7 +91,7 @@ let closure_6 = importDefault(dependencyMap[2]);
 let closure_7 = importDefault(dependencyMap[3]);
 let closure_8 = importDefault(dependencyMap[4]);
 let closure_9 = importDefault(dependencyMap[5]);
-const result = arg1(dependencyMap[15]).fileFinishedImporting("modules/stage_channels/StageChannelModalActionCreators.tsx");
+const result = arg1(dependencyMap[16]).fileFinishedImporting("modules/stage_channels/StageChannelModalActionCreators.tsx");
 
 export const connectOrLurkStage = function connectOrLurkStage(arg0, channelId, arg2) {
   let flag = arg2;

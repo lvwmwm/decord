@@ -1,10 +1,10 @@
-// Module ID: 7655
-// Function ID: 61213
+// Module ID: 7654
+// Function ID: 61208
 // Name: DoubleTapNitroAlert
 // Dependencies: []
 // Exports: default
 
-// Module 7655 (DoubleTapNitroAlert)
+// Module 7654 (DoubleTapNitroAlert)
 let closure_2 = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 const NITRO_UPSELL_ALERT_KEY = arg1(dependencyMap[2]).NITRO_UPSELL_ALERT_KEY;
@@ -31,7 +31,7 @@ export default function DoubleTapNitroAlert(emojiName) {
     });
   }, []);
   let obj = {};
-  obj = { style: callback3().icon, children: callback(arg1(dependencyMap[10]).CircleErrorIcon, { size: "custom", style: { aze: 30706176, azj: 378290688 } }) };
+  obj = { style: callback3().icon, children: callback(arg1(dependencyMap[10]).CircleErrorIcon, { size: "custom", style: {} }) };
   obj.header = callback(View, obj);
   const intl = arg1(dependencyMap[11]).intl;
   obj.title = intl.string(arg1(dependencyMap[11]).t.HRAWfC);

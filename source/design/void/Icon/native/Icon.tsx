@@ -1,9 +1,9 @@
-// Module ID: 4537
-// Function ID: 39770
+// Module ID: 4541
+// Function ID: 39818
 // Name: getIconSize
 // Dependencies: []
 
-// Module 4537 (getIconSize)
+// Module 4541 (getIconSize)
 function getIconSize(arg0) {
   if (obj.EXTRA_SMALL_10 === arg0) {
     return 10;

@@ -1,10 +1,10 @@
-// Module ID: 8389
-// Function ID: 66779
+// Module ID: 8393
+// Function ID: 66791
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 // Exports: useCanCreateEventInStageChannel, useCanCreateEventInVoiceChannel, useGetEventChannelsByType
 
-// Module 8389 (_createForOfIteratorHelperLoose)
+// Module 8393 (_createForOfIteratorHelperLoose)
 function _createForOfIteratorHelperLoose(@@iterator) {
   let arg1 = Symbol_iterator;
   @@iterator = "undefined" !== typeof Symbol;

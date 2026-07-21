@@ -1,10 +1,10 @@
-// Module ID: 10869
-// Function ID: 84539
+// Module ID: 10875
+// Function ID: 84562
 // Name: navigateToLastChannel
 // Dependencies: []
 // Exports: default
 
-// Module 10869 (navigateToLastChannel)
+// Module 10875 (navigateToLastChannel)
 const _module = require(dependencyMap[3]);
 const result = _module.fileFinishedImporting("modules/main_tabs_v2/native/navigateToLastChannel.tsx");
 

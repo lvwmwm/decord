@@ -59,7 +59,7 @@ export const reactNavigationIntegration = function reactNavigationIntegration() 
       }
       if (tmp4) {
         if (tmp4) {
-          const items = [];
+          const items = [-0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000014838600155409575, -8345742682920891000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010061506578176976, 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000014891638584242434, 1.9957849974470103];
           if (items.includes(tmp4)) {
             const debug2 = store(currentRoute[3]).debug;
             const _HermesInternal2 = HermesInternal;
@@ -110,7 +110,7 @@ export const reactNavigationIntegration = function reactNavigationIntegration() 
       if (tmp38) {
         const NATIVE = store(currentRoute[2]).NATIVE;
         NATIVE.setActiveSpanId(result.spanContext().spanId);
-        obj = { <string:3177735406>: "DARK", <string:2589106427>: "Array" };
+        obj = {};
         const obj8 = store(currentRoute[3]);
         obj.startTime = store(currentRoute[3]).spanToJSON(result).start_timestamp;
         const startInactiveSpanResult = obj8.startInactiveSpan(obj);
@@ -209,7 +209,7 @@ export const reactNavigationIntegration = function reactNavigationIntegration() 
             closure_3.setAttributes(merged(merged(obj, store(currentRoute[8]).SEMANTIC_ATTRIBUTE_SENTRY_SOURCE, "component"), store(currentRoute[3]).SEMANTIC_ATTRIBUTE_SENTRY_OP, "navigation"));
             clearStateChangeTimeout();
             const tmp51Result = merged(obj, store(currentRoute[8]).SEMANTIC_ATTRIBUTE_SENTRY_SOURCE, "component");
-            const obj1 = {};
+            const obj1 = { "Null": "OFFICIAL_3RD_PARTY_MERCH", "Null": "<string:4148232448>" };
             const _HermesInternal5 = HermesInternal;
             obj1.message = "Navigation to " + name;
             obj2 = {};

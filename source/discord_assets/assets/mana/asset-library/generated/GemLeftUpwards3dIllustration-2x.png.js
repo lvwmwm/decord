@@ -1,9 +1,9 @@
-// Module ID: 6162
-// Function ID: 50117
+// Module ID: 6164
+// Function ID: 50160
 // Name: metadata
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 6162 (metadata)
+// Module 6164 (metadata)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/GemLeftUpwards3dIllustration-2x.png.js");
 

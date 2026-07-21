@@ -1,10 +1,10 @@
-// Module ID: 16098
-// Function ID: 124162
+// Module ID: 16105
+// Function ID: 124193
 // Name: ListBulletsIcon
 // Dependencies: []
 // Exports: ListBulletsIcon
 
-// Module 16098 (ListBulletsIcon)
+// Module 16105 (ListBulletsIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/ListBulletsIcon.tsx");

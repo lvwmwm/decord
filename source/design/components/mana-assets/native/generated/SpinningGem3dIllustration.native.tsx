@@ -1,10 +1,10 @@
-// Module ID: 6525
-// Function ID: 50661
+// Module ID: 6527
+// Function ID: 50704
 // Name: SpinningGem3dIllustration
 // Dependencies: []
 // Exports: SpinningGem3dIllustration
 
-// Module 6525 (SpinningGem3dIllustration)
+// Module 6527 (SpinningGem3dIllustration)
 const jsx = require(dependencyMap[0]).jsx;
 const _module = require(dependencyMap[3]);
 const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/SpinningGem3dIllustration.native.tsx");

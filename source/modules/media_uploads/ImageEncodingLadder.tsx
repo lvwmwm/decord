@@ -1,14 +1,9 @@
-// Module ID: 4695
-// Function ID: 40852
+// Module ID: 4697
+// Function ID: 40893
 // Name: getAdaptiveImageCompressionQuality
-// Dependencies: [65, 4717, 4718, 4719]
+// Dependencies: []
 
-// Module 4695 (getAdaptiveImageCompressionQuality)
-import _toConsumableArray from "_toConsumableArray";
-import isM4A from "isM4A";
-import { CompressionQuality } from "is7Z";
-import isAVIF from "isAVIF";
-
+// Module 4697 (getAdaptiveImageCompressionQuality)
 function getAdaptiveImageCompressionQuality(size, ADAPTIVE_COMPRESSION_CONFIG) {
   if (ADAPTIVE_COMPRESSION_CONFIG.useAdaptiveCompression) {
     if (null != size.width) {
@@ -52,21 +47,19 @@ function getAdaptiveImageCompressionQuality(size, ADAPTIVE_COMPRESSION_CONFIG) {
     return CompressionQuality.HIGH;
   }
 }
-let obj = { "Null": 9257847766480527000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, "Null": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000005081544981613118, "Null": 563136534937642, "Null": 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000015380013306843 };
-obj = { HTTP: null, call: "1340ad5c2dee3f9bcbc341bc6a2e8c9b", to: "default_avatar_0_small", httpServerLocation: "png", guild: "Reference Service", kind: true, padding: "/assets/images/native/avatars" };
-const result = isAVIF.fileFinishedImporting("modules/media_uploads/ImageEncodingLadder.tsx");
-
-export const IMAGE_COMPRESSION_THRESHOLDS = obj;
-export const ADAPTIVE_COMPRESSION_CONFIG = obj;
-export { getAdaptiveImageCompressionQuality };
-export const ImageEncodingLadder = () => {
+let closure_0 = importDefault(dependencyMap[0]);
+let closure_1 = importDefault(dependencyMap[1]);
+const CompressionQuality = arg1(dependencyMap[2]).CompressionQuality;
+let obj = {};
+obj = {};
+const tmp2 = () => {
   class ImageEncodingLadder {
     constructor() {
       tmp = ImageEncodingLadder(this, ImageEncodingLadder);
       return;
     }
   }
-  let _toConsumableArray = ImageEncodingLadder;
+  let closure_0 = ImageEncodingLadder;
   let obj = {
     key: "selectEncodingConfig",
     value(width) {
@@ -116,3 +109,9 @@ export const ImageEncodingLadder = () => {
   items[1] = obj;
   return callback(ImageEncodingLadder, null, items);
 }();
+const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/media_uploads/ImageEncodingLadder.tsx");
+
+export const IMAGE_COMPRESSION_THRESHOLDS = obj;
+export const ADAPTIVE_COMPRESSION_CONFIG = obj;
+export { getAdaptiveImageCompressionQuality };
+export const ImageEncodingLadder = tmp2;

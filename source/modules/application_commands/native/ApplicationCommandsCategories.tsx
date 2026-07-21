@@ -1,10 +1,10 @@
-// Module ID: 11423
-// Function ID: 88920
+// Module ID: 11430
+// Function ID: 88944
 // Name: ApplicationCommandsCategories
 // Dependencies: []
 // Exports: default
 
-// Module 11423 (ApplicationCommandsCategories)
+// Module 11430 (ApplicationCommandsCategories)
 let ICON_SIZE;
 let NODE_MARGIN;
 let NODE_SIZE;

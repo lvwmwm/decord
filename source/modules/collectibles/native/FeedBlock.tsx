@@ -1,10 +1,10 @@
-// Module ID: 14362
-// Function ID: 108447
+// Module ID: 14369
+// Function ID: 108470
 // Name: feedBlock
 // Dependencies: []
 // Exports: default
 
-// Module 14362 (feedBlock)
+// Module 14369 (feedBlock)
 let closure_3 = importAll(dependencyMap[0]);
 ({ Image: closure_4, View: closure_5 } = arg1(dependencyMap[1]));
 let closure_6 = importDefault(dependencyMap[2]);
@@ -16,18 +16,18 @@ const tmp2 = arg1(dependencyMap[1]);
 ({ jsx: closure_11, jsxs: closure_12 } = arg1(dependencyMap[7]));
 let obj = arg1(dependencyMap[8]);
 obj = {};
-obj = { position: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000345170740166158, top: -5125110894363053500000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, height: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007293801377177428, gap: importDefault(dependencyMap[9]).space.PX_16 };
+obj = { gap: importDefault(dependencyMap[9]).space.PX_16 };
 obj.feedContainer = obj;
 const tmp3 = arg1(dependencyMap[7]);
 obj.feedHeader = { gap: importDefault(dependencyMap[9]).space.PX_12, paddingHorizontal: importDefault(dependencyMap[9]).space.PX_16 };
-const obj2 = { 375360910: null, 1366188420: 0, 979437091: 360, -1102159534: 0, gap: importDefault(dependencyMap[9]).space.PX_8 };
+const obj2 = { "Null": null, "Null": 0, "Null": 360, "Null": 0, gap: importDefault(dependencyMap[9]).space.PX_8 };
 obj.feedTitle = obj2;
-const obj1 = { gap: importDefault(dependencyMap[9]).space.PX_12, paddingHorizontal: importDefault(dependencyMap[9]).space.PX_16 };
-obj.feedFooter = { gap: importDefault(dependencyMap[9]).space.PX_16 };
+const obj3 = { items: "2ec8d4d40c93ceea32933ae4e505df6e", label: "ChatPlusIcon", subLabel: "png", disabled: true, value: "/assets/images/native", gap: importDefault(dependencyMap[9]).space.PX_16 };
+obj.feedFooter = obj3;
 obj.feedFooterImage = { <string:2700863331>: null, <string:4217621604>: "119c03ecfe749b5d0f4e60c612bb714f" };
-obj.feedFooterOrbImage = { enabled: false, impressionCappingEnabled: false, loading: false, error: false };
+obj.feedFooterOrbImage = {};
 let closure_13 = obj.createStyles(obj);
-const obj3 = { gap: importDefault(dependencyMap[9]).space.PX_16 };
+const obj1 = { gap: importDefault(dependencyMap[9]).space.PX_12, paddingHorizontal: importDefault(dependencyMap[9]).space.PX_16 };
 const result = arg1(dependencyMap[34]).fileFinishedImporting("modules/collectibles/native/FeedBlock.tsx");
 
 export default function _default(feedBlock) {
@@ -137,7 +137,7 @@ export default function _default(feedBlock) {
   const obj7 = { products: filteredAndSortedProducts, loadingCardsNum: 36, preferVCPrice, accessibilityLabel: stringResult, disableBundleStaticBackground };
   items6[1] = callback(importDefault(dependencyMap[26]), obj7);
   const obj8 = { style: str.feedFooter };
-  const obj9 = {};
+  const obj9 = { useEffect: null, top: null };
   const intl4 = arg1(dependencyMap[18]).intl;
   obj9.children = intl4.string(arg1(dependencyMap[18]).t.Yr70c4);
   const items7 = [callback(arg1(dependencyMap[19]).Text, obj9), , ];
@@ -159,13 +159,13 @@ export default function _default(feedBlock) {
       let tmp29Result = callback(closure_4, obj11);
     } else {
       if (obj18.isAndroid()) {
-        const obj13 = { borderRadius: "lists", name: "latency", displayName: "max", accessibilityRole: "media", withSpring: "message" };
+        const obj13 = { action: 2.5, color: "80%", borderRadius: true, spaceAround: "/assets/images/native/premium/logos", sensitivity: 163.5 };
         let tmp30Result = tmp30(tmp31[29]);
         obj13.url = tmp30(tmp31[30]);
         obj13.style = `no-hide-descendants`.feedFooterOrbImage;
         tmp29Result = tmp29(tmp30Result, obj13);
       } else {
-        const obj14 = {};
+        const obj14 = { textAlign: "handleJoinThreadVoice", accessibilityRole: "\u{1F3C3}", Math: "isArrayBufferToString", apply: "Map", borderRadius: "isArray", marginTop: "workletEventHandler" };
         const obj15 = {};
         tmp30Result = tmp30(tmp31[31]);
         obj15.uri = tmp30(tmp31[30]);

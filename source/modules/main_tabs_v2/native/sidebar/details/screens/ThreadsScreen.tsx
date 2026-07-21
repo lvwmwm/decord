@@ -1,9 +1,9 @@
-// Module ID: 15260
-// Function ID: 115217
+// Module ID: 15267
+// Function ID: 115241
 // Name: ThreadsScreen
 // Dependencies: []
 
-// Module 15260 (ThreadsScreen)
+// Module 15267 (ThreadsScreen)
 function ThreadsScreen(channel) {
   channel = channel.channel;
   const arg1 = channel;

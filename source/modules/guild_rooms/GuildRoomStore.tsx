@@ -1,15 +1,15 @@
-// Module ID: 15913
-// Function ID: 122020
+// Module ID: 15920
+// Function ID: 122044
 // Name: _isNativeReflectConstruct
 // Dependencies: [0, 0, 0, 0, 0, 0]
 
-// Module 15913 (_isNativeReflectConstruct)
-import result from "result";
-import closure_6 from "result";
-import closure_7 from "result";
-import closure_8 from "result";
-import closure_9 from "result";
-import closure_10 from "result";
+// Module 15920 (_isNativeReflectConstruct)
+import __exportStarResult1 from "__exportStarResult1";
+import closure_6 from "__exportStarResult1";
+import closure_7 from "__exportStarResult1";
+import closure_8 from "__exportStarResult1";
+import closure_9 from "__exportStarResult1";
+import closure_10 from "__exportStarResult1";
 
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
@@ -37,7 +37,7 @@ function handleNoteCreateComplete(arg0) {
 }
 let closure_2 = [];
 let closure_3 = [];
-let closure_4 = [-129695740];
+let closure_4 = [true];
 let closure_11 = importDefault(dependencyMap[6]);
 let closure_12 = importDefault(dependencyMap[7]);
 let closure_13 = importDefault(dependencyMap[8]);
@@ -57,7 +57,7 @@ let tmp5 = (Store) => {
   class GuildRoomStore {
     constructor() {
       self = this;
-      tmp = result(this, GuildRoomStore);
+      tmp = __exportStarResult1(this, GuildRoomStore);
       obj = closure_8(GuildRoomStore);
       tmp2 = closure_7;
       if (closure_26()) {
@@ -321,8 +321,19 @@ obj = {
       const result = map2.set(channelId, mediaSessionId);
     }
   },
-  GUILD_ROOM_PENDING_NOTE_CREATE: function handlePendingNoteCreate(roomId) {
-    closure_25[roomId.roomId] = roomId.note;
+  GUILD_ROOM_PENDING_NOTE_START: function handlePendingNoteStart(roomId) {
+    closure_25[roomId.roomId] = { position: null };
+  },
+  GUILD_ROOM_PENDING_NOTE_PLACE: function handlePendingNotePlace(roomId) {
+    roomId = roomId.roomId;
+    if (null == closure_25[roomId]) {
+      return false;
+    } else {
+      const obj = {};
+      const merged = Object.assign(tmp2);
+      obj["position"] = tmp;
+      closure_25[roomId] = obj;
+    }
   },
   GUILD_ROOM_PENDING_NOTE_DELETE: handleNoteCreateComplete,
   GUILD_ROOM_NOTE_CREATE_COMPLETE: handleNoteCreateComplete

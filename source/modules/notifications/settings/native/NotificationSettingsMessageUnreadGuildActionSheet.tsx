@@ -1,10 +1,10 @@
-// Module ID: 10285
-// Function ID: 79420
+// Module ID: 10291
+// Function ID: 79439
 // Name: NotificationSettingsMessageUnreadGuildActionSheet
 // Dependencies: []
 // Exports: default
 
-// Module 10285 (NotificationSettingsMessageUnreadGuildActionSheet)
+// Module 10291 (NotificationSettingsMessageUnreadGuildActionSheet)
 importAll(dependencyMap[0]);
 let closure_3 = importDefault(dependencyMap[1]);
 const UserNotificationSettings = arg1(dependencyMap[2]).UserNotificationSettings;

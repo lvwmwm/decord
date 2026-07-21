@@ -187,7 +187,7 @@ function getUrlFromResource(url) {
 }
 function parseFetchArgs(arg0) {
   if (0 === arg0.length) {
-    return { "Bool(true)": "EntitlementTypes", "Bool(true)": "PRODUCTS_AVAILABLE_FOR_PURCHASE" };
+    return { "Null": "subtype", "Null": "enum" };
   } else if (2 === arg0.length) {
     const tmp6 = callback(arg0, 2);
     const first = tmp6[0];

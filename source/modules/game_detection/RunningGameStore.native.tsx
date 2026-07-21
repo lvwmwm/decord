@@ -1,7 +1,7 @@
 // Module ID: 4146
-// Function ID: 34969
+// Function ID: 34974
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 4158, 1194, 653, 587, 4166, 1360]
+// Dependencies: [6, 7, 15, 17, 18, 4149, 653, 4152, 664, 4159, 587, 477]
 // Exports: gameKey, getRawOverlayGameStatus, isDetectionEnabled, maybeTransformSubgame, transformForGameSettings
 
 // Module 4146 (_isNativeReflectConstruct)
@@ -10,9 +10,10 @@ import _defineProperties from "_defineProperties";
 import _possibleConstructorReturn from "_possibleConstructorReturn";
 import _getPrototypeOf from "_getPrototypeOf";
 import _inherits from "_inherits";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_8 from "_isNativeReflectConstruct";
-import hasFlag from "hasFlag";
+import _callSuper from "_callSuper";
+import ME from "ME";
+import ApplicationTypes from "ApplicationTypes";
+import module_477 from "module_477";
 
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
@@ -30,7 +31,7 @@ let tmp2 = (Store) => {
       tmp = _classCallCheck(this, RunningGameStore);
       obj = _getPrototypeOf(RunningGameStore);
       tmp2 = _possibleConstructorReturn;
-      if (closure_9()) {
+      if (closure_10()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
         tmp7 = _getPrototypeOf;
@@ -260,10 +261,10 @@ let tmp2 = (Store) => {
     }
   };
   return callback(RunningGameStore, items);
-}(require("Storage").Store);
+}(require("CachedEntriesMap").Store);
 tmp2.displayName = "RunningGameStore";
-tmp2 = new tmp2(require("convertToTransitionState"), {});
-const result = hasFlag.fileFinishedImporting("modules/game_detection/RunningGameStore.native.tsx");
+tmp2 = new tmp2(require("Storage"), {});
+const result = module_477.fileFinishedImporting("modules/game_detection/RunningGameStore.native.tsx");
 
 export default tmp2;
 export function gameKey() {
@@ -271,10 +272,9 @@ export function gameKey() {
 }
 export const getRawOverlayGameStatus = function getRawOverlayGameStatus() {
   if (arg1 === undefined) {
-    const items = [_isNativeReflectConstruct, closure_8];
+    const items = [ME, ApplicationTypes, _callSuper];
   }
-  const obj = { useInappropriateConversationBannerForChannel: 1883308033, IOS_AGE_GATE_MODAL: 1358955001, framerate: -1958556522, parentOptionName: -1962934016, roundingMagnitude: 1124073728, source: arg1(dependencyMap[7]).OverlayGameStatusSource.UNKNOWN, overlayMethod: arg1(dependencyMap[7]).OverlayMethod.Disabled };
-  return obj;
+  return { source: arg1(dependencyMap[8]).OverlayGameStatusSource.UNKNOWN, overlayMethod: arg1(dependencyMap[8]).OverlayMethod.Disabled };
 };
 export function isDetectionEnabled(value) {
   return false;

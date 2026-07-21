@@ -1,9 +1,9 @@
-// Module ID: 13904
-// Function ID: 105258
+// Module ID: 13911
+// Function ID: 105281
 // Name: SessionManager
 // Dependencies: []
 
-// Module 13904 (SessionManager)
+// Module 13911 (SessionManager)
 let closure_0 = importDefault(dependencyMap[0]);
 let closure_1 = importDefault(dependencyMap[1]);
 const tmp2 = () => {

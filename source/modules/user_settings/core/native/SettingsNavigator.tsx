@@ -1,9 +1,9 @@
-// Module ID: 15452
-// Function ID: 117877
+// Module ID: 15459
+// Function ID: 117901
 // Name: LeftAlignedHeaderTitle
 // Dependencies: []
 
-// Module 15452 (LeftAlignedHeaderTitle)
+// Module 15459 (LeftAlignedHeaderTitle)
 function LeftAlignedHeaderTitle(children) {
   const tmp = callback4();
   return callback2(arg1(dependencyMap[10]).Heading, { style: callback4().headerContainer, children: children.title });
@@ -106,9 +106,9 @@ const memoResult = importAllResult.memo(() => {
   let closure_7 = React.useCallback((arg0) => () => {
     let obj = { collapsable: false };
     obj = {
-      unamused: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001509729741068122,
-      defaultGuildsRestricted: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000020778769542984182,
-      UNDER_MINIMUM_AGE: 8594751048.14164,
+      backgroundColor: null,
+      padding: null,
+      borderRadius: null,
       onPress() {
         return navigation.goBack();
       }
@@ -116,7 +116,7 @@ const memoResult = importAllResult.memo(() => {
     const intl = arg0(closure_2[26]).intl;
     obj.accessibilityLabel = intl.string(arg0(closure_2[26]).t.13/7kX);
     obj.hitSlop = arg0(closure_2[27]).BACK_ICON_WITH_BADGE_HIT_SLOP;
-    obj = { "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, style: arg0.backIcon, children: callback(arg0(closure_2[27]).SettingsLeftIconWithBadge, { navigation: arg0 }) };
+    obj = { style: arg0.backIcon, children: callback(arg0(closure_2[27]).SettingsLeftIconWithBadge, obj1) };
     obj.children = callback(closure_5, obj);
     obj.children = callback(arg0(closure_2[25]).PressableOpacity, obj);
     return callback(closure_5, obj);
@@ -168,7 +168,7 @@ const memoResult = importAllResult.memo(() => {
     headerTitle(children) {
       return callback3(closure_14, { title: children.children });
     },
-    UNSTABLE_headerInsets: {}
+    UNSTABLE_headerInsets: { <string:24250455>: null, isArray: null }
   };
   const merged = Object.assign(accessibilityNativeStackOptions);
   obj2.screenOptions = obj3;

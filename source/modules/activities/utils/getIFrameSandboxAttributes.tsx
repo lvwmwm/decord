@@ -1,11 +1,11 @@
-// Module ID: 10592
-// Function ID: 82678
+// Module ID: 10598
+// Function ID: 82701
 // Name: getIFrameSandboxAttributes
-// Dependencies: []
+// Dependencies: [284214097]
 // Exports: default
 
-// Module 10592 (getIFrameSandboxAttributes)
-let closure_0 = [null, null, null, null];
+// Module 10598 (getIFrameSandboxAttributes)
+let closure_0 = [false, false, false, false];
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("modules/activities/utils/getIFrameSandboxAttributes.tsx");
 

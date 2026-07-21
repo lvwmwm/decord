@@ -1,9 +1,9 @@
-// Module ID: 15698
-// Function ID: 119986
+// Module ID: 15705
+// Function ID: 120010
 // Name: StreamIcon
 // Dependencies: []
 
-// Module 15698 (StreamIcon)
+// Module 15705 (StreamIcon)
 let Platform;
 let Pressable;
 function StreamIcon(voicePlatform) {
@@ -120,22 +120,22 @@ const importDefaultResult = importDefault(dependencyMap[12]);
 let closure_20 = importDefault(dependencyMap[12]).createAnimatedComponent(Pressable);
 const importDefaultResult1 = importDefault(dependencyMap[12]);
 let closure_21 = arg1(dependencyMap[14]).createStyles((arg0) => {
-  let obj = { labelPositionContainer: { ONE_DAY: "hidden", borderWidth: "absolute", showChevron: 1, addUpdate: 1, unzoom: 1, HAPPENING_NOW_CARD_WIDTH_STRETCHY_MIN: 1, connectText: 1 } };
-  obj = { variant: "<string:1107361794>", lineClamp: "text-sm/semibold", ellipsizeMode: "text-strong", spacing: "<string:30066497>", speed: "<string:1375166720>", style: "<string:57777434>", size: "<string:1090519040>", width: "100%", horizontal: "<string:832379473>", style: "isArray" };
+  let obj = { labelPositionContainer: { MOBILE_BOTTOM_SHEET: "hidden", borderWidth: "absolute", namePlaceholder: 1, nameContainer: 1, updateAllWidths: 1, activeCommandOption: 1, customIconSrc: 1 } };
+  obj = { variant: null, lineClamp: null, ellipsizeMode: null, spacing: null, speed: null, style: null, size: null, width: null, horizontal: null, style: null };
   const radii = importDefault(dependencyMap[15]).radii;
   obj.borderRadius = arg0 ? radii.sm : radii.round;
   obj.backgroundColor = importDefault(dependencyMap[15]).colors.CONTROL_OVERLAY_SECONDARY_BACKGROUND_DEFAULT;
   obj.labelOuterContainer = obj;
   obj.initialIcons = {};
-  obj = { aze: "version=$(node -p \"require('./package.json').version\") && sed -i '' \"s/#define NITRO_VERSION \\\".*\\\"/#define NITRO_VERSION \\\"$version\\\"/\" ./cpp/utils/NitroDefines.hpp", azj: "bun run write-native-version", tintColor: importDefault(dependencyMap[15]).colors.WHITE };
+  obj = { bhk: "version=$(node -p \"require('./package.json').version\") && sed -i '' \"s/#define NITRO_VERSION \\\".*\\\"/#define NITRO_VERSION \\\"$version\\\"/\" ./cpp/utils/NitroDefines.hpp", bic: "bun run write-native-version", tintColor: importDefault(dependencyMap[15]).colors.WHITE };
   obj.icon = obj;
-  const obj1 = { aze: "<string:16777479>", azj: "<string:36295491>", tintColor: importDefault(dependencyMap[15]).colors.WHITE };
-  obj.iconWithoutBackground = obj1;
+  obj.iconWithoutBackground = { tintColor: importDefault(dependencyMap[15]).colors.WHITE };
+  const obj1 = { tintColor: importDefault(dependencyMap[15]).colors.WHITE };
   obj.iconContainer = { borderRadius: importDefault(dependencyMap[15]).radii.round };
   obj.speakerMuteIcon = { marginRight: 4 };
   obj.floatingContainer = { isPreload: true, skipLocalFetch: "/assets/images/native", type: 18, value: 18, description: null };
-  obj.floatingText = { locale: null, parentLocale: null, art-lojban: null, i-ami: null, i-bnn: null };
-  const obj3 = { "Bool(true)": "<string:36381249>", "Bool(true)": "<string:24183040>", "Bool(true)": "<string:1107296256>", "Bool(true)": "text-xs/medium", borderRadius: importDefault(dependencyMap[15]).radii.round, backgroundColor: importDefault(dependencyMap[15]).colors.BACKGROUND_SURFACE_HIGH };
+  obj.floatingText = { line: null, column: null, seenCR: null, locale: null, parentLocale: null };
+  const obj3 = { <string:1435746702>: true, <string:751231512>: true, <string:2539449152>: true, <string:979674688>: true, borderRadius: importDefault(dependencyMap[15]).radii.round, backgroundColor: importDefault(dependencyMap[15]).colors.BACKGROUND_SURFACE_HIGH };
   obj.ringingIconContainer = obj3;
   const obj2 = { borderRadius: importDefault(dependencyMap[15]).radii.round };
   obj.ringingIcon = { tintColor: importDefault(dependencyMap[15]).colors.STATUS_POSITIVE };
@@ -595,7 +595,7 @@ let closure_41 = importAllResult.memo((controlsHidden) => {
   const tmp19 = closure_17;
   const tmp20 = closure_20;
   const tmp27 = closure_17;
-  const obj9 = { width: "valueArray", height: "shouldPressibilityUseW3CPointerEventsForHover", margin: "OrbNitroCardSpotIllustration", flex: "isArray", alignItems: "isArray" };
+  const obj9 = { useRef: "inputHint", sk: "guildFolders", accessibilityRole: "ranges", window: "isArray", call: "isArray" };
   const items5 = [tmp3.floatingText, ];
   let tmp30 = null != displayNameStylesFont;
   if (tmp30) {

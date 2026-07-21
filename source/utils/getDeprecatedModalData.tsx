@@ -1,10 +1,10 @@
-// Module ID: 4331
-// Function ID: 38208
+// Module ID: 4335
+// Function ID: 38256
 // Name: getDeprecatedModalData
 // Dependencies: []
 // Exports: default
 
-// Module 4331 (getDeprecatedModalData)
+// Module 4335 (getDeprecatedModalData)
 let closure_0 = importDefault(dependencyMap[0]);
 const ModalAnimation = arg1(dependencyMap[1]).ModalAnimation;
 const result = arg1(dependencyMap[2]).fileFinishedImporting("utils/getDeprecatedModalData.tsx");

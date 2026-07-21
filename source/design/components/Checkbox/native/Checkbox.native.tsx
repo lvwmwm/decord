@@ -1,16 +1,16 @@
-// Module ID: 9009
-// Function ID: 70897
+// Module ID: 9013
+// Function ID: 70909
 // Name: Checkbox
 // Dependencies: []
 // Exports: Checkbox
 
-// Module 9009 (Checkbox)
+// Module 9013 (Checkbox)
 const _module = require(dependencyMap[0]);
 ({ Pressable: closure_2, View: closure_3 } = _module);
 const _module1 = require(dependencyMap[1]);
 ({ jsx: closure_4, jsxs: closure_5 } = _module1);
 const _module2 = require(dependencyMap[2]);
-let closure_6 = _module2.createStyles({ textContainer: { flex: 1 }, labelContainer: {} });
+let closure_6 = _module2.createStyles({ textContainer: { flex: 1 }, labelContainer: { "Bool(false)": null, "Bool(false)": "absolute" } });
 const _module3 = require(dependencyMap[8]);
 const result = _module3.fileFinishedImporting("design/components/Checkbox/native/Checkbox.native.tsx");
 
@@ -53,7 +53,7 @@ export const Checkbox = function Checkbox(onToggle) {
     const obj4 = {};
     const intl2 = require(dependencyMap[4]).intl;
     obj4.aria-label = intl2.string(require(dependencyMap[4]).t.EkokLy);
-    obj4.children = ["<string:2865627137>", "<string:1771503617>"];
+    obj4.children = [];
     required = callback2(require(dependencyMap[7]).Text, obj4);
   }
   items1[1] = required;
@@ -62,7 +62,7 @@ export const Checkbox = function Checkbox(onToggle) {
   const items2 = [callback(closure_3, obj2), ];
   let tmp16 = null != description;
   if (tmp16) {
-    const obj5 = { INTEGRATION_CREATE: "<string:1900005261>", ConstraintReasonCode: "Array", children: description };
+    const obj5 = { children: description };
     tmp16 = callback(require(dependencyMap[7]).Text, obj5);
   }
   items2[1] = tmp16;

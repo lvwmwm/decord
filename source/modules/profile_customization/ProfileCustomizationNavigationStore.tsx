@@ -1,9 +1,9 @@
-// Module ID: 9770
-// Function ID: 75976
+// Module ID: 9775
+// Function ID: 75992
 // Name: zustandStore
 // Dependencies: []
 
-// Module 9770 (zustandStore)
+// Module 9775 (zustandStore)
 let closure_0 = require(dependencyMap[1]).ProfileCustomizationSubsection;
 const zustandStore = require(dependencyMap[0]).createZustandStore(() => ({ subsection: constants.USER_PROFILE, scrollPosition: null }));
 const _module = require(dependencyMap[2]);

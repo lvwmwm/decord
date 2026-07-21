@@ -1,9 +1,9 @@
-// Module ID: 8703
-// Function ID: 68897
+// Module ID: 8707
+// Function ID: 68909
 // Name: PurchasedAssetOverlay
 // Dependencies: []
 
-// Module 8703 (PurchasedAssetOverlay)
+// Module 8707 (PurchasedAssetOverlay)
 function PurchasedAssetOverlay() {
   const tmp = callback3();
   let obj = { style: tmp.overlayContainer, children: callback2(arg1(dependencyMap[8]).CheckmarkLargeBoldIcon, obj) };
@@ -32,7 +32,7 @@ function ProductPreview(arg0) {
     if (productType !== arg1(dependencyMap[11]).CollectiblesItemType.PROFILE_FRAME) {
       let str = "75%";
     }
-    obj = { <string:3142754913>: null, <string:1638282744>: null, <string:3863696069>: null };
+    obj = { -1762871448: null, -1076975364: null, -1437189275: null };
     const items = [tmp.overlayContainer, , ];
     if (!isPurchased) {
       isPurchased = isDisabled;
@@ -132,7 +132,7 @@ function AssetTileInternal(solidBackground) {
   if (flag) {
     num = 1;
   }
-  obj = { "Bool(false)": true, "Bool(false)": true, "Bool(false)": true };
+  obj = {};
   const items = [tmp.assetContainer, ];
   obj = {};
   obj.backgroundColor = obj.hexToRgbaString(obj2.hexWithOpacity(token, num));
@@ -150,7 +150,7 @@ const EXTERNAL_PRODUCT_SKU_IDS = arg1(dependencyMap[3]).EXTERNAL_PRODUCT_SKU_IDS
 const diff = arg1(dependencyMap[5]).COLLECTIBLES_SHOP_CARD_HEIGHT - 2 * importDefault(dependencyMap[6]).space.PX_16;
 let obj1 = arg1(dependencyMap[7]);
 let obj = {};
-obj = { 873027242: null, 2064390188: null, 396577459: null, -380404912: null, 791211009: null, 1359503782: null, borderRadius: importDefault(dependencyMap[6]).radii.sm };
+obj = { "Bool(false)": "a", "Bool(false)": "chatInputSendButton", "Bool(false)": "storefront_pricing", "Bool(false)": "getQuestPrimaryReward", "Bool(false)": "adult", "Bool(false)": "numpad 5", borderRadius: importDefault(dependencyMap[6]).radii.sm };
 obj.assetContainer = obj;
 obj1 = {};
 const merged = Object.assign(tmp2.StyleSheet.absoluteFillObject);
@@ -159,13 +159,13 @@ obj1["alignItems"] = "center";
 obj1["width"] = "100%";
 obj1["height"] = "75%";
 obj.overlayContainer = obj1;
-const obj2 = { aze: 30271555, azj: 22092032, backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_BASE_LOW };
-obj.profileEffectContainer = obj2;
-const obj3 = { align: "isArray", label: "body", subLabel: "message", height: diff };
+const tmp3 = arg1(dependencyMap[4]);
+obj.profileEffectContainer = { backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_BASE_LOW };
+const obj3 = { 9223372036854775807: "isArray", 9223372036854775807: "body", 9223372036854775807: "message", height: diff };
 obj.profileFrameContainer = obj3;
 obj.externalProductImage = {};
 obj.purchasedOrDisabled = { opacity: 0.4 };
-const tmp3 = arg1(dependencyMap[4]);
+const obj2 = { backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_BASE_LOW };
 obj.overlayIcon = { color: importDefault(dependencyMap[6]).colors.ICON_STRONG };
 let closure_10 = obj1.createStyles(obj);
 const obj4 = { color: importDefault(dependencyMap[6]).colors.ICON_STRONG };

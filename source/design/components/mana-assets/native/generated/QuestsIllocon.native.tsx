@@ -1,14 +1,13 @@
-// Module ID: 6431
-// Function ID: 50520
+// Module ID: 6433
+// Function ID: 50563
 // Name: QuestsIllocon
-// Dependencies: [4294967295, 0, 0, 0]
+// Dependencies: []
 // Exports: QuestsIllocon
 
-// Module 6431 (QuestsIllocon)
-import result from "result";
-
+// Module 6433 (QuestsIllocon)
 const jsx = require(dependencyMap[0]).jsx;
-result = result.fileFinishedImporting("design/components/mana-assets/native/generated/QuestsIllocon.native.tsx");
+const _module = require(dependencyMap[3]);
+const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/QuestsIllocon.native.tsx");
 
 export const QuestsIllocon = function QuestsIllocon(size) {
   let accessibilityLabel;

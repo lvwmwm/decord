@@ -1,10 +1,10 @@
-// Module ID: 15135
-// Function ID: 114217
+// Module ID: 15142
+// Function ID: 114241
 // Name: TruncatedText
 // Dependencies: []
 // Exports: ArrowButton, TruncatedText, useFormattedSubscriptionPlan
 
-// Module 15135 (TruncatedText)
+// Module 15142 (TruncatedText)
 let closure_4 = importDefault(dependencyMap[0]);
 let closure_5 = importAll(dependencyMap[1]);
 ({ TouchableOpacity: closure_6, View: closure_7 } = arg1(dependencyMap[2]));
@@ -15,10 +15,10 @@ let obj = arg1(dependencyMap[5]);
 obj = {};
 obj = { "Null": "start_time", "Null": "message", "Null": "absolute", "Null": "10%", borderColor: importDefault(dependencyMap[6]).colors.TEXT_DEFAULT };
 obj.toggleTruncateButton = obj;
-const obj1 = { "Bool(false)": null, "Bool(false)": "0a2944e427275918c323a5aa7d658085", "Bool(false)": "BattlenetNeutralIcon", "Bool(false)": "png", borderRadius: importDefault(dependencyMap[6]).radii.sm, backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_MOD_MUTED };
-obj.arrowButton = obj1;
-obj.arrowButtonText = { backgroundColor: "innocent", height: "innocent" };
 const tmp3 = arg1(dependencyMap[4]);
+obj.arrowButton = { borderRadius: importDefault(dependencyMap[6]).radii.sm, backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_MOD_MUTED };
+obj.arrowButtonText = {};
+const obj1 = { borderRadius: importDefault(dependencyMap[6]).radii.sm, backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_MOD_MUTED };
 obj.arrowButtonIcon = { tintColor: importDefault(dependencyMap[6]).colors.INTERACTIVE_TEXT_ACTIVE };
 let closure_11 = obj.createStyles(obj);
 const obj2 = { tintColor: importDefault(dependencyMap[6]).colors.INTERACTIVE_TEXT_ACTIVE };

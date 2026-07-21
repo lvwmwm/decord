@@ -1,10 +1,10 @@
-// Module ID: 5649
-// Function ID: 48290
+// Module ID: 5651
+// Function ID: 48332
 // Name: isModeratorReportOrPostChannelId
 // Dependencies: []
 // Exports: canAccessReportsChannel, canReportMessageToMods, getReportToModChannelId, isModeratorReportChannelId, isModeratorReportMessage, isModeratorReportPostChannelId, isModeratorReportThreadStarterMessage, isSafeToTransitionToReportForCurrentUser, isUserAuthorOfReportedMessage, sortedModeratorReportTags
 
-// Module 5649 (isModeratorReportOrPostChannelId)
+// Module 5651 (isModeratorReportOrPostChannelId)
 function isModeratorReportOrPostChannelId(channelId) {
   return isModeratorReportOrPostChannel(store.getChannel(channelId));
 }

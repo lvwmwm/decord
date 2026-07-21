@@ -1,7 +1,7 @@
 // Module ID: 1056
 // Function ID: 11305
 // Name: httpContextIntegration
-// Dependencies: []
+// Dependencies: [68681728, 70057984]
 
 // Module 1056 (httpContextIntegration)
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });

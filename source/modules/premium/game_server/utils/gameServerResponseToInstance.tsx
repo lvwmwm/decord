@@ -1,7 +1,7 @@
 // Module ID: 4038
 // Function ID: 33630
 // Name: gameServerResponseToInstance
-// Dependencies: []
+// Dependencies: [284214097]
 // Exports: default
 
 // Module 4038 (gameServerResponseToInstance)

@@ -1,10 +1,10 @@
-// Module ID: 10658
-// Function ID: 83136
+// Module ID: 10664
+// Function ID: 83159
 // Name: HandRequestDenyIcon
 // Dependencies: []
 // Exports: HandRequestDenyIcon
 
-// Module 10658 (HandRequestDenyIcon)
+// Module 10664 (HandRequestDenyIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/HandRequestDenyIcon.tsx");

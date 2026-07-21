@@ -1,9 +1,9 @@
-// Module ID: 14770
-// Function ID: 111357
+// Module ID: 14777
+// Function ID: 111381
 // Name: MessagesItemChannelContentIcon
 // Dependencies: []
 
-// Module 14770 (MessagesItemChannelContentIcon)
+// Module 14777 (MessagesItemChannelContentIcon)
 function MessagesItemChannelContentIcon(selected) {
   let blocked;
   let favorite;
@@ -48,10 +48,10 @@ const UnreadSetting = arg1(dependencyMap[4]).UnreadSetting;
 const importAllResult = importAll(dependencyMap[0]);
 ({ jsx: closure_7, jsxs: closure_8, Fragment: closure_9 } = arg1(dependencyMap[5]));
 let obj1 = arg1(dependencyMap[6]);
-let obj = { content: { flex: 1 }, channelIcon: { alignSelf: "center" }, channelNameAndAccessories: { disabled: true, size: true, grow: true }, channelIcons: { -9223372036854775808: true, filter: true } };
-obj = { <string:1968286294>: 127258332461896840000000000, <string:2583126653>: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000005562684654185707, <string:1880715347>: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000005562684647563167, marginLeft: importDefault(dependencyMap[7]).space.PX_4 };
+let obj = { content: { flex: 1 }, channelIcon: { alignSelf: "center" }, channelNameAndAccessories: {}, channelIcons: {} };
+obj = { style: "<string:1602561>", statusStyle: "\u7228", onPress: "\u7228", marginLeft: importDefault(dependencyMap[7]).space.PX_4 };
 obj.channelAccessoriesContainer = obj;
-obj1 = { durationLimit: 24, includeExtra: 4, position: 4, top: 4, bottom: "flex", left: "row", width: "center", borderRadius: importDefault(dependencyMap[7]).radii.xs, paddingHorizontal: importDefault(dependencyMap[7]).space.PX_4 };
+obj1 = { borderRadius: importDefault(dependencyMap[7]).radii.xs, paddingHorizontal: importDefault(dependencyMap[7]).space.PX_4 };
 obj.channelAccessories = obj1;
 const tmp2 = arg1(dependencyMap[5]);
 obj.channelNameAndBadge = { gap: importDefault(dependencyMap[7]).space.PX_4 };
@@ -300,7 +300,7 @@ const memoResult = importAllResult.memo(function MessagesItemChannelContent(chan
     } else {
       tmp67Result = null;
       if (importDefault(dependencyMap[19])(channel.id)) {
-        const obj18 = { 1968435297: "10", 915925470: "channel-row", 1375298031: "11", style: tmp7.channelText };
+        const obj18 = { keFvXM: "7", address-line1: "channel-row", guildId: "10", style: tmp7.channelText };
         const intl = arg1(dependencyMap[33]).intl;
         obj18.children = intl.string(arg1(dependencyMap[33]).t.FL5T01);
         tmp67Result = callback(arg1(dependencyMap[27]).Text, obj18);

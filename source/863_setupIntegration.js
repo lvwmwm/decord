@@ -1,12 +1,10 @@
 // Module ID: 863
 // Function ID: 9635
 // Name: setupIntegration
-// Dependencies: [0, 0, 0, 0]
+// Dependencies: []
 // Exports: addIntegration, afterSetupIntegrations, defineIntegration, getIntegrationsToSetup, setupIntegrations
 
 // Module 863 (setupIntegration)
-import result from "result";
-
 function setupIntegration(on, name) {
   const require = on;
   if (arg2[name.name]) {
@@ -51,6 +49,7 @@ function setupIntegration(on, name) {
     }
   }
 }
+let closure_2 = require(dependencyMap[0]);
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 const items = [];
 
@@ -94,8 +93,8 @@ export const getIntegrationsToSetup = function getIntegrationsToSetup(defaultInt
   });
   if (Array.isArray(integrations)) {
     const items = [];
-    let combined = items.concat(result(arr), result(integrations));
-    const tmp6 = result(arr);
+    let combined = items.concat(callback(arr), callback(integrations));
+    const tmp6 = callback(arr);
   } else {
     combined = arr;
     if ("function" === typeof integrations) {

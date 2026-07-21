@@ -1,9 +1,9 @@
-// Module ID: 12873
-// Function ID: 98337
+// Module ID: 12880
+// Function ID: 98360
 // Name: GradientBorder
 // Dependencies: []
 
-// Module 12873 (GradientBorder)
+// Module 12880 (GradientBorder)
 class GradientBorder {
   constructor(arg0) {
     ({ children, borderWidth } = global);
@@ -19,7 +19,7 @@ class GradientBorder {
       num2 = 1;
       borderRadius = importDefault(dependencyMap[5]).radii.sm + 1;
     }
-    obj = { borderRadius: false, accessibilityRole: null, name: "", "Bool(false)": null, "Bool(false)": null };
+    obj = {};
     setPrototypeOfResult = Object.setPrototypeOf(null);
     merged = Object.assign(global, obj);
     tmp5 = function getStartEnd(direction) {
@@ -27,8 +27,8 @@ class GradientBorder {
       const str = callback(closure_2[4]);
       const withResult = match.with(constants.HORIZONTAL, () => closure_5);
       const withResult1 = match.with(constants.HORIZONTAL, () => closure_5).with(constants.VERTICAL, () => closure_6);
-      const withResult2 = match.with(constants.HORIZONTAL, () => closure_5).with(constants.VERTICAL, () => closure_6).with(constants.DIAGONAL, () => ({ START: { "Null": false, "Null": true }, END: { "Null": "innocent", "Null": "innocent" } }));
-      return match.with(constants.HORIZONTAL, () => closure_5).with(constants.VERTICAL, () => closure_6).with(constants.DIAGONAL, () => ({ START: { "Null": false, "Null": true }, END: { "Null": "innocent", "Null": "innocent" } })).with(constants.ANTI_DIAGONAL, () => ({ START: { "Null": 131072.00314656927, "Null": 0.000000000000000000000000000000000000000000000000000000011294471302334573 }, END: { "Null": null, "Null": null } })).exhaustive();
+      const withResult2 = match.with(constants.HORIZONTAL, () => closure_5).with(constants.VERTICAL, () => closure_6).with(constants.DIAGONAL, () => ({ START: { max: -536870861, guildId: -299892737 }, END: {} }));
+      return match.with(constants.HORIZONTAL, () => closure_5).with(constants.VERTICAL, () => closure_6).with(constants.DIAGONAL, () => ({ START: { max: -536870861, guildId: -299892737 }, END: {} })).with(constants.ANTI_DIAGONAL, () => ({ START: {}, END: {} })).exhaustive();
     }(direction);
     tmp8 = null;
     if (null != children) {

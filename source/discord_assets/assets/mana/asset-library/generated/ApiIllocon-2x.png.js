@@ -1,9 +1,9 @@
-// Module ID: 5852
-// Function ID: 49652
+// Module ID: 5854
+// Function ID: 49695
 // Name: metadata
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 5852 (metadata)
+// Module 5854 (metadata)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/ApiIllocon-2x.png.js");
 

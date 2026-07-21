@@ -1,10 +1,10 @@
-// Module ID: 13868
-// Function ID: 104946
+// Module ID: 13875
+// Function ID: 104969
 // Name: useYouBarTotalHeight
 // Dependencies: []
 // Exports: useYouBarTotalHeight
 
-// Module 13868 (useYouBarTotalHeight)
+// Module 13875 (useYouBarTotalHeight)
 const YOU_BAR_HEIGHT = require(dependencyMap[0]).YOU_BAR_HEIGHT;
 const _module = require(dependencyMap[3]);
 const result = _module.fileFinishedImporting("modules/main_tabs_v2/native/you_bar/hooks/useYouBarTotalHeight.tsx");

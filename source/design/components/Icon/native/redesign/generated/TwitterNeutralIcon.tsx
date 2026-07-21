@@ -1,10 +1,10 @@
-// Module ID: 11384
-// Function ID: 88539
+// Module ID: 11391
+// Function ID: 88563
 // Name: TwitterNeutralIcon
 // Dependencies: []
 // Exports: TwitterNeutralIcon
 
-// Module 11384 (TwitterNeutralIcon)
+// Module 11391 (TwitterNeutralIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/TwitterNeutralIcon.tsx");

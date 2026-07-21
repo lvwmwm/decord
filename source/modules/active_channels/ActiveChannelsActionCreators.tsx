@@ -1,10 +1,10 @@
-// Module ID: 14790
-// Function ID: 111528
+// Module ID: 14797
+// Function ID: 111552
 // Name: _fetchActiveChannels
 // Dependencies: []
 // Exports: fetchActiveChannels
 
-// Module 14790 (_fetchActiveChannels)
+// Module 14797 (_fetchActiveChannels)
 function _fetchActiveChannels() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);

@@ -1,10 +1,10 @@
-// Module ID: 8344
-// Function ID: 66453
+// Module ID: 8348
+// Function ID: 66465
 // Name: GuildScheduledEventDetailsActionSheet
 // Dependencies: []
 // Exports: default
 
-// Module 8344 (GuildScheduledEventDetailsActionSheet)
+// Module 8348 (GuildScheduledEventDetailsActionSheet)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 const View = arg1(dependencyMap[2]).View;
@@ -188,7 +188,7 @@ export default function GuildScheduledEventDetailsActionSheet(eventId) {
       EVENT_INFO = items4.EVENT_INFO;
     }
     const obj4 = { value: tmp2(importDefault(dependencyMap[11]).GUILD_EVENT_MODAL).analyticsLocations };
-    const obj5 = { 0: null, -9223372036854775808: null, onDismiss: onCloseActionSheet, header: closure_11(closure_5, obj) };
+    const obj5 = { 1891290120: null, -475247768: null, onDismiss: onCloseActionSheet, header: closure_11(closure_5, obj) };
     if (EVENT_INFO === items4.EVENT_INFO) {
       const obj6 = {};
       const obj7 = { guildEvent: stateFromStores, safeBottomPadding: bottom, onCloseActionSheet, onLayout: callback, recurrenceId: first, onRecurrencePress: tmp3[1] };

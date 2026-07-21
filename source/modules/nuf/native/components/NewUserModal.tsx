@@ -1,10 +1,10 @@
-// Module ID: 15994
-// Function ID: 122739
+// Module ID: 16001
+// Function ID: 122765
 // Name: NewUserModal
 // Dependencies: []
 // Exports: default
 
-// Module 15994 (NewUserModal)
+// Module 16001 (NewUserModal)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 const NativeModules = arg1(dependencyMap[2]).NativeModules;
@@ -68,12 +68,12 @@ export default function NewUserModal(arg0) {
     screenOptions(navigation) {
       closure_5.current = navigation.navigation;
       const obj = {
-        "Bool(false)": "isArray",
-        "Bool(false)": "constructor",
-        "Bool(false)": "apply",
-        "Bool(false)": "isArray",
-        "Bool(false)": "isArray",
-        "Bool(false)": "isArray",
+        9223372036854775807: "isArray",
+        9223372036854775807: "constructor",
+        0: "apply",
+        9223372036854775807: "isArray",
+        9223372036854775807: "isArray",
+        9223372036854775807: "isArray",
         headerStyle: lib.header,
         headerLeft() {
           return null;

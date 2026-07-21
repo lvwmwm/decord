@@ -1,10 +1,10 @@
-// Module ID: 7685
-// Function ID: 61338
+// Module ID: 7689
+// Function ID: 61350
 // Name: createApplicationCommandSourceSystemMessage
 // Dependencies: []
 // Exports: createApplicationCommandSourceSystemMessage
 
-// Module 7685 (createApplicationCommandSourceSystemMessage)
+// Module 7689 (createApplicationCommandSourceSystemMessage)
 const MessageTypes = require(dependencyMap[0]).MessageTypes;
 const COMMAND_SENTINEL = require(dependencyMap[1]).COMMAND_SENTINEL;
 const _module = require(dependencyMap[7]);

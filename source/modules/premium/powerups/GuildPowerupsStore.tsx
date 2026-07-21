@@ -1,19 +1,9 @@
 // Module ID: 4015
 // Function ID: 33393
 // Name: _isNativeReflectConstruct
-// Dependencies: [4294967295, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+// Dependencies: []
 
 // Module 4015 (_isNativeReflectConstruct)
-import closure_1 from "result";
-import closure_2 from "result";
-import closure_3 from "result";
-import closure_4 from "result";
-import closure_5 from "result";
-import closure_6 from "result";
-import result from "result";
-import result from "result";
-import result from "result";
-
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -132,8 +122,15 @@ function recalculateState(arg0, arg1) {
   closure_12 = obj;
 }
 let closure_0 = importDefault(dependencyMap[0]);
-({ GUILD_POWERUP_TIER_3_OVERRIDDEN_PURCHASABLE_FEATURES: closure_7, PURCHASABLE_PREMIUM_FEATURES_BOOST_INFO: closure_8 } = result);
-({ AppliedGuildBoostsRequiredForBoostedGuildTier: closure_9, BoostedGuildTiers: closure_10, GuildFeatures: closure_11 } = result);
+let closure_1 = importDefault(dependencyMap[1]);
+let closure_2 = importDefault(dependencyMap[2]);
+let closure_3 = importDefault(dependencyMap[3]);
+let closure_4 = importDefault(dependencyMap[4]);
+let closure_5 = importDefault(dependencyMap[5]);
+let closure_6 = importDefault(dependencyMap[6]);
+({ GUILD_POWERUP_TIER_3_OVERRIDDEN_PURCHASABLE_FEATURES: closure_7, PURCHASABLE_PREMIUM_FEATURES_BOOST_INFO: closure_8 } = arg1(dependencyMap[7]));
+const tmp2 = arg1(dependencyMap[7]);
+({ AppliedGuildBoostsRequiredForBoostedGuildTier: closure_9, BoostedGuildTiers: closure_10, GuildFeatures: closure_11 } = arg1(dependencyMap[8]));
 let closure_12 = {};
 let tmp4 = (PersistedStore) => {
   class GuildPowerupsStore {
@@ -244,7 +241,7 @@ let tmp4 = (PersistedStore) => {
     }
   };
   return callback(GuildPowerupsStore, items);
-}(require("result").PersistedStore);
+}(importDefault(dependencyMap[9]).PersistedStore);
 tmp4.displayName = "GuildPowerupsStore";
 tmp4.persistKey = "GuildPowerupsStore";
 const items = [
@@ -293,7 +290,7 @@ const items = [
   }
 ];
 tmp4.migrations = items;
-tmp4 = new tmp4(require("result"), {
+tmp4 = new tmp4(importDefault(dependencyMap[10]), {
   LOGOUT: function handleReset() {
     let closure_12 = {};
   },
@@ -348,6 +345,62 @@ tmp4 = new tmp4(require("result"), {
     closure_12[guildId] = obj;
   }
 });
-result = result.fileFinishedImporting("modules/premium/powerups/GuildPowerupsStore.tsx");
+const obj = {
+  LOGOUT: function handleReset() {
+    let closure_12 = {};
+  },
+  GUILD_POWERUP_CATALOG_FETCH_SUCCESS: function handleGuildPowerupCatalogFetchSuccess(guildId) {
+    let allPowerups;
+    let powerupCatalog;
+    guildId = guildId.guildId;
+    ({ allPowerups, powerupCatalog } = guildId);
+    let obj = {};
+    const merged = Object.assign(closure_12);
+    obj = {};
+    const merged1 = Object.assign(getStateForGuild(guildId));
+    obj["allPowerups"] = allPowerups;
+    obj["powerupCatalog"] = powerupCatalog;
+    obj["catalogFetchCooldown"] = Date.now();
+    obj["hasFetchedPowerupCatalog"] = true;
+    obj[guildId] = obj;
+    closure_12 = obj;
+  },
+  GUILD_BOOST_ENTITLEMENTS_FETCH_SUCCESS: function handleGuildBoostEntitlementsFetchSuccess(guildId) {
+    guildId = guildId.guildId;
+    let obj = {};
+    const tmp = getStateForGuild(guildId);
+    const merged = Object.assign(closure_12);
+    obj = {};
+    const merged1 = Object.assign(tmp);
+    obj["unlockedPowerups"] = guildId.unlockedPowerups;
+    obj["appliedBoosts"] = calculateAppliedBoosts(guildId);
+    obj["unlockedPowerupsFetchCooldown"] = Date.now();
+    obj["hasFetchedUnlockedPowerups"] = true;
+    obj[guildId] = obj;
+    closure_12 = obj;
+  },
+  GUILD_POWERUP_ENTITLEMENTS_CREATE: function handleGuildPowerupCreated(arg0) {
+    recalculateState(arg0, true);
+  },
+  GUILD_POWERUP_ENTITLEMENTS_DELETE: function handleGuildPowerupDeleted(arg0) {
+    recalculateState(arg0, false);
+  },
+  GUILD_UPDATE: function handleGuildUpdated(guild) {
+    const id = guild.guild.id;
+    const obj = {};
+    const merged = Object.assign(getStateForGuild(id));
+    obj["appliedBoosts"] = calculateAppliedBoosts(id);
+    closure_12[id] = obj;
+  },
+  GAME_SERVER_FETCH_INSTANCES_SUCCESS: function handleGameServerInstanceFetched(guildId) {
+    guildId = guildId.guildId;
+    const obj = {};
+    const merged = Object.assign(getStateForGuild(guildId));
+    obj["appliedBoosts"] = calculateAppliedBoosts(guildId);
+    closure_12[guildId] = obj;
+  }
+};
+const tmp3 = arg1(dependencyMap[8]);
+const result = arg1(dependencyMap[11]).fileFinishedImporting("modules/premium/powerups/GuildPowerupsStore.tsx");
 
 export default tmp4;

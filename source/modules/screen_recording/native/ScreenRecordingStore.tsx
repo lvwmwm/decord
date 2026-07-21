@@ -1,9 +1,9 @@
-// Module ID: 14584
-// Function ID: 109927
+// Module ID: 14591
+// Function ID: 109949
 // Name: useScreenRecordingStore
 // Dependencies: []
 
-// Module 14584 (useScreenRecordingStore)
+// Module 14591 (useScreenRecordingStore)
 const _module = require(dependencyMap[0]);
 const _module1 = require(dependencyMap[2]);
 const result = _module1.fileFinishedImporting("modules/screen_recording/native/ScreenRecordingStore.tsx");
@@ -55,11 +55,12 @@ export const useScreenRecordingStore = _module.create((arg0, arg1) => {
       arg0(obj);
     },
     resetActionSheet() {
-      return arg0({ stepStartedTime: Date.now() });
+      const obj = { parent: 435355650, map: 1231421441, accessible: 2137063425, stepStartedTime: Date.now() };
+      return arg0(obj);
     },
     completeActionSheet() {
       arg0(arg1[1]).handleStopAndSend();
-      arg0({});
+      arg0({ parent: 435355650, map: 1231421441, accessible: 2137063425 });
     }
   };
 });

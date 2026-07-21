@@ -1,9 +1,9 @@
-// Module ID: 4229
-// Function ID: 37044
+// Module ID: 4233
+// Function ID: 37092
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [4239, 772, 4239, 601, 4249, 4250, 4251, 4252, 4253, 765, 4249, 608, 609, 4255]
+// Dependencies: [4243, 772, 4243, 601, 4253, 4254, 4255, 4256, 4257, 765, 4253, 608, 609, 4259]
 
-// Module 4229 (_createForOfIteratorHelperLoose)
+// Module 4233 (_createForOfIteratorHelperLoose)
 import copyObject from "copyObject";
 import getOwnPropertySymbols from "getOwnPropertySymbols";
 import closure_5 from "copyObject";
@@ -436,7 +436,7 @@ const tmp4 = (arg0) => {
                 }
                 lost.sent = lost.sent + num2;
                 return lost;
-              }, { maxWidth: false, height: true });
+              }, { -930199605: -536870861, -1965339821: -299892737 });
               const tmp42 = callback(closure_2[12])(tmp2Result.stats.rtp.outbound, (lost, packetsLost) => {
                 packetsLost = packetsLost.packetsLost;
                 let num = 0;
@@ -451,7 +451,7 @@ const tmp4 = (arg0) => {
                 }
                 lost.sent = lost.sent + num2;
                 return lost;
-              }, { maxWidth: false, height: true });
+              }, { -930199605: -536870861, -1965339821: -299892737 });
               const diff = tmp40.sent - tmp42.sent;
               const diff1 = tmp40.lost - tmp42.lost;
               if (0 === diff) {
@@ -608,7 +608,7 @@ const tmp4 = (arg0) => {
                 const logger2 = protocol.logger;
                 logger2.info("Experimental codecs: " + JSON.stringify(experimentCodecs));
                 const parseNativeCodecsResult = protocol(port[15]).parseNativeCodecs(arg0);
-                obj = { name: constants.OPUS };
+                obj = { "Null": -1871642623, "Null": 1090519041, "Null": 68598, "Null": 94465, name: constants.OPUS };
                 const items = [obj];
                 const obj2 = protocol(port[15]);
                 const tmp4 = protocol.lastOverrideCodecDenylist.length > 0;
@@ -1591,7 +1591,7 @@ const tmp4 = (arg0) => {
               let str3 = ":";
               let parts = id.split(":");
             } else {
-              parts = [1, 0];
+              parts = [0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001833, 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000266183152018684];
             }
             const tmp9 = callback2(parts, 2);
             const first = tmp9[0];
@@ -2057,9 +2057,9 @@ const tmp4 = (arg0) => {
       if (arg0 !== H264.H264) {
         let obj = {};
       } else if (arg1) {
-        obj = { -9223372036854775808: -0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001547753668495129, 9223372036854775807: -0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000036173265118585336, -9223372036854775808: -1833697638082500600000000000000000000000000000000000000000000000000000 };
+        obj = { FSM: 1223732276932567300000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, showActiveSpeakerPill: 3420322.0078127882, setShowActiveSpeakerPill: 64964868132210630000000000000000000000000000000000000000000000000000000000000000000000000000 };
       } else {
-        obj = { accessibilityRole: "window", name: "jsxs" };
+        obj = { <string:3750419275>: null, <string:1699974875>: "heading-lg/bold" };
         let str = "4d0033";
         if ("android" === obj2.getVoiceEngine().platform) {
           str = "42e01f";
@@ -2112,7 +2112,7 @@ const tmp4 = (arg0) => {
         obj.channels = 2;
       }
       const items = [];
-      obj = { "Bool(true)": "<string:1232732162>", screenId: "<string:3318284290>", sheetAllowedDetents: "<string:162856961>", params: {} };
+      obj = { <string:2892714576>: false, <string:1549921464>: null, <string:1627731025>: "", params: {} };
       const tmp4 = callback5(self.codecs);
       const iter = tmp4();
       let iter2 = iter;
@@ -2449,7 +2449,7 @@ const tmp4 = (arg0) => {
         const Connection = arg0;
         let obj = new Connection(arg0, "0", true);
         const voiceEngine = Connection(voiceEngine[9]).getVoiceEngine();
-        obj = { type: constants.VIDEO };
+        obj = { e: null, window: null, k: null, body: null, id: null, accessibilityRole: null, type: constants.VIDEO };
         const items = [obj];
         const result = obj.initializeStreamParameters(items);
         const replayConnection = voiceEngine.createReplayConnection("default", () => {
@@ -2458,7 +2458,7 @@ const tmp4 = (arg0) => {
           conn.setOnVideoCallback(obj.handleVideo);
           const codecCapabilities = voiceEngine.getCodecCapabilities((arg0) => {
             let obj = callback(closure_2[15]);
-            obj = { name: closure_20.OPUS };
+            obj = { "Null": -1871642623, "Null": 1090519041, "Null": 68598, "Null": 94465, name: closure_20.OPUS };
             const items = [obj];
             const experimentCodecs = obj.getExperimentCodecs(codecs.experimentFlags);
             const obj3 = callback(closure_2[15]);

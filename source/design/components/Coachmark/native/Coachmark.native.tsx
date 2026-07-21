@@ -1,10 +1,10 @@
-// Module ID: 8560
-// Function ID: 68039
+// Module ID: 8564
+// Function ID: 68051
 // Name: Coachmark
 // Dependencies: []
 // Exports: CoachmarkContainer
 
-// Module 8560 (Coachmark)
+// Module 8564 (Coachmark)
 let Pressable;
 class Coachmark {
   constructor(arg0) {
@@ -356,7 +356,7 @@ function Cursor(arg0) {
   obj.children = items1;
   return callback4(closure_7, obj);
 }
-let closure_3 = [null];
+let closure_3 = ["GUILD_DELETE"];
 let closure_4 = importDefault(dependencyMap[0]);
 let closure_5 = importDefault(dependencyMap[1]);
 let closure_6 = importAll(dependencyMap[2]);
@@ -380,7 +380,7 @@ const obj2 = { paddingHorizontal: importDefault(dependencyMap[7]).space.PX_24 };
 obj.bodyBgColor = { borderWidth: 1, borderColor: importDefault(dependencyMap[7]).colors.MOBILE_COACHMARK_BORDER_DEFAULT, backgroundColor: importDefault(dependencyMap[7]).colors.MOBILE_COACHMARK_BACKGROUND_DEFAULT, borderRadius: importDefault(dependencyMap[7]).radii.lg };
 const obj3 = { borderWidth: 1, borderColor: importDefault(dependencyMap[7]).colors.MOBILE_COACHMARK_BORDER_DEFAULT, backgroundColor: importDefault(dependencyMap[7]).colors.MOBILE_COACHMARK_BACKGROUND_DEFAULT, borderRadius: importDefault(dependencyMap[7]).radii.lg };
 obj.gradient = { borderRadius: importDefault(dependencyMap[7]).radii.lg, overflow: "hidden" };
-const obj5 = { overflow: false, position: false, top: false, padding: importDefault(dependencyMap[7]).space.PX_16 };
+const obj5 = { <string:1365418235>: false, <string:1398886034>: false, <string:3584858450>: false, padding: importDefault(dependencyMap[7]).space.PX_16 };
 obj.bodyContainer = obj5;
 obj.center = {};
 const obj4 = { borderRadius: importDefault(dependencyMap[7]).radii.lg, overflow: "hidden" };
@@ -389,15 +389,15 @@ obj.text = {};
 obj.cursorContainer = {};
 const obj6 = { height: importDefault(dependencyMap[7]).modules.mobile.COACHMARK_BUTTON_SPACING };
 obj.cursorHead = { borderRadius: importDefault(dependencyMap[7]).radii.xs, borderColor: importDefault(dependencyMap[7]).colors.INTERACTIVE_TEXT_ACTIVE };
-const obj8 = { aze: false, azj: false, backgroundColor: importDefault(dependencyMap[7]).colors.INTERACTIVE_TEXT_ACTIVE };
+const obj8 = { bhk: false, bic: false, backgroundColor: importDefault(dependencyMap[7]).colors.INTERACTIVE_TEXT_ACTIVE };
 obj.cursorSpine = obj8;
-obj.image = { <string:1140607356>: 30706176, <string:1751293292>: 378290688 };
+obj.image = {};
 const obj7 = { borderRadius: importDefault(dependencyMap[7]).radii.xs, borderColor: importDefault(dependencyMap[7]).colors.INTERACTIVE_TEXT_ACTIVE };
 obj.bottomMargin = { marginBottom: importDefault(dependencyMap[7]).modules.mobile.COACHMARK_BUTTON_SPACING };
 const obj9 = { marginBottom: importDefault(dependencyMap[7]).modules.mobile.COACHMARK_BUTTON_SPACING };
 obj.closeButton = { position: "absolute", top: importDefault(dependencyMap[7]).modules.mobile.COACHMARK_BUTTON_SPACING, right: importDefault(dependencyMap[7]).modules.mobile.COACHMARK_BUTTON_SPACING };
 let closure_14 = obj1.createStyles(obj);
-let closure_15 = { <string:66933208>: null, <string:1364605794>: null, <string:996219233>: null, <string:1627792465>: null, <string:2700829844>: null };
+let closure_15 = { -648468124: null, -1067341607: null, 74951703: null, 73901312: null, 74178560: null };
 const obj10 = { position: "absolute", top: importDefault(dependencyMap[7]).modules.mobile.COACHMARK_BUTTON_SPACING, right: importDefault(dependencyMap[7]).modules.mobile.COACHMARK_BUTTON_SPACING };
 const result = arg1(dependencyMap[21]).fileFinishedImporting("design/components/Coachmark/native/Coachmark.native.tsx");
 

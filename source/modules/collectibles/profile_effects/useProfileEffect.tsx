@@ -1,10 +1,10 @@
-// Module ID: 8213
-// Function ID: 64927
+// Module ID: 8217
+// Function ID: 64939
 // Name: useProfileEffect
 // Dependencies: []
 // Exports: default
 
-// Module 8213 (useProfileEffect)
+// Module 8217 (useProfileEffect)
 let closure_2 = importAll(dependencyMap[0]);
 let closure_3 = importDefault(dependencyMap[1]);
 let closure_4 = importDefault(dependencyMap[2]);

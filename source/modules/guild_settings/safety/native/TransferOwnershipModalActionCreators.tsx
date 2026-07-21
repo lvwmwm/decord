@@ -1,8 +1,8 @@
-// Module ID: 10973
-// Function ID: 85437
+// Module ID: 10978
+// Function ID: 85458
 // Dependencies: []
 
-// Module 10973
+// Module 10978
 const _module = require(dependencyMap[4]);
 const result = _module.fileFinishedImporting("modules/guild_settings/safety/native/TransferOwnershipModalActionCreators.tsx");
 

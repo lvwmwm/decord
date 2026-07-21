@@ -1,11 +1,11 @@
-// Module ID: 13446
-// Function ID: 102130
+// Module ID: 13453
+// Function ID: 102153
 // Name: useUserProfileEditForm
 // Dependencies: []
 // Exports: default
 
-// Module 13446 (useUserProfileEditForm)
-let closure_3 = [];
+// Module 13453 (useUserProfileEditForm)
+let closure_3 = ["construct"];
 let closure_4 = importDefault(dependencyMap[0]);
 let closure_5 = importDefault(dependencyMap[1]);
 let closure_6 = importAll(dependencyMap[2]);

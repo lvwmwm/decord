@@ -1,11 +1,11 @@
-// Module ID: 9655
-// Function ID: 75233
+// Module ID: 9660
+// Function ID: 75250
 // Name: frozen
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 9655 (frozen)
-const frozen = Object.freeze({ wishlistOwnerId: null, handleInviteAccept: null });
-const frozen1 = Object.freeze({ bgColor: false, fgColor: false });
+// Module 9660 (frozen)
+const frozen = Object.freeze({ <string:1373593946>: "Array", <string:3613494152>: "isArray" });
+const frozen1 = Object.freeze({});
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("modules/device/native/DeviceConstants.tsx");
 

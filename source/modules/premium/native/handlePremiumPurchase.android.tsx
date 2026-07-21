@@ -1,10 +1,10 @@
-// Module ID: 7109
-// Function ID: 57127
+// Module ID: 7113
+// Function ID: 57138
 // Name: validatePurchase
 // Dependencies: []
 // Exports: useHandlePremiumPurchase
 
-// Module 7109 (validatePurchase)
+// Module 7113 (validatePurchase)
 function validatePurchase() {
   return _validatePurchase(...arguments);
 }
@@ -36,7 +36,7 @@ async function _validatePurchase(arg0, arg1) {
   fn.next();
   return fn;
 }
-let closure_3 = ["<string:2003435523>"];
+let closure_3 = ["handleOpenInterview"];
 let closure_4 = importDefault(dependencyMap[0]);
 let closure_5 = importDefault(dependencyMap[1]);
 let closure_6 = importAll(dependencyMap[2]);

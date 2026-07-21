@@ -1,9 +1,9 @@
-// Module ID: 6766
-// Function ID: 53274
+// Module ID: 6772
+// Function ID: 53323
 // Name: CollectiblesBundledProductRecord
 // Dependencies: []
 
-// Module 6766 (CollectiblesBundledProductRecord)
+// Module 6772 (CollectiblesBundledProductRecord)
 let closure_2 = importDefault(dependencyMap[0]);
 let closure_3 = importDefault(dependencyMap[1]);
 const tmp2 = () => {

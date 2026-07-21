@@ -1,9 +1,9 @@
-// Module ID: 5651
-// Function ID: 48332
+// Module ID: 5653
+// Function ID: 48374
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
-// Module 5651 (_isNativeReflectConstruct)
+// Module 5653 (_isNativeReflectConstruct)
 let ChannelSections;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
@@ -443,6 +443,10 @@ tmp5 = new tmp5(importDefault(dependencyMap[22]), {
     subscribe(guildId.guildId, guildId.channelId);
     return false;
   },
+  OVERLAY_TEXT_CHAT_SELECT_CHANNEL: function handleOverlayTextChatSelectChannel(guildId) {
+    subscribe(guildId.guildId, guildId.channelId);
+    return false;
+  },
   INBOX_OPEN: function handleInboxOpen(guildIds) {
     let iter2;
     const tmp = _createForOfIteratorHelperLoose(guildIds.guildIds);
@@ -577,6 +581,10 @@ const obj = {
     return importDefaultResult.subscribeToGuild(guildId.guildId);
   },
   CHANNEL_PRELOAD: function handleChannelPreload(guildId) {
+    subscribe(guildId.guildId, guildId.channelId);
+    return false;
+  },
+  OVERLAY_TEXT_CHAT_SELECT_CHANNEL: function handleOverlayTextChatSelectChannel(guildId) {
     subscribe(guildId.guildId, guildId.channelId);
     return false;
   },

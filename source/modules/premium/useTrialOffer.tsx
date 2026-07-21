@@ -1,10 +1,10 @@
-// Module ID: 6676
-// Function ID: 51354
+// Module ID: 6682
+// Function ID: 51403
 // Name: hasUserTrialOfferExpired
 // Dependencies: []
 // Exports: useTrialOffer
 
-// Module 6676 (hasUserTrialOfferExpired)
+// Module 6682 (hasUserTrialOfferExpired)
 function hasUserTrialOfferExpired(stateFromStores) {
   let tmp = null != stateFromStores && null != stateFromStores.expires_at;
   if (tmp) {

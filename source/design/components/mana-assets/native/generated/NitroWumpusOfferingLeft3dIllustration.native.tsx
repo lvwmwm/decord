@@ -1,10 +1,10 @@
-// Module ID: 6375
-// Function ID: 50436
+// Module ID: 6377
+// Function ID: 50479
 // Name: NitroWumpusOfferingLeft3dIllustration
 // Dependencies: []
 // Exports: NitroWumpusOfferingLeft3dIllustration
 
-// Module 6375 (NitroWumpusOfferingLeft3dIllustration)
+// Module 6377 (NitroWumpusOfferingLeft3dIllustration)
 const jsx = require(dependencyMap[0]).jsx;
 const _module = require(dependencyMap[3]);
 const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/NitroWumpusOfferingLeft3dIllustration.native.tsx");

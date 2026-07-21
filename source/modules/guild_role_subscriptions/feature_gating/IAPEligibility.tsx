@@ -1,10 +1,10 @@
-// Module ID: 5300
-// Function ID: 44846
+// Module ID: 5302
+// Function ID: 44887
 // Name: compareVersions
 // Dependencies: []
 // Exports: canUseRoleSubscriptionIAP, useCanUseRoleSubscriptionIAP
 
-// Module 5300 (compareVersions)
+// Module 5302 (compareVersions)
 function compareVersions(systemVersion, arg1) {
   const parts = systemVersion.split(".");
   const mapped = parts.map(Number);

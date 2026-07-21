@@ -1,9 +1,9 @@
-// Module ID: 13470
-// Function ID: 102272
+// Module ID: 13477
+// Function ID: 102295
 // Name: PX_8
 // Dependencies: []
 
-// Module 13470 (PX_8)
+// Module 13477 (PX_8)
 const importAllResult = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 const isProfileFrameRecord = arg1(dependencyMap[2]).isProfileFrameRecord;
@@ -12,11 +12,11 @@ let closure_6 = arg1(dependencyMap[3]).PROFILE_FRAME_ASPECT_RATIO;
 const PX_8 = importDefault(dependencyMap[5]).space.PX_8;
 let obj1 = arg1(dependencyMap[6]);
 let obj = {};
-obj = { "Bool(true)": null, "Bool(true)": null, "Bool(true)": null, paddingHorizontal: arg1(dependencyMap[7]).GUTTER_SIZE };
+obj = { padding: "Next", paddingBottom: null, flexDirection: null, paddingHorizontal: arg1(dependencyMap[7]).GUTTER_SIZE };
 obj.row = obj;
 obj1 = { height: arg1(dependencyMap[7]).GUTTER_SIZE };
 obj.rowSpacer = obj1;
-const obj2 = { "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, paddingVertical: PX_8 };
+const obj2 = { borderWidth: "<string:1107296833>", width: "p\u00E4iv\u00E4", height: "{{count}} p\u00E4iv\u00E4\u00E4", justifyContent: "<string:39208002>", alignItems: "<string:19595008>", borderRadius: "<string:1275085312>", paddingVertical: PX_8 };
 obj.previewContainer = obj2;
 let closure_11 = obj1.createStyles(obj);
 const memoResult = importAllResult.memo((arg0) => {

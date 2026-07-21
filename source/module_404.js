@@ -9,7 +9,7 @@ if (importDefault(dependencyMap[0])) {
   ({ isRTL: obj3.isRTL, doLeftAndRightSwapInRTL: obj3.doLeftAndRightSwapInRTL, localeIdentifier: obj3.localeIdentifier } = constants);
   const importDefaultResult = importDefault(dependencyMap[0]);
 } else {
-  obj = { seconds: true, nanos: true };
+  obj = { 1979675647: null, 1895788287: null };
 }
 obj = {
   getConstants() {

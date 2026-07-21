@@ -1,66 +1,48 @@
 // Module ID: 15804
-// Function ID: 120850
+// Function ID: 120859
 // Dependencies: []
 
 // Module 15804
 globalThis.IntlMessageFormat.__addLocaleData({
-  locale: "uk",
+  locale: "pl",
   pluralRuleFunction(arg0, arg1) {
     const parts = String(arg0).split(".");
     const first = parts[0];
-    let substr1 = Number(parts[0]) == arg0;
-    let substr = substr1;
-    if (substr1) {
-      const first1 = parts[0];
-      substr = first1.slice(-1);
-    }
-    if (substr1) {
-      const first2 = parts[0];
-      substr1 = first2.slice(-2);
-    }
-    const substr2 = first.slice(-1);
-    const substr3 = first.slice(-2);
-    if (arg1) {
-      let str8 = "other";
-      if (3 == substr) {
-        str8 = "other";
-        if (13 != substr1) {
-          str8 = "few";
+    const substr = first.slice(-1);
+    const substr1 = first.slice(-2);
+    let str2 = "other";
+    if (!arg1) {
+      if (1 != arg0) {
+        if (tmp2) {
+          if (substr >= 2) {
+            if (substr <= 4) {
+              let str5 = "few";
+              if (substr1 >= 12) {
+                str5 = "few";
+              }
+            }
+            let str3 = str5;
+          }
         }
-      }
-      let str2 = str8;
-    } else {
-      if (tmp2) {
-        if (1 == substr2) {
-          str2 = "one";
-        }
-      }
-      if (tmp2) {
-        if (substr2 >= 2) {
-          if (substr2 <= 4) {
-            let str4 = "few";
-            if (substr3 >= 12) {
-              str4 = "few";
+        if (tmp2) {
+          if (1 != first) {
+            if (0 != substr) {
+              str5 = str6;
             }
           }
-          str2 = str4;
+          let str6 = "many";
         }
-      }
-      if (!tmp2) {
-        if (tmp2) {
-          if (substr2 >= 5) {
-            str4 = str6;
-          }
-        }
-        let str6 = "other";
+        str6 = "other";
         if (tmp2) {
           str6 = "other";
-          if (substr3 >= 11) {
+          if (substr1 >= 12) {
             str6 = "other";
           }
         }
+      } else {
+        str3 = "one";
       }
-      str6 = "many";
+      str2 = str3;
     }
     return str2;
   }

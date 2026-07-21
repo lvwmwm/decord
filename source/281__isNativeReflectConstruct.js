@@ -13,7 +13,7 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-let closure_3 = ["isArray", null];
+let closure_3 = [false, false];
 let closure_4 = importDefault(dependencyMap[0]);
 let closure_5 = importDefault(dependencyMap[1]);
 let closure_6 = importDefault(dependencyMap[2]);
@@ -336,11 +336,11 @@ const tmp3 = (Component) => {
   return callback(TouchableNativeFeedback, items);
 }(importAllResult.Component);
 tmp3.SelectableBackground = (rippleRadius) => {
-  const obj = { 9223372036854775807: 4, 9223372036854775807: 4, rippleRadius };
+  const obj = { isDynamicProduct: 1073741, eight_pointed_black_star: 1895907425, rippleRadius };
   return obj;
 };
 tmp3.SelectableBackgroundBorderless = (rippleRadius) => {
-  const obj = { 9223372036854775807: "rgba(0, 0, 0, 0.75)", 9223372036854775807: "none", rippleRadius };
+  const obj = { isDynamicProduct: 1, eight_pointed_black_star: "100%", rippleRadius };
   return obj;
 };
 tmp3.Ripple = (arg0, borderless, rippleRadius) => {

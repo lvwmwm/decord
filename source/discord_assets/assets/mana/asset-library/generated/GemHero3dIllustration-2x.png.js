@@ -1,9 +1,9 @@
-// Module ID: 6154
-// Function ID: 50105
+// Module ID: 6156
+// Function ID: 50148
 // Name: metadata
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 6154 (metadata)
+// Module 6156 (metadata)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/GemHero3dIllustration-2x.png.js");
 

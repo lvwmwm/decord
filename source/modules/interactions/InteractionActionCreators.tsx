@@ -1,10 +1,10 @@
-// Module ID: 7788
-// Function ID: 62195
+// Module ID: 7792
+// Function ID: 62207
 // Name: _fetchMessageInteractionData
 // Dependencies: []
 // Exports: addQueued, fetchMessageInteractionData, queueInteractionComponentState, setFailed
 
-// Module 7788 (_fetchMessageInteractionData)
+// Module 7792 (_fetchMessageInteractionData)
 async function _fetchMessageInteractionData(channelId, messageId, arg2) {
   const HTTP = callback(closure_2[3]).HTTP;
   let obj = { url: closure_4.MESSAGE_INTERACTION_DATA(channelId, messageId), oldFormErrors: true, rejectWithError: callback(closure_2[3]).rejectWithMigratedError() };

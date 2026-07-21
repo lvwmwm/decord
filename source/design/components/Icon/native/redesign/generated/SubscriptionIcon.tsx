@@ -1,12 +1,12 @@
-// Module ID: 13760
-// Function ID: 104030
+// Module ID: 13767
+// Function ID: 104053
 // Name: SubscriptionIcon
-// Dependencies: [31, 27, 5245, 653, 655, 33]
+// Dependencies: [31, 27, 5247, 653, 655, 33]
 // Exports: SubscriptionIcon
 
-// Module 13760 (SubscriptionIcon)
+// Module 13767 (SubscriptionIcon)
 import "module_31";
-import { jsx } from "get ActivityIndicator";
+import { jsx } from "keys";
 import module_33 from "module_33";
 
 const result = module_33.fileFinishedImporting("design/components/Icon/native/redesign/generated/SubscriptionIcon.tsx");

@@ -1,10 +1,10 @@
-// Module ID: 4666
-// Function ID: 40471
+// Module ID: 4668
+// Function ID: 40512
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 // Exports: anyFileTooLarge, classifyFile, fileUploadLimitRoadblockDescription, sizeString, transformNativeFile, uploadSumTooLarge
 
-// Module 4666 (_createForOfIteratorHelperLoose)
+// Module 4668 (_createForOfIteratorHelperLoose)
 function _createForOfIteratorHelperLoose(@@iterator) {
   let arg1 = Symbol_iterator;
   @@iterator = "undefined" !== typeof Symbol;

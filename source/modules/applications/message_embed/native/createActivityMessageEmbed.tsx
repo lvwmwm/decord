@@ -1,10 +1,10 @@
-// Module ID: 12157
-// Function ID: 93546
+// Module ID: 12164
+// Function ID: 93569
 // Name: createActivityMessageEmbed
 // Dependencies: []
 // Exports: createActivityMessageEmbed
 
-// Module 12157 (createActivityMessageEmbed)
+// Module 12164 (createActivityMessageEmbed)
 const _module = require(dependencyMap[2]);
 const result = _module.fileFinishedImporting("modules/applications/message_embed/native/createActivityMessageEmbed.tsx");
 

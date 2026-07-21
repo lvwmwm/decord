@@ -1,10 +1,10 @@
-// Module ID: 5646
-// Function ID: 48253
+// Module ID: 5648
+// Function ID: 48295
 // Name: useIsRemote
 // Dependencies: []
 // Exports: default
 
-// Module 5646 (useIsRemote)
+// Module 5648 (useIsRemote)
 let closure_2 = importDefault(dependencyMap[0]);
 const result = arg1(dependencyMap[2]).fileFinishedImporting("modules/game_console/hooks/useIsRemote.tsx");
 

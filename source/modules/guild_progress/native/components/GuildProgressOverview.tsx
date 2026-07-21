@@ -1,10 +1,10 @@
-// Module ID: 12852
-// Function ID: 98255
+// Module ID: 12859
+// Function ID: 98278
 // Name: GuildProgressOverviewView
 // Dependencies: []
 // Exports: default
 
-// Module 12852 (GuildProgressOverviewView)
+// Module 12859 (GuildProgressOverviewView)
 class GuildProgressOverviewView {
   constructor(arg0) {
     ({ titleStyle, onPress, onLongPress, title, subtitle, percentComplete } = global);
@@ -38,8 +38,8 @@ let closure_3 = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 ({ jsx: closure_5, jsxs: closure_6 } = arg1(dependencyMap[3]));
 let obj = arg1(dependencyMap[4]);
-obj = { container: { padding: 16 }, horizontal: { "Bool(true)": "<string:3435973836>", "Bool(true)": "<string:1903247380>", "Bool(true)": "r" } };
-obj = { fontFamily: arg1(dependencyMap[2]).Fonts.PRIMARY_SEMIBOLD, color: importDefault(dependencyMap[5]).colors.MOBILE_TEXT_HEADING_PRIMARY };
+obj = { container: { padding: 16 }, horizontal: { bottom: "<string:3435973836>", left: "<string:1903247380>", padding: "r" } };
+obj = { "Bool(true)": 255, "Bool(true)": 1816203520, "Bool(true)": 1912602980, "Bool(true)": 24, "Bool(true)": 24, fontFamily: arg1(dependencyMap[2]).Fonts.PRIMARY_SEMIBOLD, color: importDefault(dependencyMap[5]).colors.MOBILE_TEXT_HEADING_PRIMARY };
 obj.title = obj;
 obj.step = { lineHeight: 16 };
 obj.progressBar = { marginTop: 8 };

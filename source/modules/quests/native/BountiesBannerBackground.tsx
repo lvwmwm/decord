@@ -1,15 +1,15 @@
-// Module ID: 13854
-// Function ID: 104816
+// Module ID: 13861
+// Function ID: 104839
 // Dependencies: []
 
-// Module 13854
+// Module 13861
 const importAllResult = importAll(dependencyMap[0]);
 ({ StyleSheet: closure_3, View: closure_4 } = arg1(dependencyMap[1]));
 let closure_5 = importDefault(dependencyMap[2]);
 const tmp2 = arg1(dependencyMap[1]);
 ({ jsx: closure_6, jsxs: closure_7 } = arg1(dependencyMap[3]));
-let closure_8 = [false, false];
-let closure_9 = [131138.78381538394, 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000008380970149088963];
+let closure_8 = [true, true];
+let closure_9 = ["discord_protos.discord_users.v1.VideoFilterBackgroundBlur", "discord_protos.discord_users.v1.VoiceAndVideoSettings"];
 const tmp3 = arg1(dependencyMap[3]);
 const memoResult = importAllResult.memo(function BountiesBannerBackground(arg0) {
   let children;

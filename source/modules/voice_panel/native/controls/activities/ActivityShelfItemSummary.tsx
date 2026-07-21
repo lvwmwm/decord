@@ -1,10 +1,10 @@
-// Module ID: 15694
-// Function ID: 119972
+// Module ID: 15701
+// Function ID: 119996
 // Name: ParticipantsSummary
 // Dependencies: []
 // Exports: default
 
-// Module 15694 (ParticipantsSummary)
+// Module 15701 (ParticipantsSummary)
 function ParticipantsSummary(arg0) {
   let applicationId;
   let channelId;
@@ -23,7 +23,7 @@ const View = arg1(dependencyMap[2]).View;
 ({ jsx: closure_5, jsxs: closure_6 } = arg1(dependencyMap[3]));
 let obj = arg1(dependencyMap[4]);
 obj = { ongoingActivityContainer: {} };
-obj = { flexDirection: "ADBE Vector Group", paddingTop: false, paddingHorizontal: Infinity, paddingBottom: 0, gap: Infinity, borderRadius: importDefault(dependencyMap[5]).radii.round };
+obj = { "Bool(true)": "ADBE Vector Group", "Bool(true)": false, "Bool(true)": Infinity, "Bool(true)": 0, "Bool(true)": Infinity, borderRadius: importDefault(dependencyMap[5]).radii.round };
 const tmp3 = arg1(dependencyMap[3]);
 obj.backgroundColor = arg1(dependencyMap[6]).hexWithOpacity(importDefault(dependencyMap[5]).unsafe_rawColors.BLACK, 0.64);
 obj.overlayActivityName = obj;
@@ -52,7 +52,7 @@ export default function ActivityShelfItemSummary(submitting) {
   const obj2 = { style: items1 };
   const items1 = [tmp.ellipsis, callback(obj.useLoadingStyles(flag, "md"), 2)[1]];
   if (flag) {
-    flag = callback2(arg1(dependencyMap[13]).Ellipsis, { <string:1522289750>: "/assets/.cache/intl/bW9kdWxlcy9jaGVja291dC9tZXNzYWdlcw==", <string:570601313>: null });
+    flag = callback2(arg1(dependencyMap[13]).Ellipsis, { 9223372036854775807: true, -9223372036854775808: false });
   }
   obj2.children = flag;
   items[1] = callback2(importDefault(dependencyMap[12]).View, obj2);

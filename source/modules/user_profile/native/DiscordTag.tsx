@@ -1,10 +1,10 @@
-// Module ID: 9417
-// Function ID: 73323
+// Module ID: 9421
+// Function ID: 73337
 // Name: DiscordTag
 // Dependencies: []
 // Exports: default
 
-// Module 9417 (DiscordTag)
+// Module 9421 (DiscordTag)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 ({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[2]));
@@ -36,12 +36,12 @@ export default function DiscordTag(arg0) {
   } else {
     tmp4Result = null;
     if (null != user) {
-      obj = { 0: null, 0: "end", 9223372036854775807: null, 0: "secondary", style: usernameStyle };
+      obj = { "Bool(true)": "topSelectionChange", "Bool(true)": "onResponderMove", "Bool(true)": "<string:324075776>", "Bool(true)": "<string:553616>", style: usernameStyle };
       const items = [user.toString(), ];
       let tmp7 = !user.hasUniqueUsername();
       if (tmp7) {
         const obj1 = { style: discriminatorStyle };
-        const items1 = [, user.discriminator];
+        const items1 = ["discord_protos.discord_users.v1.GuildsLeaderboardOptOutDefault", user.discriminator];
         obj1.children = items1;
         tmp7 = callback2(arg1(dependencyMap[5]).Text, obj1);
       }

@@ -1,9 +1,9 @@
-// Module ID: 4703
-// Function ID: 40882
+// Module ID: 4705
+// Function ID: 40923
 // Name: GuildProductAttachmentUploadTarget
 // Dependencies: []
 
-// Module 4703 (GuildProductAttachmentUploadTarget)
+// Module 4705 (GuildProductAttachmentUploadTarget)
 let closure_0 = importDefault(dependencyMap[0]);
 let closure_1 = importDefault(dependencyMap[1]);
 ({ MAX_ATTACHMENT_UPLOAD_COUNT: closure_2, MAX_ATTACHMENT_UPLOAD_FILESIZE_BYTES: closure_3, MAX_ATTACHMENT_UPLOAD_TOTAL_FILESIZE_BYTES: closure_4 } = arg1(dependencyMap[2]));

@@ -1,10 +1,10 @@
-// Module ID: 11568
-// Function ID: 89966
+// Module ID: 11575
+// Function ID: 89989
 // Name: GuildPowerupsBoostInfo
 // Dependencies: []
 // Exports: default
 
-// Module 11568 (GuildPowerupsBoostInfo)
+// Module 11575 (GuildPowerupsBoostInfo)
 const View = require(dependencyMap[0]).View;
 const BoostInfoType = require(dependencyMap[1]).BoostInfoType;
 const _module = require(dependencyMap[2]);
@@ -13,7 +13,7 @@ const _module1 = require(dependencyMap[3]);
 let obj = {};
 obj = { paddingVertical: importDefault(dependencyMap[4]).space.PX_12 };
 obj.container = obj;
-obj.headerContainer = { "Null": false, "Null": false, "Null": false, "Null": false };
+obj.headerContainer = { "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, "Bool(false)": false };
 let closure_7 = _module1.createStyles(obj);
 const _module2 = require(dependencyMap[8]);
 const result = _module2.fileFinishedImporting("modules/premium/powerups/native/GuildPowerupsBoostInfo.tsx");

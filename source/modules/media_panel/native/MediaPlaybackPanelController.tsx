@@ -1,10 +1,10 @@
-// Module ID: 15761
-// Function ID: 120518
+// Module ID: 15768
+// Function ID: 120542
 // Name: MediaPlaybackPanelController
 // Dependencies: []
 // Exports: default
 
-// Module 15761 (MediaPlaybackPanelController)
+// Module 15768 (MediaPlaybackPanelController)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 let closure_5 = importDefault(dependencyMap[2]);
@@ -23,9 +23,9 @@ export default function MediaPlaybackPanelController(children) {
     let obj = mode(closure_2[9]);
     const sharedValue = obj.useSharedValue(constants.PIP);
     const mode = sharedValue;
-    const sharedValue1 = mode(closure_2[9]).useSharedValue({ <string:1140607356>: false, <string:1751293292>: true });
+    const sharedValue1 = mode(closure_2[9]).useSharedValue({ <string:1632221346>: -536870861, <string:2722977214>: -299892737 });
     const obj2 = mode(closure_2[9]);
-    const sharedValue2 = mode(closure_2[9]).useSharedValue({ "Null": false, "Null": false });
+    const sharedValue2 = mode(closure_2[9]).useSharedValue({ max: false, guildId: false });
     const obj3 = mode(closure_2[9]);
     const sharedValue3 = mode(closure_2[9]).useSharedValue(useReducedMotion.useReducedMotion);
     const items = [sharedValue3];

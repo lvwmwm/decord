@@ -1,10 +1,10 @@
-// Module ID: 12780
-// Function ID: 97955
+// Module ID: 12787
+// Function ID: 97978
 // Name: ShareAttachments
 // Dependencies: []
 // Exports: default
 
-// Module 12780 (ShareAttachments)
+// Module 12787 (ShareAttachments)
 let closure_3 = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 ({ jsx: closure_5, jsxs: closure_6 } = arg1(dependencyMap[2]));
@@ -19,7 +19,7 @@ obj2 = { flexDirection: "row", gap: importDefault(dependencyMap[7]).space.PX_8 }
 obj.attachmentPreviewContentContainer = obj2;
 const obj1 = { marginHorizontal: -importDefault(dependencyMap[7]).space.PX_16 };
 obj.attachmentPreviewContentContainerRevamp = { paddingHorizontal: importDefault(dependencyMap[7]).space.PX_16 };
-const obj4 = { "Bool(true)": "row", "Bool(true)": "center", "Bool(true)": null, backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_BASE_LOW, borderRadius: importDefault(dependencyMap[7]).radii.sm };
+const obj4 = { fill: "row", sa: "center", Symbol: null, backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_BASE_LOW, borderRadius: importDefault(dependencyMap[7]).radii.sm };
 obj.attachmentPreview = obj4;
 obj.leftGradient = {};
 obj.rightGradient = {};
@@ -116,14 +116,14 @@ export default function ShareAttachments(arg0) {
       containerRevamp = tmp.containerRevamp;
     }
     obj1.style = containerRevamp;
-    obj2 = { start: { "Null": false, "Null": true }, end: { "Null": null, "Null": null } };
+    obj2 = { start: { max: -536870861, guildId: -299892737 }, end: {} };
     const items3 = [tmp.gradient.color, memo];
     obj2.colors = items3;
     const items4 = [tmp.leftGradient, animatedStyle];
     obj2.style = items4;
     obj2.pointerEvents = "box-none";
     const items5 = [callback(closure_7, obj2), , ];
-    obj3 = { start: { "Null": false, "Null": true }, end: { "Null": null, "Null": null } };
+    obj3 = { start: { max: -536870861, guildId: -299892737 }, end: {} };
     const items6 = [memo, tmp.gradient.color];
     obj3.colors = items6;
     const items7 = [tmp.rightGradient, animatedStyle1];

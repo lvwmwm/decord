@@ -1,7 +1,74 @@
 // Module ID: 5560
-// Function ID: 47239
+// Function ID: 47228
 // Dependencies: []
 
 // Module 5560
+const obj = {};
+const keys = Object.keys(require(dependencyMap[0]));
+const item = keys.forEach((arg0) => {
+  const require = arg0;
+  obj[arg0] = {};
+  let obj = { value: require(dependencyMap[0])[arg0].channels };
+  Object.defineProperty(obj[arg0], "channels", obj);
+  obj = { value: require(dependencyMap[0])[arg0].labels };
+  Object.defineProperty(obj[arg0], "labels", obj);
+  const tmp3 = require(dependencyMap[1])(arg0);
+  const dependencyMap = tmp3;
+  const keys = Object.keys(tmp3);
+  const item = keys.forEach((arg0) => {
+    closure_2[closure_0][arg0] = function wrapRounded(conversion) {
+      function wrappedFn() {
+        const length = arguments.length;
+        let array = new Array(length);
+        for (let num = 0; num < length; num = num + 1) {
+          array[num] = arguments[num];
+        }
+        const first = array[0];
+        if (null == first) {
+          return first;
+        } else {
+          if (first.length > 1) {
+            array = first;
+          }
+          const arr2 = arg0(array);
+          if ("object" === typeof arr2) {
+            for (let num3 = 0; num3 < length2; num3 = num3 + 1) {
+              let _Math = Math;
+              arr2[num3] = Math.round(arr2[num3]);
+            }
+            const length2 = arr2.length;
+          }
+          return arr2;
+        }
+      }
+      if ("conversion" in conversion) {
+        wrappedFn.conversion = conversion.conversion;
+      }
+      return wrappedFn;
+    }(tmp3[arg0]);
+    closure_2[closure_0][arg0].raw = function wrapRaw(conversion) {
+      function wrappedFn() {
+        const length = arguments.length;
+        let array = new Array(length);
+        for (let num = 0; num < length; num = num + 1) {
+          array[num] = arguments[num];
+        }
+        const first = array[0];
+        let tmp2 = first;
+        if (null != first) {
+          if (first.length > 1) {
+            array = first;
+          }
+          tmp2 = arg0(array);
+        }
+        return tmp2;
+      }
+      if ("conversion" in conversion) {
+        wrappedFn.conversion = conversion.conversion;
+      }
+      return wrappedFn;
+    }(tmp3[arg0]);
+  });
+});
 
-export default { aliceblue: [], antiquewhite: [], aqua: [], aquamarine: [], azure: [], beige: [], bisque: [], black: [true, true, true], blanchedalmond: [], blue: [], blueviolet: [], brown: [], burlywood: [], cadetblue: [], chartreuse: [], chocolate: [], coral: [], cornflowerblue: [], cornsilk: [], crimson: [], cyan: [], darkblue: [], darkcyan: [], darkgoldenrod: [], darkgray: [], darkgreen: [], darkgrey: [], darkkhaki: [], darkmagenta: [], darkolivegreen: [], darkorange: [], darkorchid: [], darkred: [], darksalmon: [], darkseagreen: [], darkslateblue: [], darkslategray: [], darkslategrey: [], darkturquoise: [], darkviolet: [], deeppink: [], deepskyblue: [], dimgray: [], dimgrey: [], dodgerblue: [], firebrick: [], floralwhite: [], forestgreen: [], fuchsia: [], gainsboro: [], ghostwhite: [], gold: [], goldenrod: [], gray: [], green: [], greenyellow: [], grey: [], honeydew: [], hotpink: [], indianred: [], indigo: [], ivory: [], khaki: [], lavender: [], lavenderblush: [], lawngreen: [], lemonchiffon: [], lightblue: [], lightcoral: [], lightcyan: [], lightgoldenrodyellow: [], lightgray: [], lightgreen: [], lightgrey: [], lightpink: [], lightsalmon: [], lightseagreen: [], lightskyblue: [], lightslategray: [], lightslategrey: [], lightsteelblue: [], lightyellow: [], lime: [], limegreen: [], linen: [], magenta: [], maroon: [], mediumaquamarine: [], mediumblue: [], mediumorchid: [], mediumpurple: [], mediumseagreen: [], mediumslateblue: [], mediumspringgreen: [], mediumturquoise: [], mediumvioletred: [], midnightblue: [], mintcream: [], mistyrose: [], moccasin: [], navajowhite: [], navy: [], oldlace: [], olive: [], olivedrab: [], orange: [], orangered: [], orchid: [], palegoldenrod: [], palegreen: [], paleturquoise: [], palevioletred: [], papayawhip: [], peachpuff: [], peru: [], pink: [], plum: [], powderblue: [], purple: [], rebeccapurple: [-0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000887542790494205, -26815622298383510000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, 873990664966644100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000], red: [], rosybrown: [], royalblue: [], saddlebrown: [], salmon: ["r", "error_message", "r"], sandybrown: [], seagreen: [], seashell: [], sienna: [], silver: [], skyblue: ["", "", "values"], slateblue: ["constructor", "isArray", "isArrayBuffer"], slategray: [false, false, false], slategrey: [false, false, false], snow: [null, null, null], springgreen: [], steelblue: [], tan: [], teal: [], thistle: [], tomato: [], turquoise: [], violet: [3237312772084151400000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, -878711796430067700000000000000000000000000000000000000000000000000000000000, 14600684.61640055], wheat: ["precision", "rounding", "toExpNeg"], white: [null, null, null], whitesmoke: [-453425392047391900000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000008455280662373515, -246006770083999200000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000], yellow: [], yellowgreen: [] };
+export default obj;

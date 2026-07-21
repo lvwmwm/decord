@@ -1,19 +1,19 @@
-// Module ID: 8199
-// Function ID: 64848
+// Module ID: 8203
+// Function ID: 64860
 // Name: SlayerStorefrontItemCard
 // Dependencies: []
 // Exports: default
 
-// Module 8199 (SlayerStorefrontItemCard)
+// Module 8203 (SlayerStorefrontItemCard)
 let closure_3 = importAll(dependencyMap[0]);
 ({ ImageBackground: closure_4, View: closure_5 } = arg1(dependencyMap[1]));
 const jsx = arg1(dependencyMap[2]).jsx;
 let obj = arg1(dependencyMap[3]);
 obj = {};
-obj = { borderRadius: importDefault(dependencyMap[4]).radii.md, shadowOffset: { aze: false, azj: false } };
+obj = { <string:1683030020>: "r", <string:336773166>: "REACTION_BACKGROUND_DEFAULT", <string:3372221535>: "AMEX_NETWORK_ERROR", <string:1962935391>: "y", <string:1979712697>: "setDescription", <string:1996489913>: "u6709", <string:3925869753>: "Array", borderRadius: importDefault(dependencyMap[4]).radii.md, shadowOffset: {} };
 obj.cardContainer = obj;
-obj.cardImageBackground = { 313968: 30271555, 315615: 22092032, 314002: 30271232, 315613: 1489260800 };
-obj.cardImage = { "Null": "5489cb913a06f6a88877637630ce77b7", "Null": "pl.messages.5489cb913a06f6a88877637630ce77b7.compiled.messages", "Null": "jsona" };
+obj.cardImageBackground = {};
+obj.cardImage = {};
 let closure_7 = obj.createStyles(obj);
 const tmp2 = arg1(dependencyMap[1]);
 const result = arg1(dependencyMap[10]).fileFinishedImporting("modules/slayer_storefront/native/SlayerStorefrontItemCard.tsx");
@@ -78,7 +78,7 @@ export default function SlayerStorefrontItemCard(sku) {
         let tmp13 = <closure_4 {...obj} />;
         const tmp12 = importDefault(dependencyMap[8]);
       } else {
-        const obj4 = { colors: tmp4, start: { "Null": false, "Null": true }, end: { "Null": "innocent", "Null": "innocent" }, style: cardImage.cardImageBackground };
+        const obj4 = { colors: tmp4, start: { max: -536870861, guildId: -299892737 }, end: {}, style: cardImage.cardImageBackground };
         const obj5 = {};
         const obj6 = {};
         const tmp18 = importDefault(dependencyMap[9]);

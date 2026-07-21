@@ -1,10 +1,10 @@
-// Module ID: 5947
-// Function ID: 49794
+// Module ID: 5949
+// Function ID: 49837
 // Name: ClydeHeadsetSpotIllustration
 // Dependencies: []
 // Exports: ClydeHeadsetSpotIllustration
 
-// Module 5947 (ClydeHeadsetSpotIllustration)
+// Module 5949 (ClydeHeadsetSpotIllustration)
 const jsx = require(dependencyMap[0]).jsx;
 const _module = require(dependencyMap[3]);
 const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/ClydeHeadsetSpotIllustration.native.tsx");

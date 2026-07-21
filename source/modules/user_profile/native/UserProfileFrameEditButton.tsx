@@ -1,10 +1,10 @@
-// Module ID: 13467
-// Function ID: 102251
+// Module ID: 13474
+// Function ID: 102274
 // Name: COLLECTIBLES_PREVIEW_SIZE
 // Dependencies: []
 // Exports: default
 
-// Module 13467 (COLLECTIBLES_PREVIEW_SIZE)
+// Module 13474 (COLLECTIBLES_PREVIEW_SIZE)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 const View = arg1(dependencyMap[2]).View;

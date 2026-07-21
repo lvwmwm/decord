@@ -1,23 +1,23 @@
-// Module ID: 13919
-// Function ID: 105817
+// Module ID: 13926
+// Function ID: 105840
 // Name: VideoQuestModalHeader
 // Dependencies: []
 // Exports: default
 
-// Module 13919 (VideoQuestModalHeader)
+// Module 13926 (VideoQuestModalHeader)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 const useVideoQuestUIStore = arg1(dependencyMap[2]).useVideoQuestUIStore;
 ({ jsx: closure_5, jsxs: closure_6 } = arg1(dependencyMap[3]));
 let obj = arg1(dependencyMap[4]);
 obj = { videoContentHeaderWrapper: {} };
-obj = { VOICE_WATCHDOG_TIMEOUT: true, staticAuthSessionId: true, gap: importDefault(dependencyMap[5]).space.PX_4 };
+obj = { "Null": true, "Null": "/assets/.cache/intl/bW9kdWxlcy9nb19saXZlL3dlYi9tb2RhbA==", gap: importDefault(dependencyMap[5]).space.PX_4 };
 obj.videoContentHeading = obj;
 obj.subheader = { opacity: 0.6 };
-const tmp3 = arg1(dependencyMap[3]);
-obj.textShadow = { textShadowColor: importDefault(dependencyMap[5]).colors.BLACK, textShadowOffset: { aze: false, azj: true } };
+const obj1 = { "Null": "png", "Null": "absolute", "Null": 0, "Null": 0, "Null": 0, textShadowColor: importDefault(dependencyMap[5]).colors.BLACK, textShadowOffset: { bhk: -536870861, bic: -299892737 } };
+obj.textShadow = obj1;
 let closure_7 = obj.createStyles(obj);
-const obj1 = { textShadowColor: importDefault(dependencyMap[5]).colors.BLACK, textShadowOffset: { aze: false, azj: true } };
+const tmp3 = arg1(dependencyMap[3]);
 const result = arg1(dependencyMap[14]).fileFinishedImporting("modules/quests/native/VideoQuestModal/VideoQuestModalHeader.tsx");
 
 export default function VideoQuestModalHeader(showCurrentVideoTime) {
@@ -71,7 +71,7 @@ export default function VideoQuestModalHeader(showCurrentVideoTime) {
   obj2 = { questName: quest.config.messages.questName };
   obj1.children = intl.formatToPlainString(arg1(dependencyMap[12]).t.EQa7os, obj2);
   const items1 = [callback(arg1(dependencyMap[11]).Text, obj1), ];
-  const obj3 = { INTEGRATION_CREATE: "valueArray", ConstraintReasonCode: "shouldPressibilityUseW3CPointerEventsForHover", accessibilityLabel: videoQuestProgressRemainingAccessibilityLabel };
+  const obj3 = { accessibilityLabel: videoQuestProgressRemainingAccessibilityLabel };
   const items2 = [tmp2.subheader, ];
   if (textShadow) {
     textShadow = tmp2.textShadow;

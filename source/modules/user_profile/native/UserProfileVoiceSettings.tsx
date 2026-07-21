@@ -1,10 +1,10 @@
-// Module ID: 11946
-// Function ID: 92370
+// Module ID: 11953
+// Function ID: 92393
 // Name: UserVoiceSettings
 // Dependencies: []
 // Exports: default
 
-// Module 11946 (UserVoiceSettings)
+// Module 11953 (UserVoiceSettings)
 function UserVoiceSettings(user) {
   let isLocalMute;
   let isLocalVideoDisabled;
@@ -98,8 +98,8 @@ function UserVoiceSettings(user) {
       obj2.icon = VideoIcon;
       if (isLocalVideoAutoDisabled) {
         obj3 = { style: tmp.disableVideoSublabel };
-        const items4 = [callback(arg1(dependencyMap[23]).CircleErrorIcon, { flexDirection: null, alignItems: "header" }), ];
-        obj4 = { INTEGRATION_CREATE: "Array", ConstraintReasonCode: "isArray" };
+        const items4 = [callback(arg1(dependencyMap[23]).CircleErrorIcon, { flex: null, flexGrow: "header" }), ];
+        obj4 = {};
         const intl4 = arg1(dependencyMap[16]).intl;
         obj4.children = intl4.string(arg1(dependencyMap[16]).t.m2Hyj0);
         items4[1] = callback(arg1(dependencyMap[24]).Text, obj4);
@@ -249,7 +249,7 @@ const VideoToggleState = arg1(dependencyMap[5]).VideoToggleState;
 const Permissions = arg1(dependencyMap[6]).Permissions;
 ({ jsx: closure_9, jsxs: closure_10 } = arg1(dependencyMap[7]));
 const tmp3 = arg1(dependencyMap[7]);
-let closure_11 = arg1(dependencyMap[8]).createStyles({ card: { paddingBottom: 0 }, cardTitle: { marginBottom: 0 }, volumeSlider: { paddingVertical: 20 }, disableVideoSublabel: {} });
+let closure_11 = arg1(dependencyMap[8]).createStyles({ card: { paddingBottom: 0 }, cardTitle: { marginBottom: 0 }, volumeSlider: { paddingVertical: 20 }, disableVideoSublabel: { <string:3461472865>: "safety_user_sentiment_notice_dismissed_at", <string:1447977218>: "message", <string:1640807382>: null } });
 const obj = arg1(dependencyMap[8]);
 const result = arg1(dependencyMap[31]).fileFinishedImporting("modules/user_profile/native/UserProfileVoiceSettings.tsx");
 

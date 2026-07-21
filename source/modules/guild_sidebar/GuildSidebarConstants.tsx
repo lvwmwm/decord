@@ -1,9 +1,9 @@
-// Module ID: 6755
-// Function ID: 52920
+// Module ID: 6761
+// Function ID: 52969
 // Name: ChannelListGuildActionRow
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 6755 (ChannelListGuildActionRow)
+// Module 6761 (ChannelListGuildActionRow)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("modules/guild_sidebar/GuildSidebarConstants.tsx");
 

@@ -4,11 +4,11 @@
 // Dependencies: []
 
 // Module 3921 (CheckpointKnickKnacksRive)
-let closure_3 = ["aria-current", "activeClassName", "activeStyle", "className", "exact", "isActive"];
+let closure_3 = [true, true, true, true, true, true];
 let closure_4 = importDefault(dependencyMap[0]);
 const importAllResult = importAll(dependencyMap[1]);
 const jsx = arg1(dependencyMap[2]).jsx;
-let closure_7 = { Preview: { ringerMode: "<string:2066808836>", time: "<string:3779571220>" }, Friends: { ringerMode: "<string:2066808836>", time: "<string:3779571220>" }, Globe: { ringerMode: "<string:2066808836>", time: "<string:3779571220>" }, Globe Single Line: {}, Emojis: { ringerMode: "<string:2066808836>", time: "<string:3779571220>" }, Wave Line: { ringerMode: "<string:2066808836>", time: "<string:3779571220>" }, Games: { ringerMode: "<string:2066808836>", time: "<string:3779571220>" }, Voice: { ringerMode: "<string:2066808836>", time: "<string:3779571220>" }, Looping Checkboard: { ringerMode: "<string:2066808836>", time: "<string:3779571220>" }, CheckRow: { ringerMode: "<string:2066808836>", time: "<string:3779571220>" }, Quests: { ringerMode: "<string:2066808836>", time: "<string:3779571220>" }, Entry: { ringerMode: "<string:2066808836>", time: "<string:3779571220>" }, Messages: { ringerMode: "<string:2066808836>", time: "<string:3779571220>" }, Servers: { ringerMode: "<string:2066808836>", time: "<string:3779571220>" } };
+let closure_7 = { Preview: { shortLabel: null, type: null }, Friends: { shortLabel: null, type: null }, Globe: { shortLabel: null, type: null }, Globe Single Line: {}, Emojis: { shortLabel: null, type: null }, Wave Line: { shortLabel: null, type: null }, Games: { shortLabel: null, type: null }, Voice: { shortLabel: null, type: null }, Looping Checkboard: { shortLabel: null, type: null }, CheckRow: { shortLabel: null, type: null }, Quests: { shortLabel: null, type: null }, Entry: { shortLabel: null, type: null }, Messages: { shortLabel: null, type: null }, Servers: { shortLabel: null, type: null } };
 let closure_8 = { Preview: [], Friends: [], Globe: [], Globe Single Line: [], Emojis: [], Wave Line: [], Games: [], Voice: [], Looping Checkboard: [], CheckRow: [], Quests: [], Entry: [], Messages: [], Servers: [] };
 let closure_9 = {
   Preview: function PreviewBindings(reducedMotionEnabled) {

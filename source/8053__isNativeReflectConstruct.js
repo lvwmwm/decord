@@ -1,5 +1,5 @@
 // Module ID: 8053
-// Function ID: 63913
+// Function ID: 63901
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
@@ -19,11 +19,11 @@ let closure_4 = importDefault(dependencyMap[2]);
 let closure_5 = importDefault(dependencyMap[3]);
 let closure_6 = importDefault(dependencyMap[4]);
 const tmp2 = (arg0) => {
-  class FeDiffuseLighting {
+  class FeComponentTransfer {
     constructor() {
       self = this;
-      tmp = closure_2(this, FeDiffuseLighting);
-      obj = closure_5(FeDiffuseLighting);
+      tmp = closure_2(this, FeComponentTransfer);
+      obj = closure_5(FeComponentTransfer);
       tmp2 = closure_4;
       if (closure_7()) {
         tmp6 = globalThis;
@@ -39,20 +39,20 @@ const tmp2 = (arg0) => {
       return tmp2(self, constructResult);
     }
   }
-  const arg1 = FeDiffuseLighting;
-  callback2(FeDiffuseLighting, arg0);
+  const arg1 = FeComponentTransfer;
+  callback2(FeComponentTransfer, arg0);
   const items = [
     {
       key: "render",
       value: function render() {
-        const result = FeDiffuseLighting(closure_1[5]).warnUnimplementedFilter();
+        const result = FeComponentTransfer(closure_1[5]).warnUnimplementedFilter();
         return null;
       }
     }
   ];
-  return callback(FeDiffuseLighting, items);
+  return callback(FeComponentTransfer, items);
 }(importDefault(dependencyMap[6]));
-tmp2.displayName = "FeDiffuseLighting";
+tmp2.displayName = "FeComponentTransfer";
 tmp2.defaultProps = Object.assign({}, tmp2.defaultPrimitiveProps);
 
 export default tmp2;

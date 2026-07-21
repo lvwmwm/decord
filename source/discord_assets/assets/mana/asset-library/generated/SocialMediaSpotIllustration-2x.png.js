@@ -1,9 +1,9 @@
-// Module ID: 6516
-// Function ID: 50648
+// Module ID: 6518
+// Function ID: 50691
 // Name: metadata
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 6516 (metadata)
+// Module 6518 (metadata)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/SocialMediaSpotIllustration-2x.png.js");
 

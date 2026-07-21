@@ -1,9 +1,9 @@
-// Module ID: 7141
-// Function ID: 57596
+// Module ID: 7145
+// Function ID: 57607
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
-// Module 7141 (_isNativeReflectConstruct)
+// Module 7145 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -26,23 +26,23 @@ let tmp2 = (MessageType) => {
       tmp = closure_3(this, PremiumTabTooltip$Type);
       items = [, , , , ];
       items[0] = {};
-      items[1] = { body: "target_allocation", guildId: "scalar", ao: 5, "": "background_asset_url" };
-      obj = { emojiId: "key", emojiName: "Text", userId: "HTTP" };
+      items[1] = { 9223372036854775807: "background_asset", 0: "message", 9223372036854775807: 0, no: 50.06 };
+      obj = { "Null": 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000006403427937624729, "Null": 9126805520.75, "Null": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001427678768759017 };
       obj.T = function T() {
         return callback(closure_1[6]).ThemeAwareAsset;
       };
       items[2] = obj;
-      obj = { emojiId: "3", emojiName: 3, userId: "mobile_body" };
+      obj = { "Null": "3", "Null": 3, "Null": "mobile_body" };
       obj.T = function T() {
         return callback(closure_1[7]).LocalizedString;
       };
       items[3] = obj;
-      obj1 = { emojiId: null, emojiName: 9, userId: null };
+      obj1 = { "Null": null, "Null": 9, "Null": null };
       obj1.T = function T() {
         return callback(closure_1[7]).LocalizedString;
       };
       items[4] = obj1;
-      items1 = ["useCallback"];
+      items1 = ["now"];
       items1[1] = items;
       obj4 = closure_6(PremiumTabTooltip$Type);
       tmp2 = closure_5;
@@ -62,7 +62,7 @@ let tmp2 = (MessageType) => {
   let obj = {
     key: "create",
     value(arr) {
-      let obj = {};
+      let obj = { 0: "\u{1F9BB}\u{1F3FF}", 0: true };
       const _Object = Object;
       obj = { enumerable: false, value: this };
       _Object.defineProperty(obj, PremiumTabTooltip$Type(closure_1[8]).MESSAGE_TYPE, obj);

@@ -85,7 +85,7 @@ function listenForSentryMessages(addEventListener) {
             result1.contexts = Object.assign({}, result1.contexts, obj);
           }
           const obj7 = callback(closure_1[0]);
-          obj1 = { originalException: reason, mechanism: {} };
+          obj1 = { originalException: reason, mechanism: { onDrawerSlide: null, onDrawerStateChanged: null } };
           callback(closure_1[0]).captureEvent(result1, obj1);
           if (callback(closure_1[1]).DEBUG_BUILD) {
             const debug4 = callback(closure_1[0]).debug;

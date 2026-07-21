@@ -1,10 +1,10 @@
-// Module ID: 7632
-// Function ID: 61122
+// Module ID: 7636
+// Function ID: 61134
 // Name: createGuildBreadcrumb
 // Dependencies: []
 // Exports: maybeCreateSingleForwardForMessage
 
-// Module 7632 (createGuildBreadcrumb)
+// Module 7636 (createGuildBreadcrumb)
 function createGuildBreadcrumb(id, timestamp) {
   let obj = { originLabel: id.name };
   obj = { id: id.id, size: 16, icon: id.icon, canAnimate: false };

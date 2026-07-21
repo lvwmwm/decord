@@ -1,10 +1,10 @@
-// Module ID: 11642
-// Function ID: 90341
+// Module ID: 11649
+// Function ID: 90364
 // Name: useNativeProvisionalAccountExplainerText
 // Dependencies: []
 // Exports: ChatProvisionalAccountExplainerCard, UserProfileProvisionalAccountExplainerCard
 
-// Module 11642 (useNativeProvisionalAccountExplainerText)
+// Module 11649 (useNativeProvisionalAccountExplainerText)
 function useNativeProvisionalAccountExplainerText(userId) {
   const iconSize = userId.iconSize;
   const arg1 = iconSize;
@@ -22,7 +22,7 @@ let closure_7 = arg1(dependencyMap[3]).createStyles(() => {
   let obj = {};
   obj = { backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_MOD_MUTED, gap: importDefault(dependencyMap[4]).space.PX_8 };
   obj.chatContainer = obj;
-  obj = { -9223372036854775808: true, filter: true, gap: importDefault(dependencyMap[4]).space.PX_4 };
+  obj = { gap: importDefault(dependencyMap[4]).space.PX_4 };
   obj.header = obj;
   return obj;
 });
@@ -38,14 +38,12 @@ export const ChatProvisionalAccountExplainerCard = function ChatProvisionalAccou
   let obj = { style: items };
   const items = [tmp.chatContainer, style];
   obj = { style: tmp.header };
-  obj = { INTEGRATION_CREATE: null, ConstraintReasonCode: null };
+  obj = {};
   const intl = arg1(dependencyMap[9]).intl;
   obj.children = intl.string(arg1(dependencyMap[9]).t.Iyka0U);
   const items1 = [callback(arg1(dependencyMap[8]).Text, obj), callback(arg1(dependencyMap[10]).CircleErrorIcon, {})];
   obj.children = items1;
-  const items2 = [callback2(View, obj), ];
-  const obj1 = { INTEGRATION_CREATE: "AutomodMentionRaidLimit", ConstraintReasonCode: "%URIError%", children: useNativeProvisionalAccountExplainerText({ userId, iconSize, textVariant: "text-sm/semibold" }) };
-  items2[1] = callback(arg1(dependencyMap[8]).Text, obj1);
+  const items2 = [callback2(View, obj), callback(arg1(dependencyMap[8]).Text, { children: useNativeProvisionalAccountExplainerText({ userId, iconSize, textVariant: "text-sm/semibold" }) })];
   obj.children = items2;
   return callback2(arg1(dependencyMap[7]).Card, obj);
 };

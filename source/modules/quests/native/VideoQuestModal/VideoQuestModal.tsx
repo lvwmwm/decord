@@ -1,9 +1,9 @@
-// Module ID: 13890
-// Function ID: 105079
+// Module ID: 13897
+// Function ID: 105102
 // Name: VideoQuestModalSteps
 // Dependencies: []
 
-// Module 13890 (VideoQuestModalSteps)
+// Module 13897 (VideoQuestModalSteps)
 let StyleSheet;
 let closure_3 = importDefault(dependencyMap[0]);
 const importAllResult = importAll(dependencyMap[1]);
@@ -110,7 +110,7 @@ let closure_14 = importAllResult.memo((sourceQuestContent) => {
         items = [, ];
         items[0] = -100;
         items[1] = 0;
-        obj.translateY = obj5.withSpring(obj6.interpolate(closure_9.get(), [null, null], items), closure_9);
+        obj.translateY = obj5.withSpring(obj6.interpolate(closure_9.get(), ["Text", "lc"], items), closure_9);
         items1 = [];
         items1[0] = obj;
         obj.transform = items1;
@@ -134,7 +134,7 @@ let closure_14 = importAllResult.memo((sourceQuestContent) => {
         items = [, ];
         items[0] = closure_10.top;
         items[1] = 0;
-        obj.translateY = obj3.withSpring(obj4.interpolate(closure_9.get(), [null, null], items), closure_9);
+        obj.translateY = obj3.withSpring(obj4.interpolate(closure_9.get(), ["Text", "lc"], items), closure_9);
         items1 = [];
         items1[0] = obj;
         obj.transform = items1;
@@ -266,7 +266,7 @@ const memoResult = importAllResult.memo(function VideoQuestModal(questContentPos
   if (null != nonNullableQuest) {
     tmp5 = null;
     if (null != memo) {
-      obj = { padding: "valueArray", end: "shouldPressibilityUseW3CPointerEventsForHover", screens: memo };
+      obj = { "Bool(true)": "inputHint", "Bool(true)": "guildFolders", screens: memo };
       tmp5 = callback2(arg1(dependencyMap[24]).Modal, obj);
     }
   }

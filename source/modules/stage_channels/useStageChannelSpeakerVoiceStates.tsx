@@ -1,10 +1,10 @@
-// Module ID: 14926
-// Function ID: 112408
+// Module ID: 14933
+// Function ID: 112432
 // Name: transformParticipantToSortedVoiceState
 // Dependencies: []
 // Exports: default
 
-// Module 14926 (transformParticipantToSortedVoiceState)
+// Module 14933 (transformParticipantToSortedVoiceState)
 function transformParticipantToSortedVoiceState(user) {
   let userNick;
   let voiceState;

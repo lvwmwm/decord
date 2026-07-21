@@ -1,10 +1,10 @@
-// Module ID: 5320
-// Function ID: 45241
+// Module ID: 5322
+// Function ID: 45282
 // Name: QuarantineModeInfoAlert
 // Dependencies: []
 // Exports: default
 
-// Module 5320 (QuarantineModeInfoAlert)
+// Module 5322 (QuarantineModeInfoAlert)
 importAll(dependencyMap[0]);
 ({ jsx: closure_3, jsxs: closure_4 } = arg1(dependencyMap[2]));
 let obj = arg1(dependencyMap[3]);
@@ -15,7 +15,7 @@ const merged = Object.assign(importDefault(dependencyMap[4])(arg1(dependencyMap[
 obj["textAlign"] = "center";
 obj["marginVertical"] = 12;
 obj.header = obj;
-obj.text = { p: -0.0014069081515246523, parent: -0.0001058445630777106 };
+obj.text = { "Null": "absolute", "Null": 0 };
 let closure_5 = obj.createStyles(obj);
 const importDefaultResult = importDefault(dependencyMap[4]);
 const result = arg1(dependencyMap[10]).fileFinishedImporting("modules/quarantine/native/QuarantineModeInfoAlert.tsx");

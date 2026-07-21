@@ -1,15 +1,15 @@
-// Module ID: 4443
-// Function ID: 38898
+// Module ID: 4447
+// Function ID: 38946
 // Name: _deletePaymentSource
 // Dependencies: []
 // Exports: cancelPaymentAuthentication, cancelSubscription, changePaymentSource, changeSubscriptionCurrency, clearAndFetchPaymentSourceCreationContext, clearPaymentAuthenticationError, clearRemovePaymentSourceError, clearUpdatePaymentSourceError, createSubscription, deletePaymentSource, deleteRenewalMutation, fetchIpCountryCode, fetchIpLocation, fetchMostRecentSubscription, fetchPaymentSource, fetchPaymentSources, fetchPayments, fetchSubscriptions, fetchWalletInformation, getPerksRelevance, payInvoiceManually, popupBridgeCallback, redeemReactivationOffer, redeemUserDiscountOffer, redirectedPaymentSucceeded, resetPaymentIntentId, resetSubscriptionStore, resubscribeToSubscription, startBrowserCheckout, updatePaymentSource, upgradeSubscription, voidPendingPayment
 
-// Module 4443 (_deletePaymentSource)
+// Module 4447 (_deletePaymentSource)
 async function _deletePaymentSource(id, arg1) {
   let obj = callback2(closure_2[8]);
   obj.dispatch({ type: "BILLING_PAYMENT_SOURCE_REMOVE_START" });
   const HTTP = callback(closure_2[9]).HTTP;
-  obj = { CONVERSATIONS: null, replace: null, push: null, url: closure_10.BILLING_PAYMENT_SOURCE(id) };
+  obj = { lc: "ERROR", type: "ERROR", end: "NOT_RESPONDER", url: closure_10.BILLING_PAYMENT_SOURCE(id) };
   yield HTTP.del(obj);
   obj = { type: "BILLING_PAYMENT_SOURCE_REMOVE_SUCCESS", id };
   callback2(closure_2[8]).dispatch(obj);
@@ -42,7 +42,7 @@ async function _fetchPaymentSources() {
   let value;
   if (!obj.isPaymentSourceFetching) {
     const HTTP = value(closure_2[9]).HTTP;
-    let obj = { CONVERSATIONS: null, replace: null, push: null, url: constants.BILLING_PAYMENT_SOURCES };
+    let obj = { lc: "ERROR", type: "ERROR", end: "NOT_RESPONDER", url: constants.BILLING_PAYMENT_SOURCES };
     value = HTTP.get(obj);
     callback(closure_2[8]).wait(() => {
       let obj = callback(closure_2[8]);
@@ -58,7 +58,7 @@ async function _fetchPaymentSources() {
 }
 async function _fetchPaymentSource(id, arg1) {
   const HTTP = callback(closure_2[9]).HTTP;
-  const obj = { CONVERSATIONS: null, replace: null, push: null, url: closure_10.BILLING_PAYMENT_SOURCE(id) };
+  const obj = { lc: "ERROR", type: "ERROR", end: "NOT_RESPONDER", url: closure_10.BILLING_PAYMENT_SOURCE(id) };
   const tmp = yield HTTP.get(obj);
   const fromServer = closure_6.createFromServer(tmp.body);
   callback2(closure_2[8]).dispatch({ type: "BILLING_PAYMENT_SOURCE_FETCH_SUCCESS", paymentSource: fromServer });
@@ -123,7 +123,7 @@ async function _fetchSubscriptions() {
     tmp3 = callback2(closure_2[12])();
   }
   const HTTP = callback(closure_2[9]).HTTP;
-  obj = { CONVERSATIONS: null, replace: null, push: null, url: constants.BILLING_SUBSCRIPTIONS };
+  obj = { lc: "ERROR", type: "ERROR", end: "NOT_RESPONDER", url: constants.BILLING_SUBSCRIPTIONS };
   obj = { sync_level: FULL_RESYNC };
   obj.query = obj;
   const tmp12 = yield HTTP.get(obj);
@@ -158,7 +158,7 @@ async function _fetchMostRecentSubscription() {
   });
   const HTTP = callback(closure_2[9]).HTTP;
   obj = { url: constants.BILLING_SUBSCRIPTIONS, query: obj, oldFormErrors: true, rejectWithError: true };
-  obj = { spriteIndex: "dim", x: "da", size: "s", subscription_type: constants2.PREMIUM };
+  obj = { subscription_type: constants2.PREMIUM };
   const tmp2 = yield HTTP.get(obj);
   const dispatch = callback2(closure_2[8]).dispatch;
   if (tmp2.ok) {
@@ -422,7 +422,7 @@ async function _updateSubscription(id, status, expected_invoice_price, expected_
 }
 async function _voidPendingPayment(arg0, arg1) {
   const HTTP = callback(closure_2[9]).HTTP;
-  const obj = { CONVERSATIONS: null, replace: null, push: null, url: closure_10.BILLING_PAYMENTS_VOID(arg0) };
+  const obj = { lc: "ERROR", type: "ERROR", end: "NOT_RESPONDER", url: closure_10.BILLING_PAYMENTS_VOID(arg0) };
   yield HTTP.post(obj);
 }
 async function _fetchIpCountryCode() {
@@ -456,7 +456,7 @@ async function _fetchIpCountryCode() {
 }
 function fetchPaymentSourceCreationContext() {
   const HTTP = arg1(dependencyMap[9]).HTTP;
-  const obj = { CONVERSATIONS: null, replace: null, push: null, url: closure_10.BILLING_PAYMENT_SOURCE_CREATION_CONTEXT };
+  const obj = { lc: "ERROR", type: "ERROR", end: "NOT_RESPONDER", url: closure_10.BILLING_PAYMENT_SOURCE_CREATION_CONTEXT };
   return HTTP.get(obj);
 }
 async function _fetchIpLocation() {
@@ -509,7 +509,7 @@ async function _redeemUserDiscountOffer(id, arg1) {
   obj = { type: "BILLING_USER_OFFER_REDEEMED", offerId: id.id };
   callback2(closure_2[8]).dispatch(obj);
 }
-let closure_3 = [];
+let closure_3 = ["all", 0.5, "swh"];
 let closure_4 = importDefault(dependencyMap[0]);
 let closure_5 = importDefault(dependencyMap[1]);
 let closure_6 = importDefault(dependencyMap[2]);

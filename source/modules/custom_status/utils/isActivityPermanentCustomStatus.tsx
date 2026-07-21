@@ -1,10 +1,10 @@
-// Module ID: 14793
-// Function ID: 111546
+// Module ID: 14800
+// Function ID: 111570
 // Name: isActivityPermanentCustomStatus
 // Dependencies: []
 // Exports: isActivityPermanentCustomStatus
 
-// Module 14793 (isActivityPermanentCustomStatus)
+// Module 14800 (isActivityPermanentCustomStatus)
 const ActivityTypes = require(dependencyMap[0]).ActivityTypes;
 const _module = require(dependencyMap[1]);
 const result = _module.fileFinishedImporting("modules/custom_status/utils/isActivityPermanentCustomStatus.tsx");

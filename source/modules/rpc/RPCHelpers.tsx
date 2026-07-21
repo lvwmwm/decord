@@ -1,10 +1,10 @@
-// Module ID: 10484
-// Function ID: 81843
+// Module ID: 10490
+// Function ID: 81866
 // Name: recurseReplaceContentTree
 // Dependencies: []
 // Exports: containsSameValues, getDeprecatedVoiceSettingsWithShortcut, getVoiceConnectionState, getVoiceSettingsWithShortcut, hasMessageReadPermission, isMatchingOrigin, processSocketThrottlers, transformApplicationRelationship, transformBaseRelationship, transformChannel, validateActivityInvite, validateApplication, validateOriginAndUpdateSocket, validatePostMessageTransport, validateSocketApplication
 
-// Module 10484 (recurseReplaceContentTree)
+// Module 10490 (recurseReplaceContentTree)
 function recurseReplaceContentTree(type) {
   if ("customEmoji" === type.type) {
     type.type = "emoji";
@@ -107,7 +107,7 @@ function transformVoiceState(closure_2, id, userId) {
 }
 function fetchApplicationRPC(arg0) {
   const HTTP = arg1(dependencyMap[25]).HTTP;
-  const obj = { "Bool(false)": "<string:1895908698>", "Bool(false)": "Array", "Bool(false)": "initNativeSdk", "Bool(false)": "<string:193741056>", url: closure_19.APPLICATION_RPC(arg0) };
+  const obj = { POPULARITY: null, connectionsList: null, se-FI: null, POPULARITY: null, url: closure_19.APPLICATION_RPC(arg0) };
   const value = HTTP.get(obj);
   return value.then((body) => body.body, () => {
     let tmp = callback(closure_2[26]);

@@ -1,9 +1,9 @@
-// Module ID: 14186
-// Function ID: 107381
+// Module ID: 14193
+// Function ID: 107404
 // Name: _handleEnableSystemNotification
 // Dependencies: []
 
-// Module 14186 (_handleEnableSystemNotification)
+// Module 14193 (_handleEnableSystemNotification)
 function _handleEnableSystemNotification() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);

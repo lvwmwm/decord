@@ -1,10 +1,10 @@
-// Module ID: 15718
-// Function ID: 120156
+// Module ID: 15725
+// Function ID: 120180
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 // Exports: default
 
-// Module 15718 (_createForOfIteratorHelperLoose)
+// Module 15725 (_createForOfIteratorHelperLoose)
 function _createForOfIteratorHelperLoose(@@iterator) {
   let arg1 = Symbol_iterator;
   @@iterator = "undefined" !== typeof Symbol;
@@ -167,41 +167,41 @@ export default function useControlsButtons() {
     const items = [];
     const push = items.push;
     if (treatment) {
-      let obj = { fadeDuration: true, leftDisabled: true, render: redux.video };
+      let obj = { _desired: "<string:422422>", y: "<string:393216>", render: redux.video };
       push(obj);
       if (!tmp) {
         obj = { render: redux.micConnected };
         items.push(obj);
       }
       if (tmp2 === windowDimensions(tmp2[13]).MobileGoLiveEntrypointTreatment.SCREENSHARE_REPLACES_CHAT) {
-        const obj1 = { fadeDuration: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000006495229729197963, leftDisabled: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004450147719115657, render: redux.screenshare };
+        const obj1 = { _desired: 358254285552180500000000000000000000, y: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004450147719115524, render: redux.screenshare };
         items.push(obj1);
       } else {
-        const obj2 = { fadeDuration: -1, leftDisabled: -1, render: redux.chat };
+        const obj2 = { _desired: -1, y: -1, render: redux.chat };
         items.push(obj2);
       }
       if (tmp) {
-        const obj3 = { fadeDuration: true, leftDisabled: true, render: redux.ptt };
+        const obj3 = { _desired: true, y: true, render: redux.ptt };
         items.push(obj3);
       }
       if (tmp2 === windowDimensions(tmp2[13]).MobileGoLiveEntrypointTreatment.SCREENSHARE_REPLACES_SOUNDBOARD) {
-        const obj4 = { fadeDuration: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000006495229729197963, leftDisabled: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004450147719115657, render: redux.screenshare };
+        const obj4 = { _desired: 358254285552180500000000000000000000, y: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004450147719115524, render: redux.screenshare };
         items.push(obj4);
       } else {
-        const obj5 = { fadeDuration: 196607, leftDisabled: -799997952, render: redux.soundboard };
+        const obj5 = { _desired: 196607, y: 273743872, render: redux.soundboard };
         items.push(obj5);
       }
-      const obj6 = { fadeDuration: "%MapIteratorPrototype%", leftDisabled: "isArray", render: redux.disconnectCancel };
+      const obj6 = { render: redux.disconnectCancel };
       items.push(obj6);
     } else {
-      obj = { fadeDuration: "56%", leftDisabled: "56%", render: redux.mic };
+      obj = { _desired: "56%", y: "56%", render: redux.mic };
       push(obj);
-      const obj7 = { fadeDuration: "center", leftDisabled: "center", render: redux.connect };
+      const obj7 = { _desired: "center", y: "center", render: redux.connect };
       items.push(obj7);
       const obj8 = { render: redux.chat };
       items.push(obj8);
       if (obj12.isMetaQuest()) {
-        const obj9 = { fadeDuration: "<string:1515389184>", leftDisabled: "<string:440752709>", render: redux.drawerToggle };
+        const obj9 = { _desired: "<string:2371027200>", y: "<string:1195740485>", render: redux.drawerToggle };
         items.push(obj9);
       }
       const mapped = items.map((type) => {

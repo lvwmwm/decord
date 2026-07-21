@@ -1,7 +1,7 @@
 // Module ID: 55
 // Function ID: 1384
 // Name: requireModule
-// Dependencies: [239]
+// Dependencies: []
 
 // Module 55 (requireModule)
 function requireModule(self) {

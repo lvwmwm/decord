@@ -1,10 +1,10 @@
-// Module ID: 14376
-// Function ID: 108510
+// Module ID: 14383
+// Function ID: 108533
 // Name: DebugLogView
 // Dependencies: []
 // Exports: default
 
-// Module 14376 (DebugLogView)
+// Module 14383 (DebugLogView)
 let closure_2 = importAll(dependencyMap[0]);
 ({ View: closure_3, ScrollView: closure_4, TouchableOpacity: closure_5 } = arg1(dependencyMap[1]));
 let closure_6 = importDefault(dependencyMap[2]);
@@ -13,7 +13,7 @@ const tmp2 = arg1(dependencyMap[1]);
 const tmp3 = arg1(dependencyMap[3]);
 ({ jsxs: closure_9, jsx: closure_10 } = arg1(dependencyMap[4]));
 let obj = arg1(dependencyMap[5]);
-obj = { debugLogContainer: {}, debugLogHeader: { -9223372036854775808: null, 0: null, 0: null, -9223372036854775808: null }, debugLogText: { width: "<string:1898184706>", alignSelf: "r", justifyContent: "<string:32127553>", alignItems: "<string:1387880704>" } };
+obj = { debugLogContainer: {}, debugLogHeader: { <string:2702682734>: "row", <string:926778450>: "center", <string:1032082067>: "relative", <string:2756894288>: 76 }, debugLogText: {} };
 obj = { borderRadius: importDefault(dependencyMap[6]).radii.xs };
 obj.clearButton = obj;
 obj.clearButtonText = {};
@@ -56,7 +56,7 @@ export default function DebugLogView() {
             },
         style: tmp.clearButton
       };
-      const obj4 = { padding: "pow", width: "eight_pointed_black_star", borderRadius: "pow", style: tmp.clearButtonText };
+      const obj4 = { -9223372036854775808: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003217290531814295, 9223372036854775807: -23520293134052384000000000000000000000000000000000000000000000000000000000000, 0: 278528.45677566534, style: tmp.clearButtonText };
       obj3.children = callback3(arg1(closure_1[8]).Text, obj4);
       items3[1] = callback3(closure_5, obj3);
       obj.children = items3;

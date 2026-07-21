@@ -28,7 +28,7 @@ function processStack(stack) {
           }
         }
         if (!first) {
-          let items = [null, null, null];
+          let items = [false, false, false];
           const tmp12 = callback(items, 3);
           const sum = tmp2 + tmp12[2] + replace;
           tmp2 = str;

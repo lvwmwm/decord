@@ -1,13 +1,13 @@
-// Module ID: 4319
-// Function ID: 37904
+// Module ID: 4323
+// Function ID: 37952
 // Name: getVoiceAnalyticsMetadataAdditional
-// Dependencies: []
+// Dependencies: [284214097]
 // Exports: getVoiceAnalyticsMetadataAdditional
 
-// Module 4319 (getVoiceAnalyticsMetadataAdditional)
+// Module 4323 (getVoiceAnalyticsMetadataAdditional)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("modules/app_analytics/AppAnalyticsUtilsAdditional.native.tsx");
 
 export function getVoiceAnalyticsMetadataAdditional() {
-  return { 0: false, 0: false };
+  return { "Null": "o", "Null": "o" };
 }

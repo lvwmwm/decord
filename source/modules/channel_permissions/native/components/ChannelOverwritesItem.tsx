@@ -1,10 +1,10 @@
-// Module ID: 8410
-// Function ID: 67034
+// Module ID: 8414
+// Function ID: 67046
 // Name: RemoveIcon
 // Dependencies: []
 // Exports: ChannelOverwritesCheckboxItem
 
-// Module 8410 (RemoveIcon)
+// Module 8414 (RemoveIcon)
 function RemoveIcon(item) {
   item = item.item;
   const arg1 = item;
@@ -110,11 +110,9 @@ function MemberItem(arg0) {
   ({ channelId, showRemove, onRemove, guildId, start, end, onPress, disabled, accessibilityRole, accessibilityState, accessible } = arg0);
   const tmp = callback2();
   let obj = { style: tmp.nameWrapper };
-  obj = { backgroundColor: null, alignItems: null, flexDirection: null, borderRadius: null };
+  obj = { style: items, children: item.name };
   const items = [, ];
   ({ name: arr[0], memberName: arr[1] } = tmp);
-  obj.style = items;
-  obj.children = item.name;
   const items1 = [callback(arg1(dependencyMap[15]).Text, obj), ];
   let tmp4 = null;
   if (item.rowType === RowType.OWNER) {
@@ -207,7 +205,7 @@ let closure_5 = importDefault(dependencyMap[2]);
 const RowType = arg1(dependencyMap[3]).RowType;
 ({ jsx: closure_7, jsxs: closure_8 } = arg1(dependencyMap[4]));
 const tmp3 = arg1(dependencyMap[4]);
-let closure_9 = arg1(dependencyMap[5]).createStyles({ nameWrapper: { lineHeight: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000200455554034322, paddingTop: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000340456021138, flex: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000020773567272207415 }, name: { paddingRight: 4 }, memberName: { flexShrink: 1 }, ownerIcon: { alignSelf: "center" }, roleIcon: {}, rowRemoveIconDisabled: { opacity: 0.3 } });
+let closure_9 = arg1(dependencyMap[5]).createStyles({ nameWrapper: { "Bool(true)": 160, "Bool(true)": null, "Bool(true)": 1 }, name: { paddingRight: 4 }, memberName: { flexShrink: 1 }, ownerIcon: { alignSelf: "center" }, roleIcon: {}, rowRemoveIconDisabled: { opacity: 0.3 } });
 const obj = arg1(dependencyMap[5]);
 const result = arg1(dependencyMap[21]).fileFinishedImporting("modules/channel_permissions/native/components/ChannelOverwritesItem.tsx");
 

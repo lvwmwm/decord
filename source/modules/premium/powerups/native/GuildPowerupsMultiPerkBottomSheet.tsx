@@ -1,10 +1,10 @@
-// Module ID: 11562
-// Function ID: 89950
+// Module ID: 11569
+// Function ID: 89973
 // Name: GuildPowerupsMultiPerkCard
 // Dependencies: []
 // Exports: default
 
-// Module 11562 (GuildPowerupsMultiPerkCard)
+// Module 11569 (GuildPowerupsMultiPerkCard)
 function GuildPowerupsMultiPerkCard(arg0) {
   let forceStaticImage;
   let guildId;
@@ -135,7 +135,7 @@ let closure_6 = _module1.createStyles((arg0) => {
   obj = { gap: importDefault(dependencyMap[3]).space.PX_24, marginHorizontal: importDefault(dependencyMap[3]).space.PX_16 };
   obj.cardsContainer = obj;
   obj.titleContainer = {};
-  obj.bodyContainer = { -8002599238190126080: "#2ECC71", 9223372036854775807: 4, 9223372036854775807: "version" };
+  obj.bodyContainer = { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null };
   const obj1 = { borderRadius: importDefault(dependencyMap[3]).radii.md, borderWidth: 1, borderColor: importDefault(dependencyMap[3]).colors.BACKGROUND_MOD_MUTED, borderStyle: "solid" };
   let str = "#ffffff";
   if (arg0) {
@@ -187,7 +187,7 @@ export default function GuildPowerupsMultiPerkBottomSheet(guildId) {
   const importDefault = tmp2;
   let tmp4Result = null;
   if (null != tmp2) {
-    let obj = { 0: null, -9223372036854775808: null, onDismiss: guildId.onDismiss };
+    let obj = { 1891290120: null, -475247768: null, onDismiss: guildId.onDismiss };
     obj = {};
     obj = { paddingBottom: importDefault(dependencyMap[23])().bottom };
     obj.contentContainerStyle = obj;

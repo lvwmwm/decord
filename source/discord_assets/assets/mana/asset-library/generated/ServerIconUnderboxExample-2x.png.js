@@ -1,9 +1,9 @@
-// Module ID: 6490
-// Function ID: 50609
+// Module ID: 6492
+// Function ID: 50652
 // Name: metadata
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 6490 (metadata)
+// Module 6492 (metadata)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/ServerIconUnderboxExample-2x.png.js");
 

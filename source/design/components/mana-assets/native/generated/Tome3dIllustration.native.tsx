@@ -1,10 +1,10 @@
-// Module ID: 6587
-// Function ID: 50754
+// Module ID: 6589
+// Function ID: 50797
 // Name: Tome3dIllustration
 // Dependencies: []
 // Exports: Tome3dIllustration
 
-// Module 6587 (Tome3dIllustration)
+// Module 6589 (Tome3dIllustration)
 const jsx = require(dependencyMap[0]).jsx;
 const _module = require(dependencyMap[3]);
 const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/Tome3dIllustration.native.tsx");

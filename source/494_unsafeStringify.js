@@ -1,7 +1,7 @@
 // Module ID: 494
 // Function ID: 6424
 // Name: unsafeStringify
-// Dependencies: [516]
+// Dependencies: []
 
 // Module 494 (unsafeStringify)
 function unsafeStringify(array) {

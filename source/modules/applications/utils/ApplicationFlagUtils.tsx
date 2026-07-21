@@ -1,10 +1,10 @@
-// Module ID: 7361
-// Function ID: 59360
+// Module ID: 7365
+// Function ID: 59371
 // Name: getApplicationFlags
 // Dependencies: []
 // Exports: hasApplicationFlag
 
-// Module 7361 (getApplicationFlags)
+// Module 7365 (getApplicationFlags)
 function getApplicationFlags(application) {
   if (null == application) {
     let flags2 = importAll(dependencyMap[1]).deserialize(0);

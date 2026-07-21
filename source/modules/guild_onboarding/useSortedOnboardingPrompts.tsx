@@ -1,10 +1,10 @@
-// Module ID: 9959
-// Function ID: 76964
+// Module ID: 9965
+// Function ID: 76982
 // Name: useSortedOnboardingPrompts
 // Dependencies: []
 // Exports: default
 
-// Module 9959 (useSortedOnboardingPrompts)
+// Module 9965 (useSortedOnboardingPrompts)
 let closure_2 = importAll(dependencyMap[0]);
 let closure_3 = importDefault(dependencyMap[1]);
 const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/guild_onboarding/useSortedOnboardingPrompts.tsx");

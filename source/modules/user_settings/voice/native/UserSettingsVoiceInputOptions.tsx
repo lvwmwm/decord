@@ -1,10 +1,10 @@
-// Module ID: 10696
-// Function ID: 83289
+// Module ID: 10702
+// Function ID: 83312
 // Name: handleInputModePress
 // Dependencies: []
 // Exports: default
 
-// Module 10696 (handleInputModePress)
+// Module 10702 (handleInputModePress)
 function handleInputModePress() {
   let obj = arg1(dependencyMap[6]);
   obj = { key: "InputMode" };

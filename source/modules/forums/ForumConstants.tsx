@@ -1,9 +1,9 @@
-// Module ID: 5679
-// Function ID: 48834
+// Module ID: 5681
+// Function ID: 48877
 // Name: FORUM_GUIDELINES_ACTION_SHEET
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 5679 (FORUM_GUIDELINES_ACTION_SHEET)
+// Module 5681 (FORUM_GUIDELINES_ACTION_SHEET)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("modules/forums/ForumConstants.tsx");
 

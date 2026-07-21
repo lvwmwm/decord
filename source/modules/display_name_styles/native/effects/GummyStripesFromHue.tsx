@@ -1,10 +1,10 @@
-// Module ID: 14103
-// Function ID: 107104
+// Module ID: 14110
+// Function ID: 107127
 // Name: AnimatedStripe
 // Dependencies: []
 // Exports: default
 
-// Module 14103 (AnimatedStripe)
+// Module 14110 (AnimatedStripe)
 function AnimatedStripe(hue) {
   hue = hue.hue;
   const arg1 = hue;

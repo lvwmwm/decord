@@ -1,16 +1,16 @@
-// Module ID: 11316
-// Function ID: 88065
+// Module ID: 11322
+// Function ID: 88088
 // Name: ImageInputAnswerActionSheet
 // Dependencies: []
 // Exports: default
 
-// Module 11316 (ImageInputAnswerActionSheet)
+// Module 11322 (ImageInputAnswerActionSheet)
 let closure_3 = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 let closure_5 = arg1(dependencyMap[2]).POLL_CREATION_IMAGE_INPUT_ACTION_SHEET_KEY;
 ({ jsx: closure_6, jsxs: closure_7 } = arg1(dependencyMap[3]));
 let obj = arg1(dependencyMap[4]);
-obj = { emojiContainer: { style: 815972, lineClamp: 786432, maxFontSizeMultiplier: 131072 } };
+obj = { emojiContainer: { -9223372036854775808: "2bprXx", 9223372036854775807: "isArray", 0: "PurchaseTypeToAnalyticsPaymentType" } };
 obj = { marginRight: 12, borderRadius: importDefault(dependencyMap[5]).radii.sm };
 obj.emojiIcon = obj;
 let closure_8 = obj.createStyles(obj);
@@ -48,7 +48,7 @@ export default function ImageInputAnswerActionSheet(channelId) {
     obj = { style: tmp.emojiContainer };
     obj = { style: tmp.emojiIcon, children: tmp2.renderImage };
     const items = [callback(View, obj), ];
-    const obj1 = { INTEGRATION_CREATE: -833552028, ConstraintReasonCode: -314949303 };
+    const obj1 = {};
     const image2 = answer.image;
     let name;
     if (null != image2) {

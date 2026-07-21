@@ -1,10 +1,10 @@
-// Module ID: 10816
-// Function ID: 84003
+// Module ID: 10822
+// Function ID: 84026
 // Name: authorizeCallback
 // Dependencies: []
 // Exports: default
 
-// Module 10816 (authorizeCallback)
+// Module 10822 (authorizeCallback)
 const _module = require(dependencyMap[0]);
 ({ OAUTH2_SUCCESS_RESULT_MODAL_KEY: closure_3, OAUTH2_ERROR_RESULT_MODAL_KEY: closure_4 } = _module);
 let closure_5 = /oauth2\/authorized/;

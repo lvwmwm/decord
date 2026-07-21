@@ -1,9 +1,9 @@
-// Module ID: 5898
-// Function ID: 49721
+// Module ID: 5900
+// Function ID: 49764
 // Name: metadata
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 5898 (metadata)
+// Module 5900 (metadata)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/BookIllocon-2x.png.js");
 

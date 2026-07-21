@@ -1,10 +1,10 @@
-// Module ID: 11938
-// Function ID: 92325
+// Module ID: 11945
+// Function ID: 92348
 // Name: getCurrentActivityGamePlatform
 // Dependencies: []
 // Exports: default
 
-// Module 11938 (getCurrentActivityGamePlatform)
+// Module 11945 (getCurrentActivityGamePlatform)
 function getCurrentActivityGamePlatform() {
   if (obj.isIOS()) {
     let META_QUEST = constants2.IOS;

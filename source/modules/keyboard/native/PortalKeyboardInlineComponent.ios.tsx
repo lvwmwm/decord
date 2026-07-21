@@ -1,9 +1,9 @@
-// Module ID: 11651
-// Function ID: 90385
+// Module ID: 11658
+// Function ID: 90408
 // Name: customKeyboardWillHide
 // Dependencies: []
 
-// Module 11651 (customKeyboardWillHide)
+// Module 11658 (customKeyboardWillHide)
 function customKeyboardWillHide(viewHandle, arg1, arg2) {
   const DCDChatManager = DCDChatManager.DCDChatManager;
   const result = DCDChatManager.customKeyboardWillHide(viewHandle.viewHandle, 0.25, 7);

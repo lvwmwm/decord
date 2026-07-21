@@ -1,10 +1,10 @@
-// Module ID: 12283
-// Function ID: 94145
+// Module ID: 12290
+// Function ID: 94168
 // Name: PremiumTier0LogoSmall
 // Dependencies: []
 // Exports: default
 
-// Module 12283 (PremiumTier0LogoSmall)
+// Module 12290 (PremiumTier0LogoSmall)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/user_settings/premium/native/images/PremiumTier0LogoSmall.tsx");

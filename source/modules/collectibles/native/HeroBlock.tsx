@@ -1,10 +1,10 @@
-// Module ID: 14359
-// Function ID: 108427
+// Module ID: 14366
+// Function ID: 108450
 // Name: SkeletonLoading
 // Dependencies: []
 // Exports: default
 
-// Module 14359 (SkeletonLoading)
+// Module 14366 (SkeletonLoading)
 function SkeletonLoading(accessibilityLabel) {
   const obj = {
     style: callback2().skeletonContainer,
@@ -29,17 +29,17 @@ const tmp3 = arg1(dependencyMap[4]);
 ({ jsx: closure_11, Fragment: closure_12, jsxs: closure_13 } = arg1(dependencyMap[5]));
 const result = 0.75 * arg1(dependencyMap[6]).COLLECTIBLES_SHOP_CARD_WIDTH;
 let obj = arg1(dependencyMap[7]);
-obj = { heroContainer: { width: "100%" }, heroBannerContainer: obj, heroBannerImage: { "Null": "5489cb913a06f6a88877637630ce77b7", "Null": "pl.messages.5489cb913a06f6a88877637630ce77b7.compiled.messages", "Null": "jsona" }, orbsBackgroundGradient: { <string:2410165992>: "isArray", <string:1391293622>: "skuId", <string:3282027431>: "T", <string:3696331617>: "r", <string:1368088986>: "isArray" }, fadeOutGradient: {}, heroInfoContainer: {} };
-obj = { maxHeight: 240 + result };
-const obj1 = { "Bool(false)": "/assets/.cache/intl/aW50bA==", "Bool(false)": null, "Bool(false)": "b0aab43a708e01f81d83932d47cbb74d", "Bool(false)": "bg.messages.b0aab43a708e01f81d83932d47cbb74d.compiled.messages", "Bool(false)": "jsona", "Bool(false)": "Dansk", paddingHorizontal: importDefault(dependencyMap[8]).space.PX_16 };
+obj = { heroContainer: { width: "100%" }, heroBannerContainer: obj, heroBannerImage: {}, orbsBackgroundGradient: { description: "center", imageUploadSize: null, image: 4, setImage: 4, disabled: "rgba(0, 0, 0, 0.75)" }, fadeOutGradient: {}, heroInfoContainer: { -1369201187: "<string:141856787>", -581843463: "<string:134217728>", 1409835429: "<string:134217728>", -404701909: "<string:134217728>", -304622757: "<string:1912602624>", -2129023389: "Array" } };
+obj = { <string:1454006944>: true, <string:1387159867>: true, <string:2782743027>: true, <string:3321474659>: true, <string:1638260049>: true, <string:3173733384>: true, maxHeight: 240 + result };
+const obj1 = { custom_id: "isArray", max_values: "message", min_values: "textAlign", placeholder: "r", label: "isArray", value: "message", paddingHorizontal: importDefault(dependencyMap[8]).space.PX_16 };
 obj.innerContainer = obj1;
-obj.heroLogoContainer = { "Bool(false)": 132, "Bool(false)": 182, "Bool(false)": 132 };
-obj.heroLogo = {};
+obj.heroLogoContainer = { <string:4266911585>: 132, <string:597500170>: 182, <string:3850199709>: 132 };
+obj.heroLogo = { "Null": true, "Null": 16, "Null": 0.194, "Null": 0 };
 const tmp4 = arg1(dependencyMap[5]);
 obj.heroViewAllIcon = { backgroundColor: importDefault(dependencyMap[8]).colors.CONTROL_OVERLAY_SECONDARY_BACKGROUND_DEFAULT, padding: importDefault(dependencyMap[8]).space.PX_8, borderRadius: importDefault(dependencyMap[8]).radii.round };
 const obj2 = { backgroundColor: importDefault(dependencyMap[8]).colors.CONTROL_OVERLAY_SECONDARY_BACKGROUND_DEFAULT, padding: importDefault(dependencyMap[8]).space.PX_8, borderRadius: importDefault(dependencyMap[8]).radii.round };
 obj.orbsInnerContainer = { paddingHorizontal: importDefault(dependencyMap[8]).space.PX_16, alignItems: "flex-start", gap: importDefault(dependencyMap[8]).space.PX_16 };
-obj.orbsTitle = { "Null": null, "Null": null };
+obj.orbsTitle = { PX_16: null, ix: null };
 obj.productCardsContainer = { zIndex: 1 };
 const obj3 = { paddingHorizontal: importDefault(dependencyMap[8]).space.PX_16, alignItems: "flex-start", gap: importDefault(dependencyMap[8]).space.PX_16 };
 obj.skeletonContainer = { flexDirection: "row", gap: importDefault(dependencyMap[8]).space.PX_12, paddingHorizontal: importDefault(dependencyMap[8]).space.PX_16 };
@@ -104,7 +104,7 @@ export default function _default(heroBlock) {
         obj3 = {};
         let tmp35 = tmp2;
         if (tmp2) {
-          obj4 = { colors: [true, true] };
+          obj4 = { colors: ["durationMillis", "GUILD_ITEM_BADGE_SIZE"] };
           ({ START: obj17.start, END: obj17.end } = closure_10);
           obj4.style = tmp4.orbsBackgroundGradient;
           tmp35 = callback(importDefault(closure_2[28]), obj4);
@@ -135,7 +135,7 @@ export default function _default(heroBlock) {
         let obj10 = {};
         let tmp68 = null != tmp14;
         if (tmp68) {
-          const obj11 = { INTEGRATION_CREATE: false, ConstraintReasonCode: false, style: tmp4.orbsTitle, children: tmp14 };
+          const obj11 = { style: tmp4.orbsTitle, children: tmp14 };
           tmp68 = callback(arg1(closure_2[29]).Text, obj11);
         }
         const items7 = [tmp68, ];
@@ -164,7 +164,7 @@ export default function _default(heroBlock) {
         const tmp66 = tmp8;
         const tmp67 = tmp8;
       } else {
-        const obj14 = { "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true };
+        const obj14 = { byteSwap32: true, STREAM_UPSELL_MODAL: "/assets/images/native/icons", analytics: 16, otherUsernameOnClick: 16, showIconSparkle: null, model: "cb49d7446dbcac5ce6ba16b6a9b83961" };
         const intl = arg1(closure_2[31]).intl;
         const obj15 = { category: stateFromStores.name };
         obj14.accessibilityLabel = intl.formatToPlainString(arg1(closure_2[31]).t.FNtLb3, obj15);
@@ -214,7 +214,7 @@ export default function _default(heroBlock) {
           tmp54 = callback(tmp8, obj18);
         }
         const items9 = [tmp54, ];
-        const obj21 = { style: tmp4.heroViewAllIcon, children: callback(arg1(closure_2[35]).ChevronSmallRightIcon, { flexDirection: null, alignItems: "4550be26e4ce88ab0a8f2d917df660a6" }) };
+        const obj21 = { style: tmp4.heroViewAllIcon, children: callback(arg1(closure_2[35]).ChevronSmallRightIcon, {}) };
         items9[1] = callback(tmp8, obj21);
         obj17.children = items9;
         obj14.children = closure_13(tmp8, obj17);

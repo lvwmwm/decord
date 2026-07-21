@@ -1,10 +1,10 @@
-// Module ID: 15053
-// Function ID: 113355
+// Module ID: 15060
+// Function ID: 113379
 // Name: customScoreToIndex
 // Dependencies: []
 // Exports: ChannelScoreSettings, GuildScoreSettings
 
-// Module 15053 (customScoreToIndex)
+// Module 15060 (customScoreToIndex)
 function customScoreToIndex(first) {
   if (arg1(dependencyMap[8]).ICYMICustomScore.LESS === first) {
     return 0;
@@ -109,7 +109,7 @@ obj = { marginVertical: importDefault(dependencyMap[7]).space.PX_16 };
 obj.customScoreWrapper = obj;
 const tmp2 = arg1(dependencyMap[5]);
 obj.warningText = { marginTop: importDefault(dependencyMap[7]).space.PX_8, marginHorizontal: importDefault(dependencyMap[7]).space.PX_12 };
-const obj2 = { aze: false, azj: false, tintColor: importDefault(dependencyMap[7]).colors.TEXT_MUTED };
+const obj2 = { bhk: "<string:1027735553>", bic: "<string:4143972873>", tintColor: importDefault(dependencyMap[7]).colors.TEXT_MUTED };
 obj.icon = obj2;
 const obj1 = { marginTop: importDefault(dependencyMap[7]).space.PX_8, marginHorizontal: importDefault(dependencyMap[7]).space.PX_12 };
 obj.iconSelected = { tintColor: importDefault(dependencyMap[7]).colors.INTERACTIVE_TEXT_ACTIVE };
@@ -155,11 +155,11 @@ export const GuildScoreSettings = function GuildScoreSettings(guild) {
   }, items2);
   const tmp6 = callback3();
   obj = {};
-  obj = { INTEGRATION_CREATE: null, ConstraintReasonCode: null };
+  obj = {};
   const intl = arg1(dependencyMap[9]).intl;
   obj.children = intl.string(arg1(dependencyMap[9]).t.Clq6km);
   const items3 = [callback2(arg1(dependencyMap[18]).Text, obj), , , , ];
-  obj1 = { INTEGRATION_CREATE: true, ConstraintReasonCode: true };
+  obj1 = {};
   const intl2 = arg1(dependencyMap[9]).intl;
   obj1.children = intl2.format(arg1(dependencyMap[9]).t.0DhU2P, { guildName: guild.name });
   items3[1] = callback2(arg1(dependencyMap[18]).Text, obj1);
@@ -247,11 +247,11 @@ export const ChannelScoreSettings = function ChannelScoreSettings(channel) {
   }, items3);
   const tmp9 = callback3();
   obj = {};
-  obj = { INTEGRATION_CREATE: null, ConstraintReasonCode: null };
+  obj = {};
   const intl = arg1(dependencyMap[9]).intl;
   obj.children = intl.string(arg1(dependencyMap[9]).t.0jRosn);
   const items4 = [callback2(arg1(dependencyMap[18]).Text, obj), , , , ];
-  obj1 = { INTEGRATION_CREATE: true, ConstraintReasonCode: true };
+  obj1 = {};
   const intl2 = arg1(dependencyMap[9]).intl;
   obj1.children = intl2.format(arg1(dependencyMap[9]).t.KzkF1j, { channelName: tmp2 });
   items4[1] = callback2(arg1(dependencyMap[18]).Text, obj1);

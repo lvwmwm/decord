@@ -1,10 +1,10 @@
-// Module ID: 16284
-// Function ID: 125662
+// Module ID: 16291
+// Function ID: 125693
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 // Exports: resetImperatively, useCurrentTierEditScene, useGroupCoverState, useGroupDescriptionState, useGroupIsFullGateState, usePriceTiersAvailableInGuild, useResetTierEditState
 
-// Module 16284 (_createForOfIteratorHelperLoose)
+// Module 16291 (_createForOfIteratorHelperLoose)
 function _createForOfIteratorHelperLoose(@@iterator) {
   let arg1 = Symbol_iterator;
   @@iterator = "undefined" !== typeof Symbol;
@@ -120,7 +120,7 @@ function usePriceTiers(guildId) {
 let closure_4 = importDefault(dependencyMap[0]);
 let closure_5 = importDefault(dependencyMap[1]);
 const obj = { IDLE: 0, [0]: "IDLE", LOADING: 1, [1]: "LOADING", ERROR: 2, [2]: "ERROR" };
-let closure_7 = Object.freeze({});
+let closure_7 = Object.freeze({ accessibilityLabel: "<string:2084700162>", accessibilityRole: "<string:620757502>", Symbol: "<string:1107296843>", hash: "Firefox" });
 const withEqualityFn = arg1(dependencyMap[3]).createWithEqualityFn((arg0) => {
   const arg1 = arg0;
   const obj = {};

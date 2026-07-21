@@ -37,7 +37,7 @@ if (arg1(dependencyMap[7]).default.isAvailable) {
   arg1(dependencyMap[7]).default.addNetworkingHandler();
   const _default = arg1(dependencyMap[7]).default;
 }
-const obj = { "Bool(true)": false, "Bool(true)": false, "Bool(true)": false, "Bool(true)": false, "Bool(true)": false, "Bool(true)": false, arraybuffer: "function" === typeof global.ArrayBuffer, blob: "function" === typeof global.Blob };
+const obj = { arraybuffer: "function" === typeof global.ArrayBuffer, blob: "function" === typeof global.Blob };
 let closure_11 = (arg0) => {
   class XMLHttpRequestEventTarget {
     constructor() {

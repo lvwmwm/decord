@@ -1,10 +1,10 @@
-// Module ID: 4580
-// Function ID: 40114
+// Module ID: 4582
+// Function ID: 40155
 // Name: SoundButtonOverlay
-// Dependencies: []
+// Dependencies: [284214097]
 // Exports: soundboardSoundFromAPI, soundboardSoundToAPI
 
-// Module 4580 (SoundButtonOverlay)
+// Module 4582 (SoundButtonOverlay)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("modules/soundboard/SoundboardTypes.tsx");
 
@@ -18,7 +18,7 @@ export const soundboardSoundFromAPI = function soundboardSoundFromAPI(body, guil
   let sound_id;
   let user_id;
   const available = body.available;
-  let obj = { jsxs: false, add: null, test: "", channelId: null, start: null };
+  let obj = {};
   ({ sound_id, emoji_id, emoji_name, user_id } = body);
   Object.setPrototypeOf(null);
   obj = {};
@@ -37,7 +37,7 @@ export const soundboardSoundToAPI = function soundboardSoundToAPI(arg0) {
   let guildId;
   let soundId;
   let userId;
-  let obj = { "Bool(false)": false, "Bool(false)": null, "Bool(false)": "", "Bool(false)": null, "Bool(false)": null };
+  let obj = {};
   ({ soundId, guildId, emojiId, emojiName, userId } = arg0);
   Object.setPrototypeOf(null);
   obj = {};

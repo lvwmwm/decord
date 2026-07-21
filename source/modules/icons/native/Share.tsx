@@ -1,8 +1,8 @@
-// Module ID: 10879
-// Function ID: 84562
+// Module ID: 10885
+// Function ID: 84585
 // Dependencies: []
 
-// Module 10879
+// Module 10885
 const _module = require(dependencyMap[0]);
 if (_module.isIOS()) {
   let importDefaultResult = importDefault(dependencyMap[1]);

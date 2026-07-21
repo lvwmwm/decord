@@ -1,10 +1,10 @@
-// Module ID: 16091
-// Function ID: 124071
+// Module ID: 16098
+// Function ID: 124102
 // Name: useSyncAutomodRules
 // Dependencies: []
 // Exports: getRuleCountByTriggerType, useAutomodRulesList, useSyncAutomodRulesEffect
 
-// Module 16091 (useSyncAutomodRules)
+// Module 16098 (useSyncAutomodRules)
 function useSyncAutomodRules(arg0) {
   const arg1 = arg0;
   const tmp2 = callback(React.useState(false), 2);

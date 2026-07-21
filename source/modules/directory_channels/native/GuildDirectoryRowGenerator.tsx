@@ -1,10 +1,10 @@
-// Module ID: 11681
-// Function ID: 90664
+// Module ID: 11688
+// Function ID: 90687
 // Name: RowType
 // Dependencies: []
 // Exports: generateDirectoryRows
 
-// Module 11681 (RowType)
+// Module 11688 (RowType)
 const DirectoryEntryCategories = require(dependencyMap[0]).DirectoryEntryCategories;
 let obj = { ENTRY: 0, [0]: "ENTRY", HEADER: 1, [1]: "HEADER", PLACEHOLDER: 2, [2]: "PLACEHOLDER" };
 obj = { type: obj.PLACEHOLDER };

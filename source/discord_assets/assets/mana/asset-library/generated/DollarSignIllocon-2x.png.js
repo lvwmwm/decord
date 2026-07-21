@@ -1,9 +1,9 @@
-// Module ID: 6022
-// Function ID: 49907
+// Module ID: 6024
+// Function ID: 49950
 // Name: metadata
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 6022 (metadata)
+// Module 6024 (metadata)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/DollarSignIllocon-2x.png.js");
 

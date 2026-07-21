@@ -1,9 +1,9 @@
-// Module ID: 14428
-// Function ID: 108794
+// Module ID: 14435
+// Function ID: 108817
 // Name: getTitle
 // Dependencies: []
 
-// Module 14428 (getTitle)
+// Module 14435 (getTitle)
 function getTitle() {
   const intl = arg1(dependencyMap[6]).intl;
   return intl.string(arg1(dependencyMap[6]).t.+uI23H);

@@ -1,10 +1,10 @@
-// Module ID: 10906
-// Function ID: 84766
+// Module ID: 10911
+// Function ID: 84787
 // Name: QuestRewardTile
 // Dependencies: []
 // Exports: default
 
-// Module 10906 (QuestRewardTile)
+// Module 10911 (QuestRewardTile)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 const useMemo = arg1(dependencyMap[1]).useMemo;
@@ -16,8 +16,8 @@ let closure_10 = arg1(dependencyMap[5]).createStyles(() => {
   let obj = {};
   obj = { borderRadius: importDefault(dependencyMap[6]).radii.sm };
   obj.container = obj;
-  obj.video = {};
-  obj.image = { <string:1140607356>: 30271555, <string:1751293292>: 22092032 };
+  obj.video = { 9223372036854775807: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000005171136915227254, 0: 8597148608.001488, 9223372036854775807: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000162423923903524 };
+  obj.image = {};
   return obj;
 });
 const obj = arg1(dependencyMap[5]);
@@ -80,7 +80,7 @@ export default function QuestRewardTile(quest) {
   const items6 = [tmp6.container, { height, width }, quest.style];
   if (tmp5.isAnimated) {
     if (withAnimation) {
-      obj = { type: "game_activity_notifications", accessibilityLabel: "enum", apply: "PRIMARY_830", ks: 0.5, type: 0, cursor: null, type: 5, style: tmp6.video };
+      obj = { flexDirection: 1, justifyContent: "collapsed_in_inbox", alignContent: "scalar", width: 8, style: tmp6.video, top: "enum", bottom: "PRIMARY_830" };
       obj1 = { uri: tmp5.url };
       obj.source = obj1;
       obj.poster = memo;

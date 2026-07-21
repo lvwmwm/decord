@@ -1,15 +1,15 @@
-// Module ID: 11001
-// Function ID: 85612
+// Module ID: 11006
+// Function ID: 85633
 // Name: ForumOriginalPoster
 // Dependencies: [0, 0, 0, 0, 0, 0, 0, 0, 0]
 // Exports: getForumOriginalPoster
 
-// Module 11001 (ForumOriginalPoster)
-import "result";
-import { View } from "result";
-import result from "result";
-import result from "result";
-import result from "result";
+// Module 11006 (ForumOriginalPoster)
+import "__exportStarResult1";
+import { View } from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
 
 class ForumOriginalPoster {
   constructor() {
@@ -19,26 +19,26 @@ class ForumOriginalPoster {
     items = [, ];
     ({ opIcon: arr[0], opIconBackground: arr[1] } = tmp);
     obj1 = {};
-    intl = require("result").intl;
-    obj1.children = intl.string(require("result").t.fyE8sH);
-    obj.children = jsx(require("result").Text, obj1);
+    intl = require("__exportStarResult1").intl;
+    obj1.children = intl.string(require("__exportStarResult1").t.fyE8sH);
+    obj.children = jsx(require("__exportStarResult1").Text, obj1);
     items1 = [, ];
     items1[0] = jsx(View, obj);
-    obj2 = { INTEGRATION_CREATE: 131072.00119209292, ConstraintReasonCode: -293983030121430100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 };
-    intl2 = require("result").intl;
-    obj2.children = intl2.string(require("result").t.uN6Emt);
-    items1[1] = jsx(require("result").Text, obj2);
+    obj2 = {};
+    intl2 = require("__exportStarResult1").intl;
+    obj2.children = intl2.string(require("__exportStarResult1").t.uN6Emt);
+    items1[1] = jsx(require("__exportStarResult1").Text, obj2);
     obj.children = items1;
     return jsxs(View, obj);
   }
 }
-({ jsx: closure_3, jsxs: closure_4 } = result);
-result = { container: { "Bool(true)": null, "Bool(true)": null, "Bool(true)": null } };
-result = { borderRadius: require("result").radii.sm };
-result.opIcon = result;
-result.opIconBackground = { backgroundColor: require("result").DARK_BRAND_260_LIGHT_BRAND_200 };
-result = result.createStyles(result);
-result = result.fileFinishedImporting("modules/forums/native/ForumOriginalPoster.tsx");
+({ jsx: closure_3, jsxs: closure_4 } = __exportStarResult1);
+__exportStarResult1 = { container: { padding: 0, paddingBottom: 6, flexDirection: 0 } };
+__exportStarResult1 = { borderRadius: require("__exportStarResult1").radii.sm };
+__exportStarResult1.opIcon = __exportStarResult1;
+__exportStarResult1.opIconBackground = { backgroundColor: require("__exportStarResult1").DARK_BRAND_260_LIGHT_BRAND_200 };
+__exportStarResult1 = __exportStarResult1.createStyles(__exportStarResult1);
+const result = __exportStarResult1.fileFinishedImporting("modules/forums/native/ForumOriginalPoster.tsx");
 
 export default ForumOriginalPoster;
 export const getForumOriginalPoster = function getForumOriginalPoster() {

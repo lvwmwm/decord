@@ -1,10 +1,10 @@
-// Module ID: 11293
-// Function ID: 87887
+// Module ID: 11299
+// Function ID: 87910
 // Name: AppLauncherChannelOption
 // Dependencies: []
 // Exports: default
 
-// Module 11293 (AppLauncherChannelOption)
+// Module 11299 (AppLauncherChannelOption)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 let closure_5 = importDefault(dependencyMap[2]);

@@ -1,10 +1,10 @@
-// Module ID: 5630
-// Function ID: 47996
+// Module ID: 5632
+// Function ID: 48038
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 // Exports: archiveSubscriptionListing, createSubscriptionGroupListing, createSubscriptionListing, deleteSubscriptionGroupListing, deleteSubscriptionListing, fetchAllSubscriptionListingsDataForGuild, fetchMonetizationRestrictions, fetchSubscriptionListingForPlan, fetchSubscriptionsSettings, updateSubscriptionGroupListing, updateSubscriptionListing, updateSubscriptionTrial, updateSubscriptionsSettings
 
-// Module 5630 (_createForOfIteratorHelperLoose)
+// Module 5632 (_createForOfIteratorHelperLoose)
 function _createForOfIteratorHelperLoose(@@iterator) {
   let arg1 = Symbol_iterator;
   @@iterator = "undefined" !== typeof Symbol;

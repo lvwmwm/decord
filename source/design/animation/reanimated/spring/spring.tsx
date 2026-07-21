@@ -1,14 +1,13 @@
-// Module ID: 4534
-// Function ID: 39748
+// Module ID: 4538
+// Function ID: 39796
 // Name: withSpring
-// Dependencies: [15, 17, 18, 5]
+// Dependencies: []
 
-// Module 4534 (withSpring)
-import { CONFIG_NEVER_ANIMATE } from "_possibleConstructorReturn";
-import asyncGeneratorStep from "asyncGeneratorStep";
-
+// Module 4538 (withSpring)
+const CONFIG_NEVER_ANIMATE = require(dependencyMap[0]).CONFIG_NEVER_ANIMATE;
 let closure_3 = { code: "function withSpring_springTsx1(toValue,config,shouldAnimate='respect-motion-settings',callback){const{accessibilityPreferencesSharedValue,CONFIG_NEVER_ANIMATE,ReduceMotion,REAwithSpring}=this.__closure;const reducedMotionEnabled=accessibilityPreferencesSharedValue.get().reduceMotion;const animate=shouldAnimate==='animate-always'||shouldAnimate==='respect-motion-settings'&&!reducedMotionEnabled;const configForRea=!animate?CONFIG_NEVER_ANIMATE:shouldAnimate==='animate-always'?{...(config!==null&&config!==void 0?config:{}),reduceMotion:ReduceMotion.Never}:config;return REAwithSpring(toValue,configForRea,callback);}" };
-const result = asyncGeneratorStep.fileFinishedImporting("design/animation/reanimated/spring/spring.tsx");
+const _module = require(dependencyMap[3]);
+const result = _module.fileFinishedImporting("design/animation/reanimated/spring/spring.tsx");
 
 export const withSpring = () => {
   function withSpring(targetHeight, closure_8, onComplete, fn) {

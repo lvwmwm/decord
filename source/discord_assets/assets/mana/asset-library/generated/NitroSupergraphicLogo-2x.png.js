@@ -1,9 +1,9 @@
-// Module ID: 6356
-// Function ID: 50408
+// Module ID: 6358
+// Function ID: 50451
 // Name: metadata
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 6356 (metadata)
+// Module 6358 (metadata)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/NitroSupergraphicLogo-2x.png.js");
 

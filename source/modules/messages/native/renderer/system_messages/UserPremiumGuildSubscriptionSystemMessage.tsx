@@ -1,10 +1,10 @@
-// Module ID: 7679
-// Function ID: 61323
+// Module ID: 7683
+// Function ID: 61335
 // Name: createUserPremiumGuildSubscriptionSystemMessage
 // Dependencies: []
 // Exports: createUserPremiumGuildSubscriptionSystemMessage
 
-// Module 7679 (createUserPremiumGuildSubscriptionSystemMessage)
+// Module 7683 (createUserPremiumGuildSubscriptionSystemMessage)
 const _module = require(dependencyMap[5]);
 const result = _module.fileFinishedImporting("modules/messages/native/renderer/system_messages/UserPremiumGuildSubscriptionSystemMessage.tsx");
 

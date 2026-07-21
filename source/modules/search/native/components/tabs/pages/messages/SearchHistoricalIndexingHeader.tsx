@@ -1,10 +1,10 @@
-// Module ID: 15254
-// Function ID: 115186
+// Module ID: 15261
+// Function ID: 115210
 // Name: HistoricalIndexingHeader
 // Dependencies: []
 // Exports: default
 
-// Module 15254 (HistoricalIndexingHeader)
+// Module 15261 (HistoricalIndexingHeader)
 let SEARCH_LIST_HORIZONTAL_PADDING;
 let SEARCH_ROW_TAP_STATE_PADDING;
 let closure_3 = importAll(dependencyMap[0]);
@@ -41,9 +41,10 @@ export default function HistoricalIndexingHeader(searchContext) {
     obj = { searchContext, isHistoricalIndexing: true, documentsIndexed };
     obj.trackSearchIndexing(obj);
   }, items2);
-  let obj = { style: items3 };
+  let obj = { "Null": "emitUnicodeLocaleId", "Null": "isArray" };
   const items3 = [tmp.header, memo1];
-  obj = { INTEGRATION_CREATE: true, ConstraintReasonCode: "/assets/modules/premium/referral_program/native/images" };
+  obj.style = items3;
+  obj = {};
   const intl = arg1(dependencyMap[8]).intl;
   obj.children = intl.format(arg1(dependencyMap[8]).t.4Y3O+O, { count: memo });
   obj.children = jsx(arg1(dependencyMap[7]).Text, obj);

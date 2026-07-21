@@ -1,10 +1,10 @@
-// Module ID: 5883
-// Function ID: 49698
+// Module ID: 5885
+// Function ID: 49741
 // Name: AvatarWumpusExample
 // Dependencies: []
 // Exports: AvatarWumpusExample
 
-// Module 5883 (AvatarWumpusExample)
+// Module 5885 (AvatarWumpusExample)
 const jsx = require(dependencyMap[0]).jsx;
 const _module = require(dependencyMap[3]);
 const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/AvatarWumpusExample.native.tsx");

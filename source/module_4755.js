@@ -1,20 +1,22 @@
 // Module ID: 4755
-// Function ID: 41246
+// Function ID: 41281
 // Dependencies: []
 
 // Module 4755
-let closure_2 = 6;
-let closure_3 = [null, null];
 arg5.default = {
-  isGifFile(dataView) {
-    let hasItem = !tmp;
-    if (!!dataView) {
-      hasItem = closure_3.includes(arg1(arg6[0]).getStringFromDataView(dataView, 0, closure_2));
-      const obj = arg1(arg6[0]);
+  isAvifFile(getUint32) {
+    if (getUint32) {
+      const parseBoxResult = arg1(arg6[0]).parseBox(getUint32, 0);
+      let tmp5 = parseBoxResult;
+      if (parseBoxResult) {
+        tmp5 = "avif" === parseBoxResult.majorBrand;
+      }
+      return tmp5;
+    } else {
+      return false;
     }
-    return hasItem;
   },
-  findOffsets() {
-    return { gifHeaderOffset: 0 };
+  findAvifOffsets(byteLength) {
+    return arg1(arg6[0]).findOffsets(byteLength);
   }
 };

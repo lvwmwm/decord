@@ -1,10 +1,10 @@
-// Module ID: 14548
-// Function ID: 109662
+// Module ID: 14555
+// Function ID: 109684
 // Name: showAgeVerificationTestModal
 // Dependencies: []
 // Exports: default
 
-// Module 14548 (showAgeVerificationTestModal)
+// Module 14555 (showAgeVerificationTestModal)
 function showAgeVerificationTestModal() {
   return _showAgeVerificationTestModal(...arguments);
 }
@@ -35,7 +35,7 @@ export default function DevToolsAgeVerificationScreen() {
   obj = { paddingBottom: tmp.content.padding + importDefault(dependencyMap[10])().bottom };
   items[1] = obj;
   obj.contentContainerStyle = items;
-  obj = { width: true, height: "/assets/.cache/intl/bW9kdWxlcy9jbGlwcw==" };
+  obj = {};
   const obj1 = { label: "Launch Age Verification Test Tool", onPress: showAgeVerificationTestModal, icon: callback2(arg1(dependencyMap[13]).KeyIcon, {}), trailing: callback2(arg1(dependencyMap[14]).TableRowArrow, {}) };
   const items1 = [callback2(arg1(dependencyMap[12]).TableRow, obj1), ];
   const obj2 = {

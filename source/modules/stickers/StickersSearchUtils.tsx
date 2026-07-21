@@ -1,10 +1,10 @@
-// Module ID: 9593
-// Function ID: 74772
+// Module ID: 9598
+// Function ID: 74789
 // Name: searchAllStickers
 // Dependencies: []
 // Exports: searchAllStickers, searchSendableStickers, searchUnsendableStickers
 
-// Module 9593 (searchAllStickers)
+// Module 9598 (searchAllStickers)
 const _module = require(dependencyMap[2]);
 const result = _module.fileFinishedImporting("modules/stickers/StickersSearchUtils.tsx");
 

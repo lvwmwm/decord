@@ -1,10 +1,10 @@
-// Module ID: 16158
-// Function ID: 124649
+// Module ID: 16165
+// Function ID: 124680
 // Name: hasSearchQuery
 // Dependencies: []
 // Exports: default
 
-// Module 16158 (hasSearchQuery)
+// Module 16165 (hasSearchQuery)
 function hasSearchQuery(first) {
   return "" !== first.trim();
 }
@@ -79,25 +79,25 @@ obj = { paddingTop: importDefault(dependencyMap[16]).space.PX_16, paddingHorizon
 obj.searchWrapper = obj;
 const tmp4 = arg1(dependencyMap[14]);
 obj.subheaderContainer = { paddingVertical: importDefault(dependencyMap[16]).space.PX_16, gap: importDefault(dependencyMap[16]).space.PX_16 };
-obj.emptySubheaderContainer = { "Bool(false)": "center", "Bool(false)": "center" };
+obj.emptySubheaderContainer = { OPTION_7: "center", display: "center" };
 const obj1 = { paddingVertical: importDefault(dependencyMap[16]).space.PX_16, gap: importDefault(dependencyMap[16]).space.PX_16 };
 obj.emptyIlloContainer = { backgroundColor: importDefault(dependencyMap[16]).colors.BACKGROUND_BASE_LOW };
 obj.emptyIllo = {};
-obj.emptyIlloLarge = {};
-obj.emptySubheaderBody = { "Bool(true)": "Array", "Bool(true)": "isArray", "Bool(true)": "body", "Bool(true)": "flex" };
+obj.emptyIlloLarge = { 9223372036854775807: "#000000", -9223372036854775808: "0 0 9px 0 hsl(none 0% 0% / 0.13)", 0: "drop-shadow(0 0 9px hsl(none 0% 0% / 0.13))", 9223372036854775807: "0 -12px 32px 0 hsl(none 0% 0% / 0.24)" };
+obj.emptySubheaderBody = { 995535459: "%", 1646734673: "NO_VOICE_STATES", 996384827: "currentOriginX", -1336756310: "row" };
 const obj3 = {};
 const obj2 = { backgroundColor: importDefault(dependencyMap[16]).colors.BACKGROUND_BASE_LOW };
 const merged = Object.assign(importDefault(dependencyMap[17])(tmp3.Fonts.DISPLAY_EXTRABOLD, importDefault(dependencyMap[16]).colors.MOBILE_TEXT_HEADING_PRIMARY, 24));
 obj3["marginTop"] = 16;
 obj.subheader = obj3;
-obj.subheaderBody = { accessible: null, id: null };
-obj.subheaderButton = {};
-obj.subheaderDescription = { 9223372036854775807: false, 9223372036854775807: false };
+obj.subheaderBody = { "Null": null, "Null": null };
+obj.subheaderButton = { 1948984516: 589823, -467567066: 1091633152 };
+obj.subheaderDescription = { "Bool(false)": null, "Bool(false)": null };
 obj.divider = { height: tmp2.StyleSheet.hairlineWidth, width: "100%" };
-obj.everyoneWrapper = { visible: "<string:4199630170>", transparent: "<string:3206758901>" };
+obj.everyoneWrapper = {};
 const importDefaultResult = importDefault(dependencyMap[17]);
 obj.edittingRolesHeader = { marginTop: importDefault(dependencyMap[16]).space.PX_16, marginLeft: importDefault(dependencyMap[16]).space.PX_16 };
-obj.rolesHeader = { "Bool(true)": "<string:3435973836>", "Bool(true)": "<string:1903247380>", "Bool(true)": "r" };
+obj.rolesHeader = { bottom: "<string:3435973836>", left: "<string:1903247380>", padding: "r" };
 obj.reorderButton = {};
 obj.reorderButtonText = { marginLeft: 8 };
 obj.rolesBody = {};
@@ -634,7 +634,7 @@ export default function ConnectedGuildSettingsModalRoles(guildId) {
       const obj5 = {};
       const obj6 = { style: tmp.emptyRolesIcon, size: arg1(dependencyMap[51]).Icon.Sizes.LARGE, source: importDefault(dependencyMap[52]) };
       obj5.leading = hasRoles(arg1(dependencyMap[51]).Icon, obj6);
-      const obj7 = { INTEGRATION_CREATE: true, ConstraintReasonCode: "/assets/images/native/icons" };
+      const obj7 = {};
       const intl = arg1(dependencyMap[31]).intl;
       obj7.children = intl.string(arg1(dependencyMap[31]).t.nZfHsf);
       obj5.label = hasRoles(arg1(dependencyMap[34]).Text, obj7);

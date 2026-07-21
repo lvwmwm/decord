@@ -113,12 +113,12 @@ const items = [
     Storage3.remove("UserSettingsSync");
     obj = {};
     if (false === obj[closure_8.TEXT]) {
-      const obj1 = { shouldSync: false, settings: importDefault(dependencyMap[8]).pick(value, ["<string:351879424>", "<string:2587951106>", "<string:1358954782>", "<string:30630721>", "<string:358826240>", "<string:3946905601>", "<string:1090519390>", "discord_protos.discord_users.v1.UIDensity"]) };
+      const obj1 = { shouldSync: false, settings: importDefault(dependencyMap[8]).pick(value, [false, false, false, false, false, false, false, false]) };
       obj.text = obj1;
       const obj5 = importDefault(dependencyMap[8]);
     }
     if (false === obj[closure_8.APPEARANCE]) {
-      const obj2 = { shouldSync: false, settings: importDefault(dependencyMap[8]).pick(value, [0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000168595226376143, 97450544832197950000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, 131126.12365913394]) };
+      const obj2 = { shouldSync: false, settings: importDefault(dependencyMap[8]).pick(value, ["discord_protos.discord_users.v1.GuildFolders", "discord_protos.discord_users.v1.GuildFolder", "discord_protos.discord_users.v1.Favorites"]) };
       obj.appearance = obj2;
       const obj7 = importDefault(dependencyMap[8]);
     }

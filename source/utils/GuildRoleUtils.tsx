@@ -1,10 +1,12 @@
 // Module ID: 1912
 // Function ID: 21564
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18]
 // Exports: doesRoleSortHigher, filterRoleDeletes, inviteRoleToDisplayData, sortGuildRoleRecords, sortInviteRoles
 
 // Module 1912 (_createForOfIteratorHelperLoose)
+import _inherits from "_inherits";
+
 function _createForOfIteratorHelperLoose(@@iterator) {
   let require = Symbol_iterator;
   @@iterator = "undefined" !== typeof Symbol;
@@ -106,8 +108,7 @@ function compareGuildRoles(guildId, id) {
   }
   return num;
 }
-const _module = require(dependencyMap[4]);
-const result = _module.fileFinishedImporting("utils/GuildRoleUtils.tsx");
+const result = _inherits.fileFinishedImporting("utils/GuildRoleUtils.tsx");
 
 export const sortGuildRoleRecords = function sortGuildRoleRecords(arr) {
   const sorted = arr.sort(compareGuildRoles);

@@ -1,10 +1,10 @@
-// Module ID: 11090
-// Function ID: 86295
+// Module ID: 11096
+// Function ID: 86318
 // Name: useTypingUserIds
 // Dependencies: []
 // Exports: useTypingUserIds
 
-// Module 11090 (useTypingUserIds)
+// Module 11096 (useTypingUserIds)
 let closure_2 = importDefault(dependencyMap[0]);
 let closure_3 = importDefault(dependencyMap[1]);
 let closure_4 = importDefault(dependencyMap[2]);

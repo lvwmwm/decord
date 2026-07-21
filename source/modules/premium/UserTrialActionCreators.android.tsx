@@ -1,8 +1,8 @@
-// Module ID: 7363
-// Function ID: 59391
+// Module ID: 7367
+// Function ID: 59402
 // Dependencies: []
 
-// Module 7363
+// Module 7367
 let closure_3 = importDefault(dependencyMap[0]);
 ({ Endpoints: closure_4, PaymentGateways: closure_5 } = arg1(dependencyMap[1]));
 const obj = {

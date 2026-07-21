@@ -1,14 +1,13 @@
-// Module ID: 6299
-// Function ID: 50322
+// Module ID: 6301
+// Function ID: 50365
 // Name: MushroomIllocon
 // Dependencies: [0, 0, 4294967295, 0]
 // Exports: MushroomIllocon
 
-// Module 6299 (MushroomIllocon)
-import { jsx } from "result";
-import result from "result";
+// Module 6301 (MushroomIllocon)
+import { jsx } from "__exportStarResult1";
 
-result = result.fileFinishedImporting("design/components/mana-assets/native/generated/MushroomIllocon.native.tsx");
+const result = require("__exportStarResult1").fileFinishedImporting("design/components/mana-assets/native/generated/MushroomIllocon.native.tsx");
 
 export const MushroomIllocon = function MushroomIllocon(size) {
   let accessibilityLabel;

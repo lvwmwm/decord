@@ -1,10 +1,10 @@
-// Module ID: 4264
-// Function ID: 37292
+// Module ID: 4268
+// Function ID: 37340
 // Name: filterParsedVideoCodecs
 // Dependencies: []
 // Exports: codecNameToPayloadName, filterVideoCodecs, getExperimentCodecs
 
-// Module 4264 (filterParsedVideoCodecs)
+// Module 4268 (filterParsedVideoCodecs)
 function filterParsedVideoCodecs(parseNativeCodecsResult, experimentCodecs, flag) {
   const ExperimentFlags = parseNativeCodecsResult;
   if (flag === undefined) {
@@ -55,7 +55,7 @@ function parseNativeCodecs(arg0) {
   });
 }
 const ExperimentFlags = require(dependencyMap[0]).ExperimentFlags;
-const items = [{}, { num_mutual_guilds: "text-md/medium", TOO_MANY_REACTIONS: "text-default", reactText: "\u2022" }];
+const items = [{ 9223372036854775807: "isArray", 0: "key", 9223372036854775807: "Array" }, { 9223372036854775807: "text-md/medium", 0: "text-default", 9223372036854775807: "\u2022" }];
 const _module = require(dependencyMap[1]);
 const result = _module.fileFinishedImporting("../discord_common/js/packages/media-engine/utils/VideoCodecUtils.tsx");
 

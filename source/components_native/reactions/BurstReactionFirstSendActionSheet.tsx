@@ -1,10 +1,10 @@
-// Module ID: 7055
-// Function ID: 56434
+// Module ID: 7059
+// Function ID: 56445
 // Name: onDismiss
 // Dependencies: []
 // Exports: default, openBurstReactionFirstSendActionSheet
 
-// Module 7055 (onDismiss)
+// Module 7059 (onDismiss)
 function onDismiss() {
   importDefault(dependencyMap[5]).hideActionSheet();
 }
@@ -13,7 +13,7 @@ const tmp3 = arg1(dependencyMap[1]);
 const View = tmp3.View;
 ({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[2]));
 let obj = arg1(dependencyMap[3]);
-obj = { container: { "Bool(false)": 839974912, "Bool(false)": -755914244, "Bool(false)": 1062232653, "Bool(false)": -755914244 } };
+obj = { container: { "Bool(false)": "key", "Bool(false)": "<string:1642700113>", "Bool(false)": "<string:3294712249>", "Bool(false)": "EDIT_GDM" } };
 obj = {};
 const merged = Object.assign(tmp3.StyleSheet.absoluteFillObject);
 obj["flex"] = 1;
@@ -21,10 +21,10 @@ obj["alignItems"] = "center";
 obj["justifyContent"] = "center";
 obj["top"] = -120;
 obj.fill = obj;
-const obj1 = { isDowngrading: "midnight", type: "noon", pendingDowngrade: "in the morning", tintColor: importDefault(dependencyMap[4]).colors.TEXT_SUBTLE };
+const obj1 = { 0: false, 0: false, 0: false, tintColor: importDefault(dependencyMap[4]).colors.TEXT_SUBTLE };
 obj.nitroWheel = obj1;
 obj.textContainer = {};
-obj.body = {};
+obj.body = { bm: null, cursor: null };
 obj.content = { paddingHorizontal: 16 };
 let closure_6 = obj.createStyles(obj);
 const tmp4 = arg1(dependencyMap[2]);

@@ -1,9 +1,9 @@
-// Module ID: 8965
-// Function ID: 70710
+// Module ID: 8969
+// Function ID: 70722
 // Name: metadata
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 8965 (metadata)
+// Module 8969 (metadata)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_assets/assets/connections/ps_discord_link.png.js");
 

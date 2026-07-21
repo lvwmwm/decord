@@ -1,16 +1,14 @@
-// Module ID: 9097
-// Function ID: 71296
+// Module ID: 9101
+// Function ID: 71308
 // Name: useNavigatorConfirmChangesOnBack
-// Dependencies: [31, 27, 9111, 33, 4126, 689]
+// Dependencies: []
 // Exports: default
 
-// Module 9097 (useNavigatorConfirmChangesOnBack)
-import module_31 from "module_31";
-import { Keyboard } from "get ActivityIndicator";
-import { NOOP } from "MIN_HEADER_HEIGHT";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-
-const result = _createForOfIteratorHelperLoose.fileFinishedImporting("modules/main_tabs_v2/native/utils/useNavigatorConfirmChangesOnBack.tsx");
+// Module 9101 (useNavigatorConfirmChangesOnBack)
+let closure_2 = importAll(dependencyMap[0]);
+const Keyboard = arg1(dependencyMap[1]).Keyboard;
+const NOOP = arg1(dependencyMap[2]).NOOP;
+const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/main_tabs_v2/native/utils/useNavigatorConfirmChangesOnBack.tsx");
 
 export default function useNavigatorConfirmChangesOnBack() {
   const ref = React.useRef(null);

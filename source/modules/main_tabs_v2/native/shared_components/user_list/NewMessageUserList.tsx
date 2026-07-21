@@ -1,10 +1,10 @@
-// Module ID: 11393
-// Function ID: 88652
+// Module ID: 11400
+// Function ID: 88676
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [31, 4138, 4317, 4318, 566, 8444, 4614, 9133, 8354, 4096, 11402, 1934, 1212, 11406, 2, 31, 27, 1838, 4317, 4318, 33, 4126]
+// Dependencies: [31, 4138, 4321, 4322, 566, 8448, 4616, 9137, 8358, 4096, 11409, 1934, 1212, 11413, 2, 31, 27, 1838, 4321, 4322, 33, 4126]
 // Exports: default
 
-// Module 11393 (_createForOfIteratorHelperLoose)
+// Module 11400 (_createForOfIteratorHelperLoose)
 import module_31 from "module_31";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import { View } from "_isNativeReflectConstruct";
@@ -417,7 +417,7 @@ export default function NewMessageUserList(selectedUserIds) {
           let TOGGLE = ref.TOGGLE;
         }
         obj.mode = TOGGLE;
-        const obj1 = { INTEGRATION_CREATE: true, ConstraintReasonCode: true, children: disabledUserIds(onSelectUser[11]).getUserTag(user) };
+        const obj1 = { children: disabledUserIds(onSelectUser[11]).getUserTag(user) };
         obj.subLabel = callback2(selectedUserIds(onSelectUser[16]).Text, obj1);
         obj.arrow = !tmp7.isFriend(user.id);
         obj.start = tmp2;

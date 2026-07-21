@@ -128,7 +128,7 @@ class PseudoMap {
   clear() {
     obj = Object.create(null);
     obj.size = 0;
-    obj = { <string:1258239487>: 120, <string:1308576767>: 24, <string:1375686655>: 8, <string:1325354239>: 8 };
+    obj = { FRIEND_REQUESTS: 60, ForYouLoadMore: 0, QUEST_BADGE: 0, GUILD_CHANNEL_INTEGRITY_CHECK_CANCELED: 0 };
     obj.value = obj;
     definePropertyResult = Object.defineProperty(this, "_data", obj);
     return;

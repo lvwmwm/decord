@@ -1,10 +1,10 @@
-// Module ID: 11139
-// Function ID: 86634
+// Module ID: 11145
+// Function ID: 86657
 // Name: computeKeyboardActionSheetHeight
 // Dependencies: []
 // Exports: default, getKeyboardActionSheetHeight
 
-// Module 11139 (computeKeyboardActionSheetHeight)
+// Module 11145 (computeKeyboardActionSheetHeight)
 function computeKeyboardActionSheetHeight(safeAreaInsets, windowDimensions, customKeyboardHeight) {
   let diff = windowDimensions.height - require(dependencyMap[0]).NAV_BAR_HEIGHT_MULTILINE - safeAreaInsets.top;
   if (customKeyboardHeight >= diff) {

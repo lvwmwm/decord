@@ -1,10 +1,10 @@
-// Module ID: 5795
-// Function ID: 49507
+// Module ID: 5797
+// Function ID: 49550
 // Name: useSelectedDismissibleContent
 // Dependencies: []
 // Exports: useSelectedDismissibleContent, useSelectedSingleUseGuildDismissibleContent, useSelectedSnowflakeBoundDismissibleContent, useSelectedSnowflakeBoundGuildDismissibleContent, useSelectedTimeRecurringDismissibleContent, useSelectedTimeRecurringGuildDismissibleContent, useSelectedTimeRecurringSnowflakeBoundDismissibleContent, useSelectedVersionedDismissibleContent
 
-// Module 5795 (useSelectedDismissibleContent)
+// Module 5797 (useSelectedDismissibleContent)
 let closure_2 = importDefault(dependencyMap[0]);
 const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/dismissible_content/hooks/useSelectedDismissibleContent.tsx");
 

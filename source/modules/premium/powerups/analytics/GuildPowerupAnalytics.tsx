@@ -1,15 +1,14 @@
-// Module ID: 11558
-// Function ID: 89940
+// Module ID: 11565
+// Function ID: 89963
 // Name: ModalType
 // Dependencies: [0, 0, 0, 0]
 // Exports: useLogPowerupModalOpened
 
-// Module 11558 (ModalType)
-import closure_2 from "result";
-import { AnalyticEvents } from "result";
-import result from "result";
+// Module 11565 (ModalType)
+import __exportStarResult1 from "__exportStarResult1";
+import { AnalyticEvents } from "__exportStarResult1";
 
-result = result.fileFinishedImporting("modules/premium/powerups/analytics/GuildPowerupAnalytics.tsx");
+const result = require("__exportStarResult1").fileFinishedImporting("modules/premium/powerups/analytics/GuildPowerupAnalytics.tsx");
 
 export const ModalType = { DETAIL: "Boost Perk Shop Details", DEACTIVATE: "Boost Perk Shop Disable" };
 export const useLogPowerupModalOpened = function useLogPowerupModalOpened(guildId, powerup, DEACTIVATE) {

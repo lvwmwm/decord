@@ -1,9 +1,9 @@
-// Module ID: 6819
-// Function ID: 53801
+// Module ID: 6825
+// Function ID: 53850
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
-// Module 6819 (_isNativeReflectConstruct)
+// Module 6825 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -220,7 +220,7 @@ function processHydratedMessages(channelId, conversationId, messages, fullyHydra
             let messageMetadataByMessageId3 = peekResult.messageMetadataByMessageId;
             if (null == messageMetadataByMessageId3.get(value.id)) {
               let messageMetadataByMessageId4 = peekResult.messageMetadataByMessageId;
-              obj = { "Bool(false)": false, "Bool(false)": false };
+              obj = { 0: "o", 9223372036854775807: "o" };
               let tmp13 = closure_0;
               let tmp14 = closure_2;
               let obj4 = closure_0(closure_2[14]);
@@ -235,21 +235,43 @@ function processHydratedMessages(channelId, conversationId, messages, fullyHydra
     }
   }
 }
-function handleReaction(messageId) {
+function replaceHydratedMessage(peekResult, value, messageId, message) {
+  value = messageId;
+  value.message = message;
+  value = null;
+  if (null != value.conversationId) {
+    const conversationMetadataById = peekResult.conversationMetadataById;
+    value = conversationMetadataById.get(value.conversationId);
+  }
+  let hydratedMessages;
+  if (null != value) {
+    hydratedMessages = value.hydratedMessages;
+  }
+  if (null != hydratedMessages) {
+    hydratedMessages = value.hydratedMessages;
+    const findIndexResult = hydratedMessages.findIndex((id) => id.id === arg2);
+    if (-1 !== findIndexResult) {
+      const hydratedMessages1 = value.hydratedMessages;
+      const substr = hydratedMessages1.slice();
+      substr[findIndexResult] = message;
+      value.hydratedMessages = substr;
+    }
+  }
+}
+function handleReaction(channelId) {
   let emoji;
+  let messageId;
   let reactionType;
   let type;
   let userId;
-  messageId = messageId.messageId;
-  const arg1 = messageId;
-  ({ emoji, reactionType } = messageId);
-  ({ type, userId } = messageId);
-  const peekResult = importDefaultResult.peek(messageId.channelId);
+  ({ messageId, emoji, reactionType } = channelId);
+  ({ type, userId } = channelId);
+  const peekResult = importDefaultResult.peek(channelId.channelId);
   if (null == peekResult) {
     return false;
   } else {
     const messageMetadataByMessageId = peekResult.messageMetadataByMessageId;
-    let value = messageMetadataByMessageId.get(messageId);
+    const value = messageMetadataByMessageId.get(messageId);
     let message;
     if (null != value) {
       message = value.message;
@@ -257,32 +279,16 @@ function handleReaction(messageId) {
     if (null == message) {
       return false;
     } else {
-      if (obj.shouldApplyReaction(messageId)) {
+      if (obj.shouldApplyReaction(channelId)) {
         const tmp4 = store.getId() === userId;
         if ("MESSAGE_REACTION_ADD" === type) {
           const message2 = value.message;
-          let addReactionResult = message2.addReaction(emoji, tmp4, messageId.colors, reactionType);
+          let addReactionResult = message2.addReaction(emoji, tmp4, channelId.colors, reactionType);
         } else {
           message = value.message;
           addReactionResult = message.removeReaction(emoji, tmp4, reactionType);
         }
-        value.message = addReactionResult;
-        value = null;
-        if (null != value.conversationId) {
-          const conversationMetadataById = peekResult.conversationMetadataById;
-          value = conversationMetadataById.get(value.conversationId);
-        }
-        let hydratedMessages;
-        if (null != value) {
-          hydratedMessages = value.hydratedMessages;
-        }
-        if (null != hydratedMessages) {
-          hydratedMessages = value.hydratedMessages;
-          const findIndexResult = hydratedMessages.findIndex((id) => id.id === messageId);
-          if (-1 !== findIndexResult) {
-            value.hydratedMessages[findIndexResult] = addReactionResult;
-          }
-        }
+        replaceHydratedMessage(peekResult, value, messageId, addReactionResult);
         return true;
       } else {
         return false;
@@ -1185,8 +1191,8 @@ obj = {
         }
         let tmp5 = guildId === guild.id;
         if (tmp5) {
-          let tmp6 = closure_29;
-          tmp5 = closure_29(value);
+          let tmp6 = closure_30;
+          tmp5 = closure_30(value);
         }
         if (tmp5) {
           flag2 = true;
@@ -1265,45 +1271,25 @@ obj = {
     let id;
     message = message.message;
     ({ channel_id, id } = message);
-    const arg1 = id;
     if (null != channel_id) {
       if (null != id) {
         const peekResult = importDefaultResult.peek(channel_id);
-        let value;
-        if (null != peekResult) {
-          const messageMetadataByMessageId = peekResult.messageMetadataByMessageId;
-          value = messageMetadataByMessageId.get(id);
-        }
-        message = undefined;
-        if (null != value) {
-          message = value.message;
-        }
-        if (null == message) {
+        if (null == peekResult) {
           return false;
         } else {
-          const updateMessageRecordResult = arg1(dependencyMap[14]).updateMessageRecord(value.message, message);
-          value.message = updateMessageRecordResult;
-          let tmp4 = null;
-          if (null != value.conversationId) {
-            value = undefined;
-            if (null != peekResult) {
-              const conversationMetadataById = peekResult.conversationMetadataById;
-              value = conversationMetadataById.get(value.conversationId);
-            }
-            tmp4 = value;
+          const messageMetadataByMessageId = peekResult.messageMetadataByMessageId;
+          const value = messageMetadataByMessageId.get(id);
+          message = undefined;
+          if (null != value) {
+            message = value.message;
           }
-          let hydratedMessages;
-          if (null != tmp4) {
-            hydratedMessages = tmp4.hydratedMessages;
+          let flag = null != message;
+          if (flag) {
+            replaceHydratedMessage(peekResult, value, id, arg1(dependencyMap[14]).updateMessageRecord(value.message, message));
+            flag = true;
+            const obj = arg1(dependencyMap[14]);
           }
-          if (null != hydratedMessages) {
-            hydratedMessages = tmp4.hydratedMessages;
-            const findIndexResult = hydratedMessages.findIndex((id) => id.id === id);
-            if (-1 !== findIndexResult) {
-              tmp4.hydratedMessages[findIndexResult] = updateMessageRecordResult;
-            }
-          }
-          return true;
+          return flag;
         }
       }
     }
@@ -1313,13 +1299,12 @@ obj = {
   MESSAGE_REACTION_REMOVE: handleReaction,
   MESSAGE_REACTION_ADD_MANY: function handleReactionBatch(messageId) {
     messageId = messageId.messageId;
-    const arg1 = messageId;
     const peekResult = importDefaultResult.peek(messageId.channelId);
     if (null == peekResult) {
       return false;
     } else {
       const messageMetadataByMessageId = peekResult.messageMetadataByMessageId;
-      let value = messageMetadataByMessageId.get(messageId);
+      const value = messageMetadataByMessageId.get(messageId);
       let message;
       if (null != value) {
         message = value.message;
@@ -1328,37 +1313,19 @@ obj = {
         return false;
       } else {
         message = value.message;
-        const addReactionBatchResult = message.addReactionBatch(messageId.reactions, store.getId());
-        value.message = addReactionBatchResult;
-        value = null;
-        if (null != value.conversationId) {
-          const conversationMetadataById = peekResult.conversationMetadataById;
-          value = conversationMetadataById.get(value.conversationId);
-        }
-        let hydratedMessages;
-        if (null != value) {
-          hydratedMessages = value.hydratedMessages;
-        }
-        if (null != hydratedMessages) {
-          hydratedMessages = value.hydratedMessages;
-          const findIndexResult = hydratedMessages.findIndex((id) => id.id === messageId);
-          if (-1 !== findIndexResult) {
-            value.hydratedMessages[findIndexResult] = addReactionBatchResult;
-          }
-        }
+        replaceHydratedMessage(peekResult, value, messageId, message.addReactionBatch(messageId.reactions, store.getId()));
         return true;
       }
     }
   },
   MESSAGE_REACTION_REMOVE_ALL: function handleRemoveAllReactions(messageId) {
     messageId = messageId.messageId;
-    const arg1 = messageId;
     const peekResult = importDefaultResult.peek(messageId.channelId);
     if (null == peekResult) {
       return false;
     } else {
       const messageMetadataByMessageId = peekResult.messageMetadataByMessageId;
-      let value = messageMetadataByMessageId.get(messageId);
+      const value = messageMetadataByMessageId.get(messageId);
       let message;
       if (null != value) {
         message = value.message;
@@ -1367,37 +1334,19 @@ obj = {
         return false;
       } else {
         message = value.message;
-        const result = message.set("reactions", []);
-        value.message = result;
-        value = null;
-        if (null != value.conversationId) {
-          const conversationMetadataById = peekResult.conversationMetadataById;
-          value = conversationMetadataById.get(value.conversationId);
-        }
-        let hydratedMessages;
-        if (null != value) {
-          hydratedMessages = value.hydratedMessages;
-        }
-        if (null != hydratedMessages) {
-          hydratedMessages = value.hydratedMessages;
-          const findIndexResult = hydratedMessages.findIndex((id) => id.id === messageId);
-          if (-1 !== findIndexResult) {
-            value.hydratedMessages[findIndexResult] = result;
-          }
-        }
+        replaceHydratedMessage(peekResult, value, messageId, message.set("reactions", []));
         return true;
       }
     }
   },
   MESSAGE_REACTION_REMOVE_EMOJI: function handleRemoveEmojiReactions(messageId) {
     messageId = messageId.messageId;
-    const arg1 = messageId;
     const peekResult = importDefaultResult.peek(messageId.channelId);
     if (null == peekResult) {
       return false;
     } else {
       const messageMetadataByMessageId = peekResult.messageMetadataByMessageId;
-      let value = messageMetadataByMessageId.get(messageId);
+      const value = messageMetadataByMessageId.get(messageId);
       let message;
       if (null != value) {
         message = value.message;
@@ -1406,24 +1355,7 @@ obj = {
         return false;
       } else {
         message = value.message;
-        const result = message.removeReactionsForEmoji(messageId.emoji);
-        value.message = result;
-        value = null;
-        if (null != value.conversationId) {
-          const conversationMetadataById = peekResult.conversationMetadataById;
-          value = conversationMetadataById.get(value.conversationId);
-        }
-        let hydratedMessages;
-        if (null != value) {
-          hydratedMessages = value.hydratedMessages;
-        }
-        if (null != hydratedMessages) {
-          hydratedMessages = value.hydratedMessages;
-          const findIndexResult = hydratedMessages.findIndex((id) => id.id === messageId);
-          if (-1 !== findIndexResult) {
-            value.hydratedMessages[findIndexResult] = result;
-          }
-        }
+        replaceHydratedMessage(peekResult, value, messageId, message.removeReactionsForEmoji(messageId.emoji));
         return true;
       }
     }
@@ -1440,8 +1372,8 @@ obj = {
     let flag2 = false;
     if (!iter.done) {
       do {
-        let tmp3 = closure_27;
-        if (closure_27(tmp, iter2.value)) {
+        let tmp3 = closure_28;
+        if (closure_28(tmp, iter2.value)) {
           flag = true;
         }
         iter3 = tmp2();

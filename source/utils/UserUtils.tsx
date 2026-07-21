@@ -257,7 +257,7 @@ let closure_3 = importDefault(dependencyMap[1]);
 ({ NON_USER_BOT_DISCRIMINATOR: closure_4, StatusTypes: closure_5 } = arg1(dependencyMap[2]));
 let closure_6 = 86400000;
 let closure_7 = "???";
-let closure_8 = {};
+let closure_8 = { <string:80553216>: "headMetaSocial", <string:80540672>: "open", <string:80540928>: "MAX_SEARCH_RESULTS_LIMIT" };
 const obj = {
   getName,
   useName,
@@ -288,10 +288,10 @@ export { getFormattedName };
 export { humanizeStatus };
 export { accountAgeInRange };
 export const ageEligibleForPremiumUpsell = function ageEligibleForPremiumUpsell(stateFromStores) {
-  return !accountAgeInRange(stateFromStores, { children: null, color: null });
+  return !accountAgeInRange(stateFromStores, {});
 };
 export const isNewUser = function isNewUser(createdAt) {
-  return accountAgeInRange(createdAt, { children: null, color: null });
+  return accountAgeInRange(createdAt, {});
 };
 export { getUserTag };
 export { useUserTag };

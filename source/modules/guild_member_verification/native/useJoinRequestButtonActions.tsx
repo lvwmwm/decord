@@ -1,10 +1,10 @@
-// Module ID: 11648
-// Function ID: 90369
+// Module ID: 11655
+// Function ID: 90392
 // Name: useJoinRequestButtonActions
 // Dependencies: []
 // Exports: useJoinRequestButtonActions
 
-// Module 11648 (useJoinRequestButtonActions)
+// Module 11655 (useJoinRequestButtonActions)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 let closure_5 = importAll(dependencyMap[2]);

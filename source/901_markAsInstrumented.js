@@ -112,7 +112,7 @@ function instrumentAuthOperation(arg0, arg1) {
                 if (error.error) {
                   let obj = { code: error(closure_1[6]).SPAN_STATUS_ERROR };
                   error.setStatus(obj);
-                  obj = { mechanism: { alignItems: "video_timestamp_seconds", justifyContent: "%Uint32ArrayPrototype%" } };
+                  obj = { mechanism: { onDrawerSlide: 30562881, onDrawerStateChanged: 1944928512 } };
                   error(closure_1[7]).captureException(error.error, obj);
                   const obj3 = error(closure_1[7]);
                 }
@@ -127,7 +127,7 @@ function instrumentAuthOperation(arg0, arg1) {
           self.setStatus({ code: self(closure_1[6]).SPAN_STATUS_ERROR });
           self.end();
           const obj = { code: self(closure_1[6]).SPAN_STATUS_ERROR };
-          self(closure_1[7]).captureException(self, { mechanism: { alignItems: "video_timestamp_seconds", justifyContent: "%Uint32ArrayPrototype%" } });
+          self(closure_1[7]).captureException(self, { mechanism: { onDrawerSlide: 30562881, onDrawerStateChanged: 1944928512 } });
           throw self;
         });
         const then = catchPromise.then;
@@ -184,10 +184,10 @@ let closure_3 = require(dependencyMap[1]);
 let closure_4 = require(dependencyMap[2]);
 let closure_5 = require(dependencyMap[3]);
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
-let closure_6 = [];
+let closure_6 = [false, false, false, false, false, false, false, false, false, false];
 let closure_7 = [true, true, true, true, true, true];
-const obj = { "Bool(false)": 0, "Bool(false)": false, "Bool(false)": false, "Bool(false)": 0, "Bool(false)": 0, "Bool(false)": 0, "Bool(false)": 0, "Bool(false)": 0, "Bool(false)": false, "Bool(false)": "auto.ai.openai.stream", "Bool(false)": "", "Bool(false)": "", "Bool(false)": false, "Bool(false)": "", "Bool(false)": 0, "Bool(false)": 0, "Bool(false)": "0", "Bool(false)": false, "Bool(false)": "auto.ai.openai", "Bool(false)": null, "Bool(false)": "100", "Bool(false)": 0, "Bool(false)": 0, "Bool(false)": 100, "Bool(false)": false, "Bool(false)": 0, "Bool(false)": "0" };
-const items = [-0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000014916820409567813, 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000006080202367648626, 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001939085188229577, 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000009778156605780385, 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000029864435861791383];
+const obj = { -109657773: 0, "Bool(true)": false, "Bool(true)": false, "Bool(true)": 0, "Bool(true)": 0, "Bool(true)": 0, "Bool(true)": 0, "Bool(true)": 0, "Bool(true)": false, "Bool(true)": "auto.ai.openai.stream", "Bool(true)": "", "Bool(true)": "", 270655: false, 1090759249: "", 288601: 0, 1024908370: 0, 1006453118: "0", -865796092: false, 1672107579: "auto.ai.openai", 167926866: null, 1549034243: "100", 1388190818: 0, 1374965325: 0, -262076264: 100, 1743464274: false, 1389650274: 0, -1478966462: "0" };
+const items = ["Array", "isArray", "Text", "limit", "application"];
 function instrumentSupabaseClient(auth) {
   if (auth) {
     const _Function = Function;

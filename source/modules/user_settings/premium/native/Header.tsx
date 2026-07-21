@@ -1,10 +1,10 @@
-// Module ID: 12271
-// Function ID: 94104
+// Module ID: 12278
+// Function ID: 94127
 // Name: Header
 // Dependencies: []
 // Exports: default
 
-// Module 12271 (Header)
+// Module 12278 (Header)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 ({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[2]));
@@ -17,7 +17,7 @@ export default function Header(style) {
   const tmp = callback2();
   let obj = { style: items };
   const items = [tmp.container, style.style];
-  obj = {};
+  obj = { "Bool(true)": "r", "Bool(true)": "ron", "Bool(true)": "Array" };
   const tmp2 = importDefault(dependencyMap[4])();
   const tmp3 = closure_5;
   const tmp4 = View;
@@ -32,7 +32,7 @@ export default function Header(style) {
   }
   obj.source = tmp7Result;
   const items1 = [tmp5(tmp6, obj), ];
-  obj = { Promise: -246006407672989600000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, marginTop: 0.0000000000000000000000000000000000000000000000000000000000000000000741841232901058, flags: 0.158, style: tmp.headerText };
+  obj = { "Null": -246006407672989600000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, "Null": 0.0000000000000000000000000000000000000000000000000000000000000000000741841232901058, "Null": 0.158, style: tmp.headerText };
   const intl2 = arg1(dependencyMap[6]).intl;
   obj.children = intl2.string(arg1(dependencyMap[6]).t.SD5MJW);
   items1[1] = callback(arg1(dependencyMap[10]).Text, obj);

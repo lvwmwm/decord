@@ -1,5 +1,5 @@
 // Module ID: 5044
-// Function ID: 42996
+// Function ID: 43016
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
@@ -13,87 +13,58 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-let closure_0 = importDefault(dependencyMap[0]);
-let closure_1 = importDefault(dependencyMap[1]);
-let closure_2 = importDefault(dependencyMap[2]);
-let closure_3 = importDefault(dependencyMap[3]);
-let closure_4 = importDefault(dependencyMap[4]);
-
-export const TapGesture = (BaseGesture) => {
-  class TapGesture {
+let closure_2 = importDefault(dependencyMap[0]);
+let closure_3 = importDefault(dependencyMap[1]);
+let closure_4 = importDefault(dependencyMap[2]);
+let closure_5 = importDefault(dependencyMap[3]);
+let closure_6 = importDefault(dependencyMap[4]);
+const importDefaultResult = importDefault(dependencyMap[5]);
+const tmp3 = (Component) => {
+  class Wrap {
     constructor() {
       self = this;
-      tmp = TapGesture(this, TapGesture);
-      obj = closure_3(TapGesture);
-      tmp2 = closure_2;
-      if (closure_5()) {
-        tmp4 = globalThis;
+      tmp = closure_2(this, Wrap);
+      obj = closure_5(Wrap);
+      tmp2 = closure_4;
+      if (closure_8()) {
+        tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp5 = closure_3;
-        constructResult = Reflect.construct(obj, [], closure_3(self).constructor);
+        tmp7 = closure_5;
+        tmp8 = arguments;
+        constructResult = Reflect.construct(obj, arguments, closure_5(self).constructor);
       } else {
-        constructResult = obj.apply(self, undefined);
+        tmp3 = arguments;
+        tmp4 = arguments;
+        constructResult = obj(...arguments);
       }
-      tmp2Result = tmp2(self, constructResult);
-      tmp2Result.config = {};
-      tmp2Result.handlerName = "TapGestureHandler";
-      result = tmp2Result.shouldCancelWhenOutside(true);
-      return tmp2Result;
+      return tmp2(self, constructResult);
     }
   }
-  let closure_0 = TapGesture;
-  callback2(TapGesture, BaseGesture);
-  let obj = {
-    key: "minPointers",
-    value: function minPointers(minPointers) {
-      this.config.minPointers = minPointers;
-      return this;
+  const arg1 = Wrap;
+  callback2(Wrap, Component);
+  const items = [
+    {
+      key: "render",
+      value: function render() {
+        const Children = React.Children;
+        const onlyResult = Children.only(this.props.children);
+        return React.cloneElement(onlyResult, { collapsable: false }, onlyResult.props.children);
+      }
     }
-  };
-  const items = [obj, , , , , , ];
-  obj = {
-    key: "numberOfTaps",
-    value: function numberOfTaps(numberOfTaps) {
-      this.config.numberOfTaps = numberOfTaps;
-      return this;
-    }
-  };
-  items[1] = obj;
-  obj = {
-    key: "maxDistance",
-    value: function maxDistance(maxDist) {
-      this.config.maxDist = maxDist;
-      return this;
-    }
-  };
-  items[2] = obj;
-  items[3] = {
-    key: "maxDuration",
-    value: function maxDuration(maxDurationMs) {
-      this.config.maxDurationMs = maxDurationMs;
-      return this;
-    }
-  };
-  items[4] = {
-    key: "maxDelay",
-    value: function maxDelay(maxDelayMs) {
-      this.config.maxDelayMs = maxDelayMs;
-      return this;
-    }
-  };
-  items[5] = {
-    key: "maxDeltaX",
-    value: function maxDeltaX(maxDeltaX) {
-      this.config.maxDeltaX = maxDeltaX;
-      return this;
-    }
-  };
-  items[6] = {
-    key: "maxDeltaY",
-    value: function maxDeltaY(maxDeltaY) {
-      this.config.maxDeltaY = maxDeltaY;
-      return this;
-    }
-  };
-  return callback(TapGesture, items);
-}(arg1(dependencyMap[5]).BaseGesture);
+  ];
+  return callback(Wrap, items);
+}(importDefaultResult.Component);
+let animatedComponent;
+if (null != arg1(dependencyMap[7]).Reanimated) {
+  const _default = arg1(dependencyMap[7]).Reanimated.default;
+  if (null != _default) {
+    animatedComponent = _default.createAnimatedComponent(tmp3);
+  }
+}
+let tmp5 = tmp3;
+if (null != animatedComponent) {
+  tmp5 = animatedComponent;
+}
+
+export const Wrap = tmp3;
+export const AnimatedWrap = tmp5;

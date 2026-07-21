@@ -1,10 +1,10 @@
-// Module ID: 16346
-// Function ID: 126139
+// Module ID: 16353
+// Function ID: 126170
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 // Exports: default
 
-// Module 16346 (_isNativeReflectConstruct)
+// Module 16353 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -41,7 +41,7 @@ function ConnectedNotificationSettings(guildId) {
   obj.children = items2;
   return callback5(closure_33, obj);
 }
-let closure_3 = [0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000044403913133906866];
+let closure_3 = [301928703];
 let closure_4 = importDefault(dependencyMap[0]);
 let closure_5 = importDefault(dependencyMap[1]);
 let closure_6 = importDefault(dependencyMap[2]);
@@ -64,7 +64,7 @@ const tmp3 = arg1(dependencyMap[17]);
 ({ jsx: closure_31, jsxs: closure_32, Fragment: closure_33 } = arg1(dependencyMap[18]));
 let obj = arg1(dependencyMap[19]);
 obj = {};
-obj = { th: "\u{1F468}\u{1F3FB}\u200D\u{1F9BC}\u200D\u27A1\uFE0F", ss: true, A: null, color: importDefault(dependencyMap[20]).unsafe_rawColors.BLUE_345 };
+obj = { Th: "\u{1F468}\u{1F3FB}\u200D\u{1F9BC}\u200D\u27A1\uFE0F", th: true, ss: null, color: importDefault(dependencyMap[20]).unsafe_rawColors.BLUE_345 };
 obj.highlightsLearnMore = obj;
 const tmp4 = arg1(dependencyMap[18]);
 obj.separator = { backgroundColor: importDefault(dependencyMap[20]).colors.BORDER_SUBTLE };
@@ -264,7 +264,7 @@ const tmp5 = (PureComponent) => {
       items[2] = callback4(NotificationSettings(closure_2[34]).TableSwitchRow, obj3);
       obj.children = items;
       const items1 = [closure_32(NotificationSettings(closure_2[33]).TableRowGroup, obj), , ];
-      const obj4 = { INTEGRATION_CREATE: "<string:3305963521>", ConstraintReasonCode: "<string:671547393>", style: { marginTop: 8 } };
+      const obj4 = { style: { marginTop: 8 } };
       const intl4 = NotificationSettings(closure_2[31]).intl;
       obj4.children = intl4.string(NotificationSettings(closure_2[31]).t.Vw/Xn8);
       items1[1] = callback4(NotificationSettings(closure_2[35]).Text, obj4);

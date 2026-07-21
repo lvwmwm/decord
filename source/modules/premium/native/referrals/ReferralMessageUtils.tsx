@@ -1,10 +1,10 @@
-// Module ID: 10943
-// Function ID: 85115
+// Module ID: 10948
+// Function ID: 85136
 // Name: canOpenPremiumPlanDirectlyForReferralTrial
 // Dependencies: [270270464, 266338304, 1441792]
 // Exports: canOpenPremiumPlanDirectlyForReferralTrial
 
-// Module 10943 (canOpenPremiumPlanDirectlyForReferralTrial)
+// Module 10948 (canOpenPremiumPlanDirectlyForReferralTrial)
 let closure_0 = importDefault(dependencyMap[0]);
 let closure_1 = importDefault(dependencyMap[1]);
 const result = arg1(dependencyMap[2]).fileFinishedImporting("modules/premium/native/referrals/ReferralMessageUtils.tsx");

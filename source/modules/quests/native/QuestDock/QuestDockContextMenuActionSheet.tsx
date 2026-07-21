@@ -1,10 +1,10 @@
-// Module ID: 13870
-// Function ID: 104951
+// Module ID: 13877
+// Function ID: 104974
 // Name: QuestDockContextMenuActionSheet
 // Dependencies: []
 // Exports: default
 
-// Module 13870 (QuestDockContextMenuActionSheet)
+// Module 13877 (QuestDockContextMenuActionSheet)
 let closure_3 = importDefault(dependencyMap[0]);
 importAll(dependencyMap[1]);
 const UserSettingsSections = arg1(dependencyMap[2]).UserSettingsSections;

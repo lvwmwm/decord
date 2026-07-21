@@ -1,9 +1,9 @@
-// Module ID: 6790
-// Function ID: 53595
+// Module ID: 6796
+// Function ID: 53644
 // Name: CollectiblesMarketingCoachmarkRecord
 // Dependencies: []
 
-// Module 6790 (CollectiblesMarketingCoachmarkRecord)
+// Module 6796 (CollectiblesMarketingCoachmarkRecord)
 let closure_2 = importDefault(dependencyMap[0]);
 let closure_3 = importDefault(dependencyMap[1]);
 const tmp2 = () => {

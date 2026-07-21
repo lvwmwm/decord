@@ -1,10 +1,10 @@
-// Module ID: 9624
-// Function ID: 74961
+// Module ID: 9629
+// Function ID: 74978
 // Name: HorizontalAutocompleteWrapper
 // Dependencies: []
 // Exports: default
 
-// Module 9624 (HorizontalAutocompleteWrapper)
+// Module 9629 (HorizontalAutocompleteWrapper)
 let closure_3 = importAll(dependencyMap[0]);
 const FlatList = arg1(dependencyMap[1]).FlatList;
 arg1(dependencyMap[2]).AutoCompleteResultTypes;
@@ -99,8 +99,6 @@ export default function HorizontalAutocompleteWrapper(channel) {
   obj = { style: items2 };
   const items2 = [style, animatedStyle];
   obj1 = {
-    "Null": false,
-    "Null": false,
     keyExtractor(arg0, arg1) {
       return String(arg1);
     },

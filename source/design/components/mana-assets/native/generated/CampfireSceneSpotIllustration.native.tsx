@@ -1,10 +1,10 @@
-// Module ID: 5921
-// Function ID: 49755
+// Module ID: 5923
+// Function ID: 49798
 // Name: CampfireSceneSpotIllustration
 // Dependencies: []
 // Exports: CampfireSceneSpotIllustration
 
-// Module 5921 (CampfireSceneSpotIllustration)
+// Module 5923 (CampfireSceneSpotIllustration)
 const jsx = require(dependencyMap[0]).jsx;
 const _module = require(dependencyMap[3]);
 const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/CampfireSceneSpotIllustration.native.tsx");

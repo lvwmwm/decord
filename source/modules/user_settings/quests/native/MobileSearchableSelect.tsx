@@ -1,9 +1,15 @@
-// Module ID: 13943
-// Function ID: 105994
+// Module ID: 13950
+// Function ID: 106017
 // Name: MobileSearchableSelect
-// Dependencies: []
+// Dependencies: [0, 0, 0, 0, 0, 771751956, 553648182, 788529152, 2399141942, 838860840, 2147483702]
 
-// Module 13943 (MobileSearchableSelect)
+// Module 13950 (MobileSearchableSelect)
+import closure_2 from "__exportStarResult1";
+import closure_3 from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
+
 class MobileSearchableSelect {
   constructor(arg0) {
     options = global.options;
@@ -36,7 +42,7 @@ class MobileSearchableSelect {
     closure_9 = undefined;
     intl = undefined;
     closure_11 = undefined;
-    f106002 = undefined;
+    f106025 = undefined;
     tmp3 = closure_9();
     closure_5 = tmp3;
     str = "";
@@ -130,7 +136,7 @@ class MobileSearchableSelect {
         _undefined(false);
       }
     }, items3);
-    f106002 = closure_3.useCallback((arg0) => {
+    f106025 = closure_3.useCallback((arg0) => {
       callback(arg0);
       onChange(arg0);
       callback2(false);
@@ -146,7 +152,7 @@ class MobileSearchableSelect {
       }
       closure_8(tmp2);
     }, items5);
-    obj = { style: { -9223372036854775808: false, 9223372036854775807: false, 9223372036854775807: false } };
+    obj = { style: { -77407381: true, -1399238308: true, 1565641825: true } };
     callback3 = closure_3.useCallback(() => {
       _undefined(false);
       callback2(false);
@@ -179,7 +185,7 @@ class MobileSearchableSelect {
       obj1.style = tmp3.dropdownContainer;
       tmp19 = closure_7;
       tmp20 = closure_5;
-      obj2 = {};
+      obj2 = { "Bool(true)": "14a4fdad987e2761599ba055042fdafa", "Bool(true)": "EyeSlashIcon", "Bool(true)": "png" };
       obj2.children = memo.map((children) => {
         const options = children;
         let obj = {};
@@ -207,20 +213,15 @@ class MobileSearchableSelect {
     return tmp15(tmp16, obj);
   }
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importAll(dependencyMap[1]);
-({ View: closure_4, ScrollView: closure_5, TouchableOpacity: closure_6 } = arg1(dependencyMap[2]));
-const tmp2 = arg1(dependencyMap[2]);
-({ jsx: closure_7, jsxs: closure_8 } = arg1(dependencyMap[3]));
-let obj = arg1(dependencyMap[4]);
-obj = {};
-obj = { backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_LOWER, borderRadius: importDefault(dependencyMap[5]).radii.md, marginTop: importDefault(dependencyMap[5]).space.PX_4, borderWidth: 1, borderColor: importDefault(dependencyMap[5]).colors.BORDER_SUBTLE, left: 0, right: 0, zIndex: 999999, elevation: 30, shadowColor: "#000", shadowOffset: {}, shadowOpacity: 0.4, shadowRadius: 8, maxHeight: 250 };
-obj.dropdownContainer = obj;
-const tmp3 = arg1(dependencyMap[3]);
-obj.dropdownItem = { padding: importDefault(dependencyMap[5]).space.PX_12, borderBottomWidth: 1, borderBottomColor: importDefault(dependencyMap[5]).colors.BORDER_MUTED };
-obj.dropdownItemLast = { borderBottomWidth: 0 };
-obj.dropdownItemText = { fontSize: 14 };
-let closure_9 = obj.createStyles(obj);
+({ View: closure_4, ScrollView: closure_5, TouchableOpacity: closure_6 } = __exportStarResult1);
+({ jsx: closure_7, jsxs: closure_8 } = __exportStarResult1);
+__exportStarResult1 = {};
+__exportStarResult1 = { backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_LOWER, borderRadius: importDefault(dependencyMap[5]).radii.md, marginTop: importDefault(dependencyMap[5]).space.PX_4, borderWidth: 1, borderColor: importDefault(dependencyMap[5]).colors.BORDER_SUBTLE, left: 0, right: 0, zIndex: 999999, elevation: 30, shadowColor: "#000", shadowOffset: { bhk: false, bic: false }, shadowOpacity: 0.4, shadowRadius: 8, maxHeight: 250 };
+__exportStarResult1.dropdownContainer = __exportStarResult1;
+__exportStarResult1.dropdownItem = { padding: importDefault(dependencyMap[5]).space.PX_12, borderBottomWidth: 1, borderBottomColor: importDefault(dependencyMap[5]).colors.BORDER_MUTED };
+__exportStarResult1.dropdownItemLast = { borderBottomWidth: 0 };
+__exportStarResult1.dropdownItemText = { fontSize: 14 };
+__exportStarResult1 = __exportStarResult1.createStyles(__exportStarResult1);
 const obj1 = { padding: importDefault(dependencyMap[5]).space.PX_12, borderBottomWidth: 1, borderBottomColor: importDefault(dependencyMap[5]).colors.BORDER_MUTED };
 const result = arg1(dependencyMap[10]).fileFinishedImporting("modules/user_settings/quests/native/MobileSearchableSelect.tsx");
 

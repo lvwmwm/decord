@@ -1,9 +1,9 @@
-// Module ID: 6058
-// Function ID: 49961
+// Module ID: 6060
+// Function ID: 50004
 // Name: metadata
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 6058 (metadata)
+// Module 6060 (metadata)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/FlowerIllocon-2x.png.js");
 

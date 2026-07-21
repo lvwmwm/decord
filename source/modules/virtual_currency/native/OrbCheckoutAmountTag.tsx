@@ -1,18 +1,18 @@
-// Module ID: 11797
-// Function ID: 91560
+// Module ID: 11804
+// Function ID: 91583
 // Name: OrbCheckoutAmountTag
 // Dependencies: []
 // Exports: default
 
-// Module 11797 (OrbCheckoutAmountTag)
+// Module 11804 (OrbCheckoutAmountTag)
 const View = require(dependencyMap[0]).View;
 const _module = require(dependencyMap[1]);
 ({ jsx: closure_3, jsxs: closure_4 } = _module);
 const _module1 = require(dependencyMap[2]);
 let obj = {};
-obj = { -9223372036854775808: true, filter: true, gap: importDefault(dependencyMap[3]).space.PX_4 };
+obj = { gap: importDefault(dependencyMap[3]).space.PX_4 };
 obj.orbAmountTag = obj;
-obj.orbsIcon = { aze: null, azj: null };
+obj.orbsIcon = { bhk: "Array", bic: "isPrivate" };
 let closure_5 = _module1.createStyles(obj);
 const _module2 = require(dependencyMap[7]);
 const result = _module2.fileFinishedImporting("modules/virtual_currency/native/OrbCheckoutAmountTag.tsx");
@@ -21,7 +21,7 @@ export default function OrbCheckoutAmountTag(orbAmount) {
   orbAmount = orbAmount.orbAmount;
   const tmp = callback2();
   let obj = { style: tmp.orbAmountTag };
-  obj = { flexDirection: "<string:2472625498>", alignItems: "ayl", style: tmp.orbsIcon };
+  obj = { flex: "<string:2417182093>", flexGrow: "NEWSROOM", style: tmp.orbsIcon };
   const items = [callback(require(dependencyMap[4]).OrbsIcon, obj), ];
   obj = { variant: "text-md/semibold" };
   if (null == orbAmount) {

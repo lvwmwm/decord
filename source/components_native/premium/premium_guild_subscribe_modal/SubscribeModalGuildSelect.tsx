@@ -1,10 +1,10 @@
-// Module ID: 5238
-// Function ID: 44214
+// Module ID: 5240
+// Function ID: 44255
 // Name: SubscribeModalGuildSelect
 // Dependencies: []
 // Exports: default
 
-// Module 5238 (SubscribeModalGuildSelect)
+// Module 5240 (SubscribeModalGuildSelect)
 let closure_4 = importDefault(dependencyMap[0]);
 let closure_5 = importAll(dependencyMap[1]);
 const ScrollView = arg1(dependencyMap[2]).ScrollView;
@@ -14,7 +14,7 @@ let closure_9 = arg1(dependencyMap[5]).PremiumGuildSubscribeModalScenes;
 ({ jsx: closure_10, jsxs: closure_11 } = arg1(dependencyMap[6]));
 let obj = arg1(dependencyMap[7]);
 obj = {};
-obj = { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_BASE_LOW };
+obj = { "Bool(false)": "default", "Bool(false)": "done", "Bool(false)": "go", backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_BASE_LOW };
 obj.safeArea = obj;
 obj.guildList = { padding: 16 };
 obj.guildOption = {};

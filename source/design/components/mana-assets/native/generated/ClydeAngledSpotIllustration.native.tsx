@@ -1,10 +1,10 @@
-// Module ID: 5941
-// Function ID: 49785
+// Module ID: 5943
+// Function ID: 49828
 // Name: ClydeAngledSpotIllustration
 // Dependencies: []
 // Exports: ClydeAngledSpotIllustration
 
-// Module 5941 (ClydeAngledSpotIllustration)
+// Module 5943 (ClydeAngledSpotIllustration)
 const jsx = require(dependencyMap[0]).jsx;
 const _module = require(dependencyMap[3]);
 const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/ClydeAngledSpotIllustration.native.tsx");

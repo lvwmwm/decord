@@ -1,9 +1,16 @@
 // Module ID: 363
 // Function ID: 5380
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [57, 6, 7, 15, 17, 102, 18, 99, 100, 147]
 
 // Module 363 (_isNativeReflectConstruct)
+import _slicedToArray from "_slicedToArray";
+import _classCallCheck from "_classCallCheck";
+import _defineProperties from "_defineProperties";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _get from "_get";
+
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -19,7 +26,7 @@ function _superPropGet(arg0, arg1, arg2, arg3) {
   if (1) {
     prototype = arg0.prototype;
   }
-  const tmpResult = closure_6(closure_5(prototype), arg1, arg2);
+  const tmpResult = _getPrototypeOf(_possibleConstructorReturn(prototype), arg1, arg2);
   const dependencyMap = tmpResult;
   let fn = tmpResult;
   if (2) {
@@ -30,27 +37,21 @@ function _superPropGet(arg0, arg1, arg2, arg3) {
   }
   return fn;
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-let closure_5 = importDefault(dependencyMap[3]);
-let closure_6 = importDefault(dependencyMap[4]);
-let closure_7 = importDefault(dependencyMap[5]);
 
 export default (arg0) => {
   class AnimatedDivision {
     constructor(arg0, arg1, arg2) {
       self = this;
-      tmp = closure_2(this, AnimatedDivision);
+      tmp = _slicedToArray(this, AnimatedDivision);
       items = [];
       items[0] = arg2;
-      obj = closure_5(AnimatedDivision);
-      tmp2 = closure_4;
+      obj = _possibleConstructorReturn(AnimatedDivision);
+      tmp2 = _defineProperties;
       if (closure_8()) {
         tmp4 = globalThis;
         _Reflect = Reflect;
-        tmp5 = closure_5;
-        constructResult = Reflect.construct(obj, items, closure_5(self).constructor);
+        tmp5 = _possibleConstructorReturn;
+        constructResult = Reflect.construct(obj, items, _possibleConstructorReturn(self).constructor);
       } else {
         constructResult = obj.apply(self, items);
       }
@@ -180,4 +181,4 @@ export default (arg0) => {
     }
   };
   return callback(AnimatedDivision, items);
-}(importDefault(dependencyMap[9]));
+}(require("flattenStyle"));

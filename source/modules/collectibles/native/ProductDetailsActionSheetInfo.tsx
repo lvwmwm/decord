@@ -1,19 +1,17 @@
-// Module ID: 8750
-// Function ID: 69203
+// Module ID: 8754
+// Function ID: 69215
 // Name: ProductNameAndDescription
-// Dependencies: [305070080, 79429632, 571539456, 355139584, 443940864, 270270464, 131072, 964362240, 520093696, 3271557120, 3791650830, 553648129, 0]
+// Dependencies: []
 // Exports: default
 
-// Module 8750 (ProductNameAndDescription)
-import result from "result";
-
+// Module 8754 (ProductNameAndDescription)
 function ProductNameAndDescription(product) {
   product = product.product;
   const tmp = callback3();
   let obj = require(dependencyMap[4]);
   obj = { style: tmp.description };
   const productDescription = obj.useProductDescription(product);
-  obj = { style: tmp.title, children: product.name };
+  obj = { y: 1548812289, isArray: 186630151, split: -1224736477, ix: 2013266539, style: tmp.title, children: product.name };
   const items = [callback(require(dependencyMap[5]).Text, obj), callback(require(dependencyMap[5]).Text, { children: productDescription })];
   obj.children = items;
   return callback2(View, obj);
@@ -75,9 +73,10 @@ let obj = { title: { marginBottom: 2 } };
 obj = { marginTop: importDefault(dependencyMap[3]).space.PX_24, marginHorizontal: importDefault(dependencyMap[3]).space.PX_16, flexDirection: "column", gap: 20 };
 obj.body = obj;
 obj.bundleBody = { marginTop: 0 };
-obj.description = { 0: 0, 9223372036854775807: null };
+obj.description = {};
 let closure_6 = _module1.createStyles(obj);
-result = result.fileFinishedImporting("modules/collectibles/native/ProductDetailsActionSheetInfo.tsx");
+const _module2 = require(dependencyMap[12]);
+const result = _module2.fileFinishedImporting("modules/collectibles/native/ProductDetailsActionSheetInfo.tsx");
 
 export default function ProductDetailsActionSheetInfo(arg0) {
   let onTrackPress;

@@ -1,10 +1,10 @@
-// Module ID: 4520
-// Function ID: 39693
+// Module ID: 4524
+// Function ID: 39741
 // Name: SCREEN_READER_ENABLED_GETTER
 // Dependencies: []
 // Exports: addScreenReaderEnabledListener, getIsScreenReaderEnabled, useIsScreenReaderEnabled
 
-// Module 4520 (SCREEN_READER_ENABLED_GETTER)
+// Module 4524 (SCREEN_READER_ENABLED_GETTER)
 const AccessibilityInfo = require(dependencyMap[0]).AccessibilityInfo;
 function SCREEN_READER_ENABLED_GETTER(screenReaderEnabled) {
   return screenReaderEnabled.screenReaderEnabled;

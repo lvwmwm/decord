@@ -1,10 +1,10 @@
-// Module ID: 15327
-// Function ID: 116724
+// Module ID: 15334
+// Function ID: 116748
 // Name: SuggestedFriendsScreen
 // Dependencies: []
 // Exports: default
 
-// Module 15327 (SuggestedFriendsScreen)
+// Module 15334 (SuggestedFriendsScreen)
 let closure_3 = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 ({ AnalyticEvents: closure_5, AnalyticsSections: closure_6 } = arg1(dependencyMap[2]));

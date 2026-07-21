@@ -1,10 +1,10 @@
-// Module ID: 12327
-// Function ID: 94389
+// Module ID: 12334
+// Function ID: 94412
 // Name: FEATURES_PREMIUM_GUILD_USER
 // Dependencies: []
 // Exports: default
 
-// Module 12327 (FEATURES_PREMIUM_GUILD_USER)
+// Module 12334 (FEATURES_PREMIUM_GUILD_USER)
 importAll(dependencyMap[0]);
 const tmp3 = arg1(dependencyMap[1]);
 ({ View: closure_3, Image: closure_4 } = tmp3);
@@ -12,7 +12,7 @@ let closure_5 = importDefault(dependencyMap[2]);
 const FractionalPremiumStates = arg1(dependencyMap[3]).FractionalPremiumStates;
 ({ jsx: closure_7, jsxs: closure_8 } = arg1(dependencyMap[4]));
 let obj = arg1(dependencyMap[5]);
-obj = { root: { color: 826347876, backgroundColor: 1912603216 }, title: { marginTop: 16 }, features: { marginTop: 16 }, cardText: {}, guildList: { marginTop: 16 }, logoPremiumGuild: { "Null": 50, "Null": null, "Null": 1, 0: "text-md/semibold", -9223372036854775808: "interactive-text-active" }, imgPremiumGuild: { aze: "/assets/design/components/Illustration/native/redesign/generated/images", azj: 177 }, imgNoGuilds: {}, header: { alignItems: "center" } };
+obj = { root: { width: "SERVER_GUIDE_CHANNEL_SELECTED", marginHorizontal: "canLaunchActivity" }, title: { marginTop: 16 }, features: { marginTop: 16 }, cardText: {}, guildList: { marginTop: 16 }, logoPremiumGuild: { ml: 50, mn: null, mr: 1, ms: "text-md/semibold", mt: "interactive-text-active" }, imgPremiumGuild: { bhk: "/assets/design/components/Illustration/native/redesign/generated/images", bic: 177 }, imgNoGuilds: {}, header: { alignItems: "center" } };
 obj = { borderTopWidth: 2 * tmp3.StyleSheet.hairlineWidth, borderTopColor: importDefault(dependencyMap[6]).colors.BORDER_SUBTLE };
 obj.upsell = obj;
 obj.subscriptionUpsell = { marginTop: 32 };

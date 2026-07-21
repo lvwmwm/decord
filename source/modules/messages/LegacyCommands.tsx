@@ -1,10 +1,10 @@
-// Module ID: 11103
-// Function ID: 86430
+// Module ID: 11109
+// Function ID: 86453
 // Name: executeCommand
 // Dependencies: []
 // Exports: handleLegacyCommands
 
-// Module 11103 (executeCommand)
+// Module 11109 (executeCommand)
 function executeCommand(command, action) {
   let obj = importDefault(dependencyMap[10]);
   obj = { command };

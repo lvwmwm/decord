@@ -4,8 +4,7 @@
 // Dependencies: []
 
 // Module 3985 (MobileHomeDrawerExperiment)
-const obj = { -1269606814: "Stable", -1845285747: "staging", defaultConfig: { gutter: true, UploadPlatform: false, SERVER_SETTINGS: false }, variations: { [1]: { gutter: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004617474913948805, UploadPlatform: -0.00010584370472026379, SERVER_SETTINGS: 2179489352393596700000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 }, [2]: {} } };
-const tmp2 = importDefault(dependencyMap[0])(obj);
+const tmp2 = importDefault(dependencyMap[0])({ defaultConfig: { "Bool(true)": true, "Bool(true)": false, "Bool(true)": false }, variations: { [1]: { "Bool(true)": "o", "Bool(true)": "code", "Bool(true)": "o" }, [2]: { "Bool(true)": true, "Bool(true)": true, "Bool(true)": true } } });
 const result = arg1(dependencyMap[1]).fileFinishedImporting("modules/home_drawer/native/HomeDrawerExperiment.tsx");
 
 export const MobileHomeDrawerExperiment = tmp2;

@@ -1,10 +1,10 @@
-// Module ID: 8004
-// Function ID: 63569
+// Module ID: 8008
+// Function ID: 63581
 // Name: UserSquareIcon
 // Dependencies: []
 // Exports: UserSquareIcon
 
-// Module 8004 (UserSquareIcon)
+// Module 8008 (UserSquareIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/UserSquareIcon.tsx");

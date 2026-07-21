@@ -1,9 +1,9 @@
-// Module ID: 10557
-// Function ID: 82453
+// Module ID: 10563
+// Function ID: 82476
 // Name: resetIOSScrollZoom
 // Dependencies: []
 
-// Module 10557 (resetIOSScrollZoom)
+// Module 10563 (resetIOSScrollZoom)
 function resetIOSScrollZoom(scrollResponderZoomTo, width, height) {
   if (!tmp) {
     const obj = { width, height };
@@ -17,7 +17,7 @@ const importAllResult = importAll(dependencyMap[1]);
 const tmp2 = arg1(dependencyMap[2]);
 ({ jsx: closure_8, jsxs: closure_9 } = arg1(dependencyMap[3]));
 const tmp3 = arg1(dependencyMap[3]);
-let closure_10 = arg1(dependencyMap[4]).createStyles({ spinner: { <string:1140607356>: "boolean", <string:1751293292>: "string" }, center: {}, zoomLayoutAndroid: { flex: 1 } });
+let closure_10 = arg1(dependencyMap[4]).createStyles({ spinner: { <string:1632221346>: "boolean", <string:2722977214>: "string" }, center: {}, zoomLayoutAndroid: { flex: 1 } });
 const obj = { COVER: 0, [0]: "COVER", CONTAIN: 1, [1]: "CONTAIN", AUTO: 2, [2]: "AUTO" };
 const obj2 = arg1(dependencyMap[4]);
 const memoResult = importAllResult.memo((gestureEnabled) => {
@@ -83,7 +83,7 @@ const memoResult = importAllResult.memo((gestureEnabled) => {
   obj = ref;
   const ref1 = React.useRef(null);
   resetIOSScrollZoom = ref1;
-  closure_13 = React.useRef({ aze: false, azj: true });
+  closure_13 = React.useRef({ bhk: -536870861, bic: -299892737 });
   const items = [tmp10, tmp13];
   callback = React.useCallback((nativeEvent) => {
     let height;

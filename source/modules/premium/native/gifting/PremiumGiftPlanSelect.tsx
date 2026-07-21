@@ -1,10 +1,10 @@
-// Module ID: 9668
-// Function ID: 75270
+// Module ID: 9673
+// Function ID: 75287
 // Name: items
 // Dependencies: []
 // Exports: default
 
-// Module 9668 (items)
+// Module 9673 (items)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 ({ ActivityIndicator: closure_5, Pressable: closure_6, View: closure_7, ScrollView: closure_8 } = arg1(dependencyMap[2]));
@@ -384,7 +384,7 @@ export default function PremiumGiftPlanSelect(shouldUseDMWishlistGiftingDesign) 
     navigation = result;
     if (isScreenReaderEnabled) {
       navigation = first1;
-      obj10 = { noCommandsTextContainer: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000021043611947808288, processAndReturnTallestItemInRow: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000053357352779429986, contentContainerStyle: { skuId: "<string:16777479>", c: "<string:36295491>" } };
+      obj10 = { <string:3603769293>: true, <string:3453288331>: true, contentContainerStyle: {} };
       navigation = items;
       obj10.children = items.map((item, index) => callback2(str, { forScreenReader: true })({ item, index }));
       navigation = navigation(first1, obj10);
@@ -514,10 +514,10 @@ export default function PremiumGiftPlanSelect(shouldUseDMWishlistGiftingDesign) 
       }
       if (isScreenReaderEnabled) {
         const obj29 = {
-          noCommandsTextContainer: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000021043611947808288,
-          processAndReturnTallestItemInRow: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000053357352779429986,
+          <string:3603769293>: true,
+          <string:3453288331>: true,
           style: tmp9.carousel,
-          contentContainerStyle: { skuId: "<string:16777479>", c: "<string:36295491>" },
+          contentContainerStyle: {},
           children: items.map((item, index) => {
                   const str = "default";
                   return callback2(str, { forScreenReader: true })({ item, index });
@@ -552,7 +552,7 @@ export default function PremiumGiftPlanSelect(shouldUseDMWishlistGiftingDesign) 
         }
         obj31.customAnimation = tmp91;
         obj31.mode = "parallax";
-        obj31.modeConfig = { "Bool(false)": false, "Bool(false)": false };
+        obj31.modeConfig = { _forceFlush: "absolute", parentFreezeValue: -4 };
         obj31.onSnapToItem = tmp12;
         const items20 = [result(importDefault(dependencyMap[30]), obj31), ];
         const obj32 = { numberOfItems: items.length, currentIndex: first };

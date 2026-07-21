@@ -1,10 +1,10 @@
-// Module ID: 15166
-// Function ID: 114406
+// Module ID: 15173
+// Function ID: 114430
 // Name: MembersFilterActionSheet
 // Dependencies: []
 // Exports: default
 
-// Module 15166 (MembersFilterActionSheet)
+// Module 15173 (MembersFilterActionSheet)
 let closure_3 = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 let closure_5 = importDefault(dependencyMap[2]);
@@ -13,7 +13,7 @@ let closure_7 = importDefault(dependencyMap[4]);
 ({ jsx: closure_8, jsxs: closure_9 } = arg1(dependencyMap[5]));
 let obj = arg1(dependencyMap[6]);
 obj = {};
-obj = { GameDiversityTier6SmallBadge: 1598099812, cwd: 1912603000, renderToHardwareTextureAndroid: 24, borderRadius: importDefault(dependencyMap[7]).radii.lg };
+obj = { remoteVideoSsrcs: "SERVER_GUIDE_CHANNEL_SELECTED", isPurchased: "PREMIUM_GUILD_PROMOTION_OPENED", isPartiallyOwnedBundle: "Array", borderRadius: importDefault(dependencyMap[7]).radii.lg };
 obj.listView = obj;
 obj.roleDot = { marginEnd: 4 };
 obj.labelContainer = { flexDirection: "row" };

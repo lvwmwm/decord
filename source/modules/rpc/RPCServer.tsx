@@ -1,9 +1,9 @@
-// Module ID: 13319
-// Function ID: 101212
+// Module ID: 13326
+// Function ID: 101235
 // Name: RPCServer
 // Dependencies: []
 
-// Module 13319 (RPCServer)
+// Module 13326 (RPCServer)
 let closure_2 = importDefault(dependencyMap[0]);
 let closure_3 = importDefault(dependencyMap[1]);
 let closure_4 = importDefault(dependencyMap[2]);

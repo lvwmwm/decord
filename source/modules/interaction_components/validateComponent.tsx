@@ -1,10 +1,10 @@
-// Module ID: 7786
-// Function ID: 62175
+// Module ID: 7790
+// Function ID: 62187
 // Name: validateSelect
 // Dependencies: []
 // Exports: default
 
-// Module 7786 (validateSelect)
+// Module 7790 (validateSelect)
 function validateSelect(type, type2, modal) {
   let length;
   let maxValues;

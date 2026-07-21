@@ -1,9 +1,9 @@
-// Module ID: 10499
-// Function ID: 82006
+// Module ID: 10505
+// Function ID: 82029
 // Name: EmbeddedActivityClientError
 // Dependencies: []
 
-// Module 10499 (EmbeddedActivityClientError)
+// Module 10505 (EmbeddedActivityClientError)
 let closure_0 = importDefault(dependencyMap[1]);
 class EmbeddedActivityClientError {
   constructor(arg0, arg1) {

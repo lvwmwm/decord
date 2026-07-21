@@ -1,10 +1,10 @@
-// Module ID: 8660
-// Function ID: 68539
+// Module ID: 8664
+// Function ID: 68551
 // Name: resolveSize
 // Dependencies: []
 // Exports: default
 
-// Module 8660 (resolveSize)
+// Module 8664 (resolveSize)
 function resolveSize(DEFAULT_ITEM_SIZE) {
   let tmp = DEFAULT_ITEM_SIZE;
   if ("number" === typeof DEFAULT_ITEM_SIZE) {
@@ -23,7 +23,7 @@ class CollectiblesPreview {
       size = arg1(dependencyMap[6]).DEFAULT_ITEM_SIZE;
     }
     size2 = resolveSize(size);
-    tmp3 = f68546(size2.width, size2.height);
+    tmp3 = f68558(size2.width, size2.height);
     if ("bundle" === collectiblesItemData.type) {
       tmp35 = arg1;
       tmp36 = dependencyMap;
@@ -59,8 +59,8 @@ class CollectiblesPreview {
         obj2.previewAssets = collectiblesItemData.previewAssets;
         flag2 = true;
         obj2.disableStaticBackground = true;
-        tmp50 = f68546;
-        obj2.targetSize = f68546;
+        tmp50 = f68558;
+        obj2.targetSize = f68558;
         obj1.children = jsx(importDefault(dependencyMap[10]), obj2);
         obj.children = jsx(View, obj1);
         return jsx(View, obj);
@@ -202,7 +202,7 @@ class SocialLayerStorefrontSKUPreview {
       DEFAULT_ITEM_SIZE = arg1(dependencyMap[6]).DEFAULT_ITEM_SIZE;
     }
     size = resolveSize(DEFAULT_ITEM_SIZE);
-    tmp3 = f68546(size.width, size.height);
+    tmp3 = f68558(size.width, size.height);
     obj = arg1(dependencyMap[16]);
     tmp4 = null;
     if (obj.useIsEligibleForSocialLayerStorefrontMobilePurchasing({ location: "sku_preview" })) {
@@ -228,7 +228,7 @@ class PremiumSKUPreview {
       DEFAULT_ITEM_SIZE = arg1(dependencyMap[6]).DEFAULT_ITEM_SIZE;
     }
     size = resolveSize(DEFAULT_ITEM_SIZE);
-    tmp3 = f68546(size.width, size.height);
+    tmp3 = f68558(size.width, size.height);
     obj = arg1(dependencyMap[18]);
     obj = { style: tmp3.premiumRiveContainer };
     token = obj.useToken(importDefault(dependencyMap[7]).colors.TEXT_DEFAULT);
@@ -243,7 +243,7 @@ const SKUProductLines = arg1(dependencyMap[3]).SKUProductLines;
 const jsx = arg1(dependencyMap[4]).jsx;
 let obj = arg1(dependencyMap[5]);
 let closure_8 = obj.createStyles((width, height) => {
-  let obj = { container: { "Bool(true)": null, "Bool(true)": null, "Bool(true)": null, "Bool(true)": null, "Bool(true)": null } };
+  let obj = { container: { "Null": "a", "Null": "view_program_changed", "Bool(false)": "a", "Bool(false)": "VP11No", "Bool(false)": "a" } };
   obj = { width: height(dependencyMap[6]).DEFAULT_ITEM_SIZE, height: height(dependencyMap[6]).DEFAULT_ITEM_SIZE, justifyContent: "center", alignItems: "center" };
   obj = { scaleX: width / height(dependencyMap[6]).DEFAULT_ITEM_SIZE };
   const items = [obj, { scaleY: height / height(dependencyMap[6]).DEFAULT_ITEM_SIZE }];

@@ -1,10 +1,10 @@
-// Module ID: 7487
-// Function ID: 60064
+// Module ID: 7491
+// Function ID: 60076
 // Name: FormCheckbox
 // Dependencies: []
 // Exports: FormCheckbox
 
-// Module 7487 (FormCheckbox)
+// Module 7491 (FormCheckbox)
 let closure_3 = importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 let obj = arg1(dependencyMap[2]);

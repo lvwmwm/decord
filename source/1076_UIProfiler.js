@@ -1,13 +1,12 @@
 // Module ID: 1076
 // Function ID: 12355
 // Name: UIProfiler
-// Dependencies: [1099, 794, 1096, 65, 977, 65]
+// Dependencies: []
 
 // Module 1076 (UIProfiler)
-import module_1099 from "module_1099";
-import registerSpanErrorInstrumentation from "registerSpanErrorInstrumentation";
-import DEFAULT_BUNDLE_NAME from "DEFAULT_BUNDLE_NAME";
-
+let closure_2 = require(dependencyMap[0]);
+let closure_3 = require(dependencyMap[1]);
+let closure_4 = require(dependencyMap[2]);
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 
 export const UIProfiler = () => {
@@ -340,7 +339,7 @@ export const UIProfiler = () => {
     }
   };
   const obj11 = { key: "_collectCurrentChunk" };
-  let closure_0 = module_1099(async function() {
+  let closure_0 = callback(async function() {
     const self = this;
     const _profiler = self._profiler;
     self._profiler = undefined;
@@ -410,5 +409,5 @@ export const UIProfiler = () => {
       });
     }
   };
-  return DEFAULT_BUNDLE_NAME(UIProfiler, items);
+  return callback2(UIProfiler, items);
 }();

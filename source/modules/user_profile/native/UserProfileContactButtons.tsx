@@ -1,16 +1,16 @@
-// Module ID: 12026
-// Function ID: 92946
+// Module ID: 12033
+// Function ID: 92969
 // Name: FlatFriendButton
 // Dependencies: []
 // Exports: default
 
-// Module 12026 (FlatFriendButton)
+// Module 12033 (FlatFriendButton)
 function FlatFriendButton(label) {
   let hasCustomProfileTheme;
   let icon;
   let isPending;
   label = label.label;
-  let obj = { y: "r", x: "onRequireModeratorMFAClick", animated: "Array", ref: "isSpamMessageRequest" };
+  let obj = { y: null, x: 4, animated: 4, ref: "rgba(0, 0, 0, 0.75)" };
   ({ icon, hasCustomProfileTheme, isPending } = label);
   Object.setPrototypeOf(null);
   const merged = Object.assign(label, obj);
@@ -128,7 +128,7 @@ const RelationshipTypes = arg1(dependencyMap[3]).RelationshipTypes;
 ({ jsx: closure_6, jsxs: closure_7 } = arg1(dependencyMap[4]));
 let obj = arg1(dependencyMap[5]);
 obj = {};
-obj = { -9223372036854775808: true, filter: true, gap: importDefault(dependencyMap[6]).space.PX_12 };
+obj = { gap: importDefault(dependencyMap[6]).space.PX_12 };
 obj.threeButtonLayout = obj;
 obj.flexGrow = { flex: 1 };
 const tmp3 = arg1(dependencyMap[4]);

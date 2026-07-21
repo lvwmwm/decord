@@ -1,10 +1,10 @@
-// Module ID: 12436
-// Function ID: 94911
+// Module ID: 12443
+// Function ID: 94934
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 // Exports: setAccountSwitchUserId
 
-// Module 12436 (_isNativeReflectConstruct)
+// Module 12443 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -93,7 +93,7 @@ const tmp7 = (arg0) => {
       tmp2Result.altGateway = tmp9;
       tmp2Result.failedConnectAttempts = 0;
       tmp2Result.receivedHelloThisAttempt = false;
-      tmp2Result.heartbeatQOSState = { <string:3226096388>: false, <string:2798317083>: false };
+      tmp2Result.heartbeatQOSState = { id: "o", x: "o" };
       tmp2Result.send = (op, d) => {
         if (obj.isLoggingGatewayEvents) {
           closure_14.verboseDangerously("~>", op, tmp2Result(closure_3[15]).Opcode[op], d);

@@ -1,10 +1,10 @@
-// Module ID: 13879
-// Function ID: 104991
+// Module ID: 13886
+// Function ID: 105014
 // Name: UndoIcon
 // Dependencies: []
 // Exports: UndoIcon
 
-// Module 13879 (UndoIcon)
+// Module 13886 (UndoIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/UndoIcon.tsx");

@@ -1,9 +1,9 @@
-// Module ID: 6620
-// Function ID: 50804
+// Module ID: 6626
+// Function ID: 50853
 // Name: metadata
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 6620 (metadata)
+// Module 6626 (metadata)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/WumpusCouchSpotIllustration-2x.png.js");
 

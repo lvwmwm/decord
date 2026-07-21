@@ -1,9 +1,9 @@
-// Module ID: 4161
-// Function ID: 35284
+// Module ID: 4165
+// Function ID: 35332
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
-// Module 4161 (_isNativeReflectConstruct)
+// Module 4165 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -303,7 +303,7 @@ const tmp4 = (importDefaultResult) => {
         obj.exclusive = id.exclusive || false;
         let locales = id.locales;
         if (null == locales) {
-          locales = [13];
+          locales = ["remoteSinkWantsMaxFramerate"];
         }
         obj.locales = locales;
         ({ flags: obj.flags, external_purchase_url: obj.externalPurchaseUrl, deleted } = id);

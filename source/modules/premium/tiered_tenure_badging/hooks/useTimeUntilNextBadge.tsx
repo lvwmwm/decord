@@ -1,10 +1,10 @@
-// Module ID: 12238
-// Function ID: 93890
+// Module ID: 12245
+// Function ID: 93913
 // Name: computeDaysUntilNextBadgeDate
 // Dependencies: []
 // Exports: useTimeUntilNextBadge
 
-// Module 12238 (computeDaysUntilNextBadgeDate)
+// Module 12245 (computeDaysUntilNextBadgeDate)
 function computeDaysUntilNextBadgeDate(arg0, arg1) {
   return Math.max(0, computeNextBadgeDate(arg0, arg1).diff(importDefault(dependencyMap[1])(), "days"));
 }

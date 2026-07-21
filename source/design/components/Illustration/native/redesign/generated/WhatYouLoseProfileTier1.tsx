@@ -1,10 +1,10 @@
-// Module ID: 7392
-// Function ID: 59473
+// Module ID: 7396
+// Function ID: 59484
 // Name: getWhatYouLoseProfileTier1Source
 // Dependencies: []
 // Exports: WhatYouLoseProfileTier1
 
-// Module 7392 (getWhatYouLoseProfileTier1Source)
+// Module 7396 (getWhatYouLoseProfileTier1Source)
 function getWhatYouLoseProfileTier1Source(theme) {
   let obj = arg1(dependencyMap[3]);
   obj = {

@@ -1,10 +1,10 @@
-// Module ID: 11827
-// Function ID: 91689
+// Module ID: 11834
+// Function ID: 91712
 // Name: useTrackProductCardImpression
 // Dependencies: []
 // Exports: useTrackProductCardImpression
 
-// Module 11827 (useTrackProductCardImpression)
+// Module 11834 (useTrackProductCardImpression)
 let closure_3 = importAll(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 const AnalyticEvents = arg1(dependencyMap[2]).AnalyticEvents;

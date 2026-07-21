@@ -1,10 +1,10 @@
-// Module ID: 15361
-// Function ID: 117038
+// Module ID: 15368
+// Function ID: 117062
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 // Exports: default
 
-// Module 15361 (_isNativeReflectConstruct)
+// Module 15368 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -86,7 +86,7 @@ obj2.slider = { marginHorizontal: 15 };
 obj4 = { paddingHorizontal: importDefault(dependencyMap[28]).modules.mobile.TABLE_ROW_PADDING };
 obj2.stackPadding = obj4;
 obj2.alertText = { marginTop: 16 };
-obj2.tagsWrapper = { "Bool(false)": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000017301927510316394, "Bool(false)": 0.0005189595509662581, "Bool(false)": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000017301927510316394 };
+obj2.tagsWrapper = { Symbol: 285213929, justifyContent: 815361, Icon: -1974403072 };
 const obj3 = { flex: 1, backgroundColor: importDefault(dependencyMap[28]).colors.MOBILE_ACTIONSHEET_BACKGROUND, paddingTop: importDefault(dependencyMap[28]).space.PX_16 };
 obj2.addTagIconButtonWrapper = { justifyContent: "center", margin: importDefault(dependencyMap[28]).space.PX_4 };
 const obj5 = { justifyContent: "center", margin: importDefault(dependencyMap[28]).space.PX_4 };
@@ -580,8 +580,8 @@ const tmp7 = (PureComponent) => {
       }
       obj = { helperText: stringResult, hasIcons: false };
       obj = { border: "none" };
-      const obj1 = { style: { 0: false, 0: false, 9223372036854775807: false, 9223372036854775807: false } };
-      const obj2 = { INTEGRATION_CREATE: 131072.00119209292, ConstraintReasonCode: -293983030121430100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, style: { flexShrink: 1 } };
+      const obj1 = { style: { 9223372036854775807: null, 9223372036854775807: true, 9223372036854775807: "/assets/.cache/intl/bW9kdWxlcy9ndWlsZF9zZXR0aW5ncy9zZXJ2ZXJfbW9uZXRpemF0aW9uL3RhZ3Mvd2Vi", 2018801746: null } };
+      const obj2 = { style: { flexShrink: 1 } };
       const intl4 = ChannelSettingsOverview(closure_2[36]).intl;
       obj2.children = intl4.string(ChannelSettingsOverview(closure_2[36]).t.piZgKF);
       const items1 = [callback6(ChannelSettingsOverview(closure_2[45]).Text, obj2), callback6(ChannelSettingsOverview(closure_2[45]).Text, { children: secondsSliderLabel })];
@@ -831,8 +831,8 @@ const tmp7 = (PureComponent) => {
           obj.description = intl.format(ChannelSettingsOverview(closure_2[36]).t.SbQJk5, obj);
           obj.hasIcons = false;
           const obj1 = {};
-          const obj2 = { style: { 0: false, 0: false, 9223372036854775807: false, 9223372036854775807: false } };
-          const obj3 = { INTEGRATION_CREATE: 131072.00119209292, ConstraintReasonCode: -293983030121430100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 };
+          const obj2 = { style: { 9223372036854775807: null, 9223372036854775807: true, 9223372036854775807: "/assets/.cache/intl/bW9kdWxlcy9ndWlsZF9zZXR0aW5ncy9zZXJ2ZXJfbW9uZXRpemF0aW9uL3RhZ3Mvd2Vi", 2018801746: null } };
+          const obj3 = {};
           const obj4 = { flexShrink: 1 };
           obj3.style = obj4;
           const intl2 = ChannelSettingsOverview(closure_2[36]).intl;
@@ -931,8 +931,8 @@ const tmp7 = (PureComponent) => {
           obj.description = formatResult;
           obj.hasIcons = false;
           obj = {};
-          const obj1 = { style: { 0: false, 0: false, 9223372036854775807: false, 9223372036854775807: false } };
-          const obj2 = { INTEGRATION_CREATE: 131072.00119209292, ConstraintReasonCode: -293983030121430100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 };
+          const obj1 = { style: { 9223372036854775807: null, 9223372036854775807: true, 9223372036854775807: "/assets/.cache/intl/bW9kdWxlcy9ndWlsZF9zZXR0aW5ncy9zZXJ2ZXJfbW9uZXRpemF0aW9uL3RhZ3Mvd2Vi", 2018801746: null } };
+          const obj2 = {};
           const obj3 = { flexShrink: 1 };
           obj2.style = obj3;
           const intl4 = ChannelSettingsOverview(closure_2[36]).intl;
@@ -1485,7 +1485,7 @@ const tmp7 = (PureComponent) => {
             style: tmp.createTagButton,
             accessibilityRole: "button"
           };
-          const obj6 = { INTEGRATION_CREATE: "png", ConstraintReasonCode: "absolute", style: tmp.createTagButtonText };
+          const obj6 = { style: tmp.createTagButtonText };
           const intl4 = ChannelSettingsOverview(closure_2[36]).intl;
           obj6.children = intl4.string(ChannelSettingsOverview(closure_2[36]).t.F4is7L);
           obj5.children = callback6(ChannelSettingsOverview(closure_2[45]).Text, obj6);
@@ -1494,7 +1494,7 @@ const tmp7 = (PureComponent) => {
         items1[1] = tmp27;
         let tmp32 = null != error && error.length > 0;
         if (tmp32) {
-          const obj7 = { INTEGRATION_CREATE: null, ConstraintReasonCode: null, children: error };
+          const obj7 = { children: error };
           tmp32 = callback6(ChannelSettingsOverview(closure_2[45]).Text, obj7);
         }
         items1[2] = tmp32;

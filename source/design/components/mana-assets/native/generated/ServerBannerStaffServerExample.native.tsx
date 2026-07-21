@@ -1,10 +1,10 @@
-// Module ID: 6459
-// Function ID: 50562
+// Module ID: 6461
+// Function ID: 50605
 // Name: ServerBannerStaffServerExample
 // Dependencies: []
 // Exports: ServerBannerStaffServerExample
 
-// Module 6459 (ServerBannerStaffServerExample)
+// Module 6461 (ServerBannerStaffServerExample)
 const jsx = require(dependencyMap[0]).jsx;
 const _module = require(dependencyMap[3]);
 const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/ServerBannerStaffServerExample.native.tsx");

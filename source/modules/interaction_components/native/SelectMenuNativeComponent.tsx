@@ -1,10 +1,10 @@
-// Module ID: 14551
-// Function ID: 109687
+// Module ID: 14558
+// Function ID: 109709
 // Name: SelectMenuNativeComponent
 // Dependencies: []
 // Exports: default
 
-// Module 14551 (SelectMenuNativeComponent)
+// Module 14558 (SelectMenuNativeComponent)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[2]).jsx;
 if (obj.isFabric()) {

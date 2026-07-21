@@ -1,10 +1,10 @@
-// Module ID: 10662
-// Function ID: 83142
+// Module ID: 10668
+// Function ID: 83165
 // Name: useIsVoiceChannelFull
 // Dependencies: []
 // Exports: default, useIsVoiceChannelLocked
 
-// Module 10662 (useIsVoiceChannelFull)
+// Module 10668 (useIsVoiceChannelFull)
 let closure_2 = importDefault(dependencyMap[0]);
 let closure_3 = importDefault(dependencyMap[1]);
 let closure_4 = importDefault(dependencyMap[2]);

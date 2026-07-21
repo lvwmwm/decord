@@ -1,17 +1,17 @@
-// Module ID: 14307
-// Function ID: 108089
+// Module ID: 14314
+// Function ID: 108112
 // Name: UserSettingsDesignSystemSegmentedControl
 // Dependencies: []
 // Exports: default
 
-// Module 14307 (UserSettingsDesignSystemSegmentedControl)
+// Module 14314 (UserSettingsDesignSystemSegmentedControl)
 let closure_2 = importDefault(dependencyMap[0]);
 let closure_3 = importAll(dependencyMap[1]);
 ({ View: closure_4, ScrollView: closure_5 } = arg1(dependencyMap[2]));
 const tmp2 = arg1(dependencyMap[2]);
 ({ jsxs: closure_6, jsx: closure_7 } = arg1(dependencyMap[3]));
 let obj = arg1(dependencyMap[4]);
-obj = { container: { base64GIFRegex: true, _debouncedFlush: true, mutedHook: true, fetchNextPage: true } };
+obj = { container: { <string:3535781223>: true, <string:3836080540>: true, <string:1396351075>: true, <string:4122123984>: true } };
 obj = { backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_LOWEST, borderColor: importDefault(dependencyMap[5]).colors.BORDER_STRONG };
 obj.item = obj;
 let closure_8 = obj.createStyles(obj);
@@ -76,11 +76,11 @@ export default function UserSettingsDesignSystemSegmentedControl() {
   };
   const obj1 = { spacing: 24 };
   const items = [callback4(callback(dependencyMap[9]).SegmentedControl, { state: segmentedControlState }), callback4(callback(dependencyMap[10]).SegmentedControlPages, { state: segmentedControlState }), ];
-  const obj2 = { 0: 1, 0: null };
+  const obj2 = { y: 1, isArray: null };
   const obj3 = {
-    numberOfLines: null,
-    expandable: null,
-    seeMoreLabel: null,
+    height: "center",
+    accessibilityRole: "wrap",
+    hasDiversityParent: "/assets/.cache/intl/bW9kdWxlcy9ndWlsZF9zZXR0aW5ncy9zZXJ2ZXJfbW9uZXRpemF0aW9uL3RhZ3Mvd2Vi",
     disabled: first >= 5,
     onPress() {
       const sum = first + 1;

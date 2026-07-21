@@ -1,10 +1,10 @@
-// Module ID: 8402
-// Function ID: 66885
+// Module ID: 8406
+// Function ID: 66897
 // Name: isAdmin
 // Dependencies: []
 // Exports: canCreatePrivateChannel, extractPermissionOverwrites, getExistingMembersRows, getExistingRolesRowWithPermissionDisabled, getExistingRolesRows, getMembersRows, getPrivateChannelHintText, getRemoveTooltipHint, getRolesRows, getRolesRowsWithPermissionDisabled, getRowTypeLabel, grantUserChannelAccess, isEveryoneRoleId, isPrivateGuildChannel, isPrivateTextChannel, toggleChannelEveryonePermission
 
-// Module 8402 (isAdmin)
+// Module 8406 (isAdmin)
 function isAdmin(colorString) {
   return callback(colorString, constants.ADMINISTRATOR);
 }

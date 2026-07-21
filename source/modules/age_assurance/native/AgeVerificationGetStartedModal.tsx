@@ -1,10 +1,10 @@
-// Module ID: 7548
-// Function ID: 60418
+// Module ID: 7552
+// Function ID: 60430
 // Name: getInitialRouteName
 // Dependencies: []
 // Exports: default
 
-// Module 7548 (getInitialRouteName)
+// Module 7552 (getInitialRouteName)
 function getInitialRouteName(isRetry, flag) {
   if (flag) {
     let EXPRESSIVE_INTRO = tmp.EXPRESSIVE_INTRO;

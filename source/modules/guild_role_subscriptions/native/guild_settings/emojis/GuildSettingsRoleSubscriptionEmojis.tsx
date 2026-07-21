@@ -1,10 +1,10 @@
-// Module ID: 16334
-// Function ID: 126046
+// Module ID: 16341
+// Function ID: 126077
 // Name: GuildSettingsRoleSubscriptionEmojisInner
 // Dependencies: []
 // Exports: default
 
-// Module 16334 (GuildSettingsRoleSubscriptionEmojisInner)
+// Module 16341 (GuildSettingsRoleSubscriptionEmojisInner)
 function GuildSettingsRoleSubscriptionEmojisInner(guildId) {
   const arg1 = guildId.guildId;
   let obj = arg1(dependencyMap[8]);

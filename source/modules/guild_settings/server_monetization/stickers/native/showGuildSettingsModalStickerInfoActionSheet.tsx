@@ -1,10 +1,10 @@
-// Module ID: 16133
-// Function ID: 124362
+// Module ID: 16140
+// Function ID: 124393
 // Name: showGuildSettingsModalStickerInfoActionSheet
 // Dependencies: []
 // Exports: showGuildSettingsModalStickerInfoActionSheet
 
-// Module 16133 (showGuildSettingsModalStickerInfoActionSheet)
+// Module 16140 (showGuildSettingsModalStickerInfoActionSheet)
 const _module = require(dependencyMap[3]);
 const result = _module.fileFinishedImporting("modules/guild_settings/server_monetization/stickers/native/showGuildSettingsModalStickerInfoActionSheet.tsx");
 

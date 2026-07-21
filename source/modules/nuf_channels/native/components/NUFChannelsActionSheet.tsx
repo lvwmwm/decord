@@ -1,10 +1,10 @@
-// Module ID: 12569
-// Function ID: 96722
+// Module ID: 12576
+// Function ID: 96745
 // Name: NUFChannelsActionSheet
 // Dependencies: []
 // Exports: default
 
-// Module 12569 (NUFChannelsActionSheet)
+// Module 12576 (NUFChannelsActionSheet)
 let closure_3 = importAll(dependencyMap[0]);
 const ContentDismissActionType = arg1(dependencyMap[1]).ContentDismissActionType;
 const jsx = arg1(dependencyMap[2]).jsx;

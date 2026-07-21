@@ -1,9 +1,9 @@
-// Module ID: 15163
-// Function ID: 114368
+// Module ID: 15170
+// Function ID: 114392
 // Name: SUBMITTED
 // Dependencies: []
 
-// Module 15163 (SUBMITTED)
+// Module 15170 (SUBMITTED)
 const obj = { ALL_MEMBERS: "ALL_MEMBERS" };
 const SUBMITTED = require(dependencyMap[0]).GuildJoinRequestApplicationStatuses.SUBMITTED;
 obj.PENDING = SUBMITTED;

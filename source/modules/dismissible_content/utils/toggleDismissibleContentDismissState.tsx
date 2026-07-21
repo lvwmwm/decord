@@ -1,10 +1,10 @@
-// Module ID: 14454
-// Function ID: 108949
+// Module ID: 14461
+// Function ID: 108972
 // Name: toggleDismissibleContentShared
-// Dependencies: []
+// Dependencies: [872415253, 3791650837, 3103784964, 469762065, 2214592528, 2751463480, 33554488, 4026531840, 311074, 3704064, 3704320, 3704576]
 // Exports: default
 
-// Module 14454 (toggleDismissibleContentShared)
+// Module 14461 (toggleDismissibleContentShared)
 function toggleDismissibleContentShared(dismissibleContent, arg1, guildId) {
   let tmp = null;
   if (!arg1) {

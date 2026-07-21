@@ -1,9 +1,9 @@
-// Module ID: 10352
-// Function ID: 79907
+// Module ID: 10358
+// Function ID: 79930
 // Name: AnnouncementChannelLurkerBar
 // Dependencies: []
 
-// Module 10352 (AnnouncementChannelLurkerBar)
+// Module 10358 (AnnouncementChannelLurkerBar)
 class AnnouncementChannelLurkerBar {
   constructor(arg0) {
     arg1 = global.channel;
@@ -37,7 +37,7 @@ let obj = arg1(dependencyMap[3]);
 obj = {};
 obj = { backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_SURFACE_HIGH };
 obj.wrapper = obj;
-obj.text = { person_pouting: -0.0014069081515246523, cv: -0.0001058445630777106 };
+obj.text = { collapsable: "absolute", preventClipping: 0 };
 let closure_5 = obj.createStyles(obj);
 const tmp3 = arg1(dependencyMap[2]);
 const result = arg1(dependencyMap[9]).fileFinishedImporting("modules/navbars/native/components/AnnouncementChannelLurkerBar.tsx");

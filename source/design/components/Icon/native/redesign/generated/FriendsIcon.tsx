@@ -1,15 +1,13 @@
 // Module ID: 3830
 // Function ID: 31979
 // Name: FriendsIcon
-// Dependencies: [31, 3844, 31, 33, 2, 31]
+// Dependencies: []
 // Exports: FriendsIcon
 
 // Module 3830 (FriendsIcon)
-import "module_31";
-import { jsx } from "createStoreImpl";
-import module_31 from "module_31";
-
-const result = module_31.fileFinishedImporting("design/components/Icon/native/redesign/generated/FriendsIcon.tsx");
+importAll(dependencyMap[0]);
+const jsx = arg1(dependencyMap[1]).jsx;
+const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/FriendsIcon.tsx");
 
 export const FriendsIcon = function FriendsIcon(color) {
   let INTERACTIVE_ICON_DEFAULT = color.color;

@@ -1,10 +1,10 @@
-// Module ID: 9845
-// Function ID: 76230
+// Module ID: 9850
+// Function ID: 76246
 // Name: AvailableForumTag
 // Dependencies: []
 // Exports: default
 
-// Module 9845 (AvailableForumTag)
+// Module 9850 (AvailableForumTag)
 let closure_3 = importAll(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 const EMOJI_URL_BASE_SIZE = arg1(dependencyMap[2]).EMOJI_URL_BASE_SIZE;
@@ -17,8 +17,8 @@ const tmp2 = arg1(dependencyMap[3]);
 obj.pillSelected = { borderColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BRAND, borderWidth: 1 };
 obj.pillDisabled = { opacity: 0.6 };
 obj.emoji = {};
-obj.imageEmoji = { <string:1140607356>: "<string:16777479>", <string:1751293292>: "<string:36295491>" };
-obj.textEmoji = { "Null": null, "Null": null };
+obj.imageEmoji = {};
+obj.textEmoji = { PX_16: "LengthDelimited", ix: "Array" };
 let closure_8 = obj.createStyles(obj);
 const obj1 = { borderColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BRAND, borderWidth: 1 };
 const result = arg1(dependencyMap[12]).fileFinishedImporting("modules/forums/native/AvailableForumTag.tsx");
@@ -96,7 +96,7 @@ export default function AvailableForumTag(tag) {
         const tmp7 = callback2;
       }
       const items = [tmp7Result, ];
-      obj3 = { INTEGRATION_CREATE: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007863204514436, ConstraintReasonCode: 127277221446373050000000000, children: closure_5 };
+      obj3 = { children: closure_5 };
       items[1] = callback2(tag(disabled[11]).Text, obj3);
       obj["children"] = items;
       return closure_7(tag(disabled[8]).PressableScale, obj);

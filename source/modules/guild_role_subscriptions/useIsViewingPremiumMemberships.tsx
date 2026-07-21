@@ -1,10 +1,10 @@
-// Module ID: 11789
-// Function ID: 91529
+// Module ID: 11796
+// Function ID: 91552
 // Name: useIsViewingPremiumMemberships
 // Dependencies: []
 // Exports: default
 
-// Module 11789 (useIsViewingPremiumMemberships)
+// Module 11796 (useIsViewingPremiumMemberships)
 const Routes = require(dependencyMap[0]).Routes;
 const StaticChannelRoute = require(dependencyMap[1]).StaticChannelRoute;
 const _module = require(dependencyMap[4]);

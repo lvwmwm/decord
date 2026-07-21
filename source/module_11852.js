@@ -1,0 +1,9 @@
+// Module ID: 11852
+// Function ID: 91795
+// Dependencies: []
+
+// Module 11852
+const _module = require(dependencyMap[0]);
+const obj = { isConnected: null, isInternetReachable: null, details: null, reachabilityUrl: null, reachabilityMethod: null, reachabilityHeaders: null, reachabilityTest: null, reachabilityShortTimeout: null, scales: [] };
+
+export default _module.registerAsset(obj);

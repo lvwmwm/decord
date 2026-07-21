@@ -13,7 +13,7 @@ const fn = function t(moment) {
     weekdaysMin: "s\u00F6_m\u00E5_ti_on_to_fr_l\u00F6".split("_"),
     longDateFormat: {},
     calendar: {},
-    relativeTime: { "Bool(false)": "absolute", "Bool(false)": 28, "Bool(false)": 28, "Bool(false)": 2, "Bool(false)": null, "Bool(false)": 2, "Bool(false)": 14, "Bool(false)": null, "Bool(false)": "center", "Bool(false)": "center", "Bool(false)": "<string:3674211080>", "Bool(false)": "<string:2063598324>", "Bool(false)": "<string:1174405755>", "Bool(false)": "<string:1207960328>" },
+    relativeTime: {},
     dayOfMonthOrdinalParse: /\d{1,2}(e|a)/,
     ordinal(arg0) {
       const result = arg0 % 10;
@@ -27,7 +27,7 @@ const fn = function t(moment) {
       }
       return arg0 + str2;
     },
-    week: { "Bool(true)": false, "Bool(true)": false }
+    week: { <string:1431496722>: false, <string:1627556098>: false }
   });
 };
 if ("object" === typeof exports) {
@@ -39,7 +39,7 @@ if ("object" === typeof exports) {
 }
 if ("function" === typeof globalThis.define) {
   if (globalThis.define.amd) {
-    globalThis.define([1782644737], fn);
+    globalThis.define(["HH:mm:ss"], fn);
   }
 }
 fn(this.moment);

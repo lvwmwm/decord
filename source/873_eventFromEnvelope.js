@@ -1,14 +1,10 @@
 // Module ID: 873
 // Function ID: 9702
 // Name: eventFromEnvelope
-// Dependencies: [800, 801, 863, 810, 77, 863]
+// Dependencies: []
 // Exports: makeMultiplexedTransport
 
 // Module 873 (eventFromEnvelope)
-import module_800 from "module_800";
-import consoleSandbox from "consoleSandbox";
-import setupIntegration from "setupIntegration";
-
 function eventFromEnvelope(arg0, arg1) {
   const require = arg1;
   require(dependencyMap[3]).forEachEnvelopeItem(arg0, (arg0, arg1) => {
@@ -23,6 +19,9 @@ function eventFromEnvelope(arg0, arg1) {
   });
   return dependencyMap;
 }
+let closure_2 = require(dependencyMap[0]);
+let closure_3 = require(dependencyMap[1]);
+let closure_4 = require(dependencyMap[2]);
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 
 export const MULTIPLEXED_TRANSPORT_EXTRA_KEY = "MULTIPLEXED_TRANSPORT_EXTRA_KEY";
@@ -105,7 +104,7 @@ export function makeMultiplexedTransport(arg0, arg1) {
       const found = mapped.filter((arg0) => arg0);
       let arr4 = found;
       if (!found.length) {
-        const items = [642155041063702300000000000000000000000000000000000000000000000000000000000000000000000, closure_1];
+        const items = [null, closure_1];
         const items1 = [items];
         arr4 = items1;
       }

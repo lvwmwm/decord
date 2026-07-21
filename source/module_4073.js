@@ -4,6 +4,6 @@
 
 // Module 4073
 const _module = require(dependencyMap[0]);
-const obj = { url: 759239012, content: 1912603216, messageId: 24, channel_id: 24, no: 1058161153, "Null": 904724481, "Null": 2102460417, "Null": 759239012, scales: [] };
+const obj = { isConnected: "SERVER_GUIDE_CHANNEL_SELECTED", isInternetReachable: "_gameProfileResults", details: "r", reachabilityUrl: "MERCH_STORE", reachabilityMethod: "isArray", reachabilityHeaders: "HEADER", reachabilityTest: "isArray", reachabilityShortTimeout: "isArrayBuffer", scales: [] };
 
 export default _module.registerAsset(obj);

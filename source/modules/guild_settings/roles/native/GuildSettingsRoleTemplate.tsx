@@ -1,10 +1,10 @@
-// Module ID: 16168
-// Function ID: 124892
+// Module ID: 16175
+// Function ID: 124923
 // Name: width
 // Dependencies: []
 // Exports: default
 
-// Module 16168 (width)
+// Module 16175 (width)
 let Dimensions;
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
@@ -24,15 +24,15 @@ obj = {};
 obj = { backgroundColor: importDefault(dependencyMap[9]).colors.BACKGROUND_BASE_LOWER, flex: 1 };
 obj.container = obj;
 obj.carousel = { flex: 1 };
-obj.cardWrapper = { "Bool(false)": "y", "Bool(false)": "getTimestampAccessibilityLabel" };
-const obj1 = { <string:3096678708>: "r", <string:3429168003>: "isArray", <string:1441571014>: "accessibilityLabel", <string:223468870>: "call", <string:4140141421>: "r", <string:862183253>: "isArray", <string:4260608145>: "x", <string:1726198182>: "intl", <string:3971012768>: "colors", <string:3965211730>: "r", backgroundColor: importDefault(dependencyMap[9]).colors.BACKGROUND_BASE_LOW, borderColor: importDefault(dependencyMap[9]).colors.BACKGROUND_BASE_LOWEST, borderRadius: importDefault(dependencyMap[9]).radii.sm };
+obj.cardWrapper = { -926844321: true, 1381477602: true };
+const obj1 = { "Bool(false)": "<string:1123024898>", "Bool(false)": "<string:3493986306>", "Bool(false)": "<string:301990511>", "Bool(false)": "<string:1107296832>", "Bool(false)": "M49.6737 65.2838C49.4877 65.9355 49.3947 66.3312 49.3947 66.3312C34.9565 77.3872 48.5577 96.939 48.5577 96.939C51.2315 93.7502 54.4865 90.701 58.4855 88.42C60.6942 68.9614 54.6492 65.2605 49.6737 65.2838Z", "Bool(false)": "#FF78B7", "Bool(false)": "<string:40855874>", "Bool(false)": "<string:27545088>", "Bool(false)": "<string:1870152192>", "Bool(false)": "<string:1123024898>", backgroundColor: importDefault(dependencyMap[9]).colors.BACKGROUND_BASE_LOW, borderColor: importDefault(dependencyMap[9]).colors.BACKGROUND_BASE_LOWEST, borderRadius: importDefault(dependencyMap[9]).radii.sm };
 obj.card = obj1;
 obj.templateTitle = {};
 obj.templateSubtitle = { paddingBottom: 16 };
-obj.templateContentWrapper = {};
+obj.templateContentWrapper = { markAsSpoilerTitle: "guildFallbackImage", keyboardAppearance: "MAX_AGE" };
 obj.templateContent = {};
-obj.templateContentText = { paddingHorizontal: null, accessibilityRole: null };
-obj.templateButton = { flexDirection: true, width: "/assets/images/native", flexGrow: 24 };
+obj.templateContentText = { flexDirection: false, paddingHorizontal: false };
+obj.templateButton = {};
 obj.sliderContainer = { alignItems: "center" };
 obj.slider = {};
 obj.sliderLabels = { "Bool(false)": "313337", "Bool(false)": null, "Bool(false)": "0000", "Bool(false)": false, "Bool(false)": "Add Role Members", "Bool(false)": "Role Settings", "Bool(false)": "Members" };
@@ -90,7 +90,7 @@ export default function GuildSettingsRoleTemplate(arg0) {
     }
   };
   obj = { style: tmp.sliderContainer };
-  obj = { "Bool(false)": "from", "Bool(false)": "flex-end", "Bool(false)": "row", children: callback2(importDefault(dependencyMap[13]), { maximumValue: values.length - 1, minimumTrackTintColor: values[first].color, minimumValue: constants.COSMETIC, onSlidingComplete: updateLevel, style: tmp.slider, thumbTintColor: values[first].color, value: first, accessible: false, accessibilityElementsHidden: true, importantForAccessibility: "no" }) };
+  obj = { "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, children: callback2(importDefault(dependencyMap[13]), { maximumValue: values.length - 1, minimumTrackTintColor: values[first].color, minimumValue: constants.COSMETIC, onSlidingComplete: updateLevel, style: tmp.slider, thumbTintColor: values[first].color, value: first, accessible: false, accessibilityElementsHidden: true, importantForAccessibility: "no" }) };
   const items = [callback2(first, obj), ];
   const obj1 = { maximumValue: values.length - 1, minimumTrackTintColor: values[first].color, minimumValue: constants.COSMETIC, onSlidingComplete: updateLevel, style: tmp.slider, thumbTintColor: values[first].color, value: first, accessible: false, accessibilityElementsHidden: true, importantForAccessibility: "no" };
   const tmp12 = callback3;

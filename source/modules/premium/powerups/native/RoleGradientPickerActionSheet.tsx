@@ -1,10 +1,10 @@
-// Module ID: 16182
-// Function ID: 125068
+// Module ID: 16189
+// Function ID: 125099
 // Name: RoleGradientPickerActionSheet
 // Dependencies: []
 // Exports: default
 
-// Module 16182 (RoleGradientPickerActionSheet)
+// Module 16189 (RoleGradientPickerActionSheet)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 ({ View: closure_5, Pressable: closure_6 } = arg1(dependencyMap[2]));
@@ -22,9 +22,9 @@ const obj1 = { paddingHorizontal: importDefault(dependencyMap[6]).space.PX_8 };
 obj.dropperContainer = { left: importDefault(dependencyMap[6]).space.PX_24, right: importDefault(dependencyMap[6]).space.PX_24 };
 const obj2 = { left: importDefault(dependencyMap[6]).space.PX_24, right: importDefault(dependencyMap[6]).space.PX_24 };
 obj.dropper = { padding: importDefault(dependencyMap[6]).space.PX_8, borderRadius: importDefault(dependencyMap[6]).radii.round };
-const obj4 = { <string:1140607356>: true, <string:1751293292>: true, borderRadius: importDefault(dependencyMap[6]).radii.sm };
+const obj4 = { <string:1632221346>: "<string:1107296676>", <string:2722977214>: "M168.783 62.4673C169.134 62.0216 169.338 61.4772 169.364 60.9102C169.391 60.3433 169.24 59.7821 168.933 59.3052C168.626 58.8282 168.177 58.4593 167.65 58.2501C167.123 58.0408 166.544 58.0016 165.993 58.138C159.553 59.7673 148.486 60.7682 136.884 53.5759C119.052 42.5199 99.1962 56.4156 103.753 73.1277C108.868 91.8415 142.836 99.4992 153.88 79.0863C153.88 79.0863 163.203 76.526 162.366 67.1923C164.881 66.2055 167.093 64.5764 168.783 62.4673Z", borderRadius: importDefault(dependencyMap[6]).radii.sm };
 obj.gradient = obj4;
-const obj5 = { 0: false, -9223372036854775808: false, -9223372036854775808: false, 0: false, 9223372036854775807: false, 0: false, gap: importDefault(dependencyMap[6]).space.PX_8 };
+const obj5 = { "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, gap: importDefault(dependencyMap[6]).space.PX_8 };
 obj.optionContainer = obj5;
 const obj3 = { padding: importDefault(dependencyMap[6]).space.PX_8, borderRadius: importDefault(dependencyMap[6]).radii.round };
 obj.pressable = { borderRadius: importDefault(dependencyMap[6]).radii.sm };
@@ -111,7 +111,7 @@ export default function RoleGradientPickerActionSheet(arg0) {
   obj = {};
   const intl = arg1(dependencyMap[13]).intl;
   obj.title = intl.string(arg1(dependencyMap[13]).t.XpWmJz);
-  const obj1 = { <string:1522289750>: false, <string:570601313>: null };
+  const obj1 = {};
   const intl2 = arg1(dependencyMap[13]).intl;
   obj1.text = intl2.string(arg1(dependencyMap[13]).t.R3BPH+);
   obj1.onPress = callback;
@@ -119,7 +119,7 @@ export default function RoleGradientPickerActionSheet(arg0) {
   obj.header = callback2(arg1(dependencyMap[12]).BottomSheetTitleHeader, obj);
   const obj2 = { style: tmp.body };
   const obj3 = { style: tmp.gradientContainer };
-  const items3 = [callback2(importDefault(dependencyMap[15]), { style: tmp.gradient, colors: found, start: { "Null": false, "Null": true }, end: { "Null": null, "Null": null } }), ];
+  const items3 = [callback2(importDefault(dependencyMap[15]), { style: tmp.gradient, colors: found, start: { max: -536870861, guildId: -299892737 }, end: {} }), ];
   const obj5 = { style: tmp.dropperContainer };
   const obj6 = { style: tmp.dropper, onPress: callback2 };
   const intl3 = arg1(dependencyMap[13]).intl;
@@ -170,8 +170,8 @@ export default function RoleGradientPickerActionSheet(arg0) {
         const obj3 = onSelect(first[18]);
         items1[1] = onSelect(first[18]).int2hex(tmp[1]);
         obj.colors = items1;
-        obj.start = { "Null": false, "Null": true };
-        obj.end = { "Null": null, "Null": null };
+        obj.start = { max: -536870861, guildId: -299892737 };
+        obj.end = {};
         obj.children = callback2(tmp7, obj);
         return tmp4(onSelect(first[17]).PressableOpacity, obj, colors.name);
       })

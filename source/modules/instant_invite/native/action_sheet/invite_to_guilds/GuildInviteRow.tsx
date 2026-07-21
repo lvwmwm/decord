@@ -1,8 +1,8 @@
-// Module ID: 12017
-// Function ID: 92882
+// Module ID: 12024
+// Function ID: 92905
 // Dependencies: []
 
-// Module 12017
+// Module 12024
 const View = arg1(dependencyMap[1]).View;
 const useGuildInviteSendStates = arg1(dependencyMap[2]).useGuildInviteSendStates;
 const InviteSendStates = arg1(dependencyMap[3]).InviteSendStates;
@@ -27,7 +27,7 @@ const memoResult = importAll(dependencyMap[0]).memo(function GuildInviteRow(arg0
     }
     return tmp2;
   });
-  let obj = { display: 0, flexDirection: 0 };
+  let obj = {};
   obj = { guild };
   const tmp2 = jsx(importDefault(dependencyMap[6]), { sendState: tmp, onPressSend: handlePress });
   obj.size = arg1(dependencyMap[7]).GuildIconSizes.SMALL;

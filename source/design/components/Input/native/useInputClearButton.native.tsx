@@ -1,10 +1,10 @@
-// Module ID: 5768
-// Function ID: 49359
+// Module ID: 5770
+// Function ID: 49402
 // Name: useInputClearButtonConfig
 // Dependencies: []
 // Exports: useInputClearButton
 
-// Module 5768 (useInputClearButtonConfig)
+// Module 5770 (useInputClearButtonConfig)
 function useInputClearButtonConfig(fieldLabel, state) {
   fieldLabel = fieldLabel.fieldLabel;
   if (fieldLabel.isClearable) {

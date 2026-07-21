@@ -4,7 +4,7 @@
 // Dependencies: []
 
 // Module 1724 (AnimatedScrollView)
-let closure_2 = [2478319141265037000000000000000000000000000000000000000000000000000000000000000000000];
+let closure_2 = [true];
 let closure_3 = importDefault(dependencyMap[0]);
 importDefault(dependencyMap[1]);
 const jsx = arg1(dependencyMap[3]).jsx;

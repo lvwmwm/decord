@@ -8,7 +8,7 @@
 importAll(dependencyMap[0]);
 const Image = arg1(dependencyMap[1]).Image;
 const jsx = arg1(dependencyMap[2]).jsx;
-let closure_4 = { xxs: { aze: "version=$(node -p \"require('./package.json').version\") && sed -i '' \"s/#define NITRO_VERSION \\\".*\\\"/#define NITRO_VERSION \\\"$version\\\"/\" ./cpp/utils/NitroDefines.hpp", azj: "bun run write-native-version" }, xs: { aze: "<string:16777479>", azj: "<string:36295491>" }, sm: { aze: null, azj: null }, md: { aze: false, azj: false }, lg: { aze: "boolean", azj: "string" }, custom: { width: undefined, height: undefined }, refresh_sm: { aze: null, azj: null } };
+let closure_4 = { xxs: { bhk: "version=$(node -p \"require('./package.json').version\") && sed -i '' \"s/#define NITRO_VERSION \\\".*\\\"/#define NITRO_VERSION \\\"$version\\\"/\" ./cpp/utils/NitroDefines.hpp", bic: "bun run write-native-version" }, xs: {}, sm: { bhk: null, bic: null }, md: { bhk: "<string:1027735553>", bic: "<string:4143972873>" }, lg: { bhk: "boolean", bic: "string" }, custom: { width: undefined, height: undefined }, refresh_sm: { bhk: null, bic: null } };
 const result = arg1(dependencyMap[4]).fileFinishedImporting("design/components/Icon/native/BaseIconImage.tsx");
 
 export const BaseIconImage = function BaseIconImage(source) {

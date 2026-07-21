@@ -1,10 +1,10 @@
-// Module ID: 14884
-// Function ID: 112169
+// Module ID: 14891
+// Function ID: 112193
 // Name: PX_8
 // Dependencies: []
 // Exports: getScaledGameClaimNoticeHeight
 
-// Module 14884 (PX_8)
+// Module 14891 (PX_8)
 let closure_3 = importDefault(dependencyMap[0]);
 const View = arg1(dependencyMap[2]).View;
 const importAllResult = importAll(dependencyMap[1]);
@@ -19,7 +19,7 @@ let obj1 = arg1(dependencyMap[10]);
 let obj = {};
 obj = { padding: importDefault(dependencyMap[6]).space.PX_12 };
 obj.card = obj;
-obj1 = { top: importDefault(dependencyMap[6]).space.PX_12, right: importDefault(dependencyMap[6]).space.PX_12 };
+obj1 = { backgroundColor: null, flexDirection: null, justifyContent: null, alignItems: null, overflow: null, zIndex: null, minHeight: null, flex: null, top: importDefault(dependencyMap[6]).space.PX_12, right: importDefault(dependencyMap[6]).space.PX_12 };
 obj.closeButton = obj1;
 obj.centeredText = { textAlign: "center" };
 const tmp3 = arg1(dependencyMap[5]);
@@ -61,12 +61,12 @@ const memoResult = importAllResult.memo((arg0) => {
           return callback(constants.USER_DISMISS);
         },
       style: tmp2.closeButton,
-      children: callback2(arg1(dependencyMap[16]).XSmallIcon, { flexDirection: -0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000016264504555403172, alignItems: 284959.32910160546 })
+      children: callback2(arg1(dependencyMap[16]).XSmallIcon, {})
     };
     const items = [callback2(arg1(dependencyMap[15]).PressableOpacity, obj), , , , ];
     const obj1 = { imageSrc: coverImageUrl };
     items[1] = callback2(importDefault(dependencyMap[7]), obj1);
-    const obj2 = { INTEGRATION_CREATE: "<string:3574726658>", ConstraintReasonCode: "<string:1234436097>", style: tmp2.centeredText };
+    const obj2 = { style: tmp2.centeredText };
     const intl2 = arg1(dependencyMap[13]).intl;
     const obj3 = { gameName: tmp7 };
     obj2.children = intl2.format(arg1(dependencyMap[13]).t.Q11WTQ, obj3);
@@ -78,10 +78,10 @@ const memoResult = importAllResult.memo((arg0) => {
     obj4.children = stringResult;
     items[3] = callback2(arg1(dependencyMap[17]).Text, obj4);
     const obj5 = { style: tmp2.cta };
-    const obj6 = {};
+    const obj6 = { height: null, width: "020c495593a12ad5f00af9becbc3507d", paddingTop: "premium_role_unavailable", marginRight: "png", position: true };
     const intl3 = arg1(dependencyMap[13]).intl;
     obj6.text = intl3.string(arg1(dependencyMap[13]).t.2u6ZlY);
-    obj6.icon = callback2(arg1(dependencyMap[19]).LinkExternalSmallIcon, {});
+    obj6.icon = callback2(arg1(dependencyMap[19]).LinkExternalSmallIcon, { flex: false, flexGrow: null });
     // CreateGeneratorClosureLongIndex (0x67)
     obj6.onPress = callback(tmp);
     obj5.children = callback2(arg1(dependencyMap[18]).Button, obj6);

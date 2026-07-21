@@ -1,10 +1,10 @@
-// Module ID: 5624
-// Function ID: 47954
+// Module ID: 5626
+// Function ID: 47996
 // Name: _isAccessibleChannelOrThreadPath
 // Dependencies: []
 // Exports: default
 
-// Module 5624 (_isAccessibleChannelOrThreadPath)
+// Module 5626 (_isAccessibleChannelOrThreadPath)
 async function _isAccessibleChannelOrThreadPath(arg0, arg1) {
   const fn = function*(arg0) {
     let channelId;

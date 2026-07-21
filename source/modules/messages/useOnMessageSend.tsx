@@ -1,10 +1,10 @@
-// Module ID: 15307
-// Function ID: 116481
+// Module ID: 15314
+// Function ID: 116505
 // Name: useOnMessageSend
 // Dependencies: []
 // Exports: default
 
-// Module 15307 (useOnMessageSend)
+// Module 15314 (useOnMessageSend)
 let closure_2 = importAll(dependencyMap[0]);
 const MessageStates = arg1(dependencyMap[1]).MessageStates;
 const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/messages/useOnMessageSend.tsx");

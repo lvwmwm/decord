@@ -1,10 +1,10 @@
-// Module ID: 15292
-// Function ID: 116346
+// Module ID: 15299
+// Function ID: 116370
 // Name: getChannelOpenedRouteTrackingProps
 // Dependencies: []
 // Exports: getChannelOpenedRouteTrackingProps
 
-// Module 15292 (getChannelOpenedRouteTrackingProps)
+// Module 15299 (getChannelOpenedRouteTrackingProps)
 let closure_2 = importDefault(dependencyMap[0]);
 const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/app_analytics/track/channel_opened/getChannelOpenedRouteTrackingProps.tsx");
 

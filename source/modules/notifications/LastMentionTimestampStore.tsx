@@ -1,10 +1,10 @@
-// Module ID: 5343
-// Function ID: 45640
+// Module ID: 5345
+// Function ID: 45681
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 // Exports: trackMessageNotificationTimestamps
 
-// Module 5343 (_isNativeReflectConstruct)
+// Module 5345 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 

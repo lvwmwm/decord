@@ -184,7 +184,7 @@ const fn = function n(moment) {
   obj.weekdays = "ned\u011Ble_pond\u011Bl\u00ED_\u00FAter\u00FD_st\u0159eda_\u010Dtvrtek_p\u00E1tek_sobota".split("_");
   obj.weekdaysShort = "ne_po_\u00FAt_st_\u010Dt_p\u00E1_so".split("_");
   obj.weekdaysMin = "ne_po_\u00FAt_st_\u010Dt_p\u00E1_so".split("_");
-  obj.longDateFormat = { "Bool(false)": "[morgen um] LT [Uhr]", "Bool(false)": "dddd [um] LT [Uhr]", "Bool(false)": "[gestern um] LT [Uhr]", "Bool(false)": "[letzten] dddd [um] LT [Uhr]", "Bool(false)": "in %s", "Bool(false)": "vor %s", "Bool(false)": "ein paar Sekunden" };
+  obj.longDateFormat = {};
   obj.calendar = {
     nextWeek() {
       const dayResult = this.day();
@@ -235,7 +235,7 @@ const fn = function n(moment) {
   obj.relativeTime = { s: translate, ss: translate, m: translate, mm: translate, h: translate, hh: translate, d: translate, dd: translate, M: translate, MM: translate, y: translate, yy: translate };
   obj.dayOfMonthOrdinalParse = /\d{1,2}\./;
   obj.ordinal = "%d.";
-  obj.week = { "Bool(true)": false, "Bool(true)": false };
+  obj.week = { <string:1431496722>: false, <string:1627556098>: false };
   return moment.defineLocale("cs", obj);
 };
 if ("object" === typeof exports) {
@@ -247,7 +247,7 @@ if ("object" === typeof exports) {
 }
 if ("function" === typeof globalThis.define) {
   if (globalThis.define.amd) {
-    globalThis.define([1782644737], fn);
+    globalThis.define(["HH:mm:ss"], fn);
   }
 }
 fn(this.moment);

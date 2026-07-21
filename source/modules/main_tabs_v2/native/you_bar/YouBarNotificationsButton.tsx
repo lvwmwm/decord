@@ -1,8 +1,8 @@
-// Module ID: 14986
-// Function ID: 112890
+// Module ID: 14993
+// Function ID: 112914
 // Dependencies: []
 
-// Module 14986
+// Module 14993
 let YOU_BAR_BUTTON_ICON_SIZE;
 const importAllResult = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
@@ -11,7 +11,7 @@ let closure_5 = importDefault(dependencyMap[2]);
 const tmp2 = arg1(dependencyMap[3]);
 ({ jsx: closure_8, jsxs: closure_9 } = arg1(dependencyMap[4]));
 const tmp3 = arg1(dependencyMap[4]);
-let closure_10 = arg1(dependencyMap[5]).createStyles({ icon: { width: YOU_BAR_BUTTON_ICON_SIZE, height: YOU_BAR_BUTTON_ICON_SIZE }, iconContainer: { "Bool(true)": 8, "Bool(true)": null, "Bool(true)": "\u270A\u{1F3FF}" } });
+let closure_10 = arg1(dependencyMap[5]).createStyles({ icon: { width: YOU_BAR_BUTTON_ICON_SIZE, height: YOU_BAR_BUTTON_ICON_SIZE }, iconContainer: {} });
 let closure_11 = { code: "function YouBarNotificationsButtonTsx1(){const{withSpring,badgeCount,YOU_BAR_SPRING_CONFIG,tokens}=this.__closure;return{transform:[{scaleX:withSpring(badgeCount>0?1:0,YOU_BAR_SPRING_CONFIG)}],marginLeft:withSpring(badgeCount>0?tokens.space.PX_4:0,YOU_BAR_SPRING_CONFIG),opacity:withSpring(badgeCount>0?1:0,YOU_BAR_SPRING_CONFIG)};}" };
 const obj2 = arg1(dependencyMap[5]);
 const memoResult = importAllResult.memo(function YouBarNotificationsButton(hasNameplate) {

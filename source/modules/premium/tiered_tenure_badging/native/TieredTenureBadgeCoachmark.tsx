@@ -1,10 +1,10 @@
-// Module ID: 8563
-// Function ID: 68055
+// Module ID: 8567
+// Function ID: 68067
 // Name: CoachmarkImg
 // Dependencies: []
 // Exports: default
 
-// Module 8563 (CoachmarkImg)
+// Module 8567 (CoachmarkImg)
 function CoachmarkImg(badge) {
   badge = badge.badge;
   const tmp = callback2();
@@ -34,7 +34,7 @@ const View = arg1(dependencyMap[2]).View;
 const UserSettingsSections = arg1(dependencyMap[3]).UserSettingsSections;
 const ContentDismissActionType = arg1(dependencyMap[4]).ContentDismissActionType;
 const jsx = arg1(dependencyMap[5]).jsx;
-let closure_9 = arg1(dependencyMap[6]).createStyles({ image: { aze: 30271555, azj: 22092032 }, imageContainer: {} });
+let closure_9 = arg1(dependencyMap[6]).createStyles({ image: {}, imageContainer: {} });
 const obj = arg1(dependencyMap[6]);
 const result = arg1(dependencyMap[15]).fileFinishedImporting("modules/premium/tiered_tenure_badging/native/TieredTenureBadgeCoachmark.tsx");
 

@@ -1,10 +1,10 @@
-// Module ID: 10491
-// Function ID: 81918
+// Module ID: 10497
+// Function ID: 81941
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 // Exports: getActiveAnalyticsSessionIDs, trackFrameSessionEnd, trackFrameSessionStart
 
-// Module 10491 (_createForOfIteratorHelperLoose)
+// Module 10497 (_createForOfIteratorHelperLoose)
 function _createForOfIteratorHelperLoose(@@iterator) {
   let arg1 = Symbol_iterator;
   @@iterator = "undefined" !== typeof Symbol;

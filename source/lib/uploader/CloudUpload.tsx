@@ -1,9 +1,9 @@
-// Module ID: 4659
-// Function ID: 40317
+// Module ID: 4661
+// Function ID: 40358
 // Name: _callSuper
 // Dependencies: []
 
-// Module 4659 (_callSuper)
+// Module 4661 (_callSuper)
 function _callSuper(arg0, arg1, arg2) {
   let items = arg2;
   const obj = callback3(arg1);
@@ -26,7 +26,7 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-let closure_3 = [1879048192];
+let closure_3 = [null];
 let closure_4 = importDefault(dependencyMap[0]);
 let closure_5 = importDefault(dependencyMap[1]);
 let closure_6 = importDefault(dependencyMap[2]);
@@ -225,11 +225,11 @@ const tmp4 = arg1(dependencyMap[13]);
 const tmp9 = (arg0) => {
   class CloudUpload {
     constructor(arg0, arg1, arg2, arg3) {
-      tmp = f40345(this, CloudUpload);
+      tmp = f40386(this, CloudUpload);
       items = [];
       items[0] = arg0;
       tmp2 = closure_23(this, CloudUpload, items);
-      f40399 = tmp2;
+      f40440 = tmp2;
       tmp2.status = closure_21.NOT_STARTED;
       tmp2.loaded = 0;
       tmp2.reactNativeFilePrepped = false;
@@ -267,17 +267,17 @@ const tmp9 = (arg0) => {
       if (null != arg3) {
         tmp2.allowOptimization = arg3;
       }
-      tmp6 = arg0.platform === f40399(f40385[16]).UploadPlatform.WEB && null != arg0.compressionMetadata;
+      tmp6 = arg0.platform === f40440(f40426[16]).UploadPlatform.WEB && null != arg0.compressionMetadata;
       if (tmp6) {
         tmp2.mimeType = arg0.compressionMetadata.originalContentType;
       }
       abortController = new AbortController();
       tmp2._abortController = abortController;
       if (null == tmp2.origin) {
-        tmp10 = f40399;
-        tmp11 = f40385;
+        tmp10 = f40440;
+        tmp11 = f40426;
         num3 = 17;
-        DefaultHttpClient = f40399(f40385[17]).DefaultHttpClient;
+        DefaultHttpClient = f40440(f40426[17]).DefaultHttpClient;
         prototype = DefaultHttpClient.prototype;
         tmp12 = new.target;
         tmp13 = new.target;
@@ -291,9 +291,9 @@ const tmp9 = (arg0) => {
         if ("string" === typeof tmp2.origin) {
           origin = tmp2.origin;
         } else {
-          tmp8 = f40399;
-          tmp9 = f40385;
-          origin = f40399(f40385[16]).UploadOrigin[tmp2.origin];
+          tmp8 = f40440;
+          tmp9 = f40426;
+          origin = f40440(f40426[16]).UploadOrigin[tmp2.origin];
         }
         tmp2.uploadAnalytics.origin = origin;
       }

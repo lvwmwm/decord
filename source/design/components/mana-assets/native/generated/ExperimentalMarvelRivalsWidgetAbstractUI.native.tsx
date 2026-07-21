@@ -1,14 +1,13 @@
-// Module ID: 6041
-// Function ID: 49935
+// Module ID: 6043
+// Function ID: 49978
 // Name: ExperimentalMarvelRivalsWidgetAbstractUI
 // Dependencies: [0, 0, 4294967295, 0]
 // Exports: ExperimentalMarvelRivalsWidgetAbstractUI
 
-// Module 6041 (ExperimentalMarvelRivalsWidgetAbstractUI)
-import { jsx } from "result";
-import result from "result";
+// Module 6043 (ExperimentalMarvelRivalsWidgetAbstractUI)
+import { jsx } from "__exportStarResult1";
 
-result = result.fileFinishedImporting("design/components/mana-assets/native/generated/ExperimentalMarvelRivalsWidgetAbstractUI.native.tsx");
+const result = require("__exportStarResult1").fileFinishedImporting("design/components/mana-assets/native/generated/ExperimentalMarvelRivalsWidgetAbstractUI.native.tsx");
 
 export const ExperimentalMarvelRivalsWidgetAbstractUI = function ExperimentalMarvelRivalsWidgetAbstractUI(width) {
   let accessibilityLabel;

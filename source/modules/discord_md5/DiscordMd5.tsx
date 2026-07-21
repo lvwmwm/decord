@@ -1,9 +1,9 @@
-// Module ID: 4689
-// Function ID: 40776
+// Module ID: 4691
+// Function ID: 40817
 // Name: DiscordMd5
 // Dependencies: []
 
-// Module 4689 (DiscordMd5)
+// Module 4691 (DiscordMd5)
 let closure_2 = importDefault(dependencyMap[0]);
 let closure_3 = importDefault(dependencyMap[1]);
 let closure_4 = importDefault(dependencyMap[2]);

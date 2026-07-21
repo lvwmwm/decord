@@ -1,10 +1,10 @@
-// Module ID: 9949
-// Function ID: 76895
+// Module ID: 9954
+// Function ID: 76911
 // Name: BookmarkOutlineIcon
 // Dependencies: []
 // Exports: BookmarkOutlineIcon
 
-// Module 9949 (BookmarkOutlineIcon)
+// Module 9954 (BookmarkOutlineIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/BookmarkOutlineIcon.tsx");

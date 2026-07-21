@@ -1,10 +1,10 @@
-// Module ID: 4528
-// Function ID: 39729
+// Module ID: 4532
+// Function ID: 39777
 // Name: map
 // Dependencies: []
 // Exports: default
 
-// Module 4528 (map)
+// Module 4532 (map)
 const _module = require(dependencyMap[0]);
 ({ requireNativeComponent: closure_0, UIManager: closure_1, View: closure_2 } = _module);
 let importDefaultResult = importDefault(dependencyMap[1]);

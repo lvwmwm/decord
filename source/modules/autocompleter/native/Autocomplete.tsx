@@ -1,9 +1,9 @@
-// Module ID: 11413
-// Function ID: 88825
+// Module ID: 11420
+// Function ID: 88849
 // Name: AutocompleteLabel
 // Dependencies: []
 
-// Module 11413 (AutocompleteLabel)
+// Module 11420 (AutocompleteLabel)
 function AutocompleteLabel(text) {
   const tmp = callback();
   return jsx(arg1(dependencyMap[10]).FormRow.Label, { style: callback().leading, text: text.text });
@@ -25,14 +25,14 @@ const obj1 = { fontSize: 16, color: importDefault(dependencyMap[9]).colors.INTER
 obj.trailing = { fontSize: 14, color: importDefault(dependencyMap[9]).colors.TEXT_MUTED };
 const obj2 = { fontSize: 14, color: importDefault(dependencyMap[9]).colors.TEXT_MUTED };
 obj.username = { color: importDefault(dependencyMap[9]).unsafe_rawColors.PRIMARY_400 };
-obj.emoji = { aze: "boolean", azj: "string" };
+obj.emoji = { bhk: "boolean", bic: "string" };
 obj.emojiImage = { resizeMode: "contain" };
-const obj4 = { "Bool(false)": "AggregateError", "Bool(false)": "MUR", "Bool(false)": "any", color: importDefault(dependencyMap[9]).colors.TEXT_DEFAULT };
+const obj4 = { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, color: importDefault(dependencyMap[9]).colors.TEXT_DEFAULT };
 obj.emojiText = obj4;
-const obj5 = { "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, backgroundColor: importDefault(dependencyMap[9]).colors.BACKGROUND_MOD_NORMAL, borderRadius: importDefault(dependencyMap[9]).radii.sm };
-obj.stickerContainer = obj5;
-obj.commandChoiceLoadingContainer = { -9223372036854775808: 323420161, 0: -2104950783 };
 const obj3 = { color: importDefault(dependencyMap[9]).unsafe_rawColors.PRIMARY_400 };
+obj.stickerContainer = { backgroundColor: importDefault(dependencyMap[9]).colors.BACKGROUND_MOD_NORMAL, borderRadius: importDefault(dependencyMap[9]).radii.sm };
+obj.commandChoiceLoadingContainer = { markAsSpoilerTitle: null, keyboardAppearance: null };
+const obj5 = { backgroundColor: importDefault(dependencyMap[9]).colors.BACKGROUND_MOD_NORMAL, borderRadius: importDefault(dependencyMap[9]).radii.sm };
 obj.commandChoiceLoadingItem = { backgroundColor: importDefault(dependencyMap[9]).colors.BACKGROUND_MOD_MUTED, height: 16, borderRadius: importDefault(dependencyMap[9]).radii.lg, alignSelf: "flex-start" };
 obj.autocompleteIcon = { opacity: 0.6 };
 let closure_10 = obj.createStyles(obj);
@@ -127,7 +127,7 @@ const obj7 = {
     const tmp8 = jsx(arg1(dependencyMap[13]).Icon, obj);
     const channelName = arg1(dependencyMap[20]).computeChannelName(channel, closure_7, closure_6);
     obj = { onPress: onPress.onPress, accessibilityRole: "menuitem", leading: tmp8, label: <AutocompleteLabel text={channelName} /> };
-    const obj1 = { Promise: null, marginTop: null, flags: null, style: tmp.trailing };
+    const obj1 = { "Null": "<string:1178599425>", "Null": "<string:3295084545>", "Null": "<string:1689649153>", style: tmp.trailing };
     let name = null != category;
     if (name) {
       name = category.name;

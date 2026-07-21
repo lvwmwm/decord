@@ -1,10 +1,10 @@
-// Module ID: 10431
-// Function ID: 80530
+// Module ID: 10437
+// Function ID: 80553
 // Name: doesGameHaveRichPresence
 // Dependencies: []
 // Exports: doesGameHaveRichPresence
 
-// Module 10431 (doesGameHaveRichPresence)
+// Module 10437 (doesGameHaveRichPresence)
 let closure_2 = importDefault(dependencyMap[0]);
 const result = arg1(dependencyMap[2]).fileFinishedImporting("modules/rich_presence/PresenceActivityFiltering.tsx");
 

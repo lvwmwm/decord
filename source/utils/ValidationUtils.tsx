@@ -1,8 +1,8 @@
-// Module ID: 8331
-// Function ID: 66028
-// Dependencies: []
+// Module ID: 8335
+// Function ID: 66040
+// Dependencies: [284214097]
 
-// Module 8331
+// Module 8335
 let closure_0 = /^([\w-+]+(?:\.[\w-+]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,63}(?:\.[a-z]{2})?)$/i;
 let closure_1 = /^((https:\/\/)?(discord\.gg\/)|(discord\.com\/)(invite\/)?)?[A-Za-z0-9]{8,8}$/;
 let closure_2 = /^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$/;

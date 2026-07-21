@@ -1,10 +1,10 @@
-// Module ID: 9641
-// Function ID: 75136
+// Module ID: 9646
+// Function ID: 75153
 // Name: MediaKeyboardActionSheet
 // Dependencies: []
 // Exports: default
 
-// Module 9641 (MediaKeyboardActionSheet)
+// Module 9646 (MediaKeyboardActionSheet)
 let closure_3 = importAll(dependencyMap[0]);
 let closure_4 = arg1(dependencyMap[1]).MediaPickerActionSheetEngagedActions;
 const AnalyticEvents = arg1(dependencyMap[2]).AnalyticEvents;
@@ -81,9 +81,9 @@ export default function MediaKeyboardActionSheet(onAttachPress) {
   const items3 = [onViewAll, memo];
   const memo1 = React.useMemo(() => {
     let obj = {
-      0: "CONTENT_INVENTORY_OVERLAY_TEXT_PRIMARY",
-      9223372036854775807: "regulationEnvironment",
-      -9223372036854775808: "Array",
+      "Bool(true)": "AbortSignal",
+      "Bool(true)": null,
+      "Bool(true)": "\u{1F9BB}\u{1F3FF}",
       onHeightChange() {
 
       }

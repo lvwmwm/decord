@@ -1,10 +1,10 @@
-// Module ID: 7745
-// Function ID: 61563
+// Module ID: 7749
+// Function ID: 61575
 // Name: getFriendAnniversaryGateConfig
 // Dependencies: []
 // Exports: getFriendAnniversaryGateConfig
 
-// Module 7745 (getFriendAnniversaryGateConfig)
+// Module 7749 (getFriendAnniversaryGateConfig)
 const _module = require(dependencyMap[1]);
 const result = _module.fileFinishedImporting("modules/premium/gifting/FriendAnniversaryGate.native.tsx");
 

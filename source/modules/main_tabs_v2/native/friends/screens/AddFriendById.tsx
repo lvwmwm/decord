@@ -1,9 +1,9 @@
-// Module ID: 12732
-// Function ID: 97704
+// Module ID: 12739
+// Function ID: 97727
 // Name: getDefaultTextState
 // Dependencies: []
 
-// Module 12732 (getDefaultTextState)
+// Module 12739 (getDefaultTextState)
 function getDefaultTextState() {
   const obj = { validatedText: "" };
   const intl = arg1(dependencyMap[7]).intl;
@@ -24,7 +24,7 @@ const tmp3 = arg1(dependencyMap[3]);
 ({ jsx: closure_9, jsxs: closure_10, Fragment: closure_11 } = arg1(dependencyMap[4]));
 let obj1 = arg1(dependencyMap[5]);
 let obj = {};
-obj = { "Bool(false)": false, "Null": false, "Null": false, "Null": false, backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_BASE_LOWER };
+obj = { 1364382306: "header", 1365351715: "text-sm/semibold", 140761636: "text-muted", 1550165009: null, backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_BASE_LOWER };
 obj.container = obj;
 obj.textInputContainer = { alignSelf: "stretch" };
 obj1 = { color: importDefault(dependencyMap[6]).colors.TEXT_MUTED };
@@ -72,10 +72,11 @@ let closure_15 = importAllResult.forwardRef((headerTextStyle, ref) => {
     }
   }
   let obj = { style: tmp3.textInputContainer };
-  obj = { style: items };
+  obj = { "Null": "[\u6628\u65E5] LT", "Null": null, "Null": "L" };
   const items = [, , ];
   ({ redesignInputAccessoryText: arr[0], inputHeaderText: arr[1] } = tmp3);
   items[2] = headerTextStyle.headerTextStyle;
+  obj.style = items;
   obj.children = headerText;
   const items1 = [callback2(ref(dependencyMap[8]).Text, obj), , ];
   obj = { ref, value: textState.validatedText };
@@ -344,7 +345,7 @@ const forwardRefResult = importAllResult.forwardRef((arg0, ref) => {
     return tmp12(closure_11, obj);
   } else {
     const obj4 = { style: tmp.friendMessageContainer };
-    const obj5 = {};
+    const obj5 = { "Null": "[\u6628\u65E5] LT", "Null": null, "Null": "L" };
     const items7 = [, , ];
     ({ messageLabel: arr7[0], inputHeaderText: arr7[1] } = tmp);
     items7[2] = headerTextStyle;
@@ -352,7 +353,7 @@ const forwardRefResult = importAllResult.forwardRef((arg0, ref) => {
     const intl = ref(closure_2[7]).intl;
     obj5.children = intl.string(ref(closure_2[7]).t.Yi6Mpu);
     const items8 = [callback2(ref(closure_2[8]).Text, obj5), , ];
-    const obj6 = { value: first2, onSubmitEditing: handleSubmitEditing, onChange: callback1 };
+    const obj6 = { gap: false, flexDirection: false, alignItems: false, backgroundColor: false, value: first2, onSubmitEditing: handleSubmitEditing, onChange: callback1 };
     let str2;
     if (first1.field === constants2.MESSAGE) {
       if (first1.status === constants.ERROR) {
@@ -362,7 +363,7 @@ const forwardRefResult = importAllResult.forwardRef((arg0, ref) => {
     obj6.status = str2;
     items8[1] = callback2(ref(closure_2[16]).TextArea, obj6);
     if (first1.status !== constants.ERROR) {
-      const obj7 = { Promise: "ur", marginTop: "SECTION_INDEX_FIRST_NAMED_CATEGORY", flags: "ur", style: tmp.messageFooterText };
+      const obj7 = { style: tmp.messageFooterText };
       const intl2 = ref(closure_2[7]).intl;
       obj7.children = intl2.string(ref(closure_2[7]).t.UtfQNw);
       let tmp28 = callback2(ref(closure_2[8]).Text, obj7);

@@ -1,9 +1,9 @@
-// Module ID: 6506
-// Function ID: 50633
+// Module ID: 6508
+// Function ID: 50676
 // Name: metadata
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 6506 (metadata)
+// Module 6508 (metadata)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/SkullIllocon-2x.png.js");
 

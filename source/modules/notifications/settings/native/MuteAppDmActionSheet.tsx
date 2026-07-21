@@ -1,10 +1,10 @@
-// Module ID: 11615
-// Function ID: 90220
+// Module ID: 11622
+// Function ID: 90243
 // Name: MuteAppDMActionSheet
 // Dependencies: []
 // Exports: default
 
-// Module 11615 (MuteAppDMActionSheet)
+// Module 11622 (MuteAppDMActionSheet)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 ({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[2]));
@@ -12,15 +12,15 @@ let obj = arg1(dependencyMap[3]);
 obj = {};
 obj = { backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_BASE_LOWEST };
 obj.sheet = obj;
-obj.iconContainer = { <string:3800259117>: -0.0014069081515246523, <string:1391987057>: -0.0001058445630777106 };
-obj.iconBackground = {};
+obj.iconContainer = { 304631162: "absolute", -309048237: 0 };
+obj.iconBackground = { bhk: null, bic: null };
 obj.content = { padding: 16 };
-obj.headerText = {};
-obj.infoText = { "Null": null, "Null": null, "Null": null };
+obj.headerText = { y: 2137063425, measureButtonAndShowMenu: 95420418, TA8GFt: -2075787263 };
+obj.infoText = { y: null, measureButtonAndShowMenu: null, TA8GFt: null };
 obj.dismissButtonContainer = { marginTop: 8 };
-const obj1 = { justifyContent: "<string:1011679233>", borderRadius: importDefault(dependencyMap[4]).radii.round, style: "<string:4201906177>", variant: "<string:4201840642>", accessibilityRole: "<string:256114690>", values: "<string:3959423752>", backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_FEEDBACK_NOTIFICATION };
+const obj1 = { padding: "Array", _distance: "isArray", a: "parent", DARK: "round", url: "Array", kind: "isArray", borderRadius: importDefault(dependencyMap[4]).radii.round, backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_FEEDBACK_NOTIFICATION };
 obj.mutedNotificationContainer = obj1;
-obj.mutedNotification = { aze: "<string:16777479>", azj: "<string:36295491>" };
+obj.mutedNotification = {};
 let closure_6 = obj.createStyles(obj);
 const tmp3 = arg1(dependencyMap[2]);
 const result = arg1(dependencyMap[17]).fileFinishedImporting("modules/notifications/settings/native/MuteAppDmActionSheet.tsx");
@@ -37,7 +37,7 @@ export default function MuteAppDMActionSheet(channel) {
   obj1.accessibilityLabel = intl.string(arg1(dependencyMap[8]).t.uAmAiL);
   obj.children = callback(importDefault(dependencyMap[6]), obj1);
   const items = [callback(View, obj), , , , ];
-  const obj2 = { INTEGRATION_CREATE: 182714370, ConstraintReasonCode: 1091633154, style: tmp.headerText };
+  const obj2 = { style: tmp.headerText };
   const intl2 = arg1(dependencyMap[8]).intl;
   obj2.children = intl2.string(arg1(dependencyMap[8]).t.uAmAiL);
   items[1] = callback(arg1(dependencyMap[9]).Text, obj2);

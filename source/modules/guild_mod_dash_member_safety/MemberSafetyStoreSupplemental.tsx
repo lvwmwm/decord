@@ -1,10 +1,10 @@
-// Module ID: 6722
-// Function ID: 52341
+// Module ID: 6728
+// Function ID: 52390
 // Name: getMemberSupplementalByGuildId
 // Dependencies: []
 // Exports: hasMemberSupplemental, syncMemberSupplemental
 
-// Module 6722 (getMemberSupplementalByGuildId)
+// Module 6728 (getMemberSupplementalByGuildId)
 function getMemberSupplementalByGuildId(guildId) {
   if (null == closure_2[guildId]) {
     closure_2[guildId] = {};

@@ -1,10 +1,10 @@
-// Module ID: 8167
-// Function ID: 64489
+// Module ID: 8171
+// Function ID: 64501
 // Name: isAgeRestrictedContentClassification
 // Dependencies: []
 // Exports: isAgeRestrictedContentClassification
 
-// Module 8167 (isAgeRestrictedContentClassification)
+// Module 8171 (isAgeRestrictedContentClassification)
 const _module = require(dependencyMap[2]);
 const result = _module.fileFinishedImporting("modules/content_classification/utils.tsx");
 

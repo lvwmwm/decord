@@ -1,7 +1,7 @@
 // Module ID: 912
 // Function ID: 9994
 // Name: isJsonRpcNotification
-// Dependencies: []
+// Dependencies: [956301315, 1593835523]
 
 // Module 912 (isJsonRpcNotification)
 Object.defineProperty(arg5, Symbol.toStringTag, { value: "Module" });

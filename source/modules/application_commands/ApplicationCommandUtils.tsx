@@ -1,10 +1,10 @@
-// Module ID: 6742
-// Function ID: 52456
+// Module ID: 6748
+// Function ID: 52505
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 // Exports: allChannelsSentinel, applicationPermissionsList, buildApplicationCommands, canUseApplicationCommands, extractInteractionDataProps, getApplicationCommandOptionQueryOptions, getApplicationCommandSection, getCommandAttachmentDraftType, getCommandTriggerSection, getInitialInteractionMetadata, getMatchingGroupCommands, hasAccess, hasCommandIndexForApp, isSnowflake, trackCommandSelected
 
-// Module 6742 (_createForOfIteratorHelperLoose)
+// Module 6748 (_createForOfIteratorHelperLoose)
 import deserializeResult from "module_0";
 
 function _createForOfIteratorHelperLoose(@@iterator) {

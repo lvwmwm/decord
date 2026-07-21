@@ -1,30 +1,30 @@
-// Module ID: 10243
-// Function ID: 79201
+// Module ID: 10249
+// Function ID: 79220
 // Name: items
 // Dependencies: []
 
-// Module 10243 (items)
+// Module 10249 (items)
 let obj = {};
-obj = { borderRadius: importDefault(dependencyMap[2]).radii.md, padding: { direction: false, radius: false, inset: false }, paddingPanels: { direction: null, radius: null, inset: null }, paddingThread: {} };
+obj = { borderRadius: importDefault(dependencyMap[2]).radii.md, padding: { EU_COUNTRIES: false, borderWidth: false, borderColor: false }, paddingPanels: { EU_COUNTRIES: "<string:1107296770>", borderWidth: "1 Stunde", borderColor: "{{count}} Stunden" }, paddingThread: {} };
 obj.container = obj;
 obj.channelName = { height: 20, text: { variant: "text-md/semibold" } };
 obj = { text: { variant: "text-xs/medium" }, messageTypeIconSize: arg1(dependencyMap[3]).IconSizes.EXTRA_SMALL, messageTypeIconSizeNew: "xs", height: 18, margin: { marginTop: 0 } };
 obj.messagePreview = obj;
 obj.inviteRow = { text: { variant: "text-md/semibold" } };
 const importDefaultResult = importDefault(dependencyMap[0]);
-obj.icon = { avatarSize: arg1(dependencyMap[3]).AvatarSizes.NORMAL, guildIconSize: arg1(dependencyMap[4]).GuildIconSizes.NORMAL, guildBadgeIconSize: arg1(dependencyMap[4]).GuildIconSizes.XXSMALL, wrapper: { size: 40 }, channelIcon: { size: 40 }, margin: { marginRight: 8 }, emoji: { audioinput: "r", audiooutput: "featureList" } };
+obj.icon = { avatarSize: arg1(dependencyMap[3]).AvatarSizes.NORMAL, guildIconSize: arg1(dependencyMap[4]).GuildIconSizes.NORMAL, guildBadgeIconSize: arg1(dependencyMap[4]).GuildIconSizes.XXSMALL, wrapper: { size: 40 }, channelIcon: { size: 40 }, margin: { marginRight: 8 }, emoji: { "Null": "r", "Null": "usersBadgeContainer" } };
 obj.unreadBadge = { positionThread: { left: -68 } };
 obj.mentionBadge = { position: { top: 34 }, positionThread: { top: 27 } };
-const obj2 = { text: { variant: "text-sm/bold" }, layout: { "Bool(false)": null, "Bool(false)": "4d46cb9270219102b4f9e899fd51586c", "Bool(false)": "FileIcon", "Bool(false)": "png" } };
-const obj1 = { avatarSize: arg1(dependencyMap[3]).AvatarSizes.NORMAL, guildIconSize: arg1(dependencyMap[4]).GuildIconSizes.NORMAL, guildBadgeIconSize: arg1(dependencyMap[4]).GuildIconSizes.XXSMALL, wrapper: { size: 40 }, channelIcon: { size: 40 }, margin: { marginRight: 8 }, emoji: { audioinput: "r", audiooutput: "featureList" } };
+const obj2 = { text: { variant: "text-sm/bold" }, layout: {} };
+const obj1 = { avatarSize: arg1(dependencyMap[3]).AvatarSizes.NORMAL, guildIconSize: arg1(dependencyMap[4]).GuildIconSizes.NORMAL, guildBadgeIconSize: arg1(dependencyMap[4]).GuildIconSizes.XXSMALL, wrapper: { size: 40 }, channelIcon: { size: 40 }, margin: { marginRight: 8 }, emoji: { "Null": "r", "Null": "usersBadgeContainer" } };
 obj2.icon = { size: arg1(dependencyMap[3]).IconSizes.REFRESH_SMALL_16, gameSize: arg1(dependencyMap[5]).GameIconSizes.SMALL };
 obj.joinVoiceButton = obj2;
-const obj4 = { flex: 366, borderRadius: null, border: 1, icon: 19 };
+const obj4 = { backgroundColor: 366, minWidth: null, minHeight: 1, maxHeight: 19 };
 const items = [{ translateY: 0 }];
 obj4.transform = items;
 obj.threadSpine = obj4;
 obj.happeningNow = { margin: { marginBottom: 20 } };
-obj.typing = { position: { "Null": "version=$(node -p \"require('./package.json').version\") && sed -i '' \"s/#define NITRO_VERSION \\\".*\\\"/#define NITRO_VERSION \\\"$version\\\"/\" ./cpp/utils/NitroDefines.hpp", "Null": "bun run write-native-version" }, positionThread: { "Null": 1262555392, "Null": 1912603178 }, typingIndicator: { position: { "Null": 24, "Null": 24 } } };
+obj.typing = { position: { -1506583910: "version=$(node -p \"require('./package.json').version\") && sed -i '' \"s/#define NITRO_VERSION \\\".*\\\"/#define NITRO_VERSION \\\"$version\\\"/\" ./cpp/utils/NitroDefines.hpp", -1753944310: "bun run write-native-version" }, positionThread: { -1506583910: "text-sm/medium", -1753944310: "text-feedback-warning" }, typingIndicator: { position: { -1506583910: true, -1753944310: "/assets/images/native/chat_sidebar" } } };
 obj.separator = { margin: { marginVertical: 20 } };
 const obj3 = { size: arg1(dependencyMap[3]).IconSizes.REFRESH_SMALL_16, gameSize: arg1(dependencyMap[5]).GameIconSizes.SMALL };
 const importDefaultResultResult = importDefaultResult(arg1(dependencyMap[1]).CHANNEL_LIST_STYLES_COMPACT, obj);

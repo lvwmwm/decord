@@ -1,9 +1,9 @@
-// Module ID: 10847
-// Function ID: 84284
+// Module ID: 10853
+// Function ID: 84307
 // Name: getCodedLinks
 // Dependencies: []
 
-// Module 10847 (getCodedLinks)
+// Module 10853 (getCodedLinks)
 function getCodedLinks(type) {
   if (type.type === constants.THREAD_STARTER_MESSAGE) {
     if (null != type.messageReference) {
@@ -18,8 +18,8 @@ function getCodedLinks(type) {
   }
   return codedLinks;
 }
-let closure_4 = [-0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004952955696604896];
-let closure_5 = [-0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004952955696604896];
+let closure_4 = [-1185671372240146900000000000000000000];
+let closure_5 = [-1185671372240146900000000000000000000];
 let closure_6 = importDefault(dependencyMap[0]);
 let closure_7 = importDefault(dependencyMap[1]);
 let closure_8 = importDefault(dependencyMap[2]);
@@ -151,7 +151,7 @@ const tmp4 = () => {
             tmp4Result.handleJoinCall(channel);
           } else {
             tmp4Result = tmp4(tmp5[47]);
-            obj = { "Null": true, "Null": true, "Null": true };
+            obj = {};
             obj = {};
             const intl = tmp4(tmp5[48]).intl;
             obj.label = intl.string(tmp4(tmp5[48]).t.focH1t);
@@ -880,7 +880,7 @@ const tmp4 = () => {
           if (null != channel) {
             const oSRequirement = self(closure_3[101]).getOSRequirement();
             const obj2 = self(closure_3[101]);
-            obj = { 0: null, 9223372036854775807: null, 9223372036854775807: null, channel, osRequirement: oSRequirement };
+            obj = { marginTop: "ERROR", flex: "ERROR", flexGrow: "NOT_RESPONDER", channel, osRequirement: oSRequirement };
             self(closure_3[101]).getStreamPressHandler(obj)();
             const obj3 = self(closure_3[101]);
           }
@@ -2006,8 +2006,8 @@ const tmp4 = () => {
           obj.transitionToThread(channel, obj);
         }
       };
-      this.handleTransitionToMessage = (arg0, channelId, messageId) => {
-        self(closure_3[165]).transitionToMessage(channelId, messageId, { navigationReplace: false });
+      this.handleTransitionToMessage = (arg0, channelId, id) => {
+        self(closure_3[165]).transitionToMessage(channelId, id, { navigationReplace: false });
       };
       this.handleTapFollowForumPost = (nativeEvent) => {
         const nativeSyntheticEventData = self(closure_3[41]).getNativeSyntheticEventData(nativeEvent);
@@ -2246,20 +2246,27 @@ const tmp4 = () => {
         if (null != message) {
           const channel = store4.getChannel(message.channel_id);
           if (self(closure_3[186]).MessageAccessibilityAction.VIEW_PROFILE === messageAccessibilityActionFromLabel) {
-            let author;
-            if (null != message) {
-              author = message.author;
-            }
-            if (null != author) {
-              obj = { userId: author.id };
-              let id;
+            if (message.type === closure_54.FRIEND_REQUEST_ACCEPTED) {
               if (null != channel) {
-                id = channel.id;
+                if (channel.isDM()) {
+                  let id = channel.getRecipientId();
+                }
+                if (null != id) {
+                  obj = { userId: id };
+                  id = undefined;
+                  if (null != channel) {
+                    id = channel.id;
+                  }
+                  obj.channelId = id;
+                  obj.messageId = messageId;
+                  callback(closure_3[71])(obj);
+                  const tmp14 = callback(closure_3[71]);
+                }
               }
-              obj.channelId = id;
-              obj.messageId = messageId;
-              callback(closure_3[71])(obj);
-              const tmp11 = callback(closure_3[71]);
+            }
+            const author2 = message.author;
+            if (null != author2) {
+              id = author2.id;
             }
           } else if (self(closure_3[186]).MessageAccessibilityAction.REPLY === messageAccessibilityActionFromLabel) {
             if (null != channel) {
@@ -2269,14 +2276,14 @@ const tmp4 = () => {
           } else if (self(closure_3[186]).MessageAccessibilityAction.ADD_REACTION === messageAccessibilityActionFromLabel) {
             if (null != channel) {
               const result = self(closure_3[62]).handleAddNewReactions(channel, message.id);
-              const obj8 = self(closure_3[62]);
+              const obj9 = self(closure_3[62]);
             }
           } else if (self(closure_3[186]).MessageAccessibilityAction.MESSAGE_ACTIONS_MENU === messageAccessibilityActionFromLabel) {
             if (null != channel) {
               obj1 = { channel, message, canAddNewReactions: callback(closure_3[78])(channel) };
               let id1;
               if (null != message) {
-                author = message.author;
+                const author = message.author;
                 if (null != author) {
                   id1 = author.id;
                 }
@@ -2284,18 +2291,22 @@ const tmp4 = () => {
               obj1.user = authStore.getUser(id1);
               obj1.chatInputRef = self.params.chatInputRef;
               const result1 = self(closure_3[77]).showLongPressMessageActionSheet(obj1);
-              const obj6 = self(closure_3[77]);
+              const obj7 = self(closure_3[77]);
             }
           } else if (self(closure_3[186]).MessageAccessibilityAction.ADD_QUICK_REACTION === messageAccessibilityActionFromLabel) {
             if (null != channel) {
               const result2 = self(closure_3[88]).handleAddDefaultDoubleTapReaction(message, channel);
-              const obj5 = self(closure_3[88]);
+              const obj6 = self(closure_3[88]);
             }
           } else if (self(closure_3[186]).MessageAccessibilityAction.EDIT_GDM === messageAccessibilityActionFromLabel) {
             if (null != channel) {
               const obj2 = { channelId: channel.id };
               callback(closure_3[187])(obj2);
             }
+          } else if (self(closure_3[186]).MessageAccessibilityAction.OPEN_PINS === messageAccessibilityActionFromLabel) {
+            callback(closure_3[188])(message.channel_id, "pinned-message-system-message");
+          } else if (self(closure_3[186]).MessageAccessibilityAction.JUMP_TO_MESSAGE === messageAccessibilityActionFromLabel) {
+            callback(closure_3[189])(message);
           }
         }
       };
@@ -2303,7 +2314,7 @@ const tmp4 = () => {
         const params = self.params;
         const message = params.getMessage(self(closure_3[41]).getNativeSyntheticEventData(nativeEvent).messageId);
         if (null != message) {
-          callback(closure_3[188])(message);
+          callback(closure_3[190])(message);
         }
       };
       this.handleTapInlineForward = (nativeEvent) => {
@@ -2312,7 +2323,7 @@ const tmp4 = () => {
         const params = self.params;
         const message = params.getMessage(nativeSyntheticEventData.messageId);
         if (null != message) {
-          const inlineForwardOptions = self(closure_3[189]).getInlineForwardOptions(message, nativeSyntheticEventData);
+          const inlineForwardOptions = self(closure_3[191]).getInlineForwardOptions(message, nativeSyntheticEventData);
           if (null != inlineForwardOptions) {
             const _Object = Object;
             if (nativeEvent.nativeEvent.triggerHaptic) {
@@ -2331,15 +2342,15 @@ const tmp4 = () => {
               tmp9 = inlineForwardOptions;
             }
             obj.forwardOptions = tmp9;
-            self(closure_3[190]).openForwardModal(obj);
-            const obj3 = self(closure_3[190]);
+            self(closure_3[192]).openForwardModal(obj);
+            const obj3 = self(closure_3[192]);
           }
-          const obj5 = self(closure_3[189]);
+          const obj5 = self(closure_3[191]);
         }
       };
       this.handleTapSoundmoji = (nativeEvent) => {
         const nativeSyntheticEventData = self(closure_3[41]).getNativeSyntheticEventData(nativeEvent);
-        callback(closure_3[191])(nativeSyntheticEventData);
+        callback(closure_3[193])(nativeSyntheticEventData);
       };
       this.handleTapClanTagChiplet = (nativeEvent) => {
         let obj = self(closure_3[41]);
@@ -2359,8 +2370,8 @@ const tmp4 = () => {
         if (null != message) {
           obj = { message };
           ({ authorId: obj3.authorId, contentId: obj3.contentId, tappedElement: obj3.tappedElement } = tmp2);
-          const result = self(closure_3[192]).onTapContentInventoryEntryEmbed(obj);
-          const obj2 = self(closure_3[192]);
+          const result = self(closure_3[194]).onTapContentInventoryEntryEmbed(obj);
+          const obj2 = self(closure_3[194]);
         }
       };
       this.handleTapCheckpointCard = (nativeEvent) => {
@@ -2369,8 +2380,8 @@ const tmp4 = () => {
         const message = self.params.getMessage(nativeSyntheticEventData.messageId);
         if (null != message) {
           obj = { message, authorId: tmp2.authorId };
-          self(closure_3[193]).onTapCheckpointCard(obj);
-          const obj2 = self(closure_3[193]);
+          self(closure_3[195]).onTapCheckpointCard(obj);
+          const obj2 = self(closure_3[195]);
         }
       };
       this.handleTapAppMessageEmbed = (nativeEvent) => {
@@ -2381,8 +2392,8 @@ const tmp4 = () => {
           obj = {};
           const merged = Object.assign(nativeSyntheticEventData);
           obj["message"] = message;
-          const result = self(closure_3[194]).handleTapAppMessageEmbed(obj);
-          const obj2 = self(closure_3[194]);
+          const result = self(closure_3[196]).handleTapAppMessageEmbed(obj);
+          const obj2 = self(closure_3[196]);
         }
       };
       this.handleTapPreviewSharedClientTheme = (nativeEvent) => {
@@ -2393,8 +2404,8 @@ const tmp4 = () => {
           obj = {};
           const merged = Object.assign(nativeSyntheticEventData);
           obj["message"] = message;
-          const result = self(closure_3[195]).handleTapPreviewSharedClientTheme(obj);
-          const obj2 = self(closure_3[195]);
+          const result = self(closure_3[197]).handleTapPreviewSharedClientTheme(obj);
+          const obj2 = self(closure_3[197]);
         }
       };
       this.handleSharedClientThemeViewed = (nativeEvent) => {
@@ -2405,8 +2416,8 @@ const tmp4 = () => {
           obj = {};
           const merged = Object.assign(nativeSyntheticEventData);
           obj["message"] = message;
-          const result = self(closure_3[196]).handleSharedClientThemeViewed(obj);
-          const obj2 = self(closure_3[196]);
+          const result = self(closure_3[198]).handleSharedClientThemeViewed(obj);
+          const obj2 = self(closure_3[198]);
         }
       };
       return;
@@ -2464,6 +2475,6 @@ const tmp4 = () => {
   items[1] = obj;
   return callback(MessagesHandlers, items);
 }();
-const result = arg1(dependencyMap[197]).fileFinishedImporting("modules/messages/native/MessagesHandlers.tsx");
+const result = arg1(dependencyMap[199]).fileFinishedImporting("modules/messages/native/MessagesHandlers.tsx");
 
 export const MessagesHandlers = tmp4;

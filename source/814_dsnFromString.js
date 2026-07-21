@@ -125,7 +125,7 @@ export const makeDsn = function makeDsn(arg0) {
       let protocol;
       if (arg0(closure_1[2]).DEBUG_BUILD) {
         ({ port, projectId, protocol } = arg0);
-        const items = [];
+        const items = ["a", "isArray", "body", "x"];
         const found = items.find((arg0) => {
           let flag = !arg0[arg0];
           if (flag) {

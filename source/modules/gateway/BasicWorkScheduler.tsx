@@ -1,9 +1,9 @@
-// Module ID: 12447
-// Function ID: 95093
+// Module ID: 12454
+// Function ID: 95116
 // Name: BasicWorkScheduler
 // Dependencies: []
 
-// Module 12447 (BasicWorkScheduler)
+// Module 12454 (BasicWorkScheduler)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 ({ MAX_DISPATCHER_FLUSH_DEADLINE_TRIES: closure_5, DISPATCHER_STANDARD_TIMEOUT_MS: closure_6, DISPATCHER_IDEAL_TIME_LIMIT_MS: closure_7, DISPATCHER_LONG_TIMEOUT_MS: closure_8 } = arg1(dependencyMap[2]));

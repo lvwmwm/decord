@@ -1,11 +1,11 @@
-// Module ID: 6859
-// Function ID: 54296
+// Module ID: 6863
+// Function ID: 54306
 // Name: AgeRestrictionStatus
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 6859 (AgeRestrictionStatus)
+// Module 6863 (AgeRestrictionStatus)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_common/js/shared/shared-constants/AgeRestrictionStatus.tsx");
 
 export const AgeRestrictionStatus = { EVERYONE: 0, [0]: "EVERYONE", ADULT: 1, [1]: "ADULT" };
-export const AGE_RESTRICTION_STATUS_RESTRICTIVENESS_ORDERING = [null, null];
+export const AGE_RESTRICTION_STATUS_RESTRICTIVENESS_ORDERING = ["Text", "lc"];

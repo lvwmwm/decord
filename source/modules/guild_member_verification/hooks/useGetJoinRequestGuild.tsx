@@ -1,10 +1,10 @@
-// Module ID: 11866
-// Function ID: 91877
+// Module ID: 11873
+// Function ID: 91900
 // Name: useGetGuildJoinRequest
 // Dependencies: []
 // Exports: default
 
-// Module 11866 (useGetGuildJoinRequest)
+// Module 11873 (useGetGuildJoinRequest)
 let closure_3 = importAll(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/guild_member_verification/hooks/useGetJoinRequestGuild.tsx");

@@ -1,10 +1,10 @@
-// Module ID: 15999
-// Function ID: 122790
+// Module ID: 16006
+// Function ID: 122816
 // Name: ConnectGuardianModal
 // Dependencies: []
 // Exports: default
 
-// Module 15999 (ConnectGuardianModal)
+// Module 16006 (ConnectGuardianModal)
 let closure_3 = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 const AnalyticEvents = arg1(dependencyMap[2]).AnalyticEvents;
@@ -68,11 +68,11 @@ export default function ConnectGuardianModal(route) {
   } else {
     obj = { style: tmp.container };
     const obj1 = { style: tmp.header };
-    const obj2 = { Promise: 24, marginTop: 24, flags: null, style: tmp.title };
+    const obj2 = { "Null": 24, "Null": 24, "Null": null, style: tmp.title };
     const intl = arg1(closure_2[12]).intl;
     obj2.children = intl.string(importDefault(closure_2[13]).ITlV6p);
     const items2 = [callback(arg1(closure_2[11]).Text, obj2), ];
-    const obj3 = { Promise: null, marginTop: null, flags: null, style: tmp.description };
+    const obj3 = { "Null": "<string:1178599425>", "Null": "<string:3295084545>", "Null": "<string:1689649153>", style: tmp.description };
     const intl2 = arg1(closure_2[12]).intl;
     const obj4 = { link: "https://support.discord.com/hc/articles/14155060633623" };
     obj3.children = intl2.format(importDefault(closure_2[13]).F4GT2S, obj4);
@@ -96,7 +96,7 @@ export default function ConnectGuardianModal(route) {
     const obj10 = { paddingBottom: importDefault(closure_2[7])().bottom + importDefault(closure_2[6]).space.PX_16 };
     items5[1] = obj10;
     obj9.style = items5;
-    const obj11 = { <string:1522289750>: null, <string:570601313>: null };
+    const obj11 = {};
     const intl4 = arg1(closure_2[12]).intl;
     obj11.text = intl4.string(arg1(closure_2[12]).t.3PatSz);
     obj11.onPress = function onPress() {

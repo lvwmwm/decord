@@ -1,10 +1,10 @@
-// Module ID: 5661
-// Function ID: 48591
+// Module ID: 5663
+// Function ID: 48634
 // Name: canReportUser
 // Dependencies: []
 // Exports: canDeleteAndReportMessage
 
-// Module 5661 (canReportUser)
+// Module 5663 (canReportUser)
 function canReportUser(author) {
   if (null == author) {
     return false;

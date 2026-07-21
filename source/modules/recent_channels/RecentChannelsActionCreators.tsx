@@ -1,10 +1,10 @@
-// Module ID: 9966
-// Function ID: 77051
+// Module ID: 9972
+// Function ID: 77069
 // Name: _bulkClearRecents
 // Dependencies: []
 // Exports: bulkClearRecents
 
-// Module 9966 (_bulkClearRecents)
+// Module 9972 (_bulkClearRecents)
 function _bulkClearRecents() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);

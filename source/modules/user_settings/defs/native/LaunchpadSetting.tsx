@@ -1,9 +1,9 @@
-// Module ID: 14233
-// Function ID: 107581
+// Module ID: 14240
+// Function ID: 107604
 // Name: radio
 // Dependencies: []
 
-// Module 14233 (radio)
+// Module 14240 (radio)
 const LaunchPadTypes = require(dependencyMap[1]).LaunchPadTypes;
 const _module = require(dependencyMap[5]);
 const radio = _module.createRadio({

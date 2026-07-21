@@ -1,9 +1,9 @@
-// Module ID: 7436
-// Function ID: 59665
+// Module ID: 7440
+// Function ID: 59676
 // Name: metadata
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 7436 (metadata)
+// Module 7440 (metadata)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_assets/assets/images/perks/xbox_game_pass.jpg.js");
 

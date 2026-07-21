@@ -1,10 +1,10 @@
-// Module ID: 15477
-// Function ID: 118128
+// Module ID: 15484
+// Function ID: 118152
 // Name: RobloxIcon
 // Dependencies: []
 // Exports: default, useShouldShowRobloxConnectionCoachmark
 
-// Module 15477 (RobloxIcon)
+// Module 15484 (RobloxIcon)
 function RobloxIcon(theme) {
   let obj = arg1(dependencyMap[24]);
   const isThemeDarkResult = obj.isThemeDark(theme.theme);
@@ -33,19 +33,19 @@ class UnionIcon {
       str = "white";
     }
     id = importAll.useId();
-    obj = { aze: 48, azj: 48, bak: 24 };
+    obj = { bhk: "done", bic: null, bih: null };
     obj.id = id;
     tmp2 = importDefault(dependencyMap[28]);
     items = [, ];
-    items[0] = jsx(arg1(dependencyMap[28]).Path, { label: "from", arrow: "absolute" });
+    items[0] = jsx(arg1(dependencyMap[28]).Path, {});
     obj1 = {};
-    obj2 = {};
+    obj2 = { overlayMethod: "absolute", reason: "50%", label_type: "50%", release_phase: 6, label_from: 6, label_until: 2 };
     obj3 = {};
     obj3.stopColor = str;
     obj3.stopOpacity = 0.3;
     items1 = [, ];
     items1[0] = jsx(arg1(dependencyMap[28]).Stop, obj3);
-    obj4 = {};
+    obj4 = { <string:3813802319>: null, <string:1629385330>: null, <string:2053329160>: null };
     obj4.stopColor = str;
     items1[1] = jsx(arg1(dependencyMap[28]).Stop, obj4);
     obj2.children = items1;
@@ -80,7 +80,7 @@ const tmp2 = arg1(dependencyMap[6]);
 ({ jsx: closure_13, jsxs: closure_14 } = arg1(dependencyMap[8]));
 let obj = arg1(dependencyMap[9]);
 obj = {};
-obj = { "Bool(false)": 8, "Bool(false)": "md", "Bool(false)": "done", "Bool(false)": null, "Bool(false)": null, borderRadius: importDefault(dependencyMap[10]).radii.md, backgroundColor: importDefault(dependencyMap[10]).colors.BACKGROUND_BASE_LOWEST };
+obj = { "Bool(false)": "row", "Bool(false)": "center", "Bool(false)": "center", "Bool(false)": 8, "Bool(false)": "md", borderRadius: importDefault(dependencyMap[10]).radii.md, backgroundColor: importDefault(dependencyMap[10]).colors.BACKGROUND_BASE_LOWEST };
 obj.robloxIconContainer = obj;
 const tmp3 = arg1(dependencyMap[8]);
 obj.content = { paddingHorizontal: importDefault(dependencyMap[10]).space.PX_16 };
@@ -110,7 +110,7 @@ export default function RobloxConnectionActionSheet(markAsDismissed) {
     return markAsDismissed(constants4.DISMISS);
   };
   const obj1 = { spacing: 24, style: { paddingBottom: importDefault(dependencyMap[12])().bottom } };
-  const obj2 = { "Null": true, "Null": true, "Null": true };
+  const obj2 = {};
   const items = [callback2(RobloxIcon, { theme }), callback2(UnionIcon, { theme }), callback2(UserIcon, {})];
   obj2.children = items;
   const items1 = [callback3(arg1(dependencyMap[17]).Stack, obj2), , ];
@@ -145,7 +145,7 @@ export default function RobloxConnectionActionSheet(markAsDismissed) {
     markAsDismissed(closure_2[23]).openUserSettings(obj);
   };
   const items3 = [callback2(arg1(dependencyMap[20]).Button, obj7), ];
-  const obj9 = { numberOfLines: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001288229794448861, expandable: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007644663598304258, seeMoreLabel: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000213672782963451 };
+  const obj9 = { height: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000012882297944488626, accessibilityRole: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007645008054038882, hasDiversityParent: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002136451970181684 };
   const intl4 = arg1(dependencyMap[19]).intl;
   obj9.text = intl4.string(arg1(dependencyMap[19]).t.DiGJy3);
   obj9.onPress = handleCancel;

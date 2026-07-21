@@ -1,14 +1,10 @@
-// Module ID: 9137
-// Function ID: 71640
+// Module ID: 9141
+// Function ID: 71652
 // Name: useUserVerificationState
-// Dependencies: [0, 0, 4294967295, 4294967295, 4294967295, 0]
+// Dependencies: []
 // Exports: useSetInitialVerificationEffect
 
-// Module 9137 (useUserVerificationState)
-import closure_2 from "result";
-import closure_3 from "result";
-import result from "result";
-
+// Module 9141 (useUserVerificationState)
 function useUserVerificationState() {
   const items = [closure_3];
   return arg1(dependencyMap[3]).useStateFromStoresObject(items, () => {
@@ -33,9 +29,11 @@ function useInitialVerification(id) {
   const items1 = [id];
   return arg1(dependencyMap[3]).useStateFromStores(items, () => initialVerificationState.getInitialVerificationState(arg0), items1);
 }
+let closure_2 = importAll(dependencyMap[0]);
+let closure_3 = importDefault(dependencyMap[1]);
 let closure_4 = importDefault(dependencyMap[2]);
 const setInitialVerification = arg1(dependencyMap[2]).setInitialVerification;
-result = result.fileFinishedImporting("modules/guild_member_verification/native/MemberVerificationModalHooks.tsx");
+const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/guild_member_verification/native/MemberVerificationModalHooks.tsx");
 
 export const useSetInitialVerificationEffect = function useSetInitialVerificationEffect(guildId) {
   const arg1 = guildId;

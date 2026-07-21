@@ -1,10 +1,10 @@
-// Module ID: 9793
-// Function ID: 76059
+// Module ID: 9798
+// Function ID: 76075
 // Name: PostPurchaseFooter
 // Dependencies: []
 // Exports: default
 
-// Module 9793 (PostPurchaseFooter)
+// Module 9798 (PostPurchaseFooter)
 function PostPurchaseFooter(onSendGift) {
   onSendGift = onSendGift.onSendGift;
   const arg1 = onSendGift;
@@ -23,7 +23,7 @@ function PostPurchaseFooter(onSendGift) {
       rootNavigationRef.navigate("you");
     }
   }, []);
-  obj = { <string:2367986918>: "fa1758b003badba48305d2353659aabf", <string:3096166313>: "ko.messages.fa1758b003badba48305d2353659aabf.compiled.messages" };
+  obj = { renderEmbeds: "e48043bf745ca0395ac959c7415a3757", renderReactions: "sv-SE.messages.e48043bf745ca0395ac959c7415a3757.compiled.messages" };
   obj = { size: "sm", color: importDefault(dependencyMap[7]).colors.CONTROL_PRIMARY_TEXT_DEFAULT };
   obj.icon = callback4(arg1(dependencyMap[12]).GiftIcon, obj);
   const intl = arg1(dependencyMap[13]).intl;
@@ -53,9 +53,7 @@ function InProgressScreen(arg0) {
   obj = { style: tmp.progressWrapper, children: callback4(importDefault(dependencyMap[15]), { progress, currentTier, nextTier, iconSize: 48, title: progressBarTitle }) };
   const items = [callback4(View, obj), ];
   const obj1 = { style: tmp.messageSection };
-  const items1 = [callback4(arg1(dependencyMap[16]).Text, { variant: "heading-xxl/bold", style: tmp.centerText, children: title }), ];
-  const obj3 = { INTEGRATION_CREATE: 3, ConstraintReasonCode: null, style: tmp.centerText, children: description };
-  items1[1] = callback4(arg1(dependencyMap[16]).Text, obj3);
+  const items1 = [callback4(arg1(dependencyMap[16]).Text, { variant: "heading-xxl/bold", style: tmp.centerText, children: title }), callback4(arg1(dependencyMap[16]).Text, { style: tmp.centerText, children: description })];
   obj1.children = items1;
   items[1] = callback5(View, obj1);
   obj.children = items;
@@ -142,12 +140,12 @@ let closure_12 = arg1(dependencyMap[6]).createStyles((arg0) => {
   obj.content = obj;
   obj = { padding: importDefault(dependencyMap[7]).space.PX_16, width: "100%", marginBottom: importDefault(dependencyMap[7]).space.PX_24 };
   obj.progressWrapper = obj;
-  const obj1 = { -1906669242: true, 1340965361: true, -1537835227: true, gap: importDefault(dependencyMap[7]).space.PX_12, paddingHorizontal: importDefault(dependencyMap[7]).space.PX_16 };
+  const obj1 = { -1915347898: true, -1812910863: true, 1236479781: true, gap: importDefault(dependencyMap[7]).space.PX_12, paddingHorizontal: importDefault(dependencyMap[7]).space.PX_16 };
   obj.messageSection = obj1;
   obj.centerText = { textAlign: "center" };
-  const obj2 = { value: null, alignItems: null, marginBottom: importDefault(dependencyMap[7]).space.PX_48 };
+  const obj2 = { flex: null, display: null, marginBottom: importDefault(dependencyMap[7]).space.PX_48 };
   obj.levelUpIconWrapper = obj2;
-  const obj3 = { -1906669242: true, 1340965361: true, -1537835227: true, gap: importDefault(dependencyMap[7]).space.PX_12 };
+  const obj3 = { -1915347898: true, -1812910863: true, 1236479781: true, gap: importDefault(dependencyMap[7]).space.PX_12 };
   obj.levelUpBody = obj3;
   obj.levelUpProgress = { maxWidth: 260 };
   obj.footer = { width: "100%", gap: importDefault(dependencyMap[7]).space.PX_12, paddingHorizontal: importDefault(dependencyMap[7]).space.PX_16, paddingBottom: importDefault(dependencyMap[7]).space.PX_16 + arg0 };

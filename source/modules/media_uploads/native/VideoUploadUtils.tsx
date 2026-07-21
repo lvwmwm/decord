@@ -1,10 +1,10 @@
-// Module ID: 4693
-// Function ID: 40839
+// Module ID: 4695
+// Function ID: 40880
 // Name: calculateTargetDimensions
 // Dependencies: []
 // Exports: calculateOptimalBitrate, canSkipVideoTranscode, logEncoderSettings, logSourceMetadata, shouldUseHEVC
 
-// Module 4693 (calculateTargetDimensions)
+// Module 4695 (calculateTargetDimensions)
 function calculateTargetDimensions(videoMetadata, targetResolution) {
   const result = videoMetadata.width / videoMetadata.height;
   if (videoMetadata.width > videoMetadata.height) {
@@ -119,7 +119,7 @@ export const canSkipVideoTranscode = function canSkipVideoTranscode(result, vide
 export const logSourceMetadata = function logSourceMetadata(format) {
   let str = "unknown";
   if (null != format.format) {
-    format = { "Null": null, "Null": null }[format.format];
+    format = { 1: null, 4096: null }[format.format];
     if (null == format) {
       format = format.format;
     }

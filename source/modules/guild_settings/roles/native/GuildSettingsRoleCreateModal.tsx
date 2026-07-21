@@ -1,10 +1,10 @@
-// Module ID: 16163
-// Function ID: 124744
+// Module ID: 16170
+// Function ID: 124775
 // Name: logTransitionEvent
 // Dependencies: []
 // Exports: default
 
-// Module 16163 (logTransitionEvent)
+// Module 16170 (logTransitionEvent)
 function logTransitionEvent(from_step, FLOW_DISMISSED, skip, guildId) {
   let obj = importDefault(dependencyMap[14]);
   obj = { flow_type: constants2.GUILD_ROLE_CREATION_MODAL, from_step, to_step: FLOW_DISMISSED, skip };
@@ -367,18 +367,18 @@ let obj1 = arg1(dependencyMap[11]);
 let obj = {};
 obj = { marginTop: arg1(dependencyMap[12]).NAV_BAR_HEIGHT, flexGrow: 1, paddingBottom: importDefault(dependencyMap[13]).space.PX_16 };
 obj.container = obj;
-obj.sceneHeader = {};
+obj.sceneHeader = { 304631162: 2137063425, -309048237: 95420418, 1382813458: -2075787263 };
 obj.sceneSubtitle = {};
 obj.sceneContent = { flex: 1 };
 obj1 = { flex: 1, paddingHorizontal: importDefault(dependencyMap[13]).space.PX_16 };
 obj.sceneInner = obj1;
-obj.colorTrailing = { -9223372036854775808: true, filter: true };
+obj.colorTrailing = {};
 obj.colorBlock = {};
 const tmp5 = arg1(dependencyMap[10]);
 obj.sceneFooter = { paddingBottom: 8, paddingHorizontal: importDefault(dependencyMap[13]).space.PX_16 };
 obj.nextButton = {};
-const obj2 = { paddingBottom: 8, paddingHorizontal: importDefault(dependencyMap[13]).space.PX_16 };
-obj.nextButtonFloating = { backgroundColor: importDefault(dependencyMap[13]).colors.BACKGROUND_BASE_LOWER };
+const obj3 = { 1415740345: 589823, 1650222166: 1091633152, backgroundColor: importDefault(dependencyMap[13]).colors.BACKGROUND_BASE_LOWER };
+obj.nextButtonFloating = obj3;
 let closure_24 = obj1.createStyles(obj);
 const obj4 = { STEP_DISPLAY: "STEP_DISPLAY", STEP_PERMISSIONS: "STEP_PERMISSIONS", STEP_MEMBERS: "STEP_MEMBERS" };
 let closure_26 = { [obj4.STEP_DISPLAY]: "Role Display", [obj4.STEP_PERMISSIONS]: "Role Permissions", [obj4.STEP_MEMBERS]: "Role Members", ["FLOW_INITIALIZED"]: "Flow Initialized", ["FLOW_DISMISSED"]: "Flow Dismissed", ["FLOW_COMPLETED"]: "Flow Completed" };
@@ -412,7 +412,7 @@ let closure_28 = {
     }
   }
 };
-const obj3 = { backgroundColor: importDefault(dependencyMap[13]).colors.BACKGROUND_BASE_LOWER };
+const obj2 = { paddingBottom: 8, paddingHorizontal: importDefault(dependencyMap[13]).space.PX_16 };
 const obj5 = {
   fullscreen: true,
   render() {

@@ -1,17 +1,17 @@
-// Module ID: 12020
-// Function ID: 92904
+// Module ID: 12027
+// Function ID: 92927
 // Name: UserProfileMutuals
 // Dependencies: []
 // Exports: default
 
-// Module 12020 (UserProfileMutuals)
+// Module 12027 (UserProfileMutuals)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 const UserProfileSections = arg1(dependencyMap[2]).UserProfileSections;
 const DIVIDER_DOT = arg1(dependencyMap[3]).DIVIDER_DOT;
 ({ jsx: closure_6, jsxs: closure_7 } = arg1(dependencyMap[4]));
 const tmp3 = arg1(dependencyMap[4]);
-let closure_8 = arg1(dependencyMap[5]).createStyles({ container: { marginLeft: false, marginTop: false, borderRadius: false }, section: {} });
+let closure_8 = arg1(dependencyMap[5]).createStyles({ container: {}, section: {} });
 const obj = arg1(dependencyMap[5]);
 const result = arg1(dependencyMap[22]).fileFinishedImporting("modules/user_profile/native/UserProfileMutuals.tsx");
 

@@ -1,10 +1,10 @@
-// Module ID: 12304
-// Function ID: 94304
+// Module ID: 12311
+// Function ID: 94327
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 // Exports: default
 
-// Module 12304 (_isNativeReflectConstruct)
+// Module 12311 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -32,13 +32,13 @@ const FractionalPremiumStates = arg1(dependencyMap[13]).FractionalPremiumStates;
 const tmp4 = arg1(dependencyMap[12]);
 ({ jsx: closure_19, jsxs: closure_20 } = arg1(dependencyMap[14]));
 let obj = arg1(dependencyMap[15]);
-obj = { upsellSection: { position: "relative" }, background: { "Bool(true)": "<string:218103808>", "Bool(true)": "<string:218103808>" } };
-obj = { -73375132: "\u{1F469}\u{1F3FD}\u200D\u{1F9BC}\u200D\u27A1\uFE0F", -1709354548: true, -1597218204: null, backgroundColor: arg1(dependencyMap[16]).DARK_TRANSPARENT_LIGHT_WHITE_500 };
+obj = { upsellSection: { position: "relative" }, background: {} };
+obj = { zIndex: "\u{1F469}\u{1F3FD}\u200D\u{1F9BC}\u200D\u27A1\uFE0F", borderRadius: true, position: null, backgroundColor: arg1(dependencyMap[16]).DARK_TRANSPARENT_LIGHT_WHITE_500 };
 obj.scroller = obj;
-obj.subscriptionHeader = { edges: 826347876, onKeyboardMoveStart: 1912603216 };
+obj.subscriptionHeader = { "Null": "SERVER_GUIDE_CHANNEL_SELECTED", "Null": "canLaunchActivity" };
 obj.blurb = { lineHeight: 18 };
 obj.blurbNotLast = { marginBottom: 8 };
-obj.boostingUnavailablePill = { "Bool(false)": "center", "Bool(false)": "center" };
+obj.boostingUnavailablePill = { position: "center", height: "center" };
 obj.externalManagement = { marginTop: 8 };
 let closure_21 = obj.createLegacyClassComponentStyles(obj);
 const tmp6 = (PureComponent) => {

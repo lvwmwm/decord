@@ -1,9 +1,9 @@
-// Module ID: 6797
-// Function ID: 53626
+// Module ID: 6803
+// Function ID: 53675
 // Name: FeaturedCategorySubblockRecord
 // Dependencies: []
 
-// Module 6797 (FeaturedCategorySubblockRecord)
+// Module 6803 (FeaturedCategorySubblockRecord)
 let closure_2 = importDefault(dependencyMap[0]);
 let closure_3 = importDefault(dependencyMap[1]);
 const tmp2 = () => {

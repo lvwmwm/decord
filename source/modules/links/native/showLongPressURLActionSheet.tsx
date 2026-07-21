@@ -1,10 +1,10 @@
-// Module ID: 9512
-// Function ID: 74041
+// Module ID: 9517
+// Function ID: 74057
 // Name: showLongPressURLActionSheet
 // Dependencies: []
 // Exports: default
 
-// Module 9512 (showLongPressURLActionSheet)
+// Module 9517 (showLongPressURLActionSheet)
 const _module = require(dependencyMap[8]);
 const result = _module.fileFinishedImporting("modules/links/native/showLongPressURLActionSheet.tsx");
 
@@ -78,7 +78,7 @@ export default function showLongPressURLActionSheet(urlString) {
     const intl5 = require(dependencyMap[1]).intl;
     obj4.label = intl5.string(require(dependencyMap[1]).t.aW2YlJ);
     obj4.onPress = function onPress() {
-      callback(channelId[6])({ guildId: callback, channelId, messageId: closure_3, navigationSettings: { justifyContent: null, alignItems: null } });
+      callback(channelId[6])({ guildId: callback, channelId, messageId: closure_3, navigationSettings: { 9223372036854775807: null, 9223372036854775807: null } });
     };
     items1.unshift(obj4);
   }

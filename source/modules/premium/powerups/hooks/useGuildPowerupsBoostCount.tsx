@@ -68,7 +68,7 @@ export default function useGuildAppliedBoostCount(guildId) {
       obj.isLoading = false;
       return obj;
     }
-    obj = { "Bool(false)": 1359020036, "Bool(false)": 1627562395, "Bool(false)": 1631142371, "Bool(false)": 1091633156, total: num };
+    obj = { total: num };
     return obj;
   }, items3);
 };
@@ -106,6 +106,6 @@ export const getGuildPowerupsBoostCount = function getGuildPowerupsBoostCount(id
     obj.total = num;
     return obj;
   }
-  obj = { "Null": false, "Null": true, total: num };
+  obj = { 0: -536870861, 0: -299892737, total: num };
   return obj;
 };

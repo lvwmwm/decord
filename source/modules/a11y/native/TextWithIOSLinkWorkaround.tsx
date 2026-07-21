@@ -1,10 +1,10 @@
-// Module ID: 5455
-// Function ID: 46568
+// Module ID: 5457
+// Function ID: 46610
 // Name: findLinks
 // Dependencies: []
 // Exports: TextWithIOSLinkWorkaround
 
-// Module 5455 (findLinks)
+// Module 5457 (findLinks)
 function findLinks(children) {
   const Children = React.Children;
   const found = Children.toArray(children).filter(React.isValidElement);
@@ -31,7 +31,7 @@ let closure_2 = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 ({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[2]));
 const tmp2 = arg1(dependencyMap[2]);
-let closure_6 = arg1(dependencyMap[3]).createStyles({ column: { VOICE_WATCHDOG_TIMEOUT: true, staticAuthSessionId: true } });
+let closure_6 = arg1(dependencyMap[3]).createStyles({ column: { "Null": true, "Null": "/assets/.cache/intl/bW9kdWxlcy9nb19saXZlL3dlYi9tb2RhbA==" } });
 const obj = arg1(dependencyMap[3]);
 const result = arg1(dependencyMap[8]).fileFinishedImporting("modules/a11y/native/TextWithIOSLinkWorkaround.tsx");
 

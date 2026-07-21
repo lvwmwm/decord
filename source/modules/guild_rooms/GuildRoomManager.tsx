@@ -1,14 +1,9 @@
-// Module ID: 15912
-// Function ID: 122004
+// Module ID: 15919
+// Function ID: 122028
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [0, 0, 0, 0]
+// Dependencies: []
 
-// Module 15912 (_createForOfIteratorHelperLoose)
-import result from "result";
-import closure_4 from "result";
-import closure_5 from "result";
-import closure_6 from "result";
-
+// Module 15919 (_createForOfIteratorHelperLoose)
 function _createForOfIteratorHelperLoose(@@iterator) {
   let arg1 = Symbol_iterator;
   @@iterator = "undefined" !== typeof Symbol;
@@ -97,6 +92,10 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
+let closure_3 = importDefault(dependencyMap[0]);
+let closure_4 = importDefault(dependencyMap[1]);
+let closure_5 = importDefault(dependencyMap[2]);
+let closure_6 = importDefault(dependencyMap[3]);
 let closure_7 = importDefault(dependencyMap[4]);
 let closure_8 = importDefault(dependencyMap[5]);
 let closure_9 = importDefault(dependencyMap[6]);

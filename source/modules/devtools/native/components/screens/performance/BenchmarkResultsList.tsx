@@ -1,10 +1,10 @@
-// Module ID: 14571
-// Function ID: 109853
+// Module ID: 14578
+// Function ID: 109875
 // Name: BenchmarkResultsList
 // Dependencies: []
 // Exports: default
 
-// Module 14571 (BenchmarkResultsList)
+// Module 14578 (BenchmarkResultsList)
 importAll(dependencyMap[0]);
 ({ jsx: closure_2, jsxs: closure_3 } = arg1(dependencyMap[1]));
 const tmp3 = arg1(dependencyMap[1]);
@@ -14,7 +14,7 @@ export default function BenchmarkResultsList(results) {
   results = results.results;
   let tmp2 = null;
   if (0 !== results.length) {
-    let obj = { width: 26, height: null };
+    let obj = { "Bool(false)": 26, "Bool(false)": null };
     const items = [
       results.map((kind) => {
           let elapsedMs;

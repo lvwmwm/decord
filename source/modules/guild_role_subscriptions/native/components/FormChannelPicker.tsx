@@ -1,15 +1,15 @@
-// Module ID: 16309
-// Function ID: 125899
+// Module ID: 16316
+// Function ID: 125930
 // Name: FormChannelPicker
 // Dependencies: []
 // Exports: default
 
-// Module 16309 (FormChannelPicker)
+// Module 16316 (FormChannelPicker)
 importAll(dependencyMap[0]);
 let closure_3 = importDefault(dependencyMap[1]);
 ({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[2]));
 const tmp3 = arg1(dependencyMap[2]);
-let closure_6 = arg1(dependencyMap[3]).createStyles({ container: {}, content: {} });
+let closure_6 = arg1(dependencyMap[3]).createStyles({ container: {}, content: { 1637379992: null, -2070850841: null } });
 const obj = arg1(dependencyMap[3]);
 const result = arg1(dependencyMap[17]).fileFinishedImporting("modules/guild_role_subscriptions/native/components/FormChannelPicker.tsx");
 

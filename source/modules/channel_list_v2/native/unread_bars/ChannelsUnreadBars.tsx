@@ -1,9 +1,9 @@
-// Module ID: 14875
-// Function ID: 112045
+// Module ID: 14882
+// Function ID: 112069
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 
-// Module 14875 (_createForOfIteratorHelperLoose)
+// Module 14882 (_createForOfIteratorHelperLoose)
 function _createForOfIteratorHelperLoose(@@iterator) {
   let arg1 = Symbol_iterator;
   @@iterator = "undefined" !== typeof Symbol;
@@ -178,7 +178,7 @@ function findNearestUnreadItem(containerSize, id) {
     if (null != layoutStart) {
       tmp7 = layoutStart;
     }
-    let obj = { borderWidth: false, backgroundColor: false };
+    let obj = { flexDirection: false, alignItems: false };
     const diff = tmp7 + containerSize.containerSize - arg2 - arg3;
     const tmp11 = _createForOfIteratorHelperLoose(containerSize.state.items);
     const iter = tmp11();
@@ -353,7 +353,7 @@ const UnreadSetting = arg1(dependencyMap[9]).UnreadSetting;
 const tmp3 = arg1(dependencyMap[10]);
 let closure_15 = arg1(dependencyMap[11]).createStyles({ wrapper: tmp2.StyleSheet.absoluteFillObject });
 let closure_16 = { MENTION: "mention", UNREAD: "unread" };
-let closure_17 = { lineClamp: false, ellipsizeMode: false };
+let closure_17 = { variant: "o", lineClamp: "o" };
 let closure_18 = { code: "function ChannelsUnreadBarsTsx1(){const{scrollPosValue}=this.__closure;return scrollPosValue.get();}" };
 let closure_19 = { code: "function ChannelsUnreadBarsTsx2(position,lastPosition){const{runOnJS,debouncedUpdate}=this.__closure;if(position!==lastPosition){runOnJS(debouncedUpdate)();}}" };
 const obj = { wrapper: tmp2.StyleSheet.absoluteFillObject };

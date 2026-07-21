@@ -4,12 +4,12 @@
 // Dependencies: []
 
 // Module 3935 (ThemeAwareNitroWishlistingWumpusRive)
-let closure_3 = ["aria-current", "activeClassName", "activeStyle", "className", "exact", "isActive"];
+let closure_3 = [true, true, true, true, true, true];
 let closure_4 = importDefault(dependencyMap[0]);
 const importAllResult = importAll(dependencyMap[1]);
 const jsx = arg1(dependencyMap[2]).jsx;
-let closure_7 = { Nitro Wishlist: { HOME: "<string:2066808836>", APP_DETAIL: "<string:3779571220>" } };
-let closure_8 = { Nitro Wishlist: ["isActive"] };
+let closure_7 = { Nitro Wishlist: { type: null, revision: null } };
+let closure_8 = { Nitro Wishlist: [1358955054] };
 let closure_9 = {
   Nitro Wishlist: function NitroWishlistBindings(reducedMotionEnabled) {
     let dataBinding;

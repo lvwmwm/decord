@@ -1,10 +1,10 @@
-// Module ID: 10215
-// Function ID: 78950
+// Module ID: 10221
+// Function ID: 78968
 // Name: isMessageContentPreviewable
 // Dependencies: []
 // Exports: useFormattedMessagePreview
 
-// Module 10215 (isMessageContentPreviewable)
+// Module 10221 (isMessageContentPreviewable)
 function isMessageContentPreviewable(messageRecord) {
   const type = messageRecord.type;
   if (arg1(dependencyMap[4]).MessageTypes.DEFAULT !== type) {
@@ -75,13 +75,13 @@ function formatMessagePreview(type, isBlocked) {
             everyResult2 = attachments3.every((filename) => callback(closure_2[9]).isAudioFile(filename.filename));
           }
           if (everyResult) {
-            const obj2 = { position: "key", left: "Text", right: "Icon" };
+            const obj2 = {};
             const intl10 = callback(closure_2[8]).intl;
             const obj3 = { count: embeds.attachments.length };
             obj2.text = intl10.formatToPlainString(callback(closure_2[8]).t.h4pFfU, obj3);
             let obj8 = obj2;
           } else if (everyResult1) {
-            const obj4 = { position: "Array", left: "bounds", right: "r" };
+            const obj4 = { 9223372036854775807: null, 0: null, 9223372036854775807: null };
             const intl9 = callback(closure_2[8]).intl;
             const obj5 = { count: embeds.attachments.length };
             obj4.text = intl9.formatToPlainString(callback(closure_2[8]).t.SJ6pPX, obj5);
@@ -134,13 +134,13 @@ function formatMessagePreview(type, isBlocked) {
             });
           }
           if (everyResult3) {
-            const obj10 = { position: "key", left: "Text", right: "Icon" };
+            const obj10 = {};
             const intl6 = callback(closure_2[8]).intl;
             const obj11 = { count: embeds.embeds.length };
             obj10.text = intl6.formatToPlainString(callback(closure_2[8]).t.h4pFfU, obj11);
             let obj18 = obj10;
           } else if (everyResult4) {
-            const obj12 = { position: "Array", left: "bounds", right: "r" };
+            const obj12 = { 9223372036854775807: null, 0: null, 9223372036854775807: null };
             const intl5 = callback(closure_2[8]).intl;
             const obj13 = { count: embeds.embeds.length };
             obj12.text = intl5.formatToPlainString(callback(closure_2[8]).t.SJ6pPX, obj13);
@@ -164,14 +164,14 @@ function formatMessagePreview(type, isBlocked) {
                 obj18 = obj17;
               }
             }
-            obj18 = { position: "r", left: "isArray", right: "x" };
+            obj18 = { 9223372036854775807: 1749155842, 0: 1778385352, 9223372036854775807: 285212960 };
             const intl3 = callback(closure_2[8]).intl;
             const obj19 = { count: embeds.embeds.length };
             obj18.text = intl3.formatToPlainString(callback(closure_2[8]).t.9XuYjs, obj19);
           }
           return obj18;
         } else if (embeds.stickerItems.length > 0) {
-          const obj20 = { position: false, left: false, right: false, text: embeds.stickerItems[0].name };
+          const obj20 = { 9223372036854775807: "RTC_CONNECTION_LOSS_RATE", 0: "handleJoinThreadVoice", 9223372036854775807: "toString", text: embeds.stickerItems[0].name };
           return obj20;
         } else if (embeds.isPoll()) {
           const obj21 = { type: "text" };

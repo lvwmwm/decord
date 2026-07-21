@@ -1,10 +1,10 @@
-// Module ID: 10990
-// Function ID: 85526
+// Module ID: 10995
+// Function ID: 85547
 // Name: getPromiseableActionHandlers
 // Dependencies: []
 // Exports: getPromiseableActionHandlers, openAutomodProfileQuarantineAlert, openConfirmRemoveMentionRaid, openRaidResolveModal, openSubmitFeedback
 
-// Module 10990 (getPromiseableActionHandlers)
+// Module 10995 (getPromiseableActionHandlers)
 importAll(dependencyMap[0]);
 ({ AutomodActionType: closure_3, SUBMIT_FEEDBACK_MODAL_KEY: closure_4 } = arg1(dependencyMap[1]));
 const jsx = arg1(dependencyMap[2]).jsx;

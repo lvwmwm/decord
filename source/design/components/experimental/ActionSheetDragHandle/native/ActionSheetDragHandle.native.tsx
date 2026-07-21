@@ -1,28 +1,24 @@
-// Module ID: 8370
-// Function ID: 66686
+// Module ID: 8374
+// Function ID: 66698
 // Name: ActionSheetDragHandle
-// Dependencies: [0, 0, 4294967295, 0, 0, 0, 0, 0, 0]
+// Dependencies: []
 
-// Module 8370 (ActionSheetDragHandle)
-import result from "result";
-import importAllResult from "result";
-import { jsx } from "result";
-import result from "result";
-import result from "result";
-
+// Module 8374 (ActionSheetDragHandle)
 let DRAG_HANDLE_BAR_HEIGHT;
 let DRAG_HANDLE_HEIGHT;
 let DRAG_HANDLE_PADDING;
-({ TouchableWithoutFeedback: closure_3, View: closure_4 } = result);
+const importAllResult = importAll(dependencyMap[0]);
+({ TouchableWithoutFeedback: closure_3, View: closure_4 } = arg1(dependencyMap[1]));
+const tmp2 = arg1(dependencyMap[1]);
 ({ DRAG_HANDLE_BAR_HEIGHT, DRAG_HANDLE_PADDING, DRAG_HANDLE_HEIGHT } = arg1(dependencyMap[2]));
-let obj = { container: { height: DRAG_HANDLE_HEIGHT }, containerOverlay: {}, handle: { alignItems: "center", paddingVertical: DRAG_HANDLE_PADDING } };
-obj = { backgroundColor: require("result").colors.ICON_MUTED, borderRadius: require("result").radii.xs, height: DRAG_HANDLE_BAR_HEIGHT, width: 31 };
-obj.bar = obj;
-let closure_6 = result.createStyles(obj);
+const jsx = arg1(dependencyMap[3]).jsx;
 const tmp3 = arg1(dependencyMap[2]);
-result = result.fileFinishedImporting("design/components/experimental/ActionSheetDragHandle/native/ActionSheetDragHandle.native.tsx");
-
-export const ActionSheetDragHandle = importAllResult.memo((accessibilityLabel) => {
+let obj = { container: { height: DRAG_HANDLE_HEIGHT }, containerOverlay: {}, handle: { alignItems: "center", paddingVertical: DRAG_HANDLE_PADDING } };
+obj = { backgroundColor: importDefault(dependencyMap[5]).colors.ICON_MUTED, borderRadius: importDefault(dependencyMap[5]).radii.xs, height: DRAG_HANDLE_BAR_HEIGHT, width: 31 };
+obj.bar = obj;
+let closure_6 = arg1(dependencyMap[4]).createStyles(obj);
+const obj2 = arg1(dependencyMap[4]);
+const memoResult = importAllResult.memo((accessibilityLabel) => {
   let onPress;
   let overlay;
   accessibilityLabel = accessibilityLabel.accessibilityLabel;
@@ -59,3 +55,6 @@ export const ActionSheetDragHandle = importAllResult.memo((accessibilityLabel) =
   obj.children = <closure_4 {...obj} />;
   return <closure_3 {...obj} />;
 });
+const result = arg1(dependencyMap[8]).fileFinishedImporting("design/components/experimental/ActionSheetDragHandle/native/ActionSheetDragHandle.native.tsx");
+
+export const ActionSheetDragHandle = memoResult;

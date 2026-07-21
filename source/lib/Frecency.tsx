@@ -1,9 +1,9 @@
-// Module ID: 4206
-// Function ID: 36519
+// Module ID: 4210
+// Function ID: 36567
 // Name: DEFAULT_FRECENCY
 // Dependencies: []
 
-// Module 4206 (DEFAULT_FRECENCY)
+// Module 4210 (DEFAULT_FRECENCY)
 let closure_2 = importDefault(dependencyMap[0]);
 let closure_3 = importDefault(dependencyMap[1]);
 function DEFAULT_FRECENCY(arg0, arg1, numOfRecentUses) {

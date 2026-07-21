@@ -1,9 +1,9 @@
-// Module ID: 12622
-// Function ID: 97120
+// Module ID: 12629
+// Function ID: 97143
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 
-// Module 12622 (_createForOfIteratorHelperLoose)
+// Module 12629 (_createForOfIteratorHelperLoose)
 function _createForOfIteratorHelperLoose(@@iterator) {
   let arg1 = Symbol_iterator;
   @@iterator = "undefined" !== typeof Symbol;
@@ -569,8 +569,8 @@ const tmp2 = (arg0) => {
             }
           });
         }
-        const items = [];
-        const items1 = ["<string:1362814426>", "<string:1480762126>", "<string:1426063922>", "<string:1358954940>", "<string:239164073>", "<string:1358955580>", "<string:4115790039>"];
+        const items = ["alignItems", "Array", "isArray", "userId", "key", "Array"];
+        const items1 = [];
         vmafHistogram = vmafHistogram.vmafHistogram;
         const report = vmafHistogram.getReport(items);
         const psnrHistogram = vmafHistogram.psnrHistogram;
@@ -955,17 +955,17 @@ const tmp2 = (arg0) => {
         }
         const _Math = Math;
         const result = Math.max(aggregationDuration.aggregationDuration, 0) / 1000;
-        const items = [];
+        const items = ["alignItems", "Array", "isArray", "userId", "key", "Array"];
         const fpsHistogram = aggregationDuration.fpsHistogram;
         const report = fpsHistogram.getReport(items);
         const bitrateHistogram = aggregationDuration.bitrateHistogram;
-        const report1 = bitrateHistogram.getReport(["<string:1362814426>", "<string:1480762126>", "<string:1426063922>", "<string:1358954940>", "<string:239164073>", "<string:1358955580>", "<string:4115790039>"]);
+        const report1 = bitrateHistogram.getReport([]);
         const resolutionHistogram = aggregationDuration.resolutionHistogram;
         const report2 = resolutionHistogram.getReport(items);
         const inboundBitrateEstimateHistogram = aggregationDuration.inboundBitrateEstimateHistogram;
-        const report3 = inboundBitrateEstimateHistogram.getReport(["<string:1362814426>", "<string:1480762126>", "<string:1426063922>", "<string:1358954940>", "<string:239164073>", "<string:1358955580>", "<string:4115790039>"]);
+        const report3 = inboundBitrateEstimateHistogram.getReport([]);
         const localWantHistogram = aggregationDuration.localWantHistogram;
-        const report4 = localWantHistogram.getReport([]);
+        const report4 = localWantHistogram.getReport(["<string:32069376>", "<string:48068096>", "<string:48068608>", "<string:48068864>", "<string:28737792>", "<string:205676800>", "<string:1442840989>", "<string:1124073799>"]);
         const systemResources = aggregationDuration.systemResources;
         const stats = systemResources.getStats();
         let obj = {};

@@ -1,10 +1,10 @@
-// Module ID: 10920
-// Function ID: 84917
+// Module ID: 10925
+// Function ID: 84938
 // Name: QuestCollectibleRewardModalMessages
 // Dependencies: []
 // Exports: openQuestCollectibleRewardModal
 
-// Module 10920 (QuestCollectibleRewardModalMessages)
+// Module 10925 (QuestCollectibleRewardModalMessages)
 function QuestCollectibleRewardModalMessages(quest) {
   quest = quest.quest;
   const tmp = callback3();

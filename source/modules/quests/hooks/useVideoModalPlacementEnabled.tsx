@@ -1,10 +1,10 @@
-// Module ID: 10826
-// Function ID: 84039
+// Module ID: 10832
+// Function ID: 84062
 // Name: useVideoModalPlacementEnabled
 // Dependencies: []
 // Exports: useVideoModalPlacementEnabled
 
-// Module 10826 (useVideoModalPlacementEnabled)
+// Module 10832 (useVideoModalPlacementEnabled)
 const QuestsExperimentLocations = require(dependencyMap[0]).QuestsExperimentLocations;
 const _module = require(dependencyMap[3]);
 const result = _module.fileFinishedImporting("modules/quests/hooks/useVideoModalPlacementEnabled.tsx");

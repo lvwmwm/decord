@@ -1,9 +1,9 @@
-// Module ID: 10802
-// Function ID: 83929
+// Module ID: 10808
+// Function ID: 83952
 // Name: EmbeddedActivityLocationKind
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 10802 (EmbeddedActivityLocationKind)
+// Module 10808 (EmbeddedActivityLocationKind)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_common/js/shared/shared-constants/EmbeddedActivityLocationKind.tsx");
 

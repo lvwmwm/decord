@@ -1,10 +1,10 @@
-// Module ID: 11017
-// Function ID: 85794
+// Module ID: 11022
+// Function ID: 85815
 // Name: useSafetyHubAccountStanding
 // Dependencies: []
 // Exports: useSafetyHubAccountStanding
 
-// Module 11017 (useSafetyHubAccountStanding)
+// Module 11022 (useSafetyHubAccountStanding)
 let closure_2 = importDefault(dependencyMap[0]);
 const result = arg1(dependencyMap[2]).fileFinishedImporting("modules/safety_hub/hooks/useSafetyHubAccountStanding.tsx");
 

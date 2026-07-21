@@ -1,10 +1,10 @@
-// Module ID: 11307
-// Function ID: 88002
+// Module ID: 11313
+// Function ID: 88025
 // Name: _handlePollGifAttachmentAdd
 // Dependencies: []
 // Exports: handlePollGifAttachmentAdd, handlePollMediaAttachmentAdd, removeAllPollUploadAttachments, removePollUploadAttachment
 
-// Module 11307 (_handlePollGifAttachmentAdd)
+// Module 11313 (_handlePollGifAttachmentAdd)
 function _handlePollGifAttachmentAdd() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);

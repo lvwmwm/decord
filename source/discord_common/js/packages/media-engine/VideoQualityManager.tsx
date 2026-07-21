@@ -1,11 +1,9 @@
-// Module ID: 4269
-// Function ID: 37330
+// Module ID: 4273
+// Function ID: 37378
 // Name: WantsVideoQuality
-// Dependencies: [3238002704, 33554448, 1946157056, 4147, 4293]
+// Dependencies: []
 
-// Module 4269 (WantsVideoQuality)
-import hasSubgameInfoChanged from "hasSubgameInfoChanged";
-
+// Module 4273 (WantsVideoQuality)
 let VideoQualityMode;
 const importDefaultResult = importDefault(dependencyMap[0]);
 let closure_3 = importDefault(dependencyMap[1]);
@@ -29,27 +27,27 @@ class WantsVideoQuality {
     }
     tmp2 = undefined;
     if (null != global.capture) {
-      tmp3 = f37332;
-      prototype = f37332.prototype;
+      tmp3 = f37380;
+      prototype = f37380.prototype;
       tmp4 = new.target;
       tmp5 = new.target;
-      tmp2 = new f37332(global.capture);
+      tmp2 = new f37380(global.capture);
     }
     self.capture = tmp2;
     tmp6 = undefined;
     if (null != global.encode) {
-      tmp7 = f37332;
-      prototype2 = f37332.prototype;
+      tmp7 = f37380;
+      prototype2 = f37380.prototype;
       tmp8 = new.target;
       tmp9 = new.target;
-      tmp6 = new f37332(global.encode);
+      tmp6 = new f37380(global.encode);
     }
     self.encode = tmp6;
     ({ bitrateMin: self.bitrateMin, bitrateMax: self.bitrateMax, bitrateTarget: self.bitrateTarget, localWant: self.localWant } = global);
     return;
   }
 }
-const frozen = Object.freeze({ [VideoQualityMode.AUTO]: {}, [VideoQualityMode.FULL]: { encode: { aze: -1455969993, azj: 43945025 } } });
+const frozen = Object.freeze({ [VideoQualityMode.AUTO]: {}, [VideoQualityMode.FULL]: { encode: { bhk: -1459705602, bic: 1905 } } });
 const importDefaultResultResult = importDefaultResult(WantsVideoQuality);
 const tmp6 = () => {
   class VideoQuality {
@@ -137,12 +135,7 @@ const tmp6 = () => {
   return importDefaultResult(VideoQuality, null, items);
 }();
 const tmp3 = arg1(dependencyMap[2]);
-const result = hasSubgameInfoChanged.fileFinishedImporting("../discord_common/js/packages/media-engine/VideoQualityManager.tsx");
-
-export const VIDEO_QUALITY_MODES_TO_OVERWRITES = frozen;
-export const WantsVideoQuality = importDefaultResultResult;
-export const VideoQuality = tmp6;
-export const VideoQualityManager = () => {
+const tmp7 = () => {
   class VideoQualityManager {
     constructor(arg0, arg1) {
       tmp = arg2;
@@ -363,10 +356,16 @@ export const VideoQualityManager = () => {
     key: "getDefaultGoliveQuality",
     value() {
       let obj = { capture: obj, encode: obj, bitrateMin: this.options.desktopBitrate.min, bitrateMax: this.options.desktopBitrate.max, bitrateTarget: this.options.desktopBitrate.target };
-      obj = { aze: -1455969993, azj: 43945025, framerate: closure_6 };
-      obj = { 965001003: -1455969993, -1446364470: 43945025, -498144293: -1506586368, -1782280419: 7793, framerate: closure_6 };
+      obj = { bhk: -1459705602, bic: 1905, framerate: closure_6 };
+      obj = { borderWidth: -1459705602, borderRadius: 1905, width: -1868541696, height: 18678032, framerate: closure_6 };
       return new closure_8(obj);
     }
   };
   return importDefaultResult(VideoQualityManager, items);
 }();
+const result = arg1(dependencyMap[4]).fileFinishedImporting("../discord_common/js/packages/media-engine/VideoQualityManager.tsx");
+
+export const VIDEO_QUALITY_MODES_TO_OVERWRITES = frozen;
+export const WantsVideoQuality = importDefaultResultResult;
+export const VideoQuality = tmp6;
+export const VideoQualityManager = tmp7;

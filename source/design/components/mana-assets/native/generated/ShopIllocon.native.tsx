@@ -1,10 +1,10 @@
-// Module ID: 6503
-// Function ID: 50628
+// Module ID: 6505
+// Function ID: 50671
 // Name: ShopIllocon
 // Dependencies: []
 // Exports: ShopIllocon
 
-// Module 6503 (ShopIllocon)
+// Module 6505 (ShopIllocon)
 const jsx = require(dependencyMap[0]).jsx;
 const _module = require(dependencyMap[3]);
 const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/ShopIllocon.native.tsx");

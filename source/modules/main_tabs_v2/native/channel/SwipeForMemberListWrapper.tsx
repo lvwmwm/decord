@@ -1,38 +1,39 @@
-// Module ID: 15182
-// Function ID: 114535
+// Module ID: 15189
+// Function ID: 114559
 // Name: StyleSheet
-// Dependencies: []
+// Dependencies: [0, 0, 0, 4294967295, 0, 0, 0, 0, 0, 0, 0]
 // Exports: default
 
-// Module 15182 (StyleSheet)
-let closure_3 = importDefault(dependencyMap[0]);
-const importAllResult = importAll(dependencyMap[1]);
-const tmp2 = arg1(dependencyMap[2]);
-const StyleSheet = tmp2.StyleSheet;
-const View = tmp2.View;
+// Module 15189 (StyleSheet)
+import closure_3 from "__exportStarResult1";
+import importAllResult from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
+import { MIDNIGHT_BORDER_WIDTH } from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
+import importDefaultResult from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
+
+const StyleSheet = __exportStarResult1.StyleSheet;
+const View = __exportStarResult1.View;
 ({ getIsChannelDetailsSearchActive: closure_7, setIsChannelDetailsSearchActive: closure_8 } = arg1(dependencyMap[3]));
-const MIDNIGHT_BORDER_WIDTH = arg1(dependencyMap[4]).MIDNIGHT_BORDER_WIDTH;
-const tmp3 = arg1(dependencyMap[3]);
-({ AnalyticEvents: closure_10, ComponentActions: closure_11, ThemeTypes: closure_12 } = arg1(dependencyMap[5]));
-const tmp4 = arg1(dependencyMap[5]);
-({ jsx: closure_13, jsxs: closure_14 } = arg1(dependencyMap[6]));
-let importDefaultResult = importDefault(dependencyMap[7]);
+({ AnalyticEvents: closure_10, ComponentActions: closure_11, ThemeTypes: closure_12 } = __exportStarResult1);
+({ jsx: closure_13, jsxs: closure_14 } = __exportStarResult1);
 importDefaultResult = new importDefaultResult("SwipeForMemberListWrapper");
 const context = importAllResult.createContext(undefined);
-let obj1 = arg1(dependencyMap[8]);
 let obj = {};
-obj = { backgroundColor: importDefault(dependencyMap[9]).colors.BACKGROUND_BASE_LOW };
+obj = { backgroundColor: require("__exportStarResult1").colors.BACKGROUND_BASE_LOW };
 obj.memberListPreview = obj;
-obj1 = {};
+__exportStarResult1 = {};
 const merged = Object.assign(StyleSheet.absoluteFillObject);
-obj1["overflow"] = "hidden";
-obj.content = obj1;
-const obj2 = { "Bool(false)": 10, "Bool(false)": 10, backgroundColor: importDefault(dependencyMap[9]).colors.MODAL_BACKGROUND };
+__exportStarResult1["overflow"] = "hidden";
+obj.content = __exportStarResult1;
+const obj2 = { 9223372036854775807: 10, 9223372036854775807: 10, backgroundColor: require("__exportStarResult1").colors.MODAL_BACKGROUND };
 obj.memberListContainer = obj2;
-const tmp5 = arg1(dependencyMap[6]);
-obj.midnightBorder = { borderLeftColor: importDefault(dependencyMap[9]).colors.BORDER_STRONG, borderLeftWidth: MIDNIGHT_BORDER_WIDTH };
+const tmp3 = arg1(dependencyMap[3]);
+obj.midnightBorder = { borderLeftColor: require("__exportStarResult1").colors.BORDER_STRONG, borderLeftWidth: MIDNIGHT_BORDER_WIDTH };
 obj.midnightRightOverflow = { right: -MIDNIGHT_BORDER_WIDTH };
-let closure_17 = obj1.createStyles(obj);
+let closure_17 = __exportStarResult1.createStyles(obj);
 let closure_18 = { code: "function SwipeForMemberListWrapperTsx1(){const{shownPixels}=this.__closure;return shownPixels.get()>0;}" };
 let closure_19 = { code: "function SwipeForMemberListWrapperTsx2(isVisible,wasVisible){const{mainDisallowGesture,stackDisallowGesture,panelDisallowGesture}=this.__closure;var _stackDisallowGesture;if(isVisible===wasVisible)return;mainDisallowGesture.set(isVisible);(_stackDisallowGesture=stackDisallowGesture)===null||_stackDisallowGesture===void 0||_stackDisallowGesture.set(isVisible);if(!isVisible){panelDisallowGesture.set(false);}}" };
 let closure_20 = { code: "function SwipeForMemberListWrapperTsx3(){const{isChatLockedOpen,mainTranslateX,stackTranslateX}=this.__closure;return!isChatLockedOpen&&mainTranslateX.get()>0||stackTranslateX!=null&&stackTranslateX.get()>0;}" };
@@ -40,7 +41,7 @@ let closure_21 = { code: "function SwipeForMemberListWrapperTsx4(isInactive,wasI
 let closure_22 = { code: "function SwipeForMemberListWrapperTsx5(){const{maxWidth,translateX}=this.__closure;return maxWidth-translateX.get();}" };
 let closure_23 = { code: "function SwipeForMemberListWrapperTsx6(){const{theme,ThemeTypes,isChatBesideChannelList,translateX,MIDNIGHT_BORDER_WIDTH}=this.__closure;if(theme!==ThemeTypes.MIDNIGHT||isChatBesideChannelList)return translateX.get();return translateX.get()-MIDNIGHT_BORDER_WIDTH;}" };
 let closure_24 = { code: "function SwipeForMemberListWrapperTsx7(){const{shownPixels,PEEK_PIXEL_THRESHOLD}=this.__closure;const exceedsPeekThreshold=shownPixels.get()>PEEK_PIXEL_THRESHOLD*2;return{display:exceedsPeekThreshold?'none':'flex',opacity:exceedsPeekThreshold?0:1-shownPixels.get()/PEEK_PIXEL_THRESHOLD};}" };
-const obj3 = { borderLeftColor: importDefault(dependencyMap[9]).colors.BORDER_STRONG, borderLeftWidth: MIDNIGHT_BORDER_WIDTH };
+const obj3 = { borderLeftColor: require("__exportStarResult1").colors.BORDER_STRONG, borderLeftWidth: MIDNIGHT_BORDER_WIDTH };
 const result = arg1(dependencyMap[33]).fileFinishedImporting("modules/main_tabs_v2/native/channel/SwipeForMemberListWrapper.tsx");
 
 export default function _default(channelId) {
@@ -93,14 +94,13 @@ export default function _default(channelId) {
       ComponentDispatch.dispatch(derivedValue.CHANNEL_DETAILS_HIDDEN, obj);
     }
   }, items2);
-  let obj = { <string:74869825>: null, <string:4011315200>: null, <string:2106893263>: null, <string:3573798492>: null, <string:2978316496>: null, onDragStart: callback, onPreMovement: callback1, openWidth: memo };
-  const tmp9 = importDefault(dependencyMap[20])(obj);
+  const tmp9 = importDefault(dependencyMap[20])({ onDragStart: callback, onPreMovement: callback1, openWidth: memo });
   const panelGestureContext = tmp9.panelGestureContext;
   ({ isDragging, translateX } = tmp9);
   const movePanel = tmp9.movePanel;
   const MIDNIGHT_BORDER_WIDTH = movePanel;
   const maxWidth = tmp9.maxWidth;
-  let obj1 = arg1(dependencyMap[13]);
+  let obj = arg1(dependencyMap[13]);
   class X {
     constructor() {
       return maxWidth - translateX.get();
@@ -109,9 +109,9 @@ export default function _default(channelId) {
   X.__closure = { maxWidth, translateX };
   X.__workletHash = 10842481670591;
   X.__initData = closure_22;
-  const derivedValue = obj1.useDerivedValue(X);
-  let obj2 = arg1(dependencyMap[21]);
-  const derivedStateFromSharedValue = obj2.useDerivedStateFromSharedValue(derivedValue, (arg0) => arg0 > 0);
+  const derivedValue = obj.useDerivedValue(X);
+  let obj1 = arg1(dependencyMap[21]);
+  const derivedStateFromSharedValue = obj1.useDerivedStateFromSharedValue(derivedValue, (arg0) => arg0 > 0);
   const items3 = [derivedStateFromSharedValue, channelId, screenIndex];
   const effect1 = importAllResult.useEffect(() => {
     if (derivedStateFromSharedValue) {
@@ -120,7 +120,7 @@ export default function _default(channelId) {
       ComponentDispatch.dispatch(derivedValue.CHANNEL_DETAILS_SHOWN, obj);
     }
   }, items3);
-  let obj3 = arg1(dependencyMap[13]);
+  let obj2 = arg1(dependencyMap[13]);
   function te() {
     if (tmp2 === derivedStateFromSharedValue.MIDNIGHT) {
       if (!isChatBesideChannelList) {
@@ -135,7 +135,7 @@ export default function _default(channelId) {
   te.__closure = obj;
   te.__workletHash = 5498466465211;
   te.__initData = closure_23;
-  const derivedValue1 = obj3.useDerivedValue(te);
+  const derivedValue1 = obj2.useDerivedValue(te);
   const items4 = [channelId, screenIndex, movePanel];
   const callback2 = importAllResult.useCallback((channelId) => {
     let tmp = channelId.channelId === channelId;
@@ -243,8 +243,8 @@ export default function _default(channelId) {
   const effect4 = importAllResult.useEffect(() => {
     callback3();
   }, items9);
-  let obj5 = arg1(dependencyMap[26]);
-  let closure_15 = obj5.useNavigation();
+  let obj4 = arg1(dependencyMap[26]);
+  let closure_15 = obj4.useNavigation();
   function useAnalyticsEffect(channelId, screenIndex, isDragging, derivedStateFromSharedValue) {
     const isBackEnabled = isDragging;
     const items = [channelId, screenIndex, derivedStateFromSharedValue];
@@ -277,9 +277,9 @@ export default function _default(channelId) {
     obj["isPanelActive"] = derivedStateFromSharedValue;
     return obj;
   }, items10);
-  let obj6 = arg1(dependencyMap[27]);
-  const mainTabsChannelScreenStyles = obj6.useMainTabsChannelScreenStyles(isDragging, derivedValue1, maxWidth);
-  let obj7 = arg1(dependencyMap[13]);
+  let obj5 = arg1(dependencyMap[27]);
+  const mainTabsChannelScreenStyles = obj5.useMainTabsChannelScreenStyles(isDragging, derivedValue1, maxWidth);
+  let obj6 = arg1(dependencyMap[13]);
   function le() {
     const tmp = derivedValue.get() > 300;
     const obj = {};
@@ -299,7 +299,7 @@ export default function _default(channelId) {
   le.__workletHash = 9468759128012;
   le.__initData = closure_24;
   obj = { value: memo1 };
-  const animatedStyle = obj7.useAnimatedStyle(le);
+  const animatedStyle = obj6.useAnimatedStyle(le);
   obj1 = {
     gesture: function useGestureCompositionEffect(gesture, derivedValue, panelGestureContext) {
       const channelId = gesture;
@@ -399,7 +399,7 @@ export default function _default(channelId) {
       }
     }
   };
-  obj3 = { style: tmp.content, accessibilityElementsHidden: !!derivedStateFromSharedValue };
+  const obj3 = { style: tmp.content, accessibilityElementsHidden: !!derivedStateFromSharedValue };
   let str;
   if (derivedStateFromSharedValue) {
     str = "no-hide-descendants";
@@ -408,7 +408,7 @@ export default function _default(channelId) {
   const items11 = [children, callback2(arg1(dependencyMap[29]).MainTabsContentScrim, { translateX: derivedValue1, maxWidth })];
   obj3.children = items11;
   const items12 = [callback3(View, obj3), ];
-  const obj4 = {};
+  obj4 = {};
   const items13 = [mainTabsChannelScreenStyles, tmp.memberListContainer, , ];
   let midnightBorder;
   if (tmp2 === derivedStateFromSharedValue.MIDNIGHT) {
@@ -430,8 +430,7 @@ export default function _default(channelId) {
   items14[1] = callback2(arg1(dependencyMap[31]).LayerScope, obj5);
   obj6 = { style: items15 };
   const items15 = [absoluteFill.absoluteFill, animatedStyle];
-  obj7 = { style: tmp.memberListPreview };
-  obj6.children = callback2(View, obj7);
+  obj6.children = callback2(View, { style: tmp.memberListPreview });
   items14[2] = callback2(importDefault(dependencyMap[13]).View, obj6);
   obj4.children = items14;
   items12[1] = callback3(importDefault(dependencyMap[13]).View, obj4);

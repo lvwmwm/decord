@@ -1,10 +1,10 @@
-// Module ID: 15134
-// Function ID: 114215
+// Module ID: 15141
+// Function ID: 114239
 // Name: getCoverImageURI
 // Dependencies: []
 // Exports: getCoverImageURI
 
-// Module 15134 (getCoverImageURI)
+// Module 15141 (getCoverImageURI)
 let closure_2 = importDefault(dependencyMap[0]);
 const result = arg1(dependencyMap[2]).fileFinishedImporting("modules/guild_role_subscriptions/native/components/listing_elements/GuildRoleSubscriptionSettingsUtils.tsx");
 

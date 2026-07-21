@@ -1,10 +1,13 @@
-// Module ID: 10605
-// Function ID: 82749
+// Module ID: 10611
+// Function ID: 82772
 // Name: ModeratorViewOverlay
-// Dependencies: []
+// Dependencies: [503316521, 352321552, 2046820358, 1023410217, 469762077, 33554448, 1912602624, 7580, 2, 31, 27, 653, 33, 4126, 1273, 3989, 10619, 4127, 5389, 1450, 8011, 10620, 10624, 10519, 4524, 5462, 5482, 10588, 10630, 675, 2, 1194, 1906]
 // Exports: default
 
-// Module 10605 (ModeratorViewOverlay)
+// Module 10611 (ModeratorViewOverlay)
+import expandLocation from "expandLocation";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+
 function ModeratorViewOverlay(channel) {
   channel = channel.channel;
   let obj = arg1(dependencyMap[5]);
@@ -99,8 +102,8 @@ function StagePromptWrapper(channel) {
   return callback2(arg1(dependencyMap[30]).DisableCustomTheme, obj);
 }
 function StagePromptInner(channel) {
-  const tmp = callback3();
-  return callback2(arg1(dependencyMap[31]).AnimatedStartStagePrompt, { channel: channel.channel, style: callback3().startStagePrompt });
+  const tmp = expandLocation();
+  return callback2(arg1(dependencyMap[31]).AnimatedStartStagePrompt, { channel: channel.channel, style: expandLocation().startStagePrompt });
 }
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
@@ -108,17 +111,15 @@ let closure_4 = importAll(dependencyMap[1]);
 const ThemeTypes = arg1(dependencyMap[3]).ThemeTypes;
 const tmp2 = arg1(dependencyMap[2]);
 ({ jsx: closure_8, jsxs: closure_9, Fragment: closure_10 } = arg1(dependencyMap[4]));
-let closure_11 = { <string:2878712048>: "isMisspelled", <string:2883918787>: "browserManagerCloseBrowser", <string:693530561>: "DEFAULT_ENABLE_BLUR_KEYBOARD_ON_GESTURE", <string:3050750914>: "getClipContextProperties", <string:3382020824>: "useCategoryImage", <string:2113696803>: "useCategoryImage" };
+let closure_11 = { "Bool(false)": "KEYBOARD_PRESS", "Bool(false)": "system_channel_flags", "Bool(false)": "LOGIN_HANDOFF", "Bool(false)": "getCommonVariables", "Bool(false)": "snapDirection", "Bool(false)": "snapDirection" };
 let closure_12 = { fullScreen: { flex: 1 } };
 let closure_13 = { code: "function StageChannelCallNavigatorTsx1(){const{withSpring,showStartStageView,viewAnimationConfig}=this.__closure;return{opacity:withSpring(showStartStageView?1:0,viewAnimationConfig)};}" };
 let closure_14 = { code: "function StageChannelCallNavigatorTsx2(){const{withSpring,showOverlay,viewAnimationConfig}=this.__closure;return{opacity:withSpring(showOverlay?1:0,viewAnimationConfig)};}" };
-let obj = arg1(dependencyMap[29]);
-obj = {};
-obj = { backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_SURFACE_HIGH };
-obj.startStagePrompt = obj;
-let closure_15 = obj.createStyles(obj);
-const tmp3 = arg1(dependencyMap[4]);
-const result = arg1(dependencyMap[32]).fileFinishedImporting("modules/stage_channels/native/components/StageChannelCallNavigator.tsx");
+expandLocation = {};
+expandLocation = { backgroundColor: require("result2").colors.BACKGROUND_SURFACE_HIGH };
+expandLocation.startStagePrompt = expandLocation;
+expandLocation = expandLocation.createStyles(expandLocation);
+const result = _isNativeReflectConstruct.fileFinishedImporting("modules/stage_channels/native/components/StageChannelCallNavigator.tsx");
 
 export default function StageChannelCallNavigator(channel) {
   let isLive;

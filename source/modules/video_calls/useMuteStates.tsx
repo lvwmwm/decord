@@ -1,10 +1,10 @@
-// Module ID: 5733
-// Function ID: 49271
+// Module ID: 5735
+// Function ID: 49314
 // Name: getMuteStates
 // Dependencies: []
 // Exports: default
 
-// Module 5733 (getMuteStates)
+// Module 5735 (getMuteStates)
 function getMuteStates(voiceStateStore) {
   let authenticationStore;
   let channel;

@@ -1,10 +1,10 @@
-// Module ID: 14191
-// Function ID: 107401
+// Module ID: 14198
+// Function ID: 107424
 // Name: useAndroidMessageNotificationsSettingValue
 // Dependencies: []
 // Exports: useAndroidMessageNotificationsSettingValue, useHasAndroidMessageNotificationsSetting
 
-// Module 14191 (useAndroidMessageNotificationsSettingValue)
+// Module 14198 (useAndroidMessageNotificationsSettingValue)
 function useAndroidMessageNotificationsSettingValue() {
   const tmp = callback();
   return null != tmp && tmp;

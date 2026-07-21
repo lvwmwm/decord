@@ -4,6 +4,6 @@
 
 // Module 1401
 const _module = require(dependencyMap[0]);
-const obj = { url: true, content: "/assets/images/provisional_account_avatars", messageId: 320, channel_id: 320, no: null, "Null": "aedb4c161a8b10bd63dac9d5860c62fe", "Null": "default_provisional_avatar_1", "Null": "png", scales: [24573934974154670000000000000000000000000000000000000000000000000000000000000] };
+const obj = { isConnected: true, isInternetReachable: "/assets/images/provisional_account_avatars", details: 320, reachabilityUrl: 320, reachabilityMethod: null, reachabilityHeaders: "aedb4c161a8b10bd63dac9d5860c62fe", reachabilityTest: "default_provisional_avatar_1", reachabilityShortTimeout: "png", scales: [15189782894321462000000000000000000000000000000000000000000000000000000000000000000] };
 
 export default _module.registerAsset(obj);

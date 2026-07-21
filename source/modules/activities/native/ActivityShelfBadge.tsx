@@ -1,21 +1,21 @@
-// Module ID: 11188
-// Function ID: 87180
+// Module ID: 11194
+// Function ID: 87203
 // Name: ActivityShelfBadge
 // Dependencies: []
 // Exports: default
 
-// Module 11188 (ActivityShelfBadge)
+// Module 11194 (ActivityShelfBadge)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 const jsx = arg1(dependencyMap[3]).jsx;
 let obj = arg1(dependencyMap[4]);
 obj = {};
-obj = { GUILD_BASIC: "showAllButtonUnderline", transformToSlot: "CREATE_CHANNEL_MODAL", startMatrices: "1i+hMi", GAMING: "Array", textCentered: "IOS_TWO_FA_VERIFY_SMS", REVERSE_TRIAL_EMOJI_PICKER: "Array", backgroundColor: importDefault(dependencyMap[5]).colors.STATUS_POSITIVE_BACKGROUND };
+obj = { backgroundColor: importDefault(dependencyMap[5]).colors.STATUS_POSITIVE_BACKGROUND };
 obj.badge = obj;
-obj.newBadge = { borderRadius: importDefault(dependencyMap[5]).radii.sm, backgroundColor: importDefault(dependencyMap[5]).colors.BADGE_NOTIFICATION_BACKGROUND };
-const obj1 = { borderRadius: importDefault(dependencyMap[5]).radii.sm, backgroundColor: importDefault(dependencyMap[5]).colors.BADGE_NOTIFICATION_BACKGROUND };
-obj.updatedBadge = { borderRadius: importDefault(dependencyMap[5]).radii.sm, backgroundColor: importDefault(dependencyMap[5]).colors.BADGE_BACKGROUND_BRAND };
-const obj2 = { borderRadius: importDefault(dependencyMap[5]).radii.sm, backgroundColor: importDefault(dependencyMap[5]).colors.BADGE_BACKGROUND_BRAND };
+const obj1 = { "Bool(true)": -720897, "Bool(true)": 65535, "Bool(true)": 1912668160, "Bool(true)": 1, borderRadius: importDefault(dependencyMap[5]).radii.sm, backgroundColor: importDefault(dependencyMap[5]).colors.BADGE_NOTIFICATION_BACKGROUND };
+obj.newBadge = obj1;
+const obj2 = { "Bool(true)": -720897, "Bool(true)": 65535, "Bool(true)": 1912668160, "Bool(true)": 1, borderRadius: importDefault(dependencyMap[5]).radii.sm, backgroundColor: importDefault(dependencyMap[5]).colors.BADGE_BACKGROUND_BRAND };
+obj.updatedBadge = obj2;
 obj.elevationShadow = arg1(dependencyMap[6]).generateBoxShadowStyle(arg1(dependencyMap[6]).FOUR_DP_ELEVATION_SHADOW_PARAMS);
 obj.badgeText = { fontFamily: arg1(dependencyMap[2]).Fonts.DISPLAY_EXTRABOLD };
 let closure_4 = obj.createStyles(obj);

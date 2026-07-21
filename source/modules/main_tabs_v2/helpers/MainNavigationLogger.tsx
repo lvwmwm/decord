@@ -1,13 +1,12 @@
-// Module ID: 13351
-// Function ID: 101575
-// Name: result
+// Module ID: 13358
+// Function ID: 101598
+// Name: __exportStarResult1
 // Dependencies: [0, 0]
 
-// Module 13351 (result)
-import importDefaultResult from "result";
-import result from "result";
+// Module 13358 (__exportStarResult1)
+import importDefaultResult from "__exportStarResult1";
 
 importDefaultResult = new importDefaultResult("MainNavigationLogger");
-result = result.fileFinishedImporting("modules/main_tabs_v2/helpers/MainNavigationLogger.tsx");
+const result = require("__exportStarResult1").fileFinishedImporting("modules/main_tabs_v2/helpers/MainNavigationLogger.tsx");
 
 export default importDefaultResult;

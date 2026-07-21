@@ -162,7 +162,7 @@ let _SharedArrayBuffer;
 if ("undefined" !== typeof SharedArrayBuffer) {
   _SharedArrayBuffer = SharedArrayBuffer;
 }
-const items = ["raw", "spriteIndex", "ddd"];
+const items = ["children", "screenListeners", "emit"];
 const item = items.forEach((arg0) => {
   const require = arg0;
   Object.defineProperty(exports, arg0, {

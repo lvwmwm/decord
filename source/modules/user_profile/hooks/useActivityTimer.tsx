@@ -1,10 +1,10 @@
-// Module ID: 11926
-// Function ID: 92242
+// Module ID: 11933
+// Function ID: 92265
 // Name: extractTimeComponents
 // Dependencies: []
 // Exports: default, formatTime, formatTimeForA11yLabel
 
-// Module 11926 (extractTimeComponents)
+// Module 11933 (extractTimeComponents)
 function extractTimeComponents(arg0) {
   const rounded = Math.floor(arg0);
   const result = rounded % importDefault(dependencyMap[2]).Seconds.MINUTE;

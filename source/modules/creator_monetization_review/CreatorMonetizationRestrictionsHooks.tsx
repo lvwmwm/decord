@@ -1,10 +1,10 @@
-// Module ID: 5628
-// Function ID: 47977
+// Module ID: 5630
+// Function ID: 48019
 // Name: useCreatorMonetizationRestrictions
 // Dependencies: []
 // Exports: useIsMonetizationReapplicationDisabled, useShouldHideGuildPurchaseEntryPoints, useShouldRestrictUpdatingCreatorMonetizationSettings
 
-// Module 5628 (useCreatorMonetizationRestrictions)
+// Module 5630 (useCreatorMonetizationRestrictions)
 function useCreatorMonetizationRestrictions(has) {
   const arg1 = has;
   const tmp = importDefault(dependencyMap[4])();

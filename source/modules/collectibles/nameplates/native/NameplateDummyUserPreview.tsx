@@ -1,10 +1,10 @@
-// Module ID: 8216
-// Function ID: 64935
+// Module ID: 8220
+// Function ID: 64947
 // Name: NAMEPLATE_DUMMY_USER_PREVIEW_CONFIG
 // Dependencies: []
 // Exports: NameplateDummyUserPreview
 
-// Module 8216 (NAMEPLATE_DUMMY_USER_PREVIEW_CONFIG)
+// Module 8220 (NAMEPLATE_DUMMY_USER_PREVIEW_CONFIG)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 let closure_4 = importDefault(dependencyMap[2]);

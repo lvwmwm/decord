@@ -1,9 +1,9 @@
-// Module ID: 7143
-// Function ID: 57631
+// Module ID: 7147
+// Function ID: 57642
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [42795008, 368181248, 121307136, 31588352, 196608, 368312320, 369229824, 249757696, 44957696, 248184832, 248315904, 292683776]
 
-// Module 7143 (_isNativeReflectConstruct)
+// Module 7147 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -25,16 +25,16 @@ let tmp2 = (MessageType) => {
       self = this;
       tmp = closure_3(this, Nagbar$Type);
       items = [, , , , , , , ];
-      items[0] = { body: "<string:1895826595>", guildId: "Array", ao: "<string:1011989857>", "": "<string:2738635012>" };
+      items[0] = {};
       items[1] = {};
-      obj = { emojiId: null, emojiName: null, userId: null };
+      obj = { "Null": null, "Null": null, "Null": null };
       obj.T = function T() {
-        const items = ["CANARY", callback(closure_1[6]).ButtonAction, "BUTTON_ACTION_"];
+        const items = [false, callback(closure_1[6]).ButtonAction, "BUTTON_ACTION_"];
         return items;
       };
       items[2] = obj;
       items[3] = {};
-      obj = { emojiId: "version", emojiName: "message", userId: "OPACITY_BLACK_16" };
+      obj = { "Null": "version", "Null": "message", "Null": "OPACITY_BLACK_16" };
       obj.T = function T() {
         return callback(closure_1[7]).HelpArticle;
       };
@@ -49,12 +49,12 @@ let tmp2 = (MessageType) => {
               return callback(closure_1[8]).LocalizedString;
             }
       };
-      obj1 = { emojiId: "butt", emojiName: 360, userId: 0 };
+      obj1 = { "Null": "butt", "Null": 360, "Null": 0 };
       obj1.T = function T() {
         return callback(closure_1[9]).UInt64Value;
       };
       items[7] = obj1;
-      items1 = [false];
+      items1 = [492456433];
       items1[1] = items;
       obj4 = closure_6(Nagbar$Type);
       tmp2 = closure_5;
@@ -74,7 +74,7 @@ let tmp2 = (MessageType) => {
   let obj = {
     key: "create",
     value(arr) {
-      let obj = { distance: "r", parent: "content_block", overflow: "MEDIA_POST_PREVIEW_EMBED_CLICKED", borderTopLeftRadius: "processColorOrThrow" };
+      let obj = {};
       const _Object = Object;
       obj = { enumerable: false, value: this };
       _Object.defineProperty(obj, Nagbar$Type(closure_1[10]).MESSAGE_TYPE, obj);

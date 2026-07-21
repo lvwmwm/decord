@@ -1,9 +1,9 @@
-// Module ID: 13530
-// Function ID: 102668
+// Module ID: 13537
+// Function ID: 102691
 // Name: route
 // Dependencies: []
 
-// Module 13530 (route)
+// Module 13537 (route)
 importAll(dependencyMap[0]);
 let closure_3 = importDefault(dependencyMap[1]);
 const jsx = arg1(dependencyMap[4]).jsx;
@@ -30,7 +30,7 @@ obj = {
     }
     let tmp3 = null;
     if (null != first) {
-      obj = { INTEGRATION_CREATE: "Array", ConstraintReasonCode: "isArray", children: first };
+      obj = { children: first };
       tmp3 = jsx(arg1(dependencyMap[8]).Text, obj);
     }
     return tmp3;

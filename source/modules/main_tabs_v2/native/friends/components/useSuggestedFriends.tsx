@@ -1,15 +1,15 @@
-// Module ID: 14780
-// Function ID: 111412
+// Module ID: 14787
+// Function ID: 111436
 // Name: useSuggestedFriends
-// Dependencies: [0, 0, 0, 0]
+// Dependencies: [0, 0]
 // Exports: default
 
-// Module 14780 (useSuggestedFriends)
-import result from "result";
-import closure_4 from "result";
-import closure_5 from "result";
-import { SuggestedFriendSource } from "result";
+// Module 14787 (useSuggestedFriends)
+import __exportStarResult1 from "__exportStarResult1";
+import closure_4 from "__exportStarResult1";
 
+let closure_5 = importDefault(dependencyMap[2]);
+const SuggestedFriendSource = arg1(dependencyMap[3]).SuggestedFriendSource;
 const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/main_tabs_v2/native/friends/components/useSuggestedFriends.tsx");
 
 export default function useSuggestedFriends(arg0) {

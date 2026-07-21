@@ -1,10 +1,10 @@
-// Module ID: 6023
-// Function ID: 49908
+// Module ID: 6025
+// Function ID: 49951
 // Name: DownloadBarIllocon
 // Dependencies: []
 // Exports: DownloadBarIllocon
 
-// Module 6023 (DownloadBarIllocon)
+// Module 6025 (DownloadBarIllocon)
 const jsx = require(dependencyMap[0]).jsx;
 const _module = require(dependencyMap[3]);
 const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/DownloadBarIllocon.native.tsx");

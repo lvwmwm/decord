@@ -1,17 +1,17 @@
-// Module ID: 9844
-// Function ID: 76223
+// Module ID: 9849
+// Function ID: 76239
 // Name: ForumPostTagsActionSheet
 // Dependencies: []
 // Exports: default
 
-// Module 9844 (ForumPostTagsActionSheet)
+// Module 9849 (ForumPostTagsActionSheet)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 const View = arg1(dependencyMap[2]).View;
 const MAX_FORUM_POST_TAGS = arg1(dependencyMap[3]).MAX_FORUM_POST_TAGS;
 ({ jsx: closure_7, jsxs: closure_8 } = arg1(dependencyMap[4]));
 const tmp2 = arg1(dependencyMap[4]);
-let closure_9 = arg1(dependencyMap[5]).createStyles({ tagsContainer: { "Bool(false)": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000017301927510316394, "Bool(false)": 0.0005189595509662581, "Bool(false)": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000017301927510316394 }, saveButton: {}, subtitle: { marginTop: 4 } });
+let closure_9 = arg1(dependencyMap[5]).createStyles({ tagsContainer: { Symbol: 285213929, justifyContent: 815361, Icon: -1974403072 }, saveButton: {}, subtitle: { marginTop: 4 } });
 const obj = arg1(dependencyMap[5]);
 const result = arg1(dependencyMap[14]).fileFinishedImporting("modules/forums/native/ForumPostTagsActionSheet.tsx");
 

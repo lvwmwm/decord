@@ -1,9 +1,9 @@
-// Module ID: 14670
-// Function ID: 110657
+// Module ID: 14677
+// Function ID: 110681
 // Name: computeMaxX
 // Dependencies: []
 
-// Module 14670 (computeMaxX)
+// Module 14677 (computeMaxX)
 function computeMaxX(width, left) {
   return width.width - left.left - left.right - DM_WIDTH - 8 + 8;
 }

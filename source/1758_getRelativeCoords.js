@@ -1,7 +1,7 @@
 // Module ID: 1758
 // Function ID: 19641
 // Name: getRelativeCoords
-// Dependencies: [527761408]
+// Dependencies: []
 
 // Module 1758 (getRelativeCoords)
 let closure_2 = { code: "function getRelativeCoords_Pnpm_getRelativeCoordsTs1(animatedRef,absoluteX,absoluteY){const{measure}=this.__closure;const parentCoords=measure(animatedRef);if(parentCoords===null){return null;}return{x:absoluteX-parentCoords.pageX,y:absoluteY-parentCoords.pageY};}" };

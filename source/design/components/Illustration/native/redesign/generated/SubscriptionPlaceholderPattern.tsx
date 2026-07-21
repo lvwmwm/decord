@@ -1,10 +1,10 @@
-// Module ID: 12307
-// Function ID: 94343
+// Module ID: 12314
+// Function ID: 94366
 // Name: getSubscriptionPlaceholderPatternSource
 // Dependencies: []
 // Exports: SubscriptionPlaceholderPattern
 
-// Module 12307 (getSubscriptionPlaceholderPatternSource)
+// Module 12314 (getSubscriptionPlaceholderPatternSource)
 function getSubscriptionPlaceholderPatternSource(theme) {
   let obj = arg1(dependencyMap[3]);
   obj = {

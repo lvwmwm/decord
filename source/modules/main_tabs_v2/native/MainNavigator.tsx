@@ -1,9 +1,9 @@
-// Module ID: 14593
-// Function ID: 110001
+// Module ID: 14600
+// Function ID: 110023
 // Name: getAuthComponent
 // Dependencies: []
 
-// Module 14593 (getAuthComponent)
+// Module 14600 (getAuthComponent)
 function getAuthComponent() {
   return arg1(dependencyMap[12]).default;
 }
@@ -143,7 +143,7 @@ const memoResult = importAllResult.memo(function StackNavigator() {
   const items1 = [tmp, stateFromStores, homeIndicatorStore, accessibilityNativeStackOptions, first, isChatBesideChannelList];
   return homeIndicatorStore.useMemo(() => {
     let obj = { profile: callback(first[37]).Profiles.MainNavigator };
-    obj = { body: "accessibilityRole", mode: "names", paddingHorizontal: "Array", style: callback.flex };
+    obj = { style: tmp.flex };
     const tmp2 = stateFromStores(first[37]);
     obj = {};
     const tmp4 = stateFromStores(first[38]);
@@ -190,7 +190,7 @@ const memoResult = importAllResult.memo(function StackNavigator() {
             }
           };
           obj = { name: "tabs", getComponent: closure_19, options: closure_17 };
-          const items = [callback4(closure_16.Screen, obj), callback4(closure_16.Screen, { name: "member-verification", getComponent: closure_22, options: { marginHorizontal: null, marginVertical: null } }), ];
+          const items = [callback4(closure_16.Screen, obj), callback4(closure_16.Screen, { name: "member-verification", getComponent: closure_22, options: { 1642977105: "companion_remote_auth", -1815129063: false } }), ];
           let animation;
           if (null != animation) {
             animation = animation.animation;
@@ -225,7 +225,7 @@ const memoResult = importAllResult.memo(function StackNavigator() {
     ];
     const obj9 = { name: "account-standing", getComponent: closure_32 };
     const merged = Object.assign(closure_17);
-    obj9.options = { today: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004778309770352859, Modules: 15177100777052614000000000000000000000000000000000000000000000000000000000000000000 };
+    obj9.options = { 1996846851: "<string:41043341>", 1642977105: "<string:16777216>" };
     items1[4] = callback(closure_15.Screen, obj9);
     items1[5] = callback(closure_15.Screen, {
       name: "you",
@@ -330,7 +330,7 @@ const memoResult = importAllResult.memo(function StackNavigator() {
     });
     obj16 = { name: "message-requests", options: stateFromStores(first[43])(), getComponent: closure_30 };
     items1[9] = callback(closure_15.Screen, obj16);
-    const obj10 = { today: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004778309770352859, Modules: 15177100777052614000000000000000000000000000000000000000000000000000000000000000000 };
+    const obj10 = { 1996846851: "<string:41043341>", 1642977105: "<string:16777216>" };
     const obj11 = {
       name: "you",
       options() {
@@ -408,7 +408,7 @@ const memoResult = importAllResult.memo(function StackNavigator() {
           }
         };
         obj = { name: "tabs", getComponent: closure_19, options: closure_17 };
-        const items = [callback4(closure_16.Screen, obj), callback4(closure_16.Screen, { name: "member-verification", getComponent: closure_22, options: { marginHorizontal: null, marginVertical: null } }), ];
+        const items = [callback4(closure_16.Screen, obj), callback4(closure_16.Screen, { name: "member-verification", getComponent: closure_22, options: { 1642977105: "companion_remote_auth", -1815129063: false } }), ];
         let animation;
         if (null != animation) {
           animation = animation.animation;

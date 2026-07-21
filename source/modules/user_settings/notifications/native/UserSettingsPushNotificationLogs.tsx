@@ -1,10 +1,10 @@
-// Module ID: 14266
-// Function ID: 107828
+// Module ID: 14273
+// Function ID: 107851
 // Name: UserSettingsPushNotificationLogs
 // Dependencies: []
 // Exports: default
 
-// Module 14266 (UserSettingsPushNotificationLogs)
+// Module 14273 (UserSettingsPushNotificationLogs)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 let closure_5 = importAll(dependencyMap[2]);
@@ -92,7 +92,7 @@ export default function UserSettingsPushNotificationLogs() {
   const callback2 = tmp10;
   let obj = { style: tmp10.wrap };
   obj = { style: tmp10.searchWrap };
-  obj = { "Null": false, "Null": false, onChange: tmp2[1], defaultValue: first };
+  obj = { h: -465436671, current: -469761518, onChange: tmp2[1], defaultValue: first };
   const items1 = [callback3(arg1(closure_2[12]).SearchField, obj), ];
   const obj1 = { style: tmp10.shareButton };
   const intl = arg1(closure_2[14]).intl;

@@ -1,15 +1,13 @@
 // Module ID: 1430
 // Function ID: 16698
 // Name: awaitOnline
-// Dependencies: [31, 1451]
+// Dependencies: []
 
 // Module 1430 (awaitOnline)
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-
 let closure_2 = [];
 let closure_3 = false;
 const obj = {};
-const merged = Object.assign(require("module_31").default);
+const merged = Object.assign(require(dependencyMap[0]).default);
 obj["awaitOnline"] = function awaitOnline() {
   return new Promise((arg0) => {
     function whenOnline(arg0) {
@@ -30,6 +28,7 @@ obj["awaitOnline"] = function awaitOnline() {
     const _default = whenOnline(closure_1[0]).default;
   });
 };
-const result = _createForOfIteratorHelperLoose.fileFinishedImporting("utils/NetworkUtils.tsx");
+const _module = require(dependencyMap[1]);
+const result = _module.fileFinishedImporting("utils/NetworkUtils.tsx");
 
 export default obj;

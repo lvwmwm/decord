@@ -1,9 +1,9 @@
-// Module ID: 4521
-// Function ID: 39704
+// Module ID: 4525
+// Function ID: 39752
 // Name: enforcing
 // Dependencies: []
 
-// Module 4521 (enforcing)
+// Module 4525 (enforcing)
 const TurboModuleRegistry = require(dependencyMap[0]).TurboModuleRegistry;
 const enforcing = TurboModuleRegistry.getEnforcing("NativeDeviceAccessibilityModule");
 const _module = require(dependencyMap[1]);

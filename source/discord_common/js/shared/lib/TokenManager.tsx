@@ -1,7 +1,7 @@
 // Module ID: 684
 // Function ID: 8444
 // Name: fromEntries
-// Dependencies: [71742464, 1685934336, 25479233]
+// Dependencies: [4294967295, 4294967295, 0]
 // Exports: getAnalyticsToken, hideToken, init, removeAnalyticsToken, setAnalyticsToken, setToken, showToken
 
 // Module 684 (fromEntries)
@@ -48,7 +48,7 @@ function maybeDecryptToken(closure_7) {
     }
     return obj;
   }
-  obj = { "Null": "midnight", "Null": "noon" };
+  obj = { "Bool(false)": true, "Bool(false)": true };
 }
 function maybeEncryptToken(closure_6) {
   let combined = closure_6;
@@ -132,8 +132,7 @@ let closure_9 = {};
 let closure_10 = {};
 let closure_11 = false;
 let closure_12 = false;
-const _module1 = require(dependencyMap[2]);
-const result = _module1.fileFinishedImporting("../discord_common/js/shared/lib/TokenManager.tsx");
+const result = require("__exportStarResult1").fileFinishedImporting("../discord_common/js/shared/lib/TokenManager.tsx");
 
 export const init = function init() {
   if (!closure_12) {

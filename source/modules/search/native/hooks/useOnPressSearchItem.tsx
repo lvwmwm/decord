@@ -1,10 +1,10 @@
-// Module ID: 15203
-// Function ID: 114804
+// Module ID: 15210
+// Function ID: 114828
 // Name: addSearchHistoryItem
 // Dependencies: []
 // Exports: useOnPressDMItem, useOnPressGroupDMItem, useOnPressGuildTextChannel, useOnPressGuildVoiceChannel, useOnPressMediaItem, useOnPressMessageItem, useOnPressSearchHistoryText, useOnPressSearchLink
 
-// Module 15203 (addSearchHistoryItem)
+// Module 15210 (addSearchHistoryItem)
 function addSearchHistoryItem(type) {
   const arg1 = type;
   const importDefault = arg1;

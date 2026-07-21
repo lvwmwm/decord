@@ -1,10 +1,10 @@
-// Module ID: 8823
-// Function ID: 69579
+// Module ID: 8827
+// Function ID: 69591
 // Name: getPrivateChannelCall
 // Dependencies: []
 // Exports: default
 
-// Module 8823 (getPrivateChannelCall)
+// Module 8827 (getPrivateChannelCall)
 let closure_2 = importDefault(dependencyMap[0]);
 const NOOP_NULL = arg1(dependencyMap[1]).NOOP_NULL;
 const result = arg1(dependencyMap[6]).fileFinishedImporting("modules/calls/native/getPrivateChannelCall.tsx");

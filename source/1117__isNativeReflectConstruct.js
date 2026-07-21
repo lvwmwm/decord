@@ -21,7 +21,7 @@ let closure_5 = require(dependencyMap[3]);
 let closure_6 = require(dependencyMap[4]);
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 const _module = require(dependencyMap[5]);
-let closure_8 = { y: "Normal", CHANNEL_INTEGRATION: true, onSelectFont: "AbortSignal" };
+let closure_8 = {};
 const tmp3 = (Component) => {
   class ErrorBoundary {
     constructor(arg0) {

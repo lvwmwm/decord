@@ -1,9 +1,9 @@
-// Module ID: 4228
-// Function ID: 37043
+// Module ID: 4232
+// Function ID: 37091
 // Name: STATS_INTERVAL
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 4228 (STATS_INTERVAL)
+// Module 4232 (STATS_INTERVAL)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_common/js/packages/media-engine/Stats.tsx");
 

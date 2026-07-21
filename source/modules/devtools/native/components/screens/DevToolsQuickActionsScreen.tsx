@@ -1,10 +1,10 @@
-// Module ID: 14503
-// Function ID: 109228
+// Module ID: 14510
+// Function ID: 109250
 // Name: handleNewUserOnboarding
 // Dependencies: []
 // Exports: default
 
-// Module 14503 (handleNewUserOnboarding)
+// Module 14510 (handleNewUserOnboarding)
 function handleNewUserOnboarding() {
   arg1(dependencyMap[19]).setNewUser(NewUserTypes.ORGANIC_REGISTERED);
   const obj = arg1(dependencyMap[19]);
@@ -103,7 +103,7 @@ function launchMFA() {
   let arr = importDefault(dependencyMap[27]);
   arr = arr.pop();
   arg1(dependencyMap[29])(dependencyMap[28], dependencyMap.paths).then((openMFAModal) => {
-    const items = [{ accessible: "dev-tools-gift-intent-no-channel", t: "Open a DM first." }, { type: "totp" }, { type: "backup" }, { type: "sms" }, { type: "password" }];
+    const items = [{ <string:3813777505>: "dev-tools-gift-intent-no-recipient", <string:1375428999>: "Selected channel has no other recipient." }, { type: "totp" }, { type: "backup" }, { type: "sms" }, { type: "password" }];
     openMFAModal.openMFAModal({ ticket: "ticket", methods: items }, () => {
 
     }, () => {
@@ -162,7 +162,7 @@ export default function DevToolsQuickActionsScreen() {
     const items5 = [callback2(arg1(closure_2[38]).TableRowGroup, obj1), , , , , , , , ];
     obj3 = { size: importDefault(closure_2[18]).space.PX_16 };
     items5[1] = callback2(arg1(closure_2[41]).Spacer, obj3);
-    const obj4 = { width: null, height: true };
+    const obj4 = { "Bool(false)": null, "Bool(false)": true };
     const obj5 = {};
     let str2 = "Light Theme";
     if (usingSystemTheme) {
@@ -182,8 +182,8 @@ export default function DevToolsQuickActionsScreen() {
     const obj7 = { size: importDefault(closure_2[18]).space.PX_16 };
     items5[3] = callback2(arg1(closure_2[41]).Spacer, obj7);
     const obj8 = {
-      width: null,
-      height: null,
+      "Bool(false)": "isArray",
+      "Bool(false)": "key",
       children: closure_16.map((arg0) => {
           let label;
           let value;
@@ -218,9 +218,9 @@ export default function DevToolsQuickActionsScreen() {
     obj11.icon = callback2(arg1(closure_2[49]).LanguageIcon, {});
     obj11.trailing = callback2(arg1(closure_2[50]).TableRowArrow, {});
     const items7 = [callback2(arg1(closure_2[48]).TableRow, obj11), , , , , , , , , , ];
-    const obj12 = { "Bool(false)": 1107296536, "Bool(false)": 106869, onPress: handleResetDoubleTapState, icon: callback2(arg1(closure_2[51]).KeyIcon, {}), trailing: callback2(arg1(closure_2[50]).TableRowArrow, {}) };
+    const obj12 = { onPress: handleResetDoubleTapState, icon: callback2(arg1(closure_2[51]).KeyIcon, {}), trailing: callback2(arg1(closure_2[50]).TableRowArrow, {}) };
     items7[1] = callback2(arg1(closure_2[48]).TableRow, obj12);
-    const obj13 = { "Bool(false)": 1107296584, "Bool(false)": 92181, onPress: handleResetInAppNotificationExpandNux, icon: callback2(arg1(closure_2[51]).KeyIcon, {}), trailing: callback2(arg1(closure_2[50]).TableRowArrow, {}) };
+    const obj13 = { onPress: handleResetInAppNotificationExpandNux, icon: callback2(arg1(closure_2[51]).KeyIcon, {}), trailing: callback2(arg1(closure_2[50]).TableRowArrow, {}) };
     items7[2] = callback2(arg1(closure_2[48]).TableRow, obj13);
     const obj14 = {};
     const intl2 = arg1(closure_2[47]).intl;
@@ -230,19 +230,17 @@ export default function DevToolsQuickActionsScreen() {
     obj14.icon = callback2(arg1(closure_2[52]).WrenchIcon, {});
     obj14.trailing = callback2(arg1(closure_2[50]).TableRowArrow, {});
     items7[3] = callback2(arg1(closure_2[48]).TableRow, obj14);
-    const obj15 = { "Bool(false)": true, "Bool(false)": true, onPress: launchMFA, icon: callback2(arg1(closure_2[51]).KeyIcon, {}), trailing: callback2(arg1(closure_2[50]).TableRowArrow, {}) };
+    const obj15 = { onPress: launchMFA, icon: callback2(arg1(closure_2[51]).KeyIcon, {}), trailing: callback2(arg1(closure_2[50]).TableRowArrow, {}) };
     items7[4] = callback2(arg1(closure_2[48]).TableRow, obj15);
-    const obj16 = { "Bool(false)": false, "Bool(false)": "Premium Toggles", onPress: launchTotpSetupSuccess, icon: callback2(arg1(closure_2[51]).KeyIcon, {}), trailing: callback2(arg1(closure_2[50]).TableRowArrow, {}) };
+    const obj16 = { onPress: launchTotpSetupSuccess, icon: callback2(arg1(closure_2[51]).KeyIcon, {}), trailing: callback2(arg1(closure_2[50]).TableRowArrow, {}) };
     items7[5] = callback2(arg1(closure_2[48]).TableRow, obj16);
-    const obj17 = { "Bool(false)": false, "Bool(false)": false, onPress: handleLaunchWelcomeReset, icon: callback2(arg1(closure_2[51]).KeyIcon, {}), trailing: callback2(arg1(closure_2[50]).TableRowArrow, {}) };
+    const obj17 = { onPress: handleLaunchWelcomeReset, icon: callback2(arg1(closure_2[51]).KeyIcon, {}), trailing: callback2(arg1(closure_2[50]).TableRowArrow, {}) };
     items7[6] = callback2(arg1(closure_2[48]).TableRow, obj17);
-    const obj18 = { "Bool(false)": false, "Bool(false)": "Orbs", onPress: showVibingWumpus, icon: callback2(arg1(closure_2[51]).KeyIcon, {}), trailing: callback2(arg1(closure_2[50]).TableRowArrow, {}) };
+    const obj18 = { onPress: showVibingWumpus, icon: callback2(arg1(closure_2[51]).KeyIcon, {}), trailing: callback2(arg1(closure_2[50]).TableRowArrow, {}) };
     items7[7] = callback2(arg1(closure_2[48]).TableRow, obj18);
     const obj19 = { label: "Test captcha", onPress: arg1(closure_2[53]).showCaptchaTestModal, icon: callback2(arg1(closure_2[51]).KeyIcon, {}), trailing: callback2(arg1(closure_2[50]).TableRowArrow, {}) };
     items7[8] = callback2(arg1(closure_2[48]).TableRow, obj19);
     const obj20 = {
-      "Bool(false)": true,
-      "Bool(false)": true,
       icon: callback2(arg1(closure_2[54]).EyeSlashIcon, {}),
       value: setting,
       onValueChange() {
@@ -251,7 +249,7 @@ export default function DevToolsQuickActionsScreen() {
         }
     };
     items7[9] = callback2(arg1(closure_2[39]).TableSwitchRow, obj20);
-    const obj21 = { "Bool(false)": false, "Bool(false)": "Guild Tag Badges", onPress: importDefault(closure_2[55]), icon: callback2(arg1(closure_2[52]).WrenchIcon, {}) };
+    const obj21 = { onPress: importDefault(closure_2[55]), icon: callback2(arg1(closure_2[52]).WrenchIcon, {}) };
     items7[10] = callback2(arg1(closure_2[48]).TableRow, obj21);
     obj10.children = items7;
     items5[6] = callback3(arg1(closure_2[38]).TableRowGroup, obj10);
@@ -292,9 +290,9 @@ export default function DevToolsQuickActionsScreen() {
     };
     items8[3] = callback2(arg1(closure_2[48]).TableRow, obj27);
     const obj28 = {
-      disabled: true,
-      value: true,
-      label: true,
+      "Null": true,
+      "Null": true,
+      "Null": true,
       icon: callback2(arg1(closure_2[52]).WrenchIcon, {}),
       onPress() {
           showDevWidget(closure_2[20]).dispatch({ type: "LIBDISCORE_SIMULATE_CRASH" });
@@ -302,9 +300,9 @@ export default function DevToolsQuickActionsScreen() {
     };
     items8[4] = callback2(arg1(closure_2[48]).TableRow, obj28);
     const obj29 = {
-      disabled: 4,
-      value: 279,
-      label: null,
+      "Null": 4,
+      "Null": 279,
+      "Null": null,
       icon: callback2(arg1(closure_2[52]).WrenchIcon, {}),
       onPress() {
           const socket2 = socket.getSocket();

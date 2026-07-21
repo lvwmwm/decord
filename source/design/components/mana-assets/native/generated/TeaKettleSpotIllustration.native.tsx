@@ -1,10 +1,10 @@
-// Module ID: 6583
-// Function ID: 50748
+// Module ID: 6585
+// Function ID: 50791
 // Name: TeaKettleSpotIllustration
 // Dependencies: []
 // Exports: TeaKettleSpotIllustration
 
-// Module 6583 (TeaKettleSpotIllustration)
+// Module 6585 (TeaKettleSpotIllustration)
 const jsx = require(dependencyMap[0]).jsx;
 const _module = require(dependencyMap[3]);
 const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/TeaKettleSpotIllustration.native.tsx");

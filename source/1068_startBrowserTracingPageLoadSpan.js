@@ -1,12 +1,10 @@
 // Module ID: 1068
 // Function ID: 12259
 // Name: startBrowserTracingPageLoadSpan
-// Dependencies: [977, 65, 1089, 978, 977, 794]
+// Dependencies: []
 // Exports: browserTracingIntegration
 
 // Module 1068 (startBrowserTracingPageLoadSpan)
-import getRNSentryModule from "getRNSentryModule";
-
 function startBrowserTracingPageLoadSpan(emit, name) {
   emit.emit("startPageLoadSpan", name, arg2);
   const currentScope = require(dependencyMap[1]).getCurrentScope();
@@ -62,8 +60,9 @@ function getActiveIdleSpan(closure_0) {
 function setActiveIdleSpan(arg0, arg1) {
   const result = require(dependencyMap[1]).addNonEnumerableProperty(arg0, closure_4, arg1);
 }
+let closure_2 = require(dependencyMap[0]);
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
-let closure_3 = Object.assign({}, require("_toConsumableArray").TRACING_DEFAULTS, { ignoreResourceSpans: [], ignorePerformanceApiSpans: [], _experiments: {} }, require("module_1089").defaultRequestInstrumentationOptions);
+let closure_3 = Object.assign({}, require(dependencyMap[1]).TRACING_DEFAULTS, { ignoreResourceSpans: [], ignorePerformanceApiSpans: [], _experiments: {} }, require(dependencyMap[2]).defaultRequestInstrumentationOptions);
 let closure_4 = "_sentry_idleSpan";
 
 export const BROWSER_TRACING_INTEGRATION_ID = "BrowserTracing";
@@ -73,7 +72,7 @@ export const browserTracingIntegration = function browserTracingIntegration(arg0
     function emitFinish() {
       let hasItem = readyState;
       if (readyState) {
-        const items = [];
+        const items = ["thirty", "three"];
         hasItem = items.includes(readyState.readyState);
       }
       if (hasItem) {
@@ -229,7 +228,7 @@ export const browserTracingIntegration = function browserTracingIntegration(arg0
                     }
                     obj = { capture: true };
                     const listener = globalThis.addEventListener("click", interactionHandler, obj);
-                    const listener1 = globalThis.addEventListener("keydown", interactionHandler, { 1649303889: null, -898315181: null });
+                    const listener1 = globalThis.addEventListener("keydown", interactionHandler, { "Bool(true)": null, "Bool(true)": null });
                   }
                 }
                 client.on("startNavigationSpan", (arg0, isRedirect) => {
@@ -280,7 +279,7 @@ export const browserTracingIntegration = function browserTracingIntegration(arg0
                     const result2 = currentScope.setSDKProcessingMetadata(obj2);
                     const _Object = Object;
                     const obj3 = { op: "navigation" };
-                    callback4(callback, Object.assign(obj3, arg0, {}));
+                    callback4(callback, Object.assign(obj3, arg0, { "Null": false, "Null": false }));
                     const obj12 = callback(maybeEndActiveSpan[1]);
                   }
                 });
@@ -428,7 +427,7 @@ export const browserTracingIntegration = function browserTracingIntegration(arg0
                   const tmp = callback(arg0);
                   if (tmp) {
                     let obj = arg0(arg1[1]);
-                    const items = [null, null];
+                    const items = ["y", "favoriteSoundCount"];
                     if (items.includes(obj.spanToJSON(tmp).op)) {
                       if (arg0(arg1[5]).DEBUG_BUILD) {
                         const debug2 = arg0(arg1[1]).debug;

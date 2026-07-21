@@ -1,16 +1,19 @@
-// Module ID: 6645
-// Function ID: 51013
-// Name: useBlockedPaymentsConfig
+// Module ID: 6651
+// Function ID: 51062
+// Name: items
 // Dependencies: []
 // Exports: getIsPaymentsBlocked, useBlockedPaymentsConfig, useIsPaymentsBlocked
 
-// Module 6645 (useBlockedPaymentsConfig)
+// Module 6651 (items)
 const _module = require(dependencyMap[0]);
-const items = [{ config: { paymentsBlocked: true } }];
-let closure_2 = _module.createExperiment({ defaultConfig: { paymentsBlocked: false }, treatments: items });
+let obj = { y: "r", createBackgroundHighlight: "usePerksCoachmarkDCF", y: "cursorSpine", defaultConfig: { paymentsBlocked: false } };
+obj = { -1174339580: 0.285, -1169096700: "GREEN_NEW_65", config: { paymentsBlocked: true } };
+const items = [obj];
+obj.treatments = items;
+let closure_2 = _module.createExperiment(obj);
 const _module1 = require(dependencyMap[1]);
-const obj = { -1269606814: "showAllButtonUnderline", -1845285747: "domInteractive", defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } };
-let closure_3 = _module1.createApexExperiment(obj);
+const obj1 = { 9223372036854775807: null, 0: null, defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } };
+let closure_3 = _module1.createApexExperiment(obj1);
 const _module2 = require(dependencyMap[3]);
 const result = _module2.fileFinishedImporting("modules/billing/experiments/BlockedPaymentsCountryExperiment.tsx");
 

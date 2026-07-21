@@ -1,9 +1,9 @@
-// Module ID: 12240
-// Function ID: 93897
+// Module ID: 12247
+// Function ID: 93920
 // Name: metadata
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 12240 (metadata)
+// Module 12247 (metadata)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_assets/assets/premium/tiered_tenure_badging/mobile_upcoming_bronze_badge_large.png.js");
 

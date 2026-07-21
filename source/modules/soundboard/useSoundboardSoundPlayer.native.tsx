@@ -1,10 +1,10 @@
-// Module ID: 15620
-// Function ID: 119313
+// Module ID: 15627
+// Function ID: 119337
 // Name: useSoundboardSoundPlayer
 // Dependencies: []
 // Exports: default
 
-// Module 15620 (useSoundboardSoundPlayer)
+// Module 15627 (useSoundboardSoundPlayer)
 let closure_3 = importAll(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 const SoundOutputChannel = arg1(dependencyMap[2]).SoundOutputChannel;

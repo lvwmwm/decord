@@ -1,10 +1,10 @@
-// Module ID: 7675
-// Function ID: 61311
+// Module ID: 7679
+// Function ID: 61323
 // Name: NativeLottieView
 // Dependencies: []
 // Exports: default
 
-// Module 7675 (NativeLottieView)
+// Module 7679 (NativeLottieView)
 const _module = require(dependencyMap[0]);
 ({ useEffect: closure_0, useRef: closure_1 } = _module);
 let closure_2 = importDefault(dependencyMap[0]);

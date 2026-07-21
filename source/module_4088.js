@@ -4,6 +4,6 @@
 
 // Module 4088
 const _module = require(dependencyMap[0]);
-const obj = { url: "text-sm/normal", content: "text-muted", messageId: 1, channel_id: "bold", no: "underline", "Null": "black", "Null": "red", "Null": "green", scales: [] };
+const obj = { isConnected: "text-sm/normal", isInternetReachable: "text-muted", details: 1, reachabilityUrl: "bold", reachabilityMethod: "underline", reachabilityHeaders: "black", reachabilityTest: "red", reachabilityShortTimeout: "green", scales: [] };
 
 export default _module.registerAsset(obj);

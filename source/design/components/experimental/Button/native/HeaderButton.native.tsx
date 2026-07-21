@@ -1,9 +1,9 @@
-// Module ID: 8364
-// Function ID: 66668
+// Module ID: 8368
+// Function ID: 66680
 // Name: HeaderButton
 // Dependencies: []
 
-// Module 8364 (HeaderButton)
+// Module 8368 (HeaderButton)
 class HeaderButton {
   constructor(arg0) {
     tmp = closure_4();

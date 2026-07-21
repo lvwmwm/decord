@@ -1,10 +1,10 @@
-// Module ID: 10144
-// Function ID: 78459
+// Module ID: 10150
+// Function ID: 78477
 // Name: VideoIcon
 // Dependencies: []
 // Exports: VideoIcon
 
-// Module 10144 (VideoIcon)
+// Module 10150 (VideoIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/VideoIcon.tsx");

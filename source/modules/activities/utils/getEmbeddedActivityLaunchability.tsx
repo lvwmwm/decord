@@ -1,10 +1,10 @@
-// Module ID: 10819
-// Function ID: 84017
+// Module ID: 10825
+// Function ID: 84040
 // Name: getEmbeddedActivityLaunchability
 // Dependencies: []
 // Exports: getEmbeddedActivityLaunchabilityForChannel, getEmbeddedActivityLaunchabilityLabel, useEmbeddedActivityLaunchability
 
-// Module 10819 (getEmbeddedActivityLaunchability)
+// Module 10825 (getEmbeddedActivityLaunchability)
 function getEmbeddedActivityLaunchability(arg0) {
   let ChannelStore;
   let GuildStore;

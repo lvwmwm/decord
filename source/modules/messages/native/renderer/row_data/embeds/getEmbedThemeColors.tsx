@@ -1,10 +1,10 @@
-// Module ID: 7622
-// Function ID: 61086
+// Module ID: 7626
+// Function ID: 61098
 // Name: getEmbedThemeColors
 // Dependencies: []
 // Exports: useEmbedThemeColors
 
-// Module 7622 (getEmbedThemeColors)
+// Module 7626 (getEmbedThemeColors)
 function getEmbedThemeColors(arg0) {
   const colors = callback(arg0);
   const baseColors = { borderColor: colors.borderColor, backgroundColor: colors.backgroundColor, thumbnailCornerRadius: 15, headerColor: colors.headerColor };

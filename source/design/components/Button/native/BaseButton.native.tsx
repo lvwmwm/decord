@@ -1,12 +1,12 @@
-// Module ID: 4542
-// Function ID: 39803
+// Module ID: 4546
+// Function ID: 39851
 // Name: BaseButton
 // Dependencies: []
 
-// Module 4542 (BaseButton)
+// Module 4546 (BaseButton)
 let Pressable;
 let TouchableOpacity;
-let closure_3 = [null];
+let closure_3 = ["GUILD_DELETE"];
 let closure_4 = importDefault(dependencyMap[0]);
 const importAllResult = importAll(dependencyMap[1]);
 ({ Pressable, TouchableOpacity } = arg1(dependencyMap[2]));

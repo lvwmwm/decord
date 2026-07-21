@@ -1,10 +1,10 @@
-// Module ID: 12697
-// Function ID: 97451
+// Module ID: 12704
+// Function ID: 97474
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 // Exports: __DEV_overrideLayoutMapKey, getKeyboardEventShapeFromAny, getKeyboardEventShapeFromKey, getKeyboardEventShapeFromKeycode, getLayoutMap, resetKeyboardMapper
 
-// Module 12697 (_isNativeReflectConstruct)
+// Module 12704 (_isNativeReflectConstruct)
 let LinuxKeyToCode;
 let MacosKeyToCode;
 let WindowsKeyToCode;
@@ -163,7 +163,7 @@ if (!obj.isLinux()) {
   const obj2 = arg1(dependencyMap[10]);
 }
 const obj = arg1(dependencyMap[10]);
-const frozen = Object.freeze({ backgroundColor: null, borderTopLeftRadius: "928ec3b0cfa6ddcb7b852c71960488c7", borderTopRightRadius: "Share", overflow: "png", alignSelf: 12, shadowColor: 16, shadowOffset: 8, shadowOpacity: true, shadowRadius: "/assets/modules/contact_sync/native/images", elevation: 40, flex: 40, elevation: null, backgroundColor: "1d68443a64aaff8d1d20c2355b47322a", borderRadius: "cta", marginLeft: "png", paddingHorizontal: 24, justifyContent: 128, "Null": 96, "Null": null, "Null": "center", "Null": 1, "Null": "space-between", "Null": null, "Bool(false)": "stretch", "Bool(false)": 80, "Bool(false)": 80, "Null": "center", "Null": "underline", "Null": null, "Null": 1, "Null": "native_modal", "Bool(false)": "one_time_login_native_modal", "Bool(false)": "native_app", "Bool(false)": "native_modal", "Bool(false)": "missing_token", "Bool(false)": "No token provided", "Bool(false)": "native_modal", "Bool(false)": "one_time_login", "Null": "native_modal", "Null": "api_error", "Null": true, "Null": "/assets/images/native", "Null": 120, "Null": 120, "Null": null, "Null": "0242e2e3975e7ca5a2256573e276d96f", "Null": "logo", "Null": "png" });
+const frozen = Object.freeze({ "Null": null, "Null": "928ec3b0cfa6ddcb7b852c71960488c7", "Null": "Share", borderRadius: "png", borderWidth: 12, borderStyle: 16, marginBottom: 8, fontSize: true, color: "/assets/modules/contact_sync/native/images", paddingHorizontal: 40, paddingBottom: 40, textAlign: null, margin: "1d68443a64aaff8d1d20c2355b47322a", width: "cta", height: "png", display: 24, justifyContent: 128, alignItems: 96, minWidth: null, height: "center", borderRadius: 1, marginHorizontal: "space-between", marginVertical: null, justifyContent: "stretch", alignItems: 80, "Bool(false)": 80, "Bool(false)": "center", "Bool(false)": "underline", "Bool(false)": null, "Bool(false)": 1, "Bool(false)": "native_modal", "Bool(false)": "one_time_login_native_modal", "Bool(false)": "native_app", "Bool(false)": "native_modal", "Bool(false)": "missing_token", sk: "No token provided", default: "native_modal", ml: "one_time_login", np: "native_modal", has: "api_error", ind: true, _distance: "/assets/images/native", title: 120, t: 120, accessible: null, messageId: "0242e2e3975e7ca5a2256573e276d96f", container: "logo", channel: "png" });
 let tmp7 = () => {
   class DiscordKeyboardLayoutMap {
     constructor() {

@@ -88,7 +88,7 @@ function setDisplayName(arg0, displayName) {
 }
 let closure_4 = importDefault(dependencyMap[0]);
 let closure_5 = importDefault(dependencyMap[1]);
-const set = new Set([true, true, true, true, true, true, true, true, true, true, true, true, true, true]);
+const set = new Set([null, null, null, null, null, null, null, null, null, null, null, null, null, null]);
 const logger = new arg1(dependencyMap[2]).Logger("Flux");
 let closure_8 = () => {
   class ActionHandlersGraph {

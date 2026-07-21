@@ -1,10 +1,10 @@
-// Module ID: 8572
-// Function ID: 68101
+// Module ID: 8576
+// Function ID: 68113
 // Name: ServerPreviewPill
 // Dependencies: []
 // Exports: default
 
-// Module 8572 (ServerPreviewPill)
+// Module 8576 (ServerPreviewPill)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 const jsx = arg1(dependencyMap[2]).jsx;

@@ -1,10 +1,10 @@
-// Module ID: 8354
-// Function ID: 66588
+// Module ID: 8358
+// Function ID: 66600
 // Name: openCreateOrEditGuildEventModal
 // Dependencies: []
 // Exports: closeGuildEventListActionSheet, openGuildEventListActionSheet, openShareEvent, showGuildEventModeratorActionSheet, transitionToEventDetailsFromInvite
 
-// Module 8354 (openCreateOrEditGuildEventModal)
+// Module 8358 (openCreateOrEditGuildEventModal)
 function openCreateOrEditGuildEventModal(guild, arg1) {
   let guildEvent;
   let recurrenceId;
@@ -387,7 +387,7 @@ export const showGuildEventModeratorActionSheet = function showGuildEventModerat
         }
         const obj18 = closure_3(dependencyMap[40]);
       }
-      const obj14 = { status: true, construct: true, replace: true, colors: true, options: items };
+      const obj14 = { "Bool(false)": null, "Bool(false)": null, "Bool(false)": "i", "Bool(false)": "i", options: items };
       const result1 = closure_3(dependencyMap[42]).showSimpleActionSheet(obj14);
     }
   }

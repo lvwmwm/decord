@@ -1,10 +1,10 @@
-// Module ID: 15611
-// Function ID: 119214
+// Module ID: 15618
+// Function ID: 119238
 // Name: openExpressionPicker
 // Dependencies: []
 // Exports: setExpressionPickerView, setSearchQuery, toggleExpressionPicker, toggleMultiExpressionPicker
 
-// Module 15611 (openExpressionPicker)
+// Module 15618 (openExpressionPicker)
 function openExpressionPicker(arg0, arg1, arg2) {
   const require = arg0;
   const dependencyMap = arg1;
@@ -22,7 +22,7 @@ function closeExpressionPicker(arg0, arg1) {
   if (!tmp2) {
     if (null !== state.activeView) {
       require(dependencyMap[4]).batchUpdates(() => {
-        const obj = { display: "Normal", flexDirection: true, justifyContent: "AbortSignal", lastActiveView: state.activeView };
+        const obj = { "Null": null, "Null": "\u{1F9BB}\u{1F3FF}", "Null": true, lastActiveView: state.activeView };
         return state.setState(obj);
       });
       const obj = require(dependencyMap[4]);

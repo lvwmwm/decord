@@ -1,9 +1,9 @@
-// Module ID: 15343
-// Function ID: 116879
+// Module ID: 15350
+// Function ID: 116903
 // Name: useHasSettingsBadge
 // Dependencies: []
 
-// Module 15343 (useHasSettingsBadge)
+// Module 15350 (useHasSettingsBadge)
 function useHasSettingsBadge() {
   let tmp = arg1(dependencyMap[10]).useUnseenOutboundPromotions().length > 0;
   const obj = arg1(dependencyMap[10]);
@@ -64,11 +64,11 @@ let closure_13 = arg1(dependencyMap[6]).createStyles((paddingTop, arg1, arg2, ar
   obj2.borderWidth = 1;
   const merged3 = Object.assign(importDefault(dependencyMap[8]).shadows.SHADOW_HIGH);
   obj.containerFloating = obj2;
+  const obj3 = { 9223372036854775807: true, 0: true, 9223372036854775807: true, top: importDefault(dependencyMap[8]).space.PX_4, right: importDefault(dependencyMap[8]).space.PX_12, paddingTop };
+  obj.buttons = obj3;
   const obj7 = arg1(dependencyMap[9]);
-  obj.buttons = { top: importDefault(dependencyMap[8]).space.PX_4, right: importDefault(dependencyMap[8]).space.PX_12, paddingTop };
-  const obj4 = { -9223372036854775808: true, filter: true, gap: importDefault(dependencyMap[8]).space.PX_16 };
-  obj.buttonsFloating = obj4;
-  obj.loading = { 9223372036854775807: null, -9223372036854775808: null, 9223372036854775807: null };
+  obj.buttonsFloating = { gap: importDefault(dependencyMap[8]).space.PX_16 };
+  obj.loading = { <string:2700829420>: null, <string:1661207633>: null, <string:1365420630>: null };
   return obj;
 });
 const obj2 = arg1(dependencyMap[6]);
@@ -249,7 +249,7 @@ const memoResult = importAllResult.memo((navigateToPremium) => {
     ContentDismissActionType = color;
     const items7 = [color];
     const memo = importAllResult.useMemo(() => {
-      const obj = { start: { "Null": false, "Null": true }, end: { "Null": 131072.00314656927, "Null": 0.000000000000000000000000000000000000000000000000000000011294471302334573 } };
+      const obj = { start: { max: -536870861, guildId: -299892737 }, end: {} };
       const obj2 = navigateToPremium(gradientSecondaryBackground[19])(color);
       const items = [navigateToPremium(gradientSecondaryBackground[19])(color).alpha(0).hex(), ];
       const alphaResult = navigateToPremium(gradientSecondaryBackground[19])(color).alpha(0);

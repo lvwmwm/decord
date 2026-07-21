@@ -1,10 +1,10 @@
-// Module ID: 11794
-// Function ID: 91540
+// Module ID: 11801
+// Function ID: 91563
 // Name: useInappropriateConversationsTiers
 // Dependencies: []
 // Exports: useInappropriateConversationsTiers
 
-// Module 11794 (useInappropriateConversationsTiers)
+// Module 11801 (useInappropriateConversationsTiers)
 let closure_2 = importDefault(dependencyMap[0]);
 const SafetyWarningTypes = arg1(dependencyMap[1]).SafetyWarningTypes;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/self_mod/inappropriate_conversation/hooks/useInappropriateConversationsTiers.tsx");

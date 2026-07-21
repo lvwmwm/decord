@@ -1,16 +1,17 @@
 // Module ID: 3472
 // Function ID: 26843
 // Name: getDaysInMonth
-// Dependencies: []
+// Dependencies: [3366, 3370]
 // Exports: default
 
 // Module 3472 (getDaysInMonth)
-let closure_0 = _interopRequireDefault(require(dependencyMap[0]));
-let closure_1 = _interopRequireDefault(require(dependencyMap[1]));
+import startOfWeek from "startOfWeek";
+import getTimezoneOffsetInMilliseconds from "getTimezoneOffsetInMilliseconds";
+
 
 export default function getDaysInMonth(defaultResult1) {
-  closure_1.default(1, arguments);
-  defaultResult1 = closure_0.default(defaultResult1);
+  getTimezoneOffsetInMilliseconds.default(1, arguments);
+  defaultResult1 = startOfWeek.default(defaultResult1);
   const fullYear = defaultResult1.getFullYear();
   const month = defaultResult1.getMonth();
   const date = new Date(0);

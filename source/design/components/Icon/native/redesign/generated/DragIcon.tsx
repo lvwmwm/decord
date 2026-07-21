@@ -1,10 +1,10 @@
-// Module ID: 5436
-// Function ID: 46497
+// Module ID: 5438
+// Function ID: 46539
 // Name: DragIcon
 // Dependencies: []
 // Exports: DragIcon
 
-// Module 5436 (DragIcon)
+// Module 5438 (DragIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/DragIcon.tsx");

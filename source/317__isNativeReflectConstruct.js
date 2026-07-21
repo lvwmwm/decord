@@ -127,7 +127,7 @@ function ItemWithSeparator(leadingItem) {
   obj3.children = items1;
   return closure_15(closure_14, obj3);
 }
-let closure_3 = ["baseLanes", "issues", "IGNORE_SPAM_MESSAGE", "renderHeader", "getExperimentsMetadata", "STEP_2", "fileFinishedImporting"];
+let closure_3 = ["<string:3378511872>", "<string:4318467>", "<string:1903034368>", "<string:4319305>", "<string:2318688256>", "<string:4319469>", "<string:1560485888>"];
 let closure_4 = importDefault(dependencyMap[0]);
 let closure_5 = importDefault(dependencyMap[1]);
 let closure_6 = importDefault(dependencyMap[2]);

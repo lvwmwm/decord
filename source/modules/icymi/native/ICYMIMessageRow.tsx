@@ -1,10 +1,10 @@
-// Module ID: 15089
-// Function ID: 113776
+// Module ID: 15096
+// Function ID: 113800
 // Name: MessageRowContent
 // Dependencies: []
 // Exports: default
 
-// Module 15089 (MessageRowContent)
+// Module 15096 (MessageRowContent)
 class MessageRowContent {
   constructor(arg0) {
     message = global.message;
@@ -23,7 +23,7 @@ class MessageRowContent {
     if (flag2 === undefined) {
       flag2 = false;
     }
-    tmp = f113784();
+    tmp = f113808();
     context = defineProperty.useContext(arg1(dependencyMap[14]).ICYMIContext);
     obj = arg1(dependencyMap[15]);
     result = obj.extractMediaSourcesFromMessage(message, message, channel.guild_id, arg1(dependencyMap[16]).GRAVITY_VALID_EMBED_TYPES);
@@ -182,7 +182,7 @@ function ReplyMessageContent(message) {
     const obj4 = {};
     const obj5 = { gap: 4, width: width - context.inset - 2 * ITEM_PADDING - 2 * PX_12 - 30 - PX_8 - 2 };
     obj4.style = obj5;
-    const obj6 = { 1968435297: 1776828772, 915925470: -144637951, 1375298031: 815617 };
+    const obj6 = { keFvXM: "SHARE_SCREEN_MODAL_KEY", address-line1: "proto", guildId: "NO_VOICE_STATES" };
     const obj7 = { color: colorString };
     obj6.style = obj7;
     obj6.children = arg1(dependencyMap[23]).getName(guild.id, channel.id, stateFromStores);
@@ -234,7 +234,7 @@ let closure_18 = arg1(dependencyMap[12]).createICYMIStyles((paddingLeft) => {
   obj.gap = 0;
   obj.messagePreview = obj;
   obj.replyPreview = { gap: importDefault(dependencyMap[11]).space.PX_8, marginHorizontal: paddingLeft.margin, padding: PX_12, overflow: "hidden", borderWidth: 1, borderColor: importDefault(dependencyMap[11]).colors.BORDER_SUBTLE, borderRadius: importDefault(dependencyMap[11]).radii.lg, maxHeight: 132 };
-  const obj2 = { deaf_person: false, _min: false, HeaderTitle: false, gap: PX_8 };
+  const obj2 = { <string:2488679268>: true, <string:2486854326>: true, <string:1721488721>: true, gap: PX_8 };
   obj.replyInner = obj2;
   obj.afterMessage = { paddingLeft: paddingLeft.inset, paddingBottom: paddingLeft.margin };
   obj.media = { marginRight: paddingLeft.margin };
@@ -292,7 +292,7 @@ let closure_19 = importAllResult.memo((message) => {
   const callback = importAllResult.useCallback(() => {
     let obj = channel(guild[26]);
     obj.itemInteracted(message.id, "message", "long_press_channel");
-    obj = { itemId: message.id, itemType: "message", actionParameters: { "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true } };
+    obj = { itemId: message.id, itemType: "message", actionParameters: { "Bool(false)": null, "Bool(false)": "apex_assignments_received", "Bool(false)": "view_friend_requests", "Bool(false)": null } };
     channel(guild[26]).feedItemActioned(obj);
     const obj2 = channel(guild[26]);
     const result = message(guild[27]).openChannelLongPressActionSheet(channel.id);
@@ -301,7 +301,7 @@ let closure_19 = importAllResult.memo((message) => {
   const callback1 = importAllResult.useCallback(() => {
     let obj = channel(guild[26]);
     obj.itemInteracted(message.id, "message", "long_press_message");
-    obj = { itemId: message.id, itemType: "message", actionParameters: { "Bool(false)": "userId", "Bool(false)": "borderRadius", "Bool(false)": -1310825736, "Bool(false)": -1310805538 } };
+    obj = { itemId: message.id, itemType: "message", actionParameters: {} };
     channel(guild[26]).feedItemActioned(obj);
     const obj2 = channel(guild[26]);
     obj = { channel, message, user: user.getUser(message.author.id) };
@@ -310,7 +310,7 @@ let closure_19 = importAllResult.memo((message) => {
   const callback2 = importAllResult.useCallback(() => {
     let obj = channel(guild[26]);
     obj.itemInteracted(message.id, "message", "press_message");
-    obj = { itemId: message.id, itemType: "message", actionParameters: {} };
+    obj = { itemId: message.id, itemType: "message", actionParameters: { "Bool(false)": -0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000009875954114321378, "Bool(false)": 353076186411522100000000000000000000, "Bool(false)": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000013053759670591748, "Bool(false)": -9518929275348370000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 } };
     channel(guild[26]).feedItemActioned(obj);
     const obj2 = channel(guild[26]);
     message(guild[29]).navigateToPost(channel.id, guild.id, message.id);

@@ -1,9 +1,9 @@
-// Module ID: 11499
-// Function ID: 89632
+// Module ID: 11506
+// Function ID: 89656
 // Name: GameServerStatus
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 11499 (GameServerStatus)
+// Module 11506 (GameServerStatus)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_common/js/shared/shared-constants/GameServerStatus.tsx");
 

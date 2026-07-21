@@ -1,10 +1,10 @@
-// Module ID: 8668
-// Function ID: 68643
+// Module ID: 8672
+// Function ID: 68655
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 // Exports: isCollectiblesWishlistItemRecord
 
-// Module 8668 (_createForOfIteratorHelperLoose)
+// Module 8672 (_createForOfIteratorHelperLoose)
 function _createForOfIteratorHelperLoose(@@iterator) {
   let arg1 = Symbol_iterator;
   @@iterator = "undefined" !== typeof Symbol;

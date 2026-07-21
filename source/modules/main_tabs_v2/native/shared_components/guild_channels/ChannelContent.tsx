@@ -1,10 +1,10 @@
-// Module ID: 15220
-// Function ID: 114945
+// Module ID: 15227
+// Function ID: 114969
 // Name: ChannelContentComponent
 // Dependencies: []
 // Exports: renderChannelContent
 
-// Module 15220 (ChannelContentComponent)
+// Module 15227 (ChannelContentComponent)
 function ChannelContentComponent(arg0) {
   let channel;
   let connected;
@@ -54,7 +54,7 @@ function ChannelContentComponent(arg0) {
   items[1] = obj2;
   obj1.style = items;
   const obj3 = {};
-  const obj4 = {};
+  const obj4 = { <string:1509384864>: null, <string:1151137619>: null, <string:1637131815>: null };
   let num2 = 0;
   if (tmp9) {
     num2 = 30;
@@ -88,12 +88,12 @@ function ChannelContentComponent(arg0) {
     items2[1] = obj7;
     obj6.style = items2;
     if (tmp3) {
-      const obj8 = { flexDirection: "from", alignItems: null, style: tmp.channelTraitIcon };
+      const obj8 = { flex: "text-xs/medium", flexGrow: "text-default", style: tmp.channelTraitIcon };
       tmp3 = callback(arg1(dependencyMap[10]).LockIcon, obj8);
     }
     const items3 = [tmp3, , ];
     if (isNSFWResult) {
-      const obj9 = { flexDirection: "from", alignItems: null, style: tmp.channelTraitIcon };
+      const obj9 = { flex: "text-xs/medium", flexGrow: "text-default", style: tmp.channelTraitIcon };
       isNSFWResult = callback(arg1(dependencyMap[11]).WarningIcon, obj9);
     }
     items3[1] = isNSFWResult;
@@ -146,7 +146,7 @@ function ChannelContentComponent(arg0) {
   }
   const items7 = [tmp38, , ];
   const obj17 = {};
-  const items8 = [{ 9223372036854775807: "/assets/design/components/Illustration/native/redesign/generated/images", 0: 160 }, ];
+  const items8 = [{ 0: "/assets/design/components/Illustration/native/redesign/generated/images", 0: 160 }, ];
   if (tmp8) {
     const obj18 = { marginTop: 5 };
     tmp8 = obj18;
@@ -182,11 +182,11 @@ if (obj4.isIOS()) {
 }
 obj.marginTop = num;
 obj.channelContent = obj;
-obj.channelContainer = { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null };
+obj.channelContainer = { -9223372036854775808: 1393, 9223372036854775807: -1535160064, -9223372036854775808: -163464863, 0: "y" };
 obj.leftBox = {};
 obj.rightBox = {};
-obj.rightContentAbsolute = { ignoreDuration: true, limits: true, initialScrollStart: true };
-obj.channelTraits = { "Bool(true)": 8, "Bool(true)": null, "Bool(true)": "\u270A\u{1F3FF}" };
+obj.rightContentAbsolute = { sl: 3375103, so: -8192, sq: 4320799 };
+obj.channelTraits = {};
 const obj1 = { opacity: arg1(dependencyMap[2]).SUBTITLE_OPACITY_NORMAL, marginRight: 4 };
 const obj4 = arg1(dependencyMap[6]);
 let num2 = 0;

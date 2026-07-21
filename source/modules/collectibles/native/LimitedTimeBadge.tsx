@@ -1,10 +1,10 @@
-// Module ID: 8695
-// Function ID: 68857
+// Module ID: 8699
+// Function ID: 68869
 // Name: LimitedTimeBadge
 // Dependencies: []
 // Exports: default
 
-// Module 8695 (LimitedTimeBadge)
+// Module 8699 (LimitedTimeBadge)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 let closure_4 = importDefault(dependencyMap[2]);
@@ -12,7 +12,7 @@ let closure_5 = importDefault(dependencyMap[3]);
 const jsx = arg1(dependencyMap[4]).jsx;
 let obj = arg1(dependencyMap[5]);
 obj = {};
-obj = { borderRadius: importDefault(dependencyMap[6]).radii.md };
+obj = { "Null": 24, "Null": 24, "Null": null, borderRadius: importDefault(dependencyMap[6]).radii.md };
 obj.root = obj;
 obj.backgroundDarkMode = { backgroundColor: importDefault(dependencyMap[6]).colors.WHITE };
 const obj1 = { backgroundColor: importDefault(dependencyMap[6]).colors.WHITE };

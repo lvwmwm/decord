@@ -1,10 +1,10 @@
-// Module ID: 10842
-// Function ID: 84248
+// Module ID: 10848
+// Function ID: 84271
 // Name: MediaViewerAltTextSheet
 // Dependencies: []
 // Exports: default
 
-// Module 10842 (MediaViewerAltTextSheet)
+// Module 10848 (MediaViewerAltTextSheet)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 let obj = arg1(dependencyMap[2]);
@@ -14,7 +14,7 @@ obj.container = obj;
 let closure_3 = obj.createStyles(obj);
 const result = arg1(dependencyMap[10]).fileFinishedImporting("modules/media_viewer/native/components/overlay/MediaModalOverlayAltTextSheet.tsx");
 
-export default function MediaViewerAltTextSheet(children) {
+export default function MediaViewerAltTextSheet(description) {
   let obj = arg1(dependencyMap[4]);
   const messagePreviewCollapsedheight = obj.useMessagePreviewCollapsedheight();
   let obj1 = arg1(dependencyMap[5]);
@@ -31,6 +31,7 @@ export default function MediaViewerAltTextSheet(children) {
   obj1 = { minHeight: num };
   items[1] = obj1;
   obj.contentStyles = items;
-  obj.children = jsx(arg1(dependencyMap[9]).Text, { children: children.description });
+  const obj2 = { 0: "<string:3377594370>", 9223372036854775807: "<string:297260389>", children: description.description };
+  obj.children = jsx(arg1(dependencyMap[9]).Text, obj2);
   return jsx(arg1(dependencyMap[6]).BottomSheet, obj);
 };

@@ -1,10 +1,10 @@
-// Module ID: 4679
-// Function ID: 40741
+// Module ID: 4681
+// Function ID: 40782
 // Name: openPrivacySettings
 // Dependencies: []
 // Exports: default
 
-// Module 4679 (openPrivacySettings)
+// Module 4681 (openPrivacySettings)
 const NativeModules = require(dependencyMap[0]).NativeModules;
 const _module = require(dependencyMap[3]);
 const result = _module.fileFinishedImporting("modules/native_permissions/mobile/openPrivacySettings.native.tsx");

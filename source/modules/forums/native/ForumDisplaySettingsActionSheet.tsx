@@ -1,20 +1,20 @@
-// Module ID: 11780
-// Function ID: 91473
+// Module ID: 11787
+// Function ID: 91496
 // Name: ForumDisplaySettingsActionSheet
 // Dependencies: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 // Exports: default
 
-// Module 11780 (ForumDisplaySettingsActionSheet)
-import closure_3 from "result";
-import closure_4 from "result";
-import closure_5 from "result";
-import result from "result";
-import result from "result";
-import result from "result";
+// Module 11787 (ForumDisplaySettingsActionSheet)
+import closure_3 from "__exportStarResult1";
+import closure_4 from "__exportStarResult1";
+import closure_5 from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
 
-({ useForumChannelStoreApi: closure_6, useForumChannelStore: closure_7 } = result);
-({ jsx: closure_8, jsxs: closure_9 } = result);
-result = result.fileFinishedImporting("modules/forums/native/ForumDisplaySettingsActionSheet.tsx");
+({ useForumChannelStoreApi: closure_6, useForumChannelStore: closure_7 } = __exportStarResult1);
+({ jsx: closure_8, jsxs: closure_9 } = __exportStarResult1);
+const result = __exportStarResult1.fileFinishedImporting("modules/forums/native/ForumDisplaySettingsActionSheet.tsx");
 
 export default function ForumDisplaySettingsActionSheet(channelId) {
   channelId = channelId.channelId;

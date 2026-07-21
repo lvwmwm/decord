@@ -1,10 +1,10 @@
-// Module ID: 4637
-// Function ID: 40242
+// Module ID: 4639
+// Function ID: 40283
 // Name: ImageLockIcon
 // Dependencies: []
 // Exports: ImageLockIcon
 
-// Module 4637 (ImageLockIcon)
+// Module 4639 (ImageLockIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/ImageLockIcon.tsx");

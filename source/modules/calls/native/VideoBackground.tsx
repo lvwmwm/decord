@@ -1,17 +1,17 @@
-// Module ID: 7873
-// Function ID: 62688
+// Module ID: 7877
+// Function ID: 62700
 // Name: useDominantRGBFromImage
 // Dependencies: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4294967295, 0]
 
-// Module 7873 (useDominantRGBFromImage)
-import closure_3 from "result";
-import importAllResult from "result";
-import result from "result";
-import result from "result";
-import result from "result";
-import result from "result";
-import importDefaultResult from "result";
-import result from "result";
+// Module 7877 (useDominantRGBFromImage)
+import closure_3 from "__exportStarResult1";
+import importAllResult from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
+import importDefaultResult from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
 
 function useDominantRGBFromImage(arg0, arg1) {
   arg1 = arg0;
@@ -85,15 +85,15 @@ class VideoBackground {
     ({ user, guildId } = global);
     arg1 = guildId;
     renderVideoDetails = global.renderVideoDetails;
-    obj = { "Null": 1091658877, "Bool(false)": 151597, "Bool(false)": 6258, "Bool(false)": 6144, "Bool(false)": -180289280, "Bool(false)": 1375732285, "Bool(false)": 1685947892 };
+    obj = { y: null, sparkling_heart: null, y: null, commandsDisabled: null, renderEmbeds: null, inlineEmbedMedia: null, inlineAttachmentMedia: null };
     setPrototypeOfResult = Object.setPrototypeOf(null);
     merged = Object.assign(global, obj);
     closure_1 = undefined;
     dependencyMap = undefined;
     tmp3 = closure_12();
-    tmp4 = f62695(url);
+    tmp4 = f62707(url);
     tmp5 = useDominantColorFromImage(url, tmp4);
-    tmp6 = require("result")("VideoBackground-native");
+    tmp6 = require("__exportStarResult1")("VideoBackground-native");
     closure_1 = tmp6;
     id = undefined;
     if (null != user) {
@@ -103,7 +103,7 @@ class VideoBackground {
       id = EMPTY_STRING_SNOWFLAKE_ID;
     }
     dependencyMap = id;
-    tmp8 = require("result")(id, guildId);
+    tmp8 = require("__exportStarResult1")(id, guildId);
     first = undefined;
     if (null != tmp8) {
       themeColors = tmp8.themeColors;
@@ -134,7 +134,7 @@ class VideoBackground {
     if (tmp13) {
       tmp13 = null != tmp12;
     }
-    obj2 = require("result");
+    obj2 = require("__exportStarResult1");
     tmp14 = null;
     if (tmp13) {
       tmp14 = tmp10;
@@ -205,7 +205,7 @@ class VideoBackground {
       obj2["avatarStyle"] = items2;
       str2 = "isStageCall";
       obj2["isStageCall"] = isStageCall;
-      tmp29 = jsx(require("result").Avatar, obj2);
+      tmp29 = jsx(require("__exportStarResult1").Avatar, obj2);
       if (null != videoTileGradientColors) {
         tmp33 = jsxs;
         tmp34 = closure_1;
@@ -213,8 +213,8 @@ class VideoBackground {
         num3 = 16;
         obj3 = {};
         obj3.colors = videoTileGradientColors;
-        obj3.start = { "Null": false, "Null": true };
-        obj3.end = { "Null": 131072.00314656927, "Null": 0.000000000000000000000000000000000000000000000000000000011294471302334573 };
+        obj3.start = { max: -536870861, guildId: -299892737 };
+        obj3.end = {};
         obj3.style = items1;
         items3 = [, ];
         items3[0] = tmp29;
@@ -236,11 +236,11 @@ class VideoBackground {
     }
   }
 }
-({ View: closure_5, NativeModules: closure_6, Image: closure_7 } = result);
-({ EMPTY_STRING_SNOWFLAKE_ID: closure_8, NOOP: closure_9 } = result);
-({ jsx: closure_10, jsxs: closure_11 } = result);
-let closure_12 = result.createStyles({ videoBackground: { alignItems: "center" }, videoDetailsSpacer: { paddingTop: 12 } });
-const memoizeResult = require("result").memoize((uri) => {
+({ View: closure_5, NativeModules: closure_6, Image: closure_7 } = __exportStarResult1);
+({ EMPTY_STRING_SNOWFLAKE_ID: closure_8, NOOP: closure_9 } = __exportStarResult1);
+({ jsx: closure_10, jsxs: closure_11 } = __exportStarResult1);
+let closure_12 = __exportStarResult1.createStyles({ videoBackground: { alignItems: "center" }, videoDetailsSpacer: { paddingTop: 12 } });
+const memoizeResult = require("__exportStarResult1").memoize((uri) => {
   let tmp = null;
   if (null != uri) {
     tmp = null;
@@ -255,11 +255,11 @@ const memoizeResult = require("result").memoize((uri) => {
   }
   return tmp;
 });
-VideoBackground.AvatarSizes = require("result").AvatarSizes;
-result = result.fileFinishedImporting("modules/calls/native/VideoBackground.tsx");
+VideoBackground.AvatarSizes = require("__exportStarResult1").AvatarSizes;
+const result = __exportStarResult1.fileFinishedImporting("modules/calls/native/VideoBackground.tsx");
 
 export default importAllResult.memo(VideoBackground);
-export const AvatarSizes = require("result").AvatarSizes;
+export const AvatarSizes = require("__exportStarResult1").AvatarSizes;
 export const memoizedImageSource = memoizeResult;
 export { useDominantRGBFromImage };
 export { useDominantColorFromImage };

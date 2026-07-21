@@ -1,10 +1,10 @@
-// Module ID: 6399
-// Function ID: 50472
+// Module ID: 6401
+// Function ID: 50515
 // Name: PingPongPaddleIllocon
 // Dependencies: []
 // Exports: PingPongPaddleIllocon
 
-// Module 6399 (PingPongPaddleIllocon)
+// Module 6401 (PingPongPaddleIllocon)
 const jsx = require(dependencyMap[0]).jsx;
 const _module = require(dependencyMap[3]);
 const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/PingPongPaddleIllocon.native.tsx");

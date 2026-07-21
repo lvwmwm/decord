@@ -1,10 +1,10 @@
-// Module ID: 9939
-// Function ID: 76880
+// Module ID: 9944
+// Function ID: 76896
 // Name: ChatMarkUnreadIcon
 // Dependencies: []
 // Exports: ChatMarkUnreadIcon
 
-// Module 9939 (ChatMarkUnreadIcon)
+// Module 9944 (ChatMarkUnreadIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/ChatMarkUnreadIcon.tsx");

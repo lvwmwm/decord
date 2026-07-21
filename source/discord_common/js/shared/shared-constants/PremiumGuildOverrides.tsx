@@ -1,7 +1,7 @@
 // Module ID: 4022
 // Function ID: 33491
 // Name: PremiumGuildOverrides
-// Dependencies: []
+// Dependencies: [284214097]
 
 // Module 4022 (PremiumGuildOverrides)
 const _module = require(dependencyMap[0]);

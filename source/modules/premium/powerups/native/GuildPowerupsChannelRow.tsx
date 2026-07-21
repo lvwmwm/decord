@@ -1,15 +1,15 @@
-// Module ID: 14907
-// Function ID: 112287
+// Module ID: 14914
+// Function ID: 112311
 // Name: GuildPowerupsChannelRowIndicator
 // Dependencies: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 // Exports: default
 
-// Module 14907 (GuildPowerupsChannelRowIndicator)
-import closure_3 from "result";
-import { View } from "result";
-import result from "result";
-import result from "result";
-import result from "result";
+// Module 14914 (GuildPowerupsChannelRowIndicator)
+import closure_3 from "__exportStarResult1";
+import { View } from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
 
 function GuildPowerupsChannelRowIndicator(indicator) {
   indicator = indicator.indicator;
@@ -50,12 +50,12 @@ function GuildPowerupsCoachmark(arg0) {
   }
   return tmp3;
 }
-({ jsx: closure_5, jsxs: closure_6 } = result);
-result = {};
-result = { marginVertical: require("result").CHANNEL_MARGIN_VERTICAL, marginHorizontal: 8, borderRadius: require("result").radii.md };
-result.container = result;
-result = result.createStyles(result);
-result = result.fileFinishedImporting("modules/premium/powerups/native/GuildPowerupsChannelRow.tsx");
+({ jsx: closure_5, jsxs: closure_6 } = __exportStarResult1);
+__exportStarResult1 = {};
+__exportStarResult1 = { marginVertical: require("__exportStarResult1").CHANNEL_MARGIN_VERTICAL, marginHorizontal: 8, borderRadius: require("__exportStarResult1").radii.md };
+__exportStarResult1.container = __exportStarResult1;
+__exportStarResult1 = __exportStarResult1.createStyles(__exportStarResult1);
+const result = __exportStarResult1.fileFinishedImporting("modules/premium/powerups/native/GuildPowerupsChannelRow.tsx");
 
 export default function GuildPowerupsChannelRow(guildId) {
   guildId = guildId.guildId;
@@ -64,7 +64,7 @@ export default function GuildPowerupsChannelRow(guildId) {
   const ref = React.useRef(null);
   const tmp3 = importDefault(dependencyMap[12])(guildId);
   let indicator;
-  const tmp = result();
+  const tmp = __exportStarResult1();
   if (null != tmp3) {
     indicator = tmp3.indicator;
   }

@@ -1,10 +1,10 @@
-// Module ID: 6647
-// Function ID: 51023
+// Module ID: 6653
+// Function ID: 51072
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 // Exports: cancelGenericSubscription, createGenericSubscription, migrateToACOM, mobilePurchaseSKU, modifyGenericSubscription, resubscribeGenericSubscription
 
-// Module 6647 (_createForOfIteratorHelperLoose)
+// Module 6653 (_createForOfIteratorHelperLoose)
 function _createForOfIteratorHelperLoose(@@iterator) {
   let arg1 = Symbol_iterator;
   @@iterator = "undefined" !== typeof Symbol;
@@ -764,9 +764,9 @@ async function _migrateToACOM() {
     return false;
   }
 }
-let closure_4 = [];
-let closure_5 = [1768423425];
-let closure_6 = [null, null, null, null];
+let closure_4 = [null, null];
+let closure_5 = [false];
+let closure_6 = [];
 let closure_7 = importDefault(dependencyMap[0]);
 let closure_8 = importDefault(dependencyMap[1]);
 importAll(dependencyMap[2]);

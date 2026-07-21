@@ -1,10 +1,10 @@
-// Module ID: 11461
-// Function ID: 89305
+// Module ID: 11468
+// Function ID: 89329
 // Name: openAcceptMessageRequestConfirmModal
 // Dependencies: []
 // Exports: onMarkAsNotSpamConfirmationModal, openAcceptMessageRequestConfirmModal
 
-// Module 11461 (openAcceptMessageRequestConfirmModal)
+// Module 11468 (openAcceptMessageRequestConfirmModal)
 let closure_3 = require(dependencyMap[0]).MESSAGE_REQUEST_ACCEPT_CONFIRMATION_MODAL;
 const AnalyticEvents = require(dependencyMap[1]).AnalyticEvents;
 const _module = require(dependencyMap[9]);

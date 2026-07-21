@@ -1,10 +1,10 @@
-// Module ID: 15996
-// Function ID: 122760
+// Module ID: 16003
+// Function ID: 122786
 // Name: RedesignAddAvatarModal
 // Dependencies: []
 // Exports: default
 
-// Module 15996 (RedesignAddAvatarModal)
+// Module 16003 (RedesignAddAvatarModal)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 let closure_5 = importAll(dependencyMap[2]);
@@ -17,10 +17,10 @@ let obj = arg1(dependencyMap[7]);
 obj = {};
 obj = { flex: 1, backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_BASE_LOW };
 obj.container = obj;
-obj.contentContainer = { <string:1654717283>: false, <string:4249772370>: false };
+obj.contentContainer = { "Bool(true)": false, "Bool(true)": false };
 const tmp3 = arg1(dependencyMap[6]);
 obj.growContainer = { flexGrow: 2, minHeight: importDefault(dependencyMap[8]).space.PX_24 };
-obj.headerContainer = { "Bool(true)": true, "Bool(true)": true };
+obj.headerContainer = { -1861163602: true, -738052821: true };
 obj.buttonContainer = { width: "100%" };
 const obj1 = { flexGrow: 2, minHeight: importDefault(dependencyMap[8]).space.PX_24 };
 obj.title = { marginBottom: importDefault(dependencyMap[8]).space.PX_8, textAlign: "center" };
@@ -78,7 +78,7 @@ export default function RedesignAddAvatarModal(route) {
   obj.contentContainerStyle = items1;
   const obj2 = { style: tmp.headerContainer };
   obj3 = {};
-  obj4 = { 0: 24, 9223372036854775807: 24, 0: null, -9223372036854775808: "aa9c26c29990ba7a6584e51ab5c56efa", style: tmp.title };
+  obj4 = { 1501064855: 24, -1267889981: 24, -1145697943: null, -1266241916: "aa9c26c29990ba7a6584e51ab5c56efa", style: tmp.title };
   const intl = arg1(dependencyMap[18]).intl;
   obj4.children = intl.string(arg1(dependencyMap[18]).t.XQRWvR);
   const items2 = [callback2(arg1(dependencyMap[17]).Text, obj4), ];
@@ -98,7 +98,7 @@ export default function RedesignAddAvatarModal(route) {
   items3[1] = callback2(importDefault(dependencyMap[19]), obj6);
   const obj7 = { style: tmp.errorContainer };
   if (first) {
-    const obj8 = { INTEGRATION_CREATE: 1, ConstraintReasonCode: "center" };
+    const obj8 = {};
     const intl3 = arg1(dependencyMap[18]).intl;
     obj8.children = intl3.string(arg1(dependencyMap[18]).t.XyLlVm);
     first = callback2(arg1(dependencyMap[17]).Text, obj8);
@@ -108,7 +108,7 @@ export default function RedesignAddAvatarModal(route) {
   obj2.children = items3;
   const items4 = [callback3(closure_6, obj2), callback2(importDefault(dependencyMap[12]), { onAvatarSelect: tmp4[1], selectedAvatar: first1 }), callback2(closure_6, { style: tmp.growContainer }), ];
   const obj10 = { style: tmp.buttonContainer };
-  const obj11 = { <string:1522289750>: null, <string:570601313>: null };
+  const obj11 = {};
   const intl4 = arg1(dependencyMap[18]).intl;
   obj11.text = intl4.string(arg1(dependencyMap[18]).t.PDTjLN);
   obj11.onPress = function onPress() {

@@ -1,10 +1,10 @@
-// Module ID: 13639
-// Function ID: 103361
+// Module ID: 13646
+// Function ID: 103384
 // Name: useParentalConsentWarning
 // Dependencies: []
 // Exports: useParentalConsentWarning
 
-// Module 13639 (useParentalConsentWarning)
+// Module 13646 (useParentalConsentWarning)
 let closure_2 = importDefault(dependencyMap[0]);
 const result = arg1(dependencyMap[2]).fileFinishedImporting("modules/parent_tools/useParentalConsentWarning.tsx");
 

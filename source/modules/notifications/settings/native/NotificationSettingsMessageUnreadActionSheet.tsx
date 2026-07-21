@@ -1,10 +1,10 @@
-// Module ID: 10286
-// Function ID: 79423
+// Module ID: 10292
+// Function ID: 79442
 // Name: NotificationSettingsMessageUnreadActionSheet
 // Dependencies: []
 // Exports: default
 
-// Module 10286 (NotificationSettingsMessageUnreadActionSheet)
+// Module 10292 (NotificationSettingsMessageUnreadActionSheet)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 const UnreadSetting = arg1(dependencyMap[2]).UnreadSetting;
@@ -13,7 +13,7 @@ let obj = arg1(dependencyMap[4]);
 obj = {};
 obj = { backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_LOWEST };
 obj.sheet = obj;
-obj.header = { "Null": null, "Null": null };
+obj.header = {};
 const tmp3 = arg1(dependencyMap[3]);
 obj.content = { backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_LOWER, padding: 16 };
 obj.form = {};
@@ -33,7 +33,7 @@ export default function NotificationSettingsMessageUnreadActionSheet(defaultValu
   const intl = arg1(dependencyMap[9]).intl;
   obj2.children = intl.string(arg1(dependencyMap[9]).t.Tqd1Af);
   const items1 = [callback(arg1(dependencyMap[8]).Text, obj2), , ];
-  const obj3 = { INTEGRATION_CREATE: true, ConstraintReasonCode: true };
+  const obj3 = {};
   const intl2 = arg1(dependencyMap[9]).intl;
   obj3.children = intl2.string(arg1(dependencyMap[9]).t.RpQgm5);
   items1[1] = callback(arg1(dependencyMap[8]).Text, obj3);

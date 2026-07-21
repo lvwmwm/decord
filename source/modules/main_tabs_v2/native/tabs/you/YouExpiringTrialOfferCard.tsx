@@ -1,10 +1,10 @@
-// Module ID: 15356
-// Function ID: 116969
+// Module ID: 15363
+// Function ID: 116993
 // Name: getNoticeCTAColor
 // Dependencies: []
 // Exports: default
 
-// Module 15356 (getNoticeCTAColor)
+// Module 15363 (getNoticeCTAColor)
 function getNoticeCTAColor(arg0) {
   if (closure_9.PREMIUM_TIER_0_TRIAL_ENDING === arg0) {
     return Gradients.PREMIUM_TIER_0;
@@ -47,7 +47,7 @@ const tmp2 = arg1(dependencyMap[3]);
 ({ jsx: closure_12, Fragment: closure_13, jsxs: closure_14 } = arg1(dependencyMap[6]));
 let closure_15 = 10 * importDefault(dependencyMap[7]).Millis.SECOND;
 let obj = arg1(dependencyMap[8]);
-obj = { header: { active: null, initialLaunchPadPosition: null, initialPullTabPosition: null, initialTouchX: null }, closeButton: { onLongPressAvatar: 1110049, onTapUsername: 0, onLongPressUsername: 0 } };
+obj = { header: { body: null, position: null, padding: null, opacity: null }, closeButton: { "Null": false, "Null": 0, "Null": 0 } };
 obj = { color: importDefault(dependencyMap[9]).colors.INTERACTIVE_TEXT_DEFAULT };
 obj.closeIcon = obj;
 obj.linearGradient = {};
@@ -109,7 +109,7 @@ export default function YouExpiringTrialOfferCard(navigateToPremium) {
         obj = {};
         obj = { style: tmp.header };
         const articleURL = importDefault(dependencyMap[18]).getArticleURL(PREMIUM_TRIAL);
-        obj1 = { INTEGRATION_CREATE: null, ConstraintReasonCode: "153e24032a5a8790888aef41caaf4b2c" };
+        obj1 = {};
         const obj14 = importDefault(dependencyMap[18]);
         const tmp12 = closure_14;
         const tmp13 = closure_13;
@@ -134,7 +134,7 @@ export default function YouExpiringTrialOfferCard(navigateToPremium) {
         obj3 = { style: tmp.closeButton, accessibilityRole: "button" };
         const intl = arg1(dependencyMap[12]).intl;
         obj3.accessibilityLabel = intl.string(arg1(dependencyMap[12]).t.cpT0Cq);
-        obj3.hitSlop = { position: "parent", right: "Array", top: "isArray", display: "accessibilityRole" };
+        obj3.hitSlop = { label: "Array", maxLength: "gradientTop", backgroundColor: "EXPERIMENT_GUILD_EXPOSURE_SUPPRESSED", padding: "showReferralNotificationDot" };
         obj3.onPress = function onPress() {
           if (null != stateFromStores) {
             let obj = callback(tmp[11]);
@@ -144,7 +144,7 @@ export default function YouExpiringTrialOfferCard(navigateToPremium) {
           obj = { untilAtLeast: callback };
           callback(tmp[10]).dismiss(obj);
         };
-        const obj4 = { aze: "<string:16777479>", azj: "<string:36295491>", color: tmp.closeIcon.color };
+        const obj4 = { color: tmp.closeIcon.color };
         obj3.children = callback(arg1(dependencyMap[22]).CloseIcon, obj4);
         items2[1] = callback(arg1(dependencyMap[21]).PressableOpacity, obj3);
         const obj5 = { style: tmp.primaryCTA };

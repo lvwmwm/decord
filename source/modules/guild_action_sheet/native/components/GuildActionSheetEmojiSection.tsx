@@ -1,10 +1,10 @@
-// Module ID: 12854
-// Function ID: 98266
+// Module ID: 12861
+// Function ID: 98289
 // Name: GuildActionSheetEmojiSection
 // Dependencies: []
 // Exports: default
 
-// Module 12854 (GuildActionSheetEmojiSection)
+// Module 12861 (GuildActionSheetEmojiSection)
 let Fonts;
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
@@ -17,13 +17,13 @@ const tmp2 = arg1(dependencyMap[6]);
 ({ jsx: closure_11, jsxs: closure_12 } = arg1(dependencyMap[7]));
 let obj = arg1(dependencyMap[8]);
 obj = { header: {} };
-obj = { <string:335545560>: null, <string:603981006>: "\u{1F6B9}", <string:80489728>: 6, <string:81021952>: 1155, <string:80568576>: null, borderRadius: importDefault(dependencyMap[9]).radii.xs, backgroundColor: importDefault(dependencyMap[9]).colors.TEXT_SUBTLE };
+obj = { borderRadius: importDefault(dependencyMap[9]).radii.xs, backgroundColor: importDefault(dependencyMap[9]).colors.TEXT_SUBTLE };
 obj.dotSeparator = obj;
 const tmp3 = arg1(dependencyMap[7]);
 obj.premiumTitle = { color: importDefault(dependencyMap[9]).unsafe_rawColors.PREMIUM_TIER_2_PURPLE, marginLeft: 4, fontFamily: Fonts.PRIMARY_BOLD, fontSize: 12 };
-obj.emojiContainer = { "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true };
-obj.emoji = { aze: false, azj: false };
-const obj2 = { <string:1602118752>: null, <string:3629236602>: "\u{1F449}\u{1F3FE}", <string:2900517872>: true, <string:27677015>: null, <string:2182482790>: 8, color: importDefault(dependencyMap[9]).colors.TEXT_SUBTLE, fontFamily: Fonts.PRIMARY_BOLD };
+obj.emojiContainer = {};
+obj.emoji = { bhk: "<string:1027735553>", bic: "<string:4143972873>" };
+const obj2 = { <string:3798200520>: null, <string:391272364>: "\u{1F449}\u{1F3FE}", <string:1726450124>: true, <string:478287371>: null, <string:2120507470>: 8, color: importDefault(dependencyMap[9]).colors.TEXT_SUBTLE, fontFamily: Fonts.PRIMARY_BOLD };
 obj.emojiCount = obj2;
 let closure_13 = obj.createStyles(obj);
 const obj1 = { color: importDefault(dependencyMap[9]).unsafe_rawColors.PREMIUM_TIER_2_PURPLE, marginLeft: 4, fontFamily: Fonts.PRIMARY_BOLD, fontSize: 12 };

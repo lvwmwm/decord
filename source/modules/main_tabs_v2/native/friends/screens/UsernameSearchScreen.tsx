@@ -1,10 +1,10 @@
-// Module ID: 15326
-// Function ID: 116719
+// Module ID: 15333
+// Function ID: 116743
 // Name: UsernameSearchScreen
 // Dependencies: []
 // Exports: default
 
-// Module 15326 (UsernameSearchScreen)
+// Module 15333 (UsernameSearchScreen)
 let closure_3 = importAll(dependencyMap[0]);
 ({ ScrollView: closure_4, View: closure_5 } = arg1(dependencyMap[1]));
 const tmp2 = arg1(dependencyMap[1]);
@@ -21,11 +21,11 @@ const obj1 = { flex: 1, backgroundColor: importDefault(dependencyMap[5]).colors.
 obj.iosPaddingThemeAdjust = { paddingTop: importDefault(dependencyMap[5]).space.PX_40 };
 const obj2 = { paddingTop: importDefault(dependencyMap[5]).space.PX_40 };
 obj.container = { flexGrow: 1, backgroundColor: importDefault(dependencyMap[5]).colors.MOBILE_ACTIONSHEET_BACKGROUND, paddingHorizontal: importDefault(dependencyMap[5]).space.PX_16 };
-const obj3 = { flexGrow: 1, backgroundColor: importDefault(dependencyMap[5]).colors.MOBILE_ACTIONSHEET_BACKGROUND, paddingHorizontal: importDefault(dependencyMap[5]).space.PX_16 };
-obj.inputContainer = { marginTop: importDefault(dependencyMap[5]).space.PX_16 };
+const obj4 = { "Null": "maestro", "Null": "<string:706757137>", "Null": "<string:706740225>", marginTop: importDefault(dependencyMap[5]).space.PX_16 };
+obj.inputContainer = obj4;
 obj.headerText = { textTransform: "none" };
 let closure_10 = obj.createStyles(obj);
-const obj4 = { marginTop: importDefault(dependencyMap[5]).space.PX_16 };
+const obj3 = { flexGrow: 1, backgroundColor: importDefault(dependencyMap[5]).colors.MOBILE_ACTIONSHEET_BACKGROUND, paddingHorizontal: importDefault(dependencyMap[5]).space.PX_16 };
 const result = arg1(dependencyMap[15]).fileFinishedImporting("modules/main_tabs_v2/native/friends/screens/UsernameSearchScreen.tsx");
 
 export default function UsernameSearchScreen(navigation) {
@@ -71,7 +71,7 @@ export default function UsernameSearchScreen(navigation) {
   obj = { style: items1 };
   const items1 = [tmp.content, clientThemesOverride];
   const items2 = [callback(importDefault(dependencyMap[12]), { absolute: true }), ];
-  obj1 = { "Bool(true)": "uppercase", "Bool(true)": 0.5 };
+  obj1 = { "Bool(false)": "NOT_RESPONDER", "Bool(false)": "RESPONDER_INACTIVE_PRESS_IN" };
   const items3 = [tmp.container, prop, ];
   const tmp7 = importDefault(dependencyMap[11]);
   items3[2] = { paddingBottom: insets.bottom + importDefault(dependencyMap[5]).space.PX_16 };

@@ -1,10 +1,10 @@
-// Module ID: 9071
-// Function ID: 71138
+// Module ID: 9075
+// Function ID: 71150
 // Name: VoiceActivityStatus
 // Dependencies: []
 // Exports: default
 
-// Module 9071 (VoiceActivityStatus)
+// Module 9075 (VoiceActivityStatus)
 importAll(dependencyMap[0]);
 ({ jsx: closure_3, Fragment: closure_4, jsxs: closure_5 } = arg1(dependencyMap[1]));
 const tmp3 = arg1(dependencyMap[1]);

@@ -1,10 +1,10 @@
-// Module ID: 15401
-// Function ID: 117539
+// Module ID: 15408
+// Function ID: 117563
 // Name: EditLinkedLobby
 // Dependencies: []
 // Exports: default
 
-// Module 15401 (EditLinkedLobby)
+// Module 15408 (EditLinkedLobby)
 let closure_3 = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 let closure_5 = importDefault(dependencyMap[2]);
@@ -13,7 +13,7 @@ let obj = arg1(dependencyMap[4]);
 obj = {};
 obj = { backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_LOWER };
 obj.screenContainer = obj;
-obj.header = { 9223372036854775807: 1163526591, 9223372036854775807: 815617, 0: 3932160, 9223372036854775807: 1627455488 };
+obj.header = { "Null": 1166868933, "Null": 815617, "Null": 3932160, "Null": 1627455488 };
 const tmp2 = arg1(dependencyMap[3]);
 obj.divider = { backgroundColor: importDefault(dependencyMap[5]).colors.BORDER_STRONG };
 let closure_9 = obj.createStyles(obj);
@@ -129,7 +129,7 @@ export default function EditLinkedLobby(channel) {
       const obj7 = {};
       const obj8 = { style: tmp2.divider };
       const items5 = [callback1(View, obj8), ];
-      const obj9 = { INTEGRATION_CREATE: true, ConstraintReasonCode: true, children: memo };
+      const obj9 = { children: memo };
       items5[1] = callback1(arg1(dependencyMap[16]).Text, obj9);
       obj7.children = items5;
       tmp23 = callback(closure_7, obj7);
@@ -137,7 +137,7 @@ export default function EditLinkedLobby(channel) {
     items4[2] = tmp23;
     obj3.children = items4;
     const items6 = [callback(View, obj3), , ];
-    obj10 = { INTEGRATION_CREATE: "AutomodMentionRaidLimit", ConstraintReasonCode: "%URIError%" };
+    obj10 = {};
     const intl = arg1(dependencyMap[15]).intl;
     const obj11 = { channelName: tmp7 };
     obj10.children = intl.format(arg1(dependencyMap[15]).t.DA9v5F, obj11);

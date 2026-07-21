@@ -1,14 +1,10 @@
-// Module ID: 15554
-// Function ID: 118705
+// Module ID: 15561
+// Function ID: 118729
 // Name: BaseActivityPanelController
-// Dependencies: [126746624, 79101952, 131072, 527695872, 3741319168, 2600468519, 33554461, 2080374784, 31, 27, 10207, 33, 15564, 15570, 15584, 5228, 4468, 15585, 15562, 2, 2040560, 1769472, 270008320, 694878208, 88342528, 88276992, 271974400, 668925952, 1020067840, 42795008, 655425536, 2162688, 83427328]
+// Dependencies: []
 // Exports: default
 
-// Module 15554 (BaseActivityPanelController)
-import { ActivityPanelModes } from "module_31";
-import { jsx } from "get ActivityIndicator";
-import ActivityPanelModes from "ActivityPanelModes";
-
+// Module 15561 (BaseActivityPanelController)
 class BaseActivityPanelController {
   constructor(arg0) {
     ({ orientationLockStateForApp, mode } = global);
@@ -21,31 +17,31 @@ class BaseActivityPanelController {
     closure_10 = undefined;
     OrientationLockState = undefined;
     ({ children, context, currentApp } = global);
-    tmp = require("Layer")();
-    tmp2 = require("_createForOfIteratorHelperLoose")();
-    obj = require("useBaseActivityPanelPIPView");
-    sharedValue = obj.useSharedValue({ "Null": false, "Null": false });
+    tmp = importDefault(dependencyMap[15])();
+    tmp2 = importDefault(dependencyMap[16])();
+    obj = arg1(dependencyMap[12]);
+    sharedValue = obj.useSharedValue({ max: false, guildId: false });
     dependencyMap = sharedValue;
-    tmp4 = require("BaseActivityPanelSystemUIManager")(tmp);
+    tmp4 = importDefault(dependencyMap[17])(tmp);
     closure_4 = tmp4;
-    obj2 = require("useBaseActivityPanelPIPView");
+    obj2 = arg1(dependencyMap[12]);
     sharedValue1 = obj2.useSharedValue(jsx);
     closure_5 = sharedValue1;
     closure_6 = closure_5.useRef(mode);
-    tmp6 = require("useActivityWebViewLock")();
+    tmp6 = importDefault(dependencyMap[18])();
     closure_7 = tmp6;
-    obj3 = require("keys");
+    obj3 = arg1(dependencyMap[19]);
     isTabletActivitySurface = obj3.getIsTabletActivitySurface();
     closure_8 = isTabletActivitySurface;
     defaultOrientationLockState = orientationLockStateForApp;
     if (null == orientationLockStateForApp) {
       tmp9 = arg1;
       tmp10 = dependencyMap;
-      obj4 = require("keys");
+      obj4 = arg1(dependencyMap[19]);
       defaultOrientationLockState = obj4.getDefaultOrientationLockState(currentApp);
     }
     closure_9 = defaultOrientationLockState;
-    tmp11 = f118723(tmp2, tmp.top, defaultOrientationLockState, isTabletActivitySurface);
+    tmp11 = f118747(tmp2, tmp.top, defaultOrientationLockState, isTabletActivitySurface);
     closure_10 = tmp11;
     OrientationLockState = closure_5.useRef(connectedActivityAppId);
     obj5 = arg1(dependencyMap[20]);
@@ -240,8 +236,11 @@ let closure_8 = importDefault(dependencyMap[4]);
 let closure_9 = importDefault(dependencyMap[5]);
 let closure_10 = importDefault(dependencyMap[6]);
 ({ OrientationLockState: closure_11, ACTIVITY_PORTRAIT_ASPECT_RATIO: closure_12, ACTIVITY_LANDSCAPE_ASPECT_RATIO: closure_13 } = arg1(dependencyMap[7]));
+const ActivityPanelModes = arg1(dependencyMap[8]).ActivityPanelModes;
+const jsx = arg1(dependencyMap[9]).jsx;
 let closure_16 = {};
-let closure_17 = ActivityPanelModes.cachedFunction((arg0, arg1, arg2, arg3) => {
+const tmp2 = arg1(dependencyMap[7]);
+let closure_17 = arg1(dependencyMap[10]).cachedFunction((arg0, arg1, arg2, arg3) => {
   let height;
   let width;
   ({ width, height } = arg0);
@@ -289,7 +288,7 @@ let closure_17 = ActivityPanelModes.cachedFunction((arg0, arg1, arg2, arg3) => {
 });
 let closure_18 = { code: "function ActivityPanelControllerTsx1(){const{wrapperOffset}=this.__closure;return wrapperOffset.get().gestureActive;}" };
 let closure_19 = { code: "function ActivityPanelControllerTsx2(gestureActive,previous){const{runOnJS,setWrapperGestureInProgress}=this.__closure;if(gestureActive===previous)return;runOnJS(setWrapperGestureInProgress)(gestureActive);}" };
-const tmp2 = arg1(dependencyMap[7]);
+const obj = arg1(dependencyMap[10]);
 const result = arg1(dependencyMap[32]).fileFinishedImporting("modules/activities/panel/native/ActivityPanelController.tsx");
 
 export default function ActivityPanelController(children) {

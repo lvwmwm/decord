@@ -1,10 +1,10 @@
-// Module ID: 7096
-// Function ID: 57062
+// Module ID: 7100
+// Function ID: 57073
 // Name: getHasImportantUnread
 // Dependencies: []
 // Exports: getHasImportantUnread, useHasImportantUnread
 
-// Module 7096 (getHasImportantUnread)
+// Module 7100 (getHasImportantUnread)
 let closure_2 = importDefault(dependencyMap[0]);
 let closure_3 = importDefault(dependencyMap[1]);
 const UnreadSetting = arg1(dependencyMap[2]).UnreadSetting;

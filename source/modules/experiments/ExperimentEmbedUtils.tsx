@@ -1,10 +1,10 @@
-// Module ID: 7770
-// Function ID: 61713
+// Module ID: 7774
+// Function ID: 61725
 // Name: regExp
-// Dependencies: [29, 27, 4346, 7782]
+// Dependencies: [29, 27, 4350, 7786]
 // Exports: getExperimentBuckets, getExperimentFromEmbedURL, getExperimentServerAssignmentLabel, getExperimentTreatmentFromEmbedURL, getURLForExperiment, isExperimentEmbedURL
 
-// Module 7770 (regExp)
+// Module 7774 (regExp)
 import TEXT_DISPLAY_COMPONENT_MARKDOWN_RENDER_OPTIONS from "TEXT_DISPLAY_COMPONENT_MARKDOWN_RENDER_OPTIONS";
 
 const regExp = new RegExp("^dev://experiment/([-\\w._0-9]+)(?:/([0-9]+))?$", "i");

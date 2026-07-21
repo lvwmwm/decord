@@ -1,10 +1,10 @@
-// Module ID: 5359
-// Function ID: 45847
+// Module ID: 5361
+// Function ID: 45888
 // Name: useNavigatorBackPressHandler
 // Dependencies: []
 // Exports: useNavigatorBackPressHandler
 
-// Module 5359 (useNavigatorBackPressHandler)
+// Module 5361 (useNavigatorBackPressHandler)
 let closure_2 = importAll(dependencyMap[0]);
 arg1(dependencyMap[1]).BackHandler;
 const result = arg1(dependencyMap[4]).fileFinishedImporting("design/components/Navigator/native/useNavigatorBackPressHandler.native.tsx");

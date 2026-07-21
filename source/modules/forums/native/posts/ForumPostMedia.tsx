@@ -1,10 +1,10 @@
-// Module ID: 11116
-// Function ID: 86540
+// Module ID: 11122
+// Function ID: 86563
 // Name: ForumPostMediaAndroid
 // Dependencies: []
 // Exports: ForumPostGridMedia, ForumPostMediaThumbnail
 
-// Module 11116 (ForumPostMediaAndroid)
+// Module 11122 (ForumPostMediaAndroid)
 let PixelRatio;
 function ForumPostMediaAndroid(blurTheme) {
   const shouldSpoiler = blurTheme.shouldSpoiler;

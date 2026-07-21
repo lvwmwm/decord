@@ -37,8 +37,6 @@ export default function Next(icon) {
   }
   const items = [onPress];
   obj = {
-    props: 49412608,
-    "Null": 49412608,
     disabled: isNextDisabled,
     rippleRadius,
     style,

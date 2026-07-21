@@ -1,7 +1,7 @@
 // Module ID: 605
 // Function ID: 7040
 // Name: isBuffer
-// Dependencies: [6, 7]
+// Dependencies: []
 
 // Module 605 (isBuffer)
 let tmp2 = tmp;
@@ -20,7 +20,7 @@ if (tmp2) {
 let _Buffer;
 if (tmp2) {
   if (tmp2.exports === tmp) {
-    _Buffer = require("_classCallCheck").Buffer;
+    _Buffer = require(dependencyMap[0]).Buffer;
   }
 }
 let isBuffer;
@@ -28,7 +28,7 @@ if (_Buffer) {
   isBuffer = _Buffer.isBuffer;
 }
 if (!isBuffer) {
-  isBuffer = require("_defineProperties");
+  isBuffer = require(dependencyMap[1]);
 }
 
 export default isBuffer;

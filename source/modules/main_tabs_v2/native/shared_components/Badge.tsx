@@ -1,9 +1,9 @@
-// Module ID: 9116
-// Function ID: 71398
+// Module ID: 9120
+// Function ID: 71410
 // Name: DEFAULT_BADGE_SIZE
 // Dependencies: []
 
-// Module 9116 (DEFAULT_BADGE_SIZE)
+// Module 9120 (DEFAULT_BADGE_SIZE)
 const View = arg1(dependencyMap[1]).View;
 const jsx = arg1(dependencyMap[2]).jsx;
 let obj1 = arg1(dependencyMap[3]);

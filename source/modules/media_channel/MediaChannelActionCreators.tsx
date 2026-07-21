@@ -1,10 +1,10 @@
-// Module ID: 11004
-// Function ID: 85622
+// Module ID: 11009
+// Function ID: 85643
 // Name: _fetchMediaPostEmbed
 // Dependencies: []
 // Exports: dismissMediaPostSharePrompt, fetchMediaPostEmbed, unfurlEmbedUrl
 
-// Module 11004 (_fetchMediaPostEmbed)
+// Module 11009 (_fetchMediaPostEmbed)
 function _fetchMediaPostEmbed() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);

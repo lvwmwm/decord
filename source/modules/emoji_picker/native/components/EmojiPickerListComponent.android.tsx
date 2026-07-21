@@ -1,8 +1,8 @@
-// Module ID: 9363
-// Function ID: 73039
+// Module ID: 9367
+// Function ID: 73053
 // Dependencies: []
 
-// Module 9363
+// Module 9367
 const importAllResult = importAll(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 const EmojiCategoryTypes = arg1(dependencyMap[2]).EmojiCategoryTypes;
@@ -79,7 +79,7 @@ const forwardRefResult = importAllResult.forwardRef((analyticsLocations) => {
         tmp = analyticsLocations < 0;
       }
       if (!tmp) {
-        tmp = f73045;
+        tmp = f73059;
       }
       if (!tmp) {
         num2 = 0;
@@ -168,7 +168,7 @@ const forwardRefResult = importAllResult.forwardRef((analyticsLocations) => {
   const items6 = [animateEmoji];
   obj = {
     config: importAllResult.useMemo(() => {
-      const obj = { "Null": false, "Null": false, "Null": false, "Null": false, animateEmoji };
+      const obj = { borderBottomWidth: true, borderBottomColor: true, onChatScrollPosition: true, onTapImage: true, animateEmoji };
       return obj;
     }, items6),
     emojiData: data,

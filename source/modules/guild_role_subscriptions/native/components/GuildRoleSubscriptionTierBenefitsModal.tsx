@@ -1,10 +1,10 @@
-// Module ID: 16299
-// Function ID: 125801
+// Module ID: 16306
+// Function ID: 125832
 // Name: AddBenefitButton
 // Dependencies: []
 // Exports: GuildRoleSubscriptionTierChannelBenefitsModal, GuildRoleSubscriptionTierIntangibleBenefitsModal
 
-// Module 16299 (AddBenefitButton)
+// Module 16306 (AddBenefitButton)
 function AddBenefitButton(disabled) {
   let label;
   let onPress;
@@ -32,7 +32,7 @@ function AddBenefitButton(disabled) {
   const tmp3 = importDefault(dependencyMap[9]);
   obj.source = importDefault(dependencyMap[11]);
   const items1 = [callback2(importDefault(dependencyMap[10]), obj), ];
-  const obj1 = { Promise: -246006407672989600000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, marginTop: 0.0000000000000000000000000000000000000000000000000000000000000000000741841232901058, flags: 0.158, style: tmp.addBenefitLabel, children: label };
+  const obj1 = { "Null": -246006407672989600000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, "Null": 0.0000000000000000000000000000000000000000000000000000000000000000000741841232901058, "Null": 0.158, style: tmp.addBenefitLabel, children: label };
   items1[1] = callback2(arg1(dependencyMap[12]).Text, obj1);
   obj.children = items1;
   return tmp2(tmp3, obj);
@@ -216,9 +216,9 @@ function Content(arg0) {
       onDelete() {
         function deleteBenefit(ref_type, arg1) {
           if (ref_type === lib.CHANNEL) {
-            callback((arr) => arr.filter(/* F125819 */ function() { ... }));
+            callback((arr) => arr.filter(/* F125850 */ function() { ... }));
           } else {
-            lib((arr) => arr.filter(/* F125821 */ function() { ... }));
+            lib((arr) => arr.filter(/* F125852 */ function() { ... }));
           }
         }(arg0.ref_type, arg1);
       },
@@ -457,7 +457,7 @@ const obj2 = { borderTopLeftRadius: importDefault(dependencyMap[8]).radii.sm, bo
 obj.itemLast = { borderBottomLeftRadius: importDefault(dependencyMap[8]).radii.sm, borderBottomRightRadius: importDefault(dependencyMap[8]).radii.sm };
 const obj3 = { borderBottomLeftRadius: importDefault(dependencyMap[8]).radii.sm, borderBottomRightRadius: importDefault(dependencyMap[8]).radii.sm };
 obj.itemSeparatorContainer = { backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_SURFACE_HIGH };
-const obj5 = { disabledTooltip: true, badgeSize: true, ref: true, scrollable: true, backgroundColor: importDefault(dependencyMap[8]).colors.BORDER_SUBTLE };
+const obj5 = { tintColor: true, width: true, height: true, marginTop: true, backgroundColor: importDefault(dependencyMap[8]).colors.BORDER_SUBTLE };
 obj.itemSeparator = obj5;
 obj.listFooterText = { marginHorizontal: 16 };
 obj.listFooterSubtitle = { marginTop: 8 };
@@ -467,7 +467,7 @@ obj.disabledSection = { opacity: 0.5 };
 obj.allChannelsSwitch = {};
 obj.addBenefitLabel = { marginStart: 16 };
 obj.separator = { height: 8 };
-obj.emojiImage = {};
+obj.emojiImage = { 0: 1, 9223372036854775807: 8, -9223372036854775808: 16 };
 obj.disabled = { opacity: 0.5 };
 let closure_15 = obj.createStyles(obj);
 let closure_16 = { CHANNEL: 1, [1]: "CHANNEL", INTANGIBLE: 2, [2]: "INTANGIBLE", EMOJI: 3, [3]: "EMOJI" };

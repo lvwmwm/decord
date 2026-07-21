@@ -1,10 +1,10 @@
-// Module ID: 16336
-// Function ID: 126058
+// Module ID: 16343
+// Function ID: 126089
 // Name: SelectEmojiRolesActionSheet
 // Dependencies: []
 // Exports: default
 
-// Module 16336 (SelectEmojiRolesActionSheet)
+// Module 16343 (SelectEmojiRolesActionSheet)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 const View = arg1(dependencyMap[2]).View;
@@ -15,7 +15,7 @@ let obj = arg1(dependencyMap[6]);
 obj = {};
 obj = { flex: 1, backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_BASE_LOW };
 obj.list = obj;
-obj.label = { marginBottom: null, borderRadius: "\u{1F469}\u{1F3FC}\u200D\u{1F9B1}", backgroundColor: true };
+obj.label = { accessible: null, count: "\u{1F469}\u{1F3FC}\u200D\u{1F9B1}", "Bool(false)": true };
 const obj1 = { flexShrink: 1 };
 const tmp2 = arg1(dependencyMap[5]);
 const merged = Object.assign(importDefault(dependencyMap[8])(Fonts.PRIMARY_MEDIUM, importDefault(dependencyMap[7]).colors.INTERACTIVE_TEXT_ACTIVE, 16));
@@ -61,7 +61,7 @@ export default function SelectEmojiRolesActionSheet(arg0) {
   const callback = first;
   const React = tmp2[1];
   let obj = arg1(dependencyMap[9]);
-  const subscriptionListingsForGuild = obj.useSubscriptionListingsForGuild(guildId, { position: null, top: null });
+  const subscriptionListingsForGuild = obj.useSubscriptionListingsForGuild(guildId, { INVALID_PARAMETER: null, HTML5_ERROR: null });
   const View = subscriptionListingsForGuild;
   obj = {
     onPress() {
@@ -94,7 +94,7 @@ export default function SelectEmojiRolesActionSheet(arg0) {
   obj1.subtitle = intl4.string(arg1(dependencyMap[12]).t.MZusPv);
   obj1.trailing = callback2(arg1(dependencyMap[10]).PressableOpacity, obj);
   const tmp5Result = callback2(arg1(dependencyMap[10]).PressableOpacity, obj);
-  const obj2 = { -1383050488: 24, -1600148191: 24, -1353556895: null, header: callback2(arg1(dependencyMap[13]).BottomSheetTitleHeader, obj1), onDismiss: onCancel };
+  const obj2 = { header: callback2(arg1(dependencyMap[13]).BottomSheetTitleHeader, obj1), onDismiss: onCancel };
   const items1 = [subscriptionListingsForGuild.length];
   obj2.children = callback2(importDefault(dependencyMap[15]), {
     inActionSheet: true,
@@ -110,7 +110,7 @@ export default function SelectEmojiRolesActionSheet(arg0) {
       let archived = tmp.archived;
       if (archived) {
         const obj2 = { style: tmp.archivedBadge };
-        const obj3 = { Promise: 369098752, marginTop: 16777216, flags: 882, style: tmp.archivedBadgeText };
+        const obj3 = { "Null": "r", "Null": "isArray", "Null": "set", style: tmp.archivedBadgeText };
         const intl = tmp(tmp[12]).intl;
         obj3.children = intl.string(tmp(tmp[12]).t.HRtfn9);
         obj2.children = callback2(tmp(tmp[17]).Text, obj3);

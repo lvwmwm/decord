@@ -1,10 +1,10 @@
-// Module ID: 5925
-// Function ID: 49761
+// Module ID: 5927
+// Function ID: 49804
 // Name: CandyIllocon
 // Dependencies: []
 // Exports: CandyIllocon
 
-// Module 5925 (CandyIllocon)
+// Module 5927 (CandyIllocon)
 const jsx = require(dependencyMap[0]).jsx;
 const _module = require(dependencyMap[3]);
 const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/CandyIllocon.native.tsx");

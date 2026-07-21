@@ -1,10 +1,10 @@
-// Module ID: 13973
-// Function ID: 106261
+// Module ID: 13980
+// Function ID: 106284
 // Name: LoadingIndicator
 // Dependencies: []
 // Exports: default
 
-// Module 13973 (LoadingIndicator)
+// Module 13980 (LoadingIndicator)
 importAll(dependencyMap[0]);
 const ActivityIndicator = arg1(dependencyMap[1]).ActivityIndicator;
 const jsx = arg1(dependencyMap[2]).jsx;

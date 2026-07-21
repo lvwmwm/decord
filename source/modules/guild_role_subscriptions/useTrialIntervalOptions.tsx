@@ -1,10 +1,10 @@
-// Module ID: 13990
-// Function ID: 106425
+// Module ID: 13997
+// Function ID: 106448
 // Name: useTrialIntervalOptions
 // Dependencies: []
 // Exports: default
 
-// Module 13990 (useTrialIntervalOptions)
+// Module 13997 (useTrialIntervalOptions)
 let closure_2 = importAll(dependencyMap[0]);
 const TIER_TRIAL_INTERVALS = arg1(dependencyMap[1]).TIER_TRIAL_INTERVALS;
 const SubscriptionIntervalTypes = arg1(dependencyMap[2]).SubscriptionIntervalTypes;

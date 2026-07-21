@@ -1,17 +1,17 @@
-// Module ID: 9025
-// Function ID: 70927
+// Module ID: 9029
+// Function ID: 70939
 // Name: XboxLinkEducation
 // Dependencies: []
 // Exports: default
 
-// Module 9025 (XboxLinkEducation)
+// Module 9029 (XboxLinkEducation)
 let closure_3 = importAll(dependencyMap[0]);
 ({ Image: closure_4, View: closure_5 } = arg1(dependencyMap[1]));
 const HelpdeskArticles = arg1(dependencyMap[2]).HelpdeskArticles;
 const tmp2 = arg1(dependencyMap[1]);
 ({ jsx: closure_7, jsxs: closure_8 } = arg1(dependencyMap[3]));
 const tmp3 = arg1(dependencyMap[3]);
-let closure_9 = arg1(dependencyMap[4]).createStyles({ image: { position: true, minWidth: true, height: true } });
+let closure_9 = arg1(dependencyMap[4]).createStyles({ image: { flexDirection: true, alignItems: true, paddingStart: true } });
 const obj = arg1(dependencyMap[4]);
 const result = arg1(dependencyMap[13]).fileFinishedImporting("modules/user_settings/connections/native/two_way_link/xbox/XboxLinkEducation.tsx");
 

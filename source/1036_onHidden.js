@@ -21,7 +21,7 @@ arg5.onHidden = function onHidden(arg0) {
       type(type);
     }
   }
-  arg1(arg6[1]).addPageListener("visibilitychange", onHiddenOrPageHide, { "Bool(false)": null, "Bool(false)": null });
+  arg1(arg6[1]).addPageListener("visibilitychange", onHiddenOrPageHide, { -9223372036854775808: null, 0: null });
   const obj = arg1(arg6[1]);
-  arg1(arg6[1]).addPageListener("pagehide", onHiddenOrPageHide, { "Bool(false)": null, "Bool(false)": null });
+  arg1(arg6[1]).addPageListener("pagehide", onHiddenOrPageHide, { -9223372036854775808: null, 0: null });
 };

@@ -10,7 +10,7 @@ if (!_module) {
   obj = _module;
 }
 obj = {};
-obj.date = obj.default({ formats: { "Bool(false)": "open", "Bool(false)": null, "Bool(false)": "manje od {{count}} minute", "Bool(false)": "manje od {{count}} minuta" }, defaultWidth: "full" });
+obj.date = obj.default({ formats: { "Null": "reply", "Null": null, "Null": "manje od {{count}} minute", "Null": "manje od {{count}} minuta" }, defaultWidth: "full" });
 obj.time = obj.default({ formats: {}, defaultWidth: "full" });
 obj.dateTime = obj.default({ formats: {}, defaultWidth: "full" });
 

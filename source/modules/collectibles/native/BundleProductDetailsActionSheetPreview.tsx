@@ -1,10 +1,10 @@
-// Module ID: 8735
-// Function ID: 69097
+// Module ID: 8739
+// Function ID: 69109
 // Name: BundleThumbnail
 // Dependencies: []
 // Exports: default
 
-// Module 8735 (BundleThumbnail)
+// Module 8739 (BundleThumbnail)
 function BundleThumbnail(index) {
   let isSelected;
   let item;
@@ -53,9 +53,9 @@ let obj = arg1(dependencyMap[5]);
 obj = {};
 obj = { paddingTop: importDefault(dependencyMap[6]).space.PX_16, paddingBottom: importDefault(dependencyMap[6]).space.PX_16, gap: importDefault(dependencyMap[6]).space.PX_16 };
 obj.previewContainer = obj;
-const obj1 = { name: null, ks: null, body: "E, M/d", borderRadius: importDefault(dependencyMap[6]).radii.sm, accessibilityRole: "E, MMM d", backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_MOD_SUBTLE };
+const obj1 = { borderColor: "canCreatePrivateChannel", justifyContent: "MemberSafetyPagePermissions", alignItems: "type", overflow: "isArray", style: "SERVER_GUIDE_CHANNEL_SELECTED", borderRadius: importDefault(dependencyMap[6]).radii.sm, backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_MOD_SUBTLE };
 obj.bundleThumbnail = obj1;
-const obj2 = { variant: true, color: true, maxFontSizeMultiplier: true, style: true, children: true, <string:1550047392>: true, <string:1386894946>: true, borderRadius: importDefault(dependencyMap[6]).radii.sm + 2, borderColor: importDefault(dependencyMap[6]).colors.BORDER_STRONG };
+const obj2 = { 0: true, 9223372036854775807: true, -9223372036854775808: true, 9223372036854775807: true, 0: true, 0: true, 9223372036854775807: true, borderRadius: importDefault(dependencyMap[6]).radii.sm + 2, borderColor: importDefault(dependencyMap[6]).colors.BORDER_STRONG };
 obj.selectedRing = obj2;
 const tmp4 = arg1(dependencyMap[4]);
 obj.bundleThumbnailRow = { flexDirection: "row", gap: importDefault(dependencyMap[6]).space.PX_12, paddingVertical: importDefault(dependencyMap[6]).space.PX_4, paddingHorizontal: 2 };
@@ -171,7 +171,7 @@ export default function BundleProductDetailsActionSheetPreview(onActiveItemChang
   const items6 = [name, ];
   let tmp22 = null != collectibleTypeLabel;
   if (tmp22) {
-    const obj10 = { INTEGRATION_CREATE: "<string:3305963521>", ConstraintReasonCode: "<string:671547393>" };
+    const obj10 = {};
     const _HermesInternal = HermesInternal;
     obj10.children = " - " + collectibleTypeLabel;
     tmp22 = callback5(arg1(dependencyMap[11]).Text, obj10);

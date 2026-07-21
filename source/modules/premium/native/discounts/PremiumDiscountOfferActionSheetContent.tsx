@@ -1,18 +1,18 @@
-// Module ID: 15483
-// Function ID: 118176
+// Module ID: 15490
+// Function ID: 118200
 // Dependencies: []
 
-// Module 15483
+// Module 15490
 const View = arg1(dependencyMap[1]).View;
 const importAllResult = importAll(dependencyMap[0]);
 ({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[2]));
 const tmp2 = arg1(dependencyMap[2]);
 let obj = {};
-obj = { justifyContent: 759239012, alignItems: 1912603216, overflow: 24, type: 24, description: 2102149377, line: 1498546177, column: 1097104761, type: 139718, text: -244123807, backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_BASE_LOW };
+obj = { right: "5b00e6abae27bddaf8498fd271ace686", height: "PhoneIcon", width: "png", borderColor: true, backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_BASE_LOW, borderWidth: 24, borderRadius: 24, justifyContent: null, alignItems: "a568e12daf3f479ad26c9db6582fe1a2" };
 obj.contentContainer = obj;
-obj.buttonContainer = { en-AU: "NSFW_SERVER", previewDisabled: "<string:3588374784>", MUR: "<string:3110207489>" };
-obj.title = { height: null, width: null };
-obj.heroIllustrationContainer = {};
+obj.buttonContainer = { FAILED: true, width: true, backgroundColor: true };
+obj.title = { borderRadius: null, borderColor: null };
+obj.heroIllustrationContainer = { "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true };
 let closure_6 = arg1(dependencyMap[3]).createStyles(obj);
 const obj2 = arg1(dependencyMap[3]);
 const memoResult = importAllResult.memo(function PremiumDiscountOfferActionSheetContent(arg0) {
@@ -40,7 +40,7 @@ const memoResult = importAllResult.memo(function PremiumDiscountOfferActionSheet
   items[2] = obj;
   const amount = discountOffer.discount.amount;
   const obj1 = { style: tmp.contentContainer };
-  const items1 = [callback(View, { style: tmp.heroIllustrationContainer, children: callback(arg1(dependencyMap[9]).NitroWumpusFlightRight3dIllustration, {}) }), , , ];
+  const items1 = [callback(View, { style: tmp.heroIllustrationContainer, children: callback(arg1(dependencyMap[9]).NitroWumpusFlightRight3dIllustration, { bhk: "heading-md/extrabold", bic: "text-overlay-light" }) }), , , ];
   const obj3 = { style: tmp.title };
   const intl7 = arg1(dependencyMap[6]).intl;
   obj3.children = intl7.formatToPlainString(arg1(dependencyMap[6]).t.qowbUk, { percent: amount });

@@ -1,10 +1,10 @@
-// Module ID: 9914
-// Function ID: 76713
+// Module ID: 9919
+// Function ID: 76729
 // Name: BookmarkIcon
 // Dependencies: []
 // Exports: BookmarkIcon
 
-// Module 9914 (BookmarkIcon)
+// Module 9919 (BookmarkIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/BookmarkIcon.tsx");

@@ -1,10 +1,10 @@
-// Module ID: 13802
-// Function ID: 104410
+// Module ID: 13809
+// Function ID: 104433
 // Name: BountyVideo
 // Dependencies: []
 // Exports: BountyVideo
 
-// Module 13802 (BountyVideo)
+// Module 13809 (BountyVideo)
 let num = 0;
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
@@ -296,7 +296,7 @@ export const BountyVideo = function BountyVideo(bounty) {
     const items8 = [first(importDefault(dependencyMap[19]), obj7), ];
     let tmp47 = !first;
     if (tmp47) {
-      obj9 = { color: token };
+      obj9 = { font: "isArray", dx: "GuildActionSheetSecondaryActions", color: token };
       tmp47 = first(peekScale, obj9);
     }
     items8[1] = tmp47;

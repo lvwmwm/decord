@@ -1,10 +1,10 @@
-// Module ID: 9672
-// Function ID: 75311
+// Module ID: 9677
+// Function ID: 75328
 // Name: GiftingBadgeInfoActionSheet
 // Dependencies: []
 // Exports: default
 
-// Module 9672 (GiftingBadgeInfoActionSheet)
+// Module 9677 (GiftingBadgeInfoActionSheet)
 let closure_3 = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 let closure_5 = importDefault(dependencyMap[2]);
@@ -22,11 +22,11 @@ const obj1 = { paddingHorizontal: importDefault(dependencyMap[7]).space.PX_8 };
 obj.title = { textAlign: "center", marginBottom: importDefault(dependencyMap[7]).space.PX_8 };
 const obj2 = { textAlign: "center", marginBottom: importDefault(dependencyMap[7]).space.PX_8 };
 obj.description = { textAlign: "center", marginBottom: importDefault(dependencyMap[7]).space.PX_16 };
-const obj4 = { APP_DMS_ENTRY_POINT_COMMAND_BUTTON: null, desert: null, rowGap: importDefault(dependencyMap[7]).space.PX_8 };
+const obj4 = { 1925026477: null, -1346530010: null, rowGap: importDefault(dependencyMap[7]).space.PX_8 };
 obj.tierCards = obj4;
+const obj5 = { "Null": "RTC_CONNECTION_LOSS_RATE", "Null": "handleJoinThreadVoice", padding: importDefault(dependencyMap[7]).space.PX_8 };
+obj.tierCard = obj5;
 const obj3 = { textAlign: "center", marginBottom: importDefault(dependencyMap[7]).space.PX_16 };
-obj.tierCard = { padding: importDefault(dependencyMap[7]).space.PX_8 };
-const obj5 = { padding: importDefault(dependencyMap[7]).space.PX_8 };
 obj.iconWrapper = { paddingVertical: importDefault(dependencyMap[7]).space.PX_8 };
 let closure_11 = obj.createStyles(obj);
 const obj6 = { paddingVertical: importDefault(dependencyMap[7]).space.PX_8 };
@@ -44,14 +44,14 @@ export default function GiftingBadgeInfoActionSheet() {
   const effect = React.useEffect(() => {
     callback(closure_2[11]).track(constants.GIFTING_BADGE_INFO_ACTION_SHEET_OPENED);
   }, []);
-  obj = { 0: true, -9223372036854775808: true };
+  obj = { 1891290120: null, -475247768: null };
   obj = {};
   const items2 = [tmp.container, ];
   obj1 = { paddingBottom: importDefault(dependencyMap[8])().bottom + importDefault(dependencyMap[7]).space.PX_16 };
   items2[1] = obj1;
   obj.style = items2;
   const obj2 = { style: tmp.headerContainer };
-  const obj3 = { style: tmp.title };
+  const obj3 = { 9223372036854775807: null, 9223372036854775807: "9dd37f954b23d7c3c7ed4428be93436f", -9223372036854775808: "ClydeIcon", 1602121198: "png", style: tmp.title };
   const intl = arg1(dependencyMap[14]).intl;
   obj3.children = intl.string(importDefault(dependencyMap[15]).0MB2C6);
   const items3 = [callback(arg1(dependencyMap[13]).Text, obj3), ];
@@ -66,23 +66,23 @@ export default function GiftingBadgeInfoActionSheet() {
   if (null != stateFromStores) {
     const tiers = stateFromStores.tiers;
     if (null != tiers) {
-      mapped = tiers.map((complex_icon_static_url) => {
+      mapped = tiers.map((children) => {
         if (callback) {
-          let simple_icon_url2 = complex_icon_static_url.complex_icon_static_url;
+          let simple_icon_url2 = children.complex_icon_static_url;
           if (null == simple_icon_url2) {
-            simple_icon_url2 = complex_icon_static_url.simple_icon_url;
+            simple_icon_url2 = children.simple_icon_url;
           }
           let simple_icon_url = simple_icon_url2;
         } else {
-          simple_icon_url = complex_icon_static_url.complex_icon_animated_url;
+          simple_icon_url = children.complex_icon_animated_url;
           if (null == simple_icon_url) {
-            simple_icon_url = complex_icon_static_url.complex_icon_static_url;
+            simple_icon_url = children.complex_icon_static_url;
           }
           if (null == simple_icon_url) {
-            simple_icon_url = complex_icon_static_url.simple_icon_url;
+            simple_icon_url = children.simple_icon_url;
           }
         }
-        const tmp3 = callback2(complex_icon_static_url);
+        const tmp3 = callback2(children);
         let obj = { style: tmp.tierCard };
         let tmp6 = null != simple_icon_url;
         if (tmp6) {
@@ -91,9 +91,7 @@ export default function GiftingBadgeInfoActionSheet() {
           obj.children = callback3(callback(closure_2[16]), obj);
           tmp6 = callback3(closure_4, obj);
         }
-        const items = [tmp6, , ];
-        const obj1 = { INTEGRATION_CREATE: "<string:3704409292>", ConstraintReasonCode: "<string:32796991>", children: complex_icon_static_url.name };
-        items[1] = callback3(tmp(closure_2[13]).Text, obj1);
+        const items = [tmp6, callback3(tmp(closure_2[13]).Text, { children: children.name }), ];
         let tmp12 = null != tmp3;
         if (tmp12) {
           const obj2 = {};
@@ -104,7 +102,7 @@ export default function GiftingBadgeInfoActionSheet() {
         }
         items[2] = tmp12;
         obj.children = items;
-        return closure_10(closure_4, obj, complex_icon_static_url.key);
+        return closure_10(closure_4, obj, children.key);
       });
     }
   }

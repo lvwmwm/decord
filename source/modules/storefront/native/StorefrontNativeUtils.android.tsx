@@ -1,10 +1,10 @@
-// Module ID: 9725
-// Function ID: 75680
+// Module ID: 9730
+// Function ID: 75697
 // Name: useFormattedSKUPrice
 // Dependencies: []
 // Exports: useFormattedSKUPrice
 
-// Module 9725 (useFormattedSKUPrice)
+// Module 9730 (useFormattedSKUPrice)
 let closure_3 = importAll(dependencyMap[0]);
 const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/storefront/native/StorefrontNativeUtils.android.tsx");
 
@@ -50,9 +50,9 @@ export const useFormattedSKUPrice = function useFormattedSKUPrice(sku) {
       priceString = stateFromStores.priceString;
     }
     if (null != priceString) {
-      let obj = { <string:979689656>: "Normal", <string:1386888022>: true, <string:2114771812>: "AbortSignal", normalPrice: stateFromStores.priceString, userPrice: stateFromStores.priceString };
+      let obj = { "Bool(true)": null, "Bool(true)": "\u{1F9BB}\u{1F3FF}", "Bool(true)": true, normalPrice: stateFromStores.priceString, userPrice: stateFromStores.priceString };
     } else {
-      obj = { <string:3752558061>: 11913815630712838000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, <string:1304387174>: 61141391887080580000000000000000000, <string:979689656>: -0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000009030216653543717, <string:1386888022>: 2123526618575307800000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 };
+      obj = { "Null": 0, "Null": 0, "Null": "100%", "Null": "10%" };
     }
     return obj;
   }, items3);

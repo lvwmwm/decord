@@ -1,10 +1,10 @@
-// Module ID: 10470
-// Function ID: 81133
+// Module ID: 10476
+// Function ID: 81156
 // Name: leaveCurrentFrame
 // Dependencies: []
 // Exports: leaveCurrentFrame
 
-// Module 10470 (leaveCurrentFrame)
+// Module 10476 (leaveCurrentFrame)
 let closure_2 = importDefault(dependencyMap[0]);
 const result = arg1(dependencyMap[2]).fileFinishedImporting("modules/activities/utils/leaveCurrentFrame.tsx");
 

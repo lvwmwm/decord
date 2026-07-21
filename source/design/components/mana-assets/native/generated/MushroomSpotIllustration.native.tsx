@@ -1,14 +1,13 @@
-// Module ID: 6301
-// Function ID: 50325
+// Module ID: 6303
+// Function ID: 50368
 // Name: MushroomSpotIllustration
 // Dependencies: [0, 0, 4294967295, 0]
 // Exports: MushroomSpotIllustration
 
-// Module 6301 (MushroomSpotIllustration)
-import { jsx } from "result";
-import result from "result";
+// Module 6303 (MushroomSpotIllustration)
+import { jsx } from "__exportStarResult1";
 
-result = result.fileFinishedImporting("design/components/mana-assets/native/generated/MushroomSpotIllustration.native.tsx");
+const result = require("__exportStarResult1").fileFinishedImporting("design/components/mana-assets/native/generated/MushroomSpotIllustration.native.tsx");
 
 export const MushroomSpotIllustration = function MushroomSpotIllustration(width) {
   let accessibilityLabel;

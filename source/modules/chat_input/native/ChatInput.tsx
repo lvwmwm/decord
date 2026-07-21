@@ -1,9 +1,9 @@
-// Module ID: 11084
-// Function ID: 86197
+// Module ID: 11090
+// Function ID: 86220
 // Name: ChatInputScrimGradient
 // Dependencies: []
 
-// Module 11084 (ChatInputScrimGradient)
+// Module 11090 (ChatInputScrimGradient)
 function ChatInputScrimGradient(scrimBase) {
   let gradientHeight;
   let inline;
@@ -30,7 +30,7 @@ function ChatInputScrimGradient(scrimBase) {
     str = hex2rgbResult1;
   }
   obj = {};
-  obj = {};
+  obj = { o: "trackAverageRenderTimeForOffsetProjection", concat: "WebsiteLink", o: "<string:4235330048>", borderRadius: "<string:218103807>", position: "<string:1895825408>" };
   if (inline) {
     let result = tmp7;
   } else {
@@ -41,7 +41,7 @@ function ChatInputScrimGradient(scrimBase) {
   obj.pointerEvents = "none";
   const items = [str, tmp3];
   obj1 = { height: token };
-  const items1 = [callback5(importDefault(dependencyMap[25]), { colors: items, style: obj1, start: { "Null": false, "Null": true }, end: { "Null": 131072.00314656927, "Null": 0.000000000000000000000000000000000000000000000000000000011294471302334573 }, locations: [null, null] }), ];
+  const items1 = [callback5(importDefault(dependencyMap[25]), { colors: items, style: obj1, start: { max: -536870861, guildId: -299892737 }, end: {}, locations: ["Text", "lc"] }), ];
   obj2 = { flex: 1, backgroundColor: tmp3 };
   items1[1] = callback5(View, { style: obj2 });
   obj.children = items1;
@@ -84,11 +84,11 @@ let closure_37 = arg1(dependencyMap[20]).createStyles((arg0, arg1, arg2) => {
   obj.borderTopWidth = 1;
   obj.borderColor = importDefault(dependencyMap[21]).colors.BORDER_SUBTLE;
   obj.container = obj;
-  obj.containerInner = { -9223372036854775808: 678625281, filter: 738197504 };
+  obj.containerInner = { <string:226124958>: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000042439915824, <string:4217921538>: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004243991583 };
   obj = {};
   const merged = Object.assign(arg1 ? {} : {});
   obj.inputDefault = obj;
-  const obj1 = { flexWrap: true, alignItems: true, marginTop: true, flexGrow: true, flexShrink: true, display: true, flexDirection: true, borderRadius: importDefault(dependencyMap[21]).modules.mobile.CHAT_INPUT_BORDER_RADIUS, paddingHorizontal: importDefault(dependencyMap[21]).modules.mobile.CHAT_INPUT_PILL_PADDING, marginHorizontal: importDefault(dependencyMap[21]).modules.mobile.CHAT_INPUT_PILL_MARGIN_HORIZONTAL, borderWidth: importDefault(dependencyMap[21]).modules.mobile.CHAT_INPUT_PILL_BORDER_WIDTH, borderColor: importDefault(dependencyMap[21]).colors.INPUT_BORDER_DEFAULT };
+  const obj1 = { borderRadius: importDefault(dependencyMap[21]).modules.mobile.CHAT_INPUT_BORDER_RADIUS, paddingHorizontal: importDefault(dependencyMap[21]).modules.mobile.CHAT_INPUT_PILL_PADDING, marginHorizontal: importDefault(dependencyMap[21]).modules.mobile.CHAT_INPUT_PILL_MARGIN_HORIZONTAL, borderWidth: importDefault(dependencyMap[21]).modules.mobile.CHAT_INPUT_PILL_BORDER_WIDTH, borderColor: importDefault(dependencyMap[21]).colors.INPUT_BORDER_DEFAULT };
   if (null != arg0) {
     let CHAT_INPUT_BACKGROUND = importDefault(dependencyMap[21]).colors.CARD_SECONDARY_BG;
   } else {
@@ -100,17 +100,17 @@ let closure_37 = arg1(dependencyMap[20]).createStyles((arg0, arg1, arg2) => {
   const obj2 = { paddingVertical: importDefault(dependencyMap[21]).modules.mobile.CHAT_INPUT_PILL_PADDING };
   const tmp3 = arg1 ? {} : {};
   obj.refreshButtonAlignment = { marginBottom: importDefault(dependencyMap[21]).modules.mobile.CHAT_INPUT_PILL_BORDER_WIDTH };
-  obj.accessories = {};
+  obj.accessories = { <string:1367186513>: true, <string:3613500496>: true, <string:3713892945>: true, <string:4272015777>: true };
+  const obj4 = { "Bool(true)": "check_mark", "Bool(true)": "\u7228", "Bool(true)": "<string:655360>", "Bool(true)": "<string:524288>", "Bool(true)": "<string:1107361792>", "Bool(true)": "<string:2929393666>", "Bool(true)": "<string:74645505>", borderRadius: importDefault(dependencyMap[21]).radii.none, paddingHorizontal: importDefault(dependencyMap[21]).modules.mobile.CHAT_INPUT_CONTAINER_HORIZONTAL_PADDING };
+  obj.floatingContainer = obj4;
   const obj3 = { marginBottom: importDefault(dependencyMap[21]).modules.mobile.CHAT_INPUT_PILL_BORDER_WIDTH };
-  obj.floatingContainer = { borderRadius: importDefault(dependencyMap[21]).radii.none, paddingHorizontal: importDefault(dependencyMap[21]).modules.mobile.CHAT_INPUT_CONTAINER_HORIZONTAL_PADDING };
-  const obj4 = { borderRadius: importDefault(dependencyMap[21]).radii.none, paddingHorizontal: importDefault(dependencyMap[21]).modules.mobile.CHAT_INPUT_CONTAINER_HORIZONTAL_PADDING };
   obj.floatingInputBox = { backgroundColor: importDefault(dependencyMap[21]).colors.MOBILE_CHATINPUT_BACKGROUND_DEFAULT, borderWidth: importDefault(dependencyMap[21]).modules.mobile.CHAT_INPUT_FLOATING_ACCESSORY_BORDER_WIDTH, borderColor: importDefault(dependencyMap[21]).colors.MOBILE_CHATINPUT_BORDER_DEFAULT, borderRadius: importDefault(dependencyMap[21]).modules.mobile.CHAT_INPUT_FLOATING_BORDER_RADIUS, flexDirection: "column", overflow: "hidden" };
   const obj5 = { backgroundColor: importDefault(dependencyMap[21]).colors.MOBILE_CHATINPUT_BACKGROUND_DEFAULT, borderWidth: importDefault(dependencyMap[21]).modules.mobile.CHAT_INPUT_FLOATING_ACCESSORY_BORDER_WIDTH, borderColor: importDefault(dependencyMap[21]).colors.MOBILE_CHATINPUT_BORDER_DEFAULT, borderRadius: importDefault(dependencyMap[21]).modules.mobile.CHAT_INPUT_FLOATING_BORDER_RADIUS, flexDirection: "column", overflow: "hidden" };
   obj.floatingInputBoxPressed = { backgroundColor: importDefault(dependencyMap[21]).colors.MOBILE_CHATINPUT_BACKGROUND_ACTIVE, borderColor: importDefault(dependencyMap[21]).colors.MOBILE_CHATINPUT_BORDER_ACTIVE };
-  obj.floatingInputBoxTyping = { "Null": false, "Null": true };
-  const obj7 = { -9223372036854775808: 678625281, filter: 738197504, paddingHorizontal: importDefault(dependencyMap[21]).modules.mobile.CHAT_INPUT_FLOATING_CONTENT_PADDING_HORIZONTAL, paddingVertical: importDefault(dependencyMap[21]).modules.mobile.CHAT_INPUT_FLOATING_CONTENT_PADDING_VERTICAL, gap: importDefault(dependencyMap[21]).modules.mobile.CHAT_INPUT_FLOATING_CONTENT_GAP };
+  obj.floatingInputBoxTyping = { "Null": -536870861, "Null": -299892737 };
+  const obj7 = { <string:226124958>: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000042439915824, <string:4217921538>: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004243991583, paddingHorizontal: importDefault(dependencyMap[21]).modules.mobile.CHAT_INPUT_FLOATING_CONTENT_PADDING_HORIZONTAL, paddingVertical: importDefault(dependencyMap[21]).modules.mobile.CHAT_INPUT_FLOATING_CONTENT_PADDING_VERTICAL, gap: importDefault(dependencyMap[21]).modules.mobile.CHAT_INPUT_FLOATING_CONTENT_GAP };
   obj.floatingMainContents = obj7;
-  const obj8 = { -9223372036854775808: 323420161, 0: -2104950783 };
+  const obj8 = { markAsSpoilerTitle: null, keyboardAppearance: null };
   const obj6 = { backgroundColor: importDefault(dependencyMap[21]).colors.MOBILE_CHATINPUT_BACKGROUND_ACTIVE, borderColor: importDefault(dependencyMap[21]).colors.MOBILE_CHATINPUT_BORDER_ACTIVE };
   let num = -6;
   if (obj12.isAndroid()) {
@@ -947,7 +947,7 @@ const forwardRefResult = importAllResult.forwardRef((channel, ref) => {
   }
   if (tmp85Result) {
     obj11 = {};
-    obj12 = { left: "isArray", borderColor: "skuId", borderWidth: "T", backgroundColor: "r", borderRadius: "isArray" };
+    obj12 = { o: "center", concat: null, o: 4, borderRadius: 4, position: "rgba(0, 0, 0, 0.75)" };
     let obj39 = ref(dependencyMap[24]);
     const hex2rgbResult = obj39.hex2rgb(token2, 1);
     let tmp90 = token2;

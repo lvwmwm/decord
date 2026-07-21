@@ -1,10 +1,10 @@
-// Module ID: 13279
-// Function ID: 100888
+// Module ID: 13286
+// Function ID: 100911
 // Name: getActivitiesModalContextKey
-// Dependencies: []
+// Dependencies: [284214097]
 // Exports: getActivitiesModalContextKey
 
-// Module 13279 (getActivitiesModalContextKey)
+// Module 13286 (getActivitiesModalContextKey)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("modules/activities/getActivitiesModalContextKey.native.tsx");
 

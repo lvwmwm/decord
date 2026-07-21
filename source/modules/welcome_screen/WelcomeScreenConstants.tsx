@@ -1,9 +1,9 @@
-// Module ID: 11672
-// Function ID: 90594
+// Module ID: 11679
+// Function ID: 90617
 // Name: WELCOME_SCREEN_TYPE
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 11672 (WELCOME_SCREEN_TYPE)
+// Module 11679 (WELCOME_SCREEN_TYPE)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("modules/welcome_screen/WelcomeScreenConstants.tsx");
 

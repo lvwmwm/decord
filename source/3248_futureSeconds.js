@@ -23,17 +23,30 @@ function futureMonths(str) {
 function futureYears(str) {
   return str.replace(/(vuosi|vuotta)/, "vuoden");
 }
-let obj = {
+let obj = { -9223372036854775808: "keskiy\u00F6", 0: "keskip\u00E4iv\u00E4", futureTense: futureSeconds };
+obj = { -9223372036854775808: -2107572220, 0: 21185602, futureTense: futureSeconds };
+obj = {
   futureTense(one) {
     return "puolen minuutin";
   }
 };
-obj = {
+const obj1 = { -9223372036854775808: null, 0: null, futureTense: futureMinutes };
+const obj2 = { -9223372036854775808: true, 0: true, futureTense: futureMinutes };
+const obj3 = { -9223372036854775808: null, 0: null, futureTense: futureHours };
+const obj4 = { -9223372036854775808: null, 0: null, futureTense: futureHours };
+const obj5 = {
+  -9223372036854775808: null,
+  0: null,
   futureTense: function futureDays(str) {
     return str.replace(/päivää?/, "p\u00E4iv\u00E4n");
   }
 };
-let closure_0 = { lessThanXSeconds: { futureTense: futureSeconds }, xSeconds: { futureTense: futureSeconds }, halfAMinute: obj, lessThanXMinutes: { futureTense: futureMinutes }, xMinutes: { futureTense: futureMinutes }, aboutXHours: { futureTense: futureHours }, xHours: { futureTense: futureHours }, xDays: obj, aboutXWeeks: { futureTense: futureWeeks }, xWeeks: { futureTense: futureWeeks }, aboutXMonths: { futureTense: futureMonths }, xMonths: { futureTense: futureMonths }, aboutXYears: { futureTense: futureYears }, xYears: { futureTense: futureYears }, overXYears: { futureTense: futureYears }, almostXYears: { futureTense: futureYears } };
+const obj6 = { -9223372036854775808: null, 0: null, futureTense: futureWeeks };
+const obj7 = { -9223372036854775808: null, 0: null, futureTense: futureWeeks };
+const obj8 = { -9223372036854775808: null, 0: null, futureTense: futureMonths };
+const obj9 = { -9223372036854775808: null, 0: null, futureTense: futureMonths };
+const obj10 = { -9223372036854775808: null, 0: null, futureTense: futureYears };
+let closure_0 = { lessThanXSeconds: obj, xSeconds: obj, halfAMinute: obj, lessThanXMinutes: obj1, xMinutes: obj2, aboutXHours: obj3, xHours: obj4, xDays: obj5, aboutXWeeks: obj6, xWeeks: obj7, aboutXMonths: obj8, xMonths: obj9, aboutXYears: obj10, xYears: { futureTense: futureYears }, overXYears: { futureTense: futureYears }, almostXYears: { futureTense: futureYears } };
 
 export default function formatDistance(arg0, arg1, addSuffix) {
   if (1 === arg1) {

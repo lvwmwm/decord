@@ -1,12 +1,10 @@
-// Module ID: 10998
-// Function ID: 85591
+// Module ID: 11003
+// Function ID: 85612
 // Name: ChatBlockedAlert
-// Dependencies: [284360704, 447152128, 79429632, 379387904, 268435456, 250675200, 125829120, 493158400, 493289472, 645857280, 126746624, 325124096, 380108800, 270270464, 297205760, 357498880, 131072, 284164096, 31, 653, 11008, 33, 4126, 689, 4329]
+// Dependencies: []
 // Exports: default
 
-// Module 10998 (ChatBlockedAlert)
-import module_4329 from "module_4329";
-
+// Module 11003 (ChatBlockedAlert)
 function ChatBlockedAlert(arg0) {
   let buttonCta;
   let description;
@@ -30,7 +28,7 @@ function ChatBlockedAlert(arg0) {
   obj = { style: tmp2.body };
   obj = { source: importDefault(dependencyMap[16]), size: arg1(dependencyMap[15]).Icon.Sizes.CUSTOM, style: tmp2.mainIcon };
   const items = [callback4(arg1(dependencyMap[15]).Icon, obj), , ];
-  const obj1 = { 0: true, 9223372036854775807: true, 0: true, -9223372036854775808: true, style: tmp2.title, children: title };
+  const obj1 = { 1501064855: true, -1267889981: true, -1145697943: true, -1266241916: true, style: tmp2.title, children: title };
   items[1] = callback4(arg1(dependencyMap[17]).Text, obj1);
   items[2] = callback4(arg1(dependencyMap[17]).Text, { style: tmp2.description, children: description });
   obj.children = items;
@@ -92,7 +90,7 @@ function ServerTagAlert(guildName) {
   return callback4(ChatBlockedAlert, obj);
 }
 let closure_3 = [false, false, false, false];
-let closure_4 = [0.52, -24391440060893210000000000000000000000000, -0.000001449584960937496];
+let closure_4 = [];
 let closure_5 = ["LengthDelimited"];
 let closure_6 = importDefault(dependencyMap[0]);
 let closure_7 = importDefault(dependencyMap[1]);
@@ -108,12 +106,13 @@ const tmp3 = arg1(dependencyMap[8]);
 ({ jsx: closure_16, jsxs: closure_17 } = arg1(dependencyMap[10]));
 let obj = arg1(dependencyMap[11]);
 obj = { wrapper: { padding: 16 }, body: {} };
-obj = { "Null": null, "Null": "b7eca7761481c5ff3cc170b16fbdff57", "Null": "img_no_results", "Null": "png", tintColor: importDefault(dependencyMap[12]).colors.TEXT_FEEDBACK_CRITICAL };
+obj = { color: null, fontSize: "b7eca7761481c5ff3cc170b16fbdff57", lineHeight: "img_no_results", textAlign: "png", tintColor: importDefault(dependencyMap[12]).colors.TEXT_FEEDBACK_CRITICAL };
 obj.mainIcon = obj;
-obj.title = { bounces: "center", keyboardShouldPersistTaps: "center" };
+obj.title = { "Null": "center", "Null": "center" };
 obj.description = { textAlign: "center" };
 let closure_18 = obj.createStyles(obj);
-const result = module_4329.fileFinishedImporting("modules/guild_automod/native/AutomodUserProfileQuarantineAlert.tsx");
+const tmp4 = arg1(dependencyMap[10]);
+const result = arg1(dependencyMap[24]).fileFinishedImporting("modules/guild_automod/native/AutomodUserProfileQuarantineAlert.tsx");
 
 export default function AutomodUserProfileQuarantineAlert(guildId) {
   guildId = guildId.guildId;

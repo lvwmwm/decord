@@ -1,10 +1,10 @@
-// Module ID: 16289
-// Function ID: 125714
+// Module ID: 16296
+// Function ID: 125745
 // Name: ApplicationRejectedNotice
 // Dependencies: []
 // Exports: default
 
-// Module 16289 (ApplicationRejectedNotice)
+// Module 16296 (ApplicationRejectedNotice)
 function ApplicationRejectedNotice(guildId) {
   let reapplyNoticeText;
   let requestRejectedNoticeText;
@@ -92,7 +92,7 @@ const GuildFeatures = arg1(dependencyMap[3]).GuildFeatures;
 const tmp3 = arg1(dependencyMap[1]);
 ({ jsx: closure_7, jsxs: closure_8 } = arg1(dependencyMap[4]));
 const tmp4 = arg1(dependencyMap[4]);
-let closure_9 = arg1(dependencyMap[5]).createStyles({ container: { flex: 1 }, warningBlockContainer: { -465535492: "<string:16777479>", -590279466: "<string:36295491>" }, spinner: { marginTop: 12 } });
+let closure_9 = arg1(dependencyMap[5]).createStyles({ container: { flex: 1 }, warningBlockContainer: {}, spinner: { marginTop: 12 } });
 const obj = arg1(dependencyMap[5]);
 const result = arg1(dependencyMap[13]).fileFinishedImporting("modules/guild_role_subscriptions/native/guild_settings/GuildSettingsRoleSubscriptionContainer.tsx");
 

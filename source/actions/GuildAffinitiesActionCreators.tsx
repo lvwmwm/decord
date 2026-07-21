@@ -1,10 +1,10 @@
-// Module ID: 8305
-// Function ID: 65756
+// Module ID: 8309
+// Function ID: 65768
 // Name: fetchGuildAffinities
 // Dependencies: []
 // Exports: fetchGuildAffinities
 
-// Module 8305 (fetchGuildAffinities)
+// Module 8309 (fetchGuildAffinities)
 const Endpoints = require(dependencyMap[0]).Endpoints;
 const _module = require(dependencyMap[3]);
 const result = _module.fileFinishedImporting("actions/GuildAffinitiesActionCreators.tsx");

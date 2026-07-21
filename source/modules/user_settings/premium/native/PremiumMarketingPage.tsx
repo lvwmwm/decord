@@ -1,10 +1,10 @@
-// Module ID: 12263
-// Function ID: 94032
+// Module ID: 12270
+// Function ID: 94055
 // Name: items
 // Dependencies: []
 // Exports: default
 
-// Module 12263 (items)
+// Module 12270 (items)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 ({ View: closure_5, ScrollView: closure_6 } = arg1(dependencyMap[2]));
@@ -17,7 +17,7 @@ let obj = arg1(dependencyMap[7]);
 obj = { container: { display: "flex" }, scrollContainer: {} };
 obj = { tintColor: importDefault(dependencyMap[8]).colors.TEXT_DEFAULT };
 obj.arrowIcon = obj;
-const obj1 = { BT: false, Emphasis: false, marginLeft: false };
+const obj1 = { <string:1482688022>: false, <string:357828252>: false, <string:1611011590>: false };
 const items = [{ scaleX: -1 }];
 obj1.transform = items;
 obj.backButton = obj1;
@@ -30,7 +30,7 @@ const tmp3 = arg1(dependencyMap[6]);
 obj.themedBackground = { backgroundColor: arg1(dependencyMap[9]).DARK_PRIMARY_700_LIGHT_WHITE_500 };
 const obj2 = { backgroundColor: arg1(dependencyMap[9]).DARK_PRIMARY_700_LIGHT_WHITE_500 };
 obj.backButtonBackground = { backgroundColor: arg1(dependencyMap[9]).TIER_0_MARKETING_PAGE_BACK_BUTTON_BG };
-obj.promotionCardHeader = { "Bool(false)": "Array", "Bool(false)": "isArray", "Bool(false)": "r" };
+obj.promotionCardHeader = {};
 let closure_12 = obj.createStyles(obj);
 const obj3 = { backgroundColor: arg1(dependencyMap[9]).TIER_0_MARKETING_PAGE_BACK_BUTTON_BG };
 const result = arg1(dependencyMap[40]).fileFinishedImporting("modules/user_settings/premium/native/PremiumMarketingPage.tsx");

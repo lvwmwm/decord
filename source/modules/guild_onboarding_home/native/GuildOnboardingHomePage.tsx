@@ -1,10 +1,10 @@
-// Module ID: 15144
-// Function ID: 114264
+// Module ID: 15151
+// Function ID: 114288
 // Name: GuildOnboardingHomePage
 // Dependencies: []
 // Exports: default
 
-// Module 15144 (GuildOnboardingHomePage)
+// Module 15151 (GuildOnboardingHomePage)
 function GuildOnboardingHomePage(guildId) {
   guildId = guildId.guildId;
   const arg1 = guildId;

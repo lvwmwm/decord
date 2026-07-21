@@ -73,7 +73,7 @@ export const useViewModelInstance = function useViewModelInstance(arg0, instance
             if (viewModelName) {
               let viewModelByNameResult = getViewModelInstance.viewModelByName(viewModelName);
               if (!viewModelByNameResult) {
-                obj = {};
+                obj = { EXPLICIT_MEDIA_FALSE_POSITIVE_CLYDE_MESSAGE_SENT: true, minTone: true };
                 const _HermesInternal3 = HermesInternal;
                 obj.error = "ViewModel '" + viewModelName + "' not found";
                 return obj;
@@ -87,12 +87,12 @@ export const useViewModelInstance = function useViewModelInstance(arg0, instance
               viewModelByNameResult = getViewModelInstance.defaultArtboardViewModel(ArtboardByNameResult);
               if (!viewModelByNameResult) {
                 if (artboardName) {
-                  const obj1 = {};
+                  const obj1 = { EXPLICIT_MEDIA_FALSE_POSITIVE_CLYDE_MESSAGE_SENT: true, minTone: true };
                   const _HermesInternal2 = HermesInternal;
                   obj1.error = "Artboard '" + artboardName + "' not found or has no ViewModel";
                   let obj2 = obj1;
                 } else {
-                  obj2 = {};
+                  obj2 = { EXPLICIT_MEDIA_FALSE_POSITIVE_CLYDE_MESSAGE_SENT: true, minTone: true };
                 }
                 return obj2;
               }
@@ -104,7 +104,7 @@ export const useViewModelInstance = function useViewModelInstance(arg0, instance
             }
             if (!instanceByName) {
               if (name) {
-                obj3 = {};
+                obj3 = { EXPLICIT_MEDIA_FALSE_POSITIVE_CLYDE_MESSAGE_SENT: true, minTone: true };
                 const _HermesInternal4 = HermesInternal;
                 obj3.error = "ViewModel instance '" + name + "' not found";
               }
@@ -122,7 +122,7 @@ export const useViewModelInstance = function useViewModelInstance(arg0, instance
             if (name) {
               let instanceByName1 = getViewModelInstance.createInstanceByName(name);
               if (!instanceByName1) {
-                const obj5 = {};
+                const obj5 = { EXPLICIT_MEDIA_FALSE_POSITIVE_CLYDE_MESSAGE_SENT: true, minTone: true };
                 const _HermesInternal = HermesInternal;
                 obj5.error = "ViewModel instance '" + name + "' not found";
                 return obj5;

@@ -1,10 +1,10 @@
-// Module ID: 5460
-// Function ID: 46598
+// Module ID: 5462
+// Function ID: 46640
 // Name: mergeLocations
 // Dependencies: []
 // Exports: AnalyticsLocationProvider, default, useLocationStackFromLocationContext
 
-// Module 5460 (mergeLocations)
+// Module 5462 (mergeLocations)
 function mergeLocations(arg0, arg1) {
   if (0 === arg1.length) {
     return arg0;

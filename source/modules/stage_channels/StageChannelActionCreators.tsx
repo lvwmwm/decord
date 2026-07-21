@@ -1,11 +1,11 @@
-// Module ID: 7472
-// Function ID: 59990
+// Module ID: 7476
+// Function ID: 60002
 // Name: audienceAckRequestToSpeak
-// Dependencies: [131072, 451936256, 2, 5424, 5440, 5444, 5445, 7486, 7491, 7181, 7492, 5446, 7493, 5438, 5441, 5423, 7180, 7503, 5439, 7504]
+// Dependencies: [131072, 451936256, 2, 5426, 5442, 5446, 5447, 7490, 7495, 7185, 7496, 5448, 7497, 5440, 5443, 5425, 7184, 7507, 5441, 7508]
 // Exports: editStage, endStage, inviteUserToStage, moveSelfToAudience, moveUserToAudience, removeUserFromChannel, setEveryoneRolePermissionAllowed, startStage, toggleRequestToSpeak
 
-// Module 7472 (audienceAckRequestToSpeak)
-import keys from "keys";
+// Module 7476 (audienceAckRequestToSpeak)
+import result2 from "result2";
 import context from "context";
 import { SafetyToastType } from "FormArrow";
 import FormSwitch from "FormSwitch";

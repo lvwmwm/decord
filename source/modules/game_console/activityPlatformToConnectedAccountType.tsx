@@ -1,10 +1,10 @@
-// Module ID: 15671
-// Function ID: 119750
+// Module ID: 15678
+// Function ID: 119774
 // Name: activityPlatformToConnectedAccountType
 // Dependencies: []
 // Exports: default
 
-// Module 15671 (activityPlatformToConnectedAccountType)
+// Module 15678 (activityPlatformToConnectedAccountType)
 const _module = require(dependencyMap[0]);
 ({ ActivityGamePlatforms: closure_0, PlatformTypes: closure_1 } = _module);
 const _module1 = require(dependencyMap[1]);

@@ -57,7 +57,7 @@ function _processUpdate() {
 let importDefaultResult = importDefault(dependencyMap[0]);
 importDefaultResult = new importDefaultResult();
 let _default1 = {
-  Events: { -9223372036854775808: "slight_smile", -9223372036854775808: "smiling_imp" },
+  Events: { 0: "filter", 9223372036854775807: "h" },
   runAfterInteractions(arg0) {
     const arg1 = arg0;
     let closure_1 = [];

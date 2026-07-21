@@ -1,10 +1,10 @@
-// Module ID: 13836
-// Function ID: 104628
+// Module ID: 13843
+// Function ID: 104651
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 // Exports: usePopularOrbShopProducts
 
-// Module 13836 (_createForOfIteratorHelperLoose)
+// Module 13843 (_createForOfIteratorHelperLoose)
 function _createForOfIteratorHelperLoose(@@iterator) {
   let arg1 = Symbol_iterator;
   @@iterator = "undefined" !== typeof Symbol;

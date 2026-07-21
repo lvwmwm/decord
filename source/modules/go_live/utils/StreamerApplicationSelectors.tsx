@@ -1,10 +1,10 @@
-// Module ID: 6971
-// Function ID: 55719
+// Module ID: 6975
+// Function ID: 55730
 // Name: _findPlayingActivity
 // Dependencies: []
 // Exports: useGetStreamApplication
 
-// Module 6971 (_findPlayingActivity)
+// Module 6975 (_findPlayingActivity)
 function _findPlayingActivity(type) {
   let tmp = type.type === ActivityTypes.PLAYING;
   if (tmp) {

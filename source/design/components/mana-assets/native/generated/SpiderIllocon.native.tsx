@@ -1,10 +1,10 @@
-// Module ID: 6523
-// Function ID: 50658
+// Module ID: 6525
+// Function ID: 50701
 // Name: SpiderIllocon
 // Dependencies: []
 // Exports: SpiderIllocon
 
-// Module 6523 (SpiderIllocon)
+// Module 6525 (SpiderIllocon)
 const jsx = require(dependencyMap[0]).jsx;
 const _module = require(dependencyMap[3]);
 const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/SpiderIllocon.native.tsx");

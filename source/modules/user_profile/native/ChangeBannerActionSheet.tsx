@@ -1,10 +1,10 @@
-// Module ID: 13435
-// Function ID: 102059
+// Module ID: 13442
+// Function ID: 102082
 // Name: ChangeBannerColorRow
 // Dependencies: []
 // Exports: default
 
-// Module 13435 (ChangeBannerColorRow)
+// Module 13442 (ChangeBannerColorRow)
 function ChangeBannerColorRow(user) {
   user = user.user;
   let arg1;
@@ -61,7 +61,7 @@ function ChangeBannerColorRow(user) {
   const obj2 = { style: tmp.selectedColor };
   obj3 = { style: tmp.bannerColor, color: num2 };
   const items2 = [callback(importDefault(closure_2[27]), obj3), , ];
-  obj4 = { Promise: 0, marginTop: 1929379840, flags: 0, style: tmp.selectedColorHex };
+  obj4 = { "Null": 0, "Null": 1929379840, "Null": 0, style: tmp.selectedColorHex };
   const memoizedImageSourceResult = obj3.memoizedImageSource(pendingAvatarSrc);
   obj4.children = arg1(closure_2[24]).int2hex(num2);
   items2[1] = callback(arg1(closure_2[28]).Text, obj4);
@@ -83,18 +83,18 @@ const tmp2 = arg1(dependencyMap[4]);
 ({ jsx: closure_9, jsxs: closure_10, Fragment: closure_11 } = arg1(dependencyMap[5]));
 let obj = arg1(dependencyMap[6]);
 obj = {};
-obj = { useKeyboardAwareWrapper: false, secureTextEntry: false, merchantId: false, color: importDefault(dependencyMap[7]).colors.INTERACTIVE_TEXT_ACTIVE };
+obj = { <string:1446732684>: "spriteIndex", <string:2075742646>: "y", <string:81929042>: "isArray", color: importDefault(dependencyMap[7]).colors.INTERACTIVE_TEXT_ACTIVE };
 obj.label = obj;
 const tmp3 = arg1(dependencyMap[5]);
 obj.sublabel = { color: importDefault(dependencyMap[7]).colors.TEXT_DEFAULT };
 const obj1 = { color: importDefault(dependencyMap[7]).colors.TEXT_DEFAULT };
 obj.nitroWheel = { marginLeft: importDefault(dependencyMap[7]).space.PX_8 };
-const obj2 = { marginLeft: importDefault(dependencyMap[7]).space.PX_8 };
-obj.bannerColor = { borderColor: importDefault(dependencyMap[7]).colors.INTERACTIVE_TEXT_DEFAULT, borderRadius: importDefault(dependencyMap[7]).radii.xs };
-obj.selectedColor = { -9223372036854775808: true, filter: true };
+const obj3 = { giftPlanSelectionCardBanner: "spriteIndex", %Uint8ClampedArrayPrototype%: "y", initiateEmojiInteraction: "isArray", blockedIgnoredRedirect: "constructor", pt-CH: "apply", borderColor: importDefault(dependencyMap[7]).colors.INTERACTIVE_TEXT_DEFAULT, borderRadius: importDefault(dependencyMap[7]).radii.xs };
+obj.bannerColor = obj3;
+obj.selectedColor = {};
 obj.selectedColorHex = { textTransform: "uppercase" };
-obj.rowArrow = { accessibilityRole: "ignoreLogs", withSpring: "MANUAL_REENABLE", "Null": "<string:317866240>", "Null": "<string:3211266>" };
-const obj3 = { borderColor: importDefault(dependencyMap[7]).colors.INTERACTIVE_TEXT_DEFAULT, borderRadius: importDefault(dependencyMap[7]).radii.xs };
+obj.rowArrow = { 0: "trackAverageRenderTimeForOffsetProjection", 9223372036854775807: "LL", -9223372036854775808: "<string:316948736>", 9223372036854775807: "<string:3211266>" };
+const obj2 = { marginLeft: importDefault(dependencyMap[7]).space.PX_8 };
 obj.upsellButton = { marginTop: importDefault(dependencyMap[7]).space.PX_8 };
 const obj4 = { marginTop: importDefault(dependencyMap[7]).space.PX_8 };
 obj.remove = { color: importDefault(dependencyMap[7]).colors.TEXT_FEEDBACK_CRITICAL };

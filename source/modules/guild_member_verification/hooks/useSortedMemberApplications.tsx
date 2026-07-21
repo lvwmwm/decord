@@ -1,10 +1,10 @@
-// Module ID: 15176
-// Function ID: 114492
+// Module ID: 15183
+// Function ID: 114516
 // Name: useSortedMemberApplications
 // Dependencies: []
 // Exports: useSortedMemberApplications
 
-// Module 15176 (useSortedMemberApplications)
+// Module 15183 (useSortedMemberApplications)
 let closure_2 = importAll(dependencyMap[0]);
 let closure_3 = importDefault(dependencyMap[1]);
 const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/guild_member_verification/hooks/useSortedMemberApplications.tsx");

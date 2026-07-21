@@ -1,10 +1,10 @@
-// Module ID: 11576
-// Function ID: 89992
+// Module ID: 11583
+// Function ID: 90015
 // Name: useGuildPowerupsWarningConfig
 // Dependencies: []
 // Exports: default
 
-// Module 11576 (useGuildPowerupsWarningConfig)
+// Module 11583 (useGuildPowerupsWarningConfig)
 let closure_3 = importAll(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 const result = arg1(dependencyMap[6]).fileFinishedImporting("modules/premium/powerups/hooks/useGuildPowerupsWarningConfig.tsx");
@@ -43,7 +43,7 @@ export default function useGuildPowerupsWarningConfig(arg0, arg1) {
   const items3 = [diff, arg1];
   return React.useMemo(() => {
     if (diff <= 0) {
-      let obj = { loadedPolicyNotice: "modal_top_pill_localized", storedContacts: "message", upsellCTADismissed: 7, policyUpdateNoticeDismissed: "dismiss_key" };
+      let obj = { "Null": "modal_top_pill_localized", "Null": "message", "Null": 7, "Null": "dismiss_key" };
     } else {
       obj = { shouldShow: true };
       const intl = arg0(stateFromStores[4]).intl;

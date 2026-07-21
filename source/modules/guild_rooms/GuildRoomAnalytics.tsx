@@ -1,10 +1,10 @@
-// Module ID: 15917
-// Function ID: 122099
+// Module ID: 15924
+// Function ID: 122125
 // Name: resolveGuildId
 // Dependencies: []
 // Exports: trackGuildRoomInteracted, trackGuildRoomLayoutToggled, trackGuildRoomObjectInteracted, trackGuildRoomOpened, trackGuildRoomSeatSelected, trackGuildRoomUserConnected, trackGuildRoomUserDisconnected, trackGuildRoomUserInteracted, trackGuildRoomUserUpdated
 
-// Module 15917 (resolveGuildId)
+// Module 15924 (resolveGuildId)
 function resolveGuildId(channelId, guildId) {
   let tmp = guildId;
   if (null == guildId) {

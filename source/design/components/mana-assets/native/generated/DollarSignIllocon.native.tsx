@@ -1,10 +1,10 @@
-// Module ID: 6021
-// Function ID: 49905
+// Module ID: 6023
+// Function ID: 49948
 // Name: DollarSignIllocon
 // Dependencies: []
 // Exports: DollarSignIllocon
 
-// Module 6021 (DollarSignIllocon)
+// Module 6023 (DollarSignIllocon)
 const jsx = require(dependencyMap[0]).jsx;
 const _module = require(dependencyMap[3]);
 const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/DollarSignIllocon.native.tsx");

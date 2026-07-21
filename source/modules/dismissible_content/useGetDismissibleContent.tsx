@@ -1,10 +1,10 @@
-// Module ID: 5796
-// Function ID: 49516
+// Module ID: 5798
+// Function ID: 49559
 // Name: useGetVisibleContent
 // Dependencies: []
 // Exports: useDangerouslyPeekDismissibleContents, useGetDismissibleContent, useGetSingleUseGuildDismissibleContent_UNSAFE, useGetSnowflakeBoundDismissibleContent, useGetSnowflakeBoundGuildDismissibleContent_UNSAFE, useGetTimeRecurringDismissibleContent, useGetTimeRecurringGuildDismissibleContent_UNSAFE, useGetTimeRecurringSnowflakeBoundDismissibleContent, useGetVersionedDismissibleContent
 
-// Module 5796 (useGetVisibleContent)
+// Module 5798 (useGetVisibleContent)
 function useGetVisibleContent(contentType, stateFromStores, GUILD_HEADER_TOOLTIPS, latestVersion, newSnowflakeId) {
   stateFromStores = contentType;
   const importDefault = stateFromStores;

@@ -1,10 +1,10 @@
-// Module ID: 9372
-// Function ID: 73101
+// Module ID: 9376
+// Function ID: 73115
 // Name: openEmojiActionSheet
 // Dependencies: []
 // Exports: openEmojiActionSheet
 
-// Module 9372 (openEmojiActionSheet)
+// Module 9376 (openEmojiActionSheet)
 const EMOJI_URL_BASE_SIZE = require(dependencyMap[0]).EMOJI_URL_BASE_SIZE;
 const _module = require(dependencyMap[6]);
 const result = _module.fileFinishedImporting("modules/emoji_picker/native/components/openEmojiActionSheet.tsx");

@@ -1,10 +1,10 @@
-// Module ID: 11301
-// Function ID: 87937
+// Module ID: 11307
+// Function ID: 87960
 // Name: UnsavedChangesAlertModal
 // Dependencies: []
 // Exports: default
 
-// Module 11301 (UnsavedChangesAlertModal)
+// Module 11307 (UnsavedChangesAlertModal)
 function UnsavedChangesAlertModal(onConfirm) {
   let obj = {};
   const intl = arg1(dependencyMap[8]).intl;
@@ -260,7 +260,7 @@ export default function PollCreation(channel) {
   obj3.source = importDefault(closure_2[33]);
   obj3.style = tmp4.actionButton;
   const items3 = [callback(arg1(closure_2[32]).HeaderActionButton, obj3), , ];
-  obj4 = { 9223372036854775807: -264110077, 9223372036854775807: 1509950194, 9223372036854775807: 1107297140, style: tmp4.title };
+  obj4 = { alignItems: "cry", justifyContent: "cry", backgroundColor: "cry", style: tmp4.title };
   const intl2 = arg1(closure_2[8]).intl;
   obj4.children = intl2.string(arg1(closure_2[8]).t.Flr51u);
   items3[1] = callback(arg1(closure_2[12]).Text, obj4);

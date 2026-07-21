@@ -1,10 +1,10 @@
-// Module ID: 6636
-// Function ID: 50941
+// Module ID: 6642
+// Function ID: 50990
 // Name: launchPremiumPlanSelect
 // Dependencies: []
 // Exports: launchPremiumPlanSelect
 
-// Module 6636 (launchPremiumPlanSelect)
+// Module 6642 (launchPremiumPlanSelect)
 const UserSettingsSections = require(dependencyMap[0]).UserSettingsSections;
 const _module = require(dependencyMap[7]);
 const result = _module.fileFinishedImporting("modules/premium/native/launchPremiumPlanSelect.tsx");

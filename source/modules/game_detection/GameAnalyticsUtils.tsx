@@ -1,10 +1,10 @@
-// Module ID: 4292
-// Function ID: 37557
+// Module ID: 4296
+// Function ID: 37605
 // Name: normalizePath
 // Dependencies: []
 // Exports: getRunningGameAnalytics, isVerifiedGameExecutable
 
-// Module 4292 (normalizePath)
+// Module 4296 (normalizePath)
 function normalizePath(str) {
   const formatted = str.toLowerCase();
   let substr = formatted;

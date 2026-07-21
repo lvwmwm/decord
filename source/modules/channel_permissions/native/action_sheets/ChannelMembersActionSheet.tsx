@@ -1,10 +1,10 @@
-// Module ID: 10862
-// Function ID: 84501
+// Module ID: 10868
+// Function ID: 84524
 // Name: ChannelMembersActionSheet
 // Dependencies: []
 // Exports: default
 
-// Module 10862 (ChannelMembersActionSheet)
+// Module 10868 (ChannelMembersActionSheet)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 let closure_4 = importDefault(dependencyMap[2]);
@@ -16,10 +16,10 @@ let closure_8 = importDefault(dependencyMap[6]);
 const tmp3 = arg1(dependencyMap[7]);
 ({ jsx: closure_11, jsxs: closure_12 } = arg1(dependencyMap[8]));
 let obj = arg1(dependencyMap[9]);
-obj = { container: { "Bool(false)": "Group 11", "Bool(false)": 2 } };
+obj = { container: { -926844321: "Group 11", 1381477602: 2 } };
 obj = { paddingVertical: importDefault(dependencyMap[10]).space.PX_12 };
 obj.sectionRowWrapper = obj;
-obj.warning = { 0: null, 9223372036854775807: null };
+obj.warning = {};
 let closure_13 = obj.createStyles(obj);
 const tmp4 = arg1(dependencyMap[8]);
 const result = arg1(dependencyMap[31]).fileFinishedImporting("modules/channel_permissions/native/action_sheets/ChannelMembersActionSheet.tsx");
@@ -85,7 +85,7 @@ export default function ChannelMembersActionSheet(arg0) {
         obj.title = intl5.string(arg1(dependencyMap[16]).t.9Oq93m);
         obj.data = existingMembersRows;
         items5.push(obj);
-        obj1 = { -1383050488: 24, -1600148191: 24, -1353556895: null };
+        obj1 = {};
         obj2 = {};
         const intl6 = arg1(dependencyMap[16]).intl;
         obj2.title = intl6.string(arg1(dependencyMap[16]).t.ES4CC6);

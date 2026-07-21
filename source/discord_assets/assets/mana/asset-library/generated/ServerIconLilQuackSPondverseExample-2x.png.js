@@ -1,9 +1,9 @@
-// Module ID: 6478
-// Function ID: 50591
+// Module ID: 6480
+// Function ID: 50634
 // Name: metadata
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 6478 (metadata)
+// Module 6480 (metadata)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/ServerIconLilQuackSPondverseExample-2x.png.js");
 

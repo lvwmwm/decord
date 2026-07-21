@@ -1,10 +1,10 @@
-// Module ID: 11654
-// Function ID: 90406
+// Module ID: 11661
+// Function ID: 90429
 // Name: PX_24
 // Dependencies: []
 // Exports: default
 
-// Module 11654 (PX_24)
+// Module 11661 (PX_24)
 const PX_24 = importDefault(dependencyMap[0]).space.PX_24;
 const tmp2 = arg1(dependencyMap[1]).AVATAR_SIZE_MAP[arg1(undefined, dependencyMap[1]).AvatarSizes.NORMAL];
 const PX_16 = importDefault(dependencyMap[0]).space.PX_16;

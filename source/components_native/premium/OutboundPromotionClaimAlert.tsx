@@ -1,27 +1,27 @@
-// Module ID: 12361
-// Function ID: 94560
+// Module ID: 12368
+// Function ID: 94583
 // Name: OutboundPromotionClaimAlert
 // Dependencies: []
 // Exports: default
 
-// Module 12361 (OutboundPromotionClaimAlert)
+// Module 12368 (OutboundPromotionClaimAlert)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 ({ ActivityIndicator: closure_5, View: closure_6, Image: closure_7, ScrollView: closure_8 } = arg1(dependencyMap[2]));
 const tmp2 = arg1(dependencyMap[2]);
 ({ jsx: closure_9, jsxs: closure_10 } = arg1(dependencyMap[3]));
 let obj = arg1(dependencyMap[4]);
-obj = { loading: { marginVertical: 80 }, body: { alignItems: "center" }, title: { marginBottom: 8 }, errorTitle: { 0: null, 9223372036854775807: null }, bodyText: {} };
+obj = { loading: { marginVertical: 80 }, body: { alignItems: "center" }, title: { marginBottom: 8 }, errorTitle: { "Bool(true)": true, "Bool(true)": true }, bodyText: { <string:4142373395>: null, <string:3898509951>: null } };
 obj = { backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_SURFACE_HIGH, borderRadius: importDefault(dependencyMap[5]).radii.sm };
 obj.copyInputContainer = obj;
 obj.copyInputLabel = {};
-const obj1 = { 0: "\u010Ce\u0161tina", 9223372036854775807: "Czech", 0: "cs", 0: "simple", 0: true, 0: "/assets/.cache/intl/aW50bA==", 0: null, 0: "b0aab43a708e01f81d83932d47cbb74d", borderColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_LOWEST, borderRadius: importDefault(dependencyMap[5]).radii.xs };
-obj.copyInput = obj1;
 const tmp3 = arg1(dependencyMap[3]);
+obj.copyInput = { borderColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_LOWEST, borderRadius: importDefault(dependencyMap[5]).radii.xs };
+const obj1 = { borderColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_LOWEST, borderRadius: importDefault(dependencyMap[5]).radii.xs };
 obj.copyInputCopied = { borderColor: importDefault(dependencyMap[5]).colors.ICON_FEEDBACK_POSITIVE };
-obj.copyButton = {};
+obj.copyButton = { "Null": 800, "Null": 16 };
 obj.promotionArt = {};
-obj.errorArt = { position: "isArray", minWidth: "PressableScaleProps", height: "isArray" };
+obj.errorArt = { flexDirection: "isArray", alignItems: "fetchGuildProfile", paddingStart: "isArray" };
 let closure_11 = obj.createStyles(obj);
 const obj2 = { borderColor: importDefault(dependencyMap[5]).colors.ICON_FEEDBACK_POSITIVE };
 const result = arg1(dependencyMap[18]).fileFinishedImporting("components_native/premium/OutboundPromotionClaimAlert.tsx");
@@ -70,7 +70,7 @@ export default function OutboundPromotionClaimAlert(onCancel) {
     const obj2 = { style: tmp.bodyText, variant: "text-md/medium", children: outboundPromotion.outboundRedemptionModalBody };
     items1[2] = callback2(arg1(dependencyMap[11]).Text, obj2);
     let obj3 = { style: tmp.copyInputContainer };
-    const obj4 = { style: tmp.copyInputLabel };
+    const obj4 = { "Null": null, "Null": null, "Null": null, style: tmp.copyInputLabel };
     const intl2 = arg1(dependencyMap[12]).intl;
     obj4.children = intl2.string(arg1(dependencyMap[12]).t.s9LFQh);
     const items2 = [callback2(arg1(dependencyMap[11]).Text, obj4), , ];
@@ -85,7 +85,7 @@ export default function OutboundPromotionClaimAlert(onCancel) {
       tmp19 = copyInput;
     }
     obj5.style = tmp19;
-    const obj7 = { flexDirection: null, justifyContent: null, alignItems: null };
+    const obj7 = { paddingHorizontal: "ERROR", flags: "ERROR", st: "NOT_RESPONDER" };
     const obj8 = { flex: 1 };
     obj7.style = obj8;
     const obj9 = {

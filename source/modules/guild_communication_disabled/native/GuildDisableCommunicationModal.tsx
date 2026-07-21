@@ -1,10 +1,10 @@
-// Module ID: 10969
-// Function ID: 85406
+// Module ID: 10974
+// Function ID: 85427
 // Name: GuildDisableCommunicationModal
 // Dependencies: []
 // Exports: default
 
-// Module 10969 (GuildDisableCommunicationModal)
+// Module 10974 (GuildDisableCommunicationModal)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/guild_communication_disabled/native/GuildDisableCommunicationModal.tsx");

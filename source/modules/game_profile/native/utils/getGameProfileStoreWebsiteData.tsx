@@ -1,10 +1,10 @@
-// Module ID: 8596
-// Function ID: 68255
+// Module ID: 8600
+// Function ID: 68267
 // Name: getGameProfileStoreWebsiteData
 // Dependencies: []
 // Exports: default
 
-// Module 8596 (getGameProfileStoreWebsiteData)
+// Module 8600 (getGameProfileStoreWebsiteData)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[12]).fileFinishedImporting("modules/game_profile/native/utils/getGameProfileStoreWebsiteData.tsx");

@@ -1,10 +1,10 @@
-// Module ID: 7524
-// Function ID: 60208
+// Module ID: 7528
+// Function ID: 60220
 // Name: StageChannelAgeVerificationNoticeContent
 // Dependencies: []
 // Exports: default
 
-// Module 7524 (StageChannelAgeVerificationNoticeContent)
+// Module 7528 (StageChannelAgeVerificationNoticeContent)
 function StageChannelAgeVerificationNoticeContent(onConfirmPress) {
   const arg1 = onConfirmPress.onConfirmPress;
   let closure_1 = callback2();
@@ -70,7 +70,7 @@ function StageChannelAgeVerificationNoticeWrapper(onConfirmPress) {
     const items = [Text(WarningIcon, obj), ];
     tmp12 = callback;
     Text = arg1(dependencyMap[8]).Text;
-    const obj1 = { INTEGRATION_CREATE: true, ConstraintReasonCode: true, style: tmp.contentText };
+    const obj1 = { style: tmp.contentText };
     tmp13 = callback;
     tmp = StageChannelAgeVerificationNoticeContent;
     const obj2 = { onConfirmPress };
@@ -101,14 +101,14 @@ const tmp3 = arg1(dependencyMap[3]);
 obj.containerWithDivider = { paddingVertical: importDefault(dependencyMap[5]).space.PX_16 };
 const obj1 = { paddingVertical: importDefault(dependencyMap[5]).space.PX_16 };
 obj.divider = { borderBottomWidth: 1, borderBottomColor: importDefault(dependencyMap[5]).colors.BORDER_SUBTLE };
-const obj3 = { -9223372036854775808: true, filter: true, gap: importDefault(dependencyMap[5]).space.PX_8, borderRadius: importDefault(dependencyMap[5]).radii.sm };
-obj.noticeContainer = obj3;
+const obj2 = { borderBottomWidth: 1, borderBottomColor: importDefault(dependencyMap[5]).colors.BORDER_SUBTLE };
+obj.noticeContainer = { gap: importDefault(dependencyMap[5]).space.PX_8, borderRadius: importDefault(dependencyMap[5]).radii.sm };
 obj.icon = { flexShrink: 0 };
 obj.linkText = { textDecorationLine: "underline" };
 obj.contentText = { flex: 1 };
 let closure_8 = obj.createStyles(obj);
 const obj4 = { TOP: 0, [0]: "TOP", BOTTOM: 1, [1]: "BOTTOM" };
-const obj2 = { borderBottomWidth: 1, borderBottomColor: importDefault(dependencyMap[5]).colors.BORDER_SUBTLE };
+const obj3 = { gap: importDefault(dependencyMap[5]).space.PX_8, borderRadius: importDefault(dependencyMap[5]).radii.sm };
 const result = arg1(dependencyMap[17]).fileFinishedImporting("modules/stage_channels/native/StageChannelAgeVerificationNotice.tsx");
 
 export default function StageChannelAgeVerificationNotice(arg0) {

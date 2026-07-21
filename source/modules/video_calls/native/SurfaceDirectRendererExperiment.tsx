@@ -1,13 +1,13 @@
-// Module ID: 10558
-// Function ID: 82470
+// Module ID: 10564
+// Function ID: 82493
 // Name: ANDROID_SURFACE_DIRECT_RENDERER_EXPERIMENT
 // Dependencies: []
 // Exports: isSurfaceDirectRendererExperimentEnabled, useSurfaceDirectRendererExperiment
 
-// Module 10558 (ANDROID_SURFACE_DIRECT_RENDERER_EXPERIMENT)
+// Module 10564 (ANDROID_SURFACE_DIRECT_RENDERER_EXPERIMENT)
 let closure_2 = importDefault(dependencyMap[0]);
 let obj = arg1(dependencyMap[1]);
-obj = { "Null": "r", "Null": "AGE_GATED_SPACES", defaultConfig: { enableSurfaceDirectRenderer: false }, variations: { [1]: { enableSurfaceDirectRenderer: true } } };
+obj = { margin: "usd", paddingHorizontal: "usd", defaultConfig: { enableSurfaceDirectRenderer: false }, variations: { [1]: { enableSurfaceDirectRenderer: true } } };
 let closure_3 = obj.createApexExperiment(obj);
 const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/video_calls/native/SurfaceDirectRendererExperiment.tsx");
 

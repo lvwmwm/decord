@@ -1,9 +1,9 @@
-// Module ID: 6024
-// Function ID: 49910
+// Module ID: 6026
+// Function ID: 49953
 // Name: metadata
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 6024 (metadata)
+// Module 6026 (metadata)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/DownloadBarIllocon-2x.png.js");
 

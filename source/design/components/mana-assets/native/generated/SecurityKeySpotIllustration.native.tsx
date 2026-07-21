@@ -1,10 +1,10 @@
-// Module ID: 6455
-// Function ID: 50556
+// Module ID: 6457
+// Function ID: 50599
 // Name: SecurityKeySpotIllustration
 // Dependencies: []
 // Exports: SecurityKeySpotIllustration
 
-// Module 6455 (SecurityKeySpotIllustration)
+// Module 6457 (SecurityKeySpotIllustration)
 const jsx = require(dependencyMap[0]).jsx;
 const _module = require(dependencyMap[3]);
 const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/SecurityKeySpotIllustration.native.tsx");

@@ -1,9 +1,9 @@
-// Module ID: 8951
-// Function ID: 70602
+// Module ID: 8955
+// Function ID: 70614
 // Name: OAuth2Prompts
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 8951 (OAuth2Prompts)
+// Module 8955 (OAuth2Prompts)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("modules/oauth2/types.tsx");
 

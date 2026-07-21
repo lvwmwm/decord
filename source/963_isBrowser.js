@@ -1,7 +1,7 @@
 // Module ID: 963
 // Function ID: 10425
 // Name: isBrowser
-// Dependencies: []
+// Dependencies: [981, 793]
 
 // Module 963 (isBrowser)
 Object.defineProperty(arg5, Symbol.toStringTag, { value: "Module" });

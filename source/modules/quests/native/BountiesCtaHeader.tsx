@@ -1,14 +1,14 @@
-// Module ID: 13852
-// Function ID: 104790
+// Module ID: 13859
+// Function ID: 104813
 // Name: BountiesCtaDescription
 // Dependencies: []
 
-// Module 13852 (BountiesCtaDescription)
+// Module 13859 (BountiesCtaDescription)
 let StyleSheet;
 function BountiesCtaDescription(isEmptyOrCompleted) {
   isEmptyOrCompleted = isEmptyOrCompleted.isEmptyOrCompleted;
   const t = arg1(dependencyMap[8]).t;
-  let obj = { INTEGRATION_CREATE: true, ConstraintReasonCode: true };
+  let obj = {};
   const intl = arg1(dependencyMap[8]).intl;
   obj.children = intl.string(isEmptyOrCompleted ? t.q4wlOE : t.AZGGo1);
   const tmp3 = callback(arg1(dependencyMap[9]).Text, obj);
@@ -72,7 +72,7 @@ function BountiesCtaHeaderInner(bounties) {
   }
   const items5 = [tmp11, ];
   obj2 = { style: tmp.headerTextBox };
-  const obj3 = { INTEGRATION_CREATE: "<string:3704409292>", ConstraintReasonCode: "<string:32796991>" };
+  const obj3 = {};
   const intl = arg1(dependencyMap[8]).intl;
   obj3.children = intl.string(arg1(dependencyMap[8]).t.qetVDw);
   const items6 = [callback(arg1(dependencyMap[9]).Text, obj3), , ];
@@ -105,7 +105,7 @@ const tmp3 = arg1(dependencyMap[4]);
 const tmp4 = arg1(dependencyMap[5]);
 let closure_11 = arg1(dependencyMap[6]).createStyles(() => {
   let obj = {};
-  obj = { "Bool(true)": "column", "Bool(true)": "flex-end", "Bool(true)": "center", backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_SURFACE_HIGH, borderColor: importDefault(dependencyMap[7]).colors.BORDER_MUTED, borderBottomLeftRadius: importDefault(dependencyMap[7]).radii.xxl, borderBottomRightRadius: importDefault(dependencyMap[7]).radii.xxl, overflow: "hidden" };
+  obj = { p: "center", y: 0, isArray: 8, backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_SURFACE_HIGH, borderColor: importDefault(dependencyMap[7]).colors.BORDER_MUTED, borderBottomLeftRadius: importDefault(dependencyMap[7]).radii.xxl, borderBottomRightRadius: importDefault(dependencyMap[7]).radii.xxl, overflow: "hidden" };
   obj.container = obj;
   obj = { backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_SURFACE_HIGH };
   obj.header = obj;
@@ -117,11 +117,11 @@ let closure_11 = arg1(dependencyMap[6]).createStyles(() => {
   const obj3 = { color: importDefault(dependencyMap[7]).colors.CONTROL_OVERLAY_PRIMARY_TEXT_DEFAULT };
   obj.headerTextBox = { paddingBottom: importDefault(dependencyMap[7]).space.PX_24, paddingHorizontal: importDefault(dependencyMap[7]).space.PX_20, gap: importDefault(dependencyMap[7]).space.PX_8 };
   obj.description = { marginBottom: 16 };
-  const obj5 = { marginBottom: true, onPress: true, borderBottomLeftRadius: importDefault(dependencyMap[7]).radii.xl, borderBottomRightRadius: importDefault(dependencyMap[7]).radii.xl };
+  const obj5 = { "Bool(true)": null, "Bool(true)": null, borderBottomLeftRadius: importDefault(dependencyMap[7]).radii.xl, borderBottomRightRadius: importDefault(dependencyMap[7]).radii.xl };
   obj.bottomSection = obj5;
   const obj4 = { paddingBottom: importDefault(dependencyMap[7]).space.PX_24, paddingHorizontal: importDefault(dependencyMap[7]).space.PX_20, gap: importDefault(dependencyMap[7]).space.PX_8 };
   obj.bottomContent = { gap: importDefault(dependencyMap[7]).space.PX_12 };
-  const obj7 = { "Bool(false)": null, "Bool(false)": null, borderRadius: importDefault(dependencyMap[7]).radii.md, backgroundColor: importDefault(dependencyMap[7]).colors.CONTROL_OVERLAY_SECONDARY_BACKGROUND_DEFAULT };
+  const obj7 = { <string:1400504324>: true, <string:2707095556>: true, borderRadius: importDefault(dependencyMap[7]).radii.md, backgroundColor: importDefault(dependencyMap[7]).colors.CONTROL_OVERLAY_SECONDARY_BACKGROUND_DEFAULT };
   obj.placeholderCards = obj7;
   return obj;
 });

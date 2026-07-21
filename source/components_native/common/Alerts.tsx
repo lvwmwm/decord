@@ -1,9 +1,9 @@
-// Module ID: 15464
-// Function ID: 117972
+// Module ID: 15471
+// Function ID: 117996
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
-// Module 15464 (_isNativeReflectConstruct)
+// Module 15471 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -83,7 +83,7 @@ obj3["backgroundColor"] = importDefault(dependencyMap[18]).colors.BACKGROUND_SCR
 obj3["justifyContent"] = "center";
 obj3["alignItems"] = "center";
 obj2.alertWrapper = obj3;
-obj2.alertContentWrapper = { fill: 0, backgroundColor: 0, size: 0, color: 0 };
+obj2.alertContentWrapper = { 9223372036854775807: 0, 618916762573: 0, 0: 0, 9223372036854775807: 0 };
 let closure_21 = arg1(dependencyMap[17]).createLegacyClassComponentStyles(obj2);
 const tmp10 = (PureComponent) => {
   class AlertWrapper {
@@ -121,10 +121,9 @@ const tmp10 = (PureComponent) => {
         scale.setValue(1);
       };
       tmp2Result.componentWillEnter = (arg0) => {
-        const obj = { 0: null, 0: null, 0: null, 0: null, easing: closure_11.linear };
-        const items = [closure_10.timing(tmp2Result.state.opacity, obj)];
+        const items = [closure_10.timing(tmp2Result.state.opacity, { easing: closure_11.linear })];
         if (!tmp2Result.props.useReducedMotion) {
-          items.push(closure_10.spring(tmp2Result.state.scale, { top: 760348674, left: 291798377 }));
+          items.push(closure_10.spring(tmp2Result.state.scale, {}));
         }
         closure_10.parallel(items).start(arg0);
       };

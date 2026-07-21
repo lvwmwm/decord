@@ -1,8 +1,8 @@
-// Module ID: 5348
-// Function ID: 45719
+// Module ID: 5350
+// Function ID: 45760
 // Dependencies: []
 
-// Module 5348
+// Module 5350
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 const Endpoints = arg1(dependencyMap[2]).Endpoints;

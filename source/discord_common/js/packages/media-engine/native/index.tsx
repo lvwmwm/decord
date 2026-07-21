@@ -1,9 +1,9 @@
-// Module ID: 4220
-// Function ID: 36806
+// Module ID: 4224
+// Function ID: 36854
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
-// Module 4220 (_isNativeReflectConstruct)
+// Module 4224 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -51,9 +51,9 @@ const tmp5 = (arg0) => {
         constructResult = obj.apply(self, undefined);
       }
       tmp2Result = tmp2(self, constructResult);
-      f36984 = tmp2Result;
-      tmp2Result.Video = f36981(f36976[10]);
-      tmp2Result.Camera = f36981(f36976[11]);
+      f37032 = tmp2Result;
+      tmp2Result.Video = f37029(f37024[10]);
+      tmp2Result.Camera = f37029(f37024[11]);
       tmp2Result.audioInputDeviceId = closure_20;
       tmp2Result.audioOutputDeviceId = closure_20;
       tmp2Result.videoInputDeviceId = closure_20;
@@ -65,9 +65,9 @@ const tmp5 = (arg0) => {
       tmp2Result.deviceChangeGeneration = 0;
       tmp2Result.consecutiveWatchdogFailures = 0;
       tmp2Result.codecSurvey = null;
-      tmp2Result.clipsRecordingEventContext = {};
+      tmp2Result.clipsRecordingEventContext = { limit: 24, exclude_unpaid_statuses: 8, name: 3 };
       tmp2Result.clipsRecordingEventHandlerRegistered = false;
-      logger = new f36984(f36976[12]).Logger("MediaEngineNative");
+      logger = new f37032(f37024[12]).Logger("MediaEngineNative");
       tmp2Result.logger = logger;
       tmp2Result.handleDeviceChange = (items, items, items) => {
         let items1 = items;
@@ -185,7 +185,7 @@ const tmp5 = (arg0) => {
       };
       logger = tmp2Result.logger;
       enableNativeLoggerResult = logger.enableNativeLogger(true);
-      obj3 = f36984(f36976[15]);
+      obj3 = f37032(f37024[15]);
       voiceEngine = obj3.getVoiceEngine();
       result = voiceEngine.setDeviceChangeCallback(tmp2Result.handleDeviceChange);
       result1 = voiceEngine.setVolumeChangeCallback(tmp2Result.handleVolumeChange);
@@ -199,7 +199,7 @@ const tmp5 = (arg0) => {
       if (null != voiceEngine.setAudioDeviceModuleErrorCallback) {
         result4 = voiceEngine.setAudioDeviceModuleErrorCallback(tmp2Result.handleAudioDeviceModuleErrorCallback);
       }
-      setTransportOptionsResult = voiceEngine.setTransportOptions({ <string:176948822>: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000021043611947808288, <string:2758577548>: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000053357352779429986 });
+      setTransportOptionsResult = voiceEngine.setTransportOptions({ "Bool(false)": true, "Bool(false)": true });
       if (null != voiceEngine.setNativeScreenSharePickerCallbacks) {
         result5 = voiceEngine.setNativeScreenSharePickerCallbacks(tmp2Result.handleNativeScreenSharePickerUpdate, tmp2Result.handleNativeScreenSharePickerCancel, tmp2Result.handleNativeScreenSharePickerError);
       }
@@ -217,24 +217,24 @@ const tmp5 = (arg0) => {
       }
       onResult = tmp2Result.on("removeListener", tmp2Result.handleRemoveListener);
       onResult1 = tmp2Result.on("newListener", tmp2Result.handleNewListener);
-      obj5 = f36984(f36976[15]);
+      obj5 = f37032(f37024[15]);
       if (null != obj5.getVoiceEngine().getAudioSubsystem) {
-        tmp28 = f36984;
-        tmp29 = f36976;
-        obj9 = f36984(f36976[15]);
+        tmp28 = f37032;
+        tmp29 = f37024;
+        obj9 = f37032(f37024[15]);
         voiceEngine1 = obj9.getVoiceEngine();
         audioSubsystem = voiceEngine1.getAudioSubsystem((audioSubsystem, audioLayer) => {
           tmp2Result.audioSubsystem = audioSubsystem;
           tmp2Result.audioLayer = audioLayer;
         });
       } else {
-        tmp23 = f36984;
-        tmp24 = f36976;
-        obj6 = f36984(f36976[15]);
+        tmp23 = f37032;
+        tmp24 = f37024;
+        obj6 = f37032(f37024[15]);
         if (null != obj6.getVoiceEngine().getUseLegacyAudioDevice) {
-          tmp25 = f36984;
-          tmp26 = f36976;
-          obj7 = f36984(f36976[15]);
+          tmp25 = f37032;
+          tmp26 = f37024;
+          obj7 = f37032(f37024[15]);
           voiceEngine2 = obj7.getVoiceEngine();
           tmp27 = closure_16;
           tmp2Result.audioSubsystem = voiceEngine2.getUseLegacyAudioDevice() ? tmp27.LEGACY : tmp27.STANDARD;
@@ -253,36 +253,36 @@ const tmp5 = (arg0) => {
           }
         });
       }
-      tmp34 = f36981(f36976[16])(tmp2Result);
+      tmp34 = f37029(f37024[16])(tmp2Result);
       tmp35 = function pollQueueMetrics(tmp2Result) {
+        function pollMetrics() {
+          return _pollMetrics(...arguments);
+        }
+        async function _pollMetrics() {
+          let lib;
+          if (!closure_1) {
+            lib = lib(closure_2[15]).getVoiceEngine();
+            const tmp6 = yield new Promise((arg0) => {
+              let closure_0 = arg0;
+              if (null != closure_0.pollQueueMetrics) {
+                closure_0.pollQueueMetrics((arg0) => {
+                  arg0(arg0);
+                });
+              }
+            });
+            tmp6.periodMs = closure_10;
+            lib.emit(lib(closure_2[13]).MediaEngineEvent.VoiceQueueMetrics, tmp6);
+            const _setTimeout = setTimeout;
+            const timerId = setTimeout(closure_2, closure_10);
+            const obj = lib(closure_2[15]);
+          }
+        }
         let closure_1 = false;
-        tmp2Result.on(tmp2Result(tmp2[13]).MediaEngineEvent.Destroy, () => {
+        tmp2Result.on(tmp2Result(pollMetrics[13]).MediaEngineEvent.Destroy, () => {
           let closure_1 = true;
           return true;
         });
-        const tmp2 = () => {
-          let closure_0 = callback(async () => {
-            let lib;
-            if (!closure_1) {
-              lib = lib(closure_2[15]).getVoiceEngine();
-              const tmp6 = yield new Promise((arg0) => {
-                let closure_0 = arg0;
-                if (null != closure_0.pollQueueMetrics) {
-                  closure_0.pollQueueMetrics(() => { ... });
-                }
-              });
-              tmp6.periodMs = closure_10;
-              lib.emit(lib(closure_2[13]).MediaEngineEvent.VoiceQueueMetrics, tmp6);
-              const _setTimeout = setTimeout;
-              const timerId = setTimeout(closure_2, closure_10);
-              const obj = lib(closure_2[15]);
-            }
-          });
-          return function() {
-            return callback(...arguments);
-          };
-        }();
-        const timerId = setTimeout(tmp2, closure_10);
+        const timerId = setTimeout(pollMetrics, closure_10);
       }(tmp2Result);
       return tmp2Result;
     }
@@ -975,7 +975,7 @@ const tmp5 = (arg0) => {
               if (null != id) {
                 let parts = id.split(":");
               } else {
-                parts = [1, 0];
+                parts = [0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001833, 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000266183152018684];
               }
               const tmp6 = callback4(parts, 2);
               let num7 = 0;
@@ -987,7 +987,7 @@ const tmp5 = (arg0) => {
               obj1.soundshareId = num7;
               voiceEngine.setClipsSource(obj1);
             } else {
-              voiceEngine.setClipsSource({ 861995012: true, 69130561: true });
+              voiceEngine.setClipsSource({ name: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000200383510955, version: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000023685209983894134 });
             }
           }
         }
@@ -1265,6 +1265,12 @@ const tmp5 = (arg0) => {
           }
           return arg1(JSON.parse(str));
         }
+        function onLegacySuccess(arg0, arg1, arg2) {
+          return onSuccess(arg0, arg2, arg1, undefined);
+        }
+        function onLegacyTimeSuccess(arg0, arg1, arg2) {
+          return onSuccess(arg0, arg1, undefined, arg2);
+        }
         if (null == closure_1.saveClipEx) {
           ({ filepath, metadata, thumbnailMs, startMs, endMs, trimStartMs, trimEndMs, userId } = arg0);
           if (null != userId) {
@@ -1285,74 +1291,66 @@ const tmp5 = (arg0) => {
           }
           if (tmp7) {
             arg1("unsupported");
-          } else {
-            function onLegacySuccess(arg0, arg1, arg2) {
-              return onSuccess(arg0, arg2, arg1, undefined);
-            }
-            function onLegacyTimeSuccess(arg0, arg1, arg2) {
-              return onSuccess(arg0, arg1, undefined, arg2);
-            }
-            if (tmp5) {
-              if (null != tmp13.saveClipForUserWithTime) {
-                let tmp31 = null;
-                if (null != startMs) {
-                  tmp31 = startMs;
-                }
-                let tmp32 = null;
-                if (null != endMs) {
-                  tmp32 = endMs;
-                }
-                let tmp33 = null;
-                if (null != trimStartMs) {
-                  tmp33 = trimStartMs;
-                }
-                let tmp34 = null;
-                if (null != trimEndMs) {
-                  tmp34 = trimEndMs;
-                }
-                const result = closure_1.saveClipForUserWithTime(userId, filepath, metadata, tmp31, tmp32, tmp33, tmp34, onLegacyTimeSuccess, onFailure, thumbnailMs);
-                const tmp30 = closure_1;
-              } else {
-                const saveClipForUser = closure_1.saveClipForUser;
-                if (obj2.supportsFeature(constants.CLIPS_THUMBNAIL)) {
-                  if (null != saveClipForUser) {
-                    closure_1.saveClipForUser(userId, filepath, metadata, onLegacySuccess, onFailure, thumbnailMs);
-                  }
-                } else if (null != saveClipForUser) {
-                  closure_1.saveClipForUser(userId, filepath, metadata, onLegacySuccess, onFailure);
-                }
-                const obj2 = arg0(onSuccess[15]);
-              }
-            } else if (null != tmp13.saveClipWithTime) {
-              let tmp15 = null;
+          } else if (tmp5) {
+            if (null != tmp13.saveClipForUserWithTime) {
+              let tmp31 = null;
               if (null != startMs) {
-                tmp15 = startMs;
+                tmp31 = startMs;
               }
-              let tmp16 = null;
+              let tmp32 = null;
               if (null != endMs) {
-                tmp16 = endMs;
+                tmp32 = endMs;
               }
-              let tmp17 = null;
+              let tmp33 = null;
               if (null != trimStartMs) {
-                tmp17 = trimStartMs;
+                tmp33 = trimStartMs;
               }
-              let tmp18 = null;
+              let tmp34 = null;
               if (null != trimEndMs) {
-                tmp18 = trimEndMs;
+                tmp34 = trimEndMs;
               }
-              closure_1.saveClipWithTime(filepath, metadata, tmp15, tmp16, tmp17, tmp18, onLegacyTimeSuccess, onFailure, thumbnailMs);
-              const tmp14 = closure_1;
+              const result = closure_1.saveClipForUserWithTime(userId, filepath, metadata, tmp31, tmp32, tmp33, tmp34, onLegacyTimeSuccess, onFailure, thumbnailMs);
+              const tmp30 = closure_1;
             } else {
-              const saveClip = closure_1.saveClip;
-              if (obj.supportsFeature(constants.CLIPS_THUMBNAIL)) {
-                if (null != saveClip) {
-                  closure_1.saveClip(filepath, metadata, onLegacySuccess, onFailure, thumbnailMs);
+              const saveClipForUser = closure_1.saveClipForUser;
+              if (obj2.supportsFeature(constants.CLIPS_THUMBNAIL)) {
+                if (null != saveClipForUser) {
+                  closure_1.saveClipForUser(userId, filepath, metadata, onLegacySuccess, onFailure, thumbnailMs);
                 }
-              } else if (null != saveClip) {
-                closure_1.saveClip(filepath, metadata, onLegacySuccess, onFailure);
+              } else if (null != saveClipForUser) {
+                closure_1.saveClipForUser(userId, filepath, metadata, onLegacySuccess, onFailure);
               }
-              const obj = arg0(onSuccess[15]);
+              const obj2 = arg0(onSuccess[15]);
             }
+          } else if (null != tmp13.saveClipWithTime) {
+            let tmp15 = null;
+            if (null != startMs) {
+              tmp15 = startMs;
+            }
+            let tmp16 = null;
+            if (null != endMs) {
+              tmp16 = endMs;
+            }
+            let tmp17 = null;
+            if (null != trimStartMs) {
+              tmp17 = trimStartMs;
+            }
+            let tmp18 = null;
+            if (null != trimEndMs) {
+              tmp18 = trimEndMs;
+            }
+            closure_1.saveClipWithTime(filepath, metadata, tmp15, tmp16, tmp17, tmp18, onLegacyTimeSuccess, onFailure, thumbnailMs);
+            const tmp14 = closure_1;
+          } else {
+            const saveClip = closure_1.saveClip;
+            if (obj.supportsFeature(constants.CLIPS_THUMBNAIL)) {
+              if (null != saveClip) {
+                closure_1.saveClip(filepath, metadata, onLegacySuccess, onFailure, thumbnailMs);
+              }
+            } else if (null != saveClip) {
+              closure_1.saveClip(filepath, metadata, onLegacySuccess, onFailure);
+            }
+            const obj = arg0(onSuccess[15]);
           }
         } else {
           closure_1.saveClipEx(arg0, onSuccess, onFailure);

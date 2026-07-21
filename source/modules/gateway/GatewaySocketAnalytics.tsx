@@ -1,10 +1,10 @@
-// Module ID: 12449
-// Function ID: 95126
+// Module ID: 12456
+// Function ID: 95149
 // Name: prettyPrintTrace_
 // Dependencies: []
 // Exports: createResumeAnalytics, getConnectionPath, getReadyPayloadByteSizeAnalytics, logGatewayConnected, logReadyPayloadReceived, logResumeAnalytics, reportDevtoolsEvent
 
-// Module 12449 (prettyPrintTrace_)
+// Module 12456 (prettyPrintTrace_)
 function prettyPrintTrace_(arg0, arg1) {
   let length;
   if (null == arg0) {
@@ -346,7 +346,7 @@ export const logGatewayConnected = function logGatewayConnected(failedConnectAtt
   obj.track(constants.GATEWAY_CONNECTED, obj, { logEventProperties: true });
 };
 export const createResumeAnalytics = function createResumeAnalytics(arg0) {
-  const obj = { "Bool(false)": "Reflect", "Bool(false)": "left", "Bool(false)": "constructor", "Bool(false)": "id", "Bool(false)": "fill", "Bool(false)": "track" };
+  const obj = {};
   let num = 0;
   if (null != arg0) {
     num = arg0;

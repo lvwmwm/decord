@@ -1,10 +1,10 @@
-// Module ID: 13965
-// Function ID: 106150
+// Module ID: 13972
+// Function ID: 106173
 // Name: TicketIcon
 // Dependencies: []
 // Exports: TicketIcon
 
-// Module 13965 (TicketIcon)
+// Module 13972 (TicketIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/TicketIcon.tsx");

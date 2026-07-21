@@ -1,10 +1,10 @@
-// Module ID: 12558
-// Function ID: 96663
+// Module ID: 12565
+// Function ID: 96686
 // Name: mapGuildRoomBaseObjectFields
 // Dependencies: []
 // Exports: serverGuildRoomToClient
 
-// Module 12558 (mapGuildRoomBaseObjectFields)
+// Module 12565 (mapGuildRoomBaseObjectFields)
 function mapGuildRoomBaseObjectFields(objectId) {
   const obj = { objectId: objectId.object_id, createdBy: objectId.created_by };
   let date;

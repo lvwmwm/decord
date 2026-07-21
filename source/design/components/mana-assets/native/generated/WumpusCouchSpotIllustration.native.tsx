@@ -1,10 +1,10 @@
-// Module ID: 6619
-// Function ID: 50802
+// Module ID: 6625
+// Function ID: 50851
 // Name: WumpusCouchSpotIllustration
 // Dependencies: []
 // Exports: WumpusCouchSpotIllustration
 
-// Module 6619 (WumpusCouchSpotIllustration)
+// Module 6625 (WumpusCouchSpotIllustration)
 const jsx = require(dependencyMap[0]).jsx;
 const _module = require(dependencyMap[3]);
 const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/WumpusCouchSpotIllustration.native.tsx");

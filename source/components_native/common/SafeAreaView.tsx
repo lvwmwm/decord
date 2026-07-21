@@ -1,10 +1,10 @@
-// Module ID: 5387
-// Function ID: 45912
+// Module ID: 5389
+// Function ID: 45953
 // Name: SafeAreaPaddingView
 // Dependencies: []
 // Exports: SafeAreaPaddingView
 
-// Module 5387 (SafeAreaPaddingView)
+// Module 5389 (SafeAreaPaddingView)
 let closure_2 = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 const jsx = arg1(dependencyMap[2]).jsx;

@@ -1,10 +1,10 @@
-// Module ID: 14606
-// Function ID: 110163
+// Module ID: 14613
+// Function ID: 110185
 // Name: trackRegTransition
 // Dependencies: []
 // Exports: BackButtonWithTracking, getCommonErrorDetails, getTrackRegTransition, hasAllRegistrationFieldsCompleted
 
-// Module 14606 (trackRegTransition)
+// Module 14613 (trackRegTransition)
 function trackRegTransition(overrideRegistrationOptions) {
   let actionType;
   let details;

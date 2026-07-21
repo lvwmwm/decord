@@ -1,10 +1,10 @@
-// Module ID: 15226
-// Function ID: 114985
+// Module ID: 15233
+// Function ID: 115009
 // Name: FileOrLinkGridPlaceholderItem
 // Dependencies: []
 // Exports: default
 
-// Module 15226 (FileOrLinkGridPlaceholderItem)
+// Module 15233 (FileOrLinkGridPlaceholderItem)
 let closure_3 = importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[6]).fileFinishedImporting("modules/search/native/components/tabs/pages/placeholders/FileOrLinkGridPlaceholder.tsx");

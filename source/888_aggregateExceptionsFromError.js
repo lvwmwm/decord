@@ -50,7 +50,7 @@ function applyExceptionGroupFieldsForParentException(type, exception_id) {
     tmp = obj;
   }
   obj = { exception_id };
-  type.mechanism = Object.assign({ alignItems: false, justifyContent: false }, type.mechanism, tmp, obj);
+  type.mechanism = Object.assign({ onDrawerSlide: false, onDrawerStateChanged: false }, type.mechanism, tmp, obj);
 }
 function applyExceptionGroupFieldsForChildException(mechanism, source, exception_id, parent_id) {
   mechanism.mechanism = Object.assign({ handled: true }, mechanism.mechanism, { type: "chained", source, exception_id, parent_id });

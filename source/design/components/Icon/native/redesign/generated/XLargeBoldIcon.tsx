@@ -1,10 +1,10 @@
-// Module ID: 8905
-// Function ID: 70279
+// Module ID: 8909
+// Function ID: 70291
 // Name: XLargeBoldIcon
 // Dependencies: []
 // Exports: XLargeBoldIcon
 
-// Module 8905 (XLargeBoldIcon)
+// Module 8909 (XLargeBoldIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/XLargeBoldIcon.tsx");

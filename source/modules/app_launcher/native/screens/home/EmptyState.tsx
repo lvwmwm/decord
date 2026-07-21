@@ -1,10 +1,10 @@
-// Module ID: 11214
-// Function ID: 87345
+// Module ID: 11220
+// Function ID: 87368
 // Name: EmptyState
 // Dependencies: []
 // Exports: default
 
-// Module 11214 (EmptyState)
+// Module 11220 (EmptyState)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 ({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[2]));

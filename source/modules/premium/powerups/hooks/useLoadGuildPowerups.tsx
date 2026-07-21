@@ -1,10 +1,10 @@
-// Module ID: 11496
-// Function ID: 89598
+// Module ID: 11503
+// Function ID: 89622
 // Name: useLoadGuildPowerups
 // Dependencies: []
 // Exports: default
 
-// Module 11496 (useLoadGuildPowerups)
+// Module 11503 (useLoadGuildPowerups)
 let closure_2 = importAll(dependencyMap[0]);
 const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/premium/powerups/hooks/useLoadGuildPowerups.tsx");
 

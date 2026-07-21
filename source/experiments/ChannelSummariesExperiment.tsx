@@ -1,10 +1,10 @@
-// Module ID: 9474
-// Function ID: 73861
+// Module ID: 9478
+// Function ID: 73875
 // Name: canSeeChannelSummaries
 // Dependencies: []
 // Exports: channelEligibleForSummaries, useChannelSummariesExperiment, useGuildEligibleForSummaries
 
-// Module 9474 (canSeeChannelSummaries)
+// Module 9478 (canSeeChannelSummaries)
 function canSeeChannelSummaries(channel, flag, flag2) {
   if (flag === undefined) {
     flag = false;

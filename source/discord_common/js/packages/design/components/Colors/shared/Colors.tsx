@@ -10,7 +10,7 @@ function toRGBAString(rgba) {
   return "rgba(" + tmp[0] + ", " + tmp[1] + ", " + tmp[2] + ", " + tmp[3] + ")";
 }
 let closure_2 = importDefault(dependencyMap[0]);
-const obj = { "Null": 326172673, "Null": 1358954496, "Null": false };
+const obj = { 61362914: 326172673, -1855893510: 1358954496, 48746578: "body" };
 const result = arg1(dependencyMap[2]).fileFinishedImporting("../discord_common/js/packages/design/components/Colors/shared/Colors.tsx");
 
 export const WCAGContrastRatios = obj;

@@ -1,15 +1,15 @@
-// Module ID: 11697
-// Function ID: 90901
+// Module ID: 11704
+// Function ID: 90924
 // Name: RedesignContactSyncDiscoverabilityFooter
-// Dependencies: [31, 33, 4126, 689, 1212, 9110, 2]
+// Dependencies: [31, 33, 4126, 689, 1212, 9114, 2]
 // Exports: default
 
-// Module 11697 (RedesignContactSyncDiscoverabilityFooter)
+// Module 11704 (RedesignContactSyncDiscoverabilityFooter)
 import { HelpdeskArticles } from "module_31";
 import { jsx } from "module_33";
-import keys from "keys";
+import result2 from "result2";
 
-const result = keys.fileFinishedImporting("modules/contact_sync/native/components/RedesignContactSyncDiscoverabilityFooter.tsx");
+const result = result2.fileFinishedImporting("modules/contact_sync/native/components/RedesignContactSyncDiscoverabilityFooter.tsx");
 
 export default function RedesignContactSyncDiscoverabilityFooter(arg0) {
   let discoverabilityEnabled;

@@ -1,18 +1,18 @@
-// Module ID: 11110
-// Function ID: 86512
+// Module ID: 11116
+// Function ID: 86535
 // Name: ForumPostPinIcon
 // Dependencies: []
 // Exports: default
 
-// Module 11110 (ForumPostPinIcon)
+// Module 11116 (ForumPostPinIcon)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 const jsx = arg1(dependencyMap[2]).jsx;
 let obj = arg1(dependencyMap[3]);
 obj = {};
-obj = { "Bool(false)": -10252133546901566000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, "Bool(false)": 0.00000000000000000000000000000000000000000000000000000000000004667253313593581, "Bool(false)": -0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000334262078070349, "Bool(false)": "isArray", "Bool(false)": "key", "Bool(false)": "Array", "Bool(false)": "LIGHT", "Bool(false)": "limit", borderRadius: importDefault(dependencyMap[4]).radii.round, backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_BRAND };
+obj = { "Bool(false)": -171405157111404630000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, "Bool(false)": 0.00000000000000000000000000000000000000000000000000000000000004667253313593581, "Bool(false)": -3938062453911571000000000000000000000000000000000000000000000000000000000000000, "Bool(false)": "isArray", "Bool(false)": "key", "Bool(false)": "Array", "Bool(false)": "LIGHT", "Bool(false)": "limit", borderRadius: importDefault(dependencyMap[4]).radii.round, backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_BRAND };
 obj.pin = obj;
-const obj1 = { <string:1140607356>: null, <string:1751293292>: null, tintColor: importDefault(dependencyMap[4]).colors.WHITE };
+const obj1 = { <string:1632221346>: "Array", <string:2722977214>: "isPrivate", tintColor: importDefault(dependencyMap[4]).colors.WHITE };
 obj.pinIcon = obj1;
 let closure_5 = obj.createStyles(obj);
 const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/forums/native/posts/ForumPostPinIcon.tsx");

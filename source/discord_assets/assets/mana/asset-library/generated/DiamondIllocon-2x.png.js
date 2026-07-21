@@ -1,9 +1,9 @@
-// Module ID: 5994
-// Function ID: 49865
+// Module ID: 5996
+// Function ID: 49908
 // Name: metadata
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 5994 (metadata)
+// Module 5996 (metadata)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/DiamondIllocon-2x.png.js");
 

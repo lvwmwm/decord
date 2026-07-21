@@ -1,10 +1,10 @@
-// Module ID: 5458
-// Function ID: 46590
+// Module ID: 5460
+// Function ID: 46632
 // Name: ConnectionCard
 // Dependencies: []
 // Exports: default
 
-// Module 5458 (ConnectionCard)
+// Module 5460 (ConnectionCard)
 importAll(dependencyMap[0]);
 const OnboardingConnectionType = arg1(dependencyMap[1]).OnboardingConnectionType;
 const jsx = arg1(dependencyMap[2]).jsx;

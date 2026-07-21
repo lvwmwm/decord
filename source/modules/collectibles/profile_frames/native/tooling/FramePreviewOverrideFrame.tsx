@@ -1,10 +1,10 @@
-// Module ID: 8247
-// Function ID: 65079
+// Module ID: 8251
+// Function ID: 65091
 // Name: OverrideProfileFrameLayer
 // Dependencies: []
 // Exports: default
 
-// Module 8247 (OverrideProfileFrameLayer)
+// Module 8251 (OverrideProfileFrameLayer)
 let StyleSheet;
 function OverrideProfileFrameLayer(layer) {
   let containerHeight;

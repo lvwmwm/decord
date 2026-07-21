@@ -1,10 +1,10 @@
-// Module ID: 5869
-// Function ID: 49677
+// Module ID: 5871
+// Function ID: 49720
 // Name: AvatarLockeExample
 // Dependencies: []
 // Exports: AvatarLockeExample
 
-// Module 5869 (AvatarLockeExample)
+// Module 5871 (AvatarLockeExample)
 const jsx = require(dependencyMap[0]).jsx;
 const _module = require(dependencyMap[3]);
 const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/AvatarLockeExample.native.tsx");

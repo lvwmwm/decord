@@ -1,10 +1,10 @@
-// Module ID: 6249
-// Function ID: 50247
+// Module ID: 6251
+// Function ID: 50290
 // Name: HeartHandsSpotIllustration
 // Dependencies: []
 // Exports: HeartHandsSpotIllustration
 
-// Module 6249 (HeartHandsSpotIllustration)
+// Module 6251 (HeartHandsSpotIllustration)
 const jsx = require(dependencyMap[0]).jsx;
 const _module = require(dependencyMap[3]);
 const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/HeartHandsSpotIllustration.native.tsx");

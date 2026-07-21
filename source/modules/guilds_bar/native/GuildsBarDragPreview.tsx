@@ -1,9 +1,9 @@
-// Module ID: 14757
-// Function ID: 111263
+// Module ID: 14764
+// Function ID: 111287
 // Name: PreviewItem
 // Dependencies: []
 
-// Module 14757 (PreviewItem)
+// Module 14764 (PreviewItem)
 function PreviewItem(dragRegion) {
   let draggedNode;
   let dropComplete;
@@ -213,7 +213,7 @@ function AnimatedItemPreview(cleanUp) {
     }
     if (!tmp3) {
       if (num !== sharedValue.get()) {
-        let obj = {};
+        let obj = { "Bool(false)": "<string:27999297>", "Bool(false)": "<string:1166889216>" };
       }
       obj = {};
       let num4 = num;
@@ -257,7 +257,7 @@ function AnimatedItemPreview(cleanUp) {
       obj.opacity = transitionState(sharedValue[7]).withSpring(num, closure_8, "animate-always");
       return obj;
     }
-    obj = { 9223372036854775807: false, -9223372036854775808: true };
+    obj = { "Bool(false)": -536870861, "Bool(false)": -299892737 };
   };
   obj = { isFolder: tmp3, visible: sharedValue, withSpring: arg1(dependencyMap[7]).withSpring, DRAG_SPRING_PHYSICS: closure_8, transitionState, TransitionStates: arg1(dependencyMap[9]).TransitionStates, runOnJS: arg1(dependencyMap[6]).runOnJS, cleanUp };
   fn.__closure = obj;
@@ -297,7 +297,7 @@ const importAllResult = importAll(dependencyMap[0]);
 const GuildsNodeType = arg1(dependencyMap[1]).GuildsNodeType;
 let closure_5 = importDefault(dependencyMap[2]);
 const jsx = arg1(dependencyMap[3]).jsx;
-let closure_7 = arg1(dependencyMap[4]).createStyles({ dragPreview: { <string:223543300>: null, <string:1762021126>: null }, animatedPreviewStyle: { position: "absolute" }, dragPreviewHome: { right: 0 }, animatedPreviewStyleHome: { "Null": false, "Null": true } });
+let closure_7 = arg1(dependencyMap[4]).createStyles({ dragPreview: {}, animatedPreviewStyle: { position: "absolute" }, dragPreviewHome: { right: 0 }, animatedPreviewStyleHome: { <string:24250455>: -536870861, isArray: -299892737 } });
 let closure_8 = {};
 let closure_9 = { code: "function GuildsBarDragPreviewTsx1(){const{scrollPosition,dragRegion,listInsets}=this.__closure;return Math.max(scrollPosition.get()<dragRegion.get().min?dragRegion.get().min-scrollPosition.get():0,listInsets.get().start);}" };
 let closure_10 = { code: "function GuildsBarDragPreviewTsx2(){const{scrollPosition,windowSize,listInsets,dragRegion,draggedHeight}=this.__closure;return Math.min(scrollPosition.get()+(windowSize-listInsets.get().end)>dragRegion.get().max?dragRegion.get().max-draggedHeight-scrollPosition.get():windowSize-listInsets.get().end-draggedHeight,windowSize-listInsets.get().end-draggedHeight);}" };

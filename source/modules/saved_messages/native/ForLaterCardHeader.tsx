@@ -1,10 +1,10 @@
-// Module ID: 9917
-// Function ID: 76718
+// Module ID: 9922
+// Function ID: 76734
 // Name: HeaderIcon
 // Dependencies: []
 // Exports: ForLaterCardHeader
 
-// Module 9917 (HeaderIcon)
+// Module 9922 (HeaderIcon)
 function HeaderIcon(channel) {
   channel = channel.channel;
   const require = channel;
@@ -57,7 +57,7 @@ function ChannelName(channel) {
     tmp12 = callback(channelIconComponentWithGuild, obj1);
   }
   const items1 = [tmp12, ];
-  const obj2 = { style: tmp.channelName, children: formatToPlainStringResult };
+  const obj2 = { <string:2195412908>: null, <string:1614302748>: null, <string:4055242192>: null, <string:3322189872>: null, style: tmp.channelName, children: formatToPlainStringResult };
   items1[1] = callback(require(dependencyMap[14]).Text, obj2);
   obj.children = items1;
   return closure_6(View, obj);
@@ -73,7 +73,7 @@ obj.dmIcon = obj;
 obj.channelNameContainer = {};
 obj.channelName = { flexShrink: 1 };
 obj.channelTypeIcon = { marginRight: 4 };
-obj.actionsContainer = { new_moon_with_face: "construct", GuildPowerupCardFooterCost: "isArray" };
+obj.actionsContainer = {};
 let closure_7 = _module1.createStyles(obj);
 const _module2 = require(dependencyMap[15]);
 const result = _module2.fileFinishedImporting("modules/saved_messages/native/ForLaterCardHeader.tsx");

@@ -1,10 +1,10 @@
-// Module ID: 9600
-// Function ID: 74800
+// Module ID: 9605
+// Function ID: 74817
 // Name: generateListData
 // Dependencies: []
 // Exports: default, doesStickerPackHavePopoutInformation
 
-// Module 9600 (generateListData)
+// Module 9605 (generateListData)
 function generateListData(stickerPack) {
   const items = [];
   let obj = arg1(dependencyMap[5]);
@@ -22,13 +22,13 @@ const tmp3 = arg1(dependencyMap[1]);
 ({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[2]));
 let obj = arg1(dependencyMap[3]);
 obj = {};
-obj = { backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_BASE_LOW, borderRadius: importDefault(dependencyMap[4]).radii.xs, shadowColor: importDefault(dependencyMap[4]).colors.BLACK, shadowOffset: { aze: false, azj: false }, shadowOpacity: 0.25, shadowRadius: 5 };
+obj = { 1701008994: "png", 1537617670: 185, 788541198: null, 1951536411: 1, backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_BASE_LOW, borderRadius: importDefault(dependencyMap[4]).radii.xs, shadowColor: importDefault(dependencyMap[4]).colors.BLACK, shadowOffset: { bhk: false, bic: false }, shadowOpacity: 0.25, shadowRadius: 5 };
 obj.informationContainer = obj;
-obj.headerContainer = { first: null, groupTypes: 24, assetType: 8 };
+obj.headerContainer = { "Bool(false)": null, "Bool(false)": 24, "Bool(false)": 8 };
 obj.informationHeader = { lineHeight: 20 };
 obj.informationContentContainer = { flexDirection: "row" };
 obj.informationContent = { lineHeight: 20 };
-obj.informationContentDescription = {};
+obj.informationContentDescription = { flexDirection: null, paddingHorizontal: null };
 let closure_6 = obj.createStyles(obj);
 const tmp4 = arg1(dependencyMap[2]);
 const result = arg1(dependencyMap[9]).fileFinishedImporting("modules/stickers/native/StickerPackInformationPopout.tsx");
@@ -43,7 +43,7 @@ export default function StickerPackInformationPopout(stickerPack) {
   let obj = { style: items };
   const items = [tmp.informationContainer, style];
   obj = { style: tmp.headerContainer };
-  obj = { style: tmp.informationHeader };
+  obj = { "Null": null, "Null": null, "Null": null, style: tmp.informationHeader };
   const intl = arg1(dependencyMap[6]).intl;
   obj.children = intl.format(arg1(dependencyMap[6]).t.XDm6yN, { stickerPackName: stickerPack.name });
   const items1 = [callback(arg1(dependencyMap[7]).Text, obj), ];

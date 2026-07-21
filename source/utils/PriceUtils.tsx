@@ -1,10 +1,10 @@
-// Module ID: 5612
-// Function ID: 47793
+// Module ID: 5614
+// Function ID: 47835
 // Name: formatSingleCurrencyPrice
 // Dependencies: []
 // Exports: formatPercent, formatSubscriptionPlanRate, shortenAndFormatPrice
 
-// Module 5612 (formatSingleCurrencyPrice)
+// Module 5614 (formatSingleCurrencyPrice)
 function formatSingleCurrencyPrice(result, BGN, localeOverride) {
   let obj = {};
   obj = localeOverride;
@@ -127,7 +127,7 @@ export { formatDualPriceForBG };
 export { formatPrice };
 export { formatRate };
 export const formatPercent = function formatPercent(arg0, arg1) {
-  return Intl.NumberFormat(arg0, { 0: 49412096, 0: 49412096 }).format(arg1);
+  return Intl.NumberFormat(arg0, { "Null": 49419008, "Null": 49419008 }).format(arg1);
 };
 export const formatSubscriptionPlanRate = function formatSubscriptionPlanRate(interval_count) {
   const price = arg1(dependencyMap[9]).getPrice(interval_count.id);

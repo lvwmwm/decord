@@ -1,10 +1,10 @@
-// Module ID: 11429
-// Function ID: 88971
+// Module ID: 11436
+// Function ID: 88995
 // Name: ChatInputNotificationNudgeImpl
 // Dependencies: []
 // Exports: default
 
-// Module 11429 (ChatInputNotificationNudgeImpl)
+// Module 11436 (ChatInputNotificationNudgeImpl)
 function ChatInputNotificationNudgeImpl(onDismiss) {
   let surface;
   ({ promptType: closure_0, location: closure_1, surface } = onDismiss);
@@ -70,6 +70,9 @@ function ChatInputNotificationNudgeImpl(onDismiss) {
   obj2.children = items3;
   items2[1] = closure_18(View, obj2);
   const obj6 = {
+    "Bool(true)": null,
+    "Bool(true)": 8,
+    "Bool(true)": "absolute",
     onPress() {
       let obj = callback(surface[19]);
       const result = obj.setPushPermissionReactivationSeen(callback);
@@ -80,7 +83,7 @@ function ChatInputNotificationNudgeImpl(onDismiss) {
   };
   const intl2 = arg1(dependencyMap[18]).intl;
   obj6.accessibilityLabel = intl2.string(arg1(dependencyMap[18]).t.WAI6xu);
-  obj6.children = callback4(arg1(dependencyMap[20]).XSmallIcon, { flexDirection: 43429566791737600000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, alignItems: 13340564516523250000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 });
+  obj6.children = callback4(arg1(dependencyMap[20]).XSmallIcon, {});
   items2[2] = callback4(arg1(dependencyMap[16]).PressableHighlight, obj6);
   obj.children = items2;
   return closure_18(View, obj);
@@ -101,7 +104,7 @@ const tmp4 = arg1(dependencyMap[8]);
 const tmp5 = arg1(dependencyMap[9]);
 let closure_19 = arg1(dependencyMap[10]).createStyles((arg0) => {
   let obj = {};
-  obj = { 1470947944: "d69e45ebad9f40b8957190ed86104514", 1310491355: "ic_application_command_24px", 1602119008: "png", 1388888442: true, -254279170: "/assets/images/native/emoji", padding: importDefault(dependencyMap[11]).space.PX_12, backgroundColor: importDefault(dependencyMap[11]).colors.MOBILE_FLOATING_ACCESSORY_BACKGROUND, borderTopWidth: importDefault(dependencyMap[11]).modules.mobile.CHAT_INPUT_FLOATING_ACCESSORY_TOP_BORDER_WIDTH, borderColor: importDefault(dependencyMap[11]).colors.MOBILE_FLOATING_ACCESSORY_BORDER, borderRadius: importDefault(dependencyMap[11]).modules.mobile.CHAT_INPUT_FLOATING_BORDER_RADIUS, borderWidth: importDefault(dependencyMap[11]).modules.mobile.CHAT_INPUT_FLOATING_ACCESSORY_BORDER_WIDTH, marginBottom: importDefault(dependencyMap[11]).modules.mobile.CHAT_INPUT_FLOATING_ACCESSORY_MARGIN_BOTTOM };
+  obj = { 1454005346: "d69e45ebad9f40b8957190ed86104514", -16187641: "ic_application_command_24px", -15991030: "png", -15859956: true, 80425029: "/assets/images/native/emoji", padding: importDefault(dependencyMap[11]).space.PX_12, backgroundColor: importDefault(dependencyMap[11]).colors.MOBILE_FLOATING_ACCESSORY_BACKGROUND, borderTopWidth: importDefault(dependencyMap[11]).modules.mobile.CHAT_INPUT_FLOATING_ACCESSORY_TOP_BORDER_WIDTH, borderColor: importDefault(dependencyMap[11]).colors.MOBILE_FLOATING_ACCESSORY_BORDER, borderRadius: importDefault(dependencyMap[11]).modules.mobile.CHAT_INPUT_FLOATING_BORDER_RADIUS, borderWidth: importDefault(dependencyMap[11]).modules.mobile.CHAT_INPUT_FLOATING_ACCESSORY_BORDER_WIDTH, marginBottom: importDefault(dependencyMap[11]).modules.mobile.CHAT_INPUT_FLOATING_ACCESSORY_MARGIN_BOTTOM };
   let num;
   if (arg0) {
     num = 12;

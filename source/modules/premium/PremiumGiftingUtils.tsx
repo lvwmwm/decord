@@ -1,10 +1,10 @@
-// Module ID: 7747
-// Function ID: 61566
+// Module ID: 7751
+// Function ID: 61578
 // Name: _sendGiftMessage
 // Dependencies: []
 // Exports: sendGiftMessage, unhandledGiftIntent
 
-// Module 7747 (_sendGiftMessage)
+// Module 7751 (_sendGiftMessage)
 async function _sendGiftMessage(id, code, arg2) {
   if (null == code) {
     const _Error2 = Error;

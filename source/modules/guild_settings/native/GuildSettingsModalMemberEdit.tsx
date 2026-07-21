@@ -1,10 +1,10 @@
-// Module ID: 10965
-// Function ID: 85317
+// Module ID: 10970
+// Function ID: 85338
 // Name: _callSuper
 // Dependencies: []
 // Exports: default
 
-// Module 10965 (_callSuper)
+// Module 10970 (_callSuper)
 function _callSuper(arg0, arg1, arg2) {
   let items = arg2;
   const obj = callback2(arg1);
@@ -183,11 +183,11 @@ obj = { form: { flex: 1 }, formContent: { paddingTop: 16 } };
 obj = { paddingHorizontal: importDefault(dependencyMap[18]).modules.mobile.TABLE_ROW_PADDING };
 obj.stackPadding = obj;
 obj.userInfo = { height: 63 };
-obj.avatar = { aze: 30706176, azj: 378290688 };
+obj.avatar = {};
 obj.rowLabel = { flexDirection: "row" };
 obj.ctaButton = {};
-obj.actionButtonLeft = { <string:939545958>: "text", <string:3224474513>: "", <string:3009111627>: 255, <string:3152687701>: 0 };
-obj.actionButtonRight = { <string:939545958>: null, <string:3224474513>: 1, <string:3009111627>: null, <string:3152687701>: 47 };
+obj.actionButtonLeft = { <string:945182054>: "<string:30192896>", <string:3218772856>: "<string:1067995392>", <string:3006752417>: "szabad", <string:2934583893>: "badge-force-gradient-" };
+obj.actionButtonRight = { <string:945182054>: null, <string:3218772856>: 1, <string:3006752417>: null, <string:2934583893>: 47 };
 obj.actionButtonContainer = { flexBasis: "auto" };
 let closure_26 = obj.createLegacyClassComponentStyles(obj);
 const tmp6 = (PureComponent) => {

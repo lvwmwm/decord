@@ -1,14 +1,14 @@
-// Module ID: 7610
-// Function ID: 60993
+// Module ID: 7614
+// Function ID: 61005
 // Name: RowManager
 // Dependencies: []
 
-// Module 7610 (RowManager)
+// Module 7614 (RowManager)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 let closure_5 = importDefault(dependencyMap[2]);
 ({ RowType: closure_6, SeparatorType: closure_7, LoadingType: closure_8 } = arg1(dependencyMap[3]));
-const obj = { GuildBadgeBee: null, extraKeyboardSpace: null, limits: null, expandTopic: null, bounty: null };
+const obj = {};
 const merged = Object.assign(arg1(dependencyMap[4]).DEFAULT_OPTIONS);
 const tmp2 = arg1(dependencyMap[3]);
 const tmp4 = () => {

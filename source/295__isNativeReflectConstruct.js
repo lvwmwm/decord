@@ -198,7 +198,7 @@ const tmp2 = (Component) => {
   return callback(StatusBar, items, items1);
 }(importAll(dependencyMap[5]).Component);
 tmp2._propsStack = [];
-const obj = { accessibilityRole: null, withSpring: null, "Null": null, "Null": null, "Null": null };
+const obj = { height: null, marginRight: null, width: null, marginLeft: null, marginRight: null };
 const DEFAULT_BACKGROUND_COLOR = importDefault(dependencyMap[6]).getConstants().DEFAULT_BACKGROUND_COLOR;
 let str = "black";
 if (null != DEFAULT_BACKGROUND_COLOR) {

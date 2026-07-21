@@ -1,14 +1,14 @@
-// Module ID: 13992
-// Function ID: 106464
+// Module ID: 13999
+// Function ID: 106487
 // Name: _isNativeReflectConstruct
 // Dependencies: [4294967295, 0, 0, 0, 0, 0]
 
-// Module 13992 (_isNativeReflectConstruct)
-import result from "result";
-import closure_2 from "result";
-import closure_3 from "result";
-import closure_4 from "result";
-import { createChannelRecord } from "result";
+// Module 13999 (_isNativeReflectConstruct)
+import __exportStarResult1 from "__exportStarResult1";
+import closure_2 from "__exportStarResult1";
+import closure_3 from "__exportStarResult1";
+import closure_4 from "__exportStarResult1";
+import { createChannelRecord } from "__exportStarResult1";
 
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {

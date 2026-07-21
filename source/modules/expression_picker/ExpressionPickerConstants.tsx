@@ -1,7 +1,7 @@
 // Module ID: 1314
 // Function ID: 15338
 // Name: ExpressionPickerViewType
-// Dependencies: []
+// Dependencies: [284214097]
 
 // Module 1314 (ExpressionPickerViewType)
 const obj = { EMOJI: "emoji", GIF: "gif", STICKER: "sticker", SOUNDBOARD: "soundboard", KAOMOJI: "kaomoji" };

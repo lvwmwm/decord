@@ -1,7 +1,7 @@
 // Module ID: 3409
 // Function ID: 26613
 // Name: differenceInQuarters
-// Dependencies: []
+// Dependencies: [2063597581, 1946157069, 3207]
 // Exports: default
 
 // Module 3409 (differenceInQuarters)

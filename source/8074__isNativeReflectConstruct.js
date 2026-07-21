@@ -1,5 +1,5 @@
 // Module ID: 8074
-// Function ID: 64054
+// Function ID: 64038
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
@@ -18,16 +18,14 @@ let closure_3 = importDefault(dependencyMap[1]);
 let closure_4 = importDefault(dependencyMap[2]);
 let closure_5 = importDefault(dependencyMap[3]);
 let closure_6 = importDefault(dependencyMap[4]);
-importDefault(dependencyMap[5]);
-const jsx = arg1(dependencyMap[6]).jsx;
-const tmp3 = (arg0) => {
-  class Filter {
+const tmp2 = (arg0) => {
+  class FeSpecularLighting {
     constructor() {
       self = this;
-      tmp = closure_2(this, Filter);
-      obj = closure_5(Filter);
+      tmp = closure_2(this, FeSpecularLighting);
+      obj = closure_5(FeSpecularLighting);
       tmp2 = closure_4;
-      if (closure_8()) {
+      if (closure_7()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
         tmp7 = closure_5;
@@ -41,28 +39,20 @@ const tmp3 = (arg0) => {
       return tmp2(self, constructResult);
     }
   }
-  const importDefault = Filter;
-  callback2(Filter, arg0);
+  const arg1 = FeSpecularLighting;
+  callback2(FeSpecularLighting, arg0);
   const items = [
     {
       key: "render",
       value: function render() {
-        const Filter = this;
-        const props = this.props;
-        let obj = { name: props.id, x: props.x, y: props.y, width: props.width, height: props.height, filterUnits: props.filterUnits, primitiveUnits: props.primitiveUnits };
-        obj = {
-          ref(arg0) {
-            return self.refMethod(arg0);
-          }
-        };
-        obj = { children: this.props.children };
-        return callback3(Filter(closure_1[7]), Object.assign(obj, obj, obj));
+        const result = FeSpecularLighting(closure_1[5]).warnUnimplementedFilter();
+        return null;
       }
     }
   ];
-  return callback(Filter, items);
-}(importDefault(dependencyMap[8]));
-tmp3.displayName = "Filter";
-tmp3.defaultProps = {};
+  return callback(FeSpecularLighting, items);
+}(importDefault(dependencyMap[6]));
+tmp2.displayName = "FeSpecularLighting";
+tmp2.defaultProps = Object.assign({}, tmp2.defaultPrimitiveProps);
 
-export default tmp3;
+export default tmp2;

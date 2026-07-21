@@ -1,10 +1,10 @@
-// Module ID: 11438
-// Function ID: 89084
+// Module ID: 11445
+// Function ID: 89108
 // Name: validateMultiAccountTokens
 // Dependencies: []
 // Exports: invalidatePushSyncTokens, moveAccount, removeAccount, reportAccountSwitchTimeout, switchAccount, updatePushSyncToken, validateMultiAccountTokens
 
-// Module 11438 (validateMultiAccountTokens)
+// Module 11445 (validateMultiAccountTokens)
 let closure_4 = importDefault(dependencyMap[0]);
 let closure_5 = importDefault(dependencyMap[1]);
 let closure_6 = importDefault(dependencyMap[2]);

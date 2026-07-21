@@ -1,10 +1,10 @@
-// Module ID: 10205
-// Function ID: 78874
+// Module ID: 10211
+// Function ID: 78892
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 // Exports: allowInAppNotifications, makeTextChatNotification, shouldIncludeSelectedChannel, shouldNotify, shouldNotifyForForumThreadCreation, shouldNotifyForReaction, shouldNotifyForSelectedChannel, useAllowInAppNotifications
 
-// Module 10205 (_createForOfIteratorHelperLoose)
+// Module 10211 (_createForOfIteratorHelperLoose)
 function _createForOfIteratorHelperLoose(@@iterator) {
   let arg1 = Symbol_iterator;
   @@iterator = "undefined" !== typeof Symbol;

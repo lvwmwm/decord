@@ -1,10 +1,10 @@
-// Module ID: 14383
-// Function ID: 108541
+// Module ID: 14390
+// Function ID: 108564
 // Name: useSecureFramesVerifiedUserIds
-// Dependencies: [7656, 14390, 13597]
+// Dependencies: [7655, 14397, 13604]
 // Exports: useSecureFramesVerifiedUserIds
 
-// Module 14383 (useSecureFramesVerifiedUserIds)
+// Module 14390 (useSecureFramesVerifiedUserIds)
 import MobileSetting from "MobileSetting";
 import useParentalControlledExplicitContentSettings from "useParentalControlledExplicitContentSettings";
 

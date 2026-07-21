@@ -1,16 +1,15 @@
-// Module ID: 14834
-// Function ID: 111817
+// Module ID: 14841
+// Function ID: 111841
 // Name: ThreadLongPressActionSheetConnected
-// Dependencies: [0, 0, 0, 0, 0, 0, 31, 33, 8830, 14839, 2, 31, 27, 33, 4126, 689, 1273, 12592, 4124, 2, 31, 27, 1917, 33, 4126, 689, 10242, 8818, 566, 14841, 9876, 1212, 11545, 4124, 14845, 2, 31, 1347, 4139, 4145, 1194, 4169, 4141, 4142, 33, 566]
+// Dependencies: [0, 0, 0, 0, 0, 0, 31, 33, 8834, 14846, 2, 31, 27, 33, 4126, 689, 1273, 12599, 4124, 2, 31, 27, 1917, 33, 4126, 689, 10248, 8822, 566, 14848, 9881, 1212, 11552, 4124, 14852, 2, 31, 1347, 4139, 4145, 1194, 4173, 4141, 4142, 33, 566]
 // Exports: default
 
-// Module 14834 (ThreadLongPressActionSheetConnected)
-import closure_3 from "result";
-import closure_4 from "result";
-import closure_5 from "result";
-import closure_6 from "result";
-import closure_7 from "result";
-import result from "result";
+// Module 14841 (ThreadLongPressActionSheetConnected)
+import __exportStarResult1 from "__exportStarResult1";
+import closure_4 from "__exportStarResult1";
+import closure_5 from "__exportStarResult1";
+import closure_6 from "__exportStarResult1";
+import closure_7 from "__exportStarResult1";
 import module_31 from "module_31";
 import initialize from "initialize";
 
@@ -389,9 +388,9 @@ function ThreadLongPressActionSheetConnected(channel) {
   obj2.children = items5;
   return closure_13(arg1(guildId[39]).ActionSheet, obj2);
 }
-({ AnalyticsObjectTypes: closure_8, AnalyticsObjects: closure_9, AnalyticsSections: closure_10, ChannelSettingsSections: closure_11 } = result);
+({ AnalyticsObjectTypes: closure_8, AnalyticsObjects: closure_9, AnalyticsSections: closure_10, ChannelSettingsSections: closure_11 } = require("__exportStarResult1"));
 ({ jsx: closure_12, jsxs: closure_13 } = module_31);
-result = initialize.fileFinishedImporting("modules/threads/native/components/ThreadLongPressActionSheet.tsx");
+const result = initialize.fileFinishedImporting("modules/threads/native/components/ThreadLongPressActionSheet.tsx");
 
 export default function ThreadLongPressActionSheet(arg0) {
   let onClose;

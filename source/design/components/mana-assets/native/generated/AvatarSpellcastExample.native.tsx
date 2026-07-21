@@ -1,10 +1,10 @@
-// Module ID: 5881
-// Function ID: 49695
+// Module ID: 5883
+// Function ID: 49738
 // Name: AvatarSpellcastExample
 // Dependencies: []
 // Exports: AvatarSpellcastExample
 
-// Module 5881 (AvatarSpellcastExample)
+// Module 5883 (AvatarSpellcastExample)
 const jsx = require(dependencyMap[0]).jsx;
 const _module = require(dependencyMap[3]);
 const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/AvatarSpellcastExample.native.tsx");

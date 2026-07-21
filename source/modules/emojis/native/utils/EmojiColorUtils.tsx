@@ -1,10 +1,13 @@
-// Module ID: 14807
-// Function ID: 111637
+// Module ID: 14814
+// Function ID: 111661
 // Name: _getEmojiCacheKey
-// Dependencies: []
+// Dependencies: [0, 4294967295, 0, 4294967295]
 // Exports: getEmojiDominantColors
 
-// Module 14807 (_getEmojiCacheKey)
+// Module 14814 (_getEmojiCacheKey)
+import __exportStarResult1 from "__exportStarResult1";
+import importDefaultResult from "__exportStarResult1";
+
 function _getEmojiCacheKey(name) {
   return "" + name.name + "-" + name.id;
 }
@@ -20,9 +23,7 @@ function _getEmojiDominantColors() {
   const _getEmojiDominantColors = obj;
   return obj(...arguments);
 }
-let closure_0 = importDefault(dependencyMap[0]);
 const NativeModules = arg1(dependencyMap[1]).NativeModules;
-let importDefaultResult = importDefault(dependencyMap[2]);
 importDefaultResult = new importDefaultResult(100);
 const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/emojis/native/utils/EmojiColorUtils.tsx");
 

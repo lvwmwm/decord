@@ -1,14 +1,14 @@
-// Module ID: 10978
-// Function ID: 85468
-// Dependencies: [31, 33, 9098, 9100, 1212, 10980, 2, 31, 27, 1910, 33, 4126, 566, 10169, 2, 57, 31, 27, 653]
+// Module ID: 10983
+// Function ID: 85489
+// Dependencies: [31, 33, 9102, 9104, 1212, 10985, 2, 31, 27, 1910, 33, 4126, 566, 10175, 2, 57, 31, 27, 653]
 
-// Module 10978
+// Module 10983
 import module_31 from "module_31";
 import importAllResult from "module_33";
-import module_9100 from "module_9100";
+import module_9104 from "module_9104";
 import getSystemLocale from "getSystemLocale";
 import items from "items";
-import keys from "keys";
+import result2 from "result2";
 import useNavigatorBackHandler from "useNavigatorBackHandler";
 import ME from "ME";
 
@@ -17,8 +17,8 @@ import ME from "ME";
 let obj = {};
 obj = { backgroundColor: require("module_31").colors.BACKGROUND_BASE_LOW };
 obj.container = obj;
-keys = { marginTop: require("module_31").space.PX_16, backgroundColor: require("module_31").colors.BACKGROUND_SURFACE_HIGH, borderRadius: require("module_31").radii.lg, paddingTop: require("module_31").space.PX_8, paddingBottom: require("module_31").space.PX_16, alignItems: "center" };
-obj.iconLabelBlock = keys;
+result2 = { marginTop: require("module_31").space.PX_16, backgroundColor: require("module_31").colors.BACKGROUND_SURFACE_HIGH, borderRadius: require("module_31").radii.lg, paddingTop: require("module_31").space.PX_8, paddingBottom: require("module_31").space.PX_16, alignItems: "center" };
+obj.iconLabelBlock = result2;
 obj.iconStyles = { height: 1.25 * require("module_31").space.PX_96 };
 const obj2 = { height: 1.25 * require("module_31").space.PX_96 };
 obj.redText = { marginTop: require("module_31").space.PX_12, marginBottom: require("module_31").space.PX_4, color: require("module_31").colors.TEXT_FEEDBACK_CRITICAL };
@@ -26,7 +26,7 @@ const obj3 = { marginTop: require("module_31").space.PX_12, marginBottom: requir
 obj.blurb = { marginVertical: require("module_31").space.PX_16 };
 const obj4 = { marginVertical: require("module_31").space.PX_16 };
 obj.errorText = { marginBottom: require("module_31").space.PX_16 };
-let closure_13 = keys.createStyles(obj);
+let closure_13 = result2.createStyles(obj);
 const obj5 = { marginBottom: require("module_31").space.PX_16 };
 const result = ME.fileFinishedImporting("modules/guild_moderation/native/KickConfirm.tsx");
 
@@ -41,14 +41,14 @@ export default importAllResult.memo(function KickConfirm(arg0) {
   const items = [{ ref: ref1, offset: { type: "toBottom" } }];
   importDefault(dependencyMap[9])({ insets, inputs: items, scrollViewRef: ref });
   let obj = arg1(dependencyMap[10]);
-  const items1 = [module_9100];
+  const items1 = [module_9104];
   const stateFromStores = obj.useStateFromStores(items1, () => guild.getGuild(closure_0));
   const callback = stateFromStores;
   let obj1 = arg1(dependencyMap[10]);
   const items2 = [getSystemLocale];
   const stateFromStores1 = obj1.useStateFromStores(items2, () => user.getUser(closure_1));
   let closure_5 = importAllResult.useRef("");
-  const tmp7 = callback(stateFromStores1.useState(() => ({})), 2);
+  const tmp7 = callback(stateFromStores1.useState(() => ({ "Bool(true)": null, "Bool(true)": null })), 2);
   const first = tmp7[0];
   let closure_6 = tmp7[1];
   const items3 = [stateFromStores, onKick, stateFromStores1];
@@ -70,11 +70,11 @@ export default importAllResult.memo(function KickConfirm(arg0) {
       obj5.user = obj9.getName(stateFromStores1);
       obj4.children = intl.formatToPlainString(arg1(dependencyMap[14]).t.1Ie87p, obj5);
       items4[1] = callback2(arg1(dependencyMap[13]).Text, obj4);
-      const obj6 = { INTEGRATION_CREATE: "isArray", ConstraintReasonCode: "accessibilityRole", children: stateFromStores.name };
+      const obj6 = { children: stateFromStores.name };
       items4[2] = callback2(arg1(dependencyMap[13]).Text, obj6);
       obj2.children = items4;
       const items5 = [callback3(closure_6, obj2), , , , ];
-      const obj7 = { Promise: "Array", marginTop: "GUILD_MEMBER_VERIFICATION_UPDATE", flags: "Array", style: tmp.blurb };
+      const obj7 = { "Null": "isArray", "Null": "constructor", "Null": "bind", style: tmp.blurb };
       const intl2 = arg1(dependencyMap[14]).intl;
       const obj8 = {};
       let obj13 = importDefault(dependencyMap[15]);

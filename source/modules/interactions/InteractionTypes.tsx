@@ -1,9 +1,9 @@
-// Module ID: 4349
-// Function ID: 38566
+// Module ID: 4353
+// Function ID: 38614
 // Name: InteractionState
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 4349 (InteractionState)
+// Module 4353 (InteractionState)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("modules/interactions/InteractionTypes.tsx");
 

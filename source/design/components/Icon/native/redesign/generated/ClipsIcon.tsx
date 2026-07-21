@@ -1,10 +1,10 @@
-// Module ID: 13745
-// Function ID: 103970
+// Module ID: 13752
+// Function ID: 103993
 // Name: ClipsIcon
 // Dependencies: []
 // Exports: ClipsIcon
 
-// Module 13745 (ClipsIcon)
+// Module 13752 (ClipsIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/ClipsIcon.tsx");

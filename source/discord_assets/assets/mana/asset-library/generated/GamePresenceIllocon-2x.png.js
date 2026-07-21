@@ -1,9 +1,9 @@
-// Module ID: 6148
-// Function ID: 50096
+// Module ID: 6150
+// Function ID: 50139
 // Name: metadata
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 6148 (metadata)
+// Module 6150 (metadata)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/GamePresenceIllocon-2x.png.js");
 

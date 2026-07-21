@@ -1,11 +1,11 @@
-// Module ID: 13806
-// Function ID: 104447
+// Module ID: 13813
+// Function ID: 104470
 // Name: BountiesModalAdvertiserCta
 // Dependencies: []
 // Exports: default
 
-// Module 13806 (BountiesModalAdvertiserCta)
-let closure_3 = [null];
+// Module 13813 (BountiesModalAdvertiserCta)
+let closure_3 = ["GUILD_DELETE"];
 let closure_4 = importDefault(dependencyMap[0]);
 let closure_5 = importAll(dependencyMap[1]);
 const tmp2 = arg1(dependencyMap[2]);
@@ -26,9 +26,9 @@ let closure_11 = arg1(dependencyMap[5]).createStyles(() => {
   obj["borderRadius"] = importDefault(dependencyMap[6]).radii.lg;
   obj["overflow"] = "hidden";
   obj.ctaPressable = obj;
-  const obj1 = { -9223372036854775808: true, filter: true, paddingLeft: importDefault(dependencyMap[6]).space.PX_12, paddingRight: importDefault(dependencyMap[6]).space.PX_16, paddingVertical: importDefault(dependencyMap[6]).space.PX_12, gap: importDefault(dependencyMap[6]).space.PX_12 };
-  obj.cta = obj1;
-  obj.ctaLogoContainer = { backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_SURFACE_HIGH, borderRadius: importDefault(dependencyMap[6]).radii.md };
+  obj.cta = { paddingLeft: importDefault(dependencyMap[6]).space.PX_12, paddingRight: importDefault(dependencyMap[6]).space.PX_16, paddingVertical: importDefault(dependencyMap[6]).space.PX_12, gap: importDefault(dependencyMap[6]).space.PX_12 };
+  const obj2 = { borderRadius: importDefault(dependencyMap[6]).radii.md, flexGrow: "long", flexShrink: "numeric", overflow: null, flexDirection: "secondary", backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_SURFACE_HIGH };
+  obj.ctaLogoContainer = obj2;
   const merged1 = Object.assign(absoluteFillObject.absoluteFillObject);
   obj.ctaLogo = {};
   obj.ctaInfo = {};
@@ -53,7 +53,7 @@ export default function BountiesModalAdvertiserCta(bounty) {
   const bountyCtaInfo = obj.getBountyCtaInfo(bounty);
   if (null != bountyCtaInfo.iconImageUri) {
     let obj1 = arg1(dependencyMap[8]);
-    obj = { assetUrl: bountyCtaInfo.iconImageUri };
+    obj = { flex: null, flexDirection: null, alignItems: null, assetUrl: bountyCtaInfo.iconImageUri };
     const scaledImageUrl = obj1.getScaledImageUrl(obj);
   }
   let obj3 = arg1(dependencyMap[9]);
@@ -72,7 +72,7 @@ export default function BountiesModalAdvertiserCta(bounty) {
     const obj3 = bounty(sourceQuestContent[11]);
     const obj4 = bounty(sourceQuestContent[4]);
     const tmp2 = bounty(sourceQuestContent[10]);
-    obj.translateY = obj3.withTiming(bounty(sourceQuestContent[4]).interpolate(num2, [null, null], []), visible ? tmp2.timingStandard : tmp2.timingFast);
+    obj.translateY = obj3.withTiming(bounty(sourceQuestContent[4]).interpolate(num2, ["Text", "lc"], []), visible ? tmp2.timingStandard : tmp2.timingFast);
     const items = [obj];
     obj.transform = items;
     return obj;
@@ -134,7 +134,7 @@ export default function BountiesModalAdvertiserCta(bounty) {
     obj8.children = items5;
     items4[1] = callback3(closure_7, obj8);
     const obj11 = {};
-    const obj12 = { alignSelf: true, overflow: "/assets/design/components/Icon/native/redesign/generated/images", aspectRatio: 24, text: bountyCtaInfo.buttonLabel, onPress: tmp14 };
+    const obj12 = { text: bountyCtaInfo.buttonLabel, onPress: tmp14 };
     obj11.children = callback2(arg1(dependencyMap[21]).Button, obj12);
     items4[2] = callback2(closure_7, obj11);
     obj4.children = items4;

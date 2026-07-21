@@ -1,16 +1,16 @@
-// Module ID: 12220
-// Function ID: 93804
+// Module ID: 12227
+// Function ID: 93827
 // Name: InAppReportsBottomButton
 // Dependencies: []
 // Exports: default
 
-// Module 12220 (InAppReportsBottomButton)
+// Module 12227 (InAppReportsBottomButton)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 ({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[3]));
 let obj = arg1(dependencyMap[4]);
 obj = { container: {}, paddingHorizontal: { paddingHorizontal: 16 } };
-obj = { 9223372036854775807: null, 0: null, 9223372036854775807: null, 9223372036854775807: -16, backgroundColor: importDefault(dependencyMap[5]).colors.BORDER_SUBTLE };
+obj = { 9223372036854775807: null, 0: null, 0: null, -9223372036854775808: -16, backgroundColor: importDefault(dependencyMap[5]).colors.BORDER_SUBTLE };
 obj.divider = obj;
 obj.descriptionText = {};
 const tmp3 = arg1(dependencyMap[3]);

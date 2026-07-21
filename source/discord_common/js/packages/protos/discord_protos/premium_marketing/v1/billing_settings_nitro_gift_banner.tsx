@@ -1,14 +1,13 @@
-// Module ID: 7138
-// Function ID: 57559
+// Module ID: 7142
+// Function ID: 57570
 // Name: _isNativeReflectConstruct
 // Dependencies: [0, 0, 0, 0, 4294967295, 4294967295, 0, 0, 0, 0, 0]
 
-// Module 7138 (_isNativeReflectConstruct)
-import closure_2 from "result";
-import closure_3 from "result";
-import closure_4 from "result";
-import closure_5 from "result";
-import result from "result";
+// Module 7142 (_isNativeReflectConstruct)
+import __exportStarResult1 from "__exportStarResult1";
+import closure_3 from "__exportStarResult1";
+import closure_4 from "__exportStarResult1";
+import closure_5 from "__exportStarResult1";
 
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
@@ -27,28 +26,28 @@ let tmp2 = (MessageType) => {
       self = this;
       tmp = closure_3(this, BillingSettingsNitroGiftBanner$Type);
       items = [, , , , , , , , , , , ];
-      items[0] = { body: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002012870360051815, guildId: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003200674821102785, ao: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000030586585845, "": 2798595.4946969007 };
-      items[1] = { body: null, guildId: null, ao: null, "": null };
+      items[0] = {};
+      items[1] = { 9223372036854775807: 2417, 0: 487680, 9223372036854775807: 641859584, no: true };
       items[2] = {};
       items[3] = {};
-      obj = { emojiId: null, emojiName: null, userId: null };
+      obj = { "Null": null, "Null": null, "Null": null };
       obj.T = function T() {
         return callback(closure_1[6]).Gradient;
       };
       items[4] = obj;
-      items[5] = { body: "80%", guildId: "<string:441516032>", ao: "<string:193741725>", "": "<string:193724417>" };
-      items[6] = { body: "d8c3e4c6e3c94e3724597aef8c906754", guildId: "img_tier_0_subheader_mobile", ao: "png", "": true };
-      obj = { emojiId: "WHITE", emojiName: 0.85, userId: 100 };
+      items[5] = {};
+      items[6] = { 9223372036854775807: "d8c3e4c6e3c94e3724597aef8c906754", 0: "img_tier_0_subheader_mobile", 9223372036854775807: "png", no: true };
+      obj = { "Null": "WHITE", "Null": 0.85, "Null": 100 };
       obj.T = function T() {
         return callback(closure_1[7]).ThemeAwareAsset;
       };
       items[7] = obj;
-      obj1 = { emojiId: true, emojiName: true, userId: true };
+      obj1 = { "Null": true, "Null": true, "Null": true };
       obj1.T = function T() {
         return callback(closure_1[7]).ThemeAwareAsset;
       };
       items[8] = obj1;
-      obj2 = { emojiId: null, emojiName: null, userId: null };
+      obj2 = { "Null": 11, "Null": null, "Null": "Path 11" };
       obj2.T = function T() {
         return callback(closure_1[8]).LocalizedString;
       };
@@ -58,7 +57,7 @@ let tmp2 = (MessageType) => {
               return callback(closure_1[8]).LocalizedString;
             }
       };
-      obj3 = { emojiId: "\u{1F926}\u{1F3FB}", emojiName: true, userId: null };
+      obj3 = { "Null": "\u{1F926}\u{1F3FB}", "Null": true, "Null": null };
       obj3.T = function T() {
         return callback(closure_1[8]).LocalizedString;
       };
@@ -194,8 +193,8 @@ let tmp2 = (MessageType) => {
   };
   items[2] = obj;
   return callback(BillingSettingsNitroGiftBanner$Type, items);
-}(require("result").MessageType);
+}(require("__exportStarResult1").MessageType);
 tmp2 = new tmp2();
-result = result.fileFinishedImporting("../discord_common/js/packages/protos/discord_protos/premium_marketing/v1/billing_settings_nitro_gift_banner.tsx");
+const result = require("__exportStarResult1").fileFinishedImporting("../discord_common/js/packages/protos/discord_protos/premium_marketing/v1/billing_settings_nitro_gift_banner.tsx");
 
 export const BillingSettingsNitroGiftBanner = tmp2;

@@ -1,10 +1,10 @@
-// Module ID: 8757
-// Function ID: 69240
+// Module ID: 8761
+// Function ID: 69252
 // Name: NativePaymentContextProvider
 // Dependencies: []
 // Exports: NativePaymentContextProvider
 
-// Module 8757 (NativePaymentContextProvider)
+// Module 8761 (NativePaymentContextProvider)
 let closure_3 = importAll(dependencyMap[1]);
 let closure_4 = importDefault(dependencyMap[2]);
 const PaymentGateways = arg1(dependencyMap[3]).PaymentGateways;

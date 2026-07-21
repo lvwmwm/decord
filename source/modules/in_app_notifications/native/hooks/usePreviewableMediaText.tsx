@@ -1,87 +1,172 @@
-// Module ID: 10257
-// Function ID: 79253
+// Module ID: 10263
+// Function ID: 79272
 // Name: usePreviewableMediaText
 // Dependencies: []
 // Exports: usePreviewableMediaText
 
-// Module 10257 (usePreviewableMediaText)
+// Module 10263 (usePreviewableMediaText)
 let closure_2 = importAll(dependencyMap[0]);
 const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/in_app_notifications/native/hooks/usePreviewableMediaText.tsx");
 
 export const usePreviewableMediaText = function usePreviewableMediaText(previewableMedia) {
   previewableMedia = previewableMedia.previewableMedia;
   const arg1 = previewableMedia;
-  const items = [previewableMedia];
+  const author = previewableMedia.author;
+  const dependencyMap = author;
+  const items = [author, previewableMedia];
   return React.useMemo(() => {
     if (0 === previewableMedia.length) {
-      return { <string:425838640>: false, <string:1526880594>: false };
+      return { RaidLockdownFeedbackType: "o", maxWidth: "o" };
     } else if (1 === previewableMedia.length) {
       const first = previewableMedia[0];
       const type = first.type;
-      if (previewableMedia(closure_1[1]).PreviewableMediaTypes.IMAGE === type) {
-        let obj = {};
-        const intl8 = previewableMedia(closure_1[2]).intl;
-        obj.text = intl8.string(previewableMedia(closure_1[2]).t.tCcq5p);
-        obj.secondaryText = null;
-        return obj;
-      } else if (previewableMedia(closure_1[1]).PreviewableMediaTypes.VIDEO === type) {
-        obj = {};
-        const intl7 = previewableMedia(closure_1[2]).intl;
-        obj.text = intl7.string(previewableMedia(closure_1[2]).t.KxO2Yl);
-        obj.secondaryText = null;
-        return obj;
-      } else if (previewableMedia(closure_1[1]).PreviewableMediaTypes.AUDIO === type) {
-        const obj1 = {};
-        const intl6 = previewableMedia(closure_1[2]).intl;
-        obj1.text = intl6.string(previewableMedia(closure_1[2]).t.FWqQt5);
-        obj1.secondaryText = first.media.filename;
+      if (previewableMedia(author[1]).PreviewableMediaTypes.IMAGE === type) {
+        if (null != author) {
+          let obj = {};
+          const intl20 = previewableMedia(author[2]).intl;
+          obj = { username: author.nick };
+          obj.text = intl20.formatToPlainString(previewableMedia(author[2]).t.pTiyNB, obj);
+          obj.secondaryText = null;
+          let obj1 = obj;
+        } else {
+          obj1 = {};
+          const intl19 = previewableMedia(author[2]).intl;
+          obj1.text = intl19.string(previewableMedia(author[2]).t.tCcq5p);
+          obj1.secondaryText = null;
+        }
         return obj1;
-      } else if (previewableMedia(closure_1[1]).PreviewableMediaTypes.FILE === type) {
-        const obj2 = {};
-        const intl5 = previewableMedia(closure_1[2]).intl;
-        obj2.text = intl5.string(previewableMedia(closure_1[2]).t.mX8M6i);
-        obj2.secondaryText = first.media.filename;
-        return obj2;
-      } else if (previewableMedia(closure_1[1]).PreviewableMediaTypes.STICKER === type) {
-        const obj3 = {};
-        const intl4 = previewableMedia(closure_1[2]).intl;
-        obj3.text = intl4.string(previewableMedia(closure_1[2]).t.dyquw8);
-        obj3.secondaryText = null;
-        return obj3;
-      } else if (previewableMedia(closure_1[1]).PreviewableMediaTypes.VOICE_MESSAGE === type) {
-        const obj4 = {};
-        const intl3 = previewableMedia(closure_1[2]).intl;
-        obj4.text = intl3.string(previewableMedia(closure_1[2]).t.slFYgi);
-        obj4.secondaryText = null;
+      } else if (previewableMedia(author[1]).PreviewableMediaTypes.VIDEO === type) {
+        if (null != author) {
+          const obj2 = {};
+          const intl18 = previewableMedia(author[2]).intl;
+          const obj3 = { username: author.nick };
+          obj2.text = intl18.formatToPlainString(previewableMedia(author[2]).t.zqhHWH, obj3);
+          obj2.secondaryText = null;
+          let obj4 = obj2;
+        } else {
+          obj4 = {};
+          const intl17 = previewableMedia(author[2]).intl;
+          obj4.text = intl17.string(previewableMedia(author[2]).t.KxO2Yl);
+          obj4.secondaryText = null;
+        }
         return obj4;
-      } else if (previewableMedia(closure_1[1]).PreviewableMediaTypes.GIF === type) {
-        const obj5 = {};
-        const intl2 = previewableMedia(closure_1[2]).intl;
-        obj5.text = intl2.string(previewableMedia(closure_1[2]).t.p0oZmy);
-        obj5.secondaryText = null;
-        return obj5;
+      } else if (previewableMedia(author[1]).PreviewableMediaTypes.AUDIO === type) {
+        if (null != author) {
+          const obj5 = {};
+          const intl16 = previewableMedia(author[2]).intl;
+          const obj6 = { username: author.nick };
+          obj5.text = intl16.formatToPlainString(previewableMedia(author[2]).t.HADQ6n, obj6);
+          obj5.secondaryText = first.media.filename;
+          let obj7 = obj5;
+        } else {
+          obj7 = {};
+          const intl15 = previewableMedia(author[2]).intl;
+          obj7.text = intl15.string(previewableMedia(author[2]).t.FWqQt5);
+          obj7.secondaryText = first.media.filename;
+        }
+        return obj7;
+      } else if (previewableMedia(author[1]).PreviewableMediaTypes.FILE === type) {
+        if (null != author) {
+          const obj8 = {};
+          const intl14 = previewableMedia(author[2]).intl;
+          const obj9 = { username: author.nick };
+          obj8.text = intl14.formatToPlainString(previewableMedia(author[2]).t.ifW/ef, obj9);
+          obj8.secondaryText = first.media.filename;
+          let obj10 = obj8;
+        } else {
+          obj10 = {};
+          const intl13 = previewableMedia(author[2]).intl;
+          obj10.text = intl13.string(previewableMedia(author[2]).t.mX8M6i);
+          obj10.secondaryText = first.media.filename;
+        }
+        return obj10;
+      } else if (previewableMedia(author[1]).PreviewableMediaTypes.STICKER === type) {
+        if (null != author) {
+          const obj11 = {};
+          const intl12 = previewableMedia(author[2]).intl;
+          const obj12 = { username: author.nick };
+          obj11.text = intl12.formatToPlainString(previewableMedia(author[2]).t.3iI/fs, obj12);
+          obj11.secondaryText = null;
+          let obj13 = obj11;
+        } else {
+          obj13 = {};
+          const intl11 = previewableMedia(author[2]).intl;
+          obj13.text = intl11.string(previewableMedia(author[2]).t.dyquw8);
+          obj13.secondaryText = null;
+        }
+        return obj13;
+      } else if (previewableMedia(author[1]).PreviewableMediaTypes.VOICE_MESSAGE === type) {
+        if (null != author) {
+          const obj14 = {};
+          const intl10 = previewableMedia(author[2]).intl;
+          const obj15 = { username: author.nick };
+          obj14.text = intl10.formatToPlainString(previewableMedia(author[2]).t.Y7wlOj, obj15);
+          obj14.secondaryText = null;
+          let obj16 = obj14;
+        } else {
+          obj16 = {};
+          const intl9 = previewableMedia(author[2]).intl;
+          obj16.text = intl9.string(previewableMedia(author[2]).t.slFYgi);
+          obj16.secondaryText = null;
+        }
+        return obj16;
+      } else if (previewableMedia(author[1]).PreviewableMediaTypes.GIF === type) {
+        if (null != author) {
+          const obj17 = {};
+          const intl8 = previewableMedia(author[2]).intl;
+          const obj18 = { username: author.nick };
+          obj17.text = intl8.formatToPlainString(previewableMedia(author[2]).t.mikhon, obj18);
+          obj17.secondaryText = null;
+          let obj19 = obj17;
+        } else {
+          obj19 = {};
+          const intl7 = previewableMedia(author[2]).intl;
+          obj19.text = intl7.string(previewableMedia(author[2]).t.p0oZmy);
+          obj19.secondaryText = null;
+        }
+        return obj19;
       } else {
-        const obj6 = {};
-        const intl = previewableMedia(closure_1[2]).intl;
-        obj6.text = intl.string(previewableMedia(closure_1[2]).t.sDqZHL);
-        obj6.secondaryText = null;
-        return obj6;
+        if (null != author) {
+          const obj20 = {};
+          const intl6 = previewableMedia(author[2]).intl;
+          const obj21 = { username: author.nick };
+          obj20.text = intl6.formatToPlainString(previewableMedia(author[2]).t.7FJeVi, obj21);
+          obj20.secondaryText = null;
+          let obj22 = obj20;
+        } else {
+          obj22 = {};
+          const intl5 = previewableMedia(author[2]).intl;
+          obj22.text = intl5.string(previewableMedia(author[2]).t.sDqZHL);
+          obj22.secondaryText = null;
+        }
+        return obj22;
       }
     } else {
-      const obj7 = {};
-      const intl9 = previewableMedia(closure_1[2]).intl;
-      const formatToPlainString = intl9.formatToPlainString;
-      const t = previewableMedia(closure_1[2]).t;
-      if (everyResult) {
-        const obj8 = { count: length };
-        let formatToPlainStringResult = formatToPlainString(t.y0gZht, obj8);
+      if (null != author) {
+        const intl2 = previewableMedia(author[2]).intl;
+        const obj23 = { count: length, username: author.nick };
+        let formatResult = intl2.format(previewableMedia(author[2]).t.319zWs, obj23);
       } else {
+        const intl = previewableMedia(author[2]).intl;
         obj = { count: length };
-        formatToPlainStringResult = formatToPlainString(t.8/qgDd, obj);
+        formatResult = intl.formatToPlainString(previewableMedia(author[2]).t.y0gZht, obj);
       }
-      obj7.text = formatToPlainStringResult;
-      obj7.secondaryText = null;
-      return obj7;
+      if (null != author) {
+        const intl4 = previewableMedia(author[2]).intl;
+        const obj24 = { count: length, username: author.nick };
+        let formatResult1 = intl4.format(previewableMedia(author[2]).t.1OSGGk, obj24);
+      } else {
+        const intl3 = previewableMedia(author[2]).intl;
+        const obj25 = { count: length };
+        formatResult1 = intl3.formatToPlainString(previewableMedia(author[2]).t.8/qgDd, obj25);
+      }
+      const obj26 = {};
+      if (everyResult) {
+        formatResult1 = formatResult;
+      }
+      obj26.text = formatResult1;
+      obj26.secondaryText = null;
+      return obj26;
     }
   }, items);
 };

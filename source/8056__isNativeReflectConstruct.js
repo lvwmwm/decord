@@ -1,5 +1,5 @@
 // Module ID: 8056
-// Function ID: 63934
+// Function ID: 63918
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
@@ -18,16 +18,14 @@ let closure_3 = importDefault(dependencyMap[1]);
 let closure_4 = importDefault(dependencyMap[2]);
 let closure_5 = importDefault(dependencyMap[3]);
 let closure_6 = importDefault(dependencyMap[4]);
-let closure_7 = importDefault(dependencyMap[5]);
-({ jsx: closure_8, jsxs: closure_9 } = arg1(dependencyMap[6]));
-const tmp3 = (arg0) => {
-  class FeDropShadow {
+const tmp2 = (arg0) => {
+  class FeConvolveMatrix {
     constructor() {
       self = this;
-      tmp = closure_2(this, FeDropShadow);
-      obj = closure_5(FeDropShadow);
+      tmp = closure_2(this, FeConvolveMatrix);
+      obj = closure_5(FeConvolveMatrix);
       tmp2 = closure_4;
-      if (closure_10()) {
+      if (closure_7()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
         tmp7 = closure_5;
@@ -41,43 +39,20 @@ const tmp3 = (arg0) => {
       return tmp2(self, constructResult);
     }
   }
-  const importDefault = FeDropShadow;
-  callback2(FeDropShadow, arg0);
+  const arg1 = FeConvolveMatrix;
+  callback2(FeConvolveMatrix, arg0);
   const items = [
     {
       key: "render",
       value: function render() {
-        let dx;
-        let dy;
-        let result;
-        const self = this;
-        const props = this.props;
-        const _in = props.in;
-        let str = "SourceGraphic";
-        if (undefined !== _in) {
-          str = _in;
-        }
-        let obj = {};
-        ({ dx, dy, result } = props);
-        obj = { in: str, stdDeviation: props.stdDeviation };
-        const items = [callback3(FeDropShadow(closure_1[7]), obj), callback3(FeDropShadow(closure_1[8]), { dx, dy, result: "offsetblur" }), , , ];
-        obj = { floodColor: self.props.floodColor, floodOpacity: self.props.floodOpacity };
-        items[2] = callback3(FeDropShadow(closure_1[9]), obj);
-        items[3] = callback3(FeDropShadow(closure_1[10]), { "Null": "6a336799c634b8d004d29afaef8bc9a8", "Null": "fr.messages.6a336799c634b8d004d29afaef8bc9a8.compiled.messages" });
-        const obj1 = { result };
-        const items1 = [callback3(FeDropShadow(closure_1[12]), {}), ];
-        const obj2 = { in: str };
-        items1[1] = callback3(FeDropShadow(closure_1[12]), obj2);
-        obj1.children = items1;
-        items[4] = callback4(FeDropShadow(closure_1[11]), obj1);
-        obj.children = items;
-        return callback4(React.Fragment, obj);
+        const result = FeConvolveMatrix(closure_1[5]).warnUnimplementedFilter();
+        return null;
       }
     }
   ];
-  return callback(FeDropShadow, items);
-}(importDefault(dependencyMap[13]));
-tmp3.displayName = "FeDropShadow";
-tmp3.defaultProps = Object.assign({}, tmp3.defaultPrimitiveProps);
+  return callback(FeConvolveMatrix, items);
+}(importDefault(dependencyMap[6]));
+tmp2.displayName = "FeConvolveMatrix";
+tmp2.defaultProps = Object.assign({}, tmp2.defaultPrimitiveProps);
 
-export default tmp3;
+export default tmp2;

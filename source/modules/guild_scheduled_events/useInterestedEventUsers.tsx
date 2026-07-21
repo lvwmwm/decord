@@ -1,10 +1,10 @@
-// Module ID: 8347
-// Function ID: 66505
+// Module ID: 8351
+// Function ID: 66517
 // Name: useInterestedEventUsers
 // Dependencies: []
 // Exports: default
 
-// Module 8347 (useInterestedEventUsers)
+// Module 8351 (useInterestedEventUsers)
 const useMemo = require(dependencyMap[0]).useMemo;
 let closure_3 = importDefault(dependencyMap[1]);
 let closure_4 = require(dependencyMap[2]).GuildScheduledEventUserResponses;

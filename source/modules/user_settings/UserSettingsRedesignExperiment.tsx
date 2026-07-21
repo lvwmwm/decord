@@ -1,15 +1,15 @@
-// Module ID: 5255
-// Function ID: 44500
+// Module ID: 5257
+// Function ID: 44541
 // Name: apexExperiment
 // Dependencies: []
 // Exports: getIsEligibleForUserSettingsRedesign4CExperiment, getIsEligibleForUserSettingsRedesign4DExperiment, useIsEligibleForUserSettingsRedesign4CExperiment, useIsEligibleForUserSettingsRedesign4DExperiment
 
-// Module 5255 (apexExperiment)
+// Module 5257 (apexExperiment)
 const _module = require(dependencyMap[0]);
-let obj = { -1269606814: null, -1845285747: null, defaultConfig: { enabled: false }, variations: { [0]: { enabled: false }, [1]: { enabled: true } } };
+let obj = { 9223372036854775807: null, 0: null, defaultConfig: { enabled: false }, variations: { [0]: { enabled: false }, [1]: { enabled: true } } };
 const apexExperiment = _module.createApexExperiment(obj);
 const _module1 = require(dependencyMap[0]);
-obj = { -1269606814: true, -1845285747: true, defaultConfig: { enabled: false }, variations: { [0]: { enabled: false }, [1]: { enabled: true } } };
+obj = { 9223372036854775807: true, 0: true, defaultConfig: { enabled: false }, variations: { [0]: { enabled: false }, [1]: { enabled: true } } };
 const apexExperiment1 = _module1.createApexExperiment(obj);
 const _module2 = require(dependencyMap[1]);
 const result = _module2.fileFinishedImporting("modules/user_settings/UserSettingsRedesignExperiment.tsx");

@@ -1,10 +1,10 @@
-// Module ID: 10641
-// Function ID: 83094
+// Module ID: 10647
+// Function ID: 83117
 // Name: useRequestToSpeakPermission
 // Dependencies: []
 // Exports: useRequestToSpeakPermission
 
-// Module 10641 (useRequestToSpeakPermission)
+// Module 10647 (useRequestToSpeakPermission)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 let closure_5 = importDefault(dependencyMap[2]);

@@ -1,18 +1,18 @@
-// Module ID: 12807
-// Function ID: 98090
+// Module ID: 12814
+// Function ID: 98113
 // Name: items
 // Dependencies: []
 // Exports: GuildBadgeForce
 
-// Module 12807 (items)
+// Module 12814 (items)
 let closure_2 = importAll(dependencyMap[0]);
 ({ jsx: closure_3, jsxs: closure_4 } = arg1(dependencyMap[1]));
 let closure_5 = [];
 let closure_6 = [];
-let closure_7 = [0.6, -0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000026868948471031624, 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000008168762272569551];
-const items = [{}, {}, { GameplayAbstractUI: "\u{1F4A0}", cwd: 6 }];
+let closure_7 = [0.6, -0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000008719090071942639, 1341791872152904600000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000];
+const items = [{}, {}, {}];
 let closure_9 = [];
-const items1 = [{}, {}, { GameplayAbstractUI: "\u{1F4A0}", cwd: 6 }];
+const items1 = [{}, {}, {}];
 const tmp2 = arg1(dependencyMap[1]);
 const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/guild_tag/native/badges/GuildBadgeForce.tsx");
 
@@ -29,7 +29,7 @@ export const GuildBadgeForce = function GuildBadgeForce(width) {
   if (num2 === undefined) {
     num2 = 24;
   }
-  let obj = { onValueChange: "r", step: "onRequireModeratorMFAClick", flexDirection: "Array", alignItems: "isSpamMessageRequest" };
+  let obj = { "Bool(true)": null, "Bool(true)": 4, "Bool(true)": 4, "Bool(true)": "rgba(0, 0, 0, 0.75)" };
   ({ primaryTintColor, secondaryTintColor } = width);
   Object.setPrototypeOf(null);
   const merged = Object.assign(width, obj);

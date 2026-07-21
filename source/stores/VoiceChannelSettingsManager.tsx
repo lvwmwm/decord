@@ -1,23 +1,9 @@
-// Module ID: 16051
-// Function ID: 123328
+// Module ID: 16058
+// Function ID: 123359
 // Name: _isNativeReflectConstruct
-// Dependencies: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+// Dependencies: []
 
-// Module 16051 (_isNativeReflectConstruct)
-import closure_2 from "result";
-import closure_3 from "result";
-import closure_4 from "result";
-import closure_5 from "result";
-import closure_6 from "result";
-import closure_7 from "result";
-import closure_8 from "result";
-import closure_9 from "result";
-import closure_10 from "result";
-import closure_11 from "result";
-import { VideoQualityMode } from "result";
-import tmp2 from "result";
-import result from "result";
-
+// Module 16058 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -157,7 +143,45 @@ function handleVoiceStateUpdates(voiceStates) {
     }
   });
 }
+let closure_2 = importDefault(dependencyMap[0]);
+let closure_3 = importDefault(dependencyMap[1]);
+let closure_4 = importDefault(dependencyMap[2]);
+let closure_5 = importDefault(dependencyMap[3]);
+let closure_6 = importDefault(dependencyMap[4]);
+let closure_7 = importDefault(dependencyMap[5]);
+let closure_8 = importDefault(dependencyMap[6]);
+let closure_9 = importDefault(dependencyMap[7]);
+let closure_10 = importDefault(dependencyMap[8]);
+let closure_11 = importDefault(dependencyMap[9]);
+const VideoQualityMode = arg1(dependencyMap[10]).VideoQualityMode;
+let tmp2 = (arg0) => {
+  class VoiceChannelSettingsManager {
+    constructor(arg0) {
+      self = this;
+      items = [...arguments];
+      tmp = closure_3(this, VoiceChannelSettingsManager);
+      items1 = [...items];
+      obj = closure_5(VoiceChannelSettingsManager);
+      tmp2 = closure_4;
+      if (closure_13()) {
+        tmp4 = globalThis;
+        _Reflect = Reflect;
+        tmp5 = closure_5;
+        constructResult = Reflect.construct(obj, items1, closure_5(self).constructor);
+      } else {
+        constructResult = obj.apply(self, items1);
+      }
+      tmp2Result = tmp2(self, constructResult);
+      obj = { CHANNEL_UPDATES: closure_17, VOICE_STATE_UPDATES: closure_18 };
+      tmp2Result.actions = obj;
+      return tmp2Result;
+    }
+  }
+  const importDefault = VoiceChannelSettingsManager;
+  callback2(VoiceChannelSettingsManager, arg0);
+  return callback(VoiceChannelSettingsManager);
+}(importDefault(dependencyMap[12]));
 tmp2 = new tmp2();
-result = result.fileFinishedImporting("stores/VoiceChannelSettingsManager.tsx");
+const result = arg1(dependencyMap[13]).fileFinishedImporting("stores/VoiceChannelSettingsManager.tsx");
 
 export default tmp2;

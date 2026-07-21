@@ -1,10 +1,10 @@
-// Module ID: 12202
-// Function ID: 93728
+// Module ID: 12209
+// Function ID: 93751
 // Name: ChannelPreview
 // Dependencies: []
 // Exports: default
 
-// Module 12202 (ChannelPreview)
+// Module 12209 (ChannelPreview)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 let closure_4 = importDefault(dependencyMap[2]);
@@ -16,8 +16,8 @@ obj.borderColor = obj;
 obj.title = {};
 const tmp3 = arg1(dependencyMap[3]);
 obj.itemContainer = { borderRadius: importDefault(dependencyMap[5]).radii.sm };
-obj.guildInfo = { "Bool(true)": 8, "Bool(true)": null, "Bool(true)": "\u270A\u{1F3FF}" };
-obj.guildName = { "Null": "key", "Null": "Text" };
+obj.guildInfo = {};
+obj.guildName = { "Null": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000033995391237011617, "Null": 9126805507 };
 obj.topic = {};
 let closure_7 = obj.createStyles(obj);
 const obj1 = { borderRadius: importDefault(dependencyMap[5]).radii.sm };
@@ -34,7 +34,7 @@ export default function ChannelPreview(stageInstance) {
     if (null != stageInstance) {
       let obj1 = arg1(dependencyMap[7]);
       obj = { style: tmp.container };
-      obj = { paddingBottom: true, initialRouteName: true, initialRouteStack: true, style: tmp.title };
+      obj = { 2003551622: true, 1366017591: true, 996410372: true, style: tmp.title };
       const intl = arg1(dependencyMap[9]).intl;
       obj.children = intl.string(arg1(dependencyMap[9]).t.InbJ8x);
       const items1 = [callback(arg1(dependencyMap[8]).Text, obj), ];
@@ -53,7 +53,7 @@ export default function ChannelPreview(stageInstance) {
       items3[1] = callback(arg1(dependencyMap[8]).Text, obj5);
       obj3.children = items3;
       const items4 = [callback2(View, obj3), ];
-      const obj6 = { Promise: "data", marginTop: "category", flags: "Array", style: tmp.topic, children: stageInstance.topic };
+      const obj6 = { "Null": "text-overlay-light", "Null": null, "Null": 3, style: tmp.topic, children: stageInstance.topic };
       items4[1] = callback(arg1(dependencyMap[8]).Text, obj6);
       obj1.children = items4;
       items1[1] = callback2(View, obj1);

@@ -1,9 +1,9 @@
-// Module ID: 4555
-// Function ID: 39894
+// Module ID: 4559
+// Function ID: 39942
 // Name: AST_KEY
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 4555 (AST_KEY)
+// Module 4559 (AST_KEY)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("modules/markup/MarkupTypes.tsx");
 

@@ -1,9 +1,9 @@
-// Module ID: 7149
-// Function ID: 57698
+// Module ID: 7153
+// Function ID: 57709
 // Name: handleConnectionStateUpdated
 // Dependencies: []
 
-// Module 7149 (handleConnectionStateUpdated)
+// Module 7153 (handleConnectionStateUpdated)
 function handleConnectionStateUpdated(connectionState) {
   connectionState = connectionState.connectionState;
   importDefault(dependencyMap[16]).dispatch({ type: "GPLAY_UPDATE_CONNECTION_STATE", connectionState });
@@ -156,7 +156,7 @@ async function _handleDowngradeCommand(arg0, arg1) {
 async function _executePendingDowngrade() {
   const pendingDowngrade = pendingDowngrade.getPendingDowngrade();
   if (null != pendingDowngrade) {
-    callback2(closure_2[16]).dispatch({ "Bool(false)": "<string:17005889>", "Bool(false)": "<string:490803456>" });
+    callback2(closure_2[16]).dispatch({ "Bool(false)": 75616, "Bool(false)": 2041856273 });
     const obj2 = callback2(closure_2[16]);
     yield callback(closure_2[17]).downgradeSubscription(tmp2);
     callback3();
@@ -170,7 +170,7 @@ async function _executePendingDowngrade() {
   }
 }
 function clearPendingDowngrade() {
-  importDefault(dependencyMap[16]).dispatch({ slice: "ellipsizeMode", Date: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010864618450305 });
+  importDefault(dependencyMap[16]).dispatch({ "Bool(true)": null, "Bool(true)": null });
 }
 function fetchAndAlertActiveSubscription() {
   return _fetchAndAlertActiveSubscription(...arguments);
@@ -225,7 +225,7 @@ async function _handleAppStateUpdated(arg0, arg1) {
   fn.next();
   return fn;
 }
-let closure_3 = ["<string:2003435523>"];
+let closure_3 = ["handleOpenInterview"];
 let closure_4 = importDefault(dependencyMap[0]);
 let closure_5 = importDefault(dependencyMap[1]);
 importAll(dependencyMap[2]);

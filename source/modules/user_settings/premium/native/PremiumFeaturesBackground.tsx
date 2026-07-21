@@ -1,17 +1,17 @@
-// Module ID: 7859
-// Function ID: 62624
+// Module ID: 7863
+// Function ID: 62636
 // Name: PremiumFeaturesBackground
 // Dependencies: []
 // Exports: default
 
-// Module 7859 (PremiumFeaturesBackground)
+// Module 7863 (PremiumFeaturesBackground)
 importAll(dependencyMap[0]);
 const Gradients = arg1(dependencyMap[1]).Gradients;
 const PremiumTypes = arg1(dependencyMap[2]).PremiumTypes;
 const jsx = arg1(dependencyMap[3]).jsx;
 let obj = arg1(dependencyMap[4]);
 obj = {};
-obj = { 9223372036854775807: -36023964, 0: 17896257, 0: 763249152, 9223372036854775807: 286457858, 9223372036854775807: 1950482433, borderRadius: importDefault(dependencyMap[5]).radii.lg };
+obj = { borderRadius: importDefault(dependencyMap[5]).radii.lg };
 obj.cardContainer = obj;
 let closure_6 = obj.createStyles(obj);
 const result = arg1(dependencyMap[9]).fileFinishedImporting("modules/user_settings/premium/native/PremiumFeaturesBackground.tsx");
@@ -24,7 +24,7 @@ export default function PremiumFeaturesBackground(opacity) {
     num = 1;
   }
   const arg1 = num;
-  let obj = { "Bool(false)": "r", "Bool(false)": "onRequireModeratorMFAClick", "Bool(false)": "Array", "Bool(false)": "isSpamMessageRequest" };
+  let obj = { "Null": null, "Null": 4, "Null": 4, "Null": "rgba(0, 0, 0, 0.75)" };
   ({ children, style } = opacity);
   Object.setPrototypeOf(null);
   const merged = Object.assign(opacity, obj);

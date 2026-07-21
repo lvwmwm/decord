@@ -1,10 +1,10 @@
-// Module ID: 10749
-// Function ID: 83526
+// Module ID: 10755
+// Function ID: 83549
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 // Exports: keySection, parseSection
 
-// Module 10749 (_isNativeReflectConstruct)
+// Module 10755 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -327,7 +327,7 @@ const MediaEngineContextTypes = tmp2.MediaEngineContextTypes;
 const keySectionResult = keySection(MediaEngineContextTypes.DEFAULT, arg1(dependencyMap[8]).RTCDebugSections.TRANSPORT, 0);
 let closure_17 = {};
 const map = new Map();
-let obj = { <string:4032948185>: -381611676, <string:227632979>: 1912603159, <string:1642806278>: 18, <string:1101746644>: 18, <string:105989985>: 1463763201, <string:50745898>: 1163001858, <string:1632797740>: 291798428, <string:1627543886>: 23371841, <string:66933090>: 2126336, <string:1364634210>: 2097152, <string:2941472353>: 1107361792, <string:486693281>: 83220, <string:1390895770>: 100610, <string:2224915026>: "png", <string:679956893>: true, <string:1365371746>: "/assets/images/native/icons", <string:1883430811>: 24, <string:3204449325>: 24, <string:1409287317>: null, <string:3044804764>: "436501dcf3af209f85edbd0cde1cf184", <string:3948140593>: "ic_vr_headset_24px", <string:2075494653>: "png", <string:1374380510>: "relative", <string:1449380416>: 8, <string:1650567738>: 0 };
+let obj = { "Bool(false)": null, "Bool(false)": "text-sm/semibold", "Bool(false)": "text-link", "Bool(false)": "True", "Bool(false)": "True", "Bool(false)": "true", "Bool(false)": 424, "Bool(false)": 424, "Bool(false)": 100, "Bool(false)": "2026-03-soundmoji-rendering", flexDirection: "user", backgroundColor: "2025-12-proportional-vad-indicator", justifyContent: "text", borderRadius: "", marginBottom: 255, accessible: 0, _distance: 256, "Null": 0, "Null": 0, "Null": 1895895296, "Bool(true)": -1, "Bool(true)": 812720385, "Bool(true)": 16777216, "Bool(true)": 369, "Bool(true)": 1166889472 };
 const obj2 = () => {
   class RTCDebugVideoOutputMap {
     constructor(arg0) {

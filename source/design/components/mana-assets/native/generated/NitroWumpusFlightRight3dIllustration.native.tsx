@@ -1,14 +1,13 @@
-// Module ID: 6367
-// Function ID: 50424
+// Module ID: 6369
+// Function ID: 50467
 // Name: NitroWumpusFlightRight3dIllustration
-// Dependencies: [131072, 561250304, 1862270976, 20]
+// Dependencies: []
 // Exports: NitroWumpusFlightRight3dIllustration
 
-// Module 6367 (NitroWumpusFlightRight3dIllustration)
-import AppStartPerformance from "AppStartPerformance";
-
+// Module 6369 (NitroWumpusFlightRight3dIllustration)
 const jsx = require(dependencyMap[0]).jsx;
-const result = AppStartPerformance.fileFinishedImporting("design/components/mana-assets/native/generated/NitroWumpusFlightRight3dIllustration.native.tsx");
+const _module = require(dependencyMap[3]);
+const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/NitroWumpusFlightRight3dIllustration.native.tsx");
 
 export const NitroWumpusFlightRight3dIllustration = function NitroWumpusFlightRight3dIllustration(width) {
   let accessibilityLabel;

@@ -1,10 +1,10 @@
-// Module ID: 8734
-// Function ID: 69085
+// Module ID: 8738
+// Function ID: 69097
 // Name: BundleProductPreview
 // Dependencies: []
 // Exports: default
 
-// Module 8734 (BundleProductPreview)
+// Module 8738 (BundleProductPreview)
 function BundleProductPreview(onActiveItemTypeChange) {
   let handlePreviewPress;
   let onActiveItemChange;

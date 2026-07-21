@@ -1,30 +1,30 @@
-// Module ID: 15562
-// Function ID: 118766
+// Module ID: 15569
+// Function ID: 118790
 // Name: useActivityWebViewLock
 // Dependencies: [0, 0, 0, 0]
 
-// Module 15562 (useActivityWebViewLock)
-import result from "result";
-import result from "result";
-import result from "result";
-import result from "result";
+// Module 15569 (useActivityWebViewLock)
+import __exportStarResult1 from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
 
 const obj = {
-  mode: require("result").ActivityPanelModes.PANEL,
+  mode: require("__exportStarResult1").ActivityPanelModes.PANEL,
   setMode() {
     const error = new Error("ActivityPanelStateContextType.Provider.setMode: not called within a context provider");
     throw error;
   },
-  wrapperDimensions: { flex: "EMBEDDED_ACTIVITIES_VIDEO_DISABLED_FOR_THERMAL_STATE", alignItems: null, paddingTop: null, paddingBottom: true }
+  wrapperDimensions: { position: "EMBEDDED_ACTIVITIES_VIDEO_DISABLED_FOR_THERMAL_STATE", accessibilityRole: null, w: null, a: true }
 };
-obj.pipState = result.createFakeSharedValue({ "Null": false, "Null": false });
-obj.pipAvoidanceSpecs = result.createFakeSharedValue({ "Bool(false)": false, "Bool(false)": true });
-obj.wrapperOffset = result.createFakeSharedValue({});
+obj.pipState = __exportStarResult1.createFakeSharedValue({ max: false, guildId: false });
+obj.pipAvoidanceSpecs = __exportStarResult1.createFakeSharedValue({ <string:2958189153>: -536870861, <string:1661207664>: -299892737 });
+obj.wrapperOffset = __exportStarResult1.createFakeSharedValue({});
 obj.useActivityWebViewLock = function useActivityWebViewLock() {
   return true;
 };
-const context = require("result").createContext(obj);
-result = result.fileFinishedImporting("modules/activities/panel/native/ActivityPanelStateContext.tsx");
+const context = require("__exportStarResult1").createContext(obj);
+const result = __exportStarResult1.fileFinishedImporting("modules/activities/panel/native/ActivityPanelStateContext.tsx");
 
 export default context;
 export const activityPanelStateContextDefault = obj;

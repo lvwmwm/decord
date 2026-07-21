@@ -1,9 +1,9 @@
-// Module ID: 10394
-// Function ID: 80104
+// Module ID: 10400
+// Function ID: 80127
 // Name: SafetyWarningBanner
 // Dependencies: []
 
-// Module 10394 (SafetyWarningBanner)
+// Module 10400 (SafetyWarningBanner)
 class SafetyWarningBanner {
   constructor(arg0) {
     channelId = global.channelId;
@@ -95,9 +95,9 @@ obj = {};
 obj = { backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_SURFACE_HIGHEST, paddingHorizontal: importDefault(dependencyMap[4]).space.PX_16, paddingVertical: importDefault(dependencyMap[4]).space.PX_12 };
 const merged = Object.assign(importDefault(dependencyMap[4]).shadows.SHADOW_LOW);
 obj.container = obj;
-obj.contentContainer = { -9223372036854775808: true, filter: true };
-obj.safetyShieldIconContainer = { aze: 8, azj: 16 };
-obj.safetyShieldIcon = { 9223372036854775807: "showAllButtonUnderline", 9223372036854775807: "sEAnVH", 9223372036854775807: "resolve" };
+obj.contentContainer = {};
+obj.safetyShieldIconContainer = { bhk: 8, bic: 16 };
+obj.safetyShieldIcon = { 9223372036854775807: null, 9223372036854775807: null, -9223372036854775808: null };
 const tmp3 = arg1(dependencyMap[2]);
 obj.textContainer = { flex: 1, marginLeft: importDefault(dependencyMap[4]).space.PX_16, marginRight: importDefault(dependencyMap[4]).space.PX_40 };
 const obj1 = { flex: 1, marginLeft: importDefault(dependencyMap[4]).space.PX_16, marginRight: importDefault(dependencyMap[4]).space.PX_40 };

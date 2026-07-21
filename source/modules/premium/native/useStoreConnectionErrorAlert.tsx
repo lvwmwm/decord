@@ -1,10 +1,10 @@
-// Module ID: 6641
-// Function ID: 51003
+// Module ID: 6647
+// Function ID: 51052
 // Name: useStoreConnectionErrorAlert
 // Dependencies: []
 // Exports: default
 
-// Module 6641 (useStoreConnectionErrorAlert)
+// Module 6647 (useStoreConnectionErrorAlert)
 let closure_3 = importAll(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/premium/native/useStoreConnectionErrorAlert.tsx");

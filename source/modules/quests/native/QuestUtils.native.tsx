@@ -1,10 +1,10 @@
-// Module ID: 10903
-// Function ID: 84731
+// Module ID: 10908
+// Function ID: 84752
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 // Exports: dismissOverlayScreens, getPrimaryCtaIcon, handleRewardClaimThenView, isHeroVideoSupported, openDiscordQuestsFAQ, openQuestHome, openRewardDetailsBottomSheet, showQuestUnavailableAlert
 
-// Module 10903 (_createForOfIteratorHelperLoose)
+// Module 10908 (_createForOfIteratorHelperLoose)
 function _createForOfIteratorHelperLoose(@@iterator) {
   let arg1 = Symbol_iterator;
   @@iterator = "undefined" !== typeof Symbol;

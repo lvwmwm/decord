@@ -1,10 +1,10 @@
-// Module ID: 14031
-// Function ID: 106713
+// Module ID: 14038
+// Function ID: 106736
 // Name: GradientThemeBackground
 // Dependencies: []
 // Exports: default
 
-// Module 14031 (GradientThemeBackground)
+// Module 14038 (GradientThemeBackground)
 function GradientThemeBackground(arg0) {
   let isThemeLocked;
   let item;
@@ -51,13 +51,13 @@ function DefaultThemeBackground(item) {
   const token1 = obj1.useToken(importDefault(dependencyMap[7]).colors.BORDER_STRONG, theme);
   let obj2 = arg1(dependencyMap[14]);
   obj = {};
-  obj = { iconPosition: 161, image: 160, label: null, showLabel: "539778d237b9fff9f8baff59e260a9fa", variant: "breaddog_1", backgroundColor: token, borderColor: token1 };
+  obj = { <string:1364261335>: "png", <string:2489582596>: true, <string:391555643>: "/assets/images/native/avatars", <string:1051593134>: 161, <string:1021069251>: 160, backgroundColor: token, borderColor: token1 };
   const token2 = obj2.useToken(importDefault(dependencyMap[7]).colors.ICON_STRONG, theme);
   obj.borderRadius = importDefault(dependencyMap[7]).radii.sm;
   obj.style = obj;
   let tmp9 = null;
   if ("system" === item.theme) {
-    obj1 = { style: {} };
+    obj1 = { style: { "Bool(true)": "gr", "Bool(true)": null, "Bool(true)": "Group 3" } };
     obj2 = { fill: token2 };
     obj1.children = callback(importDefault(dependencyMap[15]), obj2);
     tmp9 = callback(View, obj1);

@@ -1,10 +1,10 @@
-// Module ID: 12989
-// Function ID: 98853
+// Module ID: 12996
+// Function ID: 98876
 // Name: convertDeviceEventBreadcrumb
 // Dependencies: []
 // Exports: buildZoomedInAnalyticsEvent
 
-// Module 12989 (convertDeviceEventBreadcrumb)
+// Module 12996 (convertDeviceEventBreadcrumb)
 function convertDeviceEventBreadcrumb(data) {
   data = data.data;
   if (null != data) {

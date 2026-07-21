@@ -1,7 +1,7 @@
 // Module ID: 1375
 // Function ID: 16507
 // Name: availableTypedArrays
-// Dependencies: []
+// Dependencies: [1996488709]
 
 // Module 1375 (availableTypedArrays)
 if ("undefined" !== typeof globalThis) {

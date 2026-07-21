@@ -1,10 +1,10 @@
-// Module ID: 10343
-// Function ID: 79825
+// Module ID: 10349
+// Function ID: 79848
 // Name: ConfirmationToast
 // Dependencies: []
 // Exports: ConfirmationToast
 
-// Module 10343 (ConfirmationToast)
+// Module 10349 (ConfirmationToast)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 ({ extrapolateConfig: closure_4, PAN_INPUT_RANGE: closure_5 } = arg1(dependencyMap[2]));
@@ -29,7 +29,7 @@ obj1["borderRadius"] = importDefault(dependencyMap[6]).radii.round;
 obj1["overflow"] = "hidden";
 obj.notificationRow = obj1;
 obj.textEmoji = { fontSize: 20 };
-obj.imageEmoji = { aze: false, azj: false };
+obj.imageEmoji = { bhk: false, bic: "internal" };
 let closure_9 = obj.createStyles(obj);
 let closure_10 = { code: "function ConfirmationToastTsx1(){const{animatedValue,interpolate,notificationGestureY,PAN_INPUT_RANGE,extrapolateConfig}=this.__closure;const value=animatedValue.get();const scale=interpolate(value,[0,1],[0.8,1]);const enterTranslateY=interpolate(value,[0,1],[-20,0]);const gestureY=notificationGestureY.get();const dismissOpacity=interpolate(gestureY,PAN_INPUT_RANGE,[0,1,0],extrapolateConfig);return{transform:[{translateY:enterTranslateY+gestureY},{scale:scale}],opacity:value*dismissOpacity};}" };
 const tmp4 = arg1(dependencyMap[4]);
@@ -52,12 +52,12 @@ export const ConfirmationToast = function ConfirmationToast(reaction) {
     constructor() {
       value = closure_1.get();
       obj = notificationGestureY(closure_2[8]);
-      interpolateResult = obj.interpolate(value, [null, null], []);
+      interpolateResult = obj.interpolate(value, ["Text", "lc"], [null, null]);
       obj2 = notificationGestureY(closure_2[8]);
       items = [, ];
       items[0] = -20;
       items[1] = 0;
-      interpolateResult1 = obj2.interpolate(value, [null, null], items);
+      interpolateResult1 = obj2.interpolate(value, ["Text", "lc"], items);
       value1 = notificationGestureY.get();
       obj = { transform: items1 };
       obj1 = { translateY: interpolateResult1 + value1 };
@@ -65,7 +65,7 @@ export const ConfirmationToast = function ConfirmationToast(reaction) {
       items1[0] = obj1;
       items1[1] = { scale: interpolateResult };
       obj5 = notificationGestureY(closure_2[8]);
-      obj.opacity = value * obj5.interpolate(value1, closure_5, ["isArray", "\u012E", "isArray"], closure_4);
+      obj.opacity = value * obj5.interpolate(value1, closure_5, [15400960, 14090240, 292749312], closure_4);
       return obj;
     }
   }
@@ -101,19 +101,19 @@ export const ConfirmationToast = function ConfirmationToast(reaction) {
   } else {
     const obj3 = { size: "md", color: importDefault(dependencyMap[6]).colors.STATUS_POSITIVE };
     const items1 = [callback(arg1(dependencyMap[13]).CircleCheckIcon, obj3), ];
-    const obj4 = { INTEGRATION_CREATE: null, ConstraintReasonCode: null, children: reaction.message };
+    const obj4 = { children: reaction.message };
     items1[1] = callback(arg1(dependencyMap[14]).Text, obj4);
     obj.children = items1;
     class A {
       constructor() {
         value = closure_1.get();
         obj = notificationGestureY(closure_2[8]);
-        interpolateResult = obj.interpolate(value, [null, null], []);
+        interpolateResult = obj.interpolate(value, ["Text", "lc"], [null, null]);
         obj2 = notificationGestureY(closure_2[8]);
         items = [, ];
         items[0] = -20;
         items[1] = 0;
-        interpolateResult1 = obj2.interpolate(value, [null, null], items);
+        interpolateResult1 = obj2.interpolate(value, ["Text", "lc"], items);
         value1 = notificationGestureY.get();
         obj = { transform: items1 };
         obj1 = { translateY: interpolateResult1 + value1 };
@@ -121,7 +121,7 @@ export const ConfirmationToast = function ConfirmationToast(reaction) {
         items1[0] = obj1;
         items1[1] = { scale: interpolateResult };
         obj5 = notificationGestureY(closure_2[8]);
-        obj.opacity = value * obj5.interpolate(value1, closure_5, ["isArray", "\u012E", "isArray"], closure_4);
+        obj.opacity = value * obj5.interpolate(value1, closure_5, [15400960, 14090240, 292749312], closure_4);
         return obj;
       }
     }

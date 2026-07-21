@@ -1,9 +1,9 @@
-// Module ID: 4297
-// Function ID: 37598
+// Module ID: 4301
+// Function ID: 37646
 // Name: enforcing
 // Dependencies: []
 
-// Module 4297 (enforcing)
+// Module 4301 (enforcing)
 const TurboModuleRegistry = require(dependencyMap[0]).TurboModuleRegistry;
 const enforcing = TurboModuleRegistry.getEnforcing("NativeIntentsModule");
 const _module = require(dependencyMap[1]);

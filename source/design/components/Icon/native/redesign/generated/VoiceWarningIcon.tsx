@@ -1,10 +1,10 @@
-// Module ID: 4651
-// Function ID: 40270
+// Module ID: 4653
+// Function ID: 40311
 // Name: VoiceWarningIcon
 // Dependencies: []
 // Exports: VoiceWarningIcon
 
-// Module 4651 (VoiceWarningIcon)
+// Module 4653 (VoiceWarningIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/VoiceWarningIcon.tsx");

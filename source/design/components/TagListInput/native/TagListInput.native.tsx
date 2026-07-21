@@ -1,8 +1,8 @@
-// Module ID: 8414
-// Function ID: 67049
+// Module ID: 8418
+// Function ID: 67061
 // Dependencies: []
 
-// Module 8414
+// Module 8418
 let closure_3 = importDefault(dependencyMap[0]);
 const importAllResult = importAll(dependencyMap[1]);
 ({ View: closure_5, ScrollView: closure_6, StyleSheet: closure_7 } = arg1(dependencyMap[2]));
@@ -30,9 +30,9 @@ let closure_10 = arg1(dependencyMap[4]).createStyles(() => {
   obj.horizontalSearchInput = { minWidth: importDefault(dependencyMap[5]).space.PX_64 };
   return obj;
 });
-let closure_11 = { "Null": false, "Null": false };
-let closure_12 = { "Null": -721485569, "Null": 3375103 };
-let closure_13 = ["r", "CLAN_TAG"];
+let closure_11 = { max: false, guildId: false };
+let closure_12 = { max: 3211264, guildId: 2042617856 };
+let closure_13 = [];
 const obj2 = arg1(dependencyMap[4]);
 let closure_14 = arg1(dependencyMap[4]).createStyles(() => {
   let obj = { fill: { flex: 1 } };
@@ -45,7 +45,7 @@ let closure_14 = arg1(dependencyMap[4]).createStyles(() => {
   const merged1 = Object.assign(closure_7.absoluteFillObject);
   obj["backgroundColor"] = "black";
   obj.leadingCover = obj;
-  obj.maskRemainder = { "Bool(false)": 352322008, "Bool(false)": 1476395585 };
+  obj.maskRemainder = { "Bool(false)": false, "Bool(false)": false };
   return obj;
 });
 let closure_15 = { code: "function TagListInputNativeTsx1(){const{withSpring,scrolled,springStandard}=this.__closure;return{opacity:withSpring(scrolled.get()?0:1,springStandard,'animate-always')};}" };
@@ -232,7 +232,7 @@ const memoResult = importAllResult.memo(function TagListInput(accessibilityHint)
   inputValueRef = tmp4.inputValueRef;
   inputUpdate = tmp4.inputUpdate;
   const clearButton = tmp4.clearButton;
-  closure_7 = importAllResult.useRef({ 1726238916: false, 607091733: true });
+  closure_7 = importAllResult.useRef({ 0: -536870861, 0: -299892737 });
   let obj1 = arg1(dependencyMap[15]);
   const keyboardBlurring = obj1.useKeyboardBlurring(inputRef);
   let obj2 = arg1(dependencyMap[16]);
@@ -460,7 +460,7 @@ const memoResult = importAllResult.memo(function TagListInput(accessibilityHint)
             if (null != current2) {
               current2.setSelection(0, 0);
             }
-            closure_7.current = { 1726238916: false, 607091733: true };
+            closure_7.current = { 0: -536870861, 0: -299892737 };
           } else if (null != callback) {
             const tmp3 = callback(arg1);
           }
@@ -596,7 +596,7 @@ const memoResult = importAllResult.memo(function TagListInput(accessibilityHint)
   const tmp35 = focusProps;
   const obj6 = { size: "sm", isDisabled: disabled, isFocused: focus.isFocused };
   if (null == icon) {
-    const obj7 = { "Bool(true)": "decorationStyle", "Bool(true)": "isArrayBuffer", "Bool(true)": "<string:2635747584>", style: tmp.iconLeft };
+    const obj7 = { style: tmp.iconLeft };
     icon = focusProps(arg1(dependencyMap[26]).MagnifyingGlassIcon, obj7);
   }
   const items8 = [icon, obj4.wrap(focusProps(BottomSheetScrollView, obj)), ];

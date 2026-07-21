@@ -1,16 +1,16 @@
-// Module ID: 13293
-// Function ID: 101026
+// Module ID: 13300
+// Function ID: 101049
 // Name: _isNativeReflectConstruct
-// Dependencies: [5, 653, 13273, 13261, 10484, 7361, 10479, 13265, 10469, 2, 6932]
+// Dependencies: [5, 653, 13280, 13268, 10490, 7365, 10485, 13272, 10475, 2, 6936]
 
-// Module 13293 (_isNativeReflectConstruct)
+// Module 13300 (_isNativeReflectConstruct)
 import asyncGeneratorStep from "asyncGeneratorStep";
 import ME from "ME";
 import createRPCCommand from "createRPCCommand";
 import activityInstanceConnectedParticipants from "activityInstanceConnectedParticipants";
 import recurseReplaceContentTree from "recurseReplaceContentTree";
 import getApplicationFlags from "getApplicationFlags";
-import module_10479 from "module_10479";
+import module_10485 from "module_10485";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 
 function _isNativeReflectConstruct() {
@@ -105,7 +105,7 @@ function addRegularStoreListing(storeListing) {
   let deleteResult = storeListing;
   const id = storeListing.id;
   let id2 = storeListing.sku.id;
-  const fromServer = module_10479.createFromServer(storeListing);
+  const fromServer = module_10485.createFromServer(storeListing);
   let tmp2 = null;
   if (!tmp3) {
     if (false === deleteResult.published) {
@@ -268,7 +268,7 @@ let tmp3 = (Store) => {
   return callback(StoreListingStore, items);
 }(require("_runPrimaryAppCommandOrJoinEmbeddedActivity").Store);
 tmp3.displayName = "StoreListingStore";
-tmp3 = new tmp3(require("keys"), {
+tmp3 = new tmp3(require("result2"), {
   STORE_LISTINGS_FETCH_START: function handleStoreListingsFetchStart(skuId) {
     set.add(skuId.skuId);
   },
@@ -294,7 +294,7 @@ tmp3 = new tmp3(require("keys"), {
     let storeListing;
     ({ storeListing, channelId } = arg0);
     if (null != channelId) {
-      const fromServer = module_10479.createFromServer(storeListing);
+      const fromServer = module_10485.createFromServer(storeListing);
       closure_11[getChannelSkuComboId(channelId, fromServer.skuId)] = fromServer;
       closure_13[fromServer.skuId] = fromServer.id;
     } else {

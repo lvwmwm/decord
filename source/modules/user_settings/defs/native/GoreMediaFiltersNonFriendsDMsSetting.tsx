@@ -1,10 +1,10 @@
-// Module ID: 13605
-// Function ID: 103123
+// Module ID: 13612
+// Function ID: 103146
 // Name: useGoreContentNonFriendsDmSettingValue
 // Dependencies: []
 // Exports: onGoreContentNonFriendsDmOnPress, useGoreContentNonFriendsDmSettingValue
 
-// Module 13605 (useGoreContentNonFriendsDmSettingValue)
+// Module 13612 (useGoreContentNonFriendsDmSettingValue)
 function useGoreContentNonFriendsDmSettingValue() {
   const obj = require(dependencyMap[1]);
   return require(dependencyMap[2]).redactionSettingToRenderedString(obj.useGoreContentSettingOrDefault().goreContentNonFriendDm)();

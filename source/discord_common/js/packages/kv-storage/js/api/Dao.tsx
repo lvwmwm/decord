@@ -4,14 +4,13 @@
 // Dependencies: [0, 0, 0, 0, 0]
 
 // Module 1886 (Dao)
-import closure_2 from "result";
-import closure_3 from "result";
-import result from "result";
+import __exportStarResult1 from "__exportStarResult1";
+import closure_3 from "__exportStarResult1";
 
 const tmp3 = () => {
   class DaoTransaction {
     constructor(arg0) {
-      tmp = closure_2(this, DaoTransaction);
+      tmp = __exportStarResult1(this, DaoTransaction);
       this.transaction = arg0;
       return;
     }
@@ -56,9 +55,7 @@ const tmp3 = () => {
   const items1 = [obj];
   return callback(DaoTransaction, items, items1);
 }();
-result = result.fileFinishedImporting("../discord_common/js/packages/kv-storage/js/api/Dao.tsx");
-
-export const Dao = () => {
+const tmp2 = () => {
   class Dao {
     constructor(arg0, arg1, arg2) {
       flag = arg3;
@@ -66,7 +63,7 @@ export const Dao = () => {
       if (arg3 === undefined) {
         flag = true;
       }
-      tmp = closure_2(self, Dao);
+      tmp = __exportStarResult1(self, Dao);
       self.originalPrefix = arg0;
       items = [];
       items[0] = arg0;
@@ -202,4 +199,7 @@ export const Dao = () => {
   };
   return callback(Dao, items);
 }();
+const result = require("__exportStarResult1").fileFinishedImporting("../discord_common/js/packages/kv-storage/js/api/Dao.tsx");
+
+export const Dao = tmp2;
 export const DaoTransaction = tmp3;

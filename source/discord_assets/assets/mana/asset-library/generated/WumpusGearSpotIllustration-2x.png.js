@@ -1,9 +1,9 @@
-// Module ID: 6622
-// Function ID: 50807
+// Module ID: 6628
+// Function ID: 50856
 // Name: metadata
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 6622 (metadata)
+// Module 6628 (metadata)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/WumpusGearSpotIllustration-2x.png.js");
 

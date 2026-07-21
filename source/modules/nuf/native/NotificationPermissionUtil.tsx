@@ -1,10 +1,10 @@
-// Module ID: 11432
-// Function ID: 89000
+// Module ID: 11439
+// Function ID: 89024
 // Name: _requestPushNotificationPermission
 // Dependencies: []
 // Exports: enableProvisionalPushNotification, requestPushNotificationPermission, useShouldShowPushNotificationNudgeByPromptType, useShowReactivationPrompt
 
-// Module 11432 (_requestPushNotificationPermission)
+// Module 11439 (_requestPushNotificationPermission)
 function _requestPushNotificationPermission() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback3(tmp);

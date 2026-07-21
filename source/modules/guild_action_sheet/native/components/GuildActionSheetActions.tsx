@@ -1,10 +1,10 @@
-// Module ID: 12787
-// Function ID: 97991
+// Module ID: 12794
+// Function ID: 98014
 // Name: HideMutedChannelsOption
 // Dependencies: []
 // Exports: GuildActionSheetDirectoryActions, GuildActionSheetPrimaryActions, GuildActionSheetSecondaryActions, GuildDeveloperOptionAction, GuildUnreadAction
 
-// Module 12787 (HideMutedChannelsOption)
+// Module 12794 (HideMutedChannelsOption)
 function HideMutedChannelsOption(guild) {
   const arg1 = guild.guild;
   let obj = arg1(dependencyMap[17]);
@@ -134,7 +134,7 @@ function ServerTagOption(guild) {
     const guildTagBadgeUrl = obj1.getGuildTagBadgeUrl(guild.id, badge, GuildTagBadgeSize.SIZE_16);
     obj = {};
     obj = { style: tmp.serverTagLabel };
-    obj1 = { "Null": "showAllButtonUnderline", "Null": "ynfFaI" };
+    obj1 = { "Null": null, "Null": null };
     const obj2 = {};
     const profile2 = guild.profile;
     let tag;
@@ -150,7 +150,7 @@ function ServerTagOption(guild) {
     obj2.badgeSize = GuildTagBadgeSize.SIZE_16;
     obj1.children = callback3(arg1(dependencyMap[42]).BaseGuildTagChiplet, obj2);
     const items = [callback3(View, obj1), ];
-    const obj3 = { INTEGRATION_CREATE: null, ConstraintReasonCode: null };
+    const obj3 = {};
     const intl = arg1(dependencyMap[19]).intl;
     obj3.children = intl.string(arg1(dependencyMap[19]).t.2QmKZ2);
     items[1] = callback3(arg1(dependencyMap[43]).Text, obj3);
@@ -242,10 +242,10 @@ obj = { guildServerAvatar: { marginRight: 4 } };
 obj = { color: importDefault(dependencyMap[16]).colors.INTERACTIVE_TEXT_DEFAULT, fontFamily: tmp3.Fonts.PRIMARY_MEDIUM, fontSize: 12 };
 obj.identityName = obj;
 obj.identitySublabel = { flexDirection: "row" };
-const obj1 = { -9223372036854775808: true, filter: true, columnGap: importDefault(dependencyMap[16]).space.PX_8 };
-obj.serverTagLabel = obj1;
-let closure_23 = obj.createStyles(obj);
 const tmp4 = arg1(dependencyMap[14]);
+obj.serverTagLabel = { columnGap: importDefault(dependencyMap[16]).space.PX_8 };
+let closure_23 = obj.createStyles(obj);
+const obj1 = { columnGap: importDefault(dependencyMap[16]).space.PX_8 };
 const result = arg1(dependencyMap[73]).fileFinishedImporting("modules/guild_action_sheet/native/components/GuildActionSheetActions.tsx");
 
 export { RestrictedGuildPrivacyOption };

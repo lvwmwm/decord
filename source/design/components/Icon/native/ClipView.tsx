@@ -1,10 +1,10 @@
-// Module ID: 7862
-// Function ID: 62633
+// Module ID: 7866
+// Function ID: 62645
 // Name: SolidCutout
 // Dependencies: []
 // Exports: default
 
-// Module 7862 (SolidCutout)
+// Module 7866 (SolidCutout)
 let StyleSheet;
 function SolidCutout(arg0) {
   let backgroundColor;
@@ -72,7 +72,7 @@ export default function ClipView(children) {
   let cutouts;
   let style;
   ({ cutouts, borderRadius, style } = children);
-  let obj = { GuildBadgeGem: "r", UNKNOWN_FUNCTION: "onRequireModeratorMFAClick", alignSelf: "Array", MANUAL_REVIEW_REQUEST: "isSpamMessageRequest" };
+  let obj = {};
   Object.setPrototypeOf(null);
   const merged = Object.assign(children, obj);
   const context = React.useContext(arg1(dependencyMap[6]).CutoutBackgroundContext);

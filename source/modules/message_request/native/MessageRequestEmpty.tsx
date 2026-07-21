@@ -1,10 +1,10 @@
-// Module ID: 15435
-// Function ID: 117784
+// Module ID: 15442
+// Function ID: 117808
 // Name: MessageRequestEmpty
 // Dependencies: []
 // Exports: default
 
-// Module 15435 (MessageRequestEmpty)
+// Module 15442 (MessageRequestEmpty)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/message_request/native/MessageRequestEmpty.tsx");

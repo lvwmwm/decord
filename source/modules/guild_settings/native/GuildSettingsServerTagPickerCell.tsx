@@ -1,16 +1,16 @@
-// Module ID: 16141
-// Function ID: 124444
+// Module ID: 16148
+// Function ID: 124475
 // Name: GuildSettingsServerTagPickerCell
 // Dependencies: []
 // Exports: default
 
-// Module 16141 (GuildSettingsServerTagPickerCell)
+// Module 16148 (GuildSettingsServerTagPickerCell)
 importAll(dependencyMap[0]);
 const Pressable = arg1(dependencyMap[1]).Pressable;
 const jsx = arg1(dependencyMap[2]).jsx;
 let obj = arg1(dependencyMap[3]);
 obj = {};
-obj = { "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, borderRadius: importDefault(dependencyMap[4]).radii.md, backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_MOD_SUBTLE, borderColor: importDefault(dependencyMap[4]).colors.BORDER_MUTED };
+obj = { maxFontSizeMultiplier: "\u{1F468}\u200D\u{1F468}\u200D\u{1F466}", variant: 6, accessibilityRole: 185, color: null, borderRadius: importDefault(dependencyMap[4]).radii.md, backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_MOD_SUBTLE, borderColor: importDefault(dependencyMap[4]).colors.BORDER_MUTED };
 obj.cell = obj;
 obj.cellSelected = { borderColor: importDefault(dependencyMap[4]).unsafe_rawColors.BRAND_500 };
 let closure_4 = obj.createStyles(obj);

@@ -1,10 +1,10 @@
-// Module ID: 7881
-// Function ID: 62765
+// Module ID: 7885
+// Function ID: 62777
 // Name: rgbToHex
 // Dependencies: []
 // Exports: useVideoTileGradientColors
 
-// Module 7881 (rgbToHex)
+// Module 7885 (rgbToHex)
 function rgbToHex(arg0) {
   let tmp;
   let tmp2;

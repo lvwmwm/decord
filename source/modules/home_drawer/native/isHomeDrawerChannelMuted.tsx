@@ -1,10 +1,10 @@
-// Module ID: 14714
-// Function ID: 111008
+// Module ID: 14721
+// Function ID: 111032
 // Name: useIsHomeDrawerChannelMuted
 // Dependencies: []
 // Exports: useIsHomeDrawerChannelMuted
 
-// Module 14714 (useIsHomeDrawerChannelMuted)
+// Module 14721 (useIsHomeDrawerChannelMuted)
 let closure_2 = importDefault(dependencyMap[0]);
 const isThread = arg1(dependencyMap[1]).isThread;
 let closure_4 = importDefault(dependencyMap[2]);

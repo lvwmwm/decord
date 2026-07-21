@@ -1,9 +1,9 @@
-// Module ID: 14171
-// Function ID: 107307
+// Module ID: 14178
+// Function ID: 107330
 // Name: toggle
 // Dependencies: []
 
-// Module 14171 (toggle)
+// Module 14178 (toggle)
 let closure_2 = importDefault(dependencyMap[0]);
 let obj = arg1(dependencyMap[3]);
 obj = {

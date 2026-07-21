@@ -1,10 +1,10 @@
-// Module ID: 9794
-// Function ID: 76070
+// Module ID: 9799
+// Function ID: 76086
 // Name: getNextTierForProgress
 // Dependencies: []
 // Exports: getRemainingGiftsToNextTier, getTierForProgress
 
-// Module 9794 (getNextTierForProgress)
+// Module 9799 (getNextTierForProgress)
 function getNextTierForProgress(arr, arg1) {
   let closure_0 = arg1;
   return arr.reduce((arg0, arg1) => {

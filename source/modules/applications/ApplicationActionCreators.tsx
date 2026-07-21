@@ -1,10 +1,10 @@
-// Module ID: 5461
-// Function ID: 46606
+// Module ID: 5463
+// Function ID: 46648
 // Name: fetchApplication
 // Dependencies: []
 // Exports: useApplicationWithLoggedOutContext
 
-// Module 5461 (fetchApplication)
+// Module 5463 (fetchApplication)
 function fetchApplication() {
   return _fetchApplication(...arguments);
 }
@@ -24,7 +24,7 @@ async function _fetchApplication(arg0, arg1) {
     obj.rejectWithError = callback(closure_2[6]).rejectWithMigratedError();
     const tmp3 = yield HTTP.get(obj);
     const obj5 = callback(closure_2[6]);
-    const obj2 = { backgroundColor: "rgba(0, 0, 0, 0.5)", height: 24, overflow: "flex", application: tmp3.body };
+    const obj2 = { marginBottom: "rgba(0, 0, 0, 0.5)", flexDirection: 24, alignItems: "flex", application: tmp3.body };
     callback2(closure_2[5]).dispatch(obj2);
     return tmp3.body;
   };
@@ -129,7 +129,7 @@ let obj = {
         obj = { url: constants.APPLICATIONS_PUBLIC };
         const _URLSearchParams = URLSearchParams;
         const str3 = new URLSearchParams(found.map((arg0) => {
-          const items = [-0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000023534382787558376, arg0];
+          const items = ["headerTruncatedBackTitle", arg0];
           return items;
         }));
         obj.query = str3.toString();

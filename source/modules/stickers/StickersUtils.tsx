@@ -1,10 +1,10 @@
-// Module ID: 4458
-// Function ID: 39304
+// Module ID: 4462
+// Function ID: 39352
 // Name: getStickerPackPreviewSticker
 // Dependencies: []
 // Exports: createStickerPackCategory, getFilenameForSticker, getMessageStickers, getStickerAssetUrl, getStickerFormatTypeFromFileType, getStickerPackBannerAssetUrl, getStickerTagForEmoji, isAvailableGuildSticker, isFavoriteSticker, isGuildSticker, isStandardSticker, isStickerAssetUrl, isStickerPackAnimated, shouldAnimateSticker, shouldAttachSticker
 
-// Module 4458 (getStickerPackPreviewSticker)
+// Module 4462 (getStickerPackPreviewSticker)
 let ASSET_ENDPOINT;
 function getStickerPackPreviewSticker(cover_sticker_id) {
   const arg1 = cover_sticker_id;

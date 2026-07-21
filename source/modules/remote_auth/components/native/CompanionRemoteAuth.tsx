@@ -1,10 +1,10 @@
-// Module ID: 14639
-// Function ID: 110410
+// Module ID: 14646
+// Function ID: 110432
 // Name: renderSteps
 // Dependencies: []
 // Exports: CompanionRemoteAuth
 
-// Module 14639 (renderSteps)
+// Module 14646 (renderSteps)
 function renderSteps(state, style, callback1, context) {
   const step = state.step;
   if (style(dependencyMap[5]).RemoteAuthStep.INITIALIZING !== step) {
@@ -61,7 +61,7 @@ const View = arg1(dependencyMap[1]).View;
 const tmp2 = arg1(dependencyMap[2]);
 ({ jsx: closure_7, Fragment: closure_8, jsxs: closure_9 } = arg1(dependencyMap[3]));
 const tmp3 = arg1(dependencyMap[3]);
-let closure_10 = arg1(dependencyMap[4]).createStyles({ statusContainer: { 2130673151: 6, -2097184513: "focus_mode_expires_at_ms" }, avatar: { marginBottom: 16 }, statusText: {}, buttonContainer: {} });
+let closure_10 = arg1(dependencyMap[4]).createStyles({ statusContainer: { 2130673151: 6, -2097184513: "focus_mode_expires_at_ms" }, avatar: { marginBottom: 16 }, statusText: { "Null": "GuildMembers", "Null": "avatarId", "Null": "useActionBarPrimaryButton", "Null": "<string:1209088>" }, buttonContainer: {} });
 const obj = arg1(dependencyMap[4]);
 const result = arg1(dependencyMap[18]).fileFinishedImporting("modules/remote_auth/components/native/CompanionRemoteAuth.tsx");
 
@@ -73,7 +73,7 @@ export const CompanionRemoteAuth = function CompanionRemoteAuth() {
   const context = React.useContext(importDefault(dependencyMap[13]));
   const callback = React.useCallback((arg0) => {
     let obj = fingerprint(closure_2[14]);
-    obj = { flex: null, flexDirection: null, alignItems: null, justifyContent: null, source: constants2.QR_CODE };
+    obj = { source: constants2.QR_CODE };
     let tmp = null;
     if (null != arg0) {
       tmp = arg0;

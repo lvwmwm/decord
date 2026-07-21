@@ -125,7 +125,7 @@ function _getPrototypeOf(arg0) {
 function _defineProperty(arg0, arg1, value) {
   if (arg1 in arg0) {
     const _Object = Object;
-    const obj = { value };
+    const obj = { FRIEND_REQUESTS: true, ForYouLoadMore: true, QUEST_BADGE: true, GUILD_CHANNEL_INTEGRITY_CHECK_CANCELED: true, value };
     Object.defineProperty(arg0, arg1, obj);
   } else {
     arg0[arg1] = value;
@@ -169,7 +169,7 @@ export const ISODayParser = (Parser) => {
         tmp17 = closure_9(applyResult, "priority", 90);
         tmp18 = closure_7(applyResult);
         str3 = "incompatibleTokens";
-        tmp19 = closure_9(applyResult, "incompatibleTokens", ["a", "isArray", "title", "Boolean", "a", "isArray", "track", "Boolean", "a", "isArray", "url", "Boolean", "a", "isArray", "useRef"]);
+        tmp19 = closure_9(applyResult, "incompatibleTokens", []);
         return applyResult;
       } else {
         _TypeError = TypeError;
@@ -213,7 +213,7 @@ export const ISODayParser = (Parser) => {
           tmp17 = closure_9(applyResult, "priority", 90);
           tmp18 = closure_7(applyResult);
           str3 = "incompatibleTokens";
-          tmp19 = closure_9(applyResult, "incompatibleTokens", ["a", "isArray", "title", "Boolean", "a", "isArray", "track", "Boolean", "a", "isArray", "url", "Boolean", "a", "isArray", "useRef"]);
+          tmp19 = closure_9(applyResult, "incompatibleTokens", []);
           return applyResult;
         } else {
           _TypeError = TypeError;
@@ -232,7 +232,7 @@ export const ISODayParser = (Parser) => {
   if (Parser) {
     prototype = Parser.prototype;
   }
-  let obj = { EntryPointCommandButtonActions: null, NATIVE_SECTION: null, 1476351743: null, value: ISODayParser };
+  let obj = { value: ISODayParser };
   ISODayParser.prototype = Object.create(prototype, { constructor: obj });
   if (Parser) {
     class ISODayParser {
@@ -263,7 +263,7 @@ export const ISODayParser = (Parser) => {
           tmp17 = closure_9(applyResult, "priority", 90);
           tmp18 = closure_7(applyResult);
           str3 = "incompatibleTokens";
-          tmp19 = closure_9(applyResult, "incompatibleTokens", ["a", "isArray", "title", "Boolean", "a", "isArray", "track", "Boolean", "a", "isArray", "url", "Boolean", "a", "isArray", "useRef"]);
+          tmp19 = closure_9(applyResult, "incompatibleTokens", []);
           return applyResult;
         } else {
           _TypeError = TypeError;
@@ -296,13 +296,13 @@ export const ISODayParser = (Parser) => {
             const obj = { unit: "day" };
             return ordinalNumber.ordinalNumber(arg0, obj);
           } else if ("iii" === arg1) {
-            return callback(ISODayParser[1]).mapValue(ordinalNumber.day(arg0, {}) || ordinalNumber.day(arg0, { y: -0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010397949414864384, CHAT_INPUT_FLOATING_CONTENT_PADDING_VERTICAL: 36923798521907134000 }) || ordinalNumber.day(arg0, { y: null, CHAT_INPUT_FLOATING_CONTENT_PADDING_VERTICAL: null }), valueCallback);
+            return callback(ISODayParser[1]).mapValue(ordinalNumber.day(arg0, {}) || ordinalNumber.day(arg0, {}) || ordinalNumber.day(arg0, {}), valueCallback);
           } else if ("iiiii" === arg1) {
-            return callback(ISODayParser[1]).mapValue(ordinalNumber.day(arg0, { y: null, CHAT_INPUT_FLOATING_CONTENT_PADDING_VERTICAL: null }), valueCallback);
+            return callback(ISODayParser[1]).mapValue(ordinalNumber.day(arg0, {}), valueCallback);
           } else if ("iiiiii" === arg1) {
-            return callback(ISODayParser[1]).mapValue(ordinalNumber.day(arg0, { y: -0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010397949414864384, CHAT_INPUT_FLOATING_CONTENT_PADDING_VERTICAL: 36923798521907134000 }) || ordinalNumber.day(arg0, { y: null, CHAT_INPUT_FLOATING_CONTENT_PADDING_VERTICAL: null }), valueCallback);
+            return callback(ISODayParser[1]).mapValue(ordinalNumber.day(arg0, {}) || ordinalNumber.day(arg0, {}), valueCallback);
           } else {
-            return callback(ISODayParser[1]).mapValue(ordinalNumber.day(arg0, { y: 351158784, CHAT_INPUT_FLOATING_CONTENT_PADDING_VERTICAL: 596246531 }) || ordinalNumber.day(arg0, {}) || ordinalNumber.day(arg0, { y: -0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010397949414864384, CHAT_INPUT_FLOATING_CONTENT_PADDING_VERTICAL: 36923798521907134000 }) || ordinalNumber.day(arg0, { y: null, CHAT_INPUT_FLOATING_CONTENT_PADDING_VERTICAL: null }), valueCallback);
+            return callback(ISODayParser[1]).mapValue(ordinalNumber.day(arg0, {}) || ordinalNumber.day(arg0, {}) || ordinalNumber.day(arg0, {}) || ordinalNumber.day(arg0, {}), valueCallback);
           }
         }
       }

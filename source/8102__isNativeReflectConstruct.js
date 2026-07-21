@@ -1,5 +1,5 @@
 // Module ID: 8102
-// Function ID: 64189
+// Function ID: 64181
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
@@ -13,57 +13,80 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-let closure_0 = importDefault(dependencyMap[0]);
-let closure_1 = importDefault(dependencyMap[1]);
-let closure_2 = importDefault(dependencyMap[2]);
-let closure_3 = importDefault(dependencyMap[3]);
-let closure_4 = importDefault(dependencyMap[4]);
-const tmp2 = (Component) => {
-  class Stop {
+let closure_2 = importDefault(dependencyMap[0]);
+let closure_3 = importDefault(dependencyMap[1]);
+let closure_4 = importDefault(dependencyMap[2]);
+let closure_5 = importDefault(dependencyMap[3]);
+let closure_6 = importDefault(dependencyMap[4]);
+importAll(dependencyMap[5]);
+const jsx = arg1(dependencyMap[6]).jsx;
+const tmp3 = (arg0) => {
+  class RadialGradient {
     constructor() {
       self = this;
-      tmp = Stop(this, Stop);
-      length = arguments.length;
-      array = new Array(length);
-      for (let num = 0; num < length; num = num + 1) {
-        array[num] = arguments[num];
-      }
-      items = [];
-      combined = items.concat(array);
-      obj = closure_3(Stop);
-      tmp3 = closure_2;
-      if (closure_5()) {
-        if (!combined) {
-          combined = [];
-        }
-        tmp5 = closure_3;
-        constructResult = Reflect.construct(obj, combined, closure_3(self).constructor);
+      tmp = closure_2(this, RadialGradient);
+      obj = closure_5(RadialGradient);
+      tmp2 = closure_4;
+      if (closure_8()) {
+        tmp6 = globalThis;
+        _Reflect = Reflect;
+        tmp7 = closure_5;
+        tmp8 = arguments;
+        constructResult = Reflect.construct(obj, arguments, closure_5(self).constructor);
       } else {
-        constructResult = obj.apply(self, combined);
+        tmp3 = arguments;
+        tmp4 = arguments;
+        constructResult = obj(...arguments);
       }
-      tmp3Result = tmp3(self, constructResult);
-      Stop = tmp3Result;
-      tmp3Result.setNativeProps = () => {
-        const parent = tmp3Result.props.parent;
-        if (parent) {
-          parent.forceUpdate();
-        }
-      };
-      return tmp3Result;
+      return tmp2(self, constructResult);
     }
   }
-  let closure_0 = Stop;
-  callback2(Stop, Component);
+  const importDefault = RadialGradient;
+  callback2(RadialGradient, arg0);
   const items = [
     {
       key: "render",
       value: function render() {
-        return null;
+        let cx;
+        let cy;
+        let fx;
+        let r;
+        let rx;
+        let ry;
+        const RadialGradient = this;
+        const props = this.props;
+        ({ rx, ry, r, cx, cy, fx } = props);
+        if (undefined === fx) {
+          fx = cx;
+        }
+        let fy = props.fy;
+        let obj = { fx };
+        if (undefined === fy) {
+          fy = cy;
+        }
+        obj.fy = fy;
+        if (!rx) {
+          rx = r;
+        }
+        obj.rx = rx;
+        if (!ry) {
+          ry = r;
+        }
+        obj.ry = ry;
+        obj.cx = cx;
+        obj.cy = cy;
+        obj = {
+          ref(arg0) {
+            return self.refMethod(arg0);
+          }
+        };
+        return callback3(RadialGradient(closure_1[7]), Object.assign(obj, obj, RadialGradient(closure_1[8])(props, this)));
       }
     }
   ];
-  return callback(Stop, items);
-}(arg1(dependencyMap[5]).Component);
-tmp2.displayName = "Stop";
+  return callback(RadialGradient, items);
+}(importDefault(dependencyMap[9]));
+tmp3.displayName = "RadialGradient";
+tmp3.defaultProps = {};
 
-export default tmp2;
+export default tmp3;

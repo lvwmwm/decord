@@ -1,30 +1,29 @@
-// Module ID: 7530
-// Function ID: 60264
+// Module ID: 7534
+// Function ID: 60276
 // Name: AgeVerificationIncodeMethodSelectScreen
-// Dependencies: [31, 7526, 33, 7532, 3979, 4339, 7536, 4126, 689, 4329, 5781, 1212, 5515, 2, 31, 33, 4126, 689, 4329]
+// Dependencies: []
 // Exports: default
 
-// Module 7530 (AgeVerificationIncodeMethodSelectScreen)
-import module_31 from "module_31";
-import set from "set";
-import module_33 from "module_33";
-import { View } from "parseMessageEmbedForProps";
-import closure_7 from "_createForOfIteratorHelperLoose";
-import { VerificationMethod } from "isReactiveCheckEnabled";
-import { buildIncodeParamsInjection as closure_9 } from "WebView";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import module_4329 from "module_4329";
-
-({ jsx: closure_10, jsxs: closure_11 } = _createForOfIteratorHelperLoose);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { flex: 1, backgroundColor: require("module_4329").colors.BACKGROUND_BASE_LOWEST };
-_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.content = { padding: require("module_4329").space.PX_16 };
-const obj1 = { padding: require("module_4329").space.PX_16 };
-_createForOfIteratorHelperLoose.loadingOverlay = { backgroundColor: require("module_4329").colors.BACKGROUND_BASE_LOWEST };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-const result = module_4329.fileFinishedImporting("modules/age_assurance/native/AgeVerificationIncodeMethodSelectScreen.tsx");
+// Module 7534 (AgeVerificationIncodeMethodSelectScreen)
+let closure_3 = importDefault(dependencyMap[0]);
+let closure_4 = importDefault(dependencyMap[1]);
+let closure_5 = importAll(dependencyMap[2]);
+const View = arg1(dependencyMap[3]).View;
+let closure_7 = importDefault(dependencyMap[4]);
+const VerificationMethod = arg1(dependencyMap[5]).VerificationMethod;
+let closure_9 = arg1(dependencyMap[6]).buildIncodeParamsInjection;
+({ jsx: closure_10, jsxs: closure_11 } = arg1(dependencyMap[7]));
+let obj = arg1(dependencyMap[8]);
+obj = {};
+obj = { flex: 1, backgroundColor: importDefault(dependencyMap[9]).colors.BACKGROUND_BASE_LOWEST };
+obj.container = obj;
+const tmp2 = arg1(dependencyMap[7]);
+obj.content = { padding: importDefault(dependencyMap[9]).space.PX_16 };
+const obj1 = { padding: importDefault(dependencyMap[9]).space.PX_16 };
+obj.loadingOverlay = { backgroundColor: importDefault(dependencyMap[9]).colors.BACKGROUND_BASE_LOWEST };
+let closure_12 = obj.createStyles(obj);
+const obj2 = { backgroundColor: importDefault(dependencyMap[9]).colors.BACKGROUND_BASE_LOWEST };
+const result = arg1(dependencyMap[18]).fileFinishedImporting("modules/age_assurance/native/AgeVerificationIncodeMethodSelectScreen.tsx");
 
 export default function AgeVerificationIncodeMethodSelectScreen(onMethodSelected) {
   let tmp2;
@@ -35,8 +34,8 @@ export default function AgeVerificationIncodeMethodSelectScreen(onMethodSelected
   const importDefault = trustedOrigin;
   [tmp2, closure_2] = callback(React.useState(false), 2);
   const tmp = callback(React.useState(false), 2);
-  [tmp4, module_31] = callback(React.useState(false), 2);
-  const tmp5 = _createForOfIteratorHelperLoose();
+  [tmp4, closure_3] = callback(React.useState(false), 2);
+  const tmp5 = callback4();
   const items = [onMethodSelected, trustedOrigin];
   const callback = React.useCallback(() => {
     let closure_0 = callback(async (arg0) => {
@@ -77,7 +76,7 @@ export default function AgeVerificationIncodeMethodSelectScreen(onMethodSelected
     obj1.children = intl2.string(importDefault(dependencyMap[15]).5yWXmT);
     items1[1] = callback2(arg1(dependencyMap[13]).Text, obj1);
     if (tmp4) {
-      const obj2 = { INTEGRATION_CREATE: 1, ConstraintReasonCode: "center" };
+      const obj2 = {};
       const intl3 = arg1(dependencyMap[14]).intl;
       obj2.children = intl3.string(arg1(dependencyMap[14]).t.c6kn6F);
       tmp4 = callback2(arg1(dependencyMap[13]).Text, obj2);

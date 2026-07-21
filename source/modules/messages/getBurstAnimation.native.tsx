@@ -1,9 +1,9 @@
-// Module ID: 7017
-// Function ID: 56354
+// Module ID: 7021
+// Function ID: 56365
 // Name: items
 // Dependencies: []
 
-// Module 7017 (items)
+// Module 7021 (items)
 let closure_2 = importDefault(dependencyMap[0]);
 let obj = {
   load() {

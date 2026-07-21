@@ -1,10 +1,10 @@
-// Module ID: 8516
-// Function ID: 67895
+// Module ID: 8520
+// Function ID: 67907
 // Name: useTieredTenureBadgeClickHandler
 // Dependencies: []
 // Exports: useTieredTenureBadgeClickHandler
 
-// Module 8516 (useTieredTenureBadgeClickHandler)
+// Module 8520 (useTieredTenureBadgeClickHandler)
 let closure_3 = importAll(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 const PremiumTypes = arg1(dependencyMap[2]).PremiumTypes;

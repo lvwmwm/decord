@@ -149,7 +149,7 @@ let closure_13 = () => {
 let closure_14 = { code: "function pnpm_PerformanceMonitorTsx4(){const{jsFps}=this.__closure;var _jsFps$value;const text='JS: '+((_jsFps$value=jsFps.value)!==null&&_jsFps$value!==void 0?_jsFps$value:'N/A')+' ';return{text:text,defaultValue:text};}" };
 let closure_15 = { code: "function pnpm_PerformanceMonitorTsx5({timestamp:timestamp}){const{circularBuffer,createCircularDoublesBuffer,smoothingFrames,completeBufferRoutine,uiFps}=this.__closure;if(circularBuffer.value===null){circularBuffer.value=createCircularDoublesBuffer(smoothingFrames);}timestamp=Math.round(timestamp);const currentFps=completeBufferRoutine(circularBuffer.value,timestamp);uiFps.value=currentFps.toFixed(0);}" };
 let closure_16 = { code: "function pnpm_PerformanceMonitorTsx6(){const{uiFps}=this.__closure;var _uiFps$value;const text='UI: '+((_uiFps$value=uiFps.value)!==null&&_uiFps$value!==void 0?_uiFps$value:'N/A')+' ';return{text:text,defaultValue:text};}" };
-const styles = StyleSheet.create({ monitor: { "Null": "relative", "Null": "flex", "Null": "row", "Null": "center" }, header: {}, text: { fontVariant: ["GUILD_VERIFICATION"] }, container: {} });
+const styles = StyleSheet.create({ monitor: {}, header: {}, text: { fontVariant: [null] }, container: {} });
 
 export const PerformanceMonitor = function PerformanceMonitor(smoothingFrames) {
   smoothingFrames = smoothingFrames.smoothingFrames;

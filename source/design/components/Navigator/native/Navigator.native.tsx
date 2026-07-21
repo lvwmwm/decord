@@ -1,10 +1,10 @@
-// Module ID: 5515
-// Function ID: 46918
+// Module ID: 5517
+// Function ID: 46960
 // Name: NavigationStack
 // Dependencies: []
 // Exports: Navigator, useAccessibilityNativeStackOptions, useNavigatorScreens
 
-// Module 5515 (NavigationStack)
+// Module 5517 (NavigationStack)
 let StyleSheet;
 function NavigationStack(screens) {
   let detachInactiveScreens;
@@ -115,7 +115,7 @@ function NavigationStack(screens) {
       obj.headerBackImage = renderBackImage;
       obj.headerBackTitleVisible = false;
       let str2 = "center";
-      const items1 = [{ 9223372036854775807: false, 0: false }, headerTitleContainerStyle];
+      const items1 = [{ accessible: -0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000601517253400353, "Bool(false)": 0.0000000000000000000000000000000000000000000000000000000000000000000000011319598867187757 }, headerTitleContainerStyle];
       obj.headerTitleContainerStyle = items1;
       const items2 = [tmp.headerLeftContainerStyle, headerLeftContainerStyle];
       obj.headerLeftContainerStyle = items2;
@@ -148,7 +148,7 @@ function NavigationStack(screens) {
       if (navigatorShouldCrossfade) {
         let fn2 = (current) => {
           let obj = {};
-          obj = { opacity: progress.interpolate({ inputRange: [null, null], outputRange: [null, null] }) };
+          obj = { opacity: progress.interpolate({ inputRange: ["Text", "lc"], outputRange: ["Text", "lc"] }) };
           const progress = current.current.progress;
           obj.cardStyle = obj;
           return obj;
@@ -219,7 +219,7 @@ function WrappedNavigationStack(arg0) {
   let navigationTheme;
   let onStateChange;
   ({ initialRouteStack: closure_0, initialRouteState, navigationTheme } = arg0);
-  let obj = { "Null": false, "Null": null, "Null": "", "Null": null, "Null": null };
+  let obj = {};
   ({ initialRouteName, onStateChange } = arg0);
   Object.setPrototypeOf(null);
   const merged = Object.assign(arg0, obj);
@@ -268,8 +268,8 @@ obj["backgroundColor"] = importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_
 obj.container = obj;
 const tmp2 = arg1(dependencyMap[2]);
 obj.navbar = { borderBottomWidth: StyleSheet.hairlineWidth, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_LOW, borderBottomColor: importDefault(dependencyMap[5]).colors.BORDER_SUBTLE, shadowColor: "transparent" };
-obj.headerLeftContainerStyle = { 1268152339: "%SharedArrayBufferPrototype%", 1576886190: "ctaProps" };
-obj.headerRightContainerStyle = { "Bool(false)": "%SharedArrayBufferPrototype%", "Bool(false)": "ctaProps" };
+obj.headerLeftContainerStyle = { <string:3769257420>: 0.0000000000000000000000000000000003851862592832464, <string:995506788>: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001563140618774275 };
+obj.headerRightContainerStyle = { flex: 0.0000000000000000000000000000000003851862592832464, alignItems: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001563140618774275 };
 let closure_7 = obj.createStyles(obj);
 const obj1 = { borderBottomWidth: StyleSheet.hairlineWidth, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_LOW, borderBottomColor: importDefault(dependencyMap[5]).colors.BORDER_SUBTLE, shadowColor: "transparent" };
 const result = arg1(dependencyMap[19]).fileFinishedImporting("design/components/Navigator/native/Navigator.native.tsx");

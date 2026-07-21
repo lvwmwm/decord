@@ -1,10 +1,10 @@
-// Module ID: 10755
-// Function ID: 83594
+// Module ID: 10761
+// Function ID: 83617
 // Name: getSpeakerRowHeight
 // Dependencies: []
 // Exports: default
 
-// Module 10755 (getSpeakerRowHeight)
+// Module 10761 (getSpeakerRowHeight)
 function getSpeakerRowHeight(arg0, arg1) {
   if (arg0 > 0) {
     return arg1(dependencyMap[6]).SPEAKER_TILE_HEIGHTS.THIRD + 8;
@@ -22,7 +22,7 @@ const importAllResult = importAll(dependencyMap[1]);
 const MAX_AUDIENCE_ROW_LIMIT = arg1(dependencyMap[3]).MAX_AUDIENCE_ROW_LIMIT;
 const tmp2 = arg1(dependencyMap[2]);
 ({ jsx: closure_8, jsxs: closure_9 } = arg1(dependencyMap[4]));
-const obj = { animated: true, hasHandledScroll: "/assets/modules/video_calls/native/images", isAtBottom: 18, direction: arg1(dependencyMap[5]).CutoutDirection.RIGHT };
+const obj = { broadcastStatus: true, broadcastType: "/assets/modules/video_calls/native/images", damping: 18, direction: arg1(dependencyMap[5]).CutoutDirection.RIGHT };
 let closure_11 = { STREAM: 0, [0]: "STREAM", SPEAKER: 1, [1]: "SPEAKER", AUDIENCE: 2, [2]: "AUDIENCE" };
 let closure_12 = importAllResult.memo((channel) => {
   channel = channel.channel;

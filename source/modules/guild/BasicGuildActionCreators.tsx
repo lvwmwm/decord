@@ -1,10 +1,10 @@
-// Module ID: 16379
-// Function ID: 126564
+// Module ID: 16386
+// Function ID: 126595
 // Name: _fetchBasicGuild
 // Dependencies: []
 // Exports: fetchBasicGuild
 
-// Module 16379 (_fetchBasicGuild)
+// Module 16386 (_fetchBasicGuild)
 function _fetchBasicGuild() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);

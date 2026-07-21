@@ -1,10 +1,10 @@
-// Module ID: 4311
-// Function ID: 37745
+// Module ID: 4315
+// Function ID: 37793
 // Name: getNickname
 // Dependencies: []
 // Exports: useName
 
-// Module 4311 (getNickname)
+// Module 4315 (getNickname)
 function getNickname(id, channelId, user) {
   if (null == user) {
     return null;

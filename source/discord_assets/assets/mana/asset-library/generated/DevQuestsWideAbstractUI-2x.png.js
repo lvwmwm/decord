@@ -1,9 +1,9 @@
-// Module ID: 5988
-// Function ID: 49856
+// Module ID: 5990
+// Function ID: 49899
 // Name: metadata
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 5988 (metadata)
+// Module 5990 (metadata)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/DevQuestsWideAbstractUI-2x.png.js");
 

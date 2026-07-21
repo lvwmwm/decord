@@ -1,8 +1,8 @@
-// Module ID: 11452
-// Function ID: 89243
+// Module ID: 11459
+// Function ID: 89267
 // Dependencies: []
 
-// Module 11452
+// Module 11459
 const importAllResult = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 let closure_5 = importDefault(dependencyMap[2]);
@@ -15,17 +15,17 @@ let obj = {};
 obj = { backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_SURFACE_HIGHEST, borderRadius: importDefault(dependencyMap[7]).modules.mobile.TABLE_ROW_BORDER_RADIUS, paddingHorizontal: importDefault(dependencyMap[7]).space.PX_12, paddingVertical: importDefault(dependencyMap[7]).space.PX_12, gap: importDefault(dependencyMap[7]).space.PX_12, borderColor: importDefault(dependencyMap[7]).colors.BORDER_SUBTLE, borderWidth: 1 };
 const merged = Object.assign(importDefault(dependencyMap[7]).shadows.SHADOW_HIGH);
 obj.cardContainer = obj;
-obj1 = { -9223372036854775808: true, filter: true, gap: importDefault(dependencyMap[7]).space.PX_12 };
+obj1 = { gap: importDefault(dependencyMap[7]).space.PX_12 };
 obj.headerRow = obj1;
 const tmp3 = arg1(dependencyMap[5]);
 obj.guildIcon = { borderRadius: importDefault(dependencyMap[7]).radii.md };
 obj.textColumn = {};
-const obj3 = { -9223372036854775808: true, filter: true, gap: importDefault(dependencyMap[7]).space.PX_4 };
-obj.nameRow = obj3;
+const obj2 = { borderRadius: importDefault(dependencyMap[7]).radii.md };
+obj.nameRow = { gap: importDefault(dependencyMap[7]).space.PX_4 };
 obj.chevron = { marginLeft: -2 };
 obj.badge = { flexShrink: 0 };
 let closure_11 = obj1.createStyles(obj);
-const obj2 = { borderRadius: importDefault(dependencyMap[7]).radii.md };
+const obj3 = { gap: importDefault(dependencyMap[7]).space.PX_4 };
 const memoResult = importAllResult.memo(function ChatInputGuardLurkingPreviewBar(guildId) {
   guildId = guildId.guildId;
   const arg1 = guildId;
@@ -60,7 +60,7 @@ const memoResult = importAllResult.memo(function ChatInputGuardLurkingPreviewBar
     items4[2] = callback(arg1(dependencyMap[18]).ChevronSmallRightIcon, obj6);
     obj3.children = items4;
     const items5 = [callback2(View, obj3), ];
-    const obj7 = {};
+    const obj7 = { -9223372036854775808: 400, 0: 20, 0: 24 };
     const intl = arg1(dependencyMap[19]).intl;
     obj7.children = intl.string(arg1(dependencyMap[19]).t.BRSnEj);
     items5[1] = callback(arg1(dependencyMap[15]).Text, obj7);

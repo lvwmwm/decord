@@ -1,10 +1,10 @@
-// Module ID: 10048
-// Function ID: 77621
+// Module ID: 10054
+// Function ID: 77639
 // Name: CreateGuildContainer
 // Dependencies: []
 // Exports: default
 
-// Module 10048 (CreateGuildContainer)
+// Module 10054 (CreateGuildContainer)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 let closure_5 = importAll(dependencyMap[2]);
@@ -34,7 +34,7 @@ export default function CreateGuildContainer(onCreate) {
   const dependencyMap = onHubGuildInfoSet;
   const isCommunityIntent = onCreate.isCommunityIntent;
   let callback = isCommunityIntent;
-  let obj = { discodo: false, message1: null, deafen: "", undeafen: null, mute: null };
+  let obj = {};
   Object.setPrototypeOf(null);
   const merged = Object.assign(onCreate, obj);
   let callback2;

@@ -1,10 +1,10 @@
-// Module ID: 6774
-// Function ID: 53412
+// Module ID: 6780
+// Function ID: 53461
 // Name: getProductOrbPrice
 // Dependencies: []
 // Exports: getProductSkuIds, getProductsWithOrbsPrice, getSelectedProduct, isDynamicProduct, isOrbsExclusiveProduct
 
-// Module 6774 (getProductOrbPrice)
+// Module 6780 (getProductOrbPrice)
 function getProductOrbPrice(arg0) {
   let substr;
   if (null != arg0.product.prices[arg0.hasShopDiscount ? closure_5.PREMIUM_TIER_2 : closure_5.DEFAULT]) {

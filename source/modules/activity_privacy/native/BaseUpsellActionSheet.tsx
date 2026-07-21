@@ -1,10 +1,10 @@
-// Module ID: 13626
-// Function ID: 103268
+// Module ID: 13633
+// Function ID: 103291
 // Name: renderSuccessIcon
 // Dependencies: []
 // Exports: default
 
-// Module 13626 (renderSuccessIcon)
+// Module 13633 (renderSuccessIcon)
 function renderSuccessIcon() {
   const obj = { size: "sm", color: importDefault(dependencyMap[5]).colors.STATUS_POSITIVE, secondaryColor: importDefault(dependencyMap[5]).colors.WHITE };
   return callback(arg1(dependencyMap[4]).CircleCheckIcon, obj);
@@ -85,7 +85,7 @@ function GuildCard(guildIds) {
   obj4.color = str2;
   obj4.children = stringResult;
   const items5 = [callback(arg1(dependencyMap[11]).Text, obj4), ];
-  const obj5 = { style: tmp.guildSummary };
+  const obj5 = { -9223372036854775808: "contain", 0: "100%", 0: 34, style: tmp.guildSummary };
   const intl4 = arg1(dependencyMap[10]).intl;
   const t = arg1(dependencyMap[10]).t;
   const obj6 = { guildName: str };
@@ -162,11 +162,11 @@ export default function BaseUpsellActionSheet(toastContent) {
   }, []);
   let obj = { startExpanded: true };
   obj = { style: tmp.container };
-  obj = { 0: "flex", 9223372036854775807: "row", 0: 1, -9223372036854775808: "center", style: tmp.title, children: title };
+  obj = { style: tmp.title, children: title };
   const items1 = [callback(arg1(dependencyMap[11]).Text, obj), callback(arg1(dependencyMap[11]).Text, { style: tmp.description, children: subtitle }), callback(GuildCard, { guildIds: affectedGuildIds, direction, onPress: onCardPress }), ];
   const obj2 = { style: tmp.buttonsContainer };
   const items2 = [callback(arg1(dependencyMap[17]).Button, { text: confirmText, onPress: callback }), ];
-  const obj3 = { <string:1522289750>: "r", <string:570601313>: "isArray" };
+  const obj3 = { 9223372036854775807: null, -9223372036854775808: null };
   const intl = arg1(dependencyMap[10]).intl;
   obj3.text = intl.string(arg1(dependencyMap[10]).t.X1rGEm);
   obj3.onPress = callback1;

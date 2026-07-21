@@ -1,13 +1,15 @@
-// Module ID: 12087
-// Function ID: 93237
+// Module ID: 12094
+// Function ID: 93260
 // Name: CustomLinkType
-// Dependencies: []
+// Dependencies: [1953825491, 683]
 // Exports: decodeCustomActivityLink
 
-// Module 12087 (CustomLinkType)
+// Module 12094 (CustomLinkType)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+
 let closure_0 = importDefault(dependencyMap[0]);
 const obj = { MANAGED: 0, [0]: "MANAGED", QUICK: 1, [1]: "QUICK" };
-const result = arg1(dependencyMap[1]).fileFinishedImporting("../discord_common/js/shared/activities/utils/CustomActivityLinkUtils.tsx");
+const result = _isNativeReflectConstruct.fileFinishedImporting("../discord_common/js/shared/activities/utils/CustomActivityLinkUtils.tsx");
 
 export const CustomLinkType = obj;
 export const decodeCustomActivityLink = function decodeCustomActivityLink(link_id) {

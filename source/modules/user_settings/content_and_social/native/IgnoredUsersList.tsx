@@ -1,10 +1,10 @@
-// Module ID: 13581
-// Function ID: 102962
+// Module ID: 13588
+// Function ID: 102985
 // Name: IgnoredUsersList
 // Dependencies: []
 // Exports: default
 
-// Module 13581 (IgnoredUsersList)
+// Module 13588 (IgnoredUsersList)
 function IgnoredUsersList(userIds) {
   userIds = userIds.userIds;
   const tmp = callback3();
@@ -18,7 +18,7 @@ function IgnoredUsersList(userIds) {
     obj = { value: tmp3 };
     obj = { bottom: true, style: tmp.list };
     const obj1 = {};
-    const obj2 = { Promise: 10, marginTop: null, flags: "flex-start", style: tmp.sectionLabelStyle };
+    const obj2 = { style: tmp.sectionLabelStyle };
     const intl2 = arg1(dependencyMap[10]).intl;
     const obj3 = { numberOfIgnoredUsers: userIds.length };
     obj2.children = intl2.formatToPlainString(arg1(dependencyMap[10]).t.iNKUhU, obj3);

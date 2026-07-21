@@ -1,10 +1,16 @@
-// Module ID: 10377
-// Function ID: 80025
+// Module ID: 10383
+// Function ID: 80048
 // Name: _arrayLikeToArray
-// Dependencies: []
+// Dependencies: [0, 0, 0, 0, 4294967295, 4294967295, 0]
 // Exports: default
 
-// Module 10377 (_arrayLikeToArray)
+// Module 10383 (_arrayLikeToArray)
+import __exportStarResult1 from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
+
 let done;
 function _arrayLikeToArray(arg0, arg1) {
   let length;
@@ -18,16 +24,12 @@ function _arrayLikeToArray(arg0, arg1) {
   return ArrayResult;
 }
 let obj = {};
-const _module = require(dependencyMap[0]);
 obj = {};
-const _module1 = require(dependencyMap[1]);
-const merged = Object.assign(_module1.getSafeAreaInsets("main"));
-obj.main = _module.makeMutable(obj);
-const _module2 = require(dependencyMap[0]);
+const merged = Object.assign(__exportStarResult1.getSafeAreaInsets("main"));
+obj.main = __exportStarResult1.makeMutable(obj);
 obj = {};
-const _module3 = require(dependencyMap[1]);
-const merged1 = Object.assign(_module3.getSafeAreaInsets("share"));
-obj.share = _module2.makeMutable(obj);
+const merged1 = Object.assign(__exportStarResult1.getSafeAreaInsets("share"));
+obj.share = __exportStarResult1.makeMutable(obj);
 function _loop(value) {
   const require = value;
   importDefault(dependencyMap[2])((arg0) => {
@@ -112,8 +114,7 @@ if (!iter.done) {
   } while (!done);
 }
 let closure_4 = { code: "function getSafeAreaInsetsWorklet_useSafeAreaInsetsSharedValueNativeTsx1(appEntryKey='main'){const{safeAreaInsetsSharedValues}=this.__closure;return safeAreaInsetsSharedValues[appEntryKey].get();}" };
-const _module4 = require(dependencyMap[6]);
-const result = _module4.fileFinishedImporting("modules/safe_area/useSafeAreaInsetsSharedValue.native.tsx");
+const result = __exportStarResult1.fileFinishedImporting("modules/safe_area/useSafeAreaInsetsSharedValue.native.tsx");
 
 export default function useSafeAreaInsetsSharedValue() {
   const obj = require(dependencyMap[5]);

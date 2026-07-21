@@ -1,10 +1,10 @@
-// Module ID: 7117
-// Function ID: 57206
+// Module ID: 7121
+// Function ID: 57217
 // Name: useGetDiscountOffer
 // Dependencies: []
 // Exports: usePremiumDiscountOffer, usePremiumGroupDiscountOffer
 
-// Module 7117 (useGetDiscountOffer)
+// Module 7121 (useGetDiscountOffer)
 function useGetDiscountOffer(closure_4, offerIds) {
   const values = Object.values(offerIds(dependencyMap[3]).DiscountIdToProductOfferId[closure_4]);
   let tmp2 = null;

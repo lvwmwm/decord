@@ -1,9 +1,9 @@
-// Module ID: 4188
-// Function ID: 35984
+// Module ID: 4192
+// Function ID: 36032
 // Name: Notifications
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 4188 (Notifications)
+// Module 4192 (Notifications)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_common/js/shared/shared-constants/Notifications.tsx");
 

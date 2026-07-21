@@ -1,10 +1,10 @@
-// Module ID: 10613
-// Function ID: 82802
+// Module ID: 10619
+// Function ID: 82825
 // Name: useIsInvitedToSpeak
 // Dependencies: []
 // Exports: default
 
-// Module 10613 (useIsInvitedToSpeak)
+// Module 10619 (useIsInvitedToSpeak)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/stage_channels/useIsInvitedToSpeak.tsx");

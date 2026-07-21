@@ -1,16 +1,16 @@
-// Module ID: 7988
-// Function ID: 63509
+// Module ID: 7992
+// Function ID: 63521
 // Name: PremiumFeaturesCards
 // Dependencies: []
 // Exports: default
 
-// Module 7988 (PremiumFeaturesCards)
+// Module 7992 (PremiumFeaturesCards)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 const PremiumTypes = arg1(dependencyMap[2]).PremiumTypes;
 const jsx = arg1(dependencyMap[3]).jsx;
 let obj = arg1(dependencyMap[4]);
-let closure_5 = obj.createStyles({ container: { "Bool(false)": 12, "Bool(false)": 4 } });
+let closure_5 = obj.createStyles({ container: { 9223372036854775807: 12, 9223372036854775807: 4 } });
 obj = { TIER_0_LEADING: 0, [0]: "TIER_0_LEADING", TIER_2_LEADING: 1, [1]: "TIER_2_LEADING" };
 const result = arg1(dependencyMap[6]).fileFinishedImporting("modules/user_settings/premium/native/PremiumFeaturesCards.tsx");
 

@@ -1,10 +1,10 @@
-// Module ID: 12508
-// Function ID: 95988
+// Module ID: 12515
+// Function ID: 96011
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 // Exports: detectLocalApps
 
-// Module 12508 (_createForOfIteratorHelperLoose)
+// Module 12515 (_createForOfIteratorHelperLoose)
 function _createForOfIteratorHelperLoose(@@iterator) {
   let arg1 = Symbol_iterator;
   @@iterator = "undefined" !== typeof Symbol;
@@ -90,21 +90,21 @@ function isGameCommunityUpsellMultiExperimentEnabled() {
 }
 function getDetectableApp(arg0) {
   if (arg1(dependencyMap[4]).DetectableAppNames.ROBLOX === arg0) {
-    return { <string:1408499716>: 1912603162, <string:2118320132>: 128 };
+    return {};
   } else if (arg1(dependencyMap[4]).DetectableAppNames.MINECRAFT === arg0) {
-    let obj = { <string:1408499716>: 1358954496, <string:2118320132>: -1603116296, predicate: isGameCommunityUpsellMultiExperimentEnabled };
+    let obj = { "Null": "constructor", "Null": "height", predicate: isGameCommunityUpsellMultiExperimentEnabled };
     return obj;
   } else if (arg1(dependencyMap[4]).DetectableAppNames.FORTNITE === arg0) {
     obj = { predicate: isGameCommunityUpsellMultiExperimentEnabled };
     return obj;
   } else if (arg1(dependencyMap[4]).DetectableAppNames.GENSHIN === arg0) {
-    const obj1 = { predicate: isGameCommunityUpsellMultiExperimentEnabled };
+    const obj1 = { "Null": 180184, "Null": 41074, predicate: isGameCommunityUpsellMultiExperimentEnabled };
     return obj1;
   } else if (arg1(dependencyMap[4]).DetectableAppNames.PUBG_MOBILE === arg0) {
-    const obj2 = { <string:1408499716>: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000022784756364311286, <string:2118320132>: 13344978685630676000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, predicate: isGameCommunityUpsellMultiExperimentEnabled };
+    const obj2 = { predicate: isGameCommunityUpsellMultiExperimentEnabled };
     return obj2;
   } else if (arg1(dependencyMap[4]).DetectableAppNames.CALL_OF_DUTY_MOBILE === arg0) {
-    const obj3 = { predicate: isGameCommunityUpsellMultiExperimentEnabled };
+    const obj3 = { "Null": null, "Null": null, predicate: isGameCommunityUpsellMultiExperimentEnabled };
     return obj3;
   } else if (arg1(dependencyMap[4]).DetectableAppNames.CLASH_OF_CLANS === arg0) {
     const obj4 = { predicate: isGameCommunityUpsellMultiExperimentEnabled };
@@ -113,31 +113,31 @@ function getDetectableApp(arg0) {
     const obj5 = { predicate: isGameCommunityUpsellMultiExperimentEnabled };
     return obj5;
   } else if (arg1(dependencyMap[4]).DetectableAppNames.GARENA_FREE_FIRE === arg0) {
-    const obj6 = { <string:1408499716>: null, <string:2118320132>: null, predicate: isGameCommunityUpsellMultiExperimentEnabled };
+    const obj6 = { "Null": true, "Null": true, predicate: isGameCommunityUpsellMultiExperimentEnabled };
     return obj6;
   } else if (arg1(dependencyMap[4]).DetectableAppNames.POKEMON_GO === arg0) {
-    const obj7 = { <string:1408499716>: 123, <string:2118320132>: 102, predicate: isGameCommunityUpsellMultiExperimentEnabled };
+    const obj7 = { predicate: isGameCommunityUpsellMultiExperimentEnabled };
     return obj7;
   } else if (arg1(dependencyMap[4]).DetectableAppNames.POKEMON_TCG_POCKET === arg0) {
-    const obj8 = { <string:1408499716>: 54, <string:2118320132>: 12, predicate: isGameCommunityUpsellMultiExperimentEnabled };
+    const obj8 = { predicate: isGameCommunityUpsellMultiExperimentEnabled };
     return obj8;
   } else if (arg1(dependencyMap[4]).DetectableAppNames.CLASH_ROYALE === arg0) {
-    const obj9 = { <string:1408499716>: -79, <string:2118320132>: 102, predicate: isGameCommunityUpsellMultiExperimentEnabled };
+    const obj9 = { predicate: isGameCommunityUpsellMultiExperimentEnabled };
     return obj9;
   } else if (arg1(dependencyMap[4]).DetectableAppNames.AMONG_US === arg0) {
-    const obj10 = { <string:1408499716>: 123, <string:2118320132>: 157, predicate: isGameCommunityUpsellMultiExperimentEnabled };
+    const obj10 = { predicate: isGameCommunityUpsellMultiExperimentEnabled };
     return obj10;
   } else if (arg1(dependencyMap[4]).DetectableAppNames.MONOPOLY_GO === arg0) {
-    const obj11 = { <string:1408499716>: 62, <string:2118320132>: 72, predicate: isGameCommunityUpsellMultiExperimentEnabled };
+    const obj11 = { predicate: isGameCommunityUpsellMultiExperimentEnabled };
     return obj11;
   } else if (arg1(dependencyMap[4]).DetectableAppNames.BRAWL_STARS === arg0) {
-    const obj12 = { <string:1408499716>: -28, <string:2118320132>: 161, predicate: isGameCommunityUpsellMultiExperimentEnabled };
+    const obj12 = { predicate: isGameCommunityUpsellMultiExperimentEnabled };
     return obj12;
   } else if (arg1(dependencyMap[4]).DetectableAppNames.BRAWLHALLA === arg0) {
     const obj13 = { predicate: isGameCommunityUpsellMultiExperimentEnabled };
     return obj13;
   } else if (arg1(dependencyMap[4]).DetectableAppNames.WUTHERING_WAVES === arg0) {
-    obj = { <string:1408499716>: 3, <string:2118320132>: 1024, predicate: isGameCommunityUpsellMultiExperimentEnabled };
+    obj = { "Null": null, "Null": null, predicate: isGameCommunityUpsellMultiExperimentEnabled };
     return obj;
   }
 }

@@ -1,17 +1,16 @@
-// Module ID: 7002
-// Function ID: 56164
+// Module ID: 7006
+// Function ID: 56175
 // Name: _isNativeReflectConstruct
 // Dependencies: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 
-// Module 7002 (_isNativeReflectConstruct)
-import closure_2 from "result";
-import closure_3 from "result";
-import closure_4 from "result";
-import closure_5 from "result";
-import closure_6 from "result";
-import { ALL_CHANNEL_TYPES } from "result";
-import closure_8 from "result";
-import result from "result";
+// Module 7006 (_isNativeReflectConstruct)
+import __exportStarResult1 from "__exportStarResult1";
+import closure_3 from "__exportStarResult1";
+import closure_4 from "__exportStarResult1";
+import closure_5 from "__exportStarResult1";
+import closure_6 from "__exportStarResult1";
+import { ALL_CHANNEL_TYPES } from "__exportStarResult1";
+import closure_8 from "__exportStarResult1";
 
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
@@ -178,7 +177,7 @@ let tmp2 = (Store) => {
   class ThreadMembersStore {
     constructor() {
       self = this;
-      tmp = closure_2(this, ThreadMembersStore);
+      tmp = __exportStarResult1(this, ThreadMembersStore);
       obj = closure_5(ThreadMembersStore);
       tmp2 = closure_4;
       if (closure_10()) {
@@ -241,9 +240,9 @@ let tmp2 = (Store) => {
     }
   };
   return callback(ThreadMembersStore, items);
-}(require("result").Store);
+}(require("__exportStarResult1").Store);
 tmp2.displayName = "ThreadMembersStore";
-tmp2 = new tmp2(require("result"), {
+tmp2 = new tmp2(require("__exportStarResult1"), {
   CONNECTION_OPEN: function handleConnectionOpen(guilds) {
     let closure_9 = {};
     guilds = guilds.guilds;
@@ -309,6 +308,6 @@ tmp2 = new tmp2(require("result"), {
     return flag2;
   }
 });
-result = result.fileFinishedImporting("modules/threads/ThreadMembersStore.tsx");
+const result = require("__exportStarResult1").fileFinishedImporting("modules/threads/ThreadMembersStore.tsx");
 
 export default tmp2;

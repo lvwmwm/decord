@@ -1,9 +1,9 @@
-// Module ID: 8476
-// Function ID: 67696
+// Module ID: 8480
+// Function ID: 67708
 // Name: SHARE_APPS_KEY
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 8476 (SHARE_APPS_KEY)
+// Module 8480 (SHARE_APPS_KEY)
 let obj = { TWITTER: "twitter", WHATSAPP: "whatsapp", GMAIL: "googlegmail", LINE: "line", MESSENGER: "fb-messenger", TELEGRAM: "tg" };
 obj = { [obj.TWITTER]: (arg0) => "twitter://post?message=" + arg0, [obj.WHATSAPP]: (arg0) => "whatsapp://send?text=" + arg0, [obj.GMAIL]: (arg0, arg1) => "googlegmail://co?subject=" + arg0 + "&body=" + arg1, [obj.LINE]: (arg0) => "https://line.me/R/msg/text/?" + arg0, [obj.MESSENGER]: (arg0) => "fb-messenger://share/?link=" + arg0, [obj.TELEGRAM]: (arg0, arg1) => "https://telegram.me/share/url?url=" + arg1 + "&text=" + arg0 };
 const _module = require(dependencyMap[0]);

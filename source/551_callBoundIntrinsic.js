@@ -1,13 +1,12 @@
 // Module ID: 551
 // Function ID: 6667
 // Name: callBoundIntrinsic
-// Dependencies: [0, 350]
+// Dependencies: []
 
 // Module 551 (callBoundIntrinsic)
-import result from "result";
-
-const items = [require("module_350")("%String.prototype.indexOf%")];
-let closure_2 = result(items);
+const _module = require(dependencyMap[0]);
+const items = [require(dependencyMap[1])("%String.prototype.indexOf%")];
+let closure_2 = _module(items);
 
 export default function callBoundIntrinsic(arg0, arg1) {
   const tmp = require(dependencyMap[1])(arg0, arg1);

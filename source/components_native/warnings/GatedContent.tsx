@@ -1,10 +1,10 @@
-// Module ID: 9996
-// Function ID: 77283
+// Module ID: 10002
+// Function ID: 77301
 // Name: GatedContent
 // Dependencies: []
 // Exports: default
 
-// Module 9996 (GatedContent)
+// Module 10002 (GatedContent)
 let closure_2 = importAll(dependencyMap[0]);
 ({ jsx: closure_3, jsxs: closure_4 } = arg1(dependencyMap[1]));
 let obj = arg1(dependencyMap[2]);
@@ -13,7 +13,7 @@ obj = { backgroundColor: importDefault(dependencyMap[3]).colors.BACKGROUND_BASE_
 obj.container = obj;
 obj.title = { textAlign: "center" };
 obj.description = { textAlign: "center" };
-obj.buttonGroup = {};
+obj.buttonGroup = { alignItems: "flex", justifyContent: "column" };
 let closure_5 = obj.createStyles(obj);
 const tmp2 = arg1(dependencyMap[1]);
 const result = arg1(dependencyMap[9]).fileFinishedImporting("components_native/warnings/GatedContent.tsx");
@@ -66,7 +66,7 @@ export default function GatedContent(onAgree) {
   obj = { align: "center" };
   obj = { style: tmp.title, children: title };
   const items3 = [channelId(arg1(dependencyMap[6]).Text, obj), subtitle, ];
-  const obj1 = { type: true, isConnected: true, isInternetReachable: true, details: true, style: tmp.description, children: description };
+  const obj1 = { <string:3422816600>: true, <string:99133337>: true, <string:77661089>: true, <string:3265332897>: true, style: tmp.description, children: description };
   items3[2] = channelId(arg1(dependencyMap[6]).Text, obj1);
   obj.children = items3;
   const items4 = [guildId(arg1(dependencyMap[5]).Stack, obj), ];

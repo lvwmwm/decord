@@ -1,10 +1,10 @@
-// Module ID: 7006
-// Function ID: 56228
+// Module ID: 7010
+// Function ID: 56239
 // Name: collectThreadMetadata
 // Dependencies: []
 // Exports: collectThreadMetadata
 
-// Module 7006 (collectThreadMetadata)
+// Module 7010 (collectThreadMetadata)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 const THREAD_CHANNEL_TYPES = arg1(dependencyMap[2]).THREAD_CHANNEL_TYPES;

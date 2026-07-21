@@ -1,10 +1,10 @@
-// Module ID: 14814
-// Function ID: 111668
+// Module ID: 14821
+// Function ID: 111692
 // Name: HappeningNowCardEmbeddedActivity
 // Dependencies: []
 // Exports: default
 
-// Module 14814 (HappeningNowCardEmbeddedActivity)
+// Module 14821 (HappeningNowCardEmbeddedActivity)
 let HAPPENING_NOW_CONTENT_HEIGHT;
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
@@ -15,7 +15,7 @@ const AnalyticEvents = arg1(dependencyMap[5]).AnalyticEvents;
 const tmp2 = arg1(dependencyMap[4]);
 ({ jsx: closure_9, jsxs: closure_10 } = arg1(dependencyMap[6]));
 let obj = arg1(dependencyMap[7]);
-obj = { content: { "Bool(false)": "Lightbox Frame", "Bool(false)": "EdgeHTML" }, cardImage: { height: HAPPENING_NOW_CONTENT_HEIGHT, minWidth: HAPPENING_NOW_CONTENT_HEIGHT, marginRight: 12 } };
+obj = { content: {}, cardImage: { height: HAPPENING_NOW_CONTENT_HEIGHT, minWidth: HAPPENING_NOW_CONTENT_HEIGHT, marginRight: 12 } };
 obj = { width: HAPPENING_NOW_CONTENT_HEIGHT, height: HAPPENING_NOW_CONTENT_HEIGHT, borderRadius: importDefault(dependencyMap[8]).radii.sm, borderWidth: 1, borderColor: importDefault(dependencyMap[8]).colors.BORDER_SUBTLE };
 obj.activityBackground = obj;
 obj.cardTitle = { marginTop: 2 };

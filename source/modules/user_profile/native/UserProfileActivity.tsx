@@ -1,10 +1,10 @@
-// Module ID: 11898
-// Function ID: 92103
+// Module ID: 11905
+// Function ID: 92126
 // Name: ActivityCardText
 // Dependencies: []
 // Exports: default
 
-// Module 11898 (ActivityCardText)
+// Module 11905 (ActivityCardText)
 function ActivityCardText(children) {
   let obj = Object.create(null);
   obj.children = 0;
@@ -719,18 +719,18 @@ function VoiceCallActivityCard(arg0) {
         const obj2 = stateFromStores(newestAnalyticsLocation[67]);
         channel(newestAnalyticsLocation[68]).openGuildVoiceModal(channel, newestAnalyticsLocation);
       };
-      const obj7 = { INTEGRATION_CREATE: 131072.00119209292, ConstraintReasonCode: -293983030121430100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 };
+      const obj7 = {};
       const obj8 = { style: tmp.voiceCallNameIconWrapper };
-      const obj9 = { "Bool(true)": "setRecipientUser", "Bool(true)": "Array", "Bool(true)": "isArray", channel };
+      const obj9 = { "Bool(true)": null, "Bool(true)": null, "Bool(true)": null, channel };
       obj8.children = callback2(importDefault(dependencyMap[65]), obj9);
       const items4 = [callback2(closure_7, obj8), tmp3];
       obj7.children = items4;
       obj5.children = callback3(arg1(dependencyMap[18]).Text, obj7);
       let tmp33 = callback2(arg1(dependencyMap[41]).PressableOpacity, obj5);
     } else {
-      const obj10 = { INTEGRATION_CREATE: 131072.00119209292, ConstraintReasonCode: -293983030121430100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 };
+      const obj10 = {};
       const obj11 = { style: tmp.voiceCallNameIconWrapper };
-      const obj12 = { "Bool(true)": "setRecipientUser", "Bool(true)": "Array", "Bool(true)": "isArray", channel };
+      const obj12 = { "Bool(true)": null, "Bool(true)": null, "Bool(true)": null, channel };
       obj11.children = callback2(importDefault(dependencyMap[65]), obj12);
       const items5 = [callback2(closure_7, obj11), tmp3];
       obj10.children = items5;
@@ -794,29 +794,29 @@ obj = { card: { gap: 12 }, cardTitle: { marginBottom: 0 } };
 obj = { tintColor: importDefault(dependencyMap[16]).colors.TEXT_SUBTLE };
 let num = 16;
 obj.cardTitleIcon = obj;
-obj.body = { 9223372036854775807: 80, 0: 80, 9223372036854775807: 40 };
+obj.body = {};
 obj.content = { flex: 1 };
 obj.imageContainer = { position: "relative" };
-obj.imageAspectRatio = { "Null": true, "Null": 0.001, "Null": 0.001 };
-obj.crunchyrollImageAspectRatio = { "Null": "<string:1363103842>", "Null": "<string:2353175834>", "Null": "<string:2348810507>" };
+obj.imageAspectRatio = { badge_text: true, PARTY: 0.001, paddingVertical: 0.001 };
+obj.crunchyrollImageAspectRatio = { badge_text: "<string:1363103842>", PARTY: "<string:4131526215>", paddingVertical: "<string:4127195403>" };
 const tmp4 = arg1(dependencyMap[14]);
 obj.largeImage = { borderRadius: importDefault(dependencyMap[16]).radii.xs };
-const obj2 = { "Bool(false)": "png", "Bool(false)": "iconOriginalMd5", "Bool(false)": "bannerOriginalMd5", "Null": "splashOriginalMd5", backgroundColor: importDefault(dependencyMap[16]).colors.BACKGROUND_BASE_LOW };
+const obj2 = { 0: "png", 0: "iconOriginalMd5", 0: "bannerOriginalMd5", 0: "splashOriginalMd5", backgroundColor: importDefault(dependencyMap[16]).colors.BACKGROUND_BASE_LOW };
 obj.smallImageBackground = obj2;
 obj.smallImage = {};
 obj.badges = {};
-const obj3 = { alignContent: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000092349256818313, justifyContent: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000061976, sectionIndex: -13336029583459642000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, borderTopColor: importDefault(dependencyMap[16]).colors.BORDER_SUBTLE };
+const obj3 = { kkvDatabase: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000092349256818313, childSpanTimeout: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000061976, sectionIndex: -13336029583459642000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, borderTopColor: importDefault(dependencyMap[16]).colors.BORDER_SUBTLE };
 obj.voiceChannelDivider = obj3;
-obj.customButtons = { 0: true, 9223372036854775807: "/assets/modules/user_settings/connections/native/two_way_link/images" };
-const obj1 = { borderRadius: importDefault(dependencyMap[16]).radii.xs };
-obj.streamPreview = { borderRadius: importDefault(dependencyMap[16]).radii.xs };
+obj.customButtons = { stiffness: null, damping: null };
+const obj4 = { 975478355: null, 1656971454: null, 2035461794: null, borderRadius: importDefault(dependencyMap[16]).radii.xs };
+obj.streamPreview = obj4;
 obj.voiceActivityCard = { padding: 0 };
 obj.voiceSettings = {};
-const obj4 = { borderRadius: importDefault(dependencyMap[16]).radii.xs };
-obj.voiceSettingsDivider = { borderTopColor: importDefault(dependencyMap[16]).colors.BORDER_SUBTLE, marginHorizontal: -CARD_PADDING, paddingHorizontal: CARD_PADDING };
-obj.voiceCallContent = { ackUserGuildJoinRequest: false, messagePreviewContainer: false };
+const obj5 = { kkvDatabase: "confetti", childSpanTimeout: 60, sectionIndex: "days", itemIndex: true, borderTopColor: importDefault(dependencyMap[16]).colors.BORDER_SUBTLE, marginHorizontal: -CARD_PADDING, paddingHorizontal: CARD_PADDING };
+obj.voiceSettingsDivider = obj5;
+obj.voiceCallContent = { fontWeight: false, style: false };
 const obj6 = {};
-const obj5 = { borderTopColor: importDefault(dependencyMap[16]).colors.BORDER_SUBTLE, marginHorizontal: -CARD_PADDING, paddingHorizontal: CARD_PADDING };
+const obj1 = { borderRadius: importDefault(dependencyMap[16]).radii.xs };
 if (obj10.isAndroid()) {
   num = 12;
 }

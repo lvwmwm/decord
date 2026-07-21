@@ -1,10 +1,10 @@
-// Module ID: 12213
-// Function ID: 93771
+// Module ID: 12220
+// Function ID: 93794
 // Name: DeleteMessageElement
 // Dependencies: []
 // Exports: default
 
-// Module 12213 (DeleteMessageElement)
+// Module 12220 (DeleteMessageElement)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 let closure_5 = importDefault(dependencyMap[2]);

@@ -1,9 +1,9 @@
-// Module ID: 8871
-// Function ID: 69953
+// Module ID: 8875
+// Function ID: 69965
 // Name: generateDisplayableCode
 // Dependencies: []
 
-// Module 8871 (generateDisplayableCode)
+// Module 8875 (generateDisplayableCode)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_common/js/packages/libdave/package/src/index.ts");
 

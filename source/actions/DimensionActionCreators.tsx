@@ -1,8 +1,8 @@
-// Module ID: 9873
-// Function ID: 76478
+// Module ID: 9878
+// Function ID: 76494
 // Dependencies: []
 
-// Module 9873
+// Module 9878
 const _module = require(dependencyMap[1]);
 const result = _module.fileFinishedImporting("actions/DimensionActionCreators.tsx");
 
@@ -31,7 +31,7 @@ export default {
   },
   clearChannelListScrollTo(guildId) {
     let obj = importDefault(dependencyMap[0]);
-    obj = { position: "onShareClick", left: "ChatArrowRightIcon", right: "png", guildId, channelIds: [] };
+    obj = { guildId, channelIds: [] };
     obj.dispatch(obj);
   },
   clearChannelDimensions(channelId) {

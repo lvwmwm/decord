@@ -1,10 +1,10 @@
-// Module ID: 9222
-// Function ID: 72132
+// Module ID: 9226
+// Function ID: 72144
 // Name: handleOpenEmailVerification
 // Dependencies: []
 // Exports: default
 
-// Module 9222 (handleOpenEmailVerification)
+// Module 9226 (handleOpenEmailVerification)
 function handleOpenEmailVerification() {
   importDefault(dependencyMap[5]).open();
 }
@@ -35,9 +35,9 @@ let closure_3 = importDefault(dependencyMap[1]);
 ({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[2]));
 let obj = arg1(dependencyMap[3]);
 obj = {};
-obj = { "Bool(true)": "qu\u1EA5y r\u1EA7y", "Bool(true)": "<string:2874277888>", "Bool(true)": "<string:1904831153>", "Bool(true)": "o", "Bool(true)": "<string:2680059697>", "Bool(true)": true, backgroundColor: importDefault(dependencyMap[4]).unsafe_rawColors.RED_400 };
+obj = { height: "\u0159\u00EDjna", accessibilityRole: "<string:2001862656>", props: "<string:1903368625>", "Bool(true)": "o", "Bool(true)": "<string:2680059697>", "Bool(true)": true, backgroundColor: importDefault(dependencyMap[4]).unsafe_rawColors.RED_400 };
 obj.accountWarning = obj;
-obj.accountWarningText = { -1593928941: null, 1554836306: null };
+obj.accountWarningText = {};
 const tmp3 = arg1(dependencyMap[2]);
 obj.accountWarningButton = { borderColor: importDefault(dependencyMap[4]).colors.WHITE, borderRadius: importDefault(dependencyMap[4]).radii.xs };
 let closure_6 = obj.createStyles(obj);
@@ -52,7 +52,7 @@ export default function UserSettingsAccountUnverifiedHeader() {
   let tmp3 = null;
   if (null != tmp2) {
     obj = { accessibilityRole: "button", style: tmp.accountWarning, onPress: handleOpenEmailVerification };
-    obj = { Promise: 369098752, marginTop: 16777216, flags: 882, style: tmp.accountWarningText, children: tmp2.title };
+    obj = { "Null": "r", "Null": "isArray", "Null": "set", style: tmp.accountWarningText, children: tmp2.title };
     const items1 = [callback(arg1(dependencyMap[9]).Text, obj), ];
     const obj1 = { style: tmp.accountWarningButton, children: tmp2.button };
     items1[1] = callback(arg1(dependencyMap[9]).Text, obj1);

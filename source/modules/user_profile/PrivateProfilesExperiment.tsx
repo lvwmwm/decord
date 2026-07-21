@@ -1,13 +1,12 @@
-// Module ID: 11986
-// Function ID: 92645
+// Module ID: 11993
+// Function ID: 92668
 // Name: apexExperiment
 // Dependencies: []
 // Exports: getIsInPrivateProfilesExperiment, useIsInPrivateProfilesExperiment
 
-// Module 11986 (apexExperiment)
+// Module 11993 (apexExperiment)
 const _module = require(dependencyMap[0]);
-const obj = { -1269606814: false, -1845285747: false, defaultConfig: { enabled: false }, variations: { [0]: { enabled: false }, [1]: { enabled: true } } };
-const apexExperiment = _module.createApexExperiment(obj);
+const apexExperiment = _module.createApexExperiment({ defaultConfig: { enabled: false }, variations: { [0]: { enabled: false }, [1]: { enabled: true } } });
 const _module1 = require(dependencyMap[3]);
 const result = _module1.fileFinishedImporting("modules/user_profile/PrivateProfilesExperiment.tsx");
 

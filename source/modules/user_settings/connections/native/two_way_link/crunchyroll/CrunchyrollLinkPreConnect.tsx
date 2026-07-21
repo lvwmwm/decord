@@ -1,16 +1,16 @@
-// Module ID: 8981
-// Function ID: 70759
+// Module ID: 8985
+// Function ID: 70771
 // Name: CrunchyrollLinkPreConnect
 // Dependencies: []
 // Exports: default
 
-// Module 8981 (CrunchyrollLinkPreConnect)
+// Module 8985 (CrunchyrollLinkPreConnect)
 let closure_3 = importAll(dependencyMap[0]);
 let closure_4 = arg1(dependencyMap[1]).CrunchyrollLinkModalScenes;
 const PlatformTypes = arg1(dependencyMap[2]).PlatformTypes;
 let closure_6 = arg1(dependencyMap[3]).CRUNCHYROLL_LINK_DEST_ORIGIN;
 const jsx = arg1(dependencyMap[4]).jsx;
-let closure_8 = arg1(dependencyMap[5]).createStyles({ image: { aze: false, azj: false } });
+let closure_8 = arg1(dependencyMap[5]).createStyles({ image: { bhk: 24, bic: 24 } });
 const obj = arg1(dependencyMap[5]);
 const result = arg1(dependencyMap[10]).fileFinishedImporting("modules/user_settings/connections/native/two_way_link/crunchyroll/CrunchyrollLinkPreConnect.tsx");
 

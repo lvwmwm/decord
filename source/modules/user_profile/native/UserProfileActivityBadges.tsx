@@ -1,10 +1,10 @@
-// Module ID: 11906
-// Function ID: 92181
+// Module ID: 11913
+// Function ID: 92204
 // Name: TimestampBadge
 // Dependencies: []
 // Exports: EpisodeBadge, PartyBadge, TimestampBadge
 
-// Module 11906 (TimestampBadge)
+// Module 11913 (TimestampBadge)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 const ActivityTypes = arg1(dependencyMap[2]).ActivityTypes;
@@ -83,7 +83,7 @@ export const PartyBadge = function PartyBadge(activity) {
         let obj = { style: tmp.container };
         obj = { size: "xxs", color: importDefault(dependencyMap[13]).colors.TEXT_MUTED };
         const items = [callback(arg1(dependencyMap[16]).GroupIcon, obj), ];
-        obj = { INTEGRATION_CREATE: "<string:3305963521>", ConstraintReasonCode: "<string:671547393>", children: richGameStateBadgeText };
+        obj = { children: richGameStateBadgeText };
         items[1] = callback(arg1(dependencyMap[17]).Text, obj);
         obj.children = items;
         tmp9 = callback2(View, obj);
@@ -106,7 +106,7 @@ export const EpisodeBadge = function EpisodeBadge(activity) {
     obj = { style: tmp.container };
     obj = { size: "xxs", color: importDefault(dependencyMap[13]).colors.TEXT_MUTED };
     const items = [callback(arg1(dependencyMap[18]).TopicsIcon, obj), ];
-    const obj1 = { INTEGRATION_CREATE: "<string:3305963521>", ConstraintReasonCode: "<string:671547393>", children: episodeBadgeText };
+    const obj1 = { children: episodeBadgeText };
     items[1] = callback(arg1(dependencyMap[17]).Text, obj1);
     obj.children = items;
     tmp4 = callback2(View, obj);

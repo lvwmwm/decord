@@ -1,10 +1,10 @@
-// Module ID: 6031
-// Function ID: 49920
+// Module ID: 6033
+// Function ID: 49963
 // Name: EnvelopeSpotIllustration
 // Dependencies: []
 // Exports: EnvelopeSpotIllustration
 
-// Module 6031 (EnvelopeSpotIllustration)
+// Module 6033 (EnvelopeSpotIllustration)
 const jsx = require(dependencyMap[0]).jsx;
 const _module = require(dependencyMap[3]);
 const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/EnvelopeSpotIllustration.native.tsx");

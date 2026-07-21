@@ -1,9 +1,9 @@
-// Module ID: 11350
-// Function ID: 88285
+// Module ID: 11356
+// Function ID: 88308
 // Name: ChatInputAccessibilityDivider
 // Dependencies: []
 
-// Module 11350 (ChatInputAccessibilityDivider)
+// Module 11356 (ChatInputAccessibilityDivider)
 const importAllResult = importAll(dependencyMap[0]);
 ({ StyleSheet: closure_2, View: closure_3 } = arg1(dependencyMap[1]));
 const jsx = arg1(dependencyMap[2]).jsx;

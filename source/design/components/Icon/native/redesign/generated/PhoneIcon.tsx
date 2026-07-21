@@ -1,10 +1,10 @@
-// Module ID: 11049
-// Function ID: 86042
+// Module ID: 11054
+// Function ID: 86063
 // Name: PhoneIcon
 // Dependencies: []
 // Exports: PhoneIcon
 
-// Module 11049 (PhoneIcon)
+// Module 11054 (PhoneIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/PhoneIcon.tsx");

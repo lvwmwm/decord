@@ -1,12 +1,11 @@
-// Module ID: 14504
-// Function ID: 109261
+// Module ID: 14511
+// Function ID: 109283
 // Name: openMFAModal
-// Dependencies: [0]
+// Dependencies: []
 // Exports: openMFAModal
 
-// Module 14504 (openMFAModal)
-import { SELECT_NAMES } from "result";
-
+// Module 14511 (openMFAModal)
+const SELECT_NAMES = require(dependencyMap[0]).SELECT_NAMES;
 const _module = require(dependencyMap[3]);
 const result = _module.fileFinishedImporting("modules/mfa/MFAActionCreators.tsx");
 

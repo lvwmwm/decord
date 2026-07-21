@@ -1,9 +1,9 @@
-// Module ID: 15687
-// Function ID: 119923
+// Module ID: 15694
+// Function ID: 119947
 // Name: getSourceFromURI
 // Dependencies: []
 
-// Module 15687 (getSourceFromURI)
+// Module 15694 (getSourceFromURI)
 function getSourceFromURI(uri) {
   let tmp = uri;
   if ("number" !== typeof uri) {
@@ -20,7 +20,7 @@ let closure_7 = importDefault(dependencyMap[4]);
 ({ jsx: closure_8, jsxs: closure_9 } = arg1(dependencyMap[5]));
 let obj1 = arg1(dependencyMap[6]);
 let obj = {};
-obj = { 313968: 30271555, 315615: 22092032, 314002: 30271232, 315613: 1489260800, backgroundColor: importDefault(dependencyMap[7]).colors.VOICE_VIDEO_VIDEO_TILE_BACKGROUND };
+obj = { backgroundColor: importDefault(dependencyMap[7]).colors.VOICE_VIDEO_VIDEO_TILE_BACKGROUND };
 obj.container = obj;
 obj.avatarContainer = {};
 obj1 = { borderRadius: importDefault(dependencyMap[7]).radii.round };
@@ -103,7 +103,7 @@ const memoResult = importAllResult.memo(function VoicePanelCTACardCallerDisconne
   const obj5 = { style: tmp.textContainer };
   const tmp11 = importDefault(dependencyMap[11]);
   const tmp26 = closure_9;
-  const obj6 = { Promise: "valueArray", marginTop: "pillOpacity", flags: "%AsyncFromSyncIteratorPrototype%", style: tmp.text };
+  const obj6 = { "Null": "inputHint", "Null": "placeholderRow", "Null": "%AsyncGeneratorFunction%", style: tmp.text };
   const intl = arg1(dependencyMap[14]).intl;
   obj6.children = intl.string(arg1(dependencyMap[14]).t.WkAgPU);
   const items5 = [callback2(arg1(dependencyMap[13]).Text, obj6), ];

@@ -1,15 +1,15 @@
-// Module ID: 8716
-// Function ID: 69005
+// Module ID: 8720
+// Function ID: 69017
 // Name: CollectiblesShopPricePlaceholder
 // Dependencies: []
 // Exports: CollectiblesShopPricePlaceholder
 
-// Module 8716 (CollectiblesShopPricePlaceholder)
+// Module 8720 (CollectiblesShopPricePlaceholder)
 let closure_3 = importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 let obj = arg1(dependencyMap[2]);
 obj = {};
-obj = { ref: "Group 11", style: 2, borderRadius: importDefault(dependencyMap[3]).radii.xs, backgroundColor: importDefault(dependencyMap[3]).colors.REDESIGN_BUTTON_TERTIARY_BACKGROUND };
+obj = { "Bool(false)": "Group 11", "Bool(false)": 2, borderRadius: importDefault(dependencyMap[3]).radii.xs, backgroundColor: importDefault(dependencyMap[3]).colors.REDESIGN_BUTTON_TERTIARY_BACKGROUND };
 obj.skeletonContainer = obj;
 let closure_5 = obj.createStyles(obj);
 let closure_6 = { code: "function CollectiblesShopPricePlaceholderTsx1(){const{opacity}=this.__closure;return{opacity:opacity.get()};}" };

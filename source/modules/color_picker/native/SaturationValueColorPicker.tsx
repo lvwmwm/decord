@@ -1,10 +1,10 @@
-// Module ID: 13442
-// Function ID: 102101
+// Module ID: 13449
+// Function ID: 102124
 // Name: ColorBox
 // Dependencies: []
 // Exports: default
 
-// Module 13442 (ColorBox)
+// Module 13449 (ColorBox)
 function ColorBox(hue) {
   let colorBoxInnerStyle;
   let colorBoxStyle;
@@ -18,7 +18,7 @@ function ColorBox(hue) {
   class S {
     constructor() {
       obj = hue(closure_2[7]);
-      obj = { "Null": 16777215, "Null": 2147472639, "Null": 4043309055 };
+      obj = { allowed: 255, reason: 4293643775, BANNER: 65535 };
       obj.h = hue.get();
       return obj.hslToRgbWorklet(obj);
     }
@@ -40,10 +40,10 @@ function ColorBox(hue) {
   fn.__workletHash = 14688428173537;
   fn.__initData = closure_10;
   const animatedReaction = obj.useAnimatedReaction(S, fn);
-  const obj1 = { style: items, colors: items1, start: { "Null": false, "Null": false }, end: { "Null": -721485569, "Null": 3375103 } };
+  const obj1 = { style: items, colors: items1, start: { max: false, guildId: false }, end: { max: 3211264, guildId: 2042617856 } };
   const items = [tmp.colorBox, colorBoxStyle];
-  const items1 = [, tmp2[0]];
-  const obj2 = { colors: [0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000009277667960432105, 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000050835165] };
+  const items1 = [146, tmp2[0]];
+  const obj2 = { colors: [] };
   const items2 = [tmp.colorBoxInner, colorBoxInnerStyle];
   const tmp5 = importDefault(dependencyMap[8]);
   obj2.children = callback2(View, { style: items2 });
@@ -55,12 +55,12 @@ let closure_4 = importAll(dependencyMap[1]);
 const View = arg1(dependencyMap[2]).View;
 ({ jsx: closure_6, jsxs: closure_7 } = arg1(dependencyMap[3]));
 let obj = arg1(dependencyMap[4]);
-obj = { container: { "Null": "interactive-text-default", "Null": "text-xs/semibold", style: 1 } };
-obj = { 0: "%ArrayProto_keys%", 0: "tr", 0: "isArray", 9223372036854775807: "MUR", 9223372036854775807: "stream", 0: "clock2", 0: "disabledPermissionIcon", borderRadius: importDefault(dependencyMap[5]).radii.md };
+obj = { container: {} };
+obj = { OPEN_OVERLAY_VOICE_SETTINGS: null, paddingBottom: null, X-Discord-Locale: null, getAutomodQuarantinedProfileFlags: null, GIFS_TRENDING_GIFS: null, allowed: null, accessible: null, borderRadius: importDefault(dependencyMap[5]).radii.md };
 obj.selector = obj;
 const tmp2 = arg1(dependencyMap[3]);
 obj.colorBox = { overflow: "hidden", borderRadius: importDefault(dependencyMap[5]).radii.xs };
-obj.colorBoxInner = {};
+obj.colorBoxInner = { <string:1364362083>: null, <string:1386747137>: null };
 let closure_8 = obj.createStyles(obj);
 let closure_9 = { code: "function SaturationValueColorPickerTsx1(){const{hslToRgbWorklet,hue}=this.__closure;return hslToRgbWorklet({h:hue.get(),s:1,l:0.5});}" };
 let closure_10 = { code: "function SaturationValueColorPickerTsx2(result,previous){const{runOnJS,setColor}=this.__closure;if(result!==previous)runOnJS(setColor)(\"rgb(\"+result[0]+\", \"+result[1]+\", \"+result[2]+\")\");}" };

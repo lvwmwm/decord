@@ -1,10 +1,10 @@
-// Module ID: 15286
-// Function ID: 116273
+// Module ID: 15293
+// Function ID: 116297
 // Name: MoreButton
 // Dependencies: []
 // Exports: default
 
-// Module 15286 (MoreButton)
+// Module 15293 (MoreButton)
 let closure_3 = importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/main_tabs_v2/native/sidebar/details/ChannelDetailsMoreButton.tsx");

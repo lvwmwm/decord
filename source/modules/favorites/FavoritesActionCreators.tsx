@@ -1,10 +1,10 @@
-// Module ID: 10174
-// Function ID: 78604
+// Module ID: 10180
+// Function ID: 78622
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 // Exports: addFavoriteCategory, addFavoriteChannel, removeFavoriteCategory, setAllFavoriteCategoriesCollapsed, setFavoriteCategoryCollapsed, setFavoriteChannelNickname, setFavoritesGuildVisibility, toggleFavoriteGuildMuted, updateFavoriteChannelParent, updateFavoriteChannels
 
-// Module 10174 (_createForOfIteratorHelperLoose)
+// Module 10180 (_createForOfIteratorHelperLoose)
 function _createForOfIteratorHelperLoose(@@iterator) {
   let require = Symbol_iterator;
   @@iterator = "undefined" !== typeof Symbol;

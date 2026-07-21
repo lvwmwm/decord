@@ -1,10 +1,10 @@
-// Module ID: 8349
-// Function ID: 66520
+// Module ID: 8353
+// Function ID: 66532
 // Name: useSegmentedControlState
 // Dependencies: []
 // Exports: useSegmentedControlState
 
-// Module 8349 (useSegmentedControlState)
+// Module 8353 (useSegmentedControlState)
 let closure_3 = importAll(dependencyMap[0]);
 let closure_4 = { code: "function SegmentedControlStateNativeTsx1(index,dimensions){const{itemDimensions,itemCount}=this.__closure;itemDimensions.get()[index]=dimensions;itemDimensions.set([...itemDimensions.get()].slice(0,itemCount));}" };
 const result = arg1(dependencyMap[6]).fileFinishedImporting("design/components/SegmentedControl/native/SegmentedControlState.native.tsx");

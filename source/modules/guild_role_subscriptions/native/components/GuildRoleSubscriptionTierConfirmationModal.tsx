@@ -1,10 +1,10 @@
-// Module ID: 16319
-// Function ID: 125954
+// Module ID: 16326
+// Function ID: 125985
 // Name: GuildRoleSubscriptionTierConfirmationModal
 // Dependencies: []
 // Exports: default
 
-// Module 16319 (GuildRoleSubscriptionTierConfirmationModal)
+// Module 16326 (GuildRoleSubscriptionTierConfirmationModal)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 let closure_5 = importAll(dependencyMap[2]);

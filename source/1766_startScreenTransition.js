@@ -10,10 +10,10 @@ let closure_2 = { code: "function startScreenTransition_Pnpm_animationManagerTs1
 let closure_3 = { code: "function getLockAxis_Pnpm_animationManagerTs2(goBackGesture){if(['swipeRight','swipeLeft','horizontalSwipe'].includes(goBackGesture)){return'x';}else if(['swipeUp','swipeDown','verticalSwipe'].includes(goBackGesture)){return'y';}return undefined;}" };
 let closure_4 = () => {
   function getLockAxis(arg0) {
-    const items = [null, null, null];
+    const items = [];
     let str = "x";
     if (!items.includes(arg0)) {
-      const items1 = ["intl", "justifyContent", "getChannel"];
+      const items1 = ["<string:2338425365>", "<string:1373505105>", "<string:1767986917>"];
       let str2;
       if (items1.includes(arg0)) {
         str2 = "y";

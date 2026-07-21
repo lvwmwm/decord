@@ -1,10 +1,10 @@
-// Module ID: 15155
-// Function ID: 114307
+// Module ID: 15162
+// Function ID: 114331
 // Name: replaceUsernameVariable
 // Dependencies: []
 // Exports: default
 
-// Module 15155 (replaceUsernameVariable)
+// Module 15162 (replaceUsernameVariable)
 function replaceUsernameVariable(message, str) {
   let diff;
   const parts = str.split(/\[@username\]/g);
@@ -39,16 +39,16 @@ let closure_7 = importDefault(dependencyMap[4]);
 ({ jsx: closure_8, jsxs: closure_9 } = arg1(dependencyMap[5]));
 let obj = arg1(dependencyMap[6]);
 obj = { relativeContainer: { position: "relative" } };
-obj = { 9223372036854775807: 16777216, -9223372036854775808: 45929537, 0: 1117741312, 0: 296041, 0: 68773, -9223372036854775808: -1773645567, borderRadius: importDefault(dependencyMap[7]).radii.sm };
+obj = { borderRadius: importDefault(dependencyMap[7]).radii.sm };
 obj.welcomeContainer = obj;
-const obj1 = { "Bool(false)": "sEAnVH", "Bool(false)": "values", "Bool(false)": "isArray", "Bool(false)": "disabledFromFatalError", "Bool(false)": "forceRebuildReanimatedEvent", borderRadius: importDefault(dependencyMap[7]).radii.sm, backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_BASE_LOW };
+const obj1 = { 979595439: null, -1840161709: null, 1362846030: null, 1415674808: null, 1635498321: null, borderRadius: importDefault(dependencyMap[7]).radii.sm, backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_BASE_LOW };
 obj.welcomeContent = obj1;
 const tmp2 = arg1(dependencyMap[5]);
 obj.avatarBackground = { borderRadius: importDefault(dependencyMap[7]).radii.round, backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_BASE_LOW };
 const obj2 = { borderRadius: importDefault(dependencyMap[7]).radii.round, backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_BASE_LOW };
 obj.avatarBorder = { borderRadius: importDefault(dependencyMap[7]).radii.round };
 obj.avatar = {};
-obj.adminUsernameContainer = { "Null": null, "Null": "1785b591bc534f1d0463ddef745bdb5c", "Null": "CalendarMinusIcon", "Null": "png", "Null": true };
+obj.adminUsernameContainer = { "Null": null, "Bool(true)": "1785b591bc534f1d0463ddef745bdb5c", "Bool(true)": "CalendarMinusIcon", "Bool(true)": "png", "Bool(true)": true };
 const obj3 = { borderRadius: importDefault(dependencyMap[7]).radii.round };
 obj.adminUsername = { color: importDefault(dependencyMap[7]).colors.MOBILE_TEXT_HEADING_PRIMARY, paddingLeft: 8 };
 const obj4 = { color: importDefault(dependencyMap[7]).colors.MOBILE_TEXT_HEADING_PRIMARY, paddingLeft: 8 };

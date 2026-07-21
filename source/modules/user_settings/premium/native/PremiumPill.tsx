@@ -1,16 +1,16 @@
-// Module ID: 6666
-// Function ID: 51320
+// Module ID: 6672
+// Function ID: 51369
 // Name: PremiumPill
 // Dependencies: []
 // Exports: PremiumPill
 
-// Module 6666 (PremiumPill)
+// Module 6672 (PremiumPill)
 let closure_3 = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 const jsx = arg1(dependencyMap[2]).jsx;
 let closure_6 = arg1(dependencyMap[3]).createStyles((arg0) => {
   let obj = {};
-  obj = { "Null": null, "Null": null, "Null": null, "Null": null, "Null": null, "Null": null };
+  obj = {};
   const tmp = importDefault(dependencyMap[4]);
   if (arg0) {
     let WHITE = tmp.unsafe_rawColors.BLACK;

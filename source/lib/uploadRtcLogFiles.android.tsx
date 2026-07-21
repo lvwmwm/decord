@@ -1,10 +1,10 @@
-// Module ID: 10305
-// Function ID: 79587
+// Module ID: 10311
+// Function ID: 79606
 // Name: _uploadRtcLogFiles
 // Dependencies: []
 // Exports: uploadRtcLogFiles
 
-// Module 10305 (_uploadRtcLogFiles)
+// Module 10311 (_uploadRtcLogFiles)
 function _uploadRtcLogFiles() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);

@@ -1,9 +1,9 @@
-// Module ID: 6608
-// Function ID: 50786
+// Module ID: 6612
+// Function ID: 50832
 // Name: metadata
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 6608 (metadata)
+// Module 6612 (metadata)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/WateringCanSpotIllustration-2x.png.js");
 

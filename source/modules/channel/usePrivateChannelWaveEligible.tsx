@@ -1,10 +1,10 @@
-// Module ID: 14773
-// Function ID: 111373
+// Module ID: 14780
+// Function ID: 111397
 // Name: usePrivateChannelWaveEligible
 // Dependencies: []
 // Exports: usePrivateChannelWaveEligible
 
-// Module 14773 (usePrivateChannelWaveEligible)
+// Module 14780 (usePrivateChannelWaveEligible)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 const ChannelFlags = arg1(dependencyMap[2]).ChannelFlags;

@@ -1,9 +1,9 @@
-// Module ID: 11210
-// Function ID: 87320
+// Module ID: 11216
+// Function ID: 87343
 // Name: ApplicationDirectorySearchResultType
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 11210 (ApplicationDirectorySearchResultType)
+// Module 11216 (ApplicationDirectorySearchResultType)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_common/js/shared/shared-constants/ApplicationDirectorySearchResultType.tsx");
 

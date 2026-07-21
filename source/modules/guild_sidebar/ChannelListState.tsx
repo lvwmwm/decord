@@ -1,9 +1,9 @@
-// Module ID: 6749
-// Function ID: 52658
+// Module ID: 6755
+// Function ID: 52707
 // Name: _superPropGet
-// Dependencies: [6, 7, 15, 17, 18, 1316, 1194, 1348, 1907, 1917, 1838, 4138, 4317, 653, 664, 5655, 686, 5338, 21, 566, 2, 1838, 3756, 4317, 1849, 653, 566, 2, 5356, 5355, 2, 6, 7, 15, 17, 18, 57, 3809, 1196, 1849, 6759, 1387, 21, 6760]
+// Dependencies: [6, 7, 15, 17, 18, 1316, 1194, 1348, 1907, 1917, 1838, 4138, 4321, 653, 664, 5657, 686, 5340, 21, 566, 2, 1838, 3756, 4321, 1849, 653, 566, 2, 5358, 5357, 2, 6, 7, 15, 17, 18, 57, 3809, 1196, 1849, 6765, 1387, 21, 6766]
 
-// Module 6749 (_superPropGet)
+// Module 6755 (_superPropGet)
 import _classCallCheck from "_classCallCheck";
 import _defineProperties from "_defineProperties";
 import _possibleConstructorReturn from "_possibleConstructorReturn";
@@ -24,17 +24,17 @@ import dispatcher from "dispatcher";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import DISCORD_EPOCH from "DISCORD_EPOCH";
 import initialize from "initialize";
-import closure_26 from "keys";
+import closure_26 from "result2";
 import closure_27 from "_createForOfIteratorHelperLoose";
 import closure_28 from "_isNativeReflectConstruct";
 import closure_29 from "_isNativeReflectConstruct";
 import closure_30 from "_isNativeReflectConstruct";
 import closure_31 from "ME";
 import closure_32 from "initialize";
-import closure_33 from "keys";
+import closure_33 from "result2";
 import closure_34 from "_isNativeReflectConstruct";
 import { ChannelListGuildActionRow } from "useDesignToggle";
-import keys from "keys";
+import result2 from "result2";
 import { ChannelFlags } from "_classCallCheck";
 import { Permissions } from "_defineProperties";
 import maybeFetchCollectiblesForInvoices from "maybeFetchCollectiblesForInvoices";
@@ -367,7 +367,7 @@ function shouldShowInRecents(optInEnabled, type) {
   }
 }
 ({ ChannelRecordBase: closure_20, isGuildReadableType: closure_21, isThread: closure_22, THREADED_CHANNEL_TYPES: closure_23 } = _createForOfIteratorHelperLoose);
-({ ChannelTypes: closure_36, GuildFeatures: closure_37 } = keys);
+({ ChannelTypes: closure_36, GuildFeatures: closure_37 } = result2);
 let closure_40 = { CannotShow: 1, [1]: "CannotShow", DoNotShow: 2, [2]: "DoNotShow", WouldShowIfUncollapsed: 3, [3]: "WouldShowIfUncollapsed", Show: 4, [4]: "Show" };
 const obj = { CHANNEL_NOTICES: 0, [0]: "CHANNEL_NOTICES", GUILD_ACTIONS: 1, [1]: "GUILD_ACTIONS", FAVORITES: 2, [2]: "FAVORITES", RECENTS: 3, [3]: "RECENTS", UNCATEGORIZED_CHANNELS: 4, [4]: "UNCATEGORIZED_CHANNELS", FIRST_NAMED_CATEGORY: 5, [5]: "FIRST_NAMED_CATEGORY" };
 const CHANNEL_NOTICES = obj.CHANNEL_NOTICES;
@@ -2055,7 +2055,7 @@ const tmp9 = (arg0) => {
                 }
           ];
           const arr2 = callback(closure_2[33])(self.channels);
-          const valueResult = found.orderBy(items, []).value();
+          const valueResult = found.orderBy(items, [0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003485612038873263, 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000008287089313773143]).value();
           self.shownChannelIds = [];
           let num = 0;
           if (0 < valueResult.length) {
@@ -2090,7 +2090,7 @@ const tmp9 = (arg0) => {
               num = num + 1;
             } while (num < valueResult.length);
           }
-          const iter = found.orderBy(items, []);
+          const iter = found.orderBy(items, [0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003485612038873263, 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000008287089313773143]);
         }
         return self.shownChannelIds;
       } else {

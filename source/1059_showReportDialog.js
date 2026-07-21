@@ -1,7 +1,7 @@
 // Module ID: 1059
 // Function ID: 11317
 // Name: showReportDialog
-// Dependencies: []
+// Dependencies: [1004, 794, 1048]
 
 // Module 1059 (showReportDialog)
 Object.defineProperty(arg5, Symbol.toStringTag, { value: "Module" });

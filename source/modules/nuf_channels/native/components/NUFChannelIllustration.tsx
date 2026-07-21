@@ -1,30 +1,30 @@
-// Module ID: 12571
-// Function ID: 96728
+// Module ID: 12578
+// Function ID: 96751
 // Name: NUFChannelIllustration
 // Dependencies: []
 // Exports: default
 
-// Module 12571 (NUFChannelIllustration)
+// Module 12578 (NUFChannelIllustration)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 ({ View: closure_5, Image: closure_6 } = arg1(dependencyMap[2]));
 const tmp2 = arg1(dependencyMap[2]);
 ({ jsx: closure_7, jsxs: closure_8 } = arg1(dependencyMap[3]));
 let obj = arg1(dependencyMap[4]);
-obj = { container: { rejectWithError: false, test: false, now: false, paddingHorizontal: false, right: false, PX_8: false, accessibilityLabel: false, Path: false }, card: { title: 18, hasIcons: 18 } };
+obj = { container: { "Bool(false)": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000073026497104, "Bool(false)": 2824843.1016165405, "Bool(false)": -88145405375971300000000000, "Bool(false)": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000145565208308621, "Bool(false)": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000086916947608624, "Bool(false)": 1625885893862856200000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, "Bool(false)": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000518728505263, "Bool(false)": true }, card: { "Bool(true)": 18, "Bool(true)": 18 } };
 obj = { borderTopLeftRadius: importDefault(dependencyMap[5]).radii.lg, borderTopRightRadius: importDefault(dependencyMap[5]).radii.lg, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_LOWEST };
 obj.cardBackground = obj;
 const tmp3 = arg1(dependencyMap[3]);
 obj.header = { borderBottomColor: importDefault(dependencyMap[5]).colors.BORDER_SUBTLE };
-obj.content = { HUB_EMAIL_SIGNUP: "Array", isEmbeddedApp: "3YHwoG", MY_ACCOUNT_PAGE_TAB_NAVIGATE: "Array", presenceCount: "platformTypes", alignContent: "HIDE_MEDIA_DOWNLOAD_OPTIONS", linear: "Array" };
-obj.message = { flexDirection: -129826560, alignItems: 989856018, justifyContent: -1979711222 };
-obj.messageAvatar = { useTrackPdpClick: null, GameDetectionDebugLevel: null, presenceCount: null };
-obj.messageContent = {};
-obj.starMedium = { <string:1140607356>: true, <string:1751293292>: true };
-obj.starSmall = { <string:1140607356>: 1685934336, <string:1751293292>: -1137491695 };
+obj.content = { position: null, bottom: null, right: null, alignItems: null, justifyContent: null, alignContent: null };
+obj.message = { height: false, width: 3000, marginRight: 15 };
+obj.messageAvatar = {};
+obj.messageContent = { marginVertical: 10388343592192675000000000000000000, marginHorizontal: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003000217279425302 };
+obj.starMedium = { <string:1632221346>: true, <string:2722977214>: true };
+obj.starSmall = { <string:1632221346>: -1210756864, <string:2722977214>: -1146273519 };
 obj.starGreen = {};
 obj.starBlue = {};
-obj.starPink = { justifyContent: "content", paddingRight: "resolve", height: "isArray" };
+obj.starPink = { "Null": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000679038653267, "Null": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000008487983172, "Null": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000008691694761368 };
 obj.starPurple = {};
 let closure_9 = obj.createStyles(obj);
 let closure_10 = { code: "function NUFChannelIllustrationTsx1(){const{interpolate,messageListAnimation}=this.__closure;return{transform:[{translateY:interpolate(messageListAnimation.get(),[0,1],[50,0])}]};}" };
@@ -88,7 +88,7 @@ export default function NUFChannelIllustration() {
   let obj2 = arg1(closure_2[9]);
   const fn = function b() {
     let obj = {};
-    obj = { translateY: tmp(closure_2[9]).interpolate(sharedValue.get(), [null, null], ["values", "application"]) };
+    obj = { translateY: tmp(closure_2[9]).interpolate(sharedValue.get(), ["Text", "lc"], ["values", "application"]) };
     const items = [obj];
     obj.transform = items;
     return obj;
@@ -122,7 +122,7 @@ export default function NUFChannelIllustration() {
   const items7 = [callback2(arg1(closure_2[16]).TextIcon, { size: "sm" }), ];
   const obj8 = {};
   const intl = arg1(closure_2[6]).intl;
-  const items8 = [null, intl.string(arg1(closure_2[6]).t.aLOLry)];
+  const items8 = [33210851629578355000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, intl.string(arg1(closure_2[6]).t.aLOLry)];
   obj8.children = items8;
   items7[1] = callback3(arg1(closure_2[17]).Text, obj8);
   obj7.children = items7;
@@ -135,9 +135,9 @@ export default function NUFChannelIllustration() {
       obj = { source: avatar.avatar, style: tmp.messageAvatar };
       const items = [callback(closure_6, obj), ];
       obj = { style: tmp.messageContent };
-      const obj1 = { sr: "flex", ks: "flex-start", children: avatar.name };
+      const obj1 = { bottom: "flex", sr: "flex-start", children: avatar.name };
       const items1 = [callback(tmp(closure_2[17]).Text, obj1), ];
-      const obj2 = { sr: false, ks: false, children: avatar.message };
+      const obj2 = { bottom: false, sr: false, children: avatar.message };
       items1[1] = callback(tmp(closure_2[17]).Text, obj2);
       obj.children = items1;
       items[1] = callback2(closure_5, obj);

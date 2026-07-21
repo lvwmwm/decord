@@ -1,10 +1,10 @@
-// Module ID: 7469
-// Function ID: 59970
+// Module ID: 7473
+// Function ID: 59982
 // Name: setIsOnStartStageScreen
 // Dependencies: []
 // Exports: useUpdateIsOnStartStageScreenEffect
 
-// Module 7469 (setIsOnStartStageScreen)
+// Module 7473 (setIsOnStartStageScreen)
 function setIsOnStartStageScreen(arg0) {
   const arg1 = arg0;
   arg1(dependencyMap[4]).batchUpdates(() => state.setState({ isOnStartStageScreen: arg0 }));

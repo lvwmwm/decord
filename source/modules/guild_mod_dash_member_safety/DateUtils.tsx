@@ -1,10 +1,10 @@
-// Module ID: 6719
-// Function ID: 52329
+// Module ID: 6725
+// Function ID: 52378
 // Name: getJoinedAtDateFormatter
 // Dependencies: []
 // Exports: formatDateRelativeTime, getJoinedAtTimestamp
 
-// Module 6719 (getJoinedAtDateFormatter)
+// Module 6725 (getJoinedAtDateFormatter)
 function getJoinedAtDateFormatter() {
   return { seconds: require(dependencyMap[0]).t.FsBhl/, minutes: require(dependencyMap[0]).t.4d1mgT, hours: require(dependencyMap[0]).t.2wkczD, days: require(dependencyMap[0]).t.ocdS+f, months: require(dependencyMap[0]).t.az14+h, years: require(dependencyMap[0]).t.5Gk1ns };
 }
@@ -23,8 +23,8 @@ const obj = { JOINED_AT: 0, [0]: "JOINED_AT", ACCOUNT_AGE: 1, [1]: "ACCOUNT_AGE"
 const _module = require(dependencyMap[2]);
 const result = _module.fileFinishedImporting("modules/guild_mod_dash_member_safety/DateUtils.tsx");
 
-export const ACCOUNT_AGE_DATE_TOOLTIP_CONFIG = { VOICE_CHANNEL_ACTIVITY_PEAK_AFFINITY: 0.00000000000000000000000000002524355432732662, getAppTitle: 0.00000000000000000010842024107846067, y: 0.0000000004656613931258713, stacks: 2.000000275671482, y: 131072.06494140625 };
-export const MEMBER_JOIN_DATE_TOOLTIP_CONFIG = { VOICE_CHANNEL_ACTIVITY_PEAK_AFFINITY: 0.00000000000000000000000000002524355432732662, getAppTitle: 0.00000000000000000010842024107846067, y: 0.0000000004656613931258713, stacks: 2.000000275671482, y: 131072.06494140625 };
+export const ACCOUNT_AGE_DATE_TOOLTIP_CONFIG = { MFA_SEND_VERIFICATION_KEY: 0.00000000000000000000000000002524355432732662, helpMessage: 0.00000000000000000010842024107846067, y: 0.0000000004656613931258713, getAutocompleteChoices: 2.000000275671482, y: 131072.06494140625 };
+export const MEMBER_JOIN_DATE_TOOLTIP_CONFIG = { MFA_SEND_VERIFICATION_KEY: 0.00000000000000000000000000002524355432732662, helpMessage: 0.00000000000000000010842024107846067, y: 0.0000000004656613931258713, getAutocompleteChoices: 2.000000275671482, y: 131072.06494140625 };
 export const MembersTableDateFormats = obj;
 export { getMembersTableTimestampFormatter };
 export const formatDateRelativeTime = function formatDateRelativeTime(arg0, arg1) {

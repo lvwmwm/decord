@@ -1,13 +1,10 @@
 // Module ID: 13130
-// Function ID: 99479
+// Function ID: 99487
 // Dependencies: []
 
 // Module 13130
+let closure_2 = require(dependencyMap[0])({}.hasOwnProperty);
 
-export default (arg0, arg1) => {
-  let tmp2;
-  if (!require(dependencyMap[0])(arg0[arg1])) {
-    tmp2 = require(dependencyMap[1])(tmp);
-  }
-  return tmp2;
+export default Object.hasOwn || function hasOwn(arg0, arg1) {
+  return callback(require(dependencyMap[1])(arg0), arg1);
 };

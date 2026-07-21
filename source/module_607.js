@@ -1,6 +1,6 @@
 // Module ID: 607
 // Function ID: 7043
-// Dependencies: []
+// Dependencies: [2030043138, 33554434, 2030043136]
 
 // Module 607
 const tmp = require(dependencyMap[0]) && require(dependencyMap[0]).isTypedArray;

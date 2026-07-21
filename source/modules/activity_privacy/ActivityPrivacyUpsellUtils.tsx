@@ -1,10 +1,10 @@
-// Module ID: 13624
-// Function ID: 103249
+// Module ID: 13631
+// Function ID: 103272
 // Name: getPermissiveness
 // Dependencies: []
 // Exports: applyBulkGuildRestrictionChange, computeProfileToActivityUpsell, getActivityRestrictionSettingName, getProfileToActivityUpsellStrings, getUpsellStrings, sortGuildIdsByFrecency
 
-// Module 13624 (getPermissiveness)
+// Module 13631 (getPermissiveness)
 function getPermissiveness(setting) {
   if (arg1(dependencyMap[4]).GuildActivityStatusRestrictionDefaultV2.ACTIVITY_STATUS_OFF === setting) {
     return 2;

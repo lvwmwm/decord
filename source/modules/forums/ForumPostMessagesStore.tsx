@@ -1,9 +1,9 @@
-// Module ID: 5650
-// Function ID: 48307
+// Module ID: 5652
+// Function ID: 48349
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
-// Module 5650 (_isNativeReflectConstruct)
+// Module 5652 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -104,7 +104,7 @@ function handleLoadThreadsSuccess(firstMessages) {
     if (!iter2.done) {
       do {
         let tmp2 = closure_10;
-        closure_10[iter2.value.id] = {};
+        closure_10[iter2.value.id] = { marginStart: true, alignItems: true };
         let iter = tmp8();
         iter2 = iter;
         done = iter.done;
@@ -218,7 +218,7 @@ let tmp2 = (Store) => {
     key: "getMessage",
     value(arg0) {
       if (!(arg0 in closure_10)) {
-        closure_10[arg0] = { 1645192724: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000800310628823068, 1629362739: 0.0000000000000000000000000000000000000000000000015576649385897736 };
+        closure_10[arg0] = { marginStart: null, alignItems: null };
       }
       return closure_10[arg0];
     }
@@ -268,7 +268,7 @@ tmp2 = new tmp2(importDefault(dependencyMap[10]), {
     if (id.id !== obj.castChannelIdAsMessageId(id.channelId)) {
       return false;
     } else {
-      closure_10[id.channelId] = {};
+      closure_10[id.channelId] = { marginStart: true, alignItems: true };
     }
     const obj = importDefault(dependencyMap[7]);
   },
@@ -277,7 +277,7 @@ tmp2 = new tmp2(importDefault(dependencyMap[10]), {
     if (tmp) {
       const tmp3 = !subscribedToThreads.isSubscribedToThreads(channel.channel.guild_id);
       if (!tmp3) {
-        closure_10[channel.channel.id] = {};
+        closure_10[channel.channel.id] = { marginStart: true, alignItems: true };
       }
       tmp = !tmp3;
       const tmp4 = !tmp3;

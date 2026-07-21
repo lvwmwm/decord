@@ -1,10 +1,10 @@
-// Module ID: 9823
-// Function ID: 76194
+// Module ID: 9828
+// Function ID: 76210
 // Name: AttachmentIcon
 // Dependencies: []
 // Exports: default
 
-// Module 9823 (AttachmentIcon)
+// Module 9828 (AttachmentIcon)
 class AttachmentIcon {
   constructor(arg0) {
     fileName = global.fileName;
@@ -45,11 +45,11 @@ function FilenameText(fileName) {
     tmp5 = "" !== fileName;
   }
   if (tmp5) {
-    obj = { style: tmp.attachmentFileName, children: fileName };
+    obj = { 139078429: 343539713, 0: 640745473, 0: 1649541121, 0: 1149304833, 9223372036854775807: -1910964223, style: tmp.attachmentFileName, children: fileName };
     tmp5 = callback(arg1(dependencyMap[20]).Text, obj);
   }
   const items = [tmp5, ];
-  const obj1 = { backgroundColor: "<string:2661351282>", alignItems: "", flexDirection: "expiryDate", borderRadius: "LengthDelimited", style: tmp.attachmentFileName };
+  const obj1 = { style: tmp.attachmentFileName };
   let str2 = "UNKNOWN";
   if (null != match) {
     str2 = "UNKNOWN";
@@ -81,11 +81,11 @@ const tmp2 = arg1(dependencyMap[1]);
 ({ jsx: closure_6, jsxs: closure_7 } = arg1(dependencyMap[2]));
 let obj1 = arg1(dependencyMap[3]);
 let obj = {};
-obj = { display: "<string:4185456642>", flexDirection: "<string:2102460417>", alignItems: "<string:2688618852>", textAlignVertical: "<string:1912602980>", height: "toString", backgroundColor: "resolve", marginHorizontal: "<string:1230782977>", borderRadius: importDefault(dependencyMap[4]).radii.sm, gap: importDefault(dependencyMap[4]).space.PX_8 };
+obj = { 9223372036854775807: "<string:4192927746>", 0: "<string:3578855425>", 9223372036854775807: "<string:1816203703>", 0: "<string:1912602980>", 0: "toString", -9223372036854775808: "resolve", 0: "<string:1230062081>", borderRadius: importDefault(dependencyMap[4]).radii.sm, gap: importDefault(dependencyMap[4]).space.PX_8 };
 obj.fileInfoAttachmentPreviewFile = obj;
 obj.attachmentFileIcon = {};
 obj.attachmentFileName = {};
-obj.videoIcon = { "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, "Bool(true)": false, "Bool(true)": false };
+obj.videoIcon = { "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, "Bool(false)": false };
 let closure_8 = obj1.createStyles(obj);
 obj1 = { archive: importDefault(dependencyMap[5]), acrobat: importDefault(dependencyMap[6]), ae: importDefault(dependencyMap[7]), ai: importDefault(dependencyMap[8]), audio: importDefault(dependencyMap[9]), code: importDefault(dependencyMap[10]), document: importDefault(dependencyMap[11]), image: importDefault(dependencyMap[12]), photoshop: importDefault(dependencyMap[13]), sketch: importDefault(dependencyMap[14]), spreadsheet: importDefault(dependencyMap[15]), unknown: importDefault(dependencyMap[16]), video: importDefault(dependencyMap[17]), webcode: importDefault(dependencyMap[18]) };
 let closure_10 = importAllResult.memo((borderRadius) => {

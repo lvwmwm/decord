@@ -1,9 +1,9 @@
-// Module ID: 6518
-// Function ID: 50651
+// Module ID: 6520
+// Function ID: 50694
 // Name: metadata
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 6518 (metadata)
+// Module 6520 (metadata)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/SocialSdkIllocon-2x.png.js");
 

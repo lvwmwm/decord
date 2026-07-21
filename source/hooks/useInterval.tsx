@@ -1,10 +1,10 @@
-// Module ID: 6673
-// Function ID: 51338
+// Module ID: 6679
+// Function ID: 51387
 // Name: useInterval
 // Dependencies: [57, 5, 6]
 // Exports: default
 
-// Module 6673 (useInterval)
+// Module 6679 (useInterval)
 import _slicedToArray from "_slicedToArray";
 import _classCallCheck from "_classCallCheck";
 

@@ -1,10 +1,10 @@
-// Module ID: 8165
-// Function ID: 64486
+// Module ID: 8169
+// Function ID: 64498
 // Name: isApplicationAgeRestricted
 // Dependencies: []
 // Exports: default
 
-// Module 8165 (isApplicationAgeRestricted)
+// Module 8169 (isApplicationAgeRestricted)
 let closure_3 = importDefault(dependencyMap[0]);
 const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/applications/utils/isApplicationAgeRestricted.tsx");
 

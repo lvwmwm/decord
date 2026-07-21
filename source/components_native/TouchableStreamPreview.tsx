@@ -1,10 +1,10 @@
-// Module ID: 10768
-// Function ID: 83673
+// Module ID: 10774
+// Function ID: 83696
 // Name: StreamPreviewContainer
 // Dependencies: []
 // Exports: default
 
-// Module 10768 (StreamPreviewContainer)
+// Module 10774 (StreamPreviewContainer)
 function StreamPreviewContainer(disableTransition) {
   disableTransition = disableTransition.disableTransition;
   const arg1 = disableTransition;
@@ -98,7 +98,7 @@ function StreamPreviewContainer(disableTransition) {
   obj = { style: tmp.ctaWrapper };
   obj1 = { style: tmp.ctaBackground };
   const obj5 = arg1(dependencyMap[15]);
-  obj2 = { Promise: 24, marginTop: 24, flags: null, style: tmp.ctaText, children: stringResult1 };
+  obj2 = { "Null": false, "Null": false, "Null": false, style: tmp.ctaText, children: stringResult1 };
   obj1.children = jsx(arg1(dependencyMap[24]).Text, obj2);
   obj.children = <View {...obj1} />;
   obj.children = <View {...obj} />;
@@ -124,11 +124,11 @@ obj["alignItems"] = "center";
 obj["justifyContent"] = "center";
 obj["backgroundColor"] = arg1(dependencyMap[12]).hexWithOpacity(importDefault(dependencyMap[13]).unsafe_rawColors.PRIMARY_700, 0.7);
 obj.ctaWrapper = obj;
-const obj4 = arg1(dependencyMap[12]);
-obj.ctaBackground = { backgroundColor: importDefault(dependencyMap[13]).unsafe_rawColors.PRIMARY_500 };
+const obj1 = { SRATIONAL: null, IFD: null, hours: null, minutes: null, "Bool(true)": "\u7E41\u9AD4\u4E2D\u6587", "Bool(true)": "Traditional Chinese", backgroundColor: importDefault(dependencyMap[13]).unsafe_rawColors.PRIMARY_500 };
+obj.ctaBackground = obj1;
 obj.ctaText = { lineHeight: 20 };
 let closure_14 = obj.createStyles(obj);
-const obj1 = { backgroundColor: importDefault(dependencyMap[13]).unsafe_rawColors.PRIMARY_500 };
+const obj4 = arg1(dependencyMap[12]);
 const result = arg1(dependencyMap[25]).fileFinishedImporting("components_native/TouchableStreamPreview.tsx");
 
 export default function VoiceChannelSettingsStreamPreview(arg0) {

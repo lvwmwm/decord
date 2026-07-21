@@ -1,7 +1,7 @@
 // Module ID: 1046
 // Function ID: 11225
 // Name: _trackINP
-// Dependencies: []
+// Dependencies: [131072, 0, 4294967295, 0, 0]
 // Exports: registerInpInteractionListener, startTrackingINP
 
 // Module 1046 (_trackINP)
@@ -13,7 +13,7 @@ Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 let closure_3 = [];
 const map = new Map();
 const map1 = new Map();
-let closure_6 = { -1423995096: true, -851300598: true, 1728054391: true, 1375732812: true, 1517666967: true, -1228209184: true, 2032843893: true, -2089995373: true, -631514531: true, 887211336: true, 1388185698: true, -1943946805: true, 1368262754: null, 2002880380: true, 407175761: true, -1056963489: true, 2046821420: true, 1291846761: true, -939522949: true, 1375732809: true, 1155720340: true, 300301: true, 300298: true, 300297: true, 300299: true, -1594138013: true };
+let closure_6 = {};
 function _onInp(metric) {
   const require = iter;
   if (null != metric.metric.value) {
@@ -105,7 +105,7 @@ export const registerInpInteractionListener = function registerInpInteractionLis
   if (obj.isBrowser()) {
     const item = keys.forEach((arg0) => {
       const WINDOW = captureElementFromEvent(closure_1[4]).WINDOW;
-      const listener = WINDOW.addEventListener(arg0, captureElementFromEvent, { 1649303889: null, -898315181: null });
+      const listener = WINDOW.addEventListener(arg0, captureElementFromEvent, { "Bool(true)": null, "Bool(true)": null });
     });
   }
   function handleEntries(arg0) {

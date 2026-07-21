@@ -1,10 +1,10 @@
-// Module ID: 11079
-// Function ID: 86178
+// Module ID: 11085
+// Function ID: 86201
 // Name: createInjectedInGameNuxMessage
 // Dependencies: []
 // Exports: tryCreateInjectedMessage
 
-// Module 11079 (createInjectedInGameNuxMessage)
+// Module 11085 (createInjectedInGameNuxMessage)
 function createInjectedInGameNuxMessage(author, id) {
   const obj = { channelId: id, type: constants3.IN_GAME_MESSAGE_NUX, content: "", author: author.author, flags: constants.EPHEMERAL, state: constants2.SENT };
   const tmp = importDefault(dependencyMap[2])({ channelId: id, type: constants3.IN_GAME_MESSAGE_NUX, content: "", author: author.author, flags: constants.EPHEMERAL, state: constants2.SENT });

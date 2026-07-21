@@ -1,10 +1,10 @@
-// Module ID: 6011
-// Function ID: 49890
+// Module ID: 6013
+// Function ID: 49933
 // Name: DisplayNameAbstractUI
 // Dependencies: []
 // Exports: DisplayNameAbstractUI
 
-// Module 6011 (DisplayNameAbstractUI)
+// Module 6013 (DisplayNameAbstractUI)
 const jsx = require(dependencyMap[0]).jsx;
 const _module = require(dependencyMap[3]);
 const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/DisplayNameAbstractUI.native.tsx");

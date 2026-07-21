@@ -1,10 +1,10 @@
-// Module ID: 10252
-// Function ID: 79239
+// Module ID: 10258
+// Function ID: 79258
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 // Exports: usePreviewableMedia
 
-// Module 10252 (_createForOfIteratorHelperLoose)
+// Module 10258 (_createForOfIteratorHelperLoose)
 function _createForOfIteratorHelperLoose(@@iterator) {
   let arg1 = Symbol_iterator;
   @@iterator = "undefined" !== typeof Symbol;
@@ -90,12 +90,12 @@ function VoiceMessageIcon() {
   let obj1 = arg1(dependencyMap[5]);
   obj = {};
   const token1 = obj1.useToken(importDefault(dependencyMap[6]).colors.BACKGROUND_MOD_SUBTLE);
-  obj = { aze: null, azj: "text-xs/normal", bak: "text-subtle", bam: 1 };
+  obj = { bhk: null, bic: "text-xs/normal", bih: "text-subtle", bis: 1 };
   const tmp = callback3();
   obj.children = callback(arg1(dependencyMap[7]).Path, { d: "M22.2188 59.8545C19.5607 61.6263 16.0003 59.7208 16 56.5264V48C7.16344 48 2.5772e-07 40.8366 0 32V16C0 7.16344 7.16344 0 16 0H48C56.8366 0 64 7.16344 64 16V32C64 40.8366 56.8366 48 48 48H40L22.2188 59.8545Z", fill: token, stroke: token1 });
   const items = [callback(importDefault(dependencyMap[7]), obj), ];
   obj1 = { style: tmp.voiceMessageIconOverlay };
-  const items1 = [callback(arg1(dependencyMap[8]).CirclePlayIcon, {}), callback(arg1(dependencyMap[9]).WaveformIcon, {})];
+  const items1 = [callback(arg1(dependencyMap[8]).CirclePlayIcon, { flex: -2, flexGrow: -2, flexShrink: -2 }), callback(arg1(dependencyMap[9]).WaveformIcon, { flex: -2, flexGrow: -2 })];
   obj1.children = items1;
   items[1] = callback2(View, obj1);
   obj.children = items;

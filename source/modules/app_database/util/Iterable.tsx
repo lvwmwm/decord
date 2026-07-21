@@ -1,10 +1,10 @@
-// Module ID: 6703
-// Function ID: 52099
+// Module ID: 6709
+// Function ID: 52148
 // Name: Chained
 // Dependencies: []
 // Exports: chain
 
-// Module 6703 (Chained)
+// Module 6709 (Chained)
 let closure_0 = importDefault(dependencyMap[0]);
 let closure_1 = importDefault(dependencyMap[1]);
 let closure_2 = () => {

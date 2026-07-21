@@ -1,10 +1,10 @@
-// Module ID: 14420
-// Function ID: 108755
+// Module ID: 14427
+// Function ID: 108778
 // Name: UserSettingsSensitiveContentFilters
 // Dependencies: []
 // Exports: default
 
-// Module 14420 (UserSettingsSensitiveContentFilters)
+// Module 14427 (UserSettingsSensitiveContentFilters)
 let closure_3 = importAll(dependencyMap[0]);
 const MobileSetting = arg1(dependencyMap[1]).MobileSetting;
 const jsx = arg1(dependencyMap[2]).jsx;

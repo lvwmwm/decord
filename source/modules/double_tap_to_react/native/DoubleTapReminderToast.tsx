@@ -1,17 +1,16 @@
-// Module ID: 9326
-// Function ID: 72892
+// Module ID: 9330
+// Function ID: 72906
 // Name: DoubleTapReminderContent
 // Dependencies: []
 // Exports: maybeShowDoubleTapReminderToast
 
-// Module 9326 (DoubleTapReminderContent)
+// Module 9330 (DoubleTapReminderContent)
 function DoubleTapReminderContent(emoji) {
   let obj = { variant: "text-sm/normal", style: callback().toastText };
   const intl = arg1(dependencyMap[6]).intl;
   obj = {
     protipHook(children) {
-      const obj = { INTEGRATION_CREATE: "/assets/images/native", ConstraintReasonCode: 80, children };
-      return callback2(callback(closure_2[5]).Text, obj, "doubleTapReminder");
+      return callback2(callback(closure_2[5]).Text, { children }, "doubleTapReminder");
     },
     emojiName: emoji.emoji.name
   };

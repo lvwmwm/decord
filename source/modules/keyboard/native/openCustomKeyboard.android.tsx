@@ -1,10 +1,10 @@
-// Module ID: 11136
-// Function ID: 86618
+// Module ID: 11142
+// Function ID: 86641
 // Name: openCustomKeyboard
 // Dependencies: []
 // Exports: default
 
-// Module 11136 (openCustomKeyboard)
+// Module 11142 (openCustomKeyboard)
 const _module = require(dependencyMap[4]);
 const result = _module.fileFinishedImporting("modules/keyboard/native/openCustomKeyboard.android.tsx");
 

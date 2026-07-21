@@ -1,9 +1,9 @@
-// Module ID: 7093
-// Function ID: 57056
+// Module ID: 7097
+// Function ID: 57067
 // Dependencies: []
 // Exports: createHeaderResult
 
-// Module 7093
+// Module 7097
 const _module = require(dependencyMap[0]);
 ({ HeaderRecord: closure_0, AutocompleterResultTypes: closure_1 } = _module);
 const _module1 = require(dependencyMap[1]);

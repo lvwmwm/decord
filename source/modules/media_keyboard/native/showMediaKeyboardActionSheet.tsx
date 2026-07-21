@@ -1,10 +1,10 @@
-// Module ID: 9640
-// Function ID: 75132
+// Module ID: 9645
+// Function ID: 75149
 // Name: hideMediaKeyboardActionSheet
-// Dependencies: [102039552, 86769664, 297926656, 305070080, 270270464]
+// Dependencies: [102039552, 86769664, 298188800, 305201152, 270270464]
 // Exports: hideMediaKeyboardActionSheet, presentLimitedLibraryPicker, showMediaKeyboardActionSheet
 
-// Module 9640 (hideMediaKeyboardActionSheet)
+// Module 9645 (hideMediaKeyboardActionSheet)
 const NativeModules = require(dependencyMap[0]).NativeModules;
 const _module = require(dependencyMap[4]);
 const result = _module.fileFinishedImporting("modules/media_keyboard/native/showMediaKeyboardActionSheet.tsx");

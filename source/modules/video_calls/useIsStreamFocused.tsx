@@ -1,10 +1,10 @@
-// Module ID: 10599
-// Function ID: 82706
+// Module ID: 10605
+// Function ID: 82729
 // Name: useIsStreamFocused
 // Dependencies: []
 // Exports: useIsStreamFocused
 
-// Module 10599 (useIsStreamFocused)
+// Module 10605 (useIsStreamFocused)
 let closure_2 = importDefault(dependencyMap[0]);
 const isStreamParticipant = arg1(dependencyMap[1]).isStreamParticipant;
 const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/video_calls/useIsStreamFocused.tsx");

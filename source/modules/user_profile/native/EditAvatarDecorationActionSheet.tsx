@@ -1,10 +1,10 @@
-// Module ID: 7828
-// Function ID: 62399
+// Module ID: 7832
+// Function ID: 62411
 // Name: EditAvatarDecorationInner
 // Dependencies: []
 // Exports: default
 
-// Module 7828 (EditAvatarDecorationInner)
+// Module 7832 (EditAvatarDecorationInner)
 function EditAvatarDecorationInner(user) {
   let selectedAvatarDecoration;
   let setSelectedAvatarDecoration;
@@ -157,10 +157,10 @@ let obj = arg1(dependencyMap[8]);
 obj = {};
 obj = { flex: 1, backgroundColor: importDefault(dependencyMap[9]).colors.MOBILE_ACTIONSHEET_BACKGROUND };
 obj.container = obj;
-obj.bounceOffset = { 1532122209: "row", 1663392805: "center", 1364614395: "flex-start", 996279293: 40, -936095340: null };
+obj.bounceOffset = { fontSize: "row", alignItems: "center", display: "flex-start", flexDirection: 40, justifyContent: null };
 const tmp2 = arg1(dependencyMap[7]);
 obj.title = { color: importDefault(dependencyMap[9]).colors.MOBILE_TEXT_HEADING_PRIMARY };
-obj.avatarDisplayContainer = { Visa: "ILLO_GREEN_50", MasterCard: 0.25, Discover: "ILLO_GREEN_50", American Express: 0.3, name: "ILLO_NITRO_BLUE" };
+obj.avatarDisplayContainer = { "Null": "ILLO_GREEN_50", "Null": 0.25, "Null": "ILLO_GREEN_50", "Null": 0.3, "Null": "ILLO_NITRO_BLUE" };
 let closure_13 = obj.createStyles(obj);
 const obj1 = { color: importDefault(dependencyMap[9]).colors.MOBILE_TEXT_HEADING_PRIMARY };
 const result = arg1(dependencyMap[32]).fileFinishedImporting("modules/user_profile/native/EditAvatarDecorationActionSheet.tsx");

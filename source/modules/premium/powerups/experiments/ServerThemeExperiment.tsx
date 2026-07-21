@@ -7,11 +7,9 @@
 // Module 4058 (experiment)
 const EMPTY_STRING_SNOWFLAKE_ID = require(dependencyMap[0]).EMPTY_STRING_SNOWFLAKE_ID;
 const _module = require(dependencyMap[1]);
-let obj = { "Bool(false)": null, "Bool(false)": null, config: { <string:74106368>: -1924062975, <string:71306752>: 275849618, <string:80013056>: 1358954496 } };
-const items = [obj, ];
-obj = { "Bool(false)": null, "Bool(false)": null, config: {} };
-items[1] = obj;
-const experiment = _module.createExperiment({ defaultConfig: { <string:74106368>: true, <string:71306752>: false, <string:80013056>: false }, treatments: items });
+const obj = { -1174339580: null, -1169096700: null, config: { uppercase: true, trinketAnimationUrl: true, bundleType: true } };
+const items = [obj, { config: { uppercase: true, trinketAnimationUrl: true, bundleType: true } }];
+const experiment = _module.createExperiment({ defaultConfig: { uppercase: true, trinketAnimationUrl: false, bundleType: false }, treatments: items });
 const _module1 = require(dependencyMap[3]);
 const result = _module1.fileFinishedImporting("modules/premium/powerups/experiments/ServerThemeExperiment.tsx");
 
@@ -25,7 +23,7 @@ export const getServerThemeEnabled = function getServerThemeEnabled(guildId, Gui
     obj = { guildId, location: GuildPowerupsConstants };
     let config = ServerThemeApexShadowExperiment.getConfig(obj);
   } else {
-    config = {};
+    config = { "Null": null, "Null": null };
   }
   if (!currentConfig.inExperiment) {
     let tmp6 = !tmp5;

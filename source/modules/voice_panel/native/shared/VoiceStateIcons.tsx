@@ -1,9 +1,9 @@
-// Module ID: 8854
-// Function ID: 69871
+// Module ID: 8858
+// Function ID: 69883
 // Name: VideoDisabledSvgIcon
 // Dependencies: []
 
-// Module 8854 (VideoDisabledSvgIcon)
+// Module 8858 (VideoDisabledSvgIcon)
 function VideoDisabledSvgIcon(size) {
   let MEDIUM = size.size;
   if (MEDIUM === undefined) {

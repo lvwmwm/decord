@@ -1,10 +1,10 @@
-// Module ID: 10114
-// Function ID: 78315
+// Module ID: 10120
+// Function ID: 78333
 // Name: useShouldShowInitialSafetyToolsButtonTooltip
 // Dependencies: []
 // Exports: useShouldShowInitialSafetyToolsButtonTooltip
 
-// Module 10114 (useShouldShowInitialSafetyToolsButtonTooltip)
+// Module 10120 (useShouldShowInitialSafetyToolsButtonTooltip)
 let closure_2 = importDefault(dependencyMap[0]);
 const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/self_mod/inappropriate_conversation/hooks/useShouldShowInitialSafetyToolsButtonTooltip.tsx");
 

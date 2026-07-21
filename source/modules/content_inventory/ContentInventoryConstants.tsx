@@ -1,9 +1,9 @@
-// Module ID: 8317
-// Function ID: 65925
+// Module ID: 8321
+// Function ID: 65937
 // Name: ContentInventoryFeedKey
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 8317 (ContentInventoryFeedKey)
+// Module 8321 (ContentInventoryFeedKey)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("modules/content_inventory/ContentInventoryConstants.tsx");
 

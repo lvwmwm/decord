@@ -1,10 +1,10 @@
-// Module ID: 8815
-// Function ID: 69521
+// Module ID: 8819
+// Function ID: 69533
 // Name: styles
 // Dependencies: []
 // Exports: default
 
-// Module 8815 (styles)
+// Module 8819 (styles)
 let closure_3 = importAll(dependencyMap[0]);
 let obj = arg1(dependencyMap[1]);
 obj = {};

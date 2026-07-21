@@ -1,5 +1,5 @@
 // Module ID: 8059
-// Function ID: 63951
+// Function ID: 63939
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
@@ -13,26 +13,24 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-importDefault(dependencyMap[5]);
-const jsx = arg1(dependencyMap[6]).jsx;
-const tmp3 = (arg0) => {
-  class FeOffset {
+let closure_2 = importDefault(dependencyMap[0]);
+let closure_3 = importDefault(dependencyMap[1]);
+let closure_4 = importDefault(dependencyMap[2]);
+let closure_5 = importDefault(dependencyMap[3]);
+let closure_6 = importDefault(dependencyMap[4]);
+const tmp2 = (Component) => {
+  class FeDistantLight {
     constructor() {
       self = this;
-      tmp = closure_3(this, FeOffset);
-      obj = closure_6(FeOffset);
-      tmp2 = closure_5;
-      if (closure_9()) {
+      tmp = closure_2(this, FeDistantLight);
+      obj = closure_5(FeDistantLight);
+      tmp2 = closure_4;
+      if (closure_7()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_6;
+        tmp7 = closure_5;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_6(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, closure_5(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -41,28 +39,20 @@ const tmp3 = (arg0) => {
       return tmp2(self, constructResult);
     }
   }
-  const arg1 = FeOffset;
-  callback2(FeOffset, arg0);
+  const arg1 = FeDistantLight;
+  callback2(FeDistantLight, Component);
   const items = [
     {
       key: "render",
       value: function render() {
-        const FeOffset = this;
-        const obj = {
-          ref(arg0) {
-            return self.refMethod(arg0);
-          }
-        };
-        const tmp = callback(closure_2[7]);
-        const obj2 = FeOffset(closure_2[8]);
-        const extractFilterResult = FeOffset(closure_2[8]).extractFilter(this.props);
-        return callback4(tmp, Object.assign(obj, this.props, extractFilterResult, FeOffset(closure_2[8]).extractIn(this.props)));
+        const result = FeDistantLight(closure_1[6]).warnUnimplementedFilter();
+        return null;
       }
     }
   ];
-  return callback(FeOffset, items);
-}(importDefault(dependencyMap[9]));
-tmp3.displayName = "FeOffset";
-tmp3.defaultProps = Object.assign({}, tmp3.defaultPrimitiveProps, { "Bool(false)": false, "Bool(false)": true });
+  return callback(FeDistantLight, items);
+}(arg1(dependencyMap[5]).Component);
+tmp2.displayName = "FeDistantLight";
+tmp2.defaultProps = {};
 
-export default tmp3;
+export default tmp2;

@@ -1,10 +1,10 @@
-// Module ID: 9533
-// Function ID: 74269
+// Module ID: 9538
+// Function ID: 74286
 // Name: clearDraft
 // Dependencies: []
 // Exports: default
 
-// Module 9533 (clearDraft)
+// Module 9538 (clearDraft)
 function clearDraft(arg0) {
   importDefault(dependencyMap[13]).clearDraft(arg0, DraftType.ThreadSettings);
   const obj = importDefault(dependencyMap[13]);

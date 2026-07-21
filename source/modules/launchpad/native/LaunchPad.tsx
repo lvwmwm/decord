@@ -1,9 +1,9 @@
-// Module ID: 15515
-// Function ID: 118407
+// Module ID: 15522
+// Function ID: 118431
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 
-// Module 15515 (_createForOfIteratorHelperLoose)
+// Module 15522 (_createForOfIteratorHelperLoose)
 function _createForOfIteratorHelperLoose(@@iterator) {
   let arg1 = Symbol_iterator;
   @@iterator = "undefined" !== typeof Symbol;
@@ -107,7 +107,7 @@ function TabButton(selected) {
   return closure_25(arg1(dependencyMap[21]).PressableHighlight, obj);
 }
 function TabHeader(text) {
-  const obj = { paddingHorizontal: "5.9.4", from: 24, ks: 0, TypeError: 83, style: callback4().subheader, children: text.text };
+  const obj = { isArray: "5.9.4", valueOf: 24, string: 0, y: 83, style: callback4().subheader, children: text.text };
   return callback3(arg1(dependencyMap[22]).Text, obj);
 }
 function createAndAppendChannel(arg0, has, arr) {
@@ -443,8 +443,8 @@ let obj = {};
 obj = { color: "\u{1F9D1}\u200D\u{1F692}", lineHeight: true, flexGrow: 12.1, alignSelf: 127, paddingVertical: null, paddingHorizontal: 1, paddingTop: "center", marginBottom: "center", MINUTES_30: 64, HOURS_1: 16, backgroundColor: importDefault(dependencyMap[19]).colors.BACKGROUND_BASE_LOW };
 obj.wrapper = obj;
 obj.launchPadContent = {};
-obj.header = { "Bool(true)": 0, "Bool(true)": 0, "Bool(true)": 0, "Bool(true)": 0, "Bool(true)": 0 };
-obj.subheader = { <string:2397978275>: true, <string:2386645960>: true, <string:4135902548>: true, <string:2208235863>: true, <string:3080651359>: true, "Bool(true)": true };
+obj.header = {};
+obj.subheader = { t: true, transform: true, category: true, parent: true, padding: true, add: true };
 obj1 = { backgroundColor: importDefault(dependencyMap[19]).colors.INPUT_BACKGROUND_DEFAULT, borderRadius: md, borderColor: importDefault(dependencyMap[19]).colors.INPUT_BORDER_DEFAULT };
 obj.tabs = obj1;
 const obj2 = { "Bool(false)": "boolean", "Bool(false)": "string", "Bool(false)": "boolean", "Bool(false)": "artboard", "Bool(false)": "artboard", borderRadius: md - 5 };

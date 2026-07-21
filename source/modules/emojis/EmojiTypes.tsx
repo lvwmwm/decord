@@ -1,7 +1,7 @@
 // Module ID: 3772
 // Function ID: 29014
 // Name: EmojiTypes
-// Dependencies: []
+// Dependencies: [284214097]
 
 // Module 3772 (EmojiTypes)
 const _module = require(dependencyMap[0]);

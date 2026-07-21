@@ -1,9 +1,9 @@
-// Module ID: 9278
-// Function ID: 72507
+// Module ID: 9282
+// Function ID: 72519
 // Name: ConversationListItemBase
 // Dependencies: []
 
-// Module 9278 (ConversationListItemBase)
+// Module 9282 (ConversationListItemBase)
 function ConversationListItemBase(conversation) {
   conversation = conversation.conversation;
   const arg1 = conversation;
@@ -41,7 +41,7 @@ function ConversationListItemBase(conversation) {
   ({ channelId: arr6[1], guildId: arr6[2], id: arr6[3], title: arr6[4] } = conversation);
   const callback = importAllResult.useCallback(() => {
     let obj = conversation(token[12]);
-    const conversationMessages = obj.fetchConversationMessages(conversation.channelId, conversation.guildId, conversation.id, { alignSelf: null, resizeMode: null });
+    const conversationMessages = obj.fetchConversationMessages(conversation.channelId, conversation.guildId, conversation.id, { call: null, get: null });
     obj = { channelId: conversation.channelId, guildId: conversation.guildId, conversationId: conversation.id, title: conversation.title };
     navigation.navigate(conversation(token[13]).ConversationNavigatorScreens.FOCUS, obj);
     const ConversationsAnalytics = conversation(token[14]).ConversationsAnalytics;
@@ -52,7 +52,7 @@ function ConversationListItemBase(conversation) {
   obj = { style: tmp.headerContainer };
   obj1 = { style: tmp.title, children: conversation.title };
   const items5 = [callback(arg1(dependencyMap[16]).Text, obj1), ];
-  obj2 = { style: tmp.timestamp };
+  obj2 = { -9223372036854775808: "contain", 0: "100%", 0: 34, style: tmp.timestamp };
   const intl = arg1(dependencyMap[17]).intl;
   obj2.children = intl.formatToPlainString(arg1(dependencyMap[17]).t.poZZGL, { count: conversation.messageCount });
   items5[1] = callback(arg1(dependencyMap[16]).Text, obj2);
@@ -76,21 +76,21 @@ let closure_5 = importDefault(dependencyMap[2]);
 let closure_6 = arg1(dependencyMap[3]).MOBILE_PREVIEW_MESSAGE_COUNT;
 const VerticalGradient = arg1(dependencyMap[4]).VerticalGradient;
 ({ jsx: closure_8, jsxs: closure_9 } = arg1(dependencyMap[5]));
-let closure_10 = ["<string:6582592>", "<string:305266688>"];
+let closure_10 = [];
 let obj1 = arg1(dependencyMap[6]);
 let obj = {};
-obj = { outboundStats: "\u{1F477}\u200D\u2642\uFE0F", stiffness: true, damping: 6, mass: 84, overshootClamping: null, restDisplacementThreshold: "\u{1F482}", marginBottom: importDefault(dependencyMap[7]).space.PX_12, borderColor: importDefault(dependencyMap[7]).colors.BORDER_MUTED, backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_SURFACE_HIGH };
+obj = { ar-EH: "\u{1F477}\u200D\u2642\uFE0F", consentRequired: true, QUEST_DOCK_EXTERNAL_OFFSET_CLOSED: 6, attachChannelPermissions: 84, username2: null, removeRouteRewriter: "\u{1F482}", marginBottom: importDefault(dependencyMap[7]).space.PX_12, borderColor: importDefault(dependencyMap[7]).colors.BORDER_MUTED, backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_SURFACE_HIGH };
 obj.card = obj;
-obj.title = { bannerTextContainer: null, ignoreNotificationSetting: null };
+obj.title = {};
 obj.timestamp = { flexShrink: 0 };
-obj1 = { "Bool(true)": null, "Bool(true)": null, "Bool(true)": null, gap: importDefault(dependencyMap[7]).space.PX_8, paddingBottom: importDefault(dependencyMap[7]).space.PX_8 };
+obj1 = { padding: "Next", paddingBottom: importDefault(dependencyMap[7]).space.PX_8, flexDirection: null, gap: importDefault(dependencyMap[7]).space.PX_8 };
 obj.headerContainer = obj1;
 const tmp2 = arg1(dependencyMap[5]);
 obj.previews = { marginTop: importDefault(dependencyMap[7]).space.PX_8, gap: importDefault(dependencyMap[7]).space.PX_16 };
-const obj2 = { marginTop: importDefault(dependencyMap[7]).space.PX_8, gap: importDefault(dependencyMap[7]).space.PX_16 };
-obj.bottomFade = { bottom: -importDefault(dependencyMap[7]).space.PX_4, height: importDefault(dependencyMap[7]).space.PX_64 };
+const obj3 = { 1134748497: "540091c70b333c8b8937ba1627138192", 276882: "wumpus-pikachu", 297352: "png", 296048: true, -1198516137: "/assets/images/native/wumpus", 1081850235: 84, bottom: -importDefault(dependencyMap[7]).space.PX_4, height: importDefault(dependencyMap[7]).space.PX_64 };
+obj.bottomFade = obj3;
 let closure_11 = obj1.createStyles(obj);
-const obj3 = { bottom: -importDefault(dependencyMap[7]).space.PX_4, height: importDefault(dependencyMap[7]).space.PX_64 };
+const obj2 = { marginTop: importDefault(dependencyMap[7]).space.PX_8, gap: importDefault(dependencyMap[7]).space.PX_16 };
 const memoResult = importAllResult.memo(function ConversationListItem(channelId) {
   channelId = channelId.channelId;
   const arg1 = channelId;

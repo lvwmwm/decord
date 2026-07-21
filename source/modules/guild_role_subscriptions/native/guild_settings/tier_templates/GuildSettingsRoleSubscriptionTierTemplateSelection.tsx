@@ -1,10 +1,10 @@
-// Module ID: 16337
-// Function ID: 126066
+// Module ID: 16344
+// Function ID: 126097
 // Name: TierTemplatesRenderer
 // Dependencies: []
 // Exports: default
 
-// Module 16337 (TierTemplatesRenderer)
+// Module 16344 (TierTemplatesRenderer)
 function TierTemplatesRenderer(groupListingId) {
   let error;
   let guildId;
@@ -17,8 +17,8 @@ function TierTemplatesRenderer(groupListingId) {
     let obj = { color: tmp.activityIndicator.color };
     let tmp3 = callback2(closure_6, obj);
   } else if (null != error) {
-    obj = { INTEGRATION_CREATE: null, ConstraintReasonCode: null };
-    const items = ["<string:3504907740>", error.message];
+    obj = {};
+    const items = [null, error.message];
     obj.children = items;
     tmp3 = callback3(arg1(dependencyMap[9]).Text, obj);
   } else {
@@ -123,7 +123,7 @@ function GuildSettingsRoleSubscriptionTierTemplateSelectionComponent(guildId) {
         obj = { color: closure_1.editIcon.color, size: "xs" };
         const items = [callback2(closure_8, obj), ];
         const obj1 = {};
-        const obj2 = { INTEGRATION_CREATE: 1, ConstraintReasonCode: 1 };
+        const obj2 = {};
         const intl = callback(closure_3[22]).intl;
         obj2.children = intl.string(callback(closure_3[22]).t.WNWtkB);
         obj1.children = callback2(callback(closure_3[9]).Text, obj2);
@@ -190,12 +190,12 @@ let obj = arg1(dependencyMap[7]);
 obj = { container: { marginTop: 16 } };
 obj = { color: importDefault(dependencyMap[8]).colors.MOBILE_TEXT_HEADING_PRIMARY };
 obj.title = obj;
-obj.text = { right: "<string:16777479>", bottom: "<string:36295491>" };
+obj.text = {};
 const tmp4 = arg1(dependencyMap[6]);
 obj.activityIndicator = { color: importDefault(dependencyMap[8]).colors.INTERACTIVE_TEXT_DEFAULT };
 const obj1 = { color: importDefault(dependencyMap[8]).colors.INTERACTIVE_TEXT_DEFAULT };
 obj.editIcon = { color: importDefault(dependencyMap[8]).colors.INTERACTIVE_TEXT_ACTIVE, marginRight: 4 };
-obj.startFromScratch = { "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, "Bool(false)": false };
+obj.startFromScratch = { borderRadius: "1 s\u0103pt\u0103m\u00E2n\u0103", overflow: "{{count}} s\u0103pt\u0103m\u00E2ni", flexGrow: "circa 1 lun\u0103", flexShrink: "circa {{count}} luni" };
 let closure_17 = obj.createStyles(obj);
 const obj2 = { color: importDefault(dependencyMap[8]).colors.INTERACTIVE_TEXT_ACTIVE, marginRight: 4 };
 const result = arg1(dependencyMap[29]).fileFinishedImporting("modules/guild_role_subscriptions/native/guild_settings/tier_templates/GuildSettingsRoleSubscriptionTierTemplateSelection.tsx");

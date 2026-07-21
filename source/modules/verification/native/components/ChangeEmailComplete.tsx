@@ -1,10 +1,10 @@
-// Module ID: 9223
-// Function ID: 72137
+// Module ID: 9227
+// Function ID: 72149
 // Name: handlePress
 // Dependencies: []
 // Exports: default
 
-// Module 9223 (handlePress)
+// Module 9227 (handlePress)
 function handlePress() {
   resetChangeEmailStore();
   importDefault(dependencyMap[6]).close();
@@ -31,11 +31,11 @@ const result = arg1(dependencyMap[11]).fileFinishedImporting("modules/verificati
 
 export default function ChangeEmailComplete(email) {
   const tmp = callback3();
-  let obj = { 9223372036854775807: "LIGHT", -9223372036854775808: "<string:3758096384>", contentContainerStyle: tmp.contentContainer };
+  let obj = { test: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001333156388934068, registerAsset: 56724000.96192874, contentContainerStyle: tmp.contentContainer };
   obj = { style: tmp.image, source: importDefault(dependencyMap[7]) };
   const items = [callback(closure_4, obj), , , ];
   obj = { style: tmp.bodyInner };
-  const obj1 = { 0: 24, 9223372036854775807: 24, 0: null, -9223372036854775808: "aa9c26c29990ba7a6584e51ab5c56efa", style: tmp.title };
+  const obj1 = { 1501064855: 24, -1267889981: 24, -1145697943: null, -1266241916: "aa9c26c29990ba7a6584e51ab5c56efa", style: tmp.title };
   const intl = arg1(dependencyMap[9]).intl;
   obj1.children = intl.string(arg1(dependencyMap[9]).t.8O+nF7);
   const items1 = [callback(arg1(dependencyMap[8]).Text, obj1), ];

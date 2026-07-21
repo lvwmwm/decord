@@ -1,10 +1,10 @@
-// Module ID: 11795
-// Function ID: 91543
+// Module ID: 11802
+// Function ID: 91566
 // Name: ProfileEffectAssetPreview
 // Dependencies: []
 // Exports: default
 
-// Module 11795 (ProfileEffectAssetPreview)
+// Module 11802 (ProfileEffectAssetPreview)
 function ProfileEffectAssetPreview(item) {
   const tmp = callback5();
   const tmp2 = importDefault(dependencyMap[7])(item.item.skuId);
@@ -97,7 +97,7 @@ function BundleAssetPreview(height) {
 function NameplateAssetPreview(item) {
   let obj = arg1(dependencyMap[15]);
   const nameplateData = obj.getNameplateData(item.item);
-  obj = { "Bool(true)": null, "Bool(true)": null, "Bool(true)": null, nameplate: nameplateData, style: callback6().nameplate };
+  obj = { alignItems: null, "Null": null, "Null": null, nameplate: nameplateData, style: callback6().nameplate };
   return callback(importDefault(dependencyMap[16]), obj);
 }
 function CollectibleProductPreview(arg0) {
@@ -267,15 +267,15 @@ obj.bundlePreviewContainer = obj;
 obj.bundlePreviewScale = {};
 const tmp3 = arg1(dependencyMap[4]);
 obj.productContainer = { borderRadius: importDefault(dependencyMap[6]).radii.lg, flexDirection: "column", backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_MOD_SUBTLE };
-const obj2 = { "Bool(true)": null, "Bool(true)": null, "Bool(true)": null, paddingHorizontal: importDefault(dependencyMap[6]).space.PX_16, paddingVertical: importDefault(dependencyMap[6]).space.PX_16 };
+const obj2 = { padding: "Next", paddingBottom: null, flexDirection: null, paddingHorizontal: importDefault(dependencyMap[6]).space.PX_16, paddingVertical: importDefault(dependencyMap[6]).space.PX_16 };
 obj.productDetailsContainer = obj2;
-obj.productPreviewContainer = {};
-const obj3 = { "Bool(true)": 8, "Bool(true)": null, "Bool(true)": "\u270A\u{1F3FF}", gap: importDefault(dependencyMap[6]).space.PX_12 };
-obj.productDetails = obj3;
+obj.productPreviewContainer = { "Null": null, "Null": null };
 const obj1 = { borderRadius: importDefault(dependencyMap[6]).radii.lg, flexDirection: "column", backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_MOD_SUBTLE };
+obj.productDetails = { gap: importDefault(dependencyMap[6]).space.PX_12 };
+const obj3 = { gap: importDefault(dependencyMap[6]).space.PX_12 };
 obj.productDetailsTextContainer = { gap: importDefault(dependencyMap[6]).space.PX_4 };
-const obj5 = { "Bool(true)": -44, "Bool(true)": null, "Bool(true)": 1, backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_SURFACE_HIGH, paddingHorizontal: importDefault(dependencyMap[6]).space.PX_16, borderBottomLeftRadius: importDefault(dependencyMap[6]).radii.lg, borderBottomRightRadius: importDefault(dependencyMap[6]).radii.lg };
-obj.errorContainer = obj5;
+const obj4 = { gap: importDefault(dependencyMap[6]).space.PX_4 };
+obj.errorContainer = { backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_SURFACE_HIGH, paddingHorizontal: importDefault(dependencyMap[6]).space.PX_16, borderBottomLeftRadius: importDefault(dependencyMap[6]).radii.lg, borderBottomRightRadius: importDefault(dependencyMap[6]).radii.lg };
 let closure_9 = obj.createStyles(obj);
 let obj8 = arg1(dependencyMap[5]);
 let closure_10 = obj8.createStyles((arg0) => {
@@ -290,16 +290,17 @@ let closure_10 = obj8.createStyles((arg0) => {
 });
 let obj9 = arg1(dependencyMap[5]);
 const obj6 = {};
-const obj7 = { outboundStats: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000006919153853686053, leaveFrame: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000033995391320984753, JoinSourceType: 139264.00004577637, GiftCodeModalScreens: 69817690491473560000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, hoverGestureHandlerProps: 13343560305114734000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, borderRadius: importDefault(dependencyMap[6]).radii.xs };
+const obj7 = { "Null": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000025755987663096558, "Null": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000033995391321045464, "Null": 139264.00004577637, "Null": -8157701880056440000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, "Null": 13343562689782770000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, borderRadius: importDefault(dependencyMap[6]).radii.xs };
 obj6.profileEffectContainer = obj7;
-obj6.profileEffect = { aspectRatio: tmp2.SAMPLE_PROFILE_ASPECT_RATIO };
+obj8 = { "Null": 424738817, "Null": 94835, "Null": 327680, "Null": -465436672, aspectRatio: tmp2.SAMPLE_PROFILE_ASPECT_RATIO };
+obj6.profileEffect = obj8;
 let closure_11 = obj9.createStyles(obj6);
-const obj4 = { gap: importDefault(dependencyMap[6]).space.PX_4 };
-obj8 = {};
-obj9 = { borderRadius: importDefault(dependencyMap[6]).radii.xs };
-obj8.nameplate = obj9;
-let closure_12 = arg1(dependencyMap[5]).createStyles(obj8);
-const obj13 = arg1(dependencyMap[5]);
+const obj5 = { backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_SURFACE_HIGH, paddingHorizontal: importDefault(dependencyMap[6]).space.PX_16, borderBottomLeftRadius: importDefault(dependencyMap[6]).radii.lg, borderBottomRightRadius: importDefault(dependencyMap[6]).radii.lg };
+obj9 = {};
+const obj14 = arg1(dependencyMap[5]);
+obj9.nameplate = { borderRadius: importDefault(dependencyMap[6]).radii.xs };
+let closure_12 = obj14.createStyles(obj9);
+const obj10 = { borderRadius: importDefault(dependencyMap[6]).radii.xs };
 const result = arg1(dependencyMap[30]).fileFinishedImporting("modules/collectibles/native/CollectiblesShopCheckoutDetails.tsx");
 
 export default function CollectiblesShopCheckoutDetails(recipientUser) {

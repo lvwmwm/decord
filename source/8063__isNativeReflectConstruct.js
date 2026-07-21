@@ -1,5 +1,5 @@
 // Module ID: 8063
-// Function ID: 63971
+// Function ID: 63963
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
@@ -21,11 +21,11 @@ let closure_7 = importDefault(dependencyMap[4]);
 importDefault(dependencyMap[5]);
 const jsx = arg1(dependencyMap[6]).jsx;
 const tmp3 = (arg0) => {
-  class FeMerge {
+  class FeOffset {
     constructor() {
       self = this;
-      tmp = closure_3(this, FeMerge);
-      obj = closure_6(FeMerge);
+      tmp = closure_3(this, FeOffset);
+      obj = closure_6(FeOffset);
       tmp2 = closure_5;
       if (closure_9()) {
         tmp6 = globalThis;
@@ -41,28 +41,28 @@ const tmp3 = (arg0) => {
       return tmp2(self, constructResult);
     }
   }
-  const arg1 = FeMerge;
-  callback2(FeMerge, arg0);
+  const arg1 = FeOffset;
+  callback2(FeOffset, arg0);
   const items = [
     {
       key: "render",
       value: function render() {
-        const FeMerge = this;
+        const FeOffset = this;
         const obj = {
           ref(arg0) {
             return self.refMethod(arg0);
           }
         };
         const tmp = callback(closure_2[7]);
-        const obj2 = FeMerge(closure_2[8]);
-        const extractFilterResult = FeMerge(closure_2[8]).extractFilter(this.props);
-        return callback4(tmp, Object.assign(obj, extractFilterResult, FeMerge(closure_2[8]).extractFeMerge(this.props, this)));
+        const obj2 = FeOffset(closure_2[8]);
+        const extractFilterResult = FeOffset(closure_2[8]).extractFilter(this.props);
+        return callback4(tmp, Object.assign(obj, this.props, extractFilterResult, FeOffset(closure_2[8]).extractIn(this.props)));
       }
     }
   ];
-  return callback(FeMerge, items);
+  return callback(FeOffset, items);
 }(importDefault(dependencyMap[9]));
-tmp3.displayName = "FeMerge";
-tmp3.defaultProps = Object.assign({}, tmp3.defaultPrimitiveProps);
+tmp3.displayName = "FeOffset";
+tmp3.defaultProps = Object.assign({}, tmp3.defaultPrimitiveProps, { "Bool(true)": -536870861, "Bool(true)": -299892737 });
 
 export default tmp3;

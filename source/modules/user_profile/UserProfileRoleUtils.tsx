@@ -1,10 +1,10 @@
-// Module ID: 5506
-// Function ID: 46865
+// Module ID: 5508
+// Function ID: 46907
 // Name: sortRolesByVerification
 // Dependencies: []
 // Exports: sortRolesByVerification
 
-// Module 5506 (sortRolesByVerification)
+// Module 5508 (sortRolesByVerification)
 const _module = require(dependencyMap[1]);
 const result = _module.fileFinishedImporting("modules/user_profile/UserProfileRoleUtils.tsx");
 

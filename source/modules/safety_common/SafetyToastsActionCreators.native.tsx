@@ -1,8 +1,8 @@
-// Module ID: 7478
-// Function ID: 60031
+// Module ID: 7482
+// Function ID: 60043
 // Dependencies: []
 
-// Module 7478
+// Module 7482
 const SafetyToastType = require(dependencyMap[0]).SafetyToastType;
 const _module = require(dependencyMap[3]);
 const result = _module.fileFinishedImporting("modules/safety_common/SafetyToastsActionCreators.native.tsx");

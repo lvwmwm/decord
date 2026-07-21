@@ -1,10 +1,10 @@
-// Module ID: 13803
-// Function ID: 104425
+// Module ID: 13810
+// Function ID: 104448
 // Name: BountiesModalProgress
 // Dependencies: []
 // Exports: default
 
-// Module 13803 (BountiesModalProgress)
+// Module 13810 (BountiesModalProgress)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 ({ StyleSheet: closure_5, View: closure_6 } = arg1(dependencyMap[2]));
@@ -19,9 +19,9 @@ let closure_9 = arg1(dependencyMap[4]).createStyles(() => {
   obj["backgroundColor"] = importDefault(dependencyMap[5]).colors.CONTROL_OVERLAY_SECONDARY_BACKGROUND_DEFAULT;
   obj["opacity"] = 0.54;
   obj.progressTrack = obj;
-  obj = { 1386281826: false, -459159374: false, 89274977: false, 1722585347: false, -1326658362: false, -44827744: false, 1640509443: false, -859413479: false, 996258028: false, 1640509523: false, 1385831705: false, borderRadius: importDefault(dependencyMap[5]).radii.round, backgroundColor: importDefault(dependencyMap[5]).unsafe_rawColors.GREEN_300, shadowOffset: { aze: false, azj: true } };
+  obj = { "Null": "RTC_CONNECTION_LOSS_RATE", "Null": "handleJoinThreadVoice", "Null": "toString", ks: "isArray", channelId: "toString", opacity: "isArray", position: "setDescription", top: "hasExpired", left: "Array", height: "carousel_position", width: "lengthSize", borderRadius: importDefault(dependencyMap[5]).radii.round, backgroundColor: importDefault(dependencyMap[5]).unsafe_rawColors.GREEN_300, shadowOffset: { bhk: -536870861, bic: -299892737 } };
   obj.progressBar = obj;
-  obj.progressBarGlowLayer = { borderRadius: importDefault(dependencyMap[5]).radii.round, backgroundColor: importDefault(dependencyMap[5]).unsafe_rawColors.GREEN_300, shadowOffset: { aze: false, azj: true }, shadowColor: importDefault(dependencyMap[5]).unsafe_rawColors.GREEN_300 };
+  obj.progressBarGlowLayer = { borderRadius: importDefault(dependencyMap[5]).radii.round, backgroundColor: importDefault(dependencyMap[5]).unsafe_rawColors.GREEN_300, shadowOffset: { bhk: -536870861, bic: -299892737 }, shadowColor: importDefault(dependencyMap[5]).unsafe_rawColors.GREEN_300 };
   return obj;
 });
 let closure_10 = { code: "function BountiesModalProgressTsx1(){const{withTiming,visible,timingFast}=this.__closure;return{opacity:withTiming(visible?1:0,timingFast)};}" };

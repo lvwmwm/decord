@@ -1,9 +1,9 @@
-// Module ID: 5596
-// Function ID: 47507
+// Module ID: 5598
+// Function ID: 47549
 // Name: HotspotLocations
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 5596 (HotspotLocations)
+// Module 5598 (HotspotLocations)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("modules/hotspot/Constants.tsx");
 

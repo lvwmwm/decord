@@ -1,10 +1,10 @@
-// Module ID: 11896
-// Function ID: 92090
+// Module ID: 11903
+// Function ID: 92113
 // Name: UserProfileTextButtonGroup
 // Dependencies: []
 // Exports: default
 
-// Module 11896 (UserProfileTextButtonGroup)
+// Module 11903 (UserProfileTextButtonGroup)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 const PROFILE_SIDE_PADDING = arg1(dependencyMap[2]).PROFILE_SIDE_PADDING;

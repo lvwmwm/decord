@@ -1,10 +1,10 @@
-// Module ID: 14892
-// Function ID: 112220
+// Module ID: 14899
+// Function ID: 112244
 // Name: GuildProgressButton
 // Dependencies: []
 // Exports: default, getScaledGuildProgressButtonHeight
 
-// Module 14892 (GuildProgressButton)
+// Module 14899 (GuildProgressButton)
 let closure_3 = importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[11]).fileFinishedImporting("modules/main_tabs_v2/native/tabs/guilds/GuildProgressButton.tsx");

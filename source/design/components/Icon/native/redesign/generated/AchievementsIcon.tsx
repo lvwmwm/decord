@@ -1,10 +1,10 @@
-// Module ID: 13390
-// Function ID: 101828
+// Module ID: 13397
+// Function ID: 101851
 // Name: AchievementsIcon
 // Dependencies: []
 // Exports: AchievementsIcon
 
-// Module 13390 (AchievementsIcon)
+// Module 13397 (AchievementsIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/AchievementsIcon.tsx");

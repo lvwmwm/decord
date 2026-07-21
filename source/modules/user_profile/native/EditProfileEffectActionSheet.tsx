@@ -1,10 +1,10 @@
-// Module ID: 13464
-// Function ID: 102226
+// Module ID: 13471
+// Function ID: 102249
 // Name: EditProfileEffectInner
 // Dependencies: []
 // Exports: default
 
-// Module 13464 (EditProfileEffectInner)
+// Module 13471 (EditProfileEffectInner)
 function EditProfileEffectInner(user) {
   let selectedProfileEffect;
   let setSelectedProfileEffect;
@@ -52,7 +52,7 @@ function EditProfileEffectInner(user) {
       isNonUserBotResult = user.isNonUserBot();
     }
     if (!isNonUserBotResult) {
-      setSelectedProfileEffect(guildId[24])(user.id, user.getAvatarURL(null, 80), { status: null, style: null });
+      setSelectedProfileEffect(guildId[24])(user.id, user.getAvatarURL(null, 80), { position: null, display: null });
       const tmp5 = setSelectedProfileEffect(guildId[24]);
     }
   }, items1);
@@ -135,7 +135,7 @@ function ProfileEffectSectionPreview(arg0) {
     return tmp6;
   }, items);
   const items1 = [callback2(importDefault(dependencyMap[29]), { user, guildId, profileEffect: memo, maxWidth: 250 }), ];
-  obj = { style: tmp.previewGradient, start: {}, end: { "Null": 131072.00314656927, "Null": 0.000000000000000000000000000000000000000000000000000000011294471302334573 } };
+  obj = { style: tmp.previewGradient, start: {}, end: {} };
   const items2 = ["" + tmp.previewGradient.color + "00", tmp.previewGradient.color];
   obj.colors = items2;
   items1[1] = callback2(importDefault(dependencyMap[30]), obj);
@@ -154,10 +154,10 @@ let obj = arg1(dependencyMap[7]);
 obj = {};
 obj = { flex: 1, backgroundColor: importDefault(dependencyMap[8]).colors.MOBILE_ACTIONSHEET_BACKGROUND };
 obj.container = obj;
-obj.bounceOffset = { 1532122209: "row", 1663392805: "center", 1364614395: "flex-start", 996279293: 40, -936095340: null };
+obj.bounceOffset = { fontSize: "row", alignItems: "center", display: "flex-start", flexDirection: 40, justifyContent: null };
 const tmp3 = arg1(dependencyMap[6]);
 obj.title = { color: importDefault(dependencyMap[8]).colors.MOBILE_TEXT_HEADING_PRIMARY };
-obj.previewContainer = { onFinishTransitioning: 48, NZD: 40, WHITESPACE_RE: 8 };
+obj.previewContainer = { alignItems: 48, marginBottom: 40, marginHorizontal: 8 };
 const obj2 = {};
 const merged = Object.assign(tmp2.StyleSheet.absoluteFillObject);
 obj2["bottom"] = -1;

@@ -30,7 +30,7 @@ function unstable_createAnimatedComponentWithAllowlist(displayName, arg1) {
   AnimatedComponent.displayName = "Animated(" + displayName.displayName || "Anonymous" + ")";
   return AnimatedComponent;
 }
-let closure_2 = ["ellipsizeMode"];
+let closure_2 = [null];
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 importAll(dependencyMap[2]);

@@ -1,10 +1,10 @@
-// Module ID: 7475
-// Function ID: 60024
+// Module ID: 7479
+// Function ID: 60036
 // Name: RowType
 // Dependencies: []
 // Exports: getChannelPermissionSpecMap
 
-// Module 7475 (RowType)
+// Module 7479 (RowType)
 const _module = require(dependencyMap[0]);
 ({ ChannelTypes: closure_3, ChannelTypesSets: closure_4, HelpdeskArticles: closure_5, Permissions: closure_6 } = _module);
 const _module1 = require(dependencyMap[5]);

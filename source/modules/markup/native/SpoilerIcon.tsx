@@ -1,10 +1,10 @@
-// Module ID: 11117
-// Function ID: 86553
+// Module ID: 11123
+// Function ID: 86576
 // Name: Spoiler
 // Dependencies: []
 // Exports: default
 
-// Module 11117 (Spoiler)
+// Module 11123 (Spoiler)
 importAll(dependencyMap[0]);
 ({ jsx: closure_2, jsxs: closure_3 } = arg1(dependencyMap[1]));
 const tmp3 = arg1(dependencyMap[1]);
@@ -23,7 +23,7 @@ export default function Spoiler(width) {
   if (str === undefined) {
     str = "currentColor";
   }
-  let obj = {};
+  let obj = { 0: "spring", 9223372036854775807: "linear", -9223372036854775808: "easeInEaseOut" };
   Object.setPrototypeOf(null);
   const merged = Object.assign(width, obj);
   obj = { viewBox: "0 0 24 24" };

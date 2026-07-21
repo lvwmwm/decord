@@ -1,10 +1,10 @@
-// Module ID: 15580
-// Function ID: 118917
+// Module ID: 15587
+// Function ID: 118941
 // Name: QuestActivityUnenrolledModalInner
 // Dependencies: []
 // Exports: default
 
-// Module 15580 (QuestActivityUnenrolledModalInner)
+// Module 15587 (QuestActivityUnenrolledModalInner)
 function QuestActivityUnenrolledModalInner(quest) {
   let accessibilityRole;
   let accessibilityState;
@@ -48,7 +48,7 @@ function QuestActivityUnenrolledModalInner(quest) {
   let obj8 = arg1(closure_2[23]);
   const checkboxA11yNative = obj8.useCheckboxA11yNative({ checked: first });
   ({ accessibilityRole, accessibilityState } = checkboxA11yNative);
-  obj = { -9223372036854775808: 1.2, 0: -228344806301899660000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, 0: -4818682305010937000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, style: tmp2.container };
+  obj = { "Null": 1.2, "Null": -228344806301899660000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, "Null": -4818682305010937000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, style: tmp2.container };
   obj1 = { style: tmp2.content };
   obj2 = { style: tmp2.baseShadow };
   obj3 = { style: tmp2.imagesContainer };
@@ -63,7 +63,7 @@ function QuestActivityUnenrolledModalInner(quest) {
     tmp18 = callback3(closure_7, obj4);
   }
   const items3 = [tmp18, ];
-  obj8 = { marginLeft: -1546187982, fontSize: -418759312, lineHeight: 2061584447, quest, style: tmp2.questRewardTile };
+  obj8 = { paddingHorizontal: -1546187982, surrogates: -418759312, has: 2061584447, quest, style: tmp2.questRewardTile };
   items3[1] = callback3(closure_7, { style: tmp2.rewardTileContainer, children: callback3(importDefault(closure_2[26]), obj8) });
   obj3.children = items3;
   obj2.children = callback4(closure_7, obj3);
@@ -73,7 +73,7 @@ function QuestActivityUnenrolledModalInner(quest) {
   const intl = arg1(closure_2[28]).intl;
   obj10.children = intl.string(arg1(closure_2[28]).t.IrNgN4);
   const items5 = [callback3(arg1(closure_2[27]).Text, obj10), ];
-  const obj11 = { INTEGRATION_CREATE: "<string:1900005261>", ConstraintReasonCode: "Array", style: { textAlign: "center" } };
+  const obj11 = { style: { textAlign: "center" } };
   const intl2 = arg1(closure_2[28]).intl;
   const items6 = [intl2.format(arg1(closure_2[28]).t.V3NSJx, { questName: quest.config.messages.questName }), "\u00A0", questsInstructionsToWinReward];
   obj11.children = items6;
@@ -109,9 +109,9 @@ function QuestActivityUnenrolledModalInner(quest) {
     callback(!first);
     quest(callback[20]).setAutoEnroll(!first);
   };
-  obj17.style = { "Bool(false)": 1.08, "Bool(false)": -64776102579265070000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, "Bool(false)": -22892810781829656000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, "Bool(false)": 2.0000004801551365 };
+  obj17.style = { marginTop: 1.08, borderRadius: -64776102579265070000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, backgroundColor: -22892810781829656000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, width: 2.0000004801551365 };
   const items10 = [callback3(arg1(closure_2[30]).FormCheckbox, { checked: first }), ];
-  const obj18 = { INTEGRATION_CREATE: "<string:1900005261>", ConstraintReasonCode: "Array" };
+  const obj18 = {};
   const intl6 = arg1(closure_2[28]).intl;
   obj18.children = intl6.string(arg1(closure_2[28]).t.931n1T);
   items10[1] = callback3(arg1(closure_2[27]).Text, obj18);
@@ -149,11 +149,11 @@ let closure_14 = arg1(dependencyMap[8]).createStyles((arg0) => {
   obj = { flex: 1, paddingHorizontal: importDefault(dependencyMap[9]).space.PX_24, paddingVertical: importDefault(dependencyMap[9]).space.PX_16, paddingBottom: importDefault(dependencyMap[9]).space.PX_48 };
   obj.container = obj;
   obj.content = { marginTop: "auto" };
-  obj = { "Bool(true)": null, "Bool(true)": null, "Bool(true)": null, marginBottom: importDefault(dependencyMap[9]).space.PX_32 };
+  obj = { bottom: 0, left: 6, padding: 0, marginBottom: importDefault(dependencyMap[9]).space.PX_32 };
   let obj3 = arg1(dependencyMap[10]);
   if (obj3.isIOS()) {
     if (arg0) {
-      const obj1 = { <string:3806585169>: "channelId", <string:1549155172>: "channelId", <string:2898154082>: "channelId", <string:1415687317>: "transform", shadowOffset: { aze: false, azj: true } };
+      const obj1 = { keyboardShouldPersistTaps: "channelId", horizontal: "channelId", query: "channelId", autocompleteType: "transform", shadowOffset: { bhk: -536870861, bic: -299892737 } };
       let obj2 = obj1;
     } else {
       obj2 = {};
@@ -163,7 +163,7 @@ let closure_14 = arg1(dependencyMap[8]).createStyles((arg0) => {
     if (arg0) {
       const obj4 = { dropShadow: {} };
       const items = [obj4, ];
-      const obj5 = { dropShadow: { active: true, initialX: true, initialY: true, panelX: true } };
+      const obj5 = { dropShadow: { call: true, body: true, applicationId: true, paddingHorizontal: true } };
       items[1] = obj5;
       let items1 = items;
     } else {
@@ -176,7 +176,7 @@ let closure_14 = arg1(dependencyMap[8]).createStyles((arg0) => {
     const obj6 = {};
     if (obj9.isIOS()) {
       if (arg0) {
-        const obj7 = { shadowOffset: {} };
+        const obj7 = { shadowOffset: { bhk: 589823, bic: 1091633152 } };
         let obj8 = obj7;
       } else {
         obj8 = {};
@@ -184,14 +184,14 @@ let closure_14 = arg1(dependencyMap[8]).createStyles((arg0) => {
       const merged1 = Object.assign(obj8);
     } else {
       obj.baseShadow = obj6;
-      obj9 = { borderRadius: importDefault(dependencyMap[9]).radii.xl };
+      obj9 = { "Bool(false)": "<string:44579137>", "Bool(false)": "<string:29708800>", "Bool(false)": "<string:24266125>", "Bool(false)": "<string:201326592>", "Bool(false)": "<string:16777216>", "Bool(false)": "<string:29289281>", borderRadius: importDefault(dependencyMap[9]).radii.xl };
       const obj10 = { rotate: "-12.41deg" };
       const items2 = [obj10];
       obj9.transform = items2;
       obj.appIconContainer = obj9;
-      const obj11 = { aze: null, azj: null, borderRadius: importDefault(dependencyMap[9]).radii.xl - 2.18 };
+      const obj11 = { bhk: null, bic: null, borderRadius: importDefault(dependencyMap[9]).radii.xl - 2.18 };
       obj.appIcon = obj11;
-      const obj12 = { borderRadius: importDefault(dependencyMap[9]).radii.xl };
+      const obj12 = { "Null": "Array", "Null": "isArray", "Null": "accessibilityRole", "Null": "construct", "Null": "mode", "Null": "Text", borderRadius: importDefault(dependencyMap[9]).radii.xl };
       const obj13 = { translateX: -10 };
       const items3 = [obj13, ];
       const obj14 = { rotate: "7.81deg" };
@@ -204,7 +204,7 @@ let closure_14 = arg1(dependencyMap[8]).createStyles((arg0) => {
       obj.textContainer = obj16;
       const obj17 = { gap: importDefault(dependencyMap[9]).space.PX_8 };
       obj.buttonsContainer = obj17;
-      obj.footer = { 0: null, 9223372036854775807: null, 9223372036854775807: null };
+      obj.footer = {};
       return obj;
     }
   }
@@ -228,7 +228,7 @@ export default function QuestActivityUnenrolledModal(questId) {
           return null;
         },
       headerTitle() {
-          const obj = { INTEGRATION_CREATE: true, ConstraintReasonCode: true };
+          const obj = {};
           const intl = questId(closure_2[28]).intl;
           obj.children = intl.string(questId(closure_2[28]).t.l7E81v);
           return callback(questId(closure_2[27]).Text, obj);

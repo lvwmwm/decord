@@ -1,10 +1,10 @@
-// Module ID: 7535
-// Function ID: 60327
+// Module ID: 7539
+// Function ID: 60339
 // Name: AgeVerificationWebViewScreen
 // Dependencies: []
 // Exports: default
 
-// Module 7535 (AgeVerificationWebViewScreen)
+// Module 7539 (AgeVerificationWebViewScreen)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 const View = arg1(dependencyMap[2]).View;
@@ -18,7 +18,7 @@ let obj = arg1(dependencyMap[7]);
 obj = {};
 obj = { flex: 1, backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_BASE_LOWEST };
 obj.container = obj;
-const obj1 = { "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, "Bool(true)": false, "Bool(true)": false, backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_BASE_LOWEST };
+const obj1 = { "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_BASE_LOWEST };
 obj.loadingOverlay = obj1;
 const tmp3 = arg1(dependencyMap[5]);
 obj.webView = { flex: 1, backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_BASE_LOWEST };
@@ -169,10 +169,10 @@ export default function AgeVerificationWebViewScreen(webviewUrl) {
   const tmp13 = callback2();
   obj = { style: tmp13.container };
   obj = {
-    "Bool(false)": "PX_16",
-    "Bool(false)": "body",
-    "Bool(false)": "y",
-    "Bool(false)": "isArray",
+    "Bool(false)": null,
+    "Bool(false)": null,
+    "Bool(false)": null,
+    "Bool(false)": null,
     ref,
     source: { uri: webviewUrl },
     onShouldStartLoadWithRequest: callback5,

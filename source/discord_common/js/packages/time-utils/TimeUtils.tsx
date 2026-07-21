@@ -1,15 +1,10 @@
-// Module ID: 4198
-// Function ID: 36395
+// Module ID: 4202
+// Function ID: 36443
 // Name: sleep
-// Dependencies: [4294967295, 4294967295, 0, 0, 0, 0, 0, 0]
+// Dependencies: []
 // Exports: getTimeAndUnit
 
-// Module 4198 (sleep)
-import closure_5 from "result";
-import closure_6 from "result";
-import result from "result";
-import result from "result";
-
+// Module 4202 (sleep)
 function sleep(asMilliseconds) {
   let asMillisecondsResult = asMilliseconds;
   if ("number" !== typeof asMilliseconds) {
@@ -77,6 +72,9 @@ function getTimeUnit(rounded, arg1) {
 }
 let closure_4 = importDefault(dependencyMap[0]);
 importDefault(dependencyMap[1]);
+let closure_5 = importDefault(dependencyMap[2]);
+let closure_6 = importDefault(dependencyMap[3]);
+arg1(dependencyMap[4]);
 function _now() {
   const _performance = arg1(dependencyMap[5]).performance;
   return Math.floor(arg1(dependencyMap[5]).timeOrigin + _performance.now());
@@ -379,20 +377,7 @@ const tmp9 = () => {
   };
   return callback2(DurationEnabled, items);
 }();
-result = result.fileFinishedImporting("../discord_common/js/packages/time-utils/TimeUtils.tsx");
-
-export const MS_PER_SECOND = 1000;
-export const MS_PER_MINUTE = 60000;
-export const MS_PER_HOUR = 3600000;
-export const MS_PER_DAY = 86400000;
-export const MS_PER_WEEK = 604800000;
-export const now = _now;
-export const ControllableTimeStampProducer = tmp4;
-export const TimeStampProducer = tmp5;
-export const TimeSpan = tmp7;
-export const StopWatch = tmp8;
-export const DurationEnabled = tmp9;
-export const TimeOut = () => {
+const tmp10 = () => {
   class TimeOut {
     constructor(arg0) {
       tmp = closure_5(this, TimeOut);
@@ -471,6 +456,20 @@ export const TimeOut = () => {
   items1[1] = obj1;
   return callback2(TimeOut, items, items1);
 }();
+const result = arg1(dependencyMap[7]).fileFinishedImporting("../discord_common/js/packages/time-utils/TimeUtils.tsx");
+
+export const MS_PER_SECOND = 1000;
+export const MS_PER_MINUTE = 60000;
+export const MS_PER_HOUR = 3600000;
+export const MS_PER_DAY = 86400000;
+export const MS_PER_WEEK = 604800000;
+export const now = _now;
+export const ControllableTimeStampProducer = tmp4;
+export const TimeStampProducer = tmp5;
+export const TimeSpan = tmp7;
+export const StopWatch = tmp8;
+export const DurationEnabled = tmp9;
+export const TimeOut = tmp10;
 export { sleep };
 export const TimeUnits = obj;
 export { convertMinutesToGivenTimeUnit };

@@ -1,10 +1,10 @@
-// Module ID: 10908
-// Function ID: 84789
+// Module ID: 10913
+// Function ID: 84810
 // Name: useHandleRedemptionLinkClick
 // Dependencies: []
 // Exports: useClaimOrFetchRewardCode, useClaimRewardCodePrimaryCtaClickHandler
 
-// Module 10908 (useHandleRedemptionLinkClick)
+// Module 10913 (useHandleRedemptionLinkClick)
 function useHandleRedemptionLinkClick(quest) {
   quest = quest.quest;
   const arg1 = quest;

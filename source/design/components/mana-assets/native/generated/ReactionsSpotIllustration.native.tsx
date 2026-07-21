@@ -1,10 +1,10 @@
-// Module ID: 6433
-// Function ID: 50523
+// Module ID: 6435
+// Function ID: 50566
 // Name: ReactionsSpotIllustration
 // Dependencies: []
 // Exports: ReactionsSpotIllustration
 
-// Module 6433 (ReactionsSpotIllustration)
+// Module 6435 (ReactionsSpotIllustration)
 const jsx = require(dependencyMap[0]).jsx;
 const _module = require(dependencyMap[3]);
 const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/ReactionsSpotIllustration.native.tsx");

@@ -1,10 +1,10 @@
-// Module ID: 8474
-// Function ID: 67680
+// Module ID: 8478
+// Function ID: 67692
 // Name: getDefaultInviteExpiration
 // Dependencies: []
 // Exports: useDefaultInviteExpiration, useMaxAgeOptions
 
-// Module 8474 (getDefaultInviteExpiration)
+// Module 8478 (getDefaultInviteExpiration)
 function getDefaultInviteExpiration(arg0) {
   let experimentConfig;
   let guild;
@@ -47,20 +47,22 @@ let closure_3 = importDefault(dependencyMap[0]);
 ({ EMPTY_STRING_SNOWFLAKE_ID: closure_4, GuildFeatures: closure_5 } = arg1(dependencyMap[1]));
 const value = importDefault(dependencyMap[2]).INVITE_OPTIONS_7_DAYS.value;
 let obj = arg1(dependencyMap[3]);
-obj = { "Bool(false)": "column", "Bool(false)": "flex-start", config: { defaultMaxAge: 1209600 } };
+obj = { y: 0, createBackgroundHighlight: null, y: 32, defaultConfig: { defaultMaxAge: 604800 } };
+obj = { -1174339580: "column", -1169096700: "flex-start", config: { defaultMaxAge: 1209600 } };
 const items = [obj, , ];
-obj = { "Bool(false)": "heading-lg/bold", "Bool(false)": "text-sm/normal", config: { defaultMaxAge: 2592000 } };
-items[1] = obj;
+const obj1 = { -1174339580: "heading-lg/bold", -1169096700: "text-sm/normal", config: { defaultMaxAge: 2592000 } };
+items[1] = obj1;
 items[2] = { config: { defaultMaxAge: 5184000 } };
-const experiment = obj.createExperiment({ defaultConfig: { defaultMaxAge: 604800 }, treatments: items });
+obj.treatments = items;
+const experiment = obj.createExperiment(obj);
 const tmp2 = arg1(dependencyMap[1]);
-const obj1 = { "Bool(false)": "column", "Bool(false)": "flex-start", config: { defaultMaxAge: 1209600 } };
-const items1 = [obj1, , ];
-const obj2 = { "Bool(false)": "heading-lg/bold", "Bool(false)": "text-sm/normal", config: { defaultMaxAge: 2592000 } };
-items1[1] = obj2;
+const obj2 = { -1174339580: "column", -1169096700: "flex-start", config: { defaultMaxAge: 1209600 } };
+const items1 = [obj2, , ];
+const obj3 = { -1174339580: "heading-lg/bold", -1169096700: "text-sm/normal", config: { defaultMaxAge: 2592000 } };
+items1[1] = obj3;
 items1[2] = { config: { defaultMaxAge: 5184000 } };
 const experiment1 = arg1(dependencyMap[3]).createExperiment({ defaultConfig: { defaultMaxAge: 604800 }, treatments: items1 });
-const obj4 = arg1(dependencyMap[3]);
+const obj5 = arg1(dependencyMap[3]);
 const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/instant_invite/DefaultInviteExpirationExperiments.tsx");
 
 export const DEFAULT_MAX_AGE = value;

@@ -1,10 +1,10 @@
-// Module ID: 8939
-// Function ID: 70439
+// Module ID: 8943
+// Function ID: 70451
 // Name: TwoWayLinkDiscordConsent
 // Dependencies: []
 // Exports: TwoWayLinkDiscordConsent
 
-// Module 8939 (TwoWayLinkDiscordConsent)
+// Module 8943 (TwoWayLinkDiscordConsent)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 let closure_5 = importAll(dependencyMap[2]);
@@ -14,7 +14,7 @@ const tmp2 = arg1(dependencyMap[3]);
 let importDefaultResult = importDefault(dependencyMap[5]);
 importDefaultResult = new importDefaultResult("TwoWayLinkDiscordConsentNative");
 const tmp3 = arg1(dependencyMap[4]);
-let closure_11 = arg1(dependencyMap[6]).createStyles({ scroller: { "Null": 500, "Null": 16 }, flex: { flex: 1 } });
+let closure_11 = arg1(dependencyMap[6]).createStyles({ scroller: {}, flex: { flex: 1 } });
 const obj = arg1(dependencyMap[6]);
 const result = arg1(dependencyMap[15]).fileFinishedImporting("modules/user_settings/connections/native/two_way_link/TwoWayLinkDiscordConsent.tsx");
 
@@ -49,7 +49,8 @@ export const TwoWayLinkDiscordConsent = function TwoWayLinkDiscordConsent(callba
       return callback(...arguments);
     };
   }(), items);
-  const tmp6 = importDefault(dependencyMap[9])({ clientId, scopes, callback, redirectUri, withBackPressHandler: false });
+  obj = { "Null": "ongeveer 1 jaar", "Null": "ongeveer {{count}} jaar", "Null": "1 jaar", "Null": "{{count}} jaar", "Null": "meer dan 1 jaar", "Null": "meer dan {{count}} jaar", clientId, scopes, callback, redirectUri, withBackPressHandler: false };
+  const tmp6 = importDefault(dependencyMap[9])(obj);
   const sendAuthorize = tmp6.sendAuthorize;
   const items1 = [sendAuthorize];
   ({ header, body, appDetails } = tmp6);
@@ -59,33 +60,33 @@ export const TwoWayLinkDiscordConsent = function TwoWayLinkDiscordConsent(callba
     callback(true);
     sendAuthorize({ isAuthorized: true });
   }, items1);
-  obj = { style: tmp.flex };
-  const obj1 = { style: tmp.scroller };
-  const obj2 = { style: twoWayLinkStyles.body };
+  const obj1 = { style: tmp.flex };
+  const obj2 = { style: tmp.scroller };
+  const obj3 = { style: twoWayLinkStyles.body };
   const items2 = [header, ];
   const items3 = [body, appDetails];
-  const obj3 = { style: twoWayLinkStyles.bodyContent, children: items3 };
+  const obj4 = { style: twoWayLinkStyles.bodyContent, children: items3 };
   const tmp3 = callback(React.useState(false), 2);
   const tmp9 = sendAuthorize;
-  items2[1] = callback2(sendAuthorize, obj3);
-  obj2.children = items2;
-  const items4 = [callback2(sendAuthorize, obj2), ];
-  const obj4 = { bottom: true, style: twoWayLinkStyles.footerContainer };
+  items2[1] = callback2(sendAuthorize, obj4);
+  obj3.children = items2;
+  const items4 = [callback2(sendAuthorize, obj3), ];
+  const obj5 = { bottom: true, style: twoWayLinkStyles.footerContainer };
   let tmp13 = null != sendAuthorize;
   if (tmp13) {
-    const obj5 = { style: twoWayLinkStyles.footerButton };
-    const obj6 = {};
+    const obj6 = { style: twoWayLinkStyles.footerButton };
+    const obj7 = {};
     const intl = arg1(dependencyMap[14]).intl;
-    obj6.text = intl.string(arg1(dependencyMap[14]).t.ZN4hkc);
-    obj6.onPress = callback1;
-    obj6.loading = tmp4;
-    obj5.children = callback3(arg1(dependencyMap[13]).Button, obj6);
-    tmp13 = callback3(sendAuthorize, obj5);
+    obj7.text = intl.string(arg1(dependencyMap[14]).t.ZN4hkc);
+    obj7.onPress = callback1;
+    obj7.loading = tmp4;
+    obj6.children = callback3(arg1(dependencyMap[13]).Button, obj7);
+    tmp13 = callback3(sendAuthorize, obj6);
   }
-  obj4.children = tmp13;
-  items4[1] = callback3(arg1(dependencyMap[12]).SafeAreaPaddingView, obj4);
-  obj1.children = items4;
-  obj.children = callback2(closure_7, obj1);
-  obj.children = callback3(importDefault(dependencyMap[11]), obj);
+  obj5.children = tmp13;
+  items4[1] = callback3(arg1(dependencyMap[12]).SafeAreaPaddingView, obj5);
+  obj2.children = items4;
+  obj1.children = callback2(closure_7, obj2);
+  obj.children = callback3(importDefault(dependencyMap[11]), obj1);
   return callback3(tmp9, obj);
 };

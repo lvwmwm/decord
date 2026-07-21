@@ -1,10 +1,10 @@
-// Module ID: 9977
-// Function ID: 77167
+// Module ID: 9983
+// Function ID: 77185
 // Name: GuildRoleConnectionsScreen
 // Dependencies: []
 // Exports: default
 
-// Module 9977 (GuildRoleConnectionsScreen)
+// Module 9983 (GuildRoleConnectionsScreen)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 ({ View: closure_5, Pressable: closure_6, ScrollView: closure_7 } = arg1(dependencyMap[2]));
@@ -23,14 +23,14 @@ obj.container = obj;
 obj.content = {};
 obj.infoText = { marginTop: 24 };
 obj.verifiedRoles = {};
-const obj1 = { "Bool(false)": true, "Bool(false)": "/assets/images/native", "Bool(false)": 24, "Bool(false)": 24, "Bool(false)": null, "Bool(false)": "f2561d66a35f036565003b940731b99f", "Bool(false)": "ic_verified_check_24px", "Bool(false)": "png", "Bool(false)": true, "Bool(false)": 20, borderColor: importDefault(dependencyMap[10]).colors.BORDER_SUBTLE, borderRadius: importDefault(dependencyMap[10]).radii.md };
+const obj1 = { onPressEmoji: true, onLongPressEmoji: "/assets/images/native", height: 24, padding: 24, borderRadius: importDefault(dependencyMap[10]).radii.md, backgroundColor: "f2561d66a35f036565003b940731b99f", flexDirection: "ic_verified_check_24px", justifyContent: "png", alignItems: true, alignContent: 20, borderColor: importDefault(dependencyMap[10]).colors.BORDER_SUBTLE };
 obj.verifiedRole = obj1;
 const tmp4 = arg1(dependencyMap[8]);
 obj.verifiedRoleHasRole = { borderColor: importDefault(dependencyMap[10]).colors.BACKGROUND_BASE_LOWEST, backgroundColor: importDefault(dependencyMap[10]).colors.BACKGROUND_BASE_LOWEST };
 const obj2 = { borderColor: importDefault(dependencyMap[10]).colors.BACKGROUND_BASE_LOWEST, backgroundColor: importDefault(dependencyMap[10]).colors.BACKGROUND_BASE_LOWEST };
 obj.verifiedRolePressed = { borderColor: importDefault(dependencyMap[10]).colors.BORDER_MUTED };
 obj.verifiedRoleIcon = { marginRight: 12 };
-const obj4 = { "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, backgroundColor: importDefault(dependencyMap[10]).colors.BACKGROUND_BRAND };
+const obj4 = { title: "<string:70245697>", fullscreen: "<string:658592000>", headerShown: "icon-muted", mostRecentQuery: "text-lg/normal", fetching: null, fetching: "mobile-text-heading-primary", mostRecentQuery: true, backgroundColor: importDefault(dependencyMap[10]).colors.BACKGROUND_BRAND };
 obj.roleCheckmark = obj4;
 obj.verifiedRoleName = {};
 obj.platformIconContainer = { flexDirection: "row" };
@@ -80,7 +80,7 @@ export default function GuildRoleConnectionsScreen(guildId) {
     const found = stateFromStores.filter((tags) => null === tags.tags.guild_connections);
     obj = { style: tmp.container };
     obj = { contentContainerStyle: tmp.content };
-    obj1 = { Promise: "String", marginTop: "kind", flags: "justifyContent", style: tmp.infoText };
+    obj1 = { "Null": "String", "Null": "kind", "Null": "justifyContent", style: tmp.infoText };
     const intl = arg1(dependencyMap[26]).intl;
     obj2 = { helpdeskArticleUrl: importDefault(dependencyMap[27]).getArticleURL(constants.CONNECTION_DETAILS) };
     obj1.children = intl.format(arg1(dependencyMap[26]).t.Y+TsEV, obj2);
@@ -138,7 +138,7 @@ export default function GuildRoleConnectionsScreen(guildId) {
             tmp5 = callback(stateFromStores1, obj);
           }
           const items = [tmp5, callback(onCloseModal(tmp[29]), { style: tmp.verifiedRoleIcon, guildId, role: id, size: 24 }), , ];
-          const obj2 = { 9223372036854775807: null, 9223372036854775807: 103, 9223372036854775807: 153, style: tmp.verifiedRoleName, children: id.name };
+          const obj2 = { -9223372036854775808: null, 0: 103, 0: 153, style: tmp.verifiedRoleName, children: id.name };
           items[2] = callback(guildId(tmp[30]).Text, obj2);
           const obj3 = {
             style: tmp.platformIconContainer,

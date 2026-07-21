@@ -1,10 +1,10 @@
-// Module ID: 14663
-// Function ID: 110586
+// Module ID: 14670
+// Function ID: 110608
 // Name: SidebarCoachmarkOverlayLayer
 // Dependencies: []
 // Exports: SidebarCoachmarkOverlay
 
-// Module 14663 (SidebarCoachmarkOverlayLayer)
+// Module 14670 (SidebarCoachmarkOverlayLayer)
 let StyleSheet;
 function SidebarCoachmarkOverlayLayer(manager) {
   manager = manager.manager;

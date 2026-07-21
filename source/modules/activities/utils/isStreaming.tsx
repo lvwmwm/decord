@@ -1,13 +1,13 @@
-// Module ID: 7871
-// Function ID: 62681
+// Module ID: 7875
+// Function ID: 62693
 // Name: _isStreaming
 // Dependencies: [1392, 3801, 2]
 // Exports: default
 
-// Module 7871 (_isStreaming)
+// Module 7875 (_isStreaming)
 import { validStreamURL } from "getAvatarURL";
 import { ActivityTypes } from "explicitContentFromProto";
-import keys from "keys";
+import result2 from "result2";
 
 function _isStreaming(type) {
   let tmp = type.type === ActivityTypes.STREAMING;
@@ -20,7 +20,7 @@ function _isStreaming(type) {
   }
   return tmp;
 }
-const result = keys.fileFinishedImporting("modules/activities/utils/isStreaming.tsx");
+const result = result2.fileFinishedImporting("modules/activities/utils/isStreaming.tsx");
 
 export default function isStreaming(items, arg1) {
   if (null == items) {

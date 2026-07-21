@@ -1,10 +1,10 @@
-// Module ID: 7741
-// Function ID: 61496
+// Module ID: 7745
+// Function ID: 61508
 // Name: createGiftIntentSystemMessage
 // Dependencies: []
 // Exports: createGiftIntentSystemMessage
 
-// Module 7741 (createGiftIntentSystemMessage)
+// Module 7745 (createGiftIntentSystemMessage)
 const _module = require(dependencyMap[0]);
 let closure_3 = _module.createNativeStyleProperties({ iconTintColor: importDefault(dependencyMap[1]).colors.BACKGROUND_BRAND, iconDividerColor: importDefault(dependencyMap[1]).colors.ICON_STRONG });
 const _module1 = require(dependencyMap[7]);

@@ -1,10 +1,10 @@
-// Module ID: 6993
-// Function ID: 55917
+// Module ID: 6997
+// Function ID: 55928
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 // Exports: createPollServerDataFromCreateRequest, filterOutUUID, formatPollResultNotificationCenterText, generateEmptyPollAnswer, getPollAnswerVotesTooltipText, getPollReplyPreview, getPollResultsReplyPreview, getPollResultsReplyPreviewMobile, getTotalVotes, hasNonVoteReactions, isIncompleteAnswer, isPollCreationEmpty, useCanPostPollsInChannel
 
-// Module 6993 (_createForOfIteratorHelperLoose)
+// Module 6997 (_createForOfIteratorHelperLoose)
 function _createForOfIteratorHelperLoose(@@iterator) {
   let arg1 = Symbol_iterator;
   @@iterator = "undefined" !== typeof Symbol;

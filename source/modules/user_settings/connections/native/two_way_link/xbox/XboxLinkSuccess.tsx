@@ -1,10 +1,10 @@
-// Module ID: 9020
-// Function ID: 70918
+// Module ID: 9024
+// Function ID: 70930
 // Name: XboxLinkDiscordSuccess
 // Dependencies: []
 // Exports: default
 
-// Module 9020 (XboxLinkDiscordSuccess)
+// Module 9024 (XboxLinkDiscordSuccess)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 ({ Image: closure_5, View: closure_6, Linking: closure_7, Pressable: closure_8 } = arg1(dependencyMap[2]));
@@ -15,11 +15,11 @@ const tmp3 = arg1(dependencyMap[4]);
 ({ jsx: closure_13, jsxs: closure_14 } = arg1(dependencyMap[5]));
 let obj = arg1(dependencyMap[6]);
 obj = { image: {} };
-obj = { "Null": "application/vnd.sentry.items.trace-metric+json", "Null": "long-animation-frame", "Bool(true)": true, "Bool(true)": "auto.core.linked_errors", "Bool(true)": "eq", "Bool(true)": "neq", "Bool(true)": "gt", backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_BASE_LOWEST, borderRadius: importDefault(dependencyMap[7]).radii.sm };
+obj = { backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_BASE_LOWEST, borderRadius: importDefault(dependencyMap[7]).radii.sm };
 obj.getApp = obj;
 const tmp4 = arg1(dependencyMap[5]);
 obj.appLogoBox = { borderRadius: importDefault(dependencyMap[7]).radii.xs, backgroundColor: importDefault(dependencyMap[7]).unsafe_rawColors.PLATFORM_XBOX };
-obj.appLogo = { aze: "boolean", azj: "string" };
+obj.appLogo = { bhk: "boolean", bic: "string" };
 obj.getAppTitle = { flex: 1 };
 obj.icon = { marginLeft: 8 };
 const obj1 = { borderRadius: importDefault(dependencyMap[7]).radii.xs, backgroundColor: importDefault(dependencyMap[7]).unsafe_rawColors.PLATFORM_XBOX };
@@ -75,7 +75,7 @@ export default function XboxLinkDiscordSuccess() {
   const obj4 = { onPress: callback, style: tmp.getApp };
   const obj5 = { style: tmp.appLogoBox, children: callback2(closure_5, { source: importDefault(dependencyMap[14]), style: tmp.appLogo }) };
   const items3 = [callback2(closure_6, obj5), , ];
-  const obj7 = { Promise: "String", marginTop: "kind", flags: "justifyContent", style: tmp.getAppTitle };
+  const obj7 = { "Null": "String", "Null": "kind", "Null": "justifyContent", style: tmp.getAppTitle };
   const intl3 = arg1(dependencyMap[13]).intl;
   const string = intl3.string;
   const t = arg1(dependencyMap[13]).t;

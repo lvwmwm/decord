@@ -1,9 +1,9 @@
-// Module ID: 7603
-// Function ID: 60964
+// Module ID: 7607
+// Function ID: 60976
 // Name: items
-// Dependencies: [7611, 482, 22, 3974, 689]
+// Dependencies: [7615, 482, 22, 3974, 689]
 
-// Module 7603 (items)
+// Module 7607 (items)
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 
 const obj = {

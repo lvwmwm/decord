@@ -1,11 +1,12 @@
-// Module ID: 15459
-// Function ID: 117949
+// Module ID: 15466
+// Function ID: 117973
 // Name: PIP_WINDOW_OFFSET
-// Dependencies: []
+// Dependencies: [0, 0]
 // Exports: default
 
-// Module 15459 (PIP_WINDOW_OFFSET)
-const PIP_WINDOW_OFFSET = require(dependencyMap[0]).PIP_WINDOW_OFFSET;
+// Module 15466 (PIP_WINDOW_OFFSET)
+import { PIP_WINDOW_OFFSET } from "__exportStarResult1";
+
 const fn = function _(arg0) {
   if ("panels" !== arg0) {
     if ("channel" !== arg0) {
@@ -23,12 +24,11 @@ const fn = function _(arg0) {
   }
   return 60 + PIP_WINDOW_OFFSET;
 };
-const obj = { justifyContent: "user", borderRadius: "2026-03-video-quest-player-refactor", channel: "user", PIP_WINDOW_OFFSET };
+const obj = { 1638832901: "user", -333557038: "2026-03-video-quest-player-refactor", 1700965005: "user", PIP_WINDOW_OFFSET };
 fn.__closure = obj;
 fn.__workletHash = 7115458448589;
 fn.__initData = { code: "function getPIPBottomOffsetForPIPMode_getPIPBottomOffsetForPIPModeTsx1(screenName){const{DEFAULT_CHANNEL_INPUT_HEIGHT,PIP_WINDOW_OFFSET,PIP_AVOIDANCE_TAB_BAR_HEIGHT}=this.__closure;switch(screenName){case'panels':return DEFAULT_CHANNEL_INPUT_HEIGHT+PIP_WINDOW_OFFSET;case'channel':return DEFAULT_CHANNEL_INPUT_HEIGHT+PIP_WINDOW_OFFSET;case'messages':case'notifications':case'main_tab':case'guilds':return PIP_AVOIDANCE_TAB_BAR_HEIGHT+PIP_WINDOW_OFFSET;default:return 0;}}" };
-const _module = require(dependencyMap[1]);
-const result = _module.fileFinishedImporting("modules/panels/morphable/native/getPIPBottomOffsetForPIPMode.tsx");
+const result = require("__exportStarResult1").fileFinishedImporting("modules/panels/morphable/native/getPIPBottomOffsetForPIPMode.tsx");
 
 export default fn;
 export const PIP_AVOIDANCE_TAB_BAR_HEIGHT = 46;

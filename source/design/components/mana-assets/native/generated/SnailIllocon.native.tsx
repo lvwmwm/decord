@@ -1,10 +1,10 @@
-// Module ID: 6511
-// Function ID: 50640
+// Module ID: 6513
+// Function ID: 50683
 // Name: SnailIllocon
 // Dependencies: []
 // Exports: SnailIllocon
 
-// Module 6511 (SnailIllocon)
+// Module 6513 (SnailIllocon)
 const jsx = require(dependencyMap[0]).jsx;
 const _module = require(dependencyMap[3]);
 const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/SnailIllocon.native.tsx");

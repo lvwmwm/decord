@@ -135,7 +135,7 @@ class UNSAFE_isSnowflakeBoundDismissibleContentDismissed {
   constructor(arg0, arg1) {
     obj = arg1(dependencyMap[4]);
     if (obj.disableNewUserDismissibleContent(global)) {
-      return {};
+      return { "Bool(false)": true, "Bool(false)": true };
     } else {
       tmp = closure_4;
       userContent = closure_4.settings.userContent;

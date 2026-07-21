@@ -1,9 +1,9 @@
-// Module ID: 8705
-// Function ID: 68906
+// Module ID: 8709
+// Function ID: 68918
 // Name: metadata
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 8705 (metadata)
+// Module 8709 (metadata)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_assets/assets/orbs/mobile_fraction_nitro_2x.png.js");
 

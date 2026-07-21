@@ -1,10 +1,10 @@
-// Module ID: 5328
-// Function ID: 45351
+// Module ID: 5330
+// Function ID: 45392
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 // Exports: clientPromptToServerPrompt, getEmptyPrompt, isDefaultPrompt, isEmojiEmpty, parseConnectionIdentifier, serverApiResponseToClientState, validateOnboardingConnections
 
-// Module 5328 (_createForOfIteratorHelperLoose)
+// Module 5330 (_createForOfIteratorHelperLoose)
 function _createForOfIteratorHelperLoose(@@iterator) {
   let arg1 = Symbol_iterator;
   @@iterator = "undefined" !== typeof Symbol;
@@ -161,8 +161,8 @@ function validateOnboardingConnection(connection_type) {
   }
   return items;
 }
-let closure_3 = ["next"];
-let closure_4 = ["next"];
+let closure_3 = [];
+let closure_4 = [];
 let closure_5 = importDefault(dependencyMap[0]);
 let closure_6 = importDefault(dependencyMap[1]);
 const PlatformTypes = arg1(dependencyMap[2]).PlatformTypes;
@@ -204,7 +204,8 @@ export const isDefaultPrompt = function isDefaultPrompt(options) {
 };
 export { getDefaultPrompt };
 export const getEmptyPrompt = function getEmptyPrompt(inOnboarding) {
-  const obj = { id: String(Date.now()), options: [], inOnboarding, type: obj.MULTIPLE_CHOICE };
+  const obj = { "Bool(true)": "<string:2571649330>", "Bool(true)": "<string:3745579009>", "Bool(true)": "<string:1358955001>", "Bool(true)": "<string:2420296788>", "Bool(true)": "<string:2415919360>", id: String(Date.now()), options: [], inOnboarding };
+  obj.type = obj.MULTIPLE_CHOICE;
   return obj;
 };
 export const clientPromptToServerPrompt = function clientPromptToServerPrompt(id) {

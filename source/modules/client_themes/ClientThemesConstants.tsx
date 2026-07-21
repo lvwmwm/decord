@@ -17,7 +17,7 @@ let obj = {
   },
   midpointPercentage: 27
 };
-const items = [{ enableBuildOverrides: false, enableEmojiClick: false }, {}, { enableBuildOverrides: "<string:2720678208>", enableEmojiClick: "<string:1378942980>" }];
+const items = [{ 80: null, 0: null }, { 80: null, 0: null }, { 80: null, 0: null }];
 const items1 = [obj, , , , , , , ];
 obj = {
   type: require(dependencyMap[1]).ClientThemeType.BACKGROUND_GRADIENT_PRESET,
@@ -31,7 +31,7 @@ obj = {
   },
   midpointPercentage: 27
 };
-const items2 = [{ enableBuildOverrides: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000009456603227492322, enableEmojiClick: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000040489535172770844 }, { enableBuildOverrides: "ayp", enableEmojiClick: "10" }];
+const items2 = [{ 80: null, 0: null }, { 80: null, 0: null }];
 items1[1] = obj;
 obj = {
   type: require(dependencyMap[1]).ClientThemeType.BACKGROUND_GRADIENT_PRESET,
@@ -45,9 +45,9 @@ obj = {
   },
   midpointPercentage: 50
 };
-const items3 = [{ enableBuildOverrides: 3.94, enableEmojiClick: "BG_GRADIENT_CHROMA_GLOW_2" }, { enableBuildOverrides: 26.1, enableEmojiClick: "BG_GRADIENT_CHROMA_GLOW_3" }, { enableBuildOverrides: 39.82, enableEmojiClick: "BG_GRADIENT_CHROMA_GLOW_4" }, { enableBuildOverrides: 56.89, enableEmojiClick: "BG_GRADIENT_CHROMA_GLOW_5" }];
+const items3 = [{ 80: null, 0: null }, { 80: 3.94, 0: "BG_GRADIENT_CHROMA_GLOW_2" }, { 80: 26.1, 0: "BG_GRADIENT_CHROMA_GLOW_3" }, { 80: 39.82, 0: "BG_GRADIENT_CHROMA_GLOW_4" }];
 items1[2] = obj;
-const items4 = [{ enableBuildOverrides: 76.45, enableEmojiClick: "BG_GRADIENT_FOREST_1" }, {}, { enableBuildOverrides: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000936662491, enableEmojiClick: -0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000009447598005502665 }];
+const items4 = [{ 80: true, 0: true }, {}, { 80: "<string:1079188684>", 0: "<string:71259713>" }];
 items1[3] = {
   type: require(dependencyMap[1]).ClientThemeType.BACKGROUND_GRADIENT_PRESET,
   id: require(dependencyMap[2]).BackgroundGradientPresetId.HANAMI,
@@ -72,7 +72,7 @@ const obj1 = {
   },
   midpointPercentage: 50
 };
-const items5 = [{ enableBuildOverrides: 11.2, enableEmojiClick: "BG_GRADIENT_FOREST_2" }, { enableBuildOverrides: 29.93, enableEmojiClick: "BG_GRADIENT_FOREST_3" }, { enableBuildOverrides: 48.64, enableEmojiClick: "BG_GRADIENT_FOREST_4" }];
+const items5 = [{ 80: "BG_GRADIENT_FOREST_2", 0: 29.93 }, { 80: "BG_GRADIENT_FOREST_3", 0: 48.64 }, { 80: "BG_GRADIENT_FOREST_4", 0: 67.85 }];
 items1[4] = {
   type: require(dependencyMap[1]).ClientThemeType.BACKGROUND_GRADIENT_PRESET,
   id: require(dependencyMap[2]).BackgroundGradientPresetId.SUNRISE,
@@ -97,7 +97,7 @@ const obj2 = {
   },
   midpointPercentage: 50
 };
-const items6 = [{ enableBuildOverrides: 67.85, enableEmojiClick: "BG_GRADIENT_FOREST_5" }, { enableBuildOverrides: 83.54, enableEmojiClick: "BG_GRADIENT_CRIMSON_MOON_1" }];
+const items6 = [{ 80: "BG_GRADIENT_FOREST_5", 0: 83.54 }, { 80: "COMMUNITY_CONTENT", 0: "badgeBackgroundLightTheme" }];
 items1[5] = {
   type: require(dependencyMap[1]).ClientThemeType.BACKGROUND_GRADIENT_PRESET,
   id: require(dependencyMap[2]).BackgroundGradientPresetId.COTTON_CANDY,
@@ -122,7 +122,7 @@ const obj3 = {
   },
   midpointPercentage: 50
 };
-const items7 = [{ enableBuildOverrides: 16.17, enableEmojiClick: "BG_GRADIENT_CRIMSON_MOON_2" }, { enableBuildOverrides: "VN", enableEmojiClick: "+84" }, { enableBuildOverrides: 72, enableEmojiClick: null }, { enableBuildOverrides: null, enableEmojiClick: null }];
+const items7 = [{ 80: null, 0: null }, { 80: "ZA", 0: "+27" }, { 80: "BG_GRADIENT_CRIMSON_MOON_1", 0: 16.17 }, { 80: "BG_GRADIENT_CRIMSON_MOON_2", 0: 72 }];
 items1[6] = {
   type: require(dependencyMap[1]).ClientThemeType.BACKGROUND_GRADIENT_PRESET,
   id: require(dependencyMap[2]).BackgroundGradientPresetId.LOFI_VIBES,
@@ -147,7 +147,7 @@ const obj4 = {
   },
   midpointPercentage: 27
 };
-const items8 = [{ enableBuildOverrides: null, enableEmojiClick: null }, { enableBuildOverrides: null, enableEmojiClick: null }, { enableBuildOverrides: null, enableEmojiClick: null }];
+const items8 = [{}, { 80: false, 0: false }, { 80: "<string:2726052160>", 0: "<string:3090219012>" }];
 items1[7] = {
   type: require(dependencyMap[1]).ClientThemeType.BACKGROUND_GRADIENT_PRESET,
   id: require(dependencyMap[2]).BackgroundGradientPresetId.DESERT_KHAKI,
@@ -173,7 +173,7 @@ const obj5 = {
   },
   midpointPercentage: 50
 };
-const items9 = [{ enableBuildOverrides: null, enableEmojiClick: null }, { enableBuildOverrides: null, enableEmojiClick: null }];
+const items9 = [{ 80: false, 0: false }, { 80: "LANGUAGE", 0: "GENERATED_POOLS_FOR_CURRENT_USER" }];
 const items10 = [
   {
     type: require(dependencyMap[1]).ClientThemeType.BACKGROUND_GRADIENT_PRESET,
@@ -212,7 +212,7 @@ const obj6 = {
   },
   midpointPercentage: 35
 };
-const items11 = [{ enableBuildOverrides: 77737025, enableEmojiClick: -2061553408 }, { enableBuildOverrides: 0.000000000000000000000000000000000000000000000000000000000000000000000001133240387676023, enableEmojiClick: 96.35 }, { enableBuildOverrides: "h", enableEmojiClick: "application" }, { enableBuildOverrides: "setDesktopSourceStatusCallback", enableEmojiClick: "XBOX_CONNECTION" }, { enableBuildOverrides: "<string:1094728289>", enableEmojiClick: "BG_GRADIENT_RETRO_STORM_2" }];
+const items11 = [{ 80: false, 0: false }, { 80: "FAMILY_CENTER_LINK_CODE", 0: "LANGUAGE" }, { 80: "warning_id", 0: "CONFUSING_LANGUAGE" }, { 80: 0.0000000000000000000000000000000000000000000000000000000000000000000000011332408009301823, 0: 96.35 }, { 80: "h", 0: "application" }];
 items10[1] = {
   type: require(dependencyMap[1]).ClientThemeType.BACKGROUND_GRADIENT_PRESET,
   id: require(dependencyMap[2]).BackgroundGradientPresetId.CHROMA_GLOW,
@@ -237,7 +237,7 @@ const obj7 = {
   },
   midpointPercentage: 15
 };
-const items12 = [{ enableBuildOverrides: "<string:457261128>", enableEmojiClick: "<string:822084690>" }, { enableBuildOverrides: false, enableEmojiClick: false }, { enableBuildOverrides: null, enableEmojiClick: 9 }, { enableBuildOverrides: false, enableEmojiClick: false }, { enableBuildOverrides: true, enableEmojiClick: true }];
+const items12 = [{ 80: "firstItem", 0: "LANGUAGE" }, { 80: "<string:1094728289>", 0: "BG_GRADIENT_RETRO_STORM_2" }, { 80: "<string:641810504>", 0: "<string:822084690>" }, { 80: false, 0: false }, { 80: null, 0: 9 }];
 items10[2] = {
   type: require(dependencyMap[1]).ClientThemeType.BACKGROUND_GRADIENT_PRESET,
   id: require(dependencyMap[2]).BackgroundGradientPresetId.FOREST,
@@ -262,7 +262,7 @@ const obj8 = {
   },
   midpointPercentage: 50
 };
-const items13 = [{ enableBuildOverrides: "Map", enableEmojiClick: "IconComponent" }, { enableBuildOverrides: 617066004, enableEmojiClick: -1932574400 }];
+const items13 = [{ 80: "Map", 0: "IconComponent" }, { 80: 617066004, 0: -1928380096 }];
 items10[3] = {
   type: require(dependencyMap[1]).ClientThemeType.BACKGROUND_GRADIENT_PRESET,
   id: require(dependencyMap[2]).BackgroundGradientPresetId.CRIMSON_MOON,
@@ -287,7 +287,7 @@ const obj9 = {
   },
   midpointPercentage: 30
 };
-const items14 = [{ enableBuildOverrides: 0.0000000000000000000000000000000000000000000000000000000000000000000000011332167562851098, enableEmojiClick: 48.31 }, { enableBuildOverrides: false, enableEmojiClick: false }];
+const items14 = [{ 80: 0.000000000000000000000000000000000000000000000000000000000000000000000001133217000864102, 0: 48.31 }, { 80: false, 0: false }];
 items10[4] = {
   type: require(dependencyMap[1]).ClientThemeType.BACKGROUND_GRADIENT_PRESET,
   id: require(dependencyMap[2]).BackgroundGradientPresetId.MIDNIGHT_BLURPLE,
@@ -312,7 +312,7 @@ const obj10 = {
   },
   midpointPercentage: 24
 };
-const items15 = [{ enableBuildOverrides: 0.0000000000000000000000000000000000000000000000000000000000000000000000011332247093192437, enableEmojiClick: 92.5 }, {}];
+const items15 = [{ 80: null, 0: null }, {}];
 items10[5] = {
   type: require(dependencyMap[1]).ClientThemeType.BACKGROUND_GRADIENT_PRESET,
   id: require(dependencyMap[2]).BackgroundGradientPresetId.MARS,
@@ -337,7 +337,7 @@ const obj11 = {
   },
   midpointPercentage: 50
 };
-const items16 = [{ enableBuildOverrides: false, enableEmojiClick: false }, { enableBuildOverrides: "<string:104939598>", enableEmojiClick: "<string:822084656>" }];
+const items16 = [{ 80: "Map", 0: "label" }, { 80: "<string:1311558860>", 0: "<string:806240576>" }];
 items10[6] = {
   type: require(dependencyMap[1]).ClientThemeType.BACKGROUND_GRADIENT_PRESET,
   id: require(dependencyMap[2]).BackgroundGradientPresetId.DUSK,
@@ -362,7 +362,7 @@ const obj12 = {
   },
   midpointPercentage: 50
 };
-const items17 = [{ enableBuildOverrides: false, enableEmojiClick: false }, { enableBuildOverrides: null, enableEmojiClick: null }, { enableBuildOverrides: null, enableEmojiClick: 1 }];
+const items17 = [{ 80: null, 0: null }, { 80: 1344442204, 0: -1569570496 }, {}];
 items10[7] = {
   type: require(dependencyMap[1]).ClientThemeType.BACKGROUND_GRADIENT_PRESET,
   id: require(dependencyMap[2]).BackgroundGradientPresetId.UNDER_THE_SEA,
@@ -387,7 +387,7 @@ const obj13 = {
   },
   midpointPercentage: 50
 };
-const items18 = [{}, {}, { enableBuildOverrides: true, enableEmojiClick: true }, { enableBuildOverrides: "2025-11-overlay-chat", enableEmojiClick: "user" }];
+const items18 = [{ 80: true, 0: true }, { 80: 3942650610255696600000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, 0: -0.00000000000000000000000000000000000021064861087285647 }, { 80: "memo", 0: "s" }, { 80: 1757864160196875000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, 0: -0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000006836612011437434 }];
 items10[8] = {
   type: require(dependencyMap[1]).ClientThemeType.BACKGROUND_GRADIENT_PRESET,
   id: require(dependencyMap[2]).BackgroundGradientPresetId.RETRO_STORM,
@@ -412,7 +412,7 @@ const obj14 = {
   },
   midpointPercentage: 61
 };
-const items19 = [{ enableBuildOverrides: "<string:4150329346>", enableEmojiClick: "2026-05-server-theme-user" }, { enableBuildOverrides: true, enableEmojiClick: true }, { enableBuildOverrides: 3535781248045625000000000000000000000000000000000000000000000000000000000, enableEmojiClick: 19506464099403543000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 }];
+const items19 = [{}, { 80: "flex-start", 0: "center" }, {}];
 items10[9] = {
   type: require(dependencyMap[1]).ClientThemeType.BACKGROUND_GRADIENT_PRESET,
   id: require(dependencyMap[2]).BackgroundGradientPresetId.NEON_NIGHTS,
@@ -437,7 +437,7 @@ const obj15 = {
   },
   midpointPercentage: 50
 };
-const items20 = [{}, { enableBuildOverrides: true, enableEmojiClick: true }, {}];
+const items20 = [{}, {}, { 80: "transform", 0: "Text" }];
 items10[10] = {
   type: require(dependencyMap[1]).ClientThemeType.BACKGROUND_GRADIENT_PRESET,
   id: require(dependencyMap[2]).BackgroundGradientPresetId.STRAWBERRY_LEMONADE,
@@ -462,7 +462,7 @@ const obj16 = {
   },
   midpointPercentage: 32
 };
-const items21 = [{ enableBuildOverrides: true, enableEmojiClick: true }, {}, { enableBuildOverrides: null, enableEmojiClick: null }, {}, {}];
+const items21 = [{ 80: null, 0: null }, { 80: true, 0: true }, { 80: "Array", 0: "isArray" }, {}, { 80: null, 0: 1 }];
 items10[11] = {
   type: require(dependencyMap[1]).ClientThemeType.BACKGROUND_GRADIENT_PRESET,
   id: require(dependencyMap[2]).BackgroundGradientPresetId.AURORA,
@@ -487,7 +487,7 @@ const obj17 = {
   },
   midpointPercentage: 34
 };
-const items22 = [{ enableBuildOverrides: 16, enableEmojiClick: 110 }, { enableBuildOverrides: null, enableEmojiClick: null }];
+const items22 = [{}, {}];
 items10[12] = {
   type: require(dependencyMap[1]).ClientThemeType.BACKGROUND_GRADIENT_PRESET,
   id: require(dependencyMap[2]).BackgroundGradientPresetId.SEPIA,
@@ -525,7 +525,7 @@ const obj20 = {
   },
   midpointPercentage: 50
 };
-const items24 = [{ enableBuildOverrides: "done", enableEmojiClick: "constructor" }, { enableBuildOverrides: "Array", enableEmojiClick: "1 Day" }];
+const items24 = [{ 80: true, 0: true }, { 80: 1451180288, 0: -96403455 }];
 const items25 = [...items10, obj19, obj20];
 const items26 = [obj19, ...items1, obj20];
 const obj18 = {

@@ -1,10 +1,10 @@
-// Module ID: 9881
-// Function ID: 76516
+// Module ID: 9886
+// Function ID: 76532
 // Name: useShareChatInputActions
 // Dependencies: []
 // Exports: useShareChatInputActions
 
-// Module 9881 (useShareChatInputActions)
+// Module 9886 (useShareChatInputActions)
 let closure_2 = importDefault(dependencyMap[0]);
 let closure_3 = importAll(dependencyMap[1]);
 const EmojiIntention = arg1(dependencyMap[2]).EmojiIntention;
@@ -17,7 +17,7 @@ export const useShareChatInputActions = function useShareChatInputActions(setTex
   let callback = appEntryKey;
   const ref = React.useRef(null);
   const React = ref;
-  let closure_4 = React.useRef({ 1726238916: false, 607091733: true });
+  let closure_4 = React.useRef({ 0: -536870861, 0: -299892737 });
   [tmp3, closure_5] = callback(React.useState(false), 2);
   callback = React.useCallback((nativeEvent) => {
     const merged = Object.assign(nativeEvent.nativeEvent.selection);

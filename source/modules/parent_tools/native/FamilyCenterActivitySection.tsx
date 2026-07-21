@@ -1,10 +1,10 @@
-// Module ID: 13672
-// Function ID: 103524
+// Module ID: 13679
+// Function ID: 103547
 // Name: FamilyCenterActivitySectionHeader
 // Dependencies: []
 // Exports: default
 
-// Module 13672 (FamilyCenterActivitySectionHeader)
+// Module 13679 (FamilyCenterActivitySectionHeader)
 function FamilyCenterActivitySectionHeader(displayType) {
   displayType = displayType.displayType;
   const tmp = callback3();
@@ -41,7 +41,7 @@ function FamilyCenterActivitySectionHeader(displayType) {
     const items = [callback2(arg1(dependencyMap[10]).Text, obj), ];
     let tmp16 = null;
     if (null !== tmp8) {
-      const obj1 = { INTEGRATION_CREATE: "<string:3305963521>", ConstraintReasonCode: "<string:671547393>", style: tmp.description, children: tmp8 };
+      const obj1 = { style: tmp.description, children: tmp8 };
       tmp16 = callback2(arg1(dependencyMap[10]).Text, obj1);
     }
     items[1] = tmp16;
@@ -65,7 +65,7 @@ const tmp4 = arg1(dependencyMap[4]);
 obj.description = { marginBottom: importDefault(dependencyMap[6]).space.PX_8 };
 let closure_11 = obj.createStyles(obj);
 const obj1 = { marginBottom: importDefault(dependencyMap[6]).space.PX_8 };
-const obj2 = { container: { display: "flex" }, loadMoreContainer: {} };
+const obj2 = { container: { display: "flex" }, loadMoreContainer: { <string:1386281838>: "getElementsByClassName", <string:4054151979>: "<string:1602304>", <string:4015253345>: "<string:1572864>", <string:229377690>: "<string:1048576>", <string:2436260780>: "<string:1010892800>", <string:4265366510>: false } };
 const obj5 = arg1(dependencyMap[5]);
 obj2.loadMore = { borderBottomRightRadius: importDefault(dependencyMap[6]).radii.sm, borderBottomLeftRadius: importDefault(dependencyMap[6]).radii.sm, backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_MOD_SUBTLE, width: "60%" };
 obj2.loadMoreButton = { paddingVertical: 4 };

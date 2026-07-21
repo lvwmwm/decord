@@ -1,15 +1,15 @@
-// Module ID: 7437
-// Function ID: 59666
+// Module ID: 7441
+// Function ID: 59677
 // Name: PillText
 // Dependencies: []
 // Exports: default
 
-// Module 7437 (PillText)
+// Module 7441 (PillText)
 const HorizontalGradient = require(dependencyMap[0]).HorizontalGradient;
 const jsx = require(dependencyMap[1]).jsx;
 const _module = require(dependencyMap[2]);
 let obj = {};
-obj = { marginHorizontal: null, alignSelf: null, flex: null, borderRadius: importDefault(dependencyMap[3]).radii.lg };
+obj = { raw: null, position: null, body: null, borderRadius: importDefault(dependencyMap[3]).radii.lg };
 obj.pillTextContainer = obj;
 obj.pillText = { textTransform: "uppercase" };
 let closure_5 = _module.createStyles(obj);

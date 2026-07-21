@@ -1,10 +1,10 @@
-// Module ID: 5688
-// Function ID: 48938
+// Module ID: 5690
+// Function ID: 48981
 // Name: SimpleLoadingModal
 // Dependencies: []
 // Exports: default
 
-// Module 5688 (SimpleLoadingModal)
+// Module 5690 (SimpleLoadingModal)
 let closure_2 = importAll(dependencyMap[0]);
 ({ Modal: closure_3, View: closure_4 } = arg1(dependencyMap[1]));
 const jsx = arg1(dependencyMap[2]).jsx;
@@ -80,6 +80,8 @@ export default function SimpleLoadingModal(operation) {
     operation().then((arg0) => callback(arg0)).catch((arg0) => callback2(arg0));
   }, items3);
   let obj = {
+    <string:3590325457>: -1101856764,
+    <string:1358955722>: 1126687489,
     onShow() {
       if (ref.current === callback1.DISMISSED) {
         D();

@@ -1,10 +1,10 @@
-// Module ID: 7671
-// Function ID: 61297
+// Module ID: 7675
+// Function ID: 61309
 // Name: getApplicationSubscriptionSystemMessageASTContent
 // Dependencies: []
 // Exports: getApplicationSubscriptionSystemMessageASTContent
 
-// Module 7671 (getApplicationSubscriptionSystemMessageASTContent)
+// Module 7675 (getApplicationSubscriptionSystemMessageASTContent)
 const _module = require(dependencyMap[1]);
 const result = _module.fileFinishedImporting("modules/premium_apps/ApplicationSubscriptionSystemMessageUtils.tsx");
 

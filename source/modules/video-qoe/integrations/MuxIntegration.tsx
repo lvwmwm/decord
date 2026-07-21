@@ -1,9 +1,9 @@
-// Module ID: 13905
-// Function ID: 105262
+// Module ID: 13912
+// Function ID: 105285
 // Name: MuxIntegration
 // Dependencies: []
 
-// Module 13905 (MuxIntegration)
+// Module 13912 (MuxIntegration)
 let closure_0 = importDefault(dependencyMap[0]);
 let closure_1 = importDefault(dependencyMap[1]);
 const tmp2 = () => {
@@ -18,7 +18,7 @@ const tmp2 = () => {
     key: "mapDiscordToMuxMetadata",
     value(contentMetadata, session_id) {
       const self = this;
-      const obj = { "Bool(true)": false, "Bool(true)": false, "Bool(true)": false, "Bool(true)": false, session_id, video_id: contentMetadata.contentMetadata.contentId, video_title: contentMetadata.contentMetadata.title };
+      const obj = { "Bool(false)": "language", "Bool(false)": "labeled", "Bool(false)": "level", "Bool(false)": "live", session_id, video_id: contentMetadata.contentMetadata.contentId, video_title: contentMetadata.contentMetadata.title };
       let durationMs = contentMetadata.contentMetadata.durationMs;
       if (null == durationMs) {
         let result;
@@ -60,7 +60,7 @@ const tmp2 = () => {
   obj = {
     key: "getAppVersion",
     value() {
-      return "6028";
+      return "6039";
     }
   };
   items[1] = obj;

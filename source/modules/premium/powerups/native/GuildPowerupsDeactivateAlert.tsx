@@ -1,16 +1,16 @@
-// Module ID: 11555
-// Function ID: 89925
+// Module ID: 11562
+// Function ID: 89948
 // Name: GuildPowerupsDeactivateAlert
 // Dependencies: []
 // Exports: default
 
-// Module 11555 (GuildPowerupsDeactivateAlert)
+// Module 11562 (GuildPowerupsDeactivateAlert)
 const View = require(dependencyMap[0]).View;
 const _module = require(dependencyMap[1]);
 ({ jsx: closure_4, jsxs: closure_5 } = _module);
 const _module1 = require(dependencyMap[2]);
 let obj = {};
-obj = { "Bool(false)": 122, "Bool(false)": null, "Bool(false)": 1, "Bool(false)": 224, "Bool(false)": null, "Bool(false)": 1, -1918788825: 293, borderRadius: importDefault(dependencyMap[3]).radii.round, backgroundColor: importDefault(dependencyMap[3]).colors.BACKGROUND_MOD_SUBTLE };
+obj = { "Bool(false)": 122, "Bool(false)": null, "Bool(false)": 1, "Bool(false)": 224, "Bool(false)": null, "Bool(false)": 1, "Bool(false)": 293, borderRadius: importDefault(dependencyMap[3]).radii.round, backgroundColor: importDefault(dependencyMap[3]).colors.BACKGROUND_MOD_SUBTLE };
 obj.headerContainer = obj;
 obj.extraContentContainer = { paddingHorizontal: importDefault(dependencyMap[3]).space.PX_12 };
 obj.warningText = { textAlign: "center" };
@@ -31,7 +31,7 @@ export default function GuildPowerupsDeactivateAlert(arg0) {
   const logPowerupModalOpened = obj.useLogPowerupModalOpened(guildId, powerup, require(dependencyMap[6]).ModalType.DEACTIVATE);
   obj = {};
   obj = { style: tmp.headerContainer };
-  const obj1 = { color: importDefault(dependencyMap[3]).colors.INTERACTIVE_ICON_DEFAULT, size: "custom", style: { aze: 30706176, azj: 378290688 } };
+  const obj1 = { color: importDefault(dependencyMap[3]).colors.INTERACTIVE_ICON_DEFAULT, size: "custom", style: {} };
   obj.children = callback(require(dependencyMap[8]).CircleErrorIcon, obj1);
   obj.header = callback(View, obj);
   const intl = require(dependencyMap[9]).intl;
@@ -41,7 +41,7 @@ export default function GuildPowerupsDeactivateAlert(arg0) {
   const obj4 = {};
   let tmp6 = null != error;
   if (tmp6) {
-    const obj5 = { Promise: 240, marginTop: 130, flags: null, style: tmp.warningText, children: error };
+    const obj5 = { "Null": 240, "Null": 130, "Null": null, style: tmp.warningText, children: error };
     tmp6 = callback(require(dependencyMap[12]).Text, obj5);
   }
   const items = [tmp6, , ];

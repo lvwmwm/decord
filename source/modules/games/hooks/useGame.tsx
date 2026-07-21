@@ -1,15 +1,16 @@
-// Module ID: 6853
-// Function ID: 54226
+// Module ID: 6859
+// Function ID: 54272
 // Name: importDefaultResult1
 // Dependencies: []
 // Exports: useGames
 
-// Module 6853 (importDefaultResult1)
+// Module 6859 (importDefaultResult1)
 let closure_3 = importAll(dependencyMap[1]);
 const importDefaultResult1 = importDefault(dependencyMap[2]);
 let obj = arg1(dependencyMap[4]);
 obj = {
   getQueryId: arg1(dependencyMap[3]).QueryIds.GAME,
+  failureStaleAfter: 15 * importDefault(dependencyMap[5]).Seconds.SECOND,
   get(arg0) {
     if (null == arg0) {
       return null;
@@ -27,8 +28,8 @@ obj = {
 let closure_2 = importDefault(dependencyMap[0])(async (arg0) => {
   if (null != arg0) {
     const items = [arg0];
-    yield callback(closure_1[5]).fetchGamesWithSupplementalData(items);
-    const obj = callback(closure_1[5]);
+    yield callback(closure_1[6]).fetchGamesWithSupplementalData(items);
+    const obj = callback(closure_1[6]);
   }
 });
 obj.load = function() {
@@ -54,7 +55,7 @@ obj.getError = function getError(arg0) {
 };
 const fetchStore = obj.createFetchStore(importDefaultResult1, obj);
 const importDefaultResult = importDefault(dependencyMap[0]);
-const result = arg1(dependencyMap[6]).fileFinishedImporting("modules/games/hooks/useGame.tsx");
+const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/games/hooks/useGame.tsx");
 
 export const useGame = fetchStore;
 export const useGames = function useGames(memo) {

@@ -1,10 +1,10 @@
-// Module ID: 10986
-// Function ID: 85503
+// Module ID: 10991
+// Function ID: 85524
 // Name: showBanConfirmModal
 // Dependencies: []
 // Exports: default
 
-// Module 10986 (showBanConfirmModal)
+// Module 10991 (showBanConfirmModal)
 const _module = require(dependencyMap[4]);
 const result = _module.fileFinishedImporting("modules/guild_moderation/native/showBanConfirmModal.tsx");
 

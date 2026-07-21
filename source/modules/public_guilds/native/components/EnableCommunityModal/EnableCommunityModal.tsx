@@ -1,13 +1,12 @@
-// Module ID: 16217
-// Function ID: 125376
+// Module ID: 16224
+// Function ID: 125407
 // Name: onModalClose
 // Dependencies: [0, 0, 0, 4294967295, 4294967295, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 // Exports: default
 
-// Module 16217 (onModalClose)
-import closure_3 from "result";
-import { jsx } from "result";
-import result from "result";
+// Module 16224 (onModalClose)
+import __exportStarResult1 from "__exportStarResult1";
+import { jsx } from "__exportStarResult1";
 
 function onModalClose() {
   importDefault(dependencyMap[2]).close();
@@ -21,7 +20,7 @@ function HeaderBackButton(arg0) {
   const intl = arg1(dependencyMap[5]).intl;
   return arg1(dependencyMap[4]).getHeaderTextButton(intl.string(arg1(dependencyMap[5]).t.13/7kX), onModalClose)(arg0);
 }
-result = result.fileFinishedImporting("modules/public_guilds/native/components/EnableCommunityModal/EnableCommunityModal.tsx");
+const result = require("__exportStarResult1").fileFinishedImporting("modules/public_guilds/native/components/EnableCommunityModal/EnableCommunityModal.tsx");
 
 export default function EnableCommunityModal() {
   const memo = React.useMemo(() => function getScreens() {

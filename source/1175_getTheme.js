@@ -7,7 +7,7 @@
 // Module 1175 (getTheme)
 const Appearance = require(dependencyMap[0]).Appearance;
 let obj = {};
-obj = { "Null": null, "Null": null, "Null": null, alignItems: 1, justifyContent: 8, marginHorizontal: "row", borderRadius: 16 };
+obj = { 1365402028: 1, 1398910105: 5, 1671023953: 10, 1365418235: 15, -1235146963: 16, 1644366417: null, 1548855894: "\u{1F9D1}\u200D\u{1F393}" };
 
 export const getTheme = function getTheme() {
   const obj = require(dependencyMap[1]);

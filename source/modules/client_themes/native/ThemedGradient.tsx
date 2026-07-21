@@ -1,10 +1,10 @@
-// Module ID: 4657
-// Function ID: 40287
+// Module ID: 4659
+// Function ID: 40328
 // Name: getThemeMixColor
 // Dependencies: []
 // Exports: CustomThemedGradient, default
 
-// Module 4657 (getThemeMixColor)
+// Module 4659 (getThemeMixColor)
 function getThemeMixColor(mixAmount) {
   let darkFallbackOpacity;
   let mixColorOverride;
@@ -405,8 +405,8 @@ const View = arg1(dependencyMap[1]).View;
 let closure_5 = importDefault(dependencyMap[2]);
 ({ jsx: closure_6, jsxs: closure_7 } = arg1(dependencyMap[3]));
 const tmp2 = arg1(dependencyMap[3]);
-let closure_8 = arg1(dependencyMap[4]).createStyles({ softenGradient: { flex: 1 }, linearGradient: { flex: 1 }, absolute: { rowCount: "isArray", AnnouncementChannelReturn: "skuId", y: "T", PRUNE_DELETE_DAYS: "r", PREMIUM_UNCANCEL_WINBACK_MODAL_VIEWED: "isArray" } });
-let closure_9 = {};
+let closure_8 = arg1(dependencyMap[4]).createStyles({ softenGradient: { flex: 1 }, linearGradient: { flex: 1 }, absolute: { marginBottom: "center", justifyContent: null, alignItems: 4, it: 4, now: "rgba(0, 0, 0, 0.75)" } });
+let closure_9 = { max: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011125378664662503, guildId: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002834178582291256 };
 let closure_10 = 0.5;
 let closure_11 = /^#(?:[0-9a-fA-F]{3}){1,2}$/;
 const obj = arg1(dependencyMap[4]);

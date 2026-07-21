@@ -124,7 +124,7 @@ function _getPrototypeOf(arg0) {
 function _defineProperty(arg0, arg1, value) {
   if (arg1 in arg0) {
     const _Object = Object;
-    const obj = { value };
+    const obj = { FRIEND_REQUESTS: true, ForYouLoadMore: true, QUEST_BADGE: true, GUILD_CHANNEL_INTEGRITY_CHECK_CANCELED: true, value };
     Object.defineProperty(arg0, arg1, obj);
   } else {
     arg0[arg1] = value;
@@ -168,7 +168,7 @@ export const DayParser = (Parser) => {
         tmp17 = closure_7(applyResult, "priority", 90);
         tmp18 = closure_5(applyResult);
         str3 = "incompatibleTokens";
-        tmp19 = closure_7(applyResult, "incompatibleTokens", []);
+        tmp19 = closure_7(applyResult, "incompatibleTokens", [false, false, false, false, false, false]);
         return applyResult;
       } else {
         _TypeError = TypeError;
@@ -212,7 +212,7 @@ export const DayParser = (Parser) => {
           tmp17 = closure_7(applyResult, "priority", 90);
           tmp18 = closure_5(applyResult);
           str3 = "incompatibleTokens";
-          tmp19 = closure_7(applyResult, "incompatibleTokens", []);
+          tmp19 = closure_7(applyResult, "incompatibleTokens", [false, false, false, false, false, false]);
           return applyResult;
         } else {
           _TypeError = TypeError;
@@ -231,7 +231,7 @@ export const DayParser = (Parser) => {
   if (Parser) {
     prototype = Parser.prototype;
   }
-  let obj = { EntryPointCommandButtonActions: null, NATIVE_SECTION: null, 1476351743: null, value: DayParser };
+  let obj = { value: DayParser };
   DayParser.prototype = Object.create(prototype, { constructor: obj });
   if (Parser) {
     class DayParser {
@@ -262,7 +262,7 @@ export const DayParser = (Parser) => {
           tmp17 = closure_7(applyResult, "priority", 90);
           tmp18 = closure_5(applyResult);
           str3 = "incompatibleTokens";
-          tmp19 = closure_7(applyResult, "incompatibleTokens", []);
+          tmp19 = closure_7(applyResult, "incompatibleTokens", [false, false, false, false, false, false]);
           return applyResult;
         } else {
           _TypeError = TypeError;
@@ -286,16 +286,16 @@ export const DayParser = (Parser) => {
         if ("EE" !== arg1) {
           if ("EEE" !== arg1) {
             if ("EEEEE" === arg1) {
-              return day.day(arg0, { y: null, CHAT_INPUT_FLOATING_CONTENT_PADDING_VERTICAL: null });
+              return day.day(arg0, {});
             } else if ("EEEEEE" === arg1) {
-              return day.day(arg0, { y: -0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010397949414864384, CHAT_INPUT_FLOATING_CONTENT_PADDING_VERTICAL: 36923798521907134000 }) || day.day(arg0, { y: null, CHAT_INPUT_FLOATING_CONTENT_PADDING_VERTICAL: null });
+              return day.day(arg0, {}) || day.day(arg0, {});
             } else {
-              return day.day(arg0, { y: 351158784, CHAT_INPUT_FLOATING_CONTENT_PADDING_VERTICAL: 596246531 }) || day.day(arg0, {}) || day.day(arg0, { y: -0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010397949414864384, CHAT_INPUT_FLOATING_CONTENT_PADDING_VERTICAL: 36923798521907134000 }) || day.day(arg0, { y: null, CHAT_INPUT_FLOATING_CONTENT_PADDING_VERTICAL: null });
+              return day.day(arg0, {}) || day.day(arg0, {}) || day.day(arg0, {}) || day.day(arg0, {});
             }
           }
         }
       }
-      return day.day(arg0, {}) || day.day(arg0, { y: -0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010397949414864384, CHAT_INPUT_FLOATING_CONTENT_PADDING_VERTICAL: 36923798521907134000 }) || day.day(arg0, { y: null, CHAT_INPUT_FLOATING_CONTENT_PADDING_VERTICAL: null });
+      return day.day(arg0, {}) || day.day(arg0, {}) || day.day(arg0, {});
     }
   };
   const items = [obj, , ];

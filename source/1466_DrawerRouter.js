@@ -5,11 +5,11 @@
 // Exports: default
 
 // Module 1466 (DrawerRouter)
-import result from "result";
-import closure_5 from "result";
+import __exportStarResult1 from "__exportStarResult1";
+import closure_5 from "__exportStarResult1";
 
-let closure_3 = [1376315985];
-const merged = Object.assign({}, require("result").TabActions, {
+let closure_3 = [];
+const merged = Object.assign({}, require("__exportStarResult1").TabActions, {
   openDrawer() {
     return { type: "OPEN_DRAWER" };
   },
@@ -79,7 +79,7 @@ export default function DrawerRouter(defaultStatus) {
     type: "drawer",
     getInitialState(routeNames) {
       let obj = { routeNames: routeNames.routeNames, routeParamList: routeNames.routeParamList, routeGetIdList: routeNames.routeGetIdList };
-      obj = { 475325025: "a", -100279061: "accumulated", 1166943926: "a", default: str };
+      obj = { default: str };
       const initialState = tmp2.getInitialState(obj);
       obj.key = "drawer-" + str(isDrawerInHistory[3]).nanoid();
       return Object.assign({}, initialState, obj);

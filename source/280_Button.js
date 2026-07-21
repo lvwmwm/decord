@@ -4,7 +4,7 @@
 // Dependencies: []
 
 // Module 280 (Button)
-let closure_2 = ["ellipsizeMode"];
+let closure_2 = [null];
 let closure_3 = importDefault(dependencyMap[0]);
 importAll(dependencyMap[1]);
 const jsx = arg1(dependencyMap[2]).jsx;
@@ -128,6 +128,6 @@ class Button {
 }
 Button.displayName = "Button";
 const importDefaultResult = importDefault(dependencyMap[7]);
-let closure_6 = importDefaultResult.create({ button: {}, text: Object.assign({ "Bool(false)": -0.0014069081515246523, "Bool(false)": -0.0001058445630777106 }, { "Bool(false)": true, "Bool(false)": true }), buttonDisabled: { paddingHorizontal: "auto", backgroundColor: "top" }, textDisabled: { color: "#a1a1a1" } });
+let closure_6 = importDefaultResult.create({ button: {}, text: Object.assign({ CHANNEL_CALL_VIDEO_GRID: "absolute", age: 0 }, {}), buttonDisabled: { overflow: "left", height: "right" }, textDisabled: { color: "#a1a1a1" } });
 
 export default Button;

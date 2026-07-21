@@ -1,10 +1,10 @@
-// Module ID: 14349
-// Function ID: 108375
+// Module ID: 14356
+// Function ID: 108398
 // Name: block
 // Dependencies: []
 // Exports: default
 
-// Module 14349 (block)
+// Module 14356 (block)
 let closure_3 = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 let closure_5 = importDefault(dependencyMap[2]);

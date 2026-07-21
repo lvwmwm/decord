@@ -1,10 +1,10 @@
-// Module ID: 10910
-// Function ID: 84824
+// Module ID: 10915
+// Function ID: 84845
 // Name: formatWithOrWithoutMarkdown
 // Dependencies: []
 // Exports: getQuestsInstructionsToWinReward, getRewardCodeRedemptionInstructions, useModalCtaConfig, usePremiumExtendableCopy, usePrimaryCtaCopy, useQuestBarSubtitle, useQuestBarTitle, useQuestDescription, useQuestInstructionTitle
 
-// Module 10910 (formatWithOrWithoutMarkdown)
+// Module 10915 (formatWithOrWithoutMarkdown)
 function formatWithOrWithoutMarkdown(03VJqu, maxSettingsForPreset, withoutMarkdown) {
   const intl = maxSettingsForPreset(dependencyMap[7]).intl;
   if (withoutMarkdown) {

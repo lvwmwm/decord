@@ -1,10 +1,10 @@
-// Module ID: 5857
-// Function ID: 49659
+// Module ID: 5859
+// Function ID: 49702
 // Name: AvatarCapExample
 // Dependencies: []
 // Exports: AvatarCapExample
 
-// Module 5857 (AvatarCapExample)
+// Module 5859 (AvatarCapExample)
 const jsx = require(dependencyMap[0]).jsx;
 const _module = require(dependencyMap[3]);
 const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/AvatarCapExample.native.tsx");

@@ -1,10 +1,10 @@
-// Module ID: 10452
-// Function ID: 80917
+// Module ID: 10458
+// Function ID: 80940
 // Name: getQuestPlacementCombinationKey
 // Dependencies: []
 // Exports: QuestContentImpressionTracker
 
-// Module 10452 (getQuestPlacementCombinationKey)
+// Module 10458 (getQuestPlacementCombinationKey)
 function getQuestPlacementCombinationKey(arg0, arg1) {
   return "" + arg0 + "_" + arg1;
 }

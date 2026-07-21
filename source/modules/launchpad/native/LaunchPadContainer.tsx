@@ -1,10 +1,10 @@
-// Module ID: 15506
-// Function ID: 118329
+// Module ID: 15513
+// Function ID: 118353
 // Name: LaunchPadContainer
 // Dependencies: []
 // Exports: default
 
-// Module 15506 (LaunchPadContainer)
+// Module 15513 (LaunchPadContainer)
 let StyleSheet;
 importAll(dependencyMap[0]);
 ({ View: closure_3, StyleSheet } = arg1(dependencyMap[1]));
@@ -66,20 +66,20 @@ export default function LaunchPadContainer(children) {
   const animatedReaction = obj.useAnimatedReaction(fn, fn2);
   let obj1 = arg1(dependencyMap[9]);
   const fn3 = function v() {
-    let obj = { borderRadius: launchPadSharedState(tmp5[9]).interpolate(launchPadSharedState.get(), [null, null], []) };
+    let obj = { borderRadius: launchPadSharedState(tmp5[9]).interpolate(launchPadSharedState.get(), ["Text", "lc"], []) };
     obj = {};
     const obj2 = launchPadSharedState(tmp5[9]);
     const obj4 = launchPadSharedState(tmp5[10]);
     const value = launchPadSharedState.get();
     const diff = tmp5.get().width - 48;
-    const items = [24573934974154670000000000000000000000000000000000000000000000000000000000000, diff / tmp5.get().width];
-    obj.scale = obj4.withSpring(launchPadSharedState(tmp5[9]).interpolate(value, [null, null], items), closure_4, "animate-always");
+    const items = [15189782894321462000000000000000000000000000000000000000000000000000000000000000000, diff / tmp5.get().width];
+    obj.scale = obj4.withSpring(launchPadSharedState(tmp5[9]).interpolate(value, ["Text", "lc"], items), closure_4, "animate-always");
     const items1 = [obj, ];
     obj = {};
     const obj5 = launchPadSharedState(tmp5[9]);
     const obj7 = launchPadSharedState(tmp5[10]);
     const items2 = [0.229, -4];
-    obj.translateY = obj7.withSpring(launchPadSharedState(tmp5[9]).interpolate(launchPadSharedState.get(), [null, null], items2), closure_4, "animate-always");
+    obj.translateY = obj7.withSpring(launchPadSharedState(tmp5[9]).interpolate(launchPadSharedState.get(), ["Text", "lc"], items2), closure_4, "animate-always");
     items1[1] = obj;
     obj.transform = items1;
     return obj;

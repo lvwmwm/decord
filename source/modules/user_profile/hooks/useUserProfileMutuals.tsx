@@ -1,10 +1,10 @@
-// Module ID: 11618
-// Function ID: 90233
+// Module ID: 11625
+// Function ID: 90256
 // Name: useUserProfileMutuals
 // Dependencies: []
 // Exports: default
 
-// Module 11618 (useUserProfileMutuals)
+// Module 11625 (useUserProfileMutuals)
 let closure_3 = importDefault(dependencyMap[0]);
 const useMemo = arg1(dependencyMap[1]).useMemo;
 let closure_5 = importDefault(dependencyMap[2]);

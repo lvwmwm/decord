@@ -1,10 +1,10 @@
-// Module ID: 16114
-// Function ID: 124269
+// Module ID: 16121
+// Function ID: 124300
 // Name: num2
 // Dependencies: []
 // Exports: EmojiRow
 
-// Module 16114 (num2)
+// Module 16121 (num2)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 ({ View: closure_5, Image: closure_6, Pressable: closure_7 } = arg1(dependencyMap[2]));
@@ -12,8 +12,8 @@ let closure_8 = importDefault(dependencyMap[3]);
 const tmp2 = arg1(dependencyMap[2]);
 ({ jsx: closure_9, jsxs: closure_10 } = arg1(dependencyMap[4]));
 let obj = arg1(dependencyMap[5]);
-obj = { flex: { flex: 1 }, flexCenterRow: { -9223372036854775808: true, filter: true } };
-obj = { 9223372036854775807: false, 0: false, 0: false, 9223372036854775807: false, borderRadius: importDefault(dependencyMap[6]).radii.xs };
+obj = { flex: { flex: 1 }, flexCenterRow: {} };
+obj = { -1437146132: true, -1907127711: true, 806923152: true, 692273813: true, borderRadius: importDefault(dependencyMap[6]).radii.xs };
 obj.nameContainer = obj;
 const obj1 = {};
 let obj4 = arg1(dependencyMap[7]);
@@ -39,7 +39,7 @@ obj.emojiText = obj2;
 obj.colon = { width: 4 };
 const obj7 = arg1(dependencyMap[7]);
 obj.username = { fontSize: 13, color: importDefault(dependencyMap[6]).colors.TEXT_MUTED };
-obj.emojiImage = { "Null": "construct", "Null": "delete", "Null": "isArray" };
+obj.emojiImage = { "Null": false, "Null": false, "Null": false };
 obj4 = { justifyContent: "0e971a927dbdc3183654a0324b5f2831", alignItems: "ic_partnered_guild_icon_black_24px", height: "png", width: true, paddingLeft: importDefault(dependencyMap[6]).space.PX_8 };
 obj.overflowIcon = obj4;
 let closure_11 = obj.createStyles(obj);

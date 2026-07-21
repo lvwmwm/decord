@@ -1,11 +1,13 @@
-// Module ID: 4173
-// Function ID: 35821
+// Module ID: 4177
+// Function ID: 35869
 // Name: constants
-// Dependencies: []
+// Dependencies: [7, 6, 15]
 
-// Module 4173 (constants)
-const constants = importDefault(dependencyMap[1]).getConstants();
-let closure_3 = ["Array", "isArray", "now", null, null, null, null, null, null];
+// Module 4177 (constants)
+import importDefaultResult from "_classCallCheck";
+
+const constants = require("_classCallCheck").getConstants();
+let closure_3 = [];
 const obj = {};
 const merged = Object.assign(constants);
 obj["getConstants"] = function getConstants() {
@@ -41,7 +43,7 @@ obj["setVideoInputDevice"] = function setVideoInputDevice(arg0) {
   }
   return result;
 };
-const keys = Object.keys(Object.getPrototypeOf(importDefault(dependencyMap[1])));
+const keys = Object.keys(Object.getPrototypeOf(require("_classCallCheck")));
 const found = keys.filter((arg0) => !closure_3.includes(arg0));
 const merged1 = Object.assign(Object.fromEntries(found.map((arg0) => {
   const importDefault = arg0;
@@ -55,9 +57,8 @@ const merged1 = Object.assign(Object.fromEntries(found.map((arg0) => {
   ];
   return items;
 })));
-const nativeEventEmitter = new arg1(dependencyMap[0]).NativeEventEmitter(importDefault(dependencyMap[1]));
-const importDefaultResult = importDefault(dependencyMap[1]);
-const result = arg1(dependencyMap[2]).fileFinishedImporting("../discord_common/js/packages/media-engine/native/ios/VoiceEngineModule.android.tsx");
+const nativeEventEmitter = new require("_defineProperties").NativeEventEmitter(require("_classCallCheck"));
+const result = require("_possibleConstructorReturn").fileFinishedImporting("../discord_common/js/packages/media-engine/native/ios/VoiceEngineModule.android.tsx");
 
 export const VoiceEngine = obj;
 export const VoiceEngineEmitter = nativeEventEmitter;

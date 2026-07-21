@@ -1,10 +1,10 @@
-// Module ID: 10538
-// Function ID: 82341
+// Module ID: 10544
+// Function ID: 82364
 // Name: doRectanglesIntersectWorklet
 // Dependencies: []
 // Exports: setPipEnabledWhileFocusedOnActivityOrStream, updateVoiceCallOverlayLayoutState
 
-// Module 10538 (doRectanglesIntersectWorklet)
+// Module 10544 (doRectanglesIntersectWorklet)
 const _module = require(dependencyMap[0]);
 ({ MIN_MARGIN_BETWEEN_OVERLAYS: closure_2, VoiceCallOverlayType: closure_3 } = _module);
 let closure_4 = { code: "function doRectanglesIntersectWorklet_VoiceCallOverlayUtilsTsx1(rectA,rectB,minMarginBetweenOverlays){if(rectA==null||rectA.x==null||rectA.y==null||rectA.width==null||rectA.height==null||rectB==null||rectB.x==null||rectB.y==null||rectB.width==null||rectB.height==null){return false;}const minAx=rectA.x-minMarginBetweenOverlays;const maxAx=rectA.x+rectA.width+minMarginBetweenOverlays;const minAy=rectA.y-minMarginBetweenOverlays;const maxAy=rectA.y+rectA.height+minMarginBetweenOverlays;const minBx=rectB.x;const maxBx=rectB.x+rectB.width;const minBy=rectB.y;const maxBy=rectB.y+rectB.height;const aLeftOfB=maxAx<minBx;const aRightOfB=minAx>maxBx;const aBelowB=minAy>maxBy;const aAboveB=maxAy<minBy;return!(aLeftOfB||aRightOfB||aAboveB||aBelowB);}" };

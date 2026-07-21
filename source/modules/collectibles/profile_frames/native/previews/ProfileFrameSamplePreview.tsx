@@ -1,10 +1,10 @@
-// Module ID: 8685
-// Function ID: 68826
+// Module ID: 8689
+// Function ID: 68838
 // Name: filterLayer
 // Dependencies: []
 // Exports: default
 
-// Module 8685 (filterLayer)
+// Module 8689 (filterLayer)
 function filterLayer(responsive) {
   return true !== responsive.responsive;
 }
@@ -15,7 +15,7 @@ const tmp3 = arg1(dependencyMap[1]);
 ({ jsx: closure_6, jsxs: closure_7 } = arg1(dependencyMap[4]));
 let obj = arg1(dependencyMap[5]);
 obj = { profileFrameContainer: { flex: 1 } };
-obj = { <string:1446693987>: 10, <string:1666081105>: 10, <string:1370110668>: "3.41.0", borderColor: importDefault(dependencyMap[6]).colors.BORDER_NORMAL, borderRadius: importDefault(dependencyMap[6]).radii.xs };
+obj = { "Bool(false)": 10, "Bool(false)": 10, "Bool(false)": 0.105, borderColor: importDefault(dependencyMap[6]).colors.BORDER_NORMAL, borderRadius: importDefault(dependencyMap[6]).radii.xs };
 obj.profileContainer = obj;
 obj.sampleProfile = { width: "100%", aspectRatio: arg1(dependencyMap[2]).SAMPLE_PROFILE_ASPECT_RATIO };
 let closure_8 = obj.createStyles(obj);

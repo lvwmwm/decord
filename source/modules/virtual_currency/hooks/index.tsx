@@ -1,8 +1,8 @@
-// Module ID: 8710
-// Function ID: 68932
+// Module ID: 8714
+// Function ID: 68944
 // Dependencies: []
 
-// Module 8710
+// Module 8714
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("modules/virtual_currency/hooks/index.tsx");
 for (const key10021 in arg1(arg6[1])) {

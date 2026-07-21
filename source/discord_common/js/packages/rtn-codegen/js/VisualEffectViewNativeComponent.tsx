@@ -1,10 +1,10 @@
-// Module ID: 4529
-// Function ID: 39731
+// Module ID: 4533
+// Function ID: 39779
 // Name: __INTERNAL_VIEW_CONFIG
 // Dependencies: []
 
-// Module 4529 (__INTERNAL_VIEW_CONFIG)
-const obj = { uiViewClassName: "DCDVisualEffectView", validAttributes: { connectedAt: null, previousDescriptors: null, CREATE_CHANNEL_MODAL_KEY: null, removeScrollableRef: null, ZOOM_OUT: null } };
+// Module 4533 (__INTERNAL_VIEW_CONFIG)
+const obj = { uiViewClassName: "DCDVisualEffectView", validAttributes: {} };
 const _module = require(dependencyMap[0]);
 const value = _module.get("DCDVisualEffectView", () => obj);
 const _module1 = require(dependencyMap[1]);

@@ -1,10 +1,10 @@
-// Module ID: 12216
-// Function ID: 93790
+// Module ID: 12223
+// Function ID: 93813
 // Name: MultiSelect
 // Dependencies: []
 // Exports: default
 
-// Module 12216 (MultiSelect)
+// Module 12223 (MultiSelect)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 const jsx = arg1(dependencyMap[2]).jsx;

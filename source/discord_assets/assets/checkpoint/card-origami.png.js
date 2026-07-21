@@ -1,9 +1,9 @@
-// Module ID: 7818
-// Function ID: 62383
+// Module ID: 7822
+// Function ID: 62395
 // Name: metadata
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 7818 (metadata)
+// Module 7822 (metadata)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_assets/assets/checkpoint/card-origami.png.js");
 

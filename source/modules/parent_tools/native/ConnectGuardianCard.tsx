@@ -1,10 +1,10 @@
-// Module ID: 13654
-// Function ID: 103443
+// Module ID: 13661
+// Function ID: 103466
 // Name: ConnectGuardianCard
 // Dependencies: []
 // Exports: ConnectGuardianCard
 
-// Module 13654 (ConnectGuardianCard)
+// Module 13661 (ConnectGuardianCard)
 let closure_3 = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 let closure_5 = importDefault(dependencyMap[2]);
@@ -19,12 +19,12 @@ obj.compactContainer = { alignSelf: "center", gap: importDefault(dependencyMap[6
 const obj1 = { alignSelf: "center", gap: importDefault(dependencyMap[6]).space.PX_16 };
 obj.card = { padding: importDefault(dependencyMap[6]).space.PX_12, borderRadius: importDefault(dependencyMap[6]).radii.lg, borderColor: importDefault(dependencyMap[6]).colors.BORDER_NORMAL };
 obj.countdown = { textAlign: "center" };
-const obj3 = { -9223372036854775808: true, filter: true, paddingHorizontal: importDefault(dependencyMap[6]).space.PX_8 };
-obj.divider = obj3;
-obj.compactDividerFlush = { paddingHorizontal: 0 };
-const obj4 = { gestureEnabled: "innocent", gestureVelocityImpact: "innocent", backgroundColor: importDefault(dependencyMap[6]).colors.BORDER_NORMAL };
-obj.dividerLine = obj4;
 const obj2 = { padding: importDefault(dependencyMap[6]).space.PX_12, borderRadius: importDefault(dependencyMap[6]).radii.lg, borderColor: importDefault(dependencyMap[6]).colors.BORDER_NORMAL };
+obj.divider = { paddingHorizontal: importDefault(dependencyMap[6]).space.PX_8 };
+obj.compactDividerFlush = { paddingHorizontal: 0 };
+const obj3 = { paddingHorizontal: importDefault(dependencyMap[6]).space.PX_8 };
+obj.dividerLine = { backgroundColor: importDefault(dependencyMap[6]).colors.BORDER_NORMAL };
+const obj4 = { backgroundColor: importDefault(dependencyMap[6]).colors.BORDER_NORMAL };
 obj.dividerText = { marginHorizontal: importDefault(dependencyMap[6]).space.PX_8 };
 obj.buttonGroup = { paddingTop: 0 };
 let closure_9 = obj.createStyles(obj);
@@ -100,7 +100,7 @@ export const ConnectGuardianCard = function ConnectGuardianCard(linkCode) {
       obj3.style = items4;
       const obj4 = { style: tmp.dividerLine };
       const items5 = [callback2(View, obj4), , ];
-      const obj5 = { Promise: null, marginTop: null, flags: null, style: tmp.dividerText };
+      const obj5 = { "Null": "<string:1178599425>", "Null": "<string:3295084545>", "Null": "<string:1689649153>", style: tmp.dividerText };
       const intl = arg1(dependencyMap[13]).intl;
       const tmp14 = importDefault(dependencyMap[14]);
       obj5.children = intl.string("compact" === shareActions ? tmp14.XhROZk : tmp14.lggBOi);
@@ -112,7 +112,7 @@ export const ConnectGuardianCard = function ConnectGuardianCard(linkCode) {
       if ("compact" === shareActions) {
         const obj7 = { style: tmp.compactContainer };
         const items6 = [tmp40, tmp42Result, ];
-        const obj8 = { <string:1522289750>: "r", <string:570601313>: "isArray" };
+        const obj8 = { 9223372036854775807: null, -9223372036854775808: null };
         const intl4 = arg1(dependencyMap[13]).intl;
         obj8.text = intl4.string(arg1(dependencyMap[13]).t.Ej3B3Y);
         const obj9 = { size: "md", color: importDefault(dependencyMap[6]).colors.CONTROL_SECONDARY_TEXT_DEFAULT };
@@ -126,13 +126,13 @@ export const ConnectGuardianCard = function ConnectGuardianCard(linkCode) {
         const obj10 = { spacing: importDefault(dependencyMap[6]).space.PX_32, style: tmp.container };
         const items7 = [tmp40, tmp42Result, ];
         const obj11 = { style: tmp.buttonGroup };
-        const obj12 = { <string:1522289750>: "r", <string:570601313>: "isArray" };
+        const obj12 = { 9223372036854775807: null, -9223372036854775808: null };
         const intl2 = arg1(dependencyMap[13]).intl;
         obj12.text = intl2.string(arg1(dependencyMap[13]).t.Ej3B3Y);
         obj12.disabled = "" === linkCode;
         obj12.onPress = callback;
         const items8 = [callback2(arg1(dependencyMap[19]).Button, obj12), ];
-        const obj13 = { <string:1522289750>: "r", <string:570601313>: "isArray" };
+        const obj13 = { 9223372036854775807: null, -9223372036854775808: null };
         const intl3 = arg1(dependencyMap[13]).intl;
         obj13.text = intl3.string(arg1(dependencyMap[13]).t.WqhZss);
         obj13.disabled = "" === linkCode;

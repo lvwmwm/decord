@@ -1,9 +1,9 @@
-// Module ID: 15689
-// Function ID: 119931
+// Module ID: 15696
+// Function ID: 119955
 // Name: VoicePanelAnimatedActivityCardInner
 // Dependencies: []
 
-// Module 15689 (VoicePanelAnimatedActivityCardInner)
+// Module 15696 (VoicePanelAnimatedActivityCardInner)
 function VoicePanelAnimatedActivityCardInner(applicationId) {
   let focused;
   applicationId = applicationId.applicationId;

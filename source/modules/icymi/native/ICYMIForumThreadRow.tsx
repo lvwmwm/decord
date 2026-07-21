@@ -1,17 +1,17 @@
-// Module ID: 15113
-// Function ID: 114069
+// Module ID: 15120
+// Function ID: 114093
 // Name: ICYMIForumThreadRow
 // Dependencies: []
 // Exports: default
 
-// Module 15113 (ICYMIForumThreadRow)
+// Module 15120 (ICYMIForumThreadRow)
 class ICYMIForumThreadRow {
   constructor(arg0) {
     channel = global.channel;
     arg1 = channel;
     message = global.message;
     importDefault = message;
-    tmp = f114076();
+    tmp = f114100();
     obj = arg1(dependencyMap[7]);
     items = [];
     items[0] = defineProperty;
@@ -59,7 +59,7 @@ class ICYMIForumThreadRow {
     callback = importAll.useCallback(() => {
       let obj = message(stateFromStores[9]);
       obj.itemInteracted(message.id, "forum_thread", "press_forum_thread");
-      obj = { itemId: message.id, itemType: "forum_thread", actionParameters: {} };
+      obj = { itemId: message.id, itemType: "forum_thread", actionParameters: { "Bool(false)": -0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000009875954114321378, "Bool(false)": 353076186411522100000000000000000000, "Bool(false)": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000013053759670591748, "Bool(false)": -9518929275348370000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 } };
       message(stateFromStores[9]).feedItemActioned(obj);
       let tmp3 = null != channel;
       if (tmp3) {

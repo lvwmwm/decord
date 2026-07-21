@@ -1,10 +1,10 @@
-// Module ID: 6005
-// Function ID: 49881
+// Module ID: 6007
+// Function ID: 49924
 // Name: DiscordWordmarkLogo
 // Dependencies: []
 // Exports: DiscordWordmarkLogo
 
-// Module 6005 (DiscordWordmarkLogo)
+// Module 6007 (DiscordWordmarkLogo)
 const Image = require(dependencyMap[0]).Image;
 const jsx = require(dependencyMap[1]).jsx;
 const _module = require(dependencyMap[5]);

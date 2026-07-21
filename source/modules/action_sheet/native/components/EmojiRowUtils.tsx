@@ -1,10 +1,10 @@
-// Module ID: 9930
-// Function ID: 76842
+// Module ID: 9935
+// Function ID: 76858
 // Name: shouldShowEmojiRow
 // Dependencies: []
 // Exports: shouldShowEmojiRow
 
-// Module 9930 (shouldShowEmojiRow)
+// Module 9935 (shouldShowEmojiRow)
 const _module = require(dependencyMap[0]);
 ({ MessageFlags: closure_2, MessageStates: closure_3, MessageTypes: closure_4 } = _module);
 const _module1 = require(dependencyMap[2]);

@@ -1,10 +1,10 @@
-// Module ID: 14065
-// Function ID: 106828
+// Module ID: 14072
+// Function ID: 106851
 // Name: SettingsAppearanceDarkModeThemePickerScreen
 // Dependencies: []
 // Exports: default
 
-// Module 14065 (SettingsAppearanceDarkModeThemePickerScreen)
+// Module 14072 (SettingsAppearanceDarkModeThemePickerScreen)
 importAll(dependencyMap[0]);
 const SystemTheme = arg1(dependencyMap[1]).SystemTheme;
 const jsx = arg1(dependencyMap[2]).jsx;

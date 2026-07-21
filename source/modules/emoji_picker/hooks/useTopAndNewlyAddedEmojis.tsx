@@ -1,10 +1,10 @@
-// Module ID: 9322
-// Function ID: 72875
+// Module ID: 9326
+// Function ID: 72889
 // Name: getTopAndNewlyAddedEmojis
 // Dependencies: []
 // Exports: default
 
-// Module 9322 (getTopAndNewlyAddedEmojis)
+// Module 9326 (getTopAndNewlyAddedEmojis)
 function getTopAndNewlyAddedEmojis(emojiStoreInstance) {
   let guildId;
   let pickerIntention;

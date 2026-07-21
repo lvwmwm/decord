@@ -1,7 +1,7 @@
 // Module ID: 29
 // Function ID: 1197
 // Name: _objectWithoutProperties
-// Dependencies: []
+// Dependencies: [48]
 
 // Module 29 (_objectWithoutProperties)
 

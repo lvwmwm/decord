@@ -1,14 +1,13 @@
-// Module ID: 6289
-// Function ID: 50307
+// Module ID: 6291
+// Function ID: 50350
 // Name: MicrophoneSpotIllustration
 // Dependencies: [0, 0, 4294967295, 0]
 // Exports: MicrophoneSpotIllustration
 
-// Module 6289 (MicrophoneSpotIllustration)
-import { jsx } from "result";
-import result from "result";
+// Module 6291 (MicrophoneSpotIllustration)
+import { jsx } from "__exportStarResult1";
 
-result = result.fileFinishedImporting("design/components/mana-assets/native/generated/MicrophoneSpotIllustration.native.tsx");
+const result = require("__exportStarResult1").fileFinishedImporting("design/components/mana-assets/native/generated/MicrophoneSpotIllustration.native.tsx");
 
 export const MicrophoneSpotIllustration = function MicrophoneSpotIllustration(width) {
   let accessibilityLabel;

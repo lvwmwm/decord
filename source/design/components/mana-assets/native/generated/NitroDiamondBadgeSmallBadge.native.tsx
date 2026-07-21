@@ -1,10 +1,10 @@
-// Module ID: 6313
-// Function ID: 50343
+// Module ID: 6315
+// Function ID: 50386
 // Name: NitroDiamondBadgeSmallBadge
 // Dependencies: []
 // Exports: NitroDiamondBadgeSmallBadge
 
-// Module 6313 (NitroDiamondBadgeSmallBadge)
+// Module 6315 (NitroDiamondBadgeSmallBadge)
 const jsx = require(dependencyMap[0]).jsx;
 const _module = require(dependencyMap[3]);
 const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/NitroDiamondBadgeSmallBadge.native.tsx");

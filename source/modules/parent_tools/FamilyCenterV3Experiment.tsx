@@ -1,10 +1,10 @@
-// Module ID: 6817
-// Function ID: 53735
+// Module ID: 6823
+// Function ID: 53784
 // Name: apexExperiment
 // Dependencies: []
 // Exports: getIsFamilyCenterV3Enabled, useIsFamilyCenterV3Enabled
 
-// Module 6817 (apexExperiment)
+// Module 6823 (apexExperiment)
 const _module = require(dependencyMap[0]);
 const apexExperiment = _module.createApexExperiment({ defaultConfig: { enabled: false }, variations: { [0]: { enabled: false }, [1]: { enabled: true } } });
 const _module1 = require(dependencyMap[1]);

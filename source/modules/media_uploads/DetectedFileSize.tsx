@@ -1,10 +1,10 @@
-// Module ID: 4706
-// Function ID: 40901
+// Module ID: 4708
+// Function ID: 40942
 // Name: _getDetectedFileSize
 // Dependencies: []
 // Exports: getDetectedFileSize
 
-// Module 4706 (_getDetectedFileSize)
+// Module 4708 (_getDetectedFileSize)
 async function _getDetectedFileSize(size, arg1) {
   if (size.size > 0) {
     return size.size;

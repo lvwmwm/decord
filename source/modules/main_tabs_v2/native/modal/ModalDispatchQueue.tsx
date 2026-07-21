@@ -1,9 +1,9 @@
-// Module ID: 4332
-// Function ID: 38210
+// Module ID: 4336
+// Function ID: 38258
 // Name: ModalDispatchQueue
 // Dependencies: []
 
-// Module 4332 (ModalDispatchQueue)
+// Module 4336 (ModalDispatchQueue)
 let closure_0 = importDefault(dependencyMap[0]);
 let closure_1 = importDefault(dependencyMap[1]);
 let tmp2 = () => {

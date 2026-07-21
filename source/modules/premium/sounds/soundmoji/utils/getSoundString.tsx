@@ -1,10 +1,10 @@
-// Module ID: 4581
-// Function ID: 40117
+// Module ID: 4583
+// Function ID: 40158
 // Name: getSoundString
-// Dependencies: []
+// Dependencies: [284214097]
 // Exports: default
 
-// Module 4581 (getSoundString)
+// Module 4583 (getSoundString)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("modules/premium/sounds/soundmoji/utils/getSoundString.tsx");
 

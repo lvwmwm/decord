@@ -1,10 +1,10 @@
-// Module ID: 10837
-// Function ID: 84174
+// Module ID: 10843
+// Function ID: 84197
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 // Exports: createSocialLayerStorefrontProductDetailsEmbed, useFetchSocialLayerStorefrontProductDetailsEmbedData
 
-// Module 10837 (_createForOfIteratorHelperLoose)
+// Module 10843 (_createForOfIteratorHelperLoose)
 function _createForOfIteratorHelperLoose(@@iterator) {
   let arg1 = Symbol_iterator;
   @@iterator = "undefined" !== typeof Symbol;

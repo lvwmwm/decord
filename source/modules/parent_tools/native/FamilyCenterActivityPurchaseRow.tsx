@@ -1,16 +1,16 @@
-// Module ID: 13674
-// Function ID: 103536
+// Module ID: 13681
+// Function ID: 103559
 // Name: FamilyCenterActivityPurchaseRow
-// Dependencies: []
+// Dependencies: [2382364725, 2030043143, 872415285, 3439329301, 1761607707, 2801795125, 2952790042]
 // Exports: default
 
-// Module 13674 (FamilyCenterActivityPurchaseRow)
+// Module 13681 (FamilyCenterActivityPurchaseRow)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 ({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[2]));
 let obj = arg1(dependencyMap[3]);
 obj = {};
-obj = { borderBottomColor: importDefault(dependencyMap[4]).colors.BORDER_SUBTLE };
+obj = { pointerEvents: 1019560481, collapsable: 543817730, channels: 1091633153, labels: 151645, distance: 6258, parent: 6144, borderBottomColor: importDefault(dependencyMap[4]).colors.BORDER_SUBTLE };
 obj.container = obj;
 obj.textContainer = {};
 let closure_6 = obj.createStyles(obj);
@@ -67,9 +67,9 @@ export default function FamilyCenterActivityPurchaseRow(arg0) {
     obj.subscriptionPlanId = subscriptionPlanId;
     const items = [tmp8(importDefault(dependencyMap[8]), obj), ];
     const obj1 = { style: tmp.textContainer };
-    const obj2 = { 0: 0.706, -9223372036854775808: 0.000000000000000018217984681387264, 0: -0.000030517578125, 0: 78804188533482670000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, children: combined };
+    const obj2 = { mode: 0.706, edges: 0.000000000000000018217984681393575, "Bool(false)": -0.000030517578125, "Bool(false)": 78804188533482670000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, children: combined };
     const items1 = [callback(arg1(dependencyMap[9]).Text, obj2), ];
-    const obj3 = { INTEGRATION_CREATE: true, ConstraintReasonCode: true, children: formatPriceResult };
+    const obj3 = { children: formatPriceResult };
     items1[1] = callback(arg1(dependencyMap[9]).Text, obj3);
     obj1.children = items1;
     items[1] = callback2(View, obj1);

@@ -1,10 +1,10 @@
-// Module ID: 5465
-// Function ID: 46657
+// Module ID: 5467
+// Function ID: 46699
 // Name: getAuthorizationApp
 // Dependencies: []
 // Exports: useAuthorizationApp
 
-// Module 5465 (getAuthorizationApp)
+// Module 5467 (getAuthorizationApp)
 function getAuthorizationApp(type) {
   if (null == type) {
     return null;

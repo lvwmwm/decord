@@ -1,10 +1,10 @@
-// Module ID: 6055
-// Function ID: 49956
+// Module ID: 6057
+// Function ID: 49999
 // Name: FistBumpSpotIllustration
 // Dependencies: []
 // Exports: FistBumpSpotIllustration
 
-// Module 6055 (FistBumpSpotIllustration)
+// Module 6057 (FistBumpSpotIllustration)
 const jsx = require(dependencyMap[0]).jsx;
 const _module = require(dependencyMap[3]);
 const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/FistBumpSpotIllustration.native.tsx");

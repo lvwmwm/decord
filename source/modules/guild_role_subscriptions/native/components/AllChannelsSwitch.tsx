@@ -1,10 +1,20 @@
-// Module ID: 16316
-// Function ID: 125947
+// Module ID: 16323
+// Function ID: 125978
 // Name: Row
-// Dependencies: []
+// Dependencies: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 // Exports: default
 
-// Module 16316 (Row)
+// Module 16323 (Row)
+import "__exportStarResult1";
+import { View } from "__exportStarResult1";
+import { AllChannelAccessOptions } from "__exportStarResult1";
+import { Fonts } from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
+import importDefaultResult from "__exportStarResult1";
+import importDefaultResult1 from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
+
 function Row(arg0) {
   let accessibilityRole;
   let accessibilityState;
@@ -18,7 +28,7 @@ function Row(arg0) {
   if (disabled === undefined) {
     disabled = false;
   }
-  const tmp = callback3();
+  const tmp = __exportStarResult1();
   let obj = arg1(dependencyMap[8]);
   obj = { selected, disabled };
   const radioA11yNative = obj.useRadioA11yNative(obj);
@@ -32,7 +42,7 @@ function Row(arg0) {
   obj.onPress = onPress;
   const obj1 = { size: arg1(dependencyMap[10]).Icon.Sizes.MEDIUM, source: icon };
   const items = [callback(arg1(dependencyMap[10]).Icon, obj1), , ];
-  const obj2 = { hasIcons: null, fontFamily: "\u{1F480}", fontSize: 6 };
+  const obj2 = { "Bool(false)": null, "Bool(false)": "\u{1F480}", "Bool(false)": 6 };
   const items1 = [tmp.rowLabel, ];
   let rowLabelSelected = selected;
   if (selected) {
@@ -46,32 +56,23 @@ function Row(arg0) {
   obj.children = items;
   return closure_6(importDefault(dependencyMap[9]), obj);
 }
-importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-const AllChannelAccessOptions = arg1(dependencyMap[2]).AllChannelAccessOptions;
-const Fonts = arg1(dependencyMap[3]).Fonts;
-({ jsx: closure_5, jsxs: closure_6 } = arg1(dependencyMap[4]));
-let obj = arg1(dependencyMap[5]);
-obj = {};
-obj = { backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_SURFACE_HIGH, borderRadius: importDefault(dependencyMap[6]).radii.sm };
-obj.container = obj;
-obj.row = {};
+({ jsx: closure_5, jsxs: closure_6 } = __exportStarResult1);
+__exportStarResult1 = {};
+__exportStarResult1 = { backgroundColor: require("__exportStarResult1").colors.BACKGROUND_SURFACE_HIGH, borderRadius: require("__exportStarResult1").radii.sm };
+__exportStarResult1.container = __exportStarResult1;
+__exportStarResult1.row = {};
 const obj1 = {};
-const tmp3 = arg1(dependencyMap[4]);
-const merged = Object.assign(importDefault(dependencyMap[7])(Fonts.PRIMARY_MEDIUM, importDefault(dependencyMap[6]).colors.TEXT_SUBTLE, 16));
+const merged = Object.assign(require("__exportStarResult1")(Fonts.PRIMARY_MEDIUM, require("__exportStarResult1").colors.TEXT_SUBTLE, 16));
 obj1["flexShrink"] = 1;
 obj1["marginHorizontal"] = 16;
-obj.rowLabel = obj1;
-const importDefaultResult = importDefault(dependencyMap[7]);
+__exportStarResult1.rowLabel = obj1;
 const obj2 = {};
-const merged1 = Object.assign(importDefault(dependencyMap[7])(Fonts.PRIMARY_SEMIBOLD, importDefault(dependencyMap[6]).colors.MOBILE_TEXT_HEADING_PRIMARY, 16));
-obj.rowLabelSelected = obj2;
-obj.rowIndicator = { marginStart: "auto" };
-const importDefaultResult1 = importDefault(dependencyMap[7]);
-obj.separator = { backgroundColor: importDefault(dependencyMap[6]).colors.BORDER_SUBTLE };
-let closure_7 = obj.createStyles(obj);
-const obj3 = { backgroundColor: importDefault(dependencyMap[6]).colors.BORDER_SUBTLE };
-const result = arg1(dependencyMap[14]).fileFinishedImporting("modules/guild_role_subscriptions/native/components/AllChannelsSwitch.tsx");
+const merged1 = Object.assign(require("__exportStarResult1")(Fonts.PRIMARY_SEMIBOLD, require("__exportStarResult1").colors.MOBILE_TEXT_HEADING_PRIMARY, 16));
+__exportStarResult1.rowLabelSelected = obj2;
+__exportStarResult1.rowIndicator = { marginStart: "auto" };
+__exportStarResult1.separator = { backgroundColor: require("__exportStarResult1").colors.BORDER_SUBTLE };
+__exportStarResult1 = __exportStarResult1.createStyles(__exportStarResult1);
+const result = __exportStarResult1.fileFinishedImporting("modules/guild_role_subscriptions/native/components/AllChannelsSwitch.tsx");
 
 export default function AllChannelsSwitch(style) {
   let channelAccessFormat;
@@ -80,7 +81,7 @@ export default function AllChannelsSwitch(style) {
   if (disabled === undefined) {
     disabled = false;
   }
-  const tmp = callback3();
+  const tmp = __exportStarResult1();
   let obj = { style: items, accessibilityRole: "radiogroup", accessibilityState: obj };
   const items = [tmp.container, style.style];
   obj = { disabled };

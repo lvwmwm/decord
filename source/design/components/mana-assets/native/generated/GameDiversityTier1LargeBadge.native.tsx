@@ -1,14 +1,13 @@
-// Module ID: 6111
-// Function ID: 50040
+// Module ID: 6113
+// Function ID: 50083
 // Name: GameDiversityTier1LargeBadge
-// Dependencies: [131072, 561250304, 1862270976, 20]
+// Dependencies: []
 // Exports: GameDiversityTier1LargeBadge
 
-// Module 6111 (GameDiversityTier1LargeBadge)
-import AppStartPerformance from "AppStartPerformance";
-
+// Module 6113 (GameDiversityTier1LargeBadge)
 const jsx = require(dependencyMap[0]).jsx;
-const result = AppStartPerformance.fileFinishedImporting("design/components/mana-assets/native/generated/GameDiversityTier1LargeBadge.native.tsx");
+const _module = require(dependencyMap[3]);
+const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/GameDiversityTier1LargeBadge.native.tsx");
 
 export const GameDiversityTier1LargeBadge = function GameDiversityTier1LargeBadge(width) {
   let accessibilityLabel;

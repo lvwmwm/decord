@@ -1,10 +1,10 @@
-// Module ID: 12079
-// Function ID: 93177
+// Module ID: 12086
+// Function ID: 93200
 // Name: closeGuildEventInfoActionSheet
 // Dependencies: []
 // Exports: default
 
-// Module 12079 (closeGuildEventInfoActionSheet)
+// Module 12086 (closeGuildEventInfoActionSheet)
 function closeGuildEventInfoActionSheet() {
   importDefault(dependencyMap[14]).hideActionSheet(closure_11);
 }
@@ -88,7 +88,7 @@ export default function EventDetailInfoSheet(guildEvent) {
     if (null != guildEvent.creator_id) {
       let obj = { creator: user.getUser(guildEvent.creator_id), creatorMember: member.getMember(guildEvent.guild_id, guildEvent.creator_id) };
     } else {
-      obj = { w: false, h: false };
+      obj = { ddd: "o", ind: "o" };
     }
     return obj;
   }, items6);
@@ -97,7 +97,7 @@ export default function EventDetailInfoSheet(guildEvent) {
   const creatorMember = stateFromStoresObject.creatorMember;
   obj = { style: items7, onLayout };
   const items7 = [tmp.eventContainer, { paddingBottom: safeBottomPadding + 16 }];
-  obj = { refId: "httpServerLocation", sr: "padding", ks: "httpServerLocation", ao: "paddingHorizontal", hasMask: "httpServerLocation", event: guildEvent, style: tmp.eventHeader, recurrenceId };
+  obj = { event: guildEvent, style: tmp.eventHeader, recurrenceId };
   const items8 = [callback(arg1(dependencyMap[19]).GuildEventCardHeader, obj), , , , , , , , , ];
   obj1 = { event: guildEvent, textStyle: tmp.eventTitle, style: tmp.eventTitleContainer };
   items8[1] = callback(arg1(dependencyMap[19]).GuildEventCardTitle, obj1);

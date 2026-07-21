@@ -1,10 +1,10 @@
-// Module ID: 13871
-// Function ID: 104966
+// Module ID: 13878
+// Function ID: 104989
 // Name: WreathIcon
-// Dependencies: [909639680, 131072, 527826944, 553648128, 2969567232, 4143972354]
+// Dependencies: [910098432, 131072, 527826944, 553648128, 2969567232, 4143972354]
 // Exports: default
 
-// Module 13871 (WreathIcon)
+// Module 13878 (WreathIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/quests/native/QuestDock/WreathIcon.tsx");

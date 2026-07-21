@@ -1,10 +1,10 @@
-// Module ID: 10639
-// Function ID: 83080
+// Module ID: 10645
+// Function ID: 83103
 // Name: shouldShowEndStageModal
 // Dependencies: []
 // Exports: default
 
-// Module 10639 (shouldShowEndStageModal)
+// Module 10645 (shouldShowEndStageModal)
 let closure_2 = importDefault(dependencyMap[0]);
 let closure_3 = importDefault(dependencyMap[1]);
 let closure_4 = importDefault(dependencyMap[2]);

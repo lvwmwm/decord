@@ -12,7 +12,7 @@ if (!_module) {
 obj = {};
 obj.date = obj.default({ formats: {}, defaultWidth: "full" });
 obj.time = obj.default({ formats: {}, defaultWidth: "full" });
-obj.dateTime = obj.default({ formats: { "Bool(false)": "accent", "Bool(false)": true, "Bool(false)": "/assets/.cache/intl/ZGVzaWdu", "Bool(false)": null }, defaultWidth: "full" });
+obj.dateTime = obj.default({ formats: {}, defaultWidth: "full" });
 
 export default obj;
 export default exports.default;

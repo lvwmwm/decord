@@ -1,40 +1,28 @@
 // Module ID: 8158
-// Function ID: 64467
+// Function ID: 64475
 // Dependencies: []
 
 // Module 8158
-let obj = {};
 const _module = require(dependencyMap[0]);
-obj.color = require(dependencyMap[1]);
-obj.fontFamily = require(dependencyMap[2]).string;
-obj.fontSize = require(dependencyMap[2]).number;
-const _module1 = require(dependencyMap[2]);
-obj.fontStyle = _module1.oneOf([]);
+const _module1 = require(dependencyMap[1]);
+const obj = {};
 const _module2 = require(dependencyMap[2]);
-obj.fontWeight = _module2.oneOf([]);
-const _module3 = require(dependencyMap[2]);
-const _module4 = require(dependencyMap[2]);
-obj.fontVariant = _module3.arrayOf(_module4.oneOf([0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000006439519002400692, 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002475481765165351, 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000006526312511817171, 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000006775493904864386, 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002153797455368327]));
-const _module5 = require(dependencyMap[2]);
-obj = { width: require(dependencyMap[2]).number, height: require(dependencyMap[2]).number };
-obj.textShadowOffset = _module5.shape(obj);
-obj.textShadowRadius = require(dependencyMap[2]).number;
-obj.textShadowColor = require(dependencyMap[1]);
-obj.letterSpacing = require(dependencyMap[2]).number;
-obj.lineHeight = require(dependencyMap[2]).number;
-const _module6 = require(dependencyMap[2]);
-obj.textAlign = _module6.oneOf([true, true, true, true, true]);
-const _module7 = require(dependencyMap[2]);
-obj.textAlignVertical = _module7.oneOf([]);
-obj.includeFontPadding = require(dependencyMap[2]).bool;
-const _module8 = require(dependencyMap[2]);
-obj.textDecorationLine = _module8.oneOf([]);
-const _module9 = require(dependencyMap[2]);
-obj.textDecorationStyle = _module9.oneOf(["account.global_name.update", "activities.invites.write", "activities.read", "activities.write"]);
-obj.textDecorationColor = require(dependencyMap[1]);
-const _module10 = require(dependencyMap[2]);
-obj.textTransform = _module10.oneOf([]);
-const _module11 = require(dependencyMap[2]);
-obj.writingDirection = _module11.oneOf(["Iterator", "isChannelOrThreadParentGated", "DEFAULT_AUDIO_MIXER_SETTINGS"]);
+const _module3 = require(dependencyMap[3]);
+obj.resizeMode = _module3.oneOf(["imp", "mischievous", "purple", "shade", "tale"]);
+const _module4 = require(dependencyMap[3]);
+obj.backfaceVisibility = _module4.oneOf(["<string:600068352>", "<string:21587524>"]);
+obj.backgroundColor = require(dependencyMap[4]);
+obj.borderColor = require(dependencyMap[4]);
+obj.borderWidth = require(dependencyMap[3]).number;
+obj.borderRadius = require(dependencyMap[3]).number;
+const _module5 = require(dependencyMap[3]);
+obj.overflow = _module5.oneOf(["<string:600068352>", "<string:21587524>"]);
+obj.tintColor = require(dependencyMap[4]);
+obj.opacity = require(dependencyMap[3]).number;
+obj.overlayColor = require(dependencyMap[3]).string;
+obj.borderTopLeftRadius = require(dependencyMap[3]).number;
+obj.borderTopRightRadius = require(dependencyMap[3]).number;
+obj.borderBottomLeftRadius = require(dependencyMap[3]).number;
+obj.borderBottomRightRadius = require(dependencyMap[3]).number;
 
-export default Object.assign({}, _module, obj);
+export default Object.assign({}, _module, _module1, _module2, obj);

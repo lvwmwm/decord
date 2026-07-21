@@ -1,15 +1,15 @@
-// Module ID: 15909
-// Function ID: 121975
+// Module ID: 15916
+// Function ID: 121999
 // Name: NewMemberActionsCompleted
 // Dependencies: []
 // Exports: default
 
-// Module 15909 (NewMemberActionsCompleted)
+// Module 15916 (NewMemberActionsCompleted)
 let closure_3 = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 ({ jsx: closure_5, jsxs: closure_6 } = arg1(dependencyMap[2]));
 let obj = arg1(dependencyMap[3]);
-obj = { screen: { <string:3972945112>: 1163547137, <string:1283350549>: 1895908698, <string:2070009128>: 2, <string:1385684305>: 40998465, <string:1356634348>: 1090519040, <string:2690879073>: 167277, <string:1650808571>: 1701951841, <string:3630407931>: 1358954496 }, text: { marginBottom: 16 } };
+obj = { screen: { <string:3971503320>: true, <string:1286199080>: 12.1, <string:2070009117>: 103, <string:1385664337>: "deferred_action", <string:1358141595>: "message", <string:2690879073>: "state", <string:1650808571>: 104, <string:3630407931>: "temp_banned" }, text: { marginBottom: 16 } };
 obj = { borderRadius: importDefault(dependencyMap[4]).radii.round, height: 8, backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_MOD_NORMAL, width: "60%" };
 obj.progressBackground = obj;
 const tmp2 = arg1(dependencyMap[2]);
@@ -47,7 +47,7 @@ export default function NewMemberActionsCompleted(arg0) {
     const timerId = setTimeout(() => callback2(closure_2[7]).popWithKey(callback(closure_2[8]).NEW_MEMBER_ACTION_COMPLETE_MODAL_KEY), 2500);
   }, []);
   obj = { style: tmp.screen };
-  obj1 = { Promise: "<string:1107296755>", marginTop: "ios_user_identifiers_manager", flags: "sync_app_transaction_id", style: tmp.text };
+  obj1 = { "Null": -2136670206, "Null": -727908351, "Null": -1774059519, style: tmp.text };
   const intl = arg1(dependencyMap[10]).intl;
   obj1.children = intl.format(arg1(dependencyMap[10]).t.pGj5u2, { count: numActions });
   const items1 = [callback(arg1(dependencyMap[9]).Text, obj1), ];

@@ -1,10 +1,10 @@
-// Module ID: 7077
-// Function ID: 56692
+// Module ID: 7081
+// Function ID: 56703
 // Name: MessageEmbedTypes
 // Dependencies: []
 // Exports: typeToString
 
-// Module 7077 (MessageEmbedTypes)
+// Module 7081 (MessageEmbedTypes)
 let MessageEmbedTypes;
 const _module = require(dependencyMap[0]);
 ({ ChannelTypes: closure_0, MessageEmbedTypes } = _module);

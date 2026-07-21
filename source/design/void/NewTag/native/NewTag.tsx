@@ -1,10 +1,10 @@
-// Module ID: 12876
-// Function ID: 98350
+// Module ID: 12883
+// Function ID: 98373
 // Name: NewTag
 // Dependencies: []
 // Exports: default
 
-// Module 12876 (NewTag)
+// Module 12883 (NewTag)
 let Platform;
 importAll(dependencyMap[0]);
 ({ View: closure_3, Platform } = arg1(dependencyMap[1]));
@@ -12,7 +12,7 @@ const HorizontalGradient = arg1(dependencyMap[2]).HorizontalGradient;
 const jsx = arg1(dependencyMap[3]).jsx;
 let obj = arg1(dependencyMap[4]);
 obj = {};
-obj = { "Null": 2063598314, "Null": 1912603370, "Null": "isArray", "Null": "current", "Null": "textAlign", "Null": "r", backgroundColor: importDefault(dependencyMap[5]).unsafe_rawColors.RED_400, borderRadius: importDefault(dependencyMap[5]).radii.round };
+obj = { guild: "o", limit: "a", LIGHT: "isArray", enabled: "Boolean", guildId: "pos", bm: "a", backgroundColor: importDefault(dependencyMap[5]).unsafe_rawColors.RED_400, borderRadius: importDefault(dependencyMap[5]).radii.round };
 obj.tagContainer = obj;
 obj.tagText = { textTransform: "uppercase" };
 let closure_6 = obj.createStyles(obj);
@@ -44,7 +44,7 @@ export default function NewTag(color) {
     const items = [importDefault(dependencyMap[5]).unsafe_rawColors.PREMIUM_TIER_2_PURPLE, importDefault(dependencyMap[5]).unsafe_rawColors.PREMIUM_TIER_2_PINK];
     colors = items;
   }
-  let obj = { "Bool(true)": 1091658877, "Bool(true)": 151597, "Bool(true)": 6258, "Bool(true)": 6144, "Bool(true)": -180289280, "Bool(true)": 1375732285, "Bool(true)": 1685947892 };
+  let obj = {};
   Object.setPrototypeOf(null);
   const merged = Object.assign(color, obj);
   const tmp7 = callback();

@@ -1,10 +1,10 @@
-// Module ID: 7989
-// Function ID: 63512
+// Module ID: 7993
+// Function ID: 63524
 // Name: isSamePremiumType
 // Dependencies: []
 // Exports: default
 
-// Module 7989 (isSamePremiumType)
+// Module 7993 (isSamePremiumType)
 let AnalyticsObjectTypes;
 let AnalyticsPages;
 let AnalyticsSections;
@@ -40,12 +40,12 @@ const items = [, ];
 const set = new Set(items);
 let obj = arg1(dependencyMap[10]);
 obj = { containerWrapper: { position: "relative" } };
-obj = { "Bool(false)": null, "Bool(false)": "26d707b294c340a6d911d79614dfcf77", "Bool(false)": "UserSquareIcon", "Bool(false)": "png", "Bool(false)": "Other", "Bool(false)": "other", borderRadius: importDefault(dependencyMap[11]).radii.lg };
+obj = { borderRadius: importDefault(dependencyMap[11]).radii.lg };
 obj.card = obj;
 obj.logoContainer = { marginBottom: 8 };
 obj.logo = { marginRight: 4 };
-obj.priceContainer = {};
-obj.discountPriceText = { <string:4260518581>: 598135294634018.1, <string:1644868099>: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002343107752929406 };
+obj.priceContainer = { transparent: false, animationType: false, url: false, body: false };
+obj.discountPriceText = { "Bool(true)": "<string:2041856273>", "Bool(true)": "<string:1124139009>" };
 obj.featureList = { marginTop: 8 };
 const obj1 = {};
 const tmp5 = arg1(dependencyMap[9]);
@@ -53,17 +53,17 @@ const merged = Object.assign(importDefault(dependencyMap[12])(Fonts.PRIMARY_MEDI
 obj1["marginLeft"] = -8;
 obj.featureLabel = obj1;
 obj.featureRow = { paddingVertical: 7 };
-obj.featureIcon = { <string:1140607356>: "<string:16777479>", <string:1751293292>: "<string:36295491>" };
+obj.featureIcon = {};
 obj.button = { marginTop: 16 };
-obj.currentPlanLabel = { display: true, flexDirection: null, flexGrow: true, flexShrink: "no-hide-descendants" };
+obj.currentPlanLabel = { fetchGuildStickersWithCreator: true, hour: null, minute: true, second: "no-hide-descendants" };
 obj.trialSubTextContainer = {};
 const obj2 = {};
 const importDefaultResult = importDefault(dependencyMap[12]);
 const merged1 = Object.assign(importDefault(dependencyMap[12])(Fonts.DISPLAY_MEDIUM, importDefault(dependencyMap[11]).unsafe_rawColors.WHITE, 12));
 obj2["textAlign"] = "center";
 obj.trialSubText = obj2;
-obj.pill = {};
-obj.buttonIcon = { "Bool(false)": "audio", "Bool(false)": "architecture", "Bool(false)": "asset" };
+obj.pill = { "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true };
+obj.buttonIcon = {};
 let closure_20 = obj.createStyles(obj);
 let closure_21 = { page: AnalyticsPages.USER_SETTINGS, section: AnalyticsSections.SETTINGS_PREMIUM, objectType: AnalyticsObjectTypes.BUY };
 function PriceText(fractionalPremiumInfo) {
@@ -208,7 +208,7 @@ function PriceText(fractionalPremiumInfo) {
     return tmp8Result;
   }
   const obj8 = { accessible: true, style: tmp.priceContainer };
-  const obj9 = { INTEGRATION_CREATE: false, ConstraintReasonCode: false };
+  const obj9 = {};
   let priceString3;
   if (null != tmp2) {
     priceString3 = tmp2.priceString;
@@ -371,7 +371,7 @@ export default function PremiumFeaturesCard(premiumType) {
   const tmp21 = importDefault(dependencyMap[29])(premiumType, flag, UNSPECIFIED);
   const tmp37 = callback2;
   if (flag3) {
-    let tmp39Result = tmp39(tmp40(tmp41[35]), { "Bool(false)": true, "Bool(false)": true, "Bool(false)": true });
+    let tmp39Result = tmp39(tmp40(tmp41[35]), {});
   } else {
     const obj5 = { premiumType, style: tmp3.logo };
     tmp39Result = tmp39(tmp40(tmp41[36]), obj5);
@@ -419,8 +419,8 @@ export default function PremiumFeaturesCard(premiumType) {
     return tmp35(tmp36, obj);
   } else {
     if (tmp32) {
-      obj11 = { freq: null, pacsize: null, channels: null, style: tmp3.currentPlanLabel };
-      const obj12 = { INTEGRATION_CREATE: true, ConstraintReasonCode: true };
+      obj11 = { style: tmp3.currentPlanLabel };
+      const obj12 = {};
       const intl5 = arg1(dependencyMap[17]).intl;
       obj12.children = intl5.string(arg1(dependencyMap[17]).t.j+wlhy);
       obj11.children = callback2(arg1(dependencyMap[16]).Text, obj12);

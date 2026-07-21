@@ -1,10 +1,10 @@
-// Module ID: 13922
-// Function ID: 105831
+// Module ID: 13929
+// Function ID: 105854
 // Name: useVideoExternallyPaused
 // Dependencies: []
 // Exports: useVideoExternallyPaused
 
-// Module 13922 (useVideoExternallyPaused)
+// Module 13929 (useVideoExternallyPaused)
 let closure_2 = importDefault(dependencyMap[0]);
 const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/quests/native/VideoQuestModal/hooks/useVideoExternallyPaused.tsx");
 

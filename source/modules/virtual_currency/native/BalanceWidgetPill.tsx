@@ -1,9 +1,9 @@
-// Module ID: 9774
-// Function ID: 75993
+// Module ID: 9779
+// Function ID: 76009
 // Name: BalanceWidgetPill
 // Dependencies: []
 
-// Module 9774 (BalanceWidgetPill)
+// Module 9779 (BalanceWidgetPill)
 class BalanceWidgetPill {
   constructor(arg0) {
     prop = global.initialRenderedBalance;
@@ -62,10 +62,10 @@ const View = arg1(dependencyMap[1]).View;
 ({ jsx: closure_3, jsxs: closure_4 } = arg1(dependencyMap[2]));
 let obj = arg1(dependencyMap[3]);
 obj = {};
-obj = { "Bool(false)": "d\u01B0\u1EDBi 1 ph\u00FAt", "Bool(false)": "d\u01B0\u1EDBi {{count}} ph\u00FAt", "Bool(false)": "1 ph\u00FAt", "Bool(false)": "{{count}} ph\u00FAt", "Bool(false)": "kho\u1EA3ng 1 gi\u1EDD", minHeight: arg1(dependencyMap[4]).SMALL_BUTTON_HEIGHT, borderRadius: importDefault(dependencyMap[5]).radii.round, paddingHorizontal: importDefault(dependencyMap[5]).space.PX_12, paddingVertical: importDefault(dependencyMap[5]).space.PX_4, backgroundColor: importDefault(dependencyMap[5]).colors.CONTROL_OVERLAY_SECONDARY_BACKGROUND_DEFAULT, gap: 4 };
+obj = { "Null": false, "Null": false, "Null": false, "Null": false, -9223372036854775808: false, minHeight: arg1(dependencyMap[4]).SMALL_BUTTON_HEIGHT, borderRadius: importDefault(dependencyMap[5]).radii.round, paddingHorizontal: importDefault(dependencyMap[5]).space.PX_12, paddingVertical: importDefault(dependencyMap[5]).space.PX_4, backgroundColor: importDefault(dependencyMap[5]).colors.CONTROL_OVERLAY_SECONDARY_BACKGROUND_DEFAULT, gap: 4 };
 obj.container = obj;
 obj.orbsLottieContainer = {};
-obj.balanceCounterContainer = { IS_MEDIA_CHANNEL: 22, SUMMARIES_DISABLED: 22 };
+obj.balanceCounterContainer = {};
 const obj1 = { color: importDefault(dependencyMap[5]).colors.CONTROL_OVERLAY_SECONDARY_TEXT_DEFAULT, textAlign: "right" };
 const tmp3 = arg1(dependencyMap[2]);
 let num;

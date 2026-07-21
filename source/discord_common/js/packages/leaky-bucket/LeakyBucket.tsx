@@ -1,9 +1,9 @@
-// Module ID: 10486
-// Function ID: 81882
+// Module ID: 10492
+// Function ID: 81905
 // Name: LeakyBucket
 // Dependencies: []
 
-// Module 10486 (LeakyBucket)
+// Module 10492 (LeakyBucket)
 let closure_0 = importDefault(dependencyMap[0]);
 let closure_1 = importDefault(dependencyMap[1]);
 const tmp2 = () => {

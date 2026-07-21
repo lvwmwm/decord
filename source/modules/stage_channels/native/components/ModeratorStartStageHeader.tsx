@@ -1,14 +1,14 @@
-// Module ID: 10783
-// Function ID: 83749
+// Module ID: 10789
+// Function ID: 83772
 // Dependencies: []
 
-// Module 10783
+// Module 10789
 const View = arg1(dependencyMap[1]).View;
 const importAllResult = importAll(dependencyMap[0]);
 ({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[2]));
 const tmp2 = arg1(dependencyMap[2]);
 let obj = {};
-obj = { alignButton: null, align: null, label: null, isDestructive: null, key: null, content: null, height: arg1(dependencyMap[4]).NAV_BAR_HEIGHT };
+obj = { label: "<string:385876264>", isDestructive: "<string:50332271>", key: 1766163600000, content: 1767632400000, IconComponent: true, iconColor: "<string:1870921729>", height: arg1(dependencyMap[4]).NAV_BAR_HEIGHT };
 obj.header = obj;
 let closure_6 = arg1(dependencyMap[3]).createStyles(obj);
 const obj2 = arg1(dependencyMap[3]);

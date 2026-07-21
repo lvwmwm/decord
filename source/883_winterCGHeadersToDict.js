@@ -86,7 +86,7 @@ function extractQueryParamsFromUrl(arg0) {
 let closure_0 = require(dependencyMap[0]);
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 let closure_1 = [];
-let closure_2 = [];
+let closure_2 = ["Array", "paymentData"];
 
 export { extractQueryParamsFromUrl };
 export { headersToDict };

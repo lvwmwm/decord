@@ -1,10 +1,10 @@
-// Module ID: 14335
-// Function ID: 108274
+// Module ID: 14342
+// Function ID: 108297
 // Name: HapticButton
 // Dependencies: []
 // Exports: default
 
-// Module 14335 (HapticButton)
+// Module 14342 (HapticButton)
 function HapticButton(text) {
   const arg1 = text.type;
   return callback(arg1(dependencyMap[4]).Button, {
@@ -19,7 +19,7 @@ importAll(dependencyMap[0]);
 const ScrollView = arg1(dependencyMap[1]).ScrollView;
 ({ jsx: closure_3, jsxs: closure_4 } = arg1(dependencyMap[2]));
 let obj = arg1(dependencyMap[3]);
-let closure_5 = obj.createStyles({ container: { channelId: "center", allowHeading: "center" } });
+let closure_5 = obj.createStyles({ container: { overflow: "center", flex: "center" } });
 obj = { type: importDefault(dependencyMap[6]).IMPACT_LIGHT, label: "IMPACT_LIGHT" };
 const items = [obj, , , , , , , , ];
 obj = { type: importDefault(dependencyMap[6]).IMPACT_MEDIUM, label: "IMPACT_MEDIUM" };
@@ -86,7 +86,7 @@ const obj29 = { type: importDefault(dependencyMap[6]).EFFECT_DOUBLE_CLICK, label
 items3[11] = { type: importDefault(dependencyMap[6]).EFFECT_HEAVY_CLICK, label: "EFFECT_HEAVY_CLICK" };
 const obj30 = { type: importDefault(dependencyMap[6]).EFFECT_HEAVY_CLICK, label: "EFFECT_HEAVY_CLICK" };
 items3[12] = { type: importDefault(dependencyMap[6]).EFFECT_TICK, label: "EFFECT_TICK" };
-const items4 = [{}, {}, { "Bool(false)": -515396076, "Bool(false)": 1900008570, "Bool(false)": 10 }, {}, {}, { "Bool(false)": true, "Bool(false)": true, "Bool(false)": true }];
+const items4 = [{}, {}, { 0: -515396076, 9223372036854775807: 1900008570, 9223372036854775807: 10 }, {}, {}, { 0: true, 9223372036854775807: true, 9223372036854775807: true }];
 const obj31 = { type: importDefault(dependencyMap[6]).EFFECT_TICK, label: "EFFECT_TICK" };
 const result = arg1(dependencyMap[11]).fileFinishedImporting("modules/user_settings/design_system/native/UserSettingsDesignSystemHaptics.tsx");
 
@@ -145,7 +145,7 @@ export default function UserSettingsDesignSystemHaptics() {
   const obj8 = {};
   const obj9 = {};
   const items5 = [
-    callback(arg1(dependencyMap[9]).Text, { position: null, width: null }),
+    callback(arg1(dependencyMap[9]).Text, { "Null": null, "Null": null }),
     callback(arg1(dependencyMap[9]).Text, {}),
     items4.map((description) => {
       let label;

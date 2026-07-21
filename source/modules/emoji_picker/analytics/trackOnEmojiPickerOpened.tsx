@@ -1,10 +1,10 @@
-// Module ID: 9334
-// Function ID: 72934
+// Module ID: 9338
+// Function ID: 72948
 // Name: trackOnEmojiPickerOpened
 // Dependencies: []
 // Exports: useTrackOnEmojiPickerOpenedForReactions
 
-// Module 9334 (trackOnEmojiPickerOpened)
+// Module 9338 (trackOnEmojiPickerOpened)
 function trackOnEmojiPickerOpened(arg0) {
   let analyticsObject;
   let containerWidth;

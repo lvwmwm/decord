@@ -1,10 +1,10 @@
-// Module ID: 16361
-// Function ID: 126364
+// Module ID: 16368
+// Function ID: 126395
 // Name: shouldClearChannelNotificationsOnAppForeground
 // Dependencies: []
 // Exports: shouldClearChannelNotificationsOnAppForeground
 
-// Module 16361 (shouldClearChannelNotificationsOnAppForeground)
+// Module 16368 (shouldClearChannelNotificationsOnAppForeground)
 const _module = require(dependencyMap[0]);
 let closure_0 = _module.createApexExperiment({ defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } });
 const _module1 = require(dependencyMap[1]);

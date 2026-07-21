@@ -1,10 +1,10 @@
-// Module ID: 16428
-// Function ID: 126919
+// Module ID: 16435
+// Function ID: 126953
 // Name: ResendVerificationCodeButton
 // Dependencies: []
 // Exports: default
 
-// Module 16428 (ResendVerificationCodeButton)
+// Module 16435 (ResendVerificationCodeButton)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 let closure_5 = importAll(dependencyMap[2]);

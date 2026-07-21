@@ -1,9 +1,9 @@
-// Module ID: 7061
-// Function ID: 56455
+// Module ID: 7065
+// Function ID: 56466
 // Name: POLL_ATTACHMENT_FOLDER
 // Dependencies: []
 
-// Module 7061 (POLL_ATTACHMENT_FOLDER)
+// Module 7065 (POLL_ATTACHMENT_FOLDER)
 const items = [, ];
 ({ GIF: arr[0], EMOJI: arr[1] } = require(dependencyMap[0]).ExpressionPickerViewType);
 const _module = require(dependencyMap[1]);

@@ -1,9 +1,9 @@
-// Module ID: 14749
-// Function ID: 111198
+// Module ID: 14756
+// Function ID: 111222
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 
-// Module 14749 (_createForOfIteratorHelperLoose)
+// Module 14756 (_createForOfIteratorHelperLoose)
 function _createForOfIteratorHelperLoose(@@iterator) {
   let arg1 = Symbol_iterator;
   @@iterator = "undefined" !== typeof Symbol;
@@ -170,7 +170,7 @@ function findFirstOrLastMentionedItem(scrollPosValue, arg1, selectedGuildId) {
     layoutStart = scrollPosValue2.get();
   }
   const scrollPosValue3 = scrollPosValue.scrollPosValue;
-  let obj = { borderWidth: false, backgroundColor: false };
+  let obj = { flexDirection: false, alignItems: false };
   const diff = scrollPosValue3.get() + scrollPosValue.containerSize - arg3 - (closure_12 + closure_13);
   const tmp3 = _createForOfIteratorHelperLoose(scrollPosValue.state.items);
   const iter = tmp3();
@@ -532,7 +532,7 @@ const memoResult = importAllResult.memo(function GuildsBarUnreadBars(fastList) {
   const paddingEnd = tmp6.paddingEnd;
   let closure_7 = paddingEnd;
   const items2 = [fastList, paddingStart, paddingEnd];
-  obj = { "Bool(false)": "flex-end", "Bool(false)": null, "Bool(false)": "absolute", "Bool(false)": 0, style: tmp6.style };
+  obj = { borderWidth: "<string:990002005>", backgroundColor: "<string:990001922>", height: "<string:1694644994>", width: "<string:235802126>", style: tmp6.style };
   callback = importAllResult.useCallback((arg0) => {
     const obj = {};
     const merged = Object.assign(arg0);

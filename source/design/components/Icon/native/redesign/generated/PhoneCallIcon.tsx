@@ -1,10 +1,10 @@
-// Module ID: 9073
-// Function ID: 71143
+// Module ID: 9077
+// Function ID: 71155
 // Name: PhoneCallIcon
 // Dependencies: []
 // Exports: PhoneCallIcon
 
-// Module 9073 (PhoneCallIcon)
+// Module 9077 (PhoneCallIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/PhoneCallIcon.tsx");

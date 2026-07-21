@@ -1,10 +1,10 @@
-// Module ID: 14850
-// Function ID: 111906
+// Module ID: 14857
+// Function ID: 111930
 // Name: GuildInfoHeader
 // Dependencies: []
 // Exports: useRedesignGuildHeaderHeight
 
-// Module 14850 (GuildInfoHeader)
+// Module 14857 (GuildInfoHeader)
 function GuildInfoHeader(bannerHeight) {
   let guild;
   let scrollPosition;
@@ -43,7 +43,7 @@ function GuildInfoHeader(bannerHeight) {
   const tmp = callback5();
   obj = { style: animatedStyle1 };
   const tmp5 = importDefault(dependencyMap[21]);
-  obj.children = callback(importDefault(dependencyMap[22]), { <string:1398956458>: null, <string:2898161814>: null });
+  obj.children = callback(importDefault(dependencyMap[22]), { "Bool(false)": null, "Bool(false)": null });
   const items1 = [callback(importDefault(dependencyMap[21]), obj), ];
   obj1 = { style: tmp.headerWrapper, children: callback(importDefault(dependencyMap[23]), obj2) };
   obj2 = { guild, showExtraButtons: !isFavoritesGuildIdResult, canOpenGuildActionSheet: !isFavoritesGuildIdResult, showCoachmarks: !isFavoritesGuildIdResult };
@@ -94,7 +94,7 @@ function ReanimatedGuildBanner(guild) {
     const value = scrollPosition.get();
     let obj = {};
     const items = [0.229, bannerHeight];
-    obj.opacity = guild(bannerHeight[20]).interpolate(value, items, ["getViewManagerConfig", "hasViewManagerConfig"], "clamp");
+    obj.opacity = guild(bannerHeight[20]).interpolate(value, items, ["<string:3813229678>", "<string:153900714>"], "clamp");
     obj = {};
     if (value >= 0) {
       const obj4 = guild(bannerHeight[20]);
@@ -125,7 +125,7 @@ function ReanimatedGuildBanner(guild) {
     constructor() {
       obj = {};
       obj2 = guild(bannerHeight[20]);
-      obj.opacity = obj2.interpolate(closure_7.get(), [null, null], [-520405018, 1431658495]);
+      obj.opacity = obj2.interpolate(closure_7.get(), ["Text", "lc"], [-520405018, 1431658495]);
       return obj;
     }
   }

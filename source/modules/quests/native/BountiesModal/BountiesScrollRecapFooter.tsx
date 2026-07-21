@@ -1,10 +1,10 @@
-// Module ID: 13814
-// Function ID: 104481
+// Module ID: 13821
+// Function ID: 104504
 // Name: BountiesScrollRecapFooter
 // Dependencies: []
 // Exports: BountiesScrollRecapFooter, BountiesScrollRecapFooterGradient
 
-// Module 13814 (BountiesScrollRecapFooter)
+// Module 13821 (BountiesScrollRecapFooter)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 let closure_4 = importDefault(dependencyMap[2]);
@@ -15,7 +15,7 @@ let closure_7 = arg1(dependencyMap[4]).createStyles(() => {
   obj = { gap: importDefault(dependencyMap[5]).space.PX_4 };
   obj.container = obj;
   obj.headerLabel = { textTransform: "uppercase" };
-  obj = { -9223372036854775808: true, filter: true, gap: importDefault(dependencyMap[5]).space.PX_4 };
+  obj = { gap: importDefault(dependencyMap[5]).space.PX_4 };
   obj.orbRow = obj;
   obj.rive = {};
   const obj1 = {};
@@ -36,9 +36,9 @@ export const BountiesScrollRecapFooter = function BountiesScrollRecapFooter(orbA
   const intl = arg1(dependencyMap[7]).intl;
   const stringResult = intl.string(arg1(dependencyMap[7]).t.d6Rrn6);
   let obj = { style: tmp.container, accessibilityLabel: "" + stringResult + ", +" + orbAmount };
-  obj = { get: null, enumerable: "76e12fa5305b436abd63e2faeb40e327", configurable: "ic_unmute_channel_24px", value: "png", style: tmp.headerLabel, children: stringResult };
+  obj = { style: tmp.headerLabel, children: stringResult };
   const items = [callback(arg1(dependencyMap[8]).Text, obj), ];
-  obj = { 0: false, 9223372036854775807: false, 0: false, style: tmp.orbRow };
+  obj = { <string:2737387298>: 48, <string:1292067942>: 12, <string:1400499127>: 4, style: tmp.orbRow };
   const items1 = [callback(arg1(dependencyMap[9]).OrbsIcon, {}), ];
   const obj1 = { style: tmp.orbAmount, children: "+" + orbAmount };
   items1[1] = callback(arg1(dependencyMap[8]).Text, obj1);
@@ -52,7 +52,7 @@ export const BountiesScrollRecapFooterGradient = function BountiesScrollRecapFoo
   const items = [closure_4];
   obj = { style: callback3().rive };
   const stateFromStores = obj.useStateFromStores(items, () => useReducedMotion.useReducedMotion);
-  obj = { 1632892437: null, 1505116984: null, 1559978715: null };
+  obj = { borderWidth: 7471105, position: 0, alignSelf: 50331648 };
   let str = "play";
   if (stateFromStores) {
     str = "halt";

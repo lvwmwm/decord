@@ -1,10 +1,10 @@
-// Module ID: 14226
-// Function ID: 107544
+// Module ID: 14233
+// Function ID: 107567
 // Name: AppIcon
 // Dependencies: []
 // Exports: default
 
-// Module 14226 (AppIcon)
+// Module 14233 (AppIcon)
 importAll(dependencyMap[0]);
 ({ Image: closure_3, View: closure_4 } = arg1(dependencyMap[1]));
 const getIconById = arg1(dependencyMap[2]).getIconById;
@@ -13,7 +13,7 @@ let obj = arg1(dependencyMap[4]);
 obj = {};
 obj = { overflow: "hidden", borderColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_LOWEST };
 obj.container = obj;
-obj.image = {};
+obj.image = { value: true, disabled: 16, icon: 0.194 };
 let closure_7 = obj.createStyles(obj);
 const tmp3 = arg1(dependencyMap[1]);
 const result = arg1(dependencyMap[8]).fileFinishedImporting("modules/app_icons/native/AppIcon.tsx");

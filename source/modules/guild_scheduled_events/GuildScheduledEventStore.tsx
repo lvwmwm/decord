@@ -1,10 +1,10 @@
-// Module ID: 6747
-// Function ID: 52575
+// Module ID: 6753
+// Function ID: 52624
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 // Exports: eventScheduledToStartWithin, isGuildEventEnded, scheduledEventSort
 
-// Module 6747 (_isNativeReflectConstruct)
+// Module 6753 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -275,9 +275,9 @@ let closure_7 = importDefault(dependencyMap[5]);
 let closure_8 = importDefault(dependencyMap[6]);
 ({ GuildScheduledEventStatus: closure_9, GuildScheduledEventStatusDone: closure_10, GuildScheduledEventUserResponses: closure_11 } = arg1(dependencyMap[7]));
 let obj = {
-  intl: null,
-  name: null,
-  ix: null,
+  "Bool(true)": null,
+  "Bool(true)": null,
+  "Bool(true)": null,
   GUILD_EVENT(arg0) {
     return "" + arg0 + "-" + obj.EVENT;
   },

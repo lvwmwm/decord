@@ -1,10 +1,10 @@
-// Module ID: 15314
-// Function ID: 116547
+// Module ID: 15321
+// Function ID: 116571
 // Name: MediaKeyboardAccessoriesContainer
 // Dependencies: []
 // Exports: default
 
-// Module 15314 (MediaKeyboardAccessoriesContainer)
+// Module 15321 (MediaKeyboardAccessoriesContainer)
 let closure_3 = importAll(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[2]);
 const jsx = arg1(dependencyMap[3]).jsx;
@@ -65,7 +65,7 @@ export default function MediaKeyboardAccessoriesContainer(animatedIndex) {
     }
     let obj = {};
     const items = [-1, 0];
-    obj.translateY = animatedIndex(animateOnMount[6]).interpolate(num, items, [994770946, 919863298]);
+    obj.translateY = animatedIndex(animateOnMount[6]).interpolate(num, items, ["Array", "isArray"]);
     const items1 = [obj];
     obj = {};
     if (sharedValue) {

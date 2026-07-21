@@ -1,10 +1,10 @@
-// Module ID: 12341
-// Function ID: 94414
+// Module ID: 12348
+// Function ID: 94437
 // Name: PricingSubheadingCopy
 // Dependencies: []
 // Exports: default
 
-// Module 12341 (PricingSubheadingCopy)
+// Module 12348 (PricingSubheadingCopy)
 function PricingSubheadingCopy() {
   let interval;
   let intervalCount;
@@ -139,7 +139,7 @@ function PricingSubheadingCopy() {
             originalPriceHook(children) {
                       let tmp = null;
                       if (str3 !== str2) {
-                        const obj = { Promise: null, marginTop: null, flags: null, style: tmp.originalPrice, children };
+                        const obj = { "Null": "<string:1178599425>", "Null": "<string:3295084545>", "Null": "<string:1689649153>", style: tmp.originalPrice, children };
                         tmp = callback(tmp(str3[18]).Text, obj, arg1);
                       }
                       return tmp;

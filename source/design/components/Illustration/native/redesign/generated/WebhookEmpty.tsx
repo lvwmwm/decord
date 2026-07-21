@@ -1,10 +1,10 @@
-// Module ID: 15395
-// Function ID: 117487
+// Module ID: 15402
+// Function ID: 117511
 // Name: getWebhookEmptySource
 // Dependencies: []
 // Exports: WebhookEmpty
 
-// Module 15395 (getWebhookEmptySource)
+// Module 15402 (getWebhookEmptySource)
 function getWebhookEmptySource(theme) {
   let obj = arg1(dependencyMap[3]);
   obj = {

@@ -1,10 +1,10 @@
-// Module ID: 6059
-// Function ID: 49962
+// Module ID: 6061
+// Function ID: 50005
 // Name: ForceIllocon
 // Dependencies: []
 // Exports: ForceIllocon
 
-// Module 6059 (ForceIllocon)
+// Module 6061 (ForceIllocon)
 const jsx = require(dependencyMap[0]).jsx;
 const _module = require(dependencyMap[3]);
 const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/ForceIllocon.native.tsx");

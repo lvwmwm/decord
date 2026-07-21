@@ -1,10 +1,10 @@
-// Module ID: 9599
-// Function ID: 74798
+// Module ID: 9604
+// Function ID: 74815
 // Name: StickerPackBanner
 // Dependencies: []
 // Exports: default
 
-// Module 9599 (StickerPackBanner)
+// Module 9604 (StickerPackBanner)
 importAll(dependencyMap[0]);
 ({ Image: closure_2, View: closure_3 } = arg1(dependencyMap[1]));
 const jsx = arg1(dependencyMap[2]).jsx;

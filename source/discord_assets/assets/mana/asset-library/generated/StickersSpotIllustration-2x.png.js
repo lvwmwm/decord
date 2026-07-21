@@ -1,9 +1,9 @@
-// Module ID: 6528
-// Function ID: 50666
+// Module ID: 6530
+// Function ID: 50709
 // Name: metadata
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 6528 (metadata)
+// Module 6530 (metadata)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/StickersSpotIllustration-2x.png.js");
 

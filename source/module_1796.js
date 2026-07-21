@@ -3,7 +3,7 @@
 // Dependencies: []
 
 // Module 1796
-let closure_3 = [true, true, true, true, true, true, true, true, true, true];
+let closure_3 = [];
 let closure_4 = importDefault(dependencyMap[0]);
 importDefault(dependencyMap[1]);
 const Platform = arg1(dependencyMap[2]).Platform;

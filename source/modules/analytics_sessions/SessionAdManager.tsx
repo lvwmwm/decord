@@ -1,9 +1,9 @@
-// Module ID: 13339
-// Function ID: 101440
+// Module ID: 13346
+// Function ID: 101463
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
-// Module 13339 (_isNativeReflectConstruct)
+// Module 13346 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -58,7 +58,7 @@ let tmp3 = (arg0) => {
       tmp2Result.startAnalyticHeartbeat = () => {
         if (!tmp2Result.schedulerStarted) {
           tmp2Result.schedulerStarted = true;
-          callback(closure_2[10]).addBreadcrumb({ <string:944832516>: "text-sm/normal", backShouldLeaveGuild: "text-muted" });
+          callback(closure_2[10]).addBreadcrumb({ panelHeader: "text-sm/normal", discount: "text-muted" });
           tmp2Result.maybeStartHeartbeat();
           const obj = callback(closure_2[10]);
         }

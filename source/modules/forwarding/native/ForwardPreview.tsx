@@ -1,14 +1,14 @@
-// Module ID: 9883
-// Function ID: 76528
+// Module ID: 9888
+// Function ID: 76544
 // Name: MessagePreview
 // Dependencies: [0, 0, 0, 0, 0, 4294967295, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4294967295]
 // Exports: ForwardPreview
 
-// Module 9883 (MessagePreview)
-import closure_3 from "result";
-import { View } from "result";
-import result from "result";
-import result from "result";
+// Module 9888 (MessagePreview)
+import closure_3 from "__exportStarResult1";
+import { View } from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
 
 function MessagePreview(content) {
   let attachmentCount;
@@ -44,33 +44,33 @@ function MessagePreview(content) {
     tmp.setOptions({});
     return tmp;
   }, []);
-  obj = { lineHeight: 3, fontSize: null, modifyRow: callback };
+  obj = { -1034289856: "<string:553648726>", -1031355792: "<string:68987969>", modifyRow: callback };
   const obj1 = { messageSnapshots: [], content: content.contentMessage.content };
   const tmp = importDefault(dependencyMap[5])();
   obj.message = message.merge(obj1);
   obj.rowGenerator = memo;
   return callback(importDefault(dependencyMap[8]), obj);
 }
-({ jsx: closure_5, jsxs: closure_6 } = result);
-result = {};
-result = { gap: require("result").space.PX_12 };
-result.forwardPreview = result;
-result.quote = { backgroundColor: require("result").colors.BORDER_SUBTLE };
-result.contentWrapper = { clientThemeSettings: true, useItemDragState: true, ticketContainer: true, beetle: true };
-const obj1 = { backgroundColor: require("result").colors.BORDER_SUBTLE };
-result.attachmentPreview = { borderRadius: require("result").radii.sm };
-const obj2 = { borderRadius: require("result").radii.sm };
-result.attachmentPreviewVideo = { backgroundColor: require("result").colors.BLACK };
-result.videoThumbnail = { backgroundColor: null, borderRadius: "stretch", borderWidth: "row", borderColor: 10 };
-result.playIcon = {};
-result.attachmentPreviewOverflow = { position: "relative" };
-const obj3 = { backgroundColor: require("result").colors.BLACK };
-result.overflowCount = { backgroundColor: require("result").colors.BACKGROUND_MOD_STRONG, borderRadius: require("result").radii.sm };
-result.attachmentRow = {};
-result.largeIcon = { aze: false, azj: false };
-result = result.createStyles(result);
-const obj4 = { backgroundColor: require("result").colors.BACKGROUND_MOD_STRONG, borderRadius: require("result").radii.sm };
-result = arg1(dependencyMap[25]).fileFinishedImporting("modules/forwarding/native/ForwardPreview.tsx");
+({ jsx: closure_5, jsxs: closure_6 } = __exportStarResult1);
+__exportStarResult1 = {};
+__exportStarResult1 = { x: null, "Null": null, "Null": null, gap: require("__exportStarResult1").space.PX_12 };
+__exportStarResult1.forwardPreview = __exportStarResult1;
+__exportStarResult1.quote = { backgroundColor: require("__exportStarResult1").colors.BORDER_SUBTLE };
+__exportStarResult1.contentWrapper = { padding: "EMTLOT", T: "ChatArrowRightIcon", container: "png", _desired: "SERVER_GUIDE_CHANNEL_SELECTED" };
+const obj1 = { backgroundColor: require("__exportStarResult1").colors.BORDER_SUBTLE };
+__exportStarResult1.attachmentPreview = { borderRadius: require("__exportStarResult1").radii.sm };
+const obj2 = { borderRadius: require("__exportStarResult1").radii.sm };
+__exportStarResult1.attachmentPreviewVideo = { backgroundColor: require("__exportStarResult1").colors.BLACK };
+__exportStarResult1.videoThumbnail = { "Bool(false)": null, "Bool(false)": "stretch", "Bool(false)": "row", "Bool(false)": 10 };
+__exportStarResult1.playIcon = {};
+__exportStarResult1.attachmentPreviewOverflow = { position: "relative" };
+const obj4 = { gap: "contain", padding: false, backgroundColor: require("__exportStarResult1").colors.BACKGROUND_MOD_STRONG, borderRadius: require("__exportStarResult1").radii.sm, marginTop: false, "Bool(true)": false, "Bool(true)": false, "Bool(true)": false, "Bool(true)": false, "Bool(true)": true, "Bool(true)": true, "Bool(true)": 0.5 };
+__exportStarResult1.overflowCount = obj4;
+__exportStarResult1.attachmentRow = {};
+__exportStarResult1.largeIcon = { bhk: false, bic: "internal" };
+__exportStarResult1 = __exportStarResult1.createStyles(__exportStarResult1);
+const obj3 = { backgroundColor: require("__exportStarResult1").colors.BLACK };
+const result = arg1(dependencyMap[25]).fileFinishedImporting("modules/forwarding/native/ForwardPreview.tsx");
 
 export const ForwardPreview = function ForwardPreview(message) {
   let attachments;
@@ -81,7 +81,7 @@ export const ForwardPreview = function ForwardPreview(message) {
   let hasContent;
   message = message.message;
   ({ channel, forwardOptions } = message);
-  const tmp = result();
+  const tmp = __exportStarResult1();
   let obj = arg1(dependencyMap[9]);
   const forwardPreviewContent = obj.useForwardPreviewContent({ message, channel, forwardOptions });
   ({ attachments, embeds, hasContent, contentMessage } = forwardPreviewContent);
@@ -138,7 +138,7 @@ export const ForwardPreview = function ForwardPreview(message) {
           obj1.width = 56;
           obj1.height = 56;
           const items1 = [callback(importDefault(dependencyMap[19]), obj1), ];
-          const obj3 = { style: tmp.playIcon };
+          const obj3 = { -318614188: null, 1020595765: "null", 1406296506: null, style: tmp.playIcon };
           items1[1] = callback(arg1(dependencyMap[16]).CirclePlayIcon, obj3);
           obj.children = items1;
           let tmp11 = callback2(View, obj);
@@ -217,15 +217,15 @@ export const ForwardPreview = function ForwardPreview(message) {
   if (attachments.length > 1) {
     tmp51 = tmp11;
     if (null != tmp11) {
-      obj13 = { position: "contain", padding: true, marginTop: false, paddingTop: "tablist", marginBottom: null, borderRadius: "heading-md/bold", shape: arg1(dependencyMap[21]).CutoutShape.RoundedRect };
+      obj13 = { shape: arg1(dependencyMap[21]).CutoutShape.RoundedRect };
       const obj14 = { style: tmp.attachmentPreviewOverflow };
       const obj15 = {};
       const items2 = [obj13];
       obj15.cutouts = items2;
       obj15.children = tmp11;
       const items3 = [callback(importDefault(dependencyMap[21]), obj15), ];
-      const obj16 = { Promise: null, marginTop: 16, flags: true, style: tmp.overflowCount };
-      const items4 = [true, length - 1];
+      const obj16 = { style: tmp.overflowCount };
+      const items4 = ["fill", length - 1];
       obj16.children = items4;
       items3[1] = callback2(arg1(dependencyMap[22]).Text, obj16);
       obj14.children = items3;

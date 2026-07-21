@@ -1,9 +1,9 @@
-// Module ID: 12454
-// Function ID: 95208
+// Module ID: 12461
+// Function ID: 95231
 // Name: enforcing
 // Dependencies: []
 
-// Module 12454 (enforcing)
+// Module 12461 (enforcing)
 const TurboModuleRegistry = require(dependencyMap[0]).TurboModuleRegistry;
 const enforcing = TurboModuleRegistry.getEnforcing("NativeCompressionModule");
 const _module = require(dependencyMap[1]);

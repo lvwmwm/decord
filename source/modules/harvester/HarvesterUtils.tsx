@@ -1,10 +1,10 @@
-// Module ID: 13632
-// Function ID: 103326
+// Module ID: 13639
+// Function ID: 103349
 // Name: harvestDisabled
 // Dependencies: []
 // Exports: harvestDisabled, useRequestHarvestStatus
 
-// Module 13632 (harvestDisabled)
+// Module 13639 (harvestDisabled)
 let closure_2 = importDefault(dependencyMap[0]);
 let closure_3 = importAll(dependencyMap[1]);
 let closure_4 = importDefault(dependencyMap[2]);
@@ -64,11 +64,11 @@ export const useRequestHarvestStatus = function useRequestHarvestStatus() {
   if (null != stateFromStores) {
     if (stateFromStores.verified) {
       if (stateFromStores.isStaff()) {
-        obj = {};
+        obj = { "Null": false, "Null": 50 };
       } else if (null == stateFromStores1) {
         obj = { allowed: true };
       } else if (sum > first) {
-        const obj1 = { "Null": null, "Null": null };
+        const obj1 = {};
         const _Date2 = Date;
         const date1 = new Date(sum);
         obj1.nextAllowed = date1;

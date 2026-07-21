@@ -1,7 +1,7 @@
 // Module ID: 3746
 // Function ID: 28583
 // Name: getEmbeddedActivityLocationChannelId
-// Dependencies: []
+// Dependencies: [284214097]
 // Exports: getEmbeddedActivityLocationChannelId, getEmbeddedActivityLocationGuildId
 
 // Module 3746 (getEmbeddedActivityLocationChannelId)

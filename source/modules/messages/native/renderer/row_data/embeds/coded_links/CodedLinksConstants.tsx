@@ -1,9 +1,9 @@
-// Module ID: 9467
-// Function ID: 73777
+// Module ID: 9471
+// Function ID: 73791
 // Name: CodedLinkExtendedType
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 9467 (CodedLinkExtendedType)
+// Module 9471 (CodedLinkExtendedType)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("modules/messages/native/renderer/row_data/embeds/coded_links/CodedLinksConstants.tsx");
 

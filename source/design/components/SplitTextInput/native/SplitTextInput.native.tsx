@@ -1,9 +1,9 @@
-// Module ID: 9204
-// Function ID: 72047
+// Module ID: 9208
+// Function ID: 72059
 // Name: SplitTextInput
 // Dependencies: []
 
-// Module 9204 (SplitTextInput)
+// Module 9208 (SplitTextInput)
 const jsx = arg1(dependencyMap[1]).jsx;
 const importAllResult = importAll(dependencyMap[0]);
 const forwardRefResult = importAll(dependencyMap[0]).forwardRef((arg0, ref) => {

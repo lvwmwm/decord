@@ -1,10 +1,10 @@
-// Module ID: 11025
-// Function ID: 85853
+// Module ID: 11030
+// Function ID: 85874
 // Name: getHeader
 // Dependencies: []
 // Exports: AppealIngestionModalHeader, AppealIngestionModalScreen, default
 
-// Module 11025 (getHeader)
+// Module 11030 (getHeader)
 function getHeader(arg0) {
   return callback3(arg1(dependencyMap[10]).Text, { variant: "text-md/normal", children: undefined });
 }
@@ -21,13 +21,13 @@ let obj = arg1(dependencyMap[8]);
 obj = {};
 obj = { flex: 1, backgroundColor: importDefault(dependencyMap[9]).colors.BACKGROUND_BASE_LOW };
 obj.container = obj;
-obj.headerContainer = { width: false, height: false, fill: false, backgroundColor: false };
-obj.header = { bounces: null, keyboardShouldPersistTaps: null };
+obj.headerContainer = { <string:3489662072>: "<string:553648707>", <string:3638919185>: "<string:4009755204>", <string:1607818591>: "<string:3875537478>", getInspectorDataForViewTag: "<string:3019899464>" };
+obj.header = { "Null": null, "Null": null };
 obj.subheader = {};
 const tmp3 = arg1(dependencyMap[7]);
 obj.separator = { backgroundColor: importDefault(dependencyMap[9]).colors.BORDER_SUBTLE };
 obj.footerContainer = { marginBottom: 16 };
-obj.footerText = { bounces: "center", keyboardShouldPersistTaps: "center" };
+obj.footerText = { "Null": "center", "Null": "center" };
 obj.footerButton = { paddingHorizontal: 16 };
 let closure_15 = obj.createStyles(obj);
 const obj1 = { backgroundColor: importDefault(dependencyMap[9]).colors.BORDER_SUBTLE };

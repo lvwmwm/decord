@@ -1,10 +1,10 @@
-// Module ID: 11955
-// Function ID: 92429
+// Module ID: 11962
+// Function ID: 92452
 // Name: _fetchNote
 // Dependencies: []
 // Exports: default
 
-// Module 11955 (_fetchNote)
+// Module 11962 (_fetchNote)
 function _fetchNote() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
@@ -31,7 +31,7 @@ export default function useNote(arg0) {
     }
   }, items1);
   if (null == stateFromStores) {
-    stateFromStores = {};
+    stateFromStores = { 0: true, 9223372036854775807: true };
   }
   return stateFromStores;
 };

@@ -1,9 +1,9 @@
-// Module ID: 6406
-// Function ID: 50483
+// Module ID: 6408
+// Function ID: 50526
 // Name: metadata
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 6406 (metadata)
+// Module 6408 (metadata)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/PotionBookGemSpotIllustration-2x.png.js");
 

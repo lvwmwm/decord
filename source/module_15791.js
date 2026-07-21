@@ -1,33 +1,20 @@
 // Module ID: 15791
-// Function ID: 120823
+// Function ID: 120831
 // Dependencies: []
 
 // Module 15791
 globalThis.IntlMessageFormat.__addLocaleData({
-  locale: "it",
+  locale: "el",
   pluralRuleFunction(arg0, arg1) {
-    String(arg0);
-    if (arg1) {
-      if (11 != arg0) {
-        if (8 != arg0) {
-          if (80 != arg0) {
-            let str3 = "other";
-          }
-          let str2 = str3;
-        }
-      }
-      str3 = "many";
-    } else {
-      str2 = "other";
+    let str = "other";
+    let str2 = "other";
+    if (!arg1) {
       if (1 == arg0) {
-        str2 = "other";
-        if (tmp2) {
-          str2 = "one";
-        }
+        str = "one";
       }
+      str2 = str;
     }
     return str2;
   }
 });
-globalThis.IntlMessageFormat.__addLocaleData({ "Bool(true)": "onBeforeJumpToMessage", "Bool(true)": "EXPRESSIVE_INTRO" });
-globalThis.IntlMessageFormat.__addLocaleData({ "Bool(true)": true, "Bool(true)": true });
+globalThis.IntlMessageFormat.__addLocaleData({ -582979962: "Select User to Login As", 930166098: true });

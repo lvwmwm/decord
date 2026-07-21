@@ -1,9 +1,9 @@
 // Module ID: 0
 // Function ID: 81
-// Name: result
+// Name: __exportStarResult1
 // Dependencies: []
 
-// Module 0 (result)
+// Module 0 (__exportStarResult1)
 function registerHeadlessTask(BackgroundSync, arg1) {
   const require = BackgroundSync;
   const dependencyMap = arg1;

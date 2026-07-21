@@ -1,10 +1,10 @@
-// Module ID: 12186
-// Function ID: 93681
+// Module ID: 12193
+// Function ID: 93704
 // Name: getJoinFromSupportedPlatformsIconKeys
 // Dependencies: []
 // Exports: useJoinFromSupportedPlatformsIconKeys
 
-// Module 12186 (getJoinFromSupportedPlatformsIconKeys)
+// Module 12193 (getJoinFromSupportedPlatformsIconKeys)
 function getJoinFromSupportedPlatformsIconKeys(isGameLaunchable) {
   let currentPlatform;
   let platforms;

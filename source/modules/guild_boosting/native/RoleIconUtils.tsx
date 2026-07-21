@@ -1,10 +1,10 @@
-// Module ID: 5484
-// Function ID: 46765
+// Module ID: 5486
+// Function ID: 46807
 // Name: useRoleIcon
 // Dependencies: []
 // Exports: getRoleIcon, useRoleIcon
 
-// Module 5484 (useRoleIcon)
+// Module 5486 (useRoleIcon)
 let closure_3 = importAll(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 let closure_5 = importDefault(dependencyMap[2]);

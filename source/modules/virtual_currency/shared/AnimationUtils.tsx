@@ -1,10 +1,10 @@
-// Module ID: 9783
-// Function ID: 76034
+// Module ID: 9788
+// Function ID: 76050
 // Name: EXPECTED_ORB_LOTTIE_ANIMATION_DURATION_MS
-// Dependencies: []
+// Dependencies: [284214097]
 // Exports: getDesiredAnimationConfigs
 
-// Module 9783 (EXPECTED_ORB_LOTTIE_ANIMATION_DURATION_MS)
+// Module 9788 (EXPECTED_ORB_LOTTIE_ANIMATION_DURATION_MS)
 const obj = {};
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("modules/virtual_currency/shared/AnimationUtils.tsx");

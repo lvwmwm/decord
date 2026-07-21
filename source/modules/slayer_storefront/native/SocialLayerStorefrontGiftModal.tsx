@@ -1,10 +1,10 @@
-// Module ID: 9733
-// Function ID: 75717
+// Module ID: 9738
+// Function ID: 75734
 // Name: SocialLayerStorefrontGiftModal
 // Dependencies: []
 // Exports: default
 
-// Module 9733 (SocialLayerStorefrontGiftModal)
+// Module 9738 (SocialLayerStorefrontGiftModal)
 importAll(dependencyMap[0]);
 let closure_3 = importDefault(dependencyMap[1]);
 ({ AnalyticEvents: closure_4, PaymentGateways: closure_5 } = arg1(dependencyMap[2]));

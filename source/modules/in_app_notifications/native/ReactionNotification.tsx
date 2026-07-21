@@ -1,10 +1,10 @@
-// Module ID: 10317
-// Function ID: 79669
+// Module ID: 10323
+// Function ID: 79688
 // Name: ReactorNotificationIcon
 // Dependencies: []
 // Exports: default
 
-// Module 10317 (ReactorNotificationIcon)
+// Module 10323 (ReactorNotificationIcon)
 function ReactorNotificationIcon(isMilestone) {
   let guild;
   let user;
@@ -39,7 +39,7 @@ const tmp2 = arg1(dependencyMap[3]);
 const tmp4 = arg1(dependencyMap[6]).AVATAR_SIZE_MAP[arg1(undefined, dependencyMap[6]).AvatarSizes.NORMAL];
 let obj = arg1(dependencyMap[7]);
 obj = { newContainerRoleDot: {}, container: { flexDirection: "column" }, textEmoji: { fontSize: 12 } };
-obj = { <string:1140607356>: "<string:16777479>", <string:1751293292>: "<string:36295491>" };
+obj = {};
 let obj3 = arg1(dependencyMap[8]);
 let tmp5;
 if (!obj3.isIOS()) {
@@ -68,7 +68,7 @@ obj.italic = obj3;
 let closure_12 = obj.createStyles(obj);
 const obj9 = arg1(dependencyMap[8]);
 const obj4 = {};
-const obj5 = { ONE_DAY: false, maxWidth: false, useInappropriateConversationBannerForChannel: false, backgroundColor: importDefault(dependencyMap[9]).colors.BACKGROUND_BRAND, width: tmp4, height: tmp4, borderRadius: tmp4 / 2 };
+const obj5 = { 1660945536: false, 1700178636: false, 1934451533: false, backgroundColor: importDefault(dependencyMap[9]).colors.BACKGROUND_BRAND, width: tmp4, height: tmp4, borderRadius: tmp4 / 2 };
 obj4.clydeNotificationIcon = obj5;
 let closure_13 = arg1(dependencyMap[7]).createStyles(obj4);
 const obj10 = arg1(dependencyMap[7]);
@@ -82,7 +82,9 @@ export default function ReactionNotification(notification) {
   let id;
   let ChannelTypes;
   let message;
-  let userAuthor;
+  let result;
+  let tmp4;
+  let callback2;
   const tmp = callback2();
   const importDefault = tmp;
   const AnimateEmoji = arg1(dependencyMap[12]).AnimateEmoji;
@@ -104,14 +106,14 @@ export default function ReactionNotification(notification) {
   }
   id = channel.id;
   ChannelTypes = id;
-  let tmp4 = channel.type === ChannelTypes.GUILD_ANNOUNCEMENT;
+  tmp4 = channel.type === ChannelTypes.GUILD_ANNOUNCEMENT;
   message = notification.message;
   let obj = arg1(dependencyMap[13]);
   let type;
   if (null != channel) {
     type = channel.type;
   }
-  const result = obj.isReactionMilestoneNotification(message.reactions, type);
+  result = obj.isReactionMilestoneNotification(message.reactions, type);
   const items = [setting, reaction, , , ];
   ({ imageEmoji: arr[2], textEmoji: arr[3], italic: arr[4] } = tmp);
   const callback = React.useCallback(() => {
@@ -183,7 +185,7 @@ export default function ReactionNotification(notification) {
   if (tmp4) {
     tmp4 = 1 !== memo;
   }
-  userAuthor = null;
+  let userAuthor = null;
   if (!tmp4) {
     userAuthor = null;
     if (!result) {
@@ -191,6 +193,7 @@ export default function ReactionNotification(notification) {
       userAuthor = obj1.getUserAuthor(user, channel);
     }
   }
+  callback2 = userAuthor;
   let obj2 = arg1(dependencyMap[20]);
   const items2 = [closure_5];
   let colorString;
@@ -216,8 +219,11 @@ export default function ReactionNotification(notification) {
       const tmp16 = message;
     }
   }
-  const items3 = [channel, parentChannel, guild, userAuthor];
-  const memo1 = React.useMemo(() => ({ type: "message", channel, parentChannel, guild, author: userAuthor }), items3);
+  const items3 = [channel, parentChannel, guild, userAuthor, tmp4, result];
+  const memo1 = React.useMemo(() => {
+    const obj = { type: "message", channel, parentChannel, guild, author: userAuthor, locationTextColor: str };
+    return obj;
+  }, items3);
   let obj4 = arg1(dependencyMap[8]);
   let str2 = "text-md/medium";
   if (obj4.isIOS()) {
@@ -257,8 +263,8 @@ export default function ReactionNotification(notification) {
     const intl = arg1(dependencyMap[21]).intl;
     const obj8 = { emojiHook: callback };
     formatResult = intl.format(arg1(dependencyMap[21]).t.ZOzpKt, obj8);
-    const tmp22 = closure_11;
-    const tmp23 = userAuthor;
+    const tmp22 = tmp4;
+    const tmp23 = result;
     const tmp24 = message;
   }
   const items6 = [channel.id, id, id, message.id, , ];
@@ -274,7 +280,7 @@ export default function ReactionNotification(notification) {
     const obj4 = notification(setting[24]);
     tmp(setting[25]).clearNotification();
   }, items6);
-  const callback2 = React.useCallback(() => {
+  callback2 = React.useCallback(() => {
     let obj = tmp(setting[23]);
     obj = { channelId: id };
     return obj.pushLazy(notification(setting[27])(setting[26], setting.paths), obj);

@@ -1,10 +1,10 @@
-// Module ID: 8707
-// Function ID: 68915
+// Module ID: 8711
+// Function ID: 68927
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 // Exports: createOrbProfileBadge, filterGPlaySyncedCategories, filterHiddenCategories, getCollectibleGoogleSkuId, getFormattedPriceForCollectiblesProduct
 
-// Module 8707 (_createForOfIteratorHelperLoose)
+// Module 8711 (_createForOfIteratorHelperLoose)
 function _createForOfIteratorHelperLoose(@@iterator) {
   let require = Symbol_iterator;
   @@iterator = "undefined" !== typeof Symbol;

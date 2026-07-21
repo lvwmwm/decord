@@ -122,7 +122,7 @@ const importDefaultResult = importDefault(dependencyMap[0]);
 const subscription = importDefault(dependencyMap[7]).subscribe("USER_SETTINGS_PROTO_UPDATE", syncHourCycleToIntlConfig);
 const importDefaultResult2 = importDefault(dependencyMap[7]);
 const subscription1 = importDefault(dependencyMap[7]).subscribe("CONNECTION_OPEN", syncHourCycleToIntlConfig);
-const items = [{}, {}, {}, {}];
+const items = [{}, {}, {}, { "Bool(false)": true, "Bool(false)": true }];
 const importDefaultResult3 = importDefault(dependencyMap[7]);
 const result = arg1(dependencyMap[10]).fileFinishedImporting("utils/DateUtils.tsx");
 
@@ -235,7 +235,7 @@ export const diffAsUnits = function diffAsUnits(date, expiresAt) {
   }
   expiresAt = undefined;
   let closure_1;
-  const obj = {};
+  const obj = { -1033416039: "spring", -127810955: "linear", 1634440273: "easeInEaseOut" };
   let num = 0;
   if (flag) {
     num = 1;

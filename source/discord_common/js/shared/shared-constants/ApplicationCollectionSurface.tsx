@@ -1,9 +1,9 @@
-// Module ID: 11180
-// Function ID: 87048
+// Module ID: 11186
+// Function ID: 87071
 // Name: ApplicationCollectionSurface
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 11180 (ApplicationCollectionSurface)
+// Module 11186 (ApplicationCollectionSurface)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_common/js/shared/shared-constants/ApplicationCollectionSurface.tsx");
 

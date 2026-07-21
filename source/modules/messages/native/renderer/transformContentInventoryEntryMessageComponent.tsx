@@ -1,10 +1,10 @@
-// Module ID: 7798
-// Function ID: 62233
+// Module ID: 7802
+// Function ID: 62245
 // Name: getMissingIconURL
 // Dependencies: []
 // Exports: transformToRowGeneratedContentInventoryEntryComponent
 
-// Module 7798 (getMissingIconURL)
+// Module 7802 (getMissingIconURL)
 function getMissingIconURL() {
   return Image.resolveAssetSource(importDefault(dependencyMap[8])).uri;
 }
@@ -42,7 +42,7 @@ let closure_4 = importDefault(dependencyMap[1]);
 let closure_5 = importDefault(dependencyMap[2]);
 let closure_6 = importDefault(dependencyMap[3]);
 const ImageSizes = require(dependencyMap[4]).ImageSizes;
-const items = [{ "Bool(true)": 167119349, "Bool(true)": 167119350, "Bool(true)": 167119350, "Bool(true)": -13959178 }, { "Bool(true)": 167119349, "Bool(true)": 167119350, "Bool(true)": 167119350, "Bool(true)": -13959178 }];
+const items = [{ EXPLICIT_MEDIA_MESSAGE_SEND_BLOCKED: 570425343, canManageWebhooks: 35190849, canManageGuild: 666194432, markPotentialBadState: 672213460 }, { EXPLICIT_MEDIA_MESSAGE_SEND_BLOCKED: 570425343, canManageWebhooks: 35190849, canManageGuild: 666194432, markPotentialBadState: 672213460 }];
 const _module = require(dependencyMap[22]);
 const result = _module.fileFinishedImporting("modules/messages/native/renderer/transformContentInventoryEntryMessageComponent.tsx");
 

@@ -1,9 +1,9 @@
-// Module ID: 13274
-// Function ID: 100841
+// Module ID: 13281
+// Function ID: 100864
 // Name: Activity
 // Dependencies: []
 
-// Module 13274 (Activity)
+// Module 13281 (Activity)
 let obj = {
   request: undefined,
   response(string) {

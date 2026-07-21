@@ -1,10 +1,10 @@
-// Module ID: 15474
-// Function ID: 118116
+// Module ID: 15481
+// Function ID: 118140
 // Name: AppIconsCoachmarkActionSheet
 // Dependencies: []
 // Exports: default
 
-// Module 15474 (AppIconsCoachmarkActionSheet)
+// Module 15481 (AppIconsCoachmarkActionSheet)
 let closure_3 = importAll(dependencyMap[0]);
 ({ Image: closure_4, View: closure_5 } = arg1(dependencyMap[1]));
 let closure_6 = importDefault(dependencyMap[2]);
@@ -16,10 +16,10 @@ obj = {};
 obj = { padding: importDefault(dependencyMap[6]).space.PX_16, paddingBottom: 0 };
 obj.container = obj;
 obj.info = { alignItems: "center" };
-obj.image = {};
+obj.image = { "Bool(false)": null, "Bool(false)": null };
 obj.nitroWheel = { marginRight: 8 };
-obj.titleContainer = { "Bool(true)": 8, "Bool(true)": null, "Bool(true)": "\u270A\u{1F3FF}" };
-obj.subtitle = { accessible: null, id: null };
+obj.titleContainer = {};
+obj.subtitle = { "Null": null, "Null": null };
 const tmp3 = arg1(dependencyMap[4]);
 obj.footer = { marginTop: 20, gap: importDefault(dependencyMap[6]).space.PX_8 };
 let closure_10 = obj.createStyles(obj);

@@ -72,7 +72,7 @@ Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 export const reactRouterV3BrowserTracingIntegration = function reactRouterV3BrowserTracingIntegration(instrumentNavigation) {
   let instrumentPageLoad;
   let obj = require(dependencyMap[1]);
-  const result = obj.browserTracingIntegration(Object.assign({}, instrumentNavigation, {}));
+  const result = obj.browserTracingIntegration(Object.assign({}, instrumentNavigation, { isArray: null, scales: null }));
   const require = result;
   ({ history: closure_1, routes: closure_2, match: closure_3, instrumentPageLoad } = instrumentNavigation);
   let closure_4 = undefined === instrumentPageLoad || instrumentPageLoad;

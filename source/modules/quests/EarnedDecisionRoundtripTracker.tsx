@@ -1,9 +1,9 @@
-// Module ID: 9445
-// Function ID: 73603
+// Module ID: 9449
+// Function ID: 73617
 // Name: trackRoundtrip
-// Dependencies: [31, 4113, 4195, 653, 6920, 6969, 9463, 5642, 4117]
+// Dependencies: [31, 4113, 4199, 653, 6924, 6973, 9467, 5644, 4117]
 
-// Module 9445 (trackRoundtrip)
+// Module 9449 (trackRoundtrip)
 import module_31 from "module_31";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
@@ -53,8 +53,9 @@ let tmp2 = () => {
     key: "recordEarnedRequestAttempt",
     value(arg0, callerSource) {
       const EarnedDecisionRoundtripTracker = this;
+      const obj = { isBlockedEdit: "Text", allowHeading: "raw", allowList: "textAlign", allowLinks: "r", t2Wbo1: "isArray", dateTimeString: "accessibilityRole", EXPERIMENT_GUILD_EVALUATION_EXPOSED: "apply", initialSendTimestamp: Date.now(), callerSource };
       const pendingRequests = this.pendingRequests;
-      const result = pendingRequests.set(arg0, { initialSendTimestamp: Date.now(), callerSource });
+      const result = pendingRequests.set(arg0, obj);
       const timerId = setTimeout(() => {
         const pendingRequests = self.pendingRequests;
         const value = pendingRequests.get(arg0);

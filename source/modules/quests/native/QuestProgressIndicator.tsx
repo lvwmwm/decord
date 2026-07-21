@@ -1,9 +1,9 @@
-// Module ID: 13896
-// Function ID: 105130
+// Module ID: 13903
+// Function ID: 105153
 // Name: QUEST_PROGRESS_DIAMETER_BY_SIZE
 // Dependencies: []
 
-// Module 13896 (QUEST_PROGRESS_DIAMETER_BY_SIZE)
+// Module 13903 (QUEST_PROGRESS_DIAMETER_BY_SIZE)
 const _module = require(dependencyMap[0]);
 ({ useMemo: closure_3, useEffect: closure_4, useRef: closure_5 } = _module);
 const importDefaultResult = importDefault(dependencyMap[0]);
@@ -16,14 +16,14 @@ let closure_12 = importDefault(dependencyMap[4]).createAnimatedComponent(require
 const obj = {};
 const _module2 = require(dependencyMap[6]);
 let closure_14 = _module2.createStyles((arg0) => {
-  let obj = { wrapper: { position: "relative" }, container: { st: null, marginTop: "LoginStates", marginRight: "defineIntegration", borderColor: "Array", borderStyle: "isArray" }, completionGlow: { shadowOffset: { aze: false, azj: true } }, canvas: { transform: items } };
+  let obj = { wrapper: { position: "relative" }, container: {}, completionGlow: { shadowOffset: { bhk: -536870861, bic: -299892737 } }, canvas: { transform: items } };
   const items = [{ rotate: "-90deg" }];
   obj = { position: "absolute", height: 0.78 * arg0, width: 0.78 * arg0, borderRadius: importDefault(dependencyMap[7]).radii.round, overflow: "hidden" };
   obj.imageContainer = obj;
   obj = { color: importDefault(dependencyMap[7]).colors.STATUS_POSITIVE };
   obj.progressPath = obj;
   obj.confetti = {};
-  const obj1 = { 9223372036854775807: 0, 0: null, 9223372036854775807: 67, 0: 95, 0: 67, -9223372036854775808: 0, -9223372036854775808: 0, backgroundColor: importDefault(dependencyMap[7]).colors.CARD_BACKGROUND_DEFAULT };
+  const obj1 = { GUILD_TOP_READ_CHANNELS: 0, PARTY: null, paddingVertical: 67, identityErrorMessage: 95, CHANNEL_DETAILS_TOP_MARGIN: 67, OPTION_7: 0, marginVertical: 0, backgroundColor: importDefault(dependencyMap[7]).colors.CARD_BACKGROUND_DEFAULT };
   obj.opacityMask = obj1;
   return obj;
 });
@@ -66,7 +66,7 @@ export default importDefaultResult.memo(function QuestProgressIndicator(loading)
   const items = [closure_8];
   const stateFromStores = obj.useStateFromStores(items, () => sharedValue1.useReducedMotion);
   dependencyMap = stateFromStores;
-  const tmp2 = {}[size];
+  const tmp2 = { 1656663739: "takenAt", 1565683566: "handleJoinThreadVoice", 1634754160: "Boolean", -1446817374: "isArray", 1384223330: "IncomingFriendRequestRow" }[size];
   tmp3 = obj[size];
   tmp4 = {}[size];
   const diff = tmp3 / 2 - tmp2 / 2;
@@ -189,11 +189,10 @@ export default importDefaultResult.memo(function QuestProgressIndicator(loading)
     obj = { onPress };
   }
   const merged = Object.assign(obj);
-  obj1 = { freq: "default", pacsize: "done", channels: "go" };
+  obj1 = { style: items5 };
   const items5 = [, , ];
   ({ wrapper: arr6[0], completionGlow: arr6[1] } = tmp7);
   items5[2] = animatedStyle;
-  obj1.style = items5;
   let formatToPlainStringResult = accessibilityLabel;
   if (null == accessibilityLabel) {
     const intl = require(dependencyMap[11]).intl;
@@ -206,7 +205,7 @@ export default importDefaultResult.memo(function QuestProgressIndicator(loading)
   obj3 = { style: tmp7.container };
   obj4 = { height: tmp3, width: tmp3, style: tmp7.canvas };
   obj5 = {};
-  obj6 = {};
+  obj6 = { type: "/assets/design/components/Icon/native/redesign/generated/images", body: 24, 9223372036854775807: 24, 0: null, 0: "ffb75c82f97e39285286ef89f1767a3c" };
   const items7 = [tmp11(require(dependencyMap[5]).Stop, { offset: "0", stopColor: closure_11[0] }), tmp11(require(dependencyMap[5]).Stop, { offset: "1", stopColor: closure_11[1] })];
   obj6.children = items7;
   obj5.children = sharedValue2(require(dependencyMap[5]).LinearGradient, obj6);

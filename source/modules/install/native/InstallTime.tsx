@@ -1,10 +1,10 @@
-// Module ID: 12497
-// Function ID: 95786
+// Module ID: 12504
+// Function ID: 95809
 // Name: getFirstInstallTimeMillis
 // Dependencies: []
 // Exports: getFirstInstallTimeElapsed
 
-// Module 12497 (getFirstInstallTimeMillis)
+// Module 12504 (getFirstInstallTimeMillis)
 function getFirstInstallTimeMillis(arg0) {
   const firstInstallTimeMillis = importDefault(dependencyMap[2]).getFirstInstallTimeMillis();
   let str = "InstallTimeLaunch";

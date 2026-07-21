@@ -1,18 +1,18 @@
-// Module ID: 12806
-// Function ID: 98088
+// Module ID: 12813
+// Function ID: 98111
 // Name: items
 // Dependencies: []
 // Exports: GuildBadgeFlower
 
-// Module 12806 (items)
+// Module 12813 (items)
 importAll(dependencyMap[0]);
 ({ jsx: closure_2, jsxs: closure_3 } = arg1(dependencyMap[1]));
 let closure_4 = [true, true, true];
-let closure_5 = ["r", "recreateOrder", "ng"];
+let closure_5 = ["r", "giftCardAsset", "WISHLIST_ITEM_CLICKED"];
 let closure_6 = ["channelId", "channelId", "channelId"];
-const items = [{}, { GameplayAbstractUI: "<string:16777735>", cwd: "<string:37775937>" }, {}];
+const items = [{}, {}, {}];
 let closure_8 = [];
-const items1 = [{}, { GameplayAbstractUI: "<string:16777735>", cwd: "<string:37775937>" }, {}];
+const items1 = [{}, {}, {}];
 const tmp3 = arg1(dependencyMap[1]);
 const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/guild_tag/native/badges/GuildBadgeFlower.tsx");
 
@@ -29,7 +29,7 @@ export const GuildBadgeFlower = function GuildBadgeFlower(width) {
   if (num2 === undefined) {
     num2 = 24;
   }
-  let obj = { onValueChange: "r", step: "onRequireModeratorMFAClick", flexDirection: "Array", alignItems: "isSpamMessageRequest" };
+  let obj = { "Bool(true)": null, "Bool(true)": 4, "Bool(true)": 4, "Bool(true)": "rgba(0, 0, 0, 0.75)" };
   ({ primaryTintColor, secondaryTintColor } = width);
   Object.setPrototypeOf(null);
   const merged = Object.assign(width, obj);

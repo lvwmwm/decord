@@ -1,10 +1,10 @@
-// Module ID: 7687
-// Function ID: 61342
+// Module ID: 7691
+// Function ID: 61354
 // Name: createNewThreadSystemMessage
 // Dependencies: []
 // Exports: createNewThreadSystemMessage
 
-// Module 7687 (createNewThreadSystemMessage)
+// Module 7691 (createNewThreadSystemMessage)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 let closure_5 = importDefault(dependencyMap[2]);
@@ -30,7 +30,7 @@ export const createNewThreadSystemMessage = function createNewThreadSystemMessag
     content = message.content;
   }
   obj.threadName = content;
-  const obj1 = { "Bool(true)": "%NumberPrototype%", "Bool(true)": "isArrayBuffer", "Bool(true)": "fr-CF" };
+  const obj1 = {};
   const messageReference2 = message.messageReference;
   let channel_id1;
   if (null != messageReference2) {

@@ -1,10 +1,10 @@
-// Module ID: 5792
-// Function ID: 49475
+// Module ID: 5794
+// Function ID: 49518
 // Name: useGiftCardMobileConsumptionHalfsheet
 // Dependencies: []
 // Exports: useGiftCardMobileConsumptionHalfsheet
 
-// Module 5792 (useGiftCardMobileConsumptionHalfsheet)
+// Module 5794 (useGiftCardMobileConsumptionHalfsheet)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 let closure_5 = importDefault(dependencyMap[2]);

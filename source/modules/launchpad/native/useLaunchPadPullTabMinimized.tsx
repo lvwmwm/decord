@@ -1,10 +1,10 @@
-// Module ID: 15514
-// Function ID: 118399
+// Module ID: 15521
+// Function ID: 118423
 // Name: nativeEventEmitter
 // Dependencies: []
 // Exports: default
 
-// Module 15514 (nativeEventEmitter)
+// Module 15521 (nativeEventEmitter)
 let closure_2 = importAll(dependencyMap[0]);
 const tmp2 = arg1(dependencyMap[1]);
 const NativeEventEmitter = tmp2.NativeEventEmitter;

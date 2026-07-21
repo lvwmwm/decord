@@ -1,9 +1,9 @@
-// Module ID: 7129
-// Function ID: 57427
+// Module ID: 7133
+// Function ID: 57438
 // Name: _callSuper
 // Dependencies: []
 
-// Module 7129 (_callSuper)
+// Module 7133 (_callSuper)
 function _callSuper(arg0, arg1, arg2) {
   let items = arg2;
   const obj = callback2(arg1);
@@ -38,16 +38,16 @@ let tmp2 = (MessageType) => {
     constructor() {
       tmp = closure_3(this, MarketingPageBanner$Type);
       items = [, , , , , , , , ];
-      items[0] = { body: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002012870360051815, guildId: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003200674821102785, ao: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000030586585845, "": 2798595.4946969007 };
-      items[1] = { body: null, guildId: null, ao: null, "": null };
+      items[0] = {};
+      items[1] = { 9223372036854775807: 2417, 0: 487680, 9223372036854775807: 641859584, no: true };
       items[2] = {};
-      items[3] = { body: "rgba(0, 0, 0, 0.7)", guildId: 16, ao: "row", "": "center" };
-      obj = { emojiId: "filter_snapshot_name", emojiName: "scalar", userId: 9 };
+      items[3] = { 9223372036854775807: "rgba(0, 0, 0, 0.7)", 0: 16, 9223372036854775807: "row", no: "center" };
+      obj = { "Null": "filter_snapshot_name", "Null": "scalar", "Null": 9 };
       obj.T = function T() {
         return closure_9;
       };
       items[4] = obj;
-      obj = { emojiId: "#E6E6E7", emojiName: "OPACITY_BLUE_52", userId: 0.5215686274509804 };
+      obj = { "Null": "#E6E6E7", "Null": "OPACITY_BLUE_52", "Null": 0.5215686274509804 };
       obj.T = function T() {
         return callback(closure_1[6]).HelpArticle;
       };
@@ -64,11 +64,11 @@ let tmp2 = (MessageType) => {
       };
       items[8] = {
         T() {
-              const items = [true, closure_8, "MARKETING_PAGE_BANNER_BUTTON_VARIANT_"];
+              const items = ["containerStyle", closure_8, "MARKETING_PAGE_BANNER_BUTTON_VARIANT_"];
               return items;
             }
       };
-      items1 = ["Array"];
+      items1 = ["<string:1374118385>"];
       items1[1] = items;
       return closure_10(this, MarketingPageBanner$Type, items1);
     }
@@ -275,25 +275,25 @@ let tmp4 = (MessageType) => {
     constructor() {
       tmp = closure_3(this, MarketingPageBannerButton$Type);
       items = [, , , , ];
-      items[0] = { body: "YELLOW_NEW_72", guildId: 1, ao: "light_url", "": "scalar" };
+      items[0] = { 9223372036854775807: "YELLOW_NEW_72", 0: 1, 9223372036854775807: "light_url", no: "scalar" };
       items[1] = {
         T() {
-              const items = ["CANARY", callback(closure_1[9]).ButtonAction, "BUTTON_ACTION_"];
+              const items = [false, callback(closure_1[9]).ButtonAction, "BUTTON_ACTION_"];
               return items;
             }
       };
       items[2] = {};
-      obj = { emojiId: 0.25, emojiName: "PRIMARY_660", userId: 0.975 };
+      obj = { "Null": 0.975, "Null": "PRIMARY_230", "Null": 0.975 };
       obj.T = function T() {
         return callback(closure_1[7]).LocalizedString;
       };
       items[3] = obj;
-      obj = { emojiId: null, emojiName: null, userId: null };
+      obj = { "Null": 2417, "Null": -1854455552, "Null": 24182788 };
       obj.T = function T() {
         return callback(closure_1[10]).UInt64Value;
       };
       items[4] = obj;
-      items1 = [-0.000000000000615795030577119];
+      items1 = ["nativeConfig"];
       items1[1] = items;
       return closure_10(this, MarketingPageBannerButton$Type, items1);
     }
@@ -303,7 +303,7 @@ let tmp4 = (MessageType) => {
   let obj = {
     key: "create",
     value(arr) {
-      let obj = {};
+      let obj = { "Null": 24, "Null": 8, "Null": 3 };
       const _Object = Object;
       obj = { enumerable: false, value: this };
       _Object.defineProperty(obj, MarketingPageBannerButton$Type(closure_1[8]).MESSAGE_TYPE, obj);

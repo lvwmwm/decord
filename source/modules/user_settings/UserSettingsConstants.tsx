@@ -1,7 +1,7 @@
 // Module ID: 662
 // Function ID: 8025
 // Name: MAX_FAVORITES
-// Dependencies: []
+// Dependencies: [284214097]
 // Exports: createEmptyEditInfo
 
 // Module 662 (MAX_FAVORITES)
@@ -26,6 +26,6 @@ export const createEmptyEditInfo = function createEmptyEditInfo() {
 };
 export const UserSettingsPath = { ACCOUNT: "account", ACCOUNT_STANDING: "account-standing", ACCOUNT_ACCOUNT_STANDING: "account/account-standing", PROFILE_CUSTOMIZATION: "profile-customization", CONTENT_AND_SOCIAL: "content-and-social", CONNECTED_GAMES: "connected-games", CONTENT_AND_SOCIAL_CONNECTED_GAMES: "content-and-social/connected-games", DATA_AND_PRIVACY: "data-and-privacy", PRIVACY_AND_SAFETY: "privacy-and-safety", FAMILY_CENTER: "family-center", SESSIONS: "sessions", AUTHORIZED_APPS: "authorized-apps", CONNECTIONS: "connections", CLIPS: "clips", PREMIUM: "premium", GUILD_BOOSTING: "guild-boosting", SUBSCRIPTIONS: "subscriptions", SUBSCRIPTIONS_ROLE_SUBSCRIPTIONS: "subscriptions/role-subscriptions", INVENTORY: "inventory", BILLING: "billing", APPEARANCE: "appearance", ACCESSIBILITY: "accessibility", VOICE: "voice", POGGERMODE: "poggermode", TEXT: "text", NOTIFICATIONS: "notifications", EMAILS: "emails", NOTIFICATIONS_EMAILS: "notifications/emails", KEYBINDS: "keybinds", LANGUAGE: "language", WINDOWS: "windows", LINUX: "linux", STREAMER_MODE: "streamer-mode", ADVANCED: "advanced", ACTIVITY_PRIVACY: "activity-privacy", REGISTERED_GAMES: "registered-games", OVERLAY: "overlay", EXPERIMENTS: "experiments", DEVELOPER_OPTIONS: "developer-options" };
 export const ChangeEmailSteps = { CONFIRM_START: 0, [0]: "CONFIRM_START", CONFIRM_CODE: 1, [1]: "CONFIRM_CODE", CHANGE_EMAIL_REASONS: 2, [2]: "CHANGE_EMAIL_REASONS", CHANGE_EMAIL_WARNING: 3, [3]: "CHANGE_EMAIL_WARNING", EMAIL_AND_PASSWORD: 4, [4]: "EMAIL_AND_PASSWORD", COMPLETE: 5, [5]: "COMPLETE" };
-export const ChannelNotificationSettingsFlags = {};
-export const GuildNotificationSettingsFlags = { 0: null, 3611: null, 0: null, 0: null };
+export const ChannelNotificationSettingsFlags = { ddd: "r", ind: "isArray", ty: "location", nm: "getCurrentUser", parent: "Array", sr: "isArray" };
+export const GuildNotificationSettingsFlags = { "Null": true, "Null": true, "Null": null, "Null": null };
 export const ProtoAudioSettingsContextTypes = { USER: "user", STREAM: "stream" };

@@ -1,10 +1,10 @@
-// Module ID: 14661
-// Function ID: 110582
+// Module ID: 14668
+// Function ID: 110604
 // Name: ChannelScreenAnimatedFrame
 // Dependencies: []
 // Exports: default
 
-// Module 14661 (ChannelScreenAnimatedFrame)
+// Module 14668 (ChannelScreenAnimatedFrame)
 let HEADER_CORNER_RADIUS;
 let MIDNIGHT_BORDER_WIDTH;
 importAll(dependencyMap[0]);
@@ -15,7 +15,7 @@ const tmp3 = arg1(dependencyMap[2]);
 ({ jsx: closure_5, jsxs: closure_6 } = arg1(dependencyMap[4]));
 let obj = arg1(dependencyMap[5]);
 obj = {};
-obj = { "Bool(true)": null, "Bool(true)": null, "Bool(true)": null, "Bool(true)": null, backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_BASE_LOW };
+obj = { backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_BASE_LOW };
 obj.container = obj;
 const tmp4 = arg1(dependencyMap[4]);
 obj.midnightContainer = { borderLeftColor: importDefault(dependencyMap[6]).colors.APP_FRAME_BORDER, borderLeftWidth: MIDNIGHT_BORDER_WIDTH };

@@ -62,7 +62,7 @@ const fn = function t(moment) {
       }
       return str;
     },
-    calendar: { alignItems: true, position: true, <string:1373947542>: true, <string:2681378794>: true, <string:1413374383>: true, <string:1720105976>: true },
+    calendar: {},
     dayOfMonthOrdinalParse: /\d{1,2}(日|月|周)/,
     ordinal(arg0, arg1) {
       if ("d" !== arg1) {
@@ -84,7 +84,7 @@ const fn = function t(moment) {
       return arg0 + "\u65E5";
     },
     relativeTime: {},
-    week: { "Bool(true)": false, "Bool(true)": false }
+    week: { <string:1431496722>: false, <string:1627556098>: false }
   });
 };
 if ("object" === typeof exports) {
@@ -96,7 +96,7 @@ if ("object" === typeof exports) {
 }
 if ("function" === typeof globalThis.define) {
   if (globalThis.define.amd) {
-    globalThis.define([1782644737], fn);
+    globalThis.define(["HH:mm:ss"], fn);
   }
 }
 fn(this.moment);

@@ -1,24 +1,22 @@
-// Module ID: 12596
-// Function ID: 96843
+// Module ID: 12603
+// Function ID: 96866
 // Name: id
-// Dependencies: [0, 4294967295, 0, 4294967295, 0, 0, 0, 0, 0]
+// Dependencies: []
 // Exports: default
 
-// Module 12596 (id)
-import closure_3 from "result";
-import closure_5 from "result";
-import result from "result";
-import { ParticipantTypes } from "result";
-import result from "result";
-
+// Module 12603 (id)
+let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
+let closure_5 = importDefault(dependencyMap[2]);
 let closure_6 = importDefault(dependencyMap[3]);
-({ EMPTY_STRING_SNOWFLAKE_ID: closure_7, RTCConnectionStates: closure_8 } = result);
+({ EMPTY_STRING_SNOWFLAKE_ID: closure_7, RTCConnectionStates: closure_8 } = arg1(dependencyMap[4]));
+const ParticipantTypes = arg1(dependencyMap[5]).ParticipantTypes;
 let obj = {};
 obj = { initialized: false, callId: undefined };
 const merged = Object.assign(obj);
 obj = { DISCONNECTED: "disconneted", DISCONNECTING: "disconnecting", CONNECTING: "connecting", RINGING: "ringing", CONNECTED: "connected" };
-result = result.fileFinishedImporting("modules/voice_calls/native/CallStateHooks.tsx");
+const tmp2 = arg1(dependencyMap[4]);
+const result = arg1(dependencyMap[8]).fileFinishedImporting("modules/voice_calls/native/CallStateHooks.tsx");
 
 export default function _default() {
   let tmp = arg0;

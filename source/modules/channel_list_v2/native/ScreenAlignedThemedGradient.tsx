@@ -1,10 +1,10 @@
-// Module ID: 14930
-// Function ID: 112434
+// Module ID: 14937
+// Function ID: 112458
 // Name: ScreenAlignedThemedGradient
 // Dependencies: []
 // Exports: default
 
-// Module 14930 (ScreenAlignedThemedGradient)
+// Module 14937 (ScreenAlignedThemedGradient)
 importAll(dependencyMap[0]);
 const StyleSheet = arg1(dependencyMap[1]).StyleSheet;
 const jsx = arg1(dependencyMap[2]).jsx;

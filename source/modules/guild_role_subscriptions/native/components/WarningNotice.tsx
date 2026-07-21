@@ -1,25 +1,25 @@
-// Module ID: 16238
-// Function ID: 125479
+// Module ID: 16245
+// Function ID: 125510
 // Name: WarningNotice
 // Dependencies: []
 // Exports: default
 
-// Module 16238 (WarningNotice)
+// Module 16245 (WarningNotice)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 ({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[2]));
 let obj = arg1(dependencyMap[3]);
 obj = {};
-obj = { borderRadius: importDefault(dependencyMap[4]).radii.xs };
+obj = { "Null": false, "Null": false, "Null": false, borderRadius: importDefault(dependencyMap[4]).radii.xs };
 obj.container = obj;
-obj.horizontalContainer = { -9223372036854775808: true, filter: true };
+obj.horizontalContainer = {};
 obj.message = {};
 obj.actionButtonWrapper = {};
 const tmp3 = arg1(dependencyMap[2]);
 obj.containerYellow = { backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_FEEDBACK_WARNING, borderColor: importDefault(dependencyMap[4]).colors.STATUS_WARNING };
 const obj1 = { backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_FEEDBACK_WARNING, borderColor: importDefault(dependencyMap[4]).colors.STATUS_WARNING };
 obj.textYellow = { color: importDefault(dependencyMap[4]).colors.TEXT_FEEDBACK_WARNING };
-obj.alertIcon = { "Bool(true)": "sEAnVH", "Bool(true)": "__closure", "Bool(true)": "isArray" };
+obj.alertIcon = { <string:1641826129>: "r", <string:1053250041>: "isArray", <string:1399449442>: "accessibilityRole" };
 let closure_6 = obj.createStyles(obj);
 const obj2 = { color: importDefault(dependencyMap[4]).colors.TEXT_FEEDBACK_WARNING };
 const result = arg1(dependencyMap[9]).fileFinishedImporting("modules/guild_role_subscriptions/native/components/WarningNotice.tsx");

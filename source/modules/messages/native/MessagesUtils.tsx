@@ -1,10 +1,10 @@
-// Module ID: 9300
-// Function ID: 72676
+// Module ID: 9304
+// Function ID: 72690
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 // Exports: canAddNewReactions, clearRows, findMessageIndex, findMessageIndexInRows, getChatRef, getLongPressSelectedMedia, getVoiceChannelIdChangedAuthorIds, getVoiceStateChannelSummaryFromVoiceStates, handleAddOrRemoveReaction, handleCopyLinkForumPost, handleFirstLayout, handleLongPressSticker, handleMediaPlayFinishedAnalytics, handleMessageVisibilityChanged, handleTapNavBar, handleTapTableView, handleToggleFollowForumPost, handleVisibleMessagesChange, isLoadingAtTop, jumpToPresent, loadMoreAfter, loadMoreBefore, scrollToBottom, scrollToMessageIdWithRescroll, scrollToNewMessages, scrollToRelativeOffset, scrollToTop, scrollToTopMessage, shouldJumpToOriginalPost, startOrCancelChannelLatestMessagesLoad, syncMessageDisplay, toObscuredMedia
 
-// Module 9300 (_createForOfIteratorHelperLoose)
+// Module 9304 (_createForOfIteratorHelperLoose)
 function _createForOfIteratorHelperLoose(@@iterator) {
   let arg1 = Symbol_iterator;
   @@iterator = "undefined" !== typeof Symbol;
@@ -411,7 +411,7 @@ export const toObscuredMedia = function toObscuredMedia(sourceType) {
   }
   return tmp;
 };
-export const handleAddOrRemoveReaction = function handleAddOrRemoveReaction(id, channel, reaction, isBurst, MESSAGE) {
+export const handleAddOrRemoveReaction = function handleAddOrRemoveReaction(messageId, channel, reaction, isBurst, MESSAGE) {
   let flag = isBurst;
   if (isBurst === undefined) {
     flag = false;
@@ -422,7 +422,7 @@ export const handleAddOrRemoveReaction = function handleAddOrRemoveReaction(id, 
   const guildId = channel.getGuildId();
   const currentUser = currentUser.getCurrentUser();
   if (null != currentUser) {
-    id = currentUser.id;
+    const id = currentUser.id;
   }
   let canChatInGuildResult = null != guildId;
   if (canChatInGuildResult) {
@@ -473,7 +473,7 @@ export const handleAddOrRemoveReaction = function handleAddOrRemoveReaction(id, 
           if (!result1) {
             const obj7 = channel(dependencyMap[18]);
             const obj = { burst: flag };
-            obj7.addReaction(channel.id, id, reaction.emoji, MESSAGE, obj);
+            obj7.addReaction(channel.id, messageId, reaction.emoji, MESSAGE, obj);
             if (!flag) {
               const result2 = channel(dependencyMap[26]).triggerHapticFeedback(importDefault(dependencyMap[27]).IMPACT_LIGHT);
               const obj9 = channel(dependencyMap[26]);
@@ -490,14 +490,14 @@ export const handleAddOrRemoveReaction = function handleAddOrRemoveReaction(id, 
     }
     const result3 = channel(dependencyMap[26]).triggerHapticFeedback(importDefault(dependencyMap[27]).IMPACT_LIGHT);
     const obj10 = channel(dependencyMap[26]);
-    obj1 = { channelId: channel.id, messageId: id, emoji: reaction.emoji, location: MESSAGE };
+    obj1 = { channelId: channel.id, messageId, emoji: reaction.emoji, location: MESSAGE };
     let obj2 = { burst: flag };
     obj1.options = obj2;
     channel(dependencyMap[18]).removeReaction(obj1);
   } else {
     obj2 = channel(dependencyMap[24]);
     const obj3 = { burst: flag };
-    const result4 = obj2.handleAddNewReactions(channel, id, MESSAGE, obj3);
+    const result4 = obj2.handleAddNewReactions(channel, messageId, MESSAGE, obj3);
   }
 };
 export const handleToggleFollowForumPost = function handleToggleFollowForumPost(channel, closure_21) {
@@ -711,8 +711,7 @@ export const loadMoreAfter = function loadMoreAfter(channelId, hasMoreAfter) {
   }
 };
 export const clearRows = function clearRows(current, clear) {
-  const obj = { sr: null, ks: null, ao: null, w: null, h: null, ip: null, op: null, st: null, bm: null, ddd: null, ind: null, pendingUpdatesQueue: [] };
-  arg4(obj);
+  arg4({ pendingUpdatesQueue: [] });
   clear.clear();
   callback2(arg2, arg3, false);
   importDefault(dependencyMap[42]).clearRows(current.current);

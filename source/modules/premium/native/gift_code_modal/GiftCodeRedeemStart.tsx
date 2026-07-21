@@ -1,10 +1,10 @@
-// Module ID: 8187
-// Function ID: 64751
+// Module ID: 8191
+// Function ID: 64763
 // Name: getGiftCodeHeaderText
 // Dependencies: []
 // Exports: default
 
-// Module 8187 (getGiftCodeHeaderText)
+// Module 8191 (getGiftCodeHeaderText)
 function getGiftCodeHeaderText(isSubscription) {
   let isBundle;
   let itemType;
@@ -275,21 +275,21 @@ const tmp3 = arg1(dependencyMap[5]);
 ({ jsx: closure_12, jsxs: closure_13 } = arg1(dependencyMap[6]));
 let obj = arg1(dependencyMap[12]);
 obj = {};
-obj = { -9223372036854775808: 0.129, 0: 1, backgroundColor: importDefault(dependencyMap[13]).colors.BACKGROUND_BASE_LOW };
+obj = { markAsSpoilerTitle: 0.129, keyboardAppearance: 1, backgroundColor: importDefault(dependencyMap[13]).colors.BACKGROUND_BASE_LOW };
 obj.container = obj;
-obj.body = { "Bool(true)": 1.75, "Bool(true)": "gr", "Bool(true)": null, "Bool(true)": "Ship Glass" };
+obj.body = { wideBannerAnimatedUrl: 1.75, EMPTY_SCHEDULE_SNAPSHOT: "gr", disableControlsUpdate: null, <string:1459331288>: "Ship Glass" };
 obj.bodyWithMessage = { flex: 0 };
 obj.nameplateContainer = { width: "100%" };
 obj.nameplateContainerOffCenter = { paddingBottom: 56 };
 obj.message = { gap: 8 };
-obj.text = { standardDeviation: 6, color: "focus_mode_expires_at_ms" };
+obj.text = { "Null": 6, "Null": "focus_mode_expires_at_ms" };
 obj.footer = {};
-obj.confettiBackground = { y: null, isArray: null, accessibilityRole: null, ddd: null, transform: null, __packager_asset: null, delete: null };
-obj.emojiContainer = {};
-obj.imageWrapper = { "Null": "Array", "Null": "DragIcon", "Null": "isArray", "Null": "DisplayNameFont" };
+obj.confettiBackground = { y: null, mutate: null, useQuestHowToHelpArticle: null, fetchSocialLayerStorefrontSku: null, y: null, fetchStaleChannels: null, y: null };
+obj.emojiContainer = { "Null": null, "Null": null };
+obj.imageWrapper = { <string:3334668292>: null, <string:3334799364>: "900d6a1aeefc6f4c571ad9d81203dc5c", <string:3334406148>: "img_nitro_classic_icon_80px", <string:3334537220>: "png" };
 obj.collectiblesAsset = { margin: 40 };
 obj.collectiblesAssetBundle = { margin: 20 };
-obj.giftCardAsset = { visible: 587202839, transparent: 1358954949 };
+obj.giftCardAsset = {};
 obj.linkAccountIcon = { marginRight: 4 };
 let closure_14 = obj.createStyles(obj);
 const tmp4 = arg1(dependencyMap[6]);
@@ -434,7 +434,7 @@ export default function GiftCodeRedeemStart(giftCode) {
   items8[1] = bodyWithMessage;
   obj2.contentContainerStyle = items8;
   obj2.alwaysBounceVertical = false;
-  obj3 = { style: tmp.text };
+  obj3 = { y: 1548812289, isArray: 186630151, split: -1224736477, ix: 2013266539, style: tmp.text };
   obj4 = { isSubscription: giftCode.isSubscription, subscriptionPlan: getOrFetchSubscriptionPlan, sender: str };
   let type1;
   if (null != first) {
@@ -467,7 +467,7 @@ export default function GiftCodeRedeemStart(giftCode) {
       items9[2] = tmp40Result;
       if (tmp54Result) {
         obj10 = { style: tmp.message };
-        const obj11 = { INTEGRATION_CREATE: "/assets/images/native/premium/illustrations", ConstraintReasonCode: 51, style: tmp.text };
+        const obj11 = { style: tmp.text };
         const intl = arg1(dependencyMap[9]).intl;
         const obj12 = { sender: str };
         obj11.children = intl.format(arg1(dependencyMap[9]).t.6yrIzU, obj12);

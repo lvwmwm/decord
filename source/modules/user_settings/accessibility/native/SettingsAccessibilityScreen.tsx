@@ -1,10 +1,10 @@
-// Module ID: 14085
-// Function ID: 106961
+// Module ID: 14092
+// Function ID: 106984
 // Name: getAccessibilitySettingScreen
 // Dependencies: []
 // Exports: default
 
-// Module 14085 (getAccessibilitySettingScreen)
+// Module 14092 (getAccessibilitySettingScreen)
 function getAccessibilitySettingScreen(arg0) {
   let animateEmojiOverrideReason;
   let animateStickersOverrideReason;

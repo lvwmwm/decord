@@ -1,10 +1,10 @@
-// Module ID: 5638
-// Function ID: 48173
+// Module ID: 5640
+// Function ID: 48215
 // Name: useGuildShopPreviewVisible
 // Dependencies: []
 // Exports: useGuildShopPreviewVisible
 
-// Module 5638 (useGuildShopPreviewVisible)
+// Module 5640 (useGuildShopPreviewVisible)
 let closure_2 = importDefault(dependencyMap[0]);
 ({ Permissions: closure_3, GuildFeatures: closure_4 } = arg1(dependencyMap[1]));
 const tmp2 = arg1(dependencyMap[1]);

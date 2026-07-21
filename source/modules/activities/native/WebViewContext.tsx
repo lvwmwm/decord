@@ -1,10 +1,10 @@
-// Module ID: 10590
-// Function ID: 82669
+// Module ID: 10596
+// Function ID: 82692
 // Name: context
 // Dependencies: []
 // Exports: WebViewContextProvider
 
-// Module 10590 (context)
+// Module 10596 (context)
 import context from "module_0";
 
 let closure_0 = importDefault(dependencyMap[0]);

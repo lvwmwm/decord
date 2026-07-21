@@ -1,10 +1,10 @@
-// Module ID: 11493
-// Function ID: 89582
+// Module ID: 11500
+// Function ID: 89606
 // Name: ProgressItem
 // Dependencies: []
 // Exports: default
 
-// Module 11493 (ProgressItem)
+// Module 11500 (ProgressItem)
 let closure_3 = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 const AnalyticEvents = arg1(dependencyMap[2]).AnalyticEvents;

@@ -1,10 +1,10 @@
-// Module ID: 4357
-// Function ID: 38606
+// Module ID: 4361
+// Function ID: 38654
 // Name: isMentioned
 // Dependencies: []
 // Exports: default, isRawMessageMentioned
 
-// Module 4357 (isMentioned)
+// Module 4361 (isMentioned)
 function isMentioned(suppressRoles) {
   let channelId;
   let mentionEveryone;

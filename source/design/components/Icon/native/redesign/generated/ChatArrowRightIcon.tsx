@@ -1,10 +1,10 @@
-// Module ID: 9912
-// Function ID: 76710
+// Module ID: 9917
+// Function ID: 76726
 // Name: ChatArrowRightIcon
 // Dependencies: []
 // Exports: ChatArrowRightIcon
 
-// Module 9912 (ChatArrowRightIcon)
+// Module 9917 (ChatArrowRightIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/ChatArrowRightIcon.tsx");

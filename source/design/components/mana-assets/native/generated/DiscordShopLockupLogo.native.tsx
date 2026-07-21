@@ -1,10 +1,10 @@
-// Module ID: 6001
-// Function ID: 49875
+// Module ID: 6003
+// Function ID: 49918
 // Name: DiscordShopLockupLogo
 // Dependencies: []
 // Exports: DiscordShopLockupLogo
 
-// Module 6001 (DiscordShopLockupLogo)
+// Module 6003 (DiscordShopLockupLogo)
 const Image = require(dependencyMap[0]).Image;
 const jsx = require(dependencyMap[1]).jsx;
 const _module = require(dependencyMap[5]);

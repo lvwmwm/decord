@@ -1,10 +1,10 @@
-// Module ID: 12879
-// Function ID: 98371
+// Module ID: 12886
+// Function ID: 98394
 // Name: OverflowSquircle
 // Dependencies: []
 // Exports: OverflowCircle, OverflowText, OverflowTextSmall, default
 
-// Module 12879 (OverflowSquircle)
+// Module 12886 (OverflowSquircle)
 function OverflowSquircle(arg0) {
   let overflow;
   let style;
@@ -22,11 +22,11 @@ importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 const jsx = arg1(dependencyMap[2]).jsx;
 let obj = arg1(dependencyMap[3]);
-obj = { container: { -9223372036854775808: true, filter: true }, iconWrapper: {} };
+obj = { container: {}, iconWrapper: {} };
 obj = { backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_BASE_LOW, borderRadius: importDefault(dependencyMap[4]).radii.md };
 obj.overflowSquircleWrap = obj;
-obj.overflowSquircle = { backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_BASE_LOWEST };
-const obj1 = { backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_BASE_LOWEST };
+const obj1 = { <string:636953811>: false, <string:3416038647>: false, <string:3466648803>: false, <string:502735736>: false, <string:1710209720>: false, <string:2684633671>: false, <string:1721979643>: false, backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_BASE_LOWEST };
+obj.overflowSquircle = obj1;
 obj.overflowTextOnly = { borderRadius: importDefault(dependencyMap[4]).radii.lg, backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_BASE_LOWEST };
 const obj2 = { borderRadius: importDefault(dependencyMap[4]).radii.lg, backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_BASE_LOWEST };
 obj.overflowCircleWrap = { backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_BASE_LOW, borderRadius: 17 };

@@ -1,10 +1,10 @@
-// Module ID: 9965
-// Function ID: 77033
+// Module ID: 9971
+// Function ID: 77051
 // Name: setIndex
 // Dependencies: []
 // Exports: clearRecentChannels, getActiveAgoTimestamp, getFirstRouteFor, useChannelBrowserChannelCount, useChannelBrowserSections, useFilterCategoriesByQuery
 
-// Module 9965 (setIndex)
+// Module 9971 (setIndex)
 function setIndex(arg0, index) {
   arg0.index = index;
 }

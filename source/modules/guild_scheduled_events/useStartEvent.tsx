@@ -1,10 +1,10 @@
-// Module ID: 8459
-// Function ID: 67489
+// Module ID: 8463
+// Function ID: 67501
 // Name: useStartEvent
 // Dependencies: []
 // Exports: default
 
-// Module 8459 (useStartEvent)
+// Module 8463 (useStartEvent)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 let closure_5 = importAll(dependencyMap[2]);

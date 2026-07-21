@@ -1,17 +1,17 @@
-// Module ID: 7669
-// Function ID: 61292
+// Module ID: 7673
+// Function ID: 61304
 // Name: getJoinButtonLabels
 // Dependencies: []
 // Exports: getJoinButtonLabels, getRenewButtonLabels
 
-// Module 7669 (getJoinButtonLabels)
+// Module 7673 (getJoinButtonLabels)
 let obj = { format_type: require(dependencyMap[1]).StickerFormat.APNG };
 const items = [obj, , , , ];
 obj = { format_type: require(dependencyMap[1]).StickerFormat.APNG };
 items[1] = obj;
-obj = { -9223372036854775808: null, -9223372036854775808: null, 0: null, -9223372036854775808: null, format_type: require(dependencyMap[1]).StickerFormat.APNG };
+obj = { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, format_type: require(dependencyMap[1]).StickerFormat.APNG };
 items[2] = obj;
-const obj1 = { -9223372036854775808: null, -9223372036854775808: null, 0: null, -9223372036854775808: null, format_type: require(dependencyMap[1]).StickerFormat.APNG };
+const obj1 = { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, format_type: require(dependencyMap[1]).StickerFormat.APNG };
 items[3] = obj1;
 items[4] = { format_type: require(dependencyMap[1]).StickerFormat.APNG };
 const _module = require(dependencyMap[2]);

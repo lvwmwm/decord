@@ -1,17 +1,17 @@
-// Module ID: 5498
-// Function ID: 46833
+// Module ID: 5500
+// Function ID: 46875
 // Name: ActionSheetRowIcon
 // Dependencies: []
 // Exports: ActionSheetSwitchRow
 
-// Module 5498 (ActionSheetRowIcon)
+// Module 5500 (ActionSheetRowIcon)
 class ActionSheetRow {
   constructor(arg0) {
     str = global.variant;
     if (str === undefined) {
       str = "default";
     }
-    obj = { <string:1532124257>: "r", <string:1632526629>: "onRequireModeratorMFAClick", <string:626741562>: "Array", <string:491869793>: "isSpamMessageRequest" };
+    obj = { id: null, type: 4, name: 4, hasWishlist: "rgba(0, 0, 0, 0.75)" };
     ({ arrow, icon } = global);
     setPrototypeOfResult = Object.setPrototypeOf(null);
     obj = {};

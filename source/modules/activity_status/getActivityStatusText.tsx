@@ -1,10 +1,10 @@
-// Module ID: 9066
-// Function ID: 71126
+// Module ID: 9070
+// Function ID: 71138
 // Name: getActivityStatusText
 // Dependencies: []
 // Exports: default
 
-// Module 9066 (getActivityStatusText)
+// Module 9070 (getActivityStatusText)
 const ActivityTypes = require(dependencyMap[0]).ActivityTypes;
 const _module = require(dependencyMap[8]);
 const result = _module.fileFinishedImporting("modules/activity_status/getActivityStatusText.tsx");

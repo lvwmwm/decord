@@ -1,9 +1,9 @@
-// Module ID: 4207
-// Function ID: 36543
+// Module ID: 4211
+// Function ID: 36591
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
-// Module 4207 (_isNativeReflectConstruct)
+// Module 4211 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -99,7 +99,7 @@ function updateAveragedStatsHelper(minVersion, arg1, arg2, arr, arr2) {
   let tmp = arg2;
   const found = arr.find((type) => "video" === type.type);
   if (null == arg2) {
-    const obj = { game_name: "Text", game_id: "message", ready: "textAlign", loadingMore: "r", loadingMore: "isArray", error: "accessibilityRole", info: "sr", newMessages: "", hasMoreAfter: "Text", hasMoreBefore: "messageId", minVersion };
+    const obj = { nick: "r", colorString: "setAlert", colorStrings: "jsVersion", variant: "SELF_HARM_CONTENT", color: "numMediaItems", style: "r", children: "isSearching", <string:4217527512>: "SELF_HARM_CONTENT", <string:223783584>: "numMemberTabReturnedResults", <string:3180073356>: "r", minVersion };
     tmp = obj;
   }
   if (null == found) {

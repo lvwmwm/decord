@@ -1,10 +1,10 @@
-// Module ID: 4540
-// Function ID: 39779
+// Module ID: 4544
+// Function ID: 39827
 // Name: useProfileThemedButtonStyles
 // Dependencies: []
 // Exports: useButtonPillStyles, useButtonPressAnimationProps, useGradientPillStyles, useIconSizeStyles, useIconTintStyles
 
-// Module 4540 (useProfileThemedButtonStyles)
+// Module 4544 (useProfileThemedButtonStyles)
 function useProfileThemedButtonStyles(variant) {
   const arg1 = variant;
   const themeContext = arg1(dependencyMap[2]).useThemeContext();
@@ -117,9 +117,9 @@ function useButtonScaleStyles(sharedValue, sharedValue1, scaleAmountInPx) {
     let obj = {};
     obj = {};
     const obj3 = arg0(arg2[7]);
-    const items = [24573934974154670000000000000000000000000000000000000000000000000000000000000, num];
+    const items = [15189782894321462000000000000000000000000000000000000000000000000000000000000000000, num];
     const obj4 = arg0(arg2[6]);
-    obj.scale = obj3.withSpring(arg0(arg2[6]).interpolate(arg0.get(), [null, null], items), arg0(arg2[8]).ON_PRESS_SPRING, "animate-always");
+    obj.scale = obj3.withSpring(arg0(arg2[6]).interpolate(arg0.get(), ["Text", "lc"], items), arg0(arg2[8]).ON_PRESS_SPRING, "animate-always");
     const items1 = [obj];
     obj.transform = items1;
     return obj;
@@ -232,9 +232,9 @@ export const useButtonPillStyles = function useButtonPillStyles(variant, pressed
       ({ borderInactive: arr2[0], borderPressed: arr2[1] } = tmp2);
       borderColor = items1;
     }
-    const obj = { backgroundColor: arg1(tmp2[6]).interpolateColor(arg1.get(), [null, null], backgroundColor) };
+    const obj = { backgroundColor: arg1(tmp2[6]).interpolateColor(arg1.get(), ["Text", "lc"], backgroundColor) };
     const obj2 = arg1(tmp2[6]);
-    obj.borderColor = arg1(tmp2[6]).interpolateColor(arg1.get(), [null, null], borderColor);
+    obj.borderColor = arg1(tmp2[6]).interpolateColor(arg1.get(), ["Text", "lc"], borderColor);
     return obj;
   };
   obj = { themedStyles: tmp, colors: tmp2, interpolateColor: pressed(dependencyMap[6]).interpolateColor, pressed };

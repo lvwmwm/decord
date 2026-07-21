@@ -1,11 +1,11 @@
-// Module ID: 13559
-// Function ID: 102840
+// Module ID: 13566
+// Function ID: 102863
 // Name: styles
 // Dependencies: []
 
-// Module 13559 (styles)
+// Module 13566 (styles)
 const _module = require(dependencyMap[1]);
-let obj = { text: { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null } };
+let obj = { text: {} };
 obj = {};
 const merged = Object.assign(importDefault(dependencyMap[2])(require(dependencyMap[0]).Fonts.DISPLAY_EXTRABOLD, importDefault(dependencyMap[3]).colors.MOBILE_TEXT_HEADING_PRIMARY, 24));
 obj.modalHeader = obj;

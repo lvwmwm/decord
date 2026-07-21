@@ -1,8 +1,8 @@
-// Module ID: 11652
-// Function ID: 90396
+// Module ID: 11659
+// Function ID: 90419
 // Dependencies: []
 
-// Module 11652
+// Module 11659
 const importAllResult = importAll(dependencyMap[0]);
 let closure_3 = arg1(dependencyMap[2]).useChatInputContainerHeight;
 const jsx = arg1(dependencyMap[3]).jsx;
@@ -21,7 +21,7 @@ const memoResult = importAllResult.memo(function ChatPlaceholder(screenIndex) {
   const height = importDefault(dependencyMap[8])().height;
   const dependencyMap = height;
   const rect = importDefault(dependencyMap[6])();
-  const insets = importDefault(dependencyMap[7])({ body: true, color: true }).insets;
+  const insets = importDefault(dependencyMap[7])({ 0: null, 9223372036854775807: null }).insets;
   const obj = { containerBottomInset: insets.bottom - rect.bottom, windowVerticalInset: rect.top + insets.bottom };
   const containerBottomInset = obj.containerBottomInset;
   const windowVerticalInset = obj.windowVerticalInset;
@@ -68,7 +68,7 @@ const memoResult = importAllResult.memo(function ChatPlaceholder(screenIndex) {
     } while (num < diff);
     return items;
   }, items1);
-  const style = [tmp.placeholder, memo, importDefault(dependencyMap[9])({ "Bool(false)": null, "Bool(false)": null })];
+  const style = [tmp.placeholder, memo, importDefault(dependencyMap[9])({ GOOGLE_PLAY_PRICE_CHANGE_ACTION_SHEET: null, getLayoutComponentErrorText: null })];
   return jsx(importDefault(dependencyMap[12]).View, { style, pointerEvents: "none", children });
 });
 const result = arg1(dependencyMap[13]).fileFinishedImporting("modules/chat/native/placeholder/ChatPlaceholder.tsx");

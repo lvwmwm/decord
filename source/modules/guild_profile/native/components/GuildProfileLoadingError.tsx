@@ -1,10 +1,10 @@
-// Module ID: 11864
-// Function ID: 91866
+// Module ID: 11871
+// Function ID: 91889
 // Name: GuildProfileLoadingError
 // Dependencies: []
 // Exports: default
 
-// Module 11864 (GuildProfileLoadingError)
+// Module 11871 (GuildProfileLoadingError)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 ({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[2]));
@@ -42,7 +42,7 @@ export default function GuildProfileLoadingError(onPress) {
   obj7.accessibilityLabel = intl2.string(arg1(dependencyMap[10]).t.s1fAEw);
   const obj8 = { size: "sm", color: importDefault(dependencyMap[6]).colors.TEXT_FEEDBACK_WARNING };
   const items2 = [callback(arg1(dependencyMap[8]).WarningIcon, obj8), ];
-  const obj9 = { INTEGRATION_CREATE: null, ConstraintReasonCode: null };
+  const obj9 = {};
   const intl3 = arg1(dependencyMap[10]).intl;
   obj9.children = intl3.string(arg1(dependencyMap[10]).t.tmGHjc);
   items2[1] = callback(arg1(dependencyMap[9]).Text, obj9);

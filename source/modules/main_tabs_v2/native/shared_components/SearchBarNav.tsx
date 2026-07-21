@@ -1,8 +1,8 @@
-// Module ID: 5764
-// Function ID: 49338
-// Dependencies: [31, 33, 477, 1324, 5773, 3837, 5776, 3836, 2, 31, 27, 1452, 653]
+// Module ID: 5766
+// Function ID: 49381
+// Dependencies: [31, 33, 477, 1324, 5775, 3837, 5778, 3836, 2, 31, 27, 1452, 653]
 
-// Module 5764
+// Module 5766
 import module_33 from "module_33";
 import module_477 from "module_477";
 import useIsMobileVisualRefreshExperimentEnabled from "useIsMobileVisualRefreshExperimentEnabled";
@@ -12,7 +12,7 @@ import ME from "ME";
 const View = module_33.View;
 ({ jsx: closure_3, jsxs: closure_4 } = module_477);
 let obj = {};
-obj = { -9223372036854775808: true, filter: true, height: require("useInputStyles").NAV_BAR_HEIGHT, paddingHorizontal: require("useFocus").space.PX_16, backgroundColor: require("useFocus").colors.BACKGROUND_BASE_LOW, borderBottomWidth: module_33.StyleSheet.hairlineWidth, borderColor: require("useFocus").colors.BORDER_STRONG };
+obj = { height: require("useInputStyles").NAV_BAR_HEIGHT, paddingHorizontal: require("useFocus").space.PX_16, backgroundColor: require("useFocus").colors.BACKGROUND_BASE_LOW, borderBottomWidth: module_33.StyleSheet.hairlineWidth, borderColor: require("useFocus").colors.BORDER_STRONG };
 obj.container = obj;
 useIsMobileVisualRefreshExperimentEnabled = { paddingLeft: require("useFocus").space.PX_16 };
 obj.cancelText = useIsMobileVisualRefreshExperimentEnabled;
@@ -31,13 +31,13 @@ export default importAllResult.forwardRef((onClose, ref) => {
   const intl = ref(dependencyMap[7]).intl;
   obj.accessibilityLabel = intl.string(ref(dependencyMap[7]).t.ETE/oC);
   obj.onPress = onClose.onClose;
-  obj.hitSlop = { position: "parent", right: "Array", top: "isArray", display: "accessibilityRole" };
+  obj.hitSlop = { label: "Array", maxLength: "gradientTop", backgroundColor: "EXPERIMENT_GUILD_EXPOSURE_SUPPRESSED", padding: "showReferralNotificationDot" };
   let obj1 = ref(dependencyMap[8]);
   if (obj1.isAndroid()) {
     obj = { style: tmp3.cancelIcon };
     let tmp5Result = tmp5(tmp6(tmp7[9]).ArrowLargeLeftIcon, obj);
   } else {
-    obj1 = { GuildBadgeGem: null, addYears: "text-sm/semibold", GameMention: "text-default", CREATE_REFERRAL: 2, style: tmp3.cancelText };
+    obj1 = { view_sequence_number: null, fileFinishedImporting: null, YNaxMp: null, Warning: null, style: tmp3.cancelText };
     const intl2 = tmp6(tmp7[7]).intl;
     obj1.children = intl2.string(tmp6(tmp7[7]).t.ETE/oC);
     tmp5Result = tmp5(tmp6(tmp7[10]).Text, obj1);
@@ -53,7 +53,7 @@ export default importAllResult.forwardRef((onClose, ref) => {
   const items = [tmp12, , ];
   const obj3 = { style: tmp3.flex };
   const obj4 = {};
-  obj5 = { "Null": false, "Null": false, ref };
+  obj5 = { "Null": null, "Null": null, ref };
   const merged1 = Object.assign(merged);
   obj4.children = callback(ref(dependencyMap[11]).SearchField, obj5);
   obj3.children = callback(View, obj4);

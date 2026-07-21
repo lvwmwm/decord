@@ -1,33 +1,33 @@
-// Module ID: 15730
-// Function ID: 120230
+// Module ID: 15737
+// Function ID: 120254
 // Name: DisconnectCancelButton
 // Dependencies: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 // Exports: default
 
-// Module 15730 (DisconnectCancelButton)
-import closure_3 from "result";
-import closure_4 from "result";
-import closure_5 from "result";
-import closure_6 from "result";
-import closure_7 from "result";
-import { VoicePanelModes } from "result";
-import { jsx } from "result";
-import result from "result";
-import result from "result";
+// Module 15737 (DisconnectCancelButton)
+import closure_3 from "__exportStarResult1";
+import closure_4 from "__exportStarResult1";
+import closure_5 from "__exportStarResult1";
+import closure_6 from "__exportStarResult1";
+import closure_7 from "__exportStarResult1";
+import { VoicePanelModes } from "__exportStarResult1";
+import { jsx } from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
 
 let closure_10 = { USER: 0, [0]: "USER", STREAM: 1, [1]: "STREAM", ACTIVITY: 2, [2]: "ACTIVITY" };
-result = {};
-result = { minWidth: require("result").modules.mobile.VOICE_PANEL_DISCONNECT_BUTTON_MIN_WIDTH, backgroundColor: require("result").colors.CONTROL_CRITICAL_PRIMARY_BACKGROUND_DEFAULT };
-result.disconnectCancelBG = result;
-result.icon = { tintColor: require("result").colors.WHITE };
-result = result.createStyles(result);
+__exportStarResult1 = {};
+__exportStarResult1 = { minWidth: require("__exportStarResult1").modules.mobile.VOICE_PANEL_DISCONNECT_BUTTON_MIN_WIDTH, backgroundColor: require("__exportStarResult1").colors.CONTROL_CRITICAL_PRIMARY_BACKGROUND_DEFAULT };
+__exportStarResult1.disconnectCancelBG = __exportStarResult1;
+__exportStarResult1.icon = { tintColor: require("__exportStarResult1").colors.WHITE };
+__exportStarResult1 = __exportStarResult1.createStyles(__exportStarResult1);
 let closure_12 = { code: "function VoicePanelDisconnectCancelButtonTsx1(){const{mode,VoicePanelModes,focused}=this.__closure;var _focused$get$id,_focused$get;if(mode.get()!==VoicePanelModes.PANEL){return null;}return(_focused$get$id=(_focused$get=focused.get())===null||_focused$get===void 0?void 0:_focused$get.id)!==null&&_focused$get$id!==void 0?_focused$get$id:null;}" };
 let closure_13 = { code: "function VoicePanelDisconnectCancelButtonTsx2(focusId,lastFocusId){const{runOnJS,handleFocusChange}=this.__closure;if(focusId!==lastFocusId){runOnJS(handleFocusChange)(focusId);}}" };
-result = result.fileFinishedImporting("modules/voice_panel/native/controls/buttons/VoicePanelDisconnectCancelButton.tsx");
+const result = __exportStarResult1.fileFinishedImporting("modules/voice_panel/native/controls/buttons/VoicePanelDisconnectCancelButton.tsx");
 
 export default function DisconnectCancelButton(props) {
   let closure_7;
-  const tmp = result();
+  const tmp = __exportStarResult1();
   const arg1 = tmp;
   const context = React.useContext(importDefault(dependencyMap[9]));
   const channelId = context.channelId;

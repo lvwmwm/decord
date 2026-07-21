@@ -1,7 +1,7 @@
 // Module ID: 4019
 // Function ID: 33429
 // Name: VANITY_URL_POWERUP_SKU_ID
-// Dependencies: []
+// Dependencies: [284214097]
 
 // Module 4019 (VANITY_URL_POWERUP_SKU_ID)
 const _module = require(dependencyMap[0]);

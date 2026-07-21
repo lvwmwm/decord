@@ -1,7 +1,7 @@
 // Module ID: 1052
 // Function ID: 11256
 // Name: _wrapTimeFunction
-// Dependencies: []
+// Dependencies: [68681728, 70057984]
 
 // Module 1052 (_wrapTimeFunction)
 function _wrapTimeFunction(arg0) {
@@ -37,7 +37,7 @@ function _wrapXHR(arg0) {
   const require = arg0;
   return function() {
     const arg0 = this;
-    const items = [null, null, null, null];
+    const items = ["a", "alertHeader", "a", "alien"];
     const item = items.forEach((arg0) => {
       const self = arg0;
       let tmp = arg0 in self;
@@ -74,7 +74,7 @@ function _wrapXHR(arg0) {
   };
 }
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
-let closure_2 = [];
+let closure_2 = [true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true];
 const _module = require(dependencyMap[0]);
 
 export const browserApiErrorsIntegration = _module.defineIntegration(function _browserApiErrorsIntegration() {
@@ -83,7 +83,7 @@ export const browserApiErrorsIntegration = _module.defineIntegration(function _b
       const first = arguments[0];
     }
     const _Object = Object;
-    let closure_0 = Object.assign({ <string:3797057288>: null, <string:3378631561>: 0, <string:2811716178>: 729, <string:1365402005>: 0, <string:2690908926>: 0, <string:4065613482>: "breadcrumb" }, {});
+    let closure_0 = Object.assign({}, {});
     const obj = {
       name: "BrowserApiErrors",
       setupOnce() {

@@ -1,10 +1,10 @@
-// Module ID: 10582
-// Function ID: 82591
+// Module ID: 10588
+// Function ID: 82614
 // Name: useCurrentEmbeddedActivity
 // Dependencies: []
 // Exports: default
 
-// Module 10582 (useCurrentEmbeddedActivity)
+// Module 10588 (useCurrentEmbeddedActivity)
 let closure_2 = importDefault(dependencyMap[0]);
 const result = arg1(dependencyMap[2]).fileFinishedImporting("modules/activities/utils/useCurrentEmbeddedActivity.tsx");
 

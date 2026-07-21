@@ -1,9 +1,9 @@
-// Module ID: 6700
-// Function ID: 52045
+// Module ID: 6706
+// Function ID: 52094
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
-// Module 6700 (_isNativeReflectConstruct)
+// Module 6706 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -27,10 +27,10 @@ let tmp4 = (Store) => {
     constructor() {
       self = this;
       tmp = closure_3(this, FileSystemStore);
-      tmp2 = f52056;
+      tmp2 = f52105;
       tmp3 = FileSystemStore;
       items = [, ];
-      items[0] = f52056(FileSystemStore[8]);
+      items[0] = f52105(FileSystemStore[8]);
       items[1] = {
         APP_STATE_UPDATE(arg0) {
               return tmp4Result.handleAppStateUpdate(arg0);
@@ -50,7 +50,7 @@ let tmp4 = (Store) => {
         constructResult = obj.apply(self, items);
       }
       tmp4Result = tmp4(self, constructResult);
-      f52056 = tmp4Result;
+      f52105 = tmp4Result;
       tmp4Result.isLowDisk = false;
       refreshResult = tmp4Result.refresh();
       waitForResult = tmp4Result.waitFor(tmp2(tmp3[9]));

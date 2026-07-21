@@ -8,7 +8,7 @@ let closure_2 = ["r"];
 let closure_3 = importDefault(dependencyMap[0]);
 const useMemo = arg1(dependencyMap[1]).useMemo;
 const jsx = arg1(dependencyMap[2]).jsx;
-let closure_6 = { marginTop: 0.00000000000000000000000000000000000000000000000000000000000004133579879388711, marginVertical: 241505615215171200000000000000000000000000000000000000000000000000000000000000000000, maxHeight: 0.00000000000000000000000000000000000000000000000000000000000004667261426595894, maxWidth: 0.0000000000000000000000000000000000000000000000000000000000000000000000012181038497668178 };
+let closure_6 = { "Null": "BounceIn", "Null": null, "Null": 0.6, "Null": "BounceInRight" };
 
 export const SafeAreaView = importAll(dependencyMap[1]).forwardRef((edges, ref) => {
   edges = edges.edges;

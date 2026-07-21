@@ -1,10 +1,10 @@
-// Module ID: 13924
-// Function ID: 105843
+// Module ID: 13931
+// Function ID: 105866
 // Name: StyleSheet
 // Dependencies: []
 // Exports: QuestBottomSheetProgressCardInGameTask, QuestBottomSheetProgressCardPlayStreamTask, QuestBottomSheetProgressCardWatchTask
 
-// Module 13924 (StyleSheet)
+// Module 13931 (StyleSheet)
 let StyleSheet;
 let closure_3 = importAll(dependencyMap[0]);
 ({ View: closure_4, StyleSheet } = arg1(dependencyMap[1]));
@@ -16,7 +16,7 @@ obj = { card: { padding: 0 }, cardWatchTask: {} };
 obj = { padding: importDefault(dependencyMap[5]).space.PX_16 };
 obj.content = obj;
 obj.contentWatchTask = { alignItems: "flex-end" };
-const obj1 = { paddingTop: null, paddingHorizontal: 15.1, gap: null, flexDirection: "\u{1F468}\u{1F3FE}\u200D\u{1F9BD}\u200D\u27A1\uFE0F", alignItems: true, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_MOD_MUTED, borderBottomLeftRadius: importDefault(dependencyMap[5]).modules.mobile.CARD_DEFAULT_RADIUS, borderBottomRightRadius: importDefault(dependencyMap[5]).modules.mobile.CARD_DEFAULT_RADIUS, borderWidth: 1, borderColor: importDefault(dependencyMap[5]).colors.BORDER_MUTED };
+const obj1 = { "Bool(false)": null, "Bool(false)": 15.1, "Bool(false)": null, "Bool(false)": "\u{1F468}\u{1F3FE}\u200D\u{1F9BD}\u200D\u27A1\uFE0F", "Bool(false)": true, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_MOD_MUTED, borderBottomLeftRadius: importDefault(dependencyMap[5]).modules.mobile.CARD_DEFAULT_RADIUS, borderBottomRightRadius: importDefault(dependencyMap[5]).modules.mobile.CARD_DEFAULT_RADIUS, borderWidth: 1, borderColor: importDefault(dependencyMap[5]).colors.BORDER_MUTED };
 obj.footer = obj1;
 const tmp3 = arg1(dependencyMap[3]);
 obj.instructionsText = { marginTop: importDefault(dependencyMap[5]).space.PX_12, textAlign: "center" };
@@ -144,7 +144,7 @@ export const QuestBottomSheetProgressCardPlayStreamTask = function QuestBottomSh
   const items2 = [tmp16(importDefault(dependencyMap[15]), obj1), ];
   let tmp18 = null != memo;
   if (tmp18) {
-    obj2 = { Promise: false, marginTop: false, flags: false, style: tmp.instructionsText, children: memo };
+    obj2 = { style: tmp.instructionsText, children: memo };
     tmp18 = defaultRewardName(arg1(dependencyMap[12]).Text, obj2);
   }
   items2[1] = tmp18;
@@ -208,7 +208,7 @@ export const QuestBottomSheetProgressCardWatchTask = function QuestBottomSheetPr
     const obj4 = { uri: memo.url };
     obj3.source = obj4;
     const items4 = [callback(arg1(dependencyMap[20]).VideoComponent, obj3), ];
-    const obj5 = { start: {}, end: { "Null": "innocent", "Null": "innocent" }, style: StyleSheet.absoluteFill, colors: [null, null] };
+    const obj5 = { start: { max: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011125378664662503, guildId: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002834178582291256 }, end: {}, style: StyleSheet.absoluteFill, colors: [null, null] };
     items4[1] = callback(importDefault(dependencyMap[21]), obj5);
     obj2.children = items4;
     tmp18Result = callback2(closure_4, obj2);
@@ -225,7 +225,7 @@ export const QuestBottomSheetProgressCardWatchTask = function QuestBottomSheetPr
     obj7.source = obj8;
     obj7.resizeMode = "cover";
     const items6 = [callback(importDefault(dependencyMap[22]), obj7), ];
-    const obj9 = { start: {}, end: { "Null": "innocent", "Null": "innocent" }, style: StyleSheet.absoluteFill, colors: [null, null] };
+    const obj9 = { start: { max: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011125378664662503, guildId: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002834178582291256 }, end: {}, style: StyleSheet.absoluteFill, colors: [null, null] };
     items6[1] = callback(importDefault(dependencyMap[21]), obj9);
     obj6.children = items6;
     tmp28 = callback2(closure_4, obj6);

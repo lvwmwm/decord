@@ -1,8 +1,8 @@
-// Module ID: 9086
-// Function ID: 71184
+// Module ID: 9090
+// Function ID: 71196
 // Dependencies: []
 
-// Module 9086
+// Module 9090
 const importAllResult = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 let closure_5 = importDefault(dependencyMap[2]);
@@ -14,7 +14,7 @@ const UserRowModes = arg1(dependencyMap[7]).UserRowModes;
 const ReadStateTypes = arg1(dependencyMap[8]).ReadStateTypes;
 ({ jsx: closure_12, Fragment: closure_13, jsxs: closure_14 } = arg1(dependencyMap[9]));
 const tmp2 = arg1(dependencyMap[9]);
-let obj = { guildIcon: { "Bool(false)": false, <string:1419386345>: true }, subLabel: { "Bool(true)": 8, "Bool(true)": null, "Bool(true)": "\u270A\u{1F3FF}" }, subLabelIcon: { useTrackPdpClick: 20, GameDetectionDebugLevel: "relative", presenceCount: 10 } };
+let obj = { guildIcon: { borderRadius: -536870861, borderWidth: -299892737 }, subLabel: {}, subLabelIcon: { 0: 20, 9223372036854775807: "relative", -9223372036854775808: 10 } };
 obj = { marginHorizontal: importDefault(dependencyMap[11]).space.PX_4 };
 obj.subLabelSeparator = obj;
 obj.threadName = { flexShrink: 1 };
@@ -45,7 +45,7 @@ const memoResult = importAllResult.memo(function ChannelRow(channel) {
   let closure_5 = subLabel;
   const label = channel.label;
   let closure_6 = label;
-  let obj = { DISCOVER_POPULAR: true, presenceCount: 6, paddingVertical: 132, lady_beetle: null, ONE_DAY: "\u{1F9D1}\u200D\u{1F680}", display: true, DISCOVER_POPULAR: 12.1, ignoreNotificationSetting: 133, textAlignVertical: null };
+  let obj = { "Bool(false)": true, "Bool(false)": 6, "Bool(false)": 132, "Bool(false)": null, "Bool(false)": "\u{1F9D1}\u200D\u{1F680}", "Bool(false)": true, "Bool(false)": 12.1, flexDirection: 133, justifyContent: null };
   Object.setPrototypeOf(null);
   const merged = Object.assign(channel, obj);
   let closure_7;
@@ -134,12 +134,12 @@ const memoResult = importAllResult.memo(function ChannelRow(channel) {
       let obj = { style: tmp4.subLabel };
       obj = { color: flag2(onPress[11]).colors.TEXT_SUBTLE, style: tmp4.subLabelIcon };
       const items = [callback(TextIcon, obj), , ];
-      obj = { 0: false, 9223372036854775807: false, 0: false, 0: false, 9223372036854775807: false, style: tmp4.threadName, children: stateFromStores1 };
+      obj = { __packager_asset: 87878205788868150000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, y: -0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000008920646734650617, isArray: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000012008576514210759, push: 3408618214873407000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, create: -0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000895184583640078, style: tmp4.threadName, children: stateFromStores1 };
       items[1] = callback(channel(onPress[18]).Text, obj);
       let tmp20 = null;
       if (null != stateFromStores2) {
         const obj1 = {};
-        const obj2 = { "Bool(true)": true, "Bool(true)": true, "Bool(true)": true, "Bool(true)": true, style: tmp4.subLabelSeparator };
+        const obj2 = { "Null": true, ti: true, tk: true, tl: true, style: tmp4.subLabelSeparator };
         const items1 = [callback(channel(onPress[18]).Text, obj2), ];
         const obj3 = { children: channel(onPress[19]).calendarFormatCompact(flag2(onPress[20])(stateFromStores2)) };
         items1[1] = callback(channel(onPress[18]).Text, obj3);
@@ -160,7 +160,7 @@ const memoResult = importAllResult.memo(function ChannelRow(channel) {
     }
     return tmp2;
   }, items8);
-  obj = { CHANNEL_HIGHLIGHT: true, guild_template_description: 15.1, borderWidth: 253, children: memo1 };
+  obj = { encodingConfig: true, showRemove: 15.1, PREMIUM_CUSTOM_NOTIFICATION_SOUND_SETTINGS_UPSELL: 253, children: memo1 };
   obj = {};
   const obj4 = arg1(dependencyMap[12]);
   const merged1 = Object.assign(merged);

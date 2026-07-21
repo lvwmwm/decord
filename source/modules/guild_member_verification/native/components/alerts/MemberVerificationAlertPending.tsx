@@ -1,10 +1,10 @@
-// Module ID: 9143
-// Function ID: 71696
+// Module ID: 9147
+// Function ID: 71708
 // Name: MemberVerificationAlertPending
 // Dependencies: []
 // Exports: default
 
-// Module 9143 (MemberVerificationAlertPending)
+// Module 9147 (MemberVerificationAlertPending)
 let closure_3 = importAll(dependencyMap[0]);
 ({ jsx: closure_4, Fragment: closure_5, jsxs: closure_6 } = arg1(dependencyMap[1]));
 const tmp2 = arg1(dependencyMap[1]);

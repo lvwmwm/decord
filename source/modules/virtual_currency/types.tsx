@@ -1,9 +1,9 @@
-// Module ID: 8708
-// Function ID: 68930
+// Module ID: 8712
+// Function ID: 68942
 // Name: BalanceWidgetMode
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 8708 (BalanceWidgetMode)
+// Module 8712 (BalanceWidgetMode)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("modules/virtual_currency/types.tsx");
 

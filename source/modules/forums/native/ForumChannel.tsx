@@ -1,10 +1,10 @@
-// Module ID: 11777
-// Function ID: 91399
+// Module ID: 11784
+// Function ID: 91422
 // Name: forumKeyExtractor
 // Dependencies: []
 // Exports: default
 
-// Module 11777 (forumKeyExtractor)
+// Module 11784 (forumKeyExtractor)
 function forumKeyExtractor(arg0, arg1) {
   let combined = arg0;
   if (arg0 === closure_22) {
@@ -19,7 +19,7 @@ function ArchivedSection() {
   obj = {};
   const items = [tmp.section, obj.useClientThemesOverride()];
   obj.style = items;
-  obj = { Promise: "Array", marginTop: "isArray", flags: "constructor", style: tmp.divider };
+  obj = { "Null": "Array", "Null": "isArray", "Null": "constructor", style: tmp.divider };
   const intl = arg1(dependencyMap[18]).intl;
   obj.children = intl.string(arg1(dependencyMap[18]).t.3+LO1w);
   obj.children = callback(arg1(dependencyMap[17]).Text, obj);
@@ -29,7 +29,7 @@ function SearchSection(numPosts) {
   numPosts = numPosts.numPosts;
   const tmp = callback3();
   let obj = { style: tmp.section };
-  obj = { Promise: "Array", marginTop: "isArray", flags: "constructor", style: tmp.divider };
+  obj = { "Null": "Array", "Null": "isArray", "Null": "constructor", style: tmp.divider };
   if (0 === numPosts) {
     const intl2 = arg1(dependencyMap[18]).intl;
     let stringResult = intl2.string(arg1(dependencyMap[18]).t.DbgHxi);
@@ -116,7 +116,7 @@ function SortAndViewOptions(channel) {
     const obj1 = { style: tmp.optionsPill };
     const obj2 = { size: "xs", style: tmp.sortOptionsIcon };
     const items1 = [callback(arg1(dependencyMap[29]).ArrowsUpDownIcon, obj2), , ];
-    const obj3 = { INTEGRATION_CREATE: true, ConstraintReasonCode: true, style: tmp.sortOptionsText };
+    const obj3 = { style: tmp.sortOptionsText };
     const intl2 = arg1(dependencyMap[18]).intl;
     const string2 = intl2.string;
     const t2 = arg1(dependencyMap[18]).t;
@@ -163,12 +163,12 @@ function TagFilter(channel) {
     let tmp7 = tagFilter.size > 0;
     if (tmp7) {
       const obj2 = { style: tmp.countContainer };
-      const obj3 = { INTEGRATION_CREATE: true, ConstraintReasonCode: true, style: tmp.countText, children: tagFilter.size };
+      const obj3 = { style: tmp.countText, children: tagFilter.size };
       obj2.children = callback(arg1(dependencyMap[17]).Text, obj3);
       tmp7 = callback(View, obj2);
     }
     const items = [tmp7, , ];
-    const obj4 = { INTEGRATION_CREATE: true, ConstraintReasonCode: true, style: tmp.sortOptionsText };
+    const obj4 = { style: tmp.sortOptionsText };
     const intl2 = arg1(dependencyMap[18]).intl;
     obj4.children = intl2.string(arg1(dependencyMap[18]).t.112vVE);
     items[1] = callback(arg1(dependencyMap[17]).Text, obj4);
@@ -230,7 +230,7 @@ function ForumChannelContent(channel) {
   const effect = React.useEffect(() => {
     const current = ref.current;
     if (null != current) {
-      current.scrollToOffset({ "Bool(true)": 9035158524362260000000000000000000000000000000000000000000000000000000000000000000000000000000, "Bool(true)": -222642488090540470000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 });
+      current.scrollToOffset({ -437125116: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002488040065571517, -435748860: -823154013994709700000000000000000000000000000000000000000000000 });
     }
   }, items);
   const tmp6 = function useForumData(channel, sortOrder, tagFilter, tagSetting) {
@@ -491,9 +491,9 @@ obj.list = {};
 obj.section = {};
 const obj1 = { backgroundColor: importDefault(dependencyMap[13]).colors.BORDER_SUBTLE };
 const obj2 = {};
-const merged = Object.assign(importDefault(dependencyMap[14])(Fonts.PRIMARY_BOLD, importDefault(dependencyMap[13]).colors.TEXT_MUTED, 12, {}));
+const merged = Object.assign(importDefault(dependencyMap[14])(Fonts.PRIMARY_BOLD, importDefault(dependencyMap[13]).colors.TEXT_MUTED, 12, { 9223372036854775807: false, 0: false }));
 obj.divider = obj2;
-const obj3 = { x: false, y: false, height: false, width: false, backgroundColor: importDefault(dependencyMap[13]).colors.BACKGROUND_BASE_LOWEST, borderRadius: importDefault(dependencyMap[13]).radii.xs };
+const obj3 = { flexDirection: false, alignItems: false, gap: false, overflow: false, backgroundColor: importDefault(dependencyMap[13]).colors.BACKGROUND_BASE_LOWEST, borderRadius: importDefault(dependencyMap[13]).radii.xs };
 obj.missingPermissionContainer = obj3;
 const importDefaultResult = importDefault(dependencyMap[14]);
 const obj4 = {};
@@ -517,7 +517,7 @@ if (obj13.isAndroid()) {
 obj9.lineHeight = num;
 obj.countText = obj9;
 let closure_24 = obj.createStyles(obj);
-let closure_25 = { o: null, end: null, user: null };
+let closure_25 = { trackSelectGIF: null, ENABLE_COMMUNITY_FLOW_MODAL_KEY: null, zIndex: null };
 const obj13 = arg1(dependencyMap[15]);
 const result = arg1(dependencyMap[63]).fileFinishedImporting("modules/forums/native/ForumChannel.tsx");
 

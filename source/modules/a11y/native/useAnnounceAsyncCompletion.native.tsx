@@ -1,10 +1,10 @@
-// Module ID: 10148
-// Function ID: 78477
+// Module ID: 10154
+// Function ID: 78495
 // Name: useAnnounceAsyncCompletion
 // Dependencies: []
 // Exports: default
 
-// Module 10148 (useAnnounceAsyncCompletion)
+// Module 10154 (useAnnounceAsyncCompletion)
 let closure_2 = importAll(dependencyMap[0]);
 const AccessibilityInfo = arg1(dependencyMap[1]).AccessibilityInfo;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/a11y/native/useAnnounceAsyncCompletion.native.tsx");

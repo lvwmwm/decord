@@ -1,15 +1,15 @@
-// Module ID: 11194
-// Function ID: 87195
+// Module ID: 11200
+// Function ID: 87218
 // Dependencies: []
 
-// Module 11194
+// Module 11200
 const importAllResult = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 let closure_5 = importDefault(dependencyMap[2]);
 ({ BANNER_HEIGHT: closure_6, EMPTY_STRING_SNOWFLAKE_ID: closure_7 } = arg1(dependencyMap[3]));
 const jsx = arg1(dependencyMap[4]).jsx;
 const tmp2 = arg1(dependencyMap[3]);
-let closure_9 = arg1(dependencyMap[5]).createStyles({ imageContainer: { aze: 30271555, azj: 22092032 }, image: { aze: 30271555, azj: 22092032 } });
+let closure_9 = arg1(dependencyMap[5]).createStyles({ imageContainer: {}, image: {} });
 let closure_10 = importAllResult.memo((applicationId) => {
   let imageSource;
   let imageStyle;
@@ -17,7 +17,7 @@ let closure_10 = importAllResult.memo((applicationId) => {
   let obj1 = arg1(dependencyMap[7]);
   const heroMediaDimensions = obj1.useHeroMediaDimensions({ width: obj.useRequiredAppLauncherContext().width });
   const arg1 = heroMediaDimensions;
-  obj = { applicationId: applicationId.applicationId, size: heroMediaDimensions.width, names: ["PREMIUM_STANDARD"] };
+  obj = { applicationId: applicationId.applicationId, size: heroMediaDimensions.width, names: ["SENTRY_BAGGAGE_KEY_PREFIX"] };
   const tmp2 = importDefault(dependencyMap[8])(obj);
   const importDefault = tmp2;
   const items = [heroMediaDimensions, tmp2];

@@ -1,10 +1,10 @@
-// Module ID: 9526
-// Function ID: 74204
+// Module ID: 9531
+// Function ID: 74220
 // Name: isMessagePinnable
 // Dependencies: []
 // Exports: default
 
-// Module 9526 (isMessagePinnable)
+// Module 9531 (isMessagePinnable)
 let closure_3 = importDefault(dependencyMap[0]);
 ({ ChannelTypes: closure_4, Permissions: closure_5 } = arg1(dependencyMap[1]));
 const tmp2 = arg1(dependencyMap[1]);

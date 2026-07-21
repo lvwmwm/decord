@@ -1,9 +1,9 @@
-// Module ID: 6596
-// Function ID: 50768
+// Module ID: 6598
+// Function ID: 50811
 // Name: metadata
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 6596 (metadata)
+// Module 6598 (metadata)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/TrophyIllocon-2x.png.js");
 

@@ -152,7 +152,7 @@ function getTransportTypes(transport) {
       return obj;
     }
   }
-  return { "Bool(false)": "fgs_operation", "Bool(false)": "onShareClick" };
+  return { <string:3176802266>: null, <string:486749384>: null };
 }
 let closure_2 = require(dependencyMap[0]);
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });

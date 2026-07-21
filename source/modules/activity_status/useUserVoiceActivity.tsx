@@ -1,10 +1,10 @@
-// Module ID: 9054
-// Function ID: 71094
+// Module ID: 9058
+// Function ID: 71106
 // Name: getUserVoiceState
 // Dependencies: []
 // Exports: canViewUserVoiceChannel, default
 
-// Module 9054 (getUserVoiceState)
+// Module 9058 (getUserVoiceState)
 function getUserVoiceState(arg0, arg1) {
   let guildId;
   let userId;

@@ -1,9 +1,9 @@
 // Module ID: 10177
-// Function ID: 78655
+// Function ID: 78608
 // Dependencies: []
 
 // Module 10177
 const _module = require(dependencyMap[0]);
-const obj = { url: -1669297673, content: -1196997681, messageId: -2090336252, channel_id: 1576140804, no: -1571618812, "Null": -1129366130, "Null": -1302508904, "Null": -1302069247, scales: [] };
+const obj = { isConnected: "<string:3191976911>", isInternetReachable: "<string:1627390310>", details: "<string:1117282807>", reachabilityUrl: "2022-12_mention_raid_limit", reachabilityMethod: "Automod Mention Raid Limit", reachabilityHeaders: "<string:76210753>", reachabilityTest: "<string:1980878848>", reachabilityShortTimeout: "<string:1052628925>", scales: [] };
 
 export default _module.registerAsset(obj);

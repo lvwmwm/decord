@@ -1,10 +1,10 @@
-// Module ID: 4681
-// Function ID: 40744
+// Module ID: 4683
+// Function ID: 40785
 // Name: PermissionsAlertModal
 // Dependencies: []
 // Exports: default
 
-// Module 4681 (PermissionsAlertModal)
+// Module 4683 (PermissionsAlertModal)
 importAll(dependencyMap[0]);
 ({ jsx: closure_2, jsxs: closure_3 } = arg1(dependencyMap[1]));
 const tmp3 = arg1(dependencyMap[1]);

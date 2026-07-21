@@ -1,7 +1,7 @@
 // Module ID: 1345
 // Function ID: 15821
 // Name: ContentDismissActionType
-// Dependencies: []
+// Dependencies: [284214097]
 
 // Module 1345 (ContentDismissActionType)
 const _module = require(dependencyMap[0]);

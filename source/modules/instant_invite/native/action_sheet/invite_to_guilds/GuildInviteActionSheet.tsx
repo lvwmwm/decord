@@ -1,10 +1,10 @@
-// Module ID: 12014
-// Function ID: 92872
+// Module ID: 12021
+// Function ID: 92895
 // Name: EmptyGuildList
 // Dependencies: []
 // Exports: default
 
-// Module 12014 (EmptyGuildList)
+// Module 12021 (EmptyGuildList)
 function EmptyGuildList() {
   const obj = { containerStyle: callback5().emptyStateContainer };
   const intl = arg1(dependencyMap[7]).intl;
@@ -57,7 +57,7 @@ function GuildList(recipientId) {
       if (!tmp4) {
         let tmp2 = null;
         if (section.data.length > 0) {
-          const obj = { Promise: 10, marginTop: null, flags: "flex-start", style: sectionTitle.sectionTitle, children: section.title };
+          const obj = { style: sectionTitle.sectionTitle, children: section.title };
           tmp2 = callback(recipientId(sectionTitle[11]).Text, obj);
           const tmp4 = recipientId;
         }
@@ -110,7 +110,7 @@ export default function GuildInviteActionSheet(arg0) {
   let obj = {};
   const intl = callback(dependencyMap[7]).intl;
   obj.title = intl.string(callback(dependencyMap[7]).t.HvoZQD);
-  obj = { 0: null, -9223372036854775808: null };
+  obj = { 1891290120: null, -475247768: null };
   obj.header = callback3(callback(dependencyMap[15]).BottomSheetTitleHeader, obj);
   obj.contentStyles = tmp.content;
   obj = { style: tmp.searchbarWrapper };

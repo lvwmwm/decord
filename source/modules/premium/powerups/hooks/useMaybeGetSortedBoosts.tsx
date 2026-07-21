@@ -1,10 +1,10 @@
-// Module ID: 11595
-// Function ID: 90115
+// Module ID: 11602
+// Function ID: 90138
 // Name: useMaybeGetSortedBoosts
 // Dependencies: []
 // Exports: default, useGetBoostUserConfig
 
-// Module 11595 (useMaybeGetSortedBoosts)
+// Module 11602 (useMaybeGetSortedBoosts)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 let closure_5 = importDefault(dependencyMap[2]);

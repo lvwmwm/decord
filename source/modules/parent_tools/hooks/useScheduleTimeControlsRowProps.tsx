@@ -1,10 +1,10 @@
-// Module ID: 13683
-// Function ID: 103603
+// Module ID: 13690
+// Function ID: 103626
 // Name: useScheduleTimeControlsRowProps
 // Dependencies: []
 // Exports: default
 
-// Module 13683 (useScheduleTimeControlsRowProps)
+// Module 13690 (useScheduleTimeControlsRowProps)
 const jsx = require(dependencyMap[0]).jsx;
 const _module = require(dependencyMap[4]);
 const result = _module.fileFinishedImporting("modules/parent_tools/hooks/useScheduleTimeControlsRowProps.tsx");
@@ -12,7 +12,7 @@ const result = _module.fileFinishedImporting("modules/parent_tools/hooks/useSche
 export default function useScheduleTimeControlsRowProps(arr) {
   if (0 === arr.length) {
     let obj = {};
-    obj = { INTEGRATION_CREATE: true, ConstraintReasonCode: true };
+    obj = {};
     const intl = require(dependencyMap[2]).intl;
     obj.children = intl.string(importDefault(dependencyMap[3]).fOBIZH);
     obj.subLabel = jsx(require(dependencyMap[1]).Text, obj);
@@ -23,7 +23,7 @@ export default function useScheduleTimeControlsRowProps(arr) {
     const intl2 = require(dependencyMap[2]).intl;
     const obj1 = { count: arr.length };
     obj.subLabel = intl2.formatToPlainString(importDefault(dependencyMap[3]).XfwcpX, obj1);
-    const obj2 = { INTEGRATION_CREATE: "<string:3305963521>", ConstraintReasonCode: "<string:671547393>" };
+    const obj2 = {};
     const intl3 = require(dependencyMap[2]).intl;
     const string = intl3.string;
     const tmp14 = importDefault(dependencyMap[3]);

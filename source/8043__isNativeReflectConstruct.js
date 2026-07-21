@@ -1,7 +1,7 @@
 // Module ID: 8043
-// Function ID: 63848
+// Function ID: 63841
 // Name: _isNativeReflectConstruct
-// Dependencies: [2130706463, 2164260895]
+// Dependencies: []
 
 // Module 8043 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
@@ -13,26 +13,26 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-importDefault(dependencyMap[5]);
+let closure_2 = importDefault(dependencyMap[0]);
+let closure_3 = importDefault(dependencyMap[1]);
+let closure_4 = importDefault(dependencyMap[2]);
+let closure_5 = importDefault(dependencyMap[3]);
+let closure_6 = importDefault(dependencyMap[4]);
+importAll(dependencyMap[5]);
 const jsx = arg1(dependencyMap[6]).jsx;
-const tmp3 = (arg0) => {
-  class FeBlend {
+const tmp3 = (Component) => {
+  class Defs {
     constructor() {
       self = this;
-      tmp = closure_3(this, FeBlend);
-      obj = closure_6(FeBlend);
-      tmp2 = closure_5;
-      if (closure_9()) {
+      tmp = closure_2(this, Defs);
+      obj = closure_5(Defs);
+      tmp2 = closure_4;
+      if (closure_8()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_6;
+        tmp7 = closure_5;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_6(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, closure_5(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -41,30 +41,18 @@ const tmp3 = (arg0) => {
       return tmp2(self, constructResult);
     }
   }
-  const arg1 = FeBlend;
-  callback2(FeBlend, arg0);
+  const importDefault = Defs;
+  callback2(Defs, Component);
   const items = [
     {
       key: "render",
       value: function render() {
-        const FeBlend = this;
-        const obj = {
-          ref(arg0) {
-            return self.refMethod(arg0);
-          }
-        };
-        const tmp = callback(closure_2[7]);
-        const obj2 = FeBlend(closure_2[8]);
-        const extractFilterResult = FeBlend(closure_2[8]).extractFilter(this.props);
-        const obj3 = FeBlend(closure_2[8]);
-        const extractInResult = FeBlend(closure_2[8]).extractIn(this.props);
-        return callback4(tmp, Object.assign(obj, extractFilterResult, extractInResult, FeBlend(closure_2[8]).extractFeBlend(this.props)));
+        return callback3(Defs(closure_1[7]), { children: this.props.children });
       }
     }
   ];
-  return callback(FeBlend, items);
-}(importDefault(dependencyMap[9]));
-tmp3.displayName = "FeBlend";
-tmp3.defaultProps = Object.assign({}, tmp3.defaultPrimitiveProps, { mode: "normal" });
+  return callback(Defs, items);
+}(arg1(dependencyMap[5]).Component);
+tmp3.displayName = "Defs";
 
 export default tmp3;

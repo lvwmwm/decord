@@ -1,9 +1,9 @@
-// Module ID: 4222
-// Function ID: 36994
+// Module ID: 4226
+// Function ID: 37042
 // Name: Video
 // Dependencies: []
 
-// Module 4222 (Video)
+// Module 4226 (Video)
 class Video {
   constructor(arg0) {
     return importDefault(dependencyMap[0])(global, Video.onContainerResized);

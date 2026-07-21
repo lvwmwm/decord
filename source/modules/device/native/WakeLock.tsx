@@ -1,10 +1,10 @@
-// Module ID: 10586
-// Function ID: 82615
+// Module ID: 10592
+// Function ID: 82638
 // Name: useWakeLock
 // Dependencies: []
 // Exports: default
 
-// Module 10586 (useWakeLock)
+// Module 10592 (useWakeLock)
 function useWakeLock(VoiceMessageOverlay) {
   const arg1 = VoiceMessageOverlay;
   const items = [VoiceMessageOverlay];

@@ -1,10 +1,10 @@
-// Module ID: 13828
-// Function ID: 104539
+// Module ID: 13835
+// Function ID: 104562
 // Name: BountiesModalContentInner
 // Dependencies: []
 // Exports: default
 
-// Module 13828 (BountiesModalContentInner)
+// Module 13835 (BountiesModalContentInner)
 function BountiesModalContentInner(bounty) {
   let handleProgress;
   let handleVideoEnd;
@@ -254,7 +254,7 @@ let closure_13 = 0.5625;
 const tmp2 = arg1(dependencyMap[7]);
 let closure_14 = arg1(dependencyMap[10]).createStyles(() => {
   let obj = { videoWrapper: { position: "absolute" }, closeButton: { position: "absolute" } };
-  obj = { bottom: importDefault(dependencyMap[11]).space.PX_24 };
+  obj = { "Bool(true)": true, "Bool(true)": true, "Bool(true)": true, bottom: importDefault(dependencyMap[11]).space.PX_24 };
   obj.bottomContainer = obj;
   obj = { left: importDefault(dependencyMap[11]).space.PX_16, right: importDefault(dependencyMap[11]).space.PX_16 };
   obj.bottomContainerFullWidth = obj;

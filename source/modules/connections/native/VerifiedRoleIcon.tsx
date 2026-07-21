@@ -1,10 +1,10 @@
-// Module ID: 5504
-// Function ID: 46861
+// Module ID: 5506
+// Function ID: 46903
 // Name: VerifiedRoleIcon
 // Dependencies: []
 // Exports: default
 
-// Module 5504 (VerifiedRoleIcon)
+// Module 5506 (VerifiedRoleIcon)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 ({ DEFAULT_ROLE_COLOR_HEX: closure_3, EMPTY_STRING_SNOWFLAKE_ID: closure_4 } = arg1(dependencyMap[2]));

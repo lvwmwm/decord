@@ -1,13 +1,12 @@
-// Module ID: 14622
-// Function ID: 110300
+// Module ID: 14629
+// Function ID: 110322
 // Name: PasswordScore
-// Dependencies: [0, 0]
+// Dependencies: []
 // Exports: usePasswordScore
 
-// Module 14622 (PasswordScore)
-import result from "result";
-import closure_3 from "result";
-
+// Module 14629 (PasswordScore)
+let closure_2 = importDefault(dependencyMap[0]);
+let closure_3 = importDefault(dependencyMap[1]);
 let closure_4 = importAll(dependencyMap[2]);
 const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/auth/native/components/utils/usePasswordScore.tsx");
 
@@ -18,7 +17,7 @@ export const usePasswordScore = function usePasswordScore(first) {
   const arg1 = first;
   [tmp2, closure_1] = callback(React.useState(null), 2);
   const tmp = callback(React.useState(null), 2);
-  [tmp4, result] = callback(React.useState(null), 2);
+  [tmp4, closure_2] = callback(React.useState(null), 2);
   const callback = React.useRef(null);
   const effect = React.useEffect(() => {
     closure_3.current = arg0(closure_1[3]).throttle(() => {

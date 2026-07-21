@@ -1,10 +1,10 @@
-// Module ID: 7919
-// Function ID: 63137
+// Module ID: 7923
+// Function ID: 63149
 // Name: getOptionValue
 // Dependencies: []
 // Exports: getBuiltInCommands
 
-// Module 7919 (getOptionValue)
+// Module 7923 (getOptionValue)
 let ALLOWED_DICE_SIDES;
 let DISPLAY_NAME_MAX_LENGTH;
 let MAX_CHANNEL_NAME_LENGTH;
@@ -180,7 +180,7 @@ obj5.execute = function execute(arr) {
 };
 items[sum1] = obj5;
 const sum2 = sum1 + 1;
-const obj7 = { invalidProcessedColor: 116013416832502370000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, InfoDictionaryManager: 0.0000000000000000000000000000000000000000000000000000000000000000000001539468488519776, base64GIFRegex: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000406163257, type: arg1(dependencyMap[12]).ApplicationCommandType.CHAT, inputType: arg1(dependencyMap[9]).ApplicationCommandInputType.BUILT_IN_TEXT, applicationId: BuiltInSectionId.BUILT_IN };
+const obj7 = { lineHeight: false, flex: false, alignSelf: false, type: arg1(dependencyMap[12]).ApplicationCommandType.CHAT, inputType: arg1(dependencyMap[9]).ApplicationCommandInputType.BUILT_IN_TEXT, applicationId: BuiltInSectionId.BUILT_IN };
 Object.defineProperty(obj7, "untranslatedDescription", {
   get: () => {
     const intl = arg1(dependencyMap[10]).intl;
@@ -238,7 +238,7 @@ obj7.execute = function execute(arr) {
 };
 items[sum2] = obj7;
 const sum3 = sum2 + 1;
-const obj9 = { invalidProcessedColor: "/assets/.cache/intl/bW9kdWxlcy9nb19saXZlL3dlYi9tb2RhbA==", InfoDictionaryManager: null, base64GIFRegex: "277cee809330c511936d96d22ff4ddc7", type: arg1(dependencyMap[12]).ApplicationCommandType.CHAT, inputType: arg1(dependencyMap[9]).ApplicationCommandInputType.BUILT_IN_TEXT, applicationId: BuiltInSectionId.BUILT_IN };
+const obj9 = { lineHeight: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000005226104704568478, flex: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011082505471144278, alignSelf: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000031315130858456104, type: arg1(dependencyMap[12]).ApplicationCommandType.CHAT, inputType: arg1(dependencyMap[9]).ApplicationCommandInputType.BUILT_IN_TEXT, applicationId: BuiltInSectionId.BUILT_IN };
 Object.defineProperty(obj9, "untranslatedDescription", {
   get: () => {
     const intl = arg1(dependencyMap[10]).intl;
@@ -283,7 +283,7 @@ obj9.execute = function execute(arr) {
 };
 items[sum3] = obj9;
 const sum4 = sum3 + 1;
-const obj11 = { invalidProcessedColor: true, InfoDictionaryManager: "/assets/images/native/premium/upsell", base64GIFRegex: 49, type: arg1(dependencyMap[12]).ApplicationCommandType.CHAT, inputType: arg1(dependencyMap[9]).ApplicationCommandInputType.BUILT_IN_TEXT, applicationId: BuiltInSectionId.BUILT_IN };
+const obj11 = { lineHeight: true, flex: "/assets/images/native/premium/upsell", alignSelf: 49, type: arg1(dependencyMap[12]).ApplicationCommandType.CHAT, inputType: arg1(dependencyMap[9]).ApplicationCommandInputType.BUILT_IN_TEXT, applicationId: BuiltInSectionId.BUILT_IN };
 Object.defineProperty(obj11, "untranslatedDescription", {
   get: () => {
     const intl = arg1(dependencyMap[10]).intl;
@@ -342,7 +342,7 @@ Object.defineProperty(obj13, "displayDescription", {
   },
   set: undefined
 });
-const obj14 = { markerEnd: null, clipPath: "6922badb2f007833b3becc6f00bcb5a4", type: arg1(dependencyMap[12]).ApplicationCommandOptionType.STRING };
+const obj14 = { "Bool(false)": null, "Bool(false)": "6922badb2f007833b3becc6f00bcb5a4", type: arg1(dependencyMap[12]).ApplicationCommandOptionType.STRING };
 Object.defineProperty(obj14, "description", {
   get: () => {
     const intl = arg1(dependencyMap[10]).intl;
@@ -410,7 +410,7 @@ Object.defineProperty(obj15, "displayDescription", {
   },
   set: undefined
 });
-const obj16 = { markerEnd: "domInteractive", clipPath: "ratio", type: arg1(dependencyMap[12]).ApplicationCommandOptionType.STRING };
+const obj16 = { type: arg1(dependencyMap[12]).ApplicationCommandOptionType.STRING };
 Object.defineProperty(obj16, "description", {
   get: () => {
     const intl = arg1(dependencyMap[10]).intl;
@@ -500,7 +500,7 @@ Object.defineProperty(obj18, "displayDescription", {
   },
   set: undefined
 });
-const obj19 = { markerEnd: "/assets/modules/premium/roadblocks/images", clipPath: 552, type: arg1(dependencyMap[12]).ApplicationCommandOptionType.USER };
+const obj19 = { "Bool(false)": "/assets/modules/premium/roadblocks/images", "Bool(false)": 552, type: arg1(dependencyMap[12]).ApplicationCommandOptionType.USER };
 Object.defineProperty(obj19, "description", {
   get: () => {
     const intl = arg1(dependencyMap[10]).intl;
@@ -613,7 +613,7 @@ Object.defineProperty(obj21, "displayDescription", {
   },
   set: undefined
 });
-const obj22 = { markerEnd: "/assets/modules/premium/roadblocks/images", clipPath: 552, type: arg1(dependencyMap[12]).ApplicationCommandOptionType.USER };
+const obj22 = { "Bool(false)": "/assets/modules/premium/roadblocks/images", "Bool(false)": 552, type: arg1(dependencyMap[12]).ApplicationCommandOptionType.USER };
 Object.defineProperty(obj22, "description", {
   get: () => {
     const intl = arg1(dependencyMap[10]).intl;
@@ -630,7 +630,7 @@ Object.defineProperty(obj22, "displayDescription", {
 });
 obj22.required = true;
 const items10 = [obj22, , ];
-const obj23 = { markerEnd: "<string:1685934336>", clipPath: "<string:3613147409>", type: arg1(dependencyMap[12]).ApplicationCommandOptionType.INTEGER };
+const obj23 = { "Bool(false)": "<string:3084210432>", "Bool(false)": "<string:1410482449>", type: arg1(dependencyMap[12]).ApplicationCommandOptionType.INTEGER };
 Object.defineProperty(obj23, "description", {
   get: () => {
     const intl = arg1(dependencyMap[10]).intl;
@@ -792,7 +792,7 @@ obj21.execute = function execute(arr, guild) {
 };
 items[sum8] = obj21;
 const sum9 = sum8 + 1;
-const obj25 = { invalidProcessedColor: "MASTERPASS_ACCOUNT_TOKENIZATION_FAILED", InfoDictionaryManager: "Could not tokenize user's Masterpass account.", base64GIFRegex: null, type: arg1(dependencyMap[12]).ApplicationCommandType.CHAT, inputType: arg1(dependencyMap[9]).ApplicationCommandInputType.BUILT_IN, applicationId: BuiltInSectionId.BUILT_IN };
+const obj25 = { lineHeight: "<string:16777506>", flex: "<string:1345667345>", alignSelf: "<string:1124139010>", type: arg1(dependencyMap[12]).ApplicationCommandType.CHAT, inputType: arg1(dependencyMap[9]).ApplicationCommandInputType.BUILT_IN, applicationId: BuiltInSectionId.BUILT_IN };
 Object.defineProperty(obj25, "untranslatedDescription", {
   get: () => {
     const intl = arg1(dependencyMap[10]).intl;
@@ -807,7 +807,7 @@ Object.defineProperty(obj25, "displayDescription", {
   },
   set: undefined
 });
-const obj26 = { markerEnd: "/assets/modules/premium/roadblocks/images", clipPath: 552, type: arg1(dependencyMap[12]).ApplicationCommandOptionType.USER };
+const obj26 = { "Bool(false)": "/assets/modules/premium/roadblocks/images", "Bool(false)": 552, type: arg1(dependencyMap[12]).ApplicationCommandOptionType.USER };
 Object.defineProperty(obj26, "description", {
   get: () => {
     const intl = arg1(dependencyMap[10]).intl;
@@ -824,7 +824,7 @@ Object.defineProperty(obj26, "displayDescription", {
 });
 obj26.required = true;
 const items11 = [obj26, , ];
-const obj27 = { markerEnd: "chart", clipPath: "%encodeURI%", type: arg1(dependencyMap[12]).ApplicationCommandOptionType.INTEGER };
+const obj27 = { "Bool(false)": "Array", "Bool(false)": "merman", type: arg1(dependencyMap[12]).ApplicationCommandOptionType.INTEGER };
 Object.defineProperty(obj27, "description", {
   get: () => {
     const intl = arg1(dependencyMap[10]).intl;
@@ -940,7 +940,7 @@ obj25.execute = function execute(arr, guild) {
 };
 items[sum9] = obj25;
 const sum10 = sum9 + 1;
-const obj29 = { invalidProcessedColor: 488, InfoDictionaryManager: 240, base64GIFRegex: null, type: arg1(dependencyMap[12]).ApplicationCommandType.CHAT, inputType: arg1(dependencyMap[9]).ApplicationCommandInputType.BUILT_IN, applicationId: BuiltInSectionId.BUILT_IN };
+const obj29 = { lineHeight: 488, flex: 240, alignSelf: null, type: arg1(dependencyMap[12]).ApplicationCommandType.CHAT, inputType: arg1(dependencyMap[9]).ApplicationCommandInputType.BUILT_IN, applicationId: BuiltInSectionId.BUILT_IN };
 Object.defineProperty(obj29, "untranslatedDescription", {
   get: () => {
     const intl = arg1(dependencyMap[10]).intl;
@@ -955,7 +955,7 @@ Object.defineProperty(obj29, "displayDescription", {
   },
   set: undefined
 });
-const obj30 = { markerEnd: "/assets/modules/premium/roadblocks/images", clipPath: 552, type: arg1(dependencyMap[12]).ApplicationCommandOptionType.USER };
+const obj30 = { "Bool(false)": "/assets/modules/premium/roadblocks/images", "Bool(false)": 552, type: arg1(dependencyMap[12]).ApplicationCommandOptionType.USER };
 Object.defineProperty(obj30, "description", {
   get: () => {
     const intl = arg1(dependencyMap[10]).intl;
@@ -1026,7 +1026,7 @@ obj29.execute = function execute(arr, channel) {
   }
 };
 items[sum10] = obj29;
-const obj32 = { invalidProcessedColor: "1653812d24f945a581bfdacd052d1cd9", InfoDictionaryManager: "app_icons_upsell", base64GIFRegex: "png", type: arg1(dependencyMap[12]).ApplicationCommandType.CHAT, inputType: arg1(dependencyMap[9]).ApplicationCommandInputType.BUILT_IN, applicationId: BuiltInSectionId.BUILT_IN };
+const obj32 = { lineHeight: "1653812d24f945a581bfdacd052d1cd9", flex: "app_icons_upsell", alignSelf: "png", type: arg1(dependencyMap[12]).ApplicationCommandType.CHAT, inputType: arg1(dependencyMap[9]).ApplicationCommandInputType.BUILT_IN, applicationId: BuiltInSectionId.BUILT_IN };
 Object.defineProperty(obj32, "untranslatedDescription", {
   get: () => {
     const intl = arg1(dependencyMap[10]).intl;
@@ -1059,7 +1059,7 @@ Object.defineProperty(obj33, "displayDescription", {
 obj33.minValue = 1;
 obj33.maxValue = MAX_DICE_COUNT;
 const items13 = [obj33, ];
-const obj34 = { markerEnd: "/assets/modules/saved_messages", clipPath: 297, type: arg1(dependencyMap[12]).ApplicationCommandOptionType.INTEGER };
+const obj34 = { "Bool(false)": "/assets/modules/saved_messages", "Bool(false)": 297, type: arg1(dependencyMap[12]).ApplicationCommandOptionType.INTEGER };
 Object.defineProperty(obj34, "description", {
   get: () => {
     const intl = arg1(dependencyMap[10]).intl;
@@ -1098,7 +1098,7 @@ obj32.execute = function execute(arr, channel) {
 };
 items[sum10 + 1] = obj32;
 const found = items.filter((untranslatedName) => {
-  const items = [-0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000012312983509776529, 11507672741819270000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, 607985277229569900000000000000000000000000000000000, -0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000009767701535219839, 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000009174367075386557, 953846452.6406251, 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007425801292461241, 127277221737550110000000000, 4539866379538984000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000];
+  const items = [false, false, false, false, false, false, false, false, false];
   return items.includes(untranslatedName.untranslatedName);
 });
 const tmp4 = arg1(dependencyMap[6]);

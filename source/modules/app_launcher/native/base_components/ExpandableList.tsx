@@ -1,10 +1,10 @@
-// Module ID: 11211
-// Function ID: 87321
+// Module ID: 11217
+// Function ID: 87344
 // Name: ExpandableList
 // Dependencies: []
 // Exports: default
 
-// Module 11211 (ExpandableList)
+// Module 11217 (ExpandableList)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 const View = arg1(dependencyMap[2]).View;
@@ -194,7 +194,7 @@ export default function ExpandableList(items) {
     }
     obj7.accessibilityLabel = stringResult;
     let obj9 = { style: tmp.expandCTALabelContainer };
-    let obj10 = { "Bool(false)": "tertiary", "Bool(false)": "sm" };
+    let obj10 = {};
     let num5 = 10;
     const intl3 = arg1(dependencyMap[10]).intl;
     if (first) {

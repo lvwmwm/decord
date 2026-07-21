@@ -1,20 +1,18 @@
-// Module ID: 14982
-// Function ID: 112870
+// Module ID: 14989
+// Function ID: 112894
 // Name: Username
 // Dependencies: []
 
-// Module 14982 (Username)
+// Module 14989 (Username)
 function Username(arg0) {
   let userId;
   let username;
   ({ userId, username } = arg0);
-  let obj = {};
+  const obj = {};
   const items = [callback3().usernameRow];
   obj.style = items;
-  obj = { -749626510: null, 71459589: "", 1446733015: "", 1717680042: "0", 1642191441: "none", -1399762125: "24", 425831568: "24", userId, userName: username };
   const items1 = [{ flexShrink: 1 }];
-  obj.style = items1;
-  const items2 = [callback(importDefault(dependencyMap[6]), obj), callback(arg1(dependencyMap[7]).ChevronSmallDownIcon, {})];
+  const items2 = [callback(importDefault(dependencyMap[6]), { userId, userName: username, style: items1 }), callback(arg1(dependencyMap[7]).ChevronSmallDownIcon, {})];
   obj.children = items2;
   return callback2(View, obj);
 }
@@ -26,8 +24,8 @@ const tmp2 = arg1(dependencyMap[3]);
 let obj = { userText: {} };
 obj = { flexDirection: "row", gap: importDefault(dependencyMap[5]).space.PX_4 };
 obj.statusRow = obj;
-obj.statusEmoji = { aze: "<string:16777479>", azj: "<string:36295491>" };
-obj.usernameRow = { -9223372036854775808: null, 653616909531: null, 9223372036854775807: null, 0: null };
+obj.statusEmoji = {};
+obj.usernameRow = { x: null, y: null, size: null, flexDirection: null };
 obj.statusText = { flexShrink: 1 };
 let closure_7 = arg1(dependencyMap[4]).createStyles(obj);
 const obj2 = arg1(dependencyMap[4]);
@@ -60,7 +58,7 @@ const memoResult = importAllResult.memo(function YouName(arg0) {
     tmp11 = callback(importDefault(dependencyMap[11]), obj1);
   }
   const items2 = [tmp11, ];
-  obj2 = { "Bool(true)": 3309567, "Bool(true)": 601874432, "Bool(true)": 4319821, "Bool(true)": -367009792, "Bool(true)": 1900146671, style: tmp.statusText };
+  obj2 = { "Bool(true)": "<string:2682257408>", "Bool(true)": null, "Bool(true)": null, "Bool(true)": null, "Bool(true)": null, style: tmp.statusText };
   if (null == gameMentionsAsPlainText) {
     gameMentionsAsPlainText = arg1(dependencyMap[13]).humanizeStatus(stateFromStores);
     const obj8 = arg1(dependencyMap[13]);

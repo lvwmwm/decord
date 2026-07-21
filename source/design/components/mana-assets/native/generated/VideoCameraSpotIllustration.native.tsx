@@ -1,13 +1,13 @@
-// Module ID: 6599
-// Function ID: 50772
+// Module ID: 6603
+// Function ID: 50818
 // Name: VideoCameraSpotIllustration
-// Dependencies: []
+// Dependencies: [0, 0, 0, 0]
 // Exports: VideoCameraSpotIllustration
 
-// Module 6599 (VideoCameraSpotIllustration)
-const jsx = require(dependencyMap[0]).jsx;
-const _module = require(dependencyMap[3]);
-const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/VideoCameraSpotIllustration.native.tsx");
+// Module 6603 (VideoCameraSpotIllustration)
+import { jsx } from "__exportStarResult1";
+
+const result = require("__exportStarResult1").fileFinishedImporting("design/components/mana-assets/native/generated/VideoCameraSpotIllustration.native.tsx");
 
 export const VideoCameraSpotIllustration = function VideoCameraSpotIllustration(width) {
   let accessibilityLabel;

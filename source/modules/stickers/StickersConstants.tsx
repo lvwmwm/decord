@@ -1,7 +1,7 @@
 // Module ID: 3804
 // Function ID: 31370
 // Name: STICKER_PICKER_TAB_PANEL_ID
-// Dependencies: []
+// Dependencies: [284214097]
 
 // Module 3804 (STICKER_PICKER_TAB_PANEL_ID)
 const _module = require(dependencyMap[0]);

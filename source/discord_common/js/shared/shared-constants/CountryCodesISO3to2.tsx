@@ -1,7 +1,7 @@
 // Module ID: 3812
 // Function ID: 31688
 // Name: CountryCodesISO3to2
-// Dependencies: []
+// Dependencies: [284214097]
 
 // Module 3812 (CountryCodesISO3to2)
 const _module = require(dependencyMap[0]);

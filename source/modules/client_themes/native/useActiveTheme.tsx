@@ -1,10 +1,10 @@
-// Module ID: 8819
-// Function ID: 69535
+// Module ID: 8823
+// Function ID: 69547
 // Name: useActiveThemeType
 // Dependencies: []
 // Exports: useIsClientThemeOrCustomThemeActive, useIsCustomThemeActive
 
-// Module 8819 (useActiveThemeType)
+// Module 8823 (useActiveThemeType)
 function useActiveThemeType() {
   const items = [closure_5];
   const stateFromStores = arg1(dependencyMap[4]).useStateFromStores(items, () => closure_5.hasCustomTheme());

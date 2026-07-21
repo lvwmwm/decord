@@ -1,9 +1,9 @@
-// Module ID: 6785
-// Function ID: 53577
+// Module ID: 6791
+// Function ID: 53626
 // Name: CollectiblesUserDiscountRecord
 // Dependencies: []
 
-// Module 6785 (CollectiblesUserDiscountRecord)
+// Module 6791 (CollectiblesUserDiscountRecord)
 let closure_0 = importDefault(dependencyMap[0]);
 let closure_1 = importDefault(dependencyMap[1]);
 const tmp2 = () => {

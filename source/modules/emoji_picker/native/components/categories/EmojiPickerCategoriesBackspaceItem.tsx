@@ -1,10 +1,10 @@
-// Module ID: 9412
-// Function ID: 73261
+// Module ID: 9416
+// Function ID: 73275
 // Name: EmojiPickerCategoriesBackspaceItem
 // Dependencies: []
 // Exports: default
 
-// Module 9412 (EmojiPickerCategoriesBackspaceItem)
+// Module 9416 (EmojiPickerCategoriesBackspaceItem)
 let closure_2 = importAll(dependencyMap[0]);
 const Pressable = arg1(dependencyMap[1]).Pressable;
 const NODE_MARGIN = arg1(dependencyMap[2]).NODE_MARGIN;

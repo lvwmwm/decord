@@ -1,10 +1,10 @@
-// Module ID: 12073
-// Function ID: 93152
+// Module ID: 12080
+// Function ID: 93175
 // Name: restoreEventRecurrence
 // Dependencies: []
 // Exports: default
 
-// Module 12073 (restoreEventRecurrence)
+// Module 12080 (restoreEventRecurrence)
 const _module = require(dependencyMap[1]);
 const result = _module.fileFinishedImporting("modules/guild_scheduled_events/restoreEventRecurrence.tsx");
 

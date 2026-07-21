@@ -1,10 +1,10 @@
-// Module ID: 6811
-// Function ID: 53705
+// Module ID: 6817
+// Function ID: 53754
 // Name: constructGoLiveSource
 // Dependencies: []
 // Exports: buildFetchCollectiblesOptionsQuery, constructGoLiveSource, getOptimizedProfileEffectThumbnailUrl, useFetchFractionalPremiumInfo
 
-// Module 6811 (constructGoLiveSource)
+// Module 6817 (constructGoLiveSource)
 const ApplicationStreamPresets = require(dependencyMap[0]).ApplicationStreamPresets;
 const _module = require(dependencyMap[5]);
 const result = _module.fileFinishedImporting("modules/collectibles/utils/CollectiblesUtils.tsx");

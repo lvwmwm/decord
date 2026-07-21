@@ -1,10 +1,10 @@
-// Module ID: 7802
-// Function ID: 62266
+// Module ID: 7806
+// Function ID: 62278
 // Name: useHeroColors
 // Dependencies: []
 // Exports: default, getHeroColors
 
-// Module 7802 (useHeroColors)
+// Module 7806 (useHeroColors)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 let closure_5 = importDefault(dependencyMap[2]);

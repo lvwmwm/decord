@@ -1,10 +1,10 @@
-// Module ID: 7479
-// Function ID: 60041
+// Module ID: 7483
+// Function ID: 60053
 // Name: getSafetyToastTypeContent
 // Dependencies: []
 // Exports: getSafetyToastTypeContent
 
-// Module 7479 (getSafetyToastTypeContent)
+// Module 7483 (getSafetyToastTypeContent)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 const SafetyToastType = arg1(dependencyMap[2]).SafetyToastType;

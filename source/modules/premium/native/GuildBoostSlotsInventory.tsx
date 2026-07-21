@@ -1,10 +1,10 @@
-// Module ID: 12305
-// Function ID: 94319
+// Module ID: 12312
+// Function ID: 94342
 // Name: GuildBoostSlotCooldown
 // Dependencies: []
 // Exports: default
 
-// Module 12305 (GuildBoostSlotCooldown)
+// Module 12312 (GuildBoostSlotCooldown)
 function GuildBoostSlotCooldown(cooldownEndsAt) {
   let days;
   let hours;
@@ -18,7 +18,7 @@ function GuildBoostSlotCooldown(cooldownEndsAt) {
   const tmp2 = importDefault(dependencyMap[11])(memo, 15000);
   let tmp4 = null;
   if (valueOfResult > Date.now()) {
-    let obj = { Promise: "ur", marginTop: "SECTION_INDEX_FIRST_NAMED_CATEGORY", flags: "ur", style: tmp.subscriptionSlotInfoCooldown };
+    let obj = { style: tmp.subscriptionSlotInfoCooldown };
     const intl = arg1(dependencyMap[13]).intl;
     obj = { days, hours, minutes };
     obj.children = intl.format(arg1(dependencyMap[13]).t.NffSH8, obj);
@@ -36,8 +36,7 @@ function GuildBoostSlotsInventoryRow(arg0) {
   let obj = { style: tmp.subscriptionSlot };
   obj = { style: tmp.subscriptionSlotInner };
   obj = { style: tmp.subscriptionSlotInfo };
-  const obj1 = { backgroundColor: null, alignItems: null, flexDirection: null, borderRadius: null, style: tmp.subscriptionSlotInfoTitle, children: title };
-  const items = [callback(arg1(dependencyMap[12]).Text, obj1), subtitle];
+  const items = [callback(arg1(dependencyMap[12]).Text, { style: tmp.subscriptionSlotInfoTitle, children: title }), subtitle];
   obj.children = items;
   const items1 = [callback2(closure_5, obj), action];
   obj.children = items1;
@@ -92,7 +91,7 @@ function GuildBoostSlot(guildBoostSlot) {
               return guildBoostSlot(closure_3[16]).openTransferModal({ guildBoostSlots });
             }
       };
-      const obj3 = { INTEGRATION_CREATE: "chart", ConstraintReasonCode: "toString" };
+      const obj3 = {};
       const intl2 = arg1(dependencyMap[13]).intl;
       obj3.children = intl2.string(arg1(dependencyMap[13]).t.jqqLb6);
       obj2.children = callback(arg1(dependencyMap[12]).Text, obj3);
@@ -186,7 +185,7 @@ function BoostedGuildInfo(guild) {
     const obj3 = { style: tmp.guildInfoRowBottom };
     const obj4 = { source: importDefault(dependencyMap[18]), style: tmp.guildInfoRowIcon };
     const items2 = [callback(closure_6, obj4), ];
-    const obj5 = { Promise: null, marginTop: null, flags: null, style: tmp.guildInfoSubscriptionCount };
+    const obj5 = { "Null": null, "Null": null, "Null": null, style: tmp.guildInfoSubscriptionCount };
     const intl = arg1(dependencyMap[13]).intl;
     const obj6 = { numSubscriptions: guild.numGuildBoostSlots };
     obj5.children = intl.format(arg1(dependencyMap[13]).t.bexfNy, obj6);
@@ -261,14 +260,14 @@ let closure_10 = importDefault(dependencyMap[5]);
 const tmp2 = arg1(dependencyMap[1]);
 ({ jsx: closure_11, jsxs: closure_12, Fragment: closure_13 } = arg1(dependencyMap[7]));
 let obj = arg1(dependencyMap[8]);
-obj = { inventory: { marginBottom: 32 }, header: { <string:80596992>: "<string:16777479>", <string:80602112>: "<string:36295491>" } };
+obj = { inventory: { marginBottom: 32 }, header: {} };
 obj = { borderRadius: importDefault(dependencyMap[9]).radii.xs, marginBottom: 16 };
 obj.boostedGuild = obj;
 const tmp3 = arg1(dependencyMap[7]);
 obj.subscriptionBody = { backgroundColor: importDefault(dependencyMap[9]).colors.BACKGROUND_BASE_LOWEST };
 const obj1 = { backgroundColor: importDefault(dependencyMap[9]).colors.BACKGROUND_BASE_LOWEST };
 obj.subscriptionImageView = { backgroundColor: importDefault(dependencyMap[9]).colors.BACKGROUND_MOD_NORMAL };
-obj.subscriptionImage = { "Null": true, "Null": false, "Null": "" };
+obj.subscriptionImage = { "Null": null, "Null": null, "Null": null };
 obj.subscriptionImageFallback = { opacity: 0.4 };
 const obj2 = { backgroundColor: importDefault(dependencyMap[9]).colors.BACKGROUND_MOD_NORMAL };
 obj.subscriptionImageOverlay = { backgroundColor: importDefault(dependencyMap[9]).colors.BLACK };
@@ -279,15 +278,15 @@ const obj3 = { backgroundColor: importDefault(dependencyMap[9]).colors.BLACK };
 const merged = Object.assign(importDefault(dependencyMap[10])(arg1(dependencyMap[6]).Fonts.DISPLAY_EXTRABOLD, importDefault(dependencyMap[9]).colors.INTERACTIVE_TEXT_ACTIVE, 20));
 obj4["marginBottom"] = 4;
 obj.guildInfoName = obj4;
-obj.guildInfoRowBottom = { -9223372036854775808: true, filter: true };
+obj.guildInfoRowBottom = {};
 obj.guildInfoRowIcon = {};
 obj.guildInfoSubscriptionCount = { lineHeight: 16 };
 const importDefaultResult = importDefault(dependencyMap[10]);
 obj.subscriptionSlot = { backgroundColor: importDefault(dependencyMap[9]).colors.BACKGROUND_SURFACE_HIGH, paddingLeft: 16 };
-obj.subscriptionSlotInner = { 9223372036854775807: "<string:2102460418>", 9223372036854775807: "<string:3510702436>", -9223372036854775808: "<string:1912603027>", 9223372036854775807: "delete" };
+obj.subscriptionSlotInner = {};
 const obj5 = { backgroundColor: importDefault(dependencyMap[9]).colors.BACKGROUND_SURFACE_HIGH, paddingLeft: 16 };
 obj.subscriptionSlotBorder = { backgroundColor: importDefault(dependencyMap[9]).colors.BORDER_SUBTLE, height: 1 };
-obj.subscriptionSlotInfo = { "Bool(false)": "innocent", <string:1419386345>: "innocent" };
+obj.subscriptionSlotInfo = {};
 obj.subscriptionSlotInfoTitle = { lineHeight: 24 };
 obj.subscriptionSlotInfoCooldown = { lineHeight: 16 };
 obj.unusedSlots = { marginBottom: 32 };

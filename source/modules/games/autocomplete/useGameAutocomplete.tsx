@@ -1,10 +1,10 @@
-// Module ID: 7091
-// Function ID: 57039
+// Module ID: 7095
+// Function ID: 57050
 // Name: fetchStore
 // Dependencies: []
 // Exports: useDebouncedGameAutocomplete
 
-// Module 7091 (fetchStore)
+// Module 7095 (fetchStore)
 let closure_2 = importDefault(dependencyMap[0]);
 let closure_3 = importAll(dependencyMap[1]);
 const importDefaultResult = importDefault(dependencyMap[2]);

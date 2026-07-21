@@ -1,9 +1,9 @@
-// Module ID: 5410
-// Function ID: 46369
+// Module ID: 5412
+// Function ID: 46411
 // Name: IPCEvents
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 5410 (IPCEvents)
+// Module 5412 (IPCEvents)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_common/js/packages/discord-native-types/IPCEvents.tsx");
 

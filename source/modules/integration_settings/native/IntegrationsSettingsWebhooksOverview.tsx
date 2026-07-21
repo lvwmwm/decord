@@ -1,10 +1,10 @@
-// Module ID: 15390
-// Function ID: 117424
+// Module ID: 15397
+// Function ID: 117448
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 // Exports: default
 
-// Module 15390 (_isNativeReflectConstruct)
+// Module 15397 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -144,7 +144,7 @@ let obj = arg1(dependencyMap[16]);
 obj = {};
 obj = { backgroundColor: importDefault(dependencyMap[17]).colors.BACKGROUND_BASE_LOWER, paddingTop: 16 };
 obj.form = obj;
-obj.hint = { "Null": "<string:16777479>", "Null": "<string:36295491>" };
+obj.hint = {};
 const tmp5 = arg1(dependencyMap[15]);
 obj.row = { padding: importDefault(dependencyMap[17]).modules.mobile.TABLE_ROW_PADDING };
 let closure_26 = obj.createLegacyClassComponentStyles(obj);
@@ -203,8 +203,7 @@ const tmp6 = (PureComponent) => {
       }
       let obj = {};
       const helpText = self.getHelpText();
-      obj = { INTEGRATION_CREATE: "<string:3305963521>", ConstraintReasonCode: "<string:671547393>", children: helpText };
-      const items = [callback4(WebhooksOverview(closure_2[30]).Text, obj), , ];
+      const items = [callback4(WebhooksOverview(closure_2[30]).Text, { children: helpText }), , ];
       let tmp4 = webhookType === constants2.INCOMING;
       if (tmp4) {
         obj = { guild: self.props.guild, channel: self.props.channel };
@@ -212,7 +211,7 @@ const tmp6 = (PureComponent) => {
       }
       items[1] = tmp4;
       if (0 === found.length) {
-        const obj1 = { Illustration: WebhooksOverview(closure_2[31]).WebhookEmpty };
+        obj = { Illustration: WebhooksOverview(closure_2[31]).WebhookEmpty };
         if (webhookType === constants2.CHANNEL_FOLLOWER) {
           const intl2 = WebhooksOverview(closure_2[22]).intl;
           let stringResult = intl2.string(WebhooksOverview(closure_2[22]).t.dkHRkE);
@@ -220,11 +219,11 @@ const tmp6 = (PureComponent) => {
           const intl = WebhooksOverview(closure_2[22]).intl;
           stringResult = intl.string(WebhooksOverview(closure_2[22]).t.4JAVI+);
         }
-        obj1.title = stringResult;
-        callback4(WebhooksOverview(closure_2[21]).EmptyState, obj1);
+        obj.title = stringResult;
+        callback4(WebhooksOverview(closure_2[21]).EmptyState, obj);
         const tmp10 = callback4;
       } else {
-        const obj2 = {
+        const obj1 = {
           hasIcons: true,
           children: found.map((type) => {
               let avatar;
@@ -250,7 +249,7 @@ const tmp6 = (PureComponent) => {
               return closure_23(closure_31, obj, id);
             })
         };
-        items[2] = callback4(WebhooksOverview(closure_2[32]).TableRowGroup, obj2);
+        items[2] = callback4(WebhooksOverview(closure_2[32]).TableRowGroup, obj1);
         obj.children = items;
         return closure_25(closure_24, obj);
       }

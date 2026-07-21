@@ -1,10 +1,10 @@
-// Module ID: 10829
-// Function ID: 84066
+// Module ID: 10835
+// Function ID: 84089
 // Name: bountyCtaFromServer
 // Dependencies: []
 // Exports: bountyFromServer
 
-// Module 10829 (bountyCtaFromServer)
+// Module 10835 (bountyCtaFromServer)
 function bountyCtaFromServer(cta) {
   let obj = { url: cta.url, buttonLabel: cta.button_label };
   let tmp;

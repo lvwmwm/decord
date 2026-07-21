@@ -1,10 +1,16 @@
-// Module ID: 7721
-// Function ID: 61422
+// Module ID: 7725
+// Function ID: 61434
 // Name: getMessageContent
-// Dependencies: []
+// Dependencies: [0, 0, 0, 0, 0, 0, 0, 0, 0]
 // Exports: createJoinRequestNotificationSystemMessage
 
-// Module 7721 (getMessageContent)
+// Module 7725 (getMessageContent)
+import __exportStarResult1 from "__exportStarResult1";
+import closure_4 from "__exportStarResult1";
+import closure_5 from "__exportStarResult1";
+import closure_6 from "__exportStarResult1";
+import { MessageTypes } from "__exportStarResult1";
+
 function getMessageContent(arg0, username, guildName) {
   if (MessageTypes.GUILD_JOIN_REQUEST_ACCEPT_NOTIFICATION === arg0) {
     if (null != username) {
@@ -43,12 +49,7 @@ function getMessageContent(arg0, username, guildName) {
     return "";
   }
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-const MessageTypes = arg1(dependencyMap[4]).MessageTypes;
-const result = arg1(dependencyMap[8]).fileFinishedImporting("modules/messages/native/renderer/system_messages/JoinRequestNotificationSystemMessage.tsx");
+const result = require("__exportStarResult1").fileFinishedImporting("modules/messages/native/renderer/system_messages/JoinRequestNotificationSystemMessage.tsx");
 
 export const createJoinRequestNotificationSystemMessage = function createJoinRequestNotificationSystemMessage(message) {
   message = message.message;

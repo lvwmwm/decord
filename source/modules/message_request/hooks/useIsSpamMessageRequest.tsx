@@ -1,10 +1,10 @@
-// Module ID: 10387
-// Function ID: 80074
+// Module ID: 10393
+// Function ID: 80097
 // Name: useIsSpamMessageRequest
 // Dependencies: []
 // Exports: useIsSpamMessageRequest
 
-// Module 10387 (useIsSpamMessageRequest)
+// Module 10393 (useIsSpamMessageRequest)
 let closure_2 = importDefault(dependencyMap[0]);
 const result = arg1(dependencyMap[2]).fileFinishedImporting("modules/message_request/hooks/useIsSpamMessageRequest.tsx");
 

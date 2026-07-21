@@ -1,10 +1,10 @@
-// Module ID: 13733
-// Function ID: 103894
+// Module ID: 13740
+// Function ID: 103917
 // Name: trackEmptyStateCardClicked
 // Dependencies: [670, 2, 6]
 // Exports: trackEmptyStateCardClicked
 
-// Module 13733 (trackEmptyStateCardClicked)
+// Module 13740 (trackEmptyStateCardClicked)
 import { AnalyticEvents } from "MessageEmbedTypes";
 import _classCallCheck from "_classCallCheck";
 

@@ -1,10 +1,10 @@
-// Module ID: 9798
-// Function ID: 76086
+// Module ID: 9803
+// Function ID: 76102
 // Name: navigateToThreadCreation
 // Dependencies: []
 // Exports: navigateToThreadCreation
 
-// Module 9798 (navigateToThreadCreation)
+// Module 9803 (navigateToThreadCreation)
 const _module = require(dependencyMap[3]);
 const result = _module.fileFinishedImporting("modules/threads/native/navigateToThreadCreation.tsx");
 

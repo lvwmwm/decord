@@ -1,10 +1,10 @@
-// Module ID: 11979
-// Function ID: 92605
+// Module ID: 11986
+// Function ID: 92628
 // Name: useUserProfileWidgets
 // Dependencies: []
 // Exports: default
 
-// Module 11979 (useUserProfileWidgets)
+// Module 11986 (useUserProfileWidgets)
 let closure_2 = importDefault(dependencyMap[0]);
 let closure_3 = importDefault(dependencyMap[1]);
 let closure_4 = importDefault(dependencyMap[2]);

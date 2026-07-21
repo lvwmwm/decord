@@ -1,10 +1,10 @@
-// Module ID: 14374
-// Function ID: 108502
+// Module ID: 14381
+// Function ID: 108525
 // Name: ShopEmptyState
 // Dependencies: []
 // Exports: default
 
-// Module 14374 (ShopEmptyState)
+// Module 14381 (ShopEmptyState)
 function ShopEmptyState() {
   const obj = { style: { marginTop: 42 }, Illustration: arg1(dependencyMap[7]).NoResults };
   const intl = arg1(dependencyMap[8]).intl;

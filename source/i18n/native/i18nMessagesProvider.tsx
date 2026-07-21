@@ -1,10 +1,10 @@
-// Module ID: 16452
-// Function ID: 127181
+// Module ID: 16459
+// Function ID: 127215
 // Name: i18nManager
 // Dependencies: []
 // Exports: default
 
-// Module 16452 (i18nManager)
+// Module 16459 (i18nManager)
 const _module = require(dependencyMap[1]);
 if (_module.isAndroid()) {
   let i18nManager = importDefault(dependencyMap[2]);

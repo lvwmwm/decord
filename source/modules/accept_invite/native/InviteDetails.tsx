@@ -1,10 +1,10 @@
-// Module ID: 11734
-// Function ID: 91169
+// Module ID: 11741
+// Function ID: 91192
 // Name: getMemberCountFromInvite
 // Dependencies: []
 // Exports: default
 
-// Module 11734 (getMemberCountFromInvite)
+// Module 11741 (getMemberCountFromInvite)
 function getMemberCountFromInvite(invite) {
   const obj = {};
   const approximate_presence_count = invite.approximate_presence_count;
@@ -214,7 +214,7 @@ function InviteJoinContext(invite) {
     const obj13 = arg1(dependencyMap[12]);
   }
   const items1 = [tmp33, ];
-  obj6 = { Promise: "xs", marginTop: "interactive-text-default", flags: "md", style: tmp.inviteJoinText, children: formatResult };
+  obj6 = { "Null": "xs", "Null": "interactive-text-default", "Null": "md", style: tmp.inviteJoinText, children: formatResult };
   items1[1] = callback2(arg1(dependencyMap[18]).Text, obj6);
   obj3.children = items1;
   return closure_13(View, obj3);
@@ -286,25 +286,25 @@ const tmp2 = arg1(dependencyMap[6]);
 ({ jsx: closure_12, jsxs: closure_13, Fragment: closure_14 } = arg1(dependencyMap[8]));
 let obj = arg1(dependencyMap[9]);
 obj = {};
-obj = { paddingVertical: 48, flexDirection: 48, alignItems: null, borderRadius: importDefault(dependencyMap[10]).radii.lg };
+obj = { borderRadius: importDefault(dependencyMap[10]).radii.lg };
 obj.avatar = obj;
 const tmp3 = arg1(dependencyMap[8]);
 obj.avatarContainer = { borderRadius: importDefault(dependencyMap[10]).radii.none };
-obj.inviteJoinContainer = { "Bool(false)": "/assets/images/native/stream_feedback/light-theme-desaturated", "Bool(false)": 64, "Bool(false)": 64, "Bool(false)": null, "Bool(false)": "69e9e79e44fff2fca6c7a210e9bf5b9f" };
+obj.inviteJoinContainer = { darkStaticUrl: "/assets/images/native/stream_feedback/light-theme-desaturated", ad_content_id: 64, announcement_modal_config: 64, isVideoAssetHash: null, spotlight: "69e9e79e44fff2fca6c7a210e9bf5b9f" };
 obj.inviteJoinText = { textAlign: "center" };
 const obj1 = { borderRadius: importDefault(dependencyMap[10]).radii.none };
 obj.inviterIconWrapper = { borderRadius: importDefault(dependencyMap[10]).radii.none, marginRight: 8 };
-const obj3 = { aze: false, azj: false, borderRadius: importDefault(dependencyMap[10]).radii.md };
+const obj3 = { bhk: false, bic: "internal", borderRadius: importDefault(dependencyMap[10]).radii.md };
 obj.inviterIcon = obj3;
 obj.guildNameContainer = {};
 obj.guildNameText = { textAlign: "center" };
 const obj2 = { borderRadius: importDefault(dependencyMap[10]).radii.none, marginRight: 8 };
 obj.featureIcon = { opacity: arg1(dependencyMap[11]).DARK_1_LIGHT_04 };
 obj.memberInfo = {};
-obj.rolesList = {};
-const obj5 = { backgroundColor: importDefault(dependencyMap[10]).unsafe_rawColors.GREEN_360, accessibilityRole: true, -45001119: true, 1379623171: true, borderRadius: importDefault(dependencyMap[10]).radii.sm };
-obj.dotOnline = obj5;
+obj.rolesList = { color: 800, variant: 16, style: 20 };
 const obj4 = { opacity: arg1(dependencyMap[11]).DARK_1_LIGHT_04 };
+obj.dotOnline = { borderRadius: importDefault(dependencyMap[10]).radii.sm, backgroundColor: importDefault(dependencyMap[10]).unsafe_rawColors.GREEN_360 };
+const obj5 = { borderRadius: importDefault(dependencyMap[10]).radii.sm, backgroundColor: importDefault(dependencyMap[10]).unsafe_rawColors.GREEN_360 };
 obj.dotOffline = { borderRadius: importDefault(dependencyMap[10]).radii.sm, backgroundColor: importDefault(dependencyMap[10]).unsafe_rawColors.PRIMARY_400 };
 const obj7 = { justifyContent: null, alignItems: 10, padding: "grab", width: null, height: "\u{1F91F}\u{1F3FF}", flex: true, backgroundColor: importDefault(dependencyMap[10]).colors.BACKGROUND_SURFACE_HIGH, borderRadius: importDefault(dependencyMap[10]).radii.sm };
 obj.embedDetailsCard = obj7;
@@ -401,9 +401,9 @@ export default function InviteDetails(invite) {
   }
   const obj11 = {};
   const obj12 = {
-    <string:3576188030>: "r",
-    <string:3258736661>: "WATCHING",
-    <string:1677446243>: "r",
+    <string:1454006884>: "RBTree",
+    <string:3620889915>: "currentEmbeddedApplication",
+    <string:1388749051>: "SyntaxError",
     icon: tmp24,
     text: stringResult,
     accessibilityLabel: tmp33,
@@ -415,7 +415,7 @@ export default function InviteDetails(invite) {
     disabled: first === constants2.ACCEPT
   };
   const items4 = [callback2(arg1(dependencyMap[25]).Button, obj12), ];
-  obj13 = {};
+  obj13 = { 9223372036854775807: false, -9223372036854775808: false };
   const intl4 = arg1(dependencyMap[16]).intl;
   const string = intl4.string;
   const t = arg1(dependencyMap[16]).t;

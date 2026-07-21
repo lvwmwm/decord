@@ -1,10 +1,10 @@
-// Module ID: 12773
-// Function ID: 97897
+// Module ID: 12780
+// Function ID: 97920
 // Name: LockedIcon
 // Dependencies: []
 // Exports: default
 
-// Module 12773 (LockedIcon)
+// Module 12780 (LockedIcon)
 function LockedIcon() {
   const obj = { size: arg1(dependencyMap[6]).Icon.Sizes.MEDIUM, source: importDefault(dependencyMap[7]) };
   return callback(arg1(dependencyMap[6]).Icon, obj);
@@ -20,7 +20,7 @@ importAll(dependencyMap[0]);
 const Fonts = arg1(dependencyMap[1]).Fonts;
 ({ jsx: closure_3, jsxs: closure_4 } = arg1(dependencyMap[2]));
 let obj = arg1(dependencyMap[3]);
-obj = { container: {}, content: {} };
+obj = { container: {}, content: { 1637379992: null, -2070850841: null } };
 obj = {};
 const tmp3 = arg1(dependencyMap[2]);
 const merged = Object.assign(importDefault(dependencyMap[4])(Fonts.PRIMARY_MEDIUM, importDefault(dependencyMap[5]).colors.TEXT_MUTED, 16));

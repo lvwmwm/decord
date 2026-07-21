@@ -1,9 +1,9 @@
-// Module ID: 8826
-// Function ID: 69630
+// Module ID: 8830
+// Function ID: 69642
 // Name: RouteTypes
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 8826 (RouteTypes)
+// Module 8830 (RouteTypes)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("modules/voice_calls/VoiceCallTypes.tsx");
 

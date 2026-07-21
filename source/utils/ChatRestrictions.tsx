@@ -1,9 +1,9 @@
-// Module ID: 9539
-// Function ID: 74381
+// Module ID: 9544
+// Function ID: 74398
 // Name: items
 // Dependencies: []
 
-// Module 9539 (items)
+// Module 9544 (items)
 const TOKEN_REGEX = require(dependencyMap[0]).TOKEN_REGEX;
 let obj = {
   check(arg0, getGuildId) {

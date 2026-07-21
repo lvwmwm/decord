@@ -1,10 +1,10 @@
-// Module ID: 10327
-// Function ID: 79740
+// Module ID: 10333
+// Function ID: 79759
 // Name: ThreadNotificationsBottomSheet
 // Dependencies: []
 // Exports: default
 
-// Module 10327 (ThreadNotificationsBottomSheet)
+// Module 10333 (ThreadNotificationsBottomSheet)
 let closure_3 = require(dependencyMap[0]).getThreadNotificationOptions;
 const jsx = require(dependencyMap[1]).jsx;
 const _module = require(dependencyMap[9]);

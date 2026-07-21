@@ -1,9 +1,9 @@
-// Module ID: 11087
-// Function ID: 86282
+// Module ID: 11093
+// Function ID: 86305
 // Name: VoiceMessageAnimationState
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 11087 (VoiceMessageAnimationState)
+// Module 11093 (VoiceMessageAnimationState)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("modules/voice_messages/VoiceMessageConstants.tsx");
 

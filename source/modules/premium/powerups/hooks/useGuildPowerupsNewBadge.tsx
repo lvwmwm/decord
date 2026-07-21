@@ -1,15 +1,15 @@
-// Module ID: 11524
-// Function ID: 89784
+// Module ID: 11531
+// Function ID: 89807
 // Name: useBadgeableMarketingVersion
-// Dependencies: [4096, 11533, 1934, 2, 27, 4120, 4017, 4016, 33, 4126, 689]
+// Dependencies: [4096, 11540, 1934, 2, 27, 4120, 4017, 4016, 33, 4126, 689]
 // Exports: default, useAutoDismissGuildPowerupsNewBadge
 
-// Module 11524 (useBadgeableMarketingVersion)
+// Module 11531 (useBadgeableMarketingVersion)
 import showActionSheet from "showActionSheet";
 import GuildPowerupsBottomSheetHeader from "GuildPowerupsBottomSheetHeader";
 import maybeLoadBundle from "maybeLoadBundle";
-import { GuildPowerupNewPerkMarketingVersion as closure_6 } from "keys";
-import { ContentDismissActionType } from "get ActivityIndicator";
+import { GuildPowerupNewPerkMarketingVersion as closure_6 } from "result2";
+import { ContentDismissActionType } from "keys";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 
 function useBadgeableMarketingVersion(guildId) {

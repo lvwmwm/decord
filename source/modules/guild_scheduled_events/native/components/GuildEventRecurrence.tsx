@@ -1,10 +1,10 @@
-// Module ID: 8456
-// Function ID: 67464
+// Module ID: 8460
+// Function ID: 67476
 // Name: GuildEventRecurrence
 // Dependencies: []
 // Exports: default
 
-// Module 8456 (GuildEventRecurrence)
+// Module 8460 (GuildEventRecurrence)
 let closure_3 = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 let closure_5 = importDefault(dependencyMap[2]);
@@ -117,6 +117,8 @@ export default function GuildEventRecurrence(recurrenceId) {
     items4[1] = active;
     obj.style = items4;
     const obj1 = {
+      positionBottom: false,
+      positionRight: false,
       accessibilityLabel: sum1,
       onPress(stopPropagation) {
           stopPropagation.stopPropagation();
@@ -135,13 +137,13 @@ export default function GuildEventRecurrence(recurrenceId) {
     const items5 = [callback(arg1(dependencyMap[14]).PressableOpacity, obj1), ];
     obj3 = { style: tmp.actions };
     if (tmp10) {
-      obj4 = { INTEGRATION_CREATE: "FOCUS_CHANNEL_TEXT_AREA", ConstraintReasonCode: "ka" };
+      obj4 = {};
       const intl2 = arg1(dependencyMap[13]).intl;
       obj4.children = intl2.string(arg1(dependencyMap[13]).t.fyBVRm);
       tmp10 = callback(arg1(dependencyMap[16]).Text, obj4);
     }
     const items6 = [tmp10, ];
-    obj5 = {};
+    obj5 = { positionBottom: false, positionRight: false };
     const intl3 = arg1(dependencyMap[13]).intl;
     const _HermesInternal3 = HermesInternal;
     obj5.accessibilityLabel = "" + intl3.string(arg1(dependencyMap[13]).t.HIgA5a) + ", " + sum1;

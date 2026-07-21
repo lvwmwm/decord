@@ -1,9 +1,9 @@
-// Module ID: 9590
-// Function ID: 74765
+// Module ID: 9595
+// Function ID: 74782
 // Name: useStickerPickerStore
 // Dependencies: []
 
-// Module 9590 (useStickerPickerStore)
+// Module 9595 (useStickerPickerStore)
 const _module = require(dependencyMap[0]);
 const _module1 = require(dependencyMap[2]);
 const result = _module1.fileFinishedImporting("modules/stickers/native/StickerPickerStore.tsx");

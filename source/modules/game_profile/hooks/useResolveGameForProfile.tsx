@@ -1,10 +1,10 @@
-// Module ID: 8580
-// Function ID: 68133
+// Module ID: 8584
+// Function ID: 68145
 // Name: useResolveGameForProfile
 // Dependencies: []
 // Exports: default
 
-// Module 8580 (useResolveGameForProfile)
+// Module 8584 (useResolveGameForProfile)
 const _module = require(dependencyMap[5]);
 const result = _module.fileFinishedImporting("modules/game_profile/hooks/useResolveGameForProfile.tsx");
 

@@ -1,10 +1,10 @@
-// Module ID: 11754
-// Function ID: 91283
+// Module ID: 11761
+// Function ID: 91306
 // Name: presentResendToast
 // Dependencies: []
 // Exports: default
 
-// Module 11754 (presentResendToast)
+// Module 11761 (presentResendToast)
 function presentResendToast(content) {
   let obj = importDefault(dependencyMap[7]);
   obj = { key: "HUB_EMAIL_RESET", content, icon: importDefault(dependencyMap[8]) };
@@ -18,7 +18,7 @@ let closure_8 = importDefault(dependencyMap[4]);
 const tmp2 = arg1(dependencyMap[3]);
 ({ jsx: closure_9, jsxs: closure_10 } = arg1(dependencyMap[5]));
 const tmp3 = arg1(dependencyMap[5]);
-let closure_11 = arg1(dependencyMap[6]).createStyles({ container: { alignItems: "center" }, title: { bounces: null, keyboardShouldPersistTaps: null }, description: { person_pouting: 24, cv: "recent_games_enabled" }, label: { person_pouting: "isArrayBufferToString", cv: "sy" }, error: { 0: -0.0014069081515246523, 0: -0.0001058445630777106 } });
+let closure_11 = arg1(dependencyMap[6]).createStyles({ container: { alignItems: "center" }, title: { "Null": null, "Null": null }, description: { collapsable: 24, preventClipping: "recent_games_enabled" }, label: { collapsable: "isArrayBufferToString", preventClipping: "%AsyncGenerator%" }, error: { 0: "absolute", 0: 0 } });
 const obj = arg1(dependencyMap[6]);
 const result = arg1(dependencyMap[21]).fileFinishedImporting("modules/hub/native/components/HubEmailConnectionPinVerify.tsx");
 
@@ -55,7 +55,7 @@ export default function HubEmailConnectionPinVerify(email) {
   obj = { style: tmp.container };
   const obj1 = { source: importDefault(dependencyMap[17]) };
   const items1 = [callback2(closure_7, obj1), , , , , ];
-  const obj2 = { 0: 24, 9223372036854775807: 24, 0: null, -9223372036854775808: "aa9c26c29990ba7a6584e51ab5c56efa", style: tmp.title };
+  const obj2 = { 1501064855: 24, -1267889981: 24, -1145697943: null, -1266241916: "aa9c26c29990ba7a6584e51ab5c56efa", style: tmp.title };
   const intl = arg1(dependencyMap[13]).intl;
   obj2.children = intl.string(arg1(dependencyMap[13]).t.SJ3Lxc);
   items1[1] = callback2(arg1(dependencyMap[18]).Text, obj2);
@@ -63,11 +63,13 @@ export default function HubEmailConnectionPinVerify(email) {
   const intl2 = arg1(dependencyMap[13]).intl;
   obj3.children = intl2.format(arg1(dependencyMap[13]).t.b+W0oq, { onClick: obj.throttle(_handleCodeEntered(dependencyMap[11]), 1000), email });
   items1[2] = callback2(arg1(dependencyMap[19]).TextWithIOSLinkWorkaround, obj3);
-  const obj4 = { style: tmp.label };
+  const obj4 = { "Null": "[\u6628\u65E5] LT", "Null": null, "Null": "L", style: tmp.label };
   const intl3 = arg1(dependencyMap[13]).intl;
   obj4.children = intl3.string(arg1(dependencyMap[13]).t.rpWT1s);
   items1[3] = callback2(arg1(dependencyMap[18]).Text, obj4);
   const obj5 = {
+    <string:1946812420>: 103679,
+    <string:2669477892>: -3840,
     onCodeEntered: function handleCodeEntered(arg0) {
       return _handleCodeEntered(...arguments);
     },
@@ -76,7 +78,7 @@ export default function HubEmailConnectionPinVerify(email) {
   items1[4] = callback2(arg1(dependencyMap[20]).CodeBlocks, obj5);
   let tmp9 = null != first;
   if (tmp9) {
-    const obj6 = { INTEGRATION_CREATE: 1, ConstraintReasonCode: "center", style: tmp.error, children: first.getAnyErrorMessage() };
+    const obj6 = { style: tmp.error, children: first.getAnyErrorMessage() };
     tmp9 = callback2(arg1(dependencyMap[18]).Text, obj6);
   }
   items1[5] = tmp9;

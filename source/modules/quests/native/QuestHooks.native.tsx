@@ -1,10 +1,10 @@
-// Module ID: 13859
-// Function ID: 104854
+// Module ID: 13866
+// Function ID: 104877
 // Name: useIsMobileQuestDockRenderedBase
 // Dependencies: []
 // Exports: useHasWatchVideoOnMobileTasks, useIsMobileQuestDockVisibleToUser, useMobileActivityQuest, useMobileQuestDock, useMobileQuestDockHeight, useQuestDockHeroAsset, useQuestGameLogotypeAssetUrl
 
-// Module 13859 (useIsMobileQuestDockRenderedBase)
+// Module 13866 (useIsMobileQuestDockRenderedBase)
 function useIsMobileQuestDockRenderedBase(mobileQuestDock) {
   const tmp = importDefault(dependencyMap[16])();
   const items = [closure_7];

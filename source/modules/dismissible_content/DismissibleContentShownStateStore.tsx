@@ -15,7 +15,7 @@ function _isNativeReflectConstruct() {
   const result = _isNativeReflectConstruct();
 }
 function initState() {
-  const obj = { -9223372036854775808: "Normal", 0: true, 0: "AbortSignal", candidates: new Map(), recentlyShown: [] };
+  const obj = { -1631700398: null, 1375297828: "\u{1F9BB}\u{1F3FF}", -111020123: true, candidates: new Map(), recentlyShown: [] };
   const map = new Map();
   obj.currentlyShown = new Set();
   const set = new Set();

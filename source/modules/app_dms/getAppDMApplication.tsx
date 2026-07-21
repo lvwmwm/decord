@@ -1,10 +1,10 @@
-// Module ID: 11299
-// Function ID: 87932
+// Module ID: 11305
+// Function ID: 87955
 // Name: getAppDMApplication
 // Dependencies: []
 // Exports: getAppDMApplication
 
-// Module 11299 (getAppDMApplication)
+// Module 11305 (getAppDMApplication)
 let closure_0 = importDefault(dependencyMap[0]);
 let closure_1 = importDefault(dependencyMap[1]);
 let closure_2 = importDefault(dependencyMap[2]);

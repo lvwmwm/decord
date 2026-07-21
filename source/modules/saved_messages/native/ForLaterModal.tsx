@@ -1,10 +1,10 @@
-// Module ID: 9901
-// Function ID: 76611
+// Module ID: 9906
+// Function ID: 76627
 // Name: ForLaterModal
 // Dependencies: []
 // Exports: default
 
-// Module 9901 (ForLaterModal)
+// Module 9906 (ForLaterModal)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 ({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[2]));

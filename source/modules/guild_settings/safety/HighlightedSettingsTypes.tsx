@@ -1,9 +1,9 @@
-// Module ID: 13611
-// Function ID: 103159
+// Module ID: 13618
+// Function ID: 103182
 // Name: HighlightColors
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 13611 (HighlightColors)
+// Module 13618 (HighlightColors)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("modules/guild_settings/safety/HighlightedSettingsTypes.tsx");
 

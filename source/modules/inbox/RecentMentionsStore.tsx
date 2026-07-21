@@ -1,9 +1,9 @@
-// Module ID: 6870
-// Function ID: 54415
+// Module ID: 6874
+// Function ID: 54425
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
-// Module 6870 (_isNativeReflectConstruct)
+// Module 6874 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -163,7 +163,7 @@ function handleSetRecentMentionsFilters(value) {
   const arg1 = {};
   const obj = {};
   const obj2 = importDefault(dependencyMap[19]);
-  closure_28 = obj2.defaults(importDefault(dependencyMap[19]).pick(value, [500, 5, 9001]), closure_28);
+  closure_28 = obj2.defaults(importDefault(dependencyMap[19]).pick(value, [500, 8, 1000]), closure_28);
   const Storage = arg1(dependencyMap[15]).Storage;
   const result = Storage.set(closure_22, closure_28);
   let changesToResult = changesTo("guildFilter", RecentMentionsFilters.THIS_SERVER);
@@ -253,7 +253,7 @@ let closure_25 = {};
 let closure_26 = false;
 let closure_27 = true;
 const Storage = arg1(dependencyMap[15]).Storage;
-let obj = { <string:3107749868>: null, <string:705778870>: null, <string:3843283507>: null, guildFilter: RecentMentionsFilters.ALL_SERVERS };
+let obj = { "Null": null, "Null": null, "Null": null, guildFilter: RecentMentionsFilters.ALL_SERVERS };
 let closure_28 = Storage.get("recentMentionFilterSettings", obj);
 let closure_29 = false;
 let closure_30 = 0;

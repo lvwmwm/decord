@@ -1,10 +1,10 @@
-// Module ID: 5786
-// Function ID: 49417
+// Module ID: 5788
+// Function ID: 49460
 // Name: getSanitizedRestrictedGuilds
 // Dependencies: []
 // Exports: computeFlags, generateNonSpamRetrainingOptInSettingOptions, getSanitizedActivityJoiningRestrictedGuilds, getSanitizedActivityRestrictedGuilds, getSanitizedMessageRequestRestrictedGuilds, getSanitizedRestrictedGuilds, shakeUserSettings, trackUserSettingsPaneViewed
 
-// Module 5786 (getSanitizedRestrictedGuilds)
+// Module 5788 (getSanitizedRestrictedGuilds)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 ({ AnalyticEvents: closure_5, FriendSourceFlags: closure_6, AllFriendSourceFlags: closure_7, ComponentActions: closure_8 } = arg1(dependencyMap[2]));

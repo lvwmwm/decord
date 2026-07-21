@@ -1,10 +1,10 @@
-// Module ID: 10580
-// Function ID: 82575
+// Module ID: 10586
+// Function ID: 82598
 // Name: ActivityTileInner
 // Dependencies: []
 // Exports: default
 
-// Module 10580 (ActivityTileInner)
+// Module 10586 (ActivityTileInner)
 function ActivityTileInner(participant) {
   participant = participant.participant;
   const arg1 = participant;
@@ -210,17 +210,17 @@ const XSMALL = arg1(dependencyMap[10]).AvatarSizes.XSMALL;
 const themedRippleConfig = arg1(dependencyMap[7]).getThemedRippleConfig({ foreground: true });
 let obj = arg1(dependencyMap[11]);
 obj = {};
-obj = { <string:179458520>: "Toast", <string:1347506787>: "advanceAnimationByFrame", <string:4221592073>: "Uint8Array", <string:1690196561>: "NOTIFICATION_SETTINGS_MODAL_OPEN", <string:3635473612>: "ACTION_ROW", backgroundColor: importDefault(dependencyMap[12]).colors.BACKGROUND_SURFACE_HIGH };
+obj = { url: "a", oldFormErrors: "p", rejectWithError: "midnatt", retries: "middag", useAdaptiveCompression: "p\u00E5 morg.", backgroundColor: importDefault(dependencyMap[12]).colors.BACKGROUND_SURFACE_HIGH };
 obj.pressableOpacity = obj;
 obj.activityPreview = {};
 const tmp4 = arg1(dependencyMap[9]);
 obj.activityViewContainer = { flex: 1, backgroundColor: importDefault(dependencyMap[12]).colors.BACKGROUND_SURFACE_HIGH };
 const obj1 = { flex: 1, backgroundColor: importDefault(dependencyMap[12]).colors.BACKGROUND_SURFACE_HIGH };
 obj.titleText = { color: importDefault(dependencyMap[12]).colors.TEXT_DEFAULT, fontFamily: tmp3.Fonts.DISPLAY_EXTRABOLD };
-obj.subtitleText = { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null };
+obj.subtitleText = { "Null": null, "Null": null, "Null": null };
 const obj2 = { color: importDefault(dependencyMap[12]).colors.TEXT_DEFAULT, fontFamily: tmp3.Fonts.DISPLAY_EXTRABOLD };
 obj.overflow = { height: arg1(dependencyMap[10]).AVATAR_SIZE_MAP[XSMALL], backgroundColor: importDefault(dependencyMap[12]).colors.BACKGROUND_MOD_NORMAL };
-obj.buttonWrapper = { "Null": null, "Null": null };
+obj.buttonWrapper = { "Bool(true)": null, "Bool(true)": null };
 obj.buttonPill = { borderRadius: 100 };
 let closure_14 = obj.createStyles(obj);
 const obj3 = { height: arg1(dependencyMap[10]).AVATAR_SIZE_MAP[XSMALL], backgroundColor: importDefault(dependencyMap[12]).colors.BACKGROUND_MOD_NORMAL };

@@ -4,6 +4,6 @@
 
 // Module 4067
 const _module = require(dependencyMap[0]);
-const obj = { url: false, content: false, messageId: false, channel_id: false, no: false, "Null": false, "Null": false, "Null": false, scales: [] };
+const obj = { isConnected: "RTC_CONNECTION_LOSS_RATE", isInternetReachable: "handleJoinThreadVoice", details: "toString", reachabilityUrl: "isArray", reachabilityMethod: "toString", reachabilityHeaders: "isArray", reachabilityTest: "HIDDEN_WINDOW_DISABLE_VIDEO_DURATION_MS", reachabilityShortTimeout: "OrderSigningFailedWithConstraintsError", scales: [] };
 
 export default _module.registerAsset(obj);

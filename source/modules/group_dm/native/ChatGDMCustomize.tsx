@@ -1,8 +1,8 @@
-// Module ID: 10147
-// Function ID: 78464
+// Module ID: 10153
+// Function ID: 78482
 // Dependencies: []
 
-// Module 10147
+// Module 10153
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 const importAllResult = importAll(dependencyMap[2]);
@@ -160,7 +160,7 @@ const memoResult = importAllResult.memo(importAllResult.forwardRef((channelId) =
     let tmp33 = null;
     if (tmp15) {
       const obj3 = { onPress: memo.clear, accessibilityRole: "button" };
-      const obj4 = { Promise: "/assets/design/components/Icon/native/redesign/generated/images", marginTop: 24, flags: 24, style: tmp.iconClear };
+      const obj4 = { "Null": false, "Null": false, "Null": false, style: tmp.iconClear };
       const intl = arg1(dependencyMap[15]).intl;
       obj4.children = intl.string(arg1(dependencyMap[15]).t.uY+Nk/);
       obj3.children = callback(arg1(dependencyMap[20]).Text, obj4);
@@ -191,7 +191,7 @@ const memoResult = importAllResult.memo(importAllResult.forwardRef((channelId) =
     let tmp39 = null;
     if (null != first2) {
       const obj8 = { style: tmp.rateLimitedContainer };
-      const obj9 = { INTEGRATION_CREATE: "FOCUS_CHANNEL_TEXT_AREA", ConstraintReasonCode: "ka" };
+      const obj9 = {};
       const intl4 = arg1(dependencyMap[15]).intl;
       obj9.children = intl4.string(arg1(dependencyMap[15]).t.Whhv4w);
       const items7 = [callback(arg1(dependencyMap[20]).Text, obj9), ];

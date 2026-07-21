@@ -1,10 +1,10 @@
-// Module ID: 10301
-// Function ID: 79512
+// Module ID: 10307
+// Function ID: 79531
 // Name: handleClose
 // Dependencies: []
 // Exports: default
 
-// Module 10301 (handleClose)
+// Module 10307 (handleClose)
 function handleClose() {
   state.setState({ isReportOpen: false });
   let arr = importDefault(dependencyMap[11]);
@@ -300,7 +300,7 @@ class BugCreateScreen {
         obj = { style: tmp.priorityIcon };
         obj = {};
         const tmp = screenshot(tmp[25]);
-        const obj1 = { "Null": 1441791, "Null": 1430323200, "Null": 1627390528, id: emoji };
+        const obj1 = { "Bool(true)": null, "Bool(true)": null, "Bool(true)": null, id: emoji };
         obj.uri = screenshotUri(tmp[26]).getEmojiURL(obj1);
         obj.source = obj;
         obj.resizeMode = "contain";
@@ -359,7 +359,7 @@ class BugCreateScreen {
         tmp51 = closure_10(function Submitting() {
           const tmp = callback2();
           let obj = { style: tmp.submittingOverlay };
-          obj = { 122814468: true, 1637360015: true, 1943622539: true, sticker: first6 };
+          obj = { sticker: first6 };
           const items = [first5(screenshot(tmp[45]), obj), ];
           obj = { style: tmp.submittingText, variant: "heading-md/medium" };
           const intl = screenshotUri(tmp[14]).intl;
@@ -424,16 +424,16 @@ let closure_8 = importDefault(dependencyMap[4]);
 let closure_9 = importDefault(dependencyMap[5]);
 const tmp2 = arg1(dependencyMap[3]);
 ({ jsx: closure_10, jsxs: closure_11, Fragment: closure_12 } = arg1(dependencyMap[6]));
-let closure_13 = Object.freeze({ style: 24, variant: 24, color: null });
+let closure_13 = Object.freeze({ <string:1308623995>: 24, <string:1291846779>: 24, <string:1358955643>: null });
 let obj = arg1(dependencyMap[7]);
-obj = { container: { padding: 16 }, attachmentCarousel: { blurTheme: false, pressed: false }, attachmentContainer: { <string:80596992>: "space-between", <string:80602112>: null } };
+obj = { container: { padding: 16 }, attachmentCarousel: { conversationId: "percent", EditProfileFrameRow: 0 }, attachmentContainer: {} };
 obj = { borderRadius: importDefault(dependencyMap[8]).radii.round };
 const tmp3 = arg1(dependencyMap[6]);
 const importDefaultResult = importDefault(dependencyMap[9]);
 const importDefaultResultResult = importDefault(dependencyMap[9])(importDefault(dependencyMap[8]).unsafe_rawColors.BLACK);
 obj.backgroundColor = importDefault(dependencyMap[9])(importDefault(dependencyMap[8]).unsafe_rawColors.BLACK).alpha(0.5).css();
 obj.closeContainer = obj;
-obj.priorityIcon = { aze: false, azj: false };
+obj.priorityIcon = { bhk: "<string:1027735553>", bic: "<string:4143972873>" };
 obj.offButton = { marginBottom: 24 };
 const alphaResult = importDefault(dependencyMap[9])(importDefault(dependencyMap[8]).unsafe_rawColors.BLACK).alpha(0.5);
 obj.submittingOverlay = { backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_SCRIM };

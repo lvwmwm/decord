@@ -1,9 +1,9 @@
-// Module ID: 5787
-// Function ID: 49430
+// Module ID: 5789
+// Function ID: 49473
 // Name: SettingSearchSessionAnalyticsManager
 // Dependencies: []
 
-// Module 5787 (SettingSearchSessionAnalyticsManager)
+// Module 5789 (SettingSearchSessionAnalyticsManager)
 let closure_2 = importDefault(dependencyMap[0]);
 let closure_3 = importDefault(dependencyMap[1]);
 let tmp2 = () => {

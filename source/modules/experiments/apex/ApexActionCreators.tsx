@@ -1,10 +1,10 @@
-// Module ID: 10446
-// Function ID: 80684
+// Module ID: 10452
+// Function ID: 80707
 // Name: _fetchApexExperimentsMetadata
 // Dependencies: []
 // Exports: fetchApexExperimentsMetadata, fetchInstallationExperiments, fetchUserExperimentAssignments
 
-// Module 10446 (_fetchApexExperimentsMetadata)
+// Module 10452 (_fetchApexExperimentsMetadata)
 function _fetchApexExperimentsMetadata() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
@@ -23,7 +23,7 @@ function _fetchInstallationExperiments() {
   const _fetchInstallationExperiments = obj;
   return obj(...arguments);
 }
-let closure_3 = ["renderGroupDMIcon"];
+let closure_3 = [false];
 let closure_4 = importDefault(dependencyMap[0]);
 let closure_5 = importDefault(dependencyMap[1]);
 let closure_6 = importDefault(dependencyMap[2]);

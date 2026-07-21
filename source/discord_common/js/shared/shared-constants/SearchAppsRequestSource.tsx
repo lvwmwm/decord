@@ -1,9 +1,9 @@
-// Module ID: 11172
-// Function ID: 86942
+// Module ID: 11178
+// Function ID: 86965
 // Name: SearchAppsRequestSource
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 11172 (SearchAppsRequestSource)
+// Module 11178 (SearchAppsRequestSource)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_common/js/shared/shared-constants/SearchAppsRequestSource.tsx");
 

@@ -1,9 +1,9 @@
-// Module ID: 4568
-// Function ID: 40004
+// Module ID: 4570
+// Function ID: 40045
 // Name: getGuildIdFromChannelId
 // Dependencies: []
 
-// Module 4568 (getGuildIdFromChannelId)
+// Module 4570 (getGuildIdFromChannelId)
 function getGuildIdFromChannelId(channelId) {
   const channel = store.getChannel(channelId);
   let guildId;
@@ -270,7 +270,7 @@ let closure_8 = importDefault(dependencyMap[5]);
 let obj = {};
 obj = {
   order: importDefault(dependencyMap[15]).order,
-  requiredFirstCharacters: [],
+  requiredFirstCharacters: [false],
   match(arg0) {
     return /^<#(\d+)>/.exec(arg0);
   },
@@ -292,7 +292,7 @@ obj = {
 obj.channelMention = obj;
 obj = {
   order: importDefault(dependencyMap[16]).defaultRules.url.order - 0.5,
-  requiredFirstCharacters: [null],
+  requiredFirstCharacters: [],
   match(arg0) {
     const CHANNEL_OR_MESSAGES_URL_RE = arg1(dependencyMap[14]).CHANNEL_OR_MESSAGES_URL_RE;
     const match = CHANNEL_OR_MESSAGES_URL_RE.exec(arg0);
@@ -331,7 +331,7 @@ obj.channelOrMessageUrl = obj;
 const tmp2 = arg1(dependencyMap[6]);
 obj.mediaPostLink = {
   order: importDefault(dependencyMap[16]).defaultRules.url.order - 0.5,
-  requiredFirstCharacters: [null],
+  requiredFirstCharacters: [],
   match(arg0) {
     const MEDIA_POST_URL_RE = arg1(dependencyMap[14]).MEDIA_POST_URL_RE;
     return MEDIA_POST_URL_RE.exec(arg0);
@@ -359,7 +359,7 @@ obj.mediaPostLink = {
 };
 const obj1 = {
   order: importDefault(dependencyMap[16]).defaultRules.url.order - 0.5,
-  requiredFirstCharacters: [null],
+  requiredFirstCharacters: [],
   match(arg0) {
     const MEDIA_POST_URL_RE = arg1(dependencyMap[14]).MEDIA_POST_URL_RE;
     return MEDIA_POST_URL_RE.exec(arg0);

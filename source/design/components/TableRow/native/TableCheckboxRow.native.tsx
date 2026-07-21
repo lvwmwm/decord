@@ -1,10 +1,10 @@
-// Module ID: 9082
-// Function ID: 71164
+// Module ID: 9086
+// Function ID: 71176
 // Name: TableCheckboxRow
 // Dependencies: []
 // Exports: TableCheckboxRow
 
-// Module 9082 (TableCheckboxRow)
+// Module 9086 (TableCheckboxRow)
 let closure_2 = importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[7]).fileFinishedImporting("design/components/TableRow/native/TableCheckboxRow.native.tsx");
@@ -23,7 +23,7 @@ export const TableCheckboxRow = function TableCheckboxRow(checked) {
   }
   const onPress = checked.onPress;
   const dependencyMap = onPress;
-  let obj = { <string:80489728>: null, <string:81021952>: "LOCAL_PAYMENT_START_PAYMENT_MISSING_REQUIRED_OPTION", <string:80568576>: "Missing required option for startPayment.", <string:80562432>: null, <string:80533504>: "LOCAL_PAYMENT_START_PAYMENT_DEFERRED_PAYMENT_FAILED", <string:80569344>: "LocalPayment startPayment deferred payment failed." };
+  let obj = {};
   Object.setPrototypeOf(null);
   const merged = Object.assign(checked, obj);
   let React;

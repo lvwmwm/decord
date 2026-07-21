@@ -1,10 +1,10 @@
-// Module ID: 4654
-// Function ID: 40276
+// Module ID: 4656
+// Function ID: 40317
 // Name: HubIcon
 // Dependencies: []
 // Exports: HubIcon
 
-// Module 4654 (HubIcon)
+// Module 4656 (HubIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/HubIcon.tsx");

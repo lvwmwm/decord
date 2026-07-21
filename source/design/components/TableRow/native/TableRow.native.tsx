@@ -1,9 +1,9 @@
-// Module ID: 5426
-// Function ID: 46462
+// Module ID: 5428
+// Function ID: 46504
 // Name: TableRowInner
 // Dependencies: []
 
-// Module 5426 (TableRowInner)
+// Module 5428 (TableRowInner)
 class TableRow {
   constructor(arg0) {
     ({ icon, disabled } = global);
@@ -15,7 +15,7 @@ class TableRow {
     if (variant === undefined) {
       variant = "default";
     }
-    obj = { "Bool(false)": "JPEGInterchangeFormatLength", "Bool(false)": "isArrayBuffer", "Bool(false)": "MOBILE_BOTTOM_SHEET", "Bool(false)": "ON", "Bool(false)": "GameDepthTier9LargeBadge", "Bool(false)": "RangeError", "Bool(false)": "%MapIteratorPrototype%", "Bool(false)": "isArray", "Bool(false)": "MUR", "Bool(false)": "absolute", "Bool(false)": "[object Function]", "Bool(false)": "%Float64ArrayPrototype%", "Bool(false)": "setUploadedFilename", "Bool(false)": null, "Bool(false)": null };
+    obj = {};
     ({ draggable, dragHandlePressableProps, height } = global);
     setPrototypeOfResult = Object.setPrototypeOf(null);
     merged = Object.assign(global, obj);
@@ -30,7 +30,8 @@ class TableRow {
     obj2 = arg1(dependencyMap[7]);
     token = obj2.useToken(importDefault(dependencyMap[4]).modules.mobile.TABLE_ROW_BORDER_RADIUS);
     tmp6 = jsx;
-    obj = { radius: token };
+    obj = { "Null": null, "Null": null, "Null": null };
+    obj.radius = token;
     str = undefined;
     if (enabled) {
       str = "muted";
@@ -113,7 +114,7 @@ class TableRowInner {
       num2 = 1.5;
       tmp6 = fontScale > 1.5;
     }
-    tmp7 = f46465(true === disabled, null != tmp2, tmp6, tmp);
+    tmp7 = f46507(true === disabled, null != tmp2, tmp6, tmp);
     obj3 = arg1(dependencyMap[7]);
     token = obj3.useToken(importDefault(dependencyMap[4]).modules.mobile.TABLE_ROW_LABEL_TEXT_STYLE);
     obj4 = arg1(dependencyMap[7]);
@@ -275,7 +276,7 @@ let closure_10 = arg1(dependencyMap[3]).createStyles((arg0, arg1, arg2) => {
   obj.iconContainer = obj;
   let num2 = 18;
   obj.trailing = { marginStart: 18 };
-  const obj1 = { "Bool(false)": "r", <string:1419386345>: "ToggledActionButton", <string:1866892392>: "XUA", <string:2221323805>: "_setBusEvents", <string:799814743>: "old_icon_set" };
+  const obj1 = { borderRadius: true, borderWidth: true, padding: true, paddingBottom: true, flexDirection: true };
   if (arg2) {
     str = "column";
   }

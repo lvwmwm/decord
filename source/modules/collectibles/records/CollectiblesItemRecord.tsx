@@ -1,10 +1,10 @@
-// Module ID: 6767
-// Function ID: 53278
+// Module ID: 6773
+// Function ID: 53327
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 // Exports: createCollectiblesItemsFromServerResponse
 
-// Module 6767 (_createForOfIteratorHelperLoose)
+// Module 6773 (_createForOfIteratorHelperLoose)
 function _createForOfIteratorHelperLoose(@@iterator) {
   let arg1 = Symbol_iterator;
   @@iterator = "undefined" !== typeof Symbol;

@@ -1,10 +1,10 @@
-// Module ID: 10398
-// Function ID: 80122
+// Module ID: 10404
+// Function ID: 80145
 // Name: WasThisHelpfulSection
 // Dependencies: []
 // Exports: default
 
-// Module 10398 (WasThisHelpfulSection)
+// Module 10404 (WasThisHelpfulSection)
 let closure_3 = importAll(dependencyMap[0]);
 ({ Pressable: closure_4, View: closure_5 } = arg1(dependencyMap[1]));
 let closure_6 = importDefault(dependencyMap[2]);
@@ -84,7 +84,7 @@ export default function WasThisHelpfulSection(channelId) {
     channelId(senderId[13]).trackCtaEvent(obj);
   }, items3);
   obj = { style: tmp.container };
-  obj = { INTEGRATION_CREATE: false, ConstraintReasonCode: false };
+  obj = {};
   const intl = arg1(dependencyMap[10]).intl;
   obj.children = intl.string(arg1(dependencyMap[10]).t.L84yVm);
   const items4 = [callback(arg1(dependencyMap[14]).Text, obj), ];

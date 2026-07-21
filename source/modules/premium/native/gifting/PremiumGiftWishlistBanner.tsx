@@ -1,10 +1,10 @@
-// Module ID: 9715
-// Function ID: 75527
+// Module ID: 9720
+// Function ID: 75544
 // Name: PremiumGiftWishlistBanner
 // Dependencies: []
 // Exports: PremiumGiftWishlistBanner
 
-// Module 9715 (PremiumGiftWishlistBanner)
+// Module 9720 (PremiumGiftWishlistBanner)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 ({ ScrollView: closure_5, View: closure_6 } = arg1(dependencyMap[2]));
@@ -147,7 +147,7 @@ export const PremiumGiftWishlistBanner = function PremiumGiftWishlistBanner(gift
     obj = {};
     obj1 = { style: tmp9.title, variant: "text-lg/semibold", children: obj5.title };
     const items5 = [tmp9(arg1(dependencyMap[27]).Text, obj1), , ];
-    const obj2 = { Promise: null, marginTop: null, flags: null, style: tmp9.subtitle, children: subtitle };
+    const obj2 = { "Null": "<string:1178599425>", "Null": "<string:3295084545>", "Null": "<string:1689649153>", style: tmp9.subtitle, children: subtitle };
     items5[1] = tmp9(arg1(dependencyMap[27]).Text, obj2);
     if (tmp10) {
       obj3 = { style: tmp9.placeholderRow };

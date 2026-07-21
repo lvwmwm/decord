@@ -1,10 +1,10 @@
-// Module ID: 15101
-// Function ID: 113975
+// Module ID: 15108
+// Function ID: 113999
 // Name: AddEmojiButton
 // Dependencies: []
 // Exports: default, getStatusReplyContent
 
-// Module 15101 (AddEmojiButton)
+// Module 15108 (AddEmojiButton)
 function AddEmojiButton(channel) {
   channel = channel.channel;
   const arg1 = channel;
@@ -16,7 +16,7 @@ function AddEmojiButton(channel) {
   const callback = React.useCallback(() => {
     onOpenPicker();
     let obj = channel(onPressEmoji[10]);
-    obj = { "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, pickerIntention: constants.REACTION, onPressEmoji, channel, reactionType: channel(onPressEmoji[11]).ReactionTypes.NORMAL };
+    obj = { "Bool(false)": "postal-address-country", "Bool(false)": "password", "Bool(false)": "email", pickerIntention: constants.REACTION, onPressEmoji, channel, reactionType: channel(onPressEmoji[11]).ReactionTypes.NORMAL };
     const result = obj.openEmojiPickerActionSheet(obj);
   }, items);
   const obj = { onPress: callback, style: items1, accessible: true };
@@ -203,7 +203,7 @@ function ReactActionSheetBase(content) {
         onOpenPicker() {
               let obj = onPressEmoji(sendMessage[15]);
               obj.itemInteracted(content.id, closure_6, "press_reply_reaction_picker");
-              obj = { itemId: content.id, itemType: closure_6, actionParameters: { "Bool(false)": "secondary", "Bool(false)": "md", "Bool(false)": null, "Bool(false)": null } };
+              obj = { itemId: content.id, itemType: closure_6, actionParameters: {} };
               onPressEmoji(sendMessage[15]).feedItemActioned(obj);
             },
         channel,
@@ -214,7 +214,7 @@ function ReactActionSheetBase(content) {
       obj12.children = items8;
       const items9 = [callback4(closure_6, obj12), ];
       const obj14 = { style: tmp.inputRow };
-      const obj15 = { FocusedActivityLayouts: null, isRobloxSubgameGame: null, shouldShowEmojiRow: null, containerStyle: tmp.input };
+      const obj15 = { LAUGHTER: null, GUILD_TOP_READ_CHANNELS: null, EmoBD2: null, containerStyle: tmp.input };
       const intl3 = arg1(dependencyMap[7]).intl;
       const obj16 = { username: arg1(dependencyMap[30]).getName(author) };
       obj15.placeholder = intl3.formatToPlainString(arg1(dependencyMap[7]).t.m3dK5W, obj16);
@@ -270,11 +270,11 @@ obj.contentContainer = { backgroundColor: importDefault(dependencyMap[9]).colors
 obj.inputRow = {};
 const obj1 = { backgroundColor: importDefault(dependencyMap[9]).colors.BACKGROUND_BASE_LOW };
 obj.input = { flex: 1, borderRadius: importDefault(dependencyMap[9]).radii.round };
-obj.emojis = { "Bool(true)": null, "Bool(true)": null, "Bool(true)": null };
+obj.emojis = { padding: "Next", paddingBottom: null, flexDirection: null };
 obj.submitting = { opacity: 0.6 };
 const obj2 = { flex: 1, borderRadius: importDefault(dependencyMap[9]).radii.round };
 obj.emoji = { padding: 8, borderRadius: importDefault(dependencyMap[9]).radii.round, backgroundColor: importDefault(dependencyMap[9]).colors.REDESIGN_BUTTON_TERTIARY_BACKGROUND };
-obj.defaultEmoji = { aze: false, azj: false };
+obj.defaultEmoji = { bhk: "<string:1027735553>", bic: "<string:4143972873>" };
 obj.emojiImage = {};
 obj.emojiText = { "Bool(false)": 0, "Bool(false)": 53.614, "Bool(false)": 3, "Bool(false)": "colors" };
 let closure_12 = obj.createStyles(obj);

@@ -44,7 +44,7 @@ const fn = function n(moment) {
       return "\u03BC" === `${arg0}`.toLowerCase()[0];
     },
     meridiemParse: /[ΠΜ]\.?Μ?\.?/i,
-    longDateFormat: { "Bool(false)": "%s p\u00E4\u00E4st\u00E4", "Bool(false)": "%s sitten", "Bool(false)": "HH:mm", "Bool(false)": "HH:mm:ss", "Bool(false)": "DD/MM/YYYY", "Bool(false)": "D MMMM YYYY" },
+    longDateFormat: {},
     calendarEl: obj,
     calendar(arg0, hours) {
       const obj = this._calendarEl[arg0];
@@ -70,7 +70,7 @@ const fn = function n(moment) {
     relativeTime: {},
     dayOfMonthOrdinalParse: /\d{1,2}η/,
     ordinal: "%d\u03B7",
-    week: { "Bool(true)": false, "Bool(true)": false }
+    week: { <string:1431496722>: false, <string:1627556098>: false }
   };
   obj = {
     lastWeek() {
@@ -92,7 +92,7 @@ if ("object" === typeof exports) {
 }
 if ("function" === typeof globalThis.define) {
   if (globalThis.define.amd) {
-    globalThis.define([1782644737], fn);
+    globalThis.define(["HH:mm:ss"], fn);
   }
 }
 fn(this.moment);

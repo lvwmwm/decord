@@ -1,9 +1,9 @@
-// Module ID: 15351
-// Function ID: 116929
+// Module ID: 15358
+// Function ID: 116953
 // Name: View
 // Dependencies: []
 
-// Module 15351 (View)
+// Module 15358 (View)
 let View = require(dependencyMap[0]).View;
 const _module = require(dependencyMap[1]);
 if (_module.isAndroid()) {

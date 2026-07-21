@@ -1,10 +1,10 @@
-// Module ID: 10930
-// Function ID: 85020
+// Module ID: 10935
+// Function ID: 85041
 // Name: useTrackCreateGuildViewed
 // Dependencies: []
 // Exports: default
 
-// Module 10930 (useTrackCreateGuildViewed)
+// Module 10935 (useTrackCreateGuildViewed)
 let closure_2 = importAll(dependencyMap[0]);
 const GuildTemplateStates = arg1(dependencyMap[1]).GuildTemplateStates;
 const AnalyticEvents = arg1(dependencyMap[2]).AnalyticEvents;

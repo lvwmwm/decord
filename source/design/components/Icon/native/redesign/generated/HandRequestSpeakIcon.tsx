@@ -1,10 +1,10 @@
-// Module ID: 10660
-// Function ID: 83139
+// Module ID: 10666
+// Function ID: 83162
 // Name: HandRequestSpeakIcon
 // Dependencies: []
 // Exports: HandRequestSpeakIcon
 
-// Module 10660 (HandRequestSpeakIcon)
+// Module 10666 (HandRequestSpeakIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/HandRequestSpeakIcon.tsx");

@@ -1,10 +1,10 @@
-// Module ID: 14029
-// Function ID: 106697
+// Module ID: 14036
+// Function ID: 106720
 // Name: SettingsAppearanceThemeCarousel
 // Dependencies: []
 // Exports: default
 
-// Module 14029 (SettingsAppearanceThemeCarousel)
+// Module 14036 (SettingsAppearanceThemeCarousel)
 let closure_3 = importAll(dependencyMap[0]);
 ({ View: closure_4, ScrollView: closure_5 } = arg1(dependencyMap[1]));
 const importDefaultResult = importDefault(dependencyMap[2]);
@@ -19,7 +19,7 @@ obj.container = obj;
 obj.textCentered = { textAlign: "center" };
 obj1 = { gap: importDefault(dependencyMap[7]).space.PX_4, alignItems: "center" };
 obj.labelGroup = obj1;
-const obj2 = { "Bool(true)": null, height: null, backgroundColor: null, marginBottom: null, type: null, marginTop: importDefault(dependencyMap[7]).space.PX_4 };
+const obj2 = { 9223372036854775807: "tax", 9223372036854775807: "CONTENT_INVENTORY_TOGGLE_FEED_HIDDEN", 0: "getPreviewBanner", -9223372036854775808: "Array", 9223372036854775807: "impressionStartTimestamp", marginTop: importDefault(dependencyMap[7]).space.PX_4 };
 obj.titleContainer = obj2;
 const importDefaultResult1 = importDefault(dependencyMap[4]);
 obj.floatingNuxContainer = { position: "absolute", left: importDefault(dependencyMap[7]).space.PX_24 };
@@ -160,7 +160,7 @@ export default function SettingsAppearanceThemeCarousel(themes) {
     tmp3 = callback(closure_10, obj1);
   }
   const items4 = [tmp3, ];
-  obj2 = { 0: null, 0: null, 9223372036854775807: null, style: isRefreshEnabled ? animatedStyles.headerPrimary : animatedStyles.headerSecondary };
+  obj2 = { "Null": null, "Null": null, "Null": null, style: isRefreshEnabled ? animatedStyles.headerPrimary : animatedStyles.headerSecondary };
   let obj8 = themes[currentThemeIndex];
   obj2.children = obj8.getName();
   items4[1] = callback(arg1(dependencyMap[15]).Text, obj2);
@@ -173,7 +173,7 @@ export default function SettingsAppearanceThemeCarousel(themes) {
       const obj5 = { pointerEvents: "none", style: tmp.selectionBorder };
       const items5 = [callback(closure_4, obj5), ];
       const obj6 = { ref, data: themes, renderItem: callback };
-      const obj7 = { <string:4260518581>: false, <string:1644868099>: false, <string:3613167982>: false, width: deviceWidth, marginLeft: importDefaultResult.THEME_ITEM_HORIZONTAL_MARGIN };
+      const obj7 = { style: false, body: false, a: false, width: deviceWidth, marginLeft: importDefaultResult.THEME_ITEM_HORIZONTAL_MARGIN };
       obj6.style = obj7;
       obj6.width = importDefaultResult.THEME_ITEM_WIDTH + importDefaultResult.THEME_ITEM_HORIZONTAL_MARGIN;
       obj6.height = importDefaultResult.THEME_ITEM_HEIGHT;
@@ -206,7 +206,7 @@ export default function SettingsAppearanceThemeCarousel(themes) {
     }
     obj3.children = tmp30;
     const tmp19Result = tmp19(tmp20, obj3);
-    obj8 = { 0: null, 0: null, 9223372036854775807: null };
+    obj8 = {};
     const items6 = [animatedStyles.headerSecondary, tmp.textCentered];
     obj8.style = items6;
     if (isPreview) {

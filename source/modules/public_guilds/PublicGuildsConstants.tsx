@@ -1,9 +1,9 @@
-// Module ID: 7711
-// Function ID: 61400
+// Module ID: 7715
+// Function ID: 61412
 // Name: PUBLIC_SUCCESS_MODAL_SEEN_KEY
 // Dependencies: []
 
-// Module 7711 (PUBLIC_SUCCESS_MODAL_SEEN_KEY)
+// Module 7715 (PUBLIC_SUCCESS_MODAL_SEEN_KEY)
 const items = [, , , , , , , , , , , , , ];
 ({ ADMINISTRATOR: arr[0], KICK_MEMBERS: arr[1], BAN_MEMBERS: arr[2], MANAGE_GUILD: arr[3], MANAGE_CHANNELS: arr[4], MANAGE_ROLES: arr[5], MANAGE_MESSAGES: arr[6], MANAGE_GUILD_EXPRESSIONS: arr[7], CREATE_GUILD_EXPRESSIONS: arr[8], MANAGE_EVENTS: arr[9], CREATE_EVENTS: arr[10], MODERATE_MEMBERS: arr[11], MENTION_EVERYONE: arr[12], MANAGE_OFFICIAL_MESSAGES: arr[13] } = require(dependencyMap[0]).Permissions);
 const items1 = [...items];

@@ -1,28 +1,28 @@
-// Module ID: 14667
-// Function ID: 110622
+// Module ID: 14674
+// Function ID: 110644
 // Name: DM_WIDTH
 // Dependencies: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 
-// Module 14667 (DM_WIDTH)
-import closure_3 from "result";
-import importAllResult from "result";
-import result from "result";
-import result from "result";
-import result from "result";
-import result from "result";
-import result from "result";
+// Module 14674 (DM_WIDTH)
+import closure_3 from "__exportStarResult1";
+import importAllResult from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
 
-({ View: closure_5, StyleSheet: closure_6 } = result);
-const DM_WIDTH = result.DM_WIDTH;
-const ME = result.ME;
-({ jsx: closure_9, jsxs: closure_10 } = result);
+({ View: closure_5, StyleSheet: closure_6 } = __exportStarResult1);
+const DM_WIDTH = __exportStarResult1.DM_WIDTH;
+const ME = __exportStarResult1.ME;
+({ jsx: closure_9, jsxs: closure_10 } = __exportStarResult1);
 let obj = {};
-obj = { unread: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004172013485186689, getAnimateToValue: 78804038357486790000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, fx: 127038322851950840000000000, DCDSKAdNetworkManager: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000239021605950543, hasThemeFeature: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003785767171251145, SETTINGS_WEBAUTHN_VIEW: 127038322851950840000000000, borderColor: require("result").colors.APP_FRAME_BORDER, useInappropriateConversationWarningsForChannel: 12184583625567912000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, left: DM_WIDTH, borderTopLeftRadius: require("result").radii.xl };
+obj = { left: DM_WIDTH, borderColor: require("__exportStarResult1").colors.APP_FRAME_BORDER, borderTopLeftRadius: require("__exportStarResult1").radii.xl };
 obj.sideContainer = obj;
-result = { borderTopLeftRadius: require("result").radii.xl - 1, borderTopRightRadius: require("result").radii.none };
-obj.side = result;
-obj.sideTablet = { borderTopRightRadius: require("result").modules.mobile.CHANNEL_DRAWER_CORNER_RADIUS };
-let closure_11 = result.createStyles(obj);
+__exportStarResult1 = { borderTopLeftRadius: require("__exportStarResult1").radii.xl - 1, borderTopRightRadius: require("__exportStarResult1").radii.none };
+obj.side = __exportStarResult1;
+obj.sideTablet = { borderTopRightRadius: require("__exportStarResult1").modules.mobile.CHANNEL_DRAWER_CORNER_RADIUS };
+let closure_11 = __exportStarResult1.createStyles(obj);
 let closure_12 = importAllResult.memo(function LeftMenuTabsInner() {
   let gesture;
   let homeDrawerState;
@@ -102,8 +102,8 @@ let closure_12 = importAllResult.memo(function LeftMenuTabsInner() {
   obj.children = callback(arg1(dependencyMap[12]).NonCollapsableGestureDetector, obj);
   return callback(arg1(dependencyMap[10]).HomeDrawerStateContext.Provider, obj);
 });
-const obj2 = { borderTopRightRadius: require("result").modules.mobile.CHANNEL_DRAWER_CORNER_RADIUS };
-result = result.fileFinishedImporting("components_native/MainChannels.tsx");
+const obj2 = { borderTopRightRadius: require("__exportStarResult1").modules.mobile.CHANNEL_DRAWER_CORNER_RADIUS };
+const result = __exportStarResult1.fileFinishedImporting("components_native/MainChannels.tsx");
 
 export default importAllResult.memo(function MainChannelsRedesignInner() {
   const obj = { profile: arg1(dependencyMap[18]).Profiles.LeftPanel, children: callback(closure_12, {}) };

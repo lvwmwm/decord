@@ -1,7 +1,7 @@
 // Module ID: 1835
 // Function ID: 20042
 // Name: set
-// Dependencies: []
+// Dependencies: [284214097]
 // Exports: clickedOnVisibleImage, cssValueToNumber, eventOwnerDocument, getParentElementByAttribute, getParentElementByClassName, isElement, isInputLikeElement, removeNode
 
 // Module 1835 (set)

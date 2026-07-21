@@ -1,10 +1,10 @@
-// Module ID: 15536
-// Function ID: 118563
+// Module ID: 15543
+// Function ID: 118587
 // Name: useTextChannelPressEvents
 // Dependencies: []
 // Exports: useTextChannelPressEvents
 
-// Module 15536 (useTextChannelPressEvents)
+// Module 15543 (useTextChannelPressEvents)
 let closure_3 = importAll(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/main_tabs_v2/native/shared_components/guild_channels/useTextChannelPressEvents.tsx");

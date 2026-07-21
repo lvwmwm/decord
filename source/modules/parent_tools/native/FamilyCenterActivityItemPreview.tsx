@@ -1,10 +1,10 @@
-// Module ID: 13676
-// Function ID: 103544
+// Module ID: 13683
+// Function ID: 103567
 // Name: AvatarDecorationPreviewImage
 // Dependencies: []
 // Exports: default
 
-// Module 13676 (AvatarDecorationPreviewImage)
+// Module 13683 (AvatarDecorationPreviewImage)
 function AvatarDecorationPreviewImage(arg0) {
   let product;
   let styles;
@@ -78,7 +78,7 @@ function SubscriptionPreview(arg0) {
   ({ subscriptionPlanId, styles } = arg0);
   if (null == subscriptionPlanId) {
     let obj = { style: styles.purchasePlaceholder };
-    obj = { size: "custom", style: { aze: false, azj: false } };
+    obj = { size: "custom", style: { bhk: false, bic: "internal" } };
     obj.children = jsx(arg1(dependencyMap[10]).ShopIcon, obj);
     return <closure_3 {...obj} />;
   } else {
@@ -88,7 +88,7 @@ function SubscriptionPreview(arg0) {
     } else {
       NitroWheelIcon = tmp11(tmp12[12]).NitroWheelIcon;
     }
-    obj = { size: "custom", style: { aze: false, azj: false } };
+    obj = { size: "custom", style: { bhk: false, bic: "internal" } };
     obj1.children = <NitroWheelIcon {...obj} />;
     return <closure_3 {...obj1} />;
   }
@@ -99,7 +99,7 @@ function CollectiblePreview(arg0) {
   ({ product, styles } = arg0);
   if (null == product) {
     let obj = { style: styles.purchasePlaceholder };
-    obj = { size: "custom", style: { aze: false, azj: false } };
+    obj = { size: "custom", style: { bhk: false, bic: "internal" } };
     obj.children = jsx(arg1(dependencyMap[10]).ShopIcon, obj);
     return <closure_3 {...obj} />;
   } else {
@@ -124,7 +124,7 @@ function CollectiblePreview(arg0) {
       return <ProfileFramePreviewImage {...obj4} />;
     } else {
       obj = { style: styles.purchasePlaceholder };
-      const obj5 = { size: "custom", style: { aze: false, azj: false } };
+      const obj5 = { size: "custom", style: { bhk: false, bic: "internal" } };
       obj.children = jsx(arg1(dependencyMap[10]).ShopIcon, obj5);
       return <closure_3 {...obj} />;
     }
@@ -142,7 +142,7 @@ const tmp3 = arg1(dependencyMap[1]);
 obj.avatarDecorationPreview = { width: arg1(dependencyMap[5]).PREVIEW_SIZE, height: arg1(dependencyMap[5]).PREVIEW_SIZE, marginRight: 12 };
 const obj1 = { width: arg1(dependencyMap[5]).PREVIEW_SIZE, height: arg1(dependencyMap[5]).PREVIEW_SIZE, marginRight: 12 };
 obj.nameplateContainer = { width: arg1(dependencyMap[5]).PREVIEW_SIZE, height: arg1(dependencyMap[5]).PREVIEW_SIZE, borderRadius: importDefault(dependencyMap[6]).radii.xs };
-const obj3 = { <string:2423925279>: null, <string:2596769915>: null, width: arg1(dependencyMap[5]).PREVIEW_SIZE * arg1(dependencyMap[5]).NAMEPLATE_ASPECT_RATIO, height: arg1(dependencyMap[5]).PREVIEW_SIZE };
+const obj3 = { width: arg1(dependencyMap[5]).PREVIEW_SIZE * arg1(dependencyMap[5]).NAMEPLATE_ASPECT_RATIO, height: arg1(dependencyMap[5]).PREVIEW_SIZE };
 obj.nameplatePreview = obj3;
 const obj2 = { width: arg1(dependencyMap[5]).PREVIEW_SIZE, height: arg1(dependencyMap[5]).PREVIEW_SIZE, borderRadius: importDefault(dependencyMap[6]).radii.xs };
 obj.profileFrameContainer = { width: arg1(dependencyMap[5]).PREVIEW_SIZE, height: arg1(dependencyMap[5]).PREVIEW_SIZE };

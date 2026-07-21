@@ -1,10 +1,10 @@
-// Module ID: 12762
-// Function ID: 97842
+// Module ID: 12769
+// Function ID: 97865
 // Name: ActivateDeviceSuccess
 // Dependencies: []
 // Exports: ActivateDeviceSuccess
 
-// Module 12762 (ActivateDeviceSuccess)
+// Module 12769 (ActivateDeviceSuccess)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 ({ jsx: closure_4, jsxs: closure_5, Fragment: closure_6 } = arg1(dependencyMap[2]));
@@ -41,7 +41,7 @@ export const ActivateDeviceSuccess = function ActivateDeviceSuccess(onComplete) 
   }
   const items = [tmp9, , ];
   obj = { style: importDefault(dependencyMap[8]).innerContent };
-  const obj1 = { INTEGRATION_CREATE: 182714370, ConstraintReasonCode: 1091633154, style: importDefault(dependencyMap[8]).centerText };
+  const obj1 = { style: importDefault(dependencyMap[8]).centerText };
   const intl3 = arg1(dependencyMap[4]).intl;
   obj1.children = intl3.string(arg1(dependencyMap[4]).t.qDtJmD);
   const items1 = [callback(arg1(dependencyMap[9]).Text, obj1), ];

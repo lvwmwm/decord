@@ -18,7 +18,7 @@ async function _queryCache(arg0, arg1) {
     return callback(closure_2[4]).queryCache(arg0);
   }
 }
-let closure_3 = ["ellipsizeMode"];
+let closure_3 = [null];
 let closure_4 = importDefault(dependencyMap[0]);
 let closure_5 = importDefault(dependencyMap[1]);
 importAll(dependencyMap[2]);

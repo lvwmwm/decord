@@ -1,10 +1,10 @@
-// Module ID: 9246
-// Function ID: 72271
+// Module ID: 9250
+// Function ID: 72283
 // Name: PortalToNativeView
 // Dependencies: []
 // Exports: default
 
-// Module 9246 (PortalToNativeView)
+// Module 9250 (PortalToNativeView)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[2]).jsx;
 let closure_1 = arg1(dependencyMap[1]).requireNativeComponent("PortalToNativeView");

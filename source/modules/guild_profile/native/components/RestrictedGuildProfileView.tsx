@@ -1,10 +1,10 @@
-// Module ID: 8568
-// Function ID: 68086
+// Module ID: 8572
+// Function ID: 68098
 // Name: RestrictedGuildProfileView
 // Dependencies: []
 // Exports: default
 
-// Module 8568 (RestrictedGuildProfileView)
+// Module 8572 (RestrictedGuildProfileView)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 ({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[2]));
@@ -38,7 +38,7 @@ export default function RestrictedGuildProfileView() {
   const intl = arg1(dependencyMap[10]).intl;
   obj5.children = intl.string(arg1(dependencyMap[10]).t.wZmueu);
   const items1 = [callback(arg1(dependencyMap[9]).Text, obj5), ];
-  const obj6 = { INTEGRATION_CREATE: 3, ConstraintReasonCode: null };
+  const obj6 = {};
   const intl2 = arg1(dependencyMap[10]).intl;
   obj6.children = intl2.string(arg1(dependencyMap[10]).t.8mfCqY);
   items1[1] = callback(arg1(dependencyMap[9]).Text, obj6);

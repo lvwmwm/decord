@@ -1,7 +1,10 @@
 // Module ID: 13105
-// Function ID: 99430
+// Function ID: 99439
 // Dependencies: []
 
 // Module 13105
-
-export default (arg0) => require(dependencyMap[0])(require(dependencyMap[1])(arg0));
+let obj = {};
+const _module = require(dependencyMap[0]);
+obj.forced = Object.assign !== require(dependencyMap[1]);
+obj = { assign: require(dependencyMap[1]) };
+_module(obj, obj);

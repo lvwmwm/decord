@@ -1,10 +1,10 @@
-// Module ID: 11105
-// Function ID: 86460
+// Module ID: 11111
+// Function ID: 86483
 // Name: _upload2
 // Dependencies: []
 // Exports: default
 
-// Module 11105 (_upload2)
+// Module 11111 (_upload2)
 function _upload2() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback2(tmp);
@@ -24,11 +24,11 @@ const tmp2 = arg1(dependencyMap[8]);
 ({ jsx: closure_13, jsxs: closure_14 } = arg1(dependencyMap[9]));
 let obj = arg1(dependencyMap[10]);
 obj = { container: {} };
-obj = { borderWidth: 1, borderColor: importDefault(dependencyMap[11]).colors.BORDER_SUBTLE, borderRadius: importDefault(dependencyMap[11]).radii.md, marginBottom: 32, shadowColor: importDefault(dependencyMap[11]).colors.BLACK, shadowOffset: { aze: 131072.00314656927, azj: 0.000000000000000000000000000000000000000000000000000000011294471302334573 }, shadowOpacity: 0.25, shadowRadius: 4, elevation: 4 };
+obj = { borderWidth: 1, borderColor: importDefault(dependencyMap[11]).colors.BORDER_SUBTLE, borderRadius: importDefault(dependencyMap[11]).radii.md, marginBottom: 32, shadowColor: importDefault(dependencyMap[11]).colors.BLACK, shadowOffset: {}, shadowOpacity: 0.25, shadowRadius: 4, elevation: 4 };
 obj.post = obj;
 obj.postContent = {};
-obj.title = { person_pouting: -0.0014069081515246523, cv: -0.0001058445630777106 };
-obj.description = { person_pouting: 6, cv: "focus_mode_expires_at_ms" };
+obj.title = { collapsable: "absolute", preventClipping: 0 };
+obj.description = { collapsable: 6, preventClipping: "focus_mode_expires_at_ms" };
 const tmp3 = arg1(dependencyMap[9]);
 obj.button = { borderRadius: importDefault(dependencyMap[11]).radii.sm };
 obj.buttonMargin = { marginBottom: 10 };
@@ -126,7 +126,7 @@ export default function AddMediaToOriginalForumPostActionSheet(threadId) {
   const obj3 = { threadId, localDeviceMedia: tmp14, style: tmp.postContent };
   obj2.children = callback3(arg1(dependencyMap[33]).ForumPostListDisabled, obj3);
   const items9 = [callback3(View, obj2), , , , , ];
-  const obj4 = { 0: 24, 9223372036854775807: 24, 0: null, -9223372036854775808: "aa9c26c29990ba7a6584e51ab5c56efa", style: tmp.title };
+  const obj4 = { 1501064855: 24, -1267889981: 24, -1145697943: null, -1266241916: "aa9c26c29990ba7a6584e51ab5c56efa", style: tmp.title };
   const intl = arg1(dependencyMap[27]).intl;
   obj4.children = intl.string(arg1(dependencyMap[27]).t.+SZF6S);
   items9[1] = callback3(arg1(dependencyMap[34]).Text, obj4);
@@ -135,7 +135,7 @@ export default function AddMediaToOriginalForumPostActionSheet(threadId) {
   obj5.children = intl2.string(arg1(dependencyMap[27]).t.0Ycgw5);
   items9[2] = callback3(arg1(dependencyMap[34]).Text, obj5);
   const obj6 = { style: tmp.buttonMargin };
-  const obj7 = { <string:2367986918>: "fa1758b003badba48305d2353659aabf", <string:3096166313>: "ko.messages.fa1758b003badba48305d2353659aabf.compiled.messages" };
+  const obj7 = { renderEmbeds: "e48043bf745ca0395ac959c7415a3757", renderReactions: "sv-SE.messages.e48043bf745ca0395ac959c7415a3757.compiled.messages" };
   const intl3 = arg1(dependencyMap[27]).intl;
   obj7.text = intl3.string(arg1(dependencyMap[27]).t.d611xH);
   obj7.pillStyle = tmp.button;

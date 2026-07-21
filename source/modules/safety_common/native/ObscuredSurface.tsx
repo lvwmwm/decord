@@ -1,16 +1,16 @@
-// Module ID: 8615
-// Function ID: 68285
+// Module ID: 8619
+// Function ID: 68297
 // Name: ObscuredSurface
 // Dependencies: []
 // Exports: default
 
-// Module 8615 (ObscuredSurface)
+// Module 8619 (ObscuredSurface)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 ({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[2]));
 let obj = arg1(dependencyMap[3]);
-obj = { container: {}, content: {} };
-obj = { paddingRight: true, text: true, onPress: true, backgroundColor: importDefault(dependencyMap[4]).colors.SPOILER_HIDDEN_BACKGROUND };
+obj = { container: {}, content: { BountyCarouselEmptyStateReason: "<string:2020689293>", applicationCommandLoadingLeftWrapper: "<string:16777216>" } };
+obj = { <string:3695661474>: false, <string:3623470435>: false, <string:1532062049>: false, backgroundColor: importDefault(dependencyMap[4]).colors.SPOILER_HIDDEN_BACKGROUND };
 obj.cover = obj;
 const tmp3 = arg1(dependencyMap[2]);
 obj.warning = { gap: importDefault(dependencyMap[4]).space.PX_8, paddingHorizontal: importDefault(dependencyMap[4]).space.PX_12, paddingVertical: importDefault(dependencyMap[4]).space.PX_8 };
@@ -28,7 +28,7 @@ export default function ObscuredSurface(obscured) {
   if (obscured.obscured) {
     let obj = { value: arg1(dependencyMap[5]).OBSCURED_VALUE };
     obj = { style: tmp.container };
-    obj = { display: true, width: true, justifyContent: true, alignItems: true, overflow: true, style: tmp.content, children };
+    obj = { Text: 5375, string: 1896939776, y: 8000, AnalyticsObjectTypes: 2041856273, managed: 1124139009, style: tmp.content, children };
     const items = [callback(View, obj), , ];
     const obj1 = { style: tmp.cover };
     items[1] = callback(View, obj1);

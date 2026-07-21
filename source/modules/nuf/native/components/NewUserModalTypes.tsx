@@ -1,9 +1,9 @@
-// Module ID: 15993
-// Function ID: 122738
+// Module ID: 16000
+// Function ID: 122764
 // Name: NEW_USER_MODAL_KEY
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 15993 (NEW_USER_MODAL_KEY)
+// Module 16000 (NEW_USER_MODAL_KEY)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("modules/nuf/native/components/NewUserModalTypes.tsx");
 

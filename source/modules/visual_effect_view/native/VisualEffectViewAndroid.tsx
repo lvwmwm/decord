@@ -1,9 +1,9 @@
-// Module ID: 4530
-// Function ID: 39733
+// Module ID: 4534
+// Function ID: 39781
 // Name: MODERN_ANDROID_BLURRING_AVAILABLE
 // Dependencies: []
 
-// Module 4530 (MODERN_ANDROID_BLURRING_AVAILABLE)
+// Module 4534 (MODERN_ANDROID_BLURRING_AVAILABLE)
 const _module = require(dependencyMap[0]);
 const obj = { componentName: "DCDVisualEffectView" };
 const tmp2 = _module.getSystemVersionMajor() >= 31;

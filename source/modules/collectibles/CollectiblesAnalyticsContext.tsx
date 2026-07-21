@@ -1,10 +1,10 @@
-// Module ID: 8654
-// Function ID: 68510
+// Module ID: 8658
+// Function ID: 68522
 // Name: useCollectiblesAnalyticsContext
 // Dependencies: []
 // Exports: CollectiblesAnalyticsProvider
 
-// Module 8654 (useCollectiblesAnalyticsContext)
+// Module 8658 (useCollectiblesAnalyticsContext)
 function useCollectiblesAnalyticsContext() {
   return importAllResult.useContext(context);
 }

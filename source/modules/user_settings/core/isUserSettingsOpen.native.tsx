@@ -1,10 +1,10 @@
-// Module ID: 12557
-// Function ID: 96655
+// Module ID: 12564
+// Function ID: 96678
 // Name: isSettingsRoutePresent
 // Dependencies: []
 // Exports: useIsUserSettingsOpen
 
-// Module 12557 (isSettingsRoutePresent)
+// Module 12564 (isSettingsRoutePresent)
 function isSettingsRoutePresent(rootState) {
   let routes;
   if (null != rootState) {

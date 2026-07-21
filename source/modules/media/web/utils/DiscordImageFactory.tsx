@@ -1,9 +1,9 @@
-// Module ID: 4710
-// Function ID: 40941
+// Module ID: 4712
+// Function ID: 40982
 // Name: DiscordImageFactory
 // Dependencies: []
 
-// Module 4710 (DiscordImageFactory)
+// Module 4712 (DiscordImageFactory)
 let closure_2 = importDefault(dependencyMap[0]);
 let closure_3 = importDefault(dependencyMap[1]);
 const tmp2 = () => {

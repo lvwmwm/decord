@@ -1,10 +1,10 @@
-// Module ID: 12874
-// Function ID: 98344
+// Module ID: 12881
+// Function ID: 98367
 // Name: getIcon
 // Dependencies: []
 // Exports: default
 
-// Module 12874 (getIcon)
+// Module 12881 (getIcon)
 function getIcon(arg0) {
   if (obj6.WARNING === arg0) {
     let obj = { color: importDefault(dependencyMap[4]).unsafe_rawColors.YELLOW_300 };
@@ -38,7 +38,7 @@ let obj = arg1(dependencyMap[3]);
 obj = {};
 obj = { padding: importDefault(dependencyMap[4]).space.PX_8, gap: importDefault(dependencyMap[4]).space.PX_8 };
 obj.container = obj;
-obj.row = { "Bool(true)": 8, "Bool(true)": null, "Bool(true)": "\u270A\u{1F3FF}" };
+obj.row = {};
 const tmp3 = arg1(dependencyMap[2]);
 obj.content = { flex: 1, marginLeft: importDefault(dependencyMap[4]).space.PX_8 };
 const obj2 = {};

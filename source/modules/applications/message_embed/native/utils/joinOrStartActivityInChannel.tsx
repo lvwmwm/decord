@@ -1,10 +1,10 @@
-// Module ID: 11072
-// Function ID: 86123
+// Module ID: 11078
+// Function ID: 86146
 // Name: _joinOrStartActivityInChannel
 // Dependencies: []
 // Exports: joinOrStartActivityInChannel
 
-// Module 11072 (_joinOrStartActivityInChannel)
+// Module 11078 (_joinOrStartActivityInChannel)
 function _joinOrStartActivityInChannel() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);

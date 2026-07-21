@@ -1,10 +1,10 @@
-// Module ID: 10324
-// Function ID: 79735
+// Module ID: 10330
+// Function ID: 79754
 // Name: TagsIcon
 // Dependencies: []
 // Exports: TagsIcon
 
-// Module 10324 (TagsIcon)
+// Module 10330 (TagsIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/TagsIcon.tsx");

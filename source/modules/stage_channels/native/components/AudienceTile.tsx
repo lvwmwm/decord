@@ -1,9 +1,9 @@
-// Module ID: 10779
-// Function ID: 83721
+// Module ID: 10785
+// Function ID: 83744
 // Name: RaisedHandIcon
 // Dependencies: []
 
-// Module 10779 (RaisedHandIcon)
+// Module 10785 (RaisedHandIcon)
 function RaisedHandIcon(rtsState) {
   const tmp = styles();
   let activeBackground = rtsState.rtsState === arg1(dependencyMap[6]).RequestToSpeakStates.REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK;
@@ -27,13 +27,13 @@ let closure_4 = importDefault(dependencyMap[2]);
 const importAllResult = importAll(dependencyMap[0]);
 ({ jsx: closure_5, jsxs: closure_6 } = arg1(dependencyMap[3]));
 let obj1 = arg1(dependencyMap[4]);
-let obj = { touchableContainer: { overflow: "visible" }, container: { alignItems: "center" }, avatarContainer: { orbsIconAndroid: "<string:1152926208>", TV: "<string:3322347521>", ConversationCoachmark: "<string:4282515458>", GuildRoleSubscriptionTierDesignTab: "<string:117440779>" } };
+let obj = { touchableContainer: { overflow: "visible" }, container: { alignItems: "center" }, avatarContainer: { paddingLeft: "<string:1148797440>", alignItems: "<string:3323723777>", flexDirection: "<string:2286026754>", height: "<string:469762316>" } };
 obj = { borderColor: importDefault(dependencyMap[5]).unsafe_rawColors.PRIMARY_800, backgroundColor: importDefault(dependencyMap[5]).colors.WHITE };
 obj.raisedHandContainer = obj;
 obj1 = { backgroundColor: importDefault(dependencyMap[5]).unsafe_rawColors.GREEN_360 };
 obj.activeBackground = obj1;
-obj.raisedHand = { alignItems: "r", flexDirection: "CONNECTIONS_AUTHORIZE", height: "CHAT_INPUT_CONTAINER_HORIZONTAL_PADDING", count: "y", alignButton: "MEDIA_POST_PREVIEW_EMBED_CLICKED" };
-obj.nameplateContainer = { "Bool(true)": null, "Bool(true)": null, "Bool(true)": null };
+obj.raisedHand = {};
+obj.nameplateContainer = { padding: 0, paddingBottom: 6, flexDirection: 0 };
 const tmp2 = arg1(dependencyMap[3]);
 obj.usernameText = { fontSize: 14, color: importDefault(dependencyMap[5]).colors.WHITE };
 obj.faded = { opacity: 0.5 };

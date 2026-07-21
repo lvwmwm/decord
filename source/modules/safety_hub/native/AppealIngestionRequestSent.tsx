@@ -1,10 +1,10 @@
-// Module ID: 11035
-// Function ID: 85923
+// Module ID: 11040
+// Function ID: 85944
 // Name: AppealIngestionRequestSent
 // Dependencies: []
 // Exports: default
 
-// Module 11035 (AppealIngestionRequestSent)
+// Module 11040 (AppealIngestionRequestSent)
 importAll(dependencyMap[0]);
 ({ View: closure_3, Image: closure_4 } = arg1(dependencyMap[1]));
 const tmp3 = arg1(dependencyMap[1]);
@@ -12,7 +12,7 @@ const tmp3 = arg1(dependencyMap[1]);
 const tmp4 = arg1(dependencyMap[2]);
 ({ jsx: closure_7, jsxs: closure_8 } = arg1(dependencyMap[3]));
 const tmp5 = arg1(dependencyMap[3]);
-let closure_9 = arg1(dependencyMap[4]).createStyles({ container: {}, actionsHeader: { visible: "construct", transparent: "isArray" }, checkboxPng: { VIDEO_MODAL_ICON_END_CARD: 255, flexShrink: -1874964224, TV: 76660033, GameMention: 113529856 } });
+let closure_9 = arg1(dependencyMap[4]).createStyles({ container: { accessibilityRole: "P", guildId: 40 }, actionsHeader: {}, checkboxPng: { <string:2489072230>: true, <string:1664854612>: true, <string:1375441979>: true, <string:996410372>: true } });
 const obj = arg1(dependencyMap[4]);
 const result = arg1(dependencyMap[11]).fileFinishedImporting("modules/safety_hub/native/AppealIngestionRequestSent.tsx");
 

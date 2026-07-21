@@ -1,10 +1,10 @@
-// Module ID: 14692
-// Function ID: 110892
+// Module ID: 14699
+// Function ID: 110916
 // Name: useGuildsBarBottomRightBadge
 // Dependencies: []
 // Exports: default
 
-// Module 14692 (useGuildsBarBottomRightBadge)
+// Module 14699 (useGuildsBarBottomRightBadge)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 const jsx = arg1(dependencyMap[2]).jsx;

@@ -1,10 +1,10 @@
-// Module ID: 8666
-// Function ID: 68621
+// Module ID: 8670
+// Function ID: 68633
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 // Exports: getWishlistProductLines, getWishlistSkuIds, wishlistHasSkuId
 
-// Module 8666 (_isNativeReflectConstruct)
+// Module 8670 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 

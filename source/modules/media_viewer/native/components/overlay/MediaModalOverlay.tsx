@@ -1,15 +1,15 @@
-// Module ID: 12103
-// Function ID: 93278
+// Module ID: 12110
+// Function ID: 93301
 // Name: OverlayMuteButton
 // Dependencies: []
 // Exports: default
 
-// Module 12103 (OverlayMuteButton)
+// Module 12110 (OverlayMuteButton)
 function OverlayMuteButton(arg0) {
   let isMuted;
   let onToggleMute;
   ({ isMuted, onToggleMute } = arg0);
-  let obj = { "Null": null, "Null": null };
+  let obj = { <string:24250455>: null, isArray: null };
   obj = { accessibilityRole: "button" };
   const tmp = callback3();
   const tmp2 = closure_7;
@@ -33,7 +33,7 @@ function OverlayObscureToggleButton(arg0) {
   let onToggleObscure;
   let spoilerActive;
   ({ spoilerActive, onToggleObscure } = arg0);
-  let obj = { "Null": null, "Null": null };
+  let obj = { <string:24250455>: null, isArray: null };
   obj = { accessibilityRole: "button" };
   const tmp = callback3();
   const tmp2 = closure_7;
@@ -92,10 +92,10 @@ obj["backgroundColor"] = "transparent";
 obj.portraitFooterButtons = obj;
 obj1 = { paddingBottom: importDefault(dependencyMap[5]).space.PX_8 };
 obj.invisibleFooter = obj1;
-const obj2 = { showTopContainer: "bbaa1714f228607ce548d318f0e28f01", multiline: "ic_swipe_reply_24px", showBorder: "png", accessible: true, style: "/assets/design/components/Icon/native/redesign/generated/images", gap: importDefault(dependencyMap[5]).space.PX_4 };
+const obj2 = { "Null": "category", "Null": "Array", "Null": "isArray", "Null": "LIGHT", "Null": "isArray", gap: importDefault(dependencyMap[5]).space.PX_4 };
 obj.overlayIcons = obj2;
-obj.overlayButtonIcon = { aze: false, azj: false };
-obj.overlayButton = { "Bool(true)": "r", "Bool(true)": "J61px0", "Bool(true)": "findKey", "Bool(true)": "Date" };
+obj.overlayButtonIcon = { bhk: false, bic: "internal" };
+obj.overlayButton = { paddingVertical: false, paddingHorizontal: false, justifyContent: false, alignItems: false };
 let closure_10 = obj1.createStyles(obj);
 let closure_11 = importAllResult.memo((arg0) => {
   let contextIcon;

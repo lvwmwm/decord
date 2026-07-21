@@ -1,16 +1,16 @@
-// Module ID: 9931
-// Function ID: 76844
+// Module ID: 9936
+// Function ID: 76860
 // Name: EmojiRow
 // Dependencies: []
 // Exports: default
 
-// Module 9931 (EmojiRow)
+// Module 9936 (EmojiRow)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 const ACTION_SHEET_MAX_WIDTH = arg1(dependencyMap[2]).ACTION_SHEET_MAX_WIDTH;
 ({ jsx: closure_5, jsxs: closure_6 } = arg1(dependencyMap[3]));
 const tmp3 = arg1(dependencyMap[3]);
-let closure_7 = arg1(dependencyMap[4]).createStyles({ emojiRowContainer: {}, emojiRow: { 9223372036854775807: "from", 9223372036854775807: "#2c2c2c", 9223372036854775807: "#B0BEC5", 9223372036854775807: "#f3f3f4", 9223372036854775807: "#bcbcbcbc", 9223372036854775807: "#fafafa", 0: "#707070" } });
+let closure_7 = arg1(dependencyMap[4]).createStyles({ emojiRowContainer: {}, emojiRow: {} });
 const obj = arg1(dependencyMap[4]);
 const result = arg1(dependencyMap[18]).fileFinishedImporting("modules/action_sheet/native/components/EmojiRow.tsx");
 

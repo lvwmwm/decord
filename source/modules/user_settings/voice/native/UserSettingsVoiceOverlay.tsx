@@ -1,10 +1,10 @@
-// Module ID: 10703
-// Function ID: 83334
+// Module ID: 10709
+// Function ID: 83357
 // Name: UserSettingsVoiceOverlay
 // Dependencies: []
 // Exports: default
 
-// Module 10703 (UserSettingsVoiceOverlay)
+// Module 10709 (UserSettingsVoiceOverlay)
 importAll(dependencyMap[0]);
 let closure_3 = importDefault(dependencyMap[1]);
 const jsx = arg1(dependencyMap[2]).jsx;

@@ -1,10 +1,10 @@
-// Module ID: 7796
-// Function ID: 62226
+// Module ID: 7800
+// Function ID: 62238
 // Name: getContentScanVersionFromMedia
 // Dependencies: []
 // Exports: getAttachmentObscurityDefaults, getAttachmentObscurityProps, getUnfurledMediaItemObscurityProps
 
-// Module 7796 (getContentScanVersionFromMedia)
+// Module 7800 (getContentScanVersionFromMedia)
 function getContentScanVersionFromMedia(attachment) {
   if (undefined !== attachment.content_scan_version) {
     return attachment.content_scan_version;
@@ -154,5 +154,5 @@ export const getUnfurledMediaItemObscurityProps = function getUnfurledMediaItemO
   return obj1;
 };
 export function getAttachmentObscurityDefaults() {
-  return { "Null": "<string:2046820935>", "Null": "<string:3372221001>" };
+  return { marginHorizontal: null, padding: false };
 }

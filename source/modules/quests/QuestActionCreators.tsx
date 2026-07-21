@@ -1,10 +1,10 @@
-// Module ID: 9432
-// Function ID: 73420
+// Module ID: 9436
+// Function ID: 73434
 // Name: _manuallyStartConsoleQuest
 // Dependencies: []
 // Exports: claimQuestReward, clearQuestAdDecision, completeQuestPreview, dismissProgressTrackingFailureNotice, dismissQuestActivityModal, dismissQuestContent, enrollInQuest, fetchClaimedQuests, fetchCurrentQuests, fetchEarnedQuestToDeliver, fetchQuest, fetchQuestHomeHero, fetchQuestHomeHeroPreview, fetchQuestPreview, fetchQuestRewardCode, fetchQuestToDeliver, fetchVideoTranscript, manualStopConsoleQuest, manuallyStartConsoleQuest, markAdContentSeen, markAdContentUnseen, markQuestDiscovered, overrideQuestForPlacement, questsVisibleMobileMessagesChanged, resetOptimisticProgress, resetQuestDismissibilityStatus, resetQuestPreviewStatus, resetRecentQuestCompletions, selectTaskPlatform, sendHeartbeat, setAutoEnroll, updateOptimisticProgress, updatePrevRestingQuestDockMode, updateQuestDockVisibilityEligibility, updateVideoProgress
 
-// Module 9432 (_manuallyStartConsoleQuest)
+// Module 9436 (_manuallyStartConsoleQuest)
 function _manuallyStartConsoleQuest() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
@@ -221,7 +221,7 @@ export const fetchQuestToDeliver = function fetchQuestToDeliver(MOBILE_HOME_DOCK
 };
 export const clearQuestAdDecision = function clearQuestAdDecision(placement, ttlMillis) {
   let obj = importDefault(dependencyMap[10]);
-  obj = { type: "QUESTS_FETCH_QUEST_TO_DELIVER_SUCCESS", quest: undefined, placement, fetchedAt: Date.now(), responseTtlSeconds: ttlMillis / 1000, fromExpirationClear: true };
+  obj = { type: "QUESTS_CLEAR_EXPIRED_QUEST_TO_DELIVER", placement, fetchedAt: Date.now(), responseTtlSeconds: ttlMillis / 1000 };
   obj.dispatch(obj);
 };
 export const fetchEarnedQuestToDeliver = function fetchEarnedQuestToDeliver() {

@@ -1,10 +1,10 @@
-// Module ID: 8928
-// Function ID: 70405
+// Module ID: 8932
+// Function ID: 70417
 // Name: GameControllerIcon
 // Dependencies: []
 // Exports: GameControllerIcon
 
-// Module 8928 (GameControllerIcon)
+// Module 8932 (GameControllerIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/GameControllerIcon.tsx");

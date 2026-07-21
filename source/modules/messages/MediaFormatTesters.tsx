@@ -1,10 +1,10 @@
-// Module ID: 4309
-// Function ID: 37729
+// Module ID: 4313
+// Function ID: 37777
 // Name: urlMatchesFileExtension
 // Dependencies: []
 // Exports: isAnimatedImageUrl, isAudioFile, isImageContentType, isImageFile, isImageUrl, isRiveFile, isVideoContentType, isVideoFile, isVideoUrl
 
-// Module 4309 (urlMatchesFileExtension)
+// Module 4313 (urlMatchesFileExtension)
 function urlMatchesFileExtension(sourceURI, GIF_RE_IOS) {
   if (null == sourceURI) {
     return false;

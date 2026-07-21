@@ -125,7 +125,7 @@ function _getPrototypeOf(arg0) {
 function _defineProperty(arg0, arg1, value) {
   if (arg1 in arg0) {
     const _Object = Object;
-    const obj = { value };
+    const obj = { FRIEND_REQUESTS: true, ForYouLoadMore: true, QUEST_BADGE: true, GUILD_CHANNEL_INTEGRITY_CHECK_CANCELED: true, value };
     Object.defineProperty(arg0, arg1, obj);
   } else {
     arg0[arg1] = value;
@@ -164,7 +164,7 @@ export const ISOWeekParser = (Parser) => {
         tmp17 = closure_10(applyResult, "priority", 100);
         tmp18 = closure_8(applyResult);
         str3 = "incompatibleTokens";
-        tmp19 = closure_10(applyResult, "incompatibleTokens", []);
+        tmp19 = closure_10(applyResult, "incompatibleTokens", [null, null, "<string:657395556>", "<string:75711019>", "<string:1149435905>", "<string:3343974402>", "<string:837239306>", "<string:1624375300>", "<string:1414594563>", "<string:788682835>", "<string:1661082369>", "<string:1630218057>", "<string:19878403>", "<string:1231225371>"]);
         return applyResult;
       } else {
         _TypeError = TypeError;
@@ -208,7 +208,7 @@ export const ISOWeekParser = (Parser) => {
           tmp17 = closure_10(applyResult, "priority", 100);
           tmp18 = closure_8(applyResult);
           str3 = "incompatibleTokens";
-          tmp19 = closure_10(applyResult, "incompatibleTokens", []);
+          tmp19 = closure_10(applyResult, "incompatibleTokens", [null, null, "<string:657395556>", "<string:75711019>", "<string:1149435905>", "<string:3343974402>", "<string:837239306>", "<string:1624375300>", "<string:1414594563>", "<string:788682835>", "<string:1661082369>", "<string:1630218057>", "<string:19878403>", "<string:1231225371>"]);
           return applyResult;
         } else {
           _TypeError = TypeError;
@@ -227,7 +227,7 @@ export const ISOWeekParser = (Parser) => {
   if (Parser) {
     prototype = Parser.prototype;
   }
-  let obj = { EntryPointCommandButtonActions: null, NATIVE_SECTION: null, 1476351743: null, value: ISOWeekParser };
+  let obj = { value: ISOWeekParser };
   ISOWeekParser.prototype = Object.create(prototype, { constructor: obj });
   if (Parser) {
     class ISOWeekParser {
@@ -258,7 +258,7 @@ export const ISOWeekParser = (Parser) => {
           tmp17 = closure_10(applyResult, "priority", 100);
           tmp18 = closure_8(applyResult);
           str3 = "incompatibleTokens";
-          tmp19 = closure_10(applyResult, "incompatibleTokens", []);
+          tmp19 = closure_10(applyResult, "incompatibleTokens", [null, null, "<string:657395556>", "<string:75711019>", "<string:1149435905>", "<string:3343974402>", "<string:837239306>", "<string:1624375300>", "<string:1414594563>", "<string:788682835>", "<string:1661082369>", "<string:1630218057>", "<string:19878403>", "<string:1231225371>"]);
           return applyResult;
         } else {
           _TypeError = TypeError;

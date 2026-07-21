@@ -1,10 +1,10 @@
-// Module ID: 12001
-// Function ID: 92773
+// Module ID: 12008
+// Function ID: 92796
 // Name: navigateToPremiumHomePage
 // Dependencies: []
 // Exports: navigateToNitroHomePage, navigateToPremiumHomePage
 
-// Module 12001 (navigateToPremiumHomePage)
+// Module 12008 (navigateToPremiumHomePage)
 const _module = require(dependencyMap[0]);
 ({ Routes: closure_2, UserSettingsSections: closure_3 } = _module);
 const _module1 = require(dependencyMap[4]);

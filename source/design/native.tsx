@@ -1,9 +1,9 @@
-// Module ID: 12910
-// Function ID: 98453
+// Module ID: 12917
+// Function ID: 98476
 // Name: AccessibilityAnnouncer
 // Dependencies: []
 
-// Module 12910 (AccessibilityAnnouncer)
+// Module 12917 (AccessibilityAnnouncer)
 const _module = require(dependencyMap[4]);
 const result = _module.fileFinishedImporting("design/native.tsx");
 

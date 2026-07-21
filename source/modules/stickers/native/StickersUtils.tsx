@@ -1,10 +1,10 @@
-// Module ID: 9589
-// Function ID: 74755
+// Module ID: 9594
+// Function ID: 74772
 // Name: useStickerCategories
 // Dependencies: []
 // Exports: dropPreloadedSticker, openStickerPickerToPackId, preloadSticker, useStickerCategories
 
-// Module 9589 (useStickerCategories)
+// Module 9594 (useStickerCategories)
 let closure_3 = importAll(dependencyMap[0]);
 const NativeModules = arg1(dependencyMap[1]).NativeModules;
 let closure_5 = importDefault(dependencyMap[2]);

@@ -1,10 +1,10 @@
-// Module ID: 7626
-// Function ID: 61109
+// Module ID: 7630
+// Function ID: 61121
 // Name: createDefaultReaction
 // Dependencies: []
 // Exports: createDefaultReaction, createForumPostActions
 
-// Module 7626 (createDefaultReaction)
+// Module 7630 (createDefaultReaction)
 const HelpdeskArticles = require(dependencyMap[0]).HelpdeskArticles;
 const _module = require(dependencyMap[14]);
 const result = _module.fileFinishedImporting("modules/messages/native/renderer/row_data/ForumPostActions.tsx");
@@ -61,7 +61,7 @@ export const createDefaultReaction = function createDefaultReaction(arg0) {
   }
   let tmp13;
   if (null != tmp2) {
-    const obj4 = { name: null, padding: "2eaff20be2a75be7ccdd4c6f19f0eb36", a: "img_account_sync_youtube_white", emoji: tmp2 };
+    const obj4 = { <string:1751302160>: null, <string:3146273726>: "2eaff20be2a75be7ccdd4c6f19f0eb36", <string:463358356>: "img_account_sync_youtube_white", emoji: tmp2 };
     tmp13 = obj4;
   }
   return tmp13;

@@ -1,10 +1,10 @@
-// Module ID: 10539
-// Function ID: 82348
+// Module ID: 10545
+// Function ID: 82371
 // Name: openIgnoreThermalStateAlert
 // Dependencies: []
 // Exports: openIgnoreThermalStateAlert
 
-// Module 10539 (openIgnoreThermalStateAlert)
+// Module 10545 (openIgnoreThermalStateAlert)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/activities/native/openIgnoreThermalStateAlert.tsx");

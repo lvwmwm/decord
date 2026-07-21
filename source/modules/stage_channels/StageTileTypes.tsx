@@ -1,9 +1,9 @@
-// Module ID: 10758
-// Function ID: 83634
+// Module ID: 10764
+// Function ID: 83657
 // Name: StageTileSize
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 10758 (StageTileSize)
+// Module 10764 (StageTileSize)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("modules/stage_channels/StageTileTypes.tsx");
 

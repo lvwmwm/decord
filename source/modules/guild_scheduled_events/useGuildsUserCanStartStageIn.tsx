@@ -1,10 +1,10 @@
-// Module ID: 8373
-// Function ID: 66694
+// Module ID: 8377
+// Function ID: 66706
 // Name: useChannelsUserCanStartStageIn
 // Dependencies: []
 // Exports: useChannelsUserCanStartStageIn
 
-// Module 8373 (useChannelsUserCanStartStageIn)
+// Module 8377 (useChannelsUserCanStartStageIn)
 let closure_2 = importDefault(dependencyMap[0]);
 const GUILD_VOCAL_CHANNELS_KEY = arg1(dependencyMap[0]).GUILD_VOCAL_CHANNELS_KEY;
 let closure_4 = importDefault(dependencyMap[1]);

@@ -1,10 +1,10 @@
-// Module ID: 8897
-// Function ID: 70239
+// Module ID: 8901
+// Function ID: 70251
 // Name: SecureFramesExistingVerificationsHelpMessage
 // Dependencies: []
 // Exports: default
 
-// Module 8897 (SecureFramesExistingVerificationsHelpMessage)
+// Module 8901 (SecureFramesExistingVerificationsHelpMessage)
 const View = require(dependencyMap[0]).View;
 const jsx = require(dependencyMap[1]).jsx;
 const _module = require(dependencyMap[2]);

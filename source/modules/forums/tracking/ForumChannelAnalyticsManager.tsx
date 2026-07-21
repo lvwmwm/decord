@@ -1,9 +1,9 @@
-// Module ID: 7004
-// Function ID: 56205
+// Module ID: 7008
+// Function ID: 56216
 // Name: ForumChannelAnalyticsManager
 // Dependencies: []
 
-// Module 7004 (ForumChannelAnalyticsManager)
+// Module 7008 (ForumChannelAnalyticsManager)
 let closure_0 = importDefault(dependencyMap[1]);
 let closure_1 = importDefault(dependencyMap[2]);
 class ForumChannelAnalyticsManager {

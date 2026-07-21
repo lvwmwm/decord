@@ -1,10 +1,13 @@
 // Module ID: 3380
 // Function ID: 26520
 // Name: _typeof
-// Dependencies: []
+// Dependencies: [3366, 3370]
 // Exports: default
 
 // Module 3380 (_typeof)
+import startOfWeek from "startOfWeek";
+import getTimezoneOffsetInMilliseconds from "getTimezoneOffsetInMilliseconds";
+
 function _typeof(arg0) {
   if ("function" === typeof Symbol) {
     const _Symbol = Symbol;
@@ -30,11 +33,9 @@ function _typeof(arg0) {
     str2 = typeof arg0;
   };
 }
-let closure_0 = _interopRequireDefault(require(dependencyMap[0]));
-let closure_1 = _interopRequireDefault(require(dependencyMap[1]));
 
 export default function min(arg0) {
-  closure_1.default(1, arguments);
+  getTimezoneOffsetInMilliseconds.default(1, arguments);
   if (!arg0) {
     if ("object" === _typeof(arg0)) {
       if (null !== arg0) {
@@ -60,8 +61,8 @@ export default function min(arg0) {
       isNaNResult = isNaN(defaultResult.getDate());
     }
   });
-  let date1 = closure_0;
-  if (!closure_0) {
+  let date1 = startOfWeek;
+  if (!startOfWeek) {
     const _Date2 = Date;
     const _NaN2 = NaN;
     date1 = new Date(NaN);

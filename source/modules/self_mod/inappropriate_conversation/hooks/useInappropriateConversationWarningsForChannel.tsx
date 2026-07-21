@@ -1,10 +1,10 @@
-// Module ID: 10093
-// Function ID: 78173
+// Module ID: 10099
+// Function ID: 78191
 // Name: useInappropriateConversationWarningsForChannel
 // Dependencies: []
 // Exports: useInappropriateConversationWarningsForChannel
 
-// Module 10093 (useInappropriateConversationWarningsForChannel)
+// Module 10099 (useInappropriateConversationWarningsForChannel)
 let closure_2 = importDefault(dependencyMap[0]);
 const SafetyWarningTypes = arg1(dependencyMap[0]).SafetyWarningTypes;
 const result = arg1(dependencyMap[2]).fileFinishedImporting("modules/self_mod/inappropriate_conversation/hooks/useInappropriateConversationWarningsForChannel.tsx");

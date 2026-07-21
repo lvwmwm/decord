@@ -1,10 +1,10 @@
-// Module ID: 8646
-// Function ID: 68443
+// Module ID: 8650
+// Function ID: 68455
 // Name: useGameAnnouncements
 // Dependencies: []
 // Exports: default
 
-// Module 8646 (useGameAnnouncements)
+// Module 8650 (useGameAnnouncements)
 const useEffect = require(dependencyMap[0]).useEffect;
 let closure_3 = importDefault(dependencyMap[1]);
 const _module = require(dependencyMap[4]);

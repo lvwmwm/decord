@@ -1,10 +1,10 @@
-// Module ID: 14732
-// Function ID: 111100
+// Module ID: 14739
+// Function ID: 111124
 // Name: usePreloadedGuildAsset
 // Dependencies: []
 // Exports: default
 
-// Module 14732 (usePreloadedGuildAsset)
+// Module 14739 (usePreloadedGuildAsset)
 let closure_2 = importDefault(dependencyMap[0]);
 let closure_3 = importAll(dependencyMap[1]);
 const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/guilds_bar/native/hooks/usePreloadedGuildAsset.tsx");

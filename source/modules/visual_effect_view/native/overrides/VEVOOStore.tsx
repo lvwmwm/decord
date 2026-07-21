@@ -1,10 +1,10 @@
-// Module ID: 4526
-// Function ID: 39720
+// Module ID: 4530
+// Function ID: 39768
 // Name: useVisualEffectViewOverrides
 // Dependencies: []
 // Exports: clearVisualEffectViewOverrides, getVisualEffectViewOverrides, setVisualEffectViewOverides, useVisualEffectViewOverrides
 
-// Module 4526 (useVisualEffectViewOverrides)
+// Module 4530 (useVisualEffectViewOverrides)
 let closure_2 = {};
 const _module = require(dependencyMap[0]);
 let closure_3 = _module.create(() => closure_2);

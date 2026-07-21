@@ -1,10 +1,10 @@
-// Module ID: 12866
-// Function ID: 98304
+// Module ID: 12873
+// Function ID: 98327
 // Name: handleDCShownToUser
 // Dependencies: []
 // Exports: handleDCDismissed, handleDCShownToUser, overrideDCFLastDCDismissed, overrideDismissibleContentFramework, overrideNewUserMinAgeRequired, resetDismissibleContentFrameworkStore
 
-// Module 12866 (handleDCShownToUser)
+// Module 12873 (handleDCShownToUser)
 const _module = require(dependencyMap[1]);
 const result = _module.fileFinishedImporting("modules/dismissible_content/DismissibleContentFrameworkActionCreators.tsx");
 

@@ -1,17 +1,17 @@
-// Module ID: 16288
-// Function ID: 125709
+// Module ID: 16295
+// Function ID: 125740
 // Name: Header
 // Dependencies: []
 // Exports: default
 
-// Module 16288 (Header)
+// Module 16295 (Header)
 function Header(arg0) {
   let description;
   let title;
   ({ description, title } = arg0);
   const tmp = callback3();
   let obj = { top: true, style: tmp.headerContainer };
-  obj = { 0: 24, 9223372036854775807: 24, 0: null, -9223372036854775808: "aa9c26c29990ba7a6584e51ab5c56efa", style: tmp.title, children: title };
+  obj = { 1501064855: 24, -1267889981: 24, -1145697943: null, -1266241916: "aa9c26c29990ba7a6584e51ab5c56efa", style: tmp.title, children: title };
   const items = [callback(arg1(dependencyMap[6]).Text, obj), , ];
   obj = { style: tmp.subtitle, children: description };
   items[1] = callback(arg1(dependencyMap[6]).Text, obj);
@@ -50,11 +50,11 @@ obj = {};
 obj = { backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_BASE_LOW, height: "100%" };
 obj.container = obj;
 obj.scrollContainer = { flexGrow: 1 };
-obj.headerContainer = {};
+obj.headerContainer = { "Null": false, "Null": false, "Null": false, "Null": false, "Null": false };
 obj.title = {};
-obj.subtitle = { accessible: null, id: null };
+obj.subtitle = { "Null": null, "Null": null };
 obj.separator = { marginTop: 24 };
-obj.footerContainer = { 1643688688: true, 33509657: true };
+obj.footerContainer = {};
 let closure_8 = obj.createStyles(obj);
 const tmp3 = arg1(dependencyMap[2]);
 const result = arg1(dependencyMap[12]).fileFinishedImporting("modules/guild_role_subscriptions/native/components/GuildRoleSubscriptionTierEditStep.tsx");
@@ -84,7 +84,7 @@ export default function GuildRoleSubscriptionTierEditStep(scrollable) {
     const obj1 = {};
     const merged1 = Object.assign(merged);
     const items1 = [callback(Header, obj1), , ];
-    const obj2 = { -1636630524: true, -1976696828: true, -1610678268: true };
+    const obj2 = { accessible: null, type: null, padding: null };
     const items2 = [tmp3.scrollContainer];
     obj2.contentContainerStyle = items2;
     obj2.children = merged.children;

@@ -1,10 +1,10 @@
-// Module ID: 5642
-// Function ID: 48197
+// Module ID: 5644
+// Function ID: 48239
 // Name: isGuildOfficialMessagesEnabled
 // Dependencies: []
 // Exports: canSendGuildOfficialMessages, getAccessibleGuildOfficialTextColor, showGuildOfficialMessageGradient, showGuildOfficialMessageTextColor, useCanToggleGuildOfficialMessages
 
-// Module 5642 (isGuildOfficialMessagesEnabled)
+// Module 5644 (isGuildOfficialMessagesEnabled)
 function isGuildOfficialMessagesEnabled(guild, GuildSettingsModalLanding) {
   let enabled = null != guild;
   if (enabled) {

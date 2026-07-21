@@ -1,13 +1,13 @@
-// Module ID: 7562
-// Function ID: 60527
+// Module ID: 7566
+// Function ID: 60539
 // Name: ModalContent
 // Dependencies: []
 
-// Module 7562 (ModalContent)
+// Module 7566 (ModalContent)
 const ScrollView = arg1(dependencyMap[1]).ScrollView;
 const jsx = arg1(dependencyMap[2]).jsx;
 const importAllResult = importAll(dependencyMap[0]);
-let closure_2 = arg1(dependencyMap[3]).createStyles({ scrollContainer: { flex: 1 }, contentContainer: { completedAt: true, unamused: true, defaultGuildsRestricted: true, "Bool(false)": true, "Bool(false)": true } });
+let closure_2 = arg1(dependencyMap[3]).createStyles({ scrollContainer: { flex: 1 }, contentContainer: { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null } });
 const obj2 = arg1(dependencyMap[3]);
 const forwardRefResult = importAllResult.forwardRef((children, ref) => {
   const tmp = callback();

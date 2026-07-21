@@ -1,16 +1,16 @@
-// Module ID: 7883
-// Function ID: 62783
+// Module ID: 7887
+// Function ID: 62795
 // Name: GridAvatar
-// Dependencies: [22, 7894, 4126, 689, 7624, 5442, 5502, 1395, 2, 4321, 7895]
+// Dependencies: [22, 7898, 4126, 689, 7628, 5444, 5504, 1395, 2, 4325, 7899]
 // Exports: default
 
-// Module 7883 (GridAvatar)
+// Module 7887 (GridAvatar)
 import "apply";
 import { View } from "normal";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import closure_4 from "_createForOfIteratorHelperLoose";
 import frozen from "frozen";
-import module_5442 from "module_5442";
+import module_5444 from "module_5444";
 import PollLayoutTypes from "PollLayoutTypes";
 
 function GridAvatar(user) {
@@ -39,7 +39,7 @@ function GridAvatar(user) {
     tmp4 = stateFromStores;
   }
   obj.status = tmp4;
-  obj.statusStyle = module_5442().avatarStatusStyle;
+  obj.statusStyle = module_5444().avatarStatusStyle;
   obj.size = size;
   if (undefined !== pendingAvatarSrc) {
     obj = {};
@@ -54,15 +54,15 @@ function GridAvatar(user) {
   return closure_5(arg1(dependencyMap[8]).Avatar, obj1);
 }
 ({ jsx: closure_5, jsxs: closure_6 } = frozen);
-module_5442 = { avatarRow: { "Bool(true)": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000180953751370314, "Bool(true)": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000005719139397267464, "Bool(true)": 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000567902115825738 } };
-module_5442 = { backgroundColor: require("module_5502").colors.BACKGROUND_SURFACE_HIGH };
-module_5442.avatarStatusStyle = module_5442;
-module_5442.gridContainer = { "Null": "FrameEffect_01-2_Out", "Null": 0, "Null": 149.75, "Null": 3 };
-module_5442 = module_5442.createStyles(module_5442);
+module_5444 = { avatarRow: { padding: true, paddingBottom: true, flexDirection: true } };
+module_5444 = { backgroundColor: require("module_5504").colors.BACKGROUND_SURFACE_HIGH };
+module_5444.avatarStatusStyle = module_5444;
+module_5444.gridContainer = { "Bool(true)": "FrameEffect_01-2_Out", "Bool(true)": 0, "Bool(true)": 149.75, "Bool(true)": 3 };
+module_5444 = module_5444.createStyles(module_5444);
 const result = PollLayoutTypes.fileFinishedImporting("modules/collectibles/avatar_decorations/native/AvatarGrid.tsx");
 
 export default function AvatarGrid(arg0) {
-  const tmp = module_5442();
+  const tmp = module_5444();
   let obj = { style: tmp.gridContainer };
   obj = { style: tmp.avatarRow };
   obj = { size: arg1(dependencyMap[8]).AvatarSizes.NORMAL };

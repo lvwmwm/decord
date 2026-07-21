@@ -1,10 +1,10 @@
-// Module ID: 4313
-// Function ID: 37763
+// Module ID: 4317
+// Function ID: 37811
 // Name: canViewChannel
 // Dependencies: []
 // Exports: isAccessibleChannelPath, tryParseChannelPath, tryParseDiceRollLink, tryParseEventDetailsPath
 
-// Module 4313 (canViewChannel)
+// Module 4317 (canViewChannel)
 function canViewChannel(isPrivate) {
   const tmp = !isPrivate.isPrivate();
   let canResult = !tmp;

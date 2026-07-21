@@ -1,8 +1,8 @@
-// Module ID: 7869
-// Function ID: 62667
+// Module ID: 7873
+// Function ID: 62679
 // Dependencies: []
 
-// Module 7869
+// Module 7873
 const View = arg1(dependencyMap[1]).View;
 let closure_4 = importDefault(dependencyMap[2]);
 let closure_5 = importDefault(dependencyMap[3]);
@@ -39,7 +39,7 @@ const forwardRefResult = importAllResult.forwardRef((user, ref) => {
   if (flag === undefined) {
     flag = true;
   }
-  let obj = { MemberRowItem: "Text", bbWidth: "message", bbHeight: "textAlign", minX: "r", minY: "isArray", vbWidth: "accessibilityRole", vbHeight: "sr", align: "", meetOrSlice: "Text", MCP_RESOURCE_URI_ATTRIBUTE: "messageId" };
+  let obj = { 0: "r", 9223372036854775807: "setAlert", 9223372036854775807: "jsVersion", -9223372036854775808: "SELF_HARM_CONTENT", 9223372036854775807: "numMediaItems", 9223372036854775807: "r", 0: "isSearching", 9223372036854775807: "SELF_HARM_CONTENT", -9223372036854775808: "numMemberTabReturnedResults", 9223372036854775807: "r" };
   Object.setPrototypeOf(null);
   const merged = Object.assign(user, obj);
   let View;

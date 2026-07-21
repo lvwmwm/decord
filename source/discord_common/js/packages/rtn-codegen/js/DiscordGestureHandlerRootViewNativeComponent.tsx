@@ -1,9 +1,9 @@
-// Module ID: 13348
-// Function ID: 101569
+// Module ID: 13355
+// Function ID: 101592
 // Name: __INTERNAL_VIEW_CONFIG
 // Dependencies: []
 
-// Module 13348 (__INTERNAL_VIEW_CONFIG)
+// Module 13355 (__INTERNAL_VIEW_CONFIG)
 const obj = { uiViewClassName: "DiscordGestureHandlerRootView", validAttributes: {} };
 const _module = require(dependencyMap[0]);
 const value = _module.get("DiscordGestureHandlerRootView", () => obj);

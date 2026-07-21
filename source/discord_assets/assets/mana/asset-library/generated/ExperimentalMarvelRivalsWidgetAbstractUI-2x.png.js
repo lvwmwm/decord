@@ -1,9 +1,9 @@
-// Module ID: 6042
-// Function ID: 49937
+// Module ID: 6044
+// Function ID: 49980
 // Name: metadata
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 6042 (metadata)
+// Module 6044 (metadata)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/ExperimentalMarvelRivalsWidgetAbstractUI-2x.png.js");
 

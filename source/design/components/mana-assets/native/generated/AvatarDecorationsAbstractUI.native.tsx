@@ -1,10 +1,10 @@
-// Module ID: 5863
-// Function ID: 49668
+// Module ID: 5865
+// Function ID: 49711
 // Name: AvatarDecorationsAbstractUI
 // Dependencies: []
 // Exports: AvatarDecorationsAbstractUI
 
-// Module 5863 (AvatarDecorationsAbstractUI)
+// Module 5865 (AvatarDecorationsAbstractUI)
 const jsx = require(dependencyMap[0]).jsx;
 const _module = require(dependencyMap[3]);
 const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/AvatarDecorationsAbstractUI.native.tsx");

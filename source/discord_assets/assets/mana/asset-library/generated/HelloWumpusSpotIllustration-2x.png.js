@@ -1,9 +1,9 @@
-// Module ID: 6256
-// Function ID: 50258
+// Module ID: 6258
+// Function ID: 50301
 // Name: metadata
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 6256 (metadata)
+// Module 6258 (metadata)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/HelloWumpusSpotIllustration-2x.png.js");
 

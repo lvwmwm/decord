@@ -1,8 +1,8 @@
-// Module ID: 10188
-// Function ID: 78672
+// Module ID: 10194
+// Function ID: 78690
 // Dependencies: []
 
-// Module 10188
+// Module 10194
 let closure_2 = importDefault(dependencyMap[0]);
 const result = arg1(dependencyMap[3]).fileFinishedImporting("actions/ChannelCollapseActionCreators.tsx");
 

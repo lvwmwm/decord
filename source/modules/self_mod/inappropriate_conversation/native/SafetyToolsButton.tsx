@@ -1,10 +1,10 @@
-// Module ID: 10112
-// Function ID: 78294
+// Module ID: 10118
+// Function ID: 78312
 // Name: SafetyToolsButton
 // Dependencies: []
 // Exports: SafetyToolsButton
 
-// Module 10112 (SafetyToolsButton)
+// Module 10118 (SafetyToolsButton)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 const View = arg1(dependencyMap[2]).View;

@@ -1,7 +1,7 @@
 // Module ID: 456
 // Function ID: 6081
 // Name: PermissionsAndroidImpl
-// Dependencies: []
+// Dependencies: [37093376, 131072, 2573271040, 1859516754, 123765, 123904]
 
 // Module 456 (PermissionsAndroidImpl)
 let closure_2 = importDefault(dependencyMap[0]);

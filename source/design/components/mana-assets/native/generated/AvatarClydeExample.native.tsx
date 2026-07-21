@@ -1,10 +1,10 @@
-// Module ID: 5859
-// Function ID: 49662
+// Module ID: 5861
+// Function ID: 49705
 // Name: AvatarClydeExample
 // Dependencies: []
 // Exports: AvatarClydeExample
 
-// Module 5859 (AvatarClydeExample)
+// Module 5861 (AvatarClydeExample)
 const jsx = require(dependencyMap[0]).jsx;
 const _module = require(dependencyMap[3]);
 const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/AvatarClydeExample.native.tsx");

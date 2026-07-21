@@ -1,10 +1,10 @@
-// Module ID: 5891
-// Function ID: 49710
+// Module ID: 5893
+// Function ID: 49753
 // Name: BeeIllocon
 // Dependencies: []
 // Exports: BeeIllocon
 
-// Module 5891 (BeeIllocon)
+// Module 5893 (BeeIllocon)
 const jsx = require(dependencyMap[0]).jsx;
 const _module = require(dependencyMap[3]);
 const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/BeeIllocon.native.tsx");

@@ -1,10 +1,10 @@
-// Module ID: 10578
-// Function ID: 82565
+// Module ID: 10584
+// Function ID: 82588
 // Name: mediaEngineContextFromParticipantType
 // Dependencies: []
 // Exports: default
 
-// Module 10578 (mediaEngineContextFromParticipantType)
+// Module 10584 (mediaEngineContextFromParticipantType)
 const ParticipantTypes = require(dependencyMap[0]).ParticipantTypes;
 const MediaEngineContextTypes = require(dependencyMap[1]).MediaEngineContextTypes;
 let closure_0 = Object.freeze({ [ParticipantTypes.STREAM]: MediaEngineContextTypes.STREAM, [ParticipantTypes.HIDDEN_STREAM]: MediaEngineContextTypes.STREAM, [ParticipantTypes.USER]: MediaEngineContextTypes.DEFAULT, [ParticipantTypes.ACTIVITY]: MediaEngineContextTypes.DEFAULT });

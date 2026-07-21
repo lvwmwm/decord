@@ -1,10 +1,10 @@
-// Module ID: 15660
-// Function ID: 119673
+// Module ID: 15667
+// Function ID: 119697
 // Name: SecureFramesCallVerificationBottomSheet
 // Dependencies: []
 // Exports: default
 
-// Module 15660 (SecureFramesCallVerificationBottomSheet)
+// Module 15667 (SecureFramesCallVerificationBottomSheet)
 let closure_3 = importAll(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 const AnalyticsSections = arg1(dependencyMap[2]).AnalyticsSections;

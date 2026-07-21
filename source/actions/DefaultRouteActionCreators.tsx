@@ -1,10 +1,10 @@
-// Module ID: 10793
-// Function ID: 83832
+// Module ID: 10799
+// Function ID: 83855
 // Name: isLurkingGuildRoute
 // Dependencies: []
 // Exports: saveLastNonVoiceRoute, saveLastRoute
 
-// Module 10793 (isLurkingGuildRoute)
+// Module 10799 (isLurkingGuildRoute)
 function isLurkingGuildRoute(Routes) {
   let obj = arg1(dependencyMap[2]);
   obj = {};

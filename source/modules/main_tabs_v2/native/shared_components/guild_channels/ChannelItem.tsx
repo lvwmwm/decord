@@ -1,10 +1,10 @@
-// Module ID: 15222
-// Function ID: 114951
+// Module ID: 15229
+// Function ID: 114975
 // Name: LaunchpadChannelIcon
 // Dependencies: []
 // Exports: getChannelAccessibilityProps, renderChannelItem
 
-// Module 15222 (LaunchpadChannelIcon)
+// Module 15229 (LaunchpadChannelIcon)
 function LaunchpadChannelIcon(channel) {
   channel = channel.channel;
   const arg1 = channel;
@@ -49,7 +49,7 @@ const UnreadSetting = arg1(dependencyMap[5]).UnreadSetting;
 const tmp3 = arg1(dependencyMap[6]);
 let closure_11 = arg1(dependencyMap[9]).createStyles((layout) => {
   let obj = {};
-  obj = { <string:1397885025>: "String", <string:1386655124>: "construct", <string:155048165>: "a", <string:1942519641>: "isArray", <string:1819447693>: "isArray", <string:3697363290>: "isArray", borderColor: importDefault(dependencyMap[10]).colors.BACKGROUND_BASE_LOW };
+  obj = { <string:995231841>: "String", <string:1386635668>: "construct", <string:159242477>: "a", <string:3512070740>: "isArray", <string:1139816811>: "isArray", <string:1383489971>: "isArray", borderColor: importDefault(dependencyMap[10]).colors.BACKGROUND_BASE_LOW };
   let num = 6;
   if (obj3.isLayoutCozy(layout)) {
     num = 9;
@@ -67,8 +67,9 @@ export const getChannelAccessibilityProps = function getChannelAccessibilityProp
   let unread;
   let voiceStates;
   channel = channel.channel;
-  let obj = { accessibilityLabel: importDefault(dependencyMap[7])({ channel, unread, mentionCount, voiceStates, embeddedActivitiesCount }) };
+  let obj = { positionBottom: false, positionRight: false };
   ({ unread, mentionCount, voiceStates, embeddedActivitiesCount } = channel);
+  obj.accessibilityLabel = importDefault(dependencyMap[7])({ channel, unread, mentionCount, voiceStates, embeddedActivitiesCount });
   if (channel.isGuildVoice()) {
     obj = {};
     const intl = arg1(dependencyMap[8]).intl;
@@ -140,7 +141,7 @@ export const renderChannelItem = function renderChannelItem(unread) {
   obj = {};
   const items = [unreadBadge, , , ];
   obj = {};
-  obj1 = { "Null": null, "Null": null, "Null": null, "Null": null, "Null": null, "Null": null, borderRadius: importDefault(dependencyMap[10]).radii.round };
+  obj1 = { flexWrap: -716111870, gap: 373772727, position: 114, width: 0, height: 200687872, overflow: -1825505279, borderRadius: importDefault(dependencyMap[10]).radii.round };
   let obj6 = arg1(dependencyMap[11]);
   const merged = Object.assign(obj6.makeSizeStyle(layoutStyles.icon.wrapper.size));
   const merged1 = Object.assign(layoutStyles.icon.margin);

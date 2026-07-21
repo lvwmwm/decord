@@ -1,10 +1,10 @@
-// Module ID: 16093
-// Function ID: 124102
+// Module ID: 16100
+// Function ID: 124133
 // Name: AutomodTriggerType
 // Dependencies: []
 // Exports: checkTriggerTypeForFlag, getAvailableActionTypes, getDefaultTriggerMetadataForTriggerType, useAvailableTriggerTypes, validateRuleByTriggerConfigOrThrow
 
-// Module 16093 (AutomodTriggerType)
+// Module 16100 (AutomodTriggerType)
 let AutomodActionType;
 let AutomodEventType;
 let AutomodTriggerType;

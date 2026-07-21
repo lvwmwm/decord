@@ -1,9 +1,9 @@
-// Module ID: 12618
-// Function ID: 97035
+// Module ID: 12625
+// Function ID: 97058
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
-// Module 12618 (_isNativeReflectConstruct)
+// Module 12625 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -21,7 +21,7 @@ function explodePlayoutMetrics(obj) {
     let tmp13 = closure_0;
     let tmp14 = closure_2;
     if (obj2 instanceof closure_0(closure_2[6]).Histogram) {
-      let report = obj2.getReport([]);
+      let report = obj2.getReport([null, null, null]);
       let _Math = Math;
       let text = `${key10016}_mean`;
       obj[`${key10016}_mean`] = Math.round(report.mean);
@@ -79,7 +79,7 @@ function handleCounter(lastValue) {
   let accumulated;
   let obj = arg1;
   if (null == arg1) {
-    obj = { "Null": false, "Null": true };
+    obj = { "Bool(false)": -536870861, "Bool(false)": -299892737 };
   }
   ({ accumulated, lastValue } = obj);
   obj = {};
@@ -483,7 +483,7 @@ const tmp2 = (arg0) => {
                   obj3.mos = 0;
                   obj3.mosSum = 0;
                   obj3.mosCount = 0;
-                  obj3.mosBuckets = [31, 27, 33, 4511, 31];
+                  obj3.mosBuckets = [];
                   obj3.bufferStats = obj;
                   obj3.frameOpStats = obj;
                   const merged1 = Object.assign(obj);
@@ -569,7 +569,7 @@ const tmp2 = (arg0) => {
       histogram = new VoiceQuality(closure_2[6]).Histogram();
       obj.speakingAudioLevel = histogram;
       tmp2Result.outboundStats = obj;
-      tmp2Result.duration = {};
+      tmp2Result.duration = { <string:2153876638>: null, <string:1118085201>: 4, left command: 4, right command: "rgba(0, 0, 0, 0.75)" };
       tmp2Result.periodicInboundStats = {};
       tmp2Result.inputDeviceStats = {};
       tmp2Result.outputDeviceStats = {};
@@ -597,9 +597,9 @@ const tmp2 = (arg0) => {
   obj = {
     key: "getMosStats",
     value() {
-      let obj = { "Bool(false)": false, "Bool(false)": true };
+      let obj = { "Null": -536870861, "Null": -299892737 };
       let num = 0;
-      obj.mosBuckets = [31, 27, 33, 4511, 31];
+      obj.mosBuckets = [];
       const reduced = callback(closure_2[8]).reduce(this.inboundStats, (mosSum, mosSum2) => {
         mosSum.mosSum = mosSum.mosSum + mosSum2.mosSum;
         mosSum.mosCount = mosSum.mosCount + mosSum2.mosCount;
@@ -634,7 +634,7 @@ const tmp2 = (arg0) => {
         packetsReceived.fecPacketsReceived = packetsReceived.fecPacketsReceived + packetsReceived2.fecPacketsReceived;
         packetsReceived.fecPacketsDiscarded = packetsReceived.fecPacketsDiscarded + packetsReceived2.fecPacketsDiscarded;
         return packetsReceived;
-      }, { numpad .: false, numpad /: null, num lock: "", scroll lock: null, getStartedFooterButtonsContainer: null });
+      }, {});
       return { packets_sent: this.outboundStats.packetsSent, packets_sent_lost: this.outboundStats.packetsLost, packets_received: reduced.packetsReceived, packets_received_lost: reduced.packetsReceivedLost, num_nacks_sent: reduced.nackCount, fec_packets_received: reduced.fecPacketsReceived, fec_packets_discarded: reduced.fecPacketsDiscarded };
     }
   };
@@ -797,7 +797,7 @@ const tmp2 = (arg0) => {
           silent.cng = silent.cng + frameOpStats.frameOpStats.cng;
         }
         return silent;
-      }, { "Bool(false)": 1091658877, "Bool(false)": 151597, "Bool(false)": 6258, "Bool(false)": 6144, "Bool(false)": -180289280, "Bool(false)": 1375732285, "Bool(false)": 1685947892 });
+      }, { "Null": null, "Null": null, "Null": null, "Null": null, "Null": null, "Null": null, "Null": null });
       return { frame_op_silent: reduced.silent, frame_op_normal: reduced.normal, frame_op_merged: reduced.merged, frame_op_expanded: reduced.expanded, frame_op_accelerated: reduced.accelerated, frame_op_preemptive_expanded: reduced.preemptiveExpanded, frame_op_cng: reduced.cng };
     }
   };
@@ -871,7 +871,7 @@ const tmp2 = (arg0) => {
         }
         passthroughCount.decryptFailureAfterSuccessCount = passthroughCount.decryptFailureAfterSuccessCount + (num8 - num9);
         return passthroughCount;
-      }, { "Null": null, "Null": 0.6, "Null": "BounceOutRight", "Null": null, "Null": 0.6, "Null": "BounceOutLeft", "Null": null, "Bool(true)": 0.6 });
+      }, {});
       return { decrypt_passthrough_count: reduced.passthroughCount, decrypt_success_count: reduced.decryptSuccessCount, decrypt_failure_count: reduced.decryptFailureCount, decrypt_duration: reduced.decryptDuration, decrypt_attempts: reduced.decryptAttempts, decrypt_missing_key_count: reduced.decryptMissingKeyCount, decrypt_invalid_nonce_count: reduced.decryptInvalidNonceCount, decrypt_failure_after_success_count: reduced.decryptFailureAfterSuccessCount, encrypt_passthrough_count: this.outboundStats.passthroughCount, encrypt_success_count: this.outboundStats.encryptSuccessCount, encrypt_failure_count: this.outboundStats.encryptFailureCount, encrypt_duration: this.outboundStats.encryptDuration, encrypt_attempts: this.outboundStats.encryptAttempts, encrypt_max_attempts: this.outboundStats.encryptMaxAttempts, encrypt_missing_key_count: this.outboundStats.encryptMissingKeyCount };
     }
   };
@@ -917,7 +917,7 @@ const tmp2 = (arg0) => {
     key: "getAudioLevelStats",
     value() {
       const speakingAudioLevel = this.outboundStats.speakingAudioLevel;
-      const report = speakingAudioLevel.getReport([]);
+      const report = speakingAudioLevel.getReport(["LT", "LV", "NO", "SE", "SJ", "PX_16", "isArray", "Promise", "isArray"]);
       return { outbound_audio_level_db_p1: report.percentiles[1], outbound_audio_level_db_p5: report.percentiles[5], outbound_audio_level_db_p10: report.percentiles[10], outbound_audio_level_db_p25: report.percentiles[25], outbound_audio_level_db_p50: report.percentiles[50], outbound_audio_level_db_p75: report.percentiles[75], outbound_audio_level_db_p90: report.percentiles[90], outbound_audio_level_db_p95: report.percentiles[95], outbound_audio_level_db_p99: report.percentiles[99], outbound_audio_level_db_max: report.max, outbound_audio_level_db_mean: report.mean };
     }
   };

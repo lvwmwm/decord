@@ -1,10 +1,10 @@
-// Module ID: 10002
-// Function ID: 77310
+// Module ID: 10008
+// Function ID: 77328
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 // Exports: useCardLayoutCoordsSubscription, useManagerSubscription, useTargetDimensionsSubscription
 
-// Module 10002 (_createForOfIteratorHelperLoose)
+// Module 10008 (_createForOfIteratorHelperLoose)
 function _createForOfIteratorHelperLoose(@@iterator) {
   let arg1 = Symbol_iterator;
   @@iterator = "undefined" !== typeof Symbol;
@@ -111,7 +111,7 @@ function getGridDimensionsFromAspectRatio(arg0, arg1, fillAspectRatio) {
   if ("portrait" === arg0) {
     if (fillAspectRatio.fillAspectRatio) {
       if (arg1) {
-        let obj = { aze: false, azj: false };
+        let obj = { bhk: false, bic: false };
       } else {
         obj = { width: 2 };
         let num5 = 0;
@@ -121,7 +121,7 @@ function getGridDimensionsFromAspectRatio(arg0, arg1, fillAspectRatio) {
         obj.height = 3 + num5;
       }
     } else {
-      return { aze: "Lightbox Frame", azj: "EdgeHTML" };
+      return {};
     }
   } else if ("landscape" === arg0) {
     if (fillAspectRatio.fillAspectRatio) {
@@ -134,13 +134,13 @@ function getGridDimensionsFromAspectRatio(arg0, arg1, fillAspectRatio) {
         obj.width = 3 + num;
         obj.height = 2;
       } else {
-        obj = { aze: false, azj: false };
+        obj = { bhk: false, bic: false };
       }
     } else {
-      return { aze: "\u{1F4A0}", azj: 6 };
+      return { bhk: "\u{1F4A0}", bic: 6 };
     }
   } else if ("square" === arg0) {
-    return fillAspectRatio.enlargeSquare ? { aze: false, azj: false } : { aze: "innocent", azj: "innocent" };
+    return fillAspectRatio.enlargeSquare ? { bhk: false, bic: false } : {};
   }
 }
 function getTargetCardSize(windowWidth) {
@@ -165,20 +165,20 @@ const VoicePanelCardItemType = tmp2.VoicePanelCardItemType;
 ({ BASE_TARGET_CARD_SIZE: closure_10, VoicePanelCTACardDimensionKeys: closure_11, VoicePanelCTACardDimensions: closure_12, VOICE_PANEL_CHUNK_DIVISOR: closure_13 } = tmp2);
 ({ EDGE_GUTTER: closure_14, CALL_TILE_GUTTER: closure_15 } = arg1(dependencyMap[7]));
 const ParticipantTypes = arg1(dependencyMap[8]).ParticipantTypes;
-let obj = { accessible: null, HermesInternal: null, sa: null, state: null, y: null, bottom: null, backgroundColor: null, type: VoicePanelCardItemType.PARTICIPANT };
+let obj = { 1364634260: null, -1234984611: null, 1012094135: null, 1971722368: null, -749267519: null, -2061728676: null, -549873048: null, type: VoicePanelCardItemType.PARTICIPANT };
 const set = new Set();
-let closure_19 = {};
+let closure_19 = { "Bool(false)": null, "Bool(false)": null };
 obj = {};
 const tmp3 = arg1(dependencyMap[7]);
 obj.match = new Set([]);
-const items = [{ width: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000021043611947808288, height: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000053357352779429986 }];
+const items = [{ "Bool(false)": true, "Bool(false)": true }];
 obj.layouts = items;
 obj.global = true;
 const items1 = [obj, ];
 obj = {};
 const set1 = new Set([]);
 obj.match = new Set([-229780751, 1065152063, 490364469, 1271345472, -532575945, 40976419, 822083584, 103079215]);
-const items2 = [{ width: null, height: null }, {}, {}];
+const items2 = [{ "Bool(false)": null, "Bool(false)": null }, { "Bool(false)": null, "Bool(false)": null }, { "Bool(false)": null, "Bool(false)": null }];
 obj.layouts = items2;
 items1[1] = obj;
 const set2 = new Set([-229780751, 1065152063, 490364469, 1271345472, -532575945, 40976419, 822083584, 103079215]);
@@ -193,7 +193,7 @@ const tmp7 = () => {
       this.cardCoords = map1;
       map2 = new Map();
       this.chunkedCoords = map2;
-      this.contentDimensions = { aze: false, azj: true };
+      this.contentDimensions = { bhk: -536870861, bic: -299892737 };
       set = new Set();
       this.layoutCallbacks = set;
       set1 = new Set();
@@ -203,8 +203,8 @@ const tmp7 = () => {
       this.mounted = false;
       this.layoutKey = 0;
       this.emitTimeout = -1;
-      this.props = { getCheckoutContextRecord: true, parallaxScrollingOffset: 6, overrideSettings: 132, man_office_worker: null, DISPLAY_NAME_STYLES_COLOR_SELECTED: "\u{1F9D1}\u200D\u{1F680}", onKeyboardWillHide: true, <string:1387683032>: 12.1, <string:4179272403>: 133, <string:2438900568>: null };
-      this.defaultTargetCoords = { aze: false, azj: true };
+      this.props = { absolute: true, tall: 6, focus: 132, pipFocus: null, isGestureEnabled: "\u{1F9D1}\u200D\u{1F680}", position: true, left: 12.1, right: 133, backgroundColor: null };
+      this.defaultTargetCoords = { bhk: -536870861, bic: -299892737 };
       this.channelId = arg0;
       return;
     }
@@ -259,6 +259,7 @@ const tmp7 = () => {
         return arr.length === items.length && !arr.some((arg0, arg1) => arg1[arg1] !== arg0);
       }(items, self.items));
       self.items = items;
+      return self.getContentDimensions();
     }
   };
   items[4] = {
@@ -356,11 +357,11 @@ const tmp7 = () => {
     value(arg0, arg1) {
       const self = this;
       if ("portrait" === arg1) {
-        let size = { aze: "Lightbox Frame", azj: "EdgeHTML" };
+        let size = {};
       } else if ("landscape" === arg1) {
-        size = { aze: "\u{1F4A0}", azj: 6 };
+        size = { bhk: "\u{1F4A0}", bic: 6 };
       } else if ("square" === arg1) {
-        size = { aze: "innocent", azj: "innocent" };
+        size = {};
       }
       const size2 = self.getTargetDimensions(arg0);
       if (!tmp) {

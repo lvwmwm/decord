@@ -1,10 +1,10 @@
-// Module ID: 12191
-// Function ID: 93703
+// Module ID: 12198
+// Function ID: 93726
 // Name: transformStickers
 // Dependencies: []
 // Exports: default
 
-// Module 12191 (transformStickers)
+// Module 12198 (transformStickers)
 const _module = require(dependencyMap[4]);
 const result = _module.fileFinishedImporting("modules/messages/native/renderer/transformStickers.tsx");
 

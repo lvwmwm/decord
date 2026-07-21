@@ -18,17 +18,17 @@ let closure_4 = () => {
   function addCompilerSafeGetAndSet(arg0) {
     let obj = { get: obj };
     obj = {
-      flexDirection: true,
-      gap: true,
-      padding: true,
+      1403228943: "postal-address-country",
+      830090965: "password",
+      0: "email",
       value() {
         return arg0.value;
       }
     };
     obj = {
-      flexDirection: true,
-      gap: true,
-      padding: true,
+      1403228943: "postal-address-country",
+      830090965: "password",
+      0: "email",
       value: (arg0) => {
         function value(arg0) {
           return arg0(...arguments);
@@ -55,7 +55,7 @@ let closure_4 = () => {
 let closure_5 = { code: "function hideInternalValueProp_Pnpm_mutablesTs2(mutable){Object.defineProperty(mutable,'_value',{configurable:false,enumerable:false});}" };
 let closure_6 = () => {
   function hideInternalValueProp(arg0) {
-    Object.defineProperty(arg0, "_value", {});
+    Object.defineProperty(arg0, "_value", { "Bool(true)": null, "Bool(true)": null });
   }
   hideInternalValueProp.__closure = {};
   hideInternalValueProp.__workletHash = 3380393180484;

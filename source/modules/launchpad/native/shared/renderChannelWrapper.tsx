@@ -1,12 +1,12 @@
-// Module ID: 15526
-// Function ID: 118535
+// Module ID: 15533
+// Function ID: 118559
 // Name: getStyles
 // Dependencies: []
 // Exports: default
 
-// Module 15526 (getStyles)
+// Module 15533 (getStyles)
 function getStyles(arg0) {
-  const items = [{ containerStyle: null, grow: null, isRound: null, display: null }, { minHeight: arg0 - 2 * closure_4.layout.margin.marginVertical }, closure_4.container.padding];
+  const items = [{ 865632396: false, -1346350121: false, 0: false, 0: false }, { minHeight: arg0 - 2 * closure_4.layout.margin.marginVertical }, closure_4.container.padding];
   return items;
 }
 importAll(dependencyMap[0]);

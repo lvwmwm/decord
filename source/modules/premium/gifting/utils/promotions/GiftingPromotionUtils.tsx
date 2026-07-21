@@ -1,10 +1,10 @@
-// Module ID: 8800
-// Function ID: 69387
+// Module ID: 8804
+// Function ID: 69399
 // Name: useIsPlanEligibleForGiftingPromotion
 // Dependencies: []
 // Exports: combinePromotionStyles, createBackgroundStyle, createGradientStyle, getRewardAssetIdMap, shouldShowGiftPromotionReminderNotice, useFetchClaimableGiftingPromotionRewardSkuIds, useShouldAutoSelectGiftingPromotionReward, useShouldShowSelectFreeSkuStep
 
-// Module 8800 (useIsPlanEligibleForGiftingPromotion)
+// Module 8804 (useIsPlanEligibleForGiftingPromotion)
 function useIsPlanEligibleForGiftingPromotion(id) {
   const items = [SubscriptionPlans.PREMIUM_YEAR_TIER_2, SubscriptionPlans.PREMIUM_MONTH_TIER_2];
   id = undefined;

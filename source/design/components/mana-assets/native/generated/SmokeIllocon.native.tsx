@@ -1,10 +1,10 @@
-// Module ID: 6509
-// Function ID: 50637
+// Module ID: 6511
+// Function ID: 50680
 // Name: SmokeIllocon
 // Dependencies: []
 // Exports: SmokeIllocon
 
-// Module 6509 (SmokeIllocon)
+// Module 6511 (SmokeIllocon)
 const jsx = require(dependencyMap[0]).jsx;
 const _module = require(dependencyMap[3]);
 const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/SmokeIllocon.native.tsx");

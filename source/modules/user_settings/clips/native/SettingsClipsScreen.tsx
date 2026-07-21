@@ -1,10 +1,10 @@
-// Module ID: 13747
-// Function ID: 103973
+// Module ID: 13754
+// Function ID: 103996
 // Name: ClipsSettingsScreen
 // Dependencies: []
 // Exports: default
 
-// Module 13747 (ClipsSettingsScreen)
+// Module 13754 (ClipsSettingsScreen)
 let closure_3 = importAll(dependencyMap[0]);
 const MobileSetting = arg1(dependencyMap[1]).MobileSetting;
 const jsx = arg1(dependencyMap[2]).jsx;

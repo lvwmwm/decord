@@ -1,10 +1,10 @@
-// Module ID: 9922
-// Function ID: 76784
+// Module ID: 9927
+// Function ID: 76800
 // Name: showVotesForAnswer
 // Dependencies: []
 // Exports: showVotesForAnswer
 
-// Module 9922 (showVotesForAnswer)
+// Module 9927 (showVotesForAnswer)
 const _module = require(dependencyMap[3]);
 const result = _module.fileFinishedImporting("modules/polls/PollInteractionUtils.native.tsx");
 

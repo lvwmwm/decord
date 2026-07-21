@@ -1,7 +1,7 @@
 // Module ID: 4063
 // Function ID: 33852
 // Name: useCustomThemeDisplaySettings
-// Dependencies: []
+// Dependencies: [131072, 527958016, 452984832, 553648128]
 // Exports: useCustomThemeDisplaySettings
 
 // Module 4063 (useCustomThemeDisplaySettings)

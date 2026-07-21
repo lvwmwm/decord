@@ -1,10 +1,10 @@
-// Module ID: 11730
-// Function ID: 91135
+// Module ID: 11737
+// Function ID: 91158
 // Name: InstantInviteAgeText
 // Dependencies: []
 // Exports: default
 
-// Module 11730 (InstantInviteAgeText)
+// Module 11737 (InstantInviteAgeText)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 let closure_3 = importDefault(dependencyMap[2]);
@@ -45,7 +45,7 @@ export default function InstantInviteAgeText(style) {
       };
       const intl = arg1(dependencyMap[10]).intl;
       obj1.accessibilityLabel = intl.string(arg1(dependencyMap[10]).t.VNe8P/);
-      obj1.hitSlop = { marginTop: "parent", marginVertical: "Array", maxHeight: "isArray", maxWidth: "accessibilityRole" };
+      obj1.hitSlop = { "Null": "Array", "Null": "gradientTop", "Null": "EXPERIMENT_GUILD_EXPOSURE_SUPPRESSED", "Null": "showReferralNotificationDot" };
       const obj2 = {};
       const intl2 = arg1(dependencyMap[10]).intl;
       obj2.children = intl2.string(arg1(dependencyMap[10]).t.VNe8P/);

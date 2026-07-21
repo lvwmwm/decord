@@ -1,9 +1,9 @@
-// Module ID: 6606
-// Function ID: 50783
+// Module ID: 6610
+// Function ID: 50829
 // Name: metadata
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 6606 (metadata)
+// Module 6610 (metadata)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/WaterIllocon-2x.png.js");
 

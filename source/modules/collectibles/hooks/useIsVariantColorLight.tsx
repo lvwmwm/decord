@@ -1,10 +1,10 @@
-// Module ID: 8721
-// Function ID: 69023
+// Module ID: 8725
+// Function ID: 69035
 // Name: useIsVariantColorLight
 // Dependencies: []
 // Exports: default
 
-// Module 8721 (useIsVariantColorLight)
+// Module 8725 (useIsVariantColorLight)
 let closure_2 = importAll(dependencyMap[0]);
 const result = arg1(dependencyMap[2]).fileFinishedImporting("modules/collectibles/hooks/useIsVariantColorLight.tsx");
 

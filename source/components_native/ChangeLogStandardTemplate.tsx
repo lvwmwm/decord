@@ -1,9 +1,9 @@
-// Module ID: 7755
-// Function ID: 61587
+// Module ID: 7759
+// Function ID: 61599
 // Name: LHeading
 // Dependencies: []
 
-// Module 7755 (LHeading)
+// Module 7759 (LHeading)
 function LHeading(className) {
   const arg1 = className.className;
   function getStyles(lheadingLine, arg1) {
@@ -125,17 +125,16 @@ let obj2 = arg1(dependencyMap[6]);
 obj = { flex: { flex: 1 } };
 const tmp4 = arg1(dependencyMap[4]);
 obj.container = { padding: 18, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_LOW };
-obj2 = { <string:1353458075>: true, <string:1722561866>: true, borderTopWidth: tmp2.StyleSheet.hairlineWidth, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_SURFACE_HIGH, borderTopColor: importDefault(dependencyMap[5]).colors.BORDER_STRONG, gap: importDefault(dependencyMap[5]).space.PX_12, paddingHorizontal: 18, paddingVertical: importDefault(dependencyMap[5]).space.PX_12 };
+obj2 = { borderTopWidth: tmp2.StyleSheet.hairlineWidth, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_SURFACE_HIGH, borderTopColor: importDefault(dependencyMap[5]).colors.BORDER_STRONG, gap: importDefault(dependencyMap[5]).space.PX_12, paddingHorizontal: 18, paddingVertical: importDefault(dependencyMap[5]).space.PX_12 };
 obj.footer = obj2;
 obj.scrollViewContainer = { flex: 1 };
-obj.lheading = {};
+obj.lheading = { "Bool(false)": null, "Bool(false)": "\u{1FAF6}\u{1F3FF}", "Bool(false)": true };
 obj.lheadingText = { fontSize: 16, fontFamily: tmp3.Fonts.PRIMARY_SEMIBOLD };
 obj.lheadingLine = {};
-const obj1 = { padding: 18, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_LOW };
-const obj3 = { fontSize: 16, fontFamily: tmp3.Fonts.PRIMARY_SEMIBOLD };
-obj.bulletPoint = { backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_MOD_STRONG };
+const obj4 = { "Bool(true)": 0.0000000000000000000000000000000000000000000000000000000000000000026706284291665426, "Bool(true)": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003058794711, "Bool(true)": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000008691694761874, "Bool(true)": 131072.00998116285, "Bool(true)": 31091720928522130000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_MOD_STRONG };
+obj.bulletPoint = obj4;
 obj.listItem = {};
-const obj5 = { frameCount: 16, startTime: 16, top: null, bottom: 20, color: importDefault(dependencyMap[5]).colors.TEXT_DEFAULT };
+const obj5 = { guildId: 20, justifyContent: "owning_team_id", guild_id: "scalar", justifyContent: 9, color: importDefault(dependencyMap[5]).colors.TEXT_DEFAULT };
 obj.listText = obj5;
 let closure_13 = obj2.createStyles(obj);
 const memoResult = importAllResult.memo((children) => {
@@ -155,7 +154,8 @@ const memoResult = importAllResult.memo((children) => {
   obj.children = items;
   return closure_11(closure_4, obj);
 });
-const obj4 = { backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_MOD_STRONG };
+const obj1 = { padding: 18, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_LOW };
+const obj3 = { fontSize: 16, fontFamily: tmp3.Fonts.PRIMARY_SEMIBOLD };
 const memoResult1 = importAllResult.memo((video) => {
   let changeLog;
   let onScroll;
@@ -176,21 +176,21 @@ const memoResult1 = importAllResult.memo((video) => {
   obj.children = items1;
   const items2 = [callback2(closure_5, obj), ];
   obj = { bottom: true, style: tmp.footer };
-  const obj1 = { icon: callback(arg1(dependencyMap[17]).XNeutralIcon, { flexDirection: true, alignItems: true }) };
+  const obj1 = { "": null, id: null, "": null, icon: callback(arg1(dependencyMap[17]).XNeutralIcon, { flex: true, flexGrow: true }) };
   const intl = arg1(dependencyMap[18]).intl;
   obj1.accessibilityLabel = intl.string(arg1(dependencyMap[18]).t./lXfom);
   obj1.onPress = function onPress() {
     callback(closure_2[11]).openURL(callback(closure_2[19])(constants.TWITTER));
   };
   const items3 = [callback(arg1(dependencyMap[16]).IconButton, obj1), , ];
-  const obj2 = { icon: callback(arg1(dependencyMap[20]).FacebookNeutralIcon, { flexDirection: true, alignItems: true }) };
+  const obj2 = { "": null, id: null, "": null, icon: callback(arg1(dependencyMap[20]).FacebookNeutralIcon, { flex: true, flexGrow: true }) };
   const intl2 = arg1(dependencyMap[18]).intl;
   obj2.accessibilityLabel = intl2.string(arg1(dependencyMap[18]).t.h0or/l);
   obj2.onPress = function onPress() {
     callback(closure_2[11]).openURL(constants2.FACEBOOK_URL);
   };
   items3[1] = callback(arg1(dependencyMap[16]).IconButton, obj2);
-  const obj3 = { icon: callback(arg1(dependencyMap[21]).InstagramNeutralIcon, { flexDirection: true, alignItems: true }) };
+  const obj3 = { "": null, id: null, "": null, icon: callback(arg1(dependencyMap[21]).InstagramNeutralIcon, { flex: true, flexGrow: true }) };
   const intl3 = arg1(dependencyMap[18]).intl;
   obj3.accessibilityLabel = intl3.string(arg1(dependencyMap[18]).t.5uVPyf);
   obj3.onPress = function onPress() {

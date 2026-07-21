@@ -1,10 +1,10 @@
-// Module ID: 7507
-// Function ID: 60146
+// Module ID: 7511
+// Function ID: 60158
 // Name: FormRadioRow
 // Dependencies: []
 // Exports: default
 
-// Module 7507 (FormRadioRow)
+// Module 7511 (FormRadioRow)
 let closure_3 = importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[7]).fileFinishedImporting("design/void/Form/native/FormRadioRow.tsx");
@@ -21,7 +21,7 @@ export default function FormRadioRow(arg0) {
     align = "left";
   }
   ({ leading, onPress } = arg0);
-  let obj = { style: null, maxFontSizeMultiplier: "LOCAL_PAYMENT_START_PAYMENT_MISSING_REQUIRED_OPTION", accessibilityRole: "Missing required option for startPayment.", variant: null, color: "LOCAL_PAYMENT_START_PAYMENT_DEFERRED_PAYMENT_FAILED", tintColor: "LocalPayment startPayment deferred payment failed." };
+  let obj = { maxFontSizeMultiplier: true, accessibilityRole: true, variant: true, color: true, tintColor: true, marginRight: true };
   ({ value, style } = arg0);
   Object.setPrototypeOf(null);
   const merged = Object.assign(arg0, obj);

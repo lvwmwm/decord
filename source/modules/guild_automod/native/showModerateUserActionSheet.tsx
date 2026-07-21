@@ -1,10 +1,10 @@
-// Module ID: 10962
-// Function ID: 85283
+// Module ID: 10967
+// Function ID: 85304
 // Name: showModerateUserActionSheet
 // Dependencies: []
 // Exports: default
 
-// Module 10962 (showModerateUserActionSheet)
+// Module 10967 (showModerateUserActionSheet)
 const _module = require(dependencyMap[3]);
 const result = _module.fileFinishedImporting("modules/guild_automod/native/showModerateUserActionSheet.tsx");
 

@@ -1,15 +1,15 @@
-// Module ID: 10988
-// Function ID: 85508
+// Module ID: 10993
+// Function ID: 85529
 // Name: MemberRolesList
 // Dependencies: []
 // Exports: default
 
-// Module 10988 (MemberRolesList)
+// Module 10993 (MemberRolesList)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 let closure_4 = importDefault(dependencyMap[2]);
 const jsx = arg1(dependencyMap[3]).jsx;
-let closure_6 = arg1(dependencyMap[4]).createStyles({ wrapper: { TypeError: "Portugu\u00EAs", borderRadius: "Portuguese", variant: "pt-PT" } });
+let closure_6 = arg1(dependencyMap[4]).createStyles({ wrapper: { "Bool(true)": null, "Bool(true)": null, "Bool(true)": null } });
 const obj = arg1(dependencyMap[4]);
 const result = arg1(dependencyMap[7]).fileFinishedImporting("components_native/MemberRolesList.tsx");
 

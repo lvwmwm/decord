@@ -1,10 +1,10 @@
-// Module ID: 14337
-// Function ID: 108287
+// Module ID: 14344
+// Function ID: 108310
 // Name: ProfileCustomizationTryItOutSettingScreen
 // Dependencies: []
 // Exports: default
 
-// Module 14337 (ProfileCustomizationTryItOutSettingScreen)
+// Module 14344 (ProfileCustomizationTryItOutSettingScreen)
 let closure_3 = importAll(dependencyMap[0]);
 const tmp2 = arg1(dependencyMap[1]);
 ({ View: closure_4, ActivityIndicator: closure_5 } = tmp2);
@@ -17,7 +17,7 @@ obj = {};
 obj = { backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_BASE_LOWER };
 const merged = Object.assign(tmp2.StyleSheet.absoluteFillObject);
 obj.container = obj;
-obj.activityIndicator = { 9223372036854775807: null, -9223372036854775808: null, 9223372036854775807: null };
+obj.activityIndicator = { <string:2700829420>: null, <string:1661207633>: null, <string:1365420630>: null };
 let closure_11 = obj.createStyles(obj);
 const tmp3 = arg1(dependencyMap[3]);
 const result = arg1(dependencyMap[21]).fileFinishedImporting("modules/user_settings/premium/native/ProfileCustomizationTryItOutSettingScreen.tsx");

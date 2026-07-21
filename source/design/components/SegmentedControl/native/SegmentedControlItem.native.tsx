@@ -1,15 +1,15 @@
-// Module ID: 8749
-// Function ID: 69198
+// Module ID: 8753
+// Function ID: 69210
 // Name: SegmentedControlItem
 // Dependencies: []
 // Exports: SegmentedControlItem
 
-// Module 8749 (SegmentedControlItem)
+// Module 8753 (SegmentedControlItem)
 importAll(dependencyMap[0]);
 ({ Pressable: closure_3, View: closure_4 } = arg1(dependencyMap[1]));
 const tmp3 = arg1(dependencyMap[1]);
 ({ jsx: closure_5, jsxs: closure_6 } = arg1(dependencyMap[2]));
-let closure_7 = { "Bool(false)": -0.000000000000000000000000000000000000049958699886645, "Bool(false)": 242321384378898780000000000000000000000000000000000000000000000000000000000000000000, "Bool(false)": 427697983194170270000000000000000000000000000000000000000000000000000000000000000000000, "Bool(false)": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000597325380048466 };
+let closure_7 = {};
 let obj = arg1(dependencyMap[3]);
 let closure_8 = obj.createStyles((arg0) => {
   let obj = {};
@@ -22,7 +22,7 @@ let closure_8 = obj.createStyles((arg0) => {
   obj.flexDirection = "row";
   obj.justifyContent = "center";
   obj.item = obj;
-  obj.label = {};
+  obj.label = { <string:3461472865>: "Layer 1", <string:1447977218>: 1, <string:1640807382>: null };
   return obj;
 });
 const tmp4 = arg1(dependencyMap[2]);

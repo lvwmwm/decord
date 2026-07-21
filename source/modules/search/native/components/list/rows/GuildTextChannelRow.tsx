@@ -1,8 +1,8 @@
-// Module ID: 15223
-// Function ID: 114957
+// Module ID: 15230
+// Function ID: 114981
 // Dependencies: []
 
-// Module 15223
+// Module 15230
 const importAllResult = importAll(dependencyMap[0]);
 let closure_4 = arg1(dependencyMap[1]).CHANNEL_LIST_SEARCH_LAYOUT;
 const jsx = arg1(dependencyMap[2]).jsx;
@@ -13,7 +13,7 @@ const memoResult = importAllResult.memo(function GuildTextChannelRow(channel) {
   const arg1 = channel;
   ({ lastMessageId, onPress } = channel);
   const importDefault = onPress;
-  let obj = { ef: "r", w: "onRequireModeratorMFAClick", h: "Array", ip: "isSpamMessageRequest" };
+  let obj = { marginBottom: null, marginHorizontal: 4, alignItems: 4, flexDirection: "rgba(0, 0, 0, 0.75)" };
   let extractTimestampResult = null;
   Object.setPrototypeOf(null);
   const merged = Object.assign(channel, obj);

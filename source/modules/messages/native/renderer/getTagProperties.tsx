@@ -1,10 +1,10 @@
-// Module ID: 7709
-// Function ID: 61394
+// Module ID: 7713
+// Function ID: 61406
 // Name: getTagProperties
 // Dependencies: []
 // Exports: default
 
-// Module 7709 (getTagProperties)
+// Module 7713 (getTagProperties)
 const Image = require(dependencyMap[0]).Image;
 const MessageTagTypes = require(dependencyMap[1]).MessageTagTypes;
 const _module = require(dependencyMap[6]);

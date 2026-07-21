@@ -1,20 +1,18 @@
-// Module ID: 13300
-// Function ID: 101081
+// Module ID: 13307
+// Function ID: 101104
 // Name: handler
-// Dependencies: [0, 0, 0, 0]
+// Dependencies: []
 
-// Module 13300 (handler)
-import closure_0 from "result";
-import result from "result";
-
+// Module 13307 (handler)
+let closure_0 = importDefault(dependencyMap[0]);
 let obj = {};
 obj = {
-  scope: require("result").OAuth2Scopes.IDENTIFY,
+  scope: arg1(dependencyMap[2]).OAuth2Scopes.IDENTIFY,
   handler() {
     return { locale: locale.locale };
   }
 };
-obj[require("result").RPCCommands.USER_SETTINGS_GET_LOCALE] = obj;
-result = result.fileFinishedImporting("modules/rpc/server/commands/userSettings.tsx");
+obj[arg1(dependencyMap[1]).RPCCommands.USER_SETTINGS_GET_LOCALE] = obj;
+const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/rpc/server/commands/userSettings.tsx");
 
 export default obj;

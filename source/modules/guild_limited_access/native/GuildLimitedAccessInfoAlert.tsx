@@ -1,10 +1,10 @@
-// Module ID: 12711
-// Function ID: 97575
+// Module ID: 12718
+// Function ID: 97598
 // Name: GuildLimitedAccessInfoAlert
 // Dependencies: []
 // Exports: default
 
-// Module 12711 (GuildLimitedAccessInfoAlert)
+// Module 12718 (GuildLimitedAccessInfoAlert)
 importAll(dependencyMap[0]);
 let closure_3 = importDefault(dependencyMap[1]);
 let closure_4 = arg1(dependencyMap[2]).GUILD_LIMITED_ACCESS_HC_LINK;
@@ -17,7 +17,7 @@ const merged = Object.assign(importDefault(dependencyMap[6])(arg1(dependencyMap[
 obj["textAlign"] = "center";
 obj["marginVertical"] = 12;
 obj.header = obj;
-obj.text = { p: -0.0014069081515246523, parent: -0.0001058445630777106 };
+obj.text = { "Null": "absolute", "Null": 0 };
 let closure_7 = obj.createStyles(obj);
 const importDefaultResult = importDefault(dependencyMap[6]);
 const result = arg1(dependencyMap[12]).fileFinishedImporting("modules/guild_limited_access/native/GuildLimitedAccessInfoAlert.tsx");

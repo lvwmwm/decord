@@ -1,10 +1,10 @@
-// Module ID: 8407
-// Function ID: 66988
+// Module ID: 8411
+// Function ID: 67000
 // Name: useGuildProfile
 // Dependencies: []
 // Exports: useGuildProfile
 
-// Module 8407 (useGuildProfile)
+// Module 8411 (useGuildProfile)
 let closure_2 = importDefault(dependencyMap[0]);
 let closure_3 = importAll(dependencyMap[1]);
 let closure_4 = importDefault(dependencyMap[2]);

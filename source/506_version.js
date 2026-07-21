@@ -1,7 +1,7 @@
 // Module ID: 506
 // Function ID: 6454
 // Name: version
-// Dependencies: [516]
+// Dependencies: []
 
 // Module 506 (version)
 arg5.default = function version(arr) {

@@ -1,17 +1,19 @@
-// Module ID: 10413
-// Function ID: 80251
+// Module ID: 10419
+// Function ID: 80274
 // Name: MaxForumPostReactions
-// Dependencies: []
+// Dependencies: [1347, 1348, 10424, 10213, 624, 3746, 10427, 2]
 // Exports: ForumPostActionBarReactions, MaxForumPostReactions, MostCommonForumPostReaction
 
-// Module 10413 (MaxForumPostReactions)
-importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[2]));
-const tmp3 = arg1(dependencyMap[2]);
-let closure_6 = arg1(dependencyMap[3]).createStyles({ reactionButtonContainer: { marginEnd: 8 }, actionBarReaction: { marginEnd: 4 }, container: { flexDirection: "row" }, mostCommonContainer: { marginLeft: "auto" } });
-const obj = arg1(dependencyMap[3]);
-const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/forums/native/posts/reactions/ForumPostReactions.tsx");
+// Module 10419 (MaxForumPostReactions)
+import "_createForOfIteratorHelperLoose";
+import { View } from "_isNativeReflectConstruct";
+import ChatOverlays from "ChatOverlays";
+import ActivityPanelModes from "ActivityPanelModes";
+import result2 from "result2";
+
+({ jsx: closure_4, jsxs: closure_5 } = ChatOverlays);
+let closure_6 = ActivityPanelModes.createStyles({ reactionButtonContainer: { marginEnd: 8 }, actionBarReaction: { marginEnd: 4 }, container: { flexDirection: "row" }, mostCommonContainer: { marginLeft: "auto" } });
+const result = result2.fileFinishedImporting("modules/forums/native/posts/reactions/ForumPostReactions.tsx");
 
 export const MaxForumPostReactions = function MaxForumPostReactions(thread) {
   let additionalReactionCount;

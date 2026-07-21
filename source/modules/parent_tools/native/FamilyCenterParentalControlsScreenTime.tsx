@@ -1,10 +1,10 @@
-// Module ID: 13705
-// Function ID: 103705
+// Module ID: 13712
+// Function ID: 103728
 // Name: ScheduleRuleRow
 // Dependencies: []
 // Exports: default
 
-// Module 13705 (ScheduleRuleRow)
+// Module 13712 (ScheduleRuleRow)
 function ScheduleRuleRow(rule) {
   let readOnly;
   rule = rule.rule;
@@ -17,7 +17,7 @@ function ScheduleRuleRow(rule) {
   const scheduleRuleDateRange = obj.getScheduleRuleDateRange(rule);
   const obj2 = require(dependencyMap[5]);
   obj = { label: scheduleRuleDateRange, subLabel: require(dependencyMap[5]).formatDays(rule.days) };
-  obj = { INTEGRATION_CREATE: true, ConstraintReasonCode: true };
+  obj = {};
   const intl = require(dependencyMap[8]).intl;
   const string = intl.string;
   const tmp5 = importDefault(dependencyMap[9]);

@@ -1,10 +1,10 @@
-// Module ID: 4541
-// Function ID: 39799
+// Module ID: 4545
+// Function ID: 39847
 // Name: getFontScale
 // Dependencies: []
 // Exports: getFontScale, useFontScale
 
-// Module 4541 (getFontScale)
+// Module 4545 (getFontScale)
 let closure_2 = importAll(dependencyMap[0]);
 let closure_3 = importDefault(dependencyMap[1]);
 const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/screen/native/useFontScale.tsx");

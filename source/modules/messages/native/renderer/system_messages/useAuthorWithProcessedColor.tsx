@@ -1,13 +1,14 @@
-// Module ID: 7638
-// Function ID: 61153
+// Module ID: 7642
+// Function ID: 61165
 // Name: getMessageAuthorWithProcessedColor
-// Dependencies: []
+// Dependencies: [31, 27, 1852, 33]
 // Exports: getMessageAuthorWithProcessedColor, getUserAuthorWithProcessedColor
 
-// Module 7638 (getMessageAuthorWithProcessedColor)
-const processColor = require(dependencyMap[0]).processColor;
-const _module = require(dependencyMap[3]);
-const result = _module.fileFinishedImporting("modules/messages/native/renderer/system_messages/useAuthorWithProcessedColor.tsx");
+// Module 7642 (getMessageAuthorWithProcessedColor)
+import { processColor } from "module_31";
+import module_33 from "module_33";
+
+const result = module_33.fileFinishedImporting("modules/messages/native/renderer/system_messages/useAuthorWithProcessedColor.tsx");
 
 export const getMessageAuthorWithProcessedColor = function getMessageAuthorWithProcessedColor(message) {
   let colorStrings;

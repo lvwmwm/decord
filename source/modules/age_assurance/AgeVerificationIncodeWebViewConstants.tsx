@@ -1,10 +1,10 @@
-// Module ID: 7528
-// Function ID: 60245
+// Module ID: 7532
+// Function ID: 60257
 // Name: postToNativeWebView
-// Dependencies: []
+// Dependencies: [284214097]
 // Exports: buildIncodeFallbackSessionInjection, buildIncodeParamsInjection, parseIncodeWebViewMessage, postIncodeCaptureComplete, postIncodeFallbackRequest, postIncodeResult, readInjectedIncodeParams
 
-// Module 7528 (postToNativeWebView)
+// Module 7532 (postToNativeWebView)
 function postToNativeWebView(arg0) {
   if (null != ReactNativeWebView) {
     ReactNativeWebView.postMessage(arg0);

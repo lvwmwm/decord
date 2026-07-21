@@ -1,10 +1,10 @@
-// Module ID: 5385
-// Function ID: 45909
+// Module ID: 5387
+// Function ID: 45950
 // Name: XSmallIcon
 // Dependencies: []
 // Exports: XSmallIcon
 
-// Module 5385 (XSmallIcon)
+// Module 5387 (XSmallIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/XSmallIcon.tsx");

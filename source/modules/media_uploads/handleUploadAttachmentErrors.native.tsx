@@ -1,15 +1,14 @@
-// Module ID: 7928
-// Function ID: 63327
+// Module ID: 7932
+// Function ID: 63339
 // Name: handleUploadMessageAttachmentsErrors
-// Dependencies: [0, 0, 4294967295, 0, 4294967295, 0, 0, 0]
+// Dependencies: []
 // Exports: handleUploadMessageAttachmentsErrors
 
-// Module 7928 (handleUploadMessageAttachmentsErrors)
-import result from "result";
-import result from "result";
-
-({ AbortCodes: closure_3, MAX_UPLOAD_COUNT: closure_4 } = result);
-result = result.fileFinishedImporting("modules/media_uploads/handleUploadAttachmentErrors.native.tsx");
+// Module 7932 (handleUploadMessageAttachmentsErrors)
+const _module = require(dependencyMap[0]);
+({ AbortCodes: closure_3, MAX_UPLOAD_COUNT: closure_4 } = _module);
+const _module1 = require(dependencyMap[7]);
+const result = _module1.fileFinishedImporting("modules/media_uploads/handleUploadAttachmentErrors.native.tsx");
 
 export const handleUploadMessageAttachmentsErrors = function handleUploadMessageAttachmentsErrors(arg0) {
   let code;

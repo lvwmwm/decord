@@ -1,9 +1,9 @@
-// Module ID: 15187
-// Function ID: 114606
+// Module ID: 15194
+// Function ID: 114630
 // Name: useSearchPlaceholder
 // Dependencies: []
 
-// Module 15187 (useSearchPlaceholder)
+// Module 15194 (useSearchPlaceholder)
 function useSearchPlaceholder(searchContext) {
   const arg1 = searchContext;
   const items = [closure_9];

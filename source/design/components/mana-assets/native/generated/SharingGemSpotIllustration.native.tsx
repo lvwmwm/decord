@@ -1,10 +1,10 @@
-// Module ID: 6497
-// Function ID: 50619
+// Module ID: 6499
+// Function ID: 50662
 // Name: SharingGemSpotIllustration
 // Dependencies: []
 // Exports: SharingGemSpotIllustration
 
-// Module 6497 (SharingGemSpotIllustration)
+// Module 6499 (SharingGemSpotIllustration)
 const jsx = require(dependencyMap[0]).jsx;
 const _module = require(dependencyMap[3]);
 const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/SharingGemSpotIllustration.native.tsx");

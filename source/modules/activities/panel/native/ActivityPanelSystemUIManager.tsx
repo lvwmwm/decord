@@ -1,9 +1,9 @@
-// Module ID: 15585
-// Function ID: 118957
+// Module ID: 15592
+// Function ID: 118981
 // Name: BaseActivityPanelSystemUIManager
 // Dependencies: []
 
-// Module 15585 (BaseActivityPanelSystemUIManager)
+// Module 15592 (BaseActivityPanelSystemUIManager)
 class BaseActivityPanelSystemUIManager {
   constructor(arg0) {
     mode = global.mode;

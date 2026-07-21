@@ -1,10 +1,10 @@
-// Module ID: 4627
-// Function ID: 40222
+// Module ID: 4629
+// Function ID: 40263
 // Name: FolderIcon
 // Dependencies: []
 // Exports: FolderIcon
 
-// Module 4627 (FolderIcon)
+// Module 4629 (FolderIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/FolderIcon.tsx");

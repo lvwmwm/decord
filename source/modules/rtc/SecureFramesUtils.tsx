@@ -1,10 +1,10 @@
-// Module ID: 8885
-// Function ID: 70092
+// Module ID: 8889
+// Function ID: 70104
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 // Exports: addVerification, deletePersistentVerification, deleteUserPersistentVerifications, deleteVerification, ensureCurrentUserPublicKey, getSecureFramesPersistentCodesHelpdeskArticle, getSecureFramesUserVerifiedTimestamp, getSecureFramesVerifiedDevicesHelpdeskArticle, getUserVerificationDeeplink, getUserVerificationFooterText, getUserVerifyStateText, isCurrentUserPublicKeyMatch, validateSecureFramesKeyConsistent
 
-// Module 8885 (_createForOfIteratorHelperLoose)
+// Module 8889 (_createForOfIteratorHelperLoose)
 function _createForOfIteratorHelperLoose(@@iterator) {
   let arg1 = Symbol_iterator;
   @@iterator = "undefined" !== typeof Symbol;

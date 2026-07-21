@@ -10,9 +10,9 @@ const _module = require(dependencyMap[0]);
 
 export const buildLaunchDarklyFlagUsedHandler = function buildLaunchDarklyFlagUsedHandler() {
   const obj = {
-    url: "name",
-    retries: "name",
-    oldFormErrors: null,
+    "Bool(false)": "SLOW_TWO_G",
+    "Null": "SteamStoreLink",
+    "Null": null,
     method(first) {
       const result = callback(closure_1[0])._INTERNAL_insertFlagToScope(first, arg1.value);
       const obj = callback(closure_1[0]);

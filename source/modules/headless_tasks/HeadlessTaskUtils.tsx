@@ -1,12 +1,11 @@
-// Module ID: 16483
-// Function ID: 127341
-// Dependencies: [131072, 519045120, 31]
+// Module ID: 16490
+// Function ID: 127375
+// Dependencies: []
 
-// Module 16483
-import module_31 from "module_31";
-
+// Module 16490
 const TOKEN_KEY = require(dependencyMap[0]).TOKEN_KEY;
-const result = module_31.fileFinishedImporting("modules/headless_tasks/HeadlessTaskUtils.tsx");
+const _module = require(dependencyMap[2]);
+const result = _module.fileFinishedImporting("modules/headless_tasks/HeadlessTaskUtils.tsx");
 
 export default {
   awaitStorage(arg0) {

@@ -1,10 +1,10 @@
-// Module ID: 14331
-// Function ID: 108245
+// Module ID: 14338
+// Function ID: 108268
 // Name: DemoActionSheet
 // Dependencies: []
 // Exports: default
 
-// Module 14331 (DemoActionSheet)
+// Module 14338 (DemoActionSheet)
 function DemoActionSheet() {
   let tmp11;
   let tmp12;
@@ -45,11 +45,11 @@ function DemoActionSheet() {
   const obj3 = {};
   const items = [callback2(arg1(dependencyMap[11]).TextInput, { value: first2, onChange: tmp5[1], label: "Title" }), ];
   const obj4 = {
-    setHubProgressActionComplete: false,
-    GiftCardRight3dIllustration: false,
-    PressableScale: false,
-    audioDeviceToIconMap: false,
-    UNKNOWN_INVITE: false,
+    -9223372036854775808: true,
+    -9223372036854775808: true,
+    0: true,
+    9223372036854775807: true,
+    0: true,
     value: tmp8,
     onChange: tmp9,
     onClear() {
@@ -91,15 +91,15 @@ function DemoPromoSheet() {
   obj.text = intl.string(arg1(dependencyMap[16]).t.BddRzS);
   const tmp2 = callback2(arg1(dependencyMap[15]).Button, obj);
   if (tmp) {
-    obj = { label: "text-md/medium", required: "text-subtle", label: "Existing haptic types with platform-specific remapping for the best feel.", subLabel: "text-lg/bold" };
-    obj = { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null };
+    obj = {};
+    obj = { placeholder: true, autoComplete: true, errorMessage: true };
     const obj1 = { uri: importDefault(dependencyMap[18]) };
     obj.src = obj1;
     obj.graphic = obj;
     obj.actions = tmp2;
     let obj2 = obj;
   } else {
-    obj2 = { "Null": true, "Null": true, "Null": true, illustration: callback2(importDefault(dependencyMap[19]), {}), actions: tmp2 };
+    obj2 = { illustration: callback2(importDefault(dependencyMap[19]), {}), actions: tmp2 };
   }
   return callback2(arg1(dependencyMap[17]).PromoSheet, obj2);
 }
@@ -109,7 +109,7 @@ const ScrollView = arg1(dependencyMap[2]).ScrollView;
 const NOOP = arg1(dependencyMap[3]).NOOP;
 ({ jsx: closure_7, jsxs: closure_8 } = arg1(dependencyMap[4]));
 const tmp2 = arg1(dependencyMap[4]);
-let closure_9 = arg1(dependencyMap[5]).createStyles({ container: { channelId: "center", allowHeading: "center" } });
+let closure_9 = arg1(dependencyMap[5]).createStyles({ container: { overflow: "center", flex: "center" } });
 const obj = arg1(dependencyMap[5]);
 const result = arg1(dependencyMap[22]).fileFinishedImporting("modules/user_settings/design_system/native/UserSettingsDesignSystemSheets.tsx");
 
@@ -119,8 +119,8 @@ export default function UserSettingsDesignSystemSheets() {
   obj = {};
   const obj1 = {};
   const items = [
-    callback2(arg1(dependencyMap[21]).Text, { position: "r", width: "bannerWidth" }),
-    callback2(arg1(dependencyMap[21]).Text, { "Bool(false)": "<string:36202050>", "Bool(false)": "<string:29293312>", "Bool(false)": "<string:14303744>" }),
+    callback2(arg1(dependencyMap[21]).Text, { "Null": true, "Null": true }),
+    callback2(arg1(dependencyMap[21]).Text, {}),
     callback2(arg1(dependencyMap[15]).Button, {
       onPress() {
         callback(closure_2[13]).openLazy(() => Promise.resolve(closure_10), "demo-sheet");
@@ -133,7 +133,7 @@ export default function UserSettingsDesignSystemSheets() {
   const items1 = [callback2(arg1(dependencyMap[20]).Card, obj), ];
   const obj3 = {};
   const obj4 = {};
-  const items2 = [callback2(arg1(dependencyMap[21]).Text, { position: "r", width: "ActionLogger" }), callback2(arg1(dependencyMap[21]).Text, { "Bool(false)": "<string:36202050>", "Bool(false)": "<string:32715520>", "Bool(false)": "<string:14303744>" }), callback2(arg1(dependencyMap[15]).Button, { onPress: showDemoPromoSheet, text: "Show Promo Sheet" })];
+  const items2 = [callback2(arg1(dependencyMap[21]).Text, { "Null": true, "Null": true }), callback2(arg1(dependencyMap[21]).Text, {}), callback2(arg1(dependencyMap[15]).Button, { onPress: showDemoPromoSheet, text: "Show Promo Sheet" })];
   obj4.children = items2;
   obj3.children = callback3(arg1(dependencyMap[10]).Stack, obj4);
   items1[1] = callback2(arg1(dependencyMap[20]).Card, obj3);

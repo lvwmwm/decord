@@ -1,10 +1,10 @@
-// Module ID: 16322
-// Function ID: 125970
+// Module ID: 16329
+// Function ID: 126001
 // Name: MemberPreviews
 // Dependencies: []
 // Exports: GuildRoleSubscriptionTierDesignTab, default
 
-// Module 16322 (MemberPreviews)
+// Module 16329 (MemberPreviews)
 function MemberPreviews(role) {
   role = role.role;
   const tmp = callback5();
@@ -97,8 +97,8 @@ let obj = arg1(dependencyMap[6]);
 obj = { memberPreviews: {} };
 obj = { borderRadius: importDefault(dependencyMap[7]).radii.none, borderColor: importDefault(dependencyMap[7]).colors.BORDER_STRONG };
 obj.member = obj;
-obj.memberLight = { 9223372036854775807: true, 9223372036854775807: 10, 0: 0 };
-obj.memberDark = { "Null": true, getIconSource: 10, getIconSource: 0 };
+obj.memberLight = { "Null": true, "Null": 10, "Null": 0 };
+obj.memberDark = { "Null": true, "Null": 10, FOREST: 0 };
 let closure_12 = obj.createStyles(obj);
 const tmp2 = arg1(dependencyMap[5]);
 const result = arg1(dependencyMap[20]).fileFinishedImporting("modules/guild_role_subscriptions/native/components/GuildRoleSubscriptionTierDesignModal.tsx");

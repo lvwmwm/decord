@@ -1,10 +1,10 @@
-// Module ID: 6319
-// Function ID: 50352
+// Module ID: 6321
+// Function ID: 50395
 // Name: NitroFileUploadSpotIllustration
 // Dependencies: []
 // Exports: NitroFileUploadSpotIllustration
 
-// Module 6319 (NitroFileUploadSpotIllustration)
+// Module 6321 (NitroFileUploadSpotIllustration)
 const jsx = require(dependencyMap[0]).jsx;
 const _module = require(dependencyMap[3]);
 const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/NitroFileUploadSpotIllustration.native.tsx");

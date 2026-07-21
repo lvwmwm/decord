@@ -1,10 +1,10 @@
-// Module ID: 9272
-// Function ID: 72464
+// Module ID: 9276
+// Function ID: 72476
 // Name: PaperIcon
 // Dependencies: []
 // Exports: PaperIcon
 
-// Module 9272 (PaperIcon)
+// Module 9276 (PaperIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/PaperIcon.tsx");

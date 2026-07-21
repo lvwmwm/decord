@@ -1,17 +1,17 @@
-// Module ID: 16353
-// Function ID: 126227
+// Module ID: 16360
+// Function ID: 126258
 // Name: SelectInviteRolesActionSheet
 // Dependencies: []
 // Exports: default
 
-// Module 16353 (SelectInviteRolesActionSheet)
+// Module 16360 (SelectInviteRolesActionSheet)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 const View = arg1(dependencyMap[2]).View;
 let closure_6 = importDefault(dependencyMap[3]);
 ({ jsx: closure_7, jsxs: closure_8, Fragment: closure_9 } = arg1(dependencyMap[4]));
 const tmp2 = arg1(dependencyMap[4]);
-let closure_10 = arg1(dependencyMap[5]).createStyles({ list: { flex: 1 }, label: { -9223372036854775808: true, filter: true }, roleDot: { marginEnd: 8 } });
+let closure_10 = arg1(dependencyMap[5]).createStyles({ list: { flex: 1 }, label: {}, roleDot: { marginEnd: 8 } });
 const obj = arg1(dependencyMap[5]);
 const result = arg1(dependencyMap[19]).fileFinishedImporting("modules/instant_invite/native/action_sheet/invite_to_guilds/SelectInviteRolesActionSheet.tsx");
 
@@ -114,7 +114,7 @@ export default function SelectInviteRolesActionSheet(assignableRoles) {
   obj1.title = intl2.string(arg1(dependencyMap[15]).t.LPJmL/);
   obj1.trailing = stateFromStores(arg1(dependencyMap[14]).PressableOpacity, obj);
   const tmp11 = stateFromStores(arg1(dependencyMap[14]).PressableOpacity, obj);
-  const obj2 = { -1383050488: 24, -1600148191: 24, -1353556895: null, header: stateFromStores(arg1(dependencyMap[16]).BottomSheetTitleHeader, obj1) };
+  const obj2 = { header: stateFromStores(arg1(dependencyMap[16]).BottomSheetTitleHeader, obj1) };
   const items4 = [assignableRoles.length];
   obj2.children = stateFromStores(importDefault(dependencyMap[18]), { inActionSheet: true, style: tmp.list, itemSize: tmp7, sections: items4, renderItem: callback2, placeholderConfig: tmp6, estimatedListSize: "windowSize", listId: "select-invite-roles", wrapChildren: true });
   return stateFromStores(arg1(dependencyMap[17]).ActionSheet, obj2);

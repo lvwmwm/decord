@@ -1,10 +1,10 @@
-// Module ID: 6439
-// Function ID: 50532
+// Module ID: 6441
+// Function ID: 50575
 // Name: RulebookSpotIllustration
 // Dependencies: []
 // Exports: RulebookSpotIllustration
 
-// Module 6439 (RulebookSpotIllustration)
+// Module 6441 (RulebookSpotIllustration)
 const jsx = require(dependencyMap[0]).jsx;
 const _module = require(dependencyMap[3]);
 const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/RulebookSpotIllustration.native.tsx");

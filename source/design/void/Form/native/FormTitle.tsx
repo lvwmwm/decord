@@ -1,10 +1,10 @@
-// Module ID: 7182
-// Function ID: 57827
+// Module ID: 7186
+// Function ID: 57838
 // Name: FormTitle
 // Dependencies: []
 // Exports: default
 
-// Module 7182 (FormTitle)
+// Module 7186 (FormTitle)
 let Platform;
 importAll(dependencyMap[0]);
 ({ View: closure_2, Platform } = arg1(dependencyMap[1]));
@@ -21,7 +21,7 @@ if (obj1.isAndroid()) {
   num2 = 56;
 }
 const tmp4 = arg1(dependencyMap[3]);
-obj = { titleWrapper: { <string:1353458075>: 110995, <string:1722561866>: -1786228479, justifyContent: 37513793, left: -1757282048 }, horizontalPadding: { paddingHorizontal: 16 }, thinTitle: { paddingTop: 26 } };
+obj = { titleWrapper: { 1449229240: true, 371666258: true, -73375226: true, -1677322926: true }, horizontalPadding: { paddingHorizontal: 16 }, thinTitle: { paddingTop: 26 } };
 obj = { fontFamily: arg1(dependencyMap[2]).Fonts.PRIMARY_SEMIBOLD, fontSize: 13, color: importDefault(dependencyMap[6]).colors.TEXT_SUBTLE };
 obj.titleText = obj;
 obj1 = { color: importDefault(dependencyMap[6]).unsafe_rawColors.RED_400 };

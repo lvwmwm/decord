@@ -1,9 +1,9 @@
-// Module ID: 5643
-// Function ID: 48210
+// Module ID: 5645
+// Function ID: 48252
 // Name: experiment
 // Dependencies: []
 
-// Module 5643 (experiment)
+// Module 5645 (experiment)
 const _module = require(dependencyMap[0]);
 const items = [{ config: { enabled: true } }];
 const experiment = _module.createExperiment({ defaultConfig: { enabled: false }, treatments: items });

@@ -1,8 +1,8 @@
-// Module ID: 12123
-// Function ID: 93403
+// Module ID: 12130
+// Function ID: 93426
 // Dependencies: []
 
-// Module 12123
+// Module 12130
 let closure_3 = importDefault(dependencyMap[0]);
 const importAllResult = importAll(dependencyMap[1]);
 const tmp2 = arg1(dependencyMap[2]);
@@ -38,7 +38,7 @@ const memoResult = importAllResult.memo(function MediaModalLoader(onLoad) {
     num = 0;
   }
   const source = onLoad.source;
-  let obj = { fontSize: 1091658877, lineHeight: 151597, fontFamily: 6258, textAlign: 6144, marginTop: -180289280, alignItems: 1375732285, paddingHorizontal: 1685947892 };
+  let obj = { fontSize: null, lineHeight: null, fontFamily: null, textAlign: null, marginTop: null, alignItems: null, paddingHorizontal: null };
   Object.setPrototypeOf(null);
   const merged = Object.assign(onLoad, obj);
   let callback;

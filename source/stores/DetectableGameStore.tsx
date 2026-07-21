@@ -1,9 +1,9 @@
-// Module ID: 4147
-// Function ID: 35015
+// Module ID: 4158
+// Function ID: 35110
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
-// Module 4147 (_isNativeReflectConstruct)
+// Module 4158 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -326,7 +326,7 @@ let tmp8 = (PersistedStore) => {
       if (obj.isDesktop()) {
         obj = { detectableGamesEtag: closure_17, detectableGames: closure_13.values(), blocklistEtag: closure_23, blocklistExecutables: closure_24, blocklistPatterns: closure_25.map((source) => source.source) };
       } else {
-        obj = { detectableGames: [], blocklistExecutables: [], blocklistPatterns: [] };
+        obj = { framerate: -241967611987167700000000000000000000000000000000000000000000000000000000000000000000000000000000, recovered: 0.0000000000000000000000000000000000000000000000000000000000000000000000011319605192465727, downgraded: 0.25, detectableGames: [], blocklistExecutables: [], blocklistPatterns: [] };
       }
       return obj;
     }

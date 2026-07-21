@@ -1,9 +1,9 @@
-// Module ID: 15019
-// Function ID: 113184
+// Module ID: 15026
+// Function ID: 113208
 // Name: ForYouItemImage
 // Dependencies: []
 
-// Module 15019 (ForYouItemImage)
+// Module 15026 (ForYouItemImage)
 let FRIEND_BACKGROUND;
 let MESSAGE_BACKGROUND;
 let PROFILE_BACKGROUND;

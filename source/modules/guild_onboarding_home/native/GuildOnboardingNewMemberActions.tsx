@@ -1,10 +1,10 @@
-// Module ID: 15156
-// Function ID: 114315
+// Module ID: 15163
+// Function ID: 114339
 // Name: MemberActionRow
 // Dependencies: []
 // Exports: default
 
-// Module 15156 (MemberActionRow)
+// Module 15163 (MemberActionRow)
 function MemberActionRow(channelId) {
   let completed;
   let icon;
@@ -81,7 +81,7 @@ function MemberActionRow(channelId) {
       const obj7 = { onPress: tmp7, style: tmp.actionContainer };
       const items4 = [tmp17, , ];
       const obj8 = { style: tmp.channelNameContainer };
-      const obj9 = { INTEGRATION_CREATE: 131072.00119209292, ConstraintReasonCode: -293983030121430100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, children: title };
+      const obj9 = { children: title };
       const items5 = [callback(arg1(dependencyMap[21]).Text, obj9), ];
       const obj10 = {};
       const intl = arg1(dependencyMap[25]).intl;
@@ -125,12 +125,12 @@ let obj = arg1(dependencyMap[13]);
 obj = { actionsContainer: { paddingHorizontal: 12 }, actionsHeader: {} };
 obj = { backgroundColor: importDefault(dependencyMap[14]).colors.BACKGROUND_BASE_LOW, borderRadius: importDefault(dependencyMap[14]).radii.sm };
 obj.actionContainer = obj;
-obj.channelNameContainer = {};
-const obj1 = { aze: 30706176, azj: 378290688, borderRadius: importDefault(dependencyMap[14]).radii.xs };
-obj.icon = obj1;
-obj.emoji = { aze: 30706176, azj: 378290688 };
-obj.textEmoji = {};
+obj.channelNameContainer = { <string:76581376>: "P", <string:4018557184>: 40 };
 const tmp2 = arg1(dependencyMap[12]);
+obj.icon = { borderRadius: importDefault(dependencyMap[14]).radii.xs };
+obj.emoji = {};
+obj.textEmoji = {};
+const obj1 = { borderRadius: importDefault(dependencyMap[14]).radii.xs };
 obj.emojiPlaceholder = { backgroundColor: importDefault(dependencyMap[14]).colors.BACKGROUND_BASE_LOWEST };
 let closure_17 = obj.createStyles(obj);
 const obj2 = { backgroundColor: importDefault(dependencyMap[14]).colors.BACKGROUND_BASE_LOWEST };
@@ -194,7 +194,7 @@ export default function GuildOnboardingNewMemberActions(guildId) {
       if (0 !== stateFromStores.length) {
         obj = { style: tmp.actionsContainer };
         obj = { style: tmp.actionsHeader };
-        obj1 = { INTEGRATION_CREATE: 182714370, ConstraintReasonCode: 1091633154 };
+        obj1 = {};
         const intl2 = arg1(dependencyMap[25]).intl;
         obj1.children = intl2.string(arg1(dependencyMap[25]).t.LhlgY9);
         obj.children = callback(arg1(dependencyMap[21]).Text, obj1);
@@ -223,7 +223,7 @@ export default function GuildOnboardingNewMemberActions(guildId) {
           obj3.children = callback(arg1(dependencyMap[22]).Icon, obj4);
           const items7 = [callback(View, obj3), ];
           const obj5 = { style: tmp.channelNameContainer };
-          const obj6 = { INTEGRATION_CREATE: 131072.00119209292, ConstraintReasonCode: -293983030121430100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 };
+          const obj6 = {};
           const intl = arg1(dependencyMap[25]).intl;
           obj6.children = intl.string(arg1(dependencyMap[25]).t.K/i3iQ);
           obj5.children = callback(arg1(dependencyMap[21]).Text, obj6);

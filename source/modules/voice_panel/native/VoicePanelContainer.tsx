@@ -1,9 +1,9 @@
-// Module ID: 15598
-// Function ID: 119009
+// Module ID: 15605
+// Function ID: 119033
 // Name: VoicePanel
 // Dependencies: []
 
-// Module 15598 (VoicePanel)
+// Module 15605 (VoicePanel)
 function VoicePanel(arg0) {
   const arg1 = arg0;
   let obj = arg1(dependencyMap[4]);

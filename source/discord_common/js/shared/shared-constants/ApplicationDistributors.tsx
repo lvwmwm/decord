@@ -1,7 +1,7 @@
 // Module ID: 667
 // Function ID: 8267
 // Name: ApplicationDistributors
-// Dependencies: []
+// Dependencies: [284214097]
 
 // Module 667 (ApplicationDistributors)
 const _module = require(dependencyMap[0]);

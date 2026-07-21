@@ -6,7 +6,7 @@
 
 // Module 1427 (apexExperiment)
 const _module = require(dependencyMap[0]);
-const obj = { -1269606814: 218104074, -1845285747: 1140851015, defaultConfig: { enabled: false }, variations: { [0]: { enabled: false }, [1]: { enabled: true } } };
+const obj = { 9223372036854775807: null, 0: null, defaultConfig: { enabled: false }, variations: { [0]: { enabled: false }, [1]: { enabled: true } } };
 const apexExperiment = _module.createApexExperiment(obj);
 const _module1 = require(dependencyMap[1]);
 const result = _module1.fileFinishedImporting("modules/image_upload/AttachmentImageLadderExperiment.tsx");

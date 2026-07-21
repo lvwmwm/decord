@@ -1,9 +1,9 @@
-// Module ID: 6480
-// Function ID: 50594
+// Module ID: 6482
+// Function ID: 50637
 // Name: metadata
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 6480 (metadata)
+// Module 6482 (metadata)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/ServerIconShieldzordExample-2x.png.js");
 

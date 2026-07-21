@@ -1,10 +1,10 @@
-// Module ID: 5961
-// Function ID: 49815
+// Module ID: 5963
+// Function ID: 49858
 // Name: ConnectionCablesSpotIllustration
 // Dependencies: []
 // Exports: ConnectionCablesSpotIllustration
 
-// Module 5961 (ConnectionCablesSpotIllustration)
+// Module 5963 (ConnectionCablesSpotIllustration)
 const jsx = require(dependencyMap[0]).jsx;
 const _module = require(dependencyMap[3]);
 const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/ConnectionCablesSpotIllustration.native.tsx");

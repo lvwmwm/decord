@@ -1,10 +1,10 @@
-// Module ID: 11219
-// Function ID: 87353
+// Module ID: 11225
+// Function ID: 87376
 // Name: GlobalSearchCoachmark
 // Dependencies: []
 // Exports: default
 
-// Module 11219 (GlobalSearchCoachmark)
+// Module 11225 (GlobalSearchCoachmark)
 let closure_3 = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 const DEFAULT_CONTENT_PADDING = arg1(dependencyMap[2]).DEFAULT_CONTENT_PADDING;
@@ -14,7 +14,7 @@ let obj = arg1(dependencyMap[5]);
 obj = {};
 obj = { backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_BRAND, borderRadius: importDefault(dependencyMap[6]).radii.round };
 obj.appsIcon = obj;
-const obj1 = { <string:1140607356>: false, <string:1751293292>: false, tintColor: importDefault(dependencyMap[6]).unsafe_rawColors.WHITE };
+const obj1 = { <string:1632221346>: "<string:1027735553>", <string:2722977214>: "<string:4143972873>", tintColor: importDefault(dependencyMap[6]).unsafe_rawColors.WHITE };
 obj.appsIconImage = obj1;
 let closure_8 = obj.createStyles(obj);
 const result = arg1(dependencyMap[10]).fileFinishedImporting("modules/app_launcher/native/onboarding/banner/AppLauncherGlobalSearchOnboardingBanner.tsx");

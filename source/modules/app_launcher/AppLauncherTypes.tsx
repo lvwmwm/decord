@@ -1,9 +1,9 @@
-// Module ID: 8170
-// Function ID: 64511
+// Module ID: 8174
+// Function ID: 64523
 // Name: AppLauncherEntrypoint
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 8170 (AppLauncherEntrypoint)
+// Module 8174 (AppLauncherEntrypoint)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("modules/app_launcher/AppLauncherTypes.tsx");
 

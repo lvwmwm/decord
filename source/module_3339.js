@@ -11,8 +11,8 @@ if (!_module) {
 }
 obj = {};
 obj.date = obj.default({ formats: {}, defaultWidth: "full" });
-obj.time = obj.default({ formats: { "Bool(false)": -220577280, "Bool(false)": -19726334, "Bool(false)": -616431614, "Bool(false)": -738196750 }, defaultWidth: "medium" });
-obj.dateTime = obj.default({ formats: { "Bool(false)": "r", "Bool(false)": "hasConsoleSubstitutions", "Bool(false)": "GUILD_INTEGRATION_SETTINGS", "Bool(false)": "headerLeftBarButtonItems" }, defaultWidth: "full" });
+obj.time = obj.default({ formats: {}, defaultWidth: "medium" });
+obj.dateTime = obj.default({ formats: { "Null": 50260736, "Null": 104940544, "Null": 104857602, "Null": 35323906 }, defaultWidth: "full" });
 
 export default obj;
 export default exports.default;

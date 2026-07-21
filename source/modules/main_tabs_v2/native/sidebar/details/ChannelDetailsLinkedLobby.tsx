@@ -1,17 +1,17 @@
-// Module ID: 15288
-// Function ID: 116295
+// Module ID: 15295
+// Function ID: 116319
 // Name: ChannelDetailsLinkedLobby
 // Dependencies: []
 // Exports: default
 
-// Module 15288 (ChannelDetailsLinkedLobby)
+// Module 15295 (ChannelDetailsLinkedLobby)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 const HelpdeskArticles = arg1(dependencyMap[2]).HelpdeskArticles;
 ({ Fragment: closure_5, jsxs: closure_6, jsx: closure_7 } = arg1(dependencyMap[3]));
 let obj = arg1(dependencyMap[4]);
 obj = { container: { alignItems: "center" } };
-obj = { flexGrow: null, justifyContent: null, marginBottom: null, backgroundColor: importDefault(dependencyMap[5]).colors.BORDER_STRONG };
+obj = { alignSelf: null, fontSize: null, marginBottom: null, backgroundColor: importDefault(dependencyMap[5]).colors.BORDER_STRONG };
 obj.divider = obj;
 let closure_8 = obj.createStyles(obj);
 const tmp3 = arg1(dependencyMap[3]);
@@ -35,7 +35,7 @@ export default function ChannelDetailsLinkedLobby(channel) {
     obj.style = items;
     let tmp5 = callback;
     let TextWithIOSLinkWorkaround = arg1(dependencyMap[7]).TextWithIOSLinkWorkaround;
-    obj = { INTEGRATION_CREATE: "AutomodMentionRaidLimit", ConstraintReasonCode: "%URIError%" };
+    obj = {};
     let obj1 = {};
     if (null != getOrFetchApplication) {
       const intl2 = arg1(dependencyMap[8]).intl;

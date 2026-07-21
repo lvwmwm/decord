@@ -1,9 +1,9 @@
-// Module ID: 9786
-// Function ID: 76046
+// Module ID: 9791
+// Function ID: 76062
 // Name: metadata
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 9786 (metadata)
+// Module 9791 (metadata)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_assets/assets/virtual_currency/images/native/balancePromotion_bg_animated.mp4.js");
 

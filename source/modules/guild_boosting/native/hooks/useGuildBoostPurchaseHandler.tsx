@@ -1,10 +1,10 @@
-// Module ID: 11553
-// Function ID: 89913
+// Module ID: 11560
+// Function ID: 89936
 // Name: useGuildBoostPurchaseHandler
 // Dependencies: []
 // Exports: default
 
-// Module 11553 (useGuildBoostPurchaseHandler)
+// Module 11560 (useGuildBoostPurchaseHandler)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 const AnalyticEvents = arg1(dependencyMap[2]).AnalyticEvents;

@@ -1,10 +1,10 @@
-// Module ID: 8185
-// Function ID: 64734
+// Module ID: 8189
+// Function ID: 64746
 // Name: redeemGiftCode
 // Dependencies: []
 // Exports: openGiftCodeRedeemModal, redeemGiftCode
 
-// Module 8185 (redeemGiftCode)
+// Module 8189 (redeemGiftCode)
 function redeemGiftCode(arg0) {
   return _redeemGiftCode(...arguments);
 }

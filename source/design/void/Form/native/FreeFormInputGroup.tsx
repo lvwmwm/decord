@@ -1,13 +1,13 @@
-// Module ID: 8988
-// Function ID: 70796
+// Module ID: 8992
+// Function ID: 70808
 // Dependencies: []
 
-// Module 8988
+// Module 8992
 const importAllResult = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 ({ jsx: closure_5, jsxs: closure_6 } = arg1(dependencyMap[2]));
 const tmp2 = arg1(dependencyMap[2]);
-let closure_7 = arg1(dependencyMap[3]).createStyles({ label: { marginBottom: 8 }, input: {}, error: { marginBottom: 8 }, hint: { marginBottom: 8 } });
+let closure_7 = arg1(dependencyMap[3]).createStyles({ label: { marginBottom: 8 }, input: { "Bool(false)": "P", "Bool(false)": 40 }, error: { marginBottom: 8 }, hint: { marginBottom: 8 } });
 const obj2 = arg1(dependencyMap[3]);
 const forwardRefResult = importAllResult.forwardRef((accessibilityLabel) => {
   let clearButtonVisibility;
@@ -26,7 +26,7 @@ const forwardRefResult = importAllResult.forwardRef((accessibilityLabel) => {
     enableAndroidSanitizedInputWorkaround = false;
   }
   accessibilityLabel = accessibilityLabel.accessibilityLabel;
-  let obj = { "Null": "Text", "Null": "message", height: "textAlign", top: "r", left: "isArray", flexShrink: "accessibilityRole", flexGrow: "sr", zIndex: "", marginRight: "Text", flex: "messageId" };
+  let obj = { 0: "r", -9223372036854775808: "setAlert", 0: "jsVersion", 9223372036854775807: "SELF_HARM_CONTENT", 0: "numMediaItems", 0: "r", 0: "isSearching", 9223372036854775807: "SELF_HARM_CONTENT", 9223372036854775807: "numMemberTabReturnedResults", 0: "r" };
   ({ secureTextEntry, keyboardType } = accessibilityLabel);
   Object.setPrototypeOf(null);
   const merged = Object.assign(accessibilityLabel, obj);
@@ -87,7 +87,7 @@ const forwardRefResult = importAllResult.forwardRef((accessibilityLabel) => {
     items[2] = tmp28;
     let tmp32 = null;
     if (null != hint) {
-      const obj4 = { Promise: "ur", marginTop: "SECTION_INDEX_FIRST_NAMED_CATEGORY", flags: "ur", style: tmp3.hint, children: hint };
+      const obj4 = { style: tmp3.hint, children: hint };
       tmp32 = callback(arg1(dependencyMap[11]).Text, obj4);
     }
     items[3] = tmp32;

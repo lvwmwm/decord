@@ -1,10 +1,10 @@
-// Module ID: 11515
-// Function ID: 89737
+// Module ID: 11522
+// Function ID: 89761
 // Name: usePerksCoachmarkDCF
 // Dependencies: []
 // Exports: useBoostToUnlockCoachmarkDCF, useExpiringPowerupCoachmarkDCF, useGameServerPricingCoachmarkDCF, useGuildPowerupNotificationDCF, useNewGamesCoachmarkDC, useNewPerkAvailableCoachmarkDCF, usePerksCoachmarkDCF
 
-// Module 11515 (usePerksCoachmarkDCF)
+// Module 11522 (usePerksCoachmarkDCF)
 const _module = require(dependencyMap[4]);
 const result = _module.fileFinishedImporting("modules/premium/powerups/hooks/GuildPowerupsNotificationsDCF.native.tsx");
 

@@ -1,10 +1,10 @@
-// Module ID: 13987
-// Function ID: 106415
+// Module ID: 13994
+// Function ID: 106438
 // Name: useSubscriptionRole
 // Dependencies: []
 // Exports: default
 
-// Module 13987 (useSubscriptionRole)
+// Module 13994 (useSubscriptionRole)
 let closure_2 = importDefault(dependencyMap[0]);
 const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/guild_role_subscriptions/useSubscriptionRole.tsx");
 

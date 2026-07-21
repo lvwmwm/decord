@@ -1,10 +1,10 @@
-// Module ID: 5773
-// Function ID: 49376
+// Module ID: 5775
+// Function ID: 49419
 // Name: useInputStyles
 // Dependencies: []
 // Exports: InputFieldContainer
 
-// Module 5773 (useInputStyles)
+// Module 5775 (useInputStyles)
 let Platform;
 function useInputStyles(size) {
   let str = size.size;
@@ -53,7 +53,7 @@ importAll(dependencyMap[0]);
 ({ Platform, StyleSheet: closure_3, View: closure_4 } = arg1(dependencyMap[1]));
 const tmp3 = arg1(dependencyMap[1]);
 ({ jsx: closure_5, jsxs: closure_6 } = arg1(dependencyMap[2]));
-let closure_7 = { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null };
+let closure_7 = {};
 let obj = arg1(dependencyMap[5]);
 let closure_8 = obj.createStyles(() => {
   let str = arg0;
@@ -119,13 +119,13 @@ let closure_8 = obj.createStyles(() => {
   obj10["color"] = flag ? colors.TEXT_MUTED : colors.TEXT_DEFAULT;
   obj10["flexGrow"] = 1;
   obj5.text = obj10;
-  const obj11 = { <string:223543300>: null, <string:1762021126>: null };
+  const obj11 = {};
   const merged1 = Object.assign(tmp3);
   obj11["paddingEnd"] = obj[str];
   obj11["zIndex"] = 1;
   obj11["pointerEvents"] = "none";
   obj5.leadingText = obj11;
-  const obj12 = { <string:2423925279>: null, <string:2596769915>: null };
+  const obj12 = {};
   const merged2 = Object.assign(tmp3);
   obj12["paddingStart"] = obj[str];
   obj12["zIndex"] = 1;

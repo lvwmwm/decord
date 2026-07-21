@@ -1,10 +1,10 @@
-// Module ID: 15320
-// Function ID: 116625
+// Module ID: 15327
+// Function ID: 116649
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 // Exports: default
 
-// Module 15320 (_createForOfIteratorHelperLoose)
+// Module 15327 (_createForOfIteratorHelperLoose)
 function _createForOfIteratorHelperLoose(@@iterator) {
   let arg1 = Symbol_iterator;
   @@iterator = "undefined" !== typeof Symbol;
@@ -125,7 +125,7 @@ let obj = arg1(dependencyMap[11]);
 obj = { container: { flex: 1 } };
 obj = { backgroundColor: importDefault(dependencyMap[12]).colors.MOBILE_ACTIONSHEET_BACKGROUND, paddingVertical: importDefault(dependencyMap[12]).space.PX_16 };
 obj.inviteAppsContainerNonSticky = obj;
-obj.inviteAppsContentContainer = { "Bool(true)": "/assets/images/native", "Bool(true)": 24, "Bool(true)": 24 };
+obj.inviteAppsContentContainer = {};
 const tmp4 = arg1(dependencyMap[10]);
 obj.emptyContainer = { backgroundColor: importDefault(dependencyMap[12]).colors.MOBILE_ACTIONSHEET_BACKGROUND };
 const obj1 = { backgroundColor: importDefault(dependencyMap[12]).colors.MOBILE_ACTIONSHEET_BACKGROUND };
@@ -458,11 +458,8 @@ export default function AddFriendsScreen(navigation) {
             if (tmp) {
               if (tmp17) {
                 let obj = {
-                  "Bool(false)": true,
-                  "Bool(false)": true,
-                  "Bool(false)": true,
                   component() {
-                          let obj = { "Bool(false)": "NOTIFICATION_SETTINGS_MODAL_OPEN", "Bool(false)": "purchaseSection", "Bool(false)": "r", "Bool(false)": "FALL_RELEASE_2023" };
+                          let obj = { getAndIncrementChangesetIdForChat: "canUseNativeForeground", radioTick: "dist", useVoiceMessagesUIStore: "extractSessionDataFromInitializeRequest", GuildEventDatetime: "dist" };
                           const intl = tmp(tmp14[16]).intl;
                           obj.label = intl.string(tmp(tmp14[16]).t.j2POVo);
                           obj = { IconComponent: tmp(tmp14[35]).FriendsIcon };
@@ -477,7 +474,7 @@ export default function AddFriendsScreen(navigation) {
             }
             obj = {
               component() {
-                  let obj = { "Bool(true)": 1107296989, "Bool(true)": 1107296807, "Bool(true)": false, "Bool(true)": false, "Bool(true)": false, "Bool(true)": false, "Bool(true)": false, start: !closure_22 };
+                  let obj = { "Bool(true)": true, "Bool(true)": true, "Bool(true)": true, "Bool(true)": true, "Bool(true)": true, "Bool(true)": true, "Bool(true)": true, start: !closure_22 };
                   const intl = tmp(tmp14[16]).intl;
                   obj.label = intl.string(tmp(tmp14[16]).t.QzVsOs);
                   obj = { IconComponent: tmp(tmp14[36]).AtIcon };
@@ -520,9 +517,6 @@ export default function AddFriendsScreen(navigation) {
             if (tmp2) {
               if (tmp13) {
                 const obj3 = {
-                  "Bool(false)": "WebhookPlusIcon",
-                  "Bool(false)": "png",
-                  "Bool(false)": true,
                   component() {
                           const obj = {
                             onPress() {

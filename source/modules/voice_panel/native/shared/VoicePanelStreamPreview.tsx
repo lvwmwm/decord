@@ -1,10 +1,10 @@
-// Module ID: 11941
-// Function ID: 92333
+// Module ID: 11948
+// Function ID: 92356
 // Name: VoicePanelStreamPreview
 // Dependencies: []
 // Exports: VoicePanelStreamPreview
 
-// Module 11941 (VoicePanelStreamPreview)
+// Module 11948 (VoicePanelStreamPreview)
 importAll(dependencyMap[0]);
 const tmp3 = arg1(dependencyMap[1]);
 const View = tmp3.View;
@@ -18,9 +18,9 @@ let closure_9 = importDefault(dependencyMap[5]).createAnimatedComponent(arg1(dep
 let closure_10 = { duration: 200 };
 let obj2 = arg1(dependencyMap[7]);
 let obj = {};
-obj = { text: true, onPress: "/assets/.cache/intl/ZGVzaWdu", variant: null, MODE_NUMBER: "5489cb913a06f6a88877637630ce77b7", MODE_ALPHA_NUM: "pl.messages.5489cb913a06f6a88877637630ce77b7.compiled.messages", backgroundColor: importDefault(dependencyMap[8]).colors.VOICE_VIDEO_VIDEO_TILE_BACKGROUND };
+obj = { backgroundColor: importDefault(dependencyMap[8]).colors.VOICE_VIDEO_VIDEO_TILE_BACKGROUND };
 obj.roundedCard = obj;
-obj.streamPreviewImage = { 0: "text-feedback-warning", 9223372036854775807: "text-xs/medium", 9223372036854775807: "text-feedback-warning", -9223372036854775808: true };
+obj.streamPreviewImage = { 453470977: "text-feedback-warning", -1361616382: "text-xs/medium", 432814162: "text-feedback-warning", 1397776803: true };
 const importDefaultResult1 = importDefault(dependencyMap[5]);
 obj.ownStreamTextContainer = { backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_SCRIM, borderRadius: importDefault(dependencyMap[8]).radii.sm, marginHorizontal: importDefault(dependencyMap[8]).space.PX_16 };
 obj2 = { textAlign: "center", paddingHorizontal: importDefault(dependencyMap[8]).space.PX_16, paddingVertical: importDefault(dependencyMap[8]).space.PX_16 };
@@ -121,7 +121,7 @@ export const VoicePanelStreamPreview = function VoicePanelStreamPreview(mode) {
   const tmp9 = closure_8;
   if (stateFromStores) {
     const obj4 = { style: tmp.ownStreamTextContainer };
-    const obj5 = { INTEGRATION_CREATE: null, ConstraintReasonCode: "flex-start", style: tmp.ownStreamText };
+    const obj5 = { style: tmp.ownStreamText };
     const intl2 = arg1(dependencyMap[15]).intl;
     obj5.children = intl2.string(arg1(dependencyMap[15]).t.ro/HN8);
     obj4.children = tmp17(arg1(dependencyMap[14]).Text, obj5);

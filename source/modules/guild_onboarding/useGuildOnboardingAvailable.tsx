@@ -1,10 +1,10 @@
-// Module ID: 5723
-// Function ID: 49153
+// Module ID: 5725
+// Function ID: 49196
 // Name: useGuildOnboardingAvailable
 // Dependencies: []
 // Exports: default, isGuildOnboardingAvailable
 
-// Module 5723 (useGuildOnboardingAvailable)
+// Module 5725 (useGuildOnboardingAvailable)
 let closure_2 = importDefault(dependencyMap[0]);
 const GuildFeatures = arg1(dependencyMap[1]).GuildFeatures;
 const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/guild_onboarding/useGuildOnboardingAvailable.tsx");

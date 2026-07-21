@@ -1,10 +1,10 @@
-// Module ID: 9601
-// Function ID: 74805
+// Module ID: 9606
+// Function ID: 74822
 // Name: STICKER_SIZE
 // Dependencies: []
 // Exports: default
 
-// Module 9601 (STICKER_SIZE)
+// Module 9606 (STICKER_SIZE)
 let closure_3 = importDefault(dependencyMap[0]);
 importAll(dependencyMap[1]);
 const View = arg1(dependencyMap[2]).View;
@@ -15,7 +15,7 @@ const STICKER_SIZE = tmp3.STICKER_SIZE;
 const PADDING_VERTICAL = arg1(dependencyMap[6]).PADDING_VERTICAL;
 const jsx = arg1(dependencyMap[7]).jsx;
 let obj = arg1(dependencyMap[8]);
-obj = { "Null": "Array", "Null": "isArray", "Null": "View", "Null": "accessible", "Null": "Array", height: tmp3.ROW_HEIGHT };
+obj = { "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, height: tmp3.ROW_HEIGHT };
 let closure_10 = obj.createStyles({ row: obj, stickerImage: { height: STICKER_SIZE, width: STICKER_SIZE } });
 const result = arg1(dependencyMap[20]).fileFinishedImporting("modules/stickers/native/StickerPickerListRow.tsx");
 
@@ -95,7 +95,7 @@ export default function StickerPickerListRow(stickers) {
         let arr = arr2.push(obj);
       } else {
         let tmp9 = items;
-        obj = {};
+        obj = { "Null": "c6fbfaa8eca334330bde3511a892f25b", "Null": "hu.messages.c6fbfaa8eca334330bde3511a892f25b.compiled.messages", "Null": "jsona", "Null": 150, "Null": 0.25, "Null": 40, "Null": true };
         let tmp10 = arg1;
         let tmp11 = dependencyMap;
         obj.stickerType = arg1(dependencyMap[15]).StickerFormat.PNG;

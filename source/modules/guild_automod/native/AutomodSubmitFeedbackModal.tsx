@@ -1,10 +1,10 @@
-// Module ID: 10995
-// Function ID: 85540
+// Module ID: 11000
+// Function ID: 85561
 // Name: Navbar
 // Dependencies: []
 // Exports: default
 
-// Module 10995 (Navbar)
+// Module 11000 (Navbar)
 function Navbar(onClose) {
   const tmp = callback4();
   let obj = { top: true, style: tmp.header };
@@ -22,7 +22,7 @@ function SubmitFeedbackScreen(onSubmit) {
   ({ feedback: closure_0, onChange: closure_1 } = onSubmit);
   let dependencyMap;
   function label(children) {
-    const obj = { Promise: "<string:1340029796>", marginTop: "<string:1072076685>", flags: "<string:16823617>", style: tmp.formRow, children };
+    const obj = { "Null": "<string:1340029796>", "Null": "<string:1072076685>", "Null": "<string:16825665>", style: tmp.formRow, children };
     return callback2(callback(tmp[13]).Text, obj);
   }
   const tmp = callback4();
@@ -109,7 +109,7 @@ obj.container = obj;
 const tmp2 = arg1(dependencyMap[4]);
 obj.header = { backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_BASE_LOW };
 obj.headerTitle = { textAlign: "center" };
-obj.headerSubtitle = { concat: -0.0014069081515246523, now: -0.0001058445630777106 };
+obj.headerSubtitle = { "Bool(true)": "absolute", "Bool(true)": 0 };
 obj.closeButtonContainer = { marginVertical: 14 };
 const obj1 = { backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_BASE_LOW };
 obj.formBody = { marginTop: 24, borderRadius: importDefault(dependencyMap[6]).radii.sm, backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_SURFACE_HIGH };

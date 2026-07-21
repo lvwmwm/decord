@@ -1,7 +1,7 @@
 // Module ID: 670
 // Function ID: 8270
 // Name: MessageEmbedTypes
-// Dependencies: []
+// Dependencies: [284214097]
 
 // Module 670 (MessageEmbedTypes)
 const _module = require(dependencyMap[0]);

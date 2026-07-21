@@ -1,10 +1,10 @@
-// Module ID: 16124
-// Function ID: 124322
+// Module ID: 16131
+// Function ID: 124353
 // Name: BoostGemOutlineIcon
 // Dependencies: []
 // Exports: BoostGemOutlineIcon
 
-// Module 16124 (BoostGemOutlineIcon)
+// Module 16131 (BoostGemOutlineIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/BoostGemOutlineIcon.tsx");

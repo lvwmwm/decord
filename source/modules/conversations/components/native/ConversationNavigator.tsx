@@ -1,10 +1,10 @@
-// Module ID: 9274
-// Function ID: 72467
+// Module ID: 9278
+// Function ID: 72479
 // Name: HeaderWithBorder
 // Dependencies: []
 // Exports: default, openConversationNavigator
 
-// Module 9274 (HeaderWithBorder)
+// Module 9278 (HeaderWithBorder)
 function HeaderWithBorder(arg0) {
   let obj = arg1(dependencyMap[2]);
   const token = obj.useToken(importDefault(dependencyMap[3]).colors.BORDER_SUBTLE);

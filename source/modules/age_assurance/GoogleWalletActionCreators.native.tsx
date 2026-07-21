@@ -1,10 +1,10 @@
-// Module ID: 7558
-// Function ID: 60504
+// Module ID: 7562
+// Function ID: 60516
 // Name: _requestGoogleWalletVerification
 // Dependencies: []
 // Exports: checkGoogleWalletAvailable, getGoogleWalletCredential, requestGoogleWalletVerification, verifyGoogleWalletCredential
 
-// Module 7558 (_requestGoogleWalletVerification)
+// Module 7562 (_requestGoogleWalletVerification)
 async function _requestGoogleWalletVerification() {
   const HTTP = callback(closure_2[2]).HTTP;
   return yield HTTP.post({ url: constants.GOOGLE_WALLET_REQUEST, body: {}, rejectWithError: true, failImmediatelyWhenRateLimited: true }).body;

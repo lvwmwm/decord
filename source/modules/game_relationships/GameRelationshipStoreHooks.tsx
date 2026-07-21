@@ -1,10 +1,10 @@
-// Module ID: 11966
-// Function ID: 92524
+// Module ID: 11973
+// Function ID: 92547
 // Name: useGameRelationshipsForUserByType
 // Dependencies: []
 // Exports: useGameFriendsForUser, useGameRelationshipsByType, useHasGameRelationshipsForUser, useHasGameRelationshipsForUserByType, useIncomingGameRelationshipsForUser
 
-// Module 11966 (useGameRelationshipsForUserByType)
+// Module 11973 (useGameRelationshipsForUserByType)
 function useGameRelationshipsForUserByType(id, FRIEND) {
   FRIEND = id;
   const dependencyMap = FRIEND;

@@ -1,10 +1,10 @@
-// Module ID: 7944
-// Function ID: 63372
+// Module ID: 7948
+// Function ID: 63384
 // Name: convertThemeToProto
 // Dependencies: []
 // Exports: saveClientTheme, saveGuildFolders
 
-// Module 7944 (convertThemeToProto)
+// Module 7948 (convertThemeToProto)
 let SystemTheme;
 function convertThemeToProto(arg0) {
   if (ThemeTypes.DARK === arg0) {

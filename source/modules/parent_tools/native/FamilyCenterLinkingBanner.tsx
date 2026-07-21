@@ -1,10 +1,10 @@
-// Module ID: 13686
-// Function ID: 103613
+// Module ID: 13693
+// Function ID: 103636
 // Name: FamilyCenterLinkingBannerParentContent
 // Dependencies: []
 // Exports: default
 
-// Module 13686 (FamilyCenterLinkingBannerParentContent)
+// Module 13693 (FamilyCenterLinkingBannerParentContent)
 function FamilyCenterLinkingBannerParentContent() {
   let obj = { style: callback4().container };
   obj = { index: 1 };
@@ -41,22 +41,19 @@ function FamilyCenterLinkingInstructionsRow(arg0) {
   ({ header, description, index, isLast } = arg0);
   const tmp = callback6();
   let obj = { style: tmp.row };
-  obj = { style: tmp.circle, children: callback(arg1(dependencyMap[10]).Text, obj) };
-  obj = { INTEGRATION_CREATE: false, ConstraintReasonCode: false, children: index };
+  obj = { style: tmp.circle, children: callback(arg1(dependencyMap[10]).Text, { children: index }) };
   const items = [callback(closure_3, obj), ];
-  const obj1 = {};
+  obj = {};
   const items1 = [tmp.rowContent, ];
   let gap = null;
   if (!isLast) {
     gap = tmp.gap;
   }
   items1[1] = gap;
-  obj1.style = items1;
-  const items2 = [callback(arg1(dependencyMap[10]).Text, { variant: "heading-sm/bold", children: header }), ];
-  const obj2 = { INTEGRATION_CREATE: "<string:3305963521>", ConstraintReasonCode: "<string:671547393>", children: description };
-  items2[1] = callback(arg1(dependencyMap[10]).Text, obj2);
-  obj1.children = items2;
-  items[1] = closure_6(closure_3, obj1);
+  obj.style = items1;
+  const items2 = [callback(arg1(dependencyMap[10]).Text, { variant: "heading-sm/bold", children: header }), callback(arg1(dependencyMap[10]).Text, { children: description })];
+  obj.children = items2;
+  items[1] = closure_6(closure_3, obj);
   obj.children = items;
   return closure_6(closure_3, obj);
 }
@@ -70,7 +67,7 @@ obj = { backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_BASE_
 obj.container = obj;
 const tmp4 = arg1(dependencyMap[2]);
 obj.content = { padding: importDefault(dependencyMap[4]).space.PX_16 };
-const obj2 = { aze: null, azj: null, marginBottom: importDefault(dependencyMap[4]).space.PX_12 };
+const obj2 = { bhk: "hd", bic: "r", marginBottom: importDefault(dependencyMap[4]).space.PX_12 };
 obj.art = obj2;
 const obj1 = { padding: importDefault(dependencyMap[4]).space.PX_16 };
 obj.header = { marginBottom: importDefault(dependencyMap[4]).space.PX_8 };
@@ -89,7 +86,7 @@ const obj7 = { width: "100%", paddingHorizontal: importDefault(dependencyMap[4])
 const obj8 = { row: {}, gap: { marginBottom: 12 } };
 obj9 = { borderRadius: importDefault(dependencyMap[4]).radii.round, backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_MOD_NORMAL };
 obj8.circle = obj9;
-obj8.rowContent = { guild: null, exports: 0 };
+obj8.rowContent = { shrink: null, disabled: 0 };
 let closure_10 = arg1(dependencyMap[3]).createStyles(obj8);
 const obj13 = arg1(dependencyMap[3]);
 const result = arg1(dependencyMap[13]).fileFinishedImporting("modules/parent_tools/native/FamilyCenterLinkingBanner.tsx");
@@ -113,9 +110,7 @@ export default function FamilyCenterLinkingBanner() {
   obj.resizeMethod = "resize";
   const items = [callback(closure_4, obj), , ];
   obj1 = { style: tmp.content };
-  const items1 = [callback(arg1(dependencyMap[10]).Text, { style: tmp.header, variant: "heading-lg/semibold", children: ageSpecificText }), ];
-  const obj3 = { INTEGRATION_CREATE: "<string:3305963521>", ConstraintReasonCode: "<string:671547393>", children: ageSpecificText1 };
-  items1[1] = callback(arg1(dependencyMap[11]).TextWithIOSLinkWorkaround, obj3);
+  const items1 = [callback(arg1(dependencyMap[10]).Text, { style: tmp.header, variant: "heading-lg/semibold", children: ageSpecificText }), callback(arg1(dependencyMap[11]).TextWithIOSLinkWorkaround, { children: ageSpecificText1 })];
   obj1.children = items1;
   items[1] = callback2(closure_3, obj1);
   items[2] = callback(tmp2 ? FamilyCenterLinkingBannerParentContent : FamilyCenterLinkingBannerTeenContent, {});

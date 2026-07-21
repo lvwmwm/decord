@@ -1,15 +1,15 @@
-// Module ID: 15732
-// Function ID: 120239
+// Module ID: 15739
+// Function ID: 120263
 // Name: VideoButtonRive
 // Dependencies: []
 // Exports: default
 
-// Module 15732 (VideoButtonRive)
+// Module 15739 (VideoButtonRive)
 function VideoButtonRive(arg0) {
   let color;
   let isVideoEnabled;
   ({ isVideoEnabled, color } = arg0);
-  let obj = { style: { -: 24, 8: 24, 0: null } };
+  let obj = { style: { areRequestOptionsEqual: 24, SMS_CODE_LENGTH: 24, getMaxListeners: null } };
   obj = { dataBinding: { fill: color, on: isVideoEnabled } };
   let str = "CamOff";
   if (isVideoEnabled) {

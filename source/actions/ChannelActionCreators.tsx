@@ -287,7 +287,7 @@ const obj = {
   },
   removeRecipient(id, id2) {
     const HTTP = id2(dependencyMap[8]).HTTP;
-    const obj = { CONVERSATIONS: null, replace: null, push: null, url: closure_11.CHANNEL_RECIPIENT(id, id2) };
+    const obj = { lc: null, type: null, end: null, url: closure_11.CHANNEL_RECIPIENT(id, id2) };
     return HTTP.del(obj);
   },
   setDMOwner(arg0, owner) {
@@ -346,10 +346,9 @@ const obj = {
       obj["status"] = "initiated";
       obj2.track(constants.CHANNEL_ICON_EDIT_PROGRESSED, obj);
       const HTTP = callback(closure_2[8]).HTTP;
-      const obj1 = { <string:2858493658>: "LengthDelimited", <string:1637985873>: "borderRadius", <string:50680378>: 56119689, <string:1449306696>: -430718879, <string:3248313002>: 1016679575, url: closure_11.CHANNEL(callback) };
       obj2 = { icon: callback2 };
-      obj1.body = obj2;
-      const tmp8 = yield HTTP.patch(obj1);
+      const obj1 = { url: closure_11.CHANNEL(callback), body: obj2 };
+      const tmp8 = yield HTTP.patch({ url: closure_11.CHANNEL(callback), body: obj2 });
       const obj3 = {};
       const merged1 = Object.assign(obj);
       obj3["status"] = "success";
@@ -431,7 +430,7 @@ const obj = {
   },
   convertToGuild(arg0) {
     const HTTP = arg1(dependencyMap[8]).HTTP;
-    const obj = { CONVERSATIONS: null, replace: null, push: null, url: closure_11.CHANNEL_CONVERT(arg0) };
+    const obj = { lc: null, type: null, end: null, url: closure_11.CHANNEL_CONVERT(arg0) };
     return HTTP.post(obj);
   },
   preload(arg0, channelId) {

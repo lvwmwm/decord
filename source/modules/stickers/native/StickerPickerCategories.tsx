@@ -1,10 +1,10 @@
-// Module ID: 9622
-// Function ID: 74945
+// Module ID: 9627
+// Function ID: 74962
 // Name: CATEGORY_ICON_SIZE
 // Dependencies: []
 // Exports: default
 
-// Module 9622 (CATEGORY_ICON_SIZE)
+// Module 9627 (CATEGORY_ICON_SIZE)
 let CATEGORY_ICON_SIZE;
 let closure_3 = importDefault(dependencyMap[0]);
 const importAllResult = importAll(dependencyMap[1]);
@@ -19,7 +19,7 @@ const ExpressionPickerViewType = arg1(dependencyMap[6]).ExpressionPickerViewType
 ({ jsx: closure_14, jsxs: closure_15 } = arg1(dependencyMap[7]));
 let obj1 = arg1(dependencyMap[8]);
 let obj = { list: { flex: 1, height: EXPRESSION_FOOTER_HEIGHT }, item: { height: EXPRESSION_FOOTER_HEIGHT, width: EXPRESSION_FOOTER_HEIGHT, justifyContent: "center", alignItems: "center" }, itemInner: obj, fadedItem: { opacity: 0.5 } };
-obj = { height: NODE_SIZE, width: NODE_SIZE, borderRadius: NODE_SIZE / 2 };
+obj = { "Null": null, "Null": null, height: NODE_SIZE, width: NODE_SIZE, borderRadius: NODE_SIZE / 2 };
 obj1 = { opacity: 1, backgroundColor: importDefault(dependencyMap[9]).colors.INTERACTIVE_BACKGROUND_ACTIVE };
 obj.activeItem = obj1;
 obj.guildIcon = { height: CATEGORY_ICON_SIZE, width: CATEGORY_ICON_SIZE, borderRadius: CATEGORY_ICON_SIZE / 2 };
@@ -152,7 +152,7 @@ export default function _default(categories) {
         }
         if (tmp6) {
           const current = ref.current;
-          const obj = { item: categoryIndex };
+          const obj = { "Bool(false)": 435355650, "Bool(false)": 1231421441, "Bool(false)": 2137063425, item: categoryIndex };
           current.scrollToLocation(obj);
         }
       }
@@ -204,7 +204,7 @@ export default function _default(categories) {
   let obj = { portalHostName: "expression-footer", style: categories.style };
   const tmp17 = importDefault(closure_2[21])();
   const tmp18 = closure_15;
-  obj = { surrogates: "missed_messages_default", from: "222_social", Map: null, application: "2026-05-noisier-notif-settings-defaults", itemSize: EXPRESSION_FOOTER_HEIGHT, listId: ExpressionPickerViewType.STICKER, onLayout: callback4, onScroll: callback1, placeholderConfig: tmp17, ref, scrollReporting: "callbacks", sections: memo, renderItem: callback5, showsHorizontalScrollIndicator: false, style: tmp.list };
+  obj = { <string:2471231180>: "missed_messages_default", <string:2711707967>: "222_social", <string:374976602>: null, <string:1670994100>: "2026-05-noisier-notif-settings-defaults", itemSize: EXPRESSION_FOOTER_HEIGHT, listId: ExpressionPickerViewType.STICKER, onLayout: callback4, onScroll: callback1, placeholderConfig: tmp17, ref, scrollReporting: "callbacks", sections: memo, renderItem: callback5, showsHorizontalScrollIndicator: false, style: tmp.list };
   const items9 = [callback2(importDefault(closure_2[23]), obj), ];
   let tmp20 = null != first && first1;
   if (tmp20) {

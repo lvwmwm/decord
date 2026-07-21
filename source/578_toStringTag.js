@@ -1,12 +1,12 @@
 // Module ID: 578
 // Function ID: 6964
 // Name: toStringTag
-// Dependencies: [616, 618]
+// Dependencies: []
 
 // Module 578 (toStringTag)
 let toStringTag;
-if (require("overArg")) {
-  toStringTag = require("overArg").toStringTag;
+if (require(dependencyMap[0])) {
+  toStringTag = require(dependencyMap[0]).toStringTag;
 }
 
 export default function baseGetTag(arg0) {

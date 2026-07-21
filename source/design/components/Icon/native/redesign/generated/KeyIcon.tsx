@@ -1,10 +1,10 @@
-// Module ID: 9198
-// Function ID: 72024
+// Module ID: 9202
+// Function ID: 72036
 // Name: KeyIcon
 // Dependencies: []
 // Exports: KeyIcon
 
-// Module 9198 (KeyIcon)
+// Module 9202 (KeyIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/KeyIcon.tsx");

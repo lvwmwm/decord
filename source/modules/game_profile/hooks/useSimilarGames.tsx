@@ -1,18 +1,16 @@
-// Module ID: 11832
-// Function ID: 91734
+// Module ID: 11839
+// Function ID: 91757
 // Name: useSimilarGames
-// Dependencies: [1409286188, 1442840606, 1140850718, 1174405166, 1207959598, 33554478, 1979711488, 31, 33]
+// Dependencies: []
 // Exports: default
 
-// Module 11832 (useSimilarGames)
-import module_33 from "module_33";
-
+// Module 11839 (useSimilarGames)
 let closure_2 = importDefault(dependencyMap[0]);
 let closure_3 = importDefault(dependencyMap[1]);
 let closure_4 = arg1(dependencyMap[2]).SIMILAR_GAMES_BLOCKED_GAME_IDS;
 let closure_5 = [];
 let closure_6 = [];
-const result = module_33.fileFinishedImporting("modules/game_profile/hooks/useSimilarGames.tsx");
+const result = arg1(dependencyMap[8]).fileFinishedImporting("modules/game_profile/hooks/useSimilarGames.tsx");
 
 export default function useSimilarGames(arg0, arg1) {
   let error;

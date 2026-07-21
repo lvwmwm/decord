@@ -1,5 +1,5 @@
 // Module ID: 8050
-// Function ID: 63896
+// Function ID: 63883
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
@@ -13,56 +13,53 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-importDefault(dependencyMap[5]);
-const jsx = arg1(dependencyMap[6]).jsx;
-const tmp3 = (arg0) => {
-  class FeComposite {
+let closure_0 = importDefault(dependencyMap[0]);
+let closure_1 = importDefault(dependencyMap[1]);
+let closure_2 = importDefault(dependencyMap[2]);
+let closure_3 = importDefault(dependencyMap[3]);
+let closure_4 = importDefault(dependencyMap[4]);
+const tmp2 = (Component) => {
+  class FilterPrimitive {
     constructor() {
       self = this;
-      tmp = closure_3(this, FeComposite);
-      obj = closure_6(FeComposite);
-      tmp2 = closure_5;
-      if (closure_9()) {
-        tmp6 = globalThis;
-        _Reflect = Reflect;
-        tmp7 = closure_6;
-        tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_6(self).constructor);
-      } else {
-        tmp3 = arguments;
-        tmp4 = arguments;
-        constructResult = obj(...arguments);
+      tmp = closure_1(this, FilterPrimitive);
+      length = arguments.length;
+      array = new Array(length);
+      for (let num = 0; num < length; num = num + 1) {
+        array[num] = arguments[num];
       }
-      return tmp2(self, constructResult);
+      items = [];
+      combined = items.concat(array);
+      obj = closure_3(FilterPrimitive);
+      tmp3 = closure_2;
+      if (closure_5()) {
+        if (!combined) {
+          combined = [];
+        }
+        tmp5 = closure_3;
+        constructResult = Reflect.construct(obj, combined, closure_3(self).constructor);
+      } else {
+        constructResult = obj.apply(self, combined);
+      }
+      tmp3Result = tmp3(self, constructResult);
+      FilterPrimitive = tmp3Result;
+      tmp3Result.root = null;
+      tmp3Result.refMethod = (root) => {
+        tmp3Result.root = root;
+      };
+      tmp3Result.setNativeProps = (arg0) => {
+        const root = tmp3Result.root;
+        if (null != root) {
+          root.setNativeProps(arg0);
+        }
+      };
+      return tmp3Result;
     }
   }
-  const arg1 = FeComposite;
-  callback2(FeComposite, arg0);
-  const items = [
-    {
-      key: "render",
-      value: function render() {
-        const FeComposite = this;
-        const obj = {
-          ref(arg0) {
-            return self.refMethod(arg0);
-          }
-        };
-        const tmp = callback(closure_2[7]);
-        const obj2 = FeComposite(closure_2[8]);
-        const extractFilterResult = FeComposite(closure_2[8]).extractFilter(this.props);
-        return callback4(tmp, Object.assign(obj, extractFilterResult, FeComposite(closure_2[8]).extractFeComposite(this.props)));
-      }
-    }
-  ];
-  return callback(FeComposite, items);
-}(importDefault(dependencyMap[9]));
-tmp3.displayName = "FeComposite";
-tmp3.defaultProps = Object.assign({}, tmp3.defaultPrimitiveProps, { 351738488: "r", 1643106979: "onRequireModeratorMFAClick", 1851348039: "Array", 1944915675: "isSpamMessageRequest" });
+  const callback = FilterPrimitive;
+  callback2(FilterPrimitive, Component);
+  return callback(FilterPrimitive);
+}(arg1(dependencyMap[5]).Component);
+tmp2.defaultPrimitiveProps = {};
 
-export default tmp3;
+export default tmp2;

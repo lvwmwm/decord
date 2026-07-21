@@ -1,9 +1,9 @@
-// Module ID: 15678
-// Function ID: 119768
+// Module ID: 15685
+// Function ID: 119792
 // Name: getCardKey
 // Dependencies: []
 
-// Module 15678 (getCardKey)
+// Module 15685 (getCardKey)
 let UI_SHOW_HIDE_PHYSICS;
 let VOICE_PANEL_CHUNK_DIVISOR;
 function getCardKey(type) {

@@ -1,5 +1,5 @@
 // Module ID: 4730
-// Function ID: 41078
+// Function ID: 41113
 // Dependencies: []
 
 // Module 4730
@@ -36,9 +36,6 @@ if (self2) {
   const _Object2 = Object;
   const obj = { value: true };
   fn(require(dependencyMap[0]), exports);
-  fn(require(dependencyMap[1]), exports);
-  fn(require(dependencyMap[2]), exports);
-  fn(require(dependencyMap[3]), exports);
 } else {
   const _Object = Object;
 }

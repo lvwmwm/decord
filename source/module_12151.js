@@ -1,9 +1,8 @@
 // Module ID: 12151
-// Function ID: 93537
+// Function ID: 93553
 // Dependencies: []
 
 // Module 12151
 const _module = require(dependencyMap[0]);
-const obj = { url: "r", content: "Y78KGC", messageId: "Array", channel_id: "activityUserSessionId", no: "platformTypes", "Null": "PBM", "Null": "r", "Null": "IS_QUEST_RELEASE", scales: [] };
 
-export default _module.registerAsset(obj);
+export default _module.registerAsset({ scales: [15189782894321462000000000000000000000000000000000000000000000000000000000000000000] });

@@ -1,9 +1,9 @@
-// Module ID: 5480
-// Function ID: 46728
+// Module ID: 5482
+// Function ID: 46770
 // Name: QUICK_SWITCHER
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 5480 (QUICK_SWITCHER)
+// Module 5482 (QUICK_SWITCHER)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("modules/app_analytics/AnalyticsLocation.tsx");
 

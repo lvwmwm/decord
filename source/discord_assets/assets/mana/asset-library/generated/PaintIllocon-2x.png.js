@@ -1,9 +1,9 @@
-// Module ID: 6394
-// Function ID: 50465
+// Module ID: 6396
+// Function ID: 50508
 // Name: metadata
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 6394 (metadata)
+// Module 6396 (metadata)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/PaintIllocon-2x.png.js");
 

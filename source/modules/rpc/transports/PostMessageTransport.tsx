@@ -1,9 +1,9 @@
-// Module ID: 10477
-// Function ID: 81167
+// Module ID: 10483
+// Function ID: 81190
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 4031, 653, 10479, 10478, 10489, 2, 6, 7, 653, 22, 10479, 2, 7, 6, 15, 17]
+// Dependencies: [6, 7, 15, 17, 18, 4031, 653, 10485, 10484, 10495, 2, 6, 7, 653, 22, 10485, 2, 7, 6, 15, 17]
 
-// Module 10477 (_isNativeReflectConstruct)
+// Module 10483 (_isNativeReflectConstruct)
 import _classCallCheck from "_classCallCheck";
 import _defineProperties from "_defineProperties";
 import _possibleConstructorReturn from "_possibleConstructorReturn";
@@ -11,8 +11,8 @@ import closure_6 from "_getPrototypeOf";
 import _inherits from "_inherits";
 import RPC_SCOPE_CONFIG from "RPC_SCOPE_CONFIG";
 import ME from "ME";
-import module_10479 from "module_10479";
-import { RPC_EMBEDDED_APP_SCOPE } from "module_10478";
+import module_10485 from "module_10485";
+import { RPC_EMBEDDED_APP_SCOPE } from "module_10484";
 import BaseSocket from "BaseSocket";
 import _getPrototypeOf from "_getPrototypeOf";
 
@@ -26,7 +26,7 @@ function _isNativeReflectConstruct() {
   const result = _isNativeReflectConstruct();
 }
 ({ AnalyticEvents: closure_12, ComponentActions: closure_13, RPCCloseCodes: closure_14, RPCErrors: closure_15 } = BaseSocket);
-let closure_16 = 10 * require("keys").Millis.SECOND;
+let closure_16 = 10 * require("result2").Millis.SECOND;
 const map = new Map();
 const set = new Set();
 function postClose(origin, arg1, postMessageToRPCClient) {
@@ -74,7 +74,7 @@ export default (EventEmitter) => {
           return tmp === arg0;
         });
         if (null == found) {
-          found = [];
+          found = [null, null];
         }
         const first = callback3(found, 1)[0];
         if (null != first) {
@@ -107,7 +107,7 @@ export default (EventEmitter) => {
           return tmp.frameId === id;
         });
         if (null == found) {
-          found = [];
+          found = [null, null];
         }
         const tmp2 = callback3(found, 2);
         const first = tmp2[0];

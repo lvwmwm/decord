@@ -1,10 +1,10 @@
-// Module ID: 12117
-// Function ID: 93362
+// Module ID: 12124
+// Function ID: 93385
 // Name: useMediaModalFooterBackground
 // Dependencies: []
 // Exports: default
 
-// Module 12117 (useMediaModalFooterBackground)
+// Module 12124 (useMediaModalFooterBackground)
 let closure_3 = importDefault(dependencyMap[0]);
 const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/media_viewer/native/components/overlay/useMediaModalFooterBackground.android.tsx");
 

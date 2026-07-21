@@ -1,10 +1,10 @@
-// Module ID: 9099
-// Function ID: 71307
+// Module ID: 9103
+// Function ID: 71319
 // Name: maybeShowDiscardChangesAlert
 // Dependencies: []
 // Exports: default, showDiscardChangesAlert
 
-// Module 9099 (maybeShowDiscardChangesAlert)
+// Module 9103 (maybeShowDiscardChangesAlert)
 const _module = require(dependencyMap[2]);
 const result = _module.fileFinishedImporting("modules/user_settings/profiles/native/maybeShowDiscardChangesAlert.tsx");
 

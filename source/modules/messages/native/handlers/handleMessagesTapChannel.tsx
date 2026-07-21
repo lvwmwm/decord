@@ -1,10 +1,10 @@
-// Module ID: 9953
-// Function ID: 76906
+// Module ID: 9959
+// Function ID: 76924
 // Name: maybeStartLurking
 // Dependencies: []
 // Exports: handleMessagesTapChannel
 
-// Module 9953 (maybeStartLurking)
+// Module 9959 (maybeStartLurking)
 function maybeStartLurking() {
   return _maybeStartLurking(...arguments);
 }

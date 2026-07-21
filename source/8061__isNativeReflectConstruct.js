@@ -1,5 +1,5 @@
 // Module ID: 8061
-// Function ID: 63961
+// Function ID: 63953
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
@@ -21,11 +21,11 @@ let closure_7 = importDefault(dependencyMap[4]);
 importDefault(dependencyMap[5]);
 const jsx = arg1(dependencyMap[6]).jsx;
 const tmp3 = (arg0) => {
-  class FeFlood {
+  class FeGaussianBlur {
     constructor() {
       self = this;
-      tmp = closure_3(this, FeFlood);
-      obj = closure_6(FeFlood);
+      tmp = closure_3(this, FeGaussianBlur);
+      obj = closure_6(FeGaussianBlur);
       tmp2 = closure_5;
       if (closure_9()) {
         tmp6 = globalThis;
@@ -41,27 +41,30 @@ const tmp3 = (arg0) => {
       return tmp2(self, constructResult);
     }
   }
-  const arg1 = FeFlood;
-  callback2(FeFlood, arg0);
+  const arg1 = FeGaussianBlur;
+  callback2(FeGaussianBlur, arg0);
   const items = [
     {
       key: "render",
       value: function render() {
-        const FeFlood = this;
+        const FeGaussianBlur = this;
         const obj = {
           ref(arg0) {
             return self.refMethod(arg0);
           }
         };
         const tmp = callback(closure_2[7]);
-        const obj2 = FeFlood(closure_2[8]);
-        return callback4(tmp, Object.assign(obj, FeFlood(closure_2[8]).extractFilter(this.props), callback(closure_2[8])(this.props)));
+        const obj2 = FeGaussianBlur(closure_2[8]);
+        const extractFilterResult = FeGaussianBlur(closure_2[8]).extractFilter(this.props);
+        const obj3 = FeGaussianBlur(closure_2[8]);
+        const extractInResult = FeGaussianBlur(closure_2[8]).extractIn(this.props);
+        return callback4(tmp, Object.assign(obj, extractFilterResult, extractInResult, FeGaussianBlur(closure_2[8]).extractFeGaussianBlur(this.props)));
       }
     }
   ];
-  return callback(FeFlood, items);
+  return callback(FeGaussianBlur, items);
 }(importDefault(dependencyMap[9]));
-tmp3.displayName = "FeFlood";
-tmp3.defaultProps = Object.assign({}, tmp3.defaultPrimitiveProps, { refY: null, orient: null });
+tmp3.displayName = "FeGaussianBlur";
+tmp3.defaultProps = Object.assign({}, tmp3.defaultPrimitiveProps, { <string:2026807516>: 1, <string:3088971555>: null });
 
 export default tmp3;

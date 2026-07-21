@@ -1,10 +1,10 @@
-// Module ID: 15385
-// Function ID: 117411
+// Module ID: 15392
+// Function ID: 117435
 // Name: SlashIcon
 // Dependencies: []
 // Exports: SlashIcon
 
-// Module 15385 (SlashIcon)
+// Module 15392 (SlashIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/SlashIcon.tsx");

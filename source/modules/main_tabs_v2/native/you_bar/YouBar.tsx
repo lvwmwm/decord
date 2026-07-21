@@ -1,8 +1,8 @@
-// Module ID: 14963
-// Function ID: 112653
+// Module ID: 14970
+// Function ID: 112677
 // Dependencies: []
 
-// Module 14963
+// Module 14970
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 const importAllResult = importAll(dependencyMap[2]);
@@ -19,10 +19,10 @@ const tmp3 = arg1(dependencyMap[8]);
 ({ jsx: closure_20, jsxs: closure_21 } = arg1(dependencyMap[11]));
 let obj1 = arg1(dependencyMap[12]);
 let obj = {};
-obj = { width: 6.5, height: 6.5, borderRadius: null, backgroundColor: null, position: 1, right: 0.7, top: true };
+obj = { "Null": 6.5, "Null": 6.5, "Null": null, "Null": null, "Null": 1, "Null": 0.7, "Null": true };
 const merged = Object.assign(importDefault(dependencyMap[13]).shadows.SHADOW_HIGH);
 obj.youRow = obj;
-obj.youRowRight = { 0: null, 9223372036854775807: null };
+obj.youRowRight = {};
 obj1 = { flex: 1, marginRight: importDefault(dependencyMap[13]).space.PX_12, borderRadius: importDefault(dependencyMap[13]).modules.mobile.YOU_BAR_BORDER_RADIUS };
 obj.youPressable = obj1;
 let closure_22 = obj1.createStyles(obj);
@@ -210,7 +210,7 @@ let closure_27 = importAllResult.memo(() => {
       const result1 = closure_5.set(false);
       const obj3 = callback(closure_2[32]);
     }
-  }, 500, { "Bool(false)": 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000021043611947808288, "Bool(false)": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000053357352779429986 });
+  }, 500, { flex: true, marginRight: true });
   const memo2 = importAllResult.useMemo(fn2, items4);
   // CreateGeneratorClosureLongIndex (0x67)
   const items5 = [sharedValue];

@@ -1,17 +1,17 @@
-// Module ID: 8771
-// Function ID: 69313
+// Module ID: 8775
+// Function ID: 69325
 // Name: PremiumGiftBackgroundAnimation
 // Dependencies: []
 // Exports: default
 
-// Module 8771 (PremiumGiftBackgroundAnimation)
+// Module 8775 (PremiumGiftBackgroundAnimation)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 const View = arg1(dependencyMap[2]).View;
 let closure_6 = importDefault(dependencyMap[3]);
 ({ jsx: closure_7, jsxs: closure_8 } = arg1(dependencyMap[4]));
 const tmp2 = arg1(dependencyMap[4]);
-let closure_9 = arg1(dependencyMap[5]).createStyles({ container: { -9223372036854775808: "absolute", -9223372036854775808: 4, -9223372036854775808: 8, -9223372036854775808: null }, consistentHeight: { height: 300 }, animation: { sheetShouldOverflowTopInset: false, sheetDefaultResizeAnimationEnabled: true, customAnimationOnSwipe: null }, baseAnimation: {}, lottie: { height: 275 } });
+let closure_9 = arg1(dependencyMap[5]).createStyles({ container: {}, consistentHeight: { height: 300 }, animation: { height: "he", borderRadius: "simple", borderWidth: false }, baseAnimation: {}, lottie: { height: 275 } });
 const obj = arg1(dependencyMap[5]);
 const result = arg1(dependencyMap[10]).fileFinishedImporting("modules/premium/native/gifting/PremiumGiftBackgroundAnimation.android.tsx");
 

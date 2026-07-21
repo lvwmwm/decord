@@ -1,8 +1,8 @@
-// Module ID: 14978
-// Function ID: 112829
+// Module ID: 14985
+// Function ID: 112853
 // Dependencies: []
 
-// Module 14978
+// Module 14985
 const YOU_BAR_SPRING_CONFIG = arg1(dependencyMap[1]).YOU_BAR_SPRING_CONFIG;
 const jsx = arg1(dependencyMap[2]).jsx;
 let closure_5 = { code: "function YouBarNameplateTsx1(){const{withSpring,isQuestRendered,questDockAnimatedBorderRadius,borderRadius,YOU_BAR_SPRING_CONFIG}=this.__closure;return{borderTopRightRadius:withSpring(isQuestRendered?questDockAnimatedBorderRadius.get():borderRadius,YOU_BAR_SPRING_CONFIG)};}" };
@@ -47,7 +47,7 @@ const memoResult = importAll(dependencyMap[0]).memo(function YouBarNameplate(isQ
   const items = [obj1, animatedStyle];
   obj.style = items;
   obj.pointerEvents = "none";
-  const obj2 = { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, nameplate };
+  const obj2 = { "Bool(true)": "ERROR", "Bool(true)": "ERROR", "Bool(true)": "NOT_RESPONDER", nameplate };
   obj.children = jsx(importDefault(dependencyMap[8]), obj2);
   return jsx(importDefault(dependencyMap[6]).View, obj);
 });

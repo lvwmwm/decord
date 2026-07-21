@@ -48,8 +48,8 @@ function createJSONStorage(arg0) {
 let closure_0 = require(dependencyMap[0]);
 let closure_1 = require(dependencyMap[1]);
 let closure_2 = require(dependencyMap[2]);
-let closure_3 = [];
-let closure_4 = ["<string:619773954>"];
+let closure_3 = ["description", "Array", "isArray"];
+let closure_4 = [null];
 const map = new Map();
 function getTrackedConnectionState(arg0) {
   const value = map.get(arg0);

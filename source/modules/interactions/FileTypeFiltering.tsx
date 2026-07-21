@@ -1,10 +1,10 @@
-// Module ID: 11264
-// Function ID: 87662
+// Module ID: 11270
+// Function ID: 87685
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 // Exports: getFileTypeFiltering, useFileTypeFiltering
 
-// Module 11264 (_createForOfIteratorHelperLoose)
+// Module 11270 (_createForOfIteratorHelperLoose)
 function _createForOfIteratorHelperLoose(@@iterator) {
   let arg1 = Symbol_iterator;
   @@iterator = "undefined" !== typeof Symbol;
@@ -246,7 +246,7 @@ let closure_6 = [];
 let closure_7 = [90, 87, 83, "mkv"];
 let closure_8 = [481036352, 712729690, 2095984960, 979252543, -919453646, 446676598];
 let closure_9 = { jpg: [true, true, true, true], mov: [true, true] };
-let closure_10 = { jpg: [null, null], mp4: ["Object", "String"] };
+let closure_10 = { jpg: ["channelId", "channelId"], mp4: ["Object", "String"] };
 const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/interactions/FileTypeFiltering.tsx");
 
 export { useFileTypesFormattedString };

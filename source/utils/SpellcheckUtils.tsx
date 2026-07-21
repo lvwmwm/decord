@@ -1,10 +1,10 @@
-// Module ID: 5403
-// Function ID: 46034
+// Module ID: 5405
+// Function ID: 46076
 // Name: isElectronBuiltInSpellcheckerSupported
 // Dependencies: []
 // Exports: addResultListener, getCachedMisspelling, getCorrections, isMisspelled, isSupported, replaceWithCorrection, setAppLocale, setEnabled, setLearnedWords
 
-// Module 5403 (isElectronBuiltInSpellcheckerSupported)
+// Module 5405 (isElectronBuiltInSpellcheckerSupported)
 function isElectronBuiltInSpellcheckerSupported() {
   let spellCheck;
   if (null != importDefault(dependencyMap[1])) {

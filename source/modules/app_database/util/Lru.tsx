@@ -1,9 +1,9 @@
-// Module ID: 6702
-// Function ID: 52083
+// Module ID: 6708
+// Function ID: 52132
 // Name: Lru
 // Dependencies: []
 
-// Module 6702 (Lru)
+// Module 6708 (Lru)
 let closure_0 = importDefault(dependencyMap[0]);
 let closure_1 = importDefault(dependencyMap[1]);
 const tmp2 = () => {

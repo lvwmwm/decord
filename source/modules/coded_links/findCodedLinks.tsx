@@ -86,7 +86,7 @@ function _arrayLikeToArray(arg0, arg1) {
 }
 function getHost(GUILD_TEMPLATE_HOST) {
   if (null == GUILD_TEMPLATE_HOST) {
-    return {};
+    return { <string:3696409953>: "o", <string:1642427467>: "o" };
   } else if (GUILD_TEMPLATE_HOST.indexOf("/") >= 0) {
     const parsed = arg1(dependencyMap[4]).parse(GUILD_TEMPLATE_HOST, undefined, true);
     let obj = {};
@@ -152,7 +152,7 @@ function getPathsFromURL(target) {
     }
     return obj;
   }
-  obj = {};
+  obj = { "Bool(true)": 0, "Bool(true)": 0, "Bool(true)": "100%", <string:2086410632>: "10%" };
 }
 function findCodedLinks(sanitizeUrlResult) {
   if (null == sanitizeUrlResult) {

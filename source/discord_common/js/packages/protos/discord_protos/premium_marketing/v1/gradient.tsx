@@ -1,9 +1,9 @@
-// Module ID: 7133
-// Function ID: 57494
+// Module ID: 7137
+// Function ID: 57505
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
-// Module 7133 (_isNativeReflectConstruct)
+// Module 7137 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -25,9 +25,9 @@ let tmp2 = (MessageType) => {
       self = this;
       tmp = closure_3(this, Gradient$Type);
       items = [, ];
-      items[0] = { "Bool(false)": "message", "Bool(false)": "BLUE_430", "Bool(false)": 1, "Bool(false)": "muted", "Bool(false)": "scalar" };
+      items[0] = { -1369353863: "message", 1636868177: "BLUE_430", -1293725045: 1, 140686057: "muted", -73316248: "scalar" };
       items[1] = {};
-      items1 = [-2412662027399507500000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000];
+      items1 = [null];
       items1[1] = items;
       obj = closure_6(Gradient$Type);
       tmp2 = closure_5;

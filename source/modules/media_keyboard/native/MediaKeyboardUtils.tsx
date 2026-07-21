@@ -1,10 +1,10 @@
-// Module ID: 9639
-// Function ID: 75079
+// Module ID: 9644
+// Function ID: 75096
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 // Exports: addAttachmentForCommand, cropResultToUploadItem, handleSelectGift, handleSelectThread
 
-// Module 9639 (_createForOfIteratorHelperLoose)
+// Module 9644 (_createForOfIteratorHelperLoose)
 function _createForOfIteratorHelperLoose(@@iterator) {
   let arg1 = Symbol_iterator;
   @@iterator = "undefined" !== typeof Symbol;
@@ -123,7 +123,7 @@ function handleCameraDialog(arg0) {
       ({ id: obj2.channel_id, guild_id: obj2.guild_id } = callback);
       obj.track(constants.CHAT_INPUT_COMPONENT_VIEWED, obj);
       callback3();
-      obj = { 1632723514: false, -1235459506: false, 1661142353: false, 1364605794: false, -1436432332: false, 1655629137: false };
+      obj = { <string:357852769>: "category", <string:3173126870>: "Array", <string:4116326337>: "isArray", <string:1625412499>: "constructor", <string:1178085059>: "to", <string:1423264469>: "isArray" };
       const obj3 = callback2(callback3[15]);
       obj.quality = callback(callback3[12]).getImageCompressionQuality();
       obj.saveToPhotos = obj.saveCameraUploadsToDevice;
@@ -213,7 +213,7 @@ function handleViewAllDialog(arg0) {
           found = uploads.filter((id) => closure_3.includes(id.id));
           arr2 = found;
         }
-        obj = { borderRadius: null, flexDirection: null };
+        obj = { "Bool(true)": null, "Bool(true)": null };
         if (closure_2 <= 1) {
           obj.selectionLimit = 1;
           obj.selections = arr2.map((id) => id.id);

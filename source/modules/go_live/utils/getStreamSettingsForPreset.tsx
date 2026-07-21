@@ -1,10 +1,10 @@
-// Module ID: 10674
-// Function ID: 83226
+// Module ID: 10680
+// Function ID: 83249
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 // Exports: canStreamWithPreset, getMaxSettingsForPreset
 
-// Module 10674 (_createForOfIteratorHelperLoose)
+// Module 10680 (_createForOfIteratorHelperLoose)
 function _createForOfIteratorHelperLoose(@@iterator) {
   let importDefault = Symbol_iterator;
   @@iterator = "undefined" !== typeof Symbol;

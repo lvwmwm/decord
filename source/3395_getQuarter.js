@@ -1,15 +1,16 @@
 // Module ID: 3395
 // Function ID: 26570
 // Name: getQuarter
-// Dependencies: []
+// Dependencies: [3366, 3370]
 // Exports: default
 
 // Module 3395 (getQuarter)
-let closure_0 = _interopRequireDefault(require(dependencyMap[0]));
-let closure_1 = _interopRequireDefault(require(dependencyMap[1]));
+import startOfWeek from "startOfWeek";
+import getTimezoneOffsetInMilliseconds from "getTimezoneOffsetInMilliseconds";
+
 
 export default function getQuarter(defaultResult1) {
-  closure_1.default(1, arguments);
-  return Math.floor(closure_0.default(defaultResult1).getMonth() / 3) + 1;
+  getTimezoneOffsetInMilliseconds.default(1, arguments);
+  return Math.floor(startOfWeek.default(defaultResult1).getMonth() / 3) + 1;
 };
 export default exports.default;

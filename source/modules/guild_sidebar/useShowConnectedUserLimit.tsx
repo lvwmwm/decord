@@ -1,10 +1,10 @@
-// Module ID: 11375
-// Function ID: 88471
+// Module ID: 11382
+// Function ID: 88495
 // Name: formatNumber
 // Dependencies: []
 // Exports: default, useConnectedUserLimitFormatted
 
-// Module 11375 (formatNumber)
+// Module 11382 (formatNumber)
 function formatNumber(toFixed) {
   let num = arg1;
   if (arg1 === undefined) {

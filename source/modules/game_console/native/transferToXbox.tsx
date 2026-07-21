@@ -1,10 +1,10 @@
-// Module ID: 9039
-// Function ID: 71009
+// Module ID: 9043
+// Function ID: 71021
 // Name: _transferToXbox
 // Dependencies: []
 // Exports: default
 
-// Module 9039 (_transferToXbox)
+// Module 9043 (_transferToXbox)
 function _transferToXbox() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);

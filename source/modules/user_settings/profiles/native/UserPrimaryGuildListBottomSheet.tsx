@@ -1,10 +1,10 @@
-// Module ID: 13478
-// Function ID: 102317
+// Module ID: 13485
+// Function ID: 102340
 // Name: UserPrimaryGuildListBottomSheet
 // Dependencies: []
 // Exports: default
 
-// Module 13478 (UserPrimaryGuildListBottomSheet)
+// Module 13485 (UserPrimaryGuildListBottomSheet)
 const importAllResult = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 const GuildTagBadgeSize = arg1(dependencyMap[2]).GuildTagBadgeSize;
@@ -21,7 +21,7 @@ obj.lineHeight = num;
 obj.tagStyles = obj;
 obj1 = { backgroundColor: importDefault(dependencyMap[6]).colors.BORDER_SUBTLE };
 obj.divider = obj1;
-obj.itemTrailingStyle = {};
+obj.itemTrailingStyle = { -1594137417: "0.18", 1365423714: "#FF78B7", 1851894937: "0.97", 358113363: "#F25AA8" };
 let closure_8 = obj1.createStyles(obj);
 let closure_9 = importAllResult.memo((item) => {
   let end;
@@ -124,7 +124,7 @@ export default function UserPrimaryGuildListBottomSheet(availableGuilds) {
     return items;
   }, items);
   const View = memo;
-  let obj = { 0: null, -9223372036854775808: null };
+  let obj = { 1891290120: null, -475247768: null };
   obj = { style: tmp.titleContainer };
   obj = {};
   const intl = arg1(dependencyMap[10]).intl;

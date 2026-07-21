@@ -1,10 +1,10 @@
-// Module ID: 9984
-// Function ID: 77210
+// Module ID: 9990
+// Function ID: 77228
 // Name: _putRoleConnectionsConfigurations
 // Dependencies: []
 // Exports: fetchRoleConnectionsConfiguration, fetchUserApplicationRoleConnections, putRoleConnectionsConfigurations
 
-// Module 9984 (_putRoleConnectionsConfigurations)
+// Module 9990 (_putRoleConnectionsConfigurations)
 function _putRoleConnectionsConfigurations() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);

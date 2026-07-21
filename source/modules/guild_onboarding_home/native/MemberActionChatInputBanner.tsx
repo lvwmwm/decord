@@ -1,9 +1,9 @@
-// Module ID: 11368
-// Function ID: 88411
+// Module ID: 11375
+// Function ID: 88435
 // Name: ActionChannelInfo
 // Dependencies: []
 
-// Module 11368 (ActionChannelInfo)
+// Module 11375 (ActionChannelInfo)
 function ActionChannelInfo(action) {
   const arg1 = action.action;
   let obj = arg1(dependencyMap[12]);
@@ -347,14 +347,14 @@ const Routes = arg1(dependencyMap[7]).Routes;
 const EMOJI_URL_BASE_SIZE = arg1(dependencyMap[8]).EMOJI_URL_BASE_SIZE;
 ({ jsx: closure_12, jsxs: closure_13, Fragment: closure_14 } = arg1(dependencyMap[9]));
 let obj1 = arg1(dependencyMap[10]);
-let obj = { animatedContainer: { overflow: "hidden" }, measurement: { 9223372036854775807: "<string:1137377281>", 0: "<string:1498480641>" } };
+let obj = { animatedContainer: { overflow: "hidden" }, measurement: { -1350914179: 1996489027, -1351079902: 1358954819 } };
 obj = { "Bool(false)": null, "Bool(false)": 132, "Bool(false)": 182, "Bool(false)": 132, "Bool(false)": 0, "Bool(false)": 0, backgroundColor: importDefault(dependencyMap[11]).colors.BACKGROUND_BASE_LOWEST };
 obj.container = obj;
-obj.text = { accessibilityRole: null, get: "ae39bece93fb2e7db2a552f53a1d8fa1", "Bool(false)": "TwitterNeutralIcon" };
+obj.text = {};
 obj.wrap = {};
-obj.emoji = { aze: false, azj: false };
-obj.textEmoji = {};
-obj1 = { "Bool(true)": "PlusSmallIcon", "Bool(true)": "png", "Bool(true)": true, "Bool(true)": "/assets/design/components/Icon/native/redesign/generated/images", "Bool(true)": 24, "Bool(true)": 24, "Bool(true)": null, backgroundColor: importDefault(dependencyMap[11]).colors.BACKGROUND_SURFACE_HIGH, borderRadius: importDefault(dependencyMap[11]).radii.md };
+obj.emoji = { bhk: "<string:1027735553>", bic: "<string:4143972873>" };
+obj.textEmoji = { borderRadius: null, borderColor: "absolute" };
+obj1 = { paddingVertical: "PlusSmallIcon", paddingHorizontal: "png", justifyContent: true, alignItems: "/assets/design/components/Icon/native/redesign/generated/images", marginVertical: 24, marginLeft: 24, backgroundColor: importDefault(dependencyMap[11]).colors.BACKGROUND_SURFACE_HIGH, borderRadius: importDefault(dependencyMap[11]).radii.md };
 obj.emojiPlaceholder = obj1;
 const tmp2 = arg1(dependencyMap[9]);
 obj.circle = { backgroundColor: importDefault(dependencyMap[11]).colors.BACKGROUND_BRAND };

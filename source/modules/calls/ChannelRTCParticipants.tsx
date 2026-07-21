@@ -1,10 +1,10 @@
-// Module ID: 10515
-// Function ID: 82118
+// Module ID: 10521
+// Function ID: 82141
 // Name: getEmbeddedActivityParticipantId
 // Dependencies: []
 // Exports: activityParticipantIdToApplicationId, areParticipantsEqual
 
-// Module 10515 (getEmbeddedActivityParticipantId)
+// Module 10521 (getEmbeddedActivityParticipantId)
 function getEmbeddedActivityParticipantId(arg0) {
   let applicationId;
   let instanceId;

@@ -1,10 +1,10 @@
-// Module ID: 14723
-// Function ID: 111059
+// Module ID: 14730
+// Function ID: 111083
 // Name: UnreadSubtitle
 // Dependencies: []
 // Exports: default
 
-// Module 14723 (UnreadSubtitle)
+// Module 14730 (UnreadSubtitle)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 const jsx = arg1(dependencyMap[2]).jsx;
@@ -35,20 +35,19 @@ export default function UnreadSubtitle(channel) {
     channelName,
     count: count - 1,
     labelHook(children) {
-      const obj = { 9223372036854775807: 3309567, 9223372036854775807: 601874432, 9223372036854775807: 4319821, children };
+      const obj = { -9223372036854775808: "<string:2682257408>", 0: null, 0: null, children };
       return callback(subtitleStyles(channelIconComponentWithGuild[7]).Text, obj, arg1);
     },
     iconHook(arg0, arg1) {
-      const obj = { flexDirection: "from", alignItems: null, style: subtitleStyles.unreadChannelIcon };
+      const obj = { flex: "text-xs/medium", flexGrow: "text-default", style: subtitleStyles.unreadChannelIcon };
       return callback(channelIconComponentWithGuild, obj, arg1);
     },
     channelHook(children) {
-      const obj = { 9223372036854775807: 3309567, 9223372036854775807: 601874432, 9223372036854775807: 4319821, style: subtitleStyles.subtitleText, children };
+      const obj = { -9223372036854775808: "<string:2682257408>", 0: null, 0: null, style: subtitleStyles.subtitleText, children };
       return callback(subtitleStyles(channelIconComponentWithGuild[7]).Text, obj, arg1);
     },
     overflowHook(children) {
-      const obj = { INTEGRATION_CREATE: true, ConstraintReasonCode: true, children };
-      return callback(subtitleStyles(channelIconComponentWithGuild[7]).Text, obj, arg1);
+      return callback(subtitleStyles(channelIconComponentWithGuild[7]).Text, { children }, arg1);
     }
   };
   obj.children = intl.format(arg1(dependencyMap[6]).t.OqlmU6, obj);

@@ -1,9 +1,9 @@
-// Module ID: 4955
-// Function ID: 42549
+// Module ID: 4957
+// Function ID: 42590
 // Name: GuildMemberRequestState
 // Dependencies: []
 
-// Module 4955 (GuildMemberRequestState)
+// Module 4957 (GuildMemberRequestState)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 let closure_5 = () => {

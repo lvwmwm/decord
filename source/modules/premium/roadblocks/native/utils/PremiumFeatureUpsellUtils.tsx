@@ -1,10 +1,10 @@
-// Module ID: 7946
-// Function ID: 63407
+// Module ID: 7950
+// Function ID: 63419
 // Name: isSoundboardSectionNitroLocked
 // Dependencies: []
 // Exports: getUpsellType, isSoundboardSectionNitroLocked
 
-// Module 7946 (isSoundboardSectionNitroLocked)
+// Module 7950 (isSoundboardSectionNitroLocked)
 const _module = require(dependencyMap[4]);
 const result = _module.fileFinishedImporting("modules/premium/roadblocks/native/utils/PremiumFeatureUpsellUtils.tsx");
 

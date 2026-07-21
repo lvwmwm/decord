@@ -1,10 +1,10 @@
-// Module ID: 7568
-// Function ID: 60551
+// Module ID: 7572
+// Function ID: 60563
 // Name: handleDismiss
 // Dependencies: []
 // Exports: default
 
-// Module 7568 (handleDismiss)
+// Module 7572 (handleDismiss)
 function handleDismiss() {
   importDefault(dependencyMap[8]).hideActionSheet(closure_5);
 }
@@ -22,7 +22,7 @@ let closure_5 = arg1(dependencyMap[3]).STAGE_AUDIENCE_NOTICE_SHEET_KEY;
 let closure_6 = arg1(dependencyMap[4]).GuildScheduledEventPrivacyLevel;
 ({ jsx: closure_7, jsxs: closure_8 } = arg1(dependencyMap[5]));
 let obj = arg1(dependencyMap[6]);
-obj = { container: { padding: 16 }, header: { <string:1687568131>: 52881784.83212474, <string:2700805186>: 0.0000000000000000000000000000000000000000000000000000000000000000000000011319598867188059 }, headerImage: {}, headerTitle: {} };
+obj = { container: { padding: 16 }, header: { "Null": 52881784.83212474, "Null": 0.0000000000000000000000000000000000000000000000000000000000000000000000011319598867188059 }, headerImage: {}, headerTitle: {} };
 obj = { backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_BASE_LOWEST };
 obj.headerBulletIconContainer = obj;
 const tmp3 = arg1(dependencyMap[5]);
@@ -55,7 +55,7 @@ export default function StageAudienceNotificationSheet(channelId) {
   obj2.source = importDefault(dependencyMap[13]);
   obj2.style = tmp.headerImage;
   const items1 = [callback(importDefault(dependencyMap[12]), obj2), , ];
-  const obj3 = { 0: 24, 9223372036854775807: 24, 0: null, -9223372036854775808: "aa9c26c29990ba7a6584e51ab5c56efa", style: tmp.headerTitle };
+  const obj3 = { 1501064855: 24, -1267889981: 24, -1145697943: null, -1266241916: "aa9c26c29990ba7a6584e51ab5c56efa", style: tmp.headerTitle };
   const intl = arg1(dependencyMap[15]).intl;
   obj3.children = intl.string(arg1(dependencyMap[15]).t.UVuXCs);
   items1[1] = callback(arg1(dependencyMap[14]).Text, obj3);

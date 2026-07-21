@@ -1,10 +1,10 @@
-// Module ID: 14682
-// Function ID: 110772
+// Module ID: 14689
+// Function ID: 110796
 // Name: getGuildFolderMenuItems
 // Dependencies: []
 // Exports: getGuildFolderMenuItems
 
-// Module 14682 (getGuildFolderMenuItems)
+// Module 14689 (getGuildFolderMenuItems)
 let closure_2 = importDefault(dependencyMap[0]);
 let closure_3 = importDefault(dependencyMap[1]);
 const AnalyticsSections = arg1(dependencyMap[2]).AnalyticsSections;

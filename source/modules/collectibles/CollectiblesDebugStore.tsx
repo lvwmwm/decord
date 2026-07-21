@@ -1,10 +1,10 @@
-// Module ID: 6778
-// Function ID: 53499
+// Module ID: 6784
+// Function ID: 53548
 // Name: useCollectiblesDebugStore
 // Dependencies: []
 // Exports: addDebugLog
 
-// Module 6778 (useCollectiblesDebugStore)
+// Module 6784 (useCollectiblesDebugStore)
 const _module = require(dependencyMap[0]);
 const obj = _module.create((arg0) => {
   let obj = arg0;

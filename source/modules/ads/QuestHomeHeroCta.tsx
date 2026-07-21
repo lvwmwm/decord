@@ -1,10 +1,10 @@
-// Module ID: 9461
-// Function ID: 73699
+// Module ID: 9465
+// Function ID: 73713
 // Name: questHomeHeroCtaFromServer
-// Dependencies: []
+// Dependencies: [284214097]
 // Exports: questHomeHeroCtaFromServer
 
-// Module 9461 (questHomeHeroCtaFromServer)
+// Module 9465 (questHomeHeroCtaFromServer)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("modules/ads/QuestHomeHeroCta.tsx");
 

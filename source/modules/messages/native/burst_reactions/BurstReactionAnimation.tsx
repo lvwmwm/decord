@@ -1,10 +1,10 @@
-// Module ID: 7058
-// Function ID: 56442
+// Module ID: 7062
+// Function ID: 56453
 // Name: BurstReactionAnimation
 // Dependencies: []
 // Exports: default
 
-// Module 7058 (BurstReactionAnimation)
+// Module 7062 (BurstReactionAnimation)
 importAll(dependencyMap[0]);
 let closure_3 = importDefault(dependencyMap[1]);
 const jsx = arg1(dependencyMap[2]).jsx;
@@ -24,7 +24,7 @@ export default function BurstReactionAnimation(arg0) {
   if (withFadeOut === undefined) {
     withFadeOut = true;
   }
-  let obj = { <string:617242988>: null, <string:1440112982>: "LOCAL_PAYMENT_START_PAYMENT_MISSING_REQUIRED_OPTION", 0: "Missing required option for startPayment.", "Bool(false)": null, "Bool(false)": "LOCAL_PAYMENT_START_PAYMENT_DEFERRED_PAYMENT_FAILED", "Bool(false)": "LocalPayment startPayment deferred payment failed." };
+  let obj = { "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true };
   Object.setPrototypeOf(null);
   const merged = Object.assign(arg0, obj);
   const tmp3 = callback();

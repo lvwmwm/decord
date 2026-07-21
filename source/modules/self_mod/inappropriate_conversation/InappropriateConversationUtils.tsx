@@ -1,10 +1,10 @@
-// Module ID: 10115
-// Function ID: 78318
+// Module ID: 10121
+// Function ID: 78336
 // Name: shouldShowTakeoverForWarnings
 // Dependencies: []
 // Exports: getInappropriateConversationTakeoverForChannel, getSafetyAlertsSettingOrDefault, shouldShowInappropriateConversationTakeoverForChannelRecord
 
-// Module 10115 (shouldShowTakeoverForWarnings)
+// Module 10121 (shouldShowTakeoverForWarnings)
 function shouldShowTakeoverForWarnings(inappropriateConversationWarningsForChannel) {
   const found = inappropriateConversationWarningsForChannel.filter((type) => type.type === obj.INAPPROPRIATE_CONVERSATION_TIER_1);
   return found.length > 0 && found.every((dismiss_timestamp) => null == dismiss_timestamp.dismiss_timestamp);

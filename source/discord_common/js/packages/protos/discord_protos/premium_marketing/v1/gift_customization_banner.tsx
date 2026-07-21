@@ -1,14 +1,13 @@
-// Module ID: 7137
-// Function ID: 57543
+// Module ID: 7141
+// Function ID: 57554
 // Name: _isNativeReflectConstruct
 // Dependencies: [0, 0, 0, 0, 4294967295, 4294967295, 0, 0, 0, 0, 0]
 
-// Module 7137 (_isNativeReflectConstruct)
-import closure_2 from "result";
-import closure_3 from "result";
-import closure_4 from "result";
-import closure_5 from "result";
-import result from "result";
+// Module 7141 (_isNativeReflectConstruct)
+import __exportStarResult1 from "__exportStarResult1";
+import closure_3 from "__exportStarResult1";
+import closure_4 from "__exportStarResult1";
+import closure_5 from "__exportStarResult1";
 
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
@@ -28,21 +27,21 @@ let tmp2 = (MessageType) => {
       self = this;
       tmp = closure_3(this, GiftCustomizationBanner$Type);
       items = [, , , , , , , , , , ];
-      items[0] = { body: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002012870360051815, guildId: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003200674821102785, ao: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000030586585845, "": 2798595.4946969007 };
-      items[1] = { body: 2, guildId: "cta_label", ao: "scalar", "": 9 };
+      items[0] = {};
+      items[1] = { 9223372036854775807: "y", 0: "isArray", 9223372036854775807: "Reflect", no: "container" };
       items[2] = {};
-      obj = { emojiId: 1, emojiName: "center", userId: "flex-start" };
+      obj = { "Null": 1, "Null": "center", "Null": "flex-start" };
       obj.T = function T() {
         return callback(closure_1[6]).Gradient;
       };
       items[3] = obj;
       items[4] = {};
-      obj = { emojiId: null, emojiName: null, userId: null };
+      obj = { "Null": null, "Null": null, "Null": null };
       obj.T = function T() {
         return callback(closure_1[7]).ThemeAwareAsset;
       };
       items[5] = obj;
-      obj1 = { emojiId: "constructor", emojiName: "_oneway", userId: "isArray" };
+      obj1 = { "Null": 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000006790386535, "Null": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000173833895300153, "Null": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007787758510114213 };
       obj1.T = function T() {
         return callback(closure_1[7]).ThemeAwareAsset;
       };
@@ -52,9 +51,9 @@ let tmp2 = (MessageType) => {
               return callback(closure_1[7]).ThemeAwareAsset;
             }
       };
-      obj2 = { emojiId: 0.25, emojiName: "ILLO_GREEN_70", userId: 0.3 };
+      obj2 = { "Null": 0.25, "Null": "ILLO_GREEN_70", "Null": 0.3 };
       obj2.T = function T() {
-        const items = ["y", closure_8, "ASSET_VARIANT_"];
+        const items = [true, closure_8, "ASSET_VARIANT_"];
         return items;
       };
       items[8] = obj2;
@@ -68,7 +67,7 @@ let tmp2 = (MessageType) => {
               return callback(closure_1[8]).LocalizedString;
             }
       };
-      items1 = [22204947273751033000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000];
+      items1 = [754026800];
       items1[1] = items;
       obj5 = closure_6(GiftCustomizationBanner$Type);
       tmp2 = closure_5;
@@ -188,9 +187,9 @@ let tmp2 = (MessageType) => {
   };
   items[2] = obj;
   return callback(GiftCustomizationBanner$Type, items);
-}(require("result").MessageType);
+}(require("__exportStarResult1").MessageType);
 tmp2 = new tmp2();
-result = result.fileFinishedImporting("../discord_common/js/packages/protos/discord_protos/premium_marketing/v1/gift_customization_banner.tsx");
+const result = require("__exportStarResult1").fileFinishedImporting("../discord_common/js/packages/protos/discord_protos/premium_marketing/v1/gift_customization_banner.tsx");
 
 export const GiftCustomizationBanner_AssetVariant = obj;
 export const GiftCustomizationBanner = tmp2;

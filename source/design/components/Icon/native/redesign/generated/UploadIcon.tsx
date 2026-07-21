@@ -1,10 +1,10 @@
-// Module ID: 7994
-// Function ID: 63554
+// Module ID: 7998
+// Function ID: 63566
 // Name: UploadIcon
 // Dependencies: []
 // Exports: UploadIcon
 
-// Module 7994 (UploadIcon)
+// Module 7998 (UploadIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/UploadIcon.tsx");

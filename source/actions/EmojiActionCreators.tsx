@@ -1,10 +1,10 @@
-// Module ID: 9379
-// Function ID: 73123
+// Module ID: 9383
+// Function ID: 73137
 // Name: _updateEmoji
 // Dependencies: []
 // Exports: deleteEmoji, favoriteEmoji, fetchEmoji, setDiversityColor, unfavoriteEmoji, updateEmoji, uploadEmoji
 
-// Module 9379 (_updateEmoji)
+// Module 9383 (_updateEmoji)
 function _updateEmoji() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
@@ -75,7 +75,7 @@ export const fetchEmoji = function fetchEmoji(guildId) {
   obj = { type: "EMOJI_FETCH", guildId };
   obj.dispatch(obj);
   const HTTP = arg1(dependencyMap[9]).HTTP;
-  obj = { CONVERSATIONS: null, replace: null, push: null, url: Endpoints.GUILD_EMOJIS(guildId) };
+  obj = { lc: null, type: null, end: null, url: Endpoints.GUILD_EMOJIS(guildId) };
   const value = HTTP.get(obj);
   value.then((body) => {
     let obj = callback(closure_2[8]);

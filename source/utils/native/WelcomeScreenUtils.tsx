@@ -1,10 +1,10 @@
-// Module ID: 11667
-// Function ID: 90531
+// Module ID: 11674
+// Function ID: 90554
 // Name: useShowWelcomeModal
 // Dependencies: []
 // Exports: openWelcomeActionSheet, useShowWelcomeModal
 
-// Module 11667 (useShowWelcomeModal)
+// Module 11674 (useShowWelcomeModal)
 let closure_3 = importAll(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 const NO_WELCOME_SCREEN = arg1(dependencyMap[1]).NO_WELCOME_SCREEN;

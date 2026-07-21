@@ -1,10 +1,10 @@
-// Module ID: 14715
-// Function ID: 111012
+// Module ID: 14722
+// Function ID: 111036
 // Name: VoiceUsers
 // Dependencies: []
 // Exports: GuildVoiceState, useVoiceUsers
 
-// Module 14715 (VoiceUsers)
+// Module 14722 (VoiceUsers)
 function VoiceUsers(arg0) {
   let voiceUsers;
   ({ voiceUsers, guildId: closure_0 } = arg0);
@@ -14,7 +14,7 @@ function VoiceUsers(arg0) {
   }
   let tmp = null;
   if (0 !== voiceUsers.length) {
-    let obj = { style: {} };
+    let obj = { style: { <string:3461472865>: "safety_user_sentiment_notice_dismissed_at", <string:1447977218>: "message", <string:1640807382>: null } };
     obj = {
       size: arg1(dependencyMap[11]).AvatarSizes.XSMALL,
       names: substr.map((username) => username.username),
@@ -32,7 +32,7 @@ function VoiceUsers(arg0) {
 function LiveTag() {
   const tmp = callback4();
   let obj = { style: tmp.tag };
-  obj = { 1968435297: null, 915925470: null, 1375298031: null, style: tmp.tagText };
+  obj = { style: tmp.tagText };
   const intl = arg1(dependencyMap[13]).intl;
   obj.children = intl.string(arg1(dependencyMap[13]).t.dI3q4h).toUpperCase();
   obj.children = callback(arg1(dependencyMap[12]).Text, obj);
@@ -48,22 +48,22 @@ let closure_9 = importDefault(dependencyMap[5]);
 const ChannelTypes = arg1(dependencyMap[6]).ChannelTypes;
 ({ jsx: closure_11, jsxs: closure_12 } = arg1(dependencyMap[7]));
 let obj = arg1(dependencyMap[8]);
-obj = { voiceContainer: { activeStageIcon: "<string:2472625498>", CREATOR_FAQ: "<string:1834105441>", currentScene: "<string:1950702284>", connectionsChecksGroup: "flexDirection" } };
+obj = { voiceContainer: { width: "<string:2417182093>", height: "<string:1364343393>", justifyContent: "<string:1950715377>", alignItems: "flexDirection" } };
 obj = { borderRadius: importDefault(dependencyMap[9]).radii.sm };
 const merged = Object.assign(importDefault(dependencyMap[9]).shadows.SHADOW_MEDIUM);
 obj.streamPreviewShadow = obj;
 const tmp2 = arg1(dependencyMap[7]);
 obj.streamPreview = { borderRadius: importDefault(dependencyMap[9]).radii.sm };
-obj.streamPreviewDarkGradient = { ONE_DAY: true, marginRight: "/assets/modules/guilds_bar/native/images", gameImage: 59, agq: 55, marginRight: null, display: "31b62f25cfc0f3a2d3cb5b6aaaef4788" };
-obj.streamPreviewGradient = { ONE_DAY: null, marginRight: null, gameImage: null, agq: null, marginRight: null, display: null };
-const obj2 = { <string:1677919658>: true, <string:2857778012>: "/assets/modules/stage_channels/native/images", <string:89416289>: 25, <string:2591070467>: 24, <string:1395055216>: null, <string:425828783>: "b252f7dc065300671ba9347414eb0bad", borderColor: importDefault(dependencyMap[9]).colors.BORDER_SUBTLE, borderRadius: importDefault(dependencyMap[9]).radii.sm };
+obj.streamPreviewDarkGradient = { 9223372036854775807: true, 9223372036854775807: "/assets/modules/guilds_bar/native/images", 0: 59, -9223372036854775808: 55, 0: null, 9223372036854775807: "31b62f25cfc0f3a2d3cb5b6aaaef4788" };
+obj.streamPreviewGradient = { 9223372036854775807: null, 9223372036854775807: null, 0: null, -9223372036854775808: null, 0: null, 9223372036854775807: null };
+const obj2 = { "Bool(false)": true, "Bool(false)": "/assets/modules/stage_channels/native/images", "Bool(false)": 25, "Bool(false)": 24, "Bool(false)": null, "Bool(false)": "b252f7dc065300671ba9347414eb0bad", borderColor: importDefault(dependencyMap[9]).colors.BORDER_SUBTLE, borderRadius: importDefault(dependencyMap[9]).radii.sm };
 obj.streamPreviewBorder = obj2;
 let closure_13 = obj.createStyles(obj);
 let obj5 = arg1(dependencyMap[8]);
 const obj3 = {};
 const obj1 = { borderRadius: importDefault(dependencyMap[9]).radii.sm };
 obj3.tag = { borderBottomRightRadius: importDefault(dependencyMap[9]).radii.xs, backgroundColor: importDefault(dependencyMap[9]).unsafe_rawColors.RED_400 };
-obj5 = { DCDSKAdNetworkManager: null, hasThemeFeature: "\u{1F607}", GuildIconWithChannelType: 6, color: importDefault(dependencyMap[9]).unsafe_rawColors.WHITE };
+obj5 = { 1377929130: 290293.32910158904, -1532433124: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000026316991841648, 911313505: 350907439676964900000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, color: importDefault(dependencyMap[9]).unsafe_rawColors.WHITE };
 obj3.tagText = obj5;
 let closure_14 = obj5.createStyles(obj3);
 const obj4 = { borderBottomRightRadius: importDefault(dependencyMap[9]).radii.xs, backgroundColor: importDefault(dependencyMap[9]).unsafe_rawColors.RED_400 };
@@ -108,9 +108,9 @@ export const GuildVoiceState = function GuildVoiceState(arg0) {
       const obj4 = { uri: previewUrl };
       obj3.source = obj4;
       const items1 = [callback(importDefault(dependencyMap[15]), obj3), , , , ];
-      const obj5 = { colors: [true, true], start: { "Null": false, "Null": true }, end: { "Null": 131072.00314656927, "Null": 0.000000000000000000000000000000000000000000000000000000011294471302334573 }, style: tmp.streamPreviewDarkGradient, pointerEvents: "none" };
+      const obj5 = { colors: [], start: { max: -536870861, guildId: -299892737 }, end: {}, style: tmp.streamPreviewDarkGradient, pointerEvents: "none" };
       items1[1] = callback(importDefault(dependencyMap[16]), obj5);
-      const obj6 = { colors: [true, true], start: { "Null": false, "Null": true }, end: { "Null": "innocent", "Null": "innocent" }, style: tmp.streamPreviewGradient, pointerEvents: "none" };
+      const obj6 = { colors: ["ended", "getAgeVerificationMethods"], start: { max: -536870861, guildId: -299892737 }, end: {}, style: tmp.streamPreviewGradient, pointerEvents: "none" };
       items1[2] = callback(importDefault(dependencyMap[16]), obj6);
       const obj7 = { style: tmp.streamPreviewBorder, pointerEvents: "none" };
       items1[3] = callback(View, obj7);

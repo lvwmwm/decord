@@ -1,10 +1,10 @@
-// Module ID: 8899
-// Function ID: 70246
+// Module ID: 8903
+// Function ID: 70258
 // Name: SecureFramesCodeGrid
 // Dependencies: []
 // Exports: default
 
-// Module 8899 (SecureFramesCodeGrid)
+// Module 8903 (SecureFramesCodeGrid)
 function SecureFramesCodeGrid(chunks) {
   chunks = chunks.chunks;
   const arg1 = chunks;
@@ -30,7 +30,13 @@ function SecureFramesCodeGrid(chunks) {
   return callback(closure_7, {
     children: memo.map((arr) => {
       let obj = {};
-      obj = { style: closure_2.row, children: arr.map((children) => callback2(callback(closure_1[6]).Text, { style: codeText.codeText, children }, "" + children + "-" + arg1)) };
+      obj = {
+        style: closure_2.row,
+        children: arr.map((children) => {
+          const obj = { "Null": "absolute", "Null": 0, "Null": "center", style: codeText.codeText, children };
+          return callback2(callback(closure_1[6]).Text, obj, "" + children + "-" + arg1);
+        })
+      };
       const items = [callback(closure_4, obj), ];
       let tmp3 = arg1 < memo.length - 1;
       if (tmp3) {
@@ -52,9 +58,9 @@ obj = { codeText: obj, row: {} };
 obj = { fontFamily: arg1(dependencyMap[2]).Fonts.CODE_NORMAL };
 const tmp3 = arg1(dependencyMap[3]);
 obj.divider = { height: 1, backgroundColor: importDefault(dependencyMap[5]).colors.BORDER_SUBTLE };
-const obj2 = { "Null": null, "Null": null, "Null": null, "Null": null, "Null": null, "Null": null, "Null": null, "Null": null, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_LOWEST, borderTopRightRadius: importDefault(dependencyMap[5]).radii.lg, borderTopLeftRadius: importDefault(dependencyMap[5]).radii.lg };
+const obj2 = { "Bool(true)": 2417, "Bool(true)": 1335906816, "Bool(true)": 38863776, "Bool(true)": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000024127092873514, "Bool(true)": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000012304659412004518, "Bool(true)": 8589287440, "Bool(true)": 27497739583751.527, "Bool(true)": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001771166227257366, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_LOWEST, borderTopRightRadius: importDefault(dependencyMap[5]).radii.lg, borderTopLeftRadius: importDefault(dependencyMap[5]).radii.lg };
 obj.codeHeader = obj2;
-const obj3 = { accessible: null, replace: null, guild: null, backgroundColor: importDefault(dependencyMap[5]).colors.BORDER_SUBTLE, borderBottomRightRadius: importDefault(dependencyMap[5]).radii.lg, borderBottomLeftRadius: importDefault(dependencyMap[5]).radii.lg };
+const obj3 = { <string:3773516041>: null, <string:1364287843>: null, <string:425876624>: null, backgroundColor: importDefault(dependencyMap[5]).colors.BORDER_SUBTLE, borderBottomRightRadius: importDefault(dependencyMap[5]).radii.lg, borderBottomLeftRadius: importDefault(dependencyMap[5]).radii.lg };
 obj.code = obj3;
 obj.loading = { minHeight: 126 };
 let closure_8 = obj.createStyles(obj);
@@ -70,20 +76,19 @@ export default function SecureFramesCode(chunks) {
   const tmp = callback3();
   let obj = {};
   obj = { style: tmp.codeHeader };
-  obj = { "Bool(false)": "", "Bool(false)": "", children: title };
-  const items = [callback(arg1(dependencyMap[6]).Text, obj), trailing];
+  const items = [callback(arg1(dependencyMap[6]).Text, { children: title }), trailing];
   obj.children = items;
   const items1 = [callback2(closure_4, obj), ];
-  const obj1 = { style: tmp.code };
+  obj = { style: tmp.code };
   if (null != chunks) {
-    const obj2 = { chunks, columns };
-    let tmp8 = callback(SecureFramesCodeGrid, obj2);
+    const obj1 = { chunks, columns };
+    let tmp8 = callback(SecureFramesCodeGrid, obj1);
   } else {
-    const obj3 = { style: tmp.loading };
-    tmp8 = callback(closure_3, obj3);
+    const obj2 = { style: tmp.loading };
+    tmp8 = callback(closure_3, obj2);
   }
-  obj1.children = tmp8;
-  items1[1] = callback(closure_4, obj1);
+  obj.children = tmp8;
+  items1[1] = callback(closure_4, obj);
   obj.children = items1;
   return callback2(closure_7, obj);
 };

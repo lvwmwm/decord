@@ -1,10 +1,10 @@
-// Module ID: 9187
-// Function ID: 71967
+// Module ID: 9191
+// Function ID: 71979
 // Name: OneTimeLoginForgotPasswordConfirmAlertModal
 // Dependencies: []
 // Exports: default
 
-// Module 9187 (OneTimeLoginForgotPasswordConfirmAlertModal)
+// Module 9191 (OneTimeLoginForgotPasswordConfirmAlertModal)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/auth/native/components/OneTimeLoginForgotPasswordConfirmAlertModal.tsx");

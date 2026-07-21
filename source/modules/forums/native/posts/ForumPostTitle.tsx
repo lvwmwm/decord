@@ -1,10 +1,10 @@
-// Module ID: 11123
-// Function ID: 86576
+// Module ID: 11129
+// Function ID: 86599
 // Name: ForumPostTitle
 // Dependencies: []
 // Exports: default
 
-// Module 11123 (ForumPostTitle)
+// Module 11129 (ForumPostTitle)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 let closure_3 = arg1(dependencyMap[2]).createStyles({ title: { marginBottom: 6 } });

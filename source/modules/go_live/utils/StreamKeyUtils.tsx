@@ -1,22 +1,21 @@
-// Module ID: 4186
-// Function ID: 35979
+// Module ID: 4190
+// Function ID: 36027
 // Name: isStreamKey
 // Dependencies: [0, 0, 0]
 // Exports: decodeStreamKey, encodeStreamKey, isStreamKey
 
-// Module 4186 (isStreamKey)
-import closure_0 from "result";
-import { StreamTypes } from "result";
-import result from "result";
+// Module 4190 (isStreamKey)
+import __exportStarResult1 from "__exportStarResult1";
+import { StreamTypes } from "__exportStarResult1";
 
-result = result.fileFinishedImporting("modules/go_live/utils/StreamKeyUtils.tsx");
+const result = require("__exportStarResult1").fileFinishedImporting("modules/go_live/utils/StreamKeyUtils.tsx");
 
-export const isStreamKey = function isStreamKey(closure_28) {
-  let tmp = null != closure_28;
+export const isStreamKey = function isStreamKey(closure_29) {
+  let tmp = null != closure_29;
   if (tmp) {
-    let startsWithResult = closure_28.startsWith(StreamTypes.GUILD);
+    let startsWithResult = closure_29.startsWith(StreamTypes.GUILD);
     if (!startsWithResult) {
-      startsWithResult = closure_28.startsWith(StreamTypes.CALL);
+      startsWithResult = closure_29.startsWith(StreamTypes.CALL);
     }
     tmp = startsWithResult;
   }

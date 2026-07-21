@@ -1,10 +1,10 @@
-// Module ID: 6237
-// Function ID: 50229
+// Module ID: 6239
+// Function ID: 50272
 // Name: GuidelinesIllocon
-// Dependencies: [33554456, 1946157056, 33, 5231]
+// Dependencies: [33554456, 1946157056, 33, 5233]
 // Exports: GuidelinesIllocon
 
-// Module 6237 (GuidelinesIllocon)
+// Module 6239 (GuidelinesIllocon)
 import preload from "preload";
 
 const jsx = require(dependencyMap[0]).jsx;

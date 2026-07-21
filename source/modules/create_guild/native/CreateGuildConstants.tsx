@@ -1,9 +1,9 @@
-// Module ID: 9215
-// Function ID: 72074
+// Module ID: 9219
+// Function ID: 72086
 // Name: NUXGuildTemplatesAnalytics
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 9215 (NUXGuildTemplatesAnalytics)
+// Module 9219 (NUXGuildTemplatesAnalytics)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("modules/create_guild/native/CreateGuildConstants.tsx");
 

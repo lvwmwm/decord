@@ -1,9 +1,9 @@
-// Module ID: 16396
-// Function ID: 126672
+// Module ID: 16403
+// Function ID: 126703
 // Name: AVErrorStreamSoundshareFailedDefinition
 // Dependencies: []
 
-// Module 16396 (AVErrorStreamSoundshareFailedDefinition)
+// Module 16403 (AVErrorStreamSoundshareFailedDefinition)
 let closure_2 = importDefault(dependencyMap[0]);
 let closure_3 = importDefault(dependencyMap[1]);
 const MediaEngineHookTypes = arg1(dependencyMap[2]).MediaEngineHookTypes;

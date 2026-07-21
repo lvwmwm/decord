@@ -1,10 +1,10 @@
-// Module ID: 8605
-// Function ID: 68269
+// Module ID: 8609
+// Function ID: 68281
 // Name: RiotGamesNeutralIcon
 // Dependencies: []
 // Exports: RiotGamesNeutralIcon
 
-// Module 8605 (RiotGamesNeutralIcon)
+// Module 8609 (RiotGamesNeutralIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/RiotGamesNeutralIcon.tsx");

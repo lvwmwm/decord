@@ -1,9 +1,9 @@
-// Module ID: 7841
-// Function ID: 62531
+// Module ID: 7845
+// Function ID: 62543
 // Name: InlineUploader
 // Dependencies: []
 
-// Module 7841 (InlineUploader)
+// Module 7845 (InlineUploader)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 let closure_5 = importDefault(dependencyMap[2]);

@@ -1,10 +1,10 @@
-// Module ID: 10700
-// Function ID: 83328
+// Module ID: 10706
+// Function ID: 83351
 // Name: VoiceXIcon
 // Dependencies: []
 // Exports: VoiceXIcon
 
-// Module 10700 (VoiceXIcon)
+// Module 10706 (VoiceXIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/VoiceXIcon.tsx");

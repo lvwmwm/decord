@@ -1,10 +1,10 @@
-// Module ID: 10130
-// Function ID: 78411
+// Module ID: 10136
+// Function ID: 78429
 // Name: ConfirmBlockUserAlert
 // Dependencies: []
 // Exports: default
 
-// Module 10130 (ConfirmBlockUserAlert)
+// Module 10136 (ConfirmBlockUserAlert)
 let closure_3 = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 let closure_5 = importDefault(dependencyMap[2]);
@@ -84,7 +84,7 @@ export default function ConfirmBlockUserAlert(userId) {
       return callback(userId(onCancel[14]).Button, obj);
     }
   };
-  obj = { Promise: "text-sm/normal", marginTop: "text-link", flags: true, style: tmp.header };
+  obj = { "Null": "RTC_CONNECTION_LOSS_RATE", "Null": "handleJoinThreadVoice", "Null": "toString", style: tmp.header };
   const intl = arg1(dependencyMap[15]).intl;
   obj.children = intl.format(arg1(dependencyMap[15]).t.x5pOn9, { name });
   const items5 = [callback(arg1(dependencyMap[16]).Text, obj), , ];

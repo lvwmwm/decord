@@ -1,10 +1,10 @@
-// Module ID: 11028
-// Function ID: 85892
+// Module ID: 11033
+// Function ID: 85913
 // Name: AppealIngestionActivitySummary
 // Dependencies: []
 // Exports: default
 
-// Module 11028 (AppealIngestionActivitySummary)
+// Module 11033 (AppealIngestionActivitySummary)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 const jsx = arg1(dependencyMap[2]).jsx;

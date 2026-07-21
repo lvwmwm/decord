@@ -1,8 +1,8 @@
-// Module ID: 13776
-// Function ID: 104160
+// Module ID: 13783
+// Function ID: 104183
 // Dependencies: []
 
-// Module 13776
+// Module 13783
 const importAllResult = importAll(dependencyMap[0]);
 const QuestsExperimentLocations = arg1(dependencyMap[1]).QuestsExperimentLocations;
 const jsx = arg1(dependencyMap[2]).jsx;
@@ -35,7 +35,7 @@ const memoResult = importAllResult.memo(function BountiesModal(bountyId) {
     bountyId(verticalScrollEnabled[6]).lockOrientation("PORTRAIT", true);
     return bountyId(verticalScrollEnabled[6]).restoreDefaultOrientation;
   }, []);
-  obj = { padding: null, end: null, screens: memo, viewStyle: { backgroundColor: "#000000" } };
+  obj = { "Bool(true)": null, "Bool(true)": null, screens: memo, viewStyle: { backgroundColor: "#000000" } };
   return jsx(arg1(dependencyMap[7]).Modal, obj);
 });
 const result = arg1(dependencyMap[8]).fileFinishedImporting("modules/quests/native/BountiesModal/BountiesModal.tsx");

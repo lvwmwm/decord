@@ -1,9 +1,9 @@
-// Module ID: 14227
-// Function ID: 107546
+// Module ID: 14234
+// Function ID: 107569
 // Name: NitroUpsellButton
 // Dependencies: []
 
-// Module 14227 (NitroUpsellButton)
+// Module 14234 (NitroUpsellButton)
 function NitroUpsellButton() {
   const tmp = callback2();
   const arg1 = tmp;
@@ -47,7 +47,7 @@ const Gradients = arg1(dependencyMap[6]).Gradients;
 const tmp2 = arg1(dependencyMap[4]);
 ({ jsx: closure_10, Fragment: closure_11, jsxs: closure_12 } = arg1(dependencyMap[7]));
 let obj1 = arg1(dependencyMap[8]);
-let obj = { nitroWheel: { aze: false, azj: false }, upsellButtonContainer: { "Bool(true)": false, "Bool(true)": false, "Bool(true)": false, "Bool(true)": false, "Bool(true)": null } };
+let obj = { nitroWheel: { bhk: "<string:1027735553>", bic: "<string:4143972873>" }, upsellButtonContainer: { -9223372036854775808: "<string:1092681729>", -9223372036854775808: "Detailed Times", 9223372036854775807: "<string:1059541281>", 9223372036854775807: "<string:29464129>", -9223372036854775808: "<string:1091637760>" } };
 obj = { borderRadius: importDefault(dependencyMap[9]).radii.xl };
 obj.linearGradient = obj;
 obj1 = { color: importDefault(dependencyMap[9]).colors.WHITE };

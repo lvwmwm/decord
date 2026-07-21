@@ -1,7 +1,7 @@
 // Module ID: 83
 // Function ID: 1493
 // Name: parseLength
-// Dependencies: [17]
+// Dependencies: []
 
 // Module 83 (parseLength)
 function parseLength(arg0) {
@@ -39,7 +39,7 @@ arg5.default = function processBoxShadow(str) {
         const found = mapped.filter((arg0) => "" !== arg0);
         const iter = found[Symbol.iterator]();
         while (iter !== undefined) {
-          let obj = { 1650222282: false, 114185812: true };
+          let obj = { 0: -536870861, 0: -299892737 };
           let tmp22;
           let flag = false;
           let num = 0;
@@ -155,7 +155,7 @@ arg5.default = function processBoxShadow(str) {
     const nextResult = iter.next();
     while (iter !== undefined) {
       let tmp47 = nextResult;
-      let obj = { 1650222282: false, 114185812: true };
+      let obj = { 0: -536870861, 0: -299892737 };
       let tmp48 = nextResult;
       for (const key10025 in nextResult) {
         let tmp49 = key10025;

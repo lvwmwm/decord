@@ -1,10 +1,10 @@
-// Module ID: 7605
-// Function ID: 60976
+// Module ID: 7609
+// Function ID: 60988
 // Name: useUserIsTeen
 // Dependencies: []
 // Exports: useUserIsTeen
 
-// Module 7605 (useUserIsTeen)
+// Module 7609 (useUserIsTeen)
 let closure_2 = importDefault(dependencyMap[0]);
 const result = arg1(dependencyMap[2]).fileFinishedImporting("modules/self_mod/hooks/useUserIsTeen.tsx");
 

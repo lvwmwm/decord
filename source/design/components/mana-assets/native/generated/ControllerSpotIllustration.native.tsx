@@ -1,10 +1,10 @@
-// Module ID: 5965
-// Function ID: 49821
+// Module ID: 5967
+// Function ID: 49864
 // Name: ControllerSpotIllustration
 // Dependencies: []
 // Exports: ControllerSpotIllustration
 
-// Module 5965 (ControllerSpotIllustration)
+// Module 5967 (ControllerSpotIllustration)
 const jsx = require(dependencyMap[0]).jsx;
 const _module = require(dependencyMap[3]);
 const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/ControllerSpotIllustration.native.tsx");

@@ -1,10 +1,10 @@
-// Module ID: 4353
-// Function ID: 38597
+// Module ID: 4357
+// Function ID: 38645
 // Name: useDisplayNameStyles
 // Dependencies: []
 // Exports: default
 
-// Module 4353 (useDisplayNameStyles)
+// Module 4357 (useDisplayNameStyles)
 const useContext = require(dependencyMap[0]).useContext;
 let closure_4 = importDefault(dependencyMap[1]);
 let closure_5 = importDefault(dependencyMap[2]);

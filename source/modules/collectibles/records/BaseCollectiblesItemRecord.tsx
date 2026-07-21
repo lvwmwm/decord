@@ -58,4 +58,4 @@ export default (arg0) => {
     }
   ];
   return callback(BaseCollectiblesItemRecord, null, items);
-}(require("keys"));
+}(require("result2"));

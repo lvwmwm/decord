@@ -1,10 +1,10 @@
-// Module ID: 14225
-// Function ID: 107542
+// Module ID: 14232
+// Function ID: 107565
 // Name: SettingsItemAppIcon
 // Dependencies: []
 // Exports: default
 
-// Module 14225 (SettingsItemAppIcon)
+// Module 14232 (SettingsItemAppIcon)
 importAll(dependencyMap[0]);
 const getIconById = arg1(dependencyMap[1]).getIconById;
 const jsx = arg1(dependencyMap[2]).jsx;

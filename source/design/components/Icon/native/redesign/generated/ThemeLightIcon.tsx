@@ -1,10 +1,10 @@
-// Module ID: 14025
-// Function ID: 106691
+// Module ID: 14032
+// Function ID: 106714
 // Name: ThemeLightIcon
 // Dependencies: []
 // Exports: ThemeLightIcon
 
-// Module 14025 (ThemeLightIcon)
+// Module 14032 (ThemeLightIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/ThemeLightIcon.tsx");

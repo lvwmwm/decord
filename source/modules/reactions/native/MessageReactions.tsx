@@ -1,10 +1,10 @@
-// Module ID: 9415
-// Function ID: 73271
+// Module ID: 9419
+// Function ID: 73285
 // Name: MessageReactions
 // Dependencies: []
 // Exports: default
 
-// Module 9415 (MessageReactions)
+// Module 9419 (MessageReactions)
 let closure_3 = importAll(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 const jsx = arg1(dependencyMap[2]).jsx;
@@ -20,7 +20,7 @@ export default function MessageReactions(emoji) {
   if (isSelectedBurst === undefined) {
     isSelectedBurst = false;
   }
-  let obj = { paddingVertical: false, paddingHorizontal: null, paddingTop: "", paddingBottom: null, alignItems: null };
+  let obj = {};
   Object.setPrototypeOf(null);
   const merged = Object.assign(emoji, obj);
   let arg1;

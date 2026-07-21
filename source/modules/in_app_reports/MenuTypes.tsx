@@ -1,9 +1,9 @@
-// Module ID: 7590
-// Function ID: 60812
+// Module ID: 7594
+// Function ID: 60824
 // Name: ReportNames
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 7590 (ReportNames)
+// Module 7594 (ReportNames)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("modules/in_app_reports/MenuTypes.tsx");
 

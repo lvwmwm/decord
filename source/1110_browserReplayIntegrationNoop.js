@@ -40,14 +40,14 @@ export const browserReplayIntegration = function browserReplayIntegration() {
     } else {
       const _Object = Object;
       const obj = {};
-      const items = [];
+      const items = [null];
       let mask = first.mask;
       const merged = Object.assign({}, first);
       if (!mask) {
         mask = [];
       }
       obj.mask = items.concat(closure_2(mask));
-      const items1 = [];
+      const items1 = [null];
       let unmask = first.unmask;
       if (!unmask) {
         unmask = [];

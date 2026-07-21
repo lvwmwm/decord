@@ -1,10 +1,10 @@
-// Module ID: 14847
-// Function ID: 111895
+// Module ID: 14854
+// Function ID: 111919
 // Name: RedesignVoiceUserSummary
 // Dependencies: []
 // Exports: default
 
-// Module 14847 (RedesignVoiceUserSummary)
+// Module 14854 (RedesignVoiceUserSummary)
 let closure_3 = importAll(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 const jsx = arg1(dependencyMap[2]).jsx;

@@ -1,9 +1,9 @@
-// Module ID: 10330
-// Function ID: 79768
+// Module ID: 10336
+// Function ID: 79787
 // Name: useFavoritesNotificationStore
 // Dependencies: []
 
-// Module 10330 (useFavoritesNotificationStore)
+// Module 10336 (useFavoritesNotificationStore)
 const _module = require(dependencyMap[0]);
 const _module1 = require(dependencyMap[2]);
 const result = _module1.fileFinishedImporting("modules/favorites/FavoritesNotificationStore.tsx");

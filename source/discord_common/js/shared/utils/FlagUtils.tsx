@@ -1,7 +1,7 @@
 // Module ID: 1360
 // Function ID: 16278
 // Name: hasFlag
-// Dependencies: []
+// Dependencies: [284214097]
 // Exports: hasAnyFlag, removeFlags, setFlag, toggleFlag
 
 // Module 1360 (hasFlag)

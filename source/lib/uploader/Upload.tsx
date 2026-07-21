@@ -1,16 +1,15 @@
-// Module ID: 4661
-// Function ID: 40417
+// Module ID: 4663
+// Function ID: 40458
 // Name: _isNativeReflectConstruct
-// Dependencies: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+// Dependencies: [0, 0, 0, 0, 0, 0, 0, 0, 4294967295, 4294967295, 4294967295]
 // Exports: isResolvedUpload
 
-// Module 4661 (_isNativeReflectConstruct)
-import closure_4 from "result";
-import closure_5 from "result";
-import closure_6 from "result";
-import closure_7 from "result";
-import closure_8 from "result";
-import result from "result";
+// Module 4663 (_isNativeReflectConstruct)
+import __exportStarResult1 from "__exportStarResult1";
+import closure_5 from "__exportStarResult1";
+import closure_6 from "__exportStarResult1";
+import closure_7 from "__exportStarResult1";
+import closure_8 from "__exportStarResult1";
 
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
@@ -22,13 +21,11 @@ function _isNativeReflectConstruct() {
   const result = _isNativeReflectConstruct();
 }
 const obj = { REACT_NATIVE: 0, [0]: "REACT_NATIVE", WEB: 1, [1]: "WEB" };
-result = result.fileFinishedImporting("lib/uploader/Upload.tsx");
-
-export default (EventEmitter) => {
+const tmp2 = (EventEmitter) => {
   class Upload {
     constructor(arg0) {
       self = this;
-      tmp = closure_4(this, Upload);
+      tmp = __exportStarResult1(this, Upload);
       obj = closure_7(Upload);
       tmp2 = closure_6;
       if (closure_10()) {
@@ -108,7 +105,10 @@ export default (EventEmitter) => {
   };
   items[1] = obj;
   return callback(Upload, items);
-}(require("result").EventEmitter);
+}(arg1(dependencyMap[9]).EventEmitter);
+const result = arg1(dependencyMap[10]).fileFinishedImporting("lib/uploader/Upload.tsx");
+
+export default tmp2;
 export const UploadPlatform = obj;
 export const isResolvedUpload = function isResolvedUpload(file) {
   return undefined !== file.isVideo && undefined !== file.isImage;

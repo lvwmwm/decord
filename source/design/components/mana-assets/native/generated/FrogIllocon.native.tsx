@@ -1,10 +1,10 @@
-// Module ID: 6061
-// Function ID: 49965
+// Module ID: 6063
+// Function ID: 50008
 // Name: FrogIllocon
 // Dependencies: []
 // Exports: FrogIllocon
 
-// Module 6061 (FrogIllocon)
+// Module 6063 (FrogIllocon)
 const jsx = require(dependencyMap[0]).jsx;
 const _module = require(dependencyMap[3]);
 const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/FrogIllocon.native.tsx");

@@ -1,17 +1,17 @@
-// Module ID: 9008
-// Function ID: 70888
+// Module ID: 9012
+// Function ID: 70900
 // Name: BotPermissions
 // Dependencies: []
 // Exports: default
 
-// Module 9008 (BotPermissions)
+// Module 9012 (BotPermissions)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 const View = arg1(dependencyMap[2]).View;
 ({ jsx: closure_6, jsxs: closure_7 } = arg1(dependencyMap[3]));
 let obj = arg1(dependencyMap[4]);
 obj = {};
-obj = { headerGuildIcon: 85.5, VOICE_CHANNEL_EFFECT_SEND: null, presenceCount: "07edfc27bc58db41fd8c1993a9ed69f0", paddingTop: "xbox_app_phone", descriptionEllipsis: "png", orbsIconAndroid: true, borderRadius: importDefault(dependencyMap[5]).radii.sm, backgroundColor: importDefault(dependencyMap[5]).colors.ICON_FEEDBACK_CRITICAL };
+obj = { borderRadius: importDefault(dependencyMap[5]).radii.sm, backgroundColor: importDefault(dependencyMap[5]).colors.ICON_FEEDBACK_CRITICAL };
 obj.disabledPermissionIcon = obj;
 let closure_8 = obj.createStyles(obj);
 const tmp2 = arg1(dependencyMap[3]);
@@ -59,15 +59,15 @@ export default function BotPermissions(guild) {
   const mapped1 = found2.map((arg0) => {
     let obj = permissions(onPermissionsChange[8]);
     const permissionName = obj.getPermissionName(arg0);
-    obj = { header: null, icon: 8 };
-    obj = { style: obj.disabledPermissionIcon, children: callback2(permissions(onPermissionsChange[11]).XSmallIcon, { flexDirection: null, alignItems: "4550be26e4ce88ab0a8f2d917df660a6" }) };
+    obj = { messageId: null, options: 8 };
+    obj = { style: obj.disabledPermissionIcon, children: callback2(permissions(onPermissionsChange[11]).XSmallIcon, {}) };
     const items = [callback2(closure_5, obj), callback2(permissions(onPermissionsChange[12]).Text, { variant: "text-md/medium", children: permissionName })];
     obj.children = items;
     return callback3(permissions(onPermissionsChange[10]).Stack, obj, String(arg0));
   });
   let obj = { spacing: 16 };
   obj = {};
-  obj = { INTEGRATION_CREATE: true, ConstraintReasonCode: true };
+  obj = {};
   const intl = arg1(dependencyMap[13]).intl;
   obj.children = intl.format(arg1(dependencyMap[13]).t.sOaT2j, { applicationName: application.name, guildName: guild.name });
   const items1 = [callback2(arg1(dependencyMap[12]).Text, obj), callback2(arg1(dependencyMap[10]).Stack, { spacing: 12, children: mapped })];
@@ -76,7 +76,7 @@ export default function BotPermissions(guild) {
   let tmp5 = null;
   if (mapped1.length > 0) {
     const obj2 = {};
-    const obj3 = { INTEGRATION_CREATE: true, ConstraintReasonCode: true };
+    const obj3 = {};
     const intl2 = arg1(dependencyMap[13]).intl;
     const obj4 = { applicationName: application.name };
     obj3.children = intl2.format(arg1(dependencyMap[13]).t.fsOkF4, obj4);

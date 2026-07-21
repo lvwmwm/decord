@@ -1,16 +1,16 @@
-// Module ID: 11285
-// Function ID: 87830
+// Module ID: 11291
+// Function ID: 87853
 // Name: styles
 // Dependencies: []
 // Exports: default
 
-// Module 11285 (styles)
+// Module 11291 (styles)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 const jsx = arg1(dependencyMap[2]).jsx;
 let obj = arg1(dependencyMap[3]);
 obj = {};
-obj = { backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_MOD_SUBTLE, borderRadius: importDefault(dependencyMap[4]).radii.round };
+obj = { "Null": null, "Null": null, backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_MOD_SUBTLE, borderRadius: importDefault(dependencyMap[4]).radii.round };
 obj.iconWrapper = obj;
 const styles = obj.createStyles(obj);
 const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/app_launcher/native/base_components/AppLauncherOptionIcon.tsx");

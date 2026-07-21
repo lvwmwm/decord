@@ -1,18 +1,18 @@
-// Module ID: 11032
-// Function ID: 85907
+// Module ID: 11037
+// Function ID: 85928
 // Name: AppealIngestionFreeTextAppealReasonActionSheet
 // Dependencies: []
 // Exports: default
 
-// Module 11032 (AppealIngestionFreeTextAppealReasonActionSheet)
+// Module 11037 (AppealIngestionFreeTextAppealReasonActionSheet)
 let closure_2 = importDefault(dependencyMap[0]);
 let closure_3 = importAll(dependencyMap[1]);
 const View = arg1(dependencyMap[2]).View;
 let closure_5 = importDefault(dependencyMap[3]);
 ({ jsx: closure_6, jsxs: closure_7 } = arg1(dependencyMap[4]));
 let obj = arg1(dependencyMap[5]);
-obj = { footerText: { textAlign: "center" }, textArea: { visible: 24, transparent: 24 } };
-obj = { lineHeight: null, textAlign: null, marginTop: null, backgroundColor: importDefault(dependencyMap[6]).colors.BORDER_SUBTLE };
+obj = { footerText: { textAlign: "center" }, textArea: {} };
+obj = { flexDirection: null, alignItems: null, justifyContent: null, backgroundColor: importDefault(dependencyMap[6]).colors.BORDER_SUBTLE };
 obj.separator = obj;
 obj.closeIcon = {};
 let closure_8 = obj.createStyles(obj);

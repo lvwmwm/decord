@@ -1,9 +1,9 @@
-// Module ID: 10405
-// Function ID: 80172
+// Module ID: 10411
+// Function ID: 80195
 // Name: IgnoredInformationTable
 // Dependencies: []
 
-// Module 10405 (IgnoredInformationTable)
+// Module 10411 (IgnoredInformationTable)
 function IgnoredInformationTable() {
   const obj = {
     hasIcons: true,
@@ -32,7 +32,7 @@ const tmp2 = arg1(dependencyMap[6]);
 const tmp3 = arg1(dependencyMap[7]);
 ({ jsx: closure_13, jsxs: closure_14 } = arg1(dependencyMap[8]));
 let obj1 = arg1(dependencyMap[9]);
-let obj = { button: {} };
+let obj = { button: { accessibilityRole: null, bm: null } };
 obj = { marginBottom: importDefault(dependencyMap[10]).space.PX_16 };
 obj.tableContainer = obj;
 obj1 = { marginBottom: importDefault(dependencyMap[10]).space.PX_24 };
@@ -44,9 +44,9 @@ const obj2 = { textAlign: "center", marginBottom: importDefault(dependencyMap[10
 obj.container = { flex: 1, paddingHorizontal: importDefault(dependencyMap[10]).space.PX_16, paddingTop: importDefault(dependencyMap[10]).space.PX_16 };
 const obj3 = { flex: 1, paddingHorizontal: importDefault(dependencyMap[10]).space.PX_16, paddingTop: importDefault(dependencyMap[10]).space.PX_16 };
 obj.header = { marginBottom: importDefault(dependencyMap[10]).space.PX_16 };
-const obj5 = { rowGap: "withFriendRequestsIncoming", padding: "NOTIFICATION_SETTINGS_MODAL_OPEN", marginBottom: importDefault(dependencyMap[10]).space.PX_16 };
+const obj5 = { 0: "content", 9223372036854775807: "a", marginBottom: importDefault(dependencyMap[10]).space.PX_16 };
 obj.avatarContainer = obj5;
-const obj6 = { justifyContent: "text-lg/normal", paddingRight: null, height: "mobile-text-heading-primary", padding: importDefault(dependencyMap[10]).space.PX_4, backgroundColor: importDefault(dependencyMap[10]).colors.BACKGROUND_SURFACE_HIGH, borderRadius: importDefault(dependencyMap[10]).radii.round };
+const obj6 = { "Null": "text-lg/normal", "Null": null, "Null": "mobile-text-heading-primary", padding: importDefault(dependencyMap[10]).space.PX_4, backgroundColor: importDefault(dependencyMap[10]).colors.BACKGROUND_SURFACE_HIGH, borderRadius: importDefault(dependencyMap[10]).radii.round };
 obj.avatarIconContainer = obj6;
 obj.avatar = { alignSelf: "center" };
 const obj4 = { marginBottom: importDefault(dependencyMap[10]).space.PX_16 };

@@ -1,10 +1,10 @@
-// Module ID: 10718
-// Function ID: 83388
+// Module ID: 10724
+// Function ID: 83411
 // Name: MicrophoneIcon
 // Dependencies: []
 // Exports: MicrophoneIcon
 
-// Module 10718 (MicrophoneIcon)
+// Module 10724 (MicrophoneIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/MicrophoneIcon.tsx");

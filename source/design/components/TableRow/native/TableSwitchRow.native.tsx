@@ -1,10 +1,10 @@
-// Module ID: 5500
-// Function ID: 46842
+// Module ID: 5502
+// Function ID: 46884
 // Name: TableSwitchRow
 // Dependencies: []
 // Exports: TableSwitchRow
 
-// Module 5500 (TableSwitchRow)
+// Module 5502 (TableSwitchRow)
 let closure_2 = importDefault(dependencyMap[0]);
 let closure_3 = importAll(dependencyMap[1]);
 const View = arg1(dependencyMap[2]).View;
@@ -26,7 +26,7 @@ export const TableSwitchRow = function TableSwitchRow(value) {
     disabled = false;
   }
   const variant = value.variant;
-  let obj = { hasElevatedPermissions: null, STRANGER_DANGER: 0.6, GUILD_ROLE_CONNECTIONS_UNASSIGN: "BounceOutRight", DEFAULT_DICE_SIDES: null, eligibleDefault: 0.6, GameDiversityTier2SmallBadge: "BounceOutLeft", videoContentHeaderWrapper: null, badgeOverrideText: 0.6 };
+  let obj = {};
   Object.setPrototypeOf(null);
   const merged = Object.assign(value, obj);
   let callback;

@@ -1,17 +1,18 @@
-// Module ID: 11416
-// Function ID: 88866
+// Module ID: 11423
+// Function ID: 88890
 // Name: ChatInputParser
-// Dependencies: []
+// Dependencies: [0]
 // Exports: convertToNativeStyle
 
-// Module 11416 (ChatInputParser)
-let closure_2 = importDefault(dependencyMap[0]);
+// Module 11423 (ChatInputParser)
+import __exportStarResult1 from "__exportStarResult1";
+
 let closure_3 = importDefault(dependencyMap[1]);
 const processColor = arg1(dependencyMap[2]).processColor;
 const tmp2 = () => {
   class ChatInputParser {
     constructor() {
-      tmp = closure_2(this, ChatInputParser);
+      tmp = __exportStarResult1(this, ChatInputParser);
       this.rules = {};
       return;
     }
@@ -73,7 +74,7 @@ export const convertToNativeStyle = (color) => {
   let backgroundColor;
   let borderRadius;
   ({ backgroundColor, borderRadius } = color);
-  let obj = {};
+  let obj = { "Null": "spring", "Null": "linear", "Null": "easeInEaseOut" };
   Object.setPrototypeOf(null);
   const merged = Object.assign(color, obj);
   let tmp3 = null;

@@ -1,9 +1,9 @@
-// Module ID: 5970
-// Function ID: 49829
+// Module ID: 5972
+// Function ID: 49872
 // Name: metadata
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 5970 (metadata)
+// Module 5972 (metadata)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/CrosshairIllocon-2x.png.js");
 

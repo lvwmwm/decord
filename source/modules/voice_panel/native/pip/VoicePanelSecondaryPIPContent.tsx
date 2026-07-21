@@ -1,10 +1,10 @@
-// Module ID: 15759
-// Function ID: 120508
+// Module ID: 15766
+// Function ID: 120532
 // Name: VoicePanelSecondaryPIPContent
 // Dependencies: []
 // Exports: default
 
-// Module 15759 (VoicePanelSecondaryPIPContent)
+// Module 15766 (VoicePanelSecondaryPIPContent)
 let closure_3 = importAll(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 let closure_5 = importDefault(dependencyMap[2]);
@@ -77,10 +77,7 @@ export default function VoicePanelSecondaryPIPContent() {
   const items3 = [width, height];
   const stateFromStores = obj3.useStateFromStores(items2, () => channel.getChannel(connectedEmbeddedActivityChannelId));
   let tmp6 = null != connectedEmbeddedActivity;
-  const memo = React.useMemo(() => {
-    const obj = { y: "isArray", isArray: "isArray", flex: "isArray", borderRadius: "center", y: "center", isArray: "2026-04-you-nav-floating", width, height, marginLeft: -1 * size(connectedEmbeddedActivityChannelId[13])(width / 2), marginTop: -1 * size(connectedEmbeddedActivityChannelId[13])(height / 2) };
-    return obj;
-  }, items3);
+  const memo = React.useMemo(() => ({ width, height, marginLeft: -1 * size(connectedEmbeddedActivityChannelId[13])(width / 2), marginTop: -1 * size(connectedEmbeddedActivityChannelId[13])(height / 2) }), items3);
   if (tmp6) {
     tmp6 = !importDefault(dependencyMap[14])(connectedEmbeddedActivityChannelId);
   }

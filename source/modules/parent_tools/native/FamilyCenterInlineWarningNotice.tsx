@@ -1,10 +1,10 @@
-// Module ID: 13647
-// Function ID: 103405
+// Module ID: 13654
+// Function ID: 103428
 // Name: FamilyCenterInlineWarningNotice
 // Dependencies: []
 // Exports: default
 
-// Module 13647 (FamilyCenterInlineWarningNotice)
+// Module 13654 (FamilyCenterInlineWarningNotice)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 ({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[2]));

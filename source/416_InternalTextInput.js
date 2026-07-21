@@ -64,7 +64,7 @@ function InternalTextInput(props) {
     first = tmp[0];
     const setLastNativeText = tmp[1];
     const editable = setLastNativeText;
-    const tmp4 = hitSlop(callback4({ selection: { 1726238916: false, 607091733: false }, mostRecentEventCount }), 2);
+    const tmp4 = hitSlop(callback4({ selection: { 0: false, 0: false }, mostRecentEventCount }), 2);
     const setLastNativeSelection = tmp4[1];
     const hitSlop = setLastNativeSelection;
     const selection2 = tmp4[0].selection;
@@ -159,7 +159,7 @@ function InternalTextInput(props) {
     first = tmp[0];
     const setLastNativeText = tmp[1];
     const editable = setLastNativeText;
-    const tmp4 = hitSlop(callback4({ selection: { 1726238916: false, 607091733: false }, mostRecentEventCount }), 2);
+    const tmp4 = hitSlop(callback4({ selection: { 0: false, 0: false }, mostRecentEventCount }), 2);
     const setLastNativeSelection = tmp4[1];
     const hitSlop = setLastNativeSelection;
     const selection2 = tmp4[0].selection;
@@ -539,9 +539,9 @@ function InternalTextInput(props) {
   children = <closure_5 {...Object.assign({ ref: tmp15 }, tmp6, obj4, tmp20, obj6)} />;
   return jsx(importDefault(dependencyMap[13]), { value: true, children });
 }
-let closure_2 = [true, true, true, true, true, true, true, true, true, true, true, true];
-let closure_3 = ["isArray", null];
-let closure_4 = [];
+let closure_2 = ["accessibilityServiceChanged", "accessibilityServiceDidChange", "*", "\u00D7", "annuler", "croix noire", "multiplication", "multiplier", "non", "signe multiplier", "x", "<string:3353214977>"];
+let closure_3 = [false, false];
+let closure_4 = ["x", "window", "Button", "y", "isArray", "getCurrentUser", "now", "r", "isArray", "body", "x", "now", "options"];
 let closure_7 = importDefault(dependencyMap[0]);
 let closure_8 = importDefault(dependencyMap[1]);
 let closure_9 = importAll(dependencyMap[2]);
@@ -549,7 +549,7 @@ let closure_9 = importAll(dependencyMap[2]);
 const jsx = arg1(dependencyMap[3]).jsx;
 let closure_5 = arg1(dependencyMap[4]).default;
 const Commands = arg1(dependencyMap[4]).Commands;
-let closure_16 = { "Null": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010891343279156388, "Null": 638804408114141300000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, "Null": 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001124773536172935, "Null": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000008435802117404847, "Null": 4769338892706619600000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, "Null": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000017276524428576925, "Null": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000014774461553601004 };
+let closure_16 = {};
 let closure_17 = {};
 let closure_18 = {};
 class TextInput {
@@ -607,6 +607,6 @@ let obj = { currentlyFocusedInput: importDefault(dependencyMap[5]).currentlyFocu
 TextInput.State = obj;
 const tmp2 = arg1(dependencyMap[2]);
 obj = importDefault(dependencyMap[14]).create({ multilineDefault: { paddingTop: 5 } });
-let closure_19 = { "Bool(false)": "<string:2572484610>", "Bool(false)": "<string:1833947651>", "Bool(false)": "<string:1778620876>", "Bool(false)": "<string:385947321>" };
+let closure_19 = { minWidth: "construct", minHeight: "isArray", borderRadius: "isArray", marginEnd: "isArray" };
 
 export default TextInput;

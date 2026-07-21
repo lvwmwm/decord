@@ -1,12 +1,13 @@
-// Module ID: 11573
-// Function ID: 89980
+// Module ID: 11580
+// Function ID: 90003
 // Name: useGetExpiringGuildPowerups
-// Dependencies: []
+// Dependencies: [0, 0]
 // Exports: default
 
-// Module 11573 (useGetExpiringGuildPowerups)
-let closure_2 = importAll(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
+// Module 11580 (useGetExpiringGuildPowerups)
+import __exportStarResult1 from "__exportStarResult1";
+import closure_3 from "__exportStarResult1";
+
 const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/premium/powerups/hooks/useGetExpiringGuildPowerups.tsx");
 
 export default function useGetExpiringGuildPowerups(arg0) {

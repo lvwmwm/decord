@@ -1,8 +1,8 @@
-// Module ID: 15940
-// Function ID: 122280
+// Module ID: 15947
+// Function ID: 122306
 // Dependencies: []
 
-// Module 15940
+// Module 15947
 let closure_2 = importDefault(dependencyMap[0]);
 const importAllResult = importAll(dependencyMap[1]);
 const jsx = arg1(dependencyMap[2]).jsx;

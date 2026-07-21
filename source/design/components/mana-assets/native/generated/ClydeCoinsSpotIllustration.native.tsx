@@ -1,10 +1,10 @@
-// Module ID: 5945
-// Function ID: 49791
+// Module ID: 5947
+// Function ID: 49834
 // Name: ClydeCoinsSpotIllustration
 // Dependencies: []
 // Exports: ClydeCoinsSpotIllustration
 
-// Module 5945 (ClydeCoinsSpotIllustration)
+// Module 5947 (ClydeCoinsSpotIllustration)
 const jsx = require(dependencyMap[0]).jsx;
 const _module = require(dependencyMap[3]);
 const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/ClydeCoinsSpotIllustration.native.tsx");

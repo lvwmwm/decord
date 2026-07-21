@@ -1,10 +1,10 @@
-// Module ID: 8925
-// Function ID: 70383
+// Module ID: 8929
+// Function ID: 70395
 // Name: CloseButton
 // Dependencies: []
 // Exports: default
 
-// Module 8925 (CloseButton)
+// Module 8929 (CloseButton)
 function CloseButton() {
   const obj = {
     source: importDefault(dependencyMap[5]),
@@ -48,7 +48,7 @@ export default function XboxLinkModal(locationStack) {
       headerRight: closure_7,
       headerStyle: twoWayLinkStyles.navHeader,
       headerTitle() {
-        return callback2(onClose(closure_2[9]).TwoWayLinkStepHeader, { "Null": "Lightbox Frame", "Null": "EdgeHTML" });
+        return callback2(onClose(closure_2[9]).TwoWayLinkStepHeader, {});
       },
       render() {
         return callback2(callback(closure_2[10]), {});

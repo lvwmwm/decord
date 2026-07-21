@@ -1,10 +1,10 @@
-// Module ID: 12311
-// Function ID: 94353
+// Module ID: 12318
+// Function ID: 94376
 // Name: getTierIcon
 // Dependencies: []
 // Exports: default
 
-// Module 12311 (getTierIcon)
+// Module 12318 (getTierIcon)
 function getTierIcon(theme, premiumTier) {
   if (null != premiumTier) {
     if (premiumTier.premiumTier !== closure_6.NONE) {
@@ -31,8 +31,8 @@ obj = { guildTierProgressCircle: {} };
 obj = { backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_SURFACE_HIGH, borderRadius: importDefault(dependencyMap[5]).radii.xxl };
 obj.guildTierBackground = obj;
 obj.guildTierNoneIcon = {};
-obj.guildTierIcon = { aze: false, azj: false };
-obj.guildTierName = { 1977447900: null, 8: null };
+obj.guildTierIcon = { bhk: "<string:1027735553>", bic: "<string:4143972873>" };
+obj.guildTierName = { label: null, DARK: null };
 let closure_9 = obj.createStyles(obj);
 const tmp5 = arg1(dependencyMap[3]);
 const result = arg1(dependencyMap[14]).fileFinishedImporting("modules/premium/native/BoostedGuildTierProgressCircle.tsx");
@@ -71,7 +71,7 @@ export default function BoostedGuildTierProgressCircle(arg0) {
     obj2.source = getTierIcon(theme, guild);
     obj2.style = tmp.guildTierIcon;
     const items = [callback(closure_4, obj2), ];
-    const obj3 = { Promise: null, marginTop: null, flags: null, style: tmp.guildTierName };
+    const obj3 = { "Null": null, "Null": null, "Null": null, style: tmp.guildTierName };
     const tmp9 = importDefault(dependencyMap[12]);
     obj3.children = arg1(dependencyMap[11]).getTierName(guild.premiumTier);
     items[1] = callback(arg1(dependencyMap[13]).Text, obj3);

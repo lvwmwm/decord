@@ -1,10 +1,10 @@
-// Module ID: 10624
-// Function ID: 82943
+// Module ID: 10630
+// Function ID: 82966
 // Name: FocusedControlsExpanded
 // Dependencies: []
 // Exports: default
 
-// Module 10624 (FocusedControlsExpanded)
+// Module 10630 (FocusedControlsExpanded)
 function FocusedControlsExpanded(children) {
   const availableHeight = children.availableHeight;
   const arg1 = availableHeight;
@@ -364,7 +364,7 @@ class FocusedControlsBottomDrawer {
       if (!reveal) {
         num = sum;
       }
-      let obj = { 1661939810: -1659219612, 1370398947: 291073, 1602119085: 307298304, height: bound };
+      let obj = { a: "onFriendOnlineNotificationSettingsChanged", k: "Float32Array", d: "decorationStyle", height: bound };
       let num2 = 0;
       if (tmp3) {
         num2 = 16;
@@ -526,11 +526,11 @@ obj1["overflow"] = "hidden";
 obj.visualEffectView = obj1;
 obj.visualEffectViewBackground = { backgroundColor: "rgba(0, 0, 0, .15)" };
 obj.expandedControlsContainer = { marginHorizontal: 16 };
-obj.aboveActionBarContainer = { "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true };
+obj.aboveActionBarContainer = { maxAutoClips: true, ENABLE_COMMUNITY_FLOW_MODAL_KEY: true, paddingBottom: true, T+79Eo: true, containerRefresh: true, es-VE: true };
 obj.aboveActionBarChildrenContainer = {};
-obj.ptbButton = { GameDiversityTier6SmallBadge: "key", useApplicationIdentityLinkedRolesEnabled: "Text", paddingTop: "height" };
-obj.tooltipStyle = { skuId: 10915829420510704000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, _desired: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007753314051984149, "Null": 563097861357615.4 };
-obj.containerStyle = { color: 1, backgroundColor: "comp_0" };
+obj.ptbButton = { 9223372036854775807: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000033995391244649793, 9223372036854775807: 9126805507, -9223372036854775808: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000381804336755052 };
+obj.tooltipStyle = { "Bool(false)": true, -517964626: true, 542489185: true };
+obj.containerStyle = { width: 1, marginHorizontal: "comp_0" };
 const obj2 = {};
 const tmp6 = arg1(dependencyMap[6]);
 const merged1 = Object.assign(importDefault(dependencyMap[10])(tmp5.Fonts.DISPLAY_EXTRABOLD, importDefault(dependencyMap[9]).unsafe_rawColors.WHITE, 12, { uppercase: true }));

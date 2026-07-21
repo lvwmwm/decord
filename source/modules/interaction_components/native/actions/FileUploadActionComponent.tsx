@@ -1,10 +1,10 @@
-// Module ID: 15942
-// Function ID: 122286
+// Module ID: 15949
+// Function ID: 122312
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 // Exports: default
 
-// Module 15942 (_createForOfIteratorHelperLoose)
+// Module 15949 (_createForOfIteratorHelperLoose)
 function _createForOfIteratorHelperLoose(@@iterator) {
   let arg1 = Symbol_iterator;
   @@iterator = "undefined" !== typeof Symbol;
@@ -98,7 +98,7 @@ function MainAreaCanUpload(arg0) {
   obj.icon = callback(arg1(dependencyMap[9]).TableRow.Icon, obj);
   const intl = arg1(dependencyMap[11]).intl;
   obj.label = intl.format(arg1(dependencyMap[11]).t./2JwTv, { maxValues });
-  const formatSizeResult = obj.formatSize(maxSizeBytes / arg1(dependencyMap[8]).BYTE_IN_KB, { "Bool(true)": null, "Bool(true)": null });
+  const formatSizeResult = obj.formatSize(maxSizeBytes / arg1(dependencyMap[8]).BYTE_IN_KB, { lineHeight: null, _$esjava$b: null });
   obj.subLabel = arg1(dependencyMap[12]).getFileUploadComponentSubtitle(minValues, maxValues, types, formatSizeResult);
   obj.start = true;
   obj.end = true;
@@ -134,6 +134,8 @@ function File(upload) {
   }
   obj.label = filename;
   const obj2 = {
+    9223372036854775807: 8817,
+    -9223372036854775808: 1091633408,
     icon: callback(arg1(dependencyMap[16]).XSmallIcon, { size: "sm" }),
     onPress() {
       return handleRemoveFile(upload.id);
@@ -154,7 +156,7 @@ const DraftType = arg1(dependencyMap[4]).DraftType;
 const NOOP = arg1(dependencyMap[5]).NOOP;
 ({ jsx: closure_9, jsxs: closure_10 } = arg1(dependencyMap[6]));
 const tmp2 = arg1(dependencyMap[6]);
-let closure_11 = arg1(dependencyMap[7]).createStyles({ defaultAttachmentIconWrapper: {} });
+let closure_11 = arg1(dependencyMap[7]).createStyles({ defaultAttachmentIconWrapper: { "Null": "Array", "Null": "summaryId" } });
 const obj = arg1(dependencyMap[7]);
 const result = arg1(dependencyMap[36]).fileFinishedImporting("modules/interaction_components/native/actions/FileUploadActionComponent.tsx");
 

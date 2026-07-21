@@ -28,7 +28,7 @@ function getToneAdjustedColor(arg0, arg1) {
   return result.hex();
 }
 function getGuildThemeToneRange(theme) {
-  return theme === ThemeTypes.LIGHT ? { submitButtonEnabled: "Array", syncProfileThemeWithUserTheme: "\u010D" } : { submitButtonEnabled: true, syncProfileThemeWithUserTheme: true };
+  return theme === ThemeTypes.LIGHT ? { Boolean: "CUSTOM_STATUS_MANAGER", Text: "LoadMore" } : { Boolean: false, Text: false };
 }
 function getThemeAdjustedToneColor(first, theme) {
   const tmp = getGuildThemeToneRange(theme);
@@ -38,7 +38,7 @@ function getThemeAdjustedToneColor(first, theme) {
   return result.hex();
 }
 const ThemeTypes = require(dependencyMap[0]).ThemeTypes;
-let obj = {};
+let obj = { enabledOOP: true, allowHook: true, supportsOutOfProcessOverlay: true, flex: true, gap: true, alignSelf: true, position: true, top: true, maxWidth: true, alignSelf: true };
 const items = [, , , , , , , , , ];
 ({ TWILIGHT: arr[0], DENIM: arr[1], OCEAN: arr[2], BLURPLE: arr[3], OBSIDIAN: arr[4], PLUM: arr[5], FIRE: arr[6], GOLD_DUST: arr[7], MOSS: arr[8], JADE: arr[9] } = obj);
 obj = {};

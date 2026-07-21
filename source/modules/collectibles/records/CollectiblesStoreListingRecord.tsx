@@ -1,9 +1,9 @@
-// Module ID: 6772
-// Function ID: 53321
+// Module ID: 6778
+// Function ID: 53370
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
-// Module 6772 (_isNativeReflectConstruct)
+// Module 6778 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -76,7 +76,7 @@ const tmp2 = (arg0) => {
         let sku_id;
         let store_listing_id;
         let styles;
-        let obj = {};
+        let obj = { <string:1393091960>: "spring", <string:4117956837>: "linear", <string:3209918537>: "easeInEaseOut" };
         ({ store_listing_id, sku_id, styles } = arg0);
         Object.setPrototypeOf(null);
         obj = {};

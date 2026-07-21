@@ -1,8 +1,8 @@
-// Module ID: 10438
-// Function ID: 80575
-// Dependencies: [44957696, 509411328, 93650944, 37093376, 131072, 1005584384, 5, 57, 31, 1921, 1348]
+// Module ID: 10444
+// Function ID: 80598
+// Dependencies: [44957696, 509673472, 93650944, 37093376, 131072, 1005584384, 5, 57, 31, 1921, 1348]
 
-// Module 10438
+// Module 10444
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 
 let closure_3 = importDefault(dependencyMap[0]);
@@ -53,7 +53,7 @@ export default {
       return obj.dispatch(obj);
     });
     const HTTP = arg1(dependencyMap[5]).HTTP;
-    obj = { "Null": true, "Null": "/assets/images/native/wumpus", "Null": 84, "Null": 66, "Null": null, url: constants.ACTIVITIES };
+    obj = { 638138113: true, 1906729908: "/assets/images/native/wumpus", 1359503816: 84, 1699935082: 66, 1383577065: null, url: constants.ACTIVITIES };
     obj = { application_id: applicationId, token, duration: num, share_activity: applicationId.shareActivity, distributor, closed: flag, exePath, voice_channel_id: voiceChannelId, session_id: sessionId, media_session_id: mediaSessionId };
     obj.body = obj;
     const postResult = HTTP.post(obj);

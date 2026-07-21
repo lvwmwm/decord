@@ -1,9 +1,9 @@
-// Module ID: 14435
-// Function ID: 108824
+// Module ID: 14442
+// Function ID: 108847
 // Name: radio
 // Dependencies: []
 
-// Module 14435 (radio)
+// Module 14442 (radio)
 let closure_3 = importAll(dependencyMap[0]);
 let obj = arg1(dependencyMap[10]);
 obj = {

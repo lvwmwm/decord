@@ -1,10 +1,10 @@
-// Module ID: 10390
-// Function ID: 80087
+// Module ID: 10396
+// Function ID: 80110
 // Name: useInappropriateConversationBannerForChannel
 // Dependencies: []
 // Exports: useInappropriateConversationBannerForChannel
 
-// Module 10390 (useInappropriateConversationBannerForChannel)
+// Module 10396 (useInappropriateConversationBannerForChannel)
 const SafetyWarningTypes = require(dependencyMap[0]).SafetyWarningTypes;
 const _module = require(dependencyMap[5]);
 const result = _module.fileFinishedImporting("modules/self_mod/inappropriate_conversation/hooks/useInappropriateConversationBannerForChannel.tsx");

@@ -1,10 +1,10 @@
-// Module ID: 6595
-// Function ID: 50766
+// Module ID: 6597
+// Function ID: 50809
 // Name: TrophyIllocon
 // Dependencies: []
 // Exports: TrophyIllocon
 
-// Module 6595 (TrophyIllocon)
+// Module 6597 (TrophyIllocon)
 const jsx = require(dependencyMap[0]).jsx;
 const _module = require(dependencyMap[3]);
 const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/TrophyIllocon.native.tsx");

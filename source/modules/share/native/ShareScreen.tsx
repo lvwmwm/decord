@@ -1,10 +1,10 @@
-// Module ID: 12777
-// Function ID: 97918
+// Module ID: 12784
+// Function ID: 97941
 // Name: getAttachmentsRestriction
 // Dependencies: []
 // Exports: default
 
-// Module 12777 (getAttachmentsRestriction)
+// Module 12784 (getAttachmentsRestriction)
 function getAttachmentsRestriction(type) {
   if (type instanceof closure_7) {
     if (callback3(type.type)) {

@@ -1,9 +1,9 @@
-// Module ID: 6558
-// Function ID: 50711
+// Module ID: 6560
+// Function ID: 50754
 // Name: vanityUrl
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 6558 (vanityUrl)
+// Module 6560 (vanityUrl)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/StreamingTier6SmallBadge-2x.png.js");
 

@@ -1,17 +1,17 @@
-// Module ID: 15739
-// Function ID: 120263
+// Module ID: 15746
+// Function ID: 120287
 // Name: VoicePanelDrawerToggleButton
 // Dependencies: []
 // Exports: default
 
-// Module 15739 (VoicePanelDrawerToggleButton)
+// Module 15746 (VoicePanelDrawerToggleButton)
 importAll(dependencyMap[0]);
 ({ jsx: closure_3, jsxs: closure_4 } = arg1(dependencyMap[1]));
 let obj = arg1(dependencyMap[2]);
 obj = {};
-obj = { aze: 30271555, azj: 22092032, borderRadius: importDefault(dependencyMap[3]).radii.round };
+obj = { borderRadius: importDefault(dependencyMap[3]).radii.round };
 obj.circle = obj;
-obj.iconContainer = { st: true, position: "/assets/.cache/intl/ZGVzaWdu", flex: null, justifyContent: "5489cb913a06f6a88877637630ce77b7", overflow: "pl.messages.5489cb913a06f6a88877637630ce77b7.compiled.messages" };
+obj.iconContainer = {};
 let closure_5 = obj.createStyles(obj);
 const tmp3 = arg1(dependencyMap[1]);
 const result = arg1(dependencyMap[10]).fileFinishedImporting("modules/voice_panel/native/controls/buttons/VoicePanelDrawerToggleButton.tsx");

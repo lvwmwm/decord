@@ -1,7 +1,7 @@
 // Module ID: 1760
 // Function ID: 19652
 // Name: scrollToFabric
-// Dependencies: []
+// Dependencies: [527761408, 452984832, 4009754624]
 
 // Module 1760 (scrollToFabric)
 let closure_3 = { code: "function scrollToFabric_Pnpm_scrollToTs1(animatedRef,x,y,animated){const{dispatchCommand}=this.__closure;dispatchCommand(animatedRef,'scrollTo',[x,y,animated]);}" };

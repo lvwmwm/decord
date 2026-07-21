@@ -1,10 +1,10 @@
-// Module ID: 11002
-// Function ID: 85615
+// Module ID: 11007
+// Function ID: 85636
 // Name: logVoiceMessagePlaybackStarted
 // Dependencies: [670, 2, 6]
 // Exports: logVoiceMessagePlaybackEnded, logVoiceMessagePlaybackFailed, logVoiceMessagePlaybackStarted
 
-// Module 11002 (logVoiceMessagePlaybackStarted)
+// Module 11007 (logVoiceMessagePlaybackStarted)
 import { AnalyticEvents } from "MessageEmbedTypes";
 import _classCallCheck from "_classCallCheck";
 

@@ -1,9 +1,9 @@
-// Module ID: 10158
-// Function ID: 78549
+// Module ID: 10164
+// Function ID: 78567
 // Name: get more
 // Dependencies: []
 
-// Module 10158 (get more)
+// Module 10164 (get more)
 const Platform = require(dependencyMap[0]).Platform;
 const obj = {};
 Object.defineProperty(obj, "more", { get: () => require(dependencyMap[1]), set: undefined });

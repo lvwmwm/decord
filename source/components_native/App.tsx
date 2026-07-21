@@ -1,10 +1,10 @@
-// Module ID: 13196
-// Function ID: 100025
+// Module ID: 13203
+// Function ID: 100048
 // Name: App
 // Dependencies: []
 // Exports: default
 
-// Module 13196 (App)
+// Module 13203 (App)
 let closure_3 = importAll(dependencyMap[0]);
 const NativeModules = arg1(dependencyMap[1]).NativeModules;
 let closure_5 = importDefault(dependencyMap[2]);

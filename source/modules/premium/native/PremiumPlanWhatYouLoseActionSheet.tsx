@@ -1,10 +1,10 @@
-// Module ID: 7391
-// Function ID: 59465
+// Module ID: 7395
+// Function ID: 59476
 // Name: WhatYouLoseItem
 // Dependencies: []
 // Exports: default
 
-// Module 7391 (WhatYouLoseItem)
+// Module 7395 (WhatYouLoseItem)
 function WhatYouLoseItem(arg0) {
   let imageSource;
   let text;
@@ -22,17 +22,17 @@ const View = arg1(dependencyMap[1]).View;
 const PremiumTypes = arg1(dependencyMap[2]).PremiumTypes;
 ({ jsx: closure_6, jsxs: closure_7 } = arg1(dependencyMap[3]));
 let obj = arg1(dependencyMap[4]);
-obj = { body: { flexDirection: false, alignItems: false } };
+obj = { body: { isArray: "<string:1027735553>", no: "<string:4143972873>" } };
 obj = { marginBottom: 8, color: importDefault(dependencyMap[5]).colors.MOBILE_TEXT_HEADING_PRIMARY };
 obj.title = obj;
 const tmp2 = arg1(dependencyMap[3]);
 obj.subtitle = { marginBottom: 16, color: importDefault(dependencyMap[5]).colors.MOBILE_TEXT_HEADING_PRIMARY };
-const obj2 = { -2046852097: 185, -1996519425: null, -1929409793: 1, -1979740161: "row", -1912632321: "stretch", -1845522177: "100%", -1778412545: 10, -1795190017: 1, borderRadius: importDefault(dependencyMap[5]).radii.sm, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_LOWEST };
+const obj2 = { -2046852097: 175177729, -1996519425: 1912602624, -1929409793: 1, -1979740161: 336, -1912632321: 1359070546, -1845522177: 2912753, -1778412545: 1359020032, -1795190017: 960578957, borderRadius: importDefault(dependencyMap[5]).radii.sm, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_LOWEST };
 obj.item = obj2;
 obj.itemLabel = { marginTop: 8 };
 obj.footer = { paddingHorizontal: 16 };
 obj.button = { marginBottom: 8 };
-const obj3 = { "Null": -0.0014069081515246523, "Null": -0.0001058445630777106, color: importDefault(dependencyMap[5]).colors.TEXT_SUBTLE };
+const obj3 = { "Bool(false)": "absolute", "Bool(false)": 0, color: importDefault(dependencyMap[5]).colors.TEXT_SUBTLE };
 obj.keepText = obj3;
 let closure_8 = obj.createStyles(obj);
 const obj4 = { DOWNGRADE: 0, [0]: "DOWNGRADE", CANCEL: 1, [1]: "CANCEL" };

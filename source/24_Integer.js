@@ -480,7 +480,7 @@ const tmp = (arg0) => {
         num2 = 64;
         if (bitLengthResult <= 64) {
           tmp7 = millerRabinTest;
-          return millerRabinTest(absResult, ["a", "isArray", "id", "title", "r", "isArray", "hash", "transform", "Array", "isArray", "index", "count"]);
+          return millerRabinTest(absResult, []);
         } else {
           tmp8 = globalThis;
           _Math2 = Math;
@@ -2254,15 +2254,15 @@ const tmp = (arg0) => {
         const _Array6 = Array;
         const _Array7 = Array;
         const _Array8 = Array;
-        obj1.value = concat2.apply([], Array.apply(null, Array(-addResult.toJSNumber())).map(Array.prototype.valueOf, ["getViewManagerConfig", "hasViewManagerConfig"]));
+        obj1.value = concat2.apply([], Array.apply(null, Array(-addResult.toJSNumber())).map(Array.prototype.valueOf, ["<string:3813229678>", "<string:153900714>"]));
         obj1.isNegative = false;
         return obj1;
       } else {
         const _Array3 = Array;
         const _Array4 = Array;
         const _Array5 = Array;
-        const mapped = Array.apply(null, Array(addResult.toJSNumber() - 1)).map(Array.prototype.valueOf, [null, null]);
-        mapped.unshift([24573934974154670000000000000000000000000000000000000000000000000000000000000]);
+        const mapped = Array.apply(null, Array(addResult.toJSNumber() - 1)).map(Array.prototype.valueOf, ["Text", "lc"]);
+        mapped.unshift([15189782894321462000000000000000000000000000000000000000000000000000000000000000000]);
         let obj2 = {};
         const concat = [].concat;
         obj2.value = concat.apply([], mapped);
@@ -2574,7 +2574,7 @@ const tmp = (arg0) => {
   const modInv = BigInteger.prototype.modInv;
   SmallInteger.prototype.modInv = modInv;
   NativeBigInt.prototype.modInv = modInv;
-  const items = [24573934974154670000000000000000000000000000000000000000000000000000000000000];
+  const items = [15189782894321462000000000000000000000000000000000000000000000000000000000000000000];
   if (2 * items[items.length - 1] <= 10000000) {
     class Integer {
       constructor(arg0, arg1, arg2, arg3) {
@@ -3201,7 +3201,7 @@ const tmp = (arg0) => {
           num2 = 64;
           if (bitLengthResult <= 64) {
             tmp7 = millerRabinTest;
-            return millerRabinTest(absResult, ["a", "isArray", "id", "title", "r", "isArray", "hash", "transform", "Array", "isArray", "index", "count"]);
+            return millerRabinTest(absResult, []);
           } else {
             tmp8 = globalThis;
             _Math2 = Math;

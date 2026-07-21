@@ -1,10 +1,10 @@
-// Module ID: 11270
-// Function ID: 87738
+// Module ID: 11276
+// Function ID: 87761
 // Name: AppLauncherChoicesOption
 // Dependencies: []
 // Exports: default
 
-// Module 11270 (AppLauncherChoicesOption)
+// Module 11276 (AppLauncherChoicesOption)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 const jsx = arg1(dependencyMap[2]).jsx;
@@ -75,7 +75,7 @@ export default function AppLauncherChoicesOption(option) {
   }, items);
   let obj = arg1(dependencyMap[9]);
   const animationDelayedAutoFocus = obj.useAnimationDelayedAutoFocus(autoFocus, callback);
-  obj = { 1726238916: null, 607091733: null };
+  obj = { 0: null, 0: null };
   const items1 = [callback2().container, style];
   obj.style = items1;
   obj.hasError = hasError;
@@ -95,7 +95,7 @@ export default function AppLauncherChoicesOption(option) {
   obj.label = jsx(arg1(dependencyMap[11]).Text, obj);
   let tmp9 = null;
   if (null != first) {
-    const obj1 = { 9223372036854775807: true, 9223372036854775807: true, 9223372036854775807: true, children: first.choice.displayName };
+    const obj1 = { -9223372036854775808: true, 0: true, 0: true, children: first.choice.displayName };
     tmp9 = jsx(arg1(dependencyMap[11]).Text, obj1);
   }
   obj.subLabel = tmp9;

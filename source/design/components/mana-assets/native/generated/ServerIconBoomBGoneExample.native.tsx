@@ -1,10 +1,10 @@
-// Module ID: 6467
-// Function ID: 50574
+// Module ID: 6469
+// Function ID: 50617
 // Name: ServerIconBoomBGoneExample
 // Dependencies: []
 // Exports: ServerIconBoomBGoneExample
 
-// Module 6467 (ServerIconBoomBGoneExample)
+// Module 6469 (ServerIconBoomBGoneExample)
 const jsx = require(dependencyMap[0]).jsx;
 const _module = require(dependencyMap[3]);
 const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/ServerIconBoomBGoneExample.native.tsx");

@@ -1,10 +1,10 @@
-// Module ID: 13425
-// Function ID: 101974
+// Module ID: 13432
+// Function ID: 101997
 // Name: getSettingTitle
 // Dependencies: []
 // Exports: getInitialScrollIndex, getScoredSettingListSearchResultItems, getSettingListSearchResultItems, getSettingScreens, getSettingSearchableTitles, onRouteSettingOnPress, toSettingListItems
 
-// Module 13425 (getSettingTitle)
+// Module 13432 (getSettingTitle)
 function getSettingTitle(closure_0) {
   const cachedSettingTitle = require(dependencyMap[7]).getCachedSettingTitle(closure_0);
   const obj = require(dependencyMap[7]);

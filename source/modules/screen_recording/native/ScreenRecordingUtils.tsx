@@ -1,10 +1,10 @@
-// Module ID: 14585
-// Function ID: 109935
+// Module ID: 14592
+// Function ID: 109957
 // Name: _getLatestVideo
 // Dependencies: []
 // Exports: handleRecordingPhase, handleStopAndSend
 
-// Module 14585 (_getLatestVideo)
+// Module 14592 (_getLatestVideo)
 let NativeEventEmitter;
 let NativeModules;
 function _getLatestVideo() {

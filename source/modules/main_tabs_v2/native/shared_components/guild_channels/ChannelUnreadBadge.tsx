@@ -1,14 +1,14 @@
-// Module ID: 14768
-// Function ID: 111347
+// Module ID: 14775
+// Function ID: 111371
 // Dependencies: []
 
-// Module 14768
+// Module 14775
 const View = arg1(dependencyMap[1]).View;
 const MUTED_OPACITY_CONTENT = arg1(dependencyMap[2]).MUTED_OPACITY_CONTENT;
 const UnreadSetting = arg1(dependencyMap[3]).UnreadSetting;
 const jsx = arg1(dependencyMap[4]).jsx;
 const importAllResult = importAll(dependencyMap[0]);
-let closure_7 = arg1(dependencyMap[5]).createStyles({ unreadBadge: { body: "%ArrayProto_keys%", backgroundColor: "tr", accessibilityRole: "isArray" }, unreadBadgePanel: { marginLeft: -16 } });
+let closure_7 = arg1(dependencyMap[5]).createStyles({ unreadBadge: { count: null, align: null, label: null }, unreadBadgePanel: { marginLeft: -16 } });
 const obj2 = arg1(dependencyMap[5]);
 const memoResult = importAllResult.memo(function ChannelUnreadBadge(panelVariant) {
   let isThread;

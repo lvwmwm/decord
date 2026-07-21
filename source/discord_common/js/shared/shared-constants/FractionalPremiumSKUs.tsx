@@ -1,7 +1,7 @@
 // Module ID: 656
 // Function ID: 8019
 // Name: set
-// Dependencies: []
+// Dependencies: [284214097]
 
 // Module 656 (set)
 const obj = { ALL: new Set([true, true, true]) };

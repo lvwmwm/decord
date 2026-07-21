@@ -1,10 +1,10 @@
-// Module ID: 14370
-// Function ID: 108471
+// Module ID: 14377
+// Function ID: 108494
 // Name: ListEdgeSpacer
 // Dependencies: []
 // Exports: default
 
-// Module 14370 (ListEdgeSpacer)
+// Module 14377 (ListEdgeSpacer)
 function ListEdgeSpacer() {
   return callback(closure_5, { style: callback2().listEdgeSpacer });
 }
@@ -24,8 +24,8 @@ obj = { width: "100%", paddingTop: importDefault(dependencyMap[7]).space.PX_16, 
 obj.container = obj;
 const tmp3 = arg1(dependencyMap[5]);
 obj.containerWithBackground = { marginTop: importDefault(dependencyMap[7]).space.PX_24, paddingTop: importDefault(dependencyMap[7]).space.PX_24, paddingBottom: importDefault(dependencyMap[7]).space.PX_24, overflow: "hidden" };
-obj.backgroundImage = {};
-const obj2 = { "Bool(true)": null, "Bool(true)": null, "Bool(true)": null, gap: importDefault(dependencyMap[7]).space.PX_12, paddingHorizontal: importDefault(dependencyMap[7]).space.PX_16, marginBottom: importDefault(dependencyMap[7]).space.PX_16, zIndex: 1 };
+obj.backgroundImage = { 944862882: true, -1374592052: true, -1436785218: true, 1492885590: true, 230219098: true, -1955435987: true, -548342068: true };
+const obj2 = { padding: "Next", paddingBottom: null, flexDirection: null, gap: importDefault(dependencyMap[7]).space.PX_12, paddingHorizontal: importDefault(dependencyMap[7]).space.PX_16, marginBottom: importDefault(dependencyMap[7]).space.PX_16, zIndex: 1 };
 obj.header = obj2;
 obj.headingWrapper = { flexShrink: 1 };
 const obj1 = { marginTop: importDefault(dependencyMap[7]).space.PX_24, paddingTop: importDefault(dependencyMap[7]).space.PX_24, paddingBottom: importDefault(dependencyMap[7]).space.PX_24, overflow: "hidden" };

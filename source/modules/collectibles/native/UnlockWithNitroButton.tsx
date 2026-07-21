@@ -1,10 +1,10 @@
-// Module ID: 11825
-// Function ID: 91683
+// Module ID: 11832
+// Function ID: 91706
 // Name: UnlockWithNitroButton
 // Dependencies: []
 // Exports: UnlockWithNitroButton
 
-// Module 11825 (UnlockWithNitroButton)
+// Module 11832 (UnlockWithNitroButton)
 importAll(dependencyMap[0]);
 let closure_3 = importDefault(dependencyMap[1]);
 let closure_4 = importDefault(dependencyMap[2]);
@@ -54,7 +54,7 @@ export const UnlockWithNitroButton = function UnlockWithNitroButton(shouldShrink
   }
   obj.size = str;
   obj.grow = true;
-  obj.icon = jsx(arg1(dependencyMap[11]).NitroWheelIcon, { flexDirection: null, alignItems: "4550be26e4ce88ab0a8f2d917df660a6" });
+  obj.icon = jsx(arg1(dependencyMap[11]).NitroWheelIcon, {});
   obj.onPress = function onPress() {
     if (null != callback) {
       callback(constants.UNLOCK_WITH_NITRO);

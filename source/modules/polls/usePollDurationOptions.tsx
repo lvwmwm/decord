@@ -1,10 +1,10 @@
-// Module ID: 11303
-// Function ID: 87956
+// Module ID: 11309
+// Function ID: 87979
 // Name: usePollDurationOptions
 // Dependencies: []
 // Exports: default
 
-// Module 11303 (usePollDurationOptions)
+// Module 11309 (usePollDurationOptions)
 const PollDurations = require(dependencyMap[0]).PollDurations;
 const _module = require(dependencyMap[2]);
 const result = _module.fileFinishedImporting("modules/polls/usePollDurationOptions.tsx");

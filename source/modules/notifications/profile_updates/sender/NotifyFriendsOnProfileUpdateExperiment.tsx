@@ -1,10 +1,10 @@
-// Module ID: 14442
-// Function ID: 108851
+// Module ID: 14449
+// Function ID: 108874
 // Name: apexExperiment
 // Dependencies: []
 // Exports: getNotifyFriendsOnProfileUpdateExperiment, useNotifyFriendsOnProfileUpdateExperiment
 
-// Module 14442 (apexExperiment)
+// Module 14449 (apexExperiment)
 const _module = require(dependencyMap[0]);
 const apexExperiment = _module.createApexExperiment({ defaultConfig: { enabled: false }, variations: { [0]: { enabled: false }, [1]: { enabled: true } } });
 const _module1 = require(dependencyMap[1]);

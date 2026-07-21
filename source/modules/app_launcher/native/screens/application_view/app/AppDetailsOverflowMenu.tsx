@@ -1,10 +1,10 @@
-// Module ID: 11236
-// Function ID: 87482
+// Module ID: 11242
+// Function ID: 87505
 // Name: AppDetailsOverflowMenu
 // Dependencies: []
 // Exports: default
 
-// Module 11236 (AppDetailsOverflowMenu)
+// Module 11242 (AppDetailsOverflowMenu)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[13]).fileFinishedImporting("modules/app_launcher/native/screens/application_view/app/AppDetailsOverflowMenu.tsx");

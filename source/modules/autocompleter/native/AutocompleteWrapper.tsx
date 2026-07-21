@@ -1,24 +1,24 @@
-// Module ID: 11412
-// Function ID: 88771
+// Module ID: 11419
+// Function ID: 88795
 // Name: isSlashAutocompleteType
 // Dependencies: [0, 0, 0, 0, 0, 0, 0, 0, 4294967295, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 
-// Module 11412 (isSlashAutocompleteType)
-import closure_3 from "result";
-import importAllResult from "result";
-import result from "result";
-import closure_7 from "result";
-import closure_8 from "result";
-import closure_9 from "result";
-import closure_10 from "result";
-import result from "result";
-import result from "result";
-import result from "result";
-import { AutocompleteTypes } from "result";
-import { EmojiInteractionPoint } from "result";
-import result from "result";
-import result from "result";
-import result from "result";
+// Module 11419 (isSlashAutocompleteType)
+import closure_3 from "__exportStarResult1";
+import importAllResult from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
+import closure_7 from "__exportStarResult1";
+import closure_8 from "__exportStarResult1";
+import closure_9 from "__exportStarResult1";
+import closure_10 from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
+import { AutocompleteTypes } from "__exportStarResult1";
+import { EmojiInteractionPoint } from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
 
 function isSlashAutocompleteType(arg0) {
   let tmp = arg0 === AutocompleteTypes.SLASHES;
@@ -44,15 +44,15 @@ function getStickersItemLayout(arg0, index) {
   obj.index = index;
   return obj;
 }
-({ View: closure_5, FlatList: closure_6 } = result);
-({ AutoCompleteResultTypes: closure_11, WHITESPACE_RE: closure_12, AnalyticEvents: closure_13, UpsellTypes: closure_14 } = result);
+({ View: closure_5, FlatList: closure_6 } = __exportStarResult1);
+({ AutoCompleteResultTypes: closure_11, WHITESPACE_RE: closure_12, AnalyticEvents: closure_13, UpsellTypes: closure_14 } = __exportStarResult1);
 const BOOLEAN_CHOICES = arg1(dependencyMap[8]).BOOLEAN_CHOICES;
-({ AUTOCOMPLETE_EMOJI_ROW_HEIGHT: closure_16, AUTOCOMPLETE_ROW_HEIGHT: closure_17 } = result);
-({ MENTION_SENTINEL: closure_18, CHANNEL_SENTINEL: closure_19, EMOJI_SENTINEL: closure_20 } = result);
-({ jsx: closure_23, Fragment: closure_24, jsxs: closure_25 } = result);
-const hairlineWidth = result.StyleSheet.hairlineWidth;
-let closure_27 = 284 + require("result").AUTOCOMPLETE_STICKER_NODE_SIZE + 12 + hairlineWidth;
-let closure_28 = result.createStyles((borderRadius, borderWidth, borderTopWidth, marginHorizontal, marginBottom) => {
+({ AUTOCOMPLETE_EMOJI_ROW_HEIGHT: closure_16, AUTOCOMPLETE_ROW_HEIGHT: closure_17 } = __exportStarResult1);
+({ MENTION_SENTINEL: closure_18, CHANNEL_SENTINEL: closure_19, EMOJI_SENTINEL: closure_20 } = __exportStarResult1);
+({ jsx: closure_23, Fragment: closure_24, jsxs: closure_25 } = __exportStarResult1);
+const hairlineWidth = __exportStarResult1.StyleSheet.hairlineWidth;
+let closure_27 = 284 + require("__exportStarResult1").AUTOCOMPLETE_STICKER_NODE_SIZE + 12 + hairlineWidth;
+let closure_28 = __exportStarResult1.createStyles((borderRadius, borderWidth, borderTopWidth, marginHorizontal, marginBottom) => {
   let obj = { autocompletePositionRelative: { position: "relative" } };
   obj = {};
   let obj2 = borderWidth(dependencyMap[16]);
@@ -64,19 +64,19 @@ let closure_28 = result.createStyles((borderRadius, borderWidth, borderTopWidth,
   obj.marginHorizontal = marginHorizontal;
   obj.marginBottom = marginBottom;
   obj.autocompleteWrapper = obj;
-  obj.autocompleteWrapperAbsolute = {};
+  obj.autocompleteWrapperAbsolute = { isArray: "spring", messageId: "linear", surrogates: "easeInEaseOut" };
   obj = { backgroundColor: importDefault(dependencyMap[17]).colors.MOBILE_FLOATING_ACCESSORY_BACKGROUND, borderRadius, borderWidth, borderTopWidth, borderColor: importDefault(dependencyMap[17]).colors.MOBILE_FLOATING_ACCESSORY_BORDER, overflow: "hidden" };
   obj.autocompleteContainer = obj;
-  const obj1 = { backgroundColor: importDefault(dependencyMap[17]).colors.MOBILE_FLOATING_ACCESSORY_BACKGROUND, height: 0.000000000000000000000000000000000000000000000000000000011294471302334573 };
-  obj.autocomplete = obj1;
+  obj.autocomplete = { backgroundColor: importDefault(dependencyMap[17]).colors.MOBILE_FLOATING_ACCESSORY_BACKGROUND };
   obj2 = { backgroundColor: importDefault(dependencyMap[17]).colors.MOBILE_FLOATING_ACCESSORY_BORDER, marginLeft: -16 };
   obj.sectionDivider = obj2;
-  const obj3 = { 474931905: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000018913127811932393, 1618910850: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000196126008089384, 1658424913: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000006919344807266252, -1504596905: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000016935767297406707, 1608213249: 9126805512.125, backgroundColor: importDefault(dependencyMap[17]).colors.MOBILE_FLOATING_ACCESSORY_BACKGROUND };
+  const obj3 = { eachRight: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000018913127811932393, DefaultNumberOption: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000195901076535542, SearchQueryTagTypes: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000025755311579794185, VideoButton: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001693576729730451, QUEST_EMBED_MOBILE: 9126805512.125, backgroundColor: importDefault(dependencyMap[17]).colors.MOBILE_FLOATING_ACCESSORY_BACKGROUND };
   obj.sectionTitle = obj3;
+  const obj1 = { backgroundColor: importDefault(dependencyMap[17]).colors.MOBILE_FLOATING_ACCESSORY_BACKGROUND };
   obj.stickersAutocompleteList = { paddingLeft: 12 - borderWidth(dependencyMap[14]).AUTOCOMPLETE_STICKER_NODE_MARGIN, marginBottom: 12, height: borderWidth(dependencyMap[14]).AUTOCOMPLETE_STICKER_NODE_SIZE, flexShrink: 0 };
   return obj;
 });
-const obj = { 1440178548: -0.000000000000000000000000000000000000000000000000000000000000000006151499469494149, -1813475108: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000601989533400987, 1139532895: 32458000.001047716, 1415959180: 10869384.00053664, <string:4033009840>: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004594611443144745, stickerResults: [], nonStickerResults: [] };
+let closure_29 = { stickerResults: [], nonStickerResults: [] };
 const forwardRefResult = importAllResult.forwardRef((analyticsLocations) => {
   let canOnlyUseTextCommands;
   let screenIndex;
@@ -113,7 +113,7 @@ const forwardRefResult = importAllResult.forwardRef((analyticsLocations) => {
   let closure_10 = token;
   const IncludeStickersInAutocomplete = arg1(dependencyMap[23]).IncludeStickersInAutocomplete;
   const setting = IncludeStickersInAutocomplete.getSetting();
-  const tmp4 = callback(onChangeAutoCompleteVisibility.useState(obj), 2);
+  const tmp4 = callback(onChangeAutoCompleteVisibility.useState(closure_29), 2);
   const first = tmp4[0];
   const resultCount = first.resultCount;
   const stickerResults = first.stickerResults;
@@ -131,7 +131,7 @@ const forwardRefResult = importAllResult.forwardRef((analyticsLocations) => {
   const context = importAllResult.useContext(arg1(dependencyMap[24]).RedesignCompatContext);
   const items3 = [channel, setting];
   const memo = importAllResult.useMemo(() => analyticsLocations(canMentionEveryone[25]).getAutocompleteOptions(channel, true, setting), items3);
-  const tmp10 = callback(onChangeAutoCompleteVisibility.useState({ end: "<string:2046820935>", ref: "<string:3372221001>", channel: "<string:3036676549>", paddingHorizontal: "<string:50331913>" }), 2);
+  const tmp10 = callback(onChangeAutoCompleteVisibility.useState({ guild: null, borderRadius: false, id: null, name: "" }), 2);
   const first1 = tmp10[0];
   const focused = first1.focused;
   const text = first1.text;
@@ -187,7 +187,7 @@ const forwardRefResult = importAllResult.forwardRef((analyticsLocations) => {
           let obj1 = analyticsLocations(canMentionEveryone[27]);
           let applicationCommandOptionQueryOptions = obj1.getApplicationCommandOptionQueryOptions(activeOption);
         } else {
-          applicationCommandOptionQueryOptions = { url: "y", rejectWithError: "%Float16Array%", oldFormErrors: "MD", retries: "isArray", id: "DISMISSIBLE_CONTENT_SHOWN_BEFORE_CONNECTION_OPEN", name: "GTM", cost: "%NumberPrototype%", id: "isArrayBuffer", canMentionEveryone, canMentionHere: canMentionEveryone };
+          applicationCommandOptionQueryOptions = { accessibilityRole: true, bind: true, parent: true, body: true, name: true, ao: true, applicationId: "isArray", y: "key", canMentionEveryone, canMentionHere: canMentionEveryone };
         }
         let tmp7;
         if (null != activeOption) {
@@ -408,7 +408,7 @@ const forwardRefResult = importAllResult.forwardRef((analyticsLocations) => {
         }
       }
     }
-    return { "Bool(true)": "Normal", "Bool(true)": true, "Bool(true)": "AbortSignal" };
+    return { "Bool(true)": null, "Bool(true)": "\u{1F9BB}\u{1F3FF}", "Bool(true)": true };
   }, items4);
   const autocompleteType = memo1.autocompleteType;
   const hairlineWidth = autocompleteType;
@@ -417,7 +417,7 @@ const forwardRefResult = importAllResult.forwardRef((analyticsLocations) => {
   const queryOptions = memo1.queryOptions;
   let closure_28 = queryOptions;
   const autocompleteSelectionStart = memo1.autocompleteSelectionStart;
-  obj = autocompleteSelectionStart;
+  closure_29 = autocompleteSelectionStart;
   const showOptionValuesPicker = memo1.showOptionValuesPicker;
   const isSlashAutocompleteType = showOptionValuesPicker;
   const items5 = [autocompleteType, query, queryOptions, memo];
@@ -952,6 +952,6 @@ const forwardRefResult = importAllResult.forwardRef((analyticsLocations) => {
   return selectionEnd(commandsDisabled, { style: tmp38Result.autocompletePositionRelative, children: callback2(commandsDisabled, obj) });
 });
 forwardRefResult.displayName = "AutocompleteWrapper";
-result = result.fileFinishedImporting("modules/autocompleter/native/AutocompleteWrapper.tsx");
+const result = __exportStarResult1.fileFinishedImporting("modules/autocompleter/native/AutocompleteWrapper.tsx");
 
 export default importAllResult.memo(forwardRefResult);

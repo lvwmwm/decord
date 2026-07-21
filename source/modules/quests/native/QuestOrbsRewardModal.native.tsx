@@ -1,10 +1,10 @@
-// Module ID: 10914
-// Function ID: 84877
+// Module ID: 10919
+// Function ID: 84898
 // Name: CancelButton
 // Dependencies: []
 // Exports: default, openQuestOrbsRewardModal
 
-// Module 10914 (CancelButton)
+// Module 10919 (CancelButton)
 function CancelButton() {
   const tmp = callback4();
   const arg1 = tmp;
@@ -24,7 +24,7 @@ function CancelButton() {
   return callback3(arg1(dependencyMap[16]).HeaderBackButton, obj);
 }
 function StaticOrb() {
-  let obj = { style: { aze: 30271555, azj: 22092032 } };
+  let obj = { style: {} };
   obj = {};
   obj = {};
   const tmp = callback6();
@@ -66,7 +66,7 @@ function AnimatedOrbContainer(isAppActive) {
       }
     }
   }, items);
-  let obj = { style: { aze: 30271555, azj: 22092032 } };
+  let obj = { style: {} };
   let tmp13 = !first;
   if (tmp13) {
     tmp13 = !first1;
@@ -120,7 +120,7 @@ const tmp2 = arg1(dependencyMap[3]);
 let closure_17 = "QuestOrbsRewardModal";
 let obj1 = arg1(dependencyMap[14]);
 let obj = {};
-obj = { marginHorizontal: importDefault(dependencyMap[15]).space.PX_16 };
+obj = { label: true, subLabel: true, onPress: true, marginHorizontal: importDefault(dependencyMap[15]).space.PX_16 };
 obj.closeButton = obj;
 obj1 = { tintColor: importDefault(dependencyMap[15]).colors.WHITE };
 obj.closeButtonIcon = obj1;
@@ -131,20 +131,20 @@ let closure_19 = arg1(dependencyMap[14]).createStyles(() => {
   obj = { flex: 1, backgroundColor: importDefault(dependencyMap[15]).colors.BACKGROUND_BASE_LOW };
   obj.root = obj;
   obj.background = closure_7.absoluteFillObject;
-  obj = { backgroundColor: importDefault(dependencyMap[15]).colors.BACKGROUND_BASE_LOW };
+  obj = { "Null": null, "Null": null, backgroundColor: importDefault(dependencyMap[15]).colors.BACKGROUND_BASE_LOW };
   const merged = Object.assign(closure_7.absoluteFillObject);
   obj.loading = obj;
-  obj.header = { "Bool(true)": null, "Bool(true)": null, "Bool(true)": null };
+  obj.header = { padding: false, paddingBottom: false, flexDirection: false };
   obj.main = { flex: 2 };
   obj.animation = { flex: 3 };
-  const obj1 = { "Null": "sku", "Null": 0, "Null": 1, gap: importDefault(dependencyMap[15]).space.PX_16 };
-  obj.body = obj1;
+  obj.body = { gap: importDefault(dependencyMap[15]).space.PX_16 };
+  const obj1 = { gap: importDefault(dependencyMap[15]).space.PX_16 };
   obj.title = { textAlign: "center", marginHorizontal: importDefault(dependencyMap[15]).space.PX_32 };
   const obj2 = { textAlign: "center", marginHorizontal: importDefault(dependencyMap[15]).space.PX_32 };
   obj.buttonsContainer = { padding: importDefault(dependencyMap[15]).space.PX_24, gap: importDefault(dependencyMap[15]).space.PX_16 };
   const items = [{ translateY: 3 }];
   obj.orbsIconAndroid = { transform: items };
-  obj.orbsIconIOS = { "Bool(true)": 2, "Bool(true)": "text-sm/semibold" };
+  obj.orbsIconIOS = { scales: 2, then: "text-sm/semibold" };
   return obj;
 });
 let closure_20 = importAllResult.memo((uri) => {
@@ -158,7 +158,7 @@ let closure_20 = importAllResult.memo((uri) => {
   const effect = importAllResult.useEffect(() => {
     callback(closure_2[19]).preload(uri);
   }, items);
-  const obj = { source: { uri }, style: { aze: 30271555, azj: 22092032 }, resizeMode: "cover", enableAnimation: flag, onLoad: uri.onLoad, usesSmallCache: false, fade: false };
+  const obj = { source: { uri }, style: {}, resizeMode: "cover", enableAnimation: flag, onLoad: uri.onLoad, usesSmallCache: false, fade: false };
   return callback3(importDefault(dependencyMap[19]), obj, "orb-animate-" + flag);
 });
 let closure_21 = importAllResult.memo((animate) => {
@@ -182,7 +182,7 @@ let closure_21 = importAllResult.memo((animate) => {
       obj.stop();
     }
   }, items);
-  return callback3(arg1(dependencyMap[20]).APNGPlayer, { ref, url, autoplay: false, style: { aze: 30271555, azj: 22092032 }, onLoad });
+  return callback3(arg1(dependencyMap[20]).APNGPlayer, { ref, url, autoplay: false, style: {}, onLoad });
 });
 let closure_22 = importAllResult.memo((animate) => {
   let onLoad;
@@ -194,7 +194,7 @@ let closure_22 = importAllResult.memo((animate) => {
     flag = true;
   }
   let obj = arg1(dependencyMap[21]);
-  obj = { <string:3142754913>: null, <string:1638282744>: null, <string:3863696069>: null, style };
+  obj = { -1762871448: null, -1076975364: null, -1437189275: null, style };
   obj = { uri, onLoad, animate: flag };
   obj.children = callback3(obj.isAndroid() ? closure_21 : closure_20, obj);
   return callback3(closure_8, obj);
@@ -216,7 +216,7 @@ let closure_23 = importAllResult.memo((style) => {
   const items = [callback3(importDefault(dependencyMap[19]), obj), ];
   let tmp3 = !useReducedMotion && isAppActive;
   if (tmp3) {
-    const obj1 = {};
+    const obj1 = { <string:4149331553>: true, <string:1514947227>: true, <string:1054146564>: true, <string:1699807236>: true, <string:3334490350>: true, <string:3334668292>: true, <string:3334799364>: true };
     const obj2 = { uri: importDefault(dependencyMap[24]) };
     obj1.source = obj2;
     obj1.style = style;
@@ -419,7 +419,7 @@ export default function QuestOrbsRewardModal(quest) {
               return closure_16(variant.Fragment, obj, "balance");
             },
         profileDecoHook() {
-              const obj = { INTEGRATION_CREATE: true, ConstraintReasonCode: true };
+              const obj = {};
               const intl = balance(closure_2[18]).intl;
               obj.children = intl.string(balance(closure_2[18]).t.pGDUH9);
               return callback3(balance(closure_2[39]).Text, obj, "profileDeco");
@@ -452,13 +452,13 @@ export default function QuestOrbsRewardModal(quest) {
     obj8.children = items7;
     items6[2] = closure_16(closure_8, obj8);
     const obj14 = { style: tmp.buttonsContainer };
-    const obj15 = { <string:1650710704>: "r", <string:1420607057>: "WATCHING", <string:3096691101>: "r", onPress: memo.primary.handler };
+    const obj15 = { <string:4217742945>: "RBTree", <string:1655330464>: "currentEmbeddedApplication", <string:1722587473>: "SyntaxError", onPress: memo.primary.handler };
     const intl3 = arg1(dependencyMap[18]).intl;
     obj15.text = intl3.string(memo.primary.text);
     const items8 = [callback3(arg1(dependencyMap[41]).Button, obj15), ];
     let tmp59 = null != memo.secondary;
     if (tmp59) {
-      const obj16 = { <string:1650710704>: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001288229794448861, <string:1420607057>: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007644663598304258, <string:3096691101>: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000213672782963451, onPress: memo.secondary.handler };
+      const obj16 = { <string:4217742945>: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000012882297944488626, <string:1655330464>: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007645008054038882, <string:1722587473>: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002136451970181684, onPress: memo.secondary.handler };
       const intl4 = arg1(dependencyMap[18]).intl;
       obj16.text = intl4.string(memo.secondary.text);
       tmp59 = callback3(arg1(dependencyMap[41]).Button, obj16);

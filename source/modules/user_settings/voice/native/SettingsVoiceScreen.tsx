@@ -1,10 +1,10 @@
-// Module ID: 14005
-// Function ID: 106545
+// Module ID: 14012
+// Function ID: 106568
 // Name: KrispLogo
 // Dependencies: []
 // Exports: default
 
-// Module 14005 (KrispLogo)
+// Module 14012 (KrispLogo)
 function KrispLogo() {
   const tmp = callback3();
   let obj = arg1(dependencyMap[9]);
@@ -57,7 +57,7 @@ const tmp2 = arg1(dependencyMap[1]);
 const tmp3 = arg1(dependencyMap[5]);
 let closure_12 = "" + importDefault(dependencyMap[6]).getArticleURL(HelpdeskArticles.VOICE_VIDEO_TROUBLESHOOTING) + "?utm_source=discord&utm_medium=blog&utm_campaign=2020-06_help-voice-video&utm_content=--t%3Apm";
 const importDefaultResult = importDefault(dependencyMap[6]);
-let closure_13 = arg1(dependencyMap[7]).createStyles({ krisp: { width: false, height: false, borderRadius: false }, logo: {} });
+let closure_13 = arg1(dependencyMap[7]).createStyles({ krisp: {}, logo: {} });
 const obj2 = arg1(dependencyMap[7]);
 const result = arg1(dependencyMap[19]).fileFinishedImporting("modules/user_settings/voice/native/SettingsVoiceScreen.tsx");
 

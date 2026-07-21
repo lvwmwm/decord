@@ -1,10 +1,10 @@
-// Module ID: 15378
-// Function ID: 117328
+// Module ID: 15385
+// Function ID: 117352
 // Name: ChannelSettingsPermissionsOverrides
 // Dependencies: []
 // Exports: default
 
-// Module 15378 (ChannelSettingsPermissionsOverrides)
+// Module 15385 (ChannelSettingsPermissionsOverrides)
 let closure_4 = importDefault(dependencyMap[0]);
 let closure_5 = importDefault(dependencyMap[1]);
 let closure_6 = importAll(dependencyMap[2]);
@@ -144,7 +144,7 @@ export default function ChannelSettingsPermissionsOverrides(fromCreate) {
     obj = { userId: id, guildId: stateFromStores.guild_id, start: true, end: true, trailing: tmp6 };
     let tmp7Result = callback2(importDefault(dependencyMap[33]), obj);
   } else {
-    obj1 = { skuId: 24, application: 24, fill: null };
+    obj1 = {};
     const role = role.getRole(stateFromStores.guild_id, id);
     let name;
     if (null != role) {

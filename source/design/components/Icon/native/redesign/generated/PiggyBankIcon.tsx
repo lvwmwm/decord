@@ -1,10 +1,10 @@
-// Module ID: 11053
-// Function ID: 86048
+// Module ID: 11058
+// Function ID: 86069
 // Name: PiggyBankIcon
 // Dependencies: []
 // Exports: PiggyBankIcon
 
-// Module 11053 (PiggyBankIcon)
+// Module 11058 (PiggyBankIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/PiggyBankIcon.tsx");

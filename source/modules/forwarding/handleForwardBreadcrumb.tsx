@@ -1,10 +1,10 @@
-// Module ID: 11058
-// Function ID: 86056
+// Module ID: 11064
+// Function ID: 86079
 // Name: _handleForwardBreadcrumb
 // Dependencies: []
 // Exports: default
 
-// Module 11058 (_handleForwardBreadcrumb)
+// Module 11064 (_handleForwardBreadcrumb)
 function _handleForwardBreadcrumb() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);

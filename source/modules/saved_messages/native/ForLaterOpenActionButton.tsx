@@ -1,9 +1,9 @@
-// Module ID: 14997
-// Function ID: 112954
+// Module ID: 15004
+// Function ID: 112978
 // Name: BadgedBookmarksIcon
 // Dependencies: []
 
-// Module 14997 (BadgedBookmarksIcon)
+// Module 15004 (BadgedBookmarksIcon)
 function BadgedBookmarksIcon(showRedDot) {
   let obj = arg1(dependencyMap[9]);
   const token = obj.useToken(importDefault(dependencyMap[7]).colors.INTERACTIVE_TEXT_DEFAULT, importDefault(dependencyMap[8])());
@@ -41,7 +41,7 @@ let obj2 = arg1(dependencyMap[6]);
 obj = { container: {} };
 const tmp2 = arg1(dependencyMap[3]);
 obj.iconAnchor = { width: arg1(dependencyMap[5]).ICON_SIZE.sm, height: arg1(dependencyMap[5]).ICON_SIZE.sm, position: "relative" };
-obj2 = { <string:2368002727>: null, <string:359710633>: null, <string:3984662774>: null, <string:3283166543>: null, <string:4168304298>: null, <string:1398983781>: null, <string:3429226595>: null, backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_FEEDBACK_NOTIFICATION, borderRadius: importDefault(dependencyMap[7]).radii.lg };
+obj2 = { backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_FEEDBACK_NOTIFICATION, borderRadius: importDefault(dependencyMap[7]).radii.lg };
 obj.dot = obj2;
 let closure_9 = obj2.createStyles(obj);
 const obj1 = { width: arg1(dependencyMap[5]).ICON_SIZE.sm, height: arg1(dependencyMap[5]).ICON_SIZE.sm, position: "relative" };
@@ -68,7 +68,7 @@ const forwardRefResult = importAllResult.forwardRef((onOpen, ref) => {
     obj = { presentation: "modal" };
     obj.pushLazy(onOpen(paths[18])(paths[17], paths.paths), {}, "for-later-modal", obj);
   }, items2);
-  obj = { icon: callback(BadgedBookmarksIcon, { showRedDot: stateFromStores }), onPress: callback };
+  obj = { 9223372036854775807: 8817, -9223372036854775808: 1091633408, icon: callback(BadgedBookmarksIcon, { showRedDot: stateFromStores }), onPress: callback };
   const intl = ref(dependencyMap[20]).intl;
   obj.accessibilityLabel = intl.string(ref(dependencyMap[20]).t.2pAkDA);
   obj.maxFontSizeMultiplier = 2;

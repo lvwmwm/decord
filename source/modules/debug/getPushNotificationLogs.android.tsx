@@ -1,10 +1,10 @@
-// Module ID: 10306
-// Function ID: 79592
+// Module ID: 10312
+// Function ID: 79611
 // Name: getPushNotificationLogs
 // Dependencies: []
 // Exports: default
 
-// Module 10306 (getPushNotificationLogs)
+// Module 10312 (getPushNotificationLogs)
 let closure_2 = importDefault(dependencyMap[0]);
 const result = arg1(dependencyMap[2]).fileFinishedImporting("modules/debug/getPushNotificationLogs.android.tsx");
 

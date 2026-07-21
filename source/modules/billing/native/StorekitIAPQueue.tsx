@@ -1,9 +1,9 @@
-// Module ID: 7213
-// Function ID: 58135
+// Module ID: 7217
+// Function ID: 58146
 // Name: productSK2ToIAPProduct
 // Dependencies: []
 
-// Module 7213 (productSK2ToIAPProduct)
+// Module 7217 (productSK2ToIAPProduct)
 function productSK2ToIAPProduct(description) {
   let items = [];
   if (null != description.subscription.promotionalOffers) {

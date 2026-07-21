@@ -1,10 +1,10 @@
-// Module ID: 6729
-// Function ID: 52397
+// Module ID: 6735
+// Function ID: 52446
 // Name: getEmbedFieldFromMessage
 // Dependencies: []
 // Exports: default, extractAutomodNotificationFields, getActionHeaderText, getActionHeaderTextMobile, getQuarantineReasonString, getRaidAlertResolveCTAText, getUserIdOfAutomodAction, isAutomodMessageRecord, isAutomodNotification, useAutomodAlertActions
 
-// Module 6729 (getEmbedFieldFromMessage)
+// Module 6735 (getEmbedFieldFromMessage)
 function getEmbedFieldFromMessage(embeds, APPLICATION_NAME) {
   embeds = embeds.embeds;
   if (null == embeds) {

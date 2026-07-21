@@ -1,10 +1,10 @@
-// Module ID: 12128
-// Function ID: 93466
+// Module ID: 12135
+// Function ID: 93489
 // Name: getMediaViewerStateForScreen
 // Dependencies: []
 // Exports: default
 
-// Module 12128 (getMediaViewerStateForScreen)
+// Module 12135 (getMediaViewerStateForScreen)
 const _module = require(dependencyMap[1]);
 const result = _module.fileFinishedImporting("modules/media_viewer/native/getMediaViewerStateForScreen.tsx");
 

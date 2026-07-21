@@ -1,10 +1,10 @@
-// Module ID: 5763
-// Function ID: 49333
+// Module ID: 5765
+// Function ID: 49376
 // Name: canChannelUseSoundboard
 // Dependencies: []
 // Exports: canSelectedVoiceChannelUseSoundboard, useCanChannelUseSoundboard
 
-// Module 5763 (canChannelUseSoundboard)
+// Module 5765 (canChannelUseSoundboard)
 function canChannelUseSoundboard(channel) {
   if (null == channel) {
     return false;

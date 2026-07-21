@@ -1,10 +1,10 @@
-// Module ID: 15446
-// Function ID: 117841
+// Module ID: 15453
+// Function ID: 117865
 // Name: RestrictedMessagePreviewActions
 // Dependencies: []
 // Exports: default
 
-// Module 15446 (RestrictedMessagePreviewActions)
+// Module 15453 (RestrictedMessagePreviewActions)
 let closure_3 = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 let closure_5 = importDefault(dependencyMap[2]);
@@ -16,7 +16,7 @@ let obj = arg1(dependencyMap[6]);
 obj = {};
 obj = { gap: importDefault(dependencyMap[7]).space.PX_8, marginVertical: importDefault(dependencyMap[7]).space.PX_12 };
 obj.container = obj;
-const obj1 = { APP_DMS_ENTRY_POINT_COMMAND_BUTTON: null, desert: null, gap: importDefault(dependencyMap[7]).space.PX_8 };
+const obj1 = { 1925026477: null, -1346530010: null, gap: importDefault(dependencyMap[7]).space.PX_8 };
 obj.buttonRow = obj1;
 let closure_11 = obj.createStyles(obj);
 const tmp3 = arg1(dependencyMap[5]);
@@ -118,7 +118,7 @@ export default function RestrictedMessagePreviewActions(channel) {
     let tmp22 = null;
     let tmp24 = null;
     if (!user.bot) {
-      obj1 = { st: null, borderWidth: null };
+      obj1 = {};
       const intl8 = arg1(dependencyMap[20]).intl;
       obj1.text = intl8.string(arg1(dependencyMap[20]).t.PMsq/b);
       obj1.onPress = callback;
@@ -132,7 +132,7 @@ export default function RestrictedMessagePreviewActions(channel) {
     let obj7 = importDefault(dependencyMap[13]);
     obj2.username = obj7.getName(user);
     formatResult = intl5.format(arg1(dependencyMap[20]).t.uIomXw, obj2);
-    const obj3 = { st: null, borderWidth: null };
+    const obj3 = {};
     const intl6 = arg1(dependencyMap[20]).intl;
     obj3.text = intl6.string(arg1(dependencyMap[20]).t.+WbSn5);
     obj3.onPress = callback1;
@@ -151,7 +151,7 @@ export default function RestrictedMessagePreviewActions(channel) {
     formatResult = null;
     tmp24 = null;
   } else if (constants.PENDING_OUTGOING === stateFromStores) {
-    const obj6 = { SUPPRESS_GUILD_REMINDER_NOTIFICATIONS: "<string:30706176>", r_Step_1b$esjava$0: "<string:1416249856>", streamingMembers: "<string:3591307266>", STARTS_WITH_COMMAND_NAME: "<string:410058753>" };
+    const obj6 = {};
     const intl3 = arg1(dependencyMap[20]).intl;
     obj6.text = intl3.string(arg1(dependencyMap[20]).t.xMH6vD);
     obj6.onPress = undefined;
@@ -175,7 +175,7 @@ export default function RestrictedMessagePreviewActions(channel) {
   const obj8 = { style: tmp.container };
   let tmp37 = null != formatResult;
   if (tmp37) {
-    const obj9 = { INTEGRATION_CREATE: "AutomodMentionRaidLimit", ConstraintReasonCode: "%URIError%", children: formatResult };
+    const obj9 = { children: formatResult };
     tmp37 = callback(arg1(dependencyMap[21]).Text, obj9);
   }
   const items9 = [tmp37, ];

@@ -1,14 +1,13 @@
-// Module ID: 7716
-// Function ID: 61407
+// Module ID: 7720
+// Function ID: 61419
 // Name: createGuildReportFalseAlarmSystemMessage
 // Dependencies: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 // Exports: createGuildReportFalseAlarmSystemMessage
 
-// Module 7716 (createGuildReportFalseAlarmSystemMessage)
-import closure_3 from "result";
-import result from "result";
+// Module 7720 (createGuildReportFalseAlarmSystemMessage)
+import __exportStarResult1 from "__exportStarResult1";
 
-result = result.fileFinishedImporting("modules/messages/native/renderer/system_messages/GuildReportFalseAlarmSystemMessage.tsx");
+const result = require("__exportStarResult1").fileFinishedImporting("modules/messages/native/renderer/system_messages/GuildReportFalseAlarmSystemMessage.tsx");
 
 export const createGuildReportFalseAlarmSystemMessage = function createGuildReportFalseAlarmSystemMessage(roleStyle) {
   let message;

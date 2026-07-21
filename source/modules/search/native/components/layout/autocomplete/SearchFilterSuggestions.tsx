@@ -1,9 +1,9 @@
-// Module ID: 15189
-// Function ID: 114640
+// Module ID: 15196
+// Function ID: 114664
 // Name: SearchFilterPrefixRow
 // Dependencies: []
 
-// Module 15189 (SearchFilterPrefixRow)
+// Module 15196 (SearchFilterPrefixRow)
 function SearchFilterPrefixRow(text) {
   text = text.text;
   const arg1 = text;
@@ -11,7 +11,7 @@ function SearchFilterPrefixRow(text) {
   const importDefault = searchTokenType;
   const onPress = text.onPress;
   const dependencyMap = onPress;
-  let obj = {};
+  let obj = { -9223372036854775808: "spring", -9223372036854775808: "linear", 0: "easeInEaseOut" };
   Object.setPrototypeOf(null);
   const merged = Object.assign(text, obj);
   const items = [searchTokenType];
@@ -32,7 +32,7 @@ function SearchFilterPrefixRow(text) {
     onPress(text);
   }, items2);
   obj = { icon: memo, onPress: callback };
-  obj = { CHANNEL_HIGHLIGHT: true, guild_template_description: 15.1, borderWidth: 253, children: text };
+  obj = { encodingConfig: true, showRemove: 15.1, PREMIUM_CUSTOM_NOTIFICATION_SOUND_SETTINGS_UPSELL: 253, children: text };
   obj.label = jsx(arg1(dependencyMap[9]).Text, obj);
   obj.subLabel = memo1;
   const merged1 = Object.assign(merged);

@@ -38,7 +38,7 @@ let tmp2 = (MessageType) => {
   class NormalState$Type {
     constructor() {
       tmp = closure_3(this, NormalState$Type);
-      items = [null];
+      items = [];
       items[1] = [];
       return closure_15(this, NormalState$Type, items);
     }
@@ -94,7 +94,7 @@ let tmp4 = (MessageType) => {
   class RestrictedState$Type {
     constructor() {
       tmp = closure_3(this, RestrictedState$Type);
-      obj = { emojiId: "FOUR_X", emojiName: "ksh", userId: "y" };
+      obj = { "Null": "CONFUSING_LANGUAGE", "Null": "findLastKey", "Null": "y" };
       obj.T = function T() {
         return callback(closure_1[7]).Timestamp;
       };
@@ -349,18 +349,18 @@ let tmp8 = (MessageType) => {
   class TempBannedState$Type {
     constructor() {
       tmp = closure_3(this, TempBannedState$Type);
-      obj = { emojiId: "@braintree/browser-detection/is-ios-webview", emojiName: "<string:2410889472>", userId: "<string:3110141954>" };
+      obj = { "Null": "_handleGuildMembersChunkBatch", "Null": "<string:2408202496>", "Null": "<string:3110141954>" };
       obj.T = function T() {
         return callback(closure_1[7]).Timestamp;
       };
       items = [, , ];
       items[0] = obj;
-      obj = { "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, "Bool(false)": false };
-      obj.T = function T() {
-        const items = [null, callback(closure_1[8]).ClassificationType];
-        return items;
+      items[1] = {
+        T() {
+              const items = [null, callback(closure_1[8]).ClassificationType];
+              return items;
+            }
       };
-      items[1] = obj;
       items[2] = {
         T() {
               return callback(closure_1[7]).Timestamp;
@@ -555,11 +555,11 @@ let tmp10 = (MessageType) => {
       };
       items = [, ];
       items[0] = obj;
-      obj = { emojiId: "#F6CD12", emojiName: "#FED400", userId: "#FFFFFF" };
-      obj.T = function T() {
-        return callback(closure_1[7]).Timestamp;
+      items[1] = {
+        T() {
+              return callback(closure_1[7]).Timestamp;
+            }
       };
-      items[1] = obj;
       items1 = [];
       items1[1] = items;
       return closure_15(this, BannedState$Type, items1);
@@ -724,18 +724,17 @@ let tmp12 = (MessageType) => {
   class SafetyState$Type {
     constructor() {
       tmp = closure_3(this, SafetyState$Type);
-      obj = {
-        T() {
-              return closure_10;
-            }
+      obj = { "Null": "<string:1167785986>", "Null": "<string:3242328066>", "Null": "<string:3238003759>", "Null": "<string:1090520111>" };
+      obj.T = function T() {
+        return closure_10;
       };
       items = [, , , , , , , ];
       items[0] = obj;
-      obj = { flexDirection: 203552531824793940000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, alignItems: 239128345749470530000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, backgroundColor: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000009469770953945147, borderRadius: 56678241576748110000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 };
-      obj.T = function T() {
-        return closure_11;
+      items[1] = {
+        T() {
+              return closure_11;
+            }
       };
-      items[1] = obj;
       items[2] = {
         T() {
               return closure_12;
@@ -746,28 +745,28 @@ let tmp12 = (MessageType) => {
               return closure_13;
             }
       };
-      obj1 = { flexDirection: 4, alignItems: true, backgroundColor: "/assets/.cache/intl/ZGVzaWdu", borderRadius: null };
-      obj1.T = function T() {
+      obj = { "Null": null, "Null": 4, "Null": true, "Null": "/assets/.cache/intl/ZGVzaWdu" };
+      obj.T = function T() {
         return closure_14;
       };
-      items[4] = obj1;
-      obj2 = { emojiId: null, emojiName: null, userId: null };
-      obj2.T = function T() {
+      items[4] = obj;
+      obj1 = { "Null": "Path 2", "Null": "ADBE Vector Shape - Group", "Null": false };
+      obj1.T = function T() {
         const items = [, closure_8];
         return items;
       };
-      items[5] = obj2;
+      items[5] = obj1;
       items[6] = {
         T() {
               const items = [, closure_9];
               return items;
             }
       };
-      obj3 = { emojiId: "1 day", emojiName: "{{count}} days", userId: "about 1 week" };
-      obj3.T = function T() {
-        return callback(closure_1[9]).UInt64Value;
+      items[7] = {
+        T() {
+              return callback(closure_1[9]).UInt64Value;
+            }
       };
-      items[7] = obj3;
       items1 = [null];
       items1[1] = items;
       return closure_15(this, SafetyState$Type, items1);

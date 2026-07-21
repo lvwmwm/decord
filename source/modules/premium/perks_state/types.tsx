@@ -1,7 +1,7 @@
 // Module ID: 1866
 // Function ID: 20536
 // Name: PerkConfigType
-// Dependencies: []
+// Dependencies: [284214097]
 
 // Module 1866 (PerkConfigType)
 const _module = require(dependencyMap[0]);

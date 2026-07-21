@@ -4,12 +4,12 @@
 // Dependencies: []
 
 // Module 3931 (OmnibuttonCoachmarkRive)
-let closure_3 = ["aria-current", "activeClassName", "activeStyle", "className", "exact", "isActive"];
+let closure_3 = [true, true, true, true, true, true];
 let closure_4 = importDefault(dependencyMap[0]);
 const importAllResult = importAll(dependencyMap[1]);
 const jsx = arg1(dependencyMap[2]).jsx;
 let closure_7 = { Omnibutton: { reducedMotion: "boolean" } };
-let closure_8 = { Omnibutton: ["isActive"] };
+let closure_8 = { Omnibutton: [1358955054] };
 let closure_9 = {
   Omnibutton: function OmnibuttonBindings(arg0) {
     let instance;

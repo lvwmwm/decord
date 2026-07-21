@@ -1,10 +1,10 @@
-// Module ID: 11619
-// Function ID: 90243
+// Module ID: 11626
+// Function ID: 90266
 // Name: UserProfileStackedActionSheet
 // Dependencies: []
 // Exports: UserProfileStackedActionSheetList, UserProfileStackedActionSheetSectionList, default
 
-// Module 11619 (UserProfileStackedActionSheet)
+// Module 11626 (UserProfileStackedActionSheet)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 ({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[2]));
@@ -26,7 +26,7 @@ export default function UserProfileStackedActionSheet(onBack) {
   let children;
   let title;
   onBack = onBack.onBack;
-  let obj = {};
+  let obj = { "Bool(false)": "spring", "Bool(false)": "linear", "Bool(false)": "easeInEaseOut" };
   ({ title, children } = onBack);
   Object.setPrototypeOf(null);
   const merged = Object.assign(onBack, obj);
@@ -54,10 +54,12 @@ export default function UserProfileStackedActionSheet(onBack) {
     obj2.children = callback(arg1(dependencyMap[12]).ArrowLargeLeftIcon, obj3);
     tmp9 = callback(arg1(dependencyMap[10]).PressableOpacity, obj2);
   }
-  const items1 = [tmp9, callback(arg1(dependencyMap[13]).Text, { children: title }), ];
+  const items1 = [tmp9, , ];
+  const obj4 = { 1655478700: 17, 72438626: "message_display_compact", 1446732292: "message", children: title };
+  items1[1] = callback(arg1(dependencyMap[13]).Text, obj4);
   if (tmp4) {
-    const obj4 = { style: tmp3.headerSpacer };
-    tmp4 = callback(View, obj4);
+    const obj5 = { style: tmp3.headerSpacer };
+    tmp4 = callback(View, obj5);
   }
   items1[2] = tmp4;
   obj.children = items1;
@@ -69,7 +71,7 @@ export const UserProfileStackedActionSheetList = function UserProfileStackedActi
   data = data.data;
   const arg1 = data;
   const importDefault = data.renderItem;
-  let obj = {};
+  let obj = { updateVideoStreamId: "spring", code: "linear", onPressClose: "easeInEaseOut" };
   Object.setPrototypeOf(null);
   const merged = Object.assign(data, obj);
   const tmp3 = callback2();

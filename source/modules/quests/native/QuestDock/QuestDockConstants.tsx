@@ -1,9 +1,9 @@
-// Module ID: 13863
-// Function ID: 104921
+// Module ID: 13870
+// Function ID: 104944
 // Name: QUEST_DOCK_COLLAPSED_HEIGHT
 // Dependencies: []
 
-// Module 13863 (QUEST_DOCK_COLLAPSED_HEIGHT)
+// Module 13870 (QUEST_DOCK_COLLAPSED_HEIGHT)
 let obj = {};
 obj = {};
 const merged = Object.assign(obj);

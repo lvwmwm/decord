@@ -1,10 +1,10 @@
-// Module ID: 4312
-// Function ID: 37750
+// Module ID: 4316
+// Function ID: 37798
 // Name: computeDefaultGroupDmNameFromUserIds
 // Dependencies: []
 // Exports: computeGroupDmName, default, unescapeChannelName, useComputedGroupDmName
 
-// Module 4312 (computeDefaultGroupDmNameFromUserIds)
+// Module 4316 (computeDefaultGroupDmNameFromUserIds)
 function computeDefaultGroupDmNameFromUserIds(recipients, getUser, closure_12) {
   getUser = closure_12;
   const mapped = recipients.map(getUser.getUser);

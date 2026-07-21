@@ -1,10 +1,10 @@
-// Module ID: 4448
-// Function ID: 39185
+// Module ID: 4452
+// Function ID: 39233
 // Name: _createStripeSetupIntent
 // Dependencies: []
 // Exports: createSetupIntentForPaymentElements, createStripeSetupIntent
 
-// Module 4448 (_createStripeSetupIntent)
+// Module 4452 (_createStripeSetupIntent)
 async function _createStripeSetupIntent() {
   const fn = function*(sendMessageOptionsForReply) {
     let obj = sendMessageOptionsForReply;
@@ -13,7 +13,7 @@ async function _createStripeSetupIntent() {
     }
     yield undefined;
     const HTTP = callback(closure_1[2]).HTTP;
-    obj = { CONVERSATIONS: null, replace: null, push: null, url: constants.BILLING_STRIPE_SETUP_INTENT_SECRET };
+    obj = { lc: null, type: null, end: null, url: constants.BILLING_STRIPE_SETUP_INTENT_SECRET };
     const merged = Object.assign(obj);
     return yield HTTP.post(obj).body;
   };
@@ -28,7 +28,7 @@ async function _createSetupIntentForPaymentElements() {
     }
     yield undefined;
     const HTTP = callback(closure_1[2]).HTTP;
-    obj = { url: constants.BILLING_STRIPE_SETUP_INTENT_SECRET_FOR_PAYMENT_ELEMENTS };
+    obj = { lc: true, type: true, end: true, middle: true, url: constants.BILLING_STRIPE_SETUP_INTENT_SECRET_FOR_PAYMENT_ELEMENTS };
     const merged = Object.assign(obj);
     return yield HTTP.post(obj).body;
   };

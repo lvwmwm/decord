@@ -1,10 +1,16 @@
-// Module ID: 11680
-// Function ID: 90651
+// Module ID: 11687
+// Function ID: 90674
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: []
+// Dependencies: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 // Exports: getHubProgressTitleForStep, getNextHubProgressStep, useHubProgressBarCompletedSteps
 
-// Module 11680 (_createForOfIteratorHelperLoose)
+// Module 11687 (_createForOfIteratorHelperLoose)
+import __exportStarResult1 from "__exportStarResult1";
+import closure_3 from "__exportStarResult1";
+import closure_4 from "__exportStarResult1";
+import { HUB_PROGRESS_STEP_ORDER } from "__exportStarResult1";
+import { PlatformTypes } from "__exportStarResult1";
+
 function _createForOfIteratorHelperLoose(@@iterator) {
   let arg1 = Symbol_iterator;
   @@iterator = "undefined" !== typeof Symbol;
@@ -128,12 +134,7 @@ function useCompletedStepsFromSettings(arg0) {
     return set;
   }, items1);
 }
-let closure_2 = importAll(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-const HUB_PROGRESS_STEP_ORDER = arg1(dependencyMap[3]).HUB_PROGRESS_STEP_ORDER;
-const PlatformTypes = arg1(dependencyMap[4]).PlatformTypes;
-const result = arg1(dependencyMap[10]).fileFinishedImporting("modules/hub/HubProgressBarUtils.tsx");
+const result = require("__exportStarResult1").fileFinishedImporting("modules/hub/HubProgressBarUtils.tsx");
 
 export const getHubProgressTitleForStep = function getHubProgressTitleForStep(nextHubProgressStep) {
   if (arg1(dependencyMap[6]).HubProgressStep.JOIN_GUILD === nextHubProgressStep) {

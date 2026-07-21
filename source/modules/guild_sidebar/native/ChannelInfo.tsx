@@ -1,10 +1,10 @@
-// Module ID: 14916
-// Function ID: 112333
+// Module ID: 14923
+// Function ID: 112357
 // Name: LimitAndDurationInfo
 // Dependencies: []
 // Exports: default
 
-// Module 14916 (LimitAndDurationInfo)
+// Module 14923 (LimitAndDurationInfo)
 function LimitAndDurationInfo(channel) {
   let hasMedia;
   let hasVideo;

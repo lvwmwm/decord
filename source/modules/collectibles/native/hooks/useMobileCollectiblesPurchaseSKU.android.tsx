@@ -1,10 +1,10 @@
-// Module ID: 11799
-// Function ID: 91579
+// Module ID: 11806
+// Function ID: 91602
 // Name: useMobileCollectiblesPurchaseSKU
 // Dependencies: []
 // Exports: default
 
-// Module 11799 (useMobileCollectiblesPurchaseSKU)
+// Module 11806 (useMobileCollectiblesPurchaseSKU)
 let closure_3 = importDefault(dependencyMap[0]);
 const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/collectibles/native/hooks/useMobileCollectiblesPurchaseSKU.android.tsx");
 

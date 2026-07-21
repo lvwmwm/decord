@@ -1,10 +1,10 @@
-// Module ID: 10525
-// Function ID: 82260
+// Module ID: 10531
+// Function ID: 82283
 // Name: useShouldForcePipOrientation
 // Dependencies: []
 // Exports: useShouldForcePipOrientation
 
-// Module 10525 (useShouldForcePipOrientation)
+// Module 10531 (useShouldForcePipOrientation)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 let closure_5 = importDefault(dependencyMap[2]);

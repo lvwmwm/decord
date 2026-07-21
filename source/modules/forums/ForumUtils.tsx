@@ -1,17 +1,10 @@
-// Module ID: 5678
-// Function ID: 48827
+// Module ID: 5680
+// Function ID: 48870
 // Name: getForumPostReadStates
-// Dependencies: [0, 0, 0, 0, 0, 0, 0, 0]
+// Dependencies: []
 // Exports: canDisplayPostUnreadMessageCount, getForumPostReadStatesById, getForumTimestampFormatter, isForumPostPinned
 
-// Module 5678 (getForumPostReadStates)
-import closure_2 from "result";
-import closure_3 from "result";
-import closure_4 from "result";
-import { ForumTimestampFormats } from "result";
-import { ChannelFlags } from "result";
-import result from "result";
-
+// Module 5680 (getForumPostReadStates)
 function getForumPostReadStates(channel, guild, items) {
   let obj;
   let tmp = items;
@@ -35,7 +28,12 @@ function getCreationDefaultFormatter() {
   obj.month = intl.string(arg1(dependencyMap[5]).t.nBNJ/L);
   return obj;
 }
-result = result.fileFinishedImporting("modules/forums/ForumUtils.tsx");
+let closure_2 = importDefault(dependencyMap[0]);
+let closure_3 = importDefault(dependencyMap[1]);
+let closure_4 = importDefault(dependencyMap[2]);
+const ForumTimestampFormats = arg1(dependencyMap[3]).ForumTimestampFormats;
+const ChannelFlags = arg1(dependencyMap[4]).ChannelFlags;
+const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/forums/ForumUtils.tsx");
 
 export { getForumPostReadStates };
 export const getForumPostReadStatesById = function getForumPostReadStatesById(channelId) {

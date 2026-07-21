@@ -1,9 +1,9 @@
-// Module ID: 6788
-// Function ID: 53590
+// Module ID: 6794
+// Function ID: 53639
 // Name: CollectiblesMarketingType
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 6788 (CollectiblesMarketingType)
+// Module 6794 (CollectiblesMarketingType)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_common/js/shared/shared-constants/CollectiblesMarketingType.tsx");
 

@@ -1,14 +1,14 @@
-// Module ID: 6724
-// Function ID: 52367
+// Module ID: 6730
+// Function ID: 52416
 // Name: usePlatformAllowed
-// Dependencies: [57, 1881, 6744, 2, 57, 6, 7, 1917, 6718, 2, 6, 7]
+// Dependencies: [57, 1881, 6750, 2, 57, 6, 7, 1917, 6724, 2, 6, 7]
 // Exports: useEmptyStatePlatforms, useLegacyPlatformType, usePlatforms
 
-// Module 6724 (usePlatformAllowed)
+// Module 6730 (usePlatformAllowed)
 import closure_3 from "_slicedToArray";
 import PermissionOverwriteType from "PermissionOverwriteType";
 import ApplicationCommandSectionType from "ApplicationCommandSectionType";
-import keys from "keys";
+import result2 from "result2";
 import _slicedToArray from "_slicedToArray";
 import { KeyboardKeysUpdated } from "_classCallCheck";
 import _defineProperties from "_defineProperties";
@@ -16,7 +16,7 @@ import _defineProperties from "_defineProperties";
 let PlatformTypes;
 function usePlatformAllowed(forUserProfile) {
   const arg1 = forUserProfile.forUserProfile;
-  const items = [keys];
+  const items = [result2];
   let closure_1 = arg1(dependencyMap[7]).useStateFromStores(items, () => currentUser.getCurrentUser());
   const PlayStationVoiceExperiment = arg1(dependencyMap[8]).PlayStationVoiceExperiment;
   const dependencyMap = PlayStationVoiceExperiment.useConfig({ location: "f2f7ef_1" }).allowPlayStationStaging;
@@ -53,7 +53,7 @@ function usePlatformAllowed(forUserProfile) {
   };
 }
 ({ ACTIVITY_PLATFORM_TYPES: closure_7, PlatformTypes } = _slicedToArray);
-let closure_10 = { [PlatformTypes.INSTAGRAM]: ["define"] };
+let closure_10 = { [PlatformTypes.INSTAGRAM]: [] };
 const items = [PlatformTypes.INSTAGRAM, new Date(2023, 1, 18).getTime()];
 const items1 = [items];
 const map = new Map(items1);

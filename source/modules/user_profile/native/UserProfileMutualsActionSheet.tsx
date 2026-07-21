@@ -1,10 +1,10 @@
-// Module ID: 11625
-// Function ID: 90263
+// Module ID: 11632
+// Function ID: 90286
 // Name: MutualFriendRow
 // Dependencies: []
 // Exports: default
 
-// Module 11625 (MutualFriendRow)
+// Module 11632 (MutualFriendRow)
 function MutualFriendRow(mutualFriend) {
   let end;
   let isMobileOnline;
@@ -109,10 +109,10 @@ obj.loadingState = { paddingTop: importDefault(dependencyMap[7]).space.PX_8, ali
 obj.emptyState = { alignItems: "center" };
 const obj1 = { paddingTop: importDefault(dependencyMap[7]).space.PX_8, alignItems: "center" };
 obj.activityStatusText = { color: importDefault(dependencyMap[7]).colors.TEXT_SUBTLE };
-const obj3 = { -9223372036854775808: true, filter: true, gap: importDefault(dependencyMap[7]).space.PX_4 };
-obj.mutualGuildSubLabel = obj3;
-let closure_11 = obj.createStyles(obj);
 const obj2 = { color: importDefault(dependencyMap[7]).colors.TEXT_SUBTLE };
+obj.mutualGuildSubLabel = { gap: importDefault(dependencyMap[7]).space.PX_4 };
+let closure_11 = obj.createStyles(obj);
+const obj3 = { gap: importDefault(dependencyMap[7]).space.PX_4 };
 const result = arg1(dependencyMap[26]).fileFinishedImporting("modules/user_profile/native/UserProfileMutualsActionSheet.tsx");
 
 export default function UserProfileMutualsActionSheet(user) {

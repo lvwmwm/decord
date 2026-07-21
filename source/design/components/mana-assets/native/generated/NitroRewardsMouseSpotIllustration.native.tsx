@@ -1,10 +1,10 @@
-// Module ID: 6339
-// Function ID: 50382
+// Module ID: 6341
+// Function ID: 50425
 // Name: NitroRewardsMouseSpotIllustration
 // Dependencies: []
 // Exports: NitroRewardsMouseSpotIllustration
 
-// Module 6339 (NitroRewardsMouseSpotIllustration)
+// Module 6341 (NitroRewardsMouseSpotIllustration)
 const jsx = require(dependencyMap[0]).jsx;
 const _module = require(dependencyMap[3]);
 const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/NitroRewardsMouseSpotIllustration.native.tsx");

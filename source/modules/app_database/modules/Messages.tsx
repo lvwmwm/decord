@@ -1,9 +1,9 @@
-// Module ID: 6698
-// Function ID: 51960
+// Module ID: 6704
+// Function ID: 52009
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 
-// Module 6698 (_createForOfIteratorHelperLoose)
+// Module 6704 (_createForOfIteratorHelperLoose)
 function _createForOfIteratorHelperLoose(@@iterator) {
   let arg1 = Symbol_iterator;
   @@iterator = "undefined" !== typeof Symbol;
@@ -188,7 +188,7 @@ const tmp4 = () => {
 let tmp5 = () => {
   class Messages {
     constructor() {
-      f52003 = this;
+      f52052 = this;
       tmp = closure_5(this, Messages);
       this.actions = {
         CHANNEL_DELETE(arg0, arg1) {

@@ -1,10 +1,10 @@
-// Module ID: 14183
-// Function ID: 107370
+// Module ID: 14190
+// Function ID: 107393
 // Name: NotificationPermissionSettingsHeader
 // Dependencies: []
 // Exports: default
 
-// Module 14183 (NotificationPermissionSettingsHeader)
+// Module 14190 (NotificationPermissionSettingsHeader)
 let closure_3 = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 ({ AnalyticEvents: closure_5, NOOP: closure_6 } = arg1(dependencyMap[2]));
@@ -17,7 +17,7 @@ obj = {};
 obj = { paddingTop: importDefault(dependencyMap[6]).space.PX_16 };
 obj.container = obj;
 obj.cardContent = { alignItems: "center" };
-const obj1 = { "Bool(false)": "<string:1090519624>", "Bool(false)": "2026-04-social-layer-storefront-mobile-purchasing", "Bool(false)": "<string:3628267361>", "Bool(false)": "<string:2197815725>", "Bool(false)": "<string:1375731975>", "Bool(false)": "<string:2583738129>", borderRadius: importDefault(dependencyMap[6]).radii.round, backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_MOD_MUTED, marginBottom: importDefault(dependencyMap[6]).space.PX_8 };
+const obj1 = { <string:173102256>: 109907, <string:1549034243>: 67503, <string:3972818102>: -1699303086, <string:374453936>: 1564545433, <string:4221592070>: 1912603216, <string:1637461585>: 24, borderRadius: importDefault(dependencyMap[6]).radii.round, backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_MOD_MUTED, marginBottom: importDefault(dependencyMap[6]).space.PX_8 };
 obj.iconCircle = obj1;
 const tmp4 = arg1(dependencyMap[4]);
 obj.body = { marginBottom: importDefault(dependencyMap[6]).space.PX_12, marginTop: importDefault(dependencyMap[6]).space.PX_8, textAlign: "center" };
@@ -41,17 +41,17 @@ export default function NotificationPermissionSettingsHeader() {
   let tmp5 = null;
   if (canSeePushNotificationNudge) {
     obj = { style: tmp.container };
-    obj = {};
+    obj = { display: "<string:2020689293>", flexDirection: "<string:16777216>" };
     const obj1 = { style: tmp.cardContent };
     const obj2 = { style: tmp.iconCircle };
     const obj3 = { size: "md", color: importDefault(dependencyMap[6]).colors.ICON_STRONG };
     obj2.children = callback(arg1(dependencyMap[10]).BellSlashIcon, obj3);
     const items1 = [callback(View, obj2), , , ];
-    const obj4 = { INTEGRATION_CREATE: 58, ConstraintReasonCode: 85 };
+    const obj4 = {};
     const intl = arg1(dependencyMap[12]).intl;
     obj4.children = intl.string(arg1(dependencyMap[12]).t.MUwOvc);
     items1[1] = callback(arg1(dependencyMap[11]).Text, obj4);
-    const obj5 = { debugLayout: null, EMPTY_SEARCH_QUERY_STRING: null, minWidth: null, style: tmp.body };
+    const obj5 = { style: tmp.body };
     const intl2 = arg1(dependencyMap[12]).intl;
     obj5.children = intl2.string(arg1(dependencyMap[12]).t.G4uKoe);
     items1[2] = callback(arg1(dependencyMap[11]).Text, obj5);

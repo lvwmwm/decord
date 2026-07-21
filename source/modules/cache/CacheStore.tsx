@@ -1,9 +1,9 @@
-// Module ID: 6697
-// Function ID: 51876
+// Module ID: 6703
+// Function ID: 51925
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
-// Module 6697 (_isNativeReflectConstruct)
+// Module 6703 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -46,7 +46,7 @@ async function _loadChannelHistory(arg0, guildId, channelId, arg3) {
   }
   closure_18.verbose("skipped loaded messages (channel: " + channelId + ", database: " + arg0 + ").");
   const items1 = [performance.now() - nowResult, ];
-  obj = { <string:3104355260>: false, <string:3130036820>: false, users: [], members: [], messages: [] };
+  obj = { "Bool(false)": "o", "Bool(false)": "o", users: [], members: [], messages: [] };
   items1[1] = obj;
   return items1;
 }
@@ -183,7 +183,7 @@ async function _loadEarlyCache(name, arg1, arg2, arg3) {
         const obj = arg1(closure_2[18]);
         arg1(closure_2[18]).time("\u{1F4BE}", "socket.processFirstQueuedDispatch()", () => {
           const dispatcher = dispatcher.dispatcher;
-          return dispatcher.processFirstQueuedDispatch(new Set([8194600381347578000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000]));
+          return dispatcher.processFirstQueuedDispatch(new Set([]));
         });
       });
     });
@@ -269,7 +269,7 @@ async function _loadInitialGuilds(arg0, page, arg2) {
 async function _loadInitialGuildChannels(arg0, page, arg2) {
   let guildId;
   if (null == arg0) {
-    return Promise.resolve({ "Null": false, "Null": false });
+    return Promise.resolve({ "Null": "o", "Null": "o" });
   } else {
     guildId = yield guildId(closure_2[31]).getCommittedVersions().initial_guild_id;
     let tmp = null == guildId;
@@ -287,7 +287,7 @@ async function _loadInitialGuildChannels(arg0, page, arg2) {
     }
     const _HermesInternal = HermesInternal;
     closure_18.verbose("skipped loading initial guild (guild: " + guildId + ", database: " + arg0 + ")");
-    return Promise.resolve({ "Null": false, "Null": false });
+    return Promise.resolve({ "Null": "o", "Null": "o" });
   }
 }
 async function _loadLateLazyCache(arg0, arg1, arg2, arg3, arg4) {
@@ -368,7 +368,7 @@ async function _loadLateLazyCache(arg0, arg1, arg2, arg3, arg4) {
     callback(() => {
       if (false === closure_4) {
         arg1(arg2[26])("database:not_ok");
-        arg1(arg2[28]).dispatch({ "Bool(true)": false, "Bool(true)": false });
+        arg1(arg2[28]).dispatch({ 0: false, 9223372036854775807: false });
         const obj14 = arg1(arg2[28]);
         let obj = { type: "CACHE_LOADED_LAZY_NO_CACHE" };
         arg1(arg2[28]).dispatch(obj);
@@ -379,7 +379,7 @@ async function _loadLateLazyCache(arg0, arg1, arg2, arg3, arg4) {
               if (null == closure_4) {
                 arg1(arg2[26])("database:versionless");
                 closure_18.log("kv_cache was not ok (null version with values)");
-                arg1(arg2[28]).dispatch({ "Bool(true)": 0.000000000000000000000000000000000000005877472958352305, "Bool(true)": 0.00000000000000000000000000002524355432732662 });
+                arg1(arg2[28]).dispatch({ 0: 0.000000000000000000000000000000000000005877472958352305, 9223372036854775807: 0.00000000000000000000000000002524355432732662 });
                 const obj8 = arg1(arg2[28]);
                 obj = { type: "CACHE_LOADED_LAZY_NO_CACHE" };
                 arg1(arg2[28]).dispatch(obj);
@@ -455,7 +455,7 @@ async function _loadLateLazyCache(arg0, arg1, arg2, arg3, arg4) {
         arg1(arg2[26])("database:load_failed");
         const _HermesInternal4 = HermesInternal;
         closure_18.log("couldn't load database item (\n          database: " + null != arg0 + "\n          basic_channels: " + null != closure_6 + "\n          guild_channels: " + null != closure_7 + "\n          guilds: " + null != closure_5 + "\n        )");
-        arg1(arg2[28]).dispatch({ "Bool(true)": 0.0000000000000000000000000000000000000000000000013684558017555923, "Bool(true)": 0.000000000000000000000000000000000000005877472958352305 });
+        arg1(arg2[28]).dispatch({ 0: 0.0000000000000000000000000000000000000000000000013684558017555923, 9223372036854775807: 0.000000000000000000000000000000000000005877472958352305 });
         const obj11 = arg1(arg2[28]);
         obj5 = { type: "CACHE_LOADED_LAZY_NO_CACHE" };
         arg1(arg2[28]).dispatch(obj5);
@@ -482,7 +482,7 @@ function resumeFluxAndSocket(arg0) {
       closure_18.verbose("Processing First Queued Dispatch");
       const dispatcher3 = lib.dispatcher;
       const _Set = Set;
-      const set = new Set([true, true]);
+      const set = new Set(["Array", "isArray"]);
       const result = dispatcher3.processFirstQueuedDispatch(set);
       const _setTimeout = setTimeout;
       const timerId = setTimeout(() => {

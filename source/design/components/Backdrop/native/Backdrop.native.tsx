@@ -1,10 +1,10 @@
-// Module ID: 4523
-// Function ID: 39710
+// Module ID: 4527
+// Function ID: 39758
 // Name: getBlurAmount
 // Dependencies: []
 // Exports: Backdrop
 
-// Module 4523 (getBlurAmount)
+// Module 4527 (getBlurAmount)
 function getBlurAmount(animatedProps) {
   if ("none" === animatedProps) {
     return 0;

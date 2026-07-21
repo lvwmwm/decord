@@ -1,10 +1,10 @@
-// Module ID: 14372
-// Function ID: 108499
+// Module ID: 14379
+// Function ID: 108522
 // Name: MenuIcon
 // Dependencies: []
 // Exports: MenuIcon
 
-// Module 14372 (MenuIcon)
+// Module 14379 (MenuIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/MenuIcon.tsx");

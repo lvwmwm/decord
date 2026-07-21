@@ -1,10 +1,10 @@
-// Module ID: 11424
-// Function ID: 88933
+// Module ID: 11431
+// Function ID: 88957
 // Name: ApplicationCommandLoadingItem
 // Dependencies: []
 // Exports: default
 
-// Module 11424 (ApplicationCommandLoadingItem)
+// Module 11431 (ApplicationCommandLoadingItem)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 const AUTOCOMPLETE_ROW_HEIGHT = arg1(dependencyMap[2]).AUTOCOMPLETE_ROW_HEIGHT;
@@ -12,13 +12,13 @@ const AUTOCOMPLETE_ROW_HEIGHT = arg1(dependencyMap[2]).AUTOCOMPLETE_ROW_HEIGHT;
 const tmp3 = arg1(dependencyMap[3]);
 let closure_7 = arg1(dependencyMap[4]).createStyles((arg0) => {
   let obj = {};
-  obj = { size: "TiktokNeutralIcon", text: "png", grow: true, variant: "/assets/design/components/Icon/native/redesign/generated/images", height: Math.max(arg0 * AUTOCOMPLETE_ROW_HEIGHT, AUTOCOMPLETE_ROW_HEIGHT) };
+  obj = { userId: true, bottom: true, marginTop: true, flex: true, height: Math.max(arg0 * AUTOCOMPLETE_ROW_HEIGHT, AUTOCOMPLETE_ROW_HEIGHT) };
   obj.applicationCommandLoadingItem = obj;
   obj.applicationCommandLoadingLeftWrapper = {};
   obj = { backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_MOD_STRONG };
   obj.applicationCommandLoadingName = obj;
-  const obj1 = { "Null": null, "Null": 0, "Null": null, "Null": 0, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_LOW };
-  obj.applicationCommandLoadingDescription = obj1;
+  obj.applicationCommandLoadingDescription = { backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_LOW };
+  const obj1 = { backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_LOW };
   obj.applicationCommandLoadingSectionName = { backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_MOD_STRONG };
   return obj;
 });

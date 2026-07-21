@@ -1,10 +1,10 @@
-// Module ID: 8202
-// Function ID: 64865
+// Module ID: 8206
+// Function ID: 64877
 // Name: getSizedAssetUri
 // Dependencies: []
 // Exports: default
 
-// Module 8202 (getSizedAssetUri)
+// Module 8206 (getSizedAssetUri)
 let StyleSheet;
 function getSizedAssetUri(bgStatic, targetSize) {
   if (null != targetSize) {
@@ -179,7 +179,7 @@ const obj1 = {};
 const merged2 = Object.assign(StyleSheet.absoluteFillObject);
 obj1["opacity"] = 0.8;
 obj.bgMutedWrap = obj1;
-obj.bgImage = { aze: 30271555, azj: 22092032 };
+obj.bgImage = {};
 const obj2 = {};
 const merged3 = Object.assign(StyleSheet.absoluteFillObject);
 obj2["overflow"] = "hidden";
@@ -198,21 +198,21 @@ let closure_9 = arg1(dependencyMap[5]).createStyles((arg0) => {
   obj = { position: "absolute", top: tmp.pfxTop, left: tmp.pfxLeft, width: tmp.pfxWidth, height: tmp.pfxHeight, backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_BASE_LOW, transform: items, zIndex: 0, overflow: "hidden", borderRadius: importDefault(dependencyMap[6]).radii.xs };
   const items = [{ rotate: "-8deg" }];
   obj.pfx = obj;
-  const obj1 = { y: null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null };
+  const obj1 = { y: null, y: null, isArray: null, valueOf: null, enabled: null, y: null, isArray: null };
   ({ avatarTop: obj4.top, avatarRight: obj4.right } = BUNDLE_PREVIEW_CONFIG[arg0]);
   const items1 = [{ rotate: "8deg" }];
   obj1.transform = items1;
   obj.avatar = obj1;
-  const obj2 = { y: null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null };
+  const obj2 = { y: null, y: null, isArray: null, valueOf: null, enabled: null, y: null, isArray: null };
   ({ avatarWithNameplateTop: obj5.top, avatarWithNameplateRight: obj5.right } = BUNDLE_PREVIEW_CONFIG[arg0]);
   const items2 = [{ rotate: "8deg" }];
   obj2.transform = items2;
   obj2.shadowColor = importDefault(dependencyMap[6]).colors.BLACK;
-  obj2.shadowOffset = { aze: false, azj: false };
+  obj2.shadowOffset = {};
   obj2.shadowOpacity = 0.5;
   obj2.shadowRadius = 4;
   obj.avatarWithNameplate = obj2;
-  obj.nameplate = { bottom: BUNDLE_PREVIEW_CONFIG[arg0].nameplateBottom, backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_BASE_LOWER, borderRadius: importDefault(dependencyMap[6]).radii.sm, shadowColor: importDefault(dependencyMap[6]).colors.BLACK, shadowOffset: { aze: false, azj: false }, shadowOpacity: 0.5, shadowRadius: 4 };
+  obj.nameplate = { bottom: BUNDLE_PREVIEW_CONFIG[arg0].nameplateBottom, backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_BASE_LOWER, borderRadius: importDefault(dependencyMap[6]).radii.sm, shadowColor: importDefault(dependencyMap[6]).colors.BLACK, shadowOffset: {}, shadowOpacity: 0.5, shadowRadius: 4 };
   return obj;
 });
 const obj7 = arg1(dependencyMap[5]);

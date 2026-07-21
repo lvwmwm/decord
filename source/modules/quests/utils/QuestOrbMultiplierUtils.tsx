@@ -1,17 +1,15 @@
-// Module ID: 9454
-// Function ID: 73673
+// Module ID: 9458
+// Function ID: 73687
 // Name: items
 // Dependencies: [0, 4294967295, 4294967295, 0, 0]
 // Exports: getQuestOrbMultiplierSource, shouldReceiveQuestOrbMultiplier
 
-// Module 9454 (items)
-import result from "result";
-
+// Module 9458 (items)
 let obj = { UPSELL: "UPSELL", NITRO: "NITRO", CREPE: "CREPE", INELIGIBLE: "INELIGIBLE" };
 obj = { NITRO: "nitro", CREPE: "crepe" };
 const items = [, ];
 ({ CREPE: arr[0], NITRO: arr[1] } = obj);
-result = result.fileFinishedImporting("modules/quests/utils/QuestOrbMultiplierUtils.tsx");
+const result = require("__exportStarResult1").fileFinishedImporting("modules/quests/utils/QuestOrbMultiplierUtils.tsx");
 
 export const QuestOrbMultiplierEligibilityType = obj;
 export const QuestOrbMultiplierSource = obj;

@@ -1,10 +1,10 @@
-// Module ID: 7925
-// Function ID: 63307
+// Module ID: 7929
+// Function ID: 63319
 // Name: sanitizeThreadName
-// Dependencies: []
+// Dependencies: [284214097]
 // Exports: default
 
-// Module 7925 (sanitizeThreadName)
+// Module 7929 (sanitizeThreadName)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("modules/threads/sanitizeThreadName.tsx");
 

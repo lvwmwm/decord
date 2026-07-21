@@ -1,9 +1,9 @@
-// Module ID: 7752
-// Function ID: 61579
+// Module ID: 7756
+// Function ID: 61591
 // Name: EphemeralMessageReason
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 7752 (EphemeralMessageReason)
+// Module 7756 (EphemeralMessageReason)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_common/js/shared/shared-constants/EphemeralMessageReason.tsx");
 

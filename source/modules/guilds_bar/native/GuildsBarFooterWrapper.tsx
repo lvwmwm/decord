@@ -1,10 +1,10 @@
-// Module ID: 14743
-// Function ID: 111175
+// Module ID: 14750
+// Function ID: 111199
 // Name: GuildsBarFooterWrapper
 // Dependencies: []
 // Exports: default
 
-// Module 14743 (GuildsBarFooterWrapper)
+// Module 14750 (GuildsBarFooterWrapper)
 const GUILD_ITEM_HIT_SLOP = require(dependencyMap[0]).GUILD_ITEM_HIT_SLOP;
 const jsx = require(dependencyMap[1]).jsx;
 const _module = require(dependencyMap[2]);

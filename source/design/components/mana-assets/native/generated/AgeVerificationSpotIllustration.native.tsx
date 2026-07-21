@@ -1,10 +1,10 @@
-// Module ID: 5845
-// Function ID: 49641
+// Module ID: 5847
+// Function ID: 49684
 // Name: AgeVerificationSpotIllustration
-// Dependencies: [131072, 561250304, 1862270976, 4127195156]
+// Dependencies: [131072, 561250304, 1895825408, 4160749588]
 // Exports: AgeVerificationSpotIllustration
 
-// Module 5845 (AgeVerificationSpotIllustration)
+// Module 5847 (AgeVerificationSpotIllustration)
 const jsx = require(dependencyMap[0]).jsx;
 const _module = require(dependencyMap[3]);
 const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/AgeVerificationSpotIllustration.native.tsx");

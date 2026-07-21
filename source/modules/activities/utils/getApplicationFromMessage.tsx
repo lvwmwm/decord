@@ -1,10 +1,10 @@
-// Module ID: 12181
-// Function ID: 93666
+// Module ID: 12188
+// Function ID: 93689
 // Name: getApplicationFromMessage
 // Dependencies: []
 // Exports: getApplicationFromMessage
 
-// Module 12181 (getApplicationFromMessage)
+// Module 12188 (getApplicationFromMessage)
 let closure_0 = importDefault(dependencyMap[0]);
 const SpotifyApplication = arg1(dependencyMap[1]).SpotifyApplication;
 const isSpotifyParty = arg1(dependencyMap[2]).isSpotifyParty;

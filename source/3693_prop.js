@@ -10,11 +10,11 @@ if (Intl.ListFormat) {
     const _Intl2 = Intl;
     let obj = {};
     obj = {};
-    obj = { long: { -33553176: 1996489450, -889191202: 1140851434, -1023408923: 191092, -905968411: 191099 }, narrow: { -33553176: 1996489450, -889191202: 1140851434, -1023408923: 191092, -905968411: 191099 }, short: { -33553176: 1996489450, -889191202: 1140851434, -1023408923: 191092, -905968411: 191099 } };
+    obj = { long: { "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true }, narrow: { "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true }, short: { "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true } };
     obj.conjunction = obj;
-    const obj1 = { long: { -33553176: 2063598314, -889191202: 1140851434, -1023408923: 191093, -905968411: 191099 }, narrow: { -33553176: 2063598314, -889191202: 1140851434, -1023408923: 191093, -905968411: 191099 }, short: { -33553176: 2063598314, -889191202: 1140851434, -1023408923: 191093, -905968411: 191099 } };
+    const obj1 = { long: { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null }, narrow: { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null }, short: { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null } };
     obj.disjunction = obj1;
-    const obj2 = { long: { -33553176: 2063598314, -889191202: 1140851434, -1023408923: 226369, -905968411: 191099 }, narrow: { -33553176: 2063598314, -889191202: 1140851434, -1023408923: 191081, -905968411: 191099 }, short: { -33553176: 2063598314, -889191202: 1140851434, -1023408923: 191081, -905968411: 191099 } };
+    const obj2 = { long: { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null }, narrow: { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null }, short: { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null } };
     obj.unit = obj2;
     obj.data = obj;
     obj.locale = "lt";
@@ -26,4 +26,4 @@ if (!prop) {
   prop = [];
 }
 globalThis.__FORMATJS_LISTFORMAT_DATA__ = prop;
-prop.push({ data: { conjunction: { long: { -33553176: 1996489450, -889191202: 1140851434, -1023408923: 191092, -905968411: 191099 }, narrow: { -33553176: 1996489450, -889191202: 1140851434, -1023408923: 191092, -905968411: 191099 }, short: { -33553176: 1996489450, -889191202: 1140851434, -1023408923: 191092, -905968411: 191099 } }, disjunction: { long: { -33553176: 2063598314, -889191202: 1140851434, -1023408923: 191093, -905968411: 191099 }, narrow: { -33553176: 2063598314, -889191202: 1140851434, -1023408923: 191093, -905968411: 191099 }, short: { -33553176: 2063598314, -889191202: 1140851434, -1023408923: 191093, -905968411: 191099 } }, unit: { long: { -33553176: 2063598314, -889191202: 1140851434, -1023408923: 226369, -905968411: 191099 }, narrow: { -33553176: 2063598314, -889191202: 1140851434, -1023408923: 191081, -905968411: 191099 }, short: { -33553176: 2063598314, -889191202: 1140851434, -1023408923: 191081, -905968411: 191099 } } }, locale: "lt" });
+prop.push({ data: { conjunction: { long: { "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true }, narrow: { "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true }, short: { "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true } }, disjunction: { long: { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null }, narrow: { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null }, short: { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null } }, unit: { long: { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null }, narrow: { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null }, short: { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null } } }, locale: "lt" });

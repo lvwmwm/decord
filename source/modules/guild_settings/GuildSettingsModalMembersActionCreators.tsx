@@ -1,13 +1,13 @@
-// Module ID: 10967
-// Function ID: 85390
+// Module ID: 10972
+// Function ID: 85411
 // Dependencies: [0, 0, 0, 0, 0]
 
-// Module 10967
-import result from "result";
-import result from "result";
+// Module 10972
+import __exportStarResult1 from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
 
-({ Endpoints: closure_3, ME: closure_4 } = result);
-result = result.fileFinishedImporting("modules/guild_settings/GuildSettingsModalMembersActionCreators.tsx");
+({ Endpoints: closure_3, ME: closure_4 } = __exportStarResult1);
+const result = __exportStarResult1.fileFinishedImporting("modules/guild_settings/GuildSettingsModalMembersActionCreators.tsx");
 
 export default {
   startEditingRoles(id, id2) {

@@ -1,9 +1,9 @@
-// Module ID: 6584
-// Function ID: 50750
+// Module ID: 6586
+// Function ID: 50793
 // Name: metadata
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 6584 (metadata)
+// Module 6586 (metadata)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/TeaKettleSpotIllustration-2x.png.js");
 

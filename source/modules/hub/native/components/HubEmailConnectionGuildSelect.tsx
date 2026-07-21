@@ -1,10 +1,10 @@
-// Module ID: 11753
-// Function ID: 91269
+// Module ID: 11760
+// Function ID: 91292
 // Name: HubEmailConnectionGuildSelectRow
 // Dependencies: []
 // Exports: default
 
-// Module 11753 (HubEmailConnectionGuildSelectRow)
+// Module 11760 (HubEmailConnectionGuildSelectRow)
 class HubEmailConnectionGuildSelectRow {
   constructor(arg0) {
     guildInfo = global.guildInfo;
@@ -26,7 +26,7 @@ class HubEmailConnectionGuildSelectRow {
 function HubEmailConnectionGuildSelectHeader() {
   const tmp = callback4();
   let obj = { style: tmp.header };
-  obj = { 0: 24, 9223372036854775807: 24, 0: null, -9223372036854775808: "aa9c26c29990ba7a6584e51ab5c56efa", style: tmp.title };
+  obj = { 1501064855: 24, -1267889981: 24, -1145697943: null, -1266241916: "aa9c26c29990ba7a6584e51ab5c56efa", style: tmp.title };
   const intl = arg1(dependencyMap[12]).intl;
   obj.children = intl.string(arg1(dependencyMap[12]).t.mOMeiR);
   obj.children = callback2(arg1(dependencyMap[11]).Text, obj);
@@ -73,17 +73,17 @@ const tmp2 = arg1(dependencyMap[3]);
 ({ jsx: closure_9, jsxs: closure_10 } = arg1(dependencyMap[5]));
 let obj = arg1(dependencyMap[6]);
 obj = {};
-obj = { "Null": 16, "Null": 16, "Null": null, borderRadius: importDefault(dependencyMap[7]).radii.sm, backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_MOD_NORMAL };
+obj = { accessibilityLabel: 16, accessibilityUnits: 16, accessibilityIncrements: null, borderRadius: importDefault(dependencyMap[7]).radii.sm, backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_MOD_NORMAL };
 obj.rowContainer = obj;
 const tmp3 = arg1(dependencyMap[5]);
 obj.guildIcon = { borderRadius: importDefault(dependencyMap[7]).radii.sm };
 obj.separator = { height: 8 };
 obj.header = {};
-obj.title = { bounces: null, keyboardShouldPersistTaps: null };
+obj.title = { "Null": null, "Null": null };
 const obj1 = { borderRadius: importDefault(dependencyMap[7]).radii.sm };
 obj.footerSafeAreaContainer = { backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_BASE_LOW };
-obj.footerContainer = {};
-const obj3 = { "Null": 284959.3291015922, "Null": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000017625297114732, "Null": -0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001498796676283465, STREAM_WATCH: 118199435585797980000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, color: importDefault(dependencyMap[7]).unsafe_rawColors.RED_400 };
+obj.footerContainer = { accessibilityLabel: null, width: null, marginTop: null, alignItems: null };
+const obj3 = { "Null": -716111871, "Null": -247393865, "Null": 1912603216, "Null": 32, color: importDefault(dependencyMap[7]).unsafe_rawColors.RED_400 };
 obj.error = obj3;
 let closure_11 = obj.createStyles(obj);
 const obj2 = { backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_BASE_LOW };

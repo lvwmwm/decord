@@ -1,10 +1,10 @@
-// Module ID: 8597
-// Function ID: 68257
+// Module ID: 8601
+// Function ID: 68269
 // Name: SteamNeutralIcon
 // Dependencies: []
 // Exports: SteamNeutralIcon
 
-// Module 8597 (SteamNeutralIcon)
+// Module 8601 (SteamNeutralIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/SteamNeutralIcon.tsx");

@@ -1,17 +1,17 @@
-// Module ID: 15519
-// Function ID: 118490
+// Module ID: 15526
+// Function ID: 118514
 // Name: SimpleGuildContainer
 // Dependencies: []
 // Exports: SimpleGuildContainer, SimpleGuildContainerAnimated
 
-// Module 15519 (SimpleGuildContainer)
+// Module 15526 (SimpleGuildContainer)
 const importAllResult = importAll(dependencyMap[0]);
 ({ Pressable: closure_4, View: closure_5 } = arg1(dependencyMap[1]));
 const tmp2 = arg1(dependencyMap[1]);
 ({ jsx: closure_6, Fragment: closure_7, jsxs: closure_8 } = arg1(dependencyMap[2]));
-let closure_9 = { "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true };
+let closure_9 = { "Null": "accessibilityRole", "Null": "ip", "Null": "now", "Null": "x", "Null": "height" };
 const tmp3 = arg1(dependencyMap[2]);
-let closure_10 = arg1(dependencyMap[3]).createStyles({ badgeWrapper: { "Bool(false)": "sEAnVH", "Bool(false)": "type", "Bool(false)": "isArray" } });
+let closure_10 = arg1(dependencyMap[3]).createStyles({ badgeWrapper: { 314033: null, 315680: null, 314067: null } });
 let closure_11 = importAllResult.memo((backgroundColor) => {
   let badge;
   let unread;
@@ -123,7 +123,7 @@ export const SimpleGuildContainer = function SimpleGuildContainer(selected) {
     if (!selected) {
       return null;
     } else if (flag2) {
-      let obj = { ONE_DAY: 1045814270250125000000000000000000000000000000000000000000000000000000000000000000000000000000, borderWidth: 14395333539081512000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, onFeedbackCompleted: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000184613633857, __callReactNativeMicrotasks: "center", renderSettingSearchResultItem: "row", getStatusReplyContent: "center", "Null": 8, style: {} };
+      let obj = { "Null": 1045814270250125000000000000000000000000000000000000000000000000000000000000000000000000000000, "Null": 14395982178675285000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, "Null": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000184613633857, "Null": "center", 1376614150: "row", 1807699459: "center", -27990175: 8, style: {} };
       let source;
       if (tmp != activityIndicatorState) {
         source = activityIndicatorState.source;
@@ -153,11 +153,11 @@ export const SimpleGuildContainer = function SimpleGuildContainer(selected) {
     } else {
       obj = {};
       obj = {};
-      const obj1 = { "Bool(false)": null, "Bool(false)": "\u{1F482}", "Bool(false)": true, "Bool(false)": 6, "Bool(false)": 85, "Bool(false)": null, borderRadius: borderRadius + 2, borderColor: token, width: 2 + 4, height: 2 + 4 };
+      const obj1 = { "Null": null, "Null": "\u{1F482}", "Null": true, "Null": 6, "Null": 85, "Null": null, borderRadius: borderRadius + 2, borderColor: token, width: 2 + 4, height: 2 + 4 };
       obj.style = obj1;
       const items = [flag2(backgroundColor, obj), ];
       const obj2 = {};
-      const obj3 = { "Bool(false)": "v\u00EDce ne\u017E {{count}} roky", "Bool(false)": "p\u0159ed v\u00EDce ne\u017E {{count}} roky", "Bool(false)": "za v\u00EDce ne\u017E {{count}} roky", "Bool(false)": "v\u00EDce ne\u017E {{count}} rok\u016F", "Bool(false)": "p\u0159ed v\u00EDce ne\u017E {{count}} roky", "Bool(false)": "za v\u00EDce ne\u017E {{count}} rok\u016F", borderRadius, borderColor: backgroundColor, width: 2, height: 2 };
+      const obj3 = { borderRadius, borderColor: backgroundColor, width: 2, height: 2 };
       obj2.style = obj3;
       items[1] = flag2(backgroundColor, obj2);
       obj.children = items;
@@ -173,7 +173,7 @@ export const SimpleGuildContainer = function SimpleGuildContainer(selected) {
     let tmp = null;
     if (!flag2) {
       let obj = {};
-      obj = { borderColor: iconStroke.color, borderRadius, width: num, height: num };
+      obj = { call_count: "Masterpass tokenization is already in progress.", paidURL: null, borderColor: iconStroke.color, borderRadius, width: num, height: num };
       obj.style = obj;
       tmp = flag2(backgroundColor, obj);
     }
@@ -257,7 +257,7 @@ export const SimpleGuildContainerAnimated = function SimpleGuildContainerAnimate
   let obj3 = arg1(dependencyMap[10]);
   class H {
     constructor() {
-      obj = { "Null": null, "Null": 0.6, "Null": 85, "Null": "85px" };
+      obj = { <string:2924587579>: null, <string:4221592217>: 0.6, <string:1627731025>: 85, <string:3312210390>: "85px" };
       obj2 = selected(iconBackground[11]);
       obj.borderRadius = obj2.withSpring(closure_4.get(), closure_9);
       obj.backgroundColor = iconBackground.color;
@@ -275,7 +275,7 @@ export const SimpleGuildContainerAnimated = function SimpleGuildContainerAnimate
     const obj = { borderRadius: selected(iconBackground[11]).withSpring(derivedValue.get() + 2, closure_9) };
     const obj2 = selected(iconBackground[11]);
     const obj3 = selected(iconBackground[11]);
-    obj.borderWidth = obj3.withSpring(selected(iconBackground[10]).interpolate(derivedValue1.get(), [null, null], ["@", "getOwnPropertyDescriptors"]), closure_9);
+    obj.borderWidth = obj3.withSpring(selected(iconBackground[10]).interpolate(derivedValue1.get(), ["Text", "lc"], []), closure_9);
     obj.borderColor = BRAND_500;
     return obj;
   };
@@ -286,12 +286,12 @@ export const SimpleGuildContainerAnimated = function SimpleGuildContainerAnimate
   const obj1 = { withSpring: arg1(dependencyMap[11]).withSpring, toRadius: derivedValue, springConfig: closure_9, interpolate: arg1(dependencyMap[10]).interpolate, toStrokeWidth: derivedValue1, borderColor: BRAND_500, GUILD_SIZE: 48 };
   class M {
     constructor() {
-      obj = { panelHeader: "r", onStartReachedThreshold: "yawning_face", r_palatalise$esjava$0: "Array", GATEWAY_BRIDGE_TIMEOUT: "constructor", resourceId: "isArray", getCardAssetUrl: "isArray", right: "isArray", bottom: "isArrayBuffer" };
+      obj = { alignItems: "r", flexDirection: "isArray", gap: "isArray", position: "state", padding: "Array", bottom: "isArray", left: "constructor", shrink: "isArray" };
       obj2 = selected(iconBackground[11]);
       obj.borderRadius = obj2.withSpring(closure_4.get(), closure_9);
       obj3 = selected(iconBackground[11]);
       obj4 = selected(iconBackground[10]);
-      obj.borderWidth = obj3.withSpring(obj4.interpolate(closure_5.get(), [null, null], ["partySizeText", -0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001717915509062969]), closure_9);
+      obj.borderWidth = obj3.withSpring(obj4.interpolate(closure_5.get(), ["Text", "lc"], ["START_THREAD", -0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001717915509062969]), closure_9);
       obj.borderColor = backgroundColor;
       return obj;
     }

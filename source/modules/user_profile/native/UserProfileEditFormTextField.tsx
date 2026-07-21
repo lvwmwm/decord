@@ -1,10 +1,10 @@
-// Module ID: 13454
-// Function ID: 102181
+// Module ID: 13461
+// Function ID: 102204
 // Name: UserProfileEditFormTextField
 // Dependencies: []
 // Exports: default
 
-// Module 13454 (UserProfileEditFormTextField)
+// Module 13461 (UserProfileEditFormTextField)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/user_profile/native/UserProfileEditFormTextField.tsx");
@@ -21,7 +21,7 @@ export default function UserProfileEditFormTextField(inputRef) {
     numberOfLines = 1;
   }
   inputRef = inputRef.inputRef;
-  let obj = { 9223372036854775807: null, 9223372036854775807: "LOCAL_PAYMENT_START_PAYMENT_MISSING_REQUIRED_OPTION", 9223372036854775807: "Missing required option for startPayment.", 9223372036854775807: null, 0: "LOCAL_PAYMENT_START_PAYMENT_DEFERRED_PAYMENT_FAILED", 0: "LocalPayment startPayment deferred payment failed." };
+  let obj = { 0: true, 9223372036854775807: true, 0: true, 9223372036854775807: true, 9223372036854775807: true, 9223372036854775807: true };
   Object.setPrototypeOf(null);
   const merged = Object.assign(inputRef, obj);
   obj = { label, description, errorMessage, containerStyle };

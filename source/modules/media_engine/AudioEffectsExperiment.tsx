@@ -1,12 +1,12 @@
-// Module ID: 12699
-// Function ID: 97536
+// Module ID: 12706
+// Function ID: 97559
 // Name: apexExperiment
 // Dependencies: []
 
-// Module 12699 (apexExperiment)
+// Module 12706 (apexExperiment)
 let obj = { probeAudioEffects: false };
 const _module = require(dependencyMap[0]);
-obj = { -1269606814: 855638626, -1845285747: -385875256 };
+obj = { 9223372036854775807: "borderRadius", 0: "r" };
 obj.defaultConfig = obj;
 obj = {};
 const obj1 = {};

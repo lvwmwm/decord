@@ -1,10 +1,10 @@
-// Module ID: 12359
-// Function ID: 94546
+// Module ID: 12366
+// Function ID: 94569
 // Name: TermsAndConditionsActionSheet
 // Dependencies: []
 // Exports: default
 
-// Module 12359 (TermsAndConditionsActionSheet)
+// Module 12366 (TermsAndConditionsActionSheet)
 function TermsAndConditionsActionSheet(termsAndConditions) {
   let obj = {};
   obj = {};
@@ -27,10 +27,10 @@ obj = {};
 obj = { paddingHorizontal: arg1(dependencyMap[3]).USER_SETTINGS_CONTAINER_HORIZONTAL_PADDING, backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_BASE_LOW };
 obj.card = obj;
 obj.mainContainer = {};
-obj.textContainer = { VOICE_WATCHDOG_TIMEOUT: "24c4788690396bae9cc4c1af395a6a87", staticAuthSessionId: "BicycleIcon", NUMERICIDENTIFIER: "png" };
+obj.textContainer = { "Null": "png", "Null": "SERVER_GUIDE_CHANNEL_SELECTED", "Null": "_gameProfileResults" };
 const tmp3 = arg1(dependencyMap[4]);
 obj.imageContainer = { borderRadius: importDefault(dependencyMap[6]).radii.xs, backgroundColor: arg1(dependencyMap[7]).DARK_BLACK_500_LIGHT_PRIMARY_100 };
-obj.image = {};
+obj.image = { "Null": "/assets/design/components/Icon/native/redesign/generated/images", "Null": 24, "Null": 24 };
 obj.title = { lineHeight: 20 };
 obj.subText = { lineHeight: 18 };
 obj.claimButton = { paddingHorizontal: 12 };
@@ -103,8 +103,7 @@ export default function OutboundPromotionCard(outboundPromotion) {
   const items1 = [callback2(closure_5, { style: tmp.imageContainer, children: callback2(closure_6, obj4) }), , ];
   const obj5 = { style: tmp.textContainer };
   const obj6 = {};
-  const obj7 = { 0: true, 9223372036854775807: true, 0: true, -9223372036854775808: true, style: tmp.title, children: outboundPromotion.outboundTitle };
-  const items2 = [callback2(arg1(dependencyMap[11]).Text, obj7), ];
+  const items2 = [callback2(arg1(dependencyMap[11]).Text, { style: tmp.title, children: outboundPromotion.outboundTitle }), ];
   const obj8 = { style: tmp.subText, children: formatToPlainStringResult };
   items2[1] = callback2(arg1(dependencyMap[11]).Text, obj8);
   obj6.children = items2;
@@ -112,9 +111,10 @@ export default function OutboundPromotionCard(outboundPromotion) {
   items1[1] = callback2(closure_5, obj5);
   const obj9 = { style: tmp.buttonContainer };
   const obj3 = { style: tmp.imageContainer, children: callback2(closure_6, obj4) };
+  const obj7 = { style: tmp.title, children: outboundPromotion.outboundTitle };
   const obj11 = {
-    -9223372036854775808: 24,
     0: 24,
+    -9223372036854775808: 24,
     text: stringResult,
     onPress() {
       return callback(true);

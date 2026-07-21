@@ -1,10 +1,10 @@
-// Module ID: 11329
-// Function ID: 88119
+// Module ID: 11335
+// Function ID: 88142
 // Name: MediaKeyboardButtonIcon
 // Dependencies: []
 // Exports: MediaKeyboardButtonIcon
 
-// Module 11329 (MediaKeyboardButtonIcon)
+// Module 11335 (MediaKeyboardButtonIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 let closure_4 = { code: "function MediaKeyboardButtonIconTsx1(){const{keyboard,KeyboardTypes,chatInputFloating,withTiming,timingStandard}=this.__closure;const isActive=keyboard===KeyboardTypes.MEDIA||chatInputFloating&&keyboard===KeyboardTypes.APP_LAUNCHER;return{transform:[{rotate:withTiming(isActive?'45deg':'0deg',timingStandard)}]};}" };

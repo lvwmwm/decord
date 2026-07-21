@@ -1,10 +1,10 @@
-// Module ID: 6625
-// Function ID: 50811
+// Module ID: 6631
+// Function ID: 50860
 // Name: calculateFractionalPremiumInfo
 // Dependencies: []
 // Exports: default
 
-// Module 6625 (calculateFractionalPremiumInfo)
+// Module 6631 (calculateFractionalPremiumInfo)
 function calculateFractionalPremiumInfo(isFetching) {
   let entitlements;
   let excludeReverseTrialFromCountdown;
@@ -144,7 +144,7 @@ export default function useFractionalPremiumInfo() {
   let excludeReverseTrialFromCountdown;
   let obj = arg0;
   if (arg0 === undefined) {
-    obj = { <string:2585612720>: true, <string:2505165921>: false, <string:1365402028>: false };
+    obj = { overflow: true, borderWidth: false, borderColor: false };
   }
   const forceFetch = obj.forceFetch;
   const arg1 = forceFetch;

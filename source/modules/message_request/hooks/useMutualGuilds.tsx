@@ -1,10 +1,10 @@
-// Module ID: 15429
-// Function ID: 117751
+// Module ID: 15436
+// Function ID: 117775
 // Name: useMutualGuildsForMessageRequests
 // Dependencies: []
 // Exports: useMutualGuildsForMessageRequests
 
-// Module 15429 (useMutualGuildsForMessageRequests)
+// Module 15436 (useMutualGuildsForMessageRequests)
 let closure_3 = importAll(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 let closure_5 = importDefault(dependencyMap[2]);

@@ -1,10 +1,10 @@
-// Module ID: 15442
-// Function ID: 117818
+// Module ID: 15449
+// Function ID: 117842
 // Name: MessageRequestsScreen
 // Dependencies: []
 // Exports: default
 
-// Module 15442 (MessageRequestsScreen)
+// Module 15449 (MessageRequestsScreen)
 let closure_2 = importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/main_tabs_v2/native/message_requests/screens/MessageRequestsSpamScreen.tsx");

@@ -1,8 +1,79 @@
 // Module ID: 8160
-// Function ID: 64469
+// Function ID: 64477
 // Dependencies: []
 
 // Module 8160
+const items = ["useStateFromStores", "apply", "start", "length", "r", "message"];
+let obj = {};
 const _module = require(dependencyMap[0]);
+const _module1 = require(dependencyMap[1]);
+obj.autoCapitalize = _module1.oneOf([]);
+const _module2 = require(dependencyMap[1]);
+obj.autoCompleteType = _module2.oneOf([]);
+obj.autoCorrect = require(dependencyMap[1]).bool;
+obj.spellCheck = require(dependencyMap[1]).bool;
+obj.autoFocus = require(dependencyMap[1]).bool;
+obj.allowFontScaling = require(dependencyMap[1]).bool;
+obj.maxFontSizeMultiplier = require(dependencyMap[1]).number;
+obj.editable = require(dependencyMap[1]).bool;
+const _module3 = require(dependencyMap[1]);
+obj.keyboardType = _module3.oneOf([]);
+const _module4 = require(dependencyMap[1]);
+obj.keyboardAppearance = _module4.oneOf([]);
+const _module5 = require(dependencyMap[1]);
+obj.returnKeyType = _module5.oneOf(["top", "bottom", "center", "end", "start", "none", "underline", "line-through", "underline line-through", "solid", "double", "dotted", "dashed"]);
+obj.returnKeyLabel = require(dependencyMap[1]).string;
+obj.maxLength = require(dependencyMap[1]).number;
+obj.numberOfLines = require(dependencyMap[1]).number;
+obj.disableFullscreenUI = require(dependencyMap[1]).bool;
+obj.enablesReturnKeyAutomatically = require(dependencyMap[1]).bool;
+obj.multiline = require(dependencyMap[1]).bool;
+const _module6 = require(dependencyMap[1]);
+obj.textBreakStrategy = _module6.oneOf([false, false, false]);
+obj.onBlur = require(dependencyMap[1]).func;
+obj.onFocus = require(dependencyMap[1]).func;
+obj.onChange = require(dependencyMap[1]).func;
+obj.onChangeText = require(dependencyMap[1]).func;
+obj.onContentSizeChange = require(dependencyMap[1]).func;
+obj.onTextInput = require(dependencyMap[1]).func;
+obj.onEndEditing = require(dependencyMap[1]).func;
+obj.onSelectionChange = require(dependencyMap[1]).func;
+obj.onSubmitEditing = require(dependencyMap[1]).func;
+obj.onKeyPress = require(dependencyMap[1]).func;
+obj.onLayout = require(dependencyMap[1]).func;
+obj.onScroll = require(dependencyMap[1]).func;
+obj.placeholder = require(dependencyMap[1]).string;
+obj.placeholderTextColor = require(dependencyMap[2]);
+obj.scrollEnabled = require(dependencyMap[1]).bool;
+obj.secureTextEntry = require(dependencyMap[1]).bool;
+obj.selectionColor = require(dependencyMap[2]);
+const _module7 = require(dependencyMap[1]);
+obj = { start: require(dependencyMap[1]).number.isRequired, end: require(dependencyMap[1]).number };
+obj.selection = _module7.shape(obj);
+obj.value = require(dependencyMap[1]).string;
+obj.defaultValue = require(dependencyMap[1]).string;
+const _module8 = require(dependencyMap[1]);
+obj.clearButtonMode = _module8.oneOf([-1900850714, 73497153, -317107968, 34359857]);
+obj.clearTextOnFocus = require(dependencyMap[1]).bool;
+obj.selectTextOnFocus = require(dependencyMap[1]).bool;
+obj.blurOnSubmit = require(dependencyMap[1]).bool;
+obj.style = require(dependencyMap[3]).style;
+obj.underlineColorAndroid = require(dependencyMap[2]);
+obj.inlineImageLeft = require(dependencyMap[1]).string;
+obj.inlineImagePadding = require(dependencyMap[1]).number;
+obj.rejectResponderTermination = require(dependencyMap[1]).bool;
+const _module9 = require(dependencyMap[1]);
+const _module10 = require(dependencyMap[1]);
+const items1 = [_module10.oneOf(items), ];
+const _module11 = require(dependencyMap[1]);
+const _module12 = require(dependencyMap[1]);
+items1[1] = _module11.arrayOf(_module12.oneOf(items));
+obj.dataDetectorTypes = _module9.oneOfType(items1);
+obj.caretHidden = require(dependencyMap[1]).bool;
+obj.contextMenuHidden = require(dependencyMap[1]).bool;
+obj.inputAccessoryViewID = require(dependencyMap[1]).string;
+const _module13 = require(dependencyMap[1]);
+obj.textContentType = _module13.oneOf([null, null, false, false, false, false, false, false, false, false, false, false, false, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]);
+obj.showSoftInputOnFocus = require(dependencyMap[1]).bool;
 
-export default _module.registerAsset({ scales: [] });
+export default Object.assign({}, _module, obj);

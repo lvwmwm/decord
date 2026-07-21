@@ -1,10 +1,10 @@
-// Module ID: 12981
-// Function ID: 98818
+// Module ID: 12988
+// Function ID: 98841
 // Name: fetchExperiments
 // Dependencies: []
 // Exports: fetchExperiments
 
-// Module 12981 (fetchExperiments)
+// Module 12988 (fetchExperiments)
 const Endpoints = require(dependencyMap[0]).Endpoints;
 const _module = require(dependencyMap[2]);
 const result = _module.fileFinishedImporting("modules/experiments/fetchExperiments.tsx");

@@ -1,10 +1,10 @@
-// Module ID: 11570
-// Function ID: 89970
+// Module ID: 11577
+// Function ID: 89993
 // Name: Tier3OverrideNotice
 // Dependencies: []
 // Exports: default
 
-// Module 11570 (Tier3OverrideNotice)
+// Module 11577 (Tier3OverrideNotice)
 function Tier3OverrideNotice(children) {
   return callback(View, { style: callback2().staffContainer, children: callback(require(dependencyMap[4]).Text, { variant: "text-sm/medium", children: children.text }) });
 }

@@ -1,9 +1,9 @@
-// Module ID: 9458
-// Function ID: 73695
+// Module ID: 9462
+// Function ID: 73709
 // Name: metadata
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 9458 (metadata)
+// Module 9462 (metadata)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_assets/assets/orbs/reward_tile_v3_mobile.mp4.js");
 

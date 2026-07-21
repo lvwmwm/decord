@@ -1,25 +1,25 @@
-// Module ID: 9905
-// Function ID: 76640
+// Module ID: 9910
+// Function ID: 76656
 // Name: ForLaterDeletedMessageCard
 // Dependencies: []
 
-// Module 9905 (ForLaterDeletedMessageCard)
+// Module 9910 (ForLaterDeletedMessageCard)
 class ForLaterDeletedMessageCard {
   constructor(arg0) {
     savedMessage = global.savedMessage;
     arg1 = savedMessage;
     tmp = closure_13();
     tmp2 = jsxs;
-    obj = { style: items };
+    obj = { <string:67391839>: "emitUnicodeLocaleId", <string:223427425>: "isArray", <string:1403675080>: "avatarId" };
     items = [, ];
     ({ card: arr[0], deletedCard: arr[1] } = tmp);
+    obj.style = items;
     obj = { size: "xs" };
     obj.color = importDefault(dependencyMap[8]).colors.ICON_MUTED;
     items1 = [, , ];
     items1[0] = jsx(arg1(dependencyMap[10]).CircleErrorIcon, obj);
     tmp3 = jsx;
-    obj1 = { INTEGRATION_CREATE: 131072.00119209292, ConstraintReasonCode: -293983030121430100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 };
-    obj1.style = tmp.deletedText;
+    obj1 = { style: tmp.deletedText };
     if (null != savedMessage.saveData.dueAt) {
       tmp7 = arg1;
       tmp8 = dependencyMap;
@@ -84,7 +84,7 @@ function ForLaterMessageCard(savedMessage) {
       })) {
         obj = { savedMessage, jumpToMessage: callback };
         const tmp8 = callback2(importDefault(dependencyMap[23]), obj);
-        obj = { style: tmp.card, onPress: callback };
+        obj = { <string:67391839>: "emitUnicodeLocaleId", <string:223427425>: "isArray", <string:1403675080>: "avatarId", style: tmp.card, onPress: callback };
         let tmp12 = null;
         if (null != savedMessage.saveData.dueAt) {
           const obj1 = { savedMessage, throttledNow: savedMessage.throttledNow, actions: tmp8 };
@@ -101,7 +101,7 @@ function ForLaterMessageCard(savedMessage) {
         const obj3 = { style: tmp.cardDivider };
         items2[2] = callback2(View, obj3);
         const obj4 = { style: tmp.messagePreview };
-        const obj5 = { accessible: "text-subtle", replace: "text-sm/normal", count: "text-brand", message: savedMessage.message };
+        const obj5 = { thumbHashToDataURL: null, DESIGN: null, childSpanTimeout: null, message: savedMessage.message };
         obj4.children = callback2(arg1(dependencyMap[26]).ForLaterMessageRow, obj5);
         items2[3] = callback2(View, obj4);
         obj.children = items2;
@@ -120,10 +120,10 @@ let closure_7 = importDefault(dependencyMap[4]);
 const tmp2 = arg1(dependencyMap[5]);
 ({ jsx: closure_11, jsxs: closure_12 } = arg1(dependencyMap[6]));
 let obj1 = arg1(dependencyMap[7]);
-let obj = { card: { accessibilityRole: "<string:16777479>", replace: "<string:36295491>" } };
-obj = { 1364605794: 0, 1650591011: -25.119, 50680148: 3, backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_MOD_MUTED };
+let obj = { card: {} };
+obj = { backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_MOD_MUTED };
 obj.cardDivider = obj;
-obj1 = { "Bool(true)": "<string:822083847>", "Bool(true)": "isArray", "Bool(true)": "<string:1080135680>", "Bool(true)": 131, "Bool(true)": null, "Bool(true)": "2634e77a356f1f01c169d19e1ee5e0b0", borderBottomLeftRadius: importDefault(dependencyMap[8]).modules.mobile.CARD_DEFAULT_RADIUS, borderBottomRightRadius: importDefault(dependencyMap[8]).modules.mobile.CARD_DEFAULT_RADIUS };
+obj1 = { "Bool(false)": "SERVER_GUIDE_CHANNEL_SELECTED", "Bool(false)": "+BNMcF", "Bool(false)": "Array", "Bool(false)": "LIGHT", "Bool(false)": "isArray", "Bool(false)": "isArray", borderBottomLeftRadius: importDefault(dependencyMap[8]).modules.mobile.CARD_DEFAULT_RADIUS, borderBottomRightRadius: importDefault(dependencyMap[8]).modules.mobile.CARD_DEFAULT_RADIUS };
 obj.messagePreview = obj1;
 obj.deletedCard = {};
 obj.deletedText = { flex: 1 };

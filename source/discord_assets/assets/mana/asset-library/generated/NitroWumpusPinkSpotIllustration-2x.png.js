@@ -1,9 +1,9 @@
-// Module ID: 6380
-// Function ID: 50444
+// Module ID: 6382
+// Function ID: 50487
 // Name: metadata
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 6380 (metadata)
+// Module 6382 (metadata)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/NitroWumpusPinkSpotIllustration-2x.png.js");
 

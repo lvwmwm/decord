@@ -1,10 +1,10 @@
-// Module ID: 10121
-// Function ID: 78372
+// Module ID: 10127
+// Function ID: 78390
 // Name: useLastChannelMessage
 // Dependencies: []
 // Exports: useLastChannelMessage
 
-// Module 10121 (useLastChannelMessage)
+// Module 10127 (useLastChannelMessage)
 let closure_2 = importDefault(dependencyMap[0]);
 const result = arg1(dependencyMap[2]).fileFinishedImporting("modules/self_mod/inappropriate_conversation/hooks/useLastChannelMessage.tsx");
 

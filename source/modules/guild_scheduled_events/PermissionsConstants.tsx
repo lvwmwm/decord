@@ -1,9 +1,9 @@
-// Module ID: 8390
-// Function ID: 66791
+// Module ID: 8394
+// Function ID: 66803
 // Name: VIEW_CHANNEL
 // Dependencies: []
 
-// Module 8390 (VIEW_CHANNEL)
+// Module 8394 (VIEW_CHANNEL)
 const Permissions = require(dependencyMap[0]).Permissions;
 const VIEW_CHANNEL = Permissions.VIEW_CHANNEL;
 const importAllResult = importAll(dependencyMap[1]);

@@ -1,10 +1,10 @@
-// Module ID: 11234
-// Function ID: 87476
+// Module ID: 11240
+// Function ID: 87499
 // Name: AppLauncherBackButton
 // Dependencies: []
 // Exports: default
 
-// Module 11234 (AppLauncherBackButton)
+// Module 11240 (AppLauncherBackButton)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/app_launcher/native/base_components/AppLauncherBackButton.tsx");

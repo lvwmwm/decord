@@ -1,10 +1,10 @@
-// Module ID: 6235
-// Function ID: 50226
+// Module ID: 6237
+// Function ID: 50269
 // Name: GroupGamingSpotIllustration
-// Dependencies: [33554456, 1946157056, 33, 5231]
+// Dependencies: [33554456, 1946157056, 33, 5233]
 // Exports: GroupGamingSpotIllustration
 
-// Module 6235 (GroupGamingSpotIllustration)
+// Module 6237 (GroupGamingSpotIllustration)
 import preload from "preload";
 
 const jsx = require(dependencyMap[0]).jsx;

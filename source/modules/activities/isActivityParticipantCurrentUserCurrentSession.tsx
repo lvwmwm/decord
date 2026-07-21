@@ -1,10 +1,10 @@
-// Module ID: 12862
-// Function ID: 98296
+// Module ID: 12869
+// Function ID: 98319
 // Name: isActivityParticipantCurrentUserCurrentSession
 // Dependencies: []
 // Exports: isActivityParticipantCurrentUserCurrentSession
 
-// Module 12862 (isActivityParticipantCurrentUserCurrentSession)
+// Module 12869 (isActivityParticipantCurrentUserCurrentSession)
 let closure_0 = importDefault(dependencyMap[0]);
 const result = arg1(dependencyMap[1]).fileFinishedImporting("modules/activities/isActivityParticipantCurrentUserCurrentSession.tsx");
 

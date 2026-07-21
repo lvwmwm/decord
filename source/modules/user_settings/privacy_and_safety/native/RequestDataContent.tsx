@@ -1,8 +1,8 @@
-// Module ID: 13635
-// Function ID: 103338
-// Dependencies: []
+// Module ID: 13642
+// Function ID: 103361
+// Dependencies: [1845493813, 2734686234, 2936012802, 3019898906, 3405774874, 1744830481, 905969679, 3539992581, 805306389, 771751970, 33554466, 1996488704]
 
-// Module 13635
+// Module 13642
 let closure_3 = importDefault(dependencyMap[0]);
 const importAllResult = importAll(dependencyMap[1]);
 ({ View: closure_5, ScrollView: closure_6 } = arg1(dependencyMap[2]));
@@ -91,19 +91,17 @@ const memoResult = importAllResult.memo(() => {
   const items = [callback3(callback(dependencyMap[9]).Text, obj9), ];
   const obj10 = { style: tmp.description };
   const intl9 = callback(dependencyMap[7]).intl;
-  const obj11 = {};
-  let obj14 = importDefault(dependencyMap[10]);
-  obj11.helpdeskArticle = obj14.getArticleURL(HelpdeskArticles.GDPR_PACKAGE_CONTENTS);
+  const obj11 = { helpdeskArticle: importDefault(dependencyMap[10]).getArticleURL(HelpdeskArticles.GDPR_PACKAGE_CONTENTS) };
   obj10.children = intl9.format(callback(dependencyMap[7]).t.vtRhDA, obj11);
   items[1] = callback3(callback(dependencyMap[9]).Text, obj10);
   obj8.children = items;
   const items1 = [callback4(closure_5, obj8), , ];
-  const obj13 = { width: "/assets/.cache/intl/bW9kdWxlcy9jaGVja291dC9tZXNzYWdlcw==", height: null, children: mapped };
-  items1[1] = callback3(closure_5, { style: tmp.checkboxContainer, children: callback3(callback(dependencyMap[11]).TableRowGroup, obj13) });
-  obj14 = {};
+  const obj15 = importDefault(dependencyMap[10]);
+  items1[1] = callback3(closure_5, { style: tmp.checkboxContainer, children: callback3(callback(dependencyMap[11]).TableRowGroup, { children: mapped }) });
+  const obj13 = {};
   const intl10 = callback(dependencyMap[7]).intl;
-  obj14.text = intl10.string(callback(dependencyMap[7]).t.NYgNg9);
-  obj14.onPress = function onPress() {
+  obj13.text = intl10.string(callback(dependencyMap[7]).t.NYgNg9);
+  obj13.onPress = function onPress() {
     const keys = Object.keys(first);
     const found = keys.filter((arg0) => closure_2[arg0].checked);
     const mapped = found.map((arg0) => closure_2[arg0].value);
@@ -213,8 +211,8 @@ const memoResult = importAllResult.memo(() => {
       const obj2 = callback2(first[13]);
     }
   };
-  obj14.loading = tmp2[0];
-  items1[2] = callback3(callback(dependencyMap[12]).Button, obj14);
+  obj13.loading = tmp2[0];
+  items1[2] = callback3(callback(dependencyMap[12]).Button, obj13);
   obj7.children = items1;
   return callback4(closure_6, obj7);
 });

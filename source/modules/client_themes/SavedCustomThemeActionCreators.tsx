@@ -1,10 +1,10 @@
-// Module ID: 14022
-// Function ID: 106648
+// Module ID: 14029
+// Function ID: 106671
 // Name: fetchUserCustomThemes
 // Dependencies: []
 // Exports: fetchUserCustomThemes
 
-// Module 14022 (fetchUserCustomThemes)
+// Module 14029 (fetchUserCustomThemes)
 let closure_3 = importDefault(dependencyMap[0]);
 const Endpoints = arg1(dependencyMap[1]).Endpoints;
 const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/client_themes/SavedCustomThemeActionCreators.tsx");
@@ -15,7 +15,7 @@ export const fetchUserCustomThemes = function fetchUserCustomThemes() {
     obj = { type: "SAVED_CUSTOM_THEMES_FETCH_START" };
     obj.dispatch(obj);
     const HTTP = arg1(dependencyMap[3]).HTTP;
-    obj = { CONVERSATIONS: null, replace: null, push: null, url: Endpoints.USERS_ME_CUSTOM_THEMES };
+    obj = { lc: null, type: null, end: null, url: Endpoints.USERS_ME_CUSTOM_THEMES };
     const value = HTTP.get(obj);
     value.then((body) => {
       let obj = callback(closure_2[2]);

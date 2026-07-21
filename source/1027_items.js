@@ -5,7 +5,7 @@
 
 // Module 1027 (items)
 Object.defineProperty(arg5, Symbol.toStringTag, { value: "Module" });
-const items = ["<string:818741249>", "<string:21889025>"];
+const items = [];
 arg5.LCPThresholds = items;
 arg5.onLCP = function onLCP(arg0, arg1) {
   arg1 = arg0;

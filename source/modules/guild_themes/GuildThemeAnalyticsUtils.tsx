@@ -1,10 +1,10 @@
-// Module ID: 15291
-// Function ID: 116344
+// Module ID: 15298
+// Function ID: 116368
 // Name: collectGuildThemeAnalyticsMetadata
 // Dependencies: []
 // Exports: collectGuildThemeAnalyticsMetadata
 
-// Module 15291 (collectGuildThemeAnalyticsMetadata)
+// Module 15298 (collectGuildThemeAnalyticsMetadata)
 let closure_0 = importDefault(dependencyMap[0]);
 const result = arg1(dependencyMap[1]).fileFinishedImporting("modules/guild_themes/GuildThemeAnalyticsUtils.tsx");
 
@@ -37,7 +37,7 @@ export const collectGuildThemeAnalyticsMetadata = function collectGuildThemeAnal
           return obj;
         }
       }
-      return {};
+      return { 1560544338: null, 1666605473: null };
     }
   }
 };

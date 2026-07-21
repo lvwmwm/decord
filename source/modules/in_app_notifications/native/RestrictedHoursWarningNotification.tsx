@@ -1,8 +1,8 @@
-// Module ID: 10338
-// Function ID: 79810
+// Module ID: 10344
+// Function ID: 79833
 // Dependencies: []
 
-// Module 10338
+// Module 10344
 const importAllResult = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 let closure_5 = arg1(dependencyMap[2]).NOTIFICATION_PREVIEW_LINE_CLAMP;
@@ -10,7 +10,7 @@ let closure_5 = arg1(dependencyMap[2]).NOTIFICATION_PREVIEW_LINE_CLAMP;
 const jsx = arg1(dependencyMap[4]).jsx;
 const tmp2 = arg1(dependencyMap[3]);
 let obj = {};
-obj = { <string:1751374060>: "<string:1090519624>", <string:2337440190>: "2026-04-social-layer-storefront-mobile-purchasing", <string:1374146944>: "<string:3628267361>", <string:2925605521>: "<string:2197815725>", <string:1627897681>: "<string:1375731975>", <string:4158738827>: "<string:2583738129>", backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_BRAND, borderRadius: importDefault(dependencyMap[6]).radii.round };
+obj = { bottom: 109907, name: 67503, description: -1699303086, accessible: 1564545433, paths: 1912603216, delete: 24, backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_BRAND, borderRadius: importDefault(dependencyMap[6]).radii.round };
 obj.iconContainer = obj;
 let closure_9 = arg1(dependencyMap[5]).createStyles(obj);
 const obj2 = arg1(dependencyMap[5]);

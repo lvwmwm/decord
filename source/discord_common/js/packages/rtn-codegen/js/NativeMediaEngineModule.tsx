@@ -1,9 +1,9 @@
-// Module ID: 4174
-// Function ID: 35829
+// Module ID: 4178
+// Function ID: 35877
 // Name: enforcing
 // Dependencies: []
 
-// Module 4174 (enforcing)
+// Module 4178 (enforcing)
 const TurboModuleRegistry = require(dependencyMap[0]).TurboModuleRegistry;
 const enforcing = TurboModuleRegistry.getEnforcing("NativeMediaEngineModule");
 const _module = require(dependencyMap[1]);

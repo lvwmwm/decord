@@ -1,10 +1,10 @@
-// Module ID: 11580
-// Function ID: 90051
+// Module ID: 11587
+// Function ID: 90074
 // Name: GuildLevelPowerupHeader
 // Dependencies: []
 // Exports: default
 
-// Module 11580 (GuildLevelPowerupHeader)
+// Module 11587 (GuildLevelPowerupHeader)
 function GuildLevelPowerupHeader(arg0) {
   let active;
   let nextActive;
@@ -119,7 +119,7 @@ const TIER_CARDS = arg1(dependencyMap[4]).TIER_CARDS;
 const tmp3 = arg1(dependencyMap[3]);
 ({ jsx: closure_10, jsxs: closure_11 } = arg1(dependencyMap[5]));
 let obj = arg1(dependencyMap[6]);
-obj = { cardContainer: { flex: 1 }, card: { "Bool(true)": "c5a514a204d76328abe2ecbd82735ce3", "Bool(true)": "no_mutual_friends_dark", "Bool(true)": "png" } };
+obj = { cardContainer: { flex: 1 }, card: { flexDirection: "c5a514a204d76328abe2ecbd82735ce3", alignItems: "no_mutual_friends_dark", gap: "png" } };
 obj = { marginVertical: importDefault(dependencyMap[7]).space.PX_24, position: "relative" };
 obj.progressContainer = obj;
 const tmp4 = arg1(dependencyMap[5]);
@@ -130,9 +130,9 @@ const obj2 = { marginStart: importDefault(dependencyMap[7]).space.PX_16 };
 obj.progressEnd = { marginEnd: importDefault(dependencyMap[7]).space.PX_16, borderTopEndRadius: importDefault(dependencyMap[7]).radii.round, borderBottomEndRadius: importDefault(dependencyMap[7]).radii.round };
 const obj3 = { marginEnd: importDefault(dependencyMap[7]).space.PX_16, borderTopEndRadius: importDefault(dependencyMap[7]).radii.round, borderBottomEndRadius: importDefault(dependencyMap[7]).radii.round };
 obj.boostContainerBackground = { backgroundColor: importDefault(dependencyMap[7]).colors.CARD_BACKGROUND_DEFAULT, start: importDefault(dependencyMap[7]).space.PX_16 - 2 };
+const obj5 = { "Bool(true)": "a", "Bool(true)": "previewNameplate", "Bool(true)": "r", "Bool(true)": "toUnfurledMediaItem", "Bool(true)": "a", "Bool(true)": "previewQuestUserStatus", "Bool(true)": "r", "Bool(true)": "tagSetting", "Bool(true)": "a", padding: importDefault(dependencyMap[7]).space.PX_4, borderRadius: importDefault(dependencyMap[7]).radii.round, start: importDefault(dependencyMap[7]).space.PX_16, backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_MOD_SUBTLE };
+obj.boostContainer = obj5;
 const obj4 = { backgroundColor: importDefault(dependencyMap[7]).colors.CARD_BACKGROUND_DEFAULT, start: importDefault(dependencyMap[7]).space.PX_16 - 2 };
-obj.boostContainer = { padding: importDefault(dependencyMap[7]).space.PX_4, borderRadius: importDefault(dependencyMap[7]).radii.round, start: importDefault(dependencyMap[7]).space.PX_16, backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_MOD_SUBTLE };
-const obj5 = { padding: importDefault(dependencyMap[7]).space.PX_4, borderRadius: importDefault(dependencyMap[7]).radii.round, start: importDefault(dependencyMap[7]).space.PX_16, backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_MOD_SUBTLE };
 obj.boostContainerActive = { backgroundColor: importDefault(dependencyMap[7]).unsafe_rawColors.GUILD_BOOSTING_PINK };
 const obj6 = { backgroundColor: importDefault(dependencyMap[7]).unsafe_rawColors.GUILD_BOOSTING_PINK };
 obj.boostContainerInactive = { backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_MOD_SUBTLE };
@@ -140,8 +140,8 @@ const obj7 = { backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUN
 obj.contentContainer = { padding: importDefault(dependencyMap[7]).space.PX_16 };
 const obj8 = { padding: importDefault(dependencyMap[7]).space.PX_16 };
 obj.perkRowContainer = { flexDirection: "column", marginTop: importDefault(dependencyMap[7]).space.PX_16, gap: importDefault(dependencyMap[7]).space.PX_8 };
-obj.perkRow = { -9223372036854775808: true, filter: true };
-obj.perkRowStyle = { -9223372036854775808: true, filter: true };
+obj.perkRow = {};
+obj.perkRowStyle = {};
 const obj9 = { flexDirection: "column", marginTop: importDefault(dependencyMap[7]).space.PX_16, gap: importDefault(dependencyMap[7]).space.PX_8 };
 obj.perkText = { marginStart: importDefault(dependencyMap[7]).space.PX_8 };
 const obj10 = { marginStart: importDefault(dependencyMap[7]).space.PX_8 };

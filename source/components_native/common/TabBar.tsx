@@ -1,10 +1,10 @@
-// Module ID: 9422
-// Function ID: 73348
+// Module ID: 9426
+// Function ID: 73362
 // Name: Tab
 // Dependencies: []
 // Exports: default
 
-// Module 9422 (Tab)
+// Module 9426 (Tab)
 function Tab(index) {
   let children;
   let isSelected;
@@ -60,7 +60,7 @@ let closure_3 = importAll(dependencyMap[1]);
 const NOOP = arg1(dependencyMap[3]).NOOP;
 const jsx = arg1(dependencyMap[4]).jsx;
 let obj = arg1(dependencyMap[5]);
-obj = { innerContainer: { -9223372036854775808: "Array", filter: "body" }, tab: { soundsharing: "showAllButtonUnderline", clientThemeSettings: "domInteractive", translationY: "DISCOVERABLE", onStartReachedThreshold: "guildVerificationRoleEnabled", onJoin: "$$baseObject", RpMIT0: "recordInputs", Contain: "Icon", ACTIVITIES_DISCORD_CONFIG: "isArray", FRIENDS_LIST_ITEM_ACTION: "LIGHT", display: "isArray" }, tabActive: { backgroundColor: "rgba(0,0,0,0.1)" } };
+obj = { innerContainer: {}, tab: { "Null": null, "Null": null, "Null": null, "Null": null, "Null": null, "Null": null, "Null": null, "Null": null, "Null": null, "Null": null }, tabActive: { backgroundColor: "rgba(0,0,0,0.1)" } };
 obj = { borderBottomColor: importDefault(dependencyMap[6]).unsafe_rawColors.BRAND_600 };
 obj.tabSelected = obj;
 obj.container = { flex: 0 };

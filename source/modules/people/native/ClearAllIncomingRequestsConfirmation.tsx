@@ -1,10 +1,10 @@
-// Module ID: 8918
-// Function ID: 70361
+// Module ID: 8922
+// Function ID: 70373
 // Name: ClearAllIncomingRequestsConfirmationModal
 // Dependencies: []
 // Exports: default
 
-// Module 8918 (ClearAllIncomingRequestsConfirmationModal)
+// Module 8922 (ClearAllIncomingRequestsConfirmationModal)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 ({ View: closure_5, ScrollView: closure_6 } = arg1(dependencyMap[2]));
@@ -14,16 +14,16 @@ let obj = arg1(dependencyMap[4]);
 obj = {};
 obj = { backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_LOW, paddingTop: importDefault(dependencyMap[5]).space.PX_24 };
 obj.root = obj;
-obj.closeButton = { "Bool(false)": null, "Bool(false)": null };
+obj.closeButton = { marginBottom: null, width: null };
 const tmp3 = arg1(dependencyMap[3]);
 obj.content = { flexGrow: 1, padding: importDefault(dependencyMap[5]).space.PX_16 };
-const obj2 = { position: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000345170740166158, top: -5125110894363053500000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, height: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007293801377177428, marginTop: importDefault(dependencyMap[5]).space.PX_24 };
-obj.container = obj2;
-const obj3 = { backgroundColor: importDefault(dependencyMap[5]).colors.BORDER_SUBTLE, height: 0.000000000000000000000000000000000000000000000000000000011294471302334573, paddingVertical: importDefault(dependencyMap[5]).space.PX_24, paddingHorizontal: importDefault(dependencyMap[5]).space.PX_16 };
-obj.footer = obj3;
-const obj4 = { y: 0, gatedChannel: 0, y: 0, marginBottom: importDefault(dependencyMap[5]).space.PX_16 };
-obj.header = obj4;
 const obj1 = { flexGrow: 1, padding: importDefault(dependencyMap[5]).space.PX_16 };
+obj.container = { marginTop: importDefault(dependencyMap[5]).space.PX_24 };
+const obj2 = { marginTop: importDefault(dependencyMap[5]).space.PX_24 };
+obj.footer = { backgroundColor: importDefault(dependencyMap[5]).colors.BORDER_SUBTLE, paddingVertical: importDefault(dependencyMap[5]).space.PX_24, paddingHorizontal: importDefault(dependencyMap[5]).space.PX_16 };
+const obj4 = { cix: 0, y: 0, isArray: 0, marginBottom: importDefault(dependencyMap[5]).space.PX_16 };
+obj.header = obj4;
+const obj3 = { backgroundColor: importDefault(dependencyMap[5]).colors.BORDER_SUBTLE, paddingVertical: importDefault(dependencyMap[5]).space.PX_24, paddingHorizontal: importDefault(dependencyMap[5]).space.PX_16 };
 obj.headerText = { marginTop: importDefault(dependencyMap[5]).space.PX_16, marginBottom: importDefault(dependencyMap[5]).space.PX_4 };
 const obj5 = { marginTop: importDefault(dependencyMap[5]).space.PX_16, marginBottom: importDefault(dependencyMap[5]).space.PX_4 };
 obj.body = { padding: importDefault(dependencyMap[5]).space.PX_24, borderRadius: importDefault(dependencyMap[5]).radii.md, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_SURFACE_HIGH };
@@ -101,7 +101,7 @@ export default function ClearAllIncomingRequestsConfirmationModal(incomingReques
   obj11.children = callback3(callback(dependencyMap[14]).Button, obj12);
   const items5 = [callback3(closure_5, obj11), ];
   const obj13 = { style: tmp.buttonWrapper };
-  const obj14 = { "Bool(true)": "r", "Bool(true)": "isArray", "Bool(true)": "accessibilityRole", "Bool(true)": "max", "Bool(true)": "filter" };
+  const obj14 = { accessibilityRole: null, flags: null, <string:2572309345>: null, <string:1386796460>: null, <string:3768829600>: null };
   const intl5 = callback(dependencyMap[8]).intl;
   obj14.text = intl5.string(callback(dependencyMap[8]).t.ETE/oC);
   obj14.onPress = importDefault(dependencyMap[6]).pop;

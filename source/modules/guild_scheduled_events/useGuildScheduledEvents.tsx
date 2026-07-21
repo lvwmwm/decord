@@ -1,10 +1,10 @@
-// Module ID: 8444
-// Function ID: 67375
+// Module ID: 8448
+// Function ID: 67387
 // Name: useGuildUpcomingEvents
 // Dependencies: []
 // Exports: default, useActiveEvent, useActiveEventsByChannel, useFirstActiveEventChannel, useGuildActiveEvent, useGuildChannelScheduledEvents, useGuildUpcomingEventsNotice, useImminentUpcomingGuildEvents
 
-// Module 8444 (useGuildUpcomingEvents)
+// Module 8448 (useGuildUpcomingEvents)
 function useGuildUpcomingEvents(arg0) {
   const arg1 = arg0;
   const items = [closure_9, closure_4, closure_6];

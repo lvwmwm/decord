@@ -1,16 +1,15 @@
-// Module ID: 15279
-// Function ID: 116204
+// Module ID: 15286
+// Function ID: 116228
 // Name: useAutoSearchPeopleTab
 // Dependencies: [0, 0, 0, 0, 0, 0, 0, 0]
 // Exports: useAutoSearchPeopleTab
 
-// Module 15279 (useAutoSearchPeopleTab)
-import closure_3 from "result";
-import closure_4 from "result";
-import { SEARCH_TEXT_INPUT_DEBOUNCE_TIME as closure_5 } from "result";
-import result from "result";
+// Module 15286 (useAutoSearchPeopleTab)
+import __exportStarResult1 from "__exportStarResult1";
+import closure_4 from "__exportStarResult1";
+import { SEARCH_TEXT_INPUT_DEBOUNCE_TIME as closure_5 } from "__exportStarResult1";
 
-result = result.fileFinishedImporting("modules/search/native/hooks/useAutoSearchPeopleTab.tsx");
+const result = require("__exportStarResult1").fileFinishedImporting("modules/search/native/hooks/useAutoSearchPeopleTab.tsx");
 
 export const useAutoSearchPeopleTab = function useAutoSearchPeopleTab(searchContext, arg1) {
   arg1 = searchContext;

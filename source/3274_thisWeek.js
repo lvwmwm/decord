@@ -10,13 +10,19 @@ function thisWeek(arg0) {
 }
 const _module = require(dependencyMap[0]);
 if (!_module) {
-  const obj = { default: _module };
+  let obj = { default: _module };
   let tmp3 = obj;
 } else {
   tmp3 = _module;
 }
-let closure_1 = ["<string:3137339940>", true, true, true, true, true, true];
-let closure_2 = {
+let closure_1 = [];
+obj = {
+  "Bool(true)": null,
+  "Bool(true)": null,
+  "Bool(true)": null,
+  "Bool(true)": null,
+  "Bool(true)": null,
+  "Bool(true)": null,
   lastWeek(getUTCDay, defaultResult2, date) {
     const uTCDay = getUTCDay.getUTCDay();
     if (tmp3.default(getUTCDay, defaultResult2, date)) {
@@ -47,7 +53,7 @@ let closure_2 = {
 
 export default function formatRelative(arg0, arg1, arg2, arg3) {
   let tmpResult = tmp;
-  if ("function" === typeof closure_2[arg0]) {
+  if ("function" === typeof obj[arg0]) {
     tmpResult = tmp(arg1, arg2, arg3);
   }
   return tmpResult;

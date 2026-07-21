@@ -1,10 +1,10 @@
-// Module ID: 11852
-// Function ID: 91787
+// Module ID: 11859
+// Function ID: 91810
 // Name: ReportContent
 // Dependencies: []
 // Exports: default
 
-// Module 11852 (ReportContent)
+// Module 11859 (ReportContent)
 function ReportContent(applicationId) {
   applicationId = applicationId.applicationId;
   const arg1 = applicationId;

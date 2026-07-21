@@ -1,22 +1,22 @@
-// Module ID: 15728
-// Function ID: 120223
+// Module ID: 15735
+// Function ID: 120247
 // Name: ChatButton
 // Dependencies: [0, 0, 0, 0, 0, 4294967295, 0, 0, 4294967295, 0, 0, 0, 0, 31]
 // Exports: default
 
-// Module 15728 (ChatButton)
-import closure_3 from "result";
-import result from "result";
-import result from "result";
+// Module 15735 (ChatButton)
+import closure_3 from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
 import module_31 from "module_31";
 
-({ jsx: closure_4, Fragment: closure_5, jsxs: closure_6 } = result);
-result = { iconContainer: { st: true, position: "/assets/.cache/intl/ZGVzaWdu", flex: null, justifyContent: "5489cb913a06f6a88877637630ce77b7", overflow: "pl.messages.5489cb913a06f6a88877637630ce77b7.compiled.messages" } };
-result = { "Bool(true)": "MUR", "Bool(true)": "png", "Bool(true)": "AGE_GATE_REGISTER_TIMEOUT_MS", "Bool(true)": "NitroWumpusFlightUpwards3dIllustration", "Bool(true)": "isArray", "Bool(true)": "isArray", "Bool(true)": "isArray", borderRadius: require("result").radii.round };
-result.badge = result;
-result.redBG = { backgroundColor: require("result").unsafe_rawColors.RED_400 };
-result = result.createStyles(result);
-result = module_31.fileFinishedImporting("modules/voice_panel/native/controls/buttons/VoicePanelChatButton.tsx");
+({ jsx: closure_4, Fragment: closure_5, jsxs: closure_6 } = __exportStarResult1);
+__exportStarResult1 = { iconContainer: {} };
+__exportStarResult1 = { sgn-MX: null, sgn-NI: null, sgn-NL: null, sgn-NO: null, sgn-PT: null, sgn-SE: null, sgn-US: null, borderRadius: require("__exportStarResult1").radii.round };
+__exportStarResult1.badge = __exportStarResult1;
+__exportStarResult1.redBG = { backgroundColor: require("__exportStarResult1").unsafe_rawColors.RED_400 };
+__exportStarResult1 = __exportStarResult1.createStyles(__exportStarResult1);
+const result = module_31.fileFinishedImporting("modules/voice_panel/native/controls/buttons/VoicePanelChatButton.tsx");
 
 export default function ChatButton(props) {
   props = props.props;
@@ -26,7 +26,7 @@ export default function ChatButton(props) {
   const context = React.useContext(importDefault(dependencyMap[4]));
   const connected = context.connected;
   const dependencyMap = connected;
-  const tmp2 = result();
+  const tmp2 = memo();
   const React = tmp2;
   let obj = arg1(dependencyMap[5]);
   const voicePanelButtonStyles = obj.useVoicePanelButtonStyles(props.wrapperSpecs);
@@ -41,7 +41,6 @@ export default function ChatButton(props) {
     }
     return iconBadgeIndicator;
   }, items);
-  const result = memo;
   const items1 = [openTab, connected];
   const callback = React.useCallback(() => {
     const obj = { tab: "chat" };

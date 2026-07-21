@@ -1,10 +1,10 @@
-// Module ID: 15981
-// Function ID: 122678
+// Module ID: 15988
+// Function ID: 122704
 // Name: DefaultAvatarButton
 // Dependencies: []
 // Exports: default
 
-// Module 15981 (DefaultAvatarButton)
+// Module 15988 (DefaultAvatarButton)
 function DefaultAvatarButton(selected) {
   let accessibilityLabel;
   let onSelect;
@@ -123,7 +123,13 @@ items1[7] = {
   }
 };
 let obj8 = arg1(dependencyMap[12]);
-const obj6 = { container: {}, buttonsContainer: {} };
+const obj6 = { container: { textButtonPill: "<string:141856787>", applicationCommandLoadingLeftWrapper: "<string:134217728>", cardIcon: "<string:134217728>" }, buttonsContainer: {} };
+const obj7 = { <string:1632221346>: null, <string:2722977214>: null, borderRadius: importDefault(dependencyMap[13]).radii.xl };
+obj6.defaultAvatarButton = obj7;
+obj6.defaultAvatarContainer = {};
+obj8 = { borderColor: importDefault(dependencyMap[13]).colors.INTERACTIVE_TEXT_ACTIVE };
+obj6.defaultAvatarSelected = obj8;
+let closure_7 = obj8.createStyles(obj6);
 const obj5 = {
   avatar: importDefault(dependencyMap[10]),
   label() {
@@ -131,12 +137,6 @@ const obj5 = {
     return intl.string(arg1(dependencyMap[11]).t.zpfUeg);
   }
 };
-obj6.defaultAvatarButton = { borderRadius: importDefault(dependencyMap[13]).radii.xl };
-obj6.defaultAvatarContainer = { <string:145098154>: true, <string:19530754>: true, <string:46335125>: true, <string:703004930>: true, <string:1855193831>: true, <string:1513685732>: true, <string:71762360>: true, <string:51980173>: true, <string:138085081>: true, <string:688131044>: true };
-obj8 = { borderColor: importDefault(dependencyMap[13]).colors.INTERACTIVE_TEXT_ACTIVE };
-obj6.defaultAvatarSelected = obj8;
-let closure_7 = obj8.createStyles(obj6);
-const obj7 = { borderRadius: importDefault(dependencyMap[13]).radii.xl };
 const result = arg1(dependencyMap[17]).fileFinishedImporting("modules/avatar/native/components/PresetAvatarSelect.tsx");
 
 export default function PresetAvatarSelect(arg0) {
@@ -165,9 +165,9 @@ export default function PresetAvatarSelect(arg0) {
       return callback(closure_8, obj, arg0);
     })
   };
-  const items1 = ["ani muk", "dr\u017Eet jazyk za zuby", "jako ryba", "ml\u010Det"];
+  const items1 = [];
   items[1] = callback(View, obj);
-  const items2 = ["<string:26340096>", "<string:77258240>", "<string:3735507200>", "<string:1369900113>"];
+  const items2 = [false, false, false, false];
   items[2] = callback(View, {
     style: tmp.buttonsContainer,
     children: items2.map((arg0) => {

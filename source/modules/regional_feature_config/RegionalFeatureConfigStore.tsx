@@ -4,13 +4,13 @@
 // Dependencies: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 
 // Module 3808 (_isNativeReflectConstruct)
-import closure_2 from "result";
-import closure_3 from "result";
-import closure_4 from "result";
-import closure_5 from "result";
-import closure_6 from "result";
-import result from "result";
-import result from "result";
+import closure_2 from "__exportStarResult1";
+import closure_3 from "__exportStarResult1";
+import closure_4 from "__exportStarResult1";
+import closure_5 from "__exportStarResult1";
+import closure_6 from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
 
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
@@ -32,7 +32,7 @@ function setUserCountryCode(countryCode) {
     let closure_10 = tmp2;
   }
 }
-({ getDefaultCountryCode: closure_7, getCountryCodeByAlpha2: closure_8 } = result);
+({ getDefaultCountryCode: closure_7, getCountryCodeByAlpha2: closure_8 } = __exportStarResult1);
 let closure_9 = null;
 let closure_10 = null;
 let tmp3 = (Store) => {
@@ -114,9 +114,9 @@ let tmp3 = (Store) => {
     }
   };
   return callback(RegionalFeatureConfigStore, items);
-}(require("result").Store);
+}(require("__exportStarResult1").Store);
 tmp3.displayName = "RegionalFeatureConfigStore";
-tmp3 = new tmp3(require("result"), {
+tmp3 = new tmp3(require("__exportStarResult1"), {
   CONNECTION_OPEN: function handleConnectionOpen(countryCode) {
     setUserCountryCode(countryCode.countryCode);
     let fromConnectionOpenResult = null;
@@ -130,6 +130,6 @@ tmp3 = new tmp3(require("result"), {
     return setUserCountryCode(countryCode.countryCode);
   }
 });
-result = result.fileFinishedImporting("modules/regional_feature_config/RegionalFeatureConfigStore.tsx");
+const result = __exportStarResult1.fileFinishedImporting("modules/regional_feature_config/RegionalFeatureConfigStore.tsx");
 
 export default tmp3;

@@ -1,10 +1,10 @@
-// Module ID: 13935
-// Function ID: 105914
+// Module ID: 13942
+// Function ID: 105937
 // Name: SettingsQuestPreviewScreen
 // Dependencies: []
 // Exports: default
 
-// Module 13935 (SettingsQuestPreviewScreen)
+// Module 13942 (SettingsQuestPreviewScreen)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 ({ View: closure_5, ActivityIndicator: closure_6, ScrollView: closure_7 } = arg1(dependencyMap[2]));

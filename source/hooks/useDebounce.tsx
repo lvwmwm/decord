@@ -1,10 +1,10 @@
-// Module ID: 12244
-// Function ID: 93941
+// Module ID: 12251
+// Function ID: 93964
 // Name: useDebounce
 // Dependencies: []
 // Exports: default
 
-// Module 12244 (useDebounce)
+// Module 12251 (useDebounce)
 let closure_0 = importDefault(dependencyMap[0]);
 let closure_1 = importAll(dependencyMap[1]);
 const result = arg1(dependencyMap[2]).fileFinishedImporting("hooks/useDebounce.tsx");

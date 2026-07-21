@@ -1,9 +1,9 @@
-// Module ID: 10018
-// Function ID: 77417
+// Module ID: 10024
+// Function ID: 77435
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
-// Module 10018 (_isNativeReflectConstruct)
+// Module 10024 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -49,7 +49,7 @@ let tmp2 = (Store) => {
     value(arg0) {
       let obj = closure_8[arg0];
       if (null == obj) {
-        obj = { "Bool(true)": "/assets/.cache/intl/bW9kdWxlcy9jaGVja291dC9tZXNzYWdlcw==", "Bool(true)": null };
+        obj = {};
       }
       return obj;
     }
@@ -123,7 +123,7 @@ tmp2 = new tmp2(importDefault(dependencyMap[7]), {
     closure_8[channelId] = obj;
   },
   GUILD_DIRECTORY_SEARCH_CLEAR: function handleSearchClear(channelId) {
-    closure_8[channelId.channelId] = { "Null": "<string:2046820935>", "Null": "<string:3372221001>" };
+    closure_8[channelId.channelId] = { "Bool(true)": null, "Bool(true)": false };
   },
   GUILD_DIRECTORY_CACHED_SEARCH: function handleUpdateQuery(mostRecentQuery) {
     closure_8[mostRecentQuery.channelId] = { fetching: false, mostRecentQuery: mostRecentQuery.query };

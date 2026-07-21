@@ -1,13 +1,13 @@
-// Module ID: 13778
-// Function ID: 104227
+// Module ID: 13785
+// Function ID: 104250
 // Name: BountiesScrollPromptFooter
-// Dependencies: [57, 31, 27, 6640, 653, 33, 689, 8136, 4126, 666, 3989, 4534, 4538]
+// Dependencies: [57, 31, 27, 6646, 653, 33, 689, 8140, 4126, 666, 3989, 4538, 4542]
 // Exports: default
 
-// Module 13778 (BountiesScrollPromptFooter)
+// Module 13785 (BountiesScrollPromptFooter)
 import _slicedToArray from "_slicedToArray";
 import { StyleSheet } from "module_31";
-import getActivityIndicator from "get ActivityIndicator";
+import keys from "keys";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import ME from "ME";
 import SUBTLE_SPRING from "SUBTLE_SPRING";
@@ -47,7 +47,7 @@ export default function BountiesScrollPromptFooter(zIndex) {
     return tmp;
   }, items);
   let obj2 = arg1(dependencyMap[8]);
-  const items1 = [getActivityIndicator];
+  const items1 = [keys];
   const stateFromStores = obj2.useStateFromStores(items1, () => useReducedMotion.useReducedMotion);
   const tmp5 = importDefault(dependencyMap[9])();
   const importDefault = tmp5;
@@ -60,7 +60,7 @@ export default function BountiesScrollPromptFooter(zIndex) {
     const obj1 = {};
     const items3 = [tmp.gradient, opacityStyle];
     obj1.style = items3;
-    obj2 = { 1632892437: null, 1505116984: null, 1559978715: null };
+    obj2 = { borderWidth: 7471105, position: 0, alignSelf: 50331648 };
     let str2 = "play";
     if (stateFromStores) {
       str2 = "halt";

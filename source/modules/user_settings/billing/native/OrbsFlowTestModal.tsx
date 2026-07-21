@@ -1,9 +1,9 @@
-// Module ID: 14534
-// Function ID: 109530
+// Module ID: 14541
+// Function ID: 109552
 // Name: BalanceWidgetMenuSection
 // Dependencies: []
 
-// Module 14534 (BalanceWidgetMenuSection)
+// Module 14541 (BalanceWidgetMenuSection)
 function BalanceWidgetMenuSection() {
   const tmp = callback5();
   let obj = { spacing: 16, style: tmp.container };
@@ -57,9 +57,9 @@ function BalanceWidgetPillSection() {
     obj.openLazy(() => callback(paths[15])(paths[14], paths.paths).then((arg0) => arg0.default), "OrbsFlowTestModalBalanceWidgetMenuKey", obj);
   }, items1);
   let obj = { spacing: 16, style: tmp.container };
-  obj = { padding: "construct", width: "Array", borderRadius: "isArray", style: tmp.title };
+  obj = { -9223372036854775808: "Array", 9223372036854775807: "isArray", 0: "Text", style: tmp.title };
   const items2 = [callback3(arg1(dependencyMap[11]).Text, obj), callback3(arg1(dependencyMap[17]).TextInput, { value: first1, onChange: callback, placeholder: "Enter balance amount", keyboardType: "numeric" }), , ];
-  obj = { "Bool(false)": null, "Bool(false)": null, onPress: callback1 };
+  obj = { "Bool(true)": null, "Bool(true)": null, onPress: callback1 };
   items2[2] = callback3(arg1(dependencyMap[18]).Button, obj);
   const obj1 = { style: tmp.balancePillContainer };
   const items3 = [callback3(arg1(dependencyMap[19]).BalanceWidgetPill, { balance: first }), callback3(arg1(dependencyMap[20]).BalanceWidgetPillButton, { balance: first, onPress: callback2 })];
@@ -92,7 +92,7 @@ obj.wrap = obj;
 obj1 = { padding: importDefault(dependencyMap[9]).space.PX_16 };
 obj.container = obj1;
 obj.title = { marginBottom: 8 };
-obj2 = { <string:1353458075>: true, <string:1722561866>: true, marginBottom: importDefault(dependencyMap[9]).space.PX_16, gap: importDefault(dependencyMap[9]).space.PX_16 };
+obj2 = { marginBottom: importDefault(dependencyMap[9]).space.PX_16, gap: importDefault(dependencyMap[9]).space.PX_16 };
 obj.balancePillContainer = obj2;
 let closure_10 = obj2.createStyles(obj);
 const tmp3 = arg1(dependencyMap[3]);

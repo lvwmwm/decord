@@ -1,18 +1,18 @@
-// Module ID: 11766
-// Function ID: 91361
+// Module ID: 11773
+// Function ID: 91384
 // Name: DiscoverabilityActionSheet
-// Dependencies: [57, 31, 27, 33, 4126, 689, 5224, 1212, 4124, 1273, 4535, 11705, 2]
+// Dependencies: [57, 31, 27, 33, 4126, 689, 5226, 1212, 4124, 1273, 4539, 11712, 2]
 // Exports: default
 
-// Module 11766 (DiscoverabilityActionSheet)
+// Module 11773 (DiscoverabilityActionSheet)
 import _slicedToArray from "_slicedToArray";
 import { View } from "module_31";
-import get ActivityIndicator from "get ActivityIndicator";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import keys from "keys";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import result2 from "result2";
 
-({ useContactSyncModalStore: closure_4, setAllowSync: closure_5, setAllowPhone: closure_6, setAllowEmail: closure_7 } = get_ActivityIndicator);
+({ useContactSyncModalStore: closure_4, setAllowSync: closure_5, setAllowPhone: closure_6, setAllowEmail: closure_7 } = keys);
 ({ jsx: closure_8, jsxs: closure_9 } = _createForOfIteratorHelperLoose);
 _createForOfIteratorHelperLoose = {};
 _createForOfIteratorHelperLoose = { backgroundColor: require("useSafeAreaInsetsKeyboardAware").colors.BACKGROUND_BASE_LOW, paddingBottom: 16 };
@@ -21,10 +21,10 @@ _createForOfIteratorHelperLoose.formRow = { backgroundColor: require("useSafeAre
 _createForOfIteratorHelperLoose.syncRow = { marginTop: 24 };
 const obj1 = { backgroundColor: require("useSafeAreaInsetsKeyboardAware").colors.BACKGROUND_SURFACE_HIGH };
 _createForOfIteratorHelperLoose.formText = { fontFamily: require("module_33").Fonts.PRIMARY_SEMIBOLD, color: require("useSafeAreaInsetsKeyboardAware").colors.INTERACTIVE_TEXT_ACTIVE };
-const obj2 = { fontFamily: require("module_33").Fonts.PRIMARY_SEMIBOLD, color: require("useSafeAreaInsetsKeyboardAware").colors.INTERACTIVE_TEXT_ACTIVE };
-_createForOfIteratorHelperLoose.info = { color: require("useSafeAreaInsetsKeyboardAware").colors.TEXT_SUBTLE };
+const obj3 = { 1970924292: 0, 1536228356: 287380516, 1560581641: 1078049, 1610837008: 1048576, color: require("useSafeAreaInsetsKeyboardAware").colors.TEXT_SUBTLE };
+_createForOfIteratorHelperLoose.info = obj3;
 _createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-const result = keys.fileFinishedImporting("modules/nuf/native/components/DiscoverabilityActionSheet.tsx");
+const result = result2.fileFinishedImporting("modules/nuf/native/components/DiscoverabilityActionSheet.tsx");
 
 export default function DiscoverabilityActionSheet() {
   const tmp = _createForOfIteratorHelperLoose();

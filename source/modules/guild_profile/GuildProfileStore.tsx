@@ -1,9 +1,9 @@
-// Module ID: 8406
-// Function ID: 66964
+// Module ID: 8410
+// Function ID: 66976
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
-// Module 8406 (_isNativeReflectConstruct)
+// Module 8410 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -80,7 +80,7 @@ const ChannelTypes = arg1(dependencyMap[5]).ChannelTypes;
 let obj = { NOT_FETCHED: "NOT_FETCHED", FETCHING: "FETCHING", FETCHED: "FETCHED" };
 const map = new Map();
 const map1 = new Map();
-obj = { maxFontSizeMultiplier: 49358848, accessibilityRole: 49357056, "Bool(true)": 49357824, "Bool(true)": 35148032, "Bool(true)": 372, "Bool(true)": 6144 };
+obj = { "Bool(false)": 49365248, "Bool(false)": 49363456, "Bool(false)": 49364224, "Bool(false)": 35541248, "Bool(false)": 372, "Bool(false)": 6144 };
 obj.fetchStatus = obj.NOT_FETCHED;
 let tmp4 = (Store) => {
   class GuildProfileStore {

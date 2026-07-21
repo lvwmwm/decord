@@ -1,10 +1,10 @@
-// Module ID: 11173
-// Function ID: 86943
+// Module ID: 11179
+// Function ID: 86966
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: []
+// Dependencies: [284214097]
 // Exports: queryData
 
-// Module 11173 (_createForOfIteratorHelperLoose)
+// Module 11179 (_createForOfIteratorHelperLoose)
 function _createForOfIteratorHelperLoose(@@iterator) {
   let _createForOfIteratorHelperLoose = Symbol_iterator;
   @@iterator = "undefined" !== typeof Symbol;

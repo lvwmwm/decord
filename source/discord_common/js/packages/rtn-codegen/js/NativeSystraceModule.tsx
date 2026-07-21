@@ -1,9 +1,9 @@
-// Module ID: 13195
-// Function ID: 100024
+// Module ID: 13202
+// Function ID: 100047
 // Name: enforcing
 // Dependencies: []
 
-// Module 13195 (enforcing)
+// Module 13202 (enforcing)
 const TurboModuleRegistry = require(dependencyMap[0]).TurboModuleRegistry;
 const enforcing = TurboModuleRegistry.getEnforcing("NativeSystraceModule");
 const _module = require(dependencyMap[1]);

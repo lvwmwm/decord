@@ -1,10 +1,10 @@
-// Module ID: 11586
-// Function ID: 90082
+// Module ID: 11593
+// Function ID: 90105
 // Name: GuildPowerupsPerkCard
 // Dependencies: []
 // Exports: default
 
-// Module 11586 (GuildPowerupsPerkCard)
+// Module 11593 (GuildPowerupsPerkCard)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 ({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[2]));
@@ -12,11 +12,11 @@ let obj = arg1(dependencyMap[3]);
 obj = {};
 obj = { marginHorizontal: importDefault(dependencyMap[4]).space.PX_16 };
 obj.container = obj;
-obj.card = { "Bool(true)": "c5a514a204d76328abe2ecbd82735ce3", "Bool(true)": "no_mutual_friends_dark" };
+obj.card = { flexDirection: "c5a514a204d76328abe2ecbd82735ce3", alignItems: "no_mutual_friends_dark" };
 const tmp3 = arg1(dependencyMap[2]);
 obj.contentContainer = { gap: importDefault(dependencyMap[4]).space.PX_16, padding: importDefault(dependencyMap[4]).space.PX_16 };
-obj.imageContainer = { aze: null, azj: "\u{1F44D}\u{1F3FC}" };
-obj.gradient = { disabled: null, resizeMode: null, dispatch: null, toString: null, Icon: null };
+obj.imageContainer = { bhk: null, bic: "\u{1F44D}\u{1F3FC}" };
+obj.gradient = { Icon: null, name: null, style: null, options: null, keys: null };
 const obj1 = { gap: importDefault(dependencyMap[4]).space.PX_16, padding: importDefault(dependencyMap[4]).space.PX_16 };
 obj.headerContainer = { gap: importDefault(dependencyMap[4]).space.PX_4 };
 const obj2 = { gap: importDefault(dependencyMap[4]).space.PX_4 };
@@ -41,7 +41,7 @@ export default function GuildPowerupsPerkCard(arg0) {
     isImageAnimated = true;
   }
   ({ riveComponent, status, badge } = arg0);
-  let obj = { "Bool(false)": true, "Bool(false)": 6, "Bool(false)": 132, "Bool(false)": null, "Bool(false)": "\u{1F9D1}\u200D\u{1F680}", "Null": true, "Null": 12.1, "Null": 133, "Null": null };
+  let obj = { variant: true, style: 6, lineClamp: 132, maxFontSizeMultiplier: null, flexDirection: "\u{1F9D1}\u200D\u{1F680}", alignItems: true, justifyContent: 12.1, backgroundColor: 133, borderRadius: null };
   ({ style, onPress } = arg0);
   Object.setPrototypeOf(null);
   const merged = Object.assign(arg0, obj);
@@ -51,7 +51,7 @@ export default function GuildPowerupsPerkCard(arg0) {
   obj = { containerStyle: items, style: tmp3.card, status, onPress };
   const items = [tmp3.container, style];
   obj = { style: tmp3.imageContainer };
-  const tmp5 = obj1.isThemeDark(importDefault(dependencyMap[5])()) ? [] : [null, null];
+  const tmp5 = obj1.isThemeDark(importDefault(dependencyMap[5])()) ? ["<string:1986330625>", "y"] : [8589935840, 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000620584035094092];
   if (null == riveComponent) {
     obj1 = {};
     let str = "";

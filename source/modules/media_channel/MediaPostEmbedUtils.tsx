@@ -1,10 +1,10 @@
-// Module ID: 4307
-// Function ID: 37720
+// Module ID: 4311
+// Function ID: 37768
 // Name: getMediaPostEmbedChannelPath
 // Dependencies: []
 // Exports: canUseMediaPostEmbed, getMediaPostEmbedChannelId, getMediaPostEmbedCommonData
 
-// Module 4307 (getMediaPostEmbedChannelPath)
+// Module 4311 (getMediaPostEmbedChannelPath)
 function getMediaPostEmbedChannelPath(url) {
   if (null != url) {
     const parseURLSafelyResult = arg1(dependencyMap[10]).parseURLSafely(url);

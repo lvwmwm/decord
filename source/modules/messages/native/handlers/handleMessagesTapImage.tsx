@@ -1,10 +1,10 @@
-// Module ID: 9952
-// Function ID: 76900
+// Module ID: 9958
+// Function ID: 76918
 // Name: handleMessagesTapImage
 // Dependencies: []
 // Exports: handleMessagesTapImage
 
-// Module 9952 (handleMessagesTapImage)
+// Module 9958 (handleMessagesTapImage)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 let closure_5 = importDefault(dependencyMap[2]);

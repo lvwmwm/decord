@@ -1,10 +1,10 @@
-// Module ID: 11465
-// Function ID: 89330
+// Module ID: 11472
+// Function ID: 89354
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 // Exports: useLongestChannelMessageBeforeReply
 
-// Module 11465 (_createForOfIteratorHelperLoose)
+// Module 11472 (_createForOfIteratorHelperLoose)
 function _createForOfIteratorHelperLoose(@@iterator) {
   let arg1 = Symbol_iterator;
   @@iterator = "undefined" !== typeof Symbol;

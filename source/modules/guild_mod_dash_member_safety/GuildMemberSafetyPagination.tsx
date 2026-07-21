@@ -1,10 +1,10 @@
-// Module ID: 6745
-// Function ID: 52500
+// Module ID: 6751
+// Function ID: 52549
 // Name: createDefaultMemberSafetyPaginationState
 // Dependencies: []
 // Exports: getSearchChunkLimit
 
-// Module 6745 (createDefaultMemberSafetyPaginationState)
+// Module 6751 (createDefaultMemberSafetyPaginationState)
 function createDefaultMemberSafetyPaginationState() {
   return { pageSize: items[0], sort: arg1(dependencyMap[4]).OrderBy.ORDER_BY_UNSPECIFIED };
 }
@@ -12,7 +12,7 @@ let closure_2 = importDefault(dependencyMap[0]);
 let closure_3 = importDefault(dependencyMap[1]);
 let closure_4 = importDefault(dependencyMap[2]);
 let closure_5 = importDefault(dependencyMap[3]);
-const items = ["<string:26538496>", "<string:44476160>", "<string:44638208>", "<string:21264128>"];
+const items = [true, true, true, true];
 let closure_7 = { FORWARD: 1, [1]: "FORWARD", BACKWARD: -1, [-1]: "BACKWARD" };
 const tmp2 = () => {
   class GuildMemberSafetyPagination {

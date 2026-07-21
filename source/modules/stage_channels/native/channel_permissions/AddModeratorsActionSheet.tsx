@@ -1,10 +1,10 @@
-// Module ID: 15375
-// Function ID: 117259
+// Module ID: 15382
+// Function ID: 117283
 // Name: AddModeratorsActionSheet
 // Dependencies: []
 // Exports: default
 
-// Module 15375 (AddModeratorsActionSheet)
+// Module 15382 (AddModeratorsActionSheet)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 let closure_5 = importAll(dependencyMap[2]);
@@ -51,7 +51,7 @@ export default function AddModeratorsActionSheet(channel) {
   } else {
     const _Object = Object;
     const tmp17 = 0 === Object.keys(first).length;
-    obj = { -1383050488: 24, -1600148191: 24, -1353556895: null };
+    obj = {};
     obj = {};
     const intl3 = arg1(_handleAddModeratorsPressed[18]).intl;
     obj.title = intl3.string(arg1(_handleAddModeratorsPressed[18]).t.n3bcy8);

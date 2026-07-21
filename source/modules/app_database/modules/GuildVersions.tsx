@@ -1,9 +1,9 @@
-// Module ID: 6886
-// Function ID: 54795
+// Module ID: 6890
+// Function ID: 54805
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: []
+// Dependencies: [125632512, 246743040, 42795008, 120061952, 259981312, 131072, 108855296, 117440512, 251658240]
 
-// Module 6886 (_createForOfIteratorHelperLoose)
+// Module 6890 (_createForOfIteratorHelperLoose)
 function _createForOfIteratorHelperLoose(@@iterator) {
   let arg1 = Symbol_iterator;
   @@iterator = "undefined" !== typeof Symbol;
@@ -93,7 +93,7 @@ importDefaultResult = new importDefaultResult("GuildVersions");
 let tmp4 = () => {
   class GuildVersions {
     constructor() {
-      f54814 = this;
+      f54824 = this;
       tmp = closure_5(this, GuildVersions);
       map = new Map();
       this.pending = map;

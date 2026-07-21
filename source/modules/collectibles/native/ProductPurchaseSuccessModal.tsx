@@ -1,10 +1,10 @@
-// Module ID: 9760
-// Function ID: 75915
+// Module ID: 9765
+// Function ID: 75931
 // Name: CancelButton
 // Dependencies: []
 // Exports: default
 
-// Module 9760 (CancelButton)
+// Module 9765 (CancelButton)
 function CancelButton(arg0) {
   let onCancel;
   ({ tintColor: closure_0, onCancel } = arg0);
@@ -100,16 +100,16 @@ let closure_16 = arg1(dependencyMap[7]).createStyles((arg0) => {
   let obj = {};
   obj = { flex: 1, backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_BASE_LOW };
   obj.root = obj;
-  obj = { -9223372036854775808: true, filter: true, paddingHorizontal: importDefault(dependencyMap[8]).space.PX_16 };
+  obj = { paddingHorizontal: importDefault(dependencyMap[8]).space.PX_16 };
   obj.header = obj;
-  obj.headerLeading = { marginBottom: null, borderRadius: "\u{1F469}\u{1F3FC}\u200D\u{1F9B1}", backgroundColor: true };
-  obj.imageBackground = { "Null": true, "Null": true, "Null": true, "Null": true, "Null": true, "Null": true };
-  obj.backdrop = { rowCount: "isArray", AnnouncementChannelReturn: "skuId", y: "T", PRUNE_DELETE_DAYS: "r", PREMIUM_UNCANCEL_WINBACK_MODAL_VIEWED: "isArray" };
+  obj.headerLeading = { accessible: null, count: "\u{1F469}\u{1F3FC}\u200D\u{1F9B1}", "Bool(false)": true };
+  obj.imageBackground = {};
+  obj.backdrop = { marginBottom: "center", justifyContent: null, alignItems: 4, it: 4, now: "rgba(0, 0, 0, 0.75)" };
   obj.main = { flex: 1 };
-  const obj1 = { navigationReplace: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000051897717659, openTextInVoiceIfVoiceChannel: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001549056927405, jumpTargetId: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001273197475024, jumped: "DIS_Nitro_Gifcard_004_Coffee_Loop", messageId: 0, flash: "cover", backgroundColor: importDefault(dependencyMap[8]).colors.BLACK };
+  const obj1 = { "Bool(false)": "png", "Bool(false)": "5.9.4", "Bool(false)": 24, "Bool(false)": 0, "Bool(false)": 73, "Bool(false)": 900, backgroundColor: importDefault(dependencyMap[8]).colors.BLACK };
   obj.curtain = obj1;
   obj.body = {};
-  const obj2 = { "Bool(true)": null, "Bool(true)": null, "Bool(true)": null };
+  const obj2 = { bottom: 0, left: 6, padding: 0 };
   let num = 0;
   if (arg0 === arg1(dependencyMap[9]).CollectiblesItemType.AVATAR_DECORATION) {
     num = 1;
@@ -127,13 +127,13 @@ let closure_16 = arg1(dependencyMap[7]).createStyles((arg0) => {
   obj2.marginHorizontal = PX_32;
   if (flag) {
     if (arg0 === arg1(dependencyMap[9]).CollectiblesItemType.AVATAR_DECORATION) {
-      const obj3 = { state: "<string:3946333530>", body: "<string:4020895746>", messageId: "<string:4020371458>", accessible: "<string:4030267394>", body: "<string:2653224962>", shadowColor: importDefault(dependencyMap[8]).unsafe_rawColors.PRIMARY_630, shadowOffset: { aze: false, azj: true } };
+      const obj3 = { shadowColor: importDefault(dependencyMap[8]).unsafe_rawColors.PRIMARY_630, shadowOffset: { bhk: -536870861, bic: -299892737 } };
       let obj8 = obj3;
     }
     const merged = Object.assign(obj8);
     obj.preview = obj2;
-    obj.previewBundle = {};
-    const obj4 = { paddingTop: importDefault(dependencyMap[8]).space.PX_24 };
+    obj.previewBundle = { 0: "guildFallbackImage", 1879049317: "MAX_AGE", 1358955618: "r", 862056517: "HIDDEN_WINDOW_DISABLE_VIDEO_DURATION_MS" };
+    const obj4 = { 0: true, 9223372036854775807: true, -9223372036854775808: true, 9223372036854775807: true, 0: true, paddingTop: importDefault(dependencyMap[8]).space.PX_24 };
     let str2;
     if (arg0 === arg1(dependencyMap[9]).CollectiblesItemType.AVATAR_DECORATION) {
       str2 = "32%";
@@ -252,7 +252,7 @@ export default function ProductPurchaseSuccessModal(orbBalancePriorToPurchase) {
       let num = 1;
       if (!arg0) {
         let obj = arg0(sharedValue[14]);
-        num = obj.withDelay(200, arg0(sharedValue[15]).withSpring(1, { position: "transparent", left: null }));
+        num = obj.withDelay(200, arg0(sharedValue[15]).withSpring(1, { marginHorizontal: "transparent", marginBottom: null }));
         const obj2 = arg0(sharedValue[15]);
       }
       const result = sharedValue.set(num);
@@ -267,7 +267,7 @@ export default function ProductPurchaseSuccessModal(orbBalancePriorToPurchase) {
     }, items);
     obj = {};
     const fn = function n() {
-      let obj = { opacity: arg0(sharedValue[14]).interpolate(sharedValue.get(), [null, null], ["<string:3813801988>", "<string:1147353132>"]) };
+      let obj = { opacity: arg0(sharedValue[14]).interpolate(sharedValue.get(), ["Text", "lc"], ["y", "isArray"]) };
       obj = {};
       const obj2 = arg0(sharedValue[14]);
       let num = 0;
@@ -276,7 +276,7 @@ export default function ProductPurchaseSuccessModal(orbBalancePriorToPurchase) {
         num = 0.6;
       }
       const items = [num, 1];
-      obj.scale = arg0(sharedValue[14]).interpolate(value, [null, null], items);
+      obj.scale = arg0(sharedValue[14]).interpolate(value, ["Text", "lc"], items);
       const items1 = [obj];
       obj.transform = items1;
       return obj;
@@ -288,10 +288,10 @@ export default function ProductPurchaseSuccessModal(orbBalancePriorToPurchase) {
     obj.previewViewStyle = stateFromStores(sharedValue[14]).useAnimatedStyle(fn);
     const obj4 = stateFromStores(sharedValue[14]);
     const fn2 = function s() {
-      let obj = { opacity: arg0(sharedValue[14]).interpolate(sharedValue.get(), [null, null], [null, null]) };
+      let obj = { opacity: arg0(sharedValue[14]).interpolate(sharedValue.get(), ["Text", "lc"], ["Text", "lc"]) };
       obj = {};
       const obj2 = arg0(sharedValue[14]);
-      obj.scale = arg0(sharedValue[14]).interpolate(sharedValue.get(), [null, null], ["<string:1075222413>", "construct"]);
+      obj.scale = arg0(sharedValue[14]).interpolate(sharedValue.get(), ["Text", "lc"], ["<string:1075222413>", "construct"]);
       const items = [obj];
       obj.transform = items;
       return obj;
@@ -303,7 +303,7 @@ export default function ProductPurchaseSuccessModal(orbBalancePriorToPurchase) {
     obj.textViewStyle = stateFromStores(sharedValue[14]).useAnimatedStyle(fn2);
     const obj6 = stateFromStores(sharedValue[14]);
     const fn3 = function c() {
-      const obj = { opacity: arg0(sharedValue[14]).interpolate(sharedValue1.get(), [null, null], ["<string:2558152960>", "<string:30754627>"]) };
+      const obj = { opacity: arg0(sharedValue[14]).interpolate(sharedValue1.get(), ["Text", "lc"], ["originY", "preloadAllIntlMessageFiles"]) };
       return obj;
     };
     const obj8 = stateFromStores(sharedValue[14]);
@@ -425,7 +425,7 @@ export default function ProductPurchaseSuccessModal(orbBalancePriorToPurchase) {
       const obj20 = { itemName: product.name };
       obj19.children = intl3.format(callback(dependencyMap[13]).t.YNaxMp, obj20);
       const items9 = [callback3(callback(dependencyMap[38]).Text, obj19), ];
-      const obj21 = { INTEGRATION_CREATE: "<string:3574726658>", ConstraintReasonCode: "<string:1234436097>", style: tmp3.title };
+      const obj21 = { style: tmp3.title };
       const result = callback(dependencyMap[39]).isPremiumCollectiblesProduct(product);
       const intl4 = callback(dependencyMap[13]).intl;
       const format = intl4.format;

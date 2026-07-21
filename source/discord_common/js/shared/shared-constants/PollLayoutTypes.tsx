@@ -1,9 +1,9 @@
-// Module ID: 7895
-// Function ID: 62884
+// Module ID: 7899
+// Function ID: 62896
 // Name: PollLayoutTypes
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 7895 (PollLayoutTypes)
+// Module 7899 (PollLayoutTypes)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_common/js/shared/shared-constants/PollLayoutTypes.tsx");
 

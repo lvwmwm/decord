@@ -1,10 +1,10 @@
-// Module ID: 7078
-// Function ID: 56694
+// Module ID: 7082
+// Function ID: 56705
 // Name: messageHasCheckpoint
 // Dependencies: []
 // Exports: getDestinationIsUnavailable, useDestinationNamesWithSlowmode, useSelectedDestinationChannel, useSelectedDestinationNames
 
-// Module 7078 (messageHasCheckpoint)
+// Module 7082 (messageHasCheckpoint)
 function messageHasCheckpoint(message) {
   let tmp = message.components.length > 0;
   if (tmp) {

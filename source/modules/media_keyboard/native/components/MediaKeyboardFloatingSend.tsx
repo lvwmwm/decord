@@ -1,8 +1,8 @@
-// Module ID: 15315
-// Function ID: 116553
+// Module ID: 15322
+// Function ID: 116577
 // Dependencies: []
 
-// Module 15315
+// Module 15322
 let closure_3 = importDefault(dependencyMap[0]);
 const importAllResult = importAll(dependencyMap[1]);
 const StyleSheet = arg1(dependencyMap[2]).StyleSheet;
@@ -103,7 +103,7 @@ const memoResult = importAllResult.memo(importAllResult.forwardRef(function Medi
   const items = [tmp.gradient.color];
   const animatedProps = obj2.useAnimatedProps(fn2);
   const memo = importAllResult.useMemo(() => {
-    const obj = { start: { "Null": false, "Null": true }, end: { "Null": 131072.00314656927, "Null": 0.000000000000000000000000000000000000000000000000000000011294471302334573 } };
+    const obj = { start: { max: -536870861, guildId: -299892737 }, end: {} };
     const obj2 = callback(bottom[11])(tmp.gradient.color);
     const items = [callback(bottom[11])(tmp.gradient.color).alpha(0).hex(), ];
     const alphaResult = callback(bottom[11])(tmp.gradient.color).alpha(0);

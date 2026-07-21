@@ -1,9 +1,9 @@
-// Module ID: 7136
-// Function ID: 57524
+// Module ID: 7140
+// Function ID: 57535
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
-// Module 7136 (_isNativeReflectConstruct)
+// Module 7140 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -27,15 +27,15 @@ let tmp2 = (MessageType) => {
       tmp = closure_3(this, GiftPlanSelectionCardBanner$Type);
       items = [, , , , , , , , , , , , , , , ];
       items[0] = {};
-      items[1] = { body: 2, guildId: "cta_label", ao: "scalar", "": 9 };
+      items[1] = { 9223372036854775807: "y", 0: "isArray", 9223372036854775807: "Reflect", no: "container" };
       items[2] = {};
       items[3] = {
         T() {
               return callback(closure_1[6]).ThemeAwareAsset;
             }
       };
-      items[4] = { body: null, guildId: null, ao: null, "": null };
-      items[5] = { body: 1, guildId: "BLUE_NEW_53", ao: 1, "": "source" };
+      items[4] = { 9223372036854775807: 626, 0: 2304, 9223372036854775807: -1448787712, no: null };
+      items[5] = { 9223372036854775807: "enum", 0: "ars", 9223372036854775807: "isArray", no: "isArrayBuffer" };
       items[6] = {};
       items[7] = {
         T() {
@@ -57,7 +57,7 @@ let tmp2 = (MessageType) => {
               return callback(closure_1[6]).ThemeAwareAsset;
             }
       };
-      obj = { emojiId: true, emojiName: null, userId: 12 };
+      obj = { "Null": true, "Null": null, "Null": 12 };
       obj.T = function T() {
         return callback(closure_1[6]).ThemeAwareAsset;
       };
@@ -67,23 +67,23 @@ let tmp2 = (MessageType) => {
               return callback(closure_1[8]).LocalizedString;
             }
       };
-      obj = { emojiId: true, emojiName: null, userId: 14 };
+      obj = { "Null": true, "Null": null, "Null": 14 };
       obj.T = function T() {
         return callback(closure_1[8]).LocalizedString;
       };
       items[13] = obj;
-      obj1 = { emojiId: null, emojiName: null, userId: null };
+      obj1 = { "Null": null, "Null": null, "Null": null };
       obj1.T = function T() {
         return callback(closure_1[8]).LocalizedString;
       };
       items[14] = obj1;
-      obj2 = { emojiId: "isArray", emojiName: "key", userId: "Array" };
+      obj2 = { "Null": "isArray", "Null": "key", "Null": "Array" };
       obj2.T = function T() {
-        const items = [false, closure_8, "ASSET_VARIANT_"];
+        const items = [true, closure_8, "ASSET_VARIANT_"];
         return items;
       };
       items[15] = obj2;
-      items1 = ["call"];
+      items1 = [false];
       items1[1] = items;
       obj5 = closure_6(GiftPlanSelectionCardBanner$Type);
       tmp2 = closure_5;
@@ -103,7 +103,7 @@ let tmp2 = (MessageType) => {
   let obj = {
     key: "create",
     value(arr) {
-      let obj = { "Bool(true)": null, "Bool(true)": 1, "Bool(true)": 892, "Bool(true)": -9, "Bool(true)": 0, "Bool(true)": 0, "Bool(true)": 16 };
+      let obj = { "Null": null, "Null": 1, "Null": 892, "Null": -9, "Null": 0, 0: 0, 0: 16 };
       const _Object = Object;
       obj = { enumerable: false, value: this };
       _Object.defineProperty(obj, GiftPlanSelectionCardBanner$Type(closure_1[9]).MESSAGE_TYPE, obj);

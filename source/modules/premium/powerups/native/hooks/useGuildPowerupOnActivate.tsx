@@ -1,10 +1,10 @@
-// Module ID: 11550
-// Function ID: 89890
+// Module ID: 11557
+// Function ID: 89913
 // Name: useGuildPowerupOnActivate
-// Dependencies: [31, 4049, 1910, 1838, 566, 5413, 4019, 1212, 2230, 2, 31, 653, 4096, 11532, 4019, 8427, 8430]
+// Dependencies: [31, 4049, 1910, 1838, 566, 5415, 4019, 1212, 2230, 2, 31, 653, 4096, 11539, 4019, 8431, 8434]
 // Exports: default
 
-// Module 11550 (useGuildPowerupOnActivate)
+// Module 11557 (useGuildPowerupOnActivate)
 import module_31 from "module_31";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_createForOfIteratorHelperLoose";
@@ -73,7 +73,7 @@ export default function useGuildPowerupOnActivate(arg0, arg1) {
               handleMobileWebRedirectCheckout(analyticsLocations, stateFromStores.id);
             } else {
               obj = {
-                source: { marginVertical: "png", width: true },
+                source: { <string:70455808>: "png", <string:1362780416>: true },
                 analyticsLocations,
                 guildId: stateFromStores.id,
                 onBack() {

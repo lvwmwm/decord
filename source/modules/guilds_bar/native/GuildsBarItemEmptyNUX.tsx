@@ -1,8 +1,8 @@
-// Module ID: 14745
-// Function ID: 111181
+// Module ID: 14752
+// Function ID: 111205
 // Dependencies: []
 
-// Module 14745
+// Module 14752
 const importAllResult = importAll(dependencyMap[0]);
 ({ Pressable: closure_4, Image: closure_5, View: closure_6 } = arg1(dependencyMap[1]));
 let closure_7 = importDefault(dependencyMap[2]);
@@ -11,16 +11,16 @@ const tmp2 = arg1(dependencyMap[1]);
 const MODE_CHANGE_PHYSICS = arg1(dependencyMap[4]).MODE_CHANGE_PHYSICS;
 const tmp3 = arg1(dependencyMap[3]);
 ({ jsx: closure_11, jsxs: closure_12 } = arg1(dependencyMap[5]));
-let closure_13 = { marginTop: 8, marginVertical: 40, maxHeight: 4, maxWidth: "center" };
+let closure_13 = { "Null": "BellZIcon", "Null": "png", "Null": 8, "Null": 40 };
 const tmp4 = arg1(dependencyMap[5]);
 let closure_14 = arg1(dependencyMap[6]).createStyles((width) => {
   let obj = {};
-  obj = { "Null": "heading-xxl/semibold", "Null": "text-overlay-light", "Null": 2, alignItems: "last_dismissed_version", flex: "scalar", marginTop: importDefault(dependencyMap[7]).modules.mobile.GUILD_BAR_ITEM_PADDING, width };
+  obj = { "Null": "heading-xxl/semibold", "Null": "text-overlay-light", "Null": 2, "Null": "last_dismissed_version", "Null": "scalar", marginTop: importDefault(dependencyMap[7]).modules.mobile.GUILD_BAR_ITEM_PADDING, width };
   obj.container = obj;
   obj = { left: -closure_8 - width / 2 };
   obj.guildIndicator = obj;
   obj.icon = {};
-  const obj1 = { "Null": "user", "Null": "flex", width, height: width - 10, borderRadius: width / 3 };
+  const obj1 = { "Bool(false)": "user", "Bool(false)": "flex", width, height: width - 10, borderRadius: width / 3 };
   obj.backdrop = obj1;
   return obj;
 });

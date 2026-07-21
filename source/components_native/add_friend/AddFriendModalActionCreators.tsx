@@ -1,8 +1,8 @@
-// Module ID: 12729
-// Function ID: 97688
+// Module ID: 12736
+// Function ID: 97711
 // Dependencies: []
 
-// Module 12729
+// Module 12736
 let closure_3 = importDefault(dependencyMap[0]);
 const result = arg1(dependencyMap[4]).fileFinishedImporting("components_native/add_friend/AddFriendModalActionCreators.tsx");
 

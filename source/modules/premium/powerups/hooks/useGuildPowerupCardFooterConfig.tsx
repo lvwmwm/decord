@@ -1,10 +1,10 @@
-// Module ID: 11548
-// Function ID: 89881
+// Module ID: 11555
+// Function ID: 89904
 // Name: useGuildPowerupCardFooterConfig
 // Dependencies: []
 // Exports: default
 
-// Module 11548 (useGuildPowerupCardFooterConfig)
+// Module 11555 (useGuildPowerupCardFooterConfig)
 let GUILD_POWERUP_CONFIGURABLE_SKUS_DESKTOP;
 let closure_3 = importDefault(dependencyMap[0]);
 ({ GUILD_POWERUP_CONFIGURABLE_SKUS_DESKTOP, GUILD_POWERUP_CONFIGURABLE_SKUS_MOBILE: closure_4, PowerupActiveStatusType: closure_5 } = arg1(dependencyMap[1]));

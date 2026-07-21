@@ -1,10 +1,10 @@
-// Module ID: 6706
-// Function ID: 52110
+// Module ID: 6712
+// Function ID: 52159
 // Name: isLimitedChannel
 // Dependencies: []
 // Exports: isLimitedChannelId
 
-// Module 6706 (isLimitedChannel)
+// Module 6712 (isLimitedChannel)
 function isLimitedChannel(basicChannel) {
   let guild_id;
   if (null != basicChannel) {

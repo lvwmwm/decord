@@ -1,7 +1,7 @@
 // Module ID: 639
 // Function ID: 7339
 // Name: encodeProperties
-// Dependencies: []
+// Dependencies: [284214097]
 // Exports: encodeProperties
 
 // Module 639 (encodeProperties)

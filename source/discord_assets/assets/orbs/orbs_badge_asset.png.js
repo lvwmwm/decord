@@ -1,9 +1,9 @@
-// Module ID: 8550
-// Function ID: 67978
+// Module ID: 8554
+// Function ID: 67990
 // Name: metadata
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 8550 (metadata)
+// Module 8554 (metadata)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_assets/assets/orbs/orbs_badge_asset.png.js");
 

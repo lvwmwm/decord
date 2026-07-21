@@ -1,10 +1,10 @@
-// Module ID: 10810
-// Function ID: 83958
+// Module ID: 10816
+// Function ID: 83981
 // Name: _handleUsePrimaryEntryPointAppCommand
 // Dependencies: []
 // Exports: default
 
-// Module 10810 (_handleUsePrimaryEntryPointAppCommand)
+// Module 10816 (_handleUsePrimaryEntryPointAppCommand)
 function _handleUsePrimaryEntryPointAppCommand() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);

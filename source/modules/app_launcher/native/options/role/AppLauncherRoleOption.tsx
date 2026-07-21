@@ -1,10 +1,10 @@
-// Module ID: 11289
-// Function ID: 87857
+// Module ID: 11295
+// Function ID: 87880
 // Name: AppLauncherRoleOption
 // Dependencies: []
 // Exports: default
 
-// Module 11289 (AppLauncherRoleOption)
+// Module 11295 (AppLauncherRoleOption)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 let closure_5 = importDefault(dependencyMap[2]);

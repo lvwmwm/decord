@@ -34,7 +34,7 @@ function setCancelFlag(passiveListener) {
 class Event {
   constructor(arg0, arg1) {
     self = this;
-    obj = { 257616977: 1, -706616428: true, 1445810295: null, 1742036693: true, 1983412949: false, 1368581576: false, 1096877858: true, -865735599: "/assets/.cache/intl/bW9kdWxlcy9jaGVja291dC9tZXNzYWdlcw==" };
+    obj = { "Bool(true)": 1, "Bool(true)": true, "Bool(true)": null, "Bool(true)": true, "Bool(true)": false, "Bool(true)": false, "Bool(true)": true, "Bool(true)": "/assets/.cache/intl/bW9kdWxlcy9jaGVja291dC9tZXNzYWdlcw==" };
     obj.eventTarget = global;
     obj.event = require;
     obj.currentTarget = global;
@@ -47,7 +47,7 @@ class Event {
     }
     obj.timeStamp = timeStamp;
     result = WeakMap.set(self, obj);
-    definePropertyResult = Object.defineProperty(self, "isTrusted", { <string:1258239487>: true, <string:1308576767>: true });
+    definePropertyResult = Object.defineProperty(self, "isTrusted", { FRIEND_REQUESTS: null, ForYouLoadMore: null });
     keys = Object.keys(require);
     for (let num = 0; num < keys.length; num = num + 1) {
       tmp5 = keys[num];
@@ -76,9 +76,9 @@ function defineRedirectDescriptor(arg0) {
 function defineCallDescriptor(arg0) {
   const weakMap = arg0;
   const obj = {
-    flexDirection: null,
-    gap: null,
-    padding: null,
+    1403228943: null,
+    830090965: null,
+    0: null,
     value() {
       const event = callback(this).event;
       return event[closure_0](...arguments);
@@ -106,7 +106,7 @@ function getWrapper(prototypeOf) {
           } else {
             const _Object = Object;
             let obj = {};
-            obj = { 9223372036854775807: null, 9223372036854775807: null, -9223372036854775808: null };
+            obj = { "Null": null, "Null": null, "Null": null };
             class CustomEvent {
               constructor(arg0, arg1) {
                 callResult = wrapper.call(this, wrapper, prototypeOf);
@@ -218,7 +218,7 @@ function defineEventAttribute(prototype, abort) {
           } while (null != iter);
         }
         if (null !== tmp3) {
-          obj = { ff-Latn-NG: "__closure", STREAMS_OUTBOUND: "next", VERIFYING: "defineProperty", foregroundColor: "cursor", hatching_chick: "sr", listener: tmp3 };
+          obj = { display: -0.000000000000000000000000000000000000000000000000000000000000000003420251035322796, flexDirection: -0.0000000000000000000000000000000000000000000000000000000000000000001098640431092466, gap: -0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000018858781351177015, alignItems: -0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007416000777963161, paddingHorizontal: 14395982766705120000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, listener: tmp3 };
           if (null === tmp6) {
             const result1 = obj.set(arg0, obj);
           } else {
@@ -239,7 +239,7 @@ function defineCustomEventTarget(array) {
       return;
     }
   }
-  const obj = { 9223372036854775807: null, 9223372036854775807: null, -9223372036854775808: null, value: CustomEventTarget };
+  const obj = { "Null": null, "Null": null, "Null": null, value: CustomEventTarget };
   CustomEventTarget.prototype = Object.create(EventTarget.prototype, { constructor: obj });
   let num = 0;
   if (0 < array.length) {
@@ -435,7 +435,7 @@ obj.initEvent = function initEvent() {
 
 };
 Event.prototype = obj;
-obj = { 9223372036854775807: null, 9223372036854775807: null, -9223372036854775808: null, value: Event };
+obj = { "Null": null, "Null": null, "Null": null, value: Event };
 Object.defineProperty(Event.prototype, "constructor", obj);
 let tmp5 = "undefined" !== typeof window;
 if (tmp5) {
@@ -450,7 +450,7 @@ if (tmp5) {
   class Event {
     constructor(arg0, arg1) {
       self = this;
-      obj = { 257616977: 1, -706616428: true, 1445810295: null, 1742036693: true, 1983412949: false, 1368581576: false, 1096877858: true, -865735599: "/assets/.cache/intl/bW9kdWxlcy9jaGVja291dC9tZXNzYWdlcw==" };
+      obj = { "Bool(true)": 1, "Bool(true)": true, "Bool(true)": null, "Bool(true)": true, "Bool(true)": false, "Bool(true)": false, "Bool(true)": true, "Bool(true)": "/assets/.cache/intl/bW9kdWxlcy9jaGVja291dC9tZXNzYWdlcw==" };
       obj.eventTarget = global;
       obj.event = require;
       obj.currentTarget = global;
@@ -463,7 +463,7 @@ if (tmp5) {
       }
       obj.timeStamp = timeStamp;
       result = WeakMap.set(self, obj);
-      definePropertyResult = Object.defineProperty(self, "isTrusted", { <string:1258239487>: true, <string:1308576767>: true });
+      definePropertyResult = Object.defineProperty(self, "isTrusted", { FRIEND_REQUESTS: null, ForYouLoadMore: null });
       keys = Object.keys(require);
       for (let num = 0; num < keys.length; num = num + 1) {
         tmp5 = keys[num];
@@ -671,7 +671,7 @@ EventTarget.prototype = {
     throw typeError;
   }
 };
-obj = { 9223372036854775807: null, 9223372036854775807: null, -9223372036854775808: null, value: EventTarget };
+obj = { "Null": null, "Null": null, "Null": null, value: EventTarget };
 Object.defineProperty(EventTarget.prototype, "constructor", obj);
 let tmp9 = "undefined" !== typeof window;
 if (tmp9) {

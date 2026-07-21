@@ -1,10 +1,10 @@
-// Module ID: 12601
-// Function ID: 96868
+// Module ID: 12608
+// Function ID: 96891
 // Name: ProvisionalAccountNoCallAllowed
 // Dependencies: []
 // Exports: default
 
-// Module 12601 (ProvisionalAccountNoCallAllowed)
+// Module 12608 (ProvisionalAccountNoCallAllowed)
 importAll(dependencyMap[0]);
 const HelpdeskArticles = arg1(dependencyMap[1]).HelpdeskArticles;
 const jsx = arg1(dependencyMap[2]).jsx;

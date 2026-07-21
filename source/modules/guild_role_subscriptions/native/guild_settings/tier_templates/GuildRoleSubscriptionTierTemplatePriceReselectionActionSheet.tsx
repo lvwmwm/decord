@@ -1,10 +1,10 @@
-// Module ID: 16343
-// Function ID: 126107
+// Module ID: 16350
+// Function ID: 126138
 // Name: PriceOptionRow
 // Dependencies: []
 // Exports: default
 
-// Module 16343 (PriceOptionRow)
+// Module 16350 (PriceOptionRow)
 function PriceOptionRow(selected) {
   let accessibilityRole;
   let accessibilityState;
@@ -39,7 +39,7 @@ function PriceOptionRow(selected) {
   }
   obj.source = tmp7(tmp10);
   const items1 = [tmp6(importDefault(dependencyMap[10]), obj), ];
-  const obj1 = { INTEGRATION_CREATE: "AutomodMentionRaidLimit", ConstraintReasonCode: "%URIError%" };
+  const obj1 = {};
   const intl = arg1(dependencyMap[14]).intl;
   const obj2 = {};
   const tmp8 = importDefault(dependencyMap[10]);
@@ -66,7 +66,7 @@ const obj1 = { "Null": null, "Null": null, "Null": null, "Null": null, "Null": n
 obj.rowContainer = obj1;
 const tmp3 = arg1(dependencyMap[5]);
 obj.containerSelected = { backgroundColor: importDefault(dependencyMap[7]).colors.BORDER_SUBTLE };
-obj.rowStatusIcon = { "Null": false, "Null": false, "Null": false };
+obj.rowStatusIcon = { "Null": false, "Null": false, lv: false };
 const obj2 = { backgroundColor: importDefault(dependencyMap[7]).colors.BORDER_SUBTLE };
 obj.confirmButton = { borderRadius: importDefault(dependencyMap[7]).radii.xs };
 obj.backToTemplates = { alignSelf: "center" };
@@ -84,14 +84,14 @@ export default function GuildRoleSubscriptionTierTemplatePriceReselectionActionS
   const tmp2 = callback(React.useState(0), 2);
   const callback = tmp2[0];
   const React = tmp2[1];
-  let obj = { Th: 0.0000000000000000000000000000000000000000000000000000000000000000000000011330969167957445, th: 0.3 };
+  let obj = {};
   obj = { style: tmp.container };
   obj = { contentContainerStyle: { paddingBottom: importDefault(dependencyMap[17])().bottom } };
   const obj1 = {};
   const intl = arg1(dependencyMap[14]).intl;
   obj1.children = intl.format(arg1(dependencyMap[14]).t.5WZ9Ct, { tierName: selectedTemplate.listings[0].name });
   const items = [callback2(arg1(dependencyMap[13]).Text, obj1), callback2(arg1(dependencyMap[20]).Spacer, { size: 12 }), , , , , , , ];
-  const obj3 = { INTEGRATION_CREATE: "AutomodMentionRaidLimit", ConstraintReasonCode: "%URIError%" };
+  const obj3 = {};
   const intl2 = arg1(dependencyMap[14]).intl;
   const obj4 = {};
   let obj7 = arg1(dependencyMap[15]);
@@ -133,7 +133,7 @@ export default function GuildRoleSubscriptionTierTemplatePriceReselectionActionS
     style: tmp.backToTemplates,
     activeOpacity: 0.5
   };
-  obj7 = { INTEGRATION_CREATE: "r", ConstraintReasonCode: "timings" };
+  obj7 = {};
   const intl3 = arg1(dependencyMap[14]).intl;
   obj7.children = intl3.string(arg1(dependencyMap[14]).t.h26VOI);
   obj6.children = callback2(arg1(dependencyMap[13]).Text, obj7);

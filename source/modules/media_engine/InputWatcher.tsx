@@ -1,9 +1,9 @@
-// Module ID: 12705
-// Function ID: 97553
+// Module ID: 12712
+// Function ID: 97576
 // Name: logger
 // Dependencies: []
 
-// Module 12705 (logger)
+// Module 12712 (logger)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 let closure_5 = importDefault(dependencyMap[2]);

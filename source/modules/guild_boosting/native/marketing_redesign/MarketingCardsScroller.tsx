@@ -1,9 +1,9 @@
-// Module ID: 11579
-// Function ID: 90033
+// Module ID: 11586
+// Function ID: 90056
 // Name: getClampedIndex
 // Dependencies: []
 
-// Module 11579 (getClampedIndex)
+// Module 11586 (getClampedIndex)
 function getClampedIndex(arg0, itemCount) {
   return Math.max(0, Math.min(itemCount - 1, arg0));
 }
@@ -15,7 +15,7 @@ const tmp2 = arg1(dependencyMap[2]);
 ({ jsx: closure_8, jsxs: closure_9 } = arg1(dependencyMap[4]));
 const tmp3 = arg1(dependencyMap[4]);
 let obj = { wrapper: { position: "relative" } };
-obj = { presenceCount: false, paddingBottom: false, cancelOnSwipeRightFromStart: false, HOT_TAKE: false, orbsIconAndroid: false, ngn: false, completion: false, SEND_AS_GIFT: false, isPurchasedViaAppleGeneric: false, summaryContainer: false };
+obj = { 9223372036854775807: false, 9223372036854775807: false, 0: false, -9223372036854775808: false, 9223372036854775807: false, 9223372036854775807: false, 0: false, 9223372036854775807: false, 0: false, 0: false };
 const obj2 = arg1(dependencyMap[5]);
 obj.backgroundColor = arg1(dependencyMap[6]).hexWithOpacity(importDefault(dependencyMap[7]).unsafe_rawColors.BLACK, 0.56);
 obj.borderRadius = importDefault(dependencyMap[7]).radii.round;
@@ -118,12 +118,7 @@ const forwardRefResult = importAllResult.forwardRef((initialIndex) => {
   obj = { style: items6 };
   const items6 = [initialIndex.style, tmp.wrapper];
   obj = {
-    marginBottom: "7f316656b571ac7f7a106867fe919370",
-    flexDirection: "el.messages.7f316656b571ac7f7a106867fe919370.compiled.messages",
-    alignItems: "jsona",
-    justifyContent: "primary",
-    type: "sm",
-    accessibilityActions: sum.useMemo(() => {
+    accessibilityActions: importAllResult.useMemo(() => {
       const items = [];
       if (tmp7) {
         let obj = { name: "previous" };

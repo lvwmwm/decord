@@ -1,10 +1,10 @@
-// Module ID: 6995
-// Function ID: 55962
+// Module ID: 6999
+// Function ID: 55973
 // Name: checkReactionResponse
 // Dependencies: []
 // Exports: getReactors, playBurstReaction
 
-// Module 6995 (checkReactionResponse)
+// Module 6999 (checkReactionResponse)
 function checkReactionResponse(arg0, arg1, isRetry) {
   let body;
   let status;
@@ -40,7 +40,7 @@ function checkReactionResponse(arg0, arg1, isRetry) {
         obj.show(obj);
       } else if (constants.REACTION_BLOCKED === code) {
         const ComponentDispatch = arg1(dependencyMap[8]).ComponentDispatch;
-        ComponentDispatch.dispatch(constants2.SHAKE_APP, { tt: "style", refId: "width" });
+        ComponentDispatch.dispatch(constants2.SHAKE_APP, {});
       }
     } else if (!isRetry.isRetry) {
       arg1();

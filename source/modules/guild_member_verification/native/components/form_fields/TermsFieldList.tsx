@@ -1,10 +1,10 @@
-// Module ID: 5390
-// Function ID: 45944
+// Module ID: 5392
+// Function ID: 45985
 // Name: TermsFieldListItem
 // Dependencies: []
 // Exports: default
 
-// Module 5390 (TermsFieldListItem)
+// Module 5392 (TermsFieldListItem)
 function TermsFieldListItem(arg0) {
   let rowNumber;
   let rule;
@@ -12,7 +12,7 @@ function TermsFieldListItem(arg0) {
   ({ rowNumber, rule, rulesChannelId } = arg0);
   const tmp = callback3();
   let obj = { style: tmp.termsRow };
-  obj = { Promise: null, marginTop: null, flags: null, style: tmp.termsRowNumber, children: "" + rowNumber + "." };
+  obj = { "Null": "<string:1178599425>", "Null": "<string:3295084545>", "Null": "<string:1689649153>", style: tmp.termsRowNumber, children: "" + rowNumber + "." };
   const items = [callback(arg1(dependencyMap[5]).Text, obj), ];
   obj = { style: tmp.termsRowContent, variant: "text-md/medium", children: importDefault(dependencyMap[6]).parseGuildVerificationFormRule(rule, true, { channelId: rulesChannelId }) };
   items[1] = callback(arg1(dependencyMap[5]).Text, obj);
@@ -32,7 +32,7 @@ const obj1 = { borderTopLeftRadius: importDefault(dependencyMap[4]).radii.sm, bo
 obj.lastItem = { borderBottomLeftRadius: importDefault(dependencyMap[4]).radii.sm, borderBottomRightRadius: importDefault(dependencyMap[4]).radii.sm, marginBottom: 12 };
 obj.termsRow = { flexDirection: "row" };
 obj.termsRowContent = {};
-obj.termsRowNumber = {};
+obj.termsRowNumber = { bh: "Array", bhk: "isArray", bic: "getChannel" };
 obj.title = { marginBottom: 16 };
 let closure_8 = obj.createStyles(obj);
 const obj2 = { borderBottomLeftRadius: importDefault(dependencyMap[4]).radii.sm, borderBottomRightRadius: importDefault(dependencyMap[4]).radii.sm, marginBottom: 12 };
@@ -45,7 +45,7 @@ export default function TermsFieldList(rules) {
   const tmp = callback3();
   const dependencyMap = tmp;
   let obj = {};
-  obj = { style: tmp.title };
+  obj = { 1501064855: null, -1267889981: null, -1145697943: null, -1266241916: null, style: tmp.title };
   const intl = arg1(dependencyMap[7]).intl;
   obj.children = intl.string(arg1(dependencyMap[7]).t.prJqwT);
   const items = [

@@ -1,14 +1,13 @@
-// Module ID: 6175
-// Function ID: 50136
+// Module ID: 6177
+// Function ID: 50179
 // Name: GemRightBackward3dIllustration
-// Dependencies: [4294967295, 0, 0, 0]
+// Dependencies: []
 // Exports: GemRightBackward3dIllustration
 
-// Module 6175 (GemRightBackward3dIllustration)
-import result from "result";
-
+// Module 6177 (GemRightBackward3dIllustration)
 const jsx = require(dependencyMap[0]).jsx;
-result = result.fileFinishedImporting("design/components/mana-assets/native/generated/GemRightBackward3dIllustration.native.tsx");
+const _module = require(dependencyMap[3]);
+const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/GemRightBackward3dIllustration.native.tsx");
 
 export const GemRightBackward3dIllustration = function GemRightBackward3dIllustration(width) {
   let accessibilityLabel;

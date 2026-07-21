@@ -1,10 +1,10 @@
-// Module ID: 5623
-// Function ID: 47952
+// Module ID: 5625
+// Function ID: 47994
 // Name: startDiceRoll
 // Dependencies: []
 // Exports: startDiceRoll
 
-// Module 5623 (startDiceRoll)
+// Module 5625 (startDiceRoll)
 const _module = require(dependencyMap[1]);
 const result = _module.fileFinishedImporting("modules/dice_roll/DiceRollActionCreators.tsx");
 

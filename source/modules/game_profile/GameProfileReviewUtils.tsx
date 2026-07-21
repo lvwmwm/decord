@@ -1,10 +1,10 @@
-// Module ID: 8626
-// Function ID: 68355
+// Module ID: 8630
+// Function ID: 68367
 // Name: getSteamReviewScoreDescriptionColor
 // Dependencies: []
 // Exports: canShowLocalizedSteamReview, getSteamReviewScoreDescriptionColor, getSteamReviewScoreDescriptionIntl
 
-// Module 8626 (getSteamReviewScoreDescriptionColor)
+// Module 8630 (getSteamReviewScoreDescriptionColor)
 const _module = require(dependencyMap[2]);
 const result = _module.fileFinishedImporting("modules/game_profile/GameProfileReviewUtils.tsx");
 

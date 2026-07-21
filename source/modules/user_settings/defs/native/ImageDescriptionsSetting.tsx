@@ -1,10 +1,10 @@
-// Module ID: 14162
-// Function ID: 107261
+// Module ID: 14169
+// Function ID: 107284
 // Name: onImageDescriptionSettingValueChange
 // Dependencies: []
 // Exports: onImageDescriptionSettingValueChange
 
-// Module 14162 (onImageDescriptionSettingValueChange)
+// Module 14169 (onImageDescriptionSettingValueChange)
 function onImageDescriptionSettingValueChange(viewImageDescriptions) {
   let obj = arg1(dependencyMap[3]);
   obj = { videoUploadQuality: closure_2.videoUploadQuality, viewImageDescriptions, lowQualityImageMode: closure_2.lowQualityImageMode, dataSavingMode: closure_2.dataSavingMode };

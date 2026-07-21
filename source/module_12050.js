@@ -1,7 +1,9 @@
 // Module ID: 12050
-// Function ID: 93088
+// Function ID: 93061
 // Dependencies: []
 
 // Module 12050
+const _module = require(dependencyMap[0]);
+const obj = { isConnected: "107347ad5bb8904d4b6b201b2b04baf4", isInternetReachable: "messenger", details: "png", reachabilityUrl: true, reachabilityMethod: "/assets/modules/instant_invite/native/images", reachabilityHeaders: 52, reachabilityTest: 52, reachabilityShortTimeout: null, scales: [] };
 
-export default { <string:1602119787>: "<string:1146552322>", <string:3804807546>: "<string:1149435906>", <string:2387761068>: "<string:1912602626>", <string:1692902105>: "<string:1076822017>" };
+export default _module.registerAsset(obj);

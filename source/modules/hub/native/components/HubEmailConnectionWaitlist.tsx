@@ -1,10 +1,10 @@
-// Module ID: 11750
-// Function ID: 91254
+// Module ID: 11757
+// Function ID: 91277
 // Name: HubEmailConnectionWaitlist
 // Dependencies: []
 // Exports: default
 
-// Module 11750 (HubEmailConnectionWaitlist)
+// Module 11757 (HubEmailConnectionWaitlist)
 let closure_3 = importAll(dependencyMap[0]);
 ({ View: closure_4, Image: closure_5 } = arg1(dependencyMap[1]));
 const tmp2 = arg1(dependencyMap[1]);
@@ -13,8 +13,8 @@ let obj = arg1(dependencyMap[4]);
 obj = { container: {}, header: { marginBottom: 16 } };
 obj = { fontFamily: arg1(dependencyMap[2]).Fonts.PRIMARY_BOLD, color: importDefault(dependencyMap[5]).colors.MOBILE_TEXT_HEADING_PRIMARY };
 obj.title = obj;
-obj.description = { person_pouting: 52881784.83212474, cv: 0.0000000000000000000000000000000000000000000000000000000000000000000000011319598867188059 };
-obj.redesignButton = { y: false, isArray: false };
+obj.description = { collapsable: 52881784.83212474, preventClipping: 0.0000000000000000000000000000000000000000000000000000000000000000000000011319598867188059 };
+obj.redesignButton = {};
 let closure_8 = obj.createStyles(obj);
 const tmp3 = arg1(dependencyMap[3]);
 const result = arg1(dependencyMap[13]).fileFinishedImporting("modules/hub/native/components/HubEmailConnectionWaitlist.tsx");

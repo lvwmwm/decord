@@ -618,7 +618,7 @@ export const generateBlockGuildSubscriptionPurchasesNode = function generateBloc
       numCanceledGuildBoostSlots.numAvailableGuildBoostSlots = numCanceledGuildBoostSlots.numAvailableGuildBoostSlots + 1;
     }
     return numCanceledGuildBoostSlots;
-  }, { "Bool(true)": false, "Bool(true)": true });
+  }, { "Bool(false)": -536870861, "Bool(false)": -299892737 });
   if (null != premiumTypeSubscription) {
     if (reduced.numAvailableGuildBoostSlots <= 0) {
       if (premiumTypeSubscription.status === constants2.PAST_DUE) {
@@ -688,7 +688,7 @@ export const getGracePeriodEndingDate = function getGracePeriodEndingDate(arr, g
     const diff = found.length - tmp;
     if (diff < 0) {
       let obj = importDefault(dependencyMap[18]);
-      obj = { <string:944832516>: null, backShouldLeaveGuild: null };
+      obj = { panelHeader: "navigate", discount: "guild" };
       obj = { subscriptionLength: arr.length, subscriptionsNeededForPremiumTier: AppliedGuildBoostsRequiredForBoostedGuildTier[closure_38(undefined, guildId)], endingSubscriptionLength: found.length };
       obj.data = obj;
       obj.addBreadcrumb(obj);

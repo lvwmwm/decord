@@ -1,10 +1,10 @@
-// Module ID: 16192
-// Function ID: 125166
+// Module ID: 16199
+// Function ID: 125197
 // Name: Header
 // Dependencies: []
 // Exports: default
 
-// Module 16192 (Header)
+// Module 16199 (Header)
 function Header(arg0) {
   let applicationId;
   let integration;
@@ -615,13 +615,13 @@ obj = { backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_BASE_
 obj.numericalInputContainerBase = obj;
 const tmp3 = arg1(dependencyMap[5]);
 obj.numericalInput = { borderRadius: importDefault(dependencyMap[7]).radii.xs };
-const obj1 = { borderRadius: importDefault(dependencyMap[7]).radii.xs };
-obj.appNumericalInput = { backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_BASE_LOWEST, borderRadius: importDefault(dependencyMap[7]).radii.xs };
-obj.appNumericalInputContainer = { -9223372036854775808: true, filter: true };
+const obj2 = { -9223372036854775808: -738197503, 9223372036854775807: 16777216, 0: 38594370, 0: 32305408, -9223372036854775808: -1210756864, 9223372036854775807: 116, 9223372036854775807: 4096, backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_BASE_LOWEST, borderRadius: importDefault(dependencyMap[7]).radii.xs };
+obj.appNumericalInput = obj2;
+obj.appNumericalInputContainer = {};
 obj.appNumericalInputText = { flexShrink: 1 };
-const obj2 = { backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_BASE_LOWEST, borderRadius: importDefault(dependencyMap[7]).radii.xs };
+const obj1 = { borderRadius: importDefault(dependencyMap[7]).radii.xs };
 obj.numericalInputDisabled = { color: importDefault(dependencyMap[7]).colors.TEXT_MUTED };
-obj.metadataRow = { "Bool(false)": "Portugu\u00EAs", "Bool(false)": "Portuguese", "Bool(false)": "pt-PT" };
+obj.metadataRow = { "Null": null, "Null": null, "Null": null };
 obj.metadataRowText = { lineHeight: 32 };
 let closure_15 = obj.createStyles(obj);
 const obj3 = { color: importDefault(dependencyMap[7]).colors.TEXT_MUTED };

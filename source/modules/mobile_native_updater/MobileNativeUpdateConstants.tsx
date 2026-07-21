@@ -1,7 +1,7 @@
 // Module ID: 4110
 // Function ID: 34006
 // Name: currentUpdateConfig
-// Dependencies: []
+// Dependencies: [3154116625, 1912602628]
 
 // Module 4110 (currentUpdateConfig)
 import durationResult from "module_6";

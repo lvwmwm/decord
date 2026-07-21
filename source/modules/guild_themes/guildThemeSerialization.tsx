@@ -1,7 +1,7 @@
 // Module ID: 1837
 // Function ID: 20053
 // Name: cloneCustomUserThemeSettings
-// Dependencies: []
+// Dependencies: [284214097]
 // Exports: cloneGuildTheme, fromServerGuildTheme, toServerGuildThemeSettings
 
 // Module 1837 (cloneCustomUserThemeSettings)
@@ -86,7 +86,7 @@ export const cloneGuildTheme = function cloneGuildTheme(guildTheme) {
 };
 export const toServerGuildThemeSettings = function toServerGuildThemeSettings(themeSettings) {
   if (null == themeSettings) {
-    let obj = { <string:3205872662>: false, <string:1383034466>: false };
+    let obj = { "Null": "o", "Null": "o" };
   } else {
     obj = {};
     const presetId = themeSettings.presetId;

@@ -1,9 +1,9 @@
-// Module ID: 8232
-// Function ID: 65020
+// Module ID: 8236
+// Function ID: 65032
 // Name: OVERRIDE_DIR
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 8232 (OVERRIDE_DIR)
+// Module 8236 (OVERRIDE_DIR)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("modules/collectibles/profile_frames/native/tooling/FrameOverrideConstants.tsx");
 

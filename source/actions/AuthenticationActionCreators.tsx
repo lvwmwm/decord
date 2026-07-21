@@ -1,9 +1,9 @@
-// Module ID: 5586
-// Function ID: 47356
+// Module ID: 5588
+// Function ID: 47398
 // Name: dispatchLogout
 // Dependencies: []
 
-// Module 5586 (dispatchLogout)
+// Module 5588 (dispatchLogout)
 function dispatchLogout(arg0) {
   let obj = importDefault(dependencyMap[7]);
   const result = obj.clearNavigationHistory();
@@ -77,7 +77,7 @@ obj = {
     const dependencyMap = isMultiAccount;
     ({ undelete, source, giftCodeSKUId } = login);
     let obj = importDefault(dependencyMap[8]);
-    obj.dispatch({ "Null": null, "Null": null });
+    obj.dispatch({});
     let obj1 = importDefault(dependencyMap[12]);
     obj = { url: closure_9.LOGIN, body: { login, password, undelete, login_source: source, gift_code_sku_id: giftCodeSKUId }, retries: 2, oldFormErrors: true };
     obj = { event: arg1(dependencyMap[13]).NetworkActionNames.USER_LOGIN };
@@ -429,7 +429,7 @@ obj = {
     }
     const importDefault = DEFAULT_LOGGED_OUT;
     const HTTP = arg1(dependencyMap[14]).HTTP;
-    const obj = { CONVERSATIONS: null, replace: null, push: null, url: closure_9.ME };
+    const obj = { lc: null, type: null, end: null, url: closure_9.ME };
     const value = HTTP.get(obj);
     return value.catch(() => {
       callback(arg0, DEFAULT_LOGGED_OUT);
@@ -553,7 +553,7 @@ obj = {
         callback(closure_3[8]).dispatch({});
       }, 5000);
       const HTTP = arg1(dependencyMap[14]).HTTP;
-      const obj = { isNotAutomodEmbed: false, launchPadSharedState: false, isPurchase: false, r_verb$esjava$0: false, url: closure_9.AUTH_LOCATION_METADATA };
+      const obj = { url: closure_9.AUTH_LOCATION_METADATA };
       const value = HTTP.get(obj);
       nextPromise = value.then((body) => {
         clearTimeout(closure_4);

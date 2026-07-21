@@ -1,9 +1,9 @@
-// Module ID: 13248
-// Function ID: 100583
+// Module ID: 13255
+// Function ID: 100606
 // Name: NotifSettings
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 13248 (NotifSettings)
+// Module 13255 (NotifSettings)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_common/js/shared/shared-constants/NotifSettings.tsx");
 

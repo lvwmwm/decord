@@ -1,10 +1,10 @@
-// Module ID: 11153
-// Function ID: 86736
+// Module ID: 11159
+// Function ID: 86759
 // Name: ApplicationsImage
 // Dependencies: []
 // Exports: default
 
-// Module 11153 (ApplicationsImage)
+// Module 11159 (ApplicationsImage)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 ({ jsx: closure_4, Fragment: closure_5, jsxs: closure_6 } = arg1(dependencyMap[2]));

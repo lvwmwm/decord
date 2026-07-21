@@ -1,9 +1,9 @@
-// Module ID: 10494
-// Function ID: 81984
+// Module ID: 10500
+// Function ID: 82007
 // Name: NativeModules
 // Dependencies: []
 
-// Module 10494 (NativeModules)
+// Module 10500 (NativeModules)
 let NativeEventEmitter;
 let NativeModules;
 const _module = require(dependencyMap[0]);

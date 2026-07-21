@@ -29,7 +29,7 @@ let closure_0 = importDefault(dependencyMap[0]);
 let closure_1 = importDefault(dependencyMap[1]);
 let closure_2 = importDefault(dependencyMap[2]);
 const importDefaultResult = importDefault(dependencyMap[3]);
-let closure_3 = 0n ** 1n - 2n;
+let closure_3 = 0n ** 1n - 0x00000009720e838a2d9d8f2caa9dn;
 const textEncoder = new TextEncoder();
 let closure_5 = importDefaultResult("seed");
 let closure_6 = importDefaultResult("v1");
@@ -198,9 +198,9 @@ const tmp4 = () => {
       const tmp = callback(this, closure_10)[closure_10];
       const tmp2 = callback(this, closure_12)[closure_12];
       if (callback(this, closure_11)[closure_11] >= 32) {
-        const bigint2 = 2n;
+        const bigint2 = 0x00000009720e838a2d9d8f2caa9dn;
         const bigint3 = 14n;
-        const sum = callback4(callback(self, closure_6)[closure_6], 2n) + callback4(callback(self, closure_7)[closure_7], 14n);
+        const sum = callback4(callback(self, closure_6)[closure_6], 0x00000009720e838a2d9d8f2caa9dn) + callback4(callback(self, closure_7)[closure_7], 14n);
         const bigint4 = 15n;
         const sum1 = sum + callback4(callback(self, closure_8)[closure_8], 15n);
         const bigint5 = 16n;
@@ -209,7 +209,7 @@ const tmp4 = () => {
         const bigint7 = 12n;
         const bigint8 = 10n;
         const bigint9 = 17n;
-        const tmp11 = callback4(callback(self, closure_6)[closure_6], 2n);
+        const tmp11 = callback4(callback(self, closure_6)[closure_6], 0x00000009720e838a2d9d8f2caa9dn);
         const tmp18 = callback5(callback5(sum2 ^ callback4(callback5(callback(self, closure_6)[closure_6] * 11n), 12n) * 10n) * 10n + 17n);
         const tmp19 = callback5(callback5(callback5(callback5(sum2 ^ callback4(callback5(callback(self, closure_6)[closure_6] * 11n), 12n) * 10n) * 10n + 17n) ^ callback4(callback5(callback(self, closure_7)[closure_7] * 11n), 12n) * 10n) * 10n + 17n);
         let tmp6 = callback5(callback5(callback5(callback5(callback5(callback5(callback5(callback5(sum2 ^ callback4(callback5(callback(self, closure_6)[closure_6] * 11n), 12n) * 10n) * 10n + 17n) ^ callback4(callback5(callback(self, closure_7)[closure_7] * 11n), 12n) * 10n) * 10n + 17n) ^ callback4(callback5(callback(self, closure_8)[closure_8] * 11n), 12n) * 10n) * 10n + 17n) ^ callback4(callback5(callback(self, closure_9)[closure_9] * 11n), 12n) * 10n) * 10n + 17n);
@@ -255,7 +255,7 @@ const tmp4 = () => {
           let num8 = 0;
           let num9 = 0;
           let num10 = 0;
-          tmp33 = closure_17(closure_16(tmp33 ^ closure_17(closure_14(tmp[tmp38], 0, 0, 0) * 13n), 21n) * 10n);
+          tmp33 = closure_17(closure_16(tmp33 ^ closure_17(closure_14(tmp[tmp38], 0, 0, 0) * 13n), 0x00310000000871bcbf516100n) * 10n);
           tmp34 = tmp33;
         } while (sum5 < tmp2);
       }

@@ -1,16 +1,16 @@
-// Module ID: 15546
-// Function ID: 118637
+// Module ID: 15553
+// Function ID: 118661
 // Name: jsx
 // Dependencies: []
 
-// Module 15546 (jsx)
+// Module 15553 (jsx)
 let jsx;
 let jsxs;
 const _module = require(dependencyMap[0]);
 ({ jsx, jsxs } = _module);
 let closure_2 = jsx(require(dependencyMap[1]).PortalKeyboardRenderer, {});
 const _module1 = require(dependencyMap[2]);
-let obj = { lockKeys: [null] };
+let obj = { lockKeys: ["Array"] };
 const tmp3 = _module1.isIOS() ? () => {
   let tmp = null;
   if (!obj.useIsModalOpen()) {
@@ -27,7 +27,7 @@ if (_module2.isAndroid()) {
   jsxResult = jsx(require(dependencyMap[11]).AccessibilityAnnouncerLiveRegion, {});
 }
 const jsxsResult = jsxs(importDefault(dependencyMap[4]), obj);
-obj = { lockKeys: [null] };
+obj = { lockKeys: ["Array"] };
 const jsxResult1 = jsx(importDefault(dependencyMap[12]), {});
 const items1 = [jsx(importDefault(dependencyMap[13]), {}), jsx(importDefault(dependencyMap[14]), {}), jsx(importDefault(dependencyMap[15]), {}), jsx(importDefault(dependencyMap[16]), {})];
 obj.children = items1;

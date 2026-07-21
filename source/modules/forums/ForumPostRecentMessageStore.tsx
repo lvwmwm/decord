@@ -1,9 +1,9 @@
-// Module ID: 5680
-// Function ID: 48835
+// Module ID: 5682
+// Function ID: 48878
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
-// Module 5680 (_isNativeReflectConstruct)
+// Module 5682 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -115,7 +115,7 @@ let tmp2 = (Store) => {
     key: "getMessageState",
     value(arg0) {
       if (!(arg0 in closure_10)) {
-        closure_10[arg0] = { "Null": 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000800310628823068, "Null": 0.0000000000000000000000000000000000000000000000015576649385897736 };
+        closure_10[arg0] = { 687810559: null, 721365503: null };
       }
       return closure_10[arg0];
     }

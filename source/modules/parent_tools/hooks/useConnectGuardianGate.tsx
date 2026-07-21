@@ -1,10 +1,10 @@
-// Module ID: 16000
-// Function ID: 122794
+// Module ID: 16007
+// Function ID: 122820
 // Name: useConnectGuardianGate
 // Dependencies: []
 // Exports: useConnectGuardianGate
 
-// Module 16000 (useConnectGuardianGate)
+// Module 16007 (useConnectGuardianGate)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 let closure_5 = importDefault(dependencyMap[2]);

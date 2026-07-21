@@ -1,10 +1,10 @@
-// Module ID: 10926
-// Function ID: 84987
+// Module ID: 10931
+// Function ID: 85008
 // Name: useGuildProfileCTA
 // Dependencies: []
 // Exports: default, getGuildProfileCTAType
 
-// Module 10926 (useGuildProfileCTA)
+// Module 10931 (useGuildProfileCTA)
 let closure_3 = importAll(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 let closure_5 = importDefault(dependencyMap[2]);

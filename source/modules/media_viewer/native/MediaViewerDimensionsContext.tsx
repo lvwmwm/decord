@@ -1,10 +1,10 @@
-// Module ID: 8284
-// Function ID: 65427
+// Module ID: 8288
+// Function ID: 65439
 // Name: MediaViewerDimensionsProvider
 // Dependencies: []
 // Exports: MediaViewerDimensionsProvider, useMediaViewerDimensions
 
-// Module 8284 (MediaViewerDimensionsProvider)
+// Module 8288 (MediaViewerDimensionsProvider)
 const importAllResult = importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const context = importAllResult.createContext(null);

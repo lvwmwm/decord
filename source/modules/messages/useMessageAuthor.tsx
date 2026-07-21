@@ -1,10 +1,10 @@
-// Module ID: 4352
-// Function ID: 38579
+// Module ID: 4356
+// Function ID: 38627
 // Name: useNullableMessageAuthor
 // Dependencies: []
 // Exports: default, getMessageAuthor, useUserNickAndColor
 
-// Module 4352 (useNullableMessageAuthor)
+// Module 4356 (useNullableMessageAuthor)
 function useNullableMessageAuthor(message) {
   const arg1 = message;
   let obj = arg1(dependencyMap[7]);
@@ -242,7 +242,7 @@ function computeMessageAuthor(channel) {
         id1 = guild.id;
       }
       if (null == id1) {
-        obj = { hideKeyboardOnSwipe: "Normal", activityState: true, navigationBarColor: "AbortSignal" };
+        obj = { ml: null, Math: "\u{1F9BB}\u{1F3FF}", data: true };
         let tmp9 = str;
         if (null != friendNickname) {
           tmp9 = friendNickname;
@@ -251,7 +251,7 @@ function computeMessageAuthor(channel) {
         obj.displayNameStyles = displayNameStyles;
         let obj1 = obj;
       } else if (null == member) {
-        obj = { hideKeyboardOnSwipe: "Normal", activityState: true, navigationBarColor: "AbortSignal", nick: str, displayNameStyles };
+        obj = { ml: null, Math: "\u{1F9BB}\u{1F3FF}", data: true, nick: str, displayNameStyles };
         obj1 = obj;
       } else {
         obj1 = {};
@@ -286,7 +286,7 @@ function computeMessageAuthor(channel) {
     }
     return obj1;
   }
-  const obj2 = { hideKeyboardOnSwipe: "Normal", activityState: true, navigationBarColor: "AbortSignal", nick: str, displayNameStyles };
+  const obj2 = { ml: null, Math: "\u{1F9BB}\u{1F3FF}", data: true, nick: str, displayNameStyles };
   obj1 = obj2;
 }
 let closure_3 = importDefault(dependencyMap[0]);

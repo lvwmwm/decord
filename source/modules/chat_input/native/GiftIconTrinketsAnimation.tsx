@@ -1,18 +1,18 @@
-// Module ID: 11339
-// Function ID: 88177
+// Module ID: 11345
+// Function ID: 88200
 // Name: GiftIconTrinketsAnimation
 // Dependencies: []
 
-// Module 11339 (GiftIconTrinketsAnimation)
+// Module 11345 (GiftIconTrinketsAnimation)
 const View = arg1(dependencyMap[1]).View;
 let closure_4 = importDefault(dependencyMap[2]);
 const jsx = arg1(dependencyMap[3]).jsx;
 const importAllResult = importAll(dependencyMap[0]);
 let closure_6 = arg1(dependencyMap[4]).createStyles((width) => {
   const sum = arg1(dependencyMap[5]).SMALL_BUTTON_HEIGHT + arg1(dependencyMap[5]).SMALL_BUTTON_PADDING + 2;
-  const container = { paddingTop: false, backgroundColor: false, position: false, top: false, left: false, right: false, bottom: false, zIndex: false, width: sum, height: sum };
+  const container = { left: false, accessibilityRole: false, exports: false, "Null": false, "Null": false, "Null": false, "Null": false, "Null": false, width: sum, height: sum };
   const containerRefresh = { width, height: width };
-  return { container, containerRefresh, trinkets: { <string:3069928428>: "%ArrayProto_keys%", <string:626741994>: "RELEASE_ACTIVITY_WEB_VIEW", <string:609397321>: "isArray", <string:1653350028>: "ParentalControlledDefaultGuildsRestricted", <string:810669942>: "isArray", <string:4191642289>: "ISK", <string:3243313249>: "isArray" }, trinketsRefresh: {} };
+  return { container, containerRefresh, trinkets: { String: null, lc: null, content: null, surrogates: null, justifyContent: null, padding: null, applicationId: null }, trinketsRefresh: {} };
 });
 const obj2 = arg1(dependencyMap[4]);
 const memoResult = importAllResult.memo((trinketsAnimationUrl) => {

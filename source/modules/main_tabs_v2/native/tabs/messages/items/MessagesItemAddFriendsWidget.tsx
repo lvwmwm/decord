@@ -1,9 +1,9 @@
-// Module ID: 14826
-// Function ID: 111737
+// Module ID: 14833
+// Function ID: 111761
 // Name: getFriendInviteCode
 // Dependencies: []
 
-// Module 14826 (getFriendInviteCode)
+// Module 14833 (getFriendInviteCode)
 function getFriendInviteCode() {
   return _getFriendInviteCode(...arguments);
 }
@@ -39,9 +39,9 @@ const InstantInviteSources = arg1(dependencyMap[3]).InstantInviteSources;
 const sum = arg1(dependencyMap[5]).ICON_ACTION_BUTTON_SIZE + importDefault(dependencyMap[6]).space.PX_16;
 let obj1 = arg1(dependencyMap[7]);
 let obj = {};
-obj = { <string:1403105049>: true, <string:1675459958>: true, <string:140641497>: true, <string:2785628569>: true, <string:1448303715>: true, height: sum, paddingHorizontal: importDefault(dependencyMap[6]).space.PX_8 };
+obj = { "Bool(true)": true, "Bool(true)": true, "Bool(true)": true, "Bool(true)": true, "Bool(true)": true, height: sum, paddingHorizontal: importDefault(dependencyMap[6]).space.PX_8 };
 obj.container = obj;
-obj1 = { -9223372036854775808: true, filter: true, borderRadius: importDefault(dependencyMap[6]).radii.md, paddingHorizontal: importDefault(dependencyMap[6]).space.PX_8, paddingVertical: importDefault(dependencyMap[6]).space.PX_12 };
+obj1 = { borderRadius: importDefault(dependencyMap[6]).radii.md, paddingHorizontal: importDefault(dependencyMap[6]).space.PX_8, paddingVertical: importDefault(dependencyMap[6]).space.PX_12 };
 obj.title = obj1;
 const tmp2 = arg1(dependencyMap[4]);
 obj.actions = { paddingHorizontal: importDefault(dependencyMap[6]).space.PX_8 };
@@ -63,7 +63,7 @@ const memoResult = importAllResult.memo(function MessagesItemAddFriendsWidget() 
       obj2 = current;
     }
     if (!tmp2) {
-      obj = { screen: "add-friends", params: { 0: 1, 9223372036854775807: "text-md/normal" } };
+      obj = { screen: "add-friends", params: { GUILD_DISCOVERY_CHECKLIST: "beb", borderTopWidth: "bg" } };
       obj2.navigate("friends", obj);
     }
   }, []);

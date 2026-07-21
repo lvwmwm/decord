@@ -1,10 +1,10 @@
-// Module ID: 8714
-// Function ID: 68987
+// Module ID: 8718
+// Function ID: 68999
 // Name: useRedeemVirtualCurrency
 // Dependencies: []
 // Exports: useRedeemVirtualCurrency
 
-// Module 8714 (useRedeemVirtualCurrency)
+// Module 8718 (useRedeemVirtualCurrency)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 ({ useState: closure_5, useEffect: closure_6, useCallback: closure_7 } = arg1(dependencyMap[2]));

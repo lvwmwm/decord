@@ -1,9 +1,9 @@
-// Module ID: 8336
-// Function ID: 66147
+// Module ID: 8340
+// Function ID: 66159
 // Name: RecurrenceOptions
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 8336 (RecurrenceOptions)
+// Module 8340 (RecurrenceOptions)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("modules/guild_scheduled_events/CreateGuildScheduledEventConstants.tsx");
 

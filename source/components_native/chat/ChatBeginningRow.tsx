@@ -1,10 +1,10 @@
-// Module ID: 11483
-// Function ID: 89401
+// Module ID: 11490
+// Function ID: 89425
 // Name: ChatBeginningRowIcon
 // Dependencies: []
 // Exports: default
 
-// Module 11483 (ChatBeginningRowIcon)
+// Module 11490 (ChatBeginningRowIcon)
 function ChatBeginningRowIcon(arg0) {
   let IconComponent;
   let isForumPost;
@@ -54,7 +54,7 @@ function ChatBeginningRowHeader(arg0) {
   const tmp2 = null != subtitleLink && obj.useIsScreenReaderEnabled();
   obj = {};
   const items = [callback3(ChatBeginningRowIcon, { isNSFW, isPrivate, isThread, isForumPost }), , ];
-  obj = { 0: 24, 9223372036854775807: 24, 0: null, -9223372036854775808: "aa9c26c29990ba7a6584e51ab5c56efa" };
+  obj = { 1501064855: 24, -1267889981: 24, -1145697943: null, -1266241916: "aa9c26c29990ba7a6584e51ab5c56efa" };
   const items1 = [tmp.title, ];
   const obj1 = {};
   let num = 8;
@@ -600,7 +600,7 @@ function ChatBeginningRowDM(channel) {
     if (null != channel) {
       guild_id = channel.guild_id;
     }
-    tmp(id, getAvatarURL(guild_id, 80), { status: null, style: null });
+    tmp(id, getAvatarURL(guild_id, 80), { position: null, display: null });
   }, items3);
   let bot;
   if (null != user) {
@@ -650,7 +650,7 @@ function ChatBeginningRowDM(channel) {
     const obj4 = { accessibilityRole: "button", onPress: handleCopyUserTag };
     const intl3 = arg1(dependencyMap[29]).intl;
     obj4.accessibilityHint = intl3.string(arg1(dependencyMap[29]).t.y5MwJy);
-    const obj5 = { INTEGRATION_CREATE: "Array", ConstraintReasonCode: "isArray", children: name };
+    const obj5 = { children: name };
     obj4.children = callback3(arg1(dependencyMap[34]).Text, obj5);
     items5[1] = callback3(arg1(dependencyMap[37]).PressableOpacity, obj4);
     let tmp25 = null;
@@ -658,7 +658,7 @@ function ChatBeginningRowDM(channel) {
       const obj6 = { accessibilityRole: "button", onPress: handleCopyUserTag };
       const intl4 = arg1(dependencyMap[29]).intl;
       obj6.accessibilityHint = intl4.string(arg1(dependencyMap[29]).t.y5MwJy);
-      const obj7 = { INTEGRATION_CREATE: null, ConstraintReasonCode: null, children: userTag };
+      const obj7 = { children: userTag };
       obj6.children = callback3(arg1(dependencyMap[34]).Text, obj7);
       tmp25 = callback3(arg1(dependencyMap[37]).PressableOpacity, obj6);
     }
@@ -746,7 +746,7 @@ function ChatBeginningRowDM(channel) {
         obj.onPress = handleBlock;
         if (stateFromStores === constants2.PENDING_INCOMING) {
           obj = { style: tmp.pendingIncoming };
-          const obj1 = { INTEGRATION_CREATE: "AutomodMentionRaidLimit", ConstraintReasonCode: "%URIError%" };
+          const obj1 = {};
           const intl5 = channel(tmp[29]).intl;
           const obj2 = {};
           let obj8 = user(tmp[44]);
@@ -754,7 +754,7 @@ function ChatBeginningRowDM(channel) {
           obj1.children = intl5.format(channel(tmp[29]).t.uIomXw, obj2);
           const items1 = [callback(channel(tmp[34]).Text, obj1), ];
           const obj3 = { style: tmp.pendingIncomingButtons };
-          const obj4 = { "Bool(true)": "%NumberPrototype%", "Bool(true)": "isArrayBuffer", "Bool(true)": "analyticsContainer" };
+          const obj4 = { 0: "Array", 9223372036854775807: "isArray", 0: "Array" };
           const intl6 = channel(tmp[29]).intl;
           obj4.text = intl6.string(channel(tmp[29]).t.+WbSn5);
           obj4.onPress = function handleAcceptFriend() {
@@ -786,7 +786,7 @@ function ChatBeginningRowDM(channel) {
           const obj7 = {};
           if (constants2.NONE === stateFromStores) {
             if (null == user) {
-              obj8 = { "Bool(true)": "%NumberPrototype%", "Bool(true)": "isArrayBuffer", "Bool(true)": "analyticsContainer" };
+              obj8 = { 0: "Array", 9223372036854775807: "isArray", 0: "Array" };
               const intl4 = channel(tmp[29]).intl;
               obj8.text = intl4.string(channel(tmp[29]).t.PMsq/b);
               obj8.onPress = function handleAddFriend() {
@@ -830,7 +830,7 @@ function ChatBeginningRowDM(channel) {
           } else {
             tmp6 = null;
             if (constants2.PENDING_OUTGOING === stateFromStores) {
-              const obj11 = { children: "%NumberPrototype%", containerStyle: "isArrayBuffer", status: "analyticsContainer", style: "pendingBio" };
+              const obj11 = { maxWidth: "Array", flexShrink: "isArray", position: "Array", display: "WireType" };
               const intl9 = channel(tmp[29]).intl;
               obj11.text = intl9.string(channel(tmp[29]).t.xMH6vD);
               obj11.onPress = undefined;
@@ -1014,38 +1014,38 @@ let closure_41 = arg1(dependencyMap[24]).BLOCK_CONFIRMATION_ACTION_SHEET_KEY;
 const tmp4 = arg1(dependencyMap[22]);
 ({ jsx: closure_42, Fragment: closure_43, jsxs: closure_44 } = arg1(dependencyMap[25]));
 let obj = arg1(dependencyMap[26]);
-obj = { container: { "Bool(true)": "<string:218103808>", "Bool(true)": "<string:218103808>" }, contentWrapper: {}, title: { marginTop: 16 }, subtitle: { guild_id: "flex-end", container: "center" } };
-obj = { markerEnd: "ADBE Fill", clipPath: 1, clipRule: 1, borderRadius: importDefault(dependencyMap[27]).radii.lg };
+obj = { container: {}, contentWrapper: {}, title: { marginTop: 16 }, subtitle: { numberOfPeriods: "text", identifier: "Array" } };
+obj = { borderRadius: importDefault(dependencyMap[27]).radii.lg };
 obj.gdmInviteFriends = obj;
-const obj1 = { markerEnd: -8411648136895894000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, clipPath: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011739242864048346, clipRule: 4345465893097212000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, borderRadius: importDefault(dependencyMap[27]).radii.lg };
+const obj1 = { fillOpacity: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000306651764758411, fillRule: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001173924286404835, stroke: 4386082277104651000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, borderRadius: importDefault(dependencyMap[27]).radii.lg };
 obj.gdmShareInviteLink = obj1;
 obj.gdmShareInviteLinkNoRelationships = { marginTop: 16 };
 obj.ctaLabel = { marginLeft: 8 };
-obj.ctaContainer = { APP_DMS_ENTRY_POINT_COMMAND_BUTTON: null, desert: null };
-obj.ctaButton = { -9223372036854775808: true, filter: true };
+obj.ctaContainer = { 1925026477: null, -1346530010: null };
+obj.ctaButton = {};
 obj.ctaAddRoles = { paddingRight: 24 };
 obj.avatar = { marginBottom: 16 };
 obj.avatarRedesign = { marginBottom: 16 };
-obj.centerHeader = { "Null": null, "Null": null };
+obj.centerHeader = { onAppear: null, onDisappear: null };
 obj.gdmText = { textAlign: "center" };
-obj.dmTitle = { bounces: null, keyboardShouldPersistTaps: null };
+obj.dmTitle = { "Null": null, "Null": null };
 obj.dmBeginningMessage = { marginTop: 8 };
 obj.provisionalAccountExplainer = { marginTop: 12 };
-obj.mutualGuildsLabel = { "Bool(false)": null, "Bool(false)": "127.0.0.1", "Bool(false)": "https://google.com" };
+obj.mutualGuildsLabel = {};
 obj.mutualGuildsContainer = {};
-const obj2 = { -9223372036854775808: false, -9223372036854775808: false, -9223372036854775808: false, -9223372036854775808: false, -9223372036854775808: false, -9223372036854775808: false, borderRadius: importDefault(dependencyMap[27]).radii.xxl, backgroundColor: importDefault(dependencyMap[27]).colors.BACKGROUND_MOD_MUTED };
-obj.iconContainer = obj2;
+const tmp5 = arg1(dependencyMap[25]);
+obj.iconContainer = { borderRadius: importDefault(dependencyMap[27]).radii.xxl, backgroundColor: importDefault(dependencyMap[27]).colors.BACKGROUND_MOD_MUTED };
 obj.threadDetails = { lineHeight: 20 };
-obj.threadCreatorRoleDot = { "Bool(false)": "isArray", "Bool(false)": "current" };
-obj.tagContainer = { "Bool(true)": -12, "Bool(true)": null, "Bool(true)": 1, "Bool(true)": null };
-const obj3 = { justifyContent: "<string:1011679233>", borderRadius: importDefault(dependencyMap[27]).radii.round, style: "<string:4201906177>", variant: "<string:4201840642>", accessibilityRole: "<string:256114690>", values: "<string:3959423752>", backgroundColor: importDefault(dependencyMap[27]).colors.STATUS_POSITIVE };
+obj.threadCreatorRoleDot = { "Bool(true)": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000012371042442948493, "Bool(true)": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001895504874615526 };
+obj.tagContainer = { preventClipping: -12, paddingLeft: null, marginRight: 1, paddingRight: null };
+const obj3 = { padding: "Array", _distance: "isArray", a: "parent", DARK: "round", url: "Array", kind: "isArray", borderRadius: importDefault(dependencyMap[27]).radii.round, backgroundColor: importDefault(dependencyMap[27]).colors.STATUS_POSITIVE };
 obj.unmutedNotificationContainer = obj3;
-obj.unmutedNotification = { aze: "<string:16777479>", azj: "<string:36295491>" };
-obj.dmButtonRow = {};
-obj.pendingIncoming = { 0: true, 9223372036854775807: "/assets/modules/user_settings/connections/native/two_way_link/images" };
+obj.unmutedNotification = {};
+obj.dmButtonRow = { display: true, alignItems: "/assets/images/native", flexDirection: 275, justifyContent: 150, minWidth: null };
+obj.pendingIncoming = { stiffness: null, damping: null };
 obj.pendingIncomingButtons = {};
 obj.appDMButtonIcon = { marginRight: 2 };
-obj.formCtaIcon = { aze: "boolean", azj: "string" };
+obj.formCtaIcon = { bhk: "boolean", bic: "string" };
 let closure_45 = obj.createStyles(obj);
 function ChatBeginningRowGuildDefaultChannel(guild) {
   let canInvite;
@@ -1158,7 +1158,7 @@ function ChatBeginningRowGuildDefaultChannel(guild) {
     obj4 = {};
     const intl4 = arg1(dependencyMap[29]).intl;
     obj5 = { guideURL: combined };
-    const items4 = [null, intl4.format(arg1(dependencyMap[29]).t.UOtD32, obj5)];
+    const items4 = [33210851629578355000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, intl4.format(arg1(dependencyMap[29]).t.UOtD32, obj5)];
     obj4.children = items4;
     tmp35 = callback4(closure_43, obj4);
   }
@@ -1192,7 +1192,7 @@ function ChatBeginningRowGuildDefaultChannel(guild) {
   obj6.children = items5;
   return callback4(React.Fragment, obj6);
 }
-const tmp5 = arg1(dependencyMap[25]);
+const obj2 = { borderRadius: importDefault(dependencyMap[27]).radii.xxl, backgroundColor: importDefault(dependencyMap[27]).colors.BACKGROUND_MOD_MUTED };
 const result = arg1(dependencyMap[113]).fileFinishedImporting("components_native/chat/ChatBeginningRow.tsx");
 
 export default function ChatBeginningRow(channelId) {

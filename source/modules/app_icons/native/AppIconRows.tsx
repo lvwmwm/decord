@@ -1,10 +1,10 @@
-// Module ID: 14228
-// Function ID: 107557
+// Module ID: 14235
+// Function ID: 107580
 // Name: BackwardsCompatibleAppIconRows
 // Dependencies: []
 // Exports: default
 
-// Module 14228 (BackwardsCompatibleAppIconRows)
+// Module 14235 (BackwardsCompatibleAppIconRows)
 function BackwardsCompatibleAppIconRows(arg0) {
   if (arg0 == null) {
     HermesBuiltin.throwTypeError("Cannot destructure 'undefined' or 'null'.");

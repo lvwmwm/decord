@@ -1,10 +1,10 @@
-// Module ID: 8893
-// Function ID: 70206
+// Module ID: 8897
+// Function ID: 70218
 // Name: useIsPersistentSecureFramesFingerprint
 // Dependencies: []
 // Exports: useIsPersistentSecureFramesFingerprint
 
-// Module 8893 (useIsPersistentSecureFramesFingerprint)
+// Module 8897 (useIsPersistentSecureFramesFingerprint)
 let closure_2 = importDefault(dependencyMap[0]);
 let closure_3 = importDefault(dependencyMap[1]);
 let closure_4 = importAll(dependencyMap[2]);

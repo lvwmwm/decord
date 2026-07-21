@@ -1,10 +1,10 @@
-// Module ID: 13739
-// Function ID: 103956
+// Module ID: 13746
+// Function ID: 103979
 // Name: OneWayToTwoWayNewTag
 // Dependencies: []
 // Exports: OneWayToTwoWayLinkUpsell
 
-// Module 13739 (OneWayToTwoWayNewTag)
+// Module 13746 (OneWayToTwoWayNewTag)
 function OneWayToTwoWayNewTag(markAsDismissed) {
   markAsDismissed = markAsDismissed.markAsDismissed;
   const arg1 = markAsDismissed;
@@ -23,7 +23,7 @@ obj = {};
 obj = { backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_MOD_NORMAL, borderRadius: importDefault(dependencyMap[6]).radii.sm };
 obj.container = obj;
 obj.header = {};
-obj.titleContainer = { backgroundColor: "innocent", height: "innocent" };
+obj.titleContainer = {};
 const obj1 = {};
 const tmp2 = arg1(dependencyMap[4]);
 const merged = Object.assign(importDefault(dependencyMap[7])(Fonts.PRIMARY_SEMIBOLD, importDefault(dependencyMap[6]).colors.TEXT_DEFAULT, 16));

@@ -1,10 +1,10 @@
-// Module ID: 7151
-// Function ID: 57769
+// Module ID: 7155
+// Function ID: 57780
 // Name: getHeaderBackground
 // Dependencies: []
 // Exports: default
 
-// Module 7151 (getHeaderBackground)
+// Module 7155 (getHeaderBackground)
 function getHeaderBackground(arg0) {
   if (arg1(dependencyMap[6]).Branding.TIER_0 === arg0) {
     return importDefault(dependencyMap[7]);
@@ -105,8 +105,8 @@ const SubscriptionStatusTypes = arg1(dependencyMap[2]).SubscriptionStatusTypes;
 const tmp3 = arg1(dependencyMap[1]);
 ({ jsx: closure_7, jsxs: closure_8 } = arg1(dependencyMap[3]));
 let obj = arg1(dependencyMap[4]);
-obj = { alert: { i: false, s: false }, header: { "Bool(true)": "\u{1F926}\u{1F3FD}\u200D\u2640\uFE0F", "Bool(true)": true, "Bool(true)": null, "Bool(true)": 9, "Bool(true)": null }, headerImage: { <string:223543300>: null, <string:1762021126>: null }, body: {}, logoPlusPremiumGuild: { 0: "isArray", 0: "constructor", 0: "prototype" } };
-obj = { color: arg1(dependencyMap[5]).DARK_PRIMARY_300_LIGHT_PRIMARY_400 };
+obj = { alert: {}, header: { "Null": "\u{1F926}\u{1F3FD}\u200D\u2640\uFE0F", "Null": true, "Null": null, "Null": 9, "Null": null }, headerImage: { display: "a", position: "<string:42810433>" }, body: {}, logoPlusPremiumGuild: { "Bool(false)": "isArray", "Bool(false)": "constructor", "Bool(false)": "prototype" } };
+obj = { PX_16: null, ix: null, message: null, defineProperty: null, color: arg1(dependencyMap[5]).DARK_PRIMARY_300_LIGHT_PRIMARY_400 };
 obj.description = obj;
 let closure_9 = obj.createStyles(obj);
 const tmp4 = arg1(dependencyMap[3]);
@@ -115,16 +115,16 @@ let closure_10 = arg1(dependencyMap[4]).createStyles((arg0) => {
     let obj = { headerImage: {} };
     return obj;
   } else if (arg1(dependencyMap[6]).Branding.TIER_1 === arg0) {
-    obj = { headerImage: { "Bool(true)": -1841229468, "Bool(true)": 1912603216, "Bool(true)": 91 } };
+    obj = { headerImage: { 296965868: "SERVER_GUIDE_CHANNEL_SELECTED", 215747989: "EAPLAY", 1415398453: "r" } };
     return obj;
   } else if (arg1(dependencyMap[6]).Branding.BUNDLE === arg0) {
-    const obj1 = { headerImage: { "Bool(true)": 6, "Bool(true)": 61, "Bool(true)": null } };
+    const obj1 = { headerImage: { 296965868: 6, 215747989: 61, 1415398453: null } };
     return obj1;
   } else if (arg1(dependencyMap[6]).Branding.TIER_2 === arg0) {
-    const obj2 = { headerImage: {} };
+    const obj2 = { headerImage: { 9223372036854775807: "isArray", -9223372036854775808: "isArrayBuffer", 0: "toothbrush", 0: "%DataViewPrototype%" } };
     return obj2;
   } else if (arg1(dependencyMap[6]).Branding.PREMIUM_GUILD === arg0) {
-    obj = { headerImage: { "Bool(true)": true, "Bool(true)": "/assets/images/native/premium/illustrations", "Bool(true)": 140.5 } };
+    obj = { headerImage: { 296965868: true, 215747989: "/assets/images/native/premium/illustrations", 1415398453: 140.5 } };
     return obj;
   }
 });
@@ -177,7 +177,7 @@ export default function PremiumActivatedAlert(onClose) {
   let obj = arg1(dependencyMap[6]);
   const premiumBranding = obj.getPremiumBranding(renewalMutations);
   if (arg1(dependencyMap[6]).Branding.TIER_0 === premiumBranding) {
-    obj = { logo: { aze: "<string:3211526146>", azj: "<string:2102460418>" } };
+    obj = { logo: { bhk: "<string:3214082050>", bic: "<string:3578855426>" } };
     let tmp13 = obj;
   } else if (arg1(dependencyMap[6]).Branding.TIER_1 === premiumBranding) {
     obj = { logo: {} };

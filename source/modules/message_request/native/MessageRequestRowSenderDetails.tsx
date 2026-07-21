@@ -1,30 +1,30 @@
-// Module ID: 15425
-// Function ID: 117734
+// Module ID: 15432
+// Function ID: 117758
 // Name: MessageRequestRowSenderDetails
-// Dependencies: [31, 5600, 5601, 15433, 566, 5388, 15434, 2, 5600, 566, 2, 31, 33, 1273, 15436, 2]
+// Dependencies: [31, 5602, 5603, 15440, 566, 5390, 15441, 2, 5602, 566, 2, 31, 33, 1273, 15443, 2]
 // Exports: default
 
-// Module 15425 (MessageRequestRowSenderDetails)
+// Module 15432 (MessageRequestRowSenderDetails)
 import "module_31";
 import { View } from "_isNativeReflectConstruct";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import useMessageRequestsCount from "useMessageRequestsCount";
 import initialize from "initialize";
-import keys from "keys";
+import result2 from "result2";
 
 ({ jsx: closure_5, jsxs: closure_6, Fragment: closure_7 } = useMessageRequestsCount);
 initialize = {};
 initialize = { borderRadius: require("useRefValue").AVATAR_SIZE_MAP[require("useRefValue").AvatarSizes.NORMAL] / 2, backgroundColor: require("useSpamMessageRequestCount").colors.BACKGROUND_SURFACE_HIGH };
 initialize.avatar = initialize;
-initialize.avatarContainer = { <string:1547395988>: false, <string:425808226>: false, <string:1368675426>: false };
-initialize.detailsContainer = { adjustToInterfaceOrientation: 9, KICK_MEMBERS: null, getButtonDefaultTextVariant: "\u{1F91B}\u{1F3FC}", formatWatchTaskTime: true };
-initialize.messageDetails = { -9223372036854775808: true, filter: true };
+initialize.avatarContainer = { 1368675426: null, 1449257164: null, 1374473314: null };
+initialize.detailsContainer = { <string:3907029525>: 9, <string:2102264663>: null, <string:2128449501>: "\u{1F91B}\u{1F3FC}", <string:3252518877>: true };
+initialize.messageDetails = {};
 initialize.username = { flexShrink: 1, color: require("useSpamMessageRequestCount").colors.MOBILE_TEXT_HEADING_PRIMARY };
 initialize.timestampSeparator = { marginHorizontal: 6 };
 initialize.messagePreview = { marginTop: 2 };
 initialize.usernameTextContainer = { flexShrink: 1 };
 initialize = initialize.createStyles(initialize);
-const result = keys.fileFinishedImporting("modules/message_request/native/MessageRequestRowSenderDetails.tsx");
+const result = result2.fileFinishedImporting("modules/message_request/native/MessageRequestRowSenderDetails.tsx");
 
 export default function MessageRequestRowSenderDetails(isRestricted) {
   let channel;
@@ -71,8 +71,8 @@ export default function MessageRequestRowSenderDetails(isRestricted) {
   const items1 = [callback(View, obj), ];
   const obj3 = { style: tmp.detailsContainer };
   const obj4 = { style: tmp.messageDetails };
-  const obj5 = { CHANNEL_HIGHLIGHT: true, guild_template_description: 15.1, borderWidth: 253, style: tmp.usernameTextContainer };
-  const obj6 = { INTEGRATION_CREATE: 131072.00119209292, ConstraintReasonCode: -293983030121430100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, style: tmp.username };
+  const obj5 = { encodingConfig: true, showRemove: 15.1, PREMIUM_CUSTOM_NOTIFICATION_SOUND_SETTINGS_UPSELL: 253, style: tmp.usernameTextContainer };
+  const obj6 = { style: tmp.username };
   let stringResult = stateFromStores;
   if (null == stateFromStores) {
     let username;
@@ -90,34 +90,30 @@ export default function MessageRequestRowSenderDetails(isRestricted) {
   let tmp18 = null != stateFromStores;
   if (tmp18) {
     const obj7 = {};
-    let obj11 = arg1(dependencyMap[8]);
-    const items3 = [null, obj11.getUserTag(otherUser)];
+    const items3 = [33210851629578355000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, arg1(dependencyMap[8]).getUserTag(otherUser)];
     obj7.children = items3;
     tmp18 = callback2(arg1(dependencyMap[11]).Text, obj7);
+    const obj12 = arg1(dependencyMap[8]);
   }
   items2[1] = tmp18;
   obj5.children = items2;
-  const items4 = [callback2(arg1(dependencyMap[11]).Text, obj5), , ];
-  const obj8 = { "Bool(true)": "ur", "Bool(true)": "SECTION_INDEX_FIRST_NAMED_CATEGORY", "Bool(true)": "ur", "Bool(true)": "advanceAnimationByFrame", style: tmp.timestampSeparator };
-  items4[1] = callback(arg1(dependencyMap[11]).Text, obj8);
-  const obj9 = { INTEGRATION_CREATE: 15, ConstraintReasonCode: "center", children: messageRequestRelativeTimestampText };
-  items4[2] = callback(arg1(dependencyMap[11]).Text, obj9);
+  const items4 = [callback2(arg1(dependencyMap[11]).Text, obj5), callback(arg1(dependencyMap[11]).Text, { style: tmp.timestampSeparator }), callback(arg1(dependencyMap[11]).Text, { children: messageRequestRelativeTimestampText })];
   obj4.children = items4;
   const items5 = [callback2(View, obj4), , ];
   let tmp22 = !flag;
   if (tmp22) {
-    const obj10 = { style: tmp.messagePreview, channel };
-    tmp22 = callback(importDefault(dependencyMap[13]), obj10);
+    const obj9 = { style: tmp.messagePreview, channel };
+    tmp22 = callback(importDefault(dependencyMap[13]), obj9);
   }
   items5[1] = tmp22;
   if (flag) {
     flag = null != otherUser;
   }
   if (flag) {
-    obj11 = { style: tmp.messagePreview, userId: otherUser.id };
+    const obj10 = { style: tmp.messagePreview, userId: otherUser.id };
     const intl2 = arg1(dependencyMap[12]).intl;
-    obj11.suffix = intl2.string(arg1(dependencyMap[12]).t.hTltPn);
-    flag = callback(importDefault(dependencyMap[14]), obj11);
+    obj10.suffix = intl2.string(arg1(dependencyMap[12]).t.hTltPn);
+    flag = callback(importDefault(dependencyMap[14]), obj10);
     const tmp29 = importDefault(dependencyMap[14]);
   }
   items5[2] = flag;

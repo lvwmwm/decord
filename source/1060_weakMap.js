@@ -49,7 +49,7 @@ export const reportingObserverIntegration = _module.defineIntegration(function _
     if (undefined !== arguments[0]) {
       const first = arguments[0];
     }
-    let closure_0 = {}.types || [null, null, null];
+    let closure_0 = {}.types || [];
     const obj = {
       name: "ReportingObserver",
       setupOnce() {

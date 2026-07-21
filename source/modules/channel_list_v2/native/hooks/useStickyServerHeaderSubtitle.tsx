@@ -1,10 +1,10 @@
-// Module ID: 14851
-// Function ID: 111924
+// Module ID: 14858
+// Function ID: 111948
 // Name: useStickyServerHeaderSubtitle
 // Dependencies: []
 // Exports: default
 
-// Module 14851 (useStickyServerHeaderSubtitle)
+// Module 14858 (useStickyServerHeaderSubtitle)
 let closure_2 = importDefault(dependencyMap[0]);
 const GuildFeatures = arg1(dependencyMap[1]).GuildFeatures;
 const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/channel_list_v2/native/hooks/useStickyServerHeaderSubtitle.tsx");

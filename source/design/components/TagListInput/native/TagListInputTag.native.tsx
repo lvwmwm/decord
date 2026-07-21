@@ -1,10 +1,10 @@
-// Module ID: 8417
-// Function ID: 67089
+// Module ID: 8421
+// Function ID: 67101
 // Name: TagListInputTagComponent
 // Dependencies: []
 // Exports: TagListInputTagComponent
 
-// Module 8417 (TagListInputTagComponent)
+// Module 8421 (TagListInputTagComponent)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 ({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[2]));
@@ -100,7 +100,7 @@ export const TagListInputTagComponent = function TagListInputTagComponent(end) {
     tmp8 = callback(View, obj);
   }
   const items1 = [tmp8, ];
-  const obj1 = { "Null": "<string:16777216>", "Null": "<string:82160449>", "Null": "<string:422400>", style: tmp.tagText };
+  const obj1 = { style: tmp.tagText };
   let str = "text-default";
   if (selected) {
     str = "text-overlay-light";

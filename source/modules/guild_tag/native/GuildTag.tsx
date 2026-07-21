@@ -1,9 +1,9 @@
-// Module ID: 8565
-// Function ID: 68063
+// Module ID: 8569
+// Function ID: 68075
 // Name: memoResult1
 // Dependencies: []
 
-// Module 8565 (memoResult1)
+// Module 8569 (memoResult1)
 const importAllResult = importAll(dependencyMap[0]);
 ({ Image: closure_4, View: closure_5 } = arg1(dependencyMap[1]));
 let closure_6 = importDefault(dependencyMap[2]);
@@ -12,7 +12,7 @@ const tmp2 = arg1(dependencyMap[1]);
 ({ jsx: closure_8, Fragment: closure_9, jsxs: closure_10 } = arg1(dependencyMap[4]));
 let obj1 = arg1(dependencyMap[5]);
 let obj = {};
-obj = { enabled: "<string:2505179138>", themeSettings: "<string:291798398>", justifyContent: "<string:38808897>", width: "<string:1602048>", height: "<string:1572864>", padding: "<string:1090584576>", paddingHorizontal: "0a2944e427275918c323a5aa7d658085", backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_MOD_STRONG };
+obj = { backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_MOD_STRONG };
 obj.container = obj;
 obj1 = {};
 const tmp3 = arg1(dependencyMap[4]);
@@ -129,7 +129,7 @@ const memoResult2 = importAllResult.memo((primaryGuild) => {
   if (SIZE_12 === undefined) {
     SIZE_12 = GuildTagBadgeSize.SIZE_12;
   }
-  let obj = { accessibilityRole: "r", applicationId: "onRequireModeratorMFAClick", "Null": "Array", "Null": "isSpamMessageRequest" };
+  let obj = { "Bool(false)": null, "Bool(false)": 4, "Bool(false)": 4, "Bool(false)": "rgba(0, 0, 0, 0.75)" };
   Object.setPrototypeOf(null);
   const merged = Object.assign(primaryGuild, obj);
   let dependencyMap;

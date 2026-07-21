@@ -1,10 +1,10 @@
-// Module ID: 6411
-// Function ID: 50490
+// Module ID: 6413
+// Function ID: 50533
 // Name: PowerupSpotIllustration
 // Dependencies: []
 // Exports: PowerupSpotIllustration
 
-// Module 6411 (PowerupSpotIllustration)
+// Module 6413 (PowerupSpotIllustration)
 const jsx = require(dependencyMap[0]).jsx;
 const _module = require(dependencyMap[3]);
 const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/PowerupSpotIllustration.native.tsx");

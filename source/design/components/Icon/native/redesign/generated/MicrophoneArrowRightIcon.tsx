@@ -1,10 +1,10 @@
-// Module ID: 10644
-// Function ID: 83101
+// Module ID: 10650
+// Function ID: 83124
 // Name: MicrophoneArrowRightIcon
 // Dependencies: []
 // Exports: MicrophoneArrowRightIcon
 
-// Module 10644 (MicrophoneArrowRightIcon)
+// Module 10650 (MicrophoneArrowRightIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/MicrophoneArrowRightIcon.tsx");

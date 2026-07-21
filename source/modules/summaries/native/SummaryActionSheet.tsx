@@ -1,10 +1,10 @@
-// Module ID: 10875
-// Function ID: 84550
+// Module ID: 10881
+// Function ID: 84573
 // Name: SummaryActionSheet
 // Dependencies: []
 // Exports: default, openSummaryDividerActionSheet
 
-// Module 10875 (SummaryActionSheet)
+// Module 10881 (SummaryActionSheet)
 let closure_3 = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 let closure_5 = importDefault(dependencyMap[2]);
@@ -14,15 +14,15 @@ let closure_7 = importDefault(dependencyMap[4]);
 const tmp2 = arg1(dependencyMap[5]);
 ({ jsx: closure_10, jsxs: closure_11 } = arg1(dependencyMap[6]));
 let obj = arg1(dependencyMap[10]);
-obj = { summaryContainer: { y: false, isArray: false, ks: false, pos: false, y: false }, summaryContent: { textAlign: "center" } };
-obj = { -9223372036854775808: "\u5927\u7EA6 1 \u4E2A\u6708", 0: "\u5927\u7EA6 {{count}} \u4E2A\u6708", 9223372036854775807: "1 \u4E2A\u6708", 9223372036854775807: "{{count}} \u4E2A\u6708", -9223372036854775808: "\u5927\u7EA6 1 \u5E74", 0: "\u5927\u7EA6 {{count}} \u5E74", borderRadius: importDefault(dependencyMap[11]).radii.round, backgroundColor: importDefault(dependencyMap[11]).colors.BACKGROUND_BRAND };
+obj = { summaryContainer: {}, summaryContent: { textAlign: "center" } };
+obj = { borderRadius: importDefault(dependencyMap[11]).radii.round, backgroundColor: importDefault(dependencyMap[11]).colors.BACKGROUND_BRAND };
 obj.summaryIconContainer = obj;
-const tmp3 = arg1(dependencyMap[6]);
-obj.summaryIcon = { tintColor: importDefault(dependencyMap[11]).colors.WHITE };
+const obj1 = { minimumFontScale: "Array", textBreakStrategy: "isArray", onTextLayout: "getChannel", tintColor: importDefault(dependencyMap[11]).colors.WHITE };
+obj.summaryIcon = obj1;
 obj.summaryTopic = { marginBottom: 4 };
-const obj1 = { tintColor: importDefault(dependencyMap[11]).colors.WHITE };
+const tmp3 = arg1(dependencyMap[6]);
 obj.divider = { height: 1, backgroundColor: importDefault(dependencyMap[11]).colors.BORDER_SUBTLE };
-obj.actionsContainer = { first: -1606348444, groupTypes: 1912602980, assetType: 16 };
+obj.actionsContainer = { "Bool(false)": "SERVER_GUIDE_CHANNEL_SELECTED", "Bool(false)": "staticUrl", "Bool(false)": "Array" };
 let closure_12 = obj.createStyles(obj);
 const obj2 = { height: 1, backgroundColor: importDefault(dependencyMap[11]).colors.BORDER_SUBTLE };
 const result = arg1(dependencyMap[31]).fileFinishedImporting("modules/summaries/native/SummaryActionSheet.tsx");
@@ -131,9 +131,12 @@ export default function SummaryActionSheet(summary) {
   obj1 = { style: tmp.summaryContainer };
   const obj2 = { style: tmp.summaryIconContainer, children: callback(arg1(dependencyMap[25]).TopicsIcon, { style: tmp.summaryIcon, size: "custom" }) };
   const items4 = [callback(View, obj2), , ];
+  const obj4 = { "Null": "781324642736144424", "Null": null, "Null": "Cheerful Choco preens against window" };
   const items5 = [, ];
   ({ summaryContent: arr6[0], summaryTopic: arr6[1] } = tmp);
-  items4[1] = callback(arg1(dependencyMap[26]).Text, { style: items5, children: summary.topic });
+  obj4.style = items5;
+  obj4.children = summary.topic;
+  items4[1] = callback(arg1(dependencyMap[26]).Text, obj4);
   const items6 = [tmp.summaryContent];
   items4[2] = callback(arg1(dependencyMap[26]).Text, { style: items6, children: summary.summShort });
   obj1.children = items4;

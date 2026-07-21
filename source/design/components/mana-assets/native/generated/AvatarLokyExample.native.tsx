@@ -1,10 +1,10 @@
-// Module ID: 5871
-// Function ID: 49680
+// Module ID: 5873
+// Function ID: 49723
 // Name: AvatarLokyExample
 // Dependencies: []
 // Exports: AvatarLokyExample
 
-// Module 5871 (AvatarLokyExample)
+// Module 5873 (AvatarLokyExample)
 const jsx = require(dependencyMap[0]).jsx;
 const _module = require(dependencyMap[3]);
 const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/AvatarLokyExample.native.tsx");

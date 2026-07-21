@@ -1,10 +1,10 @@
-// Module ID: 6259
-// Function ID: 50262
+// Module ID: 6261
+// Function ID: 50305
 // Name: HighFiveSpotIllustration
 // Dependencies: []
 // Exports: HighFiveSpotIllustration
 
-// Module 6259 (HighFiveSpotIllustration)
+// Module 6261 (HighFiveSpotIllustration)
 const jsx = require(dependencyMap[0]).jsx;
 const _module = require(dependencyMap[3]);
 const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/HighFiveSpotIllustration.native.tsx");

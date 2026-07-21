@@ -92,7 +92,7 @@ export const useRiveFile = function useRiveFile(src, arg1) {
       let obj = arguments[1];
     }
     arg1 = obj;
-    obj = { accessibilityLabel: "BG_GRADIENT_RETRO_RAINCLOUD_1", keys: 73.12, toString: "BG_GRADIENT_HANAMI_1", riveFile: undefined };
+    obj = { "Bool(false)": "BG_GRADIENT_RETRO_RAINCLOUD_1", "Bool(false)": 73.12, "Bool(false)": null, riveFile: undefined };
     [tmp4, closure_1] = callback(str(obj), 2);
     const items = [obj.referencedAssets];
     const tmp6 = riveFile(() => callback(obj.referencedAssets), items);
@@ -118,7 +118,7 @@ export const useRiveFile = function useRiveFile(src, arg1) {
             tmp = closure_5;
           }
           if (null == tmp) {
-            obj = { accessibilityLabel: "midnight", keys: "noon" };
+            obj = { "Bool(false)": true, "Bool(false)": true };
             const _Error = Error;
             const error = new Error("No Rive file input provided.");
             obj.error = error;

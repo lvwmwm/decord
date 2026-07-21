@@ -1,10 +1,10 @@
-// Module ID: 9796
-// Function ID: 76079
+// Module ID: 9801
+// Function ID: 76095
 // Name: GiftingBadgeLevelUpProgress
 // Dependencies: []
 // Exports: default
 
-// Module 9796 (GiftingBadgeLevelUpProgress)
+// Module 9801 (GiftingBadgeLevelUpProgress)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 let closure_4 = arg1(dependencyMap[2]).getSingleRequirementThreshold;
@@ -13,13 +13,13 @@ let obj = arg1(dependencyMap[4]);
 obj = {};
 obj = { gap: importDefault(dependencyMap[5]).space.PX_4, width: "100%" };
 obj.container = obj;
-const obj1 = { -9223372036854775808: true, filter: true, gap: importDefault(dependencyMap[5]).space.PX_8 };
-obj.barRow = obj1;
 const tmp3 = arg1(dependencyMap[3]);
+obj.barRow = { gap: importDefault(dependencyMap[5]).space.PX_8 };
+const obj1 = { gap: importDefault(dependencyMap[5]).space.PX_8 };
 obj.progressBarTrack = { borderRadius: importDefault(dependencyMap[5]).radii.round, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_MOD_NORMAL };
 const obj2 = { borderRadius: importDefault(dependencyMap[5]).radii.round, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_MOD_NORMAL };
 obj.progressBarFill = { height: 6, borderRadius: importDefault(dependencyMap[5]).radii.round, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BRAND };
-obj.labels = { <string:1353458075>: 678625281, <string:1722561866>: 738197504 };
+obj.labels = { 1449229240: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000042439915824, 371666258: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004243991583 };
 let closure_7 = obj.createStyles(obj);
 const obj3 = { height: 6, borderRadius: importDefault(dependencyMap[5]).radii.round, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BRAND };
 const result = arg1(dependencyMap[10]).fileFinishedImporting("modules/premium/gifting/native/views/GiftingBadgeLevelUpProgress.tsx");

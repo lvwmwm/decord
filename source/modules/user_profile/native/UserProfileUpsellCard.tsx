@@ -1,10 +1,10 @@
-// Module ID: 13481
-// Function ID: 102334
+// Module ID: 13488
+// Function ID: 102357
 // Name: UserProfileUpsellCard
 // Dependencies: []
 // Exports: default
 
-// Module 13481 (UserProfileUpsellCard)
+// Module 13488 (UserProfileUpsellCard)
 importAll(dependencyMap[0]);
 ({ View: closure_3, ScrollView: closure_4 } = arg1(dependencyMap[1]));
 const Gradients = arg1(dependencyMap[3]).Gradients;
@@ -14,12 +14,12 @@ let obj = arg1(dependencyMap[5]);
 obj = {};
 obj = { borderRadius: importDefault(dependencyMap[6]).radii.round };
 obj.upsellButton = obj;
-obj.titleContainer = { replace: null, count: null, ip: null, hash: null };
+obj.titleContainer = { "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true };
 obj.linearGradient = {};
 obj.outer = { marginHorizontal: arg1(dependencyMap[2]).PROFILE_SIDE_PADDING - 1 };
 const tmp4 = arg1(dependencyMap[4]);
 obj.scroll = { borderRadius: importDefault(dependencyMap[6]).radii.lg, backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_SURFACE_HIGH };
-obj.inner = { value: 1845494131, alignItems: -1593834942 };
+obj.inner = { flex: 0.0000000000000000000000014475671618756285, display: 2852224147080230300000000000000 };
 let closure_8 = obj.createStyles(obj);
 const obj1 = { borderRadius: importDefault(dependencyMap[6]).radii.lg, backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_SURFACE_HIGH };
 const result = arg1(dependencyMap[12]).fileFinishedImporting("modules/user_profile/native/UserProfileUpsellCard.tsx");
@@ -57,7 +57,7 @@ export default function UserProfileUpsellCard(headerText) {
     text: ctaText,
     color: arg1(dependencyMap[7]).ButtonColors.GREEN,
     renderIcon() {
-      return callback2(tmp(closure_2[8]).NitroWheelIcon, { "Bool(true)": 0.00000000000000000000031763757519545874, "Bool(true)": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000014555482052038113 });
+      return callback2(tmp(closure_2[8]).NitroWheelIcon, {});
     }
   };
   let fn;

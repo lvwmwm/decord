@@ -1,10 +1,10 @@
-// Module ID: 12225
-// Function ID: 93834
+// Module ID: 12232
+// Function ID: 93857
 // Name: shouldShowVoiceChannelChangeConfirmation
 // Dependencies: []
 // Exports: shouldShowVoiceChannelChangeConfirmation
 
-// Module 12225 (shouldShowVoiceChannelChangeConfirmation)
+// Module 12232 (shouldShowVoiceChannelChangeConfirmation)
 let closure_0 = importDefault(dependencyMap[0]);
 let closure_1 = importDefault(dependencyMap[1]);
 let closure_2 = importDefault(dependencyMap[2]);

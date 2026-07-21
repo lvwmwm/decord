@@ -1,12 +1,12 @@
-// Module ID: 10772
-// Function ID: 83703
+// Module ID: 10778
+// Function ID: 83726
 // Name: useFetchStreamPreview
-// Dependencies: [31, 27, 33, 4126, 4963, 10744, 10740, 2, 57]
+// Dependencies: [31, 27, 33, 4126, 4965, 10750, 10746, 2, 57]
 // Exports: default
 
-// Module 10772 (useFetchStreamPreview)
+// Module 10778 (useFetchStreamPreview)
 import module_31 from "module_31";
-import getActivityIndicator from "get ActivityIndicator";
+import keys from "keys";
 import module_33 from "module_33";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import NAV_BAR_HEIGHT from "NAV_BAR_HEIGHT";
@@ -21,7 +21,7 @@ export default function useFetchStreamPreview(arg0, arg1, arg2) {
   arg1 = arg0;
   const dependencyMap = arg1;
   const React = arg2;
-  let getActivityIndicator = tmp;
+  let keys = tmp;
   let obj = arg1(dependencyMap[6]);
   const items = [module_33];
   module_33 = obj.useStateFromStores(items, () => channel.getChannel(arg1));
@@ -37,7 +37,7 @@ export default function useFetchStreamPreview(arg0, arg1, arg2) {
   const items2 = [NAV_BAR_HEIGHT];
   const stateFromStores1 = arg1(dependencyMap[6]).useStateFromStores(items2, () => stateFromStores.getVoiceChannelId() === arg1);
   const obj3 = arg1(dependencyMap[6]);
-  const items3 = [getActivityIndicator];
+  const items3 = [keys];
   const stateFromStoresObject = arg1(dependencyMap[6]).useStateFromStoresObject(items3, () => {
     const obj = {};
     let shouldFetchPreviewResult = !tmp;

@@ -1,10 +1,10 @@
-// Module ID: 8803
-// Function ID: 69405
+// Module ID: 8807
+// Function ID: 69417
 // Name: SelectedUserField
 // Dependencies: []
 // Exports: default
 
-// Module 8803 (SelectedUserField)
+// Module 8807 (SelectedUserField)
 importAll(dependencyMap[0]);
 ({ Pressable: closure_3, View: closure_4 } = arg1(dependencyMap[1]));
 const tmp3 = arg1(dependencyMap[1]);
@@ -19,7 +19,7 @@ obj.opener = { paddingHorizontal: importDefault(dependencyMap[4]).space.PX_16 };
 obj.openerWithClearButton = { paddingRight: 0 };
 const obj1 = { paddingHorizontal: importDefault(dependencyMap[4]).space.PX_16 };
 obj.searchIcon = { marginRight: importDefault(dependencyMap[4]).space.PX_8 };
-const obj3 = { 1632713569: true, 1364615449: "/assets/images/native/icons/voice_calls", -362700369: 24, 1629838417: 24, -351644953: null, 1382203064: "01b615b81a2755a195f3be7dbb482eef", backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_SURFACE_HIGH, borderRadius: importDefault(dependencyMap[4]).radii.lg };
+const obj3 = { marginHorizontal: true, overflow: "/assets/images/native/icons/voice_calls", flex: 24, display: 24, flexDirection: null, flexShrink: "01b615b81a2755a195f3be7dbb482eef", backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_SURFACE_HIGH, borderRadius: importDefault(dependencyMap[4]).radii.lg };
 obj.userPill = obj3;
 obj.userPillText = { marginLeft: 6 };
 const obj2 = { marginRight: importDefault(dependencyMap[4]).space.PX_8 };
@@ -59,8 +59,7 @@ export default function SelectedUserField(onPress) {
     const stringResult1 = intl4.string(arg1(dependencyMap[6]).t.xFn72s);
   }
   obj1.accessibilityLabel = combined;
-  const obj2 = { "Bool(true)": "decorationStyle", "Bool(true)": "isArrayBuffer", "Bool(true)": "<string:2635747584>", style: tmp.searchIcon };
-  const items1 = [callback(arg1(dependencyMap[8]).MagnifyingGlassIcon, obj2), ];
+  const items1 = [callback(arg1(dependencyMap[8]).MagnifyingGlassIcon, { style: tmp.searchIcon }), ];
   if (null != selectedUser) {
     const obj3 = { style: tmp.userPill };
     obj4 = { user: selectedUser, guildId: undefined, size: arg1(dependencyMap[9]).AvatarSizes.XSMALL_20 };

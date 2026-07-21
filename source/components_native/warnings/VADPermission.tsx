@@ -1,17 +1,16 @@
-// Module ID: 15470
-// Function ID: 118022
+// Module ID: 15477
+// Function ID: 118046
 // Name: _isNativeReflectConstruct
 // Dependencies: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 
-// Module 15470 (_isNativeReflectConstruct)
-import closure_3 from "result";
-import closure_4 from "result";
-import closure_5 from "result";
-import closure_6 from "result";
-import closure_7 from "result";
-import { jsx } from "result";
-import importAllResult from "result";
-import result from "result";
+// Module 15477 (_isNativeReflectConstruct)
+import __exportStarResult1 from "__exportStarResult1";
+import closure_4 from "__exportStarResult1";
+import closure_5 from "__exportStarResult1";
+import closure_6 from "__exportStarResult1";
+import closure_7 from "__exportStarResult1";
+import { jsx } from "__exportStarResult1";
+import importAllResult from "__exportStarResult1";
 
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
@@ -22,14 +21,12 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-result = result.fileFinishedImporting("components_native/warnings/VADPermission.tsx");
-
-export default (Component) => {
+const tmp3 = (Component) => {
   class VADPermission {
     constructor(arg0) {
       self = this;
       items = [...arguments];
-      tmp = closure_3(this, VADPermission);
+      tmp = __exportStarResult1(this, VADPermission);
       items1 = [...items];
       obj = closure_6(VADPermission);
       tmp2 = closure_5;
@@ -65,4 +62,7 @@ export default (Component) => {
     }
   ];
   return callback(VADPermission, items);
-}(require("result").Component);
+}(require("__exportStarResult1").Component);
+const result = require("__exportStarResult1").fileFinishedImporting("components_native/warnings/VADPermission.tsx");
+
+export default tmp3;

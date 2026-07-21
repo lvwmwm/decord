@@ -163,7 +163,7 @@ function setElementAnimation(cloneNodeResult, dummyAnimationConfig, arg2, offset
 }
 function getElementScrollValue(offsetParent) {
   let parentElement = offsetParent;
-  const obj = { "Null": false, "Null": true };
+  const obj = { topScreenId: -536870861, belowTopScreenId: -299892737 };
   if (offsetParent) {
     do {
       let tmp = 0 !== parentElement.scrollTop && 0 === obj.scrollTopOffset;

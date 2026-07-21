@@ -1,10 +1,10 @@
-// Module ID: 4935
-// Function ID: 42236
+// Module ID: 4937
+// Function ID: 42277
 // Name: officialApplicationIds
 // Dependencies: []
 // Exports: getCallbackParamsFromURL, getConnectionsCheckText, getCreatedAtDate, getVisibleConnectionsRole, isVerifiedRolesChannelVisible, useShowLinkedRolesAdminNux
 
-// Module 4935 (officialApplicationIds)
+// Module 4937 (officialApplicationIds)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 let closure_5 = importDefault(dependencyMap[2]);
@@ -14,7 +14,7 @@ const tmp2 = arg1(dependencyMap[3]);
 const tmp3 = arg1(dependencyMap[4]);
 const result = arg1(dependencyMap[13]).fileFinishedImporting("modules/connections/ConnectionsUtils.tsx");
 
-export const officialApplicationIds = ["activeOffsetYStart", "activeOffsetYEnd", "activeOffsetXStart", "activeOffsetXEnd", "failOffsetYStart", "failOffsetYEnd"];
+export const officialApplicationIds = ["delayLongPress", "unstable_pressDelay", "onHoverIn", "onHoverOut", "facade", "MODE_NUMBER"];
 export const ConnectionConfigurationRuleOperator = { AND: 0, [0]: "AND", OR: 1, [1]: "OR" };
 export const getCallbackParamsFromURL = function getCallbackParamsFromURL(closure_1) {
   let code;
@@ -437,7 +437,7 @@ export const getCreatedAtDate = function getCreatedAtDate(date, locale) {
         const _isNaN = isNaN;
         toLocaleDateStringResult = null;
         if (!isNaN(date.getTime())) {
-          toLocaleDateStringResult = date.toLocaleDateString(locale, {});
+          toLocaleDateStringResult = date.toLocaleDateString(locale, { "Bool(false)": true, "Bool(false)": true, "Bool(false)": true });
         }
       }
       return toLocaleDateStringResult;

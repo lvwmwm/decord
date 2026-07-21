@@ -1,10 +1,10 @@
-// Module ID: 13522
-// Function ID: 102616
+// Module ID: 13529
+// Function ID: 102639
 // Name: AutomatedUnderageAppealStatus
 // Dependencies: []
 // Exports: default
 
-// Module 13522 (AutomatedUnderageAppealStatus)
+// Module 13529 (AutomatedUnderageAppealStatus)
 function AutomatedUnderageAppealStatus() {
   let obj = arg1(dependencyMap[10]);
   const items = [closure_8];
@@ -44,7 +44,7 @@ function AutomatedUnderageAppealStatus() {
       obj.type = callback(closure_3[9]).HelpMessageTypes.INFO;
       return obj;
     } else {
-      return { marginRight: false, alignItems: false };
+      return { marginRight: "o", alignItems: "o" };
     }
   }(obj.useStateFromStores(items, () => ageCheckStatus.getAgeCheckStatus())).type;
   let tmp3 = null;
@@ -66,7 +66,7 @@ let obj = arg1(dependencyMap[11]);
 obj = {};
 obj = { paddingHorizontal: importDefault(dependencyMap[12]).space.PX_12, paddingVertical: importDefault(dependencyMap[12]).space.PX_12 };
 obj.container = obj;
-obj.loadingIndicator = { 873027242: 0, 2064390188: 0, 396577459: 0 };
+obj.loadingIndicator = { "Bool(false)": 0, "Bool(false)": 0, "Bool(false)": 0 };
 const tmp4 = arg1(dependencyMap[5]);
 obj.body = { gap: importDefault(dependencyMap[12]).space.PX_8 };
 let closure_14 = obj.createStyles(obj);

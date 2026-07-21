@@ -1,10 +1,10 @@
-// Module ID: 8498
-// Function ID: 67824
+// Module ID: 8502
+// Function ID: 67836
 // Name: useUserProfileOverscrollStyles
 // Dependencies: []
 // Exports: default
 
-// Module 8498 (useUserProfileOverscrollStyles)
+// Module 8502 (useUserProfileOverscrollStyles)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 let closure_5 = importDefault(dependencyMap[2]);
@@ -143,7 +143,7 @@ export default function useUserProfileOverscrollStyles(arg0) {
       obj3 = height(closure_2[5]);
       items = [0.229];
       items[1] = -height * closure_1;
-      obj.blurAmount = obj2.clamp(obj3.interpolate(closure_2.get(), items, [null, null]), 0, 1);
+      obj.blurAmount = obj2.clamp(obj3.interpolate(closure_2.get(), items, ["Text", "lc"]), 0, 1);
       return obj;
     }
   }

@@ -1,10 +1,10 @@
-// Module ID: 8862
-// Function ID: 69892
+// Module ID: 8866
+// Function ID: 69904
 // Name: MicrophoneSlashIcon
 // Dependencies: []
 // Exports: MicrophoneSlashIcon
 
-// Module 8862 (MicrophoneSlashIcon)
+// Module 8866 (MicrophoneSlashIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/MicrophoneSlashIcon.tsx");

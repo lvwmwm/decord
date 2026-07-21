@@ -1,10 +1,10 @@
-// Module ID: 14321
-// Function ID: 108162
+// Module ID: 14328
+// Function ID: 108185
 // Name: Content
 // Dependencies: []
 // Exports: default
 
-// Module 14321 (Content)
+// Module 14328 (Content)
 function Content() {
   let tmp10;
   let tmp9;
@@ -37,7 +37,7 @@ function Content() {
   const ref = React.useRef(null);
   const items = [first3, first2, first, first1, first4, first5, first6];
   const memo = React.useMemo(() => {
-    let obj = {};
+    let obj = { accessibilityRole: true, y: true };
     let str = "top";
     if (first2) {
       str = "bottom";
@@ -88,9 +88,9 @@ function Content() {
     const obj2 = { height: 300 };
     const items1 = [obj2, tmp.container];
     obj1.style = items1;
-    obj1.start = { "Null": false, "Null": true };
-    obj1.end = { "Null": null, "Null": null };
-    obj1.colors = [100832303, -435550186, 1628648554, -217004190, 101435675, -1960608493, 839670834];
+    obj1.start = { max: -536870861, guildId: -299892737 };
+    obj1.end = {};
+    obj1.colors = ["RotateOutDownLeft", "username", "password", "updateAsync", "ang", "eachConnection", "%Uint8ClampedArray%"];
     obj1.children = tmp22;
     let tmp26Result = tmp26(importDefault(dependencyMap[10]), obj1);
   } else {
@@ -115,7 +115,7 @@ function Content() {
   obj7.defaultValue = str2;
   obj7.onChange = tmp13[1];
   obj7.hasIcons = false;
-  const items5 = [true, true, true];
+  const items5 = ["jpg", "endAudioRecording", "%Uint16ArrayPrototype%"];
   obj7.children = items5.map((value) => first6(first(first1[14]).TableRadioRow, { value, label: value }, value));
   obj6.children = first6(arg1(dependencyMap[13]).TableRadioGroup, obj7);
   items3[2] = first6(first4, obj6);
@@ -125,7 +125,7 @@ function Content() {
     const obj9 = { marginVertical: 16 };
     obj8.style = obj9;
     const obj10 = { title: "Gradient Color", defaultValue: first5, onChange: tmp15[1], hasIcons: false };
-    const items6 = [{}, {}, {}, {}, {}, {}, {}];
+    const items6 = [{ raw: "<string:275858829>", body: "<string:1107296256>" }, {}, {}, {}, {}, { raw: true, body: true }, { raw: true, body: true }];
     obj10.children = items6.map((value) => {
       const label = value.label;
       return first6(first(first1[14]).TableRadioRow, { value: value.value, label }, label);
@@ -140,7 +140,7 @@ function Content() {
     const obj12 = { marginVertical: 16 };
     obj11.style = obj12;
     const obj13 = { title: "Aspect Ratio", defaultValue: first6, onChange: tmp17[1], hasIcons: false };
-    const items7 = ["LK", "BE", "KW", "PA", "HR"];
+    const items7 = [false, false, false, false, false];
     obj13.children = items7.map((value) => first6(first(first1[14]).TableRadioRow, { value, label: value }, value));
     obj11.children = first6(arg1(dependencyMap[13]).TableRadioGroup, obj13);
     tmp40 = first6(first4, obj11);
@@ -158,7 +158,7 @@ let closure_4 = importAll(dependencyMap[1]);
 const tmp2 = arg1(dependencyMap[2]);
 ({ jsx: closure_7, jsxs: closure_8, Fragment: closure_9 } = arg1(dependencyMap[3]));
 const tmp3 = arg1(dependencyMap[3]);
-let closure_10 = arg1(dependencyMap[4]).createStyles({ container: { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null }, flex: { "Bool(true)": null, "Bool(true)": null } });
+let closure_10 = arg1(dependencyMap[4]).createStyles({ container: {}, flex: { accessibilityRole: true, guildId: null } });
 const obj = arg1(dependencyMap[4]);
 const result = arg1(dependencyMap[17]).fileFinishedImporting("modules/user_settings/design_system/native/UserSettingsDesignSystemCoachmark.tsx");
 

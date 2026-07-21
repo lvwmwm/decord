@@ -1,10 +1,10 @@
-// Module ID: 6970
-// Function ID: 55716
+// Module ID: 6974
+// Function ID: 55727
 // Name: getEstablishedDate
 // Dependencies: []
 // Exports: getEstablishedDate, guildInviteCanEmbedProfile
 
-// Module 6970 (getEstablishedDate)
+// Module 6974 (getEstablishedDate)
 let closure_2 = require(dependencyMap[0]).createChannelRecordFromInvite;
 const GuildFeatures = require(dependencyMap[1]).GuildFeatures;
 const _module = require(dependencyMap[3]);
@@ -21,7 +21,7 @@ export const getEstablishedDate = function getEstablishedDate(arg0, locale) {
         const _isNaN = isNaN;
         toLocaleDateStringResult = null;
         if (!isNaN(date.getTime())) {
-          toLocaleDateStringResult = date.toLocaleDateString(locale, { 626066498: null, 221215335: null });
+          toLocaleDateStringResult = date.toLocaleDateString(locale, {});
         }
       }
       return toLocaleDateStringResult;

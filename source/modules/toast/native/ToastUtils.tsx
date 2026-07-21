@@ -11,7 +11,7 @@ const result = _module.fileFinishedImporting("modules/toast/native/ToastUtils.ts
 
 export const presentAddedFriendToast = function presentAddedFriendToast() {
   let obj = importDefault(dependencyMap[1]);
-  obj = {};
+  obj = { 286: "p", 296: "Array", 306: "isArray" };
   const intl = require(dependencyMap[2]).intl;
   obj.content = intl.string(require(dependencyMap[2]).t.Fn5bwO);
   obj.IconComponent = require(dependencyMap[3]).FriendsIcon;

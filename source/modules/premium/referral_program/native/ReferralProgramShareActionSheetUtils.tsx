@@ -1,15 +1,14 @@
-// Module ID: 12246
-// Function ID: 93969
+// Module ID: 12253
+// Function ID: 93992
 // Name: buildReferralUserRow
 // Dependencies: [0, 0, 0]
 // Exports: buildReferralUserRow
 
-// Module 12246 (buildReferralUserRow)
-import closure_0 from "result";
-import { UserRowModes } from "result";
-import result from "result";
+// Module 12253 (buildReferralUserRow)
+import __exportStarResult1 from "__exportStarResult1";
+import { UserRowModes } from "__exportStarResult1";
 
-result = result.fileFinishedImporting("modules/premium/referral_program/native/ReferralProgramShareActionSheetUtils.tsx");
+const result = require("__exportStarResult1").fileFinishedImporting("modules/premium/referral_program/native/ReferralProgramShareActionSheetUtils.tsx");
 
 export const buildReferralUserRow = function buildReferralUserRow(selectedNotResendUsers) {
   let eligibleUsers;

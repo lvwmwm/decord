@@ -9,7 +9,7 @@ import closure_1 from "_classCallCheck";
 import _defineProperties from "_defineProperties";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 import module_1884 from "module_1884";
-import tmp2 from "keys";
+import tmp2 from "result2";
 import _classCallCheck from "_classCallCheck";
 
 function _isNativeReflectConstruct() {

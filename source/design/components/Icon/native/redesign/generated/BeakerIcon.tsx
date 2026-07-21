@@ -1,10 +1,10 @@
-// Module ID: 13384
-// Function ID: 101781
+// Module ID: 13391
+// Function ID: 101804
 // Name: BeakerIcon
 // Dependencies: []
 // Exports: BeakerIcon
 
-// Module 13384 (BeakerIcon)
+// Module 13391 (BeakerIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/BeakerIcon.tsx");

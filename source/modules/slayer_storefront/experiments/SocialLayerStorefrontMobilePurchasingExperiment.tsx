@@ -1,12 +1,12 @@
-// Module ID: 7780
-// Function ID: 62092
+// Module ID: 7784
+// Function ID: 62104
 // Name: apexExperiment
 // Dependencies: []
 // Exports: getIsEligibleForSocialLayerStorefrontMobilePurchasing, useIsEligibleForSocialLayerStorefrontMobilePurchasing
 
-// Module 7780 (apexExperiment)
+// Module 7784 (apexExperiment)
 const _module = require(dependencyMap[0]);
-const obj = { -1269606814: "/assets/modules/emoji_picker/native/images", -1845285747: 16, defaultConfig: { enabled: false }, variations: { [0]: { enabled: false }, [1]: { enabled: true } } };
+const obj = { 9223372036854775807: "/assets/modules/emoji_picker/native/images", 0: 16, defaultConfig: { enabled: false }, variations: { [0]: { enabled: false }, [1]: { enabled: true } } };
 const apexExperiment = _module.createApexExperiment(obj);
 const _module1 = require(dependencyMap[1]);
 const result = _module1.fileFinishedImporting("modules/slayer_storefront/experiments/SocialLayerStorefrontMobilePurchasingExperiment.tsx");

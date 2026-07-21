@@ -1,8 +1,8 @@
-// Module ID: 9586
-// Function ID: 74656
+// Module ID: 9591
+// Function ID: 74673
 // Dependencies: []
 
-// Module 9586
+// Module 9591
 let closure_3 = importDefault(dependencyMap[0]);
 const importAllResult = importAll(dependencyMap[1]);
 ({ View: closure_5, ActivityIndicator: closure_6 } = arg1(dependencyMap[2]));
@@ -16,7 +16,7 @@ const tmp4 = arg1(dependencyMap[7]);
 let obj = { container: { flex: 1 } };
 obj = { paddingVertical: importDefault(dependencyMap[9]).space.PX_8 };
 obj.header = obj;
-obj.loadingIndicator = {};
+obj.loadingIndicator = { <string:1408689063>: "gr", <string:2880547457>: null, <string:2555685796>: "Group 3" };
 obj.emptyState = { marginTop: arg1(dependencyMap[5]).STICKER_SEARCH_HEADER_HEIGHT };
 let closure_16 = arg1(dependencyMap[8]).createStyles(obj);
 const obj2 = arg1(dependencyMap[8]);

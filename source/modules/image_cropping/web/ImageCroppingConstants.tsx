@@ -1,9 +1,9 @@
-// Module ID: 7839
-// Function ID: 62528
+// Module ID: 7843
+// Function ID: 62540
 // Name: UploadTypes
 // Dependencies: []
 
-// Module 7839 (UploadTypes)
+// Module 7843 (UploadTypes)
 const BACKGROUND_REPLACEMENT_SIZE = require(dependencyMap[0]).BACKGROUND_REPLACEMENT_SIZE;
 const result = BACKGROUND_REPLACEMENT_SIZE.width / BACKGROUND_REPLACEMENT_SIZE.height;
 const result1 = 432 / result;

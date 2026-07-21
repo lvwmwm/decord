@@ -1,16 +1,16 @@
-// Module ID: 9041
-// Function ID: 71019
+// Module ID: 9045
+// Function ID: 71031
 // Name: XboxInstallAlert
 // Dependencies: []
 // Exports: default
 
-// Module 9041 (XboxInstallAlert)
+// Module 9045 (XboxInstallAlert)
 importAll(dependencyMap[0]);
 ({ XBOX_ANDROID_APP_LINK: closure_3, XBOX_IOS_APP_LINK: closure_4 } = arg1(dependencyMap[1]));
 const jsx = arg1(dependencyMap[2]).jsx;
 let obj = arg1(dependencyMap[3]);
 obj = {};
-obj = { isDowngrading: "RecentsMediaGridPlaceholder", type: "crocodile", pendingDowngrade: "absolute", overflow: "context", tintColor: importDefault(dependencyMap[4]).colors.WHITE };
+obj = { 0: 1371002248, 0: 7673415, 0: 0, 0: 0, tintColor: importDefault(dependencyMap[4]).colors.WHITE };
 obj.externalLinkIcon = obj;
 let closure_6 = obj.createStyles(obj);
 const tmp3 = arg1(dependencyMap[1]);

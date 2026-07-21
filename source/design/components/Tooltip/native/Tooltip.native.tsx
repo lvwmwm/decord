@@ -1,24 +1,24 @@
-// Module ID: 8554
-// Function ID: 68000
+// Module ID: 8558
+// Function ID: 68012
 // Name: Tooltip
 // Dependencies: []
 // Exports: Tooltip
 
-// Module 8554 (Tooltip)
+// Module 8558 (Tooltip)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 const Pressable = arg1(dependencyMap[2]).Pressable;
 ({ jsx: closure_6, jsxs: closure_7 } = arg1(dependencyMap[3]));
-let closure_8 = { 0: 760348674, 326587: 291798377, 9223372036854775807: 38808897, 0: 1602048 };
+let closure_8 = {};
 let obj = arg1(dependencyMap[4]);
 obj = { container: {} };
-obj = { color: 1, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BRAND, width: 0, height: 6, marginTop: "ADBE Vector Group", marginBottom: false, paddingHorizontal: importDefault(dependencyMap[5]).space.PX_8, paddingVertical: importDefault(dependencyMap[5]).space.PX_4, borderRadius: importDefault(dependencyMap[5]).radii.sm };
+obj = { width: 1, marginHorizontal: 2, width: 0, height: 6, padding: "ADBE Vector Group", borderWidth: false, paddingHorizontal: importDefault(dependencyMap[5]).space.PX_8, paddingVertical: importDefault(dependencyMap[5]).space.PX_4, borderRadius: importDefault(dependencyMap[5]).radii.sm, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BRAND };
 obj.textContainer = obj;
 obj.text = { textAlign: "center" };
 const tmp2 = arg1(dependencyMap[3]);
 obj.arrow = { borderTopColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BRAND, borderBottomColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BRAND };
-obj.bottomArrow = { accessibilityRole: "secondary", body: "none", <string:1365024866>: "absolute" };
-obj.topArrow = { borderWidth: "secondary", ref: "none", horizontal: "absolute" };
+obj.bottomArrow = { ENABLE_COMMUNITY_FLOW_MODAL_KEY: "secondary", overflow: "none", tokenUsage: "absolute" };
+obj.topArrow = { accessibilityRole: "secondary", y: "none", y: "absolute" };
 let closure_9 = obj.createStyles(obj);
 let closure_10 = { code: "function TooltipNativeTsx1(){const{withSpring,interpolateColor,pressed,backgroundColor,backgroundColorPressed,ON_PRESS_SPRING}=this.__closure;return{backgroundColor:withSpring(interpolateColor(pressed.get(),[0,1],[backgroundColor,backgroundColorPressed]),ON_PRESS_SPRING,'animate-always')};}" };
 let closure_11 = { code: "function TooltipNativeTsx2(){const{withSpring,interpolateColor,pressed,backgroundColor,backgroundColorPressed,ON_PRESS_SPRING}=this.__closure;return{borderTopColor:withSpring(interpolateColor(pressed.get(),[0,1],[backgroundColor,backgroundColorPressed]),ON_PRESS_SPRING,'animate-always'),borderBottomColor:withSpring(interpolateColor(pressed.get(),[0,1],[backgroundColor,backgroundColorPressed]),ON_PRESS_SPRING,'animate-always')};}" };
@@ -66,7 +66,7 @@ export const Tooltip = function Tooltip(targetMeasurements) {
       items = [, ];
       items[0] = closure_1;
       items[1] = closure_2;
-      obj.backgroundColor = obj2.withSpring(obj3.interpolateColor(closure_0.get(), [null, null], items), closure_8, "animate-always");
+      obj.backgroundColor = obj2.withSpring(obj3.interpolateColor(closure_0.get(), ["Text", "lc"], items), closure_8, "animate-always");
       return obj;
     }
   }
@@ -84,13 +84,13 @@ export const Tooltip = function Tooltip(targetMeasurements) {
       items = [, ];
       items[0] = closure_1;
       items[1] = closure_2;
-      obj.borderTopColor = obj2.withSpring(obj3.interpolateColor(closure_0.get(), [null, null], items), closure_8, "animate-always");
+      obj.borderTopColor = obj2.withSpring(obj3.interpolateColor(closure_0.get(), ["Text", "lc"], items), closure_8, "animate-always");
       obj4 = closure_0(closure_2[9]);
       obj5 = closure_0(closure_2[6]);
       items1 = [, ];
       items1[0] = closure_1;
       items1[1] = closure_2;
-      obj.borderBottomColor = obj4.withSpring(obj5.interpolateColor(closure_0.get(), [null, null], items1), closure_8, "animate-always");
+      obj.borderBottomColor = obj4.withSpring(obj5.interpolateColor(closure_0.get(), ["Text", "lc"], items1), closure_8, "animate-always");
       return obj;
     }
   }
@@ -135,7 +135,7 @@ export const Tooltip = function Tooltip(targetMeasurements) {
   const items4 = [tmp14, , ];
   obj5 = { style: items5 };
   const items5 = [tmp.textContainer, animatedStyle];
-  const obj6 = { Promise: 369098752, marginTop: 16777216, flags: 882, style: tmp.text, children: label };
+  const obj6 = { "Null": "r", "Null": "isArray", "Null": "set", style: tmp.text, children: label };
   obj5.children = callback2(arg1(dependencyMap[10]).Text, obj6);
   items4[1] = callback2(importDefault(dependencyMap[6]).View, obj5);
   let tmp18 = "top" === position;

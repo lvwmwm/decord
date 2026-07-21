@@ -1,14 +1,16 @@
-// Module ID: 9464
-// Function ID: 73749
-// Name: getVoiceChannelListInviteExperiment
+// Module ID: 9468
+// Function ID: 73763
+// Name: items
 // Dependencies: []
 // Exports: getVoiceChannelListInviteExperiment, useVoiceChannelListInviteExperiment
 
-// Module 9464 (getVoiceChannelListInviteExperiment)
+// Module 9468 (items)
 const _module = require(dependencyMap[0]);
-const obj = { "Bool(false)": false, "Bool(false)": false, config: { enabled: true } };
+let obj = { y: "<string:2802253826>", createBackgroundHighlight: "<string:3578855426>", y: "<string:3544256951>", defaultConfig: { enabled: false } };
+obj = { -1174339580: false, -1169096700: false, config: { enabled: true } };
 const items = [obj];
-let closure_0 = _module.createExperiment({ defaultConfig: { enabled: false }, treatments: items });
+obj.treatments = items;
+let closure_0 = _module.createExperiment(obj);
 const _module1 = require(dependencyMap[1]);
 const result = _module1.fileFinishedImporting("modules/messages/VoiceChannelListInviteExperiment.tsx");
 

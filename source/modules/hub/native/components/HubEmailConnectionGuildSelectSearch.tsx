@@ -1,49 +1,51 @@
-// Module ID: 11758
-// Function ID: 91306
+// Module ID: 11765
+// Function ID: 91329
 // Name: EmptyState
-// Dependencies: []
+// Dependencies: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 // Exports: default
 
-// Module 11758 (EmptyState)
+// Module 11765 (EmptyState)
+import closure_3 from "__exportStarResult1";
+import closure_4 from "__exportStarResult1";
+import closure_5 from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
+import { HubEmailConnectionSteps } from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
+
 function EmptyState() {
-  const tmp = callback4();
+  const tmp = __exportStarResult1();
   let obj = { style: tmp.emptyWrapper };
   obj = { style: tmp.emptyStateImage, source: importDefault(dependencyMap[8]) };
   const items = [callback2(closure_7, obj), ];
-  obj = { Promise: "primary", marginTop: null, flags: null, style: tmp.emptyStateTitle };
+  obj = { "Null": "auto", "Null": 1, "Null": 16, style: tmp.emptyStateTitle };
   const intl = arg1(dependencyMap[10]).intl;
   obj.children = intl.string(arg1(dependencyMap[10]).t.6HXiuE);
   items[1] = callback2(arg1(dependencyMap[9]).Text, obj);
   obj.children = items;
   return callback3(closure_6, obj);
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importAll(dependencyMap[2]);
-({ View: closure_6, Image: closure_7, FlatList: closure_8 } = arg1(dependencyMap[3]));
-const HubEmailConnectionSteps = arg1(dependencyMap[4]).HubEmailConnectionSteps;
-const tmp2 = arg1(dependencyMap[3]);
-({ jsx: closure_10, jsxs: closure_11, Fragment: closure_12 } = arg1(dependencyMap[5]));
-let obj = arg1(dependencyMap[6]);
-obj = {};
-obj = { backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_BASE_LOW };
-obj.scrollContainer = obj;
-obj.fauxHeader = { paddingHorizontal: 0 };
-obj.emptyWrapper = {};
-obj.emptyStateImage = { marginBottom: 24 };
-obj.emptyStateTitle = { bounces: "audio", keyboardShouldPersistTaps: "architecture" };
-const obj1 = { position: 284959.3291015922, top: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000017625297114732, width: -0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001498796676283465, height: 118199435585797980000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, color: importDefault(dependencyMap[7]).unsafe_rawColors.RED_400 };
-obj.error = obj1;
-let closure_13 = obj.createStyles(obj);
-const tmp3 = arg1(dependencyMap[5]);
-const result = arg1(dependencyMap[20]).fileFinishedImporting("modules/hub/native/components/HubEmailConnectionGuildSelectSearch.tsx");
+({ View: closure_6, Image: closure_7, FlatList: closure_8 } = __exportStarResult1);
+({ jsx: closure_10, jsxs: closure_11, Fragment: closure_12 } = __exportStarResult1);
+__exportStarResult1 = {};
+__exportStarResult1 = { backgroundColor: require("__exportStarResult1").colors.BACKGROUND_BASE_LOW };
+__exportStarResult1.scrollContainer = __exportStarResult1;
+__exportStarResult1.fauxHeader = { paddingHorizontal: 0 };
+__exportStarResult1.emptyWrapper = {};
+__exportStarResult1.emptyStateImage = { marginBottom: 24 };
+__exportStarResult1.emptyStateTitle = {};
+const obj1 = { position: -716111871, top: -247393865, width: 1912603216, height: 32, color: require("__exportStarResult1").unsafe_rawColors.RED_400 };
+__exportStarResult1.error = obj1;
+__exportStarResult1 = __exportStarResult1.createStyles(__exportStarResult1);
+const result = __exportStarResult1.fileFinishedImporting("modules/hub/native/components/HubEmailConnectionGuildSelectSearch.tsx");
 
 export default function HubEmailConnectionGuildSelectSearch(arg0) {
   let guildsInfo;
   let obj2;
   ({ guildsInfo, email: closure_0, onClose: closure_1 } = arg0);
   let anyErrorMessage;
-  const tmp = callback4();
+  const tmp = __exportStarResult1();
   const dependencyMap = tmp;
   let obj = arg1(dependencyMap[11]);
   let closure_3 = obj.useNavigation();

@@ -1,9 +1,9 @@
-// Module ID: 13263
-// Function ID: 100779
+// Module ID: 13270
+// Function ID: 100802
 // Name: crossPlatformCommands
 // Dependencies: []
 
-// Module 13263 (crossPlatformCommands)
+// Module 13270 (crossPlatformCommands)
 const merged = Object.assign(importDefault(dependencyMap[0]));
 const merged1 = Object.assign(importDefault(dependencyMap[1]));
 const merged2 = Object.assign(importDefault(dependencyMap[2]));

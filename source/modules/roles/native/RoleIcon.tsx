@@ -1,10 +1,10 @@
-// Module ID: 5486
-// Function ID: 46776
+// Module ID: 5488
+// Function ID: 46818
 // Name: RoleIcon
 // Dependencies: []
 // Exports: default
 
-// Module 5486 (RoleIcon)
+// Module 5488 (RoleIcon)
 importAll(dependencyMap[0]);
 const Image = arg1(dependencyMap[1]).Image;
 const jsx = arg1(dependencyMap[2]).jsx;
@@ -20,7 +20,7 @@ export default function RoleIcon(arg0) {
   }
   let obj = { roleIcon: obj, unicodeEmojiRoleIcon: obj };
   obj = { height: size, width: size, resizeMode: "contain" };
-  obj = { channelId: "<string:1515257858>", height: "<string:2650693>", paddingHorizontal: "<string:3670016>", fontSize: size };
+  obj = { "Bool(false)": "<string:2370895874>", "Bool(false)": "<string:2650693>", "Bool(false)": "<string:3670016>", fontSize: size };
   if (null != source) {
     const obj1 = { source, style: obj.roleIcon };
     let tmp = <Image {...obj1} />;

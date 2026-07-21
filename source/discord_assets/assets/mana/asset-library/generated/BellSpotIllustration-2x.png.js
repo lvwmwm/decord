@@ -1,9 +1,9 @@
-// Module ID: 5894
-// Function ID: 49715
+// Module ID: 5896
+// Function ID: 49758
 // Name: metadata
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 5894 (metadata)
+// Module 5896 (metadata)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/BellSpotIllustration-2x.png.js");
 

@@ -1,10 +1,10 @@
-// Module ID: 11447
-// Function ID: 89211
+// Module ID: 11454
+// Function ID: 89235
 // Name: useShouldBlockDMInputForQuarantinedUser
 // Dependencies: []
 // Exports: default
 
-// Module 11447 (useShouldBlockDMInputForQuarantinedUser)
+// Module 11454 (useShouldBlockDMInputForQuarantinedUser)
 let closure_2 = importDefault(dependencyMap[0]);
 const UserFlags = arg1(dependencyMap[1]).UserFlags;
 const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/quarantine/useShouldBlockDMInputForQuarantinedUser.tsx");

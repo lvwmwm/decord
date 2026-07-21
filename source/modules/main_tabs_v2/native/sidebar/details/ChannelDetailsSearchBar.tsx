@@ -1,8 +1,8 @@
-// Module ID: 15185
-// Function ID: 114596
+// Module ID: 15192
+// Function ID: 114620
 // Dependencies: []
 
-// Module 15185
+// Module 15192
 const importAllResult = importAll(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 let closure_5 = arg1(dependencyMap[2]).setIsChannelDetailsSearchActive;

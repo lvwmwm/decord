@@ -1,10 +1,10 @@
-// Module ID: 14859
-// Function ID: 111958
+// Module ID: 14866
+// Function ID: 111982
 // Name: _saveGuildThemeNuxPreference
 // Dependencies: []
 // Exports: getInitialGuildThemeNuxSelection, saveGuildThemeNuxPreference
 
-// Module 14859 (_saveGuildThemeNuxPreference)
+// Module 14866 (_saveGuildThemeNuxPreference)
 function _saveGuildThemeNuxPreference() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);

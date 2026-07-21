@@ -1,18 +1,22 @@
-// Module ID: 13439
-// Function ID: 102089
+// Module ID: 13446
+// Function ID: 102112
 // Name: styles
-// Dependencies: []
+// Dependencies: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 
-// Module 13439 (styles)
-const View = arg1(dependencyMap[1]).View;
-const jsx = arg1(dependencyMap[2]).jsx;
-const importAllResult = importAll(dependencyMap[0]);
+// Module 13446 (styles)
+import { View } from "__exportStarResult1";
+import { jsx } from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
+import importAllResult from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
+
 let obj = {};
-obj = { borderRadius: importDefault(dependencyMap[4]).radii.xl };
+obj = { borderRadius: require("__exportStarResult1").radii.xl };
 obj.colorBlock = obj;
-const styles = arg1(dependencyMap[3]).createStyles(obj);
-const obj2 = arg1(dependencyMap[3]);
-const memoResult = importAllResult.memo((color) => {
+const styles = __exportStarResult1.createStyles(obj);
+const result = __exportStarResult1.fileFinishedImporting("components_native/common/color_picker/ColorBlock.tsx");
+
+export default require("__exportStarResult1").memo((color) => {
   let selected;
   let style;
   color = color.color;
@@ -82,7 +86,4 @@ const memoResult = importAllResult.memo((color) => {
   }
   return tmp25Result;
 });
-const result = arg1(dependencyMap[10]).fileFinishedImporting("components_native/common/color_picker/ColorBlock.tsx");
-
-export default memoResult;
 export const useStyles = styles;

@@ -4,6 +4,6 @@
 
 // Module 1943
 const _module = require(dependencyMap[0]);
-const obj = { justifyContent: true, flexDirection: true, marginRight: true, columnGap: true, accessibilityRole: true, options: true, scales: [24573934974154670000000000000000000000000000000000000000000000000000000000000] };
+const obj = { dismissed: 60, lastDismissedVersion: 60, lastDismissedAtMs: 0.8, lastDismissedObjectId: null, numTimesDismissed: true, days: "contain", scales: [15189782894321462000000000000000000000000000000000000000000000000000000000000000000] };
 
 export default _module.registerAsset(obj);

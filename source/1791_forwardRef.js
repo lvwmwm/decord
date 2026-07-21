@@ -5,7 +5,7 @@
 
 // Module 1791 (forwardRef)
 let forwardRef;
-let closure_3 = [];
+let closure_3 = ["body", "url", "paddingHorizontal", "keys"];
 let closure_4 = importDefault(dependencyMap[0]);
 ({ useMemo: closure_5, forwardRef } = arg1(dependencyMap[1]));
 importDefault(dependencyMap[1]);

@@ -1,21 +1,21 @@
-// Module ID: 11677
-// Function ID: 90625
+// Module ID: 11684
+// Function ID: 90648
 // Name: NsfwGateChat
 // Dependencies: []
 // Exports: default
 
-// Module 11677 (NsfwGateChat)
+// Module 11684 (NsfwGateChat)
 importAll(dependencyMap[0]);
 const tmp3 = arg1(dependencyMap[1]);
 ({ View: closure_3, Image: closure_4 } = tmp3);
 ({ jsx: closure_5, jsxs: closure_6, Fragment: closure_7 } = arg1(dependencyMap[2]));
 let obj = arg1(dependencyMap[3]);
 obj = {};
-obj = { backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_BASE_LOW };
+obj = { justifyContent: true, marginBottom: true, flexGrow: true, marginHorizontal: true, backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_BASE_LOW };
 obj.container = obj;
 const tmp4 = arg1(dependencyMap[2]);
 obj.border = { height: tmp3.StyleSheet.hairlineWidth, backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_BASE_LOWEST };
-obj.description = { accessible: "center", id: "center" };
+obj.description = { "Null": "center", "Null": "center" };
 let closure_8 = obj.createStyles(obj);
 const obj1 = { height: tmp3.StyleSheet.hairlineWidth, backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_BASE_LOWEST };
 const result = arg1(dependencyMap[8]).fileFinishedImporting("modules/age_gate/native/components/NsfwGateChat.tsx");

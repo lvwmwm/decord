@@ -1,10 +1,10 @@
-// Module ID: 4562
-// Function ID: 39966
+// Module ID: 4566
+// Function ID: 40014
 // Name: makeMatcher
 // Dependencies: []
 // Exports: safelyMakeUrlHumanReadable, sanitizeUnicodeConfusables, sanitizeWhitespace, sanitizeWhitespaceExcludingTabs
 
-// Module 4562 (makeMatcher)
+// Module 4566 (makeMatcher)
 function makeMatcher(join) {
   const regExp = new RegExp(join.join("|"), "gu");
   return regExp;
@@ -189,13 +189,13 @@ let obj = { character: "h", matcher: makeMatcher([]) };
 const items1 = [obj, , , , , ];
 obj = { character: "t", matcher: makeMatcher([]) };
 items1[1] = obj;
-obj = { character: "p", matcher: makeMatcher(["<string:80580864>", "<string:80765184>", "<string:80769280>", "<string:80769536>", "<string:80823552>", "<string:80862720>", "<string:81193216>", "<string:81208576>", "<string:82983168>", "<string:83020544>", "<string:119951616>", "<string:80492353>", "<string:8450048>", "isArray", "isArray", "isArray", "isArray", "isArray", "isArray", "isArray", "isArray", "isArray", "isArray", "isArray", "isArray", "isArray", "isArray", "isArray", "isArray", "isArray", "isArray"]) };
+obj = { character: "p", matcher: makeMatcher([]) };
 items1[2] = obj;
 items1[3] = { character: "s", matcher: makeMatcher([]) };
 const obj1 = { character: "s", matcher: makeMatcher([]) };
-items1[4] = { character: ":", matcher: makeMatcher([]) };
-const obj2 = { character: ":", matcher: makeMatcher([]) };
-items1[5] = { character: "/", matcher: makeMatcher(["inModal", "__nativeTag", "y", ":", "ils", "ACTIVITY_INVITE_USER", "Array", "decodeCustomActivityLink", "r", "stickerFrecency", "Array", "getSaturatedColorHex", "Array", "procedure_path"]) };
+items1[4] = { character: ":", matcher: makeMatcher(["top", "top_arrow", "\u201CSoon\u201D com seta para a direita", "em breve", "flecha", "seta", "seta \"SOON\"", "s\u00EDmbolo \u201CSoon\u201D", "soon", "soon_arrow", "heavy_check_mark", "check_mark", "ballot_box_with_check", "radio_button", "white_circle", "red_circle", "blue_circle", false, false]) };
+const obj2 = { character: ":", matcher: makeMatcher(["top", "top_arrow", "\u201CSoon\u201D com seta para a direita", "em breve", "flecha", "seta", "seta \"SOON\"", "s\u00EDmbolo \u201CSoon\u201D", "soon", "soon_arrow", "heavy_check_mark", "check_mark", "ballot_box_with_check", "radio_button", "white_circle", "red_circle", "blue_circle", false, false]) };
+items1[5] = { character: "/", matcher: makeMatcher([15184219107047550000000000000000000000000000000000000000000000000000000000000000000, -0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000009366128460446297, 15182625100030070000000000000000000000000000000000000000000000000000000000000000000, 15183184964747270000000000000000000000000000000000000000000000000000000000000000000, 15192438776760394000000000000000000000000000000000000000000000000000000000000000000, 494871446913607900000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011468028909977662, -2437606577914517000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, true, true, true, true, true, true]) };
 let closure_5 = [];
 const _module = require(dependencyMap[1]);
 const result = _module.fileFinishedImporting("modules/markup/UnicodeSanitizationUtils.tsx");

@@ -1,10 +1,10 @@
-// Module ID: 14858
-// Function ID: 111948
+// Module ID: 14865
+// Function ID: 111972
 // Name: GuildThemeNuxActionSheet
 // Dependencies: []
 // Exports: default
 
-// Module 14858 (GuildThemeNuxActionSheet)
+// Module 14865 (GuildThemeNuxActionSheet)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 let closure_5 = importAll(dependencyMap[2]);
@@ -113,7 +113,7 @@ export default function GuildThemeNuxActionSheet(guildId) {
   obj.onDismiss = callback3;
   obj.contentStyles = tmp.container;
   const items7 = [callback3(importDefault(closure_2[17]), { themeSettings: stateFromStores1, isPersonal: tmp8 }), , , , , , ];
-  obj = { 9223372036854775807: "r", 9223372036854775807: "screen_orientation", 9223372036854775807: "y", style: tmp.title };
+  obj = { alignItems: "r", justifyContent: "isArray", backgroundColor: "useRef", style: tmp.title };
   const intl3 = arg1(closure_2[15]).intl;
   obj.children = intl3.string(arg1(closure_2[15]).t.Q9zFy9);
   items7[1] = callback3(arg1(closure_2[18]).Text, obj);

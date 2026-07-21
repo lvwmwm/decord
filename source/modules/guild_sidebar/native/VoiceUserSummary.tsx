@@ -1,16 +1,16 @@
-// Module ID: 14846
-// Function ID: 111892
+// Module ID: 14853
+// Function ID: 111916
 // Name: VOICE_USER_SUMMARY_HEIGHT
 // Dependencies: []
 
-// Module 14846 (VOICE_USER_SUMMARY_HEIGHT)
+// Module 14853 (VOICE_USER_SUMMARY_HEIGHT)
 const View = arg1(dependencyMap[1]).View;
 const importAllResult = importAll(dependencyMap[0]);
 ({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[2]));
 const tmp2 = arg1(dependencyMap[2]);
 let closure_6 = Object.freeze({ direction: arg1(dependencyMap[3]).CutoutDirection.RIGHT, inset: -2 });
 const obj = { direction: arg1(dependencyMap[3]).CutoutDirection.RIGHT, inset: -2 };
-let closure_7 = arg1(dependencyMap[4]).createStyles({ container: { "Bool(false)": null, "Bool(false)": "0a2944e427275918c323a5aa7d658085", "Bool(false)": "BattlenetNeutralIcon", "Bool(false)": "png" }, containerNoPadding: { "Bool(false)": "venmo.tokenize.desktop.success", "Bool(false)": "<string:24248320>", "Bool(false)": "<string:16777216>" }, iconContainer: { height: 40 }, redesignChannelIcon: { marginRight: 4 }, overflow: { borderTopRightRadius: 0, borderTopLeftRadius: 1072431104, position: -4494, top: 4863, left: 12544, right: 0 }, transparentBorder: { borderColor: "transparent" } });
+let closure_7 = arg1(dependencyMap[4]).createStyles({ container: {}, containerNoPadding: { "Bool(false)": "<string:1359037837>", "Bool(false)": "<string:3460372039>", "Bool(false)": "<string:1358954914>" }, iconContainer: { height: 40 }, redesignChannelIcon: { marginRight: 4 }, overflow: { right: 0, bottom: 1072431104, add: -4494, onPress: 4863, ix: 12544, default: 0 }, transparentBorder: { borderColor: "transparent" } });
 const obj3 = arg1(dependencyMap[4]);
 const memoResult = importAllResult.memo((guildId) => {
   let max;
@@ -33,7 +33,7 @@ const memoResult = importAllResult.memo((guildId) => {
     if (stageIcon) {
       let VoiceNormalIcon = arg1(dependencyMap[7]).StageIcon;
     }
-    obj = { flexDirection: false, alignItems: false, style: tmp.redesignChannelIcon };
+    obj = { flex: false, flexGrow: false, style: tmp.redesignChannelIcon };
     const items1 = [tmp5(VoiceNormalIcon, obj), ];
     const obj1 = { offsetAmount: -6, style: tmp.iconContainer };
     const items2 = [tmp.overflow, transparentBorder];

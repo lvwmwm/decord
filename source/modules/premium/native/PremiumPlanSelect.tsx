@@ -1,10 +1,10 @@
-// Module ID: 12346
-// Function ID: 94437
+// Module ID: 12353
+// Function ID: 94460
 // Name: getPlanDescription
 // Dependencies: []
 // Exports: default
 
-// Module 12346 (getPlanDescription)
+// Module 12353 (getPlanDescription)
 let Fonts;
 let USER_SETTINGS_CONTAINER_HORIZONTAL_PADDING;
 function getPlanDescription(premiumTier) {
@@ -166,7 +166,7 @@ function PlanRow(plan) {
     obj3.label = getPlanDescription(plan);
     obj3.subLabel = formatToPlainStringResult1;
     if (tmp3) {
-      const obj6 = { color: token };
+      const obj6 = { font: "isArray", dx: "GuildActionSheetSecondaryActions", color: token };
       let tmp73Result = tmp73(tmp74(tmp75[36]).ActivityIndicator, obj6);
     } else {
       obj7 = { text: formatToPlainStringResult };
@@ -181,7 +181,7 @@ function PlanRow(plan) {
     obj3.onPress = onPress;
     let tmp46Result = tmp46(tmp47(tmp48[34]).TableRow, obj3);
   } else {
-    const obj8 = {};
+    const obj8 = { <string:4030616254>: 0.55, <string:140583735>: 0, <string:1388019537>: 3.896 };
     let str3 = "none";
     if (!tmp47Result.isThemeDark(tmp10)) {
       str3 = "none";
@@ -220,7 +220,7 @@ function PlanRow(plan) {
     items3[3] = callback4(arg1(dependencyMap[31]).LegacyText, obj12);
     let tmp61 = null;
     if (tmp3) {
-      const obj13 = { style: tmp.purchasingSpinner, color: token };
+      const obj13 = { font: "isArray", dx: "GuildActionSheetSecondaryActions", style: tmp.purchasingSpinner, color: token };
       tmp61 = callback4(arg1(dependencyMap[36]).ActivityIndicator, obj13);
     }
     items3[4] = tmp61;
@@ -286,9 +286,9 @@ function PlanSection(label) {
             obj = { fromStep: productId(tmp2[41]).PaymentFlowStep.PLAN_SELECT, toStep: productId(tmp2[41]).PaymentFlowStep.YEARLY_UPSELL, productId };
             callback(obj);
             obj = {
-              fontSize: null,
-              lineHeight: null,
-              marginLeft: null,
+              "Null": null,
+              "Null": null,
+              "Null": null,
               importer() {
                       return arg0(tmp2[44])(tmp2[43], tmp2.paths).then((arg0) => {
                         let closure_0 = arg0.default;
@@ -306,7 +306,7 @@ function PlanSection(label) {
     }
   }, plan.productId));
   if (shouldShowModernBoostFlow) {
-    obj = { CHANNEL_HIGHLIGHT: null, descriptionEllipsis: null, DISCOVER_POPULAR: null, title: label.label, children: mapped };
+    obj = { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, title: label.label, children: mapped };
     let tmp5Result = tmp5(arg1(dependencyMap[45]).TableRowGroup, obj);
   } else {
     obj = { children: mapped };
@@ -359,9 +359,9 @@ function CurrentPlanRow(subscription) {
               obj = { fromStep: subscription(closure_2[41]).PaymentFlowStep.PLAN_SELECT, toStep: subscription(closure_2[41]).PaymentFlowStep.YEARLY_UPSELL, productId: productIdFromSubscription };
               yearly(obj);
               obj = {
-                fontSize: null,
-                lineHeight: null,
-                marginLeft: null,
+                "Null": null,
+                "Null": null,
+                "Null": null,
                 importer() {
                         return callback(paths[44])(paths[43], paths.paths).then((arg0) => {
                           let closure_0 = arg0.default;
@@ -536,33 +536,33 @@ const merged = Object.assign(importDefault(dependencyMap[16])(Fonts.DISPLAY_EXTR
 obj["marginTop"] = 16;
 obj["color"] = arg1(dependencyMap[17]).DARK_WHITE_500_LIGHT_BLACK_500;
 obj.header = obj;
-obj1 = { borderRadius: importDefault(dependencyMap[18]).radii.sm, backgroundColor: arg1(dependencyMap[17]).DARK_PRIMARY_630_LIGHT_PRIMARY_230 };
+obj1 = { 0: -314502912, 0: 16777600, 9223372036854775807: 43567171, 9223372036854775807: 43566848, 9223372036854775807: 30653696, 0: 9859328, 9223372036854775807: 1091633152, borderRadius: importDefault(dependencyMap[18]).radii.sm, backgroundColor: arg1(dependencyMap[17]).DARK_PRIMARY_630_LIGHT_PRIMARY_230 };
 obj.row = obj1;
 obj.rowDisabled = { opacity: 0.5 };
-obj.imgWumpusNitro = { <string:1140607356>: 30706176, <string:1751293292>: 378290688 };
-obj.imgBoost = { <string:1140607356>: 30706176, <string:1751293292>: 378290688 };
-obj.imgWumpusNitroBoost = { aze: "boolean", azj: "string" };
-obj.imgWumpusNitroClassic = { aze: 30706176, azj: 378290688 };
-obj.imgWumpusNitroClassicBoost = { aze: "boolean", azj: "string" };
-obj.imgWumpusNitroTier0 = { aze: 30706176, azj: 378290688 };
+obj.imgWumpusNitro = {};
+obj.imgBoost = {};
+obj.imgWumpusNitroBoost = { bhk: "boolean", bic: "string" };
+obj.imgWumpusNitroClassic = {};
+obj.imgWumpusNitroClassicBoost = { bhk: "boolean", bic: "string" };
+obj.imgWumpusNitroTier0 = {};
 const tmp7 = arg1(dependencyMap[14]);
 obj.rowText = { fontSize: 16, color: arg1(dependencyMap[17]).DARK_WHITE_500_LIGHT_BLACK_500 };
-const obj3 = { width: "isArray", alignSelf: "key", resizeMode: "Array", fontFamily: Fonts.PRIMARY_SEMIBOLD };
+const obj3 = { "Bool(false)": "isArray", "Bool(false)": "key", "Bool(false)": "Array", fontFamily: Fonts.PRIMARY_SEMIBOLD };
 obj.rowPlanDescription = obj3;
 obj.rowPlanDescriptionSubtext = { fontFamily: Fonts.PRIMARY_MEDIUM };
 obj.rowPrice = { marginLeft: "auto" };
-obj.purchasingSpinner = { accessibilityRole: false, set: false, status: false, accessibilityRole: false, ks: false, no: false, borderRadius: false };
-obj.container = { "Bool(false)": true, "Bool(false)": true };
+obj.purchasingSpinner = { children: false, unread: false, activeBackgroundColor: false, pressableStyle: false, style: false, children: false, onPressIn: false };
+obj.container = { height: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000004021530152474234, marginBottom: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000008705964275932262 };
 const obj2 = { fontSize: 16, color: arg1(dependencyMap[17]).DARK_WHITE_500_LIGHT_BLACK_500 };
 obj.currentPlanGradient = { marginTop: 20, borderRadius: importDefault(dependencyMap[18]).radii.sm };
-obj.currentPlanRow = {};
-obj.loadingSpinnerContainer = { fill: 0, backgroundColor: 0, size: 0, color: 0 };
-const obj5 = { 1977447900: 587202839, 8: 1358954949, margin: USER_SETTINGS_CONTAINER_HORIZONTAL_PADDING };
+obj.currentPlanRow = { 0: "isArray", 0: "constructor", 9223372036854775807: "type", 0: "isArray" };
+obj.loadingSpinnerContainer = { 9223372036854775807: 0, 618916762573: 0, 0: 0, 9223372036854775807: 0 };
+const obj5 = { label: true, DARK: true, margin: USER_SETTINGS_CONTAINER_HORIZONTAL_PADDING };
 obj.offPlatformSubscriptionMessage = obj5;
 obj.premiumHeaderLabel = { paddingHorizontal: USER_SETTINGS_CONTAINER_HORIZONTAL_PADDING, marginTop: 8 };
 const obj4 = { marginTop: 20, borderRadius: importDefault(dependencyMap[18]).radii.sm };
 obj.boostContainer = { rowGap: importDefault(dependencyMap[18]).space.PX_24 };
-obj.boostRowIcon = { aze: "boolean", azj: "string" };
+obj.boostRowIcon = { bhk: "boolean", bic: "string" };
 let closure_33 = obj1.createStyles(obj);
 let closure_34 = { [importDefault(dependencyMap[24])]: "imgWumpusNitro", [importDefault(dependencyMap[26])]: "imgWumpusNitroBoost", [importDefault(dependencyMap[23])]: "imgWumpusNitroClassic", [importDefault(dependencyMap[25])]: "imgWumpusNitroClassicBoost", [importDefault(dependencyMap[22])]: "imgWumpusNitroTier0", [importDefault(dependencyMap[21])]: "imgBoost" };
 const items = [

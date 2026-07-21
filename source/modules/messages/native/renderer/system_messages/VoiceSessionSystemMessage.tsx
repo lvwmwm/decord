@@ -1,10 +1,10 @@
-// Module ID: 7735
-// Function ID: 61468
+// Module ID: 7739
+// Function ID: 61480
 // Name: getMessageContent
 // Dependencies: []
 // Exports: createVoiceSessionSystemMessage
 
-// Module 7735 (getMessageContent)
+// Module 7739 (getMessageContent)
 function getMessageContent(channel_id, roleStyle) {
   const callback = channel.getChannel(channel_id.channel_id);
   const tmp = importDefault(dependencyMap[1])(channel_id);

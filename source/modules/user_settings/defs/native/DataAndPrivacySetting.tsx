@@ -1,12 +1,10 @@
-// Module ID: 14393
-// Function ID: 108606
+// Module ID: 14400
+// Function ID: 108629
 // Name: route
-// Dependencies: [0, 0, 0, 0, 4294967295, 4294967295, 4294967295, 0, 0]
+// Dependencies: []
 
-// Module 14393 (route)
-import closure_2 from "result";
-import result from "result";
-
+// Module 14400 (route)
+let closure_2 = importAll(dependencyMap[0]);
 let obj = arg1(dependencyMap[4]);
 obj = {
   useTitle() {
@@ -26,12 +24,12 @@ obj = {
   }
 };
 obj = {
-  route: require("result").UserSettingsSections.DATA_AND_PRIVACY,
+  route: arg1(dependencyMap[1]).UserSettingsSections.DATA_AND_PRIVACY,
   getComponent() {
     return arg1(dependencyMap[7]).default;
   }
 };
 const route = obj.createRoute(obj);
-result = result.fileFinishedImporting("modules/user_settings/defs/native/DataAndPrivacySetting.tsx");
+const result = arg1(dependencyMap[8]).fileFinishedImporting("modules/user_settings/defs/native/DataAndPrivacySetting.tsx");
 
 export default route;

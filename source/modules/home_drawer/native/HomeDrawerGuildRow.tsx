@@ -1,10 +1,10 @@
-// Module ID: 14711
-// Function ID: 110989
+// Module ID: 14718
+// Function ID: 111013
 // Name: GuildRowWrapper
 // Dependencies: []
 // Exports: default
 
-// Module 14711 (GuildRowWrapper)
+// Module 14718 (GuildRowWrapper)
 function GuildRowWrapper(guild) {
   guild = guild.guild;
   const arg1 = guild;
@@ -27,7 +27,7 @@ function GuildRowWrapper(guild) {
   const items2 = [stateFromStores1];
   const memo = React.useMemo(() => {
     if (null == stateFromStores1) {
-      let obj = {};
+      let obj = { overflow: null, flexDirection: null };
     } else {
       obj = {};
       let tmp2 = null == stateFromStores1.end_time;
@@ -44,7 +44,8 @@ function GuildRowWrapper(guild) {
     return obj;
   }, items2);
   let closure_6 = memo;
-  const items3 = [guild, memo, tmp.guildName];
+  const items3 = [guild, memo, , ];
+  ({ guildName: arr4[2], guildNameText: arr4[3] } = tmp);
   const memo1 = React.useMemo(() => {
     if (memo.isMuted) {
       let tmp4 = onActiveHookChange;
@@ -56,16 +57,14 @@ function GuildRowWrapper(guild) {
       }
     } else {
       let obj = { style: tmp.guildName };
-      obj = { 1968435297: "812d0ec6cbf43741fa947b18063ae5e5", 915925470: "server-error", 1375298031: "png" };
-      obj = { flexShrink: 1 };
-      obj.style = obj;
+      obj = { keFvXM: false, address-line1: false, guildId: false, style: voiceUsers1.guildNameText };
       let str = "text-default";
       if (memo.isMuted) {
         str = "text-muted";
       }
       obj.color = str;
       obj.children = guild.name;
-      const items = [typingChannelId(guild(onActiveHookChange[19]).Text, obj), typingChannelId(voiceUsers1, { flexDirection: -1659219612, alignItems: -652 })];
+      const items = [typingChannelId(guild(onActiveHookChange[19]).Text, obj), typingChannelId(voiceUsers1, { flex: "onFriendOnlineNotificationSettingsChanged", flexGrow: "NavigatorHeader" })];
       obj.children = items;
       return typingChannelName(stateFromStores, obj);
     }
@@ -275,7 +274,7 @@ const tmp2 = arg1(dependencyMap[10]);
 ({ jsx: closure_16, jsxs: closure_17 } = arg1(dependencyMap[12]));
 const obj = { STREAMING: "streaming", VOICE: "voice", MENTION: "mention", TYPING: "typing", UNREAD: "unread", NONE: "none" };
 const tmp3 = arg1(dependencyMap[12]);
-let closure_19 = arg1(dependencyMap[13]).createStyles({ guildName: {} });
+let closure_19 = arg1(dependencyMap[13]).createStyles({ guildName: { <string:3461472865>: "safety_user_sentiment_notice_dismissed_at", <string:1447977218>: "message", <string:1640807382>: null }, guildNameText: { flexShrink: 1 } });
 const obj2 = arg1(dependencyMap[13]);
 const result = arg1(dependencyMap[32]).fileFinishedImporting("modules/home_drawer/native/HomeDrawerGuildRow.tsx");
 

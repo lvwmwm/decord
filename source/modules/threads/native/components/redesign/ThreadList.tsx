@@ -1,12 +1,12 @@
-// Module ID: 15261
-// Function ID: 115225
+// Module ID: 15268
+// Function ID: 115249
 // Name: ThreadListSection
 // Dependencies: []
 // Exports: default
 
-// Module 15261 (ThreadListSection)
+// Module 15268 (ThreadListSection)
 function ThreadListSection(title) {
-  const obj = { 0: "/assets/images/native/premium/logos", 9223372036854775807: 158, 0: 32, -9223372036854775808: null, style: callback().section, children: title.title.toUpperCase() };
+  const obj = { 1501064855: "/assets/images/native/premium/logos", -1267889981: 158, -1145697943: 32, -1266241916: null, style: callback().section, children: title.title.toUpperCase() };
   return jsx(arg1(dependencyMap[4]).Text, obj);
 }
 function renderItem(item) {
@@ -90,7 +90,7 @@ let closure_3 = importAll(dependencyMap[0]);
 ({ StyleSheet: closure_4, View: closure_5 } = arg1(dependencyMap[1]));
 const jsx = arg1(dependencyMap[2]).jsx;
 const tmp2 = arg1(dependencyMap[1]);
-let closure_7 = arg1(dependencyMap[3]).createStyles({ container: { padding: "innocent", avatarMarginRight: "innocent" }, center: {}, header: {}, footer: {}, section: {} });
+let closure_7 = arg1(dependencyMap[3]).createStyles({ container: {}, center: { "Null": null, "Null": null }, header: {}, footer: {}, section: {} });
 const set = new Set();
 let closure_9 = { code: "function ThreadListTsx1(){const{withSpring,opacity,springStandard,state,TransitionStates,runOnJS,cleanUp}=this.__closure;return{opacity:withSpring(opacity.get(),springStandard,'respect-motion-settings',function(finished){if(finished&&state===TransitionStates.YEETED){runOnJS(cleanUp)();}})};}" };
 let closure_10 = { code: "function ThreadListTsx2(finished){const{state,TransitionStates,runOnJS,cleanUp}=this.__closure;if(finished&&state===TransitionStates.YEETED){runOnJS(cleanUp)();}}" };

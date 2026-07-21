@@ -1,9 +1,9 @@
-// Module ID: 13940
-// Function ID: 105958
+// Module ID: 13947
+// Function ID: 105981
 // Name: QuestThemePicker
 // Dependencies: []
 
-// Module 13940 (QuestThemePicker)
+// Module 13947 (QuestThemePicker)
 class QuestThemePicker {
   constructor() {
     tmp = closure_12();
@@ -18,23 +18,23 @@ class QuestThemePicker {
     items = [];
     items[0] = closure_7;
     stateFromStores = obj2.useStateFromStores(items, () => token.theme);
-    f105960 = stateFromStores;
+    f105983 = stateFromStores;
     obj3 = arg1(dependencyMap[12]);
     items1 = [];
     items1[0] = closure_6;
     isSynced = obj3.useStateFromStoresObject(items1, () => ({ isSynced: memo.shouldSync("appearance") })).isSynced;
     View = isSynced;
-    closure_5 = f105960.useRef(null);
+    closure_5 = f105983.useRef(null);
     items2 = [];
     items2[0] = stateFromStores;
-    effect = f105960.useEffect(() => {
+    effect = f105983.useEffect(() => {
       if (null == ref.current) {
         ref.current = stateFromStores;
       }
     }, items2);
     items3 = [];
     items3[0] = allMobileThemes;
-    memo = f105960.useMemo(() => {
+    memo = f105983.useMemo(() => {
       const items = [token2.LIGHT, token2.DARKER, token2.MIDNIGHT];
       return allMobileThemes.filter((type) => {
         let hasItem = type.type === items(closure_2[13]).ClientThemeType.STANDARD_BACKGROUND_THEME;
@@ -62,7 +62,7 @@ class QuestThemePicker {
     items4[1] = token;
     items4[2] = token1;
     items4[3] = token2;
-    memo1 = f105960.useMemo(() => memo.map((theme) => {
+    memo1 = f105983.useMemo(() => memo.map((theme) => {
       theme = theme.theme;
       let obj = obj(closure_2[15]);
       let str = "#000000";
@@ -75,19 +75,19 @@ class QuestThemePicker {
     items5 = [, ];
     items5[0] = analyticsLocations;
     items5[1] = isSynced;
-    callback = f105960.useCallback((arg0) => {
+    callback = f105983.useCallback((arg0) => {
       const found = token1.find((theme) => theme.theme === theme);
       if (null != found) {
         tmp(allMobileThemes[16]).handleSaveTheme(found, analyticsLocations, isSynced);
         const obj = tmp(allMobileThemes[16]);
       }
     }, items5);
-    f105967 = callback;
+    f105990 = callback;
     items6 = [];
     items6[0] = callback;
     obj = { style: tmp.themeSection };
     obj1 = { style: tmp.themeSelector };
-    callback1 = f105960.useCallback(() => {
+    callback1 = f105983.useCallback(() => {
       if (null != ref.current) {
         callback(ref.current);
       }
@@ -111,25 +111,24 @@ class QuestThemePicker {
       items[2] = themeCircleSelected;
       obj.style = items;
       const items1 = [callback(isSynced, obj), ];
-      obj = { INTEGRATION_CREATE: true, ConstraintReasonCode: true, style: tmp.themeLabel, children: backgroundColor.name };
+      obj = { style: tmp.themeLabel, children: backgroundColor.name };
       items1[1] = callback(tmp(allMobileThemes[17]).Text, obj);
       obj.children = items1;
       return tmp(closure_5, obj, backgroundColor.theme);
     });
     obj2 = { style: tmp.resetButton, onPress: callback1 };
-    obj3 = { style: tmp.resetIcon, children: f105967(arg1(dependencyMap[18]).RefreshIcon, { size: "sm" }) };
+    obj3 = { style: tmp.resetIcon, children: f105990(arg1(dependencyMap[18]).RefreshIcon, { size: "sm" }) };
     items8 = [, ];
-    items8[0] = f105967(View, obj3);
-    obj4 = { INTEGRATION_CREATE: true, ConstraintReasonCode: true };
-    obj4.style = tmp.themeLabel;
+    items8[0] = f105990(View, obj3);
+    obj4 = { style: tmp.themeLabel };
     intl = arg1(dependencyMap[19]).intl;
     obj4.children = intl.string(arg1(dependencyMap[19]).t.yBZMsQ);
-    items8[1] = f105967(arg1(dependencyMap[17]).Text, obj4);
+    items8[1] = f105990(arg1(dependencyMap[17]).Text, obj4);
     obj2.children = items8;
     items7[1] = jsxs(closure_5, obj2);
     obj1.children = items7;
     obj.children = jsxs(View, obj1);
-    return f105967(View, obj);
+    return f105990(View, obj);
   }
 }
 let closure_3 = importAll(dependencyMap[0]);
@@ -155,7 +154,7 @@ obj.themeCircleSelected = { borderColor: importDefault(dependencyMap[8]).colors.
 obj.themeLabel = { fontSize: 11 };
 const obj4 = { borderColor: importDefault(dependencyMap[8]).colors.MOBILE_LEGACY_BUTTON_SECONDARY_BORDER_DEFAULT };
 obj.resetButton = { alignItems: "center", gap: importDefault(dependencyMap[8]).space.PX_4 };
-const obj6 = { <string:3328432304>: null, <string:3612447030>: "%ArrayProto_keys%", <string:993682542>: "_contentGestureState", <string:3429277782>: "CREATE_GUILD", <string:1676466352>: "billingAddress", <string:1315000674>: "Array", <string:1000405862>: "agq", borderRadius: importDefault(dependencyMap[8]).radii.round };
+const obj6 = { "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, borderRadius: importDefault(dependencyMap[8]).radii.round };
 obj.resetIcon = obj6;
 let closure_12 = obj.createStyles(obj);
 const obj5 = { alignItems: "center", gap: importDefault(dependencyMap[8]).space.PX_4 };

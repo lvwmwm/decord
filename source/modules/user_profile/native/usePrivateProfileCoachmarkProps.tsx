@@ -1,12 +1,12 @@
-// Module ID: 14965
-// Function ID: 112688
+// Module ID: 14972
+// Function ID: 112712
 // Name: PrivateProfileCoachmarkImage
 // Dependencies: []
 // Exports: usePrivateProfileCoachmarkProps
 
-// Module 14965 (PrivateProfileCoachmarkImage)
+// Module 14972 (PrivateProfileCoachmarkImage)
 function PrivateProfileCoachmarkImage() {
-  return <View style={callback().imageContainer}>{jsx(arg1(dependencyMap[6]).PrivateProfileAbstractUI, {})}</View>;
+  return <View style={callback().imageContainer}>{jsx(arg1(dependencyMap[6]).PrivateProfileAbstractUI, { "Null": "/assets/images/native/icons", "Null": 24, "Null": 24 })}</View>;
 }
 let closure_2 = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;

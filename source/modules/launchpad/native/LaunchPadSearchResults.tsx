@@ -1,9 +1,9 @@
-// Module ID: 15523
-// Function ID: 118513
+// Module ID: 15530
+// Function ID: 118537
 // Name: renderItemJSX
 // Dependencies: []
 
-// Module 15523 (renderItemJSX)
+// Module 15530 (renderItemJSX)
 function renderItemJSX(result) {
   result = result.result;
   if (null == result) {
@@ -14,7 +14,7 @@ function renderItemJSX(result) {
       let obj = { guild: result.record };
       return callback(closure_14, obj);
     } else if (arg1(dependencyMap[20]).AutocompleterResultTypes.TEXT_CHANNEL === type) {
-      obj = { SEND_AS_GIFT: null, optionsWrapper: null, screenshotButtonOptions: null, channel: result.record };
+      obj = { "Null": null, "Null": null, "Null": null, channel: result.record };
       return callback(importDefault(dependencyMap[21]), obj);
     } else if (arg1(dependencyMap[20]).AutocompleterResultTypes.GROUP_DM === type) {
       let obj1 = { channel: result.record, navigationReplace: true };
@@ -50,7 +50,7 @@ const UnreadSetting = arg1(dependencyMap[5]).UnreadSetting;
 ({ jsx: closure_9, Fragment: closure_10, jsxs: closure_11 } = arg1(dependencyMap[6]));
 let closure_12 = { bottom: 24 };
 let obj1 = arg1(dependencyMap[7]);
-let obj = { listContainer: { minHeight: 16 }, list: { alignItems: null, position: null } };
+let obj = { listContainer: { minHeight: 16 }, list: { <string:2823905889>: null, <string:2001293998>: null } };
 obj = { borderRadius: importDefault(dependencyMap[8]).radii.sm };
 obj.guildIcon = obj;
 obj1 = { backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_BASE_LOW };
@@ -265,7 +265,7 @@ const memoResult1 = importAllResult.memo(function SearchResultsInner(results) {
   const items2 = [fontScale, results, tmp8];
   obj = { style: tmp.listContainer };
   if (results.length > 0) {
-    obj = { ref, style: tmp.list, sectionSize: tmp8.category.height, itemSize: tmp10, renderSection: renderSearchResultsSection, renderItem: callback };
+    obj = { 9223372036854775807: false, 0: false, -9223372036854775808: false, ref, style: tmp.list, sectionSize: tmp8.category.height, itemSize: tmp10, renderSection: renderSearchResultsSection, renderItem: callback };
     const items3 = [results.length];
     obj.sections = items3;
     obj.footerSize = 16;

@@ -1,10 +1,10 @@
-// Module ID: 15644
-// Function ID: 119542
+// Module ID: 15651
+// Function ID: 119566
 // Name: VoicePanelAccessibilityView
 // Dependencies: []
 // Exports: default
 
-// Module 15644 (VoicePanelAccessibilityView)
+// Module 15651 (VoicePanelAccessibilityView)
 const VoicePanelPIPModes = arg1(dependencyMap[1]).VoicePanelPIPModes;
 const jsx = arg1(dependencyMap[2]).jsx;
 let closure_4 = importAll(dependencyMap[0]).memo(arg1(dependencyMap[3]).AccessibilityViewAnimated);
@@ -19,7 +19,7 @@ export default function VoicePanelAccessibilityView(pointerEvents) {
     str = "box-none";
   }
   let accessibilityViewIsModal = pointerEvents.accessibilityViewIsModal;
-  let obj = { <string:1386281732>: false, <string:2472657276>: null, position: "", left: null, right: null };
+  let obj = {};
   ({ nativeID, onAccessibilityEscape } = pointerEvents);
   Object.setPrototypeOf(null);
   const merged = Object.assign(pointerEvents, obj);

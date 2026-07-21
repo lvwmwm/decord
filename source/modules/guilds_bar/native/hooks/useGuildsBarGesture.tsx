@@ -1,10 +1,10 @@
-// Module ID: 14678
-// Function ID: 110705
+// Module ID: 14685
+// Function ID: 110729
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 // Exports: default
 
-// Module 14678 (_createForOfIteratorHelperLoose)
+// Module 14685 (_createForOfIteratorHelperLoose)
 function _createForOfIteratorHelperLoose(@@iterator) {
   let arg1 = Symbol_iterator;
   @@iterator = "undefined" !== typeof Symbol;
@@ -321,7 +321,7 @@ let closure_15 = importDefault(dependencyMap[8])((intl) => {
 const importDefaultResult1 = importDefault(dependencyMap[8]);
 let closure_16 = arg1(dependencyMap[11]).throttle((data) => {
   let obj = importDefault(dependencyMap[12]);
-  obj = { <string:944832516>: "<string:21614161>", backShouldLeaveGuild: "%MapIteratorPrototype%", data };
+  obj = { panelHeader: null, discount: null, data };
   obj.addBreadcrumb(obj);
 }, 2000);
 const obj5 = arg1(dependencyMap[11]);
@@ -660,8 +660,8 @@ export default function useGuildsBarGesture() {
     const state = dragRegion.getState();
     ({ dragSpecs, scrollPosition, gestureState, dragDropInProgress, setStateShallow } = state);
     let obj = tmp(token[12]);
-    obj = { absoluteX, absoluteY };
-    obj.addBreadcrumb({ data: obj });
+    obj = { panelHeader: null, discount: "xs", data: { absoluteX, absoluteY } };
+    obj.addBreadcrumb(obj);
     ({ item, node } = callback2(absoluteY, false, fastListRef));
     if (null != item) {
       if (null != node) {

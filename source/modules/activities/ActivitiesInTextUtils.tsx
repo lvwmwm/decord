@@ -1,10 +1,10 @@
-// Module ID: 7907
-// Function ID: 62908
+// Module ID: 7911
+// Function ID: 62920
 // Name: isActivityInTextSupportedForChannel
 // Dependencies: []
 // Exports: isActivitiesInTextEnabled, useIsActivitiesInTextEnabled, useIsAppLauncherEnabled
 
-// Module 7907 (isActivityInTextSupportedForChannel)
+// Module 7911 (isActivityInTextSupportedForChannel)
 function isActivityInTextSupportedForChannel(channel) {
   if (null == channel) {
     return false;

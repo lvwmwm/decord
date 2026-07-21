@@ -1,9 +1,9 @@
-// Module ID: 9186
-// Function ID: 71966
+// Module ID: 9190
+// Function ID: 71978
 // Name: PasswordResetMethods
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 9186 (PasswordResetMethods)
+// Module 9190 (PasswordResetMethods)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_common/js/shared/shared-constants/PasswordResetMethods.tsx");
 

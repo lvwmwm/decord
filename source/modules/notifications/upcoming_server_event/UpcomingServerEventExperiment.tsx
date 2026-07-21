@@ -1,10 +1,10 @@
-// Module ID: 14212
-// Function ID: 107468
+// Module ID: 14219
+// Function ID: 107491
 // Name: apexExperiment
 // Dependencies: []
 // Exports: isEligibleForUpcomingServerEventNotifications, useUpcomingServerEventExperiment
 
-// Module 14212 (apexExperiment)
+// Module 14219 (apexExperiment)
 const _module = require(dependencyMap[0]);
 const apexExperiment = _module.createApexExperiment({ defaultConfig: { showSettingsToggle: false }, variations: { [1]: { showSettingsToggle: true }, [2]: { showSettingsToggle: true }, [3]: { showSettingsToggle: true } } });
 const _module1 = require(dependencyMap[1]);

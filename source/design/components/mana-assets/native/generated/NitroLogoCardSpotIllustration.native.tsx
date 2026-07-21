@@ -1,10 +1,10 @@
-// Module ID: 6327
-// Function ID: 50364
+// Module ID: 6329
+// Function ID: 50407
 // Name: NitroLogoCardSpotIllustration
 // Dependencies: []
 // Exports: NitroLogoCardSpotIllustration
 
-// Module 6327 (NitroLogoCardSpotIllustration)
+// Module 6329 (NitroLogoCardSpotIllustration)
 const jsx = require(dependencyMap[0]).jsx;
 const _module = require(dependencyMap[3]);
 const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/NitroLogoCardSpotIllustration.native.tsx");

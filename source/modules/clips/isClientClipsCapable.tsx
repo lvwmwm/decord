@@ -1,10 +1,10 @@
-// Module ID: 4182
-// Function ID: 35964
+// Module ID: 4186
+// Function ID: 36012
 // Name: isClientClipsCapable
 // Dependencies: []
 // Exports: default
 
-// Module 4182 (isClientClipsCapable)
+// Module 4186 (isClientClipsCapable)
 const Features = require(dependencyMap[0]).Features;
 const _module = require(dependencyMap[3]);
 const result = _module.fileFinishedImporting("modules/clips/isClientClipsCapable.tsx");

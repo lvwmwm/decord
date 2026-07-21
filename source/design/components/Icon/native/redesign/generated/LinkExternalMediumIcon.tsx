@@ -1,10 +1,10 @@
-// Module ID: 12218
-// Function ID: 93801
+// Module ID: 12225
+// Function ID: 93824
 // Name: LinkExternalMediumIcon
 // Dependencies: []
 // Exports: LinkExternalMediumIcon
 
-// Module 12218 (LinkExternalMediumIcon)
+// Module 12225 (LinkExternalMediumIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/LinkExternalMediumIcon.tsx");

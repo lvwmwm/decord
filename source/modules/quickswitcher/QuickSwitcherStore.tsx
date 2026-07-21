@@ -1,9 +1,9 @@
-// Module ID: 7080
-// Function ID: 56741
+// Module ID: 7084
+// Function ID: 56752
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
-// Module 7080 (_isNativeReflectConstruct)
+// Module 7084 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -143,13 +143,13 @@ function generateInitialResults() {
     const recentlyTalked = importDefault(dependencyMap[24]).getRecentlyTalked(tmp4, 100);
     return recentlyTalked.filter((record) => record.record.id !== closure_1);
   } else if (arg1(dependencyMap[21]).AutocompleterResultTypes.APPLICATION === tmp5) {
-    return importDefault(dependencyMap[24]).queryApplications({});
+    return importDefault(dependencyMap[24]).queryApplications({ alignSelf: 1757388858567756800000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, justifyContent: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001390671162036146, flex: 1132393566593946600000000000 });
   } else if (arg1(dependencyMap[21]).AutocompleterResultTypes.GAME_PROFILE === tmp5) {
     return [];
   } else if (arg1(dependencyMap[21]).AutocompleterResultTypes.GUILD === tmp5) {
-    return importDefault(dependencyMap[24]).queryGuilds({});
+    return importDefault(dependencyMap[24]).queryGuilds({ alignSelf: 1757388858567756800000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, justifyContent: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001390671162036146, flex: 1132393566593946600000000000 });
   } else if (arg1(dependencyMap[21]).AutocompleterResultTypes.TEXT_CHANNEL === tmp5) {
-    let obj = { guildId: store3.getGuildId() };
+    let obj = { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, guildId: store3.getGuildId() };
     return importDefault(dependencyMap[24]).queryChannels(obj);
   } else if (arg1(dependencyMap[21]).AutocompleterResultTypes.VOICE_CHANNEL === tmp5) {
     obj = {
@@ -462,7 +462,7 @@ function handleQuickSwitcherShow(arg0) {
     if (null != queryMode) {
       num2 = 100;
     }
-    const obj = { display: 24, flexDirection: 24, paddingRight: null, blacklist: set };
+    const obj = { blacklist: set };
     const prototype = tmp6.prototype;
     tmp6 = new tmp6(tmp7, tmp9, num2, obj, 100);
   }

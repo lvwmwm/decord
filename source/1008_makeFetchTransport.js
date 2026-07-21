@@ -13,7 +13,7 @@ export const makeFetchTransport = function makeFetchTransport(bufferSize) {
   async function _makeRequest(body, arg1) {
     closure_2 = closure_2 + length;
     closure_3 = closure_3 + 1;
-    let obj = { "Bool(false)": null, "Bool(false)": 0, "Bool(false)": 0, body: body.body, headers: headers.headers };
+    let obj = { "Bool(false)": "auto.browser.global_handlers.onunhandledrejection", "Bool(false)": "a", "Bool(false)": "p", body: body.body, headers: headers.headers };
     let tmp2 = tmp;
     if (closure_2 <= 60000) {
       tmp2 = closure_3 < 15;

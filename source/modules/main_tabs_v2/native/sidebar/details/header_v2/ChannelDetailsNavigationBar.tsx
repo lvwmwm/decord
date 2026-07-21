@@ -1,9 +1,9 @@
-// Module ID: 15285
-// Function ID: 116249
+// Module ID: 15292
+// Function ID: 116273
 // Name: navigateToChannelDetailsScreen
 // Dependencies: []
 
-// Module 15285 (navigateToChannelDetailsScreen)
+// Module 15292 (navigateToChannelDetailsScreen)
 function navigateToChannelDetailsScreen(navigate, screen, channelId) {
   navigate.navigate("sidebar", { screen, channelId, source: "channel-details-navigation-bar" });
 }

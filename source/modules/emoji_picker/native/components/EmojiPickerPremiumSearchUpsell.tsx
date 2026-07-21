@@ -1,9 +1,9 @@
-// Module ID: 9355
-// Function ID: 73016
+// Module ID: 9359
+// Function ID: 73030
 // Name: useEmojiPickerPremiumSearchUpsellViewed
 // Dependencies: []
 
-// Module 9355 (useEmojiPickerPremiumSearchUpsellViewed)
+// Module 9359 (useEmojiPickerPremiumSearchUpsellViewed)
 function useEmojiPickerPremiumSearchUpsellViewed(guildId) {
   guildId = guildId.guildId;
   const arg1 = guildId;
@@ -72,8 +72,8 @@ obj = { paddingTop: importDefault(dependencyMap[7]).space.PX_8 };
 obj.container = obj;
 obj1 = { padding: importDefault(dependencyMap[7]).space.PX_8, borderRadius: importDefault(dependencyMap[7]).radii.xs, backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_BASE_LOWEST };
 obj.premiumSearchUpsell = obj1;
-obj.premiumSearchUpsellContent = { "Bool(false)": 100, "Bool(false)": 150 };
-obj.nitroIcon = { "Bool(false)": null, "Bool(false)": null };
+obj.premiumSearchUpsellContent = { RNSVGTSpan: 100, OverKeyboardView: 150 };
+obj.nitroIcon = { marginBottom: null, width: null };
 let closure_14 = obj1.createStyles(obj);
 const tmp4 = arg1(dependencyMap[5]);
 const memoResult = importAllResult.memo((useTier0UpsellContent) => {

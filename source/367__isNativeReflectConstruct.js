@@ -58,7 +58,7 @@ export default (arg0) => {
       }
       tmp2Result = tmp2(self, constructResult);
       if (!point) {
-        point = { "Null": false, "Null": true };
+        point = { max: -536870861, guildId: -299892737 };
       }
       if ("number" === typeof point.x) {
         if ("number" === typeof point.y) {

@@ -1,10 +1,10 @@
-// Module ID: 9280
-// Function ID: 72521
+// Module ID: 9284
+// Function ID: 72533
 // Name: modifyRow
 // Dependencies: []
 // Exports: default
 
-// Module 9280 (modifyRow)
+// Module 9284 (modifyRow)
 function modifyRow(arg0) {
   arg0.contextType = arg1(dependencyMap[6]).MessageContextType.SEARCH;
   arg0.renderContentOnly = true;
@@ -16,18 +16,18 @@ let closure_6 = importDefault(dependencyMap[3]);
 ({ jsx: closure_7, jsxs: closure_8 } = arg1(dependencyMap[4]));
 let importDefaultResult = importDefault(dependencyMap[5]);
 importDefaultResult = new importDefaultResult();
-importDefaultResult.setOptions({});
+importDefaultResult.setOptions({ "Bool(true)": null, "Bool(true)": null });
 let obj1 = arg1(dependencyMap[7]);
 let obj = {};
 obj = { gap: importDefault(dependencyMap[8]).space.PX_4 };
 obj.container = obj;
-obj1 = { -9223372036854775808: true, filter: true, gap: importDefault(dependencyMap[8]).space.PX_8 };
+obj1 = { gap: importDefault(dependencyMap[8]).space.PX_8 };
 obj.header = obj1;
-const obj2 = { -9223372036854775808: true, filter: true, gap: importDefault(dependencyMap[8]).space.PX_4 };
-obj.authorRow = obj2;
+const tmp2 = arg1(dependencyMap[4]);
+obj.authorRow = { gap: importDefault(dependencyMap[8]).space.PX_4 };
 obj.headerTimestamp = { flex: 1 };
 let closure_10 = obj1.createStyles(obj);
-const tmp2 = arg1(dependencyMap[4]);
+const obj2 = { gap: importDefault(dependencyMap[8]).space.PX_4 };
 const result = arg1(dependencyMap[17]).fileFinishedImporting("modules/conversations/components/native/ConversationPreviewMessage.tsx");
 
 export default function ConversationPreviewMessage(message) {
@@ -99,7 +99,7 @@ export default function ConversationPreviewMessage(message) {
     items4[2] = callback(arg1(dependencyMap[15]).Text, obj6);
     obj1.children = items4;
     const items6 = [closure_8(View, obj1), ];
-    const obj7 = { lineHeight: 3, fontSize: null, modifyRow, message, rowGenerator: importDefaultResult };
+    const obj7 = { -1034289856: "<string:553648726>", -1031355792: "<string:68987969>", modifyRow, message, rowGenerator: importDefaultResult };
     items6[1] = callback(importDefault(dependencyMap[16]), obj7);
     obj.children = items6;
     return closure_8(View, obj);

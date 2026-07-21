@@ -1,10 +1,10 @@
-// Module ID: 10927
-// Function ID: 84998
+// Module ID: 10932
+// Function ID: 85019
 // Name: getPendingFolderGuildIds
 // Dependencies: []
 // Exports: default
 
-// Module 10927 (getPendingFolderGuildIds)
+// Module 10932 (getPendingFolderGuildIds)
 function getPendingFolderGuildIds() {
   let obj;
   let obj2;

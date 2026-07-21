@@ -1,10 +1,10 @@
-// Module ID: 6283
-// Function ID: 50298
+// Module ID: 6285
+// Function ID: 50341
 // Name: MailboxSpotIllustration
 // Dependencies: []
 // Exports: MailboxSpotIllustration
 
-// Module 6283 (MailboxSpotIllustration)
+// Module 6285 (MailboxSpotIllustration)
 const jsx = require(dependencyMap[0]).jsx;
 const _module = require(dependencyMap[3]);
 const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/MailboxSpotIllustration.native.tsx");

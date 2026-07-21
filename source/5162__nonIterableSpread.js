@@ -1,0 +1,11 @@
+// Module ID: 5162
+// Function ID: 43739
+// Name: _nonIterableSpread
+// Dependencies: []
+
+// Module 5162 (_nonIterableSpread)
+
+export default function _nonIterableSpread() {
+  const typeError = new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
+  throw typeError;
+};

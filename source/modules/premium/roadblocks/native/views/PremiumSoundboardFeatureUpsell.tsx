@@ -1,16 +1,16 @@
-// Module ID: 15625
-// Function ID: 119328
+// Module ID: 15632
+// Function ID: 119352
 // Name: PremiumSoundboardFeatureUpsell
 // Dependencies: []
 // Exports: default
 
-// Module 15625 (PremiumSoundboardFeatureUpsell)
+// Module 15632 (PremiumSoundboardFeatureUpsell)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 const jsx = arg1(dependencyMap[2]).jsx;
 let closure_5 = arg1(dependencyMap[3]).createStyles((arg0) => {
   let obj = {};
-  obj = { bottom: arg0 + importDefault(dependencyMap[4]).space.PX_12, marginHorizontal: importDefault(dependencyMap[4]).space.PX_12 };
+  obj = { <string:1367186513>: null, <string:3613500496>: null, <string:3713892945>: null, <string:4272015777>: null, bottom: arg0 + importDefault(dependencyMap[4]).space.PX_12, marginHorizontal: importDefault(dependencyMap[4]).space.PX_12 };
   obj.container = obj;
   return obj;
 });

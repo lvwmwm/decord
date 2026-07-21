@@ -1,10 +1,10 @@
-// Module ID: 6982
-// Function ID: 55863
+// Module ID: 6986
+// Function ID: 55874
 // Name: DeviceState
 // Dependencies: []
 // Exports: logDeviceState
 
-// Module 6982 (DeviceState)
+// Module 6986 (DeviceState)
 const _module = require(dependencyMap[1]);
 const result = _module.fileFinishedImporting("modules/device/DeviceState.tsx");
 

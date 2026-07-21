@@ -5,7 +5,7 @@
 // Exports: default
 
 // Module 3314 (formatDistance)
-let closure_0 = { lessThanXSeconds: {}, xSeconds: {}, halfAMinute: "meio minuto", lessThanXMinutes: {}, xMinutes: {}, aboutXHours: {}, xHours: {}, xDays: {}, aboutXWeeks: {}, xWeeks: {}, aboutXMonths: {}, xMonths: {}, aboutXYears: {}, xYears: {}, overXYears: {}, almostXYears: {} };
+let closure_0 = { lessThanXSeconds: { -9223372036854775808: false, 0: false }, xSeconds: {}, halfAMinute: "meio minuto", lessThanXMinutes: { -9223372036854775808: true, 0: true }, xMinutes: { -9223372036854775808: true, 0: true }, aboutXHours: { -9223372036854775808: false, 0: false }, xHours: { -9223372036854775808: "medianoche", 0: "mediodia" }, xDays: {}, aboutXWeeks: { -9223372036854775808: "AM", 0: "PM" }, xWeeks: { -9223372036854775808: false, 0: false }, aboutXMonths: {}, xMonths: { -9223372036854775808: false, 0: false }, aboutXYears: { -9223372036854775808: "<string:893911042>", 0: "<string:3288334632>" }, xYears: { -9223372036854775808: "<string:2629304321>", 0: "<string:4153933826>" }, overXYears: {}, almostXYears: {} };
 
 export default function formatDistance(arg0, arg1, addSuffix) {
   if ("string" === typeof closure_0[arg0]) {

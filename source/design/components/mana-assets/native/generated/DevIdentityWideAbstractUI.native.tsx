@@ -1,10 +1,10 @@
-// Module ID: 5983
-// Function ID: 49848
+// Module ID: 5985
+// Function ID: 49891
 // Name: DevIdentityWideAbstractUI
 // Dependencies: []
 // Exports: DevIdentityWideAbstractUI
 
-// Module 5983 (DevIdentityWideAbstractUI)
+// Module 5985 (DevIdentityWideAbstractUI)
 const jsx = require(dependencyMap[0]).jsx;
 const _module = require(dependencyMap[3]);
 const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/DevIdentityWideAbstractUI.native.tsx");

@@ -1,9 +1,9 @@
-// Module ID: 8503
-// Function ID: 67862
+// Module ID: 8507
+// Function ID: 67874
 // Name: DisplayNameStyleColorPreset
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 8503 (DisplayNameStyleColorPreset)
+// Module 8507 (DisplayNameStyleColorPreset)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("modules/display_name_styles/types.tsx");
 

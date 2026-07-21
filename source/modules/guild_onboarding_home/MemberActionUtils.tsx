@@ -1,10 +1,10 @@
-// Module ID: 11369
-// Function ID: 88430
+// Module ID: 11376
+// Function ID: 88454
 // Name: useMemberActionsForChannel
 // Dependencies: []
 // Exports: useAllActionsCompleted, useMemberActionsForChannel, useNextMemberAction
 
-// Module 11369 (useMemberActionsForChannel)
+// Module 11376 (useMemberActionsForChannel)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 let closure_5 = importDefault(dependencyMap[2]);

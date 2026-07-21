@@ -1,10 +1,10 @@
-// Module ID: 12319
-// Function ID: 94369
+// Module ID: 12326
+// Function ID: 94392
 // Name: handlePress
 // Dependencies: []
 // Exports: default
 
-// Module 12319 (handlePress)
+// Module 12326 (handlePress)
 function handlePress() {
   let obj = importDefault(dependencyMap[5]);
   obj = {};
@@ -19,9 +19,9 @@ let closure_5 = require(dependencyMap[1]).getPremiumGroupProductName;
 const jsx = require(dependencyMap[2]).jsx;
 const _module1 = require(dependencyMap[3]);
 let obj = {};
-obj = { "Bool(false)": -14, "Bool(false)": -14, "Bool(false)": 0.75, "Bool(false)": -4, "Bool(false)": 16, "Bool(false)": 0.75, "Bool(false)": 14, "Bool(false)": -14, "Bool(false)": 0.875, backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_SURFACE_HIGH, borderColor: importDefault(dependencyMap[4]).colors.STATUS_WARNING, borderRadius: importDefault(dependencyMap[4]).radii.lg };
+obj = { 1834026050: -14, -659493785: -14, -1437152157: 0.75, -319042460: -4, 1649697712: 16, 72458410: 0.75, 1006330628: 14, -680106838: -14, 1196532421: 0.875, backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_SURFACE_HIGH, borderColor: importDefault(dependencyMap[4]).colors.STATUS_WARNING, borderRadius: importDefault(dependencyMap[4]).radii.lg };
 obj.premiumGroupBanner = obj;
-obj.pgUnavailable = { -9223372036854775808: 323420161, 0: -2104950783 };
+obj.pgUnavailable = { markAsSpoilerTitle: null, keyboardAppearance: null };
 obj.pgUnavailableText = { textAlign: "center" };
 let closure_7 = _module1.createStyles(obj);
 const _module2 = require(dependencyMap[11]);

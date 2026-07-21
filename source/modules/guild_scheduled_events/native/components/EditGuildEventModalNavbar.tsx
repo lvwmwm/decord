@@ -1,16 +1,16 @@
-// Module ID: 8357
-// Function ID: 66635
+// Module ID: 8361
+// Function ID: 66647
 // Name: EditGuildEventModalNavbar
 // Dependencies: []
 // Exports: default
 
-// Module 8357 (EditGuildEventModalNavbar)
+// Module 8361 (EditGuildEventModalNavbar)
 let closure_3 = importDefault(dependencyMap[0]);
 importAll(dependencyMap[1]);
 const View = arg1(dependencyMap[2]).View;
 ({ jsx: closure_5, jsxs: closure_6 } = arg1(dependencyMap[3]));
 const tmp3 = arg1(dependencyMap[3]);
-let closure_7 = arg1(dependencyMap[4]).createStyles({ header: {}, headerTitle: { "Bool(false)": false, "Bool(false)": false }, buttonContainer: { width: 60 }, rightButton: { marginLeft: 12 } });
+let closure_7 = arg1(dependencyMap[4]).createStyles({ header: { intl: "Next", it: null, surrogates: null, T: null, IconComponent: null }, headerTitle: { "Bool(true)": false, "Bool(false)": false }, buttonContainer: { width: 60 }, rightButton: { marginLeft: 12 } });
 const obj = arg1(dependencyMap[4]);
 const result = arg1(dependencyMap[12]).fileFinishedImporting("modules/guild_scheduled_events/native/components/EditGuildEventModalNavbar.tsx");
 
@@ -20,7 +20,7 @@ export default function EditGuildEventModalNavbar(screen) {
   screen = screen.screen;
   const tmp = callback4();
   if (arg1(dependencyMap[5]).EditGuildEventScreens.CHANNEL_SELECTOR === screen) {
-    let items = [0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000014037546051075465, 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000025798094416604638];
+    let items = [false, false];
   } else if (arg1(dependencyMap[5]).EditGuildEventScreens.DETAILS === screen) {
     items = [];
   } else if (arg1(dependencyMap[5]).EditGuildEventScreens.PREVIEW === screen) {
@@ -33,7 +33,7 @@ export default function EditGuildEventModalNavbar(screen) {
   obj = { top: true, style: tmp.header };
   obj = { style: tmp.buttonContainer };
   const items1 = [callback2(View, obj), , ];
-  const obj1 = { Promise: "_reject", marginTop: "isAutoFillData", flags: "gg", style: tmp.headerTitle };
+  const obj1 = { "Null": 160961306817940700000000000000000000, "Null": 0.00000000605360159482843, "Null": 1315312532608515200000000000, style: tmp.headerTitle };
   const intl = arg1(dependencyMap[9]).intl;
   obj1.children = intl.format(arg1(dependencyMap[9]).t.42HaFY, { step: tmp8, total: tmp9 });
   items1[1] = callback2(arg1(dependencyMap[8]).Text, obj1);

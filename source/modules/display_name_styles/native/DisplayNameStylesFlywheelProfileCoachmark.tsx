@@ -1,14 +1,14 @@
-// Module ID: 15354
-// Function ID: 116958
+// Module ID: 15361
+// Function ID: 116982
 // Name: CoachmarkImage
 // Dependencies: []
 // Exports: default
 
-// Module 15354 (CoachmarkImage)
+// Module 15361 (CoachmarkImage)
 function CoachmarkImage() {
   const tmp = callback3();
   let obj = { style: tmp.coachmarkImageContainer };
-  const items = [callback(arg1(dependencyMap[12]).DisplayNameLockeAbstractUI, {}), ];
+  const items = [callback(arg1(dependencyMap[12]).DisplayNameLockeAbstractUI, { "Null": "backdropTint", "Null": "<string:4216275200>", "Null": "<string:3110141953>" }), ];
   obj = { style: tmp.betaTag };
   items[1] = callback(arg1(dependencyMap[13]).BetaTag, obj);
   obj.children = items;

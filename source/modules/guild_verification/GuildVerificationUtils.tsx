@@ -1,10 +1,10 @@
-// Module ID: 12230
-// Function ID: 93847
+// Module ID: 12237
+// Function ID: 93870
 // Name: inviteGuildHasPendingMemberDisabledVerification
 // Dependencies: []
 // Exports: inviteGuildHasPendingMemberDisabledVerification, openVerificationModalOrTransitionToApplication
 
-// Module 12230 (inviteGuildHasPendingMemberDisabledVerification)
+// Module 12237 (inviteGuildHasPendingMemberDisabledVerification)
 let closure_2 = importDefault(dependencyMap[0]);
 ({ GuildFeatures: closure_3, Routes: closure_4 } = arg1(dependencyMap[1]));
 const tmp2 = arg1(dependencyMap[1]);

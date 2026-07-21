@@ -1,16 +1,37 @@
 // Module ID: 13141
-// Function ID: 99503
+// Function ID: 99510
 // Dependencies: []
 
 // Module 13141
-let closure_2 = require(dependencyMap[0])([].concat);
 
-export default require(dependencyMap[1])("Reflect", "ownKeys") || function ownKeys(arg0) {
-  const fResult = require(dependencyMap[2]).f(require(dependencyMap[3])(arg0));
-  const f = require(dependencyMap[4]).f;
-  let tmp2 = fResult;
-  if (f) {
-    tmp2 = callback(fResult, f(arg0));
+export default (arg0, arg1) => {
+  if ("string" === arg1) {
+    const toString = arg0.toString;
+    if (require(dependencyMap[0])(toString)) {
+      const tmp6 = require(dependencyMap[2])(toString, arg0);
+      if (!tmp5(tmp6)) {
+        return tmp6;
+      }
+      const tmp5 = require(dependencyMap[1]);
+    }
   }
-  return tmp2;
+  const valueOf = arg0.valueOf;
+  if (require(dependencyMap[0])(valueOf)) {
+    const tmp10 = require(dependencyMap[2])(valueOf, arg0);
+    if (!tmp9(tmp10)) {
+      return tmp10;
+    }
+    const tmp9 = require(dependencyMap[1]);
+  }
+  if ("string" !== arg1) {
+    const toString2 = arg0.toString;
+    if (require(dependencyMap[0])(toString2)) {
+      const tmp16 = require(dependencyMap[2])(toString2, arg0);
+      if (!tmp15(tmp16)) {
+        return tmp16;
+      }
+      const tmp15 = require(dependencyMap[1]);
+    }
+  }
+  throw new TypeError("Can't convert object to primitive value");
 };

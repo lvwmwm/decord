@@ -1,15 +1,15 @@
-// Module ID: 10627
-// Function ID: 82992
+// Module ID: 10633
+// Function ID: 83015
 // Name: ScheduleEventPrompt
 // Dependencies: []
 // Exports: ScheduleEventPrompt, StartEventPrompt
 
-// Module 10627 (ScheduleEventPrompt)
+// Module 10633 (ScheduleEventPrompt)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 let obj = arg1(dependencyMap[2]);
 obj = { actionBarCTAContainer: { marginVertical: 4 } };
-obj = { isDowngrading: "Golive Simulcast without prober 720p@500k", type: 144.002, pendingDowngrade: null, tintColor: importDefault(dependencyMap[3]).colors.WHITE };
+obj = { 0: "Golive Simulcast without prober 720p@500k", 0: 144.002, 0: null, tintColor: importDefault(dependencyMap[3]).colors.WHITE };
 obj.iconStyle = obj;
 obj.iconContainerStyle = { backgroundColor: importDefault(dependencyMap[3]).colors.BACKGROUND_BRAND, borderRadius: importDefault(dependencyMap[3]).radii.lg, padding: 4 };
 const obj1 = { backgroundColor: importDefault(dependencyMap[3]).colors.BACKGROUND_BRAND, borderRadius: importDefault(dependencyMap[3]).radii.lg, padding: 4 };

@@ -1,10 +1,10 @@
-// Module ID: 6015
-// Function ID: 49896
+// Module ID: 6017
+// Function ID: 49939
 // Name: DisplayNameStylesAbstractUI
 // Dependencies: []
 // Exports: DisplayNameStylesAbstractUI
 
-// Module 6015 (DisplayNameStylesAbstractUI)
+// Module 6017 (DisplayNameStylesAbstractUI)
 const jsx = require(dependencyMap[0]).jsx;
 const _module = require(dependencyMap[3]);
 const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/DisplayNameStylesAbstractUI.native.tsx");

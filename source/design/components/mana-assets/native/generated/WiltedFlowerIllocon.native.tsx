@@ -1,10 +1,10 @@
-// Module ID: 6609
-// Function ID: 50787
+// Module ID: 6615
+// Function ID: 50836
 // Name: WiltedFlowerIllocon
 // Dependencies: []
 // Exports: WiltedFlowerIllocon
 
-// Module 6609 (WiltedFlowerIllocon)
+// Module 6615 (WiltedFlowerIllocon)
 const jsx = require(dependencyMap[0]).jsx;
 const _module = require(dependencyMap[3]);
 const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/WiltedFlowerIllocon.native.tsx");

@@ -1,10 +1,10 @@
-// Module ID: 12586
-// Function ID: 96793
+// Module ID: 12593
+// Function ID: 96816
 // Name: calculateActivityPreviewImageDimensions
 // Dependencies: []
 // Exports: default
 
-// Module 12586 (calculateActivityPreviewImageDimensions)
+// Module 12593 (calculateActivityPreviewImageDimensions)
 function calculateActivityPreviewImageDimensions(bound) {
   const diff = bound - 32;
   return { width: diff, height: diff / closure_14 };
@@ -23,19 +23,19 @@ const tmp3 = arg1(dependencyMap[2]);
 ({ jsx: closure_10, jsxs: closure_11 } = arg1(dependencyMap[8]));
 const XSMALL = arg1(dependencyMap[9]).AvatarSizes.XSMALL;
 const themedRippleConfig = arg1(dependencyMap[6]).getThemedRippleConfig({ foreground: true });
-let obj = { 9223372036854775807: "png", -9223372036854775808: "2026-04-browser-transceiver-padding-removal", -9223372036854775808: "user", 0: "2026-02-process-boost-on-voice" };
+let obj = { variant: "png", text: "2026-04-browser-transceiver-padding-removal", size: "user", text: "2026-02-process-boost-on-voice" };
 let closure_14 = 1.7777777777777777;
 let obj1 = arg1(dependencyMap[10]);
-obj = { voiceMemberItemRow: { "Bool(false)": "2026-06-server-ladder", "Bool(false)": "user", "Bool(false)": 9000000, "Bool(false)": false, "Bool(false)": "2026-05-av1-bitrate-tuning" }, innerRow: { "Null": "center", "Null": "center" }, activityDetails: {}, appIcon: obj };
+obj = { voiceMemberItemRow: { alignItems: "2026-06-server-ladder", marginRight: "user", marginLeft: 9000000, height: false, width: "2026-05-av1-bitrate-tuning" }, innerRow: { onAppear: "center", onDisappear: "center" }, activityDetails: {}, appIcon: obj };
 obj = {};
 const merged = Object.assign(obj);
 obj["tintColor"] = importDefault(dependencyMap[11]).colors.INTERACTIVE_TEXT_DEFAULT;
 obj.appIconPlaceholder = obj;
-obj.centerGroup = { flexDirection: false, padding: false };
+obj.centerGroup = { right: false, type: false };
 obj.applicationName = { lineHeight: 20 };
 obj.joinButton = { alignSelf: "center" };
-obj.joinButtonPill = {};
-obj.joinButtonContainer = {};
+obj.joinButtonPill = { "Null": 1396, "Null": 256 };
+obj.joinButtonContainer = { "Null": 3486660019129848400000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, "Null": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000013955440167298031, "Null": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002049560045110309, "Null": 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000013192017920615884, "Null": 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000020502720618902154 };
 obj1 = { height: arg1(dependencyMap[9]).AVATAR_SIZE_MAP[XSMALL] };
 obj.overflow = obj1;
 const tmp4 = arg1(dependencyMap[8]);
@@ -138,7 +138,7 @@ export default function VoiceMemberEmbeddedActivity(onItemPress) {
       const obj5 = { style: iconSource === importDefault(dependencyMap[18]) ? tmp.appIconPlaceholder : tmp.appIcon, source: iconSource };
       const items5 = [callback2(stateFromStores, obj5), , ];
       const obj6 = { style: tmp.centerGroup };
-      const obj7 = { style: tmp.applicationName, children: name };
+      const obj7 = { "Null": null, "Null": null, "Null": null, style: tmp.applicationName, children: name };
       obj6.children = callback2(arg1(dependencyMap[22]).Text, obj7);
       items5[1] = callback2(embeddedActivityLocationGuildId, obj6);
       const obj8 = { offsetAmount: -6 };

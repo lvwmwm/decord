@@ -1,10 +1,10 @@
-// Module ID: 11976
-// Function ID: 92593
+// Module ID: 11983
+// Function ID: 92616
 // Name: createNitroSuggestedSku
 // Dependencies: []
 // Exports: buildReorderedNitroFirstWishlistItems, buildReorderedWishlistData, createNitroSuggestedSku, isEligibleWishlistItemOnMobile
 
-// Module 11976 (createNitroSuggestedSku)
+// Module 11983 (createNitroSuggestedSku)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 let closure_5 = arg1(dependencyMap[2]).isCollectiblesWishlistItemRecord;

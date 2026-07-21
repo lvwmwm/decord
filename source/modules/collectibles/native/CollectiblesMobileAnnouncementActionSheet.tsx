@@ -1,10 +1,10 @@
-// Module ID: 15492
-// Function ID: 118256
+// Module ID: 15499
+// Function ID: 118280
 // Name: CatEarsBackdrop
 // Dependencies: []
 // Exports: default
 
-// Module 15492 (CatEarsBackdrop)
+// Module 15499 (CatEarsBackdrop)
 let StyleSheet;
 function CatEarsBackdrop() {
   const tmp = callback3();
@@ -52,7 +52,7 @@ function FeatureRow(arg0) {
   const tmp = callback3();
   let obj = { style: tmp.featureRow };
   const items = [icon, ];
-  obj = { INTEGRATION_CREATE: true, ConstraintReasonCode: true, style: tmp.featureText, children: text };
+  obj = { style: tmp.featureText, children: text };
   items[1] = callback(arg1(dependencyMap[13]).Text, obj);
   obj.children = items;
   return callback2(closure_5, obj);
@@ -73,15 +73,15 @@ obj.mascotContainer = obj;
 const merged1 = Object.assign(StyleSheet.absoluteFillObject);
 obj.mascotLayer = {};
 obj.mascotImage = {};
-obj.framePreviewImage = {};
+obj.framePreviewImage = { 718597949: "png", 290635694: "row", 1636832248: "space-evenly" };
 const obj1 = {};
 const tmp3 = arg1(dependencyMap[5]);
 obj.container = { padding: importDefault(dependencyMap[7]).space.PX_16, paddingTop: importDefault(dependencyMap[7]).space.PX_24, gap: importDefault(dependencyMap[7]).space.PX_16 };
 obj.headerText = { textAlign: "center" };
-const obj3 = { -9223372036854775808: true, filter: true, gap: importDefault(dependencyMap[7]).space.PX_16 };
-obj.featureRow = obj3;
-obj.featureText = { flex: 1 };
 const obj2 = { padding: importDefault(dependencyMap[7]).space.PX_16, paddingTop: importDefault(dependencyMap[7]).space.PX_24, gap: importDefault(dependencyMap[7]).space.PX_16 };
+obj.featureRow = { gap: importDefault(dependencyMap[7]).space.PX_16 };
+obj.featureText = { flex: 1 };
+const obj3 = { gap: importDefault(dependencyMap[7]).space.PX_16 };
 obj.featureRows = { gap: importDefault(dependencyMap[7]).space.PX_32 };
 let closure_11 = obj.createStyles(obj);
 let closure_12 = { code: "function CollectiblesMobileAnnouncementActionSheetTsx1(){const{animatedPosition,safeAreaTop,MASCOT_SAFE_AREA_NUDGE}=this.__closure;return{transform:[{translateY:animatedPosition.get()+safeAreaTop-MASCOT_SAFE_AREA_NUDGE}]};}" };
@@ -152,7 +152,7 @@ export default function CollectiblesMobileAnnouncementActionSheet(markAsDismisse
   obj1.accessibilityElementsHidden = true;
   obj1.importantForAccessibility = "no-hide-descendants";
   const items3 = [callback(closure_4, obj1), , , ];
-  const obj3 = { style: tmp.headerText };
+  const obj3 = { 1655478700: "<string:4131472781>", 72438626: "<string:1375731979>", 1446732292: "<string:61359501>", style: tmp.headerText };
   const intl3 = tmp2(tmp3[14]).intl;
   obj3.children = intl3.string(arg1(closure_2[14]).t.vRCvqo);
   items3[1] = callback(arg1(closure_2[13]).Text, obj3);

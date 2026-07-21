@@ -1,10 +1,10 @@
-// Module ID: 11884
-// Function ID: 92050
+// Module ID: 11891
+// Function ID: 92073
 // Name: determineEmojiType
 // Dependencies: []
 // Exports: default
 
-// Module 11884 (determineEmojiType)
+// Module 11891 (determineEmojiType)
 function determineEmojiType(emojiInfo) {
   let tmp = null;
   if (null != emojiInfo) {

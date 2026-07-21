@@ -1,10 +1,10 @@
-// Module ID: 10738
-// Function ID: 83453
+// Module ID: 10744
+// Function ID: 83476
 // Name: SingleStream
 // Dependencies: []
 // Exports: default
 
-// Module 10738 (SingleStream)
+// Module 10744 (SingleStream)
 importAll(dependencyMap[0]);
 ({ toggleFocus: closure_3, resetFocus: closure_4 } = arg1(dependencyMap[1]));
 const jsx = arg1(dependencyMap[2]).jsx;

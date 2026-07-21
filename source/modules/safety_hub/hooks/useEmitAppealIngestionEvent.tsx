@@ -1,18 +1,18 @@
-// Module ID: 11027
-// Function ID: 85887
+// Module ID: 11032
+// Function ID: 85908
 // Name: useEmitAppealIngestionEvent
 // Dependencies: [0, 0, 0, 0, 0, 0, 0, 0, 0]
 // Exports: useEmitAppealIngestionEvent
 
-// Module 11027 (useEmitAppealIngestionEvent)
-import closure_3 from "result";
-import closure_4 from "result";
-import { SafetyHubAnalyticsActionSource as closure_5 } from "result";
-import result from "result";
-import result from "result";
+// Module 11032 (useEmitAppealIngestionEvent)
+import closure_3 from "__exportStarResult1";
+import closure_4 from "__exportStarResult1";
+import { SafetyHubAnalyticsActionSource as closure_5 } from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
 
-({ EMPTY_STRING_SNOWFLAKE_ID: closure_6, AnalyticEvents: closure_7 } = result);
-result = result.fileFinishedImporting("modules/safety_hub/hooks/useEmitAppealIngestionEvent.tsx");
+({ EMPTY_STRING_SNOWFLAKE_ID: closure_6, AnalyticEvents: closure_7 } = __exportStarResult1);
+const result = __exportStarResult1.fileFinishedImporting("modules/safety_hub/hooks/useEmitAppealIngestionEvent.tsx");
 
 export const useEmitAppealIngestionEvent = function useEmitAppealIngestionEvent() {
   const items = [closure_4];

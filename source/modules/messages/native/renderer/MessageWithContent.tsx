@@ -1,10 +1,10 @@
-// Module ID: 7615
-// Function ID: 61006
+// Module ID: 7619
+// Function ID: 61018
 // Name: generateMessageRowData
 // Dependencies: []
 // Exports: generateMessageRowData
 
-// Module 7615 (generateMessageRowData)
+// Module 7619 (generateMessageRowData)
 let closure_3 = importDefault(dependencyMap[0]);
 const RowType = arg1(dependencyMap[1]).RowType;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/messages/native/renderer/MessageWithContent.tsx");

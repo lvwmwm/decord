@@ -1,9 +1,9 @@
-// Module ID: 13750
-// Function ID: 103989
+// Module ID: 13757
+// Function ID: 104012
 // Name: toggle
 // Dependencies: []
 
-// Module 13750 (toggle)
+// Module 13757 (toggle)
 let closure_3 = importAll(dependencyMap[0]);
 const FriendSourceFlags = arg1(dependencyMap[2]).FriendSourceFlags;
 let obj = arg1(dependencyMap[7]);

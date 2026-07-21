@@ -1,10 +1,10 @@
-// Module ID: 12975
-// Function ID: 98806
+// Module ID: 12982
+// Function ID: 98829
 // Name: EmptyState
 // Dependencies: []
 // Exports: ThemedEmptyState
 
-// Module 12975 (EmptyState)
+// Module 12982 (EmptyState)
 class EmptyState {
   constructor(arg0) {
     ({ source, title, callToAction } = global);
@@ -92,7 +92,7 @@ const merged1 = Object.assign(importDefault(dependencyMap[5])(Fonts.PRIMARY_MEDI
 obj1["textAlign"] = "center";
 obj.body = obj1;
 obj.image = { marginBottom: 32 };
-obj.cta = { dampingRatio: 52881784.83212474, stiffness: 0.0000000000000000000000000000000000000000000000000000000000000000000000011319598867188059 };
+obj.cta = { height: 52881784.83212474, zIndex: 0.0000000000000000000000000000000000000000000000000000000000000000000000011319598867188059 };
 let closure_7 = obj.createStyles(obj);
 const importDefaultResult1 = importDefault(dependencyMap[5]);
 const result = arg1(dependencyMap[10]).fileFinishedImporting("design/void/RefreshEmptyState/native/RefreshEmptyState.tsx");

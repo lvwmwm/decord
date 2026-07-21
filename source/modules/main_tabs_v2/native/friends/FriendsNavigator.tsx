@@ -1,10 +1,10 @@
-// Module ID: 15298
-// Function ID: 116371
+// Module ID: 15305
+// Function ID: 116395
 // Name: RequestsSettingsModalButton
 // Dependencies: []
 // Exports: default
 
-// Module 15298 (RequestsSettingsModalButton)
+// Module 15305 (RequestsSettingsModalButton)
 function RequestsSettingsModalButton(onPress) {
   let obj = { isModal: true };
   obj = { source: importDefault(dependencyMap[8]), onPress: onPress.onPress };

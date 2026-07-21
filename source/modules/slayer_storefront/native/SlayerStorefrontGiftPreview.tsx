@@ -1,10 +1,10 @@
-// Module ID: 8198
-// Function ID: 64845
+// Module ID: 8202
+// Function ID: 64857
 // Name: WarningBox
 // Dependencies: []
 // Exports: default
 
-// Module 8198 (WarningBox)
+// Module 8202 (WarningBox)
 function WarningBox(application) {
   let canStartAuthorization;
   let hasAccountLinked;
@@ -53,7 +53,7 @@ importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 ({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[2]));
 const tmp3 = arg1(dependencyMap[2]);
-let closure_6 = arg1(dependencyMap[3]).createStyles({ container: {}, text: { standardDeviation: 6, color: "focus_mode_expires_at_ms" }, warningBox: { marginHorizontal: 16 } });
+let closure_6 = arg1(dependencyMap[3]).createStyles({ container: {}, text: { "Null": 6, "Null": "focus_mode_expires_at_ms" }, warningBox: { marginHorizontal: 16 } });
 const obj = arg1(dependencyMap[3]);
 const result = arg1(dependencyMap[9]).fileFinishedImporting("modules/slayer_storefront/native/SlayerStorefrontGiftPreview.tsx");
 

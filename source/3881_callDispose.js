@@ -25,7 +25,7 @@ arg5.callDispose = function callDispose(closure_0) {
           let _Object = Object;
           let tmp3 = arg0;
           let tmp4 = tmp8;
-          obj = { <string:1375686655>: 120, <string:1325354239>: 24, <string:1392464127>: 8, value: undefined };
+          obj = { q1L2v8: 60, bodyWithMessage: 0, focH1t: 0, value: undefined };
           let definePropertyResult = Object.defineProperty(obj, tmp9, obj);
           // continue
         }
@@ -36,9 +36,9 @@ arg5.callDispose = function callDispose(closure_0) {
     continue;
   }
   obj = {
-    <string:1375686655>: 120,
-    <string:1325354239>: 24,
-    <string:1392464127>: 8,
+    q1L2v8: 60,
+    bodyWithMessage: 0,
+    focH1t: 0,
     value() {
       return "[disposed HybridObject]";
     }

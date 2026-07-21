@@ -1,10 +1,10 @@
-// Module ID: 12227
-// Function ID: 93838
+// Module ID: 12234
+// Function ID: 93861
 // Name: maybeOpenSpoilerGateForVoiceChannel
 // Dependencies: []
 // Exports: maybeOpenSpoilerGateForVoiceChannel
 
-// Module 12227 (maybeOpenSpoilerGateForVoiceChannel)
+// Module 12234 (maybeOpenSpoilerGateForVoiceChannel)
 let closure_3 = importDefault(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/spoiler_channels/maybeOpenSpoilerGateForVoiceChannel.native.tsx");

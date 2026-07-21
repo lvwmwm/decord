@@ -1,10 +1,10 @@
-// Module ID: 14939
-// Function ID: 112468
+// Module ID: 14946
+// Function ID: 112492
 // Name: GuildRoleSubscriptionTierTemplateUpsellActionSheet
 // Dependencies: []
 // Exports: default
 
-// Module 14939 (GuildRoleSubscriptionTierTemplateUpsellActionSheet)
+// Module 14946 (GuildRoleSubscriptionTierTemplateUpsellActionSheet)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 const View = arg1(dependencyMap[2]).View;
@@ -16,12 +16,12 @@ const tmp2 = arg1(dependencyMap[4]);
 let closure_12 = { videoURI: "https://cdn.discordapp.com/assets/server-subscription-tier-template/upsell.mov" };
 let obj = arg1(dependencyMap[7]);
 obj = {};
-obj = { abortEarly: false, convert: false, allowUnknown: false, skipFunctions: false, backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_BASE_LOW };
+obj = { -1362229764: false, -349726597: false, 140694625: false, -433827239: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000020304490458102812, backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_BASE_LOW };
 obj.container = obj;
 const tmp3 = arg1(dependencyMap[6]);
 obj.videoContainer = { borderRadius: importDefault(dependencyMap[8]).radii.sm, overflow: "hidden" };
-obj.info = {};
-obj.title = {};
+obj.info = { "Null": "center", "Null": "center" };
+obj.title = { "Null": null, "Null": "absolute" };
 obj.subtitle = {};
 obj.footer = { marginTop: 32 };
 obj.button = { marginBottom: 8 };
@@ -62,7 +62,7 @@ export default function GuildRoleSubscriptionTierTemplateUpsellActionSheet(arg0)
   obj1.children = callback2(importDefault(closure_2[13]), { style: tmp.videoContainer, src: closure_12, width: first, height: first / 1.7289156626506024, muted: true, paused: stateFromStores, ariaHidden: true });
   const items2 = [callback2(View, obj1), , ];
   const obj3 = { style: tmp.info };
-  const obj4 = { debugLayout: 2673, EMPTY_SEARCH_QUERY_STRING: -2028388096, minWidth: -1184825342, style: tmp.title };
+  const obj4 = { 0: 2673, 0: -2031795968, 0: -1184825342, style: tmp.title };
   const intl2 = arg1(closure_2[12]).intl;
   obj4.children = intl2.string(arg1(closure_2[12]).t.gCgirr);
   const items3 = [callback2(arg1(closure_2[14]).Text, obj4), ];

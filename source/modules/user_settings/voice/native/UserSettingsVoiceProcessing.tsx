@@ -1,10 +1,10 @@
-// Module ID: 10705
-// Function ID: 83339
+// Module ID: 10711
+// Function ID: 83362
 // Name: VoiceProcessingOptions
 // Dependencies: []
 // Exports: default
 
-// Module 10705 (VoiceProcessingOptions)
+// Module 10711 (VoiceProcessingOptions)
 class VoiceProcessingOptions {
   constructor() {
     tmp = closure_8();
@@ -70,7 +70,7 @@ class VoiceProcessingOptions {
       tmp17 = jsxs;
       tmp18 = View;
       Text = arg1(dependencyMap[13]).Text;
-      obj6 = { INTEGRATION_CREATE: true, ConstraintReasonCode: true };
+      obj6 = {};
       tmp20 = arg1;
       tmp21 = dependencyMap;
       intl7 = arg1(dependencyMap[11]).intl;

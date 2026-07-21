@@ -1,10 +1,10 @@
-// Module ID: 7402
-// Function ID: 59491
+// Module ID: 7406
+// Function ID: 59502
 // Name: createSubscriptionInvoicePreview
 // Dependencies: []
 // Exports: getItemUnitPriceWithDiscount, useFetchSubscriptionGiftInvoicePreview, useFetchSubscriptionInvoicePreview, useGetSubscriptionInvoice
 
-// Module 7402 (createSubscriptionInvoicePreview)
+// Module 7406 (createSubscriptionInvoicePreview)
 function createSubscriptionInvoicePreview() {
   return _createSubscriptionInvoicePreview(...arguments);
 }
@@ -164,7 +164,7 @@ async function _getSubscriptionInvoice(arg0, arg1) {
       return null;
     } else {
       const HTTP = callback(closure_2[7]).HTTP;
-      const obj = { CONVERSATIONS: null, replace: null, push: null, url: closure_12.BILLING_SUBSCRIPTION_INVOICE(subscriptionId) };
+      const obj = { lc: "ERROR", type: "ERROR", end: "NOT_RESPONDER", url: closure_12.BILLING_SUBSCRIPTION_INVOICE(subscriptionId) };
       return closure_11.createInvoiceFromServer(yield HTTP.get(obj).body);
     }
   };
@@ -226,7 +226,7 @@ function getPaymentSourceIdFromInvoiceRecord(checkoutContext) {
   }
   return tmp2;
 }
-let closure_3 = [];
+let closure_3 = [1415363433];
 let closure_4 = importDefault(dependencyMap[0]);
 let closure_5 = importDefault(dependencyMap[1]);
 let closure_6 = importDefault(dependencyMap[2]);

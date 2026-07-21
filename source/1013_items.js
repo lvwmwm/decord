@@ -1,11 +1,11 @@
 // Module ID: 1013
 // Function ID: 11040
 // Name: items
-// Dependencies: [66781184, 68091904, 963969024, 1895825408, 436207616, 4143972355]
+// Dependencies: []
 
 // Module 1013 (items)
 Object.defineProperty(arg5, Symbol.toStringTag, { value: "Module" });
-const items = ["HTMLUnknownElement", "IDBDatabase"];
+const items = [];
 arg5.FCPThresholds = items;
 arg5.onFCP = function onFCP(arg0) {
   const arg1 = arg0;

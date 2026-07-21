@@ -1,10 +1,10 @@
-// Module ID: 8499
-// Function ID: 67834
+// Module ID: 8503
+// Function ID: 67846
 // Name: UserProfileOverscrollBanner
 // Dependencies: []
 // Exports: default
 
-// Module 8499 (UserProfileOverscrollBanner)
+// Module 8503 (UserProfileOverscrollBanner)
 importAll(dependencyMap[0]);
 const StyleSheet = arg1(dependencyMap[1]).StyleSheet;
 ({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[2]));

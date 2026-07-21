@@ -1,24 +1,24 @@
-// Module ID: 15083
-// Function ID: 113716
+// Module ID: 15090
+// Function ID: 113740
 // Name: AnnouncementMessageRowWrapper
 // Dependencies: [0, 0, 0, 0, 0, 4294967295, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 // Exports: default
 
-// Module 15083 (AnnouncementMessageRowWrapper)
-import importAllResult from "result";
-import { View } from "result";
-import closure_5 from "result";
-import closure_6 from "result";
-import closure_7 from "result";
-import closure_9 from "result";
-import { ITEM_PADDING } from "result";
-import result from "result";
-import result from "result";
-import result from "result";
+// Module 15090 (AnnouncementMessageRowWrapper)
+import importAllResult from "__exportStarResult1";
+import { View } from "__exportStarResult1";
+import closure_5 from "__exportStarResult1";
+import closure_6 from "__exportStarResult1";
+import closure_7 from "__exportStarResult1";
+import closure_9 from "__exportStarResult1";
+import { ITEM_PADDING } from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
 
 let closure_8 = importDefault(dependencyMap[5]);
-({ jsx: closure_11, jsxs: closure_12 } = result);
-let closure_13 = result.createICYMIStyles((inset) => {
+({ jsx: closure_11, jsxs: closure_12 } = __exportStarResult1);
+let closure_13 = __exportStarResult1.createICYMIStyles((inset) => {
   let obj = { pressable: obj };
   obj = { flex: 1, paddingLeft: inset.inset };
   obj = { marginVertical: inset.margin, gap: importDefault(dependencyMap[10]).space.PX_8, paddingHorizontal: ITEM_PADDING, marginLeft: inset.inset };
@@ -63,7 +63,7 @@ let closure_14 = importAllResult.memo((message) => {
   const callback = importAllResult.useCallback(() => {
     let obj = guild(channel[13]);
     obj.itemInteracted(message.id, "announcement", "long_press_channel");
-    obj = { itemId: message.id, itemType: "announcement", actionParameters: { "Bool(false)": "cf5de2318a88a970dc053388278c5a16", "Bool(false)": "lt.messages.cf5de2318a88a970dc053388278c5a16.compiled.messages", "Bool(false)": "jsona", "Bool(false)": null } };
+    obj = { itemId: message.id, itemType: "announcement", actionParameters: { "Bool(false)": true, "Bool(false)": "/assets/.cache/intl/bW9kdWxlcy9ndWlsZF9zZXR0aW5ncy9zZXJ2ZXJfbW9uZXRpemF0aW9uL3RhZ3Mvd2Vi", "Bool(false)": null, "Bool(false)": "5f875040d852178b5dc02bb996f5535d" } };
     guild(channel[13]).feedItemActioned(obj);
     const obj2 = guild(channel[13]);
     const result = message(channel[14]).openChannelLongPressActionSheet(channel.id);
@@ -72,7 +72,7 @@ let closure_14 = importAllResult.memo((message) => {
   const callback1 = importAllResult.useCallback(() => {
     let obj = guild(channel[13]);
     obj.itemInteracted(message.id, "announcement", "long_press_message");
-    obj = { itemId: message.id, itemType: "announcement", actionParameters: {} };
+    obj = { itemId: message.id, itemType: "announcement", actionParameters: { "Bool(false)": 318767366, "Bool(false)": 1358954813, "Bool(false)": 1700917688, "Bool(false)": -984532383 } };
     guild(channel[13]).feedItemActioned(obj);
     const user = user.getUser(message.author.id);
     const obj2 = guild(channel[13]);
@@ -82,7 +82,7 @@ let closure_14 = importAllResult.memo((message) => {
   const callback2 = importAllResult.useCallback(() => {
     let obj = guild(channel[13]);
     obj.itemInteracted(message.id, "announcement", "press_message");
-    obj = { itemId: message.id, itemType: "announcement", actionParameters: {} };
+    obj = { itemId: message.id, itemType: "announcement", actionParameters: { "Bool(false)": -0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000009875954114321378, "Bool(false)": 353076186411522100000000000000000000, "Bool(false)": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000013053759670591748, "Bool(false)": -9518929275348370000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 } };
     guild(channel[13]).feedItemActioned(obj);
     if (null != message) {
       obj = { id: message.id };
@@ -121,7 +121,7 @@ let closure_14 = importAllResult.memo((message) => {
   obj.children = items5;
   return callback2(tmp10, obj);
 });
-result = result.fileFinishedImporting("modules/icymi/native/AnnouncementMessageRow.tsx");
+const result = __exportStarResult1.fileFinishedImporting("modules/icymi/native/AnnouncementMessageRow.tsx");
 
 export default function AnnouncementMessageRowWrapper(message) {
   let unread;

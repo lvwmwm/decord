@@ -1,10 +1,10 @@
-// Module ID: 10180
-// Function ID: 78659
+// Module ID: 10186
+// Function ID: 78677
 // Name: copyGuildChannelOrThreadLink
 // Dependencies: []
 // Exports: copyGuildChannelOrThreadLink
 
-// Module 10180 (copyGuildChannelOrThreadLink)
+// Module 10186 (copyGuildChannelOrThreadLink)
 const _module = require(dependencyMap[3]);
 const result = _module.fileFinishedImporting("modules/channel/native/ChannelActionSheetUtils.tsx");
 

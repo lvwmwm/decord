@@ -1,9 +1,9 @@
-// Module ID: 10584
-// Function ID: 82598
+// Module ID: 10590
+// Function ID: 82621
 // Name: useBaseActivityView
 // Dependencies: []
 
-// Module 10584 (useBaseActivityView)
+// Module 10590 (useBaseActivityView)
 function useBaseActivityView(orientationLockState) {
   orientationLockState = orientationLockState.orientationLockState;
   const arg1 = orientationLockState;
@@ -114,7 +114,7 @@ let closure_10 = arg1(dependencyMap[5]).OBEY_SILENT_HARDWARE_SWITCH_APP_IDS;
 const tmp3 = arg1(dependencyMap[4]);
 ({ jsx: closure_11, Fragment: closure_12, jsxs: closure_13 } = arg1(dependencyMap[6]));
 const tmp4 = arg1(dependencyMap[6]);
-let closure_14 = arg1(dependencyMap[7]).createStyles({ loadingContainer: { -9223372036854775808: 323420161, 0: -2104950783 } });
+let closure_14 = arg1(dependencyMap[7]).createStyles({ loadingContainer: { markAsSpoilerTitle: null, keyboardAppearance: null } });
 const memoResult = importAllResult.memo(function EmbeddedActivityViewInner(portraitSafeAreasConfig) {
   let channel;
   let channel2;

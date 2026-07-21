@@ -1,10 +1,10 @@
-// Module ID: 5663
-// Function ID: 48598
+// Module ID: 5665
+// Function ID: 48641
 // Name: isCurrentUserTeen
 // Dependencies: []
 // Exports: isCurrentUserTeen
 
-// Module 5663 (isCurrentUserTeen)
+// Module 5665 (isCurrentUserTeen)
 let closure_0 = importDefault(dependencyMap[0]);
 const result = arg1(dependencyMap[1]).fileFinishedImporting("modules/self_mod/SelfModUtils.tsx");
 

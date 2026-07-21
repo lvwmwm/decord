@@ -1,10 +1,10 @@
-// Module ID: 12492
-// Function ID: 95760
+// Module ID: 12499
+// Function ID: 95783
 // Name: commonTriggerPointConfiguration
-// Dependencies: [0, 0, 4294967295]
+// Dependencies: []
 
-// Module 12492 (commonTriggerPointConfiguration)
-const commonTriggerPointConfiguration = new require("result").CommonTriggerPointConfiguration([], require("result").CommonTriggerPoints.CONNECTION_OPEN_MOBILE, { location: "app open mobile" });
+// Module 12499 (commonTriggerPointConfiguration)
+const commonTriggerPointConfiguration = new require(dependencyMap[1]).CommonTriggerPointConfiguration([], require(dependencyMap[0]).CommonTriggerPoints.CONNECTION_OPEN_MOBILE, { location: "app open mobile" });
 const _module = require(dependencyMap[2]);
 const result = _module.fileFinishedImporting("modules/experiments/trigger_points/native/MobileConnectionOpenTriggerPoint.tsx");
 

@@ -11,7 +11,7 @@ function instrumentStateGraphCompile(compile, arg1) {
     apply(arg0, arg1, arg2) {
       arg1 = arg0;
       let obj = arg1(arg1[2]);
-      obj = { <string:3177735406>: "Array", <string:2589106427>: "isArray" };
+      obj = {};
       const tmp = callback({}, arg1(arg1[3]).SEMANTIC_ATTRIBUTE_SENTRY_ORIGIN, arg1(arg1[4]).LANGGRAPH_ORIGIN);
       obj.attributes = callback(callback(callback({}, arg1(arg1[3]).SEMANTIC_ATTRIBUTE_SENTRY_ORIGIN, arg1(arg1[4]).LANGGRAPH_ORIGIN), arg1(arg1[3]).SEMANTIC_ATTRIBUTE_SENTRY_OP, "gen_ai.create_agent"), arg1(arg1[5]).GEN_AI_OPERATION_NAME_ATTRIBUTE, "create_agent");
       return obj.startSpan(obj, (setAttribute) => {
@@ -47,7 +47,7 @@ function instrumentStateGraphCompile(compile, arg1) {
                 arg2 = arg1;
                 const arg3 = arg2;
                 let obj = arg1(arg2[2]);
-                obj = { <string:3177735406>: null, <string:2589106427>: 0 };
+                obj = {};
                 const tmp = callback({}, arg1(arg2[3]).SEMANTIC_ATTRIBUTE_SENTRY_ORIGIN, arg1(arg2[4]).LANGGRAPH_ORIGIN);
                 obj.attributes = callback(callback(callback({}, arg1(arg2[3]).SEMANTIC_ATTRIBUTE_SENTRY_ORIGIN, arg1(arg2[4]).LANGGRAPH_ORIGIN), arg1(arg2[3]).SEMANTIC_ATTRIBUTE_SENTRY_OP, arg1(arg2[5]).GEN_AI_INVOKE_AGENT_OPERATION_ATTRIBUTE), arg1(arg2[5]).GEN_AI_OPERATION_NAME_ATTRIBUTE, "invoke_agent");
                 return obj.startSpan(obj, () => { ... }());

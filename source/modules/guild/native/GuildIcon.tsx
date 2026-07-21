@@ -1,9 +1,9 @@
-// Module ID: 5511
-// Function ID: 46877
+// Module ID: 5513
+// Function ID: 46919
 // Name: makeSizeStyle
 // Dependencies: []
 
-// Module 5511 (makeSizeStyle)
+// Module 5513 (makeSizeStyle)
 let LARGE;
 let NORMAL;
 let SMALL;
@@ -59,7 +59,7 @@ let closure_5 = arg1(dependencyMap[2]).ExpressionSourceGuildRecord;
 const Fonts = arg1(dependencyMap[4]).Fonts;
 const jsx = arg1(dependencyMap[5]).jsx;
 let obj = { XXXSMALL: "XXXSMALL", XXSMALL_12: "XXSMALL_12", XXSMALL: "XXSMALL", XSMALL_20: "XSMALL_20", XSMALL: "XSMALL", SMALL: "SMALL", SMALL_32: "SMALL_32", SMALL_36: "SMALL_36", NORMAL: "NORMAL", LARGE: "LARGE", XLARGE: "XLARGE", XXLARGE: "XXLARGE" };
-let closure_10 = { [obj.XXXSMALL]: ["<string:2576980378>", "<string:1071225241>", "<string:3435973837>", "<string:1072483532>", "<string:1369111633>", "<string:375562467>"], [obj.XXSMALL_12]: [null, null, null, null, null, null], [obj.XXSMALL]: [true, true, true, true, true, true], [obj.XSMALL_20]: [], [obj.XSMALL]: [], [obj.SMALL]: [], [obj.SMALL_32]: [], [obj.SMALL_36]: [], [obj.NORMAL]: [], [obj.LARGE]: [], [obj.XLARGE]: [], [obj.XXLARGE]: [] };
+let closure_10 = { [obj.XXXSMALL]: [], [obj.XXSMALL_12]: [null, null, null, null, null, null], [obj.XXSMALL]: ["<string:1022548678>", "<string:3829199442>", "<string:1367040452>", "<string:3227622935>", "<string:110418777>", "<string:1769368286>"], [obj.XSMALL_20]: ["top", "o", "ddd", "__initData", "loadJsonAsset", "to"], [obj.XSMALL]: [false, false, false, "hsl", "hsv", "hsl"], [obj.SMALL]: [false, false, false, "hsl", "hsv", "hsl"], [obj.SMALL_32]: [false, false, false, "hsl", "hsv", "hsl"], [obj.SMALL_36]: [false, false, false, "hsl", "hsv", "hsl"], [obj.NORMAL]: [false, false, false, "hsl", "hsv", "hsl"], [obj.LARGE]: [false, false, false, "hsl", "hsv", "hsl"], [obj.XLARGE]: [false, false, false, "hsl", "hsv", "hsl"], [obj.XXLARGE]: [false, false, false, "hsl", "hsv", "hsl"] };
 obj = { [obj.XXXSMALL]: 10, [obj.XXSMALL_12]: 12, [obj.XXSMALL]: 16, [obj.XSMALL_20]: 20, [obj.XSMALL]: 24, [obj.SMALL]: 30, [obj.SMALL_32]: 32, [obj.SMALL_36]: 36, [obj.NORMAL]: 40, [obj.LARGE]: 48, [obj.XLARGE]: 64, [obj.XXLARGE]: 80 };
 let obj3 = arg1(dependencyMap[6]);
 const obj1 = { guildIcon: {}, [XXXSMALL]: require("module_10"), [XXSMALL_12]: require("module_12"), [XXSMALL]: require("module_16"), [XSMALL_20]: require("module_20"), [XSMALL]: require("module_24"), [SMALL]: require("module_30"), [SMALL_32]: require("module_32"), [SMALL_36]: require("module_36"), [NORMAL]: require("module_40"), [LARGE]: require("module_48"), [XLARGE]: require("module_64"), [XXLARGE]: require("module_80") };
@@ -252,9 +252,9 @@ const memoResult = importAllResult.memo(function GuildIconInner(guild) {
   }, items1);
   const wrapperStyle = memo.wrapperStyle;
   if (tmp16) {
-    obj = { 1499681941: null, 2005497740: null, 2013427348: null, style: wrapperStyle };
+    obj = { style: wrapperStyle };
     let tmp31Result = tmp31(tmp32[11]);
-    obj = { 0: "image", 9223372036854775807: "number", 9223372036854775807: "number", 9223372036854775807: "number", 9223372036854775807: "color", 9223372036854775807: "color", style: tmp29, children: acronym };
+    obj = { arrow: "image", icon: "number", positionBottom: "number", positionRight: "number", text: "color", state: "color", style: tmp29, children: acronym };
     obj.children = tmp30(arg1(tmp32[12]).NativeText, obj);
     let tmp30Result = tmp30(tmp31Result, obj);
   } else {

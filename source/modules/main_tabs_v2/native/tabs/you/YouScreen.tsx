@@ -1,10 +1,10 @@
-// Module ID: 15336
-// Function ID: 116813
+// Module ID: 15343
+// Function ID: 116837
 // Name: handleBackButtonPress
 // Dependencies: []
 // Exports: default
 
-// Module 15336 (handleBackButtonPress)
+// Module 15343 (handleBackButtonPress)
 function handleBackButtonPress() {
   const navigation = arg1(dependencyMap[20]).getRootNavigationRef();
   if (null != navigation) {
@@ -486,7 +486,7 @@ function UnconnectedYouScreen(arg0) {
           items16[2] = bannerAnimatedStyle;
           obj22.style = items16;
           merged = callback2;
-          const obj24 = { skuId: skuId2, paused: tmp24 };
+          const obj24 = { height: 1000, width: 600000, alignItems: "MESSAGE_CREATE", skuId: skuId2, paused: tmp24 };
           const items17 = [callback2(importDefault(closure_2[62]), obj24), , ];
           merged = callback2;
           merged = BackButton;
@@ -643,7 +643,7 @@ let closure_23 = arg1(dependencyMap[16]).createStyles((marginTop) => {
   obj2 = { flex: 1 };
   const merged2 = Object.assign(obj);
   obj.scrollView = obj2;
-  obj.profileEffectLayer = { "Bool(false)": true, "Bool(false)": true, "Bool(false)": true };
+  obj.profileEffectLayer = {};
   obj.banner = { minHeight: marginTop };
   const obj3 = {};
   const tmp10 = importDefault(dependencyMap[19]);
@@ -652,14 +652,14 @@ let closure_23 = arg1(dependencyMap[16]).createStyles((marginTop) => {
   obj.gifTag = obj3;
   const alphaResult = importDefault(dependencyMap[19])(importDefault(dependencyMap[18]).unsafe_rawColors.WHITE).alpha(0.9);
   obj.gifTagText = { color: importDefault(dependencyMap[18]).unsafe_rawColors.PRIMARY_800, fontSize: 14 };
-  const obj5 = { pos: null, borderRadius: null, height: null, marginTop };
+  const obj5 = { onChangeContentSize: "default", onEndBlur: "done", onBeginFocus: "go", marginTop };
   obj.content = obj5;
   return obj;
 });
 const obj2 = arg1(dependencyMap[16]);
 let closure_24 = arg1(dependencyMap[16]).createStyles(() => {
   let obj = {};
-  obj = { adjustToInterfaceOrientation: "/assets/design/components/Illustration/native/redesign/generated/images", KICK_MEMBERS: 292, getButtonDefaultTextVariant: 182, formatWatchTaskTime: null, STREAM_FEEDBACK_MODAL: "580ec4f595fa69a80ec70eff21ac3c71", scrollViewProps: "webhook_empty_darker", marginTop: importDefault(dependencyMap[18]).space.PX_4, left: importDefault(dependencyMap[18]).space.PX_16 };
+  obj = { marginTop: importDefault(dependencyMap[18]).space.PX_4, left: importDefault(dependencyMap[18]).space.PX_16 };
   obj.backButton = obj;
   return obj;
 });
@@ -717,7 +717,7 @@ export default function YouScreen(initialTab) {
   obj = { wishlistId: stateFromStores2, userId: id };
   const fetchWishlist = arg1(dependencyMap[66]).useFetchWishlist(obj);
   const callback = React.useCallback(() => {
-    state.setState({ scrollViewProps: "/assets/.cache/intl/bW9kdWxlcy9jaGVja291dC9tZXNzYWdlcw==", cacheTransaction: null });
+    state.setState({});
     stateFromStores(memo[67]).openUserSettings();
   }, []);
   closure_3 = callback;

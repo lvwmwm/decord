@@ -222,7 +222,7 @@ export const eventFromUnknownInput = function eventFromUnknownInput(arg0, arg1, 
     data = data.data.mechanism;
   }
   if (!data) {
-    data = { alignItems: "onSwipeableLeftOpen", justifyContent: "createToken" };
+    data = { onDrawerSlide: true, onDrawerStateChanged: true };
   }
   const tmp = callback(getException(arg0, data, arg2, data), 2);
   let obj = {};

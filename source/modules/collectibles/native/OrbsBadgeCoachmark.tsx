@@ -1,10 +1,10 @@
-// Module ID: 8549
-// Function ID: 67971
+// Module ID: 8553
+// Function ID: 67983
 // Name: OrbsBadgeCoachmarkImg
 // Dependencies: []
 // Exports: default, useOrbsBadgeCoachmark
 
-// Module 8549 (OrbsBadgeCoachmarkImg)
+// Module 8553 (OrbsBadgeCoachmarkImg)
 function OrbsBadgeCoachmarkImg() {
   const tmp = callback();
   let obj = { style: tmp.coachmarkImageContainer };

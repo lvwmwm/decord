@@ -1,10 +1,10 @@
-// Module ID: 6639
-// Function ID: 50975
+// Module ID: 6645
+// Function ID: 51024
 // Name: USER_SETTINGS_CONTAINER_HORIZONTAL_PADDING
 // Dependencies: []
 // Exports: default
 
-// Module 6639 (USER_SETTINGS_CONTAINER_HORIZONTAL_PADDING)
+// Module 6645 (USER_SETTINGS_CONTAINER_HORIZONTAL_PADDING)
 let USER_SETTINGS_CONTAINER_HORIZONTAL_PADDING;
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
@@ -21,8 +21,8 @@ const tmp3 = arg1(dependencyMap[9]);
 ({ PremiumTypes: closure_17, PREMIUM_SUBSCRIPTION_APPLICATION: closure_18 } = arg1(dependencyMap[10]));
 const jsx = arg1(dependencyMap[11]).jsx;
 let obj = arg1(dependencyMap[12]);
-obj = { "Null": null, "Null": 0, "Null": 0, paddingHorizontal: USER_SETTINGS_CONTAINER_HORIZONTAL_PADDING };
-let closure_20 = obj.createStyles({ root: { flex: 1 }, container: { paddingVertical: 24, paddingHorizontal: USER_SETTINGS_CONTAINER_HORIZONTAL_PADDING }, subscriptionHeader: {}, billingInfo: {}, accountCredit: obj, loadingSpinnerContainer: { fill: 0, backgroundColor: 0, size: 0, color: 0 } });
+obj = { "Bool(true)": null, "Bool(true)": 0, "Bool(true)": 0, paddingHorizontal: USER_SETTINGS_CONTAINER_HORIZONTAL_PADDING };
+let closure_20 = obj.createStyles({ root: { flex: 1 }, container: { paddingVertical: 24, paddingHorizontal: USER_SETTINGS_CONTAINER_HORIZONTAL_PADDING }, subscriptionHeader: {}, billingInfo: {}, accountCredit: obj, loadingSpinnerContainer: { 9223372036854775807: 0, 618916762573: 0, 0: 0, 9223372036854775807: 0 } });
 const tmp4 = arg1(dependencyMap[10]);
 const result = arg1(dependencyMap[44]).fileFinishedImporting("modules/user_settings/premium/native/UserSettingsPremium.tsx");
 

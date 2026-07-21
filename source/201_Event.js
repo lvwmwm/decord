@@ -174,14 +174,14 @@ const tmp2 = () => {
   };
   return callback(Event, items);
 }();
-Object.defineProperty(tmp2, "NONE", { <string:1358909183>: 0, <string:1409241855>: 0 });
-Object.defineProperty(tmp2.prototype, "NONE", { <string:1358909183>: 0, <string:1409241855>: 0 });
-Object.defineProperty(tmp2, "CAPTURING_PHASE", { <string:1358909183>: "<string:1667301377>", <string:1409241855>: "<string:1102852099>" });
-Object.defineProperty(tmp2.prototype, "CAPTURING_PHASE", { <string:1358909183>: "<string:1667301377>", <string:1409241855>: "<string:1102852099>" });
-Object.defineProperty(tmp2, "AT_TARGET", { <string:1358909183>: "dim", <string:1409241855>: "da" });
-Object.defineProperty(tmp2.prototype, "AT_TARGET", { <string:1358909183>: "dim", <string:1409241855>: "da" });
-Object.defineProperty(tmp2, "BUBBLING_PHASE", { <string:1358909183>: "%ArrayProto_keys%", <string:1409241855>: "%MapIteratorPrototype%" });
-Object.defineProperty(tmp2.prototype, "BUBBLING_PHASE", { <string:1358909183>: "%ArrayProto_keys%", <string:1409241855>: "%MapIteratorPrototype%" });
+Object.defineProperty(tmp2, "NONE", { GIF_PICKER_TOOLTIP: "rules", GUILD_ONBOARDING_PROMPT: "message" });
+Object.defineProperty(tmp2.prototype, "NONE", { GIF_PICKER_TOOLTIP: "rules", GUILD_ONBOARDING_PROMPT: "message" });
+Object.defineProperty(tmp2, "CAPTURING_PHASE", { GIF_PICKER_TOOLTIP: 10, GUILD_ONBOARDING_PROMPT: 371 });
+Object.defineProperty(tmp2.prototype, "CAPTURING_PHASE", { GIF_PICKER_TOOLTIP: 10, GUILD_ONBOARDING_PROMPT: 371 });
+Object.defineProperty(tmp2, "AT_TARGET", {});
+Object.defineProperty(tmp2.prototype, "AT_TARGET", {});
+Object.defineProperty(tmp2, "BUBBLING_PHASE", {});
+Object.defineProperty(tmp2.prototype, "BUBBLING_PHASE", {});
 arg1(dependencyMap[3]).setPlatformObject(tmp2);
 
 export default tmp2;

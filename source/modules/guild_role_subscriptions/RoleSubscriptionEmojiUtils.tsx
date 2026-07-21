@@ -1,10 +1,10 @@
-// Module ID: 5265
-// Function ID: 44735
+// Module ID: 5267
+// Function ID: 44776
 // Name: isPurchasableRoleSubscriptionEmoji
 // Dependencies: []
 // Exports: isRoleSubscriptionEmoji, isUnusableRoleSubscriptionEmoji
 
-// Module 5265 (isPurchasableRoleSubscriptionEmoji)
+// Module 5267 (isPurchasableRoleSubscriptionEmoji)
 function isPurchasableRoleSubscriptionEmoji(customEmojiFromJoinedGuild) {
   let roles;
   if (null != customEmojiFromJoinedGuild) {

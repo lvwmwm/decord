@@ -1,10 +1,10 @@
-// Module ID: 5633
-// Function ID: 48142
+// Module ID: 5635
+// Function ID: 48184
 // Name: useGuildEligibleForGuildProducts
 // Dependencies: []
 // Exports: isGuildEligibleForGuildProducts, useGuildEligibleForGuildProducts
 
-// Module 5633 (useGuildEligibleForGuildProducts)
+// Module 5635 (useGuildEligibleForGuildProducts)
 let closure_2 = importDefault(dependencyMap[0]);
 const GuildFeatures = arg1(dependencyMap[1]).GuildFeatures;
 const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/guild_products/GuildProductsEligibility.tsx");

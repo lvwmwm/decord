@@ -1,10 +1,10 @@
-// Module ID: 13927
-// Function ID: 105862
+// Module ID: 13934
+// Function ID: 105885
 // Name: NonInlineConsoleConnection
 // Dependencies: []
 // Exports: default
 
-// Module 13927 (NonInlineConsoleConnection)
+// Module 13934 (NonInlineConsoleConnection)
 let Fragment;
 let jsxs;
 function NonInlineConsoleConnection(arg0) {

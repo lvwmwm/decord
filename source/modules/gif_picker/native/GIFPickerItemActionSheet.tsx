@@ -1,10 +1,10 @@
-// Module ID: 9580
-// Function ID: 74634
+// Module ID: 9585
+// Function ID: 74651
 // Name: GIFPickerItemActionSheet
 // Dependencies: []
 // Exports: default
 
-// Module 9580 (GIFPickerItemActionSheet)
+// Module 9585 (GIFPickerItemActionSheet)
 let num = 0;
 let closure_3 = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;

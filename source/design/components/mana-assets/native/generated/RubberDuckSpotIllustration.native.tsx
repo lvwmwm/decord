@@ -1,10 +1,10 @@
-// Module ID: 6437
-// Function ID: 50529
+// Module ID: 6439
+// Function ID: 50572
 // Name: RubberDuckSpotIllustration
 // Dependencies: []
 // Exports: RubberDuckSpotIllustration
 
-// Module 6437 (RubberDuckSpotIllustration)
+// Module 6439 (RubberDuckSpotIllustration)
 const jsx = require(dependencyMap[0]).jsx;
 const _module = require(dependencyMap[3]);
 const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/RubberDuckSpotIllustration.native.tsx");

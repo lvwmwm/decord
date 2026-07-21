@@ -1,10 +1,10 @@
-// Module ID: 7451
-// Function ID: 59857
+// Module ID: 7455
+// Function ID: 59868
 // Name: shouldWaitForBlockingModals
 // Dependencies: []
 // Exports: addPostConnectionCallback
 
-// Module 7451 (shouldWaitForBlockingModals)
+// Module 7455 (shouldWaitForBlockingModals)
 function shouldWaitForBlockingModals() {
   return null != type.getType();
 }

@@ -1,10 +1,10 @@
-// Module ID: 9092
-// Function ID: 71286
+// Module ID: 9096
+// Function ID: 71298
 // Name: UserCircleIcon
 // Dependencies: []
 // Exports: UserCircleIcon
 
-// Module 9092 (UserCircleIcon)
+// Module 9096 (UserCircleIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/UserCircleIcon.tsx");

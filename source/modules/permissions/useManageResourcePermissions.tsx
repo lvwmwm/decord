@@ -1,10 +1,10 @@
-// Module ID: 8391
-// Function ID: 66792
+// Module ID: 8395
+// Function ID: 66804
 // Name: canManageResource
 // Dependencies: []
 // Exports: getManageResourcePermissions, useManageResourcePermissions
 
-// Module 8391 (canManageResource)
+// Module 8395 (canManageResource)
 function canManageResource(arg0, arg1, arg2, arg3) {
   let creator_id = arg0;
   let id = arg1;

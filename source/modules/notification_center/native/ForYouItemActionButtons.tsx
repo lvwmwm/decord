@@ -1,10 +1,10 @@
-// Module ID: 15017
-// Function ID: 113147
+// Module ID: 15024
+// Function ID: 113171
 // Name: focusChatInput
 // Dependencies: []
 // Exports: ForYouItemActionButtons, useItemActionButtonPropsV2
 
-// Module 15017 (focusChatInput)
+// Module 15024 (focusChatInput)
 function focusChatInput(channelId) {
   let tmp;
   if (null != channelId) {
@@ -163,7 +163,7 @@ class IncomingFriendRequestActions {
     items[0] = tmp.actionButtonsContainer;
     items[1] = animatedStyle;
     tmp14 = jsxs;
-    obj5 = { 0: "Array", 0: "isArray" };
+    obj5 = { pink: -144637951, plum: 17545793 };
     obj6 = {
       onLayout(nativeEvent) {
             const result = sharedValue.set(nativeEvent.nativeEvent.layout.width);
@@ -214,7 +214,7 @@ class IncomingFriendRequestActions {
     obj10 = { variant: "secondary" };
     intl3 = arg1(dependencyMap[13]).intl;
     obj10.text = intl3.string(arg1(dependencyMap[13]).t.n8nU4W);
-    obj11 = { display: true, width: true, justifyContent: true };
+    obj11 = { Text: 5375, string: 1896939776, y: 8000 };
     obj11.style = animatedStyle2;
     obj12 = {
       style: animatedStyle3,
@@ -223,7 +223,7 @@ class IncomingFriendRequestActions {
             const result1 = sharedValue3.set(nativeEvent.nativeEvent.layout.height);
           }
     };
-    obj12.children = jsx(arg1(dependencyMap[14]).Text, { alignItems: "f508ffa8fec7b43f0c7e1765658cd955", justifyContent: "ic_message", position: "png" });
+    obj12.children = jsx(arg1(dependencyMap[14]).Text, { "Bool(true)": "f508ffa8fec7b43f0c7e1765658cd955", "Bool(true)": "ic_message", "Bool(true)": "png" });
     obj11.children = jsx(importDefault(dependencyMap[9]).View, obj12);
     obj10.icon = jsx(importDefault(dependencyMap[9]).View, obj11);
     if (compactMode) {
@@ -246,7 +246,7 @@ let closure_7 = importDefault(dependencyMap[4]);
 const tmp2 = arg1(dependencyMap[5]);
 ({ jsx: closure_12, jsxs: closure_13 } = arg1(dependencyMap[6]));
 const tmp3 = arg1(dependencyMap[6]);
-let closure_14 = arg1(dependencyMap[7]).createStyles({ buttonsContainer: { type: null, guildId: null }, actionButtonsContainer: {} });
+let closure_14 = arg1(dependencyMap[7]).createStyles({ buttonsContainer: {}, actionButtonsContainer: {} });
 let closure_15 = { ACCEPT: "accept", IGNORE: "ignore", WAVE: "wave", ACTION: "action" };
 let closure_16 = { code: "function ForYouItemActionButtonsTsx1(){const{withTiming,pressed}=this.__closure;return{opacity:withTiming(!pressed.get()?1:0,{duration:150}),pointerEvents:!pressed.get()?'auto':'none'};}" };
 let closure_17 = { code: "function ForYouItemActionButtonsTsx2(){const{pressed,acceptButtonWidth,buttonWidth,withTiming}=this.__closure;const scaleX=!pressed.get()?acceptButtonWidth.get()/buttonWidth.get():1;const scaledWidth=buttonWidth.get()-buttonWidth.get()*scaleX;const translateX=!pressed.get()?-scaledWidth/2:0;return{transform:[{scaleX:withTiming(scaleX)},{translateX:withTiming(translateX)}],opacity:withTiming(!pressed.get()?0:1),pointerEvents:!pressed.get()?'none':'auto'};}" };
@@ -297,7 +297,7 @@ export const useItemActionButtonPropsV2 = function useItemActionButtonPropsV2(it
     const dMFromUserId = id.getDMFromUserId(id);
     if (null != dMFromUserId) {
       const _HermesInternal = HermesInternal;
-      obj = { 9223372036854775807: null, 0: null, 0: null, payload: arg1(arg2[18])("https://discord.com/channels/@me/" + dMFromUserId).payload };
+      obj = { <string:3428996705>: "ERROR", <string:1318212076>: "ERROR", <string:1640435025>: "NOT_RESPONDER", payload: arg1(arg2[18])("https://discord.com/channels/@me/" + dMFromUserId).payload };
       arg1(arg2[19])(obj);
       const tmp5 = arg1(arg2[18]);
     }
@@ -360,7 +360,7 @@ export const useItemActionButtonPropsV2 = function useItemActionButtonPropsV2(it
   const callback4 = React.useCallback(() => {
     const dMChannel = arg1(arg2[22]).getDMChannel(id);
     dMChannel.then((arg0) => {
-      const obj = { 9223372036854775807: null, 0: null, 0: null, payload: callback(closure_2[18])("https://discord.com/channels/@me/" + arg0).payload };
+      const obj = { <string:3428996705>: "ERROR", <string:1318212076>: "ERROR", <string:1640435025>: "NOT_RESPONDER", payload: callback(closure_2[18])("https://discord.com/channels/@me/" + arg0).payload };
       callback(closure_2[19])(obj);
       callback2(arg0);
     });
@@ -395,7 +395,7 @@ export const useItemActionButtonPropsV2 = function useItemActionButtonPropsV2(it
         if (item.type !== callback(dependencyMap[21]).NotificationCenterLocalItems.INCOMING_GAME_FRIEND_REQUESTS) {
           if (item.type === callback(dependencyMap[21]).NotificationCenterLocalItems.FRIEND_REQUESTS_GROUPED) {
             obj = {};
-            obj1 = {};
+            obj1 = { 1952801467: true, 2005042259: true, 1631852447: true, -1149283266: true };
             const intl14 = callback(dependencyMap[13]).intl;
             obj1.text = intl14.string(callback(dependencyMap[13]).t.lMR96+);
             obj1.onPress = callback3;
@@ -410,7 +410,7 @@ export const useItemActionButtonPropsV2 = function useItemActionButtonPropsV2(it
             return obj;
           } else if (item.type === callback(dependencyMap[21]).NotificationCenterItems.GO_LIVE_PUSH) {
             const obj3 = {};
-            const obj4 = { alignItems: null, borderRadius: null, position: null, top: null };
+            const obj4 = { 1952801467: 0.000000000000000000000000000000000000000000000000000000000000000000000000000017272340227376847, 2005042259: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010434368497400223, 1631852447: -0.000000000000000000000000000000000000000978801375981173, -1149283266: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000051908326223 };
             const intl12 = callback(dependencyMap[13]).intl;
             obj4.text = intl12.string(callback(dependencyMap[13]).t.Pqj7h+);
             obj4.onPress = callback;
@@ -501,7 +501,7 @@ export const useItemActionButtonPropsV2 = function useItemActionButtonPropsV2(it
                         if (item.type !== callback(dependencyMap[21]).NotificationCenterItems.REPLY_MENTION) {
                           if (item.type === callback(dependencyMap[21]).NotificationCenterItems.TRENDING_CONTENT) {
                             const obj16 = {};
-                            const obj17 = { alignItems: "setRecipientUser", borderRadius: "isArray", position: "isArray", top: "isArray" };
+                            const obj17 = { 1952801467: null, 2005042259: null, 1631852447: null, -1149283266: null };
                             const intl = callback(dependencyMap[13]).intl;
                             obj17.text = intl.string(callback(dependencyMap[13]).t.k0Q31F);
                             obj17.onPress = callback7;
@@ -523,7 +523,7 @@ export const useItemActionButtonPropsV2 = function useItemActionButtonPropsV2(it
                       if (canReplyToMessage) {
                         if (type !== callback1.POLL_RESULT) {
                           let obj20 = {};
-                          const obj21 = { alignItems: 1901199359, borderRadius: 1515323702, position: 1917147717, top: 0 };
+                          const obj21 = { 1952801467: -917372929, 2005042259: -1924005578, 1631852447: 1917160773, -1149283266: 0 };
                           const intl17 = callback(dependencyMap[13]).intl;
                           obj21.text = intl17.string(callback(dependencyMap[13]).t.vBq3iT);
                           obj21.onPress = callback6;
@@ -599,7 +599,7 @@ export const ForYouItemActionButtons = function ForYouItemActionButtons(compactM
   let actionButtons;
   let actionsNode;
   ({ item: closure_0, rowIndex: closure_1, onSoftAckItem: closure_2, actionButtons, actionsNode } = compactMode);
-  let obj = { 1423959906: null, 1727560470: "LOCAL_PAYMENT_START_PAYMENT_MISSING_REQUIRED_OPTION", 137076100: "Missing required option for startPayment.", 609343073: null, 1174610006: "LOCAL_PAYMENT_START_PAYMENT_DEFERRED_PAYMENT_FAILED", 2080926212: "LocalPayment startPayment deferred payment failed." };
+  let obj = {};
   Object.setPrototypeOf(null);
   const merged = Object.assign(compactMode, obj);
   let mapped = !compactMode.compactMode;

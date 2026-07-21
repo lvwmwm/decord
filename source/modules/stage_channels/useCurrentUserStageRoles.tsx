@@ -1,10 +1,10 @@
-// Module ID: 10608
-// Function ID: 82781
+// Module ID: 10614
+// Function ID: 82804
 // Name: useCurrentUserStageRoles
 // Dependencies: []
 // Exports: default
 
-// Module 10608 (useCurrentUserStageRoles)
+// Module 10614 (useCurrentUserStageRoles)
 let closure_2 = importDefault(dependencyMap[0]);
 let closure_3 = importDefault(dependencyMap[1]);
 const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/stage_channels/useCurrentUserStageRoles.tsx");

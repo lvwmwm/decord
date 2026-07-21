@@ -1,10 +1,10 @@
-// Module ID: 10822
-// Function ID: 84030
+// Module ID: 10828
+// Function ID: 84053
 // Name: useBountiesExperience
 // Dependencies: []
 // Exports: useBountiesExperience
 
-// Module 10822 (useBountiesExperience)
+// Module 10828 (useBountiesExperience)
 const _module = require(dependencyMap[3]);
 const result = _module.fileFinishedImporting("modules/quests/experiments/useBountiesExperience.tsx");
 
@@ -27,7 +27,7 @@ export const useBountiesExperience = function useBountiesExperience(VIDEO_MODAL_
     num2 = config1.rewardTimerSeconds;
   }
   if (config.enabled) {
-    const obj1 = { "Bool(false)": 7475750, "Bool(false)": 0, "Bool(false)": 1090519040, "Bool(false)": 146451 };
+    const obj1 = { bottom: null, right: null, borderColor: null, borderWidth: null };
     ({ verticalScrollEnabled: obj5.verticalScrollEnabled, ctaTimerMilliSeconds: obj5.ctaTimerMilliSeconds, scrollAffordanceVariant: obj5.scrollAffordanceVariant } = config);
     obj1.stage1Enabled = config1.enabled;
     obj1.orbAmount = num;

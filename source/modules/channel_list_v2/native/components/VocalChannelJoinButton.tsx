@@ -1,8 +1,8 @@
-// Module ID: 11374
-// Function ID: 88464
+// Module ID: 11381
+// Function ID: 88488
 // Dependencies: []
 
-// Module 11374
+// Module 11381
 const importAllResult = importAll(dependencyMap[0]);
 ({ View: closure_4, Pressable: closure_5 } = arg1(dependencyMap[1]));
 let closure_6 = importDefault(dependencyMap[2]);
@@ -20,7 +20,7 @@ let closure_11 = arg1(dependencyMap[6]).createStyles((arg0, arg1) => {
   }
   obj.elevation = num;
   obj.shadowRadius = 4;
-  obj.shadowOffset = { aze: 131072.00314656927, azj: 0.000000000000000000000000000000000000000000000000000000011294471302334573 };
+  obj.shadowOffset = {};
   obj.shadowColor = importDefault(dependencyMap[7]).colors.BLACK;
   let num2 = 0.14;
   if (arg1) {
@@ -38,7 +38,7 @@ let closure_11 = arg1(dependencyMap[6]).createStyles((arg0, arg1) => {
   obj = { tintColor: importDefault(dependencyMap[7]).colors.WHITE };
   obj.joinButtonIconActive = obj;
   obj.joinButtonIconInactive = { tintColor: importDefault(dependencyMap[7]).colors.INTERACTIVE_TEXT_DEFAULT };
-  const obj2 = { 1996375749: null, 1381785981: 1, -1397183303: 59 };
+  const obj2 = {};
   const obj1 = { tintColor: importDefault(dependencyMap[7]).colors.INTERACTIVE_TEXT_DEFAULT };
   let num3 = 0;
   if (obj6.isAndroid()) {
@@ -133,7 +133,7 @@ const memoResult = importAllResult.memo(function VocalChannelJoinButton(channel)
           if (!memo) {
             let joinButtonIconActive = intl.joinButtonIconInactive;
           }
-          const items3 = [joinButtonIconActive, { "Bool(true)": "icon-strong", "Bool(true)": "text-md/medium" }];
+          const items3 = [joinButtonIconActive, { "Null": "icon-strong", "Null": "text-md/medium" }];
           let tmp26 = arg1;
           let str2 = dependencyMap;
           if (isGuildStageVoiceResult) {

@@ -1,10 +1,10 @@
-// Module ID: 10929
-// Function ID: 85006
+// Module ID: 10934
+// Function ID: 85027
 // Name: ConnectedAcceptGuildTemplate
 // Dependencies: []
 // Exports: default
 
-// Module 10929 (ConnectedAcceptGuildTemplate)
+// Module 10934 (ConnectedAcceptGuildTemplate)
 function ConnectedAcceptGuildTemplate(code) {
   code = code.code;
   const arg1 = code;

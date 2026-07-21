@@ -1,9 +1,9 @@
-// Module ID: 6512
-// Function ID: 50642
+// Module ID: 6514
+// Function ID: 50685
 // Name: metadata
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 6512 (metadata)
+// Module 6514 (metadata)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/SnailIllocon-2x.png.js");
 

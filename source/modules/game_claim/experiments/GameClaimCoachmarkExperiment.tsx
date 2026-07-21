@@ -1,12 +1,12 @@
-// Module ID: 14952
-// Function ID: 112521
+// Module ID: 14959
+// Function ID: 112545
 // Name: experiment
 // Dependencies: []
 // Exports: useGameClaimCoachmarkEnabled
 
-// Module 14952 (experiment)
+// Module 14959 (experiment)
 const _module = require(dependencyMap[0]);
-const obj = { "Bool(false)": null, "Bool(false)": null, config: { enabled: true } };
+const obj = { -1174339580: null, -1169096700: null, config: { enabled: true } };
 const items = [obj];
 const experiment = _module.createExperiment({ defaultConfig: { enabled: false }, treatments: items });
 const _module1 = require(dependencyMap[1]);

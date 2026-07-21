@@ -1,10 +1,10 @@
-// Module ID: 7577
-// Function ID: 60585
+// Module ID: 7581
+// Function ID: 60597
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 // Exports: getItemSizeOverrideKey
 
-// Module 7577 (_isNativeReflectConstruct)
+// Module 7581 (_isNativeReflectConstruct)
 let StyleSheet;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
@@ -105,7 +105,7 @@ function getBatchSize(rounded) {
 }
 function computeBlock(endImportTime) {
   if (0 === endImportTime) {
-    return {};
+    return { renderPolls: "spring", renderSharedClientTheme: "linear", renderForumPostActions: "easeInEaseOut" };
   } else {
     const _Math = Math;
     const rounded = Math.ceil(endImportTime);
@@ -132,7 +132,7 @@ function FastListIosFabricGestureWorkaround(children) {
   }
   return tmp2;
 }
-let closure_3 = ["discord_protos.discord_experimentation.v1.Experiment.UnitType", "discord_protos.discord_experimentation.v1.Phase", "discord_protos.discord_experimentation.v1.Experiment.Surface", "discord_protos.discord_experimentation.v1.Experiment.ExposureTracking", "discord_protos.discord_experimentation.v1.Experiment.AssignmentMode", "discord_protos.discord_experimentation.v1.Experiment.Type", "discord_protos.discord_experimentation.v1.Experiment.CustomUnitPrefix", "discord_protos.discord_experimentation.v1.Experiment.EligibilityPersistence", "discord_protos.discord_experimentation.v1.Experiment.NumberLineSettings", "discord_protos.discord_experimentation.v1.Experiment.NumberLineSettings.Mode", "discord_protos.discord_experimentation.v1.Variation", "discord_protos.discord_experimentation.v1.Variation.Type", "discord_protos.discord_experimentation.v1.Bucket", "discord_protos.discord_experimentation.v1.Bucket.Type", "discord_protos.discord_experimentation.v1.DebugConfig", "discord_protos.discord_experimentation.v1.Rule", "discord_protos.discord_experimentation.v1.Rule.Type", "discord_protos.discord_experimentation.v1.Override", "discord_protos.discord_experimentation.v1.Filter", "discord_protos.discord_experimentation.v1.StaffUsers", "discord_protos.discord_experimentation.v1.UserInGuild", "discord_protos.discord_experimentation.v1.UserIds", "discord_protos.discord_experimentation.v1.UserLocale", "discord_protos.discord_experimentation.v1.ClientLocale", "discord_protos.discord_experimentation.v1.ClientSystemLocale", "discord_protos.discord_experimentation.v1.ClientLocation", "discord_protos.discord_experimentation.v1.ClientLocation.Place", "discord_protos.discord_experimentation.v1.ClientLocation.ISORegion", "discord_protos.discord_experimentation.v1.ClientLocation.Location", "discord_protos.discord_experimentation.v1.UserLocation", "discord_protos.discord_experimentation.v1.ClientIP", "discord_protos.discord_experimentation.v1.UserIP", "discord_protos.discord_experimentation.v1.ClientOperatingSystem", "discord_protos.discord_experimentation.v1.SDKVersion", "discord_protos.discord_experimentation.v1.SDKVersionRange", "discord_protos.discord_experimentation.v1.SDKVersionRangeBound", "discord_protos.discord_experimentation.v1.SDKVersionSpecifier", "discord_protos.discord_experimentation.v1.ClientPlatform", "discord_protos.discord_experimentation.v1.PlatformVersion", "discord_protos.discord_experimentation.v1.PlatformVersionRange", "discord_protos.discord_experimentation.v1.PlatformVersionRangeBound", "discord_protos.discord_experimentation.v1.PlatformVersionSpecifier", "discord_protos.discord_experimentation.v1.ClientRequiredChanges"];
+let closure_3 = ["discord_protos.discord_experimentation.v1.Experiment.UnitType", "discord_protos.discord_experimentation.v1.Phase", "discord_protos.discord_experimentation.v1.Experiment.Surface", "discord_protos.discord_experimentation.v1.Experiment.ExposureTracking", "discord_protos.discord_experimentation.v1.Experiment.AssignmentMode", "discord_protos.discord_experimentation.v1.Experiment.Type", "discord_protos.discord_experimentation.v1.Experiment.CustomUnitPrefix", "discord_protos.discord_experimentation.v1.Experiment.EligibilityPersistence", "discord_protos.discord_experimentation.v1.Experiment.NumberLineSettings", "discord_protos.discord_experimentation.v1.Experiment.NumberLineSettings.Mode", "discord_protos.discord_experimentation.v1.Variation", "discord_protos.discord_experimentation.v1.Variation.Type", "discord_protos.discord_experimentation.v1.Bucket", "discord_protos.discord_experimentation.v1.Bucket.Type", "discord_protos.discord_experimentation.v1.DebugConfig", "discord_protos.discord_experimentation.v1.Rule", "discord_protos.discord_experimentation.v1.Rule.Type", "discord_protos.discord_experimentation.v1.Rule.Subtype", "discord_protos.discord_experimentation.v1.Override", "discord_protos.discord_experimentation.v1.Filter", "discord_protos.discord_experimentation.v1.StaffUsers", "discord_protos.discord_experimentation.v1.UserInGuild", "discord_protos.discord_experimentation.v1.UserIds", "discord_protos.discord_experimentation.v1.UserLocale", "discord_protos.discord_experimentation.v1.ClientLocale", "discord_protos.discord_experimentation.v1.ClientSystemLocale", "discord_protos.discord_experimentation.v1.ClientLocation", "discord_protos.discord_experimentation.v1.ClientLocation.Place", "discord_protos.discord_experimentation.v1.ClientLocation.ISORegion", "discord_protos.discord_experimentation.v1.ClientLocation.Location", "discord_protos.discord_experimentation.v1.UserLocation", "discord_protos.discord_experimentation.v1.ClientIP", "discord_protos.discord_experimentation.v1.UserIP", "discord_protos.discord_experimentation.v1.ClientOperatingSystem", "discord_protos.discord_experimentation.v1.SDKVersion", "discord_protos.discord_experimentation.v1.SDKVersionRange", "discord_protos.discord_experimentation.v1.SDKVersionRangeBound", "discord_protos.discord_experimentation.v1.SDKVersionSpecifier", "discord_protos.discord_experimentation.v1.ClientPlatform", "discord_protos.discord_experimentation.v1.PlatformVersion", "discord_protos.discord_experimentation.v1.PlatformVersionRange", "discord_protos.discord_experimentation.v1.PlatformVersionRangeBound", "discord_protos.discord_experimentation.v1.PlatformVersionSpecifier"];
 let closure_4 = importDefault(dependencyMap[0]);
 let closure_5 = importDefault(dependencyMap[1]);
 let closure_6 = importDefault(dependencyMap[2]);
@@ -536,7 +536,7 @@ const tmp6 = () => {
       items = [];
       self.items = items;
       obj3 = new closure_20(arg2);
-      obj = {};
+      obj = { 1236479781: -1286471681, 667116955: 7369102, 1362604794: -1924071424, 1952569844: 5534277 };
       closure_6 = 0;
       const set = new Set();
       if (rounded <= bound) {
@@ -1312,7 +1312,7 @@ const tmp6 = () => {
           self.fullCompute();
         }
         if (arg1 < 0) {
-          return {};
+          return { "Bool(false)": "spring", "Bool(false)": "linear", "Bool(false)": "easeInEaseOut" };
         } else {
           const tmp9 = callback3(tmp2);
           const iter5 = tmp9();
@@ -1481,7 +1481,7 @@ let closure_23 = importAllResult.memo(function FastListStickySectionRendererComp
   ({ fastListInstance, section, debug, recyclerKey } = children);
   const items = [-1, 0];
   const dependencyMap = items;
-  const items1 = [1390895572, -255068174];
+  const items1 = [];
   let closure_3 = items1;
   items.push(layoutStart);
   items1.push(0);
@@ -1532,7 +1532,7 @@ let closure_23 = importAllResult.memo(function FastListStickySectionRendererComp
   const Children = importAllResult.Children;
   const animatedStyle = obj1.useAnimatedStyle(fn);
   const onlyResult = Children.only(children.children(section, fastListInstance, scrollPosValue, layoutStart));
-  obj = { PARTY: 120, hasSpoilerEmbeds: 24, NitroGem2LottieState: 8 };
+  obj = { 769258578: 60, 1471767001: 0, -1511594138: 0 };
   let style;
   if (null != onlyResult) {
     if ("props" in onlyResult) {
@@ -1540,7 +1540,7 @@ let closure_23 = importAllResult.memo(function FastListStickySectionRendererComp
     }
   }
   const items2 = [style, , ];
-  obj1 = { <string:3069928428>: 10, <string:626741994>: "sh" };
+  obj1 = { String: null, lc: null };
   let tmp15;
   if (!horizontal) {
     tmp15 = layoutSize;
@@ -1579,7 +1579,7 @@ let closure_24 = importAllResult.memo(function _FastListSectionRenderer(disableW
       return callback3(closure_17, obj);
     }
   }
-  obj = { PREMIUM_GIFT_YEAR_TIER_1: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000800310628823068, PREMIUM_GIFT_MONTH_TIER_2: 0.0000000000000000000000000000000000000000000000015576649385897736, PREMIUM_GIFT_YEAR_TIER_2: 36897806968414080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 };
+  obj = { options: null, isFirst: null, isEditing: "k" };
   obj = {};
   if (horizontal) {
     obj.width = layoutSize;
@@ -1671,7 +1671,7 @@ let closure_27 = importAllResult.memo(function _FastListHeaderFooterRenderer(dis
       return callback3(closure_17, obj);
     }
   }
-  obj = { PREMIUM_GIFT_YEAR_TIER_1: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000800310628823068, PREMIUM_GIFT_MONTH_TIER_2: 0.0000000000000000000000000000000000000000000000015576649385897736, PREMIUM_GIFT_YEAR_TIER_2: 36897806968414080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 };
+  obj = { options: null, isFirst: null, isEditing: "k" };
   obj = {};
   if (horizontal) {
     obj.width = layoutSize;
@@ -1997,7 +1997,7 @@ const tmp7 = (PureComponent) => {
           obj = current;
         }
         if (!tmp) {
-          obj = { "Null": false, "Null": true, animated: flag };
+          obj = { max: -536870861, guildId: -299892737, animated: flag };
           obj.scrollTo(obj);
         }
       };
@@ -2368,7 +2368,7 @@ const tmp7 = (PureComponent) => {
           const tmp8 = callback10(arg0, tmp3, props.batchesToRender);
         }
         if (null == point) {
-          point = { "Null": false, "Null": true };
+          point = { max: -536870861, guildId: -299892737 };
         }
         const tmp9 = tmp ? point.x : point.y;
         self.scrollPos = tmp9;
@@ -2432,7 +2432,7 @@ const tmp7 = (PureComponent) => {
       fn.__closure = { horizontal: tmp, workletMounted, scrollPosValue, onScrollWorklet };
       fn.__workletHash = 16225357996403;
       fn.__initData = closure_30;
-      self.worklet = new FastList(tmp[15]).WorkletEventHandler(fn, ["<string:75066689>"]);
+      self.worklet = new FastList(tmp[15]).WorkletEventHandler(fn, [false]);
       self.viewTag = callback5(self.scrollView.current);
       const worklet = self.worklet;
       worklet.registerForEvents(self.viewTag);
@@ -2987,7 +2987,7 @@ const tmp7 = (PureComponent) => {
   ];
   return callback2(FastList, items, items1);
 }(importAllResult.PureComponent);
-obj = { "Null": 9, "Null": null, "Null": "\u{1F926}\u{1F3FD}", "Null": true, "Null": null, contentInset: { "Null": "r", "Null": "onRequireModeratorMFAClick", "Null": "Array", "Null": "isSpamMessageRequest" } };
+obj = { 1525133553: 9, 1755906455: null, 474405105: "\u{1F926}\u{1F3FD}", 754027990: true, 790991857: null, contentInset: {} };
 tmp7.defaultProps = obj;
 const tmp3 = arg1(dependencyMap[9]);
 const animatedComponent = importDefault(dependencyMap[15]).createAnimatedComponent(tmp7);

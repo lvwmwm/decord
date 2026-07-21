@@ -1,10 +1,10 @@
-// Module ID: 4641
-// Function ID: 40250
+// Module ID: 4643
+// Function ID: 40291
 // Name: GroupIcon
 // Dependencies: []
 // Exports: GroupIcon
 
-// Module 4641 (GroupIcon)
+// Module 4643 (GroupIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/GroupIcon.tsx");

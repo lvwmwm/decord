@@ -1,20 +1,20 @@
-// Module ID: 8953
-// Function ID: 70660
+// Module ID: 8957
+// Function ID: 70672
 // Name: error
 // Dependencies: []
 // Exports: default
 
-// Module 8953 (error)
+// Module 8957 (error)
 importAll(dependencyMap[0]);
 ({ Image: closure_3, View: closure_4 } = arg1(dependencyMap[1]));
 const tmp3 = arg1(dependencyMap[1]);
 ({ jsx: closure_5, jsxs: closure_6 } = arg1(dependencyMap[2]));
 let obj = arg1(dependencyMap[3]);
 obj = {};
-obj = { padding: -165, backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_BASE_LOWER, paddingBottom: -45, type: 0, userId: "gr", isStranger: null };
+obj = { <string:1671242653>: -165, <string:1668212695>: 320, <string:1382995813>: -45, <string:1888128809>: 0, <string:2968308836>: "gr", <string:2580370136>: null, backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_BASE_LOWER };
 obj.container = obj;
-obj.inner = {};
-obj.text = {};
+obj.inner = { paddingTop: "Array", zIndex: "isArray", flexDirection: "content", alignItems: "r" };
+obj.text = { "Null": null, "Null": "absolute" };
 const tmp4 = arg1(dependencyMap[2]);
 obj.image = { tintColor: importDefault(dependencyMap[4]).colors.TEXT_FEEDBACK_WARNING };
 let closure_7 = obj.createStyles(obj);

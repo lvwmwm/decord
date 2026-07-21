@@ -1,10 +1,10 @@
-// Module ID: 10329
-// Function ID: 79748
+// Module ID: 10335
+// Function ID: 79767
 // Name: useFavoritesAccess
 // Dependencies: []
 // Exports: useFavorite, useFavoriteAdded, useFavoritedChannelIds, useFavoritesAwareChannel, useFavoritesCategories
 
-// Module 10329 (useFavoritesAccess)
+// Module 10335 (useFavoritesAccess)
 function useFavoritesAccess(FavoritesGuildChannelList) {
   let obj = arg1(dependencyMap[5]);
   obj = { location: FavoritesGuildChannelList };

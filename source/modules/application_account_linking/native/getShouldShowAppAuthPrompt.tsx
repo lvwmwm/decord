@@ -1,10 +1,10 @@
-// Module ID: 10899
-// Function ID: 84699
+// Module ID: 10904
+// Function ID: 84720
 // Name: getShouldShowAppAuthPrompt
 // Dependencies: []
 // Exports: getShouldShowAppAuthPrompt
 
-// Module 10899 (getShouldShowAppAuthPrompt)
+// Module 10904 (getShouldShowAppAuthPrompt)
 let closure_3 = importDefault(dependencyMap[0]);
 const FetchState = arg1(dependencyMap[0]).FetchState;
 const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/application_account_linking/native/getShouldShowAppAuthPrompt.tsx");

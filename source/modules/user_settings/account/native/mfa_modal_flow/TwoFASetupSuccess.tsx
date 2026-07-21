@@ -1,10 +1,10 @@
-// Module ID: 13564
-// Function ID: 102863
+// Module ID: 13571
+// Function ID: 102886
 // Name: TwoFASetupSuccess
 // Dependencies: []
 // Exports: default
 
-// Module 13564 (TwoFASetupSuccess)
+// Module 13571 (TwoFASetupSuccess)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 let closure_5 = importAll(dependencyMap[2]);
@@ -12,15 +12,15 @@ let closure_5 = importAll(dependencyMap[2]);
 const tmp2 = arg1(dependencyMap[3]);
 ({ jsx: closure_8, jsxs: closure_9 } = arg1(dependencyMap[4]));
 let obj = arg1(dependencyMap[5]);
-obj = { container: { "Null": "key", "Null": "Text", "Null": "max", "Null": "Text", 2013689861: null }, flex: { flex: 1 }, image: { aze: null, azj: null }, success: { marginTop: 33 } };
+obj = { container: {}, flex: { flex: 1 }, image: { bhk: null, bic: null }, success: { marginTop: 33 } };
 obj = { color: importDefault(dependencyMap[6]).colors.TEXT_STRONG };
 obj.successBody = obj;
 const tmp3 = arg1(dependencyMap[4]);
 obj.divider = { backgroundColor: importDefault(dependencyMap[6]).colors.BORDER_STRONG };
-obj.buttonWrapper = {};
-const obj2 = { "Bool(true)": "isArray", "Bool(true)": "key", "Bool(true)": "Array", "Bool(true)": "construct", color: importDefault(dependencyMap[6]).colors.TEXT_STRONG };
+obj.buttonWrapper = { 2075677164: true, 72445537: "/assets/design/components/Icon/native/redesign/generated/images", 995517444: 24 };
+const obj2 = { "Bool(false)": "isArray", "Bool(false)": "key", "Bool(false)": "Array", "Bool(false)": "construct", color: importDefault(dependencyMap[6]).colors.TEXT_STRONG };
 obj.ctaDescription = obj2;
-const obj3 = { frameRateInput: 17891332, frameRateNetwork: 2161, frameRateRender: 193741056, keyFramesEncoded: -1603207167, color: importDefault(dependencyMap[6]).colors.TEXT_FEEDBACK_CRITICAL };
+const obj3 = { -467567066: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001173924286404835, -589004969: 203543653361953400000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, -1346900846: -22190471844180625000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, 761759223: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000045856417437685, color: importDefault(dependencyMap[6]).colors.TEXT_FEEDBACK_CRITICAL };
 obj.errorText = obj3;
 let closure_10 = obj.createStyles(obj);
 const obj1 = { backgroundColor: importDefault(dependencyMap[6]).colors.BORDER_STRONG };
@@ -57,7 +57,7 @@ export default function TwoFASetupSuccess() {
   const items = [callback3(closure_6, obj), , , , , , , ];
   const tmp4 = callback2(React.useState(""), 2);
   items[1] = callback3(closure_7, { source: callback(dependencyMap[12]), style: tmp.image });
-  const obj2 = { Promise: true, marginTop: true, flags: true, style: tmp.success };
+  const obj2 = { style: tmp.success };
   const intl = callback(dependencyMap[8]).intl;
   obj2.children = intl.string(callback(dependencyMap[8]).t.Awk3Gw);
   items[2] = callback3(callback(dependencyMap[13]).Text, obj2);

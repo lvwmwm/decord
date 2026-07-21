@@ -1,10 +1,10 @@
-// Module ID: 11543
-// Function ID: 89873
+// Module ID: 11550
+// Function ID: 89896
 // Name: SoundboardIcon
 // Dependencies: []
 // Exports: SoundboardIcon
 
-// Module 11543 (SoundboardIcon)
+// Module 11550 (SoundboardIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/SoundboardIcon.tsx");

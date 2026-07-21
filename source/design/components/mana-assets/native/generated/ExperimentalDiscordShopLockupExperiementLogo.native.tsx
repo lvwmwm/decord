@@ -1,10 +1,10 @@
-// Module ID: 6035
-// Function ID: 49926
+// Module ID: 6037
+// Function ID: 49969
 // Name: ExperimentalDiscordShopLockupExperiementLogo
 // Dependencies: []
 // Exports: ExperimentalDiscordShopLockupExperiementLogo
 
-// Module 6035 (ExperimentalDiscordShopLockupExperiementLogo)
+// Module 6037 (ExperimentalDiscordShopLockupExperiementLogo)
 const Image = require(dependencyMap[0]).Image;
 const jsx = require(dependencyMap[1]).jsx;
 const _module = require(dependencyMap[5]);

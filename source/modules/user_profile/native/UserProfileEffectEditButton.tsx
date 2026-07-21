@@ -1,10 +1,10 @@
-// Module ID: 13463
-// Function ID: 102223
+// Module ID: 13470
+// Function ID: 102246
 // Name: UserProfileEffectEditButton
 // Dependencies: []
 // Exports: default
 
-// Module 13463 (UserProfileEffectEditButton)
+// Module 13470 (UserProfileEffectEditButton)
 let closure_3 = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 const COLLECTIBLES_PREVIEW_SIZE = arg1(dependencyMap[2]).COLLECTIBLES_PREVIEW_SIZE;
@@ -118,7 +118,7 @@ export default function UserProfileEffectEditButton(isTryItOut) {
       obj5.style = tmp.sampleProfile;
       obj5.resizeMode = "cover";
       const items1 = [callback(importDefault(dependencyMap[16]), obj5), ];
-      const obj7 = { skuId: profilePreviewValue.skuId };
+      const obj7 = { <string:979172195>: 1000, <string:1377429346>: 600000, <string:3890416569>: "MESSAGE_CREATE", skuId: profilePreviewValue.skuId };
       items1[1] = callback(importDefault(dependencyMap[18]), obj7);
       obj4.children = items1;
       let tmp22 = callback2(View, obj4);

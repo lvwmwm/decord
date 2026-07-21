@@ -1,10 +1,10 @@
-// Module ID: 14921
-// Function ID: 112349
+// Module ID: 14928
+// Function ID: 112373
 // Name: ChannelItemEmbeddedActivities
 // Dependencies: []
 // Exports: default
 
-// Module 14921 (ChannelItemEmbeddedActivities)
+// Module 14928 (ChannelItemEmbeddedActivities)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 ({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[2]));

@@ -1,9 +1,9 @@
-// Module ID: 12444
-// Function ID: 95050
+// Module ID: 12451
+// Function ID: 95073
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 
-// Module 12444 (_createForOfIteratorHelperLoose)
+// Module 12451 (_createForOfIteratorHelperLoose)
 function _createForOfIteratorHelperLoose(@@iterator) {
   let arg1 = Symbol_iterator;
   @@iterator = "undefined" !== typeof Symbol;
@@ -113,10 +113,10 @@ let closure_5 = importDefault(dependencyMap[2]);
 let closure_6 = arg1(dependencyMap[3]).DISPATCHER_IDEAL_TIME_LIMIT_MS;
 let importDefaultResult = importDefault(dependencyMap[4]);
 importDefaultResult = new importDefaultResult("GatewaySocket");
-const set = new Set([8194600381347578000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, -0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001514308377944324]);
-const set1 = new Set([true, true]);
-const set2 = new Set([]);
-const set3 = new Set([217251842, 1716584450, -208125653, 877723649, -325959211, -649003007, 1088700886, -2091843580, 1211777308, 1464926212, 877937127, -867106815, 18600260, 18669824, 18724864, 18984960, 25248768, -761397247]);
+const set = new Set([]);
+const set1 = new Set(["Array", "isArray"]);
+const set2 = new Set(["Array", "isArray", "no"]);
+const set3 = new Set([false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false]);
 let closure_12 = { NotStarted: 0, [0]: "NotStarted", Loading: 1, [1]: "Loading", Loaded: 2, [2]: "Loaded" };
 let closure_13 = {};
 const tmp8 = () => {
@@ -389,7 +389,7 @@ const tmp8 = () => {
               let items = closure_13[type];
               let tmp9 = closure_6;
               if (null == items) {
-                items = [1390895572, -255068174];
+                items = [];
               }
               let tmp11 = callback;
               let tmp12 = callback(items, 2);

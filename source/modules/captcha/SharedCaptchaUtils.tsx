@@ -1,10 +1,10 @@
-// Module ID: 9434
-// Function ID: 73540
+// Module ID: 9438
+// Function ID: 73554
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 // Exports: emitCaptchaDistributionMetric, extractCaptchaPropsFromResponse
 
-// Module 9434 (_isNativeReflectConstruct)
+// Module 9438 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -28,7 +28,7 @@ const tmp4 = (arg0) => {
     constructor() {
       self = this;
       tmp = closure_1(this, CaptchaCancelError);
-      items = [0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004958122222675681];
+      items = [true];
       obj = closure_3(CaptchaCancelError);
       tmp2 = closure_2;
       if (closure_9()) {

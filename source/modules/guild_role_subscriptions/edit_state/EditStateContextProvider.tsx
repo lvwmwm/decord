@@ -1,10 +1,10 @@
-// Module ID: 16296
-// Function ID: 125769
+// Module ID: 16303
+// Function ID: 125800
 // Name: useEditStateContext
 // Dependencies: []
 // Exports: EditStateContextProvider, useEditStateContext
 
-// Module 16296 (useEditStateContext)
+// Module 16303 (useEditStateContext)
 const importAllResult = importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const context = importAllResult.createContext(undefined);

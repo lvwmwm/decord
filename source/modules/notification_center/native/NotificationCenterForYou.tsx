@@ -1,10 +1,10 @@
-// Module ID: 15005
-// Function ID: 112991
+// Module ID: 15012
+// Function ID: 113015
 // Name: isHoisted
 // Dependencies: []
 // Exports: NotificationCenterForYou
 
-// Module 15005 (isHoisted)
+// Module 15012 (isHoisted)
 let RootNavigatorScreen;
 let YouBarNavigatorScreens;
 function isHoisted(type) {
@@ -316,7 +316,7 @@ export const NotificationCenterForYou = (panelVariant) => {
       const items4 = [];
       const height = items4;
       if (friendSuggestions.length > 0) {
-        obj = { ao: true, add: "/assets/images/native/icons", showDivider: items1.length > 0 };
+        obj = { "Bool(false)": null, "Bool(false)": null, showDivider: items1.length > 0 };
         items4.push(obj);
         let num7 = 2;
         if (friendSuggestions.length <= 3) {
@@ -328,7 +328,7 @@ export const NotificationCenterForYou = (panelVariant) => {
           items4.push({ kind: "suggested-friends-row", id: id.user.id, suggestedFriend: id });
         });
         if (friendSuggestions.length > 3) {
-          const obj1 = { suggestedFriends: friendSuggestions };
+          const obj1 = { "Bool(false)": "/assets/images/native/icons", "Bool(false)": 24, suggestedFriends: friendSuggestions };
           items4.push(obj1);
         }
       }
@@ -356,11 +356,11 @@ export const NotificationCenterForYou = (panelVariant) => {
         }
       }
       if (errored) {
-        items5.push({ ao: "<string:3201105922>", add: "<string:2102460418>" });
+        items5.push({});
       }
-      const obj3 = { ao: "key", add: "Text" };
+      const obj3 = { "Bool(false)": null, "Bool(false)": null };
       if (items1.length > 0) {
-        items1.unshift({});
+        items1.unshift({ "Bool(false)": true, "Bool(false)": "/assets/images/native/icons" });
       }
       const items6 = [];
       if (items1.length > 0) {

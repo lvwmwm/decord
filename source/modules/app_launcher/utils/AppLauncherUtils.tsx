@@ -1,10 +1,10 @@
-// Module ID: 7908
-// Function ID: 62917
+// Module ID: 7912
+// Function ID: 62929
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 // Exports: appLauncherShowsRecommendations, ensureRecommendationSectionsOnlyContainActivities, executeAppLauncherCommand, formatPrimaryEntryPointCommandName, getApplicationDetails, getInstallAppProps, getInstallAppPropsFromProfileApplication, getSectionDescription, getSectionName, getShelfBadgeNameIfActive, isAppAvailableInAppLauncher, isApplicationAdSupported, isApplicationMonetizedWithIAP, isPartnerApplication, isPromotedApplication
 
-// Module 7908 (_createForOfIteratorHelperLoose)
+// Module 7912 (_createForOfIteratorHelperLoose)
 function _createForOfIteratorHelperLoose(@@iterator) {
   let arg1 = Symbol_iterator;
   @@iterator = "undefined" !== typeof Symbol;
@@ -136,7 +136,7 @@ function getEmbeddedActivityConfig(embeddedActivityConfig) {
   }
   return tmp;
 }
-let closure_3 = [null];
+let closure_3 = [false];
 let closure_4 = importDefault(dependencyMap[0]);
 let closure_5 = importDefault(dependencyMap[1]);
 let closure_6 = importDefault(dependencyMap[2]);

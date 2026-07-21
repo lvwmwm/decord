@@ -1,10 +1,10 @@
-// Module ID: 4337
-// Function ID: 38284
+// Module ID: 4341
+// Function ID: 38332
 // Name: shouldAgeVerifyForAgeGate
 // Dependencies: []
 // Exports: guildNeedsAgeGate, isChannelAgeVerificationGated, maybeOpenAgeGateForVoiceChannel, maybeShowAgeGate, shouldAgeVerifyForSettingsToggles, useAgeGateVerifyContent, useAgeGateVerifyContentForGuild, useShouldAgeVerifyForSettingsToggles, useShouldHideChannelContent, userCannotSeeNSFWContent, userNeedsAgeGate
 
-// Module 4337 (shouldAgeVerifyForAgeGate)
+// Module 4341 (shouldAgeVerifyForAgeGate)
 let GuildNSFWContentLevel;
 function shouldAgeVerifyForAgeGate() {
   const result = require(dependencyMap[9]).shouldShowTiggerPawtect();

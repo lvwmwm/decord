@@ -1,10 +1,10 @@
-// Module ID: 8450
-// Function ID: 67441
+// Module ID: 8454
+// Function ID: 67453
 // Name: CalendarIcon
 // Dependencies: []
 // Exports: CalendarIcon
 
-// Module 8450 (CalendarIcon)
+// Module 8454 (CalendarIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/CalendarIcon.tsx");

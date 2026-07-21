@@ -1,9 +1,9 @@
-// Module ID: 7131
-// Function ID: 57461
+// Module ID: 7135
+// Function ID: 57472
 // Name: _callSuper
 // Dependencies: []
 
-// Module 7131 (_callSuper)
+// Module 7135 (_callSuper)
 function _callSuper(arg0, arg1, arg2) {
   let items = arg2;
   const obj = callback2(arg1);
@@ -37,20 +37,20 @@ let tmp2 = (MessageType) => {
     constructor() {
       tmp = closure_3(this, CTAButton$Type);
       items = [, , , , ];
-      items[0] = { body: "YELLOW_NEW_72", guildId: 1, ao: "light_url", "": "scalar" };
+      items[0] = { 9223372036854775807: "YELLOW_NEW_72", 0: 1, 9223372036854775807: "light_url", no: "scalar" };
       items[1] = {
         T() {
-              const items = ["CANARY", callback(closure_1[6]).ButtonAction, "BUTTON_ACTION_"];
+              const items = [false, callback(closure_1[6]).ButtonAction, "BUTTON_ACTION_"];
               return items;
             }
       };
       items[2] = {};
-      obj = { emojiId: 0.25, emojiName: "PRIMARY_660", userId: 0.975 };
+      obj = { "Null": 0.975, "Null": "PRIMARY_230", "Null": 0.975 };
       obj.T = function T() {
         return callback(closure_1[7]).LocalizedString;
       };
       items[3] = obj;
-      obj = { emojiId: null, emojiName: null, userId: null };
+      obj = { "Null": 2417, "Null": -1854455552, "Null": 24182788 };
       obj.T = function T() {
         return callback(closure_1[8]).UInt64Value;
       };
@@ -65,7 +65,7 @@ let tmp2 = (MessageType) => {
   let obj = {
     key: "create",
     value(arr) {
-      let obj = {};
+      let obj = { "Null": 24, "Null": 8, "Null": 3 };
       const _Object = Object;
       obj = { enumerable: false, value: this };
       _Object.defineProperty(obj, CTAButton$Type(closure_1[9]).MESSAGE_TYPE, obj);
@@ -217,37 +217,37 @@ let tmp4 = (MessageType) => {
     constructor() {
       tmp = closure_3(this, MobileBottomSheet$Type);
       items = [, , , , , , , , ];
-      items[0] = { body: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002012870360051815, guildId: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003200674821102785, ao: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000030586585845, "": 2798595.4946969007 };
-      items[1] = { body: null, guildId: null, ao: null, "": null };
+      items[0] = {};
+      items[1] = { 9223372036854775807: 2417, 0: 487680, 9223372036854775807: 641859584, no: true };
       items[2] = {};
-      items[3] = { body: "rgba(0, 0, 0, 0.7)", guildId: 16, ao: "row", "": "center" };
-      obj = { emojiId: "filter_snapshot_name", emojiName: "scalar", userId: 9 };
+      items[3] = { 9223372036854775807: "rgba(0, 0, 0, 0.7)", 0: 16, 9223372036854775807: "row", no: "center" };
+      obj = { "Null": "filter_snapshot_name", "Null": "scalar", "Null": 9 };
       obj.T = function T() {
         return closure_8;
       };
       items[4] = obj;
-      obj = { emojiId: 18098992586570880000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, emojiName: 242311898690948470000000000000000000000000000000000000000000000000000000000000000000, userId: 190359856520326460000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 };
+      obj = { "Null": "channelId", "Null": "transform", "Null": "formatToPlainString" };
       obj.T = function T() {
         const items = [null, callback(closure_1[10]).DismissibleContent];
         return items;
       };
       items[5] = obj;
-      obj1 = { emojiId: "MUR", emojiName: "scalar", userId: "APPEAL_INGESTION_COLLECT_SIGNAL" };
+      obj1 = { "Null": "headMetaSocial", "Null": "scalar", "Null": "paymentSource" };
       obj1.T = function T() {
         return callback(closure_1[11]).HelpArticle;
       };
       items[6] = obj1;
-      obj2 = { emojiId: true, emojiName: true, userId: true };
+      obj2 = { "Null": true, "Null": true, "Null": true };
       obj2.T = function T() {
         return callback(closure_1[7]).LocalizedString;
       };
       items[7] = obj2;
-      obj3 = { emojiId: "message", emojiName: "PREMIUM_NITRO_PINK_DARK", userId: 1 };
+      obj3 = { "Null": "message", "Null": "PREMIUM_NITRO_PINK_DARK", "Null": 1 };
       obj3.T = function T() {
         return callback(closure_1[7]).LocalizedString;
       };
       items[8] = obj3;
-      items1 = [64649151];
+      items1 = [null];
       items1[1] = items;
       return closure_9(this, MobileBottomSheet$Type, items1);
     }

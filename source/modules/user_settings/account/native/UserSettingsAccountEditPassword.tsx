@@ -1,10 +1,10 @@
-// Module ID: 13550
-// Function ID: 102789
+// Module ID: 13557
+// Function ID: 102812
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 // Exports: default
 
-// Module 13550 (_isNativeReflectConstruct)
+// Module 13557 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -30,13 +30,13 @@ const tmp4 = arg1(dependencyMap[10]);
 ({ jsx: closure_17, jsxs: closure_18 } = arg1(dependencyMap[11]));
 let closure_19 = { newPassword: undefined, password: "" };
 let obj = arg1(dependencyMap[12]);
-obj = { onePass: { aze: false, azj: false } };
-obj = { 1851919026: "%Float64Array%", 1859607697: "communicationRank", 560252746: "%Float64Array%", borderRadius: importDefault(dependencyMap[13]).radii.xs };
+obj = { onePass: { bhk: false, bic: "internal" } };
+obj = { "Null": "text-sm/semibold", "Null": null, "Null": 1, borderRadius: importDefault(dependencyMap[13]).radii.xs };
 obj.unverifiedWrapper = obj;
 obj.container = { padding: 16 };
 obj.header = { marginBottom: 20 };
-obj.requiredActionsSubtitle = { concat: -0.0014069081515246523, now: -0.0001058445630777106 };
-obj.requiredActionsTitle = { height: 323420161, display: -2104950783 };
+obj.requiredActionsSubtitle = { "Bool(true)": "absolute", "Bool(true)": 0 };
+obj.requiredActionsTitle = { -9223372036854775808: null, 0: null };
 obj.image = {};
 let closure_20 = obj.createLegacyClassComponentStyles(obj);
 const tmp6 = (Component) => {

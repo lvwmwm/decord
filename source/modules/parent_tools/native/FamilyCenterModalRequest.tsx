@@ -1,10 +1,10 @@
-// Module ID: 11043
-// Function ID: 85946
+// Module ID: 11048
+// Function ID: 85967
 // Name: FamilyCenterModalRequestConfirm
 // Dependencies: []
 // Exports: default
 
-// Module 11043 (FamilyCenterModalRequestConfirm)
+// Module 11048 (FamilyCenterModalRequestConfirm)
 class FamilyCenterModalRequestConfirm {
   constructor(arg0) {
     userId = global.userId;
@@ -166,7 +166,7 @@ class FamilyCenterModalRequestConfirm {
       tmp43 = arg1;
       tmp44 = dependencyMap;
       tmp42 = jsx;
-      obj15 = { INTEGRATION_CREATE: "<string:3305963521>", ConstraintReasonCode: "<string:671547393>" };
+      obj15 = {};
       obj15.style = tmp.consent;
       intl4 = arg1(dependencyMap[18]).intl;
       tmp45 = importDefault;
@@ -217,15 +217,13 @@ class FamilyCenterModalRequestConfirm {
     items9[0] = tmp9(arg1(dependencyMap[15]).ModalContent, obj1);
     obj20 = {};
     obj21 = {};
-    obj22 = { <string:1522289750>: null, <string:570601313>: null };
-    obj22.disabled = isRequestingLink;
-    obj22.loading = isRequestingLink;
+    obj22 = { disabled: isRequestingLink, loading: isRequestingLink };
     intl5 = arg1(dependencyMap[18]).intl;
     obj22.text = intl5.string(importDefault(dependencyMap[19]).ISg34l);
     obj22.onPress = callback2;
     items10 = [, ];
     items10[0] = jsx(arg1(dependencyMap[25]).Button, obj22);
-    obj23 = {};
+    obj23 = { 9223372036854775807: false, -9223372036854775808: false };
     intl6 = arg1(dependencyMap[18]).intl;
     obj23.text = intl6.string(arg1(dependencyMap[18]).t.ETE/oC);
     obj23.onPress = importDefault(dependencyMap[26]).pop;
@@ -269,14 +267,12 @@ class FamilyCenterModalRequestSuccess {
     obj4.children = jsx(arg1(dependencyMap[27]).EnvelopeSpotIllustration, { scale: 0.7 });
     items1 = [, , ];
     items1[0] = jsx(View, obj4);
-    obj5 = { INTEGRATION_CREATE: 182714370, ConstraintReasonCode: 1091633154 };
-    obj5.style = tmp.header;
+    obj5 = { style: tmp.header };
     intl = arg1(dependencyMap[18]).intl;
     obj5.children = intl.string(importDefault(dependencyMap[19]).EpwfZl);
     items1[1] = jsx(arg1(dependencyMap[20]).Text, obj5);
     tmp13 = jsx;
-    obj6 = { INTEGRATION_CREATE: "<string:3305963521>", ConstraintReasonCode: "<string:671547393>" };
-    obj6.style = tmp.description;
+    obj6 = { style: tmp.description };
     intl2 = arg1(dependencyMap[18]).intl;
     obj7 = {};
     email = undefined;
@@ -376,13 +372,9 @@ class FamilyCenterModalRequestError {
     obj3.children = tmp15(tmp16, obj4);
     items3 = [, , ];
     items3[0] = tmp13(tmp14, obj3);
-    obj7 = { INTEGRATION_CREATE: 182714370, ConstraintReasonCode: 1091633154 };
-    obj7.style = tmp.header;
-    obj7.children = headerResult;
+    obj7 = { style: tmp.header, children: headerResult };
     items3[1] = jsx(arg1(dependencyMap[20]).Text, obj7);
-    obj8 = { INTEGRATION_CREATE: "<string:3305963521>", ConstraintReasonCode: "<string:671547393>" };
-    obj8.style = tmp.description;
-    obj8.children = descriptionResult;
+    obj8 = { style: tmp.description, children: descriptionResult };
     items3[2] = jsx(arg1(dependencyMap[20]).Text, obj8);
     obj2.children = items3;
     items4 = [, ];
@@ -431,9 +423,7 @@ function FamilyCenterPrereqScreen(primaryButton) {
   let obj = {};
   obj = { style: tmp.content };
   obj = { style: tmp.title, children: title };
-  const items = [callback(arg1(dependencyMap[20]).Text, obj), ];
-  const obj1 = { INTEGRATION_CREATE: "<string:3305963521>", ConstraintReasonCode: "<string:671547393>", style: tmp.description, children: description };
-  items[1] = callback(arg1(dependencyMap[20]).Text, obj1);
+  const items = [callback(arg1(dependencyMap[20]).Text, obj), callback(arg1(dependencyMap[20]).Text, { style: tmp.description, children: description })];
   obj.children = items;
   const items1 = [callback2(closure_6, obj), ];
   const obj2 = { children: callback(arg1(dependencyMap[25]).Button, { text: primaryButton.text, onPress: primaryButton.onPress }) };
@@ -508,7 +498,7 @@ function FamilyCenterConfirmAgeScreen(teenIdentity) {
   obj2.username = str;
   obj1.children = intl.formatToPlainString(importDefault(dependencyMap[19]).pQQMJ7, obj2);
   items[1] = callback(arg1(dependencyMap[20]).Text, obj1);
-  const obj3 = { INTEGRATION_CREATE: "<string:3305963521>", ConstraintReasonCode: "<string:671547393>", style: tmp.description };
+  const obj3 = { style: tmp.description };
   const intl2 = arg1(dependencyMap[18]).intl;
   obj3.children = intl2.format(importDefault(dependencyMap[19]).0o3yg8, { link: "https://support.discord.com/hc/articles/14155060633623" });
   items[2] = callback(arg1(dependencyMap[20]).Text, obj3);
@@ -621,12 +611,12 @@ let obj = arg1(dependencyMap[6]);
 obj = {};
 obj = { marginTop: importDefault(dependencyMap[7]).space.PX_16, marginBottom: importDefault(dependencyMap[7]).space.PX_16 };
 obj.headerText = obj;
-obj.art = { aze: "<string:709574929>", azj: "<string:410124290>" };
+obj.art = {};
 const tmp4 = arg1(dependencyMap[5]);
 obj.connectionHeader = { alignItems: "center", marginBottom: importDefault(dependencyMap[7]).space.PX_16 };
+const obj2 = { "Bool(false)": "isArray", "Bool(false)": "sa", "Bool(false)": "textAlign", "Bool(false)": "r", padding: importDefault(dependencyMap[7]).space.PX_8, backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_SURFACE_HIGH, borderRadius: importDefault(dependencyMap[7]).radii.round, marginBottom: importDefault(dependencyMap[7]).space.PX_24 };
+obj.headerIcons = obj2;
 const obj1 = { alignItems: "center", marginBottom: importDefault(dependencyMap[7]).space.PX_16 };
-obj.headerIcons = { padding: importDefault(dependencyMap[7]).space.PX_8, backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_SURFACE_HIGH, borderRadius: importDefault(dependencyMap[7]).radii.round, marginBottom: importDefault(dependencyMap[7]).space.PX_24 };
-const obj2 = { padding: importDefault(dependencyMap[7]).space.PX_8, backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_SURFACE_HIGH, borderRadius: importDefault(dependencyMap[7]).radii.round, marginBottom: importDefault(dependencyMap[7]).space.PX_24 };
 obj.ellipseGroup = { flexDirection: "row", marginHorizontal: importDefault(dependencyMap[7]).space.PX_12 };
 const obj3 = { flexDirection: "row", marginHorizontal: importDefault(dependencyMap[7]).space.PX_12 };
 obj.ellipse = { backgroundColor: importDefault(dependencyMap[7]).colors.ICON_MUTED, borderRadius: importDefault(dependencyMap[7]).radii.round };
@@ -638,20 +628,20 @@ obj.consent = { marginTop: importDefault(dependencyMap[7]).space.PX_8, textAlign
 let closure_15 = obj.createStyles(obj);
 let obj9 = arg1(dependencyMap[6]);
 const obj7 = {};
-const obj6 = { marginTop: importDefault(dependencyMap[7]).space.PX_8, textAlign: "center", paddingHorizontal: importDefault(dependencyMap[7]).space.PX_16 };
-obj7.content = { paddingHorizontal: importDefault(dependencyMap[7]).space.PX_16 };
+const obj8 = { paddingTop: "Array", zIndex: "isArray", flexDirection: "content", alignItems: "r", paddingHorizontal: importDefault(dependencyMap[7]).space.PX_16 };
+obj7.content = obj8;
 obj7.textWrapper = { alignItems: "center" };
 obj9 = { marginBottom: importDefault(dependencyMap[7]).space.PX_8 };
 obj7.header = obj9;
 obj7.description = { textAlign: "center" };
-const obj8 = { paddingHorizontal: importDefault(dependencyMap[7]).space.PX_16 };
-obj7.illustration = { paddingBottom: importDefault(dependencyMap[7]).space.PX_24 };
+const obj10 = { justifyContent: true, alignItems: true, backgroundColor: true, alignSelf: true, width: true, paddingBottom: importDefault(dependencyMap[7]).space.PX_24 };
+obj7.illustration = obj10;
 let closure_16 = obj9.createStyles(obj7);
 let obj14 = arg1(dependencyMap[6]);
-const obj11 = { header: { bounces: null, keyboardShouldPersistTaps: null }, description: { textAlign: "center" } };
-const obj12 = { marginHorizontal: true, marginBottom: true, alignItems: true, flex: true, marginEnd: true, borderWidth: true, title: true, lineClamp: true, borderRadius: importDefault(dependencyMap[7]).radii.round, backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_SURFACE_HIGH };
-obj11.ring = obj12;
-const obj10 = { paddingBottom: importDefault(dependencyMap[7]).space.PX_24 };
+const obj11 = { header: { "Null": null, "Null": null }, description: { textAlign: "center" } };
+const obj6 = { marginTop: importDefault(dependencyMap[7]).space.PX_8, textAlign: "center", paddingHorizontal: importDefault(dependencyMap[7]).space.PX_16 };
+obj11.ring = { borderRadius: importDefault(dependencyMap[7]).radii.round, backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_SURFACE_HIGH };
+const obj12 = { borderRadius: importDefault(dependencyMap[7]).radii.round, backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_SURFACE_HIGH };
 obj11.iconContainer = { borderRadius: importDefault(dependencyMap[7]).radii.round, backgroundColor: importDefault(dependencyMap[7]).colors.STATUS_POSITIVE };
 obj14 = { backgroundColor: importDefault(dependencyMap[7]).colors.STATUS_POSITIVE };
 obj11.positive = obj14;
@@ -661,13 +651,13 @@ let closure_17 = obj14.createStyles(obj11);
 let obj20 = arg1(dependencyMap[6]);
 let closure_18 = obj20.createStyles({ container: {} });
 let obj21 = arg1(dependencyMap[6]);
-const obj16 = { content: {} };
+const obj16 = { content: { "Null": "Array", "Null": "isArray", "Null": "content", "Null": "r", "Null": "isArray" } };
 const obj15 = { backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_FEEDBACK_CRITICAL };
 obj16.title = { textAlign: "center", marginBottom: importDefault(dependencyMap[7]).space.PX_8 };
 obj16.description = { textAlign: "center" };
 let closure_19 = obj21.createStyles(obj16);
 const obj17 = { textAlign: "center", marginBottom: importDefault(dependencyMap[7]).space.PX_8 };
-const obj18 = { content: {} };
+const obj18 = { content: { "Null": "Array", "Null": "isArray", "Null": "content", "Null": "r", "Null": "isArray" } };
 const obj25 = arg1(dependencyMap[6]);
 obj18.art = { marginBottom: importDefault(dependencyMap[7]).space.PX_24 };
 obj20 = { textAlign: "center", marginBottom: importDefault(dependencyMap[7]).space.PX_8 };

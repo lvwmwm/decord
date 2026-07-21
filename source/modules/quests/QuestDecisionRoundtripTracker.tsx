@@ -1,9 +1,9 @@
-// Module ID: 9441
-// Function ID: 73578
+// Module ID: 9445
+// Function ID: 73592
 // Name: trackRoundtrip
 // Dependencies: []
 
-// Module 9441 (trackRoundtrip)
+// Module 9445 (trackRoundtrip)
 function trackRoundtrip(apiResponseTimestamp) {
   if (Math.random() <= 0.1) {
     let diff = null;
@@ -93,7 +93,7 @@ let tmp2 = () => {
           }
         }
       }
-      obj = { allowHeading: 49358848, allowList: 49357056, allowLinks: 49357824, includeKeyboardHeight: 35148032, includeCustomKeyboardHeight: 372, display: 6144, initialSendTimestamp: Date.now(), endpoint, callerSource, previousAdDecision: tmp2, placement: tmp };
+      obj = { <string:1451975084>: 49365248, <string:2866586311>: 49363456, <string:2895768266>: 49364224, <string:2832575607>: 35541248, <string:294061139>: 372, <string:1378223408>: 6144, initialSendTimestamp: Date.now(), endpoint, callerSource, previousAdDecision: tmp2, placement: tmp };
       const pendingRequests = this.pendingRequests;
       const result = pendingRequests.set(endpoint, obj);
       const timerId = setTimeout(() => {

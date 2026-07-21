@@ -1,17 +1,17 @@
-// Module ID: 12956
-// Function ID: 98602
+// Module ID: 12963
+// Function ID: 98625
 // Name: StepModal
 // Dependencies: []
 // Exports: StepModal
 
-// Module 12956 (StepModal)
+// Module 12963 (StepModal)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 const View = arg1(dependencyMap[2]).View;
 ({ jsx: closure_6, jsxs: closure_7 } = arg1(dependencyMap[3]));
 let obj = arg1(dependencyMap[4]);
 obj = { container: { height: "100%" } };
-obj = { "Bool(false)": "half-infinity", "Bool(false)": "half-zero", "Bool(false)": "half-infinity", "Bool(false)": "half-zero", "Bool(false)": "half-even", "Bool(false)": "literal", height: arg1(dependencyMap[5]).NAV_BAR_HEIGHT };
+obj = { count: false, space: false, push: false, sk: false, borderRadius: false, type: false, height: arg1(dependencyMap[5]).NAV_BAR_HEIGHT };
 obj.stepContainer = obj;
 let closure_8 = obj.createStyles(obj);
 const tmp2 = arg1(dependencyMap[3]);

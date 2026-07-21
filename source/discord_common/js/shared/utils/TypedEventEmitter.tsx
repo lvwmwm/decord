@@ -1,9 +1,9 @@
-// Module ID: 4289
-// Function ID: 37447
+// Module ID: 4293
+// Function ID: 37495
 // Name: TypedEventEmitter
 // Dependencies: []
 
-// Module 4289 (TypedEventEmitter)
+// Module 4293 (TypedEventEmitter)
 let closure_2 = importDefault(dependencyMap[0]);
 let closure_3 = importDefault(dependencyMap[1]);
 const tmp2 = () => {

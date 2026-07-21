@@ -1,10 +1,10 @@
-// Module ID: 15034
-// Function ID: 113217
+// Module ID: 15041
+// Function ID: 113241
 // Name: renderChannelPressableWrapper
 // Dependencies: []
 // Exports: renderChannelPressableWrapper
 
-// Module 15034 (renderChannelPressableWrapper)
+// Module 15041 (renderChannelPressableWrapper)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 const jsx = arg1(dependencyMap[2]).jsx;
@@ -27,7 +27,7 @@ export const renderChannelPressableWrapper = function renderChannelPressableWrap
   } else {
     marginThread = flag ? layout2.marginPanels : layout2.margin;
   }
-  const items = [marginThread, { marginBottom: null, borderRadius: "\u{1F469}\u{1F3FC}\u200D\u{1F9B1}", backgroundColor: true }];
+  const items = [marginThread, { accessible: null, count: "\u{1F469}\u{1F3FC}\u200D\u{1F9B1}", "Bool(false)": true }];
   obj.style = items;
   obj.children = children;
   return <View {...obj} />;

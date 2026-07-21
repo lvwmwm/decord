@@ -1,10 +1,10 @@
-// Module ID: 10861
-// Function ID: 84498
+// Module ID: 10867
+// Function ID: 84521
 // Name: openAddMembersActionSheet
 // Dependencies: []
 // Exports: openAddMembersActionSheet, openChannelMembersActionSheet
 
-// Module 10861 (openAddMembersActionSheet)
+// Module 10867 (openAddMembersActionSheet)
 const AnalyticEvents = require(dependencyMap[0]).AnalyticEvents;
 const _module = require(dependencyMap[6]);
 const result = _module.fileFinishedImporting("modules/channel_permissions/native/ChannelPermissionsUtils.tsx");

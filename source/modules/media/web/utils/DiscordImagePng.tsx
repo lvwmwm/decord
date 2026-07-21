@@ -1,9 +1,9 @@
-// Module ID: 4738
-// Function ID: 41094
+// Module ID: 4740
+// Function ID: 41135
 // Name: DiscordImagePng
 // Dependencies: []
 
-// Module 4738 (DiscordImagePng)
+// Module 4740 (DiscordImagePng)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 let closure_5 = importDefault(dependencyMap[2]);

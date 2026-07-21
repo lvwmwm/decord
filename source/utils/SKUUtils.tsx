@@ -1,10 +1,10 @@
-// Module ID: 8619
-// Function ID: 68302
+// Module ID: 8623
+// Function ID: 68314
 // Name: GameGenres
 // Dependencies: []
 // Exports: canUserInstall, getGenreIdFromURLSlug, getGenreText, getGenreURLSlugFromId, getReadablePreorderReleaseDate, getSKUIdFromURL, isThirdPartySKU
 
-// Module 8619 (GameGenres)
+// Module 8623 (GameGenres)
 let closure_3 = importDefault(dependencyMap[0]);
 const tmp2 = arg1(dependencyMap[1]);
 const GameGenres = tmp2.GameGenres;

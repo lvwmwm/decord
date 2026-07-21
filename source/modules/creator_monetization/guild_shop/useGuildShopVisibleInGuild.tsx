@@ -1,10 +1,10 @@
-// Module ID: 5637
-// Function ID: 48170
+// Module ID: 5639
+// Function ID: 48212
 // Name: useGuildShopVisibleInGuild
 // Dependencies: []
 // Exports: isGuildShopVisibleInGuild, useGuildShopVisibleInGuild
 
-// Module 5637 (useGuildShopVisibleInGuild)
+// Module 5639 (useGuildShopVisibleInGuild)
 const GuildFeatures = require(dependencyMap[0]).GuildFeatures;
 const _module = require(dependencyMap[5]);
 const result = _module.fileFinishedImporting("modules/creator_monetization/guild_shop/useGuildShopVisibleInGuild.tsx");

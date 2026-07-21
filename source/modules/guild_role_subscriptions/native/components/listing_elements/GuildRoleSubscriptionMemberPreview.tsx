@@ -1,10 +1,10 @@
-// Module ID: 13996
-// Function ID: 106492
+// Module ID: 14003
+// Function ID: 106515
 // Name: GuildRoleSubscriptionMemberPreview
 // Dependencies: []
 // Exports: GuildRoleSubscriptionMemberPreview
 
-// Module 13996 (GuildRoleSubscriptionMemberPreview)
+// Module 14003 (GuildRoleSubscriptionMemberPreview)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 let closure_5 = importDefault(dependencyMap[2]);
@@ -13,9 +13,9 @@ let obj = arg1(dependencyMap[4]);
 obj = {};
 obj = { borderRadius: importDefault(dependencyMap[5]).radii.xs, borderColor: importDefault(dependencyMap[5]).colors.BORDER_SUBTLE, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_LOW };
 obj.container = obj;
-obj.avatar = { backgroundColor: -235274238, accessibilityRole: -235274238, -45001119: -235274238 };
+obj.avatar = {};
 obj.content = { marginStart: 16 };
-obj.contextRow = { -9223372036854775808: true, filter: true };
+obj.contextRow = {};
 let closure_9 = obj.createStyles(obj);
 const tmp3 = arg1(dependencyMap[3]);
 const result = arg1(dependencyMap[16]).fileFinishedImporting("modules/guild_role_subscriptions/native/components/listing_elements/GuildRoleSubscriptionMemberPreview.tsx");
@@ -90,7 +90,7 @@ export const GuildRoleSubscriptionMemberPreview = function GuildRoleSubscription
     items3[1] = tmp19Result;
     const obj9 = { size: 8 };
     items3[2] = callback(arg1(dependencyMap[14]).Spacer, obj9);
-    items3[3] = callback(arg1(dependencyMap[12]).Text, { "Bool(false)": "x", "Bool(false)": "enabled", "Bool(false)": "isArray" });
+    items3[3] = callback(arg1(dependencyMap[12]).Text, { "Bool(false)": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000226520928722202, "Bool(false)": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000015837483642314752, "Bool(false)": -0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000030192904449987895 });
     obj2.children = items3;
     const items5 = [closure_8(View, obj2), ];
     obj10 = { style: textStyle, children: content };

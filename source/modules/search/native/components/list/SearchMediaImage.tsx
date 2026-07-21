@@ -1,10 +1,10 @@
-// Module ID: 15225
-// Function ID: 114969
+// Module ID: 15232
+// Function ID: 114993
 // Name: SearchMediaObscurityIcon
 // Dependencies: []
 // Exports: SearchAttachmentMediaImage, SearchComponentMediaImage, SearchEmbedMediaImage, SearchFileMediaImage, SearchSoundMediaImage
 
-// Module 15225 (SearchMediaObscurityIcon)
+// Module 15232 (SearchMediaObscurityIcon)
 function SearchMediaObscurityIcon(obscureReason) {
   obscureReason = obscureReason.obscureReason;
   const arg1 = obscureReason;
@@ -63,7 +63,7 @@ let closure_8 = importDefault(dependencyMap[3]);
 const tmp2 = arg1(dependencyMap[2]);
 ({ jsx: closure_9, Fragment: closure_10, jsxs: closure_11 } = arg1(dependencyMap[4]));
 const tmp3 = arg1(dependencyMap[4]);
-let closure_12 = arg1(dependencyMap[5]).createStyles({ container: {}, sound: {} });
+let closure_12 = arg1(dependencyMap[5]).createStyles({ container: { "Null": null, "Null": null }, sound: { "Null": null, "Null": null } });
 let closure_13 = importAllResult.memo((containerWidth) => {
   let containerHeight;
   let containerStyle;
@@ -153,7 +153,7 @@ export const SearchAttachmentMediaImage = function SearchAttachmentMediaImage(at
   let channelId;
   attachment = attachment.attachment;
   const arg1 = attachment;
-  let obj = {};
+  let obj = { "Bool(true)": "spring", "Bool(true)": "linear", "Bool(true)": "easeInEaseOut" };
   ({ channelId, authorId } = attachment);
   Object.setPrototypeOf(null);
   const merged = Object.assign(attachment, obj);
@@ -177,7 +177,7 @@ export const SearchEmbedMediaImage = function SearchEmbedMediaImage(embed) {
   embed = embed.embed;
   const arg1 = embed;
   ({ sources: closure_1, messageId: closure_2 } = embed);
-  let obj = { round: false, hash: null, assign: "", hash: null, body: null };
+  let obj = {};
   ({ channelId, authorId } = embed);
   Object.setPrototypeOf(null);
   const merged = Object.assign(embed, obj);
@@ -236,7 +236,7 @@ export const SearchSoundMediaImage = function SearchSoundMediaImage(height) {
   const obj = {};
   const items1 = [callback4().sound, height.containerStyle, importAllResult.useMemo(() => ({ height, width }), items)];
   obj.style = items1;
-  obj.children = callback2(arg1(dependencyMap[20]).CirclePlayIcon, { flexDirection: null, alignItems: false });
+  obj.children = callback2(arg1(dependencyMap[20]).CirclePlayIcon, {});
   return callback2(closure_7, obj);
 };
 export const SearchFileMediaImage = function SearchFileMediaImage(height) {
@@ -263,7 +263,7 @@ export const SearchComponentMediaImage = function SearchComponentMediaImage(unfu
   const importDefault = sources;
   const isBot = unfurledMediaItem.isBot;
   const dependencyMap = isBot;
-  let obj = { 9223372036854775807: false, -9223372036854775808: null, type: "", component: null, key: null };
+  let obj = {};
   ({ channelId, authorId } = unfurledMediaItem);
   Object.setPrototypeOf(null);
   const merged = Object.assign(unfurledMediaItem, obj);

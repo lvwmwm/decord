@@ -1,10 +1,10 @@
-// Module ID: 10731
-// Function ID: 83428
+// Module ID: 10737
+// Function ID: 83451
 // Name: getDeafStates
 // Dependencies: []
 // Exports: default
 
-// Module 10731 (getDeafStates)
+// Module 10737 (getDeafStates)
 function getDeafStates(channel, closure_12, closure_9, closure_7) {
   let obj = closure_12;
   let obj2 = closure_9;

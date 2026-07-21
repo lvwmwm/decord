@@ -1,10 +1,10 @@
-// Module ID: 15319
-// Function ID: 116619
+// Module ID: 15326
+// Function ID: 116643
 // Name: AddFriendScreen
 // Dependencies: []
 // Exports: default
 
-// Module 15319 (AddFriendScreen)
+// Module 15326 (AddFriendScreen)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 ({ View: closure_5, ScrollView: closure_6 } = arg1(dependencyMap[2]));
@@ -17,7 +17,7 @@ let obj = arg1(dependencyMap[7]);
 obj = { headerText: {}, subheaderText: {} };
 obj = { marginTop: 16, backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_BASE_LOWER };
 obj.input = obj;
-obj.otherOptionsContainer = { 0: "<string:16777479>", 9223372036854775807: "<string:36295491>" };
+obj.otherOptionsContainer = {};
 obj.rowContainer = { marginTop: 8 };
 const tmp3 = arg1(dependencyMap[6]);
 obj.background = { backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_BASE_LOWER };
@@ -42,7 +42,7 @@ export default function AddFriendScreen(navigation) {
       let obj = contactSyncAccount(closure_2[10]);
       userTag = obj.getUserTag(currentUser);
     }
-    contactSyncAccount(closure_2[11]).track(constants.FRIEND_ADD_VIEWED, { "Null": null, "Null": null });
+    contactSyncAccount(closure_2[11]).track(constants.FRIEND_ADD_VIEWED, { 9223372036854775807: null, 9223372036854775807: null });
     const intl = navigation(closure_2[12]).intl;
     obj = { url: "" + location.protocol + window.GLOBAL_ENV.WEBAPP_ENDPOINT, username: userTag };
     const obj2 = contactSyncAccount(closure_2[11]);
@@ -81,7 +81,7 @@ export default function AddFriendScreen(navigation) {
   obj = {};
   const items1 = [callback2(importDefault(dependencyMap[16]), { absolute: true }), ];
   obj = { keyboardShouldPersistTaps: "handled", style: tmp.background };
-  obj1 = { 0: 24, 9223372036854775807: 24, 0: null, -9223372036854775808: "aa9c26c29990ba7a6584e51ab5c56efa", style: tmp.headerText };
+  obj1 = { 1501064855: 24, -1267889981: 24, -1145697943: null, -1266241916: "aa9c26c29990ba7a6584e51ab5c56efa", style: tmp.headerText };
   const intl = arg1(dependencyMap[12]).intl;
   obj1.children = intl.string(arg1(dependencyMap[12]).t.GWMTSE);
   const items2 = [callback2(arg1(dependencyMap[17]).Text, obj1), , , ];
@@ -91,7 +91,7 @@ export default function AddFriendScreen(navigation) {
   items2[1] = callback2(arg1(dependencyMap[17]).Text, obj2);
   items2[2] = callback2(importDefault(dependencyMap[18]), { style: tmp.input, autoFocusInput: false, sourcePage: navigation.route.params.sourcePage });
   const obj4 = { style: tmp.otherOptionsContainer };
-  const obj5 = { 9223372036854775807: "key", 9223372036854775807: "Text", 9223372036854775807: "flags" };
+  const obj5 = { alignItems: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010816814205333764, justifyContent: 9126805508.5, backgroundColor: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002865925076100407 };
   const intl3 = arg1(dependencyMap[12]).intl;
   obj5.children = intl3.string(arg1(dependencyMap[12]).t.dukg0Z);
   const items3 = [callback2(arg1(dependencyMap[17]).Text, obj5), ];

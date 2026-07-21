@@ -1,10 +1,10 @@
-// Module ID: 7801
-// Function ID: 62240
+// Module ID: 7805
+// Function ID: 62252
 // Name: hasFetchedColors
 // Dependencies: []
 // Exports: default, maybeFetchColors, useHasFetchedColors
 
-// Module 7801 (hasFetchedColors)
+// Module 7805 (hasFetchedColors)
 function hasFetchedColors(image_url) {
   return null != obj.getState().palette[image_url];
 }

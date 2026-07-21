@@ -1,10 +1,10 @@
-// Module ID: 15574
-// Function ID: 118859
+// Module ID: 15581
+// Function ID: 118883
 // Name: Loading
 // Dependencies: []
 // Exports: default
 
-// Module 15574 (Loading)
+// Module 15581 (Loading)
 function Loading() {
   const tmp = callback5();
   const items = [];
@@ -36,12 +36,12 @@ const tmp3 = arg1(dependencyMap[6]);
 ({ jsx: closure_13, Fragment: closure_14, jsxs: closure_15 } = arg1(dependencyMap[8]));
 let obj = arg1(dependencyMap[9]);
 obj = {};
-obj = { 396577459: "redesign/message-preview/semibold", -380404912: "primary", 791211009: false, 1359503782: 600, borderRadius: importDefault(dependencyMap[10]).radii.sm, backgroundColor: importDefault(dependencyMap[10]).colors.BACKGROUND_MOD_MUTED };
+obj = { <string:2072385530>: "redesign/message-preview/semibold", <string:503443283>: "primary", <string:1638258217>: false, <string:1019498760>: 600, borderRadius: importDefault(dependencyMap[10]).radii.sm, backgroundColor: importDefault(dependencyMap[10]).colors.BACKGROUND_MOD_MUTED };
 obj.placeholderHeader = obj;
-const obj1 = { paddingVertical: 43429554630913340000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, flexDirection: 216209880155298300000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, alignItems: 12236022931463798000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, borderRadius: importDefault(dependencyMap[10]).radii.sm, backgroundColor: importDefault(dependencyMap[10]).colors.BACKGROUND_MOD_MUTED };
-obj.placeholderLabel = obj1;
-obj.emptyState = { backgroundColor: "transparent" };
 const tmp4 = arg1(dependencyMap[8]);
+obj.placeholderLabel = { borderRadius: importDefault(dependencyMap[10]).radii.sm, backgroundColor: importDefault(dependencyMap[10]).colors.BACKGROUND_MOD_MUTED };
+obj.emptyState = { backgroundColor: "transparent" };
+const obj1 = { borderRadius: importDefault(dependencyMap[10]).radii.sm, backgroundColor: importDefault(dependencyMap[10]).colors.BACKGROUND_MOD_MUTED };
 obj.searchAndShareContainer = { borderTopWidth: 1, borderColor: importDefault(dependencyMap[10]).colors.BORDER_SUBTLE, marginTop: importDefault(dependencyMap[10]).space.PX_8, paddingVertical: importDefault(dependencyMap[10]).space.PX_8, paddingHorizontal: importDefault(dependencyMap[10]).space.PX_12, flexDirection: "column", gap: importDefault(dependencyMap[10]).space.PX_12 };
 let closure_16 = obj.createStyles(obj);
 const obj2 = { borderTopWidth: 1, borderColor: importDefault(dependencyMap[10]).colors.BORDER_SUBTLE, marginTop: importDefault(dependencyMap[10]).space.PX_8, paddingVertical: importDefault(dependencyMap[10]).space.PX_8, paddingHorizontal: importDefault(dependencyMap[10]).space.PX_12, flexDirection: "column", gap: importDefault(dependencyMap[10]).space.PX_12 };
@@ -134,7 +134,7 @@ export default function ActivityInviteSheet(activity) {
     });
   }, []);
   obj = { value: analyticsLocations };
-  obj = { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null };
+  obj = { <string:466257670>: null, <string:1723177918>: null, <string:1549967611>: null };
   let tmp16 = null != first;
   if (!tmp16) {
     tmp16 = !tmp12;
@@ -156,7 +156,7 @@ export default function ActivityInviteSheet(activity) {
     const obj3 = {};
     const obj4 = {};
     const obj5 = { style: tmp.searchAndShareContainer };
-    const obj6 = { "Null": false, "Null": false, onChange: arg1(closure_2[19]).searchInviteSuggestions };
+    const obj6 = { "Null": null, "Null": null, onChange: arg1(closure_2[19]).searchInviteSuggestions };
     const intl2 = arg1(closure_2[22]).intl;
     obj6.placeholder = intl2.string(arg1(closure_2[22]).t.iI1gMg);
     obj5.children = callback3(arg1(closure_2[25]).SearchField, obj6);

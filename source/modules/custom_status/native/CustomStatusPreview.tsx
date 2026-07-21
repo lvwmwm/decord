@@ -1,10 +1,10 @@
-// Module ID: 11887
-// Function ID: 92057
+// Module ID: 11894
+// Function ID: 92080
 // Name: CustomStatusPreview
 // Dependencies: []
 // Exports: default
 
-// Module 11887 (CustomStatusPreview)
+// Module 11894 (CustomStatusPreview)
 let closure_3 = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 ({ PROFILE_CONTENT_WITHOUT_STATUS_TOP_PADDING: closure_5, UserProfileThemeTypes: closure_6 } = arg1(dependencyMap[2]));

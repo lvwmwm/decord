@@ -1,10 +1,10 @@
-// Module ID: 8393
-// Function ID: 66816
+// Module ID: 8397
+// Function ID: 66828
 // Name: EditGuildEventChannelSelection
 // Dependencies: []
 // Exports: default
 
-// Module 8393 (EditGuildEventChannelSelection)
+// Module 8397 (EditGuildEventChannelSelection)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 let closure_5 = importDefault(dependencyMap[2]);
@@ -16,10 +16,10 @@ const tmp3 = arg1(dependencyMap[6]);
 ({ jsx: closure_11, jsxs: closure_12 } = arg1(dependencyMap[7]));
 let obj = arg1(dependencyMap[8]);
 obj = { container: { flexDirection: "column" } };
-obj = { "Bool(true)": null, "Bool(true)": null, "Bool(true)": null, backgroundColor: importDefault(dependencyMap[9]).colors.REDESIGN_BUTTON_TERTIARY_BACKGROUND };
+obj = { padding: "Next", paddingBottom: null, flexDirection: null, backgroundColor: importDefault(dependencyMap[9]).colors.REDESIGN_BUTTON_TERTIARY_BACKGROUND };
 obj.channelSelectorButton = obj;
 obj.channelIcon = { marginRight: 8 };
-obj.channelTypeText = {};
+obj.channelTypeText = { right: "P", type: 40 };
 obj.channelNameText = { flex: 1 };
 let closure_13 = obj.createStyles(obj);
 const tmp4 = arg1(dependencyMap[7]);
@@ -73,7 +73,7 @@ export default function EditGuildEventChannelSelection(guild) {
   }
   obj = { style: items3 };
   const items3 = [tmp.container, guild.style];
-  obj = { Promise: false, marginTop: false, flags: false, style: tmp.channelTypeText, children: stringResult };
+  obj = { style: tmp.channelTypeText, children: stringResult };
   const items4 = [callback(arg1(dependencyMap[19]).Text, obj), ];
   obj1 = { accessibilityLabel: stringResult };
   const intl2 = arg1(dependencyMap[18]).intl;

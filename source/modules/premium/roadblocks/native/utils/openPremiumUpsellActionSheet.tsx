@@ -1,13 +1,13 @@
-// Module ID: 7938
-// Function ID: 63351
+// Module ID: 7942
+// Function ID: 63363
 // Name: openPremiumUpsellActionSheet
-// Dependencies: [31, 33, 7865, 2]
+// Dependencies: [31, 33, 7869, 2]
 // Exports: default
 
-// Module 7938 (openPremiumUpsellActionSheet)
-import keys from "keys";
+// Module 7942 (openPremiumUpsellActionSheet)
+import result2 from "result2";
 
-const result = keys.fileFinishedImporting("modules/premium/roadblocks/native/utils/openPremiumUpsellActionSheet.tsx");
+const result = result2.fileFinishedImporting("modules/premium/roadblocks/native/utils/openPremiumUpsellActionSheet.tsx");
 
 export default function openPremiumUpsellActionSheet(featureName) {
   let obj = importDefault(dependencyMap[0]);

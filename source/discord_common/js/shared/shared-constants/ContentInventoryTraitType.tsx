@@ -1,9 +1,9 @@
-// Module ID: 7805
-// Function ID: 62316
+// Module ID: 7809
+// Function ID: 62328
 // Name: ContentInventoryTraitType
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 7805 (ContentInventoryTraitType)
+// Module 7809 (ContentInventoryTraitType)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_common/js/shared/shared-constants/ContentInventoryTraitType.tsx");
 

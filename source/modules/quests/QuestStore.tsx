@@ -1,9 +1,9 @@
-// Module ID: 6932
-// Function ID: 55322
+// Module ID: 6936
+// Function ID: 55332
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
-// Module 6932 (_isNativeReflectConstruct)
+// Module 6936 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -766,48 +766,42 @@ tmp5 = new tmp5(importDefault(dependencyMap[22]), {
     let adContext;
     let adDecisionData;
     let fetchedAt;
-    let fromExpirationClear;
     let metadataSealed;
     let placement;
     let quest;
     let responseTtlSeconds;
     let trafficMetadataSealed;
-    ({ quest, placement, adDecisionData, adContext, metadataSealed, trafficMetadataSealed, fromExpirationClear } = arg0);
+    ({ quest, placement, adDecisionData, adContext, metadataSealed, trafficMetadataSealed } = arg0);
     ({ responseTtlSeconds, fetchedAt } = arg0);
-    if (fromExpirationClear === undefined) {
-      fromExpirationClear = false;
-    }
     let closure_13 = Date.now();
     let closure_4 = false;
     const map = new Map(map);
     const result = map.set(placement, false);
-    if (!fromExpirationClear) {
-      const value = store5.get(placement);
-      if (null != value) {
-        value.succeed();
-      }
-      map2.delete(placement);
+    const value = store5.get(placement);
+    if (null != value) {
+      value.succeed();
     }
+    map2.delete(placement);
     if (obj3.getConfig({ location: "handleFetchQuestToDeliverSuccess" }).enableNewRequestBehavior) {
       let obj = {};
       let id;
       if (null != quest) {
         id = quest.id;
       }
-      let tmp12 = null;
+      let tmp9 = null;
       if (null != id) {
-        tmp12 = id;
+        tmp9 = id;
       }
-      obj.questId = tmp12;
+      obj.questId = tmp9;
       let id1;
       if (null != quest) {
         id1 = quest.id;
       }
-      let tmp14 = null;
+      let tmp11 = null;
       if (null != id1) {
-        tmp14 = id1;
+        tmp11 = id1;
       }
-      obj.adCreativeId = tmp14;
+      obj.adCreativeId = tmp11;
       obj.fetchedAt = fetchedAt;
       obj.ttlMillis = arg1(dependencyMap[19]).resolveResponseTtl(responseTtlSeconds);
       obj.adDecisionData = adDecisionData;
@@ -842,6 +836,25 @@ tmp5 = new tmp5(importDefault(dependencyMap[22]), {
     }
     const timestamp = Date.now();
     const result2 = map2.set(placement, timestamp + value.fail());
+  },
+  QUESTS_CLEAR_EXPIRED_QUEST_TO_DELIVER: function handleClearExpiredQuestToDeliver(placement) {
+    let fetchedAt;
+    let responseTtlSeconds;
+    placement = placement.placement;
+    ({ responseTtlSeconds, fetchedAt } = placement);
+    let obj = importDefault(dependencyMap[18]);
+    if (obj.getConfig({ location: "handleClearExpiredQuestToDeliver" }).enableNewRequestBehavior) {
+      let closure_4 = false;
+      const _Map = Map;
+      const map = new Map(map);
+      const result = map.set(placement, false);
+      obj = { -2108183326: "o", 1633701404: "o", fetchedAt, ttlMillis: arg1(dependencyMap[19]).resolveResponseTtl(responseTtlSeconds) };
+      const _Map2 = Map;
+      const map1 = new Map(map1);
+      const result1 = map1.set(placement, obj);
+    } else {
+      return false;
+    }
   },
   QUESTS_FETCH_EARNED_QUEST_TO_DELIVER_BEGIN: function handleFetchEarnedQuestToDeliverBegin(content) {
     let closure_7 = true;

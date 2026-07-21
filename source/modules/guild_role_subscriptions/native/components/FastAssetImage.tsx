@@ -1,10 +1,10 @@
-// Module ID: 13994
-// Function ID: 106481
+// Module ID: 14001
+// Function ID: 106504
 // Name: FastAssetImage
 // Dependencies: []
 // Exports: default
 
-// Module 13994 (FastAssetImage)
+// Module 14001 (FastAssetImage)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 const jsx = arg1(dependencyMap[2]).jsx;

@@ -1,9 +1,9 @@
-// Module ID: 5599
-// Function ID: 47515
+// Module ID: 5601
+// Function ID: 47557
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
-// Module 5599 (_isNativeReflectConstruct)
+// Module 5601 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -89,7 +89,7 @@ const secondaryIndexMap = new arg1(dependencyMap[14]).SecondaryIndexMap(function
 let closure_18 = [];
 let closure_19 = [];
 let closure_20 = [];
-const f47525 = () => {
+const f47567 = () => {
   let values = secondaryIndexMap.values(constants.FAVORITE);
   values = secondaryIndexMap.values(constants.DEFAULT);
   let tmp = closure_18 === values;

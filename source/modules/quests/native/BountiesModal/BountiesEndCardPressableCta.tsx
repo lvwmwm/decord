@@ -1,10 +1,10 @@
-// Module ID: 13810
-// Function ID: 104468
+// Module ID: 13817
+// Function ID: 104491
 // Name: BountiesEndCardPressableCta
 // Dependencies: []
 // Exports: default
 
-// Module 13810 (BountiesEndCardPressableCta)
+// Module 13817 (BountiesEndCardPressableCta)
 let closure_3 = importAll(dependencyMap[0]);
 ({ Pressable: closure_4, View: closure_5 } = arg1(dependencyMap[1]));
 const END_CARD_IMAGE_SIZE = arg1(dependencyMap[2]).END_CARD_IMAGE_SIZE;
@@ -17,7 +17,7 @@ let closure_9 = arg1(dependencyMap[4]).createStyles(() => {
   obj.image = obj;
   obj = { gap: importDefault(dependencyMap[5]).space.PX_4, alignItems: "center", marginTop: importDefault(dependencyMap[5]).space.PX_12 };
   obj.info = obj;
-  obj.ctaContainer = { 9223372036854775807: "withFriendRequestsIncoming", 9223372036854775807: "NOTIFICATION_SETTINGS_MODAL_OPEN" };
+  obj.ctaContainer = { "Bool(true)": "content", "Bool(true)": "a" };
   return obj;
 });
 const obj = arg1(dependencyMap[4]);

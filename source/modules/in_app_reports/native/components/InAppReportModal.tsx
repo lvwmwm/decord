@@ -1,10 +1,10 @@
-// Module ID: 7594
-// Function ID: 60880
+// Module ID: 7598
+// Function ID: 60892
 // Name: getScreens
 // Dependencies: []
 // Exports: default
 
-// Module 7594 (getScreens)
+// Module 7598 (getScreens)
 function getScreens(arg0) {
   let callbacks;
   ({ nodeMap: closure_0, reportType: closure_1, reportSubType: closure_2, successNodeId: closure_3, failNodeId: closure_4, callbacks, reportId: closure_5 } = arg0);

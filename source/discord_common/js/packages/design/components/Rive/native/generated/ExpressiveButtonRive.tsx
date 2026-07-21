@@ -4,12 +4,12 @@
 // Dependencies: []
 
 // Module 3923 (ExpressiveButtonRive)
-let closure_3 = ["aria-current", "activeClassName", "activeStyle", "className", "exact", "isActive"];
+let closure_3 = [true, true, true, true, true, true];
 let closure_4 = importDefault(dependencyMap[0]);
 const importAllResult = importAll(dependencyMap[1]);
 const jsx = arg1(dependencyMap[2]).jsx;
-let closure_7 = { Mobile Expressive Button Lightmode: { APP_EMBED_CLICKED: "BG_GRADIENT_DESERT_KHAKI_1", trackCommandSelected: 12.92, prevFatigableCandidate: "BG_GRADIENT_DESERT_KHAKI_2", 9223372036854775807: 32.92, 9223372036854775807: "BG_GRADIENT_DESERT_KHAKI_3" }, Ambient_Lightmode: { APP_EMBED_CLICKED: "BG_GRADIENT_DESERT_KHAKI_1", trackCommandSelected: 12.92, prevFatigableCandidate: "BG_GRADIENT_DESERT_KHAKI_2", 9223372036854775807: 32.92, 9223372036854775807: "BG_GRADIENT_DESERT_KHAKI_3" }, Mobile Expressive Button Dark Mode: { APP_EMBED_CLICKED: "BG_GRADIENT_DESERT_KHAKI_1", trackCommandSelected: 12.92, prevFatigableCandidate: "BG_GRADIENT_DESERT_KHAKI_2", 9223372036854775807: 32.92, 9223372036854775807: "BG_GRADIENT_DESERT_KHAKI_3" }, Ambient: { APP_EMBED_CLICKED: "BG_GRADIENT_DESERT_KHAKI_1", trackCommandSelected: 12.92, prevFatigableCandidate: "BG_GRADIENT_DESERT_KHAKI_2", 9223372036854775807: 32.92, 9223372036854775807: "BG_GRADIENT_DESERT_KHAKI_3" } };
-let closure_8 = { Mobile Expressive Button Lightmode: ["isActive"], Ambient_Lightmode: ["isActive"], Mobile Expressive Button Dark Mode: ["isActive"], Ambient: ["isActive"] };
+let closure_7 = { Mobile Expressive Button Lightmode: { revision: 65.12, population: "BG_GRADIENT_LOFI_VIBES_4", override: 96.23, fromCookie: "BG_GRADIENT_DESERT_KHAKI_1", assignmentSource: 12.92 }, Ambient_Lightmode: { revision: 65.12, population: "BG_GRADIENT_LOFI_VIBES_4", override: 96.23, fromCookie: "BG_GRADIENT_DESERT_KHAKI_1", assignmentSource: 12.92 }, Mobile Expressive Button Dark Mode: { revision: 65.12, population: "BG_GRADIENT_LOFI_VIBES_4", override: 96.23, fromCookie: "BG_GRADIENT_DESERT_KHAKI_1", assignmentSource: 12.92 }, Ambient: { revision: 65.12, population: "BG_GRADIENT_LOFI_VIBES_4", override: 96.23, fromCookie: "BG_GRADIENT_DESERT_KHAKI_1", assignmentSource: 12.92 } };
+let closure_8 = { Mobile Expressive Button Lightmode: [1358955054], Ambient_Lightmode: [1358955054], Mobile Expressive Button Dark Mode: [1358955054], Ambient: [1358955054] };
 let closure_9 = {
   Mobile Expressive Button Lightmode: function MobileExpressiveButtonLightmodeBindings(arg0) {
     let dataBinding;

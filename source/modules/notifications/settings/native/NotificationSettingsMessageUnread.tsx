@@ -1,10 +1,10 @@
-// Module ID: 10282
-// Function ID: 79408
+// Module ID: 10288
+// Function ID: 79427
 // Name: NotificationSettingsMessageUnread
 // Dependencies: []
 // Exports: NotificationSettingsChannelMessageUnread, NotificationSettingsGuildMessageUnread
 
-// Module 10282 (NotificationSettingsMessageUnread)
+// Module 10288 (NotificationSettingsMessageUnread)
 function NotificationSettingsMessageUnread(onPress) {
   const arg1 = onPress;
   const tmp = callback3();
@@ -13,11 +13,11 @@ function NotificationSettingsMessageUnread(onPress) {
   const found = unreadSelectOptions.find((value) => value.value === value.setting);
   obj = { style: onPress.style };
   obj = { style: tmp.header };
-  const obj1 = { INTEGRATION_CREATE: null, ConstraintReasonCode: null, style: tmp.headerTitle };
+  const obj1 = { style: tmp.headerTitle };
   const intl = arg1(dependencyMap[7]).intl;
   obj1.children = intl.string(arg1(dependencyMap[7]).t.Tqd1Af);
   const items = [callback(arg1(dependencyMap[6]).Text, obj1), ];
-  const obj2 = { INTEGRATION_CREATE: 16, ConstraintReasonCode: true };
+  const obj2 = {};
   const intl2 = arg1(dependencyMap[7]).intl;
   obj2.children = intl2.string(arg1(dependencyMap[7]).t.RpQgm5);
   items[1] = callback(arg1(dependencyMap[6]).Text, obj2);
@@ -55,10 +55,10 @@ const View = arg1(dependencyMap[1]).View;
 ({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[2]));
 let obj = arg1(dependencyMap[3]);
 obj = {};
-obj = { ip: "Float16Array", op: "applicationCommandItem", w: true, h: true, nm: null, backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_BASE_LOWEST, borderColor: importDefault(dependencyMap[4]).colors.BACKGROUND_MOD_SUBTLE };
+obj = { 1: true, 2: true, flex: true, paddingHorizontal: true, justifyContent: true, backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_BASE_LOWEST, borderColor: importDefault(dependencyMap[4]).colors.BACKGROUND_MOD_SUBTLE };
 obj.card = obj;
-obj.cta = { accessible: "audio", id: "architecture" };
-obj.label = { accessible: null, id: null };
+obj.cta = {};
+obj.label = { "Null": null, "Null": null };
 obj.header = { marginBottom: 8 };
 obj.headerTitle = { marginBottom: 4 };
 let closure_6 = obj.createStyles(obj);

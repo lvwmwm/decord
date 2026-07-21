@@ -1,10 +1,10 @@
-// Module ID: 4181
-// Function ID: 35957
+// Module ID: 4185
+// Function ID: 36005
 // Name: isUserPremiumTypeForClipsEarlyAccess
 // Dependencies: []
 // Exports: areClipsAvailable, isScreenshotKeybindEnabled, useIsClipsAvailable, useScreenshotKeybindEnabled
 
-// Module 4181 (isUserPremiumTypeForClipsEarlyAccess)
+// Module 4185 (isUserPremiumTypeForClipsEarlyAccess)
 function isUserPremiumTypeForClipsEarlyAccess(currentUser) {
   let premiumType;
   if (null != currentUser) {
@@ -16,7 +16,7 @@ let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 const PremiumTypes = arg1(dependencyMap[2]).PremiumTypes;
 let obj = arg1(dependencyMap[3]);
-obj = { "Null": "staging", "Null": "staging", defaultConfig: {}, variations: { [1]: { "Null": 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000021043611947808288, "Null": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000053357352779429986 }, [2]: { "Null": null, "Null": null } } };
+obj = { margin: null, paddingHorizontal: null, defaultConfig: { "Bool(true)": null, "Bool(true)": null }, variations: { [1]: { "Bool(true)": true, "Bool(true)": true }, [2]: { "Bool(true)": null, "Bool(true)": null } } };
 const apexExperiment = obj.createApexExperiment(obj);
 const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/clips/ClipsExperiment.tsx");
 

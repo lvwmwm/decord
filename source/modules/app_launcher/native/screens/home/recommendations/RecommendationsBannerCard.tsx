@@ -1,10 +1,10 @@
-// Module ID: 11193
-// Function ID: 87192
+// Module ID: 11199
+// Function ID: 87215
 // Name: RecommendationsBannerCard
 // Dependencies: []
 // Exports: default
 
-// Module 11193 (RecommendationsBannerCard)
+// Module 11199 (RecommendationsBannerCard)
 let closure_3 = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 const EMPTY_STRING_SNOWFLAKE_ID = arg1(dependencyMap[2]).EMPTY_STRING_SNOWFLAKE_ID;
@@ -13,10 +13,10 @@ let obj = arg1(dependencyMap[4]);
 obj = {};
 obj = { borderRadius: importDefault(dependencyMap[5]).radii.lg, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_SURFACE_HIGH, width: "100%", overflow: "hidden" };
 obj.container = obj;
-obj.banner = {};
-const obj1 = { "Bool(false)": "Array", "Bool(false)": "isArray", "Bool(false)": "View", "Bool(false)": "accessible", padding: importDefault(dependencyMap[5]).space.PX_16 };
+obj.banner = { -1716629078: null, 1375445090: null, -698284748: null };
+const obj1 = { 9223372036854775807: true, 9223372036854775807: true, 9223372036854775807: true, 0: true, padding: importDefault(dependencyMap[5]).space.PX_16 };
 obj.appDetailsContainer = obj1;
-const obj2 = { "Bool(false)": "url(#c)", "Bool(false)": "M88.257 54.83l13.03 11.293 3.036 2.635c.374.33.841.612 1.308.847.84.33 1.681.423 2.522.235 2.615-.565 4.437-3.011 4.343-5.694 0-.329 0-.611-.093-.94-.187-1.13-.888-2.071-1.868-2.636l-3.643-2.117-15.086-8.705a17.593 17.593 0 01-3.596 5.082h.047z", "Bool(false)": "#433D84", "Bool(false)": "M75.647 61.135c10.446 0 18.915-8.532 18.915-19.057 0-10.526-8.469-19.058-18.915-19.058-10.447 0-18.916 8.532-18.916 19.058 0 10.524 8.47 19.057 18.916 19.057z", marginLeft: importDefault(dependencyMap[5]).space.PX_16 };
+const obj2 = { GUILD_ROOM: "#433D84", kkvDatabase: "M75.647 61.135c10.446 0 18.915-8.532 18.915-19.057 0-10.526-8.469-19.058-18.915-19.058-10.447 0-18.916 8.532-18.916 19.058 0 10.524 8.47 19.057 18.916 19.057z", UPLOAD_INTL_DATA: 0.4, paddingBottom: "url(#d)", marginLeft: importDefault(dependencyMap[5]).space.PX_16 };
 obj.appDetails = obj2;
 obj.appIconContainer = { flexShrink: 0 };
 const tmp2 = arg1(dependencyMap[3]);
@@ -109,7 +109,7 @@ export default function RecommendationsBannerCard(application) {
       const items3 = [callback(importDefault(dependencyMap[13]), obj6), ];
       if (showsPromoted) {
         const obj7 = { style: tmp.promotedLabelWrapper };
-        obj8 = { INTEGRATION_CREATE: true, ConstraintReasonCode: true };
+        obj8 = {};
         const intl = arg1(dependencyMap[15]).intl;
         obj8.children = intl.string(arg1(dependencyMap[15]).t./eVltv);
         obj7.children = callback(arg1(dependencyMap[14]).Text, obj8);
@@ -134,9 +134,9 @@ export default function RecommendationsBannerCard(application) {
     }
     const items5 = [tmp34, , ];
     const obj11 = { style: tmp.appDetails };
-    const obj12 = { children: application.name };
+    const obj12 = { -9223372036854775808: "low", 0: true, 0: true, children: application.name };
     const items6 = [callback(arg1(dependencyMap[14]).Text, obj12), ];
-    const obj13 = { 9223372036854775807: "<string:1900005261>", 9223372036854775807: "Array", 9223372036854775807: "<string:1905170769>", children: application.description };
+    const obj13 = { -9223372036854775808: 1, 0: "auto", 0: 0, children: application.description };
     items6[1] = callback(arg1(dependencyMap[14]).Text, obj13);
     obj11.children = items6;
     items5[1] = callback2(View, obj11);

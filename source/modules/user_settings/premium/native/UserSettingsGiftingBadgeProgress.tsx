@@ -1,10 +1,10 @@
-// Module ID: 12375
-// Function ID: 94630
+// Module ID: 12382
+// Function ID: 94653
 // Name: GiftingBadgeIntro
 // Dependencies: []
 // Exports: default
 
-// Module 12375 (GiftingBadgeIntro)
+// Module 12382 (GiftingBadgeIntro)
 function GiftingBadgeIntro(analyticsLocation) {
   const arg1 = analyticsLocation.analyticsLocation;
   const tmp = callback5(importDefault(dependencyMap[7])("UserSettingsGiftingBadgeProgress"));
@@ -98,34 +98,34 @@ let closure_12 = arg1(dependencyMap[5]).createStyles((arg0) => {
   obj.wrapper = obj;
   obj = { gap: importDefault(dependencyMap[6]).space.PX_8 };
   obj.progressContainer = obj;
-  const obj1 = { -9223372036854775808: true, filter: true, gap: importDefault(dependencyMap[6]).space.PX_4 };
-  obj.progressRow = obj1;
+  obj.progressRow = { gap: importDefault(dependencyMap[6]).space.PX_4 };
   obj.progressTitleText = { flex: 1 };
+  const obj1 = { gap: importDefault(dependencyMap[6]).space.PX_4 };
   obj.progressBarContainer = { paddingHorizontal: importDefault(dependencyMap[6]).space.PX_8 };
   const obj2 = { paddingHorizontal: importDefault(dependencyMap[6]).space.PX_8 };
   obj.progressBarTrack = { height: 6, borderRadius: importDefault(dependencyMap[6]).radii.round, backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_MOD_NORMAL, overflow: "hidden" };
   const obj3 = { height: 6, borderRadius: importDefault(dependencyMap[6]).radii.round, backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_MOD_NORMAL, overflow: "hidden" };
   obj.progressBarFill = { height: 6, borderRadius: importDefault(dependencyMap[6]).radii.round, backgroundColor: importDefault(dependencyMap[6]).unsafe_rawColors.BRAND_500 };
-  const obj5 = { "Bool(true)": true, "Bool(true)": true, "Bool(true)": true, minHeight: importDefault(dependencyMap[6]).space.PX_16, marginTop: importDefault(dependencyMap[6]).space.PX_4 };
+  const obj5 = { bottom: true, left: true, padding: true, minHeight: importDefault(dependencyMap[6]).space.PX_16, marginTop: importDefault(dependencyMap[6]).space.PX_4 };
   obj.progressLabels = obj5;
   const obj4 = { height: 6, borderRadius: importDefault(dependencyMap[6]).radii.round, backgroundColor: importDefault(dependencyMap[6]).unsafe_rawColors.BRAND_500 };
   obj.divider = { height: 1, backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_MOD_NORMAL };
-  obj.dropdownRow = { "Bool(true)": null, "Bool(true)": null, "Bool(true)": null };
-  const obj7 = { TypeError: "Portugu\u00EAs", borderRadius: "Portuguese", variant: "pt-PT", paddingVertical: importDefault(dependencyMap[6]).space.PX_4 };
+  obj.dropdownRow = { padding: "Next", paddingBottom: null, flexDirection: null };
+  const obj7 = { "Bool(true)": null, "Bool(true)": null, "Bool(true)": null, paddingVertical: importDefault(dependencyMap[6]).space.PX_4 };
   obj.badgesRow = obj7;
+  const obj8 = { -2080373617: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000033995391313658985, 1392510095: 9126805507, -1949266993: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002495254851323827, padding: importDefault(dependencyMap[6]).space.PX_8, gap: importDefault(dependencyMap[6]).space.PX_8 };
+  obj.badgeItem = obj8;
   const obj6 = { height: 1, backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_MOD_NORMAL };
-  obj.badgeItem = { padding: importDefault(dependencyMap[6]).space.PX_8, gap: importDefault(dependencyMap[6]).space.PX_8 };
-  const obj8 = { padding: importDefault(dependencyMap[6]).space.PX_8, gap: importDefault(dependencyMap[6]).space.PX_8 };
   obj.badgeItemActive = { backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_MOD_MUTED, borderRadius: importDefault(dependencyMap[6]).radii.md, borderWidth: 1, borderColor: importDefault(dependencyMap[6]).colors.BORDER_MUTED };
   obj.badgeCopy = {};
   const obj9 = { backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_MOD_MUTED, borderRadius: importDefault(dependencyMap[6]).radii.md, borderWidth: 1, borderColor: importDefault(dependencyMap[6]).colors.BORDER_MUTED };
   obj.footerText = { textAlign: "center", marginBottom: importDefault(dependencyMap[6]).space.PX_16 };
   const obj10 = { textAlign: "center", marginBottom: importDefault(dependencyMap[6]).space.PX_16 };
   obj.introContent = { paddingHorizontal: importDefault(dependencyMap[6]).space.PX_8, gap: importDefault(dependencyMap[6]).space.PX_4 };
-  const obj12 = { TypeError: "Portugu\u00EAs", borderRadius: "Portuguese", variant: "pt-PT", paddingVertical: importDefault(dependencyMap[6]).space.PX_4, paddingHorizontal: importDefault(dependencyMap[6]).space.PX_16 };
+  const obj12 = { "Bool(true)": null, "Bool(true)": null, "Bool(true)": null, paddingVertical: importDefault(dependencyMap[6]).space.PX_4, paddingHorizontal: importDefault(dependencyMap[6]).space.PX_16 };
   obj.introGrid = obj12;
-  const obj11 = { paddingHorizontal: importDefault(dependencyMap[6]).space.PX_8, gap: importDefault(dependencyMap[6]).space.PX_4 };
-  obj.introGridItem = { padding: importDefault(dependencyMap[6]).space.PX_8, gap: importDefault(dependencyMap[6]).space.PX_8 };
+  const obj13 = { -2080373617: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000033995391313658985, 1392510095: 9126805507, -1949266993: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002495254851323827, padding: importDefault(dependencyMap[6]).space.PX_8, gap: importDefault(dependencyMap[6]).space.PX_8 };
+  obj.introGridItem = obj13;
   return obj;
 });
 const obj = arg1(dependencyMap[5]);
@@ -224,7 +224,7 @@ export default function UserSettingsGiftingBadgeProgress(analyticsLocation) {
       tmp23 = callback3(importDefault(closure_2[15]), obj5);
     }
     const items1 = [tmp23, , ];
-    const obj7 = { style: tmp.progressTitleText, children: formatToPlainStringResult };
+    const obj7 = { "Null": 0.184, "Null": 1, "Null": "auto", style: tmp.progressTitleText, children: formatToPlainStringResult };
     items1[1] = callback3(arg1(closure_2[12]).Text, obj7);
     let simple_icon_url1;
     if (null != nextTier) {
@@ -252,7 +252,7 @@ export default function UserSettingsGiftingBadgeProgress(analyticsLocation) {
     obj11.children = callback3(closure_6, obj12);
     const items4 = [callback3(closure_6, obj11), ];
     const obj14 = { style: tmp.progressLabels };
-    const obj15 = { INTEGRATION_CREATE: false, ConstraintReasonCode: false };
+    const obj15 = {};
     const intl3 = arg1(closure_2[13]).intl;
     const obj16 = {};
     let tmp48 = tmp49;
@@ -336,7 +336,7 @@ export default function UserSettingsGiftingBadgeProgress(analyticsLocation) {
               }
               obj1.children = str;
               const items2 = [callback3(analyticsLocation(closure_2[12]).Text, obj1), ];
-              const obj2 = { INTEGRATION_CREATE: false, ConstraintReasonCode: false };
+              const obj2 = {};
               const intl = analyticsLocation(closure_2[13]).intl;
               const obj3 = { count: callback2(key) };
               obj2.children = intl.format(closure_10(closure_2[14]).qvx9E4, obj3);

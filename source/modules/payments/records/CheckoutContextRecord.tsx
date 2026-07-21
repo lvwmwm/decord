@@ -1,9 +1,9 @@
-// Module ID: 6654
-// Function ID: 51232
+// Module ID: 6660
+// Function ID: 51281
 // Name: _callSuper
 // Dependencies: []
 
-// Module 6654 (_callSuper)
+// Module 6660 (_callSuper)
 function _callSuper(arg0, arg1, arg2) {
   const obj = callback2(arg1);
   if (_isNativeReflectConstruct()) {

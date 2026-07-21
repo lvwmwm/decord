@@ -77,12 +77,12 @@ function createLayoutAnimation(duration, easeInEaseOut, opacity) {
   return obj;
 }
 let closure_4 = importAll(dependencyMap[0]).isLayoutAnimationEnabled();
-let obj = { easeInEaseOut: require("module_300"), linear: require("module_500"), spring: { duration: 700, create: {}, update: { variant: -1561007058987362700000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, style: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010959979032937442 }, delete: {} } };
+let obj = { easeInEaseOut: require("module_300"), linear: require("module_500"), spring: { duration: 700, create: { <string:2639332418>: null, <string:3891880573>: null }, update: { duration: null, useNativeDriver: null }, delete: { <string:2639332418>: null, <string:3891880573>: null } } };
 obj = {
   configureNext,
   create: createLayoutAnimation,
-  Types: Object.freeze({ "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, "Bool(false)": "<string:617227466>", "Bool(false)": "<string:1536383946>" }),
-  Properties: Object.freeze({ "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true }),
+  Types: Object.freeze({ flexDirection: "sr-ME", alignSelf: "kw", height: "co", backgroundColor: "pij", alignItems: "quh", justifyContent: "cr" }),
+  Properties: Object.freeze({ borderRadius: 4632200380423486500000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, borderStyle: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000014904360985116584, backgroundColor: 0.00000000000000000000000000000000000000000304923749242107, height: 1328170706020733300000 }),
   checkConfig() {
     console.error("LayoutAnimation.checkConfig(...) has been disabled.");
   },

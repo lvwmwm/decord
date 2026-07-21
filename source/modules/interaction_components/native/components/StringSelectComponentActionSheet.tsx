@@ -1,10 +1,10 @@
-// Module ID: 10950
-// Function ID: 85168
+// Module ID: 10955
+// Function ID: 85189
 // Name: StringSelectComponentActionSheet
 // Dependencies: []
 // Exports: default
 
-// Module 10950 (StringSelectComponentActionSheet)
+// Module 10955 (StringSelectComponentActionSheet)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 const jsx = arg1(dependencyMap[2]).jsx;
@@ -13,7 +13,7 @@ obj = { selectionOptionItemWithDescription: { minHeight: 64 }, selectionOptionIt
 obj = { borderRadius: importDefault(dependencyMap[4]).radii.xs };
 obj.emojiWrapper = obj;
 obj.textEmoji = {};
-obj.fastImageEmoji = { aze: false, azj: false };
+obj.fastImageEmoji = { bhk: "<string:1027735553>", bic: "<string:4143972873>" };
 let closure_6 = obj.createStyles(obj);
 const result = arg1(dependencyMap[12]).fileFinishedImporting("modules/interaction_components/native/components/StringSelectComponentActionSheet.tsx");
 

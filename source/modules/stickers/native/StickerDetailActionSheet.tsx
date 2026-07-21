@@ -1,9 +1,9 @@
-// Module ID: 9607
-// Function ID: 74830
+// Module ID: 9612
+// Function ID: 74847
 // Name: StandardStickerDetail
 // Dependencies: []
 
-// Module 9607 (StandardStickerDetail)
+// Module 9612 (StandardStickerDetail)
 function StandardStickerDetail(chatInputRef) {
   let channel;
   let sticker;
@@ -61,8 +61,7 @@ function StandardStickerDetail(chatInputRef) {
         formatResult = format(t.OzB6e3, obj);
       }
       obj = {};
-      const obj1 = { INTEGRATION_CREATE: null, ConstraintReasonCode: "Cheerful Choco sparkles", children: name };
-      const items = [callback(channel(description[18]).Text, obj1), , , , ];
+      const items = [callback(channel(description[18]).Text, { children: name }), , , , ];
       const obj2 = { style: description.description, variant: "text-sm/medium", children: formatResult };
       items[1] = callback(channel(description[18]).Text, obj2);
       const obj3 = { containerWidth: diff };
@@ -148,7 +147,7 @@ function UnavailableStickerDetail(arg0) {
   }, items1);
   const items2 = [callback2(importDefault(dependencyMap[40]), { sticker: renderableSticker, size: 48 }), , ];
   obj = { style: tmp.guildEmojiDescription };
-  obj1 = { INTEGRATION_CREATE: null, ConstraintReasonCode: "Cheerful Choco sparkles", children: renderableSticker.name };
+  obj1 = { children: renderableSticker.name };
   const items3 = [callback2(arg1(dependencyMap[18]).Text, obj1), ];
   obj2 = { style: tmp.description, variant: "text-sm/medium" };
   const intl = arg1(dependencyMap[19]).intl;
@@ -214,17 +213,17 @@ if (obj4.isAndroid()) {
 }
 obj.paddingBottom = num;
 obj.content = obj;
-obj.description = { 1977447900: null, 8: "hidden" };
-obj.guildEmojiTopContainer = { -9223372036854775808: true, filter: true };
+obj.description = { label: null, DARK: "hidden" };
+obj.guildEmojiTopContainer = {};
 obj1 = { marginTop: importDefault(dependencyMap[13]).space.PX_12 };
 obj.buttonContainer = obj1;
-obj.guildEmojiDescription = { <string:80580352>: "Group 11", <string:80585728>: 2 };
+obj.guildEmojiDescription = { <string:80590080>: "Group 11", <string:80550400>: 2 };
 const tmp5 = arg1(dependencyMap[10]);
 obj.divider = { marginLeft: 0, marginTop: importDefault(dependencyMap[13]).space.PX_16, marginBottom: importDefault(dependencyMap[13]).space.PX_16, backgroundColor: importDefault(dependencyMap[13]).colors.BORDER_SUBTLE };
-obj.moreMenuIcon = {};
+obj.moreMenuIcon = { "Null": "isArray", "Null": "handleJoinThreadVoice", "Null": "isArray", "Null": "useActionBarPrimaryButton" };
 const obj2 = { marginLeft: 0, marginTop: importDefault(dependencyMap[13]).space.PX_16, marginBottom: importDefault(dependencyMap[13]).space.PX_16, backgroundColor: importDefault(dependencyMap[13]).colors.BORDER_SUBTLE };
 obj.favoriteContainer = { paddingTop: importDefault(dependencyMap[13]).space.PX_4 };
-obj.starIcon = { <string:1140607356>: "boolean", <string:1751293292>: "string" };
+obj.starIcon = { <string:1632221346>: "boolean", <string:2722977214>: "string" };
 obj4 = { tintColor: importDefault(dependencyMap[13]).colors.ICON_FEEDBACK_WARNING };
 obj.starIconSelected = obj4;
 const obj3 = { paddingTop: importDefault(dependencyMap[13]).space.PX_4 };
@@ -553,8 +552,7 @@ function GuildStickerDetail(sticker) {
         obj = { sticker, size: 48 };
         const items = [callback(channel(closure_2[40]), obj), , ];
         const obj1 = { style: closure_2.guildEmojiDescription };
-        const obj2 = { INTEGRATION_CREATE: null, ConstraintReasonCode: "Cheerful Choco sparkles", children: sticker.name };
-        const items1 = [callback(sticker(closure_2[18]).Text, obj2), callback(sticker(closure_2[18]).Text, { style: closure_2.description, variant: "text-sm/medium", children: closure_15 })];
+        const items1 = [callback(sticker(closure_2[18]).Text, { children: sticker.name }), callback(sticker(closure_2[18]).Text, { style: closure_2.description, variant: "text-sm/medium", children: closure_15 })];
         obj1.children = items1;
         items[1] = callback2(tmp4, obj1);
         let tmp4 = tidaWebformEnabled;

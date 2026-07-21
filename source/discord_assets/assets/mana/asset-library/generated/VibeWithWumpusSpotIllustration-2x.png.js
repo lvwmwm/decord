@@ -1,9 +1,9 @@
-// Module ID: 6598
-// Function ID: 50771
+// Module ID: 6602
+// Function ID: 50817
 // Name: metadata
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 6598 (metadata)
+// Module 6602 (metadata)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/VibeWithWumpusSpotIllustration-2x.png.js");
 

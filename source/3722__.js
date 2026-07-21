@@ -13,7 +13,7 @@ const fn = function _(moment) {
     weekdays: "\u65E5\u66DC\u65E5_\u6708\u66DC\u65E5_\u706B\u66DC\u65E5_\u6C34\u66DC\u65E5_\u6728\u66DC\u65E5_\u91D1\u66DC\u65E5_\u571F\u66DC\u65E5".split("_"),
     weekdaysShort: "\u65E5_\u6708_\u706B_\u6C34_\u6728_\u91D1_\u571F".split("_"),
     weekdaysMin: "\u65E5_\u6708_\u706B_\u6C34_\u6728_\u91D1_\u571F".split("_"),
-    longDateFormat: {},
+    longDateFormat: { <string:1122280543>: "100%", <string:3251850218>: null, <string:306010250>: null, <string:37429971>: 14, <string:1812403200>: 2, <string:3855182856>: "transparent", <string:3327387082>: "row", <string:3355583292>: "center", <string:1383555360>: "r", <string:2914423152>: "isArray" },
     meridiemParse: /午前|午後/i,
     isPM(arg0) {
       return "\u5348\u5F8C" === arg0;
@@ -37,7 +37,7 @@ const fn = function _(moment) {
       }
       return arg0 + "\u65E5";
     },
-    relativeTime: { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null }
+    relativeTime: {}
   };
   ({ split, split: split2 } = "\u65E5_\u6708_\u706B_\u6C34_\u6728_\u91D1_\u571F");
   obj = {
@@ -67,7 +67,7 @@ if ("object" === typeof exports) {
 }
 if ("function" === typeof globalThis.define) {
   if (globalThis.define.amd) {
-    globalThis.define([1782644737], fn);
+    globalThis.define(["HH:mm:ss"], fn);
   }
 }
 fn(this.moment);

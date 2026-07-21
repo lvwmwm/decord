@@ -5,7 +5,7 @@
 // Exports: default
 
 // Module 3222 (formatDistance)
-let closure_0 = { lessThanXSeconds: {}, xSeconds: {}, halfAMinute: "\u00E9t halvt minut", lessThanXMinutes: {}, xMinutes: {}, aboutXHours: {}, xHours: {}, xDays: {}, aboutXWeeks: {}, xWeeks: {}, aboutXMonths: {}, xMonths: {}, aboutXYears: {}, xYears: {}, overXYears: {}, almostXYears: {} };
+let closure_0 = { lessThanXSeconds: { -9223372036854775808: false, 0: false }, xSeconds: { -9223372036854775808: "<string:30168064>", 0: "<string:70027008>" }, halfAMinute: "\u00E9t halvt minut", lessThanXMinutes: { -9223372036854775808: null, 0: null }, xMinutes: { -9223372036854775808: "<string:38447616>", 0: "<string:35149312>" }, aboutXHours: { -9223372036854775808: null, 0: null }, xHours: {}, xDays: {}, aboutXWeeks: { -9223372036854775808: false, 0: false }, xWeeks: { -9223372036854775808: "<string:30168064>", 0: "<string:70027008>" }, aboutXMonths: { -9223372036854775808: null, 0: null }, xMonths: {}, aboutXYears: { -9223372036854775808: "r", 0: "isArray" }, xYears: { -9223372036854775808: false, 0: false }, overXYears: { -9223372036854775808: "%TypeErrorPrototype%", 0: "searchable" }, almostXYears: { -9223372036854775808: "<string:1827405825>", 0: "<string:1293025282>" } };
 
 export default function formatDistance(arg0, arg1, addSuffix) {
   if ("string" === typeof closure_0[arg0]) {

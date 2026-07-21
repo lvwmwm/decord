@@ -1,7 +1,7 @@
 // Module ID: 4124
 // Function ID: 34306
 // Name: Text
-// Dependencies: []
+// Dependencies: [348717056, 260833280, 270925824, 323878912, 44957696, 546111488, 44236800, 78512128, 260440064, 79429632, 374407168, 286064640]
 
 // Module 4124 (Text)
 const importAllResult = importAll(dependencyMap[0]);
@@ -58,7 +58,7 @@ let closure_12 = arg1(dependencyMap[8]).createStyles((arg0, arg1) => {
   obj.color = tmp;
   let items;
   if (arg1) {
-    items = ["GUILD_VERIFICATION"];
+    items = [null];
   }
   obj.fontVariant = items;
   obj.text = obj;
@@ -84,7 +84,7 @@ const forwardRefResult = importAllResult.forwardRef((animated, ref) => {
   if (flag2 === undefined) {
     flag2 = false;
   }
-  let obj = { "Bool(false)": null, "Bool(false)": 0.6, "Bool(false)": "BounceOutRight", "Bool(false)": null, "Bool(false)": 0.6, "Bool(false)": "BounceOutLeft", "Bool(false)": null, "Bool(false)": 0.6 };
+  let obj = { raw: null, sk: 0.6, LengthDelimited: "BounceOutRight", accessibilityRole: null, replace: 0.6, color: "BounceOutLeft", borderRadius: null, width: 0.6 };
   Object.setPrototypeOf(null);
   const merged = Object.assign(animated, obj);
   let str = "text-default";

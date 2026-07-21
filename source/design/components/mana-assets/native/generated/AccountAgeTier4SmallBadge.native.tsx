@@ -1,10 +1,10 @@
-// Module ID: 5819
-// Function ID: 49602
+// Module ID: 5821
+// Function ID: 49645
 // Name: AccountAgeTier4SmallBadge
 // Dependencies: []
 // Exports: AccountAgeTier4SmallBadge
 
-// Module 5819 (AccountAgeTier4SmallBadge)
+// Module 5821 (AccountAgeTier4SmallBadge)
 const jsx = require(dependencyMap[0]).jsx;
 const _module = require(dependencyMap[3]);
 const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/AccountAgeTier4SmallBadge.native.tsx");

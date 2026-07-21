@@ -1,8 +1,8 @@
-// Module ID: 9648
-// Function ID: 75158
+// Module ID: 9653
+// Function ID: 75175
 // Dependencies: []
 
-// Module 9648
+// Module 9653
 const importAllResult = importAll(dependencyMap[0]);
 ({ StyleSheet: closure_4, View: closure_5 } = arg1(dependencyMap[1]));
 const tmp2 = arg1(dependencyMap[1]);
@@ -42,7 +42,7 @@ let closure_8 = arg1(dependencyMap[3]).createStyles((arg0, arg1, arg2, arg3) => 
   }
   const merged2 = Object.assign(tmp6);
   obj.container = obj;
-  const obj2 = { justifyContent: 653283940, alignItems: -799868975, icon: 287764516, gap: importDefault(dependencyMap[4]).modules.mobile.MEDIA_KEYBOARD_BAR_GAP, marginHorizontal: importDefault(dependencyMap[4]).modules.mobile.MEDIA_KEYBOARD_BAR_BUTTONS_MARGIN_HORIZONTAL };
+  const obj2 = { "Bool(true)": "MAX_PARENT_TO_TEEN_ACTIVE_CONNECTIONS", "Bool(true)": "onTapGiftCodeEmbed", "Bool(true)": "stepperButton", gap: importDefault(dependencyMap[4]).modules.mobile.MEDIA_KEYBOARD_BAR_GAP, marginHorizontal: importDefault(dependencyMap[4]).modules.mobile.MEDIA_KEYBOARD_BAR_BUTTONS_MARGIN_HORIZONTAL };
   obj.buttonsContainer = obj2;
   obj3 = { padding: importDefault(dependencyMap[4]).modules.mobile.MEDIA_KEYBOARD_BUTTON_PADDING, borderRadius: importDefault(dependencyMap[4]).modules.mobile.MEDIA_KEYBOARD_BUTTON_BORDER_RADIUS };
   obj.button = obj3;
@@ -90,7 +90,7 @@ const memoResult = importAllResult.memo(function MediaKeyboardBottomSheetActions
   closure_4 = arg1(closure_2[8]).useToken(importDefault(closure_2[4]).modules.mobile.MEDIA_KEYBOARD_BUTTON_TEXT_VARIANT);
   const items = [tmp7Result.gradient.color];
   const memo = React.useMemo(() => {
-    const obj = { start: { "Null": false, "Null": true }, end: { "Null": 131072.00314656927, "Null": 0.000000000000000000000000000000000000000000000000000000011294471302334573 } };
+    const obj = { start: { max: -536870861, guildId: -299892737 }, end: {} };
     const obj2 = tmp7Result(closure_2[7])(tmp7Result.gradient.color);
     const items = [tmp7Result(closure_2[7])(tmp7Result.gradient.color).alpha(0).hex(), ];
     const alphaResult = tmp7Result(closure_2[7])(tmp7Result.gradient.color).alpha(0);

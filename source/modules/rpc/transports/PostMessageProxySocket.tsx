@@ -1,9 +1,9 @@
-// Module ID: 10488
-// Function ID: 81895
+// Module ID: 10494
+// Function ID: 81918
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
-// Module 10488 (_isNativeReflectConstruct)
+// Module 10494 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -42,7 +42,7 @@ const tmp2 = (arg0) => {
         constructResult = obj.apply(self, items);
       }
       tmp2Result = tmp2(self, constructResult);
-      items1 = [null, null];
+      items1 = [];
       if (-1 === items1.indexOf(encoding)) {
         tmp16 = WindowProxySocket;
         tmp17 = closure_1;

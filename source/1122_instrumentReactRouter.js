@@ -98,7 +98,7 @@ function matchRoutes(pathname, search, arg2) {
       } else if (items.length) {
         match = items[closure_2.length - 1].match;
       } else {
-        match = { isButtonVisible: "<string:3661692930>", isScreenshotButtonVisible: "<string:1627390431>", params: {}, isExact: "/" === arg1 };
+        match = { "Null": "Array", "Null": "isArray", params: {}, isExact: "/" === arg1 };
       }
       if (match) {
         const obj = { route: path, match };
@@ -121,7 +121,7 @@ let closure_4 = require(dependencyMap[2]);
 export const reactRouterV4BrowserTracingIntegration = function reactRouterV4BrowserTracingIntegration(instrumentNavigation) {
   let instrumentPageLoad;
   let obj = require(dependencyMap[3]);
-  const result = obj.browserTracingIntegration(Object.assign({}, instrumentNavigation, {}));
+  const result = obj.browserTracingIntegration(Object.assign({}, instrumentNavigation, { isArray: null, scales: null }));
   const require = result;
   ({ history: closure_1, routes: closure_2, matchPath: closure_3, instrumentPageLoad } = instrumentNavigation);
   let closure_4 = undefined === instrumentPageLoad || instrumentPageLoad;
@@ -138,7 +138,7 @@ export const reactRouterV4BrowserTracingIntegration = function reactRouterV4Brow
 export const reactRouterV5BrowserTracingIntegration = function reactRouterV5BrowserTracingIntegration(instrumentNavigation) {
   let instrumentPageLoad;
   let obj = require(dependencyMap[3]);
-  const result = obj.browserTracingIntegration(Object.assign({}, instrumentNavigation, {}));
+  const result = obj.browserTracingIntegration(Object.assign({}, instrumentNavigation, { isArray: null, scales: null }));
   const require = result;
   ({ history: closure_1, routes: closure_2, matchPath: closure_3, instrumentPageLoad } = instrumentNavigation);
   let closure_4 = undefined === instrumentPageLoad || instrumentPageLoad;

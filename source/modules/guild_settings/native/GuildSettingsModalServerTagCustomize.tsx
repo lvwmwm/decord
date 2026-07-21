@@ -1,10 +1,10 @@
-// Module ID: 16137
-// Function ID: 124400
+// Module ID: 16144
+// Function ID: 124431
 // Name: PX_16
 // Dependencies: []
 // Exports: default
 
-// Module 16137 (PX_16)
+// Module 16144 (PX_16)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 const View = arg1(dependencyMap[2]).View;
@@ -171,7 +171,7 @@ export default function GuildSettingsModalServerTagCustomize(guildId) {
         obj4.style = tmp.warning;
         const obj5 = { size: "sm", color: importDefault(dependencyMap[7]).colors.ICON_SUBTLE };
         const items11 = [callback2(arg1(dependencyMap[24]).CircleInformationIcon, obj5), ];
-        const obj6 = { INTEGRATION_CREATE: true, ConstraintReasonCode: true, style: tmp.warningText };
+        const obj6 = { style: tmp.warningText };
         const intl3 = arg1(dependencyMap[23]).intl;
         obj6.children = intl3.string(arg1(dependencyMap[23]).t.4tVt6P);
         items11[1] = callback2(arg1(dependencyMap[25]).Text, obj6);

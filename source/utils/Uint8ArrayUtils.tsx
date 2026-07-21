@@ -1,7 +1,7 @@
 // Module ID: 1333
 // Function ID: 15640
 // Name: hasBit
-// Dependencies: []
+// Dependencies: [284214097]
 // Exports: addBit, isSerializedUint8Array, isUint8Array, removeBit
 
 // Module 1333 (hasBit)

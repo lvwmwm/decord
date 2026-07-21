@@ -1,10 +1,10 @@
-// Module ID: 14990
-// Function ID: 112923
+// Module ID: 14997
+// Function ID: 112947
 // Name: ConnectionUnknownIcon
 // Dependencies: []
 // Exports: ConnectionUnknownIcon
 
-// Module 14990 (ConnectionUnknownIcon)
+// Module 14997 (ConnectionUnknownIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/ConnectionUnknownIcon.tsx");

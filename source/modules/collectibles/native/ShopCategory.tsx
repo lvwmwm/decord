@@ -1,10 +1,10 @@
-// Module ID: 14346
-// Function ID: 108360
+// Module ID: 14353
+// Function ID: 108383
 // Name: Spacing
 // Dependencies: []
 // Exports: ShopCategory
 
-// Module 14346 (Spacing)
+// Module 14353 (Spacing)
 function Spacing() {
   return callback(View, { style: { width: 12 } });
 }
@@ -69,7 +69,7 @@ export const ShopCategory = function ShopCategory(category) {
   const recyclingState = obj4.useRecyclingState(null, items, () => {
     const current = ref.current;
     if (null != current) {
-      current.scrollToOffset({ "Bool(true)": 9035158524362260000000000000000000000000000000000000000000000000000000000000000000000000000000, "Bool(true)": -222642488090540470000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 });
+      current.scrollToOffset({ -437125116: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002488040065571517, -435748860: -823154013994709700000000000000000000000000000000000000000000000 });
     }
   });
   let obj5 = arg1(closure_2[13]);
@@ -151,7 +151,7 @@ export const ShopCategory = function ShopCategory(category) {
     obj6.style = tmp.imageBackground;
     tmp14 = ref(importDefault(closure_2[21]), obj6);
   }
-  const items4 = [tmp14, ref(View, { style: tmp.viewAllIcon, children: ref(arg1(closure_2[22]).ChevronSmallRightIcon, { flexDirection: null, alignItems: "4550be26e4ce88ab0a8f2d917df660a6" }) })];
+  const items4 = [tmp14, ref(View, { style: tmp.viewAllIcon, children: ref(arg1(closure_2[22]).ChevronSmallRightIcon, {}) })];
   obj3.children = items4;
   const items5 = [collectiblesAnalyticsContext(arg1(closure_2[19]).PressableOpacity, obj3, category.storeListingId), ];
   const obj9 = { ref, horizontal: true };

@@ -1,10 +1,10 @@
-// Module ID: 13928
-// Function ID: 105874
+// Module ID: 13935
+// Function ID: 105897
 // Name: useGradientColors
 // Dependencies: []
 // Exports: default
 
-// Module 13928 (useGradientColors)
+// Module 13935 (useGradientColors)
 function useGradientColors() {
   const token = arg1(dependencyMap[6]).useToken(importDefault(dependencyMap[5]).colors.EXPRESSIVE_GRADIENT_NITRO_PINK_START);
   const arg1 = token;
@@ -73,7 +73,7 @@ function PremiumRewardGlowGradient(arg0) {
   }
   items1[1] = glowLight;
   obj.style = items1;
-  obj.maskElement = callback(importDefault(dependencyMap[9]), { style: closure_4.absoluteFill, colors: ["r", "CLAN_TAG"], start: closure_11, end: closure_12 });
+  obj.maskElement = callback(importDefault(dependencyMap[9]), { style: closure_4.absoluteFill, colors: [], start: closure_11, end: closure_12 });
   obj.children = callback(importDefault(dependencyMap[9]), { style: closure_4.absoluteFill, colors: tmp2, start: closure_9, end: closure_10 });
   const items2 = [tmp7(importDefault(dependencyMap[10]), obj), children];
   obj.children = items2;
@@ -84,11 +84,11 @@ let closure_3 = importAll(dependencyMap[0]);
 const tmp2 = arg1(dependencyMap[1]);
 ({ jsx: closure_6, jsxs: closure_7 } = arg1(dependencyMap[2]));
 const tmp3 = arg1(dependencyMap[2]);
-let closure_8 = arg1(dependencyMap[3]).createStyles({ wrapper: {}, fill: {}, glow: {}, glowLight: { opacity: 0.5 } });
-let closure_9 = { "Null": false, "Null": false };
-let closure_10 = { "Null": -721485569, "Null": 3375103 };
-let closure_11 = { "Null": "message", "Null": "PRIMARY_530" };
-let closure_12 = { "Null": 2, "Null": 9 };
+let closure_8 = arg1(dependencyMap[3]).createStyles({ wrapper: {}, fill: { 1134748497: null, 276882: null, 297352: null, 296048: null, -1198516137: null }, glow: { 1134748497: null, 276882: "text-sm/medium", 297352: "interactive-text-active", 296048: "interactive-text-active", -1198516137: "text-sm/medium" }, glowLight: { opacity: 0.5 } });
+let closure_9 = { max: false, guildId: false };
+let closure_10 = { max: 3211264, guildId: 2042617856 };
+let closure_11 = { max: "message", guildId: "PRIMARY_530" };
+let closure_12 = { max: 2, guildId: 9 };
 const obj = arg1(dependencyMap[3]);
 const obj2 = arg1(dependencyMap[4]);
 const hexOpacityToRgbaResult = arg1(dependencyMap[4]).hexOpacityToRgba("#000000", 0);

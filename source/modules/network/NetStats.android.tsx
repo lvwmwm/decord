@@ -1,10 +1,10 @@
-// Module ID: 6684
-// Function ID: 51709
+// Module ID: 6690
+// Function ID: 51758
 // Name: receiveNetworkInfoformation
 // Dependencies: []
 // Exports: getSignalStrength, isSlowNetwork
 
-// Module 6684 (receiveNetworkInfoformation)
+// Module 6690 (receiveNetworkInfoformation)
 function receiveNetworkInfoformation(arg0) {
   if (null == closure_15) {
     closure_15 = arg0;
@@ -33,7 +33,7 @@ let importDefaultResult = importDefault(dependencyMap[8]);
 importDefaultResult = new importDefaultResult("NetStats");
 let closure_12 = {};
 let closure_13 = null;
-const obj = { type: arg1(dependencyMap[9]).NetInfoStateType.unknown };
+const obj = { 0: null, 9223372036854775807: "\u{1F9BB}\u{1F3FF}", 9223372036854775807: true, type: arg1(dependencyMap[9]).NetInfoStateType.unknown };
 let closure_15 = null;
 let closure_16 = "active" === tmp2.AppState.currentState;
 let closure_17 = 0;
@@ -48,32 +48,32 @@ let tmp7 = () => {
   class EventTracker {
     constructor() {
       self = this;
-      f51731 = this;
+      f51780 = this;
       tmp = closure_4(this, EventTracker);
       num = 0;
       if (closure_16) {
         tmp2 = globalThis;
         _setTimeout = setTimeout;
-        tmp3 = f51726;
-        tmp4 = f51723;
+        tmp3 = f51775;
+        tmp4 = f51772;
         num2 = 12;
         num3 = 1;
-        num = setTimeout(() => self.track(), f51726(f51723[12]).Millis.MINUTE);
+        num = setTimeout(() => self.track(), f51775(f51772[12]).Millis.MINUTE);
       }
       self.trackTimeout = num;
       num4 = 0;
       if (closure_16) {
         tmp5 = globalThis;
         _setInterval = setInterval;
-        tmp6 = f51726;
-        tmp7 = f51723;
+        tmp6 = f51775;
+        tmp7 = f51772;
         num5 = 12;
         num6 = 5;
-        num4 = setInterval(() => self.writeExistingEventStorage(), 5 * f51726(f51723[12]).Millis.SECOND);
+        num4 = setInterval(() => self.writeExistingEventStorage(), 5 * f51775(f51772[12]).Millis.SECOND);
       }
       self.flushStorageInterval = num4;
       self.didEverTrack = false;
-      Storage = f51731(f51723[13]).Storage;
+      Storage = f51780(f51772[13]).Storage;
       value = Storage.get("previousNetStatsEvents");
       if (null == value) {
         value = [];
@@ -101,10 +101,10 @@ let tmp7 = () => {
       if (closure_7.isConnected()) {
         trackExistingEventsResult = self.trackExistingEvents();
       } else {
-        tmp8 = f51726;
-        tmp9 = f51723;
+        tmp8 = f51775;
+        tmp9 = f51772;
         num7 = 14;
-        obj = f51726(f51723[14]);
+        obj = f51775(f51772[14]);
         str = "CONNECTION_OPEN";
         subscription = obj.subscribe("CONNECTION_OPEN", self.trackExistingEvents);
       }

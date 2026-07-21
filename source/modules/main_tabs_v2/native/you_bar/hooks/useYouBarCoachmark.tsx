@@ -1,10 +1,10 @@
-// Module ID: 14964
-// Function ID: 112681
+// Module ID: 14971
+// Function ID: 112705
 // Name: useYouBarCoachmark
 // Dependencies: []
 // Exports: useYouBarCoachmark
 
-// Module 14964 (useYouBarCoachmark)
+// Module 14971 (useYouBarCoachmark)
 let closure_2 = importDefault(dependencyMap[0]);
 let closure_3 = importAll(dependencyMap[1]);
 let closure_4 = importDefault(dependencyMap[2]);
@@ -20,42 +20,38 @@ export const useYouBarCoachmark = function useYouBarCoachmark(isQuestRendered) {
   const isInPrivateProfilesExperiment = arg1(dependencyMap[7]).useIsInPrivateProfilesExperiment("PrivateProfileCoachmark");
   const dependencyMap = isInPrivateProfilesExperiment;
   const obj2 = arg1(dependencyMap[7]);
-  const callback = arg1(dependencyMap[8]).useIsFocused();
+  const isFocused = arg1(dependencyMap[8]).useIsFocused();
+  const callback = isFocused;
   const obj3 = arg1(dependencyMap[8]);
   const items = [closure_4];
   const stateFromStores = arg1(dependencyMap[9]).useStateFromStores(items, () => {
     let obj = isQuestRendered(isInPrivateProfilesExperiment[10]);
     obj = { from: "authed", unit: isQuestRendered(isInPrivateProfilesExperiment[11]).TimeUnits.DAYS };
-    let tmp2 = closure_2;
-    if (closure_2) {
-      tmp2 = null != guildId.getGuildId();
-    }
-    if (tmp2) {
-      tmp2 = tmp;
-    }
-    return tmp2;
+    const tmp = obj.getFirstInstallTimeElapsed(obj) >= 10;
+    return null != guildId.getGuildId() && obj.getFirstInstallTimeElapsed(obj) >= 10;
   });
   const React = stateFromStores;
-  const items1 = [isInPrivateProfilesExperiment, isQuestRendered, stateFromStores];
+  const items1 = [isInPrivateProfilesExperiment, isQuestRendered, stateFromStores, isFocused];
   const memo = React.useMemo(() => {
-    if (isQuestRendered) {
-      return closure_6;
-    } else {
-      const items = [];
-      if (stateFromStores) {
-        items.push(isQuestRendered(isInPrivateProfilesExperiment[5]).DismissibleContent.YOU_BAR_DM_SWIPE_COACHMARK);
+    if (!isQuestRendered) {
+      if (isFocused) {
+        const items = [];
+        if (stateFromStores) {
+          items.push(isQuestRendered(isInPrivateProfilesExperiment[5]).DismissibleContent.YOU_BAR_DM_SWIPE_COACHMARK);
+        }
+        if (isInPrivateProfilesExperiment) {
+          items.push(isQuestRendered(isInPrivateProfilesExperiment[5]).DismissibleContent.PRIVATE_PROFILE_COACHMARK);
+        }
+        return items;
       }
-      if (isInPrivateProfilesExperiment) {
-        items.push(isQuestRendered(isInPrivateProfilesExperiment[5]).DismissibleContent.PRIVATE_PROFILE_COACHMARK);
-      }
-      return items;
     }
+    return closure_6;
   }, items1);
   const obj4 = arg1(dependencyMap[9]);
-  const tmp5 = callback(arg1(dependencyMap[12]).useSelectedDismissibleContent(memo), 2);
-  const visibleContent = tmp5[0];
-  const markAsDismissed = tmp5[1];
-  const tmp8 = function useSwipeCoachmarkProps(visibleContent) {
+  const tmp6 = callback(arg1(dependencyMap[12]).useSelectedDismissibleContent(memo), 2);
+  const visibleContent = tmp6[0];
+  const markAsDismissed = tmp6[1];
+  const tmp9 = function useSwipeCoachmarkProps(visibleContent) {
     visibleContent = visibleContent.visibleContent;
     const isQuestRendered = visibleContent;
     const markAsDismissed = visibleContent.markAsDismissed;
@@ -77,14 +73,14 @@ export const useYouBarCoachmark = function useYouBarCoachmark(isQuestRendered) {
   }({ visibleContent, markAsDismissed });
   const obj5 = arg1(dependencyMap[12]);
   const privateProfileCoachmarkProps = arg1(dependencyMap[13]).usePrivateProfileCoachmarkProps({ visibleContent, markAsDismissed });
-  let tmp10 = tmp8;
+  let tmp11 = tmp9;
   if (arg1(dependencyMap[5]).DismissibleContent.YOU_BAR_DM_SWIPE_COACHMARK !== visibleContent) {
-    tmp10 = privateProfileCoachmarkProps;
+    tmp11 = privateProfileCoachmarkProps;
     if (arg1(dependencyMap[5]).DismissibleContent.PRIVATE_PROFILE_COACHMARK !== visibleContent) {
-      tmp10 = tmp8;
+      tmp11 = tmp9;
     }
   }
   const obj6 = arg1(dependencyMap[13]);
-  const coachmark = arg1(dependencyMap[14]).useCoachmark(animatedRef, tmp10);
+  const coachmark = arg1(dependencyMap[14]).useCoachmark(animatedRef, tmp11);
   return { animatedRef, visibleContent, markAsDismissed };
 };

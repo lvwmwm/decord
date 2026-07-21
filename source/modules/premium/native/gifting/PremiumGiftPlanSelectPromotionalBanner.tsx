@@ -1,19 +1,19 @@
-// Module ID: 9678
-// Function ID: 75332
+// Module ID: 9683
+// Function ID: 75349
 // Dependencies: []
 
-// Module 9678
+// Module 9683
 const View = arg1(dependencyMap[1]).View;
 const importAllResult = importAll(dependencyMap[0]);
 ({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[2]));
 const tmp2 = arg1(dependencyMap[2]);
 let closure_6 = arg1(dependencyMap[3]).createStyles(() => {
-  let obj = { gradient: { minHeight: 60 }, bannerImage: { -9223372036854775808: null, 0: null, 9223372036854775807: null, 9223372036854775807: null, 9223372036854775807: null, -9223372036854775808: null } };
+  let obj = { gradient: { minHeight: 60 }, bannerImage: { flexWrap: null, justifyContent: null, nameplate: null, fullOpacity: null, animate: null, borderBottomLeftRadius: null } };
   obj = { paddingTop: importDefault(dependencyMap[4]).space.PX_12, paddingBottom: importDefault(dependencyMap[4]).space.PX_12, paddingStart: importDefault(dependencyMap[4]).space.PX_24, paddingEnd: 120 };
   obj.content = obj;
   obj.heading = {};
   obj.subheading = {};
-  obj.logoContainer = { "Null": "<string:2353153370>", "Null": "<string:268435723>", "Null": "<string:1358955077>", "Null": "<string:24223002>", "Null": "<string:1358954496>", "Null": "SHORT" };
+  obj.logoContainer = {};
   const items = [{ rotate: "-7deg" }, { translateY: 8 }];
   obj.logoContainerLargeTilted = { transform: items };
   obj.logo = {};
@@ -44,7 +44,7 @@ const memoResult = importAllResult.memo(function PremiumGiftPlanSelectPromotiona
     num = angle;
   }
   obj.angle = num;
-  obj.angleCenter = {};
+  obj.angleCenter = { max: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011125378664662503, guildId: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002834178582291256 };
   let colors;
   if (null != gradient) {
     colors = gradient.colors;
@@ -63,11 +63,11 @@ const memoResult = importAllResult.memo(function PremiumGiftPlanSelectPromotiona
   }
   const items = [tmp7, , ];
   const obj2 = { style: tmp.content };
-  const obj3 = { Promise: true, marginTop: true, flags: true, style: tmp.heading };
+  const obj3 = { style: tmp.heading };
   const intl = arg1(dependencyMap[10]).intl;
   obj3.children = intl.string(arg1(dependencyMap[10]).t.OEtqpm);
   const items1 = [callback(arg1(dependencyMap[9]).Text, obj3), ];
-  const obj4 = { Promise: "r", marginTop: "promptContainer", flags: "Array", style: tmp.subheading };
+  const obj4 = { "Null": "r", "Null": "moreOverlay", "Null": "Array", style: tmp.subheading };
   const intl2 = arg1(dependencyMap[10]).intl;
   obj4.children = intl2.formatToPlainString(arg1(dependencyMap[10]).t.2h5M+X, { availableCount: claimableRewards.length });
   items1[1] = callback(arg1(dependencyMap[9]).Text, obj4);

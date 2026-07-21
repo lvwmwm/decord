@@ -1,10 +1,10 @@
-// Module ID: 6337
-// Function ID: 50379
+// Module ID: 6339
+// Function ID: 50422
 // Name: NitroRewardsLaptopSpotIllustration
 // Dependencies: []
 // Exports: NitroRewardsLaptopSpotIllustration
 
-// Module 6337 (NitroRewardsLaptopSpotIllustration)
+// Module 6339 (NitroRewardsLaptopSpotIllustration)
 const jsx = require(dependencyMap[0]).jsx;
 const _module = require(dependencyMap[3]);
 const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/NitroRewardsLaptopSpotIllustration.native.tsx");

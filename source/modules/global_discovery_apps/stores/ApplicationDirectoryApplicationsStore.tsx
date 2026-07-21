@@ -1,23 +1,22 @@
-// Module ID: 5462
-// Function ID: 46632
+// Module ID: 5464
+// Function ID: 46674
 // Name: _isNativeReflectConstruct
 // Dependencies: [0, 0, 0, 0, 0, 0, 0, 0, 0]
 
-// Module 5462 (_isNativeReflectConstruct)
-import closure_0 from "result";
-import closure_1 from "result";
-import closure_2 from "result";
-import closure_3 from "result";
-import closure_4 from "result";
-import closure_5 from "result";
-import result from "result";
+// Module 5464 (_isNativeReflectConstruct)
+import __exportStarResult1 from "__exportStarResult1";
+import closure_1 from "__exportStarResult1";
+import closure_2 from "__exportStarResult1";
+import closure_3 from "__exportStarResult1";
+import closure_4 from "__exportStarResult1";
+import closure_5 from "__exportStarResult1";
 
 function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
+  let __exportStarResult1 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
   }));
   function _isNativeReflectConstruct() {
-    return closure_0;
+    return __exportStarResult1;
   }
   const result = _isNativeReflectConstruct();
 }
@@ -47,7 +46,7 @@ let tmp3 = (Store) => {
       return tmp2(self, constructResult);
     }
   }
-  let closure_0 = ApplicationDirectoryApplicationsStore;
+  let __exportStarResult1 = ApplicationDirectoryApplicationsStore;
   callback2(ApplicationDirectoryApplicationsStore, Store);
   let obj = {
     key: "getApplication",
@@ -121,7 +120,7 @@ let tmp3 = (Store) => {
     }
   };
   return callback(ApplicationDirectoryApplicationsStore, items);
-}(require("result").Store);
+}(require("__exportStarResult1").Store);
 tmp3.displayName = "ApplicationDirectoryApplicationsStore";
 obj = {
   APPLICATION_DIRECTORY_FETCH_APPLICATION: function handleFetchAppDirectoryApplication(applicationId) {
@@ -164,8 +163,8 @@ obj = {
     }
   }
 };
-tmp3 = new tmp3(require("result"), obj);
-result = result.fileFinishedImporting("modules/global_discovery_apps/stores/ApplicationDirectoryApplicationsStore.tsx");
+tmp3 = new tmp3(require("__exportStarResult1"), obj);
+const result = require("__exportStarResult1").fileFinishedImporting("modules/global_discovery_apps/stores/ApplicationDirectoryApplicationsStore.tsx");
 
 export default tmp3;
 export const FetchState = obj;

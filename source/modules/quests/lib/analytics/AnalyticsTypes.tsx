@@ -1,10 +1,12 @@
-// Module ID: 6959
-// Function ID: 55660
+// Module ID: 6963
+// Function ID: 55671
 // Name: getQuestContentName
-// Dependencies: []
+// Dependencies: [6981, 6982]
 // Exports: getContentProperties, getQuestStatus
 
-// Module 6959 (getQuestContentName)
+// Module 6963 (getQuestContentName)
+import Node from "Node";
+
 function getQuestContentName(questContent) {
   const require = questContent;
   const found = closure_2.find((arg0) => arg0(closure_1[0]).QuestContent[arg0] === arg0);
@@ -14,9 +16,8 @@ function getQuestContentName(questContent) {
   }
   return str;
 }
-let closure_2 = Object.keys(require(dependencyMap[0]).QuestContent);
-const _module = require(dependencyMap[1]);
-const result = _module.fileFinishedImporting("modules/quests/lib/analytics/AnalyticsTypes.tsx");
+let closure_2 = Object.keys(require("module_6981").QuestContent);
+const result = Node.fileFinishedImporting("modules/quests/lib/analytics/AnalyticsTypes.tsx");
 
 export { getQuestContentName };
 export const getQuestStatus = function getQuestStatus(quest) {

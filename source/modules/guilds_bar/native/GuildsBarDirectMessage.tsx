@@ -1,8 +1,8 @@
-// Module ID: 14736
-// Function ID: 111129
+// Module ID: 14743
+// Function ID: 111153
 // Dependencies: []
 
-// Module 14736
+// Module 14743
 const importAllResult = importAll(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 let closure_5 = importDefault(dependencyMap[2]);
@@ -60,7 +60,7 @@ const memoResult = importAllResult.memo(function GuildsBarDirectMessage(channelI
   const channel = stateFromStoresObject.channel;
   const dependencyMap = channel;
   const dmRecipient = stateFromStoresObject.dmRecipient;
-  const guildsBarAnimatedWrapperStyles = obj.useGuildsBarAnimatedWrapperStyles({ <string:1453996901>: null, <string:1230201436>: null });
+  const guildsBarAnimatedWrapperStyles = obj.useGuildsBarAnimatedWrapperStyles({ top: null, left: null });
   const items2 = [channel, dmRecipient];
   ({ badge, cutouts } = importDefault(dependencyMap[15])({ mentionCount: stateFromStores }));
   const memo = importAllResult.useMemo(() => {
@@ -91,7 +91,7 @@ const memoResult = importAllResult.memo(function GuildsBarDirectMessage(channelI
       }
     }
   }), items3);
-  obj = { "Bool(true)": 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000800310628823068, "Bool(true)": 0.0000000000000000000000000000000000000000000000015576649385897736, "Bool(true)": 36897806968414080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 };
+  obj = {};
   let isMultiUserDMResult = null != channel;
   const tmp5 = importDefault(dependencyMap[15])({ mentionCount: stateFromStores });
   const tmp8 = jsx;

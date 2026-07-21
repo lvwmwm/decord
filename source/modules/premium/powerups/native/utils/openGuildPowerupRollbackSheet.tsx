@@ -1,10 +1,10 @@
-// Module ID: 11528
-// Function ID: 89805
+// Module ID: 11535
+// Function ID: 89828
 // Name: openGuildPowerupRollbackSheet
 // Dependencies: []
 // Exports: default
 
-// Module 11528 (openGuildPowerupRollbackSheet)
+// Module 11535 (openGuildPowerupRollbackSheet)
 const _module = require(dependencyMap[3]);
 const result = _module.fileFinishedImporting("modules/premium/powerups/native/utils/openGuildPowerupRollbackSheet.tsx");
 

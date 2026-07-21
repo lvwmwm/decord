@@ -1,9 +1,9 @@
 // Module ID: 16214
-// Function ID: 125371
+// Function ID: 125351
 // Dependencies: []
 
 // Module 16214
 const _module = require(dependencyMap[0]);
-const obj = { url: 1912603177, content: 88, messageId: 80, channel_id: 1040859649, no: -1641218046, "Null": 2102460417, "Null": 94820, "Null": 1572864, scales: [] };
+const obj = { isConnected: "1c24dd3dd196a8ef2977a4e0d877d187", isInternetReachable: "safety_check", details: "png", reachabilityUrl: true, reachabilityMethod: "/assets/images/native/guild_settings/community_settings", reachabilityHeaders: 88, reachabilityTest: 80, reachabilityShortTimeout: null, scales: [] };
 
 export default _module.registerAsset(obj);

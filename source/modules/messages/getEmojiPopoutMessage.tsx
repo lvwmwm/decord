@@ -1,10 +1,10 @@
-// Module ID: 9382
-// Function ID: 73172
+// Module ID: 9386
+// Function ID: 73186
 // Name: EmojiPopoutType
 // Dependencies: []
 // Exports: getEmojiPopoutData
 
-// Module 9382 (EmojiPopoutType)
+// Module 9386 (EmojiPopoutType)
 const EmojiSourceDataTypes = require(dependencyMap[0]).EmojiSourceDataTypes;
 let closure_3 = { DEFAULT: "Custom Emoji Popout", CROSS_SERVER: "Custom Emoji Popout (Cross-Server)", UPSELL_CURRENT_SERVER_JOINED: "Custom Emoji Popout (Upsell Joined Current-Server)", UPSELL_CROSS_SERVER_JOINED: "Custom Emoji Popout (Upsell Joined Cross-Server)", UPSELL_CROSS_SERVER_JOINABLE: "Custom Emoji Popout (Upsell Not-Joined Cross-Server)", UPSELL_CROSS_SERVER_UNJOINABLE: "Custom Emoji Popout (Soft Upsell)" };
 const obj = { GET_PREMIUM: "GET_PREMIUM", JOIN_GUILD: "JOIN_GUILD", UNAVAILABLE: "UNAVAILABLE" };
@@ -70,7 +70,7 @@ export const getEmojiPopoutData = function getEmojiPopoutData(sourceType) {
           obj2.text = intl9.string(require(dependencyMap[1]).t.gl/XHJ);
           obj2.description = null;
         }
-        const obj3 = { width: "Normal", height: true, marginVertical: "AbortSignal", type: obj.UNAVAILABLE };
+        const obj3 = { "Null": null, "Null": "\u{1F9BB}\u{1F3FF}", "Null": true, type: obj.UNAVAILABLE };
         obj2 = obj3;
       }
     }

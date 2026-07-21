@@ -1,9 +1,9 @@
-// Module ID: 10422
-// Function ID: 80289
+// Module ID: 10428
+// Function ID: 80312
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 
-// Module 10422 (_createForOfIteratorHelperLoose)
+// Module 10428 (_createForOfIteratorHelperLoose)
 function _createForOfIteratorHelperLoose(@@iterator) {
   let arg1 = Symbol_iterator;
   @@iterator = "undefined" !== typeof Symbol;
@@ -362,7 +362,7 @@ const forwardRefResult = importAllResult.forwardRef((channel, ref) => {
   const obj18 = ref(dependencyMap[57]);
   const codedLinksExperimentEmbeds = ref(dependencyMap[67]).useCodedLinksExperimentEmbeds();
   const obj19 = ref(dependencyMap[67]);
-  quests = ref(dependencyMap[68]).useQuests({ guildId: null, replace: null });
+  quests = ref(dependencyMap[68]).useQuests({ "Bool(false)": "value", "Bool(false)": "\"{{!key}}\" " });
   ({ quests, isFetchingCurrentQuests } = quests);
   const found = stateFromStores.filter((type) => type.type === constants2.PREMIUM_REFERRAL);
   const mapped = found.map((referralTrialOfferId) => referralTrialOfferId.referralTrialOfferId);

@@ -1,10 +1,10 @@
-// Module ID: 10752
-// Function ID: 83585
+// Module ID: 10758
+// Function ID: 83608
 // Name: StageChannelCallBackground
 // Dependencies: []
 // Exports: default
 
-// Module 10752 (StageChannelCallBackground)
+// Module 10758 (StageChannelCallBackground)
 function StageChannelCallBackground(arg0) {
   let channelId;
   let children;
@@ -20,7 +20,7 @@ function StageChannelCallBackground(arg0) {
 importAll(dependencyMap[0]);
 ({ jsx: closure_3, Fragment: closure_4, jsxs: closure_5 } = arg1(dependencyMap[1]));
 const tmp3 = arg1(dependencyMap[1]);
-let closure_6 = arg1(dependencyMap[3]).createStyles({ container: { label: null, gap: null } });
+let closure_6 = arg1(dependencyMap[3]).createStyles({ container: { surrogates: false, scales: false } });
 const obj = arg1(dependencyMap[3]);
 const result = arg1(dependencyMap[10]).fileFinishedImporting("modules/stage_channels/native/components/StageChannelCallView.tsx");
 

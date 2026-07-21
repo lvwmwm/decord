@@ -1,8 +1,8 @@
-// Module ID: 4463
-// Function ID: 39405
+// Module ID: 4467
+// Function ID: 39453
 // Dependencies: []
 
-// Module 4463
+// Module 4467
 importAll(dependencyMap[0]);
 ({ jsx: closure_3, Fragment: closure_4, jsxs: closure_5 } = arg1(dependencyMap[1]));
 let closure_6 = null;
@@ -57,7 +57,7 @@ const obj = {
       confirmText = intl.string(arg1(dependencyMap[5]).t.BddRzS);
     }
     const arg1 = confirmText;
-    let obj = {};
+    let obj = { y: "spring", isArray: "linear", flex: "easeInEaseOut" };
     Object.setPrototypeOf(null);
     const merged = Object.assign(hideActionSheet, obj);
     const importDefault = merged;

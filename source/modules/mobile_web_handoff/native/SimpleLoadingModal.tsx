@@ -1,10 +1,10 @@
-// Module ID: 5687
-// Function ID: 48935
+// Module ID: 5689
+// Function ID: 48978
 // Name: showSimpleLoadingModal
 // Dependencies: []
 // Exports: showSimpleLoadingModal
 
-// Module 5687 (showSimpleLoadingModal)
+// Module 5689 (showSimpleLoadingModal)
 const _module = require(dependencyMap[3]);
 const result = _module.fileFinishedImporting("modules/mobile_web_handoff/native/SimpleLoadingModal.tsx");
 

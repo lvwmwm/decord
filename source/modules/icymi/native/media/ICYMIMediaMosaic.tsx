@@ -1,10 +1,10 @@
-// Module ID: 15091
-// Function ID: 113812
+// Module ID: 15098
+// Function ID: 113836
 // Name: isMediaSourceGif
 // Dependencies: []
 // Exports: default
 
-// Module 15091 (isMediaSourceGif)
+// Module 15098 (isMediaSourceGif)
 function isMediaSourceGif(source) {
   let isGIFV = source.isGIFV;
   if (!isGIFV) {
@@ -156,7 +156,7 @@ function Media(handlePressMedia) {
   if (first) {
     obj = { style: tmp.centerContainer };
     obj1 = { style: tmp.spoilerText };
-    const obj2 = { position: true, height: true, overflow: true };
+    const obj2 = { 0: true, 9223372036854775807: true, "Null": true };
     const intl = arg1(dependencyMap[22]).intl;
     obj2.children = intl.string(arg1(dependencyMap[22]).t.F+x38C).toUpperCase();
     obj1.children = callback2(arg1(dependencyMap[21]).Text, obj2);
@@ -384,7 +384,7 @@ class GravityAttachmentMediaMosaic {
     items = [, ];
     items[0] = length;
     items[1] = sources;
-    tmp = f113838();
+    tmp = f113862();
     memo = importAll.useMemo(() => {
       let sum;
       const items = [];
@@ -505,16 +505,16 @@ let closure_18 = arg1(dependencyMap[10]).createStyles(() => {
   obj.video = obj;
   obj.thumbhashMedia = {};
   obj.container = { gap: 4 };
-  obj.imagesContainer = { right: "/assets/design/components/Illustration/native/redesign/generated/images", height: 160, add: 160 };
-  obj.imageRow = { 0: null, 9223372036854775807: null };
+  obj.imagesContainer = { _forceFlush: "/assets/design/components/Illustration/native/redesign/generated/images", getDeviceAudioEffects: 160, ModalFloatingActionProps: 160 };
+  obj.imageRow = {};
   obj.topRow = { overflow: "hidden", borderTopEndRadius: importDefault(dependencyMap[11]).radii.lg, borderTopStartRadius: importDefault(dependencyMap[11]).radii.lg };
   const obj1 = { overflow: "hidden", borderTopEndRadius: importDefault(dependencyMap[11]).radii.lg, borderTopStartRadius: importDefault(dependencyMap[11]).radii.lg };
   obj.bottomRow = { overflow: "hidden", borderBottomEndRadius: importDefault(dependencyMap[11]).radii.lg, borderBottomStartRadius: importDefault(dependencyMap[11]).radii.lg };
   const obj2 = { overflow: "hidden", borderBottomEndRadius: importDefault(dependencyMap[11]).radii.lg, borderBottomStartRadius: importDefault(dependencyMap[11]).radii.lg };
   obj.videoIcon = { backgroundColor: importDefault(dependencyMap[11]).colors.BACKGROUND_BASE_LOW, borderRadius: importDefault(dependencyMap[11]).radii.round, padding: 16 };
+  const obj4 = { justifyContent: "display", backgroundColor: false, borderRadius: importDefault(dependencyMap[11]).radii.round, marginLeft: 16, paddingVertical: 20, padding: importDefault(dependencyMap[11]).space.PX_4 };
+  obj.muteIcon = obj4;
   const obj3 = { backgroundColor: importDefault(dependencyMap[11]).colors.BACKGROUND_BASE_LOW, borderRadius: importDefault(dependencyMap[11]).radii.round, padding: 16 };
-  obj.muteIcon = { borderRadius: importDefault(dependencyMap[11]).radii.round, padding: importDefault(dependencyMap[11]).space.PX_4 };
-  const obj4 = { borderRadius: importDefault(dependencyMap[11]).radii.round, padding: importDefault(dependencyMap[11]).space.PX_4 };
   obj.spoilerText = { backgroundColor: importDefault(dependencyMap[11]).colors.SPOILER_HIDDEN_BACKGROUND, borderRadius: importDefault(dependencyMap[11]).radii.lg, paddingHorizontal: importDefault(dependencyMap[11]).space.PX_12, paddingVertical: 6 };
   const obj5 = { backgroundColor: importDefault(dependencyMap[11]).colors.SPOILER_HIDDEN_BACKGROUND, borderRadius: importDefault(dependencyMap[11]).radii.lg, paddingHorizontal: importDefault(dependencyMap[11]).space.PX_12, paddingVertical: 6 };
   obj.leftColumn = { overflow: "hidden", borderTopStartRadius: importDefault(dependencyMap[11]).radii.lg, borderBottomStartRadius: importDefault(dependencyMap[11]).radii.lg };
@@ -522,7 +522,7 @@ let closure_18 = arg1(dependencyMap[10]).createStyles(() => {
   obj.rightColumn = { overflow: "hidden", borderTopEndRadius: importDefault(dependencyMap[11]).radii.lg, borderBottomEndRadius: importDefault(dependencyMap[11]).radii.lg, gap: 4 };
   const obj7 = { overflow: "hidden", borderTopEndRadius: importDefault(dependencyMap[11]).radii.lg, borderBottomEndRadius: importDefault(dependencyMap[11]).radii.lg, gap: 4 };
   obj.singleImage = { overflow: "hidden", borderRadius: importDefault(dependencyMap[11]).radii.lg };
-  obj.centerContainer = { 9223372036854775807: true, 0: false, 0: "", -9223372036854775808: false, 9223372036854775807: false, 9223372036854775807: false };
+  obj.centerContainer = { "Null": null, "Null": null, "Null": null, "Null": null, "Null": null, "Null": null };
   obj.absoluteContainer = {};
   const obj8 = { overflow: "hidden", borderRadius: importDefault(dependencyMap[11]).radii.lg };
   obj.iconBg = { backgroundColor: importDefault(dependencyMap[11]).colors.BACKGROUND_BASE_LOWER };
@@ -578,7 +578,7 @@ export default function ICYMIMediaMosaic(message) {
     let obj = widthOverride(itemType[26]);
     obj.itemInteracted(message.id, "message", "press_media");
     let obj1 = widthOverride(itemType[26]);
-    obj = { itemId: message.id, itemType, actionParameters: { "Bool(false)": -1556020959, "Bool(false)": 1912603872, "Bool(false)": 7, "Bool(false)": 370 } };
+    obj = { itemId: message.id, itemType, actionParameters: { "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true } };
     obj1.feedItemActioned(obj);
     obj = { page: constants3.ICYMI, object: constants2.ACK_MEDIA_VIEWED, objectType: constants.ACK_SEMI_AUTOMATIC };
     message(itemType[34]).ack(message.channel_id, obj, true, true, message.id);

@@ -1,10 +1,10 @@
-// Module ID: 6241
-// Function ID: 50235
+// Module ID: 6243
+// Function ID: 50278
 // Name: HdAudioSpotIllustration
 // Dependencies: []
 // Exports: HdAudioSpotIllustration
 
-// Module 6241 (HdAudioSpotIllustration)
+// Module 6243 (HdAudioSpotIllustration)
 const jsx = require(dependencyMap[0]).jsx;
 const _module = require(dependencyMap[3]);
 const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/HdAudioSpotIllustration.native.tsx");

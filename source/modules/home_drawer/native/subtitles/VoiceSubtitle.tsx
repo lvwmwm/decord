@@ -1,10 +1,10 @@
-// Module ID: 14719
-// Function ID: 111050
+// Module ID: 14726
+// Function ID: 111074
 // Name: VoiceSubtitle
 // Dependencies: []
 // Exports: default
 
-// Module 14719 (VoiceSubtitle)
+// Module 14726 (VoiceSubtitle)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/home_drawer/native/subtitles/VoiceSubtitle.tsx");
@@ -12,7 +12,7 @@ const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/home_drawer
 export default function VoiceSubtitle(arg0) {
   let voiceUsers;
   ({ guildId: closure_0, voiceUsers } = arg0);
-  let obj = { 9223372036854775807: true, 9223372036854775807: true, 9223372036854775807: true };
+  let obj = {};
   const intl = arg1(dependencyMap[3]).intl;
   obj = {};
   const substr = voiceUsers.slice(0, 2);

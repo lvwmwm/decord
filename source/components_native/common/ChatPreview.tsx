@@ -1,10 +1,10 @@
-// Module ID: 9297
-// Function ID: 72613
+// Module ID: 9301
+// Function ID: 72625
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 // Exports: default
 
-// Module 9297 (_isNativeReflectConstruct)
+// Module 9301 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -17,38 +17,38 @@ function _isNativeReflectConstruct() {
 class ChatPreview {
   constructor(arg0) {
     arg1 = global.channelId;
-    InlineAttachmentMedia = arg1(dependencyMap[45]).InlineAttachmentMedia;
+    InlineAttachmentMedia = arg1(dependencyMap[47]).InlineAttachmentMedia;
     setting = InlineAttachmentMedia.useSetting();
-    InlineEmbedMedia = arg1(dependencyMap[45]).InlineEmbedMedia;
+    InlineEmbedMedia = arg1(dependencyMap[47]).InlineEmbedMedia;
     setting1 = InlineEmbedMedia.useSetting();
-    RenderEmbeds = arg1(dependencyMap[45]).RenderEmbeds;
+    RenderEmbeds = arg1(dependencyMap[47]).RenderEmbeds;
     setting2 = RenderEmbeds.useSetting();
-    obj = arg1(dependencyMap[46]);
+    obj = arg1(dependencyMap[48]);
     items = [];
     items[0] = closure_11;
     stateFromStores = obj.useStateFromStores(items, () => roleStyle.roleStyle);
-    obj2 = arg1(dependencyMap[46]);
+    obj2 = arg1(dependencyMap[48]);
     items1 = [];
     items1[0] = closure_13;
     stateFromStores1 = obj2.useStateFromStores(items1, () => channel.getChannel(channelId));
-    obj3 = arg1(dependencyMap[48]);
+    obj3 = arg1(dependencyMap[50]);
     isChannelSpoilerGated = obj3.useIsChannelSpoilerGated(stateFromStores1);
-    obj4 = arg1(dependencyMap[49]);
+    obj4 = arg1(dependencyMap[51]);
     isChannelContentGated = obj4.useIsChannelContentGated(stateFromStores1);
-    obj5 = arg1(dependencyMap[46]);
+    obj5 = arg1(dependencyMap[48]);
     items2 = [];
     items2[0] = closure_12;
     obj = {};
     stateFromStores2 = obj5.useStateFromStores(items2, () => null != content.getContent());
     tmp9 = jsx;
-    tmp10 = f72621;
+    tmp10 = PureComponent;
     merged = Object.assign(global);
     obj["inlineAttachmentMedia"] = setting;
     obj["inlineEmbedMedia"] = setting1;
     obj["renderEmbeds"] = setting2;
     obj["roleStyle"] = stateFromStores;
     obj["channel"] = stateFromStores1;
-    obj["width"] = importDefault(dependencyMap[47])().width;
+    obj["width"] = importDefault(dependencyMap[49])().width;
     obj["isSpoilerHidden"] = isChannelSpoilerGated;
     obj["isNSFWHidden"] = isChannelContentGated;
     tmp12 = !isChannelSpoilerGated && !isChannelContentGated;
@@ -76,14 +76,14 @@ const tmp4 = arg1(dependencyMap[12]);
 const tmp5 = arg1(dependencyMap[13]);
 ({ jsx: closure_21, jsxs: closure_22 } = arg1(dependencyMap[14]));
 let obj = arg1(dependencyMap[15]);
-obj = { chat: { "Bool(false)": 10, "Bool(false)": 10 } };
+obj = { chat: { 9223372036854775807: 10, 9223372036854775807: 10 } };
 obj = { flex: 1, backgroundColor: importDefault(dependencyMap[16]).colors.BACKGROUND_BASE_LOW };
 obj.containerInner = obj;
 const tmp6 = arg1(dependencyMap[14]);
 obj.jumpToChatButtonContainer = { flexShrink: 0, backgroundColor: importDefault(dependencyMap[16]).colors.BACKGROUND_SURFACE_HIGH };
 const obj1 = { flexShrink: 0, backgroundColor: importDefault(dependencyMap[16]).colors.BACKGROUND_SURFACE_HIGH };
 obj.jumpToChatButton = { height: 44, borderTopWidth: tmp3.StyleSheet.hairlineWidth, borderTopColor: importDefault(dependencyMap[16]).colors.BORDER_SUBTLE };
-obj.jumpToChatText = { "Bool(false)": 47910638322386150000000000000000000000000000000000000000000000000000000000000000000, "Bool(false)": 231584254778021550000000000000000000000000000000000000000000000000000000000000, "Bool(false)": 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011722272290934665 };
+obj.jumpToChatText = { "Null": -1140850104, "Null": 1358954898, "Null": 208844757 };
 let closure_23 = obj.createLegacyClassComponentStyles(obj);
 const tmp7 = (PureComponent) => {
   class ChatPreviewBase {
@@ -124,8 +124,8 @@ const tmp7 = (PureComponent) => {
         }
       };
       tmp2Result.setup = () => {
-        let chatManager2;
         let chatManager3;
+        let chatManager4;
         let jumpTargetId;
         let length;
         let messages;
@@ -136,6 +136,7 @@ const tmp7 = (PureComponent) => {
         messages = undefined;
         let closure_2;
         let closure_3;
+        let map;
         let items;
         let items1;
         const props = tmp2Result.props;
@@ -145,9 +146,20 @@ const tmp7 = (PureComponent) => {
           const rowGenerator2 = tmp2Result.rowGenerator;
           let obj = { renderEmbeds: tmp3, inlineEmbedMedia: tmp2, inlineAttachmentMedia: tmp, constrainedWidth: tmp2Result.props.width };
           rowGenerator2.setOptions(obj);
-          const chatManager4 = tmp2Result.chatManager;
-          chatManager4.setup(messages);
-          closure_3 = flag ? tmp20.UPDATE : tmp20.NOOP;
+          const chatManager5 = tmp2Result.chatManager;
+          chatManager5.setup(messages);
+          closure_3 = flag ? tmp25.UPDATE : tmp25.NOOP;
+          const chatManager = tmp2Result.chatManager;
+          const previousMessages = chatManager.getPreviousMessages();
+          const _Array = Array;
+          map = null;
+          if (Array.isArray(previousMessages)) {
+            const _Map = Map;
+            map = new Map(previousMessages.map((id) => {
+              const items = [id.id, id];
+              return items;
+            }));
+          }
           items = [];
           const item = messages.forEach((arg0) => {
             const first = items[0];
@@ -167,7 +179,7 @@ const tmp7 = (PureComponent) => {
           const item1 = items.forEach((arr) => {
             const _undefined = arr;
             const messages = tmp;
-            let isSameDayResult = items[closure_4.length - 1] === arr;
+            let isSameDayResult = items[closure_5.length - 1] === arr;
             let closure_2 = false;
             let timestamp = null;
             if (!isSameDayResult) {
@@ -194,7 +206,7 @@ const tmp7 = (PureComponent) => {
               arg0.context = tmp.id;
               return arg0;
             }
-            let tmp8 = items1[closure_5.length - 1];
+            let tmp8 = items1[closure_6.length - 1];
             obj = { roleStyle: closure_2, rowType: constants.BLOCKED_GROUP, changeType: closure_3, message: tmp, isFirst: true, content: [], text: "", revealed: false };
             if (arr[arr.length - 1].blocked) {
               let tmp22 = null != tmp8;
@@ -230,14 +242,20 @@ const tmp7 = (PureComponent) => {
               const obj3 = { count: tmp12.content.length };
               tmp12.text = intl.formatToPlainString(_undefined(closure_3[22]).t.VFWjc+, obj3);
             } else {
-              const item = arr.forEach((message) => {
-                const obj = { roleStyle: closure_2, rowType: constants.MESSAGE, changeType: closure_3, message, isFirst: message === tmp, isEditing: false };
-                let tmp3 = !tmp2;
-                if (message === tmp) {
-                  tmp3 = closure_2;
+              const item = arr.forEach((id) => {
+                if (null != closure_4) {
+                  if (closure_4.get(id.id) !== id) {
+                    let UPDATE = constants.UPDATE;
+                  }
+                  const obj = { roleStyle: closure_2, rowType: constants2.MESSAGE, changeType: UPDATE, message: id, isFirst: id === closure_4, isEditing: false };
+                  let tmp8 = !tmp7;
+                  if (id === closure_4) {
+                    tmp8 = closure_2;
+                  }
+                  obj.separatorBefore = tmp8;
+                  const arr = arr.push(obj);
                 }
-                obj.separatorBefore = tmp3;
-                const arr = arr.push(obj);
+                UPDATE = closure_3;
               });
             }
             if (flag) {
@@ -249,22 +267,22 @@ const tmp7 = (PureComponent) => {
           let num = 0;
           if (0 < items1.length) {
             do {
-              let tmp7 = closure_0;
-              let chatManager = closure_0.chatManager;
+              let tmp12 = closure_0;
+              let chatManager2 = closure_0.chatManager;
               let rowGenerator = closure_0.rowGenerator;
-              let row = chatManager.createRow(rowGenerator.generate(items1[num]));
+              let row = chatManager2.createRow(rowGenerator.generate(items1[num]));
               num = num + 1;
               length = items1.length;
             } while (num < length);
           }
-          ({ chatManager: chatManager2, chatManager: chatManager3 } = tmp2Result);
-          const changeset = chatManager2.createChangeset();
-          let tmp12;
+          ({ chatManager: chatManager3, chatManager: chatManager4 } = tmp2Result);
+          const changeset = chatManager3.createChangeset();
+          let tmp17;
           if (!tmp4) {
-            obj = { rows: tmp11, scrollToMessageId: jumpTargetId, jumpTargetId, jumpType: undefined, shouldInitialScroll: false, animated: false, scrollPosition: undefined, focusTargetId: null };
-            tmp12 = messages(closure_3[23])(obj);
+            obj = { rows: tmp16, scrollToMessageId: jumpTargetId, jumpTargetId, jumpType: undefined, shouldInitialScroll: false, animated: false, scrollPosition: undefined, focusTargetId: null };
+            tmp17 = messages(closure_3[23])(obj);
           }
-          tmp2Result.updateContent(changeset, tmp12);
+          tmp2Result.updateContent(changeset, tmp17);
         }
       };
       tmp2Result.updateContent = (rows, scrollData) => {
@@ -360,7 +378,9 @@ const tmp7 = (PureComponent) => {
         let obj = tmp2Result(closure_3[29]);
         const nativeSyntheticEventData = obj.getNativeSyntheticEventData(nativeEvent);
         ({ mediaIndex, mediaType, componentMediaIndex } = nativeSyntheticEventData);
-        if (!tmp2Result.props.hasActionSheetOpen) {
+        const props = tmp2Result.props;
+        const channel = props.channel;
+        if (!props.hasActionSheetOpen) {
           const message = tmp2Result.getMessage(tmp2);
           if (null != message) {
             const user = user.getUser(message.author.id);
@@ -370,16 +390,24 @@ const tmp7 = (PureComponent) => {
               const obj3 = tmp2Result(closure_3[30]);
               const result = callback2(closure_3[31]).dismissGlobalKeyboard();
               const obj4 = callback2(closure_3[31]);
-              obj = { "Bool(false)": 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000015459527413461856, "Bool(false)": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003337610788552319, "Bool(false)": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000352126642368941 };
+              obj = { actionSheetSource: "Preview" };
               obj = { section: constants2.CHANNEL_SEARCH, object: constants.CHANNEL_SEARCH };
               obj.analyticsLocation = obj;
-              obj.channel = tmp4;
-              obj.message = message;
-              let tmp8;
-              if (null != longPressSelectedMedia) {
-                tmp8 = longPressSelectedMedia;
+              let tmp8 = true === tmp4;
+              if (tmp8) {
+                tmp8 = null != channel;
               }
-              obj.selectedMedia = tmp8;
+              if (tmp8) {
+                tmp8 = callback(closure_3[33])(channel);
+              }
+              obj.canAddNewReactions = tmp8;
+              obj.channel = channel;
+              obj.message = message;
+              let tmp11;
+              if (null != longPressSelectedMedia) {
+                tmp11 = longPressSelectedMedia;
+              }
+              obj.selectedMedia = tmp11;
               obj.user = user;
               const result1 = tmp2Result(closure_3[32]).showLongPressMessageActionSheet(obj);
               const obj5 = tmp2Result(closure_3[32]);
@@ -395,8 +423,37 @@ const tmp7 = (PureComponent) => {
           if (null != reaction) {
             emoji = reaction.emoji;
           }
-          const result = tmp2Result(closure_3[33]).handleViewPreviewReactions(tmp2, tmp3, emoji);
-          const obj2 = tmp2Result(closure_3[33]);
+          const result = tmp2Result(closure_3[34]).handleViewPreviewReactions(tmp2, tmp3, emoji);
+          const obj2 = tmp2Result(closure_3[34]);
+        }
+      };
+      tmp2Result.handleTapReaction = (nativeEvent) => {
+        let isBurst;
+        let messageId;
+        let reaction;
+        const props = tmp2Result.props;
+        const channel = props.channel;
+        if (!props.hasActionSheetOpen) {
+          if (true === tmp) {
+            if (null != channel) {
+              const nativeSyntheticEventData = tmp2Result(closure_3[29]).getNativeSyntheticEventData(nativeEvent);
+              ({ reaction, messageId, isBurst } = nativeSyntheticEventData);
+              const obj3 = tmp2Result(closure_3[19]);
+              let tmp5 = null;
+              if (null != reaction) {
+                const obj = {};
+                const merged = Object.assign(reaction);
+                obj["emoji"] = reaction.emoji;
+                tmp5 = obj;
+              }
+              let MESSAGE = nativeEvent.nativeEvent.location;
+              if (null == MESSAGE) {
+                MESSAGE = tmp2Result(closure_3[35]).ReactionLocations.MESSAGE;
+              }
+              const result = obj3.handleAddOrRemoveReaction(messageId, channel, tmp5, isBurst, MESSAGE);
+              const obj2 = tmp2Result(closure_3[29]);
+            }
+          }
         }
       };
       tmp2Result.handleTapImage = (nativeEvent) => {
@@ -406,20 +463,20 @@ const tmp7 = (PureComponent) => {
           const channel = channel.getChannel(message.getChannelId());
           if (null != channel) {
             const obj = { tapImageData: nativeEvent, allowWithinModal: true, message, messageChannel: channel, selectedChannelId: undefined, showContextName: true };
-            const result = tmp2Result(closure_3[34]).handleMessagesTapImage(obj);
-            const obj2 = tmp2Result(closure_3[34]);
+            const result = tmp2Result(closure_3[36]).handleMessagesTapImage(obj);
+            const obj2 = tmp2Result(closure_3[36]);
           }
         }
       };
       tmp2Result.handleTapChannel = (nativeEvent) => {
         let obj = tmp2Result(closure_3[29]);
         obj = { data: obj.getNativeSyntheticEventData(nativeEvent).data, navigationReplace: true, onBeforeNavigate: tmp2Result.props.onBeforeJumpToMessage };
-        const result = tmp2Result(closure_3[35]).handleMessagesTapChannel(obj);
+        const result = tmp2Result(closure_3[37]).handleMessagesTapChannel(obj);
       };
       tmp2Result.handleLongPressChannel = (arg0) => {
         tmp2Result(closure_3[29]);
         if (!tmp2Result.props.hasActionSheetOpen) {
-          let obj = tmp2Result(closure_3[36]);
+          let obj = tmp2Result(closure_3[38]);
           obj = { data: tmp2 };
           const result = obj.handleMessagesLongPressChannel(obj);
         }
@@ -487,7 +544,7 @@ const tmp7 = (PureComponent) => {
         if (null != guild_id) {
           let obj = {};
           ({ guild_id: obj8.guildId, id: obj8.channelId } = channel);
-          let tmp12 = callback4(callback(closure_3[37]), obj);
+          let tmp12 = callback4(callback(closure_3[39]), obj);
         }
         obj = { style: tmp.containerInner };
         const items = [tmp12, tmp11];
@@ -502,51 +559,51 @@ const tmp7 = (PureComponent) => {
         if (null != guild_id1) {
           let obj1 = {};
           ({ guild_id: obj7.guildId, id: obj7.channelId } = channel);
-          tmp12 = callback4(callback(closure_3[38]), obj1);
+          tmp12 = callback4(callback(closure_3[40]), obj1);
         }
       }
-      obj = { ref: self.chatRef, style: tmp.chat, inverted: true, onTapLink: self.handleTapLink, onTapChannel: self.handleTapChannel, onLongPressChannel: self.handleLongPressChannel, onLongPressLink: self.handleLongPressLink, onLongPressMessage: self.handleLongPressMessage, onLongPressReaction: self.handleLongPressReaction, onTapImage: self.handleTapImage };
-      obj1 = ChatPreviewBase(closure_3[40]);
+      obj = { ref: self.chatRef, style: tmp.chat, inverted: true, onTapLink: self.handleTapLink, onTapChannel: self.handleTapChannel, onLongPressChannel: self.handleLongPressChannel, onLongPressLink: self.handleLongPressLink, onLongPressMessage: self.handleLongPressMessage, onLongPressReaction: self.handleLongPressReaction, onTapReaction: self.handleTapReaction, onTapImage: self.handleTapImage };
+      obj1 = ChatPreviewBase(closure_3[42]);
       let prop;
       if (obj1.isIOS()) {
         prop = self.handleCompleteFirstLayout;
       }
       obj.onCompleteFirstLayout = prop;
-      let obj2 = ChatPreviewBase(closure_3[40]);
+      let obj2 = ChatPreviewBase(closure_3[42]);
       let prop1;
       if (!obj2.isIOS()) {
         prop1 = self.handleCompleteFirstLayout;
       }
       obj.onFirstLayout = prop1;
       const tmp6 = callback4;
-      const tmp7 = callback(closure_3[39]);
+      const tmp7 = callback(closure_3[41]);
       obj2 = { bottom: true, style: tmp.jumpToChatButtonContainer };
       const obj3 = { accessibilityRole: "button", style: tmp.jumpToChatButton, onPress: self.handleJumpToChat };
-      const obj4 = { Promise: 0, marginTop: 1929379840, flags: 0, style: tmp.jumpToChatText };
+      const obj4 = { "Null": 0, "Null": 1929379840, "Null": 0, style: tmp.jumpToChatText };
       const intl = ChatPreviewBase(closure_3[22]).intl;
       obj4.children = intl.string(ChatPreviewBase(closure_3[22]).t.+TSRGD);
-      obj3.children = callback4(ChatPreviewBase(closure_3[43]).Text, obj4);
-      obj2.children = callback4(ChatPreviewBase(closure_3[42]).PressableOpacity, obj3);
-      const tmp6Result = callback4(callback(closure_3[39]), obj);
+      obj3.children = callback4(ChatPreviewBase(closure_3[45]).Text, obj4);
+      obj2.children = callback4(ChatPreviewBase(closure_3[44]).PressableOpacity, obj3);
+      const tmp6Result = callback4(callback(closure_3[41]), obj);
       tmp12 = tmp6Result;
     }
   };
   return callback(ChatPreviewBase, items);
 }(importAllResult.PureComponent);
-tmp7.contextType = arg1(dependencyMap[44]).ThemeContext;
+tmp7.contextType = arg1(dependencyMap[46]).ThemeContext;
 tmp7.defaultProps = { withSafeArea: true };
 const obj2 = { height: 44, borderTopWidth: tmp3.StyleSheet.hairlineWidth, borderTopColor: importDefault(dependencyMap[16]).colors.BORDER_SUBTLE };
-const result = arg1(dependencyMap[51]).fileFinishedImporting("components_native/common/ChatPreview.tsx");
+const result = arg1(dependencyMap[53]).fileFinishedImporting("components_native/common/ChatPreview.tsx");
 
 export default function ChatPreviewConnected(arg0) {
   let jumpTargetId;
   let messages;
-  let obj = arg1(dependencyMap[46]);
+  let obj = arg1(dependencyMap[48]);
   const items = [closure_15];
   const stateFromStoresObject = obj.useStateFromStoresObject(items, () => ({ messages: closure_15.messages, jumpTargetId: closure_15.jumpTargetId }));
   ({ messages, jumpTargetId } = stateFromStoresObject);
   const effect = importAllResult.useEffect(() => () => {
-    callback(closure_3[50]).clearMessages();
+    callback(closure_3[52]).clearMessages();
   }, []);
   obj = {};
   const merged = Object.assign(arg0);

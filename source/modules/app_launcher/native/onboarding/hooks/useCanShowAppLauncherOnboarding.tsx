@@ -1,10 +1,10 @@
-// Module ID: 11146
-// Function ID: 86693
+// Module ID: 11152
+// Function ID: 86716
 // Name: result
 // Dependencies: []
 // Exports: default
 
-// Module 11146 (result)
+// Module 11152 (result)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 let closure_5 = importDefault(dependencyMap[2]);
@@ -116,7 +116,7 @@ export default function useCanShowAppLauncherOnboarding(channelId) {
   const obj9 = arg1(dependencyMap[12]);
   let result1 = arg1(dependencyMap[12]).useIsDismissibleContentDismissed_UNSAFE(arg1(dependencyMap[10]).DismissibleContent.APP_LAUNCHER_ONBOARDING_APPS_BANNER);
   const obj10 = arg1(dependencyMap[12]);
-  const obj3 = {};
+  const obj3 = { _format: "-13", ENABLE_COMMUNITY_FLOW_MODAL_KEY: "timeout", placeholderCount: "timeout", BOOST_PROGRESS_BAR_MOBILE_COACHMARK: -113903340836192360000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, accessibilityRole: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011942061113586122 };
   let tmp25 = null != stateFromStores1;
   const result2 = arg1(dependencyMap[12]).useIsDismissibleContentDismissed_UNSAFE(arg1(dependencyMap[10]).DismissibleContent.APP_LAUNCHER_ONBOARDING_ACTIVITIES_BANNER);
   if (tmp25) {

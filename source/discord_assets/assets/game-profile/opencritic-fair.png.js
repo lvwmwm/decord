@@ -1,9 +1,9 @@
-// Module ID: 8631
-// Function ID: 68366
+// Module ID: 8635
+// Function ID: 68378
 // Name: metadata
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 8631 (metadata)
+// Module 8635 (metadata)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_assets/assets/game-profile/opencritic-fair.png.js");
 

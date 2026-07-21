@@ -1,9 +1,9 @@
-// Module ID: 9635
-// Function ID: 75043
+// Module ID: 9640
+// Function ID: 75060
 // Name: useTileEntranceAnimatedStyle
 // Dependencies: []
 
-// Module 9635 (useTileEntranceAnimatedStyle)
+// Module 9640 (useTileEntranceAnimatedStyle)
 let StyleSheet;
 function useTileEntranceAnimatedStyle(arg0) {
   let obj = arg1(dependencyMap[8]);
@@ -177,7 +177,7 @@ function Tile(onEdit) {
       }
       tmp21 = null;
       if (length > 0) {
-        const obj5 = { overflow: "bb53327d21615c77cfbccb9f06aeb711", Cell: "wumpus-link", StickyHeader: "png", style: tmp.altTagText };
+        const obj5 = { listener: "bb53327d21615c77cfbccb9f06aeb711", listenerType: "wumpus-link", passive: "png", style: tmp.altTagText };
         const intl = onEdit(channelId[20]).intl;
         obj5.children = intl.string(onEdit(channelId[20]).t.QEW81z);
         tmp21 = flag(onEdit(channelId[19]).Text, obj5);
@@ -243,7 +243,7 @@ function Tile(onEdit) {
   obj3.accessibilityLabel = intl4.formatToPlainString(arg1(dependencyMap[20]).t.FxKgb3, obj4);
   obj3.style = tmp.closeButton;
   obj3.onPress = callback1;
-  obj3.hitSlop = { "Bool(true)": "GUILD_ROLE_CREATE", "Bool(true)": "StreamingTier2LargeBadge", "Bool(true)": "SubscriptionTrials", "Bool(true)": "SHAKE_SETTINGS_MODAL" };
+  obj3.hitSlop = {};
   const obj5 = { style: items9 };
   const items9 = [tmp.closeContainer, tmp9Result];
   const obj6 = { source: importDefault(dependencyMap[24]), size: arg1(dependencyMap[10]).Icon.Sizes.MEDIUM, color: importDefault(dependencyMap[7]).unsafe_rawColors.PRIMARY_500, style: tmp.closeButtonIcon };
@@ -302,11 +302,11 @@ obj1["justifyContent"] = "space-between";
 obj1["alignItems"] = "flex-end";
 obj1["padding"] = 4;
 obj.decorationsContainer = obj1;
-const obj2 = { <string:80118784>: 8, <string:80119296>: 8, <string:2411680000>: null, <string:1581912768>: null, borderColor: importDefault(dependencyMap[7]).colors.INTERACTIVE_TEXT_ACTIVE };
+const obj2 = { <string:80135168>: 8, <string:80135680>: 8, <string:778326272>: null, <string:1595151040>: null, borderColor: importDefault(dependencyMap[7]).colors.INTERACTIVE_TEXT_ACTIVE };
 obj.highlightedTileContainer = obj2;
 obj.closeButton = { top: -1 * IMAGE_CAROUSEL_EXPERIMENT_TILE_MARGIN };
 obj.scrollview = { paddingTop: IMAGE_CAROUSEL_TILE_CLOSE_BUTTON_PADDING };
-const obj4 = { accessibilityRole: true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_SCRIM_LIGHTBOX };
+const obj4 = { "Bool(true)": true, "Bool(true)": true, "Bool(true)": true, "Bool(true)": true, "Bool(true)": true, backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_SCRIM_LIGHTBOX };
 obj.closeContainer = obj4;
 const obj3 = { top: -1 * IMAGE_CAROUSEL_EXPERIMENT_TILE_MARGIN };
 const tmp4 = arg1(dependencyMap[5]);
@@ -377,7 +377,7 @@ const memoResult = importAllResult.memo((arg0) => {
   obj.marginBottom = num5;
   items2[1] = obj;
   obj.style = items2;
-  obj = { "Bool(false)": 216209880407002560000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, "Bool(false)": 1323345.0000000002, "Bool(false)": 1323345.0000249697, "Bool(false)": 1358954990 };
+  obj = { "Bool(true)": "Array", "Bool(true)": "isArray", "Bool(true)": "accessibilityRole", "Bool(true)": "track" };
   const intl = arg1(dependencyMap[20]).intl;
   obj.accessibilityLabel = intl.string(arg1(dependencyMap[20]).t.RhtzFe);
   const items3 = [headerElement, ];

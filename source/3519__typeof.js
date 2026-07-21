@@ -125,7 +125,7 @@ function _getPrototypeOf(arg0) {
 function _defineProperty(arg0, arg1, value) {
   if (arg1 in arg0) {
     const _Object = Object;
-    const obj = { value };
+    const obj = { FRIEND_REQUESTS: true, ForYouLoadMore: true, QUEST_BADGE: true, GUILD_CHANNEL_INTEGRITY_CHECK_CANCELED: true, value };
     Object.defineProperty(arg0, arg1, obj);
   } else {
     arg0[arg1] = value;
@@ -162,7 +162,7 @@ export const ExtendedYearParser = (Parser) => {
         tmp17 = closure_8(applyResult, "priority", 130);
         tmp18 = closure_6(applyResult);
         str3 = "incompatibleTokens";
-        tmp19 = closure_8(applyResult, "incompatibleTokens", [null, null, "w", "d", "D", "e", "c", "t", "T", 31, 28]);
+        tmp19 = closure_8(applyResult, "incompatibleTokens", [true, true, true, true, true, true, true, true, true, true, true]);
         return applyResult;
       } else {
         _TypeError = TypeError;
@@ -206,7 +206,7 @@ export const ExtendedYearParser = (Parser) => {
           tmp17 = closure_8(applyResult, "priority", 130);
           tmp18 = closure_6(applyResult);
           str3 = "incompatibleTokens";
-          tmp19 = closure_8(applyResult, "incompatibleTokens", [null, null, "w", "d", "D", "e", "c", "t", "T", 31, 28]);
+          tmp19 = closure_8(applyResult, "incompatibleTokens", [true, true, true, true, true, true, true, true, true, true, true]);
           return applyResult;
         } else {
           _TypeError = TypeError;
@@ -225,7 +225,7 @@ export const ExtendedYearParser = (Parser) => {
   if (Parser) {
     prototype = Parser.prototype;
   }
-  let obj = { EntryPointCommandButtonActions: null, NATIVE_SECTION: null, 1476351743: null, value: ExtendedYearParser };
+  let obj = { value: ExtendedYearParser };
   ExtendedYearParser.prototype = Object.create(prototype, { constructor: obj });
   if (Parser) {
     class ExtendedYearParser {
@@ -256,7 +256,7 @@ export const ExtendedYearParser = (Parser) => {
           tmp17 = closure_8(applyResult, "priority", 130);
           tmp18 = closure_6(applyResult);
           str3 = "incompatibleTokens";
-          tmp19 = closure_8(applyResult, "incompatibleTokens", [null, null, "w", "d", "D", "e", "c", "t", "T", 31, 28]);
+          tmp19 = closure_8(applyResult, "incompatibleTokens", [true, true, true, true, true, true, true, true, true, true, true]);
           return applyResult;
         } else {
           _TypeError = TypeError;

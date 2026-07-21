@@ -1,10 +1,10 @@
-// Module ID: 10855
-// Function ID: 84487
+// Module ID: 10861
+// Function ID: 84510
 // Name: showChatGDMUpsellActionSheet
 // Dependencies: []
 // Exports: default
 
-// Module 10855 (showChatGDMUpsellActionSheet)
+// Module 10861 (showChatGDMUpsellActionSheet)
 const _module = require(dependencyMap[3]);
 const result = _module.fileFinishedImporting("modules/group_dm/native/showChatGDMUpsellActionSheet.tsx");
 

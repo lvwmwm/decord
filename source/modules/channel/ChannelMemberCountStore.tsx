@@ -1,9 +1,9 @@
-// Module ID: 10110
-// Function ID: 78275
+// Module ID: 10116
+// Function ID: 78293
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
-// Module 10110 (_isNativeReflectConstruct)
+// Module 10116 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -20,7 +20,7 @@ let closure_5 = importDefault(dependencyMap[3]);
 let closure_6 = importDefault(dependencyMap[4]);
 let closure_7 = importDefault(dependencyMap[5]);
 let closure_8 = importDefault(dependencyMap[6]);
-let closure_9 = Object.freeze({});
+let closure_9 = Object.freeze({ bjq: "o", bkb: "o" });
 let closure_10 = {};
 let closure_11 = {};
 let closure_12 = null;

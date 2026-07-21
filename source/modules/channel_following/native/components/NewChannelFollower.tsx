@@ -1,10 +1,10 @@
-// Module ID: 10354
-// Function ID: 79918
+// Module ID: 10360
+// Function ID: 79941
 // Name: NewChannelFollower
 // Dependencies: []
 // Exports: default
 
-// Module 10354 (NewChannelFollower)
+// Module 10360 (NewChannelFollower)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 ({ View: closure_5, ImageBackground: closure_6 } = arg1(dependencyMap[2]));
@@ -19,14 +19,14 @@ const tmp2 = arg1(dependencyMap[2]);
 const tmp3 = arg1(dependencyMap[8]);
 ({ jsx: closure_16, jsxs: closure_17 } = arg1(dependencyMap[9]));
 let obj = arg1(dependencyMap[10]);
-obj = { container: { "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, "Bool(false)": false }, header: {}, headerGuildIcon: { cCqsca: null, emitUnicodeLocaleId: null } };
+obj = { container: { icon: "<string:2154889218>", join: "<string:16777216>", message: "ars", enumerable: "<string:1148797184>", title: "<string:2255552513>" }, header: {}, headerGuildIcon: {} };
 obj = { borderRadius: importDefault(dependencyMap[11]).radii.xs, backgroundColor: importDefault(dependencyMap[11]).colors.BACKGROUND_SURFACE_HIGH, height: 32 };
 obj.headerChannelContainer = obj;
 const tmp4 = arg1(dependencyMap[9]);
 obj.headerChannel = { borderRadius: importDefault(dependencyMap[11]).radii.xs, backgroundColor: importDefault(dependencyMap[11]).colors.INTERACTIVE_BACKGROUND_SELECTED };
-obj.headerChannelIcon = { "Null": null, "Null": null, "Null": null, "Null": null };
-obj.ctaHeader = {};
-obj.ctaSubhead = {};
+obj.headerChannelIcon = { "Null": null, "Null": null, lv: null, mg: null };
+obj.ctaHeader = { "Bool(true)": true, "Bool(true)": "/assets/design/components/Icon/native/redesign/generated/images", "Bool(true)": 24 };
+obj.ctaSubhead = { "Bool(true)": true, "Bool(true)": "/assets/design/components/Icon/native/redesign/generated/images", "Bool(true)": 24 };
 obj.channelIcon = {};
 let closure_18 = obj.createStyles(obj);
 const obj1 = { borderRadius: importDefault(dependencyMap[11]).radii.xs, backgroundColor: importDefault(dependencyMap[11]).colors.INTERACTIVE_BACKGROUND_SELECTED };
@@ -104,7 +104,7 @@ export default function NewChannelFollower(targetChannelId) {
   obj1.children = callback3(closure_5, obj2);
   const items4 = [callback2(closure_6, obj1), ];
   const obj7 = { style: tmp.container };
-  const obj8 = { Promise: "done", marginTop: "construct", flags: "apply", style: tmp.ctaHeader };
+  const obj8 = { "Null": true, "Null": true, "Null": true, style: tmp.ctaHeader };
   const intl = arg1(dependencyMap[26]).intl;
   obj8.children = intl.string(arg1(dependencyMap[26]).t.mvPFbA);
   const items5 = [callback2(arg1(dependencyMap[25]).Text, obj8), , , , , ];

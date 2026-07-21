@@ -1,16 +1,16 @@
-// Module ID: 11997
-// Function ID: 92736
+// Module ID: 12004
+// Function ID: 92759
 // Name: WishlistEmptyState
 // Dependencies: []
 // Exports: default
 
-// Module 11997 (WishlistEmptyState)
+// Module 12004 (WishlistEmptyState)
 class WishlistEmptyState {
   constructor(arg0) {
     shouldShowMRNotice = global.shouldShowMRNotice;
     closure_0 = undefined;
     obj = closure_0(dependencyMap[20]);
-    tmp = f92739(obj.useIsMobileWishlistSuggestionsEnabled("WishlistEmptyState"));
+    tmp = f92762(obj.useIsMobileWishlistSuggestionsEnabled("WishlistEmptyState"));
     obj2 = closure_0(dependencyMap[21]);
     obj3 = closure_0(dependencyMap[22]);
     str = "mobile-text-heading-primary";
@@ -46,8 +46,7 @@ class WishlistEmptyState {
     obj2.children = intl.string(closure_0(dependencyMap[28]).t.HGnLLT);
     items1 = [, , ];
     items1[0] = jsx(closure_0(dependencyMap[27]).Text, obj2);
-    obj3 = { INTEGRATION_CREATE: false, ConstraintReasonCode: false };
-    obj3.style = tmp.emptyStateText;
+    obj3 = { style: tmp.emptyStateText };
     intl2 = closure_0(dependencyMap[28]).intl;
     obj3.children = intl2.string(closure_0(dependencyMap[28]).t./X1ny6);
     items1[1] = jsx(closure_0(dependencyMap[27]).Text, obj3);
@@ -120,12 +119,12 @@ let closure_26 = arg1(dependencyMap[18]).createStyles(() => {
     flag = false;
   }
   let obj = {};
-  obj = { "Bool(true)": "<string:3435973836>", "Bool(true)": "<string:1903247380>", "Bool(true)": "r", marginBottom: importDefault(dependencyMap[19]).space.PX_12 };
+  obj = { bottom: "<string:3435973836>", left: "<string:1903247380>", padding: "r", marginBottom: importDefault(dependencyMap[19]).space.PX_12 };
   obj.headerRow = obj;
-  obj = { -9223372036854775808: true, filter: true, gap: importDefault(dependencyMap[19]).space.PX_8 };
+  obj = { gap: importDefault(dependencyMap[19]).space.PX_8 };
   obj.headerButtons = obj;
-  obj.gridWrapper = {};
-  obj.itemsContainer = {};
+  obj.gridWrapper = { "Null": null, "Null": null };
+  obj.itemsContainer = { "Bool(false)": null, "Bool(false)": "82ae7189682c36bee3dc3a129ab02a11", "Bool(false)": "img_app_crash_darker", "Bool(false)": "png" };
   const obj1 = { alignItems: "center", paddingTop: importDefault(dependencyMap[19]).space.PX_48 };
   const space = importDefault(dependencyMap[19]).space;
   obj1.paddingBottom = flag ? space.PX_40 : space.PX_48;
@@ -137,7 +136,7 @@ let closure_26 = arg1(dependencyMap[18]).createStyles(() => {
   const space2 = importDefault(dependencyMap[19]).space;
   obj2.marginTop = flag ? space2.PX_20 : space2.PX_24;
   obj.emptyStateCta = obj2;
-  const obj3 = { justify: true, align: true, voiceCategoryExpand: true, onStartReachedThreshold: true, BTN: true, pregnant_woman: true, GuildOnboardingTab: true, padding: importDefault(dependencyMap[19]).space.PX_8, gap: importDefault(dependencyMap[19]).space.PX_4, borderRadius: importDefault(dependencyMap[19]).radii.sm, borderColor: importDefault(dependencyMap[19]).colors.BORDER_SUBTLE };
+  const obj3 = { o: "isArray", getChannel: "options", TypeError: "loadJsonAsset", jsx: "a", duration: "isArray", useMemo: "__packager_asset", then: "id", padding: importDefault(dependencyMap[19]).space.PX_8, gap: importDefault(dependencyMap[19]).space.PX_4, borderRadius: importDefault(dependencyMap[19]).radii.sm, borderColor: importDefault(dependencyMap[19]).colors.BORDER_SUBTLE };
   obj.disclaimer = obj3;
   obj.disclaimerTop = { marginBottom: importDefault(dependencyMap[19]).space.PX_16 };
   const obj4 = { marginBottom: importDefault(dependencyMap[19]).space.PX_16 };

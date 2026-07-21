@@ -1,10 +1,10 @@
-// Module ID: 12792
-// Function ID: 98058
+// Module ID: 12799
+// Function ID: 98081
 // Name: GuildBadge
 // Dependencies: []
 // Exports: GuildBadge
 
-// Module 12792 (GuildBadge)
+// Module 12799 (GuildBadge)
 importAll(dependencyMap[0]);
 const GuildTagBadgeKind = arg1(dependencyMap[1]).GuildTagBadgeKind;
 const jsx = arg1(dependencyMap[2]).jsx;
@@ -15,7 +15,7 @@ export const GuildBadge = function GuildBadge(arg0) {
   let primaryTintColor;
   let secondaryTintColor;
   ({ badge, primaryTintColor, secondaryTintColor } = arg0);
-  let obj = {};
+  let obj = { "Null": "spring", "Null": "linear", "Null": "easeInEaseOut" };
   Object.setPrototypeOf(null);
   const merged = Object.assign(arg0, obj);
   if (GuildTagBadgeKind.SWORD === badge) {

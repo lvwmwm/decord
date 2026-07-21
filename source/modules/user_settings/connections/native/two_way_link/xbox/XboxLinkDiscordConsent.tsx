@@ -1,10 +1,10 @@
-// Module ID: 8937
-// Function ID: 70433
+// Module ID: 8941
+// Function ID: 70445
 // Name: XboxLinkDiscordConsent
 // Dependencies: []
 // Exports: default
 
-// Module 8937 (XboxLinkDiscordConsent)
+// Module 8941 (XboxLinkDiscordConsent)
 let closure_2 = importAll(dependencyMap[0]);
 const XboxLinkModalScenes = arg1(dependencyMap[1]).XboxLinkModalScenes;
 const PlatformTypes = arg1(dependencyMap[2]).PlatformTypes;

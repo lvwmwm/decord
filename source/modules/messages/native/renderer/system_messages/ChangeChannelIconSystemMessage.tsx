@@ -1,10 +1,10 @@
-// Module ID: 7659
-// Function ID: 61233
+// Module ID: 7663
+// Function ID: 61245
 // Name: createChangeChannelIconSystemMessage
 // Dependencies: []
 // Exports: createChangeChannelIconSystemMessage
 
-// Module 7659 (createChangeChannelIconSystemMessage)
+// Module 7663 (createChangeChannelIconSystemMessage)
 let closure_3 = importDefault(dependencyMap[0]);
 const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/messages/native/renderer/system_messages/ChangeChannelIconSystemMessage.tsx");
 
@@ -24,10 +24,11 @@ export const createChangeChannelIconSystemMessage = function createChangeChannel
       isGroupDMResult = channel.isGroupDM();
     }
   }
+  const tmp6 = importDefault(dependencyMap[4])(message);
   obj = {};
-  const intl = arg1(dependencyMap[4]).intl;
+  const intl = arg1(dependencyMap[5]).intl;
   const formatToParts = intl.formatToParts;
-  const t = arg1(dependencyMap[4]).t;
+  const t = arg1(dependencyMap[5]).t;
   if (null != isGroupDMResult && isGroupDMResult) {
     obj = { username: messageAuthorWithProcessedColor.nick, usernameOnClick: tmp3 };
     const obj1 = { action: "bindOpenGdmCustomizeActionSheet" };
@@ -45,18 +46,25 @@ export const createChangeChannelIconSystemMessage = function createChangeChannel
     formatToPartsResult = formatToParts(t.wypJZ0, obj2);
   }
   obj.content = formatToPartsResult;
-  let tmp8;
+  const merged = Object.assign(tmp6);
+  let tmp10;
   if (null != isGroupDMResult && isGroupDMResult) {
     const obj3 = {};
+    let accessibilityActions = tmp6.accessibilityActions;
+    if (null == accessibilityActions) {
+      accessibilityActions = [];
+    }
+    const items = [];
+    const arraySpreadResult = HermesBuiltin.arraySpread(accessibilityActions, 0);
     const obj4 = {};
-    const intl2 = arg1(dependencyMap[4]).intl;
-    obj4.label = intl2.string(arg1(dependencyMap[4]).t.5Q9+/L);
-    obj4.name = arg1(dependencyMap[5]).MessageAccessibilityAction.EDIT_GDM;
-    const items = [obj4];
+    const intl2 = arg1(dependencyMap[5]).intl;
+    obj4.label = intl2.string(arg1(dependencyMap[5]).t.5Q9+/L);
+    obj4.name = arg1(dependencyMap[6]).MessageAccessibilityAction.EDIT_GDM;
+    items[arraySpreadResult] = obj4;
+    const sum = arraySpreadResult + 1;
     obj3.accessibilityActions = items;
-    tmp8 = obj3;
+    tmp10 = obj3;
   }
-  const merged = Object.assign(tmp8);
-  const merged1 = Object.assign(importDefault(dependencyMap[6])(message));
+  const merged1 = Object.assign(tmp10);
   return obj;
 };

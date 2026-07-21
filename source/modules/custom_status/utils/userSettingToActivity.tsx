@@ -1,10 +1,10 @@
-// Module ID: 8227
-// Function ID: 64981
+// Module ID: 8231
+// Function ID: 64993
 // Name: _activityFromSetting
 // Dependencies: []
 // Exports: getActivityFromCustomStatus, useCustomStatusActivity
 
-// Module 8227 (_activityFromSetting)
+// Module 8231 (_activityFromSetting)
 function _activityFromSetting(emojiName) {
   if (null != arg1) {
     let obj = {};
@@ -19,7 +19,7 @@ function _activityFromSetting(emojiName) {
         const byName = obj6.getByName(importDefault(dependencyMap[3]).convertSurrogateToName(emojiName.emojiName, false));
         let tmp2 = null;
         if (null != byName) {
-          obj = { name: byName.surrogates };
+          obj = { "Null": "handled", "Null": false, "Null": 16, name: byName.surrogates };
           tmp2 = obj;
         }
         tmp = tmp2;

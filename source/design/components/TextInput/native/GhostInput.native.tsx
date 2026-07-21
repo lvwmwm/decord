@@ -1,10 +1,10 @@
-// Module ID: 12952
-// Function ID: 98589
+// Module ID: 12959
+// Function ID: 98612
 // Name: GhostInput
 // Dependencies: []
 // Exports: GhostInput
 
-// Module 12952 (GhostInput)
+// Module 12959 (GhostInput)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 let closure_4 = arg1(dependencyMap[2]).createStyles(() => {

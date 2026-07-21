@@ -1,10 +1,10 @@
-// Module ID: 10407
-// Function ID: 80202
+// Module ID: 10413
+// Function ID: 80225
 // Name: DenyIcon
 // Dependencies: []
 // Exports: DenyIcon
 
-// Module 10407 (DenyIcon)
+// Module 10413 (DenyIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/DenyIcon.tsx");

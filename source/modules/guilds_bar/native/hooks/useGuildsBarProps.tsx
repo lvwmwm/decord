@@ -1,21 +1,10 @@
-// Module ID: 14688
-// Function ID: 110809
+// Module ID: 14695
+// Function ID: 110833
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [1862271006, 1644167188, 1677721657, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+// Dependencies: []
 // Exports: default
 
-// Module 14688 (_createForOfIteratorHelperLoose)
-import result from "result";
-import closure_7 from "result";
-import closure_8 from "result";
-import closure_9 from "result";
-import closure_10 from "result";
-import closure_11 from "result";
-import closure_12 from "result";
-import closure_13 from "result";
-import closure_14 from "result";
-import { GuildsNodeType } from "result";
-
+// Module 14695 (_createForOfIteratorHelperLoose)
 function _createForOfIteratorHelperLoose(@@iterator) {
   let arg1 = Symbol_iterator;
   @@iterator = "undefined" !== typeof Symbol;
@@ -206,6 +195,16 @@ function isAnchorIdEqual(arg0, arg1, arg2) {
 let closure_3 = importAll(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 let closure_5 = importDefault(dependencyMap[2]);
+let closure_6 = importDefault(dependencyMap[3]);
+let closure_7 = importDefault(dependencyMap[4]);
+let closure_8 = importDefault(dependencyMap[5]);
+let closure_9 = importDefault(dependencyMap[6]);
+let closure_10 = importDefault(dependencyMap[7]);
+let closure_11 = importDefault(dependencyMap[8]);
+let closure_12 = importDefault(dependencyMap[9]);
+let closure_13 = importDefault(dependencyMap[10]);
+let closure_14 = importDefault(dependencyMap[11]);
+const GuildsNodeType = arg1(dependencyMap[11]).GuildsNodeType;
 let closure_16 = importDefault(dependencyMap[12]);
 ({ FastListRenderSections: closure_17, useGuildWrapperSize: closure_18 } = arg1(dependencyMap[13]));
 const jsx = arg1(dependencyMap[14]).jsx;
@@ -229,7 +228,7 @@ export default function useGuildsBarProps(arg0) {
   let closure_5 = mobileQuestDockHeight;
   const obj2 = arg1(dependencyMap[32]);
   const youBarTotalHeight = arg1(dependencyMap[33]).useYouBarTotalHeight();
-  let result = youBarTotalHeight;
+  let closure_6 = youBarTotalHeight;
   const obj3 = arg1(dependencyMap[33]);
   const youBarTotalHeight1 = arg1(dependencyMap[33]).useYouBarTotalHeight(4);
   let closure_7 = youBarTotalHeight1;
@@ -244,7 +243,7 @@ export default function useGuildsBarProps(arg0) {
   }
   let closure_8 = num;
   const obj4 = arg1(dependencyMap[33]);
-  const items1 = [closure_12, result, closure_7];
+  const items1 = [closure_12, closure_6, closure_7];
   const stateFromStoresArray = arg1(dependencyMap[35]).useStateFromStoresArray(items1, () => {
     const unreadPrivateChannelIds = stateFromStores1.getUnreadPrivateChannelIds();
     const items = [youBarTotalHeight, youBarTotalHeight1];
@@ -342,7 +341,7 @@ export default function useGuildsBarProps(arg0) {
     listProps: memo,
     listDataProps: React.useMemo(() => {
       let iter2;
-      const items = [24573934974154670000000000000000000000000000000000000000000000000000000000000, num];
+      const items = [15189782894321462000000000000000000000000000000000000000000000000000000000000000000, num];
       let num = 0;
       if (null != pendingFolderNode) {
         let num2 = 1;

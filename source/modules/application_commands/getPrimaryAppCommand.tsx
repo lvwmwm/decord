@@ -1,10 +1,10 @@
-// Module ID: 10813
-// Function ID: 83975
+// Module ID: 10819
+// Function ID: 83998
 // Name: _getPrimaryAppCommand
 // Dependencies: []
 // Exports: default, useIsPrimaryAppCommandUsableInAppDM
 
-// Module 10813 (_getPrimaryAppCommand)
+// Module 10819 (_getPrimaryAppCommand)
 function _getPrimaryAppCommand() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);

@@ -1,10 +1,10 @@
-// Module ID: 15473
-// Function ID: 118085
+// Module ID: 15480
+// Function ID: 118109
 // Name: getActionSheetType
 // Dependencies: []
 // Exports: default
 
-// Module 15473 (getActionSheetType)
+// Module 15480 (getActionSheetType)
 class GiftingPromotionCoachmarkImporter {
   constructor() {
     return arg1(dependencyMap[8])(dependencyMap[9], dependencyMap.paths);

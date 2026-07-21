@@ -1,10 +1,10 @@
-// Module ID: 8437
-// Function ID: 67336
+// Module ID: 8441
+// Function ID: 67348
 // Name: PreviewBody
 // Dependencies: []
 // Exports: default
 
-// Module 8437 (PreviewBody)
+// Module 8441 (PreviewBody)
 function PreviewBody(event) {
   event = event.event;
   let dependencyMap;
@@ -57,7 +57,7 @@ function PreviewBody(event) {
           }
           obj.children = tmp4;
           const items = [callback(closure_4, obj), ];
-          const obj1 = { "Null": "Array", "Null": "isArray", "Null": "Array", "Null": "accessibilityRole" };
+          const obj1 = { "Null": null, "Null": "APPLE_PAY_MERCHANT_VALIDATION_FAILED", "Null": "Make sure you have registered your domain name in the Braintree Control Panel.", "Null": null };
           let result = null;
           if (null != locationFromEvent) {
             result = tmp(locationFromEvent[16]).guildEventDetailsParser(locationFromEvent, true);
@@ -90,20 +90,20 @@ let closure_5 = importDefault(dependencyMap[2]);
 ({ jsx: closure_6, jsxs: closure_7 } = arg1(dependencyMap[4]));
 let obj = arg1(dependencyMap[5]);
 obj = {};
-obj = { "Bool(true)": "flex", "Bool(true)": "column", "Bool(true)": "center", "Bool(true)": 16, "Bool(true)": "text-sm/semibold", "Bool(true)": "text-feedback-critical", "Bool(true)": true, backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_BASE_LOW };
+obj = { accessibilityRole: "flex", guildId: "column", "Bool(false)": "center", "Bool(false)": 16, "Bool(false)": "text-sm/semibold", "Bool(false)": "text-feedback-critical", "Bool(false)": true, backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_BASE_LOW };
 obj.container = obj;
 obj.centered = {};
-obj.centerContainer = { borderRadius: 18, shadowOpacity: 18 };
-obj.flex = {};
-obj.header = { Set: 24, _desired: "recent_games_enabled" };
+obj.centerContainer = { computeRootMatch: 18, setEmojiId: 18 };
+obj.flex = { 9223372036854775807: "NEUTRAL_83", 9223372036854775807: 1 };
+obj.header = { guild: 24, body: "recent_games_enabled" };
 obj.headerTitle = {};
 obj.headerSubtitle = { textAlign: "center" };
-const tmp2 = arg1(dependencyMap[4]);
-obj.eventContainer = { backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_SURFACE_HIGH, borderColor: importDefault(dependencyMap[6]).colors.BORDER_SUBTLE, borderRadius: importDefault(dependencyMap[6]).radii.sm, shadowOffset: { <string:1140607356>: null, <string:1751293292>: null }, overflow: "visible" };
+const obj1 = { isInlineReplyPreview: "isArray", hasSpoilerEmbeds: "runOnJS", hasBailedAst: "e", flexGrow: "r", flexShrink: "isArray", flexBasis: "map", marginLeft: "sr", height: "r", overflow: "visible", backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_SURFACE_HIGH, borderColor: importDefault(dependencyMap[6]).colors.BORDER_SUBTLE, borderRadius: importDefault(dependencyMap[6]).radii.sm, shadowOffset: { <string:1632221346>: null, <string:2722977214>: null } };
+obj.eventContainer = obj1;
 obj.channelContainer = {};
 const obj2 = { tintColor: importDefault(dependencyMap[6]).colors.TEXT_SUBTLE };
 const obj3 = {};
-const obj1 = { backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_SURFACE_HIGH, borderColor: importDefault(dependencyMap[6]).colors.BORDER_SUBTLE, borderRadius: importDefault(dependencyMap[6]).radii.sm, shadowOffset: { <string:1140607356>: null, <string:1751293292>: null }, overflow: "visible" };
+const tmp2 = arg1(dependencyMap[4]);
 if (obj7.isAndroid()) {
   num = 2;
 }
@@ -111,7 +111,7 @@ obj3.translateY = num;
 const items = [obj3];
 obj2.transform = items;
 obj.channelIcon = obj2;
-obj.buttonContainer = { 1402599266: "sEAnVH", -1334830736: "type", -413065818: "isArray", 1660337745: "inputFlat" };
+obj.buttonContainer = { <string:1367186513>: null, <string:3613500496>: null, <string:3713892945>: null, <string:4272015777>: null };
 const obj7 = arg1(dependencyMap[7]);
 obj.error = { fontFamily: arg1(dependencyMap[3]).Fonts.PRIMARY_MEDIUM, color: importDefault(dependencyMap[6]).unsafe_rawColors.RED_400 };
 let closure_8 = obj.createStyles(obj);

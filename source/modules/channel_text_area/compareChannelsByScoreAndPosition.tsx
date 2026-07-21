@@ -1,10 +1,10 @@
-// Module ID: 5724
-// Function ID: 49157
+// Module ID: 5726
+// Function ID: 49200
 // Name: getGuildChannelPosition
 // Dependencies: []
 // Exports: default
 
-// Module 5724 (getGuildChannelPosition)
+// Module 5726 (getGuildChannelPosition)
 function getGuildChannelPosition(record) {
   if (null == record.parent_id) {
     if (record.type === ChannelTypes.GUILD_CATEGORY) {

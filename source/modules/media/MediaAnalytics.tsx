@@ -1,10 +1,10 @@
-// Module ID: 11003
-// Function ID: 85619
+// Module ID: 11008
+// Function ID: 85640
 // Name: logMediaAttachmentPlaybackStarted
 // Dependencies: [670, 2, 6]
 // Exports: logMediaAttachmentPlaybackEnded, logMediaAttachmentPlaybackStarted
 
-// Module 11003 (logMediaAttachmentPlaybackStarted)
+// Module 11008 (logMediaAttachmentPlaybackStarted)
 import { AnalyticEvents } from "MessageEmbedTypes";
 import _classCallCheck from "_classCallCheck";
 

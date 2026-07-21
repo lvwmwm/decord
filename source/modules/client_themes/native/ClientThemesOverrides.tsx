@@ -1,10 +1,10 @@
-// Module ID: 8817
-// Function ID: 69525
+// Module ID: 8821
+// Function ID: 69537
 // Name: useGradientBottom
 // Dependencies: []
 // Exports: useClientThemesOverride, useGradientBottom, useGradientMidpoint, useGradientTop
 
-// Module 8817 (useGradientBottom)
+// Module 8821 (useGradientBottom)
 let closure_3 = importAll(dependencyMap[0]);
 let closure_4 = arg1(dependencyMap[1]).createStyles({ none: { backgroundColor: "transparent" } });
 const obj = arg1(dependencyMap[1]);

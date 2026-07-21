@@ -1,10 +1,10 @@
-// Module ID: 10618
-// Function ID: 82826
+// Module ID: 10624
+// Function ID: 82849
 // Name: nativeEventEmitter
 // Dependencies: []
 // Exports: default, useGlobalStatusIndicatorHeightSharedValue
 
-// Module 10618 (nativeEventEmitter)
+// Module 10624 (nativeEventEmitter)
 let NativeEventEmitter;
 let closure_3 = importAll(dependencyMap[0]);
 const tmp2 = arg1(dependencyMap[1]);

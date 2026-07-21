@@ -5,7 +5,7 @@
 // Exports: default
 
 // Module 35 (ProgressBarAndroid)
-let closure_2 = ["now", "has", "call", "a"];
+let closure_2 = [200212483, 110690306, -329187325, 1631948113];
 let closure_3 = importDefault(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 arg1(dependencyMap[2]);

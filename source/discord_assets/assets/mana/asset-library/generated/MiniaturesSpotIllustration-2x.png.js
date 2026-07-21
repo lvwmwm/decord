@@ -1,9 +1,9 @@
-// Module ID: 6292
-// Function ID: 50312
+// Module ID: 6294
+// Function ID: 50355
 // Name: metadata
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 6292 (metadata)
+// Module 6294 (metadata)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/MiniaturesSpotIllustration-2x.png.js");
 

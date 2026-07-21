@@ -1,10 +1,10 @@
-// Module ID: 4449
-// Function ID: 39194
+// Module ID: 4453
+// Function ID: 39242
 // Name: getStripe
 // Dependencies: []
 // Exports: authenticatePaymentIntentForPaymentId, getStripeClientMode, parseBillingAddressInfoToStripeBillingDetails, parseStripePaymentMethod, useStripeLocale, validateExpiry
 
-// Module 4449 (getStripe)
+// Module 4453 (getStripe)
 function getStripe() {
   if (null != closure_2) {
     let resolved = Promise.resolve(closure_2);
@@ -17,7 +17,7 @@ function getStripe() {
 }
 async function _authenticatePaymentIntentForPaymentId(paymentId, arg1) {
   const HTTP = callback(closure_1[6]).HTTP;
-  let obj = { CONVERSATIONS: null, replace: null, push: null, url: closure_6.BILLING_STRIPE_PAYMENT_INTENTS(paymentId) };
+  let obj = { lc: "ERROR", type: "ERROR", end: "NOT_RESPONDER", url: closure_6.BILLING_STRIPE_PAYMENT_INTENTS(paymentId) };
   const stripe_payment_intent_client_secret = yield HTTP.get(obj).body.stripe_payment_intent_client_secret;
   const tmp = yield closure_11();
   let obj1 = tmp;
@@ -89,7 +89,7 @@ let closure_5 = importDefault(dependencyMap[2]);
 let importDefaultResult = importDefault(dependencyMap[4]);
 importDefaultResult = new importDefaultResult("StripeUtils");
 let closure_9 = { REQUIRES_PAYMENT_METHOD: "requires_payment_method", REQUIRES_CONFIRMATION: "requires_confirmation", REQUIRES_ACTION: "requires_action", PROCESSING: "processing", CANCELED: "canceled", SUCCEEDED: "succeeded" };
-let closure_10 = { <string:1370117691>: null, <string:1449335137>: null, <string:609309499>: 4 };
+let closure_10 = {};
 const tmp2 = arg1(dependencyMap[3]);
 const result = arg1(dependencyMap[8]).fileFinishedImporting("utils/StripeUtils.tsx");
 

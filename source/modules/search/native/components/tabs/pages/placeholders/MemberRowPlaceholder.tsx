@@ -1,10 +1,10 @@
-// Module ID: 15239
-// Function ID: 115060
+// Module ID: 15246
+// Function ID: 115084
 // Name: MemberRowPlaceholderItem
 // Dependencies: []
 // Exports: default
 
-// Module 15239 (MemberRowPlaceholderItem)
+// Module 15246 (MemberRowPlaceholderItem)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 let closure_3 = arg1(dependencyMap[2]).createStyles({ container: { paddingHorizontal: 0 } });

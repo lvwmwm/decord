@@ -1,10 +1,10 @@
-// Module ID: 14422
-// Function ID: 108763
+// Module ID: 14429
+// Function ID: 108786
 // Name: useIsDisabled
 // Dependencies: [0, 0, 0, 0, 4294967295]
 
-// Module 14422 (useIsDisabled)
-import result from "result";
+// Module 14429 (useIsDisabled)
+import __exportStarResult1 from "__exportStarResult1";
 
 function useIsDisabled() {
   return arg1(dependencyMap[7]).useDefaultGuildsRestricted();
@@ -19,7 +19,7 @@ obj = {
     const intl = arg1(dependencyMap[9]).intl;
     return intl.string(importDefault(dependencyMap[10]).7aYkh1);
   },
-  parent: require("result").MobileSetting.FAMILY_CENTER_PARENTAL_CONTROLS_SETTINGS,
+  parent: require("__exportStarResult1").MobileSetting.FAMILY_CENTER_PARENTAL_CONTROLS_SETTINGS,
   useValue() {
     let tmp;
     const tmp2 = useIsDisabled();

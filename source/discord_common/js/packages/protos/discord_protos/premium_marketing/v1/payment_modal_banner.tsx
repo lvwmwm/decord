@@ -1,9 +1,9 @@
-// Module ID: 7130
-// Function ID: 57450
+// Module ID: 7134
+// Function ID: 57461
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
-// Module 7130 (_isNativeReflectConstruct)
+// Module 7134 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -25,20 +25,20 @@ let tmp2 = (MessageType) => {
       self = this;
       tmp = closure_3(this, PaymentModalBanner$Type);
       items = [, , , , ];
-      items[0] = { body: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002012870360051815, guildId: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003200674821102785, ao: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000030586585845, "": 2798595.4946969007 };
-      items[1] = { body: null, guildId: null, ao: null, "": null };
+      items[0] = {};
+      items[1] = { 9223372036854775807: 2417, 0: 487680, 9223372036854775807: 641859584, no: true };
       items[2] = {};
-      obj = { emojiId: "3", emojiName: 3, userId: "mobile_body" };
+      obj = { "Null": "3", "Null": 3, "Null": "mobile_body" };
       obj.T = function T() {
         return callback(closure_1[6]).LocalizedString;
       };
       items[3] = obj;
-      obj = { emojiId: null, emojiName: 9, userId: null };
+      obj = { "Null": null, "Null": 9, "Null": null };
       obj.T = function T() {
         return callback(closure_1[6]).LocalizedString;
       };
       items[4] = obj;
-      items1 = [true];
+      items1 = ["onShouldStartLoadWithRequest"];
       items1[1] = items;
       obj3 = closure_6(PaymentModalBanner$Type);
       tmp2 = closure_5;
@@ -58,7 +58,7 @@ let tmp2 = (MessageType) => {
   let obj = {
     key: "create",
     value(arr) {
-      let obj = { fill: null, padding: null, accessibilityLabel: null };
+      let obj = { type: false, d: false, next: false };
       const _Object = Object;
       obj = { enumerable: false, value: this };
       _Object.defineProperty(obj, PaymentModalBanner$Type(closure_1[7]).MESSAGE_TYPE, obj);

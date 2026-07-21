@@ -1,9 +1,9 @@
-// Module ID: 11344
-// Function ID: 88205
+// Module ID: 11350
+// Function ID: 88228
 // Name: VoiceMessageRecordingCancelledToastIcon
 // Dependencies: []
 
-// Module 11344 (VoiceMessageRecordingCancelledToastIcon)
+// Module 11350 (VoiceMessageRecordingCancelledToastIcon)
 function VoiceMessageRecordingCancelledToastIcon() {
   let obj = { style: callback3().icon, aria-hidden: true };
   obj = { color: importDefault(dependencyMap[14]).colors.WHITE, size: "xs" };

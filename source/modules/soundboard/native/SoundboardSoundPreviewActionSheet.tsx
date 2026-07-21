@@ -1,11 +1,11 @@
-// Module ID: 15623
-// Function ID: 119321
+// Module ID: 15630
+// Function ID: 119345
 // Name: SoundboardSoundPreviewActionSheet
 // Dependencies: []
 // Exports: default
 
-// Module 15623 (SoundboardSoundPreviewActionSheet)
-let closure_3 = [null];
+// Module 15630 (SoundboardSoundPreviewActionSheet)
+let closure_3 = ["GUILD_DELETE"];
 let closure_4 = importDefault(dependencyMap[0]);
 let closure_5 = importAll(dependencyMap[1]);
 const tmp2 = arg1(dependencyMap[2]);
@@ -16,7 +16,7 @@ const AnalyticsObjects = arg1(dependencyMap[5]).AnalyticsObjects;
 ({ jsx: closure_11, jsxs: closure_12 } = arg1(dependencyMap[6]));
 let obj = arg1(dependencyMap[7]);
 obj = {};
-obj = { 0: 24, 0: 24, 0: null, 9223372036854775807: "2e77386663ba77387d021543bdafafef", marginTop: importDefault(dependencyMap[8]).space.PX_16 };
+obj = { "Bool(false)": 24, "Bool(false)": 24, "Bool(false)": null, "Bool(false)": "2e77386663ba77387d021543bdafafef", marginTop: importDefault(dependencyMap[8]).space.PX_16 };
 obj.emoji = obj;
 obj.emojiFastImage = {};
 const obj1 = {};
@@ -32,7 +32,7 @@ const tmp3 = arg1(dependencyMap[6]);
 obj.text = { marginTop: importDefault(dependencyMap[8]).space.PX_16, alignSelf: "center" };
 const obj2 = { marginTop: importDefault(dependencyMap[8]).space.PX_16, alignSelf: "center" };
 obj.buttonContainer = { gap: importDefault(dependencyMap[8]).space.PX_8, marginTop: importDefault(dependencyMap[8]).space.PX_24 };
-obj4 = { aze: "<string:16777479>", azj: "<string:36295491>", tintColor: importDefault(dependencyMap[8]).colors.TEXT_DEFAULT };
+obj4 = { tintColor: importDefault(dependencyMap[8]).colors.TEXT_DEFAULT };
 obj.star = obj4;
 const obj3 = { gap: importDefault(dependencyMap[8]).space.PX_8, marginTop: importDefault(dependencyMap[8]).space.PX_24 };
 const merged = Object.assign(tmp2.StyleSheet.absoluteFillObject);

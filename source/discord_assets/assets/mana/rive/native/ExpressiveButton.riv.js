@@ -1,7 +1,7 @@
 // Module ID: 3924
 // Function ID: 32406
 // Name: metadata
-// Dependencies: []
+// Dependencies: [284214097]
 
 // Module 3924 (metadata)
 const _module = require(dependencyMap[0]);

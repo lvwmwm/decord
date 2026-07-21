@@ -1,10 +1,10 @@
-// Module ID: 6775
-// Function ID: 53430
+// Module ID: 6781
+// Function ID: 53479
 // Name: getPriceForCollectiblesProduct
 // Dependencies: []
 // Exports: canActionOnProduct, getAnalyticsShopDiscountSource, getAssetDisplayConfig, getAssetForAvatarDecorationProduct, getAvatarDecorations, getCollectibleTypeLabel, getCollectiblesItemTypeForDisplay, getCollectiblesPrice, getCollectiblesProductPriceComparisons, getFormattedPriceForCollectiblesProduct, getLogoSize, getNameplates, getProductDiscount, getProductTypeNameForLogging, getProfileEffects, getProfileFrames, getShopDiscountSource, getStrikeThroughPriceAmountForCollectiblesProduct, groupProfileEffects, isCollectiblesGiftCode, isFreeCollectiblesProduct, isPremiumCollectiblesProduct, isPremiumCollectiblesPurchase, isProductNew, removeRewardProductsFilter, shouldHideGiftingForCurrency, shouldShowLimitedTimeBadge, sortProductsByPrice, sortProductsByUserDiscounts
 
-// Module 6775 (getPriceForCollectiblesProduct)
+// Module 6781 (getPriceForCollectiblesProduct)
 function getPriceForCollectiblesProduct(stateFromStores, canUseCollectiblesResult, arg2) {
   if (!arg2) {
     return tmp(stateFromStores, canUseCollectiblesResult ? tmp2.PREMIUM_TIER_2 : tmp2.DEFAULT);
@@ -203,7 +203,7 @@ const _module1 = require(dependencyMap[6]);
 const CurrencyCodes = require(dependencyMap[7]).CurrencyCodes;
 let obj = { NITRO: "nitro", THIRDPARTY: "thirdparty" };
 let closure_16 = { [obj.NITRO]: "nitro", [obj.THIRDPARTY]: "xbox" };
-obj = { relieved: false, relieved_face: false };
+obj = { flexShrink: false, flexGrow: false };
 const items = [, , ];
 ({ KZT: arr[0], NGN: arr[1], EGP: arr[2] } = CurrencyCodes);
 const _module2 = require(dependencyMap[18]);

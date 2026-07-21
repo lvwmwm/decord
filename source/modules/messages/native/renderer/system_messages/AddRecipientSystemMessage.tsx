@@ -1,10 +1,10 @@
-// Module ID: 7637
-// Function ID: 61151
+// Module ID: 7641
+// Function ID: 61163
 // Name: createAddRecipientSystemMessage
 // Dependencies: []
 // Exports: createAddRecipientSystemMessage
 
-// Module 7637 (createAddRecipientSystemMessage)
+// Module 7641 (createAddRecipientSystemMessage)
 const THREAD_CHANNEL_TYPES = require(dependencyMap[0]).THREAD_CHANNEL_TYPES;
 let closure_4 = importDefault(dependencyMap[1]);
 let closure_5 = importDefault(dependencyMap[2]);

@@ -1,9 +1,9 @@
-// Module ID: 9159
-// Function ID: 71784
+// Module ID: 9163
+// Function ID: 71796
 // Name: checkGuildForFeature
-// Dependencies: [297205760, 79429632, 258736128, 600899584, 283705344, 604504064, 126746624, 604700672, 606404608, 602931200]
+// Dependencies: [297467904, 79429632, 258736128, 601161728, 283967488, 604766208, 126746624, 604962816, 606666752, 603193344]
 
-// Module 9159 (checkGuildForFeature)
+// Module 9163 (checkGuildForFeature)
 let PARTNERED;
 let VERIFIED;
 function checkGuildForFeature(guild, PARTNERED) {

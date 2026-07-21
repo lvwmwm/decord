@@ -1,10 +1,19 @@
-// Module ID: 11687
-// Function ID: 90687
+// Module ID: 11694
+// Function ID: 90710
 // Name: handleNameInputScreenOrSuggestions
-// Dependencies: []
+// Dependencies: [0, 0, 0, 0, 0, 0, 0, 4294967295, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 // Exports: bulkAddFriendSuggestions, goBackToLanding, handlePhoneVerificationComplete, openContactSyncModalDeeplink, openContactSyncModalOnboarding, startContactSync, submitPhone, upsellDismissed, verifyPhone, verifyPhoneWithPassword
 
-// Module 11687 (handleNameInputScreenOrSuggestions)
+// Module 11694 (handleNameInputScreenOrSuggestions)
+import closure_3 from "__exportStarResult1";
+import closure_4 from "__exportStarResult1";
+import closure_5 from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
+
 function handleNameInputScreenOrSuggestions() {
   return _handleNameInputScreenOrSuggestions(...arguments);
 }
@@ -136,20 +145,12 @@ function closeContactSyncModal(skip) {
     }(flag, friendsFound, friendsAdded, back);
   }
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-({ setError: closure_6, setPermissionState: closure_7, setSuggestions: closure_8, setPhone: closure_9, setPhoneToken: closure_10, setName: closure_11, useContactSyncModalStore: closure_12, ContactSyncModes: closure_13, initialize: closure_14, getIsOnboarding: closure_15 } = arg1(dependencyMap[3]));
-const tmp2 = arg1(dependencyMap[3]);
-({ deleteStoredContacts: closure_16, setStoredContacts: closure_17 } = arg1(dependencyMap[4]));
-const tmp3 = arg1(dependencyMap[4]);
-({ ContactPermissions: closure_18, ContactSyncScenes: closure_19, CONTACT_SYNC_MODAL_KEY: closure_20 } = arg1(dependencyMap[5]));
-const tmp4 = arg1(dependencyMap[5]);
-({ AnalyticEvents: closure_21, PlatformTypes: closure_22 } = arg1(dependencyMap[6]));
-const tmp5 = arg1(dependencyMap[6]);
+({ setError: closure_6, setPermissionState: closure_7, setSuggestions: closure_8, setPhone: closure_9, setPhoneToken: closure_10, setName: closure_11, useContactSyncModalStore: closure_12, ContactSyncModes: closure_13, initialize: closure_14, getIsOnboarding: closure_15 } = __exportStarResult1);
+({ deleteStoredContacts: closure_16, setStoredContacts: closure_17 } = __exportStarResult1);
+({ ContactPermissions: closure_18, ContactSyncScenes: closure_19, CONTACT_SYNC_MODAL_KEY: closure_20 } = __exportStarResult1);
+({ AnalyticEvents: closure_21, PlatformTypes: closure_22 } = __exportStarResult1);
 ({ NativePermissionStates: closure_23, NativePermissionTypes: closure_24 } = arg1(dependencyMap[7]));
-const tmp6 = arg1(dependencyMap[7]);
-const result = arg1(dependencyMap[24]).fileFinishedImporting("modules/contact_sync/native/ContactSyncModalActionCreators.tsx");
+const result = __exportStarResult1.fileFinishedImporting("modules/contact_sync/native/ContactSyncModalActionCreators.tsx");
 
 export const handlePhoneVerificationComplete = function handlePhoneVerificationComplete(stateFromStores, navigation) {
   return _handlePhoneVerificationComplete(...arguments);

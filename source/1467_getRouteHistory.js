@@ -84,7 +84,7 @@ arg5.default = function TabRouter(arg0) {
         const obj = { name, key: "" + name + "-" + callback(closure_2[1]).nanoid(), params: callback[name] };
         return obj;
       });
-      const obj = { sr: "slight_smile", nxl: "slight_smile" };
+      const obj = { targetField: "<string:1153327360>", targetAttribute: "name-middle" };
       const tmp4 = callback2(mapped, num, str, callback);
       obj.key = "tab-" + callback(closure_2[1]).nanoid();
       obj.index = num;
@@ -146,7 +146,7 @@ arg5.default = function TabRouter(arg0) {
         if (null == found) {
           found = [];
         }
-        const obj = { sr: "slight_smile", nxl: "slight_smile" };
+        const obj = { targetField: "<string:1153327360>", targetAttribute: "name-middle" };
         const _HermesInternal = HermesInternal;
         str = "tab-";
         obj.key = "tab-" + callback(mapped[1]).nanoid();

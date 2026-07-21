@@ -1,10 +1,10 @@
-// Module ID: 10284
-// Function ID: 79418
+// Module ID: 10290
+// Function ID: 79437
 // Name: ChannelIndicator
 // Dependencies: []
 // Exports: default
 
-// Module 10284 (ChannelIndicator)
+// Module 10290 (ChannelIndicator)
 const _module = require(dependencyMap[0]);
 const View = _module.View;
 const UnreadSetting = require(dependencyMap[1]).UnreadSetting;

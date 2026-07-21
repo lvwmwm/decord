@@ -1,16 +1,16 @@
-// Module ID: 10316
-// Function ID: 79665
+// Module ID: 10322
+// Function ID: 79684
 // Name: AlertNotification
 // Dependencies: []
 // Exports: default
 
-// Module 10316 (AlertNotification)
+// Module 10322 (AlertNotification)
 let closure_3 = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 ({ jsx: closure_5, Fragment: closure_6, jsxs: closure_7 } = arg1(dependencyMap[2]));
-const obj = { position: "showAllButtonUnderline", padding: "toggleVoiceChannelChat", marginTop: "ig", paddingTop: "ZENDESK", marginBottom: "em", shape: arg1(dependencyMap[4]).CutoutShape.RoundedRect, x: arg1(dependencyMap[3]).ImageSizes[arg1(undefined, dependencyMap[3]).GuildIconSizes.NORMAL] - -6 - 24, cornerRadius: importDefault(dependencyMap[5]).radii.sm };
+const obj = { marginBottom: true, borderRadius: true, alignItems: true, -655593780: true, 1524781651: true, shape: arg1(dependencyMap[4]).CutoutShape.RoundedRect, x: arg1(dependencyMap[3]).ImageSizes[arg1(undefined, dependencyMap[3]).GuildIconSizes.NORMAL] - -6 - 24, cornerRadius: importDefault(dependencyMap[5]).radii.sm };
 const tmp2 = arg1(dependencyMap[2]);
-let closure_9 = arg1(dependencyMap[6]).createStyles({ warningBadge: {}, warningIcon: { aze: "<string:16777479>", azj: "<string:36295491>" } });
+let closure_9 = arg1(dependencyMap[6]).createStyles({ warningBadge: { backgroundColor: "<string:838861310>", flexDirection: null, justifyContent: null, alignItems: null, overflow: null, zIndex: null, minHeight: null }, warningIcon: {} });
 const obj2 = arg1(dependencyMap[6]);
 const result = arg1(dependencyMap[13]).fileFinishedImporting("modules/in_app_notifications/native/AlertNotification.tsx");
 

@@ -1,10 +1,10 @@
-// Module ID: 15110
-// Function ID: 114040
+// Module ID: 15117
+// Function ID: 114064
 // Name: ICYMIGuildEventRow
 // Dependencies: []
 // Exports: default
 
-// Module 15110 (ICYMIGuildEventRow)
+// Module 15117 (ICYMIGuildEventRow)
 function ICYMIGuildEventRow(event) {
   let channel;
   let guild;
@@ -50,7 +50,7 @@ function ICYMIGuildEventRow(event) {
   const callback1 = React.useCallback(() => {
     let obj = guild(tmp3[14]);
     obj.itemInteracted(event.id, "guild_event", "press_event");
-    obj = { itemId: event.id, itemType: "guild_event", actionParameters: {} };
+    obj = { itemId: event.id, itemType: "guild_event", actionParameters: { "Bool(false)": null, "Bool(false)": "4588b9ce3776c8bf8c8aad48652638ac", "Bool(false)": "XLargeIcon", "Bool(false)": "png" } };
     guild(tmp3[14]).feedItemActioned(obj);
     const obj2 = guild(tmp3[14]);
     event(tmp3[16]).transitionToGuild(guild.id);
@@ -131,7 +131,7 @@ function ICYMIGuildEventRow(event) {
   const obj7 = { style: tmp.infoContainer };
   const obj8 = { style: tmp.locationContainer };
   const items4 = [callback3(arg1(dependencyMap[22]).GroupIcon, { size: "xs", style: tmp.eventsChannelIcon }), ];
-  const obj10 = { CHANNEL_HIGHLIGHT: 0, guild_template_description: 5.566, borderWidth: 10 };
+  const obj10 = { encodingConfig: 0, showRemove: 5.566, PREMIUM_CUSTOM_NOTIFICATION_SOUND_SETTINGS_UPSELL: 10 };
   const intl2 = arg1(dependencyMap[9]).intl;
   obj10.children = intl2.format(arg1(dependencyMap[9]).t.+DLsD8, { count: tmp12Result });
   items4[1] = callback3(arg1(dependencyMap[20]).Text, obj10);
@@ -149,7 +149,7 @@ function ICYMIGuildEventRow(event) {
     }
   }
   const items6 = [tmp33, ];
-  const obj14 = { CHANNEL_HIGHLIGHT: "r", guild_template_description: "LengthDelimited", borderWidth: "isArray" };
+  const obj14 = { encodingConfig: false, showRemove: false, PREMIUM_CUSTOM_NOTIFICATION_SOUND_SETTINGS_UPSELL: false };
   let result = null;
   if (null != locationFromEvent) {
     result = arg1(dependencyMap[21]).guildEventDetailsParser(locationFromEvent, true);
@@ -181,7 +181,7 @@ let closure_13 = arg1(dependencyMap[6]).createICYMIStyles((margin) => {
   obj = { marginTop: importDefault(dependencyMap[7]).space.PX_12 };
   obj.card = obj;
   obj.title = { marginBottom: importDefault(dependencyMap[7]).space.PX_4 };
-  const obj2 = { "Null": "isArray", "Null": "accessibilityRole", "Null": "data", 1331335171: "category", marginBottom: importDefault(dependencyMap[7]).space.PX_8 };
+  const obj2 = { "Null": "isArray", "Null": "accessibilityRole", "Null": "replace", "Null": "marginBottom", marginBottom: importDefault(dependencyMap[7]).space.PX_8 };
   obj.timeAndUserPillContainer = obj2;
   const obj1 = { marginBottom: importDefault(dependencyMap[7]).space.PX_4 };
   obj.separator = { backgroundColor: importDefault(dependencyMap[7]).colors.BORDER_SUBTLE, marginVertical: importDefault(dependencyMap[7]).space.PX_12 };

@@ -1,10 +1,10 @@
-// Module ID: 15404
-// Function ID: 117591
+// Module ID: 15411
+// Function ID: 117615
 // Name: ChannelSettingsEditForumTag
 // Dependencies: []
 // Exports: default
 
-// Module 15404 (ChannelSettingsEditForumTag)
+// Module 15411 (ChannelSettingsEditForumTag)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 const View = arg1(dependencyMap[2]).View;
@@ -15,15 +15,15 @@ const tmp2 = arg1(dependencyMap[5]);
 ({ jsx: closure_10, jsxs: closure_11 } = arg1(dependencyMap[6]));
 let obj = arg1(dependencyMap[7]);
 obj = {};
-obj = { backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_BASE_LOWER };
+obj = { marginVertical: 10388343592192675000000000000000000, marginHorizontal: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003000217279425302, backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_BASE_LOWER };
 obj.container = obj;
 const tmp3 = arg1(dependencyMap[6]);
 obj.sections = { paddingHorizontal: 12, paddingTop: importDefault(dependencyMap[8]).space.PX_16 };
 obj.hint = { marginTop: 8 };
-obj.emojiIconWrapper = { flexShrink: "<string:1212237146>", flexGrow: "<string:1627390632>", justifyContent: "<string:29315642>", textAlign: "<string:2353087834>", marginBottom: "<string:1929380107>" };
-obj.imageEmoji = { <string:1140607356>: false, <string:1751293292>: false };
-obj.textEmoji = { "Null": -1140850686, "Null": 285212674 };
-obj.nameInput = {};
+obj.emojiIconWrapper = { 1570352722: "<string:960578957>", 1689739681: "<string:1627390632>", 1454006988: "<string:29708858>", 126153298: "<string:4131472781>", 1655333320: "<string:1929380107>" };
+obj.imageEmoji = { <string:1632221346>: false, <string:2722977214>: "internal" };
+obj.textEmoji = { PX_16: -1140850686, ix: 285212674 };
+obj.nameInput = { <string:1868169220>: false, <string:525467652>: false };
 obj.saveButton = { flex: 0 };
 let closure_12 = obj.createStyles(obj);
 const obj1 = { paddingHorizontal: 12, paddingTop: importDefault(dependencyMap[8]).space.PX_16 };
@@ -151,7 +151,7 @@ export default function ChannelSettingsEditForumTag(channelId) {
   const layoutEffect = React.useLayoutEffect(() => {
     navigation.setOptions({
       headerTitle() {
-        const obj = {};
+        const obj = { 1655478700: 17, 72438626: "message_display_compact", 1446732292: "message" };
         const intl = callback(closure_2[12]).intl;
         const string = intl.string;
         const t = callback(closure_2[12]).t;
@@ -254,12 +254,12 @@ export default function ChannelSettingsEditForumTag(channelId) {
       obj5.children = tmp34Result;
       obj4.icon = tmp30(tmp33, obj5);
       const obj6 = {
-        BT: true,
-        updateAgeOnGet: "/assets/images/native",
-        GuildProfileVisibilitySets: 60,
-        SEND_AS_GIFT: 60,
-        LinkIcon: null,
-        paddingTop: "ed431a42081d7323282ce4207b41689a",
+        -9223372036854775808: true,
+        9223372036854775807: "/assets/images/native",
+        -9223372036854775808: 60,
+        9223372036854775807: 60,
+        9223372036854775807: null,
+        9223372036854775807: "ed431a42081d7323282ce4207b41689a",
         style: tmp.nameInput,
         value: first1,
         onChangeText(arg0) {
@@ -287,7 +287,7 @@ export default function ChannelSettingsEditForumTag(channelId) {
       obj3.children = tmp30(arg1(dependencyMap[17]).TableRow, obj4);
       const items6 = [tmp30(arg1(dependencyMap[16]).TableRowGroup, obj3), ];
       const obj9 = { style: tmp.hint };
-      const obj10 = { INTEGRATION_CREATE: "<string:3305963521>", ConstraintReasonCode: "<string:671547393>" };
+      const obj10 = {};
       const intl2 = arg1(dependencyMap[12]).intl;
       obj10.children = intl2.string(arg1(dependencyMap[12]).t.3v8kZH);
       obj9.children = callback2(arg1(dependencyMap[11]).Text, obj10);

@@ -1,10 +1,10 @@
-// Module ID: 5479
-// Function ID: 46720
+// Module ID: 5481
+// Function ID: 46762
 // Name: useProviderConnection
 // Dependencies: []
 // Exports: useProviderConnection
 
-// Module 5479 (useProviderConnection)
+// Module 5481 (useProviderConnection)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 let closure_5 = importDefault(dependencyMap[2]);

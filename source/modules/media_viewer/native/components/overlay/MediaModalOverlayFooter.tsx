@@ -1,10 +1,10 @@
-// Module ID: 12116
-// Function ID: 93331
+// Module ID: 12123
+// Function ID: 93354
 // Name: clamp
 // Dependencies: []
 // Exports: MediaModalOverlayFooter
 
-// Module 12116 (clamp)
+// Module 12123 (clamp)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importAll(dependencyMap[1]);
 const View = arg1(dependencyMap[2]).View;
@@ -169,7 +169,7 @@ export const MediaModalOverlayFooter = function MediaModalOverlayFooter(channelI
         items[1] = Math.max(first2, first3);
         const _Math2 = Math;
         items[2] = Math.max(first2, first3) + 40;
-        interpolateResult = obj2.interpolate(value, [], items, "clamp");
+        interpolateResult = obj2.interpolate(value, [true, true, true], items, "clamp");
       }
     }
     obj.height = interpolateResult;
@@ -183,10 +183,10 @@ export const MediaModalOverlayFooter = function MediaModalOverlayFooter(channelI
   const animatedStyle = obj3.useAnimatedStyle(ee);
   let obj5 = arg1(dependencyMap[6]);
   function te() {
-    const obj = { opacity: onFullViewToggled(num[6]).interpolate(sharedValue2.get(), [null, null], ["getViewManagerConfig", "hasViewManagerConfig"], "clamp") };
+    const obj = { opacity: onFullViewToggled(num[6]).interpolate(sharedValue2.get(), ["Text", "lc"], ["<string:3813229678>", "<string:153900714>"], "clamp") };
     const obj2 = onFullViewToggled(num[6]);
     const items = [0.229, num2];
-    obj.height = onFullViewToggled(num[6]).interpolate(sharedValue2.get(), ["getViewManagerConfig", "hasViewManagerConfig"], items, "clamp");
+    obj.height = onFullViewToggled(num[6]).interpolate(sharedValue2.get(), ["<string:3813229678>", "<string:153900714>"], items, "clamp");
     return obj;
   }
   obj = { interpolate: arg1(dependencyMap[6]).interpolate, animationDriver: sharedValue2, COLLAPSED: 0, EXPANDED: 1, thumbnailsElementHeight: num2 };
@@ -210,7 +210,7 @@ export const MediaModalOverlayFooter = function MediaModalOverlayFooter(channelI
   }, items7);
   let obj7 = arg1(dependencyMap[6]);
   function ae() {
-    const obj = { height: onFullViewToggled(num[6]).interpolate(sharedValue2.get(), [null, null], [88.951, 45.022], "clamp") };
+    const obj = { height: onFullViewToggled(num[6]).interpolate(sharedValue2.get(), ["Text", "lc"], [88.951, 45.022], "clamp") };
     return obj;
   }
   obj1 = { interpolate: arg1(dependencyMap[6]).interpolate, animationDriver: sharedValue2, COLLAPSED: 0, EXPANDED: 1 };
@@ -232,13 +232,13 @@ export const MediaModalOverlayFooter = function MediaModalOverlayFooter(channelI
   function ie() {
     let obj = {};
     const items = [a, 1];
-    obj.backgroundColor = "rgba(" + r + ", " + g + ", " + b + ", " + onFullViewToggled(num[6]).interpolate(sharedValue2.get(), [null, null], items, "clamp") + ")";
+    obj.backgroundColor = "rgba(" + r + ", " + g + ", " + b + ", " + onFullViewToggled(num[6]).interpolate(sharedValue2.get(), ["Text", "lc"], items, "clamp") + ")";
     const obj2 = onFullViewToggled(num[6]);
-    obj.paddingVertical = onFullViewToggled(num[6]).interpolate(sharedValue2.get(), [null, null], [], "clamp");
+    obj.paddingVertical = onFullViewToggled(num[6]).interpolate(sharedValue2.get(), ["Text", "lc"], [], "clamp");
     obj = {};
     const obj3 = onFullViewToggled(num[6]);
     const items1 = [-1, 0];
-    obj.translateY = onFullViewToggled(num[6]).interpolate(sharedValue2.get(), items1, [994770946, 919863298], "clamp");
+    obj.translateY = onFullViewToggled(num[6]).interpolate(sharedValue2.get(), items1, ["Array", "isArray"], "clamp");
     const items2 = [obj];
     obj.transform = items2;
     return obj;

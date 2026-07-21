@@ -1,10 +1,10 @@
-// Module ID: 11196
-// Function ID: 87202
+// Module ID: 11202
+// Function ID: 87225
 // Name: ViewAllRow
 // Dependencies: []
 // Exports: default
 
-// Module 11196 (ViewAllRow)
+// Module 11202 (ViewAllRow)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 const jsx = arg1(dependencyMap[2]).jsx;
@@ -23,7 +23,7 @@ export default function ViewAllRow(title) {
   }
   obj.accessibilityLabel = formatToPlainStringResult;
   obj = { style: callback().expandCTALabelContainer };
-  const obj1 = { "Bool(false)": "tertiary", "Bool(false)": "sm" };
+  const obj1 = {};
   const intl2 = arg1(dependencyMap[5]).intl;
   obj1.children = intl2.format(arg1(dependencyMap[5]).t.gVw57p, {});
   obj.children = jsx(arg1(dependencyMap[6]).Text, obj1);

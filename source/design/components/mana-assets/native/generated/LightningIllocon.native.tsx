@@ -1,10 +1,10 @@
-// Module ID: 6275
-// Function ID: 50286
+// Module ID: 6277
+// Function ID: 50329
 // Name: LightningIllocon
 // Dependencies: []
 // Exports: LightningIllocon
 
-// Module 6275 (LightningIllocon)
+// Module 6277 (LightningIllocon)
 const jsx = require(dependencyMap[0]).jsx;
 const _module = require(dependencyMap[3]);
 const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/LightningIllocon.native.tsx");

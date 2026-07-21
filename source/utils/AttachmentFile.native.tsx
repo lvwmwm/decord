@@ -1,10 +1,10 @@
-// Module ID: 4669
-// Function ID: 40555
+// Module ID: 4671
+// Function ID: 40596
 // Name: _getAttachmentFile
 // Dependencies: []
 // Exports: cancelGetAttachmentFile, fileIsInAppDir, getAttachmentFile
 
-// Module 4669 (_getAttachmentFile)
+// Module 4671 (_getAttachmentFile)
 async function _getAttachmentFile(item, arg1, arg2) {
   callback2(closure_2[2])(item.item.platform === callback(closure_2[3]).UploadPlatform.REACT_NATIVE, "Upload must be in the React Native format");
   let obj = callback(closure_2[4]);

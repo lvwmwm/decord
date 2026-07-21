@@ -1,15 +1,14 @@
-// Module ID: 16263
-// Function ID: 125579
+// Module ID: 16270
+// Function ID: 125610
 // Name: useHighlightedCreatorGuildDetails
 // Dependencies: [0, 0, 0, 0, 0]
 // Exports: default
 
-// Module 16263 (useHighlightedCreatorGuildDetails)
-import closure_2 from "result";
-import { MarketingURLs } from "result";
-import result from "result";
+// Module 16270 (useHighlightedCreatorGuildDetails)
+import __exportStarResult1 from "__exportStarResult1";
+import { MarketingURLs } from "__exportStarResult1";
 
-result = result.fileFinishedImporting("modules/guild_role_subscriptions/useHighlightedCreatorGuildDetails.tsx");
+const result = require("__exportStarResult1").fileFinishedImporting("modules/guild_role_subscriptions/useHighlightedCreatorGuildDetails.tsx");
 
 export default function useHighlightedCreatorGuildDetails(id, arg1, size) {
   let highlightedCreatorDetails;

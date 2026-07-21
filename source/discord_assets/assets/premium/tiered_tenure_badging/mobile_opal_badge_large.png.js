@@ -1,9 +1,9 @@
-// Module ID: 8544
-// Function ID: 67938
+// Module ID: 8548
+// Function ID: 67950
 // Name: metadata
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 8544 (metadata)
+// Module 8548 (metadata)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_assets/assets/premium/tiered_tenure_badging/mobile_opal_badge_large.png.js");
 

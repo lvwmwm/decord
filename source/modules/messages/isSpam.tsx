@@ -1,10 +1,10 @@
-// Module ID: 6728
-// Function ID: 52393
+// Module ID: 6734
+// Function ID: 52442
 // Name: isSpammer
 // Dependencies: []
 // Exports: isSpam, isSpamSupported
 
-// Module 6728 (isSpammer)
+// Module 6734 (isSpammer)
 function isSpammer(id) {
   const user = user.getUser(id);
   let hasFlagResult;

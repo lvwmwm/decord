@@ -1,10 +1,10 @@
-// Module ID: 10885
-// Function ID: 84612
+// Module ID: 10890
+// Function ID: 84633
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 // Exports: ensureSpotifyPlayable, ensureSpotifyPremium, getSpotifyMetadataFromActivity, isSpotifyPlayable, isSpotifyPremium
 
-// Module 10885 (_createForOfIteratorHelperLoose)
+// Module 10890 (_createForOfIteratorHelperLoose)
 function _createForOfIteratorHelperLoose(@@iterator) {
   let arg1 = Symbol_iterator;
   @@iterator = "undefined" !== typeof Symbol;

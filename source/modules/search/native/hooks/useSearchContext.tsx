@@ -1,10 +1,10 @@
-// Module ID: 10060
-// Function ID: 77685
+// Module ID: 10066
+// Function ID: 77703
 // Name: getChannelDetailsSearchContext
-// Dependencies: [369098766, 3154116608, 3623878660, 2130706448, 1325400079, 1392508967]
+// Dependencies: [369098766, 3154116608, 3690987524, 2130706448, 1426063375, 1493172263]
 // Exports: useChannelDetailsSearchContext, useGuildChannelSearchContext, useGuildSearchContext
 
-// Module 10060 (getChannelDetailsSearchContext)
+// Module 10066 (getChannelDetailsSearchContext)
 function getChannelDetailsSearchContext(channelId, guildId, isThreadResult) {
   if (isThreadResult) {
     importDefault(dependencyMap[3])(null != guildId, "[useChannelDetailsSearchContext] Thread must have a guild id");

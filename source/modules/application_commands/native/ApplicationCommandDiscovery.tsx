@@ -1,10 +1,10 @@
-// Module ID: 11419
-// Function ID: 88881
+// Module ID: 11426
+// Function ID: 88905
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 // Exports: default
 
-// Module 11419 (_createForOfIteratorHelperLoose)
+// Module 11426 (_createForOfIteratorHelperLoose)
 function _createForOfIteratorHelperLoose(@@iterator) {
   let arg1 = Symbol_iterator;
   @@iterator = "undefined" !== typeof Symbol;
@@ -145,7 +145,7 @@ export default function ApplicationCommandDiscovery(channel) {
   obj.builtIns = canOnlyUseTextCommands ? BuiltInCommandFilter.ONLY_TEXT : BuiltInCommandFilter.ALLOW;
   obj.applicationCommands = !canOnlyUseTextCommands;
   obj.filters = obj;
-  obj1 = { alignItems: null, concat: null, justifyContent: null, limit: commandDiscoveryManager };
+  obj1 = { "Null": null, "Bool(false)": null, "Bool(false)": null, limit: commandDiscoveryManager };
   obj.options = obj1;
   obj.allowFetch = true;
   const discovery = obj2.useDiscovery(obj);
@@ -295,7 +295,7 @@ export default function ApplicationCommandDiscovery(channel) {
   const items7 = [channel.guild_id, callback, sectionDescriptors, first];
   const callback4 = React.useCallback((arg0, index) => {
     if (null == arg0) {
-      let obj = { display: false, flexDirection: true, index };
+      let obj = { "Bool(false)": -536870861, "Bool(false)": -299892737, index };
       return obj;
     } else {
       const ROW2 = constants.ROW;

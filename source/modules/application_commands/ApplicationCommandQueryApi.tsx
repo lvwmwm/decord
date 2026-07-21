@@ -1,10 +1,10 @@
-// Module ID: 8177
-// Function ID: 64594
+// Module ID: 8181
+// Function ID: 64606
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 // Exports: executeQuery, getCachedApplicationSection, getCachedCommand, getCachedResults, getChangeKeys, useAccessibleCommandsForApplication, useCachedResults, useCommand, useDiscovery, useQuery
 
-// Module 8177 (_createForOfIteratorHelperLoose)
+// Module 8181 (_createForOfIteratorHelperLoose)
 function _createForOfIteratorHelperLoose(@@iterator) {
   let arg1 = Symbol_iterator;
   @@iterator = "undefined" !== typeof Symbol;
@@ -226,7 +226,7 @@ function createPlaceholderCommands(arg0, type) {
   return items;
 }
 function createPlaceholderCommand(arg0, type) {
-  const obj = { -9223372036854775808: "message", 9223372036854775807: 21, 9223372036854775807: "modal_top_pill_localized", 9223372036854775807: "message", 0: 7, 0: "dismiss_key", 0: "scalar", 9223372036854775807: 9, type, inputType: type(dependencyMap[14]).ApplicationCommandInputType.PLACEHOLDER, id: "placeholder-" + arg0 };
+  const obj = { 1375464034: "message", 979437212: 21, 1637965137: "modal_top_pill_localized", -389263020: "message", 1672107618: 7, 1373170892: "dismiss_key", 996213764: "scalar", -1197159086: 9, type, inputType: type(dependencyMap[14]).ApplicationCommandInputType.PLACEHOLDER, id: "placeholder-" + arg0 };
   obj.section = obj;
   return obj;
 }
@@ -238,7 +238,7 @@ let closure_10 = importDefault(dependencyMap[3]);
 const BuiltInSectionId = arg1(dependencyMap[4]).BuiltInSectionId;
 const NOOP = arg1(dependencyMap[5]).NOOP;
 const items = [arg1(dependencyMap[11]).ApplicationCommandType.CHAT];
-const obj = { type: arg1(dependencyMap[14]).ApplicationCommandSectionType.APPLICATION };
+const obj = { kite: null, lu: null, cardFeaturesWrapper: null, type: arg1(dependencyMap[14]).ApplicationCommandSectionType.APPLICATION };
 const tmp2 = arg1(dependencyMap[3]);
 const result = arg1(dependencyMap[15]).fileFinishedImporting("modules/application_commands/ApplicationCommandQueryApi.tsx");
 

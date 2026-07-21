@@ -1,10 +1,10 @@
-// Module ID: 4944
-// Function ID: 42348
+// Module ID: 4946
+// Function ID: 42389
 // Name: createOrUpdateModeratorOverwrite
 // Dependencies: []
 // Exports: canLurkerListen, createModeratorOverwrite, isEmptyOverwrite, removeModeratorOverwrite, useCanCreateStageChannelByGuild, useCanModerateRequestToSpeak, useCanUpdateStageChannelModerators
 
-// Module 4944 (createOrUpdateModeratorOverwrite)
+// Module 4946 (createOrUpdateModeratorOverwrite)
 function createOrUpdateModeratorOverwrite(id, type, deny) {
   const obj = { id, type };
   deny = undefined;

@@ -1,10 +1,10 @@
-// Module ID: 13777
-// Function ID: 104166
+// Module ID: 13784
+// Function ID: 104189
 // Name: ItemSeparator
 // Dependencies: []
 // Exports: default
 
-// Module 13777 (ItemSeparator)
+// Module 13784 (ItemSeparator)
 function ItemSeparator(trailingItem) {
   let tmp = null;
   if (null != trailingItem.trailingItem) {
@@ -46,8 +46,8 @@ function BountiesScrollVideoItemContainer(index) {
       }
     }
     const obj = {};
-    const items = [null, null, num];
-    obj.opacity = index(scrollY[11]).interpolate(absolute, [null, null, null], items, index(scrollY[11]).Extrapolation.CLAMP);
+    const items = [, , num];
+    obj.opacity = index(scrollY[11]).interpolate(absolute, [], items, index(scrollY[11]).Extrapolation.CLAMP);
     return obj;
   };
   obj = { scrollY, index, slotHeight, isPeekEnabled, PEEK_OPACITY: 0.8, interpolate: arg1(dependencyMap[11]).interpolate, FADE_DEADBAND: 0.3, Extrapolation: arg1(dependencyMap[11]).Extrapolation };
@@ -659,7 +659,7 @@ function BountiesModalContentScrollInner(arg0) {
       obj = {};
       obj2 = initialBountyId(closure_2[11]);
       value = runOnJS.get();
-      obj.opacity = obj2.interpolate(value, [null, null], [null, null], initialBountyId(closure_2[11]).Extrapolation.CLAMP);
+      obj.opacity = obj2.interpolate(value, ["Text", "lc"], ["Text", "lc"], initialBountyId(closure_2[11]).Extrapolation.CLAMP);
       return obj;
     }
   }
@@ -677,7 +677,7 @@ function BountiesModalContentScrollInner(arg0) {
       items = [, ];
       items[0] = closure_19;
       items[1] = handleRecapMomentumEnd;
-      obj.opacity = obj2.interpolate(value, items, ["getViewManagerConfig", "hasViewManagerConfig"], initialBountyId(closure_2[11]).Extrapolation.CLAMP);
+      obj.opacity = obj2.interpolate(value, items, ["<string:3813229678>", "<string:153900714>"], initialBountyId(closure_2[11]).Extrapolation.CLAMP);
       return obj;
     }
   }
@@ -707,7 +707,7 @@ function BountiesModalContentScrollInner(arg0) {
       items = [, ];
       items[0] = closure_19;
       items[1] = handleRecapMomentumEnd;
-      obj.opacity = obj3.interpolate(value, items, ["getViewManagerConfig", "hasViewManagerConfig"], initialBountyId(closure_2[11]).Extrapolation.CLAMP);
+      obj.opacity = obj3.interpolate(value, items, ["<string:3813229678>", "<string:153900714>"], initialBountyId(closure_2[11]).Extrapolation.CLAMP);
       return obj;
     }
   }
@@ -730,7 +730,7 @@ function BountiesModalContentScrollInner(arg0) {
       value = closure_31.get();
       items = [0.229];
       items[1] = closure_14;
-      obj.opacity = obj2.interpolate(value, items, ["getViewManagerConfig", "hasViewManagerConfig"], initialBountyId(closure_2[11]).Extrapolation.CLAMP);
+      obj.opacity = obj2.interpolate(value, items, ["<string:3813229678>", "<string:153900714>"], initialBountyId(closure_2[11]).Extrapolation.CLAMP);
       return obj;
     }
   }
@@ -985,8 +985,8 @@ let closure_22 = () => {
 const obj = arg1(dependencyMap[8]);
 let closure_23 = arg1(dependencyMap[10]).createStyles(() => {
   const closeButton = { position: "absolute", zIndex: closure_15 };
-  const autoScrollIndicator = { zIndex: closure_15 };
-  return { root: { flex: 1 }, recapPage: {}, listWrapper: { -9223372036854775808: "type", 9223372036854775807: "enum", 9223372036854775807: 7 }, closeButton, peekGradient: {}, autoScrollIndicator };
+  const autoScrollIndicator = { conversationIds: "<string:1627390512>", KeyboardEvents: "<string:1166889530>", forceFlush: "<string:678577549>", zIndex: closure_15 };
+  return { root: { flex: 1 }, recapPage: {}, listWrapper: { -77407381: 6, -1399238308: "100%", 1565641825: 48 }, closeButton, peekGradient: {}, autoScrollIndicator };
 });
 let closure_24 = { code: "function BountiesModalContentScrollTsx2(){const{scrollY,index,slotHeight,isPeekEnabled,PEEK_OPACITY,interpolate,FADE_DEADBAND,Extrapolation}=this.__closure;const signedDistance=(scrollY.get()-index*slotHeight)/slotHeight;const distance=Math.abs(signedDistance);const peekOpacity=isPeekEnabled&&signedDistance<0&&index===1?PEEK_OPACITY:0;const opacity=interpolate(distance,[0,FADE_DEADBAND,1],[1,1,peekOpacity],Extrapolation.CLAMP);return{opacity:opacity};}" };
 let closure_25 = { code: "function BountiesModalContentScrollTsx3(event){const{scrollY,isDraggingSharedValue,isScrollingInBoundsSharedValue,isScrollEventInBounds}=this.__closure;scrollY.set(event.contentOffset.y);if(isDraggingSharedValue.get()){isScrollingInBoundsSharedValue.set(isScrollEventInBounds(event));}}" };

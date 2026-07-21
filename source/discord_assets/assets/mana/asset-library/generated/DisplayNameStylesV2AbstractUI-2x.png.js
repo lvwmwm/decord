@@ -1,9 +1,9 @@
-// Module ID: 6018
-// Function ID: 49901
+// Module ID: 6020
+// Function ID: 49944
 // Name: metadata
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 6018 (metadata)
+// Module 6020 (metadata)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/DisplayNameStylesV2AbstractUI-2x.png.js");
 

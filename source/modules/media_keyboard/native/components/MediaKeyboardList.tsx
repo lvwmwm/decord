@@ -1,9 +1,9 @@
-// Module ID: 9649
-// Function ID: 75164
+// Module ID: 9654
+// Function ID: 75181
 // Name: NativeModules
 // Dependencies: []
 
-// Module 9649 (NativeModules)
+// Module 9654 (NativeModules)
 let NativeEventEmitter;
 let NativeModules;
 let closure_3 = importDefault(dependencyMap[0]);

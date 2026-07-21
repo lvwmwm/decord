@@ -1,10 +1,10 @@
-// Module ID: 9863
-// Function ID: 76389
+// Module ID: 9868
+// Function ID: 76405
 // Name: isStaffChannel
-// Dependencies: [2483028002, 2516582438, 1828716582, 2533359650]
+// Dependencies: [2566914082, 2600468518, 1895825446, 2617245730, 3154116646]
 // Exports: default
 
-// Module 9863 (isStaffChannel)
+// Module 9868 (isStaffChannel)
 function isStaffChannel(channel) {
   if (channel.isPrivate()) {
     const recipients = channel.recipients;

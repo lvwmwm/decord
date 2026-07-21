@@ -1,16 +1,16 @@
-// Module ID: 9259
-// Function ID: 72343
+// Module ID: 9263
+// Function ID: 72355
 // Name: useGuildHasFeature
 // Dependencies: [0, 0, 0, 0, 0]
 // Exports: isTopicalNavEnabled, useIsTopicalNavEnabled
 
-// Module 9259 (useGuildHasFeature)
-import closure_2 from "result";
-import { GuildFeatures } from "result";
-import result from "result";
-import result from "result";
-import result from "result";
-import result from "result";
+// Module 9263 (useGuildHasFeature)
+import closure_2 from "__exportStarResult1";
+import { GuildFeatures } from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
+import __exportStarResult1 from "__exportStarResult1";
 
 function useGuildHasFeature(guild_id, CONVERSATIONS_EXTRACTION_PROCESSING) {
   CONVERSATIONS_EXTRACTION_PROCESSING = guild_id;
@@ -50,23 +50,23 @@ function isConversationDebugUXEnabled(guildId, location) {
   let enabled = !tmp7;
   if (!!tmp2) {
     const obj = { location };
-    enabled = result.getConfig(obj).enabled;
+    enabled = __exportStarResult1.getConfig(obj).enabled;
   }
   return enabled;
 }
 function useIsConversationDebugUXEnabled(guild_id, location) {
-  return useGuildHasFeature(guild_id, GuildFeatures.CONVERSATIONS_EXTRACTION_PROCESSING) && result.useConfig({ location }).enabled;
+  return useGuildHasFeature(guild_id, GuildFeatures.CONVERSATIONS_EXTRACTION_PROCESSING) && __exportStarResult1.useConfig({ location }).enabled;
 }
-result = { "Null": true, "Null": true, defaultConfig: { enabled: false }, variations: { [1]: { enabled: false }, [2]: { enabled: true } } };
-result = result.createApexExperiment(result);
-result = { "Null": 1430327807, "Null": 1912603195, defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } };
-result = result.createApexExperiment(result);
-const obj1 = { "Null": null, "Null": null, defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } };
-const apexExperiment2 = result.createApexExperiment(obj1);
-result = result.fileFinishedImporting("modules/conversations/ConversationExperiments.tsx");
+__exportStarResult1 = { margin: null, paddingHorizontal: null, defaultConfig: { enabled: false }, variations: { [1]: { enabled: false }, [2]: { enabled: true } } };
+__exportStarResult1 = __exportStarResult1.createApexExperiment(__exportStarResult1);
+__exportStarResult1 = { margin: -1757343233, paddingHorizontal: 1912603195, defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } };
+__exportStarResult1 = __exportStarResult1.createApexExperiment(__exportStarResult1);
+const obj1 = { margin: null, paddingHorizontal: null, defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } };
+const apexExperiment2 = __exportStarResult1.createApexExperiment(obj1);
+const result = __exportStarResult1.fileFinishedImporting("modules/conversations/ConversationExperiments.tsx");
 
-export const ConversationHighlightingExperiment = result;
-export const TopicalNavGuildExperiment = result;
+export const ConversationHighlightingExperiment = __exportStarResult1;
+export const TopicalNavGuildExperiment = __exportStarResult1;
 export const TopicalNavUserGateExperiment = apexExperiment2;
 export { isConversationDebugUXEnabled };
 export const isTopicalNavEnabled = function isTopicalNavEnabled(guildId, fetch_channel_conversations) {
@@ -89,7 +89,7 @@ export const isTopicalNavEnabled = function isTopicalNavEnabled(guildId, fetch_c
       }
       if (enabled) {
         obj = { guildId, location: fetch_channel_conversations };
-        enabled = result.getConfig(obj).enabled;
+        enabled = __exportStarResult1.getConfig(obj).enabled;
       }
       return enabled;
     } else {
@@ -119,7 +119,7 @@ export const useIsTopicalNavEnabled = function useIsTopicalNavEnabled(guild_id, 
           enabled = !tmp3;
         }
         if (enabled) {
-          enabled = result.useConfig(obj).enabled;
+          enabled = __exportStarResult1.useConfig(obj).enabled;
         }
         tmp8 = enabled;
       }

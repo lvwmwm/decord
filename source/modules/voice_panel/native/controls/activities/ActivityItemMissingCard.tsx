@@ -1,9 +1,9 @@
-// Module ID: 15692
-// Function ID: 119963
+// Module ID: 15699
+// Function ID: 119987
 // Name: ActivityItemEmptyCard
 // Dependencies: []
 
-// Module 15692 (ActivityItemEmptyCard)
+// Module 15699 (ActivityItemEmptyCard)
 function ActivityItemEmptyCard(activity) {
   activity = activity.activity;
   const arg1 = activity;
@@ -20,7 +20,7 @@ function ActivityItemEmptyCard(activity) {
   // CreateGeneratorClosureLongIndex (0x67)
   const items = [activity.launchId, analyticsLocations, application, channelId];
   callback = importAllResult.useCallback(callback(tmp), items);
-  let obj = { applicationId: activity.applicationId, size: width, names: [240518194] };
+  let obj = { applicationId: activity.applicationId, size: width, names: ["opacity"] };
   const tmp2 = callback4();
   obj = { activeOpacity: 0.7, onPress: callback, style: tmp2.disabledActivity };
   obj = { imageBackground: importDefault(dependencyMap[9])(obj), aspectRatio: width / size.height };
@@ -34,9 +34,9 @@ const ActivityIndicator = arg1(dependencyMap[2]).ActivityIndicator;
 ({ jsx: closure_6, jsxs: closure_7 } = arg1(dependencyMap[3]));
 let obj1 = arg1(dependencyMap[4]);
 let obj = {};
-obj = { 313968: 30271555, 315615: 22092032, 314002: 30271232, 315613: 1489260800, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_SURFACE_HIGH };
+obj = { backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_SURFACE_HIGH };
 obj.loadingActivity = obj;
-obj1 = { aze: 30271555, azj: 22092032, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_SURFACE_HIGH };
+obj1 = { backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_SURFACE_HIGH };
 obj.disabledActivity = obj1;
 let closure_8 = obj1.createStyles(obj);
 const tmp2 = arg1(dependencyMap[3]);

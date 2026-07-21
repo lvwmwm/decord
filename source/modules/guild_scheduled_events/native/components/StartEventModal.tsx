@@ -1,10 +1,10 @@
-// Module ID: 8458
-// Function ID: 67473
+// Module ID: 8462
+// Function ID: 67485
 // Name: NavigationBar
 // Dependencies: []
 // Exports: default
 
-// Module 8458 (NavigationBar)
+// Module 8462 (NavigationBar)
 function NavigationBar(onClose) {
   const arg1 = onClose.onClose;
   let obj = {};
@@ -22,7 +22,7 @@ function NavigationBar(onClose) {
 function StartEventHeader(children) {
   const tmp = callback4();
   let obj = { style: tmp.header };
-  obj = { Promise: "text-sm/normal", marginTop: "text-link", flags: true, style: tmp.headerPrivacyLevel };
+  obj = { "Null": "RTC_CONNECTION_LOSS_RATE", "Null": "handleJoinThreadVoice", "Null": "toString", style: tmp.headerPrivacyLevel };
   const intl = arg1(dependencyMap[13]).intl;
   obj.children = intl.string(arg1(dependencyMap[13]).t.q+fFJv);
   const items = [callback2(arg1(dependencyMap[16]).Text, obj), ];
@@ -58,14 +58,14 @@ obj.headerContainer = { gap: importDefault(dependencyMap[10]).space.PX_24 };
 obj.footerContainer = {};
 const obj1 = { gap: importDefault(dependencyMap[10]).space.PX_24 };
 obj.header = { alignItems: "center", paddingTop: importDefault(dependencyMap[10]).space.PX_24 };
-obj.headerTitle = {};
+obj.headerTitle = { "Bool(false)": null, "Bool(false)": "absolute" };
 const obj2 = { alignItems: "center", paddingTop: importDefault(dependencyMap[10]).space.PX_24 };
 obj.buttonContainer = { gap: importDefault(dependencyMap[10]).space.PX_8, marginTop: importDefault(dependencyMap[10]).space.PX_16 };
-const obj4 = { "Bool(true)": "_actionHandlers", "Bool(true)": "SharedArrayBuffer", "Bool(true)": "CRACKED_ACCOUNTS", "Bool(true)": "LARGE_BUTTON_ICON_SIZE", "Bool(true)": "r", borderColor: importDefault(dependencyMap[10]).colors.BORDER_SUBTLE, backgroundColor: importDefault(dependencyMap[10]).colors.BACKGROUND_SURFACE_HIGH, shadowOffset: { <string:1140607356>: null, <string:1751293292>: null } };
-obj.previewCard = obj4;
+const obj3 = { gap: importDefault(dependencyMap[10]).space.PX_8, marginTop: importDefault(dependencyMap[10]).space.PX_16 };
+obj.previewCard = { borderColor: importDefault(dependencyMap[10]).colors.BORDER_SUBTLE, backgroundColor: importDefault(dependencyMap[10]).colors.BACKGROUND_SURFACE_HIGH, shadowOffset: { <string:1632221346>: null, <string:2722977214>: null } };
 obj.headerPrivacyLevel = {};
 let closure_14 = obj.createStyles(obj);
-const obj3 = { gap: importDefault(dependencyMap[10]).space.PX_8, marginTop: importDefault(dependencyMap[10]).space.PX_16 };
+const obj4 = { borderColor: importDefault(dependencyMap[10]).colors.BORDER_SUBTLE, backgroundColor: importDefault(dependencyMap[10]).colors.BACKGROUND_SURFACE_HIGH, shadowOffset: { <string:1632221346>: null, <string:2722977214>: null } };
 const result = arg1(dependencyMap[25]).fileFinishedImporting("modules/guild_scheduled_events/native/components/StartEventModal.tsx");
 
 export default function StartEventModal(event) {
@@ -116,7 +116,7 @@ export default function StartEventModal(event) {
   React = tmp5[1];
   [closure_6, tmp8] = callback(importDefault(dependencyMap[20])(), 2);
   ({ loading, error } = tmp8);
-  obj = { "Bool(false)": null, "Bool(false)": null, style: tmp.mainContainer };
+  obj = { <string:2958189153>: null, <string:1661207664>: null, style: tmp.mainContainer };
   const items3 = [callback2(NavigationBar, { onClose: onCloseModal }), ];
   obj = { style: tmp.container };
   obj1 = { style: tmp.headerContainer };
@@ -144,7 +144,7 @@ export default function StartEventModal(event) {
   const obj5 = { style: tmp.buttonContainer };
   let tmp24 = null;
   if (null != error) {
-    const obj6 = { INTEGRATION_CREATE: 1, ConstraintReasonCode: "center", children: error.getAnyErrorMessage() };
+    const obj6 = { children: error.getAnyErrorMessage() };
     tmp24 = callback2(arg1(dependencyMap[16]).Text, obj6);
   }
   const items7 = [tmp24, ];

@@ -1,10 +1,10 @@
-// Module ID: 8442
-// Function ID: 67357
+// Module ID: 8446
+// Function ID: 67369
 // Name: GuildEventsListHeader
 // Dependencies: []
 // Exports: default
 
-// Module 8442 (GuildEventsListHeader)
+// Module 8446 (GuildEventsListHeader)
 function GuildEventsListHeader(arg0) {
   let eventCount;
   let guild;
@@ -97,7 +97,7 @@ export default function GuildEventsListActionSheet(guild) {
       const obj = guild(closure_2[18]);
     }
   }, items2);
-  let obj = { "Bool(false)": 24, "Bool(false)": 24, "Bool(false)": null, scrollable: arr.length > 0 };
+  let obj = { scrollable: arr.length > 0 };
   const intl = arg1(dependencyMap[10]).intl;
   obj.dismissAccessibilityLabel = intl.string(arg1(dependencyMap[10]).t.VSlyAn);
   obj = { eventCount: arr.length, guild };

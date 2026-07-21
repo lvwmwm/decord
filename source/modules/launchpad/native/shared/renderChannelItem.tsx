@@ -1,10 +1,10 @@
-// Module ID: 15537
-// Function ID: 118567
+// Module ID: 15544
+// Function ID: 118591
 // Name: LaunchpadChannelIcon
 // Dependencies: []
 // Exports: default, getChannelAccessibilityProps
 
-// Module 15537 (LaunchpadChannelIcon)
+// Module 15544 (LaunchpadChannelIcon)
 function LaunchpadChannelIcon(channel) {
   channel = channel.channel;
   const arg1 = channel;
@@ -17,7 +17,7 @@ function LaunchpadChannelIcon(channel) {
   const tmp2 = importDefault(dependencyMap[10])();
   obj.children = callback(importDefault(dependencyMap[12]), { guild: stateFromStores, size: importDefault(dependencyMap[10])().icon.guildBadgeIconSize });
   const items1 = [callback(View, obj), ];
-  const obj2 = { cancel: false, active: false, style: false, channel };
+  const obj2 = { "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, channel };
   items1[1] = callback(arg1(dependencyMap[13]).ChannelIcon, obj2);
   obj.children = items1;
   return callback2(closure_9, obj);
@@ -94,7 +94,7 @@ export default function renderChannelItem(unread) {
   obj = {};
   const items = [unreadBadge, , , ];
   obj = {};
-  const obj1 = { "Null": null, "Null": null, "Null": null, "Null": null, "Null": null, "Null": null, borderRadius: importDefault(dependencyMap[9]).radii.round, width: tmp5.icon.wrapper.size, height: tmp5.icon.wrapper.size };
+  const obj1 = { flexWrap: -716111870, gap: 373772727, position: 114, width: tmp5.icon.wrapper.size, height: tmp5.icon.wrapper.size, overflow: -1825505279, borderRadius: importDefault(dependencyMap[9]).radii.round };
   const merged = Object.assign(tmp5.icon.margin);
   obj.style = obj1;
   if (channel.isGroupDM()) {
@@ -150,6 +150,8 @@ export const getChannelAccessibilityProps = function getChannelAccessibilityProp
   let mentionCount;
   let unread;
   let voiceStates;
+  const obj = { positionBottom: false, positionRight: false };
   ({ channel, unread, mentionCount, voiceStates, embeddedActivitiesCount } = arg0);
-  return { accessibilityLabel: importDefault(dependencyMap[7])({ channel, unread, mentionCount, voiceStates, embeddedActivitiesCount }) };
+  obj.accessibilityLabel = importDefault(dependencyMap[7])({ channel, unread, mentionCount, voiceStates, embeddedActivitiesCount });
+  return obj;
 };

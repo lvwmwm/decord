@@ -1,9 +1,9 @@
-// Module ID: 4272
-// Function ID: 37360
+// Module ID: 4276
+// Function ID: 37408
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
-// Module 4272 (_isNativeReflectConstruct)
+// Module 4276 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -73,9 +73,9 @@ const tmp3 = (arg0) => {
       tmp2Result.calcMaxBitrateFunc = () => null;
       tmp2Result.context = arg0;
       tmp2Result.userId = arg1;
-      videoQualityManager = new f37398(closure_2[7]).VideoQualityManager(arg0, tmp2Result);
+      videoQualityManager = new f37446(closure_2[7]).VideoQualityManager(arg0, tmp2Result);
       tmp2Result.videoQualityManager = videoQualityManager;
-      _default = new f37398(closure_2[8]).default(tmp2Result, tmp2Result.videoQualityManager);
+      _default = new f37446(closure_2[8]).default(tmp2Result, tmp2Result.videoQualityManager);
       tmp2Result.framerateReducer = _default;
       return tmp2Result;
     }

@@ -1,12 +1,12 @@
-// Module ID: 15191
-// Function ID: 114682
+// Module ID: 15198
+// Function ID: 114706
 // Name: CalendarMinusIcon
 // Dependencies: [0, 0, 0, 0, 0, 4294967295]
 // Exports: CalendarMinusIcon
 
-// Module 15191 (CalendarMinusIcon)
-import "result";
-import { jsx } from "result";
+// Module 15198 (CalendarMinusIcon)
+import "__exportStarResult1";
+import { jsx } from "__exportStarResult1";
 
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/CalendarMinusIcon.tsx");
 

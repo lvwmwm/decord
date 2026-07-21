@@ -1,10 +1,10 @@
-// Module ID: 9547
-// Function ID: 74418
+// Module ID: 9552
+// Function ID: 74435
 // Name: MediaPostThumbnailActionSheet
 // Dependencies: []
 // Exports: default
 
-// Module 9547 (MediaPostThumbnailActionSheet)
+// Module 9552 (MediaPostThumbnailActionSheet)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 const ContentDismissActionType = arg1(dependencyMap[2]).ContentDismissActionType;
@@ -38,7 +38,7 @@ export default function MediaPostThumbnailActionSheet(markAsDismissed) {
   const items = [tmp.contentContainer, { paddingBottom: importDefault(dependencyMap[6])().bottom }];
   const obj1 = { style: tmp.topContainer };
   const obj2 = { style: tmp.setAsThumbnailContainer };
-  const obj3 = { INTEGRATION_CREATE: 131072.00119209292, ConstraintReasonCode: -293983030121430100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 };
+  const obj3 = {};
   const intl = arg1(dependencyMap[10]).intl;
   obj3.children = intl.string(arg1(dependencyMap[10]).t.ews2pj);
   const items1 = [callback(arg1(dependencyMap[9]).Text, obj3), callback(arg1(dependencyMap[11]).Checkbox, { selected: true })];

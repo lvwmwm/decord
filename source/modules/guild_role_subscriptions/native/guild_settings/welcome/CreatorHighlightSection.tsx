@@ -1,10 +1,10 @@
-// Module ID: 16262
-// Function ID: 125571
+// Module ID: 16269
+// Function ID: 125602
 // Name: GuildServerSubscriberCount
 // Dependencies: []
 // Exports: default
 
-// Module 16262 (GuildServerSubscriberCount)
+// Module 16269 (GuildServerSubscriberCount)
 function GuildServerSubscriberCount(arg0) {
   let style;
   let subscriberCount;
@@ -71,9 +71,9 @@ function CreatorGuildCard(highlightedCreatorGuild) {
     items1[1] = closure_7(closure_4, obj3);
     obj.children = items1;
     const items3 = [closure_7(closure_4, obj), , , , ];
-    const obj6 = { style: tmp.ownerQuote, children: quote };
+    const obj6 = { "Null": "absolute", "Null": 0, "Null": "center", style: tmp.ownerQuote, children: quote };
     items3[1] = callback(arg1(dependencyMap[5]).Text, obj6);
-    const obj7 = { useEffect: "xs", count: "interactive-text-default", forEach: "md", kind: "background-brand", accessibilityRole: "white", style: tmp.ownerUsername };
+    const obj7 = { 9223372036854775807: "xs", 0: "interactive-text-default", -9223372036854775808: "md", 0: "background-brand", 0: "white", style: tmp.ownerUsername };
     const intl = arg1(dependencyMap[8]).intl;
     const obj8 = { attributionName: quote_attribution };
     if (null == quote_attribution_title) {
@@ -89,7 +89,7 @@ function CreatorGuildCard(highlightedCreatorGuild) {
     }
     if (tmp27Result) {
       const obj9 = { style: tmp.emojiSectionContainer };
-      const obj10 = { Promise: null, marginTop: 16, flags: true, style: tmp.premiumEmojisTitle };
+      const obj10 = { style: tmp.premiumEmojisTitle };
       const intl3 = arg1(dependencyMap[8]).intl;
       obj10.children = intl3.string(arg1(dependencyMap[8]).t.wg53L8);
       const items4 = [callback(arg1(dependencyMap[5]).Text, obj10), ];
@@ -107,7 +107,7 @@ function CreatorGuildCard(highlightedCreatorGuild) {
       ];
       let tmp34 = null != notShownEmojiCount;
       if (tmp34) {
-        const obj12 = { Promise: 10, marginTop: null, flags: "flex-start", style: tmp.emojiListItem };
+        const obj12 = { style: tmp.emojiListItem };
         const _HermesInternal = HermesInternal;
         obj12.children = "+" + notShownEmojiCount;
         tmp34 = callback(arg1(dependencyMap[5]).Text, obj12);
@@ -143,7 +143,7 @@ const tmp2 = arg1(dependencyMap[1]);
 ({ jsx: closure_6, jsxs: closure_7 } = arg1(dependencyMap[2]));
 let obj = arg1(dependencyMap[3]);
 obj = { horizontalContainer: { flexDirection: "row" }, serverSubscriberCount: { marginTop: 8 } };
-obj = { fontSize: 66045631808354870000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, color: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000006688871913474923, marginTop: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007579642914024699, enabled: 116013416944172600000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, limit: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000006312419348472345, backgroundColor: importDefault(dependencyMap[4]).unsafe_rawColors.BRAND_530, borderRadius: importDefault(dependencyMap[4]).radii.xs };
+obj = { "Null": 208463177963594620000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, "Null": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000006688871913474923, "Null": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007436098949264682, "Null": -0.0000000000000000000000000000000000000009788013778458023, "Null": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000006312419341205383, backgroundColor: importDefault(dependencyMap[4]).unsafe_rawColors.BRAND_530, borderRadius: importDefault(dependencyMap[4]).radii.xs };
 obj.subscriberCountContainer = obj;
 const tmp3 = arg1(dependencyMap[2]);
 obj.subscriberCount = { backgroundColor: importDefault(dependencyMap[4]).unsafe_rawColors.BRAND_630 };
@@ -151,12 +151,12 @@ obj.subscriberCountIcon = {};
 const obj1 = { backgroundColor: importDefault(dependencyMap[4]).unsafe_rawColors.BRAND_630 };
 obj.cardContainer = { backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_SURFACE_HIGH, borderRadius: importDefault(dependencyMap[4]).radii.sm };
 obj.cardHeaderContainer = {};
-obj.guildIcon = { "Bool(false)": null, "Bool(false)": "stretch", "Bool(false)": 54, "Bool(false)": 1 };
+obj.guildIcon = { <string:3853039475>: null, <string:1408316811>: "stretch", <string:3025157889>: 54, <string:676503258>: 1 };
 obj.ownerQuote = { marginTop: 24 };
 obj.ownerUsername = { marginTop: 8 };
-obj.premiumEmojisTitle = { width: null, height: null };
+obj.premiumEmojisTitle = {};
 obj.viewServerButtonContainer = {};
-const obj3 = { "Bool(false)": null, "Bool(false)": 10, "Bool(false)": "grab", backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_MOD_SUBTLE };
+const obj3 = { -1269809407: null, 676503258: 10, 1093740625: "grab", backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_MOD_SUBTLE };
 obj.viewServerButton = obj3;
 obj.emojiSectionContainer = {};
 const obj2 = { backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_SURFACE_HIGH, borderRadius: importDefault(dependencyMap[4]).radii.sm };

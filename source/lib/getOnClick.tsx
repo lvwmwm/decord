@@ -1,10 +1,10 @@
-// Module ID: 8332
-// Function ID: 66035
+// Module ID: 8336
+// Function ID: 66047
 // Name: openInviteModal
 // Dependencies: []
 // Exports: default
 
-// Module 8332 (openInviteModal)
+// Module 8336 (openInviteModal)
 let AbortCodes;
 let AppContext;
 let JoinGuildSources;
@@ -354,7 +354,7 @@ export default function getOnClick(closure_0) {
   if (null != pathname) {
     if (isDiscordHostnameResult) {
       if (obj7.isAppRoute(pathname)) {
-        obj = { "Bool(false)": true, "Bool(false)": true };
+        obj = { GIFT_CODE_EMBED: null, flexShrink: null };
         closure_5 = obj;
         if (null != search) {
           obj.search = search;

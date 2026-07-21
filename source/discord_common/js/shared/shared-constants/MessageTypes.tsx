@@ -1,38 +1,38 @@
 // Module ID: 663
 // Function ID: 8027
 // Name: set
-// Dependencies: []
+// Dependencies: [284214097]
 
 // Module 663 (set)
 const obj = { UNDELETABLE: new Set([]) };
 const set = new Set([]);
 obj.GUILD_DISCOVERY_STATUS = new Set([]);
 const set1 = new Set([]);
-obj.USER_MESSAGE = new Set([67, "Boolean", "Number", "String", "Function", "Array", "Date", "RegExp", "Undefined"]);
-const set2 = new Set([67, "Boolean", "Number", "String", "Function", "Array", "Date", "RegExp", "Undefined"]);
-obj.NOTIFIABLE_SYSTEM_MESSAGE = new Set(["#fff7fb", "#ece7f2", "#d0d1e6", "#a6bddb", "#74a9cf"]);
-const set3 = new Set(["#fff7fb", "#ece7f2", "#d0d1e6", "#a6bddb", "#74a9cf"]);
-obj.REPLYABLE = new Set([false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false]);
-const set4 = new Set([false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false]);
+obj.USER_MESSAGE = new Set([67, "POST_CONNECTION_OPEN", "CHANNEL_SELECT", "AGE_GATE_MODAL_OPEN", "AGE_GATE_MODAL_CLOSE", "GUILD_UPDATE", null, null, null]);
+const set2 = new Set([67, "POST_CONNECTION_OPEN", "CHANNEL_SELECT", "AGE_GATE_MODAL_OPEN", "AGE_GATE_MODAL_CLOSE", "GUILD_UPDATE", null, null, null]);
+obj.NOTIFIABLE_SYSTEM_MESSAGE = new Set(["Undefined", "Null", "lch", "hcl", "grimacing"]);
+const set3 = new Set(["Undefined", "Null", "lch", "hcl", "grimacing"]);
+obj.REPLYABLE = new Set([]);
+const set4 = new Set([]);
 obj.FORWARDABLE = new Set([]);
 const set5 = new Set([]);
 obj.REFERENCED_MESSAGE_AVAILABLE = new Set([]);
 const set6 = new Set([]);
-obj.AVAILABLE_IN_GUILD_FEED = new Set(["<string:1139474434>", "<string:1448148994>"]);
-const set7 = new Set(["<string:1139474434>", "<string:1448148994>"]);
-obj.DEADCHAT_PROMPTS = new Set([null, null]);
-const set8 = new Set([null, null]);
-obj.NON_COLLAPSIBLE = new Set([]);
-const set9 = new Set([]);
+obj.AVAILABLE_IN_GUILD_FEED = new Set(["<string:294649857>", "<string:2991652865>"]);
+const set7 = new Set(["<string:294649857>", "<string:2991652865>"]);
+obj.DEADCHAT_PROMPTS = new Set(["#fff5eb", "#fee6ce"]);
+const set8 = new Set(["#fff5eb", "#fee6ce"]);
+obj.NON_COLLAPSIBLE = new Set([-1375731128]);
+const set9 = new Set([-1375731128]);
 obj.NON_PARSED = new Set([]);
 const set10 = new Set([]);
-obj.AUTOMOD_INCIDENT_ACTIONS = new Set([1358954905, -1404827050, 1526726917, -872414656]);
-const set11 = new Set([1358954905, -1404827050, 1526726917, -872414656]);
-obj.SELF_MENTIONABLE_SYSTEM = new Set(["#ffffe5"]);
-const set12 = new Set(["#ffffe5"]);
-obj.SCHEDULABLE = new Set(["<string:1139474434>", "<string:1448148994>"]);
-const set13 = new Set(["<string:1139474434>", "<string:1448148994>"]);
-obj.SILENTLY_CREATABLE = new Set([null]);
+obj.AUTOMOD_INCIDENT_ACTIONS = new Set(["getUTCDay", "f", "speechExpandRate", "JPEGInterchangeFormat"]);
+const set11 = new Set(["getUTCDay", "f", "speechExpandRate", "JPEGInterchangeFormat"]);
+obj.SELF_MENTIONABLE_SYSTEM = new Set([]);
+const set12 = new Set([]);
+obj.SCHEDULABLE = new Set(["<string:294649857>", "<string:2991652865>"]);
+const set13 = new Set(["<string:294649857>", "<string:2991652865>"]);
+obj.SILENTLY_CREATABLE = new Set(["<string:3478192131>"]);
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_common/js/shared/shared-constants/MessageTypes.tsx");
 

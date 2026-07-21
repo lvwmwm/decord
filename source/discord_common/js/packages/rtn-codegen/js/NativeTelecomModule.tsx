@@ -1,9 +1,9 @@
-// Module ID: 16041
-// Function ID: 123253
+// Module ID: 16048
+// Function ID: 123284
 // Name: enforcing
 // Dependencies: []
 
-// Module 16041 (enforcing)
+// Module 16048 (enforcing)
 const TurboModuleRegistry = require(dependencyMap[0]).TurboModuleRegistry;
 const enforcing = TurboModuleRegistry.getEnforcing("NativeTelecomModule");
 const _module = require(dependencyMap[1]);

@@ -1,9 +1,9 @@
 // Module ID: 12068
-// Function ID: 93137
+// Function ID: 93153
 // Dependencies: []
 
 // Module 12068
 const _module = require(dependencyMap[0]);
-const obj = { url: 18, content: 18, messageId: 6, channel_id: null, no: "secondary", "Null": "Button with a entity variant icon", "Null": "md", "Null": "interactive-text-active", scales: [] };
+const obj = { isConnected: "282a37ea44fbb33da5ed05f66bdd8373", isInternetReachable: "line", details: "png", reachabilityUrl: true, reachabilityMethod: "/assets/modules/guild_scheduled_events/native/images", reachabilityHeaders: 20, reachabilityTest: 20, reachabilityShortTimeout: null, scales: [15189782894321462000000000000000000000000000000000000000000000000000000000000000000] };
 
 export default _module.registerAsset(obj);

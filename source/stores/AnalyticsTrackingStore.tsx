@@ -1,9 +1,9 @@
-// Module ID: 6685
-// Function ID: 51739
+// Module ID: 6691
+// Function ID: 51788
 // Name: result
 // Dependencies: []
 
-// Module 6685 (result)
+// Module 6691 (result)
 const importDefaultResult = importDefault(dependencyMap[0]);
 let obj = arg1(dependencyMap[2]);
 obj = {

@@ -1,10 +1,10 @@
-// Module ID: 9817
-// Function ID: 76162
+// Module ID: 9822
+// Function ID: 76178
 // Name: _calculateScrollOffset
 // Dependencies: []
 // Exports: default
 
-// Module 9817 (_calculateScrollOffset)
+// Module 9822 (_calculateScrollOffset)
 function _calculateScrollOffset() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);

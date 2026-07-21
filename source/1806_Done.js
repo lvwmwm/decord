@@ -11,7 +11,7 @@ importDefault(dependencyMap[0]);
 const tmp3 = arg1(dependencyMap[0]);
 ({ StyleSheet, Text: closure_5 } = arg1(dependencyMap[1]));
 const jsx = arg1(dependencyMap[2]).jsx;
-const styles = StyleSheet.create({ doneButton: {}, doneButtonContainer: {} });
+const styles = StyleSheet.create({ doneButton: { <string:80641536>: 4, <string:80784128>: "guild_recents_dismissed_at" }, doneButtonContainer: {} });
 
 export default function Done(rippleRadius) {
   let button;
@@ -37,7 +37,7 @@ export default function Done(rippleRadius) {
   const items = [keyboardState, theme];
   const items1 = [onPress];
   const obj2 = arg1(dependencyMap[5]);
-  obj = { props: 49412608, "Null": 49412608 };
+  obj = { "Null": true, "Null": true };
   let str = "Done";
   obj.rippleRadius = num;
   obj.style = doneButtonContainer.doneButtonContainer;

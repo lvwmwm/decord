@@ -104,7 +104,7 @@ function addResponseAttributes(setAttributes, type) {
 }
 function handleStreamingError(arg0, isRecording, arg2) {
   let obj = require(dependencyMap[6]);
-  obj = { alignItems: 0.0000000000000000000000016547797096533966, justifyContent: 131124.41455078972 };
+  obj = { onDrawerSlide: false, onDrawerStateChanged: false };
   obj = { function: arg2 };
   obj.data = obj;
   obj.captureException(arg0, { mechanism: obj });
@@ -193,7 +193,7 @@ function instrumentMethod(arg0, arg1, arg2, arg3) {
                 }
                 return arg0(arg2[10]).handleCallbackErrors(() => arg0.apply(closure_2, closure_1), (arg0) => {
                   let obj = arg0(closure_1[6]);
-                  obj = { alignItems: 0.0000000000000000000000016547797096533966, justifyContent: 131124.41455078972 };
+                  obj = { onDrawerSlide: false, onDrawerStateChanged: false };
                   obj = { function: closure_1 };
                   obj.data = obj;
                   obj.captureException(arg0, { mechanism: obj });

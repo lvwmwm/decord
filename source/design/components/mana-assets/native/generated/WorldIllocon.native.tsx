@@ -1,10 +1,10 @@
-// Module ID: 6617
-// Function ID: 50799
+// Module ID: 6623
+// Function ID: 50848
 // Name: WorldIllocon
 // Dependencies: []
 // Exports: WorldIllocon
 
-// Module 6617 (WorldIllocon)
+// Module 6623 (WorldIllocon)
 const jsx = require(dependencyMap[0]).jsx;
 const _module = require(dependencyMap[3]);
 const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/WorldIllocon.native.tsx");

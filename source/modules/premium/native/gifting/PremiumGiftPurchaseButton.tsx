@@ -1,10 +1,10 @@
-// Module ID: 9752
-// Function ID: 75871
+// Module ID: 9757
+// Function ID: 75887
 // Name: RewardPreview
 // Dependencies: []
 // Exports: default
 
-// Module 9752 (RewardPreview)
+// Module 9757 (RewardPreview)
 function RewardPreview(arg0) {
   let collectiblesItem;
   let currentUser;
@@ -16,7 +16,7 @@ function RewardPreview(arg0) {
   if (isNameplateRecord(collectiblesItem)) {
     let obj = {};
     obj = { style: tmp.nameplateWrapper };
-    const obj1 = { "Bool(true)": null, "Bool(true)": null, "Bool(true)": null };
+    const obj1 = { "Null": null, "Null": null, "Null": null };
     let obj8 = arg1(dependencyMap[13]);
     obj1.nameplate = obj8.getNameplateData(collectiblesItem);
     obj.children = callback(importDefault(dependencyMap[12]), obj1);
@@ -42,7 +42,7 @@ function RewardPreview(arg0) {
         num2 = gradientAngle;
       }
       obj5.angle = num2;
-      obj5.angleCenter = {};
+      obj5.angleCenter = { max: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011125378664662503, guildId: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002834178582291256 };
       obj5.colors = gradientColors;
       const items1 = [callback(importDefault(dependencyMap[17]), obj5), , ];
       const obj6 = { style: tmp.singleAvatarContainer };
@@ -89,26 +89,28 @@ let closure_15 = arg1(dependencyMap[9]).createStyles((arg0) => {
   obj["overflow"] = "hidden";
   obj.gradientBackdrop = obj;
   obj.chooseRewardText = { flex: 1, marginStart: importDefault(dependencyMap[10]).space.PX_8 };
-  obj.backgroundImage = { ONE_DAY: true, marginRight: "/assets/modules/stage_channels/native/images", gameImage: 25, agq: 24, marginRight: null, display: "b252f7dc065300671ba9347414eb0bad" };
-  const obj2 = { aze: null, azj: null, marginStart: importDefault(dependencyMap[10]).space.PX_8 };
+  obj.backgroundImage = { 9223372036854775807: true, 9223372036854775807: "/assets/modules/stage_channels/native/images", 0: 25, -9223372036854775808: 24, 0: null, 9223372036854775807: "b252f7dc065300671ba9347414eb0bad" };
+  const obj2 = { bhk: "Who's that?", bic: "\u{1F4BF}", marginStart: importDefault(dependencyMap[10]).space.PX_8 };
   obj.inAppFlowImage = obj2;
+  const obj3 = { bhk: null, bic: null };
   const items = [{ rotate: "-4deg" }, { translateY: -11 }];
-  obj.inAppFlowImageLargeTilted = { transform: items };
+  obj3.transform = items;
+  obj.inAppFlowImageLargeTilted = obj3;
   obj.singleAvatarContainer = {};
-  const obj3 = { -9223372036854775808: true, filter: true, gap: importDefault(dependencyMap[10]).space.PX_16 };
-  obj.selectedRewardRow = obj3;
-  obj.selectedRewardBannerContainer = { "Null": 16777216, "Null": 369, "Null": 1167610368, alignItems: 977359655 };
-  const obj4 = {};
-  const merged2 = Object.assign(closure_4.absoluteFillObject);
-  obj4["borderRadius"] = importDefault(dependencyMap[10]).radii.sm;
-  obj4["top"] = importDefault(dependencyMap[10]).space.PX_4;
-  obj4["bottom"] = importDefault(dependencyMap[10]).space.PX_4;
-  obj4["start"] = importDefault(dependencyMap[10]).space.PX_4;
-  obj4["end"] = importDefault(dependencyMap[10]).space.PX_4;
-  obj4["marginStart"] = importDefault(dependencyMap[10]).space.PX_12;
-  obj.selectedRewardBannerGradient = obj4;
-  obj.selectedRewardText = { flex: 1 };
   const obj1 = { flex: 1, marginStart: importDefault(dependencyMap[10]).space.PX_8 };
+  obj.selectedRewardRow = { gap: importDefault(dependencyMap[10]).space.PX_16 };
+  obj.selectedRewardBannerContainer = { flexDirection: 16777216, alignItems: 369, paddingHorizontal: 1170756096, borderRadius: -1220455602 };
+  const obj5 = {};
+  const merged2 = Object.assign(closure_4.absoluteFillObject);
+  obj5["borderRadius"] = importDefault(dependencyMap[10]).radii.sm;
+  obj5["top"] = importDefault(dependencyMap[10]).space.PX_4;
+  obj5["bottom"] = importDefault(dependencyMap[10]).space.PX_4;
+  obj5["start"] = importDefault(dependencyMap[10]).space.PX_4;
+  obj5["end"] = importDefault(dependencyMap[10]).space.PX_4;
+  obj5["marginStart"] = importDefault(dependencyMap[10]).space.PX_12;
+  obj.selectedRewardBannerGradient = obj5;
+  obj.selectedRewardText = { flex: 1 };
+  const obj4 = { gap: importDefault(dependencyMap[10]).space.PX_16 };
   obj.nameplateWrapper = { borderRadius: importDefault(dependencyMap[10]).radii.sm };
   return obj;
 });
@@ -278,7 +280,7 @@ export default function PremiumGiftPurchaseButton(defaultSelection) {
         num9 = angle;
       }
       obj2.angle = num9;
-      obj2.angleCenter = {};
+      obj2.angleCenter = { max: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011125378664662503, guildId: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002834178582291256 };
       obj2.colors = colors;
       const items5 = [callback(importDefault(dependencyMap[17]), obj2), ];
       let tmp54 = null != themeAndReducedMotionAwareAssetUrl;
@@ -375,7 +377,7 @@ export default function PremiumGiftPurchaseButton(defaultSelection) {
         const items9 = [callback(selectedGiftingPromotionReward, obj12), ];
         let tmp39 = !tmp8;
         if (!tmp8) {
-          const obj14 = {};
+          const obj14 = { 9223372036854775807: 8817, -9223372036854775808: 1091633408 };
           const obj15 = { size: "sm" };
           obj14.icon = callback(arg1(dependencyMap[34]).PencilIcon, obj15);
           const intl2 = arg1(dependencyMap[16]).intl;

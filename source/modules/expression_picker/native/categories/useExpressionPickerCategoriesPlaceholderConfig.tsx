@@ -1,10 +1,10 @@
-// Module ID: 9407
-// Function ID: 73244
+// Module ID: 9411
+// Function ID: 73258
 // Name: useExpressionPickerCategoriesPlaceholderConfig
 // Dependencies: []
 // Exports: default
 
-// Module 9407 (useExpressionPickerCategoriesPlaceholderConfig)
+// Module 9411 (useExpressionPickerCategoriesPlaceholderConfig)
 let closure_2 = importAll(dependencyMap[0]);
 const CATEGORY_ICON_SIZE = arg1(dependencyMap[1]).CATEGORY_ICON_SIZE;
 let obj = arg1(dependencyMap[2]);

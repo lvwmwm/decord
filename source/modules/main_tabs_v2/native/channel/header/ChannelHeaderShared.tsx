@@ -1,10 +1,10 @@
-// Module ID: 10104
-// Function ID: 78226
+// Module ID: 10110
+// Function ID: 78244
 // Name: TitleWrapper
 // Dependencies: []
 // Exports: renderChannelIcon, renderChannelTitle, renderEmptyIcon, renderGroupDMIcon, renderMemberCountText, renderParentChannelSubTitle, renderTitleWrapper, renderUserAvatar
 
-// Module 10104 (TitleWrapper)
+// Module 10110 (TitleWrapper)
 function TitleWrapper(headerAccessibilityLabel) {
   let children;
   let onPress;
@@ -216,7 +216,7 @@ function MemberCountText(withSeparator) {
 function ParentChannelSubTitle(channel) {
   channel = channel.channel;
   const tmp = importDefault(dependencyMap[9])("ChannelHeaderShared");
-  let obj = { backgroundColor: 503316898, borderRadius: -788528832, marginTop: -2147483112 };
+  let obj = { <string:55888213>: "canCreatePrivateChannel", <string:2995549193>: "fr-MR", <string:1643731687>: "FinalizationRegistry" };
   const intl = arg1(dependencyMap[19]).intl;
   obj = {};
   const tmp2 = callback3(tmp);
@@ -260,16 +260,16 @@ let closure_12 = arg1(dependencyMap[7]).createStyles((arg0) => {
   obj.channelContent = obj;
   obj.nameWithArrow = {};
   obj = { flexShrink: 1 };
-  const merged = Object.assign(arg0 ? {} : { "Null": null, "Null": "Nostril L" });
+  const merged = Object.assign(arg0 ? {} : { PX_16: null, ix: "Nostril L" });
   obj.channelName = obj;
   obj.arrowIcon = { tintColor: importDefault(dependencyMap[8]).colors.INTERACTIVE_TEXT_DEFAULT };
-  obj.channelIcon = {};
+  obj.channelIcon = { "Bool(false)": "-1", "Bool(false)": "shrug" };
   obj.channelIconWrapper = {};
   const obj1 = { tintColor: importDefault(dependencyMap[8]).colors.INTERACTIVE_TEXT_DEFAULT };
-  const tmp = arg0 ? {} : { "Null": null, "Null": "Nostril L" };
+  const tmp = arg0 ? {} : { PX_16: null, ix: "Nostril L" };
   obj.guildChannelIcon = { tintColor: importDefault(dependencyMap[8]).colors.TEXT_STRONG };
-  obj.subTitleContainer = { replace: null, count: null, ip: null, hash: null };
-  obj.parentChannelName = { has: "Group 11", colors: 2 };
+  obj.subTitleContainer = { "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true };
+  obj.parentChannelName = { "Bool(false)": "Group 11", "Bool(false)": 2 };
   return obj;
 });
 const obj = arg1(dependencyMap[7]);

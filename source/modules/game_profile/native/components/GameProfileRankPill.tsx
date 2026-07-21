@@ -1,10 +1,10 @@
-// Module ID: 8620
-// Function ID: 68311
+// Module ID: 8624
+// Function ID: 68323
 // Name: GameProfileRankPill
 // Dependencies: []
 // Exports: default
 
-// Module 8620 (GameProfileRankPill)
+// Module 8624 (GameProfileRankPill)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 ({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[2]));
@@ -29,7 +29,7 @@ export default function GameProfileRankPill(arg0) {
   obj = { style: tmp.gameRankPill };
   obj = { size: "xxs", color: importDefault(dependencyMap[4]).colors.BLACK };
   const items = [callback(arg1(dependencyMap[5]).TrophyIcon, obj), ];
-  const obj1 = { INTEGRATION_CREATE: "limitedTimeAppIcons", ConstraintReasonCode: "canLaunchInChannel" };
+  const obj1 = {};
   const intl = arg1(dependencyMap[7]).intl;
   const formatToPlainString = intl.formatToPlainString;
   const t = arg1(dependencyMap[7]).t;

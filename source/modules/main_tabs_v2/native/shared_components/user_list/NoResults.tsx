@@ -1,16 +1,16 @@
-// Module ID: 9879
-// Function ID: 76508
+// Module ID: 9884
+// Function ID: 76524
 // Name: NoResults
 // Dependencies: []
 // Exports: default
 
-// Module 9879 (NoResults)
+// Module 9884 (NoResults)
 importAll(dependencyMap[0]);
 ({ View: closure_2, ScrollView: closure_3 } = arg1(dependencyMap[1]));
 const tmp3 = arg1(dependencyMap[1]);
 ({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[2]));
 const tmp4 = arg1(dependencyMap[2]);
-let closure_6 = arg1(dependencyMap[3]).createStyles({ headerContainer: { paddingHorizontal: 16 }, container: {}, image: { marginBottom: 12 }, textContainer: {}, text: { concat: "/assets/design/components/Illustration/native/redesign/generated/images", now: 160 }, fullHeightContentContainer: { "Null": false, "Null": true }, fullHeightScrollContent: { flexGrow: 1 } });
+let closure_6 = arg1(dependencyMap[3]).createStyles({ headerContainer: { paddingHorizontal: 16 }, container: {}, image: { marginBottom: 12 }, textContainer: { "Null": null, "Null": null }, text: { "Bool(true)": "/assets/design/components/Illustration/native/redesign/generated/images", "Bool(true)": 160 }, fullHeightContentContainer: { "Null": -536870861, "Null": -299892737 }, fullHeightScrollContent: { flexGrow: 1 } });
 const obj = arg1(dependencyMap[3]);
 const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/main_tabs_v2/native/shared_components/user_list/NoResults.tsx");
 
@@ -49,11 +49,10 @@ export default function NoResults(illustration) {
   }
   const items2 = [tmp6, ];
   const obj1 = { style: tmp.textContainer };
-  const obj2 = { INTEGRATION_CREATE: 131072.00119209292, ConstraintReasonCode: -293983030121430100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, style: tmp.text, children: title };
-  const items3 = [callback(arg1(dependencyMap[4]).Text, obj2), ];
+  const items3 = [callback(arg1(dependencyMap[4]).Text, { style: tmp.text, children: title }), ];
   let tmp11 = null;
   if (null != subtitle) {
-    const obj3 = { INTEGRATION_CREATE: false, ConstraintReasonCode: false, style: tmp.text, children: subtitle };
+    const obj3 = { style: tmp.text, children: subtitle };
     tmp11 = callback(arg1(dependencyMap[4]).Text, obj3);
   }
   items3[1] = tmp11;

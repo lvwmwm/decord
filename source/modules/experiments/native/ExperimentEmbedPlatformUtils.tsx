@@ -1,10 +1,10 @@
-// Module ID: 10935
-// Function ID: 85043
+// Module ID: 10940
+// Function ID: 85064
 // Name: regExp
 // Dependencies: []
 // Exports: handleCodedLinkExperimentEmbedTap
 
-// Module 10935 (regExp)
+// Module 10940 (regExp)
 const regExp = new RegExp("^dev://experiment/([-\\w._0-9]+)(?:/([0-9]+))?$", "i");
 const _module = require(dependencyMap[7]);
 const result = _module.fileFinishedImporting("modules/experiments/native/ExperimentEmbedPlatformUtils.tsx");

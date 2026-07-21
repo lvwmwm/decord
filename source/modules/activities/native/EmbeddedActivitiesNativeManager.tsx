@@ -1,9 +1,9 @@
-// Module ID: 10508
-// Function ID: 82044
+// Module ID: 10514
+// Function ID: 82067
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
-// Module 10508 (_isNativeReflectConstruct)
+// Module 10514 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -300,7 +300,7 @@ let tmp6 = (arg0) => {
       let obj = EmbeddedActivitiesNativeManager(closure_2[26]);
       obj = { location, applicationId, showFeedback };
       obj.stopEmbeddedActivity(obj);
-      obj = { 9223372036854775807: "subheader_localized", 0: "message", 9223372036854775807: 21, 9223372036854775807: "modal_top_pill_localized", applicationId };
+      obj = { -9223372036854775808: "Group 6", 9223372036854775807: 1, 9223372036854775807: 2, 9223372036854775807: 0, applicationId };
       callback(closure_2[24]).dispatch(obj);
     }
   };

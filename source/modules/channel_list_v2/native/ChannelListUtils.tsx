@@ -1,10 +1,10 @@
-// Module ID: 14877
-// Function ID: 112080
+// Module ID: 14884
+// Function ID: 112104
 // Name: isFavoritesSection
 // Dependencies: []
 // Exports: isFavoritesSection, isNamedCategorySection, isRecentsSection, isVoiceChannelsSection, logChannelListEndReached
 
-// Module 14877 (isFavoritesSection)
+// Module 14884 (isFavoritesSection)
 const AnalyticEvents = require(dependencyMap[0]).AnalyticEvents;
 const _module = require(dependencyMap[3]);
 const result = _module.fileFinishedImporting("modules/channel_list_v2/native/ChannelListUtils.tsx");

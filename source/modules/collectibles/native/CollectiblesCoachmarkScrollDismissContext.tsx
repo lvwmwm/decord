@@ -1,10 +1,10 @@
-// Module ID: 14351
-// Function ID: 108392
+// Module ID: 14358
+// Function ID: 108415
 // Name: useCollectiblesCoachmarkScrollDismissContext
 // Dependencies: []
 // Exports: CollectiblesCoachmarkScrollDismissProvider, useCollectiblesCoachmarkScrollDismissContext
 
-// Module 14351 (useCollectiblesCoachmarkScrollDismissContext)
+// Module 14358 (useCollectiblesCoachmarkScrollDismissContext)
 const importAllResult = importAll(dependencyMap[0]);
 const NOOP = arg1(dependencyMap[1]).NOOP;
 const jsx = arg1(dependencyMap[2]).jsx;

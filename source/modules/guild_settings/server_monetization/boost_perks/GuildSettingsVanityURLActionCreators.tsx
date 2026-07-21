@@ -1,17 +1,17 @@
-// Module ID: 8432
-// Function ID: 67298
+// Module ID: 8436
+// Function ID: 67310
 // Name: fetchVanityUrl
 // Dependencies: []
 // Exports: fetchVanityUrl, resetCode, saveCode, setCode
 
-// Module 8432 (fetchVanityUrl)
+// Module 8436 (fetchVanityUrl)
 const Endpoints = require(dependencyMap[0]).Endpoints;
 const _module = require(dependencyMap[3]);
 const result = _module.fileFinishedImporting("modules/guild_settings/server_monetization/boost_perks/GuildSettingsVanityURLActionCreators.tsx");
 
 export const fetchVanityUrl = function fetchVanityUrl(id) {
   const HTTP = require(dependencyMap[1]).HTTP;
-  const obj = { CONVERSATIONS: null, replace: null, push: null, url: Endpoints.GUILD_VANITY_URL(id) };
+  const obj = { lc: null, type: null, end: null, url: Endpoints.GUILD_VANITY_URL(id) };
   const value = HTTP.get(obj);
   return value.then((body) => {
     let code;

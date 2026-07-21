@@ -1,10 +1,10 @@
-// Module ID: 8464
-// Function ID: 67543
+// Module ID: 8468
+// Function ID: 67555
 // Name: useCanSendStageStartNotification
 // Dependencies: []
 // Exports: useCanSendStageStartNotification, useDefaultSendStartStageNotificationToggle
 
-// Module 8464 (useCanSendStageStartNotification)
+// Module 8468 (useCanSendStageStartNotification)
 let closure_2 = importDefault(dependencyMap[0]);
 let closure_3 = importDefault(dependencyMap[1]);
 const Permissions = arg1(dependencyMap[2]).Permissions;

@@ -1,10 +1,10 @@
-// Module ID: 14789
-// Function ID: 111473
+// Module ID: 14796
+// Function ID: 111497
 // Name: _createForOfIteratorHelperLoose
 // Dependencies: []
 // Exports: default
 
-// Module 14789 (_createForOfIteratorHelperLoose)
+// Module 14796 (_createForOfIteratorHelperLoose)
 function _createForOfIteratorHelperLoose(@@iterator) {
   let arg1 = Symbol_iterator;
   @@iterator = "undefined" !== typeof Symbol;
@@ -699,7 +699,7 @@ export default function useHappeningNowData(has, guildId) {
             bound = closure_28;
             if (closure_28.LIVE_GUILD_EVENT === value) {
               bound = items.forEach((event) => {
-                const obj = { id: null, size: "", accessibilityRole: null, event };
+                const obj = { 9223372036854775807: null, -9223372036854775808: "", -9223372036854775808: null, event };
                 return items4.push(obj);
               });
               tmp65 = tmp51;

@@ -1,10 +1,10 @@
-// Module ID: 14940
-// Function ID: 112476
+// Module ID: 14947
+// Function ID: 112500
 // Name: useCanSeeNUFChannelsForGuild
 // Dependencies: []
 // Exports: useCanSeeNUFChannelsForGuild
 
-// Module 14940 (useCanSeeNUFChannelsForGuild)
+// Module 14947 (useCanSeeNUFChannelsForGuild)
 let closure_2 = importDefault(dependencyMap[0]);
 let closure_3 = importDefault(dependencyMap[1]);
 let closure_4 = importDefault(dependencyMap[2]);

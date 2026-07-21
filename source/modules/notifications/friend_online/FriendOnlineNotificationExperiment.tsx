@@ -1,13 +1,12 @@
-// Module ID: 14202
-// Function ID: 107438
+// Module ID: 14209
+// Function ID: 107461
 // Name: apexExperiment
 // Dependencies: []
 // Exports: isEligibleForFriendOnlineNotifications, useFriendOnlineNotificationExperiment
 
-// Module 14202 (apexExperiment)
+// Module 14209 (apexExperiment)
 const _module = require(dependencyMap[0]);
-const obj = { "Null": "Array", "Null": "safeJoin", defaultConfig: { showSettingsToggle: false }, variations: { [1]: { showSettingsToggle: true }, [2]: { showSettingsToggle: true } } };
-const apexExperiment = _module.createApexExperiment(obj);
+const apexExperiment = _module.createApexExperiment({ defaultConfig: { showSettingsToggle: false }, variations: { [1]: { showSettingsToggle: true }, [2]: { showSettingsToggle: true } } });
 const _module1 = require(dependencyMap[1]);
 const result = _module1.fileFinishedImporting("modules/notifications/friend_online/FriendOnlineNotificationExperiment.tsx");
 

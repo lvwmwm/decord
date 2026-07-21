@@ -1,10 +1,10 @@
-// Module ID: 5353
-// Function ID: 45795
+// Module ID: 5355
+// Function ID: 45836
 // Name: HeaderBackImage
 // Dependencies: []
 // Exports: FauxHeader, HeaderSubmittingIndicator, NavigatorHeader, getHeaderBackButton, getHeaderCloseButton, getHeaderConditionalBackButton, getHeaderNoTitle, getHeaderTextButton, renderBackImage
 
-// Module 5353 (HeaderBackImage)
+// Module 5355 (HeaderBackImage)
 class HeaderBackImage {
   constructor() {
     tmp = closure_8();
@@ -105,12 +105,12 @@ const obj1 = {};
 const merged = Object.assign(arg1(dependencyMap[7]).TextStyleSheet.redesign/heading-18/bold);
 obj1["color"] = importDefault(dependencyMap[6]).colors.MOBILE_TEXT_HEADING_PRIMARY;
 obj.headerTitle = obj1;
-const obj2 = { "Null": "<string:1685934336>", "Null": "<string:3457827089>", "Null": "<string:846331905>", "Null": "<string:1426063360>", fontFamily: arg1(dependencyMap[3]).Fonts.PRIMARY_MEDIUM, color: importDefault(dependencyMap[6]).colors.MOBILE_TEXT_HEADING_PRIMARY };
+const obj2 = { <string:157922413>: "isArray", <string:2927934390>: "isArrayBuffer", <string:1686549638>: "ApplicationNotes", <string:2959333612>: "GET_STARTED", fontFamily: arg1(dependencyMap[3]).Fonts.PRIMARY_MEDIUM, color: importDefault(dependencyMap[6]).colors.MOBILE_TEXT_HEADING_PRIMARY };
 obj.headerBackTitleStyle = obj2;
-obj.navigatorHeaderTitleContainer = { "Bool(true)": null, "Bool(true)": null, "Bool(true)": null };
+obj.navigatorHeaderTitleContainer = { bottom: 0, left: 6, padding: 0 };
 obj.navigatorHeaderContainer = {};
 obj.navigatorHeaderSubtitle = { marginTop: -2 };
-const obj3 = { aze: false, azj: false, tintColor: importDefault(dependencyMap[6]).colors.MOBILE_TEXT_HEADING_PRIMARY };
+const obj3 = { bhk: "<string:1027735553>", bic: "<string:4143972873>", tintColor: importDefault(dependencyMap[6]).colors.MOBILE_TEXT_HEADING_PRIMARY };
 obj.headerButtonIcon = obj3;
 const tmp4 = arg1(dependencyMap[4]);
 obj.submittingIndicator = { color: importDefault(dependencyMap[6]).colors.INTERACTIVE_TEXT_DEFAULT };
@@ -135,7 +135,7 @@ export const NavigatorHeader = function NavigatorHeader(subtitle) {
     tmp5 = "" !== subtitle;
   }
   if (tmp5) {
-    obj = { borderRadius: null, flex: null, Promise: null, marginTop: null, style: tmp.navigatorHeaderSubtitle, children: subtitle };
+    obj = { imageAssetsFolder: false, progress: true, speed: "/assets/.cache/intl/aW50bA==", loop: null, style: tmp.navigatorHeaderSubtitle, children: subtitle };
     tmp5 = callback2(arg1(dependencyMap[7]).Text, obj);
   }
   items1[1] = tmp5;

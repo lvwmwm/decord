@@ -1,10 +1,10 @@
-// Module ID: 14844
-// Function ID: 111887
+// Module ID: 14851
+// Function ID: 111911
 // Name: num2
 // Dependencies: []
 // Exports: default
 
-// Module 14844 (num2)
+// Module 14851 (num2)
 importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 let closure_3 = importDefault(dependencyMap[2]);
@@ -61,7 +61,7 @@ export default function VoiceGuildTagChiplet(userId) {
       obj1.source = obj2;
       obj1.size = GuildTagBadgeSize.SIZE_12;
       const items2 = [callback(arg1(dependencyMap[10]).GuildTagBadge, obj1), ];
-      const obj3 = { INTEGRATION_CREATE: 16, ConstraintReasonCode: true, style: tmp.tag, children: tag };
+      const obj3 = { style: tmp.tag, children: tag };
       items2[1] = callback(arg1(dependencyMap[11]).Text, obj3);
       obj.children = items2;
       obj.children = callback2(View, obj);

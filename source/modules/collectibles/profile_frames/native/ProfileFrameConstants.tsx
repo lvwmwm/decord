@@ -1,9 +1,9 @@
-// Module ID: 8245
-// Function ID: 65072
+// Module ID: 8249
+// Function ID: 65084
 // Name: PROFILE_FRAME_RESPONSIVE_RAIL_MIN_ASPECT_RATIO
 // Dependencies: []
 
-// Module 8245 (PROFILE_FRAME_RESPONSIVE_RAIL_MIN_ASPECT_RATIO)
+// Module 8249 (PROFILE_FRAME_RESPONSIVE_RAIL_MIN_ASPECT_RATIO)
 const _module = require(dependencyMap[1]);
 const result = _module.fileFinishedImporting("modules/collectibles/profile_frames/native/ProfileFrameConstants.tsx");
 

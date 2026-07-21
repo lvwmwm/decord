@@ -4,7 +4,7 @@
 // Dependencies: []
 
 // Module 256 (frozen)
-const frozen = Object.freeze({ minimumFontScale: true, textBreakStrategy: true, onTextLayout: true });
+const frozen = Object.freeze({});
 arg5.default = frozen;
 arg5.coerceDisplayMode = function coerceDisplayMode(arg0) {
   if (frozen.SUSPENDED === arg0) {

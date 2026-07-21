@@ -1,10 +1,10 @@
-// Module ID: 9007
-// Function ID: 70874
+// Module ID: 9011
+// Function ID: 70886
 // Name: styles
 // Dependencies: []
 // Exports: default
 
-// Module 9007 (styles)
+// Module 9011 (styles)
 let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 let closure_5 = importAll(dependencyMap[2]);
@@ -14,7 +14,7 @@ let closure_8 = importDefault(dependencyMap[5]);
 let closure_9 = importDefault(dependencyMap[6]);
 ({ jsx: closure_10, jsxs: closure_11 } = arg1(dependencyMap[7]));
 let obj = arg1(dependencyMap[8]);
-obj = { selectorGroup: { 0: true, 9223372036854775807: "/assets/modules/user_settings/connections/native/two_way_link/images" } };
+obj = { selectorGroup: { stiffness: null, damping: null } };
 obj = { backgroundColor: importDefault(dependencyMap[9]).colors.BACKGROUND_BASE_LOWER, borderRadius: importDefault(dependencyMap[9]).radii.xs };
 obj.select = obj;
 const tmp2 = arg1(dependencyMap[7]);
@@ -110,7 +110,7 @@ export default function WebhookGuildChannelSelector(selectedGuildId) {
       found = channels.find((id) => id.id === selectedChannelId);
     }
     let obj = { style: tmp.selectorGroup };
-    obj = { INTEGRATION_CREATE: "/assets/images/native/premium/illustrations", ConstraintReasonCode: 51 };
+    obj = {};
     const intl = arg1(dependencyMap[13]).intl;
     obj.children = intl.string(arg1(dependencyMap[13]).t.8qKd+J);
     const items3 = [callback2(arg1(dependencyMap[16]).Text, obj), , , ];

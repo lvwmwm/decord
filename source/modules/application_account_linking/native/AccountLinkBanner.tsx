@@ -1,10 +1,10 @@
-// Module ID: 14888
-// Function ID: 112201
+// Module ID: 14895
+// Function ID: 112225
 // Name: AccountLinkLargeBanner
 // Dependencies: []
 // Exports: getScaledAccountLinkBannerHeight
 
-// Module 14888 (AccountLinkLargeBanner)
+// Module 14895 (AccountLinkLargeBanner)
 function AccountLinkLargeBanner(arg0) {
   let application;
   ({ application, markAsDismissed: closure_0, startAuthorization: closure_1 } = arg0);
@@ -57,7 +57,7 @@ function AccountLinkLargeBanner(arg0) {
     obj10.children = intl2.formatToPlainString(arg1(dependencyMap[19]).t.vxvKMm, obj11);
     items1[3] = callback(arg1(dependencyMap[18]).Text, obj10);
     const obj12 = { style: tmp.ctaContainer };
-    const obj13 = { <string:1522289750>: "r", <string:570601313>: "isArray" };
+    const obj13 = { 9223372036854775807: null, -9223372036854775808: null };
     const intl3 = arg1(dependencyMap[19]).intl;
     obj13.text = intl3.string(arg1(dependencyMap[19]).t.0mvtKL);
     obj13.onPress = function onPress() {
@@ -98,7 +98,7 @@ function AccountLinkMediumBanner(arg0) {
       obj.style = tmp.rewardImage;
       obj.resizeMode = "contain";
       const items = [callback(closure_3, obj), , ];
-      const obj2 = { INTEGRATION_CREATE: "polite", ConstraintReasonCode: "column", style: tmp.bodyText };
+      const obj2 = { style: tmp.bodyText };
       const intl = arg1(dependencyMap[19]).intl;
       const obj3 = { gameName: application.name, rewardName: reward_name };
       obj2.children = intl.formatToPlainString(arg1(dependencyMap[19]).t.V/C76E, obj3);
@@ -115,7 +115,7 @@ function AccountLinkMediumBanner(arg0) {
       obj.children = items;
       const items1 = [callback2(closure_4, obj), ];
       const obj5 = { style: tmp.ctaContainer };
-      const obj6 = { <string:1522289750>: false, <string:570601313>: null };
+      const obj6 = {};
       const intl2 = arg1(dependencyMap[19]).intl;
       obj6.text = intl2.string(arg1(dependencyMap[19]).t.0mvtKL);
       obj6.onPress = function onPress() {
@@ -150,10 +150,10 @@ const PX_162 = importDefault(dependencyMap[5]).space.PX_16;
 const PX_122 = importDefault(dependencyMap[5]).space.PX_12;
 let obj1 = arg1(dependencyMap[10]);
 let obj = { card: { padding: PX_12 } };
-obj = { top: importDefault(dependencyMap[5]).space.PX_12, right: importDefault(dependencyMap[5]).space.PX_12 };
+obj = { backgroundColor: null, flexDirection: null, justifyContent: null, alignItems: null, overflow: null, zIndex: null, minHeight: null, flex: null, top: importDefault(dependencyMap[5]).space.PX_12, right: importDefault(dependencyMap[5]).space.PX_12 };
 obj.closeButton = obj;
-obj.imagesContainer = { "Bool(true)": null, "Bool(true)": null, "Bool(true)": null };
-obj1 = { -9223372036854775808: true, filter: true, marginHorizontal: importDefault(dependencyMap[5]).space.PX_8, gap: importDefault(dependencyMap[5]).space.PX_4 };
+obj.imagesContainer = { padding: 0, paddingBottom: 6, flexDirection: 0 };
+obj1 = { marginHorizontal: importDefault(dependencyMap[5]).space.PX_8, gap: importDefault(dependencyMap[5]).space.PX_4 };
 obj.ellipsisContainer = obj1;
 const tmp3 = arg1(dependencyMap[4]);
 obj.ellipsisDot = { width: importDefault(dependencyMap[5]).space.PX_4, height: importDefault(dependencyMap[5]).space.PX_4, borderRadius: importDefault(dependencyMap[5]).space.PX_4 / 2, backgroundColor: importDefault(dependencyMap[5]).colors.INTERACTIVE_MUTED };
@@ -165,7 +165,7 @@ const obj2 = { width: importDefault(dependencyMap[5]).space.PX_4, height: import
 const obj3 = { card: { padding: PX_12 }, closeButton: {} };
 const obj7 = arg1(dependencyMap[10]);
 obj3.contentContainer = { flexDirection: "row", gap: importDefault(dependencyMap[5]).space.PX_12 };
-obj3.rewardImage = {};
+obj3.rewardImage = { bhk: null, bic: null };
 obj3.bodyText = {};
 obj3.ctaContainer = { marginTop: PX_122, width: "100%" };
 let closure_22 = obj7.createStyles(obj3);

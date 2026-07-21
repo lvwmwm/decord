@@ -1,10 +1,10 @@
-// Module ID: 11603
-// Function ID: 90146
+// Module ID: 11610
+// Function ID: 90169
 // Name: GuildPowerupsBoostButton
 // Dependencies: []
 // Exports: GuildPowerupsBoostButton
 
-// Module 11603 (GuildPowerupsBoostButton)
+// Module 11610 (GuildPowerupsBoostButton)
 let closure_3 = importAll(dependencyMap[0]);
 let closure_4 = importDefault(dependencyMap[1]);
 let closure_5 = importDefault(dependencyMap[2]);

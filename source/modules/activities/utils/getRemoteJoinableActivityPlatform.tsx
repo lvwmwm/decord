@@ -1,10 +1,10 @@
-// Module ID: 10896
-// Function ID: 84692
+// Module ID: 10901
+// Function ID: 84713
 // Name: getRemoteJoinableActivityPlatform
 // Dependencies: []
 // Exports: getRemoteJoinableActivityPlatform
 
-// Module 10896 (getRemoteJoinableActivityPlatform)
+// Module 10901 (getRemoteJoinableActivityPlatform)
 let closure_2 = importDefault(dependencyMap[0]);
 let closure_3 = importDefault(dependencyMap[1]);
 ({ ActivityFlags: closure_4, ActivityGamePlatforms: closure_5 } = arg1(dependencyMap[2]));

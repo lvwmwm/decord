@@ -1,9 +1,9 @@
-// Module ID: 16362
-// Function ID: 126366
+// Module ID: 16369
+// Function ID: 126397
 // Name: _isNativeReflectConstruct
-// Dependencies: [618135552, 77594624, 31260672, 618921984, 455278592, 343932928, 350420992, 131072, 586153984, 57, 6, 7, 15, 17, 102, 18, 3821]
+// Dependencies: [618397696, 77594624, 31260672, 619184128, 455540736, 344064000, 350552064, 131072, 586153984, 57, 6, 7, 15, 17, 102, 18, 3821]
 
-// Module 16362 (_isNativeReflectConstruct)
+// Module 16369 (_isNativeReflectConstruct)
 import { StatusTypes } from "_slicedToArray";
 import tmp2 from "_inherits";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";

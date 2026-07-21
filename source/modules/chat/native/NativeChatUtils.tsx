@@ -1,9 +1,9 @@
-// Module ID: 9428
-// Function ID: 73398
+// Module ID: 9432
+// Function ID: 73412
 // Name: ChatScrollPosition
 // Dependencies: []
 
-// Module 9428 (ChatScrollPosition)
+// Module 9432 (ChatScrollPosition)
 const _module = require(dependencyMap[0]);
 ({ NativeModules: closure_3, findNodeHandle: closure_4 } = _module);
 let obj = { TOP: 0, [0]: "TOP", MIDDLE: 1, [1]: "MIDDLE", BOTTOM: 2, [2]: "BOTTOM", NONE: 3, [3]: "NONE" };

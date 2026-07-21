@@ -360,7 +360,7 @@ let tmp9 = () => {
     let obj = { url: closure_10.USER_SETTINGS_PROTO(self.type), rejectWithError: false };
     const b64ToProtoResult = callback(closure_2[8]).b64ToProto(self.ProtoClass, yield HTTP.get(obj).body.settings);
     if (null == b64ToProtoResult) {
-      self.dispatchChanges({ "Null": true, "Null": true });
+      self.dispatchChanges({ useNativeReachability: null, javascript: null });
     } else {
       const runMigrationsResult = callback(closure_2[8]).runMigrations(tmp4, callback2(closure_2[14])[self.type]);
       const isDirty = runMigrationsResult.isDirty;
@@ -405,7 +405,7 @@ let tmp9 = () => {
       const self = this;
       if (beforeSendCallbacks.some((hasChanges) => hasChanges.hasChanges())) {
         ({ ProtoClass, markDirty } = self);
-        const obj = { y: "<string:441516034>", isArray: "<string:3209822877>", cleanup };
+        const obj = { backgroundColor: "<string:1196490754>", flexDirection: "<string:3310486038>", cleanup };
         markDirty(ProtoClass.create(), obj);
       }
     }

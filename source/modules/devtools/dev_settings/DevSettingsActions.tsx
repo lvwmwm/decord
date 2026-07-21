@@ -1,10 +1,10 @@
-// Module ID: 14530
-// Function ID: 109492
+// Module ID: 14537
+// Function ID: 109514
 // Name: toggle
 // Dependencies: []
 // Exports: clearAll
 
-// Module 14530 (toggle)
+// Module 14537 (toggle)
 function toggle(toggle) {
   let tmp = arg1;
   if ("boolean" !== typeof arg1) {

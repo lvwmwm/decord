@@ -1,17 +1,17 @@
-// Module ID: 13520
-// Function ID: 102608
+// Module ID: 13527
+// Function ID: 102631
 // Name: SafetySettingsNotice
 // Dependencies: []
 // Exports: default
 
-// Module 13520 (SafetySettingsNotice)
+// Module 13527 (SafetySettingsNotice)
 let closure_2 = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 let closure_4 = arg1(dependencyMap[2]).SafetySettingsNoticeAction;
 ({ jsx: closure_5, jsxs: closure_6 } = arg1(dependencyMap[3]));
 let obj = arg1(dependencyMap[4]);
 obj = {};
-obj = { "Bool(true)": 8, "Bool(true)": null, "Bool(true)": "\u270A\u{1F3FF}", gap: importDefault(dependencyMap[5]).space.PX_8, padding: importDefault(dependencyMap[5]).space.PX_8, borderRadius: importDefault(dependencyMap[5]).radii.xs, borderColor: importDefault(dependencyMap[5]).colors.TEXT_LINK, borderWidth: 1, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_FEEDBACK_INFO };
+obj = { gap: importDefault(dependencyMap[5]).space.PX_8, padding: importDefault(dependencyMap[5]).space.PX_8, borderRadius: importDefault(dependencyMap[5]).radii.xs, borderColor: importDefault(dependencyMap[5]).colors.TEXT_LINK, borderWidth: 1, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_FEEDBACK_INFO };
 obj.blockedIgnoredRedirect = obj;
 let closure_7 = obj.createStyles(obj);
 const tmp2 = arg1(dependencyMap[3]);
@@ -41,7 +41,7 @@ export default function SafetySettingsNotice(noticeType) {
     const intl2 = arg1(dependencyMap[9]).intl;
     obj = {
       hook(children) {
-          const obj = { 9223372036854775807: null, 9223372036854775807: null, 0: null, onPress: closure_2, children };
+          const obj = { "Null": null, "Null": "center", "Null": "center", onPress: closure_2, children };
           return callback(labelHook(noticeType[8]).Text, obj);
         },
       count
@@ -51,7 +51,7 @@ export default function SafetySettingsNotice(noticeType) {
     const intl = arg1(dependencyMap[9]).intl;
     const obj1 = {
       hook(children) {
-          const obj = { 9223372036854775807: null, 9223372036854775807: null, 0: null, onPress: closure_2, children };
+          const obj = { "Null": null, "Null": "center", "Null": "center", onPress: closure_2, children };
           return callback(labelHook(noticeType[8]).Text, obj);
         }
     };

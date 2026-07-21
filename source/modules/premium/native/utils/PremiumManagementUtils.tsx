@@ -1,13 +1,13 @@
-// Module ID: 6631
-// Function ID: 50907
+// Module ID: 6637
+// Function ID: 50956
 // Name: getPremiumManagementMethod
-// Dependencies: [57, 31, 27, 1849, 3779, 3780, 6626, 6640, 5615, 653, 1851]
+// Dependencies: [57, 31, 27, 1849, 3779, 3780, 6632, 6646, 5617, 653, 1851]
 // Exports: getExternalManagementMessage
 
-// Module 6631 (getPremiumManagementMethod)
+// Module 6637 (getPremiumManagementMethod)
 import { SubscriptionStatusTypes } from "_slicedToArray";
 import { PaymentGatewayToFriendlyName as closure_4 } from "module_31";
-import { jsx } from "get ActivityIndicator";
+import { jsx } from "keys";
 import importDefaultResult from "_isNativeReflectConstruct";
 import GuildFeatures from "GuildFeatures";
 

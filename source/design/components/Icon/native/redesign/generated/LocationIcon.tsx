@@ -1,10 +1,10 @@
-// Module ID: 8376
-// Function ID: 66700
+// Module ID: 8380
+// Function ID: 66712
 // Name: LocationIcon
 // Dependencies: []
 // Exports: LocationIcon
 
-// Module 8376 (LocationIcon)
+// Module 8380 (LocationIcon)
 importAll(dependencyMap[0]);
 const jsx = arg1(dependencyMap[1]).jsx;
 const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/LocationIcon.tsx");

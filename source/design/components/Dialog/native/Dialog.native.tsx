@@ -1,10 +1,10 @@
-// Module ID: 4516
-// Function ID: 39668
+// Module ID: 4520
+// Function ID: 39716
 // Name: Dialog
 // Dependencies: []
 // Exports: Dialog
 
-// Module 4516 (Dialog)
+// Module 4520 (Dialog)
 let closure_2 = importAll(dependencyMap[0]);
 const StyleSheet = arg1(dependencyMap[1]).StyleSheet;
 const jsx = arg1(dependencyMap[2]).jsx;
@@ -14,7 +14,7 @@ export const Dialog = function Dialog(dialogKey) {
   let onDismiss;
   let zIndex;
   dialogKey = dialogKey.dialogKey;
-  let obj = {};
+  let obj = { fileFinishedImporting: "spring", error: "linear", no: "easeInEaseOut" };
   ({ onDismiss, zIndex } = dialogKey);
   Object.setPrototypeOf(null);
   const merged = Object.assign(dialogKey, obj);

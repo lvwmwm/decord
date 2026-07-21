@@ -1,9 +1,9 @@
-// Module ID: 9999
-// Function ID: 77297
+// Module ID: 10005
+// Function ID: 77315
 // Name: dismissPanel
 // Dependencies: []
 
-// Module 9999 (dismissPanel)
+// Module 10005 (dismissPanel)
 let CONTROLS_HEIGHT;
 let VoicePanelControlsModes;
 const VoicePanelModes = arg1(dependencyMap[1]).VoicePanelModes;
@@ -13,7 +13,7 @@ let obj = { channelId: "context-not-initialized", channelType: undefined };
 const tmp2 = arg1(dependencyMap[2]);
 obj.connected = arg1(dependencyMap[4]).createFakeSharedValue(false);
 const obj3 = arg1(dependencyMap[4]);
-obj.contentDimensions = arg1(dependencyMap[4]).createFakeSharedValue({ aze: false, azj: true });
+obj.contentDimensions = arg1(dependencyMap[4]).createFakeSharedValue({ bhk: -536870861, bic: -299892737 });
 const obj4 = arg1(dependencyMap[4]);
 obj = { mode: VoicePanelControlsModes.FLOATING_DEFAULT, locked: false, height: CONTROLS_HEIGHT, pushToTalk: false };
 obj.controlsSpecs = arg1(dependencyMap[4]).createFakeSharedValue(obj);
@@ -48,7 +48,7 @@ obj.morphablePanelMode = arg1(dependencyMap[4]).createFakeSharedValue(arg1(depen
 const obj11 = arg1(dependencyMap[4]);
 obj.mountedCards = new Set();
 const set = new Set();
-obj.pipAvoidanceSpecs = arg1(dependencyMap[4]).createFakeSharedValue({ "Bool(false)": false, "Bool(false)": true });
+obj.pipAvoidanceSpecs = arg1(dependencyMap[4]).createFakeSharedValue({ <string:2958189153>: -536870861, <string:1661207664>: -299892737 });
 const obj12 = arg1(dependencyMap[4]);
 obj.preJoinContentSize = require("module_0");
 const obj13 = arg1(dependencyMap[4]);
@@ -85,12 +85,12 @@ obj.streamOutputSinkStack = {};
 const obj16 = arg1(dependencyMap[4]);
 obj.windowDimensions = arg1(dependencyMap[4]).createFakeSharedValue({});
 const obj17 = arg1(dependencyMap[4]);
-const obj1 = { headerGuildIcon: null, moveFile: "d27964e19929ba21443389554d465476", EMOJI_PICKER_PREMIUM_UPSELL_HEIGHT: "lt.messages.d27964e19929ba21443389554d465476.compiled.messages", grow: "jsona", onVideoEnd: "CallTap", raidType: null, VIDEO_BITRATE_ENHANCED: true, mode: VoicePanelModes.PANEL };
+const obj1 = { messagesCached: 0.1, messagesReady: 598135552665634.1, style: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000243437479192007, aria-hidden: -0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007423058813596583, variant: 278528.2629051211, color: 8391929784060424000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, children: -241967579701953380000000000000000000000000000000000000000000000000000000000000000000000000000000, mode: VoicePanelModes.PANEL };
 obj.wrapperDimensions = arg1(dependencyMap[4]).createFakeSharedValue(obj1);
 const obj18 = arg1(dependencyMap[4]);
 obj.useReducedMotion = arg1(dependencyMap[4]).createFakeSharedValue(false);
 const obj20 = arg1(dependencyMap[4]);
-obj.wrapperOffset = arg1(dependencyMap[4]).createFakeSharedValue({});
+obj.wrapperOffset = arg1(dependencyMap[4]).createFakeSharedValue({ users: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000033995391321045464, max: 139264.00004577637, guildId: -14480300402108619000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 });
 const obj21 = arg1(dependencyMap[4]);
 obj.panelCardStillInPIP = arg1(dependencyMap[4]).createFakeSharedValue(false);
 const context = importAllResult.createContext(obj);

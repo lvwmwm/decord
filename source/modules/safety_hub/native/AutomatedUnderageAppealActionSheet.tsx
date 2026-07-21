@@ -1,10 +1,10 @@
-// Module ID: 11023
-// Function ID: 85840
+// Module ID: 11028
+// Function ID: 85861
 // Name: items
 // Dependencies: []
 // Exports: default
 
-// Module 11023 (items)
+// Module 11028 (items)
 let closure_3 = importAll(dependencyMap[0]);
 const View = arg1(dependencyMap[1]).View;
 let closure_5 = importDefault(dependencyMap[2]);
@@ -24,7 +24,7 @@ const obj2 = { gap: importDefault(dependencyMap[6]).space.PX_4 };
 obj.learnMore = { marginTop: importDefault(dependencyMap[6]).space.PX_12, textAlign: "center", paddingBottom: importDefault(dependencyMap[6]).space.PX_32 };
 const obj3 = { marginTop: importDefault(dependencyMap[6]).space.PX_12, textAlign: "center", paddingBottom: importDefault(dependencyMap[6]).space.PX_32 };
 obj.footer = { marginTop: importDefault(dependencyMap[6]).space.PX_8 };
-const obj5 = { 9223372036854775807: "boolean", -9223372036854775808: "string", 9223372036854775807: "boolean", 0: "string", borderRadius: importDefault(dependencyMap[6]).radii.round, backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_MOD_SUBTLE };
+const obj5 = { marginEnd: "boolean", width: "string", height: "boolean", alignSelf: "string", borderRadius: importDefault(dependencyMap[6]).radii.round, backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_MOD_SUBTLE };
 obj.number = obj5;
 let closure_10 = obj.createStyles(obj);
 const obj6 = {};
@@ -104,7 +104,7 @@ export default function AutomatedUnderageAppealActionSheet(onClose) {
   const intl = arg1(dependencyMap[7]).intl;
   obj4.children = intl.string(arg1(dependencyMap[7]).t.9SDLnj);
   const items5 = [callback(arg1(dependencyMap[16]).Text, obj4), ];
-  const obj5 = { INTEGRATION_CREATE: true, ConstraintReasonCode: "/assets/images/native/icons/voice_calls/dark_theme" };
+  const obj5 = {};
   const intl2 = arg1(dependencyMap[7]).intl;
   obj5.children = intl2.string(arg1(dependencyMap[7]).t.yvx//1);
   items5[1] = callback(arg1(dependencyMap[16]).Text, obj5);
@@ -119,7 +119,7 @@ export default function AutomatedUnderageAppealActionSheet(onClose) {
       ({ title, description } = arg0);
       let obj = { label: title, subLabel: description };
       obj = { style: tmp.number };
-      obj = { INTEGRATION_CREATE: false, ConstraintReasonCode: false, children: arg1 + 1 };
+      obj = { children: arg1 + 1 };
       obj.children = callback(onClose(tmp[16]).Text, obj);
       obj.icon = callback(callback, obj);
       return callback(onClose(tmp[18]).TableRow, obj, arg1);
@@ -154,7 +154,7 @@ export default function AutomatedUnderageAppealActionSheet(onClose) {
   const intl6 = arg1(dependencyMap[7]).intl;
   obj12.text = intl6.string(arg1(dependencyMap[7]).t.54b8V0);
   const items7 = [callback(arg1(dependencyMap[20]).Button, obj12), ];
-  const obj13 = { INTEGRATION_CREATE: "data", ConstraintReasonCode: "category", style: tmp.learnMore };
+  const obj13 = { style: tmp.learnMore };
   const intl7 = arg1(dependencyMap[7]).intl;
   obj13.children = intl7.format(arg1(dependencyMap[7]).t.ZbWsOF, { learnMoreLink: constants.LEARN_MORE_UU_APPEAL_LINK });
   items7[1] = callback(arg1(dependencyMap[22]).TextWithIOSLinkWorkaround, obj13);

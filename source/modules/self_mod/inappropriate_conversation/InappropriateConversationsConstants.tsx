@@ -1,9 +1,9 @@
-// Module ID: 10132
-// Function ID: 78429
+// Module ID: 10138
+// Function ID: 78447
 // Name: VibingWumpusAction
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 10132 (VibingWumpusAction)
+// Module 10138 (VibingWumpusAction)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("modules/self_mod/inappropriate_conversation/InappropriateConversationsConstants.tsx");
 

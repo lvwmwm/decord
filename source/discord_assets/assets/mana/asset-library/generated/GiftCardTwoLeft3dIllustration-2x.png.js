@@ -1,9 +1,9 @@
-// Module ID: 6202
-// Function ID: 50177
+// Module ID: 6204
+// Function ID: 50220
 // Name: metadata
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 6202 (metadata)
+// Module 6204 (metadata)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/GiftCardTwoLeft3dIllustration-2x.png.js");
 

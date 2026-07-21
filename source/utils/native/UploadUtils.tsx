@@ -1,10 +1,10 @@
-// Module ID: 4670
-// Function ID: 40565
+// Module ID: 4672
+// Function ID: 40606
 // Name: openImagePickerUnhandled
 // Dependencies: []
 // Exports: cancelGetFileInfo, getAppDir, getCaptionLabel, getFileFromUploadItem, getFileInfo, getFileSize, getImageCompressionQuality, getImageDimensionsIfMissing, getType, isHEVCEncodingSupported, openImagePicker
 
-// Module 4670 (openImagePickerUnhandled)
+// Module 4672 (openImagePickerUnhandled)
 let Base64GIFPrefix;
 function openImagePickerUnhandled() {
   return _openImagePickerUnhandled(...arguments);

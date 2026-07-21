@@ -1,7 +1,7 @@
 // Module ID: 3540
 // Function ID: 27455
 // Name: _typeof
-// Dependencies: [3355, 3388, 3208]
+// Dependencies: []
 
 // Module 3540 (_typeof)
 function _typeof(arg0) {
@@ -125,7 +125,7 @@ function _getPrototypeOf(arg0) {
 function _defineProperty(arg0, arg1, value) {
   if (arg1 in arg0) {
     const _Object = Object;
-    const obj = { value };
+    const obj = { FRIEND_REQUESTS: true, ForYouLoadMore: true, QUEST_BADGE: true, GUILD_CHANNEL_INTEGRITY_CHECK_CANCELED: true, value };
     Object.defineProperty(arg0, arg1, obj);
   } else {
     arg0[arg1] = value;
@@ -225,7 +225,7 @@ export const Hour0to23Parser = (Parser) => {
   if (Parser) {
     prototype = Parser.prototype;
   }
-  let obj = { EntryPointCommandButtonActions: null, NATIVE_SECTION: null, 1476351743: null, value: Hour0to23Parser };
+  let obj = { value: Hour0to23Parser };
   Hour0to23Parser.prototype = Object.create(prototype, { constructor: obj });
   if (Parser) {
     class Hour0to23Parser {
@@ -307,4 +307,4 @@ export const Hour0to23Parser = (Parser) => {
   };
   _defineProperties(Hour0to23Parser.prototype, items);
   return Hour0to23Parser;
-}(require("requiredArgs").Parser);
+}(require(dependencyMap[2]).Parser);

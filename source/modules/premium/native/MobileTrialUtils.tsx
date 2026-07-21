@@ -1,10 +1,10 @@
-// Module ID: 6674
-// Function ID: 51344
+// Module ID: 6680
+// Function ID: 51393
 // Name: useShouldShowPremiumTrialUserSettingsAvatarBadge
 // Dependencies: []
 // Exports: useNitroTrialCtaOverride, usePremiumTrialOfferPremiumType, useShouldShowPremiumTrialUserSettingsAvatarBadge
 
-// Module 6674 (useShouldShowPremiumTrialUserSettingsAvatarBadge)
+// Module 6680 (useShouldShowPremiumTrialUserSettingsAvatarBadge)
 let closure_2 = require(dependencyMap[0]).PremiumSubscriptionSKUToPremiumType;
 const _module = require(dependencyMap[7]);
 const result = _module.fileFinishedImporting("modules/premium/native/MobileTrialUtils.tsx");

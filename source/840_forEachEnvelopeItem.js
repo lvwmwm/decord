@@ -1,12 +1,10 @@
 // Module ID: 840
 // Function ID: 9326
 // Name: forEachEnvelopeItem
-// Dependencies: [0, 4294967295, 0, 0, 0, 0]
+// Dependencies: []
 // Exports: addItemToEnvelope, createAttachmentEnvelopeItem, createEnvelope, createEventEnvelopeHeaders, createSpanEnvelopeItem, envelopeContainsItemType, envelopeItemTypeToDataCategory, getSdkMetadataForEnvelopeHeader, parseEnvelope, serializeEnvelope
 
 // Module 840 (forEachEnvelopeItem)
-import result from "result";
-
 function forEachEnvelopeItem(arg0, arg1) {
   const iter = arg0[1][Symbol.iterator]();
   const nextResult = iter.next();
@@ -33,16 +31,17 @@ function encodeUTF8(arg0) {
   }
   return encodePolyfillResult;
 }
+let closure_2 = require(dependencyMap[0]);
 let closure_3 = require(dependencyMap[1]);
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
-let closure_4 = { <string:3219936644>: "<string:7642394>", <string:2965818316>: "isArray", <string:2784669871>: "isArray", <string:3975528530>: "isArray", <string:4203635290>: "<string:1627389952>", <string:2688906581>: "<string:1360069054>", <string:979086483>: "<string:1396876793>", <string:1635360401>: "<string:1056964870>", <string:1171478243>: "<string:1358954792>", <string:2229046521>: "<string:1375811238>", <string:2423338334>: "<string:2476773789>", <string:1602120936>: "<string:3968130130>", <string:2900541818>: "<string:4203635290>", <string:478337879>: "<string:2694029395>", <string:1751212110>: "<string:1637064851>", <string:1629649233>: null, <string:945705406>: null, <string:1414622561>: null };
+let closure_4 = { text: true, isArrayBuffer: true, useActionBarPrimaryButton: true, accessibleDismiss: true, tc: true, notifyTaskRetry: true, <string:1486639616>: 0, <string:1650563719>: 0, <string:1677919057>: 0, <string:1414965920>: 0, <string:929436691>: "name", <string:993612120>: null, <string:1372509538>: true, <string:1360945613>: "arguments", <string:3244359985>: "press", <string:123128930>: "settings_button", <string:1189148849>: "open", <string:3958525958>: null };
 
 export const addItemToEnvelope = function addItemToEnvelope(arg0, arg1) {
-  const tmp = callback(arg0, 2);
+  const tmp = callback2(arg0, 2);
   const items = [tmp[0], ];
   const items1 = [];
   const items2 = [arg1];
-  items[1] = items1.concat(result(tmp[1]), items2);
+  items[1] = items1.concat(callback(tmp[1]), items2);
   return items;
 };
 export const createAttachmentEnvelopeItem = function createAttachmentEnvelopeItem(data) {
@@ -171,11 +170,11 @@ export const serializeEnvelope = function serializeEnvelope(arg0) {
       arr = arr.push(tmp2);
     }
   }
-  const tmp = callback(arg0, 2);
+  const tmp = callback2(arg0, 2);
   let closure_0 = JSON.stringify(tmp[0]);
   while (tmp2 !== undefined) {
-    let tmp15 = callback;
-    let tmp16 = callback(tmp3, 2);
+    let tmp15 = callback2;
+    let tmp16 = callback2(tmp3, 2);
     let tmp17 = tmp16[1];
     let tmp18 = tmp17;
     let tmp19 = append;

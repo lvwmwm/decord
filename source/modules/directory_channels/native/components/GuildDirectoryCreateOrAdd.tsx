@@ -1,10 +1,10 @@
-// Module ID: 10026
-// Function ID: 77471
+// Module ID: 10032
+// Function ID: 77489
 // Name: GuildDirectoryCreateOrAddHeader
 // Dependencies: []
 // Exports: default
 
-// Module 10026 (GuildDirectoryCreateOrAddHeader)
+// Module 10032 (GuildDirectoryCreateOrAddHeader)
 function GuildDirectoryCreateOrAddHeader(arg0) {
   let directoryGuildName;
   let setTabIndex;
@@ -20,7 +20,7 @@ function GuildDirectoryCreateOrAddHeader(arg0) {
   obj.items = items.map((id) => ({ id, label: id, page: null }));
   obj = { style: tmp.header };
   const segmentedControlState = obj.useSegmentedControlState(obj);
-  const obj1 = { 0: 24, 9223372036854775807: 24, 0: null, -9223372036854775808: "aa9c26c29990ba7a6584e51ab5c56efa", style: tmp.title };
+  const obj1 = { 1501064855: 24, -1267889981: 24, -1145697943: null, -1266241916: "aa9c26c29990ba7a6584e51ab5c56efa", style: tmp.title };
   const intl3 = arg1(dependencyMap[13]).intl;
   obj1.children = intl3.format(arg1(dependencyMap[13]).t.9SKJdF, { guildName: directoryGuildName });
   const items1 = [callback2(arg1(dependencyMap[14]).Text, obj1), , ];
@@ -40,7 +40,7 @@ function GuildDirectoryCreateOrAddFooter(handleFooterPress) {
   items[1] = obj;
   obj.style = items;
   obj = { style: tmp.footerContainer };
-  const obj1 = { Promise: "done", marginTop: "construct", flags: "apply", style: tmp.footerTitle };
+  const obj1 = { "Null": true, "Null": true, "Null": true, style: tmp.footerTitle };
   const intl = arg1(dependencyMap[13]).intl;
   obj1.children = intl.string(arg1(dependencyMap[13]).t.pgCZRP);
   const items1 = [callback2(arg1(dependencyMap[14]).Text, obj1), ];
@@ -65,14 +65,14 @@ let obj = { loadingContainer: {}, container: { flex: 1 } };
 obj = { borderRadius: importDefault(dependencyMap[7]).radii.sm };
 obj.guildIcon = obj;
 obj.header = {};
-obj.title = { bounces: null, keyboardShouldPersistTaps: null };
+obj.title = { "Null": null, "Null": null };
 obj.description = { textAlign: "center" };
 obj1 = { backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_BASE_LOW };
 obj.footerSafeAreaContainer = obj1;
 obj.footerContainer = { trailingIcon: "absolute", dmsDisabled: -8, invitesDisabled: -8 };
 obj.footerTitle = {};
-const tmp3 = arg1(dependencyMap[5]);
-obj.segmentedControl = { paddingHorizontal: importDefault(dependencyMap[7]).space.PX_12 };
+const obj2 = { -9223372036854775808: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000015792711243, 9223372036854775807: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000023685210035362718, 0: 217054453170611950000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, paddingHorizontal: importDefault(dependencyMap[7]).space.PX_12 };
+obj.segmentedControl = obj2;
 let closure_12 = obj1.createStyles(obj);
 let closure_13 = importAllResult.memo((guild) => {
   let end;
@@ -112,7 +112,7 @@ let closure_14 = importAllResult.memo((guild) => {
   obj.end = end;
   return callback2(arg1(dependencyMap[9]).TableRow, obj);
 });
-const obj2 = { paddingHorizontal: importDefault(dependencyMap[7]).space.PX_12 };
+const tmp3 = arg1(dependencyMap[5]);
 const result = arg1(dependencyMap[22]).fileFinishedImporting("modules/directory_channels/native/components/GuildDirectoryCreateOrAdd.tsx");
 
 export default function GuildDirectoryCreateOrAdd(arg0) {

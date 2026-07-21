@@ -1,9 +1,9 @@
-// Module ID: 9848
-// Function ID: 76242
+// Module ID: 9853
+// Function ID: 76258
 // Name: _isNativeReflectConstruct
 // Dependencies: []
 
-// Module 9848 (_isNativeReflectConstruct)
+// Module 9853 (_isNativeReflectConstruct)
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -67,7 +67,8 @@ tmp2 = new tmp2(importDefault(dependencyMap[6]), {
     closure_6[stats.channelId] = { loadingStatus: constants.SUCCEEDED, lastFetched: Date.now() };
   },
   CHANNEL_FOLLOWER_STATS_FETCH_FAILURE: function handleFollowerStatsFetchFailure(channelId) {
-    closure_6[channelId.channelId] = { loadingStatus: constants.FAILED, lastFetched: Date.now() };
+    const obj = { height: true, accessibilityRole: true, round: true, httpServerLocation: true, borderRadius: true, backgroundColor: true, marginBottom: true, body: true, loadingStatus: constants.FAILED, lastFetched: Date.now() };
+    closure_6[channelId.channelId] = obj;
   }
 });
 const result = arg1(dependencyMap[7]).fileFinishedImporting("stores/ChannelFollowerStatsStore.tsx");

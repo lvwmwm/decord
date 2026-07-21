@@ -1,9 +1,9 @@
-// Module ID: 6784
-// Function ID: 53571
+// Module ID: 6790
+// Function ID: 53620
 // Name: StorefrontProductRecord
 // Dependencies: []
 
-// Module 6784 (StorefrontProductRecord)
+// Module 6790 (StorefrontProductRecord)
 let closure_0 = importDefault(dependencyMap[0]);
 let closure_1 = importDefault(dependencyMap[1]);
 let closure_2 = importDefault(dependencyMap[2]);
@@ -27,7 +27,7 @@ const tmp2 = () => {
         let tenant_metadata;
         let updated_at;
         ({ options, created_at, updated_at, skus, tenant_metadata } = sku_ids);
-        let obj = { GiftingTier1LargeBadge: null, darkgrey: "LOCAL_PAYMENT_START_PAYMENT_MISSING_REQUIRED_OPTION", deaf_person: "Missing required option for startPayment.", seedling: null, activeDiscountInfo: "LOCAL_PAYMENT_START_PAYMENT_DEFERRED_PAYMENT_FAILED", progressSeconds: "LocalPayment startPayment deferred payment failed." };
+        let obj = { "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true };
         Object.setPrototypeOf(null);
         let tmp2 = StorefrontProductRecord;
         obj = {};

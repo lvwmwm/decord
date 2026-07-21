@@ -1,9 +1,9 @@
-// Module ID: 5669
-// Function ID: 48676
+// Module ID: 5671
+// Function ID: 48719
 // Name: ContentHarmTypeChannel
-// Dependencies: []
+// Dependencies: [284214097]
 
-// Module 5669 (ContentHarmTypeChannel)
+// Module 5671 (ContentHarmTypeChannel)
 const _module = require(dependencyMap[0]);
 const result = _module.fileFinishedImporting("modules/explicit_media_redaction/ExplicitMediaRedactionModels.tsx");
 

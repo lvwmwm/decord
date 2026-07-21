@@ -1,10 +1,10 @@
-// Module ID: 8280
-// Function ID: 65359
+// Module ID: 8284
+// Function ID: 65371
 // Name: MediaModal
 // Dependencies: []
 // Exports: default
 
-// Module 8280 (MediaModal)
+// Module 8284 (MediaModal)
 let closure_4 = importAll(dependencyMap[0]);
 ({ Image: closure_5, Modal: closure_6, StyleSheet: closure_7, View: closure_8 } = arg1(dependencyMap[1]));
 let closure_9 = importDefault(dependencyMap[2]);
@@ -206,7 +206,7 @@ export default function MediaModal(initialIndex) {
     let source;
     let visible;
     ({ source, index, key, visible, pointerEvents } = hasSpoiler);
-    let obj = { "Bool(false)": null, "Bool(false)": "LOCAL_PAYMENT_START_PAYMENT_MISSING_REQUIRED_OPTION", "Bool(false)": "Missing required option for startPayment.", "Bool(false)": null, "Bool(false)": "LOCAL_PAYMENT_START_PAYMENT_DEFERRED_PAYMENT_FAILED", "Bool(false)": "LocalPayment startPayment deferred payment failed." };
+    let obj = { paddingTop: true, opacity: true, base: true, format: true, strict: true, min: true };
     Object.setPrototypeOf(null);
     const merged = Object.assign(hasSpoiler, obj);
     let tmp4 = mediaPlayerMutedStore;

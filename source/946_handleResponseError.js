@@ -13,7 +13,7 @@ export const handleResponseError = function handleResponseError(setStatus, error
   if (error.error) {
     let obj = { code: require(dependencyMap[5]).SPAN_STATUS_ERROR, message: error.error.type || "internal_error" };
     setStatus.setStatus(obj);
-    obj = { mechanism: { alignItems: "Silk", justifyContent: "(?:Cloud9|Silk-Accelerated)" } };
+    obj = { mechanism: { onDrawerSlide: false, onDrawerStateChanged: false } };
     require(dependencyMap[6]).captureException(error.error, obj);
     const obj2 = require(dependencyMap[6]);
   }

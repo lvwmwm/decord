@@ -1,13 +1,13 @@
-// Module ID: 11728
-// Function ID: 91132
+// Module ID: 11735
+// Function ID: 91155
 // Dependencies: []
 
-// Module 11728
+// Module 11735
 const View = arg1(dependencyMap[1]).View;
 const InviteSendStates = arg1(dependencyMap[2]).InviteSendStates;
 const jsx = arg1(dependencyMap[3]).jsx;
 const importAllResult = importAll(dependencyMap[0]);
-let closure_5 = arg1(dependencyMap[4]).createStyles({ buttonWrapper: { TV: null, GameMention: null } });
+let closure_5 = arg1(dependencyMap[4]).createStyles({ buttonWrapper: { accessible: null, max: null } });
 const obj2 = arg1(dependencyMap[4]);
 const memoResult = importAllResult.memo(function InviteButton(onPressSend) {
   let disabled;
@@ -39,7 +39,7 @@ const memoResult = importAllResult.memo(function InviteButton(onPressSend) {
     flag = false;
   }
   let obj = { style: callback().buttonWrapper };
-  obj = { "Bool(false)": "@braintree/browser-detection/is-ios-webview", "Bool(false)": "<string:193741312>", "Bool(false)": "<string:2196307969>", text: stringResult1, onPress: onPressSend.onPressSend };
+  obj = { "Bool(false)": "_handleGuildMembersChunkBatch", "Bool(false)": "<string:200688128>", "Bool(false)": "<string:2189754369>", text: stringResult1, onPress: onPressSend.onPressSend };
   if (!disabled) {
     disabled = flag;
   }

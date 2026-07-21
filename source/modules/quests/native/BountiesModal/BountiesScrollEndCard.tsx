@@ -1,10 +1,10 @@
-// Module ID: 13809
-// Function ID: 104463
+// Module ID: 13816
+// Function ID: 104486
 // Name: BountiesScrollEndCard
 // Dependencies: []
 // Exports: default
 
-// Module 13809 (BountiesScrollEndCard)
+// Module 13816 (BountiesScrollEndCard)
 importAll(dependencyMap[0]);
 ({ Pressable: closure_3, StyleSheet: closure_4, View: closure_5 } = arg1(dependencyMap[1]));
 const tmp3 = arg1(dependencyMap[1]);
@@ -142,7 +142,7 @@ export default function BountiesScrollEndCard(isScrollingInBoundsSharedValue) {
       const obj10 = { style: endedCtaButtonsContainer.textBlock };
       const obj11 = { children: bountyCtaInfo.label };
       const items5 = [callback(arg1(dependencyMap[15]).Text, obj11), ];
-      const obj12 = { INTEGRATION_CREATE: null, ConstraintReasonCode: "153e24032a5a8790888aef41caaf4b2c", children: stringResult };
+      const obj12 = { children: stringResult };
       items5[1] = callback(arg1(dependencyMap[15]).Text, obj12);
       obj10.children = items5;
       const items6 = [callback2(closure_5, obj10), ];

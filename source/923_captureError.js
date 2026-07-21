@@ -20,7 +20,7 @@ arg5.captureError = function captureError(error, prompt_execution, arg2) {
       obj2.setStatus(obj);
     }
     obj = {};
-    obj1 = { "Bool(true)": false, "Bool(true)": false };
+    obj1 = { "Null": false, "Null": false };
     obj2 = {};
     let str2 = prompt_execution;
     if (!prompt_execution) {

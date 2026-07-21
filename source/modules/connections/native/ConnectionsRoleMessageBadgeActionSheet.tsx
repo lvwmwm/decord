@@ -1,10 +1,10 @@
-// Module ID: 10948
-// Function ID: 85140
+// Module ID: 10953
+// Function ID: 85161
 // Name: PopoutCheck
 // Dependencies: []
 // Exports: default
 
-// Module 10948 (PopoutCheck)
+// Module 10953 (PopoutCheck)
 function PopoutCheck(arg0) {
   let connectionMetadataField;
   let connectionType;
@@ -43,7 +43,7 @@ function PopoutCheck(arg0) {
     const obj2 = { style: tmp.popoutCheck };
     const obj3 = { size: "sm", style: tmp.popoutCheckIcon };
     const items = [callback2(arg1(dependencyMap[16]).CheckmarkLargeIcon, obj3), ];
-    const obj4 = { INTEGRATION_CREATE: "<string:1153630209>", ConstraintReasonCode: "<string:2388000769>", children: formatResult };
+    const obj4 = { children: formatResult };
     items[1] = callback2(arg1(dependencyMap[17]).Text, obj4);
     obj2.children = items;
     tmp9 = callback3(closure_6, obj2);
@@ -121,7 +121,7 @@ class PopoutChecks {
                 tmp35 = callback(guildId(closure_2[24]).Avatar, obj3);
               }
               items1[1] = tmp35;
-              const obj4 = { INTEGRATION_CREATE: null, ConstraintReasonCode: "43b86c9ce273868bacca6aeb06ae392b" };
+              const obj4 = {};
               let name;
               if (null != value) {
                 name = value.name;
@@ -193,18 +193,18 @@ obj.verifiedContainer = {};
 obj.headerTextContainer = {};
 obj.verifiedCheck = {};
 obj.loadingSpinner = { marginVertical: 40 };
-obj.popoutCheck = { applicationId: "<string:1935965511>", r: "d", body: "values", textAlign: "values", accessible: "%Math%" };
+obj.popoutCheck = {};
 const tmp4 = arg1(dependencyMap[11]);
 obj.popoutCheckIcon = { marginRight: 8, tintColor: importDefault(dependencyMap[13]).colors.TEXT_FEEDBACK_POSITIVE };
 obj.popoutChecksGroup = {};
-const obj2 = { "Bool(false)": 440, "Bool(false)": 120, "Bool(false)": true, "Bool(false)": "/assets/modules/self_mod/inappropriate_conversation/images", borderBottomColor: importDefault(dependencyMap[13]).colors.BORDER_SUBTLE };
-obj.popoutChecksGroupBottomMargin = obj2;
-obj.popoutCheckGroupName = { -9223372036854775808: true, filter: true };
+const obj1 = { marginRight: 8, tintColor: importDefault(dependencyMap[13]).colors.TEXT_FEEDBACK_POSITIVE };
+obj.popoutChecksGroupBottomMargin = { borderBottomColor: importDefault(dependencyMap[13]).colors.BORDER_SUBTLE };
+obj.popoutCheckGroupName = {};
 obj.popoutCheckGroupPlatformIcon = { marginRight: 8 };
 obj.button = { marginBottom: 8 };
 obj.botTag = { marginLeft: 4 };
 let closure_19 = obj.createStyles(obj);
-const obj1 = { marginRight: 8, tintColor: importDefault(dependencyMap[13]).colors.TEXT_FEEDBACK_POSITIVE };
+const obj2 = { borderBottomColor: importDefault(dependencyMap[13]).colors.BORDER_SUBTLE };
 const result = arg1(dependencyMap[40]).fileFinishedImporting("modules/connections/native/ConnectionsRoleMessageBadgeActionSheet.tsx");
 
 export default function ConnectionsRoleMessageBadgeActionSheet(userId) {
@@ -306,7 +306,7 @@ export default function ConnectionsRoleMessageBadgeActionSheet(userId) {
       }
       obj6.children = name;
       const items8 = [callback2(arg1(dependencyMap[17]).Text, obj6), ];
-      const obj7 = { INTEGRATION_CREATE: true, ConstraintReasonCode: true, children: formatResult };
+      const obj7 = { children: formatResult };
       items8[1] = callback2(arg1(dependencyMap[17]).Text, obj7);
       obj5.children = items8;
       items7[1] = closure_17(closure_6, obj5);

@@ -1,9 +1,9 @@
-// Module ID: 9045
-// Function ID: 71031
+// Module ID: 9049
+// Function ID: 71043
 // Name: acceptFriendRequest
 // Dependencies: []
 
-// Module 9045 (acceptFriendRequest)
+// Module 9049 (acceptFriendRequest)
 function acceptFriendRequest(location) {
   let applicationId;
   let confirmStrangerRequest;
@@ -34,7 +34,7 @@ function handleFriendRequestAcceptError(body, userId) {
     }
   }
   if (code === AbortCodes.RELATIONSHIP_INVALID_NO_CONFIRMATION) {
-    let obj = { "Null": null, "Null": null, "Null": null, userId: userId.userId };
+    let obj = { "Bool(true)": null, "Bool(true)": null, "Bool(true)": null, userId: userId.userId };
     let flag = true;
     importDefault(dependencyMap[8]).dispatch(obj);
     const obj3 = importDefault(dependencyMap[8]);
